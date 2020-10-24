@@ -19,11 +19,40 @@ config.cpp - This contains all of the configuration for adding new objects to th
 
 ## Creating the Config.cpp File
 
+The easiest way to creat your own **config.cpp** file is to use and existing one as a template. You can find the existing configs for default assets here `C:\Users\[Your User Profile]\Documents\DayZ Projects\DZ`. This folder contains all the different categories of items that can be modified in the base game. For the jackets I used this path `C:\Users\[Your User Profile]\Documents\DayZ Projects\DZ\characters\tops\config.cpp.`  
 
+You can use [Notepad++](https://notepad-plus-plus.org/downloads/) or [VsCode](https://code.visualstudio.com/) to view the file contents. Save a copy of this file in the PBO folder you created above. Open the copy and get ready to start modifying. Here are the important parts we need to make sure are present:
+
+``` cpp
+class CfgPatches
+{
+	class DZ_Characters_Tops
+	{
+		units[]=
+		{
+			"Shirt_CheckRed",
+			"Hoodie_Blue",
+			"Hoodie_Black",
+			"Hoodie_Brown",
+			"Hoodie_Green",
+			"Hoodie_Grey",
+			"Hoodie_Red",
+			"MaleTorso",
+			"FemaleTorso"
+		};
+		weapons[]={};
+		requiredVersion=0.1;
+		requiredAddons[]=
+		{
+			"DZ_Characters"
+		};
+	};
+};
+```
 
 ## How to Make Your Own PBO
 
-[Create a Custom .paa file]()
+[Create a Custom .paa file](https://github.com/Treee/ItsATreeeDayZWorkshopMods/tree/master/ItsATreeeClothingSource)
 
 Step 1. Download and Install [PBO Manager](https://www.armaholic.com/page.php?id=16369)  
 
