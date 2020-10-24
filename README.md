@@ -23,6 +23,8 @@ config.cpp - This contains all of the configuration for adding new objects to th
 
 ## How to Make Your Own PBO
 
+[Create a Custom .paa file]()
+
 Step 1. Download and Install [PBO Manager](https://www.armaholic.com/page.php?id=16369)  
 
 Step 2. Right click the PBO folder you created above. Pack into PBO.  
