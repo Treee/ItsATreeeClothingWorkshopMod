@@ -19,7 +19,7 @@ config.cpp - This contains all of the configuration for adding new objects to th
 
 ## Creating the Config.cpp File
 
-The easiest way to creat your own **config.cpp** file is to use and existing one as a template. You can find the existing configs for default assets here `C:\Users\[Your User Profile]\Documents\DayZ Projects\DZ`. This folder contains all the different categories of items that can be modified in the base game. For the jackets I used this path `C:\Users\[Your User Profile]\Documents\DayZ Projects\DZ\characters\tops\config.cpp.`  
+The easiest way to creat your own **config.cpp** file is to use and existing one as a template. You can find the existing configs for default assets here `C:\Users\[Your User Profile]\Documents\DayZ Projects\DZ`. This folder contains all the different categories of items that can be modified in the base game. For the jackets I used this path `C:\Users\[Your User Profile]\Documents\DayZ Projects\DZ\characters\tops\config.cpp.` There are different config.cpp's for each item type. Make sure to choose the correct one.  
 
 You can use [Notepad++](https://notepad-plus-plus.org/downloads/) or [VsCode](https://code.visualstudio.com/) to view the file contents. Save a copy of this file in the PBO folder you created above. Open the copy and get ready to start modifying. Here are the important parts we need to make sure are present:
 
@@ -48,7 +48,23 @@ class CfgPatches
 		};
 	};
 };
+class CfgVehicles 
+{
+  class BomberJacket_ColorBase;
+  class ItsaTreee_FBI_BomberJacket_Blue: BomberJacket_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa",
+      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa",
+      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa"
+    };
+  };
+};
 ```
+
+Find the item in the default config.cpp, copy the whole scope, from { <- to -> }, and modify the class name to something unique. The filepath needs to be relative to the **Addons** folder.
 
 ## How to Make Your Own PBO
 
@@ -74,3 +90,9 @@ Add the mod to your startup script by modifying the `"-mod=@DeerIsle;@ItsATreeeC
 `If the mod is syntactically correct, the server will start with no issues.`
 
 Once inside the game, search for your item and verify it exists within the game and does not cause issue.
+
+## Publish To Workshop
+
+Use the Publish Tool in DayZ Tools. Fill out the information required and Publish!
+
+![Publish Mod](./ItsATreeeClothingSource/src/dayz_tools/publish_mod.png)
