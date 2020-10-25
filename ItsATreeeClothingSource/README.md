@@ -39,6 +39,84 @@
 ![Tactical Vest Olive Front](./src/dayz_tools/fbi_images/tacticalvest2_olive_front_preview.png)
 ![Tactical Vest Olive Back](./src/dayz_tools/fbi_images/tacticalvest2_olive_back_preview.png)
 
+## CIA Assets
+
+![Full Preview](./src/dayz_tools/cia_images/preview_image.png)
+
+### Bomber Jacket - Blue
+
+![Bomber Front](./src/dayz_tools/cia_images/bomberjacket_blue_co_front_preview.png)
+![Bomber Back](./src/dayz_tools/cia_images/bomberjacket_blue_co_back_preview.png)
+
+### Jumpsuit Jacket - Blue
+
+![Bomber Front](./src/dayz_tools/cia_images/jumpsuit_blue_co_front_preview.png)
+![Bomber Back](./src/dayz_tools/cia_images/jumpsuit_blue_co_back_preview.png)
+
+### M65 Jacket - Black
+
+![M65 Front](./src/dayz_tools/cia_images/m65_jacket_black_co_front_preview.png)
+![M65 Back](./src/dayz_tools/cia_images/m65_jacket_black_co_back_preview.png)
+
+### Police Vest (Stab Vest) - Blue
+
+![Police Vest Front](./src/dayz_tools/cia_images/policevest_front_preview.png)
+![Police Vest Back](./src/dayz_tools/cia_images/policevest_back_preview.png)
+
+### Press Vest - Blue
+
+![Press Vest Front](./src/dayz_tools/cia_images/pressvest_front_preview.png)
+![Press Vest Back](./src/dayz_tools/cia_images/pressvest_back_preview.png)
+
+### Tactical Vest - Black
+
+![Tactical Vest Black Front](./src/dayz_tools/cia_images/tacticalvest2_black_front_preview.png)
+![Tactical Vest Black Back](./src/dayz_tools/cia_images/tacticalvest2_black_back_preview.png)
+
+### Tactical Vest - Olive
+
+![Tactical Vest Olive Front](./src/dayz_tools/cia_images/tacticalvest2_olive_front_preview.png)
+![Tactical Vest Olive Back](./src/dayz_tools/cia_images/tacticalvest2_olive_back_preview.png)
+
+## ATF Assets
+
+![Full Preview](./src/dayz_tools/atf_images/preview_image.png)
+
+### Bomber Jacket - Blue
+
+![Bomber Front](./src/dayz_tools/atf_images/bomberjacket_blue_co_front_preview.png)
+![Bomber Back](./src/dayz_tools/atf_images/bomberjacket_blue_co_back_preview.png)
+
+### Jumpsuit Jacket - Blue
+
+![Bomber Front](./src/dayz_tools/atf_images/jumpsuit_blue_co_front_preview.png)
+![Bomber Back](./src/dayz_tools/atf_images/jumpsuit_blue_co_back_preview.png)
+
+### M65 Jacket - Black
+
+![M65 Front](./src/dayz_tools/atf_images/m65_jacket_black_co_front_preview.png)
+![M65 Back](./src/dayz_tools/atf_images/m65_jacket_black_co_back_preview.png)
+
+### Police Vest (Stab Vest) - Blue
+
+![Police Vest Front](./src/dayz_tools/atf_images/policevest_front_preview.png)
+![Police Vest Back](./src/dayz_tools/atf_images/policevest_back_preview.png)
+
+### Press Vest - Blue
+
+![Press Vest Front](./src/dayz_tools/atf_images/pressvest_front_preview.png)
+![Press Vest Back](./src/dayz_tools/atf_images/pressvest_back_preview.png)
+
+### Tactical Vest - Black
+
+![Tactical Vest Black Front](./src/dayz_tools/atf_images/tacticalvest2_black_front_preview.png)
+![Tactical Vest Black Back](./src/dayz_tools/atf_images/tacticalvest2_black_back_preview.png)
+
+### Tactical Vest - Olive
+
+![Tactical Vest Olive Front](./src/dayz_tools/atf_images/tacticalvest2_olive_front_preview.png)
+![Tactical Vest Olive Back](./src/dayz_tools/atf_images/tacticalvest2_olive_back_preview.png)
+
 ## Making Your Own Texture Mod
 
 This repository holds the basic pieces needed to create a newly textured item in DayZ using standard game assets. 

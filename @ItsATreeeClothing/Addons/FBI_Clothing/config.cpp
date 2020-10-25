@@ -53,9 +53,9 @@ class CfgVehicles
     scope=2;
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\bomberjacket_blue_co.paa",
-      "FBI_Clothing\data\bomberjacket_blue_co.paa",
-      "FBI_Clothing\data\bomberjacket_blue_co.paa"
+      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa",
+      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa",
+      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa"
     };
   };
 
@@ -65,9 +65,9 @@ class CfgVehicles
     visibilityModifier=0.80000001;
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\jumpsuit_top_blue_co.paa",
-      "FBI_Clothing\data\jumpsuit_top_blue_co.paa",
-      "FBI_Clothing\data\jumpsuit_top_blue_co.paa"
+      "FBI_Clothing\data\jumpsuit_top_blue_co_fbi.paa",
+      "FBI_Clothing\data\jumpsuit_top_blue_co_fbi.paa",
+      "FBI_Clothing\data\jumpsuit_top_blue_co_fbi.paa"
     };
   };
 
@@ -77,9 +77,9 @@ class CfgVehicles
     visibilityModifier=0.69999999;
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\m65_jacket_black_co.paa",
-      "FBI_Clothing\data\m65_jacket_black_co.paa",
-      "FBI_Clothing\data\m65_jacket_black_co.paa"
+      "FBI_Clothing\data\m65_jacket_black_co_fbi.paa",
+      "FBI_Clothing\data\m65_jacket_black_co_fbi.paa",
+      "FBI_Clothing\data\m65_jacket_black_co_fbi.paa"
     };
   };
 
@@ -89,9 +89,9 @@ class CfgVehicles
     visibilityModifier=0.94999999;
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\pressvest_blue_co.paa",
-      "FBI_Clothing\data\pressvest_blue_co.paa",
-      "FBI_Clothing\data\pressvest_blue_co.paa"
+      "FBI_Clothing\data\pressvest_blue_co_fbi.paa",
+      "FBI_Clothing\data\pressvest_blue_co_fbi.paa",
+      "FBI_Clothing\data\pressvest_blue_co_fbi.paa"
     };
   };
 
@@ -100,9 +100,9 @@ class CfgVehicles
     scope=2;
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\policevest_co.paa",
-      "FBI_Clothing\data\policevest_co.paa",
-      "FBI_Clothing\data\policevest_co.paa"
+      "FBI_Clothing\data\policevest_co_fbi.paa",
+      "FBI_Clothing\data\policevest_co_fbi.paa",
+      "FBI_Clothing\data\policevest_co_fbi.paa"
     };
   };
 
@@ -112,9 +112,9 @@ class CfgVehicles
 	// 	visibilityModifier=0.69999999;
 	// 	hiddenSelectionsTextures[]=
 	// 	{
-	// 		"FBI_Clothing\data\ballisticvest_co.paa",
-	// 		"FBI_Clothing\data\ballisticvest_co.paa",
-	// 		"FBI_Clothing\data\ballisticvest_co.paa"
+	// 		"FBI_Clothing\data\ballisticvest_co_fbi.paa",
+	// 		"FBI_Clothing\data\ballisticvest_co_fbi.paa",
+	// 		"FBI_Clothing\data\ballisticvest_co_fbi.paa"
 	// 	};
 	// };
 
@@ -124,9 +124,9 @@ class CfgVehicles
 		visibilityModifier=0.69999999;
 		hiddenSelectionsTextures[]=
 		{
-			"FBI_Clothing\data\tacticalvest2_black_co.paa",
-			"FBI_Clothing\data\tacticalvest2_black_co.paa",
-			"FBI_Clothing\data\tacticalvest2_black_co.paa"
+			"FBI_Clothing\data\tacticalvest2_black_co_fbi.paa",
+			"FBI_Clothing\data\tacticalvest2_black_co_fbi.paa",
+			"FBI_Clothing\data\tacticalvest2_black_co_fbi.paa"
 		};
 	};
 
@@ -136,9 +136,9 @@ class CfgVehicles
 		visibilityModifier=0.60000002;
 		hiddenSelectionsTextures[]=
 		{
-			"FBI_Clothing\data\tacticalvest2_olive_co.paa",
-			"FBI_Clothing\data\tacticalvest2_olive_co.paa",
-			"FBI_Clothing\data\tacticalvest2_olive_co.paa"
+			"FBI_Clothing\data\tacticalvest2_olive_co_fbi.paa",
+			"FBI_Clothing\data\tacticalvest2_olive_co_fbi.paa",
+			"FBI_Clothing\data\tacticalvest2_olive_co_fbi.paa"
 		};
 	};
 };

@@ -53,9 +53,9 @@ class CfgVehicles
     scope=2;
     hiddenSelectionsTextures[]=
     {
-      "CIA_Clothing\data\bomberjacket_blue_co.paa",
-      "CIA_Clothing\data\bomberjacket_blue_co.paa",
-      "CIA_Clothing\data\bomberjacket_blue_co.paa"
+      "CIA_Clothing\data\bomberjacket_blue_co_cia.paa",
+      "CIA_Clothing\data\bomberjacket_blue_co_cia.paa",
+      "CIA_Clothing\data\bomberjacket_blue_co_cia.paa"
     };
   };
 
@@ -65,9 +65,9 @@ class CfgVehicles
     visibilityModifier=0.80000001;
     hiddenSelectionsTextures[]=
     {
-      "CIA_Clothing\data\jumpsuit_top_blue_co.paa",
-      "CIA_Clothing\data\jumpsuit_top_blue_co.paa",
-      "CIA_Clothing\data\jumpsuit_top_blue_co.paa"
+      "CIA_Clothing\data\jumpsuit_top_blue_co_cia.paa",
+      "CIA_Clothing\data\jumpsuit_top_blue_co_cia.paa",
+      "CIA_Clothing\data\jumpsuit_top_blue_co_cia.paa"
     };
   };
 
@@ -77,9 +77,9 @@ class CfgVehicles
     visibilityModifier=0.69999999;
     hiddenSelectionsTextures[]=
     {
-      "CIA_Clothing\data\m65_jacket_black_co.paa",
-      "CIA_Clothing\data\m65_jacket_black_co.paa",
-      "CIA_Clothing\data\m65_jacket_black_co.paa"
+      "CIA_Clothing\data\m65_jacket_black_co_cia.paa",
+      "CIA_Clothing\data\m65_jacket_black_co_cia.paa",
+      "CIA_Clothing\data\m65_jacket_black_co_cia.paa"
     };
   };
 
@@ -89,9 +89,9 @@ class CfgVehicles
     visibilityModifier=0.94999999;
     hiddenSelectionsTextures[]=
     {
-      "CIA_Clothing\data\pressvest_blue_co.paa",
-      "CIA_Clothing\data\pressvest_blue_co.paa",
-      "CIA_Clothing\data\pressvest_blue_co.paa"
+      "CIA_Clothing\data\pressvest_blue_co_cia.paa",
+      "CIA_Clothing\data\pressvest_blue_co_cia.paa",
+      "CIA_Clothing\data\pressvest_blue_co_cia.paa"
     };
   };
 
@@ -100,9 +100,9 @@ class CfgVehicles
     scope=2;
     hiddenSelectionsTextures[]=
     {
-      "CIA_Clothing\data\policevest_co.paa",
-      "CIA_Clothing\data\policevest_co.paa",
-      "CIA_Clothing\data\policevest_co.paa"
+      "CIA_Clothing\data\policevest_co_cia.paa",
+      "CIA_Clothing\data\policevest_co_cia.paa",
+      "CIA_Clothing\data\policevest_co_cia.paa"
     };
   };
 
@@ -112,9 +112,9 @@ class CfgVehicles
 	// 	visibilityModifier=0.69999999;
 	// 	hiddenSelectionsTextures[]=
 	// 	{
-	// 		"CIA_Clothing\data\ballisticvest_co.paa",
-	// 		"CIA_Clothing\data\ballisticvest_co.paa",
-	// 		"CIA_Clothing\data\ballisticvest_co.paa"
+	// 		"CIA_Clothing\data\ballisticvest_co_cia.paa",
+	// 		"CIA_Clothing\data\ballisticvest_co_cia.paa",
+	// 		"CIA_Clothing\data\ballisticvest_co_cia.paa"
 	// 	};
 	// };
 
@@ -124,9 +124,9 @@ class CfgVehicles
 		visibilityModifier=0.69999999;
 		hiddenSelectionsTextures[]=
 		{
-			"CIA_Clothing\data\tacticalvest2_black_co.paa",
-			"CIA_Clothing\data\tacticalvest2_black_co.paa",
-			"CIA_Clothing\data\tacticalvest2_black_co.paa"
+			"CIA_Clothing\data\tacticalvest2_black_co_cia.paa",
+			"CIA_Clothing\data\tacticalvest2_black_co_cia.paa",
+			"CIA_Clothing\data\tacticalvest2_black_co_cia.paa"
 		};
 	};
 
@@ -136,9 +136,9 @@ class CfgVehicles
 		visibilityModifier=0.60000002;
 		hiddenSelectionsTextures[]=
 		{
-			"CIA_Clothing\data\tacticalvest2_olive_co.paa",
-			"CIA_Clothing\data\tacticalvest2_olive_co.paa",
-			"CIA_Clothing\data\tacticalvest2_olive_co.paa"
+			"CIA_Clothing\data\tacticalvest2_olive_co_cia.paa",
+			"CIA_Clothing\data\tacticalvest2_olive_co_cia.paa",
+			"CIA_Clothing\data\tacticalvest2_olive_co_cia.paa"
 		};
 	};
 };
