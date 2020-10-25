@@ -1,40 +1,18 @@
 class CfgPatches
 {
-  class DZ_Characters_Tops
-  {
-    units[]=
-    {
-      "Shirt_CheckRed",
-      "Hoodie_Blue",
-      "Hoodie_Black",
-      "Hoodie_Brown",
-      "Hoodie_Green",
-      "Hoodie_Grey",
-      "Hoodie_Red",
-      "MaleTorso",
-      "FemaleTorso"
-    };
-    weapons[]={};
-    requiredVersion=0.1;
-    requiredAddons[]=
-    {
-        "DZ_Characters"
-    };
+  class CIA_Clothing {
+    units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] =
+		{
+			"DZ_Characters_Tops",
+      "DZ_Characters_Vests"
+		};
+		author = "ItsATreee";
+		name = "Treee";
+		url = "https://github.com/Treee/ItsATreeeDayZWorkshopMods/tree/master/ItsATreeeClothingSource";
   };
-  class DZ_Characters_Vests
-	{
-		units[]=
-		{
-			"TacticalVest",
-			"UKAssVest"
-		};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"DZ_Characters"
-		};
-	};
 };
 
 class CfgVehicles 
@@ -51,6 +29,8 @@ class CfgVehicles
   class ItsaTreee_CIA_BomberJacket_Blue: BomberJacket_ColorBase
   {
     scope=2;
+    displayName = "CIA Bomber Jacket";
+    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
       "CIA_Clothing\data\bomberjacket_blue_co_cia.paa",
@@ -62,7 +42,8 @@ class CfgVehicles
   class ItsaTreee_CIA_JumpsuitJacket_Blue: JumpsuitJacket_ColorBase
   {
     scope=2;
-    visibilityModifier=0.80000001;
+    displayName = "CIA Bomber Jacket";
+    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
       "CIA_Clothing\data\jumpsuit_top_blue_co_cia.paa",
@@ -74,7 +55,8 @@ class CfgVehicles
   class ItsaTreee_CIA_M65Jacket_Black: M65Jacket_ColorBase
   {
     scope=2;
-    visibilityModifier=0.69999999;
+    displayName = "CIA Bomber Jacket";
+    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
       "CIA_Clothing\data\m65_jacket_black_co_cia.paa",
@@ -86,7 +68,8 @@ class CfgVehicles
   class ItsaTreee_CIA_PressVest_Blue: PressVest_ColorBase
   {
     scope=2;
-    visibilityModifier=0.94999999;
+    displayName = "CIA Bomber Jacket";
+    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
       "CIA_Clothing\data\pressvest_blue_co_cia.paa",
@@ -98,6 +81,8 @@ class CfgVehicles
   class ItsaTreee_CIA_PoliceVest: PoliceVest
   {
     scope=2;
+    displayName = "CIA Bomber Jacket";
+    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
       "CIA_Clothing\data\policevest_co_cia.paa",
@@ -121,7 +106,8 @@ class CfgVehicles
   class ItsaTreee_CIA_HighCapacityVest_Black: HighCapacityVest_ColorBase
 	{
 		scope=2;
-		visibilityModifier=0.69999999;
+    displayName = "CIA Bomber Jacket";
+    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
 			"CIA_Clothing\data\tacticalvest2_black_co_cia.paa",
@@ -133,7 +119,8 @@ class CfgVehicles
   class ItsaTreee_CIA_HighCapacityVest_Olive: HighCapacityVest_ColorBase
 	{
 		scope=2;
-		visibilityModifier=0.60000002;
+    displayName = "CIA Bomber Jacket";
+    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
 			"CIA_Clothing\data\tacticalvest2_olive_co_cia.paa",

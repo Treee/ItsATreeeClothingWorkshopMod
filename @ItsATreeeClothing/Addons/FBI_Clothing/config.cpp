@@ -13,41 +13,6 @@ class CfgPatches
 		name = "Treee";
 		url = "https://github.com/Treee/ItsATreeeDayZWorkshopMods/tree/master/ItsATreeeClothingSource";
   };
-  // class DZ_Characters_Tops
-  // {
-  //   units[]=
-  //   {
-  //     "Shirt_CheckRed",
-  //     "Hoodie_Blue",
-  //     "Hoodie_Black",
-  //     "Hoodie_Brown",
-  //     "Hoodie_Green",
-  //     "Hoodie_Grey",
-  //     "Hoodie_Red",
-  //     "MaleTorso",
-  //     "FemaleTorso"
-  //   };
-  //   weapons[]={};
-  //   requiredVersion=0.1;
-  //   requiredAddons[]=
-  //   {
-  //       "DZ_Characters"
-  //   };
-  // };
-  // class DZ_Characters_Vests
-	// {
-	// 	units[]=
-	// 	{
-	// 		"TacticalVest",
-	// 		"UKAssVest"
-	// 	};
-	// 	weapons[]={};
-	// 	requiredVersion=0.1;
-	// 	requiredAddons[]=
-	// 	{
-	// 		"DZ_Characters"
-	// 	};
-	// };
 };
 
 class CfgVehicles 
