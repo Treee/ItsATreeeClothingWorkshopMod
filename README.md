@@ -56,9 +56,9 @@ class CfgVehicles
     scope=2;
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa",
-      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa",
-      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa"
+      "FBI_Clothing\data\bomberjacket_blue_co.paa",
+      "FBI_Clothing\data\bomberjacket_blue_co.paa",
+      "FBI_Clothing\data\bomberjacket_blue_co.paa"
     };
   };
 };
