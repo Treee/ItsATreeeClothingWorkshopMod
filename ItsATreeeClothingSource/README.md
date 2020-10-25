@@ -2,7 +2,7 @@
 
 ## FBI Assets
 
-![Full Preview](./src/dayz_tools/fbi_images/preview_image.png)
+![Full Preview](./src/dayz_tools/fbi_images/fbi_preview_image.png)
 
 ### Bomber Jacket - Blue
 
@@ -41,7 +41,7 @@
 
 ## CIA Assets
 
-![Full Preview](./src/dayz_tools/cia_images/preview_image.png)
+![Full Preview](./src/dayz_tools/cia_images/cia_preview_image.png)
 
 ### Bomber Jacket - Blue
 
@@ -80,7 +80,7 @@
 
 ## ATF Assets
 
-![Full Preview](./src/dayz_tools/atf_images/preview_image.png)
+![Full Preview](./src/dayz_tools/atf_images/atf_preview_image.png)
 
 ### Bomber Jacket - Blue
 
