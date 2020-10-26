@@ -10,7 +10,7 @@ class CfgPatches
       "DZ_Characters_Vests"
 		};
 		author = "ItsATreee";
-		name = "Treee";
+		name = "ATF_Clothing";
 		url = "https://github.com/Treee/ItsATreeeDayZWorkshopMods/tree/master/ItsATreeeClothingSource";
   };
 };

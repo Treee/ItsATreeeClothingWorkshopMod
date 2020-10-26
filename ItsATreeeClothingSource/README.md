@@ -119,6 +119,8 @@
 
 ## Making Your Own Texture Mod
 
+**Adapted from [Test_ClothingRetexture](https://github.com/BohemiaInteractive/DayZ-Samples/blob/master/Test_ClothingRetexture/config.cpp)**
+
 This repository holds the basic pieces needed to create a newly textured item in DayZ using standard game assets. 
 
 Step 1. Find the asset you want to modify from the unpacked game assets. Use [DayZ Tools on Steam](https://community.bistudio.com/wiki/DayZ:Modding_Basics#Setup) Step #2 only. Default locations to find assets `C:\Users\[Your User Profile]\Documents\DayZ Projects\DZ`

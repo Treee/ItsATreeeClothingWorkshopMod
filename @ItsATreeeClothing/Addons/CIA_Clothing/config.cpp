@@ -10,7 +10,7 @@ class CfgPatches
       "DZ_Characters_Vests"
 		};
 		author = "ItsATreee";
-		name = "Treee";
+		name = "CIA_Clothing";
 		url = "https://github.com/Treee/ItsATreeeDayZWorkshopMods/tree/master/ItsATreeeClothingSource";
   };
 };
