@@ -1,7 +1,12 @@
-class ActionConsumeHumanMeatSelf: ActionConsume
+class ActionConsumeHumanMeatSelf: ActionEatMeat
 {
-  override void ApplyModifiers(ActionData action_data) {
-    // eat food, give buff?
-    action_data.m_Player.m_HealthLevel = -99;
-  }
+  override void OnEndAnimationLoopServer( ActionData action_data )
+	{
+    PlayerBase player = action_data.m_Player;
+    ItemBase meatInHand = action_data.m_MainItem;
+    if (meatInHand.GetQuantity() < 0.01) {
+      Print("--------------------ItsATreee_ActionConsumeHumanMeatSelf : OnEndAnimationLoopServer : You Ate All The Meat!!");
+    }
+    super.OnEndAnimationLoopServer(action_data);
+	}
 };

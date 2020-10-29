@@ -1,8 +1,12 @@
 class ActionConsumeHumanMeatTarget: ActionForceFeedMeat
 {
-  override void ApplyModifiers(ActionData action_data) {
-    // force food, give buff?
+  override void OnEndAnimationLoopServer( ActionData action_data )
+	{
     PlayerBase ntarget = PlayerBase.Cast( action_data.m_Target.GetObject() );
-		ntarget.m_HealthLevel = -99;
-  }
+    ItemBase meatInHand = action_data.m_MainItem;
+    if (meatInHand.GetQuantity() < 0.01) {
+      Print("--------------------ItsATreee_ActionConsumeHumanMeatSelf : OnEndAnimationLoopServer : You Ate All The Meat!!");
+    }
+    super.OnEndAnimationLoopServer(action_data);
+	}
 };
