@@ -5,6 +5,7 @@
 *.txt
 *.vdf
 *.bisign
+*.pbo
 
 \!dzsal
 \!Workshop
