@@ -30,7 +30,7 @@ class CfgVehicles
   {
     scope=2;
     displayName = "ATF Bomber Jacket";
-    descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
+    descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";    
     hiddenSelectionsTextures[]=
     {
       "ATF_Clothing\data\bomberjacket_blue_co_atf.paa",

@@ -11,7 +11,6 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Animals",
       "DZ_AI",
       "DZ_Data"
 		};
@@ -42,7 +41,7 @@ class CfgAIBehaviours
 			{
 				class BehaviourCalm
 				{
-					grazeOnSpotWeight=50;
+					grazeOnSpotWeight=50000000;
 					grazeWalkingWeight=20;
 					restWeight=50;
 					travelWeight=0;
@@ -101,7 +100,7 @@ class CfgAIBehaviours
 			{
 				class BehaviourCalm
 				{
-					grazeOnSpotWeight=20;
+					grazeOnSpotWeight=20000000;
 					grazeWalkingWeight=20;
 					restWeight=10;
 					travelWeight=0;
@@ -120,8 +119,8 @@ class CfgAIBehaviours
 					safetyLookAngleChangeInterval=3;
 					class GrazeMovement
 					{
-						maxSpeed=0.25;
-						minSpeed=0.25;
+						maxSpeed=0;
+						minSpeed=0;
 						acceleration=5;
 						maxAngleSpeed=5;
 						slowRadius=0;
@@ -160,7 +159,7 @@ class CfgAIBehaviours
 			{
 				class BehaviourCalm
 				{
-					grazeOnSpotWeight=25;
+					grazeOnSpotWeight=200000005;
 					grazeWalkingWeight=25;
 					restWeight=0;
 					travelWeight=50;
@@ -179,8 +178,8 @@ class CfgAIBehaviours
 					safetyLookAngleChangeInterval=10;
 					class GrazeMovement
 					{
-						maxSpeed=0.25;
-						minSpeed=0.25;
+						maxSpeed=0;
+						minSpeed=0;
 						acceleration=5;
 						maxAngleSpeed=5;
 						slowRadius=0;
@@ -219,9 +218,9 @@ class CfgAIBehaviours
 			{
 				class BehaviourCalm
 				{
-					grazeOnSpotWeight=10;
+					grazeOnSpotWeight=100000000;
 					grazeWalkingWeight=10;
-					restWeight=10;
+					restWeight=0;
 					travelWeight=0;
 					drinkingWeight=20;
 					grazeOnSpotDurationMin=100;
@@ -255,8 +254,8 @@ class CfgAIBehaviours
 					};
 					class GrazeMovement
 					{
-						maxSpeed=0.25;
-						minSpeed=0.25;
+						maxSpeed=0;
+						minSpeed=0;
 						acceleration=5;
 						maxAngleSpeed=5;
 						slowRadius=0;
@@ -297,9 +296,9 @@ class CfgAIBehaviours
 				class BehaviourSpecificThreat
 				{
 					walkAwayWeight=0;
-					walkToWeight=20;
-					stayLookAtWeight=10;
-					stayWeight=0;
+					walkToWeight=0;
+					stayLookAtWeight=0;
+					stayWeight=1000;
 					walkAwaySpreadAngle=1.5;
 					walkAwayInitialAngle=2;
 					walkToSpreadAngle=1.5;
@@ -310,8 +309,8 @@ class CfgAIBehaviours
 					walkToDurationMax=15;
 					stayLookAtDurationMin=10;
 					stayLookAtDurationMax=20;
-					stayDurationMin=20;
-					stayDurationMax=30;
+					stayDurationMin=2000;
+					stayDurationMax=3000000;
 					pathLength=10;
 					class WalkingMovement
 					{
@@ -341,7 +340,7 @@ class CfgAIBehaviours
 							repeatTimeMax=6;
 							class AlertImpulseActionRepeatAlert_BosTaurusSlotSpec
 							{
-								value=9;
+								value=0;
 								range=10;
 							};
 						};
@@ -349,9 +348,9 @@ class CfgAIBehaviours
 				};
 				class BehaviourSpecificThreat
 				{
-					walkAwayWeight=10;
+					walkAwayWeight=0;
 					walkToWeight=0;
-					stayLookAtWeight=0;
+					stayLookAtWeight=10;
 					stayWeight=0;
 					walkAwaySpreadAngle=1.5;
 					walkAwayInitialAngle=2;
@@ -391,7 +390,7 @@ class CfgAIBehaviours
 						{
 							class AlertImpulseActionSendAlert_BosTaurusSlotAlert
 							{
-								value=50;
+								value=0;
 								range=15;
 							};
 						};
@@ -404,7 +403,7 @@ class CfgAIBehaviours
 							repeatTimeMax=3;
 							class AlertImpulseActionRepeatAlert_BosTaurusSlotAlert
 							{
-								value=8;
+								value=0;
 								range=15;
 							};
 						};
@@ -414,12 +413,12 @@ class CfgAIBehaviours
 				{
 					class Movement
 					{
-						maxSpeed=11;
-						optimalSpeed=3;
-						minSpeed=0.60000002;
-						maxSpeedRange=30;
-						optimalSpeedRange=20;
-						acceleration=5;
+						maxSpeed=0;
+						optimalSpeed=0;
+						minSpeed=0;
+						maxSpeedRange=0;
+						optimalSpeedRange=0;
+						acceleration=0;
 						maxAngleSpeed=60;
 						slowRadius=4;
 						stopRadius=2;
@@ -467,15 +466,15 @@ class CfgAIBehaviours
 			};
 			class AlertSystem
 			{
-				visionToAlertMultiplier=30;
-				noiseToAlertMultiplier=0.40000001;
-				noiseShotToAlertMultiplier=1.2;
-				damageToAlertMultiplier=1000000;
+				visionToAlertMultiplier=0;
+				noiseToAlertMultiplier=0;
+				noiseShotToAlertMultiplier=0;
+				damageToAlertMultiplier=0;
 				class Calm
 				{
 					dropSpeed=8;
 					dropDelay=1;
-					maxAlertValue=5;
+					maxAlertValue=500000000;
 				};
 				class NonSpecificThreat
 				{
@@ -499,36 +498,36 @@ class CfgAIBehaviours
 		};
 		class NoiseSystemParams
 		{
-			rangeMin=10;
-			rangeMax=30;
-			rangeShotMin=5;
-			rangeShotMax=300;
+			rangeMin=0;
+			rangeMax=0;
+			rangeShotMin=0;
+			rangeShotMax=0;
 			class NoiseStrengthTeamMultipliers
 			{
-				BigGame=1;
+				BigGame=0;//1;
 				Zombies=1;
-				Player=1;
+				Player=0;//1;
 			};
 		};
 		class TargetSystemDZBase
 		{
 			class VisionTeamMultipliers
 			{
-				BigGame=0.80000001;
+				BigGame=0;//0.80000001;
 				Zombies=1;
-				Player=0;
+				Player=0; // 1
 			};
-			visionManSizeStand=1;
-			visionManSizeCrouch=0.80000001;
-			visionManSizeProne=0.5;
+			visionManSizeStand=0;//1;
+			visionManSizeCrouch=0;//0.80000001;
+			visionManSizeProne=0;//0.5;
 			visionAngularSpeedMin=0.1;
 			visionAngularSpeedMax=0.5;
 			visionAngularSpeedMaxMult=5;
-			visionRangeMin=8;
-			visionRangeMax=20;
+			visionRangeMin=0;
+			visionRangeMax=0;
 			visionFov=1.6;
-			visionPeripheralRangeMin=5;
-			visionPeripheralRangeMax=8;
+			visionPeripheralRangeMin=0;
+			visionPeripheralRangeMax=0;
 			visionPeripheralFov=6.2800002;
 			visionNightMinMult=1;
 			visionNightMaxMult=1;
@@ -559,6 +558,36 @@ class CfgVehicles
 			"dz\animals\bos_taurus\data\bull_brown.rvmat"
 		};
 	};
+  class ItsATreee_Survivalist_Stencil_Animal_BosTaurus_Brown: Animal_BosTaurus
+	{
+		scope=2;
+    displayName = "Brown Bull";
+    descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Animals\data\survivalists_bull_brown_co_stencil.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus\data\bull_brown.rvmat"
+		};
+	};
+  class ItsATreee_Survivalist_Stencil_LOL_Animal_BosTaurus_Brown: Animal_BosTaurus
+	{
+		scope=2;
+    displayName = "Brown Bull";
+    descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Animals\data\survivalists_bull_brown_co_stencil_lol.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus\data\bull_brown.rvmat"
+		};
+	};
 	class ItsATreee_Survivalists_Animal_BosTaurus_White: Animal_BosTaurus
 	{
 		scope=2;
@@ -568,6 +597,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_bull_white_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus\data\bull_white.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_BosTaurus_White: Animal_BosTaurus
+	{
+		scope=2;
+    displayName = "White Bull";
+    descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_bull_white_co_stencil.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -587,6 +631,111 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]=
 		{
 			"dz\animals\bos_taurus\data\bull_spotted.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_BosTaurus_Spotted: Animal_BosTaurus
+	{
+		scope=2;
+    displayName = "Spotted Bull";
+    descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_bull_spotted_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus\data\bull_spotted.rvmat"
+		};
+	};
+  class ItsATreee_Survivalist_Animal_BosTaurusF_Brown: Animal_BosTaurusF
+	{
+		scope=2;
+    displayName = "Brown Cow";
+    descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Animals\data\survivalists_cow_brown_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus_fem\data\cow_brown.rvmat"
+		};
+	};
+  class ItsATreee_Survivalist_Stencil_Animal_BosTaurusF_Brown: Animal_BosTaurusF
+	{
+		scope=2;
+    displayName = "Brown Cow";
+    descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Animals\data\survivalists_cow_brown_co_stencil.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus_fem\data\cow_brown.rvmat"
+		};
+	};
+	class ItsATreee_Survivalists_Animal_BosTaurusF_White: Animal_BosTaurusF
+	{
+		scope=2;
+    displayName = "White Cow";
+    descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_cow_white_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus_fem\data\cow_white.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_BosTaurusF_White: Animal_BosTaurusF
+	{
+		scope=2;
+    displayName = "White Cow";
+    descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_cow_white_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus_fem\data\cow_white.rvmat"
+		};
+	};  
+	class ItsATreee_Survivalists_Animal_BosTaurusF_Spotted: Animal_BosTaurusF
+	{
+		scope=2;
+    displayName = "Spotted Cow";
+    descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_cow_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus_fem\data\cow.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_BosTaurusF_Spotted: Animal_BosTaurusF
+	{
+		scope=2;
+    displayName = "Spotted Cow";
+    descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_cow_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\bos_taurus_fem\data\cow.rvmat"
 		};
 	};
 };
