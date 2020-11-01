@@ -13,6 +13,7 @@
 @CF
 @VPPAdminTools
 /ItsATreeeModSource/src/**/*.png
+/ItsATreeeModSource/src/**/*.paa
 !/ItsATreeeModSource/src/dayz_tools/**/*.png
 /Addons
 BattlEye
