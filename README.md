@@ -4,7 +4,7 @@
 
 The structure of the mods is important otherwise they will not load on server start up.
 
-![Directory Structure](./ItsATreeeClothingSource/src/dayz_tools/directory_structure.png)
+![Directory Structure](./ItsATreeeModSource/src/dayz_tools/directory_structure.png)
 
 Main Folder   - Name is how you identify between different workshop mods.  
 Addons Folder - Required in order to load the mod on server startup.
@@ -68,15 +68,15 @@ Find the item in the default config.cpp, copy the whole scope, from { <- to -> }
 
 ## How to Make Your Own PBO
 
-[Create a Custom .paa file](https://github.com/Treee/ItsATreeeDayZWorkshopMods/tree/master/ItsATreeeClothingSource)
+[Create a Custom .paa file](https://github.com/Treee/ItsATreeeDayZWorkshopMods/tree/master/ItsATreeeModSource)
 
 Step 1. Download and Install [PBO Manager](https://www.armaholic.com/page.php?id=16369)  
 
 Step 2. Right click the PBO folder you created above. Pack into PBO.  
-![Create PBO](./ItsATreeeClothingSource/src/dayz_tools/pbo_manager.png)  
+![Create PBO](./ItsATreeeModSource/src/dayz_tools/pbo_manager.png)  
 
 Step 3. We need to sign the PBO now in order for the game to recognize the contents are valid. (Security Step). Open **DSUtils** in DayZ Tools.  
-![DSUtils](./ItsATreeeClothingSource/src/dayz_tools/sign_pbo.png)  
+![DSUtils](./ItsATreeeModSource/src/dayz_tools/sign_pbo.png)  
 
 Step 4. Add the Source Directory. This will be the **Addons** folder. Process Files.  
 `Generate a new private key if needed. Name it whatever you want.`
@@ -95,4 +95,4 @@ Once inside the game, search for your item and verify it exists within the game 
 
 Use the Publish Tool in DayZ Tools. Fill out the information required and Publish!
 
-![Publish Mod](./ItsATreeeClothingSource/src/dayz_tools/publish_mod.png)
+![Publish Mod](./ItsATreeeModSource/src/dayz_tools/publish_mod.png)
