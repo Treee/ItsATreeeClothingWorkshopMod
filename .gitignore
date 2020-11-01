@@ -12,6 +12,8 @@
 @DeerIsle
 @CF
 @VPPAdminTools
+/ItsATreeeModSource/src/**/*.png
+!/ItsATreeeModSource/src/dayz_tools/*.png
 /Addons
 BattlEye
 bliss
