@@ -566,7 +566,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-      "Survivalists_Animals\data\survivalists_bull_brown_co_stencil.paa",
+      "Survivalists_Animals\data\survivalists_bull_brown_stencil_co.paa",
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -581,7 +581,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-      "Survivalists_Animals\data\survivalists_bull_brown_co_stencil_lol.paa",
+      "Survivalists_Animals\data\survivalists_bull_brown_stencil_lol_co.paa",
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -611,7 +611,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_bull_white_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_bull_white_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -641,7 +641,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_bull_spotted_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_bull_spotted_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -671,7 +671,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-      "Survivalists_Animals\data\survivalists_cow_brown_co_stencil.paa",
+      "Survivalists_Animals\data\survivalists_cow_brown_stencil_co.paa",
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -701,7 +701,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_cow_white_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_cow_white_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -731,7 +731,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_cow_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_cow_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -761,7 +761,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_wolf_grey_co_stencil.paa",
+			"Survivalists_Animals\data\survivalists_wolf_grey_stencil_co.paa",
 			"dz\animals\canis_lupus\data\fur_alpha.paa"
 		};
 	};
@@ -785,7 +785,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_wolf_white_co_stencil.paa",
+			"Survivalists_Animals\data\survivalists_wolf_white_stencil_co.paa",
 			"dz\animals\canis_lupus\data\fur_alpha.paa"
 		};
 	};
@@ -818,7 +818,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_brown_goat_co_stencil.paa",
+			"Survivalists_Animals\data\survivalists_brown_goat_stencil_co.paa",
 			"dz\animals\capra_hircus\data\Brown_Goat_fur_CO.paa"
 		};
 		hiddenSelectionsMaterials[]=
@@ -852,7 +852,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_black_goat_co_stencil.paa",
+			"Survivalists_Animals\data\survivalists_black_goat_stencil_co.paa",
 			"dz\animals\capra_hircus\data\black_goat_fur_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
@@ -886,7 +886,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_white_goat_co_stencil.paa",
+			"Survivalists_Animals\data\survivalists_white_goat_stencil_co.paa",
 			"dz\animals\capra_hircus\data\White_Goat_fur_CO.paa"
 		};
 		hiddenSelectionsMaterials[]=
@@ -917,7 +917,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_hen_brown_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_hen_brown_stencil_co.paa"
 		};
 	};
   class ItsATreee_Survivalists_Animal_GallusGallusDomesticusF_Spotted: Animal_GallusGallusDomesticusF
@@ -939,7 +939,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_hen_spotted_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_hen_spotted_stencil_co.paa"
 		};
 	};
   class ItsATreee_Survivalists_Animal_GallusGallusDomesticusF_White: Animal_GallusGallusDomesticusF
@@ -961,7 +961,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_hen_white_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_hen_white_stencil_co.paa"
 		};
 	};
 
@@ -994,7 +994,7 @@ class CfgVehicles
     };
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_bear_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_bear_stencil_co.paa"
 		};
   }
 
@@ -1032,7 +1032,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_ram_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_ram_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -1070,7 +1070,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_sheep_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_sheep_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -1105,7 +1105,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_pig_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_pig_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -1135,7 +1135,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_wild_boar_brown_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_wild_boar_brown_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -1170,7 +1170,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_roe_deer_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_roe_deer_stencil_co.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -1204,7 +1204,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_cervus_elaphus_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_cervus_elaphus_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -1234,7 +1234,7 @@ class CfgVehicles
     aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Animals\data\survivalists_red_deer_fem_co_stencil.paa"
+			"Survivalists_Animals\data\survivalists_red_deer_fem_stencil_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
