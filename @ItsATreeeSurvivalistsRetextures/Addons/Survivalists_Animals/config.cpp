@@ -2,17 +2,17 @@ class CfgPatches
 {
 	class Survivalists_Animals
 	{
-		units[]=
-		{
-			"Animal_BosTaurus",
-      "Animal_BosTaurusF"
-		};
+		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
       "DZ_AI",
-      "DZ_Data"
+			"DZ_Data_Bliss",
+      "DZ_Data",
+      "DZ_Animals",
+			"DZ_AI_Bliss",
+			"DZ_Weapons_Melee"
 		};
 	};
 };
@@ -20,7 +20,7 @@ class CfgAIBehaviours
 {
   class Herbivores_BosTaurus;
 
-  class ItsATreee_Survivalists_Herbivores_BosTaurus : Herbivores_BosTaurus
+  class ItsATreee_Survivalists_Test_AI : Herbivores_BosTaurus
   {
 		HeadLookBoneName="pin_lookat";
 		teamName="BigGame";
@@ -540,7 +540,7 @@ class CfgAIBehaviours
 };
 class CfgVehicles
 {
-	class Animal_BosTaurus;
+	class Animal_BosTaurus; //cows male/female
   class Animal_BosTaurusF;
   
   class ItsATreee_Survivalist_Animal_BosTaurus_Brown: Animal_BosTaurus
@@ -548,7 +548,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Brown Bull";
     descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
       "Survivalists_Animals\data\survivalists_bull_brown_co.paa",
@@ -563,7 +563,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Brown Bull";
     descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
       "Survivalists_Animals\data\survivalists_bull_brown_co_stencil.paa",
@@ -578,7 +578,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Brown Bull";
     descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
       "Survivalists_Animals\data\survivalists_bull_brown_co_stencil_lol.paa",
@@ -593,7 +593,7 @@ class CfgVehicles
 		scope=2;
     displayName = "White Bull";
     descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_bull_white_co.paa"
@@ -608,7 +608,7 @@ class CfgVehicles
 		scope=2;
     displayName = "White Bull";
     descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_bull_white_co_stencil.paa"
@@ -623,7 +623,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Spotted Bull";
     descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_bull_spotted_co.paa"
@@ -638,7 +638,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Spotted Bull";
     descriptionShort = "A bull with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_bull_spotted_co_stencil.paa"
@@ -653,7 +653,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Brown Cow";
     descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
       "Survivalists_Animals\data\survivalists_cow_brown_co.paa",
@@ -668,7 +668,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Brown Cow";
     descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
       "Survivalists_Animals\data\survivalists_cow_brown_co_stencil.paa",
@@ -683,7 +683,7 @@ class CfgVehicles
 		scope=2;
     displayName = "White Cow";
     descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_cow_white_co.paa"
@@ -698,7 +698,7 @@ class CfgVehicles
 		scope=2;
     displayName = "White Cow";
     descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_cow_white_co_stencil.paa"
@@ -713,7 +713,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Spotted Cow";
     descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_cow_co.paa"
@@ -728,7 +728,7 @@ class CfgVehicles
 		scope=2;
     displayName = "Spotted Cow";
     descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
-    aiAgentTemplate="ItsATreee_Survivalists_Herbivores_BosTaurus";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Animals\data\survivalists_cow_co_stencil.paa"
@@ -738,4 +738,508 @@ class CfgVehicles
 			"dz\animals\bos_taurus_fem\data\cow.rvmat"
 		};
 	};
+
+  class Animal_CanisLupus; // wolves
+
+  class ItsATreee_Survivalists_Animal_CanisLupus_Grey: Animal_CanisLupus
+	{
+		scope=2;
+    displayName = "Grey Wolf";
+    descriptionShort = "A wolf with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_wolf_grey_co.paa",
+			"dz\animals\canis_lupus\data\fur_alpha.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_CanisLupus_Grey: Animal_CanisLupus
+	{
+		scope=2;
+    displayName = "Grey Wolf";
+    descriptionShort = "A wolf with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_wolf_grey_co_stencil.paa",
+			"dz\animals\canis_lupus\data\fur_alpha.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Animal_CanisLupus_White: Animal_CanisLupus
+	{
+		scope=2;
+    displayName = "White Wolf";
+    descriptionShort = "A wolf with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_wolf_white_co.paa",
+			"dz\animals\canis_lupus\data\fur_alpha.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_CanisLupus_White: Animal_CanisLupus
+	{
+		scope=2;
+    displayName = "White Wolf";
+    descriptionShort = "A wolf with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_wolf_white_co_stencil.paa",
+			"dz\animals\canis_lupus\data\fur_alpha.paa"
+		};
+	};
+
+  class Animal_CapraHircus; // goats male/females
+  class Animal_CapraHircusF;
+
+  class ItsATreee_Survivalists_Animal_CapraHircus_Brown: Animal_CapraHircus
+	{
+		scope=2;
+    displayName = "Brown Goat";
+    descriptionShort = "A goat with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_brown_goat_co.paa",
+			"dz\animals\capra_hircus\data\Brown_Goat_fur_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\capra_hircus\data\Brown_Goat.rvmat",
+			"dz\animals\capra_hircus\data\Brown_Goat_Fur.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_CapraHircus_Brown: Animal_CapraHircus
+	{
+		scope=2;
+    displayName = "Brown Goat";
+    descriptionShort = "A cow with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_brown_goat_co_stencil.paa",
+			"dz\animals\capra_hircus\data\Brown_Goat_fur_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\capra_hircus\data\Brown_Goat.rvmat",
+			"dz\animals\capra_hircus\data\Brown_Goat_Fur.rvmat"
+		};
+	};	
+  class ItsATreee_Survivalists_Animal_CapraHircus_Black: Animal_CapraHircus
+	{
+		scope=2;
+    displayName = "Black Goat";
+    descriptionShort = "A goat with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_black_goat_co.paa",
+			"dz\animals\capra_hircus\data\black_goat_fur_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\capra_hircus\data\Black_Goat.rvmat",
+			"dz\animals\capra_hircus\data\black_goat_fur.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_CapraHircus_Black: Animal_CapraHircus
+	{
+		scope=2;
+    displayName = "Black Goat";
+    descriptionShort = "A goat with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_black_goat_co_stencil.paa",
+			"dz\animals\capra_hircus\data\black_goat_fur_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\capra_hircus\data\Black_Goat.rvmat",
+			"dz\animals\capra_hircus\data\black_goat_fur.rvmat"
+		};
+	};  
+	class ItsATreee_Survivalists_Animal_CapraHircus_White: Animal_CapraHircus
+	{
+		scope=2;
+    displayName = "White Goat";
+    descriptionShort = "A goat with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_white_goat_co.paa",
+			"dz\animals\capra_hircus\data\White_Goat_fur_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\capra_hircus\data\White_Goat.rvmat",
+			"dz\animals\capra_hircus\data\White_Goat_Fur.rvmat"
+		};
+	};
+	class ItsATreee_Survivalists_Stencil_Animal_CapraHircus_White: Animal_CapraHircus
+	{
+		scope=2;
+    displayName = "White Goat";
+    descriptionShort = "A goat with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_white_goat_co_stencil.paa",
+			"dz\animals\capra_hircus\data\White_Goat_fur_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\capra_hircus\data\White_Goat.rvmat",
+			"dz\animals\capra_hircus\data\White_Goat_Fur.rvmat"
+		};
+	};  
+
+  class Animal_GallusGallusDomesticusF; // hens
+
+  class ItsATreee_Survivalists_Animal_GallusGallusDomesticusF_Brown: Animal_GallusGallusDomesticusF
+	{
+		scope=2;
+    displayName = "Brown Hen";
+    descriptionShort = "A brown hen with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_hen_brown_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_GallusGallusDomesticusF_Brown: Animal_GallusGallusDomesticusF
+	{
+		scope=2;
+    displayName = "Brown Hen";
+    descriptionShort = "A brown hen with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_hen_brown_co_stencil.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Animal_GallusGallusDomesticusF_Spotted: Animal_GallusGallusDomesticusF
+	{
+		scope=2;
+    displayName = "Spotted Hen";
+    descriptionShort = "A spotted hen with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_hen_spotted_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_GallusGallusDomesticusF_Spotted: Animal_GallusGallusDomesticusF
+	{
+		scope=2;
+    displayName = "Spotted Hen";
+    descriptionShort = "A spotted hen with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_hen_spotted_co_stencil.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Animal_GallusGallusDomesticusF_White: Animal_GallusGallusDomesticusF
+	{
+		scope=2;
+    displayName = "White Hen";
+    descriptionShort = "A white hen with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_hen_white_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_GallusGallusDomesticusF_White: Animal_GallusGallusDomesticusF
+	{
+		scope=2;
+    displayName = "White Hen";
+    descriptionShort = "A white hen with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_hen_white_co_stencil.paa"
+		};
+	};
+
+  class Animal_UrsusArctos;
+
+  class ItsATreee_Survivalists_Animal_UrsusArctos: Animal_UrsusArctos
+  {
+		scope=2;
+    displayName = "Bear";
+    descriptionShort = "A bear with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelections[]=
+		{
+			"body_injury"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_bear_co.paa"
+		};
+  }
+  class ItsATreee_Survivalists_Stencil_Animal_UrsusArctos: Animal_UrsusArctos
+  {
+		scope=2;
+    displayName = "Bear";
+    descriptionShort = "A bear with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+    hiddenSelections[]=
+    {
+      "body_injury"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_bear_co_stencil.paa"
+		};
+  }
+
+  class Animal_OvisAries; // rams/sheep
+  class Animal_OvisAriesF;
+
+  class ItsATreee_Survivalists_Animal_OvisAries: Animal_OvisAries
+	{
+		scope=2;
+    displayName = "Ram";
+    descriptionShort = "A ram with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+    hiddenSelections[]=
+    {
+      "camo"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_ram_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\ovis_aries\data\ram.rvmat"
+		};
+	};  
+  class ItsATreee_Survivalists_Stencil_Animal_OvisAries: Animal_OvisAries
+	{
+		scope=2;
+    displayName = "Ram";
+    descriptionShort = "A ram with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+    hiddenSelections[]=
+    {
+      "camo"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_ram_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\ovis_aries\data\ram.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Animal_OvisAriesF: Animal_OvisAriesF
+	{
+		scope=2;
+    displayName = "Sheep";
+    descriptionShort = "A sheep with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+    hiddenSelections[]=
+    {
+      "camo"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_sheep_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\ovis_aries_fem\data\sheep.rvmat"
+		};
+	};  
+  class ItsATreee_Survivalists_Stencil_Animal_OvisAriesF: Animal_OvisAriesF
+	{
+		scope=2;
+    displayName = "Sheep";
+    descriptionShort = "A sheep with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+    hiddenSelections[]=
+    {
+      "camo"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_sheep_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\ovis_aries_fem\data\sheep.rvmat"
+		};
+	};
 };
+/* Commented until I can figure out how to modify p3d models since these have no hidden sections to retexture
+  class Animal_SusDomesticus; // pigs/boars
+  class Animal_SusScrofa;
+  
+  class ItsATreee_Survivalists_Animal_SusDomesticus: Animal_SusDomesticus
+	{
+		scope=2;
+    displayName = "Pig";
+    descriptionShort = "A pig with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_pig_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\sus_domesticus\data\pig.rvmat"
+		};
+	};  
+  class ItsATreee_Survivalists_Stencil_Animal_SusDomesticus: Animal_SusDomesticus
+	{
+		scope=2;
+    displayName = "Pig";
+    descriptionShort = "A pig with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_pig_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\sus_domesticus\data\pig.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Animal_SusScrofa_Brown: Animal_SusScrofa
+	{
+		scope=2;
+    displayName = "Wild Boar";
+    descriptionShort = "A wild boar with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_wild_boar_brown_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\sus_scrofa\data\wild_boar.rvmat"
+		};
+	};  
+  class ItsATreee_Survivalists_Stencil_Animal_SusScrofa_Brown: Animal_SusScrofa
+	{
+		scope=2;
+    displayName = "Wild Boar";
+    descriptionShort = "A wild boar with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_wild_boar_brown_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\sus_scrofa\data\wild_boar.rvmat"
+		};
+	};
+
+  class Animal_CapreolusCapreolus; // roe deer
+
+  class ItsATreee_Survivalists_Animal_Roe_Deer: Animal_CapreolusCapreolus
+	{
+		scope=2;
+    model="\DZ\animals\capreolus_capreolus\capreolus_capreolus.p3d";
+    displayName = "Roe Deer";
+    descriptionShort = "A deer with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_roe_deer_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\capreolus_capreolus\data\roe_deer.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Animal_Roe_Deer: Animal_CapreolusCapreolus
+	{
+		scope=2;
+    model="\DZ\animals\capreolus_capreolus\capreolus_capreolus.p3d";
+    displayName = "Roe Deer";
+    descriptionShort = "A deer with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_roe_deer_co_stencil.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\capreolus_capreolus\data\roe_deer.rvmat"
+		};
+	};
+
+  class Animal_CervusElaphus; // elk/red deer
+  class Animal_CervusElaphusF;
+
+  class ItsATreee_Survivalists_Animal_Cervus_Elaphus: Animal_CervusElaphus
+	{
+		scope=2;
+    displayName = "Elk";
+    descriptionShort = "An elk with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_cervus_elaphus_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\cervus_elaphus\data\cervus_elaphus.rvmat"
+		};
+	};  
+  class ItsATreee_Survivalists_Stencil_Animal_Cervus_Elaphus: Animal_CervusElaphus
+	{
+		scope=2;
+    displayName = "Elk";
+    descriptionShort = "An elk with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_cervus_elaphus_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\cervus_elaphus\data\cervus_elaphus.rvmat"
+		};
+	};
+  class ItsATreee_Survivalists_Animal_Cervus_ElaphusF: Animal_CervusElaphusF
+	{
+		scope=2;
+    displayName = "Red Deer";
+    descriptionShort = "A red deer with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_red_deer_fem_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\cervus_elaphus_fem\data\red_deer_fem.rvmat"
+		};
+	};  
+  class ItsATreee_Survivalists_Stencil_Animal_Cervus_ElaphusF: Animal_CervusElaphusF
+	{
+		scope=2;
+    displayName = "Red Deer";
+    descriptionShort = "A red deer with the Survivalists Logo branded on the sides.";
+    aiAgentTemplate="ItsATreee_Survivalists_Test_AI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Animals\data\survivalists_red_deer_fem_co_stencil.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\animals\cervus_elaphus_fem\data\red_deer_fem.rvmat"
+		};
+	};  
+};
+*/
