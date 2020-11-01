@@ -16,7 +16,7 @@ data Folder   - Contains the custom .paa files you modified
 
 ## The Config Files
 
-$PREFIX$ - This is the name of the prefix that will be used for your mod. `Make sure it matches the Main Folder name.`  
+$PREFIX$ - This is the name of the file prefix that will be used for your mod. `Most notable in hidden texture selections. Keep names the same in order to reduce having to memorize.`
 $PRODUCT$ - Irrelevant for this exercise.  
 config.cpp - This contains all of the configuration for adding new objects to the game.
 
