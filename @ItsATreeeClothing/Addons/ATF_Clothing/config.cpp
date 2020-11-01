@@ -33,9 +33,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";    
     hiddenSelectionsTextures[]=
     {
-      "ATF_Clothing\data\bomberjacket_blue_co_atf.paa",
-      "ATF_Clothing\data\bomberjacket_blue_co_atf.paa",
-      "ATF_Clothing\data\bomberjacket_blue_co_atf.paa"
+      "ATF_Clothing\data\bomberjacket_blue_atf_co.paa",
+      "ATF_Clothing\data\bomberjacket_blue_atf_co.paa",
+      "ATF_Clothing\data\bomberjacket_blue_atf_co.paa"
     };
   };
 
@@ -46,9 +46,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "ATF_Clothing\data\jumpsuit_top_blue_co_atf.paa",
-      "ATF_Clothing\data\jumpsuit_top_blue_co_atf.paa",
-      "ATF_Clothing\data\jumpsuit_top_blue_co_atf.paa"
+      "ATF_Clothing\data\jumpsuit_top_blue_atf_co.paa",
+      "ATF_Clothing\data\jumpsuit_top_blue_atf_co.paa",
+      "ATF_Clothing\data\jumpsuit_top_blue_atf_co.paa"
     };
   };
 
@@ -59,9 +59,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "ATF_Clothing\data\m65_jacket_black_co_atf.paa",
-      "ATF_Clothing\data\m65_jacket_black_co_atf.paa",
-      "ATF_Clothing\data\m65_jacket_black_co_atf.paa"
+      "ATF_Clothing\data\m65_jacket_black_atf_co.paa",
+      "ATF_Clothing\data\m65_jacket_black_atf_co.paa",
+      "ATF_Clothing\data\m65_jacket_black_atf_co.paa"
     };
   };
 
@@ -72,9 +72,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "ATF_Clothing\data\pressvest_blue_co_atf.paa",
-      "ATF_Clothing\data\pressvest_blue_co_atf.paa",
-      "ATF_Clothing\data\pressvest_blue_co_atf.paa"
+      "ATF_Clothing\data\pressvest_blue_atf_co.paa",
+      "ATF_Clothing\data\pressvest_blue_atf_co.paa",
+      "ATF_Clothing\data\pressvest_blue_atf_co.paa"
     };
   };
 
@@ -85,9 +85,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "ATF_Clothing\data\policevest_co_atf.paa",
-      "ATF_Clothing\data\policevest_co_atf.paa",
-      "ATF_Clothing\data\policevest_co_atf.paa"
+      "ATF_Clothing\data\policevest_atf_co.paa",
+      "ATF_Clothing\data\policevest_atf_co.paa",
+      "ATF_Clothing\data\policevest_atf_co.paa"
     };
   };
 
@@ -97,9 +97,9 @@ class CfgVehicles
 	// 	visibilityModifier=0.69999999;
 	// 	hiddenSelectionsTextures[]=
 	// 	{
-	// 		"ATF_Clothing\data\ballisticvest_co_atf.paa",
-	// 		"ATF_Clothing\data\ballisticvest_co_atf.paa",
-	// 		"ATF_Clothing\data\ballisticvest_co_atf.paa"
+	// 		"ATF_Clothing\data\ballisticvest_atf_co.paa",
+	// 		"ATF_Clothing\data\ballisticvest_atf_co.paa",
+	// 		"ATF_Clothing\data\ballisticvest_atf_co.paa"
 	// 	};
 	// };
 
@@ -110,9 +110,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"ATF_Clothing\data\tacticalvest2_black_co_atf.paa",
-			"ATF_Clothing\data\tacticalvest2_black_co_atf.paa",
-			"ATF_Clothing\data\tacticalvest2_black_co_atf.paa"
+			"ATF_Clothing\data\tacticalvest2_black_atf_co.paa",
+			"ATF_Clothing\data\tacticalvest2_black_atf_co.paa",
+			"ATF_Clothing\data\tacticalvest2_black_atf_co.paa"
 		};
 	};
 
@@ -123,9 +123,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"ATF_Clothing\data\tacticalvest2_olive_co_atf.paa",
-			"ATF_Clothing\data\tacticalvest2_olive_co_atf.paa",
-			"ATF_Clothing\data\tacticalvest2_olive_co_atf.paa"
+			"ATF_Clothing\data\tacticalvest2_olive_atf_co.paa",
+			"ATF_Clothing\data\tacticalvest2_olive_atf_co.paa",
+			"ATF_Clothing\data\tacticalvest2_olive_atf_co.paa"
 		};
 	};
 };

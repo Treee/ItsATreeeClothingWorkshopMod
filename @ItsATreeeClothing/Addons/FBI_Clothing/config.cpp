@@ -35,9 +35,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa",     // on-ground texture
-      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa",     // on-character texture
-      "FBI_Clothing\data\bomberjacket_blue_co_fbi.paa"      // on-character texture
+      "FBI_Clothing\data\bomberjacket_blue_fbi_co.paa",     // on-ground texture
+      "FBI_Clothing\data\bomberjacket_blue_fbi_co.paa",     // on-character texture
+      "FBI_Clothing\data\bomberjacket_blue_fbi_co.paa"      // on-character texture
     };
   };
 
@@ -48,9 +48,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\jumpsuit_top_blue_co_fbi.paa",
-      "FBI_Clothing\data\jumpsuit_top_blue_co_fbi.paa",
-      "FBI_Clothing\data\jumpsuit_top_blue_co_fbi.paa"
+      "FBI_Clothing\data\jumpsuit_top_blue_fbi_co.paa",
+      "FBI_Clothing\data\jumpsuit_top_blue_fbi_co.paa",
+      "FBI_Clothing\data\jumpsuit_top_blue_fbi_co.paa"
     };
   };
 
@@ -61,9 +61,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\m65_jacket_black_co_fbi.paa",
-      "FBI_Clothing\data\m65_jacket_black_co_fbi.paa",
-      "FBI_Clothing\data\m65_jacket_black_co_fbi.paa"
+      "FBI_Clothing\data\m65_jacket_black_fbi_co.paa",
+      "FBI_Clothing\data\m65_jacket_black_fbi_co.paa",
+      "FBI_Clothing\data\m65_jacket_black_fbi_co.paa"
     };
   };
 
@@ -74,9 +74,9 @@ class CfgVehicles
     descriptionShort = "A vest with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\pressvest_blue_co_fbi.paa",
-      "FBI_Clothing\data\pressvest_blue_co_fbi.paa",
-      "FBI_Clothing\data\pressvest_blue_co_fbi.paa"
+      "FBI_Clothing\data\pressvest_blue_fbi_co.paa",
+      "FBI_Clothing\data\pressvest_blue_fbi_co.paa",
+      "FBI_Clothing\data\pressvest_blue_fbi_co.paa"
     };
   };
 
@@ -87,9 +87,9 @@ class CfgVehicles
     descriptionShort = "A vest with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "FBI_Clothing\data\policevest_co_fbi.paa",
-      "FBI_Clothing\data\policevest_co_fbi.paa",
-      "FBI_Clothing\data\policevest_co_fbi.paa"
+      "FBI_Clothing\data\policevest_fbi_co.paa",
+      "FBI_Clothing\data\policevest_fbi_co.paa",
+      "FBI_Clothing\data\policevest_fbi_co.paa"
     };
   };
 
@@ -99,9 +99,9 @@ class CfgVehicles
 	// 	visibilityModifier=0.69999999;
 	// 	hiddenSelectionsTextures[]=
 	// 	{
-	// 		"FBI_Clothing\data\ballisticvest_co_fbi.paa",
-	// 		"FBI_Clothing\data\ballisticvest_co_fbi.paa",
-	// 		"FBI_Clothing\data\ballisticvest_co_fbi.paa"
+	// 		"FBI_Clothing\data\ballisticvest_fbi_co.paa",
+	// 		"FBI_Clothing\data\ballisticvest_fbi_co.paa",
+	// 		"FBI_Clothing\data\ballisticvest_fbi_co.paa"
 	// 	};
 	// };
 
@@ -112,9 +112,9 @@ class CfgVehicles
     descriptionShort = "A vest with the letters FBI embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"FBI_Clothing\data\tacticalvest2_black_co_fbi.paa",
-			"FBI_Clothing\data\tacticalvest2_black_co_fbi.paa",
-			"FBI_Clothing\data\tacticalvest2_black_co_fbi.paa"
+			"FBI_Clothing\data\tacticalvest2_black_fbi_co.paa",
+			"FBI_Clothing\data\tacticalvest2_black_fbi_co.paa",
+			"FBI_Clothing\data\tacticalvest2_black_fbi_co.paa"
 		};
 	};
 
@@ -125,9 +125,9 @@ class CfgVehicles
     descriptionShort = "A vest with the letters FBI embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"FBI_Clothing\data\tacticalvest2_olive_co_fbi.paa",
-			"FBI_Clothing\data\tacticalvest2_olive_co_fbi.paa",
-			"FBI_Clothing\data\tacticalvest2_olive_co_fbi.paa"
+			"FBI_Clothing\data\tacticalvest2_olive_fbi_co.paa",
+			"FBI_Clothing\data\tacticalvest2_olive_fbi_co.paa",
+			"FBI_Clothing\data\tacticalvest2_olive_fbi_co.paa"
 		};
 	};
 };
