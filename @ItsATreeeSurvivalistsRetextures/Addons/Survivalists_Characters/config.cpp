@@ -4,7 +4,9 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"SunGlasses"
+			"SunGlasses",
+      "MaleHands",
+			"FemaleHands"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -26,6 +28,13 @@ class CfgVehicles
   class TacticalGoggles;
   class ThickFramesGlasses;
   class ThinFramesGlasses;
+
+  // gloves
+  class WorkingGloves_ColorBase;
+  class TacticalGloves_ColorBase;
+  class SurgicalGloves_ColorBase;
+  class OMNOGloves_ColorBase;
+  class NBCGloves_ColorBase;
 
   class ItsATreee_Survivalists_Brand_SportGlasses_Black: SportGlasses_Black
 	{
@@ -214,4 +223,159 @@ class CfgVehicles
       "Survivalists_Characters\data\survivalists_branding_thinframeglasses_co.paa"
     };
   };
+
+  class ItsATreee_Survivalists_Stencil_WorkingGloves_ColorBase_Black: WorkingGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_WorkingGloves_ColorBase_Beige: WorkingGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_beige_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_WorkingGloves_ColorBase_Brown: WorkingGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_brown_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_WorkingGloves_ColorBase_Yellow: WorkingGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_yellow_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_yellow_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_workinggloves_yellow_co.paa"
+		};
+	};
+
+  class ItsATreee_Survivalists_Stencil_TacticalGloves_Beige: TacticalGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_beige_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_TacticalGloves_Black: TacticalGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_TacticalGloves_Green: TacticalGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_tacticalgloves_green_co.paa"
+		};
+	};  
+
+  class ItsATreee_Survivalists_Stencil_SurgicalGloves_Blue: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SurgicalGloves_Green: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SurgicalGloves_Light_Blue: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_light_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_light_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_light_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SurgicalGloves_White: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_white_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_white_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_gloves_white_co.paa"
+		};
+	};      
+
+	class ItsATreee_Survivalists_Stencil_OMNOGloves_Gray: OMNOGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_omno_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_omno_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_omno_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_OMNOGloves_Brown: OMNOGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_omno_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_omno_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_omno_brown_co.paa"
+		};
+	};
+
+  class ItsATreee_Survivalists_Stencil_NBCGlovesGray: NBCGloves_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_nbc_gloves_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_nbc_gloves_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_nbc_gloves_grey_co.paa"
+		};
+	};
 };
