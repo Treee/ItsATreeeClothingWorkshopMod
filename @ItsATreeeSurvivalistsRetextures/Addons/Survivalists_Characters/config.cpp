@@ -36,6 +36,20 @@ class CfgVehicles
   class OMNOGloves_ColorBase;
   class NBCGloves_ColorBase;
 
+  // headgear
+  class ZmijovkaCap_ColorBase;
+  class Ushanka_ColorBase;
+  class TankerHelmet;
+  class SantasHat;
+  class Ssh68Helmet;
+  class RadarCap_ColorBase;
+  class SkateHelmet_ColorBase;
+  class NBCHoodGray;
+  class OfficerHat;
+  class PoliceCap;
+  class PilotkaCap;
+  class PrisonerCap;
+
   class ItsATreee_Survivalists_Brand_SportGlasses_Black: SportGlasses_Black
 	{
 		scope=2;
@@ -376,6 +390,476 @@ class CfgVehicles
 			"Survivalists_Characters\data\survivalists_stencil_nbc_gloves_grey_co.paa",
 			"Survivalists_Characters\data\survivalists_stencil_nbc_gloves_grey_co.paa",
 			"Survivalists_Characters\data\survivalists_stencil_nbc_gloves_grey_co.paa"
+		};
+	};
+
+  class ItsATreee_Survivalists_Logo_ZmijovkaCap_Black: ZmijovkaCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ZmijovkaCap_Blue: ZmijovkaCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ZmijovkaCap_Brown: ZmijovkaCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_brown_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ZmijovkaCap_Green: ZmijovkaCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ZmijovkaCap_Red: ZmijovkaCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_zmijovkacap_red_co.paa"
+		};
+	};
+
+  class ItsATreee_Survivalists_Logo_Ushanka_Black: Ushanka_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_ushanka_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_ushanka_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_ushanka_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Ushanka_Black: Ushanka_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_Ushanka_Blue: Ushanka_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_ushanka_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_ushanka_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_ushanka_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Ushanka_Blue: Ushanka_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_Ushanka_Green: Ushanka_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_ushanka_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_ushanka_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_ushanka_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Ushanka_Green: Ushanka_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_ushanka_green_co.paa"
+		};
+	};
+
+  class ItsATreee_Survivalists_Stencil_TankerHelmet_Black: TankerHelmet
+	{
+		scope=2;
+		visibilityModifier=0.98000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_tankerhelmet_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_tankerhelmet_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_tankerhelmet_black_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Stencil_SantasHat: SantasHat
+	{
+		scope=2;
+		visibilityModifier=1;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_santashat_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_santashat_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_santashat_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Ssh68Helmet: Ssh68Helmet
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_ssh68helmet_olive_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_ssh68helmet_olive_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_ssh68helmet_olive_co.paa"
+		};
+  };
+
+  class ItsATreee_Survivalists_Logo_RadarCap_Black: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_radarcap_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_RadarCap_Black: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_RadarCap_Blue: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_radarcap_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_RadarCap_Blue: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_RadarCap_Brown: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_radarcap_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_brown_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_RadarCap_Brown: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_brown_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_RadarCap_Green: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_radarcap_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_RadarCap_Green: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_RadarCap_Red: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_radarcap_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_radarcap_red_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_RadarCap_Red: RadarCap_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_red_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_red_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_radarcap_red_co.paa"
+		};
+	};      
+	
+  class ItsATreee_Survivalists_Logo_SkateHelmet_Black: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SkateHelmet_Black: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_black_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SkateHelmet_Blue: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SkateHelmet_Blue: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SkateHelmet_Gray: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_gray_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_gray_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_gray_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SkateHelmet_Gray: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_gray_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_gray_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_gray_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SkateHelmet_Green: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SkateHelmet_Green: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SkateHelmet_Red: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_protecskatehelmet2_red_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SkateHelmet_Red: SkateHelmet_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_red_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_red_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_protecskatehelmet2_red_co.paa"
+		};
+	};        
+
+	class ItsATreee_Survivalists_Logo_NBCHoodGray: NBCHoodGray
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_nbc_hood_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_nbc_hood_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_nbc_hood_grey_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_NBCHoodGray: NBCHoodGray
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_nbc_hood_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_nbc_hood_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_nbc_hood_grey_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_OfficerHat: OfficerHat
+	{
+		scope=2;
+		visibilityModifier=0.98000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_officerhat_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_officerhat_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_officerhat_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_PilotkaCap: PilotkaCap
+	{
+		scope=2;
+		visibilityModifier=0.98000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_pilotka_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_pilotka_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_pilotka_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Stencil_PilotkaCap: PilotkaCap
+	{
+		scope=2;
+		visibilityModifier=0.98000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_pilotka_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_pilotka_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_pilotka_co.paa"
+		};
+	};   
+  class ItsATreee_Survivalists_Logo_PoliceCap: PoliceCap
+	{
+		scope=2;
+		visibilityModifier=0.98000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_policecap_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_policecap_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_policecap_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_PoliceCap: PoliceCap
+	{
+		scope=2;
+		visibilityModifier=0.98000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_policecap_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_policecap_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_policecap_co.paa"
+		};
+	};  
+	class ItsATreee_Survivalists_Logo_PrisonerCap: PrisonerCap
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_prison_cap_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_prison_cap_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_prison_cap_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_PrisonerCap: PrisonerCap
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_prison_cap_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_prison_cap_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_prison_cap_co.paa"
 		};
 	};
 };
