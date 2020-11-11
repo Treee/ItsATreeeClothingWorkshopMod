@@ -71,6 +71,19 @@ class CfgVehicles
   class Bandana_ColorBase;
   class BandanaHead_ColorBase;
 
+  //masks
+  class AirborneMask;
+  class BalaclavaMask_ColorBase;
+  class Balaclava3Holes_ColorBase;
+  class GasMask;
+  class GP5GasMask;
+  class MouthRag;
+  class NioshFaceMask;
+  class SantasBeard;
+  class SurgicalMask;
+  class HockeyMask;
+  class WeldingMask;
+
   class ItsATreee_Survivalists_Brand_SportGlasses_Black: SportGlasses_Black
 	{
 		scope=2;
@@ -2695,8 +2708,7 @@ class CfgVehicles
 			"Survivalists_Characters\data\survivalists_stencil_baseballcap_red_co.paa",
 			"Survivalists_Characters\data\survivalists_stencil_baseballcap_red_co.paa"
 		};
-	};              
-  
+	};
 	class ItsATreee_Survivalists_Logo_Bandana_BlackPattern: Bandana_ColorBase
 	{
 		scope=2;
@@ -2933,6 +2945,349 @@ class CfgVehicles
 			"Survivalists_Characters\data\survivalists_logo_bandanah_ttsko_co.paa"
 		};
 	};
+	class ItsATreee_Survivalists_Logo_AirborneMask: AirborneMask
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_airborne_mask_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_airborne_mask_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_airborne_mask_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_gp5gasmask_white_co.paa",
+			"Survivalists_Characters\data\survivalists_airborne_mask_glass_ca.paa"
+		};
+  };
+	class ItsATreee_Survivalists_Logo_BalaclavaMask_Beige: BalaclavaMask_ColorBase
+	{
+		scope=2;
+		color="beige";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaclava_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_beige_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_BalaclavaMask_Black: BalaclavaMask_ColorBase
+	{
+		scope=2;
+		color="black";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaclava_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_black_co.paa"
+		};
+	}; 
+	class ItsATreee_Survivalists_Stencil_BalaclavaMask_BlackSkull: BalaclavaMask_ColorBase
+	{
+		scope=2;
+		color="black";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_balaclava_blackskull_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaclava_blackskull_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaclava_blackskull_co.paa"
+		};
+	};   
+	class ItsATreee_Survivalists_Logo_BalaclavaMask_Blue: BalaclavaMask_ColorBase
+	{
+		scope=2;
+		color="blue";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaclava_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_blue_co.paa"
+		};
+	}; 
+	class ItsATreee_Survivalists_Logo_BalaclavaMask_Green: BalaclavaMask_ColorBase
+	{
+		scope=2;
+		color="green";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaclava_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_green_co.paa"
+		};
+	}; 
+	class ItsATreee_Survivalists_Logo_BalaclavaMask_Pink: BalaclavaMask_ColorBase
+	{
+		scope=2;
+		color="pink";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaclava_pink_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_pink_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_pink_co.paa"
+		};
+	};         
+	class ItsATreee_Survivalists_Logo_BalaclavaMask_White: BalaclavaMask_ColorBase
+	{
+		scope=2;
+		color="white";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaclava_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaclava_white_co.paa"
+		};
+	};   
+	class ItsATreee_Survivalists_Logo_Balaclava3Holes_Black: Balaclava3Holes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Balaclava3Holes_Black: Balaclava3Holes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_co.paa"
+		};
+	};  
+	class ItsATreee_Survivalists_Logo_Balaclava3Holes_Beige: Balaclava3Holes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_beige_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Balaclava3Holes_Beige: Balaclava3Holes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_beige_co.paa"
+		};
+	};  
+	class ItsATreee_Survivalists_Logo_Balaclava3Holes_Blue: Balaclava3Holes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Balaclava3Holes_Blue: Balaclava3Holes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_blue_co.paa"
+		};
+	};  
+	class ItsATreee_Survivalists_Logo_Balaclava3Holes_Green: Balaclava3Holes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_balaklava_3holes_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_Balaclava3Holes_Green: Balaclava3Holes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_green_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_balaklava_3holes_green_co.paa"
+		};
+	};        
+	class ItsATreee_Survivalists_Logo_GasMask: GasMask
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_gasmask_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_gasmask_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_gasmask_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Stencil_GasMask: GasMask
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_gasmask_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_gasmask_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_gasmask_co.paa"
+		};
+	};  
+  class ItsATreee_Survivalists_Logo_GP5GasMask: GP5GasMask
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_gp5gasmask_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_gp5gasmask_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_gp5gasmask_white_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Branding_GP5GasMask: GP5GasMask
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_branding_gp5gasmask_white_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_gp5gasmask_white_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_gp5gasmask_white_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_MouthRag: MouthRag
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_mouth_rags_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_mouth_rags_co.paa"
+		};
+	};  
+  class ItsATreee_Survivalists_Branding_MouthRag: MouthRag
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_branding_mouth_rags_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_mouth_rags_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_NioshFaceMask: NioshFaceMask
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_nioshfacemask_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_nioshfacemask_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_nioshfacemask_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_NioshFaceMask: NioshFaceMask
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_nioshfacemask_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_nioshfacemask_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_nioshfacemask_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_SurgicalMask: SurgicalMask
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_surgical_mask_ground_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_surgical_mask_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_surgical_mask_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Stencil_SurgicalMask: SurgicalMask
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_stencil_surgical_mask_ground_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_mask_co.paa",
+			"Survivalists_Characters\data\survivalists_stencil_surgical_mask_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Branding_HockeyMask: HockeyMask
+	{
+		scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_branding_vinitagehockeym_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_vinitagehockeym_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_vinitagehockeym_co.paa"
+		};
+	};
+
+  // texture is too low resolution for it to look good. maybe try a different one?
+  // class ItsATreee_Survivalists_Logo_WeldingMask: WeldingMask
+	// {
+	// 	scope=2;
+	// 	visibilityModifier=0.85000002;
+	// 	hiddenSelectionsTextures[]=
+	// 	{
+	// 		"Survivalists_Characters\data\survivalists_logo_welding_mask_co.paa",
+	// 		"Survivalists_Characters\data\survivalists_logo_welding_mask_co.paa",
+	// 		"Survivalists_Characters\data\survivalists_logo_welding_mask_co.paa"
+	// 	};
+	// };
+  // class ItsATreee_Survivalists_Stencil_WeldingMask: WeldingMask
+	// {
+	// 	scope=2;
+	// 	visibilityModifier=0.85000002;
+	// 	hiddenSelectionsTextures[]=
+	// 	{
+	// 		"Survivalists_Characters\data\survivalists_stencil_welding_mask_co.paa",
+	// 		"Survivalists_Characters\data\survivalists_stencil_welding_mask_co.paa",
+	// 		"Survivalists_Characters\data\survivalists_stencil_welding_mask_co.paa"
+	// 	};
+	// };
+  // texture is wierd having stuff underneath so shelve for later work
+  // class ItsATreee_Survivalists_Logo_SantasBeard: SantasBeard
+	// {
+	// 	scope=2;
+  //   hiddenSelections[]=
+  //   {
+  //     "zbytek"
+  //   };
+	// 	hiddenSelectionsTextures[]=
+	// 	{
+	// 		"Survivalists_Characters\data\survivalists_logo_santasbeard_co.paa",
+	// 		"Survivalists_Characters\data\survivalists_logo_santasbeard_co.paa",
+	// 		"Survivalists_Characters\data\survivalists_logo_santasbeard_co.paa"
+	// 	};
+	// };
 
 
+
+
+  
 };
