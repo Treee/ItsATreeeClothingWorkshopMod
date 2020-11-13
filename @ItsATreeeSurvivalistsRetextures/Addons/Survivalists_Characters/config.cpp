@@ -84,6 +84,22 @@ class CfgVehicles
   class HockeyMask;
   class WeldingMask;
 
+  // pants
+  class USMCPants_ColorBase;
+  class TrackSuitPants_ColorBase;
+  class TTSKOPants;
+  class SlacksPants_ColorBase;
+  class Skirt_ColorBase;
+  class ShortJeans_ColorBase;
+  class PrisonUniformPants;
+  class PolicePants;
+  class NBCPantsBase;
+  class ParamedicPants_ColorBase;
+  class MedicalScrubsPants_ColorBase;
+  class LeatherPants_ColorBase;
+  class JumpsuitPants_ColorBase;
+  class Jeans_ColorBase;
+
   class ItsATreee_Survivalists_Brand_SportGlasses_Black: SportGlasses_Black
 	{
 		scope=2;
@@ -3274,10 +3290,10 @@ class CfgVehicles
   // class ItsATreee_Survivalists_Logo_SantasBeard: SantasBeard
 	// {
 	// 	scope=2;
-  //   hiddenSelections[]=
-  //   {
-  //     "zbytek"
-  //   };
+  //  hiddenSelections[]=
+  //  {
+  //    "zbytek"
+  //  };
 	// 	hiddenSelectionsTextures[]=
 	// 	{
 	// 		"Survivalists_Characters\data\survivalists_logo_santasbeard_co.paa",
@@ -3286,8 +3302,595 @@ class CfgVehicles
 	// 	};
 	// };
 
+	class ItsATreee_Survivalists_Logo_USMCPants_Desert: USMCPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.60000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_usmc_pants_marpatdesert_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_usmc_pants_marpatdesert_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_usmc_pants_marpatdesert_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_USMCPants_Woodland: USMCPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.5;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_usmc_pants_marpatwoodland_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_usmc_pants_marpatwoodland_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_usmc_pants_marpatwoodland_co.paa"
+		};    
+	};
+	class ItsATreee_Survivalists_Logo_TrackSuitPants_Black: TrackSuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_black_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat"
+		};
+  };
+  class ItsATreee_Survivalists_Logo_TrackSuitPants_Blue: TrackSuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_blue_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat"
+		};
+  };
+	class ItsATreee_Survivalists_Logo_TrackSuitPants_Green: TrackSuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_green_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat"
+		};
+  };
+  class ItsATreee_Survivalists_Logo_TrackSuitPants_LightBlue: TrackSuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_lightBlue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_lightBlue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_lightBlue_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat"
+		};
+  };
+  class ItsATreee_Survivalists_Logo_TrackSuitPants_Red: TrackSuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_tracksuit_pants_red_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat",
+			"Survivalists_Characters\data\survivalists_tracksuit_pants.rvmat"
+		};
+  };
+	class ItsATreee_Survivalists_Logo_TTSKOPants: TTSKOPants
+	{
+		scope=2;
+		visibilityModifier=0.5;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_ttsko_pants_g_camo_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_ttsko_pants_camo_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_ttsko_pants_camo_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SlacksPants_Beige: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_slacks_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_beige_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_beige_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_SlacksPants_Black: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_slacks_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_black_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SlacksPants_Blue: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_slacks_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_blue_co.paa"
+		};
+	};  
+  class ItsATreee_Survivalists_Logo_SlacksPants_Brown: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_slacks_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_brown_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SlacksPants_DarkGrey: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_slacks_darkgrey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_darkgrey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_darkgrey_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SlacksPants_Khaki: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_slacks_khaki_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_khaki_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_khaki_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SlacksPants_LightGrey: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_slacks_lightgrey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_lightgrey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_lightgrey_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_SlacksPants_White: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_slacks_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_slacks_white_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_Skirt_Blue: Skirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_skirt_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_skirt_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_skirt_blue_co.paa",
+			"dz\characters\heads\data\hhl_m_white_06_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Branding_Skirt_Blue: Skirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_branding_skirt_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_skirt_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_skirt_blue_co.paa",
+			"dz\characters\heads\data\hhl_m_white_06_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_Skirt_Red: Skirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_skirt_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_skirt_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_skirt_red_co.paa",
+			"dz\characters\heads\data\hhl_m_white_06_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Branding_Skirt_Red: Skirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_branding_skirt_red_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_skirt_red_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_skirt_red_co.paa",
+			"dz\characters\heads\data\hhl_m_white_06_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_Skirt_White: Skirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_skirt_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_skirt_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_skirt_white_co.paa",
+			"dz\characters\heads\data\hhl_m_white_06_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Branding_Skirt_White: Skirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_branding_skirt_white_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_skirt_white_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_skirt_white_co.paa",
+			"dz\characters\heads\data\hhl_m_white_06_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_Skirt_Yellow: Skirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_skirt_yellow_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_skirt_yellow_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_skirt_yellow_co.paa",
+			"dz\characters\heads\data\hhl_m_white_06_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Branding_Skirt_Yellow: Skirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_branding_skirt_yellow_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_skirt_yellow_co.paa",
+			"Survivalists_Characters\data\survivalists_branding_skirt_yellow_co.paa",
+			"dz\characters\heads\data\hhl_m_white_06_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ShortJeans_Black: ShortJeans_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_black_co.paa",
+			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ShortJeans_Blue: ShortJeans_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_blue_co.paa",
+			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ShortJeans_Brown: ShortJeans_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_brown_co.paa",
+			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ShortJeans_DarkBlue: ShortJeans_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_darkblue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_darkblue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_darkblue_co.paa",
+			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ShortJeans_Green: ShortJeans_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_green_co.paa",
+			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ShortJeans_Red: ShortJeans_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_shortjeans_red_co.paa",
+			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_PrisonUniformPants: PrisonUniformPants
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_prison_pants_g_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_prison_pants_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_prison_pants_co.paa"
+		};
+  };
+  class ItsATreee_Survivalists_Logo_PolicePants: PolicePants
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_policepants_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_policepants_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_policepants_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ParamedicPants_Blue: ParamedicPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ParamedicPants_Crimson: ParamedicPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_crimson_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_crimson_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_crimson_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ParamedicPants_Green: ParamedicPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_ParamedicPants_Orange: ParamedicPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_orange_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_orange_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_paramedic_pants_orange_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_NBCPantsGray: NBCPantsBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_nbc_pants_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_nbc_pants_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_nbc_pants_grey_co.paa"
+		};
+	};       
+	class ItsATreee_Survivalists_Logo_MedicalScrubsPants_Blue: MedicalScrubsPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_blue_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_MedicalScrubsPants_Green: MedicalScrubsPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_green_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_MedicalScrubsPants_White: MedicalScrubsPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_white_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_medicalscrubs_pants_white_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_LeatherPants_Natural: LeatherPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		color="Natural";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_leatherpants_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_leatherpants_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_leatherpants_g_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"DZ\Characters\pants\data\Pants_LeatherPants_g_Natural.rvmat",
+			"DZ\Characters\pants\data\Pants_LeatherPants_Natural.rvmat",
+			"DZ\Characters\pants\data\Pants_LeatherPants_Natural.rvmat"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_JumpsuitPants_Blue: JumpsuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_blues_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_blues_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_blues_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_JumpsuitPants_Green: JumpsuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_green_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_JumpsuitPants_Grey: JumpsuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_grey_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_JumpsuitPants_Red: JumpsuitPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_red_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jumpsuit_pants_red_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_Jeans_Black: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jeans_m_grd_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_black_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_f_black_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_Jeans_Blue: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jeans_m_grd_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_blue_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_f_blue_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_Jeans_BlueDark: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jeans_m_grd_bluedark_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_bluedark_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_f_bluedark_co.paa"
+		};
+	};
+  class ItsATreee_Survivalists_Logo_Jeans_Brown: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jeans_m_grd_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_brown_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_f_brown_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_Jeans_Green: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jeans_m_grd_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_green_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_f_green_co.paa"
+		};
+	};
+	class ItsATreee_Survivalists_Logo_Jeans_Grey: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\data\survivalists_logo_jeans_m_grd_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_grey_co.paa",
+			"Survivalists_Characters\data\survivalists_logo_jeans_f_grey_co.paa"
+		};
+	};  
 
-
-
-  
 };
