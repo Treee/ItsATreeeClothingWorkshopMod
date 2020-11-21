@@ -1,12 +1,9 @@
-
 class ActionMuteTransmitter: ActionInteractBase
 {
 	void ActionMuteTransmitter()
 	{
-		m_CommandUID        = DayZPlayerConstants.CMD_ACTIONMOD_ITEM_OFF;
-			
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_ITEM_OFF;	
 	}
-
 
 	override string GetText()
 	{
@@ -24,53 +21,45 @@ class ActionMuteTransmitter: ActionInteractBase
 	}
 	
 	override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
-    {
-		
+  {
 		TransmitterBase radio = TransmitterBase.Cast(player.GetHumanInventory().GetEntityInHands());
 		if (radio)
 		{
-	
 			if (radio.IsTransmitter())
 			{
-	
 				if (radio.HasEnergyManager() && radio.GetCompEM().IsWorking())
 				{
-
-						return true;
-
+          return true;
 				}
 			}
 		}
-		
-
-		
-        return false;
-    }
+    return false;
+  }
 		
 	override void OnExecuteServer( ActionData action_data )
 	{
-	
 		PlayerBase player = PlayerBase.Cast(action_data.m_Player);
-		
+
 		TransmitterBase radio = TransmitterBase.Cast(player.GetHumanInventory().GetEntityInHands());
 		if(radio)
 		{
 			if(!radio.IsMuted())
 			{				
 				//if (player != null)
-					//SendMessageToClient( player, "Nadawanie wylaczone" );
+					//SendMessageToClient( player, "Radio Muted" );
 				radio.MuteTransmitter();
 			}else if(radio.IsMuted())
 			{
 				//if (player != null)
-					//SendMessageToClient( player, "Nadawanie wlaczone" );
+					//SendMessageToClient( player, "Radio UnMuted" );
 				radio.UnMuteTransmitter();
 			}
 			
-		} else
-		{
-			if (player != null)
-				//SendMessageToClient( player, "brak instancji transmitter_item" );
-		}
+		} 
+    // else
+		// {
+		// 	if (player != null)
+		// 		//SendMessageToClient( player, "brak instancji transmitter_item" );
+		// }
 	}
 }

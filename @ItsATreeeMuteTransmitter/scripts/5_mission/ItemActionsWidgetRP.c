@@ -1,6 +1,5 @@
 modded class ItemActionsWidget extends ScriptedWidgetEventHandler
 {
-	
 	override protected void SetItemDesc(EntityAI entity, string descText, string itemWidget, string descWidget)
 	{
 		Widget widget;
@@ -25,9 +24,9 @@ modded class ItemActionsWidget extends ScriptedWidgetEventHandler
 						itemName.SetText(descText);
 					}
 				}
-
 				widget.Show(true);
-			} else 
+			} 
+      else 
 			{
 				descText.ToUpper();
 				
@@ -35,11 +34,8 @@ modded class ItemActionsWidget extends ScriptedWidgetEventHandler
 				itemName.SetText(descText);
 				widget.Show(true);
 			}
-			
-
 		}
 		else
 			widget.Show(false);
 	}
-	
 }

@@ -29,13 +29,13 @@ class ToggleMuteTransmitterActionInput : DefaultActionInput
 
 			if ( radio )
 			{
-
 				target_new = new ActionTarget(radio, null, -1, vector.Zero, -1);
 				ForceActionTarget(target_new);
 			}
-
 			else
-				ClearForcedTarget();
+			{	
+        ClearForcedTarget();
+      }
 		}
 		
 		target = m_ForcedTarget;
