@@ -3,10 +3,16 @@
     <inputs>
         <actions>
 			<!-- Actions go here -->
+      			<input name="UAToggleMuteTransmitter" loc="Toggle Radio Mute" />
         </actions>
     </inputs>
 
     <preset>
 		<!-- Presets for actions go here -->
+      <input name="UAToggleMuteTransmitter">
+        <btn name="kL">
+          <event name="hold"/>
+        </btn>
+      </input>
     </preset>
 </modded_inputs>

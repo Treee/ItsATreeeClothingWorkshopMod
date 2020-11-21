@@ -18,7 +18,7 @@ modded class ItemActionsWidget extends ScriptedWidgetEventHandler
 				{
 					if(radio.IsMuted())
 					{
-						itemName.SetText(descText + " WYCISZONE");
+						itemName.SetText("!!||MUTED||!! " + descText);
 					} else
 					{
 						itemName.SetText(descText);

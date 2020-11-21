@@ -1,6 +1,6 @@
-class ActionMuteTransmitter: ActionInteractBase
+class ActionToggleMuteTransmitter: ActionInteractBase
 {
-	void ActionMuteTransmitter()
+	void ActionToggleMuteTransmitter()
 	{
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_ITEM_OFF;	
 	}
@@ -48,18 +48,18 @@ class ActionMuteTransmitter: ActionInteractBase
 				//if (player != null)
 					//SendMessageToClient( player, "Radio Muted" );
 				radio.MuteTransmitter();
-			}else if(radio.IsMuted())
+			}
+      else if(radio.IsMuted())
 			{
 				//if (player != null)
 					//SendMessageToClient( player, "Radio UnMuted" );
 				radio.UnMuteTransmitter();
 			}
-			
 		} 
-    // else
-		// {
-		// 	if (player != null)
-		// 		//SendMessageToClient( player, "brak instancji transmitter_item" );
-		// }
+    else
+		{
+			if (player != null)
+				//SendMessageToClient( player, "brak instancji transmitter_item" );
+		}
 	}
 }
