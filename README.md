@@ -1,5 +1,8 @@
 # ItsATreeeClothingWorkshopMod
 
+## Attribution
+The Mute Transmitter code is from Killerek#0152 (Modding Discord). His initial idea he graciously made open source which I uploaded here and "maintain" as a fork. Thank you!
+
 ## Useful Tools
 [Eliteness/DePbo/DeOgg](https://mikero.bytex.digital/Downloads)
 
