@@ -18,10 +18,10 @@ modded class TransmitterBase extends ItemTransmitter
 		EnableBroadcast(true);
 		m_Muted = false;
 	}
-  
+
 	override void SetActions()
 	{
 		super.SetActions();
-		AddAction(ActionMuteTransmitter);
+		AddAction(ActionToggleMuteTransmitter);
 	}
 }
