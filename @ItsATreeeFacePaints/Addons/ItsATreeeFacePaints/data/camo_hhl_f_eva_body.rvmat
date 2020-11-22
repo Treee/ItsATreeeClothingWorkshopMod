@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="Survivalists_Characters\data\camo_facepaint_hhl_f_eva_body_co.paa";
+	texture="ItsATreeeFacePaints\data\camo_facepaint_hhl_f_eva_body_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
