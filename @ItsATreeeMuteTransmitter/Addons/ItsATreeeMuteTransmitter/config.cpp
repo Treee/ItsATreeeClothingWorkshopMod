@@ -11,15 +11,15 @@ class CfgPatches
 
 class CfgMods 
 {
-	class DZ_Editor
+	class ItsATreeeMuteTransmitter
 	{
-		name = "DayZ Editor";
+		name = "ItsATreeeMuteTransmitter";
 		dir = "ItsATreeeMuteTransmitter";
 		credits = "Killerek, ItsATreee";
 		author = "ItsATreee";
 		// creditsJson = "ItsATreeeMuteTransmitter/Scripts/Data/Credits.json";
 		// versionPath = "ItsATreeeMuteTransmitter/scripts/Data/Version.hpp";
-		inputs = "ItsATreeeMuteTransmitter/inputs.xml";
+		inputs = "ItsATreeeMuteTransmitter/data/inputs.xml";
 		type = "mod";
 		dependencies[] =
 		{
@@ -32,7 +32,7 @@ class CfgMods
 				value="";
 				files[] = 
 				{
-					// "ItsATreeeMuteTransmitter/scripts/common",
+					// "ItsATreeeMuteTransmitter/scripts/scripts/common",
 					"ItsATreeeMuteTransmitter/scripts/4_world"
 				};
 			};
@@ -41,7 +41,7 @@ class CfgMods
 				value="";
 				files[] = 
 				{
-					// "ItsATreeeMuteTransmitter/scripts/common",
+					// "ItsATreeeMuteTransmitter/scripts/scripts/common",
 					"ItsATreeeMuteTransmitter/scripts/5_mission"
 				};
 			};

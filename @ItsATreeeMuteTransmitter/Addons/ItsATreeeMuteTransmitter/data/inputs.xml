@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+  <inputs>
+    <actions>
+      <input name="UAToggleMuteTransmitter" loc="Toggle Radio Mute" />
+    </actions>
+  </inputs>
+  <preset>
+    <input name="UAToggleMuteTransmitter">
+      <btn name="kX" />
+    </input>
+  </preset>
+</modded_inputs>
