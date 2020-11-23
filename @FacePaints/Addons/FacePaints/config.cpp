@@ -32,9 +32,9 @@ class CfgFaces
 		class Default
 		{
 			displayname="$STR_CFG_FACES_Default";
-			texture="ItsATreeeFacePaints\data\camo_facepaint_hhl_f_eva_body_co.paa";
+			texture="FacePaints\data\camo_facepaint_hhl_f_eva_body_co.paa";
 			head="IAT_C_FemaleEvaHead";
-			material="ItsATreeeFacePaints\data\camo_hhl_f_eva_body.rvmat";
+			material="FacePaints\data\camo_hhl_f_eva_body.rvmat";
 		};
 		class IAT_C_FemaleEvaHead: Default
 		{
@@ -53,9 +53,9 @@ class CfgHeads
 			tex[]={};
 			mat[]=
 			{
-				"ItsATreeeFacePaints\data\camo_hhl_f_eva_body.rvmat",
-				"ItsATreeeFacePaints\data\camo_hhl_f_eva_body.rvmat",
-				"ItsATreeeFacePaints\data\camo_hhl_f_eva_body.rvmat"
+				"FacePaints\data\camo_hhl_f_eva_body.rvmat",
+				"FacePaints\data\camo_hhl_f_eva_body.rvmat",
+				"FacePaints\data\camo_hhl_f_eva_body.rvmat"
 			};
 		};
 	};
@@ -71,12 +71,12 @@ class cfgVehicles
     head="IAT_C_FemaleEvaHead";
     hiddenSelectionsTextures[]=
     {
-      "ItsATreeeFacePaints\data\camo_facepaint_hhl_f_eva_body_co.paa",
+      "FacePaints\data\camo_facepaint_hhl_f_eva_body_co.paa",
       "dz\characters\heads\data\f_Eva_2\hhl_f_Eva_hair_ca.paa"
     };
     hiddenSelectionsMaterials[]=
     {
-      "ItsATreeeFacePaints\data\camo_hhl_f_eva_body.rvmat",
+      "FacePaints\data\camo_hhl_f_eva_body.rvmat",
       "dz\characters\heads\data\f_Eva_2\hhl_f_Eva_hair.rvmat"
     };
   };
@@ -97,7 +97,7 @@ class cfgVehicles
 		// decayedTexture="\DZ\characters\heads\data\f_Eva_2\hhl_f_Eva_body_decayed_co.paa";
 		class BloodyHands
 		{
-			mat_normal="ItsATreeeFacePaints\data\camo_hhl_f_eva_body.rvmat";
+			mat_normal="FacePaints\data\camo_hhl_f_eva_body.rvmat";
 			mat_blood="dz\characters\heads\data\f_eva_2\hhl_f_eva_body_bloodyhands.rvmat";
 		};
 		class Wounds
@@ -105,12 +105,10 @@ class cfgVehicles
 			tex[]={};
 			mat[]=
 			{
-				"ItsATreeeFacePaints\data\camo_hhl_f_eva_body.rvmat",
+				"FacePaints\data\camo_hhl_f_eva_body.rvmat",
 				"dz\characters\heads\data\f_eva_2\hhl_f_eva_body_injury.rvmat",
 				"dz\characters\heads\data\f_eva_2\hhl_f_eva_body_injury2.rvmat"
 			};
 		};
 	};
-	
-
 };

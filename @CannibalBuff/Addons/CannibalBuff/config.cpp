@@ -1,6 +1,6 @@
 // class CfgPatches
 // {
-// 	class ItsATreeeCannibalBuff
+// 	class CannibalBuff
 // 	{
 // 		units[] = {};
 // 		weapons[] = {};
@@ -18,7 +18,7 @@
 
 // class CfgMods
 // {
-// 	class ItsATreeeCannibalBuff
+// 	class CannibalBuff
 // 	{	
 // 		type = "mod";
 // 		class defs
