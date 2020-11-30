@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Editor_Scripts
+	class OneWayMuteTransmitter_Scripts
 	{
     units[] = {};
     weapons[] = {};
