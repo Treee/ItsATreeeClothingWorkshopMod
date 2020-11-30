@@ -1,25 +1,16 @@
 class CfgPatches
 {
-	class DZ_Characters_Heads
+	class IAT_FacePaints
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Characters"
-		};
-	};
-  class DZ_Characters
-  {
-    units[]={};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
+			"DZ_Characters",
       "DZ_Data"
 		};
-  }
+	};
 };
 
 class CfgFaces
@@ -32,9 +23,9 @@ class CfgFaces
 		class Default
 		{
 			displayname="$STR_CFG_FACES_Default";
-			texture="FacePaints\data\camo_facepaint_hhl_f_eva_body_co.paa";
+			texture="FacePaints\data\eva\camo_facepaint_hhl_f_eva_body_co.paa";
 			head="IAT_C_FemaleEvaHead";
-			material="FacePaints\data\camo_hhl_f_eva_body.rvmat";
+			material="FacePaints\data\eva\camo_hhl_f_eva_body.rvmat";
 		};
 		class IAT_C_FemaleEvaHead: Default
 		{
@@ -53,9 +44,9 @@ class CfgHeads
 			tex[]={};
 			mat[]=
 			{
-				"FacePaints\data\camo_hhl_f_eva_body.rvmat",
-				"FacePaints\data\camo_hhl_f_eva_body.rvmat",
-				"FacePaints\data\camo_hhl_f_eva_body.rvmat"
+				"FacePaints\data\eva\camo_hhl_f_eva_body.rvmat",
+				"FacePaints\data\eva\camo_hhl_f_eva_body.rvmat",
+				"FacePaints\data\eva\camo_hhl_f_eva_body.rvmat"
 			};
 		};
 	};
@@ -71,12 +62,12 @@ class cfgVehicles
     head="IAT_C_FemaleEvaHead";
     hiddenSelectionsTextures[]=
     {
-      "FacePaints\data\camo_facepaint_hhl_f_eva_body_co.paa",
+      "FacePaints\data\eva\camo_facepaint_hhl_f_eva_body_co.paa",
       "dz\characters\heads\data\f_Eva_2\hhl_f_Eva_hair_ca.paa"
     };
     hiddenSelectionsMaterials[]=
     {
-      "FacePaints\data\camo_hhl_f_eva_body.rvmat",
+      "FacePaints\data\eva\camo_hhl_f_eva_body.rvmat",
       "dz\characters\heads\data\f_Eva_2\hhl_f_Eva_hair.rvmat"
     };
   };
@@ -97,7 +88,7 @@ class cfgVehicles
 		// decayedTexture="\DZ\characters\heads\data\f_Eva_2\hhl_f_Eva_body_decayed_co.paa";
 		class BloodyHands
 		{
-			mat_normal="FacePaints\data\camo_hhl_f_eva_body.rvmat";
+			mat_normal="FacePaints\data\eva\camo_hhl_f_eva_body.rvmat";
 			mat_blood="dz\characters\heads\data\f_eva_2\hhl_f_eva_body_bloodyhands.rvmat";
 		};
 		class Wounds
@@ -105,7 +96,7 @@ class cfgVehicles
 			tex[]={};
 			mat[]=
 			{
-				"FacePaints\data\camo_hhl_f_eva_body.rvmat",
+				"FacePaints\data\eva\camo_hhl_f_eva_body.rvmat",
 				"dz\characters\heads\data\f_eva_2\hhl_f_eva_body_injury.rvmat",
 				"dz\characters\heads\data\f_eva_2\hhl_f_eva_body_injury2.rvmat"
 			};
