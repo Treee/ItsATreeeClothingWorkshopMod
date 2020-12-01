@@ -24,3 +24,6 @@ This mod is for clothing and tools that represent outlaw and law enforcement uni
 ![Olive High Capacity Vest Preview](./clothing/tacticalvest2_olive/preview_image.png)
 
 ## Tools
+
+### Custom Burlap Sacks
+![Custom Sack Preview](./tools/head_sack/preview_image.png)
