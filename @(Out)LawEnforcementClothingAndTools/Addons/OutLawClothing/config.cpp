@@ -33,58 +33,70 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";    
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\atf\bomberjacket_blue_atf_co.paa",
-      "OutLawClothing\data\atf\bomberjacket_blue_atf_co.paa",
-      "OutLawClothing\data\atf\bomberjacket_blue_atf_co.paa"
+      "OutLawClothing\data\atf\atf_bomberjacket_blue_co.paa",
+      "OutLawClothing\data\atf\atf_bomberjacket_blue_co.paa",
+      "OutLawClothing\data\atf\atf_bomberjacket_blue_co.paa"
     };
   };
   class IAT_ATF_JumpsuitJacket_Blue: JumpsuitJacket_ColorBase
   {
     scope=2;
-    displayName = "ATF Bomber Jacket";
+    displayName = "ATF Jumpsuit Jacket";
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\atf\jumpsuit_top_blue_atf_co.paa",
-      "OutLawClothing\data\atf\jumpsuit_top_blue_atf_co.paa",
-      "OutLawClothing\data\atf\jumpsuit_top_blue_atf_co.paa"
+      "OutLawClothing\data\atf\atf_jumpsuit_top_blue_co.paa",
+      "OutLawClothing\data\atf\atf_jumpsuit_top_blue_co.paa",
+      "OutLawClothing\data\atf\atf_jumpsuit_top_blue_co.paa"
     };
   };
   class IAT_ATF_M65Jacket_Black: M65Jacket_ColorBase
   {
     scope=2;
-    displayName = "ATF Bomber Jacket";
+    displayName = "ATF M65 Jacket";
     descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\atf\m65_jacket_black_atf_co.paa",
-      "OutLawClothing\data\atf\m65_jacket_black_atf_co.paa",
-      "OutLawClothing\data\atf\m65_jacket_black_atf_co.paa"
+      "OutLawClothing\data\atf\atf_m65_jacket_black_co.paa",
+      "OutLawClothing\data\atf\atf_m65_jacket_black_co.paa",
+      "OutLawClothing\data\atf\atf_m65_jacket_black_co.paa"
     };
   };
   class IAT_ATF_PressVest_Blue: PressVest_ColorBase
   {
     scope=2;
-    displayName = "ATF Bomber Jacket";
-    descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
+    displayName = "ATF Press Vest";
+    descriptionShort = "A press vest with the letters ATF embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\atf\pressvest_blue_atf_co.paa",
-      "OutLawClothing\data\atf\pressvest_blue_atf_co.paa",
-      "OutLawClothing\data\atf\pressvest_blue_atf_co.paa"
+      "OutLawClothing\data\atf\atf_pressvest_blue_co.paa",
+      "OutLawClothing\data\atf\atf_pressvest_blue_co.paa",
+      "OutLawClothing\data\atf\atf_pressvest_blue_co.paa"
     };
+    hiddenSelectionsMaterials[]=
+		{
+			"OutLawClothing\data\pressvest.rvmat",
+			"OutLawClothing\data\pressvest.rvmat",
+      "OutLawClothing\data\pressvest.rvmat"
+		};
   };
   class IAT_ATF_PoliceVest: PoliceVest
   {
     scope=2;
-    displayName = "ATF Bomber Jacket";
-    descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
+    displayName = "ATF Police Vest";
+    descriptionShort = "A police vest with the letters ATF embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\atf\policevest_atf_co.paa",
-      "OutLawClothing\data\atf\policevest_atf_co.paa",
-      "OutLawClothing\data\atf\policevest_atf_co.paa"
+      "OutLawClothing\data\atf\atf_policevest_co.paa",
+      "OutLawClothing\data\atf\atf_policevest_co.paa",
+      "OutLawClothing\data\atf\atf_policevest_co.paa"
     };
+    hiddenSelectionsMaterials[]=
+		{
+			"OutLawClothing\data\policevest.rvmat",
+			"OutLawClothing\data\policevest.rvmat",
+      "OutLawClothing\data\policevest.rvmat"
+		};
   };
   // class IAT_ATF_PlateCarrierVest: PlateCarrierVest
 	// {
@@ -92,33 +104,33 @@ class CfgVehicles
 	// 	visibilityModifier=0.69999999;
 	// 	hiddenSelectionsTextures[]=
 	// 	{
-	// 		"OutLawClothing\data\atf\ballisticvest_atf_co.paa",
-	// 		"OutLawClothing\data\atf\ballisticvest_atf_co.paa",
-	// 		"OutLawClothing\data\atf\ballisticvest_atf_co.paa"
+	// 		"OutLawClothing\data\atf\atf_ballisticvest_co.paa",
+	// 		"OutLawClothing\data\atf\atf_ballisticvest_co.paa",
+	// 		"OutLawClothing\data\atf\atf_ballisticvest_co.paa"
 	// 	};
 	// };
   class IAT_ATF_HighCapacityVest_Black: HighCapacityVest_ColorBase
 	{
 		scope=2;
-    displayName = "ATF Bomber Jacket";
-    descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
+    displayName = "ATF Black Vest";
+    descriptionShort = "A vest with the letters ATF embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"OutLawClothing\data\atf\tacticalvest2_black_atf_co.paa",
-			"OutLawClothing\data\atf\tacticalvest2_black_atf_co.paa",
-			"OutLawClothing\data\atf\tacticalvest2_black_atf_co.paa"
+			"OutLawClothing\data\atf\atf_tacticalvest2_black_co.paa",
+			"OutLawClothing\data\atf\atf_tacticalvest2_black_co.paa",
+			"OutLawClothing\data\atf\atf_tacticalvest2_black_co.paa"
 		};
 	};
   class IAT_ATF_HighCapacityVest_Olive: HighCapacityVest_ColorBase
 	{
 		scope=2;
-    displayName = "ATF Bomber Jacket";
-    descriptionShort = "A jacket with the letters ATF embroidered on the front and back.";
+    displayName = "ATF Olive Vest";
+    descriptionShort = "A vest with the letters ATF embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"OutLawClothing\data\atf\tacticalvest2_olive_atf_co.paa",
-			"OutLawClothing\data\atf\tacticalvest2_olive_atf_co.paa",
-			"OutLawClothing\data\atf\tacticalvest2_olive_atf_co.paa"
+			"OutLawClothing\data\atf\atf_tacticalvest2_olive_co.paa",
+			"OutLawClothing\data\atf\atf_tacticalvest2_olive_co.paa",
+			"OutLawClothing\data\atf\atf_tacticalvest2_olive_co.paa"
 		};
 	};
   
@@ -129,58 +141,70 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\cia\bomberjacket_blue_cia_co.paa",
-      "OutLawClothing\data\cia\bomberjacket_blue_cia_co.paa",
-      "OutLawClothing\data\cia\bomberjacket_blue_cia_co.paa"
+      "OutLawClothing\data\cia\cia_bomberjacket_blue_co.paa",
+      "OutLawClothing\data\cia\cia_bomberjacket_blue_co.paa",
+      "OutLawClothing\data\cia\cia_bomberjacket_blue_co.paa"
     };
   };
   class IAT_CIA_JumpsuitJacket_Blue: JumpsuitJacket_ColorBase
   {
     scope=2;
-    displayName = "CIA Bomber Jacket";
+    displayName = "CIA Jumpsuit Jacket";
     descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\cia\jumpsuit_top_blue_cia_co.paa",
-      "OutLawClothing\data\cia\jumpsuit_top_blue_cia_co.paa",
-      "OutLawClothing\data\cia\jumpsuit_top_blue_cia_co.paa"
+      "OutLawClothing\data\cia\cia_jumpsuit_top_blue_co.paa",
+      "OutLawClothing\data\cia\cia_jumpsuit_top_blue_co.paa",
+      "OutLawClothing\data\cia\cia_jumpsuit_top_blue_co.paa"
     };
   };
   class IAT_CIA_M65Jacket_Black: M65Jacket_ColorBase
   {
     scope=2;
-    displayName = "CIA Bomber Jacket";
+    displayName = "CIA M65 Jacket";
     descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\cia\m65_jacket_black_cia_co.paa",
-      "OutLawClothing\data\cia\m65_jacket_black_cia_co.paa",
-      "OutLawClothing\data\cia\m65_jacket_black_cia_co.paa"
+      "OutLawClothing\data\cia\cia_m65_jacket_black_co.paa",
+      "OutLawClothing\data\cia\cia_m65_jacket_black_co.paa",
+      "OutLawClothing\data\cia\cia_m65_jacket_black_co.paa"
     };
   };
   class IAT_CIA_PressVest_Blue: PressVest_ColorBase
   {
     scope=2;
-    displayName = "CIA Bomber Jacket";
-    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
+    displayName = "CIA Press Vest";
+    descriptionShort = "A press vest with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\cia\pressvest_blue_cia_co.paa",
-      "OutLawClothing\data\cia\pressvest_blue_cia_co.paa",
-      "OutLawClothing\data\cia\pressvest_blue_cia_co.paa"
+      "OutLawClothing\data\cia\cia_pressvest_blue_co.paa",
+      "OutLawClothing\data\cia\cia_pressvest_blue_co.paa",
+      "OutLawClothing\data\cia\cia_pressvest_blue_co.paa"
     };
+    hiddenSelectionsMaterials[]=
+		{
+			"OutLawClothing\data\pressvest.rvmat",
+			"OutLawClothing\data\pressvest.rvmat",
+      "OutLawClothing\data\pressvest.rvmat"
+		};
   };
   class IAT_CIA_PoliceVest: PoliceVest
   {
     scope=2;
-    displayName = "CIA Bomber Jacket";
-    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
+    displayName = "CIA Police Vest";
+    descriptionShort = "A police vest with the letters CIA embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\cia\policevest_cia_co.paa",
-      "OutLawClothing\data\cia\policevest_cia_co.paa",
-      "OutLawClothing\data\cia\policevest_cia_co.paa"
+      "OutLawClothing\data\cia\cia_policevest_co.paa",
+      "OutLawClothing\data\cia\cia_policevest_co.paa",
+      "OutLawClothing\data\cia\cia_policevest_co.paa"
     };
+    hiddenSelectionsMaterials[]=
+		{
+			"OutLawClothing\data\policevest.rvmat",
+			"OutLawClothing\data\policevest.rvmat",
+      "OutLawClothing\data\policevest.rvmat"
+		};
   };
   // class IAT_CIA_PlateCarrierVest: PlateCarrierVest
 	// {
@@ -188,33 +212,33 @@ class CfgVehicles
 	// 	visibilityModifier=0.69999999;
 	// 	hiddenSelectionsTextures[]=
 	// 	{
-	// 		"OutLawClothing\data\cia\ballisticvest_cia_co.paa",
-	// 		"OutLawClothing\data\cia\ballisticvest_cia_co.paa",
-	// 		"OutLawClothing\data\cia\ballisticvest_cia_co.paa"
+	// 		"OutLawClothing\data\cia\cia_ballisticvest_co.paa",
+	// 		"OutLawClothing\data\cia\cia_ballisticvest_co.paa",
+	// 		"OutLawClothing\data\cia\cia_ballisticvest_co.paa"
 	// 	};
 	// };
   class IAT_CIA_HighCapacityVest_Black: HighCapacityVest_ColorBase
 	{
 		scope=2;
-    displayName = "CIA Bomber Jacket";
-    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
+    displayName = "CIA Black Vest";
+    descriptionShort = "A vest with the letters CIA embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"OutLawClothing\data\cia\tacticalvest2_black_cia_co.paa",
-			"OutLawClothing\data\cia\tacticalvest2_black_cia_co.paa",
-			"OutLawClothing\data\cia\tacticalvest2_black_cia_co.paa"
+			"OutLawClothing\data\cia\cia_tacticalvest2_black_co.paa",
+			"OutLawClothing\data\cia\cia_tacticalvest2_black_co.paa",
+			"OutLawClothing\data\cia\cia_tacticalvest2_black_co.paa"
 		};
 	};
   class IAT_CIA_HighCapacityVest_Olive: HighCapacityVest_ColorBase
 	{
 		scope=2;
-    displayName = "CIA Bomber Jacket";
-    descriptionShort = "A jacket with the letters CIA embroidered on the front and back.";
+    displayName = "CIA Olive Vest";
+    descriptionShort = "A vest with the letters CIA embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"OutLawClothing\data\cia\tacticalvest2_olive_cia_co.paa",
-			"OutLawClothing\data\cia\tacticalvest2_olive_cia_co.paa",
-			"OutLawClothing\data\cia\tacticalvest2_olive_cia_co.paa"
+			"OutLawClothing\data\cia\cia_tacticalvest2_olive_co.paa",
+			"OutLawClothing\data\cia\cia_tacticalvest2_olive_co.paa",
+			"OutLawClothing\data\cia\cia_tacticalvest2_olive_co.paa"
 		};
 	};
   
@@ -225,9 +249,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\fbi\bomberjacket_blue_fbi_co.paa",     // on-ground texture
-      "OutLawClothing\data\fbi\bomberjacket_blue_fbi_co.paa",     // on-character texture
-      "OutLawClothing\data\fbi\bomberjacket_blue_fbi_co.paa"      // on-character texture
+      "OutLawClothing\data\fbi\fbi_bomberjacket_blue_co.paa",     // on-ground texture
+      "OutLawClothing\data\fbi\fbi_bomberjacket_blue_co.paa",     // on-character texture
+      "OutLawClothing\data\fbi\fbi_bomberjacket_blue_co.paa"      // on-character texture
     };
   };
   class IAT_FBI_JumpsuitJacket_Blue: JumpsuitJacket_ColorBase
@@ -237,9 +261,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\fbi\jumpsuit_top_blue_fbi_co.paa",
-      "OutLawClothing\data\fbi\jumpsuit_top_blue_fbi_co.paa",
-      "OutLawClothing\data\fbi\jumpsuit_top_blue_fbi_co.paa"
+      "OutLawClothing\data\fbi\fbi_jumpsuit_top_blue_co.paa",
+      "OutLawClothing\data\fbi\fbi_jumpsuit_top_blue_co.paa",
+      "OutLawClothing\data\fbi\fbi_jumpsuit_top_blue_co.paa"
     };
   };
   class IAT_FBI_M65Jacket_Black: M65Jacket_ColorBase
@@ -249,9 +273,9 @@ class CfgVehicles
     descriptionShort = "A jacket with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\fbi\m65_jacket_black_fbi_co.paa",
-      "OutLawClothing\data\fbi\m65_jacket_black_fbi_co.paa",
-      "OutLawClothing\data\fbi\m65_jacket_black_fbi_co.paa"
+      "OutLawClothing\data\fbi\fbi_m65_jacket_black_co.paa",
+      "OutLawClothing\data\fbi\fbi_m65_jacket_black_co.paa",
+      "OutLawClothing\data\fbi\fbi_m65_jacket_black_co.paa"
     };
   };
   class IAT_FBI_PressVest_Blue: PressVest_ColorBase
@@ -261,10 +285,16 @@ class CfgVehicles
     descriptionShort = "A vest with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\fbi\pressvest_blue_fbi_co.paa",
-      "OutLawClothing\data\fbi\pressvest_blue_fbi_co.paa",
-      "OutLawClothing\data\fbi\pressvest_blue_fbi_co.paa"
+      "OutLawClothing\data\fbi\fbi_pressvest_blue_co.paa",
+      "OutLawClothing\data\fbi\fbi_pressvest_blue_co.paa",
+      "OutLawClothing\data\fbi\fbi_pressvest_blue_co.paa"
     };
+    hiddenSelectionsMaterials[]=
+		{
+			"OutLawClothing\data\pressvest.rvmat",
+			"OutLawClothing\data\pressvest.rvmat",
+      "OutLawClothing\data\pressvest.rvmat"
+		};
   };
   class IAT_FBI_PoliceVest: PoliceVest
   {
@@ -273,10 +303,16 @@ class CfgVehicles
     descriptionShort = "A vest with the letters FBI embroidered on the front and back.";
     hiddenSelectionsTextures[]=
     {
-      "OutLawClothing\data\fbi\policevest_fbi_co.paa",
-      "OutLawClothing\data\fbi\policevest_fbi_co.paa",
-      "OutLawClothing\data\fbi\policevest_fbi_co.paa"
+      "OutLawClothing\data\fbi\fbi_policevest_co.paa",
+      "OutLawClothing\data\fbi\fbi_policevest_co.paa",
+      "OutLawClothing\data\fbi\fbi_policevest_co.paa"
     };
+    hiddenSelectionsMaterials[]=
+		{
+			"OutLawClothing\data\policevest.rvmat",
+			"OutLawClothing\data\policevest.rvmat",
+      "OutLawClothing\data\policevest.rvmat"
+		};
   };
   // class IAT_FBI_PlateCarrierVest: PlateCarrierVest
 	// {
@@ -284,33 +320,33 @@ class CfgVehicles
 	// 	visibilityModifier=0.69999999;
 	// 	hiddenSelectionsTextures[]=
 	// 	{
-	// 		"OutLawClothing\data\fbi\ballisticvest_fbi_co.paa",
-	// 		"OutLawClothing\data\fbi\ballisticvest_fbi_co.paa",
-	// 		"OutLawClothing\data\fbi\ballisticvest_fbi_co.paa"
+	// 		"OutLawClothing\data\fbi\fbi_ballisticvest_co.paa",
+	// 		"OutLawClothing\data\fbi\fbi_ballisticvest_co.paa",
+	// 		"OutLawClothing\data\fbi\fbi_ballisticvest_co.paa"
 	// 	};
 	// };
   class IAT_FBI_HighCapacityVest_Black: HighCapacityVest_ColorBase
 	{
 		scope=2;
-    displayName = "FBI High Capacity Vest";
+    displayName = "FBI Black Vest";
     descriptionShort = "A vest with the letters FBI embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"OutLawClothing\data\fbi\tacticalvest2_black_fbi_co.paa",
-			"OutLawClothing\data\fbi\tacticalvest2_black_fbi_co.paa",
-			"OutLawClothing\data\fbi\tacticalvest2_black_fbi_co.paa"
+			"OutLawClothing\data\fbi\fbi_tacticalvest2_black_co.paa",
+			"OutLawClothing\data\fbi\fbi_tacticalvest2_black_co.paa",
+			"OutLawClothing\data\fbi\fbi_tacticalvest2_black_co.paa"
 		};
 	};
   class IAT_FBI_HighCapacityVest_Olive: HighCapacityVest_ColorBase
 	{
 		scope=2;
-    displayName = "FBI High Capacity Vest";
+    displayName = "FBI Olive Vest";
     descriptionShort = "A vest with the letters FBI embroidered on the front and back.";
 		hiddenSelectionsTextures[]=
 		{
-			"OutLawClothing\data\fbi\tacticalvest2_olive_fbi_co.paa",
-			"OutLawClothing\data\fbi\tacticalvest2_olive_fbi_co.paa",
-			"OutLawClothing\data\fbi\tacticalvest2_olive_fbi_co.paa"
+			"OutLawClothing\data\fbi\fbi_tacticalvest2_olive_co.paa",
+			"OutLawClothing\data\fbi\fbi_tacticalvest2_olive_co.paa",
+			"OutLawClothing\data\fbi\fbi_tacticalvest2_olive_co.paa"
 		};
 	};
 
