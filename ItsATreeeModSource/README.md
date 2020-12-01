@@ -1,4 +1,7 @@
 # Mod Source
+
+This repository holds almost all of the source for my mods. .PAA, .PNG files are excluded because they can be generated from the .PDN files.
+
 ## Making Your Own Texture Mod
 
 **Adapted from [Test_ClothingRetexture](https://github.com/BohemiaInteractive/DayZ-Samples/blob/master/Test_ClothingRetexture/config.cpp)**
