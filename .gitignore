@@ -16,6 +16,7 @@
 @VPPAdminTools
 /ItsATreeeModSource/src/**/*.png
 !/ItsATreeeModSource/src/dayz_tools/**/*.png
+!/ItsATreeeModSource/src/outlaw_enforcement_clothing/**/preview_image.png
 /Addons
 BattlEye
 bliss
