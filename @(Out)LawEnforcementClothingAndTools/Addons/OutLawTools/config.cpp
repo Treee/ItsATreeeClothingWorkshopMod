@@ -55,5 +55,15 @@ class CfgVehicles
 			"OutLawTools\data\head_sack\head_sack_rainbow_co.paa"
 		};
 	};
+  class IAT_OutLawTool_Red_Soviet_BurlapSackCover: BurlapSackCover
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"OutLawTools\data\head_sack\head_sack_red_soviet_co.paa",
+			"OutLawTools\data\head_sack\head_sack_red_soviet_co.paa",
+			"OutLawTools\data\head_sack\head_sack_red_soviet_co.paa"
+		};
+	};
 
 };
