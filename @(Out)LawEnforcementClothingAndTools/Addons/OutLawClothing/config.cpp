@@ -350,6 +350,4 @@ class CfgVehicles
 		};
 	};
 
-
-
 };
