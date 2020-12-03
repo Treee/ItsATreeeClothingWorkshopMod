@@ -56,4 +56,18 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\reaperz_squad\reaperz_squad_armbend_co.paa"
 		};
 	};
+  class Sundown_Armband_Black: Armband_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		color="blacks";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa"
+		};
+	};
 };
