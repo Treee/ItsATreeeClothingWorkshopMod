@@ -60,7 +60,7 @@ class CfgVehicles
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
-		color="blacks";
+		color="black";
 		hiddenSelectionsTextures[]=
 		{
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
@@ -68,6 +68,34 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa"
+		};
+	};
+  class Wardens_Armband_Black: Armband_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa"
+		};
+	};
+  class Wolfpack_Armband_Grey: Armband_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		color="grey";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa"
 		};
 	};
 };
