@@ -28,6 +28,20 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\collective\collective_armbend_blue_co.paa"
 		};
 	};
+  class Freedom_Armband_Grey: Armband_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		color="grey";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\freedom\freedom_armbend_co.paa",
+			"IAT_Custom_Armbands\data\freedom\freedom_armbend_co.paa",
+			"IAT_Custom_Armbands\data\freedom\freedom_armbend_co.paa",
+			"IAT_Custom_Armbands\data\freedom\freedom_armbend_co.paa",
+			"IAT_Custom_Armbands\data\freedom\freedom_armbend_co.paa"
+		};
+	};
   class Generic_Bandit_Armband_Black: Armband_ColorBase
 	{
 		scope=2;
@@ -82,6 +96,20 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa"
+		};
+	};
+  class The_Marketplace_Armband_Black: Armband_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa"
 		};
 	};
   class The_New_Order_Armband_Black: Armband_ColorBase
