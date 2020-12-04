@@ -70,6 +70,32 @@ class CfgFaces
 		{
 		};
 	};
+  class IAT_FP_FemaleIrenaHead: Default
+	{
+		class Default
+		{
+			displayname="$STR_CFG_FACES_Default";
+			texture="FacePaints\data\irena\facepaint_hhl_f_irena_body_co.paa";
+			head="IAT_FP_FemaleIrenaHead";
+			material="FacePaints\data\irena\facepaint_hhl_f_irena_body.rvmat";
+		};
+		class IAT_FP_FemaleIrenaHead: Default
+		{
+		};
+	};
+  class IAT_FP_FemaleJudyHead: Default
+	{
+		class Default
+		{
+			displayname="$STR_CFG_FACES_Default";
+			texture="FacePaints\data\judy\facepaint_hhl_f_judy_body_co.paa";
+			head="IAT_FP_FemaleJudyHead";
+			material="FacePaints\data\judy\facepaint_hhl_f_judy_body.rvmat";
+		};
+		class IAT_FP_FemaleJudyHead: Default
+		{
+		};
+	};
 };
 
 class CfgHeads
@@ -78,6 +104,8 @@ class CfgHeads
   class FemaleFridaHead;
   class FemaleGabiHead;
   class FemaleHelgaHead;
+  class FemaleIrenaHead;
+  class FemaleJudyHead;
 
   class IAT_FP_FemaleEvaHead: FemaleEvaHead
 	{
@@ -135,6 +163,35 @@ class CfgHeads
 			};
 		};
 	};
+  class IAT_FP_FemaleIrenaHead: FemaleIrenaHead
+	{
+		model="\dz\characters\heads\f_irena_2.p3d";
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"FacePaints\data\irena\facepaint_hhl_f_irena_body.rvmat",
+				"FacePaints\data\irena\facepaint_hhl_f_irena_body.rvmat",
+				"FacePaints\data\irena\facepaint_hhl_f_irena_body.rvmat"
+			};
+		};
+	};
+  class IAT_FP_FemaleJudyHead: FemaleJudyHead
+	{
+		model="\dz\characters\heads\f_judy.p3d";
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"FacePaints\data\judy\facepaint_hhl_f_judy_body.rvmat",
+				"FacePaints\data\judy\facepaint_hhl_f_judy_body.rvmat",
+				"FacePaints\data\judy\facepaint_hhl_f_judy_body.rvmat"
+			};
+		};
+	};
+
 };
 
 class cfgVehicles
@@ -144,6 +201,8 @@ class cfgVehicles
   class FemaleFridaHead;
   class FemaleGabiHead;
   class FemaleHelgaHead;
+  class FemaleIrenaHead;
+  class FemaleJudyHead;
   
   class IAT_FP_FemaleEvaHead: FemaleEvaHead
 	{
@@ -321,6 +380,96 @@ class cfgVehicles
 				"FacePaints\data\helga\facepaint_hhl_f_helga_body.rvmat",
 				"dz\characters\heads\data\f_helga\hhl_f_helga_body_injury.rvmat",
 				"dz\characters\heads\data\f_helga\hhl_f_helga_body_injury2.rvmat"
+			};
+		};
+	};
+
+  class IAT_FP_FemaleIrenaHead: FemaleIrenaHead
+	{
+    head="IAT_FP_FemaleIrenaHead";
+    hiddenSelectionsTextures[]=
+    {
+      "FacePaints\data\irena\facepaint_hhl_f_irena_body_co.paa",
+      "dz\characters\heads\data\f_irena_2\hhl_f_irena_hair_ca.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "FacePaints\data\irena\facepaint_hhl_f_irena_body.rvmat",
+      "dz\characters\heads\data\f_irena_2\hhl_f_irena_hair.rvmat"
+    };
+  };
+  class IAT_FP_SurvivorF_Irena: SurvivorFemale_Base
+	{
+		scope=2;
+		emptyHead="IAT_FP_FemaleIrenaHead";
+		// emptyBody="FemaleIrenaTorso";
+		// emptyLegs="FemaleIrenaLegs";
+		// emptyFeet="FemaleIrenaFeet";
+		// emptyGloves="FemaleIrenaHands";
+		faceType="IAT_FP_FemaleIrenaHead";
+    hiddenSelectionsTextures[]=
+		{
+      "\dZ\characters\heads\data\f_irena_2\hhl_f_irena_body_decayed_co.paa",
+		};
+		// decayedTexture="\DZ\characters\heads\data\f_irena_2\hhl_f_irena_body_decayed_co.paa";
+		class BloodyHands
+		{
+			mat_normal="FacePaints\data\irena\facepaint_hhl_f_irena_body.rvmat";
+			mat_blood="dz\characters\heads\data\f_irena_2\hhl_f_irena_body_bloodyhands.rvmat";
+		};
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"FacePaints\data\irena\facepaint_hhl_f_irena_body.rvmat",
+				"dz\characters\heads\data\f_irena_2\hhl_f_irena_body_injury.rvmat",
+				"dz\characters\heads\data\f_irena_2\hhl_f_irena_body_injury2.rvmat"
+			};
+		};
+	};
+
+  class IAT_FP_FemaleJudyHead: FemaleJudyHead
+	{
+    head="IAT_FP_FemaleJudyHead";
+    hiddenSelectionsTextures[]=
+    {
+      "FacePaints\data\judy\facepaint_hhl_f_judy_body_co.paa",
+      "dz\characters\heads\data\f_judy\hhl_f_judy_hair_ca.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "FacePaints\data\judy\facepaint_hhl_f_judy_body.rvmat",
+      "dz\characters\heads\data\f_judy\hhl_f_judy_hair.rvmat"
+    };
+  };
+  class IAT_FP_SurvivorF_Judy: SurvivorFemale_Base
+	{
+		scope=2;
+		emptyHead="IAT_FP_FemaleJudyHead";
+		// emptyBody="FemaleJudyTorso";
+		// emptyLegs="FemaleJudyLegs";
+		// emptyFeet="FemaleJudyFeet";
+		// emptyGloves="FemaleJudyHands";
+		faceType="IAT_FP_FemaleJudyHead";
+    hiddenSelectionsTextures[]=
+		{
+      "\dZ\characters\heads\data\f_judy\hhl_f_judy_body_decayed_co.paa",
+		};
+		// decayedTexture="\DZ\characters\heads\data\f_judy\hhl_f_judy_body_decayed_co.paa";
+		class BloodyHands
+		{
+			mat_normal="FacePaints\data\judy\facepaint_hhl_f_judy_body.rvmat";
+			mat_blood="dz\characters\heads\data\f_judy\hhl_f_judy_body_bloodyhands.rvmat";
+		};
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"FacePaints\data\judy\facepaint_hhl_f_judy_body.rvmat",
+				"dz\characters\heads\data\f_judy\hhl_f_judy_body_injury.rvmat",
+				"dz\characters\heads\data\f_judy\hhl_f_judy_body_injury2.rvmat"
 			};
 		};
 	};

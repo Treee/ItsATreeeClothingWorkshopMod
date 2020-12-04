@@ -28,6 +28,20 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\collective\collective_armbend_blue_co.paa"
 		};
 	};
+  class Generic_Bandit_Armband_Black: Armband_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa",
+			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa",
+			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa",
+			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa",
+			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa"
+		};
+	};
   class Settlers_Of_Portland_Deer_Armband_Blue: Armband_ColorBase
 	{
 		scope=2;
@@ -68,6 +82,20 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
 			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa"
+		};
+	};
+  class The_New_Order_Armband_Black: Armband_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_new_order\the_new_order_v2_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_new_order\the_new_order_v2_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_new_order\the_new_order_v2_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_new_order\the_new_order_v2_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_new_order\the_new_order_v2_armbend_co.paa"
 		};
 	};
   class Wardens_Armband_Black: Armband_ColorBase
