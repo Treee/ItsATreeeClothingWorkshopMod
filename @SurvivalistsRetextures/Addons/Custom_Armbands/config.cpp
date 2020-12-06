@@ -18,140 +18,187 @@ class CfgVehicles
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="The Collective Armband";
+		descriptionShort="The Collective Armband";
+    heatIsolation=1;
 		color="blue";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\collective\collective_armbend_blue_co.paa",
-			"IAT_Custom_Armbands\data\collective\collective_armbend_blue_co.paa",
-			"IAT_Custom_Armbands\data\collective\collective_armbend_blue_co.paa",
-			"IAT_Custom_Armbands\data\collective\collective_armbend_blue_co.paa",
-			"IAT_Custom_Armbands\data\collective\collective_armbend_blue_co.paa"
+			"IAT_Custom_Armbands\data\collective_armbend_blue_co.paa",
+			"IAT_Custom_Armbands\data\collective_armbend_blue_co.paa",
+			"IAT_Custom_Armbands\data\collective_armbend_blue_co.paa",
+			"IAT_Custom_Armbands\data\collective_armbend_blue_co.paa",
+			"IAT_Custom_Armbands\data\collective_armbend_blue_co.paa"
+		};
+	};
+  class FAST_Armband_Purple: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="F.A.S.T Armband";
+    descriptionShort="F.A.S.T Armband";
+    heatIsolation=1;
+		color="purple";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\fast_armbend_co.paa",
+			"IAT_Custom_Armbands\data\fast_armbend_co.paa",
+			"IAT_Custom_Armbands\data\fast_armbend_co.paa",
+			"IAT_Custom_Armbands\data\fast_armbend_co.paa",
+			"IAT_Custom_Armbands\data\fast_armbend_co.paa"
 		};
 	};
   class PALF_Armband_Grey: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="PALF Armband";
+    descriptionShort="PALF Armband";
+    heatIsolation=1;
 		color="grey";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\palf\palf_armbend_co.paa",
-			"IAT_Custom_Armbands\data\palf\palf_armbend_co.paa",
-			"IAT_Custom_Armbands\data\palf\palf_armbend_co.paa",
-			"IAT_Custom_Armbands\data\palf\palf_armbend_co.paa",
-			"IAT_Custom_Armbands\data\palf\palf_armbend_co.paa"
+			"IAT_Custom_Armbands\data\palf_armbend_co.paa",
+			"IAT_Custom_Armbands\data\palf_armbend_co.paa",
+			"IAT_Custom_Armbands\data\palf_armbend_co.paa",
+			"IAT_Custom_Armbands\data\palf_armbend_co.paa",
+			"IAT_Custom_Armbands\data\palf_armbend_co.paa"
 		};
 	};
   class Generic_Bandit_Armband_Black: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="Skull and Crossbones Armband";
+    descriptionShort="Skull and Crossbones Armband";
+    heatIsolation=1;
 		color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa",
-			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa",
-			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa",
-			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa",
-			"IAT_Custom_Armbands\data\generic_bandit\bandits_armbend_co.paa"
+			"IAT_Custom_Armbands\data\bandits_armbend_co.paa",
+			"IAT_Custom_Armbands\data\bandits_armbend_co.paa",
+			"IAT_Custom_Armbands\data\bandits_armbend_co.paa",
+			"IAT_Custom_Armbands\data\bandits_armbend_co.paa",
+			"IAT_Custom_Armbands\data\bandits_armbend_co.paa"
 		};
 	};
   class Settlers_Of_Portland_Deer_Armband_Blue: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="Settlers of Portland Armband";
+    descriptionShort="Settlers of Portland Armband";
+    heatIsolation=1;
 		color="blue";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\settlers_of_portland\settlers_of_portland_armbend_blue_co.paa",
-			"IAT_Custom_Armbands\data\settlers_of_portland\settlers_of_portland_armbend_blue_co.paa",
-			"IAT_Custom_Armbands\data\settlers_of_portland\settlers_of_portland_armbend_blue_co.paa",
-			"IAT_Custom_Armbands\data\settlers_of_portland\settlers_of_portland_armbend_blue_co.paa",
-			"IAT_Custom_Armbands\data\settlers_of_portland\settlers_of_portland_armbend_blue_co.paa"
+			"IAT_Custom_Armbands\data\settlers_of_portland_armbend_blue_co.paa",
+			"IAT_Custom_Armbands\data\settlers_of_portland_armbend_blue_co.paa",
+			"IAT_Custom_Armbands\data\settlers_of_portland_armbend_blue_co.paa",
+			"IAT_Custom_Armbands\data\settlers_of_portland_armbend_blue_co.paa",
+			"IAT_Custom_Armbands\data\settlers_of_portland_armbend_blue_co.paa"
 		};
 	};
   class Reaperz_Squad_Armband_Purple: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="Reaperz Squadron Armband";
+    descriptionShort="Reaperz Squadron Armband";
+    heatIsolation=1;
 		color="purple";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\reaperz_squad\reaperz_squad_armbend_co.paa",
-			"IAT_Custom_Armbands\data\reaperz_squad\reaperz_squad_armbend_co.paa",
-			"IAT_Custom_Armbands\data\reaperz_squad\reaperz_squad_armbend_co.paa",
-			"IAT_Custom_Armbands\data\reaperz_squad\reaperz_squad_armbend_co.paa",
-			"IAT_Custom_Armbands\data\reaperz_squad\reaperz_squad_armbend_co.paa"
+			"IAT_Custom_Armbands\data\reaperz_squad_armbend_co.paa",
+			"IAT_Custom_Armbands\data\reaperz_squad_armbend_co.paa",
+			"IAT_Custom_Armbands\data\reaperz_squad_armbend_co.paa",
+			"IAT_Custom_Armbands\data\reaperz_squad_armbend_co.paa",
+			"IAT_Custom_Armbands\data\reaperz_squad_armbend_co.paa"
 		};
 	};
   class Sundown_Armband_Black: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="Sundown Armband";
+    descriptionShort="Sundown Armband";
+    heatIsolation=1;
 		color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
-			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
-			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
-			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa",
-			"IAT_Custom_Armbands\data\sundown\sundown_armbend_co.paa"
+			"IAT_Custom_Armbands\data\sundown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\sundown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\sundown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\sundown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\sundown_armbend_co.paa"
 		};
 	};
   class The_Marketplace_Armband_Black: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="The Marketplace Armband";
+    descriptionShort="The Marketplace Armband";
+    heatIsolation=1;
 		color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa",
-			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa",
-			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa",
-			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa",
-			"IAT_Custom_Armbands\data\the_marketplace\the_marketplace_armbend_co.paa"
+			"IAT_Custom_Armbands\data\the_marketplace_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_marketplace_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_marketplace_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_marketplace_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_marketplace_armbend_co.paa"
 		};
 	};
   class The_New_Order_Armband_Black: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="The New Order Armband";
+    descriptionShort="The New Order Armband";
+    heatIsolation=1;
 		color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\the_new_order\the_new_order_armbend_co.paa",
-			"IAT_Custom_Armbands\data\the_new_order\the_new_order_armbend_co.paa",
-			"IAT_Custom_Armbands\data\the_new_order\the_new_order_armbend_co.paa",
-			"IAT_Custom_Armbands\data\the_new_order\the_new_order_armbend_co.paa",
-			"IAT_Custom_Armbands\data\the_new_order\the_new_order_armbend_co.paa"
+			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa"
 		};
 	};
   class Wardens_Armband_Black: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="Wardens Armband";
+    descriptionShort="Wardens Armband";
+    heatIsolation=1;
 		color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa",
-			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa",
-			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa",
-			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa",
-			"IAT_Custom_Armbands\data\wardens\wardens_armbend_co.paa"
+			"IAT_Custom_Armbands\data\wardens_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wardens_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wardens_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wardens_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wardens_armbend_co.paa"
 		};
 	};
   class Wolfpack_Armband_Grey: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
+    displayName="Wolfpack Armband";
+    descriptionShort="Wolfpack Armband";
+    heatIsolation=1;
 		color="grey";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa",
-			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa",
-			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa",
-			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa",
-			"IAT_Custom_Armbands\data\wolfpack\wolfpack_armbend_co.paa"
+			"IAT_Custom_Armbands\data\wolfpack_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wolfpack_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wolfpack_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wolfpack_armbend_co.paa",
+			"IAT_Custom_Armbands\data\wolfpack_armbend_co.paa"
 		};
 	};
 };
