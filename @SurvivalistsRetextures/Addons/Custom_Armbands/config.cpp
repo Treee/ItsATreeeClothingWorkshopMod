@@ -48,6 +48,23 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\fast_armbend_co.paa"
 		};
 	};
+  class Jamestown_Armband_Purple: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Jamestown Armband";
+    descriptionShort="Jamestown Armband";
+    heatIsolation=1;
+		color="purple";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\jamestown_co.paa",
+			"IAT_Custom_Armbands\data\jamestown_co.paa",
+			"IAT_Custom_Armbands\data\jamestown_co.paa",
+			"IAT_Custom_Armbands\data\jamestown_co.paa",
+			"IAT_Custom_Armbands\data\jamestown_co.paa"
+		};
+	};
   class PALF_Armband_Grey: MassArmbandDouble_Colorbase
 	{
 		scope=2;
