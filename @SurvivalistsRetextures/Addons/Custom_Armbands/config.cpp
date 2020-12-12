@@ -6,7 +6,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Characters"
+			"DZ_Characters",
+      "Mass_Textures"
 		};
 	};
 };
