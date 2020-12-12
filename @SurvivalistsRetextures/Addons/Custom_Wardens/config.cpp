@@ -65,19 +65,19 @@ class CfgVehicles
 			"Custom_Wardens\data\wardens_ghillie_co.paa",
 		};
   };
-  // class MVS_WarriorHelmet_Black;
-  // class Wardens_Mando_Helmet_Black: MVS_WarriorHelmet_Black
-	// {
-	// 	scope = 2;
-	// 	displayName = "Wardens Warrior Helmet";
-  //   descriptionShort="The helmet of a warrior";
-	// 	hiddenSelectionsTextures[] = 
-	// 	{
-	// 		"Custom_Wardens\data\wardens_mando_helmet_co.paa",
-	// 		"Custom_Wardens\data\wardens_mando_helmet_co.paa",
-	// 		"Custom_Wardens\data\wardens_mando_helmet_co.paa",
-	// 		"\ModularVestSystem\data\Helmets\Mandalorian_Helmet_co_Black.paa",
-	// 		"\ModularVestSystem\data\Helmets\Mandalorian_Visor_co.paa"
-	// 	};
-	// };
+  class MVS_WarriorHelmet_Black;
+  class Wardens_Mando_Helmet_Black: MVS_WarriorHelmet_Black
+	{
+		scope = 2;
+		displayName = "Wardens Warrior Helmet";
+    descriptionShort="The helmet of a warrior";
+		hiddenSelectionsTextures[] = 
+		{
+			"Custom_Wardens\data\warden_mando_helmet_co.paa",
+			"Custom_Wardens\data\warden_mando_helmet_co.paa",
+			"Custom_Wardens\data\warden_mando_helmet_co.paa",
+			"\ModularVestSystem\data\Helmets\Mandalorian_Helmet_co_Black.paa",
+			"\ModularVestSystem\data\Helmets\Mandalorian_Visor_co.paa"
+		};
+	};
 };
