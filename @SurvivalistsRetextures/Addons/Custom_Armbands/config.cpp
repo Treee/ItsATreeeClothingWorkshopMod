@@ -66,6 +66,23 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\jamestown_co.paa"
 		};
 	};
+  class New_Haven_Armband_Purple: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="New Haven Armband";
+    descriptionShort="New Haven Armband";
+    heatIsolation=1;
+		color="purple";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\new_haven_armbend_co.paa",
+			"IAT_Custom_Armbands\data\new_haven_armbend_co.paa",
+			"IAT_Custom_Armbands\data\new_haven_armbend_co.paa",
+			"IAT_Custom_Armbands\data\new_haven_armbend_co.paa",
+			"IAT_Custom_Armbands\data\new_haven_armbend_co.paa"
+		};
+	};
   class PALF_Armband_Grey: MassArmbandDouble_Colorbase
 	{
 		scope=2;
@@ -149,6 +166,23 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\sundown_armbend_co.paa",
 			"IAT_Custom_Armbands\data\sundown_armbend_co.paa",
 			"IAT_Custom_Armbands\data\sundown_armbend_co.paa"
+		};
+	};
+  class The_Legion_Armband_Black: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Legion Armband";
+    descriptionShort="The Legion Armband";
+    heatIsolation=1;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_legion_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_legion_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_legion_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_legion_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_legion_armbend_co.paa"
 		};
 	};
   class The_Marketplace_Armband_Black: MassArmbandDouble_Colorbase

@@ -22,4 +22,20 @@ class CfgVehicles
 			"IAT_Custom_Flags\data\collective_flag_co.paa"
 		};
 	};
+  class New_Haven_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\new_haven_flag_co.paa"
+		};
+	};
+  class The_Legion_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\the_legion_flag_co.paa"
+		};
+	};
 };
