@@ -59,11 +59,11 @@ class CfgVehicles
 		color="purple";
 		hiddenSelectionsTextures[]=
 		{
-			"IAT_Custom_Armbands\data\jamestown_co.paa",
-			"IAT_Custom_Armbands\data\jamestown_co.paa",
-			"IAT_Custom_Armbands\data\jamestown_co.paa",
-			"IAT_Custom_Armbands\data\jamestown_co.paa",
-			"IAT_Custom_Armbands\data\jamestown_co.paa"
+			"IAT_Custom_Armbands\data\jamestown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\jamestown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\jamestown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\jamestown_armbend_co.paa",
+			"IAT_Custom_Armbands\data\jamestown_armbend_co.paa"
 		};
 	};
   class New_Haven_Armband_Purple: MassArmbandDouble_Colorbase
@@ -217,6 +217,23 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa",
 			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa",
 			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa"
+		};
+	};
+  class The_Patriots_Armband_Red: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Patriots Armband";
+    descriptionShort="The Patriots Armband";
+    heatIsolation=1;
+		color="red";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa"
 		};
 	};
   class Wardens_Armband_Black: MassArmbandDouble_Colorbase

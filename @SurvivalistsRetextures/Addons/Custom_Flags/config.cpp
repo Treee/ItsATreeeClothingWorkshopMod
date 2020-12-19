@@ -22,6 +22,14 @@ class CfgVehicles
 			"IAT_Custom_Flags\data\collective_flag_co.paa"
 		};
 	};
+  class Jamestown_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\jamestown_flag_co.paa"
+		};
+	};
   class New_Haven_Flag: Flag_Base
 	{
 		scope=2;
@@ -36,6 +44,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"IAT_Custom_Flags\data\the_legion_flag_co.paa"
+		};
+	};
+  class The_Patriots_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\the_patriots_flag_co.paa"
 		};
 	};
 };
