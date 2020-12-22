@@ -96,6 +96,19 @@ class CfgFaces
 		{
 		};
 	};
+  class IAT_FP_FemaleKeikoHead: Default
+	{
+		class Default
+		{
+			displayname="$STR_CFG_FACES_Default";
+			texture="FacePaints\data\keiko\facepaint_hhl_f_keiko_body_co.paa";
+			head="IAT_FP_FemaleKeikoHead";
+			material="FacePaints\data\keiko\facepaint_hhl_f_keiko_body.rvmat";
+		};
+		class IAT_FP_FemaleKeikoHead: Default
+		{
+		};
+	};
 };
 
 class CfgHeads
@@ -106,6 +119,7 @@ class CfgHeads
   class FemaleHelgaHead;
   class FemaleIrenaHead;
   class FemaleJudyHead;
+  class FemaleKeikoHead;
 
   class IAT_FP_FemaleEvaHead: FemaleEvaHead
 	{
@@ -191,6 +205,20 @@ class CfgHeads
 			};
 		};
 	};
+  class IAT_FP_FemaleKeikoHead: FemaleKeikoHead
+	{
+		model="\dz\characters\heads\f_keiko.p3d";
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"FacePaints\data\keiko\facepaint_hhl_f_keiko_body.rvmat",
+				"FacePaints\data\keiko\facepaint_hhl_f_keiko_body.rvmat",
+				"FacePaints\data\keiko\facepaint_hhl_f_keiko_body.rvmat"
+			};
+		};
+	};
 
 };
 
@@ -203,6 +231,7 @@ class cfgVehicles
   class FemaleHelgaHead;
   class FemaleIrenaHead;
   class FemaleJudyHead;
+  class FemaleKeikoHead;
   
   class IAT_FP_FemaleEvaHead: FemaleEvaHead
 	{
@@ -470,6 +499,51 @@ class cfgVehicles
 				"FacePaints\data\judy\facepaint_hhl_f_judy_body.rvmat",
 				"dz\characters\heads\data\f_judy\hhl_f_judy_body_injury.rvmat",
 				"dz\characters\heads\data\f_judy\hhl_f_judy_body_injury2.rvmat"
+			};
+		};
+	};
+
+  class IAT_FP_FemaleKeikoHead: FemaleKeikoHead
+	{
+    head="IAT_FP_FemaleKeikoHead";
+    hiddenSelectionsTextures[]=
+    {
+      "FacePaints\data\keiko\facepaint_hhl_f_keiko_body_co.paa",
+      "dz\characters\heads\data\f_keiko\hhl_f_keiko_hair_ca.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "FacePaints\data\keiko\facepaint_hhl_f_keiko_body.rvmat",
+      "dz\characters\heads\data\f_keiko\hhl_f_keiko_hair.rvmat"
+    };
+  };
+  class IAT_FP_SurvivorF_Keiko: SurvivorFemale_Base
+	{
+		scope=2;
+		emptyHead="IAT_FP_FemaleKeikoHead";
+		// emptyBody="FemaleKeikoTorso";
+		// emptyLegs="FemaleKeikoLegs";
+		// emptyFeet="FemaleKeikoFeet";
+		// emptyGloves="FemaleKeikoHands";
+		faceType="IAT_FP_FemaleKeikoHead";
+    hiddenSelectionsTextures[]=
+		{
+      "\dZ\characters\heads\data\f_keiko\hhl_f_keiko_body_decayed_co.paa",
+		};
+		// decayedTexture="\DZ\characters\heads\data\f_keiko\hhl_f_keiko_body_decayed_co.paa";
+		class BloodyHands
+		{
+			mat_normal="FacePaints\data\keiko\facepaint_hhl_f_keiko_body.rvmat";
+			mat_blood="dz\characters\heads\data\f_keiko\hhl_f_keiko_body_bloodyhands.rvmat";
+		};
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"FacePaints\data\keiko\facepaint_hhl_f_keiko_body.rvmat",
+				"dz\characters\heads\data\f_keiko\hhl_f_keiko_body_injury.rvmat",
+				"dz\characters\heads\data\f_keiko\hhl_f_keiko_body_injury2.rvmat"
 			};
 		};
 	};
