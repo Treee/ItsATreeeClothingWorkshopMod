@@ -135,6 +135,19 @@ class CfgFaces
 		{
 		};
 	};
+  class IAT_FP_FemaleNaomiHead: Default
+	{
+		class Default
+		{
+			displayname="$STR_CFG_FACES_Default";
+			texture="FacePaints\data\naomi\facepaint_hhl_f_naomi_body_co.paa";
+			head="IAT_FP_FemaleNaomiHead";
+			material="FacePaints\data\naomi\facepaint_hhl_f_naomi_body.rvmat";
+		};
+		class IAT_FP_FemaleNaomiHead: Default
+		{
+		};
+	};
 };
 
 class CfgHeads
@@ -148,6 +161,7 @@ class CfgHeads
   class FemaleKeikoHead;
   class FemaleLindaHead;
   class FemaleMariaHead;
+  class FemaleNaomiHead;
 
   class IAT_FP_FemaleEvaHead: FemaleEvaHead
 	{
@@ -275,6 +289,20 @@ class CfgHeads
 			};
 		};
 	};
+  class IAT_FP_FemaleNaomiHead: FemaleNaomiHead
+	{
+		model="\dz\characters\heads\f_naomi.p3d";
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"FacePaints\data\naomi\facepaint_hhl_f_naomi_body.rvmat",
+				"FacePaints\data\naomi\facepaint_hhl_f_naomi_body.rvmat",
+				"FacePaints\data\naomi\facepaint_hhl_f_naomi_body.rvmat"
+			};
+		};
+	};
 };
 
 class cfgVehicles
@@ -289,6 +317,7 @@ class cfgVehicles
   class FemaleKeikoHead;
   class FemaleLindaHead;
   class FemaleMariaHead;
+  class FemaleNaomiHead;
   
   class IAT_FP_FemaleEvaHead: FemaleEvaHead
 	{
@@ -696,5 +725,48 @@ class cfgVehicles
 		};
 	};
 
-
+  class IAT_FP_FemaleNaomiHead: FemaleNaomiHead
+	{
+    head="IAT_FP_FemaleNaomiHead";
+    hiddenSelectionsTextures[]=
+    {
+      "FacePaints\data\naomi\facepaint_hhl_f_naomi_body_co.paa",
+      "dz\characters\heads\data\f_naomi\hhl_f_naomi_hair_ca.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "FacePaints\data\naomi\facepaint_hhl_f_naomi_body.rvmat",
+      "dz\characters\heads\data\f_naomi\hhl_f_naomi_hair.rvmat"
+    };
+  };
+  class IAT_FP_SurvivorF_Naomi: SurvivorFemale_Base
+	{
+		scope=2;
+		emptyHead="IAT_FP_FemaleNaomiHead";
+		// emptyBody="FemaleNaomiTorso";
+		// emptyLegs="FemaleNaomiLegs";
+		// emptyFeet="FemaleNaomiFeet";
+		// emptyGloves="FemaleNaomiHands";
+		faceType="IAT_FP_FemaleNaomiHead";
+    hiddenSelectionsTextures[]=
+		{
+      "\dZ\characters\heads\data\f_naomi\hhl_f_naomi_body_decayed_co.paa",
+		};
+		// decayedTexture="\DZ\characters\heads\data\f_naomi\hhl_f_naomi_body_decayed_co.paa";
+		class BloodyHands
+		{
+			mat_normal="FacePaints\data\naomi\facepaint_hhl_f_naomi_body.rvmat";
+			mat_blood="dz\characters\heads\data\f_naomi\hhl_f_naomi_body_bloodyhands.rvmat";
+		};
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"FacePaints\data\naomi\facepaint_hhl_f_naomi_body.rvmat",
+				"dz\characters\heads\data\f_naomi\hhl_f_naomi_body_injury.rvmat",
+				"dz\characters\heads\data\f_naomi\hhl_f_naomi_body_injury2.rvmat"
+			};
+		};
+	};
 };
