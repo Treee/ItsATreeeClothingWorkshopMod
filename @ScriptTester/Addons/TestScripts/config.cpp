@@ -42,4 +42,15 @@ class CfgVehicles
 	{
 		inventorySlot[] = {"MassRadio","walkietalkie", "Belt_Left", "flashlight"};
 	};
+  class MassMeth;
+  class MyMeth: MassMeth
+	{
+		scope = 2;
+		displayName = "Test Description";
+		descriptionShort = "As Innocent as the Bright Blue Sky 'Effects done by Niphoria' 'Mass'";
+		model = "Food\Meth\Meth.p3d";
+		rotationFlags = 16;
+		itemSize[] = {2,2};
+		weight = 120;
+	};
 };
