@@ -14,12 +14,28 @@ class CfgVehicles
 {
   class Flag_Base;
 
+  class Chivalrous_Fist_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\chivalrous_fist_flag_co.paa"
+		};
+	};
   class Collective_Flag: Flag_Base
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"IAT_Custom_Flags\data\collective_flag_co.paa"
+		};
+	};
+  class Duskar_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\duskar_flag_co.paa"
 		};
 	};
   class Jamestown_Flag: Flag_Base

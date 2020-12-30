@@ -7,6 +7,7 @@
 *.bisign
 **/*.pbo
 **/*.paa
+**/*.ogg
 
 \!dzsal
 \!Workshop

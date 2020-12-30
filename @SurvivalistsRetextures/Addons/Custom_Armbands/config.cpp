@@ -15,7 +15,24 @@ class CfgVehicles
 {
   class MassArmbandDouble_Colorbase;
 
-  class Collective_Armband_Blue: MassArmbandDouble_Colorbase
+  class Chivalrous_Fist_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Chivalrous Fist Armband";
+		descriptionShort="The Chivalrous Fist Armband";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\chivalrous_fist_armbend_co.paa",
+			"IAT_Custom_Armbands\data\chivalrous_fist_armbend_co.paa",
+			"IAT_Custom_Armbands\data\chivalrous_fist_armbend_co.paa",
+			"IAT_Custom_Armbands\data\chivalrous_fist_armbend_co.paa",
+			"IAT_Custom_Armbands\data\chivalrous_fist_armbend_co.paa"
+		};
+	};
+  class Collective_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -32,7 +49,24 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\collective_armbend_blue_co.paa"
 		};
 	};
-  class FAST_Armband_Purple: MassArmbandDouble_Colorbase
+  class Duskar_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Duskar Armband";
+		descriptionShort="The Duskar Armband";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\duskar_armbend_co.paa",
+			"IAT_Custom_Armbands\data\duskar_armbend_co.paa",
+			"IAT_Custom_Armbands\data\duskar_armbend_co.paa",
+			"IAT_Custom_Armbands\data\duskar_armbend_co.paa",
+			"IAT_Custom_Armbands\data\duskar_armbend_co.paa"
+		};
+	};
+  class FAST_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -49,7 +83,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\fast_armbend_co.paa"
 		};
 	};
-  class Jamestown_Armband_Purple: MassArmbandDouble_Colorbase
+  class Jamestown_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -66,7 +100,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\jamestown_armbend_co.paa"
 		};
 	};
-  class New_Haven_Armband_Purple: MassArmbandDouble_Colorbase
+  class New_Haven_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -83,7 +117,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\new_haven_armbend_co.paa"
 		};
 	};
-  class PALF_Armband_Grey: MassArmbandDouble_Colorbase
+  class PALF_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
