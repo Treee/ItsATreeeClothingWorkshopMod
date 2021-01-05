@@ -22,6 +22,7 @@
 @VPPAdminTools
 @PvZmoD_TheDarkHorde
 @Perishable*
+@Psycho*
 /ItsATreeeModSource/src/**/*.png
 !/ItsATreeeModSource/src/dayz_tools/**/*.png
 !/ItsATreeeModSource/src/**/preview_image.png
