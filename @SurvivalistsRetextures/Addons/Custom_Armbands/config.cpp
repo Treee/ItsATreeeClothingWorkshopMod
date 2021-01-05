@@ -134,7 +134,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\palf_armbend_co.paa"
 		};
 	};
-  class Generic_Bandit_Armband_Black: MassArmbandDouble_Colorbase
+  class Generic_Bandit_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -151,7 +151,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\bandits_armbend_co.paa"
 		};
 	};
-  class Settlers_Of_Portland_Deer_Armband_Blue: MassArmbandDouble_Colorbase
+  class Settlers_Of_Portland_Deer_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -168,7 +168,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\settlers_of_portland_armbend_blue_co.paa"
 		};
 	};
-  class Reaperz_Squad_Armband_Purple: MassArmbandDouble_Colorbase
+  class Reaperz_Squad_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -185,7 +185,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\reaperz_squad_armbend_co.paa"
 		};
 	};
-  class Sundown_Armband_Black: MassArmbandDouble_Colorbase
+  class Sundown_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -202,7 +202,41 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\sundown_armbend_co.paa"
 		};
 	};
-  class The_Legion_Armband_Black: MassArmbandDouble_Colorbase
+  class The_AereSkjold_Clan_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The AereSkjold Clan Armband";
+    descriptionShort="The AereSkjold Clan Armband";
+    heatIsolation=1;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_aereskjold_clan_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_aereskjold_clan_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_aereskjold_clan_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_aereskjold_clan_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_aereskjold_clan_armbend_co.paa"
+		};
+	};
+  class The_Brotherhood_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Brotherhood Armband";
+    descriptionShort="The Brotherhood Armband";
+    heatIsolation=1;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_brotherhood_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_brotherhood_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_brotherhood_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_brotherhood_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_brotherhood_armbend_co.paa"
+		};
+	};
+  class The_Legion_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -219,7 +253,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\the_legion_armbend_co.paa"
 		};
 	};
-  class The_Marketplace_Armband_Black: MassArmbandDouble_Colorbase
+  class The_Marketplace_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -236,7 +270,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\the_marketplace_armbend_co.paa"
 		};
 	};
-  class The_New_Order_Armband_Black: MassArmbandDouble_Colorbase
+  class The_New_Order_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -253,7 +287,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa"
 		};
 	};
-  class The_Patriots_Armband_Red: MassArmbandDouble_Colorbase
+  class The_Patriots_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -270,7 +304,24 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa"
 		};
 	};
-  class Wardens_Armband_Black: MassArmbandDouble_Colorbase
+  class The_Visionaries_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Visionaries Armband";
+    descriptionShort="The Visionaries Armband";
+    heatIsolation=1;
+		color="orange";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_visionaries_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_visionaries_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_visionaries_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_visionaries_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_visionaries_armbend_co.paa"
+		};
+	};
+  class Wardens_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -287,7 +338,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\wardens_armbend_co.paa"
 		};
 	};
-  class Wolfpack_Armband_Grey: MassArmbandDouble_Colorbase
+  class Wolfpack_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
