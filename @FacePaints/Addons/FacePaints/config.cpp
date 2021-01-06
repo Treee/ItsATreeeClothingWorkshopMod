@@ -10,6 +10,25 @@ class CfgPatches
 			"DZ_Characters",
       "DZ_Data"
 		};
+    author = "ItsATreee";
+		name = "ItsATreee Face Paints";
+		url = "https://github.com/Treee/ItsATreeeDayZWorkshopMods";
+	};
+};
+
+class CfgMods
+{
+	class FacePaints
+	{	
+		type = "mod";
+		class defs
+		{
+			class worldScriptModule
+			{
+				value = "";
+				files[] = {"FacePaints/scripts/4_world"};
+			};
+		}
 	};
 };
 
@@ -305,7 +324,7 @@ class CfgHeads
 	};
 };
 
-class cfgVehicles
+class CfgVehicles
 {
   class SurvivorFemale_Base;
   class FemaleEvaHead;
@@ -318,6 +337,17 @@ class cfgVehicles
   class FemaleLindaHead;
   class FemaleMariaHead;
   class FemaleNaomiHead;
+
+  class Epinephrine;
+  class IAT_FacePaintStick: Epinephrine
+	{
+		scope=2;
+		displayName="$STR_CfgVehicles_Epinephrine0";
+		descriptionShort="$STR_CfgVehicles_Epinephrine1";
+		model="\dz\gear\medical\Epinephrine.p3d";
+		rotationFlags=17;
+		itemSize[]={1,2};
+	};
   
   class IAT_FP_FemaleEvaHead: FemaleEvaHead
 	{
