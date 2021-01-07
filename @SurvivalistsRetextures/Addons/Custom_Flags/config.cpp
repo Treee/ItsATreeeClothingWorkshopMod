@@ -62,6 +62,22 @@ class CfgVehicles
 			"IAT_Custom_Flags\data\the_aereskjold_clan_flag_co.paa"
 		};
 	};
+  class The_Betrayed_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\the_betrayed_flag_co.paa"
+		};
+	};
+  class The_Alliance_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\the_alliance_flag_co.paa"
+		};
+	};
   class The_Brotherhood_Flag: Flag_Base
 	{
 		scope=2;
@@ -84,6 +100,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"IAT_Custom_Flags\data\the_patriots_flag_co.paa"
+		};
+	};
+  class The_Red_Militia_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\the_red_militia_flag_co.paa"
 		};
 	};
 };

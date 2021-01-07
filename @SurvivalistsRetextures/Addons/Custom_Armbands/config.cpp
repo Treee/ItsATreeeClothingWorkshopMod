@@ -15,6 +15,23 @@ class CfgVehicles
 {
   class MassArmbandDouble_Colorbase;
 
+  class Betrayed_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Betrayed Armband";
+		descriptionShort="The Betrayed Armband";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\betrayed_armbend_co.paa",
+			"IAT_Custom_Armbands\data\betrayed_armbend_co.paa",
+			"IAT_Custom_Armbands\data\betrayed_armbend_co.paa",
+			"IAT_Custom_Armbands\data\betrayed_armbend_co.paa",
+			"IAT_Custom_Armbands\data\betrayed_armbend_co.paa"
+		};
+	};
   class Chivalrous_Fist_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
@@ -219,6 +236,23 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\the_aereskjold_clan_armbend_co.paa"
 		};
 	};
+  class The_Alliance_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Alliance Armband";
+    descriptionShort="The Alliance Armband";
+    heatIsolation=1;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_alliance_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_alliance_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_alliance_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_alliance_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_alliance_armbend_co.paa"
+		};
+	};
   class The_Brotherhood_Armband: MassArmbandDouble_Colorbase
 	{
 		scope=2;
@@ -302,6 +336,23 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa",
 			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa",
 			"IAT_Custom_Armbands\data\the_patriots_armbend_co.paa"
+		};
+	};
+  class The_Red_Militia_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="The Red Militia Armband";
+    descriptionShort="The Red Militia Armband";
+    heatIsolation=1;
+		color="red";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\the_red_militia_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_red_militia_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_red_militia_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_red_militia_armbend_co.paa",
+			"IAT_Custom_Armbands\data\the_red_militia_armbend_co.paa"
 		};
 	};
   class The_Visionaries_Armband: MassArmbandDouble_Colorbase
