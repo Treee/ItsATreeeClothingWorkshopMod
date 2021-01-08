@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class DZ_Characters_Glasses
+	class Survivalists_Characters
 	{
 		weapons[]={};
 		requiredVersion=0.1;
@@ -117,7 +117,7 @@ class CfgVehicles
   class AthleticShoes_ColorBase;
 
   //tops
-    class WoolCoat_ColorBase;
+  class WoolCoat_ColorBase;
   class WomanSuit_ColorBase;
   class USMCJacket_ColorBase;
   class TTsKOJacket_ColorBase;
