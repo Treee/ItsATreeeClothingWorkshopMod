@@ -13,7 +13,8 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class MassArmbandDouble_Colorbase;
+  class MassArmbandDouble_Colorbase;  
+  //Faction Armbands
 
   class Betrayed_Armband: MassArmbandDouble_Colorbase
 	{
@@ -149,23 +150,6 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\palf_armbend_co.paa",
 			"IAT_Custom_Armbands\data\palf_armbend_co.paa",
 			"IAT_Custom_Armbands\data\palf_armbend_co.paa"
-		};
-	};
-  class Generic_Bandit_Armband: MassArmbandDouble_Colorbase
-	{
-		scope=2;
-		visibilityModifier=0.85000002;
-    displayName="Skull and Crossbones Armband";
-    descriptionShort="Skull and Crossbones Armband";
-    heatIsolation=1;
-		color="black";
-		hiddenSelectionsTextures[]=
-		{
-			"IAT_Custom_Armbands\data\bandits_armbend_co.paa",
-			"IAT_Custom_Armbands\data\bandits_armbend_co.paa",
-			"IAT_Custom_Armbands\data\bandits_armbend_co.paa",
-			"IAT_Custom_Armbands\data\bandits_armbend_co.paa",
-			"IAT_Custom_Armbands\data\bandits_armbend_co.paa"
 		};
 	};
   class Settlers_Of_Portland_Deer_Armband: MassArmbandDouble_Colorbase
@@ -406,4 +390,354 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\wolfpack_armbend_co.paa"
 		};
 	};
+
+
+  // Craftable Armbands
+
+  class Generic_Bandit_Black_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Skull and Crossbones Armband";
+    descriptionShort="Skull and Crossbones Armband";
+    heatIsolation=1;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\bandit_black_armbend_co.paa",
+			"IAT_Custom_Armbands\data\bandit_black_armbend_co.paa",
+			"IAT_Custom_Armbands\data\bandit_black_armbend_co.paa",
+			"IAT_Custom_Armbands\data\bandit_black_armbend_co.paa",
+			"IAT_Custom_Armbands\data\bandit_black_armbend_co.paa"
+		};
+	};
+
+  // Medical
+  class Generic_FieldMedic_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Field Medic Armband";
+		descriptionShort="Field Medic Armband";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\medical_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical_armbend_co.paa"
+		};
+	};
+  class Generic_FieldMedic1_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Field Medic 1 Armband";
+		descriptionShort="Field Medic 1 Armband";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\medical1_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical1_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical1_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical1_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical1_armbend_co.paa"
+		};
+	};
+  class Generic_FieldMedic2_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Field Medic 2 Armband";
+		descriptionShort="Field Medic 2 Armband";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\medical2_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical2_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical2_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical2_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical2_armbend_co.paa"
+		};
+	};
+  class Generic_FieldMedic3_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Field Medic 3 Armband";
+		descriptionShort="Field Medic 3 Armband";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\medical3_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical3_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical3_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical3_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical3_armbend_co.paa"
+		};
+	};
+  class Generic_FieldMedic4_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Field Medic 4 Armband";
+		descriptionShort="Field Medic 4 Armband";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\medical4_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical4_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical4_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical4_armbend_co.paa",
+			"IAT_Custom_Armbands\data\medical4_armbend_co.paa"
+		};
+	};
+
+
+  // General Colors
+  class Generic_Black_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Black Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\black_armbend_co.paa",
+			"IAT_Custom_Armbands\data\black_armbend_co.paa",
+			"IAT_Custom_Armbands\data\black_armbend_co.paa",
+			"IAT_Custom_Armbands\data\black_armbend_co.paa",
+			"IAT_Custom_Armbands\data\black_armbend_co.paa"
+		};
+	};
+  class Generic_Dark_Blue_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="Dark Blue Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="dark blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\dark_blue_armbend_co.paa",
+			"IAT_Custom_Armbands\data\dark_blue_armbend_co.paa",
+			"IAT_Custom_Armbands\data\dark_blue_armbend_co.paa",
+			"IAT_Custom_Armbands\data\dark_blue_armbend_co.paa",
+			"IAT_Custom_Armbands\data\dark_blue_armbend_co.paa"
+		};
+	};
+  class Generic_Dark_Purple_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Dark Purple Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="purple";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\deep_purple_armbend_co.paa",
+			"IAT_Custom_Armbands\data\deep_purple_armbend_co.paa",
+			"IAT_Custom_Armbands\data\deep_purple_armbend_co.paa",
+			"IAT_Custom_Armbands\data\deep_purple_armbend_co.paa",
+			"IAT_Custom_Armbands\data\deep_purple_armbend_co.paa"
+		};
+	};
+  class Generic_Green_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Green Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="green";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\green_armbend_co.paa",
+			"IAT_Custom_Armbands\data\green_armbend_co.paa",
+			"IAT_Custom_Armbands\data\green_armbend_co.paa",
+			"IAT_Custom_Armbands\data\green_armbend_co.paa",
+			"IAT_Custom_Armbands\data\green_armbend_co.paa"
+		};
+	};
+  class Generic_Grey_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Grey Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="grey";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\grey_armbend_co.paa",
+			"IAT_Custom_Armbands\data\grey_armbend_co.paa",
+			"IAT_Custom_Armbands\data\grey_armbend_co.paa",
+			"IAT_Custom_Armbands\data\grey_armbend_co.paa",
+			"IAT_Custom_Armbands\data\grey_armbend_co.paa"
+		};
+	};
+  class Generic_Light_Blue_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Light Blue Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="blue";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\light_blue_armbend_co.paa",
+			"IAT_Custom_Armbands\data\light_blue_armbend_co.paa",
+			"IAT_Custom_Armbands\data\light_blue_armbend_co.paa",
+			"IAT_Custom_Armbands\data\light_blue_armbend_co.paa",
+			"IAT_Custom_Armbands\data\light_blue_armbend_co.paa"
+		};
+	};
+  class Generic_Light_Gray_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Light Gray Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="grey";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\light_grey_armbend_co.paa",
+			"IAT_Custom_Armbands\data\light_grey_armbend_co.paa",
+			"IAT_Custom_Armbands\data\light_grey_armbend_co.paa",
+			"IAT_Custom_Armbands\data\light_grey_armbend_co.paa",
+			"IAT_Custom_Armbands\data\light_grey_armbend_co.paa"
+		};
+	};
+  class Generic_Lime_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Lime Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="green";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\lime_armbend_co.paa",
+			"IAT_Custom_Armbands\data\lime_armbend_co.paa",
+			"IAT_Custom_Armbands\data\lime_armbend_co.paa",
+			"IAT_Custom_Armbands\data\lime_armbend_co.paa",
+			"IAT_Custom_Armbands\data\lime_armbend_co.paa"
+		};
+	};
+  class Generic_Orange_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="An Orange Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="orange";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\orange_armbend_co.paa",
+			"IAT_Custom_Armbands\data\orange_armbend_co.paa",
+			"IAT_Custom_Armbands\data\orange_armbend_co.paa",
+			"IAT_Custom_Armbands\data\orange_armbend_co.paa",
+			"IAT_Custom_Armbands\data\orange_armbend_co.paa"
+		};
+	};
+  class Generic_Pink_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Pink Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="pink";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\pink_armbend_co.paa",
+			"IAT_Custom_Armbands\data\pink_armbend_co.paa",
+			"IAT_Custom_Armbands\data\pink_armbend_co.paa",
+			"IAT_Custom_Armbands\data\pink_armbend_co.paa",
+			"IAT_Custom_Armbands\data\pink_armbend_co.paa"
+		};
+	};
+  class Generic_Purple_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Purple Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="purple";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\purple_armbend_co.paa",
+			"IAT_Custom_Armbands\data\purple_armbend_co.paa",
+			"IAT_Custom_Armbands\data\purple_armbend_co.paa",
+			"IAT_Custom_Armbands\data\purple_armbend_co.paa",
+			"IAT_Custom_Armbands\data\purple_armbend_co.paa"
+		};
+	};
+  class Generic_Red_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Red Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="red";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\red_armbend_co.paa",
+			"IAT_Custom_Armbands\data\red_armbend_co.paa",
+			"IAT_Custom_Armbands\data\red_armbend_co.paa",
+			"IAT_Custom_Armbands\data\red_armbend_co.paa",
+			"IAT_Custom_Armbands\data\red_armbend_co.paa"
+		};
+	};
+  class Generic_Teal_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Teal Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="teal";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\teal_armbend_co.paa",
+			"IAT_Custom_Armbands\data\teal_armbend_co.paa",
+			"IAT_Custom_Armbands\data\teal_armbend_co.paa",
+			"IAT_Custom_Armbands\data\teal_armbend_co.paa",
+			"IAT_Custom_Armbands\data\teal_armbend_co.paa"
+		};
+	};
+  class Generic_Yellow_Armband: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+    displayName="A Yellow Armband";
+    descriptionShort="This crudely crafted armband has been dyed unprofessionally and is freyed at the edges.";
+    heatIsolation=1;
+		color="yellow";
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Armbands\data\yellow_armbend_co.paa",
+			"IAT_Custom_Armbands\data\yellow_armbend_co.paa",
+			"IAT_Custom_Armbands\data\yellow_armbend_co.paa",
+			"IAT_Custom_Armbands\data\yellow_armbend_co.paa",
+			"IAT_Custom_Armbands\data\yellow_armbend_co.paa"
+		};
+	};
+
 };
