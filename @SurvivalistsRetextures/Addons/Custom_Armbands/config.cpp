@@ -24,7 +24,7 @@ class CfgPatches
     units[] = {};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]=	{ "DZ_Data", "DZ_Scripts", "DZ_Characters", "Mass_Textures" };
+		requiredAddons[]=	{ "DZ_Data", "DZ_Scripts", "DZ_Characters", "Mass_Textures", "Mass_Food" };
 	};
 };
 class CfgVehicles
@@ -755,5 +755,4 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\yellow_armbend_co.paa"
 		};
 	};
-
 };
