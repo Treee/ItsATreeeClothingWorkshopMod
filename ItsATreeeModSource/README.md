@@ -2,6 +2,16 @@
 
 This repository holds almost all of the source for my mods. .PAA, .PNG files are excluded because they can be generated from the .PDN files.
 
+## Attribution
+
+Many things in this repository are derivitaves of Bohemia and other mod makers. Without their pioneering work, I would not be able to learn as easily as I have. I hope to attribute everyone that has helped me learn as well as provides content that can be modified by other modders.
+
+- Mass
+- Windstrides
+- DaddyPrapor
+- Survivalists (Orin specifically)
+- All others, you know who you are.
+
 ## Making Your Own Texture Mod
 
 **Adapted from [Test_ClothingRetexture](https://github.com/BohemiaInteractive/DayZ-Samples/blob/master/Test_ClothingRetexture/config.cpp)**
