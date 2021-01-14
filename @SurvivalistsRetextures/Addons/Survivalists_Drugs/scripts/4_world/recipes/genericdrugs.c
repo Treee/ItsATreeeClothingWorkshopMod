@@ -269,8 +269,6 @@ class Drugs_Unpack_BagOfMeth_Large extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    // ItemBase.Cast(GetGame().CreateObjectEx("MassMeth_Medium","0 0 0",ECE_IN_INVENTORY));
-    // ItemBase.Cast(GetGame().CreateObjectEx("MassMeth_Medium","0 0 0",ECE_IN_INVENTORY));
 	}
 };
 
@@ -354,7 +352,5 @@ class Drugs_Unpack_BagOfMeth_Medium extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    // ItemBase.Cast(GetGame().CreateObjectEx("MassMeth_Small","0 0 0",ECE_IN_INVENTORY));
-    // ItemBase.Cast(GetGame().CreateObjectEx("MassMeth_Small","0 0 0",ECE_IN_INVENTORY));
 	}
 };
