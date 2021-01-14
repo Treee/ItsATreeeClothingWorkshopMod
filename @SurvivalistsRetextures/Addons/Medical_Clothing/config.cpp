@@ -12,20 +12,6 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class BDUJacket;
-  class IAT_Medical_BDUJacket: BDUJacket
-	{
-		scope=2;
-    heatIsolation=1;
-		visibilityModifier=0.69999999;
-		hiddenSelectionsTextures[]=
-		{
-			"IAT_Medical_Clothing\data\medical_bdu_jacket_co.paa",
-			"IAT_Medical_Clothing\data\medical_bdu_jacket_co.paa",
-			"IAT_Medical_Clothing\data\medical_bdu_jacket_co.paa"
-		};
-	};
-
   class M65Jacket_ColorBase;
   class IAT_FieldMedic_M65Jacket_Black: M65Jacket_ColorBase
 	{

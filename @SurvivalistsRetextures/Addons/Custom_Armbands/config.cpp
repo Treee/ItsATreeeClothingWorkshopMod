@@ -1,14 +1,30 @@
+class CfgMods
+{
+	class IAT_Custom_Armbands
+	{
+		type = "mod";
+		author = "ItsATreee";
+		name = "IAT_Custom_Armbands";
+		dir = "IAT_Custom_Armbands";
+		dependencies[] = {"Game","World","Mission"};
+		class defs
+		{
+			class worldScriptModule
+			{
+				value = "";
+				files[] = {"IAT_Custom_Armbands\scripts\4_world"};
+			};
+		};
+	};
+};
 class CfgPatches
 {
 	class IAT_Custom_Armbands
 	{
+    units[] = {};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"DZ_Characters",
-      "Mass_Textures"
-		};
+		requiredAddons[]=	{ "DZ_Data", "DZ_Scripts", "DZ_Characters", "Mass_Textures" };
 	};
 };
 class CfgVehicles
@@ -392,9 +408,9 @@ class CfgVehicles
 	};
 
 
-  // Craftable Armbands
+  // Craftable Armbands  
 
-  class Generic_Bandit_Black_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Bandit_Black: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -413,7 +429,7 @@ class CfgVehicles
 	};
 
   // Medical
-  class Generic_FieldMedic_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_FieldMedic: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -430,7 +446,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\medical_armbend_co.paa"
 		};
 	};
-  class Generic_FieldMedic1_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_FieldMedic1: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -447,7 +463,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\medical1_armbend_co.paa"
 		};
 	};
-  class Generic_FieldMedic2_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_FieldMedic2: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -464,7 +480,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\medical2_armbend_co.paa"
 		};
 	};
-  class Generic_FieldMedic3_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_FieldMedic3: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -481,7 +497,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\medical3_armbend_co.paa"
 		};
 	};
-  class Generic_FieldMedic4_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_FieldMedic4: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -501,7 +517,7 @@ class CfgVehicles
 
 
   // General Colors
-  class Generic_Black_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Black: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -518,7 +534,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\black_armbend_co.paa"
 		};
 	};
-  class Generic_Dark_Blue_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_DarkBlue: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -535,7 +551,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\dark_blue_armbend_co.paa"
 		};
 	};
-  class Generic_Dark_Purple_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_DarkPurple: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -552,7 +568,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\deep_purple_armbend_co.paa"
 		};
 	};
-  class Generic_Green_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Green: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -569,7 +585,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\green_armbend_co.paa"
 		};
 	};
-  class Generic_Grey_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Grey: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -586,7 +602,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\grey_armbend_co.paa"
 		};
 	};
-  class Generic_Light_Blue_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_LightBlue: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -603,7 +619,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\light_blue_armbend_co.paa"
 		};
 	};
-  class Generic_Light_Gray_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_LightGray: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -620,7 +636,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\light_grey_armbend_co.paa"
 		};
 	};
-  class Generic_Lime_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Lime: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -637,7 +653,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\lime_armbend_co.paa"
 		};
 	};
-  class Generic_Orange_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Orange: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -654,7 +670,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\orange_armbend_co.paa"
 		};
 	};
-  class Generic_Pink_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Pink: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -671,7 +687,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\pink_armbend_co.paa"
 		};
 	};
-  class Generic_Purple_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Purple: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -688,7 +704,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\purple_armbend_co.paa"
 		};
 	};
-  class Generic_Red_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Red: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -705,7 +721,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\red_armbend_co.paa"
 		};
 	};
-  class Generic_Teal_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Teal: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;
@@ -722,7 +738,7 @@ class CfgVehicles
 			"IAT_Custom_Armbands\data\teal_armbend_co.paa"
 		};
 	};
-  class Generic_Yellow_Armband: MassArmbandDouble_Colorbase
+  class GenericCraftedArmband_Yellow: MassArmbandDouble_Colorbase
 	{
 		scope=2;
 		visibilityModifier=0.85000002;

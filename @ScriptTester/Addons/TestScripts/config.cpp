@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class TestScripts_Scripts
+	class TestScripts
 	{
     units[] = {};
     weapons[] = {};
