@@ -30,6 +30,14 @@ class CfgVehicles
 			"IAT_Custom_Flags\data\collective_flag_co.paa"
 		};
 	};
+  class Oasis_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\Daze_flag_co.paa"
+		};
+	};
   class Duskar_Flag: Flag_Base
 	{
 		scope=2;
