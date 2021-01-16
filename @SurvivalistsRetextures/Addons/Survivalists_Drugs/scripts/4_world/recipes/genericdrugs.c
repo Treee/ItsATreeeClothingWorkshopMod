@@ -31,6 +31,11 @@ class Drugs_BagOfMeth_Small extends RecipeBase
 		
 		//ingredient 2	
 		InsertIngredient(1,"Heatpack"); //  secondary ingredient
+		InsertIngredient(1,"Chemlight_White"); //  secondary ingredient
+		InsertIngredient(1,"Chemlight_Red"); //  secondary ingredient
+		InsertIngredient(1,"Chemlight_Green"); //  secondary ingredient
+		InsertIngredient(1,"Chemlight_Blue"); //  secondary ingredient
+		InsertIngredient(1,"Chemlight_Yellow"); //  secondary ingredient
 		
 		m_IngredientAddHealth[1] = -1;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
