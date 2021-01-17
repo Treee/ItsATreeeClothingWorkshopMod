@@ -102,7 +102,7 @@ class CfgVehicles
 			"IAT_Custom_Flags\data\the_legion_flag_co.paa"
 		};
 	};
-  class The_Patriots_Flag: Flag_Base
+  class Republic_Of_Eden_Flag: Flag_Base
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=

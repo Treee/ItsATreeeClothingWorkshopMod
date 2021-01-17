@@ -671,12 +671,12 @@ class CfgVehicles
 	// 		"IAT_Custom_Armbands\data\the_new_order_armbend_co.paa"
 	// 	};
 	// };
-  // class The_Patriots_Armband: MassArmbandDouble_Colorbase
+  // class Republic_Of_Eden_Armband: MassArmbandDouble_Colorbase
 	// {
 	// 	scope=2;
 	// 	visibilityModifier=0.85000002;
-  //   displayName="The Patriots Armband";
-  //   descriptionShort="The Patriots Armband";
+  //   displayName="Republic of Eden Armband";
+  //   descriptionShort="Republic of Eden Armband";
   //   heatIsolation=1;
 	// 	color="red";
 	// 	hiddenSelectionsTextures[]=
