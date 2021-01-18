@@ -12,5 +12,8 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new Drugs_BagOfMeth_Large);
 		RegisterRecipe(new Drugs_Unpack_BagOfMeth_Large);
 
+    RegisterRecipe(new CraftZWeedPack);
+    RegisterRecipe(new AddJointToZWeedPack);
+    RegisterRecipe(new RemoveJointFromZWeedPack);
 	}
 };
