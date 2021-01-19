@@ -46,6 +46,22 @@ class CfgVehicles
 			"IAT_Custom_Flags\data\duskar_flag_co.paa"
 		};
 	};
+  class Stagnum_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\Stagnum_flag_co.paa"
+		};
+	};
+  class Guardians_Angels_Flag: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"IAT_Custom_Flags\data\Guardians_Angels_flag_co.paa"
+		};
+	};
   class Jamestown_Flag: Flag_Base
 	{
 		scope=2;

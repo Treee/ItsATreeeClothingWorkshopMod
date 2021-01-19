@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class Survivalists_Drugs
 	{
-    units[] = {};
+    units[] = {"ZWeed_Joint", "CigarettePack_ZWeed"};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=	{ "DZ_Data" };
@@ -10,11 +10,19 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class joint_mung;
-  class ZWeed_Joint: joint_mung
+  class Edible_Base;
+  class ZWeed_Joint: Edible_Base
   {
+    scope=2;
     displayName = "ZWeed Joint";
 		descriptionShort = "A joint for smoking...and getting baked";
+    model = "\MunghardsItems\joint\joint_g.p3d";
+    SingleUseActions[] = {509,510};
+		InteractActions[] = {1002,1003};
+    varTemperatureMax=100;
+    weight=0;
+    itemSize[]={1,2};
+    rotationFlags = 16;
     destroyOnEmpty = 1;
 		// varQuantityDestroyOnMin = 1;
     varQuantityInit = 1;

@@ -13,8 +13,8 @@ class UnPackCigarette: ActionContinuousBase
 	void UnPackCigarette()
 	{
 		m_CallbackClass = UnPackCigaretteCB;
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_EMPTYMAG;
-		m_CommandUIDProne = DayZPlayerConstants.CMD_ACTIONFB_EMPTYMAG;		
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_OPENITEM;
+		m_CommandUIDProne = DayZPlayerConstants.CMD_ACTIONFB_OPENITEM;		
 		m_SpecialtyWeight = UASoftSkillsWeight.ROUGH_HIGH;
 	}
 	
@@ -45,29 +45,23 @@ class UnPackCigarette: ActionContinuousBase
 		return "Unpack Joint";
 	}
 
-  override bool ActionConditionContinue( ActionData action_data )
-	{	
-    Print("ActionConditionContinue::" + action_data.m_MainItem);
-		return CanEmpty(action_data.m_MainItem);
-	}
-
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-    Print("ActionCondition::" + item);
 		return CanEmpty(item);
 	}
 		
 	override void OnFinishProgressServer( ActionData action_data )
-	{	
-    Print("OnFinishProgressServer::" + action_data.m_MainItem);
+	{
     action_data.m_MainItem.AddQuantity(-1);
-		GetGame().CreateObjectEx("joint_mung", "0 0 0", ECE_IN_INVENTORY);
-	}
 
-  override void OnFinishProgressClient( ActionData action_data )
-	{	
-    Print("OnFinishProgressClient::" + action_data.m_MainItem);
-    action_data.m_MainItem.AddQuantity(-1);
-		GetGame().CreateObjectEx("joint_mung", "0 0 0", ECE_IN_INVENTORY);
+    EntityAI entity = action_data.m_Player.GetInventory().CreateInInventory("ZWeed_Joint");
+    if( !entity )
+		{
+			vector m4[4];
+			action_data.m_Player.GetTransformWS(m4);
+			InventoryLocation target_gnd = new InventoryLocation;
+			target_gnd.SetGround(null, m4);
+			entity = GameInventory.LocationCreateEntity(target_gnd, "ZWeed_Joint",ECE_IN_INVENTORY,RF_DEFAULT);
+		}
 	}
 };
