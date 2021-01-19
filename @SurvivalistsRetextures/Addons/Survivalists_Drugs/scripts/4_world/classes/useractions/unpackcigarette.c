@@ -54,14 +54,10 @@ class UnPackCigarette: ActionContinuousBase
 	{
     action_data.m_MainItem.AddQuantity(-1);
 
-    EntityAI entity = action_data.m_Player.GetInventory().CreateInInventory("ZWeed_Joint");
-    if( !entity )
-		{
-			vector m4[4];
-			action_data.m_Player.GetTransformWS(m4);
-			InventoryLocation target_gnd = new InventoryLocation;
-			target_gnd.SetGround(null, m4);
-			entity = GameInventory.LocationCreateEntity(target_gnd, "ZWeed_Joint",ECE_IN_INVENTORY,RF_DEFAULT);
-		}
+    vector m4[4];
+    action_data.m_Player.GetTransformWS(m4);
+    InventoryLocation target_gnd = new InventoryLocation;
+    target_gnd.SetGround(null, m4);
+    EntityAI entity = GameInventory.LocationCreateEntity(target_gnd, "ZWeed_Joint",ECE_IN_INVENTORY,RF_DEFAULT);
 	}
 };
