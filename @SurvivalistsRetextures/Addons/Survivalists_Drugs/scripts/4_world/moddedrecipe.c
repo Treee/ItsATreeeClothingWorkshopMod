@@ -14,6 +14,6 @@ modded class PluginRecipesManagerBase extends PluginBase
 
     RegisterRecipe(new CraftZWeedPack);
     RegisterRecipe(new AddJointToZWeedPack);
-    // RegisterRecipe(new RemoveJointFromZWeedPack);
+    RegisterRecipe(new AddJointPackToZDrybag);
 	}
 };

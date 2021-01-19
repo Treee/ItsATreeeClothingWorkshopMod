@@ -5,7 +5,7 @@ class CfgPatches
     units[] = {"ZWeed_Joint", "CigarettePack_ZWeed"};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]=	{ "DZ_Data" };
+		requiredAddons[]=	{ "DZ_Data", "DZ_Characters" };
 	};
 };
 class CfgVehicles
@@ -39,12 +39,42 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
     InteractActions[] = {517};
+    varTemperatureMax=100;
 		displayName="Pack of ZWeed Joints";
     descriptionShort="Just looking at one of these gives you a contact high.";
 		hiddenSelectionsTextures[]=
 		{
 			"DZ\gear\medical\Data\pack_of_cigs_partyzanka_co.paa",
 			"DZ\gear\medical\Data\pack_of_cigs_partyzanka_co.paa"
+		};
+	};
+
+  class Inventory_Base;
+  class Bag_CigarettePack_ZWeed_DryBag_Black: Inventory_Base
+	{
+		scope=2;
+		displayName="Bag of ZWeed JointPacks";
+    descriptionShort="A big bag of joint packs!";
+		model="\dz\characters\backpacks\drybag_g.p3d";
+    attachments[]={};
+    varTemperatureMax=100;
+    itemSize[]={5,6};
+    itemsCargoSize[]={0,0};
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+    InteractActions[] = {517};
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"DZ\characters\backpacks\data\DryBag_black_co.paa",
+			"DZ\characters\backpacks\data\DryBag_black_co.paa",
+			"DZ\characters\backpacks\data\DryBag_black_co.paa"
 		};
 	};
 
