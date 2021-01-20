@@ -36,7 +36,7 @@ class UnPackCigaretteBag: ActionContinuousBase
 
   bool CanEmpty(ItemBase item)
 	{
-		Bag_CigarettePack_ZWeed_DryBag_Black jointPackBag;
+		Bag_CigarettePack_ZWeed_DryBag_ColorBase jointPackBag;
 		return ( item && Class.CastTo(jointPackBag, item) && jointPackBag.GetQuantity() > 0 );
 	}
 		
