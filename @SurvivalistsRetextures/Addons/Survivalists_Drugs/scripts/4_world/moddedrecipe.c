@@ -6,11 +6,11 @@ modded class PluginRecipesManagerBase extends PluginBase
 		// UnregisterRecipe("CraftStoneKnife");	// Removing an existing recipe
     
     // Craft Drugs
-		RegisterRecipe(new Drugs_BagOfMeth_Small);
-		RegisterRecipe(new Drugs_BagOfMeth_Medium);
-		RegisterRecipe(new Drugs_Unpack_BagOfMeth_Medium);
-		RegisterRecipe(new Drugs_BagOfMeth_Large);
-		RegisterRecipe(new Drugs_Unpack_BagOfMeth_Large);
+		// RegisterRecipe(new Drugs_BagOfMeth_Small);
+		// RegisterRecipe(new Drugs_BagOfMeth_Medium);
+		// RegisterRecipe(new Drugs_Unpack_BagOfMeth_Medium);
+		// RegisterRecipe(new Drugs_BagOfMeth_Large);
+		// RegisterRecipe(new Drugs_Unpack_BagOfMeth_Large);
 
     RegisterRecipe(new CraftZWeedPack);
     RegisterRecipe(new AddJointToZWeedPack);
