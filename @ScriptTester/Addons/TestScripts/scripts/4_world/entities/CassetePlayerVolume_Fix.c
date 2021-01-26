@@ -4,16 +4,17 @@ modded class GGRadio_Radio_Base
 	{
     super.SetActions();
 
-		AddAction( IncreaseVolume );
-		AddAction( DecreaseVolume );
+		AddAction(IncreaseVolume);
+		AddAction(DecreaseVolume);
 		
-		AddAction( TurnOnRadio );
-		AddAction( TurnOffRadio );
-
-		AddAction( ActionTurnOffTransmitter );
+		AddAction(TurnOnRadio);
+		AddAction(TurnOffRadio);
 
     RemoveAction(ActionTurnOnWhileInHands);
     RemoveAction(ActionTurnOffWhileInHands);
+    RemoveAction(ActionTurnOnWhileOnGround);
+		RemoveAction(ActionTurnOffWhileOnGround);
+		RemoveAction(ActionTurnOnSpotlight);
 	}
 
   void IncreaseVolume() {
