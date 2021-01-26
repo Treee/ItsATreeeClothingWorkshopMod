@@ -53,4 +53,27 @@ class CfgVehicles
 		itemSize[] = {2,2};
 		weight = 120;
 	};
+
+  // class SodaCan_ColorBase
+  // {
+  //   inventorySlot[]=
+	// 	{
+	// 		"VestGrenadeA",
+	// 		"VestGrenadeB",
+	// 		"VestGrenadeC",
+	// 		"VestGrenadeD",
+	// 		"tripWireAttachment"
+	// 	};
+  // }
+  // class Inventory_Base;
+  // class GP5GasMask_Filter: Inventory_Base
+	// {
+	// 	inventorySlot[]={ "Mask", "GasMaskFilter" };
+	// };
+
+  // class Clothing;
+  // class GP5GasMask: Clothing
+	// {
+  //   attachments[]={ "Mask", "GasMaskFilter" };
+  // }
 };
