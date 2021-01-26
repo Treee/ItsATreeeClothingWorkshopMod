@@ -37,11 +37,6 @@ class CfgMods
 };
 class CfgVehicles
 { 
-  class Radio;
-  class Test_Radio: Radio
-	{
-		inventorySlot[] = {"MassRadio","walkietalkie", "Belt_Left", "flashlight"};
-	};
   class MassMeth;
   class MyMeth: MassMeth
 	{

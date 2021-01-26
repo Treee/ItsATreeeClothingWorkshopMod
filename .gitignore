@@ -17,7 +17,7 @@
 !@FacePaints
 !@OneWayMuteTransmitter
 !@ScriptTester
-!@SurvivalistsRetextures
+!@SurvivalistsMods
 /ItsATreeeModSource/src/**/*.png
 !/ItsATreeeModSource/src/dayz_tools/**/*.png
 !/ItsATreeeModSource/src/**/preview_image.png

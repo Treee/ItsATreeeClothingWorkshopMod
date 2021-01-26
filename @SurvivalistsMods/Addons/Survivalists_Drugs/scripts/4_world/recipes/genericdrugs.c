@@ -44,7 +44,7 @@
 // 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 // 		//result
-// 		AddResult("MassMeth_Small");	// recipe result
+// 		AddResult("SRP_MassMeth_Small");	// recipe result
 		
 // 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
 // 		m_ResultSetQuantity[0] = 1;			// result quantity
@@ -107,7 +107,7 @@
 // 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 // 		//result
-// 		AddResult("MassMeth_Medium");	// recipe result
+// 		AddResult("SRP_MassMeth_Medium");	// recipe result
 		
 // 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
 // 		m_ResultSetQuantity[0] = 1;			// result quantity
@@ -170,7 +170,7 @@
 // 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 // 		//result
-// 		AddResult("MassMeth_Large");	// recipe result
+// 		AddResult("SRP_MassMeth_Large");	// recipe result
 		
 // 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
 // 		m_ResultSetQuantity[0] = 1;			// result quantity
@@ -214,7 +214,7 @@
 // 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		
 // 		//ingredient 1  
-// 		InsertIngredient(0,"MassMeth_Large");	// primary ingredient
+// 		InsertIngredient(0,"SRP_MassMeth_Large");	// primary ingredient
 		
 // 		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
 // 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
@@ -243,7 +243,7 @@
 // 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 // 		//result 1
-// 		AddResult("MassMeth_Medium");	// recipe result
+// 		AddResult("SRP_MassMeth_Medium");	// recipe result
 		
 // 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
 // 		m_ResultSetQuantity[0] = 1;			// result quantity
@@ -255,7 +255,7 @@
 // 		m_ResultReplacesIngredient[0] = 1;	// -1 = do nothing
 
 //     //result 2
-// 		AddResult("MassMeth_Medium");	// recipe result
+// 		AddResult("SRP_MassMeth_Medium");	// recipe result
 		
 // 		m_ResultSetFullQuantity[1] = -1;	// -1 = do nothing
 // 		m_ResultSetQuantity[1] = 1;			// result quantity
@@ -298,7 +298,7 @@
 // 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		
 // 		//ingredient 1  
-// 		InsertIngredient(0,"MassMeth_Medium");	// primary ingredient
+// 		InsertIngredient(0,"SRP_MassMeth_Medium");	// primary ingredient
 		
 // 		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
 // 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
@@ -326,7 +326,7 @@
 // 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 // 		//result 1
-// 		AddResult("MassMeth_Small");	// recipe result
+// 		AddResult("SRP_MassMeth_Small");	// recipe result
 		
 // 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
 // 		m_ResultSetQuantity[0] = -1;			// result quantity
@@ -338,7 +338,7 @@
 // 		m_ResultReplacesIngredient[0] = 1;	// -1 = do nothing
 
 //     //result 2
-// 		AddResult("MassMeth_Small");	// recipe result
+// 		AddResult("SRP_MassMeth_Small");	// recipe result
 		
 // 		m_ResultSetFullQuantity[1] = -1;	// -1 = do nothing
 // 		m_ResultSetQuantity[1] = -1;			// result quantity
