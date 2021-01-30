@@ -4,13 +4,7 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
-		actions.Insert(ActionDrugSelf1);
-    actions.Insert(ActionDrugOthers1);
-    
-    actions.Insert(IncreaseVolume);
-    actions.Insert(DecreaseVolume);
-
-    actions.Insert(TurnOnRadio);
-    actions.Insert(TurnOffRadio);
+    actions.Insert(RadioInterAction);
+    actions.Insert(SwitchRadioAction);
 	}
 }

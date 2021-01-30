@@ -4,12 +4,15 @@ modded class GGRadio_Radio_Base
 	{
     super.SetActions();
 
-		AddAction(IncreaseVolume);
-		AddAction(DecreaseVolume);
-		
-		AddAction(TurnOnRadio);
-		AddAction(TurnOffRadio);
+    // make it placeable
+    AddAction(ActionTogglePlaceObject);
+    AddAction(ActionPlaceObject);
 
+    // actions for the radio
+    AddAction(SwitchRadioAction);
+    AddAction(RadioInterAction);
+
+    // remove actions on the base item
     RemoveAction(ActionTurnOnWhileInHands);
     RemoveAction(ActionTurnOffWhileInHands);
     RemoveAction(ActionTurnOnWhileOnGround);
@@ -23,8 +26,11 @@ modded class GGRadio_Radio_Base
   void DecreaseVolume() {
     m_ActiveSound.SetSoundVolume(m_ActiveSound.GetSoundVolume() - 0.25);
   }
-
   float GetVolume() {
     return m_ActiveSound.GetSoundVolume();
+  }
+  override bool IsDeployable() 
+  {
+    return true;
   }
 };
