@@ -32,7 +32,7 @@ class SwitchRadioAction: ActionSingleUseBase
 	
 	override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-    // // if the current action selection is is to turn on AND the radio is off
+    // if the current action selection is is to turn on AND the radio is off
     if (player.GetRadioInterActionData().GetSelectedIndex() == 0 && !player.GetRadioInterActionData().CanTurnOn(item))
     {
       return true;
