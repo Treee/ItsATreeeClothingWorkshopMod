@@ -4,9 +4,9 @@ modded class GGRadio_Radio_Base
 	{
     super.SetActions();
 
-    // make it placeable
-    AddAction(ActionTogglePlaceObject);
-    AddAction(ActionPlaceObject);
+    // make it placeable, doesnt work (breaks everything else)
+    // AddAction(ActionTogglePlaceObject);
+    // AddAction(ActionPlaceObject);
 
     // actions for the radio
     AddAction(SwitchRadioAction);
@@ -29,8 +29,8 @@ modded class GGRadio_Radio_Base
   float GetVolume() {
     return m_ActiveSound.GetSoundVolume();
   }
-  override bool IsDeployable() 
-  {
-    return true;
-  }
+  // override bool IsDeployable() 
+  // {
+  //   return true;
+  // }
 };
