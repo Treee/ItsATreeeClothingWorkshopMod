@@ -158,9 +158,19 @@ class RadioInterActionData
     }
     else if (m_selectedActionIndex == 2) {
       RaiseVolume(item);
+      // if we have raised the volume to the max
+      if (!CanIncreaseVolume(item))
+      { // set the next menu action to decrease volume
+        m_selectedActionIndex = 3
+      }
     }
     else if (m_selectedActionIndex == 3) {
       LowerVolume(item);
+      // if we have decreased the volume to the min
+      if (!CanDecreaseVolume(item))
+      { // set the next menu action to increase volume
+        m_selectedActionIndex = 2
+      }
     }
 	}
 
