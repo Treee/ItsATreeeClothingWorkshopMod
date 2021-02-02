@@ -5,9 +5,19 @@ modded class GesturesMenu
     super.GetGestureItems(gesture_items, category);
     switch (category)
     {
-      case GestureCategories.CATEGORY_2: //STR_USRACT_EMOTE_CATEGORY_TAUNTS
+      case GestureCategories.CATEGORIES:
       {
-        gesture_items.Insert(new GestureMenuItem(EmoteConstants.ID_EMOTE_LAUGH, "Laugh", GestureCategories.CATEGORY_2));
+        gesture_items.Insert( new GestureMenuItem( GestureCategories.CATEGORY_5, "Custom", 	GestureCategories.CATEGORIES ) );
+        break;
+      }
+      case GestureCategories.CATEGORY_5: //STR_USRACT_EMOTE_CATEGORY_TAUNTS
+      {
+        gesture_items.Insert(new GestureMenuItem(EmoteConstants.ID_EMOTE_LAUGH, "Laugh", GestureCategories.CATEGORY_5));
+        gesture_items.Insert(new GestureMenuItem(EmoteConstants.ID_EMOTE_COUGH, "Cough", GestureCategories.CATEGORY_5));
+        gesture_items.Insert(new GestureMenuItem(EmoteConstants.ID_EMOTE_SNEEZE, "Sneeze", GestureCategories.CATEGORY_5));
+        gesture_items.Insert(new GestureMenuItem(EmoteConstants.ID_EMOTE_SHIVER, "Shiver", GestureCategories.CATEGORY_5));
+        gesture_items.Insert(new GestureMenuItem(EmoteConstants.ID_EMOTE_UNCONSCIOUS, "Unconscious", GestureCategories.CATEGORY_5));
+        gesture_items.Insert(new GestureMenuItem(EmoteConstants.ID_EMOTE_BREAK_LEG, "Break Leg", GestureCategories.CATEGORY_5));
         break;
       }
     }

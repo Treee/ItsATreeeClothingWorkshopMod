@@ -1,64 +1,88 @@
 modded class EmoteManager
 {
-    private bool m_PrevIsLayDown;
-    bool m_IsLayDown;
+  private bool m_PrevIsLayDown;
+  bool m_IsLayDown;
 
-    private void SetSynchDirtyIfLayDownChanged()
+  bool m_IsUnconscious;
+
+  private void SetSynchDirtyIfChanged()
+  {
+    if ( m_PrevIsLayDown != m_IsLayDown )
     {
-      if ( m_PrevIsLayDown != m_IsLayDown )
-      {
-        m_Player.SetSynchDirty();
-      }
+      m_Player.SetSynchDirty();
     }
+  }
 
-    override void Update( float deltaT )
+  override void Update( float deltaT )
+  {
+    m_PrevIsLayDown = m_IsLayDown;
+    super.Update( deltaT );
+    SetSynchDirtyIfChanged();
+  }
+
+  override void OnEmoteEnd()
+  {
+    Print("OnEmoteEnd::CurrentGesture: " + m_CurrentGestureID);
+    m_PrevIsLayDown = m_IsLayDown;
+    super.OnEmoteEnd();      
+    if (m_PrevIsLayDown)
     {
-      m_PrevIsLayDown = m_IsLayDown;
-      super.Update( deltaT );
-      SetSynchDirtyIfLayDownChanged();
+      EndLayDownRequest();
     }
-
-    override void OnEmoteEnd()
+    else if (m_IsUnconscious)
     {
-      m_PrevIsLayDown = m_IsLayDown;
-      super.OnEmoteEnd();      
-      if (m_PrevIsLayDown)
-      {
-        EndLayDownRequest();
-      }
-      SetSynchDirtyIfLayDownChanged();
+      EndUnconsciousRequest();
     }
+    SetSynchDirtyIfChanged();
+  }
 
-    override bool PlayEmote( int id )
+  override bool PlayEmote( int id )
+  {
+    bool ret_val = super.PlayEmote( id );
+    if (m_CurrentGestureID == EmoteConstants.ID_EMOTE_LYINGDOWN && m_IsLayDown)
     {
-      m_PrevIsLayDown = m_IsLayDown;
-      bool ret_val = super.PlayEmote( id );
-      if (m_CurrentGestureID == EmoteConstants.ID_EMOTE_LYINGDOWN && m_IsLayDown)
-      {
-        StartLayDownRequest();
-      }
-      SetSynchDirtyIfLayDownChanged();
-      return ret_val;
+      StartLayDownRequest();
     }
-
-    void StartLayDownRequest()
+    else if (m_CurrentGestureID == EmoteConstants.ID_EMOTE_UNCONSCIOUS && m_IsUnconscious)
     {
-      m_PrevIsLayDown = m_IsLayDown;    
-      // Print("PlayEmote::SLEEPING! COVER HEAD");
-      PPEffects.Init();
-      PPEffects.EnableBurlapSackBlindness();			
-      m_Player.SetMasterAttenuation("BurlapSackAttenuation"); 
+      StartUnconsciousRequest();
     }
+    SetSynchDirtyIfChanged();
+    return ret_val;
+  }
 
-    void EndLayDownRequest()
-    {
-        // Print("OnEmoteEnd::NOT SLEEPING!! UNCOVER HEAD");
-        PPEffects.Init();
-        PPEffects.DisableBurlapSackBlindness();			
-        m_Player.SetInventorySoftLock(false);
-        m_Player.SetMasterAttenuation("");
-        m_IsLayDown = false;
-    }
+  void StartLayDownRequest()
+  {
+    m_PrevIsLayDown = m_IsLayDown;
+    PPEffects.Init();
+    PPEffects.EnableBurlapSackBlindness();			
+    m_Player.SetMasterAttenuation("BurlapSackAttenuation"); 
+    // Print("PlayEmote::SLEEPING! COVER HEAD");
+  }
 
+  void EndLayDownRequest()
+  {
+    PPEffects.Init();
+    PPEffects.DisableBurlapSackBlindness();			
+    m_Player.SetInventorySoftLock(false);
+    m_Player.SetMasterAttenuation("");
+    m_IsLayDown = false;
+    // Print("OnEmoteEnd::NOT SLEEPING!! UNCOVER HEAD");
+  }
 
+  void StartUnconsciousRequest()
+  {
+    // shock the player for 0 damage
+    m_Player.SetHealth("", "Shock", 0);
+    m_Player.GetModifiersManager().ActivateModifier(eModifiers.MDF_UNCONSCIOUSNESS);
+    // m_Player.RequestUnconsciousness(true);
+    // Print("StartUnconsciousRequest");
+  }
+  void EndUnconsciousRequest()
+  {
+    m_Player.GetModifiersManager().DeactivateModifier(eModifiers.MDF_UNCONSCIOUSNESS);
+    m_IsUnconscious = false;
+    // m_Player.RequestUnconsciousness(false); 
+    // Print("EndUnconsciousRequest");
+  }
 }
