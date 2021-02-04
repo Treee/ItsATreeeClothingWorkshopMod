@@ -2,7 +2,7 @@ modded class ActionSmokeCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime(2.5);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(5);
 	}
 };
 

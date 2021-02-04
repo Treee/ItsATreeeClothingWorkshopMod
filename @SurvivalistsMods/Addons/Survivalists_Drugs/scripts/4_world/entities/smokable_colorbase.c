@@ -1,9 +1,9 @@
-class ZWeed_Joint extends Edible_Base {
+class SRP_Smokable_ColorBase extends Edible_Base {
 	Particle 				m_SmokeParticle;
 	vector 					m_ParticleLocalPos = Vector(0.1, 1.52, 0.25);
 		
 	
-	void ZWeed_Joint()
+	void SRP_Smokable_ColorBase()
 	{	
 		init();	
 	}
@@ -18,7 +18,7 @@ class ZWeed_Joint extends Edible_Base {
     }			
 	}
 
-	void ~ZWeed_Joint()
+	void ~SRP_Smokable_ColorBase()
 	{
 		StopAllParticles();
 	}
@@ -37,3 +37,6 @@ class ZWeed_Joint extends Edible_Base {
 		AddAction(ActionSmoke);
 	}	
 };
+
+class SRP_Smokable_ZWeed extends SRP_Smokable_ColorBase {};
+class SRP_Smokable_Cigarette extends SRP_Smokable_ColorBase {};

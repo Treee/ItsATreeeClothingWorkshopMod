@@ -3,7 +3,8 @@ modded class ActionConstructor
   override void RegisterActions(TTypenameArray actions)
   {
     super.RegisterActions(actions);
-    actions.Insert(UnPackCigarette);   
-    actions.Insert(UnPackCigaretteBag);
+    
+    actions.Insert(SRP_UnPackDrugPack);   
+    actions.Insert(SRP_UnPackDrugCarton);
   }
 };

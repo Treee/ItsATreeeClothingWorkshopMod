@@ -1,4 +1,4 @@
-class UnPackCigaretteCB : ActionContinuousBaseCB
+class SRP_UnPackDrugPackCB : ActionContinuousBaseCB
 {
 	private const float REPEAT_AFTER_SEC = 1.5;
 	
@@ -8,11 +8,11 @@ class UnPackCigaretteCB : ActionContinuousBaseCB
 	}
 };
 
-class UnPackCigarette: ActionContinuousBase
+class SRP_UnPackDrugPack: ActionContinuousBase
 {
-	void UnPackCigarette()
+	void SRP_UnPackDrugPack()
 	{
-		m_CallbackClass = UnPackCigaretteCB;
+		m_CallbackClass = SRP_UnPackDrugPackCB;
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_OPENITEM;
 		m_CommandUIDProne = DayZPlayerConstants.CMD_ACTIONFB_OPENITEM;		
 		m_SpecialtyWeight = UASoftSkillsWeight.ROUGH_HIGH;
@@ -36,13 +36,13 @@ class UnPackCigarette: ActionContinuousBase
 
   bool CanEmpty(ItemBase item)
 	{
-		CigarettePack_ZWeed jointPack;
-		return ( item && Class.CastTo(jointPack, item) && jointPack.GetQuantity() > 0 );
+		SRP_DrugPack_ColorBase drugPack;
+		return ( item && Class.CastTo(drugPack, item) && drugPack.GetQuantity() > 0 );
 	}
 		
 	override string GetText()
 	{
-		return "Unpack Joint";
+		return "Unpack";
 	}
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
@@ -58,6 +58,12 @@ class UnPackCigarette: ActionContinuousBase
     action_data.m_Player.GetTransformWS(m4);
     InventoryLocation target_gnd = new InventoryLocation;
     target_gnd.SetGround(null, m4);
-    EntityAI entity = GameInventory.LocationCreateEntity(target_gnd, "ZWeed_Joint",ECE_IN_INVENTORY,RF_DEFAULT);
+    
+    EntityAI entity;
+    if (action_data.m_MainItem.ClassName() == "SRP_DrugPack_ZWeed"){
+      entity = GameInventory.LocationCreateEntity(target_gnd, "SRP_Smokable_ZWeed",ECE_IN_INVENTORY,RF_DEFAULT);
+    } else if (action_data.m_MainItem.ClassName() == "SRP_DrugPack_Cigarette") {
+      entity = GameInventory.LocationCreateEntity(target_gnd, "SRP_Smokable_Cigarette",ECE_IN_INVENTORY,RF_DEFAULT);
+    }
 	}
 };
