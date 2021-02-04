@@ -23,6 +23,3 @@ modded class PlayerBase
 		}
 	}
 };
-
-
-

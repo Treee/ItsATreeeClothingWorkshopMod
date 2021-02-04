@@ -48,13 +48,13 @@ class RadioInterAction: ActionContinuousBase
 
   override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    Print("RadioInterAction::ActionCondition: " + item);
+    // Print("RadioInterAction::ActionCondition: " + item);
     return player.GetRadioInterActionData().RadioActionCondition(item);
   }
 
   override bool ActionConditionContinue( ActionData action_data )
 	{
-    Print("RadioInterAction::ActionConditionContinue: " + action_data);    
+    // Print("RadioInterAction::ActionConditionContinue: " + action_data);    
     // only continue if it truly can AND we have a looping action
 		return action_data.m_Player.GetRadioInterActionData().RadioActionCondition(action_data.m_MainItem);
 	}
@@ -92,14 +92,14 @@ class RadioInterAction: ActionContinuousBase
 	
 	override void OnFinishProgressServer( ActionData action_data )
 	{
-    Print("RadioInterAction::OnFinishProgressServer: " + action_data);
-    action_data.m_Player.GetRadioInterActionData().DoInteraction(action_data.m_MainItem);    
+    // Print("RadioInterAction::OnFinishProgressServer: " + action_data);
+    action_data.m_Player.GetRadioInterActionData().DoInteraction(action_data);    
 	}
 	
 	override void OnFinishProgressClient( ActionData action_data )
 	{
-    Print("RadioInterAction::OnFinishProgressClient: " + action_data);
-    action_data.m_Player.GetRadioInterActionData().DoInteraction(action_data.m_MainItem);
+    // Print("RadioInterAction::OnFinishProgressClient: " + action_data);
+    action_data.m_Player.GetRadioInterActionData().DoInteraction(action_data);
 	}
 	
 	override void WriteToContext(ParamsWriteContext ctx, ActionData action_data)

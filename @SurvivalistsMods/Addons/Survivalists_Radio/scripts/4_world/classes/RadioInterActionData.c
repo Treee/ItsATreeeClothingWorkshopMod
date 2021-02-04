@@ -30,17 +30,23 @@ class RadioInterActionData
         m_selectedActionIndex = 3;
       }
       else 
-      { // set the current action to "Turn Off"
-        m_selectedActionIndex = 1;
+      { 
+        // set the current action to "Turn Off"
+        // m_selectedActionIndex = 1; commented out because we added placing objects in the list
+        m_selectedActionIndex = 4
       }
     }// if the current action is "Decrease Volume"
     else if (m_selectedActionIndex == 3) 
     {
+      m_selectedActionIndex = 4;
+    }
+    else if (m_selectedActionIndex == 4){
+      m_selectedActionIndex = 5;
+    }
+    else if (m_selectedActionIndex == 5){
       m_selectedActionIndex = 1;
     }
-
-    // m_selectedActionIndex = (m_selectedActionIndex + 1) % numRadioActions;
-    Print("RadioInterActionData::SetNextAction: " + m_selectedActionIndex);
+    // Print("RadioInterActionData::SetNextAction: " + m_selectedActionIndex);
 	}
 
 
@@ -50,12 +56,12 @@ class RadioInterActionData
 	void ResetActionIndexes()
 	{
 		m_selectedActionIndex = 0;
-    Print("RadioInterActionData::ResetActionIndexes: " + m_selectedActionIndex);
+    // Print("RadioInterActionData::ResetActionIndexes: " + m_selectedActionIndex);
 	}
 
   string GetActionPrompt() 
   {
-    Print("RadioInterActionData::GetActionPrompt: " + m_selectedActionIndex);
+    // Print("RadioInterActionData::GetActionPrompt: " + m_selectedActionIndex);
     if (m_selectedActionIndex == 0) {
       return "#turn_on";
     } 
@@ -68,25 +74,31 @@ class RadioInterActionData
     else if (m_selectedActionIndex == 3) {
       return "Decrease Volume";
     }
+    else if (m_selectedActionIndex == 4) {
+      return "#toggle_placing"
+    }
+    else if (m_selectedActionIndex == 5) {
+      return "#place_object"
+    }
     return "Default Radio InterAction Prompt";
   }
 
   int GetSelectedIndex()
   {
-    Print("RadioInterActionData::GetSelectedIndex: " + m_selectedActionIndex);
+    // Print("RadioInterActionData::GetSelectedIndex: " + m_selectedActionIndex);
     return m_selectedActionIndex;
   }
 
   bool IsSingleLoop()
   { // turn on and off should be non repeating
-    return (m_selectedActionIndex == 0 || m_selectedActionIndex == 1);
+    return (m_selectedActionIndex == 0 || m_selectedActionIndex == 1 || m_selectedActionIndex == 4 || m_selectedActionIndex == 5);
   }
 
   /* Active Conditions */
 
   bool RadioActionCondition(ItemBase item) 
   {
-    Print("RadioInterActionData::RadioActionCondition: " + m_selectedActionIndex);
+    // Print("RadioInterActionData::RadioActionCondition: " + m_selectedActionIndex);
     if (m_selectedActionIndex == 0) {
       return CanTurnOn(item);
     } 
@@ -99,6 +111,12 @@ class RadioInterActionData
     else if (m_selectedActionIndex == 3) {
       return CanDecreaseVolume(item);
     }
+    else if (m_selectedActionIndex == 4) {
+      return CanTogglePlacement(item);
+    } 
+    else if (m_selectedActionIndex == 5) {
+      return CanPlaceObject(item);
+    } 
     return false;
   }
 
@@ -106,7 +124,7 @@ class RadioInterActionData
   {
     if ( item.HasEnergyManager() && !item.GetCompEM().IsWorking() )
     {
-      Print("Has energy manager and is not currently working");
+      // Print("Has energy manager and is not currently working");
       return true;
 		}		
 		return false;
@@ -116,7 +134,7 @@ class RadioInterActionData
   {
     if ( item.HasEnergyManager() && item.GetCompEM().IsWorking() )
     {
-      Print("Has energy manager and is currently working");
+      // Print("Has energy manager and is currently working");
       return true;
 		}		
 		return false;
@@ -128,7 +146,7 @@ class RadioInterActionData
     Class.CastTo(radio, item);
     // Print("Current Radio Volume" + radio.GetVolume());
     if (radio.IsPlaying() && radio.GetVolume() < 1 ) {
-      Print("low volume!! increase it!");
+      // Print("low volume!! increase it!");
       return true;
     }
 		return false;
@@ -140,16 +158,25 @@ class RadioInterActionData
     Class.CastTo(radio, item);
     // Print("Current Radio Volume" + radio.GetVolume());
     if (radio.IsPlaying() && radio.GetVolume() > 0 ) {
-      Print("high volume!! Decrease it!");
+      // Print("high volume!! Decrease it!");
       return true;
     }
 		return false;
   }
 
+  bool CanTogglePlacement(ItemBase item)
+  {
+    return true;
+  }
+
+  bool CanPlaceObject(ItemBase item) {
+    return true;
+  }
+
   /* Execution Functionality */
-  void DoInteraction(ItemBase item)
+  void DoInteraction(ItemBase item, PlayerBase player)
 	{
-    Print("RadioInterActionData::DoInteraction: " + m_selectedActionIndex);
+    // Print("RadioInterActionData::DoInteraction: " + m_selectedActionIndex);
     if (m_selectedActionIndex == 0) {
       TurnOn(item);
     } 
@@ -171,6 +198,14 @@ class RadioInterActionData
       { // set the next menu action to increase volume
         m_selectedActionIndex = 2
       }
+    }
+    else if (m_selectedActionIndex == 4) {
+      TogglePlaceObject(player);
+      m_selectedActionIndex = 5;
+    }
+    else if (m_selectedActionIndex == 5) {
+      PlaceObject(player, item);
+      ResetActionIndexes();
     }
 	}
 
@@ -200,5 +235,37 @@ class RadioInterActionData
     GGRadio_Radio_Base radio;
     Class.CastTo(radio, item);
     radio.DecreaseVolume();
+  }
+
+  void TogglePlaceObject(PlayerBase player)
+  {
+		player.TogglePlacingLocal();
+  }
+
+  void PlaceObject(PlayerBase player, ItemBase item)
+  {
+		EntityAI entity_for_placing = item;
+		vector rotation_matrix[3];
+		float direction[4];
+		InventoryLocation source = new InventoryLocation;
+		InventoryLocation destination = new InventoryLocation;
+		
+		Math3D.YawPitchRollMatrix( "0 0 0", rotation_matrix );
+		Math3D.MatrixToQuat( rotation_matrix, direction );
+		
+		if ( entity_for_placing.GetInventory().GetCurrentInventoryLocation( source ) )
+		{
+			destination.SetGroundEx( entity_for_placing, player.GetPosition(), direction );
+			
+			if ( GetGame().IsMultiplayer() )
+			{
+				player.ServerTakeToDst(source, destination);
+			}		
+			//local singleplayer
+			else
+			{
+		    player.GetDayZPlayerInventory().RedirectToHandEvent(InventoryMode.LOCAL, source, destination);
+			}			
+		}
   }
 }

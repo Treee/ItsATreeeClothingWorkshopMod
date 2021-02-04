@@ -51,6 +51,12 @@ class SwitchRadioAction: ActionSingleUseBase
       {
         return true;
       }
+      if (player.GetRadioInterActionData().CanTogglePlacement(item)) {
+        return true;
+      }
+      if (player.GetRadioInterActionData().CanPlaceObject(item)) {
+        return true;
+      }
     }
 		return false;
 	}

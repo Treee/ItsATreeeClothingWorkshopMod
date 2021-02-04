@@ -42,10 +42,10 @@
 
 // 	override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 // 	{	
-//     GGRadio_Radio_Base radio;
+//     BaseRadio radio;
 //     Class.CastTo(radio, item);
 //     // Print("Current Radio Volume" + radio.GetVolume());
-//     if (radio.IsPlaying() && radio.GetVolume() < 1 ) {
+//     if (radio.IsReceiving() && radio.GetVolume() < 1 ) {
 //       // Print("low volume!! increase it!");
 //       return true;
 //     }

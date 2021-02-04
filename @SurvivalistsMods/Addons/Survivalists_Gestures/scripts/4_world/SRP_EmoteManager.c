@@ -22,7 +22,7 @@ modded class EmoteManager
 
   override void OnEmoteEnd()
   {
-    Print("OnEmoteEnd::CurrentGesture: " + m_CurrentGestureID);
+    // Print("OnEmoteEnd::CurrentGesture: " + m_CurrentGestureID);
     m_PrevIsLayDown = m_IsLayDown;
     super.OnEmoteEnd();      
     if (m_PrevIsLayDown)
