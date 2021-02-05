@@ -1,7 +1,7 @@
 class RadioInterActionData
 {	
 	int m_selectedActionIndex; //used on client only, action synchronizes it to server to avoid mismatch
-	const int numRadioActions = 4;
+	// const int numRadioActions = 4;
 
 	void RadioInterActionData()
 	{
@@ -32,18 +32,11 @@ class RadioInterActionData
       else 
       { 
         // set the current action to "Turn Off"
-        // m_selectedActionIndex = 1; commented out because we added placing objects in the list
-        m_selectedActionIndex = 4
+        m_selectedActionIndex = 1;
       }
     }// if the current action is "Decrease Volume"
     else if (m_selectedActionIndex == 3) 
     {
-      m_selectedActionIndex = 4;
-    }
-    else if (m_selectedActionIndex == 4){
-      m_selectedActionIndex = 5;
-    }
-    else if (m_selectedActionIndex == 5){
       m_selectedActionIndex = 1;
     }
     // Print("RadioInterActionData::SetNextAction: " + m_selectedActionIndex);
@@ -74,12 +67,6 @@ class RadioInterActionData
     else if (m_selectedActionIndex == 3) {
       return "Decrease Volume";
     }
-    else if (m_selectedActionIndex == 4) {
-      return "#toggle_placing"
-    }
-    else if (m_selectedActionIndex == 5) {
-      return "#place_object"
-    }
     return "Default Radio InterAction Prompt";
   }
 
@@ -91,7 +78,7 @@ class RadioInterActionData
 
   bool IsSingleLoop()
   { // turn on and off should be non repeating
-    return (m_selectedActionIndex == 0 || m_selectedActionIndex == 1 || m_selectedActionIndex == 4 || m_selectedActionIndex == 5);
+    return (m_selectedActionIndex == 0 || m_selectedActionIndex == 1);
   }
 
   /* Active Conditions */
@@ -111,12 +98,6 @@ class RadioInterActionData
     else if (m_selectedActionIndex == 3) {
       return CanDecreaseVolume(item);
     }
-    else if (m_selectedActionIndex == 4) {
-      return CanTogglePlacement(item);
-    } 
-    else if (m_selectedActionIndex == 5) {
-      return CanPlaceObject(item);
-    } 
     return false;
   }
 
@@ -164,15 +145,6 @@ class RadioInterActionData
 		return false;
   }
 
-  bool CanTogglePlacement(ItemBase item)
-  {
-    return true;
-  }
-
-  bool CanPlaceObject(ItemBase item) {
-    return true;
-  }
-
   /* Execution Functionality */
   void DoInteraction(ItemBase item, PlayerBase player)
 	{
@@ -198,14 +170,6 @@ class RadioInterActionData
       { // set the next menu action to increase volume
         m_selectedActionIndex = 2
       }
-    }
-    else if (m_selectedActionIndex == 4) {
-      TogglePlaceObject(player);
-      m_selectedActionIndex = 5;
-    }
-    else if (m_selectedActionIndex == 5) {
-      PlaceObject(player, item);
-      ResetActionIndexes();
     }
 	}
 
@@ -237,35 +201,4 @@ class RadioInterActionData
     radio.DecreaseVolume();
   }
 
-  void TogglePlaceObject(PlayerBase player)
-  {
-		player.TogglePlacingLocal();
-  }
-
-  void PlaceObject(PlayerBase player, ItemBase item)
-  {
-		EntityAI entity_for_placing = item;
-		vector rotation_matrix[3];
-		float direction[4];
-		InventoryLocation source = new InventoryLocation;
-		InventoryLocation destination = new InventoryLocation;
-		
-		Math3D.YawPitchRollMatrix( "0 0 0", rotation_matrix );
-		Math3D.MatrixToQuat( rotation_matrix, direction );
-		
-		if ( entity_for_placing.GetInventory().GetCurrentInventoryLocation( source ) )
-		{
-			destination.SetGroundEx( entity_for_placing, player.GetPosition(), direction );
-			
-			if ( GetGame().IsMultiplayer() )
-			{
-				player.ServerTakeToDst(source, destination);
-			}		
-			//local singleplayer
-			else
-			{
-		    player.GetDayZPlayerInventory().RedirectToHandEvent(InventoryMode.LOCAL, source, destination);
-			}			
-		}
-  }
 }

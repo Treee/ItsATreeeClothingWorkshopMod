@@ -93,13 +93,13 @@ class RadioInterAction: ActionContinuousBase
 	override void OnFinishProgressServer( ActionData action_data )
 	{
     // Print("RadioInterAction::OnFinishProgressServer: " + action_data);
-    action_data.m_Player.GetRadioInterActionData().DoInteraction(action_data);    
+    action_data.m_Player.GetRadioInterActionData().DoInteraction(action_data.m_MainItem, action_data.m_Player);    
 	}
 	
 	override void OnFinishProgressClient( ActionData action_data )
 	{
     // Print("RadioInterAction::OnFinishProgressClient: " + action_data);
-    action_data.m_Player.GetRadioInterActionData().DoInteraction(action_data);
+    action_data.m_Player.GetRadioInterActionData().DoInteraction(action_data.m_MainItem, action_data.m_Player);
 	}
 	
 	override void WriteToContext(ParamsWriteContext ctx, ActionData action_data)
