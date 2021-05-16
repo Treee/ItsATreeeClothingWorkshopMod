@@ -1,0 +1,32 @@
+modded class EmoteConstants
+{
+  // const int ID_EMOTE_LYINGDOWN		= 5; this is default
+
+  const int SRP_EMOTE_COUGH = 69;
+	const int SRP_EMOTE_BLINDNESS = 70;
+	const int SRP_EMOTE_BULLET_HIT = 71;
+	const int SRP_EMOTE_BLEEDING_SOURCE = 72;
+	const int SRP_EMOTE_BLOODLOSS = 73;
+	const int SRP_EMOTE_SNEEZE = 74;
+	const int SRP_EMOTE_FEVERBLUR = 75;
+	const int SRP_EMOTE_LAUGHTER = 76;
+	const int SRP_EMOTE_UNCONSCIOUS = 77;
+	const int SRP_EMOTE_FREEZE = 78;
+	const int SRP_EMOTE_HOT = 79;
+  const int SRP_EMOTE_LEGBREAK = 80;
+}
+
+
+  // Symptom IDS
+	// SYMPTOM_COUGH = 1,
+	// SYMPTOM_VOMIT,
+	// SYMPTOM_BLINDNESS,
+	// SYMPTOM_BULLET_HIT,
+	// SYMPTOM_BLEEDING_SOURCE,
+	// SYMPTOM_BLOODLOSS,
+	// SYMPTOM_SNEEZE,
+	// SYMPTOM_FEVERBLUR,
+	// SYMPTOM_LAUGHTER,
+	// SYMPTOM_UNCONSCIOUS,
+	// SYMPTOM_FREEZE,
+	// SYMPTOM_HOT,

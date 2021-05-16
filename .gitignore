@@ -8,16 +8,14 @@
 **/*.pbo
 **/*.paa
 **/*.ogg
+**/*.p3d
 
 \!dzsal
 \!Workshop
 @*
-!@(Out)LawEnforcementClothingAndTools
-!@CannibalBuff
-!@FacePaints
-!@OneWayMuteTransmitter
-!@ScriptTester
+!@SRP_Tree_Mods
 !@SurvivalistsMods
+SRP_Tree_Test
 /ItsATreeeModSource/src/**/*.png
 !/ItsATreeeModSource/src/dayz_tools/**/*.png
 !/ItsATreeeModSource/src/**/preview_image.png
