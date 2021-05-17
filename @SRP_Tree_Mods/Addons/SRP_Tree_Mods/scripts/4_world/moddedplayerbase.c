@@ -4,18 +4,19 @@ modded class PlayerBase
   int m_alcoholMax = 100;
 
   EffectSound m_AcidSounds;
+  EffectSound m_SleepSounds;
 
-  override void OnConnect()
-	{
-		super.OnConnect();
-    Print("SRP ModdedPlayerBase: OnConnect() ");
-    // Start player sleepyness
-    if( GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SLEEP ) )
-		{
-			GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SLEEP );
-		}
-		GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SLEEP );
-  }
+  // override void OnConnect()
+	// {
+	// 	super.OnConnect();
+  //   Print("SRP ModdedPlayerBase: OnConnect() ");
+  //   // Start player sleepyness
+  //   if( GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SLEEP ) )
+	// 	{
+	// 		GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SLEEP );
+	// 	}
+	// 	GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SLEEP );
+  // }
 
   bool HasSleepAgent()
   {
@@ -40,6 +41,57 @@ modded class PlayerBase
     }
   }
 
+  void TryYawn() {    
+    float chance = Math.RandomFloat01() * 100;
+    Print("SRP Modded Playerbase:: TryYawn chance to yawn: " + chance);
+    if (chance > 90) {
+      PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns.Get(0), 0, 0);
+    }
+  }
+
+  string GetScarySound() {
+    float chance = Math.RandomFloat01() * 100;
+    Print("GetScarySound " + chance);
+    if (chance < 25) {
+      return SRP_SoundSets_ZombieAttack.GetRandomElement();       
+    } else if (chance < 50) {
+      return SRP_SoundSets_CallToArms.GetRandomElement();       
+    } else if (chance < 75) {
+      return SRP_SoundSets_Wolf.GetRandomElement();       
+    } else {
+      return SRP_SoundSets_Bear.GetRandomElement();       
+    }
+  }
+
+  string GetHappySound() {
+    float chance = Math.RandomFloat01() * 100;
+    Print("GetHappySound " + chance);
+    if (chance < 20) {
+      return SRP_SoundSets_SheepBleats.GetRandomElement();       
+    } else if (chance < 40) {
+      return SRP_SoundSets_HogGrunts.GetRandomElement();       
+    } else if (chance < 60) {
+      return SRP_SoundSets_Cows.GetRandomElement();       
+    } else if (chance < 80) {
+      return SRP_SoundSets_Chicken.GetRandomElement();       
+    } else {
+      return SRP_SoundSets_Deer.GetRandomElement();       
+    }
+  }
+
+  void ModifyPPEEffect(float hue = 60, float radialXBlur = 0, float radialYBlur = 0, float chromaX = 0, float chromaY = 0, float radialXOffset = 0, float radialYOffset = 0) {
+    CameraEffects.changeRadBlurXEffect(radialXBlur);
+    CameraEffects.changeRadBlurYEffect(radialYBlur);
+    
+    CameraEffects.changeRadBlurXOffsetEffect(radialXOffset);
+    CameraEffects.changeRadBlurXOffsetEffect(radialYOffset);
+
+    CameraEffects.changeChromaX(chromaX);
+    CameraEffects.changeChromaY(chromaY);
+
+    CameraEffects.changeHue(hue);
+  }
+
   void DisableAllMyModifiers() {
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_TEST );
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_STONED );
@@ -57,16 +109,13 @@ modded class PlayerBase
 
   // Drug Effects
   void StonedModifier(float stoned, float radialBlur = 0) {
-
-    CameraEffects.changeRadBlurXEffect(radialBlur);
-    CameraEffects.changeRadBlurYEffect(radialBlur);
-    CameraEffects.changeHue(stoned);
-    float chance = Math.RandomIntInclusive(0, 100);
+    ModifyPPEEffect(stoned, radialBlur, radialBlur);
+    float chance = Math.RandomFloat01() * 100;
     if (chance > 85) // 20% chance to cough
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
     }
-    chance = Math.RandomIntInclusive(0, 100);
+    chance = Math.RandomFloat01() * 100;
     if (chance > 90) // 15% chance to laugh
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
@@ -75,10 +124,8 @@ modded class PlayerBase
   }
   
   void TobaccoModifier(float tobaccod, float radialBlur = 0) {
-    CameraEffects.changeRadBlurXEffect(radialBlur);
-    CameraEffects.changeRadBlurYEffect(radialBlur);    
-    CameraEffects.changeHue(tobaccod);
-    float chanceToCough = Math.RandomIntInclusive(0, 100);
+    ModifyPPEEffect(tobaccod, radialBlur, radialBlur);
+    float chanceToCough = Math.RandomFloat01() * 100;
     if (chanceToCough > 90) // 20% chance to cough
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
@@ -88,55 +135,50 @@ modded class PlayerBase
 
   void BathSaltsModifier(float hue = 60, float radialBlurX = 0, float radialBlurY = 0, float chromaX = 0, float chromaY = 0)
   {
-    CameraEffects.changeRadBlurXEffect(radialBlurX);
-    CameraEffects.changeRadBlurYEffect(radialBlurY);  
-    CameraEffects.changeChromaX(chromaX);
-    CameraEffects.changeChromaY(chromaY);
-    CameraEffects.changeHue(hue);
-    float chance = Math.RandomIntInclusive(0, 100);
+    ModifyPPEEffect(hue, radialBlurX, radialBlurY, chromaX, chromaY);
+    float chance = Math.RandomFloat01() * 100;
     if (chance > 80) // 20% chance to cough
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_FEVERBLUR);
     }
-    chance = Math.RandomIntInclusive(0, 100);
-    if (chance > 70)
+    chance = Math.RandomFloat01() * 100;
+    if (chance > 70 && chance < 90)
     {
-      PlaySoundSet(m_AcidSounds, SRP_AcidSoundSets.GetRandomElement(), 0, 0);
+      PlaySoundSet(m_AcidSounds, GetScarySound(), 0, 0);
+    } else if (chance > 89) {
+      PlaySoundSet(m_AcidSounds, GetHappySound(), 0, 0);
     }
     // Print("BathSaltsModifier radialBlurX: " + radialBlurX + " chromaX: " + chromaX + " chromaY: " + chromaY);
   }
 
   void MethModifier(float hue = 60, float radialBlurX = 0, float radialBlurY = 0)
   {
-    CameraEffects.changeRadBlurXEffect(radialBlurX);
-    CameraEffects.changeRadBlurYEffect(radialBlurY);  
-    CameraEffects.changeHue(hue);
-    float chance = Math.RandomIntInclusive(0, 100);
+    ModifyPPEEffect(hue, radialBlurX, radialBlurY);
+    float chance = Math.RandomFloat01() * 100;
     if (chance > 85) // 15% chance to laugh
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
     }
-    chance = Math.RandomIntInclusive(0, 100);
-    if (chance > 90)
+    chance = Math.RandomFloat01() * 100;
+    if (chance > 90 && chance < 95)
     {
-      PlaySoundSet(m_AcidSounds, SRP_AcidSoundSets.GetRandomElement(), 0, 0);
-    }
+      PlaySoundSet(m_AcidSounds, GetScarySound(), 0, 0);
+    } else if (chance > 94) {
+      PlaySoundSet(m_AcidSounds, GetHappySound(), 0, 0);
+    }    
     // Print("BathSaltsModifier radialBlurX: " + radialBlurX + " chromaX: " + chromaX + " chromaY: " + chromaY);
   }
 
   void AcidModifier(float radialBlurX = 0, float radialBlurY = 0, float chromaX = 0, float chromaY = 0, float hue = 60) {
-    CameraEffects.changeRadBlurXEffect(radialBlurX);
-    CameraEffects.changeRadBlurYEffect(radialBlurY);    
-
-    CameraEffects.changeChromaX(chromaX);
-    CameraEffects.changeChromaY(chromaY);    
-    CameraEffects.changeHue(hue);
-    float chance = Math.RandomIntInclusive(0, 100);
-    if (chance > 75)
+    ModifyPPEEffect(hue, radialBlurX, radialBlurY, chromaX, chromaY);
+    float chance = Math.RandomFloat01() * 100;
+    if (chance > 70 && chance < 90)
     {
-      PlaySoundSet(m_AcidSounds, SRP_AcidSoundSets.GetRandomElement(), 0, 0);
+      PlaySoundSet(m_AcidSounds, GetScarySound(), 0, 0);
+    } else if (chance > 89) {
+      PlaySoundSet(m_AcidSounds, GetHappySound(), 0, 0);
     }
-    chance = Math.RandomIntInclusive(0, 100);
+    chance = Math.RandomFloat01() * 100;
     if (chance > 10 && chance < 30) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
     } else if (chance > 30 && chance < 40) {
@@ -154,14 +196,9 @@ modded class PlayerBase
   }
 
   void AlcoholModifier(float hue = 60, float radialOffsetXValue = 0,  float radialOffsetYValue = 0, int radialBlur = 0) {
-    CameraEffects.changeHue(hue);
+    ModifyPPEEffect(hue, radialBlur, radialBlur, 0, 0, radialOffsetXValue, radialOffsetYValue);
     
-    CameraEffects.changeRadBlurXEffect(radialBlur);
-    CameraEffects.changeRadBlurYEffect(radialBlur);
-
-    CameraEffects.changeRadBlurXOffsetEffect(radialOffsetXValue);
-    CameraEffects.changeRadBlurXOffsetEffect(radialOffsetYValue);
-    float chance = Math.RandomIntInclusive(0, 100);
+    float chance = Math.RandomFloat01() * 100;
     if (chance > 85) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
     }

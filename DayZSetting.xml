@@ -1,9 +1,9 @@
 <config version="1.0">
-    <video screenwidth="1920" screenheight="1080" posX="0" posY="0" ratio3D="1" vsync="1" fsaa="0" windowmode="3" atoc="0" gamma="0" contrast="0" brightness="0" adapter="-1" device="-1" texturefilter="1" maxaniso="1" texturedetail="0" shadow="2" shadowcascades="3" tightcascades="1" shadowtechnique="0" stabilizecascades="0" stabilizecascadesrotation="0" presetsoftshadows="0" omnishadow="0" llevel="2" rvterrainshaders="0" />
+    <video screenwidth="1920" screenheight="1080" posX="0" posY="0" ratio3D="1" vsync="1" fsaa="2" windowmode="3" atoc="0" gamma="0" contrast="0" brightness="0" adapter="-1" device="-1" texturefilter="1" maxaniso="1" texturedetail="0" shadow="2" shadowcascades="3" tightcascades="1" shadowtechnique="0" stabilizecascades="0" stabilizecascadesrotation="0" presetsoftshadows="0" omnishadow="0" llevel="2" rvterrainshaders="0" fsaaBack="2" />
     <jobsystem>
         <pc />
     </jobsystem>
-    <render geometricdetail="2" terraindetail="1" terrainsalpha="1" grassDist="10" grassLod="3" grassQuality="0" postprocess="0" reflections="0" waterdetail="1" />
+    <render geometricdetail="2" terraindetail="1" terrainsalpha="1" grassDist="10" grassLod="3" grassQuality="0" postprocess="1" reflections="0" waterdetail="1" />
     <controls>
         <mousespeed horizontal="100" vertical="100" />
     </controls>

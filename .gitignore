@@ -9,6 +9,7 @@
 **/*.paa
 **/*.ogg
 **/*.p3d
+**/*.tga
 
 \!dzsal
 \!Workshop
@@ -25,3 +26,4 @@ bliss
 dta
 Missions
 Launcher
+DayZSetting.xml

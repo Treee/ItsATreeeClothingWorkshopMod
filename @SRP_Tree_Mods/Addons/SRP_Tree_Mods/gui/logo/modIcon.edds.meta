@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{0A308EB029259351}Mods/@SRP_Tree_Mods/Addons/SRP_Tree_Mods/gui/logo/Logo-tree512x512.edds"
+ Author "desktop-0p5pmv4"
+ ChangeDate -1429984592
+ Configurations {
+  PAAResourceClass PC {
+   SourceFile "Logo-tree512x512.paa"
+  }
+  PAAResourceClass XBOX_ONE : PC {
+  }
+  PAAResourceClass PS4 : PC {
+  }
+  PAAResourceClass LINUX : PC {
+  }
+ }
+}

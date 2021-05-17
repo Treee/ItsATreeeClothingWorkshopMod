@@ -1,5 +1,7 @@
 class SRP_SleepMdfr: ModifierBase
 {	
+  static const int SECONDS_PER_DAY = 30;// 14400;
+  static const int YAWN_THRESHOLD = SECONDS_PER_DAY * 0.8; // 20 percent awake = start yawning
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -51,5 +53,10 @@ class SRP_SleepMdfr: ModifierBase
 	override void OnTick(PlayerBase player, float deltaT)
 	{
     Print("SleepMdfr: OnTick - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));
+    // if the agent count is within yawning range
+    if (player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT) > YAWN_THRESHOLD) {
+      player.TryYawn();
+    }
+
   }
 };
