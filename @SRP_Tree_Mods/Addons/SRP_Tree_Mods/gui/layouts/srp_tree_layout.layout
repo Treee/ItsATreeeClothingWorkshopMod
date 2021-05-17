@@ -1,6 +1,6 @@
 FrameWidgetClass SleepFrame {
- position 0 0
- size 1489.30005 1075.17993
+ position -0.042 -0.58192
+ size 1920 1080
  hexactpos 1
  vexactpos 1
  hexactsize 1
@@ -8,8 +8,8 @@ FrameWidgetClass SleepFrame {
  {
   PanelWidgetClass SleepPanel {
    visible 1
-   position 1127.28992 930.24799
-   size 112.885 105.251
+   position 1794.06995 933.53204
+   size 112.885 105.25
    hexactpos 1
    vexactpos 1
    hexactsize 1
