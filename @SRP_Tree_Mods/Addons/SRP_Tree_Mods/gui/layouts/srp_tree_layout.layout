@@ -1,19 +1,30 @@
 FrameWidgetClass SleepFrame {
- position -0.042 -0.58192
- size 1920 1080
+ visible 1
+ clipchildren 1
+ position 0 0
+ size 260 150
+ halign right_ref
+ valign bottom_ref
  hexactpos 1
  vexactpos 1
  hexactsize 1
  vexactsize 1
+ fixaspect fixwidth
+ priority 100
  {
-  PanelWidgetClass SleepPanel {
-   visible 1
-   position 1794.06995 933.53204
-   size 112.885 105.25
+  PanelWidgetClass Sleep {
+   clipchildren 1
+   inheritalpha 0
+   position 54 -19
+   size 35 81
+   halign right_ref
+   valign center_ref
    hexactpos 1
    vexactpos 1
    hexactsize 1
    vexactsize 1
+   fixaspect fixwidth
+   style blank
    {
     ImageWidgetClass IconSleep {
      color 0.8627 0.8627 0.8627 1

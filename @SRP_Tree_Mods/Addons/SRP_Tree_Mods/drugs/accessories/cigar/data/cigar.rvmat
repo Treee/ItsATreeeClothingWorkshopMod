@@ -8,91 +8,91 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class TexGen0
 {
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class TexGen1
 {
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class TexGen2
 {
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class TexGen3
 {
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class TexGen4
 {
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class TexGen5
 {
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class TexGen6
 {
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class TexGen7
 {
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class Stage1
 {
