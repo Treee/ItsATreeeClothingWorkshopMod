@@ -18,6 +18,12 @@ modded class PlayerBase
 	// 	GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SLEEP );
   // }
 
+  EStatLevels GetStatLevelTiredness()
+	{
+		float tiredness = GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT);
+		return GetStatLevel(tiredness, PlayerConstants.SL_TIREDNESS_CRITICAL, PlayerConstants.SL_TIREDNESS_LOW, PlayerConstants.SL_TIREDNESS_NORMAL, PlayerConstants.SL_TIREDNESS_HIGH);
+	}
+
   bool HasSleepAgent()
   {
     return m_AgentPool.HasAgent(SRP_Medical_Agents.SLEEP_AGENT);

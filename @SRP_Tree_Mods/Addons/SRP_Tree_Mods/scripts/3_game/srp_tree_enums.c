@@ -17,6 +17,15 @@ enum SRP_eModifiers
   MDF_BIOHAZARD = 432,
 }
 
+// enum EStatLevels
+// {
+// 	GREAT,
+// 	HIGH,
+// 	MEDIUM,
+// 	LOW,
+// 	CRITICAL,
+// }
+
 // // BEWARE, ALL NUMBERS 2 RAISED TO THE POWER OF 0 - 32, MAX 32 INDIVIDUAL AGENTS, MUST MATCH CONFIG-SIDE AGENT CONFIGURATION
 // enum eAgents
 // {
@@ -30,17 +39,73 @@ enum SRP_eModifiers
 // 	WOUND_AGENT		= 64;
 // 	NERVE_AGENT		= 128;
 // }
-
-// enum EStatLevels
-// {
-// 	GREAT,
-// 	HIGH,
-// 	MEDIUM,
-// 	LOW,
-// 	CRITICAL,
-// }
 enum SRP_Medical_Agents
 {
   SLEEP_AGENT = 512,
   BIOHAZARD_AGENT = 1024,
+}
+
+
+// enum eBadgeLevel
+// {
+// 	NONE,
+// 	FIRST,
+// 	SECOND,
+// 	THIRD,
+// }
+
+// enum eDisplayElements
+// {
+// 	DELM_BADGE_STUFFED,
+// 	DELM_BADGE_WET,
+// 	DELM_BADGE_SICK,
+// 	DELM_BADGE_POISONED,
+// 	DELM_BADGE_FRACTURE,
+// 	DELM_BADGE_BLEEDING,
+// 	DELM_BADGE_PILLS,
+// 	DELM_BADGE_HEARTBEAT,
+// 	//------------------
+// 	DELM_TDCY_HEALTH,
+// 	DELM_TDCY_BLOOD,
+// 	DELM_TDCY_TEMPERATURE,
+// 	DELM_TDCY_ENERGY,
+// 	DELM_TDCY_WATER,
+// 	DELM_TDCY_BACTERIA,
+// 	//------------------
+// 	DELM_STANCE,
+// 	COUNT
+// }
+
+enum SRP_eDisplayElements
+{
+  DELM_TDCY_TIREDNESS
+}
+
+
+// enum eNotifiers
+// {
+// 	NTF_HEALTHY,
+// 	NTF_BLEEDISH,
+// 	NTF_HUNGRY,
+// 	NTF_THIRSTY,
+// 	NTF_STUFFED,
+// 	NTF_SICK,
+// 	NTF_WETNESS,
+// 	NTF_WARMTH,
+// 	NTF_FEVERISH,
+// 	NTF_BLOOD,
+// 	NTF_LIVES,
+// 	NTF_STAMINA,
+// 	//NTF_AGENT_INFECTION,
+// 	NTF_PILLS,
+// 	NTF_HEARTBEAT,
+// 	NTF_FRACTURE,
+//   NTF_TIREDNESS,
+// 	//----------------------------
+// 	NTF_COUNT,// !!! LAST ITEM !!!
+// }
+
+enum SRP_eNotifiers
+{
+  NTF_TIREDNESS = 42
 }
