@@ -2,12 +2,19 @@ class SRP_SleepMdfr: ModifierBase
 {	
   static const int SECONDS_PER_DAY = 30;// 14400;
   static const int YAWN_THRESHOLD = SECONDS_PER_DAY * 0.8; // 20 percent awake = start yawning
+  int m_LastTirednessCount = 0;
+
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
 		m_ID 					= SRP_eModifiers.MDF_SLEEP;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_ACTIVE;
+    Class.CastTo(m_ModulePlayerStatus, GetPlugin(PluginPlayerStatus));
+    if (m_ModulePlayerStatus) 
+    {
+      Print("SRP_SleepMdfr Registering Player Status Module Success");
+    }
 	}
 
 	override bool ActivateCondition(PlayerBase player)
@@ -52,11 +59,37 @@ class SRP_SleepMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-    Print("SleepMdfr: OnTick - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));
+    int currentTirednessCount = player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT);
+    Print("SleepMdfr: OnTick - Sleepyness count: " + currentTirednessCount);
     // if the agent count is within yawning range
-    if (player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT) > YAWN_THRESHOLD) {
+    if (currentTirednessCount > YAWN_THRESHOLD) {
       player.TryYawn();
     }
+    m_ModulePlayerStatus.DisplayTendency(NTFKEY_SRP_TIREDNESS, GetTendency(currentTirednessCount), GetSeriousness());
 
+    m_LastTirednessCount = currentTirednessCount;
   }
+
+  int GetTendency(int current)
+  {
+    int delta = m_LastTirednessCount - current;
+    Print("GetTendency " + delta);
+    return m_LastTirednessCount - current;
+  }
+
+  int GetSeriousness()
+  {
+    return 0;
+  }
+  	// {
+		// if( level == DSLevels.WARNING )
+		// 	return 2;
+		// if( level == DSLevels.CRITICAL )
+		// 	return 3;
+		// if( level == DSLevels.BLINKING )
+		// 	return 4;
+		// if( level == DSLevels.EXTRA )
+		// 	return 5;
+		// return 1;
+
 };

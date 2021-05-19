@@ -16,7 +16,7 @@ modded class IngameHud
     if (!m_sleepPanelWidget)
     {
       m_sleepPanelWidget = GetGame().GetWorkspace().CreateWidgets("SRP_Tree_Mods\\gui\\layouts\\srp_tree_layout.layout");
-      Print("SRP Tree Mods IngameHud!! CreatedLayout" + m_sleepPanelWidget);
+      Print("SRP Tree Mods IngameHud Constructor - CreatedLayout" + m_sleepPanelWidget);
       m_sleepPanelWidget.Show(false);
     }
   }
@@ -32,18 +32,15 @@ modded class IngameHud
 
 	override void Init( Widget hud_panel_widget )
 	{
-    Print("SRP Tree Mods In Game Hud Init!! Super Call");
     super.Init(hud_panel_widget);
-    Print("SRP Tree Mods In Game Hud Init!! After Super Call");
-    // m_sleepPanelWidget.Show(true);
+    Print("SRP Tree Mods IngameHud Init()");
     DisplayNotifier(NTFKEY_SRP_TIREDNESS, 0, 0)
   }
 
   override void RefreshHudVisibility()
   {
-    Print("SRP Tree Mods In Game Hud RefreshHudVisibility!! SUPER");
     super.RefreshHudVisibility();
-    Print("SRP Tree Mods In Game Hud RefreshHudVisibility!! after SUPER");
+    // show the sleep icon like the other status icons
     SetSleepWidgetVisibility(( !m_HudHidePlayer && !m_HudHideUI && m_HudState ) || m_HudInventory);
   }
 
@@ -51,9 +48,9 @@ modded class IngameHud
 	{
     super.DisplayNotifier(key, tendency, status);
     ImageWidget w;
-    Print("Tiredness DisplayNotifier: " + key);
 		if( key == NTFKEY_SRP_TIREDNESS )
 		{
+      Print("Tiredness DisplayNotifier: " + key);
 			DisplayTendencyNormal( key, tendency, status );
       // tendency arrows
       string arrow_name = "SleepArrowUp";
@@ -76,7 +73,7 @@ modded class IngameHud
       
       if( tendency > 0 )
       {
-        Print("Sleep Tendency " + tendency);
+        Print("Sleep Tendency show" + tendency);
         string widget_name = arrow_name + Math.Clamp( tendency, 1, 3 );
         Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( widget_name ) );
         if( w )
@@ -119,20 +116,13 @@ modded class IngameHud
 			}
 		}	
 	}
-
+  
   void SetSleepWidgetVisibility(bool visible) 
   {
-    Print("SRP Tree Mods In Game Hud SetSleepWidgetVisibility!! visible=" + visible);
-    Print("SRP Tree Mods In Game Hud SetSleepWidgetVisibility!! widget=" + m_sleepPanelWidget);
     if (m_sleepPanelWidget) 
     {
-      Print("SRP Tree Mods In Game Hud sleep widget is not null");
+      Print("SRP Tree Mods In Game Hud SetSleepWidgetVisibility!! visible=" + visible);      
       m_sleepPanelWidget.Show(visible);
-      if (visible) 
-      {
-        // hide the widgets that are not correct for the current tiredness state
-
-      }
     }
   }
 }
