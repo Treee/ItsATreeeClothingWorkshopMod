@@ -18,12 +18,6 @@ modded class PlayerBase
 	// 	GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SLEEP );
   // }
 
-  EStatLevels GetStatLevelTiredness()
-	{
-		float tiredness = GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT);
-		return GetStatLevel(tiredness, PlayerConstants.SL_TIREDNESS_CRITICAL, PlayerConstants.SL_TIREDNESS_LOW, PlayerConstants.SL_TIREDNESS_NORMAL, PlayerConstants.SL_TIREDNESS_HIGH);
-	}
-
   bool HasSleepAgent()
   {
     return m_AgentPool.HasAgent(SRP_Medical_Agents.SLEEP_AGENT);
@@ -34,22 +28,22 @@ modded class PlayerBase
     AgentBase agent = transmissionAgents.GetAgentByAgentId(SRP_Medical_Agents.SLEEP_AGENT);
     
     if (isSleeping && agent) {
-      Print("sleeping and agent is not null");
+      // Print("sleeping and agent is not null");
       SleepAgent.Cast(agent).GoToSleep();
     } else if (!isSleeping && agent){
-      Print("not sleeping and agent is not null");
+      // Print("not sleeping and agent is not null");
       SleepAgent.Cast(agent).WakeUp();
     }
 
     if (!HasSleepAgent()) {
-      Print("Insert Agent");
+      // Print("Insert Agent");
       InsertAgent(SRP_Medical_Agents.SLEEP_AGENT);
     }
   }
 
   void TryYawn() {    
     float chance = Math.RandomFloat01() * 100;
-    Print("SRP Modded Playerbase:: TryYawn chance to yawn: " + chance);
+    // Print("SRP Modded Playerbase:: TryYawn chance to yawn: " + chance);
     if (chance > 90) {
       PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns.Get(0), 0, 0);
     }
@@ -57,7 +51,7 @@ modded class PlayerBase
 
   string GetScarySound() {
     float chance = Math.RandomFloat01() * 100;
-    Print("GetScarySound " + chance);
+    // Print("GetScarySound " + chance);
     if (chance < 25) {
       return SRP_SoundSets_ZombieAttack.GetRandomElement();       
     } else if (chance < 50) {
@@ -71,7 +65,7 @@ modded class PlayerBase
 
   string GetHappySound() {
     float chance = Math.RandomFloat01() * 100;
-    Print("GetHappySound " + chance);
+    // Print("GetHappySound " + chance);
     if (chance < 20) {
       return SRP_SoundSets_SheepBleats.GetRandomElement();       
     } else if (chance < 40) {

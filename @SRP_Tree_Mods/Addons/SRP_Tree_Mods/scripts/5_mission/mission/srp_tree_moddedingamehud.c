@@ -34,7 +34,7 @@ modded class IngameHud
 	{
     super.Init(hud_panel_widget);
     Print("SRP Tree Mods IngameHud Init()");
-    DisplayNotifier(NTFKEY_SRP_TIREDNESS, 0, 0)
+    DisplayTirednessNotifier(NTFKEY_SRP_TIREDNESS, 0, 0, 4);
   }
 
   override void RefreshHudVisibility()
@@ -44,37 +44,37 @@ modded class IngameHud
     SetSleepWidgetVisibility(( !m_HudHidePlayer && !m_HudHideUI && m_HudState ) || m_HudInventory);
   }
 
-  override void DisplayNotifier( int key, int tendency, int status )
+  void DisplayTirednessNotifier( int key, int currentTirednessCount, int tirednessDelta, int status )
 	{
-    super.DisplayNotifier(key, tendency, status);
-    ImageWidget w;
 		if( key == NTFKEY_SRP_TIREDNESS )
 		{
-      Print("Tiredness DisplayNotifier: " + key);
-			DisplayTendencyNormal( key, tendency, status );
+      ImageWidget w;
+      // Print("Tiredness DisplayNotifier: " + key);
+			DisplayTirednessTendencyNormal( key, status );
+      SetTirednessState(status);
       // tendency arrows
       string arrow_name = "SleepArrowUp";
-      if ( tendency < 0 )
+      if ( tirednessDelta < 0 )
       {
         arrow_name = "SleepArrowDown";
       }
-      tendency = Math.AbsInt( tendency );
+      tirednessDelta = Math.AbsInt( tirednessDelta );
 
       for ( int x = 1; x < 4; x++ )
       { 
-        Print("Hiding Arrows: " + x.ToString());
-        Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( String("SleepArrowUp" + x.ToString() ) ) );
+        // Print("Hiding Arrows: " + x.ToString());
+        Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( String("SleepArrowUp" + x.ToString() ) ) );
         if( w )
           w.Show( false );
-        Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( String("SleepArrowDown" + x.ToString() ) ) );
+        Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( String("SleepArrowDown" + x.ToString() ) ) );
         if( w )
           w.Show( false );
       }
-      
-      if( tendency > 0 )
+
+      if( tirednessDelta > 0 )
       {
-        Print("Sleep Tendency show" + tendency);
-        string widget_name = arrow_name + Math.Clamp( tendency, 1, 3 );
+        // Print("Sleep Tendency show " + tirednessDelta);
+        string widget_name = arrow_name + Math.Clamp( tirednessDelta, 1, 3 );
         Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( widget_name ) );
         if( w )
           w.Show( true );
@@ -82,12 +82,11 @@ modded class IngameHud
     }
 	}
 
-  override void DisplayTendencyNormal( int key, int tendency, int status )
+  void DisplayTirednessTendencyNormal( int key, int status )
 	{
-    super.DisplayTendencyNormal(key, tendency, status);
 		ImageWidget w;
 		Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget(iconSleepName));
-		Print("Override DisplayTendencyNormal " + w);
+		// Print("Override DisplayTendencyNormal " + w);
 		if( w )
 		{
 			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
@@ -95,15 +94,15 @@ modded class IngameHud
 			
 			switch( status )
 			{
-				case 3:
+				case 2:
 					w.SetColor( ARGB( alpha * 255, 220, 220, 0 ) );		//yellow
 					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
 					break;
-				case 4:
+				case 1:
 					w.SetColor( ARGB( alpha * 255, 220, 0, 0 ) );		//red
 					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
 					break;
-				case 5:
+				case 0:
 					if ( !m_TendencyStatusCritical.Contains( w ) )
 					{
 						m_TendencyStatusCritical.Insert( w, ARGB( alpha * 255, 220, 0, 0 ) );	//add to blinking group
@@ -116,12 +115,19 @@ modded class IngameHud
 			}
 		}	
 	}
+
+  void SetTirednessState( int state )
+	{
+    // Print("Tiredness state " + state);
+		ImageWidget tiredness = ImageWidget.Cast( m_sleepPanelWidget.FindAnyWidget(iconSleepName) );
+		tiredness.LoadImageFile( 0, "set:srp_tree_iconset image:iconSleep" + state );
+	}
   
   void SetSleepWidgetVisibility(bool visible) 
   {
     if (m_sleepPanelWidget) 
     {
-      Print("SRP Tree Mods In Game Hud SetSleepWidgetVisibility!! visible=" + visible);      
+      // Print("SRP Tree Mods In Game Hud SetSleepWidgetVisibility!! visible=" + visible);      
       m_sleepPanelWidget.Show(visible);
     }
   }

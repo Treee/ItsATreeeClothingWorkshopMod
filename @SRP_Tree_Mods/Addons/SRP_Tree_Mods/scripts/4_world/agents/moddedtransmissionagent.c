@@ -15,7 +15,7 @@ modded class PluginTransmissionAgents
 			agent = m_AgentList.GetElement(i);
 			if (agent.GetAgentType() == agentId)
       {
-        // Print("Found your agent: " + agent.GetName());
+        Print("Found your agent: " + agent.GetName());
         return agent;
       }
 		}

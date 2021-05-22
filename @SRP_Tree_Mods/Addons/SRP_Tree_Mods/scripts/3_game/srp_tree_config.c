@@ -263,3 +263,19 @@ ref array<string> SRP_SoundSets_Chicken = {
   "BirdFlapping_long_SoundSet",
   "HenCrowX1_SoundSet",
 };
+
+ref array<string> SRP_DamageZones_LightBleeding = {
+  "Head",
+  "Neck",
+  "Pelvis",
+  "Spine",
+  "Spine1",
+  "Spine2",
+  "Spine3",
+  "LeftForeArmRoll",
+  "RightForeArmRoll",
+  "LeftFoot",
+  "LeftToeBase",
+  "RightFoot",
+  "RightToeBase"
+}
