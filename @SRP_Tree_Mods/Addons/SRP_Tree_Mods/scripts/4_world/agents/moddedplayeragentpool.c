@@ -13,10 +13,10 @@ modded class PlayerAgentPool
 		// }		
     if(	m_VirusPool.Contains(agent_id) )
 		{
-      Print("SRP ModdedPlayerAgentPool Does have the agent " + agent_id);
+      // Print("SRP ModdedPlayerAgentPool Does have the agent " + agent_id);
 			return true;
 		}
-    Print("SRP ModdedPlayerAgentPool Does not have the agent " + agent_id);
+    // Print("SRP ModdedPlayerAgentPool Does not have the agent " + agent_id);
 		return false;
 	}
 }

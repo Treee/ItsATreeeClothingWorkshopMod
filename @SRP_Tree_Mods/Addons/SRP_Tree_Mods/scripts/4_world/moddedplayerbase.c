@@ -18,6 +18,16 @@ modded class PlayerBase
 	// 	GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SLEEP );
   // }
 
+  void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
+	{
+		PlayerBase man;
+    Param1<string> m_MessageParam = new Param1<string>(message);
+		if( GetGame().IsServer() && Class.CastTo(man, reciever) && m_MessageParam && reciever.IsAlive() && message != "" )
+		{
+			GetGame().RPCSingleParam(man, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, man.GetIdentity());
+		}
+	}
+
   bool HasSleepAgent()
   {
     return m_AgentPool.HasAgent(SRP_Medical_Agents.SLEEP_AGENT);
@@ -44,7 +54,7 @@ modded class PlayerBase
   void TryYawn() {    
     float chance = Math.RandomFloat01() * 100;
     // Print("SRP Modded Playerbase:: TryYawn chance to yawn: " + chance);
-    if (chance > 90) {
+    if (chance > 97) {
       PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns.Get(0), 0, 0);
     }
   }

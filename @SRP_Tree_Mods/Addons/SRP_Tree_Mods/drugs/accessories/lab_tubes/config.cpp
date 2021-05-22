@@ -2,7 +2,14 @@ class CfgPatches
 {
 	class SRP_Tree_Drugs
 	{
-    units[] = {};
+    units[] = {
+      "SRP_LabTube_Clear",
+      "SRP_LabTube_Blue",
+      "SRP_LabTube_Red",
+      "SRP_LabTube_Green",
+      "SRP_LabTube_Yellow",
+      "SRP_LabTubeRack"
+    };
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=	{ "DZ_Data", "DZ_Characters"};

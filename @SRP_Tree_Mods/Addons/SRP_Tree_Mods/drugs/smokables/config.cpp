@@ -1,8 +1,19 @@
 class CfgPatches
 {
-	class SRP_Tree_Mods
+	class SRP_Tree_Smokables
 	{
-    units[] = {};
+    units[] = {
+      "SRP_Smokable_ZWeed",
+      "SRP_Smokable_Cigarette",
+      "SRP_Smokable_Cigar",
+      "SRP_Smokable_Test",
+      "SRP_SmokingPipe",
+      "SRP_DrugPack_ZWeed",
+      "SRP_DrugPack_Cigarette",
+      "SRP_DrugCarton_ZWeed",
+      "SRP_DrugCarton_Cigarette",
+      "SRP_DrugCarton_Cigar"
+    };
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=	{ "DZ_Data", "DZ_Characters"};

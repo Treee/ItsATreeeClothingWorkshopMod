@@ -1,13 +1,16 @@
 class SRP_BioHazardMdfr: ModifierBase
 {	
-  static const int BIOHAZARD_DISTANCE_TOTAL_SIZE = 800; // how many meters ofzone to calculate;
-  static const int BIOHAZARD_DISTANCE_MILD_ZONE = 700 ;// how many meters of "mild conditions" around the zone;
-  static const int BIOHAZARD_DISTANCE_SEVERE_ZONE = 600;// how far does the severe zone extend from the center
-  static const int BIOHAZARD_DISTANCE_CRITICAL_ZONE = 300;// how far does the critical zone extend from the center
+  // these are the radius of the zone extending from the center
+  static const vector BIOHAZARD_ZONE_CENTER = "4683 20 7100";
 
-  static const vector BIOHAZARD_ZONE_CENTER = "4600 0 7200";
+  static const int BIOHAZARD_DISTANCE_TO_CENTER = 400; // how many meters ofzone to calculate;
+  static const int BIOHAZARD_DISTANCE_MILD_ZONE = 325 ;// how many meters of "mild conditions" around the zone;
+  static const int BIOHAZARD_DISTANCE_SEVERE_ZONE = 250;// how far does the severe zone extend from the center
+  static const int BIOHAZARD_DISTANCE_CRITICAL_ZONE = 150;// how far does the critical zone extend from the center
+
 
   int m_lastBleedTime = 0;
+  int m_lastMessageTime = 999999; //force the biozone message to display the first time we enter
 
 	override void Init()
 	{
@@ -22,7 +25,12 @@ class SRP_BioHazardMdfr: ModifierBase
 	{    
     // Print("BiohazardMdfr: ActivateCondition - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.BIOHAZARD_AGENT));
     // activate this condition when we get close to the bio zone  
-    return vector.Distance(player.GetPosition(), BIOHAZARD_ZONE_CENTER) <= BIOHAZARD_DISTANCE_TOTAL_SIZE;
+    if (vector.Distance(player.GetPosition(), BIOHAZARD_ZONE_CENTER) <= BIOHAZARD_DISTANCE_TO_CENTER) {
+    float distanceFromCenter = vector.Distance(player.GetPosition(), BIOHAZARD_ZONE_CENTER);
+      // Print("BiohazardMdfr: OnTick - : Distance from center: " + distanceFromCenter);
+      return true;
+    }
+    return false;
 	}
 	
 	override string GetDebugText()
@@ -47,7 +55,7 @@ class SRP_BioHazardMdfr: ModifierBase
 	{
     int currentBiohazardAgentCount = player.GetSingleAgentCount(SRP_Medical_Agents.BIOHAZARD_AGENT);
     float distanceFromCenter = vector.Distance(player.GetPosition(), BIOHAZARD_ZONE_CENTER);
-    Print("BiohazardMdfr: OnTick - bio count: " + currentBiohazardAgentCount + " : Distance from center: " + distanceFromCenter);
+    // Print("BiohazardMdfr: OnTick - bio count: " + currentBiohazardAgentCount + " : Distance from center: " + distanceFromCenter);
     
     float damageMultiplier = GetProtectionMitigationMultiplier(player);
     if (damageMultiplier == 0) {
@@ -55,28 +63,37 @@ class SRP_BioHazardMdfr: ModifierBase
     } else {
       damageMultiplier = damageMultiplier * 0.1;
       // these effects stack cumulatively
+      // player.SendMessageToClient(player, "BiohazardMdfr: OnTick - : Distance from center: " + distanceFromCenter + " : damage multiplier " + damageMultiplier);
+
       // within critical zone less than 300m from center
       if (distanceFromCenter <= BIOHAZARD_DISTANCE_CRITICAL_ZONE)
       { // decrease hp
-        player.AddHealth("GlobalHealth", "Health", (-PlayerConstants.LOW_ENERGY_DAMAGE_PER_SEC * deltaT) * damageMultiplier );
+        player.AddHealth("GlobalHealth", "Health", (-1.75 * deltaT) * damageMultiplier );
+        player.InsertAgent(SRP_Medical_Agents.SLEEP_AGENT); // make them sleepy!!
       } //within severe zone less than 600m from center
       if (distanceFromCenter <= BIOHAZARD_DISTANCE_SEVERE_ZONE) {
         // decrease blood
-        player.AddHealth("", "Blood", ((-1.5 * deltaT) * damageMultiplier));
+        player.AddHealth("", "Blood", ((-15 * deltaT) * damageMultiplier));
       } //within mild zone less than 700m from center
       if (distanceFromCenter <= BIOHAZARD_DISTANCE_MILD_ZONE) {
         //Cut them once every 3 minutes
-        if (m_lastBleedTime > 180) {
+        if (m_lastBleedTime > 120) {
           player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
           m_lastBleedTime = 0;
         } else {
           m_lastBleedTime += deltaT;
         }
       } //within somewhat safe approach zone less than 800m from center
-      if (distanceFromCenter <= BIOHAZARD_DISTANCE_TOTAL_SIZE) {
+      if (distanceFromCenter <= BIOHAZARD_DISTANCE_TO_CENTER) {
         // decrease food and water
-        player.GetStatWater().Add((-1.5 * deltaT) * damageMultiplier);
-        player.GetStatEnergy().Add((-1.5 * deltaT) * damageMultiplier);
+        player.GetStatWater().Add((-10.5 * deltaT) * damageMultiplier);
+        player.GetStatEnergy().Add((-10.5 * deltaT) * damageMultiplier);
+        // every 2 minutes display biozone message
+        if (m_lastMessageTime > 120){
+          player.SendMessageToClient(player, "You are within the BIOHAZARD zone.");
+          m_lastMessageTime = 0;
+        }
+        m_lastMessageTime += deltaT;
       }
     }
   }

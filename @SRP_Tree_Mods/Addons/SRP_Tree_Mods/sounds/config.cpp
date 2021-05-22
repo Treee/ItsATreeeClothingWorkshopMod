@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class SRP_Tree_Mods
+	class SRP_Tree_Sounds
 	{
 		units[]={	};
 		weapons[]={};

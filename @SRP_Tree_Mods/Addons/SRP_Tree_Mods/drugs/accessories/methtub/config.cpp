@@ -1,8 +1,14 @@
 class CfgPatches
 {
-	class SRP_Tree_Mods
+	class SRP_Tree_MethTub
 	{
-    units[] = {};
+    units[] = {
+      "SRP_Drug_Blueprint_Meth",
+      "SRP_Drug_Blueprint_BathSalts",
+      "SRP_Drug_Blueprint_Acid",
+      "SRP_DrugWorkbench",
+      "SRP_Drug_Blueprint_Meth",
+    };
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=	{ "DZ_Data", "DZ_Characters"};

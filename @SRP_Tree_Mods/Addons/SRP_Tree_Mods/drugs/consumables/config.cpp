@@ -1,8 +1,20 @@
 class CfgPatches
 {
-	class SRP_Tree_Mods
+	class SRP_Tree_ConsumableDrug
 	{
-    units[] = {};
+    units[] = {
+      "SRP_Naloxone",
+      "SRP_ConsumableDrug_MethSmall",
+      "SRP_ConsumableDrug_MethSmallTainted",
+      "SRP_ConsumableDrug_MethMedium",
+      "SRP_ConsumableDrug_MethLarge",
+      "SRP_ConsumableDrug_BathSalts",
+      "SRP_ConsumableDrug_BathSaltsTainted",
+      "SRP_ConsumableDrug_SmileyAcid",
+      "SRP_ConsumableDrug_SmileyAcidTainted",
+      "SRP_ConsumableDrug_SkullAcid",
+      "SRP_ConsumableDrug_SkullAcidTainted"
+    };
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=	{ "DZ_Data", "DZ_Characters"};
@@ -16,17 +28,6 @@ class CfgVehicles
   class SRP_Naloxone: Epinephrine
   {
     displayName="Naloxone";    
-		descriptionShort="Treats narcotic overdoes in an emergency situation.";
-    model="\dz\gear\medical\Epinephrine.p3d";
-		rotationFlags=17;
-		itemSize[]={1,2};
-		weight=60;
-    inventorySlot[]={};
-  }
-
-  class SRP_Sleepy_Test: Epinephrine
-  {
-    displayName="SRP_Sleepy_Test";    
 		descriptionShort="Treats narcotic overdoes in an emergency situation.";
     model="\dz\gear\medical\Epinephrine.p3d";
 		rotationFlags=17;

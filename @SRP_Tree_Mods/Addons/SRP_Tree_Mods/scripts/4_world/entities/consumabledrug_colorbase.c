@@ -5,13 +5,6 @@ class SRP_Naloxone extends Epinephrine {
 	}
 };
 
-class SRP_Sleepy_Test extends Epinephrine {
-  override void OnApply(PlayerBase player)
-	{
-		player.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SLEEP );
-	}
-};
-
 class SRP_ConsumableDrug_Colorbase extends Edible_Base {
 	
 	void SRP_ConsumableDrug_ColorBase(){}

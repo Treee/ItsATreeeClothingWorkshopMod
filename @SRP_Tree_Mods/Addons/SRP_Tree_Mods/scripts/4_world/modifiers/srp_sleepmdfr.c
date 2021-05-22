@@ -93,7 +93,7 @@ class SRP_SleepMdfr: ModifierBase
   // shows the sleep icon relative to total tiredness
   int GetTirednessLevel(int currentTirednessCount)
   {
-    Print("GetTirednessLevel: " + currentTirednessCount + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
+    // Print("GetTirednessLevel: " + currentTirednessCount + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
     // the retun numbers here correlate to icons in srp_tree_iconset.imageset
     if (currentTirednessCount >= TIREDNESS_0PERCENT && currentTirednessCount <= TIREDNESS_25PERCENT){ // fully slept full moon      
       return 4;

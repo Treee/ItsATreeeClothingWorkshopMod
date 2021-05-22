@@ -1,8 +1,10 @@
 class CfgPatches
 {
-	class SRP_Tree_Drugs
+	class SRP_Tree_CigaretteCase
 	{
-    units[] = {};
+    units[] = {
+      "SRP_CigaretteCase"
+    };
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=	{ "DZ_Data", "DZ_Characters"};

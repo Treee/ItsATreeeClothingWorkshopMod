@@ -278,4 +278,4 @@ ref array<string> SRP_DamageZones_LightBleeding = {
   "LeftToeBase",
   "RightFoot",
   "RightToeBase"
-}
+};
