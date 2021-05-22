@@ -118,45 +118,47 @@ BioHazard zone is now in overdrive. Approach at your own risk with or without pr
 
 # Classnames
 
-SRP_Smokable_ZWeed
-SRP_Smokable_Cigarette
-SRP_Smokable_Cigar
+Admin_BioZone_Protection
+
+SRP_Smokable_ZWeed  
+SRP_Smokable_Cigarette  
+SRP_Smokable_Cigar  
 SRP_Smokable_Test
 
-SRP_DrugPack_ZWeed
+SRP_DrugPack_ZWeed  
 SRP_DrugPack_Cigarette
 
-SRP_DrugCarton_ZWeed
-SRP_DrugCarton_Cigarette
+SRP_DrugCarton_ZWeed  
+SRP_DrugCarton_Cigarette  
 SRP_DrugCarton_Cigar
 
-SRP_ConsumableDrug_MethSmall
-SRP_ConsumableDrug_MethSmallTainted
-SRP_ConsumableDrug_MethMedium
+SRP_ConsumableDrug_MethSmall  
+SRP_ConsumableDrug_MethSmallTainted  
+SRP_ConsumableDrug_MethMedium  
 SRP_ConsumableDrug_MethLarge
 
-SRP_ConsumableDrug_BathSalts
+SRP_ConsumableDrug_BathSalts  
 SRP_ConsumableDrug_BathSaltsTainted
 
-SRP_ConsumableDrug_SmileyAcid
-SRP_ConsumableDrug_SmileyAcidTainted
-SRP_ConsumableDrug_SkullAcid
+SRP_ConsumableDrug_SmileyAcid  
+SRP_ConsumableDrug_SmileyAcidTainted  
+SRP_ConsumableDrug_SkullAcid  
 SRP_ConsumableDrug_SkullAcidTainted
 
-SRP_Drug_Blueprint_Meth
-SRP_Drug_Blueprint_BathSalts
+SRP_Drug_Blueprint_Meth  
+SRP_Drug_Blueprint_BathSalts  
 SRP_Drug_Blueprint_Acid
 
 SRP_DrugWorkbench
 
 SRP_Naloxone
 
-SRP_SmokingPipe
+SRP_SmokingPipe  
 SRP_CigaretteCase
 
-SRP_LabTube_Clear
-SRP_LabTube_Blue
-SRP_LabTube_Red
-SRP_LabTube_Green
-SRP_LabTube_Yellow
+SRP_LabTube_Clear  
+SRP_LabTube_Blue  
+SRP_LabTube_Red  
+SRP_LabTube_Green  
+SRP_LabTube_Yellow  
 SRP_LabTubeRack
