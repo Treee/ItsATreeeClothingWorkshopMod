@@ -6,15 +6,31 @@ This is where my mods are kept!
 
 ### Lab Tubes
 
+5 colors of lab tubes that can be added to a Lab Tube Rack. Combine colors and try to discover the recipe's that exist for science!
+
+### Lab Tube Rack
+
+A rack to hold lab tubes. This item is required for crafting at the Drug Workbench
+
 ### Meth Tub
 
-### Smoking Pipe (Coming soon)
+A workbench for crafting drugs! There are many recipes and the first step is finding where they are written down but be careful... without the right combination of lab tubes, you might make something dangerous. >:3
+
+`Attachments are disabled for now`
+
+### Smoking Pipe
+
+Look dapper with this high quality pipe. Light it with matches or zippo lighter but don't forget to put it out or you might start a fire!
+
+### Cigarette Case
+
+Any classy citizen of the alpocalypse needs a place to store their narcotics. A cigarette case is the perfect blend of suave and class that says to the world "I have my shit together."
 
 ## Consumables
 
 ### Meth Crystals
 
-Side effects include Laughing, Blurred Vision, Paranoia and an erratic feeling of accomplishment
+Side effects include Laughing, Blurred Vision, Paranoia, Loss of color and an erratic feeling of accomplishment
 
 ### Bath Salts
 
@@ -22,17 +38,23 @@ Side effects include Laughing, Blurred Vision, Paranoia and a terrible feeling o
 
 ### Acid
 
+**Photosensitive Warning**
+
 Side effects include Laughing, Coughing, Vomiting, Blurred Vision, Paranoia and the feeling that something bad might happen.
 
 ## Smokables
 
 ### ZWeed
 
-Side effects include Laughing, Coughing, Blurred Vision, Dry Mouth and an overall feeling of euphoria
+Side effects include Laughing, Coughing, Blurred Vision, Dry Mouth and an overall feeling of euphoria. Light your joints with matches or a zippo.
 
 ### Cigarettes & Cigars
 
-Side effects include Coughing, Blurred Vision, Dry Mouth and a slight focused feeling
+Side effects include Coughing, Blurred Vision, Dry Mouth and a slight focused feeling. Light your cigs with matches or a zippo.
+
+## Drug Packs
+
+Ever felt like your pockets just can't hold enough drugs? Well look no further. Now you can make packs of cigarettes or joints and even make a carton to hold even more! Don't look like a chump. Make yours today!
 
 # SRP_Tree_Gestures
 
@@ -54,6 +76,45 @@ This mod adds a new emote category called **Custom** to the DayZ emote wheel. It
 ## Sleeping
 
 Lying down now causes the screen to go dark as your eye close.
+
+## Player Agents
+
+### Sleep
+
+Sleep is required by all humans, luckily you are stronger than most. Sleep 10 minutes for every 4 hours... the true uberman. If you do not sleep you will pass out.
+
+### BioHazard
+
+BioHazard zone is now in overdrive. Approach at your own risk with or without protection. Mild symptoms include dry mouth, upset stomach, splitting of skin, bleeding from all orifices, and eventually death. Most of these symptoms can be mitigate by protection. Find your local biological arms dealer to learn more.
+
+## Recipes
+
+- 1 Large Meth Jar -> 2 Medium Jars
+- 1 Medium Meth Jar -> 2 Small Jars
+- Cook Meth
+- Cook Bath Salts
+- Synthesize Acid
+- Weed and Paper -> Roll Joint
+- Weed and container -> Joint Pack
+- Cigarette and container -> Cigarette Pack
+- Cigar and container -> Cigar Box
+- Joint Pack and container -> Joint Carton
+- Cigarette Pack and container -> Cigarette Carton
+- Smokable + flammable -> Lit Smokable
+- Dynamite|Roadflare and tools -> Gunpowder
+- Grenade|Landmine and tools -> Gunpowder (Chance to explode but high yield)
+
+## Modifiers
+
+- Alcohol (Coming soon)
+- Bath Salts
+- BioHazard
+- Meth
+- Tiredness
+- Acid (Smile)
+- Acid (Skull)
+- Stoned
+- Tobacco
 
 # Classnames
 

@@ -5,6 +5,10 @@ modded class PluginRecipesManagerBase extends PluginBase
 		super.RegisterRecipies();				// Calling base RegisterRecipies()
 		// UnregisterRecipe("CraftStoneKnife");	// Removing an existing recipe
     
+    // Gunpowder Recipes
+		RegisterRecipe(new SRP_Tree_Recipe_CraftGunpowder_Simple);
+		RegisterRecipe(new SRP_Tree_Recipe_CraftGunpowder_Explosives);
+
     // Meth Recipes
 		RegisterRecipe(new SRP_Tree_Drugs_SplitMediumMethJar);
 		RegisterRecipe(new SRP_Tree_Drugs_SplitLargeMethJar);

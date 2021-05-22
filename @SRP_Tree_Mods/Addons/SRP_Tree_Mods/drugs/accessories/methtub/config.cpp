@@ -20,15 +20,6 @@ class CfgVehicles
   class Inventory_Base;
   class Ammunition_Base;
 
-	class BP1_Pawder_open: Ammunition_Base
-  {
-    scope=2;
-    inventorySlot[]=
-		{
-			"GunPowder"
-		};
-  }
-
 	class SRP_Drug_Blueprint_Meth: Inventory_Base
 	{
 		scope=2;
@@ -82,8 +73,7 @@ class CfgVehicles
       "Disinfectant",
       "Chemlight",
 			"Material_MetalSheets",
-      "Material_MetalWire",
-      "GunPowder"
+      "Material_MetalWire"
 		};
     class Cargo
 		{
@@ -144,8 +134,7 @@ class CfgVehicles
           "Disinfectant",
           "Chemlight",
           "Material_MetalSheets",
-          "Material_MetalWire",
-          "GunPowder"
+          "Material_MetalWire"
 				};
 				icon="set:dayz_inventory image:disinfectant";
 			};
@@ -172,12 +161,5 @@ class CfgSlots
 		name="AcidRecipe";
 		displayName="AcidRecipe";
 		ghostIcon="set:dayz_inventory image:paper";
-	};
-
-  class Slot_BP_Pawder
-	{
-		name="GunPowder";
-		displayName="Gun Powder";
-		ghostIcon="set:dayz_inventory image:gascanister";
 	};
 };
