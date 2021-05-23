@@ -11,6 +11,7 @@
 **/*.p3d
 **/*.tga
 
+@SRP_Tree_Mods/Keys
 \!dzsal
 \!Workshop
 @*
