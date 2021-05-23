@@ -21,7 +21,10 @@ modded class PlayerConstants
 	static const float SL_TIREDNESS_CRITICAL = 15;
 	static const float SL_TIREDNESS_LOW = 30;
 	static const float SL_TIREDNESS_NORMAL = 50;
-	static const float SL_TIREDNESS_HIGH = 80;	
+	static const float SL_TIREDNESS_HIGH = 80;
+
+  static const float BAREFOOT_MOVEMENT_BLEED_MODIFIER = 0;
+	static const float SHOES_MOVEMENT_DAMAGE_PER_STEP = 0;
 }
   // Symptom IDS
 	// SYMPTOM_COUGH = 1,

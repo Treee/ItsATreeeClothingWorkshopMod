@@ -96,6 +96,7 @@ class CfgVehicles
   };
   class SRP_Smokable_ZWeed: SRP_Smokable_ColorBase
   {
+    scope=2;
     displayName="ZWeed Joint";
     color="ZWeed";
     model="SRP_Tree_Mods\drugs\accessories\cigarette\cigarette_g.p3d";
@@ -113,6 +114,7 @@ class CfgVehicles
   };
   class SRP_Smokable_Cigarette: SRP_Smokable_ColorBase
   {
+    scope=2;
     displayName="Cigarette";
     color="Cigarette";
     model="SRP_Tree_Mods\drugs\accessories\cigarette\cigarette_g.p3d";
@@ -125,6 +127,7 @@ class CfgVehicles
   };
   class SRP_Smokable_Cigar: SRP_Smokable_ColorBase
   {
+    scope=2;
     displayName="Cigar";
     color="Cigar";
     model="SRP_Tree_Mods\drugs\accessories\cigar\cigar_g.p3d";
@@ -254,6 +257,7 @@ class CfgVehicles
 
   class SRP_DrugPack_ZWeed: SRP_DrugPack_ColorBase
 	{
+    scope=2;
     color="ZWeed";
 		displayName="Pack of ZWeed Joints";
     descriptionShort="Just looking at one of these gives you a contact high.";
@@ -266,6 +270,7 @@ class CfgVehicles
 
   class SRP_DrugPack_Cigarette: SRP_DrugPack_ColorBase
 	{
+    scope=2;
     color="Cigarette";
 		displayName="Pack of Cigarette's";
     descriptionShort="Just looking at these is giving you cancer.";

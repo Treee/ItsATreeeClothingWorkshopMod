@@ -19,6 +19,8 @@ class EmoteCoughing extends EmoteBase
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.GetSymptomManager().QueueUpPrimarySymptom( SymptomIDs.SYMPTOM_COUGH );
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -43,6 +45,8 @@ class EmoteBlind extends EmoteBase // work in progress
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.GetSymptomManager().QueueUpSecondarySymptom(SymptomIDs.SYMPTOM_FEVERBLUR);
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -66,8 +70,10 @@ class EmoteBulletHit extends EmoteBase
 
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
-    m_Player.AddHealth("", "Blood", -250); //do 250 blood dmg
+    m_Player.AddHealth("", "Blood", -500); //do 250 blood dmg
     m_Player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection("LeftForeArmRoll");
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -92,6 +98,8 @@ class EmoteBleedingSource extends EmoteBase
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection("LeftForeArmRoll");
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -116,6 +124,8 @@ class EmoteBloodloss extends EmoteBase
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.AddHealth("", "Blood", -500); //do 250 blood dmg
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -140,6 +150,8 @@ class EmoteSneeze extends EmoteBase
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.GetSymptomManager().QueueUpPrimarySymptom( SymptomIDs.SYMPTOM_SNEEZE );
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -164,6 +176,8 @@ class EmoteFeverBlur extends EmoteBase // work in progress
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.GetSymptomManager().QueueUpSecondarySymptom( SymptomIDs.SYMPTOM_FEVERBLUR );
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -188,6 +202,8 @@ class EmoteLaughter extends EmoteBase
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.GetSymptomManager().QueueUpPrimarySymptom( SymptomIDs.SYMPTOM_LAUGHTER );
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -237,6 +253,8 @@ class EmoteFreeze extends EmoteBase
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.GetSymptomManager().QueueUpPrimarySymptom( SymptomIDs.SYMPTOM_FREEZE );
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -261,6 +279,8 @@ class EmoteHot extends EmoteBase
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
     m_Player.GetSymptomManager().QueueUpPrimarySymptom( SymptomIDs.SYMPTOM_HOT );
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 
@@ -284,7 +304,9 @@ class EmoteLegBreak extends EmoteBase
 
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
-    m_Player.GetModifiersManager().ActivateModifier(eModifiers.MDF_BROKEN_LEGS);    
+    m_Player.GetModifiersManager().ActivateModifier(eModifiers.MDF_BROKEN_LEGS);
+    m_Player.SetInventorySoftLock(false);
+    m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}
 }
 

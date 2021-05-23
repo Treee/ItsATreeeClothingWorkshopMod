@@ -140,24 +140,91 @@ class ActionExtinguishSmokeSRPSmokableSelf: ActionSingleUseBase
 	{
     SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(item);
     // Debug.Log("ActionExtinguishSmokeSRPSmokableSelf","ActionCondition");
-    if (smokable.IsLit()) {
-      return  true;
+    if (smokable && smokable.IsLit()) {
+      return true;
     }
 		return false;
 	}
 
-	override void OnExecuteServer( ActionData action_data )
+	override void OnStartClient( ActionData action_data )
 	{
-		PlayerBase player = action_data.m_Player;
-		
-		if ( player && action_data.m_MainItem )
+		if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
 		{
-      // 1 is the default consumed quantity
       SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(action_data.m_MainItem);
-      if (smokable && smokable.IsLit()) {
+      if (smokable && smokable.IsLit())
+      {
         smokable.ExtinguishSmokable();
       }
-      // Debug.Log("ActionExtinguishSmokeSRPSmokableSelf","OnExecuteServer");
+		}
+	}
+	
+	override void OnStartServer( ActionData action_data )
+	{
+		if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
+		{
+      SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(action_data.m_MainItem);
+      if (smokable && smokable.IsLit())
+      {
+        smokable.SetLit(false);
+      }
+		}
+	}
+};
+
+class ActionLightSmokableInHands: ActionSingleUseBase
+{
+	void ActionLightSmokableInHands()
+	{
+    m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_LIGHTFLARE;
+	}
+	
+	override void CreateConditionComponents()  
+	{	
+		m_ConditionItem = new CCINonRuined;
+		m_ConditionTarget = new CCTNone;
+	}
+
+	override bool HasTarget()
+	{
+		return false;
+	}
+
+	override string GetText()
+	{
+		return "Ignite";
+	}
+
+	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
+	{	
+    SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(item);
+		if (smokable && !smokable.IsLit())
+		{
+			return true;
+		}
+		return false;
+	}
+	
+	override void OnStartClient( ActionData action_data )
+	{
+		if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
+		{
+      SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(action_data.m_MainItem);
+      if (smokable && !smokable.IsLit())
+      {
+        smokable.LightSmokable();
+      }
+		}
+	}
+	
+	override void OnStartServer( ActionData action_data )
+	{
+		if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
+		{
+      SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(action_data.m_MainItem);
+      if (smokable && !smokable.IsLit())
+      {
+        smokable.SetLit(true);
+      }
 		}
 	}
 };

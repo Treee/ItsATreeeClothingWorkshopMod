@@ -15,19 +15,23 @@ class SRP_Smokable_ColorBase extends Edible_Base {
 		if (m_SmokeParticle)
 		{
 			m_SmokeParticle.Stop();
-      m_isLit = false;
+      SetLit(false);
 		}
 	}
 
   void LightSmokable() {
-    if ( !GetGame().IsServer()  ||  !GetGame().IsMultiplayer() ) // client side
+    if ( GetGame().IsClient()  ||  !GetGame().IsMultiplayer() ) // client side
     {
       m_SmokeParticle = Particle.PlayOnObject(ParticleList.CAMP_NORMAL_SMOKE, this, m_ParticleLocalPos, Vector(0,0,0), true);
       m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.SIZE, 0.01);
       m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.VELOCITY, 0.01);
       m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.VELOCITY_RND, 0.01);
-      m_isLit = true;
+      SetLit(true);
     }	
+  }
+
+  void SetLit(bool isLit) {
+    m_isLit = isLit;
   }
 
   bool IsLit() {
@@ -37,6 +41,7 @@ class SRP_Smokable_ColorBase extends Edible_Base {
 	override void SetActions()
 	{
 		super.SetActions();
+		AddAction(ActionLightSmokableInHands);
 		AddAction(ActionExtinguishSmokeSRPSmokableSelf);
 		AddAction(ActionSmokeSRPSmokableSelf);
 		AddAction(ActionForceSmokeSRPSmokable);

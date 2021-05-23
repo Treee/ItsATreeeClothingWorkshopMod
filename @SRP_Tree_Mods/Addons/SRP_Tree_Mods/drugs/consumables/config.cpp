@@ -27,6 +27,7 @@ class CfgVehicles
 
   class SRP_Naloxone: Epinephrine
   {
+    scope=2;
     displayName="Naloxone";    
 		descriptionShort="Treats narcotic overdoes in an emergency situation.";
     model="\dz\gear\medical\Epinephrine.p3d";

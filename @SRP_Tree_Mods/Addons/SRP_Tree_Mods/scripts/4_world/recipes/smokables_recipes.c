@@ -131,7 +131,9 @@ class SRP_Craft_DrugPack extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    if (ingredients[0] && ingredients[0].ConfigGetString("color") == "cigar" || ingredients[0].ConfigGetString("color") == "test" || ingredients[0].ConfigGetString("color") == "clear") {
+    SRP_Smokable_Cigar cigar = SRP_Smokable_Cigar.Cast(ingredients[0]);
+    SRP_Smokable_Test test = SRP_Smokable_Test.Cast(ingredients[0]);
+    if (cigar || test) {
       return false;
     }
 		return true;
@@ -211,67 +213,5 @@ class SRP_Craft_DrugCarton extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
 		Debug.Log("Recipe Do method called","SRP_Craft_DrugCarton");
-	}
-};
-
-class SRP_Tree_Drug_LightSmokable extends RecipeBase
-{
-	override void Init()
-	{
-		m_Name = "Light";
-		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 1;//animation length in relative time units
-		m_Specialty = -0.01;// value > 0 for roughness, value < 0 for precision
-				
-		//conditions
-		m_MinDamageIngredient[0] = -1;//-1 = disable check
-		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
-		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
-		m_MinDamageIngredient[1] = -1;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
-		
-		m_MinQuantityIngredient[1] = -1;//-1 = disable check
-		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-		//----------------------------------------------------------------------------------------------------------------------
-		
-		//INGREDIENTS
-		//ingredient 1
-    InsertIngredient(0,"SRP_Smokable_ColorBase");//you can insert multiple ingredients this way
-    InsertIngredient(0,"SRP_SmokingPipe");//you can insert multiple ingredients this way
-
-		m_IngredientAddHealth[0] = 0;// 0 = do nothing
-		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
-		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
-		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2
-		InsertIngredient(1,"Matchbox");//you can insert multiple ingredients this way		
-		InsertIngredient(1,"Roadflare");//you can insert multiple ingredients this way		
-		InsertIngredient(1,"Zippo_new");//you can insert multiple ingredients this way		
-		
-		m_IngredientAddHealth[1] = 0;// 0 = do nothing
-		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = false;// false = do nothing
-		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		//----------------------------------------------------------------------------------------------------------------------
-	}
-
-	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
-	{
-		return true;
-	}
-
-	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
-	{
-    SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(ingredients[0]);
-    if (smokable && !smokable.IsLit()) {
-      smokable.LightSmokable();
-    }
-		Debug.Log("Recipe Do method called","SRP_Tree_Drug_LightSmokable");
 	}
 };

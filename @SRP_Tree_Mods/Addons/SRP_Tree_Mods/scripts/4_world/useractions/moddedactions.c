@@ -6,6 +6,7 @@ modded class ActionConstructor
     
     actions.Insert(ActionSmokeSRPSmokableSelf);
     actions.Insert(ActionForceSmokeSRPSmokable);
+    actions.Insert(ActionLightSmokableInHands);
     actions.Insert(ActionExtinguishSmokeSRPSmokableSelf);
   }
 };
