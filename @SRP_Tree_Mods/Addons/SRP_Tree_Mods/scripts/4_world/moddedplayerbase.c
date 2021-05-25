@@ -6,17 +6,16 @@ modded class PlayerBase
   EffectSound m_AcidSounds;
   EffectSound m_SleepSounds;
 
-  // override void OnConnect()
-	// {
-	// 	super.OnConnect();
-  //   Print("SRP ModdedPlayerBase: OnConnect() ");
-  //   // Start player sleepyness
-  //   if( GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SLEEP ) )
-	// 	{
-	// 		GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SLEEP );
-	// 	}
-	// 	GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SLEEP );
-  // }
+  float m_randomChance = 0;
+
+  float m_drugHue = 60;
+  float m_drugRadialXBlur = 0;
+  float m_drugRadialYBlur = 0;
+  float m_drugChromaX = 0;
+  float m_drugChromaY = 0;
+  float m_drugRadialXOffset = 0;
+  float m_drugRadialYOffset = 0;
+
 
   void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
 	{
@@ -27,6 +26,26 @@ modded class PlayerBase
 			GetGame().RPCSingleParam(man, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, man.GetIdentity());
 		}
 	}
+
+  override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
+	{
+		super.OnRPC(sender, rpc_type, ctx);
+		if (rpc_type == SRP_ERPCs.RPC_DRUGS_WEED) {
+      StonedModifier(ctx);
+    } else if (rpc_type == SRP_ERPCs.RPC_DRUGS_TOBACCO) {
+      TobaccoModifier(ctx);
+    } else if (rpc_type == SRP_ERPCs.RPC_DRUGS_SALTS) {
+      BathSaltsModifier(ctx);
+    } else if (rpc_type == SRP_ERPCs.RPC_DRUGS_METH) {
+      MethModifier(ctx);
+    } else if (rpc_type == SRP_ERPCs.RPC_DRUGS_ACID) {
+      AcidModifier(ctx);
+    } else if (rpc_type == SRP_ERPCs.RPC_DRUGS_ALCOHOL) {
+      AlcoholModifier(ctx);
+    } else if (rpc_type == SRP_ERPCs.RPC_DRUGS_TEST) {
+      AlcoholModifier(ctx);
+    }
+  }
 
   bool HasSleepAgent()
   {
@@ -89,17 +108,17 @@ modded class PlayerBase
     }
   }
 
-  void ModifyPPEEffect(float hue = 60, float radialXBlur = 0, float radialYBlur = 0, float chromaX = 0, float chromaY = 0, float radialXOffset = 0, float radialYOffset = 0) {
-    CameraEffects.changeRadBlurXEffect(radialXBlur);
-    CameraEffects.changeRadBlurYEffect(radialYBlur);
+  void ModifyPPEEffect() {
+    CameraEffects.changeRadBlurXEffect(m_drugRadialXBlur);
+    CameraEffects.changeRadBlurYEffect(m_drugRadialYBlur);
     
-    CameraEffects.changeRadBlurXOffsetEffect(radialXOffset);
-    CameraEffects.changeRadBlurXOffsetEffect(radialYOffset);
+    CameraEffects.changeRadBlurXOffsetEffect(m_drugRadialXOffset);
+    CameraEffects.changeRadBlurXOffsetEffect(m_drugRadialYOffset);
 
-    CameraEffects.changeChromaX(chromaX);
-    CameraEffects.changeChromaY(chromaY);
+    CameraEffects.changeChromaX(m_drugChromaX);
+    CameraEffects.changeChromaY(m_drugChromaY);
 
-    CameraEffects.changeHue(hue);
+    CameraEffects.changeHue(m_drugHue);
   }
 
   void DisableAllMyModifiers() {
@@ -118,98 +137,159 @@ modded class PlayerBase
   }
 
   // Drug Effects
-  void StonedModifier(float stoned, float radialBlur = 0) {
-    ModifyPPEEffect(stoned, radialBlur, radialBlur);
-    float chance = Math.RandomFloat01() * 100;
-    if (chance > 85) // 20% chance to cough
+  void StonedModifier(ParamsReadContext ctx) {
+    Param2<float, float> data;
+    if ( !ctx.Read( data ) ) return; // auto return if we dont have data
+
+    m_drugHue += data.param1;
+    m_drugRadialXBlur += data.param2;
+    m_drugRadialYBlur += data.param2;
+
+    ModifyPPEEffect();
+    m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance > 90 && m_randomChance <= 95)
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
-    }
-    chance = Math.RandomFloat01() * 100;
-    if (chance > 90) // 15% chance to laugh
+    } 
+    else if (m_randomChance > 95)
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
     }
-    // Print("StonedModifier stone: " + stonedValue + " radial: " + radialBlur);
   }
   
-  void TobaccoModifier(float tobaccod, float radialBlur = 0) {
-    ModifyPPEEffect(tobaccod, radialBlur, radialBlur);
-    float chanceToCough = Math.RandomFloat01() * 100;
-    if (chanceToCough > 90) // 20% chance to cough
+  void TobaccoModifier(ParamsReadContext ctx) {
+    Param2<float, float> data;
+    if ( !ctx.Read( data ) ) return; // auto return if we dont have data
+    
+    m_drugHue += data.param1;
+    m_drugRadialXBlur += data.param2;
+    m_drugRadialYBlur += data.param2;
+    
+    ModifyPPEEffect();
+    m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance > 90) // 20% chance to cough
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
     }
-    // Print("TobaccoModifier tobacco: " + tobaccoValue + " radial: " + radialBlur);
   }
 
-  void BathSaltsModifier(float hue = 60, float radialBlurX = 0, float radialBlurY = 0, float chromaX = 0, float chromaY = 0)
-  {
-    ModifyPPEEffect(hue, radialBlurX, radialBlurY, chromaX, chromaY);
-    float chance = Math.RandomFloat01() * 100;
-    if (chance > 80) // 20% chance to cough
+  void BathSaltsModifier(ParamsReadContext ctx) {
+    Param5<float, float, float, float, float> data;
+    if ( !ctx.Read( data ) ) return; // auto return if we dont have data
+    
+    m_drugHue += data.param1;
+    m_drugRadialXBlur += data.param2;
+    m_drugRadialYBlur += data.param3;
+    m_drugChromaX += data.param4;
+    m_drugChromaY += data.param5;
+
+    ModifyPPEEffect();
+    m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance > 70 && m_randomChance <= 80)
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_FEVERBLUR);
     }
-    chance = Math.RandomFloat01() * 100;
-    if (chance > 70 && chance < 90)
+    else if (m_randomChance > 80 && m_randomChance <= 90)
     {
       PlaySoundSet(m_AcidSounds, GetScarySound(), 0, 0);
-    } else if (chance > 89) {
+    }
+    else if (m_randomChance > 90) {
       PlaySoundSet(m_AcidSounds, GetHappySound(), 0, 0);
     }
     // Print("BathSaltsModifier radialBlurX: " + radialBlurX + " chromaX: " + chromaX + " chromaY: " + chromaY);
   }
 
-  void MethModifier(float hue = 60, float radialBlurX = 0, float radialBlurY = 0)
-  {
-    ModifyPPEEffect(hue, radialBlurX, radialBlurY);
-    float chance = Math.RandomFloat01() * 100;
-    if (chance > 85) // 15% chance to laugh
+  void MethModifier(ParamsReadContext ctx) {
+    Param2<float, float> data;
+    if ( !ctx.Read( data ) ) return; // auto return if we dont have data
+    
+    m_drugHue += data.param1;
+    m_drugRadialXBlur += data.param2;
+    m_drugRadialYBlur += data.param2;
+
+    ModifyPPEEffect();
+
+    m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance > 85 && m_randomChance <= 90) // 15% m_randomChance to laugh
     {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-    }
-    chance = Math.RandomFloat01() * 100;
-    if (chance > 90 && chance < 95)
+    } else if (m_randomChance > 90 && m_randomChance <= 95)
     {
       PlaySoundSet(m_AcidSounds, GetScarySound(), 0, 0);
-    } else if (chance > 94) {
+    } else if (m_randomChance > 95) {
       PlaySoundSet(m_AcidSounds, GetHappySound(), 0, 0);
     }    
     // Print("BathSaltsModifier radialBlurX: " + radialBlurX + " chromaX: " + chromaX + " chromaY: " + chromaY);
   }
 
-  void AcidModifier(float radialBlurX = 0, float radialBlurY = 0, float chromaX = 0, float chromaY = 0, float hue = 60) {
-    ModifyPPEEffect(hue, radialBlurX, radialBlurY, chromaX, chromaY);
-    float chance = Math.RandomFloat01() * 100;
-    if (chance > 70 && chance < 90)
+  void AcidModifier(ParamsReadContext ctx) {
+    Param5<float, float, float, float, float> data;
+    if ( !ctx.Read( data ) ) return; // auto return if we dont have data
+    
+    m_drugHue += data.param1;
+    m_drugRadialXBlur += data.param2;
+    m_drugRadialYBlur += data.param3;
+    m_drugChromaX += data.param4;
+    m_drugChromaY += data.param5;
+    
+    ModifyPPEEffect();
+    m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance > 70 && m_randomChance <= 90)
     {
       PlaySoundSet(m_AcidSounds, GetScarySound(), 0, 0);
-    } else if (chance > 89) {
+    } else if (m_randomChance > 90) {
       PlaySoundSet(m_AcidSounds, GetHappySound(), 0, 0);
     }
-    chance = Math.RandomFloat01() * 100;
-    if (chance > 10 && chance < 30) {
+    m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance > 10 && m_randomChance <= 30) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-    } else if (chance > 30 && chance < 40) {
+    } else if (m_randomChance > 30 && m_randomChance <= 40) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_FREEZE);
-    } else if (chance > 40 && chance < 60) {
+    } else if (m_randomChance > 40 && m_randomChance <= 60) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_HOT);
-    } else if (chance > 60 && chance < 80) {
+    } else if (m_randomChance > 60 && m_randomChance <= 80) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_SNEEZE);
-    } else if (chance > 80 && chance < 90) {
+    } else if (m_randomChance > 80 && m_randomChance <= 90) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-    } else if (chance > 90 && chance < 100) {
+    } else if (m_randomChance > 90 && m_randomChance <= 100) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
     }
     // Print("AcidModifier chroma: " + chroma + " radial: " + radialBlur + " hue: " + hue);
   }
 
-  void AlcoholModifier(float hue = 60, float radialOffsetXValue = 0,  float radialOffsetYValue = 0, int radialBlur = 0) {
-    ModifyPPEEffect(hue, radialBlur, radialBlur, 0, 0, radialOffsetXValue, radialOffsetYValue);
+  void AlcoholModifier(ParamsReadContext ctx) {
+    Param4<float, float, float, float> data;
+    if ( !ctx.Read( data ) ) return; // auto return if we dont have data
     
-    float chance = Math.RandomFloat01() * 100;
-    if (chance > 85) {
+    m_drugHue += data.param1;
+    m_drugRadialXBlur += data.param2;
+    m_drugRadialYBlur += data.param2;
+    m_drugRadialXOffset += data.param3;
+    m_drugRadialYOffset += data.param4;
+
+    ModifyPPEEffect();
+    
+    m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance >= 85) {
+      GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
+    }
+    // Print("AlcoholModifier: "radial: " + radialBlur + " hue: " + hue);
+  }
+
+  void TestModifier(ParamsReadContext ctx) {
+    Param4<float, float, float, float> data;
+    if ( !ctx.Read( data ) ) return; // auto return if we dont have data
+    
+    m_drugHue += data.param1;
+    m_drugRadialXBlur += data.param2;
+    m_drugRadialYBlur += data.param2;
+    m_drugRadialXOffset += data.param3;
+    m_drugRadialYOffset += data.param4;
+
+    ModifyPPEEffect();
+    
+    m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance >= 85) {
       GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
     }
     // Print("AlcoholModifier: "radial: " + radialBlur + " hue: " + hue);

@@ -5,20 +5,20 @@ class SRP_TobaccoMdfr: ModifierBase
   float m_tobaccod = 60;
   float m_tobaccodMax = 75;
   float m_tobaccodMin = 60;
-  float m_tobaccodIntensity = 0.5;
+  float m_tobaccodIntensity = 0.05;
 
   float m_radial = 0;
   float m_radialMax = 4;
   float m_radialMin = 0;
-  float m_radialIntensity = 0.5;
+  float m_radialIntensity = 0.05;
 	
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
 		m_ID 					= SRP_eModifiers.MDF_TOBACCO;
-		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE;
-		m_TickIntervalActive 	= DEFAULT_TICK_TIME_ACTIVE;
+		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 	}
 
 	override bool ActivateCondition(PlayerBase player)
@@ -44,7 +44,8 @@ class SRP_TobaccoMdfr: ModifierBase
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
-    player.TobaccoModifier(60, 0);
+    Param2<float, float> m_modifierValues = new Param2<float, float>(60, 0);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_TOBACCO, m_modifierValues, true, player.GetIdentity());    
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -76,6 +77,8 @@ class SRP_TobaccoMdfr: ModifierBase
       m_radialIntensity *= -1;
     }
     m_radial += (m_radialIntensity * deltaT);
-    player.TobaccoModifier(m_tobaccod, m_radial);
+
+    Param2<float, float> m_modifierValues = new Param2<float, float>(m_tobaccod, m_radial);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_TOBACCO, m_modifierValues, false, player.GetIdentity());    
 	}	
 };

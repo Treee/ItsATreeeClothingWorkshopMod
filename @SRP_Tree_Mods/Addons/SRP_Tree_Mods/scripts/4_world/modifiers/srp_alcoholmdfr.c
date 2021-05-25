@@ -5,20 +5,20 @@ class SRP_AlcoholMdfr: ModifierBase
   float m_radialOffsetX = 0;
   float m_radialOffsetXMax = 10;
   float m_radialOffsetXMin = 0;
-  float m_radialOffsetXIntensity = 0.5;
+  float m_radialOffsetXIntensity = 0.05;
 
   float m_radialOffsetY = 0;
   float m_radialOffsetYMax = 10;
   float m_radialOffsetYMin = 0;
-  float m_radialOffsetYIntensity = 0.5;
+  float m_radialOffsetYIntensity = 0.05;
 	
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
 		m_ID 					= SRP_eModifiers.MDF_ALCOHOL;
-		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE;
-		m_TickIntervalActive 	= DEFAULT_TICK_TIME_ACTIVE;
+		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 	}
 
 	override bool ActivateCondition(PlayerBase player)
@@ -38,22 +38,13 @@ class SRP_AlcoholMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    m_radialOffsetX = 0;
-    m_radialOffsetXMax = 10;
-    m_radialOffsetXMin = 0;
-    m_radialOffsetXIntensity = 0.5;
-
-    m_radialOffsetY = 0;
-    m_radialOffsetYMax = 10;
-    m_radialOffsetYMin = 0;
-    m_radialOffsetYIntensity = 0.5;
-    player.AlcoholModifier();
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
-    player.AlcoholModifier(); // default values
+    Param4<float, float, float, float> m_modifierValues = new Param4<float, float, float, float>(60, 0, 0, 0);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ALCOHOL, m_modifierValues, false, player.GetIdentity());    
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -86,8 +77,9 @@ class SRP_AlcoholMdfr: ModifierBase
     }
     m_radialOffsetY += (m_radialOffsetYIntensity * deltaT);
 
+    float randomHue = Math.RandomFloat(50, 58);
     // oscilate between 1 and 7
-    player.AlcoholModifier(55, m_radialOffsetX, m_radialOffsetY, 5);
-
+    Param4<float, float, float, float> m_modifierValues = new Param4<float, float, float, float>(randomHue, 5, m_radialOffsetX, m_radialOffsetY);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ALCOHOL, m_modifierValues, false, player.GetIdentity());    
 	}	
 };

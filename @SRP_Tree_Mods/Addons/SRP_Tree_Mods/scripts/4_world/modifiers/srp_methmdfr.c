@@ -4,7 +4,7 @@ class SRP_MethMdfr: ModifierBase
   
   float m_radialBlur = 0;
   float m_radialBlurMax = 12;
-  float m_radialBlurIntensity = 0.1;
+  float m_radialBlurIntensity = 0.01;
 
 	
 	override void Init()
@@ -12,8 +12,8 @@ class SRP_MethMdfr: ModifierBase
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
 		m_ID 					= SRP_eModifiers.MDF_METH;
-		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE;
-		m_TickIntervalActive 	= DEFAULT_TICK_TIME_ACTIVE;
+		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 	}
 
 	override bool ActivateCondition(PlayerBase player)
@@ -34,13 +34,13 @@ class SRP_MethMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on bath salts");
-    player.MethModifier();
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not on bath salts");
-    player.MethModifier(); // default values
+    Param2<float, float> m_modifierValues = new Param2<float, float>(60, 0);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_METH, m_modifierValues, false, player.GetIdentity());    
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -65,7 +65,8 @@ class SRP_MethMdfr: ModifierBase
       m_radialBlurIntensity *= -1;
     }
     m_radialBlur += (m_radialBlurIntensity * deltaT);
-
-    player.MethModifier(50, m_radialBlur, m_radialBlur);
+    float randomHue = Math.RandomFloat(48, 55);
+    Param2<float, float> m_modifierValues = new Param2<float, float>(randomHue, m_radialBlur);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_METH, m_modifierValues, false, player.GetIdentity());    
 	}	
 };

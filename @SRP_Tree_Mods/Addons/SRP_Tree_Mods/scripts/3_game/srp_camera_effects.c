@@ -50,12 +50,6 @@ class CameraEffects: PPEffects
 
   }
 
-    // Postprocess effects materials.
-	void init()
-	{
-
-	}
-
   // Function used to apply NVG grain effects on a player.
   static void setNVGEffect(float sharpness, float grain_size)
   {

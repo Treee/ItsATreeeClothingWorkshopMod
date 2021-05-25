@@ -8,15 +8,15 @@ class SRP_SkullAcidMdfr: ModifierBase
   float m_hue = 60;
   float m_hueMax = 60;
   float m_hueMin = 30;
-  float m_hueIntensity = 1;
+  float m_hueIntensity = 0.1;
 	
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
 		m_ID 					= SRP_eModifiers.MDF_ACIDSKULL;
-		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE;
-		m_TickIntervalActive 	= DEFAULT_TICK_TIME_ACTIVE;
+		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 	}
 
 	override bool ActivateCondition(PlayerBase player)
@@ -37,21 +37,23 @@ class SRP_SkullAcidMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on skull acid");
-    m_chromaX = 3;
-    m_chromaY = 4;
+    m_chromaX = Math.RandomFloat(2, 3);
+    m_chromaY = Math.RandomFloat(2, 4);
 
     m_hue = 60;
     m_hueMax = 60;
     m_hueMin = 30;
     m_hueIntensity = -1; // we want to decrease from 60 for starters
 
-    player.AcidModifier(5, 5, m_chromaX, m_chromaY, m_hue);
+    Param5<float, float, float, float, float> m_modifierValues = new Param5<float, float, float, float, float>(m_hue, 3, 3, m_chromaX, m_chromaY);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ACID, m_modifierValues, false, player.GetIdentity());    
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not on skull acid");
-    player.AcidModifier(0, 0, 0, 0, 60); // default values
+    Param5<float, float, float, float, float> m_modifierValues = new Param5<float, float, float, float, float>(60, 0, 0, 0, 0);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ACID, m_modifierValues, false, player.GetIdentity());    
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -77,6 +79,7 @@ class SRP_SkullAcidMdfr: ModifierBase
     }
     m_hue += (m_hueIntensity * deltaT);    
 
-    player.AcidModifier(5, 5, m_chromaX, m_chromaY, m_hue);
+    Param5<float, float, float, float, float> m_modifierValues = new Param5<float, float, float, float, float>(m_hue, 5, 5, m_chromaX, m_chromaY);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ACID, m_modifierValues, false, player.GetIdentity());    
 	}	
 };

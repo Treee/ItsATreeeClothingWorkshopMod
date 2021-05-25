@@ -7,7 +7,6 @@ modded class ModifiersManager
 		AddModifier(new SRP_TestMdfr);
 		AddModifier(new SRP_SleepMdfr);
 		AddModifier(new SRP_BioHazardMdfr);
-		// AddModifier(new SRP_TestMdfr);
 
 		AddModifier(new SRP_TobaccoMdfr);
 		AddModifier(new SRP_StonedMdfr);
@@ -17,4 +16,5 @@ modded class ModifiersManager
 		AddModifier(new SRP_MethMdfr);
 		AddModifier(new SRP_AlcoholMdfr);
 	}
+
 }

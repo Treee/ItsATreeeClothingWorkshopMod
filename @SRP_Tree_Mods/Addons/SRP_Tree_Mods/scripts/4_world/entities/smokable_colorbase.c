@@ -50,35 +50,8 @@ class SRP_Smokable_ColorBase extends Edible_Base {
 
 class SRP_SmokingPipe extends SRP_Smokable_ColorBase {};
 
-class SRP_Smokable_Cigarette extends SRP_Smokable_ColorBase {
-  override void OnConsume(float amount, PlayerBase consumer)
-	{				
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TOBACCO ) )
-		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_TOBACCO );
-		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_TOBACCO );
-	}
-};
+class SRP_Smokable_Cigarette extends SRP_Smokable_ColorBase {};
 class SRP_Smokable_Cigar extends SRP_Smokable_Cigarette { };
 
-class SRP_Smokable_ZWeed extends SRP_Smokable_ColorBase {
-  override void OnConsume(float amount, PlayerBase consumer)
-	{				
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_STONED ) )
-		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_STONED );
-		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_STONED );
-	}
-};
-class SRP_Smokable_Test extends SRP_Smokable_ColorBase {
-  override void OnConsume(float amount, PlayerBase consumer)
-	{				
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TEST ) )
-		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_TEST );
-		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_TEST );
-	}
-};
+class SRP_Smokable_ZWeed extends SRP_Smokable_ColorBase {};
+class SRP_Smokable_Test extends SRP_Smokable_ColorBase {};

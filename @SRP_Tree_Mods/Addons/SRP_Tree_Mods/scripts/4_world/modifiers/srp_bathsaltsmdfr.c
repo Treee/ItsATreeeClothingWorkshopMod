@@ -4,15 +4,15 @@ class SRP_BathSaltsMdfr: ModifierBase
   
   float m_radialBlur = 0;
   float m_radialBlurMax = 12;
-  float m_radialBlurIntensity = 0.1;
+  float m_radialBlurIntensity = 0.01;
 
   float m_chromaX = 0;
   float m_chromaXMax = 3;  
-  float m_chromaXIntensity = 1;
+  float m_chromaXIntensity = 0.1;
 
   float m_chromaY = 0;
   float m_chromaYMax = 3;
-  float m_chromaYIntensity = 1;
+  float m_chromaYIntensity = 0.1;
 
 	
 	override void Init()
@@ -20,8 +20,8 @@ class SRP_BathSaltsMdfr: ModifierBase
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
 		m_ID 					= SRP_eModifiers.MDF_BATHSALTS;
-		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE;
-		m_TickIntervalActive 	= DEFAULT_TICK_TIME_ACTIVE;
+		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 	}
 
 	override bool ActivateCondition(PlayerBase player)
@@ -42,15 +42,15 @@ class SRP_BathSaltsMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on bath salts");
-    m_chromaX = Math.RandomInt(0, 3);
-    m_chromaY = Math.RandomInt(0, 3);
-    player.BathSaltsModifier();
+    m_chromaX = Math.RandomFloat(0, 3);
+    m_chromaY = Math.RandomFloat(0, 3);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not on bath salts");
-    player.BathSaltsModifier(); // default values
+    Param5<float, float, float, float, float> m_modifierValues = new Param5<float, float, float, float, float>(60, 0, 0, 0, 0);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_SALTS, m_modifierValues, false, player.GetIdentity());    
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -76,6 +76,7 @@ class SRP_BathSaltsMdfr: ModifierBase
     }
     m_radialBlur += (m_radialBlurIntensity * deltaT);
 
-    player.BathSaltsModifier(45, m_radialBlur, m_radialBlur, m_chromaX, m_chromaY);
+    Param5<float, float, float, float, float> m_modifierValues = new Param5<float, float, float, float, float>(45, m_radialBlur, m_radialBlur, m_chromaX, m_chromaY);
+    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_SALTS, m_modifierValues, false, player.GetIdentity());    
 	}	
 };

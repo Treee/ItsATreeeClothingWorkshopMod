@@ -179,8 +179,8 @@ class CfgVehicles
   class SRP_ConsumableDrug_BathSalts: SRP_ConsumableDrug_Colorbase
 	{
 		scope=2;
-		displayName="Jar of Bath Salts";
-		descriptionShort="This jar contains many delicous bath salts. Copnsuming these shows you have no regard for your life.";
+		displayName="Jar of Bath Salts (Photosensitivity Warning!!)";
+		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Copnsuming these shows you have no regard for your life.";
 		model="\dz\gear\food\Honey.p3d";
     color="BathSalts";
 		itemSize[]={2,2};
@@ -208,8 +208,8 @@ class CfgVehicles
   class SRP_ConsumableDrug_BathSaltsTainted: SRP_ConsumableDrug_Colorbase
 	{
 		scope=2;
-		displayName="Jar of Bath Salts";
-		descriptionShort="This jar contains many delicous bath salts. Copnsuming these shows you have no regard for your life.";
+		displayName="Jar of Bath Salts (Photosensitivity Warning!!)";
+		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Copnsuming these shows you have no regard for your life.";
 		model="\dz\gear\food\Honey.p3d";
     color="BathSaltsTainted";
 		itemSize[]={2,2};
