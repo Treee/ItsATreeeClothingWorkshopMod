@@ -1,18 +1,8 @@
 class SRP_AlcoholMdfr: ModifierBase
 {
 	const int LIFETIME = 100;
-  
-  float m_radialOffsetX = 0;
-  float m_radialOffsetXMax = 10;
-  float m_radialOffsetXMin = 0;
-  float m_radialOffsetXIntensity = 0.05;
-
-  float m_radialOffsetY = 0;
-  float m_radialOffsetYMax = 10;
-  float m_radialOffsetYMin = 0;
-  float m_radialOffsetYIntensity = 0.05;
 	
-	override void Init()
+  override void Init()
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
@@ -23,7 +13,7 @@ class SRP_AlcoholMdfr: ModifierBase
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return false;
+		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ALCOHOL);
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -38,13 +28,16 @@ class SRP_AlcoholMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
+    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ALCOHOL)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
+    }
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
-    Param4<float, float, float, float> m_modifierValues = new Param4<float, float, float, float>(60, 0, 0, 0);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ALCOHOL, m_modifierValues, false, player.GetIdentity());    
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -63,23 +56,12 @@ class SRP_AlcoholMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-    if (m_radialOffsetX > m_radialOffsetXMax){
-      m_radialOffsetXIntensity *= -1;
-    } else if (m_radialOffsetX > m_radialOffsetXMin) {
-      m_radialOffsetXIntensity *= -1;
+    float energy_loss = deltaT * PlayerConstants.ENERGY_LOSS_HC_MINUS_LOW;
+		player.GetStatEnergy().Add(-energy_loss);
+    
+    float m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance >= 85) {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
     }
-    m_radialOffsetX += (m_radialOffsetXIntensity * deltaT);
-
-    if (m_radialOffsetY > m_radialOffsetYMax){
-      m_radialOffsetYIntensity *= -1;
-    } else if (m_radialOffsetY > m_radialOffsetYMin) {
-      m_radialOffsetYIntensity *= -1;
-    }
-    m_radialOffsetY += (m_radialOffsetYIntensity * deltaT);
-
-    float randomHue = Math.RandomFloat(50, 58);
-    // oscilate between 1 and 7
-    Param4<float, float, float, float> m_modifierValues = new Param4<float, float, float, float>(randomHue, 5, m_radialOffsetX, m_radialOffsetY);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ALCOHOL, m_modifierValues, false, player.GetIdentity());    
 	}	
 };

@@ -1,15 +1,7 @@
 class SRP_SkullAcidMdfr: ModifierBase
 {
 	const int LIFETIME = 600; // 10 minutes
-  
-  float m_chromaX = 3;  
-  float m_chromaY = 1;
 
-  float m_hue = 60;
-  float m_hueMax = 60;
-  float m_hueMin = 30;
-  float m_hueIntensity = 0.1;
-	
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -21,7 +13,7 @@ class SRP_SkullAcidMdfr: ModifierBase
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return false;
+		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSKULL);
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -37,23 +29,16 @@ class SRP_SkullAcidMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on skull acid");
-    m_chromaX = Math.RandomFloat(2, 3);
-    m_chromaY = Math.RandomFloat(2, 4);
-
-    m_hue = 60;
-    m_hueMax = 60;
-    m_hueMin = 30;
-    m_hueIntensity = -1; // we want to decrease from 60 for starters
-
-    Param5<float, float, float, float, float> m_modifierValues = new Param5<float, float, float, float, float>(m_hue, 3, 3, m_chromaX, m_chromaY);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ACID, m_modifierValues, false, player.GetIdentity());    
+    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSKULL)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
+    }
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not on skull acid");
-    Param5<float, float, float, float, float> m_modifierValues = new Param5<float, float, float, float, float>(60, 0, 0, 0, 0);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ACID, m_modifierValues, false, player.GetIdentity());    
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -72,14 +57,25 @@ class SRP_SkullAcidMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{    
-    if (m_hue > m_hueMax && m_hueIntensity > 0) {
-      m_hueIntensity *= -1;
-    } else if (m_hue < m_hueMin && m_hueIntensity < 0) {
-      m_hueIntensity *= -1;
+    float m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance > 70 && m_randomChance <= 90)
+    {
+      player.PlayScarySound();
+    } else if (m_randomChance > 90) {
+      player.PlayHappySound();
     }
-    m_hue += (m_hueIntensity * deltaT);    
-
-    Param5<float, float, float, float, float> m_modifierValues = new Param5<float, float, float, float, float>(m_hue, 5, 5, m_chromaX, m_chromaY);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_ACID, m_modifierValues, false, player.GetIdentity());    
+    if (m_randomChance > 10 && m_randomChance <= 30) {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
+    } else if (m_randomChance > 30 && m_randomChance <= 40) {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_FREEZE);
+    } else if (m_randomChance > 40 && m_randomChance <= 60) {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_HOT);
+    } else if (m_randomChance > 60 && m_randomChance <= 80) {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_SNEEZE);
+    } else if (m_randomChance > 80 && m_randomChance <= 90) {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
+    } else if (m_randomChance > 90 && m_randomChance <= 100) {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
+    }	
 	}	
 };

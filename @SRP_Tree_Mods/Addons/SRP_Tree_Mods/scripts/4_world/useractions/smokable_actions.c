@@ -49,25 +49,12 @@ class ActionSmokeSRPSmokableSelf: ActionContinuousBase
 
   override void OnEndServer( ActionData action_data )
 	{	
-    Print("Smokable OnEndServer");
+    // Print("Smokable OnEndServer");
     action_data.m_Player.Consume(action_data.m_MainItem, 1, EConsumeType.ITEM_SINGLE_TIME);
-		// if ( action_data.m_MainItem && action_data.m_MainItem.GetQuantity() > 0 )
-		// {
-		// 	action_data.m_MainItem.AddQuantity(-1);
-		// }
-    string itemName = action_data.m_MainItem.GetType();
-    if (itemName == "SRP_Smokable_ZWeed") {
-      action_data.m_Player.GetModifiersManager().ActivateModifier(SRP_eModifiers.MDF_STONED);
-    } else if (itemName == "SRP_Smokable_Cigarette") {
-      action_data.m_Player.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_TOBACCO);
-    } else if (itemName == "SRP_Smokable_Cigar") {
-      action_data.m_Player.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_TOBACCO);
-    } else if (itemName == "SRP_SmokingPipe") {
-      action_data.m_Player.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_TOBACCO);
-    } else if (itemName == "SRP_Smokable_Test") {
-      action_data.m_Player.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_TEST);
-    }
-
+		if ( action_data.m_MainItem && action_data.m_MainItem.GetQuantity() < 0.01 )
+		{
+			action_data.m_MainItem.SetQuantity(0);
+		}
 	}
 };
 

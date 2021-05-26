@@ -1,17 +1,7 @@
 class SRP_TobaccoMdfr: ModifierBase
 {
 	const int LIFETIME = 90;
-  
-  float m_tobaccod = 60;
-  float m_tobaccodMax = 75;
-  float m_tobaccodMin = 60;
-  float m_tobaccodIntensity = 0.05;
 
-  float m_radial = 0;
-  float m_radialMax = 4;
-  float m_radialMin = 0;
-  float m_radialIntensity = 0.05;
-	
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -23,7 +13,7 @@ class SRP_TobaccoMdfr: ModifierBase
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return false;
+		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TOBACCO);
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -39,13 +29,16 @@ class SRP_TobaccoMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is tobacco buzzed");
+    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TOBACCO)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
+    }
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
-    Param2<float, float> m_modifierValues = new Param2<float, float>(60, 0);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_TOBACCO, m_modifierValues, true, player.GetIdentity());    
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -64,21 +57,10 @@ class SRP_TobaccoMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-    if (m_tobaccod > m_tobaccodMax) {
-      m_tobaccodIntensity *= -1;
-    } else if (m_tobaccod < m_tobaccodMin) {
-      m_tobaccodIntensity *= -1;
-    }
-    m_tobaccod += (m_tobaccodIntensity * deltaT);
-
-    if (m_radial > m_radialMax) {
-      m_radialIntensity *= -1;
-    } else if (m_radial < m_radialMin) {
-      m_radialIntensity *= -1;
-    }
-    m_radial += (m_radialIntensity * deltaT);
-
-    Param2<float, float> m_modifierValues = new Param2<float, float>(m_tobaccod, m_radial);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_TOBACCO, m_modifierValues, false, player.GetIdentity());    
-	}	
+    float m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance < 35)
+    {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
+    } 	
+  }	
 };

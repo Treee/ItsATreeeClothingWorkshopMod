@@ -2,6 +2,7 @@ class SRP_Naloxone extends Epinephrine {
   override void OnApply(PlayerBase player)
 	{
     player.DisableAllMyModifiers();
+    player.RemoveAllSymptoms();
 	}
 };
 
@@ -20,7 +21,7 @@ class SRP_ConsumableDrug_Colorbase extends Edible_Base {
 class SRP_ConsumableDrug_SmileyAcid extends SRP_ConsumableDrug_Colorbase {
 
   override void OnConsume(float amount, PlayerBase consumer)
-	{				
+	{
 		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSMILE ) )
 		{
 			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ACIDSMILE );

@@ -51,8 +51,7 @@ class CfgVehicles
     weight=100;
     itemSize[]={1,2};
     rotationFlags=16;
-    destroyOnEmpty=1;
-		varQuantityDestroyOnMin=0;
+    destroyOnEmpty=1;	
     varQuantityInit=5;
 		varQuantityMin=0;
 		varQuantityMax=5;

@@ -1,17 +1,7 @@
 class SRP_StonedMdfr: ModifierBase
-{
-	const int LIFETIME = 150;
-  
-  float m_stoned = 60;
-  float m_stonedMax = 90;
-  float m_stonedMin = 60;
-  float m_stonedIntensity = 0.05;
+{  
+  const int LIFETIME = 150;
 
-  float m_radial = 0;
-  float m_radialMax = 4;
-  float m_radialMin = 0;
-  float m_radialIntensity = 0.05;
-	
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -23,7 +13,7 @@ class SRP_StonedMdfr: ModifierBase
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return false;
+		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_STONED);
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -38,21 +28,24 @@ class SRP_StonedMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    Print("SRP_StonedMdfr:: OnActivate");
+    // Print("SRP_StonedMdfr:: OnActivate"); // reset the modifier
+    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_STONED)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_WEED);
+    }
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_WEED);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
-    // Print("Player is not stoned");
-    Param2<float, float> m_modifierValues = new Param2<float, float>(60, 0);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_WEED, m_modifierValues, true, player.GetIdentity());    
+    // Print("SRP_StonedMdfr:: OnDeactivate");
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_WEED);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
 	{
 		float attached_time = GetAttachedTime();
 		
-		if( attached_time >= LIFETIME )
+		if ( attached_time >= LIFETIME )
 		{
 			return true;
 		}
@@ -64,21 +57,17 @@ class SRP_StonedMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-    if (m_stoned > m_stonedMax) {
-      m_stonedIntensity *= -1;
-    } else if (m_stoned < m_stonedMin) {
-      m_stonedIntensity *= -1;
-    }
-    m_stoned += (m_stonedIntensity * deltaT);
+    float water_loss = deltaT * PlayerConstants.WATER_LOSS_FEVER;
+		player.GetStatWater().Add(-water_loss);
 
-    if (m_radial > m_radialMax) {
-      m_radialIntensity *= -1;
-    } else if (m_radial < m_radialMin) {
-      m_radialIntensity *= -1;
+    float m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance < 35)
+    {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
+    } 
+    else if (m_randomChance > 65)
+    {
+      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
     }
-    m_radial += (m_radialIntensity * deltaT);
-
-    Param2<float, float> m_modifierValues = new Param2<float, float>(m_stoned, m_radial);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_WEED, m_modifierValues, false, player.GetIdentity());    
 	}	
 };

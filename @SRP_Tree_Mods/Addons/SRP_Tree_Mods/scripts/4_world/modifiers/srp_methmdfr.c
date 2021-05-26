@@ -1,12 +1,7 @@
 class SRP_MethMdfr: ModifierBase
 {
 	const int LIFETIME = 600; // 10 minutes
-  
-  float m_radialBlur = 0;
-  float m_radialBlurMax = 12;
-  float m_radialBlurIntensity = 0.01;
 
-	
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -18,7 +13,7 @@ class SRP_MethMdfr: ModifierBase
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return false;
+		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_METH);
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -33,14 +28,17 @@ class SRP_MethMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    // Print("Player is on bath salts");
+    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_METH)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
+    }
+    player.GetStaminaHandler().SetDepletionMultiplier(0.5);
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
-    // Print("Player is not on bath salts");
-    Param2<float, float> m_modifierValues = new Param2<float, float>(60, 0);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_METH, m_modifierValues, false, player.GetIdentity());    
+    player.GetStaminaHandler().SetDepletionMultiplier(1);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -58,15 +56,13 @@ class SRP_MethMdfr: ModifierBase
 	}
 
 	override void OnTick(PlayerBase player, float deltaT)
-	{    
-    if (m_radialBlur > m_radialBlurMax) { // if we hit the max, reverse the sign
-      m_radialBlurIntensity *= -1;
-    } else if (m_radialBlur < 4 && m_radialBlurIntensity < 0) { // if we hit the min AND we are still decreasing
-      m_radialBlurIntensity *= -1;
-    }
-    m_radialBlur += (m_radialBlurIntensity * deltaT);
-    float randomHue = Math.RandomFloat(48, 55);
-    Param2<float, float> m_modifierValues = new Param2<float, float>(randomHue, m_radialBlur);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_METH, m_modifierValues, false, player.GetIdentity());    
-	}	
+	{
+    m_Player.AddHealth("", "Blood", 3.5 * deltaT); //do blood dmg over time
+    float m_randomChance = Math.RandomFloat01() * 100;
+    if (m_randomChance > 90 && m_randomChance <= 95) {
+      player.PlayScarySound();
+    } else if (m_randomChance > 95) {
+      player.PlayHappySound();
+    }  
+  }	
 };

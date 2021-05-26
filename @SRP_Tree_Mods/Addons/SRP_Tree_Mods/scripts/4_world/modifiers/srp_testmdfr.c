@@ -1,12 +1,7 @@
 class SRP_TestMdfr: ModifierBase
 {
 	const int LIFETIME = 100;
-  
-  float m_radialOffsetX = 0;  
-  float m_radialOffsetY = 0;
 
-  float degreesOffset = 0;
-	
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -18,7 +13,7 @@ class SRP_TestMdfr: ModifierBase
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return false;
+		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TEST);
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -33,17 +28,17 @@ class SRP_TestMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    m_radialOffsetX = 0;
-    m_radialOffsetY = 0;
-    degreesOffset = 0;
+    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TEST)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
+    }
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
-    Param4<float, float, float, float> m_modifierValues = new Param4<float, float, float, float>(60, 0, 0, 0);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_TEST, m_modifierValues, false, player.GetIdentity());    
-	}
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
+  }
 	
 	override bool DeactivateCondition(PlayerBase player)
 	{
@@ -61,14 +56,5 @@ class SRP_TestMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-    degreesOffset += deltaT;
-
-    // oscilate between 0 and 1.5
-    float radialOffsetXValue = 20 * Math.Cos(degreesOffset) + 15;
-    float radialOffsetYValue = 20 * Math.Sin(degreesOffset) + 15;
-    
-    // oscilate between 1 and 7    
-    Param4<float, float, float, float> m_modifierValues = new Param4<float, float, float, float>(60, 0, radialOffsetXValue, radialOffsetYValue);
-    GetGame().RPCSingleParam(player, SRP_ERPCs.RPC_DRUGS_TEST, m_modifierValues, false, player.GetIdentity());    
 	}	
 };
