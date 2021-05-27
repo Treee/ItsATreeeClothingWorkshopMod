@@ -68,6 +68,33 @@ class CfgVehicles
     }
 	};
 
+  // class Radio;
+  // class My_Radio : Radio
+  // {
+  //   class Channels
+  //   {
+  //     class testradio
+  //     {
+  //       name="testradio";
+  //       url="https://listen.socorock.com:8443/socorock.ogg";
+  //     };
+  //   };
+  // }
+  // class Black_Company_Armband: MassArmbandDouble_Colorbase
+	// {
+	// 	scope=2;
+	// 	displayName="Black Company Armband";
+	// 	descriptionShort="Evil is relative";
+	// 	hiddenSelectionsTextures[]=
+	// 	{
+	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa",
+	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa",
+	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa",
+	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa",
+	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa"
+	// 	};
+	// };
+
 	class NBCHoodBase: Clothing
   {
     class Protection {

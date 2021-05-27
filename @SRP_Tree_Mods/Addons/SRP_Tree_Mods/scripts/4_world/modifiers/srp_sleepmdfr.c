@@ -2,7 +2,7 @@ class SRP_SleepMdfr: ModifierBase
 {	
   static const int SECONDS_PER_DAY = 14400;
   static const int YAWN_THRESHOLD = SECONDS_PER_DAY * 0.8; // 20 percent awake = start yawning
-  static const int PASS_OUT_THRESHOLD = SECONDS_PER_DAY + 3; // 5 minutes passed 0 is pass out territory
+  static const int PASS_OUT_THRESHOLD = SECONDS_PER_DAY + 300; // 5 minutes passed 0 is pass out territory
 
   static const int TIREDNESS_0PERCENT = 0;
   static const int TIREDNESS_25PERCENT = SECONDS_PER_DAY * 0.25;
@@ -10,6 +10,8 @@ class SRP_SleepMdfr: ModifierBase
   static const int TIREDNESS_75PERCENT = SECONDS_PER_DAY * 0.75;
   static const int TIREDNESS_100PERCENT = SECONDS_PER_DAY * 0.80; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
   int m_LastTirednessCount = 0;
+  float m_LastYawnEvent = 0;
+  int m_YawnInterval = 15;
 
 	override void Init()
 	{
@@ -17,17 +19,13 @@ class SRP_SleepMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_SLEEP;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
-    Class.CastTo(m_ModulePlayerStatus, GetPlugin(PluginPlayerStatus));
-    if (m_ModulePlayerStatus) 
-    {
-      Print("SRP_SleepMdfr Registering Player Status Module Success");
-    }
+    Print("Registering::SRP_SleepMdfr Success");
 	}
 
 	override bool ActivateCondition(PlayerBase player)
 	{    
     // if the player is not sleeping and not unconscious
-    // Print("SleepMdfr: ActivateCondition - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));
+    Print("SleepMdfr: ActivateCondition - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));
     return true;
 	}
 	
@@ -68,8 +66,10 @@ class SRP_SleepMdfr: ModifierBase
       player.SetPlayerSleepingMdfr(false);
     }
     // if the agent count is within yawning range AND we are (not laying down or unconscious)
-    if (currentTirednessCount > YAWN_THRESHOLD && (!player.GetEmoteManager().m_IsLayDown || !player.IsUnconscious())) {
-      player.TryYawn();
+    if (currentTirednessCount > YAWN_THRESHOLD && m_LastYawnEvent > m_YawnInterval && (!player.GetEmoteManager().m_IsLayDown || !player.IsUnconscious())) {
+      bool isMale = player.IsMale();
+      player.TryYawn(isMale);
+      m_LastYawnEvent = 0;
     }
 
     // if we are passed the pass out threshold, pass go unconscious
@@ -80,6 +80,7 @@ class SRP_SleepMdfr: ModifierBase
     m_ModulePlayerStatus.DisplayTirednessTendency(NTFKEY_SRP_TIREDNESS, currentTirednessCount, GetTendency(currentTirednessCount), GetTirednessLevel(currentTirednessCount));
 
     m_LastTirednessCount = currentTirednessCount;
+    m_LastYawnEvent += deltaT;
   }
   
   // shows up or down arrows
@@ -95,13 +96,13 @@ class SRP_SleepMdfr: ModifierBase
   {
     // Print("GetTirednessLevel: " + currentTirednessCount + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
     // the retun numbers here correlate to icons in srp_tree_iconset.imageset
-    if (currentTirednessCount >= TIREDNESS_0PERCENT && currentTirednessCount <= TIREDNESS_25PERCENT){ // fully slept full moon      
+    if (currentTirednessCount >= TIREDNESS_0PERCENT && currentTirednessCount < TIREDNESS_25PERCENT){ // fully slept full moon      
       return 4;
-    } else if (currentTirednessCount >= TIREDNESS_25PERCENT && currentTirednessCount <= TIREDNESS_50PERCENT) { // 75% awake,
+    } else if (currentTirednessCount >= TIREDNESS_25PERCENT && currentTirednessCount < TIREDNESS_50PERCENT) { // 75% awake,
       return 3;
-    } else if (currentTirednessCount >= TIREDNESS_50PERCENT && currentTirednessCount <= TIREDNESS_75PERCENT) { // 50% awake
+    } else if (currentTirednessCount >= TIREDNESS_50PERCENT && currentTirednessCount < TIREDNESS_75PERCENT) { // 50% awake
       return 2;
-    } else if (currentTirednessCount >= TIREDNESS_75PERCENT && currentTirednessCount <= TIREDNESS_100PERCENT) { // 25% awake
+    } else if (currentTirednessCount >= TIREDNESS_75PERCENT && currentTirednessCount < TIREDNESS_100PERCENT) { // 25% awake
       return 1;
     } else if (currentTirednessCount >= TIREDNESS_100PERCENT) { // 0% awake
       return 0;

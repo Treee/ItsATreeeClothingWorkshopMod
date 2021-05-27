@@ -39,11 +39,12 @@ modded class PlayerBase
     }
   }
 
-  void TryYawn() {    
-    float chance = Math.RandomFloat01() * 100;
+  void TryYawn(bool isMale) {    
     // Print("SRP Modded Playerbase:: TryYawn chance to yawn: " + chance);
-    if (chance > 97) {
-      PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns.Get(0), 0, 0);
+    if (isMale) {
+      PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns_Male.GetRandomElement(), 0, 0);
+    } else {
+      PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns_Female.GetRandomElement(), 0, 0);
     }
   }
 
