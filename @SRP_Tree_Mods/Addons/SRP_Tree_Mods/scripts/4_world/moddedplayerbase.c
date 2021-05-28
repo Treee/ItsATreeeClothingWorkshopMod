@@ -16,6 +16,23 @@ modded class PlayerBase
 		}
 	}
 
+  override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
+  {
+    super.OnRPC(sender, rpc_type, ctx);
+
+    switch(rpc_type)
+    {
+      case SRPRPC.CHECK_TREE_CONFIG: // this case is for grabbing Tree's config from the server
+      {
+        Param1<SRPTreeConfig> configParams;
+        if(!ctx.Read(configParams)) return;
+
+        GetDayZGame().SetSRPTreeConfigGlobal(configParams.param1);
+        break;
+      }
+    }
+  }
+
   bool HasSleepAgent()
   {
     return m_AgentPool.HasAgent(SRP_Medical_Agents.SLEEP_AGENT);

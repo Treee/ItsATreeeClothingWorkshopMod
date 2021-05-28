@@ -1,14 +1,14 @@
 class SRP_SleepMdfr: ModifierBase
 {	
   static const int SECONDS_PER_DAY = 14400;
-  static const int YAWN_THRESHOLD = SECONDS_PER_DAY * 0.8; // 20 percent awake = start yawning
-  static const int PASS_OUT_THRESHOLD = SECONDS_PER_DAY + 300; // 5 minutes passed 0 is pass out territory
+  static const float YAWN_THRESHOLD = SECONDS_PER_DAY * 0.8; // 20 percent awake = start yawning
+  static const float PASS_OUT_THRESHOLD = SECONDS_PER_DAY + 300; // 5 minutes passed 0 is pass out territory
 
   static const int TIREDNESS_0PERCENT = 0;
-  static const int TIREDNESS_25PERCENT = SECONDS_PER_DAY * 0.25;
-  static const int TIREDNESS_50PERCENT = SECONDS_PER_DAY * 0.50;
-  static const int TIREDNESS_75PERCENT = SECONDS_PER_DAY * 0.75;
-  static const int TIREDNESS_100PERCENT = SECONDS_PER_DAY * 0.80; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
+  static const float TIREDNESS_25PERCENT = SECONDS_PER_DAY * 0.25;
+  static const float TIREDNESS_50PERCENT = SECONDS_PER_DAY * 0.50;
+  static const float TIREDNESS_75PERCENT = SECONDS_PER_DAY * 0.75;
+  static const float TIREDNESS_100PERCENT = SECONDS_PER_DAY * 0.80; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
   int m_LastTirednessCount = 0;
   float m_LastYawnEvent = 0;
   int m_YawnInterval = 15;
