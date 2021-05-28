@@ -290,3 +290,23 @@ ref array<string> SRP_DamageZones_LightBleeding = {
   "RightFoot",
   "RightToeBase"
 };
+
+class BioHazardZoneLocation
+{
+  vector position;
+  int totalRadius;
+  int criticalRadius;
+  int severeRadius;
+  int mildRadius;
+  int approachRadius;
+
+  void SetBioHazardZoneLocation(vector m_position, int m_totalRadius, int m_criticalRadius, int m_severeRadius, int m_mildRadius, int m_approachRadius)
+  {
+    position = m_position;
+    totalRadius = m_totalRadius;
+    criticalRadius = m_criticalRadius;
+    severeRadius = m_severeRadius;
+    mildRadius = m_mildRadius;
+    approachRadius = m_approachRadius;
+  }
+}
