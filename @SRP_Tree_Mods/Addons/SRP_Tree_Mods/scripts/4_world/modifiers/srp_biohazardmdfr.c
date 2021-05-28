@@ -1,16 +1,16 @@
 class SRP_BioHazardMdfr: ModifierBase
 {	
   // these are the radius of the zone extending from the center
-  static const vector BIOHAZARD_ZONE_CENTER = "4683 20 7100";
+  vector BIOHAZARD_ZONE_CENTER = "0 0 0";
 
-  static const int BIOHAZARD_DISTANCE_TO_CENTER = 350; // how many meters ofzone to calculate;
-  static const int BIOHAZARD_DISTANCE_MILD_ZONE = 325 ;// how many meters of "mild conditions" around the zone;
-  static const int BIOHAZARD_DISTANCE_SEVERE_ZONE = 250;// how far does the severe zone extend from the center
-  static const int BIOHAZARD_DISTANCE_CRITICAL_ZONE = 150;// how far does the critical zone extend from the center
-
+  int BIOHAZARD_DISTANCE_TO_CENTER = 0; // how many meters ofzone to calculate;
+  int BIOHAZARD_DISTANCE_MILD_ZONE = 0 ;// how many meters of "mild conditions" around the zone;
+  int BIOHAZARD_DISTANCE_SEVERE_ZONE = 0;// how far does the severe zone extend from the center
+  int BIOHAZARD_DISTANCE_CRITICAL_ZONE = 0;// how far does the critical zone extend from the center
 
   int m_lastBleedTime = 0;
   int m_lastMessageTime = 999999; //force the biozone message to display the first time we enter
+  int m_messageRepeatInterval = 0;
 
 	override void Init()
 	{
@@ -25,12 +25,26 @@ class SRP_BioHazardMdfr: ModifierBase
 	{    
     // Print("BiohazardMdfr: ActivateCondition - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.BIOHAZARD_AGENT));
     // activate this condition when we get close to the bio zone  
-    if (vector.Distance(player.GetPosition(), BIOHAZARD_ZONE_CENTER) <= BIOHAZARD_DISTANCE_TO_CENTER) {
-    float distanceFromCenter = vector.Distance(player.GetPosition(), BIOHAZARD_ZONE_CENTER);
-      // Print("BiohazardMdfr: OnTick - : Distance from center: " + distanceFromCenter);
-      return true;
+    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal(); 
+    bool isInZone = false;
+    if (config) {
+      if (config.g_SRPIsBioHazardLocationsActive) {
+        if (config.g_SRPBiohazardZoneLocations != NULL) {
+          foreach (BioHazardZoneLocation loc : config.g_SRPBiohazardZoneLocations){
+            if (loc.isPlayerInZone(player.GetPosition())){
+              BIOHAZARD_ZONE_CENTER = loc.center;
+              BIOHAZARD_DISTANCE_CRITICAL_ZONE = loc.totalRadius;
+              BIOHAZARD_DISTANCE_CRITICAL_ZONE = loc.criticalRadius;
+              BIOHAZARD_DISTANCE_SEVERE_ZONE = loc.severeRadius;
+              BIOHAZARD_DISTANCE_MILD_ZONE = loc.mildRadius;
+              m_messageRepeatInterval = loc.messageRepeatInterval;
+              isInZone = true;
+            }
+          }
+        }
+      }
     }
-    return false;
+    return isInZone;
 	}
 	
 	override string GetDebugText()
@@ -48,7 +62,12 @@ class SRP_BioHazardMdfr: ModifierBase
 	override bool DeactivateCondition(PlayerBase player)
 	{
     // Print("BiohazardMdfr: DeactivateCondition - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.BIOHAZARD_AGENT));
-    return false;
+    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    bool isInZone = false;
+    foreach (BioHazardZoneLocation loc : config.g_SRPBiohazardZoneLocations){
+      isInZone = isInZone || loc.isPlayerInZone(player.GetPosition());      
+    }
+    return !isInZone;
 	}
 
 	override void OnTick(PlayerBase player, float deltaT)

@@ -309,12 +309,18 @@ class BioHazardZoneLocation
     mildRadius = m_mildRadius;    
     messageRepeatInterval = m_messageRepeatInterval;
   }
+
+  bool isPlayerInZone(vector playerPosition)
+  {
+    return vector.Distance(playerPosition, center) < totalRadius;
+  }
 }
 
 class SRPTreeConfig
 {
   bool g_SRPIsSleepActive;
   bool g_SRPIsDrugsEffectsActive;
+  bool g_SRPIsBioHazardLocationsActive;
 
   int g_SRPSleepMaximumAwakeTime;
   int g_SRPSleepYawnInterval;
@@ -361,14 +367,14 @@ class SRPTreeConfig
 
 class SRPTreeGlobals
 {
-  private static ref SRPTreeConfig m_SRPConfig = null;
+  private static ref SRPTreeConfig m_SRPConfig = NULL;
   private static const int MAX_CONFIG_LINES = 500;
   private static const string configPath = "$profile:\\SRP_Tree_Mods\\Mod_Settings.json";
   private static const string configRoot = "$profile:\\SRP_Tree_Mods";
 
   static SRPTreeConfig Get()
   {
-    if (m_SRPConfig == null) 
+    if (m_SRPConfig == NULL) 
     {
       SetConfig();
     }
@@ -397,6 +403,7 @@ class SRPTreeGlobals
   {
     config.g_SRPIsSleepActive = true;
     config.g_SRPIsDrugsEffectsActive = true;
+    config.g_SRPIsBioHazardLocationsActive = true;
 
     config.g_SRPSleepMaximumAwakeTime = 14400; // 4 hours in seconds is the "max" awake time before passing out
     config.g_SRPSleepYawnInterval = 15;        // time in between yawns
@@ -414,28 +421,28 @@ class SRPTreeGlobals
     config.g_SRPSleepYawnThreshold = 0.8; // 80% sleepyness triggers yawning. 0% means yawning when fully awake
     config.g_SRPSleepPassOutThreshold = 300; // how many extra seconds do they get before they 100% pass out
     config.g_SRPAlcoholChanceToLaughThreshold = 15; // 15% chance to laugh
-    config.g_SRPBathSaltsChanceForScarySound = 10;
-    config.g_SRPBathSaltsChanceForHappySound = 10;
+    config.g_SRPBathSaltsChanceForScarySound = 10; 
+    config.g_SRPBathSaltsChanceForHappySound = 20;
     config.g_SRPMethSaminaDepletionBonus = 0.5; // stamina depletes 50% less than normal. 1 being the default
     config.g_SRPMethBloodLossAmount = 3.5; // be carefule with a higher number here
     config.g_SRPMethChanceForScarySound = 5; // 5% chance
     config.g_SRPMethChanceForHappySound = 5;
-    config.g_SRPSkullAcidChanceForScarySound = 20;
-    config.g_SRPSkullAcidChanceForHappySound = 10;
-    config.g_SRPSkullAcidChanceForLaughter = 20;
-    config.g_SRPSkullAcidChanceForFreeze = 10;
-    config.g_SRPSkullAcidChanceForSweat = 10;
-    config.g_SRPSkullAcidChanceForSneeze = 10;
-    config.g_SRPSkullAcidChanceForCough = 10;
-    config.g_SRPSmileAcidChanceForScarySound = 20;
-    config.g_SRPSmileAcidChanceForHappySound = 10;
-    config.g_SRPSmileAcidChanceForLaughter = 20;
-    config.g_SRPSmileAcidChanceForFreeze = 10;
-    config.g_SRPSmileAcidChanceForSweat = 10;
-    config.g_SRPSmileAcidChanceForSneeze = 10;
-    config.g_SRPSmileAcidChanceForCough = 10;
+    config.g_SRPSkullAcidChanceForScarySound = 50;
+    config.g_SRPSkullAcidChanceForHappySound = 60;
+    config.g_SRPSkullAcidChanceForLaughter = 30; // ascending order,
+    config.g_SRPSkullAcidChanceForFreeze = 40;
+    config.g_SRPSkullAcidChanceForSweat = 50;
+    config.g_SRPSkullAcidChanceForSneeze = 60;
+    config.g_SRPSkullAcidChanceForCough = 70;
+    config.g_SRPSmileAcidChanceForScarySound = 10;
+    config.g_SRPSmileAcidChanceForHappySound = 50;
+    config.g_SRPSmileAcidChanceForLaughter = 10;
+    config.g_SRPSmileAcidChanceForFreeze = 30;
+    config.g_SRPSmileAcidChanceForSweat = 60;
+    config.g_SRPSmileAcidChanceForSneeze = 80;
+    config.g_SRPSmileAcidChanceForCough = 95;
     config.g_SRPWeedChanceForCough = 35;
-    config.g_SRPWeedChanceForLaugh = 35;
+    config.g_SRPWeedChanceForLaugh = 70;
     config.g_SRPTobaccoChanceForCough = 35;
 
     ref array<ref BioHazardZoneLocation> m_locations = new ref array<ref BioHazardZoneLocation>;

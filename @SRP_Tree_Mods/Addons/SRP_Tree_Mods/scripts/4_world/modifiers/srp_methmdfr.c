@@ -1,6 +1,9 @@
 class SRP_MethMdfr: ModifierBase
 {
-	const int LIFETIME = 600; // 10 minutes
+	int LIFETIME = 0; // 10 minutes
+  float blood_loss_per_tick = 0;
+  float scary_sound_chance = 0;
+  float happy_sound_chance = 0;
 
 	override void Init()
 	{
@@ -28,10 +31,15 @@ class SRP_MethMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
+    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    LIFETIME = config.g_SRPMethModifierLifetime;
+    blood_loss_per_tick = config.g_SRPMethBloodLossAmount;
+    scary_sound_chance = config.g_SRPMethChanceForScarySound;
+    happy_sound_chance = config.g_SRPMethChanceForHappySound;
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_METH)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
     }
-    player.GetStaminaHandler().SetDepletionMultiplier(0.5);
+    player.GetStaminaHandler().SetDepletionMultiplier(config.g_SRPMethSaminaDepletionBonus);
     player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
 	}
 	
@@ -57,12 +65,13 @@ class SRP_MethMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-    m_Player.AddHealth("", "Blood", 3.5 * deltaT); //do blood dmg over time
+    m_Player.AddHealth("", "Blood", blood_loss_per_tick * deltaT); //do blood dmg over time
+
     float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance > 90 && m_randomChance <= 95) {
+    if (m_randomChance < scary_sound_chance) {
       player.PlayScarySound();
-    } else if (m_randomChance > 95) {
+    } else if (m_randomChance < happy_sound_chance) {
       player.PlayHappySound();
-    }  
+    }
   }	
 };

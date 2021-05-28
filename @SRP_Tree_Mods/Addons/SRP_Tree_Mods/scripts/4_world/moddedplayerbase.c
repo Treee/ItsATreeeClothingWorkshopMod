@@ -1,7 +1,7 @@
 modded class PlayerBase
 {
-  int m_alcoholConsumed = 0;
-  int m_alcoholMax = 100;
+  // int m_alcoholConsumed = 0;
+  // int m_alcoholMax = 100;
 
   EffectSound m_AcidSounds;
   EffectSound m_SleepSounds;

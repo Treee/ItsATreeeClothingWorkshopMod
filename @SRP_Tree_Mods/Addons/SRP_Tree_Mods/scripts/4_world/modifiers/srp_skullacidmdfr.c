@@ -1,7 +1,15 @@
 class SRP_SkullAcidMdfr: ModifierBase
 {
-	const int LIFETIME = 600; // 10 minutes
-
+	int LIFETIME = 0; // 10 minutes
+  
+  float chance_for_scary_sound = 0;
+  float chance_for_happy_sound = 0;
+  float chance_for_laugh_sound = 0;
+  float chance_for_freeze_sound = 0;
+  float chance_for_sweat_sound = 0;
+  float chance_for_sneeze_sound = 0;
+  float chance_for_cough_sound = 0;  
+  
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -25,10 +33,20 @@ class SRP_SkullAcidMdfr: ModifierBase
 	{
 		return (LIFETIME - GetAttachedTime()).ToString();
 	}
-	
+
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on skull acid");
+    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    LIFETIME = config.g_SRPSkullAcidModifierLifetime;
+    chance_for_scary_sound = config.g_SRPSkullAcidChanceForScarySound;
+    chance_for_happy_sound = config.g_SRPSkullAcidChanceForHappySound;
+    chance_for_laugh_sound = config.g_SRPSkullAcidChanceForLaughter;
+    chance_for_freeze_sound = config.g_SRPSkullAcidChanceForFreeze;
+    chance_for_sweat_sound = config.g_SRPSkullAcidChanceForSweat;
+    chance_for_sneeze_sound = config.g_SRPSkullAcidChanceForSneeze;
+    chance_for_cough_sound = config.g_SRPSkullAcidChanceForCough;
+
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSKULL)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
     }
@@ -58,23 +76,20 @@ class SRP_SkullAcidMdfr: ModifierBase
 	override void OnTick(PlayerBase player, float deltaT)
 	{    
     float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance > 70 && m_randomChance <= 90)
-    {
+    if (m_randomChance < chance_for_scary_sound) {
       player.PlayScarySound();
-    } else if (m_randomChance > 90) {
+    } else if (m_randomChance < chance_for_happy_sound) {
       player.PlayHappySound();
     }
-    if (m_randomChance > 10 && m_randomChance <= 30) {
+    if (m_randomChance < chance_for_laugh_sound) {
       player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-    } else if (m_randomChance > 30 && m_randomChance <= 40) {
+    } else if (m_randomChance < chance_for_freeze_sound) {
       player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_FREEZE);
-    } else if (m_randomChance > 40 && m_randomChance <= 60) {
+    } else if (m_randomChance < chance_for_sweat_sound) {
       player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_HOT);
-    } else if (m_randomChance > 60 && m_randomChance <= 80) {
+    } else if (m_randomChance < chance_for_sneeze_sound) {
       player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_SNEEZE);
-    } else if (m_randomChance > 80 && m_randomChance <= 90) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-    } else if (m_randomChance > 90 && m_randomChance <= 100) {
+    } else if (m_randomChance < chance_for_cough_sound) {
       player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
     }	
 	}	

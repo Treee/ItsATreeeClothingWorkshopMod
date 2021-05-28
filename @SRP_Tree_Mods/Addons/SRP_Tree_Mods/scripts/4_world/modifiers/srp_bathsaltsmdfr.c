@@ -1,7 +1,8 @@
 class SRP_BathSaltsMdfr: ModifierBase
 {
-	const int LIFETIME = 600; // 10 minutes
-
+	int LIFETIME = 0; // 10 minutes
+  float chance_for_scary_sound = 0;
+  float chance_for_happy_sound = 0;
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -28,6 +29,11 @@ class SRP_BathSaltsMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
+    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    LIFETIME = config.g_SRPBathSaltsModifierLifetime;
+    chance_for_scary_sound = config.g_SRPBathSaltsChanceForScarySound;
+    chance_for_happy_sound = config.g_SRPBathSaltsChanceForHappySound;
+    
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BATHSALTS)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
     }
@@ -57,11 +63,9 @@ class SRP_BathSaltsMdfr: ModifierBase
 	override void OnTick(PlayerBase player, float deltaT)
 	{    
     float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance > 80 && m_randomChance <= 90)
-    {
+    if (m_randomChance < chance_for_scary_sound) {
       player.PlayScarySound();
-    }
-    else if (m_randomChance > 90) {
+    } else if (m_randomChance < chance_for_happy_sound) {
       player.PlayHappySound();
     }
   }	

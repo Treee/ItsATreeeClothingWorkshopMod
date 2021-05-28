@@ -1,7 +1,8 @@
 class SRP_AlcoholMdfr: ModifierBase
 {
-	const int LIFETIME = 100;
-	
+	int LIFETIME = 0;
+	float food_loss_per_tick = 0;
+  float chance_to_laugh = 0;
   override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -28,6 +29,11 @@ class SRP_AlcoholMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
+    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    LIFETIME = config.g_SRPAlcoholModifierLifetime;
+    food_loss_per_tick = config.g_SRPAlcoholFoodLossAmount;
+    chance_to_laugh = config.g_SRPAlcoholChanceToLaughThreshold;
+
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ALCOHOL)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
     }
@@ -56,11 +62,11 @@ class SRP_AlcoholMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-    float energy_loss = deltaT * PlayerConstants.ENERGY_LOSS_HC_MINUS_LOW;
+    float energy_loss = deltaT * food_loss_per_tick;
 		player.GetStatEnergy().Add(-energy_loss);
     
     float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance >= 85) {
+    if (m_randomChance < chance_to_laugh) {
       player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
     }
 	}	

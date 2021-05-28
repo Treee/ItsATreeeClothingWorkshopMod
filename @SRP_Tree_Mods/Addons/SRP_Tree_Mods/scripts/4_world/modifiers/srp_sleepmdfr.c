@@ -1,17 +1,17 @@
 class SRP_SleepMdfr: ModifierBase
 {	
-  static const int SECONDS_PER_DAY = 14400;
-  static const float YAWN_THRESHOLD = SECONDS_PER_DAY * 0.8; // 20 percent awake = start yawning
-  static const float PASS_OUT_THRESHOLD = SECONDS_PER_DAY + 300; // 5 minutes passed 0 is pass out territory
+  int SECONDS_PER_DAY = 0;
+  float YAWN_THRESHOLD = 0; // 20 percent awake = start yawning
+  float PASS_OUT_THRESHOLD = 0; // 5 minutes passed 0 is pass out territory
 
-  static const int TIREDNESS_0PERCENT = 0;
-  static const float TIREDNESS_25PERCENT = SECONDS_PER_DAY * 0.25;
-  static const float TIREDNESS_50PERCENT = SECONDS_PER_DAY * 0.50;
-  static const float TIREDNESS_75PERCENT = SECONDS_PER_DAY * 0.75;
-  static const float TIREDNESS_100PERCENT = SECONDS_PER_DAY * 0.80; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
+  int TIREDNESS_0PERCENT = 0;
+  float TIREDNESS_25PERCENT = 0;
+  float TIREDNESS_50PERCENT = 0;
+  float TIREDNESS_75PERCENT = 0;
+  float TIREDNESS_100PERCENT = 0; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
   int m_LastTirednessCount = 0;
   float m_LastYawnEvent = 0;
-  int m_YawnInterval = 15;
+  int m_YawnInterval = 0;
 
 	override void Init()
 	{
@@ -25,8 +25,13 @@ class SRP_SleepMdfr: ModifierBase
 	override bool ActivateCondition(PlayerBase player)
 	{    
     // if the player is not sleeping and not unconscious
-    Print("SleepMdfr: ActivateCondition - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));
-    return true;
+    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    if (config) {
+      if (config.g_SRPIsSleepActive) {
+        return true;
+      }
+    }
+    return false;
 	}
 	
 	override string GetDebugText()
@@ -36,7 +41,18 @@ class SRP_SleepMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    // Print("SleepMdfr: OnActivate Start - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));    
+    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    // Print("SleepMdfr: OnActivate Start - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));        
+    SECONDS_PER_DAY = config.g_SRPSleepMaximumAwakeTime;
+    m_YawnInterval = config.g_SRPSleepYawnInterval; 
+    YAWN_THRESHOLD = SECONDS_PER_DAY * 0.8; // 20 percent awake = start yawning
+    PASS_OUT_THRESHOLD = SECONDS_PER_DAY + 300; // 5 minutes passed 0 is pass out territory
+   
+    TIREDNESS_25PERCENT = SECONDS_PER_DAY * 0.25;
+    TIREDNESS_50PERCENT = SECONDS_PER_DAY * 0.50;
+    TIREDNESS_75PERCENT = SECONDS_PER_DAY * 0.75;
+    TIREDNESS_100PERCENT = SECONDS_PER_DAY * 0.80; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
+
     player.SetPlayerSleepingMdfr(false);
     // Print("SleepMdfr: OnActivate End - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));
 	}
