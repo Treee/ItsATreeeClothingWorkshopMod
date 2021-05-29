@@ -22,7 +22,12 @@ class CfgVehicles
 		descriptionShort="A single stick of dynamite... explosive.";
 		model="SRP_Tree_Mods\explosives\dynamite_stick.p3d";
 		weight=10;
+    varTemperatureMax=100;
     itemSize[]={1,3};
+    varQuantityInit=10;
+		varQuantityMin=0;
+		varQuantityMax=10;
+    destroyOnEmpty=1;	
 		hiddenSelections[]= {"camo"};
 		hiddenSelectionsTextures[]= {
       "SRP_Tree_Mods\explosives\data\dynamite_stick_co.paa"
@@ -30,6 +35,13 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]= {
 			"SRP_Tree_Mods\explosives\data\dynamite_stick.rvmat"
 		};		
+    class EnergyManager
+		{
+			energyAtSpawn=10;
+			energyUsagePerSecond=1;
+			updateInterval=1;
+			convertEnergyToQuantity=1;
+		};
   }
 };
 

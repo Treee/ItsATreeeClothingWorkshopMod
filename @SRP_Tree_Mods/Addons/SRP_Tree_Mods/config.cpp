@@ -80,20 +80,6 @@ class CfgVehicles
   //     };
   //   };
   // }
-  // class Black_Company_Armband: MassArmbandDouble_Colorbase
-	// {
-	// 	scope=2;
-	// 	displayName="Black Company Armband";
-	// 	descriptionShort="Evil is relative";
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa",
-	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa",
-	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa",
-	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa",
-	// 		"SRP_Tree_Mods\data\black_company_armbend_co.paa"
-	// 	};
-	// };
 
 	class NBCHoodBase: Clothing
   {
