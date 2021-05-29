@@ -1,7 +1,7 @@
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
-forcedDiffuse[]={0,0,0,1};
-emmisive[]={1,0,0,10};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={0,0,0,1};
 specular[]={1,1,1,1};
 specularPower=500;
 PixelShaderID="Super";
@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="SRP_Tree_Mods\explosives\data\dynamite_stick_mc.paa";
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,32,128,1)fresnel(1.5,0.5)";
+	texture="#(ai,32,128,1)fresnel(0.1,0.5)";
 	uvSource="tex";
 	class uvTransform
 	{

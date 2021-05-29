@@ -11,6 +11,6 @@ modded class ActionConstructor
     actions.Insert(ActionExtinguishSmokeSRPSmokableSelf);
 
     // Explosives
-    actions.Insert(ActionLightExplosivesInHands);
+    // actions.Insert(ActionLightExplosivesInHands);
   }
 };

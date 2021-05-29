@@ -1,9 +1,9 @@
-class SRP_Dynamite_Stick extends Grenade_Base
+class SRP_Dynamite_Stick extends Inventory_Base
 {
   void SRP_Dynamite_Stick() {
-    SetAmmoType("RGD5Grenade_Ammo");
-		SetFuseDelay(4);
-		SetParticleExplosion(ParticleList.RGD5);
+    // SetAmmoType("RGD5Grenade_Ammo");
+		// SetFuseDelay(4);
+		// SetParticleExplosion(ParticleList.RGD5);
   }
 
   void ~SRP_Dynamite_Stick() {};
@@ -11,9 +11,9 @@ class SRP_Dynamite_Stick extends Grenade_Base
   override void SetActions()
 	{
     super.SetActions();
-    RemoveAction(ActionUnpin);
-    RemoveAction(ActionPin);
-		AddAction(ActionLightExplosivesInHands); // only alow the player to light the fuse
+    // RemoveAction(ActionUnpin);
+    // RemoveAction(ActionPin);
+		// AddAction(ActionLightExplosivesInHands); // only alow the player to light the fuse
 	}
 	
 }
