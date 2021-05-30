@@ -1,7 +1,6 @@
 class SRP_Dynamite_Stick extends ItemBase
 {
 	protected ref Timer	m_DeleteTimer;
-  protected Particle m_ParFinalFire;
 	protected Particle m_ParJustSmoke;
   protected Particle m_ParticleExplosion;
 
@@ -89,12 +88,6 @@ class SRP_Dynamite_Stick extends ItemBase
 		if ( GetGame().IsServer()  &&  GetGame().IsMultiplayer() )
 			return;
 		
-    if (!m_ParFinalFire)
-    {
-      DestroyAllParticles();
-      m_ParFinalFire = Particle.PlayOnObject( PARTICLE_FINAL_FIRE, this, m_FlameLocalPos, vector.Zero, true);
-      m_ParFinalFire.SetWiggle( 4, 0.3);
-    }
     if (!m_ParJustSmoke)
     {
       DestroyAllParticles();
@@ -139,7 +132,6 @@ class SRP_Dynamite_Stick extends ItemBase
 	// Destroys all particles
 	void DestroyAllParticles()
 	{
-		DestroyParticle(m_ParFinalFire);
 		DestroyParticle(m_ParJustSmoke);
 	}
 
@@ -154,7 +146,6 @@ class SRP_Dynamite_Stick extends ItemBase
 class SRP_Dynamite_Stack extends ItemBase
 {
 	protected ref Timer	m_DeleteTimer;
-  protected Particle m_ParFinalFire;
 	protected Particle m_ParJustSmoke;
   protected Particle m_ParticleExplosion;
 
@@ -168,7 +159,7 @@ class SRP_Dynamite_Stack extends ItemBase
   static protected const string	BURNING_SOUND = "roadflareLoop_SoundSet";	
 	static protected const string	IGNITE_SOUND = "roadflareTurnOn_SoundSet";
 	
-  static protected vector	m_FlameLocalPos = "0 0.2 -0.02";
+  static protected vector	m_FlameLocalPos = "0 0.195 -0.02";
 	protected vector m_ParticlePosition;
 
   bool IsExploded = false;
@@ -242,17 +233,12 @@ class SRP_Dynamite_Stack extends ItemBase
 		if ( GetGame().IsServer()  &&  GetGame().IsMultiplayer() )
 			return;
 		
-    if (!m_ParFinalFire)
-    {
-      DestroyAllParticles();
-      m_ParFinalFire = Particle.PlayOnObject( PARTICLE_FINAL_FIRE, this, m_FlameLocalPos, vector.Zero, true);
-      m_ParFinalFire.SetWiggle( 4, 0.3);
-    }
     if (!m_ParJustSmoke)
     {
       DestroyAllParticles();
       m_ParJustSmoke = Particle.PlayOnObject( PARTICLE_FINAL_SMOKE, this, m_FlameLocalPos, vector.Zero, true);
       m_ParJustSmoke.SetWiggle( 2, 0.3);
+      m_ParJustSmoke.ScaleParticleParamFromOriginal(EmitorParam.SIZE, 5);
     }		
     if (!m_ParticleExplosion && IsExploded) 
     {
@@ -292,7 +278,6 @@ class SRP_Dynamite_Stack extends ItemBase
 	// Destroys all particles
 	void DestroyAllParticles()
 	{
-		DestroyParticle(m_ParFinalFire);
 		DestroyParticle(m_ParJustSmoke);
 	}
 

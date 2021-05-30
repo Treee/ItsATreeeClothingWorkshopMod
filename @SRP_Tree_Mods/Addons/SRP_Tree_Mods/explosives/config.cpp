@@ -50,7 +50,7 @@ class CfgVehicles
 		displayName="Dynamite Stack";
 		descriptionShort="A stack of dynamite... explosive.";
 		model="SRP_Tree_Mods\explosives\dynamite_stack.p3d";
-		weight=20;
+		weight=15;
     varTemperatureMax=100;
     itemSize[]={3,5};
     varQuantityInit=10;
