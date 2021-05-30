@@ -3,7 +3,8 @@ class CfgPatches
 	class SRP_Tree_Explosives
 	{
     units[] = {
-      "SRP_Dynamite_Stick"
+      "SRP_Dynamite_Stick",
+      "SRP_Dynamite_Stack"
     };
 		weapons[]={};
 		requiredVersion=0.1;
@@ -72,7 +73,6 @@ class CfgVehicles
 			convertEnergyToQuantity=1;
 		};
   };
-};
 };
 
 // class CfgSlots
