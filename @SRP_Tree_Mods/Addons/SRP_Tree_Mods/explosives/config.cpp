@@ -42,7 +42,37 @@ class CfgVehicles
 			updateInterval=1;
 			convertEnergyToQuantity=1;
 		};
-  }
+  };
+
+  class SRP_Dynamite_Stack : Inventory_Base
+  {
+		scope=2;
+		displayName="Dynamite Stack";
+		descriptionShort="A stack of dynamite... explosive.";
+		model="SRP_Tree_Mods\explosives\dynamite_stack.p3d";
+		weight=20;
+    varTemperatureMax=100;
+    itemSize[]={3,5};
+    varQuantityInit=10;
+		varQuantityMin=0;
+		varQuantityMax=10;
+    destroyOnEmpty=1;	
+		hiddenSelections[]= {"camo"};
+		hiddenSelectionsTextures[]= {
+      "SRP_Tree_Mods\explosives\data\dynamite_stack_co.paa"
+		};
+		hiddenSelectionsMaterials[]= {
+			"SRP_Tree_Mods\explosives\data\dynamite_stack.rvmat"
+		};		
+    class EnergyManager
+		{
+			energyAtSpawn=10;
+			energyUsagePerSecond=1;
+			updateInterval=1;
+			convertEnergyToQuantity=1;
+		};
+  };
+};
 };
 
 // class CfgSlots
