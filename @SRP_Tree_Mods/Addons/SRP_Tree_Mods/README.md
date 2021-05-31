@@ -220,8 +220,22 @@ SRP_LabTubeRack
 
 Thank you to all the wonderful people who spent their time making models and listing them for free. All of the creatives can be found below.
 
+- "Abandoned Drugslab Indoor" (https://skfb.ly/6yzC8) by seenoise is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "3rd - Chemistry // Old Lab Tubes" (https://skfb.ly/6WTvJ) by Ringo Gunther is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Cigar" (https://skfb.ly/6t9Oy) by Escoly is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Cigarette case" (https://skfb.ly/6QXGW) by AgitoDi is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Cigarette - daily3D" (https://skfb.ly/6XnvD) by RomanMaksy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Smoking Pipe" (https://skfb.ly/NKYo) by beyondmatter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - "Dynamite stick" (https://skfb.ly/6z8uT) by BÖMSTRÖM is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "TNT Sack" (https://skfb.ly/6WOGJ) by Warkarma is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Civil Defense Geiger-Counter" (https://skfb.ly/6WMpz) by Steven Janes is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Lab Things" (https://skfb.ly/6TZRu) by Renafox is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
