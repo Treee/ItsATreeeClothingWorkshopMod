@@ -215,3 +215,13 @@ SRP_LabTube_Red
 SRP_LabTube_Green  
 SRP_LabTube_Yellow  
 SRP_LabTubeRack
+
+# Attributions
+
+Thank you to all the wonderful people who spent their time making models and listing them for free. All of the creatives can be found below.
+
+- "Dynamite stick" (https://skfb.ly/6z8uT) by BÖMSTRÖM is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "TNT Sack" (https://skfb.ly/6WOGJ) by Warkarma is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Civil Defense Geiger-Counter" (https://skfb.ly/6WMpz) by Steven Janes is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
