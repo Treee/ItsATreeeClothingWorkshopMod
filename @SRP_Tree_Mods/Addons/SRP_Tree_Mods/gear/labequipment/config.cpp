@@ -24,7 +24,7 @@ class CfgVehicles
     descriptionShort="3.6 roentgen not great, not terrible";
 		model="SRP_Tree_Mods\gear\labequipment\geigercounter.p3d";
     weight=30;
-		varTemperatureMax=1000;
+		varTemperatureMax=100;
     itemSize[]={2,3};
     hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
