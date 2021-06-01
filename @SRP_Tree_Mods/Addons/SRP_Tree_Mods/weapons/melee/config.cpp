@@ -20,9 +20,26 @@ class CfgVehicles
 		displayName="Trenchknife";
 		descriptionShort="A knife with a blade and brass knuckless";
 		model="SRP_Tree_Mods\weapons\melee\trenchknife.p3d";
-		weight=10;
+    inventorySlot[]=
+		{
+			"Knife"
+		};
+    repairableWithKits[]={4};
+		repairCosts[]={10};
+		RestrainUnlockType=1;
+		canSkinBodies=1;
+		weight=200;
     varTemperatureMax=100;
     itemSize[]={1,3};
+    lootTag[]=
+		{
+			"Hunting",
+			"Camping"
+		};
+		lootCategory="Tools";
+		openItemSpillRange[]={10,20};
+    isMeleeWeapon=1;
+		suicideAnim="onehanded";
 		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
       "SRP_Tree_Mods\weapons\data\trenchknife_co.paa"
@@ -30,13 +47,33 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]= {
 			"SRP_Tree_Mods\weapons\data\trenchknife.rvmat"
 		};
+		class MeleeModes
+		{
+			class Default
+			{
+        action="MeleeAttack%d";
+        ammo="MeleeLightBlunt";
+        range=1.2;
+        actionSounds="action_punch";
+			};
+			class Heavy
+			{
+				ammo="MeleeKnife_Heavy";
+				range=1.2;
+			};
+			class Sprint
+			{
+				ammo="MeleeKnife_Heavy";
+				range=3.3;
+			};
+		};    
     class DamageSystem
 		{
 			class GlobalHealth
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=130;
 					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
 					healthLevels[]=
 					{

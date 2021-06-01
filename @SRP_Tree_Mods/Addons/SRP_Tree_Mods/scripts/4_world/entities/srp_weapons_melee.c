@@ -1,0 +1,1 @@
+class SRP_Trenchknife extends HuntingKnife {};
