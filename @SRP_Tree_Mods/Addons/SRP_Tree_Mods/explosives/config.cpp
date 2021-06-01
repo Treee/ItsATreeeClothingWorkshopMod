@@ -14,7 +14,6 @@ class CfgPatches
 
 class CfgVehicles
 {
-  class Grenade_Base;
   class Inventory_Base;
   class SRP_Dynamite_Stick : Inventory_Base
   {

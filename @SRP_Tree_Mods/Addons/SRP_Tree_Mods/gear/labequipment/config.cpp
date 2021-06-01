@@ -134,6 +134,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Lab Projector";
+    itemBehaviour=0;
     descriptionShort="Project the results of your experiments.";
 		model="SRP_Tree_Mods\gear\labequipment\labequipment_projector.p3d";
     itemSize[]={5,6};

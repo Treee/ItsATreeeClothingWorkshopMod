@@ -120,7 +120,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="SRP_Tree_Mods\gear\labequipment\data\labequipment_mc.paa";
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource="tex";
 	class uvTransform
 	{
