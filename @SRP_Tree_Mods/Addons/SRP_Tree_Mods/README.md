@@ -239,3 +239,5 @@ Thank you to all the wonderful people who spent their time making models and lis
 - "Civil Defense Geiger-Counter" (https://skfb.ly/6WMpz) by Steven Janes is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Lab Things" (https://skfb.ly/6TZRu) by Renafox is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Katana and bamboo sword" (https://skfb.ly/6U9Rw) by Sybren Westendorp is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
