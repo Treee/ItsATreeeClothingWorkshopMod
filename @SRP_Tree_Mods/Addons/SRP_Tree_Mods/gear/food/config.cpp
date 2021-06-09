@@ -15,9 +15,9 @@ class CfgVehicles
 {	
   class Edible_Base;
   class MeatStageTransitions;
-
+  //---------------------------------------- Raw Cookable Cans
   class SRP_FoodCanRaw_Colorbase: Edible_Base 
-  {		
+  {
 		displayName="Raw Canned Food";
 		descriptionShort="A can of food that is yet to be preserved from spoiling. Raw.";
 		model="\dz\gear\food\food_can_open.p3d";
@@ -38,15 +38,6 @@ class CfgVehicles
 			"SmokingB",
 			"SmokingC",
 			"SmokingD"
-		};
-    class Nutrition
-		{
-			fullnessIndex=5;
-			energy=50;
-			water=50;
-			nutritionalIndex=1;
-			toxicity=0;
-			agents=4;
 		};
     class Food
 		{
@@ -161,6 +152,54 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_FoodCanRaw_HumanMeat: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="HumanMeat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					nutrition_properties[]={5,160,70,1,0,4};
+					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
+				};
+				class Rotten
+				{
+					nutrition_properties[]={2,120,35,1,0,"4+16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					nutrition_properties[]={5,50,50.5,1,0,2};
+					cooking_properties[]={70,45};
+				};
+				class Boiled
+				{
+					nutrition_properties[]={5,50,50,1,0,2};
+					cooking_properties[]={70,55};
+				};
+				class Burned
+				{
+					nutrition_properties[]={2,120,17.5,1,0,16};
+					cooking_properties[]={100,30};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions
+			{
+			};
+		};
+	};
+
   class SRP_FoodCanRaw_VeggieMeatCombo: SRP_FoodCanRaw_Colorbase
 	{
 		scope=2;
@@ -175,6 +214,55 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_FoodCanRaw_VeggieHumanMeatCombo: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="VeggieHumanMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SRP_Tree_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					nutrition_properties[]={5,160,70,1,0,4};
+					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
+				};
+				class Rotten
+				{
+					nutrition_properties[]={2,120,35,1,0,"4+16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					nutrition_properties[]={5,50,50.5,1,0,2};
+					cooking_properties[]={70,45};
+				};
+				class Boiled
+				{
+					nutrition_properties[]={5,50,50,1,0,2};
+					cooking_properties[]={70,55};
+				};
+				class Burned
+				{
+					nutrition_properties[]={2,120,17.5,1,0,16};
+					cooking_properties[]={100,30};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions
+			{
+			};
+		};
+	};
+
+  //----------------------------------------- Sealed Cans
   class SRP_FoodCanPreserved_Colorbase: Edible_Base
   {
 		displayName="Preserved Canned Food";
@@ -266,6 +354,20 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_FoodCanPreserved_HumanMeat: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="HumanMeat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+	};
+
   class SRP_FoodCanPreserved_VeggieMeatCombo: SRP_FoodCanPreserved_Colorbase
 	{
 		scope=2;
@@ -280,6 +382,21 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_FoodCanPreserved_VeggieHumanMeatCombo: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="VeggieHumanMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SRP_Tree_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+	};
+  
+  //----------------------------------------- Opened Cans
   class SRP_FoodCanPreserved_Opened_Colorbase: Edible_Base {
 		displayName="Preserved Canned Food Open";
 		descriptionShort="An opened can of preserved food. Who knows how long it has been in there.";
@@ -340,6 +457,7 @@ class CfgVehicles
 			};
 		};
   };
+
 	class SRP_FoodCanPreserved_Veggies_Opened: SRP_FoodCanPreserved_Opened_Colorbase
 	{
 		scope=2;
@@ -382,6 +500,28 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_FoodCanPreserved_HumanMeat_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=10;
+			energy=75;
+			water=25;
+			nutritionalIndex=1;
+			toxicity=0;
+      agents=4;
+		};
+	};
+
   class SRP_FoodCanPreserved_VeggieMeatCombo_Opened: SRP_FoodCanPreserved_Opened_Colorbase
 	{
 		scope=2;
@@ -400,6 +540,28 @@ class CfgVehicles
 			water=50;
 			nutritionalIndex=1;
 			toxicity=0;
+		};
+	};
+
+  class SRP_FoodCanPreserved_VeggieHumanMeatCombo_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SRP_Tree_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=10;
+			energy=50;
+			water=50;
+			nutritionalIndex=1;
+			toxicity=0;
+      agents=4;
 		};
 	};
 }
