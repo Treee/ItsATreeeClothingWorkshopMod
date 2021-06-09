@@ -21,6 +21,12 @@ modded class PluginRecipesManagerBase extends PluginBase
     // Smokable Recipe
 		RegisterRecipe(new SRP_Tree_Drugs_RollZWeedJoint);		
     RegisterRecipe(new SRP_Craft_DrugPack);
-    RegisterRecipe(new SRP_Craft_DrugCarton);		
+    RegisterRecipe(new SRP_Craft_DrugCarton);	
+
+    // Food Recipes	
+    RegisterRecipe(new SRP_Tree_CreateVeggiesMeatComboCanned_Raw);		
+    RegisterRecipe(new SRP_Tree_CreateVeggiesCanned_Raw);		
+    RegisterRecipe(new SRP_Tree_CreateMeatCanned_Raw);		
+    RegisterRecipe(new SRP_Tree_CanRawGoods);		
 	}
 };
