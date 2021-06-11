@@ -241,3 +241,8 @@ Thank you to all the wonderful people who spent their time making models and lis
 - "Lab Things" (https://skfb.ly/6TZRu) by Renafox is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Katana and bamboo sword" (https://skfb.ly/6U9Rw) by Sybren Westendorp is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Simple Toilet Paper" (https://skfb.ly/6zHO8) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Natural Paper box - King Size" (https://skfb.ly/6WCEq) by LaSemillaAutomatica is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/). (Not monetized or modified)
+

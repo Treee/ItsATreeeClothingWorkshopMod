@@ -86,7 +86,7 @@ class SRP_Tree_Drugs_SplitMediumMethJar extends RecipeBase
 {
 	override void Init()
 	{
-		m_Name = "Split MEdium Jar of Meth";	// action name in game
+		m_Name = "Split Medium Jar of Meth";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 1;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision

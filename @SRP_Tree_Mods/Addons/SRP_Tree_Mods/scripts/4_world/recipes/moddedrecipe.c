@@ -19,7 +19,10 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new SRP_Tree_Drugs_MakeBathSalts);
 
     // Smokable Recipe
-		RegisterRecipe(new SRP_Tree_Drugs_RollZWeedJoint);		
+		RegisterRecipe(new SRP_Tree_Drugs_CraftRollingPapers);		
+		RegisterRecipe(new SRP_Tree_Drugs_RollZWeedJoint);
+		RegisterRecipe(new SRP_Tree_Drugs_RollCigarette);		    
+		RegisterRecipe(new SRP_Tree_Drugs_RollCigar);		    
     RegisterRecipe(new SRP_Craft_DrugPack);
     RegisterRecipe(new SRP_Craft_DrugCarton);	
 
