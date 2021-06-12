@@ -8,7 +8,7 @@ modded class DayZPlayerImplementJumpClimb
 		m_Player.OnJumpStart();
     
     EntityAI maskAttachment = m_Player.FindAttachmentBySlotName("Armband");
-    if (maskAttachment && maskAttachment.GetType() == "DUB_Monster") {
+    if (maskAttachment && maskAttachment.GetType() == "DUB_Monster"){
       m_Player.StartCommand_Fall(15);
     }
     else {
