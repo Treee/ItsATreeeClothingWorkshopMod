@@ -1,189 +1,173 @@
-FrameWidgetClass SleepFrame {
- visible 1
+PanelWidgetClass Sleep {
  clipchildren 1
- position 0 0
- size 260 150
+ inheritalpha 0
+ position 45.69 445.34998
+ size 35 81
  halign right_ref
- valign bottom_ref
+ valign center_ref
  hexactpos 1
  vexactpos 1
  hexactsize 1
  vexactsize 1
  fixaspect fixwidth
- priority 100
+ style blank
  {
-  PanelWidgetClass Sleep {
-   clipchildren 1
-   inheritalpha 0
-   position 54 -19
-   size 35 81
-   halign right_ref
+  ImageWidgetClass IconSleep {
+   color 0.8627 0.8627 0.8627 1
+   position 0 0
+   size 35 35
+   halign center_ref
    valign center_ref
    hexactpos 1
    vexactpos 1
    hexactsize 1
    vexactsize 1
    fixaspect fixwidth
-   style blank
-   {
-    ImageWidgetClass IconSleep {
-     color 0.8627 0.8627 0.8627 1
-     position 0 0
-     size 35 35
-     halign center_ref
-     valign center_ref
-     hexactpos 1
-     vexactpos 1
-     hexactsize 1
-     vexactsize 1
-     fixaspect fixwidth
-     image0 "set:srp_tree_iconset image:iconSleep0"
-     mode blend
-     "src alpha" 1
-     "no wrap" 1
-     stretch 0
-     "flip u" 0
-     "flip v" 0
-     filter 1
-     nocache 0
-    }
-    ImageWidgetClass SleepArrowUp3 {
-     visible 1
-     clipchildren 0
-     color 0.8627 0.8627 0.8627 1
-     position 0 -27
-     size 22 17
-     halign center_ref
-     valign center_ref
-     hexactpos 1
-     vexactpos 1
-     hexactsize 1
-     vexactsize 1
-     priority 999
-     image0 "set:dayz_gui image:iconArrowUp3"
-     mode blend
-     "src alpha" 1
-     "no wrap" 1
-     stretch 0
-     "flip v" 1
-     filter 1
-     nocache 0
-    }
-    ImageWidgetClass SleepArrowUp2 {
-     visible 0
-     clipchildren 1
-     inheritalpha 0
-     color 0.8627 0.8627 0.8627 1
-     position 0 -25
-     size 22 12
-     halign center_ref
-     valign center_ref
-     hexactpos 1
-     vexactpos 1
-     hexactsize 1
-     vexactsize 1
-     priority 999
-     image0 "set:dayz_gui image:iconArrowUp2"
-     mode blend
-     "src alpha" 1
-     "no wrap" 1
-     stretch 0
-     "flip v" 1
-     filter 1
-     nocache 0
-    }
-    ImageWidgetClass SleepArrowUp1 {
-     visible 0
-     clipchildren 1
-     inheritalpha 0
-     color 0.8627 0.8627 0.8627 1
-     position 0 -22
-     size 22 7
-     halign center_ref
-     valign center_ref
-     hexactpos 1
-     vexactpos 1
-     hexactsize 1
-     vexactsize 1
-     priority 999
-     image0 "set:dayz_gui image:iconArrowUp1"
-     mode blend
-     "src alpha" 1
-     "no wrap" 1
-     stretch 0
-     "flip v" 1
-     filter 1
-     nocache 0
-    }
-    ImageWidgetClass SleepArrowDown1 {
-     visible 0
-     clipchildren 1
-     color 0.8627 0.8627 0.8627 1
-     position 0 22
-     size 22 7
-     halign center_ref
-     valign center_ref
-     hexactpos 1
-     vexactpos 1
-     hexactsize 1
-     vexactsize 1
-     priority 999
-     image0 "set:dayz_gui image:iconArrowUp1"
-     mode blend
-     "src alpha" 1
-     "no wrap" 1
-     stretch 0
-     "flip v" 0
-     filter 1
-     nocache 0
-    }
-    ImageWidgetClass SleepArrowDown2 {
-     visible 0
-     clipchildren 1
-     inheritalpha 0
-     color 0.8627 0.8627 0.8627 1
-     position 0 25
-     size 22 12
-     halign center_ref
-     valign center_ref
-     hexactpos 1
-     vexactpos 1
-     hexactsize 1
-     vexactsize 1
-     priority 999
-     image0 "set:dayz_gui image:iconArrowUp2"
-     mode blend
-     "src alpha" 1
-     "no wrap" 1
-     stretch 0
-     "flip v" 0
-     filter 1
-     nocache 0
-    }
-    ImageWidgetClass SleepArrowDown3 {
-     visible 1
-     clipchildren 1
-     inheritalpha 0
-     color 0.8627 0.8627 0.8627 1
-     position 0 27
-     size 22 17
-     halign center_ref
-     valign center_ref
-     hexactpos 1
-     vexactpos 1
-     hexactsize 1
-     vexactsize 1
-     priority 999
-     image0 "set:dayz_gui image:iconArrowUp3"
-     mode blend
-     "src alpha" 1
-     "no wrap" 1
-     stretch 0
-     "flip v" 0
-     filter 1
-     nocache 0
-    }
-   }
+   image0 "set:srp_tree_iconset image:iconSleep0"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 0
+   "flip u" 0
+   "flip v" 0
+   filter 1
+   nocache 0
+  }
+  ImageWidgetClass SleepArrowUp3 {
+   visible 1
+   clipchildren 0
+   color 0.8627 0.8627 0.8627 1
+   position 0 -27
+   size 22 17
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 999
+   image0 "set:dayz_gui image:iconArrowUp3"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 0
+   "flip v" 1
+   filter 1
+   nocache 0
+  }
+  ImageWidgetClass SleepArrowUp2 {
+   visible 0
+   clipchildren 1
+   inheritalpha 0
+   color 0.8627 0.8627 0.8627 1
+   position 0 -25
+   size 22 12
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 999
+   image0 "set:dayz_gui image:iconArrowUp2"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 0
+   "flip v" 1
+   filter 1
+   nocache 0
+  }
+  ImageWidgetClass SleepArrowUp1 {
+   visible 0
+   clipchildren 1
+   inheritalpha 0
+   color 0.8627 0.8627 0.8627 1
+   position 0 -22
+   size 22 7
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 999
+   image0 "set:dayz_gui image:iconArrowUp1"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 0
+   "flip v" 1
+   filter 1
+   nocache 0
+  }
+  ImageWidgetClass SleepArrowDown1 {
+   visible 0
+   clipchildren 1
+   color 0.8627 0.8627 0.8627 1
+   position 0 22
+   size 22 7
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 999
+   image0 "set:dayz_gui image:iconArrowUp1"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 0
+   "flip v" 0
+   filter 1
+   nocache 0
+  }
+  ImageWidgetClass SleepArrowDown2 {
+   visible 0
+   clipchildren 1
+   inheritalpha 0
+   color 0.8627 0.8627 0.8627 1
+   position 0 25
+   size 22 12
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 999
+   image0 "set:dayz_gui image:iconArrowUp2"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 0
+   "flip v" 0
+   filter 1
+   nocache 0
+  }
+  ImageWidgetClass SleepArrowDown3 {
+   visible 1
+   clipchildren 1
+   inheritalpha 0
+   color 0.8627 0.8627 0.8627 1
+   position 0 27
+   size 22 17
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 999
+   image0 "set:dayz_gui image:iconArrowUp3"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 0
+   "flip v" 0
+   filter 1
+   nocache 0
   }
  }
 }

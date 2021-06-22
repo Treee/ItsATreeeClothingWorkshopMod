@@ -74,7 +74,7 @@ class SRP_SleepMdfr: ModifierBase
 	override void OnTick(PlayerBase player, float deltaT)
 	{
     int currentTirednessCount = player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT);
-    // Print("SleepMdfr: OnTick - Sleepyness count: " + currentTirednessCount);
+    Print("SleepMdfr: OnTick - Sleepyness count: " + currentTirednessCount);
     // set the agent growth or shrink based on laying down or being unconscious
     if (player.GetEmoteManager().m_IsLayDown || player.IsUnconscious()) {
       player.SetPlayerSleepingMdfr(true);
@@ -103,14 +103,14 @@ class SRP_SleepMdfr: ModifierBase
   int GetTendency(int current)
   {
     int delta = m_LastTirednessCount - current;
-    // Print("GetTendency " + delta);
+    Print("GetTendency " + delta);
     return (m_LastTirednessCount - current) / DEFAULT_TICK_TIME_INACTIVE_LONG;
   }
 
   // shows the sleep icon relative to total tiredness
   int GetTirednessLevel(int currentTirednessCount)
   {
-    // Print("GetTirednessLevel: " + currentTirednessCount + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
+    Print("GetTirednessLevel: " + currentTirednessCount + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
     // the retun numbers here correlate to icons in srp_tree_iconset.imageset
     if (currentTirednessCount >= TIREDNESS_0PERCENT && currentTirednessCount < TIREDNESS_25PERCENT){ // fully slept full moon      
       return 4;

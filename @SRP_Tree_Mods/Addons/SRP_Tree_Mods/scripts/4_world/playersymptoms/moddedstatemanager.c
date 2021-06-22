@@ -10,6 +10,7 @@ modded class SymptomManager
     RegisterSymptom(new AlcoholEffectSymptom);
     RegisterSymptom(new SmileAcidEffectSymptom);
     RegisterSymptom(new SkullAcidEffectSymptom);
+    RegisterSymptom(new SleepEffectSymptom);
     RegisterSymptom(new TestEffectSymptom);
   }
 }

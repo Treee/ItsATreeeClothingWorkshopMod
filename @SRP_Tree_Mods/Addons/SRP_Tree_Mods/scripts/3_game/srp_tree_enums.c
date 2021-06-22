@@ -140,4 +140,5 @@ enum SRP_SymptomIDs {
   SYMPTOM_HEROINE = 428,
   SYMPTOM_ALCOHOL = 429, // 
   SYMPTOM_BATHSALTS = 430, // finished
+  SYMPTOM_SLEEP = 431, // finished
 };
