@@ -19,6 +19,7 @@
 !@SurvivalistsMods
 SRP_Tree_Test
 /ItsATreeeModSource/src/**/*.png
+/ItsATreeeModSource/src/**/*.pdn
 !/ItsATreeeModSource/src/dayz_tools/**/*.png
 !/ItsATreeeModSource/src/**/preview_image.png
 /Addons
