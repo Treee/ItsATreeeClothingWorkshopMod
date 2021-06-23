@@ -38,23 +38,35 @@ modded class PlayerBase
     return m_AgentPool.HasAgent(SRP_Medical_Agents.SLEEP_AGENT);
   }
 
-  void SetPlayerSleepingMdfr(bool isSleeping){
-    PluginTransmissionAgents transmissionAgents = PluginTransmissionAgents.Cast(GetPlugin(PluginTransmissionAgents));
-    AgentBase agent = transmissionAgents.GetAgentByAgentId(SRP_Medical_Agents.SLEEP_AGENT);
-    
-    if (isSleeping && agent) {
-      // Print("sleeping and agent is not null");
-      SleepAgent.Cast(agent).GoToSleep();
-    } else if (!isSleeping && agent){
-      // Print("not sleeping and agent is not null");
-      SleepAgent.Cast(agent).WakeUp();
-    }
-
-    if (!HasSleepAgent()) {
-      // Print("Insert Agent");
-      InsertAgent(SRP_Medical_Agents.SLEEP_AGENT);
-    }
+  bool IsAwake()
+  {
+    return !GetEmoteManager().m_IsLayDown && !IsUnconscious();
   }
+
+  void SRP_SetUnconscious()
+  {
+    SetHealth("", "Shock", 0);
+    GetModifiersManager().ActivateModifier(eModifiers.MDF_UNCONSCIOUSNESS);
+  }
+
+  // void SetPlayerSleepingMdfr(bool isSleeping)
+  // {
+  //   PluginTransmissionAgents transmissionAgents = PluginTransmissionAgents.Cast(GetPlugin(PluginTransmissionAgents));
+  //   AgentBase agent = transmissionAgents.GetAgentByAgentId(SRP_Medical_Agents.SLEEP_AGENT);
+    
+  //   if (isSleeping && agent) {
+  //     // Print("sleeping and agent is not null");
+  //     SleepAgent.Cast(agent).GoToSleep();
+  //   } else if (!isSleeping && agent){
+  //     // Print("not sleeping and agent is not null");
+  //     SleepAgent.Cast(agent).WakeUp();
+  //   }
+
+  //   if (!HasSleepAgent()) {
+  //     // Print("Insert Agent");
+  //     InsertAgent(SRP_Medical_Agents.SLEEP_AGENT);
+  //   }
+  // }
 
   void TryYawn(bool isMale) {    
     // Print("SRP Modded Playerbase:: TryYawn chance to yawn: " + chance);

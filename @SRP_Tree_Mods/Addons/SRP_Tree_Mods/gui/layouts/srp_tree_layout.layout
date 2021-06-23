@@ -1,7 +1,7 @@
 PanelWidgetClass Sleep {
  clipchildren 1
  inheritalpha 0
- position 45.69 445.34998
+ position 52.69 445.34998
  size 35 81
  halign right_ref
  valign center_ref

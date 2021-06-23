@@ -27,7 +27,9 @@ modded class IngameHud
     if (!m_sleepPanelWidget && (GetGame().IsClient() || !GetGame().IsMultiplayer()))
     {
       m_sleepPanelWidget = GetGame().GetWorkspace().CreateWidgets("SRP_Tree_Mods/gui/layouts/srp_tree_layout.layout");
-      m_sleepPanelWidget.Show(false);
+      if (m_sleepPanelWidget) {
+        m_sleepPanelWidget.Show(true);
+      }
     }
 
     // Print("SRP Tree Mods IngameHud after Init()");
