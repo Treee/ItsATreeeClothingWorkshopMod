@@ -103,14 +103,14 @@ class SleepEffectSymptom extends SymptomBase
   int GetTendency(float current)
   {
     float delta = m_LastTirednessCount - current;
-    Print("GetTendency " + delta);
+    // Print("GetTendency " + delta);
     return (m_LastTirednessCount - current) * 27;
   }
 
   // shows the sleep icon relative to total tiredness
   int GetTirednessLevel(int total_tiredness)
   {
-    Print("GetTirednessLevel: " + total_tiredness + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
+    // Print("GetTirednessLevel: " + total_tiredness + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
     // the retun numbers here correlate to icons in srp_tree_iconset.imageset
     if (total_tiredness >= TIREDNESS_0PERCENT && total_tiredness < TIREDNESS_25PERCENT){ // fully slept full moon      
       return 4;
