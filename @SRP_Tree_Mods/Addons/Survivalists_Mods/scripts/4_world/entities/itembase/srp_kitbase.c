@@ -43,3 +43,10 @@ class SRP_Potbelly_Stove_Kit extends SRP_KitBase
     return "SRP_Potbelly_Stove";
   }
 }
+
+class SRP_FridgeBig_Kit extends SRP_KitBase
+{
+  override string GetKitItemName() {
+    return "SRP_FridgeBig";
+  }
+}

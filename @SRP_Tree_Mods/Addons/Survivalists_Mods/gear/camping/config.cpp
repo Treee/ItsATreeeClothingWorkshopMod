@@ -16,8 +16,8 @@ class CfgVehicles
 {
   class BarrelHoles_ColorBase;
   class SRP_KitBase;
-  
-  class SRP_Potbelly_Stove_Kit: SRP_KitBase
+
+  class SRP_Potbelly_Stove_Kit: SRP_KitBase //BP_Pech_kit
 	{
 		scope=2;
 		displayName="Potbelly Stove Kit";
@@ -51,7 +51,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Potbelly_Stove: BarrelHoles_ColorBase
+  class SRP_Potbelly_Stove: BarrelHoles_ColorBase //BPPech
 	{
 		scope=2;
 		displayName="Potbelly Stove";
