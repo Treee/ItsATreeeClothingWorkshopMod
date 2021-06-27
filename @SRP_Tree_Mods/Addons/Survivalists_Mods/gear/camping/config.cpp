@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
+      "DZ_Gear_Camping",
       "Survivalists_Mods_Gear_Containers"
 		};
 	};
@@ -15,7 +16,12 @@ class CfgPatches
 class CfgVehicles
 {
   class BarrelHoles_ColorBase;
+  class Inventory_Base;
   class SRP_KitBase;
+
+  // ----------------------  BASE GAME OVERRIDES
+
+  // ----------------------- CUSTOM STUFF
 
   class SRP_Potbelly_Stove_Kit: SRP_KitBase //BP_Pech_kit
 	{
@@ -30,8 +36,6 @@ class CfgVehicles
 		carveNavmesh=1;
 		rotationFlags=2;
 		itemBehaviour=2;
-		// forceFarBubble="true";
-		// bounding="BSphere";
 		physLayer="item_large";
 		minPlacingDist=1;
 		allowOwnedCargoManipulation=1;
@@ -81,6 +85,75 @@ class CfgVehicles
 			itemsCargoSize[]={10,10};
 			openable=1;
 			allowOwnedCargoManipulation=1;
+		};
+	};
+
+  class SRP_Bowl: Inventory_Base  // Bp_Bowl
+	{
+		scope=2;
+		displayName="Bowl";
+		descriptionShort="It may seem strange, but eating from a plate is much more convenient and more hygienic than from the floor.";
+		model="Survivalists_Mods\gear\camping\Bp_Bowl.p3d";
+		inventorySlot="BPCookingEquip";
+		weight=250;
+		itemSize[]={4,4};
+		absorbency=0.30000001;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		attachments[]=
+		{
+			"Ingredient",
+			"Ingredient1",
+			"Ingredient2",
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class BPFood
+			{
+				name="Food";
+				description="";
+				attachmentSlots[]=
+				{
+					"Ingredient1",
+					"Ingredient2",
+					"Ingredient"
+				};
+				icon="food";
+			};
+		};
+		hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\Piatto_B1.paa"
+		};
+	};
+
+	class SRP_Bowl_1: SRP_Bowl  // Bp_Bowl_1
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\Piatto_B2.paa"
+		};
+	};
+
+	class SRP_Bowl_2: SRP_Bowl  // Bp_Bowl_2
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\Piatto_B3.paa"
 		};
 	};
 

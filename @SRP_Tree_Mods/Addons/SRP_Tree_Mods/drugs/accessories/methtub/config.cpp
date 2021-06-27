@@ -62,6 +62,8 @@ class CfgVehicles
 		itemSize[]={12,12};
     itemBehaviour=0;
     isTakeable=0;
+    carveNavmesh=1;
+    physLayer="item_large";
     attachments[]=
 		{
 			"MethRecipe",

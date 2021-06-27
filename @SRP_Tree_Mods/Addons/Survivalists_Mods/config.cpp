@@ -34,14 +34,3 @@ class CfgMods
 		};
 	};
 };
-
-class CfgPatches
-{
-	class Survivalists_Mods
-	{
-    units[] = {};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=	{ "DZ_Data", "DZ_Scripts", "DZ_Characters"};
-	};
-};
