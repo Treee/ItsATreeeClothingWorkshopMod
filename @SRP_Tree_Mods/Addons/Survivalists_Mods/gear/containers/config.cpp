@@ -7,79 +7,16 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data"
+			"DZ_Data",
+      "Survivalists_Mods"
 		};
 	};
 };
 class CfgVehicles
 {
   class Container_Base;
-
-  class SRP_KitBase: Container_Base //SRP_dec_base
-	{
-		scope=0; //0 means cannot be directly spawned
-		displayName="Kit Box";
-		descriptionShort="A wooden box used to transport small items. Find a suitable place to construct. Can be disassembled.";
-		model="\DZ\gear\camping\wooden_case.p3d";
-		itemsCargoSize[]={0,0};
-		itemSize[]={7,5};
-		carveNavmesh=1;
-		canBeDigged=0;
-		simulation="inventoryItem";
-		physLayer="item_small";
-		rotationFlags=2;
-		heavyItem=1;
-		weight=3000;
-		itemBehaviour=2;
-		hiddenSelections[]={"camoground"};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\containers\data\srp_kitbase_co.paa"
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=100;
-				};
-			};
-			class GlobalArmor
-			{
-				class Projectile
-				{
-					class Health
-					{
-						damage=0;
-					};
-					class Blood
-					{
-						damage=0;
-					};
-					class Shock
-					{
-						damage=0;
-					};
-				};
-				class FragGrenade
-				{
-					class Health
-					{
-						damage=0;
-					};
-					class Blood
-					{
-						damage=0;
-					};
-					class Shock
-					{
-						damage=0;
-					};
-				};
-			};
-		};
-	};
+  class SmallProtectorCase;
+  class SRP_KitBase;
 
   class SRP_FridgeBig_Kit: SRP_KitBase //new
 	{
@@ -707,6 +644,128 @@ class CfgVehicles
 				{
 					soundSet="pickUpSeaChest_SoundSet";
 					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_Notebook_Base: SmallProtectorCase
+	{
+		scope=0; // dont spawn this in
+    displayName="Base class do not spawn in";
+    descriptionShort="Base class do not spawn in";
+		model="DZ\gear\books\Book_kniga.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"DZ\gear\books\data\book_kniga_co.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		attachments[]=
+		{
+			"Pen_slot"
+		};
+		inventorySlot[]=
+		{
+			"Book_slot",
+			"OpenBook",
+			"Book1",
+			"Book2",
+			"Book3",
+			"Book4",
+			"Book5",
+			"Book6",
+			"Book7",
+			"Book8",
+			"Book9",
+			"Book10",
+			"Book11",
+			"Book12",
+			"Book13",
+			"Book14",
+			"Book15",
+			"Book16",
+			"Book17",
+			"Book18",
+			"Book19",
+			"Book20",
+			"Book21",
+			"Book22",
+			"Book23",
+			"Book24",
+			"Book25",
+			"Book26",
+			"Book27",
+			"Book28",
+			"Book29",
+			"Book30",
+			"Book31",
+			"Book32",
+			"Book33",
+			"Book34",
+			"Book35",
+			"Book36",
+			"Book37",
+			"Book38",
+			"Book39",
+			"Book40",
+			"Book41",
+			"Book42",
+			"Book43",
+			"Book44",
+			"Book45",
+			"Book46",
+			"Book47",
+			"Book48",
+			"Book49",
+			"Book50"
+		};
+		rotationFlags=1;
+		weight=140;
+		itemSize[]={2,2};
+		itemsCargoSize[]={10,4};
+		canBeDigged=1;
+		allowOwnedCargoManipulation=1;
+		isMeleeWeapon=1;
+	};
+
+	class SRP_Notebook: SRP_Notebook_Base
+	{
+		scope=2;
+		displayName="Notebook";
+		descriptionShort="A notebook that can be used to carry paper, notes and a pen";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_notepad_co.paa"
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Pen_slot
+			{
+				name="Pen_slot";
+				attachmentSlots[]=
+				{
+					"Pen_slot"
+				};
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						{1.01,{"DZ\gear\books\Data\book.rvmat"}},
+            {0.69999999,{"DZ\gear\books\Data\book.rvmat"}},
+            {0.5,{"DZ\gear\books\Data\book_damage.rvmat"}},
+            {0.30000001,{"DZ\gear\books\Data\book_damage.rvmat"}},
+            {0.1,{"DZ\gear\books\Data\book_destruct.rvmat"}}
+					};
 				};
 			};
 		};

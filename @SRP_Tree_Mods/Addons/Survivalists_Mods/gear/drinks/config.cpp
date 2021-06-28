@@ -320,5 +320,4 @@ class CfgVehicles
 			"Survivalists_Mods\gear\drinks\data\tonik_yagua.paa"
 		};
 	};
-
 };

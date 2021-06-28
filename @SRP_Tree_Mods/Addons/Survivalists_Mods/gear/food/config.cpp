@@ -17,6 +17,10 @@ class CfgVehicles
   class SmallGuts;
   class BoxCerealCrunchin;
   class PowderedMilk;
+  class Edible_Base;
+  class TacticalBaconCan;
+  class TacticalBaconCan_Opened;
+  class Marmalade;
   // ----------------------  BASE GAME OVERRIDES
 
   class Lard: Edible_Base
@@ -952,6 +956,28 @@ class CfgVehicles
 			blood=-1500;
 			nutritionalIndex=2;
 			toxicity=1200;
+		};
+	};
+
+  class SRP_CandyCane: Marmalade
+	{
+		scope=2;
+		displayName="Candy Cane";
+		descriptionShort="A colorful cane of candy";
+		model="Survivalists_Mods\gear\food\s_candycane.p3d";
+		weight=0;
+		itemSize[]={1,2};
+		varQuantityInit=340;
+		varQuantityMin=0;
+		varQuantityMax=340;
+		absorbency=0.89999998;
+		class Nutrition
+		{
+			fullnessIndex=1.5;
+			energy=280;
+			water=30;
+			nutritionalIndex=1;
+			toxicity=0;
 		};
 	};
 };

@@ -270,6 +270,86 @@ class CfgSlots
 		displayName="Ingredient8";
 		ghostIcon="ingredient";
 	};
+	class Slot_carman1
+	{
+		name="carman1";
+		displayName="carman1";
+		selection="carman_1";
+		ghostIcon="pouches";
+	};
+	class Slot_carman2
+	{
+		name="carman2";
+		displayName="carman2";
+		selection="carman_2";
+		ghostIcon="pouches";
+	};
+	class Slot_Hatchet
+	{
+		name="Hatchet";
+		displayName="Hatchet";
+		ghostIcon="shoulderright";
+	};
+	class Slot_BPAxe
+	{
+		name="BPAxe";
+		displayName="BPAxe";
+		ghostIcon="shoulderright";
+	};
+	class Slot_FShovel
+	{
+		name="FShovel";
+		displayName="FShovel";
+		ghostIcon="shoulderright";
+	};
+	class Slot_binocular
+	{
+		name="binocular";
+		displayName="binocular";
+		ghostIcon="opticacog";
+	};
+	class Slot_FirstAid
+	{
+		name="firstaidkit";
+		displayName="firstaidkit";
+		ghostIcon="hips";
+	};
+	class Slot_no
+	{
+		name="no";
+		displayName="no";
+		selection="no";
+		ghostIcon="shoulderright";
+	};
+	class Slot_no_car
+	{
+		name="no_car";
+		displayName="no_car";
+		selection="no";
+		ghostIcon="shoulderright";
+	};
+	class Slot_Pen_slot
+	{
+		name="Pen_slot";
+		displayName="Pen";
+		ghostIcon="";
+	};
+	class Slot_BP_lamp
+	{
+		name="BP_gas_lamp";
+		displayName="gas_lamp";
+		ghostIcon="gascanister";
+		selection="BP_gas_lamp";
+	};
+	class Slot_SRPLRRadioBattery
+	{
+		name="SRPRadioBattery";
+		displayName="Battery";
+		selection="SRPRadioBattery";
+		ghostIcon="Battery";
+		show="true";
+		stackMax=1;
+	};
 };
 
 class CfgNonAIVehicles
@@ -291,13 +371,13 @@ class CfgNonAIVehicles
 	{
 		scope=2;
 		inventorySlot="SRP_CasePrep";
-		model="\BP1\gearcamping\SRP_CasePrep.p3d"; // wait
+		model="Survivalists_Mods\gear\crafting\SRP_CasePrep.p3d";
 	};
 	class ProxySRP_AmmoPress: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot="SRP_AmmoPress";
-		model="\BP1\gearcamping\SRP_AmmoPress.p3d"; // wait
+		model="Survivalists_Mods\gear\crafting\SRP_AmmoPress.p3d";
 	};
 	class ProxySpavnGuns1: ProxyAttachment
 	{
@@ -536,5 +616,99 @@ class CfgNonAIVehicles
 	{
 		inventorySlot="Ingredient8";
 		model="Survivalists_Mods\proxy\bp_meat8.p3d";
+	};
+
+	class ProxyBPHatchet: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="Hatchet";
+		model="Survivalists_Mods\proxy\BPHatchet.p3d";
+	};
+	class Proxyk6_3Glass: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="Glass";
+		model="\BP_Smot\k6_3\k6_3Glass.p3d";
+	};
+	class Proxyranec: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="back";
+		model="\BP2\camo\bag\ranec_g.p3d";
+	};
+	class ProxyProxy_binoculars: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="binocular";
+		model="Survivalists_Mods\proxy\Proxy_binoculars.p3d";
+	};
+	class Proxyfirstaidkit: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="firstaidkit";
+		model="\DZ\gear\containers\FirstAidKit.p3d";
+	};
+	class ProxyPistol: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="Pistol";
+		model="BP2\camo\belts\proxy\Pistol.p3d";
+	};
+	class Proxyweaponlight_TLR: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="pistolFlashlight";
+		model="BP2\camo\belts\proxy\weaponlight_TLR.p3d";
+	};
+	class Proxyaxe: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="no";
+		model="BP2\camo\vest\proxy\axe.p3d";
+	};
+	class Proxyaxe11: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="BPAxe";
+		model="BP2\camo\vest\proxy\axe11.p3d";
+	};
+	class ProxyProxy_chemlight: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="Chemlight";
+		model="Survivalists_Mods\proxy\Proxy_chemlight.p3d";
+	};
+	class Proxycarman1: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]=
+		{
+			"carman1"
+		};
+		model="BP_Smot\hunting\proxy\carman1.p3d";
+	};
+	class Proxycarman2: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]=
+		{
+			"carman2"
+		};
+		model="BP_Smot\hunting\proxy\carman2.p3d";
+	};
+	class ProxyfShovel: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]=
+		{
+			"FShovel"
+		};
+		model="BP_Shelf\Proxy\fShovel.p3d";
+	};
+	class ProxyBPGas_lamp: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="BP_gas_lamp";
+		model="\BP_Shelf\Proxy\BPGas_lamp.p3d";
 	};
 };

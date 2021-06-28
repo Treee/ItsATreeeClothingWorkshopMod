@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Gear_Crafting"
+      "DZ_Gear_Crafting",
+      "Survivalists_Mods"
 		};
 	};
 };
@@ -17,6 +18,7 @@ class CfgVehicles
 {
   class Container_Base;
   class Inventory_Base;
+  class SRP_KitBase;
 
 	class SRP_AdvancedWorkbench: Container_Base // BP1_Workbench
 	{
@@ -257,6 +259,66 @@ class CfgVehicles
 				class pickUpItem
 				{
 					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+	class SRP_ShootingTargetO_kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Shooting Target Kit";
+		descriptionShort="A placeable shooting target set!";
+		itemSize[]={6,3};
+		itemsCargoSize[]={0,0};
+	};
+
+  class SRP_ShootingTargetO: Container_Base
+	{
+		scope=2;
+		displayName="Shooting Target";
+		descriptionShort="A target for shooting at.";
+		model="Survivalists_Mods\gear\crafting\SRP_ShootingTarget.p3d";
+		overrideDrawArea="3.0";
+		forceFarBubble="true";
+		lootCategory="Crafted";
+		carveNavmesh=1;
+		weight=3000;
+		itemSize[]={15,10};
+		physLayer="item_large";
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
 					id=797;
 				};
 			};
