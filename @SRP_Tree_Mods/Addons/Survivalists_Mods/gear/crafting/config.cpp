@@ -19,6 +19,7 @@ class CfgVehicles
   class Container_Base;
   class Inventory_Base;
   class SRP_KitBase;
+  class GorkaHelmetVisor;
 
 	class SRP_AdvancedWorkbench: Container_Base // BP1_Workbench
 	{
@@ -265,7 +266,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_ShootingTargetO_kit: SRP_KitBase
+	class SRP_ShootingTargetO_kit: SRP_KitBase  // BP_ShootingTargetO_kit
 	{
 		scope=2;
 		displayName="Shooting Target Kit";
@@ -274,7 +275,7 @@ class CfgVehicles
 		itemsCargoSize[]={0,0};
 	};
 
-  class SRP_ShootingTargetO: Container_Base
+  class SRP_ShootingTargetO: Container_Base // BP_ShootingTargetO
 	{
 		scope=2;
 		displayName="Shooting Target";
@@ -323,5 +324,18 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+
+  class SRP_GorkaHelmetVisor_K6: GorkaHelmetVisor  // K6_3lmetVisor
+	{
+		scope=2;
+		displayName="K6 Gorka Helmet Visor";
+		model="Survivalists_Mods\gear\crafting\k6_3Glass.p3d";
+	};
+	class SRP_GorkaHelmetVisor_K6Open: GorkaHelmetVisor  // K6_3lmetVisor1
+	{
+		scope=2;
+		displayName="K6 Gorka Helmet Visor Open";
+		model="Survivalists_Mods\gear\crafting\k6_3Glass1.p3d";
 	};
 };

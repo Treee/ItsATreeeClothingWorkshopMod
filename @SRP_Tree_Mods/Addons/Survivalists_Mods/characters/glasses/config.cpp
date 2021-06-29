@@ -173,4 +173,20 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_NVBinocular: NVGoggles  // BP_NVBinocular
+	{
+		scope=2;
+		class OpticsInfo
+		{
+			memoryPointCamera="eyeScope";
+			cameraDir="cameraDir";
+			distanceZoomMin=100;
+			distanceZoomMax=100;
+			opticsZoomMin=0.050000001;
+			opticsZoomMax=0.050000001;
+			opticsZoomInit=0.050000001;
+		};
+	};
+
 };

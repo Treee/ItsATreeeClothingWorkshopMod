@@ -17,7 +17,18 @@ class CfgVehicles
   class Container_Base;
   class SmallProtectorCase;
   class SRP_KitBase;
+  
+  //-------------------------------------- BASE GAME OVERRIDE
+  class FirstAidKit: Container_Base
+	{
+		inventorySlot[]=
+		{
+			"firstaidkit"
+		};
+	};
 
+  //--------------------------------------- Custom Stuff
+  
   class SRP_FridgeBig_Kit: SRP_KitBase //new
 	{
 		scope=2;
