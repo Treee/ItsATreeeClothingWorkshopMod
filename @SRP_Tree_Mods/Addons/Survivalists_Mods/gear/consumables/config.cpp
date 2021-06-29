@@ -60,7 +60,6 @@ class CfgVehicles
 		};
 	};
 
-
   //----------------------------------------------- CUSTOM STUFF
   class SRP_LongRangeRadioBattery: Inventory_Base // SRPLRRadioBattery
 	{

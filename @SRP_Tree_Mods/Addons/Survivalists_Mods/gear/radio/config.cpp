@@ -152,7 +152,6 @@ class CfgVehicles
 			female="Survivalists_Mods\gear\radio\tactical_kep_m2.p3d";
 		};
 	};
-
 	class SRP_PersonalRadio_EarPhones: PersonalRadio  // BP_PhoneZ
 	{
 		scope=2;
@@ -193,7 +192,6 @@ class CfgVehicles
 			female="Survivalists_Mods\gear\radio\Phones_m.p3d";
 		};
 	};
-
 	class SRP_PersonalRadio_LongRange: PersonalRadio  // SRPLRRadio
 	{
 		scope=2;

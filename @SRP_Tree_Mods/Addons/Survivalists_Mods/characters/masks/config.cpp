@@ -17,7 +17,26 @@ class CfgVehicles
   class SurgicalMask;
   class BandanaMask_ColorBase;
   class HockeyMask;
+  class GP5GasMask;
+  class GP5GasMask_Filter;
 
+  // ----------------------------------------- Custom Stuff
+  class SRP_GP5GasMask_Filter: GP5GasMask_Filter  // GP5_filter
+	{
+		scope=2;
+		displayName="Gas Mask Filter";
+		descriptionShort="A carbon filter for a GP5 Gas Mask";
+		model="Survivalists_Mods\proxy\gp5filter.p3d";
+		quantityBar=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		repairKitType=5;
+		inventorySlot[]=
+		{
+			"Gasfilter"
+		};
+	};
 
   class SRP_SurgicalMask_Black: SurgicalMask  // JanekMasks
 	{
@@ -261,4 +280,103 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\vinitagehockeym_co2907.paa"
 		};
 	};	
+
+	class SRP_GP5GasMask_Future: GP5GasMask  // BP2_Gas_mask
+	{
+		scope=2;
+		displayName="Gas Mask";
+		descriptionShort="A gas mask will do little without a carbon filter.";
+    model="Survivalists_Mods\characters\masks\Gmassk_g.p3d";
+    rotationFlags=2;
+		inventorySlot="Mask";
+    repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		itemSize[]={2,2};
+		absorbency=0;
+		heatIsolation=1;
+    headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		attachments[]=
+		{
+			"Gasfilter"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek",
+			"glass"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\BPgasmask.paa",
+			"Survivalists_Mods\characters\masks\data\gasmask_glass.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\masks\data\BPgasmask.rvmat",
+			"Survivalists_Mods\characters\masks\data\BPgasmask_glass.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\Gmassk_m.p3d";
+			female="Survivalists_Mods\characters\masks\Gmassk_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=80;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Mods\characters\masks\data\BPgasmask.rvmat", "Survivalists_Mods\characters\masks\data\BPgasmask_glass.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\masks\data\BPgasmask.rvmat", "Survivalists_Mods\characters\masks\data\BPgasmask_glass.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\masks\data\BPgasmask_damage.rvmat", "Survivalists_Mods\characters\masks\data\gasmask_glass_dam.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\masks\data\BPgasmask_damage.rvmat", "Survivalists_Mods\characters\masks\data\gasmask_glass_dam.rvmat"}},
+            {0,	{	"Survivalists_Mods\characters\masks\data\BPgasmask_damage.rvmat", "Survivalists_Mods\characters\masks\data\gasmask_glass_destr.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+	class SRP_GP5GasMask_White: GP5GasMask  // BP2_GP5Mask
+	{
+		scope=2;
+		model="Survivalists_Mods\characters\masks\GPMask_g.p3d";
+		inventorySlot="Mask";
+		attachments[]=
+		{
+			"Gasfilter"
+		};
+		itemSize[]={2,2};
+		absorbency=0;
+		heatIsolation=1;
+		repairableWithKits[]={5,8};
+		headSelectionsToHide[]=
+		{
+			"Clipping_GP5GasMask"
+		};
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\dz\characters\masks\data\GP5GasMask_white_co.paa",
+			"\dz\characters\masks\data\GP5GasMask_white_co.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\GPMask_m.p3d";
+			female="Survivalists_Mods\characters\masks\GPMask_f.p3d";
+		};
+		class Protection
+		{
+			biological=1;
+		};
+	};
 };

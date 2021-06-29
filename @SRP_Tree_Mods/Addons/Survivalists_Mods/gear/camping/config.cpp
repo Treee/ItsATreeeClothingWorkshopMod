@@ -15,11 +15,326 @@ class CfgPatches
 };
 class CfgVehicles
 {
+  class BaseBuildingBase;
   class BarrelHoles_ColorBase;
   class Inventory_Base;
   class SRP_KitBase;
 
+
   // ----------------------  BASE GAME OVERRIDES
+  // the only change here is setting the build base action to use shovels
+  class TerritoryFlag: BaseBuildingBase
+	{
+		scope=2;
+		displayName="$STR_CfgVehicles_TerritoryFlag0";
+		descriptionShort="$STR_CfgVehicles_TerritoryFlag1";
+		model="\DZ\gear\camping\territory_flag.p3d";
+		bounding="BSphere";
+		overrideDrawArea="3.0";
+		forceFarBubble="true";
+		handheld="false";
+		lootCategory="Crafted";
+		carveNavmesh=1;
+		weight=60000;
+		itemSize[]={6,6};
+		physLayer="item_large";
+		createProxyPhysicsOnInit="false";
+		createdProxiesOnInit[]=
+		{
+			"Deployed"
+		};
+		rotationFlags=2;
+		attachments[]=
+		{
+			"Material_FPole_WoodenLog",
+			"Material_FPole_Stones",
+			"Material_FPole_WoodenLog2",
+			"Material_FPole_MetalWire",
+			"Material_FPole_Rope",
+			"Material_FPole_Nails",
+			"Material_FPole_MagicStick",
+			"Material_FPole_Flag"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+			};
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Base
+			{
+				name="$STR_CfgVehicles_Construction_Part_Base";
+				description="";
+				attachmentSlots[]=
+				{
+					"Material_FPole_WoodenLog"
+				};
+				icon="set:dayz_inventory image:cat_tf_log";
+				selection="totem";
+			};
+			class Support
+			{
+				name="$STR_CfgVehicles_TerritoryFlag_Att_Category_Support";
+				description="";
+				attachmentSlots[]=
+				{
+					"Material_FPole_Stones",
+					"Material_FPole_WoodenLog2"
+				};
+				icon="set:dayz_inventory image:tf_stones";
+				selection="totem";
+			};
+			class Pole
+			{
+				name="$STR_CfgVehicles_TerritoryFlag_Att_Category_Pole";
+				description="";
+				attachmentSlots[]=
+				{
+					"Material_FPole_MetalWire",
+					"Material_FPole_Rope",
+					"Material_FPole_Nails",
+					"Material_FPole_MagicStick"
+				};
+				icon="set:dayz_inventory image:cat_tf_pole";
+				selection="totem";
+			};
+			class Flag
+			{
+				name="$STR_CfgVehicles_TerritoryFlag_Att_Category_Flag";
+				description="";
+				attachmentSlots[]=
+				{
+					"Material_FPole_Flag"
+				};
+				icon="set:dayz_inventory image:tf_flag";
+				selection="totem";
+			};
+		};
+		class AnimationSources
+		{
+			class AnimSourceShown
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class AnimSourceHidden
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class flag_mast
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=1;
+			};
+			class Deployed: AnimSourceHidden
+			{
+			};
+			class Base: AnimSourceHidden
+			{
+			};
+			class Support: AnimSourceHidden
+			{
+			};
+			class Pole: AnimSourceHidden
+			{
+			};
+			class Material_FPole_WoodenLog: AnimSourceHidden
+			{
+			};
+			class Material_FPole_Stones: AnimSourceHidden
+			{
+			};
+			class Material_FPole_WoodenLog2: AnimSourceHidden
+			{
+			};
+			class Material_FPole_MetalWire: AnimSourceHidden
+			{
+			};
+			class Material_FPole_Rope: AnimSourceHidden
+			{
+			};
+			class Material_FPole_Nails: AnimSourceHidden
+			{
+			};
+			class Material_FPole_MagicStick: AnimSourceHidden
+			{
+			};
+		};
+		class Construction
+		{
+			class totem
+			{
+				class base
+				{
+					name="$STR_CfgVehicles_Construction_Part_Base";
+					is_base=1;
+					id=1;
+					required_parts[]={};
+					conflicted_parts[]={};
+					collision_data[]=
+					{
+						"base_min",
+						"base_max"
+					};
+					build_action_type=4;
+					dismantle_action_type=4;
+					material_type=1;
+					class Materials
+					{
+						class Material1
+						{
+							type="WoodenLog";
+							slot_name="Material_FPole_WoodenLog";
+							quantity=1;
+							lockable=0;
+						};
+					};
+				};
+				class support
+				{
+					name="$STR_CfgVehicles_TerritoryFlag_Att_Category_Support";
+					id=2;
+					required_parts[]=
+					{
+						"base"
+					};
+					conflicted_parts[]={};
+					collision_data[]=
+					{
+						"support_min",
+						"support_max"
+					};
+					build_action_type=36;
+					dismantle_action_type=36;
+					material_type=2;
+					class Materials
+					{
+						class Material1
+						{
+							type="Stone";
+							slot_name="Material_FPole_Stones";
+							quantity=32;
+							lockable=0;
+						};
+						class Material2
+						{
+							type="WoodenLog";
+							slot_name="Material_FPole_WoodenLog2";
+							quantity=6;
+							lockable=0;
+						};
+					};
+				};
+				class pole
+				{
+					name="$STR_CfgVehicles_TerritoryFlag_Att_Category_Pole";
+					id=3;
+					required_parts[]=
+					{
+						"support"
+					};
+					conflicted_parts[]={};
+					collision_data[]=
+					{
+						"pole_min",
+						"pole_max"
+					};
+					build_action_type=2;
+					dismantle_action_type=64;
+					material_type=2;
+					class Materials
+					{
+						class Material1
+						{
+							type="MetalWire";
+							slot_name="Material_FPole_MetalWire";
+							quantity=0;
+							lockable=1;
+						};
+						class Material2
+						{
+							type="Rope";
+							slot_name="Material_FPole_Rope";
+							quantity=0;
+							lockable=1;
+						};
+						class Material3
+						{
+							type="Nail";
+							slot_name="Material_FPole_Nails";
+							quantity=60;
+							lockable=0;
+						};
+						class Material4
+						{
+							type="WoodenLog";
+							slot_name="Material_FPole_MagicStick";
+							quantity=3;
+							lockable=0;
+						};
+					};
+				};
+			};
+		};
+	};
 
   // ----------------------- CUSTOM STUFF
 

@@ -11,6 +11,13 @@ class CfgPatches
 
 class CfgSlots
 {
+  class Slot_Gasfilter
+	{
+		name="Gasfilter";
+		displayName="Filter";
+		ghostIcon="Filter";
+		selection="FilterGP";
+	};
 	class Slot_CanisterGasoline
 	{
 		name="CanisterGasoline";
@@ -360,6 +367,12 @@ class CfgNonAIVehicles
 	{
 		model="\dz\vehicles\parts\JerryCan.p3d";
 		inventorySlot="CanisterGasoline";
+	};
+  class ProxyFilterGP: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="Gasfilter";
+		model="Survivalists_Mods\proxy\FilterGP.p3d";
 	};
 	class ProxyBPGas_lamp: ProxyAttachment
 	{
