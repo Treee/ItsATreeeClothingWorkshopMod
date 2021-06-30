@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Survivalists_Mods_Characters_Tops
+	class Survivalists_Mods_Characters_Gloves
 	{
 		units[]={	};
 		weapons[]={};
@@ -20,7 +20,7 @@ class CfgVehicles
 	class SRP_NBCGloves_Blue: NBCGloves_ColorBase  // BP2_NBCGlovesBlue
 	{
 		scope=2;
-    colr="blue"
+    colr="blue";
 		repairableWithKits[]={5,6}; // duct tape and rapaier kit
 		hiddenSelections[]=
 		{

@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class DZ_Radio
+	class Survivalists_Mods_Gear_Radio
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data"
+			"DZ_Data",
+      "DZ_Radio"
 		};
 	};
 };

@@ -83,9 +83,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\vests\beliyvest.paa",
-			"Survivalists_Mods\characters\vests\beliyvest.paa",
-			"Survivalists_Mods\characters\vests\beliyvest.paa"
+			"Survivalists_Mods\characters\vests\data\beliyvest.paa",
+			"Survivalists_Mods\characters\vests\data\beliyvest.paa",
+			"Survivalists_Mods\characters\vests\data\beliyvest.paa"
 		};
 	};
 

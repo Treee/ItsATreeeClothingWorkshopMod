@@ -449,7 +449,7 @@ class CfgVehicles
   class SRP_TacticalShirt_Yellow1: TacticalShirt_ColorBase
 	{
 		scope=2;
-    color="yellow1"
+    color="yellow1";
 		hiddenSelections[]=
 		{
 			"camoGround",
@@ -500,7 +500,7 @@ class CfgVehicles
 	class SRP_MiniDress_lather: MiniDress_ColorBase  // BP2_MiniDress_lather
 	{
 		scope=2;
-    color="Lather"
+    color="Lather";
     hiddenSelections[]=
 		{
 			"camoGround",
@@ -596,7 +596,7 @@ class CfgVehicles
 	class SRP_RidersJacket_White: RidersJacket_ColorBase  // Bp2_RidersJacket_White
 	{
 		scope=2;
-    color="white"
+    color="white";
     hiddenSelections[]=
 		{
 			"camoGround",
@@ -923,7 +923,7 @@ class CfgVehicles
 	class SRP_Sweater_SantaRL: Sweater_ColorBase // Bp2_SweaterSantaRL
 	{
 		scope=2;
-    color="santarl"
+    color="santarl";
 		itemsCargoSize[]={4,4};
 		hiddenSelections[]=
 		{
@@ -1161,7 +1161,7 @@ class CfgVehicles
 	class SRP_ParamedicJacket_BlackMedic: ParamedicJacket_ColorBase  // Medic_J_black
 	{
 		scope=2;
-    color="blackmedic"
+    color="blackmedic";
 		weight=200;
     hiddenSelections[]=
 		{
