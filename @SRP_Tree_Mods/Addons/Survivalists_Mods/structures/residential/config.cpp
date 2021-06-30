@@ -14,6 +14,8 @@
 };
 class CfgVehicles
 {
+  class HouseNoDestruct;
+  
   class land_srp_saloon: HouseNoDestruct
 	{
 		scope=1;

@@ -7,14 +7,21 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
+      "DZ_Data",
 			"DZ_Structures",
-      "DZ_Structures_Furniture"
+      "DZ_Structures_Furniture",
+      "Survivalists_Mods"
 		};
 	};
 };
 class CfgVehicles
 {
+
   class HouseNoDestruct;
+  class Container_Base;
+
+  class SRP_KitBase;
+
   class land_srp_saloon_counter: HouseNoDestruct
 	{
 		scope=1;
@@ -29,5 +36,435 @@ class CfgVehicles
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\furniture\SRP_BarBarrel.p3d";
+	};
+
+	class SRP_Furniture_WoodenTable_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Wooden Table Kit";
+		descriptionShort="A placeable outdoor table kit!";
+		model="Survivalists_Mods\structures\furniture\srp_table2.p3d";
+	};
+	class SRP_Furniture_WoodenTable: Container_Base  // SRP_wooden_table
+	{
+		scope=2;
+		displayName="Wooden Table";
+		descriptionShort="This is a table... You put things on it?";
+		model="Survivalists_Mods\structures\furniture\srp_table2.p3d";
+		attachments[]=
+		{
+			"Melee",
+			"Back",
+			"BP_gas_lamp"
+		};
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={5,3};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Storage
+			{
+				name="Storage";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee",
+					"Back"
+				};
+				icon="cat_common_cargo";
+			};
+			class Lamp
+			{
+				name="Lamp";
+				description="";
+				attachmentSlots[]=
+				{
+					"BP_gas_lamp"
+				};
+				icon="gascanister";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+	class SRP_GChair_Kit: SRP_KitBase  // SRP_GChairKit
+	{
+		scope=2;
+		displayName="Outdoor Chair Kit";
+		descriptionShort="A placeable outdoor chair kit!";
+		model="Survivalists_Mods\structures\furniture\SRP_GChair.p3d";
+	};
+	class SRP_GChair: Container_Base
+	{
+		scope=2;
+		displayName="Outdoor Chair";
+		descriptionShort="Stained but cozy garden chair";
+		model="Survivalists_Mods\structures\furniture\SRP_GChair.p3d";
+		carveNavmesh=1;
+		weight=3000;
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,3};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_GChairHigh_Kit: SRP_KitBase  // SRP_GChairHighKit
+	{
+		scope=2;
+		displayName="Outdoor Chair Kit";
+		descriptionShort="A placeable outdoor chair kit!";
+		model="Survivalists_Mods\structures\furniture\SRP_GChairHigh.p3d";
+	};
+	class SRP_GChairHigh: Container_Base
+	{
+		scope=2;
+		displayName="Outdoor Chair";
+		descriptionShort="Stained but cozy garden chair";
+		model="Survivalists_Mods\structures\furniture\SRP_GChairHigh.p3d";
+		carveNavmesh=1;
+		weight=3000;
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,3};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+	
+  class SRP_GOutdoorTable_Kit: SRP_KitBase  // SRP_GOutdoorTableKit
+	{
+		scope=2;
+		displayName="Outdoor Table Kit";
+		descriptionShort="A placeable outdoor table kit!";
+		model="Survivalists_Mods\structures\furniture\SRP_GTable2.p3d";
+	};
+	class SRP_GOutdoorTable: Container_Base
+	{
+		scope=2;
+		displayName="Outdoor Table";
+		descriptionShort="A table used for garden things and stuff";
+		model="Survivalists_Mods\structures\furniture\SRP_GTable2.p3d";
+		attachments[]=
+		{
+			"Melee",
+			"BP_gas_lamp"
+		};
+		carveNavmesh=1;
+		weight=3000;
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,3};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Storage
+			{
+				name="Storage";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee"
+				};
+				icon="cat_common_cargo";
+			};
+			class Lamp
+			{
+				name="Lamp";
+				description="";
+				attachmentSlots[]=
+				{
+					"BP_gas_lamp"
+				};
+				icon="gascanister";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+	class SRP_GOutdoorTableUmbrella_Kit: SRP_KitBase  // SRP_GOutdoorTableUmbKit
+	{
+		scope=2;
+		displayName="Outdoor Table Kit";
+		descriptionShort="A placeable outdoor table kit!";
+		model="Survivalists_Mods\structures\furniture\SRP_GTableUmbreller.p3d";
+	};
+
+  class SRP_GOutdoorTableUmbrella: Container_Base  // SRP_GOutdoorTableUmb
+	{
+		scope=2;
+		displayName="Outdoor Table";
+		descriptionShort="A table used for garden things and stuff... With a Parasol";
+		model="Survivalists_Mods\structures\furniture\SRP_GTableUmbreller.p3d";
+		attachments[]=
+		{
+			"Melee",
+			"BP_gas_lamp"
+		};
+		carveNavmesh=1;
+		weight=3000;
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,3};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Storage
+			{
+				name="Storage";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee"
+				};
+				icon="cat_common_cargo";
+			};
+			class Lamp
+			{
+				name="Lamp";
+				description="";
+				attachmentSlots[]=
+				{
+					"BP_gas_lamp"
+				};
+				icon="gascanister";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+	
+  class SRP_Umbrella_Kit: SRP_KitBase  // SRP_UmbrellerKit
+	{
+		scope=2;
+		displayName="Parasol Kit";
+		descriptionShort="A placeable Parasol kit!";
+		model="Survivalists_Mods\structures\furniture\SRP_Umbreller.p3d";
+	};
+
+	class SRP_Umbrella: Container_Base  // SRP_Umbreller
+	{
+		scope=2;
+		displayName="Parasol";
+		descriptionShort="A parasol made for garden use";
+		model="Survivalists_Mods\structures\furniture\SRP_Umbreller.p3d";
+		carveNavmesh=1;
+		weight=3000;
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
 	};
 };

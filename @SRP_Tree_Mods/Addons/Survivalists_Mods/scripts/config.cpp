@@ -341,13 +341,6 @@ class CfgSlots
 		displayName="Pen";
 		ghostIcon="";
 	};
-	class Slot_BP_lamp
-	{
-		name="BP_gas_lamp";
-		displayName="gas_lamp";
-		ghostIcon="gascanister";
-		selection="BP_gas_lamp";
-	};
 	class Slot_SRPLRRadioBattery
 	{
 		name="SRPRadioBattery";
@@ -717,11 +710,5 @@ class CfgNonAIVehicles
 			"FShovel"
 		};
 		model="BP_Shelf\Proxy\fShovel.p3d";
-	};
-	class ProxyBPGas_lamp: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot="BP_gas_lamp";
-		model="\BP_Shelf\Proxy\BPGas_lamp.p3d";
 	};
 };

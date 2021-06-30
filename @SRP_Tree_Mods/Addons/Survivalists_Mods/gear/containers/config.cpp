@@ -45,6 +45,7 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\containers\Fridge_big.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
+    useEntityHierarchy="true";
 		physLayer="item_large";
 		attachments[]=
 		{

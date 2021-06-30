@@ -120,12 +120,12 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_AdvancedWorkbench_Kit: Inventory_Base // BP1_Workbench_pac
+	class SRP_AdvancedWorkbench_Kit: SRP_KitBase // BP1_Workbench_pac
 	{
 		scope=2;
 		displayName="Advanced Workbench";
 		descriptionShort="A Workbench with tools for creating and repairing weapons and ammunition";
-		model="Survivalists_Mods\gear\crafting\s_box.p3d";
+		model="Survivalists_Mods\gear\crafting\SRP_Workbench.p3d";
 		heavyItem=1;
 		weight=500;
 		itemSize[]={8,10};
@@ -266,13 +266,12 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_ShootingTargetO_kit: SRP_KitBase  // BP_ShootingTargetO_kit
+	class SRP_ShootingTargetO_Kit: SRP_KitBase  // BP_ShootingTargetO_kit
 	{
 		scope=2;
 		displayName="Shooting Target Kit";
 		descriptionShort="A placeable shooting target set!";
-		itemSize[]={6,3};
-		itemsCargoSize[]={0,0};
+    model="Survivalists_Mods\gear\crafting\SRP_ShootingTarget.p3d";
 	};
 
   class SRP_ShootingTargetO: Container_Base // BP_ShootingTargetO
@@ -283,7 +282,6 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\crafting\SRP_ShootingTarget.p3d";
 		overrideDrawArea="3.0";
 		forceFarBubble="true";
-		lootCategory="Crafted";
 		carveNavmesh=1;
 		weight=3000;
 		itemSize[]={15,10};

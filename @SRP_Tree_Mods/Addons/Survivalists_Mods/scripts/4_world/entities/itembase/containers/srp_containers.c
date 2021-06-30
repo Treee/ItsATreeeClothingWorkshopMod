@@ -22,9 +22,20 @@ class SRP_Container_Base extends Container_Base
 
 class SRP_FridgeBig extends SRP_Container_Base{}
 class SRP_GunShelf extends SRP_Container_Base{}
-class SRP_MetalShelf extends SRP_Container_Base{}
+class SRP_WoodenShelf extends SRP_Container_Base{}
 class SRP_PostBox extends SRP_Container_Base{}
 class SRP_PostBoxBig extends SRP_Container_Base{}
+
+class SRP_Furniture_WoodenTable extends SRP_Container_Base{}
+class SRP_GChair extends SRP_Container_Base{}
+class SRP_GChairHigh extends SRP_Container_Base{}
+class SRP_GOutdoorTable extends SRP_Container_Base{}
+class SRP_GOutdoorTableUmbrella extends SRP_Container_Base{}
+class SRP_Umbrella extends SRP_Container_Base{}
+class SRP_ShootingTargetO extends SRP_Container_Base{}
+class SRP_AdvancedWorkbench extends SRP_Container_Base{}
+class SRP_StreetLightLarge extends SRP_Container_Base{}
+class SRP_StreetLightMedium extends SRP_Container_Base{}
 
 class SRP_MilitaryCase extends Barrel_ColorBase
 {
@@ -72,6 +83,28 @@ class SRP_BedsideTable extends Barrel_ColorBase
   }
     
   override bool CanPutIntoHands(EntityAI parent)
+  {
+    return false;
+  }
+}
+
+class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
+{
+	override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionTakeFireplaceFromBarrel);
+    RemoveAction(ActionTakeItem);
+    RemoveAction(ActionSwapItemToHands);
+		RemoveAction(ActionTakeItemToHands);
+	}
+
+  override bool CanPutInCargo( EntityAI parent )
+	{
+		return false;
+	}
+
+  override bool CanPutIntoHands (EntityAI parent)
   {
     return false;
   }

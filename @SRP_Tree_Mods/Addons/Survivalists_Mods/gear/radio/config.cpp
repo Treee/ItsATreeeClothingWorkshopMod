@@ -132,11 +132,6 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\gear\radio\data\tactic_cap.rvmat"
 		};
-    inventorySlot[]=
-    {
-      "Headgear",
-      "Armband"
-    }
     class EnergyManager
 		{
 			hasIcon=1;

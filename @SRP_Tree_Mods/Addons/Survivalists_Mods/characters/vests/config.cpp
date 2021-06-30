@@ -16,7 +16,6 @@ class CfgPatches
 class CfgVehicles
 {
   class Clothing;
-  class PlateCarrierVest;
   class ChestHolster;
   class PlateCarrierPouches;
   class PlateCarrierHolster;

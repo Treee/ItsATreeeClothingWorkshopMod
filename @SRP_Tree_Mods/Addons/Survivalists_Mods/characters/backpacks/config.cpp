@@ -20,6 +20,7 @@ class CfgVehicles
   class CourierBag;
   class MountainBag_ColorBase;
   class AssaultBag_ColorBase;
+  class TaloonBag_ColorBase;
   
   class SRP_HuntingPouch_Small: Container_Base  // BP_HuntingCarman
 	{
@@ -380,7 +381,6 @@ class CfgVehicles
 	class SRP_TaloonBag_RanecMedical: TaloonBag_ColorBase  // BP_ranec_med
 	{
 		scope=2;
-		descriptionShort="A Medical satchel";
     descriptionShort="A lightly coloured medical satchel";
 		model="Survivalists_Mods\characters\backpacks\ranec_g.p3d";
 		rotationFlags=0;
@@ -413,7 +413,6 @@ class CfgVehicles
 	{
 		scope=2;
 		descriptionShort="A Medical satchel";
-    descriptionShort="A lightly coloured medical satchel";
 		model="Survivalists_Mods\characters\backpacks\ranec_bl_g.p3d";
     rotationFlags=0;
 		itemSize[]={5,5};

@@ -96,7 +96,7 @@ class CfgVehicles
     inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
       "no"
 		};
 	};

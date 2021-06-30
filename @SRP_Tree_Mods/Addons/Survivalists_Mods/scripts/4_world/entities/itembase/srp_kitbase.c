@@ -38,12 +38,25 @@ class SRP_KitBase extends ItemBase
 	}
 }
 // If you add a new kit, add it to this list so it gets the right stuff
-
-class SRP_Potbelly_Stove_Kit extends SRP_KitBase {}
-class SRP_FridgeBig_Kit extends SRP_KitBase {}
+//craftable kits
+class SRP_BedsideTable_Kit extends SRP_KitBase {}
 class SRP_WoodenShelf_Kit extends SRP_KitBase {}
 class SRP_GunShelf_Kit extends SRP_KitBase {}
+class SRP_Potbelly_Stove_Kit extends SRP_KitBase {}
+class SRP_ShootingTargetO_Kit extends SRP_KitBase {}
+class SRP_StreetLightLarge_Kit extends SRP_KitBase {}
+class SRP_StreetLightMedium_Kit extends SRP_KitBase {}
+class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase {}
+
+
+// non craftable kits
+class SRP_FridgeBig_Kit extends SRP_KitBase {}
 class SRP_PostBox_Kit extends SRP_KitBase {}
 class SRP_PostBoxBig_Kit extends SRP_KitBase {}
 class SRP_MilitaryCase_Kit extends SRP_KitBase {}
-class SRP_BedsideTable_Kit extends SRP_KitBase {}
+class SRP_GChair_Kit extends SRP_KitBase {}
+class SRP_GChairHigh_Kit extends SRP_KitBase {}
+class SRP_GOutdoorTable_Kit extends SRP_KitBase {}
+class SRP_GOutdoorTableUmbrella_Kit extends SRP_KitBase {}
+class SRP_Umbrella_Kit extends SRP_KitBase {}
+class SRP_AdvancedWorkbench_Kit extends SRP_KitBase {}

@@ -15,6 +15,7 @@ class CfgPatches
 class CfgVehicles
 {
   class NBCGloves_ColorBase;
+  class OMNOGloves_ColorBase;
 
 	class SRP_NBCGloves_Blue: NBCGloves_ColorBase  // BP2_NBCGlovesBlue
 	{

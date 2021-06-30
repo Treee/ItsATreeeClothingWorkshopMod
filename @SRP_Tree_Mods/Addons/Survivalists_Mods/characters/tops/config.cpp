@@ -37,7 +37,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_Mendel.paa",
@@ -53,7 +53,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_white_rabbit.paa",
@@ -69,7 +69,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_white_NY.paa",
@@ -85,7 +85,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_white_milk.paa",
@@ -101,7 +101,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_white_drims.paa",
@@ -117,7 +117,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_white_dreams.paa",
@@ -133,7 +133,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_white_bayk.paa",
@@ -149,7 +149,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_redsun.paa",
@@ -165,7 +165,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_nirvana.paa",
@@ -181,7 +181,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_ironmaiden.paa",
@@ -197,7 +197,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_black_rabbit.paa",
@@ -213,7 +213,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_black_NY.paa",
@@ -229,7 +229,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_black_drims.paa",
@@ -245,7 +245,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_black_dreams.paa",
@@ -261,7 +261,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_black_cars.paa",
@@ -277,7 +277,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_black_bayk.paa",
@@ -293,7 +293,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_suicide.paa",
@@ -309,7 +309,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_scream.paa",
@@ -325,7 +325,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_rock.paa",
@@ -341,7 +341,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_misfits.paa",
@@ -357,7 +357,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_lavash.paa",
@@ -373,7 +373,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_alkash.paa",
@@ -389,7 +389,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_svin.paa",
@@ -405,7 +405,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_pes_y.paa",
@@ -421,7 +421,7 @@ class CfgVehicles
 			"camoGround",
 			"camoMale",
 			"camoFemale"
-    }
+    };
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\tops\data\tshirt_black_pes.paa",
@@ -1193,6 +1193,4 @@ class CfgVehicles
 			"Survivalists_Mods\characters\tops\data\wktop_co.paa"
 		};
 	};
-
-
 };

@@ -21,6 +21,8 @@ class CfgVehicles
   class MilitaryBeret_ColorBase;
   class Ushanka_ColorBase;
   class NBCHoodBase;
+  class Headtorch_ColorBase;
+  class PrisonerCap;
 
   class SRP_BallisticHelmet_Rain: BaseballCap_ColorBase  // BP2_Rainhelm
 	{
@@ -752,6 +754,138 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\headgear\ushankaStar_m.p3d";
 			female="Survivalists_Mods\characters\headgear\ushankaStar_m.p3d";
+		};
+	};
+
+  class SRP_Headtorch_MinerHelmet: Headtorch_ColorBase  // BP_MinerHelmet
+	{
+		scope=2;
+		displayName="Miner Helmet";
+		descriptionShort="Protective miner's helmet, equipped with a battery-powered lighting device.";
+		model="Survivalists_Mods\characters\headgear\miner_g.p3d";
+		rotationFlags=16;
+		itemSize[]={3,2};
+		absorbency=0;
+    repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+		headSelectionsToHide[]=
+		{
+			"Clipping_baseballcap"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\miner_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\miner.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.01,{"DZ\characters\headgear\data\HeadTorch.rvmat"}},
+            {0.69999999,{"DZ\characters\headgear\data\HeadTorch.rvmat"}},
+            {0.5,{"DZ\characters\headgear\data\HeadTorch_damage.rvmat"}},
+            {0.30000001,{"DZ\characters\headgear\data\HeadTorch_damage.rvmat"}},
+            {0.0099999998,{"DZ\characters\headgear\data\HeadTorch_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.75;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.75;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.75;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.75;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+			};
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\miner.p3d";
+			female="Survivalists_Mods\characters\headgear\miner.p3d";
+		};
+		class Reflectors
+		{
+			class Beam
+			{
+				color[]={0.1,0.1,0.1,1};
+				brightness=8;
+				radius=30;
+				angle=130;
+				angleInnerRatio=0.25;
+				dayLight=1;
+				flareAngleBias=40;
+				position="beamStart";
+				direction="beamEnd";
+				hitpoint="bulb";
+				selection="bulb";
+			};
 		};
 	};
 

@@ -1,0 +1,148 @@
+Ambient[]={1,1,1,1};
+Diffuse[]={0.4,0.4,0.4,1};
+Emmisive[]={0,0,0,1};
+ForcedDiffuse[]={0.4,0.4,0.4,1};
+Specular[]={1,1,1,1};
+//Specular2[]={1,1,1,1};
+//dz1[]={0,0,0,1};
+//dz2[]={0,0,0.3,0.99};
+//dz_SpecularPower=0;
+//dz_SpecularPower1=0;
+SpecularPower=5.67605e-315;
+PixelShaderId=Super;//102
+VertexShaderId=Super;//23
+renderFlags[] = {NoZWrite};
+class TegGen0
+{
+	uvSource=Tex;
+	class uvTransform
+	{
+		aside[] =	{   1.0000,   0.0000,   0.0000};
+		up[] =	{   0.0000,   1.0000,   0.0000};
+		dir[] =	{   0.0000,   0.0000,   0.0000};
+		pos[] =	{   0.0000,   0.0000,   0.0000};
+	};
+};
+class TegGen1
+{
+	uvSource=Tex;
+	class uvTransform
+	{
+		aside[] =	{   1.0000,   0.0000,   0.0000};
+		up[] =	{   0.0000,   1.0000,   0.0000};
+		dir[] =	{   0.0000,   0.0000,   0.0000};
+		pos[] =	{   0.0000,   0.0000,   0.0000};
+	};
+};
+class TegGen2
+{
+	uvSource=Tex;
+	class uvTransform
+	{
+		aside[] =	{   1.0000,   0.0000,   0.0000};
+		up[] =	{   0.0000,   1.0000,   0.0000};
+		dir[] =	{   0.0000,   0.0000,   0.0000};
+		pos[] =	{   0.0000,   0.0000,   0.0000};
+	};
+};
+class TegGen3
+{
+	uvSource=Tex;
+	class uvTransform
+	{
+		aside[] =	{   1.0000,   0.0000,   0.0000};
+		up[] =	{   0.0000,   1.0000,   0.0000};
+		dir[] =	{   0.0000,   0.0000,   0.0000};
+		pos[] =	{   0.0000,   0.0000,   0.0000};
+	};
+};
+class TegGen4
+{
+	uvSource=Tex;
+	class uvTransform
+	{
+		aside[] =	{   1.0000,   0.0000,   0.0000};
+		up[] =	{   0.0000,   1.0000,   0.0000};
+		dir[] =	{   0.0000,   0.0000,   0.0000};
+		pos[] =	{   0.0000,   0.0000,   0.0000};
+	};
+};
+class TegGen5
+{
+	uvSource=Tex;
+	class uvTransform
+	{
+		aside[] =	{   1.0000,   0.0000,   0.0000};
+		up[] =	{   0.0000,   1.0000,   0.0000};
+		dir[] =	{   0.0000,   0.0000,   0.0000};
+		pos[] =	{   0.0000,   0.0000,   0.0000};
+	};
+};
+class TegGen6
+{
+	uvSource=None;
+};
+class TegGen7
+{
+	uvSource=Tex;
+	class uvTransform
+	{
+		aside[] =	{   1.0000,   0.0000,   0.0000};
+		up[] =	{   0.0000,   1.0000,   0.0000};
+		dir[] =	{   0.0000,   0.0000,   0.0000};
+		pos[] =	{   0.0000,   0.0000,   0.0000};
+	};
+};
+class stage0
+{
+	texture="#(rgb,8,8,3)color(0.5,0.5,0.5,0.1,ca)";
+	Texgen=0;
+};
+class stage1
+{
+	texture="#(rgb,8,8,3)color(0.5,0.5,1,1,nohq)";
+	Texgen=1;
+};
+class stage2
+{
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,0.5,dt)";
+	Texgen=2;
+};
+class stage3
+{
+	texture="#(argb,8,8,3)color(1,1,1,0.0,mc)";
+	Texgen=3;
+};
+class stage4
+{
+	texture="#(argb,8,8,3)color(1,1,1,1,as)";
+	Texgen=4;
+};
+class stage5
+{
+	texture="BP_Smot\MinerS_helmet\data\IMS_Headlamp_smdi.paa";
+	Texgen=5;
+};
+class stage6
+{
+	texture="#(ai,64,64,1)fresnel(0.7,0.01)";
+	Texgen=6;
+};
+class stage7
+{
+	texture="dz\data\data\env_land_co.paa";
+	Texgen=7;
+};
+class stage8
+{
+	texture="#(argb,8,8,3)color(1,1,1,1,dt)";
+	Filter=Point;
+	Texgen=0;
+};
+class stage9
+{
+	texture="#(argb,8,8,3)color(1,1,1,1,dt)";
+	Filter=Point;
+	Texgen=0;
+};
+//};end class flashlight_glass

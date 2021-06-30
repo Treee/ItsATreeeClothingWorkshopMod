@@ -18,6 +18,8 @@ class CfgVehicles
   class BaseBuildingBase;
   class BarrelHoles_ColorBase;
   class Inventory_Base;
+  class Container_Base;
+
   class SRP_KitBase;
 
 
@@ -343,31 +345,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Potbelly Stove Kit";
 		descriptionShort="A Potbelly Stove Kit";
-		model="Survivalists_Mods\gear\camping\Pech_kit.p3d";		
-		canBeDigged=0;
-		heavyItem=1;
-		weight=10000;
-		itemSize[]={8,8};
-		carveNavmesh=1;
-		rotationFlags=2;
-		itemBehaviour=2;
-		physLayer="item_large";
-		minPlacingDist=1;
-		allowOwnedCargoManipulation=1;
-		lootTag[]=
-		{
-			"Work"
-		};
-		hiddenSelections[]=
-		{
-			"camoGround"
-		};
-		class Cargo
-		{
-			itemsCargoSize[]={4,4};
-			openable=0;
-			allowOwnedCargoManipulation=1;
-		};
+		model="Survivalists_Mods\gear\camping\Pech_kit.p3d";
 	};
 
   class SRP_Potbelly_Stove: BarrelHoles_ColorBase //BPPech
@@ -471,5 +449,152 @@ class CfgVehicles
 			"Survivalists_Mods\gear\camping\data\Piatto_B3.paa"
 		};
 	};
+
+  class SRP_StreetLightLarge_Kit: SRP_KitBase  // SRP_StreetLightL_kit
+	{
+		scope=2;
+		displayName="Large Street Light Kit";
+		descriptionShort="A placeable street light kit. When built you can light up the streets!";
+		model="Survivalists_Mods\gear\camping\SRP_StreetLightL.p3d";
+	};
+
+  class SRP_StreetLightLarge: Container_Base  // SRP_StreetLightLarge
+	{
+		scope=2;
+		displayName="Street Light";
+		descriptionShort="This is a large street light which can be used to light up the streets";
+		model="Survivalists_Mods\gear\camping\SRP_StreetLightL.p3d";
+		attachments[]=
+		{
+			"BP_gas_lamp"
+		};
+		carveNavmesh=1;
+		weight=3000;
+		itemSize[]={15,10};
+		physLayer="item_large";
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Lamp
+			{
+				name="Lamp";
+				description="";
+				attachmentSlots[]=
+				{
+					"BP_gas_lamp"
+				};
+				icon="gascanister";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_StreetLightMedium_Kit: SRP_KitBase  // SRP_StreetLightM_kit
+	{
+		scope=2;
+		displayName="Street Light Kit";
+		descriptionShort="A placeable street light kit. When built you can light up the streets!";
+		model="Survivalists_Mods\gear\camping\SRP_StreetLightM.p3d";
+	};
+
+	class SRP_StreetLightMedium: Container_Base  // SRP_StreetLightM
+	{
+		scope=2;
+		displayName="Street Light";
+		descriptionShort="This is a large street light which can be used to light up the streets";
+		model="Survivalists_Mods\gear\camping\SRP_StreetLightM.p3d";
+		attachments[]=
+		{
+			"BP_gas_lamp"
+		};
+		carveNavmesh=1;
+		weight=3000;
+		itemSize[]={15,10};
+		physLayer="item_large";
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Lamp
+			{
+				name="Lamp";
+				description="";
+				attachmentSlots[]=
+				{
+					"BP_gas_lamp"
+				};
+				icon="gascanister";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+	
 
 };
