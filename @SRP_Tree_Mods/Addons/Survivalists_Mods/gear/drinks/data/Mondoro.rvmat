@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="BP1\poylo\martel\data\Mondoro_nohq.paa";
+	texture="Survivalists_Mods\gear\drinks\data\Mondoro_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="BP1\poylo\martel\data\Mondoro_smdi.paa";
+	texture="Survivalists_Mods\gear\drinks\data\Mondoro_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

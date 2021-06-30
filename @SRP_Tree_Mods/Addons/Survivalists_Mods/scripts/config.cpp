@@ -11,6 +11,13 @@ class CfgPatches
 
 class CfgSlots
 {
+  class Slot_blade
+	{
+		name="blade";
+		displayName="blade";
+		selection="blade";
+		ghostIcon="";
+	};
   class Slot_Gasfilter
 	{
 		name="Gasfilter";
@@ -356,6 +363,14 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
+
+  class Proxyblade
+	{
+		scope=2;
+		inventorySlot="blade";
+		model="Survivalists_Mods\proxy\blade.p3d";
+	};
+
 	class ProxyJerryCan: ProxyAttachment
 	{
 		model="\dz\vehicles\parts\JerryCan.p3d";

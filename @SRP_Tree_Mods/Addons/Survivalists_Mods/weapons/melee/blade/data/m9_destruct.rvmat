@@ -2,13 +2,13 @@ ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={0.87600023,0.68800044,0.4460007,1};
-specularPower=10;
+specular[]={1,1,1,1};
+specularPower=200;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\gear\drinks\data\Jack_Daniel_nohq.paa";
+	texture="BP1\weapons_melee\M9 Bayonet\data\Tex_m91_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	texture="dz\weapons\data\weapons_destruct_metal_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\gear\drinks\data\Jack_Daniels_smdi.paa";
+	texture="BP1\weapons_melee\M9 Bayonet\data\Tex_m9_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,64,64,1)fresnel(1.54,5.58)";
+	texture="#(ai,64,64,1)fresnel(1.82,0.71)";
 	uvSource="tex";
 	class uvTransform
 	{

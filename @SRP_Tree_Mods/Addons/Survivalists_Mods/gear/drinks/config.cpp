@@ -114,6 +114,26 @@ class CfgVehicles
 		displayName="Absolut Vodka";
 		descriptionShort="A bottle of cheap russian vodka";
 		model="Survivalists_Mods\gear\drinks\absolut_vodka.p3d";
+    hiddenSelections[]=
+		{
+      "1",
+      "2",
+      "3",
+			"absolut_vodka",
+      "camo"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex1.paa",
+			"Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex2.paa",
+      "Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex1.paa",
+			"Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex2.paa",
+      "Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex1.paa",
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\material_vodka.rvmat"
+    };
 	};
 
 	class SRP_JackDaniels: SRP_AlcoholBase  // BP1_Jack
@@ -122,6 +142,20 @@ class CfgVehicles
 		displayName="Whiskey";
 		descriptionShort="A bottle of Jack Daniels whiskey";
 		model="Survivalists_Mods\gear\drinks\jack.p3d";
+    hiddenSelections[]=
+		{
+      "1",
+      "2"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\Jack_Daniel.paa",
+			"Survivalists_Mods\gear\drinks\data\Jack_Daniel.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\Jack1.rvmat"
+    };
 	};
 
 	class SRP_Cognac: SRP_AlcoholBase  // BP1_martel
@@ -130,6 +164,20 @@ class CfgVehicles
 		displayName="Cognac";
 		descriptionShort="A bottle of sweet smelling Cognac";
 		model="Survivalists_Mods\gear\drinks\martel.p3d";
+    hiddenSelections[]=
+		{
+      "2",
+      "new selection"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\Martel.paa",
+			"Survivalists_Mods\gear\drinks\data\Martel2.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\Martel.rvmat"
+    };
 	};
 
 	class SRP_Champagne: SRP_AlcoholBase  // BP1_mondoro
@@ -138,7 +186,19 @@ class CfgVehicles
 		displayName="Champagne";
 		descriptionShort="An old bottle of Champagne";
 		model="Survivalists_Mods\gear\drinks\mondoro.p3d";
-	};
+    hiddenSelections[]=
+		{
+      "2"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\Mondoro.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\Mondoro.rvmat"
+    };
+  };
 
 	class SRP_Jagermeister: SRP_AlcoholBase  // BP1_Jagermeister
 	{
@@ -146,6 +206,18 @@ class CfgVehicles
 		displayName="Jagermeister";
 		descriptionShort="A bottle of Jagermeister. It doesn't smell very good.";
 		model="Survivalists_Mods\gear\drinks\Jager.p3d";
+    hiddenSelections[]=
+		{
+      "camo"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\Jagermeister_tex.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\Jagermeister.rvmat"
+    };
 	};
 
 	class SRP_Baileys: SRP_AlcoholBase  // BP1_baylis
@@ -154,6 +226,18 @@ class CfgVehicles
 		displayName="Baileys";
 		descriptionShort="A bottle of Baileys Irish Cream liqeur";
 		model="Survivalists_Mods\gear\drinks\baylis.p3d";
+    hiddenSelections[]=
+		{
+      "camo"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\Baileys_tex1.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\Botglass.rvmat"
+    };
 	};
 
 	class SRP_PepsiBottle: SRP_WaterBottleBase  // BP1_bootle_pepsi

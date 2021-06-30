@@ -48,6 +48,7 @@ class CfgPatches
 		};
 	};
 };
+
 class CfgVehicles
 {
   class Container_Base;

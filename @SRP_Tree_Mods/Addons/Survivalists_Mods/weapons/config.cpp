@@ -12,6 +12,18 @@ class CfgPatches
 	};
 };
 
+class CfgAmmoTypes
+{
+	class AType_Bullet_12Nail
+	{
+		name="Bullet_12Nail";
+	};
+	class AType_Bullet_12Stone
+	{
+		name="Bullet_12Stone";
+	};
+};
+
 class CfgWeapons
 {
   class RifleCore;
