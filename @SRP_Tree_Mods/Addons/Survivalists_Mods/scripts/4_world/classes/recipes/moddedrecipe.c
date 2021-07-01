@@ -34,6 +34,9 @@ modded class PluginRecipesManagerBase extends PluginBase
 
     // Building
     RegisterRecipe(new Craft_SRP_Planks);
+    RegisterRecipe(new Craft_SRP_SmallDoor_Kit);
+    RegisterRecipe(new Craft_SRP_WideFence_Kit);
+    RegisterRecipe(new Craft_SRP_WindowBarricade_Kit);
 
     // Ammo    
     RegisterRecipe(new Craft_SRP_NailBullets);
