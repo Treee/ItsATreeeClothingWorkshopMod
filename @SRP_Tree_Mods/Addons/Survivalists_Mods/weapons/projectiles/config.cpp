@@ -15,6 +15,7 @@ class CfgAmmo
 {
 	class Bullet_Base;
   class Bullet_12GaugePellets;
+  class Shotgun_Base;
   //---------------------- BASE GAME OVERRIDE
 	class Bullet_380: Bullet_Base
 	{
@@ -48,6 +49,7 @@ class CfgAmmo
 		};
 	};
 
+  //----------------------- CUSTOME STUFF
   class Bullet_12Nail: Bullet_12GaugePellets
 	{
 		scope=2;

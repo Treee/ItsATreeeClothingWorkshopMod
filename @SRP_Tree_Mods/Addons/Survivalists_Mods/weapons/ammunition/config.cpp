@@ -89,6 +89,7 @@ class CfgVehicles
 {
   class Box_Base;
   class Inventory_Base;
+  class Ammunition_Base; // do not use in here
 
   class SRP_Explosive_NitroCellulose: Box_Base // BP1_Paw_Sokol_cans
 	{
@@ -429,4 +430,1110 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class SRP_Gunpowder_open: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder";
+		descriptionShort="Gunpowder can, flammable!";
+		model="\dz\gear\food\food_can_open.p3d";
+		itemSize[]={2,2};
+		rotationFlags=1;
+		stackedUnit="percentage";
+		quantityBar=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		weight=40;
+		fragility=0.0099999998;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\ammunition\data\Poroh.paa"
+		};
+	};
+
+	class SRP_45ACP_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 45ACP";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice9x19_Loose.p3d";
+		weight=12;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_45ACP_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 45ACP Caliber";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x19_loose.p3d";
+		weight=12;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_45ACP_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 45ACP Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice9x19_Loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_45ACP_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 45ACP Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\9x19Bullet_kit.p3d";
+		weight=28;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_919_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 9x19";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice9x19_Loose.p3d";
+		weight=12;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_919_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 9x19 Caliber";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x19_loose.p3d";
+		weight=12;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_919_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 9x19 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice9x19_Loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_919_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 9x19 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\9x19Bullet_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_380_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 380 Caliber";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice380_Loose.p3d";
+		weight=12;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_380_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 380 Caliber";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet380Loose.p3d";
+		weight=12;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_380_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 380 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice380_Loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_380_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 380 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\380Bullet_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_545x39_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 545x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_545x39_loose.p3d";
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_545x39_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 545x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\Bullet545x39_loose.p3d";
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_545x39_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 545x39 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_545x39_loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_545x39_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 545x39 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\545x39Bullet_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_762x39_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 762x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_762x39_loose.p3d";
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_762x39_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 762x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet762x54_Loose.p3d";
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_762x39_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 762x39 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_762x39_loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_762x39_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 762x39 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\762x39Bullet_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_762x54_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 762x54";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_763x54_loose.p3d";
+		weight=9;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_762x54_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 762x54";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet762x54_Loose.p3d";
+		weight=8;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_762x54_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 762x54 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_763x54_loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_762x54_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 762x54 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\763x54Bullet_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_556x45_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 556x45";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_556_loose.p3d";
+		weight=9;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_556x45_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 556x45";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\Bullet545x39_loose.p3d";
+		weight=8;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_556x45_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 556x45 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_556_loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_556x45_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 556x45 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\556Bullet_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_9x39_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 9x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_762x39_loose.p3d";
+		weight=9;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_9x39_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 9x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x39_lose.p3d";
+		weight=8;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_9x39_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 9x39 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_762x39_loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_9x39_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 9x39 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\9x39Bullet_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_308_Casings: Inventory_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 308Win";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_308Win_loose.p3d";
+		weight=9;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_308_Bullets: Inventory_Base
+	{
+		scope=2;
+		displayName="Bullets 308Win";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\Bullet308Win.p3d";
+		weight=8;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_308_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 308Win Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_308Win_loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_308_Bulletskit: Inventory_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 308Win Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\308Win_Bullet_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=30;
+		varQuantityMin=0;
+		varQuantityMax=30;
+	};
+	class SRP_12ga_Pellets: Inventory_Base
+	{
+		scope=2;
+		displayName="12 Gauge Cases";
+		descriptionShort="12 gauge cases with capsules";
+		model="dz\weapons\ammunition\12ga_00buck.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\ammunition\data\12cartriges.paa"
+		};
+	};
+	class SRP_12ga_Nailskit: Inventory_Base
+	{
+		scope=2;
+		displayName="12 Gauge Casings Equipped";
+		descriptionShort="12 gauge casings loaded with gunpowder and crushed nails";
+		model="Survivalists_Mods\weapons\ammunition\12nails_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\ammunition\data\12cartriges.paa"
+		};
+	};
+	class SRP_12ga_Stonekit: Inventory_Base
+	{
+		scope=2;
+		displayName="12 Gauge Casings Equipped";
+		descriptionShort="12 gauge casings loaded with gunpowder and crushed stones";
+		model="Survivalists_Mods\weapons\ammunition\12stone_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\ammunition\data\12cartriges.paa"
+		};
+	};
+	class SRP_12ga_Powderkit: Inventory_Base
+	{
+		scope=2;
+		displayName="12 Gauge Casings Equipped";
+		descriptionShort="12 gauge shells filled with gunpowder";
+		model="Survivalists_Mods\weapons\ammunition\red12_loose.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\ammunition\data\12cartriges.paa"
+		};
+	};
+	class SRP_12Drob_kit: Inventory_Base
+	{
+		scope=2;
+		displayName="12 Gauge Casings Equipped";
+		descriptionShort="12 gauge casings equipped with gunpowder and shot";
+		model="Survivalists_Mods\weapons\ammunition\12drob_kit.p3d";
+		weight=28;
+		canBeSplit=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\ammunition\data\12cartriges.paa"
+		};
+	};
+	
+
+	class SRP_Box_12gaPellets: Box_Base  // BP1_gilza12_Box
+	{
+		scope=2;
+		displayName="12 Gauge Sleeve Packaging";
+		descriptionShort="";
+		model="dz\weapons\ammunition\00buck_10roundbox.p3d";
+    itemSize[]={1,1};
+		weight=285;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\ammunition\data\12_gilzi_10roundbox_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,{"DZ\weapons\ammunition\data\00buck_box.rvmat"}},
+            {0.69999999,{"DZ\weapons\ammunition\data\00buck_box.rvmat"}},
+            {0.5,{"DZ\weapons\ammunition\data\00buck_box_damage.rvmat"}},
+            {0.30000001,{"DZ\weapons\ammunition\data\00buck_box_damage.rvmat"}},
+            {0,{"DZ\weapons\ammunition\data\00buck_box_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class Resources
+		{
+			class BP1_gilza12_Pellets
+			{
+				value=20;
+				variable="quantity";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class interact
+				{
+					soundset="ammoboxUnpack_SoundSet";
+					id=70;
+				};
+			};
+		};
+	};
+
+
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  //---------------------- OLD STUFF THAT WILL BE REMOVED
+  class BP1_gilza_45: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 45ACP";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice9x19_Loose.p3d";
+		weight=12;
+		count=30;
+		ammo="";
+	};
+	class BP1_bullets_45: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 45ACP Caliber";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x19_loose.p3d";
+		weight=12;
+		count=30;
+		ammo="";
+	};
+	class BP1_45pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 45ACP Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice9x19_Loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_45bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 45ACP Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\9x19Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza_919: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 9x19";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice9x19_Loose.p3d";
+		weight=12;
+		count=30;
+		ammo="";
+	};
+	class BP1_bullets_919: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 9x19 Caliber";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x19_loose.p3d";
+		weight=12;
+		count=30;
+		ammo="";
+	};
+	class BP1_919pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 9x19 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice9x19_Loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_919bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 9x19 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\9x19Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza_380: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 380 Caliber";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice380_Loose.p3d";
+		weight=12;
+		count=30;
+		ammo="";
+	};
+	class BP1_bullets_380: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 380 Caliber";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet380Loose.p3d";
+		weight=12;
+		count=30;
+		ammo="";
+	};
+	class BP1_380pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 380 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice380_Loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_380bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 380 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\380Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza_545x39: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 545x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_545x39_loose.p3d";
+		weight=8;
+		count=30;
+	};
+	class BP1_bullets_545x39: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 545x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\Bullet545x39_loose.p3d";
+		weight=8;
+		count=30;
+	};
+	class BP1_545x39pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 545x39 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_545x39_loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_545x39bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 545x39 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\545x39Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza_762x39: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 762x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_762x39_loose.p3d";
+		weight=8;
+		count=30;
+	};
+	class BP1_bullets_762x39: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 762x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet762x54_Loose.p3d";
+		weight=8;
+		count=30;
+	};
+	class BP1_762x39pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 762x39 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_762x39_loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_762x39bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 762x39 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\762x39Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza_762x54: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 762x54";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_763x54_loose.p3d";
+		weight=9;
+		count=30;
+		ammo="";
+	};
+	class BP1_bullets_762x54: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 762x54";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet762x54_Loose.p3d";
+		weight=8;
+		count=30;
+	};
+	class BP1_762x54pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 762x54 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_763x54_loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_762x54bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 762x54 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\763x54Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza_556x45: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 556x45";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_556_loose.p3d";
+		weight=9;
+		count=30;
+	};
+	class BP1_bullets_556x45: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 556x45";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\Bullet545x39_loose.p3d";
+		weight=8;
+		count=30;
+	};
+	class BP1_556x45pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 556x45 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_556_loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_556x45bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 556x45 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\556Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza_9x39: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 9x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_762x39_loose.p3d";
+		weight=9;
+		count=30;
+	};
+	class BP1_bullets_9x39: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 9x39";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x39_lose.p3d";
+		weight=8;
+		count=30;
+	};
+	class BP1_9x39pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 9x39 Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_762x39_loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_9x39bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 9x39 Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\9x39Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza_308: Ammunition_Base
+	{
+		scope=2;
+		displayName="Cartridge Cases 308Win";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_308Win_loose.p3d";
+		weight=9;
+		count=30;
+	};
+	class BP1_bullets_308: Ammunition_Base
+	{
+		scope=2;
+		displayName="Bullets 308Win";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\Bullet308Win.p3d";
+		weight=8;
+		count=30;
+	};
+	class BP1_308pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Gunpowder Shells 308Win Caliber";
+		descriptionShort="It remains to add bullets and clog on a workbench";
+		model="Survivalists_Mods\weapons\ammunition\nabojnice_308Win_loose.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_308bullets_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="Shells Equipment Gunpowder and Bullets 308Win Caliber";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\308Win_Bullet_kit.p3d";
+		weight=28;
+		count=30;
+		ammo="";
+	};
+	class BP1_gilza12_Pellets: Ammunition_Base
+	{
+		scope=2;
+		displayName="12 Gauge Cases";
+		descriptionShort="12 gauge cases with capsules";
+		model="Survivalists_Mods\weapons\ammunition\red12_loose.p3d";
+		weight=28;
+		count=100;
+		ammo="";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BP1\firearms\ammunition\bullet_components\data\12cartriges.paa"
+		};
+	};
+	
+
+	class Bp1_12nails_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="12 Gauge Casings Equipped";
+		descriptionShort="12 gauge casings loaded with gunpowder and crushed nails";
+		model="Survivalists_Mods\weapons\ammunition\12nails_kit.p3d";
+		weight=28;
+		count=100;
+		ammo="";
+	};
+	class Bp1_12stone_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="12 Gauge Casings Equipped";
+		descriptionShort="12 gauge casings loaded with gunpowder and crushed stones";
+		model="Survivalists_Mods\weapons\ammunition\12stone_kit.p3d";
+		weight=28;
+		count=100;
+		ammo="";
+	};
+	class Bp1_12pawder_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="12 Gauge Casings Equipped";
+		descriptionShort="12 gauge shells filled with gunpowder";
+		model="Survivalists_Mods\weapons\ammunition\red12_loose.p3d";
+		weight=28;
+		count=100;
+		ammo="";
+	};
+	class Bp1_12Drob_kit: Ammunition_Base
+	{
+		scope=2;
+		displayName="12 Gauge Casings Equipped";
+		descriptionShort="12 gauge casings equipped with gunpowder and shot";
+		model="Survivalists_Mods\weapons\ammunition\12drob_kit.p3d";
+		weight=28;
+		count=100;
+		ammo="";
+	};
+	class Ammo_12Nail: Ammunition_Base
+	{
+		scope=2;
+		displayName="Self-Made Cartridges 12 Gauge";
+		descriptionShort="Self-made cartridges loaded with chopped nails";
+		model="Survivalists_Mods\weapons\ammunition\12_nail.p3d";
+		weight=28;
+		count=10;
+		ammo="Bullet_12Nail";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+				};
+			};
+		};
+	};
+	class Ammo_12Stone: Ammunition_Base
+	{
+		scope=2;
+		displayName="Self-Made Cartridges 12 Gauge";
+		descriptionShort="Self-made cartridges loaded with small stones.";
+		model="Survivalists_Mods\weapons\ammunition\12_stone.p3d";
+		weight=28;
+		count=10;
+		ammo="Bullet_12Stone";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+				};
+			};
+		};
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };

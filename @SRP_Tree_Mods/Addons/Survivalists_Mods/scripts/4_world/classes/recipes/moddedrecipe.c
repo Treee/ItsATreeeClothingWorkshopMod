@@ -30,6 +30,17 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Deconstruct_SRP_GOutdoorTableUmbrella);
     RegisterRecipe(new Deconstruct_SRP_Umbrella);
     RegisterRecipe(new Deconstruct_SRP_Furniture_WoodenTable);
+    RegisterRecipe(new Deconstruct_SRP_AdvancedWorkbench);
+
+    // Building
+    RegisterRecipe(new Craft_SRP_Planks);
+
+    // Ammo    
+    RegisterRecipe(new Craft_SRP_NailBullets);
+    RegisterRecipe(new Craft_SRP_StoneBullets);
+    RegisterRecipe(new Disassemble_SRP_ShotgunAmmo);
+    RegisterRecipe(new Disassemble_SRP_PistolAmmo);
+    RegisterRecipe(new Disassemble_SRP_RifleAmmo);
 
     //---------Scopes
     RegisterRecipe(new Craft_SRP_CanScopeBacon);
@@ -43,7 +54,7 @@ modded class PluginRecipesManagerBase extends PluginBase
 
     //---------- RP Craftables
     RegisterRecipe(new Craft_SRP_Notebook);
-    RegisterRecipe(new Craft_SRP_WhiteFlag);
+    RegisterRecipe(new Craft_SRP_WhiteFlag);  
 
     //---------Armbands
     // Mass Double Armband General Crafting
