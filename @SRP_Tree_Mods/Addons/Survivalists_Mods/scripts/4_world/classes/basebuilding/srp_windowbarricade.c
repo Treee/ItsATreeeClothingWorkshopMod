@@ -9,7 +9,7 @@ class SRP_WindowBarricade extends Fence
 	
 	//--- BUILD EVENTS
 	//CONSTRUCTION EVENTS
-	override void OnPartBuiltServer( string part_name, int action_id )
+	override void OnPartBuiltServer( notnull Man player, string part_name, int action_id )
 	{
 		ConstructionPart constrution_part = GetConstruction().GetConstructionPart( part_name );
 		
@@ -20,7 +20,7 @@ class SRP_WindowBarricade extends Fence
 			//hide hologram
 			SetAnimationPhase( "BP_Hologram", 1 );
 		}	
-		super.OnPartBuiltServer( part_name, action_id );
+		super.OnPartBuiltServer( player, part_name, action_id );
 	}
 	
 	// override bool CanReceiveAttachment( EntityAI attachment, int slotId )

@@ -34,7 +34,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Big Fridge Kit";
 		descriptionShort="A Big Fridge Kit";
-		model="Survivalists_Mods\gear\containers\Fridge_big.p3d";
 	};
 
   class SRP_FridgeBig: Container_Base // BP_FridgeBig
@@ -129,7 +128,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Wooden Shelf Kit";
 		descriptionShort="A Wooden Shelf Kit";
-    model="Survivalists_Mods\gear\containers\Shelf.p3d";
 	};
 
   class SRP_WoodenShelf: Container_Base //BP_Shelf
@@ -232,7 +230,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Gun Shelf Kit";
 		descriptionShort="A Gun Shelf Kit";
-		model="Survivalists_Mods\gear\containers\GunShelf.p3d";
 	};
 
 	class SRP_GunShelf: Container_Base // BP_GunShelf
@@ -312,7 +309,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Post Box Kit";
 		descriptionShort="A Post Box Kit";
-		model="Survivalists_Mods\gear\containers\BP_PostBox.p3d";
 	};
 
   class SRP_PostBox: Container_Base // BP_post_box
@@ -372,7 +368,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Big Post Box Kit";
 		descriptionShort="A Big Post Box Kit";
-		model="Survivalists_Mods\gear\containers\BP_PostBoxBig.p3d";
 	};
 
 	class SRP_PostBoxBig: Container_Base //BP_PostBoxBig
@@ -530,7 +525,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Bedside Table Kit";
 		descriptionShort="A Bedside Table Kit";
-		model="Survivalists_Mods\gear\containers\Tumba.p3d";
 	};
 
   class SRP_BedsideTable: Container_Base  // BP_tumba

@@ -345,7 +345,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Potbelly Stove Kit";
 		descriptionShort="A Potbelly Stove Kit";
-		model="Survivalists_Mods\gear\camping\Pech_kit.p3d";
 	};
 
   class SRP_Potbelly_Stove: BarrelHoles_ColorBase //BPPech
@@ -455,7 +454,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Large Street Light Kit";
 		descriptionShort="A placeable street light kit. When built you can light up the streets!";
-		model="Survivalists_Mods\gear\camping\SRP_StreetLightL.p3d";
 	};
 
   class SRP_StreetLightLarge: Container_Base  // SRP_StreetLightLarge
@@ -528,7 +526,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Light Kit";
 		descriptionShort="A placeable street light kit. When built you can light up the streets!";
-		model="Survivalists_Mods\gear\camping\SRP_StreetLightM.p3d";
 	};
 
 	class SRP_StreetLightMedium: Container_Base  // SRP_StreetLightM

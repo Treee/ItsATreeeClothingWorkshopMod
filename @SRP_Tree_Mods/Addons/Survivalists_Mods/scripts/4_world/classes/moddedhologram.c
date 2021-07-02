@@ -2,9 +2,9 @@ modded class Hologram
 {
   string ProjectionBasedOnParent()
 	{
-    EntityAI itemInHands = m_player.GetHumanInventory().GetEntityInHands();	
+    EntityAI itemInHands = m_Player.GetHumanInventory().GetEntityInHands();	
     Print("ProjectionBasedOnParent Pre if");
-    if (item_in_hands.IsInherited(SRP_KitBase))
+    if (itemInHands.IsInherited(SRP_KitBase))
     {
       SRP_KitBase srpKit = SRP_KitBase.Cast(itemInHands);
       Print("Is SRP Kit " + srpKit);
@@ -39,9 +39,9 @@ modded class Hologram
 
   override void EvaluateCollision(ItemBase action_item = null)
   {
-    EntityAI itemInHands = m_player.GetHumanInventory().GetEntityInHands();
+    EntityAI itemInHands = m_Player.GetHumanInventory().GetEntityInHands();
     // if the item in our hands is our kit
-    if (item_in_hands.IsInherited(SRP_KitBase))
+    if (itemInHands.IsInherited(SRP_KitBase))
     {
       Print("Ignoring collision, our kit");
       // ignore collision

@@ -271,7 +271,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Shooting Target Kit";
 		descriptionShort="A placeable shooting target set!";
-    model="Survivalists_Mods\gear\crafting\SRP_ShootingTarget.p3d";
 	};
 
   class SRP_ShootingTargetO: Container_Base // BP_ShootingTargetO
