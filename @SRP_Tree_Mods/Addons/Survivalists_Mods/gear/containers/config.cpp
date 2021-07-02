@@ -21,6 +21,8 @@ class CfgVehicles
   //-------------------------------------- BASE GAME OVERRIDE
   class FirstAidKit: Container_Base
 	{
+    itemSize[]={4,4};
+		itemsCargoSize[]={4,4};
 		inventorySlot[]=
 		{
 			"firstaidkit"
