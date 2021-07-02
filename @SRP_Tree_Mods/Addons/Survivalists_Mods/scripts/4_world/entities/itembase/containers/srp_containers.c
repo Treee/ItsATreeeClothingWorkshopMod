@@ -36,6 +36,7 @@ class SRP_ShootingTargetO extends SRP_Container_Base{}
 class SRP_AdvancedWorkbench extends SRP_Container_Base{}
 class SRP_StreetLightLarge extends SRP_Container_Base{}
 class SRP_StreetLightMedium extends SRP_Container_Base{}
+class SRP_Carpet extends SRP_Container_Base{}
 
 class SRP_MilitaryCase extends Barrel_ColorBase
 {
@@ -108,4 +109,26 @@ class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
   {
     return false;
   }
+}
+
+class SRP_WoodenBox_Large extends BarrelHoles_ColorBase
+{
+  protected override void UpdateVisualState()
+	{
+		if ( IsOpen() )
+		{
+			SetAnimationPhase("Lid",1);
+			SetAnimationPhase("Lid1",0);
+		}
+		else
+		{
+			SetAnimationPhase("Lid",0);
+			SetAnimationPhase("Lid1",1);
+		}
+	}
+  
+  override bool CanPutInCargo( EntityAI parent )
+	{
+		return false;
+	}
 }

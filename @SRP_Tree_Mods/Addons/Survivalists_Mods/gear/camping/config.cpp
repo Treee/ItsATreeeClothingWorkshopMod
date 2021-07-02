@@ -593,6 +593,87 @@ class CfgVehicles
 		};
 	};
 	
+  class SRP_Carpet_Kit: SRP_KitBase  // BP2_carpet_Kit
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  
+  class SRP_Carpet: Inventory_Base  // BP2_carpet
+	{
+		scope=2;
+		displayName="Old Carpet";
+		descriptionShort="An old carpet to decorate your home";
+		model="Survivalists_Mods\gear\camping\Long_box.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		physLayer="item_large";
+		rotationFlags=2;
+		attachments[]=
+		{
+			"Melee",
+			"Back",
+			"Shoulder"
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={6,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Storage
+			{
+				name="Storage";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee",
+					"Back",
+					"Shoulder"
+				};
+				icon="set:dayz_inventory image:shoulderleft";
+			};
+		};
+	};
+
+
+  class SRP_WoodenBox_Large: WoodenCrate  // BP2_Long_box
+	{
+		scope=2;
+		displayName="Wooden Box";
+		descriptionShort="$STR_CfgVehicles_SeaChest1";
+		model="Survivalists_Mods\gear\camping\Long_box.p3d";
+		canBeDigged=0;
+		heavyItem=1;
+		weight=1000;
+		itemSize[]={10,15};
+		carveNavmesh=1;
+		rotationFlags=2;
+		attachments[]=
+		{
+			"Back"
+		};
+		allowOwnedCargoManipulation=1;
+		class GUIInventoryAttachmentsProps
+		{
+			class Storage
+			{
+				name="Storage";
+				description="Backpack holder";
+				attachmentSlots[]=
+				{
+					"Back"
+				};
+				icon="set:dayz_inventory image:back";
+			};
+		};
+	};
+
+  //------------------------------ BASE BUILDING
 
 	class SRP_SmallDoor_Kit: SRP_KitBase  // bp_door_kit
 	{

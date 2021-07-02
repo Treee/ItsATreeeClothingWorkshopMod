@@ -31,6 +31,7 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Deconstruct_SRP_Umbrella);
     RegisterRecipe(new Deconstruct_SRP_Furniture_WoodenTable);
     RegisterRecipe(new Deconstruct_SRP_AdvancedWorkbench);
+    RegisterRecipe(new Deconstruct_SRP_Carpet);
 
     // Building
     RegisterRecipe(new Craft_SRP_Planks);
@@ -57,7 +58,7 @@ modded class PluginRecipesManagerBase extends PluginBase
 
     //---------- RP Craftables
     RegisterRecipe(new Craft_SRP_Notebook);
-    RegisterRecipe(new Craft_SRP_WhiteFlag);  
+    RegisterRecipe(new Craft_SRP_WhiteFlag);
 
     //---------Armbands
     // Mass Double Armband General Crafting
@@ -90,6 +91,19 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new SRP_RefuelGas_PetrolLighter);
 
     //----------- Clothing
-    RegisterRecipe(new Craft_SRP_DrawnEyepatch);    
+    RegisterRecipe(new Craft_SRP_DrawnEyepatch);
+    RegisterRecipe(new Craft_SRP_RemoveHeadphonesTacticalCap);
+    RegisterRecipe(new Repaint_SRP_Bandana_65Black);
+    RegisterRecipe(new Repaint_SRP_Bandana_65Desert);
+    RegisterRecipe(new Repaint_SRP_Bandana_65Tan);
+    RegisterRecipe(new Repaint_SRP_Bandana_CheckBlue);
+    RegisterRecipe(new Repaint_SRP_Bandana_CheckBlueBright);
+    RegisterRecipe(new Repaint_SRP_Bandana_CheckGreen);
+    RegisterRecipe(new Repaint_SRP_Bandana_CheckRed);
+    RegisterRecipe(new Repaint_SRP_Bandana_CheckWhite);
+    RegisterRecipe(new Repaint_SRP_Bandana_Denim);
+    RegisterRecipe(new Repaint_SRP_Bandana_Kamysh);
+    RegisterRecipe(new Repaint_SRP_Bandana_USMC_D);
+    RegisterRecipe(new Repaint_SRP_Bandana_USMC_W);
 	}
 };

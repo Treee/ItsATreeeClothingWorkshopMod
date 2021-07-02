@@ -270,4 +270,5 @@ class SRP_GOutdoorTable_Kit extends SRP_KitBase {}
 class SRP_GOutdoorTableUmbrella_Kit extends SRP_KitBase {}
 class SRP_Umbrella_Kit extends SRP_KitBase {}
 class SRP_AdvancedWorkbench_Kit extends SRP_KitBase {}
+class SRP_Carpet_Kit extends SRP_KitBase {}
 
