@@ -22,7 +22,30 @@ class CfgVehicles
   class Ushanka_ColorBase;
   class NBCHoodBase;
   class Headtorch_ColorBase;
+  class Switchable_Base;
   class PrisonerCap;
+  class Clothing;
+
+
+  //-------------------------------------- BASE GAME OVERRIDE
+	class DarkMotoHelmet_ColorBase: Clothing
+	{
+		soundVoiceType="none";
+		soundVoicePriority=3;
+	};
+	class MotoHelmet_ColorBase: Clothing
+	{
+		soundVoiceType="none";
+		soundVoicePriority=3;
+	};
+
+	class Headtorch_ColorBase: Switchable_Base
+	{
+		itemSize[]={2,1};
+	};
+
+
+  // ----------------------------------------- Custom Stuff
 
   class SRP_BallisticHelmet_Rain: BaseballCap_ColorBase  // BP2_Rainhelm
 	{

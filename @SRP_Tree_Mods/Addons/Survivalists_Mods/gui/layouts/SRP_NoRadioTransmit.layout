@@ -1,0 +1,62 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ scaled 1
+ {
+  PanelWidgetClass mutedPanel {
+   ignorepointer 1
+   position 0 -115
+   size 0.05 0.1
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   {
+    ImageWidgetClass MutedIcon {
+     visible 1
+     ignorepointer 1
+     position 0 14
+     size 50 50
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     scaled 1
+     fixaspect fixwidth
+     imageTexture "Survivalists_Mods/gui/RadioMuted.edds"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 1
+     "flip u" 0
+     "flip v" 0
+     filter 1
+    }
+    TextWidgetClass Muted {
+     ignorepointer 1
+     size 40 40
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "Muted"
+     font "gui/fonts/etelkatextpro"
+     "exact text" 0
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" center
+    }
+   }
+  }
+ }
+}

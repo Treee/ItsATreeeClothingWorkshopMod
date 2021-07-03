@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+  <inputs>
+    <actions>
+      <input name="UACompassToggle" loc="Compass Toggle" />
+      <input name="UAToggleMuteTransmitter" loc="Toggle Radio Mute" />
+    </actions>
+  </inputs>
+  <preset>
+    <input name="UACompassToggle">
+      <btn name="kH" />
+    </input>
+    <input name="UAToggleMuteTransmitter">
+      <btn name="kO">
+        <event name="hold"/>
+      </btn>
+    </input>
+  </preset>
+</modded_inputs>

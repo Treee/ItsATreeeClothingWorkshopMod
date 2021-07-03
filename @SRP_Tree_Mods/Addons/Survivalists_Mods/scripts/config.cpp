@@ -11,6 +11,12 @@ class CfgPatches
 
 class CfgSlots
 {
+  class Slot_Cassette
+	{
+		name="Cassette";
+		displayName="Cassette";
+		ghostIcon="";
+	};  
   class Slot_blade
 	{
 		name="blade";
@@ -363,6 +369,13 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
+
+  class ProxySodaCan_Used: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="tripWireAttachment";
+		model="\dz\gear\drinks\SodaCan_Used.p3d";
+	};
 
   class Proxyblade
 	{

@@ -9,7 +9,8 @@ class CfgPatches
 		{
       "DZ_Data",
 			"DZ_Characters",
-      "DZ_Characters_Backpacks"
+      "DZ_Characters_Backpacks",
+      "Survivalists_Mods"
 		};
 	};
 };
@@ -21,6 +22,26 @@ class CfgVehicles
   class MountainBag_ColorBase;
   class AssaultBag_ColorBase;
   class TaloonBag_ColorBase;
+
+
+  //--------------------------------- MOD OVERRIDE
+	class MassNBC_Bag: Container_Base
+	{
+		scope=2;
+		displayName="NBC Bag";
+		descriptionShort="A yellow bag meant to contain the NBC set, Gas mask not included. 'Mass' Thanks to BaconAndDoritos for his quick maffs";
+		itemsize[]={6,6};
+		itemsCargoSize[]={9,6}; // increase to account for gas mask
+		Model="MassTextures\bag\medbag\cannister.p3d";
+		inventorySlot[]=
+		{
+			"NBC"
+		};
+		weight=75;
+		allowOwnedCargoManipulation=1;
+	};
+
+  //--------------------------------- CUSTOM STUFF
   
   class SRP_HuntingPouch_Small: Container_Base  // BP_HuntingCarman
 	{

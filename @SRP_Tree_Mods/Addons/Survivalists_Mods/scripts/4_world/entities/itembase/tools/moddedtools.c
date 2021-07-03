@@ -88,5 +88,6 @@ modded class Crowbar
 		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
+    AddAction(ActionSawPlanks);
 	}
 };

@@ -3,19 +3,20 @@ class CfgMods
 	class Survivalists_Mods
 	{
 		type = "mod";
-		author = "ItsATreee";
+		author = "Orin | Alevaric | Sir Locksley |ItsATreee";
 		name = "Survivalists_Mods";
 		dir = "Survivalists_Mods";
+    inputs="Survivalists_Mods\inputs\Inputs.xml";
 		dependencies[] = {"Game","World","Mission"};
 		class defs
 		{
-      class imageSets
-      {
-        files[]=
-        {
-          "Survivalists_Mods/gui/images/srp_tree_iconset.imageset"
-        };
-      };
+      // class imageSets
+      // {
+      //   files[]=
+      //   {
+      //     "Survivalists_Mods/gui/images/srp_tree_iconset.imageset"
+      //   };
+      // };
 			class gameScriptModule
 			{
 				value = "";
@@ -44,7 +45,11 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data"
+			"DZ_Data",
+      "Munghardssleepingbag", // munghards
+      "MunghardsBrain",     // mung_brain
+      "Mass_Textures", // MassNBC_Bag, MassRatnik
+      "MSP_Scripts"    // MSP_Fridge_Base
 		};
 	};
 };

@@ -60,6 +60,10 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_Notebook);
     RegisterRecipe(new Craft_SRP_WhiteFlag);
 
+
+    //--------------- Patches
+    RegisterRecipe(new Craft_SRP_Patch_Russian);
+
     //---------Armbands
     // Mass Double Armband General Crafting
 		RegisterRecipe(new SRP_SkullAndCrossbones_Double_Armband);

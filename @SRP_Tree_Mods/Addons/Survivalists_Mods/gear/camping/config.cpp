@@ -9,10 +9,11 @@ class CfgPatches
 		{
 			"DZ_Data",
       "DZ_Gear_Camping",
-      "Survivalists_Mods"
+      "Survivalists_Mods"      
 		};
 	};
 };
+
 class CfgVehicles
 {
   class BaseBuildingBase;
@@ -21,6 +22,12 @@ class CfgVehicles
   class Container_Base;
 
   class SRP_KitBase;
+
+  //----------------------- MOD OVERRIDES
+  class sleepingbag_colorbase_mung_Deployed: Inventory_Base
+	{
+    itemsCargoSize[]={0,0};
+  }
 
 
   // ----------------------  BASE GAME OVERRIDES
@@ -338,6 +345,21 @@ class CfgVehicles
 		};
 	};
 
+  // increase the length of the cablereel
+  class CableReel: Inventory_Base
+	{
+		class EnergyManager
+		{
+			switchOnAtSpawn=1;
+			powerSocketsCount=1;
+			cordTextureFile="DZ\gear\camping\Data\plug_orange_CO.paa";
+			isPassiveDevice=1;
+			cordLength=50;
+			plugType=2;
+			compatiblePlugTypes[]={2,6};
+		};
+	};
+
   // ----------------------- CUSTOM STUFF
 
   class SRP_Potbelly_Stove_Kit: SRP_KitBase //BP_Pech_kit
@@ -446,6 +468,37 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\camping\data\Piatto_B3.paa"
+		};
+	};
+
+  class SRP_Guitar: Inventory_Base
+	{
+		scope=2;
+		displayName="Guitar";
+		descriptionShort="";
+		model="Survivalists_Mods\gear\camping\guitar.p3d";
+		weight=1500;
+		itemSize[]={3,7};
+    inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="woodenlog_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodenlog_drop_SoundSet";
+					id=898;
+				};
+			};
 		};
 	};
 

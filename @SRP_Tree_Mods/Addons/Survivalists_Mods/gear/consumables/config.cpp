@@ -16,6 +16,7 @@ class CfgVehicles
 {
   class Spraycan_ColorBase;
   class Inventory_Base;
+  class ButaneCanister;
 
   //--------------------------------------------- BASE GAME OVERRIDES
   // Useful Battery Repack
@@ -58,6 +59,12 @@ class CfgVehicles
 			energyStorageMax=2000;
 			energyAtSpawn=2000;
 		};
+	};
+
+  class WoodenPlank: Inventory_Base
+	{
+		varQuantityMax=20;
+		varStackMax=20;
 	};
 
   //----------------------------------------------- CUSTOM STUFF
@@ -181,4 +188,17 @@ class CfgVehicles
 			"Survivalists_Mods\gear\consumables\data\srp_spraycan_co.paa"
 		};
 	};  
+  class SRP_ButaneCanister: ButaneCanister
+	{
+		scope=2;
+		displayName="Refillable Butane Canister";
+		descriptionShort="A canister used for re-fueling gas containers";
+		overrideDrawArea="3.0";
+		varQuantityInit=20;
+		varQuantityMin=0;
+		varQuantityMax=20;
+		stackedUnit="w";
+		varQuantityDestroyOnMin=0;
+		destroyOnEmpty=0;
+	};
 };

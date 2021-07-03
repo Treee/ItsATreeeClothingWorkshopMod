@@ -19,6 +19,19 @@ class CfgVehicles
   class HockeyMask;
   class GP5GasMask;
   class GP5GasMask_Filter;
+  class Clothing;
+
+  //------------------------------------- BASE GAME OVERRIDE
+	class GasMask: Clothing
+	{
+		soundVoiceType="none";
+		soundVoicePriority=3;
+	};
+	class GP5GasMask: Clothing
+	{
+		soundVoiceType="none";
+		soundVoicePriority=3;
+	};
 
   // ----------------------------------------- Custom Stuff
   class SRP_GP5GasMask_Filter: GP5GasMask_Filter  // GP5_filter

@@ -270,6 +270,25 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Blood_Bottle: SRP_WaterBottleBase
+	{
+		scope=2;
+		displayName="Red Bottle";
+		descriptionShort="A bottle of red liquid";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\srp_bloodbottle.co.paa"
+		};
+		class Nutrition
+		{
+			toxicity=2;
+		};
+	};
+
 	class SRP_SodaCanBaltika0: SRP_SodaCanBase  // BP1_baltika0
 	{
 		scope=2;
