@@ -375,7 +375,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Potbelly Stove";
 		descriptionShort="A Potbelly stove, a very convenient thing when the whole world is in ruin.";
-		model="Survivalists_Mods\gear\camping\Pech_kit.p3d";
+		model="Survivalists_Mods\gear\camping\potbellystove.p3d";
 		itemSize[]={10,15};
 		weight=10000;
 		stackedUnit="ml";
@@ -395,11 +395,25 @@ class CfgVehicles
 			"SmokingC",
 			"SmokingD"
 		};
+    hiddenSelections[]={
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\potbellystove_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\potbellystove.rvmat"
+    };
 		class Cargo
 		{
 			itemsCargoSize[]={10,10};
 			openable=1;
 			allowOwnedCargoManipulation=1;
+		};
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
 		};
 	};
 

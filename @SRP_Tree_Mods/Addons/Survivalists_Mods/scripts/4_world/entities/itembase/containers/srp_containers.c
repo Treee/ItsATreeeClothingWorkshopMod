@@ -100,6 +100,20 @@ class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
 		RemoveAction(ActionTakeItemToHands);
 	}
 
+  protected override void UpdateVisualState()
+	{
+		if ( IsOpen() )
+		{
+			SetAnimationPhase("Lid",1);
+			SetAnimationPhase("Lid2",0);
+		}
+		else
+		{
+			SetAnimationPhase("Lid",0);
+			SetAnimationPhase("Lid2",1);
+		}
+	}
+
   override bool CanPutInCargo( EntityAI parent )
 	{
 		return false;
