@@ -17,7 +17,6 @@ class CfgVehicles
   class SurgicalMask;
   class BandanaMask_ColorBase;
   class HockeyMask;
-  class GP5GasMask;
   class GP5GasMask_Filter;
   class Clothing;
 

@@ -226,7 +226,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Bayonet Knife";
 		descriptionShort="Used for the purpose of the bayonet marked by the owner.";
-		model="BP1\weapons_melee\M9 Bayonet\m9k.p3d";
+		model="Survivalists_Mods\weapons\melee\blade\m9k.p3d";
 		repairableWithKits[]={5,4};
 		repairCosts[]={30,25};
 		openItemSpillRange[]={0,20};

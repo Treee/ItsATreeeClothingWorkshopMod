@@ -20,6 +20,7 @@ class CfgVehicles
   class BarrelHoles_ColorBase;
   class Inventory_Base;
   class Container_Base;
+  class WoodenCrate;
 
   class SRP_KitBase;
 

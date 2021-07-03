@@ -9,15 +9,10 @@ modded class ActionUnfoldMapCB
     if ( m_CancelCondition ) { return; }
 
 		ItemMap chernomap = ItemMap.Cast(m_ActionData.m_Player.GetItemInHands());
-		if (chernomap && !m_ActionData.m_Player.IsMapOpen() && !m_MapFolding)
+		if (chernomap && !m_ActionData.m_Player.IsMapOpen())
 		{
 			chernomap.SetMapStateOpen(true,m_ActionData.m_Player);
-		}
-    else if (chernomap && m_ActionData.m_Player.IsMapOpen())
-		{
-			//MiscGameplayFunctions.TurnItemIntoItem(chernomap, closed_map, m_ActionData.m_Player);
-			chernomap.SetMapStateOpen(false,m_ActionData.m_Player);
-			m_MapFolding = true;
+      m_MapFolding = false;
 		}
 	}
-}
+};

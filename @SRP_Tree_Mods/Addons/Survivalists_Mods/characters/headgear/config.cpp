@@ -21,11 +21,9 @@ class CfgVehicles
   class MilitaryBeret_ColorBase;
   class Ushanka_ColorBase;
   class NBCHoodBase;
-  class Headtorch_ColorBase;
   class Switchable_Base;
   class PrisonerCap;
   class Clothing;
-
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class DarkMotoHelmet_ColorBase: Clothing

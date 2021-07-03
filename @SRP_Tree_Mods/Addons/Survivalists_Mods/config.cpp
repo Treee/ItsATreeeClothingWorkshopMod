@@ -49,7 +49,8 @@ class CfgPatches
       "Munghardssleepingbag", // munghards
       "MunghardsBrain",     // mung_brain
       "Mass_Textures", // MassNBC_Bag, MassRatnik
-      "MSP_Scripts"    // MSP_Fridge_Base
+      "MSP_Scripts",    // MSP_Fridge_Base
+      "deerisle", // for the map
 		};
 	};
 };
