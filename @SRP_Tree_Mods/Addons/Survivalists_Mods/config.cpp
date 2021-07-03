@@ -6,7 +6,7 @@ class CfgMods
 		author = "Orin | Alevaric | Sir Locksley |ItsATreee";
 		name = "Survivalists_Mods";
 		dir = "Survivalists_Mods";
-    inputs="Survivalists_Mods\inputs\Inputs.xml";
+    inputs="Survivalists_Mods/inputs.xml";
 		dependencies[] = {"Game","World","Mission"};
 		class defs
 		{
