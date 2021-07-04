@@ -1,4 +1,4 @@
-class SRP_Bowl extends Inventory_Base
+class SRP_Bowl_Wood extends Inventory_Base
 {       
 	override bool IsTwoHandedBehaviour() 
   {
@@ -19,5 +19,6 @@ class SRP_Bowl extends Inventory_Base
   }
 };
 
-class SRP_Bowl_1 extends SRP_Bowl {};
-class SRP_Bowl_2 extends SRP_Bowl {};
+class SRP_Bowl_CherryWood extends SRP_Bowl_Wood {};
+class SRP_Bowl_DarkWood extends SRP_Bowl_Wood {};
+class SRP_BowlSquare_Wood extends SRP_Bowl_Wood {};

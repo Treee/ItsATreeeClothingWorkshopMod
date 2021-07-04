@@ -417,15 +417,15 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Bowl: Inventory_Base  // Bp_Bowl
+  class SRP_Bowl_Wood: Inventory_Base  // Bp_Bowl
 	{
 		scope=2;
-		displayName="Bowl";
+		displayName="Wooden Plate";
 		descriptionShort="It may seem strange, but eating from a plate is much more convenient and more hygienic than from the floor.";
-		model="Survivalists_Mods\gear\camping\Bp_Bowl.p3d";
+		model="Survivalists_Mods\gear\camping\plate.p3d";
 		inventorySlot="BPCookingEquip";
 		weight=250;
-		itemSize[]={4,4};
+		itemSize[]={3,1};
 		absorbency=0.30000001;
 		physLayer="item_large";
 		allowOwnedCargoManipulation=1;
@@ -456,11 +456,15 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\camping\data\Piatto_B1.paa"
+			"Survivalists_Mods\gear\camping\data\plate_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\platewood.rvmat"
 		};
 	};
 
-	class SRP_Bowl_1: SRP_Bowl  // Bp_Bowl_1
+	class SRP_Bowl_DarkWood: SRP_Bowl_Wood  // Bp_Bowl_1
 	{
 		scope=2;
     hiddenSelections[]=
@@ -469,11 +473,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\camping\data\Piatto_B2.paa"
+			"Survivalists_Mods\gear\camping\data\plate_dark_co.paa"
 		};
 	};
 
-	class SRP_Bowl_2: SRP_Bowl  // Bp_Bowl_2
+	class SRP_Bowl_CherryWood: SRP_Bowl_Wood  // Bp_Bowl_2
 	{
 		scope=2;
     hiddenSelections[]=
@@ -482,22 +486,55 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\camping\data\Piatto_B3.paa"
+			"Survivalists_Mods\gear\camping\data\plate_cherry_co.paa"
 		};
 	};
 
-  class SRP_Guitar: Inventory_Base
+  class SRP_BowlSquare_Wood: SRP_Bowl_Wood  // new
+	{
+		scope=2;
+		displayName="Square Wooden Plate";
+		descriptionShort="It may seem strange, but eating from a plate is much more convenient and more hygienic than from the floor.";
+		model="Survivalists_Mods\gear\camping\platesquare.p3d";
+		hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\platesquare_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\platesquarewood.rvmat"
+		};
+	};
+
+  class SRP_Guitar_Alpocalypse: Inventory_Base  // SRP_Guitar
 	{
 		scope=2;
 		displayName="Guitar";
 		descriptionShort="";
-		model="Survivalists_Mods\gear\camping\guitar.p3d";
+		model="Survivalists_Mods\gear\camping\alpocalypseguitar.p3d";
 		weight=1500;
-		itemSize[]={3,7};
+		itemSize[]={3,6};
+    rotationFlags=16;
     inventorySlot[]=
 		{
 			"Shoulder",
 			"Melee"
+		};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\alpocalypseguitar_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\alpocalypseguitar.rvmat"
 		};
 		class AnimEvents
 		{
