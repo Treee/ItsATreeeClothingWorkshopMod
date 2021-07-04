@@ -968,12 +968,12 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_WoodenBox_Large: WoodenCrate  // BP2_Long_box
+  class SRP_WoodenBox_Long: WoodenCrate  // BP2_Long_box
 	{
 		scope=2;
-		displayName="Wooden Box";
-		descriptionShort="$STR_CfgVehicles_SeaChest1";
-		model="Survivalists_Mods\gear\camping\Long_box.p3d";
+		displayName="Long Wooden Box";
+		descriptionShort="A long wooden box";
+		model="Survivalists_Mods\gear\camping\woodenboxlong.p3d";
 		canBeDigged=0;
 		heavyItem=1;
 		weight=1000;
@@ -984,7 +984,22 @@ class CfgVehicles
 		{
 			"Back"
 		};
-		allowOwnedCargoManipulation=1;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\woodenboxlong_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\woodenboxlong.rvmat"
+    };
+    class Cargo
+		{
+			itemsCargoSize[]={10,15};
+			openable=0;
+			allowOwnedCargoManipulation=0;
+		};
 		class GUIInventoryAttachmentsProps
 		{
 			class Storage
@@ -998,6 +1013,93 @@ class CfgVehicles
 				icon="set:dayz_inventory image:back";
 			};
 		};
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+	};
+
+  class SRP_WoodenBox_Locked: WoodenCrate  // new
+	{
+		scope=2;
+		displayName="Locked Wooden Box";
+		descriptionShort="A locked wooden box. The lock doesn't look very secure.";
+		model="Survivalists_Mods\gear\camping\woodenboxlocked.p3d";
+		canBeDigged=0;
+		heavyItem=1;
+		weight=1000;
+		itemSize[]={10,15};
+		carveNavmesh=1;
+		rotationFlags=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\woodenboxlocked_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\woodenboxlocked.rvmat"
+    };
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+	};
+
+  class SRP_WoodenBox_Square: WoodenCrate  // new
+	{
+		scope=2;
+		displayName="Square Wooden Box";
+		descriptionShort="A square wooden box.";
+		model="Survivalists_Mods\gear\camping\woodenboxsquare.p3d";
+		canBeDigged=0;
+		heavyItem=1;
+		weight=1000;
+		itemSize[]={10,15};
+		carveNavmesh=1;
+		rotationFlags=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\woodenboxsquare_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\woodenboxsquare.rvmat"
+    };
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+	};
+
+  class SRP_WoodenBox_Cask: WoodenCrate  // new
+	{
+		scope=2;
+		displayName="Wooden Cask";
+		descriptionShort="A wooden Cask. The lock doesn't look very secure.";
+		model="Survivalists_Mods\gear\camping\woodencask.p3d";
+		canBeDigged=0;
+		heavyItem=1;
+		weight=1000;
+		itemSize[]={10,15};
+		carveNavmesh=1;
+		rotationFlags=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\woodencask_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\woodencask.rvmat"
+    };
 	};
 
   //------------------------------ BASE BUILDING

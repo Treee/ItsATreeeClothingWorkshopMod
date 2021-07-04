@@ -33,8 +33,6 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 # Models to replace
 
 In Camping
-
-SRP_WoodenBox_Large
 SRP_SmallDoor
 SRP_WindowBarricade
 SRP_WideFence
@@ -56,4 +54,16 @@ SRP_WideFence
 "TeaScroll Clubhouse - Rug Prop" (https://skfb.ly/6D89H) by Anaïs Faure is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Persian Rug" (https://skfb.ly/KWsy) by Nicholas Record is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"wooden box #5" (https://skfb.ly/6WTZ9) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Military wooden crate" (https://skfb.ly/6XNyB) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+
+"Wooden table" (https://skfb.ly/6D7Zn) by Gunnar Correa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Wooden barrel and box" (https://skfb.ly/6Z78B) by teinaaVa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+
+
 
