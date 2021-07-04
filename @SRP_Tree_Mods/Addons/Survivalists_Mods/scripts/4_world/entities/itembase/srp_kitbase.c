@@ -141,6 +141,8 @@ class SRP_GunShelf_Kit extends SRP_KitBase {}
 class SRP_Potbelly_Stove_Kit extends SRP_KitBase {}
 class SRP_ShootingTargetO_Kit extends SRP_KitBase {}
 class SRP_StreetLightLarge_Kit extends SRP_KitBase {}
+class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase {}
+class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase {}
 class SRP_StreetLightMedium_Kit extends SRP_KitBase {}
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase {}
 

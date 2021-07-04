@@ -35,6 +35,8 @@ class SRP_Umbrella extends SRP_Container_Base{}
 class SRP_ShootingTargetO extends SRP_Container_Base{}
 class SRP_AdvancedWorkbench extends SRP_Container_Base{}
 class SRP_StreetLightLarge extends SRP_Container_Base{}
+class SRP_StreetLightLarge_Metal extends SRP_Container_Base{}
+class SRP_StreetLightMedium_Wood extends SRP_Container_Base{}
 class SRP_StreetLightMedium extends SRP_Container_Base{}
 class SRP_Carpet extends SRP_Container_Base{}
 
