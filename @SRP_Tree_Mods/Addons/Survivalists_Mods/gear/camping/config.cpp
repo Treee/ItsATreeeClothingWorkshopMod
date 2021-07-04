@@ -866,7 +866,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Old Carpet";
 		descriptionShort="An old carpet to decorate your home";
-		model="Survivalists_Mods\gear\camping\Long_box.p3d";
+		model="Survivalists_Mods\gear\camping\persianrug.p3d";
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
@@ -878,6 +878,16 @@ class CfgVehicles
 			"Back",
 			"Shoulder"
 		};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\persianrug_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\persianrug.rvmat"
+    };
 		class Cargo
 		{
 			itemsCargoSize[]={6,6};
@@ -901,6 +911,62 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_CarpetRug_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  
+  class SRP_CarpetRug: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Old Carpet";
+		descriptionShort="An old carpet to decorate your home";
+		model="Survivalists_Mods\gear\camping\doormatrug.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		physLayer="item_large";
+		rotationFlags=2;
+		attachments[]=
+		{
+			"Melee",
+			"Back",
+			"Shoulder"
+		};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\doormatrug_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\doormatrug.rvmat"
+    };
+		class Cargo
+		{
+			itemsCargoSize[]={6,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Storage
+			{
+				name="Storage";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee",
+					"Back",
+					"Shoulder"
+				};
+				icon="set:dayz_inventory image:shoulderleft";
+			};
+		};
+	};
 
   class SRP_WoodenBox_Large: WoodenCrate  // BP2_Long_box
 	{

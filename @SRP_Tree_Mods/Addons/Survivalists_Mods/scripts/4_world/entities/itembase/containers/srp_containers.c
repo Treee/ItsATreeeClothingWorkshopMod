@@ -39,6 +39,7 @@ class SRP_StreetLightLarge_Metal extends SRP_Container_Base{}
 class SRP_StreetLightMedium_Wood extends SRP_Container_Base{}
 class SRP_StreetLightMedium extends SRP_Container_Base{}
 class SRP_Carpet extends SRP_Container_Base{}
+class SRP_CarpetRug extends SRP_Container_Base{}
 
 class SRP_MilitaryCase extends Barrel_ColorBase
 {
