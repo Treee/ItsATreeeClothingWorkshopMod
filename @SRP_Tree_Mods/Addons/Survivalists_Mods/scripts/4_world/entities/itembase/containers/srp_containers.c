@@ -1,3 +1,15 @@
+class SRP_WoodenBox_Cask extends DeployableContainer_Base 
+{
+  override bool CanPutInCargo( EntityAI parent )
+	{
+		return false;
+	}
+  override bool CanPutIntoHands (EntityAI parent)
+  {
+    return true;
+  }
+};
+
 class SRP_Container_Base extends Container_Base
 {
 	override void SetActions()
@@ -40,7 +52,6 @@ class SRP_StreetLightMedium_Wood extends SRP_Container_Base{};
 class SRP_StreetLightMedium extends SRP_Container_Base{};
 class SRP_Carpet extends SRP_Container_Base{};
 class SRP_CarpetRug extends SRP_Container_Base{};
-class SRP_WoodenBox_Cask extends SRP_Container_Base {};
 
 class SRP_MilitaryCase extends Barrel_ColorBase
 {
@@ -65,6 +76,42 @@ class SRP_MilitaryCase extends Barrel_ColorBase
     return false;
   }
 }
+
+class SRP_Potbelly_Stove extends Barrel_ColorBase
+{
+  protected override void UpdateVisualState()
+	{
+		if ( IsOpen() )
+		{
+			SetAnimationPhase("Lid",1);
+			SetAnimationPhase("Lid2",0);
+		}
+		else
+		{
+			SetAnimationPhase("Lid",0);
+			SetAnimationPhase("Lid2",1);
+		}
+	}
+
+	override bool CanPutInCargo( EntityAI parent )
+  {
+    return false;
+  }
+    
+  override bool CanPutIntoHands(EntityAI parent)
+  {
+    return false;
+  }
+
+	override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionTakeFireplaceFromBarrel);
+    RemoveAction(ActionTakeItem);
+    RemoveAction(ActionSwapItemToHands);
+		RemoveAction(ActionTakeItemToHands);
+	}
+};
 
 class SRP_Openable_Container extends Barrel_ColorBase
 {
@@ -94,18 +141,6 @@ class SRP_Openable_Container extends Barrel_ColorBase
 };
 
 class SRP_BedsideTable extends SRP_Openable_Container {};
-
-class SRP_Potbelly_Stove extends SRP_Openable_Container
-{
-	override void SetActions()
-	{
-		super.SetActions();
-		AddAction(ActionTakeFireplaceFromBarrel);
-    RemoveAction(ActionTakeItem);
-    RemoveAction(ActionSwapItemToHands);
-		RemoveAction(ActionTakeItemToHands);
-	}
-};
 
 class SRP_WoodenBox_Locked extends SRP_Openable_Container
 {

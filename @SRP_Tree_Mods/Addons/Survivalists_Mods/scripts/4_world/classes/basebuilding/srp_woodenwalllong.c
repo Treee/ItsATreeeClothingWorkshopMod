@@ -1,10 +1,10 @@
-class SRP_WindowBarricade extends Fence
+class SRP_WoodenWallLong extends Fence
 {	
-	void SRP_WindowBarricade(){}
+	void SRP_WoodenWallLong(){}
 	
 	override string GetConstructionKitType()
 	{
-		return "SRP_WindowBarricade_Kit";
+		return "SRP_WoodenWallLong_Kit";
 	}
 	
 	//--- BUILD EVENTS

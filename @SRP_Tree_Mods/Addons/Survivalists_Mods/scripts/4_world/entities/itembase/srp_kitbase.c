@@ -260,6 +260,43 @@ class SRP_WideFence_Kit extends SRP_KitBase {
 		SetIsPlaceSound(true);
 	}
 }
+class SRP_WoodenWallLong_Kit extends SRP_KitBase {
+  override bool IsBasebuildingKit()
+	{
+		return true;
+	}
+	
+	override bool HasProxyParts()
+	{
+		return true;
+	}
+  override bool DisassembleOnLastDetach()
+	{
+		return true;
+	}
+  override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
+	{
+		// super.OnPlacementComplete(player, position, orientation);
+		if (GetGame().IsServer())
+		{
+      string kitType = this.GetType();
+      if (kitType != "") {
+        // int trimLength = kitType.Length() - 4; // -4 for _Kit removal
+        kitType = kitType.Substring(0, kitType.Length() - 4);
+      }
+			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(kitType, position, ECE_PLACE_ON_SURFACE));
+      PlayerBase playerBase = PlayerBase.Cast( player );
+      position = playerBase.GetLocalProjectionPosition();
+		  orientation = playerBase.GetLocalProjectionOrientation();
+
+			kitItem.SetPosition(position);
+			kitItem.SetOrientation(orientation);
+			kitItem.SetAnimationPhase( "BP_Hologram", 0 );
+		}
+
+		SetIsPlaceSound(true);
+	}
+}
 
 // non craftable kits
 class SRP_FridgeBig_Kit extends SRP_KitBase {}

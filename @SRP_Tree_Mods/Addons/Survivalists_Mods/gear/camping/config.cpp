@@ -1082,7 +1082,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Cask";
-		descriptionShort="A wooden Cask. The lock doesn't look very secure.";
+		descriptionShort="A wooden Cask.";
 		model="Survivalists_Mods\gear\camping\woodencask.p3d";
 		canBeDigged=0;
 		heavyItem=1;
@@ -1118,8 +1118,13 @@ class CfgVehicles
 		scope=2;
 		displayName="Window Barricade";
 		descriptionShort="Wooden shield, designed for barricading windows, breaks in walls, floors and so on.";
-    model="Survivalists_Mods\gear\camping\bp_door_kit.p3d";
-    itemSize[]={1,5};
+	};
+
+  class SRP_WoodenWallLong_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Long Wall Barricade";
+		descriptionShort="Wooden wall, designed for blocking of areas. Extra materials are included to make the wall extra long.";
 	};
 
   class SRP_WideFence_Kit: SRP_KitBase  // bp_big_door_kit
@@ -1154,28 +1159,28 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_WindowBarricade_Hologram: Inventory_Base  // bp_window_holo
-	{
-		scope=2;
-		model="Survivalists_Mods\gear\camping\bp_window_holo.p3d";
-		storageCategory=10;
-		hologramMaterial="tent_medium";
-		hologramMaterialPath="dz\gear\camping\data";
-		alignHologramToTerain=0;
-		slopeTolerance=0.30000001;
-		hiddenSelections[]=
-		{
-			"placing"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"dz\gear\consumables\data\pile_of_planks_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"dz\gear\camping\data\fence_pile_of_planks.rvmat"
-		};
-	};
+	// class SRP_WindowBarricade_Hologram: Inventory_Base  // bp_window_holo
+	// {
+	// 	scope=2;
+	// 	model="Survivalists_Mods\gear\camping\bp_window_holo.p3d";
+	// 	storageCategory=10;
+	// 	hologramMaterial="tent_medium";
+	// 	hologramMaterialPath="dz\gear\camping\data";
+	// 	alignHologramToTerain=0;
+	// 	slopeTolerance=0.30000001;
+	// 	hiddenSelections[]=
+	// 	{
+	// 		"placing"
+	// 	};
+	// 	hiddenSelectionsTextures[]=
+	// 	{
+	// 		"dz\gear\consumables\data\pile_of_planks_co.paa"
+	// 	};
+	// 	hiddenSelectionsMaterials[]=
+	// 	{
+	// 		"dz\gear\camping\data\fence_pile_of_planks.rvmat"
+	// 	};
+	// };
 
 	class SRP_WideFence_Hologram: Inventory_Base  // bp_big_door_holo
 	{
@@ -2140,7 +2145,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Window Barricade";
 		descriptionShort="$STR_CfgVehicles_Fence1";
-		model="Survivalists_Mods\gear\camping\bp_window.p3d";
+		model="Survivalists_Mods\gear\camping\windowbarricade.p3d";
 		bounding="BSphere";
 		overrideDrawArea="1.0";
 		slopeTolerance=0.030000011;
@@ -2155,7 +2160,7 @@ class CfgVehicles
 		createdProxiesOnInit[]=
 		{
 			"Deployed",
-			"bp_hologram"
+			// "bp_hologram"
 		};
 		rotationFlags=2;
 		class DamageSystem
@@ -2164,7 +2169,391 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=10000000;
+					healthLevels[]=
+					{
+						{1.01,{	""}},
+            {0.69999999,{	""}},
+            {0.5,{	""}},
+            {0.30000001,{	""}},
+            {0.0099999998,{	""}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+			};
+			class DamageZones
+			{
+				class Body
+				{
+					class Health
+					{
+						hitpoints=100;
+						transferToGlobalCoef=0;
+						healthLevels[]=
+						{
+							{1.01,{"DZ\gear\camping\data\fence_pile_of_planks.rvmat"}},
+              {0.69999999,{"DZ\gear\camping\data\fence_pile_of_planks.rvmat"}},
+              {0.5,{"DZ\gear\camping\data\fence_pile_of_planks_damage.rvmat"}},
+              {0.30000001,{"DZ\gear\camping\data\fence_pile_of_planks_damage.rvmat"}},
+              {0.0099999998,{"DZ\gear\camping\data\fence_pile_of_planks_destruct.rvmat"}}
+						};
+					};
+					class ArmorType
+					{
+						class Projectile
+						{
+							class Health
+							{
+								damage=0;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+						class Melee
+						{
+							class Health
+							{
+								damage=0;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+						class FragGrenade
+						{
+							class Health
+							{
+								damage=0;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+					};
+					componentNames[]=
+					{
+						"body"
+					};
+					fatalInjuryCoef=-1;
+				};
+				class bp_win_base
+				{
+					class Health
+					{
+						hitpoints=10000;
+						transferToGlobalCoef=0;
+						healthLevels[]=
+						{
+							{1.01,{"DZ\gear\camping\data\fence_pile_of_planks.rvmat"}},
+              {0.69999999,{"DZ\gear\camping\data\fence_pile_of_planks.rvmat"}},
+              {0.5,{"DZ\gear\camping\data\fence_pile_of_planks_damage.rvmat"}},
+              {0.30000001,{"DZ\gear\camping\data\fence_pile_of_planks_damage.rvmat"}},
+              {0.0099999998,{"DZ\gear\camping\data\fence_pile_of_planks_destruct.rvmat"}}
+						};
+					};
+					class ArmorType
+					{
+						class Projectile
+						{
+							class Health
+							{
+								damage=1;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+						class Melee
+						{
+							class Health
+							{
+								damage=0.75;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+						class FragGrenade
+						{
+							class Health
+							{
+								damage=70;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+					};
+					componentNames[]=
+					{
+						"bp_win_base"
+					};
+					fatalInjuryCoef=-1;
+				};
+				class bp_door_wood
+				{
+					class Health
+					{
+						hitpoints=10000;
+						transferToGlobalCoef=0;
+						healthLevels[]=
+						{
+							{1.01,{"DZ\gear\camping\data\fence_pile_of_planks.rvmat"}},
+              {0.69999999,{"DZ\gear\camping\data\fence_pile_of_planks.rvmat"}},
+              {0.5,{"DZ\gear\camping\data\fence_pile_of_planks_damage.rvmat"}},
+              {0.30000001,{"DZ\gear\camping\data\fence_pile_of_planks_damage.rvmat"}},
+              {0.0099999998,{"DZ\gear\camping\data\fence_pile_of_planks_destruct.rvmat"}}
+						};
+					};
+					class ArmorType
+					{
+						class Projectile
+						{
+							class Health
+							{
+								damage=1;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+						class Melee
+						{
+							class Health
+							{
+								damage=0.75;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+						class FragGrenade
+						{
+							class Health
+							{
+								damage=70;
+							};
+							class Blood
+							{
+								damage=0;
+							};
+							class Shock
+							{
+								damage=0;
+							};
+						};
+					};
+					componentNames[]=
+					{
+						"bp_door_wood"
+					};
+					fatalInjuryCoef=-1;
+				};
+			};
+		};
+		attachments[]=
+		{
+			"Material_Nails",
+			"Material_WoodenPlanks"
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class bp_base
+			{
+				name="$STR_CfgVehicles_Fence_Att_Category_Base";
+				description="";
+				attachmentSlots[]=
+				{
+					"Material_Nails",
+					"Material_WoodenPlanks"
+				};
+				icon="cat_bb_material";
+				selection="bp_wall";
+			};
+		};
+		class AnimationSources
+		{
+			class AnimSourceShown
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class AnimSourceHidden
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class Deployed: AnimSourceHidden
+			{
+			};
+			class bp_hologram: AnimSourceHidden
+			{
+			};
+			class bp_win_base: AnimSourceHidden
+			{
+			};
+			class bp_door_wood: AnimSourceHidden
+			{
+			};
+		};
+		class Construction
+		{
+			class bp_wall
+			{
+				class bp_win_base
+				{
+					name="Base For The Window";
+					is_base=1;
+					id=1;
+					required_parts[]={};
+					conflicted_parts[]={};
+					collision_data[]={};
+					build_action_type=2;
+					dismantle_action_type=2;
+					material_type=4;
+					class Materials
+					{
+						class Material1
+						{
+							type="Nail";
+							slot_name="Material_Nails";
+							quantity=4;
+						};
+						class Material2
+						{
+							type="WoodenPlank";
+							slot_name="Material_WoodenPlanks";
+							quantity=2;
+						};
+					};
+				};
+				class bp_door_wood
+				{
+					name="Shield For The Window";
+					id=2;
+					required_parts[]=
+					{
+						"bp_win_base"
+					};
+					conflicted_parts[]={};
+					collision_data[]=
+					{
+						"wall_min",
+						"wall_max"
+					};
+					build_action_type=2;
+					dismantle_action_type=2;
+					material_type=4;
+					class Materials
+					{
+						class Material1
+						{
+							type="Nail";
+							slot_name="Material_Nails";
+							quantity=30;
+						};
+						class Material2
+						{
+							type="WoodenPlank";
+							slot_name="Material_WoodenPlanks";
+							quantity=10;
+						};
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_WoodenWallLong: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Long Wooden Wall";
+		descriptionShort="$STR_CfgVehicles_Fence1";
+		model="Survivalists_Mods\gear\camping\woodenwalllong.p3d";
+		bounding="BSphere";
+		overrideDrawArea="1.0";
+		slopeTolerance=0.030000011;
+		forceFarBubble="true";
+		handheld="false";
+		lootCategory="Crafted";
+		carveNavmesh=1;
+		weight=5000;
+		itemSize[]={2,3};
+		physLayer="item_large";
+		createProxyPhysicsOnInit="false";
+		createdProxiesOnInit[]=
+		{
+			"Deployed",
+			// "bp_hologram"
+		};
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
 					healthLevels[]=
 					{
 						{1.01,{	""}},

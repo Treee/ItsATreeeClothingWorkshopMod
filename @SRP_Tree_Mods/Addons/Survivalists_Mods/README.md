@@ -59,11 +59,11 @@ SRP_WideFence
 
 "Military wooden crate" (https://skfb.ly/6XNyB) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-
-"Wooden table" (https://skfb.ly/6D7Zn) by Gunnar Correa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
 "Wooden barrel and box" (https://skfb.ly/6Z78B) by teinaaVa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 
+"Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Wooden Barricades" (https://skfb.ly/6wz9T) by ANRUVAL_3D_MODELS is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Wood walls" (https://skfb.ly/onEru) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
