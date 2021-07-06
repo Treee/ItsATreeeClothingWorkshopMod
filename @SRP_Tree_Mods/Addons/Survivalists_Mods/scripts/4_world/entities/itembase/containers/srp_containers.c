@@ -77,7 +77,7 @@ class SRP_MilitaryCase extends Barrel_ColorBase
   }
 }
 
-class SRP_Potbelly_Stove extends Barrel_ColorBase
+class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
 {
   protected override void UpdateVisualState()
 	{
