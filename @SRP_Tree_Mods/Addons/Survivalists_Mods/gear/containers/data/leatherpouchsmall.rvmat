@@ -1,14 +1,14 @@
-ambient[]={0.9999997,1,1,1};
-diffuse[]={0.9999997,1,1,1};
+ambient[]={0.81568629,0.78431374,0.54901963,1};
+diffuse[]={0.81568629,0.78431374,0.54901963,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={0.5650003,0.56999999,0.56500065,1};
-specularPower=20.300003;
+specular[]={0.1,0.1,0.1,1};
+specularPower=80;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="BP_Smot\MinerS_helmet\data\miner_nohq.paa";
+	texture="Survivalists_Mods\gear\containers\data\leatherpouchsmall_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="#(argb,8,8,3)color(0.5,0.5,0.5,0.5,DT)";
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
+	texture="Survivalists_Mods\gear\containers\data\leatherpouchsmall_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="BP_Smot\MinerS_helmet\data\miner_smdi.paa";
+	texture="dz\characters\backpacks\data\leathersack_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,32,128,1)fresnel(1.45,0.55)";
+	texture="#(ai,64,64,1)fresnel(1.92,1.05)";
 	uvSource="none";
 };
 class Stage7

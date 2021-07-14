@@ -5,6 +5,8 @@ modded class ActionConstructor
 		super.RegisterActions(actions);
     
 		actions.Insert(ActionToggleMuteTransmitter);
+
+		actions.Insert(ActionSRPConstruct);
   
 	}
 };

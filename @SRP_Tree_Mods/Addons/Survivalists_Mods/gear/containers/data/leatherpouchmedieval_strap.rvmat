@@ -1,14 +1,14 @@
-ambient[]={1,1,1,1};
-diffuse[]={1,1,1,1};
+ambient[]={0.81568629,0.78431374,0.54901963,1};
+diffuse[]={0.81568629,0.78431374,0.54901963,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={1,1,1,1};
-specularPower=100;
+specular[]={0.1,0.1,0.1,1};
+specularPower=80;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="BP_Smot\k6_3\data\Body_nohq.paa";
+	texture="Survivalists_Mods\gear\containers\data\leatherpouchmedieval_strap_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="#(argb,8,8,3)color(0.5,0.5,0.5,0.5,DT)";
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
+	texture="Survivalists_Mods\gear\containers\data\leatherpouchmedieval_strap_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="BP_Smot\k6_3\data\Glass_smdi.paa";
+	texture="dz\characters\backpacks\data\leathersack_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,12 +68,12 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,64,64,1)fresnelGlass(1.7)";
+	texture="#(ai,64,64,1)fresnel(1.92,1.05)";
 	uvSource="none";
 };
 class Stage7
 {
-	texture="dz\data\data\env_co.paa";
+	texture="dz\data\data\env_land_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{

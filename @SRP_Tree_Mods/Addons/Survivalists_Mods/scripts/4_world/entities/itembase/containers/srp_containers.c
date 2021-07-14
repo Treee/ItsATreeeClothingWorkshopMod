@@ -52,6 +52,7 @@ class SRP_StreetLightMedium_Wood extends SRP_Container_Base{};
 class SRP_StreetLightMedium extends SRP_Container_Base{};
 class SRP_Carpet extends SRP_Container_Base{};
 class SRP_CarpetRug extends SRP_Container_Base{};
+class SRP_BedsideTable extends SRP_Container_Base {};
 
 class SRP_MilitaryCase extends Barrel_ColorBase
 {
@@ -140,7 +141,7 @@ class SRP_Openable_Container extends Barrel_ColorBase
   }
 };
 
-class SRP_BedsideTable extends SRP_Openable_Container {};
+class SRP_BedsideTableMetal extends SRP_Openable_Container {};
 
 class SRP_WoodenBox_Locked extends SRP_Openable_Container
 {

@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Characters",
-      "DZ_Characters_Pants"
+      "DZ_Characters_Pants",
+      "Survivalists_Mods"
 		};
 	};
 };
@@ -22,6 +23,8 @@ class CfgVehicles
   class PrisonUniformPants;
   class CargoPants_ColorBase;
   class NBCPantsBase;
+
+  //-------------------------------------BASE GAME REtextures
 
 	class SRP_ParamedicPants_Black: ParamedicPants_ColorBase  // Medic_P_black
 	{

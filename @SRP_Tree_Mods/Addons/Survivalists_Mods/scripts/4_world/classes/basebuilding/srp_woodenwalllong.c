@@ -1,42 +1,61 @@
-class SRP_WoodenWallLong extends Fence
-{	
+class SRP_WoodenWallLong extends BaseBuildingBase
+{
 	void SRP_WoodenWallLong(){}
 	
-	override string GetConstructionKitType()
+  override string GetConstructionKitType()
 	{
 		return "SRP_WoodenWallLong_Kit";
 	}
+
+  override vector GetKitSpawnPosition()
+	{
+		// if ( MemoryPointExists( "kit_spawn_position" ) )
+		// {
+		// 	vector position;
+		// 	position = GetMemoryPointPos( "kit_spawn_position" );
+			
+		// 	return ModelToWorld( position );
+		// }		
+		return GetPosition();
+	}
 	
-	//--- BUILD EVENTS
+	override bool CanDisplayAttachmentCategory( string category_name )
+	{
+    // If there is a GUIInventoryAttachmentsProps called Base and the base has not been constructed yet.
+		if ( category_name == "Base" && !HasBase() )
+			return true;
+		else
+			return false;
+	}
+
+
+  	//--- BUILD EVENTS
 	//CONSTRUCTION EVENTS
 	override void OnPartBuiltServer( notnull Man player, string part_name, int action_id )
 	{
-		ConstructionPart constrution_part = GetConstruction().GetConstructionPart( part_name );
+		//ConstructionPart constrution_part = GetConstruction().GetConstructionPart( part_name );
 		
-		//check base state
-		if ( constrution_part.IsBase() )
-		{
-			SetBaseState( true );			
-			//hide hologram
-			SetAnimationPhase( "BP_Hologram", 1 );
-		}	
 		super.OnPartBuiltServer( player, part_name, action_id );
+		
+		//update visuals (server)
+		UpdateVisuals();
 	}
 	
-	override bool CanReceiveAttachment( EntityAI attachment, int slotId )
-  {    
-    return true;
-  }
-
-	// override void OnPartDestroyedServer( Man player, string part_name, int action_id, bool destroyed_by_connected_part = false )
-	// {
-	// 	super.OnPartDestroyedServer( player, part_name, action_id );
+	override void OnPartDismantledServer( notnull Man player, string part_name, int action_id )
+	{
+		ConstructionPart constrution_part = GetConstruction().GetConstructionPart( part_name );
 		
-	// 	//check gate state
-	// 	ConstructionPart constrution_part = GetConstruction().GetConstructionPart( part_name );
+		super.OnPartDismantledServer( player, part_name, action_id );
 		
-	// 	SetGateState( GATE_STATE_NONE );
-	// 	//update visuals (server)
-	// 	UpdateVisuals();
-	// }
+		//update visuals (server)
+		UpdateVisuals();
+	}
+	
+	override void OnPartDestroyedServer( Man player, string part_name, int action_id, bool destroyed_by_connected_part = false )
+	{
+		super.OnPartDestroyedServer( player, part_name, action_id );
+		
+		//update visuals (server)
+		UpdateVisuals();
+	}
 }

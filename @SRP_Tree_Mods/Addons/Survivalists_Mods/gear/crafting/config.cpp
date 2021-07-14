@@ -322,17 +322,4 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_GorkaHelmetVisor_K6: GorkaHelmetVisor  // K6_3lmetVisor
-	{
-		scope=2;
-		displayName="K6 Gorka Helmet Visor";
-		model="Survivalists_Mods\gear\crafting\k6_3Glass.p3d";
-	};
-	class SRP_GorkaHelmetVisor_K6Open: GorkaHelmetVisor  // K6_3lmetVisor1
-	{
-		scope=2;
-		displayName="K6 Gorka Helmet Visor Open";
-		model="Survivalists_Mods\gear\crafting\k6_3Glass1.p3d";
-	};
 };

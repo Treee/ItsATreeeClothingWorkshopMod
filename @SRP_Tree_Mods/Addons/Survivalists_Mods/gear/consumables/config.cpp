@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-			"DZ_Gear_Consumables"
+			"DZ_Gear_Consumables",
+      "Survivalists_Mods"
 		};
 	};
 };

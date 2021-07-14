@@ -16,6 +16,8 @@ class CfgVehicles
 {
   class Container_Base;
   class SmallProtectorCase;
+  class PlateCarrierPouches;
+
   class SRP_KitBase;
   
   //-------------------------------------- BASE GAME OVERRIDE
@@ -534,7 +536,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Bedside Table";
 		descriptionShort="Convenient and roomy cabinet. Almost not stained with blood.";
-		model="Survivalists_Mods\gear\containers\Tumba.p3d";
+		model="Survivalists_Mods\gear\containers\bedsidetable.p3d";
 		attachments[]=
 		{
 			"Vest",
@@ -561,11 +563,135 @@ class CfgVehicles
 		allowOwnedCargoManipulation=1;
 		hiddenSelections[]=
 		{
-			"zbytek"
+			"stand" // will need to define in model.cfg if you want this to be actually retextureable (prevents other from blatently retexturing our assets)
 		};
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\containers\data\CL.paa"
+			"Survivalists_Mods\gear\containers\data\bedsidetable_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\containers\data\bedsidetable.rvmat"
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={10,12};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Base
+			{
+				name="belongings";
+				description="";
+				attachmentSlots[]=
+				{
+					"Back",
+					"Body",
+					"Legs",
+					"no",
+					"Pistol",
+					"Shoulder"
+				};
+				icon="cat_common_cargo";
+			};
+			class Accessories
+			{
+				name="Other";
+				description="";
+				attachmentSlots[]=
+				{
+					"Feet",
+					"Headgear",
+					"Vest",
+					"Gloves",
+					"Hips"
+				};
+				icon="body";
+			};
+			class Lamp
+			{
+				name="Lamp";
+				description="";
+				attachmentSlots[]=
+				{
+					"BP_gas_lamp"
+				};
+				icon="gascanister";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_BedsideTableMetal_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Metal Bedside Table Kit";
+		descriptionShort="A Metal Bedside Table Kit";
+	};
+
+  class SRP_BedsideTableMetal: Container_Base  // new
+	{
+		scope=2;
+		displayName="Metal Bedside Table";
+		descriptionShort="Convenient and roomy cabinet. Almost not stained with blood.";
+		model="Survivalists_Mods\gear\containers\bedsidetablemetal.p3d";
+		attachments[]=
+		{
+			"Vest",
+			"Back",
+			"Headgear",
+			"Legs",
+			"Body",
+			"no",
+			"Pistol",
+			"Shoulder",
+			"Gloves",
+			"Feet",
+			"Hips",
+			"tripWireAttachment",
+			"BP_gas_lamp"
+		};
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=1000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		hiddenSelections[]=
+		{
+			"stand"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\bedsidetablemetal_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\containers\data\bedsidetablemetal.rvmat"
 		};
 		class Cargo
 		{
@@ -617,22 +743,8 @@ class CfgVehicles
 		};
 		class AnimationSources
 		{
-			class Lid1
-			{
-				source="user";
-				component="Doors1";
-				initPhase=1;
-				initOpened=0.1;
-				animPeriod=0.1;
-			};
-			class Lid2
-			{
-				source="user";
-				component="Doors1";
-				initPhase=0;
-				initOpened=0.1;
-				animPeriod=0.1;
-			};
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
 		};
 		class AnimEvents
 		{
@@ -777,5 +889,95 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+
+  class SRP_LeatherPouch_Default: PlateCarrierPouches  // new
+	{
+		scope=2;
+    displayName="Leather Pouch";
+    descriptionShort="A leather pouch that holds items."
+		model="Survivalists_Mods\gear\containers\leatherpouch.p3d";
+    inventorySlot[]=
+		{
+			"VestPouch"
+		};
+    itemSize[]={3,3};
+		itemsCargoSize[]={3,3};
+    repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		allowOwnedCargoManipulation=1;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\leatherpouch_co.paa",
+		};
+    hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\containers\data\leatherpouch.rvmat",
+    };
+	};
+
+  class SRP_LeatherPouch_Medieval: PlateCarrierPouches  // new
+	{
+		scope=2;
+    displayName="Medieval Leather Pouch";
+    descriptionShort="A medieval leather pouch that holds items."
+		model="Survivalists_Mods\gear\containers\leatherpouchmedieval.p3d";
+    inventorySlot[]=
+		{
+			"VestPouch"
+		};
+    itemSize[]={4,4};
+		itemsCargoSize[]={4,4};
+    repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		allowOwnedCargoManipulation=1;
+    hiddenSelections[]=
+		{
+			"pouch",
+      "strap"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\leatherpouchmedieval_pouch_co.paa",
+			"Survivalists_Mods\gear\containers\data\leatherpouchmedieval_strap_co.paa",
+		};
+    hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\containers\data\leatherpouchmedieval_pouch.rvmat",
+			"Survivalists_Mods\gear\containers\data\leatherpouchmedieval_strap.rvmat",
+    };
+	};
+
+  class SRP_LeatherPouch_Small: PlateCarrierPouches  // new
+	{
+		scope=2;
+    displayName="Small Leather Pouch";
+    descriptionShort="A small leather pouch that holds items."
+		model="Survivalists_Mods\gear\containers\leatherpouchsmall.p3d";
+    inventorySlot[]=
+		{
+			"VestPouch"
+		};
+    itemSize[]={3,3};
+		itemsCargoSize[]={3,3};
+    repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		allowOwnedCargoManipulation=1;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\leatherpouchsmall_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\containers\data\leatherpouchsmall.rvmat"
+    };
 	};
 };

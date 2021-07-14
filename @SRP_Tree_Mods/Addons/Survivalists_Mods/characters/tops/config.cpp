@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Characters",
-      "DZ_Characters_Tops"
+      "DZ_Characters_Tops",
+      "Survivalists_Mods"
 		};
 	};
 };
@@ -28,6 +29,8 @@ class CfgVehicles
   class TrackSuitJacket_ColorBase;
   class ParamedicJacket_ColorBase;
   class PoliceJacketOrel;
+
+  //----------------------------------- BASE GAME RETEXTURES
 
   class SRP_TShirt_Mendel: TShirt_ColorBase  // BP2_tshirt_Mendel
 	{

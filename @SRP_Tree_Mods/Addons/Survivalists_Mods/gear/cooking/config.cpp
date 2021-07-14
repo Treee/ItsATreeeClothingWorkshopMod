@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Gear_Cooking"
+      "DZ_Gear_Cooking",
+      "Survivalists_Mods"
 		};
 	};
 };
@@ -78,22 +79,4 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Pot_Compact: Pot // BP1_Cotelok
-	{
-		scope=2;
-		displayName="Compact Cooking Pot";
-		descriptionShort="The army bowler hat is popular with tourists as a compact, functional tool for preparing food in nature.";
-		model="Survivalists_Mods\gear\cooking\Mess.p3d";
-		stackedRandom=0;
-		canBeDigged=1;
-		allowOwnedCargoManipulation=1;
-		varLiquidTypeInit=512;
-		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256)";
-		destroyOnEmpty=0;
-		varQuantityDestroyOnMin=0;
-		varQuantityInit=0;
-		varQuantityMin=0;
-		varQuantityMax=2000;
-		varTemperatureMax=200;
-	};
 };

@@ -41,51 +41,9 @@ class CfgVehicles
 		allowOwnedCargoManipulation=1;
 	};
 
-  //--------------------------------- CUSTOM STUFF
-  
-  class SRP_HuntingPouch_Small: Container_Base  // BP_HuntingCarman
-	{
-		scope=2;
-		displayName="Small Pouch";
-		descriptionShort="A small bag with convenient fittings, can be attatched to some bags instead of a canteen.";
-		model="Survivalists_Mods\characters\backpacks\carman.p3d";
-		weight=130;
-		itemSize[]={2,3};
-		itemsCargoSize[]={2,3};
-		inventorySlot[]=
-		{
-			"Belt_Left",
-			"carman1",
-			"carman2"
-		};
-		allowOwnedCargoManipulation=1;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\huntingpack.paa"
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=150;
-					healthLevels[]=
-					{
-            {1.01,{	"Survivalists_Mods\characters\backpacks\huntingpack.rvmat"}},
-            {0.69999999,{	"Survivalists_Mods\characters\backpacks\huntingpack.rvmat"}},
-            {0.5,{	"Survivalists_Mods\characters\backpacks\huntingpack_damaged.rvmat"}},
-            {0.30000001,{	"Survivalists_Mods\characters\backpacks\huntingpack_damaged.rvmat"}},
-            {0.0099999998,{	"Survivalists_Mods\characters\backpacks\huntingpack_destroyed.rvmat"}}
-					};
-				};
-			};
-		};
-	};
+
+
+  //------------------------------------ BASE GAME Retextures
 
   class SRP_HuntingBag_Black: HuntingBag  // BP1_HuntingBag_black
 	{
@@ -119,75 +77,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\hunting_gorka.paa"
 		};
 	};
-  class SRP_HuntingBag_Kvadratniyrykzak: HuntingBag  // BP_Kvadratniyrykzak
-	{
-		scope=2;
-		displayName="Compact Assault Backpack";
-		descriptionShort="If you are looking for a small bag in which you can put everything you need, but do not want to load yourself with a bulky backpack.";
-		model="Survivalists_Mods\characters\backpacks\Kvadrat_g.p3d";
-		repairableWithKits[]={5,3};
-		repairCosts[]={30,25};
-		soundAttType="Outdoor";
-		attachments[]=
-		{
-			"Chemlight",
-			"WalkieTalkie"
-		};
-		hiddenSelections[]=
-		{
-			"zbytek",
-			"camomale",
-			"camoground"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\AF_06_D.paa",
-			"Survivalists_Mods\characters\backpacks\data\AF_06_D.paa",
-			"Survivalists_Mods\characters\backpacks\data\AF_06_D.paa"
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Mods\characters\backpacks\data\Kvadrat_m.p3d";
-			female="Survivalists_Mods\characters\backpacks\data\Kvadrat_m.p3d";
-		};
-	};
-  class SRP_HuntingBag_Hunt: HuntingBag  // BP_Huntbackpack
-	{
-		scope=2;
-		model="Survivalists_Mods\characters\backpacks\huntingpack_g.p3d";
-		attachments[]=
-		{
-			"carman1",
-			"BPAxe",
-			"Belt_Back",
-			"carman2"
-		};
-		itemsCargoSize[]={8,8};
-		soundAttType="Outdoor";
-		class ClothingTypes
-		{
-			male="Survivalists_Mods\characters\backpacks\huntingpack_m.p3d";
-			female="Survivalists_Mods\characters\backpacks\huntingpack_f.p3d";
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=300;
-					healthLevels[]=
-					{
-						{1.01,{	"Survivalists_Mods\characters\backpacks\data\huntingpack.rvmat"}},
-            {0.69999999,{	"Survivalists_Mods\characters\backpacks\data\huntingpack.rvmat"}},
-            {0.5,{	"Survivalists_Mods\characters\backpacks\data\huntingpack_damaged.rvmat"}},
-            {0.30000001,{	"Survivalists_Mods\characters\backpacks\data\huntingpack_damaged.rvmat"}},
-            {0.0099999998,{	"Survivalists_Mods\characters\backpacks\data\huntingpack_destroyed.rvmat"}}
-					};
-				};
-			};
-		};
-	};
+
   class SRP_CourierBag_Black: CourierBag  // BP1_CourierBag
 	{
 		scope=2;
@@ -200,7 +90,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_MountainBag_Black: MountainBag_ColorBase  // BP1_MountainBag_Black
+  class SRP_MountainBag_Black: MountainBag_ColorBase  // BP1_MountainBag_Black
 	{
 		scope=2;
     hiddenSelections[]=
@@ -273,190 +163,71 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_TaloonBag_Sidor: TaloonBag_ColorBase  // BP_Sidor
-	{
-		scope=2;
-		displayName="Sidor";
-		descriptionShort="An old war backpack";
-		model="Survivalists_Mods\characters\backpacks\sidor_g.p3d";
-		attachments[]=
-		{
-			"Chemlight",
-			"binocular",
-			"Hatchet",
-			"WalkieTalkie"
-		};
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\ranetc_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_co.paa"
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Mods\characters\backpacks\sidor_m.p3d";
-			female="Survivalists_Mods\characters\backpacks\sidor_f.p3d";
-		};		
-	};
+  //--------------------------------- CUSTOM STUFF
 
-	class SRP_TaloonBag_Sidor1: TaloonBag_ColorBase  // BP_SidorBl
+  class SRP_LeatherBackpack_Default: HuntingBag  // BP_Huntbackpack
 	{
 		scope=2;
-		displayName="Sidor";
-		descriptionShort="An old war backpack";
-		model="Survivalists_Mods\characters\backpacks\sidor_g.p3d";
+		model="Survivalists_Mods\characters\backpacks\leatherbackpack_g.p3d";
+		itemsCargoSize[]={8,8};
 		attachments[]=
 		{
-			"Chemlight",
-			"binocular",
-			"Hatchet",
-			"WalkieTalkie"
-		};
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\ranetc_b_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_b_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_b_co.paa"
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Mods\characters\backpacks\sidor_m.p3d";
-			female="Survivalists_Mods\characters\backpacks\sidor_f.p3d";
-		};		
-	};
-
-	class SRP_TaloonBag_TacBag: TaloonBag_ColorBase  // BP_TacBag
-	{
-		scope=2;
-		displayName="$STR_cfgVehicles_AssaultBag_ColorBase0";
-		descriptionShort="$STR_cfgVehicles_AssaultBag_ColorBase1";
-		model="Survivalists_Mods\characters\backpacks\TacBag_g.p3d";
-		attachments[]=
-		{
-			"Chemlight",
-			"binocular",
-			"Hatchet",
-			"WalkieTalkie"
-		};
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};		
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\ranetc_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_co.paa"
-		};
-    class ClothingTypes
-		{
-			male="Survivalists_Mods\characters\backpacks\TacBag_m.p3d";
-			female="Survivalists_Mods\characters\backpacks\TacBag_f.p3d";
-		};
-	};
-
-	class SRP_TaloonBag_TacBag1: TaloonBag_ColorBase  // BP_TacBagBl
-	{
-		scope=2;
-		model="Survivalists_Mods\characters\backpacks\TacBag_g.p3d";
-		attachments[]=
-		{
-			"Chemlight",
-			"binocular",
-			"Hatchet",
-			"WalkieTalkie"
-		};
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\ranetc_b_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_b_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_b_co.paa"
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Mods\characters\backpacks\TacBag_m.p3d";
-			female="Survivalists_Mods\characters\backpacks\TacBag_f.p3d";
-		};
-	};
-
-	class SRP_TaloonBag_RanecMedical: TaloonBag_ColorBase  // BP_ranec_med
-	{
-		scope=2;
-    descriptionShort="A lightly coloured medical satchel";
-		model="Survivalists_Mods\characters\backpacks\ranec_g.p3d";
-		rotationFlags=0;
-		itemSize[]={5,5};
-		itemsCargoSize[]={9,7};
-		attachments[]=
-		{
-			"firstaidkit",
-			"WalkieTalkie",
-      "binocular",
+			"carman1",
+			"BPAxe",
+			"Belt_Back",
+			"carman2"
 		};
     hiddenSelections[]=
 		{
 			"zbytek",
-			"camoground"
+      "cloth",
+      "pouches",
+      "straps"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\backpacks\data\ranetc_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_co.paa"
+			"Survivalists_Mods\characters\backpacks\data\leatherbackpack_base_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\leatherbackpack_cloth_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\leatherbackpack_pouches_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\leatherbackpack_straps_co.paa"
 		};
-    class ClothingTypes
+    hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\characters\backpacks\data\leatherbackpack.rvmat",
+			"Survivalists_Mods\characters\backpacks\data\leatherbackpack_cloth.rvmat",
+			"Survivalists_Mods\characters\backpacks\data\leatherbackpack_pouches.rvmat",
+			"Survivalists_Mods\characters\backpacks\data\leatherbackpack_straps.rvmat"
+    };
+		class ClothingTypes
 		{
-			male="Survivalists_Mods\characters\backpacks\ranec_m.p3d";
-			female="Survivalists_Mods\characters\backpacks\ranec_m.p3d";
+			male="Survivalists_Mods\characters\backpacks\leatherbackpack_m.p3d";
+			female="Survivalists_Mods\characters\backpacks\leatherbackpack_m.p3d";
 		};
 	};
 
-	class SRP_TaloonBag_RanecBlack: TaloonBag_ColorBase  // BP_ranec_bl
+  class SRP_SurvivalBackpack_Default: HuntingBag  // new
 	{
 		scope=2;
-		descriptionShort="A Medical satchel";
-		model="Survivalists_Mods\characters\backpacks\ranec_bl_g.p3d";
-    rotationFlags=0;
-		itemSize[]={5,5};
-		itemsCargoSize[]={9,7};
-		attachments[]=
+		model="Survivalists_Mods\characters\backpacks\survivalbackpack_g.p3d";
+		itemsCargoSize[]={8,8};
+    hiddenSelections[]=
 		{
-			"binocular",
-			"walkietalkie"
-		};
-		hiddenSelections[]=
-		{
-			"zbytek",
-			"camoground"
+			"zbytek"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\backpacks\data\ranetc_b_co.paa",
-			"Survivalists_Mods\characters\backpacks\data\ranetc_b_co.paa"
+			"Survivalists_Mods\characters\backpacks\data\survivalbackpack_co.paa",
 		};
-    class ClothingTypes
+    hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\characters\backpacks\data\survivalbackpack.rvmat",
+    };
+		class ClothingTypes
 		{
-			male="Survivalists_Mods\characters\backpacks\ranec_m.p3d";
-			female="Survivalists_Mods\characters\backpacks\ranec_m.p3d";
+			male="Survivalists_Mods\characters\backpacks\survivalbackpack_m.p3d";
+			female="Survivalists_Mods\characters\backpacks\survivalbackpack_m.p3d";
 		};
 	};
+  
+
 };

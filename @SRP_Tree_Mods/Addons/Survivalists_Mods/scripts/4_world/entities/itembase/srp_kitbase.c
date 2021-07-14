@@ -136,6 +136,7 @@ class SRP_KitBase extends ItemBase
 // If you add a new kit, add it to this list so it gets the right stuff
 //craftable kits
 class SRP_BedsideTable_Kit extends SRP_KitBase {}
+class SRP_BedsideTableMetal_Kit extends SRP_KitBase {}
 class SRP_WoodenShelf_Kit extends SRP_KitBase {}
 class SRP_GunShelf_Kit extends SRP_KitBase {}
 class SRP_Potbelly_Stove_Kit extends SRP_KitBase {}
@@ -145,6 +146,26 @@ class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase {}
 class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase {}
 class SRP_StreetLightMedium_Kit extends SRP_KitBase {}
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase {}
+
+// non craftable kits
+class SRP_FridgeBig_Kit extends SRP_KitBase {}
+class SRP_PostBox_Kit extends SRP_KitBase {}
+class SRP_PostBoxBig_Kit extends SRP_KitBase {}
+class SRP_MilitaryCase_Kit extends SRP_KitBase {}
+class SRP_GChair_Kit extends SRP_KitBase {}
+class SRP_GChairHigh_Kit extends SRP_KitBase {}
+class SRP_GOutdoorTable_Kit extends SRP_KitBase {}
+class SRP_GOutdoorTableUmbrella_Kit extends SRP_KitBase {}
+class SRP_Umbrella_Kit extends SRP_KitBase {}
+class SRP_AdvancedWorkbench_Kit extends SRP_KitBase {}
+class SRP_Carpet_Kit extends SRP_KitBase {}
+class SRP_CarpetRug_Kit extends SRP_KitBase {}
+
+
+
+
+
+
 
 // Base Building
 class SRP_SmallDoor_Kit extends SRP_KitBase {
@@ -185,43 +206,43 @@ class SRP_SmallDoor_Kit extends SRP_KitBase {
 		SetIsPlaceSound(true);
 	}
 }
-class SRP_WindowBarricade_Kit extends SRP_KitBase {
-  override bool IsBasebuildingKit()
-	{
-		return true;
-	}
+// class SRP_WindowBarricade_Kit extends SRP_KitBase {
+//   override bool IsBasebuildingKit()
+// 	{
+// 		return true;
+// 	}
 	
-	override bool HasProxyParts()
-	{
-		return true;
-	}
-  override bool DisassembleOnLastDetach()
-	{
-		return true;
-	}
-  override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
-	{
-		// super.OnPlacementComplete(player, position, orientation);
-		if (GetGame().IsServer())
-		{
-      string kitType = this.GetType();
-      if (kitType != "") {
-        // int trimLength = kitType.Length() - 4; // -4 for _Kit removal
-        kitType = kitType.Substring(0, kitType.Length() - 4);
-      }
-			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(kitType, position, ECE_PLACE_ON_SURFACE));
-      PlayerBase playerBase = PlayerBase.Cast( player );
-      position = playerBase.GetLocalProjectionPosition();
-		  orientation = playerBase.GetLocalProjectionOrientation();
+// 	override bool HasProxyParts()
+// 	{
+// 		return true;
+// 	}
+//   override bool DisassembleOnLastDetach()
+// 	{
+// 		return true;
+// 	}
+//   override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
+// 	{
+// 		// super.OnPlacementComplete(player, position, orientation);
+// 		if (GetGame().IsServer())
+// 		{
+//       string kitType = this.GetType();
+//       if (kitType != "") {
+//         // int trimLength = kitType.Length() - 4; // -4 for _Kit removal
+//         kitType = kitType.Substring(0, kitType.Length() - 4);
+//       }
+// 			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(kitType, position, ECE_PLACE_ON_SURFACE));
+//       PlayerBase playerBase = PlayerBase.Cast( player );
+//       position = playerBase.GetLocalProjectionPosition();
+// 		  orientation = playerBase.GetLocalProjectionOrientation();
 
-			kitItem.SetPosition(position);
-			kitItem.SetOrientation(orientation);
-			kitItem.SetAnimationPhase( "BP_Hologram", 0 );
-		}
+// 			kitItem.SetPosition(position);
+// 			kitItem.SetOrientation(orientation);
+// 			kitItem.SetAnimationPhase( "BP_Hologram", 0 );
+// 		}
 
-		SetIsPlaceSound(true);
-	}
-}
+// 		SetIsPlaceSound(true);
+// 	}
+// }
 class SRP_WideFence_Kit extends SRP_KitBase {
   override bool IsBasebuildingKit()
 	{
@@ -265,6 +286,11 @@ class SRP_WoodenWallLong_Kit extends SRP_KitBase {
 	{
 		return true;
 	}
+
+  override bool IsDeployable()
+	{
+		return true;
+	}
 	
 	override bool HasProxyParts()
 	{
@@ -274,6 +300,7 @@ class SRP_WoodenWallLong_Kit extends SRP_KitBase {
 	{
 		return true;
 	}
+  
   override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
 	{
 		// super.OnPlacementComplete(player, position, orientation);
@@ -285,29 +312,58 @@ class SRP_WoodenWallLong_Kit extends SRP_KitBase {
         kitType = kitType.Substring(0, kitType.Length() - 4);
       }
 			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(kitType, position, ECE_PLACE_ON_SURFACE));
-      PlayerBase playerBase = PlayerBase.Cast( player );
-      position = playerBase.GetLocalProjectionPosition();
-		  orientation = playerBase.GetLocalProjectionOrientation();
 
 			kitItem.SetPosition(position);
 			kitItem.SetOrientation(orientation);
-			kitItem.SetAnimationPhase( "BP_Hologram", 0 );
+			kitItem.SetAnimationPhase( "hologram", 0 );
+			//make the kit invisible, so it can be destroyed from deploy UA when action ends
+			HideAllSelections();
 		}
 
 		SetIsPlaceSound(true);
 	}
 }
 
-// non craftable kits
-class SRP_FridgeBig_Kit extends SRP_KitBase {}
-class SRP_PostBox_Kit extends SRP_KitBase {}
-class SRP_PostBoxBig_Kit extends SRP_KitBase {}
-class SRP_MilitaryCase_Kit extends SRP_KitBase {}
-class SRP_GChair_Kit extends SRP_KitBase {}
-class SRP_GChairHigh_Kit extends SRP_KitBase {}
-class SRP_GOutdoorTable_Kit extends SRP_KitBase {}
-class SRP_GOutdoorTableUmbrella_Kit extends SRP_KitBase {}
-class SRP_Umbrella_Kit extends SRP_KitBase {}
-class SRP_AdvancedWorkbench_Kit extends SRP_KitBase {}
-class SRP_Carpet_Kit extends SRP_KitBase {}
-class SRP_CarpetRug_Kit extends SRP_KitBase {}
+
+
+
+class SRP_ConstructionKitBase extends KitBase
+{
+  string GetKitItemName()
+  {
+    string kitType = this.GetType();
+    if (kitType != "") {
+      // int trimLength = kitType.Length() - 4; // -4 for _Kit removal
+      kitType = kitType.Substring(0, kitType.Length() - 4);
+    }
+    return kitType;
+  }
+
+  override void OnPlacementComplete( Man player, vector position = "0 0 0", vector orientation = "0 0 0" )
+	{
+		super.OnPlacementComplete( player, position, orientation );
+		
+		if ( GetGame().IsServer() )
+		{
+			//Create fence
+      string constructionType = GetKitItemName();
+      Print("construction type "+ constructionType);
+			EntityAI buildableItem = EntityAI.Cast( GetGame().CreateObjectEx( constructionType, GetPosition(), ECE_PLACE_ON_SURFACE ) );
+			buildableItem.SetPosition( position );
+			buildableItem.SetOrientation( orientation );
+			
+			//make the kit invisible, so it can be destroyed from deploy UA when action ends
+			HideAllSelections();
+			
+			SetIsDeploySound( true );
+		}	
+	}
+};
+
+
+class SRP_WindowBarricade_Kit extends SRP_ConstructionKitBase {
+  override bool DoPlacingHeightCheck()
+	{
+		return false;
+	}
+};

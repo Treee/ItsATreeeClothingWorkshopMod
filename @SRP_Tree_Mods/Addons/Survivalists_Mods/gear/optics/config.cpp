@@ -9,7 +9,8 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Pistols",
-      "DZ_Gear_Optics"
+      "DZ_Gear_Optics",
+      "Survivalists_Mods"
 		};
 	};
 };

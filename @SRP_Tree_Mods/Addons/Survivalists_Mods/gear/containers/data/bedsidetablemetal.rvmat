@@ -1,18 +1,14 @@
-class StageTI
-{
-	texture="dz\characters\backpacks\data\backpacks_ti_ca.paa";
-};
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
-forcedDiffuse[]={0,0,0,0};
+forcedDiffuse[]={0,0,0,1};
 emmisive[]={0,0,0,1};
-specular[]={0.3547647,0.34876469,0.20392157,1};
-specularPower=27.5;
+specular[]={0.65098041,0.65098041,0.65098041,1};
+specularPower=100;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\characters\backpacks\data\huntingpack_nohq.paa";
+	texture="Survivalists_Mods\gear\containers\data\bedsidetablemetal_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -24,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,0.5,DT)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
+	texture="Survivalists_Mods\gear\containers\data\bedsidetablemetal_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\characters\backpacks\data\huntingpack_smdi.paa";
+	texture="Survivalists_Mods\gear\containers\data\bedsidetablemetal_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -72,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,64,64,1)fresnel(1.92,1.05)";
+	texture="#(ai,32,128,1)fresnel(1.61,0.22)";
 	uvSource="none";
 };
 class Stage7

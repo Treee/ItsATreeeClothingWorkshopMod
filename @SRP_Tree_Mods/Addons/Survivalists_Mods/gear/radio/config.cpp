@@ -10,6 +10,7 @@ class CfgPatches
 			"DZ_Data",
       "DZ_Radio",
       "CarRadioGlow", // PsychoDayZRadio      
+      "Survivalists_Mods"
 		};
 	};
 };

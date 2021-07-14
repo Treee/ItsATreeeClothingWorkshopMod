@@ -10,13 +10,6 @@ class CfgMods
 		dependencies[] = {"Game","World","Mission"};
 		class defs
 		{
-      // class imageSets
-      // {
-      //   files[]=
-      //   {
-      //     "Survivalists_Mods/gui/images/srp_tree_iconset.imageset"
-      //   };
-      // };
 			class gameScriptModule
 			{
 				value = "";
@@ -57,9 +50,9 @@ class CfgPatches
 
 class CfgVehicles
 {
-  class Container_Base;
+  class Inventory_Base;
 
-  class SRP_KitBase: Container_Base //SRP_dec_base
+  class SRP_KitBase: Inventory_Base //SRP_dec_base
 	{
 		scope=0; //0 means cannot be directly spawned
 		displayName="Kit Box";

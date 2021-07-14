@@ -9,13 +9,16 @@ class CfgPatches
 		{
 			"DZ_Characters",
 			"DZ_Gear_Optics",
-      "DZ_Characters_Glasses"
+      "DZ_Characters_Glasses",
+      "Survivalists_Mods"
 		};
 	};
 };
 class CfgVehicles
 {
   class NVGoggles;
+
+  // ------------------------------ Custom Stuff
 
   class SRP_QuadNVGs: NVGoggles
 	{

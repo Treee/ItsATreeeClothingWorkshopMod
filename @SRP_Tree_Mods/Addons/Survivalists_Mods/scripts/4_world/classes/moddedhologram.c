@@ -3,29 +3,22 @@ modded class Hologram
   string ProjectionBasedOnParent()
 	{
     EntityAI itemInHands = m_Player.GetHumanInventory().GetEntityInHands();	
-    Print("ProjectionBasedOnParent Pre if");
     if (itemInHands.IsInherited(SRP_KitBase))
     {
       SRP_KitBase srpKit = SRP_KitBase.Cast(itemInHands);
-      Print("Is SRP Kit " + srpKit);
       return srpKit.GetKitItemName();
     }
-    Print("Nope get fucked");
 		return super.ProjectionBasedOnParent();
 	}
 
 	EntityAI PlaceEntity( EntityAI entity_for_placing )
 	{
     // If we are placing our kits
-    Print("PlaceEntity Pre if");
 		if ( entity_for_placing.IsInherited( SRP_KitBase ))
 		{
       //If the kit we are placing can affect pathing
-      Print("Is SRP Kit" + entity_for_placing);
-
       if( entity_for_placing.CanAffectPathgraph() )
       { 
-        Print("Can impact navmesh");
         // update the navemesh
         entity_for_placing.SetAffectPathgraph( true, false );            
         GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(GetGame().UpdatePathgraphRegionByObject, 100, false, entity_for_placing);
@@ -43,7 +36,6 @@ modded class Hologram
     // if the item in our hands is our kit
     if (itemInHands.IsInherited(SRP_KitBase))
     {
-      Print("Ignoring collision, our kit");
       // ignore collision
       SetIsColliding(false);
       return;

@@ -61,6 +61,21 @@ SRP_WideFence
 
 "Wooden barrel and box" (https://skfb.ly/6Z78B) by teinaaVa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Backpack(mid-poly and subdivision)" (https://skfb.ly/6UtR7) by andree is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Survival Backpack" (https://skfb.ly/6WBpu) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
+"Old small leather pouch" (https://skfb.ly/6XoEQ) by workwalker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"medieval bag" (https://skfb.ly/6RKAE) by Cyril43 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Leather Pouch" (https://skfb.ly/6pJ6C) by FlukierJupiter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Victorian Bedside Table" (https://skfb.ly/6WMSW) by Jamie McFarlane is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Bedside Table" (https://skfb.ly/YYPR) by HASSAN is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+# Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 

@@ -8,7 +8,8 @@
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Gear_Drinks"
+      "DZ_Gear_Drinks",
+      "Survivalists_Mods"
 		};
 	};
 };

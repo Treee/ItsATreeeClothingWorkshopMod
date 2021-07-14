@@ -8,20 +8,24 @@
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Gear_Food"
+      "DZ_Gear_Food",
+      "Survivalists_Mods"
 		};
 	};
 };
 class CfgVehicles
 {
   class SmallGuts;
-  class BoxCerealCrunchin;
   class PowderedMilk;
   class Edible_Base;
   class TacticalBaconCan;
   class TacticalBaconCan_Opened;
   class Marmalade;
   // ----------------------  BASE GAME OVERRIDES
+  class BoxCerealCrunchin: Edible_Base
+  {
+    canBeSplit=1;
+  };
 
   class Lard: Edible_Base
 	{

@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Characters",
-      "DZ_Characters_Gloves"
+      "DZ_Characters_Gloves",
+      "Survivalists_Mods"
 		};
 	};
 };
@@ -16,6 +17,8 @@ class CfgVehicles
 {
   class NBCGloves_ColorBase;
   class OMNOGloves_ColorBase;
+
+  // ------------------------ Base Game Retextures
 
 	class SRP_NBCGloves_Blue: NBCGloves_ColorBase  // BP2_NBCGlovesBlue
 	{

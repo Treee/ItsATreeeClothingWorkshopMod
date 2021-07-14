@@ -1,3 +1,14 @@
+modded class Hammer
+{
+	override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionAttach);
+		AddAction(ActionDetach);
+    AddAction(ActionSRPConstruct);
+	}
+}
+
 modded class WoodAxe
 {
 	override void SetActions()
