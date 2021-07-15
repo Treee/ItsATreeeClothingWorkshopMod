@@ -20,33 +20,6 @@ class CfgVehicles
   class JungleBoots_ColorBase;
   class NBCBootsBase;
 
-	// class SRP_Wellies_Valenki: Wellies_ColorBase  // BP_valenki
-	// {
-	// 	scope=2;
-  //   color="valenki";
-	// 	displayName="Wellington Boots";
-	// 	descriptionShort="A pair of wellies";
-	// 	model="Survivalists_Mods\characters\shoes\valenki_g.p3d";
-	// 	heatIsolation=0.80000001;
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};
-  //   hiddenSelectionsTextures[]=
-	// 	{
-	// 		"Survivalists_Mods\characters\shoes\data\valenki.paa",
-	// 		"Survivalists_Mods\characters\shoes\data\valenki.paa",
-	// 		"Survivalists_Mods\characters\shoes\data\valenki.paa"
-	// 	};
-	// 	class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\shoes\valenki_m.p3d";
-	// 		female="Survivalists_Mods\characters\shoes\valenki_f.p3d";
-	// 	};
-	// };
-
 	class SRP_DenShoes_White: AthleticShoes_ColorBase // Denshoe
 	{
 		scope=2;

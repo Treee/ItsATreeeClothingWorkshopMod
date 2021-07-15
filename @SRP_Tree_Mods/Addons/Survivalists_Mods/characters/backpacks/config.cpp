@@ -22,6 +22,7 @@ class CfgVehicles
   class MountainBag_ColorBase;
   class AssaultBag_ColorBase;
   class TaloonBag_ColorBase;
+  class AliceBag_ColorBase;
 
 
   //--------------------------------- MOD OVERRIDE
@@ -226,6 +227,42 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\backpacks\survivalbackpack_m.p3d";
 			female="Survivalists_Mods\characters\backpacks\survivalbackpack_m.p3d";
+		};
+	};
+
+  class SRP_SlingBackpack_Default: AliceBag_ColorBase  // new
+	{
+		scope=2;
+		model="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_g.p3d";
+		itemsCargoSize[]={8,8};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack_tan_co.paa",
+		};
+    hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack.rvmat",
+    };
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_m.p3d";
+			female="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_m.p3d";
+		};
+	};
+  class SRP_SlingBackpack_Red: SRP_SlingBackpack_Default  // new
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack_red_co.paa",
 		};
 	};
   

@@ -75,6 +75,12 @@ SRP_WideFence
 
 "Bedside Table" (https://skfb.ly/YYPR) by HASSAN is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Satchel" (https://skfb.ly/6DoRr) by BillieBones is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Apocalypse: Geared Survivor [Female]" (https://skfb.ly/6RWoC) by CatBYTE Studio is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+"Police Belt" (https://skfb.ly/6U7p7) by supervigy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
