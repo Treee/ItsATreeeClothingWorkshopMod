@@ -45,6 +45,64 @@ class CfgVehicles
 
 
   // ----------------------------------------- Custom Stuff
+  class SRP_BaseballCap_Tinfoil: BaseballCap_ColorBase  // new
+	{
+		scope=2;
+		color="Tinfoil";
+    model="Survivalists_Mods\characters\headgear\tinfoilhat_g.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\tinfoilhat_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\tinfoilhat.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\tinfoilhat_m.p3d";
+			female="Survivalists_Mods\characters\headgear\tinfoilhat_m.p3d";
+		};
+	};
+
+  class SRP_MinerHelmet: Headtorch_ColorBase
+  {
+		scope=2;
+    displayName="Miner Helmet";
+    descriptionShort="A miner helmet. Has a light and looks sturdy.";
+    model="Survivalists_Mods\characters\headgear\minerhelmet_g.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek",
+			"lamp",			
+			"bulb",
+			"reflector",
+			"glass",
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\minerhelmet_co.paa",
+			"Survivalists_Mods\characters\headgear\data\minerhelmet_light_co.paa",
+			"dz\gear\tools\data\flashlight_glass.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\minerhelmet.rvmat",
+      "Survivalists_Mods\characters\headgear\data\minerhelmet_light.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\minerhelmet_m.p3d";
+			female="Survivalists_Mods\characters\headgear\minerhelmet_m.p3d";
+		};
+  }
+
+
+  // BASE GAME RETEXTURES
 
   class SRP_BallisticHelmet_Rain: BaseballCap_ColorBase  // BP2_Rainhelm
 	{
@@ -618,329 +676,5 @@ class CfgVehicles
 		};
 	};
 
-
-
-
-
-
-
-
-  // --------------------------------------- Custome
-  // class SRP_MilitaryBeret_BlackStar: MilitaryBeret_ColorBase  // Beret_Black_star
-	// {
-	// 	scope=2;
-	// 	model="Survivalists_Mods\characters\headgear\beret_blStar_g.p3d";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"\DZ\characters\headgear\data\militaryberet_black_co.paa",
-	// 		"\DZ\characters\headgear\data\militaryberet_black_co.paa",
-	// 		"\DZ\characters\headgear\data\militaryberet_black_co.paa"
-	// 	};
-  //   class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\headgear\beret_blStar_m.p3d";
-	// 		female="Survivalists_Mods\characters\headgear\beret_blStar_m.p3d";
-	// 	};
-	// };
-	// class SRP_MilitaryBeret_RedStar: MilitaryBeret_ColorBase  // Beret_Red_star
-	// {
-	// 	scope=2;
-	// 	model="\DZ\characters\headgear\militaryberet_chdkz_g.p3d";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"\DZ\characters\headgear\data\MilitaryBeret_red_co.paa",
-	// 		"\DZ\characters\headgear\data\MilitaryBeret_red_co.paa",
-	// 		"\DZ\characters\headgear\data\MilitaryBeret_red_co.paa"
-	// 	};
-  //   class ClothingTypes
-	// 	{
-	// 		male="\DZ\characters\headgear\militaryberet_chdkz_m.p3d";
-	// 		female="\DZ\characters\headgear\militaryberet_chdkz_f.p3d";
-	// 	};
-	// };
-	// class SRP_MilitaryBeret_Ranger: MilitaryBeret_ColorBase  // Beret_green_ranger
-	// {
-	// 	scope=2;
-	// 	model="Survivalists_Mods\characters\headgear\beret_ranger_g.p3d";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"\DZ\characters\headgear\data\militaryberet_green_co.paa",
-	// 		"\DZ\characters\headgear\data\militaryberet_green_co.paa",
-	// 		"\DZ\characters\headgear\data\militaryberet_green_co.paa"
-	// 	};
-  //   class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\headgear\beret_ranger_m.p3d";
-	// 		female="Survivalists_Mods\characters\headgear\beret_ranger_m.p3d";
-	// 	};
-	// };
-
-  // class SRP_MilitaryBeret_NZ: MilitaryBeret_ColorBase  // Beret_green_NZ
-	// {
-	// 	scope=2;
-	// 	visibilityModifier=0.89999998;
-	// 	model="Survivalists_Mods\characters\headgear\beret_nz_g.p3d";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};		
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"\DZ\characters\headgear\data\militaryberet_green_co.paa",
-	// 		"\DZ\characters\headgear\data\militaryberet_green_co.paa",
-	// 		"\DZ\characters\headgear\data\militaryberet_green_co.paa"
-	// 	};
-  //   class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\headgear\beret_nz_m.p3d";
-	// 		female="Survivalists_Mods\characters\headgear\beret_nz_m.p3d";
-	// 	};
-	// };
-	// class SRP_MilitaryBeret_BlackCDF: MilitaryBeret_ColorBase  // Beret_CDF_black
-	// {
-	// 	scope=2;
-	// 	visibilityModifier=0.89999998;
-	// 	model="\DZ\characters\headgear\MilitaryBeret_CDF_g.p3d";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};		
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"\DZ\characters\headgear\data\MilitaryBeret_black_co.paa",
-	// 		"\DZ\characters\headgear\data\MilitaryBeret_black_co.paa",
-	// 		"\DZ\characters\headgear\data\MilitaryBeret_black_co.paa"
-	// 	};
-  //   class ClothingTypes
-	// 	{
-	// 		male="\DZ\characters\headgear\MilitaryBeret_CDF_m.p3d";
-	// 		female="\DZ\characters\headgear\MilitaryBeret_CDF_f.p3d";
-	// 	};
-	// };
-	// class SRP_MilitaryBeret_Tan: MilitaryBeret_ColorBase  // Beret_TAN
-	// {
-	// 	scope=2;
-	// 	model="Survivalists_Mods\characters\headgear\beret_tan_g.p3d";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};		
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"\DZ\characters\headgear\data\militaryberet_tan_co.paa",
-	// 		"\DZ\characters\headgear\data\militaryberet_tan_co.paa",
-	// 		"\DZ\characters\headgear\data\militaryberet_tan_co.paa"
-	// 	};
-  //   class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\headgear\beret_tan_m.p3d";
-	// 		female="Survivalists_Mods\characters\headgear\beret_tan_m.p3d";
-	// 	};
-	// };
-
-	// class SRP_Ushanka_Star: Ushanka_ColorBase  // BP_Ushanka_star
-	// {
-	// 	scope=2;
-	// 	model="Survivalists_Mods\characters\headgear\ushankaStar_g.p3d";
-	// 	attachments[]=
-	// 	{
-	// 		"pistolFlashlight"
-	// 	};
-  //   hiddenSelections[]=
-	// 	{
-	// 		"head",
-  //     "zbytek"
-	// 	};
-  //   hiddenSelectionsTextures[]=
-	// 	{
-	// 		"\DZ\characters\headgear\data\Ushanka_black_co.paa",
-	// 		"\DZ\characters\headgear\data\Ushanka_black_co.paa"
-	// 	};
-	// 	class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\headgear\ushankaStar_m.p3d";
-	// 		female="Survivalists_Mods\characters\headgear\ushankaStar_m.p3d";
-	// 	};
-	// };
-
-  // class SRP_Headtorch_MinerHelmet: Headtorch_ColorBase  // BP_MinerHelmet
-	// {
-	// 	scope=2;
-	// 	displayName="Miner Helmet";
-	// 	descriptionShort="Protective miner's helmet, equipped with a battery-powered lighting device.";
-	// 	model="Survivalists_Mods\characters\headgear\miner_g.p3d";
-	// 	rotationFlags=16;
-	// 	itemSize[]={3,2};
-	// 	absorbency=0;
-  //   repairableWithKits[]={5,7};
-	// 	repairCosts[]={30,25};
-	// 	headSelectionsToHide[]=
-	// 	{
-	// 		"Clipping_baseballcap"
-	// 	};
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"zbytek"
-	// 	};
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"Survivalists_Mods\characters\headgear\data\miner_co.paa"
-	// 	};
-	// 	hiddenSelectionsMaterials[]=
-	// 	{
-	// 		"Survivalists_Mods\characters\headgear\data\miner.rvmat"
-	// 	};
-	// 	class DamageSystem
-	// 	{
-	// 		class GlobalHealth
-	// 		{
-	// 			class Health
-	// 			{
-	// 				hitpoints=100;
-	// 				healthLevels[]=
-	// 				{
-	// 					{1.01,{"DZ\characters\headgear\data\HeadTorch.rvmat"}},
-  //           {0.69999999,{"DZ\characters\headgear\data\HeadTorch.rvmat"}},
-  //           {0.5,{"DZ\characters\headgear\data\HeadTorch_damage.rvmat"}},
-  //           {0.30000001,{"DZ\characters\headgear\data\HeadTorch_damage.rvmat"}},
-  //           {0.0099999998,{"DZ\characters\headgear\data\HeadTorch_destruct.rvmat"}}
-	// 				};
-	// 			};
-	// 		};
-	// 		class GlobalArmor
-	// 		{
-	// 			class Projectile
-	// 			{
-	// 				class Health
-	// 				{
-	// 					damage=0.5;
-	// 				};
-	// 				class Blood
-	// 				{
-	// 					damage=0;
-	// 				};
-	// 				class Shock
-	// 				{
-	// 					damage=0.5;
-	// 				};
-	// 			};
-	// 			class Melee
-	// 			{
-	// 				class Health
-	// 				{
-	// 					damage=0.75;
-	// 				};
-	// 				class Blood
-	// 				{
-	// 					damage=0;
-	// 				};
-	// 				class Shock
-	// 				{
-	// 					damage=0.75;
-	// 				};
-	// 			};
-	// 			class Infected
-	// 			{
-	// 				class Health
-	// 				{
-	// 					damage=0.75;
-	// 				};
-	// 				class Blood
-	// 				{
-	// 					damage=0;
-	// 				};
-	// 				class Shock
-	// 				{
-	// 					damage=0.75;
-	// 				};
-	// 			};
-	// 			class FragGrenade
-	// 			{
-	// 				class Health
-	// 				{
-	// 					damage=0.5;
-	// 				};
-	// 				class Blood
-	// 				{
-	// 					damage=0;
-	// 				};
-	// 				class Shock
-	// 				{
-	// 					damage=0.5;
-	// 				};
-	// 			};
-	// 		};
-	// 	};
-	// 	class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\headgear\miner.p3d";
-	// 		female="Survivalists_Mods\characters\headgear\miner.p3d";
-	// 	};
-	// 	class Reflectors
-	// 	{
-	// 		class Beam
-	// 		{
-	// 			color[]={0.1,0.1,0.1,1};
-	// 			brightness=8;
-	// 			radius=30;
-	// 			angle=130;
-	// 			angleInnerRatio=0.25;
-	// 			dayLight=1;
-	// 			flareAngleBias=40;
-	// 			position="beamStart";
-	// 			direction="beamEnd";
-	// 			hitpoint="bulb";
-	// 			selection="bulb";
-	// 		};
-	// 	};
-	// };
-
-	// class BP_Poncho: Ushanka_ColorBase
-	// {
-	// 	scope=2;
-	// 	displayName="Poncho";
-	// 	descriptionShort="";
-	// 	model="\BP_Smot\poncho\poncho.p3d";
-	// 	rotationFlags=16;
-	// 	weight=120;
-	// 	itemSize[]={3,2};
-	// 	absorbency=0;
-	// 	heatIsolation=0.89999998;
-	// 	repairableWithKits[]={5,2};
-	// 	repairCosts[]={30,25};
-	// 	headSelectionsToHide[]=
-	// 	{
-	// 		"Clipping_ushanka"
-	// 	};
-	// 	class ClothingTypes
-	// 	{
-	// 		male="\BP_Smot\poncho\poncho.p3d";
-	// 		female="\BP_Smot\poncho\poncho.p3d";
-	// 	};
-	// };
 
 };

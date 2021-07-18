@@ -79,6 +79,36 @@ class CfgVehicles
 		};
   };
 
+  class SRP_TacticalBelt: MilitaryBelt // new
+  {
+		scope=2;
+		displayName="Tactical Belt";
+		descriptionShort="A Tactical belt with versatile attachments";
+		model="Survivalists_Mods\characters\belts\tacticalbelt_g.p3d";
+    attachments[]=
+		{
+			"Pistol"
+		};
+    itemsCargoSize[]={5,4};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\tacticalbelt_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\belts\data\tacticalbelt.rvmat"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\tacticalbelt_m.p3d";
+			female="Survivalists_Mods\characters\belts\tacticalbelt_m.p3d";
+		};
+  };
+
   // class SRP_bandoleer: MilitaryBelt // BP_bandoleer
 	// {
 	// 	scope=2;

@@ -161,43 +161,6 @@ class CfgVehicles
 	};
 
   // ----------------------  CUSTOM STUFF
-  // class SRP_HighCapacityVest_Jan: HighCapacityVest_ColorBase  // BP_Jan_Vest
-	// {
-	// 	scope=2;
-	// 	model="Survivalists_Mods\characters\vests\Janekrazgruz_g.p3d";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoMale"
-	// 	};
-	// 	hiddenSelectionsTextures[]=
-	// 	{
-	// 		"Survivalists_Mods\characters\vests\Janekvest_co.paa"
-	// 	};
-	// 	class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\vests\Janekrazgruz_m.p3d";
-	// 		female="Survivalists_Mods\characters\vests\Janekrazgruz_f.p3d";
-	// 	};
-	// };
 
-  // class SRP_PlateCarrierVest_Razgruz: PlateCarrierVest  // BP2_Razgruz
-	// {
-	// 	scope=2;
-	// 	attachments[]=
-	// 	{
-	// 		"no"
-	// 	};
-	// 	model="Survivalists_Mods\characters\vests\data\razgruz_g.p3d";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};
-	// 	class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\vests\data\razgruz_m.p3d";
-	// 		female="Survivalists_Mods\characters\vests\data\razgruz_f.p3d";
-	// 	};
-	// };
+
 };

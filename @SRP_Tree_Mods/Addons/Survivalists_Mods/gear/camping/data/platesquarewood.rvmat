@@ -45,7 +45,7 @@ class Stage3
 class Stage4
 {
 	texture="dz\gear\consumables\data\pile_of_planks_as.paa";
-	uvSource="tex1";
+	uvSource="tex";
 	class uvTransform
 	{
 		aside[]={1,0,0};

@@ -81,6 +81,18 @@ SRP_WideFence
 
 "Police Belt" (https://skfb.ly/6U7p7) by supervigy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Tactical Belt "Falcon B1"" (https://skfb.ly/6WEBS) by Mayess is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Tinfoil Hat" (https://skfb.ly/6yMWN) by tamzidfarhan is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
+"Miners helmet with carbide lamp" (https://skfb.ly/6VoLK) by Shannen Art is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"PPM-88 Gas mask" (https://skfb.ly/6SFoC) by J_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Brewster Body Shield" (https://skfb.ly/6sBtH) by UC San Diego - Digital Media Lab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Juggernaut Body No Helmet" (https://skfb.ly/6F9Hx) by tahiroruc is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -88,3 +100,6 @@ SRP_WideFence
 "Wooden Barricades" (https://skfb.ly/6wz9T) by ANRUVAL_3D_MODELS is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Wood walls" (https://skfb.ly/onEru) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+(maybe if i can get textures working)
+"Headwear" (https://skfb.ly/6RODS) by noyou is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
