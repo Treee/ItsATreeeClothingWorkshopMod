@@ -163,4 +163,110 @@ class CfgVehicles
   // ----------------------  CUSTOM STUFF
 
 
+  class SRP_Brewstershield: PlateCarrierVest
+	{
+		scope=2;
+		displayName="Brewster Shield";
+		descriptionShort="A crude body shield proven to be effective in World War 1.";
+		model="Survivalists_Mods\characters\vests\brewstershield_g.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\brewstershield_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\vests\data\brewstershield.rvmat"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\vests\brewstershield_m.p3d";
+			female="Survivalists_Mods\characters\vests\brewstershield_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=350;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Mods\characters\vests\data\brewstershield.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\vests\data\brewstershield.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\vests\data\brewstershield_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\vests\data\brewstershield_damage.rvmat"}},
+            {0,	{	"Survivalists_Mods\characters\vests\data\brewstershield_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
+				};
+			};
+		};
+	};
+
 };

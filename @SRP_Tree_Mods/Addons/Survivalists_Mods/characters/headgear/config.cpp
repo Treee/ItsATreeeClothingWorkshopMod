@@ -25,6 +25,7 @@ class CfgVehicles
   class Switchable_Base;
   class PrisonerCap;
   class Clothing;
+  class BallisticHelmet_ColorBase;
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class DarkMotoHelmet_ColorBase: Clothing
@@ -98,6 +99,112 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\headgear\minerhelmet_m.p3d";
 			female="Survivalists_Mods\characters\headgear\minerhelmet_m.p3d";
+		};
+  }
+
+  class SRP_Brewsterhelm: BallisticHelmet_ColorBase
+  {
+		scope=2;
+    displayName="Brewster Helmet";
+    descriptionShort="A brewster helmet. Proven effective in combat.";
+    model="Survivalists_Mods\characters\headgear\brewsterhelm_g.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\brewstershield_co.paa" // using the shield texture. just grab that as a retexture
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\vests\data\brewsterhelm.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\brewsterhelm_m.p3d";
+			female="Survivalists_Mods\characters\headgear\brewsterhelm_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=350;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm_damage.rvmat"}},
+            {0,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
+				};
+			};
 		};
   }
 

@@ -4,7 +4,7 @@ modded class PluginRecipesManagerBase extends PluginBase
 	{
 		super.RegisterRecipies();				// Calling base RegisterRecipies()
 		// UnregisterRecipe("CraftStoneKnife");	// Removing an existing recipe
-    
+   
     // Crafting
     //---------Kits
 		RegisterRecipe(new Craft_SRP_BedsideTable_Kit);
