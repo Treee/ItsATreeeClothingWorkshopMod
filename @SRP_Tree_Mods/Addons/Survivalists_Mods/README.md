@@ -93,6 +93,8 @@ SRP_WideFence
 
 "Juggernaut Body No Helmet" (https://skfb.ly/6F9Hx) by tahiroruc is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Walkie-Talkie" (https://skfb.ly/o6pAQ) by ludwigbey is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

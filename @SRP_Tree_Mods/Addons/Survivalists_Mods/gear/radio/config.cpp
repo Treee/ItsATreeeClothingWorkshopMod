@@ -224,6 +224,27 @@ class CfgVehicles
 	};
 
   //----------------------------------- Custom Stuff
+
+  class SRP_PersonalRadio_Handheld: PersonalRadio  // new
+  {
+		scope=2;
+		displayName="Hand Held Radio";
+		descriptionShort="A small radio that fits in your hand.";
+    model="Survivalists_Mods\gear\radio\handheldradio.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradio_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradio.rvmat"
+		};
+  }
+
 	class SRPRadio_CassetteTape_Base: Cassette
 	{
 		displayName="Cassette Tape";
