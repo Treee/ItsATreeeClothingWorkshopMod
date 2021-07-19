@@ -23,19 +23,23 @@ class CfgVehicles
   class Morphine;
   class ClearSyringe;
   class InjectionVial;
-  
+
+  class SRP_KitBase;
+
+
+  //------------------------------------------- CUSTOM STUFF
+
   class SRP_BloodPressureMonitor: Inventory_Base // BP_Monitor_pressure
 	{
 		scope=2;
 		displayName="Blood Pressure Monitor";
 		descriptionShort="This medical equipmment is used to monitor blood pressure.";
-		model="Survivalists_Mods\gear\medical\P_monitor.p3d";
-		attachments[]=
-		{
-			"BP_gas_lamp"
-		};
-    physLayer="item_large";
+		model="Survivalists_Mods\gear\medical\bloodpressuremonitor.p3d";
+		slopeTolerance=0.30000001;
 		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
 		itemSize[]={4,9};
 		class Cargo
 		{
@@ -43,27 +47,46 @@ class CfgVehicles
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
-		class GUIInventoryAttachmentsProps
+	};
+
+  class SRP_MedicalCurtains_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Medical Curtains Kit";
+		descriptionShort="A Medical Curtain Kit";
+	};
+
+  class SRP_MedicalCurtains: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Medical Curtains";
+		descriptionShort="This medical equipmment is used to provide some sort of privacy in a medical ward.";
+		model="Survivalists_Mods\gear\medical\medicalcurtains.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={4,9};
+		class Cargo
 		{
-			class Att
-			{
-				name="";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
-			};
+			itemsCargoSize[]={4,4};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
 		};
 	};
 
-	class SRP_MedicalBed: Inventory_Base //BP_medical_bed
+	class SRP_MedicalBed_Frame: Inventory_Base //BP_medical_bed
 	{
 		scope=2;
-		displayName="Medical Bed";
-		descriptionShort="A bed normally found in a medical facility.";
-		model="Survivalists_Mods\gear\medical\medical_bed.p3d";
+		displayName="Medical Bed Frame";
+		descriptionShort="A bed frame normally found in a medical facility.";
+		model="Survivalists_Mods\gear\medical\medicalbedframe.p3d";
 		slopeTolerance=0.30000001;
 		weight=1000;
 		itemBehaviour=0;
@@ -72,11 +95,47 @@ class CfgVehicles
 		itemSize[]={10,15};
 		class Cargo
 		{
-			itemsCargoSize[]={4,4};
+			itemsCargoSize[]={6,3};
 		};
 	};
 
-  // ---------------------------- Medicine
+  class SRP_MedicalBed_Mattress: Inventory_Base //new
+	{
+		scope=2;
+		displayName="Medical Bed Mattress";
+		descriptionShort="A bed normally found in a medical facility.";
+		model="Survivalists_Mods\gear\medical\medicalbed.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={10,15};
+		class Cargo
+		{
+			itemsCargoSize[]={3,2};
+		};
+	};
+
+  class SRP_MedicalBed_Wood: Inventory_Base //new
+	{
+		scope=2;
+		displayName="Wooden Medical Bed";
+		descriptionShort="A wood medical bed normally found in a medical facility.";
+		model="Survivalists_Mods\gear\medical\medicalbed_wood.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={10,15};
+		class Cargo
+		{
+			itemsCargoSize[]={2,3};
+		};
+	};
+
+  // ---------------------------- CUSTOM MEDICINE
   class SRP_Dexamphetamine: PainkillerTablets  // BP_dexamphetamine
 	{
 		scope=2;
@@ -282,7 +341,7 @@ class CfgVehicles
 	};
 
 
-  //--------------------------------- Syringe Injections
+  //--------------------------------- CUSTOM SYRINE INJECTIONS
 	class SRP_FullSyringe_Base: ClearSyringe  // BP_BloodSyringe_Base
 	{
 		scope=0; // dont spawn

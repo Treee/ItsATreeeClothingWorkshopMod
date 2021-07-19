@@ -160,6 +160,7 @@ class SRP_Umbrella_Kit extends SRP_KitBase {}
 class SRP_AdvancedWorkbench_Kit extends SRP_KitBase {}
 class SRP_Carpet_Kit extends SRP_KitBase {}
 class SRP_CarpetRug_Kit extends SRP_KitBase {}
+class SRP_MedicalCurtains_Kit extends SRP_KitBase {}
 
 
 

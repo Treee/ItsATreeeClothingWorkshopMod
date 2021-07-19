@@ -1,4 +1,8 @@
-class SRP_WoodenBox_Cask extends DeployableContainer_Base 
+/// if you add a new container, make sure you add it to this list so it gets the right stuff
+
+// These are containers that have no kits and are able to be picked up
+// without dismantling
+class SRP_DeployableContainer_Base extends DeployableContainer_Base
 {
   override bool CanPutInCargo( EntityAI parent )
 	{
@@ -10,7 +14,17 @@ class SRP_WoodenBox_Cask extends DeployableContainer_Base
   }
 };
 
-class SRP_Container_Base extends Container_Base
+class SRP_WoodenBox_Cask extends SRP_DeployableContainer_Base{};
+class SRP_BedsideTable extends SRP_DeployableContainer_Base{};
+class SRP_MedicalBed_Frame extends SRP_DeployableContainer_Base{};
+class SRP_MedicalBed_Mattress extends SRP_DeployableContainer_Base{};
+class SRP_MedicalBed_Wood extends SRP_DeployableContainer_Base{};
+class SRP_BloodPressureMonitor extends SRP_DeployableContainer_Base{};
+class SRP_Carpet extends SRP_DeployableContainer_Base{};
+class SRP_CarpetRug extends SRP_DeployableContainer_Base{};
+
+// These are containers that cannot be put in your hands and need to be dismantled to re-place
+class SRP_Container_Base extends DeployableContainer_Base
 {
 	override void SetActions()
 	{
@@ -30,8 +44,6 @@ class SRP_Container_Base extends Container_Base
     return false;
   }
 }
-// if you add a new container, make sure you add it to this list so it gets the right stuff
-
 class SRP_FridgeBig extends SRP_Container_Base{};
 class SRP_GunShelf extends SRP_Container_Base{};
 class SRP_WoodenShelf extends SRP_Container_Base{};
@@ -50,9 +62,6 @@ class SRP_StreetLightLarge extends SRP_Container_Base{};
 class SRP_StreetLightLarge_Metal extends SRP_Container_Base{};
 class SRP_StreetLightMedium_Wood extends SRP_Container_Base{};
 class SRP_StreetLightMedium extends SRP_Container_Base{};
-class SRP_Carpet extends SRP_Container_Base{};
-class SRP_CarpetRug extends SRP_Container_Base{};
-class SRP_BedsideTable extends SRP_Container_Base {};
 
 class SRP_MilitaryCase extends Barrel_ColorBase
 {
@@ -141,7 +150,7 @@ class SRP_Openable_Container extends Barrel_ColorBase
   }
 };
 
-class SRP_BedsideTableMetal extends SRP_Openable_Container {};
+class SRP_BedsideTableMetal extends SRP_Openable_Container{};
 
 class SRP_WoodenBox_Locked extends SRP_Openable_Container
 {
@@ -167,3 +176,4 @@ class SRP_WoodenBox_Square extends SRP_Openable_Container
   }
 };
 
+class SRP_MedicalCurtains extends SRP_Openable_Container{};

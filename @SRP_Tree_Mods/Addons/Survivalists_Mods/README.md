@@ -91,9 +91,15 @@ SRP_WideFence
 
 "Brewster Body Shield" (https://skfb.ly/6sBtH) by UC San Diego - Digital Media Lab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Juggernaut Body No Helmet" (https://skfb.ly/6F9Hx) by tahiroruc is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
 "Walkie-Talkie" (https://skfb.ly/o6pAQ) by ludwigbey is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Bed" (https://skfb.ly/6UyKU) by Tolu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Stretcher" (https://skfb.ly/ono7t) by Odlab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Gourney - Hospital Bed" (https://skfb.ly/o6TPV) by meeww is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Bed Curtain and Vital Signs Monitor" (https://skfb.ly/6SCRx) by Ethan Cragun is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Wishlist
 
