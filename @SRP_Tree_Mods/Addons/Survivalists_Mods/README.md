@@ -101,6 +101,14 @@ SRP_WideFence
 
 "Bed Curtain and Vital Signs Monitor" (https://skfb.ly/6SCRx) by Ethan Cragun is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Brain" (https://skfb.ly/6SnKS) by spliter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Simple Candy Canes" (https://skfb.ly/6GNBO) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Candy Treasure Chest" (https://skfb.ly/6S7Zu) by Jay Topham is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Cans" (https://skfb.ly/6Xrvt) by tonygrinayde_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

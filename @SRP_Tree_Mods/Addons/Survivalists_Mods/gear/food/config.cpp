@@ -21,6 +21,8 @@ class CfgVehicles
   class TacticalBaconCan;
   class TacticalBaconCan_Opened;
   class Marmalade;
+  class Worm;
+
   // ----------------------  BASE GAME OVERRIDES
   class BoxCerealCrunchin: Edible_Base
   {
@@ -305,13 +307,81 @@ class CfgVehicles
 	};
 
   // ----------------------- CUSTOM STUFF
+  class SRP_CandyCane: Worm  // new
+	{
+		scope=2;
+		displayName="Candy Cane";
+		descriptionShort="A single candy cane";
+		model="Survivalists_Mods\gear\food\candycane.p3d";
+    rotationFlags=1;
+		weight=0;
+		itemSize[]={1,3};
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\candycane_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\food\data\candycane.rvmat"
+		};
+    class Nutrition
+		{
+			fullnessIndex=4;
+			energy=150;
+			water=50;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+		class Food{};
+	};
 
-	class SRP_BrainPiece: SmallGuts  // Bp_piece_of_brain
+  class SRP_CandyCane1: SRP_CandyCane  // new
+	{
+		scope=2;
+		displayName="Candy Cane";
+		descriptionShort="A single candy cane. Made from sugar.";
+		model="Survivalists_Mods\gear\food\candycane1.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\candycane1_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\food\data\candycane1.rvmat"
+		};
+	};
+
+	class SRP_Brain: SmallGuts  // new
+	{
+		scope=2;
+		displayName="Brain";
+		descriptionShort="A full sized brain.";
+		model="Survivalists_Mods\gear\food\srpbrain.p3d";
+    rotationFlags=1;
+		weight=0;
+		itemSize[]={2,2};
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+	};
+
+  class SRP_BrainPiece: Worm  // Bp_piece_of_brain
 	{
 		scope=2;
 		displayName="A piece of brain";
 		descriptionShort="A small chunk of a brain";
-		model="Survivalists_Mods\gear\food\brainS.p3d";
+		model="Survivalists_Mods\gear\food\srpbrainchunk.p3d";
 		rotationFlags=1;
 		weight=0;
 		itemSize[]={1,1};
@@ -319,6 +389,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=100;
 	};
+
 
 	class SRP_BoxCerealCrunchinBase: BoxCerealCrunchin // new
 	{
@@ -963,25 +1034,4 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_CandyCane: Marmalade
-	{
-		scope=2;
-		displayName="Candy Cane";
-		descriptionShort="A colorful cane of candy";
-		model="Survivalists_Mods\gear\food\s_candycane.p3d";
-		weight=0;
-		itemSize[]={1,2};
-		varQuantityInit=340;
-		varQuantityMin=0;
-		varQuantityMax=340;
-		absorbency=0.89999998;
-		class Nutrition
-		{
-			fullnessIndex=1.5;
-			energy=280;
-			water=30;
-			nutritionalIndex=1;
-			toxicity=0;
-		};
-	};
 };

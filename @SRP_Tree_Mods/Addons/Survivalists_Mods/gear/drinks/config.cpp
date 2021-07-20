@@ -91,7 +91,7 @@ class CfgVehicles
 
   class SRP_SodaCanBase: SodaCan_ColorBase  // BP1_Dri_Base
   {
-    scope=0;
+    scope=0; // scope 1 dont spawn in
 		hiddenSelections[]=
 		{
 			"camoGround"
@@ -424,4 +424,26 @@ class CfgVehicles
 			"Survivalists_Mods\gear\drinks\data\tonik_yagua.paa"
 		};
 	};
+
+  class SRP_SodaCanAKDigital: SRP_SodaCanBase  // new
+	{
+		scope=2;
+		displayName="AK/AR Digital";
+		descriptionShort="A caffinated drink!";
+		model="Survivalists_Mods\gear\drinks\cansmall.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\cansmall_akardigital_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\can.rvmat"
+    };
+	};
+
+
 };
