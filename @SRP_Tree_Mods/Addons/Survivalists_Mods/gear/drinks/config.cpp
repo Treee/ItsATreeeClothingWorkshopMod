@@ -241,6 +241,46 @@ class CfgVehicles
     };
 	};
 
+  class SRP_WineBottle: SRP_AlcoholBase  // new
+	{
+		scope=2;
+		displayName="Bottle of Wine";
+		descriptionShort="A bottle of wine. Fancy!";
+		model="Survivalists_Mods\gear\drinks\winebottle.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\winebottle_ca.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\winebottle.rvmat"
+    };
+	};
+
+  class SRP_VeggieEater: SRP_AlcoholBase  // new
+	{
+		scope=2;
+		displayName="Veggie Eater";
+		descriptionShort="A bottle of cheap vodka";
+		model="Survivalists_Mods\gear\drinks\bottlebeefeater.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\bottleliquor_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\bottleliquor.rvmat"
+    };
+	};
+
 	class SRP_PepsiBottle: SRP_WaterBottleBase  // BP1_bootle_pepsi
 	{
 		scope=2;

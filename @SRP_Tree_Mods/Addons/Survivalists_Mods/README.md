@@ -109,6 +109,8 @@ SRP_WideFence
 
 "Cans" (https://skfb.ly/6Xrvt) by tonygrinayde_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"20 Liquor bottles" (https://skfb.ly/6ACyS) by Yannick Deharo is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
