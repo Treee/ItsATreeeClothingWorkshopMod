@@ -445,5 +445,63 @@ class CfgVehicles
     };
 	};
 
+  class SRP_SodaCan_Slim_DeadBull: SRP_SodaCanBase  // new (slim can varient)
+	{
+		scope=2;
+		displayName="Dead Bull";
+		descriptionShort="A caffinated drink!";
+		model="Survivalists_Mods\gear\drinks\canslim.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canslim_deadbull_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\can.rvmat"
+    };
+	};
 
+  class SRP_SodaCan_Medium_FreshWater: SRP_SodaCanBase  // new (medium size can varient)
+	{
+		scope=2;
+		displayName="Whater H20";
+		descriptionShort="Canned water.";
+		model="Survivalists_Mods\gear\drinks\canmedium.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canmedium_notsofreshwater_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\can.rvmat"
+    };
+	};
+
+  class SRP_SodaCan_Large_Saltika: SRP_SodaCanBase  // new (large size can varient)
+	{
+		scope=2;
+		displayName="Saltika";
+		descriptionShort="Why is this so salty?";
+		model="Survivalists_Mods\gear\drinks\canlarge.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canlarge_saltika_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\can.rvmat"
+    };
+	};
 };
