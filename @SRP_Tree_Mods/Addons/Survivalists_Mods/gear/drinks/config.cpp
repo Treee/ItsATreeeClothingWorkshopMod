@@ -109,138 +109,6 @@ class CfgVehicles
 		};
   };
 
-	class SRP_AbsolutVodka: SRP_AlcoholBase  // BP1_Absolut
-	{
-		scope=2;
-		displayName="Absolut Vodka";
-		descriptionShort="A bottle of cheap russian vodka";
-		model="Survivalists_Mods\gear\drinks\absolut_vodka.p3d";
-    hiddenSelections[]=
-		{
-      "1",
-      "2",
-      "3",
-			"absolut_vodka",
-      "camo"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex1.paa",
-			"Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex2.paa",
-      "Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex1.paa",
-			"Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex2.paa",
-      "Survivalists_Mods\gear\drinks\data\Absolut_Vodka_tex1.paa",
-		};
-		hiddenSelectionsMaterials[]=
-    {
-      "Survivalists_Mods\gear\drinks\data\material_vodka.rvmat"
-    };
-	};
-
-	class SRP_JackDaniels: SRP_AlcoholBase  // BP1_Jack
-	{
-		scope=2;
-		displayName="Whiskey";
-		descriptionShort="A bottle of Jack Daniels whiskey";
-		model="Survivalists_Mods\gear\drinks\jack.p3d";
-    hiddenSelections[]=
-		{
-      "1",
-      "2"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\Jack_Daniel.paa",
-			"Survivalists_Mods\gear\drinks\data\Jack_Daniel.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-      "Survivalists_Mods\gear\drinks\data\Jack1.rvmat"
-    };
-	};
-
-	class SRP_Cognac: SRP_AlcoholBase  // BP1_martel
-	{
-		scope=2;
-		displayName="Cognac";
-		descriptionShort="A bottle of sweet smelling Cognac";
-		model="Survivalists_Mods\gear\drinks\martel.p3d";
-    hiddenSelections[]=
-		{
-      "2",
-      "new selection"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\Martel.paa",
-			"Survivalists_Mods\gear\drinks\data\Martel2.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-      "Survivalists_Mods\gear\drinks\data\Martel.rvmat"
-    };
-	};
-
-	class SRP_Champagne: SRP_AlcoholBase  // BP1_mondoro
-	{
-		scope=2;
-		displayName="Champagne";
-		descriptionShort="An old bottle of Champagne";
-		model="Survivalists_Mods\gear\drinks\mondoro.p3d";
-    hiddenSelections[]=
-		{
-      "2"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\Mondoro.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-      "Survivalists_Mods\gear\drinks\data\Mondoro.rvmat"
-    };
-  };
-
-	class SRP_Jagermeister: SRP_AlcoholBase  // BP1_Jagermeister
-	{
-		scope=2;
-		displayName="Jagermeister";
-		descriptionShort="A bottle of Jagermeister. It doesn't smell very good.";
-		model="Survivalists_Mods\gear\drinks\Jager.p3d";
-    hiddenSelections[]=
-		{
-      "camo"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\Jagermeister_tex.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-      "Survivalists_Mods\gear\drinks\data\Jagermeister.rvmat"
-    };
-	};
-
-	class SRP_Baileys: SRP_AlcoholBase  // BP1_baylis
-	{
-		scope=2;
-		displayName="Baileys";
-		descriptionShort="A bottle of Baileys Irish Cream liqeur";
-		model="Survivalists_Mods\gear\drinks\baylis.p3d";
-    hiddenSelections[]=
-		{
-      "camo"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\Baileys_tex1.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-      "Survivalists_Mods\gear\drinks\data\Botglass.rvmat"
-    };
-	};
-
   class SRP_WineBottle: SRP_AlcoholBase  // new
 	{
 		scope=2;
@@ -261,25 +129,6 @@ class CfgVehicles
     };
 	};
 
-  class SRP_VeggieEater: SRP_AlcoholBase  // new
-	{
-		scope=2;
-		displayName="Veggie Eater";
-		descriptionShort="A bottle of cheap vodka";
-		model="Survivalists_Mods\gear\drinks\bottlebeefeater.p3d";
-    hiddenSelections[]=
-		{
-      "zbytek"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\bottleliquor_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-      "Survivalists_Mods\gear\drinks\data\bottleliquor.rvmat"
-    };
-	};
 
 	class SRP_PepsiBottle: SRP_WaterBottleBase  // BP1_bootle_pepsi
 	{
@@ -542,6 +391,102 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]=
     {
       "Survivalists_Mods\gear\drinks\data\can.rvmat"
+    };
+	};
+
+  class SRP_SodaBottle_DoublTap: SRP_SodaCanBase  // new (bottle variant)
+	{
+		scope=2;
+		displayName="Doubl Tap";
+		descriptionShort="Will this make me shoot better?";
+		model="Survivalists_Mods\gear\drinks\beerbottle.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_doubletap_ca.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
+    };
+	};
+  class SRP_SodaBottle_Electric: SRP_SodaCanBase  // new (bottle variant)
+	{
+		scope=2;
+		displayName="Electric";
+		descriptionShort="Feel it in your fillings.";
+		model="Survivalists_Mods\gear\drinks\beerbottle.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_electric_ca.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
+    };
+	};
+  class SRP_SodaBottle_Juggernaut: SRP_SodaCanBase  // new (bottle variant)
+	{
+		scope=2;
+		displayName="Juggernaut";
+		descriptionShort="All powerful!!";
+		model="Survivalists_Mods\gear\drinks\beerbottle.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_jugger_ca.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
+    };
+	};
+  class SRP_SodaBottle_Reviver: SRP_SodaCanBase  // new (bottle variant)
+	{
+		scope=2;
+		displayName="Revival";
+		descriptionShort="Rejuvinate your thirst buds.";
+		model="Survivalists_Mods\gear\drinks\beerbottle.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_reviver_ca.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
+    };
+	};
+  class SRP_SodaBottle_Speedy: SRP_SodaCanBase  // new (bottle variant)
+	{
+		scope=2;
+		displayName="Speedy";
+		descriptionShort="Can't run away from diabetes forever.";
+		model="Survivalists_Mods\gear\drinks\beerbottle.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_speedy_ca.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
     };
 	};
 };
