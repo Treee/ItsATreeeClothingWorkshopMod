@@ -21,10 +21,9 @@ class CfgVehicles
 	{
 		inventorySlot="binocular";
 	};
-
-
+  
   // ------------------------------------------ Custom Stuff
-
+  
   class SRP_ItemOptics_CanScope: ItemOptics // SRP_cancog
 	{
 		scope=2;

@@ -578,7 +578,15 @@ class CfgVehicles
 		rotationFlags=2;
 		hiddenSelections[]=
 		{
-			"camoGround"
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_streetlight_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\s_streetlight.rvmat"
 		};
 		class DamageSystem
 		{
@@ -715,7 +723,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Street Light";
-		descriptionShort="This is a large street light which can be used to light up the streets";
+		descriptionShort="This is a medium street light which can be used to light up the streets";
 		model="Survivalists_Mods\gear\camping\SRP_StreetLightM.p3d";
 		attachments[]=
 		{
@@ -728,7 +736,15 @@ class CfgVehicles
 		rotationFlags=2;
 		hiddenSelections[]=
 		{
-			"camoGround"
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_streetlight_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\s_streetlight.rvmat"
 		};
 		class DamageSystem
 		{
