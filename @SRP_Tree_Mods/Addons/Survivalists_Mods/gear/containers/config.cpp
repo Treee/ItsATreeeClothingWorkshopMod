@@ -895,7 +895,7 @@ class CfgVehicles
 	{
 		scope=2;
     displayName="Leather Pouch";
-    descriptionShort="A leather pouch that holds items."
+    descriptionShort="A leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouch.p3d";
     inventorySlot[]=
 		{
@@ -924,7 +924,7 @@ class CfgVehicles
 	{
 		scope=2;
     displayName="Medieval Leather Pouch";
-    descriptionShort="A medieval leather pouch that holds items."
+    descriptionShort="A medieval leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouchmedieval.p3d";
     inventorySlot[]=
 		{
@@ -956,7 +956,7 @@ class CfgVehicles
 	{
 		scope=2;
     displayName="Small Leather Pouch";
-    descriptionShort="A small leather pouch that holds items."
+    descriptionShort="A small leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouchsmall.p3d";
     inventorySlot[]=
 		{

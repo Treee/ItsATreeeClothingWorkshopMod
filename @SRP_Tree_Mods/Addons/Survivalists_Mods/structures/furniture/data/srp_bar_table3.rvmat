@@ -4,8 +4,8 @@ forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
 specular[]={0,0,0,1};
 specularPower=0;
-PixelShaderID="NormalMapSpecularDIMap";
-VertexShaderID="NormalMap";
+PixelShaderID="Super";
+VertexShaderID="Super";
 class Stage1
 {
 	texture="s_furniture\data\Saloon\srp_bar_table3_nopox.paa";

@@ -5,7 +5,6 @@ modded class Hammer
 		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
-    AddAction(ActionSRPConstruct);
 	}
 }
 
