@@ -79,9 +79,9 @@ class CfgVehicles
 		armAction="Disarm";
 		stackedUnit="w";
 		quantityBar=1;
-		varQuantityInit=50;
+		varQuantityInit=200;
 		varQuantityMin=0;
-		varQuantityMax=50;
+		varQuantityMax=200;
 		varQuantityDestroyOnMin=0;
 		isMeleeWeapon=1;
 		itemSize[]={1,2};
