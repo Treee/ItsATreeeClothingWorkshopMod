@@ -20,166 +20,31 @@ class CfgVehicles
 
   // ------------------------------ Custom Stuff
 
-  class SRP_QuadNVGs: NVGoggles
-	{
-		scope=2;
-		displayName="Night Vision Goggles";
-		descriptionShort="$STR_CfgVehicles_NVGoggles1";
-		model="Survivalists_Mods\characters\glasses\SRP_QuadNVG.p3d";
-		simulation="itemoptics";
-		animClass="Binoculars";
-		inventorySlot[]=
-		{
-			"NVG"
-		};
-		itemSize[]={2,2};
-		weight=300;
-		rotationFlags=1;
-		class OpticsInfo
-		{
-			memoryPointCamera="eyeScope";
-			cameraDir="cameraDir";
-			modelOptics="-";
-			distanceZoomMin=500;
-			distanceZoomMax=500;
-			opticsZoomMin=0.52359998;
-			opticsZoomMax=0.52359998;
-			opticsZoomInit=0.52359998;
-		};
-		attachments[]=
-		{
-			"BatteryD"
-		};
-		NVOptic=1;
-		simpleHiddenSelections[]=
-		{
-			"hide"
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=100;
-					healthLevels[]=
-					{
-						{1,	{	"DZ\characters\glasses\data\NVG_Headstrap.rvmat"}},
-            {0.69999999,{	"DZ\characters\glasses\data\NVG_Headstrap.rvmat"}},
-            {0.5,	{	"DZ\characters\glasses\data\NVG_Headstrap_damage.rvmat"}},
-            {0.30000001,{	"DZ\characters\glasses\data\NVG_Headstrap_damage.rvmat"}},
-            {0,	{	"DZ\characters\glasses\data\NVG_Headstrap_destruct.rvmat"}}
-					};
-				};
-			};
-		};
-		repairableWithKits[]={5,7};
-		repairCosts[]={30,25};
-		class EnergyManager
-		{
-			hasIcon=1;
-			energyUsagePerSecond=0.00099999981;
-			plugType=1;
-			attachmentAction=1;
-		};
-		class AnimationSources
-		{
-			class hide
-			{
-				source = "user";
-				animPeriod = 0.01;
-				initPhase = 0;
-			};
-			class rotate
-			{
-				source = "user";
-				animPeriod = 0.3;
-				initPhase = 0;
-			};
-		};
-	};
-	class SRP_NVGs: NVGoggles
+  class SRP_NVGoggles_Default: NVGoggles
 	{
 		scope=2;
 		displayName="Night Vision Goggles";
 		descriptionShort="$STR_CfgVehicles_NVGoggles1";
 		model="Survivalists_Mods\characters\glasses\SRP_NVG.p3d";
-		simulation="itemoptics";
-		animClass="Binoculars";
-		inventorySlot[]=
-		{
-			"NVG"
-		};
-		itemSize[]={2,2};
-		weight=300;
-		rotationFlags=1;
-		class OpticsInfo
-		{
-			memoryPointCamera="eyeScope";
-			cameraDir="cameraDir";
-			modelOptics="-";
-			distanceZoomMin=500;
-			distanceZoomMax=500;
-			opticsZoomMin=0.52359998;
-			opticsZoomMax=0.52359998;
-			opticsZoomInit=0.52359998;
-		};
-		attachments[]=
-		{
-			"BatteryD"
-		};
-		NVOptic=1;
-		simpleHiddenSelections[]=
-		{
-			"hide"
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=100;
-					healthLevels[]=
-					{
-						{1,{"DZ\characters\glasses\data\NVG_Headstrap.rvmat"}},
-            {0.69999999,{"DZ\characters\glasses\data\NVG_Headstrap.rvmat"}},
-            {0.5,{"DZ\characters\glasses\data\NVG_Headstrap_damage.rvmat"}},
-            {0.30000001,{"DZ\characters\glasses\data\NVG_Headstrap_damage.rvmat"}},
-            {0,{"DZ\characters\glasses\data\NVG_Headstrap_destruct.rvmat"}}
-					};
-				};
-			};
-		};
 		repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
-		class EnergyManager
-		{
-			hasIcon=1;
-			energyUsagePerSecond=0.00099999981;
-			plugType=1;
-			attachmentAction=1;
-		};
-		class AnimationSources
-		{
-			class hide
-			{
-				source = "user";
-				animPeriod = 0.01;
-				initPhase = 0;
-			};
-			class rotate
-			{
-				source = "user";
-				animPeriod = 0.3;
-				initPhase = 0;
-			};
-		};
 	};
 
-  class SRP_NVBinocular: NVGoggles  // BP_NVBinocular
+  class SRP_NVGoggles_Quad: NVGoggles
 	{
 		scope=2;
+		displayName="Night Vision Goggles";
+		descriptionShort="$STR_CfgVehicles_NVGoggles1";
+		model="Survivalists_Mods\characters\glasses\SRP_QuadNVG.p3d";
+		repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+	};	
+
+  class SRP_NVGoggles_ShortRange: NVGoggles  // BP_NVBinocular
+	{
+		scope=2;
+    displayName="Short Range Night Vision Goggles";
+		descriptionShort="$STR_CfgVehicles_NVGoggles1";
 		class OpticsInfo
 		{
 			memoryPointCamera="eyeScope";
