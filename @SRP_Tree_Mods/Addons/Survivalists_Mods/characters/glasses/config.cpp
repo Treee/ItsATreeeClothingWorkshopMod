@@ -49,6 +49,7 @@ class CfgVehicles
 		{
 			memoryPointCamera="eyeScope";
 			cameraDir="cameraDir";
+      modelOptics="-";
 			distanceZoomMin=100;
 			distanceZoomMax=100;
 			opticsZoomMin=0.050000001;

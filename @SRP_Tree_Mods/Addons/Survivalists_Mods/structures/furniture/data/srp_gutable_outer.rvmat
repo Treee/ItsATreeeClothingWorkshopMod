@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\structures\furniture\data\srp_gutable_inner_nohq.paa";
+	texture="Survivalists_Mods\structures\furniture\data\srp_gutable_outer_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -90,3 +90,4 @@ class Stage7
 		pos[]={0,0,0};
 	};
 };
+

@@ -32,10 +32,19 @@ class CfgVehicles
 		scope=1;
 		model="Survivalists_Mods\structures\furniture\SRP_BarSofaL.p3d";
 	};
+
+
+
   class land_srp_saloon_barrel: HouseNoDestruct
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\furniture\SRP_BarBarrel.p3d";
+	};
+
+  class land_srp_saloon_barreltable: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\furniture\SRP_BarBarrelTable.p3d";
 	};
 
 	class SRP_Furniture_WoodenTable_Kit: SRP_KitBase
@@ -43,7 +52,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Wooden Table Kit";
 		descriptionShort="A placeable outdoor table kit!";
-		model="Survivalists_Mods\structures\furniture\srp_table2.p3d";
 	};
 	class SRP_Furniture_WoodenTable: Container_Base  // SRP_wooden_table
 	{
@@ -64,10 +72,6 @@ class CfgVehicles
 		useEntityHierarchy="true";
 		physLayer="item_large";
 		rotationFlags=2;
-		hiddenSelections[]=
-		{
-			"camoGround"
-		};
 		class Cargo
 		{
 			itemsCargoSize[]={5,3};
@@ -136,7 +140,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Outdoor Chair Kit";
 		descriptionShort="A placeable outdoor chair kit!";
-		model="Survivalists_Mods\structures\furniture\SRP_GChair.p3d";
 	};
 	class SRP_GChair: Container_Base
 	{
@@ -193,7 +196,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Outdoor Chair Kit";
 		descriptionShort="A placeable outdoor chair kit!";
-		model="Survivalists_Mods\structures\furniture\SRP_GChairHigh.p3d";
 	};
 	class SRP_GChairHigh: Container_Base
 	{
@@ -250,7 +252,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Outdoor Table Kit";
 		descriptionShort="A placeable outdoor table kit!";
-		model="Survivalists_Mods\structures\furniture\SRP_GTable2.p3d";
 	};
 	class SRP_GOutdoorTable: Container_Base
 	{
@@ -333,9 +334,8 @@ class CfgVehicles
 	class SRP_GOutdoorTableUmbrella_Kit: SRP_KitBase  // SRP_GOutdoorTableUmbKit
 	{
 		scope=2;
-		displayName="Outdoor Table Kit";
+		displayName="Outdoor Table Kit With Umbrella";
 		descriptionShort="A placeable outdoor table kit!";
-		model="Survivalists_Mods\structures\furniture\SRP_GTableUmbreller.p3d";
 	};
 
   class SRP_GOutdoorTableUmbrella: Container_Base  // SRP_GOutdoorTableUmb
@@ -421,7 +421,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Parasol Kit";
 		descriptionShort="A placeable Parasol kit!";
-		model="Survivalists_Mods\structures\furniture\SRP_Umbreller.p3d";
 	};
 
 	class SRP_Umbrella: Container_Base  // SRP_Umbreller
