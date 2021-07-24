@@ -153,6 +153,10 @@ class SRP_FridgeBig_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseSmall_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseSmallBlack_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseMedium_Kit extends SRP_KitBase {}
+class SRP_MilitaryCaseLong_Kit extends SRP_KitBase {}
+class SRP_MilitaryCaseLarge_Kit extends SRP_KitBase {}
+class SRP_MilitaryCaseLongBlue_Kit extends SRP_KitBase {}
+class SRP_MilitaryCaseLongTan_Kit extends SRP_KitBase {}
 class SRP_GChair_Kit extends SRP_KitBase {}
 class SRP_GChairHigh_Kit extends SRP_KitBase {}
 class SRP_GOutdoorTable_Kit extends SRP_KitBase {}

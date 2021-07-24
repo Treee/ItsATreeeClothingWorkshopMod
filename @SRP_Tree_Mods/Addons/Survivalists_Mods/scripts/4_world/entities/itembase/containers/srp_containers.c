@@ -66,6 +66,10 @@ class SRP_StreetLightMedium_Wood extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};
 class SRP_MilitaryCaseMedium extends SRP_Container_Base{};
+class SRP_MilitaryCaseLarge extends SRP_Container_Base{};
+class SRP_MilitaryCaseLong extends SRP_Container_Base{};
+class SRP_MilitaryCaseLongBlue extends SRP_Container_Base{};
+class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
 
 class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
 {

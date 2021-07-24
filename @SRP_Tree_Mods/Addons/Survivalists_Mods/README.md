@@ -116,6 +116,10 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 "Military Container  Free" (https://skfb.ly/ooHST) by Epic_Hard_RU is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Military Ammunition Case" (https://skfb.ly/VESS) by Yoni Van Gucht is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Military Case" (https://skfb.ly/o6tuM) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

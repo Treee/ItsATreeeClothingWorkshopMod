@@ -526,27 +526,6 @@ class CfgVehicles
 				};
 			};
 		};
-		class AnimationSources
-		{
-			class lid
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-			};
-			class inventory
-			{
-				source="user";
-				animPeriod=0.0099999998;
-				initPhase=0;
-			};
-			class placing
-			{
-				source="user";
-				animPeriod=0.0099999998;
-				initPhase=1;
-			};
-		};
 	};
 
   class SRP_MilitaryCaseSmallBlack_Kit: SRP_KitBase //new
@@ -608,27 +587,6 @@ class CfgVehicles
             {0.0099999998,{"Survivalists_Mods\gear\containers\data\militarycasesmallblack_destruct.rvmat"}}
 					};
 				};
-			};
-		};
-		class AnimationSources
-		{
-			class lid
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
-			};
-			class inventory
-			{
-				source="user";
-				animPeriod=0.0099999998;
-				initPhase=0;
-			};
-			class placing
-			{
-				source="user";
-				animPeriod=0.0099999998;
-				initPhase=1;
 			};
 		};
 	};
@@ -695,25 +653,271 @@ class CfgVehicles
 				};
 			};
 		};
-		class AnimationSources
+	};
+
+  class SRP_MilitaryCaseLong_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Long Military Case Kit";
+		descriptionShort="A Military Case Kit";
+		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+	};
+  class SRP_MilitaryCaseLong: Container_Base // new
+	{
+		scope=2;
+		displayName="Long Military Gun Case";
+		descriptionShort="A case for storing guns. Very long.";
+		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+		attachments[]=
 		{
-			class lid
+			"Shoulder1",
+      "Shoulder2"
+		};
+		weight=2000;
+		itemSize[]={11,3};
+		carveNavmesh=1;
+		canBeDigged=0;
+		itemBehaviour=2;
+		physLayer="item_large";
+		class Cargo
+		{
+			itemsCargoSize[]={8,8};
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Base
 			{
-				source="user";
-				initPhase=0;
-				animPeriod=1;
+				name="Guns";
+				description="";
+				attachmentSlots[]=
+				{
+					"Shoulder1",
+					"Shoulder2"
+				};
+				icon="shoulderright";
 			};
-			class inventory
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
 			{
-				source="user";
-				animPeriod=0.0099999998;
-				initPhase=0;
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\containers\data\millitarycaselong.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\containers\data\millitarycaselong.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\containers\data\millitarycaselong_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\containers\data\millitarycaselong_damage.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\containers\data\millitarycaselong_destruct.rvmat"}}
+					};
+				};
 			};
-			class placing
+		};
+	};
+  class SRP_MilitaryCaseLongBlue_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Long Military Case Kit - Blue";
+		descriptionShort="A Military Case Kit";
+		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+	};
+  class SRP_MilitaryCaseLongBlue: Container_Base // new
+	{
+		scope=2;
+		displayName="Military Gun Case - Blue";
+		descriptionShort="A case for storing guns";
+		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+		attachments[]=
+		{
+			"Shoulder1",
+      "Shoulder2"
+		};
+		weight=2000;
+		itemSize[]={11,3};
+		carveNavmesh=1;
+		canBeDigged=0;
+		itemBehaviour=2;
+		physLayer="item_large";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\millitarycaselongblue_co.paa"
+    };
+		class Cargo
+		{
+			itemsCargoSize[]={8,8};
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Base
 			{
-				source="user";
-				animPeriod=0.0099999998;
-				initPhase=1;
+				name="Guns";
+				description="";
+				attachmentSlots[]=
+				{
+					"Shoulder1",
+					"Shoulder2"
+				};
+				icon="shoulderright";
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\containers\data\millitarycaselong.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\containers\data\millitarycaselong.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\containers\data\millitarycaselong_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\containers\data\millitarycaselong_damage.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\containers\data\millitarycaselong_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_MilitaryCaseLongTan_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Long Military Case Kit - Tan";
+		descriptionShort="A Military Case Kit";
+		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+	};
+  class SRP_MilitaryCaseLongTan: Container_Base // new
+	{
+		scope=2;
+		displayName="Military Gun Case - Tan";
+		descriptionShort="A case for storing guns";
+		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+		attachments[]=
+		{
+			"Shoulder1",
+      "Shoulder2"
+		};
+		weight=2000;
+		itemSize[]={11,3};
+		carveNavmesh=1;
+		canBeDigged=0;
+		itemBehaviour=2;
+		physLayer="item_large";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\millitarycaselongcamo_co.paa"
+    };
+		class Cargo
+		{
+			itemsCargoSize[]={8,8};
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Base
+			{
+				name="Guns";
+				description="";
+				attachmentSlots[]=
+				{
+					"Shoulder1",
+					"Shoulder2"
+				};
+				icon="shoulderright";
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\containers\data\millitarycaselong.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\containers\data\millitarycaselong.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\containers\data\millitarycaselong_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\containers\data\millitarycaselong_damage.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\containers\data\millitarycaselong_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_MilitaryCaseLarge_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Large Military Case Kit";
+		descriptionShort="A Military Case Kit";
+		model="Survivalists_Mods\gear\containers\militarycaselarge.p3d";
+	};
+
+  class SRP_MilitaryCaseLarge: Container_Base // new
+	{
+		scope=2;
+		displayName="Large Military Gun Case";
+		descriptionShort="A case for storing guns";
+		model="Survivalists_Mods\gear\containers\militarycaselarge.p3d";
+		attachments[]=
+		{
+			"Shoulder1",
+      "Shoulder2"
+		};
+		weight=2000;
+		itemSize[]={15,10};
+		carveNavmesh=1;
+		canBeDigged=0;
+		itemBehaviour=2;
+		physLayer="item_large";
+		class Cargo
+		{
+			itemsCargoSize[]={10,10};
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Base
+			{
+				name="Guns";
+				description="";
+				attachmentSlots[]=
+				{
+					"Shoulder1",
+					"Shoulder2"
+				};
+				icon="shoulderright";
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\containers\data\militarycaselarge.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\containers\data\militarycaselarge.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\containers\data\militarycaselarge_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\containers\data\militarycaselarge_damage.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\containers\data\militarycaselarge_destruct.rvmat"}}
+					};
+				};
 			};
 		};
 	};
