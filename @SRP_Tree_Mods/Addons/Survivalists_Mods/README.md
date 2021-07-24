@@ -30,13 +30,6 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 
 
-# Models to replace
-
-In Camping
-SRP_SmallDoor
-SRP_WindowBarricade
-SRP_WideFence
-
 # Attributions
 
 "potbelly stove" (https://skfb.ly/68UNF) by Yksnawel is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
