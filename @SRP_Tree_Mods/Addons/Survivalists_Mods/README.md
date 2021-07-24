@@ -106,6 +106,16 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 "CoD Zombies Sodas" (https://skfb.ly/6VRIq) by albertjuli is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Post Apocalyptic Mailbox" (https://skfb.ly/6WZL7) by Marcin Klosowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Mailbox" (https://skfb.ly/6wPWT) by Ronald Hessens is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Mailbox Homework" (https://skfb.ly/6RWZr) by Andy Shishkin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Military case" (https://skfb.ly/6BNt8) by diaspora is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Military Container  Free" (https://skfb.ly/ooHST) by Epic_Hard_RU is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

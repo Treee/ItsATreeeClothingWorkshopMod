@@ -150,9 +150,9 @@ class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase {}
 
 // non craftable kits
 class SRP_FridgeBig_Kit extends SRP_KitBase {}
-class SRP_PostBox_Kit extends SRP_KitBase {}
-class SRP_PostBoxBig_Kit extends SRP_KitBase {}
-class SRP_MilitaryCase_Kit extends SRP_KitBase {}
+class SRP_MilitaryCaseSmall_Kit extends SRP_KitBase {}
+class SRP_MilitaryCaseSmallBlack_Kit extends SRP_KitBase {}
+class SRP_MilitaryCaseMedium_Kit extends SRP_KitBase {}
 class SRP_GChair_Kit extends SRP_KitBase {}
 class SRP_GChairHigh_Kit extends SRP_KitBase {}
 class SRP_GOutdoorTable_Kit extends SRP_KitBase {}

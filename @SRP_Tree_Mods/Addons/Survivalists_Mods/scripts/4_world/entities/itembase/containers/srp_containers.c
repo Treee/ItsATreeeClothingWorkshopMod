@@ -23,6 +23,9 @@ class SRP_BloodPressureMonitor extends SRP_DeployableContainer_Base{};
 class SRP_Carpet extends SRP_DeployableContainer_Base{};
 class SRP_CarpetRug extends SRP_DeployableContainer_Base{};
 class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base{};
+class SRP_PostBox extends SRP_DeployableContainer_Base{};
+class SRP_PostBoxBlue extends SRP_DeployableContainer_Base{};
+class SRP_PostBoxWooden extends SRP_DeployableContainer_Base{};
 
 // These are containers that cannot be put in your hands and need to be dismantled to re-place
 class SRP_Container_Base extends DeployableContainer_Base
@@ -48,9 +51,6 @@ class SRP_Container_Base extends DeployableContainer_Base
 class SRP_FridgeBig extends SRP_Container_Base{};
 class SRP_GunShelf extends SRP_Container_Base{};
 class SRP_WoodenShelf extends SRP_Container_Base{};
-class SRP_PostBox extends SRP_Container_Base{};
-class SRP_PostBoxBig extends SRP_Container_Base{};
-
 class SRP_Furniture_WoodenTable extends SRP_Container_Base{};
 class SRP_GChair extends SRP_Container_Base{};
 class SRP_GChairHigh extends SRP_Container_Base{};
@@ -63,30 +63,9 @@ class SRP_StreetLightLarge extends SRP_Container_Base{};
 class SRP_StreetLightMedium extends SRP_Container_Base{};
 class SRP_StreetLightLarge_Metal extends SRP_Container_Base{};
 class SRP_StreetLightMedium_Wood extends SRP_Container_Base{};
-
-class SRP_MilitaryCase extends Barrel_ColorBase
-{
-	override void SetActions()
-	{
-		super.SetActions();
-		RemoveAction(ActionTakeItem);
-    RemoveAction(ActionSwapItemToHands);
-		RemoveAction(ActionTakeItemToHands);
-
-		AddAction(ActionOpenBarrel);
-		AddAction(ActionCloseBarrel);
-	}
-  
-  override bool CanPutInCargo( EntityAI parent )
-	{
-		return false;
-	}
-  
-  override bool CanPutIntoHands (EntityAI parent)
-  {
-    return false;
-  }
-}
+class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
+class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};
+class SRP_MilitaryCaseMedium extends SRP_Container_Base{};
 
 class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
 {
