@@ -19,7 +19,6 @@ class CfgVehicles
   class Container_Base;
   class Inventory_Base;
   class SRP_KitBase;
-  class GorkaHelmetVisor;
 
 	class SRP_AdvancedWorkbench: Container_Base // BP1_Workbench
 	{
@@ -47,10 +46,6 @@ class CfgVehicles
 		repairKitType=1;
 		physLayer="item_large";
 		allowOwnedCargoManipulation=1;
-		hiddenSelections[]=
-		{
-			"camoGround"
-		};
 		class Cargo
 		{
 			itemsCargoSize[]={8,16};
@@ -93,56 +88,11 @@ class CfgVehicles
 					hitpoints=5000;
 					healthLevels[]=
 					{
-            {1.01,{}},
-            {0.69999999,{}},
-            {0.5,{}},
-            {0.30000001,{}},
-            {0.0099999998,{}}
-					};
-				};
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem_Light
-				{
-					soundSet="pickUpBarrelLight_SoundSet";
-					id=796;
-				};
-				class pickUpItem
-				{
-					soundSet="pickUpBarrel_SoundSet";
-					id=797;
-				};
-			};
-		};
-	};
-
-	class SRP_AdvancedWorkbench_Kit: SRP_KitBase // BP1_Workbench_pac
-	{
-		scope=2;
-		displayName="Advanced Workbench";
-		descriptionShort="A Workbench with tools for creating and repairing weapons and ammunition";
-		model="Survivalists_Mods\gear\crafting\SRP_Workbench.p3d";
-		heavyItem=1;
-		weight=500;
-		itemSize[]={8,10};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=1000;
-					healthLevels[]=
-					{
-            {1.01,{}},
-            {0.69999999,{}},
-            {0.5,{}},
-            {0.30000001,{}},
-            {0.0099999998,{}}
+            {1.01,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}}
 					};
 				};
 			};
@@ -266,19 +216,19 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_ShootingTargetO_Kit: SRP_KitBase  // BP_ShootingTargetO_kit
+  class SRP_ShootingTargets_Kit: SRP_KitBase  // BP_ShootingTargetO_kit
 	{
 		scope=2;
-		displayName="Shooting Target Kit";
-		descriptionShort="A placeable shooting target set!";
+		displayName="Shooting Targets Kit";
+		descriptionShort="A placeable shooting target set! Multiple targets.";
 	};
 
-  class SRP_ShootingTargetO: Container_Base // BP_ShootingTargetO
+  class SRP_ShootingTargets: Container_Base // BP_ShootingTargetO
 	{
 		scope=2;
-		displayName="Shooting Target";
-		descriptionShort="A target for shooting at.";
-		model="Survivalists_Mods\gear\crafting\SRP_ShootingTarget.p3d";
+		displayName="Shooting Targets";
+		descriptionShort="Multiple targets for shooting at.";
+		model="Survivalists_Mods\gear\crafting\SRP_ShootingTargets.p3d";
 		overrideDrawArea="3.0";
 		forceFarBubble="true";
 		carveNavmesh=1;
@@ -286,10 +236,6 @@ class CfgVehicles
 		itemSize[]={15,10};
 		physLayer="item_large";
 		rotationFlags=2;
-		hiddenSelections[]=
-		{
-			"camoGround"
-		};
 		class DamageSystem
 		{
 			class GlobalHealth

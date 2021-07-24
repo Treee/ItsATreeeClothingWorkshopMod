@@ -22,6 +22,7 @@ class SRP_MedicalBed_Wood extends SRP_DeployableContainer_Base{};
 class SRP_BloodPressureMonitor extends SRP_DeployableContainer_Base{};
 class SRP_Carpet extends SRP_DeployableContainer_Base{};
 class SRP_CarpetRug extends SRP_DeployableContainer_Base{};
+class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base{};
 
 // These are containers that cannot be put in your hands and need to be dismantled to re-place
 class SRP_Container_Base extends DeployableContainer_Base
@@ -56,8 +57,8 @@ class SRP_GChairHigh extends SRP_Container_Base{};
 class SRP_GOutdoorTable extends SRP_Container_Base{};
 class SRP_GOutdoorTableUmbrella extends SRP_Container_Base{};
 class SRP_Umbrella extends SRP_Container_Base{};
-class SRP_ShootingTargetO extends SRP_Container_Base{};
-class SRP_AdvancedWorkbench extends SRP_Container_Base{};
+class SRP_ShootingTarget extends SRP_Container_Base{};
+class SRP_ShootingTargets extends SRP_Container_Base{};
 class SRP_StreetLightLarge extends SRP_Container_Base{};
 class SRP_StreetLightMedium extends SRP_Container_Base{};
 class SRP_StreetLightLarge_Metal extends SRP_Container_Base{};

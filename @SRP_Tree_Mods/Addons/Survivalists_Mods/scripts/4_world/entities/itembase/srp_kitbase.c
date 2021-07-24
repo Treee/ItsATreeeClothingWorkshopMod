@@ -140,7 +140,8 @@ class SRP_BedsideTableMetal_Kit extends SRP_KitBase {}
 class SRP_WoodenShelf_Kit extends SRP_KitBase {}
 class SRP_GunShelf_Kit extends SRP_KitBase {}
 class SRP_Potbelly_Stove_Kit extends SRP_KitBase {}
-class SRP_ShootingTargetO_Kit extends SRP_KitBase {}
+class SRP_ShootingTarget_Kit extends SRP_KitBase {}
+class SRP_ShootingTargets_Kit extends SRP_KitBase {}
 class SRP_StreetLightLarge_Kit extends SRP_KitBase {}
 class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase {}
 class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase {}
@@ -157,7 +158,6 @@ class SRP_GChairHigh_Kit extends SRP_KitBase {}
 class SRP_GOutdoorTable_Kit extends SRP_KitBase {}
 class SRP_GOutdoorTableUmbrella_Kit extends SRP_KitBase {}
 class SRP_Umbrella_Kit extends SRP_KitBase {}
-class SRP_AdvancedWorkbench_Kit extends SRP_KitBase {}
 class SRP_Carpet_Kit extends SRP_KitBase {}
 class SRP_CarpetRug_Kit extends SRP_KitBase {}
 class SRP_MedicalCurtains_Kit extends SRP_KitBase {}
