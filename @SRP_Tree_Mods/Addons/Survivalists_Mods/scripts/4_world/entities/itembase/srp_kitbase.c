@@ -138,7 +138,9 @@ class SRP_KitBase extends ItemBase
 class SRP_BedsideTable_Kit extends SRP_KitBase {}
 class SRP_BedsideTableMetal_Kit extends SRP_KitBase {}
 
-class SRP_WoodenShelf_Kit extends SRP_KitBase {}
+class SRP_WoodenShelfSimple_Kit extends SRP_KitBase {}
+class SRP_WoodenShelfSimpleGround_Kit extends SRP_KitBase {}
+class SRP_MetalShelfSimpleGround_Kit extends SRP_KitBase {}
 class SRP_GunShelfWall_Kit extends SRP_KitBase {}
 
 class SRP_GunShelfGround_Kit extends SRP_KitBase {}
