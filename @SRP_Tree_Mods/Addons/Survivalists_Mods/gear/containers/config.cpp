@@ -38,8 +38,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Fridge Kit";
 		descriptionShort="A Fridge Kit";
-    model="Survivalists_Mods\gear\containers\refrigerator.p3d";
-
 	};
 
   class SRP_Fridge: Container_Base // BP_FridgeBig
@@ -67,7 +65,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Big Fridge Kit";
 		descriptionShort="A Big Fridge Kit";
-    model="Survivalists_Mods\gear\containers\refrigeratorlarge.p3d";
 	};
 
   class SRP_FridgeLarge: Container_Base // new
@@ -89,6 +86,12 @@ class CfgVehicles
 			allowOwnedCargoManipulation=1;
 		};
 	};
+
+
+
+
+
+  
 
   class SRP_WoodenShelf_Kit: SRP_KitBase //new
 	{
@@ -192,19 +195,30 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_GunShelf_Kit: SRP_KitBase //new
+
+
+
+
+
+
+
+
+
+
+
+  class SRP_GunShelfWall_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Gun Shelf Kit";
-		descriptionShort="A Gun Shelf Kit";
+		displayName="Gun Shelf Wall Kit";
+		descriptionShort="A Gun Shelf Wall Kit";
 	};
 
-	class SRP_GunShelf: Container_Base // BP_GunShelf
+	class SRP_GunShelfWall: Container_Base // BP_GunShelf
 	{
 		scope=2;
-		displayName="Gun Shelf";
+		displayName="Wall Gun Shelf";
 		descriptionShort="A shelf for displaying guns.";
-		model="Survivalists_Mods\gear\containers\GunShelf.p3d";
+		model="Survivalists_Mods\gear\containers\weaponrackwooden.p3d";
 		attachments[]=
 		{
 			"Back",
@@ -215,11 +229,7 @@ class CfgVehicles
 			"Shoulder2",
 			"Shoulder3",
 			"Shoulder4",
-			"Shoulder5",
-			"Shoulder6",
-			"Shoulder7",
-			"Shoulder8",
-			"Shoulder9"
+			"Shoulder5"
 		};
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -265,6 +275,59 @@ class CfgVehicles
 					"Shoulder7",
 					"Shoulder8",
 					"Shoulder9"
+				};
+				icon="shoulderright";
+			};
+		};
+	};
+
+  class SRP_GunShelfGround_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Gun Shelf Wall Kit";
+		descriptionShort="A Gun Shelf Wall Kit";
+	};
+
+	class SRP_GunShelfGround: Container_Base // new
+	{
+		scope=2;
+		displayName="Wall Gun Shelf";
+		descriptionShort="A shelf for displaying guns.";
+		model="Survivalists_Mods\gear\containers\weaponrackwoodenground.p3d";
+		attachments[]=
+		{
+			"Back",
+			"no",
+			"Pistol",
+			"Shoulder",
+			"Shoulder1",
+			"Shoulder2"
+		};
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={3,3};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Rifles
+			{
+				name="Rifles";
+				description="";
+				attachmentSlots[]=
+				{
+					"Shoulder",
+					"Shoulder1",
+					"Shoulder2"
 				};
 				icon="shoulderright";
 			};

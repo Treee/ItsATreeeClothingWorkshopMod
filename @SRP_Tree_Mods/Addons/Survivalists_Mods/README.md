@@ -124,6 +124,11 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 "Food shop showcase" (https://skfb.ly/6UHZU) by bretzel44 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Weapon Rack" (https://skfb.ly/6WYxB) by Big2XG is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Weapon Rack" (https://skfb.ly/6U7NX) by BlueHorizon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
