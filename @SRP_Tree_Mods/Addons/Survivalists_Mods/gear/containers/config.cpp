@@ -87,7 +87,32 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_FridgeRetro_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Retro Fridge Kit";
+		descriptionShort="A Retro Fridge Kit";
+	};
 
+  class SRP_FridgeRetro: Container_Base // new
+	{
+		scope=2;
+		displayName="Retro Fridge";
+		descriptionShort="A really retro fridge";
+		model="Survivalists_Mods\gear\containers\refrigeratorretro.p3d";
+    carveNavmesh=1;
+		itemBehaviour=2;
+    useEntityHierarchy="true";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		class Cargo
+		{
+			itemsCargoSize[]={10,15};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+	};
 
 
 
@@ -284,15 +309,15 @@ class CfgVehicles
   class SRP_GunShelfGround_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Gun Shelf Wall Kit";
-		descriptionShort="A Gun Shelf Wall Kit";
+		displayName="Gun Shelf Ground Kit";
+		descriptionShort="A Gun Shelf Ground Kit";
 	};
 
 	class SRP_GunShelfGround: Container_Base // new
 	{
 		scope=2;
-		displayName="Wall Gun Shelf";
-		descriptionShort="A shelf for displaying guns.";
+		displayName="Ground Gun Shelf";
+		descriptionShort="A shelf for displaying guns. Stands on the ground.";
 		model="Survivalists_Mods\gear\containers\weaponrackwoodenground.p3d";
 		attachments[]=
 		{

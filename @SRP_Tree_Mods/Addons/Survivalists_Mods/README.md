@@ -128,6 +128,10 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 "Weapon Rack" (https://skfb.ly/6U7NX) by BlueHorizon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Simple Wall Shelf" (https://skfb.ly/6COuP) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Retro Fridge" (https://skfb.ly/6RWwu) by Zlat is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
 
 # Wishlist
 

@@ -137,21 +137,28 @@ class SRP_KitBase extends ItemBase
 //craftable kits
 class SRP_BedsideTable_Kit extends SRP_KitBase {}
 class SRP_BedsideTableMetal_Kit extends SRP_KitBase {}
+
 class SRP_WoodenShelf_Kit extends SRP_KitBase {}
 class SRP_GunShelfWall_Kit extends SRP_KitBase {}
+
 class SRP_GunShelfGround_Kit extends SRP_KitBase {}
 class SRP_Potbelly_Stove_Kit extends SRP_KitBase {}
+
 class SRP_ShootingTarget_Kit extends SRP_KitBase {}
 class SRP_ShootingTargets_Kit extends SRP_KitBase {}
+
 class SRP_StreetLightLarge_Kit extends SRP_KitBase {}
 class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase {}
 class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase {}
 class SRP_StreetLightMedium_Kit extends SRP_KitBase {}
+
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase {}
 
 // non craftable kits
 class SRP_Fridge_Kit extends SRP_KitBase {}
 class SRP_FridgeLarge_Kit extends SRP_KitBase {}
+class SRP_FridgeRetro_Kit extends SRP_KitBase {}
+
 class SRP_MilitaryCaseSmall_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseSmallBlack_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseMedium_Kit extends SRP_KitBase {}
@@ -159,6 +166,7 @@ class SRP_MilitaryCaseLong_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseLarge_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseLongBlue_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseLongTan_Kit extends SRP_KitBase {}
+
 class SRP_GChair_Kit extends SRP_KitBase {}
 class SRP_GChairHigh_Kit extends SRP_KitBase {}
 class SRP_GOutdoorTable_Kit extends SRP_KitBase {}
