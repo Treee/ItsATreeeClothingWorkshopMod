@@ -49,6 +49,7 @@ class SRP_Container_Base extends DeployableContainer_Base
   }
 }
 class SRP_Fridge extends SRP_Container_Base{};
+class SRP_FridgeLarge extends SRP_Container_Base{};
 class SRP_GunShelf extends SRP_Container_Base{};
 class SRP_WoodenShelf extends SRP_Container_Base{};
 class SRP_Furniture_WoodenTable extends SRP_Container_Base{};

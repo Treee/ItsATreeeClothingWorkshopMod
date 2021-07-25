@@ -36,8 +36,8 @@ class CfgVehicles
   class SRP_Fridge_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Big Fridge Kit";
-		descriptionShort="A Big Fridge Kit";
+		displayName="Fridge Kit";
+		descriptionShort="A Fridge Kit";
     model="Survivalists_Mods\gear\containers\refrigerator.p3d";
 
 	};
@@ -45,33 +45,13 @@ class CfgVehicles
   class SRP_Fridge: Container_Base // BP_FridgeBig
 	{
 		scope=2;
-		displayName="Big Fridge";
-		descriptionShort="A really big fridge";
+		displayName="Fridge";
+		descriptionShort="A fridge";
 		model="Survivalists_Mods\gear\containers\refrigerator.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
     useEntityHierarchy="true";
 		physLayer="item_large";
-		attachments[]=
-		{
-			"Ingredient",
-			"Food1",
-			"Food2",
-			"Food3",
-			"Food4",
-			"Food5",
-			"Food6",
-			"Food7",
-			"Food8",
-			"Can",
-			"Can1",
-			"Can2",
-			"Can3",
-			"Can4",
-			"Can5",
-			"Can6",
-			"Can7"
-		};
 		weight=10000;
 		itemSize[]={10,15};
 		class Cargo
@@ -80,52 +60,33 @@ class CfgVehicles
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
-		class GUIInventoryAttachmentsProps
+	};
+
+  class SRP_FridgeLarge_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Big Fridge Kit";
+		descriptionShort="A Big Fridge Kit";
+    model="Survivalists_Mods\gear\containers\refrigeratorlarge.p3d";
+	};
+
+  class SRP_FridgeLarge: Container_Base // new
+	{
+		scope=2;
+		displayName="Big Fridge";
+		descriptionShort="A really big fridge";
+		model="Survivalists_Mods\gear\containers\refrigeratorlarge.p3d";
+    carveNavmesh=1;
+		itemBehaviour=2;
+    useEntityHierarchy="true";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		class Cargo
 		{
-			class Food
-			{
-				name="The drinks";
-				description="";
-				attachmentSlots[]=
-				{
-					"Food1",
-					"Food2",
-					"Food3",
-					"Food4",
-					"Food5",
-					"Food6",
-					"Food7",
-					"Food8"
-				};
-				icon="tincan";
-			};
-			class Canned_food
-			{
-				name="Canned food";
-				description="";
-				attachmentSlots[]=
-				{
-					"Can",
-					"Can1",
-					"Can2",
-					"Can3",
-					"Can4",
-					"Can5",
-					"Can6",
-					"Can7"
-				};
-				icon="tincan";
-			};
-			class Food1
-			{
-				name="Other food";
-				description="";
-				attachmentSlots[]=
-				{
-					"Ingredient"
-				};
-				icon="food";
-			};
+			itemsCargoSize[]={10,15};
+			openable=0;
+			allowOwnedCargoManipulation=1;
 		};
 	};
 
