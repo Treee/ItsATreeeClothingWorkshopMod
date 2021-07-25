@@ -120,6 +120,8 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 "Military Case" (https://skfb.ly/o6tuM) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Merchandiser Refrigerator" (https://skfb.ly/ono6B) by Sapwood Studio is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

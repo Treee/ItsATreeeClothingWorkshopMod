@@ -33,19 +33,21 @@ class CfgVehicles
 
   //--------------------------------------- Custom Stuff
   
-  class SRP_FridgeBig_Kit: SRP_KitBase //new
+  class SRP_Fridge_Kit: SRP_KitBase //new
 	{
 		scope=2;
 		displayName="Big Fridge Kit";
 		descriptionShort="A Big Fridge Kit";
+    model="Survivalists_Mods\gear\containers\refrigerator.p3d";
+
 	};
 
-  class SRP_FridgeBig: Container_Base // BP_FridgeBig
+  class SRP_Fridge: Container_Base // BP_FridgeBig
 	{
 		scope=2;
 		displayName="Big Fridge";
 		descriptionShort="A really big fridge";
-		model="Survivalists_Mods\gear\containers\Fridge_big.p3d";
+		model="Survivalists_Mods\gear\containers\refrigerator.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
     useEntityHierarchy="true";
@@ -74,7 +76,7 @@ class CfgVehicles
 		itemSize[]={10,15};
 		class Cargo
 		{
-			itemsCargoSize[]={10,30};
+			itemsCargoSize[]={10,15};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
@@ -359,7 +361,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_PostBoxBlue: Container_Base // BP_post_box
 	{
 		scope=2;
@@ -411,7 +412,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_PostBoxWooden: Container_Base // new
 	{
 		scope=2;
@@ -471,7 +471,6 @@ class CfgVehicles
 		descriptionShort="A Military Case Kit";
 		model="Survivalists_Mods\gear\containers\militarycasesmall.p3d";
 	};
-
   class SRP_MilitaryCaseSmall: Container_Base // BP_mil_case
 	{
 		scope=2;
@@ -527,7 +526,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_MilitaryCaseSmallBlack_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -535,7 +533,6 @@ class CfgVehicles
 		descriptionShort="A Military Case Kit";
 		model="Survivalists_Mods\gear\containers\militarycasesmallblack.p3d";
 	};
-
   class SRP_MilitaryCaseSmallBlack: Container_Base // new
 	{
 		scope=2;
@@ -590,7 +587,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_MilitaryCaseMedium_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -598,7 +594,6 @@ class CfgVehicles
 		descriptionShort="A Military Case Kit";
 		model="Survivalists_Mods\gear\containers\militarycasemedium.p3d";
 	};
-
   class SRP_MilitaryCaseMedium: Container_Base // new
 	{
 		scope=2;
@@ -654,7 +649,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_MilitaryCaseLong_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -857,7 +851,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_MilitaryCaseLarge_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -865,7 +858,6 @@ class CfgVehicles
 		descriptionShort="A Military Case Kit";
 		model="Survivalists_Mods\gear\containers\militarycaselarge.p3d";
 	};
-
   class SRP_MilitaryCaseLarge: Container_Base // new
 	{
 		scope=2;

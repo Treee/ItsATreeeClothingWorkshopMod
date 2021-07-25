@@ -149,7 +149,7 @@ class SRP_StreetLightMedium_Kit extends SRP_KitBase {}
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase {}
 
 // non craftable kits
-class SRP_FridgeBig_Kit extends SRP_KitBase {}
+class SRP_Fridge_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseSmall_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseSmallBlack_Kit extends SRP_KitBase {}
 class SRP_MilitaryCaseMedium_Kit extends SRP_KitBase {}
