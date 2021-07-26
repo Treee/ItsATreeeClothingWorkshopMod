@@ -140,7 +140,10 @@ class SRP_BedsideTableMetal_Kit extends SRP_KitBase {}
 
 class SRP_WoodenShelfSimple_Kit extends SRP_KitBase {}
 class SRP_WoodenShelfSimpleGround_Kit extends SRP_KitBase {}
+class SRP_WoodenShelfGround_Kit extends SRP_KitBase {}
+class SRP_WoodenShelfGroundTall_Kit extends SRP_KitBase {}
 class SRP_MetalShelfSimpleGround_Kit extends SRP_KitBase {}
+class SRP_MetalShelfGround_Kit extends SRP_KitBase {}
 class SRP_GunShelfWall_Kit extends SRP_KitBase {}
 
 class SRP_GunShelfGround_Kit extends SRP_KitBase {}

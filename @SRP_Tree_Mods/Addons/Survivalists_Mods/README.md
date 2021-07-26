@@ -144,6 +144,12 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 "First try" (https://skfb.ly/6YGOP) by Annie Yoon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Shelf" (https://skfb.ly/6WOFz) by Virtareal.Asia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Tall Wooden Medieval Shelf" (https://skfb.ly/6WSuJ) by Oliver Triplett is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Shelf" (https://skfb.ly/6BByU) by Bailey Lawler is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

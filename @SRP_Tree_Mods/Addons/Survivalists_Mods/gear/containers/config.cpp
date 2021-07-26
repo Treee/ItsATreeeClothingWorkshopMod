@@ -210,6 +210,108 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_WoodenShelfGround_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Shelf Kit - Ground";
+		descriptionShort="A Wooden Shelf Kit";
+	};
+  class SRP_WoodenShelfGround: Container_Base //new
+	{
+		scope=2;
+		displayName="Wooden Shelf - Ground";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\groundshelfwood.p3d";
+		attachments[]=
+		{
+			"Pistol",
+			"Shoulder",
+			"Shoulder1",
+			"Gloves",
+			"Hips",
+		};
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={6,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Rifles
+			{
+				name="Rifles";
+				description="";
+				attachmentSlots[]=
+				{
+					"Pistol",
+					"Shoulder",
+					"Shoulder1",
+				};
+				icon="shoulderright";
+			};
+		};
+	};
+
+  class SRP_WoodenShelfGroundTall_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Tall Wooden Shelf Kit - Ground";
+		descriptionShort="A Tall Wooden Shelf Kit";
+	};
+  class SRP_WoodenShelfGroundTall: Container_Base //new
+	{
+		scope=2;
+		displayName="Tall Wooden Shelf - Ground";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\groundshelftallwood.p3d";
+		attachments[]=
+		{
+			"Pistol",
+			"Shoulder",
+			"Shoulder1",
+			"Gloves",
+			"Hips",
+		};
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={6,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Rifles
+			{
+				name="Rifles";
+				description="";
+				attachmentSlots[]=
+				{
+					"Pistol",
+					"Shoulder",
+					"Shoulder1",
+				};
+				icon="shoulderright";
+			};
+		};
+	};
+
   class SRP_MetalShelfSimpleGround_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -222,6 +324,57 @@ class CfgVehicles
 		displayName="Simple Metal Shelf - Ground";
 		descriptionShort="A Convenient shelf where you can put your junk";
 		model="Survivalists_Mods\gear\containers\groundshelfsimplemetal.p3d";
+		attachments[]=
+		{
+			"Pistol",
+			"Shoulder",
+			"Shoulder1",
+			"Gloves",
+			"Hips",
+		};
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={6,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Rifles
+			{
+				name="Rifles";
+				description="";
+				attachmentSlots[]=
+				{
+					"Pistol",
+					"Shoulder",
+					"Shoulder1",
+				};
+				icon="shoulderright";
+			};
+		};
+	};
+
+  class SRP_MetalShelfGround_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Metal Shelf Kit - Ground";
+		descriptionShort="A Metal Shelf Kit";
+	};
+  class SRP_MetalShelfGround: Container_Base //new
+	{
+		scope=2;
+		displayName="Metal Shelf - Ground";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\groundshelfmetal.p3d";
 		attachments[]=
 		{
 			"Pistol",
