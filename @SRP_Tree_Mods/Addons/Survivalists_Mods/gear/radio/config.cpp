@@ -39,11 +39,110 @@ class CfgVehicles
 
   //----------------------------------- Custom Stuff
 
+  // 500 range
+  class SRP_PersonalRadioSmallRed_Handheld: PersonalRadio  // Motorola1-5
+  {
+		scope=2;
+		displayName="Small Hand Held Radio";
+		descriptionShort="A small radio that fits in your hand. Incredibly Short Range";
+    model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
+    repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+    range=500;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradiosmall_red_co.paa"
+		};
+  };
+
+  // 1km range
+  class SRP_PersonalRadioSmallYellow_Handheld: PersonalRadio  // Motorola1-5
+  {
+		scope=2;
+		displayName="Small Hand Held Radio";
+		descriptionShort="A small radio that fits in your hand. Very Short Range";
+    model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
+    repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+    range=1000;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradiosmall_yellow_co.paa"
+		};
+  };
+
+  class SRP_PersonalRadioSmallWhite_Handheld: PersonalRadio  // Motorola1-5
+  {
+		scope=2;
+		displayName="Small Hand Held Radio";
+		descriptionShort="A small radio that fits in your hand. Very Short Range";
+    model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
+    repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+    range=1000;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradiosmall_white_co.paa"
+		};
+  };
+
+  // 2.5km range
+  class SRP_PersonalRadioSmallGreen_Handheld: PersonalRadio  // Motorola1-5
+  {
+		scope=2;
+		displayName="Small Hand Held Radio";
+		descriptionShort="A small radio that fits in your hand. Short Range";
+    model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
+    repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+    range=2500;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradiosmall_green_co.paa"
+		};
+  };
+
+  class SRP_PersonalRadioSmallBlue_Handheld: PersonalRadio  // Motorola1-5
+  {
+		scope=2;
+		displayName="Small Hand Held Radio";
+		descriptionShort="A small radio that fits in your hand. Short Range";
+    model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
+    repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+    range=2500;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradiosmall_blue_co.paa"
+		};
+  };
+
+  // 5km range
   class SRP_PersonalRadio_Handheld: PersonalRadio  // new
   {
 		scope=2;
 		displayName="Hand Held Radio";
-		descriptionShort="A small radio that fits in your hand.";
+		descriptionShort="A radio that fits in your hand. Medium Range";
     model="Survivalists_Mods\gear\radio\handheldradio.p3d";
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
@@ -59,8 +158,9 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\gear\radio\data\handheldradio.rvmat"
 		};
-  }
+  };
 
+  // 7.5km range
   class SRP_PersonalRadio_LongRange: PersonalRadio  // SRPLRRadio
 	{
 		scope=2;
