@@ -13,23 +13,26 @@ class Craft_SRP_NailBullets extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = 25;//-1 = disable check
+		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;//-1 = disable check
 		
-		m_MinQuantityIngredient[1] = 5;//-1 = disable check
+		m_MinQuantityIngredient[1] = 12;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"Pliers");//you can insert multiple ingredients this way
+		InsertIngredient(0,"Hacksaw");//you can insert multiple ingredients this way
+		InsertIngredient(0,"HandSaw");//you can insert multiple ingredients this way
+		InsertIngredient(0,"WoodAxe");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = -25;// 0 = do nothing
+		m_IngredientAddQuantity[0] = -12;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -38,16 +41,16 @@ class Craft_SRP_NailBullets extends RecipeBase
 		
 		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -5;// 0 = do nothing
+		m_IngredientAddQuantity[1] = -12;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		AddResult("Ammo_12gaNails");//add results here
+		AddResult("SRP_ProjectileShotgun_Nail");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
-		m_ResultSetQuantity[0] = 5;//-1 = do nothing
+		m_ResultSetQuantity[0] = 24;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
 		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
 		m_ResultInheritsColor[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result classname will be a composite of the name provided in AddResult method and config value "color" of ingredient (value)
@@ -81,7 +84,7 @@ class Craft_SRP_StoneBullets extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = 25;//-1 = disable check
+		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -97,7 +100,7 @@ class Craft_SRP_StoneBullets extends RecipeBase
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = -25;// 0 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -112,10 +115,10 @@ class Craft_SRP_StoneBullets extends RecipeBase
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		AddResult("Ammo_12gaStones");//add results here
+		AddResult("SRP_ProjectileShotgun_Stone");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
-		m_ResultSetQuantity[0] = 5;//-1 = do nothing
+		m_ResultSetQuantity[0] = 12;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
 		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
 		m_ResultInheritsColor[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result classname will be a composite of the name provided in AddResult method and config value "color" of ingredient (value)
@@ -140,7 +143,7 @@ class Disassemble_SRP_ShotgunAmmo extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Disassemble Ammo";
+		m_Name = "Disassemble Shotgun Ammo";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -156,7 +159,7 @@ class Disassemble_SRP_ShotgunAmmo extends RecipeBase
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;//-1 = disable check
 		
-		m_MinQuantityIngredient[1] = 10;//-1 = disable check
+		m_MinQuantityIngredient[1] = 12;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -167,7 +170,7 @@ class Disassemble_SRP_ShotgunAmmo extends RecipeBase
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = -10;// 0 = do nothing
+		m_IngredientAddQuantity[0] = -12;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -195,10 +198,10 @@ class Disassemble_SRP_ShotgunAmmo extends RecipeBase
 		
 		
 		//result2
-		// AddResult("BP1_gilza12_Pellets");//add results here
+		AddResult("SRP_ProjectileShotgun_Pellet");//add results here
 
 		m_ResultSetFullQuantity[1] = false;//true = set full quantity, false = do nothing
-		m_ResultSetQuantity[1] = 10;//-1 = do nothing
+		m_ResultSetQuantity[1] = 12;//-1 = do nothing
 		m_ResultSetHealth[1] = -1;//-1 = do nothing
 		m_ResultInheritsHealth[1] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
 		m_ResultInheritsColor[1] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result classname will be a composite of the name provided in AddResult method and config value "color" of ingredient (value)
@@ -234,7 +237,7 @@ class Disassemble_SRP_PistolAmmo extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Disassemble Ammo";
+		m_Name = "Disassemble Pistol Ammo";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -306,7 +309,7 @@ class Disassemble_SRP_RifleAmmo extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Disassemble Ammo";
+		m_Name = "Disassemble Rifle Ammo";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision

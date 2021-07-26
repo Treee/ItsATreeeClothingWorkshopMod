@@ -136,6 +136,14 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 "Rusted metal shelf" (https://skfb.ly/6U7QS) by ELIZION is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Bullets" (https://skfb.ly/6AUrR) by MarcosBritoJR is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"WIP/ Smoky Quartz crystal - crushed" (https://skfb.ly/6WQVX) by laboratorija is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+"Nails" (https://skfb.ly/6qOUp) by Alex Bes is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"First try" (https://skfb.ly/6YGOP) by Annie Yoon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
