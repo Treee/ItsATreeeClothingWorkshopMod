@@ -1120,6 +1120,4 @@ class CfgVehicles
 
   //------------------------------ BASE BUILDING
 
-
-
 };

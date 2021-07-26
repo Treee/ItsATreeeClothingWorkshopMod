@@ -27,6 +27,25 @@ class SRP_PostBox extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxBlue extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxWooden extends SRP_DeployableContainer_Base{};
 
+class SRP_TetrisShelfLDown extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfLUp extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfLLeft extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfLRight extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfIVertical extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfIHorizontal extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfTUp extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfTDown extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfTVertical extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfSHorizontal extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfSVertical extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelfBox extends SRP_DeployableContainer_Base{};
+
+class SRP_GiftBoxSmall extends SRP_DeployableContainer_Base{};
+class SRP_GiftBoxMedium extends SRP_DeployableContainer_Base{};
+class SRP_GiftBoxLarge extends SRP_DeployableContainer_Base{};
+class SRP_GiftBoxLetter extends SRP_DeployableContainer_Base{};
+
+
 // These are containers that cannot be put in your hands and need to be dismantled to re-place
 class SRP_Container_Base extends DeployableContainer_Base
 {
@@ -78,6 +97,7 @@ class SRP_MilitaryCaseLarge extends SRP_Container_Base{};
 class SRP_MilitaryCaseLong extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongBlue extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
+class SRP_BarricadeMetal extends SRP_Container_Base{};
 
 class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
 {

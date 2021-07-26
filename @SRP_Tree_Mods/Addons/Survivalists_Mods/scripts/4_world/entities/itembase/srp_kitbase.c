@@ -132,52 +132,53 @@ class SRP_KitBase extends ItemBase
 		AddAction(ActionTogglePlaceObject);
 		AddAction(ActionDeployObject);
 	}
-}
+};
 // If you add a new kit, add it to this list so it gets the right stuff
 //craftable kits
-class SRP_BedsideTable_Kit extends SRP_KitBase {}
-class SRP_BedsideTableMetal_Kit extends SRP_KitBase {}
+class SRP_BedsideTable_Kit extends SRP_KitBase{};
+class SRP_BedsideTableMetal_Kit extends SRP_KitBase{};
 
-class SRP_WoodenShelfSimple_Kit extends SRP_KitBase {}
-class SRP_WoodenShelfSimpleGround_Kit extends SRP_KitBase {}
-class SRP_WoodenShelfGround_Kit extends SRP_KitBase {}
-class SRP_WoodenShelfGroundTall_Kit extends SRP_KitBase {}
-class SRP_MetalShelfSimpleGround_Kit extends SRP_KitBase {}
-class SRP_MetalShelfGround_Kit extends SRP_KitBase {}
-class SRP_GunShelfWall_Kit extends SRP_KitBase {}
+class SRP_WoodenShelfSimple_Kit extends SRP_KitBase{};
+class SRP_WoodenShelfSimpleGround_Kit extends SRP_KitBase{};
+class SRP_WoodenShelfGround_Kit extends SRP_KitBase{};
+class SRP_WoodenShelfGroundTall_Kit extends SRP_KitBase{};
+class SRP_MetalShelfSimpleGround_Kit extends SRP_KitBase{};
+class SRP_MetalShelfGround_Kit extends SRP_KitBase{};
+class SRP_GunShelfWall_Kit extends SRP_KitBase{};
 
-class SRP_GunShelfGround_Kit extends SRP_KitBase {}
-class SRP_Potbelly_Stove_Kit extends SRP_KitBase {}
+class SRP_GunShelfGround_Kit extends SRP_KitBase{};
+class SRP_Potbelly_Stove_Kit extends SRP_KitBase{};
 
-class SRP_ShootingTarget_Kit extends SRP_KitBase {}
-class SRP_ShootingTargets_Kit extends SRP_KitBase {}
+class SRP_ShootingTarget_Kit extends SRP_KitBase{};
+class SRP_ShootingTargets_Kit extends SRP_KitBase{};
 
-class SRP_StreetLightLarge_Kit extends SRP_KitBase {}
-class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase {}
-class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase {}
-class SRP_StreetLightMedium_Kit extends SRP_KitBase {}
+class SRP_StreetLightLarge_Kit extends SRP_KitBase{};
+class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase{};
+class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase{};
+class SRP_StreetLightMedium_Kit extends SRP_KitBase{};
 
-class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase {}
+class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase{};
 
 // non craftable kits
-class SRP_Fridge_Kit extends SRP_KitBase {}
-class SRP_FridgeLarge_Kit extends SRP_KitBase {}
-class SRP_FridgeRetro_Kit extends SRP_KitBase {}
+class SRP_Fridge_Kit extends SRP_KitBase{};
+class SRP_FridgeLarge_Kit extends SRP_KitBase{};
+class SRP_FridgeRetro_Kit extends SRP_KitBase{};
 
-class SRP_MilitaryCaseSmall_Kit extends SRP_KitBase {}
-class SRP_MilitaryCaseSmallBlack_Kit extends SRP_KitBase {}
-class SRP_MilitaryCaseMedium_Kit extends SRP_KitBase {}
-class SRP_MilitaryCaseLong_Kit extends SRP_KitBase {}
-class SRP_MilitaryCaseLarge_Kit extends SRP_KitBase {}
-class SRP_MilitaryCaseLongBlue_Kit extends SRP_KitBase {}
-class SRP_MilitaryCaseLongTan_Kit extends SRP_KitBase {}
+class SRP_MilitaryCaseSmall_Kit extends SRP_KitBase{};
+class SRP_MilitaryCaseSmallBlack_Kit extends SRP_KitBase{};
+class SRP_MilitaryCaseMedium_Kit extends SRP_KitBase{};
+class SRP_MilitaryCaseLong_Kit extends SRP_KitBase{};
+class SRP_MilitaryCaseLarge_Kit extends SRP_KitBase{};
+class SRP_MilitaryCaseLongBlue_Kit extends SRP_KitBase{};
+class SRP_MilitaryCaseLongTan_Kit extends SRP_KitBase{};
 
-class SRP_GChair_Kit extends SRP_KitBase {}
-class SRP_GChairHigh_Kit extends SRP_KitBase {}
-class SRP_GOutdoorTable_Kit extends SRP_KitBase {}
-class SRP_GOutdoorTableUmbrella_Kit extends SRP_KitBase {}
-class SRP_Umbrella_Kit extends SRP_KitBase {}
-class SRP_Carpet_Kit extends SRP_KitBase {}
-class SRP_CarpetRug_Kit extends SRP_KitBase {}
-class SRP_MedicalCurtains_Kit extends SRP_KitBase {}
+class SRP_GChair_Kit extends SRP_KitBase{};
+class SRP_GChairHigh_Kit extends SRP_KitBase{};
+class SRP_GOutdoorTable_Kit extends SRP_KitBase{};
+class SRP_GOutdoorTableUmbrella_Kit extends SRP_KitBase{};
+class SRP_Umbrella_Kit extends SRP_KitBase{};
+class SRP_Carpet_Kit extends SRP_KitBase{};
+class SRP_CarpetRug_Kit extends SRP_KitBase{};
+class SRP_MedicalCurtains_Kit extends SRP_KitBase{};
+class SRP_BarricadeMetal_Kit extends SRP_KitBase{};
 

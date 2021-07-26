@@ -466,4 +466,56 @@ class CfgVehicles
 			};
 		};
 	};
+
+
+  class SRP_BarricadeMetal_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Metal Barricade Kit";
+		descriptionShort="A placeable metal Barricade kit!";
+	};
+
+	class SRP_BarricadeMetal: Container_Base  // new
+	{
+		scope=2;
+		displayName="Metal Barricade";
+		descriptionShort="A metal barricade meant to keep things out.";
+		model="Survivalists_Mods\structures\furniture\metalspikewall.p3d";
+		carveNavmesh=1;
+		weight=3000;
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
 };

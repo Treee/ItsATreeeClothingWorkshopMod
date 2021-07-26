@@ -414,6 +414,275 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_TetrisShelfLDown_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Tetris Shelf Kit - L Shape Down";
+		descriptionShort="A shelf in the shape of a tetris piece.";
+	};
+  class SRP_TetrisShelfLDown: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf - L Shape Down";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisL_down.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfLUp_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Tetris Shelf Kit - L Shape Up";
+		descriptionShort="A shelf in the shape of a tetris piece.";
+	}; 
+  class SRP_TetrisShelfLUp: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf - L Shape Up";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisL_up.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfLLeft_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Tetris Shelf Kit - L Shape Left";
+		descriptionShort="A shelf in the shape of a tetris piece.";
+	}; 
+  class SRP_TetrisShelfLLeft: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf - L Shape Left";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisL_left.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfLRight_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Tetris Shelf Kit - L Shape Right";
+		descriptionShort="A shelf in the shape of a tetris piece.";
+	};
+  class SRP_TetrisShelfLRight: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf - L Shape Right";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisL_right.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+
+  class SRP_TetrisShelfIVertical: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf - I Shape Vertical";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisI_vertical.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfIHorizontal: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf Kit - I Shape Horizontal";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisI_horizontal.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfTUp: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf - T Shape Up";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisT_up.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfTDown: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf - T Shape Down";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisT_down.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfTVertical: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf Kit - T Shape Vertical";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisT_vertical.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfSHorizontal: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf - S Shape Horizontal";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisS_horizontal.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfSVertical: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf Kit - S Shape Vertical";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisS_vertical.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+  class SRP_TetrisShelfBox: Container_Base //new
+	{
+		scope=2;
+		displayName="Tetris Shelf Kit - Box Shape";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\wallshelftetrisbox.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+
+  class SRP_GiftBoxSmall: Container_Base //new
+	{
+		scope=2;
+		displayName="Gift Box - Small";
+		descriptionShort="A box with a gift inside";
+		model="Survivalists_Mods\gear\containers\giftboxsmall.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={2,3};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+
+  class SRP_GiftBoxMedium: Container_Base //new
+	{
+		scope=2;
+		displayName="Gift Box - Medium";
+		descriptionShort="A box with a gift inside";
+		model="Survivalists_Mods\gear\containers\giftboxmedium.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={3,4};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+
+  class SRP_GiftBoxLarge: Container_Base //new
+	{
+		scope=2;
+		displayName="Gift Box - Large";
+		descriptionShort="A box with a gift inside";
+		model="Survivalists_Mods\gear\containers\giftboxlarge.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={4,4};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
+
+  class SRP_GiftBoxLetter: Container_Base //new
+	{
+		scope=2;
+		displayName="Gift Box - Letter";
+		descriptionShort="A box with a gift inside";
+		model="Survivalists_Mods\gear\containers\giftboxletter.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={2,2};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+	};
 
 
 

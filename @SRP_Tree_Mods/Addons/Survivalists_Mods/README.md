@@ -150,6 +150,12 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 "Shelf" (https://skfb.ly/6BByU) by Bailey Lawler is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Tetris Shelf" (https://skfb.ly/o6w8R) by BlackCube is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Presents" (https://skfb.ly/6FEMv) by cranberrymk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Nail Shoulder Patch" (https://skfb.ly/6VK6Z) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
