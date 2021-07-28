@@ -20,7 +20,11 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 
 ![Backpacks](../../../ItsATreeeModSource/src/dayz_tools/\survivalists_mod_items/backpacks.png)
 
-And a few items not from vanilla. Can you spot which ones?
+### Belts
+
+Here are a few custom belts pulled from various sources. See the attributions below for who created the model.
+
+![Belts](../../../ItsATreeeModSource/src/dayz_tools/\survivalists_mod_items/belts.png)
 
 ## Gear
 

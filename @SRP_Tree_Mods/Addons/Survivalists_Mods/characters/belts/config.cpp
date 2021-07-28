@@ -108,29 +108,4 @@ class CfgVehicles
 			female="Survivalists_Mods\characters\belts\tacticalbelt_m.p3d";
 		};
   };
-
-  // class SRP_bandoleer: MilitaryBelt // BP_bandoleer
-	// {
-	// 	scope=2;
-	// 	displayName="Bandoleer";
-	// 	descriptionShort="A Durable belt with pouches for cartridges or other equally useful things.";
-	// 	model="Survivalists_Mods\characters\belts\bandoleer_g.p3d";
-	// 	attachments[]=
-	// 	{
-	// 		"Pistol"
-	// 	};
-	// 	itemsCargoSize[]={6,1};
-	// 	weight=20;
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"camoGround",
-	// 		"camoMale",
-	// 		"camoFemale"
-	// 	};
-	// 	class ClothingTypes
-	// 	{
-	// 		male="Survivalists_Mods\characters\belts\bandoleer_m.p3d";
-	// 		female="Survivalists_Mods\characters\belts\bandoleer_m.p3d";
-	// 	};
-	// };
 };
