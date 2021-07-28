@@ -265,6 +265,4 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack_red_co.paa",
 		};
 	};
-  
-
 };

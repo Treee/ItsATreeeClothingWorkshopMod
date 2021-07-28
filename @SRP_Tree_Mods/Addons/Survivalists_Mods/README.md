@@ -2,6 +2,26 @@
 
 This mod pack contains the bulk of the unique items and features Survivalists has to offer.
 
+## Characters
+
+### Backpacks
+
+#### Modded Items
+
+- Mass NBC Bag size increased to allow for a mask to fit inside.
+
+#### Retextures
+
+- Hunting Bag
+- Courier Bag
+- Mountain Bag
+- Assault Bag
+- Taloon Bag
+
+![Backpacks](../../../ItsATreeeModSource/src/dayz_tools/\survivalists_mod_items/backpacks.png)
+
+And a few items not from vanilla. Can you spot which ones?
+
 ## Gear
 
 ### Camping
