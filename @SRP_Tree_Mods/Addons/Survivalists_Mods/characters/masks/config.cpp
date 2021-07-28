@@ -16,7 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
   class SurgicalMask;
-  class BandanaMask_ColorBase;
+  class Bandana_ColorBase;
   class HockeyMask;
   class GP5GasMask_Filter;
   class Clothing;
@@ -53,7 +53,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_BandanaMask_65Black: BandanaMask_ColorBase  // BandanaMask_65Black
+	class SRP_BandanaMask_65Black: Bandana_ColorBase  // BandanaMask_65Black
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -69,7 +69,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_65b.paa"
 		};
 	};
-	class SRP_BandanaMask_65Desert: BandanaMask_ColorBase  // BandanaMask_65Desert
+	class SRP_BandanaMask_65Desert: Bandana_ColorBase  // BandanaMask_65Desert
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -85,7 +85,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_65d.paa"
 		};
 	};
-	class SRP_BandanaMask_65Tan: BandanaMask_ColorBase  // BandanaMask_65Tan
+	class SRP_BandanaMask_65Tan: Bandana_ColorBase  // BandanaMask_65Tan
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -101,7 +101,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_65t.paa"
 		};
 	};
-	class SRP_BandanaMask_CheckBlue: BandanaMask_ColorBase  // BandanaMask_CheckBlue
+	class SRP_BandanaMask_CheckBlue: Bandana_ColorBase  // BandanaMask_CheckBlue
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -117,7 +117,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_cb.paa"
 		};
 	};
-	class SRP_BandanaMask_CheckBlueBright: BandanaMask_ColorBase  // BandanaMask_CheckBlueBright
+	class SRP_BandanaMask_CheckBlueBright: Bandana_ColorBase  // BandanaMask_CheckBlueBright
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -133,7 +133,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_cbb.paa"
 		};
 	};
-	class SRP_BandanaMask_CheckGreen: BandanaMask_ColorBase  // BandanaMask_CheckGreen
+	class SRP_BandanaMask_CheckGreen: Bandana_ColorBase  // BandanaMask_CheckGreen
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -149,7 +149,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_cg.paa"
 		};
 	};
-	class SRP_BandanaMask_CheckRed: BandanaMask_ColorBase  // BandanaMask_CheckRed
+	class SRP_BandanaMask_CheckRed: Bandana_ColorBase  // BandanaMask_CheckRed
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -165,7 +165,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_cr.paa"
 		};
 	};
-	class SRP_BandanaMask_CheckWhite: BandanaMask_ColorBase  // BandanaMask_CheckWhite
+	class SRP_BandanaMask_CheckWhite: Bandana_ColorBase  // BandanaMask_CheckWhite
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -181,7 +181,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_cw.paa"
 		};
 	};
-	class SRP_BandanaMask_Denim: BandanaMask_ColorBase  // BandanaMask_Denim
+	class SRP_BandanaMask_Denim: Bandana_ColorBase  // BandanaMask_Denim
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -197,7 +197,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_denim.paa"
 		};
 	};
-	class SRP_BandanaMask_Kamysh: BandanaMask_ColorBase  // BandanaMask_Kamysh
+	class SRP_BandanaMask_Kamysh: Bandana_ColorBase  // BandanaMask_Kamysh
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -213,7 +213,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_kamysh.paa"
 		};
 	};
-	class SRP_BandanaMask_USMC_D: BandanaMask_ColorBase  // BandanaMask_USMC_D
+	class SRP_BandanaMask_USMC_D: Bandana_ColorBase  // BandanaMask_USMC_D
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -229,7 +229,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\bandanafhg_usmc_d.paa"
 		};
 	};
-	class SRP_BandanaMask_USMC_W: BandanaMask_ColorBase  // BandanaMask_USMC_W
+	class SRP_BandanaMask_USMC_W: Bandana_ColorBase  // BandanaMask_USMC_W
 	{
 		scope=2;
 		hiddenSelections[]=

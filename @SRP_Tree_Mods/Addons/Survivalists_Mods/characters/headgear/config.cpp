@@ -16,7 +16,6 @@ class CfgPatches
 class CfgVehicles
 {
   class BurlapSackCover;
-  class BandanaHead_ColorBase;
   class Bandana_ColorBase;
   class BaseballCap_ColorBase;
   class MilitaryBeret_ColorBase;
@@ -313,7 +312,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_BandanaHead_65Black: BandanaHead_ColorBase  // BandanaHead_65Black
+  class SRP_BandanaHead_65Black: Bandana_ColorBase  // BandanaHead_65Black
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -329,7 +328,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_65b.paa"
 		};
 	};
-	class SRP_BandanaHead_65Desert: BandanaHead_ColorBase  // BandanaHead_65Desert
+	class SRP_BandanaHead_65Desert: Bandana_ColorBase  // BandanaHead_65Desert
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -345,7 +344,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_65d.paa"
 		};
 	};
-	class SRP_BandanaHead_65Tan: BandanaHead_ColorBase  // BandanaHead_65Tan
+	class SRP_BandanaHead_65Tan: Bandana_ColorBase  // BandanaHead_65Tan
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -361,7 +360,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_65t.paa"
 		};
 	};
-	class SRP_BandanaHead_CheckBlue: BandanaHead_ColorBase  // BandanaHead_CheckBlue
+	class SRP_BandanaHead_CheckBlue: Bandana_ColorBase  // BandanaHead_CheckBlue
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -377,7 +376,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cb.paa"
 		};
 	};
-	class SRP_BandanaHead_CheckBlueBright: BandanaHead_ColorBase  // BandanaHead_CheckBlueBright
+	class SRP_BandanaHead_CheckBlueBright: Bandana_ColorBase  // BandanaHead_CheckBlueBright
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -393,7 +392,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cbb.paa"
 		};
 	};
-	class SRP_BandanaHead_CheckGreen: BandanaHead_ColorBase  // BandanaHead_CheckGreen
+	class SRP_BandanaHead_CheckGreen: Bandana_ColorBase  // BandanaHead_CheckGreen
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -409,7 +408,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cg.paa"
 		};
 	};
-	class SRP_BandanaHead_CheckRed: BandanaHead_ColorBase  // BandanaHead_CheckRed
+	class SRP_BandanaHead_CheckRed: Bandana_ColorBase  // BandanaHead_CheckRed
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -425,7 +424,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cr.paa"
 		};
 	};
-	class SRP_BandanaHead_CheckWhite: BandanaHead_ColorBase  // BandanaHead_CheckWhite
+	class SRP_BandanaHead_CheckWhite: Bandana_ColorBase  // BandanaHead_CheckWhite
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -441,7 +440,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cw.paa"
 		};
 	};
-	class SRP_BandanaHead_Denim: BandanaHead_ColorBase  // BandanaHead_Denim
+	class SRP_BandanaHead_Denim: Bandana_ColorBase  // BandanaHead_Denim
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -457,7 +456,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_denim.paa"
 		};
 	};
-	class SRP_BandanaHead_Kamysh: BandanaHead_ColorBase  // BandanaHead_Kamysh
+	class SRP_BandanaHead_Kamysh: Bandana_ColorBase  // BandanaHead_Kamysh
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -473,7 +472,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_kamysh.paa"
 		};
 	};
-	class SRP_BandanaHead_USMC_D: BandanaHead_ColorBase  // BandanaHead_USMC_D
+	class SRP_BandanaHead_USMC_D: Bandana_ColorBase  // BandanaHead_USMC_D
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -489,7 +488,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_d.paa"
 		};
 	};
-	class SRP_BandanaHead_USMC_W: BandanaHead_ColorBase  // BandanaHead_USMC_W
+	class SRP_BandanaHead_USMC_W: Bandana_ColorBase  // BandanaHead_USMC_W
 	{
 		scope=2;
 		hiddenSelections[]=

@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="BP2\camo\top\data\minidress1_nohq.paa";
+	texture="Survivalists_Mods\characters\tops\data\minidress1_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="BP2\camo\top\data\minidress1_smdi.paa";
+	texture="Survivalists_Mods\characters\tops\data\minidress1_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

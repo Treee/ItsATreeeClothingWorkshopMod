@@ -105,9 +105,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BP2\camo\shoes\data\nbc_boots_orange_co.paa",
-			"BP2\camo\shoes\data\nbc_boots_orange_co.paa",
-			"BP2\camo\shoes\data\nbc_boots_orange_co.paa"
+			"Survivalists_Mods\characters\shoes\data\nbc_boots_orange_co.paa",
+			"Survivalists_Mods\characters\shoes\data\nbc_boots_orange_co.paa",
+			"Survivalists_Mods\characters\shoes\data\nbc_boots_orange_co.paa"
 		};
 	};
 };

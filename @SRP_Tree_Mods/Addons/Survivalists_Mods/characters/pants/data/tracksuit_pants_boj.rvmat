@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="BP2\camo\pants\data\tracksuit_pants_boj_nohq.paa";
+	texture="Survivalists_Mods\characters\pants\data\tracksuit_pants_boj_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
