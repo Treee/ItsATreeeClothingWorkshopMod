@@ -34,6 +34,11 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ![Glasses](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/glasses.png)
 
+
+### Gloves
+
+![Gloves](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/gloves.png)
+
 ## Gear
 
 ### Camping
