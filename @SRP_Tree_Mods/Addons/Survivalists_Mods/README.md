@@ -18,13 +18,21 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 - Assault Bag
 - Taloon Bag
 
-![Backpacks](../../../ItsATreeeModSource/src/dayz_tools/\survivalists_mod_items/backpacks.png)
+![Backpacks](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/backpacks.png)
 
 ### Belts
 
 Here are a few custom belts pulled from various sources. See the attributions below for who created the model.
 
-![Belts](../../../ItsATreeeModSource/src/dayz_tools/\survivalists_mod_items/belts.png)
+![Belts](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/belts.png)
+
+### Glasses
+
+- Custom NVG
+- Short Range NVG
+- Quad NVG
+
+![Glasses](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/glasses.png)
 
 ## Gear
 
