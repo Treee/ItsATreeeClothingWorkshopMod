@@ -34,14 +34,62 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ![Glasses](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/glasses.png)
 
-
 ### Gloves
 
 ![Gloves](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/gloves.png)
 
+### Headgear
+
+- MotoHelmets only partially obstruct your voice.
+- Headtorch size is a 2x1.
+- Tons of custom bandana's.
+
+#### Retextures and New Items
+
+![Headgear](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/headgear.png)
+
+### Masks
+
+- GasMask only partially obstruct your voice.
+- Tons of custom bandana's.
+
+#### Retextures and New Items
+
+![Masks](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/masks.png)
+
+### Pants
+
+#### Retextures and New Items
+
+![Pants](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/pants.png)
+
+### Shoes
+
+#### Retextures and New Items
+
+![Shoes](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/shoes.png)
+
+### Tops
+
+#### Retextures and New Items
+
+![Tops](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/tops.png)
+
+### Vests
+
+#### Retextures and New Items
+
+![Vests](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/vests.png)
+
 ## Gear
 
 ### Camping
+
+- Sleeping bags do not provide storage.
+- Flagpoles are built with shovels
+- Cable Reels have 50 units of length
+
+![Camping]](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/camping.png)
 
 ### Consumables
 

@@ -15,7 +15,6 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class Wellies_ColorBase;
   class AthleticShoes_ColorBase;
   class JungleBoots_ColorBase;
   class NBCBootsBase;
