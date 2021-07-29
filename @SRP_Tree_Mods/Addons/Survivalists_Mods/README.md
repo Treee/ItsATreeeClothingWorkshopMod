@@ -89,7 +89,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Flagpoles are built with shovels
 - Cable Reels have 50 units of length
 
-![Camping]](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/camping.png)
+![Camping](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/camping.png)
 
 ### Consumables
 
