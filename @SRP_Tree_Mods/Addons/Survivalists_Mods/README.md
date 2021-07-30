@@ -130,6 +130,11 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ### Medical
 
+- Expanded medical supplies.
+- Bacteria/Virus/Antibiotic Injectors and Cures.
+
+![Medical](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/medical.png)
+
 ### Optics
 
 - Binoculars can be equiped to slots
@@ -157,9 +162,6 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Fire Extinguisher can be equiped in melee slot
 - New heatpack that burns very hot
 - Multi-color pens: Black, Blue, Red, Green
-
-
-
 
 # Attributions
 
