@@ -6,6 +6,9 @@ modded class PluginRecipesManagerBase extends PluginBase
 		// UnregisterRecipe("CraftStoneKnife");	// Removing an existing recipe
    
     // Crafting
+    //---------Deconstruct Items into Kits
+    RegisterRecipe(new Deconstruct_PlacedObjectKit);
+    
     //---------Kits
 		RegisterRecipe(new Craft_SRP_BedsideTable_Kit);
 		RegisterRecipe(new Craft_SRP_WoodenShelf_Kit);
@@ -14,24 +17,6 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new Craft_SRP_ShootingTargetO_Kit);		
 		RegisterRecipe(new Craft_SRP_StreetLightLarge_Kit);		
 		RegisterRecipe(new Craft_SRP_StreetLightMedium_Kit);		
-
-    //---------Deconstruct Items into Kits
-    RegisterRecipe(new Deconstruct_SRP_BedsideTable);		
-    RegisterRecipe(new Deconstruct_SRP_Woodenshelf);		
-    RegisterRecipe(new Deconstruct_SRP_GunShelf);		
-    RegisterRecipe(new Deconstruct_SRP_Potbelly_Stove);
-    RegisterRecipe(new Deconstruct_SRP_ShootingTargetO);
-    RegisterRecipe(new Deconstruct_SRP_StreetLightLarge);
-    RegisterRecipe(new Deconstruct_SRP_StreetLightMedium);
-
-    RegisterRecipe(new Deconstruct_SRP_GChair);
-    RegisterRecipe(new Deconstruct_SRP_GChairHigh);
-    RegisterRecipe(new Deconstruct_SRP_GOutdoorTable);
-    RegisterRecipe(new Deconstruct_SRP_GOutdoorTableUmbrella);
-    RegisterRecipe(new Deconstruct_SRP_Umbrella);
-    RegisterRecipe(new Deconstruct_SRP_Furniture_WoodenTable);
-    RegisterRecipe(new Deconstruct_SRP_AdvancedWorkbench);
-    RegisterRecipe(new Deconstruct_SRP_Carpet);
 
     // Building
     RegisterRecipe(new Craft_SRP_Planks);

@@ -112,6 +112,8 @@ Here are a few custom belts pulled from various sources. See the attributions be
   - Ammo Press
   - Caseing Prep  
 - Shooting Targets
+- Combine heat packs.
+- Refill butane canisters
 
 ![Crafting](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/crafting.png)
 
@@ -162,6 +164,19 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Fire Extinguisher can be equiped in melee slot
 - New heatpack that burns very hot
 - Multi-color pens: Black, Blue, Red, Green
+
+## HUD Changes
+
+- "H"   Hotkey to display the compass on your HUD.
+- "`/~" Press to hid your hotbar. Hold to toggle hide your UI
+- "O"   Hotkey to mute your radio from broadcasting your voice. Useful for group radio discipline.
+
+## Gameplay Changes
+
+- Chance for a brain to drop from a cut up survivor.
+- Unfold your map and run while orienteering.
+- Inject your enemies with bioweapons and cure your allies.
+
 
 # Attributions
 
