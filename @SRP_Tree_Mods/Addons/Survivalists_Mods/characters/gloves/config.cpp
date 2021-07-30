@@ -37,7 +37,6 @@ class CfgVehicles
 			"Survivalists_Mods\characters\gloves\data\nbc_gloves_blue_co.paa",
 			"Survivalists_Mods\characters\gloves\data\nbc_gloves_blue_co.paa"
 		};
-
 	};
   
 	class SRP_OMNOGloves_Green: OMNOGloves_ColorBase  // BP2_Denglove_green

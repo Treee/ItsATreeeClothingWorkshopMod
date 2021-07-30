@@ -7,7 +7,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]={
       "DZ_Data",
-      "DZ_Weapons_Projectiles"
+      "DZ_Weapons_Projectiles",
+      "Survivalists_Mods"
     };
 	};
 };

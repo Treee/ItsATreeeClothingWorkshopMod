@@ -178,6 +178,22 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Inject your enemies with bioweapons and cure your allies.
 - Placed Objects require a screwdriver or hammer to dismantle. This incidicates a hard raid which needs to be approved by the admins.
 
+## Structures
+
+### Furniture
+
+![Furniture](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/furniture.png)
+
+### Signs
+
+![Signs](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/signs.png)
+
+### Vehicles
+
+- Jerry cans are smaller, hold more and sound different.
+
+## Ammunition
+
 
 
 # Attributions
