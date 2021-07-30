@@ -155,5 +155,35 @@ modded class PluginRecipesManagerBase extends PluginBase
     // Gloves
     RegisterRecipe(new Craft_SRP_OMNOGloves_Green);    
 
+
+    // ------------------------------ Food and Drinks
+    RegisterRecipe(new Craft_SRP_Blood_Bottle);   
+
+    // -------------------------------- MEDICAL
+    RegisterRecipe(new Craft_SRP_FullSyringe_Kuru);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_Kuru);   
+    RegisterRecipe(new Craft_SRP_FullSyringe_KuruCure);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_KuruCure);   
+
+    RegisterRecipe(new Craft_SRP_FullSyringe_Salmonella);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_Salmonella);   
+    RegisterRecipe(new Craft_SRP_FullSyringe_SalmonellaCure);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_SalmonellaCure);  
+
+    RegisterRecipe(new Craft_SRP_FullSyringe_Influenza);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_Influenza);   
+    RegisterRecipe(new Craft_SRP_FullSyringe_InfluenzaCure);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_InfluenzaCure); 
+
+    RegisterRecipe(new Craft_SRP_FullSyringe_Cholera);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_Cholera);   
+    RegisterRecipe(new Craft_SRP_FullSyringe_CholeraCure);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_CholeraCure); 
+
+    RegisterRecipe(new Craft_SRP_FullSyringe_Ampicillin);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_Ampicillin); 
+
+    RegisterRecipe(new Craft_SRP_FullSyringe_Ceftazidim);   
+    RegisterRecipe(new Craft_AddTo_SRP_InjectionVial_Ceftazidim); 
 	}
 };
