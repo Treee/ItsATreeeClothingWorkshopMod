@@ -48,7 +48,8 @@ class CfgVehicles
 		{
 			"camoGround",
 			"camoMale",
-			"camoFemale"
+			"camoFemale",
+			"personality"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -65,7 +66,8 @@ class CfgVehicles
 		{
 			"camoGround",
 			"camoMale",
-			"camoFemale"
+			"camoFemale",
+			"personality"
 		};
 		hiddenSelectionsTextures[]=
 		{
