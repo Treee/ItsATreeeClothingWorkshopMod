@@ -176,6 +176,8 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Chance for a brain to drop from a cut up survivor.
 - Unfold your map and run while orienteering.
 - Inject your enemies with bioweapons and cure your allies.
+- Placed Objects require a screwdriver or hammer to dismantle. This incidicates a hard raid which needs to be approved by the admins.
+
 
 
 # Attributions

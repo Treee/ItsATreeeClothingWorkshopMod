@@ -16,7 +16,6 @@ class CfgPatches
 };
 class CfgVehicles
 {
-
   class HouseNoDestruct;
   class Container_Base;
 
