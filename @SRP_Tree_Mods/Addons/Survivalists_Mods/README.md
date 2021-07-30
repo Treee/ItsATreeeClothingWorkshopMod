@@ -121,14 +121,42 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ### Food
 
+- Box cereal can be split and combined.
+- Meat is an ingredient for many recipes and attaches to plates.
+- Meat can be smoked and burns when above 60C for too long.
+- Canning food is now an option in three forms: Veggie, Meat, Combo.
+
+![Food](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/food.png)
+
 ### Medical
 
 ### Optics
 
+- Binoculars can be equiped to slots
+
+![Optics](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/optics.png)
+
 ### Radio
+
+- Cassette players can be attached to walkie talkie slots
+  - There are many music, lore and recording tapes.
+- Different ranges for radios to allow for tighter control on how far you can be heard.
+  - 500m  Red
+  - 1km   White, Yellow
+  - 2.5km Green, Blue
+  - 5km   Handheld Radio (Black)
+  - 7.5km Military Radio (Green)
+
+![Radio](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/radio.png)
 
 ### Tools
 
+- Heat packs last longer and get kinda hot.
+- Field shovels can be equiped in certain slots.
+- Hammer can be repaired with the right kit.
+- Fire Extinguisher can be equiped in melee slot
+- New heatpack that burns very hot
+- Multi-color pens: Black, Blue, Red, Green
 
 
 
