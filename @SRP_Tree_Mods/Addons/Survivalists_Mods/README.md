@@ -194,7 +194,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ## Ammunition
 
-
+![Ammunition](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/ammunition.png)
 
 # Attributions
 
