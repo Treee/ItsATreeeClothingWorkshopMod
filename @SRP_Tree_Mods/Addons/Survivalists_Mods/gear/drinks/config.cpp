@@ -1,4 +1,4 @@
-	class CfgPatches
+class CfgPatches
 {
 	class Survivalists_Mods_Gear_Drinks
 	{
@@ -406,7 +406,7 @@ class CfgVehicles
 		};
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_doubletap_ca.paa"
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_doubletap_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
     {
@@ -425,7 +425,7 @@ class CfgVehicles
 		};
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_electric_ca.paa"
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_electric_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
     {
@@ -444,7 +444,7 @@ class CfgVehicles
 		};
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_jugger_ca.paa"
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_jugger_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
     {
@@ -463,7 +463,7 @@ class CfgVehicles
 		};
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_reviver_ca.paa"
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_reviver_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
     {
@@ -482,7 +482,7 @@ class CfgVehicles
 		};
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_speedy_ca.paa"
+			"Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda_speedy_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
     {

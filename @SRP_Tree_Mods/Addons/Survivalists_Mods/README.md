@@ -104,9 +104,20 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ### Cooking
 
+- The Portable Gas Lamp is equipable to certain slots.
+
 ### Crafting
 
-### Drink
+- Advanced Workbench
+  - Ammo Press
+  - Caseing Prep  
+- Shooting Targets
+
+![Crafting](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/crafting.png)
+
+### Drinks
+
+![Drinks](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/drinks.png)
 
 ### Food
 
