@@ -1875,4 +1875,5 @@ class CfgVehicles
 			"Survivalists_Mods\gear\containers\data\leatherpouchsmall.rvmat"
     };
 	};
+
 };

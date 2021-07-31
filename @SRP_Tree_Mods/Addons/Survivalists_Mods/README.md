@@ -324,6 +324,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 "Bullet Pack" (https://skfb.ly/6WMBY) by paoone28 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Logs" (https://skfb.ly/P8SY) by TrolliZBS is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Wishlist
 
