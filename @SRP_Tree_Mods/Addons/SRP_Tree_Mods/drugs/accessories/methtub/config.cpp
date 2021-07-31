@@ -20,6 +20,16 @@ class CfgVehicles
   class Inventory_Base;
   class Ammunition_Base;
 
+  class HeadlightH7: Inventory_Base
+	{
+		inventorySlot[]=
+		{
+			"Reflector_1_1",
+			"Reflector_2_1",
+      "Lightbulb"
+		};
+	};
+
 	class SRP_Drug_Blueprint_Meth: Inventory_Base
 	{
 		scope=2;
