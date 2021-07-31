@@ -1,7 +1,9 @@
 class SmileAcidEffectSymptom extends SymptomBase
 {
-  float m_chromaX = 1;  
-  float m_chromaY = 3;
+  float m_chromaX = 0;  
+  float m_chromaXIntensity = 0.1;
+  float m_chromaY = 0;
+  float m_chromaYIntensity = 0.1;
 
   float m_hue = 60;
   float m_hueMax = 30;
@@ -34,6 +36,20 @@ class SmileAcidEffectSymptom extends SymptomBase
     }
     m_hue += (m_hueIntensity * deltatime); 
 
+    if (m_chromaX > 4 && m_chromaXIntensity > 0) {
+      m_chromaXIntensity *= -1;
+    } else if (m_chromaX < 2 && m_chromaXIntensity < 0) {
+      m_chromaXIntensity *= -1;
+    }
+    m_chromaX += (m_chromaXIntensity * deltatime);
+
+    if (m_chromaY > 4 && m_chromaYIntensity > 0) {
+      m_chromaYIntensity *= -1;
+    } else if (m_chromaY < 2 && m_chromaYIntensity < 0) {
+      m_chromaYIntensity *= -1;
+    }
+    m_chromaY += (m_chromaYIntensity * deltatime);
+
     CameraEffects.changeRadBlurXEffect(4);
     CameraEffects.changeRadBlurYEffect(4);
 
@@ -52,8 +68,8 @@ class SmileAcidEffectSymptom extends SymptomBase
 
 	override void OnGetActivatedClient(PlayerBase player)
 	{
-    m_chromaX = Math.RandomFloat(1, 3);
-    m_chromaY = Math.RandomFloat(1, 3);
+    // m_chromaX = Math.RandomFloat(1, 3);
+    // m_chromaY = Math.RandomFloat(1, 3);
 
     m_hue = 60;
     m_hueMax = 30;
