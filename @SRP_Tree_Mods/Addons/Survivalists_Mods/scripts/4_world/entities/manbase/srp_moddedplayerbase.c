@@ -33,9 +33,16 @@ modded class PlayerBase extends ManBase
       case SRP_RPC.CHECK_SRP_CONFIG: // this case is for grabbing SRP's config from the server
       {
         Param1<SRPConfig> configParams;
-        if(!ctx.Read(configParams)) return;
-
+        if(!ctx.Read(configParams)) return;        
         GetDayZGame().SetSRPConfigGlobal(configParams.param1);
+        break;
+      }
+      case SRP_RPC.OPEN_CRAFTING_MENU:
+      {
+        if (!GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
+        {
+          GetGame().GetUIManager().EnterScriptedMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting, NULL );
+        }
         break;
       }
     }

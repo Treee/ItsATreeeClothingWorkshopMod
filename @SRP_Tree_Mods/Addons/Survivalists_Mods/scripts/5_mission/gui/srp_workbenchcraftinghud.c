@@ -59,7 +59,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     // AllPosRecipes  = new array<ref TailorOneRecipe>();
     // TempIngrsArray = new array<ref TailorOneItemForCraft>();
     // g_Game.SetKeyboardHandle(this);
-    GetGame().GetMission().PlayerControlDisable( INPUT_EXCLUDE_ALL );
+    // GetGame().GetMission().PlayerControlDisable( INPUT_EXCLUDE_ALL );
   }
 
   void ~WorkbenchGUICraftingHud()
@@ -71,7 +71,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     // AllRecipes.Clear();
     // AllPosRecipes.Clear();
     if (m_MainEnt) GetGame().ObjectDeleteOnClient(m_MainEnt);
-    GetGame().GetMission().PlayerControlEnable( true );
+    // GetGame().GetMission().PlayerControlEnable( true );
 		// g_Game.SetKeyboardHandle(NULL);
   }
 
@@ -118,6 +118,14 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 	{
 		return layoutRoot.FindAnyWidget(val);
 	}
+
+  static void OpenMenu()
+	{
+    if (!GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
+    {
+      GetGame().GetUIManager().EnterScriptedMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting, NULL );
+    }	
+  }
 
   // void TailorFillRecipes()
   // {

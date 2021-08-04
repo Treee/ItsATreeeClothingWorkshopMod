@@ -13,6 +13,11 @@ class ActionInteractWithGUICraftingWorkbench : ActionInteractBase
 		m_ConditionTarget = new CCTObject(UAMaxDistances.DEFAULT);
 	}
 
+  override bool IsInstant()
+  {
+    return true;
+  }
+
 	override string GetText()
 	{
 		return "Read Manual";
@@ -20,46 +25,89 @@ class ActionInteractWithGUICraftingWorkbench : ActionInteractBase
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    // client side check for local offline or live server
-		if (GetGame().IsClient() || !GetGame().IsMultiplayer())
+    if (GetGame().IsClient() || !GetGame().IsMultiplayer())
 		{            
 			string objectType = target.GetObject().GetType();
-			if( (objectType == "SRP_AdvancedWorkbench" || objectType == "SRP_SewingMachine" || objectType == "SRP_DrugWorkbench") && !GetGame().GetUIManager().IsMenuOpen(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting) )
+			if( (objectType == "SRP_AdvancedWorkbench" || objectType == "SRP_SewingMachine" || objectType == "SRP_DrugWorkbench"))
 			{
+        // Print("after check. objecttype " + objectType);
 				return true;
 			}
 			return false;
 		}
-		return false;
+		return true; //server side?
 	}
 
-  override void OnExecuteServer( ActionData action_data )
-	{
-		ItemBase ntarget = ItemBase.Cast( action_data.m_Target.GetObject() );
-    Print("execute server: " + ntarget);
-    Print("execute server: " + ntarget.GetType());
-		string message;
-		if ( ntarget)
+  override protected void OnStart(ActionData action_data)
+  {
+    // ItemBase ntarget = ItemBase.Cast( action_data.m_Target.GetObject() );    
+    if (GetGame().IsClient() || !GetGame().IsMultiplayer())
 		{
-      Print("not null");
-			if (!GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
-      {
-        GetGame().GetUIManager().EnterScriptedMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting, NULL );
-      }
-		}
-	}
-	
-	override void OnExecuteClient( ActionData action_data )
-	{
-		ItemBase ntarget = ItemBase.Cast( action_data.m_Target.GetObject() );
-    Print("execute client: " + ntarget);
-		string message;
-		if ( ntarget)
-		{
+      Print("OnStart");
+      Print(action_data.m_MainItem);
+      Print(action_data.m_MainItem.GetType());
       if (!GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
       {
         GetGame().GetUIManager().EnterScriptedMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting, NULL );
       }
-		}
+      // action_data.m_Player.OpenGUICraftingMenu();
+      // ScriptRPC rpc = new ScriptRPC();
+			// rpc.Send(ntarget, SRP_RPC.OPEN_CRAFTING_MENU, true, action_data.m_Player.GetIdentity() );
+    }
+  }
+
+  override protected void OnExecute( ActionData action_data )
+	{
+    Print("OnExecute");
 	}	
+
+  override protected void OnExecuteServer( ActionData action_data )
+	{
+    Print("OnExecuteServer");
+	}
+
+
+  override protected void OnExecuteClient( ActionData action_data )
+	{
+    Print("OnExecuteClient");
+	}
+
+  override void OnStartClient(ActionData action_data)
+	{
+    Print("OnStartClient");
+  }
+	
+	override void OnStartServer(ActionData action_data)
+	{
+    Print("OnStartServer");
+  }
+	
+	override void OnEnd(ActionData action_data)
+	{
+    Print("OnEnd");
+  }
+	
+	override void OnEndClient(ActionData action_data)
+	{
+    Print("OnEndClient");
+    if (GetGame().IsClient() || !GetGame().IsMultiplayer())
+		{
+      Print("OnEndClient");
+      Print(action_data.m_MainItem);
+      Print(action_data.m_MainItem.GetType());
+      if (!GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
+      {
+        GetGame().GetUIManager().EnterScriptedMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting, NULL );
+      }
+      // action_data.m_Player.OpenGUICraftingMenu();
+      // ScriptRPC rpc = new ScriptRPC();
+			// rpc.Send(ntarget, SRP_RPC.OPEN_CRAFTING_MENU, true, action_data.m_Player.GetIdentity() );
+    }
+  }
+	
+	override void OnEndServer(ActionData action_data)
+	{
+    Print("OnEndServer");
+  }
+
 }

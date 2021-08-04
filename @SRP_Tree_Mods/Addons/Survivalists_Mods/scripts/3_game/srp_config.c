@@ -1,8 +1,8 @@
 class SRPConfig
 {
-  ref CraftingConfig tailorWorkbench;
-  ref CraftingConfig advancedWorkbench;
-  ref CraftingConfig drugWorkbench;
+  ref CraftingConfig tailorWorkbench = new CraftingConfig();
+  ref CraftingConfig advancedWorkbench = new CraftingConfig();
+  ref CraftingConfig drugWorkbench = new CraftingConfig();
 }
 
 class SRPGlobals
@@ -39,15 +39,11 @@ class SRPGlobals
     return config;
   }
 
-  private static void CreateDefaultSRPConfigFile(SRPConfig config)
+  private static void CreateDefaultSRPConfigFile(inout SRPConfig config)
   {
-    config.tailorWorkbench = CreateDefaultTailorRecipes();
-    Print("tailor bench: " + config.tailorWorkbench);
-    Print("tailor: " + config.tailorWorkbench.craftingBenchType);
-    config.advancedWorkbench = CreateDefaultAdvancedRecipes();
-    Print("adv: " + config.tailorWorkbench.craftingBenchType);
-    config.drugWorkbench = CreateDefaultDrugRecipes();
-    Print("drug: " + config.tailorWorkbench.craftingBenchType);
+    CreateDefaultTailorRecipes(config.tailorWorkbench);
+    CreateDefaultAdvancedRecipes(config.advancedWorkbench);
+    CreateDefaultAdvancedRecipes(config.drugWorkbench);
 
 
     if (!FileExist(configRoot))
@@ -58,9 +54,8 @@ class SRPGlobals
     JsonFileLoader<SRPConfig>.JsonSaveFile(configPath, config);
   }
 
-  private static CraftingConfig CreateDefaultTailorRecipes()
+  private static CraftingConfig CreateDefaultTailorRecipes(inout CraftingConfig config)
   {
-    CraftingConfig config = new CraftingConfig();
     config.craftingBenchType = "SRP_SewingMachine";
     CraftedItem item1 = new CraftedItem();
     item1.result = "SRP_Shirt_PlainPussy";
@@ -87,9 +82,8 @@ class SRPGlobals
     return config; 
   }
 
-  private static CraftingConfig CreateDefaultAdvancedRecipes()
+  private static CraftingConfig CreateDefaultAdvancedRecipes(inout CraftingConfig config)
   {
-    CraftingConfig config = new CraftingConfig();
     config.craftingBenchType = "SRP_AdvancedWorkbench";
     CraftedItem item1 = new CraftedItem();
     item1.result = "SRP_Shirt_PlainPussy";
@@ -116,9 +110,8 @@ class SRPGlobals
     return config; 
   }
 
-  private static CraftingConfig CreateDefaultDrugRecipes()
+  private static CraftingConfig CreateDefaultDrugRecipes(inout CraftingConfig config)
   {
-    CraftingConfig config = new CraftingConfig();
     config.craftingBenchType = "SRP_DrugWorkbench";
     CraftedItem item1 = new CraftedItem();
     item1.result = "SRP_ConsumableDrug_MethSmall";
