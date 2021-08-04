@@ -22,7 +22,23 @@ class SRP_MedicalBed_Wood extends SRP_DeployableContainer_Base{};
 class SRP_BloodPressureMonitor extends SRP_DeployableContainer_Base{};
 class SRP_Carpet extends SRP_DeployableContainer_Base{};
 class SRP_CarpetRug extends SRP_DeployableContainer_Base{};
-class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base{};
+class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionInteractWithGUICraftingWorkbench);
+	}
+};
+modded class SRP_DrugWorkbench
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionInteractWithGUICraftingWorkbench);
+	}
+};
+
 class SRP_PostBox extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxBlue extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxWooden extends SRP_DeployableContainer_Base{};

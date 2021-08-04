@@ -1,0 +1,4 @@
+enum SRP_RPC
+{
+  CHECK_SRP_CONFIG
+}

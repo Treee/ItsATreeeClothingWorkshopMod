@@ -6,6 +6,8 @@ modded class GameConstants
 	 * @{
 	 */
 		// unit = currently percent (stamina max is 100)
+  const int UI_SRP_CUSTOM_MENU_GUICrafting  = 8764336;
+
 	const int 	STAMINA_DRAIN_STANDING_SPRINT_PER_SEC = 4; //in units (how much sprint depletes stamina)
 	const int 	STAMINA_DRAIN_CROUCHED_SPRINT_PER_SEC = 1; //in units (how much sprint in crouch depletes stamina)
 	const int 	STAMINA_DRAIN_PRONE_SPRINT_PER_SEC = 3; //in units (how much sprint in prone depletes stamina)

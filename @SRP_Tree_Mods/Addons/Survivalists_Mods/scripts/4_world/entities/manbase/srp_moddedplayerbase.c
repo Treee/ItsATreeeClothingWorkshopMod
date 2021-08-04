@@ -23,4 +23,21 @@ modded class PlayerBase extends ManBase
 			}
 		}        
   }
+
+  override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
+  {
+    super.OnRPC(sender, rpc_type, ctx);
+
+    switch(rpc_type)
+    {
+      case SRP_RPC.CHECK_SRP_CONFIG: // this case is for grabbing SRP's config from the server
+      {
+        Param1<SRPConfig> configParams;
+        if(!ctx.Read(configParams)) return;
+
+        GetDayZGame().SetSRPConfigGlobal(configParams.param1);
+        break;
+      }
+    }
+  }
 }
