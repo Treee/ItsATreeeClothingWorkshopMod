@@ -1,5 +1,7 @@
 class WorkbenchGUICraftingHud extends UIScriptedMenu
 {
+  SRPConfig config;
+
   private Widget              m_PanelWidgetMain;
   private Widget              m_PanelWidgetItem;
   private ButtonWidget        m_BtnAllRecipes;
@@ -24,9 +26,9 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 
   ref array<Widget> AllWidgetRecipes;
   ref array<Widget> PossibleWidgetRecipes;
-  // ref array<ref TailorOneRecipe> AllRecipes;
-  // ref array<ref TailorOneRecipe> AllPosRecipes;
-  // ref array<ref TailorOneItemForCraft> TempIngrsArray;
+  ref array<ref ItemRecipeWidget> AllRecipes;
+  // ref array<ref ItemRecipeWidget> AllPosRecipes;
+  // ref array<ref CraftedItemWidget> TempIngredientsArray;
 
   // ref TailorCraftItem crItm;
 
@@ -50,15 +52,23 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     Print("currently selected workbench: " + targetPlayer.selectedCraftingBench);
     // if(targetPlayer)
     //   targetPlayer.CanCraft = true;
-
+    // if (!config)
+    config = GetDayZGame().GetSRPConfigGlobal();
+    Print("config: " + config);
+    Print("tailorWorkbench: " + config.tailorWorkbench);
+    Print("tailorWorkbench: " + config.tailorWorkbench.craftingBenchType);
+    Print("advancedWorkbench: " + config.advancedWorkbench);
+    Print("advancedWorkbench: " + config.advancedWorkbench.craftingBenchType);
+    Print("drugWorkbench: " + config.drugWorkbench);
+    Print("drugWorkbench: " + config.drugWorkbench.craftingBenchType);
     // TailorScanItems();
     progressCounter = 0;
     // crItm = new TailorCraftItem();
     AllWidgetRecipes = new array<Widget>();
     PossibleWidgetRecipes = new array<Widget>();
-    // AllRecipes  = new array<ref TailorOneRecipe>();
-    // AllPosRecipes  = new array<ref TailorOneRecipe>();
-    // TempIngrsArray = new array<ref TailorOneItemForCraft>();
+    AllRecipes  = new array<ref ItemRecipeWidget>();
+    // AllPosRecipes  = new array<ref ItemRecipeWidget>();
+    // TempIngredientsArray = new array<ref CraftedItemWidget>();
     // g_Game.SetKeyboardHandle(this);
     GetGame().GetMission().PlayerControlDisable( INPUT_EXCLUDE_ALL );
   }
@@ -66,14 +76,16 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   void ~WorkbenchGUICraftingHud()
   {
     Print("WorkbenchGUICraftingHud: Destroyed");
-    // TempIngrsArray.Clear();
+    // TempIngredientsArray.Clear();
     AllWidgetRecipes.Clear();
     PossibleWidgetRecipes.Clear();
-    // AllRecipes.Clear();
+    AllRecipes.Clear();
     // AllPosRecipes.Clear();
     if (m_MainEnt) GetGame().ObjectDeleteOnClient(m_MainEnt);
     GetGame().GetMission().PlayerControlEnable( true );
     targetPlayer.selectedCraftingBench = "";
+    targetPlayer.guiCraftingBench = null; 
+    // delete config;
 		// g_Game.SetKeyboardHandle(NULL);
   }
 
@@ -111,7 +123,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     // {
       m_MainImg.LoadImageFile(0, "Survivalists_Mods/gui/CraftingWorkbench.edds");
     // }
-    // TailorFillRecipes();
+    FillCraftingRecipes();
     // TailorFillPosibleRecipes();
 		return layoutRoot;
 	}
@@ -121,22 +133,102 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 		return layoutRoot.FindAnyWidget(val);
 	}
 
-  // void TailorFillRecipes()
+  CraftingConfig GetCraftingConfig(string workbenchType)
+  {
+    if (workbenchType == "SRP_SewingMachine")
+    {
+      Print("Get Tailor crafting config");
+      return config.tailorWorkbench;
+    }
+    else if (workbenchType == "SRP_AdvancedWorkbench")
+    {
+      Print("Get advanced workbench crafting config");
+      return config.advancedWorkbench;
+    }
+    else if (workbenchType == "SRP_DrugWorkbench")
+    {
+      Print("Get drug workbench crafting config");
+      return config.drugWorkbench;
+    }
+    return null;
+  }
+
+  void FillCraftingRecipes()
+  {
+    // PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
+    if (targetPlayer)
+    {
+      CraftingConfig craftingConfig = GetCraftingConfig(targetPlayer.selectedCraftingBench);
+      if (craftingConfig)
+      {
+        Print("crafted items " + craftingConfig.craftedItems);
+        for (int i = 0; i < craftingConfig.craftedItems.Count(); i++)
+        {
+          CraftedItem craftedItem = craftingConfig.craftedItems.Get(i);
+          if (craftedItem)
+          {
+            ItemRecipeWidget recipe = new ItemRecipeWidget();
+            Print("result: " + craftedItem.result);
+            Print("recipeName: " + craftedItem.recipeName);
+            Print("craftType: " + craftedItem.craftType);
+            Print("resultCount: " + craftedItem.resultCount);
+            Widget w = recipe.Init(m_WrapSpacerWidgetRecipes, craftedItem.recipeName, craftedItem.craftType);
+            recipe.SetData(craftedItem);
+            AllWidgetRecipes.Insert(w);
+            AllRecipes.Insert(recipe);
+          }
+        }
+      }    
+    }
+  }
+
+  // void TailorScanItems()
   // {
-  //   PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
-  //   if (player)
+  //   if (!g_TailorCraftManager.GetTWB())
   //   {
-  //     for (int i = 0; i < player.m_TailorCraftClasses.TailorCraftItems.Count(); i++)
+  //       g_TailorCraftManager.SelfChatMessage("Error workbench not found.");
+  //       return;
+  //   }
+
+  //   if (!g_TailorCraftManager.GetTWB().HasAnyCargo())
+  //   {
+  //       return;
+  //   }
+
+  //   CargoBase cargoBase;
+  //   int cargoCount;
+  //   int quant;
+    
+  //   cargoBase = g_TailorCraftManager.GetTWB().GetInventory().GetCargo();
+  //   cargoCount = cargoBase.GetItemCount();
+  //   for (int c = 0; c < cargoCount; c++)
+  //   {
+  //     ItemBase cargoItemIB;
+  //     if ( Class.CastTo(cargoItemIB, cargoBase.GetItem(c)) && cargoItemIB.IsItemBase() )
   //     {
-  //       TailorCraftItem ci = player.m_TailorCraftClasses.TailorCraftItems.Get(i);
-  //       TailorOneRecipe recipe = new TailorOneRecipe();
-  //       Widget w = recipe.Init(m_WrapSpacerWidgetRecipes, ci.RecipeName, ci.CraftType);
-  //       recipe.SetData(ci);
-  //       AllWidgetRecipes.Insert(w);
-  //       AllRecipes.Insert(recipe);
+  //       if (cargoItemIB.IsRuined()) continue;
+  //       if (cargoItemIB.HasQuantity())
+  //       {
+  //           quant = cargoItemIB.GetQuantity();
+  //       }
+  //       else
+  //       {
+  //           quant = 1;
+  //       }
+
+  //       if (!g_TailorCraftManager.m_ExItems.Contains(cargoItemIB.GetType()))
+  //       {
+  //           g_TailorCraftManager.m_ExItems.Insert(cargoItemIB.GetType(), quant);
+  //       }
+  //       else
+  //       {
+  //           int nowQuant = g_TailorCraftManager.m_ExItems.Get(cargoItemIB.GetType());
+  //           g_TailorCraftManager.m_ExItems.Set(cargoItemIB.GetType(), (nowQuant + quant));
+  //       }
   //     }
   //   }
   // }
+
 
   // void TailorFillPosibleRecipes()
   // {
@@ -148,7 +240,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   //       TailorCraftItem ci = player.m_TailorCraftClasses.TailorCraftItems.Get(i);
   //       if (TWBHasAllAttachments(ci))
   //       {
-  //         TailorOneRecipe recipe = new TailorOneRecipe();
+  //         ItemRecipeWidget recipe = new ItemRecipeWidget();
   //         Widget w = recipe.Init(m_WrapSpacerWidgetPosRecipes, ci.RecipeName, ci.CraftType);
   //         recipe.SetData(ci);
   //         PossibleWidgetRecipes.Insert(w);
@@ -180,8 +272,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   // }
 
   override bool OnClick(Widget w, int x, int y, int button)
-	{
-    Print("clicked pre");
+	{    
 		super.OnClick(w, x, y, button);
 		if (ButtonWidget.Cast(w))
 		{
@@ -234,7 +325,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   // void ShowMoreInfo(Widget w, int type)
   // {
   //   int idx;
-  //   TailorOneRecipe recipe;
+  //   ItemRecipeWidget recipe;
   //   Widget pw = w.GetParent();
   //   g_TailorCraftManager.DeleteEntities();
   //   TailorClearCraftItemsBuffer();
@@ -265,53 +356,6 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
         m_WrapSpacerWidget.RemoveChild(m_WrapSpacerWidget.GetChildren());
     }
   }
-
-  // void TailorScanItems()
-  // {
-  //   if (!g_TailorCraftManager.GetTWB())
-  //   {
-  //       g_TailorCraftManager.SelfChatMessage("Error workbench not found.");
-  //       return;
-  //   }
-
-  //   if (!g_TailorCraftManager.GetTWB().HasAnyCargo())
-  //   {
-  //       return;
-  //   }
-
-  //   CargoBase cargoBase;
-  //   int cargoCount;
-  //   int quant;
-    
-  //   cargoBase = g_TailorCraftManager.GetTWB().GetInventory().GetCargo();
-  //   cargoCount = cargoBase.GetItemCount();
-  //   for (int c = 0; c < cargoCount; c++)
-  //   {
-  //     ItemBase cargoItemIB;
-  //     if ( Class.CastTo(cargoItemIB, cargoBase.GetItem(c)) && cargoItemIB.IsItemBase() )
-  //     {
-  //       if (cargoItemIB.IsRuined()) continue;
-  //       if (cargoItemIB.HasQuantity())
-  //       {
-  //           quant = cargoItemIB.GetQuantity();
-  //       }
-  //       else
-  //       {
-  //           quant = 1;
-  //       }
-
-  //       if (!g_TailorCraftManager.m_ExItems.Contains(cargoItemIB.GetType()))
-  //       {
-  //           g_TailorCraftManager.m_ExItems.Insert(cargoItemIB.GetType(), quant);
-  //       }
-  //       else
-  //       {
-  //           int nowQuant = g_TailorCraftManager.m_ExItems.Get(cargoItemIB.GetType());
-  //           g_TailorCraftManager.m_ExItems.Set(cargoItemIB.GetType(), (nowQuant + quant));
-  //       }
-  //     }
-  //   }
-  // }
 
 
 
@@ -375,7 +419,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   //   m_NedeedAttachms.SetText(attchts);
   //   m_BtnCraft.Enable(false);
   //   m_ImgCraft.SetImage(0);
-  //   TempIngrsArray.Clear();
+  //   TempIngredientsArray.Clear();
   //   if (m_MainEnt) GetGame().ObjectDeleteOnClient(m_MainEnt);
   //   m_MainEnt = EntityAI.Cast(GetGame().CreateObject(crItem.Result, vector.Zero, true));
   //   if (m_MainEnt)
@@ -407,16 +451,16 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 
   // void FillIngrsWidget(TailorCraftComponent cc)
   // {
-  //   TailorOneItemForCraft itCraft = new TailorOneItemForCraft();
+  //   CraftedItemWidget itCraft = new CraftedItemWidget();
   //   Widget w = itCraft.Init(m_WrapSpacerWidget, cc);
-  //   TempIngrsArray.Insert(itCraft);
+  //   TempIngredientsArray.Insert(itCraft);
   // }
 
   // bool CheckCondition()
   // {
-  //   for (int i = 0; i < TempIngrsArray.Count(); i++)
+  //   for (int i = 0; i < TempIngredientsArray.Count(); i++)
   //   {
-  //     TailorOneItemForCraft tmp = TempIngrsArray.Get(i);
+  //     CraftedItemWidget tmp = TempIngredientsArray.Get(i);
   //     if (!(tmp && tmp.EnoughIngrs))
   //     {
   //         return false;
@@ -431,7 +475,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 		{
 			if (GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
       {
-        Close();        
+        Close();
       }
 		}		
 	}

@@ -38,64 +38,65 @@ class ActionInteractWithGUICraftingWorkbench : ActionInteractBase
 		return true; //server side?
 	}
 
-  // override protected void OnStart(ActionData action_data)
-  // {
-  //   Print("OnStart");
-  // }
+  override protected void OnStart(ActionData action_data)
+  {
+    Print("OnStart");
+  }
 
-  // override protected void OnExecute( ActionData action_data )
-	// {
-  //   Print("OnExecute");
-	// }	
+  override protected void OnExecute( ActionData action_data )
+	{
+    Print("OnExecute");
+	}	
 
-  // override protected void OnExecuteServer( ActionData action_data )
-	// {
-  //   Print("OnExecuteServer");
-	// }
+  override protected void OnExecuteServer( ActionData action_data )
+	{
+    Print("OnExecuteServer");
+	}
 
 
-  // override protected void OnExecuteClient( ActionData action_data )
-	// {
-  //   Print("OnExecuteClient");
-	// }
+  override protected void OnExecuteClient( ActionData action_data )
+	{
+    Print("OnExecuteClient");
+	}
 
   override void OnStartClient(ActionData action_data)
 	{
     // Print("OnStartClient");
     if (GetGame().IsClient() || !GetGame().IsMultiplayer())
 		{
-      // Print("OnStartClient");
-      // Print(action_data.m_Target.GetObject());
-      // Print(action_data.m_Target.GetObject().GetType());
-      if (action_data.m_Target && action_data.m_Player)
+      Print("OnStartClient: " + action_data.m_Target.GetObject().GetType() + " player? " + action_data.m_Player);      
+      if (action_data.m_Player)
       {
+        Print("Setting player bench data");
         action_data.m_Player.selectedCraftingBench = action_data.m_Target.GetObject().GetType();
+        action_data.m_Player.guiCraftingBench = action_data.m_Target.GetObject();
       }
       if (!GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
       {
+        Print("Open menu");
         GetGame().GetUIManager().EnterScriptedMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting, NULL );
       }
     }
   }
 	
-	// override void OnStartServer(ActionData action_data)
-	// {
-  //   Print("OnStartServer");
-  // }
+	override void OnStartServer(ActionData action_data)
+	{
+    Print("OnStartServer");
+  }
 	
-	// override void OnEnd(ActionData action_data)
-	// {
-  //   Print("OnEnd");
-  // }
+	override void OnEnd(ActionData action_data)
+	{
+    Print("OnEnd");
+  }
 	
-	// override void OnEndClient(ActionData action_data)
-	// {
-  //   Print("OnEndClient");
-  // }
+	override void OnEndClient(ActionData action_data)
+	{
+    Print("OnEndClient");
+  }
 	
-	// override void OnEndServer(ActionData action_data)
-	// {
-  //   Print("OnEndServer");
-  // }
+	override void OnEndServer(ActionData action_data)
+	{
+    Print("OnEndServer");
+  }
 
 }

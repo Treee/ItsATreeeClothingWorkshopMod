@@ -1,3 +1,31 @@
+class CraftingConfig  // TailorCraftClasses
+{
+  string craftingBenchType;
+  string pathToMainBackgroundImg;
+  string pathToRepairImg;
+  string pathToPaintImg;
+  string pathToCraftImg; 
+  autoptr array<autoptr CraftedItem> craftedItems = {};
+}
+
+class CraftedItem  // TailorCraftItem
+{
+  string result;
+  int resultCount;
+  string craftType;
+  string recipeName;
+  ref array<string> requiredAttachments = new array<string>();
+  ref array<ref CraftingComponent> craftingComponents = new array<ref CraftingComponent>;
+}
+
+class CraftingComponent // TailorCraftComponent
+{
+  string className;
+  int amount;
+  bool destroy;
+  float changeHealth;
+}
+
 class SRPConfig
 {
   ref CraftingConfig tailorWorkbench = new CraftingConfig();
@@ -43,7 +71,7 @@ class SRPGlobals
   {
     CreateDefaultTailorRecipes(config.tailorWorkbench);
     CreateDefaultAdvancedRecipes(config.advancedWorkbench);
-    CreateDefaultAdvancedRecipes(config.drugWorkbench);
+    CreateDefaultDrugRecipes(config.drugWorkbench);
 
 
     if (!FileExist(configRoot))
@@ -89,7 +117,7 @@ class SRPGlobals
     item1.result = "SRP_Shirt_PlainPussy";
     item1.resultCount = 1;
     item1.craftType = "craft";
-    item1.recipeName = "Sew massive pussy shirt";
+    item1.recipeName = "Craft massive pussy shirt";
     // item1.requiredAttachments = [""];
 
     CraftingComponent item1Comp1 = new CraftingComponent();

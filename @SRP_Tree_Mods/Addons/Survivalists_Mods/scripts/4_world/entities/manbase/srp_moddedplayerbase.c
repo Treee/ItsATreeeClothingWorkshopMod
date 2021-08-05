@@ -1,6 +1,7 @@
 modded class PlayerBase extends ManBase
 {
   string selectedCraftingBench = "";
+  Object guiCraftingBench = null;
 
   override void SetMapOpen(bool state)
 	{
