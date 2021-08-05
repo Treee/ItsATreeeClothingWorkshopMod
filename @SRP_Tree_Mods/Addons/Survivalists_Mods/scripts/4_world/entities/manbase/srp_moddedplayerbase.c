@@ -1,5 +1,7 @@
 modded class PlayerBase extends ManBase
-{  
+{
+  string selectedCraftingBench = "";
+
   override void SetMapOpen(bool state)
 	{
     super.SetMapOpen(state);
@@ -21,7 +23,7 @@ modded class PlayerBase extends ManBase
         // manually set the request processed to true
         m_MapCloseRequestProcessed = m_MapCloseRequestProcessed;
 			}
-		}        
+		}
   }
 
   override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
@@ -35,14 +37,6 @@ modded class PlayerBase extends ManBase
         Param1<SRPConfig> configParams;
         if(!ctx.Read(configParams)) return;        
         GetDayZGame().SetSRPConfigGlobal(configParams.param1);
-        break;
-      }
-      case SRP_RPC.OPEN_CRAFTING_MENU:
-      {
-        if (!GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
-        {
-          GetGame().GetUIManager().EnterScriptedMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting, NULL );
-        }
         break;
       }
     }
