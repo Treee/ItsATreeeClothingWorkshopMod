@@ -39,6 +39,27 @@ modded class SRP_DrugWorkbench
 	}
 };
 
+// remove eventually
+modded class SneakySmallLogPile
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionTogglePlaceObject);
+		AddAction(ActionPlaceObject);
+	}
+}
+// remove eventually
+modded class SneakyLargeLogPile
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionTogglePlaceObject);
+		AddAction(ActionPlaceObject);
+	}
+}
+
 class SRP_PostBox extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxBlue extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxWooden extends SRP_DeployableContainer_Base{};
