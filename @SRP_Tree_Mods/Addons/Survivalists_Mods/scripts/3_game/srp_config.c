@@ -5,7 +5,12 @@ class CraftingConfig  // TailorCraftClasses
   string pathToRepairImg;
   string pathToPaintImg;
   string pathToCraftImg; 
-  autoptr array<autoptr CraftedItem> craftedItems = {};
+  ref array<ref CraftedItem> craftedItems = {};
+
+  void ~CraftingConfig()
+  {
+    delete craftedItems;
+  }
 }
 
 class CraftedItem  // TailorCraftItem
@@ -16,6 +21,12 @@ class CraftedItem  // TailorCraftItem
   string recipeName;
   ref array<string> requiredAttachments = new array<string>();
   ref array<ref CraftingComponent> craftingComponents = new array<ref CraftingComponent>;
+
+  void ~CraftedItem()
+  {
+    delete requiredAttachments;
+    delete craftingComponents;
+  }
 }
 
 class CraftingComponent // TailorCraftComponent
@@ -31,6 +42,13 @@ class SRPConfig
   ref CraftingConfig tailorWorkbench = new CraftingConfig();
   ref CraftingConfig advancedWorkbench = new CraftingConfig();
   ref CraftingConfig drugWorkbench = new CraftingConfig();
+
+  void ~SRPConfig()
+  {
+    delete tailorWorkbench;
+    delete advancedWorkbench;
+    delete drugWorkbench;
+  }
 }
 
 class SRPGlobals
@@ -39,6 +57,11 @@ class SRPGlobals
   private static const int MAX_CONFIG_LINES = 2000;
   private static const string configPath = "$profile:\\Survivalists_Mods\\Mod_Settings.json";
   private static const string configRoot = "$profile:\\Survivalists_Mods";
+
+  void ~SRPGlobals()
+  {
+    delete m_SRPConfig;
+  }
 
   static SRPConfig Get()
   {
@@ -56,7 +79,7 @@ class SRPGlobals
 
   private static SRPConfig LoadSRPModConfig()
   {
-    SRPConfig config = new SRPConfig;
+    SRPConfig config = new SRPConfig();
     if (!FileExist(configPath))
     {
       Print("'Survivalists_Mods_Settings' does not exist, creating now.");
@@ -86,7 +109,7 @@ class SRPGlobals
   {
     config.craftingBenchType = "SRP_SewingMachine";
     CraftedItem item1 = new CraftedItem();
-    item1.result = "SRP_Shirt_PlainPussy";
+    item1.result = "NurseDress_White";
     item1.resultCount = 1;
     item1.craftType = "craft";
     item1.recipeName = "Sew massive pussy shirt";
@@ -94,7 +117,7 @@ class SRPGlobals
 
     CraftingComponent item1Comp1 = new CraftingComponent();
     item1Comp1.className = "Apple";
-    item1Comp1.amount = 1;
+    item1Comp1.amount = 125;  // quantity is in units relative to the item. apples have 125 since they are eaten in chunks
     item1Comp1.destroy = true;
     item1Comp1.changeHealth = 0;
     CraftingComponent item1Comp2 = new CraftingComponent();
@@ -114,20 +137,20 @@ class SRPGlobals
   {
     config.craftingBenchType = "SRP_AdvancedWorkbench";
     CraftedItem item1 = new CraftedItem();
-    item1.result = "SRP_Shirt_PlainPussy";
+    item1.result = "NurseDress_Blue";
     item1.resultCount = 1;
     item1.craftType = "craft";
     item1.recipeName = "Craft massive pussy shirt";
-    // item1.requiredAttachments = [""];
+    item1.requiredAttachments.Insert("SRP_AmmoPress");
 
     CraftingComponent item1Comp1 = new CraftingComponent();
     item1Comp1.className = "Apple";
-    item1Comp1.amount = 1;
+    item1Comp1.amount = 125;
     item1Comp1.destroy = true;
     item1Comp1.changeHealth = 0;
     CraftingComponent item1Comp2 = new CraftingComponent();
-    item1Comp2.className = "Compass";
-    item1Comp2.amount = 10;
+    item1Comp2.className = "BoxCerealCrunchin";
+    item1Comp2.amount = 50;
     item1Comp2.destroy = true;
     item1Comp2.changeHealth = 0;
 
@@ -153,18 +176,41 @@ class SRPGlobals
 
     CraftingComponent item1Comp1 = new CraftingComponent();
     item1Comp1.className = "Apple";
-    item1Comp1.amount = 1;
+    item1Comp1.amount = 125;
     item1Comp1.destroy = true;
     item1Comp1.changeHealth = 0;
     CraftingComponent item1Comp2 = new CraftingComponent();
-    item1Comp2.className = "Hammer";
-    item1Comp2.amount = 10;
+    item1Comp2.className = "Pear";
+    item1Comp2.amount = 125;
     item1Comp2.destroy = true;
     item1Comp2.changeHealth = 0;
 
     item1.craftingComponents.Insert(item1Comp1);
     item1.craftingComponents.Insert(item1Comp2);
     config.craftedItems.Insert(item1);
+
+    CraftedItem item2 = new CraftedItem();
+    item2.result = "USMCJacket_Woodland";
+    item2.resultCount = 1;
+    item2.craftType = "craft";
+    item2.recipeName = "Cook Jacket";
+    item2.requiredAttachments.Insert("MethRecipe");
+    item2.requiredAttachments.Insert("LightBulb");
+
+    CraftingComponent item2Comp1 = new CraftingComponent();
+    item2Comp1.className = "Hammer";
+    item2Comp1.amount = 1;
+    item2Comp1.destroy = true;
+    item2Comp1.changeHealth = 0;
+    CraftingComponent item2Comp2 = new CraftingComponent();
+    item2Comp2.className = "Pliers";
+    item2Comp2.amount = 1;
+    item2Comp2.destroy = true;
+    item2Comp2.changeHealth = 0;
+
+    item2.craftingComponents.Insert(item2Comp1);
+    item2.craftingComponents.Insert(item2Comp2);
+    config.craftedItems.Insert(item2);
     
     return config; 
   }

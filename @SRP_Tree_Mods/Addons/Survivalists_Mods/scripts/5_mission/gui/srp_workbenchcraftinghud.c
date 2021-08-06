@@ -27,10 +27,10 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   ref array<Widget> AllWidgetRecipes;
   ref array<Widget> PossibleWidgetRecipes;
   ref array<ref ItemRecipeWidget> AllRecipes;
-  // ref array<ref ItemRecipeWidget> AllPosRecipes;
-  // ref array<ref CraftedItemWidget> TempIngredientsArray;
+  ref array<ref ItemRecipeWidget> AllPosRecipes;
+  ref array<ref CraftedItemWidget> TempIngredientsArray;
 
-  // ref TailorCraftItem crItm;
+  CraftedItem previouslyCraftedItem;
 
   private int m_characterRotationX;
 	private int m_characterRotationY;
@@ -41,6 +41,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   private float progressCounter;
 
   PlayerBase targetPlayer;
+  bool isProgressBlocking;
 
   private const string RedBtn = "Survivalists_Mods/gui/redBtn.edds";
   private const string GrnBtn = "Survivalists_Mods/gui/greenBtn.edds";
@@ -50,25 +51,23 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     Print("WorkbenchGUICraftingHud: Opened");
     targetPlayer = PlayerBase.Cast(GetGame().GetPlayer());
     Print("currently selected workbench: " + targetPlayer.selectedCraftingBench);
-    // if(targetPlayer)
-    //   targetPlayer.CanCraft = true;
-    // if (!config)
+    isProgressBlocking = false;
     config = GetDayZGame().GetSRPConfigGlobal();
-    Print("config: " + config);
-    Print("tailorWorkbench: " + config.tailorWorkbench);
-    Print("tailorWorkbench: " + config.tailorWorkbench.craftingBenchType);
-    Print("advancedWorkbench: " + config.advancedWorkbench);
-    Print("advancedWorkbench: " + config.advancedWorkbench.craftingBenchType);
-    Print("drugWorkbench: " + config.drugWorkbench);
-    Print("drugWorkbench: " + config.drugWorkbench.craftingBenchType);
+    // Print("config: " + config);
+    // Print("tailorWorkbench: " + config.tailorWorkbench);
+    // Print("tailorWorkbench: " + config.tailorWorkbench.craftingBenchType);
+    // Print("advancedWorkbench: " + config.advancedWorkbench);
+    // Print("advancedWorkbench: " + config.advancedWorkbench.craftingBenchType);
+    // Print("drugWorkbench: " + config.drugWorkbench);
+    // Print("drugWorkbench: " + config.drugWorkbench.craftingBenchType);
     // TailorScanItems();
     progressCounter = 0;
-    // crItm = new TailorCraftItem();
+    // previouslyCraftedItem = new CraftedItem();
     AllWidgetRecipes = new array<Widget>();
     PossibleWidgetRecipes = new array<Widget>();
     AllRecipes  = new array<ref ItemRecipeWidget>();
-    // AllPosRecipes  = new array<ref ItemRecipeWidget>();
-    // TempIngredientsArray = new array<ref CraftedItemWidget>();
+    AllPosRecipes  = new array<ref ItemRecipeWidget>();
+    TempIngredientsArray = new array<ref CraftedItemWidget>();
     // g_Game.SetKeyboardHandle(this);
     GetGame().GetMission().PlayerControlDisable( INPUT_EXCLUDE_ALL );
   }
@@ -76,11 +75,11 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   void ~WorkbenchGUICraftingHud()
   {
     Print("WorkbenchGUICraftingHud: Destroyed");
-    // TempIngredientsArray.Clear();
-    AllWidgetRecipes.Clear();
-    PossibleWidgetRecipes.Clear();
-    AllRecipes.Clear();
-    // AllPosRecipes.Clear();
+    delete AllWidgetRecipes;
+    delete PossibleWidgetRecipes;
+    delete AllRecipes;
+    delete AllPosRecipes;
+    delete TempIngredientsArray;
     if (m_MainEnt) GetGame().ObjectDeleteOnClient(m_MainEnt);
     GetGame().GetMission().PlayerControlEnable( true );
     targetPlayer.selectedCraftingBench = "";
@@ -124,7 +123,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
       m_MainImg.LoadImageFile(0, "Survivalists_Mods/gui/CraftingWorkbench.edds");
     // }
     FillCraftingRecipes();
-    // TailorFillPosibleRecipes();
+    FillPossibleRecipes();
 		return layoutRoot;
 	}
 
@@ -155,23 +154,17 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 
   void FillCraftingRecipes()
   {
-    // PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
     if (targetPlayer)
     {
       CraftingConfig craftingConfig = GetCraftingConfig(targetPlayer.selectedCraftingBench);
       if (craftingConfig)
       {
-        Print("crafted items " + craftingConfig.craftedItems);
         for (int i = 0; i < craftingConfig.craftedItems.Count(); i++)
         {
           CraftedItem craftedItem = craftingConfig.craftedItems.Get(i);
           if (craftedItem)
           {
             ItemRecipeWidget recipe = new ItemRecipeWidget();
-            Print("result: " + craftedItem.result);
-            Print("recipeName: " + craftedItem.recipeName);
-            Print("craftType: " + craftedItem.craftType);
-            Print("resultCount: " + craftedItem.resultCount);
             Widget w = recipe.Init(m_WrapSpacerWidgetRecipes, craftedItem.recipeName, craftedItem.craftType);
             recipe.SetData(craftedItem);
             AllWidgetRecipes.Insert(w);
@@ -181,6 +174,30 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
       }    
     }
   }
+
+  void FillPossibleRecipes()
+  {
+    if (targetPlayer)
+    {
+      CraftingConfig craftingConfig = GetCraftingConfig(targetPlayer.selectedCraftingBench);
+      if (craftingConfig)
+      {
+        for (int i = 0; i < craftingConfig.craftedItems.Count(); i++)
+        {
+          CraftedItem craftedItem = craftingConfig.craftedItems.Get(i);
+          if (WorkbenchHasAllAttachmentsRequired(craftedItem))
+          {
+            ItemRecipeWidget recipe = new ItemRecipeWidget();
+            Widget w = recipe.Init(m_WrapSpacerWidgetPosRecipes, craftedItem.recipeName, craftedItem.craftType);
+            recipe.SetData(craftedItem);
+            PossibleWidgetRecipes.Insert(w);
+            AllPosRecipes.Insert(recipe);
+          }
+        }
+      }
+    }
+  }
+
 
   // void TailorScanItems()
   // {
@@ -228,48 +245,24 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   //     }
   //   }
   // }
-
-
-  // void TailorFillPosibleRecipes()
-  // {
-  //   PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
-  //   if (player)
-  //   {
-  //     for (int i = 0; i < player.m_TailorCraftClasses.TailorCraftItems.Count(); i++)
-  //     {
-  //       TailorCraftItem ci = player.m_TailorCraftClasses.TailorCraftItems.Get(i);
-  //       if (TWBHasAllAttachments(ci))
-  //       {
-  //         ItemRecipeWidget recipe = new ItemRecipeWidget();
-  //         Widget w = recipe.Init(m_WrapSpacerWidgetPosRecipes, ci.RecipeName, ci.CraftType);
-  //         recipe.SetData(ci);
-  //         PossibleWidgetRecipes.Insert(w);
-  //         AllPosRecipes.Insert(recipe);
-  //       }
-  //     }
-  //   }
-  // }
-
-  // bool TWBHasAllAttachments(TailorCraftItem ci)
-  // {
-  //   int attCounter = 0;
-  //   int finalAttCount = ci.AttachmentsNeed.Count();
-  //   int attCount = g_TailorCraftManager.GetTWB().GetInventory().AttachmentCount();
-  //   string name;
-  //   for (int j = 0; j < finalAttCount; j++)
-  //   {
-  //     name = ci.AttachmentsNeed.Get(j);
-  //     for (int i = 0; i < attCount; i++)
-  //     {
-  //       ItemBase item = ItemBase.Cast( g_TailorCraftManager.GetTWB().GetInventory().GetAttachmentFromIndex( i ) );
-  //       if (item && (item.GetType() == name))
-  //       {
-  //           attCounter++;
-  //       }
-  //     }
-  //   }
-  //   return (attCounter == finalAttCount);
-  // }
+  bool WorkbenchHasAllAttachmentsRequired(CraftedItem craftedItem)
+  {
+    int attCounter = 0;
+    string attachmentName;
+    // for each required attachment
+    for (int benchAtchIndex = 0; benchAtchIndex < craftedItem.requiredAttachments.Count(); benchAtchIndex++)
+    {
+      attachmentName = craftedItem.requiredAttachments.Get(benchAtchIndex);
+      EntityAI correctAttachment = targetPlayer.guiCraftingBench.GetInventory().FindAttachmentByName(attachmentName);
+      // if that attachment exists
+      if (correctAttachment)
+      {        
+        attCounter++;
+      }
+    }
+    // Print("#AtchRequired: " + finalAttCount + " #AtchMatch: " + attCounter);    
+    return (attCounter == craftedItem.requiredAttachments.Count());
+  }
 
   override bool OnClick(Widget w, int x, int y, int button)
 	{    
@@ -278,12 +271,12 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 		{
       if (w.GetParent().GetParent().GetName() == "WrapSpacerWidgetPosRecipes")
       {
-        // ShowMoreInfo(w, 1);
+        ShowMoreInfo(w, 1);
         return true;
       }
       if (w.GetParent().GetName() == "RecipeItem")
       {
-        // ShowMoreInfo(w, 0);
+        ShowMoreInfo(w, 0);
         return true;
       }
 
@@ -296,7 +289,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
           SwitchPanel("PosbRecipes");
         break;
         case m_BtnCraft:
-          // TailorTryCraftItem();
+          TryCraftItem();
         break;
       }
 		}		
@@ -322,152 +315,173 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     }
   }
 
-  // void ShowMoreInfo(Widget w, int type)
-  // {
-  //   int idx;
-  //   ItemRecipeWidget recipe;
-  //   Widget pw = w.GetParent();
-  //   g_TailorCraftManager.DeleteEntities();
-  //   TailorClearCraftItemsBuffer();
-  //   if (type)
-  //   {
-  //     idx = PossibleWidgetRecipes.Find(pw);
-  //     if (idx != -1)
-  //     {
-  //         recipe = AllPosRecipes.Get(idx);
-  //         TailorSetupItems(recipe.m_TailorCraftItem);
-  //     }
-  //   }
-  //   else
-  //   {
-  //     idx = AllWidgetRecipes.Find(pw);
-  //     if (idx != -1)
-  //     {
-  //         recipe = AllRecipes.Get(idx);
-  //         TailorSetupItems(recipe.m_TailorCraftItem);
-  //     }
-  //   }
-  // }
-
-  void TailorClearCraftItemsBuffer()
+  void ShowMoreInfo(Widget w, int type)
   {
-    while (m_WrapSpacerWidget.GetChildren())
+    int index;
+    ItemRecipeWidget recipe;
+    Widget parentWidget = w.GetParent();    
+    ClearCraftItemsBuffer();
+    if (type)
     {
-        m_WrapSpacerWidget.RemoveChild(m_WrapSpacerWidget.GetChildren());
+      index = PossibleWidgetRecipes.Find(parentWidget);
+      if (index != -1)
+      {
+        recipe = AllPosRecipes.Get(index);
+        // Print("AllPosRecipes recipe at index: " + index + " recipe: " + recipe);
+        SetupCraftingItems(recipe.m_CraftedItem);
+      }
+    }
+    else
+    {
+      index = AllWidgetRecipes.Find(parentWidget);
+      if (index != -1)
+      {
+        recipe = AllRecipes.Get(index);
+        // Print("AllRecipes recipe at index: " + index + " recipe: " + recipe);
+        SetupCraftingItems(recipe.m_CraftedItem);
+      }
     }
   }
 
+  void ClearCraftItemsBuffer()
+  {
+    while (m_WrapSpacerWidget.GetChildren())
+    {
+      m_WrapSpacerWidget.RemoveChild(m_WrapSpacerWidget.GetChildren());
+    }
+  }
+  
+  void TryCraftItem()
+  {
+    if (targetPlayer)
+    {
+      if (isProgressBlocking)
+      {        
+        targetPlayer.SendMessageToClient(targetPlayer, "Wait... Still Crafting.");
+      }
+      else 
+      {
+        m_ProgressCraftBar.SetCurrent(0);
+        m_ProgressCraftBar.Show(true);
+        EffectSound sound =	SEffectManager.PlaySoundOnObject( "Craft_SoundSet", targetPlayer );
+        sound.SetSoundAutodestroy( true );
+        StartCraftingProgress();
+        m_BtnCraft.Enable(false);
+        m_ImgCraft.SetImage(0);
+        isProgressBlocking = true;
+      }        
+    }    
+  }
 
+  void StartCraftingProgress()
+  {
+    GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( StartCraftingProgress, 500, false);
+    progressCounter += 50;
+    m_ProgressCraftBar.SetCurrent(progressCounter);
+    if (m_ProgressCraftBar.GetCurrent() == 100)
+    {
+      GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).Remove(StartCraftingProgress);
+      progressCounter = 0;
+      m_ProgressCraftBar.Show(false);
 
-  // void TailorTryCraftItem()
-  // {
-  //   PlayerBase pl = PlayerBase.Cast(GetGame().GetPlayer());
-  //   if (pl)
-  //   {
-  //     if (pl.CanCraft())
-  //     {
-  //       pl.CanCraft = false;
-  //       m_ProgressCraftBar.SetCurrent(0);
-  //       m_ProgressCraftBar.Show(true);
-  //       EffectSound sound =	SEffectManager.PlaySoundOnObject( "Craft_SoundSet", GetGame().GetPlayer() );
-  //       sound.SetSoundAutodestroy( true );
-  //       TailorStartProgress();
-  //       m_BtnCraft.Enable(false);
-  //       m_ImgCraft.SetImage(0);
-  //     }
-  //     else
-  //     {
-  //       g_TailorCraftManager.SelfChatMessage("Not so fast.");
-  //     }
-  //   }
-  // }
+      // send RPC to craft the item server side
 
-  // void TailorStartProgress()
-  // {
-  //   GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( TailorStartProgress, 10, false);
-  //   progressCounter += 0.5;
-  //   m_ProgressCraftBar.SetCurrent(progressCounter);
-  //   if (m_ProgressCraftBar.GetCurrent() == 100)
-  //   {
-  //     PlayerBase pl = PlayerBase.Cast(GetGame().GetPlayer());
-  //     if (pl)
-  //     {
-  //         pl.RPCSingleParam(SRPc.CLIENT_REQUEST_CRAFT_TAILORITEMS, new Param2<TailorCraftItem, ItemBase>(crItm, g_TailorCraftManager.GetTWB()), true, null);
-  //     }
-  //     GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).Remove(TailorStartProgress);
-  //     progressCounter = 0;
-  //     m_ProgressCraftBar.Show(false);
-  //     GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( TailorReloadBench, 1000, false);
-  //   }
-  // }
+      GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( ReloadCraftingBench, 500, false);
+    }
+  }
 
-  // void TailorReloadBench()
-  // {
-  //   PlayerBase pl = PlayerBase.Cast(GetGame().GetPlayer());
-  //   g_TailorCraftManager.m_ExItems.Clear();
-  //   TailorScanItems();
-  //   g_TailorCraftManager.DeleteEntities();
-  //   TailorClearCraftItemsBuffer();
-  //   TailorSetupItems(crItm);
-  //   pl.CanCraft = true;
-  // }
+  void ReloadCraftingBench()
+  {        
+    ClearCraftItemsBuffer();
+    SetupCraftingItems(previouslyCraftedItem);
+    isProgressBlocking = false;
+  }
 
   //--------------------------------------------------------------------------
-  // void TailorSetupItems(TailorCraftItem crItem)
-  // {
-  //   string attchts = "";
-  //   m_NedeedAttachms.SetText(attchts);
-  //   m_BtnCraft.Enable(false);
-  //   m_ImgCraft.SetImage(0);
-  //   TempIngredientsArray.Clear();
-  //   if (m_MainEnt) GetGame().ObjectDeleteOnClient(m_MainEnt);
-  //   m_MainEnt = EntityAI.Cast(GetGame().CreateObject(crItem.Result, vector.Zero, true));
-  //   if (m_MainEnt)
-  //   {
-  //     crItm = crItem;
-  //     m_ItemPreviewWidget.SetItem(m_MainEnt);
-  //     m_ItemPreviewWidget.SetView(m_MainEnt.GetViewIndex());
-  //     m_ItemPreviewWidget.SetModelPosition(Vector(0,0,1));
-  //     m_TextItemName.SetText(m_MainEnt.GetDisplayName());
-  //     m_ItemResultCount.SetText(crItem.ResultCount.ToString());
-  //     for (int i = 0; i < crItem.CraftComponents.Count(); i++)
-  //     {
-  //         FillIngrsWidget(crItem.CraftComponents.Get(i));
-  //     }
-  //     for (int j = 0; j < crItem.AttachmentsNeed.Count(); j++)
-  //     {
-  //         attchts = attchts + crItem.AttachmentsNeed.Get(j);
-  //         if ((crItem.AttachmentsNeed.Count() - j) != 1 )
-  //         attchts = attchts + ",";
-  //     }
-  //     m_NedeedAttachms.SetText(attchts);
-  //   }
-  //   if (CheckCondition() && TWBHasAllAttachments(crItem))
-  //   {
-  //       m_BtnCraft.Enable(true);
-  //       m_ImgCraft.SetImage(1);
-  //   }
-  // }
 
-  // void FillIngrsWidget(TailorCraftComponent cc)
-  // {
-  //   CraftedItemWidget itCraft = new CraftedItemWidget();
-  //   Widget w = itCraft.Init(m_WrapSpacerWidget, cc);
-  //   TempIngredientsArray.Insert(itCraft);
-  // }
+  void SetupCraftingItems(CraftedItem craftedItem)
+  {
+    string attchts = "";
+    m_NedeedAttachms.SetText(attchts);
+    m_BtnCraft.Enable(false);
+    m_ImgCraft.SetImage(0);
+    TempIngredientsArray.Clear();
+    bool canCraftSingle = false;
+    bool canCraftAll = true;
+    string amount;
 
-  // bool CheckCondition()
-  // {
-  //   for (int i = 0; i < TempIngredientsArray.Count(); i++)
-  //   {
-  //     CraftedItemWidget tmp = TempIngredientsArray.Get(i);
-  //     if (!(tmp && tmp.EnoughIngrs))
-  //     {
-  //         return false;
-  //     }
-  //   }
-  //     return true;
-  // }
+    if (m_MainEnt)
+    {
+      GetGame().ObjectDeleteOnClient(m_MainEnt);
+    }
+    // if the item doesn't exist, the recipe will show up but not be 'clickable' fyi
+    m_MainEnt = EntityAI.Cast(GetGame().CreateObject(craftedItem.result, vector.Zero, true));    
+    if (m_MainEnt)
+    {
+      previouslyCraftedItem = craftedItem;
+      m_ItemPreviewWidget.SetItem(m_MainEnt);
+      m_ItemPreviewWidget.SetView(m_MainEnt.GetViewIndex());
+      m_ItemPreviewWidget.SetModelPosition(Vector(0,0,1));
+      m_TextItemName.SetText(m_MainEnt.GetDisplayName());
+      m_ItemResultCount.SetText(craftedItem.resultCount.ToString());
+
+      for (int i = 0; i < craftedItem.craftingComponents.Count(); i++)
+      {
+        CraftingComponent itemToCheck = craftedItem.craftingComponents.Get(i);
+        int totalInWorkbench = GetAmountInWorkbench(itemToCheck.className);
+        amount = string.Format("%1/%2", totalInWorkbench, itemToCheck.amount);
+        canCraftSingle = (totalInWorkbench / itemToCheck.amount) > 0
+        canCraftAll = canCraftAll && canCraftSingle; // aggregate all the booleans into one. && forces all bools to be true
+        FillIngredientsWidget(craftedItem.craftingComponents.Get(i), amount, canCraftSingle);
+      }
+      for (int j = 0; j < craftedItem.requiredAttachments.Count(); j++)
+      {
+        attchts = attchts + craftedItem.requiredAttachments.Get(j);
+        if ((craftedItem.requiredAttachments.Count() - j) != 1 )
+        attchts = attchts + ",";
+      }
+      m_NedeedAttachms.SetText(attchts);
+
+      if (canCraftAll && WorkbenchHasAllAttachmentsRequired(craftedItem))
+      {
+        m_BtnCraft.Enable(true);
+        m_ImgCraft.SetImage(1);
+      }
+    }    
+  }
+
+  void FillIngredientsWidget(CraftingComponent cc, string amount, bool canCraft)
+  {
+    CraftedItemWidget ingredientWidget = new CraftedItemWidget();
+    Widget w = ingredientWidget.Init(m_WrapSpacerWidget, cc, amount, canCraft);
+    TempIngredientsArray.Insert(ingredientWidget);
+  }
+
+  int GetAmountInWorkbench(string itemClassName)
+  {
+    for(int i = 0; i < targetPlayer.guiCraftingBench.GetInventory().GetCargo().GetItemCount(); i++)
+    {
+      ItemBase itemInBench = targetPlayer.guiCraftingBench.GetInventory().GetCargo().GetItem(i);      
+      if (itemInBench.GetType() == itemClassName)
+      {
+        if (itemInBench.IsRuined())
+        {
+          continue;
+        }
+        if (itemInBench.HasQuantity())
+        {
+          return itemInBench.GetQuantity();
+        }
+        else
+        {
+          return 1;
+        }
+        // Print("Checking amount of " + itemInBench.GetType() + " Has x amount: " + itemInBench.GetQuantity() + " entity: " + itemInBench);
+        // Print("quantity max " + itemInBench.GetQuantityMax());        
+      }
+    }
+    return 0;
+  }
 
   override void Update( float timeslice )
 	{

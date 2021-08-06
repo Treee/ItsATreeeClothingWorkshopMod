@@ -2,6 +2,11 @@ modded class MassNBC_Bag
 {
 	ref array<string> NBCCargo = {"NBCbootsBase", "NBCHoodBase", "NBCPantsBase", "NBCJacketBase","NBCGloves_ColorBase", "GP5GasMask", "PMK_5A_Gas_Mask"};
 	
+  void ~MassNBC_Bag()
+  {
+    delete NBCCargo;
+  }
+
 	override bool CanReceiveItemIntoCargo(EntityAI item)
 	{
 		if (!super.CanReceiveItemIntoCargo(item))
@@ -63,4 +68,9 @@ modded class Msp_Fridge_Base
     "SRP_FullSyringe_Base",
     "SRP_InjectionVial_Base"
   };
+
+  void ~Msp_Fridge_Base()
+  {
+    delete m_AllowedCargo;
+  }
 };

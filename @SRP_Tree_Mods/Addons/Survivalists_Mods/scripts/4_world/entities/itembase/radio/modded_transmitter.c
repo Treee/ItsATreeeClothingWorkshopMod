@@ -19,6 +19,15 @@ modded class TransmitterBase extends ItemTransmitter
 		m_Muted = false;
 	}
 
+  override void OnWorkStart()
+	{
+		//turn on broadcasting/receiving
+		super.OnWorkStart();
+		
+		//stop the static noise
+		SoundTurnedOnNoiseStop();
+	}
+
 	override void SetActions()
 	{
 		super.SetActions();

@@ -1,8 +1,11 @@
 modded class MissionGameplay
 {
-    private ref CompassHeadingMenu m_CompassHeadingMenu;
-    //private ref SRP_RadioNoTransmit m_SRP_RadioNoTransmit;
+  private ref CompassHeadingMenu m_CompassHeadingMenu;
 	
+  void ~MissionGameplay()
+  {
+    delete m_CompassHeadingMenu;
+  }
 	
 	override void OnUpdate(float timeslice) 
 	{

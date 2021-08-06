@@ -7,6 +7,10 @@ class ToggleMuteTransmitterActionInput : DefaultActionInput
 		SetInput("UAToggleMuteTransmitter");
 		m_InputType = ActionInputType.AIT_HOLDSINGLE;
 	}
+  void ~ToggleMuteTransmitterActionInput()
+	{
+		delete target_new;
+	}
 	
 	override void UpdatePossibleActions(PlayerBase player, ActionTarget target, ItemBase item, int action_condition_mask)
 	{
