@@ -30,7 +30,89 @@ class CfgVehicles
   class PlantBase;
   class Edible_Base;
   class FoodAnimationSources;
-  class FruitStageTransitions;
+  class BaseFoodStageTransitions;
+
+  // -------------------- BASE GAME OVERRIDE
+  class Cannabis: Edible_Base
+	{
+    displayName="Cannabis";
+		descriptionShort="Cannabis harvested from a cannabis plant.";
+    inventorySlot[]=
+		{
+			"Ingredient",
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8",
+			"DirectCookingA",
+			"DirectCookingB",
+			"DirectCookingC",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+      "SmokingD"
+		};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+  
+  class Plant_Cannabis
+	{
+		class Horticulture
+		{
+			GrowthStagesCount=6;
+			CropsCount=1; // was 7
+			CropsType="Cannabis";
+		};
+	};
+  // --------------------------- CUSTOM STUFF
 
   class TobaccoSeeds: SeedBase
 	{
@@ -63,7 +145,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=7;
+			CropsCount=2;
 			CropsType="Tobacco";
 		};
 	};
@@ -85,7 +167,22 @@ class CfgVehicles
 		quantityBar=1;
 		inventorySlot[]=
 		{
-			"Ingredient"
+			"Ingredient",
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8",
+			"DirectCookingA",
+			"DirectCookingB",
+			"DirectCookingC",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+      "SmokingD"
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -163,7 +260,7 @@ class CfgVehicles
 				{
 					visual_properties[]={0,3,3};
 					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,30,80};
+					cooking_properties[]={70,300,80};
 				};
 				class Burned
 				{
@@ -172,7 +269,7 @@ class CfgVehicles
 					cooking_properties[]={100,20};
 				};
 			};
-			class FoodStageTransitions: FruitStageTransitions
+			class FoodStageTransitions: BaseFoodStageTransitions
 			{
 			};
 		};

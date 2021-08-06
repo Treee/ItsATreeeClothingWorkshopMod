@@ -131,8 +131,13 @@ class SRP_Tree_Drugs_RollZWeedJoint extends RecipeBase
 	}
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
-	{
-		return true;
+	{ // make sure the weed is dried
+    Edible_Base driedSmokable;
+    if (ingredients[0])
+    {
+			driedSmokable = Edible_Base.Cast( ingredients[0] );
+    }
+		return (driedSmokable && driedSmokable.IsFoodDried());
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -202,8 +207,13 @@ class SRP_Tree_Drugs_RollCigarette extends RecipeBase
 	}
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
-	{
-		return true;
+	{ // make sure the weed is dried
+    Edible_Base driedSmokable;
+    if (ingredients[0])
+    {
+			driedSmokable = Edible_Base.Cast( ingredients[0] );
+    }
+		return (driedSmokable && driedSmokable.IsFoodDried());
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -273,8 +283,13 @@ class SRP_Tree_Drugs_RollCigar extends RecipeBase
 	}
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
-	{
-		return true;
+	{ // make sure the weed is dried
+    Edible_Base driedSmokable;
+    if (ingredients[0])
+    {
+			driedSmokable = Edible_Base.Cast( ingredients[0] );
+    }
+		return (driedSmokable && driedSmokable.IsFoodDried());
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
