@@ -50,7 +50,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   {
     Print("WorkbenchGUICraftingHud: Opened");
     targetPlayer = PlayerBase.Cast(GetGame().GetPlayer());
-    Print("currently selected workbench: " + targetPlayer.selectedCraftingBench);
+    // Print("currently selected workbench: " + targetPlayer.selectedCraftingBench);
     isProgressBlocking = false;
     config = GetDayZGame().GetSRPConfigGlobal();
     // Print("config: " + config);
@@ -134,19 +134,17 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 
   CraftingConfig GetCraftingConfig(string workbenchType)
   {
+    // Print("Get " + workbenchType + " Config");
     if (workbenchType == "SRP_SewingMachine")
-    {
-      Print("Get Tailor crafting config");
+    {      
       return config.tailorWorkbench;
     }
     else if (workbenchType == "SRP_AdvancedWorkbench")
     {
-      Print("Get advanced workbench crafting config");
       return config.advancedWorkbench;
     }
     else if (workbenchType == "SRP_DrugWorkbench")
     {
-      Print("Get drug workbench crafting config");
       return config.drugWorkbench;
     }
     return null;
@@ -385,6 +383,9 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
       m_ProgressCraftBar.Show(false);
 
       // send RPC to craft the item server side
+      auto craftingParams = new Param2<CraftedItem, EntityAI>(previouslyCraftedItem, targetPlayer.guiCraftingBench);
+      Print("Sending Craft Request to Server: " + targetPlayer.GetIdentity().GetName() + " RPC: " + SRP_RPC.CLIENT_REQUEST_CRAFT);
+      GetGame().RPCSingleParam(targetPlayer, SRP_RPC.CLIENT_REQUEST_CRAFT, craftingParams, true, targetPlayer.GetIdentity() );
 
       GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( ReloadCraftingBench, 500, false);
     }
@@ -499,7 +500,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 		super.OnMouseEnter(w, x, y);
     if (w.GetUserID() == 25)
     {
-      Print("widget id is 25 " + w);
+      // Print("widget id is 25 " + w);
       w.FindAnyWidget("CraftItemPanel").Show(true);
       w.FindAnyWidget("CraftItemPreview").Show(false);
     }
