@@ -246,3 +246,4 @@ Thank you to all the wonderful people who spent their time making models and lis
 
 - "Natural Paper box - King Size" (https://skfb.ly/6WCEq) by LaSemillaAutomatica is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/). (Not monetized or modified)
 
+"Neon Letters" (https://skfb.ly/6wPxw) by danny_p3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
