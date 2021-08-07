@@ -11,6 +11,10 @@ class SleepEffectSymptom extends SymptomBase
   float PASS_OUT_THRESHOLD = 0; // 5 minutes passed 0 is pass out territory
   int SECONDS_PER_DAY = 0;
 
+  float m_SleepynessIncreaseAmount;
+  float m_RestfulnessIncreaseAmount;
+
+
   int TIREDNESS_0PERCENT = 0;
   float TIREDNESS_25PERCENT = 0;
   float TIREDNESS_50PERCENT = 0;
@@ -42,9 +46,11 @@ class SleepEffectSymptom extends SymptomBase
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
     // Print("SleepEffect: OnTick - Sleepyness count: " + total_tiredness);
-    if (player.IsAwake()) 
+    if (player.IsAwake())
     {
-      total_tiredness += 1.5 * deltatime;
+      total_tiredness += m_SleepynessIncreaseAmount * deltatime;
+      // we can next get more sleepy than passing out
+      total_tiredness = Math.Min(PASS_OUT_THRESHOLD, total_tiredness);
 
       if (total_tiredness > YAWN_THRESHOLD && m_LastYawnEvent > m_YawnInterval) {
         bool isMale = player.IsMale();
@@ -54,16 +60,20 @@ class SleepEffectSymptom extends SymptomBase
       if (total_tiredness > PASS_OUT_THRESHOLD) {
         player.SRP_SetUnconscious();
       }
+      // Print("Awake: " + total_tiredness);
     } 
     else 
     {
-      total_tiredness -= 1.5 * deltatime;
+      total_tiredness -= m_RestfulnessIncreaseAmount * deltatime;
+      // we can never get more rested than 100%
+      total_tiredness = Math.Max(0.5, total_tiredness);
+      // Print("Asleep: " + total_tiredness);
     }
-
+    
     m_ModulePlayerStatus.DisplayTirednessTendency(NTFKEY_SRP_TIREDNESS, total_tiredness, GetTendency(total_tiredness), GetTirednessLevel(total_tiredness));
 
     m_LastTirednessCount = total_tiredness;
-    m_LastYawnEvent += 1.5 * deltatime;
+    m_LastYawnEvent += deltatime;
 	}
 	
 	//!gets called once on an Symptom which is being activated
@@ -77,9 +87,11 @@ class SleepEffectSymptom extends SymptomBase
     SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
     // Print("SleepMdfr: OnActivate Start - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));        
     SECONDS_PER_DAY = config.g_SRPSleepMaximumAwakeTime;
-    m_YawnInterval = config.g_SRPSleepYawnInterval; 
-    YAWN_THRESHOLD = SECONDS_PER_DAY * 0.8; // 20 percent awake = start yawning
-    PASS_OUT_THRESHOLD = SECONDS_PER_DAY + 300; // 5 minutes passed 0 is pass out territory
+    m_YawnInterval = config.g_SRPSleepYawnInterval;
+    m_SleepynessIncreaseAmount = config.g_SRPSleepynessIncreaseAmount;
+    m_RestfulnessIncreaseAmount = config.g_SRPRestfulnessIncreaseAmount;
+    YAWN_THRESHOLD = SECONDS_PER_DAY * config.g_SRPSleepYawnThreshold; // 20 percent awake = start yawning
+    PASS_OUT_THRESHOLD = SECONDS_PER_DAY + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
     TIREDNESS_25PERCENT = SECONDS_PER_DAY * 0.25;
     TIREDNESS_50PERCENT = SECONDS_PER_DAY * 0.50;
     TIREDNESS_75PERCENT = SECONDS_PER_DAY * 0.75;

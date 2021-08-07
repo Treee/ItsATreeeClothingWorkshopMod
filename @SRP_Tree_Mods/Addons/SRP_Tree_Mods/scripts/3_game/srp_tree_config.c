@@ -321,7 +321,7 @@ class SRPTreeConfig
   bool g_SRPIsSleepActive;
   bool g_SRPIsDrugsEffectsActive;
   bool g_SRPIsBioHazardLocationsActive;
-
+  
   int g_SRPSleepMaximumAwakeTime;
   int g_SRPSleepYawnInterval;
   int g_SRPAlcoholModifierLifetime;
@@ -335,6 +335,8 @@ class SRPTreeConfig
   int g_SRPAlcoholFoodLossAmount;
   int g_SRPWeedWaterLossAmount;
 
+  float g_SRPSleepynessIncreaseAmount;
+  float g_SRPRestfulnessIncreaseAmount;
   float g_SRPSleepYawnThreshold;
   float g_SRPSleepPassOutThreshold;
   float g_SRPAlcoholChanceToLaughThreshold;
@@ -388,7 +390,7 @@ class SRPTreeGlobals
 
   private static SRPTreeConfig LoadSRPConfig()
   {
-    SRPTreeConfig config = new SRPTreeConfig;
+    SRPTreeConfig config = new SRPTreeConfig();
     if (!FileExist(configPath))
     {
       Print("'SRP_Tree_Mod_Settings' does not exist, creating now.");
@@ -399,14 +401,14 @@ class SRPTreeGlobals
     return config;
   }
 
-  private static void CreateDefaultConfigFile(SRPTreeConfig config)
+  private static void CreateDefaultConfigFile(inout SRPTreeConfig config)
   {
     config.g_SRPIsSleepActive = true;
     config.g_SRPIsDrugsEffectsActive = true;
     config.g_SRPIsBioHazardLocationsActive = true;
 
     config.g_SRPSleepMaximumAwakeTime = 14400; // 4 hours in seconds is the "max" awake time before passing out
-    config.g_SRPSleepYawnInterval = 15;        // time in between yawns
+    config.g_SRPSleepYawnInterval = 120;        // time in between yawns
     config.g_SRPAlcoholModifierLifetime = 100;
     config.g_SRPBathSaltsModifierLifetime = 600; // 10 minutes
     config.g_SRPMethModifierLifetime = 600;
@@ -418,8 +420,10 @@ class SRPTreeGlobals
     config.g_SRPAlcoholFoodLossAmount = 0.2;
     config.g_SRPWeedWaterLossAmount = 0.2;
 
+    config.g_SRPSleepynessIncreaseAmount = 1.5; // we get sleepy x units per
+    config.g_SRPRestfulnessIncreaseAmount = 50; // we get rested x units per
     config.g_SRPSleepYawnThreshold = 0.8; // 80% sleepyness triggers yawning. 0% means yawning when fully awake
-    config.g_SRPSleepPassOutThreshold = 300; // how many extra seconds do they get before they 100% pass out
+    config.g_SRPSleepPassOutThreshold = 600; // how many extra seconds do they get before they 100% pass out
     config.g_SRPAlcoholChanceToLaughThreshold = 15; // 15% chance to laugh
     config.g_SRPBathSaltsChanceForScarySound = 10; 
     config.g_SRPBathSaltsChanceForHappySound = 20;
