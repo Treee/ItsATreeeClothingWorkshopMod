@@ -355,7 +355,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     {
       if (isProgressBlocking)
       {        
-        targetPlayer.SendMessageToClient(targetPlayer, "Wait... Still Crafting.");
+        // targetPlayer.SendMessageToClient(targetPlayer, "Wait... Still Crafting.");
       }
       else 
       {
