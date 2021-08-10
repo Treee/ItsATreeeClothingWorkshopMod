@@ -69,63 +69,25 @@ class CfgVehicles
 	};
 
   //----------------------------------------------- CUSTOM STUFF
-  class SRP_LongRangeRadioBattery: Inventory_Base // SRPLRRadioBattery
+  class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery
 	{
 		scope=2;
 		displayName="Military Radio Battery";
 		descriptionShort="Military radio battery pack";
 		model="Survivalists_Mods\gear\consumables\SRP_LRRadioBattery.p3d";
 		inventorySlot="SRPRadioBattery";
-		armAction="Disarm";
-		stackedUnit="w";
-		quantityBar=1;
-		varQuantityInit=200;
-		varQuantityMin=0;
-		varQuantityMax=200;
-		varQuantityDestroyOnMin=0;
-		isMeleeWeapon=1;
 		itemSize[]={1,2};
-		weight=10;
-		absorbency=0.80000001;
-		rotationFlags=17;
 		class EnergyManager
 		{
 			hasIcon=1;
 			switchOnAtSpawn=1;
 			isPassiveDevice=1;
-			energyStorageMax=200;
-			energyAtSpawn=200;
+			energyStorageMax=250;
+			energyAtSpawn=250;
 			convertEnergyToQuantity=1;
 			reduceMaxEnergyByDamageCoef=1;
 			powerSocketsCount=1;
 			compatiblePlugTypes[]={1};
-		};
-		class AnimationSources
-		{
-			class cover
-			{
-				source="user";
-				animPeriod=0.5;
-				initPhase=1;
-			};
-		};
-    class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=20;
-					healthLevels[]=
-					{						
-						{1,{"DZ\gear\consumables\data\9v.rvmat"}},
-            {0.69999999,{"DZ\gear\consumables\data\9v.rvmat"}},
-            {0.5,{"DZ\gear\consumables\data\9v_damage.rvmat"}},
-            {0.30000001,{"DZ\gear\consumables\data\9v_damage.rvmat"}},
-            {0,{"DZ\gear\consumables\data\9v_destruct.rvmat"}}
-					};
-				};
-			};
 		};
 	};
 

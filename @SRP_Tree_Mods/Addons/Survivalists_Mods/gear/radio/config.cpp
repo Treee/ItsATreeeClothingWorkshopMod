@@ -170,7 +170,7 @@ class CfgVehicles
 		range=7500;
 		attachments[]=
 		{
-			"SRPRadioBattery"
+      "SRPRadioBattery"
 		};
 		repairableWithKits[]={5,7};
 		repairCosts[]={30,25};

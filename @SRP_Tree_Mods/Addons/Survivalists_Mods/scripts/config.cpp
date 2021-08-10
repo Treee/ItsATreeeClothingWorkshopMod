@@ -357,11 +357,8 @@ class CfgSlots
 	class Slot_SRPLRRadioBattery
 	{
 		name="SRPRadioBattery";
-		displayName="Battery";
-		selection="SRPRadioBattery";
-		ghostIcon="Battery";
-		show="true";
-		stackMax=1;
+		displayName="Military Battery";
+		ghostIcon="set:dayz_inventory image:batteryd";
 	};
 };
 
