@@ -1,6 +1,6 @@
 modded class GesturesMenu
 {
-  override void GetGestureItems(out ref array<ref GestureMenuItem> gesture_items, GestureCategories category)z
+  override void GetGestureItems(out ref array<ref GestureMenuItem> gesture_items, GestureCategories category)
   {
     super.GetGestureItems(gesture_items, category);
     switch (category)
