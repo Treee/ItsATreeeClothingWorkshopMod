@@ -126,7 +126,7 @@ modded class OpenCan
 	}
 };
 
-class SRP_Tree_CreateVeggiesMeatComboCanned_Raw extends RecipeBase  
+class SRP_CreateVeggiesMeatComboCanned_Raw extends RecipeBase  
 {
 	override void Init()
 	{
@@ -215,7 +215,7 @@ class SRP_Tree_CreateVeggiesMeatComboCanned_Raw extends RecipeBase
 	}
 };
 
-class SRP_Tree_CreateVeggiesCanned_Raw extends RecipeBase  
+class SRP_CreateVeggiesCanned_Raw extends RecipeBase  
 {
 	override void Init()
 	{
@@ -300,7 +300,7 @@ class SRP_Tree_CreateVeggiesCanned_Raw extends RecipeBase
 	}
 };
 
-class SRP_Tree_CreateMeatCanned_Raw extends RecipeBase  
+class SRP_CreateMeatCanned_Raw extends RecipeBase  
 {
 	override void Init()
 	{
@@ -393,7 +393,7 @@ class SRP_Tree_CreateMeatCanned_Raw extends RecipeBase
 	}
 };
 
-class SRP_Tree_CreateHumanMeatCanned_Raw extends RecipeBase  
+class SRP_CreateHumanMeatCanned_Raw extends RecipeBase  
 {
 	override void Init()
 	{
@@ -456,7 +456,7 @@ class SRP_Tree_CreateHumanMeatCanned_Raw extends RecipeBase
 	}
 };
 
-class SRP_Tree_CreateVeggiesHumanMeatComboCanned_Raw extends RecipeBase  
+class SRP_CreateVeggiesHumanMeatComboCanned_Raw extends RecipeBase  
 {
 	override void Init()
 	{
@@ -530,7 +530,7 @@ class SRP_Tree_CreateVeggiesHumanMeatComboCanned_Raw extends RecipeBase
 	}
 };
 
-class SRP_Tree_CanRawGoods extends RecipeBase  
+class SRP_CanRawGoods extends RecipeBase  
 {
 	override void Init()
 	{
@@ -551,7 +551,7 @@ class SRP_Tree_CanRawGoods extends RecipeBase
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		
 		//ingredient 1  
-		InsertIngredient(0,"BP1_Workbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
     
 
 		m_IngredientAddHealth[0] = 0;	// -1 = do nothing

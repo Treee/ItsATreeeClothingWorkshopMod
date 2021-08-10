@@ -42,6 +42,13 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_Notebook);
     RegisterRecipe(new Craft_SRP_WhiteFlag);
 
+    // Food Recipes	
+    RegisterRecipe(new SRP_CreateVeggiesMeatComboCanned_Raw);		
+    RegisterRecipe(new SRP_CreateVeggiesCanned_Raw);		
+    RegisterRecipe(new SRP_CreateMeatCanned_Raw);		
+    RegisterRecipe(new SRP_CreateHumanMeatCanned_Raw);		
+    RegisterRecipe(new SRP_CreateVeggiesHumanMeatComboCanned_Raw);		
+    RegisterRecipe(new SRP_CanRawGoods);		
 
     //--------------- Patches
     RegisterRecipe(new Craft_SRP_Patch_Russian);

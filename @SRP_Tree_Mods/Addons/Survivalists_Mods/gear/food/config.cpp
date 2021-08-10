@@ -30,7 +30,6 @@ class CfgVehicles
     canBeSplit=1;
   };
 
-
   class Lard: Edible_Base
 	{
 		inventorySlot[]=
@@ -536,13 +535,13 @@ class CfgVehicles
 				{
 					visual_properties[]={0,1,1};
 					nutrition_properties[]={1,200,50,1,0};
-					cooking_properties[]={70,45};
+					cooking_properties[]={70,120};
 				};
 				class Boiled
 				{
 					visual_properties[]={0,2,2};
 					nutrition_properties[]={1,150,100,1,0};
-					cooking_properties[]={70,55};
+					cooking_properties[]={70,125};
 				};
 				class Dried
 				{
@@ -554,7 +553,7 @@ class CfgVehicles
 				{
 					visual_properties[]={0,4,4};
 					nutrition_properties[]={5,50,0,1,0,16};
-					cooking_properties[]={100,30};
+					cooking_properties[]={100,300};
 				};
 			};
 		};
@@ -1657,6 +1656,558 @@ class CfgVehicles
 			blood=-1500;
 			nutritionalIndex=2;
 			toxicity=1200;
+		};
+	};
+
+
+  //---------------------------------------- Raw Cookable Cans
+  class SRP_FoodCanRaw_Colorbase: Edible_Base 
+  {
+		displayName="Raw Canned Food";
+		descriptionShort="A can of food that is yet to be preserved from spoiling. Raw.";
+		model="\dz\gear\food\food_can_open.p3d";
+    rotationFlags=63;
+		itemSize[]={2,2};
+		weight=440;
+		varQuantityInit=150;
+		varQuantityMin=0;
+		varQuantityMax=600;
+    canBeSplit=1;
+		isMeleeWeapon=1;
+    inventorySlot[]=
+		{
+			"DirectCookingA",
+			"DirectCookingB",
+			"DirectCookingC",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+			"SmokingD"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					nutrition_properties[]={5,160,70,1,0,4};
+					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
+				};
+				class Rotten
+				{
+					nutrition_properties[]={2,120,35,1,0,"4+16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					nutrition_properties[]={5,50,50.5,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					nutrition_properties[]={5,50,50,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Burned
+				{
+					nutrition_properties[]={2,120,17.5,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions
+			{
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,	{"DZ\gear\food\data\food_can.rvmat"}},
+            {0.69999999, {"DZ\gear\food\data\food_can.rvmat"}},
+            {0.5, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0.30000001, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0,	{"DZ\gear\food\data\food_can_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+  };
+
+  class SRP_FoodCanRaw_Veggies: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="Veggies";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+
+			"Survivalists_Mods\gear\food\data\emptycan_veggies_co.paa"
+		};
+	};
+
+  class SRP_FoodCanRaw_Meat: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="Meat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+	};
+
+  class SRP_FoodCanRaw_HumanMeat: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="HumanMeat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					nutrition_properties[]={5,160,70,1,0,4};
+					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
+				};
+				class Rotten
+				{
+					nutrition_properties[]={2,120,35,1,0,"4+16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					nutrition_properties[]={5,50,50.5,1,0,2};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					nutrition_properties[]={5,50,50,1,0,2};
+					cooking_properties[]={70,125};
+				};
+				class Burned
+				{
+					nutrition_properties[]={2,120,17.5,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions
+			{
+			};
+		};
+	};
+
+  class SRP_FoodCanRaw_VeggieMeatCombo: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="VeggieMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+	};
+
+  class SRP_FoodCanRaw_VeggieHumanMeatCombo: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="VeggieHumanMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					nutrition_properties[]={5,160,70,1,0,4};
+					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
+				};
+				class Rotten
+				{
+					nutrition_properties[]={2,120,35,1,0,"4+16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					nutrition_properties[]={5,50,50.5,1,0,2};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					nutrition_properties[]={5,50,50,1,0,2};
+					cooking_properties[]={70,125};
+				};
+				class Burned
+				{
+					nutrition_properties[]={2,120,17.5,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions
+			{
+			};
+		};
+	};
+
+  //----------------------------------------- Sealed Cans
+  class SRP_FoodCanPreserved_Colorbase: Edible_Base
+  {
+		displayName="Preserved Canned Food";
+		descriptionShort="A can of food that is preserved from spoiling.";
+		model="\dz\gear\food\food_can.p3d";
+    rotationFlags=63;
+		itemSize[]={2,2};
+		weight=440;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=600;
+		isMeleeWeapon=1;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,	{"DZ\gear\food\data\food_can.rvmat"}},
+            {0.69999999, {"DZ\gear\food\data\food_can.rvmat"}},
+            {0.5, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0.30000001, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0,	{"DZ\gear\food\data\food_can_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+  };
+
+  class SRP_FoodCanPreserved_Veggies: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="Veggies";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\emptycan_veggies_co.paa"
+		};
+	};
+
+  class SRP_FoodCanPreserved_Meat: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="Meat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+	};
+
+  class SRP_FoodCanPreserved_HumanMeat: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="HumanMeat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+	};
+
+  class SRP_FoodCanPreserved_VeggieMeatCombo: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="VeggieMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+	};
+
+  class SRP_FoodCanPreserved_VeggieHumanMeatCombo: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="VeggieHumanMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+	};
+  
+  //----------------------------------------- Opened Cans
+  class SRP_FoodCanPreserved_Opened_Colorbase: Edible_Base {
+		displayName="Preserved Canned Food Open";
+		descriptionShort="An opened can of preserved food. Who knows how long it has been in there.";
+		model="\dz\gear\food\food_can_open.p3d";
+    itemSize[]={2,2};
+		weight=40;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=600;
+		isMeleeWeapon=1;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,	{"DZ\gear\food\data\food_can.rvmat"}},
+            {0.69999999, {"DZ\gear\food\data\food_can.rvmat"}},
+            {0.5, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0.30000001, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0,	{"DZ\gear\food\data\food_can_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+  };
+
+	class SRP_FoodCanPreserved_Veggies_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\emptycan_veggies_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=10;
+			energy=50;
+			water=50;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+
+  class SRP_FoodCanPreserved_Meat_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=10;
+			energy=75;
+			water=25;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+
+  class SRP_FoodCanPreserved_HumanMeat_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=10;
+			energy=75;
+			water=25;
+			nutritionalIndex=1;
+			toxicity=0;
+      agents=4;
+		};
+	};
+
+  class SRP_FoodCanPreserved_VeggieMeatCombo_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=10;
+			energy=50;
+			water=50;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+
+  class SRP_FoodCanPreserved_VeggieHumanMeatCombo_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=10;
+			energy=50;
+			water=50;
+			nutritionalIndex=1;
+			toxicity=0;
+      agents=4;
 		};
 	};
 

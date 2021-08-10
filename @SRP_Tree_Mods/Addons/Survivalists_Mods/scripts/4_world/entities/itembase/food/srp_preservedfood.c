@@ -31,7 +31,6 @@ class SRP_FoodCanPreserved_Veggies : SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
-		//super.Open();
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_Veggies_Opened");
 	}
 };
@@ -40,7 +39,6 @@ class SRP_FoodCanPreserved_Meat : SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
-		//super.Open();
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_Meat_Opened");
 	}
 };
@@ -49,7 +47,6 @@ class SRP_FoodCanPreserved_HumanMeat : SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
-		//super.Open();
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_HumanMeat_Opened");
 	}
 };
@@ -58,7 +55,6 @@ class SRP_FoodCanPreserved_VeggieMeatCombo : SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
-		//super.Open();
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_VeggieMeatCombo_Opened");
 	}
 };
@@ -67,7 +63,6 @@ class SRP_FoodCanPreserved_VeggieHumanMeatCombo : SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
-		//super.Open();
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_VeggieHumanMeatCombo_Opened");
 	}
 };

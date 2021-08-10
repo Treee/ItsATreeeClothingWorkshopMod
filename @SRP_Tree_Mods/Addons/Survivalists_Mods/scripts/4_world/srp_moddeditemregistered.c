@@ -10,6 +10,9 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Shotgun60Count", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/ammunition/9mm_25rnd_box.anm");
     pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Pistol60Count", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/ammunition/9mm_25rnd_box.anm");
     pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Rifle40Count", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/ammunition/9mm_25rnd_box.anm");
+    pType.AddItemInHandsProfileIK("SRP_FoodCanRaw_Colorbase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can_opened.anm"); 
+    pType.AddItemInHandsProfileIK("SRP_FoodCanPreserved_Colorbase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can.anm"); 
+    pType.AddItemInHandsProfileIK("SRP_FoodCanPreserved_Opened_Colorbase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can_opened.anm"); 
   };
 
   override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)

@@ -26,12 +26,5 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new SRP_Craft_DrugPack);
     RegisterRecipe(new SRP_Craft_DrugCarton);	
 
-    // Food Recipes	
-    RegisterRecipe(new SRP_Tree_CreateVeggiesMeatComboCanned_Raw);		
-    RegisterRecipe(new SRP_Tree_CreateVeggiesCanned_Raw);		
-    RegisterRecipe(new SRP_Tree_CreateMeatCanned_Raw);		
-    RegisterRecipe(new SRP_Tree_CreateHumanMeatCanned_Raw);		
-    RegisterRecipe(new SRP_Tree_CreateVeggiesHumanMeatComboCanned_Raw);		
-    RegisterRecipe(new SRP_Tree_CanRawGoods);		
 	}
 };
