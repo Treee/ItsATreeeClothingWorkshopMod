@@ -1701,12 +1701,12 @@ class CfgVehicles
 				class Baked
 				{
 					nutrition_properties[]={5,50,50.5,1,0};
-					cooking_properties[]={70,120};
+					cooking_properties[]={70,300, 80};
 				};
 				class Boiled
 				{
 					nutrition_properties[]={5,50,50,1,0};
-					cooking_properties[]={70,125};
+					cooking_properties[]={100,180};
 				};
 				class Burned
 				{
@@ -1714,7 +1714,7 @@ class CfgVehicles
 					cooking_properties[]={100,300};
 				};
 			};
-			class FoodStageTransitions: MeatStageTransitions
+      class FoodStageTransitions: MeatStageTransitions
 			{
 			};
 		};
