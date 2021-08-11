@@ -2,7 +2,7 @@ modded class meleesling_colorbase_mung
 {
   override bool CanPutInCargo( EntityAI parent )
 	{ // if anything is attached you cannot put this into cargo. no more "smaller" guns
-    return GetInventory().AttachmentCount() > 0;
+    return GetInventory().AttachmentCount() == 0;
 	}
 
   override bool CanReceiveAttachment( EntityAI attachment, int slotId )
@@ -18,8 +18,8 @@ modded class meleesling_colorbase_mung
 modded class riflesling_colorbase_mung
 {
   override bool CanPutInCargo( EntityAI parent )
-	{ // if anything is attached you cannot put this into cargo. no more "smaller" guns
-    return GetInventory().AttachmentCount() > 0;
+	{ // if anything is attached you cannot put this into cargo. no more "smaller" guns    
+    return GetInventory().AttachmentCount() == 0;
 	}
 
   override bool CanReceiveAttachment( EntityAI attachment, int slotId )

@@ -41,6 +41,8 @@ class CfgPatches
 			"DZ_Data",
       "Munghardssleepingbag", // munghards
       "MunghardsBrain",     // mung_brain
+      "Munghardsmeleesling", // meleesling
+      "Munghardsriflesling", // riflesling
       "Mass_Textures", // MassNBC_Bag, MassRatnik
       "MSP_Scripts",    // MSP_Fridge_Base
       "deerisle", // for the map
