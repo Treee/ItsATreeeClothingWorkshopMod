@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class SRP_Tree_Cultivation
+	class Survivalists_Mods_Cultivation
 	{
 		units[]={};
 		weapons[]={};
@@ -17,9 +17,9 @@ class CfgHorticulture
 	{
 		class Plant_Tobacco
 		{
-			infestedTex="SRP_Tree_Mods\gear\cultivation\data\tobacco_plant_insect_co.paa";
+			infestedTex="Survivalists_Mods\gear\cultivation\data\tobacco_plant_insect_co.paa";
 			infestedMat="dz\gear\cultivation\data\cannabis_plant_insect.rvmat";
-			healthyTex="SRP_Tree_Mods\gear\cultivation\data\tobacco_plant_co.paa";
+			healthyTex="Survivalists_Mods\gear\cultivation\data\tobacco_plant_co.paa";
 			healthyMat="dz\gear\cultivation\data\cannabis_plant.rvmat";
 		};
 	};
@@ -33,6 +33,17 @@ class CfgVehicles
   class BaseFoodStageTransitions;
 
   // -------------------- BASE GAME OVERRIDE
+  class CannabisSeeds: SeedBase
+	{
+    displayName="Cannabis Seeds";
+		descriptionShort="Cannabis seeds harvested from a cannabis plant.";
+  };
+  class CannabisSeedsPack: Inventory_Base
+	{
+    displayName="Cannabis Seeds Pack";
+		descriptionShort="A pack of cannabis seeds.";
+  };
+  
   class Cannabis: Edible_Base
 	{
     displayName="Cannabis";
@@ -103,7 +114,7 @@ class CfgVehicles
 		};
 	};
   
-  class Plant_Cannabis
+  class Plant_Cannabis: PlantBase
 	{
 		class Horticulture
 		{
@@ -136,7 +147,7 @@ class CfgVehicles
 		model="DZ\gear\cultivation\Cannabis_plant.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"SRP_Tree_Mods\gear\cultivation\data\tobacco_plant_co.paa"
+			"Survivalists_Mods\gear\cultivation\data\tobacco_plant_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -192,11 +203,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP_Tree_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
-			"SRP_Tree_Mods\gear\cultivation\data\tobacco_seedman_baked_co.paa",
-			"SRP_Tree_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
-			"SRP_Tree_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
-			"SRP_Tree_Mods\gear\cultivation\data\tobacco_seedman_baked_co.paa"
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_baked_co.paa",
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_baked_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{

@@ -12,4 +12,4 @@ class Plant_Tobacco : PlantBase
   {
     m_FullMaturityTime = 2700;
   }
-}
+};
