@@ -29,6 +29,7 @@ class CfgVehicles
   class SeedBase;
   class PlantBase;
   class Edible_Base;
+  class Inventory_Base;
   class FoodAnimationSources;
   class BaseFoodStageTransitions;
 
