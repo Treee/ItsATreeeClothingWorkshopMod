@@ -11,12 +11,15 @@ modded class PluginRecipesManagerBase extends PluginBase
     
     //---------Kits
 		RegisterRecipe(new Craft_SRP_BedsideTable_Kit);
-		RegisterRecipe(new Craft_SRP_WoodenShelf_Kit);
-		RegisterRecipe(new Craft_SRP_GunShelf_Kit);
+		RegisterRecipe(new Craft_SRP_WoodenShelfSimple_Kit);
+		RegisterRecipe(new Craft_SRP_WoodenShelfSimpleGround_Kit);
+		RegisterRecipe(new Craft_SRP_GunShelfWall_Kit);
+		RegisterRecipe(new Craft_SRP_GunShelfGround_Kit);
 		RegisterRecipe(new Craft_SRP_Potbelly_Stove_Kit);		
-		RegisterRecipe(new Craft_SRP_ShootingTargetO_Kit);		
+		RegisterRecipe(new Craft_SRP_ShootingTargets_Kit);		
 		RegisterRecipe(new Craft_SRP_StreetLightLarge_Kit);		
 		RegisterRecipe(new Craft_SRP_StreetLightMedium_Kit);		
+		RegisterRecipe(new Craft_SRP_StreetLightMedium_Wood_Kit);
 
     // Building
     RegisterRecipe(new Craft_SRP_Planks);
