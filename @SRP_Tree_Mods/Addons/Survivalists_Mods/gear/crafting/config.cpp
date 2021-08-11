@@ -20,6 +20,18 @@ class CfgVehicles
   class Inventory_Base;
   class SRP_KitBase;
 
+  //-------------------------------------BASE GAME OVERRIDE
+  // sneaky stashes attachments
+  class WoodenStick: Inventory_Base
+	{
+    inventorySlot[]=
+		{
+			"WoodenStick",
+			"Material_Shelter_Sticks",
+      "WoodenSticks_20"
+		};
+  };
+
 	class SRP_AdvancedWorkbench: Container_Base // BP1_Workbench
 	{
 		scope=2;

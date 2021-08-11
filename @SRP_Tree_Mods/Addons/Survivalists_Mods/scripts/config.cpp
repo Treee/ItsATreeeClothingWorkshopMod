@@ -360,6 +360,48 @@ class CfgSlots
 		displayName="Military Battery";
 		ghostIcon="set:dayz_inventory image:batteryd";
 	};
+  class Slot_WoodenLogs_5
+  {
+		name="WoodenLogs_5";
+		displayName="$STR_CfgWoodenLogs0";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+    stackMax=5;
+  }
+  class Slot_WoodenLogs_9
+  {
+		name="WoodenLogs_9";
+		displayName="$STR_CfgWoodenLogs0";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+    stackMax=9;
+  }
+  class Slot_Bark_16
+  {
+		name="Bark_16";
+		displayName="Bark";
+		ghostIcon="set:dayz_inventory image:bark";
+    stackMax=16;
+  }
+  class Slot_Firewood_20
+  {
+		name="Firewood_20";
+		displayName="Firewood";
+		ghostIcon="set:dayz_inventory image:bark";
+    stackMax=20;
+  }
+  class Slot_WoodenSticks_20
+  {
+		name="WoodenSticks_20";
+		displayName="$STR_CfgWoodenStick0";
+		ghostIcon="set:dayz_inventory image:woodenstick";
+    stackMax=20;
+  }
+  class Slot_Planks_20
+  {
+		name="Planks_20";
+		displayName="$STR_CfgPlanks0";
+		ghostIcon="set:dayz_inventory image:planks";
+    stackMax=20;
+  }
 };
 
 class CfgNonAIVehicles
