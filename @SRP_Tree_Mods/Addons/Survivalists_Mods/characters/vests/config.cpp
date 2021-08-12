@@ -195,11 +195,11 @@ class CfgVehicles
 					hitpoints=350;
 					healthLevels[]=
 					{
-						{1,	{	"Survivalists_Mods\characters\vests\data\brewstershield.rvmat"}},
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\brewstershield.rvmat"}},
             {0.69999999,	{	"Survivalists_Mods\characters\vests\data\brewstershield.rvmat"}},
             {0.5,	{	"Survivalists_Mods\characters\vests\data\brewstershield_damage.rvmat"}},
             {0.30000001,	{	"Survivalists_Mods\characters\vests\data\brewstershield_damage.rvmat"}},
-            {0,	{	"Survivalists_Mods\characters\vests\data\brewstershield_destruct.rvmat"}}
+            {0.0,	{	"Survivalists_Mods\characters\vests\data\brewstershield_destruct.rvmat"}}
 					};
 				};
 			};
