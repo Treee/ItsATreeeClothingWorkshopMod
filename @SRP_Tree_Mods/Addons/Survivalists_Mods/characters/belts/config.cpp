@@ -47,6 +47,24 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\belts\legholster_m.p3d";
 			female="Survivalists_Mods\characters\belts\legholster_m.p3d";
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\belts\data\legholster.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\belts\data\legholster.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\legholster_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\belts\data\legholster_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\belts\data\legholster_destruct.rvmat"}}
+					};
+				};
+			};
+		};
   };
 
   class SRP_PoliceBelt: MilitaryBelt // new
@@ -77,6 +95,24 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\belts\policebelt_m.p3d";
 			female="Survivalists_Mods\characters\belts\policebelt_m.p3d";
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\belts\data\policebelt.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\belts\data\policebelt.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\policebelt_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\belts\data\policebelt_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\belts\data\policebelt_destruct.rvmat"}}
+					};
+				};
+			};
+		};
   };
 
   class SRP_TacticalBelt: MilitaryBelt // new
@@ -106,6 +142,24 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\belts\tacticalbelt_m.p3d";
 			female="Survivalists_Mods\characters\belts\tacticalbelt_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\belts\data\tacticalbelt.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\belts\data\tacticalbelt.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\tacticalbelt_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\belts\data\tacticalbelt_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\belts\data\tacticalbelt_destruct.rvmat"}}
+					};
+				};
+			};
 		};
   };
 };

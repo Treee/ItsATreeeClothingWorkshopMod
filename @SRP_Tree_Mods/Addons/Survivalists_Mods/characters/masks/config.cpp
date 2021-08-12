@@ -294,6 +294,27 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\masks\srpgasmask_m.p3d";
 			female="Survivalists_Mods\characters\masks\srpgasmask_m.p3d";
 		};
-  }
-
+    class Protection
+		{
+			biological=1;
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=120;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\characters\masks\data\srpgasmask.rvmat", "Survivalists_Mods\characters\masks\data\srpgasmask_glass.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\masks\data\srpgasmask.rvmat", "Survivalists_Mods\characters\masks\data\srpgasmask_glass.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\masks\data\srpgasmask_damage.rvmat", "Survivalists_Mods\characters\masks\data\srpgasmask_glass_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\masks\data\srpgasmask_damage.rvmat", "Survivalists_Mods\characters\masks\data\srpgasmask_glass_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\masks\data\srpgasmask_destruct.rvmat", "Survivalists_Mods\characters\masks\data\srpgasmask_glass_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
 };

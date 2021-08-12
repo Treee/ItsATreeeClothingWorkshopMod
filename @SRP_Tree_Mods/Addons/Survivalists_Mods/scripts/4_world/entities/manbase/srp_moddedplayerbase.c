@@ -81,7 +81,7 @@ modded class PlayerBase extends ManBase
       // check to see if the item exists in the workbench  
       for(int workbenchIndex = 0; workbenchIndex < guiCraftingBench.GetInventory().GetCargo().GetItemCount(); workbenchIndex++)
       {
-        ItemBase itemInBench = guiCraftingBench.GetInventory().GetCargo().GetItem(workbenchIndex);      
+        ItemBase itemInBench = ItemBase.Cast(guiCraftingBench.GetInventory().GetCargo().GetItem(workbenchIndex)); 
         // Print("Checking workbench " + workbenchIndex + " index " + itemInBench);
         if (itemInBench.GetType() == craftedItem.craftingComponents.Get(componentIndex).className)
         {
@@ -153,7 +153,7 @@ modded class PlayerBase extends ManBase
     // Print("Item theoretically exists");
     // set maximums
     float q_cur, q_min, q_max;
-    QuantityConversions.GetItemQuantity(tempIB, q_cur, q_min, q_max)
+    QuantityConversions.GetItemQuantity(tempIB, q_cur, q_min, q_max);
     GetGame().ObjectDelete(tempIB);    
 
     if (!q_max) q_max = 1;

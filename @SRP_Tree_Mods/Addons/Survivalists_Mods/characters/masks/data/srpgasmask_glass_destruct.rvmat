@@ -12,8 +12,8 @@ class Stage1
 	uvSource="tex";
 	class uvTransform
 	{
-		aside[]={1,0,0};
-		up[]={0,1,0};
+		aside[]={0.5,0,0};
+		up[]={0,0.5,0};
 		dir[]={0,0,0};
 		pos[]={0,0,0};
 	};
@@ -24,15 +24,15 @@ class Stage2
 	uvSource="tex";
 	class uvTransform
 	{
-		aside[]={1,0,0};
-		up[]={0,1,0};
+		aside[]={15,0,0};
+		up[]={0,15,0};
 		dir[]={0,0,0};
 		pos[]={0,0,0};
 	};
 };
 class Stage3
 {
-	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	texture="dz\characters\data\generic_destruct_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{

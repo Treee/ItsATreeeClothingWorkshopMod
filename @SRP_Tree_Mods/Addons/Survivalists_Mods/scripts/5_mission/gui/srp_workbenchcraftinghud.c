@@ -431,7 +431,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
         CraftingComponent itemToCheck = craftedItem.craftingComponents.Get(i);
         int totalInWorkbench = GetAmountInWorkbench(itemToCheck.className);
         amount = string.Format("%1/%2", totalInWorkbench, itemToCheck.amount);
-        canCraftSingle = (totalInWorkbench / itemToCheck.amount) > 0
+        canCraftSingle = (totalInWorkbench / itemToCheck.amount) > 0;
         canCraftAll = canCraftAll && canCraftSingle; // aggregate all the booleans into one. && forces all bools to be true
         FillIngredientsWidget(craftedItem.craftingComponents.Get(i), amount, canCraftSingle);
       }
@@ -462,7 +462,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
   {
     for(int i = 0; i < targetPlayer.guiCraftingBench.GetInventory().GetCargo().GetItemCount(); i++)
     {
-      ItemBase itemInBench = targetPlayer.guiCraftingBench.GetInventory().GetCargo().GetItem(i);      
+      ItemBase itemInBench = ItemBase.Cast(targetPlayer.guiCraftingBench.GetInventory().GetCargo().GetItem(i));
       if (itemInBench.GetType() == itemClassName)
       {
         if (itemInBench.IsRuined())

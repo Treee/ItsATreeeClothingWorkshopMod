@@ -67,6 +67,24 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\headgear\tinfoilhat_m.p3d";
 			female="Survivalists_Mods\characters\headgear\tinfoilhat_m.p3d";
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\tinfoilhat.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\tinfoilhat.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\tinfoilhat_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\tinfoilhat_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\tinfoilhat_destruct.rvmat"}}
+					};
+				};
+			};
+		};
 	};
 
   class SRP_MinerHelmet: Headtorch_ColorBase
@@ -75,6 +93,7 @@ class CfgVehicles
     displayName="Miner Helmet";
     descriptionShort="A miner helmet. Has a light and looks sturdy.";
     model="Survivalists_Mods\characters\headgear\minerhelmet_g.p3d";
+		itemSize[]={3,2};
     hiddenSelections[]=
 		{
 			"zbytek",
@@ -99,6 +118,24 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\headgear\minerhelmet_m.p3d";
 			female="Survivalists_Mods\characters\headgear\minerhelmet_m.p3d";
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\minerhelmet.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\minerhelmet.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\minerhelmet_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\minerhelmet_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\minerhelmet_destruct.rvmat"}}
+					};
+				};
+			};
+		};
   }
 
   class SRP_Brewsterhelm: BallisticHelmet_ColorBase
@@ -117,7 +154,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"Survivalists_Mods\characters\vests\data\brewsterhelm.rvmat"
+			"Survivalists_Mods\characters\headgear\data\brewsterhelm.rvmat"
 		};
     class ClothingTypes
 		{
@@ -133,11 +170,11 @@ class CfgVehicles
 					hitpoints=350;
 					healthLevels[]=
 					{
-						{1,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm.rvmat"}},
-            {0.69999999,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm.rvmat"}},
-            {0.5,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm_damage.rvmat"}},
-            {0.30000001,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm_damage.rvmat"}},
-            {0,	{	"Survivalists_Mods\characters\vests\data\brewsterhelm_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\brewsterhelm.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\brewsterhelm.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\brewsterhelm_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\brewsterhelm_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\brewsterhelm_destruct.rvmat"}}
 					};
 				};
 			};

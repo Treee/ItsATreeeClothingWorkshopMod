@@ -61,6 +61,24 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\hunting_black.paa",
 			"Survivalists_Mods\characters\backpacks\data\hunting_black.paa"
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\Characters\backpacks\data\hunting.rvmat"}},
+            {0.69999999,{"DZ\Characters\backpacks\data\hunting.rvmat"}},
+            {0.5,{"DZ\Characters\backpacks\data\hunting_damage.rvmat"}},
+            {0.30000001,{"DZ\Characters\backpacks\data\hunting_damage.rvmat"}},
+            {0.0,{"DZ\Characters\backpacks\data\hunting_destruct.rvmat"}}
+					};
+				};
+			};
+		};
 	};
 	class SRP_HuntingBag_Gorka: HuntingBag  // BP1_HuntingBag_Gorka
 	{
@@ -77,6 +95,24 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\hunting_gorka.paa",
 			"Survivalists_Mods\characters\backpacks\data\hunting_gorka.paa"
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\Characters\backpacks\data\hunting.rvmat"}},
+            {0.69999999,{"DZ\Characters\backpacks\data\hunting.rvmat"}},
+            {0.5,{"DZ\Characters\backpacks\data\hunting_damage.rvmat"}},
+            {0.30000001,{"DZ\Characters\backpacks\data\hunting_damage.rvmat"}},
+            {0.0,{"DZ\Characters\backpacks\data\hunting_destruct.rvmat"}}
+					};
+				};
+			};
+		};
 	};
 
   class SRP_CourierBag_Black: CourierBag  // BP1_CourierBag
@@ -88,6 +124,24 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\impcourierbag_black.paa",
 			"Survivalists_Mods\characters\backpacks\data\impcourierbag_black.paa",
 			"Survivalists_Mods\characters\backpacks\data\impcourierbag_black.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\Characters\backpacks\data\ImpCourierBag.rvmat"}},
+            {0.69999999,{"DZ\Characters\backpacks\data\ImpCourierBag.rvmat"}},
+            {0.5,{"DZ\Characters\backpacks\data\ImpCourierBag_damage.rvmat"}},
+            {0.30000001,{"DZ\Characters\backpacks\data\ImpCourierBag_damage.rvmat"}},
+            {0.0,{"DZ\Characters\backpacks\data\ImpCourierBag_destruct.rvmat"}}
+					};
+				};
+			};
 		};
 	};
 
@@ -105,6 +159,24 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\mon_black.paa",
 			"Survivalists_Mods\characters\backpacks\data\mon_black.paa",
 			"Survivalists_Mods\characters\backpacks\data\mon_black.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=150;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\Characters\backpacks\data\mountain.rvmat"}},
+            {0.69999999,{"DZ\Characters\backpacks\data\mountain.rvmat"}},
+            {0.5,{"DZ\Characters\backpacks\data\mountain_damage.rvmat"}},
+            {0.30000001,{"DZ\Characters\backpacks\data\mountain_damage.rvmat"}},
+            {0.0,{"DZ\Characters\backpacks\data\mountain_destruct.rvmat"}}
+					};
+				};
+			};
 		};
 	};
 
@@ -129,6 +201,24 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\denbp.paa",
 			"Survivalists_Mods\characters\backpacks\data\denbp.paa"
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\Characters\backpacks\data\boulder_m53.rvmat"}},
+            {0.69999999,{"DZ\Characters\backpacks\data\boulder_m53.rvmat"}},
+            {0.5,{"DZ\Characters\backpacks\data\boulder_m53_damage.rvmat"}},
+            {0.30000001,{"DZ\Characters\backpacks\data\boulder_m53_damage.rvmat"}},
+            {0.0,{"DZ\Characters\backpacks\data\boulder_m53_destruct.rvmat"}}
+					};
+				};
+			};
+		};    
 	};
 
 	class SRP_TaloonBag_Black1: TaloonBag_ColorBase  // BP1_Taloon_bl
@@ -146,6 +236,24 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\taloon_bl.paa",
 			"Survivalists_Mods\characters\backpacks\data\taloon_bl.paa"
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=80;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\Characters\backpacks\data\taloon.rvmat"}},
+            {0.69999999,{"DZ\Characters\backpacks\data\taloon.rvmat"}},
+            {0.5,{"DZ\Characters\backpacks\data\taloon_damage.rvmat"}},
+            {0.30000001,{"DZ\Characters\backpacks\data\taloon_damage.rvmat"}},
+            {0.0,{"DZ\Characters\backpacks\data\taloon_destruct.rvmat"}}
+					};
+				};
+			};
+		};
 	};
 	class SRP_TaloonBag_Black2: TaloonBag_ColorBase  // BP1_Taloon_Bl2
 	{
@@ -161,6 +269,24 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\taloon_bl1.paa",
 			"Survivalists_Mods\characters\backpacks\data\taloon_bl1.paa",
 			"Survivalists_Mods\characters\backpacks\data\taloon_bl1.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=80;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\Characters\backpacks\data\taloon.rvmat"}},
+            {0.69999999,{"DZ\Characters\backpacks\data\taloon.rvmat"}},
+            {0.5,{"DZ\Characters\backpacks\data\taloon_damage.rvmat"}},
+            {0.30000001,{"DZ\Characters\backpacks\data\taloon_damage.rvmat"}},
+            {0.0,{"DZ\Characters\backpacks\data\taloon_destruct.rvmat"}}
+					};
+				};
+			};
 		};
 	};
 
@@ -204,6 +330,24 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\backpacks\leatherbackpack_m.p3d";
 			female="Survivalists_Mods\characters\backpacks\leatherbackpack_m.p3d";
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\backpacks\data\leatherbackpack.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_cloth.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_pouches.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_straps.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\backpacks\data\leatherbackpack.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_cloth.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_pouches.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_straps.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\backpacks\data\leatherbackpack_damage.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_cloth_damage.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_pouches_damage.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_straps_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\backpacks\data\leatherbackpack_damage.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_cloth_damage.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_pouches_damage.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_straps_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\backpacks\data\leatherbackpack_destruct.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_cloth_destruct.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_pouches_destruct.rvmat", "Survivalists_Mods\characters\backpacks\data\leatherbackpack_straps_destruct.rvmat"}}
+					};
+				};
+			};
+		};
 	};
 
   class SRP_SurvivalBackpack_Default: HuntingBag  // new
@@ -228,6 +372,24 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\backpacks\survivalbackpack_m.p3d";
 			female="Survivalists_Mods\characters\backpacks\survivalbackpack_m.p3d";
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\backpacks\data\survivalbackpack.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\backpacks\data\survivalbackpack.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\backpacks\data\survivalbackpack_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\backpacks\data\survivalbackpack_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\backpacks\data\survivalbackpack_destruct.rvmat"}}
+					};
+				};
+			};
+		};    
 	};
 
   class SRP_SlingBackpack_Default: AliceBag_ColorBase  // new
@@ -251,7 +413,25 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_m.p3d";
 			female="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_m.p3d";
-		};
+		};    		
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack_destruct.rvmat"}}
+					};
+				};
+			};
+		}; 
 	};
   class SRP_SlingBackpack_Red: SRP_SlingBackpack_Default  // new
 	{
