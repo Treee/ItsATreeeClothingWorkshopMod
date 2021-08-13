@@ -45,6 +45,8 @@ class CfgPatches
       "Munghardsriflesling", // riflesling
       "Mass_Textures", // MassNBC_Bag, MassRatnik
       "MSP_Scripts",    // MSP_Fridge_Base
+      "BaseBuildingPlus", // removing admin tools
+      "Mass_Textures", // removing admin compass
       "deerisle", // for the map
 		};
 	};

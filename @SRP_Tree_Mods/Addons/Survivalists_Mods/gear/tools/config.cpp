@@ -9,6 +9,8 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Gear_Tools",
+      "DZ_Weapons_Melee_Blade", // hatchet
+      "DZ_Gear_Navigation", // admin compass
       "Survivalists_Mods"
 		};
 	};
@@ -17,6 +19,22 @@ class CfgVehicles
 {
   class Inventory_Base;
   class Pen_ColorBase;
+  class Hatchet;
+  class Compass;
+
+  // -------------------------- MODDED MODS
+  class admin_Hatchet: Hatchet
+	{
+    scope=0; // make sure it cannot spawn ever!!!!!
+		displayName="ADMIN HATCHET";
+		descriptionShort="No materials required for building, only dirty cheaters use this item.";
+	};
+
+  class MassAdminStash: Compass
+	{
+    scope=0; // do not let it even be spawned in
+		itemsCargoSize[]={0,0}; // if it somehow got in, no storage
+	};
 
   // ---------------------------- BASE GAME OVERRIDE
 	class Heatpack: Inventory_Base
