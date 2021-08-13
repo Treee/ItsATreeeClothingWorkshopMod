@@ -47,6 +47,11 @@ modded class SneakySmallLogPile
     return false;
   }
 
+  override bool CanPutIntoHands (EntityAI parent)
+  {
+    return GetInventory().AttachmentCount() == 0;
+  }
+
   override void SetActions()
 	{
 		super.SetActions();
@@ -60,6 +65,11 @@ modded class SneakyLargeLogPile
   bool CanReceiveItemIntoCargo(EntityAI item)
 	{
     return false;
+  }
+
+  override bool CanPutIntoHands (EntityAI parent)
+  {
+    return GetInventory().AttachmentCount() == 0;
   }
   
   override void SetActions()

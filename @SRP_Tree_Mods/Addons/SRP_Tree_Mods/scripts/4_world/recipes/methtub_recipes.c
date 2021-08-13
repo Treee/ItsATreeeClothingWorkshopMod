@@ -44,8 +44,8 @@ class SRP_Tree_Drugs_CookMeth extends RecipeBase
 	{
     SRP_DrugWorkbench methTub = SRP_DrugWorkbench.Cast(ingredients[0]);
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]);
-    if (methTub && methTub.HasMethRecipe()) {
-      if (tubeRack && tubeRack.IsMethPuzzleSolved()) {
+    if (methTub && methTub.HasMethRecipe() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) {
+      if (tubeRack.IsMethPuzzleSolved()) {
         m_isTainted = false;
         return true;
       }
@@ -114,8 +114,8 @@ class SRP_Tree_Drugs_MakeAcid extends RecipeBase
 	{
     SRP_DrugWorkbench methTub = SRP_DrugWorkbench.Cast(ingredients[0]);
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]);
-    if (methTub && methTub.HasAcidRecipe()) { // if you have the acid recipe you can craft but it might be tainted
-      if (tubeRack && tubeRack.IsAcidPuzzleSolved()) { // if you have the puzzle solved, the drugs are untainted
+    if (methTub && methTub.HasAcidRecipe() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) { // if you have the acid recipe you can craft but it might be tainted
+      if (tubeRack.IsAcidPuzzleSolved()) { // if you have the puzzle solved, the drugs are untainted
         m_isTainted = false;
         return true;
       }
@@ -195,8 +195,8 @@ class SRP_Tree_Drugs_MakeBathSalts extends RecipeBase
 	{
     SRP_DrugWorkbench methTub = SRP_DrugWorkbench.Cast(ingredients[0]);
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]);
-    if (methTub && methTub.HasBathSaltsRecipe()) { // if you have the bath salts recipe you can craft but it might be tainted
-      if (tubeRack && tubeRack.IsBathSaltsPuzzleSolved()) { // if you have the puzzle solved, the drugs are untainted
+    if (methTub && methTub.HasBathSaltsRecipe() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) { // if you have the bath salts recipe you can craft but it might be tainted
+      if (tubeRack.IsBathSaltsPuzzleSolved()) { // if you have the puzzle solved, the drugs are untainted
         m_isTainted = false;
         return true;
       }
@@ -217,6 +217,77 @@ class SRP_Tree_Drugs_MakeBathSalts extends RecipeBase
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_BathSalts");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_BathSalts");
       }
+    }
+	}
+};
+
+
+class SRP_Tree_Drugs_DetermineQuality extends RecipeBase 
+{
+  bool m_isTainted = true;
+
+	override void Init()
+	{
+		m_Name = "Inspect Quality";	// action name in game
+		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
+		m_AnimationLength = 1;		// animation length in relative time units
+		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
+		
+		//conditions
+		m_MinDamageIngredient[0] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[0] = -1;	//-1 = disable check
+		m_MinQuantityIngredient[0] = 1;	//quantity 1 required for primary ingredient
+		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
+		
+		m_MinDamageIngredient[1] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[1] = -1;	//-1 = disable check
+		m_MinQuantityIngredient[1] = 1;	//quantity 1 required for secondary ingredient
+		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+		
+		//ingredient 1  
+		InsertIngredient(0,"DUB_Microscope");	// primary ingredient
+		
+		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
+		m_IngredientDestroy[0] = -1;	// -1 = do nothing
+		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//ingredient 2	
+		InsertIngredient(1,"SRP_ConsumableDrug_MethSmall"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_MethMedium"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_MethLarge"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_BathSalts"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_SmileyAcid"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_SkullAcid"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_MethSmallTainted"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_BathSaltsTainted"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_SmileyAcidTainted"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_SkullAcidTainted"); //  secondary ingredient
+		
+		m_IngredientAddHealth[1] = -1;	// -1 = do nothing
+		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[1] = -1;// -1 = do nothing
+		m_IngredientDestroy[1] = -1;		// destroy secondary ingredient
+		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+	}
+
+  override bool CanDo(ItemBase ingredients[], PlayerBase player)
+	{
+    return true;
+	}
+
+	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
+	{
+    ItemBase theDrug = ItemBase.Cast(ingredients[1]);
+    string itemName = theDrug.GetType();
+    itemName.ToLower();
+    if (itemName.Contains("tainted") != -1)
+    {
+      player.SendMessageToClient(player, "You see broken and unordered crystal structures. This is not even close to being pure.");
+    }
+    else {
+      player.SendMessageToClient(player, "This is the pures crystal you have ever seen.");
     }
 	}
 };

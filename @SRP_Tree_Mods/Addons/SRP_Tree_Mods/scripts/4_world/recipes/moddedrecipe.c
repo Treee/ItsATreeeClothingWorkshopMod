@@ -9,6 +9,7 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new SRP_Tree_Recipe_CraftGunpowder_Simple);
 		RegisterRecipe(new SRP_Tree_Recipe_CraftGunpowder_Explosives);
 
+		RegisterRecipe(new SRP_Tree_Drugs_DetermineQuality);
     // Meth Recipes
 		RegisterRecipe(new SRP_Tree_Drugs_SplitMediumMethJar);
 		RegisterRecipe(new SRP_Tree_Drugs_SplitLargeMethJar);
