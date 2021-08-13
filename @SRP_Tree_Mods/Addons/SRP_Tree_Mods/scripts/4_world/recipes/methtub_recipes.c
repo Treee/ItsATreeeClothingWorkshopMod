@@ -44,7 +44,8 @@ class SRP_Tree_Drugs_CookMeth extends RecipeBase
 	{
     SRP_DrugWorkbench methTub = SRP_DrugWorkbench.Cast(ingredients[0]);
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]);
-    if (methTub && methTub.HasMethRecipe() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) {
+
+    if (methTub && methTub.HasAllConsumableAttachments() && methTub.HasEnoughConsumableAttachments_Meth() && methTub.HasMethRecipe() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) {
       if (tubeRack.IsMethPuzzleSolved()) {
         m_isTainted = false;
         return true;
@@ -65,6 +66,8 @@ class SRP_Tree_Drugs_CookMeth extends RecipeBase
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethLarge");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethLarge");
       }
+      // reduce attachments quantity
+      methTub.ReduceAttachmentQuantities_Meth();
     }
 	}
 };
@@ -114,7 +117,7 @@ class SRP_Tree_Drugs_MakeAcid extends RecipeBase
 	{
     SRP_DrugWorkbench methTub = SRP_DrugWorkbench.Cast(ingredients[0]);
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]);
-    if (methTub && methTub.HasAcidRecipe() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) { // if you have the acid recipe you can craft but it might be tainted
+    if (methTub && methTub.HasAcidRecipe() && methTub.HasAllConsumableAttachments() && methTub.HasEnoughConsumableAttachments_Acid() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) { // if you have the acid recipe you can craft but it might be tainted
       if (tubeRack.IsAcidPuzzleSolved()) { // if you have the puzzle solved, the drugs are untainted
         m_isTainted = false;
         return true;
@@ -130,22 +133,32 @@ class SRP_Tree_Drugs_MakeAcid extends RecipeBase
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]); 
     if (methTub && tubeRack) {
       if (m_isTainted) {
-        if (tubeRack.IsSmileyAcidPuzzleSolved()) {
+        if (tubeRack.IsSmileyAcidPuzzleSolved()) 
+        {
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SmileyAcidTainted");
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SmileyAcidTainted");
-        } else if (tubeRack.IsSkullAcidPuzzleSolved()) {
+        } 
+        else if (tubeRack.IsSkullAcidPuzzleSolved()) 
+        {
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SkullAcidTainted");
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SkullAcidTainted");
         }
-      } else {
-        if (tubeRack.IsSmileyAcidPuzzleSolved()) {
+      } 
+      else 
+      {
+        if (tubeRack.IsSmileyAcidPuzzleSolved()) 
+        {
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SmileyAcid");
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SmileyAcid");
-        } else if (tubeRack.IsSkullAcidPuzzleSolved()) {
+        } 
+        else if (tubeRack.IsSkullAcidPuzzleSolved()) 
+        {
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SkullAcid");
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SkullAcid");
         }
       }
+      // reduce attachments quantity
+      methTub.ReduceAttachmentQuantities_Acid();
     }
 	}
 };
@@ -195,7 +208,7 @@ class SRP_Tree_Drugs_MakeBathSalts extends RecipeBase
 	{
     SRP_DrugWorkbench methTub = SRP_DrugWorkbench.Cast(ingredients[0]);
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]);
-    if (methTub && methTub.HasBathSaltsRecipe() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) { // if you have the bath salts recipe you can craft but it might be tainted
+    if (methTub && methTub.HasBathSaltsRecipe() && methTub.HasAllConsumableAttachments() && methTub.HasEnoughConsumableAttachments_Salts() && tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) { // if you have the bath salts recipe you can craft but it might be tainted
       if (tubeRack.IsBathSaltsPuzzleSolved()) { // if you have the puzzle solved, the drugs are untainted
         m_isTainted = false;
         return true;
@@ -209,14 +222,20 @@ class SRP_Tree_Drugs_MakeBathSalts extends RecipeBase
 	{
     SRP_DrugWorkbench methTub = SRP_DrugWorkbench.Cast(ingredients[0]);   
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]); 
-    if (methTub && tubeRack) {
-      if (m_isTainted) {
+    if (methTub && tubeRack) 
+    {
+      if (m_isTainted) 
+      {
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_BathSaltsTainted");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_BathSaltsTainted");
-      } else {
+      } 
+      else 
+      {
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_BathSalts");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_BathSalts");
       }
+      // reduce attachments quantity
+      methTub.ReduceAttachmentQuantities_Salts();
     }
 	}
 };
