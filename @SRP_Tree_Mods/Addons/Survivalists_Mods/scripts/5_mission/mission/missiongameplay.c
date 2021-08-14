@@ -10,6 +10,7 @@ modded class MissionGameplay
 	override void OnUpdate(float timeslice) 
 	{
     super.OnUpdate(timeslice);
+    // compass UI stuff
     if (GetUApi()) 
     {
       UAInput inp = GetUApi().GetInputByName("UACompassToggle");
@@ -20,6 +21,6 @@ modded class MissionGameplay
             m_CompassHeadingMenu = new CompassHeadingMenu(true);
         }
       }
-    }  
+    }
   }
 }

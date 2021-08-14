@@ -7,6 +7,7 @@ modded class ActionConstructor
 		actions.Insert(ActionToggleMuteTransmitter);  
 		actions.Insert(ActionSRPInjectSelf);  
 		actions.Insert(ActionSRPInjectTarget);  
-		actions.Insert(ActionInteractWithGUICraftingWorkbench);  
+		actions.Insert(ActionInteractWithGUICraftingWorkbench);
+		actions.Insert(SRP_ActionOpenMap);      
 	}
 };
