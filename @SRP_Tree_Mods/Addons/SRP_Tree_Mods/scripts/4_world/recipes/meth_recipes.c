@@ -41,9 +41,9 @@ class SRP_Tree_Drugs_SplitLargeMethJar extends RecipeBase
 		InsertIngredient(1,"SKS_Bayonet");
     
 		
-		m_IngredientAddHealth[1] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[1] = -10;	// -10 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// -1 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = -1;		// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -124,9 +124,9 @@ class SRP_Tree_Drugs_SplitMediumMethJar extends RecipeBase
 		InsertIngredient(1,"Mosin_Bayonet");
 		InsertIngredient(1,"SKS_Bayonet");
     
-		m_IngredientAddHealth[1] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[1] = -10;	// -10 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// -1 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = -1;		// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		

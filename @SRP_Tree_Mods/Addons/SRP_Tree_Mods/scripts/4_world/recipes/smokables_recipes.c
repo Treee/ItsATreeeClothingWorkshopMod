@@ -43,7 +43,7 @@ class SRP_Tree_Drugs_CraftRollingPapers extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// -1 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = -1;		// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -108,7 +108,7 @@ class SRP_Tree_Drugs_RollZWeedJoint extends RecipeBase
 		//ingredient 2
 		InsertIngredient(1,"SRP_RollingPapers");//you can insert multiple ingredients this way
 		
-		m_IngredientAddHealth[1] = -10;// 0 = do nothing
+		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
@@ -184,7 +184,7 @@ class SRP_Tree_Drugs_RollCigarette extends RecipeBase
 		//ingredient 2
 		InsertIngredient(1,"SRP_RollingPapers");//you can insert multiple ingredients this way
 		
-		m_IngredientAddHealth[1] = -10;// 0 = do nothing
+		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
@@ -260,9 +260,9 @@ class SRP_Tree_Drugs_RollCigar extends RecipeBase
 		//ingredient 2
 		InsertIngredient(1,"PlantMaterial");//you can insert multiple ingredients this way
 		
-		m_IngredientAddHealth[1] = -10;// 0 = do nothing
+		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
+		m_IngredientAddQuantity[1] = -100;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------

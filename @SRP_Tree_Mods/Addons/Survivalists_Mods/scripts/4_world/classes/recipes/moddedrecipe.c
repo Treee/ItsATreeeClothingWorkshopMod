@@ -25,6 +25,8 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_Planks);
 
     // Ammo    
+    RegisterRecipe(new SRP_Recipe_CraftGunpowder_Simple);
+    RegisterRecipe(new SRP_Recipe_CraftGunpowder_Explosives);
     RegisterRecipe(new Craft_SRP_NailBullets);
     RegisterRecipe(new Craft_SRP_StoneBullets);
     RegisterRecipe(new Disassemble_SRP_ShotgunAmmo);

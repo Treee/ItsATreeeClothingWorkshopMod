@@ -1,4 +1,4 @@
-class SRP_Tree_Recipe_CraftGunpowder_Simple extends RecipeBase
+class SRP_Recipe_CraftGunpowder_Simple extends RecipeBase
 {
 	override void Init()
 	{
@@ -45,7 +45,7 @@ class SRP_Tree_Recipe_CraftGunpowder_Simple extends RecipeBase
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		AddResult("BP1_Pawder_open");//add results here
+		AddResult("SRP_Explosive_GunPowder_Open");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = 5;//-1 = do nothing
@@ -66,11 +66,11 @@ class SRP_Tree_Recipe_CraftGunpowder_Simple extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		Debug.Log("SRP_Tree_Recipe_CraftGunpowder_Simple Do method called","recipes");
+		Debug.Log("SRP_Recipe_CraftGunpowder_Simple Do method called","recipes");
 	}
 };
 
-class SRP_Tree_Recipe_CraftGunpowder_Explosives extends RecipeBase
+class SRP_Recipe_CraftGunpowder_Explosives extends RecipeBase
 {
 	override void Init()
 	{
@@ -120,7 +120,7 @@ class SRP_Tree_Recipe_CraftGunpowder_Explosives extends RecipeBase
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		AddResult("BP1_Pawder_open");//add results here
+		AddResult("SRP_Explosive_GunPowder_Open");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = 10;//-1 = do nothing
@@ -141,7 +141,7 @@ class SRP_Tree_Recipe_CraftGunpowder_Explosives extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-    float chance = Math.RandomFloat01() * 100;
+    // float chance = Math.RandomFloat01() * 100;
     // if (chance > 99.5) {
       // TrapBase landmine = TrapBase.Cast(ingredients[0]);
       // Grenade_Base grenade = Grenade_Base.Cast(ingredients[0]);
@@ -155,6 +155,6 @@ class SRP_Tree_Recipe_CraftGunpowder_Explosives extends RecipeBase
 		  //   Debug.Log("SRP_Tree_Recipe_CraftGunpowder_Explosives Someone got unlucky heh");
       // }
     // }
-    Debug.Log("SRP_Tree_Recipe_CraftGunpowder_Explosives Do method called","recipes");
+    Debug.Log("SRP_Recipe_CraftGunpowder_Explosives Do method called","recipes");
 	}
 };

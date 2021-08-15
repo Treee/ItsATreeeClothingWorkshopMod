@@ -23,9 +23,9 @@ class SRP_Tree_Drugs_CookMeth extends RecipeBase
 		//ingredient 1  
 		InsertIngredient(0,"SRP_DrugWorkbench");	// primary ingredient
 		
-		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = -1;	// -1 = do nothing
 		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -97,9 +97,9 @@ class SRP_Tree_Drugs_MakeAcid extends RecipeBase
 		//ingredient 1  
 		InsertIngredient(0,"SRP_DrugWorkbench");	// primary ingredient
 		
-		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = -1;	// -1 = do nothing
 		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -188,9 +188,9 @@ class SRP_Tree_Drugs_MakeBathSalts extends RecipeBase
 		//ingredient 1  
 		InsertIngredient(0,"SRP_DrugWorkbench");	// primary ingredient
 		
-		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = -1;	// -1 = do nothing
 		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -266,9 +266,9 @@ class SRP_Tree_Drugs_DetermineQuality extends RecipeBase
 		//ingredient 1  
 		InsertIngredient(0,"DUB_Microscope");	// primary ingredient
 		
-		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[0] = -5;	// -5 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = -1;	// -1 = do nothing
 		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -284,9 +284,9 @@ class SRP_Tree_Drugs_DetermineQuality extends RecipeBase
 		InsertIngredient(1,"SRP_ConsumableDrug_SmileyAcidTainted"); //  secondary ingredient
 		InsertIngredient(1,"SRP_ConsumableDrug_SkullAcidTainted"); //  secondary ingredient
 		
-		m_IngredientAddHealth[1] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[1] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// -1 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = -1;		// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 	}
