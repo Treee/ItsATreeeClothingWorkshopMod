@@ -280,4 +280,289 @@ class CfgVehicles
 			};
 		};
 	};
+
+
+
+  //------------- Machining
+  class SRP_LatheWorkbench: Container_Base
+	{
+		scope=2;
+		displayName="Lathe Workbench";
+		descriptionShort="A Workbench with tools for machining metals.";
+		model="Survivalists_Mods\gear\crafting\SRP_LatheWorkbench.p3d";
+		useEntityHierarchy="true";
+		attachments[]=
+		{
+			"SRP_LatheClamp",
+			"SRP_LatheGearDrive",
+			"SRP_LatheTable",
+			"SRP_LatheBelt",
+		};
+		destroyOnEmpty=0;
+		carveNavmesh=0;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=500;
+		itemSize[]={14,14};
+		itemBehaviour=0;
+		repairKitType=1;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={8,8};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Tools
+			{
+				name="Tools";
+				description="Attachments for a lathe";
+				attachmentSlots[]=
+				{
+					"SRP_LatheClamp",
+          "SRP_LatheGearDrive",
+          "SRP_LatheTable",
+          "SRP_LatheBelt",
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};		
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_LatheBelt: Inventory_Base
+	{
+		scope=2;
+		displayName="Lathe Belt";
+		descriptionShort="A module for transition power from the main gearbox to the lathe table.";
+		model="Survivalists_Mods\gear\crafting\SRP_LatheWorkbench_Belt.p3d";
+		inventorySlot[]=
+		{
+			"SRP_LatheBelt"
+		};
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={4,2};
+		itemBehaviour=0;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}}
+					};
+				};
+			};
+		};		
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_LatheTable: Inventory_Base
+	{
+		scope=2;
+		displayName="Lathe Table";
+		descriptionShort="A module for machining metals on a lathe.";
+		model="Survivalists_Mods\gear\crafting\SRP_LatheWorkbench_Table.p3d";
+		inventorySlot[]=
+		{
+			"SRP_LatheTable"
+		};
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={6,6};
+		itemBehaviour=0;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}}
+					};
+				};
+			};
+		};		
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_LatheGearDrive: Inventory_Base
+	{
+		scope=2;
+		displayName="Lathe Gear Drive";
+		descriptionShort="A module for generating power on a lathe";
+		model="Survivalists_Mods\gear\crafting\SRP_LatheWorkbench_GearDrive.p3d";
+		inventorySlot[]=
+		{
+			"SRP_LatheGearDrive"
+		};
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={8,8};
+		itemBehaviour=0;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}}
+					};
+				};
+			};
+		};		
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_LatheClamp: Inventory_Base
+	{
+		scope=2;
+		displayName="Lathe Clamp";
+		descriptionShort="A module for stablizing metals on a lathe.";
+		model="Survivalists_Mods\gear\crafting\SRP_LatheWorkbench_Clamp.p3d";
+		inventorySlot[]=
+		{
+			"SRP_LatheClamp"
+		};
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={6,4};
+		itemBehaviour=0;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\latheworkbench.rvmat"}}
+					};
+				};
+			};
+		};		
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
 };

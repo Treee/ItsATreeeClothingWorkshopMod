@@ -326,6 +326,14 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 "Logs" (https://skfb.ly/P8SY) by TrolliZBS is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Yankee 1545 Hand Drill" (https://skfb.ly/6RrOH) by lukasmaly is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"18th Century Hand Drill" (https://skfb.ly/6XSDt) by Rob.Caenen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Glue Pliers" (https://skfb.ly/6X97P) by JarnoVR is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"lathe" (https://skfb.ly/6XJP6) by Oleg is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

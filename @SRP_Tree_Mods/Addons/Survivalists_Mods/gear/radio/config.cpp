@@ -44,7 +44,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
-		descriptionShort="A small radio that fits in your hand. Incredibly Short Range";
+		descriptionShort="A small radio that fits in your hand. On the side you see scribbling that says 500m";
     model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
@@ -64,7 +64,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
-		descriptionShort="A small radio that fits in your hand. Very Short Range";
+		descriptionShort="A small radio that fits in your hand. On the side you see scribbling that says 1km";
     model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
@@ -83,7 +83,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
-		descriptionShort="A small radio that fits in your hand. Very Short Range";
+		descriptionShort="A small radio that fits in your hand. On the side you see scribbling that says 1km";
     model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
@@ -103,7 +103,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
-		descriptionShort="A small radio that fits in your hand. Short Range";
+		descriptionShort="A small radio that fits in your hand. On the side you see scribbling that says 2.5km";
     model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
@@ -122,7 +122,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
-		descriptionShort="A small radio that fits in your hand. Short Range";
+		descriptionShort="A small radio that fits in your hand. On the side you see scribbling that says 2.5km";
     model="Survivalists_Mods\gear\radio\handheldradiosmall.p3d";
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
@@ -142,7 +142,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Hand Held Radio";
-		descriptionShort="A radio that fits in your hand. Medium Range";
+		descriptionShort="A radio that fits in your hand. On the side you see scribbling that says 5km";
     model="Survivalists_Mods\gear\radio\handheldradio.p3d";
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
@@ -165,7 +165,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Military Radio";
-		descriptionShort="A military grade radio used to communicate over long distances";
+		descriptionShort="A military grade radio used to communicate over long distances. On the side you see scribbling that says 7.5km";
 		model="Survivalists_Mods\gear\radio\SRP_LRRadio.p3d";
 		range=7500;
 		attachments[]=

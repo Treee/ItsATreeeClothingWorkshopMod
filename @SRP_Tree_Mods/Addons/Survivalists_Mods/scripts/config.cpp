@@ -49,14 +49,14 @@ class CfgSlots
 	{
 		name="SRP_CasePrep";
 		displayName="Case Prep";
-		ghostIcon="cat_vehicle_engine";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
 		selection="CasePrep";
 	};
 	class Slot_SRP_AmmoPress
 	{
 		name="SRP_AmmoPress";
 		displayName="Ammo Prep";
-		ghostIcon="cat_vehicle_engine";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
 		selection="AmmoPress";
 	};
 	class Slot_Gun1
@@ -402,6 +402,31 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:planks";
     stackMax=20;
   }
+
+  class Slot_SRP_LatheBelt
+  {
+		name="SRP_LatheBelt";
+		displayName="Lathe Belt";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+  }
+  class Slot_SRP_LatheTable
+  {
+		name="SRP_LatheTable";
+		displayName="Lathe Table";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+  }
+  class Slot_SRP_LatheGearDrive
+  {
+		name="SRP_LatheGearDrive";
+		displayName="Lathe Gear Drive";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+  }
+  class Slot_SRP_LatheClamp
+  {
+		name="SRP_LatheClamp";
+		displayName="Lathe Clamp";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+  }
 };
 
 class CfgNonAIVehicles
@@ -433,6 +458,34 @@ class CfgNonAIVehicles
 		scope=2;
 		inventorySlot="SRP_AmmoPress";
 		model="Survivalists_Mods\gear\crafting\SRP_AmmoPress.p3d";
+	};
+
+  class Proxysrp_latheworkbench_belt: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_LatheBelt"};
+		model="Survivalists_Mods\proxy\srp_latheworkbench_belt.p3d";
+	};
+
+  class Proxysrp_latheworkbench_table: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_LatheTable"};
+		model="Survivalists_Mods\proxy\srp_latheworkbench_table.p3d";
+	};
+
+  class Proxysrp_latheworkbench_geardrive: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_LatheGearDrive"};
+		model="Survivalists_Mods\proxy\srp_latheworkbench_geardrive.p3d";
+	};
+
+  class Proxysrp_latheworkbench_clamp: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_LatheClamp"};
+		model="Survivalists_Mods\proxy\srp_latheworkbench_clamp.p3d";
 	};
   
 
