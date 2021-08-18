@@ -306,8 +306,8 @@ class CfgVehicles
   class SRP_Clamp: Inventory_Base
 	{
 		scope=2;
-		displayName="Old Hand Powered Drill";
-		descriptionShort="An old hand drill that runs off of human power.";
+		displayName="Clamp";
+		descriptionShort="Time to give someone the CLAMPS!";
 		model="Survivalists_Mods\gear\tools\clamp.p3d";
 		rotationFlags=17;
 		weight=100;
@@ -374,6 +374,75 @@ class CfgVehicles
 		};
 	};
 
-
+  class SRP_Caliper: Inventory_Base
+	{
+		scope=2;
+		displayName="Caliper";
+		descriptionShort="A hand held caliper";
+		model="Survivalists_Mods\gear\tools\caliper.p3d";
+		rotationFlags=17;
+		weight=100;
+		itemSize[]={2,3};
+		fragility=0.001;
+    physLayer="item_small";
+		openItemSpillRange[]={20,40};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\tools\data\clamp.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\tools\data\clamp.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\tools\data\clamp_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\tools\data\clamp_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\tools\data\clamp_destruct.rvmat"}}
+          };
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeWrench";
+				range=1.6;
+			};
+			class Heavy
+			{
+				ammo="MeleeWrench_Heavy";
+				range=1.6;
+			};
+			class Sprint
+			{
+				ammo="MeleeWrench_Heavy";
+				range=4.0999999;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="wrench_drop_SoundSet";
+					id=898;
+				};
+				class wrench_loop
+				{
+					soundSet="SledgeWoodHammer_loop_SoundSet";
+					id=1117;
+				};
+				class wrench_end
+				{
+					soundSet="SledgeWoodHammer_end_SoundSet";
+					id=1118;
+				};
+			};
+		};
+	};
 
 };

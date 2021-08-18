@@ -334,6 +334,12 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 "lathe" (https://skfb.ly/6XJP6) by Oleg is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Neon Letters" (https://skfb.ly/6wPxw) by danny_p3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Calipers" (https://skfb.ly/6uXOX) by T-FLEX CAD ST (Free) is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Low-poly Ammonition set" (https://skfb.ly/op6DM) by NexysStormcloud is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
