@@ -45,6 +45,7 @@ modded class PluginRecipesManagerBase extends PluginBase
 
     //---------- RP Craftables
     RegisterRecipe(new Craft_SRP_Notebook);
+    RegisterRecipe(new Craft_SRP_ExtraPaper);
     RegisterRecipe(new Craft_SRP_WhiteFlag);
 
     // Food Recipes	

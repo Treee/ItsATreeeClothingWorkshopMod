@@ -947,4 +947,37 @@ class CfgVehicles
 		model="Survivalists_Mods\weapons\ammunition\shotguncasingpellet.p3d";
     itemSize[]={2,4};
   };
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // class SRP_BulletsLowPoly: Inventory_Base
+	// {
+	// 	scope=2;
+	// 	displayName="dfsafds";
+	// 	descriptionShort="fsdafdfdafda";
+	// 	model="Survivalists_Mods\weapons\ammunition\bulletlowpoly.p3d";
+	// 	itemSize[]={2,2};
+	// 	rotationFlags=1;
+	// 	stackedUnit="percentage";
+	// 	quantityBar=1;
+	// 	varQuantityInit=100;
+	// 	varQuantityMin=0;
+	// 	varQuantityMax=100;
+	// 	weight=40;
+	// 	fragility=0.0099999998;
+	// };
+
+
+
+
 };
