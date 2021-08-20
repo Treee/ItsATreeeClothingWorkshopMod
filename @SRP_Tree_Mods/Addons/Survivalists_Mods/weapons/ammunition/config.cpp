@@ -494,7 +494,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="9x19 Caliber Bullets";
-		descriptionShort="";
+		descriptionShort="9x19 bullets";
 		model="Survivalists_Mods\weapons\ammunition\bullet9mm.p3d";
     itemSize[]={1,1};
 	};
@@ -506,71 +506,100 @@ class CfgVehicles
 		model="Survivalists_Mods\weapons\ammunition\bullet9mmcasingpellet.p3d";    
 	};
 
+  class SRP_EmptyCasingPistol_357: SRP_BulletCrafting_Pistol60Count
+	{
+		scope=2;
+		displayName="Cartridge Cases for .357";
+		descriptionShort="Fill with gunpowder and bullets to complete.";
+		model="Survivalists_Mods\weapons\ammunition\bullet357casingempty.p3d";
+    itemSize[]={1,2};
+	};
+  class SRP_StarterKitPistol_357: SRP_BulletCrafting_Pistol60Count
+  {
+    scope=2;
+		displayName=".357 Ammo Starter Kit";
+		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
+		model="Survivalists_Mods\weapons\ammunition\bullet357casingpowder.p3d";
+    itemSize[]={1,2};
+  };
+	class SRP_ProjectilePistol_357: SRP_BulletCrafting_Pistol60Count
+	{
+		scope=2;
+		displayName=".357 Caliber Bullets";
+		descriptionShort=".357 bullets";
+		model="Survivalists_Mods\weapons\ammunition\bullet357.p3d";
+    itemSize[]={1,1};
+	};
+	class SRP_BulletKitPistol_357: SRP_BulletCrafting_Pistol60Count
+	{
+		scope=2;
+		displayName=".357 Bullet Kit";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\bullet357casingpellet.p3d";    
+	};
+
+  class SRP_EmptyCasingPistol_22: SRP_BulletCrafting_Pistol60Count
+	{
+		scope=2;
+		displayName="Cartridge Cases for .22";
+		descriptionShort="Fill with gunpowder and bullets to complete.";
+		model="Survivalists_Mods\weapons\ammunition\bullet22mmcasingempty.p3d";
+    itemSize[]={1,2};
+	};
+  class SRP_StarterKitPistol_22: SRP_BulletCrafting_Pistol60Count
+  {
+    scope=2;
+		displayName=".22 Ammo Starter Kit";
+		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
+		model="Survivalists_Mods\weapons\ammunition\bullet22mmcasingpowder.p3d";
+    itemSize[]={1,2};
+  };
+	class SRP_ProjectilePistol_22: SRP_BulletCrafting_Pistol60Count
+	{
+		scope=2;
+		displayName=".22 Caliber Bullets";
+		descriptionShort=".22 bullets";
+		model="Survivalists_Mods\weapons\ammunition\bullet22mm.p3d";
+    itemSize[]={1,1};
+	};
+	class SRP_BulletKitPistol_22: SRP_BulletCrafting_Pistol60Count
+	{
+		scope=2;
+		displayName=".22 Bullet Kit";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\bullet22mmcasingpellet.p3d";    
+	};
 
   class SRP_EmptyCasingPistol_45ACP: SRP_BulletCrafting_Pistol60Count // SRP_45ACP_Casings
 	{
 		scope=2;
 		displayName="Cartridge Cases for .45ACP";
 		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_Mods\weapons\ammunition\bullet9mmcasingempty.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet45acpcasingempty.p3d";
     itemSize[]={1,2};
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack1_co.paa"
-		};
 	};
   class SRP_StarterKitPistol_45ACP: SRP_BulletCrafting_Pistol60Count  // SRP_45ACP_Powderkit
   {
     scope=2;
 		displayName="45ACP Ammo Starter Kit";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
-		model="Survivalists_Mods\weapons\ammunition\bullet9mmcasingpowder.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet45acpcasingpowder.p3d";
     itemSize[]={1,2};
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack1_co.paa"
-		};
   };
 	class SRP_ProjectilePistol_45ACP: SRP_BulletCrafting_Pistol60Count  // SRP_45ACP_Bullets
 	{
 		scope=2;
 		displayName="45ACP Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_Mods\weapons\ammunition\bullet9mm.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet45acp.p3d";
     itemSize[]={1,1};
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack1_co.paa"
-		};
 	};
 	class SRP_BulletKitPistol_45ACP: SRP_BulletCrafting_Pistol60Count  // SRP_45ACP_Bulletskit
 	{
 		scope=2;
 		displayName="45ACP Bullet Kit";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
-		model="Survivalists_Mods\weapons\ammunition\bullet9mmcasingpellet.p3d";
-    hiddenSelections[]=
-		{
-			"zbytek",
-      "bullet"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack1_co.paa",
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack1_co.paa",
-		};
+		model="Survivalists_Mods\weapons\ammunition\bullet45acpcasingpellet.p3d";
 	};
 
   class SRP_EmptyCasingPistol_380: SRP_BulletCrafting_Pistol60Count // SRP_380_Casings
