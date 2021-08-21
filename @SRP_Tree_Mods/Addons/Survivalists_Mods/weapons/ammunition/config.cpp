@@ -879,9 +879,6 @@ class CfgVehicles
 		model="Survivalists_Mods\weapons\ammunition\bullet300blackoutcasingpellet.p3d";
 	};
 
-
-
-
   class SRP_EmptyCasingRifle_50Cal: SRP_BulletCrafting_Rifle40Count  // new
 	{
 		scope=2;

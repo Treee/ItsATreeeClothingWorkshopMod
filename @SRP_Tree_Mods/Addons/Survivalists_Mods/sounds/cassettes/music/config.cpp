@@ -93,6 +93,14 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Bread.ogg",1}
 		};
 	};
+
+  class SRPRadio_SkylarWolfe_ThreeLittleBirds_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Three_Little_Birds_Sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
 };
 
 class CfgSoundSets
@@ -165,6 +173,13 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"SRPRadio_Bread_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_ThreeLittleBirds_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_ThreeLittleBirds_Shader1"
 		};
 	};
 };

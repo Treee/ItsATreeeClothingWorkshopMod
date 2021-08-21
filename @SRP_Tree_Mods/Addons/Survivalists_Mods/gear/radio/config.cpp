@@ -328,7 +328,18 @@ class CfgVehicles
 		descriptionShort="Music Tape";		
 		class CfgCassette
 		{
-			soundSet="SRPRadio_Broken_SoundSet1";
+			soundSet="SRPRadio_Bread_SoundSet1";
+		};
+	};
+
+  class SRPRadio_CassetteTape_SkylarWolfe_ThreeLittleBirds: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Three Little Birds";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_ThreeLittleBirds_SoundSet1";
 		};
 	};
 
