@@ -470,7 +470,7 @@ class CfgVehicles
     itemSize[]={2,2};
 		weight=12;
 		canBeSplit=1;
-		varQuantityInit=60;
+		varQuantityInit=10;
 		varQuantityMin=0;
 		varQuantityMax=60;
   };
@@ -645,7 +645,7 @@ class CfgVehicles
     itemSize[]={2,2};
 		weight=12;
 		canBeSplit=1;
-		varQuantityInit=40;
+		varQuantityInit=10;
 		varQuantityMin=0;
 		varQuantityMax=40;
   };
@@ -787,7 +787,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Cartridge Cases for 308";
 		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_Mods\weapons\ammunition\bullet762x54casingempty.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet308casingempty.p3d";
     itemSize[]={2,4};
 	};
   class SRP_StarterKitRifle_308: SRP_BulletCrafting_Rifle40Count  // SRP_308_Powderkit
@@ -795,7 +795,7 @@ class CfgVehicles
     scope=2;
 		displayName="308 Ammo Starter Kit";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
-		model="Survivalists_Mods\weapons\ammunition\bullet762x54casingpowder.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet308casingpowder.p3d";
     itemSize[]={2,4};
   };
 	class SRP_ProjectileRifle_308: SRP_BulletCrafting_Rifle40Count  // SRP_308_Bullets
@@ -803,32 +803,16 @@ class CfgVehicles
 		scope=2;
 		displayName="308 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_Mods\weapons\ammunition\bullet762x54.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet308.p3d";
     itemSize[]={2,3};
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack2_co.paa"
-		};
 	};
 	class SRP_BulletKitRifle_308: SRP_BulletCrafting_Rifle40Count  // SRP_308_Bulletskit
 	{
 		scope=2;
 		displayName="308 Bullet Kit";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
-		model="Survivalists_Mods\weapons\ammunition\bullet762x54casingpellet.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet308casingpellet.p3d";
     itemSize[]={2,4};
-    hiddenSelections[]=
-		{
-			"bullet"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack2_co.paa"
-		};
 	};
 
   class SRP_EmptyCasingRifle_9x39: SRP_BulletCrafting_Rifle40Count  // SRP_9x39_Casings
@@ -836,7 +820,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Cartridge Cases for 9x39";
 		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_Mods\weapons\ammunition\bullet762x39casingempty.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x39casingempty.p3d";
     itemSize[]={1,3};
 	};
   class SRP_StarterKitRifle_9x39: SRP_BulletCrafting_Rifle40Count  // SRP_9x39_Powderkit
@@ -844,7 +828,7 @@ class CfgVehicles
     scope=2;
 		displayName="9x39 Ammo Starter Kit";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
-		model="Survivalists_Mods\weapons\ammunition\bullet762x39casingpowder.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x39casingpowder.p3d";
     itemSize[]={1,3};
   };
 	class SRP_ProjectileRifle_9x39: SRP_BulletCrafting_Rifle40Count  // SRP_9x39_Bullets
@@ -852,31 +836,114 @@ class CfgVehicles
 		scope=2;
 		displayName="9x39 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_Mods\weapons\ammunition\bullet762x39.p3d";
+		model="Survivalists_Mods\weapons\ammunition\bullet9x39.p3d";
     itemSize[]={1,1};
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack1_co.paa"
-		};
 	};
 	class SRP_BulletKitRifle_9x39: SRP_BulletCrafting_Rifle40Count  // SRP_9x39_Bulletskit
 	{
 		scope=2;
 		displayName="9x39 Bullet Kit";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
-		model="Survivalists_Mods\weapons\ammunition\bullet762x39casingpellet.p3d";
-    hiddenSelections[]=
-		{
-			"bullet"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\bulletpack1_co.paa"
-		};
+		model="Survivalists_Mods\weapons\ammunition\bullet9x39casingpellet.p3d";
+	};
+
+  class SRP_EmptyCasingRifle_300Blackout: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="Cartridge Cases for 300 Blackout";
+		descriptionShort="Fill with gunpowder and bullets to complete.";
+		model="Survivalists_Mods\weapons\ammunition\bullet300blackoutcasingempty.p3d";
+    itemSize[]={1,3};
+	};
+  class SRP_StarterKitRifle_300Blackout: SRP_BulletCrafting_Rifle40Count  // new
+  {
+    scope=2;
+		displayName="300 Blackout Ammo Starter Kit";
+		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
+		model="Survivalists_Mods\weapons\ammunition\bullet300blackoutcasingpowder.p3d";
+    itemSize[]={1,3};
+  };
+	class SRP_ProjectileRifle_300Blackout: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="300 Blackout Caliber Bullets";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet300blackout.p3d";
+    itemSize[]={1,1};
+	};
+	class SRP_BulletKitRifle_300Blackout: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="300 Blackout Bullet Kit";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\bullet300blackoutcasingpellet.p3d";
+	};
+
+
+
+
+  class SRP_EmptyCasingRifle_50Cal: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="Cartridge Cases for 50 Cal";
+		descriptionShort="Fill with gunpowder and bullets to complete.";
+		model="Survivalists_Mods\weapons\ammunition\bullet50Calcasingempty.p3d";
+    itemSize[]={1,3};
+	};
+  class SRP_StarterKitRifle_50Cal: SRP_BulletCrafting_Rifle40Count  // new
+  {
+    scope=2;
+		displayName="50 Cal Ammo Starter Kit";
+		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
+		model="Survivalists_Mods\weapons\ammunition\bullet50Calcasingpowder.p3d";
+    itemSize[]={1,3};
+  };
+	class SRP_ProjectileRifle_50Cal: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="50 Cal Caliber Bullets";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet50Cal.p3d";
+    itemSize[]={1,1};
+	};
+	class SRP_BulletKitRifle_50Cal: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="50 Cal Bullet Kit";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\bullet50Calcasingpellet.p3d";
+	};
+
+  class SRP_EmptyCasingRifle_12x7: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="Cartridge Cases for 12.7";
+		descriptionShort="Fill with gunpowder and bullets to complete.";
+		model="Survivalists_Mods\weapons\ammunition\bullet12x7casingempty.p3d";
+    itemSize[]={1,3};
+	};
+  class SRP_StarterKitRifle_12x7: SRP_BulletCrafting_Rifle40Count  // new
+  {
+    scope=2;
+		displayName="12.7 Ammo Starter Kit";
+		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
+		model="Survivalists_Mods\weapons\ammunition\bullet12x7casingpowder.p3d";
+    itemSize[]={1,3};
+  };
+	class SRP_ProjectileRifle_12x7: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="12.7 Caliber Bullets";
+		descriptionShort="";
+		model="Survivalists_Mods\weapons\ammunition\bullet12x7.p3d";
+    itemSize[]={1,1};
+	};
+	class SRP_BulletKitRifle_12x7: SRP_BulletCrafting_Rifle40Count  // new
+	{
+		scope=2;
+		displayName="12.7 Bullet Kit";
+		descriptionShort="It remains to clog on a workbench and you can shoot.";
+		model="Survivalists_Mods\weapons\ammunition\bullet12x7casingpellet.p3d";
 	};
 
   // --------------- Shotgun Bullet Kits and Pellets
@@ -888,7 +955,7 @@ class CfgVehicles
     itemSize[]={2,4};
 		weight=28;
 		canBeSplit=1;
-		varQuantityInit=60;
+		varQuantityInit=10;
 		varQuantityMin=0;
 		varQuantityMax=60;
   };
@@ -976,37 +1043,4 @@ class CfgVehicles
 		model="Survivalists_Mods\weapons\ammunition\shotguncasingpellet.p3d";
     itemSize[]={2,4};
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // class SRP_BulletsLowPoly: Inventory_Base
-	// {
-	// 	scope=2;
-	// 	displayName="dfsafds";
-	// 	descriptionShort="fsdafdfdafda";
-	// 	model="Survivalists_Mods\weapons\ammunition\bulletlowpoly.p3d";
-	// 	itemSize[]={2,2};
-	// 	rotationFlags=1;
-	// 	stackedUnit="percentage";
-	// 	quantityBar=1;
-	// 	varQuantityInit=100;
-	// 	varQuantityMin=0;
-	// 	varQuantityMax=100;
-	// 	weight=40;
-	// 	fragility=0.0099999998;
-	// };
-
-
-
-
 };
