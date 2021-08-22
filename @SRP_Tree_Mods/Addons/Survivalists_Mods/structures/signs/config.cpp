@@ -47,4 +47,17 @@ class CfgVehicles
 			"Survivalists_Mods\structures\signs\data\nationalforestsign_sancutary_co.paa"
 		};
 	};  
+
+	class land_srp_gravestone1_stone: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone1.p3d";
+	};
+
+  class land_srp_gravestone1_moss: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone1_moss.p3d";
+	};
+
 };
