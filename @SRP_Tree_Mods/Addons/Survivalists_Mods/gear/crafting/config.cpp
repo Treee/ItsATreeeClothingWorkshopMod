@@ -21,16 +21,6 @@ class CfgVehicles
   class SRP_KitBase;
 
   //-------------------------------------BASE GAME OVERRIDE
-  // sneaky stashes attachments
-  class WoodenStick: Inventory_Base
-	{
-    inventorySlot[]=
-		{
-			"WoodenStick",
-			"Material_Shelter_Sticks",
-      "WoodenSticks_20"
-		};
-  };
 
 	class SRP_AdvancedWorkbench: Container_Base // BP1_Workbench
 	{
@@ -225,6 +215,417 @@ class CfgVehicles
 					id=797;
 				};
 			};
+		};
+	};
+
+  class SRP_SewingMachineTable: Container_Base
+	{
+		scope=2;
+		displayName="Tailor Machine";
+		descriptionShort="A sewing machine used to tailor clothing";
+		model="Survivalists_Mods\gear\crafting\SRP_SewingMachineTable.p3d";
+		overrideDrawArea=8;
+		useEntityHierarchy="true";
+		attachments[]=
+		{
+			"SRP_SewingMachine"
+		};
+		destroyOnEmpty=0;
+		carveNavmesh=0;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=500;
+		itemSize[]={12,12};
+		itemBehaviour=0;
+		repairKitType=1;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		lootTag[]=
+		{
+			"Work"
+		};
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={8,12};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Machine
+			{
+				name="Machine";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_SewingMachine"
+				};
+				icon="cat_common_cargo";
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+						
+						{
+							1.01,
+							{}
+						},
+						
+						{
+							0.69999999,
+							{}
+						},
+						
+						{
+							0.5,
+							{}
+						},
+						
+						{
+							0.30000001,
+							{}
+						},
+						
+						{
+							0.0099999998,
+							{}
+						}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+	class SRP_SewingTable_pack: Inventory_Base
+	{
+		scope=2;
+		displayName="Sewing Table";
+		descriptionShort="A sewing machine used to tailor clothing";
+		model="\DZ\gear\camping\wooden_case.p3d";
+		overrideDrawArea="8.0";
+		useEntityHierarchy="true";
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		quantityBar=1;
+		SingleUseActions[]={527};
+		InteractActions[]={1025,1026};
+		ContinuousActions[]={155};
+		carveNavmesh=0;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=500;
+		itemSize[]={8,10};
+		itemBehaviour=0;
+		randomQuantity=2;
+		liquidContainerType="";
+		varQuantityInit=0;
+		physLayer="item_large";
+		absorbency=0.1;
+		allowOwnedCargoManipulation=1;
+		lootTag[]=
+		{
+			"Work"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000;
+					healthLevels[]=
+					{
+						
+						{
+							1.01,
+							{}
+						},
+						
+						{
+							0.69999999,
+							{}
+						},
+						
+						{
+							0.5,
+							{}
+						},
+						
+						{
+							0.30000001,
+							{}
+						},
+						
+						{
+							0.0099999998,
+							{}
+						}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+	class SRP_SewingMachine: Inventory_Base
+	{
+		scope=2;
+		displayName="Sewing Machine";
+		descriptionShort="Looks like a sewing machine huh";
+		model="Survivalists_Mods\gear\crafting\SRP_SewingMachine.p3d";
+		inventorySlot[]=
+		{
+			"SRP_SewingMachine"
+		};
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={4,4};
+		itemBehaviour=0;
+		physLayer="item_large";
+		lootTag[]=
+		{
+			"Work"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingmachine_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						
+						{
+							1.01,
+							{}
+						},
+						
+						{
+							0.69999999,
+							{}
+						},
+						
+						{
+							0.5,
+							{}
+						},
+						
+						{
+							0.30000001,
+							{}
+						},
+						
+						{
+							0.0099999998,
+							{}
+						}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+	
+	class SRP_SewingThread: Inventory_Base
+	{
+		scope=2;
+		displayName="Sewing Thread";
+		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
+		weight=0;
+		itemSize[]={1,1};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=200;
+		varQuantityMin=0;
+		varQuantityMax=200;
+		quantityBar=1;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingmachine_co.paa"
+		};
+	};
+	class SRP_SewingThread_Black: Inventory_Base
+	{
+		scope=2;
+		displayName="Sewing Thread";
+		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
+		weight=0;
+		itemSize[]={1,1};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=200;
+		varQuantityMin=0;
+		varQuantityMax=200;
+		quantityBar=1;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_black_co.paa"
+		};
+	};
+	class SRP_SewingThread_Green: Inventory_Base
+	{
+		scope=2;
+		displayName="Sewing Thread";
+		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
+		weight=0;
+		itemSize[]={1,1};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=200;
+		varQuantityMin=0;
+		varQuantityMax=200;
+		quantityBar=1;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_green_co.paa"
+		};
+	};
+	class SRP_SewingThread_LightBlue: Inventory_Base
+	{
+		scope=2;
+		displayName="Sewing Thread";
+		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
+		weight=0;
+		itemSize[]={1,1};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=200;
+		varQuantityMin=0;
+		varQuantityMax=200;
+		quantityBar=1;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_lightblue_co.paa"
+		};
+	};
+	class SRP_SewingThread_Red: Inventory_Base
+	{
+		scope=2;
+		displayName="Sewing Thread";
+		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
+		weight=0;
+		itemSize[]={1,1};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=200;
+		varQuantityMin=0;
+		varQuantityMax=200;
+		quantityBar=1;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_red_co.paa"
+		};
+	};
+	class SRP_SewingThread_Blue: Inventory_Base
+	{
+		scope=2;
+		displayName="Sewing Thread";
+		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
+		weight=0;
+		itemSize[]={1,1};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=200;
+		varQuantityMin=0;
+		varQuantityMax=200;
+		quantityBar=1;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_blue_co.paa"
 		};
 	};
 

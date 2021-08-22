@@ -384,6 +384,15 @@ class CfgSlots
 		displayName="Lathe Clamp";
 		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
   }
+
+  class Slot_SRP_SewingMachine
+	{
+		name="SRP_SewingMachine";
+		displayName="Sewing Machine";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+		selection="SewingMachine";
+	};
+
 };
 
 class CfgNonAIVehicles
@@ -445,7 +454,12 @@ class CfgNonAIVehicles
 		model="Survivalists_Mods\proxy\srp_latheworkbench_clamp.p3d";
 	};
   
-
+  class ProxySRP_SewingMachine: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="SRP_SewingMachine";
+		model="Survivalists_Mods\gear\crafting\SRP_SewingMachine.p3d";
+	};
 	class Proxyfirstaidkit: ProxyAttachment
 	{
 		scope=2;
