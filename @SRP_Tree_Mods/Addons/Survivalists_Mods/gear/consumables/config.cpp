@@ -18,7 +18,6 @@ class CfgVehicles
   class Spraycan_ColorBase;
   class Inventory_Base;
   class ButaneCanister;
-  class Bark_ColorBase;
 
   //--------------------------------------------- BASE GAME OVERRIDES
 	class Battery9V: Inventory_Base
@@ -61,63 +60,6 @@ class CfgVehicles
 			energyAtSpawn=2000;
 		};
 	};
-
-  // wood stuff override for sneaky stashes
-  class WoodenPlank: Inventory_Base
-	{
-		varQuantityMax=20;
-		varStackMax=20;
-    inventorySlot[]=
-		{
-      "Planks_20"
-    };
-	};
-
-  class WoodenLog: Inventory_Base
-	{
-		inventorySlot[]=
-		{
-			"Truck_01_WoodenLogs",
-			"Material_WoodenLogs",
-			"Material_L1_WoodenLogs",
-			"Material_L2_WoodenLogs",
-			"Material_L3_WoodenLogs",
-			"Material_FPole_WoodenLog",
-			"Material_FPole_WoodenLog2",
-			"Material_FPole_MagicStick",
-      "WoodenLogs_5",
-      "WoodenLogs_9"
-		};
-  };
-
-  class Firewood: Inventory_Base
-	{
-    inventorySlot[]=
-		{
-			"Firewood",
-      "Firewood_20"
-		};
-  };
-
-  class Bark_Oak: Bark_ColorBase
-	{
-    inventorySlot[]=
-		{
-			"Bark",
-			"BirchBark",
-      "Bark_16"
-		};
-  };
-
-  class Bark_Birch: Bark_ColorBase
-	{
-    inventorySlot[]=
-		{
-			"Bark",
-			"BirchBark",
-      "Bark_16"
-		};
-  };
 
   //----------------------------------------------- CUSTOM STUFF
   class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery

@@ -1888,11 +1888,10 @@ class CfgVehicles
     itemsCargoSize[]={1,1};
     attachments[]=
 		{
-			"Bark",
-      "BirchBark",
+			"Bark",     
       "WoodenStick",
       "Firewood",
-      "WoodenLogs_5"
+      "Material_WoodenLogs"
 		};
   };
   class SneakyLargeLogPile: kitholders
@@ -1904,11 +1903,13 @@ class CfgVehicles
     itemsCargoSize[]={1,1};
     attachments[]=
 		{
-			"Bark_16",
-      "WoodenSticks_20",
-      "Firewood_20",
-      "WoodenLogs_9",
-      "Planks_20"
+			"Bark",
+			"OakBark",
+			"BirchBark",
+      "WoodenStick",
+      "Firewood",
+      "Material_WoodenLogs",
+      "Material_L1_WoodenLogs"
 		};
   };
 
