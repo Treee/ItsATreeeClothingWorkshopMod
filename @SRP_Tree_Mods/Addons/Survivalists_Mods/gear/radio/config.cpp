@@ -9,7 +9,6 @@ class CfgPatches
 		{
 			"DZ_Data",
       "DZ_Radio",
-      "CarRadioGlow", // PsychoDayZRadio
       "Survivalists_Mods"
 		};
 	};
@@ -340,6 +339,66 @@ class CfgVehicles
 		class CfgCassette
 		{
 			soundSet="SRPRadio_SkylarWolfe_ThreeLittleBirds_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_BoulevardofBrokenDreams: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Boulevard of Broken Dreams";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_BoulevardofBrokenDreams_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_ClashofTheworld: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Clash Of The World";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_ClashofTheworld_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_Creep: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Creep";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_Creep_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_Fixyou: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Fix You";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_FixYou_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_Hallelujah: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Hallelujah";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_Hallelujah_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_RingOfFire: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Ring of Fire";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_RingOfFire_SoundSet1";
 		};
 	};
 

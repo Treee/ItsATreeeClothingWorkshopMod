@@ -43,10 +43,10 @@ class CfgPatches
       "MunghardsBrain",     // mung_brain
       "Munghardsmeleesling", // meleesling
       "Munghardsriflesling", // riflesling
-      "Mass_Textures", // MassNBC_Bag, MassRatnik
+      "Mass_Textures", // MassNBC_Bag, MassRatnik, removing admin compass
+      "CarRadioGlow", // PsychoDayZRadio
       "MSP_Scripts",    // MSP_Fridge_Base
       "BaseBuildingPlus", // removing admin tools
-      "Mass_Textures", // removing admin compass
       "cdub_sneaky_stashes", // sneaky_stashes
       "deerisle", // for the map
 		};
