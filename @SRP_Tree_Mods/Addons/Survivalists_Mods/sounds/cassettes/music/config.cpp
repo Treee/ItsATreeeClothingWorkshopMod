@@ -93,7 +93,6 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Bread.ogg",1}
 		};
 	};
-
   class SRPRadio_SkylarWolfe_ThreeLittleBirds_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -101,7 +100,6 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Three_Little_Birds_Sung_by_Skylar_Wolfe.ogg",1}
 		};
 	};
-
   class SRPRadio_SkylarWolfe_Hallelujah_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -109,7 +107,6 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Hallelujah_Cover_By_Sky.ogg",1}
 		};
 	};
-
   class SRPRadio_SkylarWolfe_BoulevardofBrokenDreams_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -117,7 +114,6 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Boulevard_Of_Broken_DreamsSung_by_Skylar_Wolfe.ogg",1}
 		};
 	};
-
   class SRPRadio_SkylarWolfe_ClashofTheworld_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -125,7 +121,6 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Clash_of_The_World_Sung_by_Skylar_Wolfe.ogg",1}
 		};
 	};
-
   class SRPRadio_SkylarWolfe_Creep_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -133,7 +128,6 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Creep_Sung_by_Skylar_Wolfe.ogg",1}
 		};
 	};
-
   class SRPRadio_SkylarWolfe_FixYou_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -141,7 +135,6 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Fix_You_Sung_By_Skylar_Wolfe_.ogg",1}
 		};
 	};
-
   class SRPRadio_SkylarWolfe_RingOfFire_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
