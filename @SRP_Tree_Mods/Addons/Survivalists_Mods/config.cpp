@@ -47,6 +47,7 @@ class CfgPatches
       "MSP_Scripts",    // MSP_Fridge_Base
       "BaseBuildingPlus", // removing admin tools
       "Mass_Textures", // removing admin compass
+      "cdub_sneaky_stashes", // sneaky_stashes
       "deerisle", // for the map
 		};
 	};

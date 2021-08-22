@@ -8,7 +8,6 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "sneaky_stashes",
       "Survivalists_Mods"
 		};
 	};
@@ -1888,7 +1887,8 @@ class CfgVehicles
     itemsCargoSize[]={1,1};
     attachments[]=
 		{
-			"Bark",     
+			"OakBark",
+			"BirchBark",
       "WoodenStick",
       "Firewood",
       "Material_WoodenLogs"
@@ -1903,7 +1903,6 @@ class CfgVehicles
     itemsCargoSize[]={1,1};
     attachments[]=
 		{
-			"Bark",
 			"OakBark",
 			"BirchBark",
       "WoodenStick",
