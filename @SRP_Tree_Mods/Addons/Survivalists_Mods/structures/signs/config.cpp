@@ -85,5 +85,84 @@ class CfgVehicles
 		scope=1;
 		model="Survivalists_Mods\structures\signs\gravestone5.p3d";
 	};
-
+  class land_srp_gravestone6: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone6.p3d";
+	};
+  class land_srp_gravestone7: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone7.p3d";
+	};
+  class land_srp_gravestone8: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone8.p3d";
+	};
+  class land_srp_gravestone8_moss: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone8_moss.p3d";
+	};
+  class land_srp_gravestone9: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone9.p3d";
+	};
+  class land_srp_gravestone10: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone10.p3d";
+	};
+  class land_srp_gravestone11: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone11.p3d";
+	};
+  class land_srp_gravestone11_worn: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone11_worn.p3d";
+	};
+  class land_srp_gravestonemud1: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestonemud1.p3d";
+	};
+  class land_srp_gravestonemud2: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestonemud2.p3d";
+	};
+  class land_srp_gravestonemud3: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestonemud3.p3d";
+	};
+  class land_srp_gravestonemud1_grass: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestonemud1_grass.p3d";
+	};
+  class land_srp_gravestonemud2_grass: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestonemud2_grass.p3d";
+	};
+  class land_srp_gravestonemud3_grass: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestonemud3_grass.p3d";
+	};
+  class land_srp_gravestone12: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone12.p3d";
+	};
+  class land_srp_gravestone13: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone13.p3d";
+	};
 };
