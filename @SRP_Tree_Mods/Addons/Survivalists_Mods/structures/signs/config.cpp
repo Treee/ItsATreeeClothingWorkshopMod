@@ -46,7 +46,13 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\structures\signs\data\nationalforestsign_sancutary_co.paa"
 		};
-	};  
+	};
+
+  class NeonSign_Wharf: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\neonsign_thewarf.p3d";
+	};
 
 	class land_srp_gravestone1_stone: HouseNoDestruct  // new
 	{
