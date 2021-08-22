@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\structures\signs\data\gravestone1_stone_nohq.paa";
+	texture="Survivalists_Mods\structures\signs\data\gravestone4_moss_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\structures\signs\data\gravestone1_moss_nohq.paa";
+	texture="Survivalists_Mods\structures\signs\data\gravestone4_moss_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

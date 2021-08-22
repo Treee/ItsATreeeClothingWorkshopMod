@@ -53,11 +53,37 @@ class CfgVehicles
 		scope=1;
 		model="Survivalists_Mods\structures\signs\gravestone1.p3d";
 	};
-
   class land_srp_gravestone1_moss: HouseNoDestruct  // new
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\signs\gravestone1_moss.p3d";
+	};
+  class land_srp_gravestone2: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone2.p3d";
+	};
+  class land_srp_gravestone3: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone3.p3d";
+	};
+  // not working for now
+  // class land_srp_gravestone4: HouseNoDestruct  // new
+	// {
+	// 	scope=1;
+	// 	model="Survivalists_Mods\structures\signs\gravestone4.p3d";
+	// };
+  // class land_srp_gravestone4_moss: HouseNoDestruct  // new
+	// {
+	// 	scope=1;
+	// 	model="Survivalists_Mods\structures\signs\gravestone4_moss.p3d";
+	// };
+
+  class land_srp_gravestone5: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\gravestone5.p3d";
 	};
 
 };
