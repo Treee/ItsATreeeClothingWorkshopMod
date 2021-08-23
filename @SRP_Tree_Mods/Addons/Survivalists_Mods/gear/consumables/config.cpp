@@ -60,7 +60,11 @@ class CfgVehicles
 			energyAtSpawn=2000;
 		};
 	};
-
+  class WoodenPlank: Inventory_Base
+	{
+    varStackMax=20;
+  };
+  
   //----------------------------------------------- CUSTOM STUFF
   class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery
 	{

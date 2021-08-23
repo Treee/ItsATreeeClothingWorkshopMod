@@ -342,6 +342,8 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 "Gravestones COLLECTION" (https://www.cgtrader.com/3d-model-collections/gravestones-collection-21bd4504-dbbc-4aff-aab6-a9a4835e36b8) by ArtLeaving is licensed under Royalty Free (https://www.cgtrader.com/pages/terms-and-conditions#royalty-free-license)
 
+"Dice" (https://skfb.ly/op6CD) by elextraza is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
