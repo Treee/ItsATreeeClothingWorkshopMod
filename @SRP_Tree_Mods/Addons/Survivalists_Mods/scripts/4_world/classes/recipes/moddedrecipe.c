@@ -5,6 +5,10 @@ modded class PluginRecipesManagerBase extends PluginBase
 		super.RegisterRecipies();				// Calling base RegisterRecipies()
 		// UnregisterRecipe("CraftStoneKnife");	// Removing an existing recipe
    
+    //--------- Modded Item Recipes
+    RegisterRecipe(new Craft_Msp_EmptyPlanterBox);
+    RegisterRecipe(new Craft_Msp_EmptySquarePlanterBox);
+
     // Crafting
     //---------Deconstruct Items into Kits
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
