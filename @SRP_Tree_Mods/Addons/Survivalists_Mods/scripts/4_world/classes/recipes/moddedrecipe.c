@@ -95,7 +95,6 @@ modded class PluginRecipesManagerBase extends PluginBase
 
     //----------- Tools
     RegisterRecipe(new Craft_SRP_Heatpack);
-    RegisterRecipe(new Craft_SRP_NVBinocular);
 
     //----------- Clothing
 
@@ -154,8 +153,6 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_PlateCarrierVest_Black);
     RegisterRecipe(new Craft_SRP_PlateCarrierPouches_Black);
     
-    // Gloves
-    RegisterRecipe(new Craft_SRP_OMNOGloves_Green);    
 
 
     // ------------------------------ Food and Drinks
