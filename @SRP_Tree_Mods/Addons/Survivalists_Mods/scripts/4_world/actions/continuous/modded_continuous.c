@@ -37,11 +37,17 @@ modded class ActionSkinning
       EntityAI body;
       Class.CastTo(body, action_data.m_Target.GetObject());
       
-      if (body.IsKindOf("SurvivorBase") && Math.RandomIntInclusive(0, 100) > 70)
+      ItemBase added_item;
+      vector pos_rnd = body.GetPosition() + Vector(Math.RandomFloat01() - 0.5, 0, Math.RandomFloat01() - 0.5);
+      int randomNumber = Math.RandomIntInclusive(0, 100);
+      if (body.IsKindOf("SurvivorBase") && randomNumber > 70 && randomNumber < 90)
       {
-        ItemBase added_item;
-        vector pos_rnd = body.GetPosition() + Vector(Math.RandomFloat01() - 0.5, 0, Math.RandomFloat01() - 0.5);
-        Class.CastTo(added_item, GetGame().CreateObject("brain_Mung", pos_rnd, false));
+        Class.CastTo(added_item, GetGame().CreateObject("SRP_BrainPiece", pos_rnd, false));
+        added_item.PlaceOnSurface();
+      }
+      else if (body.IsKindOf("SurvivorBase") && randomNumber > 89)
+      {
+        Class.CastTo(added_item, GetGame().CreateObject("SRP_Brain", pos_rnd, false));
         added_item.PlaceOnSurface();
       }
     }

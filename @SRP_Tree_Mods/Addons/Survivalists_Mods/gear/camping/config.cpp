@@ -16,6 +16,7 @@ class CfgPatches
 
 class CfgVehicles
 {
+  class FenceKit;
   class BaseBuildingBase;
   class BarrelHoles_ColorBase;
   class Inventory_Base;

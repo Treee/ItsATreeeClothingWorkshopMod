@@ -1,14 +1,39 @@
 modded class Hologram
 {
-  string ProjectionBasedOnParent()
+  override string ProjectionBasedOnParent()
 	{
-    EntityAI itemInHands = m_Player.GetHumanInventory().GetEntityInHands();	
+    EntityAI itemInHands = m_Player.GetHumanInventory().GetEntityInHands();
+    // Print("ProjectionBasedOnParent " + itemInHands);
     if (itemInHands.IsInherited(SRP_KitBase))
     {
       SRP_KitBase srpKit = SRP_KitBase.Cast(itemInHands);
       return srpKit.GetKitItemName();
     }
-		return super.ProjectionBasedOnParent();
+    string s = super.ProjectionBasedOnParent();
+    // Print("Parent projection..... " + s);
+		return s;
+	}
+
+  override string GetProjectionName(ItemBase item)
+	{
+    // Print("GetProjectionName: " + item.GetType());
+		if( !item )
+			return "";
+		
+		if ( item.CanMakeGardenplot() )
+		{
+      // Print("GetProjectionName: GardenPlot");
+			return "GardenPlotPlacing";
+		}
+		
+		//Camping & Base building
+		if ( item.IsInherited( TentBase ) || item.IsBasebuildingKit() )
+		{
+      // Print("TentBase, BuildingKitBase: " + item.GetType() + "Placing");
+			return item.GetType() + "Placing";
+		}
+		
+		return item.GetType();
 	}
 
 	EntityAI PlaceEntity( EntityAI entity_for_placing )
@@ -30,17 +55,22 @@ modded class Hologram
     return super.PlaceEntity(entity_for_placing);	
 	}
 
+  // Building anywhere override
   override void EvaluateCollision(ItemBase action_item = null)
-  {
+	{	
     EntityAI itemInHands = m_Player.GetHumanInventory().GetEntityInHands();
-    // if the item in our hands is our kit
-    if (itemInHands.IsInherited(SRP_KitBase))
+		if (IsCollidingGPlot())
+    {
+			SetIsColliding(true);
+    }
+    else if (itemInHands.IsInherited(SRP_KitBase)) // if the item in our hands is our kit
     {
       // ignore collision
+      SetIsColliding(false);      
+    }
+    else 
+    {
       SetIsColliding(false);
-      return;
-    };
-    // call parent evaluation otherwise.
-    super.EvaluateCollision();
-  }
+    }
+	}
 };

@@ -69,7 +69,7 @@ class ActionInteractWithGUICraftingWorkbench : ActionInteractBase
       {
         // Print("Setting player bench data");
         action_data.m_Player.selectedCraftingBench = action_data.m_Target.GetObject().GetType();
-        action_data.m_Player.guiCraftingBench = action_data.m_Target.GetObject();
+        action_data.m_Player.guiCraftingBench = EntityAI.Cast(action_data.m_Target.GetObject());
       }
       if (!GetGame().GetUIManager().FindMenu(GameConstants.UI_SRP_CUSTOM_MENU_GUICrafting))
       {

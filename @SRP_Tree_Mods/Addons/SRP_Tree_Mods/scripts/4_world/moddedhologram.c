@@ -1,18 +1,5 @@
 modded class Hologram
 {
-  // Building anywhere override
-  override void EvaluateCollision(ItemBase action_item = null)
-	{	
-		if (IsCollidingGPlot())
-    {
-			SetIsColliding(true);
-    }
-		else
-    {
-			SetIsColliding(false);
-    }
-	}
-
   override protected void GetProjectionCollisionBox( out vector min_max[2] )
 	{
     super.GetProjectionCollisionBox(min_max);
@@ -24,26 +11,3 @@ modded class Hologram
     }
 	}
 };
-
-// Building anywhere override
-modded class Construction
-{
-	override bool IsColliding( string part_name )
-	{
-		return false;
-	}
-
-	override bool IsCollidingEx( CollisionCheckData check_data )
-	{
-		return false;
-	}
-}
-
-// Building anywhere override
-modded class ConstructionBoxTrigger extends ManTrigger
-{
-	override bool IsColliding()
-	{
-		return false;
-	}
-}

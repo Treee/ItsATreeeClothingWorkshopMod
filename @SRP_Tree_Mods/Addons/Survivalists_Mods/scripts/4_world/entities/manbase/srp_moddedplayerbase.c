@@ -29,7 +29,7 @@ modded class PlayerBase extends ManBase
           // if the server's ingredients are not what the client sent, return
           if (!CheckRecipeCraftingValidity(ingredientsAndResults.param1)) return;
           // delete the ingredients
-          DeleteIngredients(ingredientsAndResults.param1, ingredientsAndResults.param2);
+          DeleteIngredients(ingredientsAndResults.param1, ItemBase.Cast(ingredientsAndResults.param2));
         }
         else {
           Print("Client craft request.... nono");

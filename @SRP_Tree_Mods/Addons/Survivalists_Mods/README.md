@@ -344,6 +344,10 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 "Dice" (https://skfb.ly/op6CD) by elextraza is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Free Palisade logs" (https://skfb.ly/o6AEP) by Joan LP is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Toolbox" (https://skfb.ly/JIC8) by beyondmatter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
