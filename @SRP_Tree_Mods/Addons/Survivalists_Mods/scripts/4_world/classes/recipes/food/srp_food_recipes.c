@@ -550,7 +550,7 @@ class SRP_CanRawGoods extends RecipeBase
 		m_MaxDamageIngredient[0] = -1;	//-1 = disable check
 		m_MinQuantityIngredient[0] = -1;	//quantity 1 required for primary ingredient
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		B
+    		
 		m_MinDamageIngredient[1] = -1;	//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;	//-1 = disable check
 		m_MinQuantityIngredient[1] = -1;	//quantity 1 required for secondary ingredient
