@@ -208,7 +208,16 @@ class SRP_CreateVeggiesMeatComboCanned_Raw extends RecipeBase
 
   override bool CanDo(ItemBase ingredients[], PlayerBase player)
 	{
-    return true;
+    // ensure ingredients are not burned or rotten
+    bool isCraftable = false;
+    Edible_Base item0 = Edible_Base.Cast(ingredients[0]);
+    Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
+    if (item0 && item1)
+    {
+      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+    }
+    return isCraftable;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
@@ -294,7 +303,16 @@ class SRP_CreateVeggiesCanned_Raw extends RecipeBase
 
   override bool CanDo(ItemBase ingredients[], PlayerBase player)
 	{
-    return true;
+    // ensure ingredients are not burned or rotten
+    bool isCraftable = false;
+    Edible_Base item0 = Edible_Base.Cast(ingredients[0]);
+    Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
+    if (item0 && item1)
+    {
+      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+    }
+    return isCraftable;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
@@ -388,7 +406,16 @@ class SRP_CreateMeatCanned_Raw extends RecipeBase
 
   override bool CanDo(ItemBase ingredients[], PlayerBase player)
 	{
-    return true;
+    // ensure ingredients are not burned or rotten
+    bool isCraftable = false;
+    Edible_Base item0 = Edible_Base.Cast(ingredients[0]);
+    Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
+    if (item0 && item1)
+    {
+      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+    }
+    return isCraftable;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
@@ -452,8 +479,17 @@ class SRP_CreateHumanMeatCanned_Raw extends RecipeBase
 
   override bool CanDo(ItemBase ingredients[], PlayerBase player)
 	{
-    return true;
-	}
+    // ensure ingredients are not burned or rotten
+    bool isCraftable = false;
+    Edible_Base item0 = Edible_Base.Cast(ingredients[0]);
+    Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
+    if (item0 && item1)
+    {
+      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+    }
+    return isCraftable;	
+  }
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
@@ -527,8 +563,17 @@ class SRP_CreateVeggiesHumanMeatComboCanned_Raw extends RecipeBase
 
   override bool CanDo(ItemBase ingredients[], PlayerBase player)
 	{
-    return true;
-	}
+    // ensure ingredients are not burned or rotten
+    bool isCraftable = false;
+    Edible_Base item0 = Edible_Base.Cast(ingredients[0]);
+    Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
+    if (item0 && item1)
+    {
+      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+    }
+    return isCraftable;	
+  }
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
@@ -550,7 +595,7 @@ class SRP_CanRawGoods extends RecipeBase
 		m_MaxDamageIngredient[0] = -1;	//-1 = disable check
 		m_MinQuantityIngredient[0] = -1;	//quantity 1 required for primary ingredient
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-    		
+
 		m_MinDamageIngredient[1] = -1;	//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;	//-1 = disable check
 		m_MinQuantityIngredient[1] = -1;	//quantity 1 required for secondary ingredient
