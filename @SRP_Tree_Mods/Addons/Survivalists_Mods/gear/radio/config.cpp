@@ -401,6 +401,78 @@ class CfgVehicles
 			soundSet="SRPRadio_SkylarWolfe_RingOfFire_SoundSet1";
 		};
 	};
+  class SRPRadio_CassetteTape_SkylarWolfe_Wonderwall: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Wonderwall";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_WonderWall_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_SaySomething: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Say Something";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_SaySomething_SoundSet1";
+		};
+	};
+
+
+  class SRPRadio_CassetteTape_Pinkerton_TheShadow: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Pinkerton - The Shadow";
+		descriptionShort="Music Tape - Credit Pinkerton";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Pinkerton_TheShadow_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Gague_Forever: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Gague - Forever";
+		descriptionShort="Music Tape - Credit Gague";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Gague_Forever_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Gague_DontLeaveMe: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Gague - Don't Leave Me";
+		descriptionShort="Music Tape - Credit Gague";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Gague_DontLeaveMe_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Gague_MySide: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Gague - My Side";
+		descriptionShort="Music Tape - Credit Gague";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Gague_MySide_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Gague_Anger: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Gague - Anger";
+		descriptionShort="Music Tape - Credit Gague";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Gague_Anger_SoundSet1";
+		};
+	};
 
   // -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base
@@ -724,6 +796,60 @@ class CfgVehicles
 		class CfgCassette
 		{
 			soundSet="SRP_Cassette_KuruResearch_Log26_SoundSet26";
+		};
+	};
+
+  // -------------------- Short Stories
+  class SRPRadio_CassetteTape_ShortStory_Base: Cassette
+	{
+		displayName="Short Story Cassette";
+		descriptionShort="Cassette Tape with a short story recording";
+		weight=100;
+		repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+		inventorySlot[]=
+		{
+			"Cassette"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"DZ\gear\tools\data\cassette_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,{"DZ\gear\tools\data\cassette.rvmat"}},
+            {0.69999999,{"DZ\gear\tools\data\cassette.rvmat"}},
+            {0.5,{"DZ\gear\tools\data\cassette_damage.rvmat"}},
+            {0.30000001,{"DZ\gear\tools\data\cassette_damage.rvmat"}},
+            {0,{"DZ\gear\tools\data\cassette_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class CfgCassette
+		{
+		};
+	};
+
+  class SRPRadio_CassetteTape_ShortStory_WhiteFingerHag: SRPRadio_CassetteTape_ShortStory_Base
+	{
+		scope=2;
+		displayName="The White Fingered Hag of Treepwood";
+		descriptionShort="Gather round the fire and listen to a spooky story.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ShortStory_WhiteFingerHag_SoundSet1";
 		};
 	};
 };

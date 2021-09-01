@@ -142,6 +142,55 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Ring_Of_Fire_Sung_by_Skylar_Wolfe.ogg",1}
 		};
 	};
+  class SRPRadio_SkylarWolfe_Wonderwall_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Wonderwall_Sung_By_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_SaySomething_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Say_Something_Sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_Pinkerton_TheShadow_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Vocal_Test_-_The_Shadow.ogg",1}
+		};
+	};
+  class SRPRadio_Gague_Forever_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Forever.ogg",1}
+		};
+	};
+  class SRPRadio_Gague_DontLeaveMe_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\dont_leave_me.ogg",1}
+		};
+	};
+  class SRPRadio_Gague_MySide_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\My_side.ogg",1}
+		};
+	};
+  class SRPRadio_Gague_Anger_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\anger.ogg",1}
+		};
+	};
 };
 
 class CfgSoundSets
@@ -265,5 +314,53 @@ class CfgSoundSets
 			"SRPRadio_SkylarWolfe_RingOfFire_Shader1"
 		};
 	};
-
+  class SRPRadio_SkylarWolfe_WonderWall_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_Wonderwall_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_SaySomething_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_SaySomething_Shader1"
+		};
+	};
+  class SRPRadio_Pinkerton_TheShadow_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_Pinkerton_TheShadow_Shader1"
+		};
+	};
+  class SRPRadio_Gague_Forever_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_Gague_Forever_Shader1"
+		};
+	};
+  class SRPRadio_Gague_DontLeaveMe_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_Gague_DontLeaveMe_Shader1"
+		};
+	};
+  class SRPRadio_Gague_MySide_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_Gague_MySide_Shader1"
+		};
+	};
+  class SRPRadio_Gague_Anger_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_Gague_Anger_Shader1"
+		};
+	};
 };
