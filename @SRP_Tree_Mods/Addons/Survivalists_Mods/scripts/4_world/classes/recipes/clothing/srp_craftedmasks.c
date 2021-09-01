@@ -24,7 +24,7 @@ class Repaint_SRP_Bandana_65Black extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -92,7 +92,7 @@ class Repaint_SRP_Bandana_65Desert extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -160,7 +160,7 @@ class Repaint_SRP_Bandana_65Tan extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -228,7 +228,7 @@ class Repaint_SRP_Bandana_CheckBlue extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -296,7 +296,7 @@ class Repaint_SRP_Bandana_CheckBlueBright extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -364,7 +364,7 @@ class Repaint_SRP_Bandana_CheckGreen extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -432,7 +432,7 @@ class Repaint_SRP_Bandana_CheckRed extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -500,7 +500,7 @@ class Repaint_SRP_Bandana_CheckWhite extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -568,7 +568,7 @@ class Repaint_SRP_Bandana_Denim extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -636,7 +636,7 @@ class Repaint_SRP_Bandana_Kamysh extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -704,7 +704,7 @@ class Repaint_SRP_Bandana_USMC_D extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -772,7 +772,7 @@ class Repaint_SRP_Bandana_USMC_W extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -840,7 +840,7 @@ class Repaint_SRP_SurgicalMask_Black extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing

@@ -25,9 +25,9 @@ class CfgVehicles
 	class SRP_AdvancedWorkbench: Container_Base // BP1_Workbench
 	{
 		scope=2;
-		displayName="Advanced Workbench";
-		descriptionShort="A Workbench with tools for creating and repairing weapons and ammunition";
-		model="Survivalists_Mods\gear\crafting\SRP_Workbench.p3d";
+		displayName="Ammo Workbench";
+		descriptionShort="A workbench with tools for manufacturing ammunition and repairing weaponry.";
+		model="Survivalists_Mods\gear\crafting\SRP_AmmoWorkbench.p3d";
 		useEntityHierarchy="true";
 		attachments[]=
 		{

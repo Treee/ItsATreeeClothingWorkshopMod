@@ -24,7 +24,7 @@ class Craft_SRP_M65Jacket_janekm65 extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -92,7 +92,7 @@ class Craft_SRP_M65Jacket_sndwch65 extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -160,7 +160,7 @@ class Craft_SRP_QuiltedJacket_janekq extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -229,7 +229,7 @@ class Craft_SRP_PoliceJacketOrel_wktop extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -297,7 +297,7 @@ class Craft_SRP_HuntingJacket_RainJacket extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -364,7 +364,7 @@ class Craft_SRP_Hoodie_Janek extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -431,7 +431,7 @@ class Craft_SRP_TacticalShirt_Dentac extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -499,7 +499,7 @@ class Craft_SRP_QuiltedJacket_Puffy extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing

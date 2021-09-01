@@ -24,7 +24,7 @@ class Repaint_SRP_PolicePantsOrel_WKPants extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -92,7 +92,7 @@ class Repaint_SRP_CargoPants_Rain extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -160,7 +160,7 @@ class Repaint_SRP_CargoPants_Janek extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -228,7 +228,7 @@ class Repaint_SRP_CargoPants_Denim extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -296,7 +296,7 @@ class Repaint_SRP_HunterPants_Janek extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -364,7 +364,7 @@ class Repaint_SRP_PrisonUniformPants_Blue extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing

@@ -123,6 +123,7 @@ modded class OpenCan
 		PlayerBase playerPB;
 		Class.CastTo(playerPB, player);
 		OpenItem.OpenAndSwitch(tool, can, playerPB, specialty_weight);
+    Debug.Log("OpenCan: Recipe Do method called","recipes");
 	}
 };
 
@@ -212,6 +213,7 @@ class SRP_CreateVeggiesMeatComboCanned_Raw extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
+    Debug.Log("SRP_CreateVeggiesMeatComboCanned_Raw: Recipe Do method called","recipes");
 	}
 };
 
@@ -297,6 +299,7 @@ class SRP_CreateVeggiesCanned_Raw extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
+    Debug.Log("SRP_CreateVeggiesCanned_Raw: Recipe Do method called","recipes");
 	}
 };
 
@@ -390,6 +393,7 @@ class SRP_CreateMeatCanned_Raw extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
+    Debug.Log("SRP_CreateMeatCanned_Raw: Recipe Do method called","recipes");
 	}
 };
 
@@ -453,6 +457,7 @@ class SRP_CreateHumanMeatCanned_Raw extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
+    Debug.Log("SRP_CreateHumanMeatCanned_Raw: Recipe Do method called","recipes");
 	}
 };
 
@@ -527,6 +532,7 @@ class SRP_CreateVeggiesHumanMeatComboCanned_Raw extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
+    Debug.Log("SRP_CreateVeggiesHumanMeatComboCanned_Raw: Recipe Do method called","recipes");
 	}
 };
 
@@ -544,7 +550,7 @@ class SRP_CanRawGoods extends RecipeBase
 		m_MaxDamageIngredient[0] = -1;	//-1 = disable check
 		m_MinQuantityIngredient[0] = -1;	//quantity 1 required for primary ingredient
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+		B
 		m_MinDamageIngredient[1] = -1;	//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;	//-1 = disable check
 		m_MinQuantityIngredient[1] = -1;	//quantity 1 required for secondary ingredient
@@ -601,5 +607,6 @@ class SRP_CanRawGoods extends RecipeBase
       // transfer the quantity properties
       results[0].SetQuantity(can.GetQuantity());
     }
+    Debug.Log("SRP_CanRawGoods: Recipe Do method called","recipes");
 	}
 };

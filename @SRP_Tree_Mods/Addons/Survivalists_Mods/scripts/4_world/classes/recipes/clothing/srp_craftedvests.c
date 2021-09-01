@@ -24,7 +24,7 @@ class Craft_SRP_PlateCarrierHolster_Black extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -92,7 +92,7 @@ class Craft_SRP_HighCapacityVest_Jan extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -160,7 +160,7 @@ class Craft_SRP_PlateCarrierVest_Black extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
@@ -228,7 +228,7 @@ class Craft_SRP_PlateCarrierPouches_Black extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SewingMachineTable");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -25;// 0 = do nothing
 		m_IngredientSetHealth[0] = 0; // -1 = do nothing
