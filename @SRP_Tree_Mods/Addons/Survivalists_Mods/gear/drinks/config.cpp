@@ -18,6 +18,7 @@ class CfgVehicles
   class WaterBottle;
   class Vodka;
   class SodaCan_ColorBase;
+  class Canteen;
 
   // ----------------------  BASE GAME OVERRIDES
 
@@ -488,5 +489,115 @@ class CfgVehicles
     {
       "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
     };
+	};
+
+
+  // ------------------------------- MVS Redux
+  class SRP_MilitaryCanteen_Base: Canteen
+	{
+		scope=0;
+		displayName="Military Canteen";
+		model="Survivalists_Mods\gear\drinks\militarycanteen.p3d";
+    color="base";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co.paa"
+		};	
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drinks\data\canteen.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\gear\drinks\data\canteen.rvmat"}},
+            {0.7,{"Survivalists_Mods\gear\drinks\data\canteen.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\drinks\data\canteen_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\gear\drinks\data\canteen_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\drinks\data\canteen_destruct.rvmat"}}
+          };
+				};
+			};
+		};		
+	};
+
+	class SRP_MilitaryCanteen_OD: SRP_MilitaryCanteen_Base
+	{
+		scope=2;
+		displayName="Military Canteen - OD";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co.paa"
+		};		
+	};
+	class SRP_MilitaryCanteen_ERDL: SRP_MilitaryCanteen_Base
+	{
+		scope=2;
+		displayName="Military Canteen - ERDL";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co_ERDL.paa"
+		};		
+	};
+	class SRP_MilitaryCanteen_Tan: SRP_MilitaryCanteen_Base
+	{
+		scope=2;
+		displayName="Military Canteen - Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co_Tan.paa"
+		};		
+	};
+	class SRP_MilitaryCanteen_Black: SRP_MilitaryCanteen_Base
+	{
+		scope=2;
+		displayName="Military Canteen - Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co_Black.paa"
+		};		
+	};
+	class SRP_MilitaryCanteen_Snow: SRP_MilitaryCanteen_Base
+	{
+		scope=2;
+		displayName="Military Canteen - Snow";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co_Snow.paa"
+		};		
+	};
+	class SRP_MilitaryCanteen_Multicam: SRP_MilitaryCanteen_Base
+	{
+		scope=2;
+		displayName="Military Canteen - Multicam";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co_MC.paa"
+		};		
+	};
+	class SRP_MilitaryCanteen_Multicam_Tropic: SRP_MilitaryCanteen_Base
+	{
+		scope=2;
+		displayName="Military Canteen - Multicam Tropic";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co_MC_Tropic.paa"
+		};		
+	};
+	class SRP_MilitaryCanteen_Multicam_Black: SRP_MilitaryCanteen_Base
+	{
+		scope=2;
+		displayName="Military Canteen - Multicam Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drinks\data\canteen_co_MC_Black.paa"
+		};		
 	};
 };
