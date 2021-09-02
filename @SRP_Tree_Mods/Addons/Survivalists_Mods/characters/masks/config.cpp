@@ -317,4 +317,290 @@ class CfgVehicles
 			};
 		};
   };
+
+  // ------------------------------------------ MVS Redux
+	class SRP_S10Respirator_Colorbase: GP5GasMask
+	{
+		scope=0;
+		displayName="S10 Respirator";
+		descriptionShort="The S10 NBC Respirator is a military gas mask that was formerly used within all branches of the British Armed Forces. Following the mask's replacement by the General Service Respirator in 2011, the S10 is now widely available to the public on the army surplus market.";
+		model="Survivalists_Mods\characters\masks\srps10gasmask_g.p3d";
+    color="base";
+		itemSize[]={2,3};
+		attachments[]=
+    {
+      "GasMaskFilter"
+    };
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\masks\data\s10_co.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\masks\data\s10.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\characters\masks\data\s10.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\masks\data\s10.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\masks\data\s10_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\masks\data\s10_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\masks\data\s10_destruct.rvmat"}}
+          };
+				};
+			};
+		};			
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srps10gasmask.p3d";
+			female="Survivalists_Mods\characters\masks\srps10gasmask.p3d";
+		};
+	};
+
+	class SRP_S10Respirator_FS: SRP_S10Respirator_Colorbase
+	{
+		scope=2;
+		displayName="S10 Respirator - The 4th Survivor";
+    color="fs";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\s10_co_FS.paa"
+		};
+	};
+	class SRP_S10Respirator_OD: SRP_S10Respirator_Colorbase
+	{
+		scope=2;
+		displayName="S10 Respirator - OD";
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\s10_co_OD.paa"
+		};
+	};
+	class SRP_S10Respirator_Tan: SRP_S10Respirator_Colorbase
+	{
+		scope=2;
+		displayName="S10 Respirator - Tan";
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\s10_co_Tan.paa"
+		};
+	};
+	class SRP_S10Respirator_Black: SRP_S10Respirator_Colorbase
+	{
+		scope=2;
+		displayName="S10 Respirator - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\s10_co.paa"
+		};
+	};
+	class SRP_S10Respirator_Snow: SRP_S10Respirator_Colorbase
+	{
+		scope=2;
+		displayName="S10 Respirator - Snow";
+    color="snow";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\s10_co_Snow.paa"
+		};
+	};
+	
+	class SRP_PMK2Respirator_Colorbase: GP5GasMask
+	{
+		scope=0;
+		displayName="PMK2 Respirator";
+		descriptionShort="The PMK gas mask represents a family of gas masks used by the Soviet Armed Forces, and later by the Armed Forces of the Russian Federation.";
+		model="Survivalists_Mods\characters\masks\srppmk2_g.p3d";
+    color="base";
+		itemSize[]={2,3};
+		hiddenSelections[]=
+    {
+      "zbytek",
+      "filter",
+      "lens"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srppmk2_co.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"			
+		};
+    hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\characters\masks\data\srppmk2.rvmat",
+			"Survivalists_Mods\characters\masks\data\srppmk2filter.rvmat",
+			"Survivalists_Mods\characters\masks\data\srppmk2.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\characters\masks\data\srppmk2.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\masks\data\srppmk2.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\masks\data\srppmk2_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\masks\data\srppmk2_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\masks\data\srppmk2_destruct.rvmat"}}
+          };
+				};
+			};
+		};		
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srppmk2.p3d";
+			female="Survivalists_Mods\characters\masks\srppmk2.p3d";
+		};
+	};
+	class SRP_PMK2Respirator_Black: SRP_PMK2Respirator_Colorbase
+	{
+		scope=2;
+		displayName="PMK-2 Respirator - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srppmk2_co.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"
+		};
+	};
+	class SRP_PMK2Respirator_Tan: SRP_PMK2Respirator_Colorbase
+	{
+		scope=2;
+		displayName="PMK-2 Respirator - Tan";
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srppmk2_co_Tan.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"	
+		};
+	};
+	class SRP_PMK2Respirator_OD: SRP_PMK2Respirator_Colorbase
+	{
+		scope=2;
+		displayName="PMK-2 Respirator - OD";
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srppmk2_co_OD.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"	
+		};
+	};
+	class SRP_PMK2Respirator_Snow: SRP_PMK2Respirator_Colorbase
+	{
+		scope=2;
+		displayName="PMK-2 Respirator - Snow";
+    color="snow";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srppmk2_co_Snow.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
+			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"	
+		};
+	};
+	
+	class SRP_M50Respirator_Colorbase: GP5GasMask
+	{
+		scope=0;
+		displayName="M50 Respirator";
+		descriptionShort="The M50 series protective mask consisting of the M50 and M51 variants, officially known as the Joint Service General Protective Mask (JSGPM) is a lightweight, protective mask system consisting of the mask, a mask carrier, and additional accessories";
+		model="Survivalists_Mods\characters\masks\srp_m50gasmask_g.p3d";
+    color="base";
+		itemSize[]={2,3};
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\masks\data\srp_m50gasmask_co.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\masks\data\srp_m50gasmask.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\characters\masks\data\srp_m50gasmask.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\masks\data\srp_m50gasmask.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\masks\data\srp_m50gasmask_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\masks\data\srp_m50gasmask_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\masks\data\srp_m50gasmask_destruct.rvmat"}}
+          };
+				};
+			};
+		};		
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_m50gasmask.p3d";
+			female="Survivalists_Mods\characters\masks\srp_m50gasmask.p3d";
+		};
+	};
+	class SRP_M50Respirator_OD: SRP_M50Respirator_Colorbase
+	{
+		scope=2;
+		displayName="M50 Respirator - OD";
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co_OD.paa",
+		};
+	};
+	class SRP_M50Respirator_Tan: SRP_M50Respirator_Colorbase
+	{
+		scope=2;
+		displayName="M50 Respirator - Tan";
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co_Tan.paa"
+		};
+	};
+	class SRP_M50Respirator_Black: SRP_M50Respirator_Colorbase
+	{
+		scope=2;
+		displayName="M50 Respirator - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co.paa"
+		};
+	};
+	class SRP_M50Respirator_Snow: SRP_M50Respirator_Colorbase
+	{
+		scope=2;
+		displayName="M50 Respirator - Snow";
+    color="snow";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co_Snow.paa"
+		};
+	};
+
 };
