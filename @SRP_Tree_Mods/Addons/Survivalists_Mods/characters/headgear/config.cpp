@@ -25,6 +25,7 @@ class CfgVehicles
   class PrisonerCap;
   class Clothing;
   class BallisticHelmet_ColorBase;
+  class Mich2001Helmet;
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class DarkMotoHelmet_ColorBase: Clothing
@@ -243,7 +244,6 @@ class CfgVehicles
 			};
 		};
   }
-
 
   // BASE GAME RETEXTURES
 

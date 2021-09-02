@@ -198,6 +198,8 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 # Attributions
 
+DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.com/WCSarris/modular-vest-system. Given express consent for repacking and modifying.
+
 "potbelly stove" (https://skfb.ly/68UNF) by Yksnawel is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
 "Wooden plate" (https://skfb.ly/6RH9Q) by quedlin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -347,6 +349,8 @@ Here are a few custom belts pulled from various sources. See the attributions be
 "Free Palisade logs" (https://skfb.ly/o6AEP) by Joan LP is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Toolbox" (https://skfb.ly/JIC8) by beyondmatter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Mandalorion Helmet" (https://skfb.ly/6YDUX) by JeroenBuyck is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Wishlist
 
