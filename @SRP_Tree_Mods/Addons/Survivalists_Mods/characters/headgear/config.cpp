@@ -1152,4 +1152,89 @@ class CfgVehicles
 		};
 	};
 	
+	class SRP_Shroud_Colorbase: BalaclavaMask_ColorBase
+	{
+		scope=0;
+		displayName="Head Shroud";
+		descriptionShort="A mask used for concealing one's identity.";
+		itemSize[]={3,2};
+		rotationFlags=0;
+		model="Survivalists_Mods\characters\headgear\srp_shroud_g.p3d";
+    color="base";
+		inventorySlot[]=
+    {
+      "Mask"
+    };
+		headSelectionsToHide[]=
+    {
+      "Clipping_Gasmask",
+      "Clipping_Balaclava_3holes"
+    };
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_shroud_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_shroud.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\characters\headgear\data\srp_shroud.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\headgear\data\srp_shroud.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\headgear\data\srp_shroud_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\headgear\data\srp_shroud_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\headgear\data\srp_shroud_destruct.rvmat"}}
+          };
+				};
+			};
+		};		
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_shroud.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_shroud.p3d";
+		};
+	};
+	class SRP_Shroud_OD: SRP_Shroud_Colorbase
+	{
+		scope=2;
+		displayName="Head Shroud - OD";
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_shroud_co.paa"
+		};
+	};
+	class SRP_Shroud_Tan: SRP_Shroud_Colorbase
+	{
+		scope=2;
+		displayName="Head Shroud - Tan";
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_shroud_co_Tan.paa"
+		};
+	};
+	class SRP_Shroud_Black: SRP_Shroud_Colorbase
+	{
+		scope=2;
+		displayName="Head Shroud - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_shroud_co_Black.paa"
+		};
+	};
+
 };
