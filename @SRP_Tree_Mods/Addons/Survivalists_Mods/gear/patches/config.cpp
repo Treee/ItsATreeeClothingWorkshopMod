@@ -18,6 +18,8 @@ class CfgVehicles
 	class Clothing: Clothing_Base	{};
 
   // -------------------------- CUSTOM STUFF
+
+  //------------------------------ FLAG PPATCHES
 	class SRP_PatchFlag_ColorBase: Clothing
 	{
 		scope=0;
@@ -1560,7 +1562,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	
 	class SRP_PatchFlag_Rwanda: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
@@ -2142,5 +2143,440 @@ class CfgVehicles
 		};
 	};
 
+  //---------------------------- LOGO PATCHES
+	class SRP_PatchLogo_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Identifier Patch";
+		descriptionShort="MVS Identifier Patch - comes in a variety of patterns and emblems";
+		model="Survivalists_Mods\gear\patches\srp_patchlogo.p3d";
+		itemSize[]={2,1};
+		weight=0;
+    color="base";
+		inventorySlot[]=
+    {
+      "Armband",
+      "patch_01",
+      "patch_02",
+      "patch_03",
+      "patch_04"
+    };
+		hiddenSelections[]=
+    {
+      "zbytek",
+      "armband"
+    };    
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_a10.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\patches\data\logo\srp_patchlogo.rvmat",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+            healthLevels[]=
+            {
+              {1.0,{"Survivalists_Mods\gear\patches\data\logo\srp_patchlogo.rvmat","Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"}},
+              {0.7,{"Survivalists_Mods\gear\patches\data\logo\srp_patchlogo.rvmat","Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"}},
+              {0.5,{"Survivalists_Mods\gear\patches\datalogo\srp_patchlogo_damage.rvmat","Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_damage.rvmat"}},
+              {0.3,{"Survivalists_Mods\gear\patches\datalogo\srp_patchlogo_damage.rvmat","Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_damage.rvmat"}},
+              {0.0,{"Survivalists_Mods\gear\patches\datalogo\srp_patchlogo_destruct.rvmat","Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_destruct.rvmat"}}
+            };
+				};
+			};
+		};		
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\gear\patches\srp_patcharmbandlogo.p3d";
+			female="Survivalists_Mods\gear\patches\srp_patcharmbandlogo.p3d";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpCourierBag_Light_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpCourierBag_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+	class SRP_PatchLogo_01: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Squad Leader";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_sl.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_02: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Team Leader";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_tl.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_03: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Machinegunner";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_gnr.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_04: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Medic";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_med.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_05: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Sniper";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_snpr.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_06: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Rifleman";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_rfl.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_07: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - US";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_US.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_08: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - UK";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_UK.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_09: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - AUS";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_AUS.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_10: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - US";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_US_IR.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_11: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - UK";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_UK_IR.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_12: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - AUS";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_AUS_IR.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_13: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Rotten's Raiders";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_cobra.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_14: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - A10 Warthog";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_a10.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_15: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - EOD";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_EOD.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_16: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - F*ck Sh*t Up";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_FSU.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_17: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - No F*cks Given";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_fcks.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_18: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - I'm Too Old for This Sh*t";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_old.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_19: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Weyland-Yutani Corp";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_Weyland.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_20: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - The Warriors";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_warriors.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_21: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Canada";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_CAN.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_22: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Canada";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_CAN_IR.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_23: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - OBEY";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_obey.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_24: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Blackwater";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_Blackwater.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_25: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Lagoon Trade & Courier Services";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_lagoon.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_26: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - HCLI";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_HCLI.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_27: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Boogaloo";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_boogaloo.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_28: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - UN";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_UN.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_29: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Umbrella";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_Umbrella.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_30: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Umbrella";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_USS.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_31: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Romania";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_ROM.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_32: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Sweden";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_SWE.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_33: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - Anarchy";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_AN.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_34: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - RTO";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_RTO.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa",
+			
+		};
+	};
+	class SRP_PatchLogo_35: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - This is the Way";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_warrior.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+	class SRP_PatchLogo_36: SRP_PatchLogo_ColorBase
+	{
+		scope=2;
+		displayName="Identifier Patch - ADMIN";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\logo\patch_admin.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
 
 };
