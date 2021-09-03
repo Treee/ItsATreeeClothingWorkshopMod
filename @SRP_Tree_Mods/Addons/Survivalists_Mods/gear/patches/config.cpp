@@ -2554,8 +2554,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\logo\patch_RTO.paa",
-			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa",
-			
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa",			
 		};
 	};
 	class SRP_PatchLogo_35: SRP_PatchLogo_ColorBase
