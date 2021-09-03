@@ -9,6 +9,7 @@ class CfgPatches
 		{
 			"DZ_Characters",
       "DZ_Characters_Headgear",
+      "DZ_Characters_Masks",
       "Survivalists_Mods"
 		};
 	};

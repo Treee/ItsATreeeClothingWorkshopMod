@@ -20,6 +20,7 @@ class CfgVehicles
   class HockeyMask;
   class GP5GasMask_Filter;
   class Clothing;
+  class BalaclavaMask_ColorBase;
 
   //------------------------------------- BASE GAME OVERRIDE
 	class GasMask: Clothing
@@ -601,6 +602,276 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co_Snow.paa"
 		};
+	};  
+
+  class SRP_FacialHairGoatee_Colorbase: BalaclavaMask_ColorBase
+	{
+		scope=0;
+		displayName="Goatee";
+		descriptionShort="Sinister looking facial hair.";
+		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
+		rotationFlags=0;
+		itemSize[]={3,2};
+		inventorySlot[]=
+    {
+      "Mask"
+    };
+		headSelectionsToHide[]={};
+		hiddenSelections[]=
+    {
+      "ground",
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co.paa",
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit.rvmat",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee.rvmat",
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_facialhairgoatee.p3d";
+			female="Survivalists_Mods\characters\masks\srp_facialhairgoatee.p3d";
+		};
+	};
+	class SRP_FacialHairGoatee_Brown: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - Brown";
+    color="brown";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co.paa",
+		};
+	};
+	class SRP_FacialHairGoatee_LightBrown: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - Light Brown";
+    color="lightbrown";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co_LightBrown.paa",
+		};
+	};
+	class SRP_FacialHairGoatee_Black: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co_Black.paa",
+		};
+	};
+	class SRP_FacialHairGoatee_Blonde: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - Blonde";
+    color="blonde";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co_Blonde.paa",
+		};
+	};
+	class SRP_FacialHairGoatee_White: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - White";
+    color="white";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co_White.paa",
+		};
 	};
 
+  class SRP_FacialHairBeard_Colorbase: BalaclavaMask_ColorBase
+	{
+		scope=0;
+		displayName="Full Beard";
+		descriptionShort="A full manly beard.";
+		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
+		rotationFlags=0;
+		itemSize[]={3,2};
+		inventorySlot[]=
+    {
+      "Mask"
+    };
+		headSelectionsToHide[]={};
+		hiddenSelections[]=
+    {
+      "ground",
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co.paa",
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit.rvmat",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard.rvmat",
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_facialhairbeard.p3d";
+			female="Survivalists_Mods\characters\masks\srp_facialhairbeard.p3d";
+		};
+	};
+	class SRP_FacialHairBeard_Brown: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - Brown";
+    color="brown";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co.paa",
+		};
+	};
+	class SRP_FacialHairBeard_LightBrown: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - Light Brown";
+    color="lightbrown";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_LightBrown.paa",
+		};
+	};
+	class SRP_FacialHairBeard_Black: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_Black.paa",
+		};
+	};
+	class SRP_FacialHairBeard_Blonde: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - Blonde";
+    color="blonde";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_Blonde.paa",
+		};
+	};
+	class SRP_FacialHairBeard_White: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - White";
+    color="white";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_White.paa",
+		};
+  };
+
+  class SRP_FacialHairChops_Colorbase: BalaclavaMask_ColorBase
+	{
+		scope=0;
+		displayName="Beard Chops";
+		descriptionShort="A full manly beard.";
+		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
+		rotationFlags=0;
+		itemSize[]={3,2};
+		inventorySlot[]=
+    {
+      "Mask"
+    };
+		headSelectionsToHide[]={};
+		hiddenSelections[]=
+    {
+      "ground",
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co.paa",
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit.rvmat",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard.rvmat",
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_facialhairchops.p3d";
+			female="Survivalists_Mods\characters\masks\srp_facialhairchops.p3d";
+		};
+	};
+	class SRP_FacialHairChops_Brown: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - Brown";
+    color="brown";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co.paa",
+		};
+	};
+	class SRP_FacialHairChops_LightBrown: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - Light Brown";
+    color="lightbrown";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_LightBrown.paa",
+		};
+	};
+	class SRP_FacialHairChops_Black: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_Black.paa",
+		};
+	};
+	class SRP_FacialHairChops_Blonde: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - Blonde";
+    color="blonde";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_Blonde.paa",
+		};
+	};
+	class SRP_FacialHairChops_White: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - White";
+    color="white";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_White.paa",
+		};
+	};
+	
 };
