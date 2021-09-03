@@ -157,6 +157,42 @@ class SRP_MilitaryCaseLongBlue extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
 class SRP_BarricadeMetal extends SRP_Container_Base{};
 
+class SRP_ArmorStandBasic extends SRP_Container_Base
+{
+  override void EEItemAttached(EntityAI item, string slot_name)
+  {
+    super.EEItemAttached(item, slot_name);
+    ItemBase itemb = ItemBase.Cast( item );
+    int idx = itemb.GetHiddenSelectionIndex("personality");
+    if (idx > -1)
+    {
+        itemb.SetObjectTexture(idx, "");
+        itemb.SetObjectMaterial(idx, "");
+    }
+    UpdateShoulderProxyVisibility(item, slot_name);
+  }
+	void UpdateShoulderProxyVisibility(EntityAI item, string slot_name)
+	{
+		const int 						SIMPLE_SELECTION_MELEE_RIFLE = 0;
+		const int 						SIMPLE_SELECTION_MELEE_MELEE = 1;
+		const int 						SIMPLE_SELECTION_SHOULDER_RIFLE = 2;
+		const int 						SIMPLE_SELECTION_SHOULDER_MELEE = 3;
+		string slot = slot_name;
+		bool boo;
+		boo = item.IsWeapon();
+		if ( slot == "Melee" )
+		{
+			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_MELEE_RIFLE,boo);
+			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_MELEE_MELEE,!boo);
+		}
+		else if ( slot == "Shoulder" )
+		{
+			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_SHOULDER_RIFLE,boo);
+			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_SHOULDER_MELEE,!boo);
+		}
+	}
+};
+
 class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
 {
   protected override void UpdateVisualState()

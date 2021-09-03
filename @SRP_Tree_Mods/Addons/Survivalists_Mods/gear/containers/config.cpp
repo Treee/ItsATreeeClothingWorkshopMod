@@ -1876,6 +1876,126 @@ class CfgVehicles
     };
 	};
 
+  class SRP_ArmorStandBasic_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Basic Armor Stand Kit";
+		descriptionShort="A Basic Armor Stand Kit";
+	};
+
+  class SRP_ArmorStandBasic: Container_Base  // new
+	{
+		scope=2;
+		displayName="Basic Armor Stand";
+		descriptionShort="A makeshift stand to hold your gear";
+		model="Survivalists_Mods\gear\containers\srp_armorrackbasic.p3d";
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		quantityBar=1;
+		heavyItem=1;
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		allowOwnedCargoManipulation=1;
+		clothingType="male";
+		attachments[]=
+		{
+			"Head",
+			"Shoulder",
+			"Melee",
+			"Headgear",
+			"Mask",
+			"Eyewear",
+			"Gloves",
+			"Armband",
+			"Vest",
+			"Body",
+			"Back",
+			"Hips",
+			"Legs",
+			"Feet"
+		};
+		hiddenSelections[]=
+		{
+			"stand"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_armorrackbasic_co.paa"
+		};
+		simpleHiddenSelections[]=
+		{
+			"slot_melee_rifle",
+			"slot_melee_melee",
+			"slot_shoulder_rifle",
+			"slot_shoulder_melee"
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\containers\data\srp_armorrackbasic.rvmat"}},
+            {0.699,{"Survivalists_Mods\gear\containers\data\srp_armorrackbasic.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\containers\data\srp_armorrackbasic_damage.rvmat"}},
+            {0.301,{"Survivalists_Mods\gear\containers\data\srp_armorrackbasic_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\containers\data\srp_armorrackbasic_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=8;
+					};
+					class Blood
+					{
+						damage=8;
+					};
+					class Shock
+					{
+						damage=8;
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
   // modifying sneaky stashes
   class kitholders;
   class SneakySmallLogPile: kitholders

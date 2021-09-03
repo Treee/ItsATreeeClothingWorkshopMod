@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "Survivalists_Mods\characters\masks\data\srp_facialhairbeard_nohq.paa";
+	texture = "Survivalists_Mods\gear\containers\data\srp_armorrackbasic_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -61,7 +61,7 @@ class Stage5
 };
 class Stage6
 {
-	texture = "Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co.paa";
+	texture = "Survivalists_Mods\gear\containers\data\srp_armorrackbasic_co.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
