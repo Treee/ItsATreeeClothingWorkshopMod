@@ -26,6 +26,7 @@ class CfgVehicles
   class Clothing;
   class BallisticHelmet_ColorBase;
   class Mich2001Helmet;
+  class BalaclavaMask_ColorBase;
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class DarkMotoHelmet_ColorBase: Clothing
@@ -818,6 +819,232 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\gordeycap.paa"
 		};
 	};
+	
+	class SRP_FaceMaskSkull_Colorbase: BalaclavaMask_ColorBase
+	{
+		scope=0;
+		displayName="Face Mask";
+		descriptionShort="A mask used for concealing one's identity... spooky right?";
+		itemSize[]={3,2};
+		rotationFlags=0;
+		model="Survivalists_Mods\characters\headgear\srp_facemask_skullmask_g.p3d";
+    color="base";
+		inventorySlot[]=
+    {
+      "Mask"
+    };
+		headSelectionsToHide[]=
+    {
+      "Clipping_Gasmask",
+      "Clipping_Balaclava_3holes"
+    };
+		hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co.paa",
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_facemask.rvmat",
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\characters\headgear\data\srp_facemask.rvmat","Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\headgear\data\srp_facemask.rvmat","Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\headgear\data\srp_facemask_damage.rvmat","Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\headgear\data\srp_facemask_damage.rvmat","Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\headgear\data\srp_facemask_destruct.rvmat","Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_destruct.rvmat"}}
+          };
+				};
+			};
+		};		
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_facemask_skullmask.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_facemask_skullmask.p3d";
+		};
+	};
+	
+	class SRP_FaceMaskSkull_Wraith: SRP_FaceMaskSkull_Colorbase
+	{
+		scope=2;
+		displayName="Wraith Mask";
+    color="wraith";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co_Wraith.paa",
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
 
+  class SRP_FaceMaskSkull_Black: SRP_FaceMaskSkull_Colorbase
+	{
+		scope=2;
+		displayName="Black Face Mask";
+    color="black";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemaskskull_co_Black.paa",
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
 
+  class SRP_FaceMaskSkull_Snow: SRP_FaceMaskSkull_Colorbase
+	{
+		scope=2;
+		displayName="Snow Face Mask";
+    color="snow";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemaskskull_co_Snow.paa",
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
+
+  class SRP_FaceMaskSkull_OD: SRP_FaceMaskSkull_Colorbase
+	{
+		scope=2;
+		displayName="OD Face Mask";
+    color="od";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemaskskull_co_OD.paa",
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
+
+	class SRP_FaceMask_Colorbase: BalaclavaMask_ColorBase
+	{
+		scope=0;
+		displayName="Face Mask";
+		descriptionShort="A mask used for concealing one's identity... spooky right?";
+		itemSize[]={3,2};
+		rotationFlags=0;
+		model="Survivalists_Mods\characters\headgear\srp_facemask_g.p3d";
+    color="base";
+		inventorySlot[]=
+    {
+      "Mask"
+    };
+		headSelectionsToHide[]=
+    {
+      "Clipping_Gasmask",
+      "Clipping_Balaclava_3holes"
+    };
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_facemask.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\characters\headgear\data\srp_facemask.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\headgear\data\srp_facemask.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\headgear\data\srp_facemask_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\headgear\data\srp_facemask_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\headgear\data\srp_facemask_destruct.rvmat"}}
+          };
+				};
+			};
+		};		
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_facemask.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_facemask.p3d";
+		};
+	};
+	
+	class SRP_FaceMask_OD: SRP_FaceMask_Colorbase
+	{
+		scope=2;
+		displayName="Face Mask - OD";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co.paa",
+		};
+	};
+	class SRP_FaceMask_Tan: SRP_FaceMask_Colorbase
+	{
+		scope=2;
+		displayName="Face Mask - Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co_Tan.paa",
+		};
+	};
+	class SRP_FaceMask_Black: SRP_FaceMask_Colorbase
+	{
+		scope=2;
+		displayName="Face Mask - Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co_Black.paa",
+		};
+	};
+	class SRP_FaceMask_Snow: SRP_FaceMask_Colorbase
+	{
+		scope=2;
+		displayName="Face Mask - Snow";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co_Snow.paa",
+		};
+	};
+  class SRP_FaceMask_Wraith: SRP_FaceMask_Colorbase
+	{
+		scope=2;
+		displayName="Face Mask - Wraith";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co_Wraith.paa",
+		};
+	};
+	
 };
