@@ -65,7 +65,7 @@ class CfgVehicles
 					"SRP_CasePrep",
 					"SRP_AmmoPress"
 				};
-				icon="cat_common_cargo";
+				icon="set:dayz_inventory image:cat_common_cargo";
 			};
 			class Storage
 			{
@@ -78,7 +78,7 @@ class CfgVehicles
 					"CanisterGasoline",
 					"BP_gas_lamp"
 				};
-				icon="cat_common_cargo";
+				icon="set:dayz_inventory image:cat_common_cargo";
 			};
 		};
 		class DamageSystem
@@ -264,7 +264,7 @@ class CfgVehicles
 				{
 					"SRP_SewingMachine"
 				};
-				icon="cat_common_cargo";
+				icon="set:dayz_inventory image:cat_common_cargo";
 			};
 		};
 		class DamageSystem

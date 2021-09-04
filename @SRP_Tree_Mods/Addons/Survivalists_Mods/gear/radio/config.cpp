@@ -18,6 +18,7 @@ class CfgVehicles
   // base classes
   class PersonalRadio;
   class Cassette;
+  class Inventory_Base;
 
   // modded classes
 	class GGRadio_Radio_Base;
@@ -32,6 +33,19 @@ class CfgVehicles
 			"walkietalkie"
 		};
 	};
+
+  class ItemPDA: Inventory_Base
+  {
+		hiddenSelections[]=
+		{
+			"body"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"GearPDA\data\pda_co.paa",
+			"Survivalists_Mods\gear\radio\data\pda_on_co.paa"
+		};
+  };
 
   //-------------------------------------- BASE GAME OVERRIDE
 
