@@ -30,15 +30,22 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\shortstories\data\The_Whitefingered_Hag_of_Treepwood.ogg",1}
 		};
 	};
+  class SRPRadio_ShortStory_SkylarWolfe_HeavensGate_Shader1: SRPRadio_Cassette_ShortStory_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\shortstories\data\Storyteller_Series_Heavens_Gate.ogg",1}
+		};
+	};
 };
 
 class CfgSoundSets
 {
-	class SRPRadio_ShortStory_WhiteFingerHag_SoundSet1
+	class SRPRadio_ShortStory_HeavensGate_SoundSet1
 	{
 		soundShaders[]=
 		{
-			"SRPRadio_ShortStory_SkylarWolfe_WhiteFingerHag_Shader1"
+			"SRPRadio_ShortStory_SkylarWolfe_HeavensGate_Shader1"
 		};
 	};
 };

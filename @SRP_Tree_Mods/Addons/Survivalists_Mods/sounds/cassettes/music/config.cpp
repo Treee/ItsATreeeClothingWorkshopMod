@@ -156,6 +156,27 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Say_Something_Sung_by_Skylar_Wolfe.ogg",1}
 		};
 	};
+  class SRPRadio_SkylarWolfe_Yesterday_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Yesterday_sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_EarthAngel_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Earth_Angel_sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_ComeAndGetYourLove_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Come_and_Get_Your_Love_sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
   class SRPRadio_Pinkerton_TheShadow_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -326,6 +347,27 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"SRPRadio_SkylarWolfe_SaySomething_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_Yesterday_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_Yesterday_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_EarthAngel_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_EarthAngel_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_ComeAndGetYourLove_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_ComeAndGetYourLove_Shader1"
 		};
 	};
   class SRPRadio_Pinkerton_TheShadow_SoundSet1

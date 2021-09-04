@@ -421,8 +421,36 @@ class CfgVehicles
 			soundSet="SRPRadio_SkylarWolfe_SaySomething_SoundSet1";
 		};
 	};
-
-
+  class SRPRadio_CassetteTape_SkylarWolfe_Yesterday: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Yesterday";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_Yesterday_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_EarthAngel: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Earth Angel";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_EarthAngel_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_SkylarWolfe_ComeAndGetYourLove: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Come And Get Your Love";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_ComeAndGetYourLove_Shader1";
+		};
+	};  
   class SRPRadio_CassetteTape_Pinkerton_TheShadow: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
@@ -493,6 +521,16 @@ class CfgVehicles
 		class CfgCassette
 		{
 			soundSet="SRPRadio_MysteryTape2_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_MysteryTape_Mutant: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="A mysterious tape.";
+		descriptionShort="A mysterious tape worn from the test of time.";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_MysteryTape_Mutant_SoundSet1";
 		};
 	};
 
@@ -841,7 +879,6 @@ class CfgVehicles
 		{
 		};
 	};
-
   class SRPRadio_CassetteTape_ShortStory_WhiteFingerHag: SRPRadio_CassetteTape_ShortStory_Base
 	{
 		scope=2;
@@ -850,6 +887,16 @@ class CfgVehicles
 		class CfgCassette
 		{
 			soundSet="SRPRadio_ShortStory_WhiteFingerHag_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_ShortStory_HeavensGate: SRPRadio_CassetteTape_ShortStory_Base
+	{
+		scope=2;
+		displayName="Heavens Gate";
+		descriptionShort="Gather round the fire and listen to a spooky story.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ShortStory_HeavensGate_SoundSet1";
 		};
 	};
 };
