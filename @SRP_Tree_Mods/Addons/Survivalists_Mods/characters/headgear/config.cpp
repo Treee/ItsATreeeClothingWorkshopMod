@@ -942,6 +942,22 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_co.paa"
 		};
 	};
+  class SRP_FaceMaskSkull_Tan: SRP_FaceMaskSkull_ColorBase
+	{
+		scope=2;
+		displayName="Tan Face Mask";
+    color="tan";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_co_Tan.paa",
+			"Survivalists_Mods\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
 
 	class SRP_FaceMask_ColorBase: BalaclavaMask_ColorBase
 	{
