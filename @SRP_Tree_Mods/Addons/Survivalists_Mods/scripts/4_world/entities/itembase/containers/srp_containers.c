@@ -157,6 +157,9 @@ class SRP_MilitaryCaseLongBlue extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
 class SRP_BarricadeMetal extends SRP_Container_Base{};
 
+// buildings
+class SRP_Carpentry_RussianHouse extends SRP_Container_Base{};
+
 class SRP_ArmorStandBasic extends SRP_Container_Base
 {
   override void EEItemAttached(EntityAI item, string slot_name)

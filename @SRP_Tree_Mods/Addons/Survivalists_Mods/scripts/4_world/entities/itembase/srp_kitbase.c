@@ -158,6 +158,13 @@ class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Kit extends SRP_KitBase{};
 
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase{};
+class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
+
+// Building Kits
+class SRP_Carpentry_RussianHouse_Kit extends SRP_KitBase{};
+
+
+
 
 // non craftable kits
 class SRP_Fridge_Kit extends SRP_KitBase{};
@@ -181,5 +188,5 @@ class SRP_Carpet_Kit extends SRP_KitBase{};
 class SRP_CarpetRug_Kit extends SRP_KitBase{};
 class SRP_MedicalCurtains_Kit extends SRP_KitBase{};
 class SRP_BarricadeMetal_Kit extends SRP_KitBase{};
-class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
+
 
