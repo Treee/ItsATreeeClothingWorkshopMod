@@ -162,8 +162,7 @@ class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
 
 // Building Kits
 class SRP_Carpentry_RussianHouse_Kit extends SRP_KitBase{};
-
-
+class SRP_Carpentry_RussianHouseDoor_Kit extends SRP_KitBase{};
 
 
 // non craftable kits
