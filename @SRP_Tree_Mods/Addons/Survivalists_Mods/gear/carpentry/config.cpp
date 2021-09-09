@@ -95,6 +95,21 @@ class CfgVehicles
 		descriptionShort="An out house.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenouthouse.p3d";
 	};
+  
+  class SRP_Carpentry_WoodenBarn_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wooden Barn Kit";
+		descriptionShort="The kit for an barn";
+	};
+
+  class SRP_Carpentry_WoodenBarn: SRP_PrefabHouse_Base  // new
+	{
+		scope=1;
+		displayName="Wooden Barn";
+		descriptionShort="An barn.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenbarn.p3d";
+	};
 
   // ---------------------DOORS
   class SRP_Carpentry_HouseDoor: Fence  // new
