@@ -1,7 +1,8 @@
-class SRP_Carpentry_RussianHouseDoor extends Fence {
+// The buildings are house no destructs which do not need a .c file
+class SRP_Carpentry_HouseDoor extends Fence {
   override string GetConstructionKitType()
 	{
-		return "SRP_Carpentry_RussianHouseDoor_Kit";
+		return "";
 	}
 
   // this forces the base state to be constructed after the store loads.
@@ -54,3 +55,19 @@ class SRP_Carpentry_RussianHouseDoor extends Fence {
 		return true;
 	}
 };
+
+class SRP_Carpentry_RussianHouseDoor extends SRP_Carpentry_HouseDoor
+{
+  override string GetConstructionKitType()
+	{
+		return "SRP_Carpentry_RussianHouseDoor_Kit";
+	}
+}
+
+class SRP_Carpentry_RussianHouse1Door extends SRP_Carpentry_HouseDoor
+{
+  override string GetConstructionKitType()
+	{
+		return "SRP_Carpentry_RussianHouse1Door_Kit";
+	}
+}

@@ -17,19 +17,15 @@ class CfgPatches
 class CfgVehicles
 {
   class SRP_KitBase;
-  class Inventory_Base;
+  class HouseNoDestruct;
   class Fence;
 
-  class SRP_Carpentry_RussianHouse_Kit: SRP_KitBase  // new
-	{
-		scope=2;
-		displayName="Russian House Kit";
-		descriptionShort="The kit for a house";
-	};
+  //------------------------------ BASE BUILDING
 
-  class SRP_Carpentry_RussianHouse: Inventory_Base  // new
+  // ---------------------PRE FABS
+  class SRP_PrefabHouse_Base: HouseNoDestruct  // new
 	{
-		scope=2;
+		scope=0;
 		displayName="Russian House";
 		descriptionShort="A house.";
 		model="Survivalists_Mods\gear\carpentry\srp_russianhouse.p3d";
@@ -38,19 +34,43 @@ class CfgVehicles
 		itemSize[]={15,10};
 		physLayer="item_large";
 		rotationFlags=2;
-    minPlacingDist=5;
+    minPlacingDist=2;
 	};
 
-  class SRP_Carpentry_RussianHouseDoor_Kit: SRP_KitBase  // new
+  class SRP_Carpentry_RussianHouse_Kit: SRP_KitBase  // new
 	{
 		scope=2;
-		displayName="Russian House Door Kit";
-		descriptionShort="The kit for a door";
+		displayName="Russian House Kit";
+		descriptionShort="The kit for a house";
 	};
 
-  class SRP_Carpentry_RussianHouseDoor: Fence  // new
+  class SRP_Carpentry_RussianHouse: SRP_PrefabHouse_Base  // new
+	{
+		scope=1;
+		displayName="Russian House";
+		descriptionShort="A house.";
+		model="Survivalists_Mods\gear\carpentry\srp_russianhouse.p3d";
+	};
+
+  class SRP_Carpentry_RussianHouse1_Kit: SRP_KitBase  // new
 	{
 		scope=2;
+		displayName="Russian House Kit - Variant 1";
+		descriptionShort="The kit for a house";
+	};
+
+  class SRP_Carpentry_RussianHouse1: SRP_PrefabHouse_Base  // new
+	{
+		scope=1;
+		displayName="Russian House";
+		descriptionShort="A house.";
+		model="Survivalists_Mods\gear\carpentry\srp_russianhouse1.p3d";
+	};
+
+  // ---------------------DOORS
+  class SRP_Carpentry_HouseDoor: Fence  // new
+	{
+		scope=0;
 		displayName="Door";
 		descriptionShort="A door.";
 		model="Survivalists_Mods\gear\carpentry\srp_russianhousedoor.p3d";
@@ -176,6 +196,33 @@ class CfgVehicles
 		};
 	};
 
-  //------------------------------ BASE BUILDING
+  class SRP_Carpentry_RussianHouseDoor_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Russian House Door Kit";
+		descriptionShort="The kit for a door";
+	};
 
+  class SRP_Carpentry_RussianHouseDoor: SRP_Carpentry_HouseDoor  // new
+	{
+		scope=2;
+		displayName="Door";
+		descriptionShort="A door.";
+		model="Survivalists_Mods\gear\carpentry\srp_russianhousedoor.p3d";
+	};
+
+  class SRP_Carpentry_RussianHouse1Door_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Russian House Door Kit - Variant 1";
+		descriptionShort="The kit for a door";
+	};
+
+  class SRP_Carpentry_RussianHouse1Door: SRP_Carpentry_HouseDoor  // new
+	{
+		scope=2;
+		displayName="Door";
+		descriptionShort="A door.";
+		model="Survivalists_Mods\gear\carpentry\srp_russianhouse1door.p3d";
+	};
 };

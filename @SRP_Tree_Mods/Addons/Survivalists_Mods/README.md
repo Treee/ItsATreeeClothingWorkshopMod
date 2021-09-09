@@ -352,6 +352,10 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 "Old Russian house" (https://skfb.ly/6QVCC) by Yury Misiyuk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Old Russian house" (https://skfb.ly/6QSsZ) by Yury Misiyuk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Post-Apocalyptic | House | Dirty | Old | Wooden" (https://skfb.ly/oozrY) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
