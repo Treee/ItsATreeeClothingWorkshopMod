@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\gear\carpentry\data\srp_russianhouseroof_nohq.paa";
+	texture="Survivalists_Mods\gear\carpentry\data\srp_woodenouthouseseat_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
+	texture="Survivalists_Mods\gear\carpentry\data\srp_woodenouthouseseat_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-  texture="Survivalists_Mods\gear\carpentry\data\srp_russianhouseroof_smdi.paa";
+  texture="#(ai,16,2,2)fresnel(0.71,0.6)";
 	uvSource="tex";
 	class uvTransform
 	{

@@ -281,5 +281,4 @@ class SRP_WoodenBox_Square extends SRP_Openable_Container
     return true;
   }
 };
-
 class SRP_MedicalCurtains extends SRP_Openable_Container{};

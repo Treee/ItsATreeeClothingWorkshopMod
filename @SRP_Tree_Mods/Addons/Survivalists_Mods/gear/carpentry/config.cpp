@@ -19,7 +19,6 @@ class CfgVehicles
   class SRP_KitBase;
   class HouseNoDestruct;
   class Fence;
-
   //------------------------------ BASE BUILDING
 
   // ---------------------PRE FABS
@@ -65,6 +64,36 @@ class CfgVehicles
 		displayName="Russian House";
 		descriptionShort="A house.";
 		model="Survivalists_Mods\gear\carpentry\srp_russianhouse1.p3d";
+	};
+
+  class SRP_Carpentry_WoodenHouseSingleRoom_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wooden House Kit - Single Room";
+		descriptionShort="The kit for a house";
+	};
+
+  class SRP_Carpentry_WoodenHouseSingleRoom: SRP_PrefabHouse_Base  // new
+	{
+		scope=1;
+		displayName="Wooden House";
+		descriptionShort="A house.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenhousesingleroom.p3d";
+	};
+
+  class SRP_Carpentry_WoodenHouseOuthouse_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wooden Out House Kit";
+		descriptionShort="The kit for an out house";
+	};
+
+  class SRP_Carpentry_WoodenHouseOuthouse: SRP_PrefabHouse_Base  // new
+	{
+		scope=1;
+		displayName="Wooden Out House";
+		descriptionShort="An out house.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenouthouse.p3d";
 	};
 
   // ---------------------DOORS

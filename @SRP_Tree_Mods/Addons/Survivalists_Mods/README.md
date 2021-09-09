@@ -354,6 +354,12 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 "Old Russian house" (https://skfb.ly/6QSsZ) by Yury Misiyuk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Wooden house" (https://skfb.ly/6TSPA) by PamPo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Rural Toilet" (https://skfb.ly/6QYJ9) by shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Farm Cow Barn" (https://skfb.ly/6pqJZ) by BytesCrafter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 "Post-Apocalyptic | House | Dirty | Old | Wooden" (https://skfb.ly/oozrY) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Wishlist
