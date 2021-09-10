@@ -71,3 +71,12 @@ class SRP_Carpentry_RussianHouse1Door extends SRP_Carpentry_HouseDoor
 		return "SRP_Carpentry_RussianHouse1Door_Kit";
 	}
 }
+
+
+class SRP_Carpentry_WoodenShedDoor extends SRP_Carpentry_HouseDoor
+{
+  override string GetConstructionKitType()
+	{
+		return "SRP_Carpentry_WoodenShedDoor_Kit";
+	}
+}

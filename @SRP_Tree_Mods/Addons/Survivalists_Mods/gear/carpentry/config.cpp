@@ -126,6 +126,21 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\carpentry\srp_woodenshanty.p3d";
 	};
 
+  class SRP_Carpentry_WoodenShed_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wooden Shed Kit";
+		descriptionShort="The kit for a Shed";
+	};
+
+  class SRP_Carpentry_WoodenShed: SRP_PrefabHouse_Base  // new
+	{
+		scope=1;
+		displayName="Wooden Shed";
+		descriptionShort="A Shed.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenshed.p3d";
+	};
+  
   // ---------------------DOORS
   class SRP_Carpentry_HouseDoor: Fence  // new
 	{
@@ -283,5 +298,20 @@ class CfgVehicles
 		displayName="Door";
 		descriptionShort="A door.";
 		model="Survivalists_Mods\gear\carpentry\srp_russianhouse1door.p3d";
+	};
+
+  class SRP_Carpentry_WoodenShedDoor_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wooden Shed Door Kit";
+		descriptionShort="The kit for a door";
+	};
+
+  class SRP_Carpentry_WoodenShedDoor: SRP_Carpentry_HouseDoor  // new
+	{
+		scope=2;
+		displayName="Door";
+		descriptionShort="A door.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodensheddoor.p3d";
 	};
 };
