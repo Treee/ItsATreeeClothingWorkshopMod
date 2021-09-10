@@ -163,6 +163,7 @@ class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
 // Building Kits
 class SRP_Carpentry_WoodenHouseOuthouse_Kit extends SRP_KitBase{};
 class SRP_Carpentry_WoodenBarn_Kit extends SRP_KitBase{};
+class SRP_Carpentry_WoodenShanty_Kit extends SRP_KitBase{};
 class SRP_Carpentry_RussianHouse_Kit extends SRP_KitBase{};
 class SRP_Carpentry_RussianHouse1_Kit extends SRP_KitBase{};
 class SRP_Carpentry_WoodenHouseSingleRoom_Kit extends SRP_KitBase{};

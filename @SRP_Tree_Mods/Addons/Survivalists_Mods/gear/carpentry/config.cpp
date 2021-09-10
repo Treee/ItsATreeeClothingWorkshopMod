@@ -100,15 +100,30 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Barn Kit";
-		descriptionShort="The kit for an barn";
+		descriptionShort="The kit for a barn";
 	};
 
   class SRP_Carpentry_WoodenBarn: SRP_PrefabHouse_Base  // new
 	{
 		scope=1;
 		displayName="Wooden Barn";
-		descriptionShort="An barn.";
+		descriptionShort="A barn.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenbarn.p3d";
+	};
+
+  class SRP_Carpentry_WoodenShanty_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wooden Shanty Kit";
+		descriptionShort="The kit for a shanty";
+	};
+
+  class SRP_Carpentry_WoodenShanty: SRP_PrefabHouse_Base  // new
+	{
+		scope=1;
+		displayName="Wooden Shanty";
+		descriptionShort="A shanty.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenshanty.p3d";
 	};
 
   // ---------------------DOORS
