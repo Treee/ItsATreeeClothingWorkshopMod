@@ -2148,7 +2148,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Identifier Patch";
-		descriptionShort="MVS Identifier Patch - comes in a variety of patterns and emblems";
+		descriptionShort="Identifier Patch - comes in a variety of patterns and emblems";
 		model="Survivalists_Mods\gear\patches\srp_patchlogo.p3d";
 		itemSize[]={2,1};
 		weight=0;
