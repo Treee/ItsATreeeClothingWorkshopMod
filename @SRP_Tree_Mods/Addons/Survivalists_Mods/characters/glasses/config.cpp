@@ -17,7 +17,7 @@ class CfgPatches
 class CfgVehicles
 {
   class NVGoggles;
-
+  class AviatorGlasses;
   // ------------------------------ Custom Stuff
 
   class SRP_NVGoggles_Default: NVGoggles
@@ -58,4 +58,17 @@ class CfgVehicles
 		};
 	};
 
+
+  class SRP_WeldingGoggles: AviatorGlasses
+	{
+		scope=2;
+		displayName="Welding Goggles";
+		descriptionShort="Fancy Goggles used by a welder.";
+		model="Survivalists_Mods\characters\glasses\srp_weldinggoggles_g.p3d";
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\glasses\srp_weldinggoggles_m.p3d";
+			female="Survivalists_Mods\characters\glasses\srp_weldinggoggles_m.p3d";
+		};
+	};
 };
