@@ -2,13 +2,13 @@ ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={0.1,0.14,0.14,1};
+specular[]={0.02,0.02,0.02,1};
 specularPower=250;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="SRP_Tree_Mods\gear\labequipment\data\geigercounter_nohq.paa";
+	texture="Survivalists_Mods\gear\medical\data\geigercounter_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	texture="dz\characters\data\generic_destruct_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="SRP_Tree_Mods\gear\labequipment\data\geigercounter_as.paa";
+	texture="Survivalists_Mods\gear\medical\data\geigercounter_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="SRP_Tree_Mods\gear\labequipment\data\geigercounter_smdi.paa";
+	texture="Survivalists_Mods\gear\medical\data\geigercounter_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

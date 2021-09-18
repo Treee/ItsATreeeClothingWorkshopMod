@@ -103,6 +103,11 @@ class SRP_GiftBoxMedium extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxLarge extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxLetter extends SRP_DeployableContainer_Base{};
 
+class SRP_LabEquipment_Projector extends SRP_DeployableContainer_Base{};
+class SRP_LabEquipment_Tuner extends SRP_DeployableContainer_Base{};
+class SRP_LabEquipment_Oscilliscope extends SRP_DeployableContainer_Base{};
+class SRP_LabEquipment_GeigerCounter extends SRP_DeployableContainer_Base{};
+
 
 // These are containers that cannot be put in your hands and need to be dismantled to re-place
 class SRP_Container_Base extends DeployableContainer_Base

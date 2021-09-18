@@ -340,6 +340,156 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_GeigerCounter: Inventory_Base
+	{
+    scope=2;
+    displayName="Geiger Counter";
+    descriptionShort="3.6 roentgen not great, not terrible. Used for measuring radiation.";
+		model="Survivalists_Mods\gear\medical\geigercounter.p3d";
+    weight=30;
+		varTemperatureMax=100;
+    itemSize[]={2,3};
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= {
+      "Survivalists_Mods\gear\medical\data\geigercounter_ca.paa"
+		};
+		hiddenSelectionsMaterials[]= {
+			"Survivalists_Mods\gear\medical\data\geigercounter.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Mods\gear\medical\data\geigercounter.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\medical\data\geigercounter.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\medical\data\geigercounter_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\medical\data\geigercounter_damage.rvmat"}},
+            {0,{"Survivalists_Mods\gear\medical\data\geigercounter_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
+  class SRP_LabEquipment_Base: Inventory_Base
+	{
+    scope=0;
+    displayName="Base Lab Equipment (Do not spawn)";
+    descriptionShort="Do not spawn me";
+    weight=30;
+		varTemperatureMax=100;
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= {
+      "Survivalists_Mods\gear\medical\data\labequipment_co.paa"
+		};
+		hiddenSelectionsMaterials[]= {
+			"Survivalists_Mods\gear\medical\data\labequipment.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Mods\gear\medical\data\labequipment.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\medical\data\labequipment.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\medical\data\labequipment_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\medical\data\labequipment_damage.rvmat"}},
+            {0,{"Survivalists_Mods\gear\medical\data\labequipment_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
+  class SRP_LabEquipment_Projector : SRP_LabEquipment_Base
+  {
+    scope=2;
+    displayName="Lab Projector";
+    itemBehaviour=0;
+    descriptionShort="Project the results of your experiments.";
+		model="Survivalists_Mods\gear\medical\labequipment_projector.p3d";
+    itemSize[]={5,6};
+  };
+
+  class SRP_LabEquipment_Tuner : SRP_LabEquipment_Base
+  {
+    scope=2;
+    displayName="Lab Tuner";
+    descriptionShort="Tune in for the best results.";
+		model="Survivalists_Mods\gear\medical\labequipment_tuner.p3d";
+    itemSize[]={3,3};
+  };
+
+  class SRP_LabEquipment_Oscilliscope : SRP_LabEquipment_Base
+  {
+    scope=2;
+    displayName="Lab Oscilliscope";
+    descriptionShort="Measure the wavyness of your experiments.";
+		model="Survivalists_Mods\gear\medical\labequipment_oscilliscope.p3d";
+    itemSize[]={3,3};
+  };
+
+  class SRP_LabEquipment_GeigerCounter : SRP_LabEquipment_Base
+  {
+    scope=2;
+    displayName="Lab Geiger Counter";
+    descriptionShort="An advanced tool for measuring radiation AND biohazards.";
+		model="Survivalists_Mods\gear\medical\labequipment_geigercounter1.p3d";
+    itemSize[]={2,3};
+  };
 
   //--------------------------------- CUSTOM SYRINE INJECTIONS
 	class SRP_FullSyringe_Base: ClearSyringe  // BP_BloodSyringe_Base
