@@ -8,6 +8,9 @@ modded class ActionConstructor
 		actions.Insert(ActionSRPInjectSelf);  
 		actions.Insert(ActionSRPInjectTarget);  
 		actions.Insert(ActionInteractWithGUICraftingWorkbench);
-		actions.Insert(SRP_ActionOpenMap);      
+		actions.Insert(SRP_ActionOpenMap);
+    actions.Insert(ActionPaintFace);
+    actions.Insert(ActionFacePaintStickSwitch);
+
 	}
 };

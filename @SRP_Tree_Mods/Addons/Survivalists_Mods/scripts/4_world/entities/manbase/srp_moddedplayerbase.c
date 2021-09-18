@@ -5,6 +5,20 @@ modded class PlayerBase extends ManBase
 
   SRP_ActionOpenMapCB m_OpenMapCallback;
 
+  int	m_facepaintState;
+  int m_currentCamoIndex;
+  int m_facepaintCountMax;
+
+  override void Init()
+	{
+    super.Init();
+
+    m_facepaintState = -1;
+    m_currentCamoIndex = 0;
+    m_facepaintCountMax = GetPlayerCamoNames().Count() - 1;
+    RegisterNetSyncVariableInt("m_facepaintState", 0, m_facepaintCountMax);
+  }
+
   override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
   {
     super.OnRPC(sender, rpc_type, ctx);
@@ -37,6 +51,99 @@ modded class PlayerBase extends ManBase
         break;
       }
     }
+  }
+
+  override void OnStoreSaveLifespan( ParamsWriteContext ctx )
+	{		
+		ctx.Write( m_LifeSpanState );	
+		ctx.Write( m_LastShavedSeconds );	
+		ctx.Write( m_HasBloodyHandsVisible );
+		ctx.Write( m_HasBloodTypeVisible );
+		ctx.Write( m_BloodType );
+		ctx.Write( m_facepaintState );
+	}
+
+	override bool OnStoreLoadLifespan( ParamsReadContext ctx, int version )
+	{	
+		int lifespan_state = 0;
+		if(!ctx.Read( lifespan_state ))
+			return false;
+		m_LifeSpanState = lifespan_state;
+		
+		int last_shaved = 0;
+		if(!ctx.Read( last_shaved ))
+			return false;
+		m_LastShavedSeconds = last_shaved;
+		
+		bool bloody_hands = false;
+		if(!ctx.Read( bloody_hands ))
+			return false;
+		m_HasBloodyHandsVisible = bloody_hands;
+		
+		bool blood_visible = false;
+		if(!ctx.Read( blood_visible ))
+			return false;
+		m_HasBloodTypeVisible = blood_visible;
+		
+		int blood_type = 0;
+		if(!ctx.Read( blood_type ))
+			return false;
+		m_BloodType = blood_type;
+
+    int facepaintState = 0;
+		if(!ctx.Read( facepaintState ))
+			return false;
+		m_facepaintState = facepaintState;
+
+		return true;
+	}
+
+  string GetSelectedCamoName()
+  {
+    string selectedCamo = "";
+    if (m_facepaintState > 0){
+      selectedCamo = GetPlayerCamoNames().Get(m_facepaintState);
+      // Print("GetSelectedCamoName selected camo name from list: " + selectedCamo);
+    }
+    return selectedCamo;
+  }
+
+  string GetCurrentCamoIndexName()
+  {
+    string selectedCamo = "";
+    selectedCamo = GetPlayerCamoNames().Get(m_currentCamoIndex);
+    // Print("GetCurrentCamoIndexName selected camo name from list: " + selectedCamo);
+    return selectedCamo;
+  }
+
+  TStringArray GetPlayerCamoNames()
+  {
+    return {
+      "",
+      "fp_bosnia",
+      "fp_bulgaria1",
+      "fp_bulgaria2",
+      "fp_croatia",
+      "fp_czech1",
+      "fp_czech2",
+      "fp_desert",
+      "fp_digital",
+      "fp_france",
+      "fp_germany",
+      "fp_hungary1",
+      "fp_hungary2",
+      "fp_macedonia",
+      "fp_poland1",
+      "fp_poland2",
+      "fp_romania1",
+      "fp_romania2",
+      "fp_slovenia",
+      "fp_uk",
+      "fp_usa",
+      "fp_winter",
+      "fp_woodland",
+      "fp_yugoslavia",
+    };
   }
 
   bool CheckRecipeCraftingValidity(CraftedItem craftedItem)

@@ -161,4 +161,39 @@ class CfgVehicles
 		varQuantityDestroyOnMin=0;
 		destroyOnEmpty=0;
 	};
+
+  class SRP_FacePaintStick: Inventory_Base
+	{
+		scope=2;
+		displayName="Face Paint Stick";
+		descriptionShort="Paint your face into a lion.";
+		model="\dz\gear\medical\Epinephrine.p3d";
+		rotationFlags=17;
+		itemSize[]={1,2};
+		weight=60;
+    hiddenSelections[]={
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]={
+      "Survivalists_Mods\characters\heads\srp_facepaint_co.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+            {1.0,	{	"DZ\gear\medical\data\epipen.rvmat"}},
+            {0.69999999,	{	"DZ\gear\medical\data\epipen.rvmat"}},
+            {0.5,	{	"DZ\gear\medical\data\epipen_damage.rvmat"}},
+            {0.30000001,	{	"DZ\gear\medical\data\epipen_damage.rvmat"}},
+            {0.0,	{	"DZ\gear\medical\data\epipen_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 };
