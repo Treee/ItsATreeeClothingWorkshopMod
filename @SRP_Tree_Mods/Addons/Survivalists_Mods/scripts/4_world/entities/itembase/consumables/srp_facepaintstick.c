@@ -23,7 +23,7 @@ class SRP_FacePaintStick: Inventory_Base
       string playerType = player.GetType();
       playerType.Replace("SurvivorF_", "");
       string filepath = "hhl_f_" + playerType + "_body.rvmat";
-      string materialPath = FACEPAINT_PATH + player.GetSelectedCamoName() + "\\" + filepath
+      string materialPath = FACEPAINT_PATH + player.GetSelectedCamoName() + "\\" + filepath;
       player.SetFaceMaterial( materialPath );
     }
     else 
