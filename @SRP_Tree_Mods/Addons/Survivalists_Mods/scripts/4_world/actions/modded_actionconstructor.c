@@ -12,5 +12,11 @@ modded class ActionConstructor
     actions.Insert(ActionPaintFace);
     actions.Insert(ActionFacePaintStickSwitch);
 
+    // Smoking
+    actions.Insert(ActionSmokeSRPSmokableSelf);
+    actions.Insert(ActionForceSmokeSRPSmokable);
+    actions.Insert(ActionLightSmokableInHands);
+    actions.Insert(ActionExtinguishSmokeSRPSmokableSelf);
+
 	}
 };

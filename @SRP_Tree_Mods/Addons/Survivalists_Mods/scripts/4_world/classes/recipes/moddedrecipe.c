@@ -47,6 +47,26 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_CanScopeSpaghetti);
     RegisterRecipe(new Craft_SRP_AKCanScopeSpaghetti);
 
+
+    //---------- Drugs
+    RegisterRecipe(new SRP_Tree_Drugs_DetermineQuality);
+    // Meth Recipes
+		RegisterRecipe(new SRP_Tree_Drugs_SplitMediumMethJar);
+		RegisterRecipe(new SRP_Tree_Drugs_SplitLargeMethJar);
+
+    // Meth Tub Recipes
+		RegisterRecipe(new SRP_Tree_Drugs_CookMeth);
+		RegisterRecipe(new SRP_Tree_Drugs_MakeAcid);
+		RegisterRecipe(new SRP_Tree_Drugs_MakeBathSalts);
+
+    // Smokable Recipe
+		RegisterRecipe(new SRP_Tree_Drugs_CraftRollingPapers);		
+		RegisterRecipe(new SRP_Tree_Drugs_RollZWeedJoint);
+		RegisterRecipe(new SRP_Tree_Drugs_RollCigarette);		    
+		RegisterRecipe(new SRP_Tree_Drugs_RollCigar);		    
+    RegisterRecipe(new SRP_Craft_DrugPack);
+    RegisterRecipe(new SRP_Craft_DrugCarton);	
+
     //---------- RP Craftables
     RegisterRecipe(new Craft_SRP_Notebook);
     RegisterRecipe(new Craft_SRP_ExtraPaper);
