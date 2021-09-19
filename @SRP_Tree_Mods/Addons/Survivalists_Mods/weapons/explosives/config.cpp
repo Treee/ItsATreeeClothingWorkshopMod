@@ -1,14 +1,15 @@
 class CfgPatches
 {
-	class SRP_Tree_Explosives
+	class Survivalists_Mods_Weapons_Explosives
 	{
-    units[] = {
-      "SRP_Dynamite_Stick",
-      "SRP_Dynamite_Stack"
-    };
+		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]=	{ "DZ_Data", "DZ_Characters"};
+		requiredAddons[]={
+      "DZ_Data",
+      "DZ_Weapons_Explosives",
+      "Survivalists_Mods"
+    };
 	};
 };
 
@@ -20,7 +21,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Dynamite";
 		descriptionShort="A single stick of dynamite... explosive.";
-		model="SRP_Tree_Mods\explosives\dynamite_stick.p3d";
+		model="Survivalists_Mods\weapons\explosives\dynamite_stick.p3d";
 		weight=10;
     varTemperatureMax=100;
     itemSize[]={1,3};
@@ -28,12 +29,12 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
     destroyOnEmpty=1;	
-		hiddenSelections[]= {"camo"};
+		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
-      "SRP_Tree_Mods\explosives\data\dynamite_stick_co.paa"
+      "Survivalists_Mods\weapons\explosives\data\dynamite_stick_co.paa"
 		};
 		hiddenSelectionsMaterials[]= {
-			"SRP_Tree_Mods\explosives\data\dynamite_stick.rvmat"
+			"Survivalists_Mods\weapons\explosives\data\dynamite_stick.rvmat"
 		};		
     class EnergyManager
 		{
@@ -49,7 +50,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Dynamite Stack";
 		descriptionShort="A stack of dynamite... explosive.";
-		model="SRP_Tree_Mods\explosives\dynamite_stack.p3d";
+		model="Survivalists_Mods\weapons\explosives\dynamite_stack.p3d";
 		weight=15;
     varTemperatureMax=100;
     itemSize[]={3,5};
@@ -57,12 +58,12 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
     destroyOnEmpty=1;	
-		hiddenSelections[]= {"camo"};
+		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
-      "SRP_Tree_Mods\explosives\data\dynamite_stack_co.paa"
+      "Survivalists_Mods\weapons\explosives\data\dynamite_stack_co.paa"
 		};
 		hiddenSelectionsMaterials[]= {
-			"SRP_Tree_Mods\explosives\data\dynamite_stack.rvmat"
+			"Survivalists_Mods\weapons\explosives\data\dynamite_stack.rvmat"
 		};		
     class EnergyManager
 		{
@@ -73,24 +74,3 @@ class CfgVehicles
 		};
   };
 };
-
-// class CfgSlots
-// {
-// 	class Slot_SRP_CigaretteCase1
-// 	{
-// 		name="CigaretteCase1";
-// 		displayName="Cigarette";
-// 		ghostIcon="set:dayz_inventory image:paper";
-// 	};
-// };
-
-// class CfgNonAIVehicles
-// {
-//   class ProxyAttachment;
-//   class Proxycigarettecase_proxy1: ProxyAttachment //same as p3d name
-//   {
-//       scope=2;
-//       inventorySlot[]={"CigaretteCase1"}; // same as slot name 
-//       model="SRP_Tree_Mods\drugs\accessories\cigarettecase\cigarettecase_proxy1.p3d"; //proxy path 
-//   };    
-// };
