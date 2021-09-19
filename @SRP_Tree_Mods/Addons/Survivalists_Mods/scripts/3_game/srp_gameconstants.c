@@ -1,3 +1,11 @@
+const int NTFKEY_SRP_TIREDNESS  = 42;
+
+modded class PlayerConstants
+{ 
+  static const float BAREFOOT_MOVEMENT_BLEED_MODIFIER = 0;
+	static const float SHOES_MOVEMENT_DAMAGE_PER_STEP = 0;
+}
+
 modded class GameConstants
 {
 	/**
@@ -8,9 +16,9 @@ modded class GameConstants
 		// unit = currently percent (stamina max is 100)
   const int UI_SRP_CUSTOM_MENU_GUICrafting  = 8764336;
 
-	const int 	STAMINA_DRAIN_STANDING_SPRINT_PER_SEC = 4; //in units (how much sprint depletes stamina)
-	const int 	STAMINA_DRAIN_CROUCHED_SPRINT_PER_SEC = 1; //in units (how much sprint in crouch depletes stamina)
-	const int 	STAMINA_DRAIN_PRONE_SPRINT_PER_SEC = 3; //in units (how much sprint in prone depletes stamina)
+	const int STAMINA_DRAIN_STANDING_SPRINT_PER_SEC = 4; //in units (how much sprint depletes stamina)
+	const int STAMINA_DRAIN_CROUCHED_SPRINT_PER_SEC = 1; //in units (how much sprint in crouch depletes stamina)
+	const int STAMINA_DRAIN_PRONE_SPRINT_PER_SEC = 3; //in units (how much sprint in prone depletes stamina)
 	const int	STAMINA_DRAIN_SWIM_FAST_PER_SEC = 5; //in units (how much fast swimming depletes stamina)
 	const int	STAMINA_DRAIN_LADDER_FAST_PER_SEC = 8; //in units (how much fast ladder climb depletes stamina)
 	
@@ -27,9 +35,9 @@ modded class GameConstants
 	const float STAMINA_DRAIN_HOLD_BREATH_DURATION = 5.0; //in seconds, time it takes to increase stamina drain from STAMINA_DRAIN_HOLD_BREATH_START to STAMINA_DRAIN_HOLD_BREATH_END
 	const float	STAMINA_DRAIN_HOLD_BREATH_EXPONENT = 4.0; //holding breath exponent
 	
-	const int 	STAMINA_GAIN_JOG_PER_SEC = 2; //in units (how much of stamina units is gained while jogging)
-	const int 	STAMINA_GAIN_WALK_PER_SEC = 4; //in units (how much of stamina units is gained while walking)
-	const int 	STAMINA_GAIN_IDLE_PER_SEC = 5; //in units (how much of stamina units is gained while iddling)
+	const int STAMINA_GAIN_JOG_PER_SEC = 2; //in units (how much of stamina units is gained while jogging)
+	const int STAMINA_GAIN_WALK_PER_SEC = 4; //in units (how much of stamina units is gained while walking)
+	const int STAMINA_GAIN_IDLE_PER_SEC = 5; //in units (how much of stamina units is gained while iddling)
 	const int	STAMINA_GAIN_SWIM_PER_SEC = 1; //in units (how much of stamina units is gained while slowly swim)
 	const int	STAMINA_GAIN_LADDER_PER_SEC = 1; //in units (how much of stamina units is gained while slowly swim)
 	const int	STAMINA_GAIN_ROLL_PER_SEC = 0; //in units (how much of stamina units is gained while rolling)
@@ -238,4 +246,22 @@ modded class GameConstants
 	
 	const int RESPAWN_MODE_CUSTOM = 0;
 	const int RESPAWN_MODE_RANDOM = 1;
+}
+
+modded class EmoteConstants
+{
+  // const int ID_EMOTE_LYINGDOWN		= 5; this is default
+
+  const int SRP_EMOTE_COUGH = 69;
+	const int SRP_EMOTE_BLINDNESS = 70;
+	const int SRP_EMOTE_BULLET_HIT = 71;
+	const int SRP_EMOTE_BLEEDING_SOURCE = 72;
+	const int SRP_EMOTE_BLOODLOSS = 73;
+	const int SRP_EMOTE_SNEEZE = 74;
+	const int SRP_EMOTE_FEVERBLUR = 75;
+	const int SRP_EMOTE_LAUGHTER = 76;
+	const int SRP_EMOTE_UNCONSCIOUS = 77;
+	const int SRP_EMOTE_FREEZE = 78;
+	const int SRP_EMOTE_HOT = 79;
+  const int SRP_EMOTE_LEGBREAK = 80;
 }

@@ -6,33 +6,6 @@ modded class PlayerBase
   EffectSound m_AcidSounds;
   EffectSound m_SleepSounds;
 
-  void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
-	{
-		PlayerBase man;
-    Param1<string> m_MessageParam = new Param1<string>(message);
-		if( GetGame().IsServer() && Class.CastTo(man, reciever) && m_MessageParam && reciever.IsAlive() && message != "" )
-		{
-			GetGame().RPCSingleParam(man, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, man.GetIdentity());
-		}
-	}
-
-  override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
-  {
-    super.OnRPC(sender, rpc_type, ctx);
-
-    switch(rpc_type)
-    {
-      case SRPRPC.CHECK_TREE_CONFIG: // this case is for grabbing Tree's config from the server
-      {
-        Param1<SRPTreeConfig> configParams;
-        if(!ctx.Read(configParams)) return;
-
-        GetDayZGame().SetSRPTreeConfigGlobal(configParams.param1);
-        break;
-      }
-    }
-  }
-
   bool HasSleepAgent()
   {
     return m_AgentPool.HasAgent(SRP_Medical_Agents.SLEEP_AGENT);

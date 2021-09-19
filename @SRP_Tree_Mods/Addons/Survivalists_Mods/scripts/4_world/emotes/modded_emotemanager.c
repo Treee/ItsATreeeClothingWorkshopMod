@@ -44,14 +44,12 @@ modded class EmoteManager
   void StartLayDownRequest()
   {
     m_PrevIsLayDown = m_IsLayDown;
-    m_Player.CloseEyesBecauseSleeping();
     // Print("PlayEmote::SLEEPING! COVER HEAD");
   }
 
   void EndLayDownRequest()
   {
     m_IsLayDown = false;
-    m_Player.OpenEyesBecauseAwake();
     // Print("OnEmoteEnd::NOT SLEEPING!! UNCOVER HEAD");
   }
 }
