@@ -9,13 +9,6 @@ class CfgMods
 		dependencies[] = {"Game","World","Mission"};
 		class defs
 		{
-      class imageSets
-      {
-        files[]=
-        {
-          "SRP_Tree_Mods/gui/images/srp_tree_iconset.imageset"
-        };
-      };
 			class gameScriptModule
 			{
 				value = "";

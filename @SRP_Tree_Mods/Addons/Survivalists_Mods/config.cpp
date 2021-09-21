@@ -10,6 +10,13 @@ class CfgMods
 		dependencies[] = {"Game","World","Mission"};
 		class defs
 		{
+      class imageSets
+      {
+        files[]=
+        {
+          "Survivalists_Mods/gui/images/srp_sleep_iconset.imageset"
+        };
+      };
 			class gameScriptModule
 			{
 				value = "";
