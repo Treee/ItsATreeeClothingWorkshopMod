@@ -17,8 +17,16 @@ class CfgVehicles
 {
   class AthleticShoes_ColorBase;
   class JungleBoots_ColorBase;
-  class NBCBootsBase;
+  
+  //-------------------------------------BASE GAME OVERRIDE
+	class NBCBootsBase: Clothing
+	{
+		class Protection {
+      biological=1;
+    }
+	};
 
+  //-------------------------------------BASE GAME REtextures
 	class SRP_DenShoes_White: AthleticShoes_ColorBase // Denshoe
 	{
 		scope=2;

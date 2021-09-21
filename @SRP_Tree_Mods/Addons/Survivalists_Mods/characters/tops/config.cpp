@@ -23,12 +23,19 @@ class CfgVehicles
   class RidersJacket_ColorBase;
   class QuiltedJacket_ColorBase;
   class Sweater_ColorBase;
-  class NBCJacketBase;
   class M65Jacket_ColorBase;
   class Hoodie_ColorBase;
   class TrackSuitJacket_ColorBase;
   class ParamedicJacket_ColorBase;
   class PoliceJacketOrel;
+
+  //----------------------------------- BASE GAME OVERRIDE
+  class NBCJacketBase: Clothing
+	{
+		class Protection {
+      biological=1;
+    }
+	};
 
   //----------------------------------- BASE GAME RETEXTURES
 

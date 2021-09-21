@@ -74,38 +74,4 @@ class CfgVehicles
   //   };
   // }
 
-	class NBCHoodBase: Clothing
-  {
-    class Protection {
-      biological=1;
-    }
-  }
-
-	class NBCJacketBase: Clothing
-	{
-		class Protection {
-      biological=1;
-    }
-	};
-
-	class NBCPantsBase: Clothing
-	{
-		class Protection {
-      biological=1;
-    }
-	};
-
-	class NBCBootsBase: Clothing
-	{
-		class Protection {
-      biological=1;
-    }
-	};
-
-	class NBCGloves_ColorBase: Clothing
-	{
-		class Protection {
-      biological=1;
-    }
-	};
 };

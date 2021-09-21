@@ -15,8 +15,15 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class NBCGloves_ColorBase;
   class OMNOGloves_ColorBase;
+
+  //-------------------------------------BASE GAME OVERRIDE
+  class NBCGloves_ColorBase: Clothing
+	{
+		class Protection {
+      biological=1;
+    }
+	};
 
   // ------------------------ Base Game Retextures
 

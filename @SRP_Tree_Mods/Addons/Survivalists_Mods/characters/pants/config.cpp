@@ -22,10 +22,16 @@ class CfgVehicles
   class TrackSuitPants_ColorBase;
   class PrisonUniformPants;
   class CargoPants_ColorBase;
-  class NBCPantsBase;
+
+  //-------------------------------------BASE GAME OVERRIDE
+  class NBCPantsBase: Clothing
+	{
+		class Protection {
+      biological=1;
+    }
+	};
 
   //-------------------------------------BASE GAME REtextures
-
 	class SRP_ParamedicPants_Black: ParamedicPants_ColorBase  // Medic_P_black
 	{
 		scope=2;

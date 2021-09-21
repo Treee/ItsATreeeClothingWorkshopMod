@@ -21,7 +21,6 @@ class CfgVehicles
   class BaseballCap_ColorBase;
   class MilitaryBeret_ColorBase;
   class Ushanka_ColorBase;
-  class NBCHoodBase;
   class Switchable_Base;
   class PrisonerCap;
   class Clothing;
@@ -45,6 +44,13 @@ class CfgVehicles
 	{
 		itemSize[]={2,1};
 	};
+
+  class NBCHoodBase: Clothing
+  {
+    class Protection {
+      biological=1;
+    }
+  }
 
 
   // ----------------------------------------- Custom Stuff
