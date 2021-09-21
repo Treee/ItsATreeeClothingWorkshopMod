@@ -1,10 +1,10 @@
 MetaFileClass {
- Name "{EE4943FC72F50C6E}SRP_Tree_Mods/gui/images/srp_tree_iconset.edds"
- Author "ItsATree"
+ Name "{EE4943FC72F50C6E}Survivalists_Mods/gui/images/srp_sleep_iconset.edds"
+ Author "ItsATreee"
  ChangeDate -662377808
  Configurations {
   TGAResourceClass PC {
-   SourceFile "srp_tree_iconset.tga"
+   SourceFile "srp_sleep_iconset.tga"
   }
   TGAResourceClass XBOX_ONE : PC {
   }
@@ -13,4 +13,3 @@ MetaFileClass {
   TGAResourceClass LINUX : PC {
   }
  }
-}

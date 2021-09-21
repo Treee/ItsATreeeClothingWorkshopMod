@@ -1,10 +1,10 @@
 ImageSetClass {
- Name "srp_tree_iconset"
+ Name "srp_sleep_iconset"
  RefSize 512 512
  Textures {
   ImageSetTextureClass {
    mpix 1
-   path "{EE4943FC72F50C6E}SRP_Tree_Mods/gui/images/srp_tree_iconset.edds"
+   path "{EE4943FC72F50C6E}Survivalists_Mods/gui/images/srp_sleep_iconset.edds"
   }
  }
  Images {

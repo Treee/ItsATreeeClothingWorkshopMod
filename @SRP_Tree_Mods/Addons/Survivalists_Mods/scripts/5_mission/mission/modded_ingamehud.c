@@ -22,17 +22,17 @@ modded class IngameHud
 
 	override void Init( Widget hud_panel_widget )
 	{
-    // Print("SRP Tree Mods IngameHud before Init()");
+    // Print("SRP Mods IngameHud before Init()");
     super.Init(hud_panel_widget);
     if (!m_sleepPanelWidget && (GetGame().IsClient() || !GetGame().IsMultiplayer()))
     {
-      m_sleepPanelWidget = GetGame().GetWorkspace().CreateWidgets("SRP_Tree_Mods/gui/layouts/srp_tree_layout.layout");
+      m_sleepPanelWidget = GetGame().GetWorkspace().CreateWidgets("Survivalists_Mods/gui/layouts/srp_sleep_layout.layout");
       if (m_sleepPanelWidget) {
         m_sleepPanelWidget.Show(true);
       }
     }
 
-    // Print("SRP Tree Mods IngameHud after Init()");
+    // Print("SRP Mods IngameHud after Init()");
     DisplayTirednessNotifier(NTFKEY_SRP_TIREDNESS, 0, 0, 4);
   }
 
@@ -119,14 +119,14 @@ modded class IngameHud
 	{
     // Print("Tiredness state " + state);
 		ImageWidget tiredness = ImageWidget.Cast( m_sleepPanelWidget.FindAnyWidget(iconSleepName) );
-		tiredness.LoadImageFile( 0, "set:srp_tree_iconset image:iconSleep" + state );
+		tiredness.LoadImageFile( 0, "set:srp_sleep_iconset image:iconSleep" + state );
 	}
   
   void SetSleepWidgetVisibility(bool visible) 
   {
     if (m_sleepPanelWidget) 
     {
-      // Print("SRP Tree Mods In Game Hud SetSleepWidgetVisibility!! visible=" + visible);      
+      // Print("SRP Mods In Game Hud SetSleepWidgetVisibility!! visible=" + visible);      
       m_sleepPanelWidget.Show(visible);
     }
   }

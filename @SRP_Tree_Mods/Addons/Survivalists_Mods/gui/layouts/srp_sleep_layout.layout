@@ -23,7 +23,7 @@ PanelWidgetClass Sleep {
    hexactsize 1
    vexactsize 1
    fixaspect fixwidth
-   image0 "set:srp_tree_iconset image:iconSleep0"
+   image0 "set:srp_sleep_iconset image:iconSleep0"
    mode blend
    "src alpha" 1
    "no wrap" 1
