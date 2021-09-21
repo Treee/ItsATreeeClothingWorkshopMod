@@ -23,6 +23,20 @@ class CfgVehicles
   // modded classes
 	class GGRadio_Radio_Base;
 
+  // Look into this as a way to webhook radio stations
+  // class Radio;
+  // class My_Radio : Radio
+  // {
+  //   class Channels
+  //   {
+  //     class testradio
+  //     {
+  //       name="testradio";
+  //       url="https://listen.socorock.com:8443/socorock.ogg";
+  //     };
+  //   };
+  // }
+
   //-------------------------------------- MOD OVERRIDE
 	class GGRadio_Radio: GGRadio_Radio_Base
 	{

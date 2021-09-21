@@ -130,4 +130,23 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class MassArmbandDouble_Colorbase;
+  class Admin_BioZone_Protection: MassArmbandDouble_Colorbase
+	{
+		scope=2;
+		displayName="Biozone Cheater!!";
+		descriptionShort="Ignore biohzard effects";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Armbands_Flags\data\armbands\armband_nuclear_co.paa",
+			"Survivalists_Armbands_Flags\data\armbands\armband_nuclear_co.paa",
+			"Survivalists_Armbands_Flags\data\armbands\armband_nuclear_co.paa",
+			"Survivalists_Armbands_Flags\data\armbands\armband_nuclear_co.paa",
+			"Survivalists_Armbands_Flags\data\armbands\armband_nuclear_co.paa"
+		};
+    class Protection {
+      biological=6;
+    }
+	};
 };
