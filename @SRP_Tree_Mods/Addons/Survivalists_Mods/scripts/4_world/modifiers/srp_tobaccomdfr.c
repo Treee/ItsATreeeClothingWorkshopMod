@@ -30,7 +30,7 @@ class SRP_TobaccoMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is tobacco buzzed");
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     LIFETIME = config.g_SRPTobacoModifierLifetime;
     chance_for_cough = config.g_SRPTobaccoChanceForCough;
 

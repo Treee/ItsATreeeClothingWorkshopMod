@@ -23,7 +23,8 @@ class CfgVehicles
   class Morphine;
   class ClearSyringe;
   class InjectionVial;
-
+  class Epinephrine;
+  
   class SRP_KitBase;
 
 
@@ -490,6 +491,18 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\medical\labequipment_geigercounter1.p3d";
     itemSize[]={2,3};
   };
+
+  class SRP_Naloxone: Epinephrine
+  {
+    scope=2;
+    displayName="Naloxone";    
+		descriptionShort="Treats narcotic overdoes in an emergency situation.";
+    model="\dz\gear\medical\Epinephrine.p3d";
+		rotationFlags=17;
+		itemSize[]={1,2};
+		weight=60;
+    inventorySlot[]={};
+  }
 
   //--------------------------------- CUSTOM SYRINE INJECTIONS
 	class SRP_FullSyringe_Base: ClearSyringe  // BP_BloodSyringe_Base

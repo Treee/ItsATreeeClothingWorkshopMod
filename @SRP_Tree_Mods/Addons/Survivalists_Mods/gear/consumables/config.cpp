@@ -64,6 +64,17 @@ class CfgVehicles
 	{
     varStackMax=20;
   };
+
+  // drug workbench
+  class HeadlightH7: Inventory_Base
+	{
+		inventorySlot[]=
+		{
+			"Reflector_1_1",
+			"Reflector_2_1",
+      "Lightbulb"
+		};
+	};
   
   //----------------------------------------------- CUSTOM STUFF
   class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery

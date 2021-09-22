@@ -15,6 +15,7 @@ class CfgPatches
 };
 class CfgVehicles
 {
+  class Clothing;
   class AthleticShoes_ColorBase;
   class JungleBoots_ColorBase;
   

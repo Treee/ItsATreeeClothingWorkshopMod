@@ -29,7 +29,7 @@ class SRP_AlcoholMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     LIFETIME = config.g_SRPAlcoholModifierLifetime;
     food_loss_per_tick = config.g_SRPAlcoholFoodLossAmount;
     chance_to_laugh = config.g_SRPAlcoholChanceToLaughThreshold;

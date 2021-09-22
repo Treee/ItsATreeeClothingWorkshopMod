@@ -25,7 +25,7 @@ class SRP_BioHazardMdfr: ModifierBase
 	{    
     // Print("BiohazardMdfr: ActivateCondition - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.BIOHAZARD_AGENT));
     // activate this condition when we get close to the bio zone  
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal(); 
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal(); 
     bool isInZone = false;
     if (config) {
       if (config.g_SRPIsBioHazardLocationsActive) {
@@ -62,7 +62,7 @@ class SRP_BioHazardMdfr: ModifierBase
 	override bool DeactivateCondition(PlayerBase player)
 	{
     // Print("BiohazardMdfr: DeactivateCondition - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.BIOHAZARD_AGENT));
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     bool isInZone = false;
     foreach (BioHazardZoneLocation loc : config.g_SRPBiohazardZoneLocations){
       isInZone = isInZone || loc.isPlayerInZone(player.GetPosition());      

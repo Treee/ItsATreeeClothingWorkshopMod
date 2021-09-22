@@ -37,7 +37,7 @@ class SRP_SmileAcidMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on smile acid");
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     LIFETIME = config.g_SRPSmileAcidModifierLifetime;
     chance_for_scary_sound = config.g_SRPSmileAcidChanceForScarySound;
     chance_for_happy_sound = config.g_SRPSmileAcidChanceForHappySound;

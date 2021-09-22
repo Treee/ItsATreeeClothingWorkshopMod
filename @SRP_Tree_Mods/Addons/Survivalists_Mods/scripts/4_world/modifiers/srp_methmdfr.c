@@ -31,7 +31,7 @@ class SRP_MethMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     LIFETIME = config.g_SRPMethModifierLifetime;
     blood_loss_per_tick = config.g_SRPMethBloodLossAmount;
     scary_sound_chance = config.g_SRPMethChanceForScarySound;

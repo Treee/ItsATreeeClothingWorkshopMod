@@ -15,6 +15,7 @@ class CfgPatches
 };
 class CfgVehicles
 {
+  class Clothing;
   class TShirt_ColorBase;
   class TacticalShirt_ColorBase;
   class MiniDress_ColorBase;

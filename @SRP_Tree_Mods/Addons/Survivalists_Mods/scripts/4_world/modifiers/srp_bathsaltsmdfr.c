@@ -29,7 +29,7 @@ class SRP_BathSaltsMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     LIFETIME = config.g_SRPBathSaltsModifierLifetime;
     chance_for_scary_sound = config.g_SRPBathSaltsChanceForScarySound;
     chance_for_happy_sound = config.g_SRPBathSaltsChanceForHappySound;

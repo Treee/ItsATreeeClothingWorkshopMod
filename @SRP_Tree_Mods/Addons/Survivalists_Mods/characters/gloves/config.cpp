@@ -16,6 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
   class OMNOGloves_ColorBase;
+  class Clothing;
 
   //-------------------------------------BASE GAME OVERRIDE
   class NBCGloves_ColorBase: Clothing

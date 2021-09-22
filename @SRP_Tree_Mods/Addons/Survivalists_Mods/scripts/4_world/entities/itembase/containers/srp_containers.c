@@ -287,3 +287,5 @@ class SRP_WoodenBox_Square extends SRP_Openable_Container
   }
 };
 class SRP_MedicalCurtains extends SRP_Openable_Container{};
+
+class SRP_CigaretteCase extends SRP_Openable_Container{};

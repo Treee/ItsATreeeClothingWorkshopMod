@@ -37,7 +37,7 @@ class SRP_SkullAcidMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on skull acid");
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     LIFETIME = config.g_SRPSkullAcidModifierLifetime;
     chance_for_scary_sound = config.g_SRPSkullAcidChanceForScarySound;
     chance_for_happy_sound = config.g_SRPSkullAcidChanceForHappySound;

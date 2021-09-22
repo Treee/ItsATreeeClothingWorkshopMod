@@ -15,7 +15,7 @@ class CfgPatches
 };
 class CfgVehicles
 {
-
+  class Clothing;
   class ParamedicPants_ColorBase;
   class HunterPants_ColorBase;
   class PolicePantsOrel;

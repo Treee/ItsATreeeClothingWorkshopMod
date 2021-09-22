@@ -12,7 +12,7 @@ class SRP_SleepMdfr: ModifierBase
 	override bool ActivateCondition(PlayerBase player)
 	{    
     // if the player is not sleeping and not unconscious
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     if (config) {
       if (config.g_SRPIsSleepActive) {        
         return true;

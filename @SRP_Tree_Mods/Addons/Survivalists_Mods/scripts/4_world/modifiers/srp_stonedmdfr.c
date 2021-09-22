@@ -32,7 +32,7 @@ class SRP_StonedMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("SRP_StonedMdfr:: OnActivate"); // reset the modifier
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     LIFETIME = config.g_SRPStonedModifierLifetime;
     water_loss_per_tick = config.g_SRPWeedWaterLossAmount;
     chance_for_laugh = config.g_SRPWeedChanceForLaugh;

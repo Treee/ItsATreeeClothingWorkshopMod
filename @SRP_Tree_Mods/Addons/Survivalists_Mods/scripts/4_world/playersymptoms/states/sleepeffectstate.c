@@ -84,7 +84,7 @@ class SleepEffectSymptom extends SymptomBase
 
 	override void OnGetActivatedClient(PlayerBase player)
 	{
-    SRPTreeConfig config = GetDayZGame().GetSRPTreeConfigGlobal();
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     // Print("SleepMdfr: OnActivate Start - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));        
     SECONDS_PER_DAY = config.g_SRPSleepMaximumAwakeTime;
     m_YawnInterval = config.g_SRPSleepYawnInterval;
