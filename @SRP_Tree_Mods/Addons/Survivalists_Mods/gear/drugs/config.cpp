@@ -92,7 +92,6 @@ class CfgVehicles
 		itemSize[]={3,2};
 		itemBehaviour=1;
 		allowOwnedCargoManipulation=0;
-		hiddenSelections[]={"camoGround"};
 		class DamageSystem
 		{
       class GlobalHealth
