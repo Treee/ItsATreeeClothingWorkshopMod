@@ -559,6 +559,12 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Neon Letters" (https://skfb.ly/6wPxw) by danny_p3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Green Shrub" (https://skfb.ly/6GHDq) by Somersby is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+- "Brick" (https://skfb.ly/67znx) by martn00 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Flourbag" (https://skfb.ly/6XvrX) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

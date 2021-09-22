@@ -2211,4 +2211,25 @@ class CfgVehicles
 		};
 	};
 
+
+  // ----------------- CUSTOM DRUGS
+  class Cannabis;
+  class Cocaine: Cannabis
+	{
+		scope=2;
+		displayName="Cocaine Plant Material";
+		descriptionShort="A harvested branch from the cocaine bush.";
+    model="\dz\gear\cultivation\plant_material.p3d";
+		rotationFlags=34;
+		weight=0;
+		itemSize[]={2,3};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=10;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		quantityBar=1;
+		containsSeedsType="";
+		containsSeedsQuantity="0";
+	};
 };

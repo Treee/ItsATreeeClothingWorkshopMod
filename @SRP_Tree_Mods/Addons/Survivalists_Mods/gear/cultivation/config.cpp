@@ -22,6 +22,13 @@ class CfgHorticulture
 			healthyTex="Survivalists_Mods\gear\cultivation\data\tobacco_plant_co.paa";
 			healthyMat="dz\gear\cultivation\data\cannabis_plant.rvmat";
 		};
+    class Plant_Cocaine
+		{
+			infestedTex="Survivalists_Mods\gear\cultivation\data\cocaineplant_insect_co.paa";
+			infestedMat="Survivalists_Mods\gear\cultivation\data\cocaineplant_insect.rvmat";
+			healthyTex="Survivalists_Mods\gear\cultivation\data\cocaineplant_co.paa";
+			healthyMat="Survivalists_Mods\gear\cultivation\data\cocaineplant.rvmat";
+		};
 	};
 };
 class CfgVehicles
@@ -139,6 +146,74 @@ class CfgVehicles
 		class Horticulture
 		{
 			PlantType="Plant_Tobacco";
+		};
+	};
+
+  class TobaccoSeedsPack: Inventory_Base
+	{
+		scope=2;
+		displayName="Tobacco Seed Pack";
+		descriptionShort="A pack of tobacco seeds. Who even put these here? Most of the seeds are probably bunk.";
+    model="\dz\gear\cultivation\pepper_seeds_pack.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seeds_co.paa"
+		};		
+    rotationFlags=17;
+		quantityBar=1;
+		itemSize[]={1,1};
+		weight=10;
+		spawnOffset=0;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5;
+					healthLevels[]=
+					{
+						{1,	{	"DZ\gear\cultivation\data\cannabis_seeds.rvmat"}},
+            {0.69999999,	{	"DZ\gear\cultivation\data\cannabis_seeds.rvmat"}},
+            {0.5,	{	"DZ\gear\cultivation\data\cannabis_seeds_damage.rvmat"}},
+            {0.30000001,	{	"DZ\gear\cultivation\data\cannabis_seeds_damage.rvmat"}},
+            {0,	{	"DZ\gear\cultivation\data\cannabis_seeds_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class Horticulture
+		{
+			ContainsSeedsType="TobaccoSeeds";
+			ContainsSeedsQuantity=4;
+		};
+		class UserActions
+		{
+			class EmptyPack
+			{
+				displayNameDefault="$STR_CfgVehicles_CannabisSeedsPack_UserActions_EmptyPack0";
+				displayName="$STR_CfgVehicles_CannabisSeedsPack_UserActions_EmptyPack1";
+				position="action";
+				onlyForPlayer=1;
+				radius=2;
+				condition="true";
+				statement="this callMethod ['EmptySeedPack', _person];";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="seedpack_pickup_SoundSet";
+					id=797;
+				};
+			};
 		};
 	};
 
@@ -320,6 +395,110 @@ class CfgVehicles
 					id=895;
 				};
 			};
+		};
+	};
+
+  class CocaineSeeds: SeedBase
+	{
+		scope=2;
+		displayName="Cocaine Seeds";
+		descriptionShort="Seeds for a specific type of plant.";
+		model="\dz\gear\cultivation\cannabis_seeds.p3d";
+		canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=20;
+		class Horticulture
+		{
+			PlantType="Plant_Cocaine";
+		};
+	};
+
+  class CocaineSeedsPack: Inventory_Base
+	{
+		scope=2;
+		displayName="Cocaine Seed Pack";
+		descriptionShort="A pack of cocaine seeds. Who even put these here? Most of the seeds are probably bunk.";
+    model="\dz\gear\cultivation\pepper_seeds_pack.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\cultivation\data\cocaine_seeds_co.paa"
+		};		
+    rotationFlags=17;
+		quantityBar=1;
+		itemSize[]={1,1};
+		weight=10;
+		spawnOffset=0;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5;
+					healthLevels[]=
+					{
+						{1,	{	"DZ\gear\cultivation\data\cannabis_seeds.rvmat"}},
+            {0.69999999,	{	"DZ\gear\cultivation\data\cannabis_seeds.rvmat"}},
+            {0.5,	{	"DZ\gear\cultivation\data\cannabis_seeds_damage.rvmat"}},
+            {0.30000001,	{	"DZ\gear\cultivation\data\cannabis_seeds_damage.rvmat"}},
+            {0,	{	"DZ\gear\cultivation\data\cannabis_seeds_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class Horticulture
+		{
+			ContainsSeedsType="CocaineSeeds";
+			ContainsSeedsQuantity=4;
+		};
+		class UserActions
+		{
+			class EmptyPack
+			{
+				displayNameDefault="$STR_CfgVehicles_CannabisSeedsPack_UserActions_EmptyPack0";
+				displayName="$STR_CfgVehicles_CannabisSeedsPack_UserActions_EmptyPack1";
+				position="action";
+				onlyForPlayer=1;
+				radius=2;
+				condition="true";
+				statement="this callMethod ['EmptySeedPack', _person];";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="seedpack_pickup_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class Plant_Cocaine: PlantBase
+	{
+		scope=2;
+		model="Survivalists_Mods\gear\cultivation\cocaine_plant.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\cultivation\data\cocaineplant_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\cultivation\data\cocaineplant.rvmat"
+		};
+		class Horticulture
+		{
+			GrowthStagesCount=6;
+			CropsCount=1; // was 7;
+			CropsType="Cocaine";
 		};
 	};
 };
