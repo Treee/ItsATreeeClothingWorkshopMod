@@ -7,7 +7,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=	{
       "DZ_Data", 
-      "DZ_Gear_Food", 
+      "DZ_Gear_Food",
+      "DZ_Characters",
       "Survivalists_Mods"
     };
 	};
@@ -16,6 +17,7 @@ class CfgVehicles
 {
   class Inventory_Base;
   class Edible_Base;
+  class DryBag_ColorBase; // for the cocaine bag
 
   class SRP_SmokingPipe: Inventory_Base
   {
@@ -1180,9 +1182,9 @@ class CfgVehicles
     attachments[]={};
     rotationFlags=17;
     quantityBar=0;
-		varQuantityInit=0;
+		varQuantityInit=100;
 		varQuantityMin=0;
-		varQuantityMax=0;
+		varQuantityMax=100;
 		stackedUnit="";
     varTemperatureMax=100;
     itemSize[]={4,5};
@@ -1192,5 +1194,22 @@ class CfgVehicles
 			"Survivalists_Mods\gear\drugs\data\cocainebrick_co.paa"
 		};
   };
+
+  class SRP_DrugCraft_CocaineStarter: DryBag_ColorBase
+	{
+		scope=2;
+    displayName="A sack full of raw cocaine plant material";
+    descriptionShort="Holds cocaine plant material. You can see remnant of processing.";
+    inventorySlot[]={};
+    attachments[]={};
+    itemSize[]={6,6};
+    itemsCargoSize[]={6,6};
+		hiddenSelectionsTextures[]=
+		{
+			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
+			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
+			"DZ\characters\backpacks\data\DryBag_Orange_co.paa"
+		};
+	};
 
 };
