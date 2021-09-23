@@ -177,6 +177,13 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Come_and_Get_Your_Love_sung_by_Skylar_Wolfe.ogg",1}
 		};
 	};
+  class SRPRadio_SkylarWolfe_JustTheTwoOfUs_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Just_the_Two_of_Us_sung_by_Skylar_Wolfe_.ogg",1}
+		};
+	};
   class SRPRadio_Pinkerton_TheShadow_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -368,6 +375,13 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"SRPRadio_SkylarWolfe_ComeAndGetYourLove_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_JustTheTwoOfUs_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_JustTheTwoOfUs_Shader1"
 		};
 	};
   class SRPRadio_Pinkerton_TheShadow_SoundSet1

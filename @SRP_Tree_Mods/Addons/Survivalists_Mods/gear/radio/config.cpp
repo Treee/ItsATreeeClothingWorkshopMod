@@ -476,9 +476,19 @@ class CfgVehicles
 		descriptionShort="Music Tape - Credit Skylar Wolfe";		
 		class CfgCassette
 		{
-			soundSet="SRPRadio_SkylarWolfe_ComeAndGetYourLove_Shader1";
+			soundSet="SRPRadio_SkylarWolfe_ComeAndGetYourLove_SoundSet1";
 		};
 	};  
+  class SRPRadio_CassetteTape_SkylarWolfe_JustTheTwoOfUs: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Just The Two Of Us";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_JustTheTwoOfUs_SoundSet1";
+		};
+	}; 
   class SRPRadio_CassetteTape_Pinkerton_TheShadow: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
