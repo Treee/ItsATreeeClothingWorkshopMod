@@ -161,8 +161,8 @@ class SRP_Tree_Drugs_CutDrugsFromCocaine extends RecipeBase
 		
 		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
-		m_IngredientDestroy[0] = 1;	// -1 = do nothing
+		m_IngredientAddQuantity[0] = -20;// -1 = do nothing
+		m_IngredientDestroy[0] = -1;	// -1 = do nothing
 		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2					
@@ -188,7 +188,7 @@ class SRP_Tree_Drugs_CutDrugsFromCocaine extends RecipeBase
 		AddResult("SRP_ConsumableDrug_Cocaine");	// recipe result
 		
 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
-		m_ResultSetQuantity[0] = 1;			// result quantity
+		m_ResultSetQuantity[0] = 30;			// result quantity
 		m_ResultSetHealth[0] = -1;			// -1 = do nothing
 		m_ResultInheritsHealth[0] = -1;		// -1 = do nothing
 		m_ResultInheritsColor[0] = -1;		// -1 = do nothing
