@@ -1171,4 +1171,26 @@ class CfgVehicles
 		};
   };
 
+  class SRP_DrugBrick_Cocaine : Inventory_Base 
+  {
+    scope=2;
+    displayName="Brick of Cocaine";
+    descriptionShort="A white powder packed into a brick shape.";
+		model="Survivalists_Mods\gear\drugs\cocainebrick.p3d";    
+    attachments[]={};
+    rotationFlags=17;
+    quantityBar=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=0;
+		stackedUnit="";
+    varTemperatureMax=100;
+    itemSize[]={4,5};
+    hiddenSelections[]= {"zbytek"};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\drugs\data\cocainebrick_co.paa"
+		};
+  };
+
 };
