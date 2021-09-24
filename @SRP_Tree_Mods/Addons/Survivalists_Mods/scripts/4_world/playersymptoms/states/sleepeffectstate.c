@@ -123,7 +123,7 @@ class SleepEffectSymptom extends SymptomBase
   int GetTirednessLevel(int total_tiredness)
   {
     // Print("GetTirednessLevel: " + total_tiredness + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
-    // the retun numbers here correlate to icons in srp_tree_iconset.imageset
+    // the retun numbers here correlate to icons in srp_sleep_iconset.imageset
     if (total_tiredness >= TIREDNESS_0PERCENT && total_tiredness < TIREDNESS_25PERCENT){ // fully slept full moon      
       return 4;
     } else if (total_tiredness >= TIREDNESS_25PERCENT && total_tiredness < TIREDNESS_50PERCENT) { // 75% awake,

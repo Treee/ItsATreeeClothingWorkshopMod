@@ -49,29 +49,29 @@ modded class PluginRecipesManagerBase extends PluginBase
 
 
     //---------- Drugs
-    RegisterRecipe(new SRP_Tree_Drugs_DetermineQuality);
+    RegisterRecipe(new SRP_Drugs_DetermineQuality);
     // Meth Recipes
-		RegisterRecipe(new SRP_Tree_Drugs_SplitMediumMethJar);
-		RegisterRecipe(new SRP_Tree_Drugs_SplitLargeMethJar);
+		RegisterRecipe(new SRP_Drugs_SplitMediumMethJar);
+		RegisterRecipe(new SRP_Drugs_SplitLargeMethJar);
 
     // Meth Tub Recipes
-		RegisterRecipe(new SRP_Tree_Drugs_CookMeth);
-		RegisterRecipe(new SRP_Tree_Drugs_MakeAcid);
-		RegisterRecipe(new SRP_Tree_Drugs_MakeBathSalts);
+		RegisterRecipe(new SRP_Drugs_CookMeth);
+		RegisterRecipe(new SRP_Drugs_MakeAcid);
+		RegisterRecipe(new SRP_Drugs_MakeBathSalts);
 
     // Smokable Recipe
-		RegisterRecipe(new SRP_Tree_Drugs_CraftRollingPapers);		
-		RegisterRecipe(new SRP_Tree_Drugs_RollZWeedJoint);
-		RegisterRecipe(new SRP_Tree_Drugs_RollCigarette);		    
-		RegisterRecipe(new SRP_Tree_Drugs_RollCigar);		    
+		RegisterRecipe(new SRP_Drugs_CraftRollingPapers);		
+		RegisterRecipe(new SRP_Drugs_RollZWeedJoint);
+		RegisterRecipe(new SRP_Drugs_RollCigarette);		    
+		RegisterRecipe(new SRP_Drugs_RollCigar);		    
     RegisterRecipe(new SRP_Craft_DrugPack);
     RegisterRecipe(new SRP_Craft_DrugCarton);	
 
-    RegisterRecipe(new SRP_Tree_Drugs_CreateCocaineStarterBag);	
-    RegisterRecipe(new SRP_Tree_Drugs_ManufactureCocaineFromRaw);	
-    RegisterRecipe(new SRP_Tree_Drugs_ManufactureCocaineFromPasteWithTubes);	
-    RegisterRecipe(new SRP_Tree_Drugs_CutDrugsFromCocaine);	
-    RegisterRecipe(new SRP_Tree_Drugs_CutDrugsFromCocaineTainted);
+    RegisterRecipe(new SRP_Drugs_CreateCocaineStarterBag);	
+    RegisterRecipe(new SRP_Drugs_ManufactureCocaineFromRaw);	
+    RegisterRecipe(new SRP_Drugs_ManufactureCocaineFromPasteWithTubes);	
+    RegisterRecipe(new SRP_Drugs_CutDrugsFromCocaine);	
+    RegisterRecipe(new SRP_Drugs_CutDrugsFromCocaineTainted);
 
     //---------- RP Craftables
     RegisterRecipe(new Craft_SRP_Notebook);

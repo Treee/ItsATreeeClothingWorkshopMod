@@ -152,7 +152,7 @@ class SRP_Recipe_CraftGunpowder_Explosives extends RecipeBase
       // } else if (grenade) {
       //   grenade.Unpin();
       //   grenade.SetPinnable(false);
-		  //   Debug.Log("SRP_Tree_Recipe_CraftGunpowder_Explosives Someone got unlucky heh");
+		  //   Debug.Log("SRP_Recipe_CraftGunpowder_Explosives Someone got unlucky heh");
       // }
     // }
     Debug.Log("SRP_Recipe_CraftGunpowder_Explosives Do method called","recipes");

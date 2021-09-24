@@ -1,4 +1,4 @@
-class SRP_Tree_Drugs_SplitLargeMethJar extends RecipeBase  
+class SRP_Drugs_SplitLargeMethJar extends RecipeBase  
 {
 	override void Init()
 	{
@@ -82,7 +82,7 @@ class SRP_Tree_Drugs_SplitLargeMethJar extends RecipeBase
 	}
 };
 
-class SRP_Tree_Drugs_SplitMediumMethJar extends RecipeBase  
+class SRP_Drugs_SplitMediumMethJar extends RecipeBase  
 {
 	override void Init()
 	{

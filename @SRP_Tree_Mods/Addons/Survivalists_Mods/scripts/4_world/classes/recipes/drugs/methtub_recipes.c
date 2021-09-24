@@ -1,4 +1,4 @@
-class SRP_Tree_Drugs_CookMeth extends RecipeBase 
+class SRP_Drugs_CookMeth extends RecipeBase 
 {
   bool m_isTainted = true;
 
@@ -72,7 +72,7 @@ class SRP_Tree_Drugs_CookMeth extends RecipeBase
 	}
 };
 
-class SRP_Tree_Drugs_MakeAcid extends RecipeBase 
+class SRP_Drugs_MakeAcid extends RecipeBase 
 {
   bool m_isTainted = true;
 
@@ -163,7 +163,7 @@ class SRP_Tree_Drugs_MakeAcid extends RecipeBase
 	}
 };
 
-class SRP_Tree_Drugs_MakeBathSalts extends RecipeBase 
+class SRP_Drugs_MakeBathSalts extends RecipeBase 
 {
   bool m_isTainted = true;
 
@@ -241,7 +241,7 @@ class SRP_Tree_Drugs_MakeBathSalts extends RecipeBase
 };
 
 
-class SRP_Tree_Drugs_DetermineQuality extends RecipeBase 
+class SRP_Drugs_DetermineQuality extends RecipeBase 
 {
   bool m_isTainted = true;
 

@@ -351,18 +351,18 @@ class SRPGlobals
 }
 
 ref array<string> SRP_SoundSets_Yawns_Male = {
-  "SRP_Tree_Mods_Yawn_Male_SoundSet1",
-  "SRP_Tree_Mods_Yawn_Male_SoundSet2",
-  "SRP_Tree_Mods_Yawn_Male_SoundSet3",
-  "SRP_Tree_Mods_Yawn_Male_SoundSet4"
+  "SRP_Mods_Yawn_Male_SoundSet1",
+  "SRP_Mods_Yawn_Male_SoundSet2",
+  "SRP_Mods_Yawn_Male_SoundSet3",
+  "SRP_Mods_Yawn_Male_SoundSet4"
 };
 
 ref array<string> SRP_SoundSets_Yawns_Female = {
-  "SRP_Tree_Mods_Yawn_Female_SoundSet1",
-  "SRP_Tree_Mods_Yawn_Female_SoundSet2",
-  "SRP_Tree_Mods_Yawn_Female_SoundSet3",
-  "SRP_Tree_Mods_Yawn_Female_SoundSet4",
-  "SRP_Tree_Mods_Yawn_Female_SoundSet5",
+  "SRP_Mods_Yawn_Female_SoundSet1",
+  "SRP_Mods_Yawn_Female_SoundSet2",
+  "SRP_Mods_Yawn_Female_SoundSet3",
+  "SRP_Mods_Yawn_Female_SoundSet4",
+  "SRP_Mods_Yawn_Female_SoundSet5",
 };
 
 ref array<string> SRP_SoundSets_ZombieAttack = {

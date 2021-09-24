@@ -1,4 +1,4 @@
-class SRP_Tree_Drugs_CraftRollingPapers extends RecipeBase  
+class SRP_Drugs_CraftRollingPapers extends RecipeBase  
 {
 	override void Init()
 	{
@@ -70,7 +70,7 @@ class SRP_Tree_Drugs_CraftRollingPapers extends RecipeBase
 	}
 };
 
-class SRP_Tree_Drugs_RollZWeedJoint extends RecipeBase
+class SRP_Drugs_RollZWeedJoint extends RecipeBase
 {
 	override void Init()
 	{
@@ -142,11 +142,11 @@ class SRP_Tree_Drugs_RollZWeedJoint extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		Debug.Log("SRP_Tree_Drugs_RollZWeedJoint Do method called","recipes");
+		Debug.Log("SRP_Drugs_RollZWeedJoint Do method called","recipes");
 	}
 };
 
-class SRP_Tree_Drugs_RollCigarette extends RecipeBase
+class SRP_Drugs_RollCigarette extends RecipeBase
 {
 	override void Init()
 	{
@@ -218,11 +218,11 @@ class SRP_Tree_Drugs_RollCigarette extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		Debug.Log("SRP_Tree_Drugs_RollCigarette Do method called","recipes");
+		Debug.Log("SRP_Drugs_RollCigarette Do method called","recipes");
 	}
 };
 
-class SRP_Tree_Drugs_RollCigar extends RecipeBase
+class SRP_Drugs_RollCigar extends RecipeBase
 {
 	override void Init()
 	{
@@ -294,7 +294,7 @@ class SRP_Tree_Drugs_RollCigar extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		Debug.Log("SRP_Tree_Drugs_RollCigar Do method called","recipes");
+		Debug.Log("SRP_Drugs_RollCigar Do method called","recipes");
 	}
 };
 

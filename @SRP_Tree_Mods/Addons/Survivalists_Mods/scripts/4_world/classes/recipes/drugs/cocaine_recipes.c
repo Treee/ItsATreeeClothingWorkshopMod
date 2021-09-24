@@ -1,4 +1,4 @@
-class SRP_Tree_Drugs_CreateCocaineStarterBag extends RecipeBase  
+class SRP_Drugs_CreateCocaineStarterBag extends RecipeBase  
 {
 	override void Init()
 	{
@@ -63,11 +63,11 @@ class SRP_Tree_Drugs_CreateCocaineStarterBag extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    Debug.Log("SRP_Tree_Drugs_CreateCocaineStarterBag Do method called","recipes");
+    Debug.Log("SRP_Drugs_CreateCocaineStarterBag Do method called","recipes");
 	}
 };
 
-class SRP_Tree_Drugs_ManufactureCocaineFromRaw extends RecipeBase  
+class SRP_Drugs_ManufactureCocaineFromRaw extends RecipeBase  
 {
 	override void Init()
 	{
@@ -138,11 +138,11 @@ class SRP_Tree_Drugs_ManufactureCocaineFromRaw extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    Debug.Log("SRP_Tree_Drugs_ManufactureCocaineFromRaw Do method called","recipes");
+    Debug.Log("SRP_Drugs_ManufactureCocaineFromRaw Do method called","recipes");
 	}
 };
 
-class SRP_Tree_Drugs_ManufactureCocaineFromPasteWithTubes extends RecipeBase  
+class SRP_Drugs_ManufactureCocaineFromPasteWithTubes extends RecipeBase  
 {
   bool m_isTainted = true;
 
@@ -199,7 +199,7 @@ class SRP_Tree_Drugs_ManufactureCocaineFromPasteWithTubes extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    Debug.Log("SRP_Tree_Drugs_ManufactureCocaineFromPasteWithTubes Do method called","recipes");
+    Debug.Log("SRP_Drugs_ManufactureCocaineFromPasteWithTubes Do method called","recipes");
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]); 
     if (tubeRack) 
     {
@@ -218,7 +218,7 @@ class SRP_Tree_Drugs_ManufactureCocaineFromPasteWithTubes extends RecipeBase
 	}
 };
 
-class SRP_Tree_Drugs_CutDrugsFromCocaine extends RecipeBase  
+class SRP_Drugs_CutDrugsFromCocaine extends RecipeBase  
 {
 	override void Init()
 	{
@@ -286,11 +286,11 @@ class SRP_Tree_Drugs_CutDrugsFromCocaine extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    Debug.Log("SRP_Tree_Drugs_CutDrugsFromCocaine Do method called","recipes");
+    Debug.Log("SRP_Drugs_CutDrugsFromCocaine Do method called","recipes");
 	}
 };
 
-class SRP_Tree_Drugs_CutDrugsFromCocaineTainted extends RecipeBase  
+class SRP_Drugs_CutDrugsFromCocaineTainted extends RecipeBase  
 {
 	override void Init()
 	{
@@ -358,6 +358,6 @@ class SRP_Tree_Drugs_CutDrugsFromCocaineTainted extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    Debug.Log("SRP_Tree_Drugs_CutDrugsFromCocaineTainted Do method called","recipes");
+    Debug.Log("SRP_Drugs_CutDrugsFromCocaineTainted Do method called","recipes");
 	}
 };
