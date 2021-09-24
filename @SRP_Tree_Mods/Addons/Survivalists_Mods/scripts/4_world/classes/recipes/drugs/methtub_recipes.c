@@ -279,10 +279,14 @@ class SRP_Tree_Drugs_DetermineQuality extends RecipeBase
 		InsertIngredient(1,"SRP_ConsumableDrug_BathSalts"); //  secondary ingredient
 		InsertIngredient(1,"SRP_ConsumableDrug_SmileyAcid"); //  secondary ingredient
 		InsertIngredient(1,"SRP_ConsumableDrug_SkullAcid"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_Cocaine"); //  secondary ingredient
+		InsertIngredient(1,"SRP_DrugBrick_Cocaine"); //  secondary ingredient
 		InsertIngredient(1,"SRP_ConsumableDrug_MethSmallTainted"); //  secondary ingredient
 		InsertIngredient(1,"SRP_ConsumableDrug_BathSaltsTainted"); //  secondary ingredient
 		InsertIngredient(1,"SRP_ConsumableDrug_SmileyAcidTainted"); //  secondary ingredient
 		InsertIngredient(1,"SRP_ConsumableDrug_SkullAcidTainted"); //  secondary ingredient
+		InsertIngredient(1,"SRP_ConsumableDrug_CocaineTainted"); //  secondary ingredient
+		InsertIngredient(1,"SRP_DrugBrick_CocaineTainted"); //  secondary ingredient
 		
 		m_IngredientAddHealth[1] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing

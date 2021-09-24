@@ -69,7 +69,9 @@ modded class PluginRecipesManagerBase extends PluginBase
 
     RegisterRecipe(new SRP_Tree_Drugs_CreateCocaineStarterBag);	
     RegisterRecipe(new SRP_Tree_Drugs_ManufactureCocaineFromRaw);	
+    RegisterRecipe(new SRP_Tree_Drugs_ManufactureCocaineFromPasteWithTubes);	
     RegisterRecipe(new SRP_Tree_Drugs_CutDrugsFromCocaine);	
+    RegisterRecipe(new SRP_Tree_Drugs_CutDrugsFromCocaineTainted);
 
     //---------- RP Craftables
     RegisterRecipe(new Craft_SRP_Notebook);

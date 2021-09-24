@@ -83,3 +83,14 @@ class SRP_ConsumableDrug_Cocaine extends SRP_ConsumableDrug_Colorbase {
 	}	
 };
 class SRP_ConsumableDrug_CocaineTainted extends SRP_ConsumableDrug_Cocaine {};
+
+class SRP_ConsumableDrug_CocainePaste extends SRP_ConsumableDrug_Colorbase {
+  override void OnConsume(float amount, PlayerBase consumer)
+	{				
+		// if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BATHSALTS ) )
+		// {
+		// 	consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BATHSALTS );
+		// }
+		// consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BATHSALTS );
+	}	
+};

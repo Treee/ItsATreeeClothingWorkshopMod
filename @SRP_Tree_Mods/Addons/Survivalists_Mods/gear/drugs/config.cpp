@@ -1100,34 +1100,14 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=30;
     varTemperatureMax=100;
-    class DamageSystem
+    class Nutrition
 		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=50;
-					healthLevels[]=
-					{
-            {1,{"DZ\gear\consumables\data\Loot_Paper.rvmat"}},
-            {0.69999999,{"DZ\gear\consumables\data\Loot_Paper.rvmat"}},
-            {0.5,{"DZ\gear\consumables\data\Loot_Paper_damage.rvmat"}},
-            {0.30000001,{"DZ\gear\consumables\data\Loot_Paper_damage.rvmat"}},
-            {0,{"DZ\gear\consumables\data\Loot_Paper_destruct.rvmat"}}
-			    };
-				};
-			};
-    };
-    class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="pickUpPaper_SoundSet";
-					id=797;
-				};
-			};
+			fullnessIndex=2;
+			energy=100;
+			water=100;
+      blood=100;
+			nutritionalIndex=2;
+			toxicity=0;
 		};
   };
   class SRP_ConsumableDrug_CocaineTainted: SRP_ConsumableDrug_Colorbase
@@ -1142,34 +1122,14 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=30;
     varTemperatureMax=100;
-    class DamageSystem
+    class Nutrition
 		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=50;
-					healthLevels[]=
-					{
-            {1,{"DZ\gear\consumables\data\Loot_Paper.rvmat"}},
-            {0.69999999,{"DZ\gear\consumables\data\Loot_Paper.rvmat"}},
-            {0.5,{"DZ\gear\consumables\data\Loot_Paper_damage.rvmat"}},
-            {0.30000001,{"DZ\gear\consumables\data\Loot_Paper_damage.rvmat"}},
-            {0,{"DZ\gear\consumables\data\Loot_Paper_destruct.rvmat"}}
-			    };
-				};
-			};
-    };
-    class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="pickUpPaper_SoundSet";
-					id=797;
-				};
-			};
+			fullnessIndex=2;
+			energy=-500;
+			water=-500;
+      blood=-500;
+			nutritionalIndex=2;
+			toxicity=20;
 		};
   };
 
@@ -1195,6 +1155,13 @@ class CfgVehicles
 		};
   };
 
+  class SRP_DrugBrick_CocaineTainted : SRP_DrugBrick_Cocaine 
+  {
+    scope=2;
+    displayName="Brick of Cocaine";
+    descriptionShort="A white powder packed into a brick shape.";
+  };
+
   class SRP_DrugCraft_CocaineStarter: DryBag_ColorBase
 	{
 		scope=2;
@@ -1209,6 +1176,36 @@ class CfgVehicles
 			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
 			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
 			"DZ\characters\backpacks\data\DryBag_Orange_co.paa"
+		};
+	};
+
+  class SRP_ConsumableDrug_CocainePaste: SRP_ConsumableDrug_Colorbase
+	{
+		scope=2;
+		displayName="Jar of Cocaine Paste";
+		descriptionShort="This jar contains many delicous bath salts. Copnsuming these shows you have no regard for your life.";
+		model="\dz\gear\food\Honey.p3d";
+    color="CocainePaste";
+		itemSize[]={4,4};
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    hiddenSelections[]={
+      "zbytek",
+      "camoground"
+    };
+    hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\drugs\data\cocainepaste_ca.paa",
+      "Survivalists_Mods\gear\drugs\data\cocainepaste_ca.paa"
+    };
+    class Nutrition
+		{
+			fullnessIndex=2;
+			energy=-1000;
+			water=-1000;
+      blood=-1000;
+			nutritionalIndex=2;
+			toxicity=10;
 		};
 	};
 

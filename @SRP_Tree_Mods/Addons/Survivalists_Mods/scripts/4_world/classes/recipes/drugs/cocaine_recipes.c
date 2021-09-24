@@ -106,10 +106,10 @@ class SRP_Tree_Drugs_ManufactureCocaineFromRaw extends RecipeBase
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//result 1
-		AddResult("SRP_DrugBrick_Cocaine");	// recipe result
+		AddResult("SRP_ConsumableDrug_CocainePaste");	// recipe result
 		
 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
-		m_ResultSetQuantity[0] = 1;			// result quantity
+		m_ResultSetQuantity[0] = -1;			// result quantity
 		m_ResultSetHealth[0] = -1;			// -1 = do nothing
 		m_ResultInheritsHealth[0] = -1;		// -1 = do nothing
 		m_ResultInheritsColor[0] = -1;		// -1 = do nothing
@@ -121,13 +121,19 @@ class SRP_Tree_Drugs_ManufactureCocaineFromRaw extends RecipeBase
   override bool CanDo(ItemBase ingredients[], PlayerBase player)
 	{
     // dry the cocaine before packing
-		SRP_DrugCraft_CocaineStarter cocaineStarter;
+    // gas cannister should have only gasoline
+    bool canCraft = false;
     if (ingredients[0])
     {
-			cocaineStarter = SRP_DrugCraft_CocaineStarter.Cast( ingredients[0] );
+		  SRP_DrugCraft_CocaineStarter cocaineStarter = SRP_DrugCraft_CocaineStarter.Cast( ingredients[0] );
+      canCraft = (cocaineStarter && cocaineStarter.GetInventory().CountInventory() == 10);
     }
-    int count = cocaineStarter.GetInventory().CountInventory();
-		return (cocaineStarter && cocaineStarter.GetInventory().CountInventory() == 10);
+    if (ingredients[1])
+    {
+      CanisterGasoline gas = CanisterGasoline.Cast(ingredients[1]);
+      canCraft = canCraft && ( gas.GetLiquidType() == LIQUID_GASOLINE && gas.GetQuantity() == 20000);  
+    }
+		return canCraft;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
@@ -136,11 +142,87 @@ class SRP_Tree_Drugs_ManufactureCocaineFromRaw extends RecipeBase
 	}
 };
 
+class SRP_Tree_Drugs_ManufactureCocaineFromPasteWithTubes extends RecipeBase  
+{
+  bool m_isTainted = true;
+
+	override void Init()
+	{
+		m_Name = "Manufacture Cocaine";	// action name in game
+		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
+		m_AnimationLength = 1;		// animation length in relative time units
+		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
+		
+		//conditions
+		m_MinDamageIngredient[0] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[0] = -1;	//-1 = disable check
+		m_MinQuantityIngredient[0] = -1;	//quantity 1 required for primary ingredient
+		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
+		
+		m_MinDamageIngredient[1] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[1] = -1;	//-1 = disable check
+		m_MinQuantityIngredient[1] = -1;	//quantity 1 required for secondary ingredient
+		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+		
+		//ingredient 1  
+		InsertIngredient(0,"SRP_ConsumableDrug_CocainePaste");	// primary ingredient
+		
+		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
+		m_IngredientDestroy[0] = 1;	// -1 = do nothing
+		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//ingredient 2					
+		InsertIngredient(1,"SRP_LabTubeRack");
+		
+		m_IngredientAddHealth[1] = -10;	// -10 = do nothing
+		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
+		m_IngredientDestroy[1] = -11;		// destroy secondary ingredient
+		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+		
+	}
+
+  override bool CanDo(ItemBase ingredients[], PlayerBase player)
+	{
+    SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]);
+    if (tubeRack && tubeRack.GetInventory().AttachmentCount() > 0) {
+      if (tubeRack.IsCocainePuzzleSolved()) { // if you have the puzzle solved, the drugs are untainted
+        m_isTainted = false;
+        return true;
+      }
+      return true;
+    }
+		return false;
+	}
+
+	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
+	{
+    Debug.Log("SRP_Tree_Drugs_ManufactureCocaineFromPasteWithTubes Do method called","recipes");
+    SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]); 
+    if (tubeRack) 
+    {
+      ItemBase cocaine;
+      if (m_isTainted) 
+      {
+        cocaine = ItemBase.Cast(GetGame().CreateObject("SRP_DrugBrick_CocaineTainted", player.GetPosition(), false));
+        results.Insert(cocaine);
+      } 
+      else 
+      {
+        cocaine = ItemBase.Cast(GetGame().CreateObject("SRP_DrugBrick_Cocaine", player.GetPosition(), false));
+        results.Insert(cocaine);
+      }
+    }
+	}
+};
+
 class SRP_Tree_Drugs_CutDrugsFromCocaine extends RecipeBase  
 {
 	override void Init()
 	{
-		m_Name = "Manufacture Cocaine";	// action name in game
+		m_Name = "Cut Cocaine";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 1;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
@@ -205,5 +287,77 @@ class SRP_Tree_Drugs_CutDrugsFromCocaine extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
     Debug.Log("SRP_Tree_Drugs_CutDrugsFromCocaine Do method called","recipes");
+	}
+};
+
+class SRP_Tree_Drugs_CutDrugsFromCocaineTainted extends RecipeBase  
+{
+	override void Init()
+	{
+		m_Name = "Cut Cocaine";	// action name in game
+		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
+		m_AnimationLength = 1;		// animation length in relative time units
+		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
+		
+		//conditions
+		m_MinDamageIngredient[0] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[0] = -1;	//-1 = disable check
+		m_MinQuantityIngredient[0] = 20;	//quantity 1 required for primary ingredient
+		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
+		
+		m_MinDamageIngredient[1] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[1] = -1;	//-1 = disable check
+		m_MinQuantityIngredient[1] = -1;	//quantity 1 required for secondary ingredient
+		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+		
+		//ingredient 1  
+		InsertIngredient(0,"SRP_DrugBrick_CocaineTainted");	// primary ingredient
+		
+		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[0] = -20;// -1 = do nothing
+		m_IngredientDestroy[0] = -1;	// -1 = do nothing
+		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//ingredient 2					
+		InsertIngredient(1,"KitchenKnife");
+		InsertIngredient(1,"SteakKnife");		
+		InsertIngredient(1,"StoneKnife");
+		InsertIngredient(1,"Cleaver");
+		InsertIngredient(1,"CombatKnife");
+		InsertIngredient(1,"HuntingKnife");
+		InsertIngredient(1,"Machete");								
+		InsertIngredient(1,"AK_Bayonet");
+		InsertIngredient(1,"M9A1_Bayonet");
+		InsertIngredient(1,"Mosin_Bayonet");
+		InsertIngredient(1,"SKS_Bayonet");
+		
+		m_IngredientAddHealth[1] = -1;	// -10 = do nothing
+		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
+		m_IngredientDestroy[1] = 1;		// destroy secondary ingredient
+		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//result 1
+		AddResult("SRP_ConsumableDrug_CocaineTainted");	// recipe result
+		
+		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
+		m_ResultSetQuantity[0] = 30;			// result quantity
+		m_ResultSetHealth[0] = -1;			// -1 = do nothing
+		m_ResultInheritsHealth[0] = -1;		// -1 = do nothing
+		m_ResultInheritsColor[0] = -1;		// -1 = do nothing
+		m_ResultToInventory[0] = -1;		// -1 = do nothing
+		m_ResultUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by soft skillson this result
+		m_ResultReplacesIngredient[0] = -1;	// -1 = do nothing
+	}
+
+  override bool CanDo(ItemBase ingredients[], PlayerBase player)
+	{
+    return true;
+	}
+
+	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
+	{
+    Debug.Log("SRP_Tree_Drugs_CutDrugsFromCocaineTainted Do method called","recipes");
 	}
 };
