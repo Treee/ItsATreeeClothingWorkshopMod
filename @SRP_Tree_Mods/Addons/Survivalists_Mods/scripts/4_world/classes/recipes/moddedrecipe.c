@@ -83,6 +83,11 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_WoodenBowlCherry);
     RegisterRecipe(new Craft_SRP_WoodenBowlSquare);
 
+    RegisterRecipe(new Craft_SRP_WoodenDiceWhite);
+    RegisterRecipe(new Craft_SRP_WoodenDiceWhiteRed);
+    RegisterRecipe(new Craft_SRP_WoodenDiceBlackWhite);
+    RegisterRecipe(new Craft_SRP_WoodenDiceBlackRed);
+
     // Food Recipes	
     RegisterRecipe(new SRP_CreateVeggiesMeatComboCanned_Raw);		
     RegisterRecipe(new SRP_CreateVeggiesCanned_Raw);		
