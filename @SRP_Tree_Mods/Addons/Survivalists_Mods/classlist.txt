@@ -322,13 +322,9 @@ SRP_MetalShelfSimpleGround_Kit
 SRP_MetalShelfSimpleGround
 SRP_MetalShelfGround_Kit
 SRP_MetalShelfGround
-SRP_TetrisShelfLDown_Kit
 SRP_TetrisShelfLDown
-SRP_TetrisShelfLUp_Kit
 SRP_TetrisShelfLUp
-SRP_TetrisShelfLLeft_Kit
 SRP_TetrisShelfLLeft
-SRP_TetrisShelfLRight_Kit
 SRP_TetrisShelfLRight
 SRP_TetrisShelfIVertical
 SRP_TetrisShelfIHorizontal

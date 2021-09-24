@@ -414,12 +414,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_TetrisShelfLDown_Kit: SRP_KitBase //new
+
+  class SRP_TetrisShelfKit_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Tetris Shelf Kit - L Shape Down";
-		descriptionShort="A shelf in the shape of a tetris piece.";
+		displayName="Tetris Shelf Kit - Ground";
+		descriptionShort="A Tetris Shelf Kit";
 	};
+
   class SRP_TetrisShelfLDown: Container_Base //new
 	{
 		scope=2;
@@ -435,12 +437,6 @@ class CfgVehicles
 		physLayer="item_large";
 		allowOwnedCargoManipulation=1;
 	};
-  class SRP_TetrisShelfLUp_Kit: SRP_KitBase //new
-	{
-		scope=2;
-		displayName="Tetris Shelf Kit - L Shape Up";
-		descriptionShort="A shelf in the shape of a tetris piece.";
-	}; 
   class SRP_TetrisShelfLUp: Container_Base //new
 	{
 		scope=2;
@@ -456,12 +452,6 @@ class CfgVehicles
 		physLayer="item_large";
 		allowOwnedCargoManipulation=1;
 	};
-  class SRP_TetrisShelfLLeft_Kit: SRP_KitBase //new
-	{
-		scope=2;
-		displayName="Tetris Shelf Kit - L Shape Left";
-		descriptionShort="A shelf in the shape of a tetris piece.";
-	}; 
   class SRP_TetrisShelfLLeft: Container_Base //new
 	{
 		scope=2;
@@ -476,12 +466,6 @@ class CfgVehicles
 		itemBehaviour=0;
 		physLayer="item_large";
 		allowOwnedCargoManipulation=1;
-	};
-  class SRP_TetrisShelfLRight_Kit: SRP_KitBase //new
-	{
-		scope=2;
-		displayName="Tetris Shelf Kit - L Shape Right";
-		descriptionShort="A shelf in the shape of a tetris piece.";
 	};
   class SRP_TetrisShelfLRight: Container_Base //new
 	{

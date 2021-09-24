@@ -88,6 +88,20 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_WoodenDiceBlackWhite);
     RegisterRecipe(new Craft_SRP_WoodenDiceBlackRed);
 
+    RegisterRecipe(new Craft_SRP_TetrisShelfKit);
+    RegisterRecipe(new Craft_SRP_TetrisShelfLDown);
+    RegisterRecipe(new Craft_SRP_TetrisShelfLUp);
+    RegisterRecipe(new Craft_SRP_TetrisShelfLLeft);
+    RegisterRecipe(new Craft_SRP_TetrisShelfLRight);
+    RegisterRecipe(new Craft_SRP_TetrisShelfIVertical);
+    RegisterRecipe(new Craft_SRP_TetrisShelfIHorizontal);
+    RegisterRecipe(new Craft_SRP_TetrisShelfTUp);
+    RegisterRecipe(new Craft_SRP_TetrisShelfTDown);
+    RegisterRecipe(new Craft_SRP_TetrisShelfTVertical);
+    RegisterRecipe(new Craft_SRP_TetrisShelfSHorizontal);
+    RegisterRecipe(new Craft_SRP_TetrisShelfSVertical);
+    RegisterRecipe(new Craft_SRP_TetrisShelfBox);
+
     // Food Recipes	
     RegisterRecipe(new SRP_CreateVeggiesMeatComboCanned_Raw);		
     RegisterRecipe(new SRP_CreateVeggiesCanned_Raw);		
