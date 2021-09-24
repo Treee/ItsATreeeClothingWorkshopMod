@@ -218,7 +218,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_SewingMachineTable: Container_Base
+  class SRP_SewingTable: Container_Base
 	{
 		scope=2;
 		displayName="Tailor Machine";
@@ -322,90 +322,11 @@ class CfgVehicles
 			};
 		};
 	};
-	class SRP_SewingTable_pack: Inventory_Base
+	class SRP_SewingTable_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Sewing Table";
 		descriptionShort="A sewing machine used to tailor clothing";
-		model="\DZ\gear\camping\wooden_case.p3d";
-		overrideDrawArea="8.0";
-		useEntityHierarchy="true";
-		destroyOnEmpty=0;
-		varQuantityDestroyOnMin=0;
-		quantityBar=1;
-		SingleUseActions[]={527};
-		InteractActions[]={1025,1026};
-		ContinuousActions[]={155};
-		carveNavmesh=0;
-		canBeDigged=0;
-		heavyItem=1;
-		weight=500;
-		itemSize[]={8,10};
-		itemBehaviour=0;
-		randomQuantity=2;
-		liquidContainerType="";
-		varQuantityInit=0;
-		physLayer="item_large";
-		absorbency=0.1;
-		allowOwnedCargoManipulation=1;
-		lootTag[]=
-		{
-			"Work"
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=1000;
-					healthLevels[]=
-					{
-						
-						{
-							1.01,
-							{}
-						},
-						
-						{
-							0.69999999,
-							{}
-						},
-						
-						{
-							0.5,
-							{}
-						},
-						
-						{
-							0.30000001,
-							{}
-						},
-						
-						{
-							0.0099999998,
-							{}
-						}
-					};
-				};
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem_Light
-				{
-					soundSet="pickUpBarrelLight_SoundSet";
-					id=796;
-				};
-				class pickUpItem
-				{
-					soundSet="pickUpBarrel_SoundSet";
-					id=797;
-				};
-			};
-		};
 	};
 	class SRP_SewingMachine: Inventory_Base
 	{

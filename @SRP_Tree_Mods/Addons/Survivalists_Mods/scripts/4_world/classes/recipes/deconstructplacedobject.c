@@ -60,6 +60,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_CarpetRug");
     InsertIngredient(0,"SRP_MedicalCurtains");
     InsertIngredient(0,"SRP_BarricadeMetal");
+    InsertIngredient(0,"SRP_SewingTable");
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -71,6 +72,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 		//ingredient 2
 		InsertIngredient(1,"Hammer");
     InsertIngredient(1,"Screwdriver");
+    InsertIngredient(1,"Pliers");
 		
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing

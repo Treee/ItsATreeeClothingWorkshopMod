@@ -161,6 +161,7 @@ class SRP_MilitaryCaseLong extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongBlue extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
 class SRP_BarricadeMetal extends SRP_Container_Base{};
+class SRP_SewingTable extends SRP_Container_Base{};
 
 class SRP_ArmorStandBasic extends SRP_Container_Base
 {
