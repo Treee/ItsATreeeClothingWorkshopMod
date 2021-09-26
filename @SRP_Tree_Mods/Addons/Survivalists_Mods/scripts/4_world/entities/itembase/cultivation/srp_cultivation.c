@@ -21,3 +21,5 @@ class Plant_Cocaine extends PlantBase
     m_FullMaturityTime = 2700;
   }
 };
+class CocaineSeedsPack extends SeedPackBase {};
+class TobaccoSeedsPack extends SeedPackBase {};
