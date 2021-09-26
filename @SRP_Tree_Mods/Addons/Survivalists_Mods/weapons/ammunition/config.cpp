@@ -432,31 +432,6 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_Gunpowder_open: Inventory_Base
-	{
-		scope=2;
-		displayName="Gunpowder";
-		descriptionShort="Gunpowder can, flammable!";
-		model="\dz\gear\food\food_can_open.p3d";
-		itemSize[]={2,2};
-		rotationFlags=1;
-		stackedUnit="percentage";
-		quantityBar=1;
-		varQuantityInit=100;
-		varQuantityMin=0;
-		varQuantityMax=100;
-		weight=40;
-		fragility=0.0099999998;
-		hiddenSelections[]=
-		{
-			"camoGround"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\weapons\ammunition\data\Poroh.paa"
-		};
-	};
-
   // Casing + powder = starter kit
   // starter kit + projectile = bullet kit
   // bullet kit + workbench = bullet
