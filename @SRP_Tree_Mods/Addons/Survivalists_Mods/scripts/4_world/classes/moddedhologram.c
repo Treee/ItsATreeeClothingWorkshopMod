@@ -6,6 +6,7 @@ modded class Hologram
     // Print("ProjectionBasedOnParent " + itemInHands);
     if (itemInHands.IsInherited(SRP_KitBase))
     {
+      // Print("Inherits from my kit");
       SRP_KitBase srpKit = SRP_KitBase.Cast(itemInHands);
       return srpKit.GetKitItemName();
     }
@@ -14,29 +15,7 @@ modded class Hologram
 		return s;
 	}
 
-  override string GetProjectionName(ItemBase item)
-	{
-    // Print("GetProjectionName: " + item.GetType());
-		if( !item )
-			return "";
-		
-		if ( item.CanMakeGardenplot() )
-		{
-      // Print("GetProjectionName: GardenPlot");
-			return "GardenPlotPlacing";
-		}
-		
-		//Camping & Base building
-		if ( item.IsInherited( TentBase ) || item.IsBasebuildingKit() )
-		{
-      // Print("TentBase, BuildingKitBase: " + item.GetType() + "Placing");
-			return item.GetType() + "Placing";
-		}
-		
-		return item.GetType();
-	}
-
-	EntityAI PlaceEntity( EntityAI entity_for_placing )
+	override EntityAI PlaceEntity( EntityAI entity_for_placing )
 	{
     // If we are placing our kits
 		if ( entity_for_placing.IsInherited( SRP_KitBase ))
@@ -52,7 +31,8 @@ modded class Hologram
       return entity_for_placing;
 		}
     // pass through super call
-    return super.PlaceEntity(entity_for_placing);	
+    EntityAI ent = super.PlaceEntity(entity_for_placing);
+		return ent;
 	}
 
   // Building anywhere override
@@ -62,15 +42,35 @@ modded class Hologram
 		if (IsCollidingGPlot())
     {
 			SetIsColliding(true);
+      return;
     }
     else if (itemInHands.IsInherited(SRP_KitBase)) // if the item in our hands is our kit
     {
       // ignore collision
-      SetIsColliding(false);      
+      SetIsColliding(false);
+      return;
     }
     else 
     {
       SetIsColliding(false);
+      return;
+    }
+    super.EvaluateCollision(action_item);
+	}
+
+  override protected void GetProjectionCollisionBox( out vector min_max[2] )
+	{
+    // Print("Pre super");
+    if (m_Projection)
+    {
+      super.GetProjectionCollisionBox(min_max);
+      // Print("Post super " + m_Projection.GetType());
+      // for  some reason there is no bounding box on the drug tub. this forces it to use good memory points
+      if (m_Projection && m_Projection.GetType() == "SRP_DrugWorkbench") 
+      {
+        min_max[0] = m_Projection.GetMemoryPointPos( "box_placing_min" );
+        min_max[1] = m_Projection.GetMemoryPointPos( "box_placing_max" );
+      }
     }
 	}
 };
