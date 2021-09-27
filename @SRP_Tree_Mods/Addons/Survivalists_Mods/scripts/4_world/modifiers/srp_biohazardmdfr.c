@@ -18,7 +18,7 @@ class SRP_BioHazardMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_BIOHAZARD;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
-    Print("Registering::SRP_BioHazardMdfr Success");
+    // Print("Registering::SRP_BioHazardMdfr Success");
 	}
 
 	override bool ActivateCondition(PlayerBase player)
