@@ -31,20 +31,12 @@ class CfgVehicles
   class PoliceJacketOrel;
 
   // Remove eventually once Lore dictates
-  class MassArmbandDouble_Colorbase;
-  class Skylar_BioZone_Protection: MassArmbandDouble_Colorbase
+  class SaltyCougars_Armband;
+  class Skylar_BioZone_Protection: SaltyCougars_Armband
 	{
 		scope=2;
 		displayName="The Queen's Shawl";
 		descriptionShort="Ignore biohzard effects";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\tops\data\SaltyCougars_armbands_co.paa",
-			"Survivalists_Mods\characters\tops\data\SaltyCougars_armbands_co.paa",
-			"Survivalists_Mods\characters\tops\data\SaltyCougars_armbands_co.paa",
-			"Survivalists_Mods\characters\tops\data\SaltyCougars_armbands_co.paa",
-			"Survivalists_Mods\characters\tops\data\SaltyCougars_armbands_co.paa"
-		};
     class Protection {
       biological=6;
     }
