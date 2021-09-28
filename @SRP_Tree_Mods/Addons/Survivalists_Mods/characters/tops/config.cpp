@@ -31,8 +31,8 @@ class CfgVehicles
   class PoliceJacketOrel;
 
   // Remove eventually once Lore dictates
-  class SaltyCougars_Armband;
-  class Skylar_BioZone_Protection: SaltyCougars_Armband
+  class SaltyCougar_Armband;
+  class Skylar_BioZone_Protection: SaltyCougar_Armband
 	{
 		scope=2;
 		displayName="The Queen's Shawl";
