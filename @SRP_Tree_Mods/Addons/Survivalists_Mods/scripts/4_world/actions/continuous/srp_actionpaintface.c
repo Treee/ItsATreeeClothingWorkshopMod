@@ -42,8 +42,8 @@ class ActionPaintFace: ActionContinuousBase
       SRP_FacePaintStick paintStick = SRP_FacePaintStick.Cast(action_data.m_MainItem);
       if (paintStick)
       {        
-        paintStick.m_facepaintType = action_data.m_Player.m_currentCamoIndex;
-        action_data.m_MainItem.OnApply(action_data.m_Player);
+        action_data.m_Player.m_facepaintState = action_data.m_Player.m_currentCamoIndex;
+        action_data.m_Player.SetSynchDirty();
       }			
 		}
 	}
@@ -55,8 +55,8 @@ class ActionPaintFace: ActionContinuousBase
       SRP_FacePaintStick paintStick = SRP_FacePaintStick.Cast(action_data.m_MainItem);
       if (paintStick)
       {        
-        paintStick.m_facepaintType = action_data.m_Player.m_currentCamoIndex;
-        action_data.m_MainItem.OnApply(action_data.m_Player);
+        action_data.m_Player.m_facepaintState = action_data.m_Player.m_currentCamoIndex;
+        action_data.m_Player.SetSynchDirty();
       }			
 		}
 	}

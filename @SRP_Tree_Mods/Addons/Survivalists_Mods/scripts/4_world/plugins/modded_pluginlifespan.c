@@ -17,7 +17,7 @@ modded class PluginLifespan
 					players_head.SetObjectTexture( 0, "");
 					players_head.SetObjectMaterial( 0, "");
 
-          // Print("No beard: " + player.m_facepaintState);
+          Print("No beard: " + player.m_facepaintState);
 
           if (player.m_facepaintState > 0)
           {
@@ -39,7 +39,7 @@ modded class PluginLifespan
 					players_head.SetObjectTexture( 0, "");
 					players_head.SetObjectMaterial( 0, "");	
 
-          // Print("Medium beard: " + player.m_facepaintState);
+          Print("Medium beard: " + player.m_facepaintState);
 
 					if (player.m_facepaintState > 0)
           {
@@ -62,7 +62,7 @@ modded class PluginLifespan
 					players_head.SetObjectTexture( 0, "");
 					players_head.SetObjectMaterial( 0, "");	
 					
-          // Print("Large beard: " + player.m_facepaintState);
+          Print("Large beard: " + player.m_facepaintState);
 
 					if (player.m_facepaintState > 0)
           {
@@ -84,7 +84,7 @@ modded class PluginLifespan
 				{
 					players_head.SetObjectTexture( 0, level.GetTextureName() );
 					players_head.SetObjectMaterial( 0, level.GetMaterialName() );
-          // Print("extra beard: " + player.m_facepaintState);
+          Print("extra beard: " + player.m_facepaintState);
 					array< ref LifespanLevel> lifespan_levels = m_LifespanLevels.Get( player.GetPlayerClass() );
 					LifespanLevel prev_level = lifespan_levels.Get(LifeSpanState.BEARD_LARGE);
 
@@ -120,8 +120,8 @@ modded class PluginLifespan
     TStringArray parts = new TStringArray;
     modifiedMaterial.Split("\\", parts);
     // Print("these are parts " + parts[5]);
-    Print(FACEPAINT_PATH + player.GetSelectedCamoName() + parts[5]);
     modifiedMaterial = FACEPAINT_PATH + player.GetSelectedCamoName() + "\\" + parts[5];
+    Print("facepaint path: " + modifiedMaterial);
     return modifiedMaterial;
   }
 }

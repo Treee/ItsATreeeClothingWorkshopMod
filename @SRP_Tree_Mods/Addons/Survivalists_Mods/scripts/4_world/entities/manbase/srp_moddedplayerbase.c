@@ -8,7 +8,9 @@ modded class PlayerBase extends ManBase
 
   SRP_ActionOpenMapCB m_OpenMapCallback;
 
+  const string FACEPAINT_PATH = "Survivalists_Mods\\characters\\heads\\";
   int	m_facepaintState;
+  int m_facepaintStateLocal;
   int m_currentCamoIndex;
   int m_facepaintCountMax;
 
@@ -16,7 +18,8 @@ modded class PlayerBase extends ManBase
 	{
     super.Init();
 
-    m_facepaintState = -1;
+    m_facepaintState = 0;
+    m_facepaintStateLocal = 0;
     m_currentCamoIndex = 0;
     m_facepaintCountMax = GetPlayerCamoNames().Count() - 1;
     RegisterNetSyncVariableInt("m_facepaintState", 0, m_facepaintCountMax);
@@ -66,50 +69,46 @@ modded class PlayerBase extends ManBase
     }
   }
 
-  override void OnStoreSaveLifespan( ParamsWriteContext ctx )
-	{		
-		ctx.Write( m_LifeSpanState );	
-		ctx.Write( m_LastShavedSeconds );	
-		ctx.Write( m_HasBloodyHandsVisible );
-		ctx.Write( m_HasBloodTypeVisible );
-		ctx.Write( m_BloodType );
-		ctx.Write( m_facepaintState );
-	}
+  override void OnVariablesSynchronized()
+  {
+		super.OnVariablesSynchronized();
+    Print("sync variables");
+		if( m_facepaintStateLocal != m_facepaintState && IsPlayerLoaded())
+		{
+      Print("sync camo state");
+			UpdateCamoState();
+		} 
+  }
 
-	override bool OnStoreLoadLifespan( ParamsReadContext ctx, int version )
-	{	
-		int lifespan_state = 0;
-		if(!ctx.Read( lifespan_state ))
-			return false;
-		m_LifeSpanState = lifespan_state;
-		
-		int last_shaved = 0;
-		if(!ctx.Read( last_shaved ))
-			return false;
-		m_LastShavedSeconds = last_shaved;
-		
-		bool bloody_hands = false;
-		if(!ctx.Read( bloody_hands ))
-			return false;
-		m_HasBloodyHandsVisible = bloody_hands;
-		
-		bool blood_visible = false;
-		if(!ctx.Read( blood_visible ))
-			return false;
-		m_HasBloodTypeVisible = blood_visible;
-		
-		int blood_type = 0;
-		if(!ctx.Read( blood_type ))
-			return false;
-		m_BloodType = blood_type;
+  void UpdateCamoState()
+  {
+    Print("Update camo state");
+    if (!IsMale())
+    {
+      Print("female");
+      int slot_id = InventorySlots.GetSlotIdFromString("Head");	
+      EntityAI players_head = GetInventory().FindPlaceholderForSlot( slot_id );
+      players_head.SetObjectMaterial( 0, "");
+      
+      string playerType = GetType();
+      playerType.Replace("SurvivorF_", "");
+      string filepath = "hhl_f_" + playerType + "_body.rvmat";
+      string materialPath = FACEPAINT_PATH + GetSelectedCamoName() + "\\" + filepath;
+      Print("female face path: " + materialPath);
+      SetFaceMaterial( materialPath );
+    }
+    else 
+    {
+      Print("male");
+      if ( m_ModuleLifespan )
+      {
+        Print("module lifespan is not null");
+		    m_ModuleLifespan.UpdateLifespan( this, true );
 
-    int facepaintState = 0;
-		if(!ctx.Read( facepaintState ))
-			return false;
-		m_facepaintState = facepaintState;
-
-		return true;
-	}
+      }
+    }
+    m_facepaintStateLocal = m_facepaintState;
+  }
 
   string GetSelectedCamoName()
   {
