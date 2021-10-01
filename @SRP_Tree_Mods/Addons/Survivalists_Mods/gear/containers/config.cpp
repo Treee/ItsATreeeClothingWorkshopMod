@@ -1991,8 +1991,7 @@ class CfgVehicles
     itemsCargoSize[]={1,1};
     attachments[]=
 		{
-			"OakBark",
-			"BirchBark",
+			"Bark",
       "WoodenStick",
       "Firewood",
       "Material_WoodenLogs"
@@ -2007,8 +2006,7 @@ class CfgVehicles
     itemsCargoSize[]={1,1};
     attachments[]=
 		{
-			"OakBark",
-			"BirchBark",
+			"Bark",
       "WoodenStick",
       "Firewood",
       "Material_WoodenLogs",
