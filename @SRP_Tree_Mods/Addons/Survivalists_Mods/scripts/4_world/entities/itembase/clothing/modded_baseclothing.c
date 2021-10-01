@@ -36,4 +36,8 @@ class Skylar_BioZone_Protection extends Armband_ColorBase
 	{
 		return false;
 	}
+  override void OnWasDetached( EntityAI parent, int slot_id )
+  {
+    this.Delete();
+  }
 };
