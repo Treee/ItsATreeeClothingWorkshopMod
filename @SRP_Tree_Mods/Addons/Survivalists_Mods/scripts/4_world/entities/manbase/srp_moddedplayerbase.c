@@ -80,6 +80,26 @@ modded class PlayerBase extends ManBase
 		} 
   }
 
+  bool SRPIgnoreContaminatedArea()
+  {
+    if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 2400)
+    {
+      return true;
+    }
+    EntityAI attachment = GetInventory().FindAttachment(InventorySlots.ARMBAND);
+		if(attachment && attachment.GetType() == "Skylar_BioZone_Protection")
+    {
+      return true;
+    }
+    int slot_id = InventorySlots.GetSlotIdFromString("Head");
+    Head_Default tempHead = Head_Default.Cast(GetInventory().FindPlaceholderForSlot( slot_id ));
+    if (tempHead.GetType() == "DUB_Muthead_M" || tempHead.GetType() == "DUB_Muthead_F" || tempHead.GetType() == "DUB_Muthead_M_2" || tempHead.GetType() == "DUB_Muthead_F_2")
+    {
+      return true;
+    }
+    return false;
+  }
+
   void UpdateCamoState()
   {
     // Print("Update camo state");
