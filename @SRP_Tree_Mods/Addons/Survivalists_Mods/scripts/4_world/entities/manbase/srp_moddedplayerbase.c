@@ -80,6 +80,19 @@ modded class PlayerBase extends ManBase
 		} 
   }
 
+  override bool CanSprint()
+  {
+    ItemBase item;
+    if (Class.CastTo(item, FindAttachmentBySlotName("Vest")))
+    {
+      if (item && (item.GetType() == "SRP_Ratnik_Green" || item.GetType() == "SRP_Ratnik_Tan" || item.GetType() == "SRP_Ratnik_Black"))
+      {
+        return false;
+      }
+    }
+    return super.CanSprint();
+  }
+
   bool SRPIgnoreContaminatedArea()
   {
     if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 2400)
