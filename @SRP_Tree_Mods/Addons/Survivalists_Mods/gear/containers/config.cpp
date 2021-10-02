@@ -1434,7 +1434,6 @@ class CfgVehicles
 		};
 		carveNavmesh=1;
 		canBeDigged=0;
-		heavyItem=1;
 		weight=1000;
 		itemSize[]={10,15};
 		itemBehaviour=0;
@@ -1454,7 +1453,7 @@ class CfgVehicles
 		};
 		class Cargo
 		{
-			itemsCargoSize[]={10,12};
+			itemsCargoSize[]={2,3};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
@@ -1574,7 +1573,7 @@ class CfgVehicles
 		};
 		class Cargo
 		{
-			itemsCargoSize[]={10,12};
+			itemsCargoSize[]={2,3};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};

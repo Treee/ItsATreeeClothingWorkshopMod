@@ -8,7 +8,7 @@ class SRP_DeployableContainer_Base extends DeployableContainer_Base
 	{
 		return false;
 	}
-  override bool CanPutIntoHands (EntityAI parent)
+  override bool CanPutIntoHands(EntityAI parent)
   {
     return true;
   }
