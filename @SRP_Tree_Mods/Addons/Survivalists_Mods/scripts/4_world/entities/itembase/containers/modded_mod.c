@@ -74,3 +74,18 @@ modded class Msp_Fridge_Base
     delete m_AllowedCargo;
   }
 };
+
+modded class DUB_Gunframe
+{
+  override bool CanPutInCargo( EntityAI parent )
+	{
+		return GetInventory().AttachmentCount() == 0;
+	}
+};
+modded class DUB_Meleeframe
+{
+  override bool CanPutInCargo( EntityAI parent )
+	{
+		return GetInventory().AttachmentCount() == 0;
+	}
+};
