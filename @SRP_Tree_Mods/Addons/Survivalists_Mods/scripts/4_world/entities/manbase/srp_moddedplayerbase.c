@@ -72,20 +72,20 @@ modded class PlayerBase extends ManBase
   override void OnVariablesSynchronized()
   {
 		super.OnVariablesSynchronized();
-    Print("sync variables");
+    // Print("sync variables");
 		if( m_facepaintStateLocal != m_facepaintState && IsPlayerLoaded())
 		{
-      Print("sync camo state");
+      // Print("sync camo state");
 			UpdateCamoState();
 		} 
   }
 
   void UpdateCamoState()
   {
-    Print("Update camo state");
+    // Print("Update camo state");
     if (!IsMale())
     {
-      Print("female");
+      // Print("female");
       int slot_id = InventorySlots.GetSlotIdFromString("Head");	
       EntityAI players_head = GetInventory().FindPlaceholderForSlot( slot_id );
       players_head.SetObjectMaterial( 0, "");
@@ -99,10 +99,10 @@ modded class PlayerBase extends ManBase
     }
     else 
     {
-      Print("male");
+      // Print("male");
       if ( m_ModuleLifespan )
       {
-        Print("module lifespan is not null");
+        // Print("module lifespan is not null");
 		    m_ModuleLifespan.UpdateLifespan( this, true );
 
       }

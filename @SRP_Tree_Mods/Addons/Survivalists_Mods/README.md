@@ -575,3 +575,7 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 (maybe if i can get textures working)
 "Headwear" (https://skfb.ly/6RODS) by noyou is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+# Reference
+
+- https://community.bistudio.com/wiki/DayZ_Contaminated_Areas_Configuration

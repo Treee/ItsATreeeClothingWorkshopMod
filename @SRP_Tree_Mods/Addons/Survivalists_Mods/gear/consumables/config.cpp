@@ -177,7 +177,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Face Paint Stick";
-		descriptionShort="Paint your face into a lion.";
+		descriptionShort="Paint your face into a lion. Might take some time to stick on your face, be patient between applications.";
 		model="\dz\gear\medical\Epinephrine.p3d";
 		rotationFlags=17;
 		itemSize[]={1,2};
