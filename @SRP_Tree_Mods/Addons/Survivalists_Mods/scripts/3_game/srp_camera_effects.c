@@ -188,7 +188,7 @@ class CameraEffects: PPEffects
   // Intensity value between 0-100. 0 been least instense, 100 most intense.
 	static void changeVignette(int intensity) 
 	{
-		Material materialColors = GetGame().GetWorld().GetMaterial("graphics/gaterials/postprocess/glow");
+		Material materialColors = GetGame().GetWorld().GetMaterial("graphics/materials/postprocess/glow");
 		VIGNETTE = (intensity * 0.02);
 
 		if(materialColors)

@@ -1453,7 +1453,7 @@ class CfgVehicles
 		};
 		class Cargo
 		{
-			itemsCargoSize[]={2,3};
+			itemsCargoSize[]={4,3};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
