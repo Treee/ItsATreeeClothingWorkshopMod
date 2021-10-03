@@ -1,4 +1,7 @@
-modded class PPERequesterBank
-{
-  static const int SRP_REQ_WEEDHIGH	= RegisterRequester(PPERequester_WeedHigh);
-};
+// modded class PPERequesterRegistrations extends Managed
+// {
+// 	void PPERequesterRegistrations()
+// 	{
+// 		PPERequesterBank.RegisterRequester(PPERequester_DrugVisuals);
+// 	}
+// }
