@@ -133,12 +133,13 @@ class SRP_Drugs_MakeAcid extends RecipeBase
     SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]); 
     if (methTub && tubeRack) {
       if (m_isTainted) {
-        if (tubeRack.IsSmileyAcidPuzzleSolved()) 
+        float chance = Math.RandomFloat01();
+        if (chance > 0.7)
         {
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SmileyAcidTainted");
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SmileyAcidTainted");
-        } 
-        else if (tubeRack.IsSkullAcidPuzzleSolved()) 
+        }
+        else 
         {
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SkullAcidTainted");
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SkullAcidTainted");
