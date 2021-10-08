@@ -1041,3 +1041,17 @@ SRP_Dynamite_Stack
 Melee Weapons
 SRP_Trenchknife
 SRP_KatanaBamboo
+
+
+
+
+// Adding
+SRP_Furniture_BarrelTable_Kit
+SRP_Furniture_Barrel_Kit
+SRP_Furniture_Sofa_Kit
+SRP_Furniture_BarCounter_Kit
+
+SRP_Furniture_BarrelTable
+SRP_Furniture_Barrel
+SRP_Furniture_Sofa
+SRP_Furniture_BarCounter

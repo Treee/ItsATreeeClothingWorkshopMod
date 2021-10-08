@@ -27,11 +27,18 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\furniture\SRP_BarCounter.p3d";
 	};
 
+  class SRP_Furniture_BarCounter_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Bar Counter Kit";
+		descriptionShort="A placeable bar counter kit!";
+	};
+
   class SRP_Furniture_BarCounter: Container_Base  // new
 	{
 		scope=2;
-		displayName="Sofa";
-		descriptionShort="You are the sofa king!";
+		displayName="Bar Counter";
+		descriptionShort="Everything you need to run a bar!";
 		model="Survivalists_Mods\structures\furniture\SRP_BarCounter.p3d";
 		carveNavmesh=1;
 		itemBehaviour=2;
@@ -83,6 +90,13 @@ class CfgVehicles
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\furniture\SRP_BarSofaL.p3d";
+	};
+
+  class SRP_Furniture_Sofa_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Bar Sofa Kit";
+		descriptionShort="A placeable bar sofa kit!";
 	};
 
   class SRP_Furniture_Sofa: Container_Base  // new
@@ -143,12 +157,19 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\furniture\SRP_BarBarrel.p3d";
 	};
 
+  class SRP_Furniture_Barrel_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Barrel Kit";
+		descriptionShort="A placeable barrel kit!";
+	};
+
   class SRP_Furniture_Barrel: Container_Base  // new
 	{
 		scope=2;
 		displayName="Wooden Barrel";
 		descriptionShort="This is a barrel. Made of wood.";
-		model="Survivalists_Mods\structures\furniture\SRP_BarBarrelTable.p3d";
+		model="Survivalists_Mods\structures\furniture\SRP_BarBarrel.p3d";
 		carveNavmesh=1;
 		itemBehaviour=2;
 		weight=3000;
@@ -199,6 +220,13 @@ class CfgVehicles
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\furniture\SRP_BarBarrelTable.p3d";
+	};
+
+  class SRP_Furniture_BarrelTable_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Barrel Table Kit";
+		descriptionShort="A placeable barrel table kit!";
 	};
 
 	class SRP_Furniture_BarrelTable: Container_Base  // new

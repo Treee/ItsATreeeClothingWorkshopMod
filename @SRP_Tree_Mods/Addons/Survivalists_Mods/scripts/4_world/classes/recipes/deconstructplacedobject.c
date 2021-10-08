@@ -62,6 +62,11 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_BarricadeMetal");
     InsertIngredient(0,"SRP_SewingTable");
 
+    InsertIngredient(0,"SRP_Furniture_Barrel");
+    InsertIngredient(0,"SRP_Furniture_BarrelTable");
+    InsertIngredient(0,"SRP_Furniture_Sofa");
+    InsertIngredient(0,"SRP_Furniture_BarCounter");
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
