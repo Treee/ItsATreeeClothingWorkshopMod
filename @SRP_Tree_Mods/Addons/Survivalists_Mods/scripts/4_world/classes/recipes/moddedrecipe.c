@@ -25,6 +25,9 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new Craft_SRP_StreetLightMedium_Kit);		
 		RegisterRecipe(new Craft_SRP_StreetLightMedium_Wood_Kit);
 
+		RegisterRecipe(new Craft_SRP_Container_WoodenBarrelKit);
+		RegisterRecipe(new Craft_SRP_Container_WoodenBarrelTableKit);
+
     // Building
     RegisterRecipe(new Craft_SRP_Planks);
 
