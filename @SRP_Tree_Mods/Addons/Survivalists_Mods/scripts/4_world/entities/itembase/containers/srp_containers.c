@@ -85,6 +85,11 @@ class SRP_PostBox extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxBlue extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxWooden extends SRP_DeployableContainer_Base{};
 
+class SRP_Furniture_Barrel extends SRP_DeployableContainer_Base{};
+class SRP_Furniture_BarrelTable extends SRP_DeployableContainer_Base{};
+class SRP_Furniture_Sofa extends SRP_DeployableContainer_Base{};
+class SRP_Furniture_BarCounter extends SRP_DeployableContainer_Base{};
+
 class SRP_TetrisShelfLDown extends SRP_DeployableContainer_Base{};
 class SRP_TetrisShelfLUp extends SRP_DeployableContainer_Base{};
 class SRP_TetrisShelfLLeft extends SRP_DeployableContainer_Base{};

@@ -30,4 +30,5 @@ modded class DayZGame
       randomSkin = "SurvivorM_Mirek";
     }
 		return randomSkin;
+  }
 };

@@ -26,13 +26,116 @@ class CfgVehicles
 		scope=1;
 		model="Survivalists_Mods\structures\furniture\SRP_BarCounter.p3d";
 	};
+
+  class SRP_Furniture_BarCounter: Container_Base  // new
+	{
+		scope=2;
+		displayName="Sofa";
+		descriptionShort="You are the sofa king!";
+		model="Survivalists_Mods\structures\furniture\SRP_BarCounter.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
 	class land_srp_saloon_sofal: HouseNoDestruct
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\furniture\SRP_BarSofaL.p3d";
 	};
 
-
+  class SRP_Furniture_Sofa: Container_Base  // new
+	{
+		scope=2;
+		displayName="Sofa";
+		descriptionShort="You are the sofa king!";
+		model="Survivalists_Mods\structures\furniture\SRP_BarSofaL.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
 
   class land_srp_saloon_barrel: HouseNoDestruct
 	{
@@ -40,11 +143,116 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\furniture\SRP_BarBarrel.p3d";
 	};
 
+  class SRP_Furniture_Barrel: Container_Base  // new
+	{
+		scope=2;
+		displayName="Wooden Barrel";
+		descriptionShort="This is a barrel. Made of wood.";
+		model="Survivalists_Mods\structures\furniture\SRP_BarBarrelTable.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
   class land_srp_saloon_barreltable: HouseNoDestruct
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\furniture\SRP_BarBarrelTable.p3d";
 	};
+
+	class SRP_Furniture_BarrelTable: Container_Base  // new
+	{
+		scope=2;
+		displayName="Barrel Table";
+		descriptionShort="This is a table... You put things on it?";
+		model="Survivalists_Mods\structures\furniture\SRP_BarBarrelTable.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
 
 	class SRP_Furniture_WoodenTable_Kit: SRP_KitBase
 	{
