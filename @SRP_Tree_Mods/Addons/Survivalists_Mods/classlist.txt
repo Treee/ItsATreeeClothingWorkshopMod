@@ -1044,7 +1044,6 @@ SRP_KatanaBamboo
 
 
 
-
 // Adding
 SRP_Furniture_BarrelTable_Kit
 SRP_Furniture_Barrel_Kit
