@@ -157,6 +157,11 @@ class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Kit extends SRP_KitBase{};
 
+class SRP_Furniture_BarrelTable_Kit extends SRP_KitBase{};
+class SRP_Furniture_Barrel_Kit extends SRP_KitBase{};
+class SRP_Furniture_Sofa_Kit extends SRP_KitBase{};
+class SRP_Furniture_BarCounter_Kit extends SRP_KitBase{};
+
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase{};
 class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
 
@@ -200,8 +205,3 @@ class SRP_CarpetRug_Kit extends SRP_KitBase{};
 class SRP_MedicalCurtains_Kit extends SRP_KitBase{};
 class SRP_BarricadeMetal_Kit extends SRP_KitBase{};
 class SRP_SewingTable_Kit extends SRP_KitBase{};
-
-class SRP_Furniture_BarrelTable_Kit extends SRP_KitBase{};
-class SRP_Furniture_Barrel_Kit extends SRP_KitBase{};
-class SRP_Furniture_Sofa_Kit extends SRP_KitBase{};
-class SRP_Furniture_BarCounter_Kit extends SRP_KitBase{};
