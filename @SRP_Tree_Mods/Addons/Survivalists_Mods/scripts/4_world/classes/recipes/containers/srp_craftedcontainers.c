@@ -81,7 +81,7 @@ class Craft_SRP_Container_WoodenBarrelTableKit extends RecipeBase
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		
 		//ingredient 1  
-		InsertIngredient(0,"MetalSheet");	// primary ingredient
+		InsertIngredient(0,"MetalPlate");	// primary ingredient
 		
 		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
