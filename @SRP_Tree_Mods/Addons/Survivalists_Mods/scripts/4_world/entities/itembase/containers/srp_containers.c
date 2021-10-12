@@ -168,6 +168,65 @@ class SRP_TetrisShelfSHorizontal extends SRP_Container_Base{};
 class SRP_TetrisShelfSVertical extends SRP_Container_Base{};
 class SRP_TetrisShelfBox extends SRP_Container_Base{};
 
+// These need to be deleted by an admin after placement.
+class SRP_ForestSign_Original extends SRP_Container_Base{};
+class SRP_ForestSign_Sanctuary extends SRP_Container_Base{};
+class SRP_Gravestone_1Stone extends SRP_Container_Base{};
+class SRP_Gravestone_1Moss extends SRP_Container_Base{};
+class SRP_Gravestone_2 extends SRP_Container_Base{};
+class SRP_Gravestone_3 extends SRP_Container_Base{};
+class SRP_Gravestone_4 extends SRP_Container_Base{};
+class SRP_Gravestone_5 extends SRP_Container_Base{};
+class SRP_Gravestone_6 extends SRP_Container_Base{};
+class SRP_Gravestone_7 extends SRP_Container_Base{};
+class SRP_Gravestone_8 extends SRP_Container_Base{};
+class SRP_Gravestone_8Moss extends SRP_Container_Base{};
+class SRP_Gravestone_9 extends SRP_Container_Base{};
+class SRP_Gravestone_10 extends SRP_Container_Base{};
+class SRP_Gravestone_11 extends SRP_Container_Base{};
+class SRP_Gravestone_11Worn extends SRP_Container_Base{};
+class SRP_Gravestone_1Mud extends SRP_Container_Base{};
+class SRP_Gravestone_2Mud extends SRP_Container_Base{};
+class SRP_Gravestone_3Mud extends SRP_Container_Base{};
+class SRP_Gravestone_1MudGrass extends SRP_Container_Base{};
+class SRP_Gravestone_2MudGrass extends SRP_Container_Base{};
+class SRP_Gravestone_3MudGrass extends SRP_Container_Base{};
+class SRP_Gravestone_12 extends SRP_Container_Base{};
+class SRP_Gravestone_13 extends SRP_Container_Base{};
+class SRP_Gravestone_14 extends SRP_Container_Base{};
+class SRP_Gravestone_14Moss extends SRP_Container_Base{};
+class SRP_Gravestone_15 extends SRP_Container_Base{};
+class SRP_Gravestone_15Moss extends SRP_Container_Base{};
+class SRP_Gravestone_16 extends SRP_Container_Base{};
+class SRP_Gravestone_16Moss extends SRP_Container_Base{};
+class SRP_Gravestone_17 extends SRP_Container_Base{};
+class SRP_Gravestone_18 extends SRP_Container_Base{};
+class SRP_Gravestone_19 extends SRP_Container_Base{};
+class SRP_Gravestone_19Open extends SRP_Container_Base{};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class SRP_ArmorStandBasic extends SRP_Container_Base
 {
   override void EEItemAttached(EntityAI item, string slot_name)

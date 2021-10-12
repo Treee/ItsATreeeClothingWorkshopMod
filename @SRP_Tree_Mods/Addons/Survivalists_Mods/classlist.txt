@@ -1044,7 +1044,7 @@ SRP_KatanaBamboo
 
 
 
-// Adding
+// Adding 10/08/2021
 SRP_Furniture_BarrelTable_Kit
 SRP_Furniture_Barrel_Kit
 SRP_Furniture_Sofa_Kit
@@ -1054,3 +1054,40 @@ SRP_Furniture_BarrelTable
 SRP_Furniture_Barrel
 SRP_Furniture_Sofa
 SRP_Furniture_BarCounter
+
+
+// Adding 10/12/2021
+SRP_ForestSign_Original
+SRP_ForestSign_Sanctuary
+SRP_Gravestone_1Stone
+SRP_Gravestone_1Moss
+SRP_Gravestone_2
+SRP_Gravestone_3
+SRP_Gravestone_4
+SRP_Gravestone_5
+SRP_Gravestone_6
+SRP_Gravestone_7
+SRP_Gravestone_8
+SRP_Gravestone_8Moss
+SRP_Gravestone_9
+SRP_Gravestone_10
+SRP_Gravestone_11
+SRP_Gravestone_11Worn
+SRP_Gravestone_1Mud
+SRP_Gravestone_2Mud
+SRP_Gravestone_3Mud
+SRP_Gravestone_1MudGrass
+SRP_Gravestone_2MudGrass
+SRP_Gravestone_3MudGrass
+SRP_Gravestone_12
+SRP_Gravestone_13
+SRP_Gravestone_14
+SRP_Gravestone_14Moss
+SRP_Gravestone_15
+SRP_Gravestone_15Moss
+SRP_Gravestone_16
+SRP_Gravestone_16Moss
+SRP_Gravestone_17
+SRP_Gravestone_18
+SRP_Gravestone_19
+SRP_Gravestone_19Open
