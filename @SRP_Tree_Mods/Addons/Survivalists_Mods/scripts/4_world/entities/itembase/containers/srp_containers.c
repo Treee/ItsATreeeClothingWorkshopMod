@@ -85,19 +85,6 @@ class SRP_PostBox extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxBlue extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxWooden extends SRP_DeployableContainer_Base{};
 
-class SRP_TetrisShelfLDown extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfLUp extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfLLeft extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfLRight extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfIVertical extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfIHorizontal extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfTUp extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfTDown extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfTVertical extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfSHorizontal extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfSVertical extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfBox extends SRP_DeployableContainer_Base{};
-
 class SRP_GiftBoxSmall extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxMedium extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxLarge extends SRP_DeployableContainer_Base{};
@@ -168,6 +155,18 @@ class SRP_Furniture_BarrelTable extends SRP_Container_Base{};
 class SRP_Furniture_Sofa extends SRP_Container_Base{};
 class SRP_Furniture_BarCounter extends SRP_Container_Base{};
 
+class SRP_TetrisShelfLDown extends SRP_Container_Base{};
+class SRP_TetrisShelfLUp extends SRP_Container_Base{};
+class SRP_TetrisShelfLLeft extends SRP_Container_Base{};
+class SRP_TetrisShelfLRight extends SRP_Container_Base{};
+class SRP_TetrisShelfIVertical extends SRP_Container_Base{};
+class SRP_TetrisShelfIHorizontal extends SRP_Container_Base{};
+class SRP_TetrisShelfTUp extends SRP_Container_Base{};
+class SRP_TetrisShelfTDown extends SRP_Container_Base{};
+class SRP_TetrisShelfTVertical extends SRP_Container_Base{};
+class SRP_TetrisShelfSHorizontal extends SRP_Container_Base{};
+class SRP_TetrisShelfSVertical extends SRP_Container_Base{};
+class SRP_TetrisShelfBox extends SRP_Container_Base{};
 
 class SRP_ArmorStandBasic extends SRP_Container_Base
 {

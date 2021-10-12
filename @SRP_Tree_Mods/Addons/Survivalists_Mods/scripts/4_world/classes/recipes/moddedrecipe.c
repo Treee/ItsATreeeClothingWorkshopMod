@@ -12,6 +12,7 @@ modded class PluginRecipesManagerBase extends PluginBase
     // Crafting
     //---------Deconstruct Items into Kits
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
+    RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
     
     //---------Kits
 		RegisterRecipe(new Craft_SRP_BedsideTable_Kit);

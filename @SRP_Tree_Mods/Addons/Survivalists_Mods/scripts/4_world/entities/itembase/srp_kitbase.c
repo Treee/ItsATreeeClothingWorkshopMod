@@ -205,3 +205,42 @@ class SRP_CarpetRug_Kit extends SRP_KitBase{};
 class SRP_MedicalCurtains_Kit extends SRP_KitBase{};
 class SRP_BarricadeMetal_Kit extends SRP_KitBase{};
 class SRP_SewingTable_Kit extends SRP_KitBase{};
+
+// Gravestones
+class SRP_ForestSign_Original_Kit extends SRP_KitBase{};
+class SRP_ForestSign_Sanctuary_Kit extends SRP_KitBase{};
+class SRP_Gravestone_1Stone_Kit extends SRP_KitBase{};
+class SRP_Gravestone_1Moss_Kit extends SRP_KitBase{};
+class SRP_Gravestone_2_Kit extends SRP_KitBase{};
+class SRP_Gravestone_3_Kit extends SRP_KitBase{};
+class SRP_Gravestone_4_Kit extends SRP_KitBase{};
+class SRP_Gravestone_5_Kit extends SRP_KitBase{};
+class SRP_Gravestone_6_Kit extends SRP_KitBase{};
+class SRP_Gravestone_7_Kit extends SRP_KitBase{};
+class SRP_Gravestone_8_Kit extends SRP_KitBase{};
+class SRP_Gravestone_8Moss_Kit extends SRP_KitBase{};
+class SRP_Gravestone_9_Kit extends SRP_KitBase{};
+class SRP_Gravestone_10_Kit extends SRP_KitBase{};
+class SRP_Gravestone_11_Kit extends SRP_KitBase{};
+class SRP_Gravestone_11Worn_Kit extends SRP_KitBase{};
+class SRP_Gravestone_1Mud_Kit extends SRP_KitBase{};
+class SRP_Gravestone_2Mud_Kit extends SRP_KitBase{};
+class SRP_Gravestone_3Mud_Kit extends SRP_KitBase{};
+class SRP_Gravestone_1MudGrass_Kit extends SRP_KitBase{};
+class SRP_Gravestone_2MudGrass_Kit extends SRP_KitBase{};
+class SRP_Gravestone_3MudGrass_Kit extends SRP_KitBase{};
+class SRP_Gravestone_12_Kit extends SRP_KitBase{};
+class SRP_Gravestone_13_Kit extends SRP_KitBase{};
+class SRP_Gravestone_14_Kit extends SRP_KitBase{};
+class SRP_Gravestone_14Moss_Kit extends SRP_KitBase{};
+class SRP_Gravestone_15_Kit extends SRP_KitBase{};
+class SRP_Gravestone_15Moss_Kit extends SRP_KitBase{};
+class SRP_Gravestone_16_Kit extends SRP_KitBase{};
+class SRP_Gravestone_16Moss_Kit extends SRP_KitBase{};
+class SRP_Gravestone_17_Kit extends SRP_KitBase{};
+class SRP_Gravestone_18_Kit extends SRP_KitBase{};
+class SRP_Gravestone_19_Kit extends SRP_KitBase{};
+class SRP_Gravestone_19Open_Kit extends SRP_KitBase{};
+
+// This crafted item is not placeable
+class SRP_TetrisShelfKit_Kit extends ItemBase {};

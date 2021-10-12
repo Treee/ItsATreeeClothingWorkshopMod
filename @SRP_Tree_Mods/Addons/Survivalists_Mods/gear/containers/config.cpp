@@ -418,8 +418,8 @@ class CfgVehicles
   class SRP_TetrisShelfKit_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Tetris Shelf Kit - Ground";
-		descriptionShort="A Tetris Shelf Kit";
+		displayName="Tetris Shelf Kit";
+		descriptionShort="A Tetris Shelf Kit - Still needs a bit of work";
 	};
 
   class SRP_TetrisShelfLDown: Container_Base //new
