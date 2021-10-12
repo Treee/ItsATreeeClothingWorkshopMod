@@ -67,6 +67,20 @@ class SRP_LabTubeRack extends ItemBase{
     bool slot2 = IsSlotFilledWithColor("TestTube5", "blue") || IsSlotFilledWithColor("TestTube5", "red") || IsSlotFilledWithColor("TestTube5", "yellow");
     return slot2 && slot3 && slot5;
   }
+
+  void ApplyTestTubeUsageDamage()
+  {
+    SRP_LabTube_Colorbase labtube;
+    for(int i = 1; i < 6; i++) // start at 1 then go until 5 (not inclusive of 6)
+		{
+      string slotName = "TestTube"+i;
+      labtube = SRP_LabTube_Colorbase.Cast(FindAttachmentBySlotName(slotName));
+      if (labtube)
+      {
+        labtube.AddHealth(-10); // 10 damage per use
+      }
+    }
+  }
 };
 
 class SRP_LabTube_Colorbase extends ItemBase {};

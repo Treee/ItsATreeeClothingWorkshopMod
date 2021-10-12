@@ -58,7 +58,9 @@ class SRP_Drugs_CookMeth extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
     SRP_DrugWorkbench methTub = SRP_DrugWorkbench.Cast(ingredients[0]);
-    if (methTub) {
+    SRP_LabTubeRack tubeRack = SRP_LabTubeRack.Cast(ingredients[1]);
+
+    if (methTub && tubeRack) {
       if (m_isTainted) {
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethSmallTainted");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethSmallTainted");
@@ -68,6 +70,7 @@ class SRP_Drugs_CookMeth extends RecipeBase
       }
       // reduce attachments quantity
       methTub.ReduceAttachmentQuantities_Meth();
+      tubeRack.ApplyTestTubeUsageDamage();
     }
 	}
 };
@@ -160,6 +163,7 @@ class SRP_Drugs_MakeAcid extends RecipeBase
       }
       // reduce attachments quantity
       methTub.ReduceAttachmentQuantities_Acid();
+      tubeRack.ApplyTestTubeUsageDamage();          
     }
 	}
 };
@@ -237,6 +241,7 @@ class SRP_Drugs_MakeBathSalts extends RecipeBase
       }
       // reduce attachments quantity
       methTub.ReduceAttachmentQuantities_Salts();
+      tubeRack.ApplyTestTubeUsageDamage();
     }
 	}
 };
