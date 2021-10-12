@@ -271,10 +271,10 @@ modded class PlayerBase extends ManBase
         GetGame().ObjectDelete(cargoItemIB);
       }
     }
-    GiveResults(createdItem);
+    GiveResults(createdItem, workbench);
   }
 
-  void GiveResults(CraftedItem createdItem)
+  void GiveResults(CraftedItem createdItem, ItemBase workbench)
   {
     // Print("Give Results: " +createdItem.result);
     ItemBase itemReward;
@@ -299,13 +299,15 @@ modded class PlayerBase extends ManBase
       // if the max quantity is less than the totaly that we need, keep making items
       if (q_max < needQuantity)
       {
-        itemReward = ItemBase.Cast(GetGame().CreateObject(createdItem.result, GetPosition(), false));
+        // itemReward = ItemBase.Cast(GetGame().CreateObject(createdItem.result, GetPosition(), false));
+        itemReward = workbench.GetInventory().CreateInInventory(createdItem.result);
         // Print("max item is less thant total: " + itemReward);
         needQuantity -= q_max;
       }
       else
       { // the item actually has quantity so reduce that
-        itemReward = ItemBase.Cast(GetGame().CreateObject(createdItem.result, GetPosition(), false));
+        // itemReward = ItemBase.Cast(GetGame().CreateObject(createdItem.result, GetPosition(), false));
+        itemReward = workbench.GetInventory().CreateInInventory(createdItem.result);
         // Print("item has quantity: " + itemReward);
         Magazine pileReward;
         if (Class.CastTo(pileReward, itemReward))
