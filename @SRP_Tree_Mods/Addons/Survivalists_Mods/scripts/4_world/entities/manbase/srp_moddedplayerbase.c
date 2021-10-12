@@ -300,14 +300,14 @@ modded class PlayerBase extends ManBase
       if (q_max < needQuantity)
       {
         // itemReward = ItemBase.Cast(GetGame().CreateObject(createdItem.result, GetPosition(), false));
-        itemReward = workbench.GetInventory().CreateInInventory(createdItem.result);
+        itemReward = ItemBase.Cast(workbench.GetInventory().CreateInInventory(createdItem.result));
         // Print("max item is less thant total: " + itemReward);
         needQuantity -= q_max;
       }
       else
       { // the item actually has quantity so reduce that
         // itemReward = ItemBase.Cast(GetGame().CreateObject(createdItem.result, GetPosition(), false));
-        itemReward = workbench.GetInventory().CreateInInventory(createdItem.result);
+        itemReward = ItemBase.Cast(workbench.GetInventory().CreateInInventory(createdItem.result));
         // Print("item has quantity: " + itemReward);
         Magazine pileReward;
         if (Class.CastTo(pileReward, itemReward))
