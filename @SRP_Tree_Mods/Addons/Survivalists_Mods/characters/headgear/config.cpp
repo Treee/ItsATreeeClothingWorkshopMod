@@ -838,7 +838,8 @@ class CfgVehicles
     color="base";
 		inventorySlot[]=
     {
-      "Mask"
+      "Mask",
+      "Headgear"
     };
 		headSelectionsToHide[]=
     {
@@ -976,7 +977,8 @@ class CfgVehicles
     color="base";
 		inventorySlot[]=
     {
-      "Mask"
+      "Mask",
+      "Headgear"
     };
 		headSelectionsToHide[]=
     {
@@ -1186,7 +1188,8 @@ class CfgVehicles
     color="base";
 		inventorySlot[]=
     {
-      "Mask"
+      "Mask",
+      "Headgear"
     };
 		headSelectionsToHide[]=
     {
