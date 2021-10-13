@@ -565,9 +565,13 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Flourbag" (https://skfb.ly/6XvrX) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
 
-# Wishlist
+- "Name Plate" (https://skfb.ly/6R8Kv) by Andrew.Mischenko is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Name Plate" (https://skfb.ly/6R8Kv) by Andrew.Mischenko is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Glasses" (https://skfb.ly/6WMUM) by _SeF_ is liceWnsed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- ""Mińsk" Fridge" (https://skfb.ly/6BME7) by Michalina "Miszla" Gąsienica-Laskowy is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+# Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 

@@ -1979,6 +1979,56 @@ class CfgVehicles
 		};
 	};
 
+  // Sneaky Stash Replacement
+  class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
+  {
+		scope=2;
+		rotationFlags=17;
+		weight=980;
+		itemSize[]={5,5};
+		itemsCargoSize[]={5,5};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcase_woodland_co.paa"
+		};
+  }
+  class SRP_SmallProtectorCase_Digital: SmallProtectorCase
+  {
+		scope=2;
+		rotationFlags=17;
+		weight=980;
+		itemSize[]={5,5};
+		itemsCargoSize[]={5,5};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcase_digital_co.paa"
+		};
+  }
+  class SRP_SmallProtectorCase_Winter: SmallProtectorCase
+  {
+		scope=2;
+		rotationFlags=17;
+		weight=980;
+		itemSize[]={5,5};
+		itemsCargoSize[]={5,5};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcase_winter_co.paa"
+		};
+  }
+  
   // modifying sneaky stashes
   class kitholders;
   class SneakySmallLogPile: kitholders
