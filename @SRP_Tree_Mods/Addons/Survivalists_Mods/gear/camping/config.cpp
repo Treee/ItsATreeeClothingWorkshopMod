@@ -1185,7 +1185,17 @@ class CfgVehicles
     };
 	};
 
-
+  class SRP_DeskNamePlate: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Desk Nameplate";
+		descriptionShort="This used to sit on someones desk.";
+		model="Survivalists_Mods\gear\camping\nameplate.p3d";
+		weight=250;
+		itemSize[]={3,1};
+		absorbency=0.30000001;
+		physLayer="item_small";
+	};
   //------------------------------ BASE BUILDING
 
 };

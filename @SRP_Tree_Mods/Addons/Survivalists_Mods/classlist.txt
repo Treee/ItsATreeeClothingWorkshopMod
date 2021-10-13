@@ -1091,3 +1091,4 @@ SRP_Gravestone_17
 SRP_Gravestone_18
 SRP_Gravestone_19
 SRP_Gravestone_19Open
+SRP_DeskNamePlate
