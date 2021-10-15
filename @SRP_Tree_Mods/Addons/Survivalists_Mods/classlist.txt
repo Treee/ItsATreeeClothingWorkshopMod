@@ -1097,3 +1097,13 @@ SRP_SmallProtectorCase_Digital
 SRP_SmallProtectorCase_Winter
 SRP_FridgeMinsk_Kit
 SRP_FridgeMinsk
+SRP_Mining_Stone_Copper
+SRP_Mining_Stone_Iron
+SRP_Mining_Stone_Tin
+SRP_Mining_Stone_Gold
+SRP_Mining_Stone_Platinum
+SRP_Mining_SmallStone_Copper
+SRP_Mining_SmallStone_Iron
+SRP_Mining_SmallStone_Tin
+SRP_Mining_SmallStone_Gold
+SRP_Mining_SmallStone_Platinum

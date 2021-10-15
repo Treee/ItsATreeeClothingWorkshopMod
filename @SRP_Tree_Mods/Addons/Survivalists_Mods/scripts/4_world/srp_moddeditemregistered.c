@@ -25,7 +25,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_ConsumableDrug_CocaineTainted", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can_opened.anm");
     pType.AddItemInHandsProfileIK("SRP_Trenchknife", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/kitchenknife.anm"); 
     pType.AddItemInHandsProfileIK("SRP_DrugBrick_Cocaine", "dz/anims/workspaces/player/player_main/weapons/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm");     
-
+    pType.AddItemInHandsProfileIK("SRP_Mining_RawOre_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,				 		"dz/anims/anm/player/ik/gear/SmallStone.anm");
   };
 
   override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
@@ -35,6 +35,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_BowlSquare_Wood", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
     pType.AddItemInHandsProfileIK("SRP_Guitar_Alpocalypse", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_bat.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/baseballbat.anm");
     pType.AddItemInHandsProfileIK("SRP_KatanaBamboo", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_bat.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/baseballbat.anm");
+    pType.AddItemInHandsProfileIK("SRP_Mining_StoneChunk_ColorBase", "dz/anims/workspaces/player/player_main/player_main_2h.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/stone.anm");
   }
 
   override void RegisterHeavy( DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior )

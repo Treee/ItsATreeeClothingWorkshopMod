@@ -571,6 +571,12 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Mińsk" Fridge" (https://skfb.ly/6BME7) by Michalina "Miszla" Gąsienica-Laskowy is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+- "Lowpoly Rocks - 3" (https://skfb.ly/6yTQs) by Loïc Norgeot is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Crystal Pack Stylized" (https://skfb.ly/6URYJ) by Batuhan13 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Gems (21 different shapes)" (https://skfb.ly/o7xtt) by Blue Lantern is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
