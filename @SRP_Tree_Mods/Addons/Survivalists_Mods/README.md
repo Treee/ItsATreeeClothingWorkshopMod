@@ -569,7 +569,7 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Glasses" (https://skfb.ly/6WMUM) by _SeF_ is liceWnsed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- ""Mińsk" Fridge" (https://skfb.ly/6BME7) by Michalina "Miszla" Gąsienica-Laskowy is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+- "Mińsk" Fridge" (https://skfb.ly/6BME7) by Michalina "Miszla" Gąsienica-Laskowy is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 # Wishlist
 

@@ -108,6 +108,36 @@ class CfgVehicles
 			allowOwnedCargoManipulation=1;
 		};
 	};
+  class SRP_FridgeMinsk_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Minsk Fridge Kit";
+		descriptionShort="A Minsk Fridge Kit";
+	};
+  class SRP_FridgeMinsk: Container_Base // new
+	{
+		scope=2;
+		displayName="Minsk Fridge";
+		descriptionShort="A Minsk fridge";
+		model="Survivalists_Mods\gear\containers\refrigeratorminsk.p3d";
+    carveNavmesh=1;
+		itemBehaviour=2;
+    useEntityHierarchy="true";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		class Cargo
+		{
+			itemsCargoSize[]={10,15};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+	};
 
   class SRP_WoodenShelfSimple_Kit: SRP_KitBase //new
 	{

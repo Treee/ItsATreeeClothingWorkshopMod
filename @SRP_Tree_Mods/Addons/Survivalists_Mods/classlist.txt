@@ -1092,3 +1092,8 @@ SRP_Gravestone_18
 SRP_Gravestone_19
 SRP_Gravestone_19Open
 SRP_DeskNamePlate
+SRP_SmallProtectorCase_Woodland
+SRP_SmallProtectorCase_Digital
+SRP_SmallProtectorCase_Winter
+SRP_FridgeMinsk_Kit
+SRP_FridgeMinsk
