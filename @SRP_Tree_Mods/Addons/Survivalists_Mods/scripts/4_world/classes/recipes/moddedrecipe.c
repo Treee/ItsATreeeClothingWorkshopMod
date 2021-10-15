@@ -29,6 +29,9 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new Craft_SRP_Container_WoodenBarrelKit);
 		RegisterRecipe(new Craft_SRP_Container_WoodenBarrelTableKit);
 
+    // Mining
+		RegisterRecipe(new Craft_SRP_CrushStoneChunk_CrudeTool);
+
     // Building
     RegisterRecipe(new Craft_SRP_Planks);
 
