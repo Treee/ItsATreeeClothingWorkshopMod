@@ -1107,3 +1107,5 @@ SRP_Mining_SmallStone_Iron
 SRP_Mining_SmallStone_Tin
 SRP_Mining_SmallStone_Gold
 SRP_Mining_SmallStone_Platinum
+
+SRP_Mining_UnCutGem_Aqua
