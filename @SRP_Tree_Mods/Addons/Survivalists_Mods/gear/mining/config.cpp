@@ -403,4 +403,300 @@ class CfgVehicles
 			"Survivalists_Mods\gear\mining\data\miningcrystal_yellow_co.paa"
 		};
 	};
+
+  //========================================== CUT GEMS
+  class SRP_Mining_CutGem_ColorBase: Inventory_Base
+	{
+		scope=2;
+		displayName="Base Cut Gem Do Not Spawn";
+		descriptionShort="Base Cut Gem Do Not Spawn";
+		model="Survivalists_Mods\gear\mining\srp_mining_gemcut.p3d";
+		animClass="NoFireClass";
+    color="base";
+    physLayer="item_small";
+		weight=500;
+		itemSize[]={1,2};
+    canBeSplit=1;
+		varQuantityDestroyOnMin=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=1;
+		varStackMax=1;
+		inventorySlot[]={};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\miningcrystalcut_ca.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\mining\data\miningcrystalcut.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_damage.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_Aqua: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Aquamarine Cut Gem";
+		descriptionShort="Aquamarine Cut Gem";
+    color="aqua";
+    physLayer="item_small";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\mining\data\miningcrystalcut_aqua.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_aqua.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_aqua.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_aqua.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_aqua.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_aqua.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_Amethyst: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Amethyst Cut Gem";
+		descriptionShort="Amethyst Cut Gem";
+    color="amethyst";
+    physLayer="item_small";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\mining\data\miningcrystalcut_amethyst.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amethyst.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amethyst.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amethyst.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amethyst.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amethyst.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_Jade: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Jade Cut Gem";
+		descriptionShort="Jade Cut Gem";
+    color="jade";
+    physLayer="item_small";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\mining\data\miningcrystalcut_jade.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_jade.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_jade.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_jade.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_jade.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_jade.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_Amber: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Amber Cut Gem";
+		descriptionShort="Amber Cut Gem";
+    color="amber";
+    physLayer="item_small";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\mining\data\miningcrystalcut_amber.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amber.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amber.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amber.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amber.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_amber.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_Quartz: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Quartz Cut Gem";
+		descriptionShort="Quartz Cut Gem";
+    color="quartz";
+    physLayer="item_small";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\mining\data\miningcrystalcut_quartz.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_quartz.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_quartz.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_quartz.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_quartz.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_quartz.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_Ruby: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Ruby Cut Gem";
+		descriptionShort="Ruby Cut Gem";
+    color="ruby";
+    physLayer="item_small";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\mining\data\miningcrystalcut_ruby.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_ruby.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_ruby.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_ruby.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_ruby.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_ruby.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_Topaz: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Topaz Cut Gem";
+		descriptionShort="Topaz Cut Gem";
+    color="topaz";
+    physLayer="item_small";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\mining\data\miningcrystalcut_topaz.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_topaz.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_topaz.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_topaz.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_topaz.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\miningcrystalcut_topaz.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_Diamond: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Diamond Cut Gem";
+		descriptionShort="Diamond Cut Gem";
+    color="diamond";
+	};
 };

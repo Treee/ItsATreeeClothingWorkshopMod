@@ -575,7 +575,7 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Crystal Pack Stylized" (https://skfb.ly/6URYJ) by Batuhan13 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- "Gems (21 different shapes)" (https://skfb.ly/o7xtt) by Blue Lantern is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Chaos Emerald" (https://skfb.ly/YJ6W) by Kelsey113 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Wishlist
 
