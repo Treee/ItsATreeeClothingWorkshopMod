@@ -512,4 +512,204 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_MiningTool_StoneHammerLarge: Hammer
+	{
+		scope=2;
+		displayName="Stone Hammer - Large";
+		descriptionShort="Great for smashing stone chunks into smaller pieces. The large stone at the top is strong and durable.";
+		model="Survivalists_Mods\gear\tools\miningtool_hammerlarge.p3d";
+    inventorySlot[]=
+		{
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\toolrack_tongs_stone_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=150;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_MiningTool_StoneHammerMedium: Hammer
+	{
+		scope=2;
+		displayName="Stone Hammer - Medium";
+		descriptionShort="Great for smashing stone chunks into smaller pieces. The medium size stone at the top is strong and durable.";
+		model="Survivalists_Mods\gear\tools\miningtool_hammermedium.p3d";
+    inventorySlot[]=
+		{
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\toolrack_tongs_stone_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_MiningTool_StoneHammerSmall: Hammer
+	{
+		scope=2;
+		displayName="Stone Hammer - Small";
+		descriptionShort="Great for smashing stone chunks into smaller pieces. The small size stone at the top is strong and durable.";
+		model="Survivalists_Mods\gear\tools\miningtool_hammersmall.p3d";
+    inventorySlot[]=
+		{
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\toolrack_tongs_stone_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_MiningTool_StoneHammerSteelPunch: Hammer
+	{
+		scope=2;
+		displayName="Stone Hammer - Steel Punch";
+		descriptionShort="Great for punching holes through metal.";
+		model="Survivalists_Mods\gear\tools\miningtool_hammersteelpunch.p3d";
+    inventorySlot[]=
+		{
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\toolrack_tongs_stone_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_MiningTool_StoneHammerFlattener: Hammer
+	{
+		scope=2;
+		displayName="Stone Hammer - Flattener";
+		descriptionShort="Great for flattening or rounding metal plate.";
+		model="Survivalists_Mods\gear\tools\miningtool_hammerflattener.p3d";
+    inventorySlot[]=
+		{
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\toolrack_tongs_stone_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 };
