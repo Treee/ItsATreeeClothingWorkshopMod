@@ -1124,3 +1124,7 @@ SRP_Mining_CutGem_Quartz
 SRP_Mining_CutGem_Ruby
 SRP_Mining_CutGem_Topaz
 SRP_Mining_CutGem_Diamond
+
+SRP_Tool_CoalRake
+SRP_ToolRack_Hammers
+SRP_ToolRack_Tongs

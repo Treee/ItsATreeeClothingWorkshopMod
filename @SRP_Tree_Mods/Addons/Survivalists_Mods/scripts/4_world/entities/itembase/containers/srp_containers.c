@@ -205,6 +205,7 @@ class SRP_Gravestone_18 extends SRP_Container_Base{};
 class SRP_Gravestone_19 extends SRP_Container_Base{};
 class SRP_Gravestone_19Open extends SRP_Container_Base{};
 
+class SRP_ToolRack_Hammers extends SRP_Container_Base{};
 
 class SRP_ArmorStandBasic extends SRP_Container_Base
 {

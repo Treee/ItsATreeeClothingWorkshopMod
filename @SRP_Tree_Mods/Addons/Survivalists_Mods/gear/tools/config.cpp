@@ -21,6 +21,10 @@ class CfgVehicles
   class Pen_ColorBase;
   class Hatchet;
   class Compass;
+  class FarmingHoe;
+  class Container_Base;
+
+  class SRP_KitBase;
 
   // -------------------------- MODDED MODS
   class admin_Hatchet: Hatchet
@@ -158,8 +162,6 @@ class CfgVehicles
 			"Pen_slot"
 		};
 	};
-
-
 
   // carpentry or weapon smithing
 	class SRP_Handdrill: Inventory_Base
@@ -445,4 +447,69 @@ class CfgVehicles
 		};
 	};
 
+  // mining
+  class SRP_Tool_CoalRake: FarmingHoe  // new
+	{
+		scope=2;
+		displayName="Coal Rake";
+		descriptionShort="A rake to shuffle coal.";
+		model="Survivalists_Mods\gear\tools\coalrake.p3d";
+	};
+
+  class SRP_ToolRack_Hammers_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Hammer Tool Rack Kit";
+		descriptionShort="A Hammer Tool Rack Kit";
+	};
+
+  class SRP_ToolRack_Hammers: Container_Base  // new
+	{
+		scope=2;
+		displayName="Tool Rack - Hammers";
+		descriptionShort="A wooden tool rack for storing hammers or other tools.";
+		model="Survivalists_Mods\gear\tools\toolrack_hammer.p3d";
+		attachments[]=
+    {
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+      "Axe1",
+      "Pickaxe1",
+    };
+		carveNavmesh=1;
+		canBeDigged=0;
+		weight=1000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+    class Cargo
+		{
+			itemsCargoSize[]={4,3};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
 };

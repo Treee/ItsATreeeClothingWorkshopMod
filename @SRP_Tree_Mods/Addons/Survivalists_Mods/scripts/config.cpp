@@ -534,6 +534,12 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:paper";
 	};
 
+  // class Slot_SRP_ToolRack1
+	// {
+	// 	name="ToolRack1";
+	// 	displayName="Hand Tool";
+	// 	ghostIcon="";
+	// };
 };
 
 class CfgNonAIVehicles

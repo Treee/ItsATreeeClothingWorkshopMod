@@ -577,6 +577,10 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Chaos Emerald" (https://skfb.ly/YJ6W) by Kelsey113 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Tools" (https://skfb.ly/6wEpC) by Caboose3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "The Broken Forge" (https://skfb.ly/6vLMA) by Stéphane is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
