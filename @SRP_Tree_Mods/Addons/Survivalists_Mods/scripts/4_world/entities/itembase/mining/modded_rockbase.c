@@ -101,6 +101,7 @@ modded class Static_stone3
     super.GetMaterialAndQuantityMap(item, output_map);		
 	}
 };
+
 modded class Static_stone4
 {
   override void GetMaterialAndQuantityMap(ItemBase item, out map<string,int> output_map)
@@ -113,6 +114,7 @@ modded class Static_stone4
     super.GetMaterialAndQuantityMap(item, output_map);		
 	}
 };
+
 modded class Static_stone5
 {
   override void GetMaterialAndQuantityMap(ItemBase item, out map<string,int> output_map)
