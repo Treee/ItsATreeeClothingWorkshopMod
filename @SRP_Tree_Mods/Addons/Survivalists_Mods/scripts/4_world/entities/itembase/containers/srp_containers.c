@@ -118,6 +118,15 @@ class SRP_Container_Base extends DeployableContainer_Base
     return false;
   }
 }
+class SRP_SewingTable extends SRP_Container_Base
+{
+  override void SetActions()
+  {
+      super.SetActions();
+      AddAction(ActionInteractWithGUICraftingWorkbench);
+  }
+};
+
 class SRP_Fridge extends SRP_Container_Base{};
 class SRP_FridgeLarge extends SRP_Container_Base{};
 class SRP_FridgeRetro extends SRP_Container_Base{};
@@ -149,7 +158,6 @@ class SRP_MilitaryCaseLong extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongBlue extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
 class SRP_BarricadeMetal extends SRP_Container_Base{};
-class SRP_SewingTable extends SRP_Container_Base{};
 
 class SRP_Furniture_Barrel extends SRP_Container_Base{};
 class SRP_Furniture_BarrelTable extends SRP_Container_Base{};
