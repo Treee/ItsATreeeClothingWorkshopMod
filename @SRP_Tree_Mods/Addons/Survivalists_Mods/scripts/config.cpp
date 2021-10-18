@@ -560,17 +560,17 @@ class CfgNonAIVehicles
 		inventorySlot="CanisterGasoline";
 	};
 
-	class ProxySRP_CasePrep: ProxyAttachment
+	class Proxysrp_ammoworkbench_caseprep: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="SRP_CasePrep";
-		model="Survivalists_Mods\gear\crafting\SRP_CasePrep.p3d";
+		inventorySlot[]={"SRP_CasePrep"};
+		model="Survivalists_Mods\proxy\srp_ammoworkbench_caseprep.p3d";
 	};
-	class ProxySRP_AmmoPress: ProxyAttachment
+	class Proxysrp_ammoworkbench_ammopress: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="SRP_AmmoPress";
-		model="Survivalists_Mods\gear\crafting\SRP_AmmoPress.p3d";
+		inventorySlot[]={"SRP_AmmoPress"};
+		model="Survivalists_Mods\proxy\srp_ammoworkbench_ammopress.p3d";
 	};
 
   class Proxysrp_latheworkbench_belt: ProxyAttachment
@@ -601,11 +601,11 @@ class CfgNonAIVehicles
 		model="Survivalists_Mods\proxy\srp_latheworkbench_clamp.p3d";
 	};
   
-  class ProxySRP_SewingMachine: ProxyAttachment
+  class Proxysrp_sewingworkbench_sewingmachine: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="SRP_SewingMachine";
-		model="Survivalists_Mods\gear\crafting\SRP_SewingMachine.p3d";
+		inventorySlot[]={"SRP_SewingMachine"};
+		model="Survivalists_Mods\proxy\srp_sewingworkbench_sewingmachine.p3d";
 	};
 	class Proxyfirstaidkit: ProxyAttachment
 	{
