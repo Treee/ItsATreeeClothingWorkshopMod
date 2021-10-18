@@ -1713,7 +1713,7 @@ class CfgVehicles
 				class Burned
 				{
 					nutrition_properties[]={2,120,17.5,1,0,16};
-					cooking_properties[]={100,300};
+					cooking_properties[]={100,305};
 				};
 			};
       class FoodStageTransitions: MeatStageTransitions
