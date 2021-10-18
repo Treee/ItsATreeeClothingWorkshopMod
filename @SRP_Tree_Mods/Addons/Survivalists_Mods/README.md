@@ -579,7 +579,11 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Tools" (https://skfb.ly/6wEpC) by Caboose3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- "The Broken Forge" (https://skfb.ly/6vLMA) by Stéphane is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Forge" (https://skfb.ly/6RDvU) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
+- "Fantasy Designed Coins - (Gold, Silver, Copper)" (https://skfb.ly/6TtQu) by Kigha is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "CC0 - Gold Coin Blank" (https://skfb.ly/o6vWQ) by plaggy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Wishlist
 

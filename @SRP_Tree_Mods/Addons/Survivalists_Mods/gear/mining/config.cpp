@@ -15,6 +15,109 @@ class CfgPatches
 class CfgVehicles
 {
   class Inventory_Base;
+  class FireplaceBase;
+
+  //===================================== WORKBENCH
+
+
+  class SRP_StoneForgeWorkbench: FireplaceBase // new
+	{
+		scope=2;
+		displayName="Stone Forge";
+		descriptionShort="A workbench with tools for manufacturing ammunition and repairing weaponry.";
+		model="Survivalists_Mods\gear\mining\forge_stonebasic.p3d";
+		useEntityHierarchy="true";
+		destroyOnEmpty=0;
+		carveNavmesh=0;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=500;
+		itemSize[]={15,15};
+		itemBehaviour=0;
+		quantityBar=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=0;
+    varTemperatureMax=900;
+		stackedUnit="";
+		physLayer="item_large";		
+    attachments[]=
+		{
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={10,10};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\mining\data\stoneforge.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\mining\data\stoneforge.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\mining\data\stoneforge.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\mining\data\stoneforge.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\mining\data\stoneforge.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
 
   //==================================== Ore in Stone
   class SRP_Mining_StoneChunk_ColorBase: Inventory_Base

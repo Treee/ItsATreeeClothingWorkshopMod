@@ -87,7 +87,7 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
       gemstones.Insert("SRP_Mining_UnCutGem_Ruby");
       gemstones.Insert("SRP_Mining_UnCutGem_Topaz");
       string randomGemstone = gemstones.GetRandomElement();
-      SRP_Mining_CutGem_ColorBase gemstone = ItemBase.Cast(GetGame().CreateObject(randomGemstone, player.GetPosition(), false));      
+      ItemBase gemstone = ItemBase.Cast(GetGame().CreateObject(randomGemstone, player.GetPosition(), false));      
       results.Insert(gemstone);
     }
 		Debug.Log("Craft_SRP_CrushStoneChunk_CrudeTool: Recipe Do method called","recipes");
@@ -184,7 +184,7 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
       gemstones.Insert("SRP_Mining_CutGem_Ruby");
       gemstones.Insert("SRP_Mining_CutGem_Topaz");
       string randomGemstone = gemstones.GetRandomElement();
-      SRP_Mining_CutGem_ColorBase gemstone = ItemBase.Cast(GetGame().CreateObject(randomGemstone, player.GetPosition(), false));      
+      ItemBase gemstone = ItemBase.Cast(GetGame().CreateObject(randomGemstone, player.GetPosition(), false));      
       results.Insert(gemstone);
     }
 		Debug.Log("Craft_SRP_RefineUnCutGem_CrudeTool: Recipe Do method called","recipes");

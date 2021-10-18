@@ -912,4 +912,100 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_MiningTool_IronTongsSmall: Hammer
+	{
+		scope=2;
+		displayName="Iron Tongs - Small";
+		descriptionShort="Great for picking up molten metal. Protects you somewhat from the heat.";
+		model="Survivalists_Mods\gear\tools\miningtool_tongs2.p3d";
+    inventorySlot[]=
+		{
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_MiningTool_IronTongsMedium: Hammer
+	{
+		scope=2;
+		displayName="Iron Tongs - Medium";
+		descriptionShort="Great for picking up molten metal. Protects you mostly from the heat.";
+		model="Survivalists_Mods\gear\tools\miningtool_tongs.p3d";
+    inventorySlot[]=
+		{
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=150;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_MiningTool_IronTongsLarge: Hammer
+	{
+		scope=2;
+		displayName="Iron Tongs - Large";
+		descriptionShort="Great for picking up molten metal. Protects you from the heat of the forge.";
+		model="Survivalists_Mods\gear\tools\miningtool_tongs3.p3d";
+    inventorySlot[]=
+		{
+			"Hammer1",
+			"Hammer2",
+			"Hammer3",
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 };
