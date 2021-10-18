@@ -1142,3 +1142,11 @@ SRP_MiningTool_IronTongsSmall
 SRP_MiningTool_IronTongsMedium
 SRP_MiningTool_IronTongsLarge
 SRP_StoneForgeWorkbench
+
+SRP_ForgeCrucible_Copper
+SRP_ForgeCrucible_Tin
+SRP_ForgeCrucible_Bronze
+SRP_ForgeCrucible_Iron
+SRP_ForgeCrucible_Gold
+SRP_ForgeCrucible_Platinum
+

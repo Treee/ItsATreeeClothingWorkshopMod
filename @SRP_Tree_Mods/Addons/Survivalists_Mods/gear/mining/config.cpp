@@ -119,6 +119,170 @@ class CfgVehicles
 		};
 	};
 
+  //===================================== MELTED ORE
+  class SRP_ForgeCrucible_ColorBase: Inventory_Base
+	{
+		scope=2;
+		displayName="Forge Crucible";
+		descriptionShort="Able to withstand intense temperature.";
+		model="Survivalists_Mods\gear\mining\forge_crucible.p3d";
+		weight=440;
+		itemSize[]={4,3};
+    color="base";
+		itemsCargoSize[]={4,3};
+		inventorySlot[]=
+		{
+		};
+		stackedRandom=0;
+		canBeDigged=0;
+		allowOwnedCargoManipulation=1;
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=0;
+		varTemperatureMax=1000;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=2000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\mining\forge_crucible.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\mining\forge_crucible.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\mining\forge_crucible_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\mining\forge_crucible_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\mining\forge_crucible_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimationSources
+		{
+			class handleRotate
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpPotLight
+				{
+					soundSet="pickUpPotLight_SoundSet";
+					id=796;
+				};
+				class pickUpPot
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="pot_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_ForgeCrucible_Copper: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Copper";
+		descriptionShort="Very hot molten metal.";
+    color="copper";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_copper_co.paa"
+		};
+	};
+  class SRP_ForgeCrucible_Tin: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Tin";
+		descriptionShort="Very hot molten metal.";
+    color="tin";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_tin_co.paa"
+		};
+	};
+  class SRP_ForgeCrucible_Bronze: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Bronze";
+		descriptionShort="Very hot molten metal.";
+    color="bronze";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_bronze_co.paa"
+		};
+	};
+  class SRP_ForgeCrucible_Iron: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Iron";
+		descriptionShort="Very hot molten metal.";
+    color="iron";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_iron_co.paa"
+		};
+	};
+  class SRP_ForgeCrucible_Gold: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Gold";
+		descriptionShort="Very hot molten metal.";
+    color="gold";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_gold_co.paa"
+		};
+	};
+  class SRP_ForgeCrucible_Platinum: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Platinum";
+		descriptionShort="Very hot molten metal.";
+    color="platinum";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_platinum_co.paa"
+		};
+	};
+
   //==================================== Ore in Stone
   class SRP_Mining_StoneChunk_ColorBase: Inventory_Base
   {
