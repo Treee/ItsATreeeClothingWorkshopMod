@@ -1141,6 +1141,8 @@ SRP_MiningTool_StoneHammerFlattener
 SRP_MiningTool_IronTongsSmall
 SRP_MiningTool_IronTongsMedium
 SRP_MiningTool_IronTongsLarge
+
+SRP_StoneForgeWorkbench_Kit
 SRP_StoneForgeWorkbench
 
 SRP_ForgeCrucible_Copper
@@ -1149,4 +1151,12 @@ SRP_ForgeCrucible_Bronze
 SRP_ForgeCrucible_Iron
 SRP_ForgeCrucible_Gold
 SRP_ForgeCrucible_Platinum
+
+SRP_ForgeIngotMold_Empty
+SRP_ForgeIngotMold_Copper
+SRP_ForgeIngotMold_Tin
+SRP_ForgeIngotMold_Bronze
+SRP_ForgeIngotMold_Iron
+SRP_ForgeIngotMold_Gold
+SRP_ForgeIngotMold_Platinum
 

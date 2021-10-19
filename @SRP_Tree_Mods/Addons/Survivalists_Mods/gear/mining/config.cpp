@@ -17,8 +17,15 @@ class CfgVehicles
   class Inventory_Base;
   class FireplaceBase;
 
-  //===================================== WORKBENCH
+  class SRP_KitBase;
 
+  //===================================== WORKBENCH
+  class SRP_StoneForgeWorkbench_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="A Stone Forge Kit";
+		descriptionShort="A kit for a stone forge.";
+	};
 
   class SRP_StoneForgeWorkbench: FireplaceBase // new
 	{
@@ -116,6 +123,262 @@ class CfgVehicles
 					id=797;
 				};
 			};
+		};
+	};
+
+
+  //====================================INGOTS
+  class SRP_ForgeIngot_ColorBase: Inventory_Base
+  {
+		scope=2;
+		displayName="Metal Ingot";
+		descriptionShort="A metal ingot that has been cooled into the shape of a bar.";
+		model="Survivalists_Mods\gear\mining\forge_ingot.p3d";
+		animClass="NoFireClass";
+    physLayer="item_small";
+    color="base";
+		weight=500;
+		itemSize[]={3,1};
+    canBeSplit=1;
+		varQuantityDestroyOnMin=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=1;
+		varStackMax=10;
+		inventorySlot[]={};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\forge_ingot.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\forge_ingot.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\forge_ingot_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\forge_ingot_damage.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\forge_ingot_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_ForgeIngot_Copper: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Copper";    
+    color="copper";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_copper_co.paa"
+		};
+	};
+  class SRP_ForgeIngot_Tin: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Tin";    
+    color="tin";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_tin_co.paa"
+		};
+	};
+  class SRP_ForgeIngot_Bronze: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Bronze";    
+    color="bronze";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_copper_co.paa"
+		};
+	};
+  class SRP_ForgeIngot_Iron: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Iron";    
+    color="iron";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_iron_co.paa"
+		};
+	};
+  class SRP_ForgeIngot_Gold: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Gold";    
+    color="gold";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_gold_co.paa"
+		};
+	};
+  class SRP_ForgeIngot_Platinum: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Platinum";    
+    color="platinum";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_platinum_co.paa"
+		};
+	};
+
+  //====================================INGOT MOLDS
+  class SRP_ForgeIngotMold_ColorBase: Inventory_Base
+  {
+		scope=2;
+		displayName="Ingot Mold";
+		descriptionShort="A mold suitable for cooling molten metal into ingots.";
+		model="Survivalists_Mods\gear\mining\forge_ingotmold.p3d";
+		animClass="NoFireClass";
+    physLayer="item_small";
+    color="base";
+		weight=500;
+		itemSize[]={3,1};
+    canBeSplit=1;
+		varQuantityDestroyOnMin=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=1;
+		varStackMax=1;
+		inventorySlot[]={};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_ForgeIngotMold_Empty: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Empty";
+    model="Survivalists_Mods\gear\mining\forge_ingotmold_empty.p3d";
+    color="empty";
+	};
+  class SRP_ForgeIngotMold_Copper: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Copper";    
+    color="copper";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_copper_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Tin: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Tin";    
+    color="tin";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_tin_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Bronze: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Bronze";    
+    color="bronze";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_bronze_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Iron: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Iron";    
+    color="iron";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_iron_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Gold: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Gold";    
+    color="gold";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_gold_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Platinum: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Platinum";    
+    color="platinum";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_platinum_co.paa"
 		};
 	};
 

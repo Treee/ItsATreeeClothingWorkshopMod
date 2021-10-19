@@ -27,7 +27,8 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_DrugBrick_Cocaine", "dz/anims/workspaces/player/player_main/weapons/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm");     
     pType.AddItemInHandsProfileIK("SRP_Mining_RawOre_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/SmallStone.anm");
     pType.AddItemInHandsProfileIK("SRP_Mining_UnCutGem_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/SmallStone.anm");
-    pType.AddItemInHandsProfileIK("SRP_Mining_CutGem_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/SmallStone.anm");
+    pType.AddItemInHandsProfileIK("SRP_Mining_CutGem_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/SmallStone.anm");    
+    pType.AddItemInHandsProfileIK("SRP_ForgeIngot_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");
   };
 
   override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
@@ -40,6 +41,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Mining_StoneChunk_ColorBase", "dz/anims/workspaces/player/player_main/player_main_2h.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/stone.anm");
     pType.AddItemInHandsProfileIK("SRP_Tool_CoalRake", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_farminghoe.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/farming_hoe.anm");
     pType.AddItemInHandsProfileIK("SRP_ForgeCrucible_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
+    pType.AddItemInHandsProfileIK("SRP_ForgeIngotMold_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
   }
 
   override void RegisterHeavy( DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior )

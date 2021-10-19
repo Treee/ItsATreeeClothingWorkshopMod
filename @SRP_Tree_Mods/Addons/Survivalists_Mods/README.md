@@ -583,6 +583,10 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Crucible Tongs - Game Ready" (https://skfb.ly/onvnO) by re1monsen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Clay Bar Mold" (https://skfb.ly/6C9BL) by Ceramic Technology Lab is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+- "Gold Ingot" (https://skfb.ly/o69UQ) by Matthew_Games is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - "Fantasy Designed Coins - (Gold, Silver, Copper)" (https://skfb.ly/6TtQu) by Kigha is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "CC0 - Gold Coin Blank" (https://skfb.ly/o6vWQ) by plaggy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
