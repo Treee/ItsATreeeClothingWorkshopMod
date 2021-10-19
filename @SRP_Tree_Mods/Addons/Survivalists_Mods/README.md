@@ -589,8 +589,6 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Fantasy Designed Coins - (Gold, Silver, Copper)" (https://skfb.ly/6TtQu) by Kigha is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- "CC0 - Gold Coin Blank" (https://skfb.ly/o6vWQ) by plaggy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

@@ -126,8 +126,94 @@ class CfgVehicles
 		};
 	};
 
+  //==================================== COINS
+  class SRP_Coinage_ColorBase: Inventory_Base
+  {
+		scope=2;
+		displayName="Metal Coin";
+		descriptionShort="A metal coin minted from forged metal.";
+		model="Survivalists_Mods\gear\mining\srp_coinage_gold1.p3d";
+		animClass="NoFireClass";
+    physLayer="item_small";
+    color="base";
+		weight=500;
+		itemSize[]={1,1};
+    canBeSplit=1;
+		varQuantityDestroyOnMin=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=1;
+		varStackMax=20;    
+		inventorySlot[]={};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\srp_coinage.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\srp_coinage.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\srp_coinage_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\srp_coinage_damage.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\srp_coinage_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
 
-  //====================================INGOTS
+  class SRP_Coinage_Platinum: SRP_Coinage_ColorBase
+  {
+		scope=2;
+		displayName="Metal Coin - Platinum";
+		model="Survivalists_Mods\gear\mining\srp_coinage_platinum.p3d";
+    color="platinum";
+  };
+
+  class SRP_Coinage_Iron: SRP_Coinage_ColorBase
+  {
+		scope=2;
+		displayName="Metal Coin - Iron";
+		model="Survivalists_Mods\gear\mining\srp_coinage_iron.p3d";
+    color="iron";
+  };
+
+  class SRP_Coinage_Gold: SRP_Coinage_ColorBase
+  {
+		scope=2;
+		displayName="Metal Coin - Gold";
+		model="Survivalists_Mods\gear\mining\srp_coinage_gold.p3d";
+    color="gold";
+  };
+
+  class SRP_Coinage_GoldWorn: SRP_Coinage_ColorBase
+  {
+		scope=2;
+		displayName="Metal Coin - Gold Worn";
+		model="Survivalists_Mods\gear\mining\srp_coinage_goldworn.p3d";
+    color="Goldworn";
+  };
+
+  class SRP_Coinage_Bronze: SRP_Coinage_ColorBase
+  {
+		scope=2;
+		displayName="Metal Coin - Bronze";
+		model="Survivalists_Mods\gear\mining\srp_coinage_bronze.p3d";
+    color="bronze";
+  };
+
+  class SRP_Coinage_Copper: SRP_Coinage_ColorBase
+  {
+		scope=2;
+		displayName="Metal Coin - Copper";
+		model="Survivalists_Mods\gear\mining\srp_coinage_copper.p3d";
+    color="copper";
+  };
+
+  //==================================== INGOTS
   class SRP_ForgeIngot_ColorBase: Inventory_Base
   {
 		scope=2;
@@ -145,6 +231,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=1;
 		varStackMax=10;
+    rotationFlags=17;
 		inventorySlot[]={};
 		class DamageSystem
 		{
@@ -251,7 +338,7 @@ class CfgVehicles
 		};
 	};
 
-  //====================================INGOT MOLDS
+  //==================================== INGOT MOLDS
   class SRP_ForgeIngotMold_ColorBase: Inventory_Base
   {
 		scope=2;
