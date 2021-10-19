@@ -9,6 +9,11 @@ class SRP_PortalBase extends Inventory_Base
   {
     return false;
   }
+
+  void TeleportPlayer(PlayerBase player)
+  {
+    
+  }
 };
 
 class SRP_PortalBone extends SRP_PortalBase{};

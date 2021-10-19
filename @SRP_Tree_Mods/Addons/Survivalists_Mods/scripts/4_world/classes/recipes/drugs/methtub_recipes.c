@@ -311,11 +311,12 @@ class SRP_Drugs_DetermineQuality extends RecipeBase
     ItemBase theDrug = ItemBase.Cast(ingredients[1]);
     string itemName = theDrug.GetType();
     itemName.ToLower();
-    if (itemName.Contains("tainted") != -1)
+    if (itemName.Contains("tainted"))
     {
       player.SendMessageToClient(player, "You see broken and unordered crystal structures. This is not even close to being pure.");
     }
-    else {
+    else 
+    {
       player.SendMessageToClient(player, "This is the pures crystal you have ever seen.");
     }
 	}
