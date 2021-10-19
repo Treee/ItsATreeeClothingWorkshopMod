@@ -362,6 +362,102 @@ class CfgVehicles
 		};
 	};
 
+
+  // ------------------------- EVENT STUFF
+  class SRP_PortalBone_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Bone Portal Kit";
+		descriptionShort="A kit for teleporting victims to a new destination.";
+	};
+  
+  class SRP_PortalBone: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Bone Portal";
+		descriptionShort="A bone portal. Useful for teleporting victims to a new destination.";
+		model="Survivalists_Mods\gear\camping\srp_portalbone.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
+  class SRP_PortalDruid_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Druid Portal Kit";
+		descriptionShort="A kit for teleporting victims to a new destination.";
+	};
+  
+  class SRP_PortalDruid: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Druid Portal";
+		descriptionShort="A druid portal. Useful for teleporting victims to a new destination.";
+		model="Survivalists_Mods\gear\camping\srp_portaldruid.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
+  class SRP_PortalArch_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Arch Portal Kit";
+		descriptionShort="A kit for teleporting victims to a new destination.";
+	};
+  
+  class SRP_PortalArch: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Arch Portal";
+		descriptionShort="An arch portal. Useful for teleporting victims to a new destination.";
+		model="Survivalists_Mods\gear\camping\srp_portalarch.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
+
   // ----------------------- CUSTOM STUFF
 
   class SRP_Potbelly_Stove_Kit: SRP_KitBase //BP_Pech_kit

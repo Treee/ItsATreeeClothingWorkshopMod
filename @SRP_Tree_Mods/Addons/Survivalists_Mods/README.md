@@ -589,6 +589,12 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Fantasy Designed Coins - (Gold, Silver, Copper)" (https://skfb.ly/6TtQu) by Kigha is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Portal" (https://skfb.ly/6vZK6) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Bone Portal" (https://skfb.ly/6xBRC) by Gabrieltim3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Portal Frame" (https://skfb.ly/6CxTF) by soidev is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

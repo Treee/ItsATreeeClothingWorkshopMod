@@ -1174,3 +1174,11 @@ SRP_Coinage_GoldWorn
 SRP_Coinage_Bronze
 SRP_Coinage_Copper
 
+SRP_PortalBone_Kit
+SRP_PortalBone
+
+SRP_PortalDruid_Kit
+SRP_PortalDruid
+
+SRP_PortalArch_Kit
+SRP_PortalArch

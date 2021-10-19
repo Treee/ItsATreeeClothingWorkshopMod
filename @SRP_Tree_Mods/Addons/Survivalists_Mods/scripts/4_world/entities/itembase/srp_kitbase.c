@@ -208,8 +208,11 @@ class SRP_BarricadeMetal_Kit extends SRP_KitBase{};
 class SRP_SewingTable_Kit extends SRP_KitBase{};
 class SRP_StoneForgeWorkbench_Kit extends SRP_KitBase{};
 
+class SRP_PortalBone_Kit extends SRP_KitBase{};
+class SRP_PortalDruid_Kit extends SRP_KitBase{};
+class SRP_PortalArch_Kit extends SRP_KitBase{};
+
 class SRP_ToolRack_Hammers_Kit extends SRP_KitBase{};
-class SRP_ToolRack_Tongs_Kit extends SRP_KitBase{};
 
 // Gravestones
 class SRP_ForestSign_Original_Kit extends SRP_KitBase{};
