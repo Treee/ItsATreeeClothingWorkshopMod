@@ -12,7 +12,7 @@ class SRP_PortalBase extends Inventory_Base
 
   void TeleportPlayer(PlayerBase player)
   {
-    
+    MiscGameplayFunctions.TeleportCheck(player, data.SafePositions);
   }
 };
 

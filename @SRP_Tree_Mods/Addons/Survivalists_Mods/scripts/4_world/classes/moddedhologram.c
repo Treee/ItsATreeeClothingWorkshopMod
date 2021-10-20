@@ -44,7 +44,7 @@ modded class Hologram
 			SetIsColliding(true);
       return;
     }
-    else if (itemInHands.IsInherited(SRP_KitBase)) // if the item in our hands is our kit
+    else if (itemInHands && itemInHands.IsInherited(SRP_KitBase)) // if the item in our hands is our kit
     {
       // ignore collision
       SetIsColliding(false);
