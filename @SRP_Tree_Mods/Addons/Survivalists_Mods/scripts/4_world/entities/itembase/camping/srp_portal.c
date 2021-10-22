@@ -67,6 +67,45 @@ class SRP_PortalArch extends SRP_PortalBase{};
 class SRP_PortalDruid extends SRP_PortalBase{};
 class SRP_PortalReturn extends SRP_PortalBase
 {
+  Particle groundParticle;
+
+  void SRP_PortalReturn()
+  {
+    StartParticleEffects();
+  }
+
+  void ~SRP_PortalReturn()
+  {
+    StopParticleEffects();
+  }
+
+  void StartParticleEffects()
+  {
+    if ( !GetGame().IsMultiplayer() || GetGame().IsClient() ) //add this as server no like particles 
+    {
+      groundParticle = Particle.PlayOnObject(ParticleList.Fog_40m_A64_WHITE_L, this, "0 5 0", vector.Zero , false);
+      
+      //effects i could find 
+      // groundParticle.ScaleParticleParam(EmitorParam.VELOCITY, 0.1);
+      // groundParticle.ScaleParticleParam(EmitorParam.VELOCITY_RND, 1);
+      // groundParticle.ScaleParticleParam(EmitorParam.SIZE, 2);
+      // groundParticle.ScaleParticleParam(EmitorParam.BIRTH_RATE, 1);
+      // groundParticle.ScaleParticleParam(EmitorParam.AIR_RESISTANCE, 0.5);
+      // groundParticle.ScaleParticleParam(EmitorParam.AIR_RESISTANCE_RND, 0.5);
+      // groundParticle.ScaleParticleParam(EmitorParam.LIFETIME, 1.5);
+      // groundParticle.ScaleParticleParam(EmitorParam.LIFETIME_RND, 0.5);
+      // groundParticle.SetWiggle( 10, 0.5 );
+    };
+  }
+
+  void StopParticleEffects()
+  {
+    if (groundParticle)
+    {
+      groundParticle.Stop();
+    }
+  }
+
   override void SetActions()
 	{
 		super.SetActions();
