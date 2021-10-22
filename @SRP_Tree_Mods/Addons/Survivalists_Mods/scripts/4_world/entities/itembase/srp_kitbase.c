@@ -156,6 +156,7 @@ class SRP_StreetLightLarge_Kit extends SRP_KitBase{};
 class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Kit extends SRP_KitBase{};
+class SRP_StreetLightSlim_Kit extends SRP_KitBase{};
 
 class SRP_Furniture_BarrelTable_Kit extends SRP_KitBase{};
 class SRP_Furniture_Barrel_Kit extends SRP_KitBase{};
@@ -211,6 +212,7 @@ class SRP_StoneForgeWorkbench_Kit extends SRP_KitBase{};
 class SRP_PortalBone_Kit extends SRP_KitBase{};
 class SRP_PortalDruid_Kit extends SRP_KitBase{};
 class SRP_PortalArch_Kit extends SRP_KitBase{};
+class SRP_PortalReturn_Kit extends SRP_KitBase{};
 
 class SRP_ToolRack_Hammers_Kit extends SRP_KitBase{};
 

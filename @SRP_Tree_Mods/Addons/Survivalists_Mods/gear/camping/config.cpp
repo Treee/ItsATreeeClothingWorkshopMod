@@ -457,6 +457,49 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_PortalReturn_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Return Portal Kit";
+		descriptionShort="A kit for teleporting players back to a safe destination.";
+	};
+  
+  class SRP_PortalReturn: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Return Portal";
+		descriptionShort="A return portal. Useful for teleporting players back to a safe destination.";
+		model="Survivalists_Mods\gear\camping\srp_portalreturn.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_streetlightslim_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_portalreturn.rvmat"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
 
   // ----------------------- CUSTOM STUFF
 
@@ -610,8 +653,8 @@ class CfgVehicles
   class SRP_Guitar_Alpocalypse: Inventory_Base  // SRP_Guitar
 	{
 		scope=2;
-		displayName="Guitar";
-		descriptionShort="";
+		displayName="Alpocalypse Guitar";
+		descriptionShort="A guitar for the alpocalypse.";
 		model="Survivalists_Mods\gear\camping\alpocalypseguitar.p3d";
 		weight=1500;
 		itemSize[]={3,6};
@@ -646,6 +689,69 @@ class CfgVehicles
 				{
 					soundset="woodenlog_drop_SoundSet";
 					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_StreetLightSlim_Kit: SRP_KitBase  // SRP_StreetLightL_kit
+	{
+		scope=2;
+		displayName="Slim Street Light Kit";
+		descriptionShort="A placeable street light kit. When built you can light up the streets!";
+	};
+
+  class SRP_StreetLightSlim: Container_Base  // SRP_StreetLightLarge
+	{
+		scope=2;
+		displayName="Street Light Slim";
+		descriptionShort="This is a large street light which can be used to light up the streets";
+		model="Survivalists_Mods\gear\camping\srp_streetlightslim.p3d";
+		carveNavmesh=1;
+		weight=3000;
+		itemSize[]={15,10};
+		physLayer="item_large";
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_streetlightslim_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_streetlightslim.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
 				};
 			};
 		};

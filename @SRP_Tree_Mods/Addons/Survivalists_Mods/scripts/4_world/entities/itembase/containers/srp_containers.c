@@ -150,6 +150,7 @@ class SRP_StreetLightLarge extends SRP_Container_Base{};
 class SRP_StreetLightMedium extends SRP_Container_Base{};
 class SRP_StreetLightLarge_Metal extends SRP_Container_Base{};
 class SRP_StreetLightMedium_Wood extends SRP_Container_Base{};
+class SRP_StreetLightSlim extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};
 class SRP_MilitaryCaseMedium extends SRP_Container_Base{};

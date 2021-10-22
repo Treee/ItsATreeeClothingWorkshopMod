@@ -1186,3 +1186,9 @@ SRP_PortalArch
 SRP_KarambitKnife
 SRP_KarambitKnife_Red
 SRP_KarambitKnife_Blue
+
+SRP_StreetLightSlim_Kit
+SRP_StreetLightSlim
+
+SRP_PortalReturn_Kit
+SRP_PortalReturn

@@ -10,6 +10,11 @@ class SRP_PortalBase extends Inventory_Base
     return false;
   }
 
+  override string GetInvulnerabilityTypeString()
+	{
+		return "disableBaseDamage";
+	}
+
   void TeleportPlayer(PlayerBase player, string destination)
   {    
     vector player_pos = player.GetPosition();    
@@ -58,5 +63,14 @@ class SRP_PortalBase extends Inventory_Base
 };
 
 class SRP_PortalBone extends SRP_PortalBase{};
-class SRP_PortalDruid extends SRP_PortalBase{};
 class SRP_PortalArch extends SRP_PortalBase{};
+class SRP_PortalDruid extends SRP_PortalBase{};
+class SRP_PortalReturn extends SRP_PortalBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		RemoveAction(ActionTeleportToEvent);	
+    AddAction(ActionTeleportAwayFromEvent);
+	}
+};
