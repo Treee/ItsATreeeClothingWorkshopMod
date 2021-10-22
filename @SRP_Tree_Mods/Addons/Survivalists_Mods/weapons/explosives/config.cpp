@@ -35,15 +35,15 @@ class CfgAmmo
 			bleedThreshold=5;
 			class Health
 			{
-				damage=10;
+				damage=40;
 			};
 			class Blood
 			{
-				damage=5;
+				damage=50;
 			};
 			class Shock
 			{
-				damage=10;
+				damage=50;
 			};
 		};
 		class NoiseExplosion

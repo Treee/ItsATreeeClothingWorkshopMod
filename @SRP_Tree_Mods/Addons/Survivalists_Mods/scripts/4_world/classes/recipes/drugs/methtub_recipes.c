@@ -65,7 +65,8 @@ class SRP_Drugs_CookMeth extends RecipeBase
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethSmallTainted");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethSmallTainted");
         float chanceToExplode = Math.RandomFloat01();
-        if (chanceToExplode > 0.0)
+        // 15% chance to explode
+        if (chanceToExplode > 0.85)
         {
           methTub.AddHealth(-10);
           methTub.GetInventory().CreateInInventory("SRP_DrugExplosion");
@@ -153,6 +154,13 @@ class SRP_Drugs_MakeAcid extends RecipeBase
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SkullAcidTainted");
           methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_SkullAcidTainted");
         }
+        chance = Math.RandomFloat01();
+        // 25% chance to explode
+        if (chance > 0.75)
+        {
+          methTub.AddHealth(-10);
+          methTub.GetInventory().CreateInInventory("SRP_DrugExplosion");
+        }
       } 
       else 
       {
@@ -239,6 +247,13 @@ class SRP_Drugs_MakeBathSalts extends RecipeBase
       {
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_BathSaltsTainted");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_BathSaltsTainted");
+        float chance = Math.RandomFloat01();
+        // 50% chance to explode
+        if (chance > 0.50)
+        {
+          methTub.AddHealth(-10);
+          methTub.GetInventory().CreateInInventory("SRP_DrugExplosion");
+        }
       } 
       else 
       {
