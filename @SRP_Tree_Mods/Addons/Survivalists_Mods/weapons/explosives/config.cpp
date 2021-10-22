@@ -13,9 +13,52 @@ class CfgPatches
 	};
 };
 
+class CfgAmmo
+{
+  class DefaultAmmo;
+	class DrugExplosion_Ammo: DefaultAmmo
+	{
+		indirectHit=3;
+		indirectHitRange=1;
+		explosive=1;
+		typicalSpeed=3;
+		initSpeed=3;
+		simulation="shotShell";
+		simulationStep=0.15000001;
+		soundSetExplosion[]=
+		{
+			"Artillery_Distant_SoundSet"
+		};
+		class DamageApplied
+		{
+			type="FragGrenade";
+			bleedThreshold=5;
+			class Health
+			{
+				damage=10;
+			};
+			class Blood
+			{
+				damage=5;
+			};
+			class Shock
+			{
+				damage=10;
+			};
+		};
+		class NoiseExplosion
+		{
+			strength=50;
+			type="shot";
+		};
+	};
+};
+
 class CfgVehicles
 {
   class Inventory_Base;
+  class Grenade_Base;
+
   class SRP_Dynamite_Stick : Inventory_Base
   {
 		scope=2;
@@ -73,4 +116,10 @@ class CfgVehicles
 			convertEnergyToQuantity=1;
 		};
   };
+
+  class SRP_DrugExplosion: Grenade_Base
+	{
+		scope=2;
+		model="Survivalists_Mods\weapons\explosives\explosion_drugbench.p3d";
+	};
 };

@@ -64,6 +64,12 @@ class SRP_Drugs_CookMeth extends RecipeBase
       if (m_isTainted) {
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethSmallTainted");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethSmallTainted");
+        float chanceToExplode = Math.RandomFloat01();
+        if (chanceToExplode > 0.0)
+        {
+          methTub.AddHealth(-10);
+          methTub.GetInventory().CreateInInventory("SRP_DrugExplosion");
+        }
       } else {
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethLarge");
         methTub.GetInventory().CreateInInventory("SRP_ConsumableDrug_MethLarge");
