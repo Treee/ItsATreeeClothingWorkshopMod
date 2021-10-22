@@ -1182,3 +1182,7 @@ SRP_PortalDruid
 
 SRP_PortalArch_Kit
 SRP_PortalArch
+
+SRP_KarambitKnife
+SRP_KarambitKnife_Red
+SRP_KarambitKnife_Blue

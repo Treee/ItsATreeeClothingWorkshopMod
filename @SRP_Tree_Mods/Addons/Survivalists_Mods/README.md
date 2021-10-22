@@ -595,6 +595,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Portal Frame" (https://skfb.ly/6CxTF) by soidev is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- place holder for karambit and turkey hat
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

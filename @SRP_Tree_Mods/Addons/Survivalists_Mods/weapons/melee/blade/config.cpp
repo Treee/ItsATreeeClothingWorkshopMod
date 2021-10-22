@@ -129,11 +129,6 @@ class CfgVehicles
 		weight=200;
     varTemperatureMax=100;
     itemSize[]={1,3};
-    lootTag[]=
-		{
-			"Hunting",
-			"Camping"
-		};
 		lootCategory="Tools";
 		openItemSpillRange[]={10,20};
     isMeleeWeapon=1;
@@ -204,6 +199,115 @@ class CfgVehicles
           class Shock{damage=0;};
 				};
 			};
+		};
+  };
+
+  class SRP_KarambitKnife: Inventory_Base
+  {
+		scope=2;
+		displayName="KarambitKnife";
+		descriptionShort="A knife with a curved blade.";
+		model="Survivalists_Mods\weapons\melee\blade\karambitknife.p3d";
+    inventorySlot[]=
+		{
+			"Knife"
+		};
+    rotationFlags=17;
+    repairableWithKits[]={4};
+		repairCosts[]={10};
+		RestrainUnlockType=1;
+		canSkinBodies=1;
+		weight=200;
+    varTemperatureMax=100;
+    itemSize[]={1,3};
+		lootCategory="Tools";
+		openItemSpillRange[]={10,20};
+    isMeleeWeapon=1;
+		suicideAnim="onehanded";
+		hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= {
+      "Survivalists_Mods\weapons\melee\blade\data\karambitknife_co.paa"
+		};
+		hiddenSelectionsMaterials[]= {
+			"Survivalists_Mods\weapons\melee\blade\data\karambitknife.rvmat"
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+        action="MeleeAttack%d";
+        ammo="MeleeLightBlunt";
+        range=1.2;
+        actionSounds="action_punch";
+			};
+			class Heavy
+			{
+				ammo="MeleeKnife_Heavy";
+				range=1.2;
+			};
+			class Sprint
+			{
+				ammo="MeleeKnife_Heavy";
+				range=3.3;
+			};
+		};    
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Mods\weapons\melee\blade\data\karambitknife.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\karambitknife.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\karambitknife_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\karambitknife_damage.rvmat"}},
+            {0,{"Survivalists_Mods\weapons\melee\blade\data\karambitknife_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+  };
+
+  class SRP_KarambitKnife_Red: SRP_KarambitKnife
+  {
+		scope=2;
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= {
+      "Survivalists_Mods\weapons\melee\blade\data\karambitknife_red_co.paa"
+		};
+  };
+
+  class SRP_KarambitKnife_Blue: SRP_KarambitKnife
+  {
+		scope=2;
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= {
+      "Survivalists_Mods\weapons\melee\blade\data\karambitknife_blue_co.paa"
 		};
   };
 
