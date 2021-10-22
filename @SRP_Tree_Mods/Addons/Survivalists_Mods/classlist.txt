@@ -1192,3 +1192,5 @@ SRP_StreetLightSlim
 
 SRP_PortalReturn_Kit
 SRP_PortalReturn
+
+SRP_KOS_BeaconStone
