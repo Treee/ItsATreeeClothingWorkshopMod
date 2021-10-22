@@ -67,17 +67,8 @@ class SRP_FoodCanPreserved_VeggieHumanMeatCombo : SRP_FoodCanPreserved_Colorbase
 	}
 };
 
-class SRP_FoodCanPreserved_Opened_Colorbase: Edible_Base
+class SRP_FoodCanPreserved_Opened: Edible_Base
 {
-	void SRP_FoodCanPreserved_Opened_Colorbase()
-	{
-    float chance = Math.RandomFloat01();
-    if (chance < 0.01) // 1% chance to get food poisoning
-    {
-		  InsertAgent(eAgents.FOOD_POISON, 1);
-    }
-	}
-	
 	override bool CanDecay()
 	{
 		return true;
@@ -96,18 +87,9 @@ class SRP_FoodCanPreserved_Opened_Colorbase: Edible_Base
 		AddAction(ActionEatSmallCan);
 	}
 };
-class SRP_PreservedFoodCan_Veggies_Opened: SRP_FoodCanPreserved_Opened_Colorbase {};
-class SRP_PreservedFoodCan_Meat_Opened: SRP_FoodCanPreserved_Opened_Colorbase {};
-class SRP_PreservedFoodCan_HumanMeat_Opened: SRP_FoodCanPreserved_Opened_Colorbase {
-	void SRP_PreservedFoodCan_HumanMeat_Opened()
-	{
-    InsertAgent(eAgents.BRAIN, 1);
-	}
-};
-class SRP_PreservedFoodCan_VeggiesMeatCombo_Opened: SRP_FoodCanPreserved_Opened_Colorbase {};
-class SRP_PreservedFoodCan_VeggiesHumanMeatCombo_Opened: SRP_FoodCanPreserved_Opened_Colorbase {
-	void SRP_PreservedFoodCan_VeggiesHumanMeatCombo_Opened()
-	{
-    InsertAgent(eAgents.BRAIN, 1);
-	}
-};
+
+class SRP_FoodCanPreserved_Veggies_Opened: SRP_FoodCanPreserved_Opened{};
+class SRP_FoodCanPreserved_Meat_Opened: SRP_FoodCanPreserved_Opened{};
+class SRP_FoodCanPreserved_HumanMeat_Opened: SRP_FoodCanPreserved_Opened{};
+class SRP_FoodCanPreserved_VeggiesMeatCombo_Opened: SRP_FoodCanPreserved_Opened{};
+class SRP_FoodCanPreserved_VeggiesHumanMeatCombo_Opened: SRP_FoodCanPreserved_Opened{};

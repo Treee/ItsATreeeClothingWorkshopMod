@@ -309,8 +309,8 @@ class SRP_CreateVeggiesCanned_Raw extends RecipeBase
     Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
     if (item0 && item1)
     {
-      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
-      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+      isCraftable = !item0.IsFoodBurned() && !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() && !item1.IsFoodRotten());
     }
     return isCraftable;
 	}
@@ -412,8 +412,8 @@ class SRP_CreateMeatCanned_Raw extends RecipeBase
     Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
     if (item0 && item1)
     {
-      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
-      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+      isCraftable = !item0.IsFoodBurned() && !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() && !item1.IsFoodRotten());
     }
     return isCraftable;
 	}
@@ -485,8 +485,8 @@ class SRP_CreateHumanMeatCanned_Raw extends RecipeBase
     Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
     if (item0 && item1)
     {
-      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
-      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+      isCraftable = !item0.IsFoodBurned() && !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() && !item1.IsFoodRotten());
     }
     return isCraftable;	
   }
@@ -569,8 +569,8 @@ class SRP_CreateVeggiesHumanMeatComboCanned_Raw extends RecipeBase
     Edible_Base item1 = Edible_Base.Cast(ingredients[1]);
     if (item0 && item1)
     {
-      isCraftable = !item0.IsFoodBurned() || !item0.IsFoodRotten();
-      isCraftable = isCraftable && (!item1.IsFoodBurned() || !item1.IsFoodRotten());
+      isCraftable = !item0.IsFoodBurned() && !item0.IsFoodRotten();
+      isCraftable = isCraftable && (!item1.IsFoodBurned() && !item1.IsFoodRotten());
     }
     return isCraftable;	
   }

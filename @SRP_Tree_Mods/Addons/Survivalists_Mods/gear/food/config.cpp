@@ -960,7 +960,7 @@ class CfgVehicles
 		};
     class Nutrition
 		{
-			fullnessIndex=4;
+			fullnessIndex=2;
 			energy=150;
 			water=50;
 			nutritionalIndex=1;
@@ -2045,7 +2045,8 @@ class CfgVehicles
 	};
   
   //----------------------------------------- Opened Cans
-  class SRP_FoodCanPreserved_Opened_Colorbase: Edible_Base {
+  class SRP_FoodCanPreserved_Opened: Edible_Base 
+  {
 		displayName="Preserved Canned Food Open";
 		descriptionShort="An opened can of preserved food. Who knows how long it has been in there.";
 		model="\dz\gear\food\food_can_open.p3d";
@@ -2106,7 +2107,7 @@ class CfgVehicles
 		};
   };
 
-	class SRP_FoodCanPreserved_Veggies_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+	class SRP_FoodCanPreserved_Veggies_Opened: SRP_FoodCanPreserved_Opened
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -2119,15 +2120,15 @@ class CfgVehicles
 		};
 		class Nutrition
 		{
-			fullnessIndex=4;
+			fullnessIndex=2;
 			energy=200;
 			water=350;
 			nutritionalIndex=1;
-			toxicity=0;
+			toxicity=0;      
 		};
 	};
 
-  class SRP_FoodCanPreserved_Meat_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+  class SRP_FoodCanPreserved_Meat_Opened: SRP_FoodCanPreserved_Opened
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -2140,7 +2141,7 @@ class CfgVehicles
 		};
 		class Nutrition
 		{
-			fullnessIndex=4;
+			fullnessIndex=2;
 			energy=450;
 			water=150;
 			nutritionalIndex=1;
@@ -2148,7 +2149,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_FoodCanPreserved_HumanMeat_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+  class SRP_FoodCanPreserved_HumanMeat_Opened: SRP_FoodCanPreserved_Opened
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -2161,16 +2162,17 @@ class CfgVehicles
 		};
 		class Nutrition
 		{
-			fullnessIndex=4;
+			fullnessIndex=2;
 			energy=450;
 			water=150;
 			nutritionalIndex=1;
 			toxicity=0;
-      agents=4;
+      digestibility=2;
+      agents=8;
 		};
 	};
 
-  class SRP_FoodCanPreserved_VeggieMeatCombo_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+  class SRP_FoodCanPreserved_VeggieMeatCombo_Opened: SRP_FoodCanPreserved_Opened
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -2183,7 +2185,7 @@ class CfgVehicles
 		};
 		class Nutrition
 		{
-			fullnessIndex=4;
+			fullnessIndex=2;
 			energy=150;
 			water=150;
 			nutritionalIndex=1;
@@ -2191,7 +2193,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_FoodCanPreserved_VeggieHumanMeatCombo_Opened: SRP_FoodCanPreserved_Opened_Colorbase
+  class SRP_FoodCanPreserved_VeggieHumanMeatCombo_Opened: SRP_FoodCanPreserved_Opened
 	{
 		scope=2;
 		hiddenSelections[]=
@@ -2204,12 +2206,13 @@ class CfgVehicles
 		};
 		class Nutrition
 		{
-			fullnessIndex=4;
+			fullnessIndex=2;
 			energy=150;
 			water=150;
 			nutritionalIndex=1;
 			toxicity=0;
-      agents=4;
+      digestibility=2;
+      agents=8;
 		};
 	};
 
