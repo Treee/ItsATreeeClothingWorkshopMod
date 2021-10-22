@@ -29,6 +29,9 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new Craft_SRP_Container_WoodenBarrelKit);
 		RegisterRecipe(new Craft_SRP_Container_WoodenBarrelTableKit);
 
+    // Masks
+		RegisterRecipe(new Craft_SRP_RefillGasMaskFilter);
+
     // Mining
 		RegisterRecipe(new Craft_SRP_CrushStoneChunk_CrudeTool);
 		RegisterRecipe(new Craft_SRP_RefineUnCutGem_CrudeTool);
