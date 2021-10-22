@@ -133,6 +133,12 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\signs\srp_kos_beaconstone.p3d";
 	};
 
+  class SRP_KOS_BeaconFire: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\srp_kos_beaconfire.p3d";
+	};
+  
   class SRP_Gravestone_1Stone_Kit: SRP_KitBase //new
 	{
 		scope=2;

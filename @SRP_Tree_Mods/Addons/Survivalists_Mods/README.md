@@ -599,6 +599,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Beacon" (https://skfb.ly/LwRU) by Mike Rowley is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
+- "Fire beacon" (https://skfb.ly/6VWxC) by Ivan Norman is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - place holder for karambit and turkey hat
 
 # Wishlist

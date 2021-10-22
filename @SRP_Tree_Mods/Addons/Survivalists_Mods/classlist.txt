@@ -1194,3 +1194,4 @@ SRP_PortalReturn_Kit
 SRP_PortalReturn
 
 SRP_KOS_BeaconStone
+SRP_KOS_BeaconFire
