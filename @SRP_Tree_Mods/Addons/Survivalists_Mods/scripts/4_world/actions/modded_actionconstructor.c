@@ -11,7 +11,8 @@ modded class ActionConstructor
 		actions.Insert(SRP_ActionOpenMap);
     actions.Insert(ActionPaintFace);
     actions.Insert(ActionFacePaintStickSwitch);
-    actions.Insert(SRP_TeleportAction);
+    actions.Insert(ActionTeleportToEvent);
+    actions.Insert(ActionTeleportAwayFromEvent);
 
     // Smoking
     actions.Insert(ActionSmokeSRPSmokableSelf);

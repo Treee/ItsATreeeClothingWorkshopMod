@@ -10,14 +10,27 @@ class SRP_PortalBase extends Inventory_Base
     return false;
   }
 
-  void TeleportPlayer(PlayerBase player)
+  void TeleportPlayer(PlayerBase player, string destination)
   {    
-    vector player_pos = player.GetPosition();
+    vector player_pos = player.GetPosition();    
     vector closest_safe_pos = GetTemplateIslandSpawnPoints().GetRandomElement();
+    if (destination == "home")
+    {
+      closest_safe_pos = GetReturnLocations().GetRandomElement();
+    }
 
     closest_safe_pos[1] = GetGame().SurfaceY(closest_safe_pos[0], closest_safe_pos[2]);
     player.SetPosition( closest_safe_pos );//...so lets teleport them somewhere safe
     GetGame().RPCSingleParam(player, ERPCs.RPC_WARNING_TELEPORT, null, true, player.GetIdentity());   
+  }
+
+  array<vector> GetReturnLocations()
+  {
+    return {
+      "3880.34 14.088 9838.07", "6046.6 5.89249 14896.4", "9959 21.7825 11047.3", "7962.3 4.1465 8652.18",
+      "5671.55 4.9425 9272.67", "3172.19 22.1825 6285.98", "4351.97 9.52215 3195.02", "5478.49 6.6125 997.507",
+      "7041.67 44.1828 1810.15", "7463.39 33.9114 3626.54", "10238.3 43.6443 5142.85", "9242.34 11.2332 7138.88"
+    };
   }
 
   array<vector> GetTemplateIslandSpawnPoints()
@@ -40,7 +53,7 @@ class SRP_PortalBase extends Inventory_Base
   override void SetActions()
 	{
 		super.SetActions();
-		AddAction(SRP_TeleportAction);		
+		AddAction(ActionTeleportToEvent);		
 	}
 };
 
