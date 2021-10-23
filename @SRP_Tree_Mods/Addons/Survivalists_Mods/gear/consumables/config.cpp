@@ -372,4 +372,84 @@ class CfgVehicles
 			};
 		};
 	};
+
+  //============================================= CONSUMABLES
+  class SRP_CraftingMaterial_Metal: Inventory_Base
+	{
+		scope=0;
+		displayName="Metal Crafting Model Base";
+		descriptionShort="Metal Crafting Model Base";
+		model="Survivalists_Mods\gear\consumables\craftingmaterials_metal.p3d";
+		rotationFlags=34;
+		weight=1200;
+		itemSize[]={5,5};
+		itemBehaviour=0;
+		canBeSplit=1;
+		varQuantityInit=5;
+		varQuantityMin=0;
+		varQuantityMax=40;
+		varQuantityDestroyOnMin=1;
+		varStackMax=40;
+		inventorySlot[]={};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"dz\gear\consumables\data\craftingmaterials_metal.rvmat"}},
+            {0.69999999,	{	"dz\gear\consumables\data\craftingmaterials_metal.rvmat"}},
+            {0.5,	{	"dz\gear\consumables\data\craftingmaterials_metal_damage.rvmat"}},
+            {0.30000001,	{	"dz\gear\consumables\data\craftingmaterials_metal_damage.rvmat"}},
+            {0.0,	{	"dz\gear\consumables\data\craftingmaterials_metal_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_CraftingMaterial_MetalScraps: SRP_CraftingMaterial_Metal
+  {
+		scope=2;
+		displayName="Sheet Metal Scraps";
+		descriptionShort="Sheet Metal Scraps";
+		model="Survivalists_Mods\gear\consumables\craftingmaterials_sheetmetal.p3d";
+  }
+  class SRP_CraftingMaterial_MetalRod: SRP_CraftingMaterial_Metal
+  {
+		scope=2;
+		displayName="Metal Rod";
+		descriptionShort="Metal Rod. Might be useful on a lathe.";
+		model="Survivalists_Mods\gear\consumables\craftingmaterials_metalrod.p3d";
+    itemSize[]={2,5};
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=1;
+		varQuantityDestroyOnMin=1;
+		varStackMax=1;
+  }
+  class SRP_CraftingMaterial_StoneBrick: SRP_CraftingMaterial_Metal
+  {
+		scope=2;
+		displayName="Stone Brick";
+		descriptionShort="Stone Brick. Pretty heavy.";
+		model="Survivalists_Mods\gear\consumables\craftingmaterials_stonebrick.p3d";
+    itemSize[]={2,3};
+  }
+  class SRP_CraftingMaterial_MetalBeam: SRP_CraftingMaterial_Metal
+  {
+		scope=2;
+		displayName="Metal Beam";
+		descriptionShort="Metal Beam. Pretty heavy.";
+		model="Survivalists_Mods\gear\consumables\craftingmaterials_metalbeam.p3d";
+    itemSize[]={3,8};
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=1;
+		varQuantityDestroyOnMin=1;
+		varStackMax=1;
+  }
 };

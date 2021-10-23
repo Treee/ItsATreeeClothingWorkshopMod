@@ -607,7 +607,15 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Cooked Turkey Beanie" by Tiyshen (https://sketchfab.com/3d-models/cooked-turkey-beanie-65099b3c982841e9982dab52b105d8ff) (Purchased)
 
-- place holder for karambit and turkey hat
+- "Sacrifice Table" (https://skfb.ly/6SZXH) by DivyeSh PanchAl is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Сrystal" (https://skfb.ly/6WORM) by pronko.tata is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Fantasy Light Plant" (https://skfb.ly/6WMwF) by artikora is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Demon Skull" (https://skfb.ly/CBE9) by erikleiram is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Sacrificial Altar" (https://skfb.ly/OzxR) by Jochon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Wishlist
 

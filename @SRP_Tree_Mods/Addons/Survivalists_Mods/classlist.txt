@@ -1188,6 +1188,13 @@ SRP_KarambitKnife_Red
 SRP_KarambitKnife_Blue
 
 SRP_BeanieHat_Turkey
+SRP_BeanieHat_TurkeyPink
+SRP_BeanieHat_SkylarPink
+SRP_BeanieHat_Green
+SRP_BeanieHat_Grey
+SRP_BeanieHat_Purple
+SRP_BeanieHat_Teal
+SRP_BeanieHat_Yellow
 
 SRP_StreetLightSlim_Kit
 SRP_StreetLightSlim
@@ -1197,3 +1204,9 @@ SRP_PortalReturn
 
 SRP_KOS_BeaconStone
 SRP_KOS_BeaconFire
+
+SRP_CraftingMaterial_MetalScraps
+SRP_CraftingMaterial_MetalRod
+SRP_CraftingMaterial_StoneBrick
+SRP_CraftingMaterial_MetalBeam
+

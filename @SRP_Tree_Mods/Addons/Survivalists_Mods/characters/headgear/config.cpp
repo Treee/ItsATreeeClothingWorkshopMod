@@ -125,6 +125,113 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_BeanieHat_TurkeyPink: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="TurkeyPink";
+    displayName="Pink Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie_pink_co.paa"
+		};
+	};
+
+  class SRP_BeanieHat_SkylarPink: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="SkylarPink";
+    displayName="Pink Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie_skypink_co.paa"
+		};
+	};
+  class SRP_BeanieHat_Green: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="Green";
+    displayName="Green Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie_green_co.paa"
+		};
+	};
+  class SRP_BeanieHat_Grey: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="Grey";
+    displayName="Grey Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie_grey_co.paa"
+		};
+	};
+  class SRP_BeanieHat_Purple: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="Purple";
+    displayName="Purple Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie_purple_co.paa"
+		};
+	};
+  class SRP_BeanieHat_Teal: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="Teal";
+    displayName="Teal Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie_teal_co.paa"
+		};
+	};
+  class SRP_BeanieHat_Yellow: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="Yellow";
+    displayName="Yellow Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie_yellow_co.paa"
+		};
+	};
+  
   class SRP_MinerHelmet: Headtorch_ColorBase
   {
 		scope=2;
