@@ -500,6 +500,161 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_AltarBone_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Bone Altar Kit";
+		descriptionShort="Alter for a boss.";
+	};
+  
+  class SRP_AltarBone: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Bone Altar";
+		descriptionShort="An altar to summon something big.";
+		model="Survivalists_Mods\gear\camping\srp_altarbone.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
+  class SRP_AltarWraith_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wraith Altar Kit";
+		descriptionShort="Alter for a boss.";
+	};
+  
+  class SRP_AltarWraith: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Wraith Altar";
+		descriptionShort="An altar to summon something big.";
+		model="Survivalists_Mods\gear\camping\srp_altarwraith.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
+  class SRP_AltarDog_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Dog Altar Kit";
+		descriptionShort="Alter for a boss.";
+	};
+  
+  class SRP_AltarDog: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Dog Altar";
+		descriptionShort="An altar to summon something big.";
+		model="Survivalists_Mods\gear\camping\srp_altardog.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
+  class SRP_AltarWendigo_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wendigo Altar Kit";
+		descriptionShort="Alter for a boss.";
+	};
+  
+  class SRP_AltarWendigo: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Wendigo Altar";
+		descriptionShort="An altar to summon something big.";
+		model="Survivalists_Mods\gear\camping\srp_altarwendigo.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
+  class SRP_AltarBigBoss_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Big Boss Altar Kit";
+		descriptionShort="Alter for a boss.";
+	};
+  
+  class SRP_AltarBigBoss: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Big Boss Altar";
+		descriptionShort="An altar to summon something big.";
+		model="Survivalists_Mods\gear\camping\srp_altarbigboss.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemCargoSize[]={0,0};
+		physLayer="item_large";
+		rotationFlags=2;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+		};
+	};
+
 
   // ----------------------- CUSTOM STUFF
 

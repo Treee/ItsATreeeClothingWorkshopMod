@@ -214,6 +214,12 @@ class SRP_PortalDruid_Kit extends SRP_KitBase{};
 class SRP_PortalArch_Kit extends SRP_KitBase{};
 class SRP_PortalReturn_Kit extends SRP_KitBase{};
 
+class SRP_AltarBone_Kit extends SRP_KitBase{};
+class SRP_AltarWraith_Kit extends SRP_KitBase{};
+class SRP_AltarDog_Kit extends SRP_KitBase{};
+class SRP_AltarWendigo_Kit extends SRP_KitBase{};
+class SRP_AltarBigBoss_Kit extends SRP_KitBase{};
+
 class SRP_ToolRack_Hammers_Kit extends SRP_KitBase{};
 
 // Gravestones

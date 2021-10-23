@@ -1210,3 +1210,13 @@ SRP_CraftingMaterial_MetalRod
 SRP_CraftingMaterial_StoneBrick
 SRP_CraftingMaterial_MetalBeam
 
+SRP_AltarBone_Kit
+SRP_AltarBone
+SRP_AltarWraith_Kit
+SRP_AltarWraith
+SRP_AltarDog_Kit
+SRP_AltarDog
+SRP_AltarWendigo_Kit
+SRP_AltarWendigo
+SRP_AltarBigBoss_Kit
+SRP_AltarBigBoss
