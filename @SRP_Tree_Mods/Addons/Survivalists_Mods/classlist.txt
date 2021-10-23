@@ -1187,6 +1187,8 @@ SRP_KarambitKnife
 SRP_KarambitKnife_Red
 SRP_KarambitKnife_Blue
 
+SRP_BeanieHat_Turkey
+
 SRP_StreetLightSlim_Kit
 SRP_StreetLightSlim
 

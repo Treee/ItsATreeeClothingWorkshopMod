@@ -601,6 +601,12 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Fire beacon" (https://skfb.ly/6VWxC) by Ivan Norman is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Wastelands Building Materials Kit1" (https://skfb.ly/6USMs) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
+- "Karambit" by Nohiro (https://sketchfab.com/3d-models/karambit-b0789f7e29e54f7183718d68cdfbe836) (Purchased)
+
+- "Cooked Turkey Beanie" by Tiyshen (https://sketchfab.com/3d-models/cooked-turkey-beanie-65099b3c982841e9982dab52b105d8ff) (Purchased)
+
 - place holder for karambit and turkey hat
 
 # Wishlist

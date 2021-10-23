@@ -27,6 +27,7 @@ class CfgVehicles
   class BallisticHelmet_ColorBase;
   class Mich2001Helmet;
   class BalaclavaMask_ColorBase;
+  class BeanieHat_ColorBase;
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class DarkMotoHelmet_ColorBase: Clothing
@@ -58,6 +59,8 @@ class CfgVehicles
 	{
 		scope=2;
 		color="Tinfoil";
+    displayName="Tinfoil Hat";
+    descriptionShort="Crazy....";
     model="Survivalists_Mods\characters\headgear\tinfoilhat_g.p3d";
     hiddenSelections[]=
 		{
@@ -93,6 +96,32 @@ class CfgVehicles
 					};
 				};
 			};
+		};
+	};
+
+  class SRP_BeanieHat_Turkey: BeanieHat_ColorBase  // new
+	{
+		scope=2;
+		color="Turkey";
+    displayName="Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    model="Survivalists_Mods\characters\headgear\turkeybeanie_g.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\turkeybeanie_m.p3d";
+			female="Survivalists_Mods\characters\headgear\turkeybeanie_f.p3d";
 		};
 	};
 
