@@ -1146,6 +1146,7 @@ SRP_StoneForgeWorkbench_Kit
 SRP_StoneForgeWorkbench
 
 SRP_ForgeCrucible_Copper
+SRP_ForgeCrucible_Copper
 SRP_ForgeCrucible_Tin
 SRP_ForgeCrucible_Bronze
 SRP_ForgeCrucible_Iron
@@ -1174,15 +1175,6 @@ SRP_Coinage_GoldWorn
 SRP_Coinage_Bronze
 SRP_Coinage_Copper
 
-SRP_PortalBone_Kit
-SRP_PortalBone
-
-SRP_PortalDruid_Kit
-SRP_PortalDruid
-
-SRP_PortalArch_Kit
-SRP_PortalArch
-
 SRP_KarambitKnife
 SRP_KarambitKnife_Red
 SRP_KarambitKnife_Blue
@@ -1199,9 +1191,6 @@ SRP_BeanieHat_Yellow
 SRP_StreetLightSlim_Kit
 SRP_StreetLightSlim
 
-SRP_PortalReturn_Kit
-SRP_PortalReturn
-
 SRP_KOS_BeaconStone
 SRP_KOS_BeaconFire
 
@@ -1209,6 +1198,15 @@ SRP_CraftingMaterial_MetalScraps
 SRP_CraftingMaterial_MetalRod
 SRP_CraftingMaterial_StoneBrick
 SRP_CraftingMaterial_MetalBeam
+
+SRP_PortalBone_Kit
+SRP_PortalBone
+SRP_PortalDruid_Kit
+SRP_PortalDruid
+SRP_PortalArch_Kit
+SRP_PortalArch
+SRP_PortalReturn_Kit
+SRP_PortalReturn
 
 SRP_AltarBone_Kit
 SRP_AltarBone
@@ -1220,3 +1218,5 @@ SRP_AltarWendigo_Kit
 SRP_AltarWendigo
 SRP_AltarBigBoss_Kit
 SRP_AltarBigBoss
+
+//===========

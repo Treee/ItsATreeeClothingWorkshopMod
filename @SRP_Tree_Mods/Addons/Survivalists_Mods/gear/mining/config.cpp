@@ -542,6 +542,22 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_ForgeCrucible_Empty: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Empty";
+		descriptionShort="Very hot molten metal.";
+    color="empty";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_empty_co.paa"
+		};
+	};
+
   class SRP_ForgeCrucible_Copper: SRP_ForgeCrucible_ColorBase
 	{
 		scope=2;
