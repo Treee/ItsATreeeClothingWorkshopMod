@@ -555,7 +555,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Jar of Bath Salts (Photosensitivity Warning!!)";
-		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Copnsuming these shows you have no regard for your life.";
+		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Consuming these shows you have no regard for your life.";
 		model="\dz\gear\food\Honey.p3d";
     color="BathSalts";
 		itemSize[]={2,2};
@@ -584,7 +584,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Jar of Bath Salts (Photosensitivity Warning!!)";
-		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Copnsuming these shows you have no regard for your life.";
+		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Consuming these shows you have no regard for your life.";
 		model="\dz\gear\food\Honey.p3d";
     color="BathSaltsTainted";
 		itemSize[]={2,2};
@@ -1183,7 +1183,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Jar of Cocaine Paste";
-		descriptionShort="This jar contains many delicous bath salts. Copnsuming these shows you have no regard for your life.";
+		descriptionShort="This jar contains cocaine paste. Thick and bitter tasting but packs a punch.";
 		model="\dz\gear\food\Honey.p3d";
     color="CocainePaste";
 		itemSize[]={4,4};
