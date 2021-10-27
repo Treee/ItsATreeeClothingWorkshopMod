@@ -85,8 +85,3 @@ class Stage7
   };
   textGen="7";
 };
-class Stage8
-{
-  texture="Survivalists_Mods\gear\camping\data\srp_altarbigboss_e_co.paa";
-  texGen="0";
-};
