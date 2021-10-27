@@ -142,8 +142,8 @@ class CfgVehicles
 		varQuantityDestroyOnMin=1;
 		varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=20;
-		varStackMax=20;    
+		varQuantityMax=50;
+		varStackMax=50;    
 		inventorySlot[]={};
 		class DamageSystem
 		{
@@ -229,7 +229,7 @@ class CfgVehicles
 		varQuantityDestroyOnMin=1;
 		varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=1;
+		varQuantityMax=10;
 		varStackMax=10;
     rotationFlags=17;
 		inventorySlot[]={};
@@ -350,12 +350,10 @@ class CfgVehicles
     color="base";
 		weight=500;
 		itemSize[]={3,1};
-    canBeSplit=1;
 		varQuantityDestroyOnMin=1;
-		varQuantityInit=1;
+		varQuantityInit=0;
 		varQuantityMin=0;
-		varQuantityMax=1;
-		varStackMax=1;
+		varQuantityMax=0;
 		inventorySlot[]={};
 		class DamageSystem
 		{
@@ -480,10 +478,7 @@ class CfgVehicles
 		itemSize[]={4,3};
     color="base";
 		itemsCargoSize[]={4,3};
-		inventorySlot[]=
-		{
-		};
-		stackedRandom=0;
+		inventorySlot[]={	};
 		canBeDigged=0;
 		allowOwnedCargoManipulation=1;
 		destroyOnEmpty=0;
@@ -1049,12 +1044,10 @@ class CfgVehicles
     physLayer="item_small";
 		weight=500;
 		itemSize[]={1,2};
-    canBeSplit=1;
 		varQuantityDestroyOnMin=1;
-		varQuantityInit=1;
+		varQuantityInit=0;
 		varQuantityMin=0;
-		varQuantityMax=1;
-		varStackMax=1;
+		varQuantityMax=0;
 		inventorySlot[]={};
     hiddenSelections[]=
 		{
