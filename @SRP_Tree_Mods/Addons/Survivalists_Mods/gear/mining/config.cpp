@@ -142,7 +142,7 @@ class CfgVehicles
 		varQuantityDestroyOnMin=1;
 		varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=1;
+		varQuantityMax=20;
 		varStackMax=20;    
 		inventorySlot[]={};
 		class DamageSystem
