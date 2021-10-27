@@ -143,7 +143,6 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=50;
-		varStackMax=50;    
 		inventorySlot[]={};
 		class DamageSystem
 		{
@@ -660,7 +659,6 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=12;
-		varStackMax=12;
 		inventorySlot[]={};
 		isMeleeWeapon=1;
 		class DamageSystem
@@ -893,7 +891,6 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=8;
-		varStackMax=8;
 		inventorySlot[]={};
     hiddenSelections[]=
 		{
