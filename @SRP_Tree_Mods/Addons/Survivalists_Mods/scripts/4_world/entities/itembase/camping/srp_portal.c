@@ -113,3 +113,26 @@ class SRP_PortalReturn extends SRP_PortalBase
     AddAction(ActionTeleportAwayFromEvent);
 	}
 };
+
+class SRP_AltarBase extends Inventory_Base
+{
+  override bool CanPutInCargo( EntityAI parent )
+  {
+    return false;
+  }
+    
+  override bool CanPutIntoHands(EntityAI parent)
+  {
+    return false;
+  }
+
+  override string GetInvulnerabilityTypeString()
+	{
+		return "disableBaseDamage";
+	}
+};
+class SRP_AltarBone extends SRP_AltarBase{};
+class SRP_AltarWraith extends SRP_AltarBase{};
+class SRP_AltarDog extends SRP_AltarBase{};
+class SRP_AltarWendigo extends SRP_AltarBase{};
+class SRP_AltarBigBoss extends SRP_AltarBase{};
