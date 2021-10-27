@@ -252,6 +252,8 @@ class CfgVehicles
   class Plant_Cocaine: PlantBase
 	{
 		scope=2;
+		displayName="Cocaine Plant";
+		descriptionShort="A wierd plant that you haven't seen before in this climate.";
 		model="Survivalists_Mods\gear\cultivation\cocaine_plant.p3d";
 		hiddenSelectionsTextures[]=
 		{
