@@ -188,7 +188,7 @@ class SRP_AltarBone extends SRP_AltarBase
 {
   void SRP_AltarBone()
   {
-    m_ParticleSize = 10.0;
+    m_ParticleSize = 5.0;
     m_Position = Vector(0, 0, 0);
     m_particleEffect = ParticleList.Fog_40m_A32_WHITE_WS;
     m_BirthRate = 8.0; // try not to have birthrate above 1
