@@ -88,7 +88,7 @@ class SRP_PortalReturn extends SRP_PortalBase
       //effects i could find 
       // groundParticle.ScaleParticleParam(EmitorParam.VELOCITY, 0.1);
       // groundParticle.ScaleParticleParam(EmitorParam.VELOCITY_RND, 1);
-      // groundParticle.ScaleParticleParam(EmitorParam.SIZE, 2);
+      groundParticle.ScaleParticleParam(EmitorParam.SIZE, 2);
       // groundParticle.ScaleParticleParam(EmitorParam.BIRTH_RATE, 1);
       // groundParticle.ScaleParticleParam(EmitorParam.AIR_RESISTANCE, 0.5);
       // groundParticle.ScaleParticleParam(EmitorParam.AIR_RESISTANCE_RND, 0.5);
@@ -116,6 +116,30 @@ class SRP_PortalReturn extends SRP_PortalBase
 
 class SRP_AltarBase extends Inventory_Base
 {
+  Particle groundParticle;
+  int m_particleEffect;
+  vector m_Position;
+  float m_ParticleSize;
+  float m_BirthRate;
+  float m_Lifetime;
+  float m_LifetimeRandom;
+
+  void SRP_AltarBase()
+  {
+    m_ParticleSize = 2.0;
+    m_Position = Vector(0, 0, 0);
+    m_particleEffect = ParticleList.GRENADE_M18_RED_LOOP;
+    m_BirthRate = 1.0; // try not to have birthrate above 1
+    m_Lifetime = 1.5;
+    m_LifetimeRandom = m_Lifetime - m_BirthRate;
+    // StartParticleEffects();
+  }
+
+  void ~SRP_AltarBase()
+  {
+    // StopParticleEffects();
+  }
+
   override bool CanPutInCargo( EntityAI parent )
   {
     return false;
@@ -130,9 +154,98 @@ class SRP_AltarBase extends Inventory_Base
 	{
 		return "disableBaseDamage";
 	}
+
+  void StartParticleEffects()
+  {
+    if ( !GetGame().IsMultiplayer() || GetGame().IsClient() ) //add this as server no like particles 
+    {       
+      // groundParticle = Particle.PlayOnObject(ParticleList.Fog_40m_A64_WHITE_L, this, "0 5 0", vector.Zero , false);
+      groundParticle = Particle.PlayOnObject(m_particleEffect, this, m_Position, vector.Zero , false);
+      
+      //effects i could find 
+      // groundParticle.ScaleParticleParam(EmitorParam.VELOCITY, 0.1);
+      // groundParticle.ScaleParticleParam(EmitorParam.VELOCITY_RND, 1);
+      groundParticle.ScaleParticleParam(EmitorParam.SIZE, m_ParticleSize);
+      groundParticle.ScaleParticleParam(EmitorParam.BIRTH_RATE, m_BirthRate);
+      groundParticle.ScaleParticleParam(EmitorParam.AIR_RESISTANCE, 0.5);
+      groundParticle.ScaleParticleParam(EmitorParam.AIR_RESISTANCE_RND, 0.5);
+      groundParticle.ScaleParticleParam(EmitorParam.LIFETIME, m_Lifetime);
+      groundParticle.ScaleParticleParam(EmitorParam.LIFETIME_RND, m_LifetimeRandom);
+      // groundParticle.SetWiggle( 10, 0.5 );
+    };
+  }
+
+  void StopParticleEffects()
+  {
+    if (groundParticle)
+    {
+      groundParticle.Stop();
+    }
+  }
 };
-class SRP_AltarBone extends SRP_AltarBase{};
-class SRP_AltarWraith extends SRP_AltarBase{};
-class SRP_AltarDog extends SRP_AltarBase{};
-class SRP_AltarWendigo extends SRP_AltarBase{};
-class SRP_AltarBigBoss extends SRP_AltarBase{};
+
+class SRP_AltarBone extends SRP_AltarBase
+{
+  void SRP_AltarBone()
+  {
+    m_ParticleSize = 10.0;
+    m_Position = Vector(0, 0, 0);
+    m_particleEffect = ParticleList.Fog_40m_A32_WHITE_WS;
+    m_BirthRate = 8.0; // try not to have birthrate above 1
+    m_Lifetime = 4.5;
+    m_LifetimeRandom = m_Lifetime - m_BirthRate;
+    StartParticleEffects();
+  }
+};
+class SRP_AltarWraith extends SRP_AltarBase
+{
+  void SRP_AltarWraith()
+  {
+    m_ParticleSize = 5.0;
+    m_Position = Vector(0, 0, 0);
+    m_particleEffect = ParticleList.Fog_40m_A64_YELLOW_WS;
+    m_BirthRate = 10.5; // try not to have birthrate above 1
+    m_Lifetime = 4.0;
+    m_LifetimeRandom = m_Lifetime - m_BirthRate;
+    StartParticleEffects();
+  }
+};
+class SRP_AltarDog extends SRP_AltarBase
+{
+  void SRP_AltarDog()
+  {
+    m_ParticleSize = 3.0;
+    m_Position = Vector(0, 0, 0);
+    m_particleEffect = ParticleList.Fog_40m_A64_YELLOW_WS;
+    m_BirthRate = 10.0; // try not to have birthrate above 1
+    m_Lifetime = 3.5;
+    m_LifetimeRandom = m_Lifetime - m_BirthRate;
+    StartParticleEffects();
+  }
+};
+class SRP_AltarWendigo extends SRP_AltarBase
+{
+  void SRP_AltarWendigo()
+  {
+    m_ParticleSize = 4.0;
+    m_Position = Vector(0, 0, 0);
+    m_particleEffect = ParticleList.Fog_40m_A16_TOXIC_L;
+    m_BirthRate = 7.0; // try not to have birthrate above 1
+    m_Lifetime = 5.5;
+    m_LifetimeRandom = m_Lifetime - m_BirthRate;
+    StartParticleEffects();
+  }
+};
+class SRP_AltarBigBoss extends SRP_AltarBase
+{
+  void SRP_AltarBigBoss()
+  {
+    m_ParticleSize = 6.0;
+    m_Position = Vector(0, 0, 0);
+    m_particleEffect = ParticleList.Fog_40m_A64_WHITE;
+    m_BirthRate = 10.0; // try not to have birthrate above 1
+    m_Lifetime = 3.5;
+    m_LifetimeRandom = m_Lifetime - m_BirthRate;
+    StartParticleEffects();
+  }
+};

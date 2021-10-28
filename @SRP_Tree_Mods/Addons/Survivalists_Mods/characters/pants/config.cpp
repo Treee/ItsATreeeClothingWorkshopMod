@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Survivalists_Mods_Characters__Pants
+	class Survivalists_Mods_Characters_Pants
 	{
 		units[]={};
 		weapons[]={};

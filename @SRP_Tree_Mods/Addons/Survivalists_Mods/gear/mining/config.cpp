@@ -132,7 +132,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Metal Coin";
 		descriptionShort="A metal coin minted from forged metal.";
-		model="Survivalists_Mods\gear\mining\srp_coinage_gold1.p3d";
+		model="Survivalists_Mods\gear\mining\srp_coinage_gold.p3d";
 		animClass="NoFireClass";
     physLayer="item_small";
     color="base";

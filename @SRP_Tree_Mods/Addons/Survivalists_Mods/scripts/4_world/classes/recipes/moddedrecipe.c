@@ -14,6 +14,12 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
     
+    //---------Events
+    RegisterRecipe(new SRP_Halloween_TradeCoinsForAmmo);
+    RegisterRecipe(new SRP_Halloween_TradeCoinsForCleaningKit);
+    RegisterRecipe(new SRP_Halloween_TradeCoinsForFood);
+    RegisterRecipe(new SRP_Halloween_TradeCoinsForBoss);
+
     //---------Kits
 		RegisterRecipe(new Craft_SRP_BedsideTable_Kit);
 		RegisterRecipe(new Craft_SRP_WoodenShelfSimple_Kit);

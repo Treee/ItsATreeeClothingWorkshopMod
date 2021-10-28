@@ -51,7 +51,6 @@ class SRP_Drugs_CreateCocaineStarterBag extends RecipeBase
 
   override bool CanDo(ItemBase ingredients[], PlayerBase player)
 	{
-    return true;
     // dry the cocaine before packing
 		Edible_Base driedSmokable;
     if (ingredients[0])
@@ -90,7 +89,7 @@ class SRP_Drugs_ManufactureCocaineFromRaw extends RecipeBase
 		//ingredient 1  
 		InsertIngredient(0,"SRP_DrugCraft_CocaineStarter");	// primary ingredient
 		
-		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
 		m_IngredientDestroy[0] = 1;	// -1 = do nothing
@@ -167,7 +166,7 @@ class SRP_Drugs_ManufactureCocaineFromPasteWithTubes extends RecipeBase
 		//ingredient 1  
 		InsertIngredient(0,"SRP_ConsumableDrug_CocainePaste");	// primary ingredient
 		
-		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[0] = -1;// -1 = do nothing
 		m_IngredientDestroy[0] = 1;	// -1 = do nothing
@@ -241,7 +240,7 @@ class SRP_Drugs_CutDrugsFromCocaine extends RecipeBase
 		//ingredient 1  
 		InsertIngredient(0,"SRP_DrugBrick_Cocaine");	// primary ingredient
 		
-		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[0] = -20;// -1 = do nothing
 		m_IngredientDestroy[0] = -1;	// -1 = do nothing
@@ -313,7 +312,7 @@ class SRP_Drugs_CutDrugsFromCocaineTainted extends RecipeBase
 		//ingredient 1  
 		InsertIngredient(0,"SRP_DrugBrick_CocaineTainted");	// primary ingredient
 		
-		m_IngredientAddHealth[0] = -1;	// -1 = do nothing
+		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[0] = -20;// -1 = do nothing
 		m_IngredientDestroy[0] = -1;	// -1 = do nothing
