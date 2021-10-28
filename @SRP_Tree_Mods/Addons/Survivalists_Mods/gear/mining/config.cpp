@@ -212,6 +212,119 @@ class CfgVehicles
     color="copper";
   };
 
+  class SRP_Coinage_GoldWorn_Arbiters: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Metal Coin - Arbiters";
+    color="Goldwornarbiters";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\srp_coinage_arbiters_co.paa"
+		};
+  };
+  class SRP_Coinage_GoldWorn_Bastion: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Metal Coin - Bastion";
+    color="Goldwornbastion";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\srp_coinage_bastion_co.paa"
+		};
+  };
+  class SRP_Coinage_GoldWorn_Betrayed: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Metal Coin - Betrayed";
+    color="Goldwornbetrayed";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\srp_coinage_betrayed_co.paa"
+		};
+  };
+  class SRP_Coinage_GoldWorn_Burleeville: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Metal Coin - Burleeville";
+    color="Goldwornburleeville";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\srp_coinage_burleeville_co.paa"
+		};
+  };
+  class SRP_Coinage_GoldWorn_Disciples: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Metal Coin - Disciples";
+    color="Goldworndisciples";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\srp_coinage_disciples_co.paa"
+		};
+  };  
+  class SRP_Coinage_GoldWorn_Emporium: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Metal Coin - Emporium";
+    color="Goldwornemporium";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\srp_coinage_emporium_co.paa"
+		};
+  };  
+  class SRP_Coinage_GoldWorn_SaltyCougar: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Metal Coin - SaltyCougar";
+    color="Goldwornsaltycougar";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\srp_coinage_saltycougar_co.paa"
+		};
+  };  
+  class SRP_Coinage_GoldWorn_CougarTown: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Metal Coin - CougarTown";
+    color="Goldworncougartown";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\srp_coinage_cougartown_co.paa"
+		};
+  };  
+
   //==================================== INGOTS
   class SRP_ForgeIngot_ColorBase: Inventory_Base
   {

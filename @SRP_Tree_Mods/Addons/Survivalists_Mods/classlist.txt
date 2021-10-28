@@ -1220,3 +1220,13 @@ SRP_AltarBigBoss_Kit
 SRP_AltarBigBoss
 
 //===========
+SRP_Coinage_GoldWorn_Arbiters
+SRP_Coinage_GoldWorn_Bastion
+SRP_Coinage_GoldWorn_Betrayed
+SRP_Coinage_GoldWorn_Burleeville
+SRP_Coinage_GoldWorn_Disciples
+SRP_Coinage_GoldWorn_Emporium
+SRP_Coinage_GoldWorn_SaltyCougar
+SRP_Coinage_GoldWorn_CougarTown
+
+
