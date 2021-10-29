@@ -29,6 +29,15 @@ class SRP_Craft_MutantShredMeat extends RecipeBase
 		
 		//ingredient 2					
 		InsertIngredient(1,"MeatTenderizer");
+		InsertIngredient(1,"Flashlight");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Crowbar");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Wrench");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Pipe");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Screwdriver");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Mace");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Iceaxe");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Paddle");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[1] = -10;	// -10 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
