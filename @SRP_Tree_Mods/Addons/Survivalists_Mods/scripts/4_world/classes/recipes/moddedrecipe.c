@@ -20,6 +20,13 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new SRP_Halloween_TradeCoinsForFood);
     RegisterRecipe(new SRP_Halloween_TradeCoinsForBoss);
 
+    //----------Mutants
+    RegisterRecipe(new SRP_Craft_MutantShredMeat);
+    RegisterRecipe(new SRP_Craft_MutantSuppressorSerum);
+    RegisterRecipe(new SRP_Craft_MutantCrudeSerum);
+    RegisterRecipe(new SRP_Craft_MutantCrudeSerumCure);
+    RegisterRecipe(new SRP_Craft_MutantCrudeSerumUpgrade);
+
     //---------Kits
 		RegisterRecipe(new Craft_SRP_BedsideTable_Kit);
 		RegisterRecipe(new Craft_SRP_WoodenShelfSimple_Kit);

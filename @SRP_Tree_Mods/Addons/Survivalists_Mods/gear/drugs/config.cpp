@@ -266,6 +266,23 @@ class CfgVehicles
     };
   };
 
+  class SRP_LabTube_MutantLiquid : SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Distilled Mutant Ichor";
+		descriptionShort="A single test tube. Contains some mutant ichor. What are you doing with this?";
+    color="mutantliquid";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+		hiddenSelections[]={
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\drugs\data\testtube_red.rvmat"
+    };
+  };
+
   class SRP_LabTubeRack : Inventory_Base
   {
 		scope=2;
