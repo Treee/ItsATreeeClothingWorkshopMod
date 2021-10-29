@@ -510,8 +510,8 @@ class CfgVehicles
   class SRP_AltarBone: Inventory_Base  // new
 	{
 		scope=2;
-		displayName="Bone Altar";
-		descriptionShort="An altar to summon something big.";
+		displayName="Food Altar";
+		descriptionShort="An altar to summon food.";
 		model="Survivalists_Mods\gear\camping\srp_altarbone.p3d";
 		carveNavmesh=1;
 		weight=500;
@@ -541,8 +541,8 @@ class CfgVehicles
   class SRP_AltarWraith: Inventory_Base  // new
 	{
 		scope=2;
-		displayName="Wraith Altar";
-		descriptionShort="An altar to summon something big.";
+		displayName="Ammo Altar";
+		descriptionShort="An altar to summon ammo.";
 		model="Survivalists_Mods\gear\camping\srp_altarwraith.p3d";
 		carveNavmesh=1;
 		weight=500;
@@ -572,8 +572,8 @@ class CfgVehicles
   class SRP_AltarDog: Inventory_Base  // new
 	{
 		scope=2;
-		displayName="Dog Altar";
-		descriptionShort="An altar to summon something big.";
+		displayName="Repair Kit Altar";
+		descriptionShort="An altar to summon repair kits.";
 		model="Survivalists_Mods\gear\camping\srp_altardog.p3d";
 		carveNavmesh=1;
 		weight=500;

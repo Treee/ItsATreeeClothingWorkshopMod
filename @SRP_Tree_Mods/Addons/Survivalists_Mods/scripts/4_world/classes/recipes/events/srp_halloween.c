@@ -213,7 +213,7 @@ class SRP_Halloween_TradeCoinsForBoss extends RecipeBase
 		
 		m_MinDamageIngredient[1] = -1;	//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;	//-1 = disable check
-		m_MinQuantityIngredient[1] = 50;	//quantity 1 required for secondary ingredient
+		m_MinQuantityIngredient[1] = 30;	//quantity 1 required for secondary ingredient
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		
 		//ingredient 1  
@@ -231,7 +231,7 @@ class SRP_Halloween_TradeCoinsForBoss extends RecipeBase
 		
 		m_IngredientAddHealth[1] = 0;	// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[1] = -50;// 0 = do nothing
+		m_IngredientAddQuantity[1] = -30;// 0 = do nothing
 		m_IngredientDestroy[1] = 0;		// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -264,11 +264,11 @@ class SRP_Halloween_TradeCoinsForBoss extends RecipeBase
       pos[1] = GetGame().SurfaceY(pos[0], pos[2]);
       if (altar.GetType() == "SRP_AltarWendigo")
       {
-        GetGame().CreateObjectEx("DUB_Wendigo", pos, ECE_PLACE_ON_SURFACE);        
+        GetGame().CreateObjectEx("DUB_Wendigo", pos, ECE_PLACE_ON_SURFACE|ECE_INITAI);        
       }
       else if (altar.GetType() == "SRP_AltarBigBoss")
       {
-        GetGame().CreateObjectEx("DUB_Bigboss", pos, ECE_PLACE_ON_SURFACE);        
+        GetGame().CreateObjectEx("DUB_Bigboss", pos, ECE_PLACE_ON_SURFACE|ECE_INITAI);        
       }
     }
 	}
