@@ -441,8 +441,7 @@ class CfgVehicles
 		displayName="Improvised Staff";
 		descriptionShort="A wooden stick with an uncut gemstone on the head. Your crude construction has damaged the stone somewhat.";
 		model="Survivalists_Mods\weapons\melee\blade\srp_staffuncutgem.p3d";		
-    physLayer="item_large";
-    color="base";
+    physLayer="item_large";    
 		weight=500;
 		itemSize[]={2,6};
   };
