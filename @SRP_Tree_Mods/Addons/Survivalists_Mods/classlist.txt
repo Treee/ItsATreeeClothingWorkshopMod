@@ -1233,3 +1233,4 @@ SRP_Staff_UnCutGem
 SRP_LabTube_MutantLiquid
 
 //==============
+NeonSign_TheStash

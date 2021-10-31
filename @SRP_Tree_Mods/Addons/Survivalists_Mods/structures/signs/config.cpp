@@ -127,6 +127,12 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\signs\neonsign_thewarf.p3d";
 	};
 
+  class NeonSign_TheStash: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\neonsign_thestash.p3d";
+	};
+
   class SRP_KOS_BeaconStone: HouseNoDestruct
 	{
 		scope=1;
