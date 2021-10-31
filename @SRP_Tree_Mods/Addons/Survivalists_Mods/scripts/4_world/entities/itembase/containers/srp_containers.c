@@ -54,6 +54,23 @@ modded class SneakySmallLogPile
     return GetInventory().AttachmentCount() == 0;
   }
 
+  override bool CanReceiveAttachment(EntityAI attachment, int slotId)
+	{
+		if ( !GetGame().IsMultiplayer() || GetGame().IsClient() )
+		{
+			PlayerBase player = PlayerBase.Cast( GetGame().GetPlayer() );
+			if ( player )
+			{
+				ItemBase itemInHands = player.GetItemInHands();
+        if (itemInHands.GetType() == "SneakySmallLogPile")
+        {
+          return false;
+        }
+			}
+		}
+		return super.CanReceiveAttachment(attachment, slotId);
+	}
+
   override void SetActions()
 	{
 		super.SetActions();
@@ -73,6 +90,23 @@ modded class SneakyLargeLogPile
   {
     return GetInventory().AttachmentCount() == 0;
   }
+
+  override bool CanReceiveAttachment(EntityAI attachment, int slotId)
+	{
+		if ( !GetGame().IsMultiplayer() || GetGame().IsClient() )
+		{
+			PlayerBase player = PlayerBase.Cast( GetGame().GetPlayer() );
+			if ( player )
+			{
+				ItemBase itemInHands = player.GetItemInHands();
+        if (itemInHands.GetType() == "SneakyLargeLogPile")
+        {
+          return false;
+        }
+			}
+		}
+		return super.CanReceiveAttachment(attachment, slotId);
+	}
   
   override void SetActions()
 	{
