@@ -617,6 +617,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Sacrificial Altar" (https://skfb.ly/OzxR) by Jochon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Hannya mask skull" (https://skfb.ly/onnHY) by Doink is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

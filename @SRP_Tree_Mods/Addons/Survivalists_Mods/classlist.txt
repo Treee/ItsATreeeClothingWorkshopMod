@@ -1234,3 +1234,5 @@ SRP_LabTube_MutantLiquid
 
 //==============
 NeonSign_TheStash
+SRP_HannyaMask
+SRP_HannyaMask_Red

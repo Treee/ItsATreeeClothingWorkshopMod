@@ -265,8 +265,117 @@ class CfgVehicles
 			"Survivalists_Mods\characters\masks\data\vinitagehockeym_co2907.paa",
 			"Survivalists_Mods\characters\masks\data\vinitagehockeym_co2907.paa"
 		};
-	};	
+	};
 
+  class SRP_HannyaMask: Clothing
+  {
+    scope=2;
+    displayName="Antique Hannya Mask";
+    descriptionShort="An antique mask. In fairly good shape considering.";
+    model="Survivalists_Mods\characters\masks\srp_hannyamask_g.p3d";
+    inventorySlot[]=
+		{
+			"Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Mask"
+		};
+		itemSize[]={2,2};
+		varWetMax=0.5;
+		heatIsolation=0.4;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_hannyamask_co.paa",
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_hannyamask.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_hannyamask_m.p3d";
+			female="Survivalists_Mods\characters\masks\srp_hannyamask_m.p3d";
+		};
+    class Protection
+		{
+			biological=0.5;
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=120;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\characters\masks\data\srp_hannyamask.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\masks\data\srp_hannyamask.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\masks\data\srp_hannyamask_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\masks\data\srp_hannyamask_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\masks\data\srp_hannyamask_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+		soundVoiceType="none";
+		soundVoicePriority=5;
+  };
+
+  class SRP_HannyaMask_Red: SRP_HannyaMask
+  {
+    scope=2;
+    displayName="Antique Hannya Mask - Red";
+    descriptionShort="An antique mask. In fairly good shape considering. Looking into the eyes you feel the permanence of putting on this mask.";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_hannyamask_red_co.paa",
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_hannyamask_red.rvmat"
+		};
+    class DamageSystem
+		{
+      class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=120;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\characters\masks\data\srp_hannyamask_red.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\masks\data\srp_hannyamask_red.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\masks\data\srp_hannyamask_red_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\masks\data\srp_hannyamask_red_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\masks\data\srp_hannyamask_red_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
   // ----------------------------------------- Custom Stuff
 
   class SRP_GasMask: GP5GasMask
