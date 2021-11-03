@@ -118,4 +118,16 @@ class CfgVehicles
 			"Survivalists_Mods\characters\shoes\data\nbc_boots_orange_co.paa"
 		};
 	};
+
+  class JungleBoots_Red9291: JungleBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\shoes\data\jungleboots_red9291_co.paa",
+			"Survivalists_Mods\characters\shoes\data\jungleboots_red9291_co.paa",
+			"Survivalists_Mods\characters\shoes\data\jungleboots_red9291_co.paa"
+		};
+	};
 };

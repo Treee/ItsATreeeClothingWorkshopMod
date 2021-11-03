@@ -619,6 +619,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Hannya mask skull" (https://skfb.ly/onnHY) by Doink is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Skull Mask" (https://skfb.ly/6zYOK) by T-Art is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

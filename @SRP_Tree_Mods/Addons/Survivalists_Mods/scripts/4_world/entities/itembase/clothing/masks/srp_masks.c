@@ -11,3 +11,5 @@ class SRP_HannyaMask_Red extends SRP_HannyaMask
     this.Delete();
   }
 }
+
+class SRP_PunisherMask: Clothing {};
