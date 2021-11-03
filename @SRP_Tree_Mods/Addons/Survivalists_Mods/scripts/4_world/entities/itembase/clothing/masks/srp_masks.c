@@ -13,3 +13,4 @@ class SRP_HannyaMask_Red extends SRP_HannyaMask
 }
 
 class SRP_PunisherMask: Clothing {};
+class SRP_BoneMonsterMask: Clothing {};

@@ -415,10 +415,6 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\masks\srp_punishermask_m.p3d";
 			female="Survivalists_Mods\characters\masks\srp_punishermask_m.p3d";
 		};
-    class Protection
-		{
-			biological=0.5;
-		};
     class DamageSystem
 		{
 			class GlobalHealth
@@ -433,6 +429,82 @@ class CfgVehicles
             {0.5,{"Survivalists_Mods\characters\masks\data\srp_punishermaskskull_damage.rvmat"}},
             {0.30000001,{"Survivalists_Mods\characters\masks\data\srp_punishermaskskull_damage.rvmat"}},
             {0.0,{"Survivalists_Mods\characters\masks\data\srp_punishermaskskull_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+		soundVoiceType="none";
+		soundVoicePriority=5;
+  };
+
+  class SRP_BoneMonsterMask: Clothing
+  {
+    scope=2;
+    displayName="Antique Bone Monster Mask";
+    descriptionShort="An antique mask. In fairly good shape considering.";
+    model="Survivalists_Mods\characters\masks\srp_bonemonstermask_g.p3d";
+    inventorySlot[]=
+		{
+			"Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Mask"
+		};
+		itemSize[]={2,2};
+		varWetMax=0.5;
+		heatIsolation=0.4;
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "mask"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_bonemonstermask_skull_co.paa",
+      "Survivalists_Mods\characters\masks\data\srp_bonemonstermask_jaw_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_bonemonstermask_skull.rvmat",
+			"Survivalists_Mods\characters\masks\data\srp_bonemonstermask_jaw.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_bonemonstermask_m.p3d";
+			female="Survivalists_Mods\characters\masks\srp_bonemonstermask_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=120;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\characters\masks\data\srp_bonemonstermask_skull.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\masks\data\srp_bonemonstermask_skull.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\masks\data\srp_bonemonstermask_skull_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\masks\data\srp_bonemonstermask_skull_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\masks\data\srp_bonemonstermask_skull_destruct.rvmat"}}
 					};
 				};
 			};

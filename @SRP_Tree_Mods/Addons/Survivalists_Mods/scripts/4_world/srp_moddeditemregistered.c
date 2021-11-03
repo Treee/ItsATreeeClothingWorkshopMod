@@ -37,6 +37,8 @@ modded class ModItemRegisterCallbacks
 
     // Hats
     pType.AddItemInHandsProfileIK("SRP_HannyaMask", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
+    pType.AddItemInHandsProfileIK("SRP_PunisherMask", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
+    pType.AddItemInHandsProfileIK("SRP_BoneMonsterMask", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
 
   };
 
