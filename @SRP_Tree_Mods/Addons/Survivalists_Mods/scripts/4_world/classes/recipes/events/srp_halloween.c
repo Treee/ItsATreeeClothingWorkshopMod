@@ -61,7 +61,7 @@ class SRP_Halloween_TradeCoinsForAmmo extends RecipeBase
       "AmmoBox_762x39_20Rnd",
       "AmmoBox_00buck_10rnd",
       "AmmoBox_545x39_20Rnd"
-    }
+    };
   }
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)

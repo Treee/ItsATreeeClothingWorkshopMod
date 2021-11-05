@@ -46,6 +46,22 @@ class CfgVehicles
 
   //------------------------------------ BASE GAME Retextures
 
+  class SRP_HuntingBag_Mawlee: HuntingBag  // new
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\hunting_mawlee_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\hunting_mawlee_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\hunting_mawlee_co.paa"
+		};
+	};
   class SRP_HuntingBag_Black: HuntingBag  // BP1_HuntingBag_black
 	{
 		scope=2;

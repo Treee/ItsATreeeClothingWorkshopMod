@@ -1238,4 +1238,7 @@ SRP_HannyaMask
 SRP_HannyaMask_Red
 SRP_PunisherMask
 JungleBoots_Red9291
+SRP_HuntingBag_Mawlee
 SRP_BoneMonsterMask
+SRP_MiningCraft_StoneBagStarter
+SRP_MiningCraft_CrushedStoneBag
