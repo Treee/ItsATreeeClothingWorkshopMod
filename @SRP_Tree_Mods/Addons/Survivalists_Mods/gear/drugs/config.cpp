@@ -1182,7 +1182,7 @@ class CfgVehicles
   class SRP_DrugCraft_CocaineStarter: DryBag_ColorBase
 	{
 		scope=2;
-    displayName="A sack full of raw cocaine plant material";
+    displayName="Cocaine Plant Material";
     descriptionShort="Holds cocaine plant material. You can see remnant of processing.";
     inventorySlot[]={};
     attachments[]={};

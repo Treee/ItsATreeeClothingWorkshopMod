@@ -16,6 +16,7 @@ class CfgVehicles
 {
   class Inventory_Base;
   class FireplaceBase;
+  class DryBag_ColorBase;
 
   class SRP_KitBase;
 
@@ -125,6 +126,25 @@ class CfgVehicles
 			};
 		};
 	};
+
+  //========================================= SPECIAL CRAFTS
+  class SRP_MiningCraft_StoneBagStarter: DryBag_ColorBase
+	{
+		scope=2;
+    displayName="A sack of stones.";
+    descriptionShort="Holds stones. Worn from smashing.";
+    inventorySlot[]={};
+    attachments[]={};
+    itemSize[]={6,6};
+    itemsCargoSize[]={6,6};
+		hiddenSelectionsTextures[]=
+		{
+			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
+			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
+			"DZ\characters\backpacks\data\DryBag_Orange_co.paa"
+		};
+	};
+
 
   //==================================== COINS
   class SRP_Coinage_ColorBase: Inventory_Base
@@ -1434,5 +1454,5 @@ class CfgVehicles
 		displayName="Diamond Cut Gem";
 		descriptionShort="Diamond Cut Gem";
     color="diamond";
-	};
+	};  
 };
