@@ -1703,7 +1703,7 @@ class CfgVehicles
 				class Baked
 				{
 					nutrition_properties[]={5,50,50.5,1,0};
-					cooking_properties[]={70,300, 80};
+					cooking_properties[]={100,290};
 				};
 				class Boiled
 				{
