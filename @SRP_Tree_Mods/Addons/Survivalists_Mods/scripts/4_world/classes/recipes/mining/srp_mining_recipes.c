@@ -16,7 +16,7 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
-		m_MaxDamageIngredient[1] = 4;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -113,7 +113,7 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
-		m_MaxDamageIngredient[1] = 4;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -192,7 +192,7 @@ class Craft_SRP_BagOfStones extends RecipeBase
 		
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
-		m_MaxDamageIngredient[0] = 4;//-1 = disable check
+		m_MaxDamageIngredient[0] = 2;//-1 = disable check
 		
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
@@ -268,7 +268,7 @@ class Craft_SRP_SmashBagIntoCrushedStones extends RecipeBase
 		
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
-		m_MaxDamageIngredient[0] = 4;//-1 = disable check
+		m_MaxDamageIngredient[0] = 2;//-1 = disable check
 		
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
@@ -352,7 +352,7 @@ class Craft_SRP_CrucibleEmpty extends RecipeBase
 		
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
-		m_MaxDamageIngredient[0] = 4;//-1 = disable check
+		m_MaxDamageIngredient[0] = 2;//-1 = disable check
 		
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
@@ -420,7 +420,7 @@ class Craft_SRP_IngotMoldEmpty extends RecipeBase
 		
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
-		m_MaxDamageIngredient[0] = 4;//-1 = disable check
+		m_MaxDamageIngredient[0] = 2;//-1 = disable check
 		
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
@@ -488,7 +488,7 @@ class Craft_SRP_CrucibleFilled extends RecipeBase
 		
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
-		m_MaxDamageIngredient[0] = 4;//-1 = disable check
+		m_MaxDamageIngredient[0] = 2;//-1 = disable check
 		
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check

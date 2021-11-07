@@ -90,27 +90,27 @@ modded class PlayerBase extends ManBase
         return false;
       }
     }
-    item = GetItemInHands();
-    if (item && item.HasAnyCargo()) // if the item exists and has cargo
-    {
-      CargoBase cargoItem = item.GetInventory().GetCargo();
-      int currentWeight = 0;
-      int maxWeight = cargoItem.GetWidth() * cargoItem.GetHeight(); // x,y    
-      if (maxWeight >= 80)  
-      {
-        for ( int i = 0; i < cargoItem.GetItemCount(); ++i )
-        {
-          int x, y;
-          cargoItem.GetItemSize( i, x, y );
-          currentWeight += x * y;
-        }
-        float percentFilled = 1-((maxWeight-currentWeight)/maxWeight);
-        if (percentFilled >= 0.6)
-        {
-          return false;
-        }
-      }
-    }
+    // item = GetItemInHands();
+    // if (item && item.HasAnyCargo()) // if the item exists and has cargo
+    // {
+    //   CargoBase cargoItem = item.GetInventory().GetCargo();
+    //   int currentWeight = 0;
+    //   int maxWeight = cargoItem.GetWidth() * cargoItem.GetHeight(); // x,y    
+    //   if (maxWeight >= 80)  
+    //   {
+    //     for ( int i = 0; i < cargoItem.GetItemCount(); ++i )
+    //     {
+    //       int x, y;
+    //       cargoItem.GetItemSize( i, x, y );
+    //       currentWeight += x * y;
+    //     }
+    //     float percentFilled = 1-((maxWeight-currentWeight)/maxWeight);
+    //     if (percentFilled >= 0.6)
+    //     {
+    //       return false;
+    //     }
+    //   }
+    // }
     return super.CanSprint();
   }
 
