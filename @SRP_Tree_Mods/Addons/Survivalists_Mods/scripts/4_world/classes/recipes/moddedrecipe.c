@@ -22,6 +22,7 @@ modded class PluginRecipesManagerBase extends PluginBase
 
     //----------Mutants
     RegisterRecipe(new SRP_Craft_MutantShredMeat);
+    RegisterRecipe(new SRP_Craft_MutantShredPelt);
     RegisterRecipe(new SRP_Craft_MutantSuppressorSerum);
     RegisterRecipe(new SRP_Craft_MutantCrudeSerum);
     RegisterRecipe(new SRP_Craft_MutantCrudeSerumCure);

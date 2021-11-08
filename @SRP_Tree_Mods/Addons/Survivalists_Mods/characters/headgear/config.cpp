@@ -1418,7 +1418,8 @@ class CfgVehicles
     color="base";
 		inventorySlot[]=
 		{
-			"Headgear"
+			"Headgear",
+      "SRP_Comtacs"
 		};
 		itemInfo[]=
 		{

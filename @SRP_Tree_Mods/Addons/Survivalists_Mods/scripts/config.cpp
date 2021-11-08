@@ -540,6 +540,12 @@ class CfgSlots
 	// 	displayName="Hand Tool";
 	// 	ghostIcon="";
 	// };
+  class Slot_SRP_Comtacs
+	{
+		name="SRP_Comtacs";
+		displayName="Comtacs";
+		ghostIcon="set:dayz_inventory image:walkietalkie";
+	};
 };
 
 class CfgNonAIVehicles
@@ -734,6 +740,13 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"TestTube6"}; // same as slot name 
     model = "Survivalists_Mods\proxy\testtube_proxy6.p3d"; //proxy path 
+  };
+
+  class Proxysrp_comtacs: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_Comtacs"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_comtacs.p3d"; //proxy path 
   };
   // -------------------- HIDING PROXIES
   // THIS WORKS BY SETTING THE PATH OF A PROXY TO SOMETHING
