@@ -451,7 +451,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Antique Berserk Sword";
-		descriptionShort="An antique sword found somewhere on the island.";
+		descriptionShort="That thing was too big to be called a sword. Too big, too thick, too heavy, and too rough, it was more like a large hunk of iron.";
 		model="\Survivalists_Mods\weapons\melee\blade\srp_berserksword.p3d";
 		rotationFlags=17;
 		inventorySlot[]=
@@ -474,11 +474,103 @@ class CfgVehicles
 					hitpoints=250;
 					healthLevels[]=
 					{
-						{1.0,	{	"\Survivalists_Mods\weapons\melee\blade\data\srp_berserksword.rvmat"}},
-						{0.69999999,	{	"\Survivalists_Mods\weapons\melee\blade\data\srp_berserksword.rvmat"}},
-						{0.5,	{	"\Survivalists_Mods\weapons\melee\blade\data\srp_berserksword_damage.rvmat"}},
-						{0.30000001,	{	"\Survivalists_Mods\weapons\melee\blade\data\srp_berserksword_damage.rvmat"}},
-						{0.0,	{	"\Survivalists_Mods\weapons\melee\blade\data\srp_berserksword_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_berserksword.rvmat"}},
+						{0.69999999,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_berserksword.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_berserksword_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_berserksword_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_berserksword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUp_Light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="baseballbat_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_CrystalMace: Inventory_Base
+	{
+		scope=2;
+		displayName="Antique Mace";
+		descriptionShort="An antique mace found somewhere on the island.";
+		model="\Survivalists_Mods\weapons\melee\blade\srp_crystalmace.p3d";
+		rotationFlags=17;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		weight=600;
+		itemSize[]={1,7};
+		itemBehaviour=2;
+		fragility=0.02;
+		openItemSpillRange[]={40,70};
+		isMeleeWeapon=1;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "glass"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_macehandle_co.paa",
+      "Survivalists_Mods\weapons\melee\blade\data\srp_maceglass_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_macehandle.rvmat",
+      "Survivalists_Mods\weapons\melee\blade\data\srp_maceglass.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_macehandle.rvmat", "Survivalists_Mods\weapons\melee\blade\data\srp_maceglass.rvmat"}},
+						{0.69999999,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_macehandle.rvmat", "Survivalists_Mods\weapons\melee\blade\data\srp_maceglass.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_macehandle_damage.rvmat", "Survivalists_Mods\weapons\melee\blade\data\srp_maceglass_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_macehandle_damage.rvmat", "Survivalists_Mods\weapons\melee\blade\data\srp_maceglass_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_macehandle_destruct.rvmat", "Survivalists_Mods\weapons\melee\blade\data\srp_maceglass_destruct.rvmat"}}
 					};
 				};
 			};
