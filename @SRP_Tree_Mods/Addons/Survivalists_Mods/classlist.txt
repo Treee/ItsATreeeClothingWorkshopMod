@@ -1245,3 +1245,4 @@ SRP_MiningCraft_CrushedStoneBag
 
 
 //=========================
+SRP_BerserkSword

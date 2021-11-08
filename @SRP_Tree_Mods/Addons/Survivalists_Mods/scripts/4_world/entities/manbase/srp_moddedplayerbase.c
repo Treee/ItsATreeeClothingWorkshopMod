@@ -82,15 +82,18 @@ modded class PlayerBase extends ManBase
 
   override bool CanSprint()
   {
-    ItemBase item;
-    if (Class.CastTo(item, FindAttachmentBySlotName("Vest")))
+    // if (Class.CastTo(item, FindAttachmentBySlotName("Vest")))
+    // {
+    //   if (item && (item.GetType() == "SRP_Ratnik_Green" || item.GetType() == "SRP_Ratnik_Tan" || item.GetType() == "SRP_Ratnik_Black"))
+    //   {
+    //     return false;
+    //   }
+    // }
+    ItemBase item = GetItemInHands();
+    if (item && item.GetType() == "SRP_BerserkSword")
     {
-      if (item && (item.GetType() == "SRP_Ratnik_Green" || item.GetType() == "SRP_Ratnik_Tan" || item.GetType() == "SRP_Ratnik_Black"))
-      {
-        return false;
-      }
+      return false;
     }
-    // item = GetItemInHands();
     // if (item && item.HasAnyCargo()) // if the item exists and has cargo
     // {
     //   CargoBase cargoItem = item.GetInventory().GetCargo();

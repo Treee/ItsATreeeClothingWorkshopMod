@@ -623,6 +623,10 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Skull of goblin" (https://skfb.ly/6xRXF) by lostsoundzz is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Dragon Slayer \[Berserk\]" (https://skfb.ly/6RzGS) by G.Salmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Mace" (https://skfb.ly/6RPGq) by Cyril43 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

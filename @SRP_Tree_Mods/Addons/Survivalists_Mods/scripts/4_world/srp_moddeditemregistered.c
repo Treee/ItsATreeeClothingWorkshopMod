@@ -52,7 +52,8 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Mining_StoneChunk_ColorBase", "dz/anims/workspaces/player/player_main/player_main_2h.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/stone.anm");
     pType.AddItemInHandsProfileIK("SRP_Tool_CoalRake", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_farminghoe.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/farming_hoe.anm");
     pType.AddItemInHandsProfileIK("SRP_ForgeCrucible_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
-    pType.AddItemInHandsProfileIK("SRP_ForgeIngotMold_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
+    pType.AddItemInHandsProfileIK("SRP_ForgeIngotMold_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");
+    pType.AddItemInHandsProfileIK("SRP_BerserkSword", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_bat.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/baseballbat.anm");
   }
 
   override void RegisterHeavy( DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior )
@@ -82,6 +83,6 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_CraftingMaterial_MetalScraps", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/metal_sheet.anm");
     pType.AddItemInHandsProfileIK("SRP_Carpet", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/metal_sheet.anm");
     pType.AddItemInHandsProfileIK("SRP_CarpetRug", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/metal_sheet.anm");
-    pType.AddItemInHandsProfileIK("SRP_CraftingMaterial_Metal", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
+    pType.AddItemInHandsProfileIK("SRP_CraftingMaterial_Metal", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");    
   };
 }
