@@ -1408,7 +1408,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\headgear\srp_comtacs_g.p3d";
 		simulation="clothing";
 		vehicleClass="Clothing";
-		rotationFlags=0;
+		rotationFlags=16;
 		weight=110;
 		itemSize[]={3,2};
 		absorbency=0.80000001;
@@ -1419,7 +1419,8 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Headgear",
-      "SRP_Comtacs"
+      "SRP_Comtacs",
+      // "MVS_Comtacs"
 		};
 		itemInfo[]=
 		{
