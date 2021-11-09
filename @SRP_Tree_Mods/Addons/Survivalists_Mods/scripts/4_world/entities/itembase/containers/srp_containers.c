@@ -208,6 +208,22 @@ class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
 class SRP_BarricadeMetal extends SRP_Container_Base{};
 class SRP_ComputerTerminal extends SRP_Container_Base{};
 
+class SRP_StreetSign_Base extends SRP_Container_Base{};
+class SRP_StreetSign_Caution extends SRP_Container_Base{};
+class SRP_StreetSign_CautionBiohazard extends SRP_Container_Base{};
+class SRP_StreetSign_NoSmoking extends SRP_Container_Base{};
+class SRP_StreetSign_Handicap extends SRP_Container_Base{};
+class SRP_StreetSign_NoParking extends SRP_Container_Base{};
+class SRP_StreetSign_Yield extends SRP_Container_Base{};
+class SRP_StreetSign_Pedestrians extends SRP_Container_Base{};
+class SRP_StreetSign_NoBikes extends SRP_Container_Base{};
+class SRP_StreetSign_NoLeftTurn extends SRP_Container_Base{};
+class SRP_StreetSign_SpeedLimit extends SRP_Container_Base{};
+class SRP_StreetSign_BikePath extends SRP_Container_Base{};
+class SRP_StreetSign_OneWay extends SRP_Container_Base{};
+class SRP_StreetSign_HandicapSmall extends SRP_Container_Base{};
+class SRP_StreetSign_Highway extends SRP_Container_Base{};
+
 class SRP_Barricade_Wood extends SRP_Container_Base{};
 class SRP_BarricadeWithWindow_Wood extends SRP_Container_Base{};
 class SRP_WindowBarricade_Wood extends SRP_Container_Base{};

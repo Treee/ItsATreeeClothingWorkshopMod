@@ -19,7 +19,6 @@ class CfgVehicles
   class Container_Base;
 
   class SRP_KitBase;
-
   
   class SRP_ForestSign_Original_Kit: SRP_KitBase //new
 	{
@@ -976,5 +975,224 @@ class CfgVehicles
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\signs\gravestone19_open.p3d";
+	};
+
+  //====================================== Street Signs
+  class SRP_StreetSign_Base: Container_Base 
+  {
+    scope=2;
+    displayName="Street Sign - Base";
+		descriptionShort="A Street Sign";
+    model="Survivalists_Mods\structures\signs\streetsigns_caution.p3d";
+    carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemsCargoSize[]={10,15};
+    cargoSize[]={0,0};
+		itemBehaviour=0;
+		physLayer="item_large";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_roadsigns_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_roadsigns.rvmat"
+		};
+  };
+
+  class SRP_StreetSign_Caution_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Caution";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_Caution: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Caution";
+    model="Survivalists_Mods\structures\signs\streetsigns_caution.p3d";
+	};
+
+  class SRP_StreetSign_CautionBiohazard_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Caution Biohazard";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_CautionBiohazard: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Caution Biohazard";
+    model="Survivalists_Mods\structures\signs\streetsigns_caution.p3d";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_roadsigns_biohazard_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_roadsigns_wiped.rvmat"
+		};
+	};
+
+  class SRP_StreetSign_NoSmoking_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - No Smoking";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_NoSmoking: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - No Smoking";
+    model="Survivalists_Mods\structures\signs\streetsigns_nosmoking.p3d";
+	};
+
+  class SRP_StreetSign_Handicap_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Handicap";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_Handicap: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Handicap";
+    model="Survivalists_Mods\structures\signs\streetsigns_handicap.p3d";
+	};
+
+  class SRP_StreetSign_NoParking_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - No Parking";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_NoParking: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - No Parking";
+    model="Survivalists_Mods\structures\signs\streetsigns_noparking.p3d";
+	};
+
+  class SRP_StreetSign_Yield_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Yield";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_Yield: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Yield";
+    model="Survivalists_Mods\structures\signs\streetsigns_yield.p3d";
+	};
+
+  class SRP_StreetSign_Pedestrians_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Pedestrians";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_Pedestrians: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Pedestrians";
+    model="Survivalists_Mods\structures\signs\streetsigns_pedestrian.p3d";
+	};
+
+  class SRP_StreetSign_NoBikes_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - No Bikes";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_NoBikes: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - No Bikes";
+    model="Survivalists_Mods\structures\signs\streetsigns_nobikes.p3d";
+	};
+
+  class SRP_StreetSign_NoLeftTurn_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - No Left Turn";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_NoLeftTurn: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - No Left Turn";
+    model="Survivalists_Mods\structures\signs\streetsigns_noleftturn.p3d";
+	};
+
+  class SRP_StreetSign_SpeedLimit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Speed Limit";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_SpeedLimit: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Speed Limit";
+    model="Survivalists_Mods\structures\signs\streetsigns_speedlimit.p3d";
+	};
+
+  class SRP_StreetSign_BikePath_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Bike Path";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_BikePath: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Bike Path";
+    model="Survivalists_Mods\structures\signs\streetsigns_bikepath.p3d";
+	};
+
+  class SRP_StreetSign_OneWay_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - One Way";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_OneWay: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - One Way";
+    model="Survivalists_Mods\structures\signs\streetsigns_oneway.p3d";
+	};
+
+  class SRP_StreetSign_HandicapSmall_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Handicap Small";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_HandicapSmall: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Handicap Small";
+    model="Survivalists_Mods\structures\signs\streetsigns_handicapsmall.p3d";
+	};
+
+  class SRP_StreetSign_Highway_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit - Highway";
+		descriptionShort="A Street Sign Kit";
+	};
+  class SRP_StreetSign_Highway: SRP_StreetSign_Base //new
+	{
+		scope=2;
+		displayName="Street Sign - Highway";
+    model="Survivalists_Mods\structures\signs\streetsigns_highwaysign.p3d";
 	};
 };

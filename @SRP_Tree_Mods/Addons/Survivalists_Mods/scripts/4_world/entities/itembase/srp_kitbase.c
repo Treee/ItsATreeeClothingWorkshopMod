@@ -216,6 +216,21 @@ class SRP_SewingTable_Kit extends SRP_KitBase{};
 class SRP_StoneForgeWorkbench_Kit extends SRP_KitBase{};
 class SRP_AdvancedStoneForgeWorkbench_Kit extends SRP_KitBase{};
 
+class SRP_StreetSign_Caution_Kit extends SRP_KitBase{};
+class SRP_StreetSign_CautionBiohazard_Kit extends SRP_KitBase{};
+class SRP_StreetSign_NoSmoking_Kit extends SRP_KitBase{};
+class SRP_StreetSign_Handicap_Kit extends SRP_KitBase{};
+class SRP_StreetSign_NoParking_Kit extends SRP_KitBase{};
+class SRP_StreetSign_Yield_Kit extends SRP_KitBase{};
+class SRP_StreetSign_Pedestrians_Kit extends SRP_KitBase{};
+class SRP_StreetSign_NoBikes_Kit extends SRP_KitBase{};
+class SRP_StreetSign_NoLeftTurn_Kit extends SRP_KitBase{};
+class SRP_StreetSign_SpeedLimit_Kit extends SRP_KitBase{};
+class SRP_StreetSign_BikePath_Kit extends SRP_KitBase{};
+class SRP_StreetSign_OneWay_Kit extends SRP_KitBase{};
+class SRP_StreetSign_HandicapSmall_Kit extends SRP_KitBase{};
+class SRP_StreetSign_Highway_Kit extends SRP_KitBase{};
+
 class SRP_ComputerTerminal_Kit extends SRP_KitBase{};
 
 class SRP_PortalBone_Kit extends SRP_KitBase{};
