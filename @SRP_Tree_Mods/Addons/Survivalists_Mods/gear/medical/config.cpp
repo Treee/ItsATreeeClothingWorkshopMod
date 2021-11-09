@@ -543,7 +543,7 @@ class CfgVehicles
 						{1.0,{"Survivalists_Mods\gear\medical\data\srp_computerterminal.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail.rvmat"}},
             {0.69999999,{"Survivalists_Mods\gear\medical\data\srp_computerterminal.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail.rvmat"}},
             {0.5,{"Survivalists_Mods\gear\medical\data\srp_computerterminal_damage.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail_damage.rvmat"}},
-            {0.30000001,{"Survivalists_Mods\gear\medical\data\srp_computerterminal_damage.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail_dmage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\medical\data\srp_computerterminal_damage.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail_damage.rvmat"}},
             {0.0,{"Survivalists_Mods\gear\medical\data\srp_computerterminal_destruct.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail_destruct.rvmat"}}
 					};
 				};

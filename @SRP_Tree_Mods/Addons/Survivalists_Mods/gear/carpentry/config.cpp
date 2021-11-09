@@ -16,10 +16,303 @@ class CfgPatches
 
 class CfgVehicles
 {
-  class SRP_KitBase;
   class HouseNoDestruct;
   class Fence;
+  class Inventory_Base;
+
+  class SRP_KitBase;
   //------------------------------ BASE BUILDING
+
+
+  //-------------------------------- Barricades
+  class SRP_Barricade_Wood_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Barricade Kit";
+		descriptionShort="A Wooden Barricade Kit";
+	};
+
+  class SRP_Barricade_Wood: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Wooden Barricade";
+		descriptionShort="This wood might one way sit between you and a bullet.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmatt"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
+  class SRP_BarricadeWithWindow_Wood_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Barricade Kit";
+		descriptionShort="A Wooden Barricade Kit";
+	};
+
+  class SRP_BarricadeWithWindow_Wood: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Wooden Barricade";
+		descriptionShort="This wood might one way sit between you and a bullet.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade_windowed.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmatt"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
+  class SRP_WindowBarricade_Wood_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Window Barricade Kit";
+		descriptionShort="A Wooden Window Barricade Kit";
+	};
+
+  class SRP_WindowBarricade_Wood: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Wooden Window Barricade";
+		descriptionShort="This wood might one way sit between you and a bullet.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricade.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmatt"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
+  class SRP_WindowBarricadeTall_Wood_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Tall Wooden Window Barricade Kit";
+		descriptionShort="A Tall Wooden Window Barricade Kit";
+	};
+
+  class SRP_WindowBarricadeTall_Wood: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Tall Wooden Window Barricade";
+		descriptionShort="This wood might one way sit between you and a bullet.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricadetall.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmatt"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
 
   // ---------------------PRE FABS
   class SRP_PrefabHouse_Base: HouseNoDestruct  // new

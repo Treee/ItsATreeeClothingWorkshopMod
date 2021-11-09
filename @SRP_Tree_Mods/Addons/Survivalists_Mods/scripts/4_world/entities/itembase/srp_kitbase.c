@@ -182,6 +182,11 @@ class SRP_Carpentry_RussianHouseDoor1_Kit extends SRP_KitBase{};
 
 class SRP_Carpentry_WoodenHouseSingleRoom_Kit extends SRP_KitBase{};
 
+class SRP_Barricade_Wood_Kit extends SRP_KitBase{};
+class SRP_BarricadeWithWindow_Wood_Kit extends SRP_KitBase{};
+class SRP_WindowBarricade_Wood_Kit extends SRP_KitBase{};
+class SRP_WindowBarricadeTall_Wood_Kit extends SRP_KitBase{};
+
 
 // non craftable kits
 class SRP_Fridge_Kit extends SRP_KitBase{};

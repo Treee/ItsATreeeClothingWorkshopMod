@@ -1250,3 +1250,12 @@ SRP_CrystalMace
 
 SRP_ComputerTerminal_Kit
 SRP_ComputerTerminal
+
+SRP_Barricade_Wood_Kit
+SRP_Barricade_Wood
+SRP_BarricadeWithWindow_Wood_Kit
+SRP_BarricadeWithWindow_Wood
+SRP_WindowBarricade_Wood_Kit
+SRP_WindowBarricade_Wood
+SRP_WindowBarricadeTall_Wood_Kit
+SRP_WindowBarricadeTall_Wood
