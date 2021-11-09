@@ -533,18 +533,24 @@ class CfgSlots
 		displayName="Test Tube";
 		ghostIcon="set:dayz_inventory image:paper";
 	};
-
+  
+  class Slot_SRP_Comtacs
+	{
+		name="SRP_Comtacs";
+		displayName="Comtacs";
+		ghostIcon="set:dayz_inventory image:walkietalkie";
+	};
   // class Slot_SRP_ToolRack1
 	// {
 	// 	name="ToolRack1";
 	// 	displayName="Hand Tool";
 	// 	ghostIcon="";
 	// };
-  class Slot_SRP_Comtacs
+  class Slot_SRP_ForgeBellows
 	{
-		name="SRP_Comtacs";
-		displayName="Comtacs";
-		ghostIcon="set:dayz_inventory image:walkietalkie";
+		name="SRP_ForgeBellows";
+		displayName="Bellows";
+    ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
 	};
 };
 
@@ -740,6 +746,13 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"TestTube6"}; // same as slot name 
     model = "Survivalists_Mods\proxy\testtube_proxy6.p3d"; //proxy path 
+  };
+
+  class Proxyforge_stoneadvancedbellows: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_ForgeBellows"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\forge_stoneadvancedbellows.p3d"; //proxy path 
   };
 
   class Proxysrp_comtacs: ProxyAttachment //same as p3d name

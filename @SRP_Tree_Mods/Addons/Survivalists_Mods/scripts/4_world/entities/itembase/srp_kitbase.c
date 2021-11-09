@@ -214,6 +214,7 @@ class SRP_MedicalCurtains_Kit extends SRP_KitBase{};
 class SRP_BarricadeMetal_Kit extends SRP_KitBase{};
 class SRP_SewingTable_Kit extends SRP_KitBase{};
 class SRP_StoneForgeWorkbench_Kit extends SRP_KitBase{};
+class SRP_AdvancedStoneForgeWorkbench_Kit extends SRP_KitBase{};
 
 class SRP_ComputerTerminal_Kit extends SRP_KitBase{};
 

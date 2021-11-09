@@ -46,7 +46,7 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
-    varTemperatureMax=900;
+    varTemperatureMax=1000;
 		stackedUnit="";
 		physLayer="item_large";		
     attachments[]=
@@ -110,6 +110,173 @@ class CfgVehicles
 			};
 		};
 		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_AdvancedStoneForgeWorkbench_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="An Advanced Stone Forge Kit";
+		descriptionShort="A kit for an advanced stone forge.";
+	};
+
+  class SRP_AdvancedStoneForgeWorkbench: FireplaceBase // new
+	{
+		scope=2;
+		displayName="Advanced Stone Forge";
+		descriptionShort="A workbench for advanced stone working.";
+		model="Survivalists_Mods\gear\mining\forge_stoneadvanced.p3d";
+		useEntityHierarchy="true";
+		destroyOnEmpty=0;
+		carveNavmesh=0;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=500;
+		itemSize[]={15,15};
+		itemBehaviour=0;
+		quantityBar=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=0;
+    varTemperatureMax=1000;
+		stackedUnit="";
+		physLayer="item_large";		
+    attachments[]=
+		{
+      "SRP_ForgeBellows",
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={10,10};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+      class Tools
+			{
+				name="Tools";
+				description="Tools";
+				attachmentSlots[]=
+				{
+					"SRP_ForgeBellows"
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_AdvancedStoneForgeWorkbench_Bellows: Inventory_Base
+	{
+		scope=2;
+		displayName="Forge Bellows";
+		descriptionShort="Bellows for an advanced forge. Helps improve airflow to the fire.";
+		model="Survivalists_Mods\gear\mining\forge_stoneadvancedbellows.p3d";
+		inventorySlot[]=
+		{
+			"SRP_ForgeBellows"
+		};
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={8,8};
+		itemBehaviour=0;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\mining\data\srp_forgeandbellows.rvmat"}}
+					};
+				};
+			};
+		};		
+    class AnimEvents
 		{
 			class SoundWeapon
 			{

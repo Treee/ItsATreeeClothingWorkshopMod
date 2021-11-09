@@ -1261,3 +1261,7 @@ SRP_WindowBarricadeTall_Wood_Kit
 SRP_WindowBarricadeTall_Wood
 SRP_SpikeBarricade_Wood_Kit
 SRP_SpikeBarricade_Wood
+
+SRP_AdvancedStoneForgeWorkbench_Kit
+SRP_AdvancedStoneForgeWorkbench
+SRP_AdvancedStoneForgeWorkbench_Bellows

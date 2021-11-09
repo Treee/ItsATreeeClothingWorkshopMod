@@ -98,6 +98,12 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
       return super.CanReceiveAttachment(attachment, slotId);
     }
 
+    // tool attachments
+    if (item && item.GetType() == "SRP_AdvancedStoneForgeWorkbench_Bellows")
+    {
+      return super.CanReceiveAttachment(attachment, slotId);
+    }
+
 		return false;
 	}
 	
@@ -185,3 +191,5 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 		GetGame().ObjectDelete( clutter_cutter );
 	}
 };
+
+class SRP_AdvancedStoneForgeWorkbench extends SRP_StoneForgeWorkbench{};

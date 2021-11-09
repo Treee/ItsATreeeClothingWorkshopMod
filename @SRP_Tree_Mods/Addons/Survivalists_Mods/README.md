@@ -633,12 +633,11 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Wooden Barricade Blood" (https://skfb.ly/6X9zJ) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Forge And Bellow" (https://skfb.ly/6ZvWF) by RBG_illustrations is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Sign package" (https://skfb.ly/6rRZG) by Pedram Ashoori is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
-
-"Wood walls" (https://skfb.ly/onEru) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
-(maybe if i can get textures working)
-"Headwear" (https://skfb.ly/6RODS) by noyou is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Reference
 
