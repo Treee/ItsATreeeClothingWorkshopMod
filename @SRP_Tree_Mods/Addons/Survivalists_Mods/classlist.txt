@@ -1247,3 +1247,6 @@ SRP_MiningCraft_CrushedStoneBag
 //=========================
 SRP_BerserkSword
 SRP_CrystalMace
+
+SRP_ComputerTerminal_Kit
+SRP_ComputerTerminal

@@ -420,14 +420,13 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=100;
-					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
 					healthLevels[]=
 					{
-						{1,{"Survivalists_Mods\gear\medical\data\labequipment.rvmat"}},
+						{1.0,{"Survivalists_Mods\gear\medical\data\labequipment.rvmat"}},
             {0.69999999,{"Survivalists_Mods\gear\medical\data\labequipment.rvmat"}},
             {0.5,{"Survivalists_Mods\gear\medical\data\labequipment_damage.rvmat"}},
             {0.30000001,{"Survivalists_Mods\gear\medical\data\labequipment_damage.rvmat"}},
-            {0,{"Survivalists_Mods\gear\medical\data\labequipment_destruct.rvmat"}}
+            {0.0,{"Survivalists_Mods\gear\medical\data\labequipment_destruct.rvmat"}}
 					};
 				};
 			};
@@ -491,6 +490,87 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\medical\labequipment_geigercounter1.p3d";
     itemSize[]={2,3};
   };
+
+  class SRP_ComputerTerminal_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Computer Terminal Kit";
+		descriptionShort="A Computer Terminal Kit";
+	};
+
+  class SRP_ComputerTerminal: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Computer Terminal";
+		descriptionShort="This equipmment is badly worn from time and the elements.";
+		model="Survivalists_Mods\gear\medical\labequipment_computerterminal.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+		class Cargo
+		{
+			itemsCargoSize[]={4,4};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "glass"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\srp_computerterminal_co.paa",
+      "Survivalists_Mods\gear\medical\data\srp_computerdetail_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\medical\data\srp_computerterminal.rvmat",
+			"Survivalists_Mods\gear\medical\data\srp_computerdetail.rvmat",
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\medical\data\srp_computerterminal.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\medical\data\srp_computerterminal.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\medical\data\srp_computerterminal_damage.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\medical\data\srp_computerterminal_damage.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail_dmage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\medical\data\srp_computerterminal_destruct.rvmat", "Survivalists_Mods\gear\medical\data\srp_computerdetail_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
 
   class SRP_Naloxone: Epinephrine
   {
