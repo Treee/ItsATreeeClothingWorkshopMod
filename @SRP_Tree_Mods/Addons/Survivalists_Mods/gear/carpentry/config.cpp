@@ -69,7 +69,7 @@ class CfgVehicles
             {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
             {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
             {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmatt"}}
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
 					};
 				};
 			};
@@ -141,7 +141,7 @@ class CfgVehicles
             {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
             {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
             {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmatt"}}
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
 					};
 				};
 			};
@@ -213,7 +213,7 @@ class CfgVehicles
             {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
             {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
             {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmatt"}}
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
 					};
 				};
 			};
@@ -285,7 +285,7 @@ class CfgVehicles
             {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
             {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
             {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmatt"}}
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
 					};
 				};
 			};
@@ -313,6 +313,77 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_SpikeBarricade_Wood_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Spike Barricade Kit";
+		descriptionShort="A Wooden Spike Barricade Kit";
+	};
+
+  class SRP_SpikeBarricade_Wood: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Wooden Spike Barricade";
+		descriptionShort="This puts some distance between you and them.";
+		model="Survivalists_Mods\gear\carpentry\srp_woodenspikebarricade.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
 
   // ---------------------PRE FABS
   class SRP_PrefabHouse_Base: HouseNoDestruct  // new

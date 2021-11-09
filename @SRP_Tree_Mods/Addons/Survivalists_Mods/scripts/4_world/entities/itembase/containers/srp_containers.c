@@ -212,6 +212,7 @@ class SRP_Barricade_Wood extends SRP_Container_Base{};
 class SRP_BarricadeWithWindow_Wood extends SRP_Container_Base{};
 class SRP_WindowBarricade_Wood extends SRP_Container_Base{};
 class SRP_WindowBarricadeTall_Wood extends SRP_Container_Base{};
+class SRP_SpikeBarricade_Wood extends SRP_Container_Base{};
 
 class SRP_Furniture_Barrel extends SRP_Container_Base{};
 class SRP_Furniture_BarrelTable extends SRP_Container_Base{};

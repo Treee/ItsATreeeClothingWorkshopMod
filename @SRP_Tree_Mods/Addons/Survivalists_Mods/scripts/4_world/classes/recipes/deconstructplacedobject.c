@@ -67,6 +67,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_BarricadeWithWindow_Wood");
     InsertIngredient(0,"SRP_WindowBarricade_Wood");
     InsertIngredient(0,"SRP_WindowBarricadeTall_Wood");
+    InsertIngredient(0,"SRP_SpikeBarricade_Wood");
 
     InsertIngredient(0,"SRP_Furniture_Barrel");
     InsertIngredient(0,"SRP_Furniture_BarrelTable");
