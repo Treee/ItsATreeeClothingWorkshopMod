@@ -444,6 +444,116 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_MetalShelfGroundLarge_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Large Metal Shelf Kit - Ground";
+		descriptionShort="A Large Metal Shelf Kit";
+	};
+  class SRP_MetalShelfGroundLarge: Container_Base //new
+	{
+		scope=2;
+		displayName="Large Metal Shelf - Ground";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\groundshelfmetallarge.p3d";
+		attachments[]=
+		{
+			"Melee",
+			"Feet",
+			"Gloves",
+			"Eyewear",
+			"Headgear",
+			"Pistol"
+		};
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={6,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Display
+			{
+				name="Display";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee",
+					"Feet",
+					"Gloves",
+					"Eyewear",
+					"Headgear",
+					"Pistol"
+				};
+				icon="shoulderright";
+			};
+		};
+	};
+
+  class SRP_MetalShelfGroundXL_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Extra Large Metal Shelf Kit - Ground";
+		descriptionShort="A Extra Large Metal Shelf Kit";
+	};
+  class SRP_MetalShelfGroundXL: Container_Base //new
+	{
+		scope=2;
+		displayName="Large Metal Shelf - Ground";
+		descriptionShort="A Convenient shelf where you can put your junk";
+		model="Survivalists_Mods\gear\containers\groundshelfmetalxlarge.p3d";
+		attachments[]=
+		{
+			"Melee",
+			"Feet",
+			"Gloves",
+			"Eyewear",
+			"Headgear",
+			"Pistol"
+		};
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={8,8};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Display
+			{
+				name="Display";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee",
+					"Feet",
+					"Gloves",
+					"Eyewear",
+					"Headgear",
+					"Pistol"
+				};
+				icon="shoulderright";
+			};
+		};
+	};
+
 
   class SRP_TetrisShelfKit_Kit: SRP_KitBase //new
 	{

@@ -33,6 +33,8 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_MetalShelfGround");
     InsertIngredient(0,"SRP_GunShelfWall");
     InsertIngredient(0,"SRP_GunShelfGround");
+    InsertIngredient(0,"SRP_MetalShelfGroundLarge");
+    InsertIngredient(0,"SRP_MetalShelfGroundXL");
     InsertIngredient(0,"SRP_Potbelly_Stove");
     InsertIngredient(0,"SRP_ShootingTarget");
     InsertIngredient(0,"SRP_ShootingTargets");

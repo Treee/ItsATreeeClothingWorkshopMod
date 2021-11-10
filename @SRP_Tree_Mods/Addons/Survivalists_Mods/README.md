@@ -645,6 +645,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Computer #4" (https://skfb.ly/6DnyH) by sudreyskr is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Rusty shelf" (https://skfb.ly/6WZCI) by GlowLow is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

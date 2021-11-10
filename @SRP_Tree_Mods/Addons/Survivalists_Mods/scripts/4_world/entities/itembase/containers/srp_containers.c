@@ -185,6 +185,8 @@ class SRP_WoodenShelfGround extends SRP_Container_Base{};
 class SRP_WoodenShelfGroundTall extends SRP_Container_Base{};
 class SRP_MetalShelfSimpleGround extends SRP_Container_Base{};
 class SRP_MetalShelfGround extends SRP_Container_Base{};
+class SRP_MetalShelfGroundLarge extends SRP_Container_Base{};
+class SRP_MetalShelfGroundXL extends SRP_Container_Base{};
 class SRP_Furniture_WoodenTable extends SRP_Container_Base{};
 class SRP_GChair extends SRP_Container_Base{};
 class SRP_GChairHigh extends SRP_Container_Base{};

@@ -1302,3 +1302,9 @@ SRP_StreetSign_Highway
 
 SRP_HangingWoodenSign_Kit
 SRP_HangingWoodenSign
+
+SRP_MetalShelfGroundLarge_Kit
+SRP_MetalShelfGroundLarge
+
+SRP_MetalShelfGroundXL_Kit
+SRP_MetalShelfGroundXL

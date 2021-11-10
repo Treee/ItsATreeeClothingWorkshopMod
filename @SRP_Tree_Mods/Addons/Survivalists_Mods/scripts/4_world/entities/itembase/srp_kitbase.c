@@ -145,6 +145,8 @@ class SRP_WoodenShelfGroundTall_Kit extends SRP_KitBase{};
 class SRP_MetalShelfSimpleGround_Kit extends SRP_KitBase{};
 class SRP_MetalShelfGround_Kit extends SRP_KitBase{};
 class SRP_GunShelfWall_Kit extends SRP_KitBase{};
+class SRP_MetalShelfGroundLarge_Kit extends SRP_KitBase{};
+class SRP_MetalShelfGroundXL_Kit extends SRP_KitBase{};
 
 class SRP_GunShelfGround_Kit extends SRP_KitBase{};
 class SRP_Potbelly_Stove_Kit extends SRP_KitBase{};
