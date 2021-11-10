@@ -37,7 +37,7 @@ modded class SRP_DrugWorkbench
   override void SetActions()
 	{
 		super.SetActions();
-		AddAction(ActionInteractWithGUICraftingWorkbench);
+		// AddAction(ActionInteractWithGUICraftingWorkbench);
 	}
 };
 
