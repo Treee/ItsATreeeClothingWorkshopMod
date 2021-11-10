@@ -653,6 +653,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Wooden Bed" (https://skfb.ly/XYPR) by toAflame is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Couch - midcentury modern" (https://skfb.ly/6CoC6) by MozillaHubs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

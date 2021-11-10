@@ -66,6 +66,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_ComputerTerminal");
     InsertIngredient(0,"SRP_ComputerTerminalSlim");
     InsertIngredient(0,"SRP_ComputerTerminalWide");
+    InsertIngredient(0,"SRP_MedicalBedSmall_Wood");
 
     InsertIngredient(0,"SRP_MetalBarrel_Old");
     InsertIngredient(0,"SRP_MetalBarrel_Blue");
@@ -86,7 +87,6 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_StreetSign_OneWay");
     InsertIngredient(0,"SRP_StreetSign_HandicapSmall");
     InsertIngredient(0,"SRP_StreetSign_Highway");
-    
     InsertIngredient(0,"SRP_HangingWoodenSign");
 
     InsertIngredient(0,"SRP_StoneForgeWorkbench");

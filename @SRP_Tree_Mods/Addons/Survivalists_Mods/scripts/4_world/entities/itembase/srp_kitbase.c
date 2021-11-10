@@ -137,6 +137,7 @@ class SRP_KitBase extends ItemBase
 //craftable kits
 class SRP_BedsideTable_Kit extends SRP_KitBase{};
 class SRP_BedsideTableMetal_Kit extends SRP_KitBase{};
+class SRP_MedicalBedSmall_Wood_Kit extends SRP_KitBase{};
 
 class SRP_WoodenShelfSimple_Kit extends SRP_KitBase{};
 class SRP_WoodenShelfSimpleGround_Kit extends SRP_KitBase{};

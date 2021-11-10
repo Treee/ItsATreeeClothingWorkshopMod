@@ -1319,3 +1319,6 @@ SRP_MetalBarrel_Red_Kit
 SRP_MetalBarrel_Red
 SRP_MetalBarrel_Yellow_Kit
 SRP_MetalBarrel_Yellow
+
+SRP_MedicalBedSmall_Wood_Kit
+SRP_MedicalBedSmall_Wood

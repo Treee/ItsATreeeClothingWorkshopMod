@@ -53,7 +53,7 @@ class CfgVehicles
   class SRP_MedicalCurtains_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Medical Curtains Kit";
+		displayName=" Kit";
 		descriptionShort="A Medical Curtain Kit";
 	};
 
@@ -124,6 +124,31 @@ class CfgVehicles
 		displayName="Wooden Medical Bed";
 		descriptionShort="A wood medical bed normally found in a medical facility.";
 		model="Survivalists_Mods\gear\medical\medicalbed_wood.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={10,15};
+		class Cargo
+		{
+			itemsCargoSize[]={2,3};
+		};
+	};
+
+  class SRP_MedicalBedSmall_Wood_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Small Wooden Bed Kit";
+		descriptionShort="A Small Wooden Bed Kit";
+	};
+
+  class SRP_MedicalBedSmall_Wood: Inventory_Base //new
+	{
+		scope=2;
+		displayName="Wooden Bed";
+		descriptionShort="A wood bed normally found in a house.";
+		model="Survivalists_Mods\gear\medical\medicalbedsmall_wood.p3d";
 		slopeTolerance=0.30000001;
 		weight=1000;
 		itemBehaviour=0;
