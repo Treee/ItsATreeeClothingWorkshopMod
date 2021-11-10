@@ -207,6 +207,8 @@ class SRP_MilitaryCaseLongBlue extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
 class SRP_BarricadeMetal extends SRP_Container_Base{};
 class SRP_ComputerTerminal extends SRP_Container_Base{};
+class SRP_ComputerTerminalSlim extends SRP_Container_Base{};
+class SRP_ComputerTerminalWide extends SRP_Container_Base{};
 
 class SRP_StreetSign_Base extends SRP_Container_Base{};
 class SRP_StreetSign_Caution extends SRP_Container_Base{};

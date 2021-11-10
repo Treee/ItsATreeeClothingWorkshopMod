@@ -233,6 +233,8 @@ class SRP_StreetSign_Highway_Kit extends SRP_KitBase{};
 class SRP_HangingWoodenSign_Kit extends SRP_KitBase{};
 
 class SRP_ComputerTerminal_Kit extends SRP_KitBase{};
+class SRP_ComputerTerminalSlim_Kit extends SRP_KitBase{};
+class SRP_ComputerTerminalWide_Kit extends SRP_KitBase{};
 
 class SRP_PortalBone_Kit extends SRP_KitBase{};
 class SRP_PortalDruid_Kit extends SRP_KitBase{};

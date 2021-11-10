@@ -641,6 +641,10 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "The Broken Forge" () by Stéphane is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Computer #2" (https://skfb.ly/6DnxN) by sudreyskr is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Computer #4" (https://skfb.ly/6DnyH) by sudreyskr is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

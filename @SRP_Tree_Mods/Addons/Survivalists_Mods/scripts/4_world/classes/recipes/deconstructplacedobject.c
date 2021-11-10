@@ -62,6 +62,8 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_BarricadeMetal");
     InsertIngredient(0,"SRP_SewingTable");
     InsertIngredient(0,"SRP_ComputerTerminal");
+    InsertIngredient(0,"SRP_ComputerTerminalSlim");
+    InsertIngredient(0,"SRP_ComputerTerminalWide");
 
     InsertIngredient(0,"SRP_StreetSign_Base");
     InsertIngredient(0,"SRP_HangingWoodenSign");

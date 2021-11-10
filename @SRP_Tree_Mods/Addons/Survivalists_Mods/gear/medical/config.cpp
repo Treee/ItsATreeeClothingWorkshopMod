@@ -572,6 +572,163 @@ class CfgVehicles
 		};
 	};
 
+
+  class SRP_ComputerTerminalSlim_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Slim Computer Terminal Kit";
+		descriptionShort="A Slim Computer Terminal Kit";
+	};
+
+  class SRP_ComputerTerminalSlim: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Computer Terminal";
+		descriptionShort="This equipmment is badly worn from time and the elements.";
+		model="Survivalists_Mods\gear\medical\labequipment_computerslim.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+		class Cargo
+		{
+			itemsCargoSize[]={4,4};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\srp_computerslim_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\medical\data\srp_computerslim.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\medical\data\srp_computerslim.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\medical\data\srp_computerslim.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\medical\data\srp_computerslim_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\medical\data\srp_computerslim_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\medical\data\srp_computerslim_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
+  class SRP_ComputerTerminalWide_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wide Computer Terminal Kit";
+		descriptionShort="A Wide Computer Terminal Kit";
+	};
+
+  class SRP_ComputerTerminalWide: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Computer Terminal";
+		descriptionShort="This equipmment is badly worn from time and the elements.";
+		model="Survivalists_Mods\gear\medical\labequipment_computerwide.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+		class Cargo
+		{
+			itemsCargoSize[]={4,4};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\srp_computerwide_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\medical\data\srp_computerwide.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\medical\data\srp_computerwide.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\medical\data\srp_computerwide.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\medical\data\srp_computerwide_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\medical\data\srp_computerwide_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\medical\data\srp_computerwide_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
   class SRP_Naloxone: Epinephrine
   {
     scope=2;

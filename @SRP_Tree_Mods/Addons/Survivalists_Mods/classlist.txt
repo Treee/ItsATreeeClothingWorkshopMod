@@ -1251,6 +1251,10 @@ SRP_WarCleaver
 
 SRP_ComputerTerminal_Kit
 SRP_ComputerTerminal
+SRP_ComputerTerminalSlim_Kit
+SRP_ComputerTerminalSlim
+SRP_ComputerTerminalWide_Kit
+SRP_ComputerTerminalWide
 
 SRP_Barricade_Wood_Kit
 SRP_Barricade_Wood
