@@ -1295,3 +1295,6 @@ SRP_StreetSign_HandicapSmall_Kit
 SRP_StreetSign_HandicapSmall
 SRP_StreetSign_Highway_Kit
 SRP_StreetSign_Highway
+
+SRP_HangingWoodenSign_Kit
+SRP_HangingWoodenSign

@@ -223,6 +223,7 @@ class SRP_StreetSign_BikePath extends SRP_Container_Base{};
 class SRP_StreetSign_OneWay extends SRP_Container_Base{};
 class SRP_StreetSign_HandicapSmall extends SRP_Container_Base{};
 class SRP_StreetSign_Highway extends SRP_Container_Base{};
+class SRP_HangingWoodenSign extends SRP_Container_Base{};
 
 class SRP_Barricade_Wood extends SRP_Container_Base{};
 class SRP_BarricadeWithWindow_Wood extends SRP_Container_Base{};

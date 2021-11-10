@@ -230,6 +230,7 @@ class SRP_StreetSign_BikePath_Kit extends SRP_KitBase{};
 class SRP_StreetSign_OneWay_Kit extends SRP_KitBase{};
 class SRP_StreetSign_HandicapSmall_Kit extends SRP_KitBase{};
 class SRP_StreetSign_Highway_Kit extends SRP_KitBase{};
+class SRP_HangingWoodenSign_Kit extends SRP_KitBase{};
 
 class SRP_ComputerTerminal_Kit extends SRP_KitBase{};
 

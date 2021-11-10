@@ -1195,4 +1195,39 @@ class CfgVehicles
 		displayName="Street Sign - Highway";
     model="Survivalists_Mods\structures\signs\streetsigns_highwaysign.p3d";
 	};
+
+  class SRP_HangingWoodenSign_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Hanging Wooden Sign Kit";
+		descriptionShort="A Hanging Wooden Sign Kit";
+	};
+
+  class SRP_HangingWoodenSign: Container_Base 
+  {
+    scope=2;
+    displayName="Hanging Wooden Sign";
+		descriptionShort="A Hanging Wooden Sign";
+    model="Survivalists_Mods\structures\signs\woodensign_hanging.p3d";
+    carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemsCargoSize[]={10,15};
+    cargoSize[]={0,0};
+		itemBehaviour=0;
+		physLayer="item_large";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_woodensign_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_woodensign.rvmat"
+		};
+  };
 };
