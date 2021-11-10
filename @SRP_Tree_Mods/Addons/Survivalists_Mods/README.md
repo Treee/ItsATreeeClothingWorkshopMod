@@ -637,6 +637,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Sign package" (https://skfb.ly/6rRZG) by Pedram Ashoori is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "War Cleaver" (https://sketchfab.com/3d-models/war-cleaver-98894544fedb44fcbd3eff4914e27c7b) by Jack Bronswijk is licensed under Editorial (https://help.sketchfab.com/hc/en-us/articles/115004276346-Licenses#editorial).
+
 # Wishlist
 
 # Reference
