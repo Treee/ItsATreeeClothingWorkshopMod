@@ -647,6 +647,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Rusty shelf" (https://skfb.ly/6WZCI) by GlowLow is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Rusty Metal Paint Bucket" (https://skfb.ly/o6wSp) by Rodion Perovsky is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

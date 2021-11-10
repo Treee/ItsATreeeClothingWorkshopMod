@@ -1308,3 +1308,5 @@ SRP_MetalShelfGroundLarge
 
 SRP_MetalShelfGroundXL_Kit
 SRP_MetalShelfGroundXL
+
+SRP_MetalBucket
