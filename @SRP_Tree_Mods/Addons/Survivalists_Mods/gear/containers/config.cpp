@@ -2119,6 +2119,124 @@ class CfgVehicles
 		};
 	};
 
+
+  class SRP_MetalBarrel_Colorbase: Container_Base  // new
+	{
+		scope=2;
+		displayName="Metal Barrel";
+		descriptionShort="A sturdy barrel.";
+		model="Survivalists_Mods\gear\containers\srp_metalbarrel.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=1000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+    color="base";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_metalbarrel_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_metalbarrel.rvmat"
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_MetalBarrel_Old_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Metal Barrel Kit - Old";
+		descriptionShort="A Metal Barrel Kit";
+	};
+  class SRP_MetalBarrel_Old: SRP_MetalBarrel_Colorbase // new
+  {
+    scope=2;
+    color="old";
+  };
+
+  class SRP_MetalBarrel_Blue_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Metal Barrel Kit - Blue";
+		descriptionShort="A Metal Barrel Kit";
+	};
+  class SRP_MetalBarrel_Blue: SRP_MetalBarrel_Colorbase // new
+  {
+    scope=2;
+    color="blue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_metalbarrel_blue_co.paa"
+		};
+  };
+
+  class SRP_MetalBarrel_Red_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Metal Barrel Kit - Red";
+		descriptionShort="A Metal Barrel Kit";
+	};
+  class SRP_MetalBarrel_Red: SRP_MetalBarrel_Colorbase // new
+  {
+    scope=2;
+    color="red";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_metalbarrel_red_co.paa"
+		};
+  };
+
+  class SRP_MetalBarrel_Yellow_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Metal Barrel Kit - Yellow";
+		descriptionShort="A Metal Barrel Kit";
+	};
+  class SRP_MetalBarrel_Yellow: SRP_MetalBarrel_Colorbase // new
+  {
+    scope=2;
+    color="yellow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_metalbarrel_yellow_co.paa"
+		};
+  };
+
+
   // Sneaky Stash Replacement
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {

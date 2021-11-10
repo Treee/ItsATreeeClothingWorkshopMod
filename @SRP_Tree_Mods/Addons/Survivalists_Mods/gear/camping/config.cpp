@@ -1565,6 +1565,8 @@ class CfgVehicles
 		absorbency=0.30000001;
 		physLayer="item_small";
 	};
+
+  
   
   //------------------------------ BASE BUILDING
 

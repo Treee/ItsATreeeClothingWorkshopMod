@@ -67,7 +67,26 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_ComputerTerminalSlim");
     InsertIngredient(0,"SRP_ComputerTerminalWide");
 
-    InsertIngredient(0,"SRP_StreetSign_Base");
+    InsertIngredient(0,"SRP_MetalBarrel_Old");
+    InsertIngredient(0,"SRP_MetalBarrel_Blue");
+    InsertIngredient(0,"SRP_MetalBarrel_Red");
+    InsertIngredient(0,"SRP_MetalBarrel_Yellow");
+
+    InsertIngredient(0,"SRP_StreetSign_Caution");
+    InsertIngredient(0,"SRP_StreetSign_CautionBiohazard");
+    InsertIngredient(0,"SRP_StreetSign_NoSmoking");
+    InsertIngredient(0,"SRP_StreetSign_Handicap");
+    InsertIngredient(0,"SRP_StreetSign_NoParking");
+    InsertIngredient(0,"SRP_StreetSign_Yield");
+    InsertIngredient(0,"SRP_StreetSign_Pedestrians");
+    InsertIngredient(0,"SRP_StreetSign_NoBikes");
+    InsertIngredient(0,"SRP_StreetSign_NoLeftTurn");
+    InsertIngredient(0,"SRP_StreetSign_SpeedLimit");
+    InsertIngredient(0,"SRP_StreetSign_BikePath");
+    InsertIngredient(0,"SRP_StreetSign_OneWay");
+    InsertIngredient(0,"SRP_StreetSign_HandicapSmall");
+    InsertIngredient(0,"SRP_StreetSign_Highway");
+    
     InsertIngredient(0,"SRP_HangingWoodenSign");
 
     InsertIngredient(0,"SRP_StoneForgeWorkbench");

@@ -1310,3 +1310,12 @@ SRP_MetalShelfGroundXL_Kit
 SRP_MetalShelfGroundXL
 
 SRP_MetalBucket
+
+SRP_MetalBarrel_Old_Kit
+SRP_MetalBarrel_Old
+SRP_MetalBarrel_Blue_Kit
+SRP_MetalBarrel_Blue
+SRP_MetalBarrel_Red_Kit
+SRP_MetalBarrel_Red
+SRP_MetalBarrel_Yellow_Kit
+SRP_MetalBarrel_Yellow
