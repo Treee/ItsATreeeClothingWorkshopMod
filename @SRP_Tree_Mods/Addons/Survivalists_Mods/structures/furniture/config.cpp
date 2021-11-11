@@ -151,6 +151,65 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_Sofa_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Modern Sofa Kit";
+		descriptionShort="A placeable sofa kit!";
+	};
+
+  class SRP_Furniture_Sofa_Modern: Container_Base  // new
+	{
+		scope=2;
+		displayName="Sofa";
+		descriptionShort="You are the sofa king!";
+		model="Survivalists_Mods\structures\furniture\srp_modernsofa.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
   class land_srp_saloon_barrel: HouseNoDestruct
 	{
 		scope=1;

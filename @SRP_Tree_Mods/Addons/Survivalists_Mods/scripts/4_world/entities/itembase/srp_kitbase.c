@@ -169,6 +169,7 @@ class SRP_StreetLightSlim_Kit extends SRP_KitBase{};
 class SRP_Furniture_BarrelTable_Kit extends SRP_KitBase{};
 class SRP_Furniture_Barrel_Kit extends SRP_KitBase{};
 class SRP_Furniture_Sofa_Kit extends SRP_KitBase{};
+class SRP_Furniture_Sofa_Modern_Kit extends SRP_KitBase{};
 class SRP_Furniture_BarCounter_Kit extends SRP_KitBase{};
 
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase{};

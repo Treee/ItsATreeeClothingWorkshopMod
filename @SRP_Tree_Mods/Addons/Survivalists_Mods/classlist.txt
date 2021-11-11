@@ -1322,3 +1322,6 @@ SRP_MetalBarrel_Yellow
 
 SRP_MedicalBedSmall_Wood_Kit
 SRP_MedicalBedSmall_Wood
+
+SRP_Furniture_Sofa_Modern_Kit
+SRP_Furniture_Sofa_Modern
