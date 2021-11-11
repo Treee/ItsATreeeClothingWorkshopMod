@@ -2314,7 +2314,6 @@ class CfgVehicles
 		};
   };
 
-
   // Sneaky Stash Replacement
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {
