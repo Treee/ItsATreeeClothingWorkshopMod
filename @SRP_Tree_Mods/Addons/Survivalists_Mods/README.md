@@ -659,6 +659,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Cardboard-box" (https://skfb.ly/6vCvn) by Daniyal Malik is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Metal Container" (https://skfb.ly/6oXOC) by Moose King is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

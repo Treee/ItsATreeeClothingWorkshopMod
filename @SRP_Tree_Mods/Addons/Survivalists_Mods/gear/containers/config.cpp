@@ -1542,6 +1542,49 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_MetalBox_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Metal Box Kit";
+		descriptionShort="A Metal Box Kit";
+	};
+  class SRP_MetalBox: Container_Base // new
+	{
+		scope=2;
+		displayName="Metal Box";
+		descriptionShort="A metal box.";
+		model="Survivalists_Mods\gear\containers\srp_metalbox.p3d";
+		weight=2000;
+		itemSize[]={15,10};
+		carveNavmesh=1;
+		canBeDigged=0;
+		itemBehaviour=2;
+		physLayer="item_large";
+		class Cargo
+		{
+			itemsCargoSize[]={8,8};
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\containers\data\srp_metalbox.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\containers\data\srp_metalbox.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\containers\data\srp_metalbox_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\containers\data\srp_metalbox_damage.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\containers\data\srp_metalbox_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
   class SRP_Cardboardbox: Container_Base // new
 	{
 		scope=2;

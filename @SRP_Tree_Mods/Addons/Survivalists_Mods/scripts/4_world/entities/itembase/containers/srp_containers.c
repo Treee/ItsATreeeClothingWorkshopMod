@@ -183,6 +183,7 @@ class SRP_MetalBarrel_Blue extends SRP_MetalBarrel_Colorbase{};
 class SRP_MetalBarrel_Red extends SRP_MetalBarrel_Colorbase{};
 class SRP_MetalBarrel_Yellow extends SRP_MetalBarrel_Colorbase{};
 
+class SRP_MetalBox extends SRP_Container_Base{};
 class SRP_Fridge extends SRP_Container_Base{};
 class SRP_FridgeLarge extends SRP_Container_Base{};
 class SRP_FridgeRetro extends SRP_Container_Base{};

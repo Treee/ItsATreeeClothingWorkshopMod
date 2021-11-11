@@ -1330,3 +1330,6 @@ SRP_Furniture_Sofa_Old_Kit
 SRP_Furniture_Sofa_Old
 
 SRP_Cardboardbox
+
+SRP_MetalBox_Kit
+SRP_MetalBox
