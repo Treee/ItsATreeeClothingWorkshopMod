@@ -116,6 +116,7 @@ modded class SneakyLargeLogPile
 	}
 }
 
+class SRP_Cardboardbox extends SRP_DeployableContainer_Base{};
 class SRP_PostBox extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxBlue extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxWooden extends SRP_DeployableContainer_Base{};

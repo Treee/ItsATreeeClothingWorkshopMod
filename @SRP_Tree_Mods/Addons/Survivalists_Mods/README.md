@@ -657,6 +657,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Old Couch" (https://skfb.ly/6RJEA) by Oliver Triplett is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Cardboard-box" (https://skfb.ly/6vCvn) by Daniyal Malik is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

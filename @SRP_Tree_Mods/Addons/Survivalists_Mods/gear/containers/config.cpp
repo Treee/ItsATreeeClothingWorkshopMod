@@ -1542,7 +1542,42 @@ class CfgVehicles
 		};
 	};
 
-
+  class SRP_Cardboardbox: Container_Base // new
+	{
+		scope=2;
+		displayName="Cardboard Box";
+		descriptionShort="A paper box";
+		model="Survivalists_Mods\gear\containers\srp_cardboardbox.p3d";
+		weight=2000;
+		itemSize[]={5,5};
+		carveNavmesh=1;
+		canBeDigged=0;
+		itemBehaviour=2;
+		physLayer="item_large";
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			allowOwnedCargoManipulation=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\containers\data\srp_cardboardbox.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\containers\data\srp_cardboardbox.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\containers\data\srp_cardboardbox_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\containers\data\srp_cardboardbox_damage.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\containers\data\srp_cardboardbox_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
   class SRP_BedsideTable_Kit: SRP_KitBase //new
 	{
 		scope=2;
