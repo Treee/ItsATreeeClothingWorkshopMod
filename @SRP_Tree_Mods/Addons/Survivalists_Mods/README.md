@@ -655,6 +655,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Couch - midcentury modern" (https://skfb.ly/6CoC6) by MozillaHubs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Old Couch" (https://skfb.ly/6RJEA) by Oliver Triplett is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference
