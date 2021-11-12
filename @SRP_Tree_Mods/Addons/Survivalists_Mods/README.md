@@ -672,6 +672,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 - "Log Bench" (https://skfb.ly/6X6Xs) by AmbiMesh is licensed under Creative Commons Attribution (http://
   creativecommons.org/licenses/by/4.0/).
 
+- "Viking Bench" (https://skfb.ly/6uqzL) by ExplodedNun is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference
