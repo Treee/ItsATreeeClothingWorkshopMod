@@ -676,6 +676,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Wooden Bench (Remastered)" (https://skfb.ly/onCnO) by Memorie is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Bench" (https://skfb.ly/opsEB) by Yuli.Enders is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference
