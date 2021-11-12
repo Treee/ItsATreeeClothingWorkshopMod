@@ -1340,6 +1340,7 @@ SRP_Furniture_OldWoodenChair
 SRP_Furniture_WoodenChair_Kit
 SRP_Furniture_WoodenChair
 
-
 SRP_Furniture_WoodenStairs_Kit
 SRP_Furniture_WoodenStairs
+
+SRP_Furniture_LogStump

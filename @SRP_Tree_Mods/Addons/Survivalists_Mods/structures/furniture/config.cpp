@@ -648,6 +648,53 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_LogStump: Container_Base  // SRP_wooden_table
+	{
+		scope=2;
+		displayName="Log Stump";
+		descriptionShort="Stump for a seat.";
+		model="Survivalists_Mods\structures\furniture\srp_logstump.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+    itemsCargoSize[]={0,0};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
 	class SRP_GChair_Kit: SRP_KitBase  // SRP_GChairKit
 	{
 		scope=2;
