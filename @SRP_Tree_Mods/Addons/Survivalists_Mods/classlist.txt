@@ -370,8 +370,6 @@ SRP_LeatherPouch_Medieval
 SRP_LeatherPouch_Small
 SRP_ArmorStandBasic_Kit
 SRP_ArmorStandBasic
-SneakySmallLogPile
-SneakyLargeLogPile
 
 // Crafting
 SRP_AdvancedWorkbench
@@ -1348,6 +1346,8 @@ SRP_Furniture_LogBenchSmall
 SRP_Furniture_WoodBenchSmall
 SRP_Furniture_WoodBenchSlim
 SRP_Furniture_PileOfPlanks
+SRP_Furniture_SmallLogPile
+SRP_Furniture_LargeLogPile
 
 SRP_WoodenBench_Kit
 SRP_WoodenBench

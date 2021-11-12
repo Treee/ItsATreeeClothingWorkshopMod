@@ -16,6 +16,19 @@ modded class PluginRecipesManagerBase extends PluginBase
     
     // Sneaky Stash Replacement
     RegisterRecipe(new SRP_Craft_BedSmall);
+    RegisterRecipe(new SRP_Craft_BedMetal);
+    RegisterRecipe(new SRP_Craft_ModernCouch);
+    RegisterRecipe(new SRP_Craft_OldCouch);
+    RegisterRecipe(new SRP_Craft_MetalBarrelOld);
+    RegisterRecipe(new SRP_Craft_MetalBarrelBlue);
+    RegisterRecipe(new SRP_Craft_MetalBarrelRed);
+    RegisterRecipe(new SRP_Craft_MetalBarrelYellow);
+    RegisterRecipe(new SRP_Craft_MetalShelf);
+    RegisterRecipe(new SRP_Craft_MetalShelfLarge);
+    RegisterRecipe(new SRP_Craft_PlankPile);
+    RegisterRecipe(new SRP_Craft_SmallLogPile);
+    RegisterRecipe(new SRP_Craft_LargeLogPile);
+    RegisterRecipe(new SRP_Craft_StairKit);
     
     //---------Events
     RegisterRecipe(new SRP_Halloween_TradeCoinsForAmmo);

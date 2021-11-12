@@ -41,8 +41,8 @@ modded class SRP_DrugWorkbench
 	}
 };
 
-// remove eventually
-modded class SneakySmallLogPile
+
+class SRP_Furniture_SmallLogPile extends SRP_DeployableContainer_Base
 {
   bool CanReceiveItemIntoCargo(EntityAI item)
 	{
@@ -62,7 +62,7 @@ modded class SneakySmallLogPile
 			if ( player )
 			{
 				ItemBase itemInHands = player.GetItemInHands();
-        if (itemInHands.GetType() == "SneakySmallLogPile")
+        if (itemInHands.GetType() == "SRP_Furniture_SmallLogPile")
         {
           return false;
         }
@@ -78,8 +78,8 @@ modded class SneakySmallLogPile
 		AddAction(ActionPlaceObject);
 	}
 }
-// remove eventually
-modded class SneakyLargeLogPile
+
+class SRP_Furniture_LargeLogPile extends SRP_DeployableContainer_Base
 {
   bool CanReceiveItemIntoCargo(EntityAI item)
 	{
@@ -99,7 +99,7 @@ modded class SneakyLargeLogPile
 			if ( player )
 			{
 				ItemBase itemInHands = player.GetItemInHands();
-        if (itemInHands.GetType() == "SneakyLargeLogPile")
+        if (itemInHands.GetType() == "SRP_Furniture_LargeLogPile")
         {
           return false;
         }

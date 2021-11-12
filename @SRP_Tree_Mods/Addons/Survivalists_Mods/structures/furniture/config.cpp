@@ -601,7 +601,7 @@ class CfgVehicles
 		displayName="Wooden Stairs Kit";
 		descriptionShort="A placeable stairs kit!";
 	};
-	class SRP_Furniture_WoodenStairs: Container_Base  // SRP_wooden_table
+	class SRP_Furniture_WoodenStairs: Container_Base  // new
 	{
 		scope=2;
 		displayName="Wooden Stairs";
@@ -648,7 +648,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Furniture_LogStump: Container_Base  // SRP_wooden_table
+  class SRP_Furniture_LogStump: Container_Base  // new
 	{
 		scope=2;
 		displayName="Log Stump";
@@ -695,7 +695,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Furniture_LogBenchSmall: Container_Base  // SRP_wooden_table
+  class SRP_Furniture_LogBenchSmall: Container_Base  // new
 	{
 		scope=2;
 		displayName="Log Bench";
@@ -742,7 +742,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Furniture_WoodBenchSmall: Container_Base  // SRP_wooden_table
+  class SRP_Furniture_WoodBenchSmall: Container_Base  // new
 	{
 		scope=2;
 		displayName="Log Bench";
@@ -789,7 +789,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Furniture_WoodBenchSlim: Container_Base  // SRP_wooden_table
+  class SRP_Furniture_WoodBenchSlim: Container_Base  // new
 	{
 		scope=2;
 		displayName="Bench";
@@ -836,7 +836,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Furniture_PileOfPlanks: Container_Base  // SRP_wooden_table
+  class SRP_Furniture_PileOfPlanks: Container_Base  // new
 	{
 		scope=2;
 		displayName="Planks";
@@ -850,6 +850,115 @@ class CfgVehicles
 		useEntityHierarchy="true";
 		physLayer="item_large";
 		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_Furniture_SmallLogPile: Container_Base  // new
+	{
+		scope=2;
+		displayName="Log Pile";
+    descriptionShort="A small pile of lumber used for constructing various things like stairs and platforms.";
+    model="Survivalists_Mods\gear\containers\logpilesmall.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+    itemsCargoSize[]={1,1};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+    attachments[]=
+		{
+			"Bark",
+      "WoodenStick",
+      "Firewood",
+      "Material_WoodenLogs"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_Furniture_LargeLogPile: Container_Base  // new
+	{
+		scope=2;
+		displayName="Log Pile";
+    descriptionShort="A pile of lumber used for constructing various things like stairs and platforms.";
+    model="Survivalists_Mods\gear\containers\logpilelarge.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+    itemsCargoSize[]={1,1};
+    attachments[]=
+		{
+			"Bark",
+      "WoodenStick",
+      "Firewood",
+      "Material_WoodenLogs",
+      "Material_L1_WoodenLogs"
+		};
 		class DamageSystem
 		{
 			class GlobalHealth

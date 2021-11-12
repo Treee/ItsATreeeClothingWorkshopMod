@@ -2364,38 +2364,4 @@ class CfgVehicles
 		};
   }
   
-  // modifying sneaky stashes
-  class kitholders;
-  class SneakySmallLogPile: kitholders
-  {
-    scope=2;
-    displayName="Small Log Pile";
-    descriptionShort="A small pile of lumber used for constructing various things like stairs and platforms.";
-    model="Survivalists_Mods\gear\containers\logpilesmall.p3d";
-    itemsCargoSize[]={1,1};
-    attachments[]=
-		{
-			"Bark",
-      "WoodenStick",
-      "Firewood",
-      "Material_WoodenLogs"
-		};
-  };
-  class SneakyLargeLogPile: kitholders
-  {
-    scope=2;
-    displayName="Large Log Pile";
-    descriptionShort="A small pile of lumber used for constructing various things like stairs and platforms.";
-    model="Survivalists_Mods\gear\containers\logpilelarge.p3d";
-    itemsCargoSize[]={1,1};
-    attachments[]=
-		{
-			"Bark",
-      "WoodenStick",
-      "Firewood",
-      "Material_WoodenLogs",
-      "Material_L1_WoodenLogs"
-		};
-  };
-
 };
