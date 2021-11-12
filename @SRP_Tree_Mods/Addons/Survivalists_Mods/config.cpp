@@ -54,7 +54,6 @@ class CfgPatches
       "CarRadioGlow", // PsychoDayZRadio
       "MSP_Scripts",    // MSP_Fridge_Base
       "BaseBuildingPlus", // removing admin tools
-      "cdub_sneaky_stashes", // sneaky_stashes
       "GearPDA_scripts", // PDA retexture
       "deerisle", // for the map
 		};
