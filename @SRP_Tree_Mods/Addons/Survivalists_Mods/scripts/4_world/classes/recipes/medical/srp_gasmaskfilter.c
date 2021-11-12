@@ -14,7 +14,7 @@ class Craft_SRP_RefillGasMaskFilter extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 4;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = 1;//-1 = disable check
+		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = 75;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check

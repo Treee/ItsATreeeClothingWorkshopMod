@@ -1347,6 +1347,7 @@ SRP_Furniture_LogStump
 SRP_Furniture_LogBenchSmall
 SRP_Furniture_WoodBenchSmall
 SRP_Furniture_WoodBenchSlim
+SRP_Furniture_PileOfPlanks
 
 SRP_WoodenBench_Kit
 SRP_WoodenBench

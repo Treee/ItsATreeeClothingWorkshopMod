@@ -678,6 +678,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Bench" (https://skfb.ly/opsEB) by Yuli.Enders is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Pile of Planks (Free/GameReady)" (https://skfb.ly/6WUEI) by Sebastian Webster is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference
