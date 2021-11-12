@@ -180,6 +180,7 @@ class SRP_SewingTable extends SRP_Container_Base
 };
 
 class SRP_MedicalBedSmall_Wood extends SRP_Container_Base{};
+class SRP_WoodenBench extends SRP_Container_Base{};
 
 class SRP_MetalBarrel_Colorbase extends SRP_Container_Base{};
 class SRP_MetalBarrel_Old extends SRP_Container_Base{};

@@ -1140,6 +1140,8 @@ class CfgVehicles
 		useEntityHierarchy="true";
 		physLayer="item_large";
 		rotationFlags=2;
+    itemSize[]={15,10};
+    itemsCargoSize[]={0,0};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1147,6 +1149,60 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=100000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+
+  class SRP_WoodenBench_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Wooden Bench Kit";
+		descriptionShort="A placeable wooden bench kit!";
+	};
+
+  class SRP_WoodenBench: Container_Base  // new
+	{
+		scope=2;
+		displayName="Bench";
+		descriptionShort="A wooden bench meant to sit on.";
+		model="Survivalists_Mods\structures\furniture\srp_woodenbench.p3d";
+		carveNavmesh=1;
+		weight=3000;
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+    itemSize[]={15,10};
+    itemsCargoSize[]={0,0};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000;
 				};
 			};
 		};
