@@ -706,4 +706,93 @@ class CfgVehicles
 			};
 		};
   };
+
+  class SRP_BeanBasher: Inventory_Base
+	{
+		scope=2;
+		displayName="Bean Basher";
+		descriptionShort="A creative way to feed someone beans.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_beanbasher.p3d";
+		rotationFlags=17;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		weight=600;
+		itemSize[]={1,7};
+		itemBehaviour=2;
+		fragility=0.02;
+		openItemSpillRange[]={40,70};
+		isMeleeWeapon=1;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_beanbasher_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_beanbasher.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_beanbasher.rvmat"}},
+						{0.69999999,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_beanbasher.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_beanbasher_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_beanbasher_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_beanbasher_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUp_Light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="baseballbat_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 };

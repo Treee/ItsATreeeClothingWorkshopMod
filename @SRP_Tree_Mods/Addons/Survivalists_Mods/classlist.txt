@@ -1351,3 +1351,5 @@ SRP_Furniture_PileOfPlanks
 
 SRP_WoodenBench_Kit
 SRP_WoodenBench
+
+SRP_BeanBasher

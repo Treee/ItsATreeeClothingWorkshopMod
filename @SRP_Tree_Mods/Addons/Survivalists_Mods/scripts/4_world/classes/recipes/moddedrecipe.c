@@ -14,6 +14,9 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
     
+    // Sneaky Stash Replacement
+    RegisterRecipe(new SRP_Craft_BedSmall);
+    
     //---------Events
     RegisterRecipe(new SRP_Halloween_TradeCoinsForAmmo);
     RegisterRecipe(new SRP_Halloween_TradeCoinsForCleaningKit);
