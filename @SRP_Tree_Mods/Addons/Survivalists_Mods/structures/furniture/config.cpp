@@ -507,7 +507,6 @@ class CfgVehicles
 		};
 	};
 
-
 	class SRP_Furniture_WoodenTable_Kit: SRP_KitBase
 	{
 		scope=2;
@@ -571,6 +570,59 @@ class CfgVehicles
 					"BP_gas_lamp"
 				};
 				icon="gascanister";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_Furniture_WoodenStairs_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Wooden Stairs Kit";
+		descriptionShort="A placeable stairs kit!";
+	};
+	class SRP_Furniture_WoodenStairs: Container_Base  // SRP_wooden_table
+	{
+		scope=2;
+		displayName="Wooden Stairs";
+		descriptionShort="These are stairs. Where do they go?";
+		model="Survivalists_Mods\structures\furniture\srp_stairswood.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+    itemsCargoSize[]={0,0};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000000;
+				};
 			};
 		};
 		class AnimEvents

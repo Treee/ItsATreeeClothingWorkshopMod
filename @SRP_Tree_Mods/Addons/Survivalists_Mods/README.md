@@ -665,6 +665,10 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Wooden Chair" (https://skfb.ly/6RsPG) by Merlin-101 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Wood Stairs" (https://skfb.ly/6Y98q) by Periltek Games is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Log (Stump/Bench)" (https://skfb.ly/6yDTs) by Alex Martire is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
 # Wishlist
 
 # Reference
