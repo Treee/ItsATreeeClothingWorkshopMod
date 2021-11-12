@@ -29,6 +29,11 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new SRP_Craft_SmallLogPile);
     RegisterRecipe(new SRP_Craft_LargeLogPile);
     RegisterRecipe(new SRP_Craft_StairKit);
+    RegisterRecipe(new SRP_Craft_LogStumpSeat);
+    RegisterRecipe(new SRP_Craft_LogBench);
+    RegisterRecipe(new SRP_Craft_SmallWoodBench);
+    RegisterRecipe(new SRP_Craft_SlimWoodBench);
+    RegisterRecipe(new SRP_Craft_PicnicBench);
     
     //---------Events
     RegisterRecipe(new SRP_Halloween_TradeCoinsForAmmo);
