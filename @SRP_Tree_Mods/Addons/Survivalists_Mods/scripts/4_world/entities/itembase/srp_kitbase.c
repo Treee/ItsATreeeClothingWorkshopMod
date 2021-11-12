@@ -172,6 +172,8 @@ class SRP_Furniture_Sofa_Kit extends SRP_KitBase{};
 class SRP_Furniture_Sofa_Modern_Kit extends SRP_KitBase{};
 class SRP_Furniture_Sofa_Old_Kit extends SRP_KitBase{};
 class SRP_Furniture_BarCounter_Kit extends SRP_KitBase{};
+class SRP_Furniture_OldWoodenChair_Kit extends SRP_KitBase{};
+class SRP_Furniture_WoodenChair_Kit extends SRP_KitBase{};
 
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase{};
 class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};

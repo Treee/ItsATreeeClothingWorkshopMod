@@ -661,6 +661,10 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Metal Container" (https://skfb.ly/6oXOC) by Moose King is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Old wooden chair" (https://skfb.ly/6WOxv) by Aartee is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Wooden Chair" (https://skfb.ly/6RsPG) by Merlin-101 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

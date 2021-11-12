@@ -251,6 +251,8 @@ class SRP_Furniture_Sofa extends SRP_Container_Base{};
 class SRP_Furniture_Sofa_Modern extends SRP_Container_Base{};
 class SRP_Furniture_Sofa_Old extends SRP_Container_Base{};
 class SRP_Furniture_BarCounter extends SRP_Container_Base{};
+class SRP_Furniture_OldWoodenChair extends SRP_Container_Base{};
+class SRP_Furniture_WoodenChair extends SRP_Container_Base{};
 
 // These need to be deleted by an admin after placement.
 class SRP_ForestSign_Original extends SRP_Container_Base{};

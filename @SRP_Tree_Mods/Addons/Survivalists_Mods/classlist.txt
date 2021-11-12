@@ -1333,3 +1333,9 @@ SRP_Cardboardbox
 
 SRP_MetalBox_Kit
 SRP_MetalBox
+
+SRP_Furniture_OldWoodenChair_Kit
+SRP_Furniture_OldWoodenChair
+
+SRP_Furniture_WoodenChair_Kit
+SRP_Furniture_WoodenChair

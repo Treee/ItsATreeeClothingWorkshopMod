@@ -269,6 +269,114 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_OldWoodenChair_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Old Wooden Chair Kit";
+		descriptionShort="A placeable chair kit!";
+	};
+
+  class SRP_Furniture_OldWoodenChair: Container_Base  // new
+	{
+		scope=2;
+		displayName="Chair";
+		descriptionShort="Four legs and a seat.";
+		model="Survivalists_Mods\structures\furniture\srp_chairoldwood.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={6,6};
+    itemsCargoSize[]={0,0};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_Furniture_WoodenChair_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Wooden Chair Kit";
+		descriptionShort="A placeable chair kit!";
+	};
+
+  class SRP_Furniture_WoodenChair: Container_Base  // new
+	{
+		scope=2;
+		displayName="Chair";
+		descriptionShort="Four legs and a seat.";
+		model="Survivalists_Mods\structures\furniture\srp_chairwood.p3d";
+		carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={6,6};
+    itemsCargoSize[]={0,0};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
   class land_srp_saloon_barrel: HouseNoDestruct
 	{
 		scope=1;
