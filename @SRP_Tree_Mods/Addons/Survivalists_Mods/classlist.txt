@@ -1344,3 +1344,4 @@ SRP_Furniture_WoodenStairs_Kit
 SRP_Furniture_WoodenStairs
 
 SRP_Furniture_LogStump
+SRP_Furniture_LogBenchSmall
