@@ -682,6 +682,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Mad Can: Fury Beans" (https://skfb.ly/JIUs) by Yogensia is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+- "Wooden Bridge Pack" (https://skfb.ly/o6JnV) by padmadev_designs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

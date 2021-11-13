@@ -177,6 +177,13 @@ class SRP_Furniture_WoodenChair_Kit extends SRP_KitBase{};
 class SRP_Furniture_WoodenStairs_Kit extends SRP_KitBase{};
 class SRP_WoodenBench_Kit extends SRP_KitBase{};
 
+class SRP_BuildingComponentFrame_WornRamp_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_WornLPlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_WornUPlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_WornFlatPlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_WornSinglePlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_WornDoublePlatform_Kit extends SRP_KitBase{};
+
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase{};
 class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
 
@@ -302,4 +309,5 @@ class SRP_Gravestone_19_Kit extends SRP_KitBase{};
 class SRP_Gravestone_19Open_Kit extends SRP_KitBase{};
 
 // This crafted item is not placeable
-class SRP_TetrisShelfKit_Kit extends ItemBase {};
+class SRP_TetrisShelfKit_Kit extends ItemBase{};
+class SRP_BuildingComponentFrame_Kit extends ItemBase{};

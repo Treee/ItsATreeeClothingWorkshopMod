@@ -181,6 +181,14 @@ class SRP_SewingTable extends SRP_Container_Base
   }
 };
 
+class SRP_BuildingComponentFrame_ColorBase extends SRP_Container_Base{};
+class SRP_BuildingComponentFrame_WornRamp extends SRP_BuildingComponentFrame_ColorBase{};
+class SRP_BuildingComponentFrame_WornLPlatform extends SRP_BuildingComponentFrame_ColorBase{};
+class SRP_BuildingComponentFrame_WornUPlatform extends SRP_BuildingComponentFrame_ColorBase{};
+class SRP_BuildingComponentFrame_WornFlatPlatform extends SRP_BuildingComponentFrame_ColorBase{};
+class SRP_BuildingComponentFrame_WornSinglePlatform extends SRP_BuildingComponentFrame_ColorBase{};
+class SRP_BuildingComponentFrame_WornDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
+
 class SRP_MedicalBedSmall_Wood extends SRP_Container_Base{};
 class SRP_WoodenBench extends SRP_Container_Base{};
 

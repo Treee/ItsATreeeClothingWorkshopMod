@@ -24,6 +24,179 @@ class CfgVehicles
   //------------------------------ BASE BUILDING
 
 
+
+  //------------------------------- BUILDING FRAMES
+  class SRP_BuildingComponentFrame_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit";
+		descriptionShort="A Building Component Kit";
+	};
+
+  class SRP_BuildingComponentFrame_ColorBase: Inventory_Base // new
+	{
+		scope=0;
+		displayName="Wooden Building Component";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_all.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    itemsCargoSize[]={0,0};
+    color="base";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
+
+  class SRP_BuildingComponentFrame_WornRamp_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Worn Ramp";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_WornRamp: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Worn Ramp";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";
+    itemsCargoSize[]={0,0};
+    color="wornramp";
+  };
+
+  class SRP_BuildingComponentFrame_WornLPlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Worn L Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_WornLPlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Worn L Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornlplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="wornlplatform";
+  };
+  
+  class SRP_BuildingComponentFrame_WornUPlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Worn U Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_WornUPlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Worn U Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornuplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="wornuplatform";
+  };
+
+  class SRP_BuildingComponentFrame_WornFlatPlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Worn U Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_WornFlatPlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Worn Flat Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="wornflatplatform";
+  };
+
+  class SRP_BuildingComponentFrame_WornSinglePlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Worn Single Rail Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_WornSinglePlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Worn Single Rail Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornsingleplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="wornsingleplatform";
+  };
+
+  class SRP_BuildingComponentFrame_WornDoublePlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Worn Double Rail Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_WornDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Worn Double Rail Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_worndoubleplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="worndoubleplatform";
+  };
+
+
   //-------------------------------- Barricades
   class SRP_Barricade_Wood_Kit: SRP_KitBase //new
 	{

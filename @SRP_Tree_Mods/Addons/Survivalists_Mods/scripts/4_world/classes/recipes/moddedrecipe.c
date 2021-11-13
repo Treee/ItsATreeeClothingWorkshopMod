@@ -13,6 +13,7 @@ modded class PluginRecipesManagerBase extends PluginBase
     //---------Deconstruct Items into Kits
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
+    RegisterRecipe(new Deconstruct_IntermediaryObjectKit_BuildingFrame);
     
     // Sneaky Stash Replacement
     RegisterRecipe(new SRP_Craft_BedSmall);
@@ -152,6 +153,14 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_TetrisShelfSHorizontal);
     RegisterRecipe(new Craft_SRP_TetrisShelfSVertical);
     RegisterRecipe(new Craft_SRP_TetrisShelfBox);
+
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameWornRampKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameWornLPlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameWornUPlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameWornFlatPlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameWornWornSinglePlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameWornWornDoublePlatformKit);
 
     // Food Recipes	
     RegisterRecipe(new SRP_CreateVeggiesMeatComboCanned_Raw);		
