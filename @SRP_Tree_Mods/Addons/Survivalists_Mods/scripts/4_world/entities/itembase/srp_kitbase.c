@@ -181,8 +181,20 @@ class SRP_BuildingComponentFrame_WornRamp_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_WornLPlatform_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_WornUPlatform_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_WornFlatPlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_WornFlatDoublePlatform_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_WornSinglePlatform_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_WornDoublePlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_WornLongDoublePlatform_Kit extends SRP_KitBase{};
+
+class SRP_BuildingComponentFrame_FineRamp_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_FineLPlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_FineUPlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_FineFlatPlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_FineFlatDoublePlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_FineSinglePlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_FineDoublePlatform_Kit extends SRP_KitBase{};
+class SRP_BuildingComponentFrame_FineLongDoublePlatform_Kit extends SRP_KitBase{};
+
 
 class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase{};
 class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};

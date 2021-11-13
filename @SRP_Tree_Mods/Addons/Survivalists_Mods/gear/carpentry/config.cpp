@@ -151,7 +151,7 @@ class CfgVehicles
   class SRP_BuildingComponentFrame_WornFlatPlatform_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Building Component Kit - Worn U Platform";
+		displayName="Building Component Kit - Worn Flat Platform";
 		descriptionShort="A Building Component Kit";
 	};
   class SRP_BuildingComponentFrame_WornFlatPlatform: SRP_BuildingComponentFrame_ColorBase // new
@@ -162,6 +162,22 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatplatform.p3d";
     itemsCargoSize[]={0,0};
     color="wornflatplatform";
+  };
+
+  class SRP_BuildingComponentFrame_WornFlatDoublePlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Worn Long Flat Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_WornFlatDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Worn Long Flat Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatdoubleplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="wornflatdoubleplatform";
   };
 
   class SRP_BuildingComponentFrame_WornSinglePlatform_Kit: SRP_KitBase //new
@@ -195,6 +211,153 @@ class CfgVehicles
     itemsCargoSize[]={0,0};
     color="worndoubleplatform";
   };
+
+  class SRP_BuildingComponentFrame_WornLongDoublePlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Worn Long Double Rail Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_WornLongDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Worn Long Double Rail Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornlongdoubleplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="wornlongdoubleplatform";
+  };
+
+
+
+  class SRP_BuildingComponentFrame_FineRamp_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Fine Ramp";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_FineRamp: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Fine Ramp";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineramp.p3d";
+    itemsCargoSize[]={0,0};
+    color="fineramp";
+  };
+
+  class SRP_BuildingComponentFrame_FineLPlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Fine L Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_FineLPlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Fine L Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finelplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="finelplatform";
+  };
+  
+  class SRP_BuildingComponentFrame_FineUPlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Fine U Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_FineUPlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Fine U Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineuplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="fineuplatform";
+  };
+
+  class SRP_BuildingComponentFrame_FineFlatPlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Fine Flat Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_FineFlatPlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Fine Flat Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineflatplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="fineflatplatform";
+  };
+
+  class SRP_BuildingComponentFrame_FineFlatDoublePlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Fine Long Flat Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_FineFlatDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Fine Long Flat Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineflatdoubleplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="fineflatplatform";
+  };
+
+  class SRP_BuildingComponentFrame_FineSinglePlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Fine Single Rail Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_FineSinglePlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Fine Single Rail Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finesingleplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="finesingleplatform";
+  };
+
+  class SRP_BuildingComponentFrame_FineDoublePlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Fine Double Rail Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_FineDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Fine Double Rail Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finedoubleplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="finedoubleplatform";
+  };
+
+  class SRP_BuildingComponentFrame_FineLongDoublePlatform_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Building Component Kit - Fine Long Double Rail Platform";
+		descriptionShort="A Building Component Kit";
+	};
+  class SRP_BuildingComponentFrame_FineLongDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+	{
+		scope=2;
+		displayName="Wooden Building Component - Fine Long Double Rail Platform";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finelongdoubleplatform.p3d";
+    itemsCargoSize[]={0,0};
+    color="finedoubleplatform";
+  };
+
 
 
   //-------------------------------- Barricades

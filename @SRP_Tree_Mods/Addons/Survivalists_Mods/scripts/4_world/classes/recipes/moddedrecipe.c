@@ -159,8 +159,19 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new SRP_CraftBuildingComponentFrameWornLPlatformKit);
     RegisterRecipe(new SRP_CraftBuildingComponentFrameWornUPlatformKit);
     RegisterRecipe(new SRP_CraftBuildingComponentFrameWornFlatPlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameWornFlatDoublePlatformKit);
     RegisterRecipe(new SRP_CraftBuildingComponentFrameWornWornSinglePlatformKit);
     RegisterRecipe(new SRP_CraftBuildingComponentFrameWornWornDoublePlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameWornFlatDoublePlatformKit);
+
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameFineRampKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameFineLPlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameFineUPlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameFineFlatPlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameFineFlatDoublePlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameFineWornSinglePlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameFineWornDoublePlatformKit);
+    RegisterRecipe(new SRP_CraftBuildingComponentFrameFineFlatDoublePlatformKit);
 
     // Food Recipes	
     RegisterRecipe(new SRP_CreateVeggiesMeatComboCanned_Raw);		

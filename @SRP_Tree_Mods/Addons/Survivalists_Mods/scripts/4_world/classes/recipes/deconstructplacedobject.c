@@ -270,8 +270,20 @@ class Deconstruct_IntermediaryObjectKit_BuildingFrame extends RecipeBase
 		InsertIngredient(0,"SRP_BuildingComponentFrame_WornLPlatform");    
 		InsertIngredient(0,"SRP_BuildingComponentFrame_WornUPlatform");    
 		InsertIngredient(0,"SRP_BuildingComponentFrame_WornFlatPlatform");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_WornFlatDoublePlatform");    
 		InsertIngredient(0,"SRP_BuildingComponentFrame_WornSinglePlatform");    
 		InsertIngredient(0,"SRP_BuildingComponentFrame_WornDoublePlatform");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_WornLongDoublePlatform");  
+
+    InsertIngredient(0,"SRP_BuildingComponentFrame_FineRamp");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_FineLPlatform");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_FineUPlatform");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_FineFlatPlatform");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_FineFlatDoublePlatform");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_FineSinglePlatform");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_FineDoublePlatform");    
+		InsertIngredient(0,"SRP_BuildingComponentFrame_FineLongDoublePlatform");    
+  
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
