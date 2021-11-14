@@ -15,6 +15,7 @@ class CfgPatches
 };
 class CfgVehicles
 {
+  class Clothing;
   class PlateCarrierHolster;
   class MilitaryBelt;
   class CivilianBelt;
@@ -162,4 +163,93 @@ class CfgVehicles
 			};
 		};
   };
+
+  
+ 	class SRP_Elbow_Knee_Pads_Green: Clothing
+	{	
+		scope=2;
+		displayName="Elbow and Knee pads";
+		descriptionShort="A pair of elbow and kneepads";
+		model="Survivalists_Mods\characters\belts\Elbowpads_Kneepads_g.p3d";
+    attachments[]={};
+		rotationFlags=16;
+		inventorySlot="Gloves";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Vest",
+			"Clothing"
+		};
+		weight=12000;
+		itemSize[]={2,3};
+		quickBarBonus=2;
+		absorbency=0;
+		heatIsolation=0.80;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Pads_Green_CO.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\Elbowpads_Kneepads_m.p3d";
+			female="Survivalists_Mods\characters\belts\Elbowpads_Kneepads_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\belts\data\Pads.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\belts\data\Pads.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\belts\data\Pads_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\belts\data\Pads_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\belts\data\Pads_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="SmershVest_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="SmershVest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+	class SRP_Elbow_Knee_Pads_Tan : SRP_Elbow_Knee_Pads_Green
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Pads_Tan_CO.paa"
+		};	
+	};
+	class SRP_Elbow_Knee_Pads_Black : SRP_Elbow_Knee_Pads_Green
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Pads_Black_CO.paa"
+		};	
+	};
 };

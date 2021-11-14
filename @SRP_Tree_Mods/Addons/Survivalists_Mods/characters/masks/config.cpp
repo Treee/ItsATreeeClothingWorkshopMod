@@ -581,6 +581,83 @@ class CfgVehicles
 		};
   };
 
+  class SRP_Ballistic_Mask: Clothing
+	{
+		scope=2;
+		displayName="Ballistic Mask";
+		descriptionShort="A metal ballistic mask";
+		model="Survivalists_Mods\characters\masks\Ballistic_Mask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyewear",
+      "Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Eyewear"
+		};
+		rotationFlags=1;
+		weight=130;
+		itemSize[]={3,2};
+		ragQuantity=1;
+		varWetMax=1;
+		heatIsolation=1;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\Ballistic_Mask_Black_CO.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\Ballistic_Mask_m.p3d";
+			female="Survivalists_Mods\characters\masks\Ballistic_Mask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\masks\data\Ballistic_Mask.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\masks\data\Ballistic_Mask.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\masks\data\Ballistic_Mask.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\masks\data\Ballistic_Mask.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\masks\data\Ballistic_Mask.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.25;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
   // ------------------------------------------ MVS Redux
 	class SRP_S10Respirator_Colorbase: GP5GasMask
 	{
