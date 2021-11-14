@@ -17,6 +17,9 @@ class CfgPatches
 class CfgVehicles
 {
   class Clothing;
+  class Container_Base;
+  class Bottle_Base;
+
   class ChestHolster;
   class PlateCarrierPouches;
   class PlateCarrierHolster;
@@ -1468,5 +1471,342 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\characters\vests\data\Tac_Tec_Black_CO.paa"
 		};	
+	};
+
+  // ===================== VEST POUCHES
+
+  class SRP_PouchBase_Small: Container_Base
+  {
+		scope=0;
+		displayName="Small Pouch Base";
+    descriptionShort="Base Pouch, How can you see this?";
+		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
+		inventorySlot[]=
+		{
+			"VestPouch"
+		};
+    weight=150;
+		itemSize[]={2,2};
+		itemsCargoSize[]={0,0};
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		allowOwnedCargoManipulation=1;
+		randomQuantity=2;
+    rotationFlags=16;
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpCourierBag_Light_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpCourierBag_SoundSet";
+					id=797;
+				};
+			};
+		};
+  };
+  class SRP_PouchBase_Large: Container_Base
+  {
+		scope=0;
+		displayName="Large Pouch Base";
+    descriptionShort="Base Pouch, How can you see this?";
+		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
+		inventorySlot[]=
+		{
+			"VestPouch"
+		};
+    weight=250;
+		itemSize[]={3,3};
+		itemsCargoSize[]={0,0};
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		allowOwnedCargoManipulation=1;
+		randomQuantity=2;
+    rotationFlags=16;
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpCourierBag_Light_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpCourierBag_SoundSet";
+					id=797;
+				};
+			};
+		};
+  };
+
+  class SRP_Small_Bottle_Tan : Bottle_Base
+	{
+		scope=2;
+		displayName="Small Bottle";
+		descriptionShort="A small drinks bottle";
+		model="Survivalists_Mods\characters\vests\SRP_Small_Bottle.p3d";
+		inventorySlot[]=
+		{
+			"Belt_Left"
+		};
+		weight=250;
+		itemSize[]={2,2};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\SRP_Small_Bottle_Tan_CO.paa"
+		};
+		varQuantityInit=1000;
+		varQuantityMin=0;
+		varQuantityMax=1000;
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		varLiquidTypeInit=512;
+		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256)";
+		isMeleeWeapon=1;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\SRP_Small_Bottle.rvmat"}},
+						{0.69999999,	{	"Survivalists_Mods\characters\vests\data\SRP_Small_Bottle.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\SRP_Small_Bottle_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Mods\characters\vests\data\SRP_Small_Bottle_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\SRP_Small_Bottle_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class Canteen_in_B
+				{
+					soundSet="Canteen_in_B_SoundSet";
+					id=202;
+				};
+				class Canteen_in_C
+				{
+					soundSet="Canteen_in_C_SoundSet";
+					id=203;
+				};
+				class WaterBottle_in_C1
+				{
+					soundSet="WaterBottle_in_C1_SoundSet";
+					id=204;
+				};
+				class Canteen_out_A
+				{
+					soundSet="Canteen_out_A_SoundSet";
+					id=205;
+				};
+				class Canteen_out_B
+				{
+					soundSet="Canteen_out_B_SoundSet";
+					id=206;
+				};
+				class WellPond_loop
+				{
+					soundSet="WellPond_loop_SoundSet";
+					id=209;
+				};
+				class WellBottle_loop
+				{
+					soundSet="WellBottle_loop_SoundSet";
+					id=210;
+				};
+			};
+		};
+	};
+
+  //---------SMALL POUCHES
+  class SRP_Map_Pouch_Tan : SRP_PouchBase_Small
+	{
+		scope=2;
+		displayName="Map Pouch";
+		descriptionShort="A single magazine pouch that holds two Pistol mags";
+		model="Survivalists_Mods\characters\vests\SRP_Map_Pouch.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\SRP_Map_Pouch_Tan_CO.paa"
+		};	
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\SRP_Map_Pouch.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\SRP_Map_Pouch.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\SRP_Map_Pouch_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\SRP_Map_Pouch_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\SRP_Map_Pouch_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Pistol_Mag_Pouch_Tan : SRP_PouchBase_Small
+	{
+		scope=2;
+		displayName="Pistol Magazine Pouch";
+		descriptionShort="A single magazine pouch that holds two Pistol mags";
+		model="Survivalists_Mods\characters\vests\SRP_Pistol_MagPouch.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch_Tan_CO.paa"
+		};	
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  //---------LARGE POUCHES
+  class SRP_IFAK_Tan : SRP_PouchBase_Large
+	{
+		scope=2;
+		displayName="IFAK Pouch";
+		descriptionShort="An Individual First Aid Kit";
+		model="Survivalists_Mods\characters\vests\SRP_IFAK_Pouch.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\SRP_IFAK_Tan_CO.paa"
+		};	
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\SRP_IFAK.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\SRP_IFAK.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\SRP_IFAK_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\SRP_IFAK_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\SRP_IFAK_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Magazine_Pouch_1_Tan : SRP_PouchBase_Large
+	{
+		scope=2;
+		displayName="Magazine Pouch";
+		descriptionShort="A single magazine pouch that holds two AR mags";
+		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1_Tan_CO.paa"
+		};	
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Empty_MagPouch_Tan : SRP_PouchBase_Large
+	{
+		scope=2;
+		displayName="Magazine Dump Pouch";
+		descriptionShort="A large bag used for empty magazines";
+		model="Survivalists_Mods\characters\vests\SRP_Empty_Mag_Pouch.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch_Tan_CO.paa"
+		};	
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch_destruct.rvmat"}}
+					};
+				};
+			};
+		};
 	};
 };

@@ -35,6 +35,11 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Staff_UnCutGem", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");  
     //Clothing
 
+    // Vest Pouches
+    pType.AddItemInHandsProfileIK("SRP_PouchBase_Small", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/canteen.anm");	
+    pType.AddItemInHandsProfileIK("SRP_PouchBase_Large", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/canteen.anm");	
+    pType.AddItemInHandsProfileIK("SRP_Small_Bottle_Tan", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/canteen.anm");	
+
     // Hats
     pType.AddItemInHandsProfileIK("SRP_HannyaMask", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
     pType.AddItemInHandsProfileIK("SRP_Ballistic_Mask", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
