@@ -552,6 +552,68 @@ class CfgSlots
 		displayName="Bellows";
     ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
 	};
+
+  class Slot_SmallPouch1
+  {
+		name="SmallPouch1";
+		displayName="Small Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SmallPouch2
+  {
+		name="SmallPouch2";
+		displayName="Small Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SmallPouch3
+  {
+		name="SmallPouch3";
+		displayName="Small Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SmallPouch4
+  {
+		name="SmallPouch4";
+		displayName="Small Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SmallPouch5
+  {
+		name="SmallPouch5";
+		displayName="Small Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SmallPouch6
+  {
+		name="SmallPouch6";
+		displayName="Small Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+
+  class Slot_LargePouch1
+  {
+		name="LargePouch1";
+		displayName="Large Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_LargePouch2
+  {
+		name="LargePouch2";
+		displayName="Large Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_LargePouch3
+  {
+		name="LargePouch3";
+		displayName="Large Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_LargePouch4
+  {
+		name="LargePouch4";
+		displayName="Large Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
 };
 
 class CfgNonAIVehicles
@@ -753,6 +815,68 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"SRP_ForgeBellows"}; // same as slot name 
     model = "Survivalists_Mods\proxy\forge_stoneadvancedbellows.p3d"; //proxy path 
+  };
+
+  class Proxysrp_smallpouch_proxy1: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SmallPouch1"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy1.p3d"; //proxy path 
+  };    
+  class Proxysrp_smallpouch_proxy2: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SmallPouch2"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy2.p3d"; //proxy path 
+  };
+  class Proxysrp_smallpouch_proxy3: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SmallPouch3"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy3.p3d"; //proxy path 
+  };
+  class Proxysrp_smallpouch_proxy4: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SmallPouch4"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy4.p3d"; //proxy path 
+  };
+  class Proxysrp_smallpouch_proxy5: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SmallPouch5"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy5.p3d"; //proxy path 
+  };
+  class Proxysrp_smallpouch_proxy6: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SmallPouch6"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy6.p3d"; //proxy path 
+  };
+
+  class Proxysrp_largepouch_proxy1: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"LargePouch1"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_largepouch_proxy1.p3d"; //proxy path 
+  };    
+  class Proxysrp_largepouch_proxy2: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"LargePouch2"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_largepouch_proxy2.p3d"; //proxy path 
+  };
+  class Proxysrp_largepouch_proxy3: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"LargePouch3"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_largepouch_proxy3.p3d"; //proxy path 
+  };
+    class Proxysrp_largepouch_proxy4: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"LargePouch4"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_largepouch_proxy4.p3d"; //proxy path 
   };
 
   class Proxysrp_comtacs: ProxyAttachment //same as p3d name

@@ -38,7 +38,7 @@ class CfgVehicles
 		scope=0;
 		displayName="Wooden Building Component";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_all.p3d";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";
 		slopeTolerance=0.30000001;
 		weight=1000;
 		itemBehaviour=0;

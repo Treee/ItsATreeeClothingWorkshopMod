@@ -649,7 +649,17 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\vests\Light_Ratnik_g.p3d";
 		attachments[]=
 		{
-			"patch_01"
+			"patch_01",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
 		};
 		inventorySlot="Vest";
 		simulation="clothing";
@@ -758,6 +768,37 @@ class CfgVehicles
 						damage=0.25999999;
 					};
 				};
+			};
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class SmallPouches
+			{
+				name="Small Pouches";
+				description="Attach small pouches.";
+				attachmentSlots[]=
+				{
+          "SmallPouch1",
+          "SmallPouch2",
+          "SmallPouch3",
+          "SmallPouch4",
+          "SmallPouch5",
+          "SmallPouch6"
+				};
+		    ghostIcon="set:dayz_inventory image:vestpouches";
+			};
+			class LargePouches
+			{
+				name="Large Pouches";
+				description="Attach large pouches";
+				attachmentSlots[]=
+				{
+          "LargePouch1",
+          "LargePouch2",
+          "LargePouch3",
+          "LargePouch4",
+				};
+		    ghostIcon="set:dayz_inventory image:missing";
 			};
 		};
 		class AnimEvents
@@ -1483,7 +1524,13 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
 		inventorySlot[]=
 		{
-			"VestPouch"
+			"VestPouch",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
 		};
     weight=150;
 		itemSize[]={2,2};
@@ -1522,7 +1569,11 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
 		inventorySlot[]=
 		{
-			"VestPouch"
+			"VestPouch",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
 		};
     weight=250;
 		itemSize[]={3,3};
