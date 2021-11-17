@@ -342,7 +342,7 @@ class CfgVehicles
 		itemSize[]={5,5};
 		quickBarBonus=2;
 		absorbency=0;
-    itemBehaviour=0;
+    itemBehaviour=2;
 		heatIsolation=0.80;
 		repairableWithKits[]={3};
 		repairCosts[]={25};
@@ -499,7 +499,7 @@ class CfgVehicles
 		};
 		weight=15000;
 		itemSize[]={7,7};
-		itemBehaviour=2;
+		itemBehaviour=0;
 		quickBarBonus=2;
 		absorbency=0;
 		heatIsolation=0.80;
@@ -772,10 +772,22 @@ class CfgVehicles
 		};
     class GUIInventoryAttachmentsProps
 		{
+      class Attachments
+			{
+				name="Accessories";
+				description="";
+				attachmentSlots[]=
+				{
+					"patch_01",
+				};
+        icon="set:dayz_inventory image:missing";
+				view_index=1;
+			};
 			class SmallPouches
 			{
 				name="Small Pouches";
 				description="Attach small pouches.";
+        icon="set:dayz_inventory image:missing";
 				attachmentSlots[]=
 				{
           "SmallPouch1",
@@ -785,12 +797,12 @@ class CfgVehicles
           "SmallPouch5",
           "SmallPouch6"
 				};
-		    ghostIcon="set:dayz_inventory image:vestpouches";
 			};
 			class LargePouches
 			{
 				name="Large Pouches";
 				description="Attach large pouches";
+		    icon="set:dayz_inventory image:vestpouches";		    
 				attachmentSlots[]=
 				{
           "LargePouch1",
@@ -798,7 +810,6 @@ class CfgVehicles
           "LargePouch3",
           "LargePouch4",
 				};
-		    ghostIcon="set:dayz_inventory image:missing";
 			};
 		};
 		class AnimEvents
@@ -853,7 +864,7 @@ class CfgVehicles
     weight=12000;
 		itemSize[]={4,4};
 		absorbency=0;
-    itemBehaviour=0;
+    itemBehaviour=2;
 		heatIsolation=0.80;
 		repairableWithKits[]={3};
 		repairCosts[]={25};
@@ -926,7 +937,7 @@ class CfgVehicles
 		weight=12000;
 		quickBarBonus=2;
 		absorbency=0;
-    itemBehaviour=0;
+    itemBehaviour=2;
 		heatIsolation=0.80;
 		repairableWithKits[]={3};
 		repairCosts[]={25};
@@ -1078,7 +1089,7 @@ class CfgVehicles
 		weight=12000;
 		quickBarBonus=2;
 		absorbency=0;
-    itemBehaviour=0;
+    itemBehaviour=2;
 		heatIsolation=0.80;
 		repairableWithKits[]={3};
 		repairCosts[]={25};
@@ -1230,7 +1241,7 @@ class CfgVehicles
 		weight=12000;
 		quickBarBonus=2;
 		absorbency=0;
-    itemBehaviour=0;
+    itemBehaviour=2;
 		heatIsolation=0.80;
 		repairableWithKits[]={3};
 		repairCosts[]={25};
@@ -1381,7 +1392,7 @@ class CfgVehicles
 		weight=12000;
 		quickBarBonus=2;
 		absorbency=0;
-    itemBehaviour=0;
+    itemBehaviour=2;
 		heatIsolation=0.80;
 		repairableWithKits[]={3};
 		repairCosts[]={25};
