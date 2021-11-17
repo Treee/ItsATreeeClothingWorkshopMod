@@ -190,7 +190,8 @@ class CfgVehicles
 		repairCosts[]={25};
 		hiddenSelections[]=
 		{
-			"zbytek"
+			"zbytek",
+      "personality"
 		};
 		hiddenSelectionsTextures[]=
 		{

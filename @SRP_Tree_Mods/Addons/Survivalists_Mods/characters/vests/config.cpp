@@ -488,8 +488,21 @@ class CfgVehicles
 		displayName="Full Ratnik";
 		descriptionShort="A fully kitted out ratnik vest";
 		model="Survivalists_Mods\characters\vests\Ratnik_g.p3d";
-    attachments[]={};
-		inventorySlot="Vest";
+		attachments[]=
+		{
+			"patch_01",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+		};
+    inventorySlot="Vest";
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -596,6 +609,48 @@ class CfgVehicles
 					{
 						damage=0.125;
 					};
+				};
+			};
+		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Attachments
+			{
+				name="Accessories";
+				description="";
+				attachmentSlots[]=
+				{
+					"patch_01",
+				};
+        icon="set:dayz_inventory image:missing";
+				view_index=1;
+			};
+			class SmallPouches
+			{
+				name="Small Pouches";
+				description="Attach small pouches.";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "SmallPouch1",
+          "SmallPouch2",
+          "SmallPouch3",
+          "SmallPouch4",
+          "SmallPouch5",
+          "SmallPouch6"
+				};
+			};
+			class LargePouches
+			{
+				name="Large Pouches";
+				description="Attach large pouches";
+		    icon="set:dayz_inventory image:vestpouches";		    
+				attachmentSlots[]=
+				{
+          "LargePouch1",
+          "LargePouch2",
+          "LargePouch3",
+          "LargePouch4",
 				};
 			};
 		};
@@ -1076,8 +1131,21 @@ class CfgVehicles
 		displayName="6B45 vest";
 		descriptionShort="A 6B45 armored vest vest";
 		model="Survivalists_Mods\characters\vests\Army_Vest_2_g.p3d";
-    attachments[]={};
-		inventorySlot="Vest";
+		attachments[]=
+		{
+			"patch_01",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+		};
+    inventorySlot="Vest";
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1184,6 +1252,48 @@ class CfgVehicles
 					{
 						damage=0.25;
 					};
+				};
+			};
+		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Attachments
+			{
+				name="Accessories";
+				description="";
+				attachmentSlots[]=
+				{
+					"patch_01",
+				};
+        icon="set:dayz_inventory image:missing";
+				view_index=1;
+			};
+			class SmallPouches
+			{
+				name="Small Pouches";
+				description="Attach small pouches.";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "SmallPouch1",
+          "SmallPouch2",
+          "SmallPouch3",
+          "SmallPouch4",
+          "SmallPouch5",
+          "SmallPouch6"
+				};
+			};
+			class LargePouches
+			{
+				name="Large Pouches";
+				description="Attach large pouches";
+		    icon="set:dayz_inventory image:vestpouches";		    
+				attachmentSlots[]=
+				{
+          "LargePouch1",
+          "LargePouch2",
+          "LargePouch3",
+          "LargePouch4",
 				};
 			};
 		};

@@ -556,62 +556,62 @@ class CfgSlots
   class Slot_SmallPouch1
   {
 		name="SmallPouch1";
-		displayName="Small Pouch";
+		displayName="Small Pouch 1";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch2
   {
 		name="SmallPouch2";
-		displayName="Small Pouch";
+		displayName="Small Pouch 2";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch3
   {
 		name="SmallPouch3";
-		displayName="Small Pouch";
+		displayName="Small Pouch 3";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch4
   {
 		name="SmallPouch4";
-		displayName="Small Pouch";
+		displayName="Small Pouch 4";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch5
   {
 		name="SmallPouch5";
-		displayName="Small Pouch";
+		displayName="Small Pouch 5";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch6
   {
 		name="SmallPouch6";
-		displayName="Small Pouch";
+		displayName="Small Pouch 6";
 		ghostIcon="set:dayz_inventory image:missing";
   }
 
   class Slot_LargePouch1
   {
 		name="LargePouch1";
-		displayName="Large Pouch";
+		displayName="Large Pouch 1";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_LargePouch2
   {
 		name="LargePouch2";
-		displayName="Large Pouch";
+		displayName="Large Pouch 2";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_LargePouch3
   {
 		name="LargePouch3";
-		displayName="Large Pouch";
+		displayName="Large Pouch 3";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_LargePouch4
   {
 		name="LargePouch4";
-		displayName="Large Pouch";
+		displayName="Large Pouch 4";
 		ghostIcon="set:dayz_inventory image:missing";
   }
 };
