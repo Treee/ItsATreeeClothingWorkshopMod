@@ -19,7 +19,7 @@ class CfgVehicles
 
   // -------------------------- CUSTOM STUFF
 
-  //------------------------------ FLAG PPATCHES
+  //------------------------------ FLAG PATCHES
 	class SRP_PatchFlag_ColorBase: Clothing
 	{
 		scope=0;
@@ -34,7 +34,8 @@ class CfgVehicles
       "patch_01",
       "patch_02",
       "patch_03",
-      "patch_04"
+      "patch_04",
+      "SRP_Patch"
     };
 		hiddenSelections[]=
     {
@@ -2159,7 +2160,8 @@ class CfgVehicles
       "patch_01",
       "patch_02",
       "patch_03",
-      "patch_04"
+      "patch_04",
+      "SRP_Patch"
     };
 		hiddenSelections[]=
     {

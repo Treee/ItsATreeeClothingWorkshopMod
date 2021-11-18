@@ -553,6 +553,13 @@ class CfgSlots
     ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
 	};
 
+  class Slot_SRP_Patch
+  {
+		name="SRP_Patch";
+		displayName="Flag Patch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+
   class Slot_SmallPouch1
   {
 		name="SmallPouch1";
@@ -817,6 +824,12 @@ class CfgNonAIVehicles
     model = "Survivalists_Mods\proxy\forge_stoneadvancedbellows.p3d"; //proxy path 
   };
 
+  class Proxysrp_patch_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_Patch"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_patch_proxy.p3d"; //proxy path 
+  }; 
   class Proxysrp_smallpouch_proxy1: ProxyAttachment //same as p3d name
   {
     scope = 2;

@@ -329,8 +329,21 @@ class CfgVehicles
 		displayName="Tactical Vest";
 		descriptionShort="A Tactical vest";
 		model="Survivalists_Mods\characters\vests\Tac_Vest_g.p3d";
-		attachments[]={};
-		inventorySlot="Vest";
+		attachments[]=
+		{
+			"SRP_Patch",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+		};
+    inventorySlot="Vest";
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -440,6 +453,48 @@ class CfgVehicles
 				};
 			};
 		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Attachments
+			{
+				name="Accessories";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_Patch",
+				};
+        icon="set:dayz_inventory image:missing";
+				view_index=1;
+			};
+			class SmallPouches
+			{
+				name="Small Pouches";
+				description="Attach small pouches.";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "SmallPouch1",
+          "SmallPouch2",
+          "SmallPouch3",
+          "SmallPouch4",
+          "SmallPouch5",
+          "SmallPouch6"
+				};
+			};
+			class LargePouches
+			{
+				name="Large Pouches";
+				description="Attach large pouches";
+		    icon="set:dayz_inventory image:vestpouches";		    
+				attachmentSlots[]=
+				{
+          "LargePouch1",
+          "LargePouch2",
+          "LargePouch3",
+          "LargePouch4",
+				};
+			};
+		};
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -490,7 +545,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\vests\Ratnik_g.p3d";
 		attachments[]=
 		{
-			"patch_01",
+			"SRP_Patch",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
@@ -620,7 +675,7 @@ class CfgVehicles
 				description="";
 				attachmentSlots[]=
 				{
-					"patch_01",
+					"SRP_Patch",
 				};
         icon="set:dayz_inventory image:missing";
 				view_index=1;
@@ -704,7 +759,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\vests\Light_Ratnik_g.p3d";
 		attachments[]=
 		{
-			"patch_01",
+			"SRP_Patch",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
@@ -833,7 +888,7 @@ class CfgVehicles
 				description="";
 				attachmentSlots[]=
 				{
-					"patch_01",
+					"SRP_Patch",
 				};
         icon="set:dayz_inventory image:missing";
 				view_index=1;
@@ -907,8 +962,21 @@ class CfgVehicles
 		displayName="Chest Rig";
 		descriptionShort="A high capacity chest rig";
 		model="Survivalists_Mods\characters\vests\ChestRig_g.p3d";
-		attachments[]={};		
-		inventorySlot[]={"Vest"};
+		attachments[]=
+		{
+			"SRP_Patch",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+		};
+    inventorySlot[]={"Vest"};
     simulation="clothing";
 		vehicleClass="Clothing";
     itemInfo[]=
@@ -954,7 +1022,49 @@ class CfgVehicles
           };
 				};
 			};
-		};		
+		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Attachments
+			{
+				name="Accessories";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_Patch",
+				};
+        icon="set:dayz_inventory image:missing";
+				view_index=1;
+			};
+			class SmallPouches
+			{
+				name="Small Pouches";
+				description="Attach small pouches.";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "SmallPouch1",
+          "SmallPouch2",
+          "SmallPouch3",
+          "SmallPouch4",
+          "SmallPouch5",
+          "SmallPouch6"
+				};
+			};
+			class LargePouches
+			{
+				name="Large Pouches";
+				description="Attach large pouches";
+		    icon="set:dayz_inventory image:vestpouches";		    
+				attachmentSlots[]=
+				{
+          "LargePouch1",
+          "LargePouch2",
+          "LargePouch3",
+          "LargePouch4",
+				};
+			};
+		};
 	};
 	class SRP_Chestrig_Tan: SRP_Chestrig_Green
 	{
@@ -979,8 +1089,21 @@ class CfgVehicles
 		displayName="Light Armored Vest";
 		descriptionShort="A light weight armored vest";
 		model="Survivalists_Mods\characters\vests\Army_Vest_1_g.p3d";
-    attachments[]={};
-		inventorySlot="Vest";
+		attachments[]=
+		{
+			"SRP_Patch",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+		};
+    inventorySlot="Vest";
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1090,6 +1213,48 @@ class CfgVehicles
 				};
 			};
 		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Attachments
+			{
+				name="Accessories";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_Patch",
+				};
+        icon="set:dayz_inventory image:missing";
+				view_index=1;
+			};
+			class SmallPouches
+			{
+				name="Small Pouches";
+				description="Attach small pouches.";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "SmallPouch1",
+          "SmallPouch2",
+          "SmallPouch3",
+          "SmallPouch4",
+          "SmallPouch5",
+          "SmallPouch6"
+				};
+			};
+			class LargePouches
+			{
+				name="Large Pouches";
+				description="Attach large pouches";
+		    icon="set:dayz_inventory image:vestpouches";		    
+				attachmentSlots[]=
+				{
+          "LargePouch1",
+          "LargePouch2",
+          "LargePouch3",
+          "LargePouch4",
+				};
+			};
+		};
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -1106,7 +1271,6 @@ class CfgVehicles
 				};
 			};
 		};
-
 	};
 	class SRP_Army_Vest_1_Black: SRP_Army_Vest_1_Green
 	{
@@ -1133,7 +1297,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\vests\Army_Vest_2_g.p3d";
 		attachments[]=
 		{
-			"patch_01",
+			"SRP_Patch",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
@@ -1263,7 +1427,7 @@ class CfgVehicles
 				description="";
 				attachmentSlots[]=
 				{
-					"patch_01",
+					"SRP_Patch",
 				};
         icon="set:dayz_inventory image:missing";
 				view_index=1;
@@ -1338,8 +1502,21 @@ class CfgVehicles
 		displayName="JPC Vest";
 		descriptionShort="A JPC vest";
 		model="Survivalists_Mods\characters\vests\JPC_Vest_g.p3d";
-    attachments[]={};
-		inventorySlot="Vest";
+		attachments[]=
+		{
+			"SRP_Patch",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+		};
+    inventorySlot="Vest";
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1449,6 +1626,48 @@ class CfgVehicles
 				};
 			};
 		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Attachments
+			{
+				name="Accessories";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_Patch",
+				};
+        icon="set:dayz_inventory image:missing";
+				view_index=1;
+			};
+			class SmallPouches
+			{
+				name="Small Pouches";
+				description="Attach small pouches.";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "SmallPouch1",
+          "SmallPouch2",
+          "SmallPouch3",
+          "SmallPouch4",
+          "SmallPouch5",
+          "SmallPouch6"
+				};
+			};
+			class LargePouches
+			{
+				name="Large Pouches";
+				description="Attach large pouches";
+		    icon="set:dayz_inventory image:vestpouches";		    
+				attachmentSlots[]=
+				{
+          "LargePouch1",
+          "LargePouch2",
+          "LargePouch3",
+          "LargePouch4",
+				};
+			};
+		};
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -1489,8 +1708,21 @@ class CfgVehicles
 		displayName="Tac-Tec Vest";
 		descriptionShort="A Tac-Tec vest";
 		model="Survivalists_Mods\characters\vests\Tac_Tec_Vest_g.p3d";
-    attachments[]={};
-		inventorySlot="Vest";
+		attachments[]=
+		{
+			"SRP_Patch",
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+		};
+    inventorySlot="Vest";
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemSize[]={5,5};
@@ -1600,6 +1832,48 @@ class CfgVehicles
 				};
 			};
 		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Attachments
+			{
+				name="Accessories";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_Patch",
+				};
+        icon="set:dayz_inventory image:missing";
+				view_index=1;
+			};
+			class SmallPouches
+			{
+				name="Small Pouches";
+				description="Attach small pouches.";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "SmallPouch1",
+          "SmallPouch2",
+          "SmallPouch3",
+          "SmallPouch4",
+          "SmallPouch5",
+          "SmallPouch6"
+				};
+			};
+			class LargePouches
+			{
+				name="Large Pouches";
+				description="Attach large pouches";
+		    icon="set:dayz_inventory image:vestpouches";		    
+				attachmentSlots[]=
+				{
+          "LargePouch1",
+          "LargePouch2",
+          "LargePouch3",
+          "LargePouch4",
+				};
+			};
+		};
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -1616,7 +1890,6 @@ class CfgVehicles
 				};
 			};
 		};
-
 	};
 	class SRP_Tac_Tec_Vest_Tan: SRP_Tac_Tec_Vest_Green
 	{
