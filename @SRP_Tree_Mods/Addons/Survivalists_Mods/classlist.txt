@@ -1390,3 +1390,5 @@ SRP_BuildingComponentFrame_FineLongDoublePlatform_Kit
 SRP_BuildingComponentFrame_FineLongDoublePlatform
 
 //========================================
+SRP_PlatHoodie
+SRP_PlatHoodie_Wolfbeard
