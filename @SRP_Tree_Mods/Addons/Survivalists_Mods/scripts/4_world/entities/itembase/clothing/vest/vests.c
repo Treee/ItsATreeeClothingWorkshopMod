@@ -22,15 +22,15 @@ class SRP_ModularVest_Base extends Clothing
       {
         alternatePouch = FindAttachmentBySlotName("LargePouch1");
       }
-      if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch3"))
+      else if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch3"))
       {
         alternatePouch = FindAttachmentBySlotName("LargePouch2");
       }
-      if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch4"))
+      else if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch4"))
       {
         alternatePouch = FindAttachmentBySlotName("LargePouch3");
       }
-      if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch6"))
+      else if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch6"))
       {
         alternatePouch = FindAttachmentBySlotName("LargePouch4");
       }
@@ -42,15 +42,15 @@ class SRP_ModularVest_Base extends Clothing
       {
         alternatePouch = FindAttachmentBySlotName("SmallPouch1");
       }
-      if (slotId == InventorySlots.GetSlotIdFromString("LargePouch2"))
+      else if (slotId == InventorySlots.GetSlotIdFromString("LargePouch2"))
       {
         alternatePouch = FindAttachmentBySlotName("SmallPouch3");
       }
-      if (slotId == InventorySlots.GetSlotIdFromString("LargePouch3"))
+      else if (slotId == InventorySlots.GetSlotIdFromString("LargePouch3"))
       {
         alternatePouch = FindAttachmentBySlotName("SmallPouch4");
       }
-      if (slotId == InventorySlots.GetSlotIdFromString("LargePouch4"))
+      else if (slotId == InventorySlots.GetSlotIdFromString("LargePouch4"))
       {
         alternatePouch = FindAttachmentBySlotName("SmallPouch6");
       }
