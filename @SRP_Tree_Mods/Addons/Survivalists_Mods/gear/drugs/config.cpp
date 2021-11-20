@@ -481,7 +481,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Small Jar of Blue Crystals";
-		descriptionShort="This jar contains a few small blue crystals.";
+		descriptionShort="This jar contains a few small blue crystals. Do not force consumption (Photosensitivity warning).";
 		model="\dz\gear\food\Honey.p3d";	
     color="MethSmall";
 		itemSize[]={2,1};
@@ -501,7 +501,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Small Jar of Blue Crystals";
-		descriptionShort="This jar contains a few small blue crystals.";
+		descriptionShort="This jar contains a few small blue crystals. Do not force consumption (Photosensitivity warning).";
 		model="\dz\gear\food\Honey.p3d";	
     color="MethSmallTainted";
 		itemSize[]={2,1};
@@ -572,7 +572,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Jar of Bath Salts (Photosensitivity Warning!!)";
-		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Consuming these shows you have no regard for your life.";
+		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Consuming these shows you have no regard for your life. Do not force consumption (Photosensitivity warning).";
 		model="\dz\gear\food\Honey.p3d";
     color="BathSalts";
 		itemSize[]={2,2};
@@ -601,7 +601,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Jar of Bath Salts (Photosensitivity Warning!!)";
-		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Consuming these shows you have no regard for your life.";
+		descriptionShort="(Photosensitivity Warning!!) This jar contains many delicous bath salts. Consuming these shows you have no regard for your life. Do not force consumption (Photosensitivity warning).";
 		model="\dz\gear\food\Honey.p3d";
     color="BathSaltsTainted";
 		itemSize[]={2,2};
@@ -632,7 +632,7 @@ class CfgVehicles
   {
     scope=2;
 		displayName="Smiley Acid (Photosensitivity warning)";
-		descriptionShort="(Photosensitivity warning) Time to go on a road trip. Put on a smile.";
+		descriptionShort="(Photosensitivity warning) Time to go on a road trip. Put on a smile. Do not force consumption (Photosensitivity warning).";
 		model="\dz\gear\consumables\Paper.p3d";
     color="SmileyAcid";    
     rotationFlags=16;
@@ -681,7 +681,7 @@ class CfgVehicles
   {
     scope=2;
 		displayName="Smiley Acid (Photosensitivity warning)";
-		descriptionShort="(Photosensitivity warning) Time to go on a road trip. Put on a smile.";
+		descriptionShort="(Photosensitivity warning) Time to go on a road trip. Put on a smile. Do not force consumption (Photosensitivity warning).";
 		model="\dz\gear\consumables\Paper.p3d";
     color="SmileyAcidTainted";    
     rotationFlags=16;
@@ -739,7 +739,7 @@ class CfgVehicles
   {
     scope=2;
 		displayName="Skull Acid (Photosensitivity warning)";
-		descriptionShort="(Photosensitivity warning) Time to go on a road trip. Hold on. (Photosensitivity warning)";
+		descriptionShort="(Photosensitivity warning) Time to go on a road trip. Hold on. (Photosensitivity warning). Do not force consumption (Photosensitivity warning).";
 		model="\dz\gear\consumables\Paper.p3d";
     color="SkullAcid";    
     rotationFlags=16;
@@ -788,7 +788,7 @@ class CfgVehicles
   {
     scope=2;
 		displayName="Skull Acid (Photosensitivity warning)";
-		descriptionShort="(Photosensitivity warning) Time to go on a road trip. Hold on. (Photosensitivity warning)";
+		descriptionShort="(Photosensitivity warning) Time to go on a road trip. Hold on. (Photosensitivity warning). Do not force consumption (Photosensitivity warning).";
 		model="\dz\gear\consumables\Paper.p3d";
     color="SkullAcidTainted";    
     rotationFlags=16;
