@@ -1394,3 +1394,5 @@ SRP_PlatHoodie
 SRP_PlatHoodie_Wolfbeard
 SRP_SnakeDagger
 SRP_SnakeDagger_Arbiters
+
+SRP_DrugTestKit

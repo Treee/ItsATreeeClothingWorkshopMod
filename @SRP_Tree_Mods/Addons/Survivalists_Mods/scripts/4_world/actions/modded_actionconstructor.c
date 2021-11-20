@@ -14,6 +14,9 @@ modded class ActionConstructor
     actions.Insert(ActionTeleportToEvent);
     actions.Insert(ActionTeleportAwayFromEvent);
 
+    actions.Insert(ActionTestDrugsTarget);
+    actions.Insert(ActionTestDrugsSelf);
+
     // Smoking
     actions.Insert(ActionSmokeSRPSmokableSelf);
     actions.Insert(ActionForceSmokeSRPSmokable);

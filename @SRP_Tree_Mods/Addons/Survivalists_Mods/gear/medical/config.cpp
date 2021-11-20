@@ -24,7 +24,8 @@ class CfgVehicles
   class ClearSyringe;
   class InjectionVial;
   class Epinephrine;
-  
+  class BloodTestKit;
+
   class SRP_KitBase;
 
 
@@ -764,6 +765,11 @@ class CfgVehicles
 		itemSize[]={1,2};
 		weight=60;
     inventorySlot[]={};
+  }
+
+  class SRP_DrugTestKit: BloodTestKit
+  {
+    scope=2;
   }
 
   //--------------------------------- CUSTOM SYRINE INJECTIONS
