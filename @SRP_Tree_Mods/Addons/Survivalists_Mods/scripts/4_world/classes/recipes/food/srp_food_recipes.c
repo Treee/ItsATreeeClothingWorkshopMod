@@ -603,6 +603,7 @@ class SRP_CanRawGoods extends RecipeBase
 		
 		//ingredient 1  
 		InsertIngredient(0,"SRP_AdvancedWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(0,"Pliers");//you can insert multiple ingredients this way
     
 
 		m_IngredientAddHealth[0] = 0;	// -1 = do nothing
