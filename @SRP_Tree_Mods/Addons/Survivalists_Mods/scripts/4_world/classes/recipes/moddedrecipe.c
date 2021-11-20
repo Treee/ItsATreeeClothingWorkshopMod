@@ -14,7 +14,8 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit_BuildingFrame);
-    
+    RegisterRecipe(new Deconstruct_IntermediaryObjectKit_StreetSign);     
+
     // Sneaky Stash Replacement
     RegisterRecipe(new SRP_Craft_BedSmall);
     RegisterRecipe(new SRP_Craft_BedMetal);
@@ -70,6 +71,7 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new Craft_SRP_RefillGasMaskFilter);
 
     // Mining
+		RegisterRecipe(new Craft_SRP_CrushLargeStone_CrudeTool);
 		RegisterRecipe(new Craft_SRP_CrushStoneChunk_CrudeTool);
 		RegisterRecipe(new Craft_SRP_RefineUnCutGem_CrudeTool);
 		RegisterRecipe(new Craft_SRP_BagOfStones);
@@ -173,6 +175,22 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new SRP_CraftBuildingComponentFrameFineWornSinglePlatformKit);
     RegisterRecipe(new SRP_CraftBuildingComponentFrameFineWornDoublePlatformKit);
     RegisterRecipe(new SRP_CraftBuildingComponentFrameFineFlatDoublePlatformKit);
+
+    // Signs
+    RegisterRecipe(new SRP_CraftStreetSignKit);
+    RegisterRecipe(new SRP_CraftStreetSignKitCaution);
+    RegisterRecipe(new SRP_CraftStreetSignKitNoSmoking);
+    RegisterRecipe(new SRP_CraftStreetSignKitYield);
+    RegisterRecipe(new SRP_CraftStreetSignKitPedestrians);
+    RegisterRecipe(new SRP_CraftStreetSignKitNoBikes);
+    RegisterRecipe(new SRP_CraftStreetSignKitNoLeftTurn);
+    RegisterRecipe(new SRP_CraftStreetSignKitSpeedLimit);
+    RegisterRecipe(new SRP_CraftStreetSignKitBikePath);
+    RegisterRecipe(new SRP_CraftStreetSignKitOneWay);
+    RegisterRecipe(new SRP_CraftStreetSignKitHandicapSmall);
+    RegisterRecipe(new SRP_CraftStreetSignKitHandicap);
+    RegisterRecipe(new SRP_CraftStreetSignKitNoParking);
+    RegisterRecipe(new SRP_CraftStreetSignKitHighway);
 
     // Food Recipes	
     RegisterRecipe(new SRP_CreateVeggiesMeatComboCanned_Raw);		

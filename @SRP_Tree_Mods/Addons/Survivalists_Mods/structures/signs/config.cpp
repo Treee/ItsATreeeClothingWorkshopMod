@@ -978,6 +978,13 @@ class CfgVehicles
 	};
 
   //====================================== Street Signs
+  class SRP_StreetSign_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Street Sign Kit";
+		descriptionShort="A Street Sign Kit";
+	};
+
   class SRP_StreetSign_Base: Container_Base 
   {
     scope=2;
