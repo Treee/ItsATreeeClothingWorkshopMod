@@ -684,6 +684,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Wooden Bridge Pack" (https://skfb.ly/o6JnV) by padmadev_designs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Dagger" (https://skfb.ly/68Zuu) by Alexey is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference

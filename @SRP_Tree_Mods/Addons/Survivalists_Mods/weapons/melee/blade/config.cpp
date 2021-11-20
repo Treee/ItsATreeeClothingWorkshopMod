@@ -112,8 +112,9 @@ class CfgAmmo
 class CfgVehicles
 {
   class Inventory_Base;
+  class HuntingKnife;
 
-  class SRP_Trenchknife: Inventory_Base
+  class SRP_Trenchknife: HuntingKnife
   {
 		scope=2;
 		displayName="Trenchknife";
@@ -141,26 +142,6 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]= {
 			"Survivalists_Mods\weapons\melee\blade\data\trenchknife.rvmat"
 		};
-		class MeleeModes
-		{
-			class Default
-			{
-        action="MeleeAttack%d";
-        ammo="MeleeLightBlunt";
-        range=1.2;
-        actionSounds="action_punch";
-			};
-			class Heavy
-			{
-				ammo="MeleeKnife_Heavy";
-				range=1.2;
-			};
-			class Sprint
-			{
-				ammo="MeleeKnife_Heavy";
-				range=3.3;
-			};
-		};    
     class DamageSystem
 		{
 			class GlobalHealth
@@ -200,6 +181,84 @@ class CfgVehicles
           class Shock{damage=0;};
 				};
 			};
+		};
+  };
+
+  class SRP_SnakeDagger: HuntingKnife
+  {
+		scope=2;
+		displayName="Snake Dagger";
+		descriptionShort="An ornate dagger.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_snakedagger.p3d";
+    inventorySlot[]=
+		{
+			"Knife"
+		};
+    repairableWithKits[]={4};
+		repairCosts[]={10};
+		RestrainUnlockType=1;
+		canSkinBodies=1;
+		weight=200;
+    varTemperatureMax=100;
+    itemSize[]={1,3};
+		lootCategory="Tools";
+		openItemSpillRange[]={10,20};
+    isMeleeWeapon=1;
+		suicideAnim="onehanded";
+		hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger_co.paa"
+		};
+		hiddenSelectionsMaterials[]= {
+			"Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger.rvmat"
+		};  
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+  };
+
+  class SRP_SnakeDagger_Arbiters: SRP_SnakeDagger
+  {
+		scope=2;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger_arbiters_co.paa"
 		};
   };
 
