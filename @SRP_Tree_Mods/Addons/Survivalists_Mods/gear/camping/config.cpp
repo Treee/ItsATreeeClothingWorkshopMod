@@ -1566,8 +1566,830 @@ class CfgVehicles
 		physLayer="item_small";
 	};
 
+  //----------------------------------- Playing/Trading Cards
+  class SRP_DeckOfCards: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Deck of cards";
+		descriptionShort="A container for multiple cards.";
+		model="Survivalists_Mods\gear\camping\srp_deckofcards.p3d";
+    color="base";
+		weight=250;
+		itemSize[]={2,2};
+		absorbency=0.30000001;
+		physLayer="item_small";
+    attachments[]=
+		{
+			"Card2Spade",
+			"Card3Spade",
+			"Card4Spade",
+			"Card5Spade",
+			"Card6Spade",
+			"Card7Spade",
+			"Card8Spade",
+			"Card9Spade",
+			"Card10Spade",
+			"CardJackSpade",
+			"CardQueenSpade",
+			"CardKingSpade",
+			"CardAceSpade",
+      "Card2Club",
+			"Card3Club",
+			"Card4Club",
+			"Card5Club",
+			"Card6Club",
+			"Card7Club",
+			"Card8Club",
+			"Card9Club",
+			"Card10Club",
+			"CardJackClub",
+			"CardQueenClub",
+			"CardKingClub",
+			"CardAceClub",
+      "Card2Heart",
+			"Card3Heart",
+			"Card4Heart",
+			"Card5Heart",
+			"Card6Heart",
+			"Card7Heart",
+			"Card8Heart",
+			"Card9Heart",
+			"Card10Heart",
+			"CardJackHeart",
+			"CardQueenHeart",
+			"CardKingHeart",
+			"CardAceHeart",
+      "Card2Diamond",
+			"Card3Diamond",
+			"Card4Diamond",
+			"Card5Diamond",
+			"Card6Diamond",
+			"Card7Diamond",
+			"Card8Diamond",
+			"Card9Diamond",
+			"Card10Diamond",
+			"CardJackDiamond",
+			"CardQueenDiamond",
+			"CardKingDiamond",
+			"CardAceDiamond",
+		};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_deckofcards_co.paa"
+    };
+    class GUIInventoryAttachmentsProps
+		{
+      class Spades
+			{
+				name="Spades";
+				description="For spades";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "Card2Spade",
+          "Card3Spade",
+          "Card4Spade",
+          "Card5Spade",
+          "Card6Spade",
+          "Card7Spade",
+          "Card8Spade",
+          "Card9Spade",
+          "Card10Spade",
+          "CardJackSpade",
+          "CardQueenSpade",
+          "CardKingSpade",
+          "CardAceSpade"
+				};				
+			};
+			class Clubs
+			{
+				name="Club";
+				description="For clubs";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "Card2Club",
+          "Card3Club",
+          "Card4Club",
+          "Card5Club",
+          "Card6Club",
+          "Card7Club",
+          "Card8Club",
+          "Card9Club",
+          "Card10Club",
+          "CardJackClub",
+          "CardQueenClub",
+          "CardKingClub",
+          "CardAceClub"
+				};
+			};
+			class Hearts
+			{
+				name="Hearts";
+				description="For hearts";
+		    icon="set:dayz_inventory image:missing";		    
+				attachmentSlots[]=
+				{
+          "Card2Heart",
+          "Card3Heart",
+          "Card4Heart",
+          "Card5Heart",
+          "Card6Heart",
+          "Card7Heart",
+          "Card8Heart",
+          "Card9Heart",
+          "Card10Heart",
+          "CardJackHeart",
+          "CardQueenHeart",
+          "CardKingHeart",
+          "CardAceHeart"
+				};
+			};
+      class Diamonds
+			{
+				name="Diamonds";
+				description="For diamonds";
+		    icon="set:dayz_inventory image:missing";		    
+				attachmentSlots[]=
+				{
+          "Card2Diamond",
+          "Card3Diamond",
+          "Card4Diamond",
+          "Card5Diamond",
+          "Card6Diamond",
+          "Card7Diamond",
+          "Card8Diamond",
+          "Card9Diamond",
+          "Card10Diamond",
+          "CardJackDiamond",
+          "CardQueenDiamond",
+          "CardKingDiamond",
+          "CardAceDiamond"
+				};
+			};
+		};
+	};
+
+  class SRP_PlayingCard_ColorBase: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Playing Card Base";
+		descriptionShort="A small card.";
+		model="Survivalists_Mods\gear\camping\srp_playingcard.p3d";
+    color="base";
+		weight=250;
+		itemSize[]={1,1};
+		absorbency=0.30000001;
+		physLayer="item_small";
+    inventorySlot[]=
+    {
+			"Card2Spade",
+			"Card3Spade",
+			"Card4Spade",
+			"Card5Spade",
+			"Card6Spade",
+			"Card7Spade",
+			"Card8Spade",
+			"Card9Spade",
+			"Card10Spade",
+			"CardJackSpade",
+			"CardQueenSpade",
+			"CardKingSpade",
+			"CardAceSpade",
+      "Card2Club",
+			"Card3Club",
+			"Card4Club",
+			"Card5Club",
+			"Card6Club",
+			"Card7Club",
+			"Card8Club",
+			"Card9Club",
+			"Card10Club",
+			"CardJackClub",
+			"CardQueenClub",
+			"CardKingClub",
+			"CardAceClub",
+      "Card2Heart",
+			"Card3Heart",
+			"Card4Heart",
+			"Card5Heart",
+			"Card6Heart",
+			"Card7Heart",
+			"Card8Heart",
+			"Card9Heart",
+			"Card10Heart",
+			"CardJackHeart",
+			"CardQueenHeart",
+			"CardKingHeart",
+			"CardAceHeart",
+      "Card2Diamond",
+			"Card3Diamond",
+			"Card4Diamond",
+			"Card5Diamond",
+			"Card6Diamond",
+			"Card7Diamond",
+			"Card8Diamond",
+			"Card9Diamond",
+			"Card10Diamond",
+			"CardJackDiamond",
+			"CardQueenDiamond",
+			"CardKingDiamond",
+			"CardAceDiamond",
+		};
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "back"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardback_co.paa"
+    };
+	};
+
+  class SRP_PlayingCard_circle: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="circle";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_circle_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
+    };
+  };
+  class SRP_PlayingCard_plus: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="plus";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_plus_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
+    };
+  };
+  class SRP_PlayingCard_square: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="square";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_square_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
+    };
+  };
+  class SRP_PlayingCard_star: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="star";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_star_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
+    };
+  };
+  class SRP_PlayingCard_wave: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="wave";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_wave_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
+    };
+  };
   
-  
+  // SPADES
+  class SRP_PlayingCard_2Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="2spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_3Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="3spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_3spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_4Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="4spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_4spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_5Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="5spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_5spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_6Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="6spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_6spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_7Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="7spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_7spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_8Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="8spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_8spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_9Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="9spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_9spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_10Spade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="10spade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_10spade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_jackSpade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="jackspade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_jackspade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_queenSpade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="queenspade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_queenspade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_kingSpade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="kingspade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_kingspade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_aceSpade: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="acespade";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_acespade_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+
+  // CLUBS
+  class SRP_PlayingCard_2club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="2club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_3club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="3club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_3club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_4club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="4club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_4club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_5club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="5club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_5club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_6club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="6club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_6club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_7club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="7club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_7club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_8club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="8club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_8club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_9club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="9club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_9club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_10club: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="10club";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_10club_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_jackclub: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="jackclub";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_jackclub_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_queenclub: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="queenclub";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_queenclub_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_kingclub: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="kingclub";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_kingclub_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_aceclub: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="aceclub";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_aceclub_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+
+  // Diamond
+  class SRP_PlayingCard_2diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="2diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_3diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="3diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_3diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_4diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="4diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_4diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_5diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="5diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_5diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_6diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="6diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_6diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_7diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="7diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_7diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_8diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="8diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_8diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_9diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="9diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_9diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_10diamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="10diamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_10diamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_jackdiamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="jackdiamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_jackdiamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_queendiamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="queendiamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_queendiamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_kingdiamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="kingdiamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_kingdiamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_acediamond: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="acediamond";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_acediamond_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+
+  // Heart
+  class SRP_PlayingCard_2heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="2heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_3heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="3heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_3heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_4heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="4heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_4heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_5heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="5heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_5heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_6heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="6heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_6heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_7heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="7heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_7heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_8heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="8heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_8heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_9heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="9heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_9heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_10heart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="10heart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_10heart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_jackheart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="jackheart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_jackheart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_queenheart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="queenheart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_queenheart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_kingheart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="kingheart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_kingheart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_aceheart: SRP_PlayingCard_ColorBase  // new
+  {
+    scope=2;
+    color="aceheart";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_aceheart_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
   //------------------------------ BASE BUILDING
 
 };

@@ -688,6 +688,12 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Dagger" (https://skfb.ly/68Zuu) by Alexey is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Zener Cards" (https://skfb.ly/6uzRX) by chris munoz is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Thrasher Playing Cards" (https://skfb.ly/6XVu6) by rentless is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- Deck of Card Images Designed by Robot (Image #30039393 at VectorStock.com)
+
 # Wishlist
 
 # Reference

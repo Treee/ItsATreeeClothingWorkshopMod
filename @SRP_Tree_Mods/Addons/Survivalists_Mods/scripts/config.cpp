@@ -621,6 +621,325 @@ class CfgSlots
 		displayName="Large Pouch 4";
 		ghostIcon="set:dayz_inventory image:missing";
   }
+
+  // ------------------------ CARDS
+  class Slot_Card2Spade
+  {
+		name="Card2Spade";
+		displayName="2 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card3Spade
+  {
+		name="Card3Spade";
+		displayName="3 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card4Spade
+  {
+		name="Card4Spade";
+		displayName="4 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card5Spade
+  {
+		name="Card5Spade";
+		displayName="5 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card6Spade
+  {
+		name="Card6Spade";
+		displayName="6 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card7Spade
+  {
+		name="Card7Spade";
+		displayName="7 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card8Spade
+  {
+		name="Card8Spade";
+		displayName="8 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card9Spade
+  {
+		name="Card9Spade";
+		displayName="9 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card10Spade
+  {
+		name="Card10Spade";
+		displayName="10 of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardJackSpade
+  {
+		name="CardJackSpade";
+		displayName="Jack of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardQueenSpade
+  {
+		name="CardQueenSpade";
+		displayName="Queen of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardKingSpade
+  {
+		name="CardKingSpade";
+		displayName="King of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardAceSpade
+  {
+		name="CardAceSpade";
+		displayName="Ace of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+
+  class Slot_Card2Club
+  {
+		name="Card2Club";
+		displayName="2 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card3Club
+  {
+		name="Card3Club";
+		displayName="3 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card4Club
+  {
+		name="Card4Club";
+		displayName="4 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card5Club
+  {
+		name="Card5Club";
+		displayName="5 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card6Club
+  {
+		name="Card6Club";
+		displayName="6 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card7Club
+  {
+		name="Card7Club";
+		displayName="7 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card8Club
+  {
+		name="Card8Club";
+		displayName="8 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card9Club
+  {
+		name="Card9Club";
+		displayName="9 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card10Club
+  {
+		name="Card10Club";
+		displayName="10 of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardJackClub
+  {
+		name="CardJackClub";
+		displayName="Jack of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardQueenClub
+  {
+		name="CardQueenClub";
+		displayName="Queen of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardKingClub
+  {
+		name="CardKingClub";
+		displayName="King of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardAceClub
+  {
+		name="CardAceClub";
+		displayName="Ace of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+
+  class Slot_Card2Diamond
+  {
+		name="Card2Diamond";
+		displayName="2 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card3Diamond
+  {
+		name="Card3Diamond";
+		displayName="3 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card4Diamond
+  {
+		name="Card4Diamond";
+		displayName="4 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card5Diamond
+  {
+		name="Card5Diamond";
+		displayName="5 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card6Diamond
+  {
+		name="Card6Diamond";
+		displayName="6 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card7Diamond
+  {
+		name="Card7Diamond";
+		displayName="7 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card8Diamond
+  {
+		name="Card8Diamond";
+		displayName="8 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card9Diamond
+  {
+		name="Card9Diamond";
+		displayName="9 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card10Diamond
+  {
+		name="Card10Diamond";
+		displayName="10 of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardJackDiamond
+  {
+		name="CardJackDiamond";
+		displayName="Jack of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardQueenDiamond
+  {
+		name="CardQueenDiamond";
+		displayName="Queen of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardKingDiamond
+  {
+		name="CardKingDiamond";
+		displayName="King of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardAceDiamond
+  {
+		name="CardAceDiamond";
+		displayName="Ace of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+
+  class Slot_Card2Heart
+  {
+		name="Card2Heart";
+		displayName="2 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card3Heart
+  {
+		name="Card3Heart";
+		displayName="3 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card4Heart
+  {
+		name="Card4Heart";
+		displayName="4 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card5Heart
+  {
+		name="Card5Heart";
+		displayName="5 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card6Heart
+  {
+		name="Card6Heart";
+		displayName="6 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card7Heart
+  {
+		name="Card7Heart";
+		displayName="7 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card8Heart
+  {
+		name="Card8Heart";
+		displayName="8 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card9Heart
+  {
+		name="Card9Heart";
+		displayName="9 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_Card10Heart
+  {
+		name="Card10Heart";
+		displayName="10 of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardJackHeart
+  {
+		name="CardJackHeart";
+		displayName="Jack of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardQueenHeart
+  {
+		name="CardQueenHeart";
+		displayName="Queen of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardKingHeart
+  {
+		name="CardKingHeart";
+		displayName="King of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardAceHeart
+  {
+		name="CardAceHeart";
+		displayName="Ace of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+
+
 };
 
 class CfgNonAIVehicles
