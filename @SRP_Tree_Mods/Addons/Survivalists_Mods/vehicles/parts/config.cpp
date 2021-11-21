@@ -26,7 +26,7 @@ class CfgVehicles
 		model="\dz\vehicles\parts\JerryCan.p3d";
 		weight=4000;
 		itemSize[]={5,6};
-		inventorySlot="CanisterGasoline";
+		inventorySlot[]={"CanisterGasoline"};
 		absorbency=0;
 		canBeSplit=0;
 		stackedRandom=1;

@@ -30,7 +30,7 @@ class CfgVehicles
 		{
 			"GasCanister"
 		};
-    inventorySlot="BP_gas_lamp";
+    inventorySlot[]={"BP_gas_lamp"};
 		containerSlot="GasCanister";
 		hiddenSelections[]=
 		{

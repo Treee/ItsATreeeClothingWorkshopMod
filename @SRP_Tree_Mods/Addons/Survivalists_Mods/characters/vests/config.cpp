@@ -343,7 +343,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot="Vest";
+    inventorySlot[]={"Vest"};
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -557,7 +557,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot="Vest";
+    inventorySlot[]={"Vest"};
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -771,7 +771,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-		inventorySlot="Vest";
+		inventorySlot[]={"Vest"};
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -1103,7 +1103,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot="Vest";
+    inventorySlot[]={"Vest"};
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1309,7 +1309,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot="Vest";
+    inventorySlot[]={"Vest"};
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1516,7 +1516,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot="Vest";
+    inventorySlot[]={"Vest"};
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1722,7 +1722,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot="Vest";
+    inventorySlot[]={"Vest"};
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemSize[]={5,5};
@@ -2105,6 +2105,22 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_Small_Bottle_Green: SRP_Small_Bottle_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_Small_Bottle_Green_CO.paa"
+    };    
+  };   
+  class SRP_Small_Bottle_Black: SRP_Small_Bottle_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_Small_Bottle_Black_CO.paa"
+    };    
+  };
 
   //---------SMALL POUCHES
   class SRP_Map_Pouch_Tan : SRP_PouchBase_Small
@@ -2136,6 +2152,22 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_Map_Pouch_Green: SRP_Map_Pouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_Map_Pouch_Green_CO.paa"
+    };    
+  };
+  class SRP_Map_Pouch_Black: SRP_Map_Pouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_Map_Pouch_Black_CO.paa"
+    };    
+  };
   class SRP_Pistol_Mag_Pouch_Tan : SRP_PouchBase_Small
 	{
 		scope=2;
@@ -2165,6 +2197,22 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_Pistol_Mag_Pouch_Green: SRP_Pistol_Mag_Pouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch_Green_CO.paa"
+    };    
+  };
+  class SRP_Pistol_Mag_Pouch_Black: SRP_Pistol_Mag_Pouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch_Black_CO.paa"
+    };    
+  };
 
   //---------LARGE POUCHES
   class SRP_IFAK_Tan : SRP_PouchBase_Large
@@ -2196,6 +2244,22 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_IFAK_Green: SRP_IFAK_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_IFAK_Green_CO.paa"
+    };    
+  };
+  class SRP_IFAK_Black: SRP_IFAK_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_IFAK_Black_CO.paa"
+    };    
+  };
   class SRP_Magazine_Pouch_1_Tan : SRP_PouchBase_Large
 	{
 		scope=2;
@@ -2225,6 +2289,22 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_Magazine_Pouch_1_Green: SRP_Magazine_Pouch_1_Tan
+    {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1_Green_CO.paa"
+    };    
+  };
+  class SRP_Magazine_Pouch_1_Black: SRP_Magazine_Pouch_1_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1_Black_CO.paa"
+    };    
+  };
   class SRP_Empty_MagPouch_Tan : SRP_PouchBase_Large
 	{
 		scope=2;
@@ -2254,4 +2334,22 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_Empty_MagPouch_Green: SRP_Empty_MagPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch_Green_CO.paa"
+    };    
+  };
+  class SRP_Empty_MagPouch_Black: SRP_Empty_MagPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch_Black_CO.paa"
+    };    
+  };
+
+
 };

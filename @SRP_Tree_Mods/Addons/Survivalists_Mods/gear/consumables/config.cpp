@@ -83,7 +83,7 @@ class CfgVehicles
 		displayName="Military Radio Battery";
 		descriptionShort="Military radio battery pack";
 		model="Survivalists_Mods\gear\consumables\SRP_LRRadioBattery.p3d";
-		inventorySlot="SRPRadioBattery";
+		inventorySlot[]={"SRPRadioBattery"};
 		itemSize[]={1,2};
 		class EnergyManager
 		{

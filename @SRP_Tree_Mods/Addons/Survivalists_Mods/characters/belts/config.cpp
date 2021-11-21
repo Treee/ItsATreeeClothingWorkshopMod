@@ -173,7 +173,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\belts\Elbowpads_Kneepads_g.p3d";
     attachments[]={};
 		rotationFlags=16;
-		inventorySlot="Gloves";
+		inventorySlot[]={"Gloves"};
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=

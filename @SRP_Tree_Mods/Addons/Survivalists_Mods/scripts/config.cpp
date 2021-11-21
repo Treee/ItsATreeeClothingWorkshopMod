@@ -995,14 +995,14 @@ class CfgNonAIVehicles
   class ProxySodaCan_Used: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="tripWireAttachment";
+		inventorySlot[]={"tripWireAttachment"};
 		model="\dz\gear\drinks\SodaCan_Used.p3d";
 	};
 
 	class ProxyJerryCan: ProxyAttachment
 	{
 		model="\dz\vehicles\parts\JerryCan.p3d";
-		inventorySlot="CanisterGasoline";
+		inventorySlot[]={"CanisterGasoline"};
 	};
 
 	class Proxysrp_ammoworkbench_caseprep: ProxyAttachment
@@ -1068,7 +1068,7 @@ class CfgNonAIVehicles
 	class Proxyfirstaidkit: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="firstaidkit";
+		inventorySlot[]={"firstaidkit"};
 		model="\DZ\gear\containers\FirstAidKit.p3d";
 	};
 
@@ -1313,121 +1313,121 @@ class CfgNonAIVehicles
 	class Proxyshoulder1: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder1";
+		inventorySlot[]={"1Shoulder1"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder1.p3d";
 	};
 	class Proxyshoulder2: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder2";
+		inventorySlot[]={"1Shoulder2"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder2.p3d";
 	};
 	class Proxyshoulder3: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder3";
+		inventorySlot[]={"1Shoulder3"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder3.p3d";
 	};
 	class Proxyshoulder4: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder4";
+		inventorySlot[]={"1Shoulder4"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder4.p3d";
 	};
 	class Proxyshoulder5: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder5";
+		inventorySlot[]={"1Shoulder5"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder5.p3d";
 	};
 	class Proxyshoulder6: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder6";
+		inventorySlot[]={"1Shoulder6"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder6.p3d";
 	};
 	class Proxyshoulder7: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder7";
+		inventorySlot[]={"1Shoulder7"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder7.p3d";
 	};
 	class Proxyshoulder8: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder8";
+		inventorySlot[]={"1Shoulder8"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder8.p3d";
 	};
 	class Proxyshoulder9: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder9";
+		inventorySlot[]={"1Shoulder9"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder9.p3d";
 	};
 	class Proxyshoulder10: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder10";
+		inventorySlot[]={"1Shoulder10"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder10.p3d";
 	};
 	class Proxyshoulder11: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder11";
+		inventorySlot[]={"1Shoulder11"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder11.p3d";
 	};
 	class Proxyshoulder12: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder12";
+		inventorySlot[]={"1Shoulder12"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder12.p3d";
 	};
 	class Proxyshoulder13: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder13";
+		inventorySlot[]={"1Shoulder13"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder13.p3d";
 	};
 	class Proxyshoulder14: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder14";
+		inventorySlot[]={"1Shoulder14"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder14.p3d";
 	};
 	class Proxyshoulder15: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder15";
+		inventorySlot[]={"1Shoulder15"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder15.p3d";
 	};
 	class Proxyshoulder16: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder16";
+		inventorySlot[]={"1Shoulder16"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder16.p3d";
 	};
 	class Proxyshoulder17: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder17";
+		inventorySlot[]={"1Shoulder17"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder17.p3d";
 	};
 	class Proxyshoulder18: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder18";
+		inventorySlot[]={"1Shoulder18"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder18.p3d";
 	};
 	class Proxyshoulder19: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder19";
+		inventorySlot[]={"1Shoulder19"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder19.p3d";
 	};
 	class Proxyshoulder20: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="1Shoulder20";
+		inventorySlot[]={"1Shoulder20"};
 		model="\MuchStuffPack\MSP_Storage_proxies\shoulder20.p3d";
 	};
 };
