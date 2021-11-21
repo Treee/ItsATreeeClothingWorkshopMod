@@ -2,13 +2,13 @@ ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={1,1,1,1};
-specularPower=1000;
+specular[]={2,1.8,1.6,1};
+specularPower=90;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\gear\crafting\data\ReloadingPressBoxes_nohq.paa";
+	texture="Survivalists_Mods\gear\crafting\data\srp_ammoworkbench_tools_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -24,8 +24,8 @@ class Stage2
 	uvSource="tex";
 	class uvTransform
 	{
-		aside[]={1,0,0};
-		up[]={0,1,0};
+		aside[]={0,0,0};
+		up[]={0,0,0};
 		dir[]={0,0,0};
 		pos[]={0,0,0};
 	};
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="Survivalists_Mods\gear\crafting\data\ReloadingPressBoxes_as.paa";
+	texture="Survivalists_Mods\gear\crafting\data\srp_ammoworkbench_tools_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\gear\crafting\data\ReloadingPressBoxes_smdi.paa";
+	texture="Survivalists_Mods\gear\crafting\data\srp_ammoworkbench_tools_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,18 +68,25 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,64,64,1)fresnel(0.01,0.01)";
+	texture="#(ai,32,128,1)fresnel(0.7,0.8)";
 	uvSource="tex";
 	class uvTransform
 	{
 		aside[]={1,0,0};
 		up[]={0,1,0};
-		dir[]={0,0,0};
+		dir[]={0,0,1};
 		pos[]={0,0,0};
 	};
 };
 class Stage7
 {
-	texture="#(argb,8,8,3)color(0,0,0,1,CO)";
-	uvSource="none";
+	texture="dz\data\data\env_land_co.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
 };

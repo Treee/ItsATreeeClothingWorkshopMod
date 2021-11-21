@@ -1461,3 +1461,7 @@ SRP_PlayingCard_jackheart
 SRP_PlayingCard_queenheart
 SRP_PlayingCard_kingheart
 SRP_PlayingCard_aceheart
+
+SRP_WornWorkbench
+SRP_WorkbenchDrill
+SRP_WorkbenchClamp

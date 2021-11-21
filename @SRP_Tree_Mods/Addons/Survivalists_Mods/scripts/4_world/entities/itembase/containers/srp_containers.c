@@ -24,6 +24,8 @@ class SRP_BloodPressureMonitor extends SRP_DeployableContainer_Base{};
 class SRP_Carpet extends SRP_DeployableContainer_Base{};
 class SRP_CarpetRug extends SRP_DeployableContainer_Base{};
 class SRP_LatheWorkbench extends SRP_DeployableContainer_Base{};
+class SRP_WornWorkbench extends SRP_DeployableContainer_Base{};
+
 class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
 {
   override void SetActions()

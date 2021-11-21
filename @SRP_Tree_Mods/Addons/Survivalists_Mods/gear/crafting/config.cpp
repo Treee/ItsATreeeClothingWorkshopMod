@@ -90,11 +90,11 @@ class CfgVehicles
 					hitpoints=5000;
 					healthLevels[]=
 					{
-            {1.01,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}},
-            {0.69999999,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}},
-            {0.5,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}},
-            {0.30000001,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}},
-            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\ReloadingBench.rvmat"}}
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_ammoworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_ammoworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_ammoworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_ammoworkbench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_ammoworkbench.rvmat"}}
 					};
 				};
 			};
@@ -887,4 +887,180 @@ class CfgVehicles
 			};
 		};
 	};
+
+  //===================== Wood and General Crafting
+  class SRP_WornWorkbench: Container_Base
+	{
+		scope=2;
+		displayName="Worn Workbench";
+		descriptionShort="A Workbench with basic tools.";
+		model="Survivalists_Mods\gear\crafting\SRP_genericworkbench.p3d";
+		useEntityHierarchy="true";
+		attachments[]=
+		{
+			"SRP_WoodDrill",
+			"SRP_WoodClamp"
+		};
+		destroyOnEmpty=0;
+		carveNavmesh=0;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=500;
+		itemSize[]={14,14};
+    itemsCargoSize[]={3,3};
+		itemBehaviour=0;
+		repairKitType=1;
+		physLayer="item_large";
+		class GUIInventoryAttachmentsProps
+		{
+			class Tools
+			{
+				name="Tools";
+				description="Attachments for a lathe";
+				attachmentSlots[]=
+				{
+					"SRP_WoodDrill",
+          "SRP_WoodClamp"
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};		
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_WorkbenchDrill: Inventory_Base
+	{
+		scope=2;
+		displayName="Drill";
+		descriptionShort="A drill for wood.";
+		model="Survivalists_Mods\gear\crafting\SRP_carpentryworkbench_drill.p3d";
+		inventorySlot[]=
+		{
+			"SRP_WoodDrill"
+		};
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={4,3};
+		itemBehaviour=0;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}}
+					};
+				};
+			};
+		};	
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_WorkbenchClamp: Inventory_Base
+	{
+		scope=2;
+		displayName="Clamp";
+		descriptionShort="A clamp for wood.";
+		model="Survivalists_Mods\gear\crafting\SRP_carpentryworkbench_clamp.p3d";
+		inventorySlot[]=
+		{
+			"SRP_WoodClamp"
+		};
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={4,3};
+		itemBehaviour=0;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}}
+					};
+				};
+			};
+		};	
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+
+
 };

@@ -385,6 +385,19 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
   }
 
+  class Slot_SRP_WoodDrill
+  {
+		name="SRP_WoodDrill";
+		displayName="Wood Drill";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+  }
+  class Slot_SRP_WoodClamp
+  {
+		name="SRP_WoodClamp";
+		displayName="Wood Clamp";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+  }
+
   class Slot_SRP_SewingMachine
 	{
 		name="SRP_SewingMachine";
@@ -1032,6 +1045,19 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_LatheClamp"};
 		model="Survivalists_Mods\proxy\srp_latheworkbench_clamp.p3d";
 	};
+
+  class Proxysrp_wooddrill_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_WoodDrill"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_wooddrill_proxy.p3d"; //proxy path 
+  };    
+  class Proxysrp_woodclamp_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_WoodClamp"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_woodclamp_proxy.p3d"; //proxy path 
+  };
   
   class Proxysrp_sewingworkbench_sewingmachine: ProxyAttachment
 	{
