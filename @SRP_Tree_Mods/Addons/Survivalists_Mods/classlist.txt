@@ -1398,6 +1398,7 @@ SRP_SnakeDagger_Arbiters
 SRP_DrugTestKit
 
 SRP_DeckOfCards
+SRP_HandOfCards
 
 SRP_PlayingCard_circle
 SRP_PlayingCard_plus

@@ -623,6 +623,38 @@ class CfgSlots
   }
 
   // ------------------------ CARDS
+  class Slot_CardHand1
+  {
+		name="CardHand1";
+		displayName="1st Card";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardHand2
+  {
+		name="CardHand2";
+		displayName="2nd Card";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardHand3
+  {
+		name="CardHand3";
+		displayName="3rd Card";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardHand4
+  {
+		name="CardHand4";
+		displayName="4th Card";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_CardHand5
+  {
+		name="CardHand5";
+		displayName="5th Card";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+
+
   class Slot_Card2Spade
   {
 		name="Card2Spade";
@@ -1204,11 +1236,42 @@ class CfgNonAIVehicles
     inventorySlot[] = {"LargePouch3"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_largepouch_proxy3.p3d"; //proxy path 
   };
-    class Proxysrp_largepouch_proxy4: ProxyAttachment //same as p3d name
+  class Proxysrp_largepouch_proxy4: ProxyAttachment //same as p3d name
   {
     scope = 2;
     inventorySlot[] = {"LargePouch4"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_largepouch_proxy4.p3d"; //proxy path 
+  };
+
+  class Proxysrp_cardhand_proxy1: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"CardHand1"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_cardhand_proxy1.p3d"; //proxy path 
+  };    
+  class Proxysrp_cardhand_proxy2: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"CardHand2"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_cardhand_proxy2.p3d"; //proxy path 
+  };
+  class Proxysrp_cardhand_proxy3: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"CardHand3"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_cardhand_proxy3.p3d"; //proxy path 
+  };
+  class Proxysrp_cardhand_proxy4: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"CardHand4"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_cardhand_proxy4.p3d"; //proxy path 
+  };
+  class Proxysrp_cardhand_proxy5: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"CardHand5"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_cardhand_proxy5.p3d"; //proxy path 
   };
 
   class Proxysrp_comtacs: ProxyAttachment //same as p3d name

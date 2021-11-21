@@ -22,6 +22,7 @@ class CfgVehicles
   class Inventory_Base;
   class Container_Base;
   class WoodenCrate;
+  class Paper;
 
   class SRP_KitBase;
 
@@ -1734,6 +1735,26 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_HandOfCards: Inventory_Base
+  {
+    scope=2;
+    displayName="A hand of cards.";
+    descriptionShort="Used to hold a hand of cards. Burn after use.";
+    model="Survivalists_Mods\gear\camping\srp_handofcards.p3d";
+		weight=250;
+		itemSize[]={2,2};
+		absorbency=0.30000001;
+		physLayer="item_small";
+    attachments[]=
+		{
+			"CardHand1",
+			"CardHand2",
+			"CardHand3",
+			"CardHand4",
+			"CardHand5",
+		};
+  }
+
   class SRP_PlayingCard_ColorBase: Inventory_Base  // new
 	{
 		scope=2;
@@ -1747,6 +1768,11 @@ class CfgVehicles
 		physLayer="item_small";
     inventorySlot[]=
     {
+      "CardHand1",
+			"CardHand2",
+			"CardHand3",
+			"CardHand4",
+			"CardHand5",
 			"Card2Spade",
 			"Card3Spade",
 			"Card4Spade",

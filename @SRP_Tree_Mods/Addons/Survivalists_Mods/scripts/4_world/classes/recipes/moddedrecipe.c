@@ -138,6 +138,8 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_WoodenBowlCherry);
     RegisterRecipe(new Craft_SRP_WoodenBowlSquare);
 
+    RegisterRecipe(new Craft_SRP_HandofCards);
+
     RegisterRecipe(new Craft_SRP_WoodenDiceWhite);
     RegisterRecipe(new Craft_SRP_WoodenDiceWhiteRed);
     RegisterRecipe(new Craft_SRP_WoodenDiceBlackWhite);
