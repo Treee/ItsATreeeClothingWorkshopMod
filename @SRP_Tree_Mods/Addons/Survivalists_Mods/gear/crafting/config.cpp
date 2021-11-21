@@ -606,6 +606,13 @@ class CfgVehicles
 
 
   //------------- Machining
+  class SRP_LatheWorkbench_Kit: SRP_KitBase 
+	{
+		scope=2;
+		displayName="Lathe Workbench Kit";
+		descriptionShort="A lathe workbench kit";
+	};
+
   class SRP_LatheWorkbench: Container_Base
 	{
 		scope=2;
@@ -889,6 +896,13 @@ class CfgVehicles
 	};
 
   //===================== Wood and General Crafting
+  class SRP_WornWorkbench_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Worn Workbench Kit";
+		descriptionShort="A worn workbench kit";
+	};
+
   class SRP_WornWorkbench: Container_Base
 	{
 		scope=2;
@@ -1061,6 +1075,65 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_WornWorkbench_Metal_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Worn Metal Workbench Kit";
+		descriptionShort="A worn metal workbench kit";
+	};
 
+  class SRP_WornWorkbench_Metal: Container_Base
+	{
+		scope=2;
+		displayName="Worn Metal Workbench";
+		descriptionShort="A Workbench with basic tools.";
+		model="Survivalists_Mods\gear\crafting\SRP_genericworkbench_metal.p3d";
+		useEntityHierarchy="true";
+		attachments[]={};
+		destroyOnEmpty=0;
+		carveNavmesh=0;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=500;
+		itemSize[]={14,14};
+    itemsCargoSize[]={3,3};
+		itemBehaviour=0;
+		repairKitType=1;
+		physLayer="item_large";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_wornworkbenchmetal.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_wornworkbenchmetal.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_wornworkbenchmetal.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_wornworkbenchmetal.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_wornworkbenchmetal.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
 
 };
