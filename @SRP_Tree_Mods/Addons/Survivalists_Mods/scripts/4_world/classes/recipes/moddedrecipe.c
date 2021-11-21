@@ -145,6 +145,14 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Craft_SRP_WoodenDiceBlackWhite);
     RegisterRecipe(new Craft_SRP_WoodenDiceBlackRed);
 
+    RegisterRecipe(new Craft_SRP_GemRPGDiceD4);
+    RegisterRecipe(new Craft_SRP_GemRPGDiceD6);
+    RegisterRecipe(new Craft_SRP_GemRPGDiceD8);
+    RegisterRecipe(new Craft_SRP_GemRPGDiceD10);
+    RegisterRecipe(new Craft_SRP_GemRPGDiceD12);
+    RegisterRecipe(new Craft_SRP_GemRPGDiceD20);
+    RegisterRecipe(new Craft_SRP_GemRPGDiceD100);
+
     RegisterRecipe(new Craft_SRP_TetrisShelfKit);
     RegisterRecipe(new Craft_SRP_TetrisShelfLDown);
     RegisterRecipe(new Craft_SRP_TetrisShelfLUp);

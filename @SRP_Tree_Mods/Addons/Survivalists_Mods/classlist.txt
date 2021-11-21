@@ -1470,3 +1470,11 @@ SRP_WorkbenchClamp
 SRP_WornWorkbench_Metal_Kit
 SRP_WornWorkbench_Metal
 
+SRP_DiceRpg_d4
+SRP_DiceRpg_d6
+SRP_DiceRpg_d8
+SRP_DiceRpg_d10
+SRP_DiceRpg_d12
+SRP_DiceRpg_d20
+SRP_DiceRpg_d100
+

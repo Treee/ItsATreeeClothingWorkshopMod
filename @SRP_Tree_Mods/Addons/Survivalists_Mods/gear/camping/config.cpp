@@ -1477,6 +1477,63 @@ class CfgVehicles
     };
 	};
 
+  class SRP_DiceRpg_d4: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="D4";
+		descriptionShort="There must be another in the set.";
+		model="Survivalists_Mods\gear\camping\dicerpg_d4.p3d";
+		weight=250;
+		itemSize[]={1,1};
+		absorbency=0.30000001;
+		physLayer="item_small";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_dicerpg_co.paa"
+    };
+	};
+  class SRP_DiceRpg_d6: SRP_DiceRpg_d4  // new
+	{
+		scope=2;
+		displayName="D6";
+		model="Survivalists_Mods\gear\camping\dicerpg_d6.p3d";
+	};
+  class SRP_DiceRpg_d8: SRP_DiceRpg_d4  // new
+	{
+		scope=2;
+		displayName="D8";
+		model="Survivalists_Mods\gear\camping\dicerpg_d8.p3d";
+	};
+  class SRP_DiceRpg_d10: SRP_DiceRpg_d4  // new
+	{
+		scope=2;
+		displayName="D10";
+		model="Survivalists_Mods\gear\camping\dicerpg_d10.p3d";
+	};
+  class SRP_DiceRpg_d12: SRP_DiceRpg_d4  // new
+	{
+		scope=2;
+		displayName="D12";
+		model="Survivalists_Mods\gear\camping\dicerpg_d12.p3d";
+	};
+  class SRP_DiceRpg_d20: SRP_DiceRpg_d4  // new
+	{
+		scope=2;
+		displayName="D20";
+		model="Survivalists_Mods\gear\camping\dicerpg_d20.p3d";
+	};
+  class SRP_DiceRpg_d100: SRP_DiceRpg_d4  // new
+	{
+		scope=2;
+		displayName="D100";
+		model="Survivalists_Mods\gear\camping\dicerpg_d100.p3d";
+	};
+
+
   class SRP_DiceSingle_White: Inventory_Base  // new
 	{
 		scope=2;
@@ -1487,18 +1544,18 @@ class CfgVehicles
 		itemSize[]={1,1};
 		absorbency=0.30000001;
 		physLayer="item_small";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\dice_white_co.paa"
+    };
 	};
 
-  class SRP_DiceSingle_WhiteRed: Inventory_Base  // new
+  class SRP_DiceSingle_WhiteRed: SRP_DiceSingle_White  // new
 	{
 		scope=2;
-		displayName="A single dice";
-		descriptionShort="There must be another in the set.";
-		model="Survivalists_Mods\gear\camping\dice.p3d";
-		weight=250;
-		itemSize[]={1,1};
-		absorbency=0.30000001;
-		physLayer="item_small";
     hiddenSelections[]={
       "zbytek"
     };
@@ -1507,16 +1564,9 @@ class CfgVehicles
     };
 	};
 
-  class SRP_DiceSingle_BlackWhite: Inventory_Base  // new
+  class SRP_DiceSingle_BlackWhite: SRP_DiceSingle_WhiteRed  // new
 	{
 		scope=2;
-		displayName="A single dice";
-		descriptionShort="There must be another in the set.";
-		model="Survivalists_Mods\gear\camping\dice.p3d";
-		weight=250;
-		itemSize[]={1,1};
-		absorbency=0.30000001;
-		physLayer="item_small";
     hiddenSelections[]={
       "zbytek"
     };
@@ -1525,16 +1575,9 @@ class CfgVehicles
     };
 	};
 
-  class SRP_DiceSingle_BlackRed: Inventory_Base  // new
+  class SRP_DiceSingle_BlackRed: SRP_DiceSingle_BlackWhite  // new
 	{
 		scope=2;
-		displayName="A single dice";
-		descriptionShort="There must be another in the set.";
-		model="Survivalists_Mods\gear\camping\dice.p3d";
-		weight=250;
-		itemSize[]={1,1};
-		absorbency=0.30000001;
-		physLayer="item_small";
     hiddenSelections[]={
       "zbytek"
     };
