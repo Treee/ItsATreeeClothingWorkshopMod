@@ -323,7 +323,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Tac_Vest_Black: Clothing
+  class SRP_Tac_Vest_Green: Clothing
 	{	
 		scope=2;
 		displayName="Tactical Vest";
@@ -365,7 +365,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\vests\data\Tac_vest_CO.paa"
+			"Survivalists_Mods\characters\vests\data\Tac_vest_Green_CO.paa"			
 		};	
 		class ClothingTypes
 		{
@@ -512,7 +512,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Tac_Vest_Green : SRP_Tac_Vest_Black
+  class SRP_Tac_Vest_Black : SRP_Tac_Vest_Green
 	{
     scope=2;	
     hiddenSelections[]=
@@ -521,10 +521,10 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\vests\data\Tac_vest_Green_CO.paa"
+      "Survivalists_Mods\characters\vests\data\Tac_vest_CO.paa"
 		};	
 	};
-	class SRP_Tac_Vest_Tan : SRP_Tac_Vest_Black
+	class SRP_Tac_Vest_Tan : SRP_Tac_Vest_Green
 	{
     scope=2;
     hiddenSelections[]=
@@ -2290,7 +2290,7 @@ class CfgVehicles
 		};
 	};
   class SRP_Magazine_Pouch_1_Green: SRP_Magazine_Pouch_1_Tan
-    {
+  {
     scope=2;
     hiddenSelectionsTextures[]=
     {

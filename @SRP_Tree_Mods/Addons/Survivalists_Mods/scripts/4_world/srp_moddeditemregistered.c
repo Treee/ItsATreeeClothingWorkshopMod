@@ -61,7 +61,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Guitar_Alpocalypse", "dz/anims/workspaces/player/player_main/weapons/player_main_izh43.asi", pBehavior, "dz/anims/anm/player/ik/weapons/izh43.anm");
 
     pType.AddItemInHandsProfileIK("SRP_JPC_Vest_Green", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");
-    pType.AddItemInHandsProfileIK("SRP_Tac_Vest_Black", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");
+    pType.AddItemInHandsProfileIK("SRP_Tac_Vest_Green", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");
     pType.AddItemInHandsProfileIK("SRP_Tac_Tec_Vest_Green", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");
     pType.AddItemInHandsProfileIK("SRP_Chestrig_Green", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");
     pType.AddItemInHandsProfileIK("SRP_Army_Vest_1_Green", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");
