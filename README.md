@@ -1,5 +1,7 @@
 # The Survivalists Role Play Mod Pack
 
+Update readme links
+
 This mod pack contains the bulk of the unique items and features Survivalists has to offer.
 
 ## Characters
