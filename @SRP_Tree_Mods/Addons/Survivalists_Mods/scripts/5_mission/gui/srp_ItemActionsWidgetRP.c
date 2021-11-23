@@ -39,4 +39,15 @@ modded class ItemActionsWidget
 		else
 			widget.Show(false);
 	}
+
+  // Hide how much ammo is in your weapon
+  override protected void SetWeaponQuantity(int chamber, int mag, string itemWidget, string quantityPBWidget, string quantityTextWidget, bool enabled)
+	{
+		Widget widget;
+		
+		widget = m_Root.FindAnyWidget(itemWidget);
+
+    widget.Show(false);
+	}
+
 }
