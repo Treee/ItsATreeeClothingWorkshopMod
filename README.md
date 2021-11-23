@@ -20,13 +20,13 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 - Assault Bag
 - Taloon Bag
 
-![Backpacks](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/backpacks.png)
+![Backpacks](doc/dayz_tools/survivalists_mod_items/backpacks.png)
 
 ### Belts
 
 Here are a few custom belts pulled from various sources. See the attributions below for who created the model.
 
-![Belts](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/belts.png)
+![Belts](doc/dayz_tools/survivalists_mod_items/belts.png)
 
 ### Glasses
 
@@ -34,11 +34,11 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Short Range NVG
 - Quad NVG
 
-![Glasses](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/glasses.png)
+![Glasses](doc/dayz_tools/survivalists_mod_items/glasses.png)
 
 ### Gloves
 
-![Gloves](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/gloves.png)
+![Gloves](doc/dayz_tools/survivalists_mod_items/gloves.png)
 
 ### Headgear
 
@@ -48,7 +48,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 #### Retextures and New Items
 
-![Headgear](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/headgear.png)
+![Headgear](doc/dayz_tools/survivalists_mod_items/headgear.png)
 
 ### Masks
 
@@ -57,31 +57,31 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 #### Retextures and New Items
 
-![Masks](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/masks.png)
+![Masks](doc/dayz_tools/survivalists_mod_items/masks.png)
 
 ### Pants
 
 #### Retextures and New Items
 
-![Pants](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/pants.png)
+![Pants](doc/dayz_tools/survivalists_mod_items/pants.png)
 
 ### Shoes
 
 #### Retextures and New Items
 
-![Shoes](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/shoes.png)
+![Shoes](doc/dayz_tools/survivalists_mod_items/shoes.png)
 
 ### Tops
 
 #### Retextures and New Items
 
-![Tops](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/tops.png)
+![Tops](doc/dayz_tools/survivalists_mod_items/tops.png)
 
 ### Vests
 
 #### Retextures and New Items
 
-![Vests](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/vests.png)
+![Vests](doc/dayz_tools/survivalists_mod_items/vests.png)
 
 ## Gear
 
@@ -91,7 +91,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Flagpoles are built with shovels.
 - Cable Reels have 50 units of length.
 
-![Camping](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/camping.png)
+![Camping](doc/dayz_tools/survivalists_mod_items/camping.png)
 
 ### Consumables
 
@@ -102,7 +102,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ### Containers
 
-![Containers](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/containers.png)
+![Containers](doc/dayz_tools/survivalists_mod_items/containers.png)
 
 ### Cooking
 
@@ -117,11 +117,11 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Combine heat packs.
 - Refill butane canisters
 
-![Crafting](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/crafting.png)
+![Crafting](doc/dayz_tools/survivalists_mod_items/crafting.png)
 
 ### Drinks
 
-![Drinks](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/drinks.png)
+![Drinks](doc/dayz_tools/survivalists_mod_items/drinks.png)
 
 ### Food
 
@@ -130,31 +130,31 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Meat can be smoked and burns when above 60C for too long.
 - Canning food is now an option in three forms: Veggie, Meat, Combo.
 
-![Food](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/food.png)
+![Food](doc/dayz_tools/survivalists_mod_items/food.png)
 
 ### Medical
 
 - Expanded medical supplies.
 - Bacteria/Virus/Antibiotic Injectors and Cures.
 
-![Medical](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/medical.png)
+![Medical](doc/dayz_tools/survivalists_mod_items/medical.png)
 
 ## Accessories
 
 ### Lab Tubes
 
 5 colors of lab tubes that can be added to a Lab Tube Rack. Combine colors and try to discover the recipe's that exist for science!  
-![Clear Lab Tube](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/lab-tube-clear.png)
-![Blue Lab Tube](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/lab-tube-blue.png)
-![Green Lab Tube](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/lab-tube-green.png)
-![Yelow Lab Tube](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/lab-tube-yellow.png)
-![Red Lab Tube](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/lab-tube-red.png)
+![Clear Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-clear.png)
+![Blue Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-blue.png)
+![Green Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-green.png)
+![Yelow Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-yellow.png)
+![Red Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-red.png)
 
 ### Lab Tube Rack
 
 A rack to hold lab tubes. This item is required for crafting at the Drug Workbench
 
-![Lab Tube Rack](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/lab-tube-rack.png)
+![Lab Tube Rack](doc/dayz_tools/tree_mod_images/lab-tube-rack.png)
 
 ### Meth Tub
 
@@ -162,20 +162,20 @@ A workbench for crafting drugs! There are many recipes and the first step is fin
 
 `Attachments are disabled for now`
 
-![Meth Tub](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/bath-tub.png)
+![Meth Tub](doc/dayz_tools/tree_mod_images/bath-tub.png)
 
 ### Smoking Pipe
 
 Look dapper with this high quality pipe. Light it with matches or zippo lighter but don't forget to put it out or you might start a fire!
 
-![Smoking Pipe](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/smoking-pipe.png)
+![Smoking Pipe](doc/dayz_tools/tree_mod_images/smoking-pipe.png)
 
 ### Cigarette Case
 
 Any classy citizen of the alpocalypse needs a place to store their narcotics. A cigarette case is the perfect blend of suave and class that says to the world "I have my shit together."
 
-![Cigarette Case Close](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/cig-case-close.png)
-![Cigarette Case Open](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/cig-case-open.png)
+![Cigarette Case Close](doc/dayz_tools/tree_mod_images/cig-case-close.png)
+![Cigarette Case Open](doc/dayz_tools/tree_mod_images/cig-case-open.png)
 
 ## Consumables
 
@@ -183,13 +183,13 @@ Any classy citizen of the alpocalypse needs a place to store their narcotics. A 
 
 Side effects include Laughing, Blurred Vision, Paranoia, Loss of color and an erratic feeling of accomplishment
 
-![Meth Crystals](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/meth-salts.png)
+![Meth Crystals](doc/dayz_tools/tree_mod_images/meth-salts.png)
 
 ### Bath Salts
 
 Side effects include Laughing, Blurred Vision, Paranoia and a terrible feeling on your stomach
 
-![Bath Salts](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/meth-salts.png)
+![Bath Salts](doc/dayz_tools/tree_mod_images/meth-salts.png)
 
 ### Acid
 
@@ -197,8 +197,8 @@ Side effects include Laughing, Blurred Vision, Paranoia and a terrible feeling o
 
 Side effects include Laughing, Coughing, Vomiting, Blurred Vision, Paranoia and the feeling that something bad might happen.
 
-![Smile Acid](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/smiley-acid.png)
-![SKull Acid](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/skull-acid.png)
+![Smile Acid](doc/dayz_tools/tree_mod_images/smiley-acid.png)
+![SKull Acid](doc/dayz_tools/tree_mod_images/skull-acid.png)
 
 ## Smokables
 
@@ -206,29 +206,29 @@ Side effects include Laughing, Coughing, Vomiting, Blurred Vision, Paranoia and 
 
 Side effects include Laughing, Coughing, Blurred Vision, Dry Mouth and an overall feeling of euphoria. Light your joints with matches or a zippo.
 
-![Zweed Joint](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/joint.png)
+![Zweed Joint](doc/dayz_tools/tree_mod_images/joint.png)
 
 ### Cigarettes & Cigars
 
 Side effects include Coughing, Blurred Vision, Dry Mouth and a slight focused feeling. Light your cigs with matches or a zippo.
 
-![Cigarette](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/cig.png)
-![Cigar](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/cigar.png)
+![Cigarette](doc/dayz_tools/tree_mod_images/cig.png)
+![Cigar](doc/dayz_tools/tree_mod_images/cigar.png)
 
 ## Drug Packs
 
 Ever felt like your pockets just can't hold enough drugs? Well look no further. Now you can make packs of cigarettes or joints and even make a carton to hold even more! Don't look like a chump. Make yours today!
 
-![Zweed Pack](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/weed-pack.png)
-![Cig Pack](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/cig-pack.png)
+![Zweed Pack](doc/dayz_tools/tree_mod_images/weed-pack.png)
+![Cig Pack](doc/dayz_tools/tree_mod_images/cig-pack.png)
 
 ## Cartons
 
 Sometimes a box of joints fails to meet the requirements of the highest of cultured individuals. This container will allow you to store so many smokable items that you might as well become a chimney.
 
-![Zweed Carton](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/weed-carton.png)
-![Cig Carton](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/cigarette-carton.png)
-![Cigar Box](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/cigar-box.png)
+![Zweed Carton](doc/dayz_tools/tree_mod_images/weed-carton.png)
+![Cig Carton](doc/dayz_tools/tree_mod_images/cigarette-carton.png)
+![Cigar Box](doc/dayz_tools/tree_mod_images/cigar-box.png)
 
 ## Medical
 
@@ -236,13 +236,13 @@ Sometimes a box of joints fails to meet the requirements of the highest of cultu
 
 For those times when you go too far.
 
-![Naloxone](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/naloxone.png)
+![Naloxone](doc/dayz_tools/tree_mod_images/naloxone.png)
 
 ### Optics
 
 - Binoculars can be equiped to slots
 
-![Optics](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/optics.png)
+![Optics](doc/dayz_tools/survivalists_mod_items/optics.png)
 
 ### Radio
 
@@ -255,7 +255,7 @@ For those times when you go too far.
   - 5km Handheld Radio (Black)
   - 7.5km Military Radio (Green)
 
-![Radio](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/radio.png)
+![Radio](doc/dayz_tools/survivalists_mod_items/radio.png)
 
 ### Tools
 
@@ -296,7 +296,7 @@ This mod adds a new emote category called **Custom** to the DayZ emote wheel. It
 - Sweat
 - Break Leg (breaks your leg)
 
-![Emote Wheel](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/emote-wheel.png)
+![Emote Wheel](doc/dayz_tools/tree_mod_images/emote-wheel.png)
 
 ## Sleeping
 
@@ -308,7 +308,7 @@ Lying down now causes the screen to go dark as your eye close.
 
 Sleep is required by all humans, luckily you are stronger than most. Sleep 10 minutes for every 4 hours... the true uberman. If you do not sleep you will pass out.
 
-![Sleep Notifier](../../../ItsATreeeModSource/src/dayz_tools/tree_mod_images/sleep-notifier.png)
+![Sleep Notifier](doc/dayz_tools/tree_mod_images/sleep-notifier.png)
 
 ### BioHazard
 
@@ -351,11 +351,11 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 ### Furniture
 
-![Furniture](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/furniture.png)
+![Furniture](doc/dayz_tools/survivalists_mod_items/furniture.png)
 
 ### Signs
 
-![Signs](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/signs.png)
+![Signs](doc/dayz_tools/survivalists_mod_items/signs.png)
 
 ### Vehicles
 
@@ -363,7 +363,7 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 ## Ammunition
 
-![Ammunition](../../../ItsATreeeModSource/src/dayz_tools/survivalists_mod_items/ammunition.png)
+![Ammunition](doc/dayz_tools/survivalists_mod_items/ammunition.png)
 
 # Attributions
 
@@ -707,3 +707,9 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 # Reference
 
 - https://community.bistudio.com/wiki/DayZ_Contaminated_Areas_Configuration
+
+- https://community.bistudio.com/wiki?title=DayZ:Gameplay_Settings
+
+- https://community.bistudio.com/wiki?title=DayZ:Weather_Configuration
+
+- https://community.bistudio.com/wiki?title=DayZ:Object_Spawner
