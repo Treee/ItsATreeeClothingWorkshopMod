@@ -512,7 +512,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Tac_Vest_Black : SRP_Tac_Vest_Green
+  class SRP_Tac_Vest_Black: SRP_Tac_Vest_Green
 	{
     scope=2;	
     hiddenSelections[]=
@@ -524,7 +524,7 @@ class CfgVehicles
       "Survivalists_Mods\characters\vests\data\Tac_vest_CO.paa"
 		};	
 	};
-	class SRP_Tac_Vest_Tan : SRP_Tac_Vest_Green
+	class SRP_Tac_Vest_Tan: SRP_Tac_Vest_Green
 	{
     scope=2;
     hiddenSelections[]=
