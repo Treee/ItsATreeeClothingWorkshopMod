@@ -1,22 +1,8 @@
 class SRP_KitBase extends ItemBase 
 {
-  ref protected EffectSound 		m_DeployLoopSound;
-	protected bool 					m_DeployedRegularly;
-
-  void SRP_KitBase()
-	{
-		m_DeployLoopSound = new EffectSound;
-		RegisterNetSyncVariableBool("m_IsSoundSynchRemote");
-		RegisterNetSyncVariableBool("m_IsDeploySound");
-	}
+  void SRP_KitBase(){}
   
-  void ~SRP_KitBase()
-	{
-		if ( m_DeployLoopSound )
-		{
-			SEffectManager.DestroySound( m_DeployLoopSound );
-		}
-	}
+  void ~SRP_KitBase(){}
 
   string GetKitItemName()
   {
@@ -27,31 +13,6 @@ class SRP_KitBase extends ItemBase
     }
     return kitType;
   }
-
-  override void OnVariablesSynchronized()
-	{
-		super.OnVariablesSynchronized();
-		
-		if ( IsDeploySound() )
-		{
-			PlayDeploySound();
-		}
-				
-		if ( CanPlayDeployLoopSound() )
-		{
-			PlayDeployLoopSound();
-		}
-					
-		if ( m_DeployLoopSound && !CanPlayDeployLoopSound() )
-		{
-			StopDeployLoopSound();
-		}
-		
-		if ( m_DeployedRegularly && IsSoundSynchRemote() )
-		{
-			PlayDeployFinishSound();
-		}
-	}
 
   override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
 	{
@@ -64,67 +25,17 @@ class SRP_KitBase extends ItemBase
 
       this.Delete();
 		}
-
-		SetIsPlaceSound(true);
-	}
-
-  override void OnEndPlacement()
-	{
-		m_DeployedRegularly = true;
-		SoundSynchRemote();
-	}
-
-  override void OnPlacementCancelled( Man player )
-	{
-		super.OnPlacementCancelled(player);
-		m_DeployedRegularly = false;
 	}
 
 	override bool IsDeployable() 
   {
-      return true;
+    return true;
   }
 
   override bool CanAssignAttachmentsToQuickbar()
 	{
 		return false;
 	}
-
-  override string GetDeploySoundset()
-	{
-		return "putDown_FenceKit_SoundSet";
-	}
-	
-	override string GetLoopDeploySoundset()
-	{
-		return "BarbedWire_Deploy_loop_SoundSet";
-	}
-
-  override string GetDeployFinishSoundset()
-	{
-		return "";
-	}
-
-  void PlayDeployLoopSound()
-	{		
-		if ( GetGame().IsMultiplayer() && GetGame().IsClient() || !GetGame().IsMultiplayer() )
-		{		
-			if ( !m_DeployLoopSound.IsSoundPlaying() )
-			{
-				m_DeployLoopSound = SEffectManager.PlaySound( GetLoopDeploySoundset(), GetPosition() );
-			}
-		}
-	}
-	
-	void StopDeployLoopSound()
-	{
-		if ( GetGame().IsMultiplayer() && GetGame().IsClient() || !GetGame().IsMultiplayer() )
-		{	
-			m_DeployLoopSound.SetSoundFadeOut(0.5);
-			m_DeployLoopSound.SoundStop();
-		}
-	}
-
 
   override void SetActions()
 	{

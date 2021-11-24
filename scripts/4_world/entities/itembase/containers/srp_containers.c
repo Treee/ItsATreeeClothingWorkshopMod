@@ -10,7 +10,7 @@ class SRP_DeployableContainer_Base extends DeployableContainer_Base
 	}
   override bool CanPutIntoHands(EntityAI parent)
   {
-    return true;
+    return GetInventory().AttachmentCount() == 0 && GetNumberOfItems() == 0;
   }
 };
 
