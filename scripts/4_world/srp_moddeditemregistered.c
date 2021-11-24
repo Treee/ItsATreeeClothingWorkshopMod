@@ -3,9 +3,9 @@ modded class ModItemRegisterCallbacks
   override void RegisterOneHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
   {
     super.RegisterOneHanded( pType, pBehavior );        
-    pType.AddItemInHandsProfileIK("SRP_LeatherPouch_Default", "dz/anims/workspaces/player/player_main/weapons/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm"); 
-    pType.AddItemInHandsProfileIK("SRP_LeatherPouch_Medieval", "dz/anims/workspaces/player/player_main/weapons/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm"); 
-    pType.AddItemInHandsProfileIK("SRP_LeatherPouch_Small", "dz/anims/workspaces/player/player_main/weapons/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm");     
+    pType.AddItemInHandsProfileIK("SRP_LeatherPouch_Default", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm"); 
+    pType.AddItemInHandsProfileIK("SRP_LeatherPouch_Medieval", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm"); 
+    pType.AddItemInHandsProfileIK("SRP_LeatherPouch_Small", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm");     
     pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Pistol60Count", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
     pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Rifle40Count", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
     pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Shotgun60Count", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
@@ -23,7 +23,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_ConsumableDrug_CocaineTainted", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can_opened.anm");
     pType.AddItemInHandsProfileIK("SRP_KarambitKnife", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/kitchenknife.anm"); 
     pType.AddItemInHandsProfileIK("SRP_WarCleaver", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/kitchenknife.anm"); 
-    pType.AddItemInHandsProfileIK("SRP_DrugBrick_Cocaine", "dz/anims/workspaces/player/player_main/weapons/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm");     
+    pType.AddItemInHandsProfileIK("SRP_DrugBrick_Cocaine", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/duct_tape.anm");     
     pType.AddItemInHandsProfileIK("SRP_Mining_RawOre_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/SmallStone.anm");
     pType.AddItemInHandsProfileIK("SRP_Mining_UnCutGem_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/SmallStone.anm");
     pType.AddItemInHandsProfileIK("SRP_Mining_CutGem_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/SmallStone.anm");    
