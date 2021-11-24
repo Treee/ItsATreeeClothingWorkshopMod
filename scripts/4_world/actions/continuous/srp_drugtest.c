@@ -1,12 +1,15 @@
 class ActionTestDrugsTarget extends ActionTestBloodTarget
 {	
+  override string GetText()
+  {
+    return "Test for Drugs";
+  }
+
 	override void OnFinishProgressServer( ActionData action_data )
 	{	
     super.OnFinishProgressServer(action_data);
 		PlayerBase ntarget = PlayerBase.Cast( action_data.m_Target.GetObject() );
-        
-    super.OnFinishProgressServer(action_data);    
-
+  
     string testResult = "";
     if (ntarget.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TOBACCO )) 
     {
@@ -30,7 +33,7 @@ class ActionTestDrugsTarget extends ActionTestBloodTarget
     }
 
     if (testResult == "") {
-      testResult = "Test Results Negative";
+      testResult = "Drug Test Results Negative";
     }
 		ntarget.SendMessageToClient(ntarget, testResult);
 	}
@@ -38,6 +41,11 @@ class ActionTestDrugsTarget extends ActionTestBloodTarget
 
 class ActionTestDrugsSelf extends ActionTestBloodSelf
 {
+  override string GetText()
+  {
+    return "Test for Drugs";
+  }
+
 	override void OnFinishProgressServer( ActionData action_data )
 	{
     super.OnFinishProgressServer(action_data);    
@@ -45,27 +53,27 @@ class ActionTestDrugsSelf extends ActionTestBloodSelf
     string testResult = "";
     if (action_data.m_Player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TOBACCO )) 
     {
-      testResult += "Tobacco: Positive | ";
+      testResult += "Tobacco: Positive ";
     }
     if (action_data.m_Player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_STONED )) 
     { 
-      testResult += "THC: Positive | ";
+      testResult += "THC: Positive ";
     }
     if (action_data.m_Player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSMILE ) || action_data.m_Player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSKULL )) 
     {
-      testResult += "LSD: Positive | ";
+      testResult += "LSD: Positive ";
     }
     if (action_data.m_Player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_METH )) 
     {
-      testResult += "Meth: Positive | ";
+      testResult += "Meth: Positive ";
     }
     if (action_data.m_Player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BATHSALTS )) 
     {
-      testResult += "Bath Salts: Positive | ";
+      testResult += "Bath Salts: Positive ";
     }
 
     if (testResult == "") {
-      testResult = "Test Results Negative";
+      testResult = "Drug Test Results Negative";
     }
 		action_data.m_Player.SendMessageToClient(action_data.m_Player, testResult);
 	}

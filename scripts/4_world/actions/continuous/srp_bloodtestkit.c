@@ -35,7 +35,7 @@ modded class ActionTestBloodTarget
       testResult += "BioHazard: " + biohazardSeverity + " ";
     }
     if (testResult == "") {
-      testResult = "Test Results Negative";
+      testResult = "Blood Test Results Negative";
     }
 		ntarget.SendMessageToClient(ntarget, testResult);
     action_data.m_Player.SendMessageToClient(action_data.m_Player, testResult);
@@ -93,7 +93,7 @@ modded class ActionTestBloodSelf
       testResult += "BioHazard: " + biohazardSeverity + " ";
     }
     if (testResult == "") {
-      testResult = "Test Results Negative";
+      testResult = "Blood Test Results Negative";
     }
 		action_data.m_Player.SendMessageToClient(action_data.m_Player, testResult);
 	}

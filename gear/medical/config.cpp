@@ -770,6 +770,8 @@ class CfgVehicles
   class SRP_DrugTestKit: BloodTestKit
   {
     scope=2;
+    displayName="Drug Test Kit";    
+		descriptionShort="Tests for drugs in the system";
   }
 
   //--------------------------------- CUSTOM SYRINE INJECTIONS
