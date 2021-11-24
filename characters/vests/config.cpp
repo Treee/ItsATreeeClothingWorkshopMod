@@ -343,7 +343,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot[]={"Vest"};
+    inventorySlot="Vest";
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -557,7 +557,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot[]={"Vest"};
+    inventorySlot="Vest";
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -771,7 +771,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-		inventorySlot[]={"Vest"};
+		inventorySlot="Vest";
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -976,7 +976,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot[]={"Vest"};
+    inventorySlot="Vest";
     simulation="clothing";
 		vehicleClass="Clothing";
     itemInfo[]=
@@ -1103,7 +1103,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot[]={"Vest"};
+    inventorySlot="Vest";
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1309,7 +1309,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot[]={"Vest"};
+    inventorySlot="Vest";
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1516,7 +1516,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot[]={"Vest"};
+    inventorySlot="Vest";
 		itemSize[]={5,5};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -1722,7 +1722,7 @@ class CfgVehicles
       "LargePouch3",
       "LargePouch4",
 		};
-    inventorySlot[]={"Vest"};
+    inventorySlot="Vest";
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemSize[]={5,5};
@@ -1917,7 +1917,7 @@ class CfgVehicles
     descriptionShort="Base Pouch, How can you see this?";
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
 		inventorySlot[]=
-		{
+    {
 			"VestPouch",
       "SmallPouch1",
       "SmallPouch2",
@@ -1962,7 +1962,7 @@ class CfgVehicles
     descriptionShort="Base Pouch, How can you see this?";
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
 		inventorySlot[]=
-		{
+    {
 			"VestPouch",
       "LargePouch1",
       "LargePouch2",
@@ -2006,7 +2006,7 @@ class CfgVehicles
 		descriptionShort="A small drinks bottle";
 		model="Survivalists_Mods\characters\vests\SRP_Small_Bottle.p3d";
 		inventorySlot[]=
-		{
+    {
 			"Belt_Left"
 		};
 		weight=250;
