@@ -3,11 +3,34 @@ class SRP_FoodCanRaw_Colorbase extends Edible_Base
 	override bool CanBeCooked()
 	{
 		return true;
-	}		
+	}
+  
+  override bool CanBeCookedOnStick()
+	{
+		return true;
+	}	
 	
 	override bool IsMeat()
 	{
 		return true;
+	}
+
+  override bool CanDecay()
+	{
+		return true;
+	}
+
+  override FoodStageType GetNextFoodStageType( CookingMethodType cooking_method )
+	{
+    FoodStageType superStage = super.GetNextFoodStageType(cooking_method);
+    if (IsFoodRaw())
+    {
+      if (cooking_method == CookingMethodType.BAKING || cooking_method == CookingMethodType.BOILING || cooking_method == CookingMethodType.DRYING)
+      {
+        superStage = FoodStageType.BAKED;
+      }
+    }
+    return superStage;
 	}
 	
 	override void SetActions()
@@ -26,8 +49,14 @@ class SRP_FoodCanRaw_VeggieMeatCombo extends SRP_FoodCanRaw_Colorbase {};
 class SRP_FoodCanRaw_VeggieHumanMeatCombo extends SRP_FoodCanRaw_Colorbase {};
 
 
-class SRP_FoodCanPreserved_Colorbase : Edible_Base {};
-class SRP_FoodCanPreserved_Veggies : SRP_FoodCanPreserved_Colorbase
+class SRP_FoodCanPreserved_Colorbase extends Edible_Base 
+{
+  override bool CanDecay()
+	{
+		return false;
+	}
+};
+class SRP_FoodCanPreserved_Veggies extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
@@ -35,7 +64,7 @@ class SRP_FoodCanPreserved_Veggies : SRP_FoodCanPreserved_Colorbase
 	}
 };
 
-class SRP_FoodCanPreserved_Meat : SRP_FoodCanPreserved_Colorbase
+class SRP_FoodCanPreserved_Meat extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
@@ -43,7 +72,7 @@ class SRP_FoodCanPreserved_Meat : SRP_FoodCanPreserved_Colorbase
 	}
 };
 
-class SRP_FoodCanPreserved_HumanMeat : SRP_FoodCanPreserved_Colorbase
+class SRP_FoodCanPreserved_HumanMeat extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
@@ -51,7 +80,7 @@ class SRP_FoodCanPreserved_HumanMeat : SRP_FoodCanPreserved_Colorbase
 	}
 };
 
-class SRP_FoodCanPreserved_VeggieMeatCombo : SRP_FoodCanPreserved_Colorbase
+class SRP_FoodCanPreserved_VeggieMeatCombo extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{
@@ -59,7 +88,7 @@ class SRP_FoodCanPreserved_VeggieMeatCombo : SRP_FoodCanPreserved_Colorbase
 	}
 };
 
-class SRP_FoodCanPreserved_VeggieHumanMeatCombo : SRP_FoodCanPreserved_Colorbase
+class SRP_FoodCanPreserved_VeggieHumanMeatCombo extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
 	{

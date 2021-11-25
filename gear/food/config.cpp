@@ -1671,7 +1671,7 @@ class CfgVehicles
     rotationFlags=63;
 		itemSize[]={2,2};
 		weight=440;
-		varQuantityInit=150;
+		varQuantityInit=200;
 		varQuantityMin=0;
 		varQuantityMax=600;
     canBeSplit=1;
@@ -1686,34 +1686,42 @@ class CfgVehicles
 			"SmokingC",
 			"SmokingD"
 		};
+    class AnimationSources: FoodAnimationSources
+		{
+		};
     class Food
 		{
 			class FoodStages
 			{
 				class Raw
 				{
-					nutrition_properties[]={5,160,70,1,0,4};
+					nutrition_properties[]={7,160,70,1,0,4};
 					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
 				};
 				class Rotten
 				{
-					nutrition_properties[]={2,120,35,1,0,"4+16"};
+					nutrition_properties[]={10,75,35,1,0,"4+16"};
 					cooking_properties[]={0,0};
 				};
 				class Baked
 				{
-					nutrition_properties[]={5,50,50.5,1,0};
-					cooking_properties[]={100,290};
+					nutrition_properties[]={3,500,50,1,0};
+					cooking_properties[]={70,290};
 				};
 				class Boiled
 				{
-					nutrition_properties[]={5,50,50,1,0};
-					cooking_properties[]={100,180};
+					nutrition_properties[]={3,450,50,1,0};
+					cooking_properties[]={100,600};
+				};
+        class Dried
+				{
+					nutrition_properties[]={3,450,0,1,0};
+					cooking_properties[]={70,300,80};
 				};
 				class Burned
 				{
-					nutrition_properties[]={2,120,17.5,1,0,16};
-					cooking_properties[]={100,305};
+					nutrition_properties[]={7,120,17.5,1,0,16};
+					cooking_properties[]={100,320};
 				};
 			};
       class FoodStageTransitions: MeatStageTransitions
@@ -1818,31 +1826,36 @@ class CfgVehicles
 			{
 				class Raw
 				{
-					nutrition_properties[]={5,160,70,1,0,4};
+					nutrition_properties[]={7,160,70,1,0,8};
 					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
 				};
 				class Rotten
 				{
-					nutrition_properties[]={2,120,35,1,0,"4+16"};
+					nutrition_properties[]={10,75,35,1,0,"8+16"};
 					cooking_properties[]={0,0};
 				};
 				class Baked
 				{
-					nutrition_properties[]={5,50,50.5,1,0,2};
-					cooking_properties[]={70,120};
+					nutrition_properties[]={3,500,50.5,1,2,8};
+					cooking_properties[]={70,290};
 				};
 				class Boiled
 				{
-					nutrition_properties[]={5,50,50,1,0,2};
-					cooking_properties[]={70,125};
+					nutrition_properties[]={3,450,50,1,2,8};
+					cooking_properties[]={100,600};
+				};
+        class Dried
+				{
+					nutrition_properties[]={3,450,0,1,2,8};
+					cooking_properties[]={70,300,80};
 				};
 				class Burned
 				{
-					nutrition_properties[]={2,120,17.5,1,0,16};
-					cooking_properties[]={100,300};
+					nutrition_properties[]={7,120,17.5,1,0,"8 + 16"};
+					cooking_properties[]={100,320};
 				};
 			};
-			class FoodStageTransitions: MeatStageTransitions
+      class FoodStageTransitions: MeatStageTransitions
 			{
 			};
 		};
@@ -1880,31 +1893,36 @@ class CfgVehicles
 			{
 				class Raw
 				{
-					nutrition_properties[]={5,160,70,1,0,4};
+					nutrition_properties[]={7,160,70,1,0,4};
 					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
 				};
 				class Rotten
 				{
-					nutrition_properties[]={2,120,35,1,0,"4+16"};
+					nutrition_properties[]={10,75,35,1,0,"4+16"};
 					cooking_properties[]={0,0};
 				};
 				class Baked
 				{
-					nutrition_properties[]={5,50,50.5,1,0,2};
-					cooking_properties[]={70,120};
+					nutrition_properties[]={3,200,400,1,0};
+					cooking_properties[]={70,290};
 				};
 				class Boiled
 				{
-					nutrition_properties[]={5,50,50,1,0,2};
-					cooking_properties[]={70,125};
+					nutrition_properties[]={3,200,450,1,0};
+					cooking_properties[]={100,600};
+				};
+        class Dried
+				{
+					nutrition_properties[]={3,200,200,1,0};
+					cooking_properties[]={70,300,80};
 				};
 				class Burned
 				{
-					nutrition_properties[]={2,120,17.5,1,0,16};
-					cooking_properties[]={100,300};
+					nutrition_properties[]={7,120,17.5,1,0,16};
+					cooking_properties[]={100,320};
 				};
 			};
-			class FoodStageTransitions: MeatStageTransitions
+      class FoodStageTransitions: MeatStageTransitions
 			{
 			};
 		};
