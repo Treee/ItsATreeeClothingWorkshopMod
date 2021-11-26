@@ -342,6 +342,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
     inventorySlot="Vest";
 		simulation="clothing";
@@ -492,6 +493,7 @@ class CfgVehicles
           "LargePouch2",
           "LargePouch3",
           "LargePouch4",
+          "LargePouch5",
 				};
 			};
 		};
@@ -556,6 +558,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
     inventorySlot="Vest";
 		simulation="clothing";
@@ -706,6 +709,7 @@ class CfgVehicles
           "LargePouch2",
           "LargePouch3",
           "LargePouch4",
+          "LargePouch5",
 				};
 			};
 		};
@@ -770,6 +774,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
 		inventorySlot="Vest";
 		simulation="clothing";
@@ -919,6 +924,7 @@ class CfgVehicles
           "LargePouch2",
           "LargePouch3",
           "LargePouch4",
+          "LargePouch5",
 				};
 			};
 		};
@@ -975,6 +981,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
     inventorySlot="Vest";
     simulation="clothing";
@@ -1062,6 +1069,7 @@ class CfgVehicles
           "LargePouch2",
           "LargePouch3",
           "LargePouch4",
+          "LargePouch5",
 				};
 			};
 		};
@@ -1102,6 +1110,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
     inventorySlot="Vest";
 		itemSize[]={5,5};
@@ -1252,6 +1261,7 @@ class CfgVehicles
           "LargePouch2",
           "LargePouch3",
           "LargePouch4",
+          "LargePouch5",
 				};
 			};
 		};
@@ -1308,6 +1318,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
     inventorySlot="Vest";
 		itemSize[]={5,5};
@@ -1458,6 +1469,7 @@ class CfgVehicles
           "LargePouch2",
           "LargePouch3",
           "LargePouch4",
+          "LargePouch5",
 				};
 			};
 		};
@@ -1515,6 +1527,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
     inventorySlot="Vest";
 		itemSize[]={5,5};
@@ -1665,6 +1678,7 @@ class CfgVehicles
           "LargePouch2",
           "LargePouch3",
           "LargePouch4",
+          "LargePouch5",
 				};
 			};
 		};
@@ -1721,6 +1735,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
     inventorySlot="Vest";
 		simulation="clothing";
@@ -1871,6 +1886,7 @@ class CfgVehicles
           "LargePouch2",
           "LargePouch3",
           "LargePouch4",
+          "LargePouch5",
 				};
 			};
 		};
@@ -1968,6 +1984,7 @@ class CfgVehicles
       "LargePouch2",
       "LargePouch3",
       "LargePouch4",
+      "LargePouch5",
 		};
     weight=250;
 		itemSize[]={3,3};
@@ -2129,6 +2146,8 @@ class CfgVehicles
 		displayName="Map Pouch";
 		descriptionShort="A single magazine pouch that holds two Pistol mags";
 		model="Survivalists_Mods\characters\vests\SRP_Map_Pouch.p3d";
+    itemSize[]={3,3};
+		itemsCargoSize[]={3,3};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\SRP_Map_Pouch_Tan_CO.paa"
@@ -2174,6 +2193,11 @@ class CfgVehicles
 		displayName="Pistol Magazine Pouch";
 		descriptionShort="A single magazine pouch that holds two Pistol mags";
 		model="Survivalists_Mods\characters\vests\SRP_Pistol_MagPouch.p3d";
+    attachments[]=
+		{
+			"magazine",
+			"magazine2"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\SRP_Pistol_MagPouch_Tan_CO.paa"
@@ -2221,6 +2245,8 @@ class CfgVehicles
 		displayName="IFAK Pouch";
 		descriptionShort="An Individual First Aid Kit";
 		model="Survivalists_Mods\characters\vests\SRP_IFAK_Pouch.p3d";
+    itemSize[]={5,4};
+    itemsCargoSize[]={5,4};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\SRP_IFAK_Tan_CO.paa"
@@ -2266,6 +2292,10 @@ class CfgVehicles
 		displayName="Magazine Pouch";
 		descriptionShort="A single magazine pouch that holds two AR mags";
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
+    attachments[]=
+		{
+			"magazine3"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\SRP_AR_MagPouch_1_Tan_CO.paa"
@@ -2311,6 +2341,8 @@ class CfgVehicles
 		displayName="Magazine Dump Pouch";
 		descriptionShort="A large bag used for empty magazines";
 		model="Survivalists_Mods\characters\vests\SRP_Empty_Mag_Pouch.p3d";
+    itemSize[]={5,4};
+    itemsCargoSize[]={5,4};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\SRP_Empty_MagPouch_Tan_CO.paa"

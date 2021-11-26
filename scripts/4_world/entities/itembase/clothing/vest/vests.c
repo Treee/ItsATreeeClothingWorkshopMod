@@ -17,43 +17,15 @@ class SRP_ModularVest_Base extends Clothing
     EntityAI alternatePouch;
     if (attachment && attachment.IsInherited(SRP_PouchBase_Small))
     {
-      // it can only attach if there is not a conflicting large pouch
-      if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch1"))
-      {
-        alternatePouch = FindAttachmentBySlotName("LargePouch1");
-      }
-      else if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch3"))
-      {
-        alternatePouch = FindAttachmentBySlotName("LargePouch2");
-      }
-      else if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch4"))
-      {
-        alternatePouch = FindAttachmentBySlotName("LargePouch3");
-      }
-      else if (slotId == InventorySlots.GetSlotIdFromString("SmallPouch6"))
-      {
-        alternatePouch = FindAttachmentBySlotName("LargePouch4");
-      }
+      SRP_PouchBase_Small smallPouch = SRP_PouchBase_Small.Cast(attachment);
+      string largePouchAlternateSlotName = smallPouch.GetLinkedLargePouchSlot(slotId);
+      alternatePouch = FindAttachmentBySlotName(largePouchAlternateSlotName);      
     }
     else if (attachment && attachment.IsInherited(SRP_PouchBase_Large))
     {
-      // it can only attach if there is not a conflicting small pouch
-      if (slotId == InventorySlots.GetSlotIdFromString("LargePouch1"))
-      {
-        alternatePouch = FindAttachmentBySlotName("SmallPouch1");
-      }
-      else if (slotId == InventorySlots.GetSlotIdFromString("LargePouch2"))
-      {
-        alternatePouch = FindAttachmentBySlotName("SmallPouch3");
-      }
-      else if (slotId == InventorySlots.GetSlotIdFromString("LargePouch3"))
-      {
-        alternatePouch = FindAttachmentBySlotName("SmallPouch4");
-      }
-      else if (slotId == InventorySlots.GetSlotIdFromString("LargePouch4"))
-      {
-        alternatePouch = FindAttachmentBySlotName("SmallPouch6");
-      }
+      SRP_PouchBase_Large largePouch = SRP_PouchBase_Large.Cast(attachment);
+      string smallPouchAlternateSlotName = largePouch.GetLinkedSmallPouchSlot(slotId);
+      alternatePouch = FindAttachmentBySlotName(smallPouchAlternateSlotName);      
     }
 
     if (alternatePouch)
@@ -81,9 +53,13 @@ class SRP_ModularVest_Base extends Clothing
     {
       attachment = FindAttachmentBySlotName("LargePouch3");
     }
-    else if (slot_name == "SmallPouch6")
+    else if (slot_name == "SmallPouch5")
     {
       attachment = FindAttachmentBySlotName("LargePouch4");
+    }
+    else if (slot_name == "SmallPouch6")
+    {
+      attachment = FindAttachmentBySlotName("LargePouch5");
     }
     // Large Pouch display
     else if (slot_name == "LargePouch1")
@@ -100,9 +76,12 @@ class SRP_ModularVest_Base extends Clothing
     }
     else if (slot_name == "LargePouch4")
     {
+      attachment = FindAttachmentBySlotName("SmallPouch5");
+    }
+    else if (slot_name == "LargePouch5")
+    {
       attachment = FindAttachmentBySlotName("SmallPouch6");
     }
-
     if (attachment)
     {
       canDisplay = false;

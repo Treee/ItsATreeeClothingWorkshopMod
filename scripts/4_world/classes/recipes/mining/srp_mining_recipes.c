@@ -445,11 +445,11 @@ class Craft_SRP_SmashBagIntoCrushedStones extends RecipeBase
 	}
 };
 
-class Craft_SRP_CrucibleEmpty extends RecipeBase
+class Craft_SRP_CrucibleEmptyLime extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Build Empty Crucible";
+		m_Name = "Begin Crucible";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -463,7 +463,7 @@ class Craft_SRP_CrucibleEmpty extends RecipeBase
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 2;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -471,7 +471,7 @@ class Craft_SRP_CrucibleEmpty extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_MiningCraft_CrushedStoneBag");//you can insert multiple ingredients this way
+		InsertIngredient(0,"GardenLime");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -480,17 +480,17 @@ class Craft_SRP_CrucibleEmpty extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
+		InsertIngredient(1,"SRP_MetalBucket");//you can insert multiple ingredients this way
 		
-		m_IngredientAddHealth[1] = -20;// 0 = do nothing
+		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = false;// false = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
+		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		AddResult("SRP_ForgeCrucible_Empty");//add results here
+		AddResult("SRP_MetalBucket_Lime");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
@@ -509,7 +509,75 @@ class Craft_SRP_CrucibleEmpty extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		Debug.Log("Craft_SRP_CrucibleEmpty: Recipe Do method called","recipes");
+		Debug.Log("Craft_SRP_CrucibleEmptyLime: Recipe Do method called","recipes");
+	}
+};
+
+class Craft_SRP_CrucibleEmptyMortar extends RecipeBase
+{	
+	override void Init()
+	{
+		m_Name = "Harden Crucible";
+		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
+		m_AnimationLength = 1;//animation length in relative time units
+		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
+		
+		
+		//conditions
+		m_MinDamageIngredient[0] = -1;//-1 = disable check
+		m_MaxDamageIngredient[0] = 2;//-1 = disable check
+		
+		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
+		
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 2;//-1 = disable check
+		
+		m_MinQuantityIngredient[1] = -1;//-1 = disable check
+		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+		//----------------------------------------------------------------------------------------------------------------------
+		
+		//INGREDIENTS
+		//ingredient 1
+		InsertIngredient(0,"BBP_Mortar_Mix");//you can insert multiple ingredients this way
+		
+		m_IngredientAddHealth[0] = 0;// 0 = do nothing
+		m_IngredientSetHealth[0] = -1; // -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
+		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
+		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//ingredient 2
+		InsertIngredient(1,"SRP_MetalBucket_Lime");//you can insert multiple ingredients this way
+		
+		m_IngredientAddHealth[1] = 0;// 0 = do nothing
+		m_IngredientSetHealth[1] = -1; // -1 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
+		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
+		//----------------------------------------------------------------------------------------------------------------------
+		
+		//result1
+		AddResult("SRP_MetalBucket_Mortar");//add results here
+
+		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
+		m_ResultSetQuantity[0] = -1;//-1 = do nothing
+		m_ResultSetHealth[0] = -1;//-1 = do nothing
+		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
+		m_ResultInheritsColor[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result classname will be a composite of the name provided in AddResult method and config value "color" of ingredient (value)
+		m_ResultToInventory[0] = -2;//(value) == -2 spawn result on the ground;(value) == -1 place anywhere in the players inventory, (value) >= 0 means switch position with ingredient number(value)
+		m_ResultUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this result
+		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
+	}
+
+	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+	{
+    return true;
+	}
+
+	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
+	{
+		Debug.Log("Craft_SRP_CrucibleEmptyMortar: Recipe Do method called","recipes");
 	}
 };
 
@@ -616,7 +684,7 @@ class Craft_SRP_CrucibleFilled extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"SRP_ForgeCrucible_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(1,"SRP_ForgeCrucible_Empty");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[1] = -24;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing

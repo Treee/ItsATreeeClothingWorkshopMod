@@ -1607,7 +1607,39 @@ class CfgVehicles
 		weight=250;
 		itemSize[]={3,3};
 		absorbency=0.30000001;
+    varTemperatureMax=1500;
 		physLayer="item_small";
+	};
+
+  class SRP_MetalBucket_Lime: SRP_MetalBucket  // new
+	{
+		scope=2;
+    displayName="Bucket Covered With Lime";
+		descriptionShort="Needs some mortar to seal in the greatness.";
+    itemsCargoSize[]={0,0};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_bucket_lime_co.paa"
+    };
+	};
+  class SRP_MetalBucket_Mortar: SRP_MetalBucket  // new
+	{
+		scope=2;
+    displayName="Bucket Covered With Mortar";
+		descriptionShort="Needs some heat to seel in the greatness.";
+    itemsCargoSize[]={0,0};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_bucket_mortar_co.paa"
+    };
 	};
 
   //----------------------------------- Playing/Trading Cards

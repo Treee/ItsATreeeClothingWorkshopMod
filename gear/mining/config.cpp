@@ -793,8 +793,8 @@ class CfgVehicles
 		weight=440;
 		itemSize[]={4,3};
     color="base";
-		itemsCargoSize[]={4,3};
-		inventorySlot[]={	};
+		itemsCargoSize[]={0,0};
+		inventorySlot[]={};
 		canBeDigged=0;
 		allowOwnedCargoManipulation=1;
 		destroyOnEmpty=0;
@@ -802,7 +802,7 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
-		varTemperatureMax=1000;
+		varTemperatureMax=1500;
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -856,17 +856,21 @@ class CfgVehicles
   class SRP_ForgeCrucible_Empty: SRP_ForgeCrucible_ColorBase
 	{
 		scope=2;
-		displayName="Molten Metal - Empty";
-		descriptionShort="Very hot molten metal.";
+    model="Survivalists_Mods\gear\camping\srp_bucket.p3d";
+		displayName="Empty Forge Crucible - Empty";
+		descriptionShort="Use this to melt down raw ore.";
     color="empty";
+    attachments[]=
+    {
+      "SRP_RawOre"
+    };
     hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\mining\data\forge_crucible_empty_co.paa"
-		};
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\srp_bucket_crucible_co.paa"
+    };
 	};
 
   class SRP_ForgeCrucible_Copper: SRP_ForgeCrucible_ColorBase
@@ -1095,7 +1099,10 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=24;
 		varStackMax=24;
-		inventorySlot[]={};
+		inventorySlot[]=
+    {
+      "SRP_RawOre"
+    };
 		class DamageSystem
 		{
 			class GlobalHealth

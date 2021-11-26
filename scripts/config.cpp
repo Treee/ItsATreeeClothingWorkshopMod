@@ -11,6 +11,9 @@ class CfgPatches
 
 class CfgSlots
 {
+  //=====================BASE GAME OVERRIDE
+
+  //===================== CUSTOM
   class Slot_Cassette
 	{
 		name="Cassette";
@@ -576,65 +579,77 @@ class CfgSlots
   class Slot_SmallPouch1
   {
 		name="SmallPouch1";
-		displayName="Small Pouch 1";
+		displayName="Small Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch2
   {
 		name="SmallPouch2";
-		displayName="Small Pouch 2";
+		displayName="Small Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch3
   {
 		name="SmallPouch3";
-		displayName="Small Pouch 3";
+		displayName="Small Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch4
   {
 		name="SmallPouch4";
-		displayName="Small Pouch 4";
+		displayName="Small Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch5
   {
 		name="SmallPouch5";
-		displayName="Small Pouch 5";
+		displayName="Small Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SmallPouch6
   {
 		name="SmallPouch6";
-		displayName="Small Pouch 6";
+		displayName="Small Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
 
   class Slot_LargePouch1
   {
 		name="LargePouch1";
-		displayName="Large Pouch 1";
+		displayName="Large Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_LargePouch2
   {
 		name="LargePouch2";
-		displayName="Large Pouch 2";
+		displayName="Large Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_LargePouch3
   {
 		name="LargePouch3";
-		displayName="Large Pouch 3";
+		displayName="Large Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_LargePouch4
   {
 		name="LargePouch4";
-		displayName="Large Pouch 4";
+		displayName="Large Pouch";
 		ghostIcon="set:dayz_inventory image:missing";
   }
-
+  class Slot_LargePouch5
+  {
+		name="LargePouch5";
+		displayName="Large Pouch";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  
+  class Slot_SRP_RawOre
+  {
+		name="SRP_RawOre";
+		displayName="Raw Ore";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
   // ------------------------ CARDS
   class Slot_CardHand1
   {
@@ -1201,6 +1216,13 @@ class CfgNonAIVehicles
     model = "Survivalists_Mods\proxy\forge_stoneadvancedbellows.p3d"; //proxy path 
   };
 
+  class Proxysrp_pouch_magazine_proxy1: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"magazine3"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_pouch_magazine_proxy1.p3d"; //proxy path 
+  };
+
   class Proxysrp_patch_proxy: ProxyAttachment //same as p3d name
   {
     scope = 2;
@@ -1267,6 +1289,12 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"LargePouch4"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_largepouch_proxy4.p3d"; //proxy path 
+  };
+  class Proxysrp_largepouch_proxy5: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"LargePouch5"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_largepouch_proxy5.p3d"; //proxy path 
   };
 
   class Proxysrp_cardhand_proxy1: ProxyAttachment //same as p3d name
