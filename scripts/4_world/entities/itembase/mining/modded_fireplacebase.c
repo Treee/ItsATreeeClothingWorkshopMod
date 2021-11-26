@@ -1,20 +1,24 @@
 modded class FireplaceBase
 {
-  int m_DamageCounter = 0;
+  override void EECargoOut(EntityAI item)
+	{
+		super.EECargoOut(item);
+    SRP_MetalBucket_Mortar mortarBucket = SRP_MetalBucket_Mortar.Cast(item);
+    if (mortarBucket)
+    {
+      mortarBucket.ResetCounter();
+    };
+	}
 
-  protected void AddTemperatureToItemByFire( ItemBase item )
+  override protected void AddTemperatureToItemByFire( ItemBase item )
 	{
     super.AddTemperatureToItemByFire(item);
     SRP_MetalBucket_Mortar mortarBucket = SRP_MetalBucket_Mortar.Cast(item);
     if (mortarBucket)
     {
-      item.AddHealth( PARAM_BURN_DAMAGE_COEF );
-      m_DamageCounter++;
-      if (m_DamageCounter > 600)
-      {
-        mortarBucket.Delete();
-        GetGame().CreateObject("SRP_ForgeCrucible_Empty", this.GetPosition(), false);
-      }
+      mortarBucket.AddHealth( PARAM_BURN_DAMAGE_COEF );
+      mortarBucket.IncrementHeatTimer(1);
+      mortarBucket.HandleHardenEvent();
     }
 	}
 };

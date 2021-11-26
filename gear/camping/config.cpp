@@ -1630,7 +1630,7 @@ class CfgVehicles
 	{
 		scope=2;
     displayName="Bucket Covered With Mortar";
-		descriptionShort="Needs some heat to seel in the greatness.";
+		descriptionShort="Needs some heat to seal in the greatness.";
     itemsCargoSize[]={0,0};
     hiddenSelections[]=
     {
