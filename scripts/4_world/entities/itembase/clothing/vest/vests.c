@@ -95,7 +95,7 @@ class SRP_ModularVest_Base extends Clothing
     bool canDisplay = super.CanDisplayAttachmentCategory(category_name);
     if (category_name == "Small Pouches")
     {
-      if (FindAttachmentBySlotName("LargePouch1") && FindAttachmentBySlotName("LargePouch2") && FindAttachmentBySlotName("LargePouch3") && FindAttachmentBySlotName("LargePouch4"))
+      if (FindAttachmentBySlotName("LargePouch1") && FindAttachmentBySlotName("LargePouch2") && FindAttachmentBySlotName("LargePouch3") && FindAttachmentBySlotName("LargePouch4") && FindAttachmentBySlotName("LargePouch5"))
       {
         canDisplay = false;
       }
