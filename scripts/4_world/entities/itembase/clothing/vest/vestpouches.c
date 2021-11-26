@@ -187,7 +187,7 @@ class SRP_Magazine_Pouch_1_Tan extends SRP_PouchBase_Large
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
     array<string> acceptableAttachments = {"Mag_AK74_30Rnd", "Mag_AK74_45Rnd", "Mag_AK101_30Rnd", "Mag_AKM_30Rnd", "Mag_AKM_Palm30Rnd", "Mag_Aug_30Rnd",
-     "Mag_STANAG_30Rnd", "Mag_STANAGCoupled_30Rnd", "Mag_CMAG_10Rnd", "Mag_CMAG_20Rnd", "Mag_CMAG_30Rnd", "Mag_CZ61_20Rnd", "Mag_CZ527_5rnd", "Mag_FAL_20Rnd",
+     "Mag_STANAG_30Rnd", "Mag_CMAG_10Rnd", "Mag_CMAG_20Rnd", "Mag_CMAG_30Rnd", "Mag_CZ61_20Rnd", "Mag_CZ527_5rnd", "Mag_FAL_20Rnd",
      "Mag_FAMAS_25Rnd", "Mag_MP5_15Rnd", "Mag_MP5_30Rnd", "Mag_Groza_20Rnd", "Mag_VSS_10Rnd", "Mag_PM73_25Rnd", "Mag_PM73_15Rnd", "Mag_Ruger1022_30Rnd", "Mag_Ruger1022_15Rnd",
      "Mag_Scout_5Rnd", "Mag_SVD_10Rnd", "Mag_UMP_25Rnd", "Mag_VAL_20Rnd"};
 
