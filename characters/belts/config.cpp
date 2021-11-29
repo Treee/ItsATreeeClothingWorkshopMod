@@ -404,7 +404,7 @@ class CfgVehicles
 		scope = 2;
 		displayName = "Tan Knife Sheath";
 		descriptionShort = "A tan knife sheath";
-		// model = "Survivalists_Mods\characters\belts\data\knife_sheath.p3d";
+		model = "Survivalists_Mods\characters\belts\Knife_Sheath.p3d";
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = 
 		{
