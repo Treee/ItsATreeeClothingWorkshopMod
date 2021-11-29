@@ -461,4 +461,143 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack_red_co.paa",
 		};
 	};
+
+  class SRP_Small_Military_Pack_Tan: HuntingBag  // BP_Huntbackpack
+	{
+		scope=2;
+		displayName="Small Military Pack";
+		descriptionShort="A small backpack with Military webbing around it";
+		model="Survivalists_Mods\characters\backpacks\Small_Military_Pack_g.p3d";
+		itemsCargoSize[]={7,7};
+    rotationFlags=1;
+		attachments[]=
+		{
+
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_Tan_CO.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\backpacks\Small_Military_Pack.p3d";
+			female="Survivalists_Mods\characters\backpacks\Small_Military_Pack.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Small_Military_Pack_Black: SRP_Small_Military_Pack_Tan  // new
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_Black_CO.paa"
+		};
+	};
+  class SRP_Small_Military_Pack_Green: SRP_Small_Military_Pack_Tan  // new
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_Green_CO.paa"
+		};
+	};
+
+  class SRP_Big_Military_Pack_Tan: HuntingBag 
+	{
+		scope=2;
+		displayName="Large Military Pack";
+		descriptionShort="A Large backpack with Military webbing around it";
+		model="Survivalists_Mods\characters\backpacks\Big_Military_Pack_g.p3d";
+		itemsCargoSize[]={10,10};
+    rotationFlags=1;
+		attachments[]=
+		{
+
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_Tan_CO.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\backpacks\Big_Military_Pack.p3d";
+			female="Survivalists_Mods\characters\backpacks\Big_Military_Pack.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Big_Military_Pack_Green: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_Green_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Black: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_Black_CO.paa"
+		};
+	};
+
 };
