@@ -19,6 +19,8 @@ class CfgVehicles
   class PlateCarrierHolster;
   class MilitaryBelt;
   class CivilianBelt;
+  class PlateCarrierPouches;
+  class NylonKnifeSheath;
 
   class SRP_LegHolster: CivilianBelt // BP_BeltGunBag
   {
@@ -251,6 +253,217 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\belts\data\Pads_Black_CO.paa"
+		};	
+	};
+
+
+  class SRP_Military_Belt_Tan: MilitaryBelt // new
+  {
+		scope=2;
+		displayName="Military Belt";
+		descriptionShort="A Tactical belt with versatile attachments";
+		model="Survivalists_Mods\characters\belts\Military_Belt_g.p3d";
+    attachments[]=
+		{
+			"Belt_Left",
+			"Chemlight",
+			"Belt_Back",
+			"Belt_Right",
+			"WalkieTalkie"
+		};
+    itemsCargoSize[]={0,0};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Military_Belt_Tan_CO.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Military_belt.rvmat"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\Military_Belt.p3d";
+			female="Survivalists_Mods\characters\belts\Military_Belt.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\belts\data\Military_belt.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\belts\data\Military_belt.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\Military_belt_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\belts\data\Military_belt_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\belts\data\Military_belt_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+	class SRP_Military_Belt_Green: SRP_Military_Belt_Tan
+	{ 
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Military_Belt_Green_CO.paa"
+		};	
+	};
+	class SRP_Military_Belt_Black: SRP_Military_Belt_Tan
+	{ 
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Military_Belt_Black_CO.paa"
+		};	
+	};
+
+	class SRP_Holster_Tan: PlateCarrierHolster
+	{
+		scope=2;
+		displayName = "Tan Holster";
+		descriptionShort = "Tan Holster";
+		hiddenSelections[] = {"zbytek", "camoGround"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Tan_CO.paa",
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Tan_CO.paa"
+		};
+	};
+	class SRP_Holster_Green: PlateCarrierHolster
+	{
+		scope=2;
+		displayName = "Green Holster";
+		descriptionShort = "Green Holster";
+		hiddenSelections[] = {"zbytek", "camoGround"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Green_CO.paa",
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Green_CO.paa"
+		};
+	};
+	class SRP_Holster_Black: PlateCarrierHolster
+	{
+		scope=2;
+		displayName = "Black Holster";
+		descriptionShort = "Black Holster";
+		hiddenSelections[] = {"zbytek", "camoGround"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Black_CO.paa",
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Black_CO.paa"
+		};
+	};
+
+  class SRP_PlateCarrierPouches_Tan: PlateCarrierPouches
+	{
+		scope=2;
+		displayName = "Tan Pouches";
+		descriptionShort = "Tan Pouches";
+		hiddenSelections[] = {"zbytek", "camoGround"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Tan_CO.paa",
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Tan_CO.paa"
+		};
+	};
+	class SRP_PlateCarrierPouches_Green: PlateCarrierPouches
+	{
+		scope=2;
+		displayName = "Green Pouches";
+		descriptionShort = "Green Pouches";
+		hiddenSelections[] = {"zbytek", "camoGround"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Green_CO.paa",
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Green_CO.paa"
+		};
+	};
+	class SRP_PlateCarrierPouches_Black: PlateCarrierPouches
+	{
+		scope=2;
+		displayName = "Black Pouches";
+		descriptionShort = "Black Pouches";
+		hiddenSelections[] = {"zbytek", "camoGround"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Black_CO.paa",
+			"Survivalists_Mods\characters\belts\data\SRP_Holster_Black_CO.paa"
+		};
+	};
+
+	class SRP_Knife_Sheath_Tan: NylonKnifeSheath
+	{
+		scope = 2;
+		displayName = "Tan Knife Sheath";
+		descriptionShort = "A tan knife sheath";
+		// model = "Survivalists_Mods\characters\belts\data\knife_sheath.p3d";
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\belts\data\sheath_Tan_CO.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\belts\data\sheath.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[] = 
+          {
+            {1.0,{"Survivalists_Mods\characters\belts\data\sheath.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\belts\data\sheath.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\sheath_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\belts\data\sheath_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\belts\data\sheath_destruct.rvmat"}}
+          };
+				};
+			};
+		};	
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="WorkingGloves_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="WorkingGloves_drop_SoundSet";
+					id=898;
+				};
+			};
+		};	
+	};
+
+	class SRP_Knife_Sheath_Green: SRP_Knife_Sheath_Tan
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Sheath_Green_CO.paa"
+		};	
+	};
+	class SRP_Knife_Sheath_Black: SRP_Knife_Sheath_Tan
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\Sheath_Black_CO.paa"
 		};	
 	};
 };
