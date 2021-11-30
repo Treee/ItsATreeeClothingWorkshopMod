@@ -493,210 +493,9 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_BandanaHead_65Black: Bandana_ColorBase  // BandanaHead_65Black
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65b.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65b.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65b.paa"
-		};
-	};
-	class SRP_BandanaHead_65Desert: Bandana_ColorBase  // BandanaHead_65Desert
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65d.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65d.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65d.paa"
-		};
-	};
-	class SRP_BandanaHead_65Tan: Bandana_ColorBase  // BandanaHead_65Tan
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65t.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65t.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_65t.paa"
-		};
-	};
-	class SRP_BandanaHead_CheckBlue: Bandana_ColorBase  // BandanaHead_CheckBlue
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cb.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cb.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cb.paa"
-		};
-	};
-	class SRP_BandanaHead_CheckBlueBright: Bandana_ColorBase  // BandanaHead_CheckBlueBright
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cbb.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cbb.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cbb.paa"
-		};
-	};
-	class SRP_BandanaHead_CheckGreen: Bandana_ColorBase  // BandanaHead_CheckGreen
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cg.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cg.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cg.paa"
-		};
-	};
-	class SRP_BandanaHead_CheckRed: Bandana_ColorBase  // BandanaHead_CheckRed
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cr.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cr.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cr.paa"
-		};
-	};
-	class SRP_BandanaHead_CheckWhite: Bandana_ColorBase  // BandanaHead_CheckWhite
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cw.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cw.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_cw.paa"
-		};
-	};
-	class SRP_BandanaHead_Denim: Bandana_ColorBase  // BandanaHead_Denim
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_denim.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_denim.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_denim.paa"
-		};
-	};
-	class SRP_BandanaHead_Kamysh: Bandana_ColorBase  // BandanaHead_Kamysh
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_kamysh.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_kamysh.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_kamysh.paa"
-		};
-	};
-	class SRP_BandanaHead_USMC_D: Bandana_ColorBase  // BandanaHead_USMC_D
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_d.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_d.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_d.paa"
-		};
-	};
-	class SRP_BandanaHead_USMC_W: Bandana_ColorBase  // BandanaHead_USMC_W
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_w.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_w.paa",
-			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_w.paa"
-		};
-	};
-
   class SRP_Bandana_65Black: Bandana_ColorBase  // Bandana_65Black
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_65b.paa",
@@ -709,14 +508,6 @@ class CfgVehicles
 	class SRP_Bandana_65Desert: Bandana_ColorBase  // Bandana_65Desert
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_65d.paa",
@@ -729,14 +520,6 @@ class CfgVehicles
 	class SRP_Bandana_65Tan: Bandana_ColorBase  // Bandana_65Tan
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_65t.paa",
@@ -749,14 +532,6 @@ class CfgVehicles
 	class SRP_Bandana_CheckBlue: Bandana_ColorBase  // Bandana_CheckBlue
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cb.paa",
@@ -769,14 +544,6 @@ class CfgVehicles
 	class SRP_Bandana_CheckBlueBright: Bandana_ColorBase  // Bandana_CheckBlueBright
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cbb.paa",
@@ -789,14 +556,6 @@ class CfgVehicles
 	class SRP_Bandana_CheckGreen: Bandana_ColorBase  // Bandana_CheckGreen
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cg.paa",
@@ -809,14 +568,6 @@ class CfgVehicles
 	class SRP_Bandana_CheckRed: Bandana_ColorBase  // Bandana_CheckRed
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cr.paa",
@@ -829,14 +580,6 @@ class CfgVehicles
 	class SRP_Bandana_CheckWhite: Bandana_ColorBase  // Bandana_CheckWhite
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_cw.paa",
@@ -849,14 +592,6 @@ class CfgVehicles
 	class SRP_Bandana_Denim: Bandana_ColorBase  // Bandana_Denim
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_denim.paa",
@@ -869,14 +604,6 @@ class CfgVehicles
 	class SRP_Bandana_Kamysh: Bandana_ColorBase  // Bandana_Kamysh
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_kamysh.paa",
@@ -889,14 +616,6 @@ class CfgVehicles
 	class SRP_Bandana_USMC_D: Bandana_ColorBase  // Bandana_USMC_D
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_d.paa",
@@ -909,14 +628,6 @@ class CfgVehicles
 	class SRP_Bandana_USMC_W: Bandana_ColorBase  // Bandana_USMC_W
 	{
 		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale_H",
-			"camoMale_M",
-			"camoFemale_H",
-			"camoFemale_M"
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\headgear\data\bandanafhg_usmc_w.paa",
