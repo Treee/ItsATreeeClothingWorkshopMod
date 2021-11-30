@@ -294,42 +294,6 @@ class CfgVehicles
 		};
 	};
 
-  //========================================= SPECIAL CRAFTS
-  class SRP_MiningCraft_StoneBagStarter: DryBag_ColorBase
-	{
-		scope=2;
-    displayName="A sack of stones.";
-    descriptionShort="Holds stones. Worn from smashing.";
-    inventorySlot[]={};
-    attachments[]={};
-    itemSize[]={6,6};
-    itemsCargoSize[]={6,6};
-		hiddenSelectionsTextures[]=
-		{
-			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
-			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
-			"DZ\characters\backpacks\data\DryBag_Orange_co.paa"
-		};
-	};
-
-  class SRP_MiningCraft_CrushedStoneBag: DryBag_ColorBase
-	{
-		scope=2;
-    displayName="A sack of crushed stones.";
-    descriptionShort="Holds crushed stones. Worn from smashing.";
-    inventorySlot[]={};
-    attachments[]={};
-    itemSize[]={6,6};
-    itemsCargoSize[]={0,0};
-		hiddenSelectionsTextures[]=
-		{
-			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
-			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",
-			"DZ\characters\backpacks\data\DryBag_Orange_co.paa"
-		};
-	};
-
-
   //==================================== COINS
   class SRP_Coinage_ColorBase: Inventory_Base
   {
