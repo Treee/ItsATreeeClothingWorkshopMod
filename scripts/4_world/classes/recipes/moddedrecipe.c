@@ -76,8 +76,10 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new Craft_SRP_RefineUnCutGem_CrudeTool);
 		RegisterRecipe(new Craft_SRP_CrucibleEmptyLime);
 		RegisterRecipe(new Craft_SRP_CrucibleEmptyMortar);
-		RegisterRecipe(new Craft_SRP_IngotMoldEmpty);
-		RegisterRecipe(new Craft_SRP_CrucibleFilled);
+
+		RegisterRecipe(new Craft_SRP_IngotMoldEmptyMetal);
+		RegisterRecipe(new Craft_SRP_IngotMold_Lime);
+		RegisterRecipe(new Craft_SRP_IngotMold_Mortar);
 
     // Building
     RegisterRecipe(new Craft_SRP_Planks);

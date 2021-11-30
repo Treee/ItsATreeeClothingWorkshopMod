@@ -8,6 +8,11 @@ modded class FireplaceBase
     {
       mortarBucket.ResetCounter();
     };
+    SRP_ForgeIngotMold_Mortar mortarIngotMold = SRP_ForgeIngotMold_Mortar.Cast(item);
+    if (mortarIngotMold)
+    {
+      mortarIngotMold.ResetCounter();
+    };
 	}
 
   override protected void AddTemperatureToItemByFire( ItemBase item )
@@ -19,6 +24,13 @@ modded class FireplaceBase
       mortarBucket.AddHealth( PARAM_BURN_DAMAGE_COEF );
       mortarBucket.IncrementHeatTimer(1);
       mortarBucket.HandleHardenEvent();
+    }
+    SRP_ForgeIngotMold_Mortar mortarIngotMold = SRP_ForgeIngotMold_Mortar.Cast(item);
+    if (mortarIngotMold)
+    {
+      mortarIngotMold.AddHealth( PARAM_BURN_DAMAGE_COEF );
+      mortarIngotMold.IncrementHeatTimer(1);
+      mortarIngotMold.HandleHardenEvent();
     }
 	}
 };

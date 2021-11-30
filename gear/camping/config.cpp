@@ -1611,37 +1611,6 @@ class CfgVehicles
 		physLayer="item_small";
 	};
 
-  class SRP_MetalBucket_Lime: SRP_MetalBucket  // new
-	{
-		scope=2;
-    displayName="Bucket Covered With Lime";
-		descriptionShort="Needs some mortar to seal in the greatness.";
-    itemsCargoSize[]={0,0};
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\camping\data\srp_bucket_lime_co.paa"
-    };
-	};
-  class SRP_MetalBucket_Mortar: SRP_MetalBucket  // new
-	{
-		scope=2;
-    displayName="Bucket Covered With Mortar";
-		descriptionShort="Needs some heat to seal in the greatness.";
-    itemsCargoSize[]={0,0};
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\camping\data\srp_bucket_mortar_co.paa"
-    };
-	};
-
   //----------------------------------- Playing/Trading Cards
   class SRP_DeckOfCards: Inventory_Base  // new
 	{

@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-			"Survivalists_Mods"
+			"Survivalists_Mods",
+      "Survivalists_Mods_Gear_Camping"
 		};
 	};
 };
@@ -19,6 +20,7 @@ class CfgVehicles
   class DryBag_ColorBase;
 
   class SRP_KitBase;
+  class SRP_MetalBucket;
 
   //===================================== WORKBENCH
   class SRP_StoneForgeWorkbench_Kit: SRP_KitBase //new
@@ -655,13 +657,67 @@ class CfgVehicles
 		};
   };
 
+  class SRP_ForgeIngotMold_MetalEmpty: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Empty";
+    model="Survivalists_Mods\gear\mining\forge_ingotmold_empty.p3d";
+    color="metalempty";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_bucket_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Lime: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Empty";
+    model="Survivalists_Mods\gear\mining\forge_ingotmold_empty.p3d";
+    color="lime";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_bucket_lime_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Mortar: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Empty";
+    model="Survivalists_Mods\gear\mining\forge_ingotmold_empty.p3d";
+    color="mortar";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_bucket_mortar_co.paa"
+		};
+	};
   class SRP_ForgeIngotMold_Empty: SRP_ForgeIngotMold_ColorBase
 	{
 		scope=2;
 		displayName="Ingot Mold - Empty";
     model="Survivalists_Mods\gear\mining\forge_ingotmold_empty.p3d";
     color="empty";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_crucible_empty_co.paa"
+		};
 	};
+
   class SRP_ForgeIngotMold_Copper: SRP_ForgeIngotMold_ColorBase
 	{
 		scope=2;
@@ -748,6 +804,37 @@ class CfgVehicles
 	};
 
   //===================================== MELTED ORE
+  class SRP_MetalBucket_Lime: SRP_MetalBucket  // new
+	{
+		scope=2;
+    displayName="Bucket Covered With Lime";
+		descriptionShort="Needs some mortar to seal in the greatness.";
+    itemsCargoSize[]={0,0};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_bucket_lime_co.paa"
+    };
+	};
+  class SRP_MetalBucket_Mortar: SRP_MetalBucket  // new
+	{
+		scope=2;
+    displayName="Bucket Covered With Mortar";
+		descriptionShort="Needs some heat to seal in the greatness.";
+    itemsCargoSize[]={0,0};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_bucket_mortar_co.paa"
+    };
+	};
+
   class SRP_ForgeCrucible_ColorBase: Inventory_Base
 	{
 		scope=2;
