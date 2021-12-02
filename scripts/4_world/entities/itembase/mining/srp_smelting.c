@@ -1,6 +1,6 @@
 class SRP_MetalBucket extends Inventory_Base
 {
-  protected bool CanHaveTemperature()
+  override protected bool CanHaveTemperature()
 	{
 		// return true used on selected items that have a temperature effect
 		return true;
@@ -51,7 +51,7 @@ class SRP_MetalBucket_Mortar extends SRP_MetalBucket
 
 class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
 {
-  protected bool CanHaveTemperature()
+  override protected bool CanHaveTemperature()
 	{
 		// return true used on selected items that have a temperature effect
 		return true;
@@ -110,7 +110,7 @@ class SRP_ForgeIngotMold_Platinum extends SRP_ForgeIngotMold_ColorBase{};
 
 class SRP_ForgeCrucible_ColorBase extends Inventory_Base
 {
-  protected bool CanHaveTemperature()
+  override protected bool CanHaveTemperature()
 	{
 		// return true used on selected items that have a temperature effect
 		return true;
