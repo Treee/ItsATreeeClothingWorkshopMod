@@ -18,9 +18,10 @@ class CfgVehicles
 {
   class Container_Base;
   class Inventory_Base;
+
   class SRP_KitBase;
 
-  //-------------------------------------BASE GAME OVERRIDE
+  //=-------------------------------------- CUSTOM STUFF
 
 	class SRP_AdvancedWorkbench: Container_Base // BP1_Workbench
 	{

@@ -702,6 +702,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Workbench Assets" (https://skfb.ly/6UvPA) by Tom Zimmermann is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Devtac Ronin Ballistic Mask SLIM Low-poly 3D model" by Akinaro (https://www.cgtrader.com/3d-models/military/armor/devtac-ronin-ballistic-mask-slim).
+
 # Wishlist
 
 # Reference

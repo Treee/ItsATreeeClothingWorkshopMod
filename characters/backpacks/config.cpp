@@ -23,6 +23,9 @@ class CfgVehicles
   class AssaultBag_ColorBase;
   class TaloonBag_ColorBase;
   class AliceBag_ColorBase;
+  class GhillieBushrag_ColorBase;
+  class GhillieTop_ColorBase;
+  class GhillieSuit_ColorBase;
 
 
   //--------------------------------- MOD OVERRIDE
@@ -45,6 +48,75 @@ class CfgVehicles
 
 
   //------------------------------------ BASE GAME Retextures
+
+  class GhillieBushrag_Winter: GhillieBushrag_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa"
+		};
+	};
+  class GhillieBushrag_Black: GhillieBushrag_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa"
+		};
+	};
+
+  class GhillieTop_Winter: GhillieTop_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa"
+		};
+	};
+  class GhillieTop_Black: GhillieTop_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa"
+		};
+	};
+
+  class GhillieSuit_Winter: GhillieSuit_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa"
+		};
+	};
+  class GhillieSuit_Black: GhillieSuit_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\ghillie_black_co.paa"
+		};
+	};
 
   class SRP_HuntingBag_Mawlee: HuntingBag  // new
 	{

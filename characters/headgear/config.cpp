@@ -674,6 +674,8 @@ class CfgVehicles
 		};
 	};
 	
+
+  // -=============================== OLD MVS STUFF  
 	class SRP_FaceMaskSkull_ColorBase: BalaclavaMask_ColorBase
 	{
 		scope=0;
@@ -1202,5 +1204,168 @@ class CfgVehicles
 			"Survivalists_Mods\characters\headgear\data\srp_comtacs_co_Black.paa"
 		};
 	};
+
+  //================================= CUSTOM STUFF
+  class SRP_SlimHelmetFull: Clothing
+  {
+    scope=2;
+    displayName="Full Helmet";
+    descriptionShort="A slim helmet that coveres the whole head";
+    model="Survivalists_Mods\characters\headgear\srp_slimhelmet_g.p3d";
+    repairableWithKits[]={8};
+		repairCosts[]={25};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		attachments[]=
+		{
+			"NVG"
+		};
+		rotationFlags=2;
+		weight=1200;
+		itemSize[]={4,3};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=1;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Mich2001"
+		};
+
+    hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_slimhelmet_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_slimhelmet_m.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_slimhelmet_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=80;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat.rvmat"}},
+						{0.69999999,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat_damage.rvmat"}},
+						{0,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+  };
+
+  class SRP_SlimHelmetFull_Kain: SRP_SlimHelmetFull
+  {
+    scope=2;
+    displayName="Full Helmet";
+    descriptionShort="A slim helmet that coveres the whole head";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_slimhelmet_kain_co.paa"
+		};
+  };
 
 };

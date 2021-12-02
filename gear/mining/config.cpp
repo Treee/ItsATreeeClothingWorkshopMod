@@ -632,11 +632,16 @@ class CfgVehicles
     color="base";
 		weight=500;
 		itemSize[]={3,1};
-		varQuantityDestroyOnMin=1;
+		itemsCargoSize[]={0,0};
+		inventorySlot[]={};
+		canBeDigged=0;
+		allowOwnedCargoManipulation=1;
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
-		inventorySlot[]={};
+		varTemperatureMax=1500;
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -646,11 +651,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
-            {0.69999999,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs.rvmat"}},
-            {0.5,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
-            {0.30000001,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs_damage.rvmat"}},
-            {0.0,	{"Survivalists_Mods\gear\tools\data\toolrack_tongs_destruct.rvmat"}}
+						{1.0,	{"Survivalists_Mods\gear\mining\data\forge_crucible.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\forge_crucible.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\forge_crucible_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\forge_crucible_damage.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\forge_crucible_destruct.rvmat"}}
 					};
 				};
 			};
@@ -660,7 +665,8 @@ class CfgVehicles
   class SRP_ForgeIngotMold_MetalEmpty: SRP_ForgeIngotMold_ColorBase
 	{
 		scope=2;
-		displayName="Ingot Mold - Empty";
+		displayName="Ingot Mold - Metal Starter";
+    descriptionShort="A mold hammered from some metal.";
     model="Survivalists_Mods\gear\mining\forge_ingotmold_empty.p3d";
     color="metalempty";
     hiddenSelections[]=
@@ -675,7 +681,8 @@ class CfgVehicles
   class SRP_ForgeIngotMold_Lime: SRP_ForgeIngotMold_ColorBase
 	{
 		scope=2;
-		displayName="Ingot Mold - Empty";
+		displayName="Ingot Mold - Lime Covered";
+    descriptionShort="A mold covered with lime. Apply something hard to make solid.";
     model="Survivalists_Mods\gear\mining\forge_ingotmold_empty.p3d";
     color="lime";
     hiddenSelections[]=
@@ -690,7 +697,8 @@ class CfgVehicles
   class SRP_ForgeIngotMold_Mortar: SRP_ForgeIngotMold_ColorBase
 	{
 		scope=2;
-		displayName="Ingot Mold - Empty";
+		displayName="Ingot Mold - Mortar Covered";
+    descriptionShort="A mold covered with mortar. Apply heat to harden.";
     model="Survivalists_Mods\gear\mining\forge_ingotmold_empty.p3d";
     color="mortar";
     hiddenSelections[]=

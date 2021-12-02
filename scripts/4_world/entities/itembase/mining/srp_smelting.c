@@ -48,7 +48,7 @@ class SRP_ForgeIngotMold_Mortar extends SRP_ForgeIngotMold_ColorBase
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (m_HeatCounter > 5)
+    if (m_HeatCounter > 600)
     {
       GetGame().CreateObject("SRP_ForgeIngotMold_Empty", this.GetPosition(), false);
       this.Delete();
