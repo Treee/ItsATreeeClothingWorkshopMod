@@ -489,6 +489,16 @@ class CfgVehicles
 			soundSet="SRPRadio_SkylarWolfe_JustTheTwoOfUs_SoundSet1";
 		};
 	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_FirstDayOfMyLife: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - First Day of My Life";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_FirstDayOfMyLife_SoundSet1";
+		};
+	}; 
   class SRPRadio_CassetteTape_Pinkerton_TheShadow: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
