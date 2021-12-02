@@ -18,7 +18,7 @@ class CfgVehicles
   class GhillieAtt_ColorBase;
 
   //-------------------------------------BASE GAME OVERRIDE
-  class GhillieAtt_SRPWinter : GhillieAtt_ColorBase
+  class GhillieAtt_Winter : GhillieAtt_ColorBase
 	{
 		scope = 2;
 		displayName = "Ghillie Wrap - Winter";
@@ -28,7 +28,7 @@ class CfgVehicles
 		  "Survivalists_Mods\characters\backpacks\data\ghillie_winter_co.paa"
 		};
 	};
-  class GhillieAtt_SRPBlack : GhillieAtt_ColorBase
+  class GhillieAtt_Black : GhillieAtt_ColorBase
 	{
 		scope = 2;
 		displayName = "Ghillie Wrap - Black";

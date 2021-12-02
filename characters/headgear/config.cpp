@@ -1234,13 +1234,12 @@ class CfgVehicles
 		itemSize[]={4,3};
 		noNVStrap=1;
 		varWetMax=0.249;
-		heatIsolation=1;
+		heatIsolation=0.25;
 		visibilityModifier=0.94999999;
 		headSelectionsToHide[]=
 		{
 			"Clipping_Mich2001"
 		};
-
     hiddenSelections[]=
 		{
 			"zbytek",
@@ -1263,11 +1262,11 @@ class CfgVehicles
 					hitpoints=80;
 					healthLevels[]=
 					{
-						{1,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat.rvmat"}},
-						{0.69999999,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat.rvmat"}},
-						{0.5,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat_damage.rvmat"}},
-						{0.30000001,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat_damage.rvmat"}},
-						{0,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat_destruct.rvmat"}}
+						{1,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat"}},
+						{0.69999999,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet_damage.rvmat"}},
+						{0,	{	"Survivalists_Mods\characters\headgear\data\srp_slimhelmet_destruct.rvmat"}}
 					};
 				};
 			};

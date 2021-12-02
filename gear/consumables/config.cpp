@@ -111,7 +111,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\consumables\data\srp_spraycan_co.paa"
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_turquoise_co.paa"
 		};
 	};
 	class SRP_Spraycan_Red: Spraycan_ColorBase
@@ -126,7 +126,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\consumables\data\srp_spraycan_co.paa"
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_red_co.paa"
 		};
 	};
 	class SRP_Spraycan_Brown: Spraycan_ColorBase
@@ -141,7 +141,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\consumables\data\srp_spraycan_co.paa"
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_brown_co.paa"
 		};
 	};
 	class SRP_Spraycan_Green: Spraycan_ColorBase
@@ -156,9 +156,24 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\consumables\data\srp_spraycan_co.paa"
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_green_co.paa"
 		};
 	};  
+  class SRP_Spraycan_White: Spraycan_ColorBase
+	{
+		scope=2;
+		displayName="White Spraycan";
+		descriptionShort="White Spraycan";
+		color="White";
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_white_co.paa"
+		};
+	};
   class SRP_ButaneCanister: ButaneCanister
 	{
 		scope=2;

@@ -9,17 +9,6 @@ class SRP_MinerHelmet extends Headtorch_ColorBase
 }
 
 
-class SRP_SlimHelmetFull: Mich2001Helmet {};
+class SRP_SlimHelmetFull: Mich2001Helmet{};
 
-class SRP_SlimHelmetFull_Kain extends SRP_SlimHelmetFull
-{
-  override bool CanDetachAttachment (EntityAI parent)
-	{
-		return false;
-	}
-
-  override void OnWasDetached( EntityAI parent, int slot_id )
-  {
-    this.Delete();
-  }
-}
+class SRP_SlimHelmetFull_Kain extends SRP_SlimHelmetFull{};

@@ -247,6 +247,11 @@ modded class PluginRecipesManagerBase extends PluginBase
     //----------- Tools
     RegisterRecipe(new Craft_SRP_Heatpack);
 
+    RegisterRecipe(new Craft_SRP_GhillieWrapTan);
+    RegisterRecipe(new Craft_SRP_GhillieWrapWoodland);
+    RegisterRecipe(new Craft_SRP_GhillieWrapMossy);
+    RegisterRecipe(new Craft_SRP_GhillieWrapWinter);
+    RegisterRecipe(new Craft_SRP_GhillieWrapBlack);
     //----------- Clothing
 
     // Backpack    
