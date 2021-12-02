@@ -464,7 +464,7 @@ class Craft_SRP_GhillieBushragBlack extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"GhillieBushrag_Black");//you can insert multiple ingredients this way
+		InsertIngredient(0,"GhillieBushrag_ColorBase");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -531,7 +531,7 @@ class Craft_SRP_GhillieBushragWinter extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"GhillieBushrag_Winter");//you can insert multiple ingredients this way
+		InsertIngredient(0,"GhillieBushrag_ColorBase");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -599,7 +599,7 @@ class Craft_SRP_GhillieTopBlack extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"GhillieTop_Black");//you can insert multiple ingredients this way
+		InsertIngredient(0,"GhillieTop_ColorBase");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -666,7 +666,7 @@ class Craft_SRP_GhillieTopWinter extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"GhillieTop_Winter");//you can insert multiple ingredients this way
+		InsertIngredient(0,"GhillieTop_ColorBase");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -734,7 +734,7 @@ class Craft_SRP_GhillieSuitBlack extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"GhillieSuit_Black");//you can insert multiple ingredients this way
+		InsertIngredient(0,"GhillieSuit_ColorBase");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -801,7 +801,7 @@ class Craft_SRP_GhillieSuitWinter extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"GhillieSuit_Winter");//you can insert multiple ingredients this way
+		InsertIngredient(0,"GhillieSuit_ColorBase");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
