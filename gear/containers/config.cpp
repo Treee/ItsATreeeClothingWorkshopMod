@@ -17,6 +17,7 @@ class CfgVehicles
   class Container_Base;
   class SmallProtectorCase;
   class PlateCarrierPouches;
+  class Bear_ColorBase;
 
   class SRP_KitBase;
   
@@ -2363,5 +2364,119 @@ class CfgVehicles
 			"Survivalists_Mods\gear\containers\data\loot_protectorcase_winter_co.paa"
 		};
   }
+
+  class SRP_SmallProtectorCase_Blue: SmallProtectorCase
+  {
+		scope=2;
+		rotationFlags=17;
+		weight=980;
+		itemSize[]={5,5};
+		itemsCargoSize[]={5,5};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcaseblu_co.paa"
+		};
+  }
+  class SRP_SmallProtectorCase_Blue2: SmallProtectorCase
+  {
+		scope=2;
+		rotationFlags=17;
+		weight=980;
+		itemSize[]={5,5};
+		itemsCargoSize[]={5,5};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcaseblue_co.paa"
+		};
+  }
+  class SRP_SmallProtectorCase_Pink: SmallProtectorCase
+  {
+		scope=2;
+		rotationFlags=17;
+		weight=980;
+		itemSize[]={5,5};
+		itemsCargoSize[]={5,5};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcase_pink_co.paa"
+		};
+  }
+  class SRP_SmallProtectorCase_Purple: SmallProtectorCase
+  {
+		scope=2;
+		rotationFlags=17;
+		weight=980;
+		itemSize[]={5,5};
+		itemsCargoSize[]={5,5};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcasepurple_co.paa"
+		};
+  }
+
+  class Bear_Blue: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\teddybear_blue_co.paa"
+		};
+	};
+  class Bear_Green: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\teddybear_green_co.paa"
+		};
+	};
+  class Bear_Grey: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\teddybear_grey_co.paa"
+		};
+	};
+  class Bear_Purple: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\teddybear_purple_co.paa"
+		};
+	};
+  class Bear_Red: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\teddybear_red_co.paa"
+		};
+	};
+  class Bear_Yellow: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\teddybear_yellow_co.paa"
+		};
+	};
   
 };

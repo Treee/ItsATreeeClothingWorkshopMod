@@ -26,6 +26,7 @@ class CfgVehicles
   class GhillieBushrag_ColorBase;
   class GhillieTop_ColorBase;
   class GhillieSuit_ColorBase;
+  class DryBag_ColorBase;
 
 
   //--------------------------------- MOD OVERRIDE
@@ -48,6 +49,26 @@ class CfgVehicles
 
 
   //------------------------------------ BASE GAME Retextures
+  class DryBag_Pink: DryBag_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\drybag_Pink_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\drybag_Pink_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\drybag_Pink_co.paa"
+		};
+	};
+  class DryBag_MintBlue: DryBag_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\drybag_mintblue_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\drybag_mintblue_co.paa",
+			"Survivalists_Mods\characters\backpacks\data\drybag_mintblue_co.paa"
+		};
+	};
 
   class GhillieBushrag_Winter: GhillieBushrag_ColorBase
 	{
