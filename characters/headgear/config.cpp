@@ -112,7 +112,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\turkeybeanie_co.paa"
+			"Survivalists_Mods\characters\headgear\data\srp_turkey_co.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -124,7 +124,6 @@ class CfgVehicles
 			female="Survivalists_Mods\characters\headgear\turkeybeanie_f.p3d";
 		};
 	};
-
   class SRP_BeanieHat_TurkeyPink: SRP_BeanieHat_Turkey  // new
 	{
 		scope=2;
@@ -137,10 +136,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\turkeybeanie_pink_co.paa"
+			"Survivalists_Mods\characters\headgear\data\srp_turkeylove_co.paa"
 		};
 	};
-
   class SRP_BeanieHat_SkylarPink: SRP_BeanieHat_Turkey  // new
 	{
 		scope=2;
@@ -153,7 +151,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\turkeybeanie_skypink_co.paa"
+			"Survivalists_Mods\characters\headgear\data\srp_turkeyskylar_co.paa"
 		};
 	};
   class SRP_BeanieHat_Green: SRP_BeanieHat_Turkey  // new
@@ -168,7 +166,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\turkeybeanie_green_co.paa"
+			"Survivalists_Mods\characters\headgear\data\srp_turkeybio_co.paa"
 		};
 	};
   class SRP_BeanieHat_Grey: SRP_BeanieHat_Turkey  // new
@@ -183,7 +181,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\turkeybeanie_grey_co.paa"
+			"Survivalists_Mods\characters\headgear\data\srp_turkeygrey_co.paa"
 		};
 	};
   class SRP_BeanieHat_Purple: SRP_BeanieHat_Turkey  // new
@@ -198,7 +196,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\turkeybeanie_purple_co.paa"
+			"Survivalists_Mods\characters\headgear\data\srp_turkeypurple_co.paa"
 		};
 	};
   class SRP_BeanieHat_Teal: SRP_BeanieHat_Turkey  // new
@@ -213,7 +211,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\turkeybeanie_teal_co.paa"
+			"Survivalists_Mods\characters\headgear\data\srp_turkeyteal_co.paa"
 		};
 	};
   class SRP_BeanieHat_Yellow: SRP_BeanieHat_Turkey  // new
@@ -228,7 +226,52 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\turkeybeanie_yellow_co.paa"
+			"Survivalists_Mods\characters\headgear\data\srp_turkeysunny_co.paa"
+		};
+	};
+  class SRP_BeanieHat_Light: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="Light";
+    displayName="Light Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_turkeylight_co.paa"
+		};
+	};
+  class SRP_BeanieHat_Dark: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="Dark";
+    displayName="Dark Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_turkeydark_co.paa"
+		};
+	};
+  class SRP_BeanieHat_Snowflake: SRP_BeanieHat_Turkey  // new
+	{
+		scope=2;
+		color="Snowflake";
+    displayName="Snowflake Turkey Beanie";
+    descriptionShort="Gobble gobble.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_turkeysnowflake_co.paa"
 		};
 	};
   
@@ -390,6 +433,22 @@ class CfgVehicles
   }
 
   // BASE GAME RETEXTURES
+  class SantasHat_Elf: SantasHat  // BP2_Rainhelm
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\santashatelf_co.paa",
+			"Survivalists_Mods\characters\headgear\data\santashatelf_co.paa",
+			"Survivalists_Mods\characters\headgear\data\santashatelf_co.paa"
+		};
+	};
 
   class SRP_BallisticHelmet_Rain: BaseballCap_ColorBase  // BP2_Rainhelm
 	{
