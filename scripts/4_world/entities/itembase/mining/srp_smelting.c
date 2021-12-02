@@ -115,6 +115,21 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
 		// return true used on selected items that have a temperature effect
 		return true;
 	}
+
+  override void OnInventoryEnter(Man player)
+  {
+    super.OnInventoryEnter(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB.GetItemInHands() == this)
+    {
+      if (GetTemperature() > 100)
+      {
+        player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
+        player_PB.AddHealth("", "", -50); //do 250 blood dmg
+        player_PB.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+      }
+    }
+  }
 };
 
 class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
@@ -151,21 +166,6 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
         ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, this.GetPosition(), false));
         newItem.SetTemperature(1500);
         this.Delete();
-      }
-    }
-  }
-
-  override void OnInventoryEnter(Man player)
-  {
-    super.OnInventoryEnter(player);
-    PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB.GetItemInHands() == this)
-    {
-      if (GetTemperature() > 50)
-      {
-        player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
-        player_PB.AddHealth("", "", -50); //do 250 blood dmg
-        player_PB.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
       }
     }
   }
