@@ -28,6 +28,7 @@ class CfgVehicles
   class Mich2001Helmet;
   class BalaclavaMask_ColorBase;
   class BeanieHat_ColorBase;
+  class SantasHat;
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class DarkMotoHelmet_ColorBase: Clothing
@@ -433,7 +434,7 @@ class CfgVehicles
   }
 
   // BASE GAME RETEXTURES
-  class SantasHat_Elf: SantasHat  // BP2_Rainhelm
+  class SantasHat_Elf: SantasHat  
 	{
 		scope=2;
     hiddenSelections[]=
