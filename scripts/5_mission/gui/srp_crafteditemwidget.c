@@ -17,7 +17,7 @@ class CraftedItemWidget
     m_CraftPanel            = Widget.Cast(craftedItemWidget.FindAnyWidget("CraftItemPanel"));
     m_CraftingComponent = craftingComponent;
 
-    EntityAI entity = EntityAI.Cast(GetGame().CreateObject(m_CraftingComponent.className, vector.Zero, true));
+    EntityAI entity = EntityAI.Cast(GetGame().CreateObjectEx(m_CraftingComponent.className, vector.Zero, true));
     if (entity)
     { 
       // set the images     

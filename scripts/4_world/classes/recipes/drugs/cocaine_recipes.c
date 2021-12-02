@@ -205,12 +205,12 @@ class SRP_Drugs_ManufactureCocaineFromPasteWithTubes extends RecipeBase
       ItemBase cocaine;
       if (m_isTainted) 
       {
-        cocaine = ItemBase.Cast(GetGame().CreateObject("SRP_DrugBrick_CocaineTainted", player.GetPosition(), false));
+        cocaine = ItemBase.Cast(GetGame().CreateObjectEx("SRP_DrugBrick_CocaineTainted", player.GetPosition(), false));
         results.Insert(cocaine);
       } 
       else 
       {
-        cocaine = ItemBase.Cast(GetGame().CreateObject("SRP_DrugBrick_Cocaine", player.GetPosition(), false));
+        cocaine = ItemBase.Cast(GetGame().CreateObjectEx("SRP_DrugBrick_Cocaine", player.GetPosition(), false));
         results.Insert(cocaine);
       }
     }

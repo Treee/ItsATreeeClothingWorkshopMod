@@ -13,6 +13,11 @@ modded class FireplaceBase
     {
       mortarIngotMold.ResetCounter();
     };
+    SRP_ForgeCrucible_Empty crucible = SRP_ForgeCrucible_Empty.Cast(item);
+    if (crucible)
+    {
+      crucible.ResetCounter();
+    };
 	}
 
   override protected void AddTemperatureToItemByFire( ItemBase item )
@@ -31,6 +36,13 @@ modded class FireplaceBase
       mortarIngotMold.AddHealth( PARAM_BURN_DAMAGE_COEF );
       mortarIngotMold.IncrementHeatTimer(1);
       mortarIngotMold.HandleHardenEvent();
+    }
+    SRP_ForgeCrucible_Empty crucible = SRP_ForgeCrucible_Empty.Cast(item);
+    if (crucible)
+    {
+      crucible.AddHealth( PARAM_BURN_DAMAGE_COEF );
+      crucible.IncrementHeatTimer(1);
+      crucible.HandleHardenEvent();
     }
 	}
 };

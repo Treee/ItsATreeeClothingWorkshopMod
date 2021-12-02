@@ -416,7 +416,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
       GetGame().ObjectDeleteOnClient(m_MainEnt);
     }
     // if the item doesn't exist, the recipe will show up but not be 'clickable' fyi
-    m_MainEnt = EntityAI.Cast(GetGame().CreateObject(craftedItem.result, vector.Zero, true));    
+    m_MainEnt = EntityAI.Cast(GetGame().CreateObjectEx(craftedItem.result, vector.Zero, true));    
     if (m_MainEnt)
     {
       previouslyCraftedItem = craftedItem;

@@ -649,6 +649,7 @@ class CfgSlots
 		name="SRP_RawOre";
 		displayName="Raw Ore";
 		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=4;
   }
   // ------------------------ CARDS
   class Slot_CardHand1

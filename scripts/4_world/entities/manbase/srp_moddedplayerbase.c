@@ -277,7 +277,7 @@ modded class PlayerBase extends ManBase
     for (int i = 0; i < createdItem.craftingComponents.Count(); i++)
     {      
       CraftingComponent craftingComponent = createdItem.craftingComponents.Get(i);
-      cargoItemIB = ItemBase.Cast(GetGame().CreateObject(craftingComponent.className, vector.Zero, false));
+      cargoItemIB = ItemBase.Cast(GetGame().CreateObjectEx(craftingComponent.className, vector.Zero, false));
       // Print("Looking to delete: " + craftingComponent.className + " cargoitemtemp: " + cargoItemIB);
       // does the component even exist as an item in the config?
       if (cargoItemIB)
@@ -306,7 +306,7 @@ modded class PlayerBase extends ManBase
     int needQuantity = createdItem.resultCount;
 
     // does the item even exist in the configs
-    ItemBase tempIB = ItemBase.Cast(GetGame().CreateObject(createdItem.result, vector.Zero, false));
+    ItemBase tempIB = ItemBase.Cast(GetGame().CreateObjectEx(createdItem.result, vector.Zero, false));
     if (!tempIB)
       return;
 
@@ -324,14 +324,14 @@ modded class PlayerBase extends ManBase
       // if the max quantity is less than the totaly that we need, keep making items
       if (q_max < needQuantity)
       {
-        // itemReward = ItemBase.Cast(GetGame().CreateObject(createdItem.result, GetPosition(), false));
+        // itemReward = ItemBase.Cast(GetGame().CreateObjectEx(createdItem.result, GetPosition(), false));
         itemReward = ItemBase.Cast(workbench.GetInventory().CreateInInventory(createdItem.result));
         // Print("max item is less thant total: " + itemReward);
         needQuantity -= q_max;
       }
       else
       { // the item actually has quantity so reduce that
-        // itemReward = ItemBase.Cast(GetGame().CreateObject(createdItem.result, GetPosition(), false));
+        // itemReward = ItemBase.Cast(GetGame().CreateObjectEx(createdItem.result, GetPosition(), false));
         itemReward = ItemBase.Cast(workbench.GetInventory().CreateInInventory(createdItem.result));
         // Print("item has quantity: " + itemReward);
         Magazine pileReward;

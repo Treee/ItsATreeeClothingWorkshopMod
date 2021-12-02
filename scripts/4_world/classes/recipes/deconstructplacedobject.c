@@ -157,7 +157,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
 		Debug.Log("Deconstruct_PlacedObjectKit: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
-    SRP_KitBase.Cast( GetGame().CreateObject(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
+    SRP_KitBase.Cast( GetGame().CreateObjectEx(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
 	}
 };
 
@@ -240,7 +240,7 @@ class Deconstruct_IntermediaryObjectKit extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
 		Debug.Log("Deconstruct_IntermediaryObjectKit: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
-    // SRP_KitBase.Cast( GetGame().CreateObject(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
+    // SRP_KitBase.Cast( GetGame().CreateObjectEx(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
 	}
 };
 
@@ -329,7 +329,7 @@ class Deconstruct_IntermediaryObjectKit_BuildingFrame extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
 		Debug.Log("Deconstruct_IntermediaryObjectKit_BuildingFrame: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
-    // SRP_KitBase.Cast( GetGame().CreateObject(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
+    // SRP_KitBase.Cast( GetGame().CreateObjectEx(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
 	}
 };
 

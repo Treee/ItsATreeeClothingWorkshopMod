@@ -79,7 +79,7 @@ class Craft_SRP_CrushLargeStone_CrudeTool extends RecipeBase
       randomOre.Insert("SRP_Mining_RawOre_Gold");
       randomOre.Insert("SRP_Mining_RawOre_Platinum");
       string randomOreName = randomOre.GetRandomElement();
-      ItemBase newOre = ItemBase.Cast(GetGame().CreateObject(randomOreName, player.GetPosition(), false));      
+      ItemBase newOre = ItemBase.Cast(GetGame().CreateObjectEx(randomOreName, player.GetPosition(), false));      
       newOre.SetQuantity(Math.RandomIntInclusive(1,3));
       results.Insert(newOre);
     }
@@ -95,7 +95,7 @@ class Craft_SRP_CrushLargeStone_CrudeTool extends RecipeBase
       gemstones.Insert("SRP_Mining_UnCutGem_Ruby");
       gemstones.Insert("SRP_Mining_UnCutGem_Topaz");
       string randomGemstone = gemstones.GetRandomElement();
-      ItemBase gemstone = ItemBase.Cast(GetGame().CreateObject(randomGemstone, player.GetPosition(), false));      
+      ItemBase gemstone = ItemBase.Cast(GetGame().CreateObjectEx(randomGemstone, player.GetPosition(), false));      
       gemstone.SetQuantity(1);
       results.Insert(gemstone);
     }
@@ -192,7 +192,7 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
       gemstones.Insert("SRP_Mining_UnCutGem_Ruby");
       gemstones.Insert("SRP_Mining_UnCutGem_Topaz");
       string randomGemstone = gemstones.GetRandomElement();
-      ItemBase gemstone = ItemBase.Cast(GetGame().CreateObject(randomGemstone, player.GetPosition(), false));      
+      ItemBase gemstone = ItemBase.Cast(GetGame().CreateObjectEx(randomGemstone, player.GetPosition(), false));      
       gemstone.SetQuantity(1);
       results.Insert(gemstone);
     }

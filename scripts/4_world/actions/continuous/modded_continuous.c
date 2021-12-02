@@ -42,12 +42,12 @@ modded class ActionSkinning
       int randomNumber = Math.RandomIntInclusive(0, 100);
       if (body.IsKindOf("SurvivorBase") && randomNumber > 70 && randomNumber < 90)
       {
-        Class.CastTo(added_item, GetGame().CreateObject("SRP_BrainPiece", pos_rnd, false));
+        Class.CastTo(added_item, GetGame().CreateObjectEx("SRP_BrainPiece", pos_rnd, false));
         added_item.PlaceOnSurface();
       }
       else if (body.IsKindOf("SurvivorBase") && randomNumber > 89)
       {
-        Class.CastTo(added_item, GetGame().CreateObject("SRP_Brain", pos_rnd, false));
+        Class.CastTo(added_item, GetGame().CreateObjectEx("SRP_Brain", pos_rnd, false));
         added_item.PlaceOnSurface();
       }
     }
