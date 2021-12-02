@@ -30,6 +30,118 @@ class CfgVehicles
   class ParamedicJacket_ColorBase;
   class PoliceJacketOrel;
 
+  class poncho_mung;
+
+  //------------------------------------- MODDED STUFF
+  class poncho_mung_yellow: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_yellow.paa"
+		};
+	};
+  class poncho_mung_blue: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_blue.paa"
+		};
+	};
+  class poncho_mung_gray: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_gray.paa"
+		};
+	};
+  class poncho_mung_green: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_green.paa"
+		};
+	};
+  class poncho_mung_pink: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_pink.paa"
+		};
+	};
+  class poncho_mung_purple: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_purple.paa"
+		};
+	};
+  class poncho_mung_red: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_red.paa"
+		};
+	};
+  class poncho_mung_storm: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_storm.paa"
+		};
+	};
+  class poncho_mung_teal: poncho_mung
+	{
+		scope = 2;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\characters\tops\data\ponchofull_teal.paa"
+		};
+	};
+
   // Remove eventually once Lore dictates
   class SaltyCougar_Armband;
   class Skylar_BioZone_Protection: SaltyCougar_Armband

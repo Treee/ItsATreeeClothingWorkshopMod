@@ -50,6 +50,7 @@ class CfgPatches
       "MunghardsBrain",     // mung_brain
       "Munghardsmeleesling", // meleesling
       "Munghardsriflesling", // riflesling
+      "Munghardsponcho", // full poncho's
       "Mass_Textures", // MassNBC_Bag, MassRatnik, removing admin compass
       "CarRadioGlow", // PsychoDayZRadio
       "MSP_Scripts",    // MSP_Fridge_Base
