@@ -852,8 +852,12 @@ class CfgVehicles
 		weight=440;
 		itemSize[]={4,3};
     color="base";
+    inventorySlot[]=
+    {
+      "SRP_Crucible"
+    };
 		itemsCargoSize[]={0,0};
-		inventorySlot[]={};
+		attachments[]={};
 		canBeDigged=0;
 		allowOwnedCargoManipulation=1;
 		destroyOnEmpty=0;

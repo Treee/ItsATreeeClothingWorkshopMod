@@ -925,6 +925,10 @@ class CfgVehicles
 			"Hammer2",
 			"Hammer3",
 		};
+    attachments[]=
+    {
+      "SRP_Crucible"
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -957,6 +961,10 @@ class CfgVehicles
 			"Hammer2",
 			"Hammer3",
 		};
+    attachments[]=
+    {
+      "SRP_Crucible"
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -989,6 +997,10 @@ class CfgVehicles
 			"Hammer2",
 			"Hammer3",
 		};
+    attachments[]=
+    {
+      "SRP_Crucible"
+    };
 		class DamageSystem
 		{
 			class GlobalHealth

@@ -1,3 +1,4 @@
+//================================================ METAL BUCKETS
 class SRP_MetalBucket extends Inventory_Base
 {
   override protected bool CanHaveTemperature()
@@ -48,7 +49,7 @@ class SRP_MetalBucket_Mortar extends SRP_MetalBucket
   }
 };
 
-
+//==================================================INGOT MOLDS
 class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
 {
   override protected bool CanHaveTemperature()
@@ -108,6 +109,7 @@ class SRP_ForgeIngotMold_Gold extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Platinum extends SRP_ForgeIngotMold_ColorBase{};
 
 
+//=====================================================CRUCIBLES
 class SRP_ForgeCrucible_ColorBase extends Inventory_Base
 {
   override protected bool CanHaveTemperature()
@@ -178,6 +180,7 @@ class SRP_ForgeCrucible_Iron extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Gold extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Platinum extends SRP_ForgeCrucible_ColorBase{};
 
+//======================================================= ORE
 class SRP_Mining_RawOre_ColorBase extends Inventory_Base{};
 class SRP_Mining_RawOre_Copper extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Tin extends SRP_Mining_RawOre_ColorBase{};
@@ -185,3 +188,10 @@ class SRP_Mining_RawOre_Bronze extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Iron extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Gold extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Platinum extends SRP_Mining_RawOre_ColorBase{};
+
+
+
+class SRP_MiningTool_IronTongsSmall extends Inventory_Base{};
+class SRP_MiningTool_IronTongsMedium extends SRP_MiningTool_IronTongsSmall{};
+class SRP_MiningTool_IronTongsLarge extends SRP_MiningTool_IronTongsSmall{};
+

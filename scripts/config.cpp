@@ -651,6 +651,12 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=4;
   }
+  class Slot_SRP_Crucible
+  {
+		name="SRP_Crucible";
+		displayName="Crucible";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
   // ------------------------ CARDS
   class Slot_CardHand1
   {
@@ -1327,6 +1333,13 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"CardHand5"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_cardhand_proxy5.p3d"; //proxy path 
+  };
+
+  class Proxysrp_crucible_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_Crucible"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_crucible_proxy.p3d"; //proxy path 
   };
 
   class Proxysrp_comtacs: ProxyAttachment //same as p3d name
