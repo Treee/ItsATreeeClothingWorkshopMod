@@ -157,7 +157,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (m_HeatCounter > 5)
+    if (m_HeatCounter > 600)
     {
       EntityAI attachment = FindAttachmentBySlotName("SRP_RawOre");
       SRP_Mining_RawOre_ColorBase rawOre = SRP_Mining_RawOre_ColorBase.Cast(attachment);
@@ -166,7 +166,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
 				string color = rawOre.ConfigGetString("color");
         string newClassName = "SRP_ForgeCrucible_" + color;
         ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, this.GetPosition(), false));
-        newItem.SetTemperature(1500);
+        newItem.SetTemperature(200);
         this.Delete();
       }
     }
@@ -191,7 +191,15 @@ class SRP_Mining_RawOre_Platinum extends SRP_Mining_RawOre_ColorBase{};
 
 
 
-class SRP_MiningTool_IronTongsSmall extends Inventory_Base{};
+class SRP_MiningTool_IronTongsSmall extends Inventory_Base
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionPourMoltenMetalIntoMold);
+	}
+};
 class SRP_MiningTool_IronTongsMedium extends SRP_MiningTool_IronTongsSmall{};
 class SRP_MiningTool_IronTongsLarge extends SRP_MiningTool_IronTongsSmall{};
 

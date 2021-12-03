@@ -17,6 +17,8 @@ modded class ActionConstructor
     actions.Insert(ActionTestDrugsTarget);
     actions.Insert(ActionTestDrugsSelf);
 
+    actions.Insert(ActionPourMoltenMetalIntoMold);
+
     // Smoking
     actions.Insert(ActionSmokeSRPSmokableSelf);
     actions.Insert(ActionForceSmokeSRPSmokable);

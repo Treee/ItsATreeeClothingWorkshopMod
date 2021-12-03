@@ -32,6 +32,26 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 		}
 	}
 
+  override void EECargoOut(EntityAI item)
+	{
+		super.EECargoOut(item);
+    SRP_MetalBucket_Mortar mortarBucket = SRP_MetalBucket_Mortar.Cast(item);
+    if (mortarBucket)
+    {
+      mortarBucket.ResetCounter();
+    };
+    SRP_ForgeIngotMold_Mortar mortarIngotMold = SRP_ForgeIngotMold_Mortar.Cast(item);
+    if (mortarIngotMold)
+    {
+      mortarIngotMold.ResetCounter();
+    };
+    SRP_ForgeCrucible_Empty crucible = SRP_ForgeCrucible_Empty.Cast(item);
+    if (crucible)
+    {
+      crucible.ResetCounter();
+    };
+	}
+
   override void EEItemAttached ( EntityAI item, string slot_name ) 
 	{
 		super.EEItemAttached( item, slot_name );
@@ -190,6 +210,74 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 	{
 		GetGame().ObjectDelete( clutter_cutter );
 	}
+
+  override protected void AddTemperatureToItemByFire( ItemBase item )
+	{
+    super.AddTemperatureToItemByFire(item);
+    
+    SRP_MetalBucket_Mortar mortarBucket = SRP_MetalBucket_Mortar.Cast(item);
+    float temperature = 0;
+    if (mortarBucket)
+    {
+      mortarBucket.AddHealth( PARAM_BURN_DAMAGE_COEF );
+      mortarBucket.IncrementHeatTimer(1);
+      mortarBucket.HandleHardenEvent();
+      if ( mortarBucket.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
+      {
+        temperature = mortarBucket.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
+        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
+        mortarBucket.SetTemperature( temperature );
+      }
+    }
+    SRP_ForgeIngotMold_Mortar mortarIngotMold = SRP_ForgeIngotMold_Mortar.Cast(item);
+    if (mortarIngotMold)
+    {
+      mortarIngotMold.AddHealth( PARAM_BURN_DAMAGE_COEF );
+      mortarIngotMold.IncrementHeatTimer(1);
+      mortarIngotMold.HandleHardenEvent();
+      if ( mortarIngotMold.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
+      {
+        temperature = mortarIngotMold.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
+        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
+        mortarIngotMold.SetTemperature( temperature );
+      }
+    }
+    SRP_ForgeCrucible_Empty crucible = SRP_ForgeCrucible_Empty.Cast(item);
+    if (crucible)
+    {
+      crucible.AddHealth( PARAM_BURN_DAMAGE_COEF );
+      crucible.IncrementHeatTimer(1);
+      crucible.HandleHardenEvent();
+      if ( crucible.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
+      {
+        temperature = crucible.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
+        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
+        crucible.SetTemperature( temperature );
+      }
+    }
+    SRP_ForgeCrucible_ColorBase filledCrucible = SRP_ForgeCrucible_ColorBase.Cast(item);
+    if (filledCrucible && filledCrucible.GetType() != "SRP_ForgeCrucible_Empty")
+    {
+      Print("filled crucible: " + item.GetType() + " max temp: " + item.GetTemperatureMax() + " min heat min temp: " + PARAM_ITEM_HEAT_MIN_TEMP);
+      item.AddHealth( PARAM_BURN_DAMAGE_COEF );
+      if ( item.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
+      {
+        temperature = item.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
+        Print("pre clamp: " + temperature);
+        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
+        Print("post clamp: " + temperature);
+        item.SetTemperature( temperature );
+        Print("temperature: " + temperature);
+      }
+    }
+	}
+
+  override protected void AddTemperatureToFireplace( float amount )
+	{
+		float temperature = GetTemperature();
+		temperature = temperature + amount;
+		SetTemperature( temperature );
+	}	
 };
 
 class SRP_AdvancedStoneForgeWorkbench extends SRP_StoneForgeWorkbench{};
