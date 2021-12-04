@@ -418,7 +418,7 @@ class CfgVehicles
 		displayName="Sewing Thread";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
 		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
-		weight=0;
+		weight=500;
 		itemSize[]={1,1};
 		stackedUnit="g";
 		absorbency=0.2;
@@ -435,20 +435,11 @@ class CfgVehicles
 			"\Survivalists_Mods\gear\crafting\data\srp_sewingmachine_co.paa"
 		};
 	};
-	class SRP_SewingThread_Black: Inventory_Base
+	class SRP_SewingThread_Black: SRP_SewingThread
 	{
 		scope=2;
 		displayName="Sewing Thread";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
-		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
-		weight=0;
-		itemSize[]={1,1};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=200;
-		varQuantityMin=0;
-		varQuantityMax=200;
-		quantityBar=1;
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -458,20 +449,11 @@ class CfgVehicles
 			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_black_co.paa"
 		};
 	};
-	class SRP_SewingThread_Green: Inventory_Base
+	class SRP_SewingThread_Green: SRP_SewingThread
 	{
 		scope=2;
 		displayName="Sewing Thread";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
-		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
-		weight=0;
-		itemSize[]={1,1};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=200;
-		varQuantityMin=0;
-		varQuantityMax=200;
-		quantityBar=1;
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -481,20 +463,11 @@ class CfgVehicles
 			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_green_co.paa"
 		};
 	};
-	class SRP_SewingThread_LightBlue: Inventory_Base
+	class SRP_SewingThread_LightBlue: SRP_SewingThread
 	{
 		scope=2;
 		displayName="Sewing Thread";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
-		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
-		weight=0;
-		itemSize[]={1,1};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=200;
-		varQuantityMin=0;
-		varQuantityMax=200;
-		quantityBar=1;
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -504,20 +477,11 @@ class CfgVehicles
 			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_lightblue_co.paa"
 		};
 	};
-	class SRP_SewingThread_Red: Inventory_Base
+	class SRP_SewingThread_Red: SRP_SewingThread
 	{
 		scope=2;
 		displayName="Sewing Thread";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
-		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
-		weight=0;
-		itemSize[]={1,1};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=200;
-		varQuantityMin=0;
-		varQuantityMax=200;
-		quantityBar=1;
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -527,20 +491,11 @@ class CfgVehicles
 			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_red_co.paa"
 		};
 	};
-	class SRP_SewingThread_Blue: Inventory_Base
+	class SRP_SewingThread_Blue: SRP_SewingThread
 	{
 		scope=2;
 		displayName="Sewing Thread";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
-		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
-		weight=0;
-		itemSize[]={1,1};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=200;
-		varQuantityMin=0;
-		varQuantityMax=200;
-		quantityBar=1;
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -550,6 +505,76 @@ class CfgVehicles
 			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_blue_co.paa"
 		};
 	};
+  class SRP_SewingThread_Grey : SRP_SewingThread
+	{
+		scope = 2;
+		displayName = "Sewing Thread";
+		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_grey_co.paa"
+		};
+	};
+	class SRP_SewingThread_Orange : SRP_SewingThread
+	{
+		scope = 2;
+		displayName = "Sewing Thread";
+		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_orange_co.paa"
+		};
+	};
+	class SRP_SewingThread_Pink : SRP_SewingThread
+	{
+		scope = 2;
+		displayName = "Sewing Thread";
+		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_pink_co.paa"
+		};
+	};
+	class SRP_SewingThread_Purple : SRP_SewingThread
+	{
+		scope = 2;
+		displayName = "Sewing Thread";
+		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_purple_co.paa"
+		};
+	};
+	class SRP_SewingThread_Yellow : SRP_SewingThread
+	{
+		scope = 2;
+		displayName = "Sewing Thread";
+		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_yellow_co.paa"
+		};
+	}; 
 
   class SRP_ShootingTargets_Kit: SRP_KitBase  // BP_ShootingTargetO_kit
 	{
