@@ -927,7 +927,8 @@ class CfgVehicles
 		};
     attachments[]=
     {
-      "SRP_Crucible"
+      "SRP_Crucible",
+      "SRP_IngotMold"
     };
 		class DamageSystem
 		{
@@ -963,7 +964,8 @@ class CfgVehicles
 		};
     attachments[]=
     {
-      "SRP_Crucible"
+      "SRP_Crucible",
+      "SRP_IngotMold"
     };
 		class DamageSystem
 		{
@@ -999,7 +1001,8 @@ class CfgVehicles
 		};
     attachments[]=
     {
-      "SRP_Crucible"
+      "SRP_Crucible",
+      "SRP_IngotMold"
     };
 		class DamageSystem
 		{

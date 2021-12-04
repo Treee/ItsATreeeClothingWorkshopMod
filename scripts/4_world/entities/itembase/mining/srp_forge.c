@@ -258,26 +258,26 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     SRP_ForgeCrucible_ColorBase filledCrucible = SRP_ForgeCrucible_ColorBase.Cast(item);
     if (filledCrucible && filledCrucible.GetType() != "SRP_ForgeCrucible_Empty")
     {
-      Print("filled crucible: " + item.GetType() + " max temp: " + item.GetTemperatureMax() + " min heat min temp: " + PARAM_ITEM_HEAT_MIN_TEMP);
+      // Print("filled crucible: " + item.GetType() + " max temp: " + item.GetTemperatureMax() + " min heat min temp: " + PARAM_ITEM_HEAT_MIN_TEMP);
       item.AddHealth( PARAM_BURN_DAMAGE_COEF );
       if ( item.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
       {
         temperature = item.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
-        Print("pre clamp: " + temperature);
+        // Print("pre clamp: " + temperature);
         temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
-        Print("post clamp: " + temperature);
+        // Print("post clamp: " + temperature);
         item.SetTemperature( temperature );
-        Print("temperature: " + temperature);
+        // Print("temperature: " + temperature);
       }
     }
 	}
 
-  override protected void AddTemperatureToFireplace( float amount )
-	{
-		float temperature = GetTemperature();
-		temperature = temperature + amount;
-		SetTemperature( temperature );
-	}	
+  // override protected void AddTemperatureToFireplace( float amount )
+	// {
+	// 	float temperature = GetTemperature();
+	// 	temperature = temperature + amount;
+	// 	SetTemperature( temperature );
+	// }	
 };
 
 class SRP_AdvancedStoneForgeWorkbench extends SRP_StoneForgeWorkbench{};

@@ -633,7 +633,10 @@ class CfgVehicles
 		weight=500;
 		itemSize[]={3,1};
 		itemsCargoSize[]={0,0};
-		inventorySlot[]={};
+		inventorySlot[]=
+    {
+      "SRP_IngotMold"
+    };
 		canBeDigged=0;
 		allowOwnedCargoManipulation=1;
 		destroyOnEmpty=0;
