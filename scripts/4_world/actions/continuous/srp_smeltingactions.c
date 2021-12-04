@@ -104,8 +104,8 @@ class ActionEmptyIngotMold: ActionContinuousBase
 
   override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{		
-    SRP_ForgeIngotMold_ColorBase ingotMold = SRP_ForgeIngotMold_ColorBase.Cast(item);
-    if (ingotMold)    
+    SRP_ForgeIngotMold_ColorBase ingotMold = SRP_ForgeIngotMold_ColorBase.Cast(action_data.m_MainItem);
+    if (ingotMold && action_data.m_MainItem.GetHierarchyRootPlayer() == action_data.m_Player)    
     {
       string moldType = ingotMold.GetType();
       if (moldType != "SRP_ForgeIngotMold_MetalEmpty" && moldType != "SRP_ForgeIngotMold_Lime" && moldType != "SRP_ForgeIngotMold_Mortar" && moldType != "SRP_ForgeIngotMold_Empty")
