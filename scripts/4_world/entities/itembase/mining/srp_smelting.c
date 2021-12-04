@@ -13,7 +13,7 @@ class SRP_MetalBucket extends Inventory_Base
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (player_PB.GetItemInHands() == this)
     {
-      if (GetTemperature() > 100)
+      if (GetTemperature() > 80)
       {
         player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
         player_PB.AddHealth("", "", -50); //do 250 blood dmg
@@ -64,7 +64,7 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (player_PB.GetItemInHands() == this)
     {
-      if (GetTemperature() > 100)
+      if (GetTemperature() > 80)
       {
         player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
         player_PB.AddHealth("", "", -50); //do 250 blood dmg
@@ -124,7 +124,7 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (player_PB.GetItemInHands() == this)
     {
-      if (GetTemperature() > 100)
+      if (GetTemperature() > 80)
       {
         player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
         player_PB.AddHealth("", "", -50); //do 250 blood dmg
