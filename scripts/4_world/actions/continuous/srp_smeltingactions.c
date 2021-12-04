@@ -52,9 +52,17 @@ class ActionPourMoltenMetalIntoMold: ActionSingleUseBase
 				string color = crucibleAttachment.ConfigGetString("color");
         string newClassName = "SRP_ForgeIngotMold_" + color;
         ItemBase newIngotMold = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, ingotMold.GetPosition(), false));
+        ItemBase newEmptyCrucible = ItemBase.Cast(GetGame().CreateObjectEx("SRP_ForgeCrucible_Empty", ingotMold.GetPosition(), false));
+        
+        newEmptyCrucible.SetHealth(crucibleAttachment.GetHealth());
+        newEmptyCrucible.SetTemperature(crucibleAttachment.GetTemperature());
+        newEmptyCrucible.AddHealth(-30);
+
         newIngotMold.SetTemperature(crucibleAttachment.GetTemperature());
+
         ingotMold.Delete();
         crucibleAttachment.Delete();
+
         tongs.AddHealth(-10);
       }
 		}
@@ -84,7 +92,7 @@ class ActionEmptyIngotMold: ActionContinuousBase
 	override void CreateConditionComponents()  
 	{		
 		m_ConditionItem = new CCINonRuined;
-		m_ConditionTarget = new CCTNone;
+		m_ConditionTarget = new CCTSelf;
 	}
 	
 	override bool HasProneException()
@@ -104,8 +112,8 @@ class ActionEmptyIngotMold: ActionContinuousBase
 
   override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{		
-    SRP_ForgeIngotMold_ColorBase ingotMold = SRP_ForgeIngotMold_ColorBase.Cast(action_data.m_MainItem);
-    if (ingotMold && action_data.m_MainItem.GetHierarchyRootPlayer() == action_data.m_Player)    
+    SRP_ForgeIngotMold_ColorBase ingotMold = SRP_ForgeIngotMold_ColorBase.Cast(item);
+    if (ingotMold)    
     {
       string moldType = ingotMold.GetType();
       if (moldType != "SRP_ForgeIngotMold_MetalEmpty" && moldType != "SRP_ForgeIngotMold_Lime" && moldType != "SRP_ForgeIngotMold_Mortar" && moldType != "SRP_ForgeIngotMold_Empty")
@@ -123,7 +131,11 @@ class ActionEmptyIngotMold: ActionContinuousBase
       ItemBase ingotMold = ItemBase.Cast(action_data.m_MainItem);
       string color = ingotMold.ConfigGetString("color");
       string newClassName = "SRP_ForgeIngot_" + color;
-      ItemBase newIngot = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, ingotMold.GetPosition(), false));      
+      ItemBase newIngot = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));      
+      ItemBase newIngotMold = ItemBase.Cast(GetGame().CreateObjectEx("SRP_ForgeIngotMold_Empty", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));      
+      newIngot.SetQuantity(3);
+      newIngotMold.SetHealth(ingotMold.GetHealth());
+      newIngotMold.AddHealth(-20);
       ingotMold.Delete();
 		}
 	}

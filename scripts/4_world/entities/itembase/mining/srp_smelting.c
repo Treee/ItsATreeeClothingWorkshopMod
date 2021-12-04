@@ -146,6 +146,38 @@ class SRP_ForgeIngotMold_Iron extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Gold extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Platinum extends SRP_ForgeIngotMold_ColorBase{};
 
+//=====================================================INGOTS
+class SRP_ForgeIngot_ColorBase extends Inventory_Base
+{
+  override protected bool CanHaveTemperature()
+	{
+		// return true used on selected items that have a temperature effect
+		return true;
+	}
+
+  override void OnInventoryEnter(Man player)
+  {
+    super.OnInventoryEnter(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB.GetItemInHands() == this)
+    {
+      if (GetTemperature() > 80)
+      {
+        player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
+        player_PB.AddHealth("", "", -50); //do 250 blood dmg
+        player_PB.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+      }
+    }
+  }
+};
+
+class SRP_ForgeIngot_Copper extends SRP_ForgeIngot_ColorBase{};
+class SRP_ForgeIngot_Tin extends SRP_ForgeIngot_ColorBase{};
+class SRP_ForgeIngot_Bronze extends SRP_ForgeIngot_ColorBase{};
+class SRP_ForgeIngot_Iron extends SRP_ForgeIngot_ColorBase{};
+class SRP_ForgeIngot_Gold extends SRP_ForgeIngot_ColorBase{};
+class SRP_ForgeIngot_Platinum extends SRP_ForgeIngot_ColorBase{};
+
 
 //=====================================================CRUCIBLES
 class SRP_ForgeCrucible_ColorBase extends Inventory_Base

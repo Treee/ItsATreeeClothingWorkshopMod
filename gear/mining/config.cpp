@@ -512,9 +512,13 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=10;
-		varStackMax=10;
-    rotationFlags=17;
-		inventorySlot[]={};
+		varStackMax=10;    
+    varTemperatureMax=500;
+    // rotationFlags=17;
+		inventorySlot[]=
+    {
+      "SRP_Ingot"
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -875,7 +879,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=2000;
+					hitpoints=100;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\gear\mining\forge_crucible.rvmat"}},
@@ -918,7 +922,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_ForgeCrucible_Empty: SRP_ForgeCrucible_ColorBase
 	{
 		scope=2;
@@ -938,7 +941,6 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_bucket_crucible_co.paa"
     };
 	};
-
   class SRP_ForgeCrucible_Copper: SRP_ForgeCrucible_ColorBase
 	{
 		scope=2;
@@ -1188,7 +1190,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_Mining_RawOre_Copper: SRP_Mining_RawOre_ColorBase
 	{
 		scope=2;

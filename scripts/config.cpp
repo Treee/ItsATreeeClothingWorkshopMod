@@ -654,13 +654,19 @@ class CfgSlots
   class Slot_SRP_Crucible
   {
 		name="SRP_Crucible";
-		displayName="Crucible";
+		displayName="Hot Crucible";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   class Slot_SRP_IngotMold
   {
 		name="SRP_IngotMold";
-		displayName="Ingot Mold";
+		displayName="Hot Ingot Mold";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_Ingot
+  {
+		name="SRP_Ingot";
+		displayName="Hot Ingot";
 		ghostIcon="set:dayz_inventory image:missing";
   }
   // ------------------------ CARDS
@@ -1347,12 +1353,17 @@ class CfgNonAIVehicles
     inventorySlot[] = {"SRP_Crucible"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_crucible_proxy.p3d"; //proxy path 
   };
-
   class Proxysrp_ingotmold_proxy: ProxyAttachment //same as p3d name
   {
     scope = 2;
     inventorySlot[] = {"SRP_IngotMold"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_ingotmold_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_ingot_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_Ingot"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_ingot_proxy.p3d"; //proxy path 
   };
 
   class Proxysrp_comtacs: ProxyAttachment //same as p3d name

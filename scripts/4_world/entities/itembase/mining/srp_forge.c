@@ -253,6 +253,17 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
         filledIngotMold.SetTemperature( temperature );
       }
     }
+    SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(item);
+    if (ingot)
+    {
+      ingot.AddHealth( PARAM_BURN_DAMAGE_COEF );
+      if ( ingot.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
+      {
+        temperature = ingot.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
+        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
+        ingot.SetTemperature( temperature );
+      }
+    }
     SRP_ForgeCrucible_Empty crucible = SRP_ForgeCrucible_Empty.Cast(item);
     if (crucible)
     {
