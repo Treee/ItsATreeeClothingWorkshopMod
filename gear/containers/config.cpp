@@ -2478,5 +2478,104 @@ class CfgVehicles
 			"Survivalists_Mods\gear\containers\data\teddybear_yellow_co.paa"
 		};
 	};
+
+  class SRP_CassetteBinder: SmallProtectorCase
+  {
+		scope=2;
+		displayName="Cassette Binder";
+		descriptionShort="Holds various cassettes";
+		model="Survivalists_Mods\gear\containers\srp_binder.p3d";
+		weight=980;
+		itemSize[]={3,4};
+		itemsCargoSize[]={0,0};
+		canBeDigged=0;
+		isMeleeWeapon=1;
+		allowOwnedCargoManipulation=1;
+    attachments[]=
+		{
+			"Cassette",
+			"Cassette2",
+			"Cassette3",
+			"Cassette4",
+			"Cassette5",
+			"Cassette6",
+			"Cassette7",
+			"Cassette8",
+			"Cassette9",
+			"Cassette10",
+			"Cassette11",
+			"Cassette12",
+			"Cassette13",
+			"Cassette14",
+			"Cassette15",
+			"Cassette16",
+			"Cassette17",
+			"Cassette18",
+			"Cassette19",
+			"Cassette20",
+			"Cassette21",
+			"Cassette22",
+			"Cassette23",
+			"Cassette24",
+			"Cassette25",
+			"Cassette26"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_binder_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\containers\data\srp_binder.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\containers\data\srp_binder.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\containers\data\srp_binder_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\containers\data\srp_binder_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\containers\data\srp_binder_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=8;
+					};
+					class Blood
+					{
+						damage=8;
+					};
+					class Shock
+					{
+						damage=8;
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_CassetteBinder_Kuru: SRP_CassetteBinder
+  {
+		scope=2;
+		displayName="Kuru Cassette Binder";
+		descriptionShort="Holds kuru study cassettes";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_binder_kuru_co.paa"
+		};
+
+  }
   
 };

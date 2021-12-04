@@ -18,14 +18,164 @@ class CfgSlots
 	{
 		name="Cassette";
 		displayName="Cassette";
-		ghostIcon="";
-	};  
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette2
+	{
+		name="Cassette2";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette3
+	{
+		name="Cassette3";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette4
+	{
+		name="Cassette4";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette5
+	{
+		name="Cassette5";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette6
+	{
+		name="Cassette6";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette7
+	{
+		name="Cassette7";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette8
+	{
+		name="Cassette8";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette9
+	{
+		name="Cassette9";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette10
+	{
+		name="Cassette10";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette11
+	{
+		name="Cassette11";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette12
+	{
+		name="Cassette12";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette13
+	{
+		name="Cassette13";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette14
+	{
+		name="Cassette14";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette15
+	{
+		name="Cassette15";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette16
+	{
+		name="Cassette16";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette17
+	{
+		name="Cassette17";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette18
+	{
+		name="Cassette18";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette19
+	{
+		name="Cassette19";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette20
+	{
+		name="Cassette20";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette21
+	{
+		name="Cassette21";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette22
+	{
+		name="Cassette22";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette23
+	{
+		name="Cassette23";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette24
+	{
+		name="Cassette24";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette25
+	{
+		name="Cassette25";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Cassette26
+	{
+		name="Cassette26";
+		displayName="Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
   class Slot_blade
 	{
 		name="blade";
 		displayName="blade";
 		selection="blade";
-		ghostIcon="";
+		ghostIcon="set:dayz_inventory image:missing";
 	};
   class Slot_Gasfilter
 	{
@@ -355,7 +505,7 @@ class CfgSlots
 	{
 		name="Pen_slot";
 		displayName="Pen";
-		ghostIcon="";
+		ghostIcon="set:dayz_inventory image:missing";
 	};
 	class Slot_SRPLRRadioBattery
 	{
@@ -560,7 +710,7 @@ class CfgSlots
 	// {
 	// 	name="ToolRack1";
 	// 	displayName="Hand Tool";
-	// 	ghostIcon="";
+	// 	ghostIcon="set:dayz_inventory image:missing";
 	// };
   class Slot_SRP_ForgeBellows
 	{

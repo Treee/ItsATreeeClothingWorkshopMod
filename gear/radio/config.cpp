@@ -234,7 +234,32 @@ class CfgVehicles
 		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
-			"Cassette"
+			"Cassette",
+			"Cassette2",
+			"Cassette3",
+			"Cassette4",
+			"Cassette5",
+			"Cassette6",
+			"Cassette7",
+			"Cassette8",
+			"Cassette9",
+			"Cassette10",
+			"Cassette11",
+			"Cassette12",
+			"Cassette13",
+			"Cassette14",
+			"Cassette15",
+			"Cassette16",
+			"Cassette17",
+			"Cassette18",
+			"Cassette19",
+			"Cassette20",
+			"Cassette21",
+			"Cassette22",
+			"Cassette23",
+			"Cassette24",
+			"Cassette25",
+			"Cassette26"
 		};
 		hiddenSelections[]=
 		{
@@ -602,7 +627,32 @@ class CfgVehicles
 		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
-			"Cassette"
+			"Cassette",
+			"Cassette2",
+			"Cassette3",
+			"Cassette4",
+			"Cassette5",
+			"Cassette6",
+			"Cassette7",
+			"Cassette8",
+			"Cassette9",
+			"Cassette10",
+			"Cassette11",
+			"Cassette12",
+			"Cassette13",
+			"Cassette14",
+			"Cassette15",
+			"Cassette16",
+			"Cassette17",
+			"Cassette18",
+			"Cassette19",
+			"Cassette20",
+			"Cassette21",
+			"Cassette22",
+			"Cassette23",
+			"Cassette24",
+			"Cassette25",
+			"Cassette26"
 		};
 		hiddenSelections[]=
 		{
@@ -905,7 +955,32 @@ class CfgVehicles
 		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
-			"Cassette"
+			"Cassette",
+			"Cassette2",
+			"Cassette3",
+			"Cassette4",
+			"Cassette5",
+			"Cassette6",
+			"Cassette7",
+			"Cassette8",
+			"Cassette9",
+			"Cassette10",
+			"Cassette11",
+			"Cassette12",
+			"Cassette13",
+			"Cassette14",
+			"Cassette15",
+			"Cassette16",
+			"Cassette17",
+			"Cassette18",
+			"Cassette19",
+			"Cassette20",
+			"Cassette21",
+			"Cassette22",
+			"Cassette23",
+			"Cassette24",
+			"Cassette25",
+			"Cassette26"
 		};
 		hiddenSelections[]=
 		{
