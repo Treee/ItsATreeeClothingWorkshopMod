@@ -81,6 +81,9 @@ modded class PluginRecipesManagerBase extends PluginBase
 		RegisterRecipe(new Craft_SRP_IngotMold_Lime);
 		RegisterRecipe(new Craft_SRP_IngotMold_Mortar);
 
+		RegisterRecipe(new Craft_SRP_GoldenCoinsWorn);
+		RegisterRecipe(new Craft_SRP_MetalCoins);
+
     // Building
     RegisterRecipe(new Craft_SRP_Planks);
 
