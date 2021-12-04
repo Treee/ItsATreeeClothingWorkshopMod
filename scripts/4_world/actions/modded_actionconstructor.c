@@ -18,12 +18,12 @@ modded class ActionConstructor
     actions.Insert(ActionTestDrugsSelf);
 
     actions.Insert(ActionPourMoltenMetalIntoMold);
+    actions.Insert(ActionEmptyIngotMold);
 
     // Smoking
     actions.Insert(ActionSmokeSRPSmokableSelf);
     actions.Insert(ActionForceSmokeSRPSmokable);
     actions.Insert(ActionLightSmokableInHands);
     actions.Insert(ActionExtinguishSmokeSRPSmokableSelf);
-
 	}
 };

@@ -61,3 +61,70 @@ class ActionPourMoltenMetalIntoMold: ActionSingleUseBase
 	}
 	
 };
+
+
+class ActionEmptyIngotMoldCB : ActionContinuousBaseCB
+{
+	override void CreateActionComponent()
+	{
+		m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.UNPACK);
+	}
+};
+
+class ActionEmptyIngotMold: ActionContinuousBase
+{	
+	void ActionEmptyIngotMold()
+	{
+		m_CallbackClass = ActionEmptyIngotMoldCB;
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_OPENITEM;
+		m_CommandUIDProne = DayZPlayerConstants.CMD_ACTIONFB_OPENITEM;
+		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
+	}
+	
+	override void CreateConditionComponents()  
+	{		
+		m_ConditionItem = new CCINonRuined;
+		m_ConditionTarget = new CCTNone;
+	}
+	
+	override bool HasProneException()
+	{
+		return true;
+	}
+
+	override bool HasTarget()
+	{
+		return false;
+	}
+		
+	override string GetText()
+	{
+		return "Empty Ingot Mold";
+	}
+
+  override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
+	{		
+    SRP_ForgeIngotMold_ColorBase ingotMold = SRP_ForgeIngotMold_ColorBase.Cast(item);
+    if (ingotMold)    
+    {
+      string moldType = ingotMold.GetType();
+      if (moldType != "SRP_ForgeIngotMold_MetalEmpty" && moldType != "SRP_ForgeIngotMold_Lime" && moldType != "SRP_ForgeIngotMold_Mortar" && moldType != "SRP_ForgeIngotMold_Empty")
+      {
+        return ingotMold.GetTemperature() < 31;        
+      }
+    }
+		return false;
+	}
+
+	override void OnFinishProgressServer( ActionData action_data )
+	{
+		if ( action_data.m_MainItem)
+		{
+      ItemBase ingotMold = ItemBase.Cast(action_data.m_MainItem);
+      string color = ingotMold.ConfigGetString("color");
+      string newClassName = "SRP_ForgeIngot_" + color;
+      ItemBase newIngot = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, ingotMold.GetPosition(), false));      
+      ingotMold.Delete();
+		}
+	}
+};

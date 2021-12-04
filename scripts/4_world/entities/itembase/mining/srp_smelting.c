@@ -72,9 +72,32 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
       }
     }
   }
+
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionEmptyIngotMold);
+	}
 };
-class SRP_ForgeIngotMold_MetalEmpty extends SRP_ForgeIngotMold_ColorBase{};
-class SRP_ForgeIngotMold_Lime extends SRP_ForgeIngotMold_ColorBase{};
+class SRP_ForgeIngotMold_MetalEmpty extends SRP_ForgeIngotMold_ColorBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		RemoveAction(ActionEmptyIngotMold);
+	}
+};
+class SRP_ForgeIngotMold_Lime extends SRP_ForgeIngotMold_ColorBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		RemoveAction(ActionEmptyIngotMold);
+	}
+};
 class SRP_ForgeIngotMold_Mortar extends SRP_ForgeIngotMold_ColorBase
 {
   int m_HeatCounter = 0;
@@ -99,8 +122,23 @@ class SRP_ForgeIngotMold_Mortar extends SRP_ForgeIngotMold_ColorBase
       this.Delete();
     }
   }
+
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		RemoveAction(ActionEmptyIngotMold);
+	}
 };
-class SRP_ForgeIngotMold_Empty extends SRP_ForgeIngotMold_ColorBase{};
+class SRP_ForgeIngotMold_Empty extends SRP_ForgeIngotMold_ColorBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		RemoveAction(ActionEmptyIngotMold);
+	}
+};
 class SRP_ForgeIngotMold_Copper extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Tin extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Bronze extends SRP_ForgeIngotMold_ColorBase{};
