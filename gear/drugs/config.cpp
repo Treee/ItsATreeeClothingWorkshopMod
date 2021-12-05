@@ -275,6 +275,8 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
 		hiddenSelections[]={
       "zbytek"
     };

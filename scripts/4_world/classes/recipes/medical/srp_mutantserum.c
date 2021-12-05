@@ -414,12 +414,12 @@ class SRP_Craft_MutantCrudeSerumUpgrade extends RecipeBase
 		
 		//conditions
 		m_MinDamageIngredient[0] = -1;	//-1 = disable check
-		m_MaxDamageIngredient[0] = 4;	//-1 = disable check
+		m_MaxDamageIngredient[0] = 2;	//-1 = disable check
 		m_MinQuantityIngredient[0] = -1;	//quantity 1 required for primary ingredient
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;	//-1 = disable check
-		m_MaxDamageIngredient[1] = 4;	//-1 = disable check
+		m_MaxDamageIngredient[1] = 2;	//-1 = disable check
 		m_MinQuantityIngredient[1] = -1;	//quantity 1 required for secondary ingredient
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		
