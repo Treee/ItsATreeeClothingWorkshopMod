@@ -328,8 +328,8 @@ class CfgVehicles
 	class SRP_Knife_Sheath_Tan: NylonKnifeSheath
 	{
 		scope = 2;
-		displayName = "Tan Knife Sheath";
-		descriptionShort = "A tan knife sheath";
+		displayName = "Knife Sheath - Tan";
+		descriptionShort = "A knife sheath. Clips to a belt or vest.";
 		model = "Survivalists_Mods\characters\belts\Knife_Sheath.p3d";
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = 
@@ -379,6 +379,7 @@ class CfgVehicles
 	class SRP_Knife_Sheath_Green: SRP_Knife_Sheath_Tan
 	{
 		scope=2;
+    displayName = "Knife Sheath - Green";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\belts\data\Sheath_Green_CO.paa"
@@ -387,6 +388,7 @@ class CfgVehicles
 	class SRP_Knife_Sheath_Black: SRP_Knife_Sheath_Tan
 	{
 		scope=2;
+    displayName = "Knife Sheath - Black";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\belts\data\Sheath_Black_CO.paa"
