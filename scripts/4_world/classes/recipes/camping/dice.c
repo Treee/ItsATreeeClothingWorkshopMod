@@ -367,8 +367,8 @@ class Craft_SRP_GemRPGDiceD4 extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = 3;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -455,8 +455,8 @@ class Craft_SRP_GemRPGDiceD6 extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = 3;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -543,8 +543,8 @@ class Craft_SRP_GemRPGDiceD8 extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = 3;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -631,8 +631,8 @@ class Craft_SRP_GemRPGDiceD10 extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = 3;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -719,8 +719,8 @@ class Craft_SRP_GemRPGDiceD12 extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = 3;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -807,8 +807,8 @@ class Craft_SRP_GemRPGDiceD20 extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = 3;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -895,8 +895,8 @@ class Craft_SRP_GemRPGDiceD100 extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = 3;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
