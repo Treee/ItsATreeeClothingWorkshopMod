@@ -666,6 +666,7 @@ class CfgVehicles
 		descriptionShort="The S10 NBC Respirator is a military gas mask that was formerly used within all branches of the British Armed Forces. Following the mask's replacement by the General Service Respirator in 2011, the S10 is now widely available to the public on the army surplus market.";
 		model="Survivalists_Mods\characters\masks\srps10gasmask_g.p3d";
     color="base";
+    rotationFlags=0;
 		itemSize[]={2,3};
 		attachments[]=
     {
@@ -766,6 +767,7 @@ class CfgVehicles
 		descriptionShort="The PMK gas mask represents a family of gas masks used by the Soviet Armed Forces, and later by the Armed Forces of the Russian Federation.";
 		model="Survivalists_Mods\characters\masks\srppmk2_g.p3d";
     color="base";
+    rotationFlags=0;
 		itemSize[]={2,3};
 		hiddenSelections[]=
     {
@@ -865,6 +867,7 @@ class CfgVehicles
 		descriptionShort="The M50 series protective mask consisting of the M50 and M51 variants, officially known as the Joint Service General Protective Mask (JSGPM) is a lightweight, protective mask system consisting of the mask, a mask carrier, and additional accessories";
 		model="Survivalists_Mods\characters\masks\srp_m50gasmask_g.p3d";
     color="base";
+    rotationFlags=0;
 		itemSize[]={2,3};
 		hiddenSelections[]=
     {
