@@ -16,14 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
   class Clothing;
-  class RidersJacket_ColorBase;
-  class QuiltedJacket_ColorBase;
-  class Sweater_ColorBase;
-  class M65Jacket_ColorBase;
   class Hoodie_ColorBase;
-  class TrackSuitJacket_ColorBase;
-  class ParamedicJacket_ColorBase;
-  class PoliceJacketOrel;
 
   class poncho_mung;
 
@@ -152,6 +145,9 @@ class CfgVehicles
   //----------------------------------- BASE GAME OVERRIDE
   class NBCJacketBase: Clothing
 	{
+		heatIsolation=0.80000001;
+		absorbency=0;
+		repairableWithKits[]={5,6}; // duct tape and tire repair kit
 		class Protection 
     {
       biological=1;
