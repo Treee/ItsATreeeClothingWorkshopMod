@@ -706,6 +706,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Ring Binder" (https://skfb.ly/6sQLY) by Jura is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Boat Oar" (https://skfb.ly/6YQJM) by Zach Varmette is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference
