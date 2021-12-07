@@ -20,11 +20,6 @@ class CfgVehicles
   class Container_Base;
   class Bottle_Base;
 
-  class ChestHolster;
-  class PlateCarrierPouches;
-  class PlateCarrierHolster;
-  class HighCapacityVest_ColorBase;
-
   // ----------------------  BASE GAME OVERRIDES
 
   class PressVest_ColorBase: Clothing
@@ -39,92 +34,7 @@ class CfgVehicles
 		repairCosts[]={50};
 	};
 
-  // ----------------------  BASE GAME RETEXTURES
-
-	class SRP_TraderVest: PlateCarrierVest  // SRPTraderVest
-	{
-		scope=2;
-		quickBarBonus=10;
-		hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\vests\data\SRPTraderVest.paa"
-		};
-	};
-
-	class SRP_PressVest_Black: PressVest_ColorBase  // BP_PressVest_Black
-	{
-		scope=2;
-		displayName="Black Press Vest";
-		descriptionShort="A black vest with 'Press' printed onto it";
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\vests\data\beliyvest.paa",
-			"Survivalists_Mods\characters\vests\data\beliyvest.paa",
-			"Survivalists_Mods\characters\vests\data\beliyvest.paa"
-		};
-	};
-
-	class SRP_ChestHolster_Black: ChestHolster  // BP1_ChestHolster_black
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\vests\data\chest_holster_black_co.paa",
-			"Survivalists_Mods\characters\vests\data\chest_holster_black_co.paa",
-			"Survivalists_Mods\characters\vests\data\chest_holster_black_co.paa"
-		};
-	};
-
-	class SRP_PlateCarrierVest_Black: PlateCarrierVest  // BP_PlateCarrierVest_black
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\vests\data\beliyvest2.paa",
-			"Survivalists_Mods\characters\vests\data\beliyvest2.paa",
-			"Survivalists_Mods\characters\vests\data\beliyvest2.paa"
-		};
-	};
-
-	class SRP_HighCapacityVest_Rain: HighCapacityVest_ColorBase  // BP2_Rainvest
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\vests\data\rainvest.paa",
-			"Survivalists_Mods\characters\vests\data\rainvest.paa",
-			"Survivalists_Mods\characters\vests\data\rainvest.paa"
-		};
-	};
-
+  // ----------------------  PLATINUM INVESTOR
   class SRP_PlateCarrierVest_Pseudo: PlateCarrierVest  // new
 	{
 		scope=2;
@@ -173,80 +83,6 @@ class CfgVehicles
 			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa",
 			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa",
 			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa"
-		};
-	};
-
-  class SRP_PlateCarrierHolster_Tan: PlateCarrierHolster
-	{
-		scope=2;
-		displayName = "Tan Holster";
-		descriptionShort = "Tan Holster";
-		hiddenSelections[] = {"zbytek", "camoGround"};
-		hiddenSelectionsTextures[] = 
-		{
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Tan_CO.paa",
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Tan_CO.paa"
-		};
-	};
-	class SRP_PlateCarrierHolster_Green: PlateCarrierHolster
-	{
-		scope=2;
-		displayName = "Green Holster";
-		descriptionShort = "Green Holster";
-		hiddenSelections[] = {"zbytek", "camoGround"};
-		hiddenSelectionsTextures[] = 
-		{
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Green_CO.paa",
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Green_CO.paa"
-		};
-	};
-	class SRP_PlateCarrierHolster_Black: PlateCarrierHolster
-	{
-		scope=2;
-		displayName = "Black Holster";
-		descriptionShort = "Black Holster";
-		hiddenSelections[] = {"zbytek", "camoGround"};
-		hiddenSelectionsTextures[] = 
-		{
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Black_CO.paa",
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Black_CO.paa"
-		};
-	};
-
-  class SRP_PlateCarrierPouches_Tan: PlateCarrierPouches
-	{
-		scope=2;
-		displayName = "Tan Pouches";
-		descriptionShort = "Tan Pouches";
-		hiddenSelections[] = {"zbytek", "camoGround"};
-		hiddenSelectionsTextures[] = 
-		{
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Tan_CO.paa",
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Tan_CO.paa"
-		};
-	};
-	class SRP_PlateCarrierPouches_Green: PlateCarrierPouches
-	{
-		scope=2;
-		displayName = "Green Pouches";
-		descriptionShort = "Green Pouches";
-		hiddenSelections[] = {"zbytek", "camoGround"};
-		hiddenSelectionsTextures[] = 
-		{
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Green_CO.paa",
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Green_CO.paa"
-		};
-	};
-	class SRP_PlateCarrierPouches_Black: PlateCarrierPouches
-	{
-		scope=2;
-		displayName = "Black Pouches";
-		descriptionShort = "Black Pouches";
-		hiddenSelections[] = {"zbytek", "camoGround"};
-		hiddenSelectionsTextures[] = 
-		{
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Black_CO.paa",
-			"Survivalists_Mods\characters\belts\data\SRP_Holster_Black_CO.paa"
 		};
 	};
 

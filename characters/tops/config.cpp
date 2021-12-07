@@ -16,11 +16,6 @@ class CfgPatches
 class CfgVehicles
 {
   class Clothing;
-  class TShirt_ColorBase;
-  class TacticalShirt_ColorBase;
-  class MiniDress_ColorBase;
-  class BomberJacket_ColorBase;
-  class HuntingJacket_ColorBase;
   class RidersJacket_ColorBase;
   class QuiltedJacket_ColorBase;
   class Sweater_ColorBase;
@@ -157,12 +152,13 @@ class CfgVehicles
   //----------------------------------- BASE GAME OVERRIDE
   class NBCJacketBase: Clothing
 	{
-		class Protection {
+		class Protection 
+    {
       biological=1;
     }
 	};
 
-  //----------------------------------- BASE GAME RETEXTURES
+  //======================== PLATINUM GEAR
 
   //===================== CUSTOM SHIRTS
 
