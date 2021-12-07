@@ -19,6 +19,8 @@ class CfgVehicles
   class Clothing;
   class Container_Base;
   class Bottle_Base;
+  class PlateCarrierPouches;
+  class PlateCarrierHolster;
 
   // ----------------------  BASE GAME OVERRIDES
 

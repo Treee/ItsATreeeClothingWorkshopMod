@@ -158,8 +158,6 @@ class CfgVehicles
     }
 	};
 
-  //======================== PLATINUM GEAR
-
   //===================== CUSTOM SHIRTS
 
   class SRP_PlatHoodie: Clothing
