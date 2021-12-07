@@ -495,6 +495,320 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_KatanaSlim: Inventory_Base
+	{
+		scope=2;
+		displayName="Katana";
+		descriptionShort="A katana. Forged from steel.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_katanaslim.p3d";
+		repairCosts[]={20};
+		// rotationFlags=12;
+		weight=130;
+		itemSize[]={2,7};
+		itemBehaviour=2;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Katana"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="fireaxe";
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+
+  class SRP_KatanaSlim_Sheath: Inventory_Base
+	{
+		scope=2;
+		displayName="Katana Sheath";
+		descriptionShort="A katana sheath. Holds a katana.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_katanaslim_sheath.p3d";
+		repairCosts[]={20};
+		// rotationFlags=12;
+		weight=130;
+		itemSize[]={2,7};
+		itemBehaviour=2;
+    attachments[]=
+    {
+      "SRP_Katana"
+    };
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeBat";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeBat_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeBat_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+
+  class SRP_KatanaSlim_Luci: SRP_KatanaSlim
+  {
+    scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_KatanaSlim_Sheath_Luci: SRP_KatanaSlim_Sheath
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
   class SRP_Staff_UnCutGem: Inventory_Base
   {
 		scope=2;

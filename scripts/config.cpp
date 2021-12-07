@@ -819,6 +819,13 @@ class CfgSlots
 		displayName="Hot Ingot";
 		ghostIcon="set:dayz_inventory image:missing";
   }
+
+  class Slot_SRP_Katana
+  {
+		name="SRP_Katana";
+		displayName="Katana";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
   // ------------------------ CARDS
   class Slot_CardHand1
   {
@@ -1514,6 +1521,12 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"SRP_Ingot"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_ingot_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_katana_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_Katana"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_katana_proxy.p3d"; //proxy path 
   };
 
   class Proxysrp_comtacs: ProxyAttachment //same as p3d name
