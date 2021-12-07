@@ -36,8 +36,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
     hiddenSelections[]=
@@ -89,8 +89,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
     hiddenSelections[]=
@@ -160,8 +160,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};
@@ -186,8 +186,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};
@@ -212,8 +212,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -238,8 +238,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};    
@@ -264,8 +264,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -290,8 +290,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -316,8 +316,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -342,8 +342,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -368,8 +368,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -394,8 +394,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -420,8 +420,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -446,8 +446,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -472,8 +472,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -498,8 +498,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -524,8 +524,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -550,8 +550,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -576,8 +576,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -602,8 +602,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -628,8 +628,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -654,8 +654,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -680,8 +680,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -706,8 +706,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -732,8 +732,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -758,8 +758,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -784,8 +784,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -810,8 +810,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -836,8 +836,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -862,8 +862,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -888,8 +888,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -914,8 +914,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -940,8 +940,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -966,8 +966,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
 	};  
@@ -995,8 +995,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
     hiddenSelections[]=
@@ -1024,7 +1024,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Caution";
     model="Survivalists_Mods\structures\signs\streetsigns_caution.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_CautionBiohazard_Kit: SRP_KitBase //new
@@ -1038,7 +1038,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Caution Biohazard";
     model="Survivalists_Mods\structures\signs\streetsigns_caution.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\structures\signs\data\srp_roadsigns_biohazard_co.paa"
@@ -1060,7 +1060,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - No Smoking";
     model="Survivalists_Mods\structures\signs\streetsigns_nosmoking.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_Handicap_Kit: SRP_KitBase //new
@@ -1074,7 +1074,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Handicap";
     model="Survivalists_Mods\structures\signs\streetsigns_handicap.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_NoParking_Kit: SRP_KitBase //new
@@ -1088,7 +1088,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - No Parking";
     model="Survivalists_Mods\structures\signs\streetsigns_noparking.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_Yield_Kit: SRP_KitBase //new
@@ -1102,7 +1102,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Yield";
     model="Survivalists_Mods\structures\signs\streetsigns_yield.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_Pedestrians_Kit: SRP_KitBase //new
@@ -1116,7 +1116,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Pedestrians";
     model="Survivalists_Mods\structures\signs\streetsigns_pedestrian.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_NoBikes_Kit: SRP_KitBase //new
@@ -1130,7 +1130,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - No Bikes";
     model="Survivalists_Mods\structures\signs\streetsigns_nobikes.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_NoLeftTurn_Kit: SRP_KitBase //new
@@ -1144,7 +1144,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - No Left Turn";
     model="Survivalists_Mods\structures\signs\streetsigns_noleftturn.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_SpeedLimit_Kit: SRP_KitBase //new
@@ -1158,7 +1158,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Speed Limit";
     model="Survivalists_Mods\structures\signs\streetsigns_speedlimit.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_BikePath_Kit: SRP_KitBase //new
@@ -1172,7 +1172,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Bike Path";
     model="Survivalists_Mods\structures\signs\streetsigns_bikepath.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_OneWay_Kit: SRP_KitBase //new
@@ -1186,7 +1186,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - One Way";
     model="Survivalists_Mods\structures\signs\streetsigns_oneway.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_HandicapSmall_Kit: SRP_KitBase //new
@@ -1201,7 +1201,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Handicap Small";
     model="Survivalists_Mods\structures\signs\streetsigns_handicapsmall.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_StreetSign_Highway_Kit: SRP_KitBase //new
@@ -1215,7 +1215,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Street Sign - Highway";
     model="Survivalists_Mods\structures\signs\streetsigns_highwaysign.p3d";
-    cargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
 	};
 
   class SRP_HangingWoodenSign_Kit: SRP_KitBase //new
@@ -1235,8 +1235,8 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=10000;
-		itemsCargoSize[]={10,15};
-    cargoSize[]={0,0};
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		physLayer="item_large";
     hiddenSelections[]=
