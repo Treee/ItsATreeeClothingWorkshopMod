@@ -23,6 +23,7 @@ class CfgVehicles
   class Container_Base;
   class WoodenCrate;
   class Paper;
+  class Paddle;
 
   class SRP_KitBase;
 
@@ -1611,6 +1612,68 @@ class CfgVehicles
 		physLayer="item_small";
 	};
 
+  class SRP_BoatPaddle: Paddle
+  {
+		scope=2;
+    displayName="Boat Paddle";
+		descriptionShort="A long boat paddle.";
+		model="Survivalists_Mods\gear\camping\srp_boatpaddle.p3d";
+		rotationFlags=1;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_boatpaddle_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_boatpaddle.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_boatpaddle.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_boatpaddle_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_boatpaddle_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_boatpaddle_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeWoodBlunt";
+				range=1.6;
+			};
+			class Heavy
+			{
+				ammo="MeleeWoodBlunt_Heavy";
+				range=1.6;
+			};
+			class Sprint
+			{
+				ammo="MeleeWoodBlunt_Heavy";
+				range=3.7;
+			};
+		};
+  };
+
+  class SRP_BoatPaddle_Dobby: SRP_BoatPaddle
+  {
+		scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_boatpaddle_dobby_co.paa"
+    };
+  };
+
   //----------------------------------- Playing/Trading Cards
   class SRP_DeckOfCards: Inventory_Base  // new
 	{
@@ -1801,7 +1864,7 @@ class CfgVehicles
 
   class SRP_PlayingCard_ColorBase: Inventory_Base  // new
 	{
-		scope=2;
+		scope=0;
 		displayName="Playing Card Base";
 		descriptionShort="A small card.";
 		model="Survivalists_Mods\gear\camping\srp_playingcard.p3d";
