@@ -2410,7 +2410,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\containers\data\loot_protectorcase_pink_co.paa"
+			"Survivalists_Mods\gear\containers\data\loot_protectorcasepink_co.paa"
 		};
   }
   class SRP_SmallProtectorCase_Purple: SmallProtectorCase

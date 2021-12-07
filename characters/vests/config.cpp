@@ -36,7 +36,7 @@ class CfgVehicles
 		repairCosts[]={50};
 	};
 
-  // ----------------------  PLATINUM INVESTOR
+  // ----------------------  EVENT REWARDS
   class SRP_PlateCarrierVest_Pseudo: PlateCarrierVest  // new
 	{
 		scope=2;

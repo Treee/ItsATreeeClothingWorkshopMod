@@ -340,6 +340,11 @@ class CfgVehicles
     {
       "Survivalists_Mods\characters\belts\data\sheath.rvmat"
     };
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\Knife_Sheath.p3d";
+			female="Survivalists_Mods\characters\belts\Knife_Sheath.p3d";
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
