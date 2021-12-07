@@ -36,58 +36,6 @@ class CfgVehicles
 		repairCosts[]={50};
 	};
 
-  // ----------------------  EVENT REWARDS
-  class SRP_PlateCarrierVest_Pseudo: PlateCarrierVest  // new
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa",
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa",
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa"
-		};
-	};
-
-	class SRP_PlateCarrierPouches_Pseudo: PlateCarrierPouches  // new
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa",
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa",
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa"
-		};
-	};
-
-	class SRP_PlateCarrierHolster_Pseudo: PlateCarrierHolster  // new
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa",
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa",
-			"Survivalists_Mods\characters\vests\data\ballisticvest_pseudo_co.paa"
-		};
-	};
-
   // ----------------------  CUSTOM STUFF
 
 
