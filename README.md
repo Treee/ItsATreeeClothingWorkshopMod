@@ -708,6 +708,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 - "Boat Oar" (https://skfb.ly/6YQJM) by Zach Varmette is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Medieval flanged mace (worn)" (https://skfb.ly/6WSCL) by reddification is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 # Reference
