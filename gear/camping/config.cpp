@@ -1948,6 +1948,7 @@ class CfgVehicles
   class SRP_PlayingCard_circle: SRP_PlayingCard_ColorBase  // new
   {
     scope=2;
+    displayName="Card - Circle";
     color="circle";
     hiddenSelectionsTextures[]=
     {
@@ -1958,6 +1959,7 @@ class CfgVehicles
   class SRP_PlayingCard_plus: SRP_PlayingCard_ColorBase  // new
   {
     scope=2;
+    displayName="Card - Plus";
     color="plus";
     hiddenSelectionsTextures[]=
     {
@@ -1969,6 +1971,7 @@ class CfgVehicles
   {
     scope=2;
     color="square";
+    displayName="Card - Square";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_square_co.paa",
@@ -1979,6 +1982,7 @@ class CfgVehicles
   {
     scope=2;
     color="star";
+    displayName="Card - Star";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_star_co.paa",
@@ -1989,6 +1993,7 @@ class CfgVehicles
   {
     scope=2;
     color="wave";
+    displayName="Card - Water";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_wave_co.paa",
@@ -2001,6 +2006,7 @@ class CfgVehicles
   {
     scope=2;
     color="2spade";
+    displayName="Card - 2 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2spade_co.paa",
@@ -2011,6 +2017,7 @@ class CfgVehicles
   {
     scope=2;
     color="3spade";
+    displayName="Card - 3 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_3spade_co.paa",
@@ -2021,6 +2028,7 @@ class CfgVehicles
   {
     scope=2;
     color="4spade";
+    displayName="Card - 4 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_4spade_co.paa",
@@ -2031,6 +2039,7 @@ class CfgVehicles
   {
     scope=2;
     color="5spade";
+    displayName="Card - 5 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_5spade_co.paa",
@@ -2041,6 +2050,7 @@ class CfgVehicles
   {
     scope=2;
     color="6spade";
+    displayName="Card - 6 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_6spade_co.paa",
@@ -2051,6 +2061,7 @@ class CfgVehicles
   {
     scope=2;
     color="7spade";
+    displayName="Card - 7 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_7spade_co.paa",
@@ -2061,6 +2072,7 @@ class CfgVehicles
   {
     scope=2;
     color="8spade";
+    displayName="Card - 8 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_8spade_co.paa",
@@ -2071,6 +2083,7 @@ class CfgVehicles
   {
     scope=2;
     color="9spade";
+    displayName="Card - 9 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_9spade_co.paa",
@@ -2081,6 +2094,7 @@ class CfgVehicles
   {
     scope=2;
     color="10spade";
+    displayName="Card - 10 of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_10spade_co.paa",
@@ -2091,6 +2105,7 @@ class CfgVehicles
   {
     scope=2;
     color="jackspade";
+    displayName="Card - Jack of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_jackspade_co.paa",
@@ -2101,6 +2116,7 @@ class CfgVehicles
   {
     scope=2;
     color="queenspade";
+    displayName="Card - Queen of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_queenspade_co.paa",
@@ -2111,6 +2127,7 @@ class CfgVehicles
   {
     scope=2;
     color="kingspade";
+    displayName="Card - King of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_kingspade_co.paa",
@@ -2121,6 +2138,7 @@ class CfgVehicles
   {
     scope=2;
     color="acespade";
+    displayName="Card - Ace of Spades";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_acespade_co.paa",
@@ -2133,6 +2151,7 @@ class CfgVehicles
   {
     scope=2;
     color="2club";
+    displayName="Card - 2 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2club_co.paa",
@@ -2143,6 +2162,7 @@ class CfgVehicles
   {
     scope=2;
     color="3club";
+    displayName="Card - 3 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_3club_co.paa",
@@ -2153,6 +2173,7 @@ class CfgVehicles
   {
     scope=2;
     color="4club";
+    displayName="Card - 4 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_4club_co.paa",
@@ -2163,6 +2184,7 @@ class CfgVehicles
   {
     scope=2;
     color="5club";
+    displayName="Card - 5 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_5club_co.paa",
@@ -2173,6 +2195,7 @@ class CfgVehicles
   {
     scope=2;
     color="6club";
+    displayName="Card - 6 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_6club_co.paa",
@@ -2183,6 +2206,7 @@ class CfgVehicles
   {
     scope=2;
     color="7club";
+    displayName="Card - 7 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_7club_co.paa",
@@ -2193,6 +2217,7 @@ class CfgVehicles
   {
     scope=2;
     color="8club";
+    displayName="Card - 8 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_8club_co.paa",
@@ -2203,6 +2228,7 @@ class CfgVehicles
   {
     scope=2;
     color="9club";
+    displayName="Card - 9 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_9club_co.paa",
@@ -2213,6 +2239,7 @@ class CfgVehicles
   {
     scope=2;
     color="10club";
+    displayName="Card - 10 of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_10club_co.paa",
@@ -2223,6 +2250,7 @@ class CfgVehicles
   {
     scope=2;
     color="jackclub";
+    displayName="Card - Jack of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_jackclub_co.paa",
@@ -2233,6 +2261,7 @@ class CfgVehicles
   {
     scope=2;
     color="queenclub";
+    displayName="Card - Queen of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_queenclub_co.paa",
@@ -2243,6 +2272,7 @@ class CfgVehicles
   {
     scope=2;
     color="kingclub";
+    displayName="Card - King of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_kingclub_co.paa",
@@ -2253,6 +2283,7 @@ class CfgVehicles
   {
     scope=2;
     color="aceclub";
+    displayName="Card - Ace of Clubs";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_aceclub_co.paa",
@@ -2265,6 +2296,7 @@ class CfgVehicles
   {
     scope=2;
     color="2diamond";
+    displayName="Card - 2 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2diamond_co.paa",
@@ -2275,6 +2307,7 @@ class CfgVehicles
   {
     scope=2;
     color="3diamond";
+    displayName="Card - 3 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_3diamond_co.paa",
@@ -2285,6 +2318,7 @@ class CfgVehicles
   {
     scope=2;
     color="4diamond";
+    displayName="Card - 4 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_4diamond_co.paa",
@@ -2295,6 +2329,7 @@ class CfgVehicles
   {
     scope=2;
     color="5diamond";
+    displayName="Card - 5 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_5diamond_co.paa",
@@ -2305,6 +2340,7 @@ class CfgVehicles
   {
     scope=2;
     color="6diamond";
+    displayName="Card - 6 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_6diamond_co.paa",
@@ -2315,6 +2351,7 @@ class CfgVehicles
   {
     scope=2;
     color="7diamond";
+    displayName="Card - 7 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_7diamond_co.paa",
@@ -2325,6 +2362,7 @@ class CfgVehicles
   {
     scope=2;
     color="8diamond";
+    displayName="Card - 8 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_8diamond_co.paa",
@@ -2335,6 +2373,7 @@ class CfgVehicles
   {
     scope=2;
     color="9diamond";
+    displayName="Card - 9 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_9diamond_co.paa",
@@ -2345,6 +2384,7 @@ class CfgVehicles
   {
     scope=2;
     color="10diamond";
+    displayName="Card - 10 of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_10diamond_co.paa",
@@ -2355,6 +2395,7 @@ class CfgVehicles
   {
     scope=2;
     color="jackdiamond";
+    displayName="Card - Jack of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_jackdiamond_co.paa",
@@ -2365,6 +2406,7 @@ class CfgVehicles
   {
     scope=2;
     color="queendiamond";
+    displayName="Card - Queen of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_queendiamond_co.paa",
@@ -2375,6 +2417,7 @@ class CfgVehicles
   {
     scope=2;
     color="kingdiamond";
+    displayName="Card - King of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_kingdiamond_co.paa",
@@ -2385,6 +2428,7 @@ class CfgVehicles
   {
     scope=2;
     color="acediamond";
+    displayName="Card - Ace of Diamonds";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_acediamond_co.paa",
@@ -2397,6 +2441,7 @@ class CfgVehicles
   {
     scope=2;
     color="2heart";
+    displayName="Card - 2 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_2heart_co.paa",
@@ -2407,6 +2452,7 @@ class CfgVehicles
   {
     scope=2;
     color="3heart";
+    displayName="Card - 3 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_3heart_co.paa",
@@ -2417,6 +2463,7 @@ class CfgVehicles
   {
     scope=2;
     color="4heart";
+    displayName="Card - 4 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_4heart_co.paa",
@@ -2427,6 +2474,7 @@ class CfgVehicles
   {
     scope=2;
     color="5heart";
+    displayName="Card - 5 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_5heart_co.paa",
@@ -2437,6 +2485,7 @@ class CfgVehicles
   {
     scope=2;
     color="6heart";
+    displayName="Card - 6 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_6heart_co.paa",
@@ -2447,6 +2496,7 @@ class CfgVehicles
   {
     scope=2;
     color="7heart";
+    displayName="Card - 7 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_7heart_co.paa",
@@ -2457,6 +2507,7 @@ class CfgVehicles
   {
     scope=2;
     color="8heart";
+    displayName="Card - 8 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_8heart_co.paa",
@@ -2467,6 +2518,7 @@ class CfgVehicles
   {
     scope=2;
     color="9heart";
+    displayName="Card - 9 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_9heart_co.paa",
@@ -2477,6 +2529,7 @@ class CfgVehicles
   {
     scope=2;
     color="10heart";
+    displayName="Card - 10 of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_10heart_co.paa",
@@ -2487,6 +2540,7 @@ class CfgVehicles
   {
     scope=2;
     color="jackheart";
+    displayName="Card - Jack of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_jackheart_co.paa",
@@ -2497,6 +2551,7 @@ class CfgVehicles
   {
     scope=2;
     color="queenheart";
+    displayName="Card - Queen of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_queenheart_co.paa",
@@ -2507,6 +2562,7 @@ class CfgVehicles
   {
     scope=2;
     color="kingheart";
+    displayName="Card - King of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_kingheart_co.paa",
@@ -2517,6 +2573,7 @@ class CfgVehicles
   {
     scope=2;
     color="aceheart";
+    displayName="Card - Ace of Hearts";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\camping\data\srp_playingcardfront_aceheart_co.paa",
