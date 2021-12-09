@@ -714,6 +714,8 @@ DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.
 
 # Wishlist
 
+- "Armor Set" (https://skfb.ly/oqo8Q) by gimora is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
 # Reference
 
 - https://community.bistudio.com/wiki/DayZ_Contaminated_Areas_Configuration
