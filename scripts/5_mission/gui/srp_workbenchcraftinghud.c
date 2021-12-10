@@ -196,53 +196,6 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     }
   }
 
-
-  // void TailorScanItems()
-  // {
-  //   if (!g_TailorCraftManager.GetTWB())
-  //   {
-  //       g_TailorCraftManager.SelfChatMessage("Error workbench not found.");
-  //       return;
-  //   }
-
-  //   if (!g_TailorCraftManager.GetTWB().HasAnyCargo())
-  //   {
-  //       return;
-  //   }
-
-  //   CargoBase cargoBase;
-  //   int cargoCount;
-  //   int quant;
-    
-  //   cargoBase = g_TailorCraftManager.GetTWB().GetInventory().GetCargo();
-  //   cargoCount = cargoBase.GetItemCount();
-  //   for (int c = 0; c < cargoCount; c++)
-  //   {
-  //     ItemBase cargoItemIB;
-  //     if ( Class.CastTo(cargoItemIB, cargoBase.GetItem(c)) && cargoItemIB.IsItemBase() )
-  //     {
-  //       if (cargoItemIB.IsRuined()) continue;
-  //       if (cargoItemIB.HasQuantity())
-  //       {
-  //           quant = cargoItemIB.GetQuantity();
-  //       }
-  //       else
-  //       {
-  //           quant = 1;
-  //       }
-
-  //       if (!g_TailorCraftManager.m_ExItems.Contains(cargoItemIB.GetType()))
-  //       {
-  //           g_TailorCraftManager.m_ExItems.Insert(cargoItemIB.GetType(), quant);
-  //       }
-  //       else
-  //       {
-  //           int nowQuant = g_TailorCraftManager.m_ExItems.Get(cargoItemIB.GetType());
-  //           g_TailorCraftManager.m_ExItems.Set(cargoItemIB.GetType(), (nowQuant + quant));
-  //       }
-  //     }
-  //   }
-  // }
   bool WorkbenchHasAllAttachmentsRequired(CraftedItem craftedItem)
   {
     int attCounter = 0;
@@ -319,6 +272,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     ItemRecipeWidget recipe;
     Widget parentWidget = w.GetParent();    
     ClearCraftItemsBuffer();
+    Print("Show more info click: " + w + " type: " + type);
     if (type)
     {
       index = PossibleWidgetRecipes.Find(parentWidget);
@@ -416,7 +370,9 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
       GetGame().ObjectDeleteOnClient(m_MainEnt);
     }
     // if the item doesn't exist, the recipe will show up but not be 'clickable' fyi
-    m_MainEnt = EntityAI.Cast(GetGame().CreateObjectEx(craftedItem.result, vector.Zero, true));    
+    // Using "CreateObject INSTEAD of CreateObjectEx" becasue this one only creates a client side object
+    m_MainEnt = EntityAI.Cast(GetGame().CreateObject(craftedItem.result, vector.Zero, true));   
+    Print("main entity pre null: " + m_MainEnt) ;
     if (m_MainEnt)
     {
       previouslyCraftedItem = craftedItem;
