@@ -192,12 +192,12 @@ class SRPGlobals
 
     CraftingComponent item1Comp1 = new CraftingComponent();
     item1Comp1.className = "Apple";
-    item1Comp1.amount = 125;  // quantity is in units relative to the item. apples have 125 since they are eaten in chunks
+    item1Comp1.amount = 10000025;  // quantity is in units relative to the item. apples have 125 since they are eaten in chunks
     item1Comp1.destroy = true;
     item1Comp1.changeHealth = 0;
     CraftingComponent item1Comp2 = new CraftingComponent();
     item1Comp2.className = "SewingKit";
-    item1Comp2.amount = 10;
+    item1Comp2.amount = 1000000;
     item1Comp2.destroy = true;
     item1Comp2.changeHealth = 0;
 
@@ -220,12 +220,12 @@ class SRPGlobals
 
     CraftingComponent item1Comp1 = new CraftingComponent();
     item1Comp1.className = "Apple";
-    item1Comp1.amount = 125;
+    item1Comp1.amount = 12000005;
     item1Comp1.destroy = true;
     item1Comp1.changeHealth = 0;
     CraftingComponent item1Comp2 = new CraftingComponent();
     item1Comp2.className = "BoxCerealCrunchin";
-    item1Comp2.amount = 50;
+    item1Comp2.amount = 5000000;
     item1Comp2.destroy = true;
     item1Comp2.changeHealth = 0;
 
@@ -251,12 +251,12 @@ class SRPGlobals
 
     CraftingComponent item1Comp1 = new CraftingComponent();
     item1Comp1.className = "Apple";
-    item1Comp1.amount = 125;
+    item1Comp1.amount = 1200005;
     item1Comp1.destroy = true;
     item1Comp1.changeHealth = 0;
     CraftingComponent item1Comp2 = new CraftingComponent();
     item1Comp2.className = "Pear";
-    item1Comp2.amount = 125;
+    item1Comp2.amount = 100000025;
     item1Comp2.destroy = true;
     item1Comp2.changeHealth = 0;
 
