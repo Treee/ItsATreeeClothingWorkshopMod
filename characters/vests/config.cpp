@@ -1993,7 +1993,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Map Pouch";
-		descriptionShort="A single magazine pouch that holds two Pistol mags";
+		descriptionShort="A pouch that holds various small items.";
 		model="Survivalists_Mods\characters\vests\SRP_Map_Pouch.p3d";
     itemSize[]={3,3};
 		itemsCargoSize[]={3,3};
@@ -2040,7 +2040,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Pistol Magazine Pouch";
-		descriptionShort="A single magazine pouch that holds two Pistol mags";
+		descriptionShort="A single pouch that holds two Pistol mags";
 		model="Survivalists_Mods\characters\vests\SRP_Pistol_MagPouch.p3d";
     attachments[]=
 		{
@@ -2139,7 +2139,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Magazine Pouch";
-		descriptionShort="A single magazine pouch that holds two AR mags";
+		descriptionShort="A single pouch that holds an AR mag";
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
     attachments[]=
 		{
@@ -2188,7 +2188,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Magazine Dump Pouch";
-		descriptionShort="A large bag used for empty magazines";
+		descriptionShort="A large bag used for empty magazines.";
 		model="Survivalists_Mods\characters\vests\SRP_Empty_Mag_Pouch.p3d";
     itemSize[]={5,4};
     itemsCargoSize[]={5,4};
