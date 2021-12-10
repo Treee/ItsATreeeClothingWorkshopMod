@@ -41,6 +41,21 @@ class CfgVehicles
       biological=1;
     }
 	};
+  class M65Jacket_ColorBase: Clothing
+	{
+		itemsCargoSize[]={8,6};
+  };
+
+  class GorkaEJacket_ColorBase: Clothing
+	{
+    itemsCargoSize[]={8,5};
+		heatIsolation=0.80000001;
+  };
+
+  class TacticalShirt_ColorBase: Clothing
+	{
+    itemsCargoSize[]={7,5};
+  };
 
   //===================== CUSTOM SHIRTS
 

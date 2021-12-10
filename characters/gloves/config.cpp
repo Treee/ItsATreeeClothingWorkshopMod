@@ -28,4 +28,9 @@ class CfgVehicles
     }
 	};
 
+  class TacticalGloves_ColorBase: Clothing
+	{
+		itemSize[]={1,2};
+  };
+
 };

@@ -27,6 +27,22 @@ class CfgVehicles
     }
 	};
 
+  class CargoPants_ColorBase: Clothing
+	{
+		itemsCargoSize[]={7,4};
+  };
+
+  class GorkaPants_ColorBase: Clothing
+	{
+		itemsCargoSize[]={8,6};
+    heatIsolation=0.80000001;
+  };
+
+  class HunterPants_ColorBase: Clothing
+	{
+		itemsCargoSize[]={8,6};
+  };
+
   //-------------------------------------BASE GAME REtextures
 
 };

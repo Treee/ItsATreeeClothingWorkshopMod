@@ -17,7 +17,6 @@ class CfgVehicles
 {
   class Clothing;
   class AthleticShoes_ColorBase;
-  class JungleBoots_ColorBase;
   
   //-------------------------------------BASE GAME OVERRIDE
 	class NBCBootsBase: Clothing
@@ -29,5 +28,13 @@ class CfgVehicles
       biological=1;
     }
 	};
+
+  class JungleBoots_ColorBase: Clothing
+	{
+		itemSize[]={2,2};
+		itemsCargoSize[]={1,2};
+    repairableWithKits[]={5,3};
+		repairCosts[]={30,25};
+  };
 
 };

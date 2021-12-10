@@ -19,22 +19,49 @@ class CfgVehicles
   class Clothing;
   class Container_Base;
   class Bottle_Base;
-  class PlateCarrierPouches;
-  class PlateCarrierHolster;
 
   // ----------------------  BASE GAME OVERRIDES
 
   class PressVest_ColorBase: Clothing
 	{
-		repairableWithKits[]={3,7};
-		repairCosts[]={50};
+		repairableWithKits[]={5,3,7};
+		repairCosts[]={30,25, 25};
+    itemsCargoSize[]={9,4};
 	};
 
   class PlateCarrierVest: Clothing
 	{
-		repairableWithKits[]={3,7};
-		repairCosts[]={50};
+    itemSize[]={5,4};
+    heatIsolation=0.2;
+		repairableWithKits[]={5,3,7};
+		repairCosts[]={30,25, 25};
 	};
+  class PlateCarrierHolster: Clothing
+	{
+    itemSize[]={2,2};
+		repairableWithKits[]={5,3,7};
+		repairCosts[]={30,25, 25};
+    heatIsolation=0.1;
+  };
+  class PlateCarrierPouches: Container_Base
+	{
+    itemSize[]={6,4};
+		itemsCargoSize[]={6,4};
+		repairCosts[]={30,25, 25};
+    inventorySlot[]=
+		{
+			"VestHolster",
+			"Belt_Right",
+			"Belt_Back",
+			"VestPouch"
+		};
+  };
+  class HighCapacityVest_ColorBase: Clothing
+	{
+    itemsCargoSize[]={8,5};
+		repairableWithKits[]={5,3,7};
+		repairCosts[]={30,25, 25};
+  };
 
   // ----------------------  CUSTOM STUFF
 

@@ -17,8 +17,7 @@ class CfgPatches
 class CfgVehicles
 {
   class Container_Base;
-  class HuntingBag;
-  class AliceBag_ColorBase;
+  class Clothing;
 
   //--------------------------------- MOD OVERRIDE
 	class MassNBC_Bag: Container_Base
@@ -36,6 +35,37 @@ class CfgVehicles
 		weight=75;
 		allowOwnedCargoManipulation=1;
 	};
+
+  class HuntingBag: Clothing
+	{
+		itemsCargoSize[]={10,7};
+    repairableWithKits[]={5,3,2};
+		repairCosts[]={30,25,25};
+  };
+
+  class AssaultBag_ColorBase: Clothing
+	{
+    repairableWithKits[]={5,3,2};
+		repairCosts[]={30,25,25};
+  };
+  class MountainBag_ColorBase: Clothing
+	{
+		itemsCargoSize[]={7,14};
+    repairableWithKits[]={5,3,2};
+		repairCosts[]={30,25,25};
+  };
+  class TortillaBag: Clothing
+	{
+    itemsCargoSize[]={10,8};
+    repairableWithKits[]={5,3,2};
+		repairCosts[]={30,25,25};
+  };
+  class AliceBag_ColorBase: Clothing
+	{
+		itemsCargoSize[]={10,12};
+    repairableWithKits[]={5,3,2};
+		repairCosts[]={30,25,25};
+  };
 
 
   //--------------------------------- CUSTOM STUFF

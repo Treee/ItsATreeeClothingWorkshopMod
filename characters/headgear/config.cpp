@@ -18,10 +18,7 @@ class CfgVehicles
 {
   class Switchable_Base;
   class Clothing;
-  class BallisticHelmet_ColorBase;
   class BalaclavaMask_ColorBase;
-  class BeanieHat_ColorBase;
-  class BaseballCap_ColorBase;
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class DarkMotoHelmet_ColorBase: Clothing
@@ -48,7 +45,43 @@ class CfgVehicles
       biological=1;
     }
   }
-
+  
+  class BaseballCap_ColorBase: Clothing
+	{
+		itemSize[]={1,2};
+		itemsCargoSize[]={1,1};
+  };
+  class Ushanka_ColorBase: Clothing
+	{
+		itemSize[]={2,2};
+		itemsCargoSize[]={1,1};
+  };
+  class BeanieHat_ColorBase: Clothing
+	{
+		itemSize[]={2,1};
+		itemsCargoSize[]={2,1};
+  };
+  class BallisticHelmet_ColorBase: Clothing
+	{
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+    itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
+    noMask=0;
+  };
+  class Mich2001Helmet: Clothing
+	{
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+    itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
+    noMask=0;
+  };
+  class BoonieHat_ColorBase: Clothing
+	{
+		itemSize[]={2,2};
+		itemsCargoSize[]={1,1};
+  };
 
   // ----------------------------------------- Custom Stuff  
   class SRP_BaseballCap_Tinfoil: BaseballCap_ColorBase  // new

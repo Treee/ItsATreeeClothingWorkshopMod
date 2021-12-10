@@ -20,7 +20,6 @@ class CfgVehicles
   class HockeyMask;
   class GP5GasMask_Filter;
   class Clothing;
-  class BalaclavaMask_ColorBase;
 
   //------------------------------------- BASE GAME OVERRIDE
 	class GasMask: Clothing
@@ -33,6 +32,16 @@ class CfgVehicles
 		soundVoiceType="none";
 		soundVoicePriority=3;
 	};
+
+  class Balaclava3Holes_ColorBase: Clothing
+	{
+		itemSize[]={1,2};
+  };
+
+  class BalaclavaMask_ColorBase: Clothing
+	{
+		itemSize[]={1,2};
+  };
 
 
   //---------------------------------------- BASE GAME RETEXTURES
