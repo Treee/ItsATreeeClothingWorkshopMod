@@ -638,7 +638,8 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_KatanaSheath"
 		};
 		hiddenSelections[]=
 		{

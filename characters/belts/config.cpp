@@ -265,6 +265,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\belts\Military_Belt_g.p3d";
     attachments[]=
 		{
+      "SRP_KatanaSheath",
 			"Belt_Left",
 			"Chemlight",
 			"Belt_Back",
