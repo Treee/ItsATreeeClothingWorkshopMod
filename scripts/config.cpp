@@ -1,1674 +1,2449 @@
 class CfgPatches
 {
-	class Survivalists_Mods_Scripts
+	class DZ_Scripts
 	{
-    units[] = {};
+		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]=	{ "DZ_Data", "DZ_Scripts"};
+		requiredAddons[]={};
 	};
 };
-
 class CfgSlots
 {
-  //=====================BASE GAME OVERRIDE
-
-  //===================== CUSTOM
-  class Slot_Cassette
+	class Slot_Head
 	{
-		name="Cassette";
-		displayName="Cassette";
+		name="Head";
+		displayName="";
+		ghostIcon="";
+		show="false";
+	};
+	class Slot_Shoulder
+	{
+		name="Shoulder";
+		displayName="#STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Melee
+	{
+		name="Melee";
+		displayName="#STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+	class Slot_Bow
+	{
+		name="Bow";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:bow";
+	};
+	class Slot_Headgear
+	{
+		name="Headgear";
+		displayName="#STR_CfgHeadgear0";
+		ghostIcon="set:dayz_inventory image:headgear";
+		boneName="Head";
+	};
+	class Slot_Mask
+	{
+		name="Mask";
+		displayName="#STR_CfgMask0";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+	class Slot_Eyewear
+	{
+		name="Eyewear";
+		displayName="#STR_CfgEyewear0";
+		ghostIcon="set:dayz_inventory image:eyewear";
+	};
+	class Slot_Hands
+	{
+		name="Hands";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:hands";
+		boneName="RightHand";
+	};
+	class Slot_LeftHand
+	{
+		name="LeftHand";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:hands";
+		boneName="LeftHand";
+		show="false";
+	};
+	class Slot_Gloves
+	{
+		name="Gloves";
+		displayName="#STR_CfgGloves0";
+		ghostIcon="set:dayz_inventory image:gloves";
+	};
+	class Slot_Armband
+	{
+		name="Armband";
+		displayName="#STR_CfgArmband0";
+		ghostIcon="set:dayz_inventory image:armband";
+	};
+	class Slot_Vest
+	{
+		name="Vest";
+		displayName="#STR_CfgVest0";
+		ghostIcon="set:dayz_inventory image:vest";
+	};
+	class Slot_Body
+	{
+		name="Body";
+		displayName="#STR_CfgBody0";
+		ghostIcon="set:dayz_inventory image:body";
+	};
+	class Slot_Back
+	{
+		name="Back";
+		displayName="#STR_CfgBack0";
+		ghostIcon="set:dayz_inventory image:back";
+	};
+	class Slot_Hips
+	{
+		name="Hips";
+		displayName="#STR_CfgHips0";
+		ghostIcon="set:dayz_inventory image:hips";
+	};
+	class Slot_Legs
+	{
+		name="Legs";
+		displayName="#STR_CfgLegs0";
+		ghostIcon="set:dayz_inventory image:legs";
+	};
+	class Slot_Feet
+	{
+		name="Feet";
+		displayName="#STR_CfgFeet0";
+		ghostIcon="set:dayz_inventory image:feet";
+	};
+	class Slot_Pistol
+	{
+		name="Pistol";
+		displayName="#STR_CfgPistol0";
+		ghostIcon="set:dayz_inventory image:pistol";
+	};
+	class Slot_Knife
+	{
+		name="Knife";
+		displayName="#STR_CfgKnife0";
+		ghostIcon="set:dayz_inventory image:knife";
+	};
+	class Slot_magazine
+	{
+		name="magazine";
+		displayName="#STR_CfgMagazine0";
+		ghostIcon="set:dayz_inventory image:magazine";
+		autoAttach="false";
+	};
+	class Slot_magazine2
+	{
+		name="magazine2";
+		displayName="#STR_CfgMagazine0";
+		ghostIcon="set:dayz_inventory image:magazine2";
+		autoAttach="false";
+	};
+	class Slot_magazine3
+	{
+		name="magazine3";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:magazine3";
+		autoAttach="false";
+	};
+	class Slot_Driver
+	{
+		name="Driver";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:doors";
+	};
+	class Slot_Cargo
+	{
+		name="Cargo";
+		displayName="";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
-  class Slot_Cassette2
+	class Slot_Muzzle1
 	{
-		name="Cassette2";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="Muzzle1";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:muzzle";
 	};
-  class Slot_Cassette3
+	class Slot_Muzzle2
 	{
-		name="Cassette3";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="Muzzle2";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:muzzle";
 	};
-  class Slot_Cassette4
+	class Slot_Muzzle3
 	{
-		name="Cassette4";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="Muzzle3";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:muzzle";
 	};
-  class Slot_Cassette5
+	class Slot_VestHolster
 	{
-		name="Cassette5";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="VestHolster";
+		displayName="#STR_CfgBelt_Right0";
+		ghostIcon="set:dayz_inventory image:vestholster";
 	};
-  class Slot_Cassette6
+	class Slot_VestPouch
 	{
-		name="Cassette6";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="VestPouch";
+		displayName="#STR_CfgVestPouch0";
+		ghostIcon="set:dayz_inventory image:vestpouches";
 	};
-  class Slot_Cassette7
+	class Slot_VestBackpack
 	{
-		name="Cassette7";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="VestBackpack";
+		displayName="#STR_CfgVestBackpack0";
+		ghostIcon="set:dayz_inventory image:back";
 	};
-  class Slot_Cassette8
+	class Slot_pistolFlashlight
 	{
-		name="Cassette8";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="pistolFlashlight";
+		displayName="#STR_CfgFlashlight0";
+		ghostIcon="set:dayz_inventory image:weaponflashlight";
 	};
-  class Slot_Cassette9
+	class Slot_pistolMuzzle
 	{
-		name="Cassette9";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="pistolMuzzle";
+		displayName="#STR_CfgSuppressor0";
+		ghostIcon="set:dayz_inventory image:supressor";
 	};
-  class Slot_Cassette10
+	class Slot_pistolOptics
 	{
-		name="Cassette10";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="pistolOptics";
+		displayName="#STR_CfgPistolOptics0";
+		ghostIcon="set:dayz_inventory image:weaponopticssmall";
 	};
-  class Slot_Cassette11
+	class Slot_weaponBayonet
 	{
-		name="Cassette11";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponBayonet";
+		displayName="#STR_CfgBayonet0";
+		ghostIcon="set:dayz_inventory image:bayonet";
 	};
-  class Slot_Cassette12
+	class Slot_weaponBayonetAK
 	{
-		name="Cassette12";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponBayonetAK";
+		displayName="#STR_CfgBayonet0";
+		ghostIcon="set:dayz_inventory image:bayonet";
 	};
-  class Slot_Cassette13
+	class Slot_weaponBayonetMosin
 	{
-		name="Cassette13";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponBayonetMosin";
+		displayName="#STR_CfgBayonet0";
+		ghostIcon="set:dayz_inventory image:bayonet";
 	};
-  class Slot_Cassette14
+	class Slot_weaponBayonetSKS
 	{
-		name="Cassette14";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponBayonetSKS";
+		displayName="#STR_CfgBayonet0";
+		ghostIcon="set:dayz_inventory image:bayonet";
 	};
-  class Slot_Cassette15
+	class Slot_weaponButtstockAK
 	{
-		name="Cassette15";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponButtstockAK";
+		displayName="#STR_CfgButtstock0";
+		ghostIcon="set:dayz_inventory image:buttstock";
 	};
-  class Slot_Cassette16
+	class Slot_weaponButtstockFal
 	{
-		name="Cassette16";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponButtstockFal";
+		displayName="#STR_CfgButtstock0";
+		ghostIcon="set:dayz_inventory image:buttstock";
 	};
-  class Slot_Cassette17
+	class Slot_weaponButtstockM4
 	{
-		name="Cassette17";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponButtstockM4";
+		displayName="#STR_CfgButtstock0";
+		ghostIcon="set:dayz_inventory image:buttstock";
 	};
-  class Slot_Cassette18
+	class Slot_weaponButtstockMP5
 	{
-		name="Cassette18";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponButtstockMP5";
+		displayName="#STR_CfgButtstock0";
+		ghostIcon="set:dayz_inventory image:buttstock";
 	};
-  class Slot_Cassette19
+	class Slot_weaponButtstockRed9
 	{
-		name="Cassette19";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponButtstockRed9";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:buttstock";
 	};
-  class Slot_Cassette20
+	class Slot_weaponButtstockSaiga
 	{
-		name="Cassette20";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponButtstockSaiga";
+		displayName="#STR_CfgButtstock0";
+		ghostIcon="set:dayz_inventory image:buttstock";
 	};
-  class Slot_Cassette21
+	class Slot_weaponHandguardAK
 	{
-		name="Cassette21";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponHandguardAK";
+		displayName="#STR_CfgHandguard0";
+		ghostIcon="set:dayz_inventory image:handguard";
 	};
-  class Slot_Cassette22
+	class Slot_weaponHandguardM4
 	{
-		name="Cassette22";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponHandguardM4";
+		displayName="#STR_CfgHandguard0";
+		ghostIcon="set:dayz_inventory image:handguard";
 	};
-  class Slot_Cassette23
+	class Slot_weaponHandguardMP5
 	{
-		name="Cassette23";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponHandguardMP5";
+		displayName="#STR_CfgHandguard0";
+		ghostIcon="set:dayz_inventory image:handguard";
 	};
-  class Slot_Cassette24
+	class Slot_weaponHandguardM249
 	{
-		name="Cassette24";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponHandguardM249";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:handguard";
 	};
-  class Slot_Cassette25
+	class Slot_weaponMuzzle
 	{
-		name="Cassette25";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponMuzzle";
+		displayName="#STR_CfgMuzzle0";
+		ghostIcon="set:dayz_inventory image:weaponmuzzle";
 	};
-  class Slot_Cassette26
+	class Slot_weaponMuzzleAK
 	{
-		name="Cassette26";
-		displayName="Cassette";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponMuzzleAK";
+		displayName="#STR_CfgSuppressor0";
+		ghostIcon="set:dayz_inventory image:supressor";
 	};
-  class Slot_blade
+	class Slot_weaponMuzzleM4
 	{
-		name="blade";
-		displayName="blade";
-		selection="blade";
-		ghostIcon="set:dayz_inventory image:missing";
+		name="weaponMuzzleM4";
+		displayName="#STR_CfgSuppressor0";
+		ghostIcon="set:dayz_inventory image:supressor";
 	};
-  class Slot_Gasfilter
+	class Slot_weaponMuzzleMP5
 	{
-		name="Gasfilter";
-		displayName="Filter";
-		ghostIcon="Filter";
-		selection="FilterGP";
+		name="weaponMuzzleMP5";
+		displayName="#STR_CfgMuzzle0";
+		ghostIcon="set:dayz_inventory image:weaponmuzzle";
 	};
-	class Slot_CanisterGasoline
+	class Slot_weaponMuzzleMosin
 	{
-		name="CanisterGasoline";
-		displayName="CanisterGasoline";
-		selection="CanisterGasoline";
-		ghostIcon="gascanister";
+		name="weaponMuzzleMosin";
+		displayName="#STR_CfgMuzzle0";
+		ghostIcon="set:dayz_inventory image:weaponmuzzle";
 	};
-	class Slot_BP_lamp
+	class Slot_weaponUnderSlugM4
 	{
-		name="BP_gas_lamp";
-		displayName="gas_lamp";
-		ghostIcon="gascanister";
-		selection="BP_gas_lamp";
+		name="weaponUnderSlugM4";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:weaponunderslungm4";
 	};
-	class Slot_SRP_CasePrep
+	class Slot_weaponUnderSlugAK
 	{
-		name="SRP_CasePrep";
-		displayName="Case Prep";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-		selection="CasePrep";
+		name="weaponUnderSlugAK";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:weaponunderslungak";
 	};
-	class Slot_SRP_AmmoPress
+	class Slot_weaponBarrelAug
 	{
-		name="SRP_AmmoPress";
-		displayName="Ammo Prep";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-		selection="AmmoPress";
+		name="weaponBarrelAug";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:weaponmuzzle";
 	};
-	class Slot_Gun1
+	class Slot_weaponOptics
 	{
-		name="shoulder1";
-		displayName="shoulder1";
-		ghostIcon="shoulderright";
-		selection="shoulder1";
+		name="weaponOptics";
+		displayName="#STR_CfgWeaponOptics0";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
-	class Slot_Gun2
+	class Slot_weaponOpticsAcog
 	{
-		name="shoulder2";
-		displayName="shoulder2";
-		ghostIcon="shoulderright";
-		selection="shoulder2";
+		name="weaponOpticsAcog";
+		displayName="#STR_CfgWeaponOptics0";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
-	class Slot_Gun3
+	class Slot_weaponOpticsAK
 	{
-		name="shoulder3";
-		displayName="shoulder3";
-		ghostIcon="shoulderright";
-		selection="shoulder3";
+		name="weaponOpticsAK";
+		displayName="#STR_CfgWeaponOptics0";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
-	class Slot_Gun4
+	class Slot_weaponOpticsCrossbow
 	{
-		name="shoulder4";
-		displayName="shoulder4";
-		ghostIcon="shoulderright";
-		selection="shoulder4";
+		name="weaponOpticsCrossbow";
+		displayName="#STR_CfgPistolOptics0";
+		ghostIcon="set:dayz_inventory image:weaponopticssmall";
 	};
-	class Slot_Gun5
+	class Slot_weaponOpticsHunting
 	{
-		name="shoulder5";
-		displayName="shoulder5";
-		ghostIcon="shoulderright";
-		selection="shoulder5";
+		name="weaponOpticsHunting";
+		displayName="#STR_CfgWeaponOptics0";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
-	class Slot_Gun6
+	class Slot_weaponOpticsLRS
 	{
-		name="shoulder6";
-		displayName="shoulder6";
-		ghostIcon="shoulderright";
-		selection="shoulder6";
+		name="weaponOpticsLRS";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
-	class Slot_Gun7
+	class Slot_weaponOpticsMosin
 	{
-		name="shoulder7";
-		displayName="shoulder7";
-		ghostIcon="shoulderright";
-		selection="shoulder7";
+		name="weaponOpticsMosin";
+		displayName="#STR_CfgWeaponOptics0";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
-	class Slot_Gun8
+	class Slot_weaponOpticsAug
 	{
-		name="shoulder8";
-		displayName="shoulder8";
-		ghostIcon="shoulderright";
-		selection="shoulder8";
+		name="weaponOpticsAug";
+		displayName="";
+		ghostIcon="";
+		show="false";
 	};
-	class Slot_Gun9
+	class Slot_weaponBipod
 	{
-		name="shoulder9";
-		displayName="shoulder9";
-		ghostIcon="shoulderright";
-		selection="shoulder9";
+		name="weaponBipod";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:bipod";
 	};
-	class Food1
+	class Slot_weaponBipodM249
 	{
-		name="Food1";
-		displayName="Food1";
-		ghostIcon="tincan";
-		selection="Food1";
+		name="Slot_weaponBipodM249";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:bipod";
 	};
-	class Food2
+	class Slot_weaponFlashlight
 	{
-		name="Food2";
-		displayName="Food2";
-		ghostIcon="tincan";
-		selection="Food2";
+		name="weaponFlashlight";
+		displayName="#STR_CfgFlashlight0";
+		ghostIcon="set:dayz_inventory image:weaponflashlight";
 	};
-	class Food3
+	class Slot_suppressorImpro
 	{
-		name="Food3";
-		displayName="Food3";
-		ghostIcon="tincan";
-		selection="Food3";
+		name="suppressorImpro";
+		displayName="#STR_CfgSuppressor0";
+		ghostIcon="set:dayz_inventory image:supressor";
 	};
-	class Food4
+	class Slot_weaponWrap
 	{
-		name="Food4";
-		displayName="Food4";
-		ghostIcon="tincan";
-		selection="Food4";
+		name="weaponWrap";
+		displayName="#STR_CfgWeaponWrap0";
+		ghostIcon="set:dayz_inventory image:weaponwrap";
 	};
-	class Food5
+	class Slot_magazineFakeWeapon
 	{
-		name="Food5";
-		displayName="Food5";
-		ghostIcon="tincan";
-		selection="Food5";
+		name="magazineFakeWeapon";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:magazinefakeweapon";
+		autoAttach="false";
 	};
-	class Food6
+	class Slot_tripWireAttachment
 	{
-		name="Food6";
-		displayName="Food6";
-		ghostIcon="tincan";
-		selection="Food6";
+		name="tripWireAttachment";
+		displayName="#STR_CfgVestGrenade0";
+		ghostIcon="set:dayz_inventory image:grenade";
 	};
-	class Food7
+	class Slot_BatteryD
 	{
-		name="Food7";
-		displayName="Food7";
-		ghostIcon="tincan";
-		selection="Food7";
-	};
-	class Food8
-	{
-		name="Food8";
-		displayName="Food8";
-		ghostIcon="tincan";
-		selection="Food8";
-	};
-	class Food9
-	{
-		name="Food9";
-		displayName="Food9";
-		ghostIcon="tincan";
-		selection="Food9";
-	};
-	class Can
-	{
-		name="Can";
-		displayName="Can";
-		ghostIcon="tincan";
-		selection="Can";
-	};
-	class Can1
-	{
-		name="Can1";
-		displayName="Can1";
-		ghostIcon="tincan";
-		selection="Can1";
-	};
-	class Can2
-	{
-		name="Can2";
-		displayName="Can2";
-		ghostIcon="tincan";
-		selection="Can2";
-	};
-	class Can3
-	{
-		name="Can3";
-		displayName="Can3";
-		ghostIcon="tincan";
-		selection="Can3";
-	};
-	class Can4
-	{
-		name="Can4";
-		displayName="Can4";
-		ghostIcon="tincan";
-		selection="Can4";
-	};
-	class Can5
-	{
-		name="Can5";
-		displayName="Can5";
-		ghostIcon="tincan";
-		selection="Can5";
-	};
-	class Can6
-	{
-		name="Can6";
-		displayName="Can6";
-		ghostIcon="tincan";
-		selection="Can6";
-	};
-	class Can7
-	{
-		name="Can7";
-		displayName="Can7";
-		ghostIcon="tincan";
-		selection="Can7";
-	};
-	class Slot_Ingredient;
-	class Slot_Ingredient1: Slot_Ingredient
-	{
-		name="Ingredient1";
-		displayName="Ingredient1";
-		ghostIcon="ingredient";
-	};
-	class Slot_Ingredient2: Slot_Ingredient
-	{
-		name="Ingredient2";
-		displayName="Ingredient2";
-		ghostIcon="ingredient";
-	};
-	class Slot_Ingredient3: Slot_Ingredient
-	{
-		name="Ingredient3";
-		displayName="Ingredient3";
-		ghostIcon="ingredient";
-	};
-	class Slot_Ingredient4: Slot_Ingredient
-	{
-		name="Ingredient4";
-		displayName="Ingredient4";
-		ghostIcon="ingredient";
-	};
-	class Slot_Ingredient5: Slot_Ingredient
-	{
-		name="Ingredient5";
-		displayName="Ingredient5";
-		ghostIcon="ingredient";
-	};
-	class Slot_Ingredient6: Slot_Ingredient
-	{
-		name="Ingredient6";
-		displayName="Ingredient6";
-		ghostIcon="ingredient";
-	};
-	class Slot_Ingredient7: Slot_Ingredient
-	{
-		name="Ingredient7";
-		displayName="Ingredient7";
-		ghostIcon="ingredient";
-	};
-	class Slot_Ingredient8: Slot_Ingredient
-	{
-		name="Ingredient8";
-		displayName="Ingredient8";
-		ghostIcon="ingredient";
-	};
-	class Slot_carman1
-	{
-		name="carman1";
-		displayName="carman1";
-		selection="carman_1";
-		ghostIcon="pouches";
-	};
-	class Slot_carman2
-	{
-		name="carman2";
-		displayName="carman2";
-		selection="carman_2";
-		ghostIcon="pouches";
-	};
-	class Slot_Hatchet
-	{
-		name="Hatchet";
-		displayName="Hatchet";
-		ghostIcon="shoulderright";
-	};
-	class Slot_BPAxe
-	{
-		name="BPAxe";
-		displayName="BPAxe";
-		ghostIcon="shoulderright";
-	};
-	class Slot_FShovel
-	{
-		name="FShovel";
-		displayName="FShovel";
-		ghostIcon="shoulderright";
-	};
-	class Slot_binocular
-	{
-		name="binocular";
-		displayName="binocular";
-		ghostIcon="opticacog";
-	};
-	class Slot_FirstAid
-	{
-		name="firstaidkit";
-		displayName="firstaidkit";
-		ghostIcon="hips";
-	};
-	class Slot_no
-	{
-		name="no";
-		displayName="no";
-		selection="no";
-		ghostIcon="shoulderright";
-	};
-	class Slot_no_car
-	{
-		name="no_car";
-		displayName="no_car";
-		selection="no";
-		ghostIcon="shoulderright";
-	};
-	class Slot_Pen_slot
-	{
-		name="Pen_slot";
-		displayName="Pen";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-	class Slot_SRPLRRadioBattery
-	{
-		name="SRPRadioBattery";
-		displayName="Military Battery";
+		name="BatteryD";
+		displayName="#STR_CfgBatteryD0";
 		ghostIcon="set:dayz_inventory image:batteryd";
 	};
-  class Slot_SRP_LatheBelt
-  {
-		name="SRP_LatheBelt";
-		displayName="Lathe Belt";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-  }
-  class Slot_SRP_LatheTable
-  {
-		name="SRP_LatheTable";
-		displayName="Lathe Table";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-  }
-  class Slot_SRP_LatheGearDrive
-  {
-		name="SRP_LatheGearDrive";
-		displayName="Lathe Gear Drive";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-  }
-  class Slot_SRP_LatheClamp
-  {
-		name="SRP_LatheClamp";
-		displayName="Lathe Clamp";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-  }
-
-  class Slot_SRP_WoodDrill
-  {
-		name="SRP_WoodDrill";
-		displayName="Wood Drill";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-  }
-  class Slot_SRP_WoodClamp
-  {
-		name="SRP_WoodClamp";
-		displayName="Wood Clamp";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-  }
-
-  class Slot_SRP_SewingMachine
+	class Slot_MetalWire
 	{
-		name="SRP_SewingMachine";
-		displayName="Sewing Machine";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-		selection="SewingMachine";
+		name="MetalWire";
+		displayName="#STR_CfgMetalWire0";
+		ghostIcon="set:dayz_inventory image:metalwire";
 	};
-
-  class Slot_DrugRecipe_Meth
+	class Slot_Book
 	{
-		name="MethRecipe";
-		displayName="MethRecipe";
+		name="Book";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:book";
+		stackMax=1;
+	};
+	class Slot_ButaneTorchCanister
+	{
+		name="ButaneTorchCanister";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	};
+	class Slot_CableReel
+	{
+		name="CableReel";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:cablereel";
+	};
+	class Slot_CamoNet
+	{
+		name="CamoNet";
+		displayName="#STR_CfgCamoNet0";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_CookingBase
+	{
+		name="CookingBase";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:cookingbase";
+	};
+	class Slot_CookingEquipment
+	{
+		name="CookingEquipment";
+		displayName="#STR_CfgCookingEquipment0";
+		ghostIcon="set:dayz_inventory image:cookingequipment";
+	};
+	class Slot_CookingTripod
+	{
+		name="CookingTripod";
+		displayName="#STR_CfgCookingTripod0";
+		ghostIcon="set:dayz_inventory image:cookingtripod";
+	};
+	class Slot_DBHelmetMouth
+	{
+		name="DBHelmetMouth";
+		displayName="#STR_CfgDBHelmetMouth0";
+		ghostIcon="set:dayz_inventory image:dbhelmetmouth";
+	};
+	class Slot_DBHelmetVisor
+	{
+		name="DBHelmetVisor";
+		displayName="#STR_CfgDBHelmetVisor0";
+		ghostIcon="set:dayz_inventory image:dbhelmetvisor";
+	};
+	class Slot_Firewood
+	{
+		name="Firewood";
+		displayName="#STR_CfgFirewood0";
+		ghostIcon="set:dayz_inventory image:firewood";
+		stackMax=6;
+	};
+	class Slot_GasCanister
+	{
+		name="GasCanister";
+		displayName="#STR_CfgGasCanister0";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	};
+	class Slot_Glass
+	{
+		name="Glass";
+		displayName="#STR_CfgGlass0";
+		ghostIcon="set:dayz_inventory image:gorkavisor";
+	};
+	class Slot_Hook
+	{
+		name="Hook";
+		displayName="#STR_CfgHook0";
+		ghostIcon="set:dayz_inventory image:hook";
+	};
+	class Slot_Ingredient
+	{
+		name="Ingredient";
+		displayName="#STR_CfgFood0";
+		ghostIcon="set:dayz_inventory image:food";
+	};
+	class Slot_Lights
+	{
+		name="Lights";
+		displayName="#STR_CfgXmasLights0";
+		ghostIcon="set:dayz_inventory image:cat_christmaslights";
+	};
+	class Slot_MedicalBandage
+	{
+		name="MedicalBandage";
+		displayName="#STR_CfgMedicalBandage0";
+		ghostIcon="set:dayz_inventory image:medicalbandage";
+	};
+	class Slot_Paper
+	{
+		name="Paper";
+		displayName="#STR_CfgPaper0";
 		ghostIcon="set:dayz_inventory image:paper";
 	};
-  class Slot_DrugRecipe_BathSalts
+	class Slot_Rags
 	{
-		name="BathSaltsRecipe";
-		displayName="BathSaltsRecipe";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="Rags";
+		displayName="#STR_CfgRags0";
+		ghostIcon="set:dayz_inventory image:rags";
+		stackMax=6;
 	};
-  class Slot_DrugRecipe_Acid
+	class Slot_Stones
 	{
-		name="AcidRecipe";
-		displayName="AcidRecipe";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="Stones";
+		displayName="#STR_CfgStones0";
+		ghostIcon="set:dayz_inventory image:stones";
+		stackMax=16;
 	};
-
-	class Slot_SRP_CigaretteCase1
+	class Slot_WoodenStick
 	{
-		name="CigaretteCase1";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="WoodenStick";
+		displayName="#STR_CfgWoodenStick0";
+		ghostIcon="set:dayz_inventory image:woodenstick";
+		stackMax=10;
 	};
-  class Slot_SRP_CigaretteCase2
+	class Slot_bait
 	{
-		name="CigaretteCase2";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="Bait";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:hook";
 	};
-  class Slot_SRP_CigaretteCase3
+	class Slot_matchinside
 	{
-		name="CigaretteCase3";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="matchinside";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:matchinside";
 	};
-  class Slot_SRP_CigaretteCase4
+	class Slot_BerryB
 	{
-		name="CigaretteCase4";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="BerryB";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:berry";
 	};
-  class Slot_SRP_CigaretteCase5
+	class Slot_BerryR
 	{
-		name="CigaretteCase5";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="BerryR";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:berry";
 	};
-  class Slot_SRP_CigaretteCase6
+	class Slot_BirchBark
 	{
-		name="CigaretteCase6";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="BirchBark";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:bark";
+		stackMax=8;
 	};
-  class Slot_SRP_CigaretteCase7
+	class Slot_OakBark
 	{
-		name="CigaretteCase7";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="OakBark";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:bark";
+		stackMax=8;
 	};
-  class Slot_SRP_CigaretteCase8
+	class Slot_Plant
 	{
-		name="CigaretteCase8";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="Plant";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:plant";
 	};
-  class Slot_SRP_CigaretteCase9
+	class Slot_Disinfectant
 	{
-		name="CigaretteCase9";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="Disinfectant";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:disinfectant";
 	};
-  class Slot_SRP_CigaretteCase10
+	class Slot_Guts
 	{
-		name="CigaretteCase10";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="Guts";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:guts";
 	};
-  class Slot_SRP_CigaretteCase11
+	class Slot_Lime
 	{
-		name="CigaretteCase11";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="Lime";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:lime";
 	};
-  class Slot_SRP_CigaretteCase12
+	class Slot_Bark
 	{
-		name="CigaretteCase12";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="Bark";
+		displayName="#STR_CfgBark0";
+		ghostIcon="set:dayz_inventory image:bark";
+		stackMax=8;
 	};
-  class Slot_SRP_CigaretteCase13
+	class Slot_DirectCookingA
 	{
-		name="CigaretteCase13";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="DirectCookingA";
+		displayName="#STR_CfgDirectCooking0";
+		ghostIcon="set:dayz_inventory image:directcooking";
 	};
-  class Slot_SRP_CigaretteCase14
+	class Slot_DirectCookingB
 	{
-		name="CigaretteCase14";
-		displayName="Cigarette";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="DirectCookingB";
+		displayName="#STR_CfgDirectCooking0";
+		ghostIcon="set:dayz_inventory image:directcooking";
 	};
-
-  class Slot_SRP_TestTube1
+	class Slot_DirectCookingC
 	{
-		name="TestTube1";
-		displayName="Test Tube";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="DirectCookingC";
+		displayName="#STR_CfgDirectCooking0";
+		ghostIcon="set:dayz_inventory image:directcooking";
 	};
-  class Slot_SRP_TestTube2
+	class Slot_SmokingA
 	{
-		name="TestTube2";
-		displayName="Test Tube";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="SmokingA";
+		displayName="#STR_CfgSmoking0";
+		ghostIcon="set:dayz_inventory image:smoking";
 	};
-  class Slot_SRP_TestTube3
+	class Slot_SmokingB
 	{
-		name="TestTube3";
-		displayName="Test Tube";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="SmokingB";
+		displayName="#STR_CfgSmoking0";
+		ghostIcon="set:dayz_inventory image:smoking";
 	};
-  class Slot_SRP_TestTube4
+	class Slot_SmokingC
 	{
-		name="TestTube4";
-		displayName="Test Tube";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="SmokingC";
+		displayName="#STR_CfgSmoking0";
+		ghostIcon="set:dayz_inventory image:smoking";
 	};
-  class Slot_SRP_TestTube5
+	class Slot_SmokingD
 	{
-		name="TestTube5";
-		displayName="Test Tube";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="SmokingD";
+		displayName="#STR_CfgSmoking0";
+		ghostIcon="set:dayz_inventory image:smoking";
 	};
-  class Slot_SRP_TestTube6
+	class Slot_SeedBase_1
 	{
-		name="TestTube6";
-		displayName="Test Tube";
-		ghostIcon="set:dayz_inventory image:paper";
+		name="SeedBase_1";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_1";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
 	};
-  
-  class Slot_SRP_Comtacs
+	class Slot_SeedBase_2
 	{
-		name="SRP_Comtacs";
-		displayName="Comtacs";
+		name="SeedBase_2";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_2";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_3
+	{
+		name="SeedBase_3";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_3";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_4
+	{
+		name="SeedBase_4";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_4";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_5
+	{
+		name="SeedBase_5";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_5";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_6
+	{
+		name="SeedBase_6";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_6";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_7
+	{
+		name="SeedBase_7";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_7";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_8
+	{
+		name="SeedBase_8";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_8";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_9
+	{
+		name="SeedBase_9";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_9";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_10
+	{
+		name="SeedBase_10";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_10";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_11
+	{
+		name="SeedBase_11";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_11";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_12
+	{
+		name="SeedBase_12";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_12";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_SeedBase_13
+	{
+		name="SeedBase_13";
+		displayName="#STR_CfgSeedBase0";
+		selection="SeedBase_13";
+		ghostIcon="set:dayz_inventory image:seedbase";
+		stackMax=1;
+	};
+	class Slot_GlowPlug
+	{
+		name="GlowPlug";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:glowplug";
+	};
+	class Slot_SparkPlug
+	{
+		name="SparkPlug";
+		displayName="#STR_CfgSparkPlug0";
+		ghostIcon="set:dayz_inventory image:sparkplug";
+	};
+	class Slot_EngineBelt
+	{
+		name="EngineBelt";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:enginebelt";
+	};
+	class Slot_CarBattery
+	{
+		name="CarBattery";
+		displayName="#STR_CfgVehicleBattery0";
+		selection="battery";
+		ghostIcon="set:dayz_inventory image:carbattery";
+	};
+	class Slot_TruckBattery
+	{
+		name="TruckBattery";
+		displayName="#STR_CfgVehicleBattery0";
+		selection="battery";
+		ghostIcon="set:dayz_inventory image:carbattery";
+	};
+	class Slot_LightBulb
+	{
+		name="LightBulb";
+		displayName="#STR_CfgLightBulb0";
+		ghostIcon="set:dayz_inventory image:lightbulb";
+	};
+	class Slot_Reflector_1_1
+	{
+		name="Reflector_1_1";
+		displayName="#STR_CfgLightBulb0";
+		selection="Reflector_1_1";
+		ghostIcon="set:dayz_inventory image:lightbulb";
+	};
+	class Slot_Reflector_2_1
+	{
+		name="Reflector_2_1";
+		displayName="#STR_CfgLightBulb0";
+		selection="Reflector_2_1";
+		ghostIcon="set:dayz_inventory image:lightbulb";
+	};
+	class Slot_TruckRadiator
+	{
+		name="TruckRadiator";
+		displayName="#STR_CfgVehicleRadiator0";
+		ghostIcon="set:dayz_inventory image:radiator";
+	};
+	class Slot_CarRadiator
+	{
+		name="CarRadiator";
+		displayName="#STR_CfgVehicleRadiator0";
+		ghostIcon="set:dayz_inventory image:radiator";
+	};
+	class Slot_V3SWheel_1_1
+	{
+		name="V3SWheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_V3SWheel_1_2
+	{
+		name="V3SWheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_V3SWheel_1_3
+	{
+		name="V3SWheel_1_3";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_3";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_V3SWheel_2_1
+	{
+		name="V3SWheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_V3SWheel_2_2
+	{
+		name="V3SWheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_V3SWheel_2_3
+	{
+		name="V3SWheel_2_3";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_3";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_V3SWheel_Spare_1
+	{
+		name="V3SWheel_Spare_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_spare_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_V3SWheel_Spare_2
+	{
+		name="V3SWheel_Spare_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_spare_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_V3SHood
+	{
+		name="V3SHood";
+		displayName="#STR_CfgHood0";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_V3SDriverDoors
+	{
+		name="V3SDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_V3SCoDriverDoors
+	{
+		name="V3SCoDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_UtilityVehicleWheel_1_1
+	{
+		name="UtilityVehicleWheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_UtilityVehicleWheel_1_2
+	{
+		name="UtilityVehicleWheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_UtilityVehicleWheel_2_1
+	{
+		name="UtilityVehicleWheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_UtilityVehicleWheel_2_2
+	{
+		name="UtilityVehicleWheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_UtilityVehicleDriverDoors
+	{
+		name="UtilityVehicleDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_UtilityVehicleCoDriverDoors
+	{
+		name="UtilityVehicleCoDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_NivaWheel_1_1
+	{
+		name="NivaWheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_NivaWheel_1_2
+	{
+		name="NivaWheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_NivaWheel_2_1
+	{
+		name="NivaWheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_NivaWheel_2_2
+	{
+		name="NivaWheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_NivaWheel_Spare_1
+	{
+		name="NivaWheel_Spare_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_spare_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_NivaHood
+	{
+		name="NivaHood";
+		displayName="#STR_CfgHood0";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_NivaTrunk
+	{
+		name="NivaTrunk";
+		displayName="#STR_CfgTrunk0";
+		ghostIcon="set:dayz_inventory image:trunk";
+	};
+	class Slot_NivaDriverDoors
+	{
+		name="NivaDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_NivaCoDriverDoors
+	{
+		name="NivaCoDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_CivSedanWheel_1_1
+	{
+		name="CivSedanWheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivSedanWheel_1_2
+	{
+		name="CivSedanWheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivSedanWheel_2_1
+	{
+		name="CivSedanWheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivSedanWheel_2_2
+	{
+		name="CivSedanWheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivSedanHood
+	{
+		name="CivSedanHood";
+		displayName="#STR_CfgHood0";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_CivSedanTrunk
+	{
+		name="CivSedanTrunk";
+		displayName="#STR_CfgTrunk0";
+		ghostIcon="set:dayz_inventory image:trunk";
+	};
+	class Slot_CivSedanDriverDoors
+	{
+		name="CivSedanDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_CivSedanCoDriverDoors
+	{
+		name="CivSedanCoDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_CivSedanCargo1Doors
+	{
+		name="CivSedanCargo1Doors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_CivSedanCargo2Doors
+	{
+		name="CivSedanCargo2Doors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_CivVanWheel_1_1
+	{
+		name="CivVanWheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivVanWheel_1_2
+	{
+		name="CivVanWheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivVanWheel_2_1
+	{
+		name="CivVanWheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivVanWheel_2_2
+	{
+		name="CivVanWheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivVanDriverDoors
+	{
+		name="CivVanDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_CivVanCoDriverDoors
+	{
+		name="CivVanCoDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_CivVanCargo1Doors
+	{
+		name="CivVanCargo1Doors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_CivVanTrunkUp
+	{
+		name="CivVanTrunkUp";
+		displayName="#STR_CfgTrunk0";
+		ghostIcon="set:dayz_inventory image:trunk";
+	};
+	class Slot_CivVanCargoDown
+	{
+		name="CivVanTrunkDown";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_Van_01_Wheel_1_1
+	{
+		name="Van_01_Wheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Van_01_Wheel_1_2
+	{
+		name="Van_01_Wheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Van_01_Wheel_2_1
+	{
+		name="Van_01_Wheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Van_01_Wheel_2_2
+	{
+		name="Van_01_Wheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Van_01_Door_1_1
+	{
+		name="Van_01_Door_1_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Van_01_Door_2_1
+	{
+		name="Van_01_Door_2_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Van_01_Door_2_2
+	{
+		name="Van_01_Door_2_2";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_Van_01_Trunk_1
+	{
+		name="Van_01_Trunk_1";
+		displayName="#STR_CfgTrunk0";
+		ghostIcon="set:dayz_inventory image:trunk";
+	};
+	class Slot_Van_01_Trunk_2
+	{
+		name="Van_01_Trunk_2";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_BusWheel_1_1
+	{
+		name="BusWheel_1_1";
+		displayName="";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_BusWheel_1_2
+	{
+		name="BusWheel_1_2";
+		displayName="";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_BusWheel_2_1
+	{
+		name="BusWheel_2_1";
+		displayName="";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_BusWheel_2_2
+	{
+		name="BusWheel_2_2";
+		displayName="";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_BusHood
+	{
+		name="BusHood";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_BusLeftDoors_1
+	{
+		name="BusLeftDoors_1";
+		displayName="";
+		selection="BusLeftDoors_1";
+		ghostIcon="set:dayz_inventory image:busdoor";
+	};
+	class Slot_BusLeftDoors_2
+	{
+		name="BusLeftDoors_2";
+		displayName="";
+		selection="BusLeftDoors_2";
+		ghostIcon="set:dayz_inventory image:busdoor";
+	};
+	class Slot_BusLeftDoors_3
+	{
+		name="BusLeftDoors_3";
+		displayName="";
+		selection="BusLeftDoors_3";
+		ghostIcon="set:dayz_inventory image:busdoor";
+	};
+	class Slot_BusRightDoors_1
+	{
+		name="BusRightDoors_1";
+		displayName="";
+		selection="BusRightDoors_1";
+		ghostIcon="set:dayz_inventory image:busdoor";
+	};
+	class Slot_BusRightDoors_2
+	{
+		name="BusRightDoors_2";
+		displayName="";
+		selection="BusRightDoors_2";
+		ghostIcon="set:dayz_inventory image:busdoor";
+	};
+	class Slot_BusRightDoors_3
+	{
+		name="BusRightDoors_3";
+		displayName="";
+		selection="BusRightDoors_3";
+		ghostIcon="set:dayz_inventory image:busdoor";
+	};
+	class Slot_CivHatchbackWheel_1_1
+	{
+		name="CivHatchbackWheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivHatchbackWheel_1_2
+	{
+		name="CivHatchbackWheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivHatchbackWheel_2_1
+	{
+		name="CivHatchbackWheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivHatchbackWheel_2_2
+	{
+		name="CivHatchbackWheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_CivHatchbackHood
+	{
+		name="CivHatchbackHood";
+		displayName="#STR_CfgHood0";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_CivHatchbackTrunk
+	{
+		name="CivHatchbackTrunk";
+		displayName="#STR_CfgTrunk0";
+		ghostIcon="set:dayz_inventory image:trunk";
+	};
+	class Slot_CivHatchbackDriverDoors
+	{
+		name="CivHatchbackDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_CivHatchbackCoDriverDoors
+	{
+		name="CivHatchbackCoDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_CivHatchbackCargo1Doors
+	{
+		name="CivHatchbackCargo1Doors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_CivHatchbackCargo2Doors
+	{
+		name="CivHatchbackCargo2Doors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_S120Wheel_1_1
+	{
+		name="S120Wheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_S120Wheel_1_2
+	{
+		name="S120Wheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_S120Wheel_2_1
+	{
+		name="S120Wheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_S120Wheel_2_2
+	{
+		name="S120Wheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_S120Hood
+	{
+		name="S120Hood";
+		displayName="#STR_CfgHood0";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_S120Trunk
+	{
+		name="S120Trunk";
+		displayName="#STR_CfgTrunk0";
+		ghostIcon="set:dayz_inventory image:trunk";
+	};
+	class Slot_S120DriverDoors
+	{
+		name="S120DriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_S120CoDriverDoors
+	{
+		name="S120CoDriverDoors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_S120Cargo1Doors
+	{
+		name="S120Cargo1Doors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_S120Cargo2Doors
+	{
+		name="S120Cargo2Doors";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_Truck_01_Wheel_1_1
+	{
+		name="Truck_01_Wheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Truck_01_Wheel_1_2
+	{
+		name="Truck_01_Wheel_1_2";
+		displayName="#STR_CfgDoubleWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:doublewheel";
+	};
+	class Slot_Truck_01_Wheel_1_3
+	{
+		name="Truck_01_Wheel_1_3";
+		displayName="#STR_CfgDoubleWheel0";
+		selection="wheel_1_3";
+		ghostIcon="set:dayz_inventory image:doublewheel";
+	};
+	class Slot_Truck_01_Wheel_2_1
+	{
+		name="Truck_01_Wheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Truck_01_Wheel_2_2
+	{
+		name="Truck_01_Wheel_2_2";
+		displayName="#STR_CfgDoubleWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:doublewheel";
+	};
+	class Slot_Truck_01_Wheel_2_3
+	{
+		name="Truck_01_Wheel_2_3";
+		displayName="#STR_CfgDoubleWheel0";
+		selection="wheel_2_3";
+		ghostIcon="set:dayz_inventory image:doublewheel";
+	};
+	class Slot_Truck_01_Wheel_Spare_1
+	{
+		name="Truck_01_Wheel_Spare_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_spare_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Truck_01_Wheel_Spare_2
+	{
+		name="Truck_01_Wheel_Spare_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_spare_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Truck_01_Hood
+	{
+		name="Truck_01_Hood";
+		displayName="#STR_CfgHood0";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_Truck_01_Door_1_1
+	{
+		name="Truck_01_Door_1_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Truck_01_Doors_2_1
+	{
+		name="Truck_01_Door_2_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Truck_01_WoodenLogs
+	{
+		name="Truck_01_WoodenLogs";
+		displayName="#STR_CfgWoodenLogs0";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+		stackMax=50;
+	};
+	class Slot_Truck_01_WoodenPlanks
+	{
+		name="Truck_01_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=100;
+	};
+	class Slot_Truck_01_MetalSheets
+	{
+		name="Truck_01_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=40;
+	};
+	class Slot_Truck_01_Barrel1
+	{
+		name="Truck_01_Barrel1";
+		displayName="#STR_CfgBarrel0";
+		ghostIcon="set:dayz_inventory image:barrel";
+	};
+	class Slot_Truck_01_Barrel2
+	{
+		name="Truck_01_Barrel2";
+		displayName="#STR_CfgBarrel0";
+		ghostIcon="set:dayz_inventory image:barrel";
+	};
+	class Slot_Truck_01_Barrel3
+	{
+		name="Truck_01_Barrel3";
+		displayName="#STR_CfgBarrel0";
+		ghostIcon="set:dayz_inventory image:barrel";
+	};
+	class Slot_Truck_01_Barrel4
+	{
+		name="Truck_01_Barrel4";
+		displayName="#STR_CfgBarrel0";
+		ghostIcon="set:dayz_inventory image:barrel";
+	};
+	class Slot_Truck_01_WoodenCrate1
+	{
+		name="Truck_01_WoodenCrate1";
+		displayName="#STR_CfgCrate0";
+		ghostIcon="set:dayz_inventory image:woodcrate";
+	};
+	class Slot_Truck_01_WoodenCrate2
+	{
+		name="Truck_01_WoodenCrate2";
+		displayName="#STR_CfgCrate0";
+		ghostIcon="set:dayz_inventory image:woodcrate";
+	};
+	class Slot_Truck_01_WoodenCrate3
+	{
+		name="Truck_01_WoodenCrate3";
+		displayName="#STR_CfgCrate0";
+		ghostIcon="set:dayz_inventory image:woodcrate";
+	};
+	class Slot_Truck_01_WoodenCrate4
+	{
+		name="Truck_01_WoodenCrate4";
+		displayName="#STR_CfgCrate0";
+		ghostIcon="set:dayz_inventory image:woodcrate";
+	};
+	class Slot_Truck_02_Wheel_1_1
+	{
+		name="Truck_02_Wheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Truck_02_Wheel_1_2
+	{
+		name="Truck_02_Wheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Truck_02_Wheel_2_1
+	{
+		name="Truck_02_Wheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Truck_02_Wheel_2_2
+	{
+		name="Truck_02_Wheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Truck_02_Door_1_1
+	{
+		name="Truck_02_Door_1_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Truck_02_Door_2_1
+	{
+		name="Truck_02_Door_2_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Hatchback_02_Wheel_1_1
+	{
+		name="Hatchback_02_Wheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Hatchback_02_Wheel_1_2
+	{
+		name="Hatchback_02_Wheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Hatchback_02_Wheel_2_1
+	{
+		name="Hatchback_02_Wheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Hatchback_02_Wheel_2_2
+	{
+		name="Hatchback_02_Wheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Hatchback_02_Door_1_1
+	{
+		name="Hatchback_02_Door_1_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Hatchback_02_Door_1_2
+	{
+		name="Hatchback_02_Door_1_2";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_Hatchback_02_Door_2_1
+	{
+		name="Hatchback_02_Door_2_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Hatchback_02_Door_2_2
+	{
+		name="Hatchback_02_Door_2_2";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_Hatchback_02_Hood
+	{
+		name="Hatchback_02_Hood";
+		displayName="#STR_CfgHood0";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_Hatchback_02_Trunk
+	{
+		name="Hatchback_02_Trunk";
+		displayName="#STR_CfgTrunk0";
+		ghostIcon="set:dayz_inventory image:trunk";
+	};
+	class Slot_Sedan_02_Wheel_1_1
+	{
+		name="Sedan_02_Wheel_1_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Sedan_02_Wheel_1_2
+	{
+		name="Sedan_02_Wheel_1_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_1_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Sedan_02_Wheel_2_1
+	{
+		name="Sedan_02_Wheel_2_1";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_1";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Sedan_02_Wheel_2_2
+	{
+		name="Sedan_02_Wheel_2_2";
+		displayName="#STR_CfgWheel0";
+		selection="wheel_2_2";
+		ghostIcon="set:dayz_inventory image:wheel";
+	};
+	class Slot_Sedan_02_Hood
+	{
+		name="Sedan_02_Hood";
+		displayName="#STR_CfgHood0";
+		ghostIcon="set:dayz_inventory image:hood";
+	};
+	class Slot_Sedan_02_Trunk
+	{
+		name="Sedan_02_Trunk";
+		displayName="#STR_CfgTrunk0";
+		ghostIcon="set:dayz_inventory image:trunk";
+	};
+	class Slot_Sedan_02_Door_1_1
+	{
+		name="Sedan_02_Door_1_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Sedan_02_Door_2_1
+	{
+		name="Sedan_02_Door_2_1";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorfront";
+	};
+	class Slot_Sedan_02_Door_1_2
+	{
+		name="Sedan_02_Door_1_2";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_Sedan_02_Door_2_2
+	{
+		name="Sedan_02_Door_2_2";
+		displayName="#STR_CfgDoor0";
+		ghostIcon="set:dayz_inventory image:doorrear";
+	};
+	class Slot_Level_1_Wall_1_Barbedwire_1
+	{
+		name="Level_1_Wall_1_Barbedwire_1";
+		displayName="#STR_CfgBarbedWire0";
+		selection="level_1_wall_1_barbedwire_1";
+		ghostIcon="set:dayz_inventory image:barbedwiredown";
+	};
+	class Slot_Level_1_Wall_1_Barbedwire_2
+	{
+		name="Level_1_Wall_1_Barbedwire_2";
+		displayName="#STR_CfgBarbedWire0";
+		selection="level_1_wall_1_barbedwire_2";
+		ghostIcon="set:dayz_inventory image:barbedwireup";
+	};
+	class Slot_Level_1_Wall_2_Barbedwire_1
+	{
+		name="Level_1_Wall_2_Barbedwire_1";
+		displayName="#STR_CfgBarbedWire0";
+		selection="level_1_wall_2_barbedwire_1";
+		ghostIcon="set:dayz_inventory image:barbedwiredown";
+	};
+	class Slot_Level_1_Wall_2_Barbedwire_2
+	{
+		name="Level_1_Wall_2_Barbedwire_2";
+		displayName="#STR_CfgBarbedWire0";
+		selection="level_1_wall_2_barbedwire_2";
+		ghostIcon="set:dayz_inventory image:barbedwireup";
+	};
+	class Slot_Level_1_Wall_3_Barbedwire_1
+	{
+		name="Level_1_Wall_3_Barbedwire_1";
+		displayName="#STR_CfgBarbedWire0";
+		selection="level_1_wall_3_barbedwire_1";
+		ghostIcon="set:dayz_inventory image:barbedwiredown";
+	};
+	class Slot_Level_1_Wall_3_Barbedwire_2
+	{
+		name="Level_1_Wall_3_Barbedwire_2";
+		displayName="#STR_CfgBarbedWire0";
+		selection="level_1_wall_3_barbedwire_2";
+		ghostIcon="set:dayz_inventory image:barbedwireup";
+	};
+	class Slot_Level_1_Wall_1_Camonet
+	{
+		name="Level_1_Wall_1_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_1_wall_1_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Level_1_Wall_2_Camonet
+	{
+		name="Level_1_Wall_2_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_1_wall_2_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Level_1_Wall_3_Camonet
+	{
+		name="Level_1_Wall_3_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_1_wall_3_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Level_2_Wall_1_Camonet
+	{
+		name="Level_2_Wall_1_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_2_wall_1_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Level_2_Wall_2_Camonet
+	{
+		name="Level_2_Wall_2_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_2_wall_2_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Level_2_Wall_3_Camonet
+	{
+		name="Level_2_Wall_3_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_2_wall_3_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Level_3_Wall_1_Camonet
+	{
+		name="Level_3_Wall_1_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_3_wall_1_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Level_3_Wall_2_Camonet
+	{
+		name="Level_3_Wall_2_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_3_wall_2_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Level_3_Wall_3_Camonet
+	{
+		name="Level_3_Wall_3_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="level_3_wall_3_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Material_L1_WoodenLogs
+	{
+		name="Material_L1_WoodenLogs";
+		displayName="#STR_CfgWoodenLogs0";
+		selection="Material_L1_WoodenLogs";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+		stackMax=4;
+	};
+	class Slot_Material_L1_Nails
+	{
+		name="Material_L1_Nails";
+		displayName="#STR_CfgNails0";
+		selection="material_l1_nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L1W1_Nails
+	{
+		name="Material_L1W1_Nails";
+		displayName="#STR_CfgNails0";
+		selection="material_l1w1_nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L1W2_Nails
+	{
+		name="Material_L1W2_Nails";
+		displayName="#STR_CfgNails0";
+		selection="material_l1w2_nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L1W3_Nails
+	{
+		name="Material_L1W3_Nails";
+		displayName="#STR_CfgNails0";
+		selection="material_l1w3_nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L1_WoodenPlanks
+	{
+		name="Material_L1_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="material_l1_woodenplanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L1W1_WoodenPlanks
+	{
+		name="Material_L1W1_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="material_l1w1_woodenplanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L1W2_WoodenPlanks
+	{
+		name="Material_L1W2_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="material_l1w2_woodenplanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L1W3_WoodenPlanks
+	{
+		name="Material_L1W3_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="material_l1w3_woodenplanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L1W1_MetalSheets
+	{
+		name="Material_L1W1_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="material_l1w1_metalsheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L1W2_MetalSheets
+	{
+		name="Material_L1W2_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="material_l1w2_metalsheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L1W3_MetalSheets
+	{
+		name="Material_L1W3_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="material_l1w3_metalsheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L2_WoodenLogs
+	{
+		name="Material_L2_WoodenLogs";
+		displayName="#STR_CfgWoodenLogs0";
+		selection="Material_L2_WoodenLogs";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+		stackMax=4;
+	};
+	class Slot_Material_L2_Nails
+	{
+		name="Material_L2_Nails";
+		displayName="#STR_CfgNails0";
+		selection="material_l2_nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L2W1_Nails
+	{
+		name="Material_L2W1_Nails";
+		displayName="#STR_CfgNails0";
+		selection="material_l2w1_nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L2W2_Nails
+	{
+		name="Material_L2W2_Nails";
+		displayName="#STR_CfgNails0";
+		selection="material_l2w2_nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L2W3_Nails
+	{
+		name="Material_L2W3_Nails";
+		displayName="#STR_CfgNails0";
+		selection="material_l2w3_nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L2_WoodenPlanks
+	{
+		name="Material_L2_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="material_l2_woodenplanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L2W1_WoodenPlanks
+	{
+		name="Material_L2W1_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="material_l2w1_woodenplanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L2W2_WoodenPlanks
+	{
+		name="Material_L2W2_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="material_l2w2_woodenplanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L2W3_WoodenPlanks
+	{
+		name="Material_L2W3_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="material_l2w3_woodenplanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L2W1_MetalSheets
+	{
+		name="Material_L2W1_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="material_l2w1_metalsheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L2W2_MetalSheets
+	{
+		name="Material_L2W2_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="material_l2w2_metalsheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L2W3_MetalSheets
+	{
+		name="Material_L2W3_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="material_l2w3_metalsheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L3_WoodenLogs
+	{
+		name="Material_L3_WoodenLogs";
+		displayName="#STR_CfgWoodenLogs0";
+		selection="Material_L3_WoodenLogs";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+		stackMax=4;
+	};
+	class Slot_Material_L3_Nails
+	{
+		name="Material_L3_Nails";
+		displayName="#STR_CfgNails0";
+		selection="Material_L3_Nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L3_MetalSheets
+	{
+		name="Material_L3_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="Material_L3_MetalSheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L3W1_Nails
+	{
+		name="Material_L3W1_Nails";
+		displayName="#STR_CfgNails0";
+		selection="Material_L3W1_Nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L3W2_Nails
+	{
+		name="Material_L3W2_Nails";
+		displayName="#STR_CfgNails0";
+		selection="Material_L3W2_Nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L3W3_Nails
+	{
+		name="Material_L3W3_Nails";
+		displayName="#STR_CfgNails0";
+		selection="Material_L3W3_Nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_L3_WoodenPlanks
+	{
+		name="Material_L3_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="Material_L3_WoodenPlanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L3W1_WoodenPlanks
+	{
+		name="Material_L3W1_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="Material_L3W1_WoodenPlanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L3W2_WoodenPlanks
+	{
+		name="Material_L3W2_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="Material_L3W2_WoodenPlanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L3W3_WoodenPlanks
+	{
+		name="Material_L3W3_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="Material_L3W3_WoodenPlanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_L3W1_MetalSheets
+	{
+		name="Material_L3W1_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="Material_L3W1_MetalSheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L3W2_MetalSheets
+	{
+		name="Material_L3W2_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="Material_L3W2_MetalSheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_L3W3_MetalSheets
+	{
+		name="Material_L3W3_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="Material_L3W3_MetalSheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_Nails
+	{
+		name="Material_Nails";
+		displayName="#STR_CfgNails0";
+		selection="Material_Nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=99;
+	};
+	class Slot_Material_WoodenPlanks
+	{
+		name="Material_WoodenPlanks";
+		displayName="#STR_CfgPlanks0";
+		selection="Material_WoodenPlanks";
+		ghostIcon="set:dayz_inventory image:planks";
+		stackMax=20;
+	};
+	class Slot_Material_MetalSheets
+	{
+		name="Material_MetalSheets";
+		displayName="#STR_CfgMetalPlate0";
+		selection="Material_MetalSheets";
+		ghostIcon="set:dayz_inventory image:plates";
+		stackMax=20;
+	};
+	class Slot_Material_WoodenLogs
+	{
+		name="Material_WoodenLogs";
+		displayName="#STR_CfgWoodenLogs0";
+		selection="Material_WoodenLogs";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+		stackMax=2;
+	};
+	class Slot_Material_MetalWire
+	{
+		name="Material_MetalWire";
+		displayName="#STR_CfgMetalWire0";
+		selection="Material_MetalWire";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
+	class Slot_Att_CombinationLock
+	{
+		name="Att_CombinationLock";
+		displayName="#STR_CombinationLock0";
+		selection="att_combinationlock";
+		ghostIcon="set:dayz_inventory image:combolock";
+	};
+	class Slot_Wall_Barbedwire_1
+	{
+		name="Wall_Barbedwire_1";
+		displayName="#STR_CfgBarbedWire0";
+		selection="wall_barbedwire_1";
+		ghostIcon="set:dayz_inventory image:barbedwiredown";
+	};
+	class Slot_Wall_Barbedwire_2
+	{
+		name="Wall_Barbedwire_2";
+		displayName="#STR_CfgBarbedWire0";
+		selection="wall_barbedwire_2";
+		ghostIcon="set:dayz_inventory image:barbedwireup";
+	};
+	class Slot_Wall_Camonet
+	{
+		name="Wall_Camonet";
+		displayName="#STR_CfgCamoNet0";
+		selection="wall_camonet";
+		ghostIcon="set:dayz_inventory image:camonet";
+	};
+	class Slot_Material_FPole_WoodenLog
+	{
+		name="Material_FPole_WoodenLog";
+		displayName="#STR_CfgWoodenLogs0";
+		selection="Material_FPole_WoodenLog";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+		stackMax=1;
+	};
+	class Slot_Material_FPole_Stones
+	{
+		name="Material_FPole_Stones";
+		displayName="#STR_CfgStones0";
+		selection="Material_FPole_Stones";
+		ghostIcon="set:dayz_inventory image:stones";
+		stackMax=32;
+	};
+	class Slot_Material_FPole_WoodenLog2
+	{
+		name="Material_FPole_WoodenLog2";
+		displayName="#STR_CfgWoodenLogs0";
+		selection="Material_FPole_WoodenLog2";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+		stackMax=6;
+	};
+	class Slot_Material_FPole_MetalWire
+	{
+		name="Material_FPole_MetalWire";
+		displayName="#STR_CfgMetalWire0";
+		selection="Material_FPole_MetalWire";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
+	class Slot_Material_FPole_Rope
+	{
+		name="Material_FPole_Rope";
+		displayName="#STR_CfgRope0";
+		selection="Material_FPole_Rope";
+		ghostIcon="set:dayz_inventory image:rope";
+	};
+	class Slot_Material_FPole_Nails
+	{
+		name="Material_FPole_Nails";
+		displayName="#STR_CfgNails0";
+		selection="Material_FPole_Nails";
+		ghostIcon="set:dayz_inventory image:nails";
+		stackMax=60;
+	};
+	class Slot_Material_FPole_MagicStick
+	{
+		name="Material_FPole_MagicStick";
+		displayName="#STR_CfgWoodenLogs0";
+		selection="Material_FPole_MagicStick";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+		stackMax=3;
+	};
+	class Slot_Material_FPole_Flag
+	{
+		name="Material_FPole_Flag";
+		displayName="#STR_Flag0";
+		selection="Material_FPole_Flag";
+		ghostIcon="set:dayz_inventory image:tf_flag";
+	};
+	class Slot_Material_Shelter_FrameSticks
+	{
+		name="Material_Shelter_FrameSticks";
+		displayName="#STR_CfgWoodenStick0";
+		selection="Material_Shelter_FrameSticks";
+		ghostIcon="set:dayz_inventory image:woodenstick";
+		stackMax=4;
+	};
+	class Slot_Material_Shelter_Rope
+	{
+		name="Material_Shelter_Rope";
+		displayName="#STR_CfgRope0";
+		selection="Material_Shelter_Rope";
+		ghostIcon="set:dayz_inventory image:rope";
+	};
+	class Slot_Material_Shelter_Leather
+	{
+		name="Material_Shelter_Leather";
+		displayName="#STR_Leather0";
+		selection="Material_Shelter_Leather";
+		ghostIcon="set:dayz_inventory image:animal_pelt";
+		stackMax=8;
+	};
+	class Slot_Material_Shelter_Fabric
+	{
+		name="Material_Shelter_Fabric";
+		displayName="#STR_Fabric0";
+		selection="Material_Shelter_Fabric";
+		ghostIcon="set:dayz_inventory image:tarp";
+		stackMax=4;
+	};
+	class Slot_Material_Shelter_Sticks
+	{
+		name="Material_Shelter_Sticks";
+		displayName="#STR_CfgWoodenStick0";
+		selection="Material_Shelter_Sticks";
+		ghostIcon="set:dayz_inventory image:wooden_sticks";
+		stackMax=50;
+	};
+	class Slot_LargeBattery
+	{
+		name="LargeBattery";
+		displayName="#STR_CfgVehicleBattery0";
+		selection="battery";
+		ghostIcon="set:dayz_inventory image:carbattery";
+	};
+	class Slot_Knife_Holster
+	{
+		name="KnifeHolster";
+		displayName="";
+		ghostIcon="set:dayz_inventory image:knifeholster";
+	};
+	class Slot_Chemlight
+	{
+		name="Chemlight";
+		displayName="#STR_CfgChemlight0";
+		ghostIcon="set:dayz_inventory image:chemlight";
+	};
+	class Slot_WalkieTalkie
+	{
+		name="WalkieTalkie";
+		displayName="#STR_CfgWalkieTalkie0";
 		ghostIcon="set:dayz_inventory image:walkietalkie";
 	};
-  // class Slot_SRP_ToolRack1
-	// {
-	// 	name="ToolRack1";
-	// 	displayName="Hand Tool";
-	// 	ghostIcon="set:dayz_inventory image:missing";
-	// };
-  class Slot_SRP_ForgeBellows
+	class Slot_NVG
 	{
-		name="SRP_ForgeBellows";
-		displayName="Bellows";
-    ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+		name="NVG";
+		displayName="#STR_CfgNVG0";
+		ghostIcon="set:dayz_inventory image:nvggoggles";
 	};
-
-  class Slot_SRP_Patch
-  {
-		name="SRP_Patch";
-		displayName="Flag Patch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-
-  class Slot_SmallPouch1
-  {
-		name="SmallPouch1";
-		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_SmallPouch2
-  {
-		name="SmallPouch2";
-		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_SmallPouch3
-  {
-		name="SmallPouch3";
-		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_SmallPouch4
-  {
-		name="SmallPouch4";
-		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_SmallPouch5
-  {
-		name="SmallPouch5";
-		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_SmallPouch6
-  {
-		name="SmallPouch6";
-		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-
-  class Slot_LargePouch1
-  {
-		name="LargePouch1";
-		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_LargePouch2
-  {
-		name="LargePouch2";
-		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_LargePouch3
-  {
-		name="LargePouch3";
-		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_LargePouch4
-  {
-		name="LargePouch4";
-		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_LargePouch5
-  {
-		name="LargePouch5";
-		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  
-  class Slot_SRP_RawOre
-  {
-		name="SRP_RawOre";
-		displayName="Raw Ore";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=4;
-  }
-  class Slot_SRP_Crucible
-  {
-		name="SRP_Crucible";
-		displayName="Hot Crucible";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_SRP_IngotMold
-  {
-		name="SRP_IngotMold";
-		displayName="Hot Ingot Mold";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_SRP_Ingot
-  {
-		name="SRP_Ingot";
-		displayName="Hot Ingot";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-
-  class Slot_SRP_Katana
-  {
-		name="SRP_Katana";
-		displayName="Katana";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_SRP_KatanaSheath
-  {
-		name="SRP_KatanaSheath";
-		displayName="Katana Sheath";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  // ------------------------ CARDS
-  class Slot_CardHand1
-  {
-		name="CardHand1";
-		displayName="1st Card";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardHand2
-  {
-		name="CardHand2";
-		displayName="2nd Card";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardHand3
-  {
-		name="CardHand3";
-		displayName="3rd Card";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardHand4
-  {
-		name="CardHand4";
-		displayName="4th Card";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardHand5
-  {
-		name="CardHand5";
-		displayName="5th Card";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-
-
-  class Slot_Card2Spade
-  {
-		name="Card2Spade";
-		displayName="2 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card3Spade
-  {
-		name="Card3Spade";
-		displayName="3 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card4Spade
-  {
-		name="Card4Spade";
-		displayName="4 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card5Spade
-  {
-		name="Card5Spade";
-		displayName="5 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card6Spade
-  {
-		name="Card6Spade";
-		displayName="6 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card7Spade
-  {
-		name="Card7Spade";
-		displayName="7 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card8Spade
-  {
-		name="Card8Spade";
-		displayName="8 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card9Spade
-  {
-		name="Card9Spade";
-		displayName="9 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card10Spade
-  {
-		name="Card10Spade";
-		displayName="10 of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardJackSpade
-  {
-		name="CardJackSpade";
-		displayName="Jack of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardQueenSpade
-  {
-		name="CardQueenSpade";
-		displayName="Queen of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardKingSpade
-  {
-		name="CardKingSpade";
-		displayName="King of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardAceSpade
-  {
-		name="CardAceSpade";
-		displayName="Ace of Spades";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-
-  class Slot_Card2Club
-  {
-		name="Card2Club";
-		displayName="2 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card3Club
-  {
-		name="Card3Club";
-		displayName="3 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card4Club
-  {
-		name="Card4Club";
-		displayName="4 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card5Club
-  {
-		name="Card5Club";
-		displayName="5 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card6Club
-  {
-		name="Card6Club";
-		displayName="6 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card7Club
-  {
-		name="Card7Club";
-		displayName="7 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card8Club
-  {
-		name="Card8Club";
-		displayName="8 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card9Club
-  {
-		name="Card9Club";
-		displayName="9 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card10Club
-  {
-		name="Card10Club";
-		displayName="10 of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardJackClub
-  {
-		name="CardJackClub";
-		displayName="Jack of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardQueenClub
-  {
-		name="CardQueenClub";
-		displayName="Queen of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardKingClub
-  {
-		name="CardKingClub";
-		displayName="King of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardAceClub
-  {
-		name="CardAceClub";
-		displayName="Ace of Clubs";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-
-  class Slot_Card2Diamond
-  {
-		name="Card2Diamond";
-		displayName="2 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card3Diamond
-  {
-		name="Card3Diamond";
-		displayName="3 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card4Diamond
-  {
-		name="Card4Diamond";
-		displayName="4 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card5Diamond
-  {
-		name="Card5Diamond";
-		displayName="5 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card6Diamond
-  {
-		name="Card6Diamond";
-		displayName="6 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card7Diamond
-  {
-		name="Card7Diamond";
-		displayName="7 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card8Diamond
-  {
-		name="Card8Diamond";
-		displayName="8 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card9Diamond
-  {
-		name="Card9Diamond";
-		displayName="9 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card10Diamond
-  {
-		name="Card10Diamond";
-		displayName="10 of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardJackDiamond
-  {
-		name="CardJackDiamond";
-		displayName="Jack of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardQueenDiamond
-  {
-		name="CardQueenDiamond";
-		displayName="Queen of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardKingDiamond
-  {
-		name="CardKingDiamond";
-		displayName="King of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardAceDiamond
-  {
-		name="CardAceDiamond";
-		displayName="Ace of Diamonds";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-
-  class Slot_Card2Heart
-  {
-		name="Card2Heart";
-		displayName="2 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card3Heart
-  {
-		name="Card3Heart";
-		displayName="3 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card4Heart
-  {
-		name="Card4Heart";
-		displayName="4 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card5Heart
-  {
-		name="Card5Heart";
-		displayName="5 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card6Heart
-  {
-		name="Card6Heart";
-		displayName="6 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card7Heart
-  {
-		name="Card7Heart";
-		displayName="7 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card8Heart
-  {
-		name="Card8Heart";
-		displayName="8 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card9Heart
-  {
-		name="Card9Heart";
-		displayName="9 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_Card10Heart
-  {
-		name="Card10Heart";
-		displayName="10 of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardJackHeart
-  {
-		name="CardJackHeart";
-		displayName="Jack of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardQueenHeart
-  {
-		name="CardQueenHeart";
-		displayName="Queen of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardKingHeart
-  {
-		name="CardKingHeart";
-		displayName="King of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-  class Slot_CardAceHeart
-  {
-		name="CardAceHeart";
-		displayName="Ace of Hearts";
-		ghostIcon="set:dayz_inventory image:missing";
-  }
-
-
-};
-
-class CfgNonAIVehicles
-{
-	class ProxyAttachment;
-	class ProxyMeat_steak;
-
-  class ProxySodaCan_Used: ProxyAttachment
+	class Slot_helmetFlashlight
 	{
-		scope=2;
-		inventorySlot[]={"tripWireAttachment"};
-		model="\dz\gear\drinks\SodaCan_Used.p3d";
+		name="helmetFlashlight";
+		displayName="#STR_CfgFlashlight0";
+		ghostIcon="set:dayz_inventory image:weaponflashlight";
 	};
-
-	class ProxyJerryCan: ProxyAttachment
+	class Slot_Belt_Left
 	{
-		model="\dz\vehicles\parts\JerryCan.p3d";
-		inventorySlot[]={"CanisterGasoline"};
+		name="Belt_Left";
+		displayName="#STR_CfgBelt_Left0";
+		ghostIcon="set:dayz_inventory image:canteen";
 	};
-
-	class Proxysrp_ammoworkbench_caseprep: ProxyAttachment
+	class Slot_Belt_Right
 	{
-		scope=2;
-		inventorySlot[]={"SRP_CasePrep"};
-		model="Survivalists_Mods\proxy\srp_ammoworkbench_caseprep.p3d";
+		name="Belt_Right";
+		displayName="#STR_CfgBelt_Right0";
+		ghostIcon="set:dayz_inventory image:vestholster";
 	};
-	class Proxysrp_ammoworkbench_ammopress: ProxyAttachment
+	class Slot_Belt_Back
 	{
-		scope=2;
-		inventorySlot[]={"SRP_AmmoPress"};
-		model="Survivalists_Mods\proxy\srp_ammoworkbench_ammopress.p3d";
+		name="Belt_Back";
+		displayName="#STR_CfgBelt_Back0";
+		ghostIcon="set:dayz_inventory image:knifeholster";
 	};
-
-  class Proxysrp_latheworkbench_belt: ProxyAttachment
+	class Slot_VestGrenadeA
 	{
-		scope=2;
-		inventorySlot[]={"SRP_LatheBelt"};
-		model="Survivalists_Mods\proxy\srp_latheworkbench_belt.p3d";
+		name="VestGrenadeA";
+		displayName="#STR_CfgVestGrenade0";
+		ghostIcon="set:dayz_inventory image:grenade";
 	};
-
-  class Proxysrp_latheworkbench_table: ProxyAttachment
+	class Slot_VestGrenadeB
 	{
-		scope=2;
-		inventorySlot[]={"SRP_LatheTable"};
-		model="Survivalists_Mods\proxy\srp_latheworkbench_table.p3d";
+		name="VestGrenadeB";
+		displayName="#STR_CfgVestGrenade0";
+		ghostIcon="set:dayz_inventory image:grenade";
 	};
-
-  class Proxysrp_latheworkbench_geardrive: ProxyAttachment
+	class Slot_VestGrenadeC
 	{
-		scope=2;
-		inventorySlot[]={"SRP_LatheGearDrive"};
-		model="Survivalists_Mods\proxy\srp_latheworkbench_geardrive.p3d";
+		name="VestGrenadeC";
+		displayName="#STR_CfgVestGrenade0";
+		ghostIcon="set:dayz_inventory image:grenade";
 	};
-
-  class Proxysrp_latheworkbench_clamp: ProxyAttachment
+	class Slot_VestGrenadeD
 	{
-		scope=2;
-		inventorySlot[]={"SRP_LatheClamp"};
-		model="Survivalists_Mods\proxy\srp_latheworkbench_clamp.p3d";
+		name="VestGrenadeD";
+		displayName="#STR_CfgVestGrenade0";
+		ghostIcon="set:dayz_inventory image:grenade";
 	};
-
-  class Proxysrp_wooddrill_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_WoodDrill"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_wooddrill_proxy.p3d"; //proxy path 
-  };    
-  class Proxysrp_woodclamp_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_WoodClamp"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_woodclamp_proxy.p3d"; //proxy path 
-  };
-  
-  class Proxysrp_sewingworkbench_sewingmachine: ProxyAttachment
+	class Slot_GasMaskFilter
 	{
-		scope=2;
-		inventorySlot[]={"SRP_SewingMachine"};
-		model="Survivalists_Mods\proxy\srp_sewingworkbench_sewingmachine.p3d";
+		name="GasMaskFilter";
+		displayName="#STR_GasMask_Filter0";
+		ghostIcon="set:dayz_inventory image:gasmaskfilter";
 	};
-	class Proxyfirstaidkit: ProxyAttachment
+	class Slot_Rope
 	{
-		scope=2;
-		inventorySlot[]={"firstaidkit"};
-		model="\DZ\gear\containers\FirstAidKit.p3d";
+		name="Rope";
+		displayName="#STR_CfgRope0";
+		ghostIcon="set:dayz_inventory image:rope";
 	};
-
-  class Proxycigarettecase_proxy1: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase1"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy1.p3d"; //proxy path 
-  };    
-  class Proxycigarettecase_proxy2: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase2"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy2.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy3: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase3"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy3.p3d"; //proxy path 
-  };    
-  class Proxycigarettecase_proxy4: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase4"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy4.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy5: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase5"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy5.p3d"; //proxy path 
-  };    
-  class Proxycigarettecase_proxy6: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase6"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy6.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy7: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase7"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy7.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy8: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase8"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy8.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy9: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase9"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy9.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy10: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase10"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy10.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy11: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase11"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy11.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy12: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase12"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy12.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy13: ProxyAttachment //same as p3d name
-  {
-      scope=2;
-      inventorySlot[]={"CigaretteCase13"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy13.p3d"; //proxy path 
-  };
-  class Proxycigarettecase_proxy14: ProxyAttachment //same as p3d name
-  {
-    scope=2;
-    inventorySlot[]={"CigaretteCase14"}; // same as slot name 
-    model="Survivalists_Mods\proxy\cigarettecase_proxy14.p3d"; //proxy path 
-  };
-
-  class Proxytesttube_proxy1: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"TestTube1"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\testtube_proxy1.p3d"; //proxy path 
-  };    
-  class Proxytesttube_proxy2: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"TestTube2"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\testtube_proxy2.p3d"; //proxy path 
-  };
-  class Proxytesttube_proxy3: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"TestTube3"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\testtube_proxy3.p3d"; //proxy path 
-  };
-  class Proxytesttube_proxy4: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"TestTube4"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\testtube_proxy4.p3d"; //proxy path 
-  };
-  class Proxytesttube_proxy5: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"TestTube5"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\testtube_proxy5.p3d"; //proxy path 
-  };
-  class Proxytesttube_proxy6: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"TestTube6"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\testtube_proxy6.p3d"; //proxy path 
-  };
-
-  class Proxyforge_stoneadvancedbellows: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_ForgeBellows"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\forge_stoneadvancedbellows.p3d"; //proxy path 
-  };
-
-  class Proxysrp_pouch_magazine_proxy1: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"magazine3"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_pouch_magazine_proxy1.p3d"; //proxy path 
-  };
-
-  class Proxysrp_patch_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_Patch"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_patch_proxy.p3d"; //proxy path 
-  }; 
-  class Proxysrp_smallpouch_proxy1: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SmallPouch1"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy1.p3d"; //proxy path 
-  };    
-  class Proxysrp_smallpouch_proxy2: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SmallPouch2"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy2.p3d"; //proxy path 
-  };
-  class Proxysrp_smallpouch_proxy3: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SmallPouch3"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy3.p3d"; //proxy path 
-  };
-  class Proxysrp_smallpouch_proxy4: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SmallPouch4"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy4.p3d"; //proxy path 
-  };
-  class Proxysrp_smallpouch_proxy5: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SmallPouch5"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy5.p3d"; //proxy path 
-  };
-  class Proxysrp_smallpouch_proxy6: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SmallPouch6"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_smallpouch_proxy6.p3d"; //proxy path 
-  };
-
-  class Proxysrp_largepouch_proxy1: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"LargePouch1"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_largepouch_proxy1.p3d"; //proxy path 
-  };    
-  class Proxysrp_largepouch_proxy2: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"LargePouch2"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_largepouch_proxy2.p3d"; //proxy path 
-  };
-  class Proxysrp_largepouch_proxy3: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"LargePouch3"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_largepouch_proxy3.p3d"; //proxy path 
-  };
-  class Proxysrp_largepouch_proxy4: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"LargePouch4"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_largepouch_proxy4.p3d"; //proxy path 
-  };
-  class Proxysrp_largepouch_proxy5: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"LargePouch5"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_largepouch_proxy5.p3d"; //proxy path 
-  };
-
-  class Proxysrp_cardhand_proxy1: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"CardHand1"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_cardhand_proxy1.p3d"; //proxy path 
-  };    
-  class Proxysrp_cardhand_proxy2: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"CardHand2"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_cardhand_proxy2.p3d"; //proxy path 
-  };
-  class Proxysrp_cardhand_proxy3: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"CardHand3"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_cardhand_proxy3.p3d"; //proxy path 
-  };
-  class Proxysrp_cardhand_proxy4: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"CardHand4"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_cardhand_proxy4.p3d"; //proxy path 
-  };
-  class Proxysrp_cardhand_proxy5: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"CardHand5"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_cardhand_proxy5.p3d"; //proxy path 
-  };
-
-  class Proxysrp_crucible_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_Crucible"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_crucible_proxy.p3d"; //proxy path 
-  };
-  class Proxysrp_ingotmold_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_IngotMold"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_ingotmold_proxy.p3d"; //proxy path 
-  };
-  class Proxysrp_ingot_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_Ingot"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_ingot_proxy.p3d"; //proxy path 
-  };
-  class Proxysrp_katana_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_Katana"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_katana_proxy.p3d"; //proxy path 
-  };
-  class Proxysrp_katanasheath_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_KatanaSheath"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_katanasheath_proxy.p3d"; //proxy path 
-  };
-
-  class Proxysrp_comtacs: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_Comtacs"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_comtacs.p3d"; //proxy path 
-  };
-  // -------------------- HIDING PROXIES
-  // THIS WORKS BY SETTING THE PATH OF A PROXY TO SOMETHING
-  // NONEXISTENT SO WHEN THE GAME TRIES TO RENDER, THERE IS NOTHING
-
-	class Proxyshoulder1: ProxyAttachment
+	class Slot_RevolverCylinder
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder1"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder1.p3d";
+		name="RevolverCylinder";
+		displayName="";
+		ghostIcon="";
+		show="false";
 	};
-	class Proxyshoulder2: ProxyAttachment
+	class Slot_RevolverEjector
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder2"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder2.p3d";
+		name="RevolverEjector";
+		displayName="";
+		ghostIcon="";
+		show="false";
 	};
-	class Proxyshoulder3: ProxyAttachment
+	class Slot_Splint_Right
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder3"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder3.p3d";
+		name="Splint_Right";
+		displayName="";
+		ghosticon="";
+		show="false";
 	};
-	class Proxyshoulder4: ProxyAttachment
+	class Slot_Splint_Left
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder4"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder4.p3d";
+		name="Splint_Left";
+		displayName="";
+		ghosticon="";
+		show="false";
 	};
-	class Proxyshoulder5: ProxyAttachment
+	class Slot_Trap_Bait
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder5"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder5.p3d";
+		name="Trap_Bait";
+		displayName="#STR_CfgTrapBait0";
+		ghosticon="set:dayz_inventory image:trapbait";
+		show="false";
 	};
-	class Proxyshoulder6: ProxyAttachment
+	class Slot_TrapPrey_1
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder6"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder6.p3d";
+		name="TrapPrey_1";
+		displayName="";
+		ghosticon="";
+		show="false";
 	};
-	class Proxyshoulder7: ProxyAttachment
+	class Slot_TrapPrey_2
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder7"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder7.p3d";
+		name="TrapPrey_1";
+		displayName="";
+		ghosticon="";
+		show="false";
 	};
-	class Proxyshoulder8: ProxyAttachment
+	class Slot_TrapPrey_3
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder8"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder8.p3d";
+		name="TrapPrey_1";
+		displayName="";
+		ghosticon="";
+		show="false";
 	};
-	class Proxyshoulder9: ProxyAttachment
+	class Slot_TrapPrey_4
 	{
-		scope=2;
-		inventorySlot[]={"1Shoulder9"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder9.p3d";
-	};
-	class Proxyshoulder10: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder10"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder10.p3d";
-	};
-	class Proxyshoulder11: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder11"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder11.p3d";
-	};
-	class Proxyshoulder12: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder12"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder12.p3d";
-	};
-	class Proxyshoulder13: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder13"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder13.p3d";
-	};
-	class Proxyshoulder14: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder14"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder14.p3d";
-	};
-	class Proxyshoulder15: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder15"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder15.p3d";
-	};
-	class Proxyshoulder16: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder16"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder16.p3d";
-	};
-	class Proxyshoulder17: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder17"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder17.p3d";
-	};
-	class Proxyshoulder18: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder18"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder18.p3d";
-	};
-	class Proxyshoulder19: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder19"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder19.p3d";
-	};
-	class Proxyshoulder20: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder20"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder20.p3d";
+		name="TrapPrey_1";
+		displayName="";
+		ghosticon="";
+		show="false";
 	};
 };
