@@ -1,7 +1,5 @@
 # The Survivalists Role Play Mod Pack
 
-Update readme links
-
 This mod pack contains the bulk of the unique items and features Survivalists has to offer.
 
 ## Characters
@@ -20,13 +18,13 @@ This mod pack contains the bulk of the unique items and features Survivalists ha
 - Assault Bag
 - Taloon Bag
 
-![Backpacks](doc/dayz_tools/survivalists_mod_items/backpacks.png)
+![Backpacks](../doc/dayz_tools/survivalists_mod_items/backpacks.png)
 
 ### Belts
 
 Here are a few custom belts pulled from various sources. See the attributions below for who created the model.
 
-![Belts](doc/dayz_tools/survivalists_mod_items/belts.png)
+![Belts](../doc/dayz_tools/survivalists_mod_items/belts.png)
 
 ### Glasses
 
@@ -34,11 +32,11 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Short Range NVG
 - Quad NVG
 
-![Glasses](doc/dayz_tools/survivalists_mod_items/glasses.png)
+![Glasses](../doc/dayz_tools/survivalists_mod_items/glasses.png)
 
 ### Gloves
 
-![Gloves](doc/dayz_tools/survivalists_mod_items/gloves.png)
+![Gloves](../doc/dayz_tools/survivalists_mod_items/gloves.png)
 
 ### Headgear
 
@@ -48,7 +46,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 #### Retextures and New Items
 
-![Headgear](doc/dayz_tools/survivalists_mod_items/headgear.png)
+![Headgear](../doc/dayz_tools/survivalists_mod_items/headgear.png)
 
 ### Masks
 
@@ -57,31 +55,31 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 #### Retextures and New Items
 
-![Masks](doc/dayz_tools/survivalists_mod_items/masks.png)
+![Masks](../doc/dayz_tools/survivalists_mod_items/masks.png)
 
 ### Pants
 
 #### Retextures and New Items
 
-![Pants](doc/dayz_tools/survivalists_mod_items/pants.png)
+![Pants](../doc/dayz_tools/survivalists_mod_items/pants.png)
 
 ### Shoes
 
 #### Retextures and New Items
 
-![Shoes](doc/dayz_tools/survivalists_mod_items/shoes.png)
+![Shoes](../doc/dayz_tools/survivalists_mod_items/shoes.png)
 
 ### Tops
 
 #### Retextures and New Items
 
-![Tops](doc/dayz_tools/survivalists_mod_items/tops.png)
+![Tops](../doc/dayz_tools/survivalists_mod_items/tops.png)
 
 ### Vests
 
 #### Retextures and New Items
 
-![Vests](doc/dayz_tools/survivalists_mod_items/vests.png)
+![Vests](../doc/dayz_tools/survivalists_mod_items/vests.png)
 
 ## Gear
 
@@ -91,7 +89,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Flagpoles are built with shovels.
 - Cable Reels have 50 units of length.
 
-![Camping](doc/dayz_tools/survivalists_mod_items/camping.png)
+![Camping](../doc/dayz_tools/survivalists_mod_items/camping.png)
 
 ### Consumables
 
@@ -102,7 +100,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ### Containers
 
-![Containers](doc/dayz_tools/survivalists_mod_items/containers.png)
+![Containers](../doc/dayz_tools/survivalists_mod_items/containers.png)
 
 ### Cooking
 
@@ -117,11 +115,11 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Combine heat packs.
 - Refill butane canisters
 
-![Crafting](doc/dayz_tools/survivalists_mod_items/crafting.png)
+![Crafting](../doc/dayz_tools/survivalists_mod_items/crafting.png)
 
 ### Drinks
 
-![Drinks](doc/dayz_tools/survivalists_mod_items/drinks.png)
+![Drinks](../doc/dayz_tools/survivalists_mod_items/drinks.png)
 
 ### Food
 
@@ -130,31 +128,31 @@ Here are a few custom belts pulled from various sources. See the attributions be
 - Meat can be smoked and burns when above 60C for too long.
 - Canning food is now an option in three forms: Veggie, Meat, Combo.
 
-![Food](doc/dayz_tools/survivalists_mod_items/food.png)
+![Food](../doc/dayz_tools/survivalists_mod_items/food.png)
 
 ### Medical
 
 - Expanded medical supplies.
 - Bacteria/Virus/Antibiotic Injectors and Cures.
 
-![Medical](doc/dayz_tools/survivalists_mod_items/medical.png)
+![Medical](../doc/dayz_tools/survivalists_mod_items/medical.png)
 
 ## Accessories
 
 ### Lab Tubes
 
 5 colors of lab tubes that can be added to a Lab Tube Rack. Combine colors and try to discover the recipe's that exist for science!  
-![Clear Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-clear.png)
-![Blue Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-blue.png)
-![Green Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-green.png)
-![Yelow Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-yellow.png)
-![Red Lab Tube](doc/dayz_tools/tree_mod_images/lab-tube-red.png)
+![Clear Lab Tube](../doc/dayz_tools/tree_mod_images/lab-tube-clear.png)
+![Blue Lab Tube](../doc/dayz_tools/tree_mod_images/lab-tube-blue.png)
+![Green Lab Tube](../doc/dayz_tools/tree_mod_images/lab-tube-green.png)
+![Yelow Lab Tube](../doc/dayz_tools/tree_mod_images/lab-tube-yellow.png)
+![Red Lab Tube](../doc/dayz_tools/tree_mod_images/lab-tube-red.png)
 
 ### Lab Tube Rack
 
 A rack to hold lab tubes. This item is required for crafting at the Drug Workbench
 
-![Lab Tube Rack](doc/dayz_tools/tree_mod_images/lab-tube-rack.png)
+![Lab Tube Rack](../doc/dayz_tools/tree_mod_images/lab-tube-rack.png)
 
 ### Meth Tub
 
@@ -162,20 +160,20 @@ A workbench for crafting drugs! There are many recipes and the first step is fin
 
 `Attachments are disabled for now`
 
-![Meth Tub](doc/dayz_tools/tree_mod_images/bath-tub.png)
+![Meth Tub](../doc/dayz_tools/tree_mod_images/bath-tub.png)
 
 ### Smoking Pipe
 
 Look dapper with this high quality pipe. Light it with matches or zippo lighter but don't forget to put it out or you might start a fire!
 
-![Smoking Pipe](doc/dayz_tools/tree_mod_images/smoking-pipe.png)
+![Smoking Pipe](../doc/dayz_tools/tree_mod_images/smoking-pipe.png)
 
 ### Cigarette Case
 
 Any classy citizen of the alpocalypse needs a place to store their narcotics. A cigarette case is the perfect blend of suave and class that says to the world "I have my shit together."
 
-![Cigarette Case Close](doc/dayz_tools/tree_mod_images/cig-case-close.png)
-![Cigarette Case Open](doc/dayz_tools/tree_mod_images/cig-case-open.png)
+![Cigarette Case Close](../doc/dayz_tools/tree_mod_images/cig-case-close.png)
+![Cigarette Case Open](../doc/dayz_tools/tree_mod_images/cig-case-open.png)
 
 ## Consumables
 
@@ -183,13 +181,13 @@ Any classy citizen of the alpocalypse needs a place to store their narcotics. A 
 
 Side effects include Laughing, Blurred Vision, Paranoia, Loss of color and an erratic feeling of accomplishment
 
-![Meth Crystals](doc/dayz_tools/tree_mod_images/meth-salts.png)
+![Meth Crystals](../doc/dayz_tools/tree_mod_images/meth-salts.png)
 
 ### Bath Salts
 
 Side effects include Laughing, Blurred Vision, Paranoia and a terrible feeling on your stomach
 
-![Bath Salts](doc/dayz_tools/tree_mod_images/meth-salts.png)
+![Bath Salts](../doc/dayz_tools/tree_mod_images/meth-salts.png)
 
 ### Acid
 
@@ -197,8 +195,8 @@ Side effects include Laughing, Blurred Vision, Paranoia and a terrible feeling o
 
 Side effects include Laughing, Coughing, Vomiting, Blurred Vision, Paranoia and the feeling that something bad might happen.
 
-![Smile Acid](doc/dayz_tools/tree_mod_images/smiley-acid.png)
-![SKull Acid](doc/dayz_tools/tree_mod_images/skull-acid.png)
+![Smile Acid](../doc/dayz_tools/tree_mod_images/smiley-acid.png)
+![SKull Acid](../doc/dayz_tools/tree_mod_images/skull-acid.png)
 
 ## Smokables
 
@@ -206,29 +204,29 @@ Side effects include Laughing, Coughing, Vomiting, Blurred Vision, Paranoia and 
 
 Side effects include Laughing, Coughing, Blurred Vision, Dry Mouth and an overall feeling of euphoria. Light your joints with matches or a zippo.
 
-![Zweed Joint](doc/dayz_tools/tree_mod_images/joint.png)
+![Zweed Joint](../doc/dayz_tools/tree_mod_images/joint.png)
 
 ### Cigarettes & Cigars
 
 Side effects include Coughing, Blurred Vision, Dry Mouth and a slight focused feeling. Light your cigs with matches or a zippo.
 
-![Cigarette](doc/dayz_tools/tree_mod_images/cig.png)
-![Cigar](doc/dayz_tools/tree_mod_images/cigar.png)
+![Cigarette](../doc/dayz_tools/tree_mod_images/cig.png)
+![Cigar](../doc/dayz_tools/tree_mod_images/cigar.png)
 
 ## Drug Packs
 
 Ever felt like your pockets just can't hold enough drugs? Well look no further. Now you can make packs of cigarettes or joints and even make a carton to hold even more! Don't look like a chump. Make yours today!
 
-![Zweed Pack](doc/dayz_tools/tree_mod_images/weed-pack.png)
-![Cig Pack](doc/dayz_tools/tree_mod_images/cig-pack.png)
+![Zweed Pack](../doc/dayz_tools/tree_mod_images/weed-pack.png)
+![Cig Pack](../doc/dayz_tools/tree_mod_images/cig-pack.png)
 
 ## Cartons
 
 Sometimes a box of joints fails to meet the requirements of the highest of cultured individuals. This container will allow you to store so many smokable items that you might as well become a chimney.
 
-![Zweed Carton](doc/dayz_tools/tree_mod_images/weed-carton.png)
-![Cig Carton](doc/dayz_tools/tree_mod_images/cigarette-carton.png)
-![Cigar Box](doc/dayz_tools/tree_mod_images/cigar-box.png)
+![Zweed Carton](../doc/dayz_tools/tree_mod_images/weed-carton.png)
+![Cig Carton](../doc/dayz_tools/tree_mod_images/cigarette-carton.png)
+![Cigar Box](../doc/dayz_tools/tree_mod_images/cigar-box.png)
 
 ## Medical
 
@@ -236,13 +234,13 @@ Sometimes a box of joints fails to meet the requirements of the highest of cultu
 
 For those times when you go too far.
 
-![Naloxone](doc/dayz_tools/tree_mod_images/naloxone.png)
+![Naloxone](../doc/dayz_tools/tree_mod_images/naloxone.png)
 
 ### Optics
 
 - Binoculars can be equiped to slots
 
-![Optics](doc/dayz_tools/survivalists_mod_items/optics.png)
+![Optics](../doc/dayz_tools/survivalists_mod_items/optics.png)
 
 ### Radio
 
@@ -255,7 +253,7 @@ For those times when you go too far.
   - 5km Handheld Radio (Black)
   - 7.5km Military Radio (Green)
 
-![Radio](doc/dayz_tools/survivalists_mod_items/radio.png)
+![Radio](../doc/dayz_tools/survivalists_mod_items/radio.png)
 
 ### Tools
 
@@ -296,7 +294,7 @@ This mod adds a new emote category called **Custom** to the DayZ emote wheel. It
 - Sweat
 - Break Leg (breaks your leg)
 
-![Emote Wheel](doc/dayz_tools/tree_mod_images/emote-wheel.png)
+![Emote Wheel](../doc/dayz_tools/tree_mod_images/emote-wheel.png)
 
 ## Sleeping
 
@@ -308,7 +306,7 @@ Lying down now causes the screen to go dark as your eye close.
 
 Sleep is required by all humans, luckily you are stronger than most. Sleep 10 minutes for every 4 hours... the true uberman. If you do not sleep you will pass out.
 
-![Sleep Notifier](doc/dayz_tools/tree_mod_images/sleep-notifier.png)
+![Sleep Notifier](../doc/dayz_tools/tree_mod_images/sleep-notifier.png)
 
 ### BioHazard
 
@@ -351,11 +349,11 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 ### Furniture
 
-![Furniture](doc/dayz_tools/survivalists_mod_items/furniture.png)
+![Furniture](../doc/dayz_tools/survivalists_mod_items/furniture.png)
 
 ### Signs
 
-![Signs](doc/dayz_tools/survivalists_mod_items/signs.png)
+![Signs](../doc/dayz_tools/survivalists_mod_items/signs.png)
 
 ### Vehicles
 
@@ -363,175 +361,175 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 ## Ammunition
 
-![Ammunition](doc/dayz_tools/survivalists_mod_items/ammunition.png)
+![Ammunition](../doc/dayz_tools/survivalists_mod_items/ammunition.png)
 
 # Attributions
 
-DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.com/WCSarris/modular-vest-system. Given express consent for repacking and modifying.
+- DaddyPrapor - Original Creator of Modular Vest System (MVS) Mod. https://github.com/WCSarris/modular-vest-system. Given express consent for repacking and modifying.
 
-"potbelly stove" (https://skfb.ly/68UNF) by Yksnawel is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+- "potbelly stove" (https://skfb.ly/68UNF) by Yksnawel is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
-"Wooden plate" (https://skfb.ly/6RH9Q) by quedlin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Wooden plate" (https://skfb.ly/6RH9Q) by quedlin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Wooden plate" (https://skfb.ly/6WSWT) by 乾元恒 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Wooden plate" (https://skfb.ly/6WSWT) by 乾元恒 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Old Guitar Acoustic "Custom" Gibson Hummingbird" (https://skfb.ly/6XSyw) by Maxim Lukyanov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Old Guitar Acoustic "Custom" Gibson Hummingbird" (https://skfb.ly/6XSyw) by Maxim Lukyanov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Lamp Post w/ Handpainted Textures" (https://skfb.ly/CVJU) by Christian Lüdeking is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Lamp Post w/ Handpainted Textures" (https://skfb.ly/CVJU) by Christian Lüdeking is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Lamp post" (https://skfb.ly/6WMoU) by YouSaveTime is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Lamp post" (https://skfb.ly/6WMoU) by YouSaveTime is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"TeaScroll Clubhouse - Rug Prop" (https://skfb.ly/6D89H) by Anaïs Faure is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "TeaScroll Clubhouse - Rug Prop" (https://skfb.ly/6D89H) by Anaïs Faure is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Persian Rug" (https://skfb.ly/KWsy) by Nicholas Record is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Persian Rug" (https://skfb.ly/KWsy) by Nicholas Record is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"wooden box #5" (https://skfb.ly/6WTZ9) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "wooden box #5" (https://skfb.ly/6WTZ9) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Military wooden crate" (https://skfb.ly/6XNyB) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Military wooden crate" (https://skfb.ly/6XNyB) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Wooden barrel and box" (https://skfb.ly/6Z78B) by teinaaVa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Wooden barrel and box" (https://skfb.ly/6Z78B) by teinaaVa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Backpack(mid-poly and subdivision)" (https://skfb.ly/6UtR7) by andree is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Backpack(mid-poly and subdivision)" (https://skfb.ly/6UtR7) by andree is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Survival Backpack" (https://skfb.ly/6WBpu) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+- "Survival Backpack" (https://skfb.ly/6WBpu) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
 
-"Old small leather pouch" (https://skfb.ly/6XoEQ) by workwalker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Old small leather pouch" (https://skfb.ly/6XoEQ) by workwalker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"medieval bag" (https://skfb.ly/6RKAE) by Cyril43 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "medieval bag" (https://skfb.ly/6RKAE) by Cyril43 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Leather Pouch" (https://skfb.ly/6pJ6C) by FlukierJupiter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Leather Pouch" (https://skfb.ly/6pJ6C) by FlukierJupiter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Victorian Bedside Table" (https://skfb.ly/6WMSW) by Jamie McFarlane is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Victorian Bedside Table" (https://skfb.ly/6WMSW) by Jamie McFarlane is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Bedside Table" (https://skfb.ly/YYPR) by HASSAN is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Bedside Table" (https://skfb.ly/YYPR) by HASSAN is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Satchel" (https://skfb.ly/6DoRr) by BillieBones is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Satchel" (https://skfb.ly/6DoRr) by BillieBones is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Apocalypse: Geared Survivor [Female]" (https://skfb.ly/6RWoC) by CatBYTE Studio is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+- "Apocalypse: Geared Survivor [Female]" (https://skfb.ly/6RWoC) by CatBYTE Studio is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
-"Police Belt" (https://skfb.ly/6U7p7) by supervigy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Police Belt" (https://skfb.ly/6U7p7) by supervigy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Tactical Belt "Falcon B1"" (https://skfb.ly/6WEBS) by Mayess is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Tactical Belt "Falcon B1"" (https://skfb.ly/6WEBS) by Mayess is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Tinfoil Hat" (https://skfb.ly/6yMWN) by tamzidfarhan is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+- "Tinfoil Hat" (https://skfb.ly/6yMWN) by tamzidfarhan is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
 
-"Miners helmet with carbide lamp" (https://skfb.ly/6VoLK) by Shannen Art is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Miners helmet with carbide lamp" (https://skfb.ly/6VoLK) by Shannen Art is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"PPM-88 Gas mask" (https://skfb.ly/6SFoC) by J\_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "PPM-88 Gas mask" (https://skfb.ly/6SFoC) by J\_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Brewster Body Shield" (https://skfb.ly/6sBtH) by UC San Diego - Digital Media Lab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Brewster Body Shield" (https://skfb.ly/6sBtH) by UC San Diego - Digital Media Lab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Walkie-Talkie" (https://skfb.ly/o6pAQ) by ludwigbey is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Walkie-Talkie" (https://skfb.ly/o6pAQ) by ludwigbey is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Bed" (https://skfb.ly/6UyKU) by Tolu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Bed" (https://skfb.ly/6UyKU) by Tolu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Stretcher" (https://skfb.ly/ono7t) by Odlab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Stretcher" (https://skfb.ly/ono7t) by Odlab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Gourney - Hospital Bed" (https://skfb.ly/o6TPV) by meeww is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Gourney - Hospital Bed" (https://skfb.ly/o6TPV) by meeww is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Bed Curtain and Vital Signs Monitor" (https://skfb.ly/6SCRx) by Ethan Cragun is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Bed Curtain and Vital Signs Monitor" (https://skfb.ly/6SCRx) by Ethan Cragun is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Brain" (https://skfb.ly/6SnKS) by spliter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Brain" (https://skfb.ly/6SnKS) by spliter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Simple Candy Canes" (https://skfb.ly/6GNBO) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Simple Candy Canes" (https://skfb.ly/6GNBO) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Candy Treasure Chest" (https://skfb.ly/6S7Zu) by Jay Topham is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Candy Treasure Chest" (https://skfb.ly/6S7Zu) by Jay Topham is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Cans" (https://skfb.ly/6Xrvt) by tonygrinayde\_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Cans" (https://skfb.ly/6Xrvt) by tonygrinayde\_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Wine Objects" (https://skfb.ly/6SqRQ) by Paul is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Wine Objects" (https://skfb.ly/6SqRQ) by Paul is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"CoD Zombies Sodas" (https://skfb.ly/6VRIq) by albertjuli is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "CoD Zombies Sodas" (https://skfb.ly/6VRIq) by albertjuli is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Post Apocalyptic Mailbox" (https://skfb.ly/6WZL7) by Marcin Klosowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Post Apocalyptic Mailbox" (https://skfb.ly/6WZL7) by Marcin Klosowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Mailbox" (https://skfb.ly/6wPWT) by Ronald Hessens is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Mailbox" (https://skfb.ly/6wPWT) by Ronald Hessens is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Mailbox Homework" (https://skfb.ly/6RWZr) by Andy Shishkin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Mailbox Homework" (https://skfb.ly/6RWZr) by Andy Shishkin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Military case" (https://skfb.ly/6BNt8) by diaspora is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Military case" (https://skfb.ly/6BNt8) by diaspora is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Military Container Free" (https://skfb.ly/ooHST) by Epic_Hard_RU is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Military Container Free" (https://skfb.ly/ooHST) by Epic_Hard_RU is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Military Ammunition Case" (https://skfb.ly/VESS) by Yoni Van Gucht is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Military Ammunition Case" (https://skfb.ly/VESS) by Yoni Van Gucht is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Military Case" (https://skfb.ly/o6tuM) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Military Case" (https://skfb.ly/o6tuM) by KobieCaestecker is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Merchandiser Refrigerator" (https://skfb.ly/ono6B) by Sapwood Studio is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+- "Merchandiser Refrigerator" (https://skfb.ly/ono6B) by Sapwood Studio is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
 
-"Food shop showcase" (https://skfb.ly/6UHZU) by bretzel44 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Food shop showcase" (https://skfb.ly/6UHZU) by bretzel44 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Weapon Rack" (https://skfb.ly/6WYxB) by Big2XG is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Weapon Rack" (https://skfb.ly/6WYxB) by Big2XG is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Weapon Rack" (https://skfb.ly/6U7NX) by BlueHorizon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Weapon Rack" (https://skfb.ly/6U7NX) by BlueHorizon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Simple Wall Shelf" (https://skfb.ly/6COuP) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Simple Wall Shelf" (https://skfb.ly/6COuP) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Retro Fridge" (https://skfb.ly/6RWwu) by Zlat is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+- "Retro Fridge" (https://skfb.ly/6RWwu) by Zlat is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
-"Very Simplified Shelf" (https://skfb.ly/6CUz6) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Very Simplified Shelf" (https://skfb.ly/6CUz6) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Rusted metal shelf" (https://skfb.ly/6U7QS) by ELIZION is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Rusted metal shelf" (https://skfb.ly/6U7QS) by ELIZION is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Bullets" (https://skfb.ly/6AUrR) by MarcosBritoJR is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Bullets" (https://skfb.ly/6AUrR) by MarcosBritoJR is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"WIP/ Smoky Quartz crystal - crushed" (https://skfb.ly/6WQVX) by laboratorija is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+- "WIP/ Smoky Quartz crystal - crushed" (https://skfb.ly/6WQVX) by laboratorija is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-"Nails" (https://skfb.ly/6qOUp) by Alex Bes is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Nails" (https://skfb.ly/6qOUp) by Alex Bes is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"First try" (https://skfb.ly/6YGOP) by Annie Yoon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "First try" (https://skfb.ly/6YGOP) by Annie Yoon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Shelf" (https://skfb.ly/6WOFz) by Virtareal.Asia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Shelf" (https://skfb.ly/6WOFz) by Virtareal.Asia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Tall Wooden Medieval Shelf" (https://skfb.ly/6WSuJ) by Oliver Triplett is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Tall Wooden Medieval Shelf" (https://skfb.ly/6WSuJ) by Oliver Triplett is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Shelf" (https://skfb.ly/6BByU) by Bailey Lawler is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Shelf" (https://skfb.ly/6BByU) by Bailey Lawler is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Tetris Shelf" (https://skfb.ly/o6w8R) by BlackCube is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Tetris Shelf" (https://skfb.ly/o6w8R) by BlackCube is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Presents" (https://skfb.ly/6FEMv) by cranberrymk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Presents" (https://skfb.ly/6FEMv) by cranberrymk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Nail Shoulder Patch" (https://skfb.ly/6VK6Z) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+- "Nail Shoulder Patch" (https://skfb.ly/6VK6Z) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
 
-"Bullet Pack" (https://skfb.ly/6WMBY) by paoone28 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Bullet Pack" (https://skfb.ly/6WMBY) by paoone28 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Logs" (https://skfb.ly/P8SY) by TrolliZBS is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Logs" (https://skfb.ly/P8SY) by TrolliZBS is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Yankee 1545 Hand Drill" (https://skfb.ly/6RrOH) by lukasmaly is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Yankee 1545 Hand Drill" (https://skfb.ly/6RrOH) by lukasmaly is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"18th Century Hand Drill" (https://skfb.ly/6XSDt) by Rob.Caenen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "18th Century Hand Drill" (https://skfb.ly/6XSDt) by Rob.Caenen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Glue Pliers" (https://skfb.ly/6X97P) by JarnoVR is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Glue Pliers" (https://skfb.ly/6X97P) by JarnoVR is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"lathe" (https://skfb.ly/6XJP6) by Oleg is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "lathe" (https://skfb.ly/6XJP6) by Oleg is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Neon Letters" (https://skfb.ly/6wPxw) by danny_p3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Neon Letters" (https://skfb.ly/6wPxw) by danny_p3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Calipers" (https://skfb.ly/6uXOX) by T-FLEX CAD ST (Free) is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Calipers" (https://skfb.ly/6uXOX) by T-FLEX CAD ST (Free) is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Low-poly Ammonition set" (https://skfb.ly/op6DM) by NexysStormcloud is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Low-poly Ammonition set" (https://skfb.ly/op6DM) by NexysStormcloud is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Gravestones COLLECTION" (https://www.cgtrader.com/3d-model-collections/gravestones-collection-21bd4504-dbbc-4aff-aab6-a9a4835e36b8) by ArtLeaving is licensed under Royalty Free (https://www.cgtrader.com/pages/terms-and-conditions#royalty-free-license)
+- "Gravestones COLLECTION" (https://www.cgtrader.com/3d-model-collections/gravestones-collection-21bd4504-dbbc-4aff-aab6-a9a4835e36b8) by ArtLeaving is licensed under Royalty Free (https://www.cgtrader.com/pages/terms-and-conditions#royalty-free-license)
 
-"Dice" (https://skfb.ly/op6CD) by elextraza is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Dice" (https://skfb.ly/op6CD) by elextraza is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Free Palisade logs" (https://skfb.ly/o6AEP) by Joan LP is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Free Palisade logs" (https://skfb.ly/o6AEP) by Joan LP is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Toolbox" (https://skfb.ly/JIC8) by beyondmatter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Toolbox" (https://skfb.ly/JIC8) by beyondmatter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Old Russian house" (https://skfb.ly/6QVCC) by Yury Misiyuk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Old Russian house" (https://skfb.ly/6QVCC) by Yury Misiyuk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Old Russian house" (https://skfb.ly/6QSsZ) by Yury Misiyuk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Old Russian house" (https://skfb.ly/6QSsZ) by Yury Misiyuk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Wooden house" (https://skfb.ly/6TSPA) by PamPo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Wooden house" (https://skfb.ly/6TSPA) by PamPo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Rural Toilet" (https://skfb.ly/6QYJ9) by shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Rural Toilet" (https://skfb.ly/6QYJ9) by shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Farm Cow Barn" (https://skfb.ly/6pqJZ) by BytesCrafter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Farm Cow Barn" (https://skfb.ly/6pqJZ) by BytesCrafter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Low | Farm | Assembly | Dirty | House | Poor" (https://skfb.ly/o6qpC) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Low | Farm | Assembly | Dirty | House | Poor" (https://skfb.ly/o6qpC) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-"Glasses" (https://skfb.ly/6WMUM) by _SeF_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Glasses" (https://skfb.ly/6WMUM) by _SeF_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Abandoned Drugslab Indoor" (https://skfb.ly/6yzC8) by seenoise is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
