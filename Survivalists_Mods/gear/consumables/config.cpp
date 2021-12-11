@@ -433,6 +433,20 @@ class CfgVehicles
 		descriptionShort="Sheet Metal Scraps";
 		model="Survivalists_Mods\gear\consumables\craftingmaterials_sheetmetal.p3d";
   }
+  class SRP_CraftingMaterial_MetalScraps_Cut: SRP_CraftingMaterial_MetalScraps
+  {
+		scope=2;
+		displayName="Cut Sheet Metal Scraps";
+		descriptionShort="Cut Sheet Metal Scraps";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\craftingmaterials_metalcut_co.paa"
+    };
+  }
   class SRP_CraftingMaterial_MetalRod: SRP_CraftingMaterial_Metal
   {
 		scope=2;
