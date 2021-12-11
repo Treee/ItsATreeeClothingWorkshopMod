@@ -13,16 +13,16 @@
 
 
 
-.vscode/
-bin/
-Core/
-DZ/
-graphics/
-gui/
-Keys/
-languagecore/
-Mods/
-scripts/
-system/
+/.vscode/
+/bin/
+/Core/
+/DZ/
+/graphics/
+/gui/
+/Keys/
+/languagecore/
+/Mods/
+/scripts/
+/system/
 
 Survivalists_Recipes/
