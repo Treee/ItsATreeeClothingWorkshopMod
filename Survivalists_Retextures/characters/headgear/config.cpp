@@ -26,6 +26,7 @@ class CfgVehicles
 	class BallisticHelmet_ColorBase;
 	class Mich2001Helmet;
 	class BoonieHat_ColorBase;
+  class FlatCap_ColorBase;
 	class SRP_BeanieHat_Turkey;
 	class SRP_PoliceCap: BaseballCap_ColorBase
 	{
@@ -963,5 +964,116 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\booniehat58.paa",
 			"Survivalists_Retextures\characters\headgear\data\booniehat58.paa"
 		};
+	};
+
+
+	class SRP_BoonieHat_ERDL: BoonieHat_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_erdl_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_erdl_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_erdl_co.paa"
+		};
+	};
+	
+	class SRP_BoonieHat_Snow: BoonieHat_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_Snow_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_Snow_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_Snow_co.paa"
+		};
+	};
+	class SRP_BoonieHat_Multicam: BoonieHat_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_co.paa"
+		};
+	};
+	class SRP_BoonieHat_MulticamTropic: BoonieHat_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_Tropic_co.paa"
+		};
+	};
+	class SRP_BoonieHat_MulticamBlack: BoonieHat_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_Black_co.paa"
+		};
+	};	
+
+
+
+  class SRP_FlatCap_ERDL: FlatCap_ColorBase
+	{
+		scope = 2;
+		visibilityModifier = 0.85;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_erdl_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_erdl_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_erdl_co.paa"
+    };
+	};
+	class SRP_FlatCap_Snow: FlatCap_ColorBase
+	{
+		scope = 2;
+		visibilityModifier = 0.85;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_Snow_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_Snow_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_Snow_co.paa"
+    };
+	};
+	class SRP_FlatCap_Multicam: FlatCap_ColorBase
+	{
+		scope = 2;
+		visibilityModifier = 0.85;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_co.paa"
+    };
+	};
+	class SRP_FlatCap_Multicam_Tropic: FlatCap_ColorBase
+	{
+		scope = 2;
+		visibilityModifier = 0.85;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_Tropic_co.paa"
+    };
+	};
+	class SRP_FlatCap_Multicam_Black: FlatCap_ColorBase
+	{
+		scope = 2;
+		visibilityModifier = 0.85;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_Black_co.paa"
+    };
 	};
 };

@@ -24,6 +24,7 @@ class CfgVehicles
 	class NBCPantsBase;
 	class PolicePants;
 	class GorkaPants_ColorBase;
+
 	class SRPPolicePants: PolicePants
 	{
 		scope=2;
@@ -411,6 +412,26 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\cargopants57.paa"
 		};
 	};
+	class SRP_CargoPants_ERDL: CargoPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\srp_cargopants_BDU_co.paa",
+			"Survivalists_Retextures\characters\pants\data\srp_cargopants_BDU_co.paa",
+			"Survivalists_Retextures\characters\pants\data\srp_cargopants_BDU_co.paa"
+		};
+	};
+  class SRP_CargoPants_Snow: CargoPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\srp_cargopants_BDU_Snow_co.paa",
+			"Survivalists_Retextures\characters\pants\data\srp_cargopants_BDU_Snow_co.paa",
+			"Survivalists_Retextures\characters\pants\data\srp_cargopants_BDU_Snow_co.paa"
+		};
+	};
 	class SRP_PGopTactMTP: TrackSuitPants_ColorBase
 	{
 		scope=2;
@@ -509,6 +530,57 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\pant_gorka61.paa",
 			"Survivalists_Retextures\characters\pants\data\pant_gorka61.paa",
 			"Survivalists_Retextures\characters\pants\data\pant_gorka61.paa"
+		};
+	};
+
+	class SRP_GorkaPants_ERDL: GorkaPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_erdl_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_erdl_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_erdl_co.paa"
+		};
+	};
+	class SRP_GorkaPants_Snow: GorkaPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_Snow_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_Snow_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_Snow_co.paa"
+		};
+	};
+	class SRP_GorkaPants_Multicam: GorkaPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_co.paa"
+		};
+	};
+	class SRP_GorkaPants_MulticamTropic: GorkaPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_Tropic_co.paa"
+		};
+	};
+	class SRP_GorkaPants_MulticamBlack: GorkaPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_Black_co.paa"
 		};
 	};
 	class SRP_HunterPants_MTP: HunterPants_ColorBase
