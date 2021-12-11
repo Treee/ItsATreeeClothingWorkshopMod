@@ -424,7 +424,7 @@ class Deconstruct_RockPile extends RecipeBase
 	{
 		m_Name = "Dismantle";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 2;//animation length in relative time units
+		m_AnimationLength = 4;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -467,7 +467,7 @@ class Deconstruct_RockPile extends RecipeBase
 		
 		//result1
     AddResult("Stone");//add results here
-    
+
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
