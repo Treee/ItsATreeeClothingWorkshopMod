@@ -808,8 +808,6 @@ class CfgVehicles
 		allowOwnedCargoManipulation=1;
 	};
 
-
-
   class SRP_GunShelfWall_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -2412,5 +2410,112 @@ class CfgVehicles
 		};
 
   }
+
+  class SRP_StonePile_Small_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Stone Pile Kit - Small";
+		descriptionShort="A small stone pile Kit";
+	};
+
+  class SRP_StonePile_Small: Container_Base  // new
+	{
+		scope=2;
+		displayName="Stone Pile - Small";
+		descriptionShort="A small pile of stones.";
+		model="Survivalists_Mods\gear\containers\srp_rockstorage.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		attachments[]=
+		{
+			"Stones",
+			// "Material_FPole_Stones"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_StonePile_Large_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Stone Pile Kit - Large";
+		descriptionShort="A large stone pile Kit";
+	};
+
+  class SRP_StonePile_Large: Container_Base  // new
+	{
+		scope=2;
+		displayName="Stone Pile - Large";
+		descriptionShort="A large pile of stones.";
+		model="Survivalists_Mods\gear\containers\srp_rockstorage_large.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		attachments[]=
+		{			
+			"Material_FPole_Stones"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
   
 };

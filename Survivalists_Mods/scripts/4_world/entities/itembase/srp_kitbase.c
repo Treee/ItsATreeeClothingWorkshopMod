@@ -234,6 +234,9 @@ class SRP_Gravestone_18_Kit extends SRP_KitBase{};
 class SRP_Gravestone_19_Kit extends SRP_KitBase{};
 class SRP_Gravestone_19Open_Kit extends SRP_KitBase{};
 
+class SRP_StonePile_Small_Kit extends SRP_KitBase{};
+class SRP_StonePile_Large_Kit extends SRP_KitBase{};
+
 // This crafted item is not placeable
 class SRP_TetrisShelfKit_Kit extends ItemBase{};
 class SRP_BuildingComponentFrame_Kit extends ItemBase{};

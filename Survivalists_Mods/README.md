@@ -710,9 +710,17 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Katana" (https://skfb.ly/U866) by aneeqayounas is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Rocks and stones pack" (https://skfb.ly/6YIBA) by shtran is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 - "Armor Set" (https://skfb.ly/oqo8Q) by gimora is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+- "Elemental stones" (https://skfb.ly/6WsSI) by mandragorasprout is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Fences | Concretes | Metal | Desert | Old | Pack" (https://skfb.ly/o7CxG) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Low | Concretes | Fences | Pack" (https://skfb.ly/o7NvG) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Reference
 

@@ -11,6 +11,6 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit_BuildingFrame);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit_StreetSign);     
-
+    RegisterRecipe(new Deconstruct_RockPile);     
 	}
 };
