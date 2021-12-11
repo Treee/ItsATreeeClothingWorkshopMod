@@ -1736,9 +1736,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_erdl_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_erdl_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_erdl_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_erdl_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_erdl_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_erdl_co.paa"
 		};
 	};	
 	class SRP_GorkaJacket_Snow: GorkaEJacket_ColorBase
@@ -1746,9 +1746,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_Snow_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_Snow_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_Snow_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_Snow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_Snow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_Snow_co.paa"
 		};
 	};
 	class SRP_GorkaJacket_Multicam: GorkaEJacket_ColorBase
@@ -1756,29 +1756,29 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_co.paa"
 		};
 	};
-	class SRP_GorkaJacket_Multicam_Tropic: GorkaEJacket_ColorBase
+	class SRP_GorkaJacket_MulticamTropic: GorkaEJacket_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_Tropic_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_Tropic_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_Tropic_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_Tropic_co.paa"
 		};
 	};
-	class SRP_GorkaJacket_Multicam_Black: GorkaEJacket_ColorBase
+	class SRP_GorkaJacket_MulticamBlack: GorkaEJacket_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_Black_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_Black_co.paa",
-			"Survivalists_Retextures\characters\pants\data\SRP_GorkaJacket_MC_Black_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_GorkaJacket_MC_Black_co.paa"
 		};
 	};
 	class SRP_HuntingJacket_MTP: HuntingJacket_ColorBase
@@ -1941,63 +1941,70 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\PCU5J57.paa"
 		};
 	};
-  class SRP_TacticalShirt_BDU: TacticalShirt_ColorBase
+  class SRP_TacticalShirt_ERDL: TacticalShirt_ColorBase
 	{
 		scope = 2;
 		visibilityModifier = 0.6;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_erdl_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_erdl_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_erdl_co.paa"
 		};
 	};
-	
-	class SRP_TacticalShirt_BDU_Snow: TacticalShirt_ColorBase
+	class SRP_TacticalShirt_Snow: TacticalShirt_ColorBase
 	{
 		scope = 2;
 		visibilityModifier = 0.6;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_Snow_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_Snow_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_Snow_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_Snow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_Snow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_Snow_co.paa"
 		};
 	};
-	
-	class SRP_TacticalShirt_BDU_Multicam: TacticalShirt_ColorBase
+	class SRP_TacticalShirt_Multicam: TacticalShirt_ColorBase
 	{
 		scope = 2;
 		visibilityModifier = 0.6;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_co.paa"
 		};
 	};	
-	
-	class SRP_TacticalShirt_BDU_Multicam_Tropic: TacticalShirt_ColorBase
+	class SRP_TacticalShirt_MulticamTropic: TacticalShirt_ColorBase
 	{
 		scope = 2;
 		visibilityModifier = 0.6;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_Tropic_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_Tropic_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_Tropic_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_Tropic_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_Tropic_co.paa"
 		};
 	};
-	
-	class SRP_TacticalShirt_BDU_Multicam_Black: TacticalShirt_ColorBase
+	class SRP_TacticalShirt_MulticamBlack: TacticalShirt_ColorBase
 	{
 		scope = 2;
 		visibilityModifier = 0.6;
 		hiddenSelectionsTextures[] = 
 		{
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_Black_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_Black_co.paa",
-			"Survivalists_Retextures\characters\tops\data\SRP_jacket_BDU_MC_Black_co.paa"
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_Black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\SRP_jacket_MC_Black_co.paa"
+		};
+	};
+  class SRP_TacticalShirt_Flecktarn: TacticalShirt_ColorBase
+	{
+		scope = 2;
+		visibilityModifier = 0.6;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa",
+			"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa",
+			"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa"
 		};
 	};
 };

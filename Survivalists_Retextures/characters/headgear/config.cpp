@@ -966,7 +966,6 @@ class CfgVehicles
 		};
 	};
 
-
 	class SRP_BoonieHat_ERDL: BoonieHat_ColorBase
 	{
 		scope = 2;
@@ -977,7 +976,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_erdl_co.paa"
 		};
 	};
-	
 	class SRP_BoonieHat_Snow: BoonieHat_ColorBase
 	{
 		scope = 2;
@@ -1019,8 +1017,6 @@ class CfgVehicles
 		};
 	};	
 
-
-
   class SRP_FlatCap_ERDL: FlatCap_ColorBase
 	{
 		scope = 2;
@@ -1054,7 +1050,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_co.paa"
     };
 	};
-	class SRP_FlatCap_Multicam_Tropic: FlatCap_ColorBase
+	class SRP_FlatCap_MulticamTropic: FlatCap_ColorBase
 	{
 		scope = 2;
 		visibilityModifier = 0.85;
@@ -1065,7 +1061,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_Tropic_co.paa"
     };
 	};
-	class SRP_FlatCap_Multicam_Black: FlatCap_ColorBase
+	class SRP_FlatCap_MulticamBlack: FlatCap_ColorBase
 	{
 		scope = 2;
 		visibilityModifier = 0.85;
