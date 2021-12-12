@@ -2232,5 +2232,35 @@ class CfgVehicles
     };    
   };
 
+  class SRP_UtilityPouch_Tan : SRP_PouchBase_Large
+	{
+		scope=2;
+		displayName="Utility Pouch";
+		descriptionShort="A single pouch that holds a useful tool.";
+		model="Survivalists_Mods\characters\vests\srp_utility_pouch.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.paa"
+		};	
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
 
 };
