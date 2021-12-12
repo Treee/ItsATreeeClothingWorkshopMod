@@ -70,7 +70,7 @@ class CfgVehicles
 
   //--------------------------------- CUSTOM STUFF
 
-  class SRP_LeatherBackpack_Default: HuntingBag  // BP_Huntbackpack
+  class SRP_LeatherBackpack_Default: HuntingBag 
 	{
 		scope=2;
 		model="Survivalists_Mods\characters\backpacks\leatherbackpack_g.p3d";
@@ -128,7 +128,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_SurvivalBackpack_Default: HuntingBag  // new
+  class SRP_SurvivalBackpack_Default: HuntingBag 
 	{
 		scope=2;
 		model="Survivalists_Mods\characters\backpacks\survivalbackpack_g.p3d";
@@ -170,7 +170,7 @@ class CfgVehicles
 		};    
 	};
 
-  class SRP_SlingBackpack_Default: AliceBag_ColorBase  // new
+  class SRP_SlingBackpack_Default: AliceBag_ColorBase 
 	{
 		scope=2;
 		model="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_g.p3d";
@@ -211,7 +211,7 @@ class CfgVehicles
 			};
 		}; 
 	};
-  class SRP_SlingBackpack_Red: SRP_SlingBackpack_Default  // new
+  class SRP_SlingBackpack_Red: SRP_SlingBackpack_Default 
 	{
 		scope=2;
     hiddenSelections[]=
@@ -224,7 +224,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Small_Military_Pack_Tan: HuntingBag  // BP_Huntbackpack
+  class SRP_Small_Military_Pack_Tan: HuntingBag 
 	{
 		scope=2;
 		displayName="Small Military Pack";
@@ -234,7 +234,7 @@ class CfgVehicles
     rotationFlags=1;
 		attachments[]=
 		{
-
+      "LargePouch1","Belt_Left","SmallPouch1","SmallPouch2"
 		};
     hiddenSelections[]=
 		{
@@ -268,7 +268,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Small_Military_Pack_Black: SRP_Small_Military_Pack_Tan  // new
+  class SRP_Small_Military_Pack_Black: SRP_Small_Military_Pack_Tan 
 	{
 		scope=2;
     hiddenSelections[]=
@@ -280,7 +280,7 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_Black_CO.paa"
 		};
 	};
-  class SRP_Small_Military_Pack_Green: SRP_Small_Military_Pack_Tan  // new
+  class SRP_Small_Military_Pack_Green: SRP_Small_Military_Pack_Tan 
 	{
 		scope=2;
     hiddenSelections[]=
@@ -361,5 +361,73 @@ class CfgVehicles
 			"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_Black_CO.paa"
 		};
 	};
+
+  class SRP_Rifle_Bag_Green: HuntingBag 
+  {
+    scope=2;
+    displayName="Rifle bag";
+    descriptionShort="A large back used for carrying two rifles";
+    model="Survivalists_Mods\characters\backpacks\Rifle_Bag_g.p3d";
+    itemsCargoSize[]={5,8};
+    attachments[]=
+    {
+      "Shoulder","Melee","Pistol","SmallPouch1","SmallPouch2"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\backpacks\data\Rifle_Bag_Green_CO.paa"
+    };
+    class ClothingTypes
+    {
+      male="Survivalists_Mods\characters\backpacks\Rifle_Bag.p3d";
+      female="Survivalists_Mods\characters\backpacks\Rifle_Bag.p3d";
+    };
+    class DamageSystem
+    {
+      class GlobalHealth
+      {
+        class Health
+        {
+          hitpoints=160;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\characters\backpacks\data\Rifle_Bag.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\backpacks\data\Rifle_Bag.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\backpacks\data\Rifle_Bag_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\backpacks\data\Rifle_Bag_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\backpacks\data\Rifle_Bag_destruct.rvmat"}}
+          };
+        };
+      };
+    };
+  };
+  class SRP_Rifle_Bag_Tan: SRP_Rifle_Bag_Green
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\backpacks\data\Rifle_Bag_Tan_CO.paa"
+    };
+  };
+  class SRP_Rifle_Bag_Black: SRP_Rifle_Bag_Green
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\backpacks\data\Rifle_Bag_Black_CO.paa"
+    };
+  };
 
 };
