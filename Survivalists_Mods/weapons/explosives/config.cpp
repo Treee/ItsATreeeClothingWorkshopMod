@@ -59,7 +59,7 @@ class CfgVehicles
   class Inventory_Base;
   class Grenade_Base;
 
-  class SRP_Dynamite_Stick : Inventory_Base
+  class SRP_Dynamite_Stick : Grenade_Base
   {
 		scope=2;
 		displayName="Dynamite";
@@ -68,27 +68,32 @@ class CfgVehicles
 		weight=10;
     varTemperatureMax=100;
     itemSize[]={1,3};
-    varQuantityInit=10;
-		varQuantityMin=0;
-		varQuantityMax=10;
-    destroyOnEmpty=1;	
 		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
       "Survivalists_Mods\weapons\explosives\data\dynamite_stick_co.paa"
 		};
 		hiddenSelectionsMaterials[]= {
 			"Survivalists_Mods\weapons\explosives\data\dynamite_stick.rvmat"
-		};		
-    class EnergyManager
-		{
-			energyAtSpawn=10;
-			energyUsagePerSecond=1;
-			updateInterval=1;
-			convertEnergyToQuantity=1;
 		};
+    class NoiseSmokeGrenade
+		{
+			strength=50;
+			type="sound";
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class Unpin
+				{
+					soundSet="SmokegGrenades_RDG2_oneshot_ignite_SoundSet";
+					id=201;
+				};
+			};
+		};		
   };
 
-  class SRP_Dynamite_Stack : Inventory_Base
+  class SRP_Dynamite_Stack: Grenade_Base
   {
 		scope=2;
 		displayName="Dynamite Stack";
@@ -97,23 +102,28 @@ class CfgVehicles
 		weight=15;
     varTemperatureMax=100;
     itemSize[]={3,5};
-    varQuantityInit=10;
-		varQuantityMin=0;
-		varQuantityMax=10;
-    destroyOnEmpty=1;	
 		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
       "Survivalists_Mods\weapons\explosives\data\dynamite_stack_co.paa"
 		};
 		hiddenSelectionsMaterials[]= {
 			"Survivalists_Mods\weapons\explosives\data\dynamite_stack.rvmat"
-		};		
-    class EnergyManager
+		};
+    class NoiseSmokeGrenade
 		{
-			energyAtSpawn=10;
-			energyUsagePerSecond=1;
-			updateInterval=1;
-			convertEnergyToQuantity=1;
+			strength=50;
+			type="sound";
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class Unpin
+				{
+					soundSet="SmokegGrenades_RDG2_oneshot_ignite_SoundSet";
+					id=201;
+				};
+			};
 		};
   };
 
