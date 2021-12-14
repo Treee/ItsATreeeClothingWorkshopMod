@@ -320,6 +320,7 @@ class CfgVehicles
     displayName="Patrol Cap";
     descriptionShort="A tight fitting cap with room for a patch above the bill.";
     model="Survivalists_Mods\characters\headgear\srp_patrolcap_g.p3d";
+    rotationFlags=64;
     attachments[]=
 		{
       "SRP_Patch",
@@ -356,6 +357,54 @@ class CfgVehicles
             {0.5,	{	"Survivalists_Mods\characters\headgear\data\srp_patrolcap_damage.rvmat"}},
             {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\srp_patrolcap_damage.rvmat"}},
             {0.0,	{	"Survivalists_Mods\characters\headgear\data\srp_patrolcap_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class BaseballCap_Pakol: BaseballCap_ColorBase  // new
+	{
+		scope=2;
+		color="Pakol";
+    displayName="Pakol";
+		descriptionShort = "Pakol, popularly known as the Chitrali cap, is a soft round-topped men's hat, typically of wool and found in any of a variety of earthy colors.";
+    model="Survivalists_Mods\characters\headgear\srp_pakol_g.p3d";
+    attachments[]=
+		{
+      "SRP_Comtacs"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_pakol_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_pakol.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_pakol_m.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_pakol_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\srp_pakol.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\srp_pakol.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\srp_pakol_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\srp_pakol_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\srp_pakol_destruct.rvmat"}}
 					};
 				};
 			};
