@@ -16,7 +16,7 @@ class CfgVehicles
 {
   class Bear_ColorBase;
   class SmallProtectorCase;
-
+  
   class Bear_Blue: Bear_ColorBase
 	{
 		scope=2;

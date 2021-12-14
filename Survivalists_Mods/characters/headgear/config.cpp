@@ -312,6 +312,56 @@ class CfgVehicles
   }
 
   // -=============================== OLD MVS STUFF  
+
+  class BaseballCap_MilitaryPatrolTan: BaseballCap_ColorBase  // new
+	{
+		scope=2;
+		color="MilitaryPatrolTan";
+    displayName="Patrol Cap";
+    descriptionShort="A tight fitting cap with room for a patch above the bill.";
+    model="Survivalists_Mods\characters\headgear\srp_patrolcap_g.p3d";
+    attachments[]=
+		{
+      "SRP_Patch",
+      "SRP_Comtacs"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_patrolcap_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_patrolcap.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_patrolcap_m.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_patrolcap_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\srp_patrolcap.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\srp_patrolcap.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\srp_patrolcap_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\srp_patrolcap_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\srp_patrolcap_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
 	class SRP_FaceMaskSkull_ColorBase: BalaclavaMask_ColorBase
 	{
 		scope=0;
