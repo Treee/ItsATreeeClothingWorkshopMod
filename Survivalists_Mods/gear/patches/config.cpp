@@ -33,7 +33,8 @@ class CfgVehicles
       "patch_02",
       "patch_03",
       "patch_04",
-      "SRP_Patch"
+      "SRP_Patch",
+      "SRP_PatchMirror"
     };
 		hiddenSelections[]=
     {
@@ -108,7 +109,8 @@ class CfgVehicles
       "patch_02",
       "patch_03",
       "patch_04",
-      "SRP_Patch"
+      "SRP_Patch",
+      "SRP_PatchMirror"
     };
 		hiddenSelections[]=
     {

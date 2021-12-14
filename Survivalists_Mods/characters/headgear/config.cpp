@@ -411,6 +411,106 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_CombatHelmet: Mich2001Helmet
+  {
+    scope=2;
+    displayName="Combat Helmet";
+		descriptionShort="The MICH-style combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
+		model="Survivalists_Mods\characters\headgear\srp_combathelmet_g.p3d";
+    attachments[]=
+    {
+      "NVG",
+      "helmetFlashlight",
+      "SRP_Patch",
+      "SRP_PatchMirror",
+      "SRP_Comtacs"  
+    };
+		inventorySlot[]={"Headgear"};
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_combathelmet_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_combathelmet.rvmat"
+    };	
+		class ClothingTypes
+		{
+			male = "Survivalists_Mods\characters\headgear\srp_combathelmet_m.p3d";
+			female = "Survivalists_Mods\characters\headgear\srp_combathelmet_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 	
+					{					
+						{1.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet.rvmat"}},
+						{0.7,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet_damage.rvmat"}},
+						{0.3,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet_destruct.rvmat"}}
+					};
+				};
+			};
+		};		
+
+  };
+
+  class SRP_CombatHelmetV2: Mich2001Helmet
+  {
+    scope=2;
+    displayName="Combat Helmet - V2";
+		descriptionShort="The MICH-style combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
+		model="Survivalists_Mods\characters\headgear\srp_combathelmetv2_m.p3d";
+    attachments[]=
+    {
+      "NVG",
+      "helmetFlashlight",
+      "SRP_Patch",
+      "SRP_PatchMirror",
+      "SRP_Comtacs"  
+    };
+		inventorySlot[]={"Headgear"};
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_combathelmetv2.rvmat"
+    };	
+		class ClothingTypes
+		{
+			male = "Survivalists_Mods\characters\headgear\srp_combathelmetv2_m.p3d";
+			female = "Survivalists_Mods\characters\headgear\srp_combathelmetv2_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 	
+					{					
+						{1.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2.rvmat"}},
+						{0.7,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2_damage.rvmat"}},
+						{0.3,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2_destruct.rvmat"}}
+					};
+				};
+			};
+		};		
+
+  };
+
 	class SRP_FaceMaskSkull_ColorBase: BalaclavaMask_ColorBase
 	{
 		scope=0;
