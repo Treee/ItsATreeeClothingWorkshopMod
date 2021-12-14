@@ -35,6 +35,10 @@ class CfgVehicles
 	class PoliceJacketOrel;
 	class NBCJacketBase;
 	class GorkaEJacket_ColorBase;
+
+  // modded classes
+  class DUB_Monkrobe;
+
 	class SRPPoliceJacket: PoliceJacket
 	{
 		scope=2;
@@ -2007,4 +2011,19 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa"
 		};
 	};
+
+  // class DUB_Monkrobe_Blue: DUB_Monkrobe
+  // {
+  //   scope=2;
+  //   hiddenSelections[]=
+  //   {
+
+  //   };
+	// 	hiddenSelectionsTextures[] = 
+	// 	{
+	// 		"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa",
+	// 		"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa",
+	// 		"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa"
+	// 	};
+  // };
 };

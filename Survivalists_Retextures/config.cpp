@@ -16,6 +16,7 @@ class CfgPatches
 			"Kneepads_Jeans",
 			"Windstrideclothing",
 			"Munghardsponcho",
+      "Dressupbox",
 			"Survivalists_Mods"
 		};
 	};
