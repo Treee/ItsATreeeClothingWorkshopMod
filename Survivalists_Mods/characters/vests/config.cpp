@@ -2262,5 +2262,36 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_HeavyPouch_Tan : SRP_PouchBase_Large
+	{
+		scope=2;
+		displayName="Heavy Pouch";
+		descriptionShort="A single pouch that holds a large amount of things.";
+		model="Survivalists_Mods\characters\vests\srp_heavy_pouch.p3d";
+    itemSize[]={5,4};
+    itemsCargoSize[]={5,4};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 
 };
