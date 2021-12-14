@@ -252,6 +252,8 @@ class SRP_Empty_MagPouch_Tan extends SRP_PouchBase_Large
 
 class SRP_UtilityPouch_Tan extends SRP_PouchBase_Large{};
 class SRP_HeavyPouch_Tan extends SRP_PouchBase_Large{};
+class SRP_MediumPouch_Tan extends SRP_PouchBase_Large{};
+class SRP_TacoPouch_Tan extends SRP_PouchBase_Large{};
 
 
 class SRP_Small_Bottle_Tan extends Bottle_Base {};
