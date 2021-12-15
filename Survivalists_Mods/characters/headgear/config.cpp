@@ -460,13 +460,13 @@ class CfgVehicles
 		};		
 
   };
-
+  
   class SRP_CombatHelmetV2: Mich2001Helmet
   {
     scope=2;
     displayName="Combat Helmet - V2";
 		descriptionShort="The MICH-style combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
-		model="Survivalists_Mods\characters\headgear\srp_combathelmetv2_m.p3d";
+		model="Survivalists_Mods\characters\headgear\srp_combathelmetv2_g.p3d";
     attachments[]=
     {
       "NVG",
