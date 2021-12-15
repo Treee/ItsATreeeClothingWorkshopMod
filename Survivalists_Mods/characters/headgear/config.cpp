@@ -605,6 +605,55 @@ class CfgVehicles
 		};		
 
   };
+  class SRP_CombatHelmetAltyn: Mich2001Helmet
+  {
+    scope=2;
+    displayName="Combat Helmet - Altyn";
+		descriptionShort = "The Altyn helmet offers some of the best ballistic protection.";
+		model="Survivalists_Mods\characters\headgear\srp_combathelmetaltyn_m.p3d";
+    attachments[]=
+    {
+      "NVG",
+      "helmetFlashlight",
+      "SRP_Patch",
+      "SRP_PatchMirror",
+      "SRP_Comtacs"  
+    };
+		inventorySlot[]={"Headgear"};
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn.rvmat"
+    };	
+		class ClothingTypes
+		{
+			male = "Survivalists_Mods\characters\headgear\srp_combathelmetaltyn_m.p3d";
+			female = "Survivalists_Mods\characters\headgear\srp_combathelmetaltyn_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 	
+					{					
+						{1.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn.rvmat"}},
+						{0.7,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn_damage.rvmat"}},
+						{0.3,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn_destruct.rvmat"}}
+					};
+				};
+			};
+		};		
+
+  };
 
 	class SRP_FaceMaskSkull_ColorBase: BalaclavaMask_ColorBase
 	{
