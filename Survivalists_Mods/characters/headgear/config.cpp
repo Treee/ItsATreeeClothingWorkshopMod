@@ -460,7 +460,6 @@ class CfgVehicles
 		};		
 
   };
-
   class SRP_CombatHelmetV2: Mich2001Helmet
   {
     scope=2;
@@ -509,7 +508,6 @@ class CfgVehicles
 			};
 		};
   };
-
   class SRP_CombatHelmet6B47: Mich2001Helmet
   {
     scope=2;
@@ -553,6 +551,54 @@ class CfgVehicles
 						{0.5,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47_damage.rvmat"}},
 						{0.3,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47_damage.rvmat"}},
 						{0.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47_destruct.rvmat"}}
+					};
+				};
+			};
+		};		
+  };
+  class SRP_CombatHelmetHighCut: Mich2001Helmet
+  {
+    scope=2;
+    displayName="Combat Helmet - High Cut";
+		descriptionShort = "The High Cut style combat helmet offers good ballistic protection, and comes prepped for comtac hearing protection.";
+		model="Survivalists_Mods\characters\headgear\srp_combathelmethighcut_g.p3d";
+    attachments[]=
+    {
+      "NVG",
+      "helmetFlashlight",
+      "SRP_Patch",
+      "SRP_PatchMirror",
+      "SRP_Comtacs"  
+    };
+		inventorySlot[]={"Headgear"};
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_combathelmethighcut_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_combathelmethighcut.rvmat"
+    };	
+		class ClothingTypes
+		{
+			male = "Survivalists_Mods\characters\headgear\srp_combathelmethighcut_m.p3d";
+			female = "Survivalists_Mods\characters\headgear\srp_combathelmethighcut_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 	
+					{					
+						{1.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmethighcut.rvmat"}},
+						{0.7,{"Survivalists_Mods\characters\headgear\data\srp_combathelmethighcut.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\headgear\data\srp_combathelmethighcut_damage.rvmat"}},
+						{0.3,{"Survivalists_Mods\characters\headgear\data\srp_combathelmethighcut_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmethighcut_destruct.rvmat"}}
 					};
 				};
 			};
