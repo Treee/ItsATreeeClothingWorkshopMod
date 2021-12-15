@@ -460,7 +460,7 @@ class CfgVehicles
 		};		
 
   };
-  
+
   class SRP_CombatHelmetV2: Mich2001Helmet
   {
     scope=2;
@@ -504,6 +504,55 @@ class CfgVehicles
 						{0.5,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2_damage.rvmat"}},
 						{0.3,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2_damage.rvmat"}},
 						{0.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetv2_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_CombatHelmet6B47: Mich2001Helmet
+  {
+    scope=2;
+    displayName="Combat Helmet - 6B47";
+		descriptionShort = "The Russian-designed 6B47 helmet is a part of Ratnik combat gear.";
+		model="Survivalists_Mods\characters\headgear\srp_combathelmet6b47_g.p3d";
+    attachments[]=
+    {
+      "NVG",
+      "helmetFlashlight",
+      "SRP_Patch",
+      "SRP_PatchMirror",
+      "SRP_Comtacs"  
+    };
+		inventorySlot[]={"Headgear"};
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47.rvmat"
+    };	
+		class ClothingTypes
+		{
+			male = "Survivalists_Mods\characters\headgear\srp_combathelmet6b47_m.p3d";
+			female = "Survivalists_Mods\characters\headgear\srp_combathelmet6b47_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 	
+					{					
+						{1.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47.rvmat"}},
+						{0.7,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47_damage.rvmat"}},
+						{0.3,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmet6b47_destruct.rvmat"}}
 					};
 				};
 			};
