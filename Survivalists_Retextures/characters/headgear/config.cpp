@@ -28,6 +28,12 @@ class CfgVehicles
 	class BoonieHat_ColorBase;
   class FlatCap_ColorBase;
 	class SRP_BeanieHat_Turkey;
+  class SRP_FaceMaskSkull_ColorBase;
+  class SRP_FaceMask_ColorBase;
+  class SRP_MouthCover_ColorBase;
+  class SRP_Shroud_ColorBase;
+  class SRP_Comtacs_ColorBase;
+
 	class SRP_PoliceCap: BaseballCap_ColorBase
 	{
 		scope=2;
@@ -1072,4 +1078,254 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\SRP_FlatCap_MC_Black_co.paa"
     };
 	};
+
+  class SRP_FaceMaskSkull_Wraith: SRP_FaceMaskSkull_ColorBase
+	{
+		scope=2;
+		displayName="Wraith Mask";
+    color="wraith";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Wraith.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
+  class SRP_FaceMaskSkull_Black: SRP_FaceMaskSkull_ColorBase
+	{
+		scope=2;
+		displayName="Black Face Mask";
+    color="black";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Black.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
+  class SRP_FaceMaskSkull_Snow: SRP_FaceMaskSkull_ColorBase
+	{
+		scope=2;
+		displayName="Snow Face Mask";
+    color="snow";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Snow.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
+  class SRP_FaceMaskSkull_OD: SRP_FaceMaskSkull_ColorBase
+	{
+		scope=2;
+		displayName="OD Face Mask";
+    color="od";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
+  class SRP_FaceMaskSkull_Tan: SRP_FaceMaskSkull_ColorBase
+	{
+		scope=2;
+		displayName="Tan Face Mask";
+    color="tan";
+    hiddenSelections[]=
+    {
+      "zbytek", 
+      "mask"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Tan.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
+		};
+	};
+
+	class SRP_FaceMask_OD: SRP_FaceMask_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - OD";
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co.paa",
+		};
+	};
+	class SRP_FaceMask_Tan: SRP_FaceMask_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - Tan";
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Tan.paa",
+		};
+	};
+	class SRP_FaceMask_Black: SRP_FaceMask_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Black.paa",
+		};
+	};
+	class SRP_FaceMask_Snow: SRP_FaceMask_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - Snow";
+    color="snow";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Snow.paa",
+		};
+	};
+  class SRP_FaceMask_Wraith: SRP_FaceMask_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - Wraith";
+    color="wraith";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Wraith.paa",
+		};
+	};
+
+  class SRP_MouthCover_OD: SRP_MouthCover_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - OD";
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co.paa",
+		};
+	};
+	class SRP_MouthCover_Tan: SRP_MouthCover_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - Tan";
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Tan.paa",
+		};
+	};
+	class SRP_MouthCover_Black: SRP_MouthCover_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Black.paa",
+		};
+	};
+	class SRP_MouthCover_Snow: SRP_MouthCover_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - Snow";
+    color="snow";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Snow.paa",
+		};
+	};
+  class SRP_MouthCover_Wraith: SRP_MouthCover_ColorBase
+	{
+		scope=2;
+		displayName="Face Mask - Wraith";
+    color="wraith";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Wraith.paa",
+		};
+	};
+
+	class SRP_Shroud_OD: SRP_Shroud_ColorBase
+	{
+		scope=2;
+		displayName="Head Shroud - OD";
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_shroud_co.paa"
+		};
+	};
+	class SRP_Shroud_Tan: SRP_Shroud_ColorBase
+	{
+		scope=2;
+		displayName="Head Shroud - Tan";
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_shroud_co_Tan.paa"
+		};
+	};
+	class SRP_Shroud_Black: SRP_Shroud_ColorBase
+	{
+		scope=2;
+		displayName="Head Shroud - Black";
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_shroud_co_Black.paa"
+		};
+	};
+
+  class SRP_Comtacs_OD: SRP_Comtacs_ColorBase
+	{
+		scope=2;
+		displayName="Comtacs - OD";
+		visibilityModifier=0.94999999;
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co.paa"
+		};
+	};
+	class SRP_Comtacs_Tan: SRP_Comtacs_ColorBase
+	{
+		scope=2;
+		displayName="Comtacs - Tan";
+		visibilityModifier=0.94999999;
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Tan.paa"
+		};
+	};
+	class SRP_Comtacs_Black: SRP_Comtacs_ColorBase
+	{
+		scope=2;
+		displayName="Comtacs - Black";
+		visibilityModifier=0.94999999;
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Black.paa"
+		};
+	};
+
+
 };
