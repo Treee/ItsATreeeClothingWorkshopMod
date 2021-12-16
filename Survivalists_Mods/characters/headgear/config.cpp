@@ -7,6 +7,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
+      "DZ_Data",
 			"DZ_Characters",
       "DZ_Characters_Headgear",
       "DZ_Characters_Masks",
@@ -16,8 +17,9 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class Switchable_Base;
+  class Inventory_Base;
   class Clothing;
+  class Switchable_Base;
   class BalaclavaMask_ColorBase;
 
   //-------------------------------------- BASE GAME OVERRIDE
@@ -610,14 +612,15 @@ class CfgVehicles
     scope=2;
     displayName="Combat Helmet - Altyn";
 		descriptionShort = "The Altyn helmet offers some of the best ballistic protection.";
-		model="Survivalists_Mods\characters\headgear\srp_combathelmetaltyn_m.p3d";
+		model="Survivalists_Mods\characters\headgear\srp_combathelmetaltyn_g.p3d";
     attachments[]=
     {
       "NVG",
       "helmetFlashlight",
       "SRP_Patch",
       "SRP_PatchMirror",
-      "SRP_Comtacs"  
+      "SRP_Comtacs",
+      "SRP_AltynVisor"
     };
 		inventorySlot[]={"Headgear"};
 		hiddenSelections[] = {"zbytek"};
@@ -652,8 +655,39 @@ class CfgVehicles
 				};
 			};
 		};		
-
   };
+  class SRP_AltynHelmetVisor: Inventory_Base
+	{
+		scope=2;
+		displayName="Altyn Helmet Visor";
+		descriptionShort="A visor that attaches to the Atyln helmet to offore more protection.";
+		model="Survivalists_Mods\characters\headgear\srp_altynhelmetvisor.p3d";
+		weight=350;
+		itemSize[]={3,2};
+		inventorySlot[]=
+		{
+			"Glass",
+      "SRP_AltynVisor"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 	
+					{					
+						{1.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn.rvmat"}},
+						{0.7,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn_damage.rvmat"}},
+						{0.3,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn_destruct.rvmat"}}
+					};
+				};
+			};
+    };
+	};
 
 	class SRP_FaceMaskSkull_ColorBase: BalaclavaMask_ColorBase
 	{
