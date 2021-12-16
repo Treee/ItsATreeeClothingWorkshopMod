@@ -1274,6 +1274,70 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\kurganjacket.paa"
 		};
 	};
+  class SRP_QuiltedJacket_Blarg: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_blarg_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_blarg_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_blarg_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_BlueStripe: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_bluestripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_bluestripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_bluestripe_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_PinkPaw: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_pinkpaw_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_pinkpaw_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_pinkpaw_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_SnowFancy: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowfancy_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowfancy_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowfancy_co.paa"
+		};
+	};
 	class SRP_Sweater_SantaRL: Sweater_ColorBase
 	{
 		scope=2;
@@ -1865,6 +1929,56 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\Hunting_j57.paa"
 		};
 	};
+  class SRP_HuntingJacket_Gold: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_gold_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_gold_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_gold_co.paa"
+		};
+	};
+  class SRP_HuntingJacket_Grape: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_grape_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_grape_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_grape_co.paa"
+		};
+	};
+  class SRP_HuntingJacket_Navy: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_navy_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_navy_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_navy_co.paa"
+		};
+	};
+  class SRP_HuntingJacket_Red: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_red_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_red_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_red_co.paa"
+		};
+	};
+  class SRP_HuntingJacket_Pink: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_pink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_pink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_pink_co.paa"
+		};
+	};
 	class SRP_TacticalShirt_MTP: TacticalShirt_ColorBase
 	{
 		scope=2;
@@ -2011,19 +2125,186 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa"
 		};
 	};
-
-  // class DUB_Monkrobe_Blue: DUB_Monkrobe
-  // {
-  //   scope=2;
-  //   hiddenSelections[]=
-  //   {
-
-  //   };
-	// 	hiddenSelectionsTextures[] = 
-	// 	{
-	// 		"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa",
-	// 		"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa",
-	// 		"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa"
-	// 	};
-  // };
+  class DUB_Monkrobe_blue: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_blue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_blue_co.paa",
+		};
+  };
+  class DUB_Monkrobe_burg: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_burg_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_burg_co.paa",
+		};
+  };
+  class DUB_Monkrobe_coal: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_coal_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_coal_co.paa",
+		};
+  };
+  class DUB_Monkrobe_forest: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_forest_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_forest_co.paa",
+		};
+  };
+  class DUB_Monkrobe_lav: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_lav_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_lav_co.paa",
+		};
+  };
+  class DUB_Monkrobe_olive: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_olive_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_olive_co.paa",
+		};
+  };
+  class DUB_Monkrobe_pink: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_pink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_pink_co.paa",
+		};
+  };
+  class DUB_Monkrobe_purp: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_purp_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_purp_co.paa",
+		};
+  };
+  class DUB_Monkrobe_red: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_red_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_red_co.paa",
+		};
+  };
+  class DUB_Monkrobe_salmon: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_salmon_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_salmon_co.paa",
+		};
+  };
+  class DUB_Monkrobe_snow: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_snow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_snow_co.paa",
+		};
+  };
+  class DUB_Monkrobe_teal: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_teal_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_teal_co.paa",
+		};
+  };
+  class DUB_Monkrobe_toast: DUB_Monkrobe
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "robe",
+      "rope"
+    };
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\monkrobe_toast_co.paa",
+			"Survivalists_Retextures\characters\tops\data\monkrope_toast_co.paa",
+		};
+  };
 };
