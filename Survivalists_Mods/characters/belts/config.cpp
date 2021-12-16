@@ -78,9 +78,17 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\belts\policebelt_g.p3d";
     attachments[]=
 		{
-			"Pistol"
+			"VestHolster",
+      "Belt_Left",
+      "Belt_Back",
+      "WalkieTalkie",
+      "Chemlight",
+      "SmallPouch1",
+      "SmallPouch2",
+      "LargePouch1",
+      "LargePouch2"
 		};
-    itemsCargoSize[]={5,4};
+    itemsCargoSize[]={3,1};
     hiddenSelections[]=
     {
       "zbytek"
@@ -126,9 +134,17 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\belts\tacticalbelt_g.p3d";
     attachments[]=
 		{
-			"Pistol"
+			"VestHolster",
+      "Belt_Left",
+      "Belt_Back",
+      "WalkieTalkie",
+      "Chemlight",
+      "SmallPouch1",
+      "SmallPouch2",
+      "LargePouch1",
+      "LargePouch2"
 		};
-    itemsCargoSize[]={5,4};
+    itemsCargoSize[]={3,1};
     hiddenSelections[]=
     {
       "zbytek"

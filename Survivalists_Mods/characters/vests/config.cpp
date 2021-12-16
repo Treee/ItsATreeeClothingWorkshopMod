@@ -2238,6 +2238,7 @@ class CfgVehicles
 		displayName="Utility Pouch";
 		descriptionShort="A single pouch that holds a useful tool.";
 		model="Survivalists_Mods\characters\vests\srp_utility_pouch.p3d";
+    itemsCargoSize[]={3,3};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.paa"
