@@ -66,6 +66,71 @@ class CfgVehicles
 		};
 	};
 
+  class Bear_Arbi: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Arbi_co.paa"
+		};
+	};
+  class Bear_FrenchBread: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_FrenchBread_co.paa"
+		};
+	};
+  class Bear_FryingPan: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_fryingpan_co.paa"
+		};
+	};
+  class Bear_Gloomy: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_gloomy_co.paa"
+		};
+	};
+  class Bear_Hat: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_hat_co.paa"
+		};
+	};
+  class Bear_SaltyCougar: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_SaltyCougar_co.paa"
+		};
+	};
+  class Bear_Voodoo: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_voodoo_co.paa"
+		};
+	};
+  class Bear_Zombie: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Zombie_co.paa"
+		};
+	};
+
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {
 		scope=2;
