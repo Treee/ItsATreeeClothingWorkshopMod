@@ -1120,20 +1120,4 @@ class CfgVehicles
 			};
 		};
   };
-
-  class SRP_SlimHelmetFull_Kain: SRP_SlimHelmetFull
-  {
-    scope=2;
-    displayName="Full Helmet";
-    descriptionShort="A slim helmet that coveres the whole head";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\headgear\data\srp_slimhelmet_kain_co.paa"
-		};
-  };
-
 };
