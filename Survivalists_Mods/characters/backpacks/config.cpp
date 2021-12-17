@@ -35,14 +35,12 @@ class CfgVehicles
 		weight=75;
 		allowOwnedCargoManipulation=1;
 	};
-
   class HuntingBag: Clothing
 	{
 		itemsCargoSize[]={10,7};
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
   };
-
   class AssaultBag_ColorBase: Clothing
 	{
     repairableWithKits[]={5,3,2};
