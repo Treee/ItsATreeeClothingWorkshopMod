@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "Survivalists_Mods\characters\vests\data\srp_pouchvest_heavy_nohq.paa";
+	texture = "Survivalists_Mods\characters\vests\data\srp_pouchesvest_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

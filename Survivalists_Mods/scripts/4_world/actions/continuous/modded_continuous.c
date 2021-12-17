@@ -79,7 +79,7 @@ modded class ActionUncoverHeadBase
 				burlapSack = source.GetHumanInventory().CreateInInventory(burlapSackClassName);
 				if ( burlapSack == null )
         {
-					burlapSack = GetGame().CreateObjectEx( burlapSackClassName, source.GetPosition(), ECE_PLACE_ON_SURFACE, RF_ORIGINAL );
+					burlapSack = EntityAI.Cast(GetGame().CreateObjectEx( burlapSackClassName, source.GetPosition(), ECE_PLACE_ON_SURFACE, RF_ORIGINAL ));
         }
 			}
       if (burlapSack)

@@ -32,7 +32,7 @@ class CfgVehicles
   class BurlapSack_Skull: BurlapSack
   {
     scope=2;
-    color="skull"
+    color="skull";
     hiddenSelections[]=
     {
       "zbytek"

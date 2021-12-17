@@ -361,7 +361,7 @@ class CfgVehicles
       "Chemlight",
       "WalkieTalkie", 
       "SmallPouch1", 
-      "SmallPouch2"
+      "SmallPouch2",
       "LargePouch1",
 		};
     hiddenSelections[]=
@@ -370,12 +370,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_Tan_CO.paa"
+			"Survivalists_Mods\characters\backpacks\data\srp_combatassaultbag_co.paa"
 		};
 		class ClothingTypes
 		{
-			male="Survivalists_Mods\characters\backpacks\Small_Military_Pack.p3d";
-			female="Survivalists_Mods\characters\backpacks\Small_Military_Pack.p3d";
+			male="Survivalists_Mods\characters\backpacks\srp_combatassaultbag_m.p3d";
+			female="Survivalists_Mods\characters\backpacks\srp_combatassaultbag_m.p3d";
 		};
     class DamageSystem
 		{
@@ -386,11 +386,11 @@ class CfgVehicles
 					hitpoints=160;
 					healthLevels[]=
 					{
-						{1.0,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack.rvmat"}},
-            {0.7,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack.rvmat"}},
-            {0.5,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_damage.rvmat"}},
-            {0.3,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_damage.rvmat"}},
-            {0.0,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_destruct.rvmat"}}
+						{1.0,{"Survivalists_Mods\characters\backpacks\data\srp_combatassaultbag_.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\backpacks\data\srp_combatassaultbag_.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\backpacks\data\srp_combatassaultbag__damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\backpacks\data\srp_combatassaultbag__damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\backpacks\data\srp_combatassaultbag__destruct.rvmat"}}
 					};
 				};
 			};
