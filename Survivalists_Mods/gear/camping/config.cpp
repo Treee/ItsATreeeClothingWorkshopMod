@@ -1250,9 +1250,9 @@ class CfgVehicles
 		rotationFlags=2;
 		attachments[]=
 		{
+			"Shoulder",
 			"Melee",
 			"Back",
-			"Shoulder"
 		};
     hiddenSelections[]=
 		{
@@ -1285,6 +1285,33 @@ class CfgVehicles
 				icon="set:dayz_inventory image:shoulderleft";
 			};
 		};
+    class AnimationSources
+		{
+      class slot_shoulder_rifle
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=0.0099999998;
+			};
+			class slot_shoulder_melee
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.0099999998;
+			};
+			class slot_melee_rifle
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.0099999998;
+			};
+			class slot_melee_melee
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=0.0099999998;
+			};
+		};
 	};
 
   class SRP_CarpetRug_Kit: SRP_KitBase  // new
@@ -1307,9 +1334,9 @@ class CfgVehicles
 		rotationFlags=2;
 		attachments[]=
 		{
+			"Shoulder",
 			"Melee",
 			"Back",
-			"Shoulder"
 		};
     hiddenSelections[]=
 		{
@@ -1340,6 +1367,33 @@ class CfgVehicles
 					"Shoulder"
 				};
 				icon="set:dayz_inventory image:shoulderleft";
+			};
+		};
+    class AnimationSources
+		{
+      class slot_shoulder_rifle
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=0.0099999998;
+			};
+			class slot_shoulder_melee
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.0099999998;
+			};
+			class slot_melee_rifle
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.0099999998;
+			};
+			class slot_melee_melee
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=0.0099999998;
 			};
 		};
 	};

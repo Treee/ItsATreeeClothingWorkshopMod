@@ -12,6 +12,40 @@ class SRP_DeployableContainer_Base extends DeployableContainer_Base
   {
     return GetInventory().AttachmentCount() == 0 && GetNumberOfItems() == 0;
   }
+
+  // Helper Function for shoulder/melee slot swap
+	void UpdateShoulderProxyVisibility(EntityAI item, string slot_name)
+	{
+		string slot = slot_name;
+		bool boo;
+		boo = item.IsWeapon();
+		if ( slot == "Melee" )
+		{
+      if (boo)
+      {
+        SetAnimationPhase("slot_melee_melee",1);
+        SetAnimationPhase("slot_melee_rifle",0);		
+      }
+      else
+      {
+        SetAnimationPhase("slot_melee_melee",0);
+        SetAnimationPhase("slot_melee_rifle",1);		
+      }
+    }
+		else if ( slot == "Shoulder" )
+		{
+      if (boo)
+      {
+        SetAnimationPhase("slot_shoulder_melee",1);
+        SetAnimationPhase("slot_shoulder_rifle",0);	
+      }
+      else 
+      {
+        SetAnimationPhase("slot_shoulder_melee",0);
+        SetAnimationPhase("slot_shoulder_rifle",1);	
+      }
+		}
+	}
 };
 
 class SRP_DeskNamePlate extends SRP_DeployableContainer_Base{};
@@ -21,11 +55,27 @@ class SRP_MedicalBed_Frame extends SRP_DeployableContainer_Base{};
 class SRP_MedicalBed_Mattress extends SRP_DeployableContainer_Base{};
 class SRP_MedicalBed_Wood extends SRP_DeployableContainer_Base{};
 class SRP_BloodPressureMonitor extends SRP_DeployableContainer_Base{};
-class SRP_Carpet extends SRP_DeployableContainer_Base{};
-class SRP_CarpetRug extends SRP_DeployableContainer_Base{};
 class SRP_LatheWorkbench extends SRP_DeployableContainer_Base{};
 class SRP_WornWorkbench extends SRP_DeployableContainer_Base{};
 class SRP_WornWorkbench_Metal extends SRP_DeployableContainer_Base{};
+
+class SRP_Carpet extends SRP_DeployableContainer_Base
+{
+  override void EEItemAttached(EntityAI item, string slot_name)
+  {
+    super.EEItemAttached(item, slot_name);
+    UpdateShoulderProxyVisibility(item, slot_name);
+  }
+};
+
+class SRP_CarpetRug extends SRP_DeployableContainer_Base
+{
+  override void EEItemAttached(EntityAI item, string slot_name)
+  {
+    super.EEItemAttached(item, slot_name);
+    UpdateShoulderProxyVisibility(item, slot_name);
+  }
+};
 
 class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
 {
@@ -174,6 +224,27 @@ class SRP_Container_Base extends DeployableContainer_Base
   {
     return false;
   }
+
+  void UpdateShoulderProxyVisibility(EntityAI item, string slot_name)
+	{
+		const int 						SIMPLE_SELECTION_MELEE_RIFLE = 0;
+		const int 						SIMPLE_SELECTION_MELEE_MELEE = 1;
+		const int 						SIMPLE_SELECTION_SHOULDER_RIFLE = 2;
+		const int 						SIMPLE_SELECTION_SHOULDER_MELEE = 3;
+		string slot = slot_name;
+		bool boo;
+		boo = item.IsWeapon();
+		if ( slot == "Melee" )
+		{
+			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_MELEE_RIFLE,boo);
+			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_MELEE_MELEE,!boo);
+		}
+		else if ( slot == "Shoulder" )
+		{
+			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_SHOULDER_RIFLE,boo);
+			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_SHOULDER_MELEE,!boo);
+		}
+	}
 }
 class SRP_SewingTable extends SRP_Container_Base
 {
@@ -339,26 +410,6 @@ class SRP_ArmorStandBasic extends SRP_Container_Base
     }
     UpdateShoulderProxyVisibility(item, slot_name);
   }
-	void UpdateShoulderProxyVisibility(EntityAI item, string slot_name)
-	{
-		const int 						SIMPLE_SELECTION_MELEE_RIFLE = 0;
-		const int 						SIMPLE_SELECTION_MELEE_MELEE = 1;
-		const int 						SIMPLE_SELECTION_SHOULDER_RIFLE = 2;
-		const int 						SIMPLE_SELECTION_SHOULDER_MELEE = 3;
-		string slot = slot_name;
-		bool boo;
-		boo = item.IsWeapon();
-		if ( slot == "Melee" )
-		{
-			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_MELEE_RIFLE,boo);
-			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_MELEE_MELEE,!boo);
-		}
-		else if ( slot == "Shoulder" )
-		{
-			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_SHOULDER_RIFLE,boo);
-			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_SHOULDER_MELEE,!boo);
-		}
-	}
 };
 
 class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
