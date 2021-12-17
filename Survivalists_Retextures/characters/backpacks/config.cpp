@@ -29,6 +29,12 @@ class CfgVehicles
 	class AssaultBag_Ttsko;
 	class TortillaBag;
 	class AliceBag_ColorBase;
+
+  class SRP_SlingBackpack_Default;
+  class SRP_Small_Military_Pack_Tan;
+  class SRP_Big_Military_Pack_Tan;
+  class SRP_Rifle_Bag_Green;
+
 	class SRP_SmershBag_White: SmershBag
 	{
 		scope=2;
@@ -1046,4 +1052,93 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\aliceb57.paa"
 		};
 	};
+
+
+
+  class SRP_SlingBackpack_Red: SRP_SlingBackpack_Default 
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\shoulderslingbackpack_red_co.paa",
+		};
+	};
+  class SRP_Small_Military_Pack_Black: SRP_Small_Military_Pack_Tan 
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_Black_CO.paa"
+		};
+	};
+  class SRP_Small_Military_Pack_Green: SRP_Small_Military_Pack_Tan 
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_Green_CO.paa"
+		};
+	};
+
+  class SRP_Big_Military_Pack_Green: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Green_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Black: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Black_CO.paa"
+		};
+	};
+
+  class SRP_Rifle_Bag_Tan: SRP_Rifle_Bag_Green
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\backpacks\data\Rifle_Bag_Tan_CO.paa"
+    };
+  };
+  class SRP_Rifle_Bag_Black: SRP_Rifle_Bag_Green
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\backpacks\data\Rifle_Bag_Black_CO.paa"
+    };
+  };
 };

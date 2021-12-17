@@ -211,18 +211,6 @@ class CfgVehicles
 			};
 		}; 
 	};
-  class SRP_SlingBackpack_Red: SRP_SlingBackpack_Default 
-	{
-		scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\shoulderslingbackpack_red_co.paa",
-		};
-	};
 
   class SRP_Small_Military_Pack_Tan: HuntingBag 
 	{
@@ -266,30 +254,6 @@ class CfgVehicles
 					};
 				};
 			};
-		};
-	};
-  class SRP_Small_Military_Pack_Black: SRP_Small_Military_Pack_Tan 
-	{
-		scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_Black_CO.paa"
-		};
-	};
-  class SRP_Small_Military_Pack_Green: SRP_Small_Military_Pack_Tan 
-	{
-		scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_Green_CO.paa"
 		};
 	};
 
@@ -337,30 +301,6 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Big_Military_Pack_Green: SRP_Big_Military_Pack_Tan
-	{
-		scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_Green_CO.paa"
-		};
-	};
-  class SRP_Big_Military_Pack_Black: SRP_Big_Military_Pack_Tan
-	{
-		scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\backpacks\data\Big_Military_Pack_Black_CO.paa"
-		};
-	};
 
   class SRP_Rifle_Bag_Green: HuntingBag 
   {
@@ -405,29 +345,56 @@ class CfgVehicles
       };
     };
   };
-  class SRP_Rifle_Bag_Tan: SRP_Rifle_Bag_Green
+
+  class SRP_CombatAssaultBag_Green: MountainBag_ColorBase
   {
-    scope=2;
+		scope=2;
+		displayName="Combat Assault Pack";
+		descriptionShort="A small backpack with plenty of space for the essentials.";
+		model="Survivalists_Mods\characters\backpacks\srp_combatassaultbag_m.p3d";
+		itemsCargoSize[]={7,7};
+		attachments[]=
+		{
+      "Shoulder",
+      "SRP_Patch", 
+      "Belt_Left",
+      "Chemlight",
+      "WalkieTalkie", 
+      "SmallPouch1", 
+      "SmallPouch2"
+      "LargePouch1",
+		};
     hiddenSelections[]=
-    {
-      "zbytek"
-    };
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\characters\backpacks\data\Rifle_Bag_Tan_CO.paa"
-    };
-  };
-  class SRP_Rifle_Bag_Black: SRP_Rifle_Bag_Green
-  {
-    scope=2;
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\characters\backpacks\data\Rifle_Bag_Black_CO.paa"
-    };
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_Tan_CO.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\backpacks\Small_Military_Pack.p3d";
+			female="Survivalists_Mods\characters\backpacks\Small_Military_Pack.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack.rvmat"}},
+            {0.7,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\backpacks\data\Small_Military_Pack_destruct.rvmat"}}
+					};
+				};
+			};
+		};
   };
 
 };
