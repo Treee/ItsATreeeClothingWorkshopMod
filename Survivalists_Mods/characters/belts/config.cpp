@@ -82,13 +82,9 @@ class CfgVehicles
       "Belt_Left",
       "Belt_Back",
       "WalkieTalkie",
-      "Chemlight",
-      "SmallPouch1",
-      "SmallPouch2",
-      "LargePouch1",
-      "LargePouch2"
+      "Chemlight"
 		};
-    itemsCargoSize[]={3,1};
+    itemsCargoSize[]={3,3};
     hiddenSelections[]=
     {
       "zbytek"
