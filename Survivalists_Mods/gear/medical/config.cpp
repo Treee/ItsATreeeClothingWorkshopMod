@@ -35,7 +35,6 @@ class CfgVehicles
   };
 
   //------------------------------------------- CUSTOM STUFF
-
   class SRP_BloodPressureMonitor: Inventory_Base // BP_Monitor_pressure
 	{
 		scope=2;
