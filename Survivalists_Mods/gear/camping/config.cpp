@@ -9,7 +9,7 @@ class CfgPatches
 		{
 			"DZ_Data",
       "DZ_Gear_Camping",
-      "Survivalists_Mods"      
+      "Survivalists_Mods"
 		};
 	};
 };
