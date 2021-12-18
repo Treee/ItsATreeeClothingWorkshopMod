@@ -851,6 +851,13 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_StreetLightKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="StreetLight Kit";
+		descriptionShort="A StreetLight Kit - Still needs a bit of work";
+	};
+
   class SRP_StreetLightSlim_Kit: SRP_KitBase  // SRP_StreetLightL_kit
 	{
 		scope=2;

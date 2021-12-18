@@ -14,6 +14,7 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe(new Deconstruct_IntermediaryWoodenShelfKit);     
     RegisterRecipe(new Deconstruct_IntermediaryMetalShelfKit);
     RegisterRecipe(new Deconstruct_IntermediaryBarricadeKit);
+    RegisterRecipe(new Deconstruct_IntermediaryStreetLightKit);
     RegisterRecipe(new Deconstruct_RockPile);
 	}
 };
