@@ -40,6 +40,14 @@ class cfgWeapons
 		recoilModifier[]={0.7,0.7,1};
 		swayModifier[]={1,1,1};
 		itemSize[]={9,3};
+    hiddenSelections[] =
+		{
+	    "zbytek",
+		};
+    hiddenSelectionsTextures[] =
+		{
+	    "Survivalists_Investor\data\New_Guns\L96A1\data\UV_L96A1_co.paa"
+		};
 		drySound[]=
 		{
 			"dz\sounds\weapons\firearms\mosin9130\mosin_dry",
