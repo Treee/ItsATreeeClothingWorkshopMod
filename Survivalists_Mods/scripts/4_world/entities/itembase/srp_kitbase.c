@@ -244,3 +244,4 @@ class SRP_WoodenShelfKit_Kit extends ItemBase{};
 class SRP_MetalShelfKit_Kit extends ItemBase{};
 class SRP_BarricadeKit_Kit extends ItemBase{};
 class SRP_StreetLightKit_Kit extends ItemBase{};
+class SRP_WoodenFurnitureKit_Kit extends ItemBase{};

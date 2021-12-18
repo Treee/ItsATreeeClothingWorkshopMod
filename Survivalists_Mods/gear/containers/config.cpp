@@ -1554,6 +1554,13 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_WoodenFurnitureKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Furniture Kit";
+		descriptionShort="A Wooden Furniture Kit - Still needs a bit of work";
+	};
+
   class SRP_MetalBox_Kit: SRP_KitBase //new
 	{
 		scope=2;
