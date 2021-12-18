@@ -139,6 +139,13 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_WoodenShelfKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Shelf Kit";
+		descriptionShort="A Wooden Shelf Kit - Still needs a bit of work";
+	};
+
   class SRP_WoodenShelfSimple_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -340,6 +347,13 @@ class CfgVehicles
 				icon="shoulderright";
 			};
 		};
+	};
+
+  class SRP_MetalShelfKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Metal Shelf Kit";
+		descriptionShort="A Metal Shelf Kit - Still needs a bit of work";
 	};
 
   class SRP_MetalShelfSimpleGround_Kit: SRP_KitBase //new

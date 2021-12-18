@@ -240,3 +240,6 @@ class SRP_StonePile_Large_Kit extends SRP_KitBase{};
 // This crafted item is not placeable
 class SRP_TetrisShelfKit_Kit extends ItemBase{};
 class SRP_BuildingComponentFrame_Kit extends ItemBase{};
+class SRP_WoodenShelfKit_Kit extends ItemBase{};
+class SRP_MetalShelfKit_Kit extends ItemBase{};
+class SRP_BarricadeKit_Kit extends ItemBase{};

@@ -361,6 +361,13 @@ class CfgVehicles
 
 
   //-------------------------------- Barricades
+  class SRP_BarricadeKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Barricade Kit";
+		descriptionShort="A Barricade Kit - Still needs a bit of work";
+	};
+
   class SRP_Barricade_Wood_Kit: SRP_KitBase //new
 	{
 		scope=2;
