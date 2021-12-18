@@ -28,6 +28,11 @@ class CfgVehicles
 
   class SRP_KitBase;
 
+  // ------------------------------------------ VANILLA OVERRIDE
+  class BandageDressing: Inventory_Base
+  {
+    canBeSplit=1;
+  };
 
   //------------------------------------------- CUSTOM STUFF
 
