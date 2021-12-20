@@ -874,8 +874,7 @@ class CfgVehicles
 					"Shoulder2",
 					"Shoulder3",
 					"Shoulder4",
-					"Shoulder5",
-					"Shoulder6"
+					"Shoulder5"
 				};
 				icon="shoulderright";
 			};
@@ -887,10 +886,7 @@ class CfgVehicles
 				{
 					"Back",
 					"Pistol",
-					"no",
-					"Shoulder7",
-					"Shoulder8",
-					"Shoulder9"
+					"no"
 				};
 				icon="shoulderright";
 			};
