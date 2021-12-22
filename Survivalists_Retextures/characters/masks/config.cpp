@@ -421,40 +421,6 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_FacialHairBeard_Colorbase: BalaclavaMask_ColorBase
-	{
-		scope=0;
-		displayName="Full Beard";
-		descriptionShort="A full manly beard.";
-		model="Survivalists_Retextures\characters\masks\srp_facialhair_g.p3d";
-		rotationFlags=0;
-		itemSize[]={3,2};
-		inventorySlot[]=
-    {
-      "Mask"
-    };
-		headSelectionsToHide[]={};
-		hiddenSelections[]=
-    {
-      "ground",
-      "zbytek"
-    };
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_co.paa",
-		};
-    hiddenSelectionsMaterials[]=
-		{
-			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit.rvmat",
-			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard.rvmat",
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Retextures\characters\masks\srp_facialhairbeard.p3d";
-			female="Survivalists_Retextures\characters\masks\srp_facialhairbeard.p3d";
-		};
-	};
 	class SRP_FacialHairBeard_Brown: SRP_FacialHairBeard_Colorbase
 	{
 		scope=2;
