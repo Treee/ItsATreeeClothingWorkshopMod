@@ -845,6 +845,45 @@ class CfgSlots
 		displayName="Katana Sheath";
 		ghostIcon="set:dayz_inventory image:missing";
   }
+
+  //--------------------------- TOOLS
+  class Slot_SRP_Lockpick
+  {
+		name="SRP_Lockpick";
+		displayName="Lockpick";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_Screwdriver
+  {
+		name="SRP_Screwdriver";
+		displayName="Screwdriver";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_Pliers
+  {
+		name="SRP_Pliers";
+		displayName="Pliers";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_Morphine
+  {
+		name="SRP_Morphine";
+		displayName="Morphine";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_Epinephrine
+  {
+		name="SRP_Epinephrine";
+		displayName="Epinephrine";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_BandageDressing
+  {
+		name="SRP_BandageDressing";
+		displayName="BandageDressing";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  
   // ------------------------ CARDS
   class Slot_CardHand1
   {
@@ -1571,6 +1610,43 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"SRP_Comtacs"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_comtacs.p3d"; //proxy path 
+  };
+  
+  class Proxysrp_lockpick_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Lockpick"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_lockpick_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_screwdriver_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Screwdriver"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_screwdriver_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_pliers_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Pliers"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_pliers_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_morphine_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Morphine"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_morphine_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_epinephrine_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Epinephrine"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_epinephrine_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_bandagedressing_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_BandageDressing"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_bandagedressing_proxy.p3d"; //proxy path 
   };
   // -------------------- HIDING PROXIES
   // THIS WORKS BY SETTING THE PATH OF A PROXY TO SOMETHING

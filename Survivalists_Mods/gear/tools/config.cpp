@@ -124,6 +124,35 @@ class CfgVehicles
 		};
 	};
 
+  class Lockpick: Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "SRP_Lockpick",
+      "MVS_Lockpick"
+    };
+  };
+  class Screwdriver: Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "SRP_Screwdriver",
+      "Screwdriver",
+      "MassScrewDriver",
+      "Screwdriver1",
+      "Screwdriver2"
+    };
+  };
+  class Pliers: Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "SRP_Pliers",
+      "Pliers",
+      "Pliers1"
+    };
+  };
+
   // ---------------------------- Custom Stuff
 
   class SRP_Heatpack: Heatpack  // HeatpackBern

@@ -32,8 +32,32 @@ class CfgVehicles
   class BandageDressing: Inventory_Base
   {
     canBeSplit=1;
+    inventorySlot[]=
+    {
+      "SRP_BandageDressing",
+      "MedicalBandage"
+    };
   };
 
+  class Morphine: Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "SRP_Morphine",
+      "morphine",
+      "epinephrine"
+    };
+  };
+
+  class Epinephrine: Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "SRP_Epinephrine",
+      "epinephrine",
+      "morphine"
+    };
+  };
   //------------------------------------------- CUSTOM STUFF
   class SRP_BloodPressureMonitor: Inventory_Base // BP_Monitor_pressure
 	{
