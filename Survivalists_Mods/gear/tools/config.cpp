@@ -128,7 +128,9 @@ class CfgVehicles
   {
     inventorySlot[]=
     {
-      "SRP_Lockpick",
+      "SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
       "MVS_Lockpick"
     };
   };
@@ -136,7 +138,9 @@ class CfgVehicles
   {
     inventorySlot[]=
     {
-      "SRP_Screwdriver",
+      "SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
       "Screwdriver",
       "MassScrewDriver",
       "Screwdriver1",
@@ -147,7 +151,9 @@ class CfgVehicles
   {
     inventorySlot[]=
     {
-      "SRP_Pliers",
+      "SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
       "Pliers",
       "Pliers1"
     };

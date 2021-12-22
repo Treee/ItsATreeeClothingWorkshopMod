@@ -2239,6 +2239,21 @@ class CfgVehicles
 		descriptionShort="A single pouch that holds a useful tool.";
 		model="Survivalists_Mods\characters\vests\srp_utility_pouch.p3d";
     itemsCargoSize[]={3,3};
+    attachments[]=
+		{
+			"SRP_Lockpick",
+      "SRP_Screwdriver",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+      "LargePouch5",
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.paa"

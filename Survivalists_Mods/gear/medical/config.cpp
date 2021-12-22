@@ -34,7 +34,9 @@ class CfgVehicles
     canBeSplit=1;
     inventorySlot[]=
     {
-      "SRP_BandageDressing",
+      "SRP_Medical1",
+      "SRP_Medical2",
+      "SRP_Medical3",
       "MedicalBandage"
     };
   };
@@ -43,7 +45,9 @@ class CfgVehicles
   {
     inventorySlot[]=
     {
-      "SRP_Morphine",
+      "SRP_Medical1",
+      "SRP_Medical2",
+      "SRP_Medical3",
       "morphine",
       "epinephrine"
     };
@@ -53,7 +57,9 @@ class CfgVehicles
   {
     inventorySlot[]=
     {
-      "SRP_Epinephrine",
+      "SRP_Medical1",
+      "SRP_Medical2",
+      "SRP_Medical3",
       "epinephrine",
       "morphine"
     };
