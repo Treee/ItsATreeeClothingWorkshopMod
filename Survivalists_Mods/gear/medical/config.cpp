@@ -20,10 +20,8 @@ class CfgVehicles
   class TetracyclineAntibiotics;
   class VitaminBottle;
   class DisinfectantAlcohol;
-  class Morphine;
   class ClearSyringe;
   class InjectionVial;
-  class Epinephrine;
   class BloodTestKit;
 
   class SRP_KitBase;

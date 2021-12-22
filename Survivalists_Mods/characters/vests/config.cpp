@@ -2241,18 +2241,9 @@ class CfgVehicles
     itemsCargoSize[]={3,3};
     attachments[]=
 		{
-			"SRP_Lockpick",
-      "SRP_Screwdriver",
-      "SmallPouch2",
-      "SmallPouch3",
-      "SmallPouch4",
-      "SmallPouch5",
-      "SmallPouch6",
-      "LargePouch1",
-      "LargePouch2",
-      "LargePouch3",
-      "LargePouch4",
-      "LargePouch5",
+			"SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3"
 		};
 		hiddenSelectionsTextures[]=
 		{

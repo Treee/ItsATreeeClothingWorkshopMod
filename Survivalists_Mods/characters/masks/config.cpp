@@ -486,57 +486,6 @@ class CfgVehicles
 			female="Survivalists_Mods\characters\masks\srps10gasmask.p3d";
 		};
 	};
-
-	class SRP_S10Respirator_FS: SRP_S10Respirator_Colorbase
-	{
-		scope=2;
-		displayName="S10 Respirator - The 4th Survivor";
-    color="fs";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\s10_co_FS.paa"
-		};
-	};
-	class SRP_S10Respirator_OD: SRP_S10Respirator_Colorbase
-	{
-		scope=2;
-		displayName="S10 Respirator - OD";
-    color="od";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\s10_co_OD.paa"
-		};
-	};
-	class SRP_S10Respirator_Tan: SRP_S10Respirator_Colorbase
-	{
-		scope=2;
-		displayName="S10 Respirator - Tan";
-    color="tan";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\s10_co_Tan.paa"
-		};
-	};
-	class SRP_S10Respirator_Black: SRP_S10Respirator_Colorbase
-	{
-		scope=2;
-		displayName="S10 Respirator - Black";
-    color="black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\s10_co.paa"
-		};
-	};
-	class SRP_S10Respirator_Snow: SRP_S10Respirator_Colorbase
-	{
-		scope=2;
-		displayName="S10 Respirator - Snow";
-    color="snow";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\s10_co_Snow.paa"
-		};
-	};
 	
 	class SRP_PMK2Respirator_Colorbase: GP5GasMask
 	{
@@ -589,54 +538,6 @@ class CfgVehicles
 			female="Survivalists_Mods\characters\masks\srppmk2.p3d";
 		};
 	};
-	class SRP_PMK2Respirator_Black: SRP_PMK2Respirator_Colorbase
-	{
-		scope=2;
-		displayName="PMK-2 Respirator - Black";
-    color="black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srppmk2_co.paa",
-			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
-			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"
-		};
-	};
-	class SRP_PMK2Respirator_Tan: SRP_PMK2Respirator_Colorbase
-	{
-		scope=2;
-		displayName="PMK-2 Respirator - Tan";
-    color="tan";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srppmk2_co_Tan.paa",
-			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
-			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"	
-		};
-	};
-	class SRP_PMK2Respirator_OD: SRP_PMK2Respirator_Colorbase
-	{
-		scope=2;
-		displayName="PMK-2 Respirator - OD";
-    color="od";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srppmk2_co_OD.paa",
-			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
-			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"	
-		};
-	};
-	class SRP_PMK2Respirator_Snow: SRP_PMK2Respirator_Colorbase
-	{
-		scope=2;
-		displayName="PMK-2 Respirator - Snow";
-    color="snow";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srppmk2_co_Snow.paa",
-			"Survivalists_Mods\characters\masks\data\srppmk2filter_co.paa",
-			"Survivalists_Mods\characters\masks\data\srppmk2_ca.paa"	
-		};
-	};
 	
 	class SRP_M50Respirator_Colorbase: GP5GasMask
 	{
@@ -683,46 +584,6 @@ class CfgVehicles
 			female="Survivalists_Mods\characters\masks\srp_m50gasmask.p3d";
 		};
 	};
-	class SRP_M50Respirator_OD: SRP_M50Respirator_Colorbase
-	{
-		scope=2;
-		displayName="M50 Respirator - OD";
-    color="od";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co_OD.paa",
-		};
-	};
-	class SRP_M50Respirator_Tan: SRP_M50Respirator_Colorbase
-	{
-		scope=2;
-		displayName="M50 Respirator - Tan";
-    color="tan";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co_Tan.paa"
-		};
-	};
-	class SRP_M50Respirator_Black: SRP_M50Respirator_Colorbase
-	{
-		scope=2;
-		displayName="M50 Respirator - Black";
-    color="black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co.paa"
-		};
-	};
-	class SRP_M50Respirator_Snow: SRP_M50Respirator_Colorbase
-	{
-		scope=2;
-		displayName="M50 Respirator - Snow";
-    color="snow";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_m50gasmask_co_Snow.paa"
-		};
-	};  
 
   class SRP_FacialHairGoatee_Colorbase: BalaclavaMask_ColorBase
 	{
@@ -756,61 +617,6 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\masks\srp_facialhairgoatee.p3d";
 			female="Survivalists_Mods\characters\masks\srp_facialhairgoatee.p3d";
-		};
-	};
-	class SRP_FacialHairGoatee_Brown: SRP_FacialHairGoatee_Colorbase
-	{
-		scope=2;
-		displayName="Goatee - Brown";
-    color="brown";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co.paa",
-		};
-	};
-	class SRP_FacialHairGoatee_LightBrown: SRP_FacialHairGoatee_Colorbase
-	{
-		scope=2;
-		displayName="Goatee - Light Brown";
-    color="lightbrown";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co_LightBrown.paa",
-		};
-	};
-	class SRP_FacialHairGoatee_Black: SRP_FacialHairGoatee_Colorbase
-	{
-		scope=2;
-		displayName="Goatee - Black";
-    color="black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co_Black.paa",
-		};
-	};
-	class SRP_FacialHairGoatee_Blonde: SRP_FacialHairGoatee_Colorbase
-	{
-		scope=2;
-		displayName="Goatee - Blonde";
-    color="blonde";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co_Blonde.paa",
-		};
-	};
-	class SRP_FacialHairGoatee_White: SRP_FacialHairGoatee_Colorbase
-	{
-		scope=2;
-		displayName="Goatee - White";
-    color="white";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairgoatee_co_White.paa",
 		};
 	};
 
@@ -848,61 +654,6 @@ class CfgVehicles
 			female="Survivalists_Mods\characters\masks\srp_facialhairbeard.p3d";
 		};
 	};
-	class SRP_FacialHairBeard_Brown: SRP_FacialHairBeard_Colorbase
-	{
-		scope=2;
-		displayName="Full Beard - Brown";
-    color="brown";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co.paa",
-		};
-	};
-	class SRP_FacialHairBeard_LightBrown: SRP_FacialHairBeard_Colorbase
-	{
-		scope=2;
-		displayName="Full Beard - Light Brown";
-    color="lightbrown";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_LightBrown.paa",
-		};
-	};
-	class SRP_FacialHairBeard_Black: SRP_FacialHairBeard_Colorbase
-	{
-		scope=2;
-		displayName="Full Beard - Black";
-    color="black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_Black.paa",
-		};
-	};
-	class SRP_FacialHairBeard_Blonde: SRP_FacialHairBeard_Colorbase
-	{
-		scope=2;
-		displayName="Full Beard - Blonde";
-    color="blonde";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_Blonde.paa",
-		};
-	};
-	class SRP_FacialHairBeard_White: SRP_FacialHairBeard_Colorbase
-	{
-		scope=2;
-		displayName="Full Beard - White";
-    color="white";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_White.paa",
-		};
-  };
 
   class SRP_FacialHairChops_Colorbase: BalaclavaMask_ColorBase
 	{
@@ -936,61 +687,6 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\masks\srp_facialhairchops.p3d";
 			female="Survivalists_Mods\characters\masks\srp_facialhairchops.p3d";
-		};
-	};
-	class SRP_FacialHairChops_Brown: SRP_FacialHairChops_Colorbase
-	{
-		scope=2;
-		displayName="Beard Chops - Brown";
-    color="brown";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co.paa",
-		};
-	};
-	class SRP_FacialHairChops_LightBrown: SRP_FacialHairChops_Colorbase
-	{
-		scope=2;
-		displayName="Beard Chops - Light Brown";
-    color="lightbrown";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_LightBrown.paa",
-		};
-	};
-	class SRP_FacialHairChops_Black: SRP_FacialHairChops_Colorbase
-	{
-		scope=2;
-		displayName="Beard Chops - Black";
-    color="black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_Black.paa",
-		};
-	};
-	class SRP_FacialHairChops_Blonde: SRP_FacialHairChops_Colorbase
-	{
-		scope=2;
-		displayName="Beard Chops - Blonde";
-    color="blonde";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_Blonde.paa",
-		};
-	};
-	class SRP_FacialHairChops_White: SRP_FacialHairChops_Colorbase
-	{
-		scope=2;
-		displayName="Beard Chops - White";
-    color="white";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\masks\data\srp_facialhair_kit_co.paa",
-			"Survivalists_Mods\characters\masks\data\srp_facialhairbeard_co_White.paa",
 		};
 	};
 	
