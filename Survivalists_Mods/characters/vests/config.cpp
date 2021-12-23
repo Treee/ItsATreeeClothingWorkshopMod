@@ -2238,7 +2238,7 @@ class CfgVehicles
 		displayName="Utility Pouch";
 		descriptionShort="A single pouch that holds a useful tool.";
 		model="Survivalists_Mods\characters\vests\srp_utility_pouch.p3d";
-    itemsCargoSize[]={3,3};
+    itemsCargoSize[]={3,2};
     attachments[]=
 		{
 			"SRP_Tool1",
@@ -2277,6 +2277,15 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\vests\srp_heavy_pouch.p3d";
     itemSize[]={5,4};
     itemsCargoSize[]={5,4};
+    attachments[]=
+		{
+			"SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
+      "SRP_Medical1",
+      "SRP_Medical2",
+      "SRP_Medical3",
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co.paa"

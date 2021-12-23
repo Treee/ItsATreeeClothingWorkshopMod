@@ -250,7 +250,24 @@ class SRP_Empty_MagPouch_Tan extends SRP_PouchBase_Large
 
 };
 
-class SRP_UtilityPouch_Tan extends SRP_PouchBase_Large{};
+class SRP_UtilityPouch_Tan extends SRP_PouchBase_Large
+{
+  override bool CanReceiveAttachment (EntityAI attachment, int slotId)
+	{
+    return GetInventory().AttachmentCount() < 1;
+	}
+
+  override bool CanDisplayAttachmentSlot( string slot_name )
+	{
+    bool canDisplay = GetInventory().AttachmentCount() == 0;
+    EntityAI slotItem = FindAttachmentBySlotName(slot_name);      
+    if (slotItem)
+    {
+      canDisplay = true; 
+    }
+    return canDisplay;
+  }
+};
 class SRP_HeavyPouch_Tan extends SRP_PouchBase_Large{};
 class SRP_MediumPouch_Tan extends SRP_PouchBase_Large{};
 class SRP_TacoPouch_Tan extends SRP_PouchBase_Large{};
