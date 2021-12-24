@@ -1230,8 +1230,6 @@ class CfgSlots
 		displayName="Ace of Hearts";
 		ghostIcon="set:dayz_inventory image:missing";
   }
-
-
 };
 
 class CfgNonAIVehicles
