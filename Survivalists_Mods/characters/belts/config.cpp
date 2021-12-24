@@ -251,23 +251,6 @@ class CfgVehicles
 			};
 		};
 	};
-	class SRP_Elbow_Knee_Pads_Tan : SRP_Elbow_Knee_Pads_Green
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\belts\data\Pads_Tan_CO.paa"
-		};	
-	};
-	class SRP_Elbow_Knee_Pads_Black : SRP_Elbow_Knee_Pads_Green
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\belts\data\Pads_Black_CO.paa"
-		};	
-	};
-
 
   class SRP_Military_Belt_Tan: MilitaryBelt // new
   {
@@ -321,22 +304,6 @@ class CfgVehicles
 			};
 		};
   };
-	class SRP_Military_Belt_Green: SRP_Military_Belt_Tan
-	{ 
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\belts\data\Military_Belt_Green_CO.paa"
-		};	
-	};
-	class SRP_Military_Belt_Black: SRP_Military_Belt_Tan
-	{ 
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\belts\data\Military_Belt_Black_CO.paa"
-		};	
-	};
 
 	class SRP_Knife_Sheath_Tan: NylonKnifeSheath
 	{
@@ -391,25 +358,6 @@ class CfgVehicles
 					id=898;
 				};
 			};
-		};	
-	};
-
-	class SRP_Knife_Sheath_Green: SRP_Knife_Sheath_Tan
-	{
-		scope=2;
-    displayName = "Knife Sheath - Green";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\belts\data\Sheath_Green_CO.paa"
-		};	
-	};
-	class SRP_Knife_Sheath_Black: SRP_Knife_Sheath_Tan
-	{
-		scope=2;
-    displayName = "Knife Sheath - Black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\characters\belts\data\Sheath_Black_CO.paa"
 		};	
 	};
 };
