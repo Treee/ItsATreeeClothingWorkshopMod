@@ -127,7 +127,7 @@ modded class ActionCoverHeadTarget
 		Class.CastTo(ntarget, action_data.m_Target.GetObject());
 
     CoverHeadOfTargetPlayerLambda lambda;
-
+    // handle the base case of a vanilla burlap sack, if it is our cover, use the color to swap
     if (action_data.m_MainItem)
     {
       if (action_data.m_MainItem.GetType() == "BurlapSack")
@@ -150,13 +150,14 @@ modded class ActionCoverHeadTarget
 
 modded class ActionUncoverHeadTarget
 {
+  // temporary fix probably. This is already in the uncoverself code so probably bohemia oversight
   override bool IsWearingBurlap( PlayerBase player )
 	{
     bool isWearingBurlap = super.IsWearingBurlap(player);
 
 		EntityAI attachment;
 		Class.CastTo(attachment, player.GetInventory().FindAttachment(InventorySlots.HEADGEAR));
-		if ( attachment && attachment.IsInherited(BurlapSack))
+		if ( attachment && attachment.IsInherited(BurlapSackCover) )
 		{
 			isWearingBurlap = true;
 		}
@@ -164,18 +165,3 @@ modded class ActionUncoverHeadTarget
 	}
 };
 
-modded class ActionUncoverHeadSelf
-{
-  override bool IsWearingBurlap( PlayerBase player )
-	{
-    bool isWearingBurlap = super.IsWearingBurlap(player);
-
-		EntityAI attachment;
-		Class.CastTo(attachment, player.GetInventory().FindAttachment(InventorySlots.HEADGEAR));
-		if ( attachment && attachment.IsInherited(BurlapSack))
-		{
-			isWearingBurlap = true;
-		}
-		return isWearingBurlap;
-	}
-};
