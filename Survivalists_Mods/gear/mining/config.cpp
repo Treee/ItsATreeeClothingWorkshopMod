@@ -46,7 +46,7 @@ class CfgVehicles
 		descriptionShort="Probably the last step in making a large stone forge. Good work.";
     attachments[]=
 		{	
-			"SRP_ForgeStarterKit"
+			"SRP_ForgeStarterKit",
       "Stones",
 			"Material_FPole_Stones",
       "Material_Mortar"
