@@ -59,16 +59,6 @@ class CfgVehicles
 			"GearPDA\data\pda_co.paa",
 			"Survivalists_Mods\gear\radio\data\pda_on_co.paa"
 		};
-    class EnergyManager
-		{
-			hasIcon=1;
-			autoSwitchOff=0;
-			energyUsagePerSecond=0.1;
-			plugType=1;
-			attachmentAction=1;
-			wetnessExposure=0.1;
-      updateInterval=50;
-		};
   };
 
   //-------------------------------------- BASE GAME OVERRIDE
