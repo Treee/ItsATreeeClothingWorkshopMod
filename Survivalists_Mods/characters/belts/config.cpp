@@ -265,7 +265,8 @@ class CfgVehicles
 			"Chemlight",
 			"Belt_Back",
 			"Belt_Right",
-			"WalkieTalkie"
+			"WalkieTalkie",
+      "LargePouch1"
 		};
     itemsCargoSize[]={0,0};
     hiddenSelections[]=
