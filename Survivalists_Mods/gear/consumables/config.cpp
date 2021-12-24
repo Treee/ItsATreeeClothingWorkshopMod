@@ -65,6 +65,11 @@ class CfgVehicles
     varStackMax=20;
   };
 
+  class GardenLime: Inventory_Base
+  {
+    canBeSplit=1;
+  };
+
   // drug workbench
   class HeadlightH7: Inventory_Base
 	{
