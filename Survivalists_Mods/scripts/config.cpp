@@ -191,19 +191,17 @@ class CfgSlots
 		selection="CanisterGasoline";
 		ghostIcon="gascanister";
 	};
-	class Slot_BP_lamp
+	class Slot_SRP_Lantern
 	{
-		name="BP_gas_lamp";
-		displayName="gas_lamp";
-		ghostIcon="gascanister";
-		selection="BP_gas_lamp";
+		name="SRP_Lantern";
+		displayName="Gas Lamp";
+		ghostIcon="set:dayz_inventory image:gascanister";
 	};
 	class Slot_SRP_CasePrep
 	{
 		name="SRP_CasePrep";
 		displayName="Case Prep";
 		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-		selection="CasePrep";
 	};
 	class Slot_SRP_AmmoPress
 	{
@@ -1260,6 +1258,13 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_CasePrep"};
 		model="Survivalists_Mods\proxy\srp_ammoworkbench_caseprep.p3d";
 	};
+  class Proxysrp_gaslamp_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Lantern"};
+		model="Survivalists_Mods\proxy\srp_gaslamp_proxy.p3d";
+	};
+
 	class Proxysrp_ammoworkbench_ammopress: ProxyAttachment
 	{
 		scope=2;

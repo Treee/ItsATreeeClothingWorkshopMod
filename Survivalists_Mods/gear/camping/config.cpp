@@ -931,12 +931,12 @@ class CfgVehicles
   class SRP_StreetLightLarge: Container_Base  // SRP_StreetLightLarge
 	{
 		scope=2;
-		displayName="Street Light";
+		displayName="Street Light - Wood";
 		descriptionShort="This is a large street light which can be used to light up the streets";
 		model="Survivalists_Mods\gear\camping\SRP_StreetLightL.p3d";
 		attachments[]=
 		{
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		weight=3000;
@@ -963,19 +963,6 @@ class CfgVehicles
 				{
 					hitpoints=100000000000;
 				};
-			};
-		};
-		class GUIInventoryAttachmentsProps
-		{
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimEvents
@@ -1011,12 +998,12 @@ class CfgVehicles
   class SRP_StreetLightLarge_Metal: Container_Base  // new
 	{
 		scope=2;
-		displayName="Large Street Light";
+		displayName="Large Street Light - Metal";
 		descriptionShort="This is a large street light which can be used to light up the streets";
 		model="Survivalists_Mods\gear\camping\lamppostlarge.p3d";
 		attachments[]=
 		{
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		weight=3000;
@@ -1041,19 +1028,6 @@ class CfgVehicles
 				{
 					hitpoints=100000000000;
 				};
-			};
-		};
-		class GUIInventoryAttachmentsProps
-		{
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimEvents
@@ -1094,7 +1068,7 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\camping\SRP_StreetLightM.p3d";
 		attachments[]=
 		{
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		weight=3000;
@@ -1121,19 +1095,6 @@ class CfgVehicles
 				{
 					hitpoints=100000000000;
 				};
-			};
-		};
-		class GUIInventoryAttachmentsProps
-		{
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimEvents
@@ -1174,7 +1135,7 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\camping\lamppostmedium.p3d";
 		attachments[]=
 		{
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		weight=3000;
@@ -1199,19 +1160,6 @@ class CfgVehicles
 				{
 					hitpoints=100000000000;
 				};
-			};
-		};
-		class GUIInventoryAttachmentsProps
-		{
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimEvents

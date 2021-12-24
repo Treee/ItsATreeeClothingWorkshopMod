@@ -1663,7 +1663,7 @@ class CfgVehicles
 			"Feet",
 			"Hips",
 			"tripWireAttachment",
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1717,19 +1717,10 @@ class CfgVehicles
 					"Headgear",
 					"Vest",
 					"Gloves",
-					"Hips"
+					"Hips",
+          "SRP_Lantern"
 				};
 				icon="body";
-			};
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimEvents
@@ -1782,7 +1773,7 @@ class CfgVehicles
 			"Feet",
 			"Hips",
 			"tripWireAttachment",
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1837,19 +1828,10 @@ class CfgVehicles
 					"Headgear",
 					"Vest",
 					"Gloves",
-					"Hips"
+					"Hips",
+          "SRP_Lantern"
 				};
 				icon="body";
-			};
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimationSources

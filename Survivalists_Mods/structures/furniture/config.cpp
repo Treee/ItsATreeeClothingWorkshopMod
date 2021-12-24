@@ -523,7 +523,7 @@ class CfgVehicles
 		{
 			"Melee",
 			"Back",
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		itemBehaviour=2;
@@ -546,30 +546,6 @@ class CfgVehicles
 				{
 					hitpoints=100000000000;
 				};
-			};
-		};
-		class GUIInventoryAttachmentsProps
-		{
-			class Storage
-			{
-				name="Storage";
-				description="";
-				attachmentSlots[]=
-				{
-					"Melee",
-					"Back"
-				};
-				icon="cat_common_cargo";
-			};
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimEvents
@@ -1119,7 +1095,7 @@ class CfgVehicles
 		attachments[]=
 		{
 			"Melee",
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		weight=3000;
@@ -1140,29 +1116,6 @@ class CfgVehicles
 				{
 					hitpoints=100000000000;
 				};
-			};
-		};
-		class GUIInventoryAttachmentsProps
-		{
-			class Storage
-			{
-				name="Storage";
-				description="";
-				attachmentSlots[]=
-				{
-					"Melee"
-				};
-				icon="cat_common_cargo";
-			};
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimEvents
@@ -1204,7 +1157,7 @@ class CfgVehicles
 		attachments[]=
 		{
 			"Melee",
-			"BP_gas_lamp"
+			"SRP_Lantern"
 		};
 		carveNavmesh=1;
 		weight=3000;
@@ -1225,29 +1178,6 @@ class CfgVehicles
 				{
 					hitpoints=100000000000;
 				};
-			};
-		};
-		class GUIInventoryAttachmentsProps
-		{
-			class Storage
-			{
-				name="Storage";
-				description="";
-				attachmentSlots[]=
-				{
-					"Melee"
-				};
-				icon="cat_common_cargo";
-			};
-			class Lamp
-			{
-				name="Lamp";
-				description="";
-				attachmentSlots[]=
-				{
-					"BP_gas_lamp"
-				};
-				icon="gascanister";
 			};
 		};
 		class AnimEvents

@@ -35,7 +35,7 @@ class CfgVehicles
 			"Shoulder",
 			"Back",
 			"CanisterGasoline",
-			"BP_gas_lamp",
+			"SRP_Lantern",
 			"SRP_CasePrep",
 			"SRP_AmmoPress"
 		};
@@ -77,7 +77,7 @@ class CfgVehicles
 					"Shoulder",
 					"Back",
 					"CanisterGasoline",
-					"BP_gas_lamp"
+					"SRP_Lantern"
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};
