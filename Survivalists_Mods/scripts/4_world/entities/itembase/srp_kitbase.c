@@ -245,3 +245,5 @@ class SRP_MetalShelfKit_Kit extends ItemBase{};
 class SRP_BarricadeKit_Kit extends ItemBase{};
 class SRP_StreetLightKit_Kit extends ItemBase{};
 class SRP_WoodenFurnitureKit_Kit extends ItemBase{};
+class SRP_StoneForgeWorkbenchStarter_Kit extends ItemBase{};
+class SRP_StoneForgeWorkbenchFinisher_Kit extends ItemBase{};

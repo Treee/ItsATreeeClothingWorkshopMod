@@ -22,7 +22,37 @@ class CfgVehicles
   class SRP_KitBase;
   class SRP_MetalBucket;
 
-  //===================================== WORKBENCH
+  //===================================== WORKBENCH  
+  class SRP_StoneForgeWorkbenchStarter_Kit: SRP_KitBase
+  {
+		scope=2;
+		displayName="A Stone Forge Starter Kit";
+		descriptionShort="Probably the first steps in making a large stone forge. Good luck.";
+    attachments[]=
+		{	
+      "Stones",
+			"Material_FPole_Stones",
+      "Material_Mortar"
+		};
+    inventorySlot[]=
+		{
+			"SRP_ForgeStarterKit"
+		};
+  };  
+  class SRP_StoneForgeWorkbenchFinisher_Kit: SRP_KitBase
+  {
+		scope=2;
+		displayName="A Stone Forge Finisher Kit";
+		descriptionShort="Probably the last step in making a large stone forge. Good work.";
+    attachments[]=
+		{	
+			"SRP_ForgeStarterKit"
+      "Stones",
+			"Material_FPole_Stones",
+      "Material_Mortar"
+		};
+  };
+
   class SRP_StoneForgeWorkbench_Kit: SRP_KitBase //new
 	{
 		scope=2;
