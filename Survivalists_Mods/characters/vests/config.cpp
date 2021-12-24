@@ -2273,18 +2273,15 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Heavy Pouch";
-		descriptionShort="A single pouch that holds a large amount of things.";
+		descriptionShort="A single pouch that holds several things.";
 		model="Survivalists_Mods\characters\vests\srp_heavy_pouch.p3d";
-    itemSize[]={5,4};
-    itemsCargoSize[]={5,4};
+    itemSize[]={3,3};
+    itemsCargoSize[]={3,3};
     attachments[]=
 		{
 			"SRP_Tool1",
-      "SRP_Tool2",
-      "SRP_Tool3",
       "SRP_Medical1",
-      "SRP_Medical2",
-      "SRP_Medical3",
+      "SRP_Medical2"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -2314,10 +2311,16 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Medium Pouch";
-		descriptionShort="A single pouch that holds a medium amount of things.";
+		descriptionShort="A single pouch that holds several things.";
 		model="Survivalists_Mods\characters\vests\srp_medium_pouch.p3d";
-    itemSize[]={4,4};
-    itemsCargoSize[]={4,4};
+    itemSize[]={3,3};
+    itemsCargoSize[]={3,3};
+    attachments[]=
+		{
+			"SRP_Tool1",
+      "SRP_Medical1",
+      "SRP_Medical2"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.paa"
@@ -2348,8 +2351,14 @@ class CfgVehicles
 		displayName="Taco Pouch";
 		descriptionShort="A single pouch that holds several tools.";
 		model="Survivalists_Mods\characters\vests\srp_taco_pouch.p3d";
-    itemSize[]={4,4};
-    itemsCargoSize[]={4,4};
+    itemSize[]={3,3};
+    itemsCargoSize[]={2,2};
+    attachments[]=
+		{
+			"SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
+    };
     hiddenSelections[]=
     {
       "zbytek"
