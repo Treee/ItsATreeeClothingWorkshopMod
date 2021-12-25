@@ -181,6 +181,9 @@ class CfgVehicles
 		attachments[]=
 		{
 			"SRP_Patch",
+      "VestHolster",
+      "VestGrenadeA",
+			"VestGrenadeB",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
