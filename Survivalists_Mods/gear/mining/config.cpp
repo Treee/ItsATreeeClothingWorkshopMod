@@ -26,24 +26,38 @@ class CfgVehicles
   class SRP_StoneForgeWorkbenchStarter_Kit: SRP_KitBase
   {
 		scope=2;
-		displayName="A Stone Forge Starter Kit";
-		descriptionShort="Probably the first steps in making a large stone forge. Good luck.";
+		displayName="Forge Starter Kit - Materials";
+		descriptionShort="Holds materials waiting for work to be done.";
     attachments[]=
 		{	
       "Stones",
 			"Material_FPole_Stones",
       "Material_Mortar"
 		};
+  };
+
+  class SRP_StoneForgeWorkbenchIntermediate_Kit: SRP_KitBase
+  {
+		scope=2;
+		displayName="Forge Starter Kit";
+		descriptionShort="A good amount of work done towards the stone forge.";
     inventorySlot[]=
 		{
 			"SRP_ForgeStarterKit"
 		};
-  };  
+    itemBehaviour=0;
+		canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varStackMax=1;
+  };
+
   class SRP_StoneForgeWorkbenchFinisher_Kit: SRP_KitBase
   {
 		scope=2;
-		displayName="A Stone Forge Finisher Kit";
-		descriptionShort="Probably the last step in making a large stone forge. Good work.";
+		displayName="A Stone Forge Foundation Kit";
+		descriptionShort="Everything connects to this. Only one foundation is needed per forge. Combine with an oven to finish the forge.";
     attachments[]=
 		{	
 			"SRP_ForgeStarterKit",

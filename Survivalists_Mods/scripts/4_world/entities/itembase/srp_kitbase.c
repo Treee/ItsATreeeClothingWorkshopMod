@@ -245,5 +245,23 @@ class SRP_MetalShelfKit_Kit extends ItemBase{};
 class SRP_BarricadeKit_Kit extends ItemBase{};
 class SRP_StreetLightKit_Kit extends ItemBase{};
 class SRP_WoodenFurnitureKit_Kit extends ItemBase{};
-class SRP_StoneForgeWorkbenchStarter_Kit extends ItemBase{};
-class SRP_StoneForgeWorkbenchFinisher_Kit extends ItemBase{};
+class SRP_StoneForgeWorkbenchStarter_Kit extends ItemBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionConvertStarterForgeKit);
+	}
+  override bool CanPutInCargo( EntityAI parent )
+	{
+    return GetInventory().AttachmentCount() == 0;
+	}
+};
+class SRP_StoneForgeWorkbenchIntermediate_Kit extends ItemBase{};
+class SRP_StoneForgeWorkbenchFinisher_Kit extends ItemBase
+{
+  override bool CanPutInCargo( EntityAI parent )
+	{
+    return GetInventory().AttachmentCount() == 0;
+	}
+};
