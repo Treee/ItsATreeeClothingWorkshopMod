@@ -9,7 +9,16 @@ modded class BookMenu
 
     // this line seems to be pre code bohemia has in. it broke existing book mods
     // uncomment this when native reading books is added back.
-		// Class.CastTo(m_page, layoutRoot.FindAnyWidget("Page"));		
+		// Class.CastTo(m_page, layoutRoot.FindAnyWidget("Page"));
+
+
+    PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
+    if (player && player.currentBookInHands)
+    {
+      GetGame().GetMission().PlayerControlDisable(INPUT_EXCLUDE_ALL);
+      ReadBook(player.currentBookInHands);
+    }
+
 		float width;
 		m_content.GetScreenSize(width, m_page_height);
 		return layoutRoot;

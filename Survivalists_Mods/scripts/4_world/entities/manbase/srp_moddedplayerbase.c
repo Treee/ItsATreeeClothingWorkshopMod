@@ -8,6 +8,8 @@ modded class PlayerBase extends ManBase
 
   SRP_ActionOpenMapCB m_OpenMapCallback;
 
+  ItemBook currentBookInHands;
+
   const string FACEPAINT_PATH = "Survivalists_Mods\\characters\\heads\\";
   int	m_facepaintState;
   int m_facepaintStateLocal;

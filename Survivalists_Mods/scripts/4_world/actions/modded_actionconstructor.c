@@ -17,6 +17,8 @@ modded class ActionConstructor
     actions.Insert(ActionTestDrugsTarget);
     actions.Insert(ActionTestDrugsSelf);
 
+    actions.Insert(ActionReadBook);
+
     actions.Insert(ActionConvertStarterForgeKit);
     
     actions.Insert(ActionPourMoltenMetalIntoMold);
