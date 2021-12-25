@@ -3,7 +3,7 @@ class CfgMods
 	class Survivalists_Mods
 	{
 		type = "mod";
-		author = "Orin | Alevaric | Sir Locksley | ItsATreee";
+		author = "ItsATreee | Sir Locksley | Orin | Alevaric | Mar | Turko";
 		name = "Survivalists_Mods";
 		dir = "Survivalists_Mods";
     inputs="Survivalists_Mods/inputs.xml";
