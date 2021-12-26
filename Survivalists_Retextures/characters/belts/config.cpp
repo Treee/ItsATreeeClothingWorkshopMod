@@ -19,6 +19,7 @@ class CfgVehicles
   class SRP_Elbow_Knee_Pads_Green;
   class SRP_Military_Belt_Tan;
   class SRP_Knife_Sheath_Tan;
+  class SRP_TacticalBelt;
 
   //======================== MAIN MOD RETEXTURES
   class SRP_Elbow_Knee_Pads_Tan : SRP_Elbow_Knee_Pads_Green
@@ -71,6 +72,25 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\belts\data\Sheath_Black_CO.paa"
+		};	
+	};
+
+  class SRP_TacticalBelt_Green: SRP_TacticalBelt
+	{
+		scope=2;
+    displayName = "Knife Sheath - Green";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\belts\data\tacticalbelt_Green_co.paa"
+		};	
+	};
+	class SRP_TacticalBelt_Black: SRP_TacticalBelt
+	{
+		scope=2;
+    displayName = "Knife Sheath - Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\belts\data\tacticalbelt_Black_co.paa"
 		};	
 	};
 };

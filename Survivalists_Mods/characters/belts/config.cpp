@@ -147,7 +147,7 @@ class CfgVehicles
     };
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\belts\data\tacticalbelt_co.paa"
+			"Survivalists_Mods\characters\belts\data\tacticalbelt_Tan_co.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
