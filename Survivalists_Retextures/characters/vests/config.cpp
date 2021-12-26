@@ -30,6 +30,11 @@ class CfgVehicles
   class SRP_IFAK_Tan;
   class SRP_Pistol_Mag_Pouch_Tan;
   class SRP_Map_Pouch_Tan;
+  class SRP_UtilityPouch_Tan;
+  class SRP_HeavyPouch_Tan;
+  class SRP_MediumPouch_Tan;
+  class SRP_TacoPouch_Tan;
+
   // main mod vests
   class SRP_Ratnik_Green;
   class SRP_Light_Ratnik_Green;
@@ -1334,6 +1339,74 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Retextures\characters\vests\data\SRP_Empty_MagPouch_Black_CO.paa"
+    };    
+  };
+
+  class SRP_UtilityPouch_Green: SRP_UtilityPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_green_co.paa"
+    };    
+  };
+  class SRP_UtilityPouch_Black: SRP_UtilityPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_black_co.paa"
+    };    
+  };
+
+  class SRP_HeavyPouch_Green: SRP_HeavyPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Heavy_Green_CO.paa"
+    };    
+  };
+  class SRP_HeavyPouch_Black: SRP_HeavyPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Heavy_Black_CO.paa"
+    };    
+  };
+
+  class SRP_MediumPouch_Green: SRP_MediumPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_green_co.paa"
+    };    
+  };
+  class SRP_MediumPouch_Black: SRP_MediumPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_black_co.paa"
+    };    
+  };
+
+  class SRP_TacoPouch_Green: SRP_TacoPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\tacticalbelt_Green_co.paa"
+    };    
+  };
+  class SRP_TacoPouch_Black: SRP_TacoPouch_Tan
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\tacticalbelt_Black_co.paa"
     };    
   };
 

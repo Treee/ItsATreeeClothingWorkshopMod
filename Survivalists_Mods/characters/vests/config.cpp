@@ -376,6 +376,11 @@ class CfgVehicles
 		attachments[]=
 		{
 			"SRP_Patch",
+      "VestHolster",
+      "VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
@@ -568,6 +573,11 @@ class CfgVehicles
 		attachments[]=
 		{
 			"SRP_Patch",
+      "VestHolster",
+      "VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
@@ -759,6 +769,9 @@ class CfgVehicles
 		attachments[]=
 		{
 			"SRP_Patch",
+      "VestHolster",
+      "VestGrenadeA",
+			"VestGrenadeB",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
@@ -872,6 +885,11 @@ class CfgVehicles
 		attachments[]=
 		{
 			"SRP_Patch",
+      "VestHolster",
+      "VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
@@ -1064,6 +1082,11 @@ class CfgVehicles
 		attachments[]=
 		{
 			"SRP_Patch",
+      "VestHolster",
+      "VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
       "SmallPouch1",
       "SmallPouch2",
       "SmallPouch3",
@@ -2010,7 +2033,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.paa"
+			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_tan_co.paa"
 		};	
 		class DamageSystem
 		{
@@ -2021,11 +2044,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.rvmat"}},
-						{0.7,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.rvmat"}},
-						{0.5,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_damage.rvmat"}},
-						{0.3,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_damage.rvmat"}},
-						{0.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_destruct.rvmat"}}
 					};
 				};
 			};
@@ -2048,7 +2071,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co.paa"
+			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_Heavy_Tan_CO.paa"
 		};
 		class DamageSystem
 		{
@@ -2059,11 +2082,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co.rvmat"}},
-						{0.7,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co.rvmat"}},
-						{0.5,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co_damage.rvmat"}},
-						{0.3,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co_damage.rvmat"}},
-						{0.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_co_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_heavy_destruct.rvmat"}}
 					};
 				};
 			};
@@ -2086,7 +2109,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.paa"
+			"Survivalists_Mods\characters\vests\data\srp_pouchesvest_tan_co.paa"
 		};
 		class DamageSystem
 		{
@@ -2097,11 +2120,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.rvmat"}},
-						{0.7,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co.rvmat"}},
-						{0.5,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_damage.rvmat"}},
-						{0.3,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_damage.rvmat"}},
-						{0.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_co_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\srp_pouchesvest_destruct.rvmat"}}
 					};
 				};
 			};
@@ -2128,7 +2151,7 @@ class CfgVehicles
     };
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\belts\data\tacticalbelt_co.paa"
+			"Survivalists_Mods\characters\vests\data\tacticalbelt_Tan_co.paa"
 		};
     class DamageSystem
 		{
