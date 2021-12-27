@@ -24,6 +24,7 @@ class CfgVehicles
   class WoodenCrate;
   class Paper;
   class Paddle;
+  class PortableGasLamp;
 
   class SRP_KitBase;
 
@@ -32,7 +33,6 @@ class CfgVehicles
 	{
     itemsCargoSize[]={0,0};
   }
-
 
   // ----------------------  BASE GAME OVERRIDES
   // the only change here is setting the build base action to use shovels

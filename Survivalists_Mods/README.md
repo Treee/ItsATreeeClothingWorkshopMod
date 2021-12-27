@@ -714,6 +714,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Skeleton" (https://skfb.ly/onVV8) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Street Light" (https://skfb.ly/6nUHT) by Vaughan.Staehr is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 - "Armor Set" (https://skfb.ly/oqo8Q) by gimora is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
