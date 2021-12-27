@@ -1238,6 +1238,43 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=10;
   }
+
+  class Slot_SRP_SkeletonSkull
+  {
+		name="SRP_SkeletonSkull";
+		displayName="Skeleton Skull";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_SkeletonArmLeft
+  {
+		name="SRP_SkeletonArmLeft";
+		displayName="Skeleton Left Arm";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_SkeletonArmRight
+  {
+		name="SRP_SkeletonArmRight";
+		displayName="Skeleton Right Arm";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_SkeletonPelvis
+  {
+		name="SRP_SkeletonPelvis";
+		displayName="Skeleton Pelvis";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_SkeletonLegLeft
+  {
+		name="SRP_SkeletonLegLeft";
+		displayName="Skeleton Left Leg";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_SkeletonLegRight
+  {
+		name="SRP_SkeletonLegRight";
+		displayName="Skeleton Right Leg";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
 };
 
 class CfgNonAIVehicles

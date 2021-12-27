@@ -486,4 +486,148 @@ class CfgVehicles
 		varQuantityDestroyOnMin=1;
 		varStackMax=1;
   }
+
+  class SRP_SkeletonFrame: Inventory_Base
+  {
+		scope=2;
+		displayName="Skeleton Torso";
+		descriptionShort="The torso serves as a foundation for other bones.";
+		model="Survivalists_Mods\gear\consumables\srp_skeletonframe.p3d";
+		weight=1200;
+		itemSize[]={5,5};
+    itemsCargoSize[]={0,0};
+		itemBehaviour=0;
+    rotationFlags=16;
+		attachments[]=
+    {
+      "SRP_SkeletonSkull",
+      "SRP_SkeletonArmLeft",
+      "SRP_SkeletonArmRight",
+      "SRP_SkeletonPelvis",
+      "SRP_SkeletonLegLeft",
+      "SRP_SkeletonLegRight",
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_skeleton_co.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\consumables\data\srp_skeleton.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\consumables\data\srp_skeleton.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\consumables\data\srp_skeleton_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\consumables\data\srp_skeleton_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\consumables\data\srp_skeleton_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+  class SRP_SkeletonFrame_Skull: SRP_SkeletonFrame
+  {
+		scope=2;
+		displayName="Skeleton Skull";
+		descriptionShort="The skull crowns any skeleton set.";
+		model="Survivalists_Mods\gear\consumables\srp_skeletonhead.p3d";
+		weight=1200;
+		itemSize[]={3,3};
+		itemsCargoSize[]={0,0};
+		itemBehaviour=0;
+		attachments[]={};
+		inventorySlot[]=
+    {
+      "SRP_SkeletonSkull"
+    };
+  };
+  class SRP_SkeletonFrame_ArmLeft: SRP_SkeletonFrame
+  {
+		scope=2;
+		displayName="Skeleton Left Arm";
+		descriptionShort="The left arm of a skeleton.";
+		model="Survivalists_Mods\gear\consumables\srp_skeletonarmleft.p3d";
+		weight=1200;
+		itemSize[]={2,6};
+		itemsCargoSize[]={0,0};
+		itemBehaviour=0;
+		attachments[]={};
+		inventorySlot[]=
+    {
+      "SRP_SkeletonArmLeft"
+    };
+  };
+  class SRP_SkeletonFrame_ArmRight: SRP_SkeletonFrame
+  {
+		scope=2;
+		displayName="Skeleton Right Arm";
+		descriptionShort="The right arm of a skeleton.";
+		model="Survivalists_Mods\gear\consumables\srp_skeletonarmright.p3d";
+		weight=1200;
+		itemSize[]={2,6};
+		itemsCargoSize[]={0,0};
+		itemBehaviour=0;
+		attachments[]={};
+		inventorySlot[]=
+    {
+      "SRP_SkeletonArmRight"
+    };
+  };
+  class SRP_SkeletonFrame_Pelvis: SRP_SkeletonFrame
+  {
+		scope=2;
+		displayName="Skeleton Pelvis";
+		descriptionShort="The pelvis of a skeleton";
+		model="Survivalists_Mods\gear\consumables\srp_skeletonpelvis.p3d";
+		weight=1200;
+		itemSize[]={3,3};
+		itemsCargoSize[]={0,0};
+		itemBehaviour=0;
+		attachments[]={};
+		inventorySlot[]=
+    {
+      "SRP_SkeletonPelvis"
+    };
+  };
+  class SRP_SkeletonFrame_LegLeft: SRP_SkeletonFrame
+  {
+		scope=2;
+		displayName="Skeleton Left Leg";
+		descriptionShort="The left leg of a skeleton.";
+		model="Survivalists_Mods\gear\consumables\srp_skeletonlegleft.p3d";
+		weight=1200;
+		itemSize[]={2,6};
+		itemsCargoSize[]={0,0};
+		itemBehaviour=0;
+		attachments[]={};
+		inventorySlot[]=
+    {
+      "SRP_SkeletonLegLeft"
+    };
+  };
+  class SRP_SkeletonFrame_LegRight: SRP_SkeletonFrame
+  {
+		scope=2;
+		displayName="Skeleton Right Leg";
+		descriptionShort="The right leg of a skeleton.";
+		model="Survivalists_Mods\gear\consumables\srp_skeletonlegright.p3d";
+		weight=1200;
+		itemSize[]={2,6};
+		itemsCargoSize[]={0,0};
+		itemBehaviour=0;
+		attachments[]={};
+		inventorySlot[]=
+    {
+      "SRP_SkeletonLegRight"
+    };
+  };
 };

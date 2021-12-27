@@ -712,6 +712,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Rocks and stones pack" (https://skfb.ly/6YIBA) by shtran is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Skeleton" (https://skfb.ly/onVV8) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 - "Armor Set" (https://skfb.ly/oqo8Q) by gimora is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
