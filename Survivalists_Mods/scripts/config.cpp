@@ -1491,6 +1491,42 @@ class CfgNonAIVehicles
     model = "Survivalists_Mods\proxy\testtube_proxy6.p3d"; //proxy path 
   };
 
+  class Proxysrp_skeletonskull_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_SkeletonSkull"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_skeletonskull_proxy.p3d"; //proxy path 
+  };    
+  class Proxysrp_skeletonarmleft_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_SkeletonArmLeft"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_skeletonarmleft_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_skeletonarmright_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_SkeletonArmRight"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_skeletonarmright_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_skeletonpelvis_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_SkeletonPelvis"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_skeletonpelvis_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_skeletonlegleft_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_SkeletonLegLeft"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_skeletonlegleft_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_skeletonlegright_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_SkeletonLegRight"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_skeletonlegright_proxy.p3d"; //proxy path 
+  };
   class Proxyforge_stoneadvancedbellows: ProxyAttachment //same as p3d name
   {
     scope = 2;

@@ -490,7 +490,7 @@ class CfgVehicles
   class SRP_SkeletonFrame: Inventory_Base
   {
 		scope=2;
-		displayName="Skeleton Torso";
+		displayName="Skeleton";
 		descriptionShort="The torso serves as a foundation for other bones.";
 		model="Survivalists_Mods\gear\consumables\srp_skeletonframe.p3d";
 		weight=1200;
