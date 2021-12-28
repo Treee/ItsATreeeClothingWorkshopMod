@@ -46,7 +46,7 @@ class Plant_Ribwort extends PlantBase
 {
   void Plant_Ribwort()
   {
-    m_FullMaturityTime = 30;
+    m_FullMaturityTime = 2700;
   }
 };
 class TobaccoSeedsPack extends SeedPackBase{};
