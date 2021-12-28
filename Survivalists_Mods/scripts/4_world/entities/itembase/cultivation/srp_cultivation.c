@@ -35,8 +35,23 @@ class Plant_Dock extends PlantBase
     m_FullMaturityTime = 2700;
   }
 };
+class Plant_Valerian extends PlantBase
+{
+  void Plant_Valerian()
+  {
+    m_FullMaturityTime = 2700;
+  }
+};
+class Plant_Ribwort extends PlantBase
+{
+  void Plant_Ribwort()
+  {
+    m_FullMaturityTime = 30;
+  }
+};
 class TobaccoSeedsPack extends SeedPackBase{};
 class CocaineSeedsPack extends SeedPackBase{};
 class BrookmintSeedsPack extends SeedPackBase{};
 class DockSeedsPack extends SeedPackBase{};
 class ValerianSeedsPack extends SeedPackBase{};
+class RibwortSeedsPack extends SeedPackBase{};
