@@ -492,7 +492,6 @@ class CfgVehicles
 			PlantType="Plant_Valerian";
 		};
 	};
-
   class ValerianSeedsPack: Inventory_Base
 	{
 		scope=2;
@@ -547,7 +546,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class Plant_Valerian: PlantBase
 	{
 		scope=2;
@@ -585,7 +583,6 @@ class CfgVehicles
 			PlantType="Plant_Ribwort";
 		};
 	};
-
   class RibwortSeedsPack: Inventory_Base
 	{
 		scope=2;
@@ -640,7 +637,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class Plant_Ribwort: PlantBase
 	{
 		scope=2;
