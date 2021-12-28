@@ -726,6 +726,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Low | Concretes | Fences | Pack" (https://skfb.ly/o7NvG) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Dock, brookmint, valerian three medicinal plants" (https://skfb.ly/6DGvY) by LadyIReyna is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
 # Reference
 
 - https://community.bistudio.com/wiki/DayZ_Contaminated_Areas_Configuration
