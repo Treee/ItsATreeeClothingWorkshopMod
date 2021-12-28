@@ -237,31 +237,31 @@ class SRP_Gravestone_19Open_Kit extends SRP_KitBase{};
 class SRP_StonePile_Small_Kit extends SRP_KitBase{};
 class SRP_StonePile_Large_Kit extends SRP_KitBase{};
 
-// This crafted item is not placeable
-class SRP_TetrisShelfKit_Kit extends ItemBase{};
-class SRP_BuildingComponentFrame_Kit extends ItemBase{};
-class SRP_WoodenShelfKit_Kit extends ItemBase{};
-class SRP_MetalShelfKit_Kit extends ItemBase{};
-class SRP_BarricadeKit_Kit extends ItemBase{};
-class SRP_StreetLightKit_Kit extends ItemBase{};
-class SRP_WoodenFurnitureKit_Kit extends ItemBase{};
-class SRP_StoneForgeWorkbenchStarter_Kit extends ItemBase
+// This crafted item is not placeable. Most of these represent intermediate kits
+class SRP_IntermediateCraftingKitBase extends ItemBase
+{
+  override bool CanPutInCargo( EntityAI parent )
+	{
+    return GetInventory().AttachmentCount() == 0;
+	}
+};
+class SRP_TetrisShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_BuildingComponentFrame_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WoodenShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_MetalShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_BarricadeKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_StreetLightKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WoodenFurnitureKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_StoneForgeWorkbenchStarter_Kit extends SRP_IntermediateCraftingKitBase
 {
   override void SetActions()
 	{
 		super.SetActions();
 		AddAction(ActionConvertStarterForgeKit);
 	}
-  override bool CanPutInCargo( EntityAI parent )
-	{
-    return GetInventory().AttachmentCount() == 0;
-	}
 };
-class SRP_StoneForgeWorkbenchIntermediate_Kit extends ItemBase{};
-class SRP_StoneForgeWorkbenchFinisher_Kit extends ItemBase
-{
-  override bool CanPutInCargo( EntityAI parent )
-	{
-    return GetInventory().AttachmentCount() == 0;
-	}
-};
+class SRP_StoneForgeWorkbenchIntermediate_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_StoneForgeWorkbenchFinisher_Kit extends SRP_IntermediateCraftingKitBase{};
+
+class SRP_ArmorKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WoodenStickArmor_Kit extends SRP_IntermediateCraftingKitBase{};

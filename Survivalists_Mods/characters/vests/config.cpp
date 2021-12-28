@@ -20,6 +20,8 @@ class CfgVehicles
   class Container_Base;
   class Bottle_Base;
 
+  class SRP_KitBase;
+
   // ----------------------  BASE GAME OVERRIDES
 
   class PressVest_ColorBase: Clothing
@@ -65,6 +67,27 @@ class CfgVehicles
 
   // ----------------------  CUSTOM STUFF
 
+  class SRP_ArmorKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Armor Kit";
+		descriptionShort="An Armor Kit - Still needs a bit of work";
+	};
+
+  class SRP_WoodenStickArmor_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Stick Armor Kit";
+		descriptionShort="A Wooden Stick Armor Kit - Finish with a needle and thread.";
+    attachments[]=
+		{
+			"Material_Shelter_Sticks",
+      "WoodenStick",
+      "Material_MetalWire",
+      "Material_Shelter_Rope",
+      "Material_Shelter_Fabric",
+		};
+	};
 
   class SRP_Brewstershield: PlateCarrierVest
 	{
