@@ -2305,7 +2305,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class Tobacco: Edible_Base
 	{
 		scope=2;
@@ -2463,7 +2462,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class Cocaine: Edible_Base
 	{
 		scope=2;
@@ -2601,6 +2599,7 @@ class CfgVehicles
 		};
 
 	};
+  
   class Brookmint: Edible_Base
 	{
 		scope=2;
