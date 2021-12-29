@@ -37,18 +37,55 @@ modded class ActionSkinning
       EntityAI body;
       Class.CastTo(body, action_data.m_Target.GetObject());
       
-      ItemBase added_item;
-      vector pos_rnd = body.GetPosition() + Vector(Math.RandomFloat01() - 0.5, 0, Math.RandomFloat01() - 0.5);
-      int randomNumber = Math.RandomIntInclusive(0, 100);
-      if (body.IsKindOf("SurvivorBase") && randomNumber > 70 && randomNumber < 90)
+      if (body.IsKindOf("SurvivorBase"))
       {
-        Class.CastTo(added_item, GetGame().CreateObjectEx("SRP_BrainPiece", pos_rnd, false));
-        added_item.PlaceOnSurface();
-      }
-      else if (body.IsKindOf("SurvivorBase") && randomNumber > 89)
-      {
-        Class.CastTo(added_item, GetGame().CreateObjectEx("SRP_Brain", pos_rnd, false));
-        added_item.PlaceOnSurface();
+        ItemBase added_item;
+        vector pos_rnd = body.GetPosition() + Vector(Math.RandomFloat01() - 0.5, 0, Math.RandomFloat01() - 0.5);
+        int randomBoneSpawnChance = Math.RandomIntInclusive(0, 100);
+        string bodypart = "";//SRP_Brain
+
+        if (randomBoneSpawnChance > 49 && randomBoneSpawnChance < 69)
+        {
+          bodypart = "SRP_Brain";
+        }
+        else if (randomBoneSpawnChance > 68 && randomBoneSpawnChance < 79)
+        {
+          bodypart = "SRP_Brain";
+        }
+        else if (randomBoneSpawnChance > 78 && randomBoneSpawnChance < 82)
+        {
+          bodypart = "SRP_SkeletonFrame";
+        }
+        else if (randomBoneSpawnChance > 81 && randomBoneSpawnChance < 85)
+        {
+          bodypart = "SRP_SkeletonFrame_Skull";
+        }
+        else if (randomBoneSpawnChance > 84 && randomBoneSpawnChance < 88)
+        {
+          bodypart = "SRP_SkeletonFrame_ArmLeft";
+        }
+        else if (randomBoneSpawnChance > 87 && randomBoneSpawnChance < 91)
+        {
+          bodypart = "SRP_SkeletonFrame_ArmRight";
+        }
+        else if (randomBoneSpawnChance > 90 && randomBoneSpawnChance < 94)
+        {
+          bodypart = "SRP_SkeletonFrame_Pelvis";
+        }
+        else if (randomBoneSpawnChance > 93 && randomBoneSpawnChance < 97)
+        {
+          bodypart = "SRP_SkeletonFrame_LegLeft";
+        }
+        else if (randomBoneSpawnChance > 96)
+        {
+          bodypart = "SRP_SkeletonFrame_LegRight";
+        }
+
+        if (bodypart != "")
+        {
+          Class.CastTo(added_item, GetGame().CreateObjectEx(bodypart, pos_rnd, false));
+          added_item.PlaceOnSurface();
+        }
       }
     }
   }
