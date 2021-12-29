@@ -56,20 +56,25 @@ class Plant_Rosemary extends PlantBase
     m_FullMaturityTime = 2700;
   }
 };
-
 class Plant_GreenAmanita extends PlantBase
 {
   void Plant_GreenAmanita()
   {
-    m_FullMaturityTime = 30;
+    m_FullMaturityTime = 2700;
   }
 };
-
 class Plant_Yarrow extends PlantBase
 {
   void Plant_Yarrow()
   {
-    m_FullMaturityTime = 30;
+    m_FullMaturityTime = 2700;
+  }
+};
+class Plant_Mint extends PlantBase
+{
+  void Plant_Mint()
+  {
+    m_FullMaturityTime = 2700;
   }
 };
 class TobaccoSeedsPack extends SeedPackBase{};
@@ -81,3 +86,4 @@ class RibwortSeedsPack extends SeedPackBase{};
 class RosemarySeedsPack extends SeedPackBase{};
 class GreenAmanitaSeedsPack extends SeedPackBase{};
 class YarrowSeedsPack extends SeedPackBase{};
+class MintSeedsPack extends SeedPackBase{};
