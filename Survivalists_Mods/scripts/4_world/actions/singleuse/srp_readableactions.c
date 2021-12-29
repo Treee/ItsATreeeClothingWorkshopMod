@@ -27,7 +27,7 @@ class ActionReadBook extends ActionSingleUseBase
 	{
     if (action_data.m_Player)
     {
-      InventoryItem book = action_data.m_Player.GetItemInHands();
+      ItemBook book = ItemBook.Cast(action_data.m_Player.GetItemInHands());
       if (book && book.IsInherited(ItemBook))
       {
         action_data.m_Player.currentBookInHands = book;
