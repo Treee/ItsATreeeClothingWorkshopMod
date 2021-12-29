@@ -177,7 +177,6 @@ class CfgVehicles
 			};
 		};
   };
-
   
  	class SRP_Elbow_Knee_Pads_Green: Clothing
 	{	
@@ -360,5 +359,80 @@ class CfgVehicles
 				};
 			};
 		};	
+	};
+
+  class SRP_Car_WoodenDerby: Clothing
+	{	
+		scope=2;
+		displayName="Wooden Derby Car";
+		descriptionShort="This sick ride has all the perks.";
+		model="Survivalists_Mods\characters\belts\srp_carwoodenderby_m.p3d";
+    attachments[]={};		
+    vehicleClass="Clothing";
+		simulation="clothing";
+		inventorySlot[]=
+		{
+			"Hips"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Hips"
+		};
+		weight=12000;
+		itemSize[]={4,4};
+		itemsCargoSize[]={0,0};
+		absorbency=0;
+		heatIsolation=0.80;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "personality"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\srp_woodencar_co.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\srp_carwoodenderby_m.p3d";
+			female="Survivalists_Mods\characters\belts\srp_carwoodenderby_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\belts\data\srp_woodencar.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\belts\data\srp_woodencar.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\belts\data\srp_woodencar_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\belts\data\srp_woodencar_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\belts\data\srp_woodencar_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="SmershVest_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="SmershVest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
 	};
 };

@@ -92,8 +92,15 @@ modded class PlayerBase extends ManBase
         return false;
       }
     }
+    if (Class.CastTo(item, FindAttachmentBySlotName("Hips")))
+    {
+      if (item && item.GetType() == "SRP_Car_WoodenDerby")
+      {
+        return false;
+      }
+    }
     item = GetItemInHands();
-    if (item && item.GetType() == "SRP_BerserkSword")
+    if (item && (item.GetType() == "SRP_BerserkSword" || item.GetType() == "SRP_Car_WoodenDerby"))
     {
       return false;
     }
