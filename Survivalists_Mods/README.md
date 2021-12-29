@@ -716,6 +716,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Street Light" (https://skfb.ly/6nUHT) by Vaughan.Staehr is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Dock, brookmint, valerian three medicinal plants" (https://skfb.ly/6DGvY) by LadyIReyna is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+- "Ribwort" (https://skfb.ly/o6Qtz) by Keandir is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Plants kit" (https://skfb.ly/697DD) by luyssport is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
 # Wishlist
 
 - "Armor Set" (https://skfb.ly/oqo8Q) by gimora is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
@@ -725,10 +731,6 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 - "Fences | Concretes | Metal | Desert | Old | Pack" (https://skfb.ly/o7CxG) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Low | Concretes | Fences | Pack" (https://skfb.ly/o7NvG) by Erroratten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
-- "Dock, brookmint, valerian three medicinal plants" (https://skfb.ly/6DGvY) by LadyIReyna is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
-
-- "Ribwort" (https://skfb.ly/o6Qtz) by Keandir is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 # Reference
 
