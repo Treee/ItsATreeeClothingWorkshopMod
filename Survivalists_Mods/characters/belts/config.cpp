@@ -366,7 +366,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Wooden Derby Car";
 		descriptionShort="This sick ride has all the perks.";
-		model="Survivalists_Mods\characters\belts\srp_carwoodenderby_m.p3d";
+		model="Survivalists_Mods\characters\belts\srp_carwoodenderby_g.p3d";
     attachments[]={};		
     vehicleClass="Clothing";
 		simulation="clothing";
