@@ -65,6 +65,13 @@ class CfgHorticulture
 			healthyTex="Survivalists_Mods\gear\cultivation\data\srp_plants_co.paa";
 			healthyMat="Survivalists_Mods\gear\cultivation\data\srp_plants.rvmat";
 		};
+    class Plant_GreenAmanita
+		{
+			infestedTex="Survivalists_Mods\gear\cultivation\data\srp_plants_insect_co.paa";
+			infestedMat="Survivalists_Mods\gear\cultivation\data\srp_plants_insect.rvmat";
+			healthyTex="Survivalists_Mods\gear\cultivation\data\srp_plants_co.paa";
+			healthyMat="Survivalists_Mods\gear\cultivation\data\srp_plants.rvmat";
+		};
 	};
 };
 class CfgVehicles
@@ -666,8 +673,6 @@ class CfgVehicles
 		};
 	};
 
-
-
   class RosemarySeeds: SeedBase
 	{
 		scope=2;
@@ -756,6 +761,97 @@ class CfgVehicles
 			GrowthStagesCount=6;
 			CropsCount=1; // was 7;
 			CropsType="Rosemary";
+		};
+	};
+
+  class GreenAmanitaSeeds: SeedBase
+	{
+		scope=2;
+		displayName="GreenAmanita Seeds";
+		descriptionShort="Seeds for a specific type of plant.";
+		model="\dz\gear\cultivation\cannabis_seeds.p3d";
+		canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=20;
+		class Horticulture
+		{
+			PlantType="Plant_GreenAmanita";
+		};
+	};
+  class GreenAmanitaSeedsPack: Inventory_Base
+	{
+		scope=2;
+		displayName="GreenAmanita Seed Pack";
+		descriptionShort="A pack of Green Amanita seeds. Who even put these here? Most of the seeds are probably bunk.";
+    model="\dz\gear\cultivation\pepper_seeds_pack.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\cultivation\data\srp_greenamanita_seeds_co.paa"
+		};		
+    rotationFlags=17;
+		quantityBar=1;
+		itemSize[]={1,1};
+		weight=10;
+		spawnOffset=0;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\gear\cultivation\data\cannabis_seeds.rvmat"}},
+            {0.69999999,{"DZ\gear\cultivation\data\cannabis_seeds.rvmat"}},
+            {0.5,{"DZ\gear\cultivation\data\cannabis_seeds_damage.rvmat"}},
+            {0.30000001,{"DZ\gear\cultivation\data\cannabis_seeds_damage.rvmat"}},
+            {0.0,{"DZ\gear\cultivation\data\cannabis_seeds_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class Horticulture
+		{
+			ContainsSeedsType="GreenAmanitaSeeds";
+			ContainsSeedsQuantity=4;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="seedpack_pickup_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+  class Plant_GreenAmanita: PlantBase
+	{
+		scope=2;
+		displayName="Green Amanita";
+		descriptionShort="A wierd plant that you haven't seen before in this climate.";
+		model="Survivalists_Mods\gear\cultivation\greenamanita.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\cultivation\data\srp_plants_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\cultivation\data\srp_plants.rvmat"
+		};
+		class Horticulture
+		{
+			GrowthStagesCount=6;
+			CropsCount=1; // was 7;
+			CropsType="GreenAmanita";
 		};
 	};
 
