@@ -2305,22 +2305,22 @@ class CfgVehicles
 			};
 		};
 	};
-  class Tobacco: Edible_Base
+  class SRP_PlantHerbEdible_Colorbase: Edible_Base
 	{
-		scope=2;
-		displayName="Tobacco";
-		descriptionShort="Tobacco harvested from a tobacco plant.";
-		model="\dz\gear\food\cannabis_seedman.p3d";
+		scope=0;
+		displayName="Edible Plant Material";
+		descriptionShort="Harvested material from a plant.";
+    model="\dz\gear\cultivation\plant_material.p3d";
 		rotationFlags=34;
 		weight=0;
-		itemSize[]={1,1};
+		itemSize[]={2,2};
 		stackedUnit="g";
 		absorbency=0.2;
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=10;
-    canBeSplit=1;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -2338,10 +2338,120 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10;
+					healthLevels[]=
+					{
+            {	1,{}},
+            {	0.69999999,{}},
+            {	0.5,{}},
+            {	0.30000001,{}},
+            {	0,{}}
+					};
+				};
+			};
+		};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class pickUpItem
+				{
+					soundSet="Zucchini_pickup_SoundSet";
+					id=797;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+
+	};
+
+  class Tobacco: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Tobacco";
+		descriptionShort="Tobacco harvested from a tobacco plant.";
+		model="\dz\gear\food\cannabis_seedman.p3d";
+		itemSize[]={1,1};
 		hiddenSelections[]=
 		{
 			"cs_raw"
@@ -2363,1351 +2473,71 @@ class CfgVehicles
 			"dz\gear\food\data\cannabis_seedman_burnt.rvmat",
 			"dz\gear\food\data\cannabis_seedman_rotten.rvmat"
 		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
 	};
-  class Cocaine: Edible_Base
+  class Cocaine: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Cocaine Plant Material";
 		descriptionShort="A harvested branch from the cocaine bush.";
-    model="\dz\gear\cultivation\plant_material.p3d";
-		rotationFlags=34;
-		weight=0;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=2;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD"
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
-  class Brookmint: Edible_Base
+  class Brookmint: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Brookmint Plant Material";
 		descriptionShort="A harvested branch from the brookmint herb.";
     model="Survivalists_Mods\gear\food\food_brookmint.p3d";
-		weight=10;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD",
-      "SRP_Flower1",
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
-  class Dock: Edible_Base
+  class Dock: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Dock Plant Material";
 		descriptionShort="A harvested branch from the dock herb.";
     model="Survivalists_Mods\gear\food\food_dock.p3d";
-		weight=10;
-    rotationFlags=16;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD",
-      "SRP_Flower1",
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
-  class Valerian: Edible_Base
+  class Valerian: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Valerian Plant Material";
 		descriptionShort="A harvested branch from the valerian herb.";
     model="Survivalists_Mods\gear\food\food_valerian.p3d";
-		weight=10;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD",
-      "SRP_Flower1",
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
-  class Ribwort: Edible_Base
+  class Ribwort: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Ribwort Plant Material";
 		descriptionShort="A harvested branch from the ribwort herb.";
     model="Survivalists_Mods\gear\food\food_ribwort.p3d";
-		weight=10;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD",
-      "SRP_Flower1",
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
-  class Rosemary: Edible_Base
+  class Rosemary: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Rosemary Plant Material";
 		descriptionShort="A harvested branch from the rosemary herb.";
     model="Survivalists_Mods\gear\food\food_rosemary.p3d";
-		weight=10;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD",
-      "SRP_Flower1",
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
-  class GreenAmanita: Edible_Base
+  class GreenAmanita: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Green Amanita Plant Material";
 		descriptionShort="A harvested cap from the Green Amanita mushroom.";
     model="Survivalists_Mods\gear\food\food_greenamanita.p3d";
-		weight=10;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD",
-      "SRP_Flower1",
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
-  class Yarrow: Edible_Base
+  class Yarrow: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Yarrow Plant Material";
 		descriptionShort="A harvested branch from the Yarrow herb.";
     model="Survivalists_Mods\gear\food\food_yarrow.p3d";
-		weight=10;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD",
-      "SRP_Flower1",
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
-  class Mint: Edible_Base
+  class Mint: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
 		displayName="Mint Plant Material";
 		descriptionShort="A harvested branch from the Mint herb.";
     model="Survivalists_Mods\gear\food\food_mint.p3d";
-		weight=10;
-		itemSize[]={2,2};
-		stackedUnit="g";
-		absorbency=0.2;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=10;
-		quantityBar=1;
-    canBeSplit=1;
-		inventorySlot[]=
-		{
-			"Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-      "SmokingD",
-      "SRP_Flower1",
-		};
-		containsSeedsType="";
-		containsSeedsQuantity="0";
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=10;
-					healthLevels[]=
-					{
-            {	1,{}},
-            {	0.69999999,{}},
-            {	0.5,{}},
-            {	0.30000001,{}},
-            {	0,{}}
-					};
-				};
-			};
-		};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={1,284,293,30,1};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]={1,100,293,10,1,16};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,35};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,45};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={1,69,172,70,1};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={1,20,40,10,1};
-					cooking_properties[]={100,20};
-				};
-			};
-			class FoodStageTransitions: BaseFoodStageTransitions
-			{
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-
 	};
 
-  class CrushedHerb_Colorbase: Edible_Base
+  class SRP_CrushedHerb_Colorbase: Edible_Base
   {
     scope=0;
     displayName="Crushed Herbs";
@@ -3758,7 +2588,7 @@ class CfgVehicles
 			};
 		};
   };
-  class CrushedHerb_Brookmint: CrushedHerb_Colorbase
+  class SRP_CrushedHerb_Brookmint: SRP_CrushedHerb_Colorbase
   {
     scope=2;
     displayName="Crushed Herbs - Brookmint";
@@ -3772,7 +2602,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\food\data\srp_crushedherb_brookmint_co.paa"
     };
   };
-  class CrushedHerb_Dock: CrushedHerb_Colorbase
+  class SRP_CrushedHerb_Dock: SRP_CrushedHerb_Colorbase
   {
     scope=2;
     displayName="Crushed Herbs - Dock";
@@ -3786,7 +2616,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\food\data\srp_crushedherb_dock_co.paa"
     };
   };
-  class CrushedHerb_GreenAmanita: CrushedHerb_Colorbase
+  class SRP_CrushedHerb_GreenAmanita: SRP_CrushedHerb_Colorbase
   {
     scope=2;
     displayName="Crushed Herbs - Green Amanita";
@@ -3800,7 +2630,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\food\data\srp_crushedherb_greenamanita_co.paa"
     };
   };
-  class CrushedHerb_Mint: CrushedHerb_Colorbase
+  class SRP_CrushedHerb_Mint: SRP_CrushedHerb_Colorbase
   {
     scope=2;
     displayName="Crushed Herbs - Mint";
@@ -3814,7 +2644,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\food\data\srp_crushedherb_mint_co.paa"
     };
   };
-  class CrushedHerb_Ribwort: CrushedHerb_Colorbase
+  class SRP_CrushedHerb_Ribwort: SRP_CrushedHerb_Colorbase
   {
     scope=2;
     displayName="Crushed Herbs - Ribwort";
@@ -3828,7 +2658,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\food\data\srp_crushedherb_ribwort_co.paa"
     };
   };
-  class CrushedHerb_Rosemary: CrushedHerb_Colorbase
+  class SRP_CrushedHerb_Rosemary: SRP_CrushedHerb_Colorbase
   {
     scope=2;
     displayName="Crushed Herbs - Rosemary";
@@ -3842,7 +2672,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\food\data\srp_crushedherb_rosemary_co.paa"
     };
   };
-  class CrushedHerb_Valerian: CrushedHerb_Colorbase
+  class SRP_CrushedHerb_Valerian: SRP_CrushedHerb_Colorbase
   {
     scope=2;
     displayName="Crushed Herbs - Valerian";
@@ -3856,7 +2686,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\food\data\srp_crushedherb_valerian_co.paa"
     };
   };
-  class CrushedHerb_Yarrow: CrushedHerb_Colorbase
+  class SRP_CrushedHerb_Yarrow: SRP_CrushedHerb_Colorbase
   {
     scope=2;
     displayName="Crushed Herbs - Yarrow";

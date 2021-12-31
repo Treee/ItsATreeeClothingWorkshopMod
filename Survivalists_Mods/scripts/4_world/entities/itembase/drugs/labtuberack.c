@@ -1,5 +1,5 @@
-class SRP_LabTubeRack extends ItemBase{
-
+class SRP_LabTubeRack extends ItemBase
+{
   bool IsSlotFilled(string slotName) {
     return FindAttachmentBySlotName(slotName) != null;
   }
