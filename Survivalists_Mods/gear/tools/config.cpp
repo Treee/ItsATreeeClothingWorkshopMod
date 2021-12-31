@@ -482,6 +482,129 @@ class CfgVehicles
 		};
 	};
 
+  // herbalism
+
+  class SRP_MortarBowl: Inventory_Base
+	{
+		scope=2;
+		displayName="Mortar Bowl";
+		descriptionShort="A mortar bowl used for pulverizing things into dust by using a pestle.";
+		model="Survivalists_Mods\gear\tools\srp_mortarbowl.p3d";
+		weight=50;
+		itemSize[]={2,2};
+		fragility=0.001;
+    physLayer="item_small";
+		openItemSpillRange[]={20,40};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\srp_mortarandpestle_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle_destruct.rvmat"}}
+          };
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="pot_drop_SoundSet";
+					id=898;
+				};
+				class wrench_loop
+				{
+					soundSet="SledgeWoodHammer_loop_SoundSet";
+					id=1117;
+				};
+				class wrench_end
+				{
+					soundSet="SledgeWoodHammer_end_SoundSet";
+					id=1118;
+				};
+			};
+		};
+	};
+
+  class SRP_MortarPestle: Inventory_Base
+	{
+		scope=2;
+		displayName="Mortar Pestle";
+		descriptionShort="A mortar pestle used for pulverizing things into dust. Best used with a mortar.";
+		model="Survivalists_Mods\gear\tools\srp_mortarpestle.p3d";
+		weight=50;
+    rotationFlags=16;
+		itemSize[]={2,2};
+		fragility=0.001;
+    physLayer="item_small";
+		openItemSpillRange[]={20,40};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\srp_mortarandpestle_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\tools\data\srp_mortarandpestle_destruct.rvmat"}}
+          };
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="pot_drop_SoundSet";
+					id=898;
+				};
+				class wrench_loop
+				{
+					soundSet="SledgeWoodHammer_loop_SoundSet";
+					id=1117;
+				};
+				class wrench_end
+				{
+					soundSet="SledgeWoodHammer_end_SoundSet";
+					id=1118;
+				};
+			};
+		};
+	};
+
   // mining
   class SRP_Tool_CoalRake: FarmingHoe  // new
 	{
