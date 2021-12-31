@@ -498,7 +498,12 @@ class CfgVehicles
     attachments[]=
     {
       "SRP_Pestle",
-      "SRP_Flower1"
+      "SRP_Flower1",
+      "SRP_CrushedPowder1",
+      "SRP_CrushedPowder2",
+      "SRP_CrushedPowder3",
+      "SRP_CrushedPowder4",
+      "SRP_CrushedPowder5",
     };
     hiddenSelections[]=
 		{

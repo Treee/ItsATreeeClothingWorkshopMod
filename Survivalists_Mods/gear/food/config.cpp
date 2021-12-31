@@ -3714,9 +3714,22 @@ class CfgVehicles
 		descriptionShort="Herbs that have been pulverized by a mortar and pestle.";
     model="Survivalists_Mods\gear\food\srp_crushedherb.p3d";
     color="base";
+    weight=0;
+		itemSize[]={1,1};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    canBeSplit=1;
     inventorySlot[]=
     {
-      "SRP_Flower1"
+      "SRP_Flower1",
+      "SRP_CrushedPowder1",
+      "SRP_CrushedPowder2",
+      "SRP_CrushedPowder3",
+      "SRP_CrushedPowder4",
+      "SRP_CrushedPowder5",
     };
     hiddenSelections[]=
     {
@@ -3745,7 +3758,6 @@ class CfgVehicles
 			};
 		};
   };
-
   class CrushedHerb_Brookmint: CrushedHerb_Colorbase
   {
     scope=2;

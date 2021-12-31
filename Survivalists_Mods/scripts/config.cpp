@@ -1248,10 +1248,47 @@ class CfgSlots
   class Slot_SRP_Flower1
   {
 		name="SRP_Flower1";
-		displayName="Herbalism";
+		displayName="Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=10;
   }
+
+  class Slot_SRP_CrushedPowder1
+  {
+		name="SRP_CrushedPowder1";
+		displayName="Crushed Herbs";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=100;
+  }
+  class Slot_SRP_CrushedPowder2
+  {
+		name="SRP_CrushedPowder2";
+		displayName="Crushed Herbs";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=100;
+  }
+  class Slot_SRP_CrushedPowder3
+  {
+		name="SRP_CrushedPowder3";
+		displayName="Crushed Herbs";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=100;
+  }
+  class Slot_SRP_CrushedPowder4
+  {
+		name="SRP_CrushedPowder4";
+		displayName="Crushed Herbs";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=100;
+  }
+  class Slot_SRP_CrushedPowder5
+  {
+		name="SRP_CrushedPowder5";
+		displayName="Crushed Herbs";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=100;
+  }
+
   class Slot_SRP_SkeletonSkull
   {
 		name="SRP_SkeletonSkull";
@@ -1516,6 +1553,38 @@ class CfgNonAIVehicles
     inventorySlot[]={"SRP_Flower1"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_flower1_proxy.p3d"; //proxy path 
   };
+
+  class Proxysrp_crushedpowder1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_CrushedPowder1"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_crushedpowder1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_crushedpowder2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_CrushedPowder2"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_crushedpowder2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_crushedpowder3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_CrushedPowder3"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_crushedpowder3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_crushedpowder4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_CrushedPowder4"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_crushedpowder4_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_crushedpowder5_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_CrushedPowder5"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_crushedpowder5_proxy.p3d"; //proxy path 
+  };
+
   class Proxysrp_skeletonskull_proxy: ProxyAttachment //same as p3d name
   {
     scope=2;
