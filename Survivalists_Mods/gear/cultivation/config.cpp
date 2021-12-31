@@ -1049,6 +1049,6 @@ class CfgVehicles
 			CropsCount=1; // was 7;
 			CropsType="Mint";
 		};
-	};  
+	};
 
 };

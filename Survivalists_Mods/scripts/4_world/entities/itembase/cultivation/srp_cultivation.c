@@ -77,6 +77,13 @@ class Plant_Mint extends PlantBase
     m_FullMaturityTime = 2700;
   }
 };
+class Plant_BlackCap extends PlantBase
+{
+  void Plant_BlackCap()
+  {
+    m_FullMaturityTime = 30;
+  }
+};
 class TobaccoSeedsPack extends SeedPackBase{};
 class CocaineSeedsPack extends SeedPackBase{};
 class BrookmintSeedsPack extends SeedPackBase{};
@@ -87,3 +94,4 @@ class RosemarySeedsPack extends SeedPackBase{};
 class GreenAmanitaSeedsPack extends SeedPackBase{};
 class YarrowSeedsPack extends SeedPackBase{};
 class MintSeedsPack extends SeedPackBase{};
+class BlackCapSeedsPack extends SeedPackBase{};
