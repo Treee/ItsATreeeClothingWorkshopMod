@@ -483,7 +483,6 @@ class CfgVehicles
 	};
 
   // herbalism
-
   class SRP_MortarBowl: Inventory_Base
 	{
 		scope=2;
@@ -492,9 +491,15 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\tools\srp_mortarbowl.p3d";
 		weight=50;
 		itemSize[]={2,2};
+    itemsCargoSize[]={0,0};
 		fragility=0.001;
     physLayer="item_small";
 		openItemSpillRange[]={20,40};
+    attachments[]=
+    {
+      "SRP_Pestle",
+      "SRP_Flower1"
+    };
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -553,9 +558,14 @@ class CfgVehicles
 		weight=50;
     rotationFlags=16;
 		itemSize[]={2,2};
+    itemsCargoSize[]={0,0};
 		fragility=0.001;
     physLayer="item_small";
 		openItemSpillRange[]={20,40};
+    inventorySlot[]=
+		{
+			"SRP_Pestle"
+		};
     hiddenSelections[]=
 		{
 			"zbytek"

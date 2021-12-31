@@ -1239,6 +1239,19 @@ class CfgSlots
     stackMax=10;
   }
 
+  class Slot_SRP_Pestle
+  {
+		name="SRP_Pestle";
+		displayName="Pestle";
+		ghostIcon="set:dayz_inventory image:missing";
+  }
+  class Slot_SRP_Flower1
+  {
+		name="SRP_Flower1";
+		displayName="Herbalism";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=10;
+  }
   class Slot_SRP_SkeletonSkull
   {
 		name="SRP_SkeletonSkull";
@@ -1491,6 +1504,18 @@ class CfgNonAIVehicles
     model = "Survivalists_Mods\proxy\testtube_proxy6.p3d"; //proxy path 
   };
 
+  class Proxysrp_pestle_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Pestle"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_pestle_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_flower1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Flower1"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_flower1_proxy.p3d"; //proxy path 
+  };
   class Proxysrp_skeletonskull_proxy: ProxyAttachment //same as p3d name
   {
     scope=2;

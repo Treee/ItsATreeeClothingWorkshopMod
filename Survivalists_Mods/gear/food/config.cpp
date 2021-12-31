@@ -2319,6 +2319,7 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=10;
+    canBeSplit=1;
 		quantityBar=1;
 		inventorySlot[]=
 		{
@@ -2477,6 +2478,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -2599,7 +2601,6 @@ class CfgVehicles
 		};
 
 	};
-  
   class Brookmint: Edible_Base
 	{
 		scope=2;
@@ -2614,6 +2615,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -2631,7 +2633,8 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -2751,6 +2754,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -2768,7 +2772,8 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -2887,6 +2892,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -2904,7 +2910,8 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -3023,6 +3030,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -3040,7 +3048,8 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -3159,6 +3168,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -3176,7 +3186,8 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -3295,6 +3306,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -3312,7 +3324,8 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -3431,6 +3444,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -3448,7 +3462,8 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -3567,6 +3582,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=10;
 		quantityBar=1;
+    canBeSplit=1;
 		inventorySlot[]=
 		{
 			"Ingredient",
@@ -3584,7 +3600,8 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-      "SmokingD"
+      "SmokingD",
+      "SRP_Flower1",
 		};
 		containsSeedsType="";
 		containsSeedsQuantity="0";
@@ -3689,4 +3706,157 @@ class CfgVehicles
 		};
 
 	};
+
+  class CrushedHerb_Colorbase: Edible_Base
+  {
+    scope=0;
+    displayName="Crushed Herbs";
+		descriptionShort="Herbs that have been pulverized by a mortar and pestle.";
+    model="Survivalists_Mods\gear\food\srp_crushedherb.p3d";
+    color="base";
+    inventorySlot[]=
+    {
+      "SRP_Flower1"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_co.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+            {	1.0,{"Survivalists_Mods\gear\food\data\srp_crushedherb.rvmat"}},
+            {	0.69999999,{"Survivalists_Mods\gear\food\data\srp_crushedherb.rvmat"}},
+            {	0.5,{"Survivalists_Mods\gear\food\data\srp_crushedherb_damage.rvmat"}},
+            {	0.30000001,{"Survivalists_Mods\gear\food\data\srp_crushedherb_damage.rvmat"}},
+            {	0.0,{"Survivalists_Mods\gear\food\data\srp_crushedherb_damage.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class CrushedHerb_Brookmint: CrushedHerb_Colorbase
+  {
+    scope=2;
+    displayName="Crushed Herbs - Brookmint";
+    color="brookmint";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_brookmint_co.paa"
+    };
+  };
+  class CrushedHerb_Dock: CrushedHerb_Colorbase
+  {
+    scope=2;
+    displayName="Crushed Herbs - Dock";
+    color="dock";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_dock_co.paa"
+    };
+  };
+  class CrushedHerb_GreenAmanita: CrushedHerb_Colorbase
+  {
+    scope=2;
+    displayName="Crushed Herbs - Green Amanita";
+    color="greenamanita";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_greenamanita_co.paa"
+    };
+  };
+  class CrushedHerb_Mint: CrushedHerb_Colorbase
+  {
+    scope=2;
+    displayName="Crushed Herbs - Mint";
+    color="mint";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_mint_co.paa"
+    };
+  };
+  class CrushedHerb_Ribwort: CrushedHerb_Colorbase
+  {
+    scope=2;
+    displayName="Crushed Herbs - Ribwort";
+    color="ribwort";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_ribwort_co.paa"
+    };
+  };
+  class CrushedHerb_Rosemary: CrushedHerb_Colorbase
+  {
+    scope=2;
+    displayName="Crushed Herbs - Rosemary";
+    color="rosemary";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_rosemary_co.paa"
+    };
+  };
+  class CrushedHerb_Valerian: CrushedHerb_Colorbase
+  {
+    scope=2;
+    displayName="Crushed Herbs - Valerian";
+    color="valerian";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_valerian_co.paa"
+    };
+  };
+  class CrushedHerb_Yarrow: CrushedHerb_Colorbase
+  {
+    scope=2;
+    displayName="Crushed Herbs - Yarrow";
+    color="yarrow";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\food\data\srp_crushedherb_yarrow_co.paa"
+    };
+  };
+
 };
