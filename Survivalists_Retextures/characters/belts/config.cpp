@@ -20,6 +20,7 @@ class CfgVehicles
   class SRP_Military_Belt_Tan;
   class SRP_Knife_Sheath_Tan;
   class SRP_TacticalBelt;
+  class SRP_Car_WoodenDerby;
 
   //======================== MAIN MOD RETEXTURES
   class SRP_Elbow_Knee_Pads_Tan : SRP_Elbow_Knee_Pads_Green
@@ -91,6 +92,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\belts\data\tacticalbelt_Black_co.paa"
+		};	
+	};
+
+
+  class SRP_Car_WoodenDerby_Illusive: SRP_Car_WoodenDerby
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "personality"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\belts\data\srp_woodencar_illusive_co.paa"
 		};	
 	};
 };

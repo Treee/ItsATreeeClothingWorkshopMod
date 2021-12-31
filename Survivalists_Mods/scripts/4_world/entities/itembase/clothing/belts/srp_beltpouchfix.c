@@ -21,3 +21,5 @@ class SRP_ModularBelt_Base extends Clothing
 
 class SRP_PoliceBelt extends SRP_ModularBelt_Base{};
 class SRP_TacticalBelt extends SRP_ModularBelt_Base{};
+
+class SRP_Car_WoodenDerby extends Clothing{};

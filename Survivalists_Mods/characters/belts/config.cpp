@@ -435,4 +435,59 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Car_WoodenDerby_Metal: SRP_Car_WoodenDerby
+	{	
+		scope=2;
+		displayName="Metal Derby Car";
+		model="Survivalists_Mods\characters\belts\srp_carmetalderby_g.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "personality"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\srp_carmetalderby_co.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\srp_carmetalderby_m.p3d";
+			female="Survivalists_Mods\characters\belts\srp_carmetalderby_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\belts\data\srp_carmetalderby.rvmat"}},
+						{0.7,{"Survivalists_Mods\characters\belts\data\srp_carmetalderby.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\belts\data\srp_carmetalderby_damage.rvmat"}},
+						{0.3,{"Survivalists_Mods\characters\belts\data\srp_carmetalderby_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\belts\data\srp_carmetalderby_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="SmershVest_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="SmershVest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 };
