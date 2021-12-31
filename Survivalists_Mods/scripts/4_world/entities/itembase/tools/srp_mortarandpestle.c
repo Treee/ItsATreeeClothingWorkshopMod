@@ -25,6 +25,8 @@ class SRP_MortarBowl extends Inventory_Base
 	{
 		super.SetActions();
 		
-		// AddAction(ActionForceFeed);
+		AddAction(ActionMortarCrushIntoPowder);
 	}
 };
+
+class SRP_MortarPestle extends Inventory_Base{};

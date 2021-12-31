@@ -19,6 +19,8 @@ modded class ActionConstructor
 
     actions.Insert(ActionReadBook);
 
+    actions.Insert(ActionMortarCrushIntoPowder);
+
     actions.Insert(ActionConvertStarterForgeKit);
     
     actions.Insert(ActionPourMoltenMetalIntoMold);
