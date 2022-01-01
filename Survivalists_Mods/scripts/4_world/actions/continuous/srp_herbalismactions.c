@@ -36,7 +36,7 @@ class ActionMortarCrushIntoPowder: ActionSingleUseBase
 	override void CreateConditionComponents()  
 	{	
 		m_ConditionItem = new CCINonRuined;
-		m_ConditionTarget = new CCTObject(UAMaxDistances.DEFAULT);
+		m_ConditionTarget = new CCTSelf;
 	}
 		
 	override string GetText()
@@ -49,8 +49,7 @@ class ActionMortarCrushIntoPowder: ActionSingleUseBase
     ItemBase mortarAndPestle = ItemBase.Cast(item);
     SRP_MortarPestle pestleAttachment = SRP_MortarPestle.Cast(mortarAndPestle.FindAttachmentBySlotName("SRP_Pestle"));
     SRP_PlantHerbEdible_Colorbase herb = SRP_PlantHerbEdible_Colorbase.Cast(mortarAndPestle.FindAttachmentBySlotName("SRP_Flower1"));
-		
-    return (pestleAttachment && herb && herb.GetQuantity() > 0 && herb.GetHealth() > 80);
+    return (pestleAttachment && herb && herb.GetQuantity() > 0 && herb.GetHealth() > 74);
 	}
 		
 	override void OnEndServer( ActionData action_data )
@@ -64,7 +63,7 @@ class ActionMortarCrushIntoPowder: ActionSingleUseBase
         string color = herb.ConfigGetString("color");
         string newClassName = "SRP_CrushedHerb_" + color;
         // replace it with powder
-        MiscGameplayFunctions.TurnItemIntoItemEx(player, new ReplaceHerbsWithCrushedPowder(herb, newClassName, player));
+        MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, new ReplaceHerbsWithCrushedPowder(herb, newClassName, action_data.m_Player));
       }
 		}
 	}

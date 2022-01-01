@@ -19,14 +19,10 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Caliper", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");    
     pType.AddItemInHandsProfileIK("SRP_DiceSingle_White", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
     pType.AddItemInHandsProfileIK("SRP_DiceRpg_d4", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
+    pType.AddItemInHandsProfileIK("SRP_PlantHerbEdible_Colorbase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");    
     pType.AddItemInHandsProfileIK("Brookmint", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
     pType.AddItemInHandsProfileIK("Valerian", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
-    pType.AddItemInHandsProfileIK("Dock", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");    
-    pType.AddItemInHandsProfileIK("Ribwort", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");    
-    pType.AddItemInHandsProfileIK("Rosemary", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");    
     pType.AddItemInHandsProfileIK("GreenAmanita", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can_opened.anm"); 
-    pType.AddItemInHandsProfileIK("Yarrow", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");    
-    pType.AddItemInHandsProfileIK("Mint", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");    
     pType.AddItemInHandsProfileIK("SRP_DeskNamePlate", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
     pType.AddItemInHandsProfileIK("SRP_ConsumableDrug_Cocaine", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
     pType.AddItemInHandsProfileIK("SRP_ConsumableDrug_CocaineTainted", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can_opened.anm");
@@ -44,6 +40,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_KatanaSlim_Sheath", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");    
     
     pType.AddItemInHandsProfileIK("SRP_MortarPestle", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/pen.anm");
+    pType.AddItemInHandsProfileIK("SRP_CrushedHerb_Colorbase", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
     //Clothing
     
     // Vest Pouches

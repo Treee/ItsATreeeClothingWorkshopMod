@@ -2311,6 +2311,7 @@ class CfgVehicles
 		displayName="Edible Plant Material";
 		descriptionShort="Harvested material from a plant.";
     model="\dz\gear\cultivation\plant_material.p3d";
+    color="base";
 		rotationFlags=34;
 		weight=0;
 		itemSize[]={2,2};
@@ -2349,7 +2350,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=10;
+					hitpoints=100;
 					healthLevels[]=
 					{
             {	1,{}},
@@ -2451,6 +2452,7 @@ class CfgVehicles
 		displayName="Tobacco";
 		descriptionShort="Tobacco harvested from a tobacco plant.";
 		model="\dz\gear\food\cannabis_seedman.p3d";
+    color="tobacco";
 		itemSize[]={1,1};
 		hiddenSelections[]=
 		{
@@ -2479,6 +2481,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Cocaine Plant Material";
 		descriptionShort="A harvested branch from the cocaine bush.";
+    color="cocaine";
 	};
   class Brookmint: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2486,6 +2489,7 @@ class CfgVehicles
 		displayName="Brookmint Plant Material";
 		descriptionShort="A harvested branch from the brookmint herb.";
     model="Survivalists_Mods\gear\food\food_brookmint.p3d";
+    color="brookmint";
 	};
   class Dock: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2493,6 +2497,7 @@ class CfgVehicles
 		displayName="Dock Plant Material";
 		descriptionShort="A harvested branch from the dock herb.";
     model="Survivalists_Mods\gear\food\food_dock.p3d";
+    color="dock";
 	};
   class Valerian: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2500,6 +2505,7 @@ class CfgVehicles
 		displayName="Valerian Plant Material";
 		descriptionShort="A harvested branch from the valerian herb.";
     model="Survivalists_Mods\gear\food\food_valerian.p3d";
+    color="valerian";
 	};
   class Ribwort: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2507,6 +2513,7 @@ class CfgVehicles
 		displayName="Ribwort Plant Material";
 		descriptionShort="A harvested branch from the ribwort herb.";
     model="Survivalists_Mods\gear\food\food_ribwort.p3d";
+    color="ribwort";
 	};
   class Rosemary: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2514,6 +2521,7 @@ class CfgVehicles
 		displayName="Rosemary Plant Material";
 		descriptionShort="A harvested branch from the rosemary herb.";
     model="Survivalists_Mods\gear\food\food_rosemary.p3d";
+    color="rosemary";
 	};
   class GreenAmanita: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2521,6 +2529,7 @@ class CfgVehicles
 		displayName="Green Amanita Plant Material";
 		descriptionShort="A harvested cap from the Green Amanita mushroom.";
     model="Survivalists_Mods\gear\food\food_greenamanita.p3d";
+    color="greenamanita";
 	};
   class Yarrow: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2528,6 +2537,7 @@ class CfgVehicles
 		displayName="Yarrow Plant Material";
 		descriptionShort="A harvested branch from the Yarrow herb.";
     model="Survivalists_Mods\gear\food\food_yarrow.p3d";
+    color="yarrow";
 	};
   class Mint: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2535,6 +2545,7 @@ class CfgVehicles
 		displayName="Mint Plant Material";
 		descriptionShort="A harvested branch from the Mint herb.";
     model="Survivalists_Mods\gear\food\food_mint.p3d";
+    color="mint";
 	};
 
   class SRP_CrushedHerb_Colorbase: Edible_Base
