@@ -1258,35 +1258,35 @@ class CfgSlots
 		name="SRP_CrushedPowder1";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=100;
+    stackMax=200;
   }
   class Slot_SRP_CrushedPowder2
   {
 		name="SRP_CrushedPowder2";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=100;
+    stackMax=200;
   }
   class Slot_SRP_CrushedPowder3
   {
 		name="SRP_CrushedPowder3";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=100;
+    stackMax=200;
   }
   class Slot_SRP_CrushedPowder4
   {
 		name="SRP_CrushedPowder4";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=100;
+    stackMax=200;
   }
   class Slot_SRP_CrushedPowder5
   {
 		name="SRP_CrushedPowder5";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=100;
+    stackMax=200;
   }
 
   class Slot_SRP_SkeletonSkull

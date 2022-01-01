@@ -1,5 +1,29 @@
 class SRP_MortarBowl extends Inventory_Base
 {
+  bool HasSlotFilledWithCorrectPowder(string slotName, TStringArray types, TIntArray quantities, bool reduceQuantity = false)
+  {
+    SRP_CrushedHerb_Colorbase herb = SRP_CrushedHerb_Colorbase.Cast(FindAttachmentBySlotName(slotName));
+    if (herb)
+    {
+      return herb.AreCorrectTypesAndQuantities(types, quantities, reduceQuantity);
+    }
+    else
+    {
+      return false;
+    }
+  };
+
+  bool HasAllPowderSlotsFilled()
+  {
+    bool isFull = FindAttachmentBySlotName("SRP_CrushedPowder1") != null;
+    isFull &= FindAttachmentBySlotName("SRP_CrushedPowder2") != null;
+    isFull &= FindAttachmentBySlotName("SRP_CrushedPowder3") != null;
+    isFull &= FindAttachmentBySlotName("SRP_CrushedPowder4") != null;
+    isFull &= FindAttachmentBySlotName("SRP_CrushedPowder5") != null;
+    // Print("is it full of powders? " + isFull);
+    return isFull;
+  }
+
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
     bool canAttach = super.CanReceiveAttachment(attachment, slotId);
@@ -13,13 +37,13 @@ class SRP_MortarBowl extends Inventory_Base
     else if (attachment && attachment.IsInherited(SRP_PlantHerbEdible_Colorbase))
     {
       canAttach = FindAttachmentBySlotName("SRP_CrushedPowder1") == null;
-      canAttach = canAttach && FindAttachmentBySlotName("SRP_CrushedPowder2") == null;
-      canAttach = canAttach && FindAttachmentBySlotName("SRP_CrushedPowder3") == null;
-      canAttach = canAttach && FindAttachmentBySlotName("SRP_CrushedPowder4") == null;
-      canAttach = canAttach && FindAttachmentBySlotName("SRP_CrushedPowder5") == null;
+      canAttach &= FindAttachmentBySlotName("SRP_CrushedPowder2") == null;
+      canAttach &= FindAttachmentBySlotName("SRP_CrushedPowder3") == null;
+      canAttach &= FindAttachmentBySlotName("SRP_CrushedPowder4") == null;
+      canAttach &= FindAttachmentBySlotName("SRP_CrushedPowder5") == null;
 
       Edible_Base driedHerb = Edible_Base.Cast( attachment );
-      canAttach = canAttach && driedHerb.IsFoodDried();
+      canAttach &= driedHerb.IsFoodDried();
     }
 		return canAttach;
 	}

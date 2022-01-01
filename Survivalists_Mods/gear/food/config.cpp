@@ -2561,7 +2561,7 @@ class CfgVehicles
 		absorbency=0.2;
 		varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=100;
+		varQuantityMax=200;
     canBeSplit=1;
     inventorySlot[]=
     {

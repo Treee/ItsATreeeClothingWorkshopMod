@@ -62,7 +62,50 @@ class CfgVehicles
       "morphine"
     };
   };
-  //------------------------------------------- CUSTOM STUFF
+  //------------------------------------------- CUSTOM STUFF  
+  class SRP_BandageDressing_Healing: BandageDressing
+  {
+    scope=2;
+    displayName="Healing Bandage";
+    descriptionShort="A bandage dressing that has been combined with healing salves.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\bandage_healing_co.paa"
+    };
+  };
+  class SRP_BandageDressing_Shock: BandageDressing
+  {
+    scope=2;
+    displayName="Shock Bandage";
+    descriptionShort="A bandage dressing that has been combined with healing salves.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\bandage_shock_co.paa"
+    };
+  };
+  class SRP_BandageDressing_Antibiotic: BandageDressing
+  {
+    scope=2;
+    displayName="Antibiotic Bandage";
+    descriptionShort="A bandage dressing that has been combined with healing salves.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\bandage_antibiotic_co.paa"
+    };
+  };
+
   class SRP_BloodPressureMonitor: Inventory_Base // BP_Monitor_pressure
 	{
 		scope=2;
