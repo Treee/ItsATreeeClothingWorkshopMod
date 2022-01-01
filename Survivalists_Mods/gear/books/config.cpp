@@ -213,55 +213,51 @@ class CfgVehicles
 	};
 	class BookThePitAndThePendulum: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thepitandthependulum.html";
 	};
 	class BookTheTimeMachine: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thetimemachine.html";
 	};
 	class BookTheCountryOfTheBlind: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thecountryoftheblind.html";
 	};
 	class BookBilaNemoc: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_bilanemoc.html";
 	};
 	class BookYouth: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_youth.html";
 	};
 	class BookVerwandlung: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_verwandlung.html";
 	};
 	class BookTheJungleBook: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thejunglebook.html";
 	};
 	class BookTheBrothersKaramazov: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thebrotherskaramazov.html";
 	};
 	class BookTheCallOfCthulhu: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thecallofcthulhu.html";
 	};
 	class BookTheShunnedHouse: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_theshunnedhouse.html";
 	};
 	class BookTheHoundOfTheBaskervilles: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
-	};
-	class BookAndersen: ItemBook
-	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thehoundofthebaskervilles.html";
 	};
 	class BookTonyAndTheBeetles: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_tonyandthebeetles.html";
 	};
 	class BookTheCosmicComputer: ItemBook
 	{
