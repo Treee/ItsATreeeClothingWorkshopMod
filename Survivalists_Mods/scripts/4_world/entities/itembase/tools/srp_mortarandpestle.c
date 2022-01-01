@@ -18,8 +18,8 @@ class SRP_MortarBowl extends Inventory_Base
       canAttach = canAttach && FindAttachmentBySlotName("SRP_CrushedPowder4") == null;
       canAttach = canAttach && FindAttachmentBySlotName("SRP_CrushedPowder5") == null;
 
-      // Edible_Base driedHerb = Edible_Base.Cast( attachment );
-      // canAttach = canAttach && driedHerb.IsFoodDried();
+      Edible_Base driedHerb = Edible_Base.Cast( attachment );
+      canAttach = canAttach && driedHerb.IsFoodDried();
     }
 		return canAttach;
 	}
