@@ -261,75 +261,75 @@ class CfgVehicles
 	};
 	class BookTheCosmicComputer: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thecosmiccomputer.html";
 	};
 	class BookATravelerInTime: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_atravelerintime.html";
 	};
 	class BookTheVariableMan: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thevariableman.html";
 	};
 	class BookTheOutlet: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_theoutlet.html";
 	};
 	class BookTheBarrier: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thebarrier.html";
 	};
 	class BookTheDesertOfWheat: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thedesertofwheat.html";
 	};
 	class BookFlyingURanch: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_flyinguranch.html";
 	};
 	class BookCassidysRustlerRoundUp: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_cassidysrustlerroundup.html";
 	};
 	class BookLonesomeLand: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_lonesomeland.html";
 	};
 	class BookTrailin: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_trailin.html";
 	};
 	class BookRonickyDoone: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_ronickydoone.html";
 	};
 	class BookBettyZane: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_bettyzane.html";
 	};
 	class BookATexasMatchmaker: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_atexasmatchmaker.html";
 	};
 	class BookTheThunderBird: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thethunderbird.html";
 	};
 	class BookBlackJack: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_blackjack.html";
 	};
 	class BookTheLastTrail: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thelasttrail.html";
 	};
 	class BookSelectedStories: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_selectedstories.html";
 	};
 	class BookTheHeritageOfTheSioux: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_theheritageofthesioux.html";
 	};
 	class BookDesertGold: ItemBook
 	{
