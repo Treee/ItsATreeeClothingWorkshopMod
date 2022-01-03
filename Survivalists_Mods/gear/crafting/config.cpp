@@ -229,7 +229,12 @@ class CfgVehicles
 		useEntityHierarchy="true";
 		attachments[]=
 		{
-			"SRP_SewingMachine"
+			"SRP_SewingMachine",
+      "SRP_SewingThread1",
+      "SRP_SewingThread2",
+      "SRP_SewingThread3",
+      "SRP_SewingThread4",
+      "SRP_SewingThread5",
 		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
@@ -264,6 +269,20 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"SRP_SewingMachine"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class Thread
+			{
+				name="Thread";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_SewingThread1",
+          "SRP_SewingThread2",
+          "SRP_SewingThread3",
+          "SRP_SewingThread4",
+          "SRP_SewingThread5",
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};
@@ -426,6 +445,14 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=200;
 		quantityBar=1;
+    inventorySlot[]=
+    {
+      "SRP_SewingThread1",
+      "SRP_SewingThread2",
+      "SRP_SewingThread3",
+      "SRP_SewingThread4",
+      "SRP_SewingThread5",
+    };
 		hiddenSelections[]=
 		{
 			"zbytek"

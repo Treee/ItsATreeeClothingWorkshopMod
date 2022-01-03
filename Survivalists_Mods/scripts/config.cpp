@@ -557,6 +557,43 @@ class CfgSlots
 		selection="SewingMachine";
 	};
 
+  class Slot_SRP_MagnetLetter
+	{
+		name="SRP_MagnetLetter";
+		displayName="Letter";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_SewingThread1
+	{
+		name="SRP_SewingThread1";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_SewingThread2
+	{
+		name="SRP_SewingThread2";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_SewingThread3
+	{
+		name="SRP_SewingThread3";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_SewingThread4
+	{
+		name="SRP_SewingThread4";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_SewingThread5
+	{
+		name="SRP_SewingThread5";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+
   class Slot_DrugRecipe_Meth
 	{
 		name="MethRecipe";

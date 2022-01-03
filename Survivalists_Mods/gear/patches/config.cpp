@@ -7,6 +7,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
+      "DZ_Data",
 			"DZ_Characters",
       "Survivalists_Mods"
 		};
@@ -15,6 +16,17 @@ class CfgPatches
 class CfgVehicles
 {
 	class Clothing;
+  class Inventory_Base;
+  // =========================== MODDED MODS
+  class BBP_Letter_Base: Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "SRP_MagnetLetter"
+    };
+  }
+
+
   // -------------------------- CUSTOM STUFF
 
   //------------------------------ FLAG PATCHES
@@ -89,6 +101,25 @@ class CfgVehicles
 					id=797;
 				};
 			};
+		};
+	};
+
+
+  class SRP_PatchFlag_StarterKit: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Country Flag - Empty Canvas";
+    inventorySlot="";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\emptyflag_patch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+    attachments[]=
+		{	
+      "SRP_MagnetLetter",
+			"SRP_SewingThread1",
+      "SRP_SewingThread2"
 		};
 	};
 	
