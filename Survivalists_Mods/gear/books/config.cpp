@@ -433,115 +433,107 @@ class CfgVehicles
 	};
 	class BookLordJim: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_lordjim.html";
 	};
 	class BookMadameBovary: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_madamebovary.html";
 	};
 	class BookNostromo: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_nostromo.html";
 	};
 	class BookNaturalSelection: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_naturalselection.html";
 	};
 	class BookTheMetamorphosesOfOvid: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_metamorphofovid.html";
 	};
 	class BookMobyDick: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_mobydick.html";
 	};
 	class BookKingLear: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_kinglear.html";
 	};
 	class BookLaDbcle: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_ladebacle.html";
 	};
 	class BookTheCanterburyTales: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thecanterburytales.html";
 	};
 	class BookTheRightsOfWoman: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_therightsofwoman.html";
 	};
 	class BookToTheInteriorOfTheEarth: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_totheinterioroftheearth.html";
 	};
 	class BookNjalsSaga: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_njalssaga.html";
 	};
 	class BookTheTrial: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thetrial.html";
 	};
 	class BookDonQuixote: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_donquixote.html";
 	};
 	class BookPhilosophiaeNaturalis: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_philosophianaturalis.html";
 	};
 	class BookPrideAndPrejudice: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_prideandprejudice.html";
 	};
 	class BookRasselas: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_rasselas.html";
 	};
 	class BookScaramouche: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
-	};
-	class BookShe: ItemBook
-	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_scaramouchie.html";
 	};
 	class BookSonsAndLovers: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_sonsandlovers.html";
 	};
 	class BookTheCallOfTheWild: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thecallofthewild.html";
 	};
 	class BookTheComingRace: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
-	};
-	class BookRobinsonCrusoeAdventures: ItemBook
-	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thecomingrace.html";
 	};
 	class BookTheIslandOfDoctorMoreau: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_theislandofdoctormoreau.html";
 	};
 	class BookTheMahabharataOfKrishna: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_themahabharata.html";
 	};
 	class BookTheManWhoWasThursday: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_themanwhowasthursday.html";
 	};
 	class BookThePossessed: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_thepossessed.html";
 	};
 	class BookThePrisonerOfZenda: ItemBook
 	{
-    file="Survivalists_Mods\gear\books\data\book_thepictureofdoriangray.html";
+    file="Survivalists_Mods\gear\books\data\book_theprisonerofzenda.html";
 	};
 	class BookAPrincessOfMars: ItemBook
 	{
