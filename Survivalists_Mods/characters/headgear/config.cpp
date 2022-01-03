@@ -137,6 +137,7 @@ class CfgVehicles
     displayName="Turkey Beanie";
     descriptionShort="Gobble gobble.";
     model="Survivalists_Mods\characters\headgear\turkeybeanie_g.p3d";
+    rotationFlags="64";
     hiddenSelections[]=
 		{
 			"zbytek"
