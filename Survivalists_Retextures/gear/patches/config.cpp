@@ -1,13 +1,13 @@
 class CfgPatches
 {
-	class Survivalists_Retextures_Characters_Patches
+	class Survivalists_Retextures_Gear_Patches
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Characters",
+			"DZ_Data",
 			"Survivalists_Retextures",
 			"Survivalists_Mods_Gear_Patches"
 		};
@@ -24,8 +24,8 @@ class CfgVehicles
 		color="bgsdid";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\srp_flagpatch_BGSD_ID_co.paa",
-			"Survivalists_Retextures\characters\patches\data\srp_wovencloth_Armband_BGSD_co.paa"
+			"Survivalists_Retextures\gear\patches\data\srp_flagpatch_BGSD_ID_co.paa",
+			"Survivalists_Retextures\gear\patches\data\srp_wovencloth_Armband_BGSD_co.paa"
 		};
 	};
 	class SRP_Madhatter_Patch: SRP_PatchFlag_ColorBase
@@ -35,8 +35,8 @@ class CfgVehicles
 		color="Madhatter";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\srp_flagpatch_madhatter_co.paa",
-			"Survivalists_Retextures\characters\patches\data\srp_wovencloth_Armband_madhatter_co.paa"
+			"Survivalists_Retextures\gear\patches\data\srp_flagpatch_madhatter_co.paa",
+			"Survivalists_Retextures\gear\patches\data\srp_wovencloth_Armband_madhatter_co.paa"
 		};
 	};
 	class SRP_PatchFlag_Afghanistan: SRP_PatchFlag_ColorBase
@@ -45,7 +45,7 @@ class CfgVehicles
 		displayName="Country Flag - Afghanistan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Afghanistan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Afghanistan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -55,7 +55,7 @@ class CfgVehicles
 		displayName="Country Flag - Albania";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Albania.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Albania.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -65,7 +65,7 @@ class CfgVehicles
 		displayName="Country Flag - Algeria";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Algeria.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Algeria.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -75,7 +75,7 @@ class CfgVehicles
 		displayName="Country Flag - American Samoa";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\AmericanSamoa.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\AmericanSamoa.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -85,7 +85,7 @@ class CfgVehicles
 		displayName="Country Flag - Andorra";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Andorra.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Andorra.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -95,7 +95,7 @@ class CfgVehicles
 		displayName="Country Flag - Angola";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Angola.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Angola.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -105,7 +105,7 @@ class CfgVehicles
 		displayName="Country Flag - Antigua";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Antigua.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Antigua.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -115,7 +115,7 @@ class CfgVehicles
 		displayName="Country Flag - Argentina";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Argentina.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Argentina.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -125,7 +125,7 @@ class CfgVehicles
 		displayName="Country Flag - Armenia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Armenia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Armenia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -135,7 +135,7 @@ class CfgVehicles
 		displayName="Country Flag - Aruba";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Aruba.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Aruba.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -145,7 +145,7 @@ class CfgVehicles
 		displayName="Country Flag - Australia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Australia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Australia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -155,7 +155,7 @@ class CfgVehicles
 		displayName="Country Flag - Austria";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Austria.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Austria.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -165,7 +165,7 @@ class CfgVehicles
 		displayName="Country Flag - Azerbaijan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Azerbaijan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Azerbaijan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -175,7 +175,7 @@ class CfgVehicles
 		displayName="Country Flag - Azores";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Azores.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Azores.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -185,7 +185,7 @@ class CfgVehicles
 		displayName="Country Flag - Bahamas";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Bahamas.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Bahamas.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -195,7 +195,7 @@ class CfgVehicles
 		displayName="Country Flag - Bahrain";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Bahrain.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Bahrain.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -205,7 +205,7 @@ class CfgVehicles
 		displayName="Country Flag - Bangladesh";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Bangladesh.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Bangladesh.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -215,7 +215,7 @@ class CfgVehicles
 		displayName="Country Flag - Barbados";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Barbados.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Barbados.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -225,7 +225,7 @@ class CfgVehicles
 		displayName="Country Flag - Belarus";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Belarus.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Belarus.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -235,7 +235,7 @@ class CfgVehicles
 		displayName="Country Flag - Belgium";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Belgium.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Belgium.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -245,7 +245,7 @@ class CfgVehicles
 		displayName="Country Flag - Belize";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Belize.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Belize.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -255,7 +255,7 @@ class CfgVehicles
 		displayName="Country Flag - Benin";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Benin.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Benin.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -265,7 +265,7 @@ class CfgVehicles
 		displayName="Country Flag - Bermuda";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Bermuda.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Bermuda.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -275,7 +275,7 @@ class CfgVehicles
 		displayName="Country Flag - Bhutan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Bhutan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Bhutan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -285,7 +285,7 @@ class CfgVehicles
 		displayName="Country Flag - Bolivia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Bolivia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Bolivia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -295,7 +295,7 @@ class CfgVehicles
 		displayName="Country Flag - Bosnia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Bosnia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Bosnia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -305,7 +305,7 @@ class CfgVehicles
 		displayName="Country Flag - Botswana";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Botswana.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Botswana.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -315,7 +315,7 @@ class CfgVehicles
 		displayName="Country Flag - Brazil";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Brazil.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Brazil.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -325,7 +325,7 @@ class CfgVehicles
 		displayName="Country Flag - British Virgin Islands";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\BritishVirginIslands.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\BritishVirginIslands.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -335,7 +335,7 @@ class CfgVehicles
 		displayName="Country Flag - Brunei Darussalam";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\BruneiDarussalam.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\BruneiDarussalam.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -345,7 +345,7 @@ class CfgVehicles
 		displayName="Country Flag - Bulgaria";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Bulgaria.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Bulgaria.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -355,7 +355,7 @@ class CfgVehicles
 		displayName="Country Flag - Burkina Faso";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\BurkinaFaso.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\BurkinaFaso.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -365,7 +365,7 @@ class CfgVehicles
 		displayName="Country Flag - Burma";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Burma.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Burma.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -375,7 +375,7 @@ class CfgVehicles
 		displayName="Country Flag - Burundi";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Burundi.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Burundi.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -385,7 +385,7 @@ class CfgVehicles
 		displayName="Country Flag - Cambodia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Cambodia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Cambodia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -395,7 +395,7 @@ class CfgVehicles
 		displayName="Country Flag - Cameroon";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Cameroon.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Cameroon.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -405,7 +405,7 @@ class CfgVehicles
 		displayName="Country Flag - Canada";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Canada.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Canada.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -415,7 +415,7 @@ class CfgVehicles
 		displayName="Country Flag - Cape Verde";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\CapeVerde.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\CapeVerde.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -425,7 +425,7 @@ class CfgVehicles
 		displayName="Country Flag - Cayman Islands";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\CaymanIslands.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\CaymanIslands.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -435,7 +435,7 @@ class CfgVehicles
 		displayName="Country Flag - Chad";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Chad.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Chad.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -445,7 +445,7 @@ class CfgVehicles
 		displayName="Country Flag - Chile";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Chile.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Chile.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -455,7 +455,7 @@ class CfgVehicles
 		displayName="Country Flag - China";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\China.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\China.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -465,7 +465,7 @@ class CfgVehicles
 		displayName="Country Flag - Colombia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Colombia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Colombia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -475,7 +475,7 @@ class CfgVehicles
 		displayName="Country Flag - Comoros";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Comoros.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Comoros.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -485,7 +485,7 @@ class CfgVehicles
 		displayName="Country Flag - Cook Islands";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\CookIslands.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\CookIslands.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -495,7 +495,7 @@ class CfgVehicles
 		displayName="Country Flag - Costa Rica";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\CostaRica.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\CostaRica.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -505,7 +505,7 @@ class CfgVehicles
 		displayName="Country Flag - Croatia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Croatia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Croatia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -515,7 +515,7 @@ class CfgVehicles
 		displayName="Country Flag - Cuba";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Cuba.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Cuba.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -525,7 +525,7 @@ class CfgVehicles
 		displayName="Country Flag - Curacao";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Curacao.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Curacao.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -535,7 +535,7 @@ class CfgVehicles
 		displayName="Country Flag - Cyprus";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Cyprus.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Cyprus.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -545,7 +545,7 @@ class CfgVehicles
 		displayName="Country Flag - Czech";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Czech.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Czech.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -555,7 +555,7 @@ class CfgVehicles
 		displayName="Country Flag - Denmark";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Denmark.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Denmark.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -565,7 +565,7 @@ class CfgVehicles
 		displayName="Country Flag - Djibouti";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Djibouti.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Djibouti.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -575,7 +575,7 @@ class CfgVehicles
 		displayName="Country Flag - Dominican Republic";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\DominicanRepublic.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\DominicanRepublic.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -585,7 +585,7 @@ class CfgVehicles
 		displayName="Country Flag - East Timor";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\EastTimor.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\EastTimor.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -595,7 +595,7 @@ class CfgVehicles
 		displayName="Country Flag - Ecuador";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Ecuador.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Ecuador.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -605,7 +605,7 @@ class CfgVehicles
 		displayName="Country Flag - Egypt";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Egypt.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Egypt.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -615,7 +615,7 @@ class CfgVehicles
 		displayName="Country Flag - El Salvador";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\ElSalvador.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\ElSalvador.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -625,7 +625,7 @@ class CfgVehicles
 		displayName="Country Flag - Eritrea";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Eritrea.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Eritrea.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -635,7 +635,7 @@ class CfgVehicles
 		displayName="Country Flag - Estonia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Estonia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Estonia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -645,7 +645,7 @@ class CfgVehicles
 		displayName="Country Flag - Ethiopia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Ethiopia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Ethiopia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -655,7 +655,7 @@ class CfgVehicles
 		displayName="Country Flag - Falkland Islands";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\FalklandIslands.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\FalklandIslands.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -665,7 +665,7 @@ class CfgVehicles
 		displayName="Country Flag - Fiji";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Fiji.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Fiji.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -675,7 +675,7 @@ class CfgVehicles
 		displayName="Country Flag - Finland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Finland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Finland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -685,7 +685,7 @@ class CfgVehicles
 		displayName="Country Flag - France";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\France.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\France.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -695,7 +695,7 @@ class CfgVehicles
 		displayName="Country Flag - Gabon";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Gabon.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Gabon.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -705,7 +705,7 @@ class CfgVehicles
 		displayName="Country Flag - Gambia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Gambia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Gambia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -715,7 +715,7 @@ class CfgVehicles
 		displayName="Country Flag - Germany";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Germany.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Germany.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -725,7 +725,7 @@ class CfgVehicles
 		displayName="Country Flag - Ghana";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Ghana.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Ghana.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -735,7 +735,7 @@ class CfgVehicles
 		displayName="Country Flag - Gibraltar";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Gibraltar.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Gibraltar.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -745,7 +745,7 @@ class CfgVehicles
 		displayName="Country Flag - Greece";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Greece.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Greece.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -755,7 +755,7 @@ class CfgVehicles
 		displayName="Country Flag - Greenland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Greenland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Greenland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -765,7 +765,7 @@ class CfgVehicles
 		displayName="Country Flag - Grenada";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Grenada.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Grenada.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -775,7 +775,7 @@ class CfgVehicles
 		displayName="Country Flag - Guam";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Guam.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Guam.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -785,7 +785,7 @@ class CfgVehicles
 		displayName="Country Flag - Guatemala";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Guatemala.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Guatemala.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -795,7 +795,7 @@ class CfgVehicles
 		displayName="Country Flag - Guinea";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Guinea.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Guinea.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -805,7 +805,7 @@ class CfgVehicles
 		displayName="Country Flag - Guyana";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Guyana.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Guyana.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -815,7 +815,7 @@ class CfgVehicles
 		displayName="Country Flag - Gypsy Romani";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\GypsyRomani.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\GypsyRomani.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -825,7 +825,7 @@ class CfgVehicles
 		displayName="Country Flag - Haiti";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Haiti.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Haiti.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -835,7 +835,7 @@ class CfgVehicles
 		displayName="Country Flag - Honduras";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Honduras.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Honduras.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -845,7 +845,7 @@ class CfgVehicles
 		displayName="Country Flag - Hungary";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Hungary.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Hungary.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -855,7 +855,7 @@ class CfgVehicles
 		displayName="Country Flag - Iceland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Iceland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Iceland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -865,7 +865,7 @@ class CfgVehicles
 		displayName="Country Flag - India";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\India.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\India.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -875,7 +875,7 @@ class CfgVehicles
 		displayName="Country Flag - Indonesia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Indonesia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Indonesia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -885,7 +885,7 @@ class CfgVehicles
 		displayName="Country Flag - Iran";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Iran.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Iran.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -895,7 +895,7 @@ class CfgVehicles
 		displayName="Country Flag - Iraq";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Iraq.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Iraq.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -905,7 +905,7 @@ class CfgVehicles
 		displayName="Country Flag - Ireland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Ireland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Ireland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -915,7 +915,7 @@ class CfgVehicles
 		displayName="Country Flag - Israel";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Israel.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Israel.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -925,7 +925,7 @@ class CfgVehicles
 		displayName="Country Flag - Italy";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Italy.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Italy.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -935,7 +935,7 @@ class CfgVehicles
 		displayName="Country Flag - Jamaica";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Jamaica.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Jamaica.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -945,7 +945,7 @@ class CfgVehicles
 		displayName="Country Flag - Japan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Japan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Japan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -955,7 +955,7 @@ class CfgVehicles
 		displayName="Country Flag - Jordan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Jordan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Jordan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -965,7 +965,7 @@ class CfgVehicles
 		displayName="Country Flag - Kazakhstan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Kazakhstan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Kazakhstan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -975,7 +975,7 @@ class CfgVehicles
 		displayName="Country Flag - Kenya";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Kenya.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Kenya.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -985,7 +985,7 @@ class CfgVehicles
 		displayName="Country Flag - Kiribati";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Kiribati.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Kiribati.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -995,7 +995,7 @@ class CfgVehicles
 		displayName="Country Flag - Kosovo";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Kosovo.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Kosovo.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1005,7 +1005,7 @@ class CfgVehicles
 		displayName="Country Flag - Kuwait";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Kuwait.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Kuwait.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1015,7 +1015,7 @@ class CfgVehicles
 		displayName="Country Flag - Kyrgyzstan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Kyrgyzstan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Kyrgyzstan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1025,7 +1025,7 @@ class CfgVehicles
 		displayName="Country Flag - Laos";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Laos.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Laos.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1035,7 +1035,7 @@ class CfgVehicles
 		displayName="Country Flag - Latvia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Latvia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Latvia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1045,7 +1045,7 @@ class CfgVehicles
 		displayName="Country Flag - Lebanon";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Lebanon.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Lebanon.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1055,7 +1055,7 @@ class CfgVehicles
 		displayName="Country Flag - Lesotho";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Lesotho.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Lesotho.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1065,7 +1065,7 @@ class CfgVehicles
 		displayName="Country Flag - Liberia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Liberia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Liberia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1075,7 +1075,7 @@ class CfgVehicles
 		displayName="Country Flag - Libya";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Libya.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Libya.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1085,7 +1085,7 @@ class CfgVehicles
 		displayName="Country Flag - Lithuania";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Lithuania.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Lithuania.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1095,7 +1095,7 @@ class CfgVehicles
 		displayName="Country Flag - Macau";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Macau.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Macau.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1105,7 +1105,7 @@ class CfgVehicles
 		displayName="Country Flag - Macedonia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Macedonia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Macedonia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1115,7 +1115,7 @@ class CfgVehicles
 		displayName="Country Flag - Madagascar";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Madagascar.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Madagascar.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1125,7 +1125,7 @@ class CfgVehicles
 		displayName="Country Flag - Malawi";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Malawi.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Malawi.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1135,7 +1135,7 @@ class CfgVehicles
 		displayName="Country Flag - Malaysia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Malaysia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Malaysia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1145,7 +1145,7 @@ class CfgVehicles
 		displayName="Country Flag - Maldives";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Maldives.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Maldives.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1155,7 +1155,7 @@ class CfgVehicles
 		displayName="Country Flag - Mali";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Mali.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Mali.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1165,7 +1165,7 @@ class CfgVehicles
 		displayName="Country Flag - Malta";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Malta.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Malta.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1175,7 +1175,7 @@ class CfgVehicles
 		displayName="Country Flag - Marshall Islands";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\MarshallIslands.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\MarshallIslands.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1185,7 +1185,7 @@ class CfgVehicles
 		displayName="Country Flag - Mauritius";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Mauritius.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Mauritius.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1195,7 +1195,7 @@ class CfgVehicles
 		displayName="Country Flag - Mexico";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Mexico.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Mexico.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1205,7 +1205,7 @@ class CfgVehicles
 		displayName="Country Flag - Micronesia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Micronesia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Micronesia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1215,7 +1215,7 @@ class CfgVehicles
 		displayName="Country Flag - Moldova";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Moldova.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Moldova.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1225,7 +1225,7 @@ class CfgVehicles
 		displayName="Country Flag - Monaco";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Monaco.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Monaco.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1235,7 +1235,7 @@ class CfgVehicles
 		displayName="Country Flag - Mongolia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Mongolia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Mongolia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1245,7 +1245,7 @@ class CfgVehicles
 		displayName="Country Flag - Montenegro";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Montenegro.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Montenegro.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1255,7 +1255,7 @@ class CfgVehicles
 		displayName="Country Flag - Morocco";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Morocco.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Morocco.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1265,7 +1265,7 @@ class CfgVehicles
 		displayName="Country Flag - Mozambique";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Mozambique.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Mozambique.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1275,7 +1275,7 @@ class CfgVehicles
 		displayName="Country Flag - Namibia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Namibia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Namibia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1285,7 +1285,7 @@ class CfgVehicles
 		displayName="Country Flag - Nauru";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Nauru.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Nauru.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1295,7 +1295,7 @@ class CfgVehicles
 		displayName="Country Flag - Netherlands";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Netherlands.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Netherlands.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1305,7 +1305,7 @@ class CfgVehicles
 		displayName="Country Flag - New Zealand";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\NewZealand.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\NewZealand.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1315,7 +1315,7 @@ class CfgVehicles
 		displayName="Country Flag - Nicaragua";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Nicaragua.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Nicaragua.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1325,7 +1325,7 @@ class CfgVehicles
 		displayName="Country Flag - Niger";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Niger.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Niger.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1335,7 +1335,7 @@ class CfgVehicles
 		displayName="Country Flag - Nigeria";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Nigeria.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Nigeria.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1345,7 +1345,7 @@ class CfgVehicles
 		displayName="Country Flag - Northern Ireland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\NorthernIreland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\NorthernIreland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1355,7 +1355,7 @@ class CfgVehicles
 		displayName="Country Flag - Norway";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Norway.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Norway.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1365,7 +1365,7 @@ class CfgVehicles
 		displayName="Country Flag - Oman";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Oman.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Oman.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1375,7 +1375,7 @@ class CfgVehicles
 		displayName="Country Flag - Pakistan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Pakistan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Pakistan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1385,7 +1385,7 @@ class CfgVehicles
 		displayName="Country Flag - Palau";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Palau.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Palau.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1395,7 +1395,7 @@ class CfgVehicles
 		displayName="Country Flag - Palestine";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Palestine.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Palestine.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1405,7 +1405,7 @@ class CfgVehicles
 		displayName="Country Flag - Panama";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Panama.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Panama.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1415,7 +1415,7 @@ class CfgVehicles
 		displayName="Country Flag - Papua New Guinea";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\PapuaNewGuinea.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\PapuaNewGuinea.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1425,7 +1425,7 @@ class CfgVehicles
 		displayName="Country Flag - Paraguay";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Paraguay.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Paraguay.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1435,7 +1435,7 @@ class CfgVehicles
 		displayName="Country Flag - Peru";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Peru.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Peru.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1445,7 +1445,7 @@ class CfgVehicles
 		displayName="Country Flag - Philippines";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Philippines.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Philippines.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1455,7 +1455,7 @@ class CfgVehicles
 		displayName="Country Flag - Poland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Poland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Poland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1465,7 +1465,7 @@ class CfgVehicles
 		displayName="Country Flag - Portugal";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Portugal.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Portugal.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1475,7 +1475,7 @@ class CfgVehicles
 		displayName="Country Flag - Puerto Rico";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\PuertoRico.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\PuertoRico.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1485,7 +1485,7 @@ class CfgVehicles
 		displayName="Country Flag - Qatar";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Qatar.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Qatar.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1495,7 +1495,7 @@ class CfgVehicles
 		displayName="Country Flag - Romania";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Romania.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Romania.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1505,7 +1505,7 @@ class CfgVehicles
 		displayName="Country Flag - Russia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Russia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Russia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1515,7 +1515,7 @@ class CfgVehicles
 		displayName="Country Flag - Rwanda";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Rwanda.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Rwanda.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1525,7 +1525,7 @@ class CfgVehicles
 		displayName="Country Flag - Samoa";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Samoa.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Samoa.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1535,7 +1535,7 @@ class CfgVehicles
 		displayName="Country Flag - San Marino";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\SanMarino.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\SanMarino.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1545,7 +1545,7 @@ class CfgVehicles
 		displayName="Country Flag - Saudi Arabia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\SaudiArabia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\SaudiArabia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1555,7 +1555,7 @@ class CfgVehicles
 		displayName="Country Flag - Scotland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Scotland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Scotland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1565,7 +1565,7 @@ class CfgVehicles
 		displayName="Country Flag - Senegal";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Senegal.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Senegal.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1575,7 +1575,7 @@ class CfgVehicles
 		displayName="Country Flag - Serbia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Serbia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Serbia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1585,7 +1585,7 @@ class CfgVehicles
 		displayName="Country Flag - Seychelles";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Seychelles.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Seychelles.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1595,7 +1595,7 @@ class CfgVehicles
 		displayName="Country Flag - Sicily";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Sicily.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Sicily.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1605,7 +1605,7 @@ class CfgVehicles
 		displayName="Country Flag - Sierra Leone";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\SierraLeone.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\SierraLeone.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1615,7 +1615,7 @@ class CfgVehicles
 		displayName="Country Flag - Singapore";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Singapore.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Singapore.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1625,7 +1625,7 @@ class CfgVehicles
 		displayName="Country Flag - Slovakia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Slovakia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Slovakia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1635,7 +1635,7 @@ class CfgVehicles
 		displayName="Country Flag - Slovenia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Slovenia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Slovenia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1645,7 +1645,7 @@ class CfgVehicles
 		displayName="Country Flag - Solomon Islands";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\SolomonIslands.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\SolomonIslands.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1655,7 +1655,7 @@ class CfgVehicles
 		displayName="Country Flag - Somalia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Somalia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Somalia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1665,7 +1665,7 @@ class CfgVehicles
 		displayName="Country Flag - South Africa";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\SouthAfrica.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\SouthAfrica.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1675,7 +1675,7 @@ class CfgVehicles
 		displayName="Country Flag - South Korea";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\SouthKorea.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\SouthKorea.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1685,7 +1685,7 @@ class CfgVehicles
 		displayName="Country Flag - South Vietnam";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\SouthVietnam.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\SouthVietnam.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1695,7 +1695,7 @@ class CfgVehicles
 		displayName="Country Flag - Spain";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Spain.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Spain.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1705,7 +1705,7 @@ class CfgVehicles
 		displayName="Country Flag - Sri Lanka";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\SriLanka.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\SriLanka.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1715,7 +1715,7 @@ class CfgVehicles
 		displayName="Country Flag - St Lucia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\StLucia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\StLucia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1725,7 +1725,7 @@ class CfgVehicles
 		displayName="Country Flag - St Maarten";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\StMaarten.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\StMaarten.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1735,7 +1735,7 @@ class CfgVehicles
 		displayName="Country Flag - Sudan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Sudan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Sudan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1745,7 +1745,7 @@ class CfgVehicles
 		displayName="Country Flag - Suriname";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Suriname.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Suriname.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1755,7 +1755,7 @@ class CfgVehicles
 		displayName="Country Flag - Swaziland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Swaziland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Swaziland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1765,7 +1765,7 @@ class CfgVehicles
 		displayName="Country Flag - Sweden";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Sweden.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Sweden.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1775,7 +1775,7 @@ class CfgVehicles
 		displayName="Country Flag - Switzerland";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Switzerland.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Switzerland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1785,7 +1785,7 @@ class CfgVehicles
 		displayName="Country Flag - Syria";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Syria.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Syria.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1795,7 +1795,7 @@ class CfgVehicles
 		displayName="Country Flag - Taiwan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Taiwan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Taiwan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1805,7 +1805,7 @@ class CfgVehicles
 		displayName="Country Flag - Tajikistan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Tajikistan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Tajikistan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1815,7 +1815,7 @@ class CfgVehicles
 		displayName="Country Flag - Tanzania";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Tanzania.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Tanzania.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1825,7 +1825,7 @@ class CfgVehicles
 		displayName="Country Flag - Thailand";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Thailand.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Thailand.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1835,7 +1835,7 @@ class CfgVehicles
 		displayName="Country Flag - Tibet";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Tibet.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Tibet.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1845,7 +1845,7 @@ class CfgVehicles
 		displayName="Country Flag - Togo";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Togo.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Togo.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1855,7 +1855,7 @@ class CfgVehicles
 		displayName="Country Flag - Tonga";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Tonga.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Tonga.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1865,7 +1865,7 @@ class CfgVehicles
 		displayName="Country Flag - Trinidad";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Trinidad.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Trinidad.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1875,7 +1875,7 @@ class CfgVehicles
 		displayName="Country Flag - Tunisia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Tunisia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Tunisia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1885,7 +1885,7 @@ class CfgVehicles
 		displayName="Country Flag - Turkey";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Turkey.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Turkey.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1895,7 +1895,7 @@ class CfgVehicles
 		displayName="Country Flag - Turkmenistan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Turkmenistan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Turkmenistan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1905,7 +1905,7 @@ class CfgVehicles
 		displayName="Country Flag - Turks & Caicos";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\TurksCaicos.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\TurksCaicos.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1915,7 +1915,7 @@ class CfgVehicles
 		displayName="Country Flag - Tuvalu";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Tuvalu.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Tuvalu.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1925,7 +1925,7 @@ class CfgVehicles
 		displayName="Country Flag - UAE";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\UAE.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\UAE.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1935,7 +1935,7 @@ class CfgVehicles
 		displayName="Country Flag - Uganda";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Uganda.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Uganda.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1945,7 +1945,7 @@ class CfgVehicles
 		displayName="Country Flag - Ukraine";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Ukraine.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Ukraine.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1955,7 +1955,7 @@ class CfgVehicles
 		displayName="Country Flag - United Kingdom";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\UnitedKingdom.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\UnitedKingdom.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1965,7 +1965,7 @@ class CfgVehicles
 		displayName="Country Flag - United Nations";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\UnitedNations.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\UnitedNations.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1975,7 +1975,7 @@ class CfgVehicles
 		displayName="Country Flag - United States";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\UnitedStates.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\UnitedStates.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1985,7 +1985,7 @@ class CfgVehicles
 		displayName="Country Flag - Uruguay";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Uruguay.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Uruguay.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -1995,7 +1995,7 @@ class CfgVehicles
 		displayName="Country Flag - USSR";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\USSR.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\USSR.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2005,7 +2005,7 @@ class CfgVehicles
 		displayName="Country Flag - Uzbekistan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Uzbekistan.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Uzbekistan.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2015,7 +2015,7 @@ class CfgVehicles
 		displayName="Country Flag - Vanuatu";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Vanuatu.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Vanuatu.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2025,7 +2025,7 @@ class CfgVehicles
 		displayName="Country Flag - Venezuela";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Venezuela.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Venezuela.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2035,7 +2035,7 @@ class CfgVehicles
 		displayName="Country Flag - Vietnam";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Vietnam.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Vietnam.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2045,7 +2045,7 @@ class CfgVehicles
 		displayName="Country Flag - Wales";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Wales.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Wales.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2055,7 +2055,7 @@ class CfgVehicles
 		displayName="Country Flag - Yemen";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Yemen.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Yemen.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2065,7 +2065,7 @@ class CfgVehicles
 		displayName="Country Flag - Yugoslavia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Yugoslavia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Yugoslavia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2075,7 +2075,7 @@ class CfgVehicles
 		displayName="Country Flag - Zambia";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Zambia.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Zambia.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2085,7 +2085,7 @@ class CfgVehicles
 		displayName="Country Flag - Zimbabwe";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\flag\Zimbabwe.paa",
+			"Survivalists_Retextures\gear\patches\data\flag\Zimbabwe.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2095,7 +2095,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Squad Leader";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_sl.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_sl.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2105,7 +2105,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Team Leader";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_tl.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_tl.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2115,7 +2115,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Machinegunner";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_gnr.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_gnr.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2125,7 +2125,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Medic";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_med.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_med.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2135,7 +2135,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Sniper";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_snpr.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_snpr.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2145,7 +2145,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Rifleman";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_rfl.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_rfl.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2155,7 +2155,7 @@ class CfgVehicles
 		displayName="Identifier Patch - US";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_US.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_US.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2165,7 +2165,7 @@ class CfgVehicles
 		displayName="Identifier Patch - UK";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_UK.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_UK.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2175,7 +2175,7 @@ class CfgVehicles
 		displayName="Identifier Patch - AUS";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_AUS.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_AUS.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2185,7 +2185,7 @@ class CfgVehicles
 		displayName="Identifier Patch - US";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_US_IR.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_US_IR.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2195,7 +2195,7 @@ class CfgVehicles
 		displayName="Identifier Patch - UK";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_UK_IR.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_UK_IR.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2205,7 +2205,7 @@ class CfgVehicles
 		displayName="Identifier Patch - AUS";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_AUS_IR.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_AUS_IR.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2215,7 +2215,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Rotten's Raiders";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_cobra.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_cobra.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2225,7 +2225,7 @@ class CfgVehicles
 		displayName="Identifier Patch - A10 Warthog";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_a10.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_a10.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2235,7 +2235,7 @@ class CfgVehicles
 		displayName="Identifier Patch - EOD";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_EOD.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_EOD.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2245,7 +2245,7 @@ class CfgVehicles
 		displayName="Identifier Patch - F*ck Sh*t Up";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_FSU.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_FSU.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2255,7 +2255,7 @@ class CfgVehicles
 		displayName="Identifier Patch - No F*cks Given";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_fcks.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_fcks.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2265,7 +2265,7 @@ class CfgVehicles
 		displayName="Identifier Patch - I'm Too Old for This Sh*t";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_old.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_old.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2275,7 +2275,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Weyland-Yutani Corp";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_Weyland.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_Weyland.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2285,7 +2285,7 @@ class CfgVehicles
 		displayName="Identifier Patch - The Warriors";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_warriors.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_warriors.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2295,7 +2295,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Canada";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_CAN.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_CAN.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2305,7 +2305,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Canada";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_CAN_IR.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_CAN_IR.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2315,7 +2315,7 @@ class CfgVehicles
 		displayName="Identifier Patch - OBEY";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_obey.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_obey.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2325,7 +2325,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Blackwater";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_Blackwater.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_Blackwater.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2335,7 +2335,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Lagoon Trade & Courier Services";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_lagoon.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_lagoon.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2345,7 +2345,7 @@ class CfgVehicles
 		displayName="Identifier Patch - HCLI";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_HCLI.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_HCLI.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2355,7 +2355,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Boogaloo";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_boogaloo.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_boogaloo.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2365,7 +2365,7 @@ class CfgVehicles
 		displayName="Identifier Patch - UN";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_UN.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_UN.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2375,7 +2375,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Umbrella";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_Umbrella.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_Umbrella.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2385,7 +2385,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Umbrella";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_USS.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_USS.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2395,7 +2395,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Romania";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_ROM.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_ROM.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2405,7 +2405,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Sweden";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_SWE.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_SWE.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2415,7 +2415,7 @@ class CfgVehicles
 		displayName="Identifier Patch - Anarchy";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_AN.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_AN.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2425,7 +2425,7 @@ class CfgVehicles
 		displayName="Identifier Patch - RTO";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_RTO.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_RTO.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2435,7 +2435,7 @@ class CfgVehicles
 		displayName="Identifier Patch - This is the Way";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_warrior.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_warrior.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
@@ -2445,7 +2445,7 @@ class CfgVehicles
 		displayName="Identifier Patch - ADMIN";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\patches\data\logo\patch_admin.paa",
+			"Survivalists_Retextures\gear\patches\data\logo\patch_admin.paa",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
