@@ -21,7 +21,7 @@ class SRP_CrushedHerb_Colorbase extends Edible_Base
         // Print("Has a correct combo in this slot: ");
         if (reduceQuantity)
         {
-          ReduceQuantity(quantities.Get(i))
+          ReduceQuantity(quantities.Get(i));
         }
         return true;
       }

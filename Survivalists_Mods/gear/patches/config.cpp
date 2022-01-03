@@ -109,6 +109,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Country Flag - Empty Canvas";
+    descriptionShort="An empty cloth patch. Add some thread and elbow grease to sew the finished patch.";
     inventorySlot="";
 		hiddenSelectionsTextures[]=
 		{
