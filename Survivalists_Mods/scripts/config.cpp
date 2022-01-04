@@ -880,6 +880,13 @@ class CfgSlots
 		displayName="Katana Sheath";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+  class Slot_SRP_Bones
+  {
+		name="SRP_Bones";
+		displayName="Bones";
+		ghostIcon="set:dayz_inventory image:tf_stones";
+    stackMax="30";
+  };
 
   //--------------------------- TOOLS
   class Slot_SRP_Tool1

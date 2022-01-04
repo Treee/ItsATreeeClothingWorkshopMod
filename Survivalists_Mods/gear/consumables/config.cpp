@@ -80,6 +80,15 @@ class CfgVehicles
       "Lightbulb"
 		};
 	};
+
+  // bone armor kit
+  class Bone: Inventory_Base
+  {
+    inventorySlot[]=
+		{
+			"Reflector_1_1"
+		};
+  };
   
   //----------------------------------------------- CUSTOM STUFF
   class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery

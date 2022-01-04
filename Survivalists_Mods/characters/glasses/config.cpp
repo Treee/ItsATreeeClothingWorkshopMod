@@ -78,7 +78,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Old Goggles";
 		descriptionShort="A pair of old looking goggles";
-		model="Survivalists_Mods\characters\glasses\gogglesHead_g.p3d";
+		model="Survivalists_Mods\characters\headgear\gogglesHead_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		inventorySlot="Eyewear";
@@ -120,11 +120,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"Survivalists_Mods\characters\headgear\data\goggles.rvmat"}},
-            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\goggles.rvmat"}},
-            {0.5,	{	"Survivalists_Mods\characters\headgear\data\goggles_damage.rvmat"}},
-            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\goggles_damage.rvmat"}},
-            {0.0,	{	"Survivalists_Mods\characters\headgear\data\goggles_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\characters\glasses\data\goggles.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\glasses\data\goggles.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\glasses\data\goggles_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\glasses\data\goggles_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\glasses\data\goggles_destruct.rvmat"}}
 					};
 				};
 			};

@@ -89,6 +89,21 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_SimpleBoneArmor_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Simple Bone Armor Kit";
+		descriptionShort="A Bone Armor Kit - Finish with a needle and thread.";
+    attachments[]=
+		{
+			"SRP_Bones",
+      "Material_MetalWire",
+      "Material_Shelter_Rope",
+      "Material_FPole_Rope",
+      "Material_Shelter_Fabric",
+		};
+	};
+
   class SRP_Brewstershield: PlateCarrierVest
 	{
 		scope=2;
