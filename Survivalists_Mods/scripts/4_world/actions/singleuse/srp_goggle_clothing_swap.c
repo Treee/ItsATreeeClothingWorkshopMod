@@ -1,11 +1,11 @@
-class ActionPutGogglesOnHead : ActionSingleUseBase
+class ActionPutGogglesOnHead extends ActionSingleUseBase
 {
-	void ActionFoldShemaghBandit ()
+	void ActionPutGogglesOnHead()
 	{
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_PICKUP_HANDS;
 	}
 
-	override void CreateConditionComponents ()
+	override void CreateConditionComponents()
 	{
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNone;
@@ -16,18 +16,18 @@ class ActionPutGogglesOnHead : ActionSingleUseBase
 		return "Wear On Helmet";
 	}
 
-	override bool HasTarget () { return false; }
+	override bool HasTarget() { return false; }
 
-	override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
+	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
 		if (item)
 			return true;
 		return false;
 	}
 
-	override bool ActionConditionContinue ( ActionData action_data ) { return true; }
+	override bool ActionConditionContinue( ActionData action_data ) { return true; }
 
-	override void OnExecuteServer ( ActionData action_data )
+	override void OnExecuteServer( ActionData action_data )
 	{
     TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, "SRP_Goggles_Head", action_data.m_Player);
     lambda.SetTransferParams(true, true, true, false, 1);
@@ -35,14 +35,14 @@ class ActionPutGogglesOnHead : ActionSingleUseBase
 	}
 };
 
-class ActionPutGogglesOnFace: ActionSingleUseBase
+class ActionPutGogglesOnFace extends ActionSingleUseBase
 {
-	void ActionFoldShemaghBandit ()
+	void ActionPutGogglesOnFace()
 	{
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_PICKUP_HANDS;
 	}
 
-	override void CreateConditionComponents ()
+	override void CreateConditionComponents()
 	{
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNone;
@@ -53,18 +53,18 @@ class ActionPutGogglesOnFace: ActionSingleUseBase
 		return "Wear On Face";
 	}
 
-	override bool HasTarget () { return false; }
+	override bool HasTarget() { return false; }
 
-	override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
+	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
 		if (item)
 			return true;
 		return false;
 	}
 
-	override bool ActionConditionContinue ( ActionData action_data ) { return true; }
+	override bool ActionConditionContinue( ActionData action_data ) { return true; }
 
-	override void OnExecuteServer ( ActionData action_data )
+	override void OnExecuteServer( ActionData action_data )
 	{
     TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, "SRP_Goggles_Face", action_data.m_Player);
     lambda.SetTransferParams(true, true, true, false, 1);

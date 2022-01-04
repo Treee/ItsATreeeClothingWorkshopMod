@@ -1882,6 +1882,7 @@ class CfgVehicles
 		itemSize[]={1,1};
 		absorbency=0.30000001;
 		physLayer="item_small";
+    itemBehaviour=1;
     inventorySlot[]=
     {
       "CardHand1",

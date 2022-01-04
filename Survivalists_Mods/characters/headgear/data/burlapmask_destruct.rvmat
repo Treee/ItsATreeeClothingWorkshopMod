@@ -3,13 +3,13 @@ diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
 specular[]={0.11,0.11,0.11,1};
-specularPower=50;
+specularPower=500;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
 	texture="Survivalists_Mods\characters\headgear\data\burlapmask_NOHQ.paa";
-	uvSource="tex";
+	uvSource="norm";
 	class uvTransform
 	{
 		aside[]={1,0,0};
@@ -21,7 +21,7 @@ class Stage1
 class Stage2
 {
 	texture="#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
-	uvSource="tex";
+	uvSource="norm";
 	class uvTransform
 	{
 		aside[]={1,0,0};
@@ -33,7 +33,7 @@ class Stage2
 class Stage3
 {
 	texture="dz\weapons\data\weapons_destruct_generic_mc.paa";
-	uvSource="tex";
+	uvSource="norm";
 	class uvTransform
 	{
 		aside[]={1,0,0};
@@ -45,7 +45,7 @@ class Stage3
 class Stage4
 {
 	texture="Survivalists_Mods\characters\headgear\data\cowboyhat_AS.paa";
-	uvSource="tex";
+	uvSource="norm";
 	class uvTransform
 	{
 		aside[]={1,0,0};
@@ -57,7 +57,7 @@ class Stage4
 class Stage5
 {
 	texture="Survivalists_Mods\characters\headgear\data\burlapmask_SMDI.paa";
-	uvSource="tex";
+	uvSource="norm";
 	class uvTransform
 	{
 		aside[]={1,0,0};
@@ -69,7 +69,7 @@ class Stage5
 class Stage6
 {
 	texture="#(ai,16,2,2)fresnel(0.71,0.6)";
-	uvSource="tex";
+	uvSource="norm";
 	class uvTransform
 	{
 		aside[]={1,0,0};
@@ -81,7 +81,7 @@ class Stage6
 class Stage7
 {
 	texture="dz\data\data\env_land_co.paa";
-	uvSource="tex";
+	uvSource="norm";
 	class uvTransform
 	{
 		aside[]={1,0,0};
