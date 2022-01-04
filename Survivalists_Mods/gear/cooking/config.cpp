@@ -32,7 +32,7 @@ class CfgVehicles
 	{
 		scope=2;
     displayName="Portable Gas Lamp";
-    descriptionShort="This lamp emits only a small amount of light."
+    descriptionShort="This lamp emits only a small amount of light.";
 		model="Survivalists_Mods\gear\cooking\srp_portablegaslamp.p3d";
 		weight=330;
 		itemSize[]={4,3};

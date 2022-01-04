@@ -1,5 +1,7 @@
-modded class PluginRecipesManagerBase extends PluginBase
+modded class PluginRecipesManager
 {	
+  // this is increased from 128 due to the flag patches. not sure of the performance impact of this
+  const int MAX_CONCURENT_RECIPES = 256;
 	override void RegisterRecipies()
 	{
 		super.RegisterRecipies();				// Calling base RegisterRecipies()
