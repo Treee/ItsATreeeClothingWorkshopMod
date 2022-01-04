@@ -453,37 +453,37 @@ class CfgSlots
 		name="carman2";
 		displayName="carman2";
 		selection="carman_2";
-		ghostIcon="pouches";
+    ghostIcon="set:dayz_inventory image:pouches";		
 	};
 	class Slot_Hatchet
 	{
 		name="Hatchet";
 		displayName="Hatchet";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderright";
 	};
 	class Slot_BPAxe
 	{
 		name="BPAxe";
-		displayName="BPAxe";
-		ghostIcon="shoulderright";
+		displayName="Axe";
+		ghostIcon="set:dayz_inventory image:shoulderright";
 	};
 	class Slot_FShovel
 	{
 		name="FShovel";
-		displayName="FShovel";
-		ghostIcon="shoulderright";
+		displayName="Shovel";
+		ghostIcon="set:dayz_inventory image:shoulderright";
 	};
 	class Slot_binocular
 	{
 		name="binocular";
-		displayName="binocular";
-		ghostIcon="opticacog";
+		displayName="Binoculars";
+		ghostIcon="set:dayz_inventory image:opticacog";
 	};
 	class Slot_FirstAid
 	{
 		name="firstaidkit";
 		displayName="firstaidkit";
-		ghostIcon="hips";
+    ghostIcon="set:dayz_inventory image:hips";		
 	};
 	class Slot_no
 	{
@@ -778,68 +778,68 @@ class CfgSlots
   {
 		name="SmallPouch1";
 		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_SmallPouch2
   {
 		name="SmallPouch2";
 		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_SmallPouch3
   {
 		name="SmallPouch3";
 		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_SmallPouch4
   {
 		name="SmallPouch4";
 		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_SmallPouch5
   {
 		name="SmallPouch5";
 		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_SmallPouch6
   {
 		name="SmallPouch6";
 		displayName="Small Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
 
   class Slot_LargePouch1
   {
 		name="LargePouch1";
 		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_LargePouch2
   {
 		name="LargePouch2";
 		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_LargePouch3
   {
 		name="LargePouch3";
 		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_LargePouch4
   {
 		name="LargePouch4";
 		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   class Slot_LargePouch5
   {
 		name="LargePouch5";
 		displayName="Large Pouch";
-		ghostIcon="set:dayz_inventory image:missing";
+    ghostIcon="set:dayz_inventory image:pouches";		
   };
   
   class Slot_SRP_RawOre
@@ -1368,7 +1368,13 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
-
+  
+  class Proxyhatchet: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="Hatchet";
+		model="\dz\weapons\melee\blade\hatchet.p3d";
+	};
   class ProxySodaCan_Used: ProxyAttachment
 	{
 		scope=2;
@@ -1458,81 +1464,81 @@ class CfgNonAIVehicles
 
   class Proxycigarettecase_proxy1: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase1"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy1.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase1"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy1.p3d"; //proxy path 
   };    
   class Proxycigarettecase_proxy2: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase2"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy2.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase2"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy2.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy3: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase3"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy3.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase3"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy3.p3d"; //proxy path 
   };    
   class Proxycigarettecase_proxy4: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase4"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy4.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase4"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy4.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy5: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase5"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy5.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase5"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy5.p3d"; //proxy path 
   };    
   class Proxycigarettecase_proxy6: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase6"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy6.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase6"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy6.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy7: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase7"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy7.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase7"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy7.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy8: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase8"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy8.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase8"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy8.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy9: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase9"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy9.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase9"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy9.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy10: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase10"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy10.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase10"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy10.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy11: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase11"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy11.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase11"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy11.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy12: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase12"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy12.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase12"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy12.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy13: ProxyAttachment //same as p3d name
   {
-      scope=2;
-      inventorySlot[]={"CigaretteCase13"}; // same as slot name 
-      model="Survivalists_Mods\proxy\cigarettecase_proxy13.p3d"; //proxy path 
+    scope=2;
+    inventorySlot[]={"CigaretteCase13"}; // same as slot name 
+    model="Survivalists_Mods\proxy\cigarettecase_proxy13.p3d"; //proxy path 
   };
   class Proxycigarettecase_proxy14: ProxyAttachment //same as p3d name
   {
