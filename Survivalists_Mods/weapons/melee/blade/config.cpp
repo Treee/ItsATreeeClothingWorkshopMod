@@ -116,7 +116,7 @@ class CfgVehicles
 
   //============================== MODDED VANILLA
   // attachment proxy override
-  class Hatchet : Inventory_Base
+  class Hatchet: Inventory_Base
   {
     inventorySlot[]=
     {

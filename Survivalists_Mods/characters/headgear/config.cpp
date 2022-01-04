@@ -11,6 +11,8 @@ class CfgPatches
 			"DZ_Characters",
       "DZ_Characters_Headgear",
       "DZ_Characters_Masks",
+      "DZ_Gear_Optics",
+      "DZ_Characters_Glasses",
       "Survivalists_Mods"
 		};
 	};
@@ -313,7 +315,6 @@ class CfgVehicles
 			};
 		};
   }
-
   // -=============================== OLD MVS STUFF  
 
   class BaseballCap_MilitaryPatrolTan: BaseballCap_ColorBase  // new
@@ -1121,4 +1122,162 @@ class CfgVehicles
 			};
 		};
   };
+
+  class SRP_Goggles_Head: Clothing
+	{	
+    scope=2;
+		displayName="Old Goggles";
+		descriptionShort="A pair of old looking goggles";
+		model="Survivalists_Mods\characters\headgear\gogglesHead_g.p3d";
+		// rotationFlags=16;
+		noMask=0;	
+    repairableWithKits[]={8};
+		repairCosts[]={25};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={2,1};
+		varWetMax=0.249;
+		heatIsolation=0.5;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\goggles_CO.paa",
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\gogglesHead_m.p3d";
+			female="Survivalists_Mods\characters\headgear\gogglesHead_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\goggles.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\goggles.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\goggles_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\goggles_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\goggles_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+  };
+	
+  class SRP_Cowboy_Hat: Clothing
+	{	
+		scope=2;
+		displayName="Cowboy hat";
+		descriptionShort="A ragged cowboy hat.";
+		model="Survivalists_Mods\characters\headgear\cowboyhat_g.p3d";
+		weight=100;
+		noMask=0;
+    // rotationFlags=16;
+    repairableWithKits[]={8};
+		repairCosts[]={25};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		itemSize[]={2,1};
+		varWetMax=0.249;
+		heatIsolation=0.5;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\cowboyhat_CO.paa",
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\cowboyhat_m.p3d";
+			female="Survivalists_Mods\characters\headgear\cowboyhat_f.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\cowboyhat.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\cowboyhat.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\cowboyhat_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\cowboyhat_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\cowboyhat_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 };
