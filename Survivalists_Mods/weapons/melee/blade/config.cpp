@@ -114,6 +114,18 @@ class CfgVehicles
   class Inventory_Base;
   class HuntingKnife;
 
+  //============================== MODDED VANILLA
+  // attachment proxy override
+  class Hatchet : Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "Hatchet"
+    };
+  };
+
+  //============================== CUSTOM STUFF
+
   class SRP_Trenchknife: HuntingKnife
   {
 		scope=2;
