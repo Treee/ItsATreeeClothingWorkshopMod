@@ -123,6 +123,72 @@ class CfgVehicles
       "SRP_SewingThread2"
 		};
 	};
+
+  class SRP_Armband: Clothing
+	{	
+		scope=2;
+		displayName="Leather Armband";
+		descriptionShort="A piece of leather fashioned into an armband";
+		model="Survivalists_Mods\gear\patches\SRParmband_g.p3d";
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		// rotationFlags=16;
+		inventorySlot="Armband";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		weight=1000;
+		itemSize[]={3,2};
+		itemsCargoSize[]={3,2};
+		absorbency=0;
+		heatIsolation=0.80;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\SRParmband_CO.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\gear\patches\SRParmband_m.p3d";
+			female="Survivalists_Mods\gear\patches\SRParmband_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Mods\gear\patches\data\srparmband.rvmat"}},
+            {0.7,{"Survivalists_Mods\gear\patches\data\srparmband.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\patches\data\srparmband_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\gear\patches\data\srparmband_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\patches\data\srparmband_destruct.rvmat"}}
+          };
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 	
   //---------------------------- LOGO PATCHES
 	class SRP_PatchLogo_ColorBase: Clothing
