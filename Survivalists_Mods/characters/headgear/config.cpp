@@ -1129,10 +1129,9 @@ class CfgVehicles
 		displayName="Old Goggles";
 		descriptionShort="A pair of old looking goggles";
 		model="Survivalists_Mods\characters\headgear\gogglesHead_g.p3d";
-		// rotationFlags=16;
 		noMask=0;	
-    repairableWithKits[]={8};
-		repairCosts[]={25};
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
 			"Headgear"
@@ -1210,9 +1209,8 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\headgear\cowboyhat_g.p3d";
 		weight=100;
 		noMask=0;
-    // rotationFlags=16;
-    repairableWithKits[]={8};
-		repairCosts[]={25};
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
 			"Headgear"
@@ -1264,6 +1262,81 @@ class CfgVehicles
 			};
 		};
     class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_Burlap_Mask: Clothing
+	{	
+		scope=2;
+		displayName="Burlap Mask";
+		descriptionShort="A Burlap Sack with an eye hole cut out of it";
+		model="Survivalists_Mods\characters\headgear\burlapmask_g.p3d";
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+    rotationFlags=16;
+		inventorySlot="Headgear";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1000;
+		itemSize[]={2,2};
+		absorbency=0;
+		heatIsolation=1;
+		noMask=0;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\burlapmask_CO.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\burlapmask_m.p3d";
+			female="Survivalists_Mods\characters\headgear\burlapmask_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\burlapmask.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\burlapmask.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\burlapmask_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\burlapmask_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\burlapmask_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
 		{
 			class SoundWeapon
 			{

@@ -19,6 +19,9 @@ modded class ActionConstructor
 
     actions.Insert(ActionReadBook);
 
+    actions.Insert(ActionPutGogglesOnHead);
+    actions.Insert(ActionPutGogglesOnFace);
+
     actions.Insert(ActionMortarCrushIntoPowder);
 
     actions.Insert(ActionConvertStarterForgeKit);
