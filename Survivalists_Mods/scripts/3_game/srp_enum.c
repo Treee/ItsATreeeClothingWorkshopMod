@@ -21,6 +21,7 @@ enum SRP_eModifiers
 
   MDF_SLEEP = 431,
   MDF_BIOHAZARD = 432,
+  MDF_BURNING = 433,
 }
 
 enum SRP_Medical_Agents

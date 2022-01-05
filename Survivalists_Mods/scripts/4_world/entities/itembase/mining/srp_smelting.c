@@ -15,9 +15,27 @@ class SRP_MetalBucket extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
-        player_PB.AddHealth("", "", -50); //do 250 blood dmg
-        player_PB.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+      }
+    }
+  }
+  override void OnInventoryExit(Man player)
+  {
+    super.OnInventoryExit(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
       }
     }
   }
@@ -66,9 +84,27 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
-        player_PB.AddHealth("", "", -50); //do 250 blood dmg
-        player_PB.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+      }
+    }
+  }
+  override void OnInventoryExit(Man player)
+  {
+    super.OnInventoryExit(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
       }
     }
   }
@@ -163,9 +199,27 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
-        player_PB.AddHealth("", "", -50); //do 250 blood dmg
-        player_PB.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+      }
+    }
+  }
+  override void OnInventoryExit(Man player)
+  {
+    super.OnInventoryExit(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
       }
     }
   }
@@ -199,7 +253,7 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
 		return true;
 	}
 
-  override void OnInventoryEnter(Man player)
+    override void OnInventoryEnter(Man player)
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
@@ -207,9 +261,27 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        player_PB.AddHealth("", "Blood", -500); //do 250 blood dmg
-        player_PB.AddHealth("", "", -50); //do 250 blood dmg
-        player_PB.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+      }
+    }
+  }
+  override void OnInventoryExit(Man player)
+  {
+    super.OnInventoryExit(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
       }
     }
   }

@@ -1,5 +1,44 @@
 class SRP_ForgeIngotPlate_ColorBase extends Inventory_Base
 {
+  override protected bool CanHaveTemperature()
+	{
+		// return true used on selected items that have a temperature effect
+		return true;
+	}
+
+  override void OnInventoryEnter(Man player)
+  {
+    super.OnInventoryEnter(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB.GetItemInHands() == this)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+      }
+    }
+  }
+  override void OnInventoryExit(Man player)
+  {
+    super.OnInventoryExit(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+      }
+    }
+  }
+
   bool HasCorrectQuantityAndType(int quantity, string acceptedType)
   {
     return GetQuantity() >= quantity && acceptedType == GetPlateColor();
@@ -19,6 +58,45 @@ class SRP_ForgeIngotPlate_Platinum extends SRP_ForgeIngotPlate_ColorBase{};
 
 class SRP_ForgeIngotRod_ColorBase extends Inventory_Base
 {
+  override protected bool CanHaveTemperature()
+	{
+		// return true used on selected items that have a temperature effect
+		return true;
+	}
+  
+  override void OnInventoryEnter(Man player)
+  {
+    super.OnInventoryEnter(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB.GetItemInHands() == this)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+      }
+    }
+  }
+  override void OnInventoryExit(Man player)
+  {
+    super.OnInventoryExit(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+      }
+    }
+  }
+
   bool HasCorrectQuantityAndType(int quantity, string acceptedType)
   {
     return GetQuantity() >= quantity && acceptedType == GetRodColor();
