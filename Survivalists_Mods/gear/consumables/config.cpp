@@ -408,7 +408,7 @@ class CfgVehicles
 		scope=0;
 		displayName="Metal Crafting Model Base";
 		descriptionShort="Metal Crafting Model Base";
-		model="Survivalists_Mods\gear\consumables\craftingmaterials_metal.p3d";
+		model="Survivalists_Mods\gear\consumables\craftingmaterials_sheetmetal.p3d";
 		rotationFlags=34;
 		weight=1200;
 		itemSize[]={5,5};
@@ -429,11 +429,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"dz\gear\consumables\data\craftingmaterials_metal.rvmat"}},
-            {0.69999999,	{	"dz\gear\consumables\data\craftingmaterials_metal.rvmat"}},
-            {0.5,	{	"dz\gear\consumables\data\craftingmaterials_metal_damage.rvmat"}},
-            {0.30000001,	{	"dz\gear\consumables\data\craftingmaterials_metal_damage.rvmat"}},
-            {0.0,	{	"dz\gear\consumables\data\craftingmaterials_metal_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\gear\consumables\data\craftingmaterials_metal.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\consumables\data\craftingmaterials_metal.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\consumables\data\craftingmaterials_metal_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\consumables\data\craftingmaterials_metal_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\consumables\data\craftingmaterials_metal_destruct.rvmat"}}
 					};
 				};
 			};
@@ -495,6 +495,79 @@ class CfgVehicles
 		varQuantityDestroyOnMin=1;
 		varStackMax=1;
   }
+
+  class SRP_CraftingMaterial_BagBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Bag Crafting Model Base";
+		descriptionShort="Bag Crafting Model Base";
+		model="Survivalists_Mods\gear\consumables\craftingmaterials_bag.p3d";
+		weight=1200;
+		itemSize[]={3,4};
+		itemBehaviour=0;
+		canBeSplit=1;
+		varQuantityInit=5;
+		varQuantityMin=0;
+		varQuantityMax=40;
+		varQuantityDestroyOnMin=1;
+		varStackMax=40;
+		inventorySlot[]={};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_cement_bag.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_CraftingMaterial_Cement: SRP_CraftingMaterial_BagBase
+  {
+		scope=2;
+		displayName="Bag of Cement";
+		descriptionShort="A bag of cement. Combined with various things to build sturdy things.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_cement_bag.paa"
+    };
+  };
+  class SRP_CraftingMaterial_Mortar: SRP_CraftingMaterial_BagBase
+  {
+		scope=2;
+		displayName="Bag of Mortar";
+		descriptionShort="A bag of mortar. Combined with various things to fill in gaps between stones.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_mortar_bag.paa"
+    };
+  };
 
   class SRP_SkeletonFrame: Inventory_Base
   {
