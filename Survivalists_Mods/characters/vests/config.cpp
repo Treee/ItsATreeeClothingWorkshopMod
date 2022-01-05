@@ -1696,6 +1696,163 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Bandoiler: Clothing
+	{	
+		scope=2;
+		displayName="Leather bandoiler";
+		descriptionShort="An old belt which has been turned into a bandoiler";
+		model="Survivalists_Mods\characters\vests\bandoiler_g.p3d";
+		attachments[]=
+		{
+			"Belt_Back",
+      "VestGrenadeA",
+      "VestGrenadeB"
+		};
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		rotationFlags=16;
+		inventorySlot="Vest";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Vest",
+			"Clothing"
+		};
+		weight=1000;
+		itemSize[]={1,5};
+		itemsCargoSize[]={6,5};
+		absorbency=0;
+		heatIsolation=0.80;
+		noMask=0;
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "buckle"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\Bandoiler_CO.paa",
+      "Survivalists_Mods\characters\vests\data\Bandoilerbuckle_CO.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\vests\bandoiler_m.p3d";
+			female="Survivalists_Mods\characters\vests\bandoiler_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\Bandoiler.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\Bandoiler.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\Bandoiler_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\Bandoiler_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\Bandoiler_destruct.rvmat"}}
+					};
+				};
+			};
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  
+  class SRP_ShoulderSling: Clothing
+	{	
+		scope=2;
+		displayName="Shoulder Sling";
+		descriptionShort="A shoulder sling with some small pouches attatched";
+		model="Survivalists_Mods\characters\vests\Shoulder_Holster_g.p3d";
+		attachments[]=
+		{
+			"VestGrenadeA",
+      "VestGrenadeB"
+		};
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		rotationFlags=16;
+		inventorySlot="Vest";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Vest",
+			"Clothing"
+		};
+		weight=1000;
+		itemSize[]={2,3};
+		itemsCargoSize[]={6,5};
+		absorbency=0;
+		heatIsolation=1;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\Shoulder_Holster_CO.paa"			
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\vests\Shoulder_Holster_m.p3d";
+			female="Survivalists_Mods\characters\vests\Shoulder_Holster_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\Shoulder_Holster.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\Shoulder_Holster.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\Shoulder_Holster_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\Shoulder_Holster_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\Shoulder_Holster_destruct.rvmat"}}
+					};
+				};
+			};
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  
+
   // ===================== VEST POUCHES
 
   class SRP_PouchBase_Small: Container_Base
