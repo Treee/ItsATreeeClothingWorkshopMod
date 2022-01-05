@@ -842,9 +842,16 @@ class CfgSlots
     ghostIcon="set:dayz_inventory image:pouches";		
   };
   
-  class Slot_SRP_RawOre
+  class Slot_SRP_RawOre1
   {
-		name="SRP_RawOre";
+		name="SRP_RawOre1";
+		displayName="Raw Ore";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=4;
+  };
+  class Slot_SRP_RawOre2
+  {
+		name="SRP_RawOre2";
 		displayName="Raw Ore";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=4;

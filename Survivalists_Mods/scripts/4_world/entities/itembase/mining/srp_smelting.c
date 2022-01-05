@@ -169,6 +169,12 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
       }
     }
   }
+
+  bool IsHotEnough(int expectedTemperature)
+  {
+    Print("Current Temperature of " + GetType() + " is " + GetTemperature() + " Max: " + GetTemperatureMax() + " expected: " + expectedTemperature);
+    return (GetTemperature() >= expectedTemperature);
+  }
 };
 
 class SRP_ForgeIngot_Copper extends SRP_ForgeIngot_ColorBase{};
@@ -211,8 +217,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
   void IncrementHeatTimer(int increment = 1)
   {
     // only increment heat if there is something inside the raw ore slot
-    EntityAI attachment = FindAttachmentBySlotName("SRP_RawOre");
-    if (attachment)
+    if (HasOreInSlot("SRP_RawOre1") || HasOreInSlot("SRP_RawOre2"))
     {
       m_HeatCounter += increment;
     }
@@ -223,21 +228,101 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
     m_HeatCounter = 0;
   }
 
-  void HandleHardenEvent()
-  {
-    // Print(" Heat event: " + m_HeatCounter);
-    // should be like 10 minutes or so
-    if (m_HeatCounter > 600)
+  override bool CanReceiveAttachment( EntityAI attachment, int slotId )
+	{
+		ItemBase item = ItemBase.Cast( attachment );
+		
+		if ( GetHealthLevel() == GameConstants.STATE_RUINED)
+			return false;
+
+    // if we have ore in slot 1 and we are attaching to slot 2
+    if (HasOreInSlot("SRP_RawOre1") && InventorySlots.GetSlotIdFromString("SRP_RawOre2") == slotId)
     {
-      EntityAI attachment = FindAttachmentBySlotName("SRP_RawOre");
-      SRP_Mining_RawOre_ColorBase rawOre = SRP_Mining_RawOre_ColorBase.Cast(attachment);
-      if (rawOre && rawOre.GetQuantity() == 4)
+      SRP_Mining_RawOre_ColorBase rawOre1 = SRP_Mining_RawOre_ColorBase.Cast(FindAttachmentBySlotName("SRP_RawOre1"));
+      SRP_Mining_RawOre_ColorBase attachingOre1 = SRP_Mining_RawOre_ColorBase.Cast(attachment);
+      return rawOre1.GetOreColor() != attachingOre1.GetOreColor();
+    }
+    // if we have ore in slot 2 and we are attaching to slot 1
+    else if (HasOreInSlot("SRP_RawOre2") && InventorySlots.GetSlotIdFromString("SRP_RawOre1") == slotId)
+    {
+      SRP_Mining_RawOre_ColorBase rawOre2 = SRP_Mining_RawOre_ColorBase.Cast(FindAttachmentBySlotName("SRP_RawOre2"));
+      SRP_Mining_RawOre_ColorBase attachingOre2 = SRP_Mining_RawOre_ColorBase.Cast(attachment);
+      return rawOre2.GetOreColor() != attachingOre2.GetOreColor();
+    }
+    else
+    { // if empty, allow ores
+      return !(HasOreInSlot("SRP_RawOre1") && HasOreInSlot("SRP_RawOre2"));
+    }
+		return false;
+	}
+	
+
+  bool HasOreInSlot(string slotName)
+  {
+    return (FindAttachmentBySlotName(slotName) != null);
+  }
+
+  bool HasMoreThanOneOreAttached()
+  {
+    return (HasOreInSlot("SRP_RawOre1") && HasOreInSlot("SRP_RawOre2"));
+  }
+
+  void SimpleSmelting()
+  {
+    EntityAI slot1 = FindAttachmentBySlotName("SRP_RawOre1");
+    EntityAI slot2 = FindAttachmentBySlotName("SRP_RawOre2");
+    SRP_Mining_RawOre_ColorBase rawOre;
+    if (slot1)
+    {
+      rawOre = SRP_Mining_RawOre_ColorBase.Cast(slot1);
+    }
+    else
+    {
+      rawOre = SRP_Mining_RawOre_ColorBase.Cast(slot2);
+    }
+    if (rawOre && rawOre.GetQuantity() == 4)
+    {
+      string color = rawOre.ConfigGetString("color");
+      string newClassName = "SRP_ForgeCrucible_" + color;
+      ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, this.GetPosition(), false));
+      newItem.SetTemperature(200);
+      this.Delete();
+    }
+  }
+
+  void ComplexSmelting()
+  {
+    SRP_Mining_RawOre_ColorBase rawOre1 = SRP_Mining_RawOre_ColorBase.Cast(FindAttachmentBySlotName("SRP_RawOre1"));
+    SRP_Mining_RawOre_ColorBase rawOre2 = SRP_Mining_RawOre_ColorBase.Cast(FindAttachmentBySlotName("SRP_RawOre2"));
+    if (rawOre1 && rawOre2)
+    {
+      bool combination1 = rawOre1.HasCorrectQuantityAndType(4, "copper") && rawOre2.HasCorrectQuantityAndType(4, "tin");
+      bool combination2 = rawOre1.HasCorrectQuantityAndType(4, "tin") && rawOre2.HasCorrectQuantityAndType(4, "copper");
+      if (combination1 || combination2)
       {
-				string color = rawOre.ConfigGetString("color");
+        // for now only bronze is complex, if you see this, study because it will be hidden soon.
+        string color = "bronze";// rawOre.ConfigGetString("color");
         string newClassName = "SRP_ForgeCrucible_" + color;
         ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, this.GetPosition(), false));
         newItem.SetTemperature(200);
         this.Delete();
+      }
+    }
+  }
+
+  void HandleHardenEvent()
+  {
+    // Print(" Heat event: " + m_HeatCounter);
+    // should be like 10 minutes or so
+    if (m_HeatCounter > 10)
+    {
+      if (HasMoreThanOneOreAttached())
+      {
+        ComplexSmelting();
+      }
+      else 
+      {
+        SimpleSmelting();
       }
     }
   }
@@ -251,7 +336,18 @@ class SRP_ForgeCrucible_Gold extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Platinum extends SRP_ForgeCrucible_ColorBase{};
 
 //======================================================= ORE
-class SRP_Mining_RawOre_ColorBase extends Inventory_Base{};
+class SRP_Mining_RawOre_ColorBase extends Inventory_Base
+{
+  bool HasCorrectQuantityAndType(int quantity, string acceptedType)
+  {
+    return GetQuantity() >= quantity && acceptedType == GetOreColor();
+  }
+
+  string GetOreColor()
+  {
+    return ConfigGetString("color");
+  }
+};
 class SRP_Mining_RawOre_Copper extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Tin extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Bronze extends SRP_Mining_RawOre_ColorBase{};

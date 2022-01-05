@@ -17,7 +17,6 @@ class CfgVehicles
 {
   class Inventory_Base;
   class FireplaceBase;
-  class DryBag_ColorBase;
 
   class SRP_KitBase;
   class SRP_MetalBucket;
@@ -975,7 +974,8 @@ class CfgVehicles
     color="empty";
     attachments[]=
     {
-      "SRP_RawOre"
+      "SRP_RawOre1",
+      "SRP_RawOre2"
     };
     hiddenSelections[]=
     {
@@ -1213,7 +1213,8 @@ class CfgVehicles
 		varStackMax=24;
 		inventorySlot[]=
     {
-      "SRP_RawOre"
+      "SRP_RawOre1",
+      "SRP_RawOre2"
     };
 		class DamageSystem
 		{

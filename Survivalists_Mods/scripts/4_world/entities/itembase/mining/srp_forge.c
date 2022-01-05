@@ -260,7 +260,7 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
       if ( ingot.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
       {
         temperature = ingot.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
-        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
+        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 500 );
         ingot.SetTemperature( temperature );
       }
     }
