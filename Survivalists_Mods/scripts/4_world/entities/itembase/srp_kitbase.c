@@ -244,6 +244,11 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
 	{
     return GetInventory().AttachmentCount() == 0;
 	}
+
+  bool HasAttachmentFilled(string slotName)
+  {
+    return FindAttachmentBySlotName(slotName) != null;
+  }
 };
 class SRP_TetrisShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_BuildingComponentFrame_Kit extends SRP_IntermediateCraftingKitBase{};
@@ -263,6 +268,15 @@ class SRP_StoneForgeWorkbenchStarter_Kit extends SRP_IntermediateCraftingKitBase
 class SRP_StoneForgeWorkbenchIntermediate_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_StoneForgeWorkbenchFinisher_Kit extends SRP_IntermediateCraftingKitBase{};
 
+// armor
 class SRP_ArmorKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WoodenStickArmor_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_SimpleBoneArmor_Kit extends SRP_IntermediateCraftingKitBase{};
+
+// weapons
+class SRP_WeaponBladeKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WeaponBladeKarambitKnife_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WeaponBladeSnakeDagger_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WeaponBladeBerserkSword_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WeaponBladeCrystalMace_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WeaponBladeKatana_Kit extends SRP_IntermediateCraftingKitBase{};

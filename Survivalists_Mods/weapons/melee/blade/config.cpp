@@ -114,6 +114,8 @@ class CfgVehicles
   class Inventory_Base;
   class HuntingKnife;
 
+  class SRP_KitBase;
+
   //============================== MODDED VANILLA
   // attachment proxy override
   class Hatchet: Inventory_Base
@@ -125,6 +127,87 @@ class CfgVehicles
   };
 
   //============================== CUSTOM STUFF
+
+  class SRP_WeaponBladeKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Blade";
+		descriptionShort="A Weapon Kit - Still needs a bit of work";
+	};
+
+  class SRP_WeaponBladeKarambitKnife_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Karambit Knife";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"      
+		};
+	};
+  class SRP_WeaponBladeSnakeDagger_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Snake Dagger";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"      
+		};
+	};
+  class SRP_WeaponBladeBerserkSword_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Berserk Sword";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"  
+		};
+	};
+  class SRP_WeaponBladeCrystalMace_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Crystal Mace";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"
+		};
+	};
+
+  class SRP_WeaponBladeKatana_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Katana";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope",    
+      "Material_Shelter_Fabric"
+		};
+	};
 
   class SRP_Trenchknife: HuntingKnife
   {

@@ -170,6 +170,11 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
     }
   }
 
+  string GetIngotColor()
+  {
+    return ConfigGetString("color");
+  }
+
   bool IsHotEnough(int expectedTemperature)
   {
     Print("Current Temperature of " + GetType() + " is " + GetTemperature() + " Max: " + GetTemperatureMax() + " expected: " + expectedTemperature);
@@ -365,6 +370,44 @@ class SRP_MiningTool_IronTongsSmall extends Inventory_Base
 		
 		AddAction(ActionPourMoltenMetalIntoMold);
 	}
+
+  bool HasIngotAttached()
+  {
+    return FindAttachmentBySlotName("SRP_Ingot") != null;
+  }
+
+  string GetIngotColor()
+  {
+    string ingotColor = "";
+    SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(FindAttachmentBySlotName("SRP_Ingot"));
+    if (ingot)
+    {
+      ingotColor = ingot.GetIngotColor();
+    }
+    return ingotColor;
+  }
+
+  bool IsAttachedIngotHotEnough(int expectedTemperature)
+  {
+    bool isHotEnough = false;
+    SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(FindAttachmentBySlotName("SRP_Ingot"));
+    if (ingot)
+    {
+      isHotEnough = ingot.IsHotEnough(expectedTemperature);
+    }
+    return isHotEnough;
+  }
+
+  void ConvertAttachedIngotToItem(PlayerBase player, string newClassName)
+  {
+    SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(FindAttachmentBySlotName("SRP_Ingot"));
+    if (ingot)
+    {
+      string ingotColor = ingot.GetIngotColor();
+      MiscGameplayFunctions.TurnItemIntoItemEx(player, new TurnItemIntoItemLambda(ingot, newClassName + ingotColor, player));
+      ingot.Delete();
+    }
+  }
 };
 class SRP_MiningTool_IronTongsMedium extends SRP_MiningTool_IronTongsSmall{};
 class SRP_MiningTool_IronTongsLarge extends SRP_MiningTool_IronTongsSmall{};

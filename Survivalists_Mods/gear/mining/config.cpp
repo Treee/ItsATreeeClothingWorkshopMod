@@ -1771,7 +1771,7 @@ class CfgVehicles
     physLayer="item_small";
     color="base";
 		weight=500;
-		itemSize[]={3,1};
+		itemSize[]={3,3};
     canBeSplit=1;
 		varQuantityDestroyOnMin=1;
 		varQuantityInit=1;
@@ -1779,6 +1779,11 @@ class CfgVehicles
 		varQuantityMax=20;
 		varStackMax=10;    
     varTemperatureMax=500;
+    inventorySlot[]=
+    {
+      "SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1894,7 +1899,7 @@ class CfgVehicles
     physLayer="item_small";
     color="base";
 		weight=500;
-		itemSize[]={3,1};
+		itemSize[]={5,2};
     canBeSplit=1;
 		varQuantityDestroyOnMin=1;
 		varQuantityInit=1;
@@ -1902,6 +1907,11 @@ class CfgVehicles
 		varQuantityMax=10;
 		varStackMax=5;    
     varTemperatureMax=500;
+    inventorySlot[]=
+    {
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth

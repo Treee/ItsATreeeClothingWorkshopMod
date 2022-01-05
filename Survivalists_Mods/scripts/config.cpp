@@ -856,6 +856,34 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=4;
   };
+  class Slot_SRP_MetalPlate1
+  {
+		name="SRP_MetalPlate1";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=20;
+  };
+  class Slot_SRP_MetalPlate2
+  {
+		name="SRP_MetalPlate2";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=20;
+  };
+  class Slot_SRP_MetalRod1
+  {
+		name="SRP_MetalRod1";
+		displayName="Metal Rod";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=10;
+  };
+  class Slot_SRP_MetalRod2
+  {
+		name="SRP_MetalRod2";
+		displayName="Metal Rod";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=10;
+  };
   class Slot_SRP_Crucible
   {
 		name="SRP_Crucible";
