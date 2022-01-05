@@ -177,7 +177,7 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
 
   bool IsHotEnough(int expectedTemperature)
   {
-    Print("Current Temperature of " + GetType() + " is " + GetTemperature() + " Max: " + GetTemperatureMax() + " expected: " + expectedTemperature);
+    // Print("Current Temperature of " + GetType() + " is " + GetTemperature() + " Max: " + GetTemperatureMax() + " expected: " + expectedTemperature);
     return (GetTemperature() >= expectedTemperature);
   }
 };
@@ -398,14 +398,23 @@ class SRP_MiningTool_IronTongsSmall extends Inventory_Base
     return isHotEnough;
   }
 
-  void ConvertAttachedIngotToItem(PlayerBase player, string newClassName)
+  bool HasEnoughIngots(int quantity)
+  {
+    bool hasEnough = false;
+    SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(FindAttachmentBySlotName("SRP_Ingot"));
+    if (ingot)
+    {
+      hasEnough = ingot.GetQuantity() >= quantity;
+    }
+    return hasEnough;
+  }
+
+  void ReduceIngotCount(int quantity)
   {
     SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(FindAttachmentBySlotName("SRP_Ingot"));
     if (ingot)
     {
-      string ingotColor = ingot.GetIngotColor();
-      MiscGameplayFunctions.TurnItemIntoItemEx(player, new TurnItemIntoItemLambda(ingot, newClassName + ingotColor, player));
-      ingot.Delete();
+      ingot.AddQuantity(-quantity);
     }
   }
 };
