@@ -25,8 +25,6 @@ class CfgVehicles
       "SRP_MagnetLetter"
     };
   }
-
-
   // -------------------------- CUSTOM STUFF
 
   //------------------------------ FLAG PATCHES
@@ -124,7 +122,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Armband: Clothing
+  class SRP_Armband_Base: Clothing
 	{	
 		scope=2;
 		displayName="Leather Armband";

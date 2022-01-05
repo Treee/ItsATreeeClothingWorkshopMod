@@ -86,7 +86,7 @@ class CfgVehicles
   {
     inventorySlot[]=
 		{
-			"Reflector_1_1"
+			"SRP_Bones"
 		};
   };
   

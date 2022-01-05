@@ -17,6 +17,21 @@ class CfgVehicles
 {
 	class SRP_PatchFlag_ColorBase;
 	class SRP_PatchLogo_ColorBase;
+  class SRP_Armband_Base;
+
+  class SRP_Armband_Duskar: SRP_Armband_Base
+	{	
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\armband\srp_armband_duskar_co.paa"
+		};	
+  };
+
 	class SRP_BGSDID_Patch: SRP_PatchFlag_ColorBase
 	{
 		scope=2;

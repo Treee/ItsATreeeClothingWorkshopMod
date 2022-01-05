@@ -130,6 +130,22 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\containers\data\teddybear_Zombie_co.paa"
 		};
 	};
+  class Bear_Axe: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_axe_co.paa"
+		};
+	};
+  class Bear_Guts: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_guts_co.paa"
+		};
+	};
 
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {
