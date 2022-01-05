@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="dz\characters\data\generic_deconstruct_mc.paa";
+	texture="dz\characters\data\generic_destruct_mc.paa";
 	uvSource="norm";
 	class uvTransform
 	{

@@ -490,4 +490,150 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Pouch_Belt: Clothing
+	{	
+		scope=2;
+		displayName="Leather Belt";
+		descriptionShort="An old leather belt with a pouch attatched to it";
+		model="Survivalists_Mods\characters\belts\Leatherpouch_g.p3d";
+		attachments[]=
+		{
+			"WalkieTalkie",
+			"Hatchet",
+			"belt_left"
+		};
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};		
+		inventorySlot="Hips";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		weight=1000;
+		itemSize[]={3,2};
+		itemsCargoSize[]={5,6};
+		absorbency=0;
+		heatIsolation=0.80;
+		noMask=0;
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "pouch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Mods\characters\belts\data\Leatherpouchbase_co.paa",
+			"Survivalists_Mods\characters\belts\data\Leatherpouch_CO.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\Leatherpouch_m.p3d";
+			female="Survivalists_Mods\characters\belts\Leatherpouch_f.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\belts\data\Leatherpouchbase.rvmat","Survivalists_Mods\characters\belts\data\Leatherpouch.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\belts\data\Leatherpouchbase.rvmat","Survivalists_Mods\characters\belts\data\Leatherpouch.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\Leatherpouchbase_damage.rvmat","Survivalists_Mods\characters\belts\data\Leatherpouch_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\belts\data\Leatherpouchbase_damage.rvmat","Survivalists_Mods\characters\belts\data\Leatherpouch_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\belts\data\Leatherpouchbase_destruct.rvmat","Survivalists_Mods\characters\belts\data\Leatherpouch_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  
+  class SRP_Holster_Belt: Clothing
+	{	
+		scope=2;
+		displayName="Leather Belt";
+		descriptionShort="An old leather belt with a holster attatched";
+		model="Survivalists_Mods\characters\belts\Holster_Belt_g.p3d";
+		attachments[]=
+		{
+			"Pistol",
+			"belt_left"
+		};
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		rotationFlags=16;
+		inventorySlot="Hips";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		weight=1000;
+		itemSize[]={3,2};
+		itemsCargoSize[]={4,6};
+		absorbency=0;
+		heatIsolation=0.80;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Mods\characters\belts\data\Belt_Holster_CO.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\Holster_Belt_m.p3d";
+			female="Survivalists_Mods\characters\belts\Holster_Belt_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\belts\data\Belt_Holster.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\belts\data\Belt_Holster.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\Belt_Holster_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\belts\data\Belt_Holster_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\belts\data\Belt_Holster_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  
 };
