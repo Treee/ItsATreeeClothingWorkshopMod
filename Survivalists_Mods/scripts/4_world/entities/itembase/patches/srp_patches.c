@@ -1,6 +1,6 @@
 class SRP_PatchFlag_ColorBase extends Clothing{};
 class SRP_PatchLogo_ColorBase extends Clothing{};
-class SRP_PatchFlag_StarterKit extends Clothing
+class SRP_PatchFlag_StarterKit1 extends Clothing
 {
   bool CanCraftIntoPatch(string firstLetter)
   {
@@ -20,3 +20,4 @@ class SRP_PatchFlag_StarterKit extends Clothing
     return false;
   }
 };
+class SRP_PatchFlag_StarterKit2 extends SRP_PatchFlag_StarterKit1{};

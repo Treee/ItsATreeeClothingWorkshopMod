@@ -103,10 +103,28 @@ class CfgVehicles
 	};
 
 
-  class SRP_PatchFlag_StarterKit: SRP_PatchFlag_ColorBase
+  class SRP_PatchFlag_StarterKit1: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
-		displayName="Country Flag - Empty Canvas";
+		displayName="Country Flag - A-M Empty Canvas";
+    descriptionShort="An empty cloth patch. Add some thread and elbow grease to sew the finished patch.";
+    inventorySlot="";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\emptyflag_patch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+    attachments[]=
+		{	
+      "SRP_MagnetLetter",
+			"SRP_SewingThread1",
+      "SRP_SewingThread2"
+		};
+	};
+  class SRP_PatchFlag_StarterKit2: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Country Flag - N-Z Empty Canvas";
     descriptionShort="An empty cloth patch. Add some thread and elbow grease to sew the finished patch.";
     inventorySlot="";
 		hiddenSelectionsTextures[]=

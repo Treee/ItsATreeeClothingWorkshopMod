@@ -1757,5 +1757,253 @@ class CfgVehicles
 		displayName="Diamond Cut Gem";
 		descriptionShort="Diamond Cut Gem";
     color="diamond";
-	};  
+	};
+
+  //======================================= BLACK SMITHING CONSUMABLES
+
+  class SRP_ForgeIngotPlate_ColorBase: Inventory_Base
+  {
+		scope=2;
+		displayName="Metal Plate";
+		descriptionShort="A metal ingot that has been shaped into a metal plate.";
+		model="Survivalists_Mods\gear\mining\forge_ingotplate.p3d";
+		animClass="NoFireClass";
+    physLayer="item_small";
+    color="base";
+		weight=500;
+		itemSize[]={3,1};
+    canBeSplit=1;
+		varQuantityDestroyOnMin=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=20;
+		varStackMax=10;    
+    varTemperatureMax=500;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\forge_ingot.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\forge_ingot.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\forge_ingot_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\forge_ingot_damage.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\forge_ingot_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_ForgeIngotPlate_Copper: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Copper";    
+    color="copper";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_copper_co.paa"
+		};
+	};
+  class SRP_ForgeIngotPlate_Tin: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Tin";    
+    color="tin";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_tin_co.paa"
+		};
+	};
+  class SRP_ForgeIngotPlate_Bronze: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Bronze";    
+    color="bronze";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_copper_co.paa"
+		};
+	};
+  class SRP_ForgeIngotPlate_Iron: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Iron";    
+    color="iron";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_iron_co.paa"
+		};
+	};
+  class SRP_ForgeIngotPlate_Gold: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Gold";    
+    color="gold";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_gold_co.paa"
+		};
+	};
+  class SRP_ForgeIngotPlate_Platinum: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Platinum";    
+    color="platinum";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_platinum_co.paa"
+		};
+	};
+
+  class SRP_ForgeIngotRod_ColorBase: Inventory_Base
+  {
+		scope=2;
+		displayName="Metal Rod";
+		descriptionShort="A metal ingot that has been shaped into a metal rod.";
+		model="Survivalists_Mods\gear\mining\forge_ingotrod.p3d";
+		animClass="NoFireClass";
+    physLayer="item_small";
+    color="base";
+		weight=500;
+		itemSize[]={3,1};
+    canBeSplit=1;
+		varQuantityDestroyOnMin=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varStackMax=5;    
+    varTemperatureMax=500;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\gear\mining\data\forge_ingot.rvmat"}},
+            {0.69999999,	{"Survivalists_Mods\gear\mining\data\forge_ingot.rvmat"}},
+            {0.5,	{"Survivalists_Mods\gear\mining\data\forge_ingot_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_Mods\gear\mining\data\forge_ingot_damage.rvmat"}},
+            {0.0,	{"Survivalists_Mods\gear\mining\data\forge_ingot_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_ForgeIngotRod_Copper: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Copper";    
+    color="copper";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_copper_co.paa"
+		};
+	};
+  class SRP_ForgeIngotRod_Tin: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Tin";    
+    color="tin";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_tin_co.paa"
+		};
+	};
+  class SRP_ForgeIngotRod_Bronze: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Bronze";    
+    color="bronze";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_copper_co.paa"
+		};
+	};
+  class SRP_ForgeIngotRod_Iron: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Iron";    
+    color="iron";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_iron_co.paa"
+		};
+	};
+  class SRP_ForgeIngotRod_Gold: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Gold";    
+    color="gold";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_gold_co.paa"
+		};
+	};
+  class SRP_ForgeIngotRod_Platinum: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Platinum";    
+    color="platinum";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\mining\data\forge_ingot_platinum_co.paa"
+		};
+	};
 };
