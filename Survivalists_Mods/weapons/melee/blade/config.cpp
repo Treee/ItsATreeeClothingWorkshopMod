@@ -597,7 +597,7 @@ class CfgVehicles
 		descriptionShort="A katana. Forged from steel.";
 		model="Survivalists_Mods\weapons\melee\blade\srp_katanaslim.p3d";
 		repairCosts[]={20};
-		// rotationFlags=12;
+		rotationFlags=12;
 		weight=130;
 		itemSize[]={2,7};
 		itemBehaviour=2;
@@ -722,7 +722,7 @@ class CfgVehicles
 		descriptionShort="A katana sheath. Holds a katana.";
 		model="Survivalists_Mods\weapons\melee\blade\srp_katanaslim_sheath.p3d";
 		repairCosts[]={20};
-		// rotationFlags=12;
+		rotationFlags=12;
 		weight=130;
 		itemSize[]={2,7};
 		itemBehaviour=2;
