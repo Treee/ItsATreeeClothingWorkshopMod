@@ -220,7 +220,7 @@ class CfgVehicles
     rotationFlags=1;
 		attachments[]=
 		{
-      "LargePouch1","Belt_Left","SmallPouch1","SmallPouch2"
+      "VestBackpack","LargePouch1","Belt_Left","SmallPouch1","SmallPouch2"
 		};
     hiddenSelections[]=
 		{
