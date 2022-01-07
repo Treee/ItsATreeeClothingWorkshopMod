@@ -307,6 +307,83 @@ class CfgVehicles
 		soundVoicePriority=5;
   };
 
+  class SRP_ShatteredMask: Clothing
+  {
+    scope=2;
+    displayName="Antique Metal Mask";
+    descriptionShort="An antique mask. In fairly good shape considering.";
+    model="Survivalists_Mods\characters\masks\srp_shatteredmask_g.p3d";
+    inventorySlot[]=
+		{
+			"Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Mask"
+		};
+		itemSize[]={2,2};
+		varWetMax=0.5;
+		heatIsolation=0.5;
+    headSelectionsToHide[]=
+		{
+			"Clipping_BandanaHead"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Mods\characters\masks\data\srp_shatteredmask_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_shatteredmask.rvmat"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_shatteredmask_m.p3d";
+			female="Survivalists_Mods\characters\masks\srp_shatteredmask_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=120;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_Mods\characters\masks\data\srp_shatteredmask.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\masks\data\srp_shatteredmask.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\masks\data\srp_shatteredmask_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\masks\data\srp_shatteredmask_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\masks\data\srp_shatteredmask_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+		soundVoiceType="none";
+		soundVoicePriority=5;
+  };
+
   // ----------------------------------------- Custom Stuff
 
   class SRP_GasMask: GP5GasMask

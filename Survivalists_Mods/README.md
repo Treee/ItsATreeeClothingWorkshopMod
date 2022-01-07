@@ -734,6 +734,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Freebie - Lowpoly Alphabet" (https://skfb.ly/6VpQD) by Studio Ochi is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
 
+- "Red Vectors" (https://www.vecteezy.com/free-vector/red) by Vecteezy
+
+- "Shatteredmask" (https://skfb.ly/orsOD) by Vitaliy.Dolzhikov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # Wishlist
 
 - "Armor Set" (https://skfb.ly/oqo8Q) by gimora is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
