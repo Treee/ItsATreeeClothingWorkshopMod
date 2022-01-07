@@ -2056,7 +2056,7 @@ class CfgVehicles
 		itemsCargoSize[]={3,3};
     repairableWithKits[]={5,2};
 		repairCosts[]={30,25};
-    rotationFlags=1;
+    rotationFlags=64;
 		allowOwnedCargoManipulation=1;
     hiddenSelections[]=
 		{

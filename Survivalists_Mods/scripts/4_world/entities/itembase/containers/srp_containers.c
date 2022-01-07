@@ -58,7 +58,6 @@ class SRP_BloodPressureMonitor extends SRP_DeployableContainer_Base{};
 class SRP_LatheWorkbench extends SRP_DeployableContainer_Base{};
 class SRP_WornWorkbench extends SRP_DeployableContainer_Base{};
 class SRP_WornWorkbench_Metal extends SRP_DeployableContainer_Base{};
-class SRP_Letter_Colorbase extends SRP_DeployableContainer_Base{};
 
 class SRP_Carpet extends SRP_DeployableContainer_Base
 {

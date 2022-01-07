@@ -4,7 +4,7 @@ class SRP_PatchFlag_StarterKit1 extends Clothing
 {
   bool CanCraftIntoPatch(string firstLetter)
   {
-    BBP_Letter_Base category = BBP_Letter_Base.Cast(FindAttachmentBySlotName("SRP_MagnetLetter"));
+    SRP_Letter_Colorbase category = SRP_Letter_Colorbase.Cast(FindAttachmentBySlotName("SRP_MagnetLetter"));
     if (category)
     {
       string letterType = category.GetType();

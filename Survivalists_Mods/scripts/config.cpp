@@ -815,31 +815,31 @@ class CfgSlots
   {
 		name="LargePouch1";
 		displayName="Large Pouch";
-    ghostIcon="set:dayz_inventory image:pouches";		
+    ghostIcon="set:dayz_inventory image:vestpouches";		
   };
   class Slot_LargePouch2
   {
 		name="LargePouch2";
 		displayName="Large Pouch";
-    ghostIcon="set:dayz_inventory image:pouches";		
+    ghostIcon="set:dayz_inventory image:vestpouches";		
   };
   class Slot_LargePouch3
   {
 		name="LargePouch3";
 		displayName="Large Pouch";
-    ghostIcon="set:dayz_inventory image:pouches";		
+    ghostIcon="set:dayz_inventory image:vestpouches";		
   };
   class Slot_LargePouch4
   {
 		name="LargePouch4";
 		displayName="Large Pouch";
-    ghostIcon="set:dayz_inventory image:pouches";		
+    ghostIcon="set:dayz_inventory image:vestpouches";		
   };
   class Slot_LargePouch5
   {
 		name="LargePouch5";
 		displayName="Large Pouch";
-    ghostIcon="set:dayz_inventory image:pouches";		
+    ghostIcon="set:dayz_inventory image:vestpouches";		
   };
   
   class Slot_SRP_RawOre1
@@ -860,14 +860,14 @@ class CfgSlots
   {
 		name="SRP_MetalPlate1";
 		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:missing";
+		ghostIcon="set:dayz_inventory image:plates";
     stackMax=20;
   };
   class Slot_SRP_MetalPlate2
   {
 		name="SRP_MetalPlate2";
 		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:missing";
+		ghostIcon="set:dayz_inventory image:plates";
     stackMax=20;
   };
   class Slot_SRP_MetalRod1

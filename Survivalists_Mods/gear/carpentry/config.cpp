@@ -732,16 +732,21 @@ class CfgVehicles
   
   class SRP_Letter_Colorbase: Inventory_Base // new
 	{
-		scope=2;
+		scope=0;
 		displayName="Letter";
 		descriptionShort="This letter was fashioned out of some sort of material.";
-		model="Survivalists_Mods\gear\carpentry\srp_letters.p3d";
+		model="Survivalists_Mods\gear\carpentry\srp_letters_a.p3d";
 		slopeTolerance=0.30000001;
 		weight=1000;
 		itemBehaviour=1;
 		physLayer="item_large";
+    color="base";
 		itemSize[]={2,2};
     itemsCargoSize[]={0,0};
+    inventorySlots[]=
+    {
+      "SRP_MagnetLetter"
+    };
     hiddenSelections[]=
     {
       "zbytek"
@@ -774,6 +779,316 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Letter_A: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_a.p3d";
+    color="a";
+  };
+  class SRP_Letter_B: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_b.p3d";
+    color="b";
+  };
+  class SRP_Letter_C: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_c.p3d";
+    color="c";
+  };
+  class SRP_Letter_D: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_d.p3d";
+    color="d";
+  };
+  class SRP_Letter_E: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_e.p3d";
+    color="e";
+  };
+  class SRP_Letter_F: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_f.p3d";
+    color="f";
+  };
+  class SRP_Letter_G: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_g.p3d";
+    color="g";
+  };
+  class SRP_Letter_H: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_h.p3d";
+    color="h";
+  };
+  class SRP_Letter_I: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_i.p3d";
+    color="i";
+  };
+  class SRP_Letter_J: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_j.p3d";
+    color="ja";
+  };
+  class SRP_Letter_K: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_k.p3d";
+    color="k";
+  };
+  class SRP_Letter_L: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_l.p3d";
+    color="l";
+  };
+  class SRP_Letter_M: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_m.p3d";
+    color="m";
+  };
+  class SRP_Letter_N: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_n.p3d";
+    color="n";
+  };
+  class SRP_Letter_O: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_o.p3d";
+    color=" o";
+  };
+  class SRP_Letter_P: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_p.p3d";
+    color="p";
+  };
+  class SRP_Letter_Q: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_q.p3d";
+    color="q";
+  };
+  class SRP_Letter_R: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_r.p3d";
+    color="r";
+  };
+  class SRP_Letter_S: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_s.p3d";
+    color="s";
+  };
+  class SRP_Letter_T: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_t.p3d";
+    color="t";
+  };
+  class SRP_Letter_U: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_u.p3d";
+    color="u";
+  };
+  class SRP_Letter_V: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_v.p3d";
+    color="v";
+  };
+  class SRP_Letter_W: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_w.p3d";
+    color="w";
+  };
+  class SRP_Letter_X: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_x.p3d";
+    color="x";
+  };
+  class SRP_Letter_Y: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_y.p3d";
+    color="y";
+  };
+  class SRP_Letter_Z: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_z.p3d";
+    color="z";
+  };
+  class SRP_Letter_0: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_0.p3d";
+    color="0";
+    inventorySlots[]={}; // flag patch recipe expects last letter to be an actual letter. update if you add these in
+  };
+  class SRP_Letter_1: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_1.p3d";
+    color="1";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_2: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_2.p3d";
+    color="2";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_3: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_3.p3d";
+    color="3";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_4: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_4.p3d";
+    color="4";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_5: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_5.p3d";
+    color="5";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_6: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_6.p3d";
+    color="6";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_7: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_7.p3d";
+    color="7";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_8: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_8.p3d";
+    color="8";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_9: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_9.p3d";
+    color="9";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Ampersand: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_ampersand.p3d";
+    color="ampersand";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Asterisk: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_asterisk.p3d";
+    color="asterisk";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Dollars: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_dollars.p3d";
+    color="dollars";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Equals: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_equals.p3d";
+    color="equals";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Exclamation: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_exclamation.p3d";
+    color="exclamation";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Hash: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_hash.p3d";
+    color="hash";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Parenthesis: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_parenthesis.p3d";
+    color="parenthesis";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Percent: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_percent.p3d";
+    color="percent";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Plus: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_plus.p3d";
+    color="plus";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Question: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_question.p3d";
+    color="question";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Slash: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_slash.p3d";
+    color="slash";
+    inventorySlots[]={};
+  };
+  class SRP_Letter_Times: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_times.p3d";
+    color="times";
+    inventorySlots[]={};
+  };
   // ---------------------PRE FABS
   class SRP_PrefabHouse_Base: HouseNoDestruct  // new
 	{

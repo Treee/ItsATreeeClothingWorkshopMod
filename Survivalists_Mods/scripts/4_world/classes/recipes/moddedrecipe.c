@@ -8,6 +8,8 @@ modded class PluginRecipesManager
     // Crafting
     //---------Deconstruct Items into Kits
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
+    RegisterRecipe(new Deconstruct_RockPile);
+    RegisterRecipe(new Deconstruct_PlacedLetters);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit_BuildingFrame);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit_StreetSign);     
@@ -16,6 +18,5 @@ modded class PluginRecipesManager
     RegisterRecipe(new Deconstruct_IntermediaryBarricadeKit);
     RegisterRecipe(new Deconstruct_IntermediaryStreetLightKit);
     RegisterRecipe(new Deconstruct_IntermediaryWoodenFurnitureKit);
-    RegisterRecipe(new Deconstruct_RockPile);
 	}
 };

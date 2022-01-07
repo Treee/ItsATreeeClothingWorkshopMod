@@ -578,7 +578,7 @@ class CfgVehicles
 		};
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		rotationFlags=64;
+		rotationFlags=4;
 		inventorySlot="Hips";
 		simulation="clothing";
 		vehicleClass="Clothing";
