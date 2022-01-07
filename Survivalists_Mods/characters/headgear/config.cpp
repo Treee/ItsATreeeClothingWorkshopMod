@@ -374,6 +374,7 @@ class CfgVehicles
     displayName="Pakol";
 		descriptionShort = "Pakol, popularly known as the Chitrali cap, is a soft round-topped men's hat, typically of wool and found in any of a variety of earthy colors.";
     model="Survivalists_Mods\characters\headgear\srp_pakol_g.p3d";
+    rotationFlags=64;
     attachments[]=
 		{
       "SRP_Comtacs"
@@ -666,6 +667,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\headgear\srp_altynhelmetvisor.p3d";
 		weight=350;
 		itemSize[]={3,2};
+    rotationFlags=16;
 		inventorySlot[]=
 		{
 			"Glass",

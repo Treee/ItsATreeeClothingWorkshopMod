@@ -728,6 +728,52 @@ class CfgVehicles
 		};
 	};
 
+  //============================ LETTERS
+  
+  class SRP_Letter_Colorbase: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Letter";
+		descriptionShort="This letter was fashioned out of some sort of material.";
+		model="Survivalists_Mods\gear\carpentry\srp_letters.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=1;
+		physLayer="item_large";
+		itemSize[]={2,2};
+    itemsCargoSize[]={0,0};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "dz\gear\consumables\data\oak_bark_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"dz\gear\consumables\data\oak_bark_co.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"dz\gear\consumables\data\oak_bark_co.rvmat"}},
+            {0.69999999,{"dz\gear\consumables\data\oak_bark_co.rvmat"}},
+            {0.5,{"dz\gear\consumables\data\oak_bark_co_damage.rvmat"}},
+            {0.30000001,{"dz\gear\consumables\data\oak_bark_co_damage.rvmat"}},
+            {0.0,{"dz\gear\consumables\data\oak_bark_co_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
   // ---------------------PRE FABS
   class SRP_PrefabHouse_Base: HouseNoDestruct  // new
 	{

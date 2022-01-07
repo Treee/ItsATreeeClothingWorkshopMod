@@ -60,7 +60,6 @@ class CfgVehicles
 	class SRP_Knife_Sheath_Green: SRP_Knife_Sheath_Tan
 	{
 		scope=2;
-    displayName = "Knife Sheath - Green";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\belts\data\Sheath_Green_CO.paa"
@@ -69,7 +68,6 @@ class CfgVehicles
 	class SRP_Knife_Sheath_Black: SRP_Knife_Sheath_Tan
 	{
 		scope=2;
-    displayName = "Knife Sheath - Black";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\belts\data\Sheath_Black_CO.paa"
@@ -79,7 +77,6 @@ class CfgVehicles
   class SRP_TacticalBelt_Green: SRP_TacticalBelt
 	{
 		scope=2;
-    displayName = "Knife Sheath - Green";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\belts\data\tacticalbelt_Green_co.paa"
@@ -88,7 +85,6 @@ class CfgVehicles
 	class SRP_TacticalBelt_Black: SRP_TacticalBelt
 	{
 		scope=2;
-    displayName = "Knife Sheath - Black";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\belts\data\tacticalbelt_Black_co.paa"

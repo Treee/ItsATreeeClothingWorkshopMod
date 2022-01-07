@@ -16,6 +16,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Handdrill", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can_opened.anm");
     pType.AddItemInHandsProfileIK("SRP_Handdrill_Old", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/food_can_opened.anm");
     pType.AddItemInHandsProfileIK("SRP_Clamp", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
+    pType.AddItemInHandsProfileIK("SRP_Letter_Colorbase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
     pType.AddItemInHandsProfileIK("SRP_Caliper", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior, "dz/anims/anm/player/ik/gear/hammer_ik.anm");    
     pType.AddItemInHandsProfileIK("SRP_DiceSingle_White", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
     pType.AddItemInHandsProfileIK("SRP_DiceRpg_d4", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
@@ -100,7 +101,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Tool_CoalRake", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_farminghoe.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/farming_hoe.anm");
     pType.AddItemInHandsProfileIK("SRP_ForgeCrucible_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
     pType.AddItemInHandsProfileIK("SRP_ForgeIngotMold_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");
-    pType.AddItemInHandsProfileIK("SRP_BerserkSword", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_bat.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/baseballbat.anm");
+    pType.AddItemInHandsProfileIK("SRP_BerserkSword", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");
     pType.AddItemInHandsProfileIK("SRP_CrystalMace", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_bat.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/baseballbat.anm");
     pType.AddItemInHandsProfileIK("SRP_BeanBasher", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_bat.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/baseballbat.anm");    
     pType.AddItemInHandsProfileIK("SRP_SlingBackpack_Default", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    

@@ -2312,7 +2312,7 @@ class CfgVehicles
 		descriptionShort="Harvested material from a plant.";
     model="\dz\gear\cultivation\plant_material.p3d";
     color="base";
-		rotationFlags=34;
+		rotationFlags=16;
 		weight=0;
 		itemSize[]={2,2};
 		stackedUnit="g";
@@ -2490,6 +2490,7 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the brookmint herb.";
     model="Survivalists_Mods\gear\food\food_brookmint.p3d";
     color="brookmint";
+    rotationFlags=64;
 	};
   class Dock: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2530,6 +2531,7 @@ class CfgVehicles
 		descriptionShort="A harvested cap from the Green Amanita mushroom.";
     model="Survivalists_Mods\gear\food\food_greenamanita.p3d";
     color="greenamanita";
+    rotationFlags=64;
 	};
   class Yarrow: SRP_PlantHerbEdible_Colorbase
 	{

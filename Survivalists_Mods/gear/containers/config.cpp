@@ -953,7 +953,6 @@ class CfgVehicles
 		descriptionShort="A box for mailing letters.";
 		model="Survivalists_Mods\gear\containers\mailboxregular.p3d";
 		weight=1000;
-		rotationFlags=16;
 		itemSize[]={10,15};
 		itemsCargoSize[]={3,4};
 		slopeTolerance=0.30000001;
@@ -1004,7 +1003,6 @@ class CfgVehicles
 		descriptionShort="A box for mailing letters.";
 		model="Survivalists_Mods\gear\containers\mailboxregularblue.p3d";
 		weight=1000;
-		rotationFlags=16;
 		itemSize[]={10,15};
 		itemsCargoSize[]={3,4};
 		slopeTolerance=0.30000001;
@@ -1055,7 +1053,6 @@ class CfgVehicles
 		descriptionShort="A box for mailing letters.";
 		model="Survivalists_Mods\gear\containers\mailboxwooden.p3d";
 		weight=1000;
-		rotationFlags=16;
 		itemSize[]={10,15};
 		itemsCargoSize[]={3,4};
 		slopeTolerance=0.30000001;
@@ -2059,6 +2056,7 @@ class CfgVehicles
 		itemsCargoSize[]={3,3};
     repairableWithKits[]={5,2};
 		repairCosts[]={30,25};
+    rotationFlags=1;
 		allowOwnedCargoManipulation=1;
     hiddenSelections[]=
 		{
