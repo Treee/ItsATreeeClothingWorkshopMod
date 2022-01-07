@@ -191,7 +191,6 @@ class CfgVehicles
       "Material_Shelter_Rope"
 		};
 	};
-
   class SRP_WeaponBladeKatana_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -205,6 +204,21 @@ class CfgVehicles
       "SRP_MetalRod2",
       "Material_MetalWire",
       "Material_Shelter_Rope",    
+      "Material_Shelter_Fabric"
+		};
+	};
+  class SRP_WeaponBladeWarCleaver_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - War Cleaver";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",  
       "Material_Shelter_Fabric"
 		};
 	};

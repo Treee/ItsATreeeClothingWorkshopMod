@@ -280,3 +280,4 @@ class SRP_WeaponBladeSnakeDagger_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeBerserkSword_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeCrystalMace_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeKatana_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WeaponBladeWarCleaver_Kit extends SRP_IntermediateCraftingKitBase{};
