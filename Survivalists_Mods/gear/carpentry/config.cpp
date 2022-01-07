@@ -729,6 +729,32 @@ class CfgVehicles
 	};
 
   //============================ LETTERS
+
+  class SRP_LetterKit1_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Letter Kit - A-M";
+		descriptionShort="A Wooden Letter Kit - A-M";
+	};
+
+  class SRP_LetterKit2_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Letter Kit - N-Z";
+		descriptionShort="A Wooden Letter Kit - N-Z";
+	};
+  class SRP_LetterNumberKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Number Kit - 0-9";
+		descriptionShort="A Wooden Number Kit - 0-9";
+	};
+  class SRP_LetterSignsKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Accents Kit";
+		descriptionShort="A Wooden Accents Kit";
+	};
   
   class SRP_Letter_Colorbase: Inventory_Base // new
 	{
@@ -742,6 +768,7 @@ class CfgVehicles
 		physLayer="item_large";
     color="base";
 		itemSize[]={2,2};
+    rotationFlags=16;
     itemsCargoSize[]={0,0};
     inventorySlots[]=
     {
