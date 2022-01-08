@@ -122,7 +122,12 @@ class CfgVehicles
   {
     inventorySlot[]=
     {
-      "Hatchet"
+      "MassTool",
+			"Hatchet",
+			"Hatchet1",
+			"Hatchet2",
+			"Hatchet3",
+			"Hatchet4"
     };
   };
 

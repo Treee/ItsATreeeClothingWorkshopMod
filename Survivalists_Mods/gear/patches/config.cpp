@@ -17,14 +17,6 @@ class CfgVehicles
 {
 	class Clothing;
   class Inventory_Base;
-  // =========================== MODDED MODS
-  class BBP_Letter_Base: Inventory_Base
-  {
-    inventorySlot[]=
-    {
-      "SRP_MagnetLetter"
-    };
-  }
   // -------------------------- CUSTOM STUFF
 
   //------------------------------ FLAG PATCHES
@@ -101,7 +93,6 @@ class CfgVehicles
 			};
 		};
 	};
-
 
   class SRP_PatchFlag_StarterKit1: SRP_PatchFlag_ColorBase
 	{
