@@ -1,4 +1,15 @@
-class SRP_Letter_Colorbase extends SRP_Container_Base{};
+class SRP_Letter_Colorbase extends SRP_KitBase
+{
+  string GetKitItemName()
+  {
+    return GetType();
+  }
+
+  override bool IsInventoryVisible()
+	{
+		return false;
+	}
+};
 
 class SRP_Letter_A extends SRP_Letter_Colorbase{};
 class SRP_Letter_B extends SRP_Letter_Colorbase{};

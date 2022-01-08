@@ -769,6 +769,7 @@ class CfgVehicles
     color="base";
 		itemSize[]={2,2};
     rotationFlags=16;
+    isTakeable=0;
     itemsCargoSize[]={0,0};
     inventorySlots[]=
     {
