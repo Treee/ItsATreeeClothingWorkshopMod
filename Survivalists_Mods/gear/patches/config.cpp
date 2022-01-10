@@ -131,6 +131,21 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_SingleArmband_StarterKit1: Armband_ColorBase
+	{
+		scope=2;
+		displayName="Single Armband Starter Kit - Solid Colors";
+    descriptionShort="A simple kit for a single armband. Meant for solid colors";
+    inventorySlot="";
+	};
+  class SRP_SingleArmband_StarterKit2: Armband_ColorBase
+	{
+		scope=2;
+		displayName="Single Armband Starter Kit - Medical Insignia";
+    descriptionShort="A simple kit for a single armband. Meant to distinguish medical personel";
+    inventorySlot="";
+	};
+
   class SRP_Armband_Base: Clothing
 	{	
 		scope=2;
