@@ -29,7 +29,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_beerliquor_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_beerliquor_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_BestBurgers : SRP_CollectableSign_Base //new
@@ -42,7 +42,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_bestburgers_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_bestburgers_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Cinema : SRP_CollectableSign_Base //new
@@ -55,7 +55,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_cinema_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_cinema_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_CocaCola : SRP_CollectableSign_Base //new
@@ -68,7 +68,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_cocacola_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_cocacola_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Female : SRP_CollectableSign_Base //new
@@ -81,7 +81,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_female_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_female_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_FreshBakery : SRP_CollectableSign_Base //new
@@ -94,7 +94,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_freshbakery_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_freshbakery_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_IceCream : SRP_CollectableSign_Base //new
@@ -107,7 +107,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_icecream_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_icecream_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Male : SRP_CollectableSign_Base //new
@@ -120,7 +120,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_male_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_male_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_OpenClosed : SRP_CollectableSign_Base //new
@@ -133,7 +133,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_openclosed_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_openclosed_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Pepsi : SRP_CollectableSign_Base //new
@@ -146,7 +146,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_pepsi_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_pepsi_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Popcorn : SRP_CollectableSign_Base //new
@@ -159,7 +159,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_popcorn_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_popcorn_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Seafood : SRP_CollectableSign_Base //new
@@ -172,7 +172,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_seafood_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_seafood_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Staff : SRP_CollectableSign_Base //new
@@ -185,7 +185,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_staff_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_staff_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Starbucks : SRP_CollectableSign_Base //new
@@ -198,7 +198,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_starbucks_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_starbucks_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Thankyou : SRP_CollectableSign_Base //new
@@ -211,7 +211,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_thankyou_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_thankyou_co.paa"
 		};		
 	};
 	
@@ -225,7 +225,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_coffebean_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_coffebean_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Coffee : SRP_CollectableSign2_Base //new
@@ -238,7 +238,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_coffee_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_coffee_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Deserts : SRP_CollectableSign2_Base //new
@@ -251,7 +251,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_deserts_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_deserts_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Donuts : SRP_CollectableSign2_Base //new
@@ -264,7 +264,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_donuts_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_donuts_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Pizza : SRP_CollectableSign2_Base //new
@@ -277,7 +277,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_pizza_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_pizza_co.paa"
 		};		
 	};
 	class SRP_CollectableSign_Soda : SRP_CollectableSign2_Base //new
@@ -290,7 +290,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\structures\signs\data\srp_sign_soda_co.paa"
+			"Survivalists_Retextures\structures\signs\data\srp_sign_soda_co.paa"
 		};		
 	};
 };
