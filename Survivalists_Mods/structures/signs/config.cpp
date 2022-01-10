@@ -1253,7 +1253,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_CollectableSign_Base : Container_Base
+  class SRP_CollectableSign_Base: Container_Base
 	{
 		scope=0;
 		displayName="Collectable Sign - Wide";
@@ -1277,7 +1277,7 @@ class CfgVehicles
 			"Survivalists_Mods\structures\signs\data\srp_collectablesignwide.rvmat"
 		};
 	};
-  class SRP_CollectableSign2_Base : Container_Base
+  class SRP_CollectableSign2_Base: Container_Base
 	{
 		scope=0;
 		displayName="Collectable Sign - Tall";
