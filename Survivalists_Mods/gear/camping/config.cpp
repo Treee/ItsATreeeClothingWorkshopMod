@@ -1693,6 +1693,7 @@ class CfgVehicles
     color="base";
 		weight=250;
 		itemSize[]={2,2};
+    rotationFlags=16;
 		absorbency=0.30000001;
 		physLayer="item_small";
     attachments[]=
@@ -1880,6 +1881,7 @@ class CfgVehicles
     color="base";
 		weight=250;
 		itemSize[]={1,1};
+    rotationFlags=16;
 		absorbency=0.30000001;
 		physLayer="item_small";
     itemBehaviour=1;
