@@ -11,6 +11,6 @@ modded class ActionOpenPDA
 	{
     super.OnExecuteServer(action_data);
     action_data.m_MainItem.GetCompEM().ConsumeEnergy(1);
-    action_data.m_MainItem.AddHealth("", "", -0.2);
+    action_data.m_MainItem.AddHealth("", "", -0.5);
 	}
 };
