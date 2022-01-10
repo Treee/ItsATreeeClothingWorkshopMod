@@ -4,12 +4,13 @@ modded class ActionOpenPDA
   override void OnExecuteClient( ActionData action_data )
 	{	
     super.OnExecuteClient(action_data);
-    action_data.m_MainItem.GetCompEM().ConsumeEnergy(0.4);
+    action_data.m_MainItem.GetCompEM().ConsumeEnergy(1);
 	}
 
 	override void OnExecuteServer( ActionData action_data )
 	{
     super.OnExecuteServer(action_data);
-    action_data.m_MainItem.GetCompEM().ConsumeEnergy(0.4);
+    action_data.m_MainItem.GetCompEM().ConsumeEnergy(1);
+    action_data.m_MainItem.AddHealth("", "", -0.2);
 	}
 };
