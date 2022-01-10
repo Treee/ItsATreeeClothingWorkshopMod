@@ -1252,4 +1252,53 @@ class CfgVehicles
 			"Survivalists_Mods\structures\signs\data\srp_woodensign.rvmat"
 		};
   };
+
+  class SRP_CollectableSign_Base : Container_Base
+	{
+		scope=0;
+		displayName="Collectable Sign - Wide";
+		descriptionShort="A Collectable Sign";
+		model="Survivalists_Mods\structures\signs\SRP_CollectableSign_wide.p3d";
+		itemSize[]={4,4};
+    itemsCargoSize[]={0,0};
+		weight=300;
+		rotationFlags=16;
+		itemBehaviour=1;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\srp_sign_freshbakery_co.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"Survivalists_Mods\structures\signs\data\srp_collectablesignwide.rvmat"
+		};
+	};
+  class SRP_CollectableSign2_Base : Container_Base
+	{
+		scope=0;
+		displayName="Collectable Sign - Tall";
+		descriptionShort="A Collectable Sign";
+		model="Survivalists_Mods\structures\signs\SRP_CollectableSign_tall.p3d";
+		itemSize[]={4,4};
+    itemsCargoSize[]={0,0};
+		weight=300;
+		rotationFlags=16;
+		itemBehaviour=1;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\srp_sign_deserts_co.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"Survivalists_Mods\structures\signs\data\srp_collectablesigntall.rvmat"
+		};
+	};
 };

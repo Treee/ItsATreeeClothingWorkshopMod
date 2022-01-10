@@ -203,6 +203,9 @@ class SRP_Furniture_WoodBenchSmall extends SRP_DeployableContainer_Base{};
 class SRP_Furniture_WoodBenchSlim extends SRP_DeployableContainer_Base{};
 class SRP_Furniture_PileOfPlanks extends SRP_DeployableContainer_Base{};
 
+class SRP_CollectableSign_Base extends SRP_DeployableContainer_Base{};
+class SRP_CollectableSign2_Base extends SRP_DeployableContainer_Base{};
+
 
 // These are containers that cannot be put in your hands and need to be dismantled to re-place
 class SRP_Container_Base extends DeployableContainer_Base
