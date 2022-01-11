@@ -17,6 +17,7 @@ class CfgVehicles
 {
 	class Clothing;
   class Inventory_Base;
+  class Armband_ColorBase;
   // -------------------------- CUSTOM STUFF
 
   //------------------------------ FLAG PATCHES
