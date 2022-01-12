@@ -14,6 +14,31 @@ class CfgSlots
   //=====================BASE GAME OVERRIDE
 
   //===================== CUSTOM
+  class Slot_Dynamite1
+	{
+		name="Dynamite1";
+		displayName="Dynamite";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Dynamite2
+	{
+		name="Dynamite2";
+		displayName="Dynamite";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Dynamite3
+	{
+		name="Dynamite3";
+		displayName="Dynamite";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_Dynamite4
+	{
+		name="Dynamite4";
+		displayName="Dynamite";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+
   class Slot_Cassette
 	{
 		name="Cassette";

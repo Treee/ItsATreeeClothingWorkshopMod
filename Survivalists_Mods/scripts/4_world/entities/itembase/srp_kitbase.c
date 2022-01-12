@@ -281,8 +281,10 @@ class SRP_WeaponBladeBerserkSword_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeCrystalMace_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeKatana_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeWarCleaver_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_Dynamite_Stick_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_LetterKit1_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterKit2_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterNumberKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterSignsKit_Kit extends SRP_IntermediateCraftingKitBase{};
+

@@ -56,8 +56,9 @@ class CfgAmmo
 
 class CfgVehicles
 {
-  class Inventory_Base;
   class Grenade_Base;
+
+  class SRP_KitBase;
 
   class SRP_Dynamite_Stick : Grenade_Base
   {
@@ -68,6 +69,13 @@ class CfgVehicles
 		weight=10;
     varTemperatureMax=100;
     itemSize[]={1,3};
+    inventorySlot[]=
+    {
+      "Dynamite1",
+      "Dynamite2",
+      "Dynamite3",
+      "Dynamite4",
+    };
 		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
       "Survivalists_Mods\weapons\explosives\data\dynamite_stick_co.paa"
@@ -92,6 +100,22 @@ class CfgVehicles
 			};
 		};		
   };
+
+  class SRP_Dynamite_Stick_Kit: SRP_KitBase //new
+	{
+    scope=2;
+    displayName="Dynamite Stack Kit";
+		descriptionShort="A single stick of dynamite with material to hold several sticks together.";
+		model="Survivalists_Mods\weapons\explosives\dynamite_stick.p3d";
+    itemSize[]={3,3};
+    attachments[]=
+    {      
+      "Dynamite1",
+      "Dynamite2",
+      "Dynamite3",
+      "Dynamite4",    
+    };
+	};
 
   class SRP_Dynamite_Stack: Grenade_Base
   {
