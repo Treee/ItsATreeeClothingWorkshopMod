@@ -215,6 +215,27 @@ class CfgVehicles
 		};
 	};
 
+  // sneaky radio
+  class SRP_PersonalRadio_SneakyBear: PersonalRadio  // Motorola1-5
+  {
+		scope=2;
+		displayName="Teddy Bear";
+		descriptionShort="This bear looks at your funny.";
+		model="\dz\gear\containers\teddybear.p3d";
+    repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+    range=1000;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\teddybear_voodoo_co.paa"
+		};
+  };
+
+  //-------------------------------- Music Tapes
 	class SRPRadio_CassetteTape_Base: Cassette
 	{
 		displayName="Cassette Tape";
@@ -282,7 +303,6 @@ class CfgVehicles
 		};
 	};
 
-  //-------------------------------- Music Tapes
 	class SRPRadio_CassetteTape_Snowblood: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
