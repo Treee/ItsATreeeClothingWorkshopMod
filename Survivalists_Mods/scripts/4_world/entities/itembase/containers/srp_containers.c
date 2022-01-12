@@ -453,6 +453,19 @@ class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
 
 class SRP_Openable_Container extends Barrel_ColorBase
 {
+  override void EEInit()
+	{
+		super.EEInit();		
+    if(IsOpen())
+    {
+      GetInventory().UnlockInventory(HIDE_INV_FROM_SCRIPT);
+    }
+		else
+    {
+			GetInventory().LockInventory(HIDE_INV_FROM_SCRIPT);
+    }
+	}
+
   protected override void UpdateVisualState()
 	{
 		if ( IsOpen() )
@@ -476,6 +489,29 @@ class SRP_Openable_Container extends Barrel_ColorBase
   {
     return false;
   }
+
+  override void Open()
+	{
+    super.Open();
+		GetInventory().UnlockInventory(HIDE_INV_FROM_SCRIPT);
+	}
+
+	override void Close()
+	{
+    super.Close();
+		GetInventory().LockInventory(HIDE_INV_FROM_SCRIPT);
+	}
+  override void SoundBarrelOpenPlay()
+	{
+		EffectSound sound =	SEffectManager.PlaySound( "doorMetalContainerOpen", GetPosition() );
+		sound.SetAutodestroy( true );
+	}
+	
+	override void SoundBarrelClosePlay()
+	{
+		EffectSound sound =	SEffectManager.PlaySound( "doorMetalContainerClose", GetPosition() );
+		sound.SetAutodestroy( true );
+	}
 };
 
 class SRP_BedsideTableMetal extends SRP_Openable_Container{};

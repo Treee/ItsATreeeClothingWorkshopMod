@@ -1702,7 +1702,7 @@ class CfgVehicles
 					"Pistol",
 					"Shoulder"
 				};
-				icon="cat_common_cargo";
+				icon="set:dayz_inventory image:cat_common_cargo";
 			};
 			class Accessories
 			{
@@ -1813,7 +1813,7 @@ class CfgVehicles
 					"Pistol",
 					"Shoulder"
 				};
-				icon="cat_common_cargo";
+				icon="set:dayz_inventory image:cat_common_cargo";
 			};
 			class Accessories
 			{
@@ -2514,5 +2514,296 @@ class CfgVehicles
 			};
 		};
 	};
+
+  
+  class SRP_LockerSingle_Colorbase: Container_Base  // new
+	{
+		scope=0;
+		displayName="Storage Locker - Single";
+		descriptionShort="A storage container.";
+		model="Survivalists_Mods\gear\containers\srp_locker_single.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+    attachments[]=
+    {
+			"Pistol",
+      "Shoulder",
+			"Melee",
+			"Armband",
+			"Hips",
+			"Back",
+			"Body",
+			"Legs",
+			"Feet",
+			"Eyewear",
+			"Mask",
+			"Gloves",
+			"Vest",
+			"Headgear",
+			"Knife",
+			"VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
+      "SRP_Dynamite",
+      "SRP_Dynamite1"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_locker_single_co.paa"
+    };
+    class Cargo
+		{
+			itemsCargoSize[]={8,4};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Explosives
+			{
+				name="Explosives";
+				description="";
+				attachmentSlots[]=
+				{
+					"VestGrenadeA",
+					"VestGrenadeB",
+					"VestGrenadeC",
+					"VestGrenadeD",
+          "SRP_Dynamite",
+          "SRP_Dynamite1"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class Weapons
+			{
+				name="Weapons";
+				description="";
+				attachmentSlots[]=
+				{
+					"Pistol",
+					"Knife",
+          "Shoulder",
+          "Melee"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class Gear
+			{
+				name="Gear";
+				description="";
+				attachmentSlots[]=
+				{
+					"Headgear",
+					"Eyewear",
+					"Mask",
+					"Armband",
+					"Gloves",
+					"Body",
+					"Vest",
+					"Back",
+					"Hips",
+					"Legs",
+					"Feet"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+	};
+
+  class SRP_LockerTriple_Colorbase: Container_Base  // new
+	{
+		scope=0;
+		displayName="Storage Locker - Triple";
+		descriptionShort="A storage container.";
+		model="Survivalists_Mods\gear\containers\srp_locker_triple.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+    attachments[]=
+    {
+			"Pistol",
+      "Shoulder",
+			"Melee",
+			"Armband",
+			"Hips",
+			"Back",
+			"Body",
+			"Legs",
+			"Feet",
+			"Eyewear",
+			"Mask",
+			"Gloves",
+			"Vest",
+			"Headgear",
+			"Knife",
+			"VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
+      "Dynamite1",
+      "Dynamite2"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    class Cargo
+		{
+			itemsCargoSize[]={8,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Explosives
+			{
+				name="Explosives";
+				description="";
+				attachmentSlots[]=
+				{
+					"VestGrenadeA",
+					"VestGrenadeB",
+					"VestGrenadeC",
+					"VestGrenadeD",
+          "Dynamite1",
+          "Dynamite2"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class Weapons
+			{
+				name="Weapons";
+				description="";
+				attachmentSlots[]=
+				{
+					"Pistol",
+					"Knife",
+          "Shoulder",
+          "Melee"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class Gear
+			{
+				name="Gear";
+				description="";
+				attachmentSlots[]=
+				{
+					"Headgear",
+					"Eyewear",
+					"Mask",
+					"Armband",
+					"Gloves",
+					"Body",
+					"Vest",
+					"Back",
+					"Hips",
+					"Legs",
+					"Feet"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+	};
+
+  class SRP_Locker_SingleBlue: SRP_LockerSingle_Colorbase
+  {
+    scope=2;
+    color="singleblue";
+    displayName="Storage Locker - Single - Blue";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_locker_single_co.paa"
+    };
+  }
+
+  class SRP_Locker_TripleBlue: SRP_LockerTriple_Colorbase
+  {
+    scope=2;
+    color="tripleblue";
+    displayName="Storage Locker - Triple - Blue";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_locker_single_co.paa"
+    };
+  }
   
 };
