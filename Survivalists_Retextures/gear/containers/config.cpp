@@ -19,6 +19,7 @@ class CfgVehicles
 
   class SRP_LockerSingle_Colorbase;
   class SRP_LockerTriple_Colorbase;
+  class SRP_LockerQuad_Colorbase;
   class SRP_LockerMilitary_Colorbase;
   
   class Bear_Blue: Bear_ColorBase
@@ -489,6 +490,118 @@ class CfgVehicles
       "Survivalists_Retextures\gear\containers\data\srp_locker_single_yellow_co.paa"
     };
   };
+
+  class SRP_LockerQuad_Black: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="black";
+    displayName="Storage Locker - Quad - Black";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_black_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Blue: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="blue";
+    displayName="Storage Locker - Quad - Blue";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_blue_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Brown: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="brown";
+    displayName="Storage Locker - Quad - Brown";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_brown_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Gray: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="gray";
+    displayName="Storage Locker - Quad - Gray";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_gray_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Green: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="green";
+    displayName="Storage Locker - Quad - Green";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_green_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Orange: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="orange";
+    displayName="Storage Locker - Quad - Orange";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_orange_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Pink: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="pink";
+    displayName="Storage Locker - Quad - Pink";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_pink_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Purple: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="purple";
+    displayName="Storage Locker - Quad - Purple";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_purple_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Red: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="red";
+    displayName="Storage Locker - Quad - Red";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_red_co.paa"
+    };
+  };
+  class SRP_LockerQuad_White: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="white";
+    displayName="Storage Locker - Quad - White";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_white_co.paa"
+    };
+  };
+  class SRP_LockerQuad_Yellow: SRP_LockerQuad_Colorbase
+  {
+    scope=2;
+    color="yellow";
+    displayName="Storage Locker - Quad - Yellow";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\containers\data\srp_locker_quad_yellow_co.paa"
+    };
+  };
+
 
   class SRP_LockerMilitary_Green: SRP_LockerMilitary_Colorbase
   {

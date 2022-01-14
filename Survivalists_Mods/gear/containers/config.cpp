@@ -2805,6 +2805,136 @@ class CfgVehicles
 			};
     };
 	};
+  class SRP_LockerQuad_Colorbase: Container_Base  // new
+	{
+		scope=0;
+		displayName="Storage Locker - Quad";
+		descriptionShort="A storage container.";
+		model="Survivalists_Mods\gear\containers\srp_locker_quad.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+    attachments[]=
+    {
+			"Pistol",
+      "Shoulder",
+			"Melee",
+			"Armband",
+			"Hips",
+			"Back",
+			"Body",
+			"Legs",
+			"Feet",
+			"Eyewear",
+			"Mask",
+			"Gloves",
+			"Vest",
+			"Headgear",
+			"Knife",
+			"VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
+      "SRP_Dynamite",
+      "SRP_Dynamite1"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_locker_quad_co.paa"
+    };
+    class Cargo
+		{
+			itemsCargoSize[]={8,7};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Explosives
+			{
+				name="Explosives";
+				description="";
+				attachmentSlots[]=
+				{
+					"VestGrenadeA",
+					"VestGrenadeB",
+					"VestGrenadeC",
+					"VestGrenadeD",
+          "SRP_Dynamite",
+          "SRP_Dynamite1"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class Weapons
+			{
+				name="Weapons";
+				description="";
+				attachmentSlots[]=
+				{
+					"Pistol",
+					"Knife",
+          "Shoulder",
+          "Melee"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class Gear
+			{
+				name="Gear";
+				description="";
+				attachmentSlots[]=
+				{
+					"Headgear",
+					"Eyewear",
+					"Mask",
+					"Armband",
+					"Gloves",
+					"Body",
+					"Vest",
+					"Back",
+					"Hips",
+					"Legs",
+					"Feet"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+    class AnimationSources
+		{
+      class Doors1
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=1;
+			};
+		};
+    class Doors
+		{
+			class Doors1
+			{
+				displayName="Door 1";
+				component="doors1";
+				soundPos="doors1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.69999999;
+			};
+    };
+	};
   class SRP_LockerMilitary_Colorbase: Container_Base  // new
 	{
 		scope=0;
