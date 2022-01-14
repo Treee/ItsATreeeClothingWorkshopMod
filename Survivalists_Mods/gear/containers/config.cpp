@@ -3087,5 +3087,228 @@ class CfgVehicles
 				initOpened=0.69999999;
 			};
     };
-	};  
+	};
+
+  class SRP_LockerSingle_Black_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Black";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Blue_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Blue";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Brown_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Brown";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Gray_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Gray";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Green_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Green";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Orange_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Orange";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Pink_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Pink";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Purple_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Purple";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Red_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Red";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_White_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - White";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerSingle_Yellow_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Yellow";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Black_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Black";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Blue_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Blue";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Brown_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Brown";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Gray_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Gray";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Green_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Green";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Orange_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Orange";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Pink_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Pink";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Purple_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Purple";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Red_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Red";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_White_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - White";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerTriple_Yellow_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Yellow";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Black_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Black";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Blue_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Blue";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Brown_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Brown";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Gray_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Gray";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Green_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Green";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Orange_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Orange";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Pink_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Pink";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Purple_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Purple";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Red_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Red";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_White_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - White";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerQuad_Yellow_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Yellow";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerMilitary_Green_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - GReen";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerMilitary_Black_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Black";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerMilitary_Gray_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Gray";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
+  class SRP_LockerMilitary_Tan_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Tan";
+    descriptionShort="A kit that holds everything needed for a locker";
+  };
 };

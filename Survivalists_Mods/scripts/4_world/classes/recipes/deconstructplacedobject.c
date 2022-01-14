@@ -68,6 +68,11 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 
     InsertIngredient(0,"SRP_Furniture_BarCounter");
 
+    InsertIngredient(0,"SRP_LockerSingle_Colorbase");
+    InsertIngredient(0,"SRP_LockerTriple_Colorbase");
+    InsertIngredient(0,"SRP_LockerQuad_Colorbase");
+    InsertIngredient(0,"SRP_LockerMilitary_Colorbase");
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing

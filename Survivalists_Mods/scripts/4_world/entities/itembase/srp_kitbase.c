@@ -237,6 +237,44 @@ class SRP_Gravestone_19Open_Kit extends SRP_KitBase{};
 class SRP_StonePile_Small_Kit extends SRP_KitBase{};
 class SRP_StonePile_Large_Kit extends SRP_KitBase{};
 
+class SRP_LockerSingle_Black_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Blue_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Brown_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Gray_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Green_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Orange_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Pink_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Purple_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Red_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_White_Kit extends SRP_KitBase{};
+class SRP_LockerSingle_Yellow_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Black_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Blue_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Brown_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Gray_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Green_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Orange_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Pink_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Purple_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Red_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_White_Kit extends SRP_KitBase{};
+class SRP_LockerTriple_Yellow_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Black_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Blue_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Brown_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Gray_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Green_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Orange_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Pink_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Purple_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Red_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_White_Kit extends SRP_KitBase{};
+class SRP_LockerQuad_Yellow_Kit extends SRP_KitBase{};
+class SRP_LockerMilitary_Green_Kit extends SRP_KitBase{};
+class SRP_LockerMilitary_Black_Kit extends SRP_KitBase{};
+class SRP_LockerMilitary_Gray_Kit extends SRP_KitBase{};
+class SRP_LockerMilitary_Tan_Kit extends SRP_KitBase{};
+
 // This crafted item is not placeable. Most of these represent intermediate kits
 class SRP_IntermediateCraftingKitBase extends ItemBase
 {
@@ -287,4 +325,3 @@ class SRP_LetterKit1_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterKit2_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterNumberKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterSignsKit_Kit extends SRP_IntermediateCraftingKitBase{};
-
