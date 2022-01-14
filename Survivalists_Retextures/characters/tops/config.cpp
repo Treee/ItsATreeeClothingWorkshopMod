@@ -35,6 +35,7 @@ class CfgVehicles
 	class PoliceJacketOrel;
 	class NBCJacketBase;
 	class GorkaEJacket_ColorBase;
+  class NurseDress_ColorBase;
 
   // modded classes
   class DUB_Monkrobe;
@@ -2307,4 +2308,175 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\monkrope_toast_co.paa",
 		};
   };
+
+  class NurseDress_BlackGrape: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackgrape_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackgrape_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackgrape_co.paa"
+		};
+	};
+  class NurseDress_BlackGreen: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackgreen_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackgreen_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackgreen_co.paa"
+		};
+	};
+  class NurseDress_BlackMint: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackmint_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackmint_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackmint_co.paa"
+		};
+	};
+  class NurseDress_BlackOcean: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackocean_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackocean_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackocean_co.paa"
+		};
+	};
+  class NurseDress_BlackPink: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackpink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackpink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackpink_co.paa"
+		};
+	};
+  class NurseDress_BlackRed: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackred_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackred_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackred_co.paa"
+		};
+	};
+  class NurseDress_BlackSnow: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blacksnow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blacksnow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blacksnow_co.paa"
+		};
+	};
+  class NurseDress_BlackStorm: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackstorm_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackstorm_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blackstorm_co.paa"
+		};
+	};
+  class NurseDress_BlackSunny: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blacksunny_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blacksunny_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blacksunny_co.paa"
+		};
+	};
+  class NurseDress_BlueWhite: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_bluewhite_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_bluewhite_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_bluewhite_co.paa"
+		};
+	};
+  class NurseDress_BlueYellow: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_blueyellow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blueyellow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_blueyellow_co.paa"
+		};
+	};
+  class NurseDress_GreenBlack: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_greenblack_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_greenblack_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_greenblack_co.paa"
+		};
+	};
+  class NurseDress_GreenBlackBow: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_greenblackbow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_greenblackbow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_greenblackbow_co.paa"
+		};
+	};
+  class NurseDress_PinkWhite: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_pinkwhite_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_pinkwhite_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_pinkwhite_co.paa"
+		};
+	};
+  class NurseDress_WhiteBowBlue: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowblue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowblue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowblue_co.paa"
+		};
+	};
+  class NurseDress_WhiteBowGreen: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowgreen_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowgreen_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowgreen_co.paa"
+		};
+	};
+  class NurseDress_WhiteBowPink: NurseDress_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowpink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowpink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowpink_co.paa"
+		};
+	};
 };

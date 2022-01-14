@@ -501,17 +501,6 @@ class SRP_Openable_Container extends Barrel_ColorBase
     super.Close();
 		GetInventory().LockInventory(HIDE_INV_FROM_SCRIPT);
 	}
-  override void SoundBarrelOpenPlay()
-	{
-		EffectSound sound =	SEffectManager.PlaySound( "doorMetalContainerOpen", GetPosition() );
-		sound.SetAutodestroy( true );
-	}
-	
-	override void SoundBarrelClosePlay()
-	{
-		EffectSound sound =	SEffectManager.PlaySound( "doorMetalContainerClose", GetPosition() );
-		sound.SetAutodestroy( true );
-	}
 };
 
 class SRP_BedsideTableMetal extends SRP_Openable_Container{};

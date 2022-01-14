@@ -2479,7 +2479,7 @@ class CfgVehicles
 		weight=10000;
 		itemSize[]={10,15};
 		attachments[]=
-		{			
+		{
 			"Material_FPole_Stones"
 		};
     class DamageSystem
@@ -2514,7 +2514,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   
   class SRP_LockerSingle_Colorbase: Container_Base  // new
 	{
@@ -2624,32 +2623,27 @@ class CfgVehicles
 				};
 			};
 		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class movement
-				{
-					soundSet="seachest_movement_SoundSet";
-					id=1;
-				};
-				class pickUpItem_Light
-				{
-					soundSet="pickUpSeaChest_SoundSet";
-					id=796;
-				};
-				class pickUpItem
-				{
-					soundSet="pickUpSeaChest_SoundSet";
-					id=797;
-				};
-			};
-		};
     class AnimationSources
 		{
-      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
-      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+      class Doors1
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=1;
+			};
 		};
+    class Doors
+		{
+			class Doors1
+			{
+				displayName="Door 1";
+				component="doors1";
+				soundPos="doors1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.69999999;
+			};
+    };
 	};
 
   class SRP_LockerTriple_Colorbase: Container_Base  // new
@@ -2755,32 +2749,6 @@ class CfgVehicles
 					hitpoints=100000;
 				};
 			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class movement
-				{
-					soundSet="seachest_movement_SoundSet";
-					id=1;
-				};
-				class pickUpItem_Light
-				{
-					soundSet="pickUpSeaChest_SoundSet";
-					id=796;
-				};
-				class pickUpItem
-				{
-					soundSet="pickUpSeaChest_SoundSet";
-					id=797;
-				};
-			};
-		};
-    class AnimationSources
-		{
-      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
-      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
 		};
 	};
 

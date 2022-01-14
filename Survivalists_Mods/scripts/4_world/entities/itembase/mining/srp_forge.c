@@ -32,6 +32,12 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 		}
 	}
 
+  // false here because we do not want the ability to destroy the forge when nothing is attached (unlike a fire)
+  override bool IsPrepareToDelete()
+	{
+		return false;
+	}
+
   override void EECargoOut(EntityAI item)
 	{
 		super.EECargoOut(item);
