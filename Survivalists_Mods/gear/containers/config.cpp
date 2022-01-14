@@ -2645,7 +2645,6 @@ class CfgVehicles
 			};
     };
 	};
-
   class SRP_LockerTriple_Colorbase: Container_Base  // new
 	{
 		scope=0;
@@ -2676,12 +2675,16 @@ class CfgVehicles
 			"VestGrenadeB",
 			"VestGrenadeC",
 			"VestGrenadeD",
-      "Dynamite1",
-      "Dynamite2"
+      "SRP_Dynamite",
+      "SRP_Dynamite1"
     };
     hiddenSelections[]=
     {
       "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_locker_single_co.paa"
     };
     class Cargo
 		{
@@ -2701,8 +2704,8 @@ class CfgVehicles
 					"VestGrenadeB",
 					"VestGrenadeC",
 					"VestGrenadeD",
-          "Dynamite1",
-          "Dynamite2"
+          "SRP_Dynamite",
+          "SRP_Dynamite1"
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};
@@ -2750,28 +2753,209 @@ class CfgVehicles
 				};
 			};
 		};
+    class AnimationSources
+		{
+      class Doors1
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=1;
+			};
+      class Doors2
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=1;
+			};
+      class Doors3
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=1;
+			};
+		};
+    class Doors
+		{
+			class Doors1
+			{
+				displayName="Door 1";
+				component="doors1";
+				soundPos="doors1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.69999999;
+			};
+      class Doors2
+			{
+				displayName="Door 2";
+				component="doors2";
+				soundPos="doors2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.69999999;
+			};
+      class Doors3
+			{
+				displayName="Door 3";
+				component="doors3";
+				soundPos="doors3_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.69999999;
+			};
+    };
 	};
-
-  class SRP_Locker_SingleBlue: SRP_LockerSingle_Colorbase
-  {
-    scope=2;
-    color="singleblue";
-    displayName="Storage Locker - Single - Blue";
+  class SRP_LockerMilitary_Colorbase: Container_Base  // new
+	{
+		scope=0;
+		displayName="Storage Locker - Military";
+		descriptionShort="A storage container.";
+		model="Survivalists_Mods\gear\containers\srp_locker_military.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+    attachments[]=
+    {
+			"Pistol",
+      "Shoulder",
+      "Shoulder1",
+      "Shoulder2",
+      "Shoulder3",
+      "Shoulder4",
+      "Melee",
+			"Armband",
+			"Hips",
+			"Back",
+			"Body",
+			"Legs",
+			"Feet",
+			"Eyewear",
+			"Mask",
+			"Gloves",
+			"Vest",
+			"Headgear",
+			"Knife",
+			"VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
+      "SRP_Dynamite",
+      "SRP_Dynamite1"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\containers\data\srp_locker_single_co.paa"
+      "Survivalists_Mods\gear\containers\data\srp_locker_military_co.paa"
     };
-  }
-
-  class SRP_Locker_TripleBlue: SRP_LockerTriple_Colorbase
-  {
-    scope=2;
-    color="tripleblue";
-    displayName="Storage Locker - Triple - Blue";
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\containers\data\srp_locker_single_co.paa"
+    class Cargo
+		{
+			itemsCargoSize[]={8,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Explosives
+			{
+				name="Explosives";
+				description="";
+				attachmentSlots[]=
+				{
+					"VestGrenadeA",
+					"VestGrenadeB",
+					"VestGrenadeC",
+					"VestGrenadeD",
+          "SRP_Dynamite",
+          "SRP_Dynamite1"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class Weapons
+			{
+				name="Weapons";
+				description="";
+				attachmentSlots[]=
+				{
+					"Pistol",
+					"Knife",
+          "Melee",
+          "Shoulder",
+          "Shoulder1",
+          "Shoulder2",
+          "Shoulder3",
+          "Shoulder4",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class Gear
+			{
+				name="Gear";
+				description="";
+				attachmentSlots[]=
+				{
+					"Headgear",
+					"Eyewear",
+					"Mask",
+					"Armband",
+					"Gloves",
+					"Body",
+					"Vest",
+					"Back",
+					"Hips",
+					"Legs",
+					"Feet"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+    class AnimationSources
+		{
+      class Doors1
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=1;
+			};
+      class Doors2
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=1;
+			};
+		};
+    class Doors
+		{
+			class Doors1
+			{
+				displayName="Door 1";
+				component="doors1";
+				soundPos="doors1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.69999999;
+			};
+      class Doors2
+			{
+				displayName="Door 2";
+				component="doors2";
+				soundPos="doors2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.69999999;
+			};
     };
-  }
-  
+	};  
 };

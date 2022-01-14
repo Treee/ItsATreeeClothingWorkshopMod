@@ -20,7 +20,7 @@ class CfgSoundShaders
 	{
 		samples[]={};
 		frequency=1;
-		range=15;
+		range=25;
 		rangeCurve[]=
 		{
 			{0,1},
@@ -29,7 +29,7 @@ class CfgSoundShaders
 			{150,0.2},
 			{200,0}
 		};
-		volume=1;
+		volume=2;
 	};
 	class SRP_Door_MetalOpen_SoundShader: SRP_Door_SoundShader_Base
 	{
