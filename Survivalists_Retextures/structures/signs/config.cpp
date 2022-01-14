@@ -17,6 +17,7 @@ class CfgVehicles
 {
   class SRP_CollectableSign_Base;
   class SRP_CollectableSign2_Base;
+  class SRP_PictureFrame;
 
   //Collectable Signs
 	class SRP_CollectableSign_BeerLiquor : SRP_CollectableSign_Base //new
@@ -293,4 +294,13 @@ class CfgVehicles
 			"Survivalists_Retextures\structures\signs\data\srp_sign_soda_co.paa"
 		};		
 	};
+
+  class SRP_PictureFrame_Default: SRP_PictureFrame
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\structures\signs\data\srp_pictureframe_co.paa"
+    };
+  };
 };

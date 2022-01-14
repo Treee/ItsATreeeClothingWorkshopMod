@@ -1301,4 +1301,29 @@ class CfgVehicles
 			"Survivalists_Mods\structures\signs\data\srp_collectablesigntall.rvmat"
 		};
 	};
+
+  class SRP_PictureFrame: Container_Base
+	{
+		scope=0;
+		displayName="Picture Frame";
+		descriptionShort="A Picture Frame";
+		model="Survivalists_Mods\structures\signs\SRP_PictureFrame.p3d";
+		itemSize[]={4,4};
+    itemsCargoSize[]={0,0};
+		weight=300;
+		rotationFlags=16;
+		itemBehaviour=1;
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\srp_pictureframe_co.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"Survivalists_Mods\structures\signs\data\srp_pictureframe.rvmat"
+		};
+	};
 };
