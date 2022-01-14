@@ -35,7 +35,6 @@ class SRP_MetalBucket extends Inventory_Base
         {
           player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
         }
-        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
       }
     }
   }
@@ -104,7 +103,6 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
         {
           player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
         }
-        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
       }
     }
   }
@@ -219,7 +217,6 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
         {
           player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
         }
-        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
       }
     }
   }
@@ -281,7 +278,6 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
         {
           player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
         }
-        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
       }
     }
   }

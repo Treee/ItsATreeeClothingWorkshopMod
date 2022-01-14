@@ -34,6 +34,9 @@ class CfgVehicles
   class SRP_Small_Military_Pack_Tan;
   class SRP_Big_Military_Pack_Tan;
   class SRP_Rifle_Bag_Green;
+  
+
+  class DUB_Monsterv2;
 
 	class SRP_SmershBag_White: SmershBag
 	{
@@ -1189,4 +1192,96 @@ class CfgVehicles
       "Survivalists_Retextures\characters\backpacks\data\Rifle_Bag_Black_CO.paa"
     };
   };
+
+
+  class DUB_Monsterv2_Chip: DUB_Monsterv2
+	{
+		scope=2;
+		displayName="Chip";
+		descriptionShort="A unique mutant";
+		hiddenSelections[]=
+		{
+			"Glow"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
+		};
+	};
+  class DUB_Monsterv2_Coffee: DUB_Monsterv2
+	{
+		scope=2;
+		displayName="Coffee";
+		descriptionShort="A unique mutant";
+		hiddenSelections[]=
+		{
+			"Glow"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Coffee_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
+		};
+	};
+  class DUB_Monsterv2_Fanta: DUB_Monsterv2
+	{
+		scope=2;
+		displayName="Fanta";
+		descriptionShort="A unique mutant";
+		hiddenSelections[]=
+		{
+			"Glow"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Fanta_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
+		};
+	};
+  class DUB_Monsterv2_Skylar: DUB_Monsterv2
+	{
+		scope=2;
+		displayName="Skylar";
+		descriptionShort="A unique mutant";
+		hiddenSelections[]=
+		{
+			"Glow"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Skylar_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
+		};
+	};
+  class DUB_Monsterv2_Teal: DUB_Monsterv2
+	{
+		scope=2;
+		displayName="Teal";
+		descriptionShort="A unique mutant";
+		hiddenSelections[]=
+		{
+			"Glow"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Teal_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
+		};
+	};
 };
