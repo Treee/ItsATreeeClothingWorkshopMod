@@ -569,6 +569,150 @@ class CfgVehicles
     };
   };
 
+  class SRP_CraftingMaterial_Dye_Base: Inventory_Base
+	{
+		scope=0;
+		displayName="Dye Crafting Model Base";
+		descriptionShort="A rudimentary dye. Useful for staining this color on cloth or other various things.";
+		model="Survivalists_Mods\gear\consumables\SRP_Bleach.p3d";
+    color="base";
+		weight=120;
+		itemSize[]={2,2};
+		itemBehaviour=1;
+		canBeSplit=1;
+		varQuantityInit=50;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		varQuantityDestroyOnMin=1;
+		varStackMax=100;
+		inventorySlot[]={};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_dye_co.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_CraftingMaterial_Dye_Black: SRP_CraftingMaterial_Dye_Base
+  {
+    scope=2;
+    displayName="Dye - Black";
+    color="black";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      ""
+    };
+  };
+  class SRP_CraftingMaterial_Dye_Blue: SRP_CraftingMaterial_Dye_Base
+  {
+    scope=2;
+    displayName="Dye - Blue";
+    color="blue";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      ""
+    };
+  };
+  class SRP_CraftingMaterial_Dye_Brown: SRP_CraftingMaterial_Dye_Base
+  {
+    scope=2;
+    displayName="Dye - Brown";
+    color="brown";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      ""
+    };
+  };
+  class SRP_CraftingMaterial_Dye_Green: SRP_CraftingMaterial_Dye_Base
+  {
+    scope=2;
+    displayName="Dye - Green";
+    color="green";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      ""
+    };
+  };
+  class SRP_CraftingMaterial_Dye_Pink: SRP_CraftingMaterial_Dye_Base
+  {
+    scope=2;
+    displayName="Dye - Pink";
+    color="pink";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      ""
+    };
+  };
+  class SRP_CraftingMaterial_Dye_Red: SRP_CraftingMaterial_Dye_Base
+  {
+    scope=2;
+    displayName="Dye - Red";
+    color="red";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      ""
+    };
+  };
+  class SRP_CraftingMaterial_Dye_Yellow: SRP_CraftingMaterial_Dye_Base
+  {
+    scope=2;
+    displayName="Dye - Yellow";
+    color="Yellow";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      ""
+    };
+  };
+
   class SRP_SkeletonFrame: Inventory_Base
   {
 		scope=2;
