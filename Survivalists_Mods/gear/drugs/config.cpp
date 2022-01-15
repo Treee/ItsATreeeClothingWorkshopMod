@@ -358,7 +358,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Meth Recipe";
-		descriptionShort="Jebediah's secret family recipe for meth.";
+		descriptionShort="Jebediah's secret family recipe for meth. Combine with a drug tub.";
 		model="\dz\gear\consumables\Paper.p3d";
 		inventorySlot[]={"MethRecipe"};
 		itemSize[]={1,3};
@@ -368,7 +368,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="BathSalts Recipe";
-		descriptionShort="Jebediah's secret family recipe for BathSalts.";
+		descriptionShort="Jebediah's secret family recipe for BathSalts. Combine with a drug tub.";
 		model="\dz\gear\consumables\Paper.p3d";
 		inventorySlot[]={"BathSaltsRecipe"};
 		itemSize[]={1,3};
@@ -378,7 +378,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Acid Recipe";
-		descriptionShort="Jebediah's secret family recipe for Acid.";
+		descriptionShort="Jebediah's secret family recipe for Acid. Combine with a drug tub.";
 		model="\dz\gear\consumables\Paper.p3d";
 		inventorySlot[]={"AcidRecipe"};
 		itemSize[]={1,3};

@@ -9,4 +9,9 @@ class SRP_PersonalRadio_SneakyBear extends PersonalRadio
     }
     EnableReceive(false);
 	}
+
+  override bool IsInventoryVisible()
+  {
+    return false;
+  }
 };
