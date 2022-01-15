@@ -11,7 +11,7 @@ class SRP_MetalBucket extends Inventory_Base
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB.GetItemInHands() == this)
+    if (GetGame().IsDedicatedServer() && player_PB.GetItemInHands() == this)
     {
       if (GetTemperature() > 80)
       {
@@ -27,7 +27,7 @@ class SRP_MetalBucket extends Inventory_Base
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB)
+    if (player_PB && GetGame().IsDedicatedServer())
     {
       if (GetTemperature() > 80)
       {
@@ -79,7 +79,7 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB.GetItemInHands() == this)
+    if (GetGame().IsDedicatedServer() && player_PB.GetItemInHands() == this)
     {
       if (GetTemperature() > 80)
       {
@@ -95,7 +95,7 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB)
+    if (player_PB && GetGame().IsDedicatedServer())
     {
       if (GetTemperature() > 80)
       {
@@ -193,7 +193,7 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB.GetItemInHands() == this)
+    if (GetGame().IsDedicatedServer() && player_PB.GetItemInHands() == this)
     {
       if (GetTemperature() > 80)
       {
@@ -209,7 +209,7 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB)
+    if (player_PB && GetGame().IsDedicatedServer())
     {
       if (GetTemperature() > 80)
       {
@@ -254,7 +254,7 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB.GetItemInHands() == this)
+    if (GetGame().IsDedicatedServer() && player_PB.GetItemInHands() == this)
     {
       if (GetTemperature() > 80)
       {
@@ -270,7 +270,7 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB)
+    if (player_PB && GetGame().IsDedicatedServer())
     {
       if (GetTemperature() > 80)
       {
