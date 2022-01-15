@@ -855,7 +855,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="StreetLight Kit";
-		descriptionShort="A StreetLight Kit - Still needs a bit of work";
+		descriptionShort="A StreetLight Kit - Still needs a bit of work. Combine with other materials to finish.";
 	};
 
   class SRP_StreetLightSlim_Kit: SRP_KitBase  // SRP_StreetLightL_kit

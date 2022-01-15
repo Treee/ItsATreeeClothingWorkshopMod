@@ -365,7 +365,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Barricade Kit";
-		descriptionShort="A Barricade Kit - Still needs a bit of work";
+		descriptionShort="A Barricade Kit - Still needs a bit of work. Combine with other materials to finish.";
 	};
 
   class SRP_Barricade_Wood_Kit: SRP_KitBase //new

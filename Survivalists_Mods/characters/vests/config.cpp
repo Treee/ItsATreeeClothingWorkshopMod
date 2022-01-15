@@ -71,7 +71,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Armor Kit";
-		descriptionShort="An Armor Kit - Still needs a bit of work";
+		descriptionShort="An Armor Kit - Still needs a bit of work. Combine with other materials to finish.";
 	};
 
   class SRP_WoodenStickArmor_Kit: SRP_KitBase //new
