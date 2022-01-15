@@ -592,7 +592,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_dye_co.paa"
+      "Survivalists_Mods\gear\consumables\data\SRP_Bleach_CO.paa"
     };
 		class DamageSystem
 		{
@@ -603,17 +603,23 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag.rvmat"}},
-            {0.69999999,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag.rvmat"}},
-            {0.5,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_damage.rvmat"}},
-            {0.30000001,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_damage.rvmat"}},
-            {0.0,	{	"Survivalists_Mods\gear\consumables\data\srp_craftingmaterials_bag_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\gear\consumables\data\srp_dye.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\consumables\data\srp_dye.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\consumables\data\srp_dye_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\consumables\data\srp_dye_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\consumables\data\srp_dye_destruct.rvmat"}}
 					};
 				};
 			};
 		};
 	};
-
+  
+  class SRP_CraftingMaterial_Dye_Bleach: SRP_CraftingMaterial_Dye_Base
+  {
+    scope=2;
+    displayName="Dye - Bleach";
+    color="bleach";
+  };
   class SRP_CraftingMaterial_Dye_Black: SRP_CraftingMaterial_Dye_Base
   {
     scope=2;
@@ -625,7 +631,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      ""
+      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Black_CO.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Blue: SRP_CraftingMaterial_Dye_Base
@@ -639,7 +645,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      ""
+      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Blue_CO.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Brown: SRP_CraftingMaterial_Dye_Base
@@ -653,7 +659,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      ""
+      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Brown_CO.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Green: SRP_CraftingMaterial_Dye_Base
@@ -667,7 +673,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      ""
+      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Green_CO.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Pink: SRP_CraftingMaterial_Dye_Base
@@ -681,7 +687,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      ""
+      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Pink_CO.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Red: SRP_CraftingMaterial_Dye_Base
@@ -695,7 +701,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      ""
+      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Red_CO.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Yellow: SRP_CraftingMaterial_Dye_Base
@@ -709,7 +715,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      ""
+      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Yellow_CO.paa"
     };
   };
 
