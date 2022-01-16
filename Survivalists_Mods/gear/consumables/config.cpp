@@ -88,6 +88,7 @@ class CfgVehicles
 		{
 			"SRP_Bones"
 		};
+    varQuantityMax=30;
   };
   
   //----------------------------------------------- CUSTOM STUFF
