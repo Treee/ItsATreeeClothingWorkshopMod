@@ -31,6 +31,12 @@ class CfgVehicles
 		};
 	};
 
+  //-------------------------------------- Modded OVERRIDE
+  class DUB_Bigsac: Container_Base
+	{
+    isTakeable=0;
+  };
+
   //--------------------------------------- Custom Stuff
   
   class SRP_Fridge_Kit: SRP_KitBase //new
