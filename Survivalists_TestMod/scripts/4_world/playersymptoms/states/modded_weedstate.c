@@ -2,7 +2,8 @@ modded class WeedEffectSymptom
 {
 	PPERequester_WeedEffect m_RequesterWeedEffect;
 
-  float fadeTimeMax = 5.0;
+  const float fadeTimeMax = 5.0;
+  float fadeTimeMin = 0;
   float currentFadeTime = 0;
   int signMultiplier = 1;
 
@@ -21,7 +22,7 @@ modded class WeedEffectSymptom
     {
       signMultiplier *= -1;
     }
-    else if (currentFadeTime < 0)
+    else if (currentFadeTime < fadeTimeMin)
     {
       signMultiplier *= -1;
     }

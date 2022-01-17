@@ -152,7 +152,7 @@ modded class PlayerBase extends ManBase
       return true;
     }
     EntityAI back = GetInventory().FindAttachment(InventorySlots.BACK);
-    if (back && back.GetType() == "DUB_Monsterv2" || back.IsInherited(DUB_Monsterv2))
+    if (back && (back.GetType() == "DUB_Monsterv2" || back.IsInherited(DUB_Monsterv2)))
     {
       return true;
     }
