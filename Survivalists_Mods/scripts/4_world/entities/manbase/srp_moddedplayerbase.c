@@ -152,11 +152,76 @@ modded class PlayerBase extends ManBase
       return true;
     }
     EntityAI back = GetInventory().FindAttachment(InventorySlots.BACK);
-    if (back && back.GetType() == "DUB_Monsterv2")
+    if (back && back.GetType() == "DUB_Monsterv2" || back.IsInherited(DUB_Monsterv2))
     {
       return true;
     }
     return false;
+  }
+  
+  float SRPAIVisionModifier()
+  {
+    float vision = 1.0;
+    EntityAI suitAttachment = GetInventory().FindAttachment(InventorySlots.BACK);
+    if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 28800)
+    {
+			vision = 0.0;
+      // Area 42
+			if (vector.Distance(GetPosition(), Vector(13399.7, 12.9225, 9843.49)) < 600)
+			{
+				vision = 0.5;
+			}
+			// Airfield
+			else if (vector.Distance(GetPosition(), Vector(5454.67, 75.6217, 3461.69)) < 550)
+			{
+				vision = 0.5;
+			}
+			// Paris
+			else if (vector.Distance(GetPosition(), Vector(2812.13, 22.4625, 3901.33)) < 750)
+			{
+				vision = 0.5;
+			}
+			// Temple
+			else if (vector.Distance(GetPosition(), Vector(422.315, 16.5728, 595.137)) < 850)
+			{
+				vision = 0.5;
+			}
+    }
+		else if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
+		{
+			vision = 0.0;
+		}
+    return vision;
+  }
+
+  bool SRPIgnoreFallingDamage()
+  {
+    bool ignoreFalling = false;
+    EntityAI suitAttachment = GetInventory().FindAttachment(InventorySlots.BACK);
+    EntityAI mutantAttachment = GetInventory().FindAttachment(InventorySlots.HEAD);
+
+    if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
+      ignoreFalling = true;
+    else if (suitAttachment && suitAttachment.GetType() == "DUB_Lich")
+      ignoreFalling = true;
+    else if ( mutantAttachment && mutantAttachment.GetType() == "DUB_Observerhead")
+      ignoreFalling = true;
+    else if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 86893 && GetGame().GetWorld().IsNight())
+      ignoreFalling = true;
+    
+    return ignoreFalling;
+  }
+
+  float SRPGetJumpHeight()
+  {
+    float height = 2.6; // default
+    EntityAI suitAttachment = GetInventory().FindAttachment(InventorySlots.BACK);
+
+    if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
+		{
+			height = 15;
+		}
+    return height;
   }
 
   void UpdateCamoState()

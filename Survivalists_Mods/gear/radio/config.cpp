@@ -220,8 +220,9 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Teddy Bear";
-		descriptionShort="This bear looks at your funny.";
+		descriptionShort="A cuddly teddy bear toy. Even though it's stuffed, it is able to conceal small items, somewhere.";
 		model="\dz\gear\containers\teddybear.p3d";
+    itemSize[]={2,3};
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
     range=1000;
