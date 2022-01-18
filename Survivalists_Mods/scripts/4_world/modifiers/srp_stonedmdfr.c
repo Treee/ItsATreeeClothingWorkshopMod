@@ -1,9 +1,6 @@
 class SRP_StonedMdfr: ModifierBase
 {  
-  int LIFETIME = 0;
-  float water_loss_per_tick = 0;
-  float chance_for_laugh = 0;
-  float chance_for_cough = 0;
+  int LIFETIME = 300;
 
 	override void Init()
 	{
@@ -33,10 +30,10 @@ class SRP_StonedMdfr: ModifierBase
 	{
     // Print("SRP_StonedMdfr:: OnActivate"); // reset the modifier
     SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    LIFETIME = config.g_SRPStonedModifierLifetime;
-    water_loss_per_tick = config.g_SRPWeedWaterLossAmount;
-    chance_for_laugh = config.g_SRPWeedChanceForLaugh;
-    chance_for_cough = config.g_SRPWeedChanceForCough;
+    if (config)
+    {
+      LIFETIME = config.g_SRPStonedModifierLifetime;
+    }
 
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_STONED)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_WEED);
@@ -63,17 +60,4 @@ class SRP_StonedMdfr: ModifierBase
 			return false;
 		}
 	}
-
-	override void OnTick(PlayerBase player, float deltaT)
-	{
-    float water_loss = deltaT * water_loss_per_tick;
-		player.GetStatWater().Add(-water_loss);
-
-    float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance < chance_for_cough) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
-    } else if (m_randomChance < chance_for_laugh) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-    }
-	}	
 };
