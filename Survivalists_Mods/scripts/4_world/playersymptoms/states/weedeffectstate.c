@@ -1,6 +1,6 @@
 class WeedEffectSymptom extends SymptomBase
 {
-  PPERequester_SRPDrugEffect m_RequesterWeedEffect;
+  PPERequester_SRPWeedEffect m_RequesterDrugEffect;
 
   float startingPointSaturation = 1;
   float endingPointSaturation = 5;
@@ -29,7 +29,7 @@ class WeedEffectSymptom extends SymptomBase
 		m_SyncToClient = true;
     if ( !GetGame().IsDedicatedServer() )
 		{
-			Class.CastTo(m_RequesterWeedEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
+			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPWeedEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPWeedEffect)));
 		}
 	}
 	
@@ -83,8 +83,8 @@ class WeedEffectSymptom extends SymptomBase
     }
     currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur)     
 
-    m_RequesterWeedEffect.SetGlowSaturation(currentSaturation);
-    m_RequesterWeedEffect.SetRadialBlur(currentBlur, currentBlur, 100, 100);
+    m_RequesterDrugEffect.SetGlowSaturation(currentSaturation);
+    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur, 100, 100);
     accumulatedSaturation += (deltatime * saturationMultiplier);
     accumulatedBlur += (deltatime * blurMultiplier);
 	}
@@ -110,8 +110,8 @@ class WeedEffectSymptom extends SymptomBase
 	{
     laughCounter = 0;
     coughCounter = 0;
-    m_RequesterWeedEffect.SetGlowSaturation();
-    m_RequesterWeedEffect.SetRadialBlur();
+    m_RequesterDrugEffect.SetGlowSaturation();
+    m_RequesterDrugEffect.SetRadialBlur();
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 }

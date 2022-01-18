@@ -1,7 +1,6 @@
 class SRP_TobaccoMdfr: ModifierBase
 {
-	int LIFETIME = 0;
-  float chance_for_cough = 0;
+	int LIFETIME = 300
 
 	override void Init()
 	{
@@ -31,8 +30,10 @@ class SRP_TobaccoMdfr: ModifierBase
 	{
     // Print("Player is tobacco buzzed");
     SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    LIFETIME = config.g_SRPTobacoModifierLifetime;
-    chance_for_cough = config.g_SRPTobaccoChanceForCough;
+    if (config)
+    {
+      LIFETIME = config.g_SRPStonedModifierLifetime;
+    }
 
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TOBACCO)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
@@ -59,12 +60,4 @@ class SRP_TobaccoMdfr: ModifierBase
 			return false;
 		}
 	}
-
-	override void OnTick(PlayerBase player, float deltaT)
-	{
-    float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance < chance_for_cough) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
-    } 	
-  }	
 };
