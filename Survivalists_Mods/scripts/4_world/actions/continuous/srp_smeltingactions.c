@@ -34,8 +34,12 @@ class ActionPourMoltenMetalIntoMold: ActionSingleUseBase
     ItemBase tongs = ItemBase.Cast(item);
     SRP_ForgeCrucible_ColorBase crucibleAttachment = SRP_ForgeCrucible_ColorBase.Cast(tongs.FindAttachmentBySlotName("SRP_Crucible"));
 		if (SRP_ForgeIngotMold_Empty.Cast(target_item) && crucibleAttachment && crucibleAttachment.GetTemperature() >= 180)
-			return true;
-		
+    {
+      if (crucibleAttachment.GetType() != "SRP_ForgeCrucible_Empty")
+			{
+        return true;
+      }
+    }
 		return false;
 	}
 		
@@ -56,14 +60,14 @@ class ActionPourMoltenMetalIntoMold: ActionSingleUseBase
         
         newEmptyCrucible.SetHealth(crucibleAttachment.GetHealth());
         newEmptyCrucible.SetTemperature(crucibleAttachment.GetTemperature());
-        newEmptyCrucible.AddHealth(-30);
+        newEmptyCrucible.AddHealth(-20);
 
         newIngotMold.SetTemperature(crucibleAttachment.GetTemperature());
 
         ingotMold.Delete();
         crucibleAttachment.Delete();
 
-        tongs.AddHealth(-10);
+        tongs.AddHealth(-5);
       }
 		}
 	}

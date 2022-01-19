@@ -250,7 +250,7 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
 		return true;
 	}
 
-    override void OnInventoryEnter(Man player)
+  override void OnInventoryEnter(Man player)
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
@@ -327,8 +327,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
       return !(HasOreInSlot("SRP_RawOre1") && HasOreInSlot("SRP_RawOre2"));
     }
 		return false;
-	}
-	
+	}	
 
   bool HasOreInSlot(string slotName)
   {
