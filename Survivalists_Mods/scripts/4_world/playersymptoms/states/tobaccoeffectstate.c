@@ -59,7 +59,7 @@ class TobaccoEffectSymptom extends SymptomBase
     {
       saturationMultiplier *= -1;
     }
-    currentSaturation = Math.Lerp(startingPointSaturation, endingPointSaturation, accumulatedSaturation)     
+    currentSaturation = Math.Lerp(startingPointSaturation, endingPointSaturation, accumulatedSaturation);  
 
     if (currentBlur > endingPointBlur && blurMultiplier > 0)
     {
@@ -69,7 +69,7 @@ class TobaccoEffectSymptom extends SymptomBase
     {
       blurMultiplier *= -1;
     }
-    currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur)     
+    currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur);
 
     m_RequesterDrugEffect.SetGlowSaturation(currentSaturation);
     m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur, 100, 100);

@@ -29,6 +29,9 @@ modded class ActionConstructor
     actions.Insert(ActionPourMoltenMetalIntoMold);
     actions.Insert(ActionEmptyIngotMold);
 
+    // Modded Mods Actions
+    actions.Insert(ActionSRPHackSecurityDoor);    
+
     // Smoking
     actions.Insert(ActionSmokeSRPSmokableSelf);
     actions.Insert(ActionForceSmokeSRPSmokable);

@@ -1,6 +1,6 @@
 class SRP_TobaccoMdfr: ModifierBase
 {
-	int LIFETIME = 300
+	int LIFETIME = 300;
 
 	override void Init()
 	{
