@@ -13,6 +13,11 @@ class SRP_DeckOfCards extends Inventory_Base
     return GetInventory().AttachmentCount() > 0;
   }
 
+  bool CanAcceptCard(int cardsInHand)
+  {
+    return GetInventory().AttachmentCount() < (52-cardsInHand);
+  }
+
   void NextDrawMode()
   {
     drawMode = (drawMode + 1) % 3; // 3 is the total number of card draw modes, increase if you add more
@@ -99,7 +104,7 @@ class SRP_DeckOfCards_FiveDraw extends SRP_DeckOfCards{};
 class SRP_HandOfCards extends Inventory_Base
 {  
   // deck mode ensures the target paper has enough slots
-  bool HasSpaceInHand(int deckMode)
+  bool HasSpaceInHand(int deckMode, bool canAcceptCard)
   {
     bool hasSpace = true;
     if (deckMode == 0) // single draw
@@ -112,7 +117,7 @@ class SRP_HandOfCards extends Inventory_Base
     }
     else if (deckMode == 2) // return cards to deck
     {
-      hasSpace = GetInventory().AttachmentCount() > 0;
+      hasSpace = GetInventory().AttachmentCount() > 0 && canAcceptCard;
     }
     return hasSpace
   }
@@ -120,6 +125,11 @@ class SRP_HandOfCards extends Inventory_Base
   override bool IsInventoryVisible()
   {
     return false;
+  }
+
+  int GetNumCards()
+  {
+    return GetInventory().AttachmentCount();
   }
 };
 

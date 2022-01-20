@@ -121,7 +121,7 @@ class ActionSRPDrawCards: ActionContinuousBase
 		EntityAI handsItem = player.GetItemInHands();
 		if( Class.CastTo(handOfCards, target.GetObject()) && Class.CastTo(singleDrawDeck, handsItem))
 		{
-			if(singleDrawDeck.IsDamageDestroyed() || !handOfCards.HasSpaceInHand(singleDrawDeck.GetDrawMode()))
+			if(singleDrawDeck.IsDamageDestroyed() || !handOfCards.HasSpaceInHand(singleDrawDeck.GetDrawMode(), singleDrawDeck.CanAcceptCard(handOfCards.GetNumCards() - 1)))
         return false;
       return true;
 		}
