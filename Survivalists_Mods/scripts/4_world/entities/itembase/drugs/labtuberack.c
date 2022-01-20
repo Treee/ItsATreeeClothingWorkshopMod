@@ -83,9 +83,43 @@ class SRP_LabTubeRack extends ItemBase
   }
 };
 
-class SRP_LabTube_Colorbase extends ItemBase {};
-class SRP_LabTube_Clear extends SRP_LabTube_Colorbase {};
-class SRP_LabTube_Blue extends SRP_LabTube_Colorbase {};
-class SRP_LabTube_Red extends SRP_LabTube_Colorbase {};
-class SRP_LabTube_Green extends SRP_LabTube_Colorbase {};
-class SRP_LabTube_Yellow extends SRP_LabTube_Colorbase {};
+class SRP_LabTube_Colorbase extends ItemBase{};
+class SRP_LabTube_Clear extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_Blue extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_Red extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_Green extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_Yellow extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquid extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidDisinfected extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidAntibiotic extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidSterilized extends SRP_LabTube_Colorbase
+{
+  float m_RadiationExposure = 0;
+  float m_MaxExposure = 20;
+
+  void UpdateRadiationExposure(PlayerBase m_Player, float change)
+  {
+    if (m_RadiationExposure > -1)
+    {
+      m_RadiationExposure += change;
+    }
+
+    if (m_RadiationExposure >= m_MaxExposure)
+    {
+      TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(this, "SRP_LabTube_MutantLiquidSterilizedIrradiated", m_Player);
+      lambda.SetTransferParams(true, true, true, false, GetQuantity());
+      m_Player.ServerReplaceItemInHandsWithNew(lambda);		
+    }
+  }
+
+  float GetRadiationExposure()
+  {
+    return m_RadiationExposure;
+  }
+
+  void SetRadiationExposure(float value)
+  {
+    m_RadiationExposure = value;
+  }
+};
+class SRP_LabTube_MutantLiquidSterilizedIrradiated extends SRP_LabTube_Colorbase{};

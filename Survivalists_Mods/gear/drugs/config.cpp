@@ -148,7 +148,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_LabTube_Colorbase : Inventory_Base
+  class SRP_LabTube_Colorbase: Inventory_Base
   {		
 		displayName="Lab Tube";
 		descriptionShort="A single test tube. Careful not to break the glass.";
@@ -206,14 +206,14 @@ class CfgVehicles
 		};
   };
 
-  class SRP_LabTube_Clear : SRP_LabTube_Colorbase
+  class SRP_LabTube_Clear: SRP_LabTube_Colorbase
   {
 		scope=2;
 		displayName="Clear Lab Tube";
 		descriptionShort="A single test tube. Careful not to break the glass.";
     color="clear";
   };
-  class SRP_LabTube_Blue : SRP_LabTube_Colorbase
+  class SRP_LabTube_Blue: SRP_LabTube_Colorbase
   {
 		scope=2;
 		displayName="Blue Lab Tube";
@@ -226,7 +226,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\drugs\data\testtube_blue.rvmat"
     };
   };
-  class SRP_LabTube_Red : SRP_LabTube_Colorbase
+  class SRP_LabTube_Red: SRP_LabTube_Colorbase
   {
 		scope=2;
 		displayName="Red Lab Tube";
@@ -239,7 +239,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\drugs\data\testtube_red.rvmat"
     };
   };
-  class SRP_LabTube_Green : SRP_LabTube_Colorbase
+  class SRP_LabTube_Green: SRP_LabTube_Colorbase
   {
 		scope=2;
 		displayName="Green Lab Tube";
@@ -252,7 +252,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\drugs\data\testtube_green.rvmat"
     };
   };
-  class SRP_LabTube_Yellow : SRP_LabTube_Colorbase
+  class SRP_LabTube_Yellow: SRP_LabTube_Colorbase
   {
 		scope=2;
 		displayName="Yellow Lab Tube";
@@ -266,21 +266,102 @@ class CfgVehicles
     };
   };
 
-  class SRP_LabTube_MutantLiquid : SRP_LabTube_Colorbase
+  class SRP_LabTube_MutantLiquid: SRP_LabTube_Colorbase
   {
 		scope=2;
-		displayName="Distilled Mutant Ichor";
-		descriptionShort="A single test tube. Contains some mutant ichor. What are you doing with this?";
+		displayName="Distilled Ichor";
+		descriptionShort="A single test tube. Contains some ichor. What are you doing with this?";
     color="mutantliquid";
     varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=200;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drugs\data\testtube_red.rvmat"
+    };
+  };
+
+  class SRP_LabTube_MutantLiquidDisinfected: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Disinfected Ichor";
+		descriptionShort="A single test tube. Contains some disinfected ichor. What are you doing with this?";
+    color="mutantliquiddisinfected";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
     stackedUnit="ml";
     canBeSplit=1;
 		hiddenSelections[]={
       "zbytek"
     };
     hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\drugs\data\testtube_red.rvmat"
+    };
+  };
+
+  class SRP_LabTube_MutantLiquidAntibiotic: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Treated Ichor";
+		descriptionShort="A single test tube. Contains some treated ichor. What are you doing with this?";
+    color="mutantliquidantibiotic";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]={
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\drugs\data\testtube_red.rvmat"
+    };
+  };
+
+  class SRP_LabTube_MutantLiquidSterilized: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Sterilized Ichor";
+		descriptionShort="A single test tube. Contains some sterilized ichor. What are you doing with this?";
+    color="mutantliquidsterilized";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\drugs\data\testtube_red.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidSterilizedIrradiated: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Irradiated Ichor";
+		descriptionShort="A single test tube. Contains some irradiated ichor. What are you doing with this?";
+    color="mutantliquidsterilizedirradiated";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
       "Survivalists_Mods\gear\drugs\data\testtube_red.rvmat"
     };
   };
