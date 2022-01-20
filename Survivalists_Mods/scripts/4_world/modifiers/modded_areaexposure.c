@@ -48,7 +48,10 @@ modded class AreaExposureMdfr
       if (item)
       {
         SRP_LabTube_MutantLiquidSterilized labTube = SRP_LabTube_MutantLiquidSterilized.Cast(item);
-        labTube.UpdateRadiationExposure(player, deltaT);
+        if (labTube)
+        {
+          labTube.UpdateRadiationExposure(player, deltaT);
+        }
       }
     }
 
