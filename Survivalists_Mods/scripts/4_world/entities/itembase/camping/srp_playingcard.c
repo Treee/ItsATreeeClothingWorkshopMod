@@ -104,12 +104,10 @@ class SRP_HandOfCards extends Inventory_Base
     bool hasSpace = true;
     if (deckMode == 0) // single draw
     {
-      Print("HasSPaceInHands 1 card: " + GetInventory().AttachmentCount());
       hasSpace = GetInventory().AttachmentCount() < 5;
     }
     else if (deckMode == 1) // 5 card
     {
-      Print("HasSPaceInHands 5 card: " + GetInventory().AttachmentCount());
       hasSpace = GetInventory().AttachmentCount() == 0;
     }
     else if (deckMode == 2) // return cards to deck
