@@ -1,5 +1,132 @@
+class SRP_DeckOfCards extends Inventory_Base
+{
+  ref array<int> m_AttachmentSlotsCheck;
+  int drawMode = 0;
+
+  void ~SRP_DeckOfCards()
+  {
+    delete m_AttachmentSlotsCheck;
+  }
+
+  bool CanDrawCard()  
+  {
+    return GetInventory().AttachmentCount() > 0;
+  }
+
+  void NextDrawMode()
+  {
+    drawMode = (drawMode + 1) % 3; // 3 is the total number of card draw modes, increase if you add more
+  }
+
+  string GetDrawText()
+  {
+    string text = "Draw One Card";
+    if (drawMode == 1)
+    {
+      text = "Draw Five Cards";
+    }
+    else if (drawMode == 2)
+    {
+      text = "Return Cards To Deck";
+    }
+    return text;
+  }
+
+  string GetNextDrawText()
+  {
+    string text = "Change To One Card Draw";
+    if (drawMode == 0)
+    {
+      text = "Change To Five Card Draw";
+    }
+    else if (drawMode == 1)
+    {
+      text = "Change to Return Cards To Deck";
+    }
+    return text;
+  }
+
+  int GetNumCardsToDraw()
+  {
+    int numCardsToDraw = 1; // default to 1 card
+    if (drawMode == 1) // 5 card draw
+    {
+      numCardsToDraw = 5;
+    }
+    return numCardsToDraw;
+  }
+
+  int GetDrawMode()
+  {
+    return drawMode;
+  }
+
+  // returns the slot id of the card to draw
+  int DrawCard()
+  {
+    int slot_id;
+		ItemBase attachment;
+    if (m_AttachmentSlotsCheck)
+    {
+      delete m_AttachmentSlotsCheck;
+    }
+    m_AttachmentSlotsCheck = new array<int>;
+		for ( int i = 0; i < GetInventory().GetAttachmentSlotsCount(); i++ )
+		{
+			slot_id = GetInventory().GetAttachmentSlotId(i);
+			if ( m_AttachmentSlotsCheck.Find(slot_id) == -1 )
+			{
+				attachment = ItemBase.Cast(GetInventory().FindAttachment(slot_id));
+				if (attachment)
+        {
+          m_AttachmentSlotsCheck.Insert(slot_id);
+        }
+			}
+		}
+    return m_AttachmentSlotsCheck.GetRandomElement();
+  }
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwitchDrawMode);
+		AddAction(ActionSRPDrawCards);
+	}
+};
+
+class SRP_DeckOfCards_SingleDraw extends SRP_DeckOfCards{};
+class SRP_DeckOfCards_FiveDraw extends SRP_DeckOfCards{};
+
+class SRP_HandOfCards extends Inventory_Base
+{  
+  // deck mode ensures the target paper has enough slots
+  bool HasSpaceInHand(int deckMode)
+  {
+    bool hasSpace = true;
+    if (deckMode == 0) // single draw
+    {
+      Print("HasSPaceInHands 1 card: " + GetInventory().AttachmentCount());
+      hasSpace = GetInventory().AttachmentCount() < 5;
+    }
+    else if (deckMode == 1) // 5 card
+    {
+      Print("HasSPaceInHands 5 card: " + GetInventory().AttachmentCount());
+      hasSpace = GetInventory().AttachmentCount() == 0;
+    }
+    else if (deckMode == 2) // return cards to deck
+    {
+      hasSpace = GetInventory().AttachmentCount() > 0;
+    }
+    return hasSpace
+  }
+
+  override bool IsInventoryVisible()
+  {
+    return false;
+  }
+};
+
 class SRP_PlayingCard_ColorBase extends Inventory_Base
-{   
+{
   override bool IsDeployable() 
   {
     return true;

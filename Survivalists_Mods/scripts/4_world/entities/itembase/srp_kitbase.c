@@ -323,5 +323,6 @@ class SRP_Dynamite_Stick_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_LetterKit1_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterKit2_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_LetterNumberKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterSignsKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_LetterNumberKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_StreetSign_Kit extends SRP_IntermediateCraftingKitBase{};

@@ -982,7 +982,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Street Sign Kit";
-		descriptionShort="A Street Sign Kit";
+		descriptionShort="A Street Sign Kit. Needs a bit more work before placing.";
 	};
 
   class SRP_StreetSign_Base: Container_Base 

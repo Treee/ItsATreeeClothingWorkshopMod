@@ -30,7 +30,10 @@ modded class ActionConstructor
     actions.Insert(ActionEmptyIngotMold);
 
     // Modded Mods Actions
-    actions.Insert(ActionSRPHackSecurityDoor);    
+    actions.Insert(ActionSRPHackSecurityDoor);
+
+    actions.Insert(ActionSRPDrawCards);    
+    actions.Insert(ActionSRPSwitchDrawMode);    
 
     // Smoking
     actions.Insert(ActionSmokeSRPSmokableSelf);
