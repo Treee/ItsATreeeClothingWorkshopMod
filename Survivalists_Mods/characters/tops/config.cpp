@@ -57,6 +57,11 @@ class CfgVehicles
     itemsCargoSize[]={7,5};
   };
 
+  class NurseDress_ColorBase: Clothing
+  {
+    heatIsolation=0.80000001;
+  };
+
   //===================== CUSTOM SHIRTS
 
   class SRP_PlatHoodie: Clothing

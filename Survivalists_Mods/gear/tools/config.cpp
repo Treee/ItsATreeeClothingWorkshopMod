@@ -23,6 +23,7 @@ class CfgVehicles
   class Compass;
   class FarmingHoe;
   class Container_Base;
+  class WeaponCleaningKit;
 
   class SRP_KitBase;
 
@@ -268,6 +269,18 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_GunKitTools: WeaponCleaningKit
+	{
+    scope=2;
+    displayName="Gun Kit Tools";
+    descriptionShort="This kit has fine tools to repair damaged weapon components.";
+  };
+  class SRP_GunKitSalvage: WeaponCleaningKit
+	{
+    scope=2;
+    displayName="Gun Salvage Kit";
+    descriptionShort="This kit has fine tools to salvage for weapon components.";
+  };
 
   // carpentry or weapon smithing
 	class SRP_Handdrill_Old: Inventory_Base

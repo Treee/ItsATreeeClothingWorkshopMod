@@ -1,7 +1,5 @@
 class ActionToggleMuteTransmitter: ActionInteractBase
 {
-	//private ref SRP_RadioNoTransmit m_SRP_RadioNoTransmit;
-	
 	void ActionToggleMuteTransmitter()
 	{
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_ITEM_OFF;	
