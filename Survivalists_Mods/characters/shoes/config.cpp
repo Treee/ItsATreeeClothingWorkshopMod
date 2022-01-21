@@ -17,7 +17,26 @@ class CfgVehicles
 {
   class Clothing;
   class AthleticShoes_ColorBase;
-  
+  class Sneakers_ColorBase;
+
+  // SERVER LORE ITEM
+  class Sneakers_Skylar_Biozone: Sneakers_ColorBase
+	{
+		scope=2;
+		displayName="The Queen's Shoes";
+		descriptionShort="Ignore biohzard effects";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_co.paa",
+			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_co.paa",
+			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_co.paa"
+		};
+    class Protection
+    {
+      biological=6;
+    }
+	};
+
   //-------------------------------------BASE GAME OVERRIDE
 	class NBCBootsBase: Clothing
 	{

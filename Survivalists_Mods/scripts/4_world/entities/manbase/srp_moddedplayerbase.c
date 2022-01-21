@@ -141,7 +141,12 @@ modded class PlayerBase extends ManBase
       return true;
     }
     EntityAI attachment = GetInventory().FindAttachment(InventorySlots.ARMBAND);
-		if(attachment && attachment.GetType() == "Skylar_BioZone_Protection")
+		if(attachment && (attachment.GetType() == "Skylar_BioZone_Protection" || attachment.GetType() == "Sneakers_Skylar_Biozone"))
+    {
+      return true;
+    }
+    attachment = GetInventory().FindAttachment(InventorySlots.FEET);
+    if(attachment && (attachment.GetType() == "Sneakers_Skylar_Biozone"))
     {
       return true;
     }
@@ -163,6 +168,8 @@ modded class PlayerBase extends ManBase
   {
     float vision = 1.0;
     EntityAI suitAttachment = GetInventory().FindAttachment(InventorySlots.BACK);
+    EntityAI armbandAttachment = GetInventory().FindAttachment(InventorySlots.ARMBAND);
+    EntityAI feetAttachment = GetInventory().FindAttachment(InventorySlots.FEET);
     if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 28800)
     {
 			vision = 0.0;
@@ -190,7 +197,16 @@ modded class PlayerBase extends ManBase
 		else if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
 		{
 			vision = 0.0;
-		}
+		}        
+		else if (armbandAttachment && armbandAttachment.GetType() == "Skylar_BioZone_Protection")
+    {
+      vision = 0.3;
+    }
+    else if (feetAttachment && feetAttachment.GetType() == "Sneakers_Skylar_Biozone")
+    {
+      vision = 0.3;
+    }
+
     return vision;
   }
 
