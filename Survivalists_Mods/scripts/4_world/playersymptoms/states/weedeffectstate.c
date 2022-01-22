@@ -36,6 +36,7 @@ class WeedEffectSymptom extends SymptomBase
 	//!gets called every frame
 	override void OnUpdateServer(PlayerBase player, float deltatime)
 	{
+    player.m_IsUnderWeedEffect = true;
     // Print("Water Pre reduction: " + player.GetStatWater().Get().ToString() + " Food Pree reduction: " + player.GetStatEnergy().Get().ToString() + " reduced by amount: " + (deltatime * -0.2));
     player.GetStatWater().Add(deltatime * -0.4);
     player.GetStatEnergy().Add(deltatime * -0.4);
@@ -63,6 +64,8 @@ class WeedEffectSymptom extends SymptomBase
 	
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
+    Print("Weed effect active");
+    player.m_IsUnderWeedEffect = true;
     if (currentSaturation > endingPointSaturation && saturationMultiplier > 0)
     {
       saturationMultiplier *= -1;
@@ -84,7 +87,7 @@ class WeedEffectSymptom extends SymptomBase
     currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur);
 
     m_RequesterDrugEffect.SetGlowSaturation(currentSaturation);
-    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur, 100, 100);
+    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur);
     accumulatedSaturation += (deltatime * saturationMultiplier);
     accumulatedBlur += (deltatime * blurMultiplier);
 	}
@@ -102,6 +105,7 @@ class WeedEffectSymptom extends SymptomBase
 
 	override void OnGetDeactivatedServer(PlayerBase player)
 	{
+    player.m_IsUnderWeedEffect = false;
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 	
@@ -110,6 +114,7 @@ class WeedEffectSymptom extends SymptomBase
 	{
     laughCounter = 0;
     coughCounter = 0;
+    player.m_IsUnderWeedEffect = false;
     m_RequesterDrugEffect.SetGlowSaturation();
     m_RequesterDrugEffect.SetRadialBlur();
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());

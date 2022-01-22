@@ -119,7 +119,7 @@ class SRP_HandOfCards extends Inventory_Base
     {
       hasSpace = GetInventory().AttachmentCount() > 0 && canAcceptCard;
     }
-    return hasSpace
+    return hasSpace;
   }
 
   override bool IsInventoryVisible()

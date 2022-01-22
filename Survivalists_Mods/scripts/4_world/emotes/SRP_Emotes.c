@@ -123,7 +123,10 @@ class EmoteBloodloss extends EmoteBase
 
   override void OnBeforeStandardCallbackCreated(int callback_ID, int stancemask, bool is_fullbody)
 	{
-    m_Player.AddHealth("", "Blood", -500); //do 250 blood dmg
+    if (GetGame().IsDedicatedServer())
+    {
+      m_Player.AddHealth("", "Blood", -500); //do 250 blood dmg
+    }
     m_Player.SetInventorySoftLock(false);
     m_Player.GetEmoteManager().SetEmoteLockState(false);
 	}

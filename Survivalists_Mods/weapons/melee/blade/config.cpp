@@ -144,7 +144,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Weapon Kit - Karambit Knife";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
     attachments[]=
 		{
 			"SRP_MetalPlate1",
@@ -157,7 +157,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Weapon Kit - Snake Dagger";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
     attachments[]=
 		{
 			"SRP_MetalPlate1",
@@ -170,7 +170,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Weapon Kit - Berserk Sword";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
     attachments[]=
 		{
 			"SRP_MetalPlate1",
@@ -185,7 +185,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Weapon Kit - Crystal Mace";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
     attachments[]=
 		{
 			"SRP_MetalPlate1",
@@ -200,7 +200,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Weapon Kit - Katana";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
     attachments[]=
 		{
 			"SRP_MetalPlate1",
@@ -216,7 +216,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Weapon Kit - War Cleaver";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools.";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
     attachments[]=
 		{
 			"SRP_MetalPlate1",

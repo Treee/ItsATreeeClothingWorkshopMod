@@ -16,6 +16,11 @@ modded class PlayerBase extends ManBase
   int m_currentCamoIndex;
   int m_facepaintCountMax;
 
+  bool m_IsUnderWeedEffect = false;
+  bool m_IsUnderTobaccoEffect = false;
+  bool m_IsUnderMethEffect = false;
+  bool m_IsUnderBathEffect = false;
+
   override void Init()
 	{
     super.Init();
@@ -218,13 +223,14 @@ modded class PlayerBase extends ManBase
 
     if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
       ignoreFalling = true;
-    else if (suitAttachment && suitAttachment.GetType() == "DUB_Lich")
+    else if (suitAttachment && suitAttachment.GetType() == "DUB_Lich" || suitAttachment.IsInherited(DUB_Lich))
       ignoreFalling = true;
     else if ( mutantAttachment && mutantAttachment.GetType() == "DUB_Observerhead")
       ignoreFalling = true;
     else if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 86893 && GetGame().GetWorld().IsNight())
       ignoreFalling = true;
-    
+    else if (GetGame().GetWaterDepth(GetPosition()) > 0 )
+      ignoreFalling = true;
     return ignoreFalling;
   }
 
@@ -621,6 +627,12 @@ modded class PlayerBase extends ManBase
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BATHSALTS );    
   }
 
+  bool IsUnderTheInfluence()
+  {
+    Print("Weed: " + m_IsUnderWeedEffect + "Tobacco: " + m_IsUnderTobaccoEffect + "Meth: " + m_IsUnderMethEffect + "Bath: " + m_IsUnderBathEffect);
+    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect;
+  }
+
   void RemoveAllSymptoms()
   {
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
@@ -632,7 +644,7 @@ modded class PlayerBase extends ManBase
     // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_COCAINE);
     // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_PCP);
     // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_HEROINE);
-    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
   }
 }

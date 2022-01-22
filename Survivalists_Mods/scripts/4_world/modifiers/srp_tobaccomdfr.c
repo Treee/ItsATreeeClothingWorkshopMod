@@ -9,11 +9,12 @@ class SRP_TobaccoMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_TOBACCO;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+    DisableActivateCheck();
 	}
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TOBACCO);
+		return false;
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -32,7 +33,7 @@ class SRP_TobaccoMdfr: ModifierBase
     SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     if (config)
     {
-      LIFETIME = config.g_SRPStonedModifierLifetime;
+      LIFETIME = config.g_SRPTobacoModifierLifetime;
     }
 
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TOBACCO)) {

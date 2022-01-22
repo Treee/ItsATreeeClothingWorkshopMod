@@ -9,11 +9,12 @@ class SRP_StonedMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_STONED;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+    DisableActivateCheck();
 	}
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_STONED);
+		return false;
 	}
 	
 	override void OnReconnect(PlayerBase player)

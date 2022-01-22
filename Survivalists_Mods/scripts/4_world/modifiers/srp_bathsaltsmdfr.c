@@ -1,8 +1,7 @@
 class SRP_BathSaltsMdfr: ModifierBase
 {
-	int LIFETIME = 0; // 10 minutes
-  float chance_for_scary_sound = 0;
-  float chance_for_happy_sound = 0;
+	int LIFETIME = 600; // 10 minutes
+  
 	override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -10,11 +9,12 @@ class SRP_BathSaltsMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_BATHSALTS;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+    DisableActivateCheck();
 	}
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BATHSALTS);
+		return false;
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -30,19 +30,22 @@ class SRP_BathSaltsMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    LIFETIME = config.g_SRPBathSaltsModifierLifetime;
-    chance_for_scary_sound = config.g_SRPBathSaltsChanceForScarySound;
-    chance_for_happy_sound = config.g_SRPBathSaltsChanceForHappySound;
-    
+    if (config)
+    {
+      LIFETIME = config.g_SRPBathSaltsModifierLifetime;
+    }
+
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BATHSALTS)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
     }
+    player.GetStaminaHandler().SetDepletionMultiplier(0.5);
     player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not on bath salts");
+    player.GetStaminaHandler().SetDepletionMultiplier(1);
     player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
 	}
 	
@@ -59,14 +62,5 @@ class SRP_BathSaltsMdfr: ModifierBase
 			return false;
 		}
 	}
-
-	override void OnTick(PlayerBase player, float deltaT)
-	{    
-    float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance < chance_for_scary_sound) {
-      player.PlayScarySound();
-    } else if (m_randomChance < chance_for_happy_sound) {
-      player.PlayHappySound();
-    }
-  }	
+  
 };

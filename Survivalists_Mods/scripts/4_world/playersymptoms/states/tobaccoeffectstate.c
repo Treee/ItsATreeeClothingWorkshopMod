@@ -34,6 +34,7 @@ class TobaccoEffectSymptom extends SymptomBase
 	//!gets called every frame
 	override void OnUpdateServer(PlayerBase player, float deltatime)
 	{
+    player.m_IsUnderTobaccoEffect = true;
     player.GetStatWater().Add(deltatime * -0.2);
     player.GetStatEnergy().Add(deltatime * 0.1);
 
@@ -51,6 +52,7 @@ class TobaccoEffectSymptom extends SymptomBase
 	
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
+    player.m_IsUnderTobaccoEffect = true;
     if (currentSaturation > endingPointSaturation && saturationMultiplier > 0)
     {
       saturationMultiplier *= -1;
@@ -72,7 +74,7 @@ class TobaccoEffectSymptom extends SymptomBase
     currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur);
 
     m_RequesterDrugEffect.SetGlowSaturation(currentSaturation);
-    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur, 100, 100);
+    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur);
     accumulatedSaturation += (deltatime * saturationMultiplier);
     accumulatedBlur += (deltatime * blurMultiplier);
 	}
@@ -90,6 +92,7 @@ class TobaccoEffectSymptom extends SymptomBase
 
 	override void OnGetDeactivatedServer(PlayerBase player)
 	{
+    player.m_IsUnderTobaccoEffect = false;
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 	
@@ -97,6 +100,8 @@ class TobaccoEffectSymptom extends SymptomBase
 	override void OnGetDeactivatedClient(PlayerBase player)
 	{
     coughCounter = 0;
+    saturationMultiplier = 0;
+    player.m_IsUnderTobaccoEffect = false;
     m_RequesterDrugEffect.SetGlowSaturation();
     m_RequesterDrugEffect.SetRadialBlur();
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());

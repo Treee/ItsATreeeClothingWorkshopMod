@@ -9,11 +9,12 @@ class SRP_MethMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_METH;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+    DisableActivateCheck();
 	}
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_METH);
+		return false;
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -31,7 +32,7 @@ class SRP_MethMdfr: ModifierBase
     SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     if (config)
     {
-      LIFETIME = config.g_SRPStonedModifierLifetime;
+      LIFETIME = config.g_SRPMethModifierLifetime;
     }
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_METH)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);

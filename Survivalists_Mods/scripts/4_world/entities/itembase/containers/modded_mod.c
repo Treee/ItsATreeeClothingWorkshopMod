@@ -89,3 +89,5 @@ modded class DUB_Meleeframe
 		return GetInventory().AttachmentCount() == 0;
 	}
 };
+
+class DUB_Lich: Clothing{};
