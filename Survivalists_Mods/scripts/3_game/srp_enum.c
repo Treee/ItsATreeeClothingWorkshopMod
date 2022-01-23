@@ -13,10 +13,10 @@ enum SRP_eModifiers
   MDF_ACIDSKULL = 423,   // finished
   MDF_MUSHROOMS = 424,
   MDF_METH = 425, //finished
-  MDF_COCAINE = 426,
+  MDF_COCAINE = 426, //finished
   MDF_PCP = 427,
   MDF_HEROINE = 428,
-  MDF_ALCOHOL = 429, // 
+  MDF_ALCOHOL = 429, // finished
   MDF_BATHSALTS = 430, // finished
 
   MDF_SLEEP = 431,
@@ -49,10 +49,10 @@ enum SRP_SymptomIDs {
   SYMPTOM_ACIDSKULL = 423,   // finished
   SYMPTOM_MUSHROOMS = 424,
   SYMPTOM_METH = 425, //finished
-  SYMPTOM_COCAINE = 426,
+  SYMPTOM_COCAINE = 426, // finished
   SYMPTOM_PCP = 427,
   SYMPTOM_HEROINE = 428,
-  SYMPTOM_ALCOHOL = 429, // 
+  SYMPTOM_ALCOHOL = 429, // finished
   SYMPTOM_BATHSALTS = 430, // finished
   SYMPTOM_SLEEP = 431, // finished
 };

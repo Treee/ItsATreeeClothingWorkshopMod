@@ -8,6 +8,7 @@ modded class SymptomManager
     RegisterSymptom(new SaltsEffectSymptom);
     RegisterSymptom(new MethEffectSymptom);
     RegisterSymptom(new AlcoholEffectSymptom);
+    RegisterSymptom(new CocaineEffectSymptom);
     RegisterSymptom(new SmileAcidEffectSymptom);
     RegisterSymptom(new SkullAcidEffectSymptom);
     RegisterSymptom(new SleepEffectSymptom);

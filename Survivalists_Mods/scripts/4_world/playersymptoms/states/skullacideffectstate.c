@@ -159,14 +159,6 @@ class SkullAcidEffectSymptom extends SymptomBase
 
 	override void OnGetActivatedClient(PlayerBase player)
 	{
-    // m_chromaX = Math.RandomFloat(2, 3);
-    // m_chromaY = Math.RandomFloat(2, 4);
-
-    // m_hue = 60;
-    // m_hueMax = 60;
-    // m_hueMin = 30;
-    // m_hueIntensity = -1; // we want to decrease from 60 for starters
-
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetActivated", m_Player.ToString());
 	}
 

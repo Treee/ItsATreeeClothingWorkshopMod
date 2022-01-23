@@ -15,6 +15,7 @@ modded class ModifiersManager
 		AddModifier(new SRP_BathSaltsMdfr);
 		AddModifier(new SRP_MethMdfr);
 		AddModifier(new SRP_AlcoholMdfr);
+		AddModifier(new SRP_CocaineMdfr);
 
 		AddModifier(new SRP_BurningMdfr);
 	}

@@ -22,6 +22,7 @@ modded class PlayerBase extends ManBase
   bool m_IsUnderBathEffect = false;
   bool m_IsUnderAcidEffect = false;
   bool m_IsUnderAlcoholEffect = false;
+  bool m_IsUnderCocaineEffect = false;
 
   override void Init()
 	{
@@ -620,19 +621,19 @@ modded class PlayerBase extends ManBase
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_TOBACCO );
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ACIDSMILE );
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ACIDSKULL );
-    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_MUSHROOMS );
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_METH );
-    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_COCAINE );
-    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_PCP );
-    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_HEROINE );
+    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_COCAINE );
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ALCOHOL );
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BATHSALTS );    
+    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_MUSHROOMS );
+    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_PCP );
+    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_HEROINE );
   }
 
   bool IsUnderTheInfluence()
   {
-    // Print("Weed: " + m_IsUnderWeedEffect + "Tobacco: " + m_IsUnderTobaccoEffect + "Meth: " + m_IsUnderMethEffect + "Bath: " + m_IsUnderBathEffect + "Acid: " + m_IsUnderAcidEffect + "Alcohol: " + m_IsUnderAlcoholEffect);
-    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect || m_IsUnderAcidEffect || m_IsUnderAlcoholEffect;
+    // Print("Weed: " + m_IsUnderWeedEffect + "Tobacco: " + m_IsUnderTobaccoEffect + "Meth: " + m_IsUnderMethEffect + "Bath: " + m_IsUnderBathEffect + "Acid: " + m_IsUnderAcidEffect + "Alcohol: " + m_IsUnderAlcoholEffect  "Cocaine: " + m_IsUnderCocaineEffect);
+    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect || m_IsUnderAcidEffect || m_IsUnderAlcoholEffect || m_IsUnderCocaineEffect;
   }
 
   void RemoveAllSymptoms()
@@ -642,12 +643,12 @@ modded class PlayerBase extends ManBase
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSMILE);
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
-    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_MUSHROOMS);
-    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_COCAINE);
-    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_PCP);
-    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_HEROINE);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_COCAINE);
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
+    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_HEROINE);
+    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_PCP);
+    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_MUSHROOMS);
   }
 }
