@@ -48,7 +48,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 
   void WorkbenchGUICraftingHud()
   {
-    Print("WorkbenchGUICraftingHud: Opened");
+    // Print("WorkbenchGUICraftingHud: Opened");
     targetPlayer = PlayerBase.Cast(GetGame().GetPlayer());
     // Print("currently selected workbench: " + targetPlayer.selectedCraftingBench);
     isProgressBlocking = false;
@@ -74,7 +74,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 
   void ~WorkbenchGUICraftingHud()
   {
-    Print("WorkbenchGUICraftingHud: Destroyed");
+    // Print("WorkbenchGUICraftingHud: Destroyed");
     delete AllWidgetRecipes;
     delete PossibleWidgetRecipes;
     delete AllRecipes;
@@ -272,7 +272,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     ItemRecipeWidget recipe;
     Widget parentWidget = w.GetParent();    
     ClearCraftItemsBuffer();
-    Print("Show more info click: " + w + " type: " + type);
+    // Print("Show more info click: " + w + " type: " + type);
     if (type)
     {
       index = PossibleWidgetRecipes.Find(parentWidget);
@@ -338,7 +338,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
 
       // send RPC to craft the item server side
       auto craftingParams = new Param2<CraftedItem, EntityAI>(previouslyCraftedItem, targetPlayer.guiCraftingBench);
-      Print("Sending Craft Request to Server: " + targetPlayer.GetIdentity().GetName() + " RPC: " + SRP_RPC.CLIENT_REQUEST_CRAFT);
+      // Print("Sending Craft Request to Server: " + targetPlayer.GetIdentity().GetName() + " RPC: " + SRP_RPC.CLIENT_REQUEST_CRAFT);
       GetGame().RPCSingleParam(targetPlayer, SRP_RPC.CLIENT_REQUEST_CRAFT, craftingParams, true, targetPlayer.GetIdentity() );
 
       GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( ReloadCraftingBench, 500, false);
@@ -372,7 +372,7 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     // if the item doesn't exist, the recipe will show up but not be 'clickable' fyi
     // Using "CreateObject INSTEAD of CreateObjectEx" becasue this one only creates a client side object
     m_MainEnt = EntityAI.Cast(GetGame().CreateObject(craftedItem.result, vector.Zero, true));   
-    Print("main entity pre null: " + m_MainEnt) ;
+    // Print("main entity pre null: " + m_MainEnt) ;
     if (m_MainEnt)
     {
       previouslyCraftedItem = craftedItem;

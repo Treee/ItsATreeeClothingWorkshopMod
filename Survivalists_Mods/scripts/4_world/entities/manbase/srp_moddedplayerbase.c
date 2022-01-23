@@ -20,6 +20,7 @@ modded class PlayerBase extends ManBase
   bool m_IsUnderTobaccoEffect = false;
   bool m_IsUnderMethEffect = false;
   bool m_IsUnderBathEffect = false;
+  bool m_IsUnderAcidEffect = false;
 
   override void Init()
 	{
@@ -260,7 +261,7 @@ modded class PlayerBase extends ManBase
       playerType.Replace("SurvivorF_", "");
       string filepath = "hhl_f_" + playerType + "_body.rvmat";
       string materialPath = FACEPAINT_PATH + GetSelectedCamoName() + "\\" + filepath;
-      Print("female face path: " + materialPath);
+      // Print("female face path: " + materialPath);
       SetFaceMaterial( materialPath );
     }
     else 
@@ -629,8 +630,8 @@ modded class PlayerBase extends ManBase
 
   bool IsUnderTheInfluence()
   {
-    Print("Weed: " + m_IsUnderWeedEffect + "Tobacco: " + m_IsUnderTobaccoEffect + "Meth: " + m_IsUnderMethEffect + "Bath: " + m_IsUnderBathEffect);
-    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect;
+    // Print("Weed: " + m_IsUnderWeedEffect + "Tobacco: " + m_IsUnderTobaccoEffect + "Meth: " + m_IsUnderMethEffect + "Bath: " + m_IsUnderBathEffect + "Acid: " + m_IsUnderAcidEffect);
+    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect || m_IsUnderAcidEffect;
   }
 
   void RemoveAllSymptoms()

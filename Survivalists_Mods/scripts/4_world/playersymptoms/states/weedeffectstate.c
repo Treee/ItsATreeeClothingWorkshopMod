@@ -64,7 +64,7 @@ class WeedEffectSymptom extends SymptomBase
 	
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
-    Print("Weed effect active");
+    // Print("Weed effect active");
     player.m_IsUnderWeedEffect = true;
     if (currentSaturation > endingPointSaturation && saturationMultiplier > 0)
     {

@@ -50,7 +50,7 @@ class SaltsEffectSymptom extends SymptomBase
 	
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
-    Print("Salt effect active");
+    // Print("Salt effect active");
     player.m_IsUnderBathEffect = true;
     if (currentSaturation > endingPointSaturation && saturationMultiplier > 0)
     {

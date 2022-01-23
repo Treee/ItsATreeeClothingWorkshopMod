@@ -1,14 +1,34 @@
 class SmileAcidEffectSymptom extends SymptomBase
 {
-  float m_chromaX = 0;  
-  float m_chromaXIntensity = 0.1;
-  float m_chromaY = 0;
-  float m_chromaYIntensity = 0.1;
+  PPERequester_SRPAcidEffect m_RequesterDrugEffect;
 
-  float m_hue = 60;
-  float m_hueMax = 30;
-  float m_hueMin = 0;
-  float m_hueIntensity = 0.1;
+  float startingPointSaturation = 1;
+  float endingPointSaturation = 5;
+  float currentSaturation = 1;
+  float accumulatedSaturation = 0;
+  float saturationMultiplier = 0.1;
+
+  float startingPointBlur = 0;
+  float endingPointBlur = 1;
+  float currentBlur = 0;
+  float accumulatedBlur = 0;
+  float blurMultiplier = 0.1;
+
+  float startingPointChromaX = 0;
+  float endingPointChromaX = 1.5;
+  float currentChromaX = 0;
+  float accumulatedChromaX = 0;
+  float chromaXMultiplier = 0.1;
+
+  float startingPointChromaY = 0;
+  float endingPointChromaY = 1.5;
+  float currentChromaY = 0;
+  float accumulatedChromaY = 0;
+  float chromaYMultiplier = 0.1;
+
+  float scarySoundBuildUp = 0;
+  float happysoundBuildUp = 0;
+  float randomSymptomBuildUp = 0;
 
 	//this is just for the Symptom parameters set-up and is called even if the Symptom doesn't execute, don't put any gameplay code in here
 	override void OnInit()
@@ -19,45 +39,108 @@ class SmileAcidEffectSymptom extends SymptomBase
 		m_DestroyOnAnimFinish = true;
 		m_IsPersistent = true;
 		m_SyncToClient = true;
+    if ( !GetGame().IsDedicatedServer() )
+		{
+			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPAcidEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPAcidEffect)));
+		}
 	}
 	
 	//!gets called every frame
 	override void OnUpdateServer(PlayerBase player, float deltatime)
 	{
+    player.m_IsUnderAcidEffect = true;
+    // Print("Water Pre reduction: " + player.GetStatWater().Get().ToString() + " Food Pree reduction: " + player.GetStatEnergy().Get().ToString() + " reduced by amount: " + (deltatime * -0.2));
+    player.AddHealth("", "Blood", (0.5 * deltatime));
+    
+    float m_randomChance = Math.RandomFloatInclusive(0,1);
+    if (m_randomChance >= 0 && m_randomChance < 0.03 && randomSymptomBuildUp >= 20) 
+    {
+      m_randomChance = Math.RandomFloatInclusive(0,1);
+      if (m_randomChance < 0.4) 
+      {
+        player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
+      } 
+      else if (m_randomChance >= 0.4 && m_randomChance < 0.6)
+      {
+        player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_HOT);
+      } 
+      else if (m_randomChance >= 0.6 && m_randomChance < 0.1)
+      {
+        player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_SNEEZE);
+      } 
+      randomSymptomBuildUp = 0;
+    }
+    randomSymptomBuildUp += deltatime;
 	}
 
 	
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
-    if (m_hue > m_hueMax && m_hueIntensity > 0) {
-      m_hueIntensity *= -1;
-    } else if (m_hue < m_hueMin && m_hueIntensity < 0) {
-      m_hueIntensity *= -1;
+    // Print("smile acid effect active");
+    player.m_IsUnderAcidEffect = true;
+    if (currentSaturation > endingPointSaturation && saturationMultiplier > 0)
+    {
+      saturationMultiplier *= -1;
     }
-    m_hue += (m_hueIntensity * deltatime); 
-
-    if (m_chromaX > 4 && m_chromaXIntensity > 0) {
-      m_chromaXIntensity *= -1;
-    } else if (m_chromaX < 2 && m_chromaXIntensity < 0) {
-      m_chromaXIntensity *= -1;
+    else if (currentSaturation < startingPointSaturation && saturationMultiplier < 0)
+    {
+      saturationMultiplier *= -1;
     }
-    m_chromaX += (m_chromaXIntensity * deltatime);
 
-    if (m_chromaY > 4 && m_chromaYIntensity > 0) {
-      m_chromaYIntensity *= -1;
-    } else if (m_chromaY < 2 && m_chromaYIntensity < 0) {
-      m_chromaYIntensity *= -1;
+    if (currentBlur > endingPointBlur && blurMultiplier > 0)
+    {
+      blurMultiplier *= -1;
     }
-    m_chromaY += (m_chromaYIntensity * deltatime);
+    else if (currentBlur < startingPointBlur && blurMultiplier < 0)
+    {
+      blurMultiplier *= -1;
+    }
 
-    CameraEffects.changeRadBlurXEffect(4);
-    CameraEffects.changeRadBlurYEffect(4);
+    if (currentChromaX > endingPointChromaX && chromaXMultiplier > 0)
+    {
+      chromaXMultiplier *= -1;
+    }
+    else if (currentChromaX < startingPointChromaX && chromaXMultiplier < 0)
+    {
+      chromaXMultiplier *= -1;
+    }
 
-    CameraEffects.changeChromaX(m_chromaX);
-    CameraEffects.changeChromaY(m_chromaY);
+    if (currentChromaY > endingPointChromaY && chromaYMultiplier > 0)
+    {
+      chromaYMultiplier *= -1;
+    }
+    else if (currentChromaY < startingPointChromaY && chromaYMultiplier < 0)
+    {
+      chromaYMultiplier *= -1;
+    }
 
+    currentSaturation = Math.Lerp(startingPointSaturation, endingPointSaturation, accumulatedSaturation);  
+    currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur);  
+    currentChromaX = Math.Lerp(startingPointChromaX, endingPointChromaX, accumulatedChromaX);  
+    currentChromaY = Math.Lerp(startingPointChromaY, endingPointChromaY, accumulatedChromaY);  
+    
+    m_RequesterDrugEffect.SetGlowSaturation(currentSaturation);
+    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur);
+    m_RequesterDrugEffect.SetCromaticAberration(currentChromaX, currentChromaY);
 
-    CameraEffects.changeHue(m_hue);
+    accumulatedSaturation += (deltatime * saturationMultiplier);
+    accumulatedBlur += (deltatime * blurMultiplier);
+    accumulatedChromaY += (deltatime * chromaYMultiplier);
+    accumulatedChromaX += (deltatime * chromaXMultiplier);
+
+    float m_randomChance = Math.RandomFloatInclusive(0,1);
+    if (m_randomChance < 0.05 && scarySoundBuildUp >= 35) 
+    {
+      player.PlayScarySound();
+      scarySoundBuildUp = 0;
+    } 
+    else if (m_randomChance >= 0.05 && m_randomChance < 0.1 && happysoundBuildUp >= 75) 
+    {
+      player.PlayHappySound();
+      happysoundBuildUp = 0;
+    }
+    scarySoundBuildUp += deltatime;
+    happysoundBuildUp += deltatime;
 	}
 	
 	//!gets called once on an Symptom which is being activated
@@ -68,31 +151,22 @@ class SmileAcidEffectSymptom extends SymptomBase
 
 	override void OnGetActivatedClient(PlayerBase player)
 	{
-    // m_chromaX = Math.RandomFloat(1, 3);
-    // m_chromaY = Math.RandomFloat(1, 3);
-
-    m_hue = 60;
-    m_hueMax = 30;
-    m_hueMin = 0;
-    m_hueIntensity = -1; // we want to decrease from 60 for starters
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetActivated", m_Player.ToString());
 	}
 
 	override void OnGetDeactivatedServer(PlayerBase player)
 	{
+    player.m_IsUnderAcidEffect = false;
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 	
 	//!only gets called once on an active Symptom that is being deactivated
 	override void OnGetDeactivatedClient(PlayerBase player)
 	{
-    CameraEffects.changeRadBlurXEffect(0);
-    CameraEffects.changeRadBlurYEffect(0);
-    
-    CameraEffects.changeChromaX(0);
-    CameraEffects.changeChromaY(0);
-
-    CameraEffects.changeHue(60);
+    player.m_IsUnderAcidEffect = false;
+    m_RequesterDrugEffect.SetGlowSaturation();
+    m_RequesterDrugEffect.SetRadialBlur();
+    m_RequesterDrugEffect.SetCromaticAberration();
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 }

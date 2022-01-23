@@ -18,4 +18,14 @@ modded class PPERadialBlur
 		RegisterParameterScalarFloat(PARAM_OFFSETY,"OffsetY",0.05,0.0,5);
 		RegisterParameterScalarFloat(PARAM_PIXELSCALE,"PixelScale",0.5,0.125,1.0);
   }
-}
+};
+
+modded class PPEChromAber
+{
+  override void RegisterMaterialParameters()
+	{
+    super.RegisterMaterialParameters();
+		RegisterParameterScalarFloat(PARAM_POWERX,"PowerX",0.0,0.0,5);
+		RegisterParameterScalarFloat(PARAM_POWERY,"PowerY",0.0,0.0,5);
+  }
+};

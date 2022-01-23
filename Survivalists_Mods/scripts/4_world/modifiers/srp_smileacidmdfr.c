@@ -1,14 +1,6 @@
 class SRP_SmileAcidMdfr: ModifierBase
 {
-	int LIFETIME = 0; //10 minutes
-
-  float chance_for_scary_sound = 0;
-  float chance_for_happy_sound = 0;
-  float chance_for_laugh_sound = 0;
-  float chance_for_freeze_sound = 0;
-  float chance_for_sweat_sound = 0;
-  float chance_for_sneeze_sound = 0;
-  float chance_for_cough_sound = 0;
+	int LIFETIME = 600; //10 minutes
 
 	override void Init()
 	{
@@ -17,11 +9,12 @@ class SRP_SmileAcidMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_ACIDSMILE;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+    DisableActivateCheck();
 	}
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSMILE);
+		return false;
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -38,15 +31,10 @@ class SRP_SmileAcidMdfr: ModifierBase
 	{
     // Print("Player is on smile acid");
     SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    LIFETIME = config.g_SRPSmileAcidModifierLifetime;
-    chance_for_scary_sound = config.g_SRPSmileAcidChanceForScarySound;
-    chance_for_happy_sound = config.g_SRPSmileAcidChanceForHappySound;
-    chance_for_laugh_sound = config.g_SRPSmileAcidChanceForLaughter;
-    chance_for_freeze_sound = config.g_SRPSmileAcidChanceForFreeze;
-    chance_for_sweat_sound = config.g_SRPSmileAcidChanceForSweat;
-    chance_for_sneeze_sound = config.g_SRPSmileAcidChanceForSneeze;
-    chance_for_cough_sound = config.g_SRPSmileAcidChanceForCough;
-
+    if (config)
+    {
+      LIFETIME = config.g_SRPSmileAcidModifierLifetime;
+    }
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSMILE)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSMILE);
     }
@@ -72,25 +60,4 @@ class SRP_SmileAcidMdfr: ModifierBase
 			return false;
 		}
 	}
-
-	override void OnTick(PlayerBase player, float deltaT)
-	{    
-    float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance < chance_for_scary_sound) {
-      player.PlayScarySound();
-    } else if (m_randomChance < chance_for_happy_sound) {
-      player.PlayHappySound();
-    }
-    if (m_randomChance < chance_for_laugh_sound) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-    } else if (m_randomChance < chance_for_freeze_sound) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_FREEZE);
-    } else if (m_randomChance < chance_for_sweat_sound) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_HOT);
-    } else if (m_randomChance < chance_for_sneeze_sound) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_SNEEZE);
-    } else if (m_randomChance < chance_for_cough_sound) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_COUGH);
-    }	
-  }	
 };

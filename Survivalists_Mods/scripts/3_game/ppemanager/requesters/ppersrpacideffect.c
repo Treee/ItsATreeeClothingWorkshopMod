@@ -1,5 +1,11 @@
 class PPERequester_SRPAcidEffect extends PPERequester_GameplayBase
 {
+  void SetCromaticAberration(float powerX=0, float powerY=0)
+  { //0.002 is a good value?
+    SetTargetValueFloat(PostProcessEffectType.ChromAber,PPEChromAber.PARAM_POWERX,false,powerX,PPEChromAber.L_0_INTRO,PPOperators.HIGHEST);
+		SetTargetValueFloat(PostProcessEffectType.ChromAber,PPEChromAber.PARAM_POWERY,false,powerX,PPEChromAber.L_1_INTRO,PPOperators.HIGHEST);
+  }
+
 	void SetGlowSaturation(float level=1)
 	{
 		SetTargetValueFloat(PostProcessEffectType.Glow,PPEGlow.PARAM_SATURATION,false,level,PPEGlow.L_22_BLOODLOSS,PPOperators.HIGHEST);
