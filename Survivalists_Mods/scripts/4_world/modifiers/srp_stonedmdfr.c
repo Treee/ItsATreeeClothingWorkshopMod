@@ -40,12 +40,14 @@ class SRP_StonedMdfr: ModifierBase
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_WEED);
     }
     player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_WEED);
+    player.GetStaminaHandler().SetDepletionMultiplier(1.5);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("SRP_StonedMdfr:: OnDeactivate");
     player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_WEED);
+    player.GetStaminaHandler().SetDepletionMultiplier(1);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)

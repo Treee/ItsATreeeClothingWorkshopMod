@@ -1,8 +1,7 @@
 class SRP_AlcoholMdfr: ModifierBase
 {
-	int LIFETIME = 0;
-	float food_loss_per_tick = 0;
-  float chance_to_laugh = 0;
+	int LIFETIME = 300;
+
   override void Init()
 	{
 		m_TrackActivatedTime = true;
@@ -10,11 +9,12 @@ class SRP_AlcoholMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_ALCOHOL;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+    DisableActivateCheck();
 	}
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ALCOHOL);
+		return false;
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -29,21 +29,23 @@ class SRP_AlcoholMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    LIFETIME = config.g_SRPAlcoholModifierLifetime;
-    food_loss_per_tick = config.g_SRPAlcoholFoodLossAmount;
-    chance_to_laugh = config.g_SRPAlcoholChanceToLaughThreshold;
-
+    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();    
+    if (config)
+    {
+      LIFETIME = config.g_SRPAlcoholModifierLifetime;
+    }
     if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ALCOHOL)) {
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
     }
     player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
+    player.GetStaminaHandler().SetDepletionMultiplier(0.8);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
     player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
+    player.GetStaminaHandler().SetDepletionMultiplier(1);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -59,15 +61,4 @@ class SRP_AlcoholMdfr: ModifierBase
 			return false;
 		}
 	}
-
-	override void OnTick(PlayerBase player, float deltaT)
-	{
-    float energy_loss = deltaT * food_loss_per_tick;
-		player.GetStatEnergy().Add(-energy_loss);
-    
-    float m_randomChance = Math.RandomFloat01() * 100;
-    if (m_randomChance < chance_to_laugh) {
-      player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-    }
-	}	
 };

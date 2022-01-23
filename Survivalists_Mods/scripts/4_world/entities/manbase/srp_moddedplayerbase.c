@@ -21,6 +21,7 @@ modded class PlayerBase extends ManBase
   bool m_IsUnderMethEffect = false;
   bool m_IsUnderBathEffect = false;
   bool m_IsUnderAcidEffect = false;
+  bool m_IsUnderAlcoholEffect = false;
 
   override void Init()
 	{
@@ -624,14 +625,14 @@ modded class PlayerBase extends ManBase
     // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_COCAINE );
     // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_PCP );
     // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_HEROINE );
-    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ALCOHOL );
+    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ALCOHOL );
     GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BATHSALTS );    
   }
 
   bool IsUnderTheInfluence()
   {
-    // Print("Weed: " + m_IsUnderWeedEffect + "Tobacco: " + m_IsUnderTobaccoEffect + "Meth: " + m_IsUnderMethEffect + "Bath: " + m_IsUnderBathEffect + "Acid: " + m_IsUnderAcidEffect);
-    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect || m_IsUnderAcidEffect;
+    // Print("Weed: " + m_IsUnderWeedEffect + "Tobacco: " + m_IsUnderTobaccoEffect + "Meth: " + m_IsUnderMethEffect + "Bath: " + m_IsUnderBathEffect + "Acid: " + m_IsUnderAcidEffect + "Alcohol: " + m_IsUnderAlcoholEffect);
+    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect || m_IsUnderAcidEffect || m_IsUnderAlcoholEffect;
   }
 
   void RemoveAllSymptoms()
@@ -647,5 +648,6 @@ modded class PlayerBase extends ManBase
     // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_HEROINE);
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
     GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
   }
 }

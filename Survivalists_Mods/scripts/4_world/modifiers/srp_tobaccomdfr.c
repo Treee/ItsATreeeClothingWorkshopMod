@@ -40,12 +40,14 @@ class SRP_TobaccoMdfr: ModifierBase
       player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
     }
     player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
+    player.GetStaminaHandler().SetDepletionMultiplier(1.5);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
     player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
+    player.GetStaminaHandler().SetDepletionMultiplier(1);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)
