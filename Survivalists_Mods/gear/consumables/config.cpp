@@ -575,7 +575,7 @@ class CfgVehicles
 		scope=0;
 		displayName="Dye Crafting Model Base";
 		descriptionShort="A rudimentary dye. Useful for staining this color on cloth or other various things.";
-		model="Survivalists_Mods\gear\consumables\SRP_Bleach.p3d";
+		model="Survivalists_Mods\gear\consumables\srp_dyebottle.p3d";
     color="base";
 		weight=120;
 		itemSize[]={2,2};
@@ -586,14 +586,28 @@ class CfgVehicles
 		varQuantityMax=100;
 		varQuantityDestroyOnMin=1;
 		varStackMax=100;
-		inventorySlot[]={};
+		inventorySlot[]=
+    {
+      "SRP_DyeBottle1",
+      "SRP_DyeBottle2",
+      "SRP_DyeBottle3",
+      "SRP_DyeBottle4",
+      "SRP_DyeBottle5",
+      "SRP_DyeBottle6",
+      "SRP_DyeBottle7",
+      "SRP_DyeBottle8",
+      "SRP_DyeBottle9",
+      "SRP_DyeBottle10",
+      "SRP_DyeBottle11",
+      "SRP_DyeBottle12"
+    };
     hiddenSelections[]=
     {
       "zbytek"
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\SRP_Bleach_CO.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_dyebottle_whitepotion_ca.paa"
     };
 		class DamageSystem
 		{
@@ -604,11 +618,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"Survivalists_Mods\gear\consumables\data\srp_dye.rvmat"}},
-            {0.69999999,	{	"Survivalists_Mods\gear\consumables\data\srp_dye.rvmat"}},
-            {0.5,	{	"Survivalists_Mods\gear\consumables\data\srp_dye_damage.rvmat"}},
-            {0.30000001,	{	"Survivalists_Mods\gear\consumables\data\srp_dye_damage.rvmat"}},
-            {0.0,	{	"Survivalists_Mods\gear\consumables\data\srp_dye_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\gear\consumables\data\srp_dyebottle.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\consumables\data\srp_dyebottle.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\consumables\data\srp_dyebottle_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\consumables\data\srp_dyebottle_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\consumables\data\srp_dyebottle_destruct.rvmat"}}
 					};
 				};
 			};
@@ -632,7 +646,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Black_CO.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_dyebottle_blackpotion_ca.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Blue: SRP_CraftingMaterial_Dye_Base
@@ -646,7 +660,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Blue_CO.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_dyebottle_bluepotion_ca.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Brown: SRP_CraftingMaterial_Dye_Base
@@ -660,7 +674,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Brown_CO.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_dyebottle_brownpotion_ca.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Green: SRP_CraftingMaterial_Dye_Base
@@ -674,7 +688,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Green_CO.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_dyebottle_greenpotion_ca.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Pink: SRP_CraftingMaterial_Dye_Base
@@ -688,7 +702,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Pink_CO.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_dyebottle_pinkpotion_ca.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Red: SRP_CraftingMaterial_Dye_Base
@@ -702,7 +716,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Red_CO.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_dyebottle_redpotion_ca.paa"
     };
   };
   class SRP_CraftingMaterial_Dye_Yellow: SRP_CraftingMaterial_Dye_Base
@@ -716,7 +730,7 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\SRP_Dye_Yellow_CO.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_dyebottle_yellowpotion_ca.paa"
     };
   };
 

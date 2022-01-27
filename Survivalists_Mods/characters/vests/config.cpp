@@ -1724,7 +1724,6 @@ class CfgVehicles
 		itemsCargoSize[]={6,5};
 		absorbency=0;
 		heatIsolation=0.80;
-		noMask=0;
 		hiddenSelections[]=
 		{
 			"zbytek",
@@ -1775,6 +1774,23 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Bandoiler_Alchemist: SRP_Bandoiler
+  {
+    scope=2;
+    displayName="Alchemists Sling";
+    descriptionShort="A leather sling with attachments for vials.";
+    attachments[]=
+		{
+			"Belt_Back",
+      "VestGrenadeA",
+      "VestGrenadeB",
+      "SRP_DyeBottle1",
+      "SRP_DyeBottle2",
+      "SRP_DyeBottle3",
+      "SRP_DyeBottle4",
+		};
+  };
   
   class SRP_ShoulderSling: Clothing
 	{	

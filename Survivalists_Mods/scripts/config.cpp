@@ -39,6 +39,79 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
 	};
 
+  class Slot_SRP_DyeBottle1
+	{
+		name="SRP_DyeBottle1";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle2
+	{
+		name="SRP_DyeBottle2";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle3
+	{
+		name="SRP_DyeBottle3";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle4
+	{
+		name="SRP_DyeBottle4";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle5
+	{
+		name="SRP_DyeBottle5";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle6
+	{
+		name="SRP_DyeBottle6";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle7
+	{
+		name="SRP_DyeBottle7";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle8
+	{
+		name="SRP_DyeBottle8";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle9
+	{
+		name="SRP_DyeBottle9";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle10
+	{
+		name="SRP_DyeBottle10";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle11
+	{
+		name="SRP_DyeBottle11";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DyeBottle12
+	{
+		name="SRP_DyeBottle12";
+		displayName="Dye Bottle";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+
   class Slot_Cassette
 	{
 		name="Cassette";
@@ -1528,6 +1601,79 @@ class CfgNonAIVehicles
 		inventorySlot[]={"firstaidkit"};
 		model="\DZ\gear\containers\FirstAidKit.p3d";
 	};
+
+  class Proxysrp_dyebottle1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle1"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle2"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle3"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle4"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle4_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle5_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle5"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle5_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle6_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle6"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle6_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle7_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle7"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle7_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle8_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle8"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle8_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle9_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle9"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle9_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle10_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle10"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle10_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle11_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle11"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle11_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_dyebottle12_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_DyeBottle12"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_dyebottle12_proxy.p3d"; //proxy path 
+  };
 
   class Proxycigarettecase_proxy1: ProxyAttachment //same as p3d name
   {

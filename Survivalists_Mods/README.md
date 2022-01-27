@@ -742,6 +742,29 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Locker Equipment" (https://skfb.ly/opIqH) by Dmitriy Mitroshin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Hat" (https://skfb.ly/FGyI) by Siesta is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- https://freesound.org/people/djgriffin/sounds/591250/ (Tibetan chant example)
+- https://freesound.org/people/GregorQuendel/sounds/514509/ (Throat Singing Percussion Trailer.wav)
+- https://freesound.org/people/dkaufman/sounds/387563/ (Langtang, Nepal mountain chants)
+- https://freesound.org/people/Falsalama/sounds/64621/ (tibetan chant falsalama 2 wet.wav)
+- https://freesound.org/people/Falsalama/sounds/64602/ (chant.mp3)
+- https://freesound.org/people/Falsalama/sounds/64603/ (Tibetan Chant by Falsalama 1.wav)
+- https://freesound.org/people/Razzvio/sounds/79647/ (Tibetan Chant high pass.wav)
+- https://freesound.org/people/Striderjapan/sounds/141367/ (DST-AncientCurse-II.mp3)
+- https://freesound.org/people/Striderjapan/sounds/141366/ (DST-AncientCurse-III.mp3)
+- https://freesound.org/people/Falsalama/sounds/64617/ (tibetan chant falsalama d# low reverb.wav)
+- https://freesound.org/people/kevp888/sounds/578506/ (BR_049_VN_GongInPagoda.mp3)
+- https://freesound.org/people/bondegi/sounds/30200/ (Monk Chant2.aif)
+- https://freesound.org/people/Speedenza/sounds/198069/ (Alien Soundscape - 2)
+- https://freesound.org/people/newagesoup/sounds/400809/ (Stereo Harmony Bells)
+- https://freesound.org/people/ellenmentor/sounds/395402/ (01 Ohm 3 voices.wav)
+- https://freesound.org/people/newagesoup/sounds/400605/ (Harmony Bell)
+- https://freesound.org/people/djgriffin/sounds/20780/ (zen gong.wav)
+- https://freesound.org/people/the_very_Real_Horst/sounds/195313/ (Yin-Yang-Sound-of-Tibetan-Silver-Bells.mp3)
+- https://freesound.org/people/molicki/sounds/237688/ (1 Molicki, Ohm 0;33.mp3)
+- https://freesound.org/people/electra/sounds/445129/ (Tibetan bells loop)
+
 # Wishlist
 
 - "Armor Set" (https://skfb.ly/oqo8Q) by gimora is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).

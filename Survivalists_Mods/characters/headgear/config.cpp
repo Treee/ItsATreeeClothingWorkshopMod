@@ -1364,4 +1364,81 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Alchemist_Hat: Clothing
+	{
+		scope=2;
+		displayName="Leather Hat";
+		descriptionShort="A leather top hat with some glass bottles upon it.";
+		model="Survivalists_Mods\characters\headgear\SRP_Alchemist_Hat_g.p3d";
+		weight=100;
+		noMask=0;
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+    attachments[]=
+		{
+      "SRP_DyeBottle1",
+      "SRP_DyeBottle2",
+      "SRP_DyeBottle3",
+      "SRP_DyeBottle4",
+      "SRP_DyeBottle5",
+      "SRP_DyeBottle6",
+      "SRP_DyeBottle7",
+      "SRP_DyeBottle8",
+      "SRP_DyeBottle9",
+      "SRP_DyeBottle10",
+      "SRP_DyeBottle11",
+      "SRP_DyeBottle12"
+		};
+		itemSize[]={3,3};
+		varWetMax=0.249;
+		heatIsolation=0.5;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\Alchemist_Hat_CO.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\SRP_Alchemist_Hat_m.p3d";
+			female="Survivalists_Mods\characters\headgear\SRP_Alchemist_Hat_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Mods\characters\headgear\data\Alchemist_Hat.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\headgear\data\Alchemist_Hat.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\headgear\data\Alchemist_Hat_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\headgear\data\Alchemist_Hat_damage.rvmat"}},
+            {0,{"Survivalists_Mods\characters\headgear\data\Alchemist_Hat_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 };
