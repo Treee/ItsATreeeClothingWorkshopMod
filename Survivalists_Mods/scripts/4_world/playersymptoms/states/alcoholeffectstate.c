@@ -1,30 +1,6 @@
 class AlcoholEffectSymptom extends SymptomBase
 {
-  PPERequester_SRPAlcoholEffect m_RequesterDrugEffect;
-
-  float startingPointSaturation = 1;
-  float endingPointSaturation = 1.5;
-  float currentSaturation = 1;
-  float accumulatedSaturation = 0;
-  float saturationMultiplier = 0.1;
-
-  float startingPointBlur = 0;
-  float endingPointBlur = 0.5;
-  float currentBlur = 0;
-  float accumulatedBlur = 0;
-  float blurMultiplier = 0.1;
-
-  float startingPointOffsetX = 0;
-  float endingPointOffsetX = 0.3;
-  float currentOffsetX = 0;
-  float accumulatedOffsetX = 0;
-  float offsetXMultiplier = 0.1;
-
-  float startingPointOffsetY = 0;
-  float endingPointOffsetY = 0.2;
-  float currentOffsetY = 0;
-  float accumulatedOffsetY = 0;
-  float offsetYMultiplier = 0.1;
+  PPERequester_SRPDrugEffect m_RequesterDrugEffect;
 
   float laughCounter = 0;
 
@@ -39,7 +15,7 @@ class AlcoholEffectSymptom extends SymptomBase
 		m_SyncToClient = true;
     if ( !GetGame().IsDedicatedServer() )
 		{
-			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPAlcoholEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPAlcoholEffect)));
+			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
 		}
 	}
 	
@@ -66,53 +42,9 @@ class AlcoholEffectSymptom extends SymptomBase
 	{
     // Print("alcohol effect active");
     player.m_IsUnderAlcoholEffect = true;
-    if (currentSaturation > endingPointSaturation && saturationMultiplier > 0)
-    {
-      saturationMultiplier *= -1;
-    }
-    else if (currentSaturation < startingPointSaturation && saturationMultiplier < 0)
-    {
-      saturationMultiplier *= -1;
-    }
-
-    if (currentBlur > endingPointBlur && blurMultiplier > 0)
-    {
-      blurMultiplier *= -1;
-    }
-    else if (currentBlur < startingPointBlur && blurMultiplier < 0)
-    {
-      blurMultiplier *= -1;
-    }
-
-    if (currentOffsetX > endingPointOffsetX && offsetXMultiplier > 0)
-    {
-      offsetXMultiplier *= -1;
-    }
-    else if (currentOffsetX < startingPointOffsetX && offsetXMultiplier < 0)
-    {
-      offsetXMultiplier *= -1;
-    }
-    if (currentOffsetY > endingPointOffsetY && offsetYMultiplier > 0)
-    {
-      offsetYMultiplier *= -1;
-    }
-    else if (currentOffsetY < startingPointOffsetY && offsetYMultiplier < 0)
-    {
-      offsetYMultiplier *= -1;
-    }
-
-    currentSaturation = Math.Lerp(startingPointSaturation, endingPointSaturation, accumulatedSaturation);  
-    currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur);
-    currentOffsetX = Math.Lerp(startingPointOffsetX, endingPointOffsetX, accumulatedOffsetX);
-    currentOffsetY = Math.Lerp(startingPointOffsetY, endingPointOffsetY, accumulatedOffsetY);
-
-    m_RequesterDrugEffect.SetGlowSaturation(currentSaturation);
-    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur, currentOffsetX, currentOffsetY);
-    
-    accumulatedSaturation += (deltatime * saturationMultiplier);
-    accumulatedBlur += (deltatime * blurMultiplier);
-    accumulatedOffsetX += (deltatime * offsetXMultiplier);
-    accumulatedOffsetY += (deltatime * offsetYMultiplier);
+    m_RequesterDrugEffect.SetGlowSaturation(deltatime, 0.15, "alco");
+    m_RequesterDrugEffect.SetRadialBlur(deltatime, deltatime, 0.05, 0.05, 0.05, "alco");      
+    m_RequesterDrugEffect.SetRadialBlurOffset(deltatime, deltatime, 0.03, 0.05, "alco");      
 	}
 	
 	//!gets called once on an Symptom which is being activated
@@ -137,8 +69,12 @@ class AlcoholEffectSymptom extends SymptomBase
 	{
     laughCounter = 0;    
     player.m_IsUnderAlcoholEffect = false;
-    m_RequesterDrugEffect.SetGlowSaturation();
-    m_RequesterDrugEffect.SetRadialBlur();
+    // Print("client deactivate: " + player.IsUnderTheInfluence());
+    if (!player.IsUnderTheInfluence())
+    {
+      // Print("stop requester: " + player.IsUnderTheInfluence());
+      m_RequesterDrugEffect.Stop();
+    }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
-}
+};

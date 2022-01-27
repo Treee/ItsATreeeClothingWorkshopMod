@@ -1,12 +1,6 @@
 class MethEffectSymptom extends SymptomBase
 {
-  PPERequester_SRPMethEffect m_RequesterDrugEffect;
-
-  float startingPointBlur = 0;
-  float endingPointBlur = 1;
-  float currentBlur = 0;
-  float accumulatedBlur = 0;
-  float blurMultiplier = 0.1;
+  PPERequester_SRPDrugEffect m_RequesterDrugEffect;
 
   float foodBuildUp = 0;
 
@@ -24,7 +18,7 @@ class MethEffectSymptom extends SymptomBase
 		m_SyncToClient = true;
     if ( !GetGame().IsDedicatedServer() )
 		{
-			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPMethEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPMethEffect)));
+			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
 		}
 	}
 	
@@ -42,17 +36,8 @@ class MethEffectSymptom extends SymptomBase
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
     player.m_IsUnderMethEffect = true;
-    if (currentBlur > endingPointBlur && blurMultiplier > 0)
-    {
-      blurMultiplier *= -1;
-    }
-    else if (currentBlur < startingPointBlur && blurMultiplier < 0)
-    {
-      blurMultiplier *= -1;
-    }
-    currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur);  
-    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur);
-    accumulatedBlur += (deltatime * blurMultiplier);
+    m_RequesterDrugEffect.SetRadialBlur(deltatime, deltatime, 0.1, 0.8, 0.05, "meth");      
+    m_RequesterDrugEffect.SetRadialBlurOffset(deltatime, deltatime, 0.1, 0.1, "meth");      
 
     float m_randomChance = Math.RandomFloatInclusive(0,1);
     if (m_randomChance < 0.05 && scarySoundBuildUp >= 35) 
@@ -92,7 +77,12 @@ class MethEffectSymptom extends SymptomBase
 	override void OnGetDeactivatedClient(PlayerBase player)
 	{
     player.m_IsUnderMethEffect = false;
-    m_RequesterDrugEffect.SetRadialBlur();
+    // Print("client deactivate: " + player.IsUnderTheInfluence());
+    if (!player.IsUnderTheInfluence())
+    {
+      // Print("stop requester: " + player.IsUnderTheInfluence());
+      m_RequesterDrugEffect.Stop();
+    }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
-}
+};

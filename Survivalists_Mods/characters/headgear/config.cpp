@@ -673,6 +673,15 @@ class CfgVehicles
 			"Glass",
       "SRP_AltynVisor"
 		};
+    hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn.rvmat"
+    };	
     class DamageSystem
 		{
 			class GlobalHealth

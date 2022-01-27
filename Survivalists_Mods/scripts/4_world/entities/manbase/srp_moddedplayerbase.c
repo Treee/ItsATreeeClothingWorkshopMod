@@ -20,7 +20,8 @@ modded class PlayerBase extends ManBase
   bool m_IsUnderTobaccoEffect = false;
   bool m_IsUnderMethEffect = false;
   bool m_IsUnderBathEffect = false;
-  bool m_IsUnderAcidEffect = false;
+  bool m_IsUnderAcidSmileEffect = false;
+  bool m_IsUnderAcidSkullEffect = false;
   bool m_IsUnderAlcoholEffect = false;
   bool m_IsUnderCocaineEffect = false;
 
@@ -226,7 +227,7 @@ modded class PlayerBase extends ManBase
 
     if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
       ignoreFalling = true;
-    else if (suitAttachment && suitAttachment.GetType() == "DUB_Lich" || suitAttachment.IsInherited(DUB_Lich))
+    else if (suitAttachment && (suitAttachment.GetType() == "DUB_Lich" || suitAttachment.IsInherited(DUB_Lich)))
       ignoreFalling = true;
     else if ( mutantAttachment && mutantAttachment.GetType() == "DUB_Observerhead")
       ignoreFalling = true;
@@ -633,7 +634,7 @@ modded class PlayerBase extends ManBase
   bool IsUnderTheInfluence()
   {
     // Print("Weed: " + m_IsUnderWeedEffect + "Tobacco: " + m_IsUnderTobaccoEffect + "Meth: " + m_IsUnderMethEffect + "Bath: " + m_IsUnderBathEffect + "Acid: " + m_IsUnderAcidEffect + "Alcohol: " + m_IsUnderAlcoholEffect  "Cocaine: " + m_IsUnderCocaineEffect);
-    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect || m_IsUnderAcidEffect || m_IsUnderAlcoholEffect || m_IsUnderCocaineEffect;
+    return m_IsUnderWeedEffect || m_IsUnderTobaccoEffect || m_IsUnderMethEffect || m_IsUnderBathEffect || m_IsUnderAcidSmileEffect || m_IsUnderAcidSkullEffect || m_IsUnderAlcoholEffect || m_IsUnderCocaineEffect;
   }
 
   void RemoveAllSymptoms()

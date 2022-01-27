@@ -1,6 +1,6 @@
 class SRP_TestMdfr: ModifierBase
 {
-	const int LIFETIME = 100;
+	const int LIFETIME = 120;
 
 	override void Init()
 	{
@@ -9,11 +9,12 @@ class SRP_TestMdfr: ModifierBase
 		m_ID 					= SRP_eModifiers.MDF_TEST;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
+    DisableActivateCheck();
 	}
 
 	override bool ActivateCondition(PlayerBase player)
 	{
-		return player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TEST);
+		return false;
 	}
 	
 	override void OnReconnect(PlayerBase player)
@@ -37,7 +38,7 @@ class SRP_TestMdfr: ModifierBase
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
-    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
   }
 	
 	override bool DeactivateCondition(PlayerBase player)
@@ -53,8 +54,4 @@ class SRP_TestMdfr: ModifierBase
 			return false;
 		}
 	}
-
-	override void OnTick(PlayerBase player, float deltaT)
-	{
-	}	
 };

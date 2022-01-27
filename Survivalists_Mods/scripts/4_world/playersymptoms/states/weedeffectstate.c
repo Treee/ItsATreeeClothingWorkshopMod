@@ -1,21 +1,8 @@
 class WeedEffectSymptom extends SymptomBase
 {
-  PPERequester_SRPWeedEffect m_RequesterDrugEffect;
-
-  float startingPointSaturation = 1;
-  float endingPointSaturation = 5;
-  float currentSaturation = 1;
-  float accumulatedSaturation = 0;
-  float saturationMultiplier = 0.1;
-
-  float startingPointBlur = 0;
-  float endingPointBlur = 0.05;
-  float currentBlur = 0;
-  float accumulatedBlur = 0;
-  float blurMultiplier = 0.1;
+  PPERequester_SRPDrugEffect m_RequesterDrugEffect;
 
   float laughCounter = 0;
-
   float coughCounter = 0;
 
 	//this is just for the Symptom parameters set-up and is called even if the Symptom doesn't execute, don't put any gameplay code in here
@@ -29,7 +16,7 @@ class WeedEffectSymptom extends SymptomBase
 		m_SyncToClient = true;
     if ( !GetGame().IsDedicatedServer() )
 		{
-			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPWeedEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPWeedEffect)));
+			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
 		}
 	}
 	
@@ -66,30 +53,9 @@ class WeedEffectSymptom extends SymptomBase
 	{
     // Print("Weed effect active");
     player.m_IsUnderWeedEffect = true;
-    if (currentSaturation > endingPointSaturation && saturationMultiplier > 0)
-    {
-      saturationMultiplier *= -1;
-    }
-    else if (currentSaturation < startingPointSaturation && saturationMultiplier < 0)
-    {
-      saturationMultiplier *= -1;
-    }
-    currentSaturation = Math.Lerp(startingPointSaturation, endingPointSaturation, accumulatedSaturation);  
-
-    if (currentBlur > endingPointBlur && blurMultiplier > 0)
-    {
-      blurMultiplier *= -1;
-    }
-    else if (currentBlur < startingPointBlur && blurMultiplier < 0)
-    {
-      blurMultiplier *= -1;
-    }
-    currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur);
-
-    m_RequesterDrugEffect.SetGlowSaturation(currentSaturation);
-    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur);
-    accumulatedSaturation += (deltatime * saturationMultiplier);
-    accumulatedBlur += (deltatime * blurMultiplier);
+    m_RequesterDrugEffect.SetGlowSaturation(deltatime, 1, "test");
+    m_RequesterDrugEffect.SetRadialBlur(deltatime, deltatime, 0.04, 0.02, 0.05, "test");      
+    m_RequesterDrugEffect.SetRadialBlurOffset(deltatime, deltatime, 0.02, 0.01, "test");      
 	}
 	
 	//!gets called once on an Symptom which is being activated
@@ -115,8 +81,12 @@ class WeedEffectSymptom extends SymptomBase
     laughCounter = 0;
     coughCounter = 0;
     player.m_IsUnderWeedEffect = false;
-    m_RequesterDrugEffect.SetGlowSaturation();
-    m_RequesterDrugEffect.SetRadialBlur();
+    // Print("client deactivate: " + player.IsUnderTheInfluence());
+    if (!player.IsUnderTheInfluence())
+    {
+      // Print("stop requester: " + player.IsUnderTheInfluence());
+      m_RequesterDrugEffect.Stop();
+    }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
-}
+};

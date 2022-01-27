@@ -1,30 +1,6 @@
 class SkullAcidEffectSymptom extends SymptomBase
 {
-  PPERequester_SRPAcidEffect m_RequesterDrugEffect;
-
-  float startingPointSaturation = 0;
-  float endingPointSaturation = 1;
-  float currentSaturation = 1;
-  float accumulatedSaturation = 0;
-  float saturationMultiplier = 0.1;
-
-  float startingPointBlur = 0;
-  float endingPointBlur = 3;
-  float currentBlur = 0;
-  float accumulatedBlur = 0;
-  float blurMultiplier = 0.1;
-
-  float startingPointChromaX = 0;
-  float endingPointChromaX = 4;
-  float currentChromaX = 0;
-  float accumulatedChromaX = 0;
-  float chromaXMultiplier = 0.1;
-
-  float startingPointChromaY = 0;
-  float endingPointChromaY = 5;
-  float currentChromaY = 0;
-  float accumulatedChromaY = 0;
-  float chromaYMultiplier = 0.1;
+  PPERequester_SRPDrugEffect m_RequesterDrugEffect;
 
   float scarySoundBuildUp = 0;
   float happysoundBuildUp = 0;
@@ -41,14 +17,14 @@ class SkullAcidEffectSymptom extends SymptomBase
 		m_SyncToClient = true;
     if ( !GetGame().IsDedicatedServer() )
 		{
-			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPAcidEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPAcidEffect)));
+			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
 		}
 	}
 	
 	//!gets called every frame
 	override void OnUpdateServer(PlayerBase player, float deltatime)
 	{
-    player.m_IsUnderAcidEffect = true;
+    player.m_IsUnderAcidSkullEffect = true;
     // Print("Water Pre reduction: " + player.GetStatWater().Get().ToString() + " Food Pree reduction: " + player.GetStatEnergy().Get().ToString() + " reduced by amount: " + (deltatime * -0.2));
     player.AddHealth("", "Blood", (-1.5 * deltatime));
 
@@ -85,56 +61,11 @@ class SkullAcidEffectSymptom extends SymptomBase
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
     // Print("skull acid effect active");
-    player.m_IsUnderAcidEffect = true;
-    if (currentSaturation > endingPointSaturation && saturationMultiplier > 0)
-    {
-      saturationMultiplier *= -1;
-    }
-    else if (currentSaturation < startingPointSaturation && saturationMultiplier < 0)
-    {
-      saturationMultiplier *= -1;
-    }
-
-    if (currentBlur > endingPointBlur && blurMultiplier > 0)
-    {
-      blurMultiplier *= -1;
-    }
-    else if (currentBlur < startingPointBlur && blurMultiplier < 0)
-    {
-      blurMultiplier *= -1;
-    }
-
-    if (currentChromaX > endingPointChromaX && chromaXMultiplier > 0)
-    {
-      chromaXMultiplier *= -1;
-    }
-    else if (currentChromaX < startingPointChromaX && chromaXMultiplier < 0)
-    {
-      chromaXMultiplier *= -1;
-    }
-
-    if (currentChromaY > endingPointChromaY && chromaYMultiplier > 0)
-    {
-      chromaYMultiplier *= -1;
-    }
-    else if (currentChromaY < startingPointChromaY && chromaYMultiplier < 0)
-    {
-      chromaYMultiplier *= -1;
-    }
-
-    currentSaturation = Math.Lerp(startingPointSaturation, endingPointSaturation, accumulatedSaturation);  
-    currentBlur = Math.Lerp(startingPointBlur, endingPointBlur, accumulatedBlur);  
-    currentChromaX = Math.Lerp(startingPointChromaX, endingPointChromaX, accumulatedChromaX);  
-    currentChromaY = Math.Lerp(startingPointChromaY, endingPointChromaY, accumulatedChromaY);  
-    
-    m_RequesterDrugEffect.SetGlowSaturation(currentSaturation);
-    m_RequesterDrugEffect.SetRadialBlur(currentBlur, currentBlur);
-    m_RequesterDrugEffect.SetCromaticAberration(currentChromaX, currentChromaY);
-
-    accumulatedSaturation += (deltatime * saturationMultiplier);
-    accumulatedBlur += (deltatime * blurMultiplier);
-    accumulatedChromaY += (deltatime * chromaYMultiplier);
-    accumulatedChromaX += (deltatime * chromaXMultiplier);
+    player.m_IsUnderAcidSkullEffect = true;
+    m_RequesterDrugEffect.SetGlowSaturation(deltatime, 0.01, "lsdS");
+    m_RequesterDrugEffect.SetRadialBlur(deltatime, deltatime, 0.5, 0.5, 0.05, "lsdS");      
+    m_RequesterDrugEffect.SetRadialBlurOffset(deltatime, deltatime, 0.03, 0.05, "lsdS");      
+    m_RequesterDrugEffect.SetCromaticAberration(deltatime, deltatime, 1.2, 0.9, "lsdS");     
 
     float m_randomChance = Math.RandomFloatInclusive(0,1);
     if (m_randomChance < 0.05 && scarySoundBuildUp >= 35) 
@@ -164,17 +95,20 @@ class SkullAcidEffectSymptom extends SymptomBase
 
 	override void OnGetDeactivatedServer(PlayerBase player)
 	{
-    player.m_IsUnderAcidEffect = false;
+    player.m_IsUnderAcidSkullEffect = false;
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 	
 	//!only gets called once on an active Symptom that is being deactivated
 	override void OnGetDeactivatedClient(PlayerBase player)
 	{
-    player.m_IsUnderAcidEffect = false;
-    m_RequesterDrugEffect.SetGlowSaturation();
-    m_RequesterDrugEffect.SetRadialBlur();
-    m_RequesterDrugEffect.SetCromaticAberration();
+    player.m_IsUnderAcidSkullEffect = false;
+    // Print("client deactivate: " + player.IsUnderTheInfluence());
+    if (!player.IsUnderTheInfluence())
+    {
+      // Print("stop requester: " + player.IsUnderTheInfluence());
+      m_RequesterDrugEffect.Stop();
+    }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
-}
+};
