@@ -2443,7 +2443,6 @@ class CfgVehicles
 				};
 			};
 		};
-
 	};
 
   class Tobacco: SRP_PlantHerbEdible_Colorbase

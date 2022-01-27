@@ -8,10 +8,10 @@ class ReplaceHerbsWithCrushedPowder extends TurnItemIntoItemLambda
     SRP_CrushedHerb_Colorbase crushedHerb;
     Class.CastTo(crushedHerb, new_item);
 
-    int m_ItemCount = Math.RandomIntInclusive(1, old_item.GetQuantity());
+    int m_ItemCount = Math.RandomIntInclusive(1, old_item.GetQuantity() +  Math.RandomIntInclusive(1,7));
 
     crushedHerb.SetQuantity(m_ItemCount);
-    Print("ReplaceHerbsWithCrushedPowder::SetupNewItem new_item=" + new_item + " count=" + m_ItemCount);
+    // Print("ReplaceHerbsWithCrushedPowder::SetupNewItem new_item=" + new_item + " count=" + m_ItemCount);
 	}
 };
 
@@ -49,7 +49,7 @@ class ActionMortarCrushIntoPowder: ActionSingleUseBase
     ItemBase mortarAndPestle = ItemBase.Cast(item);
     SRP_MortarPestle pestleAttachment = SRP_MortarPestle.Cast(mortarAndPestle.FindAttachmentBySlotName("SRP_Pestle"));
     SRP_PlantHerbEdible_Colorbase herb = SRP_PlantHerbEdible_Colorbase.Cast(mortarAndPestle.FindAttachmentBySlotName("SRP_Flower1"));
-    return (pestleAttachment && herb && herb.GetQuantity() > 0 && herb.GetHealth() > 74);
+    return (pestleAttachment && herb && herb.GetQuantity() > 0 && !herb.IsDamageDestroyed() && herb.IsFoodDried());
 	}
 		
 	override void OnEndServer( ActionData action_data )

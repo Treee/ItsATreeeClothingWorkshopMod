@@ -1778,7 +1778,7 @@ class CfgVehicles
   class SRP_Bandoiler_Alchemist: SRP_Bandoiler
   {
     scope=2;
-    displayName="Alchemists Sling";
+    displayName="Alchemist Sling";
     descriptionShort="A leather sling with attachments for vials.";
     attachments[]=
 		{
@@ -1866,8 +1866,7 @@ class CfgVehicles
 				};
 			};
 		};
-	};
-  
+	};  
 
   // ===================== VEST POUCHES
 
