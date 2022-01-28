@@ -15,6 +15,17 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     m_LightDistance = 10;
   }
 
+  override protected void AddDamageToItemByFire( ItemBase item, bool can_be_ruined )
+	{
+    if (item && item.GetType() == "Pipe" && item.GetHealthLevel() == GameConstants.STATE_BADLY_DAMAGED)
+    {
+      item.Delete();
+      ItemBase new_item = ItemBase.Cast(GetInventory().CreateInInventory("SRP_Mining_RawOre_Iron"));
+      new_item.SetQuantity(Math.RandomIntInclusive(1,3));
+    }
+		super.AddDamageToItemByFire(item, can_be_ruined);
+	}
+
   // Undestroyable
   override string GetInvulnerabilityTypeString()
 	{
