@@ -21,7 +21,11 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     {
       item.Delete();
       ItemBase new_item = ItemBase.Cast(GetInventory().CreateInInventory("SRP_Mining_RawOre_Iron"));
-      new_item.SetQuantity(Math.RandomIntInclusive(1,3));
+      int randomQuantity = Math.RandomIntInclusive(0,2);
+      if (randomQuantity > 0)
+      {
+        new_item.SetQuantity(randomQuantity);
+      }
     }
 		super.AddDamageToItemByFire(item, can_be_ruined);
 	}
