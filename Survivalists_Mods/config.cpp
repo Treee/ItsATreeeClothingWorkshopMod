@@ -55,8 +55,7 @@ class CfgPatches
       "MSP_Scripts",    // MSP_Fridge_Base
       "BaseBuildingPlus", // removing admin tools
       "GearPDA_scripts", // PDA retexture      
-      "deerisle", // for the map
-      "BaseBuildingPlus_Letters", // for the letters
+      "deerisle" // for the map
 		};
 	};
 };
