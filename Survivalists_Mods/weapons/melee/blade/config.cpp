@@ -227,6 +227,13 @@ class CfgVehicles
       "Material_Shelter_Fabric"
 		};
 	};
+  class SRP_WeaponBladePipeAxe_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Pipe Axe";
+		descriptionShort="A bladed weapon kit - Finish with a pipe. Do not put back into the forge.";
+    attachments[]={};
+	};
 
   class SRP_Trenchknife: HuntingKnife
   {

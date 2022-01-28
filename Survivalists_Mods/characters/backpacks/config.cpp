@@ -220,7 +220,7 @@ class CfgVehicles
     rotationFlags=1;
 		attachments[]=
 		{
-      "VestBackpack","LargePouch1","Belt_Left","SmallPouch1","SmallPouch2"
+      "VestBackpack","LargePouch1","Belt_Left","SmallPouch1","SmallPouch2","SRP_Patch"
 		};
     hiddenSelections[]=
 		{
@@ -265,7 +265,7 @@ class CfgVehicles
     rotationFlags=1;
 		attachments[]=
 		{
-
+      "VestBackpack","LargePouch1","Belt_Left","SmallPouch1","SmallPouch2","SRP_Patch"
 		};
     hiddenSelections[]=
 		{
@@ -309,7 +309,7 @@ class CfgVehicles
     itemsCargoSize[]={5,8};
     attachments[]=
     {
-      "Shoulder","Melee","Pistol","SmallPouch1","SmallPouch2"
+      "Shoulder","Melee","Pistol","SmallPouch1","SmallPouch2","SRP_Patch"
     };
     hiddenSelections[]=
     {
