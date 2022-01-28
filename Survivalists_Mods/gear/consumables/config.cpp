@@ -114,42 +114,42 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_Spraycan_Turquoise: Spraycan_ColorBase
+  class SRP_Spraycan_Black: Spraycan_ColorBase
 	{
 		scope=2;
-		displayName="Turquoise Spraycan";
-		descriptionShort="A spray can that can be used to paint some weapons";
-		color="Turquoise";
+		displayName="Black Spraycan";
+    descriptionShort="A can of spray paint.";
+		color="black";
     hiddenSelections[]=
 		{
 			"camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\consumables\data\srp_spraycan_turquoise_co.paa"
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_black_co.paa"
 		};
 	};
-	class SRP_Spraycan_Red: Spraycan_ColorBase
+  class SRP_Spraycan_Blue: Spraycan_ColorBase
 	{
 		scope=2;
-		displayName="Red Spraycan";
-		descriptionShort="A spray can that can be used to paint some weapons";
-		color="Red";
+		displayName="Blue Spraycan";
+    descriptionShort="A can of spray paint.";
+		color="blue";
     hiddenSelections[]=
 		{
 			"camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\consumables\data\srp_spraycan_red_co.paa"
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_blue_co.paa"
 		};
 	};
-	class SRP_Spraycan_Brown: Spraycan_ColorBase
+  class SRP_Spraycan_Brown: Spraycan_ColorBase
 	{
 		scope=2;
 		displayName="Brown Spraycan";
-		descriptionShort="A spray can that can be used to paint some weapons";
-		color="Brown";
+    descriptionShort="A can of spray paint.";
+		color="brown";
     hiddenSelections[]=
 		{
 			"camo"
@@ -159,12 +159,12 @@ class CfgVehicles
 			"Survivalists_Mods\gear\consumables\data\srp_spraycan_brown_co.paa"
 		};
 	};
-	class SRP_Spraycan_Green: Spraycan_ColorBase
+  class SRP_Spraycan_Green: Spraycan_ColorBase
 	{
 		scope=2;
 		displayName="Green Spraycan";
-		descriptionShort="Green Spraycan";
-		color="Green";
+    descriptionShort="A can of spray paint.";
+		color="green";
     hiddenSelections[]=
 		{
 			"camo"
@@ -173,13 +173,73 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\gear\consumables\data\srp_spraycan_green_co.paa"
 		};
-	};  
+	};
+  class SRP_Spraycan_Orange: Spraycan_ColorBase
+	{
+		scope=2;
+		displayName="Orange Spraycan";
+    descriptionShort="A can of spray paint.";
+		color="orange";
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_orange_co.paa"
+		};
+	};
+  class SRP_Spraycan_Purple: Spraycan_ColorBase
+	{
+		scope=2;
+		displayName="Purple Spraycan";
+    descriptionShort="A can of spray paint.";
+		color="purple";
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_purple_co.paa"
+		};
+	};
+  class SRP_Spraycan_Red: Spraycan_ColorBase
+	{
+		scope=2;
+		displayName="Red Spraycan";
+    descriptionShort="A can of spray paint.";
+		color="red";
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_red_co.paa"
+		};
+	};
+	class SRP_Spraycan_Turquoise: Spraycan_ColorBase
+	{
+		scope=2;
+		displayName="Turquoise Spraycan";
+    descriptionShort="A can of spray paint.";
+		color="turquoise";
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_turquoise_co.paa"
+		};
+	};
   class SRP_Spraycan_White: Spraycan_ColorBase
 	{
 		scope=2;
 		displayName="White Spraycan";
-		descriptionShort="White Spraycan";
-		color="White";
+    descriptionShort="A can of spray paint.";
+		color="white";
     hiddenSelections[]=
 		{
 			"camo"
@@ -189,6 +249,22 @@ class CfgVehicles
 			"Survivalists_Mods\gear\consumables\data\srp_spraycan_white_co.paa"
 		};
 	};
+  class SRP_Spraycan_Yellow: Spraycan_ColorBase
+	{
+		scope=2;
+		displayName="Yellow Spraycan";
+    descriptionShort="A can of spray paint.";
+		color="yellow";
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\srp_spraycan_yellow_co.paa"
+		};
+	};
+
   class SRP_ButaneCanister: ButaneCanister
 	{
 		scope=2;
