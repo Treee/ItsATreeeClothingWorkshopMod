@@ -9,7 +9,7 @@ modded class PluginLifespan
 
     if (players_head && player.m_facepaintState > 0)
     {
-      Print("server or client??");
+      // Print("server or client??");
       players_head.SetObjectTexture( 0, "");
       players_head.SetObjectMaterial( 0, "");
 

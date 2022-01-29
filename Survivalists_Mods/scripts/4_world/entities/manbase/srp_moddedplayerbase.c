@@ -79,10 +79,10 @@ modded class PlayerBase extends ManBase
 
   override void OnVariablesSynchronized()
 	{
-    Print("face paint sync: mainState: " + m_facepaintState + " index: " + m_currentCamoIndex);
+    // Print("face paint sync: mainState: " + m_facepaintState + " index: " + m_currentCamoIndex);
     if (m_facepaintState != m_currentCamoIndex)
     {
-      Print("sync");
+      // Print("sync");
       m_facepaintState = m_currentCamoIndex;
     }
 		super.OnVariablesSynchronized();

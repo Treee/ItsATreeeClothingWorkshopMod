@@ -38,11 +38,11 @@ modded class TransmitterBase extends ItemTransmitter
     {
       if ( !IsMuted())
       {
-        SendMessageToClient( player, "Radio is UnMuted" );
+        player_PB.SendMessageToClient( player, "Radio is UnMuted" );
       }
       else
       {
-        SendMessageToClient( player, "Radio is Muted" );
+        player_PB.SendMessageToClient( player, "Radio is Muted" );
       }
     }
   }
