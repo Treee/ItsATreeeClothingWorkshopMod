@@ -12,8 +12,8 @@ class SRP_FacePaintStick: Inventory_Base
 	
 	override void OnApply(PlayerBase player)
 	{
-		// Print("Before: Face Paint On Apply: player state: " + player.m_facepaintState + " my state: " + m_facepaintType);
-    player.m_facepaintState = m_facepaintType;
+		Print("on apply");
+    player.SetCamoTexture();
     player.SetSynchDirty();
     // Print("After: Before: Face Paint On Apply: player state: " + player.m_facepaintState + " my state: " + m_facepaintType);
 	}

@@ -10,9 +10,7 @@ modded class PlayerBase extends ManBase
 
   ItemBook currentBookInHands;
 
-  const string FACEPAINT_PATH = "Survivalists_Mods\\characters\\heads\\";
   int	m_facepaintState;
-  int m_facepaintStateLocal;
   int m_currentCamoIndex;
   int m_facepaintCountMax;
 
@@ -30,7 +28,6 @@ modded class PlayerBase extends ManBase
     super.Init();
 
     m_facepaintState = 0;
-    m_facepaintStateLocal = 0;
     m_currentCamoIndex = 0;
     m_facepaintCountMax = GetPlayerCamoNames().Count() - 1;
     RegisterNetSyncVariableInt("m_facepaintState", 0, m_facepaintCountMax);
@@ -81,15 +78,15 @@ modded class PlayerBase extends ManBase
   }
 
   override void OnVariablesSynchronized()
-  {
+	{
+    Print("face paint sync: mainState: " + m_facepaintState + " index: " + m_currentCamoIndex);
+    if (m_facepaintState != m_currentCamoIndex)
+    {
+      Print("sync");
+      m_facepaintState = m_currentCamoIndex;
+    }
 		super.OnVariablesSynchronized();
-    // Print("sync variables");
-		if( m_facepaintStateLocal != m_facepaintState && IsPlayerLoaded())
-		{
-      // Print("sync camo state");
-			UpdateCamoState();
-		} 
-  }
+	}
 
   override bool CanSprint()
   {
@@ -250,34 +247,10 @@ modded class PlayerBase extends ManBase
     return height;
   }
 
-  void UpdateCamoState()
+  void SetCamoTexture()
   {
-    // Print("Update camo state");
-    if (!IsMale())
-    {
-      // Print("female");
-      int slot_id = InventorySlots.GetSlotIdFromString("Head");	
-      EntityAI players_head = GetInventory().FindPlaceholderForSlot( slot_id );
-      players_head.SetObjectMaterial( 0, "");
-      
-      string playerType = GetType();
-      playerType.Replace("SurvivorF_", "");
-      string filepath = "hhl_f_" + playerType + "_body.rvmat";
-      string materialPath = FACEPAINT_PATH + GetSelectedCamoName() + "\\" + filepath;
-      // Print("female face path: " + materialPath);
-      SetFaceMaterial( materialPath );
-    }
-    else 
-    {
-      // Print("male");
-      if ( m_ModuleLifespan )
-      {
-        // Print("module lifespan is not null");
-		    m_ModuleLifespan.UpdateLifespan( this, true );
-
-      }
-    }
-    m_facepaintStateLocal = m_facepaintState;
+    m_facepaintState = m_currentCamoIndex;
+    SetSynchDirty();
   }
 
   string GetSelectedCamoName()

@@ -42,24 +42,22 @@ class ActionPaintFace: ActionContinuousBase
       SRP_FacePaintStick paintStick = SRP_FacePaintStick.Cast(action_data.m_MainItem);
       if (paintStick)
       {        
-        action_data.m_Player.m_facepaintState = action_data.m_Player.m_currentCamoIndex;
-        action_data.m_Player.SetSynchDirty();
+        paintStick.OnApply(action_data.m_Player);
       }			
 		}
 	}
 
-  override void OnFinishProgressClient( ActionData action_data )
-	{	
-    if (action_data.m_MainItem)
-		{
-      SRP_FacePaintStick paintStick = SRP_FacePaintStick.Cast(action_data.m_MainItem);
-      if (paintStick)
-      {        
-        action_data.m_Player.m_facepaintState = action_data.m_Player.m_currentCamoIndex;
-        action_data.m_Player.SetSynchDirty();
-      }			
-		}
-	}
+  // override void OnFinishProgressClient( ActionData action_data )
+	// {	
+  //   if (action_data.m_MainItem)
+	// 	{
+  //     SRP_FacePaintStick paintStick = SRP_FacePaintStick.Cast(action_data.m_MainItem);
+  //     if (paintStick)
+  //     {        
+  //       paintStick.OnApply(action_data.m_Player);
+  //     }			
+	// 	}
+	// }
 
   string GetCamoName()
   {
