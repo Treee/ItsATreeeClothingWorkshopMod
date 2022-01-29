@@ -28,6 +28,25 @@ modded class TransmitterBase extends ItemTransmitter
 		SoundTurnedOnNoiseStop();
 	}
 
+  override void OnInventoryEnter(Man player)
+  {
+    super.OnInventoryEnter(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+
+    // is server, player has a radio in hands, is not muted
+    if(GetGame().IsDedicatedServer() && player_PB && player_PB.GetItemInHands() == this)
+    {
+      if ( !IsMuted())
+      {
+        SendMessageToClient( player, "Radio is UnMuted" );
+      }
+      else
+      {
+        SendMessageToClient( player, "Radio is Muted" );
+      }
+    }
+  }
+
 	override void SetActions()
 	{
 		super.SetActions();

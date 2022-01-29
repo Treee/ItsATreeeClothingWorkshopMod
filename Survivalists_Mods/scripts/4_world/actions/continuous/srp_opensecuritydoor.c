@@ -40,7 +40,7 @@ class ActionSRPHackSecurityDoorCB : ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime(10);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(300);
 	}
 };
 
