@@ -8,7 +8,16 @@ class SRP_PersonalRadio_SneakyBear extends PersonalRadio
       GetCompEM().SwitchOn();
     }
     EnableReceive(false);
+    EnableBroadcast(true);
 	}
+
+  override void OnSwitchOn()
+	{
+		super.OnSwitchOn();
+
+    EnableReceive(false);
+    EnableBroadcast(true);
+	}	
 
   override bool IsInventoryVisible()
   {
