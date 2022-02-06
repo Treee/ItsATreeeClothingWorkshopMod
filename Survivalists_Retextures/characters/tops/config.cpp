@@ -36,6 +36,10 @@ class CfgVehicles
 	class NBCJacketBase;
 	class GorkaEJacket_ColorBase;
   class NurseDress_ColorBase;
+  class Blouse_ColorBase;
+	class DenimJacket;
+	class Raincoat_ColorBase;
+	class WoolCoat_ColorBase;
 
   // modded classes
   class DUB_Monkrobe;
@@ -2477,6 +2481,109 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowpink_co.paa",
 			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowpink_co.paa",
 			"Survivalists_Retextures\characters\tops\data\nursedress_whitebowpink_co.paa"
+		};
+	};
+
+
+  // Leather Tops
+  class SRP_Leather_Blouse: Blouse_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\blouse_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\blouse_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\blouse_Leather_co.paa"
+		};
+	};
+  class SRP_Leather_BomberJacket: BomberJacket_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\bomberjacket_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\bomberjacket_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\bomberjacket_Leather_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\bomberjacket_Leather.rvmat",
+			"Survivalists_Retextures\characters\tops\data\bomberjacket_Leather.rvmat",
+			"Survivalists_Retextures\characters\tops\data\bomberjacket_Leather.rvmat"
+		};
+	};
+  class SRP_Leather_DenimJacket: DenimJacket
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\denim_jacket_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\denim_jacket_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\denim_jacket_Leather_co.paa"
+		};
+	};
+  class SRP_Leather_M65Jacket: M65Jacket_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\m65_jacket_leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\m65_jacket_leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\m65_jacket_leather_co.paa"
+		};
+	};
+  class SRP_Leather_PrisonTop: PrisonUniformJacket
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\prison_top_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\prison_top_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\prison_top_Leather_co.paa"
+		};
+	};
+  class SRP_Leather_HuntingJacket: HuntingJacket_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_Leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_Leather_co.paa"
+		};
+	};
+  class SRP_Leather_Raincoat: Raincoat_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\raincoat_leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\raincoat_leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\raincoat_leather_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\raincoat_Leather.rvmat",
+			"Survivalists_Retextures\characters\tops\data\raincoat_Leather.rvmat",
+			"Survivalists_Retextures\characters\tops\data\raincoat_Leather.rvmat"
+		};
+	};
+  class SRP_Leather_WoolCoat: WoolCoat_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\woolcoat_leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\woolcoat_leather_co.paa",
+			"Survivalists_Retextures\characters\tops\data\woolcoat_leather_co.paa"
 		};
 	};
 };

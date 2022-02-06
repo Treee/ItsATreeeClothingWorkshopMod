@@ -943,7 +943,7 @@ class CfgVehicles
   class SRP_BerserkSword: Inventory_Base
 	{
 		scope=2;
-		displayName="Antique Berserk Sword";
+		displayName="Antique Replica Berserk Sword";
 		descriptionShort="That thing was too big to be called a sword. Too big, too thick, too heavy, and too rough, it was more like a large hunk of iron.";
 		model="\Survivalists_Mods\weapons\melee\blade\srp_berserksword.p3d";
 		rotationFlags=16;

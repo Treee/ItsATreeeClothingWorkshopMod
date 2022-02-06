@@ -25,6 +25,8 @@ class CfgVehicles
 	class PolicePants;
 	class GorkaPants_ColorBase;
   class ShortJeans_ColorBase;
+  class CanvasPants_ColorBase;
+	class CanvasPantsMidi_ColorBase;
 
 	class SRPPolicePants: PolicePants
 	{
@@ -699,6 +701,51 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa",
 			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa",
 			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+		};
+	};
+
+  class SRP_Leather_CanvasPants: CanvasPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa"
+		};
+	};
+  class SRP_Leather_CanvasPantsMidi: CanvasPantsMidi_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa"
+		};
+	};
+  class SRP_Leather_PrisonPants: PrisonUniformPants
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\prison_pants_leather_co.paa",
+			"Survivalists_Retextures\characters\pants\data\prison_pants_leather_co.paa",
+			"Survivalists_Retextures\characters\pants\data\prison_pants_leather_co.paa"
+		};
+	};
+  class SRP_Leather_ShortJeans: ShortJeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\shortjeans_leather_co.paa",
+			"Survivalists_Retextures\characters\pants\data\shortjeans_leather_co.paa",
+			"Survivalists_Retextures\characters\pants\data\shortjeans_leather_co.paa"
 		};
 	};
 };

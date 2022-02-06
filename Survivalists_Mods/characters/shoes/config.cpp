@@ -27,9 +27,9 @@ class CfgVehicles
 		descriptionShort="Ignore biohzard effects";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_co.paa",
-			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_co.paa",
-			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_co.paa"
+			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_pink_co.paa",
+			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_pink_co.paa",
+			"Survivalists_Mods\characters\shoes\data\sneakers_Skylar_Bio_pink_co.paa"
 		};
     class Protection
     {

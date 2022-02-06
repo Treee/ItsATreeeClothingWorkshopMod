@@ -23,6 +23,7 @@ class CfgVehicles
 	class PlateCarrierPouches;
 	class PlateCarrierHolster;
 	class UKAssVest_ColorBase;
+  class HuntingVest;
 
   // Pouches
   class SRP_Empty_MagPouch_Tan;
@@ -1083,6 +1084,22 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\PressVest58.paa",
 			"Survivalists_Retextures\characters\vests\data\PressVest58.paa",
 			"Survivalists_Retextures\characters\vests\data\PressVest58.paa"
+		};
+	};
+  
+  class SRP_Leather_HuntingVest: HuntingVest
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoMale"
+		};
+		hiddenSelectionsTextures[]=	
+		{
+			"Survivalists_Retextures\characters\vests\data\hunting_vest_Leather_co.paa",
+			"Survivalists_Retextures\characters\vests\data\hunting_vest_Leather_co.paa"
 		};
 	};
 
