@@ -20,7 +20,7 @@ class CfgVehicles
 	class SRP_BerserkSword_Illusive: SRP_BerserkSword
 	{
     scope=2;
-		displayName="Antique Berserk Sword";
+		displayName="The Dragon Slayer";
     hiddenSelections[]=
     {
       "zbytek"
