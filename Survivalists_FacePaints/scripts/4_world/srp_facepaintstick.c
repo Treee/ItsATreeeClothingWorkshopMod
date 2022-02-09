@@ -1,6 +1,6 @@
 class SRP_FacePaintStick: Inventory_Base
 {
-  int m_facepaintType = 0;
+  int camoIndex = 0;
 
 	override void SetActions()
 	{
@@ -8,13 +8,12 @@ class SRP_FacePaintStick: Inventory_Base
 		
 		AddAction(ActionFacePaintStickSwitch);		
     AddAction(ActionPaintFace);
+    AddAction(ActionPaintFaceTarget);
 	}
 	
 	override void OnApply(PlayerBase player)
 	{
-		// Print("on apply");
-    player.SetCamoTexture();
-    player.SetSynchDirty();
-    // Print("After: Before: Face Paint On Apply: player state: " + player.m_facepaintState + " my state: " + m_facepaintType);
+    Print("PaintStick::OnApply() " + camoIndex);
+    player.SetFacePaint(camoIndex);    
 	}
 };

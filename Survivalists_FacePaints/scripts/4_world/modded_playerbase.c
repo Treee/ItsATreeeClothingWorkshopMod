@@ -1,102 +1,47 @@
-modded class PlayerBase extends ManBase
+modded class PlayerBase
 {
-  EffectSound m_AcidSounds;
-  EffectSound m_SleepSounds;
-
-  string selectedCraftingBench = "";
-  EntityAI guiCraftingBench = null;
-
-  SRP_ActionOpenMapCB m_OpenMapCallback;
-
-  ItemBook currentBookInHands;
-
-  int	m_facepaintState;
-  int m_currentCamoIndex;
-  int m_facepaintCountMax;
-
-  bool m_IsUnderWeedEffect = false;
-  bool m_IsUnderTobaccoEffect = false;
-  bool m_IsUnderMethEffect = false;
-  bool m_IsUnderBathEffect = false;
-  bool m_IsUnderAcidSmileEffect = false;
-  bool m_IsUnderAcidSkullEffect = false;
-  bool m_IsUnderAlcoholEffect = false;
-  bool m_IsUnderCocaineEffect = false;
+  private int	m_FacePaintIndex;
 
   override void Init()
-	{
+  {
     super.Init();
 
-    m_facepaintState = 0;
-    m_currentCamoIndex = 0;
-    m_facepaintCountMax = GetPlayerCamoNames().Count() - 1;
-    RegisterNetSyncVariableInt("m_facepaintState", 0, m_facepaintCountMax);
+    m_FacePaintIndex = 0;
+    // Print("max paints: " + m_ModuleLifespan.GetFacePaintCount());
+    RegisterNetSyncVariableInt("m_FacePaintIndex", 0, m_ModuleLifespan.GetFacePaintCount());
   }
-
 
   override void OnVariablesSynchronized()
 	{
-    // Print("face paint sync: mainState: " + m_facepaintState + " index: " + m_currentCamoIndex);
-    if (m_facepaintState != m_currentCamoIndex)
-    {
-      // Print("sync");
-      m_facepaintState = m_currentCamoIndex;
-    }
-		super.OnVariablesSynchronized();
+    super.OnVariablesSynchronized();
+		if ( m_ModuleLifespan )
+		{
+      SRP_FacePaintStick paintStick = SRP_FacePaintStick.Cast(GetItemInHands());
+      if (paintStick)
+      {
+        // Print("OnVariablesSynchronized::->SynchFacePaintVisual()");
+			  m_ModuleLifespan.SynchFacePaintVisual( this, m_FacePaintIndex);
+      }
+		}
 	}
 
-
-  void SetCamoTexture()
+  void SetFacePaint(int index)
   {
-    m_facepaintState = m_currentCamoIndex;
+    m_FacePaintIndex = index;
     SetSynchDirty();
   }
 
-  string GetSelectedCamoName()
+  string GetCurrentCamoIndexName(int index)
   {
-    string selectedCamo = "";
-    if (m_facepaintState > 0){
-      selectedCamo = GetPlayerCamoNames().Get(m_facepaintState);
-      // Print("GetSelectedCamoName selected camo name from list: " + selectedCamo);
+    string value = "";
+    if ( m_ModuleLifespan )
+		{
+      FacePaintStyle nextFacePaint = m_ModuleLifespan.GetFacePaintMaterials(index );
+      if (nextFacePaint)
+      {
+        value = nextFacePaint.GetPaintName();
+      }
     }
-    return selectedCamo;
+    return value;
   }
-
-  string GetCurrentCamoIndexName()
-  {
-    string selectedCamo = "";
-    selectedCamo = GetPlayerCamoNames().Get(m_currentCamoIndex);
-    // Print("GetCurrentCamoIndexName selected camo name from list: " + selectedCamo);
-    return selectedCamo;
-  }
-
-  TStringArray GetPlayerCamoNames()
-  {
-    return {
-      "",
-      "fp_bosnia",
-      "fp_bulgaria1",
-      "fp_bulgaria2",
-      "fp_croatia",
-      "fp_czech1",
-      "fp_czech2",
-      "fp_desert",
-      "fp_digital",
-      "fp_france",
-      "fp_germany",
-      "fp_hungary1",
-      "fp_hungary2",
-      "fp_macedonia",
-      "fp_poland1",
-      "fp_poland2",
-      "fp_romania1",
-      "fp_romania2",
-      "fp_slovenia",
-      "fp_uk",
-      "fp_usa",
-      "fp_winter",
-      "fp_woodland",
-      "fp_yugoslavia",
-    };
-  }
-}
+};
