@@ -34,7 +34,7 @@ class CfgVehicles
   class SRP_Small_Military_Pack_Tan;
   class SRP_Big_Military_Pack_Tan;
   class SRP_Rifle_Bag_Green;
-  
+  class SRP_MessengerBag_Leather;  
 
   class DUB_Monsterv2;
 
@@ -1298,6 +1298,47 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]=
 		{
 			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
+		};
+	};
+
+	class SRP_MessengerBag_Tan: SRP_MessengerBag_Leather
+	{	
+    scope=2;
+		displayName="Linen satchel";
+		descriptionShort="A messenger bag made from linen";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Leather_Satchel_Tan_CO.paa"
+		};
+	};
+	class SRP_MessengerBag_Brown: SRP_MessengerBag_Leather
+	{	
+    scope=2;
+		displayName="Linen satchel";
+		descriptionShort="A messenger bag made from linen";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Leather_Satchel_Brown_CO.paa"
+		};
+	};
+	class SRP_MessengerBag_Pink: SRP_MessengerBag_Leather
+	{	
+    scope=2;
+		displayName="Linen satchel";
+		descriptionShort="A messenger bag made from linen";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Leather_Satchel_Pink_CO.paa"
+		};
+	};
+	class SRP_MessengerBag_Blue: SRP_MessengerBag_Leather
+	{	
+    scope=2;
+		displayName="Linen satchel";
+		descriptionShort="A messenger bag made from linen";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Leather_Satchel_Blue_CO.paa"
 		};
 	};
 };

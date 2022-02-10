@@ -414,4 +414,84 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_MessengerBag_Leather: Clothing
+	{
+		scope=2;
+		displayName="Leather Messenger Bag";
+    descriptionShort="A leather satchel with a strap";
+		model="Survivalists_Mods\characters\backpacks\Leather_Satchel_g.p3d";
+    repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot="Back";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};
+		weight=1000;
+		itemSize[]={5,4};
+		itemsCargoSize[]={8,8};
+		absorbency=0;
+		heatIsolation=0.80;
+		attachments[]=
+		{
+			"Chemlight",
+			"WalkieTalkie",
+			"Compass"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Leather_Satchel_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\Leather_Satchel.rvmat"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\backpacks\Leather_Satchel_m.p3d";
+			female="Survivalists_Mods\characters\backpacks\Leather_Satchel_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\backpacks\data\Leather_Satchel.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\backpacks\data\Leather_Satchel.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\backpacks\data\Leather_Satchel_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\backpacks\data\Leather_Satchel_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\backpacks\data\Leather_Satchel_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 };

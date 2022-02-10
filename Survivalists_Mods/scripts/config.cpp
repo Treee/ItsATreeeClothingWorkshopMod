@@ -14,6 +14,17 @@ class CfgSlots
   //=====================BASE GAME OVERRIDE
 
   //===================== CUSTOM
+  class Slot_Compass
+	{
+		name="Compass";
+		displayName="Compass";
+	};
+	class Slot_Binoculars
+	{
+		name="Binoculars";
+		displayName="Old Binoculars";
+	};
+
   class Slot_Dynamite1
 	{
 		name="Dynamite1";
@@ -1508,6 +1519,25 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
+
+  class ProxyCompass_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]=
+		{
+			"Compass"
+		};
+		model="Survivalists_Mods\proxy\Compass_proxy.p3d";
+	};
+	class ProxyBinoculars_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]=
+		{
+			"Binoculars"
+		};
+		model="Survivalists_Mods\proxy\Binoculars_proxy.p3d";
+	};
   
   class Proxyhatchet: ProxyAttachment
 	{
