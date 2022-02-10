@@ -34,6 +34,7 @@ class CfgVehicles
   class SRP_Shroud_ColorBase;
   class SRP_Comtacs_ColorBase;
   class SRP_SlimHelmetFull;
+  class SRP_Cowboy_Hat_Carl;
 
 	class SRP_PoliceCap: BaseballCap_ColorBase
 	{
@@ -1342,4 +1343,17 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_slimhelmet_kain_co.paa"
 		};
   };
+
+  class SRP_Cowboy_Hat_Carl_Brown: SRP_Cowboy_Hat_Carl
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\Cowboy_Carl_Brown_CO.paa"
+		};
+	};
 };

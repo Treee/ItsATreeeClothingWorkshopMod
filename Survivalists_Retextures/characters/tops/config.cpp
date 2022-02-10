@@ -2586,4 +2586,57 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\woolcoat_leather_co.paa"
 		};
 	};
+
+  class SRP_GorkaJacket_Blue: GorkaEJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Blue.paa",
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Blue.paa",
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Blue.paa"
+		};
+	};
+	class SRP_GorkaJacket_Tan: GorkaEJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Tan.paa",
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Tan.paa",
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Tan.paa"
+		};
+	};
+	class SRP_GorkaJacket_Brown: GorkaEJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Brown.paa",
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Brown.paa",
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Brown.paa"
+		};
+	};
+	class SRP_GorkaJacket_Olive: GorkaEJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Olive.paa",
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Olive.paa",
+			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Olive.paa"
+		};
+	};
+
+  class SRP_DenimJacket_Black: DenimJacket
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\denim_jacket_Black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\denim_jacket_Black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\denim_jacket_Black_co.paa"
+		};
+	};
 };

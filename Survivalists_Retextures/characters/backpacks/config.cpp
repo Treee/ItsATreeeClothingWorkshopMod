@@ -102,6 +102,22 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\srp_smersh_tan_co.paa"
 		};
 	};
+  class SRP_SmershBag_NBC: SmershBag
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_NBC_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_NBC_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_NBC_CO.paa"
+		};
+	};
 	class DryBag_Pink: DryBag_ColorBase
 	{
 		scope=2;

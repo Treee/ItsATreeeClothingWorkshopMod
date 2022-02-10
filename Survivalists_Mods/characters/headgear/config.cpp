@@ -1441,4 +1441,82 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Cowboy_Hat_Carl: Clothing
+	{
+		scope=2;
+		displayName="Cowboy hat";
+		descriptionShort="A ragged cowboy hat.";
+		model="Survivalists_Mods\characters\headgear\SRP_Cowboy_Carl_g.p3d";
+		weight=100;
+		noMask=0;
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		itemSize[]={2,2};
+		varWetMax=0.249;
+		heatIsolation=0.5;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\Cowboy_Carl_CO.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\SRP_Cowboy_Carl.p3d";
+			female="Survivalists_Mods\characters\headgear\SRP_Cowboy_Carl.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Mods\characters\headgear\data\Cowboy_Carl.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\Cowboy_Carl.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\Cowboy_Carl_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\Cowboy_Carl_damage.rvmat"}},
+            {0,	{	"Survivalists_Mods\characters\headgear\data\Cowboy_Carl_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 };

@@ -1130,6 +1130,18 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Tan_Co.paa"
 		};	
 	};
+  class SRP_Tac_Vest_Sheriff: SRP_Tac_Vest_Green
+	{
+    scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Sheriff_CA.paa"
+		};	
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Sheriff.rvmat"
+		};	
+	};
 
 	class SRP_Ratnik_Tan: SRP_Ratnik_Green
 	{

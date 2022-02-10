@@ -435,6 +435,70 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\srp_cargopants_BDU_Snow_co.paa"
 		};
 	};
+  class SRP_CargoPants_Tan: CargoPants_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Tan.paa",
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Tan.paa",
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Tan.paa"
+		};
+	};
+	class SRP_CargoPants_Olive: CargoPants_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Olive.paa",
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Olive.paa",
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Olive.paa"
+		};
+	};
+	class SRP_CargoPants_Brown: CargoPants_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Brown.paa",
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Brown.paa",
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Brown.paa"
+		};
+	};
+	class SRP_CargoPants_Blue: CargoPants_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Blue.paa",
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Blue.paa",
+			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Blue.paa"
+		};
+	};
 	class SRP_PGopTactMTP: TrackSuitPants_ColorBase
 	{
 		scope=2;
