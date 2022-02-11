@@ -119,6 +119,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_adam_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_adam_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_adam_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_adam_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
@@ -143,6 +158,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_adam_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_adam_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -183,6 +203,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_adam_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_adam_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_adam_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_adam\hhl_m_adam_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_adam_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -232,6 +267,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_boris_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_boris_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_boris_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_boris_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
@@ -256,6 +306,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_boris_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_boris_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -296,6 +351,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_boris_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_boris_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_boris_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_boris\hhl_m_boris_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_boris_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -345,6 +415,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_cyril_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_cyril_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_cyril_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_cyril_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
@@ -369,6 +454,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_cyril_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_cyril_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -409,6 +499,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_cyril_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_cyril_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_cyril_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_cyril\hhl_m_cyril_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_cyril_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -458,6 +563,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_denis_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_denis_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_denis_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_denis_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
@@ -482,6 +602,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_denis_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_denis_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -522,6 +647,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_denis_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_denis_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_denis_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_denis_2\hhl_m_denis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_denis_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -571,6 +711,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_elias_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_elias_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_elias_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_elias_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
@@ -595,6 +750,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_elias_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_elias_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -635,6 +795,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_elias_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_elias_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_elias_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_elias\hhl_m_elias_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_elias_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -684,6 +859,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_francis_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_francis_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_francis_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_francis_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
@@ -708,6 +898,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_francis_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_francis_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -748,6 +943,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_francis_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_francis_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_francis_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_francis\hhl_m_francis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_francis_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -797,6 +1007,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_guo_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_guo_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_guo_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_guo_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
@@ -821,6 +1046,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_guo_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_guo_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -861,6 +1091,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_guo_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_guo_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_guo_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_guo\hhl_m_guo_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_guo_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -910,6 +1155,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_hassan_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_hassan_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_hassan_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_hassan_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
@@ -934,6 +1194,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_hassan_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_hassan_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -974,6 +1239,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_hassan_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_hassan_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_hassan_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_hassan\hhl_m_hassan_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_hassan_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1023,6 +1303,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_indar_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_indar_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_indar_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_indar_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
@@ -1047,6 +1342,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_indar_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_indar_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1087,6 +1387,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_indar_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_indar_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_indar_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_indar\hhl_m_indar_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_indar_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1136,6 +1451,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_jose_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_jose_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_jose_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_jose_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
@@ -1160,6 +1490,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_jose_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_jose_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1200,6 +1535,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_jose_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_jose_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_jose_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_jose\hhl_m_jose_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_jose_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1249,6 +1599,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_kaito_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_kaito_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_kaito_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_kaito_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
@@ -1273,6 +1638,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_kaito_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_kaito_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1313,6 +1683,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_kaito_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_kaito_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_kaito_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_kaito\hhl_m_kaito_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_kaito_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1362,6 +1747,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_lewis_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_lewis_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_lewis_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_lewis_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
@@ -1386,6 +1786,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_lewis_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_lewis_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1426,6 +1831,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_lewis_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_lewis_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_lewis_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_lewis\hhl_m_lewis_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_lewis_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1475,6 +1895,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_manua_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_manua_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_manua_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_manua_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
@@ -1499,6 +1934,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_manua_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_manua_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1539,6 +1979,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_manua_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_manua_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_manua_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_manua\hhl_m_manua_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_manua_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1588,6 +2043,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_niki_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_niki_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_niki_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_niki_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
@@ -1612,6 +2082,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_niki_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_niki_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1652,6 +2127,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_niki_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_niki_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_niki_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_niki_2\hhl_m_niki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_niki_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1701,6 +2191,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_oliver_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_oliver_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_oliver_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_oliver_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
@@ -1725,6 +2230,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_oliver_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_oliver_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1765,6 +2275,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_oliver_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_oliver_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_oliver_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_oliver\hhl_m_oliver_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_oliver_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1814,6 +2339,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_peter_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_peter_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_peter_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_peter_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
@@ -1838,6 +2378,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_peter_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_peter_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1878,6 +2423,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_peter_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_peter_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_peter_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_peter\hhl_m_peter_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_peter_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -1927,6 +2487,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_quinn_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_quinn_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_quinn_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_quinn_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
@@ -1951,6 +2526,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_quinn_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_quinn_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -1991,6 +2571,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_quinn_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_quinn_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_quinn_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_quinn\hhl_m_quinn_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_quinn_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2040,6 +2635,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_rolf_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_rolf_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_rolf_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_rolf_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
@@ -2064,6 +2674,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_rolf_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_rolf_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -2104,6 +2719,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_rolf_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_rolf_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_rolf_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_rolf\hhl_m_rolf_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_rolf_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2153,6 +2783,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_seth_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_seth_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_seth_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_seth_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
@@ -2177,6 +2822,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_seth_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_seth_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -2217,6 +2867,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_seth_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_seth_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_seth_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_seth\hhl_m_seth_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_seth_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2271,6 +2936,16 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_taiki_body_shaved.rvmat";
 		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_taiki_body_shaved.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_taiki_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
@@ -2295,6 +2970,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_taiki_body_shaved.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_taiki_body_shaved.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -2335,6 +3015,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_taiki_body_shaved.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_taiki_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_taiki_body_shaved.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_taiki_body_shaved.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2386,6 +3081,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_eva_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_eva_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
@@ -2410,6 +3120,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_eva_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -2450,6 +3165,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_eva_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_eva_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2499,6 +3229,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_frida_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_eva_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
@@ -2523,6 +3268,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_frida_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_eva_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -2563,6 +3313,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_frida_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_eva_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_eva_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2612,6 +3377,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_gabi_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_gabi_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_gabi_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_gabi_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
@@ -2636,6 +3416,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_gabi_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_gabi_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -2676,6 +3461,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_gabi_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_gabi_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_gabi_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_gabi_2\hhl_f_gabi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_gabi_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2725,6 +3525,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_helga_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_helga_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_helga_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_helga_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
@@ -2749,6 +3564,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_helga_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_helga_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -2789,6 +3609,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_helga_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_helga_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_helga_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_helga\hhl_f_helga_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_helga_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2838,6 +3673,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_irena_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_irena_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_irena_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_irena_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
@@ -2862,6 +3712,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_irena_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_irena_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -2902,6 +3757,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_irena_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_irena_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_irena_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_irena_2\hhl_f_irena_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_irena_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -2951,6 +3821,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_judy_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_judy_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_judy_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_judy_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
@@ -2975,6 +3860,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_judy_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_judy_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -3015,6 +3905,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_judy_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_judy_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_judy_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_judy\hhl_f_judy_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_judy_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -3064,6 +3969,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_keiko_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_keiko_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_keiko_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_keiko_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
@@ -3088,6 +4008,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_keiko_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_keiko_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -3128,6 +4053,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_keiko_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_keiko_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_keiko_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_keiko\hhl_f_keiko_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_keiko_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -3177,6 +4117,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_linda_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_linda_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_linda_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_linda_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
@@ -3201,6 +4156,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_linda_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_linda_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -3241,6 +4201,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_linda_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_linda_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_linda_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_linda_2\hhl_f_linda_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_linda_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -3290,6 +4265,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_maria_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_maria_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_maria_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_maria_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
@@ -3314,6 +4304,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_maria_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_maria_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -3354,6 +4349,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_maria_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_maria_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_maria_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_maria_2\hhl_f_maria_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_maria_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -3403,6 +4413,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_naomi_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_naomi_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_naomi_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_naomi_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
@@ -3427,6 +4452,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_naomi_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_naomi_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -3467,6 +4497,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_naomi_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_naomi_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_naomi_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_naomi\hhl_f_naomi_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_naomi_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
@@ -3516,6 +4561,21 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_f_Baty_body.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_Baty_body.rvmat";
+		};
+    class FacePaint_DragonScale
+		{
+			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_Baty_body.rvmat";
+		};
+    class FacePaint_DragonScaleRed
+		{
+			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_Baty_body.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
@@ -3540,6 +4600,11 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_f_Baty_body.rvmat";
+		};
+    class FacePaint_Olive
+		{
+			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_Baty_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -3580,6 +4645,21 @@ class CfgVehicles
 		{
 			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_f_Baty_body.rvmat";
+		};
+    class FacePaint_Woodland
+		{
+			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_Baty_body.rvmat";
+		};
+    class FacePaint_WoodlandGreen
+		{
+			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_Baty_body.rvmat";
+		};
+    class FacePaint_WoodlandRed
+		{
+			mat_normal="dz\characters\heads\data\f_Baty\hhl_f_Baty_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_Baty_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
