@@ -3927,7 +3927,7 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_judy_body.rvmat";
 		};
 	};
-  class SurvivorF_Kieko: SurvivorFemale_Base
+  class SurvivorF_Keiko: SurvivorFemale_Base
 	{
 		class FacePaint_Bosnia
 		{

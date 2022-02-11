@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="Survivalists_FacePaints\heads\fp_germany\fp_germany_mc.paa";
+	texture="Survivalists_FacePaints\heads\fp_germany\fp_germanyfull_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{
