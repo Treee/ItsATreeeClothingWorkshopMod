@@ -13,7 +13,19 @@ class SRP_FacePaintStick: Inventory_Base
 	
 	override void OnApply(PlayerBase player)
 	{
-    Print("PaintStick::OnApply() " + camoIndex);
+    // Print("PaintStick::OnApply() " + camoIndex);
     player.SetFacePaint(camoIndex);    
+	}
+};
+
+
+modded class Rag
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionWashFace);		
+    AddAction(ActionWashFaceTarget);
 	}
 };

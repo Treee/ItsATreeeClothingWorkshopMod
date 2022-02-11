@@ -28,8 +28,8 @@ class ActionPaintFace: ActionContinuousBase
   override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
     if (target.GetObject())
-    return false;
-    
+      return false;
+
     int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
 		EntityAI equipedMask = player.GetInventory().FindPlaceholderForSlot( slot_id );
 
@@ -41,7 +41,7 @@ class ActionPaintFace: ActionContinuousBase
 
   override string GetText()
 	{
-		return "Apply " + GetCamoName();
+		return "Apply Pattern - " + GetCamoName();
 	}
 
   override void OnFinishProgressServer( ActionData action_data )
@@ -72,11 +72,6 @@ class ActionPaintFace: ActionContinuousBase
   }
 };
 
-
-
-
-
-
 class ActionPaintFaceTargetCB : ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
@@ -105,18 +100,23 @@ class ActionPaintFaceTarget: ActionContinuousBase
 
   override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-    int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
-		EntityAI equipedMask = player.GetInventory().FindPlaceholderForSlot( slot_id );
+    PlayerBase man;
+    if (target && Class.CastTo(man, target.GetObject()) )
+    {
+      int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
+      EntityAI equipedMask = man.GetInventory().FindPlaceholderForSlot( slot_id );
 
-    slot_id = InventorySlots.GetSlotIdFromString("Eyewear");	
-		EntityAI equipedGlasses = player.GetInventory().FindPlaceholderForSlot( slot_id );
-    // cannot apply when wearing eyewear or masks
-    return !(equipedMask || equipedGlasses);
+      slot_id = InventorySlots.GetSlotIdFromString("Eyewear");	
+      EntityAI equipedGlasses = man.GetInventory().FindPlaceholderForSlot( slot_id );
+      // cannot apply when wearing eyewear or masks
+      return !(equipedMask || equipedGlasses);
+    }
+    return false;
 	}
 		
 	override string GetText()
 	{
-		return "Apply " + GetCamoName();
+		return "Apply Pattern - " + GetCamoName();
 	}
 
   override void OnFinishProgressServer( ActionData action_data )
@@ -150,16 +150,6 @@ class ActionPaintFaceTarget: ActionContinuousBase
     return selectedCamo;
   }
 };
-
-
-
-
-
-
-
-
-
-
 
 class ActionFacePaintStickSwitch: ActionSingleUseBase
 {

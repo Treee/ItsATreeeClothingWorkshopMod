@@ -1,34 +1,38 @@
 modded class PlayerBase
 {
-  private int	m_FacePaintIndex;
+  int m_FacePaintState;
+	protected int	m_FacePaintStateLocal;
 
   override void Init()
   {
     super.Init();
 
-    m_FacePaintIndex = 0;
-    // Print("max paints: " + m_ModuleLifespan.GetFacePaintCount());
-    RegisterNetSyncVariableInt("m_FacePaintIndex", 0, m_ModuleLifespan.GetFacePaintCount());
+    m_FacePaintState = -1;
+    m_FacePaintStateLocal = -1;
+
+    RegisterNetSyncVariableInt("m_FacePaintState", -1, m_ModuleLifespan.GetFacePaintCount(GetType()));
+    RegisterNetSyncVariableInt("m_FacePaintStateLocal", -1, m_ModuleLifespan.GetFacePaintCount(GetType()));
   }
 
   override void OnVariablesSynchronized()
 	{
     super.OnVariablesSynchronized();
-		if ( m_ModuleLifespan )
-		{
-      SRP_FacePaintStick paintStick = SRP_FacePaintStick.Cast(GetItemInHands());
-      if (paintStick)
-      {
-        // Print("OnVariablesSynchronized::->SynchFacePaintVisual()");
-			  m_ModuleLifespan.SynchFacePaintVisual( this, m_FacePaintIndex);
-      }
-		}
+
+    if (m_FacePaintState > -1 && (IsPlayerLoaded() || IsControlledPlayer()))
+    {
+      UpdateFacePaintState();
+    }
 	}
 
   void SetFacePaint(int index)
   {
-    m_FacePaintIndex = index;
+    m_FacePaintState = index;
     SetSynchDirty();
+  }
+
+  void ClearPaint()
+  {
+    SetFacePaint(-1);
   }
 
   string GetCurrentCamoIndexName(int index)
@@ -36,7 +40,7 @@ modded class PlayerBase
     string value = "";
     if ( m_ModuleLifespan )
 		{
-      FacePaintStyle nextFacePaint = m_ModuleLifespan.GetFacePaintMaterials(index );
+      FacePaintStyle nextFacePaint = m_ModuleLifespan.GetFacePaintMaterials(GetType(), index);
       if (nextFacePaint)
       {
         value = nextFacePaint.GetPaintName();
@@ -44,4 +48,32 @@ modded class PlayerBase
     }
     return value;
   }
+
+  string GetCurrentCamoMaterialPath(int index)
+  {
+    string value = "";
+    if ( m_ModuleLifespan )
+		{
+      FacePaintStyle nextFacePaint = m_ModuleLifespan.GetFacePaintMaterials(GetType(), index);
+      if (nextFacePaint)
+      {
+        value = nextFacePaint.GetMaterial(1);
+      }
+    }
+    return value;
+  }
+
+  void UpdateFacePaintState()
+	{
+		UpdateFacePaintVisual();
+		m_FacePaintStateLocal = m_FacePaintState;
+	}
+
+  void UpdateFacePaintVisual()
+	{
+    string camoMaterial = GetCurrentCamoMaterialPath(m_FacePaintState);
+    // SetFaceTexture("");    
+    SetFaceMaterial(camoMaterial);
+	}
+
 };

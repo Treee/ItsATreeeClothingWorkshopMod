@@ -1,17 +1,16 @@
 class FacePaintStyle
 {
-	string m_Materials[2];
   string m_CamoName = "";
+  string m_NormalMaterial = "";
+  string m_PaintMaterial = "";
 	
-	const int MATERIAL_TYPE_NORMAL = 0;
-	const int MATERIAL_TYPE_PAINT = 1;
   int m_PaintIndex = 0;
 
 	void FacePaintStyle(string camoName, string normal_material, string paint_material, int index )
 	{
     m_CamoName = camoName;
-		m_Materials[MATERIAL_TYPE_NORMAL] = normal_material;
-		m_Materials[MATERIAL_TYPE_PAINT] = paint_material;
+		m_NormalMaterial = normal_material;
+		m_PaintMaterial = paint_material;
     m_PaintIndex = index;
     // Print("Index: " + m_PaintIndex + " CammoName: "+ camoName + " Normal Material: " + normal_material + " Painted: " + paint_material);
 	}
@@ -28,12 +27,28 @@ class FacePaintStyle
 
 	string GetMaterial( int material_type )
 	{
-		return m_Materials[material_type];
+    string value = "";
+    if (material_type == 0)
+    {
+      value = m_NormalMaterial;
+    }
+    else if (material_type == 1)
+    {
+      value = m_PaintMaterial;
+    }
+		return value;
 	}
 
 	void SetMaterial( int material_type, string material )
 	{
-		m_Materials[material_type] = material;
+    if (material_type == 0)
+    {
+      m_NormalMaterial = material;
+    }
+    else if (material_type == 1)
+    {
+      m_PaintMaterial = material;
+    }
 	}
 	
 }
