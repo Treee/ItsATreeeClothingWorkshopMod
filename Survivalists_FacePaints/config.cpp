@@ -2266,6 +2266,11 @@ class CfgVehicles
 			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_taiki_body_shaved.rvmat";
 		};
+    class FacePaint_DigitalBlue
+		{
+			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_taiki_body_shaved.rvmat";
+		};
     class FacePaint_France
 		{
 			mat_normal="dz\characters\heads\data\m_taiki\hhl_m_taiki_body_shaved.rvmat";
