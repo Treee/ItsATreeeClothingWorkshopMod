@@ -347,21 +347,22 @@ class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
   {
     bool isSolved = true;
     ItemBase animalPelt;
-    for(int i=requiredPelts.Count(); i > 0; i--)
+    for(int i=requiredPelts.Count() - 1; i > 0; i--)
     {
       animalPelt = GetItemInSlot("AnimalPelt"+i);
       if (animalPelt)
       {
         isSolved &= requiredPelts.Get(i) == animalPelt.GetType();
+        // Print("AnimalPelt"+i + ": " + requiredPelts.Get(i) + " this pelt: " + animalPelt.GetType() + ": " + isSolved);
       }
     }
     ItemBase tannedLeather = GetItemInSlot("Material_Shelter_Leather");
     isSolved &= (tannedLeather && tannedLeather.GetQuantity() == 8);
-    ItemBase leatherStrips = GetItemInSlot("DUB_Leatherstrip");
-    isSolved &= (leatherStrips && leatherStrips.GetQuantity() == 5);
+    // Print("tanned leather check: " + isSolved);
     ItemBase rope = GetItemInSlot("Rope");
-    isSolved &= (rope);
-    
+    isSolved &= (rope != null);
+    // Print("rope check: " + isSolved);
+
     return isSolved;
   }
 

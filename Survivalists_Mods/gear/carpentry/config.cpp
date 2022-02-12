@@ -45,7 +45,6 @@ class CfgVehicles
       "AnimalPelt9",
       "AnimalPelt10",
       "Material_Shelter_Leather",
-      "DUB_Leatherstrip",
       "Rope",
     };
 	};
@@ -67,7 +66,6 @@ class CfgVehicles
       "AnimalPelt9",
       "AnimalPelt10",
       "Material_Shelter_Leather",
-      "DUB_Leatherstrip",
       "Rope",
     };
 	};

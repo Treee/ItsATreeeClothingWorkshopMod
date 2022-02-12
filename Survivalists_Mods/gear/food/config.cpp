@@ -952,7 +952,7 @@ class CfgVehicles
 			"SmokingA",
 			"SmokingB",
 			"SmokingC",
-			"SmokingD"
+			"SmokingD",
       "AnimalPelt1",
       "AnimalPelt2",
       "AnimalPelt3",

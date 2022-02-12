@@ -31,7 +31,9 @@ modded class ActionConstructor
     actions.Insert(ActionSRPHackSecurityDoor);
 
     actions.Insert(ActionSRPDrawCards);    
-    actions.Insert(ActionSRPSwitchDrawMode);    
+    actions.Insert(ActionSRPSwitchDrawMode); 
+
+    // actions.Insert(ActionFlipPlayingCard);    
 
     // Smoking
     actions.Insert(ActionSmokeSRPSmokableSelf);
