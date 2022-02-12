@@ -25,6 +25,54 @@ class CfgVehicles
 
 
 
+
+  //--------------------------------- TAXIDERMY
+  class SRP_Taxidermy_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Taxidermy Kit - Base Mount";
+		descriptionShort="A kit with the appropriate tools to build the base mount for a properly taxidermied animal.";
+    attachments[]=
+    {
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "AnimalPelt5",
+      "AnimalPelt6",
+      "AnimalPelt7",
+      "AnimalPelt8",
+      "AnimalPelt9",
+      "AnimalPelt10",
+      "Material_Shelter_Leather",
+      "DUB_Leatherstrip",
+      "Rope",
+    };
+	};
+  class SRP_TaxidermyWall_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Taxidermy Kit - Wall Mount";
+		descriptionShort="A kit with the appropriate tools to build the wall mount for a properly taxidermied animal.";
+    attachments[]=
+    {
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "AnimalPelt5",
+      "AnimalPelt6",
+      "AnimalPelt7",
+      "AnimalPelt8",
+      "AnimalPelt9",
+      "AnimalPelt10",
+      "Material_Shelter_Leather",
+      "DUB_Leatherstrip",
+      "Rope",
+    };
+	};
+
+
   //------------------------------- BUILDING FRAMES
   class SRP_BuildingComponentFrame_Kit: SRP_KitBase //new
 	{

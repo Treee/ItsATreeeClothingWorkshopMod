@@ -70,6 +70,42 @@ class CfgVehicles
     canBeSplit=1;
   };
 
+  // windstride override
+  class HumanSkull: Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "AnimalPelt5",
+      "AnimalPelt6",
+      "AnimalPelt7",
+      "AnimalPelt8",
+      "AnimalPelt9",
+      "AnimalPelt10"
+    };
+  };
+
+  // --- taxidermy
+  class Pelt_Base: Inventory_Base
+  {
+    inventorySlot[]=
+    {
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "AnimalPelt5",
+      "AnimalPelt6",
+      "AnimalPelt7",
+      "AnimalPelt8",
+      "AnimalPelt9",
+      "AnimalPelt10",
+    };
+  };
+
   // drug workbench
   class HeadlightH7: Inventory_Base
 	{
@@ -86,7 +122,17 @@ class CfgVehicles
   {
     inventorySlot[]=
 		{
-			"SRP_Bones"
+			"SRP_Bones",
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "AnimalPelt5",
+      "AnimalPelt6",
+      "AnimalPelt7",
+      "AnimalPelt8",
+      "AnimalPelt9",
+      "AnimalPelt10",
 		};
     varQuantityMax=30;
   };
@@ -821,7 +867,7 @@ class CfgVehicles
 				};
 			};
 		};
-  };
+  };  
   class SRP_SkeletonFrame_Skull: SRP_SkeletonFrame
   {
 		scope=2;
@@ -835,7 +881,17 @@ class CfgVehicles
 		attachments[]={};
 		inventorySlot[]=
     {
-      "SRP_SkeletonSkull"
+      "SRP_SkeletonSkull",
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "AnimalPelt5",
+      "AnimalPelt6",
+      "AnimalPelt7",
+      "AnimalPelt8",
+      "AnimalPelt9",
+      "AnimalPelt10"
     };
   };
   class SRP_SkeletonFrame_ArmLeft: SRP_SkeletonFrame

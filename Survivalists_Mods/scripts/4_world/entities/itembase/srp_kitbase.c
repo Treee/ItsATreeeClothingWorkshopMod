@@ -329,5 +329,45 @@ class SRP_Dynamite_Stick_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterKit1_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterKit2_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_LetterSignsKit_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_LetterNumberKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_StreetSign_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_LetterNumberKit_Kit extends SRP_IntermediateCraftingKitBase{};
+
+class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
+{
+	override bool CanReceiveAttachment(EntityAI attachment, int slotId)
+	{
+    if (attachment && attachment.IsInherited(Pelt_Base))
+    {
+      return attachment.GetHealthLevel() == GameConstants.STATE_PRISTINE;
+    }
+    return super.CanReceiveAttachment(attachment, slotId);
+	}
+
+  bool IsTaxidermyPuzzleSolved(TStringArray requiredPelts)
+  {
+    bool isSolved = true;
+    ItemBase animalPelt;
+    for(int i=requiredPelts.Count(); i > 0; i--)
+    {
+      animalPelt = GetItemInSlot("AnimalPelt"+i);
+      if (animalPelt)
+      {
+        isSolved &= requiredPelts.Get(i) == animalPelt.GetType();
+      }
+    }
+    ItemBase tannedLeather = GetItemInSlot("Material_Shelter_Leather");
+    isSolved &= (tannedLeather && tannedLeather.GetQuantity() == 8);
+    ItemBase leatherStrips = GetItemInSlot("DUB_Leatherstrip");
+    isSolved &= (leatherStrips && leatherStrips.GetQuantity() == 5);
+    ItemBase rope = GetItemInSlot("Rope");
+    isSolved &= (rope);
+    
+    return isSolved;
+  }
+
+  ItemBase GetItemInSlot(string slotName)
+  {
+    return ItemBase.Cast(FindAttachmentBySlotName(slotName));
+  }
+};
+class SRP_TaxidermyWall_Kit extends SRP_Taxidermy_Kit{};

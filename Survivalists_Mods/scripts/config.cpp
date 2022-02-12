@@ -13,6 +13,68 @@ class CfgSlots
 {
   //=====================BASE GAME OVERRIDE
 
+  //====================animal pelts
+  class Slot_AnimalPelt1
+	{
+		name="AnimalPelt1";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt2
+	{
+		name="AnimalPelt2";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt3
+	{
+		name="AnimalPelt3";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt4
+	{
+		name="AnimalPelt4";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt5
+	{
+		name="AnimalPelt5";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt6
+	{
+		name="AnimalPelt6";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt7
+	{
+		name="AnimalPelt7";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt8
+	{
+		name="AnimalPelt8";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt9
+	{
+		name="AnimalPelt9";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_AnimalPelt10
+	{
+		name="AnimalPelt10";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+
   //===================== CUSTOM
   class Slot_Compass
 	{
