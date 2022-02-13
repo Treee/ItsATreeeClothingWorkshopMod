@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Narcotics\gear\container\data\testtube_nohq.paa";
+	texture="Survivalists_Narcotics\gear\crafting\data\testtube_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-  texture="#(argb,8,8,3)color(0.5,0.5,0,0.8,MC)";  
+  texture="#(argb,8,8,3)color(1,0,0,0.8,MC)";  
 	uvSource="tex";
 	class uvTransform
 	{

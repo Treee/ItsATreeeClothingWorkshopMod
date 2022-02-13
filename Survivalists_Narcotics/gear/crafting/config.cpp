@@ -16,7 +16,7 @@ class CfgPatches
 
 class CfgVehicles
 {
-  class Container_Base;
+  class crafting_Base;
   class Inventory_Base;
 
   //================================================ DRUG WORKBENCH RECIPE ATTACHEMNTS
@@ -56,7 +56,7 @@ class CfgVehicles
   {
 		displayName="Lab Tube";
 		descriptionShort="A single test tube. Careful not to break the glass.";
-		model="Survivalists_Narcotics\gear\container\testtube.p3d";
+		model="Survivalists_Narcotics\gear\crafting\testtube.p3d";
     color="default";
     itemSize[]={1,3};
     varTemperatureMax=100;
@@ -74,10 +74,10 @@ class CfgVehicles
       "zbytek"
     };
     hiddenSelectionsTextures[]={
-      "Survivalists_Narcotics\gear\container\data\testtube_ca.paa"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_ca.paa"
     };
 		hiddenSelectionsMaterials[]={
-      "Survivalists_Narcotics\gear\container\data\testtube.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube.rvmat"
     };
     class DamageSystem
 		{
@@ -126,7 +126,7 @@ class CfgVehicles
       "zbytek"
     };
     hiddenSelectionsMaterials[]={
-      "Survivalists_Narcotics\gear\container\data\testtube_blue.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_blue.rvmat"
     };
   };
   class SRP_LabTube_Red: SRP_LabTube_Colorbase
@@ -139,7 +139,7 @@ class CfgVehicles
       "zbytek"
     };
     hiddenSelectionsMaterials[]={
-      "Survivalists_Narcotics\gear\container\data\testtube_red.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
     };
   };
   class SRP_LabTube_Green: SRP_LabTube_Colorbase
@@ -152,7 +152,7 @@ class CfgVehicles
       "zbytek"
     };
     hiddenSelectionsMaterials[]={
-      "Survivalists_Narcotics\gear\container\data\testtube_green.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_green.rvmat"
     };
   };
   class SRP_LabTube_Yellow: SRP_LabTube_Colorbase
@@ -165,7 +165,7 @@ class CfgVehicles
       "zbytek"
     };
     hiddenSelectionsMaterials[]={
-      "Survivalists_Narcotics\gear\container\data\testtube_yellow.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_yellow.rvmat"
     };
   };
 
@@ -187,7 +187,7 @@ class CfgVehicles
     };
     hiddenSelectionsMaterials[]=
     {
-      "Survivalists_Narcotics\gear\container\data\testtube_red.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
     };
   };
   class SRP_LabTube_MutantLiquidDisinfected: SRP_LabTube_Colorbase
@@ -205,7 +205,7 @@ class CfgVehicles
       "zbytek"
     };
     hiddenSelectionsMaterials[]={
-      "Survivalists_Narcotics\gear\container\data\testtube_red.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
     };
   };
   class SRP_LabTube_MutantLiquidAntibiotic: SRP_LabTube_Colorbase
@@ -223,7 +223,7 @@ class CfgVehicles
       "zbytek"
     };
     hiddenSelectionsMaterials[]={
-      "Survivalists_Narcotics\gear\container\data\testtube_red.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
     };
   };
   class SRP_LabTube_MutantLiquidSterilized: SRP_LabTube_Colorbase
@@ -243,7 +243,7 @@ class CfgVehicles
     };
     hiddenSelectionsMaterials[]=
     {
-      "Survivalists_Narcotics\gear\container\data\testtube_red.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
     };
   };
   class SRP_LabTube_MutantLiquidSterilizedIrradiated: SRP_LabTube_Colorbase
@@ -263,7 +263,7 @@ class CfgVehicles
     };
     hiddenSelectionsMaterials[]=
     {
-      "Survivalists_Narcotics\gear\container\data\testtube_red.rvmat"
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
     };
   };
 

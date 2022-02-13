@@ -15,8 +15,12 @@ class CfgPatches
 };
 class CfgVehicles
 {
+  class Edible_Base;
+  class Inventory_Base;
+  class DryBag_ColorBase;
+
   // ============================================= BASE EDIBLE DRUGS
-  class SRP_ConsumableDrug_Colorbase : Edible_Base
+  class SRP_ConsumableDrug_Colorbase: Edible_Base
   {
 		displayName="SRP_ConsumableDrug_Colorbase";
 		descriptionShort="Oral Consumable Drugs";
@@ -147,7 +151,7 @@ class CfgVehicles
 			male="Survivalists_Narcotics\gear\food\cigar_m.p3d";
 			female="Survivalists_Narcotics\gear\food\cigar_m.p3d";
 		};
-  }
+  };
   // ================== WEED
   class SRP_Smokable_ZWeed: SRP_Smokable_ColorBase
   {
@@ -195,7 +199,7 @@ class CfgVehicles
 			male="Survivalists_Narcotics\gear\food\cigar_m.p3d";
 			female="Survivalists_Narcotics\gear\food\cigar_m.p3d";
 		};
-  }
+  };
 
   //========================= COCAINE
   class SRP_ConsumableDrug_Cocaine: SRP_ConsumableDrug_Colorbase
@@ -243,7 +247,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_DrugBrick_Cocaine : Inventory_Base 
+  class SRP_DrugBrick_Cocaine: Inventory_Base 
   {
     scope=2;
     displayName="Brick of Cocaine";
@@ -265,7 +269,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_DrugBrick_CocaineTainted : SRP_DrugBrick_Cocaine 
+  class SRP_DrugBrick_CocaineTainted: SRP_DrugBrick_Cocaine 
   {
     scope=2;
     displayName="Brick of Cocaine";
