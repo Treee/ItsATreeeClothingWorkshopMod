@@ -158,9 +158,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat",
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat",
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat"
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat"
 		};
 	};
 	class SRP_ATF_PoliceVest: PoliceVest
@@ -218,9 +218,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat",
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat",
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat"
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat"
 		};
 	};
 	class SRP_CIA_PoliceVest: PoliceVest
@@ -278,9 +278,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat",
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat",
-			"Survivalists_Retextures\characters\vests\data\pressvest.rvmat"
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat"
 		};
 	};
 	class SRP_FBI_PoliceVest: PoliceVest

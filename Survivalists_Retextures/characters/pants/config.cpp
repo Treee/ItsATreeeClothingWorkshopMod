@@ -735,36 +735,54 @@ class CfgVehicles
 	{
 		scope=2;
 		visibilityModifier=0.98000002;
+    hiddenSelections[]=
+    {
+      "camoGround",
+			"camoMale",
+			"camoFemale",
+      "personality"
+    };
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\pants\data\shortjeans_black_co.paa",
 			"Survivalists_Retextures\characters\pants\data\shortjeans_black_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_black_co.paa",
-			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+			"Survivalists_Retextures\characters\pants\data\shortjeans_black_co.paa"
 		};
 	};
   class ShortJeans_Grape: ShortJeans_ColorBase
 	{
 		scope=2;
 		visibilityModifier=0.98000002;
+    hiddenSelections[]=
+    {
+      "camoGround",
+			"camoMale",
+			"camoFemale",
+      "personality"
+    };
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\pants\data\shortjeans_grape_co.paa",
 			"Survivalists_Retextures\characters\pants\data\shortjeans_grape_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_grape_co.paa",
-			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+			"Survivalists_Retextures\characters\pants\data\shortjeans_grape_co.paa"
 		};
 	};
   class ShortJeans_Snow: ShortJeans_ColorBase
 	{
 		scope=2;
 		visibilityModifier=0.98000002;
+    hiddenSelections[]=
+    {
+      "camoGround",
+			"camoMale",
+			"camoFemale",
+      "personality"
+    };
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa",
 			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa",
-			"dz\characters\heads\data\hhl_m_white01_002_medium_co.paa"
+			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa"
 		};
 	};
 

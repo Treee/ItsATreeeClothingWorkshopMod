@@ -50,10 +50,13 @@ class CfgVehicles
 	{
 		scope=2;
 		visibilityModifier=0.89999998;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_black_co.paa",
-			"Windstrideclothing\Models\Winter_Parka\data\winterparka_fur_ca.paa"
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_black_co.paa"
 		};
 	};
 	class SRP_Ragged_Eyepatchbblack: Ragged_Eyepatch

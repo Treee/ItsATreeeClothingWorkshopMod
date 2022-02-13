@@ -1223,10 +1223,6 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
 		};
-		hiddenSelectionsMaterials[]=
-		{
-			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
-		};
 	};
   class DUB_Monsterv2_Coffee: DUB_Monsterv2
 	{
@@ -1240,10 +1236,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Coffee_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
 		};
 	};
   class DUB_Monsterv2_Fanta: DUB_Monsterv2
@@ -1259,10 +1251,6 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Fanta_co.paa"
 		};
-		hiddenSelectionsMaterials[]=
-		{
-			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
-		};
 	};
   class DUB_Monsterv2_Skylar: DUB_Monsterv2
 	{
@@ -1277,10 +1265,6 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Skylar_co.paa"
 		};
-		hiddenSelectionsMaterials[]=
-		{
-			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
-		};
 	};
   class DUB_Monsterv2_Teal: DUB_Monsterv2
 	{
@@ -1294,10 +1278,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Teal_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"Dressupbox\etc\monsterv2\data\monsterv2yellow.rvmat"
 		};
 	};
 
