@@ -3231,18 +3231,18 @@ class CfgVehicles
 		};
     class FacePaint_DigitalBlue
 		{
-			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
-			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_eva_body.rvmat";
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_f_frida_body.rvmat";
 		};
     class FacePaint_DragonScale
 		{
-			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
-			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_eva_body.rvmat";
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_f_frida_body.rvmat";
 		};
     class FacePaint_DragonScaleRed
 		{
-			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
-			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_eva_body.rvmat";
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_f_frida_body.rvmat";
 		};
     class FacePaint_France
 		{
@@ -3271,8 +3271,8 @@ class CfgVehicles
 		};
     class FacePaint_Olive
 		{
-			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
-			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_eva_body.rvmat";
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_f_frida_body.rvmat";
 		};
     class FacePaint_Poland1
 		{
@@ -3316,18 +3316,18 @@ class CfgVehicles
 		};
     class FacePaint_Woodland
 		{
-			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
-			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_eva_body.rvmat";
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_f_frida_body.rvmat";
 		};
     class FacePaint_WoodlandGreen
 		{
-			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
-			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_eva_body.rvmat";
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_f_frida_body.rvmat";
 		};
     class FacePaint_WoodlandRed
 		{
-			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_eva_body.rvmat";
-			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_eva_body.rvmat";
+			mat_normal="dz\characters\heads\data\f_frida_2\hhl_f_frida_body.rvmat";
+			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_f_frida_body.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{
