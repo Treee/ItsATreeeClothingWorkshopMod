@@ -12,7 +12,7 @@ class MethEffectSymptom extends SymptomBase
 	{
 		m_SymptomType = SymptomTypes.SECONDARY;
 		m_Priority = 50;
-		m_ID = SRP_SymptomIDs.SYMPTOM_METH;
+		m_ID = SRP_DrugSymptomIDs.SYMPTOM_METH;
 		m_DestroyOnAnimFinish = true;
 		m_IsPersistent = true;
 		m_SyncToClient = true;

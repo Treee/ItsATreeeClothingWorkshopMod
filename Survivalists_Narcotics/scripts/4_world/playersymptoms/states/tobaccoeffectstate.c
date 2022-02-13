@@ -9,7 +9,7 @@ class TobaccoEffectSymptom extends SymptomBase
 	{
 		m_SymptomType = SymptomTypes.SECONDARY;
 		m_Priority = 50;
-		m_ID = SRP_SymptomIDs.SYMPTOM_TOBACCO;
+		m_ID = SRP_DrugSymptomIDs.SYMPTOM_TOBACCO;
 		m_DestroyOnAnimFinish = true;
 		m_IsPersistent = true;
 		m_SyncToClient = true;

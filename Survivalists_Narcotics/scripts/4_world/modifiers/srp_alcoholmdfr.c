@@ -6,7 +6,7 @@ class SRP_AlcoholMdfr: ModifierBase
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
-		m_ID 					= SRP_eModifiers.MDF_ALCOHOL;
+		m_ID 					= SRP_eDrugModifiers.MDF_ALCOHOL;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
     DisableActivateCheck();
@@ -29,22 +29,22 @@ class SRP_AlcoholMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();    
-    if (config)
-    {
-      LIFETIME = config.g_SRPAlcoholModifierLifetime;
+    // SRPConfig config = GetDayZGame().GetSRPConfigGlobal();    
+    // if (config)
+    // {
+    //   LIFETIME = config.g_SRPAlcoholModifierLifetime;
+    // }
+    if (player.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_ALCOHOL)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ALCOHOL);
     }
-    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ALCOHOL)) {
-      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
-    }
-    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ALCOHOL);
     player.GetStaminaHandler().SetDepletionMultiplier(0.8);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
-    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ALCOHOL);
     player.GetStaminaHandler().SetDepletionMultiplier(1);
 	}
 	

@@ -6,7 +6,7 @@ class SRP_BathSaltsMdfr: ModifierBase
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
-		m_ID 					= SRP_eModifiers.MDF_BATHSALTS;
+		m_ID 					= SRP_eDrugModifiers.MDF_BATHSALTS;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
     DisableActivateCheck();
@@ -29,24 +29,24 @@ class SRP_BathSaltsMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    if (config)
-    {
-      LIFETIME = config.g_SRPBathSaltsModifierLifetime;
-    }
+    // SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
+    // if (config)
+    // {
+    //   LIFETIME = config.g_SRPBathSaltsModifierLifetime;
+    // }
 
-    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BATHSALTS)) {
-      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
+    if (player.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_BATHSALTS)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_BATHSALTS);
     }
     player.GetStaminaHandler().SetDepletionMultiplier(0.5);
-    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_BATHSALTS);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not on bath salts");
     player.GetStaminaHandler().SetDepletionMultiplier(1);
-    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_BATHSALTS);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)

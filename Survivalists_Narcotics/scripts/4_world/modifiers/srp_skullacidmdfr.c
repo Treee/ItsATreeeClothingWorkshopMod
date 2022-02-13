@@ -6,7 +6,7 @@ class SRP_SkullAcidMdfr: ModifierBase
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
-		m_ID 					= SRP_eModifiers.MDF_ACIDSKULL;
+		m_ID 					= SRP_eDrugModifiers.MDF_ACIDSKULL;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
     DisableActivateCheck();
@@ -30,21 +30,21 @@ class SRP_SkullAcidMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on skull acid");
-    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    if (config)
-    {
-      LIFETIME = config.g_SRPSkullAcidModifierLifetime;
+    // SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
+    // if (config)
+    // {
+    //   LIFETIME = config.g_SRPSkullAcidModifierLifetime;
+    // }
+    if (player.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_ACIDSKULL)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ACIDSKULL);
     }
-    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSKULL)) {
-      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
-    }
-    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ACIDSKULL);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not on skull acid");
-    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ACIDSKULL);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)

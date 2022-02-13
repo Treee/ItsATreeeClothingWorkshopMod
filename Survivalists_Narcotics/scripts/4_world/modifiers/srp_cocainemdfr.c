@@ -6,7 +6,7 @@ class SRP_CocaineMdfr: ModifierBase
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
-		m_ID 					= SRP_eModifiers.MDF_COCAINE;
+		m_ID 					= SRP_eDrugModifiers.MDF_COCAINE;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
     DisableActivateCheck();
@@ -30,21 +30,21 @@ class SRP_CocaineMdfr: ModifierBase
 	override void OnActivate(PlayerBase player)
 	{
     // Print("Player is on skull acid");
-    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
+    // SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
     // if (config)
     // {
     //   LIFETIME = config.g_SRPSkullAcidModifierLifetime;
     // }
-    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_COCAINE)) {
-      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_COCAINE);
+    if (player.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_COCAINE)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_COCAINE);
     }
-    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_COCAINE);
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_COCAINE);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not on skull acid");
-    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_COCAINE);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_COCAINE);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)

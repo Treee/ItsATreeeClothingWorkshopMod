@@ -15,11 +15,11 @@ class SRP_MetalBucket extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
         {
-          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
         }
-        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
       }
     }
   }
@@ -31,9 +31,9 @@ class SRP_MetalBucket extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
         {
-          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
         }
       }
     }
@@ -83,11 +83,11 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
         {
-          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
         }
-        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
       }
     }
   }
@@ -99,9 +99,9 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
         {
-          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
         }
       }
     }
@@ -197,11 +197,11 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
         {
-          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
         }
-        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
       }
     }
   }
@@ -213,9 +213,9 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
         {
-          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
         }
       }
     }
@@ -258,11 +258,11 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
         {
-          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
         }
-        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BURNING );
+        player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
       }
     }
   }
@@ -274,9 +274,9 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
     {
       if (GetTemperature() > 80)
       {
-        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BURNING ) )//effectively resets the timer
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
         {
-          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BURNING, false );
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
         }
       }
     }

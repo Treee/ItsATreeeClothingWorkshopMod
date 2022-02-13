@@ -12,9 +12,6 @@ modded class ActionConstructor
     actions.Insert(ActionTeleportToEvent);
     actions.Insert(ActionTeleportAwayFromEvent);
 
-    actions.Insert(ActionTestDrugsTarget);
-    actions.Insert(ActionTestDrugsSelf);
-
     actions.Insert(ActionReadBook);
 
     actions.Insert(ActionPutGogglesOnHead);
@@ -35,10 +32,5 @@ modded class ActionConstructor
 
     // actions.Insert(ActionFlipPlayingCard);    
 
-    // Smoking
-    actions.Insert(ActionSmokeSRPSmokableSelf);
-    actions.Insert(ActionForceSmokeSRPSmokable);
-    actions.Insert(ActionLightSmokableInHands);
-    actions.Insert(ActionExtinguishSmokeSRPSmokableSelf);
 	}
 };

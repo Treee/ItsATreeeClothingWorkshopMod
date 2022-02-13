@@ -6,7 +6,7 @@ class SRP_MethMdfr: ModifierBase
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
-		m_ID 					= SRP_eModifiers.MDF_METH;
+		m_ID 					= SRP_eDrugModifiers.MDF_METH;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
     DisableActivateCheck();
@@ -29,22 +29,22 @@ class SRP_MethMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    if (config)
-    {
-      LIFETIME = config.g_SRPMethModifierLifetime;
+    // SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
+    // if (config)
+    // {
+    //   LIFETIME = config.g_SRPMethModifierLifetime;
+    // }
+    if (player.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_METH)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_METH);
     }
-    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_METH)) {
-      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
-    }
-    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_METH);
     player.GetStaminaHandler().SetDepletionMultiplier(0.5);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     player.GetStaminaHandler().SetDepletionMultiplier(1);
-    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_METH);
 	}
 	
 	override bool DeactivateCondition(PlayerBase player)

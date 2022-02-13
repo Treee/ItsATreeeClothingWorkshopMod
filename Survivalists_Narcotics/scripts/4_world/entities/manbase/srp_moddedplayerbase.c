@@ -48,18 +48,18 @@ modded class PlayerBase
 
   void DisableAllMyModifiers()
   {
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_TEST );
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_STONED );
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_TOBACCO );
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ACIDSMILE );
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ACIDSKULL );
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_METH );
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_COCAINE );
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ALCOHOL );
-    GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BATHSALTS );    
-    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_MUSHROOMS );
-    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_PCP );
-    // GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_HEROINE );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_TEST );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_STONED );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_TOBACCO );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_ACIDSMILE );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_ACIDSKULL );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_METH );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_COCAINE );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_ALCOHOL );
+    GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_BATHSALTS );    
+    // GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_MUSHROOMS );
+    // GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_PCP );
+    // GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_HEROINE );
   }
 
   bool IsUnderTheInfluence()
@@ -70,17 +70,17 @@ modded class PlayerBase
 
   void RemoveAllSymptoms()
   {
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_WEED);
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TOBACCO);
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSMILE);
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ACIDSKULL);
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_COCAINE);
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_METH);
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_BATHSALTS);
-    GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_ALCOHOL);
-    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_HEROINE);
-    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_PCP);
-    // GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_MUSHROOMS);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_TEST);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_WEED);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_TOBACCO);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ACIDSMILE);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ACIDSKULL);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_COCAINE);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_METH);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_BATHSALTS);
+    GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_ALCOHOL);
+    // GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_HEROINE);
+    // GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_PCP);
+    // GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_MUSHROOMS);
   }
 }

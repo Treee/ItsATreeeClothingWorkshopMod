@@ -22,11 +22,11 @@ class SRP_ConsumableDrug_SmileyAcid extends SRP_ConsumableDrug_Colorbase {
 
   override void OnConsume(float amount, PlayerBase consumer)
 	{
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSMILE ) )
+		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_ACIDSMILE ) )
 		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ACIDSMILE );
+			consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_ACIDSMILE );
 		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_ACIDSMILE );
+		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_ACIDSMILE );
 	}	
 };
 class SRP_ConsumableDrug_SmileyAcidTainted extends SRP_ConsumableDrug_SmileyAcid {};
@@ -34,11 +34,11 @@ class SRP_ConsumableDrug_SmileyAcidTainted extends SRP_ConsumableDrug_SmileyAcid
 class SRP_ConsumableDrug_SkullAcid extends SRP_ConsumableDrug_Colorbase {
   override void OnConsume(float amount, PlayerBase consumer)
 	{				
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_ACIDSKULL ) )
+		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_ACIDSKULL ) )
 		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_ACIDSKULL );
+			consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_ACIDSKULL );
 		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_ACIDSKULL );
+		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_ACIDSKULL );
 	}	
 };
 class SRP_ConsumableDrug_SkullAcidTainted extends SRP_ConsumableDrug_SkullAcid {};
@@ -47,11 +47,11 @@ class SRP_ConsumableDrug_SkullAcidTainted extends SRP_ConsumableDrug_SkullAcid {
 class SRP_ConsumableDrug_MethSmall extends SRP_ConsumableDrug_Colorbase {
   override void OnConsume(float amount, PlayerBase consumer)
 	{				
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_METH ) )
+		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_METH ) )
 		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_METH );
+			consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_METH );
 		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_METH );
+		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_METH );
 	}	
 };
 class SRP_ConsumableDrug_MethSmallTainted extends SRP_ConsumableDrug_MethSmall {};
@@ -62,11 +62,11 @@ class SRP_ConsumableDrug_MethLarge extends SRP_ConsumableDrug_MethSmall {};
 class SRP_ConsumableDrug_BathSalts extends SRP_ConsumableDrug_Colorbase {
   override void OnConsume(float amount, PlayerBase consumer)
 	{				
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_BATHSALTS ) )
+		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_BATHSALTS ) )
 		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_BATHSALTS );
+			consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_BATHSALTS );
 		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_BATHSALTS );
+		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_BATHSALTS );
 	}	
 };
 class SRP_ConsumableDrug_BathSaltsTainted extends SRP_ConsumableDrug_BathSalts {};
@@ -75,11 +75,11 @@ class SRP_ConsumableDrug_BathSaltsTainted extends SRP_ConsumableDrug_BathSalts {
 class SRP_ConsumableDrug_Cocaine extends SRP_ConsumableDrug_Colorbase {
   override void OnConsume(float amount, PlayerBase consumer)
 	{				
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_COCAINE ) )
+		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_COCAINE ) )
 		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_COCAINE );
+			consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_COCAINE );
 		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_COCAINE );
+		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_COCAINE );
 	}	
 };
 class SRP_ConsumableDrug_CocaineTainted extends SRP_ConsumableDrug_Cocaine {};
@@ -87,10 +87,10 @@ class SRP_ConsumableDrug_CocaineTainted extends SRP_ConsumableDrug_Cocaine {};
 class SRP_ConsumableDrug_CocainePaste extends SRP_ConsumableDrug_Colorbase {
   override void OnConsume(float amount, PlayerBase consumer)
 	{	
-		if( consumer.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_COCAINE ) )
+		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_COCAINE ) )
 		{
-			consumer.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_COCAINE );
+			consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_COCAINE );
 		}
-		consumer.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_COCAINE );
+		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_COCAINE );
 	}	
 };

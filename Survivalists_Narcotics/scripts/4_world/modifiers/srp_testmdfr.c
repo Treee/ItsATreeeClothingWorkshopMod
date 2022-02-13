@@ -6,7 +6,7 @@ class SRP_TestMdfr: ModifierBase
 	{
 		m_TrackActivatedTime = true;
 		m_IsPersistent = true;
-		m_ID 					= SRP_eModifiers.MDF_TEST;
+		m_ID 					= SRP_eDrugModifiers.MDF_TEST;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
     DisableActivateCheck();
@@ -29,16 +29,16 @@ class SRP_TestMdfr: ModifierBase
 	
 	override void OnActivate(PlayerBase player)
 	{
-    if (player.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_TEST)) {
-      player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
+    if (player.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_TEST)) {
+      player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_TEST);
     }
-    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
+    player.GetSymptomManager().QueueUpSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_TEST);
 	}
 	
 	override void OnDeactivate(PlayerBase player)
 	{
     // Print("Player is not tobacco buzzed");
-    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_TEST);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_DrugSymptomIDs.SYMPTOM_TEST);
   }
 	
 	override bool DeactivateCondition(PlayerBase player)

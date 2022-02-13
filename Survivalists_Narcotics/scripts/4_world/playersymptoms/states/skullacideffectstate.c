@@ -11,7 +11,7 @@ class SkullAcidEffectSymptom extends SymptomBase
 	{
 		m_SymptomType = SymptomTypes.SECONDARY;
 		m_Priority = 50;
-		m_ID = SRP_SymptomIDs.SYMPTOM_ACIDSKULL;
+		m_ID = SRP_DrugSymptomIDs.SYMPTOM_ACIDSKULL;
 		m_DestroyOnAnimFinish = true;
 		m_IsPersistent = true;
 		m_SyncToClient = true;

@@ -4,7 +4,7 @@ class SRP_BurningMdfr: ModifierBase
 	{
 		m_TrackActivatedTime = false;
 		m_IsPersistent = false;
-		m_ID 					= SRP_eModifiers.MDF_BURNING;
+		m_ID 					= SRP_eModifiers.MDF_SRPBURNING;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_ACTIVE;		
 		DisableActivateCheck();
