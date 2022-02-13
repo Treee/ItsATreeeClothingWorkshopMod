@@ -85,15 +85,6 @@ class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
 		AddAction(ActionInteractWithGUICraftingWorkbench);
 	}
 };
-modded class SRP_DrugWorkbench
-{
-  override void SetActions()
-	{
-		super.SetActions();
-		// AddAction(ActionInteractWithGUICraftingWorkbench);
-	}
-};
-
 
 class SRP_Furniture_SmallLogPile extends SRP_DeployableContainer_Base
 {

@@ -28,7 +28,7 @@ class ActionInteractWithGUICraftingWorkbench : ActionInteractBase
     if (GetGame().IsClient() || !GetGame().IsMultiplayer())
 		{            
 			string objectType = target.GetObject().GetType();
-			if( (objectType == "SRP_AdvancedWorkbench" || objectType == "SRP_SewingTable" || objectType == "SRP_DrugWorkbench"))
+			if( (objectType == "SRP_AdvancedWorkbench" || objectType == "SRP_SewingTable"))
 			{
         // Print("after check. objecttype " + objectType);
 				return true;

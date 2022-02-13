@@ -143,10 +143,6 @@ class WorkbenchGUICraftingHud extends UIScriptedMenu
     {
       return config.advancedWorkbench;
     }
-    else if (workbenchType == "SRP_DrugWorkbench")
-    {
-      return config.drugWorkbench;
-    }
     return null;
   }
 
