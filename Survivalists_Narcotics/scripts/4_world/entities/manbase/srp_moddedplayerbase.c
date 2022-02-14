@@ -1,7 +1,6 @@
 modded class PlayerBase
 {
   EffectSound m_AcidSounds;
-  EffectSound m_SleepSounds;
 
   bool m_IsUnderWeedEffect = false;
   bool m_IsUnderTobaccoEffect = false;

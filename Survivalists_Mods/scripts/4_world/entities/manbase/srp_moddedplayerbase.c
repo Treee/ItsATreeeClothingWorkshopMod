@@ -1,5 +1,7 @@
 modded class PlayerBase extends ManBase
 {
+  EffectSound m_SleepSounds;
+  
   string selectedCraftingBench = "";
   EntityAI guiCraftingBench = null;
 
