@@ -1,7 +1,5 @@
 class SaltsEffectSymptom extends SymptomBase
-{
-  PPERequester_SRPDrugEffect m_RequesterDrugEffect;
-
+{  
   float foodBuildUp = 0;
   float waterBuildUp = 0;
 
@@ -17,10 +15,6 @@ class SaltsEffectSymptom extends SymptomBase
 		m_DestroyOnAnimFinish = true;
 		m_IsPersistent = true;
 		m_SyncToClient = true;
-    if ( !GetGame().IsDedicatedServer() )
-		{
-			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
-		}
 	}
 	
 	//!gets called every frame
@@ -39,10 +33,7 @@ class SaltsEffectSymptom extends SymptomBase
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
     // Print("Salt effect active");
-    player.m_IsUnderBathEffect = true;
-    m_RequesterDrugEffect.SetGlowSaturation(deltatime, 1, "salt");
-    m_RequesterDrugEffect.SetRadialBlur(deltatime, deltatime, 0.3, 0.5, 0.05, "salt");      
-    m_RequesterDrugEffect.SetRadialBlurOffset(deltatime, deltatime, 0.05, 0.05, "salt");      
+    player.m_IsUnderBathEffect = true;            
 
     float m_randomChance = Math.RandomFloatInclusive(0,1);
     if (m_randomChance < 0.05 && scarySoundBuildUp >= 35) 
@@ -82,12 +73,6 @@ class SaltsEffectSymptom extends SymptomBase
 	override void OnGetDeactivatedClient(PlayerBase player)
 	{
     player.m_IsUnderBathEffect = false;
-    // Print("client deactivate: " + player.IsUnderTheInfluence());
-    if (!player.IsUnderTheInfluence())
-    {
-      // Print("stop requester: " + player.IsUnderTheInfluence());
-      m_RequesterDrugEffect.Stop();
-    }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 };

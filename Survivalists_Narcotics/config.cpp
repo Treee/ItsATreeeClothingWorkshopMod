@@ -6,14 +6,9 @@ class CfgMods
 		author = "ItsATreee";
 		name = "Survivalists_Narcotics";
 		dir = "Survivalists_Narcotics";
-		dependencies[] = {"Game", "World"};
+		dependencies[] = {"World"};
 		class defs
 		{
-      class gameScriptModule
-			{
-				value = "";
-        files[] = {"Survivalists_Narcotics/scripts/3_game"};			
-      };
 			class worldScriptModule
 			{
 				value = "";
@@ -35,8 +30,4 @@ class CfgPatches
       "DZ_Scripts"    
     };
   };
-};
-class CfgVehicles
-{
-
 };

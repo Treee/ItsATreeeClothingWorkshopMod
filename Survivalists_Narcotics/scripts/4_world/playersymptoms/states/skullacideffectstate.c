@@ -1,7 +1,5 @@
 class SkullAcidEffectSymptom extends SymptomBase
-{
-  PPERequester_SRPDrugEffect m_RequesterDrugEffect;
-
+{  
   float scarySoundBuildUp = 0;
   float happysoundBuildUp = 0;
   float randomSymptomBuildUp = 0;
@@ -15,10 +13,6 @@ class SkullAcidEffectSymptom extends SymptomBase
 		m_DestroyOnAnimFinish = true;
 		m_IsPersistent = true;
 		m_SyncToClient = true;
-    if ( !GetGame().IsDedicatedServer() )
-		{
-			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
-		}
 	}
 	
 	//!gets called every frame
@@ -61,11 +55,7 @@ class SkullAcidEffectSymptom extends SymptomBase
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
     // Print("skull acid effect active");
-    player.m_IsUnderAcidSkullEffect = true;
-    m_RequesterDrugEffect.SetGlowSaturation(deltatime, 0.01, "lsdS");
-    m_RequesterDrugEffect.SetRadialBlur(deltatime, deltatime, 0.5, 0.5, 0.05, "lsdS");      
-    m_RequesterDrugEffect.SetRadialBlurOffset(deltatime, deltatime, 0.03, 0.05, "lsdS");      
-    m_RequesterDrugEffect.SetCromaticAberration(deltatime, deltatime, 1.2, 0.9, "lsdS");     
+    player.m_IsUnderAcidSkullEffect = true;                
 
     float m_randomChance = Math.RandomFloatInclusive(0,1);
     if (m_randomChance < 0.05 && scarySoundBuildUp >= 35) 
@@ -103,12 +93,6 @@ class SkullAcidEffectSymptom extends SymptomBase
 	override void OnGetDeactivatedClient(PlayerBase player)
 	{
     player.m_IsUnderAcidSkullEffect = false;
-    // Print("client deactivate: " + player.IsUnderTheInfluence());
-    if (!player.IsUnderTheInfluence())
-    {
-      // Print("stop requester: " + player.IsUnderTheInfluence());
-      m_RequesterDrugEffect.Stop();
-    }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 };

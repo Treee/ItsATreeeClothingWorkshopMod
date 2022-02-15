@@ -1,7 +1,5 @@
 class MethEffectSymptom extends SymptomBase
-{
-  PPERequester_SRPDrugEffect m_RequesterDrugEffect;
-
+{  
   float foodBuildUp = 0;
 
   float scarySoundBuildUp = 0;
@@ -16,10 +14,6 @@ class MethEffectSymptom extends SymptomBase
 		m_DestroyOnAnimFinish = true;
 		m_IsPersistent = true;
 		m_SyncToClient = true;
-    if ( !GetGame().IsDedicatedServer() )
-		{
-			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
-		}
 	}
 	
 	//!gets called every frame
@@ -35,9 +29,7 @@ class MethEffectSymptom extends SymptomBase
 
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
-    player.m_IsUnderMethEffect = true;
-    m_RequesterDrugEffect.SetRadialBlur(deltatime, deltatime, 0.1, 0.8, 0.05, "meth");      
-    m_RequesterDrugEffect.SetRadialBlurOffset(deltatime, deltatime, 0.1, 0.1, "meth");      
+    player.m_IsUnderMethEffect = true;        
 
     float m_randomChance = Math.RandomFloatInclusive(0,1);
     if (m_randomChance < 0.05 && scarySoundBuildUp >= 35) 
@@ -78,11 +70,6 @@ class MethEffectSymptom extends SymptomBase
 	{
     player.m_IsUnderMethEffect = false;
     // Print("client deactivate: " + player.IsUnderTheInfluence());
-    if (!player.IsUnderTheInfluence())
-    {
-      // Print("stop requester: " + player.IsUnderTheInfluence());
-      m_RequesterDrugEffect.Stop();
-    }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 };

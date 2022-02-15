@@ -1,7 +1,5 @@
 class WeedEffectSymptom extends SymptomBase
-{
-  PPERequester_SRPDrugEffect m_RequesterDrugEffect;
-
+{  
   float laughCounter = 0;
   float coughCounter = 0;
 
@@ -14,10 +12,6 @@ class WeedEffectSymptom extends SymptomBase
 		m_DestroyOnAnimFinish = true;
 		m_IsPersistent = true;
 		m_SyncToClient = true;
-    if ( !GetGame().IsDedicatedServer() )
-		{
-			Class.CastTo(m_RequesterDrugEffect,PPERequester_SRPDrugEffect.Cast(PPERequesterBank.GetRequester(PPERequester_SRPDrugEffect)));
-		}
 	}
 	
 	//!gets called every frame
@@ -52,10 +46,7 @@ class WeedEffectSymptom extends SymptomBase
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
     // Print("Weed effect active");
-    player.m_IsUnderWeedEffect = true;
-    m_RequesterDrugEffect.SetGlowSaturation(deltatime, 1, "test");
-    m_RequesterDrugEffect.SetRadialBlur(deltatime, deltatime, 0.04, 0.02, 0.05, "test");      
-    m_RequesterDrugEffect.SetRadialBlurOffset(deltatime, deltatime, 0.02, 0.01, "test");      
+    player.m_IsUnderWeedEffect = true;            
 	}
 	
 	//!gets called once on an Symptom which is being activated
@@ -81,12 +72,6 @@ class WeedEffectSymptom extends SymptomBase
     laughCounter = 0;
     coughCounter = 0;
     player.m_IsUnderWeedEffect = false;
-    // Print("client deactivate: " + player.IsUnderTheInfluence());
-    if (!player.IsUnderTheInfluence())
-    {
-      // Print("stop requester: " + player.IsUnderTheInfluence());
-      m_RequesterDrugEffect.Stop();
-    }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetDeactivated", m_Player.ToString());
 	}
 };

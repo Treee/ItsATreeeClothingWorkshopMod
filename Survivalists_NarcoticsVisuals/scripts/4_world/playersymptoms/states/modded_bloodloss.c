@@ -1,4 +1,4 @@
-modded class BloodLoss extends SymptomBase
+modded class BloodLoss
 {
   override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
