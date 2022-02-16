@@ -94,8 +94,7 @@ class SRP_DeckOfCards extends Inventory_Base
 	{
 		super.SetActions();
 		AddAction(ActionSRPSwitchDrawMode);
-		AddAction(ActionSRPDrawCards);
-    // AddAction(ActionFlipPlayingCard);
+		AddAction(ActionSRPDrawCards);    
 	}
 };
 
@@ -141,11 +140,16 @@ class SRP_PlayingCard_ColorBase extends Inventory_Base
     return true;
   }
 
+  override bool IsInventoryVisible()
+  {
+    return false;
+  }
+
   void Flip()
   {
     vector currentOrientation = GetOrientation();
-    Print("Current orientation: x: " + currentOrientation[0] + " y: " + currentOrientation[1] + " z" + currentOrientation[2]);
-    // SetOrientation();
+    SetOrientation(currentOrientation + "0 180 0");
+    currentOrientation = GetOrientation();
   }  
 	
 	override void SetActions()
@@ -153,7 +157,7 @@ class SRP_PlayingCard_ColorBase extends Inventory_Base
     super.SetActions();
     
     AddAction(ActionTogglePlaceObject);
-    AddAction(ActionPlaceObject);    
+    AddAction(ActionPlaceObject);        
   }
 };
 

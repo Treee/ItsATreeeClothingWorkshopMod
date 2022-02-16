@@ -61,6 +61,18 @@ class ActionSRPSwitchDrawMode extends ActionSingleUseBase
       }
     }
 	}
+  protected void OnExecuteClient( ActionData action_data )
+	{
+    if (action_data.m_Player)
+    {
+      SRP_DeckOfCards singleDrawDeck;
+      EntityAI handsItem = action_data.m_Player.GetItemInHands();
+      if(Class.CastTo(singleDrawDeck, handsItem))
+      {
+        singleDrawDeck.NextDrawMode();
+      }
+    }
+	}
 };
 
 

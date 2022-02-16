@@ -1876,7 +1876,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Playing Card Base";
-		descriptionShort="A small card.";
+		descriptionShort="A small card. Combine two to make a hand of cards for secrecy.";
 		model="Survivalists_Mods\gear\camping\srp_playingcard.p3d";
     color="base";
 		weight=250;

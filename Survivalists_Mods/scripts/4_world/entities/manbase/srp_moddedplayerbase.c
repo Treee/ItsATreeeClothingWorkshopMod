@@ -464,4 +464,10 @@ modded class PlayerBase extends ManBase
       PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns_Female.GetRandomElement(), 0, 0);
     }
   }
+
+  override void SetActions(out TInputActionMap InputActionMap)
+  {
+    super.SetActions(InputActionMap);
+    AddAction(ActionFlipPlayingCard, InputActionMap);      
+  }
 }

@@ -1,5 +1,5 @@
 class ActionFlipPlayingCard: ActionInteractBase
-{
+{	
 	void ActionFlipPlayingCard()
 	{
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_OPENDOORFW;
@@ -9,8 +9,8 @@ class ActionFlipPlayingCard: ActionInteractBase
 
 	override void CreateConditionComponents()  
 	{
-		m_ConditionItem = new CCINonRuined;
-		m_ConditionTarget = new CCTObject(UAMaxDistances.DEFAULT);
+		m_ConditionItem = new CCINone;
+		m_ConditionTarget = new CCTCursor;
 	}
 
 	override string GetText()
@@ -18,17 +18,14 @@ class ActionFlipPlayingCard: ActionInteractBase
 		return "Flip Card";
 	}
 
-	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
+  override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    Print("pre target check");
 		if ( !target ) 
 			return false;
 
     SRP_PlayingCard_ColorBase playingCard = SRP_PlayingCard_ColorBase.Cast(target.GetObject());
-    Print("card: " + playingCard);
     if (playingCard)
     {
-      Print("yeh the card is here");
       return true; 
     }
 		return false;
@@ -36,12 +33,10 @@ class ActionFlipPlayingCard: ActionInteractBase
 	
 	override void OnStartServer( ActionData action_data )
 	{
-    SRP_PlayingCard_ColorBase playingCard = SRP_PlayingCard_ColorBase.Cast(action_data.m_Target.GetObject());
+		SRP_PlayingCard_ColorBase playingCard = SRP_PlayingCard_ColorBase.Cast(action_data.m_Target.GetObject());
     if (playingCard)
     {
-      Print("flip the card");
       playingCard.Flip();
     }
 	}
-	
 };
