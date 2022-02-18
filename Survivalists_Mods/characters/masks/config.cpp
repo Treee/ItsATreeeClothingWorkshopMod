@@ -49,7 +49,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Antique Hannya Mask";
-    descriptionShort="An antique mask. In fairly good shape considering.";
+    descriptionShort="Espen Industries. An antique mask. In fairly good shape considering.";
     model="Survivalists_Mods\characters\masks\srp_hannyamask_g.p3d";
     inventorySlot[]=
 		{
@@ -126,7 +126,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Antique Hannya Mask - Red";
-    descriptionShort="An antique mask. In fairly good shape considering. Looking into the eyes you feel the permanence of putting on this mask.";
+    descriptionShort="Espen Industries. An antique mask. In fairly good shape considering. Looking into the eyes you feel the permanence of putting on this mask.";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\masks\data\srp_hannyamask_red_co.paa",
@@ -159,7 +159,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Antique Punisher Mask";
-    descriptionShort="An antique mask. In fairly good shape considering.";
+    descriptionShort="Espen Industries. An antique mask. In fairly good shape considering.";
     model="Survivalists_Mods\characters\masks\srp_punishermask_g.p3d";
     inventorySlot[]=
 		{
@@ -235,7 +235,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Antique Bone Monster Mask";
-    descriptionShort="An antique mask. In fairly good shape considering.";
+    descriptionShort="Espen Industries. An antique mask. In fairly good shape considering.";
     model="Survivalists_Mods\characters\masks\srp_bonemonstermask_g.p3d";
     inventorySlot[]=
 		{
@@ -311,7 +311,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Antique Metal Mask";
-    descriptionShort="An antique mask. In fairly good shape considering.";
+    descriptionShort="Espen Industries. An antique mask. In fairly good shape considering.";
     model="Survivalists_Mods\characters\masks\srp_shatteredmask_g.p3d";
     inventorySlot[]=
 		{
@@ -390,7 +390,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Full Face Gas Mask";
-		descriptionShort="A gas mask that covers the entire face. Provides protection against airborn hazards.";
+		descriptionShort="Espen Industries. A gas mask that covers the entire face. Provides protection against airborn hazards.";
     model="Survivalists_Mods\characters\masks\srpgasmask_g.p3d";
 		hiddenSelections[]=
 		{
@@ -440,7 +440,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Ballistic Mask";
-		descriptionShort="A metal ballistic mask";
+		descriptionShort="Espen Industries. A metal ballistic mask";
 		model="Survivalists_Mods\characters\masks\Ballistic_Mask_g.p3d";
 		inventorySlot[]=
 		{
@@ -518,7 +518,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="S10 Respirator";
-		descriptionShort="The S10 NBC Respirator is a military gas mask that was formerly used within all branches of the British Armed Forces. Following the mask's replacement by the General Service Respirator in 2011, the S10 is now widely available to the public on the army surplus market.";
+		descriptionShort="Espen Industries. The S10 NBC Respirator is a military gas mask that was formerly used within all branches of the British Armed Forces. Following the mask's replacement by the General Service Respirator in 2011, the S10 is now widely available to the public on the army surplus market.";
 		model="Survivalists_Mods\characters\masks\srps10gasmask_g.p3d";
     color="base";
     rotationFlags=0;
@@ -568,7 +568,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="PMK2 Respirator";
-		descriptionShort="The PMK gas mask represents a family of gas masks used by the Soviet Armed Forces, and later by the Armed Forces of the Russian Federation.";
+		descriptionShort="Espen Industries. The PMK gas mask represents a family of gas masks used by the Soviet Armed Forces, and later by the Armed Forces of the Russian Federation.";
 		model="Survivalists_Mods\characters\masks\srppmk2_g.p3d";
     color="base";
     rotationFlags=0;
@@ -620,7 +620,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="M50 Respirator";
-		descriptionShort="The M50 series protective mask consisting of the M50 and M51 variants, officially known as the Joint Service General Protective Mask (JSGPM) is a lightweight, protective mask system consisting of the mask, a mask carrier, and additional accessories";
+		descriptionShort="Espen Industries. The M50 series protective mask consisting of the M50 and M51 variants, officially known as the Joint Service General Protective Mask (JSGPM) is a lightweight, protective mask system consisting of the mask, a mask carrier, and additional accessories";
 		model="Survivalists_Mods\characters\masks\srp_m50gasmask_g.p3d";
     color="base";
     rotationFlags=0;
@@ -666,7 +666,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Goatee";
-		descriptionShort="Sinister looking facial hair.";
+		descriptionShort="Espen Industries. Sinister looking facial hair.";
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
 		itemSize[]={3,2};
@@ -701,7 +701,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Full Beard";
-		descriptionShort="A full manly beard.";
+		descriptionShort="Espen Industries. A full manly beard.";
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
 		itemSize[]={3,2};
@@ -736,7 +736,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Beard Chops";
-		descriptionShort="A full manly beard.";
+		descriptionShort="Espen Industries. A full manly beard.";
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
 		itemSize[]={3,2};
