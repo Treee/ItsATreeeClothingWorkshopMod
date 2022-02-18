@@ -30,7 +30,8 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\belts\legholster_g.p3d";
     attachments[]=
 		{
-			"Pistol"
+			"Pistol",
+      "Belt_Back"
 		};
     itemsCargoSize[]={5,4};
     hiddenSelections[]=
@@ -574,7 +575,8 @@ class CfgVehicles
 		attachments[]=
 		{
 			"Pistol",
-			"belt_left"
+			"belt_left",
+      "Belt_Back"
 		};
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
