@@ -1980,6 +1980,15 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_SmallProtectorCase_Nails: SmallProtectorCase
+	{
+		scope=2;
+    displayName="Protected Nail Box";
+    descriptionShort="This protected case is meant to hold a good amount of nails.";
+		itemSize[]={3,3};
+		itemsCargoSize[]={10,5};
+	};
+
   class SRP_LeatherPouch_Default: PlateCarrierPouches  // new
 	{
 		scope=2;

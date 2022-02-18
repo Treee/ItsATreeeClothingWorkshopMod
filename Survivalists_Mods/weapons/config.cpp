@@ -53,7 +53,7 @@ class CfgVehicles
   class SRP_WeaponLongBarrel_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Weapon Kit - Long Barrel";
+		displayName="Weapon Kit - Long Barreled Gun";
 		descriptionShort="A kit for assembling a long barreled weapon. Bring together all the parts and assemble.";
     attachments[]=
     {
@@ -65,12 +65,17 @@ class CfgVehicles
       "SRP_GunGrip",
       "SRP_GunButtStock"
     };
+    hiddenSelections[]={"camoground"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\srp_weaponkitbase_co.paa"
+		};
 	};
 
   class SRP_WeaponMediumBarrel_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Weapon Kit - Medium Barrel";
+		displayName="Weapon Kit - Medium Barreled Gun";
 		descriptionShort="A kit for assembling a medium length barreled weapon. Bring together all the parts and assemble.";
     attachments[]=
     {
@@ -82,12 +87,17 @@ class CfgVehicles
       "SRP_GunGrip",
       "SRP_GunButtStock"      
     };
+    hiddenSelections[]={"camoground"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\srp_weaponkitbase_co.paa"
+		};
 	};
 
   class SRP_WeaponShortBarrel_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Weapon Kit - Short Barrel";
+		displayName="Weapon Kit - Short Barreled Gun";
 		descriptionShort="A kit for assembling a short length barreled weapon. Bring together all the parts and assemble.";
     attachments[]=
     {
@@ -99,5 +109,10 @@ class CfgVehicles
       "SRP_GunGrip",
       "SRP_GunButtStock"      
     };
+    hiddenSelections[]={"camoground"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\srp_weaponkitbase_co.paa"
+		};
 	};
 };
