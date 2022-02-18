@@ -39,7 +39,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Metal Hook";
-		descriptionShort="An old Metal Hook";
+    descriptionShort="Espen Industries. A simple prosthetic for those that need a hand.";
 		model="Survivalists_Mods\characters\gloves\hook_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
