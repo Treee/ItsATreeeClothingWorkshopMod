@@ -68,7 +68,7 @@ class CfgVehicles
 	{
     scope=2;
 		displayName="Hoodie";
-		descriptionShort="$STR_CfgVehicles_Hoodie_ColorBase1";
+		descriptionShort="Espen Industries. A nicely sewed hoody with plenty of room inside.";
 		model="Survivalists_Mods\characters\tops\srp_plathoodie_g.p3d";
 		inventorySlot[]=
 		{
