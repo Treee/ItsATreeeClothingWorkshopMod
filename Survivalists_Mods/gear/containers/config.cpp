@@ -2200,7 +2200,6 @@ class CfgVehicles
 		};
 	};
 
-
   class SRP_MetalBarrel_Colorbase: Container_Base  // new
 	{
 		scope=2;
