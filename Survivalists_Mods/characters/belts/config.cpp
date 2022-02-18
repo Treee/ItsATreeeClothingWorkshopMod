@@ -26,7 +26,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Belt and leg holster";
-		descriptionShort="A civilian gun belt anbd leg holster";
+    descriptionShort="Espen Industries. A form fitting leather belt and leg holster.";
 		model="Survivalists_Mods\characters\belts\legholster_g.p3d";
     attachments[]=
 		{
@@ -75,7 +75,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Police Belt";
-		descriptionShort="A police belt with versatile attachments";
+    descriptionShort="Espen Industries. A well made belt with multiple attachments meant for law enforcement.";
 		model="Survivalists_Mods\characters\belts\policebelt_g.p3d";
     attachments[]=
 		{
@@ -127,7 +127,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Tactical Belt";
-		descriptionShort="A Tactical belt with versatile attachments";
+    descriptionShort="Espen Industries. A military style belt with versatile attachments.";
 		model="Survivalists_Mods\characters\belts\tacticalbelt_g.p3d";
     attachments[]=
 		{
@@ -183,7 +183,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Elbow and Knee pads";
-		descriptionShort="A pair of elbow and kneepads";
+    descriptionShort="Espen Industries. Elbow and knee pads for maximum protection.";
 		model="Survivalists_Mods\characters\belts\Elbowpads_Kneepads_g.p3d";
     attachments[]={};
 		rotationFlags=16;
@@ -256,7 +256,7 @@ class CfgVehicles
   {
 		scope=2;
 		displayName="Military Belt";
-		descriptionShort="A Tactical belt with versatile attachments";
+    descriptionShort="Espen Industries. A military style belt with versatile attachments.";
 		model="Survivalists_Mods\characters\belts\Military_Belt_g.p3d";
     attachments[]=
 		{
@@ -310,7 +310,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Knife Sheath - Tan";
-		descriptionShort = "A knife sheath. Clips to a belt or vest.";
+    descriptionShort="Espen Industries. A military style knife sheath.";
 		model = "Survivalists_Mods\characters\belts\Knife_Sheath.p3d";
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = 
@@ -366,7 +366,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Wooden Derby Car";
-		descriptionShort="This sick ride has all the perks.";
+    descriptionShort="Espen Industries. A prop car made to satisfy shareholders.";
 		model="Survivalists_Mods\characters\belts\srp_carwoodenderby_g.p3d";
     attachments[]={};		
     vehicleClass="Clothing";
@@ -496,7 +496,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Leather Belt";
-		descriptionShort="An old leather belt with a pouch attatched to it";
+    descriptionShort="Espen Industries. An old leather belt with pouches attached.";
 		model="Survivalists_Mods\characters\belts\Leatherpouch_g.p3d";
 		attachments[]=
 		{
@@ -570,7 +570,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Leather Belt";
-		descriptionShort="An old leather belt with a holster attatched";
+    descriptionShort="Espen Industries. An old western style belt with a pistol holster.";
 		model="Survivalists_Mods\characters\belts\Holster_Belt_g.p3d";
 		attachments[]=
 		{
