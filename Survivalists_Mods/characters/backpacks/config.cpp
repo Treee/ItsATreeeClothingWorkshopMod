@@ -71,6 +71,8 @@ class CfgVehicles
   class SRP_LeatherBackpack_Default: HuntingBag 
 	{
 		scope=2;
+    displayName="Leather Backpack";
+    descriptionShort="Espen Industries. This rugged leather backpack is large enough to store all of your travelling wares.";
 		model="Survivalists_Mods\characters\backpacks\leatherbackpack_g.p3d";
 		itemsCargoSize[]={8,8};
 		attachments[]=
@@ -129,6 +131,8 @@ class CfgVehicles
   class SRP_SurvivalBackpack_Default: HuntingBag 
 	{
 		scope=2;
+    displayName="Survival Backpack";
+    descriptionShort="Espen Industries. This survival backpack has seen better days.";
 		model="Survivalists_Mods\characters\backpacks\survivalbackpack_g.p3d";
 		itemsCargoSize[]={8,8};
     hiddenSelections[]=
@@ -171,6 +175,8 @@ class CfgVehicles
   class SRP_SlingBackpack_Default: AliceBag_ColorBase 
 	{
 		scope=2;
+    displayName="Sling Backpack";
+    descriptionShort="Espen Industries. This bag comfortably sits across your shoulders.";
 		model="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_g.p3d";
 		itemsCargoSize[]={8,8};
     hiddenSelections[]=
@@ -214,7 +220,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Small Military Pack";
-		descriptionShort="A small backpack with Military webbing around it";
+    descriptionShort="Espen Industries. This small bag was the first line of products marketed to the military.";
 		model="Survivalists_Mods\characters\backpacks\Small_Military_Pack_g.p3d";
 		itemsCargoSize[]={7,7};
     rotationFlags=1;
@@ -259,7 +265,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Large Military Pack";
-		descriptionShort="A Large backpack with Military webbing around it";
+    descriptionShort="Espen Industries. This large bag was created to solve storage problems for a mobile soldier.";
 		model="Survivalists_Mods\characters\backpacks\Big_Military_Pack_g.p3d";
 		itemsCargoSize[]={10,10};
     rotationFlags=1;
@@ -304,7 +310,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Rifle bag";
-    descriptionShort="A large back used for carrying two rifles";
+    descriptionShort="Espen Industries. This large rifle bag serves the marksman well with ample storage for accessories and several guns.";
     model="Survivalists_Mods\characters\backpacks\Rifle_Bag_g.p3d";
     itemsCargoSize[]={5,8};
     attachments[]=
@@ -348,7 +354,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Rolltop Bag";
-		descriptionShort="A canvas bag with a rolled down top";
+    descriptionShort="Espen Industries. The style of bag caught fire faster than the outbreak. Not surprising is is still popular among survivors today.";
 		model="Survivalists_Mods\characters\backpacks\Backpackrolltop_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
@@ -419,7 +425,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Leather Messenger Bag";
-    descriptionShort="A leather satchel with a strap";
+    descriptionShort="Espen Industries. A leather satchel with a strap. Sits comfortably across your shoulders.";
 		model="Survivalists_Mods\characters\backpacks\Leather_Satchel_g.p3d";
     repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
