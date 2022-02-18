@@ -7,7 +7,6 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data",
       "Survivalists_Mods"
 		};
 	};
@@ -44,5 +43,61 @@ class CfgWeapons
 			"Shoulder9",
 			"Melee"
 		};
+	};
+};
+
+class CfgVehicles
+{
+  class SRP_KitBase;
+
+  class SRP_WeaponLongBarrel_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Long Barrel";
+		descriptionShort="A kit for assembling a long barreled weapon. Bring together all the parts and assemble.";
+    attachments[]=
+    {
+      "SRP_GunBarrel",
+      "SRP_MainReceiver",
+      "SRP_Trigger",
+      "SRP_Hammer",
+      "SRP_GunBody",
+      "SRP_GunGrip",
+      "SRP_GunButtStock"
+    };
+	};
+
+  class SRP_WeaponMediumBarrel_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Medium Barrel";
+		descriptionShort="A kit for assembling a medium length barreled weapon. Bring together all the parts and assemble.";
+    attachments[]=
+    {
+      "SRP_GunBarrel",
+      "SRP_MainReceiver",
+      "SRP_Trigger",
+      "SRP_Hammer",
+      "SRP_GunBody",
+      "SRP_GunGrip",
+      "SRP_GunButtStock"      
+    };
+	};
+
+  class SRP_WeaponShortBarrel_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Short Barrel";
+		descriptionShort="A kit for assembling a short length barreled weapon. Bring together all the parts and assemble.";
+    attachments[]=
+    {
+      "SRP_GunBarrel",
+      "SRP_MainReceiver",
+      "SRP_Trigger",
+      "SRP_Hammer",
+      "SRP_GunBody",
+      "SRP_GunGrip",
+      "SRP_GunButtStock"      
+    };
 	};
 };

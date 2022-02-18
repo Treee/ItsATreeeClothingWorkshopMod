@@ -13,6 +13,49 @@ class CfgSlots
 {
   //=====================BASE GAME OVERRIDE
 
+  //====================WEAPON CRAFTING SLOTS
+  class Slot_SRP_GunBarrel
+	{
+		name="SRP_GunBarrel";
+		displayName="Gun Barrel";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_MainReceiver
+	{
+		name="SRP_MainReceiver";
+		displayName="Main Receiver";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Trigger
+	{
+		name="SRP_Trigger";
+		displayName="Trigger";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Hammer
+	{
+		name="SRP_Hammer";
+		displayName="Hammer";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_GunBody
+	{
+		name="SRP_GunBody";
+		displayName="Gun Body";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_GunGrip
+	{
+		name="SRP_GunGrip";
+		displayName="Gun Grip";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_GunButtStock
+	{
+		name="SRP_GunButtStock";
+		displayName="Gun ButtStock";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
   //====================animal pelts
   class Slot_AnimalPelt1
 	{
