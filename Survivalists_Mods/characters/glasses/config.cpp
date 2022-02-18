@@ -64,7 +64,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Welding Goggles";
-		descriptionShort="Fancy Goggles used by a welder.";
+    descriptionShort="Espen Industries. Full eye protection from very bright lights.";
 		model="Survivalists_Mods\characters\glasses\srp_weldinggoggles_g.p3d";
 		class ClothingTypes
 		{
@@ -77,7 +77,7 @@ class CfgVehicles
   {	
 		scope=2;
 		displayName="Old Goggles";
-		descriptionShort="A pair of old looking goggles";
+    descriptionShort="Espen Industries. Full eye protection from particulate in the environment.";
 		model="Survivalists_Mods\characters\headgear\gogglesHead_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
@@ -151,7 +151,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Eyepatch";
-		descriptionShort="A black handstitched eyepatch.";
+    descriptionShort="Espen Industries. An eye patch meant to obscure light or an eye injury.";
 		model="Survivalists_Mods\characters\glasses\eyepatch_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
