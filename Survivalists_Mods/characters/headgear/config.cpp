@@ -93,7 +93,7 @@ class CfgVehicles
 		scope=2;
 		color="Tinfoil";
     displayName="Tinfoil Hat";
-    descriptionShort="Crazy....";
+    descriptionShort="Espen Industries. Light protection for the ... radio enthusiast ...";
     model="Survivalists_Mods\characters\headgear\tinfoilhat_g.p3d";
     hiddenSelections[]=
 		{
@@ -137,7 +137,7 @@ class CfgVehicles
 		scope=2;
 		color="Turkey";
     displayName="Turkey Beanie";
-    descriptionShort="Gobble gobble.";
+    descriptionShort="Espen Industries. A well knit cap with turkey legs.";
     model="Survivalists_Mods\characters\headgear\turkeybeanie_g.p3d";
     rotationFlags="64";
     hiddenSelections[]=
@@ -163,7 +163,7 @@ class CfgVehicles
   {
 		scope=2;
     displayName="Miner Helmet";
-    descriptionShort="A miner helmet. Has a light and looks sturdy.";
+    descriptionShort="Espen Industries. Full head protection witha convenient light.";
     model="Survivalists_Mods\characters\headgear\minerhelmet_g.p3d";
 		itemSize[]={3,2};
     hiddenSelections[]=
@@ -214,7 +214,7 @@ class CfgVehicles
   {
 		scope=2;
     displayName="Brewster Helmet";
-    descriptionShort="A brewster helmet. Proven effective in combat.";
+    descriptionShort="Espen Industries. An old war era helmet. Very effective from the front.";
     model="Survivalists_Mods\characters\headgear\brewsterhelm_g.p3d";
     hiddenSelections[]=
 		{
@@ -322,7 +322,7 @@ class CfgVehicles
 		scope=2;
 		color="MilitaryPatrolTan";
     displayName="Patrol Cap";
-    descriptionShort="A tight fitting cap with room for a patch above the bill.";
+    descriptionShort="Espen Industries. A tight fitting cap with room for a patch above the bill.";
     model="Survivalists_Mods\characters\headgear\srp_patrolcap_g.p3d";
     rotationFlags=64;
     attachments[]=
@@ -372,7 +372,7 @@ class CfgVehicles
 		scope=2;
 		color="Pakol";
     displayName="Pakol";
-		descriptionShort = "Pakol, popularly known as the Chitrali cap, is a soft round-topped men's hat, typically of wool and found in any of a variety of earthy colors.";
+		descriptionShort = "Espen Industries. Pakol, popularly known as the Chitrali cap, is a soft round-topped men's hat, typically of wool and found in any of a variety of earthy colors.";
     model="Survivalists_Mods\characters\headgear\srp_pakol_g.p3d";
     rotationFlags=64;
     attachments[]=
@@ -420,7 +420,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Combat Helmet";
-		descriptionShort="The MICH-style combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
+		descriptionShort="Espen Industries. The MICH-style combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
 		model="Survivalists_Mods\characters\headgear\srp_combathelmet_g.p3d";
     attachments[]=
     {
@@ -469,7 +469,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Combat Helmet - V2";
-		descriptionShort="The MICH-style combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
+		descriptionShort="Espen Industries. The MICH-style v2 combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
 		model="Survivalists_Mods\characters\headgear\srp_combathelmetv2_g.p3d";
     attachments[]=
     {
@@ -517,7 +517,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Combat Helmet - 6B47";
-		descriptionShort = "The Russian-designed 6B47 helmet is a part of Ratnik combat gear.";
+		descriptionShort = "Espen Industries. The Russian-designed 6B47 helmet is a part of Ratnik combat gear.";
 		model="Survivalists_Mods\characters\headgear\srp_combathelmet6b47_g.p3d";
     attachments[]=
     {
@@ -565,7 +565,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Combat Helmet - High Cut";
-		descriptionShort = "The High Cut style combat helmet offers good ballistic protection, and comes prepped for comtac hearing protection.";
+		descriptionShort = "Espen Industries. The High Cut style combat helmet offers good ballistic protection, and comes prepped for comtac hearing protection.";
 		model="Survivalists_Mods\characters\headgear\srp_combathelmethighcut_g.p3d";
     attachments[]=
     {
@@ -614,7 +614,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Combat Helmet - Altyn";
-		descriptionShort = "The Altyn helmet offers some of the best ballistic protection.";
+		descriptionShort = "Espen Industries. The Altyn helmet offers some of the best ballistic protection.";
 		model="Survivalists_Mods\characters\headgear\srp_combathelmetaltyn_g.p3d";
     attachments[]=
     {
@@ -663,7 +663,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Altyn Helmet Visor";
-		descriptionShort="A visor that attaches to the Atyln helmet to offore more protection.";
+		descriptionShort="Espen Industries. A visor that attaches to the Atyln helmet to offore more protection.";
 		model="Survivalists_Mods\characters\headgear\srp_altynhelmetvisor.p3d";
 		weight=350;
 		itemSize[]={3,2};
@@ -706,7 +706,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Face Mask";
-		descriptionShort="A mask used for concealing one's identity... spooky right?";
+		descriptionShort="Espen Industries. A mask used for concealing one's identity.";
 		itemSize[]={3,2};
 		rotationFlags=0;
 		model="Survivalists_Mods\characters\headgear\srp_facemask_skullmask_g.p3d";
@@ -765,7 +765,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Face Mask";
-		descriptionShort="A mask used for concealing one's identity... spooky right?";
+		descriptionShort="Espen Industries. A mask used for concealing one's identity.";
 		itemSize[]={3,2};
 		rotationFlags=0;
 		model="Survivalists_Mods\characters\headgear\srp_facemask_g.p3d";
@@ -821,7 +821,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Mouth Cover";
-		descriptionShort="A mask used for concealing one's identity. Only covers the mouth.";
+		descriptionShort="Espen Industries. A mask used for concealing one's identity. Only covers the mouth.";
 		itemSize[]={3,2};
 		rotationFlags=0;
 		model="Survivalists_Mods\characters\headgear\srp_mouthcover_g.p3d";
@@ -876,7 +876,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Head Shroud";
-		descriptionShort="A mask used for concealing one's identity.";
+		descriptionShort="Espen Industries. A mask used for concealing one's identity.";
 		itemSize[]={3,2};
 		rotationFlags=0;
 		model="Survivalists_Mods\characters\headgear\srp_shroud_g.p3d";
@@ -932,7 +932,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Comtacs";
-		descriptionShort="Comtacs - a trusted tactical communications and hearing protection headset that is field proven by law enforcement and militaries world wide";
+		descriptionShort="Espen Industries. Comtacs - a trusted tactical communications and hearing protection headset that is field proven by law enforcement and militaries world wide";
 		model="Survivalists_Mods\characters\headgear\srp_comtacs_g.p3d";
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -992,7 +992,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Full Helmet";
-    descriptionShort="A slim helmet that coveres the whole head";
+    descriptionShort="Espen Industries. A slim helmet that coveres the whole head";
     model="Survivalists_Mods\characters\headgear\srp_slimhelmet_g.p3d";
     repairableWithKits[]={8};
 		repairCosts[]={25};
@@ -1138,7 +1138,7 @@ class CfgVehicles
 	{	
     scope=2;
 		displayName="Old Goggles";
-		descriptionShort="A pair of old looking goggles";
+    descriptionShort="Espen Industries. Full eye protection from particulate in the environment.";
 		model="Survivalists_Mods\characters\headgear\gogglesHead_g.p3d";
 		noMask=0;	
 		repairableWithKits[]={5,8};
@@ -1216,7 +1216,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Cowboy hat";
-		descriptionShort="A ragged cowboy hat.";
+		descriptionShort="Espen Industries. A ragged cowboy hat.";
 		model="Survivalists_Mods\characters\headgear\cowboyhat_g.p3d";
 		weight=100;
 		noMask=0;
@@ -1294,7 +1294,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Burlap Mask";
-		descriptionShort="A Burlap Sack with an eye hole cut out of it";
+		descriptionShort="Espen Industries. A Burlap Sack with an eye hole cut out of it";
 		model="Survivalists_Mods\characters\headgear\burlapmask_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
@@ -1369,7 +1369,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Leather Hat";
-		descriptionShort="A leather top hat with some glass bottles upon it.";
+		descriptionShort="Espen Industries. A leather top hat with some glass bottles upon it.";
 		model="Survivalists_Mods\characters\headgear\SRP_Alchemist_Hat_g.p3d";
 		weight=100;
 		noMask=0;
@@ -1446,7 +1446,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Cowboy hat";
-		descriptionShort="A ragged cowboy hat.";
+		descriptionShort="Espen Industries. A ragged cowboy hat.";
 		model="Survivalists_Mods\characters\headgear\SRP_Cowboy_Carl_g.p3d";
 		weight=100;
 		noMask=0;
