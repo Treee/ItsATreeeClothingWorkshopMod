@@ -108,7 +108,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Brewster Shield";
-		descriptionShort="A crude body shield proven to be effective in World War 1.";
+		descriptionShort="Espen Industries. A crude body shield proven to be effective in World War 1.";
 		model="Survivalists_Mods\characters\vests\brewstershield_g.p3d";
     hiddenSelections[]=
 		{
@@ -214,7 +214,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Tactical Vest";
-		descriptionShort="A Tactical vest";
+		descriptionShort="Espen Industries. A Tactical vest";
 		model="Survivalists_Mods\characters\vests\Tac_Vest_g.p3d";
 		attachments[]=
 		{
@@ -409,7 +409,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Full Ratnik";
-		descriptionShort="A fully kitted out ratnik vest";
+		descriptionShort="Espen Industries. A fully kitted out ratnik vest";
 		model="Survivalists_Mods\characters\vests\Ratnik_g.p3d";
 		attachments[]=
 		{
@@ -607,7 +607,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Light Ratnik";
-		descriptionShort="A Ratnik vest without the additional armor";
+		descriptionShort="Espen Industries. A Ratnik vest without the additional armor";
 		model="Survivalists_Mods\characters\vests\Light_Ratnik_g.p3d";
 		attachments[]=
 		{
@@ -804,7 +804,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Chest Rig";
-		descriptionShort="A high capacity chest rig";
+		descriptionShort="Espen Industries. A high capacity chest rig";
 		model="Survivalists_Mods\characters\vests\ChestRig_g.p3d";
 		attachments[]=
 		{
@@ -921,7 +921,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Light Armored Vest";
-		descriptionShort="A light weight armored vest";
+		descriptionShort="Espen Industries. A light weight armored vest";
 		model="Survivalists_Mods\characters\vests\Army_Vest_1_g.p3d";
 		attachments[]=
 		{
@@ -1118,7 +1118,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="6B45 vest";
-		descriptionShort="A 6B45 armored vest vest";
+		descriptionShort="Espen Industries. A 6B45 armored vest vest";
 		model="Survivalists_Mods\characters\vests\Army_Vest_2_g.p3d";
 		attachments[]=
 		{
@@ -1316,7 +1316,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="JPC Vest";
-		descriptionShort="A JPC vest";
+		descriptionShort="Espen Industries. A JPC vest";
 		model="Survivalists_Mods\characters\vests\JPC_Vest_g.p3d";
 		attachments[]=
 		{
@@ -1508,7 +1508,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Tac-Tec Vest";
-		descriptionShort="A Tac-Tec vest";
+		descriptionShort="Espen Industries. A Tac-Tec vest";
 		model="Survivalists_Mods\characters\vests\Tac_Tec_Vest_g.p3d";
 		attachments[]=
 		{
@@ -1700,7 +1700,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Leather bandoiler";
-		descriptionShort="An old belt which has been turned into a bandoiler";
+		descriptionShort="Espen Industries. An old belt which has been turned into a bandoiler";
 		model="Survivalists_Mods\characters\vests\bandoiler_g.p3d";
 		attachments[]=
 		{
@@ -1779,7 +1779,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Alchemist Sling";
-    descriptionShort="A leather sling with attachments for vials.";
+    descriptionShort="Espen Industries. A leather sling with attachments for vials.";
     attachments[]=
 		{
 			"Belt_Back",
@@ -1796,7 +1796,7 @@ class CfgVehicles
 	{	
 		scope=2;
 		displayName="Shoulder Sling";
-		descriptionShort="A shoulder sling with some small pouches attatched";
+		descriptionShort="Espen Industries. A shoulder sling with some small pouches attatched";
 		model="Survivalists_Mods\characters\vests\Shoulder_Holster_g.p3d";
 		attachments[]=
 		{
@@ -1874,7 +1874,7 @@ class CfgVehicles
   {
 		scope=0;
 		displayName="Small Pouch Base";
-    descriptionShort="Base Pouch, How can you see this?";
+    descriptionShort="Espen Industries. Base Pouch, How can you see this?";
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
 		inventorySlot[]=
     {
@@ -1919,7 +1919,7 @@ class CfgVehicles
   {
 		scope=0;
 		displayName="Large Pouch Base";
-    descriptionShort="Base Pouch, How can you see this?";
+    descriptionShort="Espen Industries. Base Pouch, How can you see this?";
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
 		inventorySlot[]=
     {
@@ -1964,7 +1964,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Small Bottle";
-		descriptionShort="A small drinks bottle";
+		descriptionShort="Espen Industries. A small drinks bottle";
 		model="Survivalists_Mods\characters\vests\SRP_Small_Bottle.p3d";
 		inventorySlot[]=
     {
@@ -2072,7 +2072,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Map Pouch";
-		descriptionShort="A pouch that holds various small items.";
+		descriptionShort="Espen Industries. A pouch that holds various small items.";
 		model="Survivalists_Mods\characters\vests\SRP_Map_Pouch.p3d";
     itemSize[]={3,3};
 		itemsCargoSize[]={3,3};
@@ -2103,7 +2103,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Pistol Magazine Pouch";
-		descriptionShort="A single pouch that holds two Pistol mags";
+		descriptionShort="Espen Industries. A single pouch that holds two Pistol mags";
 		model="Survivalists_Mods\characters\vests\SRP_Pistol_MagPouch.p3d";
     attachments[]=
 		{
@@ -2139,7 +2139,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="IFAK Pouch";
-		descriptionShort="An Individual First Aid Kit";
+		descriptionShort="Espen Industries. An Individual First Aid Kit";
 		model="Survivalists_Mods\characters\vests\SRP_IFAK_Pouch.p3d";
     itemSize[]={5,4};
     itemsCargoSize[]={5,4};
@@ -2170,7 +2170,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Magazine Pouch";
-		descriptionShort="A single pouch that holds an AR mag";
+		descriptionShort="Espen Industries. A single pouch that holds an AR mag";
 		model="Survivalists_Mods\characters\vests\SRP_AR_MagPouch_1.p3d";
     attachments[]=
 		{
@@ -2203,7 +2203,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Magazine Dump Pouch";
-		descriptionShort="A large bag used for empty magazines.";
+		descriptionShort="Espen Industries. A large bag used for empty magazines.";
 		model="Survivalists_Mods\characters\vests\SRP_Empty_Mag_Pouch.p3d";
     itemSize[]={5,4};
     itemsCargoSize[]={5,4};
@@ -2235,7 +2235,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Utility Pouch";
-		descriptionShort="A single pouch that holds a useful tool.";
+		descriptionShort="Espen Industries. A single pouch that holds a useful tool.";
 		model="Survivalists_Mods\characters\vests\srp_utility_pouch.p3d";
     itemsCargoSize[]={3,2};
     attachments[]=
@@ -2272,7 +2272,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Heavy Pouch";
-		descriptionShort="A single pouch that holds several things.";
+		descriptionShort="Espen Industries. A single pouch that holds several things.";
 		model="Survivalists_Mods\characters\vests\srp_heavy_pouch.p3d";
     itemSize[]={3,3};
     itemsCargoSize[]={3,3};
@@ -2310,7 +2310,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Medium Pouch";
-		descriptionShort="A single pouch that holds several things.";
+		descriptionShort="Espen Industries. A single pouch that holds several things.";
 		model="Survivalists_Mods\characters\vests\srp_medium_pouch.p3d";
     itemSize[]={3,3};
     itemsCargoSize[]={3,3};
@@ -2348,7 +2348,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Taco Pouch";
-		descriptionShort="A single pouch that holds several tools.";
+		descriptionShort="Espen Industries. A single pouch that holds several tools.";
 		model="Survivalists_Mods\characters\vests\srp_taco_pouch.p3d";
     itemSize[]={3,3};
     itemsCargoSize[]={2,2};
