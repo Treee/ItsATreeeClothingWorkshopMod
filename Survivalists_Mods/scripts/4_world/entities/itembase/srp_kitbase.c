@@ -314,7 +314,7 @@ class SRP_SimpleBoneArmor_Kit extends SRP_IntermediateCraftingKitBase{};
 // weapons
 
 // gun smithing
-// class TT_WoodAttachmentGunKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class TT_WoodAttachmentGunKit_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_WeaponBladeKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeKarambitKnife_Kit extends SRP_IntermediateCraftingKitBase{};

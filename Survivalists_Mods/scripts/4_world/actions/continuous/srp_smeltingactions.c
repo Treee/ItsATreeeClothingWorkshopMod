@@ -1,4 +1,3 @@
-
 class ActionPourMoltenMetalIntoMoldCB : ActionSingleUseBaseCB
 {
 	override void CreateActionComponent()
