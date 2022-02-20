@@ -56,4 +56,19 @@ class CfgVehicles
 		repairCosts[]={30,25};
   };
 
+  // Derringer Slot Shoes
+  // AthleticShoes_ColorBase
+  // HikingBoots_ColorBase
+  // HikingBootsLow_ColorBase
+  // Wellies_ColorBase
+  // WorkingBoots_ColorBase
+  // JungleBoots_ColorBase
+  // DressShoes_ColorBase
+  // MilitaryBoots_ColorBase
+  // CombatBoots_ColorBase
+  // JoggingShoes_ColorBase
+  // LeatherShoes_ColorBase
+  // Sneakers_ColorBase
+  // Ballerinas_ColorBase
+
 };

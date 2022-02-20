@@ -29,6 +29,5 @@ modded class ActionConstructor
     actions.Insert(ActionSRPSwitchDrawMode); 
 
     actions.Insert(ActionFlipPlayingCard);    
-
 	}
 };

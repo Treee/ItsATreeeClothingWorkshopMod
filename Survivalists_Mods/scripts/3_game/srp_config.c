@@ -37,28 +37,34 @@ class CraftingComponent // TailorCraftComponent
   float changeHealth;
 }
 
-class BioHazardZoneLocation
+class MiningOreConfig
 {
-  vector center;
-  int totalRadius;
-  int criticalRadius;
-  int severeRadius;
-  int mildRadius;
-  int messageRepeatInterval;
+  vector m_location;
+  float m_radius = 10;
+  float platinumChance = 2.0;
+  float goldChance = 2.0;
+  float ironChance = 2.0;
+  float copperChance = 2.0;
+  float tinChance = 2.0;
 
-  void SetBioHazardZoneLocation(vector m_center, int m_totalRadius, int m_criticalRadius, int m_severeRadius, int m_mildRadius, int m_messageRepeatInterval)
+  void MiningOreConfig(vector location, float radius, float plat, float gold, float iron, float copper, float tin)
   {
-    center = m_center;
-    totalRadius = m_totalRadius;
-    criticalRadius = m_criticalRadius;
-    severeRadius = m_severeRadius;
-    mildRadius = m_mildRadius;    
-    messageRepeatInterval = m_messageRepeatInterval;
+    m_location = location;
+    m_radius = radius;
+    platinumChance = plat;
+    goldChance = gold;
+    ironChance = iron;
+    copperChance = copper;
+    tinChance = tin;
   }
-
-  bool isPlayerInZone(vector playerPosition)
+  bool IsPlayerInRange(vector playerLocation)
   {
-    return vector.Distance(playerPosition, center) < totalRadius;
+    if (m_location)
+    {
+      // Print("Player is " + vector.Distance(m_location, playerLocation) + " meters from radius center. Plat: " + platinumChance + " Gold: " + goldChance + " Iron: " + ironChance + " Copper: " + copperChance + " Tin: " + tinChance);
+      return vector.Distance(m_location, playerLocation) <= m_radius;
+    }
+    return false;
   }
 }
 
@@ -113,23 +119,22 @@ class SRPConfig
   ref CraftingConfig tailorWorkbench = new CraftingConfig();
   ref CraftingConfig advancedWorkbench = new CraftingConfig();
   ref CraftingConfig drugWorkbench = new CraftingConfig();
-  
-  ref array<ref BioHazardZoneLocation> g_SRPBiohazardZoneLocations;
-
+    
+  ref array<ref MiningOreConfig> g_QuarryLocations;
 
   void ~SRPConfig()
   {
     delete tailorWorkbench;
     delete advancedWorkbench;
     delete drugWorkbench;
-    delete g_SRPBiohazardZoneLocations;
+    delete g_QuarryLocations;
   }
 }
 
 class SRPGlobals
 {
   private static ref SRPConfig m_SRPConfig = NULL;
-  private static const int MAX_CONFIG_LINES = 2000;
+  private static const int MAX_CONFIG_LINES = 5000;
   private static const string configPath = "$profile:\\Survivalists_Mods\\Mod_Settings.json";
   private static const string configRoot = "$profile:\\Survivalists_Mods";
 
@@ -204,7 +209,7 @@ class SRPGlobals
     item1.craftingComponents.Insert(item1Comp1);
     item1.craftingComponents.Insert(item1Comp2);
     config.craftedItems.Insert(item1);
-    Print("tailor method stuff: " + config);
+    // Print("tailor method stuff: " + config);
     return config; 
   }
 
@@ -338,15 +343,18 @@ class SRPGlobals
     config.g_SRPWeedChanceForLaugh = 70;
     config.g_SRPTobaccoChanceForCough = 35;
 
-    ref array<ref BioHazardZoneLocation> m_locations = new ref array<ref BioHazardZoneLocation>;
+    ref array<ref MiningOreConfig> local_QuarryLocations = new ref array<ref MiningOreConfig>;    
+    // platinumChance = 0.99;
+    // goldChance = 0.99;
+    // ironChance = 0.99;
+    // copperChance = 0.99;
+    // tinChance = 0.99;
 
-    BioHazardZoneLocation bioLocation = new BioHazardZoneLocation;
+    // local_QuarryLocations.Insert(new MiningOreConfig("11153 38 2274",100,0.95,0.90,0.85,0.80,0.75));
+    local_QuarryLocations.Insert(new MiningOreConfig("11153 38 2274",100,0,2,2,2,2));
+    local_QuarryLocations.Insert(new MiningOreConfig("10543 3 5607",50,0.95,0.90,0.85,0.80,0.75));
 
-    bioLocation.SetBioHazardZoneLocation("4683 20 7100", 350, 150, 250, 325, 120);
-
-    m_locations.Insert(bioLocation);
-
-    config.g_SRPBiohazardZoneLocations = m_locations;
+    config.g_QuarryLocations = local_QuarryLocations;
   }
 }
 

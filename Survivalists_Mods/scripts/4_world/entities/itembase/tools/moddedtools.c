@@ -40,10 +40,8 @@ modded class SledgeHammer
 	override void SetActions()
 	{
 		super.SetActions();	
-		AddAction(ActionMineRock);
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
-
     // remove dat raiding ability
     RemoveAction(ActionDismantlePart);
 	}

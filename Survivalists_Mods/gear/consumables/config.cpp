@@ -18,6 +18,7 @@ class CfgVehicles
   class Spraycan_ColorBase;
   class Inventory_Base;
   class ButaneCanister;
+  class Stone;
 
   //--------------------------------------------- BASE GAME OVERRIDES
 	class Battery9V: Inventory_Base
@@ -136,6 +137,14 @@ class CfgVehicles
 		};
     varQuantityMax=30;
   };
+
+  class Stone_Ruined: Stone
+	{
+		scope=2;
+		displayName="Ruined Stone";
+		descriptionShort="This stone is not suitable for building; or anything...";
+    inventorySlot[]={};
+	};
   
   //----------------------------------------------- CUSTOM STUFF
   class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery

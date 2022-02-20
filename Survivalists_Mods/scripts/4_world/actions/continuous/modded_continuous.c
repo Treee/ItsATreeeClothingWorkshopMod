@@ -201,4 +201,3 @@ modded class ActionUncoverHeadTarget
 		return isWearingBurlap;
 	}
 };
-
