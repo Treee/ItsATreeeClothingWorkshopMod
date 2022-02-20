@@ -54,7 +54,7 @@ class CfgSlots
 	{
 		name="SRP_GunButtStock";
 		displayName="Gun ButtStock";
-		ghostIcon="set:dayz_inventory image:missing";
+		ghostIcon="set:dayz_inventory image:buttstock";
 	};
   //====================animal pelts
   class Slot_AnimalPelt1
