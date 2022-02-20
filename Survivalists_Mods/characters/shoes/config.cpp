@@ -16,10 +16,77 @@ class CfgPatches
 class CfgVehicles
 {
   class Clothing;
-  class AthleticShoes_ColorBase;
-  class Sneakers_ColorBase;
 
-  // SERVER LORE ITEM
+  //-------------------------------------BASE GAME OVERRIDE
+	class NBCBootsBase: Clothing
+	{
+		class Protection 
+    {
+      repairableWithKits[]={5,6}; // duct tape and tire repair kit
+		  heatIsolation=0.8;
+      biological=1;
+    }
+	};
+
+  class AthleticShoes_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+  class HikingBoots_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+  class HikingBootsLow_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+  class Wellies_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer","Knife"};
+  };
+  class WorkingBoots_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+
+  class JungleBoots_ColorBase: Clothing
+	{
+    attachments[]={"SRP_GunDerringer","Knife"};
+    itemSize[]={2,2};
+		itemsCargoSize[]={1,2};
+    repairableWithKits[]={5,3};
+		repairCosts[]={30,25};
+  };
+
+  class DressShoes_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+  class MilitaryBoots_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer","Knife"};
+  };
+  class CombatBoots_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer","Knife"};
+  };
+  class JoggingShoes_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+  class LeatherShoes_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+  class Sneakers_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+  class Ballerinas_ColorBase: Clothing
+  {
+    attachments[]={"SRP_GunDerringer"};
+  };
+
   class Sneakers_Skylar_Biozone: Sneakers_ColorBase
 	{
 		scope=2;
@@ -36,39 +103,5 @@ class CfgVehicles
       biological=6;
     }
 	};
-
-  //-------------------------------------BASE GAME OVERRIDE
-	class NBCBootsBase: Clothing
-	{
-		class Protection 
-    {
-      repairableWithKits[]={5,6}; // duct tape and tire repair kit
-		  heatIsolation=0.8;
-      biological=1;
-    }
-	};
-
-  class JungleBoots_ColorBase: Clothing
-	{
-		itemSize[]={2,2};
-		itemsCargoSize[]={1,2};
-    repairableWithKits[]={5,3};
-		repairCosts[]={30,25};
-  };
-
-  // Derringer Slot Shoes
-  // AthleticShoes_ColorBase
-  // HikingBoots_ColorBase
-  // HikingBootsLow_ColorBase
-  // Wellies_ColorBase
-  // WorkingBoots_ColorBase
-  // JungleBoots_ColorBase
-  // DressShoes_ColorBase
-  // MilitaryBoots_ColorBase
-  // CombatBoots_ColorBase
-  // JoggingShoes_ColorBase
-  // LeatherShoes_ColorBase
-  // Sneakers_ColorBase
-  // Ballerinas_ColorBase
 
 };
