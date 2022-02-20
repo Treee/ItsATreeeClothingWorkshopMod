@@ -350,10 +350,36 @@ class SRPGlobals
     // copperChance = 0.99;
     // tinChance = 0.99;
 
-    // local_QuarryLocations.Insert(new MiningOreConfig("11153 38 2274",100,0.95,0.90,0.85,0.80,0.75));
-    local_QuarryLocations.Insert(new MiningOreConfig("11153 38 2274",100,0,2,2,2,2));
-    local_QuarryLocations.Insert(new MiningOreConfig("10543 3 5607",50,0.95,0.90,0.85,0.80,0.75));
-
+    // crotch island
+    local_QuarryLocations.Insert(new MiningOreConfig("11153 38 2274",215,0.95,0.90,0.85,2,2));
+    // fishers camp
+    local_QuarryLocations.Insert(new MiningOreConfig("10543 3 5607",60,2,2,0.75,0.80,0.75));
+    // rotten island
+    local_QuarryLocations.Insert(new MiningOreConfig("13017 2 6282",550,2,0.95,0.80,2,2));
+    // north stonington
+    local_QuarryLocations.Insert(new MiningOreConfig("6833 27 1730",60,2,0.95,0.80,2,0.75));
+    // prison island
+    local_QuarryLocations.Insert(new MiningOreConfig("5457 34 700",200,0.75,2,0.95,0.90,2));
+    // temple island
+    local_QuarryLocations.Insert(new MiningOreConfig("442 16 716",550,0.60,0.60,2,2,0.80));
+    // north milo ravine
+    local_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.90,2,2,2));
+    // south east westbrook
+    local_QuarryLocations.Insert(new MiningOreConfig("4497 49 5545",250,2,2,0.80,0.80,0.80));
+    //rfci
+    local_QuarryLocations.Insert(new MiningOreConfig("3787 13 8821",450,0.80,0.80,0.80,0.80,0.80));
+    //east waldo
+    local_QuarryLocations.Insert(new MiningOreConfig("9468 15 9039",75,2,2,0.80,0.75,0.85));
+    //north bayville
+    local_QuarryLocations.Insert(new MiningOreConfig("9052 17 13021",100,0.80,0.80,0.75,2,2));
+    //portland
+    local_QuarryLocations.Insert(new MiningOreConfig("5892 6 13717",330,0.80,0.80,0.80,0.80,0.80));
+    //archipeleago
+    local_QuarryLocations.Insert(new MiningOreConfig("2810 30 13686",200,0.85,0.85,0.80,0.75,0.85));
+    //arctic
+    // local_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.90,0.80,0.75,0.85));
+    //industrial explosion
+    // local_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.90,0.80,0.75,0.85));
     config.g_QuarryLocations = local_QuarryLocations;
   }
 }
