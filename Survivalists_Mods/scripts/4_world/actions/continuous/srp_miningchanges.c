@@ -1,45 +1,13 @@
-class CCTSurfaceAndRock extends CCTBase
-{
-	protected float m_MaximalActionDistanceSq;
-	
-	void CCTSurfaceAndRock ( float maximal_target_distance = UAMaxDistances.DEFAULT )
-	{
-		m_MaximalActionDistanceSq = maximal_target_distance * maximal_target_distance;
-	}
-	
-	override bool Can( PlayerBase player, ActionTarget target )
-	{	
-		if (!target)
-			return false;
-
-		if (!player)
-			return false;
-
-		Object targetObject = target.GetObject();
-    if (targetObject && targetObject.IsRock())
-    {
-      return true;
-    }
-		
-		if ( GetGame().IsServer() && GetGame().IsMultiplayer() )
-			return true;
-
-		return ( vector.DistanceSq(target.GetCursorHitPos(), player.GetPosition()) <= m_MaximalActionDistanceSq );
-	}
-};
-
-
-// this one is used for ore
 modded class CAContinuousMineRock
 {	
 	override bool GetMiningData(ActionData action_data )
 	{
 		RockBase ntarget;
     bool isInQuarry = false;
-    // Print("CAContinuousMineRock::GetMiningData");
+    // Print("CAContinuousMineRock::Start");
 		if ( Class.CastTo(ntarget, action_data.m_Target.GetObject()) )
 		{
-      // Print("Is Rock");
+      // Print("CAContinuousMineRock::Is Rock");
 			m_AmountOfDrops = Math.Max(1,ntarget.GetAmountOfDrops(action_data.m_MainItem));   
       isInQuarry = CheckQuarryDistances(action_data.m_Player.GetPosition(), ntarget);
       if (isInQuarry)
@@ -58,13 +26,13 @@ modded class CAContinuousMineRock
 		}
     string surface_type;
     vector position;
-    position =  action_data.m_Target.GetCursorHitPos();
+    position = action_data.m_Target.GetCursorHitPos();
     
     GetGame().SurfaceGetType( position[0], position[2], surface_type );
-    // Print("surface??: " + surface_type);
+    // Print("CAContinuousMineRock::Is not rock");
     if (surface_type == "stone_ext" || surface_type == "stone_int" || surface_type == "jmc_gravel")
     {
-      Print("Is Surface: " + surface_type);
+      // Print("CAContinuousMineRock::Surface Type: " + surface_type);
       m_AmountOfDrops = 1;   
       isInQuarry = CheckQuarryDistances(action_data.m_Player.GetPosition(), NULL);
       if (isInQuarry)
@@ -140,7 +108,6 @@ modded class CAContinuousMineRock
 		}
 	}
 
-
   bool CheckQuarryDistances(vector playerPosition, RockBase targetRock)
   {
     SRPConfig config = GetDayZGame().GetSRPConfigGlobal();    
@@ -215,17 +182,65 @@ modded class ActionMineRock
 {
 	override void CreateConditionComponents()  
 	{		
-		m_ConditionTarget = new CCTSurfaceAndRock(2.5);
+		m_ConditionTarget = new CCTNone;
 		m_ConditionItem = new CCINonRuined;
 	}
 
   override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-    //Action not allowed if player has broken legs
+		//Action not allowed if player has broken legs
 		if (player.GetBrokenLegs() == eBrokenLegs.BROKEN_LEGS)
-			return false;		
+			return false;
 
-    return true;
+    // Print("ActionMineRock: Legs OK: "+ target.GetComponentIndex());
+    if (target)
+    {
+      Object targetObject = target.GetObject();
+      // Print("ActionMineRock: HAS TARGET");
+      if (targetObject && targetObject.IsRock() )
+      {
+        // Print("ActionMineRock: IS ROCK");
+        return true;
+      }
+      // Print("ActionMineRock: NOT ROCK " + targetObject);
+
+  		// See if we are looking at something			
+      vector position = target.GetCursorHitPos();
+      if (position == vector.Zero)
+        return false;
+      
+      string surface_type;
+      
+      GetGame().SurfaceGetType3D( position[0], position[1]+0.1, position[2], surface_type );
+
+      // Print("ActionMineRock: CURSOR HIT: " + surface_type);
+      if (surface_type == "stone_ext" || surface_type == "stone_int" || surface_type == "jmc_gravel")
+      {
+        // Print("ActionMineRock: IS STONE");
+        // Sometimes SurfaceGetType3D ignores the Y, this makes it so the proper distance is calculated
+		    position[1] = GetGame().SurfaceY(position[0],position[2]);
+        // Print("SX: " + position[0] + " SY: " + position[1] + " SZ: " + position[2] + " PX: " + player.GetPosition()[0] + " PY: " + player.GetPosition()[1] + " PZ: " + player.GetPosition()[2] + " Z delta: " + Math.AbsFloat(position[2]-player.GetPosition()[2]));
+        if ( Math.AbsFloat(position[2]-player.GetPosition()[2]) <= 0.8)
+        {
+          // Print("ActionMineRock: WITHIN 1 METER");
+          return true;
+        }
+        // Print("ActionMineRock: OUTSIDE 1 METER: " + vector.DistanceSq(position, player.GetPosition()) );
+        return false;
+      }
+      // Print("ActionMineRock: NOT STONE");
+      return false;      
+    }
+    // Print("ActionMineRock: ALL FAIL " + targetObject);   
+    return false;
 	}
+};
 
+modded class ActionMineRock1H
+{
+  override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
+	{	
+    // Print("Can I mine one handed?");
+    return false;
+  }
 };

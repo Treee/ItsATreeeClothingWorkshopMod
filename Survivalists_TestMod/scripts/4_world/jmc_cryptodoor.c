@@ -68,7 +68,7 @@ class jmc_dungeon_Door06_Double extends House
 		// if (GetSecurityConfig().last_cryptodoor_state_checked)
 		// 	OpenCryptoDoors();
 		// else
-			CloseCrptoDoors();
+			CloseCryptoDoors();
 	}
 	
 	void StartOpenDoors() 
@@ -107,7 +107,7 @@ class jmc_dungeon_Door06_Double extends House
 		SetSynchDirty();
 		// int time = GetSecurityConfig().door_close_cooldown * 1000;
 		int time = 1 * 1000;
-		GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(CloseCrptoDoors, time, false);
+		GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(CloseCryptoDoors, time, false);
 	}
 	
 	void OpenCryptoDoors() 
@@ -122,7 +122,7 @@ class jmc_dungeon_Door06_Double extends House
 		}
 	}
 	
-	void CloseCrptoDoors() 
+	void CloseCryptoDoors() 
   {
 		cryptodoor_state_changing = false;
 		SetSynchDirty();

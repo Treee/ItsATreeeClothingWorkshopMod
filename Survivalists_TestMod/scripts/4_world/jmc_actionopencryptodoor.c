@@ -20,9 +20,14 @@ class ActionOpenCryptoDoor: ActionInteractBase
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		if( !target || !player) return false;
-		if( !IsBuilding(target) ) return false;
-
+		if( !target || !player) 
+    {
+      return false;    
+    }
+		if( !IsBuilding(target) ) 
+    {
+      return false;
+    }
 		jmc_dungeon_Door06_Double_Lever lever;
 		if( Class.CastTo(lever, target.GetObject()))
 		{
@@ -32,10 +37,9 @@ class ActionOpenCryptoDoor: ActionInteractBase
       }
 			string name = lever.GetActionComponentName(target.GetComponentIndex());
 			name.ToLower();
-      // Print("client: target component: " + name);
-			if (name == "component01")
+			if (name == "doors1")
       {
-				return ( !lever.IsLinkedDoorOpen() && lever.CanLinkedDoorState());
+				return ( !lever.IsLinkedDoorOpen());
       }
 		}
 		return false;
