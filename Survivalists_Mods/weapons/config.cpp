@@ -50,6 +50,18 @@ class CfgVehicles
 {
   class SRP_KitBase;
 
+  class SRP_WoodAttachmentGunKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Attachment Kit - Wood";
+		descriptionShort="A kit for creating wooden gun attachments.";
+    hiddenSelections[]={"camoground"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\srp_weaponkitbase_co.paa"
+		};
+	};
+
   class SRP_WeaponLongBarrel_Kit: SRP_KitBase //new
 	{
 		scope=2;

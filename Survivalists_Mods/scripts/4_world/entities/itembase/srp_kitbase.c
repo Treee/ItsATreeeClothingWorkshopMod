@@ -312,10 +312,6 @@ class SRP_WoodenStickArmor_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_SimpleBoneArmor_Kit extends SRP_IntermediateCraftingKitBase{};
 
 // weapons
-
-// gun smithing
-class TT_WoodAttachmentGunKit_Kit extends SRP_IntermediateCraftingKitBase{};
-
 class SRP_WeaponBladeKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeKarambitKnife_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeSnakeDagger_Kit extends SRP_IntermediateCraftingKitBase{};
@@ -372,6 +368,9 @@ class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
   }
 };
 class SRP_TaxidermyWall_Kit extends SRP_Taxidermy_Kit{};
+
+// GUNSMITHING
+class SRP_WoodAttachmentGunKit_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_WeaponLongBarrel_Kit extends SRP_IntermediateCraftingKitBase
 {
