@@ -1985,7 +1985,7 @@ class CfgVehicles
 		scope=2;
     displayName="Protected Nail Box";
     descriptionShort="This protected case is meant to hold a good amount of nails.";
-		itemSize[]={3,3};
+		itemSize[]={4,4};
 		itemsCargoSize[]={10,5};
 	};
 
