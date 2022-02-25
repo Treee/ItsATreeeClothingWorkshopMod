@@ -2316,6 +2316,29 @@ class CfgVehicles
 		};
   };
 
+  class SRP_MetalBarrel_Concrete_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Metal Barrel Kit - Concrete";
+		descriptionShort="A Metal Barrel Kit";
+	};
+  class SRP_MetalBarrel_Concrete: SRP_MetalBarrel_Colorbase // new
+  {
+    scope=2;
+    color="concrete";
+    displayName="Metal Barrel - Concrete Mixer";
+		descriptionShort="Used to mix concrete and mortar";
+    stackedUnit="ml";
+		varLiquidTypeInit=512;
+    itemsCargoSize[]={5,4};
+		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=5000;
+    destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+  };
+
   class SRP_CassetteBinder: SmallProtectorCase
   {
 		scope=2;

@@ -60,6 +60,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_MetalBarrel_Blue");
     InsertIngredient(0,"SRP_MetalBarrel_Red");
     InsertIngredient(0,"SRP_MetalBarrel_Yellow");
+    InsertIngredient(0,"SRP_MetalBarrel_Concrete");
 
     InsertIngredient(0,"SRP_HangingWoodenSign");
 

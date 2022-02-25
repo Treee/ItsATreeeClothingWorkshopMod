@@ -600,14 +600,14 @@ class CfgVehicles
 		descriptionShort="Bag Crafting Model Base";
 		model="Survivalists_Mods\gear\consumables\craftingmaterials_bag.p3d";
 		weight=1200;
-		itemSize[]={3,4};
+		itemSize[]={4,4};
 		itemBehaviour=0;
 		canBeSplit=1;
-		varQuantityInit=5;
+		varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=40;
+		varQuantityMax=4;
 		varQuantityDestroyOnMin=1;
-		varStackMax=40;
+		varStackMax=4;
 		inventorySlot[]={};
     hiddenSelections[]=
     {
@@ -656,6 +656,10 @@ class CfgVehicles
 		scope=2;
 		displayName="Bag of Mortar";
 		descriptionShort="A bag of mortar. Combined with various things to fill in gaps between stones.";
+    inventorySlot[]=
+		{	
+      "Material_Mortar"
+		};
     hiddenSelections[]=
     {
       "zbytek"
