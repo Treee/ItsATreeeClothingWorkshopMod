@@ -65,6 +65,43 @@ class CfgVehicles
 
 
   //----------------------------------- Custom Stuff
+  class SRP_PersonalRadio_NumberStations: Inventory_Base  // new
+  {
+		scope=2;
+		displayName="Strange Radio";
+		descriptionShort="A radio that fits in your hand. Something feels strange.";
+    model="Survivalists_Mods\gear\radio\handheldradio.p3d";
+    repairableWithKits[]={5,7};
+    itemSize[]={1,3};
+		repairCosts[]={30,25};
+    attachments[]=
+		{
+			"BatteryD",
+			// "Cassette"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradio_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\radio\data\handheldradio.rvmat"
+		};
+    class EnergyManager
+		{
+			hasIcon=1;
+			autoSwitchOff=1;
+			autoSwitchOffWhenInCargo=1;
+			plugType=1;
+			energyUsagePerSecond=0.1;
+			attachmentAction=1;
+			wetnessExposure=0.1;
+		};
+  };
 
   // 500 range
   class SRP_PersonalRadioSmallRed_Handheld: PersonalRadio  // Motorola1-5
