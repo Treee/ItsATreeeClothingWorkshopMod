@@ -234,6 +234,22 @@ class CfgVehicles
 		descriptionShort="A bladed weapon kit - Finish with a pipe. Do not put back into the forge.";
     attachments[]={};
 	};
+  class SRP_WeaponBladeCelticAxe_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Celtic Axe";
+		descriptionShort="A bladed weapon kit - Finish with some leather and other materials. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "Material_Shelter_Leather",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope",    
+      "Material_Shelter_Fabric"
+		};
+	};
 
   class SRP_Trenchknife: HuntingKnife
   {

@@ -312,7 +312,7 @@ class SRP_ArmorKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WoodenStickArmor_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_SimpleBoneArmor_Kit extends SRP_IntermediateCraftingKitBase{};
 
-// weapons
+// bladed weapons
 class SRP_WeaponBladeKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeKarambitKnife_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeSnakeDagger_Kit extends SRP_IntermediateCraftingKitBase{};
@@ -321,6 +321,11 @@ class SRP_WeaponBladeCrystalMace_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeKatana_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeWarCleaver_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladePipeAxe_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WeaponBladeCelticAxe_Kit extends SRP_IntermediateCraftingKitBase{};
+// blunt weapons
+class SRP_WeaponBluntKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WeaponBluntMacerator_Kit extends SRP_IntermediateCraftingKitBase{};
+
 class SRP_Dynamite_Stick_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_LetterKit1_Kit extends SRP_IntermediateCraftingKitBase{};
