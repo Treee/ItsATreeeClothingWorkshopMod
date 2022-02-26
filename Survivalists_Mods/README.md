@@ -764,6 +764,9 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 - https://freesound.org/people/the_very_Real_Horst/sounds/195313/ (Yin-Yang-Sound-of-Tibetan-Silver-Bells.mp3)
 - https://freesound.org/people/molicki/sounds/237688/ (1 Molicki, Ohm 0;33.mp3)
 - https://freesound.org/people/electra/sounds/445129/ (Tibetan bells loop)
+- https://freesound.org/people/imagery2/sounds/458570/ (Red alert buzzer)
+- https://freesound.org/people/unfa/sounds/352143/ (clean explosions)
+- https://freesound.org/people/Mr_KeybOred/sounds/372086/ (distant explosions)
 
 # Wishlist
 

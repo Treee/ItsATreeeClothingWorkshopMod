@@ -4,10 +4,13 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
 
   bool m_Playing;
   bool m_SyncPlaying;
+  int m_RadioFrequencyIndex;
+  int m_RadioFrequencyIndexSync;
     
   void SRP_PersonalRadio_NumberStations()
   {
     RegisterNetSyncVariableBool( "m_SyncPlaying" );
+    RegisterNetSyncVariableInt( "m_RadioFrequencyIndexSync" );
   }
     
   override void OnVariablesSynchronized()
@@ -22,11 +25,17 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
     {
       TurnOff();
     }
+    if (m_RadioFrequencyIndex != m_RadioFrequencyIndexSync)
+    {
+      m_RadioFrequencyIndex = m_RadioFrequencyIndexSync;
+      Play();
+    }
 	}	
    
   override void SetActions()
 	{
     super.SetActions();
+    AddAction(ActionTuneCrypticFrequency);
 		AddAction(ActionTurnOnWhileInHands);
 		AddAction(ActionTurnOffWhileInHands);
 		AddAction(ActionTurnOnWhileOnGround);
@@ -53,10 +62,7 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
   
   override void OnWorkStart()
   {
-    if (!Play())
-    {
-      TurnOff();
-    }
+    Play();
   }
 
   override void OnWorkStop()
@@ -64,18 +70,26 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
     Stop();
   }
 
+  void SetNextFrequency()
+  {
+    m_RadioFrequencyIndexSync++;
+    m_RadioFrequencyIndexSync = m_RadioFrequencyIndexSync % GetNumberStations().Count();
+    SetSynchDirty();
+  }
   
-  bool Play()
+  void Play()
   {    
-    if ( m_ActiveSound ) m_ActiveSound.SoundStop();
-    // PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns_Male.GetRandomElement(), 0, 0);
     if (!GetGame().IsDedicatedServer())
     {
-      PlaySoundSetLoop(m_ActiveSound, "Survivalists_Mods_NumberStation1_SoundSet", 0.5, 0.5);
+      if ( m_ActiveSound ) 
+      {
+        StopSoundSet( m_ActiveSound );
+      }
+      string soundSetName = GetNumberStations().Get(m_RadioFrequencyIndex);
+      PlaySoundSetLoop(m_ActiveSound, soundSetName, 0, 0);
     }    
     m_Playing = true;
     m_SyncPlaying = true;
-    return true;
   }
   
   void Stop()
@@ -85,8 +99,17 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
 
     if ( m_ActiveSound )
     {
-      m_ActiveSound.SoundStop();
-    }
-    
+      StopSoundSet( m_ActiveSound );
+    }    
+  }
+
+  TStringArray GetNumberStations()
+  {
+    return {
+      "Survivalists_Mods_NumberStation1_SoundSet",
+      "Survivalists_Mods_NumberStation2_SoundSet",
+      "Survivalists_Mods_NumberStation3_SoundSet",
+      "Survivalists_Mods_NumberStation4_SoundSet"
+    };
   }
 }

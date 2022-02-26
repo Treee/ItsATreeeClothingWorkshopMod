@@ -18,7 +18,21 @@ class CfgVehicles
   class SRP_ReadableBook_Colorbase;
   class SRP_ReadableScroll_Colorbase;
 
-  //============================= BOOKS
+  //============================= 
+  class SRP_ReadableBook_HuntingOnDeerIsle: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Hunting - On Deer Isle";
+		author="Erik The Hunter";
+		file="Survivalists_Retextures\gear\books\data\book_Hunting.html";
+		displayName="Hunting - On Deer Isle";
+		descriptionShort="A comprehensive guide on hunting the lands of Deer Isle.";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\books\data\book_Hunting_co.paa"
+		};
+	};
+
   class SRP_ReadableBook_DrugDangers: SRP_ReadableBook_Colorbase
 	{
 		scope=2;

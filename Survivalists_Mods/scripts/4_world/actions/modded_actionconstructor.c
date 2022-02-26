@@ -28,6 +28,8 @@ modded class ActionConstructor
     actions.Insert(ActionSRPDrawCards);    
     actions.Insert(ActionSRPSwitchDrawMode); 
 
-    actions.Insert(ActionFlipPlayingCard);    
+    actions.Insert(ActionFlipPlayingCard); 
+
+    actions.Insert(ActionTuneCrypticFrequency);
 	}
 };
