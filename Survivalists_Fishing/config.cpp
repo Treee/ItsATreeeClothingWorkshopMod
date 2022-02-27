@@ -2,18 +2,28 @@ class CfgMods
 {
 	class Survivalists_Fishing
 	{
-		type = "mod";
-		author = "ItsATreee";
-		name = "Survivalists_Fishing";
-		dir = "Survivalists_Fishing";
-		dependencies[] = {"World"};
+		type="mod";
+		author="ItsATreee";
+		name="Survivalists_Fishing";
+		dir="Survivalists_Fishing";
+    dependencies[]={"Game","World","Mission"};
 		class defs
 		{
+			class gameScriptModule
+			{
+				value="";
+        files[]={"Survivalists_Fishing/scripts/3_game"};			
+      };
 			class worldScriptModule
 			{
-				value = "";
-        files[] = {"Survivalists_Fishing/scripts/4_world"};			
+				value="";
+        files[]={"Survivalists_Fishing/scripts/4_world"};			
       };
+      class missionScriptModule
+			{
+				value="";
+				files[]={"Survivalists_Fishing/scripts/5_mission"};
+			};
 		};
 	};
 };
