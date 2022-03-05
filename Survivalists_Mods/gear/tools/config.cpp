@@ -23,7 +23,6 @@ class CfgVehicles
   class Compass;
   class FarmingHoe;
   class Container_Base;
-  class WeaponCleaningKit;
 
   class SRP_KitBase;
 
@@ -158,6 +157,11 @@ class CfgVehicles
       "Pliers",
       "Pliers1"
     };
+  };
+
+  class WeaponCleaningKit: Inventory_Base
+	{
+    canBeSplit=1;
   };
 
   // ---------------------------- Custom Stuff
