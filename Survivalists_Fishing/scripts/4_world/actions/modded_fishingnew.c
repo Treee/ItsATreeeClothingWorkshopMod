@@ -3,9 +3,8 @@ modded class FishingActionData
 	const float FISHING_SUCCESS 		= 0.2;
 	const float FISHING_BAIT_LOSS 		= 0.1; // default 0.02
 	const float FISHING_HOOK_LOSS 		= 0.02; // default 0.015;
-	const float FISHING_DAMAGE 			= 10.0; // default 5.0
+	const float FISHING_DAMAGE 			= 7.0; // default 5.0
 	const float FISHING_GARBAGE_CHANCE 	= 0.2;
-
 }
 
 // this stuff is called after a single unit of action
@@ -102,36 +101,6 @@ modded class ActionFishingNewCB
 				}
 			}
 			// damage the rod
-			m_ActionDataFishing.m_MainItem.AddHealth(-m_ActionDataFishing.FISHING_DAMAGE);
-		}
-	}
-	
-	override void HandleFishingResultFailure()
-	{
-    // if is the server
-		if (!GetGame().IsMultiplayer() || GetGame().IsServer())
-		{
-      // if there is no bait, attempt to initialize it
-			if (!m_ActionDataFishing.m_Bait)
-				m_ActionDataFishing.InitBait(ItemBase.Cast(m_ActionDataFishing.m_MainItem.FindAttachmentBySlotName("Hook")));
-			// random chance of losing the bait
-			if (Math.RandomFloatInclusive(0.0,1.0) > m_ActionDataFishing.FISHING_HOOK_LOSS) //loss of worm only
-			{
-        // if the hook is not empty
-				if (!m_ActionDataFishing.IsBaitEmptyHook())
-				{
-          // damage bait
-					m_ActionDataFishing.m_Bait.AddHealth(-m_ActionDataFishing.FISHING_DAMAGE);
-          // turn bait into hook
-					MiscGameplayFunctions.TurnItemIntoItem(m_ActionDataFishing.m_Bait,m_ActionDataFishing.m_Bait.ConfigGetString("hookType"),m_ActionDataFishing.m_Player);
-				}
-			}
-			else //loss of the entire hook
-			{
-        // destroy the whole hook
-				m_ActionDataFishing.m_Bait.Delete();
-			}
-			// damage the fishing pole
 			m_ActionDataFishing.m_MainItem.AddHealth(-m_ActionDataFishing.FISHING_DAMAGE);
 		}
 	}
