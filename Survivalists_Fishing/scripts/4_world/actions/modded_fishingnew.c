@@ -14,7 +14,7 @@ modded class ActionFishingNewCB
   override void CreateActionComponent()
 	{
 		EnableStateChangeCallback();
-		m_ActionData.m_ActionComponent = new CAContinuousRepeatFishing(15.0);
+		m_ActionData.m_ActionComponent = new CAContinuousRepeatFishing(1.0);
 	}
 
 	override void HandleFishingResultSuccess()
@@ -51,12 +51,12 @@ modded class ActionFishingNewCB
 				if (m_ActionDataFishing.m_IsSurfaceSea)
         {
           // give salt water fish
-          fishClassName = GetSaltWaterFish(rnd);
+          fishClassName = GetSaltWaterFish(rnd, m_ActionDataFishing.m_MainItem.GetType());
         }
 				else
         {
           // fresh water fish
-          fishClassName = GetFreshWaterFish(rnd);
+          fishClassName = GetFreshWaterFish(rnd, m_ActionDataFishing.m_MainItem.GetType());
         }
         if (fishClassName != "")
         {
@@ -72,12 +72,12 @@ modded class ActionFishingNewCB
         // if the surface is sea
 				if (m_ActionDataFishing.m_IsSurfaceSea )
 				{
-					junk_type = GetSaltWaterJunk(rnd);          
+					junk_type = GetSaltWaterJunk(rnd, m_ActionDataFishing.m_MainItem.GetType());          
 				}
         else
         {
           // fresh water junk
-					junk_type = GetFreshWaterJunk(rnd);
+					junk_type = GetFreshWaterJunk(rnd, m_ActionDataFishing.m_MainItem.GetType());
         }
         if (junk_type != "")
         {
@@ -95,7 +95,7 @@ modded class ActionFishingNewCB
 				if (fish.HasQuantity())
 				{
           // randomize it a bit
-					float coef = Math.RandomFloatInclusive(0.2, 2.0);
+					float coef = Math.RandomFloatInclusive(0.01, 1.0);
 					float item_quantity = fish.GetQuantityMax() * coef;
 					item_quantity = Math.Round(item_quantity);
 					fish.SetQuantity( item_quantity );
@@ -136,48 +136,48 @@ modded class ActionFishingNewCB
 		}
 	}
 
-  string GetSaltWaterFish(float chance)
+  string GetSaltWaterFish(float chance, string rodName)
   {
     string fishType = "Mackerel"; // default
     if (GetDayZGame().GetSRPFishingConfig())
     {
       if (GetDayZGame().GetSRPFishingConfig().m_SaltWaterFish)
       {
-        fishType = GetDayZGame().GetSRPFishingConfig().GetRandomSaltWaterFish(chance);
+        fishType = GetDayZGame().GetSRPFishingConfig().GetRandomSaltWaterFish(chance, rodName);
       }
     }
     return fishType;
   }
 
-  string GetSaltWaterJunk(float chance)
+  string GetSaltWaterJunk(float chance, string rodName)
   {
     string junkType = m_JunkTypes.Get(Math.RandomInt(0,m_JunkTypes.Count())); // default
     if (GetDayZGame().GetSRPFishingConfig())
     {
-      junkType = GetDayZGame().GetSRPFishingConfig().GetRandomSaltWaterJunk(chance);
+      junkType = GetDayZGame().GetSRPFishingConfig().GetRandomSaltWaterJunk(chance, rodName);
     }
     return junkType;
   }
 
-  string GetFreshWaterFish(float chance)
+  string GetFreshWaterFish(float chance, string rodName)
   {
     string fishType = "Carp"; // default
     if (GetDayZGame().GetSRPFishingConfig())
     {
       if (GetDayZGame().GetSRPFishingConfig().m_FreshWaterFish)
       {
-        fishType = GetDayZGame().GetSRPFishingConfig().GetRandomFreshWaterFish(chance);
+        fishType = GetDayZGame().GetSRPFishingConfig().GetRandomFreshWaterFish(chance, rodName);
       }
     }
     return fishType;
   }
   
-  string GetFreshWaterJunk(float chance)
+  string GetFreshWaterJunk(float chance, string rodName)
   {
     string junkType = m_JunkTypes.Get(Math.RandomInt(0,m_JunkTypes.Count())); // default
     if (GetDayZGame().GetSRPFishingConfig())
     {
-      junkType = GetDayZGame().GetSRPFishingConfig().GetRandomFreshWaterJunk(chance);
+      junkType = GetDayZGame().GetSRPFishingConfig().GetRandomFreshWaterJunk(chance, rodName);
     }
     return junkType;
   }
@@ -247,7 +247,6 @@ modded class ActionFishingNew
 		}
 
     float hotspot_modifier = 0.0;
-    float  = 0.0;
 
     if (GetDayZGame().GetSRPFishingConfig())
     {

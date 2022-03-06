@@ -58,7 +58,9 @@ class SRPFishingRodLuck
 }
 
 class SRPFishingConfig
-{
+{  
+  ref array<string> m_FishSizes = {"_Small", "_Medium", "_Large", "_Epic"};
+
   ref array<string> m_SaltWaterFish;
 	ref array<string> m_SaltWaterJunkItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
 	ref array<string> m_SaltWaterRareItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
@@ -72,71 +74,105 @@ class SRPFishingConfig
 	ref array<string> m_FreshWaterLegendaryItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
 
   ref array<float> m_SaltWaterLootChances; // = {junk,rare,epic,legendary}; // fish are considered the uncommon tier here
+  ref array<float> m_SaltWaterFishChances;
   ref array<float> m_FreshWaterLootChances; // = {junk,rare,epic,legendary}; // fish are considered the uncommon tier here
+  ref array<float> m_FreshWaterFishChances;
 
   ref array<ref SRPFishingHotspot> m_FishingHotspots; 
   ref array<ref SRPFishingRodLuck> m_FishingRodLuck;  
+
   
-  string GetRandomSaltWaterJunk(float chance)
+  string GetRandomSaltWaterJunk(float chance, string rodName)
   {
     string junk_type = "";
+    float rodLuckModifier = GetRodLuckModifier(rodName);
+    chance += Math.RandomFloatInclusive(0, rodLuckModifier);
     // legendary
-    if (chance > m_SaltWaterLootChances.Get(3))
+    if (chance > m_SaltWaterLootChances[3])
     {
-      junk_type = m_SaltWaterJunkItems.Get(Math.RandomInt(0,m_SaltWaterJunkItems.Count()));
+      junk_type = m_SaltWaterLegendaryItems.Get(Math.RandomInt(0,m_SaltWaterLegendaryItems.Count()));
     }
     // epic
-    else if (chance > m_SaltWaterLootChances.Get(2))
+    else if (chance > m_SaltWaterLootChances[2])
     {
-      junk_type = m_SaltWaterJunkItems.Get(Math.RandomInt(0,m_SaltWaterJunkItems.Count()));
+      junk_type = m_SaltWaterEpicItems.Get(Math.RandomInt(0,m_SaltWaterEpicItems.Count()));
     }
     // rare
-    else if (chance > m_SaltWaterLootChances.Get(1))
+    else if (chance > m_SaltWaterLootChances[1])
     {
-      junk_type = m_SaltWaterJunkItems.Get(Math.RandomInt(0,m_SaltWaterJunkItems.Count()));
+      junk_type = m_SaltWaterRareItems.Get(Math.RandomInt(0,m_SaltWaterRareItems.Count()));
     }
     // junk
-    else if (chance > m_SaltWaterLootChances.Get(0))
+    else if (chance > m_SaltWaterLootChances[0])
     {
       junk_type = m_SaltWaterJunkItems.Get(Math.RandomInt(0,m_SaltWaterJunkItems.Count()));
     }
     return junk_type;
   }
 
-  string GetRandomSaltWaterFish(float chance)
+  string GetRandomSaltWaterFish(float chance, string rodName)
   {
-    return m_SaltWaterFish.Get(Math.RandomInt(0,m_SaltWaterFish.Count()));
+    float rodLuckModifier = GetRodLuckModifier(rodName);
+    chance += Math.RandomFloatInclusive(0, rodLuckModifier);
+
+    string fishType = m_SaltWaterFish.Get(Math.RandomInt(0,m_SaltWaterFish.Count()));
+    for (int i = m_SaltWaterFishChances.Count() - 1; i > -1; i--)
+    {
+      if (chance >= m_SaltWaterFishChances[i])
+      {
+        fishType = fishType + m_FishSizes[i];
+        break;
+      }
+    }
+    // Print("Fish Type: " + fishType + " Chance: " + chance);
+    return fishType;
   }
 
-  string GetRandomFreshWaterJunk(float chance)
+  string GetRandomFreshWaterJunk(float chance, string rodName)
   {
     string junk_type = "";
+    float rodLuckModifier = GetRodLuckModifier(rodName);
+    chance += Math.RandomFloatInclusive(0, rodLuckModifier);
+
     // legendary
-    if (chance > m_FreshWaterLootChances.Get(3))
+    if (chance > m_FreshWaterLootChances[3])
     {
-      junk_type = m_FreshWaterJunkItems.Get(Math.RandomInt(0,m_FreshWaterJunkItems.Count()));
+      junk_type = m_FreshWaterLegendaryItems.Get(Math.RandomInt(0,m_FreshWaterLegendaryItems.Count()));
     }
     // epic
-    else if (chance > m_FreshWaterLootChances.Get(2))
+    else if (chance > m_FreshWaterLootChances[2])
     {
-      junk_type = m_FreshWaterJunkItems.Get(Math.RandomInt(0,m_FreshWaterJunkItems.Count()));
+      junk_type = m_FreshWaterEpicItems.Get(Math.RandomInt(0,m_FreshWaterEpicItems.Count()));
     }
     // rare
-    else if (chance > m_FreshWaterLootChances.Get(1))
+    else if (chance > m_FreshWaterLootChances[1])
     {
-      junk_type = m_FreshWaterJunkItems.Get(Math.RandomInt(0,m_FreshWaterJunkItems.Count()));
+      junk_type = m_FreshWaterRareItems.Get(Math.RandomInt(0,m_FreshWaterRareItems.Count()));
     }
     // junk
-    else if (chance > m_FreshWaterLootChances.Get(0))
+    else if (chance > m_FreshWaterLootChances[0])
     {
       junk_type = m_FreshWaterJunkItems.Get(Math.RandomInt(0,m_FreshWaterJunkItems.Count()));
     }
     return junk_type;
   }
 
-  string GetRandomFreshWaterFish(float chance)
+  string GetRandomFreshWaterFish(float chance, string rodName)
   {
-    return m_FreshWaterFish.Get(Math.RandomInt(0,m_FreshWaterFish.Count()));
+    float rodLuckModifier = GetRodLuckModifier(rodName);
+    chance += Math.RandomFloatInclusive(0, rodLuckModifier);
+
+    string fishType = m_FreshWaterFish.Get(Math.RandomInt(0,m_FreshWaterFish.Count()));
+    for (int i = m_FreshWaterFishChances.Count() - 1; i > -1; i--)
+    {
+      if (chance >= m_FreshWaterFishChances[i])
+      {
+        fishType = fishType + m_FishSizes[i];
+        break;
+      }
+    }
+    // Print("Fish Type: " + fishType + " Chance: " + chance);
+    return fishType;
   }
 
   // returns a float relative to how far away from a hotspot the player is

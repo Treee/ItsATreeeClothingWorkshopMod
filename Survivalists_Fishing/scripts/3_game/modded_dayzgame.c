@@ -25,19 +25,21 @@ modded class DayZGame
       {
         m_SRPFishingConfig = new SRPFishingConfig();
 
-        m_SRPFishingConfig.m_SaltWaterJunkItems = {"Wellies_Black"};
-        m_SRPFishingConfig.m_SaltWaterRareItems = {"Wellies_Brown"};
-        m_SRPFishingConfig.m_SaltWaterEpicItems = {"Wellies_Green"};
-        m_SRPFishingConfig.m_SaltWaterLegendaryItems = {"Wellies_Grey","Pot"};
+        m_SRPFishingConfig.m_SaltWaterJunkItems = {"Shovel"};
+        m_SRPFishingConfig.m_SaltWaterRareItems = {"Hammer"};
+        m_SRPFishingConfig.m_SaltWaterEpicItems = {"WoodAxe"};
+        m_SRPFishingConfig.m_SaltWaterLegendaryItems = {"Pot"};
         m_SRPFishingConfig.m_SaltWaterFish = {"Sardines", "Mackerel"};
-        m_SRPFishingConfig.m_SaltWaterLootChances = {0.1,0.2,0.3,0.4};
+        m_SRPFishingConfig.m_SaltWaterLootChances = {0,0.50,0.80,0.97};
+        m_SRPFishingConfig.m_SaltWaterFishChances = {0,0.50,0.80,0.97};
         
-        m_SRPFishingConfig.m_FreshWaterJunkItems = {"Wellies_Black"};			
-        m_SRPFishingConfig.m_FreshWaterRareItems = {"Wellies_Brown"};
-        m_SRPFishingConfig.m_FreshWaterEpicItems = {"Wellies_Green"};
-        m_SRPFishingConfig.m_FreshWaterLegendaryItems = {"Wellies_Grey","Pot"};
+        m_SRPFishingConfig.m_FreshWaterJunkItems = {"Hammer"};			
+        m_SRPFishingConfig.m_FreshWaterRareItems = {"Shovel"};
+        m_SRPFishingConfig.m_FreshWaterEpicItems = {"WoodAxe"};
+        m_SRPFishingConfig.m_FreshWaterLegendaryItems = {"Pot"};
         m_SRPFishingConfig.m_FreshWaterFish = {"Bitterlings", "Carp"};
-        m_SRPFishingConfig.m_FreshWaterLootChances = {0.1,0.2,0.3,0.4};
+        m_SRPFishingConfig.m_FreshWaterLootChances = {0,0.50,0.80,0.97};
+        m_SRPFishingConfig.m_FreshWaterFishChances = {0,0.30,0.80,0.97};
 
 
         m_SRPFishingConfig.m_FishingHotspots = new ref array<ref SRPFishingHotspot>;
