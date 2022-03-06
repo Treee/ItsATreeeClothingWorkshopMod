@@ -4,9 +4,6 @@ modded class PrepareFish
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-    // get rid of vanilla stuff
-    results.Clear();    
-
 		// Adjusts quantity of results to the quantity of the 1st ingredient
 		ItemBase item_ingredient = ingredients[0];
 		//Class.CastTo(item_ingredient, ingredients[0]);

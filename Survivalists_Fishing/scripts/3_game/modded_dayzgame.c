@@ -30,16 +30,16 @@ modded class DayZGame
         m_SRPFishingConfig.m_SaltWaterEpicItems = {"WoodAxe"};
         m_SRPFishingConfig.m_SaltWaterLegendaryItems = {"Pot"};
         m_SRPFishingConfig.m_SaltWaterFish = {"Sardines", "Mackerel"};
-        m_SRPFishingConfig.m_SaltWaterLootChances = {0,0.50,0.80,0.97};
-        m_SRPFishingConfig.m_SaltWaterFishChances = {0,0.50,0.80,0.97};
+        m_SRPFishingConfig.m_SaltWaterLootChances = {0,0.50,0.85,0.97};
+        m_SRPFishingConfig.m_SaltWaterFishChances = {0,0.50,0.85,0.97};
         
         m_SRPFishingConfig.m_FreshWaterJunkItems = {"Hammer"};			
         m_SRPFishingConfig.m_FreshWaterRareItems = {"Shovel"};
         m_SRPFishingConfig.m_FreshWaterEpicItems = {"WoodAxe"};
         m_SRPFishingConfig.m_FreshWaterLegendaryItems = {"Pot"};
         m_SRPFishingConfig.m_FreshWaterFish = {"Bitterlings", "Carp"};
-        m_SRPFishingConfig.m_FreshWaterLootChances = {0,0.50,0.80,0.97};
-        m_SRPFishingConfig.m_FreshWaterFishChances = {0,0.30,0.80,0.97};
+        m_SRPFishingConfig.m_FreshWaterLootChances = {0,0.50,0.85,0.97};
+        m_SRPFishingConfig.m_FreshWaterFishChances = {0,0.45,0.85,0.97};
 
 
         m_SRPFishingConfig.m_FishingHotspots = new ref array<ref SRPFishingHotspot>;
