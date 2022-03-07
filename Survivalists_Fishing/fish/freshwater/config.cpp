@@ -690,5 +690,267 @@ class CfgVehicles
     };
   };
 
+  //======================================= Mutant FISH
+  class MutantFish_ColorBase: FreshWaterFish_Base
+  {
+    scope=0;
+    displayName="Mutant";
+    descriptionShort="A mutant fish found in fresh water.";
+    model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
+    hiddenSelections[]={"zbytek"};
+    rotationFlags=64;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						
+						{1,{"Survivalists_Fishing\fish\freshwater\data\mutantfish.rvmat"}},						
+						{0.69999999,{"Survivalists_Fishing\fish\freshwater\data\mutantfish.rvmat"}},						
+						{0.5,{"Survivalists_Fishing\fish\freshwater\data\mutantfish.rvmat"}},						
+						{0.30000001,{"Survivalists_Fishing\fish\freshwater\data\mutantfish.rvmat"}},						
+						{0,{"Survivalists_Fishing\fish\freshwater\data\mutantfish.rvmat"}}
+				  };
+				};
+			};
+		};
+  };
+
+  class FreshWaterFishFilletMeat_MutantFish: FreshWaterFishFilletMeat_Base
+  {
+    scope=2;
+		displayName="Mutant Fish Fillet";
+		descriptionShort="A fillet of the mutant fresh water fish.";
+  };
+
+  // Red
+  class MutantFish_Red_Small: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_co.paa"
+    };
+  };
+  class MutantFish_Red_Medium: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_co.paa"
+    };
+  };
+  class MutantFish_Red_Large: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_co.paa"
+    };
+  };
+  class MutantFish_Red_Epic: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_co.paa"
+    };
+  };
+  // blue
+  class MutantFish_Blue_Small: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_blue_co.paa"
+    };
+  };
+  class MutantFish_Blue_Medium: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_blue_co.paa"
+    };
+  };
+  class MutantFish_Blue_Large: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_blue_co.paa"
+    };
+  };
+  class MutantFish_Blue_Epic: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_blue_co.paa"
+    };
+  };  
+  // Green
+  class MutantFish_Green_Small: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_green_co.paa"
+    };
+  };
+  class MutantFish_Green_Medium: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_green_co.paa"
+    };
+  };
+  class MutantFish_Green_Large: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_green_co.paa"
+    };
+  };
+  class MutantFish_Green_Epic: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_green_co.paa"
+    };
+  };
+  // yellow
+  class MutantFish_Yellow_Small: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_yellow_co.paa"
+    };
+  };
+  class MutantFish_Yellow_Medium: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_yellow_co.paa"
+    };
+  };
+  class MutantFish_Yellow_Large: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_yellow_co.paa"
+    };
+  };
+  class MutantFish_Yellow_Epic: MutantFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\mutantfish_yellow_co.paa"
+    };
+  };
+
 
 };

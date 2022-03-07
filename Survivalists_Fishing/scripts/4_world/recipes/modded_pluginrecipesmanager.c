@@ -10,5 +10,6 @@ modded class PluginRecipesManager
     RegisterRecipe(new PrepareCoralFish);
     RegisterRecipe(new PrepareAngelFish);
     RegisterRecipe(new PrepareTroutFish);
+    RegisterRecipe(new PrepareMutantFish);
 	}
 };
