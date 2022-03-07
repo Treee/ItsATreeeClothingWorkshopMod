@@ -694,7 +694,7 @@ class CfgVehicles
   class MutantFish_ColorBase: FreshWaterFish_Base
   {
     scope=0;
-    displayName="Mutant";
+    displayName="Mutant Fish";
     descriptionShort="A mutant fish found in fresh water.";
     model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
     hiddenSelections[]={"zbytek"};
@@ -952,5 +952,265 @@ class CfgVehicles
     };
   };
 
+  //======================================= SPLAKE FISH
+  class SplakeFish_ColorBase: FreshWaterFish_Base
+  {
+    scope=0;
+    displayName="Splake";
+    descriptionShort="A fish found in fresh water. Sometimes referred to as a Wendigo";
+    model="Survivalists_Fishing\fish\freshwater\splake.p3d";
+    hiddenSelections[]={"zbytek"};    
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						
+						{1,{"Survivalists_Fishing\fish\freshwater\data\splake.rvmat"}},						
+						{0.69999999,{"Survivalists_Fishing\fish\freshwater\data\splake.rvmat"}},						
+						{0.5,{"Survivalists_Fishing\fish\freshwater\data\splake.rvmat"}},						
+						{0.30000001,{"Survivalists_Fishing\fish\freshwater\data\splake.rvmat"}},						
+						{0,{"Survivalists_Fishing\fish\freshwater\data\splake.rvmat"}}
+				  };
+				};
+			};
+		};
+  };
+
+  class FreshWaterFishFilletMeat_Splake: FreshWaterFishFilletMeat_Base
+  {
+    scope=2;
+		displayName="Splake Fish Fillet";
+		descriptionShort="A fillet of the splake fresh water fish.";
+  };
+
+  // Red
+  class SplakeFish_Red_Small: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_co.paa"
+    };
+  };
+  class SplakeFish_Red_Medium: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_co.paa"
+    };
+  };
+  class SplakeFish_Red_Large: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_co.paa"
+    };
+  };
+  class SplakeFish_Red_Epic: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_co.paa"
+    };
+  };
+  // blue
+  class SplakeFish_Blue_Small: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_blue_co.paa"
+    };
+  };
+  class SplakeFish_Blue_Medium: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_blue_co.paa"
+    };
+  };
+  class SplakeFish_Blue_Large: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_blue_co.paa"
+    };
+  };
+  class SplakeFish_Blue_Epic: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_blue_co.paa"
+    };
+  };  
+  // Green
+  class SplakeFish_Green_Small: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_green_co.paa"
+    };
+  };
+  class SplakeFish_Green_Medium: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_green_co.paa"
+    };
+  };
+  class SplakeFish_Green_Large: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_green_co.paa"
+    };
+  };
+  class SplakeFish_Green_Epic: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_green_co.paa"
+    };
+  };
+  // yellow
+  class SplakeFish_Yellow_Small: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_yellow_co.paa"
+    };
+  };
+  class SplakeFish_Yellow_Medium: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_yellow_co.paa"
+    };
+  };
+  class SplakeFish_Yellow_Large: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_yellow_co.paa"
+    };
+  };
+  class SplakeFish_Yellow_Epic: SplakeFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\freshwater\data\splake_yellow_co.paa"
+    };
+  };
 
 };
