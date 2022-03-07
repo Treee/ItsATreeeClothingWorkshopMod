@@ -748,7 +748,7 @@ class CfgVehicles
   };
 
 
-  //======================================= CORAL FISH
+  //======================================= ANGEL FISH
   class AngelFish_ColorBase: SaltWaterFish_Base
   {
     scope=0;

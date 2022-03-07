@@ -9,5 +9,6 @@ modded class PluginRecipesManager
     //---------Deconstruct Items into Kits
     RegisterRecipe(new PrepareCoralFish);
     RegisterRecipe(new PrepareAngelFish);
+    RegisterRecipe(new PrepareTroutFish);
 	}
 };
