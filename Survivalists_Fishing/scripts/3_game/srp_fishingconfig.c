@@ -78,7 +78,7 @@ class SRPFishingConfig
   ref array<float> m_FreshWaterLootChances; // = {junk,rare,epic,legendary}; // fish are considered the uncommon tier here
   ref array<float> m_FreshWaterFishChances;
 
-  ref array<ref SRPFishingHotspot> m_FishingHotspots; 
+  ref array<ref SRPFishingHotspot> m_FishingHotspots;
   ref array<ref SRPFishingRodLuck> m_FishingRodLuck;  
 
   
