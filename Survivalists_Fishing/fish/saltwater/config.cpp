@@ -1328,4 +1328,211 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_silver_co.paa"
     };
   };
+
+  //======================================= ANGLER FISH
+  class AnglerFish_ColorBase: SaltWaterFish_Base
+  {
+    scope=0;
+    displayName="Angler Fish";
+    descriptionShort="A deep water fish found in salt water.";
+    model="Survivalists_Fishing\fish\saltwater\anglerfish.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						
+						{1,{"Survivalists_Fishing\fish\saltwater\data\anglerfish.rvmat"}},						
+						{0.69999999,{"Survivalists_Fishing\fish\saltwater\data\anglerfish.rvmat"}},						
+						{0.5,{"Survivalists_Fishing\fish\saltwater\data\anglerfish.rvmat"}},						
+						{0.30000001,{"Survivalists_Fishing\fish\saltwater\data\anglerfish.rvmat"}},						
+						{0,{"Survivalists_Fishing\fish\saltwater\data\anglerfish.rvmat"}}
+				  };
+				};
+			};
+		};
+  };
+
+  class SaltWaterFishFilletMeat_AnglerFish: SaltWaterFishFilletMeat_Base
+  {
+    scope=2;
+		displayName="Angler Fish Fillet";
+		descriptionShort="A fillet of the salt water angler fish.";
+  };
+
+  // blue
+  class AnglerFish_Blue_Small: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_co.paa"
+    };
+  };
+  class AnglerFish_Blue_Medium: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_co.paa"
+    };
+  };
+  class AnglerFish_Blue_Large: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_co.paa"
+    };
+  };
+  class AnglerFish_Blue_Epic: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_co.paa"
+    };
+  };  
+  // Purple
+  class AnglerFish_Purple_Small: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_purple_co.paa"
+    };
+  };
+  class AnglerFish_Purple_Medium: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_purple_co.paa"
+    };
+  };
+  class AnglerFish_Purple_Large: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_purple_co.paa"
+    };
+  };
+  class AnglerFish_Purple_Epic: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_purple_co.paa"
+    };
+  };
+  // Silver
+  class AnglerFish_Silver_Small: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_silver_co.paa"
+    };
+  };
+  class AnglerFish_Silver_Medium: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_silver_co.paa"
+    };
+  };
+  class AnglerFish_Silver_Large: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_silver_co.paa"
+    };
+  };
+  class AnglerFish_Silver_Epic: AnglerFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\anglerfish_silver_co.paa"
+    };
+  };
+
 };

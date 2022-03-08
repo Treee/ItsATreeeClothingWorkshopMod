@@ -15,3 +15,5 @@
 - "fish 3d" (https://skfb.ly/o7NUE) by victory_mirosya is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Sailfish" (https://skfb.ly/6DGVV) by Mateus Schwaab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Angler Fish Creature (Pamuya)" (https://skfb.ly/QVpr) by Ray is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
