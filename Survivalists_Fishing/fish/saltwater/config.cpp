@@ -1012,5 +1012,320 @@ class CfgVehicles
     };
   };
 
+  //======================================= SAILFISH
+  class SailFish_ColorBase: SaltWaterFish_Base
+  {
+    scope=0;
+    displayName="SailFish";
+    descriptionShort="A large and powerful fish found in salt water.";
+    model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						
+						{1,{"Survivalists_Fishing\fish\saltwater\data\sailfish.rvmat"}},						
+						{0.69999999,{"Survivalists_Fishing\fish\saltwater\data\sailfish.rvmat"}},						
+						{0.5,{"Survivalists_Fishing\fish\saltwater\data\sailfish.rvmat"}},						
+						{0.30000001,{"Survivalists_Fishing\fish\saltwater\data\sailfish.rvmat"}},						
+						{0,{"Survivalists_Fishing\fish\saltwater\data\sailfish.rvmat"}}
+				  };
+				};
+			};
+		};
+  };
 
+  class SaltWaterFishFilletMeat_SailFish: SaltWaterFishFilletMeat_Base
+  {
+    scope=2;
+		displayName="SailFish Fillet";
+		descriptionShort="A fillet of the salt water sailfish.";
+  };
+
+  // blue
+  class SailFish_Blue_Small: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
+    };
+  };
+  class SailFish_Blue_Medium: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
+    };
+  };
+  class SailFish_Blue_Large: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
+    };
+  };
+  class SailFish_Blue_Epic: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
+    };
+  };
+  
+  // green
+  class SailFish_Green_Small: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_green_co.paa"
+    };
+  };
+  class SailFish_Green_Medium: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_green_co.paa"
+    };
+  };
+  class SailFish_Green_Large: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_green_co.paa"
+    };
+  };
+  class SailFish_Green_Epic: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_green_co.paa"
+    };
+  };
+  // red
+  class SailFish_Red_Small: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_red_co.paa"
+    };
+  };
+  class SailFish_Red_Medium: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_red_co.paa"
+    };
+  };
+  class SailFish_Red_Large: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_red_co.paa"
+    };
+  };
+  class SailFish_Red_Epic: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_red_co.paa"
+    };
+  };
+  // yellow
+  class SailFish_Yellow_Small: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_yellow_co.paa"
+    };
+  };
+  class SailFish_Yellow_Medium: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_yellow_co.paa"
+    };
+  };
+  class SailFish_Yellow_Large: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_yellow_co.paa"
+    };
+  };
+  class SailFish_Yellow_Epic: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_yellow_co.paa"
+    };
+  };  
+  // silver
+  class SailFish_Silver_Small: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_silver_co.paa"
+    };
+  };
+  class SailFish_Silver_Medium: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_silver_co.paa"
+    };
+  };
+  class SailFish_Silver_Large: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_silver_co.paa"
+    };
+  };
+  class SailFish_Silver_Epic: SailFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\sailfish_silver_co.paa"
+    };
+  };
 };
