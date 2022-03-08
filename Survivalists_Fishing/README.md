@@ -11,3 +11,5 @@
 - "Lowpoly Fish" (https://skfb.ly/6YsIz) by RBG_illustrations is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Fish" (https://skfb.ly/6D7tB) by omarme37 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "fish 3d" (https://skfb.ly/o7NUE) by victory_mirosya is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
