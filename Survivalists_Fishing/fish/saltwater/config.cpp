@@ -1535,4 +1535,266 @@ class CfgVehicles
     };
   };
 
+  //======================================= HAMMERHEAD SHARK
+  class HammerHeadFish_ColorBase: SaltWaterFish_Base
+  {
+    scope=0;
+    displayName="Hammer Head Shark";
+    descriptionShort="A deep water shark found in salt water.";
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
+    rotationFlags=64;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						
+						{1,{"Survivalists_Fishing\fish\saltwater\data\hammerheadshark.rvmat"}},						
+						{0.69999999,{"Survivalists_Fishing\fish\saltwater\data\hammerheadshark.rvmat"}},						
+						{0.5,{"Survivalists_Fishing\fish\saltwater\data\hammerheadshark.rvmat"}},						
+						{0.30000001,{"Survivalists_Fishing\fish\saltwater\data\hammerheadshark.rvmat"}},						
+						{0,{"Survivalists_Fishing\fish\saltwater\data\hammerheadshark.rvmat"}}
+				  };
+				};
+			};
+		};
+  };
+
+  class SaltWaterFishFilletMeat_HammerHeadFish: SaltWaterFishFilletMeat_Base
+  {
+    scope=2;
+		displayName="Hammer Head Shark Fillet";
+		descriptionShort="A fillet of the salt water hammerhead shark.";
+  };
+
+  // blue
+  class HammerHeadFish_Blue_Small: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_co.paa"
+    };
+  };
+  class HammerHeadFish_Blue_Medium: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_co.paa"
+    };
+  };
+  class HammerHeadFish_Blue_Large: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_co.paa"
+    };
+  };
+  class HammerHeadFish_Blue_Epic: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_co.paa"
+    };
+  };  
+  // Red
+  class HammerHeadFish_Red_Small: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_red_co.paa"
+    };
+  };
+  class HammerHeadFish_Red_Medium: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_red_co.paa"
+    };
+  };
+  class HammerHeadFish_Red_Large: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_red_co.paa"
+    };
+  };
+  class HammerHeadFish_Red_Epic: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_red_co.paa"
+    };
+  };
+  // Silver
+  class HammerHeadFish_Silver_Small: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_silver_co.paa"
+    };
+  };
+  class HammerHeadFish_Silver_Medium: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_silver_co.paa"
+    };
+  };
+  class HammerHeadFish_Silver_Large: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_silver_co.paa"
+    };
+  };
+  class HammerHeadFish_Silver_Epic: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_silver_co.paa"
+    };
+  };
+  // Yellow
+  class HammerHeadFish_Yellow_Small: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={1,2};
+		weight=250;
+		varQuantityInit=500;
+		varQuantityMax=500;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_yellow_co.paa"
+    };
+  };
+  class HammerHeadFish_Yellow_Medium: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,2};
+		weight=500;
+		varQuantityInit=750;
+		varQuantityMax=750;
+    stackedUnit="g";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_yellow_co.paa"
+    };
+  };
+  class HammerHeadFish_Yellow_Large: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={2,3};
+		weight=750;
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_yellow_co.paa"
+    };
+  };
+  class HammerHeadFish_Yellow_Epic: HammerHeadFish_ColorBase
+  {
+    scope=2;
+    itemSize[]={3,3};
+		weight=1500;
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_yellow_co.paa"
+    };
+  };
+
 };
