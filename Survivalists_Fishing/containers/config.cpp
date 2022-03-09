@@ -27,6 +27,18 @@ class CfgVehicles
 		physLayer="item_small";
 		weight=5000;
 		itemSize[]={6,5};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Fishing\containers\data\tacklebox_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Fishing\containers\data\tacklebox.rvmat"
+		};
 		class Cargo
 		{
 			itemsCargoSize[]={6,5};

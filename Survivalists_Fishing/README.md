@@ -25,3 +25,5 @@
 - "Fishing Lures #2" (https://skfb.ly/osnIY) by Mikhail Antonov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Grandpa's Tacklebox" (https://skfb.ly/oqNAZ) by Ryan Jeter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Fishing Rod" (https://skfb.ly/opGnP) by shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
