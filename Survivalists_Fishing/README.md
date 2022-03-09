@@ -19,3 +19,7 @@
 - "Angler Fish Creature (Pamuya)" (https://skfb.ly/QVpr) by Ray is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Waltz of the sharks" (https://skfb.ly/6VsLs) by Eques_inferno is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Fishing Lures" (https://skfb.ly/o8Z7w) by Mikhail Antonov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Fishing Lures #2" (https://skfb.ly/osnIY) by Mikhail Antonov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
