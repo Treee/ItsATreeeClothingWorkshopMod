@@ -1,0 +1,1 @@
+class SRP_Aquarium extends DeployableContainer_Base{};

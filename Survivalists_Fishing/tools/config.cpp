@@ -16,7 +16,7 @@ class CfgVehicles
 {	
   class FishingRod_Base_New;
 
-  class HandMadeFishingRod: FishingRod_Base_New
+  class SRP_HandMadeFishingRod: FishingRod_Base_New
 	{
 		scope=2;
 		displayName="Hand Made Fishing Rod";
@@ -111,4 +111,56 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_HandMadeFishingRod_Blue: SRP_HandMadeFishingRod
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Fishing\tools\data\handmadefishingrod_blue_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Fishing\tools\data\handmadefishingrod.rvmat"
+		};
+	};
+
+  class SRP_HandMadeFishingRod_Purple: SRP_HandMadeFishingRod
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Fishing\tools\data\handmadefishingrod_purple_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Fishing\tools\data\handmadefishingrod.rvmat"
+		};
+	};
+
+  class SRP_HandMadeFishingRod_Red: SRP_HandMadeFishingRod
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Fishing\tools\data\handmadefishingrod_red_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Fishing\tools\data\handmadefishingrod.rvmat"
+		};
+	};
+
 };

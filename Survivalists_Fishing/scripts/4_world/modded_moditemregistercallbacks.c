@@ -22,5 +22,6 @@ modded class ModItemRegisterCallbacks
     super.RegisterHeavy( pType, pBehavior );
     pType.AddItemInHandsProfileIK("SailFish_ColorBase", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
     pType.AddItemInHandsProfileIK("HammerHeadFish_ColorBase", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
+    pType.AddItemInHandsProfileIK("SRP_Aquarium", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
   };
 }

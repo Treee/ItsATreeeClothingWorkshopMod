@@ -51,4 +51,38 @@ class CfgVehicles
       class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
 		};
 	};
+
+  class SRP_Aquarium: Container_Base // new
+	{
+		scope=2;
+		displayName="Aquarium";
+		descriptionShort="An old world aquarium.";
+		model="Survivalists_Fishing\containers\aquarium.p3d";    
+		itemBehaviour=0;
+    useEntityHierarchy="true";
+		physLayer="item_small";
+		weight=5000;
+		itemSize[]={6,6};
+    itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "SRP_Fish1",
+      "SRP_Fish2",
+      "SRP_Fish3",
+      "SRP_Fish4",
+      "SRP_Fish5",
+    };
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Fishing\containers\data\aquarium_ca.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Fishing\containers\data\aquarium.rvmat"
+		};
+	};
 };
