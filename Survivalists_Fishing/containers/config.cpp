@@ -85,4 +85,34 @@ class CfgVehicles
 			"Survivalists_Fishing\containers\data\aquarium.rvmat"
 		};
 	};
+
+  class SRP_WoodenFishHanger: Container_Base // new
+	{
+		scope=2;
+		displayName="Wooden Fish Post";
+		descriptionShort="A wooden post to hang a prize fish.";
+		model="Survivalists_Fishing\containers\woodenfishhanger.p3d";    
+		itemBehaviour=0;
+    useEntityHierarchy="true";
+		physLayer="item_small";
+		weight=5000;
+		itemSize[]={6,6};
+    itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "SRP_Fish1"
+    };
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Fishing\containers\data\woodenfishhanger_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"
+		};
+	};
 };

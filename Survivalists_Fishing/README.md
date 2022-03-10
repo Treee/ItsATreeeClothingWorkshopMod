@@ -29,3 +29,5 @@
 - "Fishing Rod" (https://skfb.ly/opGnP) by shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Aquarium Piano" (https://skfb.ly/6t7FG) by Koppenhaver is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Medieval Lamp Post" (https://skfb.ly/6XuLK) by Daan van Leeuwen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
