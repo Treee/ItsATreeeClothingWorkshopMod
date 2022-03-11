@@ -16,7 +16,11 @@ class SRP_Clam extends Edible_Base
 	{
 		return false;
 	}
-}
+};
+
+class SRP_Clam_Blue extends SRP_Clam{};
+class SRP_Clam_Red extends SRP_Clam{};
+class SRP_Clam_Silver extends SRP_Clam{};
 
 class SRP_Clam_Opened extends Edible_Base
 {
@@ -37,6 +41,10 @@ class SRP_Clam_Opened extends Edible_Base
     }
 	}
 };
+
+class SRP_Clam_Blue_Opened extends SRP_Clam_Opened{};
+class SRP_Clam_Red_Opened extends SRP_Clam_Opened{};
+class SRP_Clam_Silver_Opened extends SRP_Clam_Opened{};
 
 class SRP_ClamFilletMeat extends Edible_Base
 {
@@ -75,4 +83,4 @@ class SRP_ClamFilletMeat extends Edible_Base
 		AddAction(ActionCreateIndoorFireplace);
 		AddAction(ActionCreateIndoorOven);
 	}
-}
+};
