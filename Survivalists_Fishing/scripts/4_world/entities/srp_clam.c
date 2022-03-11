@@ -1,18 +1,18 @@
 class SRP_Clam extends Edible_Base
 {
-	override void Open()
-	{
-		ReplaceEdibleWithNew("SRP_Clam_Opened");
-	}
-	
 	override void SetActions()
 	{
 		super.SetActions();
 		
-		AddAction(ActionOpen);
+		AddAction(ActionOpenClam);
 	}
 	
 	override bool IsOpen()
+	{
+		return false;
+	}
+
+  override bool CanDecay()
 	{
 		return false;
 	}
@@ -20,32 +20,47 @@ class SRP_Clam extends Edible_Base
 
 class SRP_Clam_Opened extends Edible_Base
 {
-  float m_PearlChance = 0.05;
-
-  override void EEInit() 
-  {
-		super.EEInit();
-		if ( GetGame().IsDedicatedServer() ) // Multiplayer server
-    {
-      AddHealth(-200);
-      float rnd = Math.RandomFloatInclusive(0,1);
-      float calculatPearlChance = 1-m_PearlChance;
-      if (rnd > calculatPearlChance)
-      {
-        GetInventory().CreateAttachment("SRP_Pearl");
-      }
-
-      GetInventory().CreateAttachment("ClamFilletMeat");
-      GetInventory().CreateAttachment("ClamFilletMeat");
-    }
-	}
-
 	override bool CanDecay()
 	{
 		return false;
 	}
 	
-	override bool CanProcessDecay()
+	override void EEItemDetached(EntityAI item, string slot_name)
+	{
+		super.EEItemDetached(item, slot_name);
+		if ( GetGame().IsDedicatedServer() )
+    {
+      if (slot_name == "SRP_ClamPearl" || slot_name == "SRP_ClamMeat")
+      {
+        AddHealth(-200);
+      }		
+    }
+	}
+};
+
+class SRP_ClamFilletMeat extends Edible_Base
+{
+	override bool CanBeCooked()
+	{
+		return true;
+	}		
+	
+	override bool CanBeCookedOnStick()
+	{
+		return true;
+	}
+	
+	override bool IsMeat()
+	{
+		return true;
+	}
+	
+	override bool CanDecay()
+	{
+		return true;
+	}
+
+  override bool CanProcessDecay()
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
 	}
@@ -54,7 +69,10 @@ class SRP_Clam_Opened extends Edible_Base
 	{
 		super.SetActions();
 		
-		// AddAction(ActionForceFeedCan);
-		// AddAction(ActionEatCan);
+		AddAction(ActionForceFeed);
+		AddAction(ActionEatMeat);
+		
+		AddAction(ActionCreateIndoorFireplace);
+		AddAction(ActionCreateIndoorOven);
 	}
-};
+}

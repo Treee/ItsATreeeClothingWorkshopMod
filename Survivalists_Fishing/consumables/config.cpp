@@ -29,7 +29,7 @@ class CfgVehicles
     itemsCargoSize[]={0,0};
     inventorySlot[]=
     {
-      "ClamPearl"
+      "SRP_ClamPearl"
     };
 		class DamageSystem
 		{

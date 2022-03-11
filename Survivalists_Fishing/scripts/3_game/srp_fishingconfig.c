@@ -81,6 +81,12 @@ class SRPFishingConfig
   ref array<ref SRPFishingHotspot> m_FishingHotspots;
   ref array<ref SRPFishingRodLuck> m_FishingRodLuck;  
 
+  float m_ClamPearlChance;
+
+  float GetClamPearlChance()
+  {
+    return m_ClamPearlChance;
+  }
   
   string GetRandomSaltWaterJunk(float chance, string rodName)
   {

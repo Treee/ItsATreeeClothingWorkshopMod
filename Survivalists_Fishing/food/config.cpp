@@ -17,12 +17,12 @@ class CfgVehicles
   class Edible_Base;
   class FoodAnimationSources;
 
-  class ClamFilletMeat: Edible_Base
+  class SRP_ClamFilletMeat: Edible_Base
 	{
-		scope=0;
+		scope=2;
 		displayName="Clam Meat";
 		descriptionShort="A large piece of clam meat.";
-		model="\dz\gear\food\carp_fillet.p3d";
+		model="Survivalists_Fishing\food\clam_tongue.p3d";
 		debug_ItemCategory=6;
 		rotationFlags=34;
 		weight=0;
@@ -50,8 +50,7 @@ class CfgVehicles
 			"SmokingB",
 			"SmokingC",
       "SmokingD",
-      "ClamMeat1",
-      "ClamMeat2"
+      "SRP_ClamMeat"
 		};
 		hiddenSelections[]=
 		{
@@ -291,9 +290,8 @@ class CfgVehicles
 		isMeleeWeapon=1;
     attachments[]=
     {
-      "ClamPearl",
-      "ClamMeat1",
-      "ClamMeat2"
+      "SRP_ClamPearl",
+      "SRP_ClamMeat"
     };
 		hiddenSelections[]=
 		{
@@ -321,14 +319,6 @@ class CfgVehicles
 				};
 			};
 		};
-		// class Nutrition
-		// {
-		// 	fullnessIndex=2;
-		// 	energy=150;
-		// 	water=100;
-		// 	nutritionalIndex=1;
-		// 	toxicity=0;
-		// };
 		class AnimEvents
 		{
 			class SoundWeapon
