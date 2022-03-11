@@ -95,10 +95,11 @@ class SRP_LabTube_MutantLiquidAntibiotic extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_MutantLiquidSterilized extends SRP_LabTube_Colorbase
 {
   float m_RadiationExposure = 0;
-  float m_MaxExposure = 600;
+  float m_MaxExposure = 30;
 
   void UpdateRadiationExposure(PlayerBase m_Player, float change)
   {
+    Print("Radiation exposure: " + m_RadiationExposure + " change: " + change);
     if (m_RadiationExposure > -1)
     {
       m_RadiationExposure += change;

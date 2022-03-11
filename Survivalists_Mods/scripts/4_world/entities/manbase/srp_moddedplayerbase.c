@@ -105,8 +105,19 @@ modded class PlayerBase extends ManBase
     return super.CanSprint();
   }
 
-  bool SRPIgnoreContaminatedArea()
+  bool SRPIgnoreContaminatedArea(float deltaT)
   {
+    // temp fix for irradiating SRP_LabTube_MutantLiquidSterilized until i localize hand items
+    ItemBase item = GetItemInHands();
+    if (item)
+    {
+      SRP_LabTube_MutantLiquidSterilized labTube = SRP_LabTube_MutantLiquidSterilized.Cast(item);
+      if (labTube)
+      {
+        labTube.UpdateRadiationExposure(this, deltaT);
+      }
+    }
+
     if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 2400)
     {
       return true;
