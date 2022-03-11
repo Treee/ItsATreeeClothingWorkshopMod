@@ -1989,6 +1989,15 @@ class CfgVehicles
 		itemsCargoSize[]={10,5};
 	};
 
+  class SRP_SmallProtectorCase_Syringe: SmallProtectorCase
+	{
+		scope=2;
+    displayName="Protected Syringe Box";
+    descriptionShort="This protected case is meant to hold several syringes safely.";
+		itemSize[]={4,4};
+		itemsCargoSize[]={4,4};
+	};
+
   class SRP_LeatherPouch_Default: PlateCarrierPouches  // new
 	{
 		scope=2;
