@@ -99,7 +99,6 @@ class SRP_LabTube_MutantLiquidSterilized extends SRP_LabTube_Colorbase
 
   void UpdateRadiationExposure(PlayerBase m_Player, float change)
   {
-    Print("Radiation exposure: " + m_RadiationExposure + " change: " + change);
     if (m_RadiationExposure > -1)
     {
       m_RadiationExposure += change;
