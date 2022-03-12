@@ -43,7 +43,7 @@ class ActionOpenClam: ActionContinuousBase
 		ItemBase item = ItemBase.Cast(action_data.m_MainItem);
 		if (item)
     {			
-      ItemBase new_item = ItemBase.Cast(GetGame().CreateObjectEx("SRP_Clam_Opened", action_data.m_Player.GetPosition(), false));
+      ItemBase new_item = ItemBase.Cast(GetGame().CreateObjectEx(item.GetType()+"_Opened", action_data.m_Player.GetPosition(), false));
       if (new_item) 
       {
         float m_PearlChance = 0.05;
