@@ -173,7 +173,12 @@ class CfgVehicles
 		};
 		inventorySlot[]=
 		{
-			"TrapPrey_1"
+			"TrapPrey_1",
+      "SRP_Fish_Small1",
+      "SRP_Fish_Small2",
+      "SRP_Fish_Small3",
+      "SRP_Fish_Small4",
+      "SRP_Fish_Small5",
 		};
 		hiddenSelections[]=
 		{
@@ -1020,6 +1025,12 @@ class CfgVehicles
     descriptionShort="A large and powerful fish found in salt water.";
     model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
     hiddenSelections[]={"zbytek"};
+    rotationFlags=4;
+    inventorySlot[]=
+		{
+			"TrapPrey_1",
+      "SRP_Fish_Large1"
+		};
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
@@ -1543,6 +1554,11 @@ class CfgVehicles
     descriptionShort="A deep water shark found in salt water.";
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
     rotationFlags=64;
+    inventorySlot[]=
+		{
+			"TrapPrey_1",
+      "SRP_Fish_Large1"
+		};
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]=
     {

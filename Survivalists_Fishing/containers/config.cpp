@@ -66,11 +66,11 @@ class CfgVehicles
     itemsCargoSize[]={0,0};
     attachments[]=
     {
-      "SRP_Fish1",
-      "SRP_Fish2",
-      "SRP_Fish3",
-      "SRP_Fish4",
-      "SRP_Fish5",
+      "SRP_Fish_Small1",
+      "SRP_Fish_Small2",
+      "SRP_Fish_Small3",
+      "SRP_Fish_Small4",
+      "SRP_Fish_Small5",
     };
     hiddenSelections[]=
 		{
@@ -100,7 +100,11 @@ class CfgVehicles
     itemsCargoSize[]={0,0};
     attachments[]=
     {
-      "SRP_Fish1"
+      "SRP_Fish_Small1",
+      "SRP_Fish_Small2",
+      "SRP_Fish_Small3",
+      "SRP_Fish_Small4",
+      "SRP_Fish_Large1"
     };
     hiddenSelections[]=
 		{

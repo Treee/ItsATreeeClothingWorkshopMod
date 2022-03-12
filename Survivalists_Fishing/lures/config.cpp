@@ -17,7 +17,7 @@ class CfgVehicles
 	class Inventory_Base;
 
   // base fishing lure, not meant to be spawned into the game
-	class FishingLure_ColorBase: Inventory_Base
+	class SRP_FishingLure_ColorBase: Inventory_Base
 	{
 		scope=0;
 		displayName="Fishing Lure";
@@ -63,7 +63,7 @@ class CfgVehicles
 		};
 	};
 
-  class FishingLure_Flat1_1: FishingLure_ColorBase
+  class SRP_FishingLure_Flat1_1: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure1.p3d";
@@ -80,7 +80,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat1_2: FishingLure_ColorBase
+  class SRP_FishingLure_Flat1_2: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure1.p3d";
@@ -97,7 +97,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat1_3: FishingLure_ColorBase
+  class SRP_FishingLure_Flat1_3: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure1.p3d";
@@ -114,7 +114,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat1_4: FishingLure_ColorBase
+  class SRP_FishingLure_Flat1_4: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure1.p3d";
@@ -132,7 +132,7 @@ class CfgVehicles
 		};
   };
 
-  class FishingLure_Flat2_1: FishingLure_ColorBase
+  class SRP_FishingLure_Flat2_1: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure2.p3d";
@@ -149,7 +149,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat2_2: FishingLure_ColorBase
+  class SRP_FishingLure_Flat2_2: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure2.p3d";
@@ -166,7 +166,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat2_3: FishingLure_ColorBase
+  class SRP_FishingLure_Flat2_3: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure2.p3d";
@@ -183,7 +183,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat2_4: FishingLure_ColorBase
+  class SRP_FishingLure_Flat2_4: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure2.p3d";
@@ -201,7 +201,7 @@ class CfgVehicles
 		};
   };
 
-  class FishingLure_Flat3_1: FishingLure_ColorBase
+  class SRP_FishingLure_Flat3_1: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure3.p3d";
@@ -218,7 +218,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat3_2: FishingLure_ColorBase
+  class SRP_FishingLure_Flat3_2: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure3.p3d";
@@ -235,7 +235,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat3_3: FishingLure_ColorBase
+  class SRP_FishingLure_Flat3_3: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure3.p3d";
@@ -252,7 +252,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishinglures.rvmat"
 		};
   };
-  class FishingLure_Flat3_4: FishingLure_ColorBase
+  class SRP_FishingLure_Flat3_4: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglure3.p3d";
@@ -270,7 +270,7 @@ class CfgVehicles
 		};
   };
 
-  class FishingLure_Fish1_1: FishingLure_ColorBase
+  class SRP_FishingLure_Fish1_1: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish1.p3d";
@@ -287,7 +287,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish1_2: FishingLure_ColorBase
+  class SRP_FishingLure_Fish1_2: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish1.p3d";
@@ -304,7 +304,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish1_3: FishingLure_ColorBase
+  class SRP_FishingLure_Fish1_3: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish1.p3d";
@@ -321,7 +321,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish1_4: FishingLure_ColorBase
+  class SRP_FishingLure_Fish1_4: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish1.p3d";
@@ -339,7 +339,7 @@ class CfgVehicles
 		};
   };
 
-  class FishingLure_Fish2_1: FishingLure_ColorBase
+  class SRP_FishingLure_Fish2_1: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish2.p3d";
@@ -356,7 +356,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish2_2: FishingLure_ColorBase
+  class SRP_FishingLure_Fish2_2: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish2.p3d";
@@ -373,7 +373,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish2_3: FishingLure_ColorBase
+  class SRP_FishingLure_Fish2_3: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish2.p3d";
@@ -390,7 +390,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish2_4: FishingLure_ColorBase
+  class SRP_FishingLure_Fish2_4: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish2.p3d";
@@ -408,7 +408,7 @@ class CfgVehicles
 		};
   };
 
-  class FishingLure_Fish3_1: FishingLure_ColorBase
+  class SRP_FishingLure_Fish3_1: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish3.p3d";
@@ -425,7 +425,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish3_2: FishingLure_ColorBase
+  class SRP_FishingLure_Fish3_2: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish3.p3d";
@@ -442,7 +442,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish3_3: FishingLure_ColorBase
+  class SRP_FishingLure_Fish3_3: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish3.p3d";
@@ -459,7 +459,7 @@ class CfgVehicles
 			"Survivalists_Fishing\lures\data\fishingluresfish.rvmat"
 		};
   };
-  class FishingLure_Fish3_4: FishingLure_ColorBase
+  class SRP_FishingLure_Fish3_4: SRP_FishingLure_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\lures\fishinglurefish3.p3d";

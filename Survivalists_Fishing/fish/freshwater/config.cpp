@@ -20,7 +20,7 @@ class CfgVehicles
   class NotCookable;
 
   class Bitterlings;
-  class Carp;
+	class Carp;
   
   //======================================================== VANILLA FISH
   class Bitterlings_Small: Bitterlings
@@ -174,7 +174,12 @@ class CfgVehicles
 		};
 		inventorySlot[]=
 		{
-			"TrapPrey_1"
+			"TrapPrey_1",
+      "SRP_Fish_Small1",
+      "SRP_Fish_Small2",
+      "SRP_Fish_Small3",
+      "SRP_Fish_Small4",
+      "SRP_Fish_Small5",
 		};
 		hiddenSelections[]=
 		{
