@@ -46,6 +46,15 @@ class CfgVehicles
 			"Survivalists_Retextures\externalmodretextures\windstrides\data\kneepads_jeans_olive_co.paa"
 		};
 	};
+  class Kneepads_Jeans_Black: Kneepads_Jeans_Base
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\kneepads_jeans_black_co.paa"
+		};
+	};
 	class SRP_Winter_Parka_Black: Winter_Parka_Base
 	{
 		scope=2;

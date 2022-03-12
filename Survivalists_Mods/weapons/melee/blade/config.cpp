@@ -945,6 +945,19 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_KatanaSlim_Sheath_Fred: SRP_KatanaSlim_Sheath
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_fred_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"
+		};
+	};
+
   class SRP_Staff_UnCutGem: Inventory_Base
   {
 		scope=2;
