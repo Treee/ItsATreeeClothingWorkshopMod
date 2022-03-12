@@ -1,22 +1,93 @@
 class CfgPatches
 {
-	class Survivalists_Retextures_Gear_Books
+	class Survivalists_Books_Gear_Books
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
-		{
-			"DZ_Data",
+		{			
 			"DZ_Gear_Books",
-			"Survivalists_Retextures"
+			"Survivalists_Books"
 		};
 	};
 };
 class CfgVehicles
 {
-  class SRP_ReadableBook_Colorbase;
-  class SRP_ReadableScroll_Colorbase;
+  class ItemBook;
+  
+  class SRP_ReadableBook_Colorbase: ItemBook
+  {
+    scope=0;
+    author="Base";
+    title="Base";
+    file="path\to\file";
+    displayName="Worn Book";
+		descriptionShort="A worn book.";
+    rotationFlags=1;
+    inventorySlot[]=
+		{
+			"Book",
+      "Book1",
+			"Book2",
+			"Book3",
+			"Book4",
+			"Book5",
+			"Book6",
+			"Book7",
+			"Book8",
+			"Book9",
+			"Book10",
+			"Book11",
+			"Book12",
+			"Book13",
+			"Book14",
+			"Book15",
+			"Book16",
+			"Book17",
+			"Book18",
+			"Book19",
+			"Book20",
+			"Book21",
+			"Book22",
+			"Book23",
+			"Book24",
+			"Book25",
+			"Book26",
+			"Book27",
+			"Book28",
+			"Book29",
+			"Book30",
+			"Book31",
+			"Book32",
+			"Book33",
+			"Book34",
+			"Book35",
+			"Book36",
+			"Book37",
+			"Book38",
+			"Book39",
+			"Book40",
+			"Book41",
+			"Book42",
+			"Book43",
+			"Book44",
+			"Book45",
+			"Book46",
+			"Book47",
+			"Book48",
+			"Book49",
+			"Book50"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"dz\gear\books\data\book_kniga_co.paa"
+		};
+  };
 
   //============================= 
   class SRP_ReadableBook_HuntingOnDeerIsle: SRP_ReadableBook_Colorbase
@@ -24,82 +95,77 @@ class CfgVehicles
 		scope=2;
 		title="Hunting - On Deer Isle";
 		author="Erik The Hunter";
-		file="Survivalists_Retextures\gear\books\data\book_Hunting.html";
+		file="Survivalists_Books\gear\books\data\book_Hunting.html";
 		displayName="Hunting - On Deer Isle";
 		descriptionShort="A comprehensive guide on hunting the lands of Deer Isle.";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\gear\books\data\book_Hunting_co.paa"
+			"Survivalists_Books\gear\books\data\book_Hunting_co.paa"
 		};
 	};
-
   class SRP_ReadableBook_DrugDangers: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
 		title="Dangers of Narcotics";
 		author="Jebediah";
-		file="Survivalists_Retextures\gear\books\data\book_drug_awareness.html";
+		file="Survivalists_Books\gear\books\data\book_drug_awareness.html";
 		displayName="Dangers of Narcotics";
 		descriptionShort="The accounts of apocalyptic drug experiences.";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\gear\books\data\book_drug_awareness_co.paa"
+			"Survivalists_Books\gear\books\data\book_drug_awareness_co.paa"
 		};
 	};
-
   class SRP_ReadableBook_JamestownHistory: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
 		title="The Rise and Fall of Jamestown";
 		author="Unknown";
-		file="Survivalists_Retextures\gear\books\data\book_Rise_Fall_Jamestown.html";
+		file="Survivalists_Books\gear\books\data\book_Rise_Fall_Jamestown.html";
 		displayName="The Rise and Fall of Jamestown";
 		descriptionShort="A book describing the brief history of Jamestown. It appears to be written in black pen on scraps of paper";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\gear\books\data\book_Rise_Fall_Jamestown_co.paa"
+			"Survivalists_Books\gear\books\data\book_Rise_Fall_Jamestown_co.paa"
 		};
 	};
-	
 	class SRP_ReadableBook_SkullHordeHistory: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
 		title="The Horror of The Skull Horde";
 		author="Unknown";
-		file="Survivalists_Retextures\gear\books\data\book_Skull_Horde.html";
+		file="Survivalists_Books\gear\books\data\book_Skull_Horde.html";
 		displayName="The Horror of The Skull Horde";
 		descriptionShort="A book describing the horror and growth of cannibalism. It appears to be written in black pen on scraps of paper";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\gear\books\data\book_Skull_Horde_co.paa"
+			"Survivalists_Books\gear\books\data\book_Skull_Horde_co.paa"
 		};
 	};
-	
 	class SRP_ReadableBook_Sanctuary: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
 		title="Sanctuary: Safety for the Living, Vengeance for the Dead";
 		author="Unknown";
-		file="Survivalists_Retextures\gear\books\data\book_Sanctuary_History.html";
+		file="Survivalists_Books\gear\books\data\book_Sanctuary_History.html";
 		displayName="Sanctuary: Safety for the Living, Vengeance for the Dead";
 		descriptionShort="A book describing the brief origins of Sanctuary. It appears to be written in black pen on scraps of paper";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\gear\books\data\book_Sanctuary_History_co.paa"
+			"Survivalists_Books\gear\books\data\book_Sanctuary_History_co.paa"
 		};
 	};
-	
 	class SRP_ReadableBook_CodeBreakers: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
 		title="A Beginner's Guide To Breaking Codes";
 		author="Unknown"; 
-		file="Survivalists_Retextures\gear\books\data\book_code_breakers.html";
+		file="Survivalists_Books\gear\books\data\book_code_breakers.html";
 		displayName="A Beginner's Guide To Breaking Codes";
 		descriptionShort="A book describing simple codes and encryption. It appears to be written in black pen on scraps of paper";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\gear\books\data\book_code_breakers_co.paa"
+			"Survivalists_Books\gear\books\data\book_code_breakers_co.paa"
 		};
 	};
 	class SRP_ReadableBook_CollectiveHistory: SRP_ReadableBook_Colorbase
@@ -107,96 +173,14 @@ class CfgVehicles
 		scope=2;
 		title="A Collective Recollection";
 		author="Warlock";
-		file="Survivalists_Retextures\gear\books\data\book_collective.html";
+		file="Survivalists_Books\gear\books\data\book_collective.html";
 		displayName="A Collective Recollection";
 		descriptionShort="The accounts of Warlock and The Collective.";
 		hiddenSelectionsTextures[] =
 		{
-		  "Survivalists_Retextures\gear\books\data\book_collective_co.paa"
+		  "Survivalists_Books\gear\books\data\book_collective_co.paa"
 		};
 	};
-
-  // ============================================= SCROLLS
-  class SRP_ReadableScroll_CarePoem: SRP_ReadableScroll_Colorbase
-	{
-		scope=2;
-		title="Care";
-		author="Unknown";
-		file="Survivalists_Retextures\gear\books\data\scroll_Care_Poem.html";
-		displayName="Care";
-		descriptionShort="A rolled up piece of paper tied by some old rags";
-	};
-	
-	class SRP_ReadableScroll_DarknessPoem: SRP_ReadableScroll_Colorbase
-	{
-		scope=2;
-		title="The Darkness Among Us";
-		author="Unknown";
-		file="Survivalists_Retextures\gear\books\data\scroll_Darkness_Among_Us_Poem.html";
-		displayName="The Darkness Among Us";
-		descriptionShort="A rolled up piece of paper tied by some old rags";
-	};
-	
-	class SRP_ReadableScroll_DollfaceHistory: SRP_ReadableScroll_Colorbase
-	{
-		scope=2;
-		title="The Legend of Dollface";
-		author="Unknown";
-		file="Survivalists_Retextures\gear\books\data\scroll_Legend_Of_Dollface.html";
-		displayName="The Legend of Dollface";
-		descriptionShort="A rolled up piece of paper tied by some bloody old rags";
-	};
-	
-	class SRP_ReadableScroll_Crafting_Carpentry: SRP_ReadableScroll_Colorbase
-	{
-		scope=2;
-		title="Beginners Tips For Carpenters";
-		author="Toolman Ray";
-		file="Survivalists_Retextures\gear\books\data\scroll_crafting_carpentry.html";
-		displayName="Beginners Tips For Carpenters";
-		descriptionShort="A rolled up piece of paper tied by some cheap twine";
-	};
-	
-	class SRP_ReadableScroll_Crafting_Farming: SRP_ReadableScroll_Colorbase
-	{
-		scope=2;
-		title="Beginners Tips For Farmers";
-		author="Farmer Bran";
-		file="Survivalists_Retextures\gear\books\data\scroll_crafting_farming.html";
-		displayName="Beginners Tips For Farmers";
-		descriptionShort="A rolled up piece of paper tied by some long woven grass";
-	};
-	
-	class SRP_ReadableScroll_Crafting_Generic: SRP_ReadableScroll_Colorbase
-	{
-		scope=2;
-		title="Basic Survival Guide";
-		author="Boy Scout #51832";
-		file="Survivalists_Retextures\gear\books\data\scroll_crafting_generic.html";
-		displayName="Basic Survival Guide";
-		descriptionShort="A rolled up piece of paper tied by some string";
-	};
-	
-	class SRP_ReadableScroll_Crafting_Tailoring: SRP_ReadableScroll_Colorbase
-	{
-		scope=2;
-		title="Tailoring For The Aspiring Tailor";
-		author="Taylor the Tailor";
-		file="Survivalists_Retextures\gear\books\data\scroll_crafting_tailoring.html";
-		displayName="Tailoring For The Aspiring Tailor";
-		descriptionShort="A rolled up piece of paper tied by some elegant ribbon";
-	};
-	
-	class SRP_ReadableScroll_Crafting_Weapon: SRP_ReadableScroll_Colorbase
-	{
-		scope=2;
-		title="Guns, Nuts and Trucks";
-		author="Beefy Armsman";
-		file="Survivalists_Retextures\gear\books\data\scroll_crafting_weapons.html";
-		displayName="Guns, Nuts and Trucks";
-		descriptionShort="A rolled up piece of paper held closed by grease";
-	};
-
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
@@ -204,7 +188,7 @@ class CfgVehicles
     scope=2;
 		title="The Bible";
 		author="King James Version";
-		file="Survivalists_Retextures\gear\books\data\book_bible.html";		
+		file="Survivalists_Books\gear\books\data\book_bible.html";		
 		lootTag[]=
 		{
 			"Religious"
@@ -221,7 +205,7 @@ class CfgVehicles
 		scope=2;
 		title="The War of the Worlds";
 		author="H.G. Wells";
-		file="Survivalists_Retextures\gear\books\data\book_waroftheworlds.html";
+		file="Survivalists_Books\gear\books\data\book_waroftheworlds.html";
 		displayName="The War of the Worlds";
 		descriptionShort="The War of the Worlds";
 		rotationFlags=1;
@@ -230,13 +214,12 @@ class CfgVehicles
 			"dz\gear\books\data\book_TheWarOfTheWorlds_co.paa"
 		};
 	};
-
 	class BookAroundTheWorldIn80Days: SRP_ReadableBook_Colorbase
 	{
     scope=2;
 		title="Around the World in 80 Days";
 		author="Jules Verne";
-		file="Survivalists_Retextures\gear\books\data\book_aroundtheworldin80days.html";
+		file="Survivalists_Books\gear\books\data\book_aroundtheworldin80days.html";
 		displayName="Around the World in 80 Days";
 		descriptionShort="Around the World in 80 Days";
 		rotationFlags=1;
@@ -250,7 +233,7 @@ class CfgVehicles
     scope=2;
 		title="Crime and Punishment";
 		author="Dostoyevsky";
-		file="Survivalists_Retextures\gear\books\data\book_crimeandpunishment.html";
+		file="Survivalists_Books\gear\books\data\book_crimeandpunishment.html";
 		displayName="Crime and Punishment";
 		descriptionShort="Crime and Punishment";
 		rotationFlags=1;
@@ -264,7 +247,7 @@ class CfgVehicles
     scope=2;
 		title="The Metamorphosis";
 		author="F. Kafka";
-    file="Survivalists_Retextures\gear\books\data\book_metamorphosis.html";		
+    file="Survivalists_Books\gear\books\data\book_metamorphosis.html";		
 		displayName="The Metamorphosis";
 		descriptionShort="The Metamorphosis";
 		rotationFlags=1;
@@ -278,7 +261,7 @@ class CfgVehicles
     scope=2;
 		title="The Raven";
 		author="E. A. Poe";	
-		file="Survivalists_Retextures\gear\books\data\book_theraven.html";
+		file="Survivalists_Books\gear\books\data\book_theraven.html";
 		displayName="The Raven";
 		descriptionShort="The Raven";
 		rotationFlags=1;
@@ -292,7 +275,7 @@ class CfgVehicles
     scope=2;
 		title="The Art Of War";
 		author="Sunzi";
-		file="Survivalists_Retextures\gear\books\data\book_theartofwar.html";
+		file="Survivalists_Books\gear\books\data\book_theartofwar.html";
 		displayName="The Art Of War";
 		descriptionShort="The Art Of War";
 		rotationFlags=1;
@@ -306,7 +289,7 @@ class CfgVehicles
     scope=2;
 		title="Robinson Crusoe";
 		author="D. Defoe";		
-		file="Survivalists_Retextures\gear\books\data\book_robinsoncrusoe.html";
+		file="Survivalists_Books\gear\books\data\book_robinsoncrusoe.html";
 		displayName="Robinson Crusoe";
 		descriptionShort="Robinson Crusoe";
 		rotationFlags=1;
@@ -320,7 +303,7 @@ class CfgVehicles
     scope=2;
 		title="Russian learning book";
 		author="";		
-		file="Survivalists_Retextures\gear\books\data\book_russian.html";
+		file="Survivalists_Books\gear\books\data\book_russian.html";
 		displayName="Russian learning book";
 		descriptionShort="Russian learning book";
 		rotationFlags=1;
@@ -334,7 +317,7 @@ class CfgVehicles
     scope=2;
 		title="Russian cheat sheet";
 		author="";
-		file="Survivalists_Retextures\gear\books\data\book_russiancheatsheet.html";		
+		file="Survivalists_Books\gear\books\data\book_russiancheatsheet.html";		
 		displayName="Russian cheat sheet";
 		descriptionShort="Russian cheat sheet";
 		rotationFlags=1;
@@ -348,7 +331,7 @@ class CfgVehicles
     scope=2;
 		title="The Picture Of Dorian Gray";
 		author="Oscar Wilde";
-		file="Survivalists_Retextures\gear\books\data\book_thepictureofdoriangray.html";		
+		file="Survivalists_Books\gear\books\data\book_thepictureofdoriangray.html";		
 		displayName="The Picture Of Dorian Gray";
 		descriptionShort="The Picture Of Dorian Gray";
 		rotationFlags=1;
@@ -362,7 +345,7 @@ class CfgVehicles
     scope=2;
 		title="The Pit and the Pendulum";
 		author="E. A. Poe";		
-    file="Survivalists_Retextures\gear\books\data\book_thepitandthependulum.html";
+    file="Survivalists_Books\gear\books\data\book_thepitandthependulum.html";
 		displayName="The Pit and the Pendulum";
 		descriptionShort="The Pit and the Pendulum";
 		rotationFlags=1;
@@ -376,7 +359,7 @@ class CfgVehicles
     scope=2;
 		title="The Time Machine";
 		author="H. G. Wells";
-    file="Survivalists_Retextures\gear\books\data\book_thetimemachine.html";		
+    file="Survivalists_Books\gear\books\data\book_thetimemachine.html";		
 		displayName="The Time Machine";
 		descriptionShort="The Time Machine";
 		rotationFlags=1;
@@ -390,7 +373,7 @@ class CfgVehicles
     scope=2;
 		title="The Country of the Blind";
 		author="H. G. Wells";
-    file="Survivalists_Retextures\gear\books\data\book_thecountryoftheblind.html";		
+    file="Survivalists_Books\gear\books\data\book_thecountryoftheblind.html";		
 		displayName="The Country of the Blind";
 		descriptionShort="The Country of the Blind";
 		rotationFlags=1;
@@ -404,7 +387,7 @@ class CfgVehicles
     scope=2;
 		title="Bila nemoc";
 		author="Karel Capek";		
-    file="Survivalists_Retextures\gear\books\data\book_bilanemoc.html";
+    file="Survivalists_Books\gear\books\data\book_bilanemoc.html";
 		displayName="Bila nemoc";
 		descriptionShort="Bila nemoc";
 		rotationFlags=1;
@@ -418,7 +401,7 @@ class CfgVehicles
     scope=2;
 		title="Youth";
 		author="Isaac Asimov";
-    file="Survivalists_Retextures\gear\books\data\book_youth.html";		
+    file="Survivalists_Books\gear\books\data\book_youth.html";		
 		displayName="Youth";
 		descriptionShort="Youth";
 		rotationFlags=1;
@@ -432,7 +415,7 @@ class CfgVehicles
     scope=2;
 		title="Die Verwandlung";
 		author="Franz Kafka";
-    file="Survivalists_Retextures\gear\books\data\book_verwandlung.html";		
+    file="Survivalists_Books\gear\books\data\book_verwandlung.html";		
 		displayName="Die Verwandlung";
 		descriptionShort="Die Verwandlung";
 		rotationFlags=1;
@@ -446,7 +429,7 @@ class CfgVehicles
     scope=2;
 		title="The Jungle Book";
 		author="Rudyard Kipling";
-    file="Survivalists_Retextures\gear\books\data\book_thejunglebook.html";		
+    file="Survivalists_Books\gear\books\data\book_thejunglebook.html";		
 		displayName="The Jungle Book";
 		descriptionShort="The Jungle Book";
 		rotationFlags=1;
@@ -460,7 +443,7 @@ class CfgVehicles
     scope=2;
 		title="The Brothers Karamazov";
 		author="F. Dostoyevsky";
-    file="Survivalists_Retextures\gear\books\data\book_thebrotherskaramazov.html";		
+    file="Survivalists_Books\gear\books\data\book_thebrotherskaramazov.html";		
 		displayName="The Brothers Karamazov";
 		descriptionShort="The Brothers Karamazov";
 		rotationFlags=1;
@@ -474,7 +457,7 @@ class CfgVehicles
     scope=2;
 		title="The Call of Cthulhu";
 		author="H. P. Lovecraft";
-    file="Survivalists_Retextures\gear\books\data\book_thecallofcthulhu.html";		
+    file="Survivalists_Books\gear\books\data\book_thecallofcthulhu.html";		
 		displayName="The Call of Cthulhu";
 		descriptionShort="The Call of Cthulhu";
 		rotationFlags=1;
@@ -488,7 +471,7 @@ class CfgVehicles
     scope=2;
 		title="The Shunned House";
 		author="H. P. Lovecraft";
-    file="Survivalists_Retextures\gear\books\data\book_theshunnedhouse.html";		
+    file="Survivalists_Books\gear\books\data\book_theshunnedhouse.html";		
 		displayName="The Shunned House";
 		descriptionShort="The Shunned House";
 		rotationFlags=1;
@@ -502,7 +485,7 @@ class CfgVehicles
     scope=2;
 		title="The Hound of the Baskervilles";
 		author="A. C. Doyle";
-    file="Survivalists_Retextures\gear\books\data\book_thehoundofthebaskervilles.html";		
+    file="Survivalists_Books\gear\books\data\book_thehoundofthebaskervilles.html";		
 		displayName="The Hound of the Baskervilles";
 		descriptionShort="The Hound of the Baskervilles";
 		rotationFlags=1;
@@ -516,7 +499,7 @@ class CfgVehicles
     scope=2;
 		title="Tony and the Beetles";
 		author="Philip K. Dick";
-    file="Survivalists_Retextures\gear\books\data\book_tonyandthebeetles.html";		
+    file="Survivalists_Books\gear\books\data\book_tonyandthebeetles.html";		
 		displayName="Tony and the Beetles";
 		descriptionShort="Tony and the Beetles";
 		rotationFlags=1;
@@ -530,7 +513,7 @@ class CfgVehicles
     scope=2;
 		title="The Cosmic Computer";
 		author="H. Beam Piper";		
-    file="Survivalists_Retextures\gear\books\data\book_thecosmiccomputer.html";
+    file="Survivalists_Books\gear\books\data\book_thecosmiccomputer.html";
 		displayName="The Cosmic Computer";
 		descriptionShort="The Cosmic Computer";
 		rotationFlags=1;
@@ -544,7 +527,7 @@ class CfgVehicles
     scope=2;
 		title="A Traveler In Time";
 		author="August Derleth";		
-    file="Survivalists_Retextures\gear\books\data\book_atravelerintime.html";
+    file="Survivalists_Books\gear\books\data\book_atravelerintime.html";
 		displayName="A Traveler In Time";
 		descriptionShort="A Traveler In Time";
 		rotationFlags=1;
@@ -558,7 +541,7 @@ class CfgVehicles
     scope=2;
 		title="The Variable Man";
 		author="Philip K. Dick";
-    file="Survivalists_Retextures\gear\books\data\book_thevariableman.html";		
+    file="Survivalists_Books\gear\books\data\book_thevariableman.html";		
 		displayName="The Variable Man";
 		descriptionShort="The Variable Man";
 		rotationFlags=1;
@@ -572,7 +555,7 @@ class CfgVehicles
     scope=2;
 		title="The Outlet";
 		author="Andy Adams";		
-    file="Survivalists_Retextures\gear\books\data\book_theoutlet.html";
+    file="Survivalists_Books\gear\books\data\book_theoutlet.html";
 		displayName="The Outlet";
 		descriptionShort="The Outlet";
 		rotationFlags=1;
@@ -586,7 +569,7 @@ class CfgVehicles
     scope=2;
 		title="The Barrier";
 		author="Rex Beach";
-    file="Survivalists_Retextures\gear\books\data\book_thebarrier.html";		
+    file="Survivalists_Books\gear\books\data\book_thebarrier.html";		
 		displayName="The Barrier";
 		descriptionShort="The Barrier";
 		rotationFlags=1;
@@ -600,7 +583,7 @@ class CfgVehicles
     scope=2;
 		title="The Desert of Wheat";
 		author="Zane Grey";
-    file="Survivalists_Retextures\gear\books\data\book_thedesertofwheat.html";		
+    file="Survivalists_Books\gear\books\data\book_thedesertofwheat.html";		
 		displayName="The Desert of Wheat";
 		descriptionShort="The Desert of Wheat";
 		rotationFlags=1;
@@ -614,7 +597,7 @@ class CfgVehicles
     scope=2;
 		title="Flying U Ranch";
 		author="B. M. Bower";
-    file="Survivalists_Retextures\gear\books\data\book_flyinguranch.html";		
+    file="Survivalists_Books\gear\books\data\book_flyinguranch.html";		
 		displayName="Flying U Ranch";
 		descriptionShort="Flying U Ranch";
 		rotationFlags=1;
@@ -628,7 +611,7 @@ class CfgVehicles
     scope=2;
 		title="Hopalong Cassidy's Rustler Round-Up";
 		author="Clarence Edward Mulford";
-    file="Survivalists_Retextures\gear\books\data\book_cassidysrustlerroundup.html";		
+    file="Survivalists_Books\gear\books\data\book_cassidysrustlerroundup.html";		
 		displayName="Hopalong Cassidy's Rustler Round-Up";
 		descriptionShort="Hopalong Cassidy's Rustler Round-Up";
 		rotationFlags=1;
@@ -642,7 +625,7 @@ class CfgVehicles
     scope=2;
 		title="Lonesome Land";
 		author="B. M. Bower";
-    file="Survivalists_Retextures\gear\books\data\book_lonesomeland.html";		
+    file="Survivalists_Books\gear\books\data\book_lonesomeland.html";		
 		displayName="Lonesome Land";
 		descriptionShort="Lonesome Land";
 		rotationFlags=1;
@@ -656,7 +639,7 @@ class CfgVehicles
     scope=2;
 		title="Trailin'!";
 		author="Max Brand";
-    file="Survivalists_Retextures\gear\books\data\book_trailin.html";		
+    file="Survivalists_Books\gear\books\data\book_trailin.html";		
 		displayName="Trailin'!";
 		descriptionShort="Trailin'!";
 		rotationFlags=1;
@@ -670,7 +653,7 @@ class CfgVehicles
     scope=2;
 		title="Ronicky Doone";
 		author="Max Brand";
-    file="Survivalists_Retextures\gear\books\data\book_ronickydoone.html";		
+    file="Survivalists_Books\gear\books\data\book_ronickydoone.html";		
 		displayName="Ronicky Doone";
 		descriptionShort="Ronicky Doone";
 		rotationFlags=1;
@@ -684,7 +667,7 @@ class CfgVehicles
     scope=2;
 		title="Betty Zane";
 		author="Zane Grey";
-    file="Survivalists_Retextures\gear\books\data\book_bettyzane.html";		
+    file="Survivalists_Books\gear\books\data\book_bettyzane.html";		
 		displayName="Betty Zane";
 		descriptionShort="Betty Zane";
 		rotationFlags=1;
@@ -698,7 +681,7 @@ class CfgVehicles
     scope=2;
 		title="A Texas Matchmaker";
 		author="Andy Adams";
-    file="Survivalists_Retextures\gear\books\data\book_atexasmatchmaker.html";		
+    file="Survivalists_Books\gear\books\data\book_atexasmatchmaker.html";		
 		displayName="A Texas Matchmaker";
 		descriptionShort="A Texas Matchmaker";
 		rotationFlags=1;
@@ -712,7 +695,7 @@ class CfgVehicles
     scope=2;
 		title="The Thunder Bird";
 		author="B. M. Bower";
-    file="Survivalists_Retextures\gear\books\data\book_thethunderbird.html";		
+    file="Survivalists_Books\gear\books\data\book_thethunderbird.html";		
 		displayName="The Thunder Bird";
 		descriptionShort="The Thunder Bird";
 		rotationFlags=1;
@@ -726,7 +709,7 @@ class CfgVehicles
     scope=2;
 		title="Black Jack";
 		author="Max Brand";		
-    file="Survivalists_Retextures\gear\books\data\book_blackjack.html";
+    file="Survivalists_Books\gear\books\data\book_blackjack.html";
 		displayName="Black Jack";
 		descriptionShort="Black Jack";
 		rotationFlags=1;
@@ -740,7 +723,7 @@ class CfgVehicles
     scope=2;
 		title="The Last Trail";
 		author="Zane Grey";
-    file="Survivalists_Retextures\gear\books\data\book_thelasttrail.html";		
+    file="Survivalists_Books\gear\books\data\book_thelasttrail.html";		
 		displayName="The Last Trail";
 		descriptionShort="The Last Trail";
 		rotationFlags=1;
@@ -754,7 +737,7 @@ class CfgVehicles
     scope=2;
 		title="Selected Stories";
 		author="Bret Harte";
-    file="Survivalists_Retextures\gear\books\data\book_selectedstories.html";		
+    file="Survivalists_Books\gear\books\data\book_selectedstories.html";		
 		displayName="Selected Stories";
 		descriptionShort="Selected Stories";
 		rotationFlags=1;
@@ -768,7 +751,7 @@ class CfgVehicles
     scope=2;
 		title="The Heritage of the Sioux";
 		author="B.M. Bower";
-    file="Survivalists_Retextures\gear\books\data\book_theheritageofthesioux.html";		
+    file="Survivalists_Books\gear\books\data\book_theheritageofthesioux.html";		
 		displayName="The Heritage of the Sioux";
 		descriptionShort="The Heritage of the Sioux";
 		rotationFlags=1;
@@ -782,7 +765,7 @@ class CfgVehicles
     scope=2;
 		title="Desert Gold";
 		author="Zane Grey";
-    file="Survivalists_Retextures\gear\books\data\book_desertgold.html";		
+    file="Survivalists_Books\gear\books\data\book_desertgold.html";		
 		displayName="Desert Gold";
 		descriptionShort="Desert Gold";
 		rotationFlags=1;
@@ -796,7 +779,7 @@ class CfgVehicles
     scope=2;
 		title="The Hidden Children";
 		author="Robert W. Chambers";
-    file="Survivalists_Retextures\gear\books\data\book_thehiddenchildren.html";		
+    file="Survivalists_Books\gear\books\data\book_thehiddenchildren.html";		
 		displayName="The Hidden Children";
 		descriptionShort="The Hidden Children";
 		rotationFlags=1;
@@ -810,7 +793,7 @@ class CfgVehicles
     scope=2;
 		title="The Last of the Plainsmen";
 		author="Zane Grey";
-    file="Survivalists_Retextures\gear\books\data\book_thelastoftheplainsmen.html";		
+    file="Survivalists_Books\gear\books\data\book_thelastoftheplainsmen.html";		
 		displayName="The Last of the Plainsmen";
 		descriptionShort="The Last of the Plainsmen";
 		rotationFlags=1;
@@ -824,7 +807,7 @@ class CfgVehicles
     scope=2;
 		title="Gunman's Reckoning";
 		author="Max Brand";
-    file="Survivalists_Retextures\gear\books\data\book_gunmansreckoning.html";		
+    file="Survivalists_Books\gear\books\data\book_gunmansreckoning.html";		
 		displayName="Gunman's Reckoning";
 		descriptionShort="Gunman's Reckoning";
 		rotationFlags=1;
@@ -838,7 +821,7 @@ class CfgVehicles
     scope=2;
 		title="Skyrider";
 		author="B. M. Bower";
-    file="Survivalists_Retextures\gear\books\data\book_skyrider.html";		
+    file="Survivalists_Books\gear\books\data\book_skyrider.html";		
 		displayName="Skyrider";
 		descriptionShort="Skyrider";
 		rotationFlags=1;
@@ -852,7 +835,7 @@ class CfgVehicles
     scope=2;
 		title="Spinifex and Sand";
 		author="David W Carnegie";
-    file="Survivalists_Retextures\gear\books\data\book_spinifexandsand.html";		
+    file="Survivalists_Books\gear\books\data\book_spinifexandsand.html";		
 		displayName="Spinifex and Sand";
 		descriptionShort="Spinifex and Sand";
 		rotationFlags=1;
@@ -866,7 +849,7 @@ class CfgVehicles
     scope=2;
 		title="Sunset Pass";
 		author="Charles King";
-    file="Survivalists_Retextures\gear\books\data\book_sunsetpass.html";		
+    file="Survivalists_Books\gear\books\data\book_sunsetpass.html";		
 		displayName="Sunset Pass";
 		descriptionShort="Sunset Pass";
 		rotationFlags=1;
@@ -880,7 +863,7 @@ class CfgVehicles
     scope=2;
 		title="The Cave of Gold";
 		author="Everett McNeil";
-    file="Survivalists_Retextures\gear\books\data\book_thecaveofgold.html";		
+    file="Survivalists_Books\gear\books\data\book_thecaveofgold.html";		
 		displayName="The Cave of Gold";
 		descriptionShort="The Cave of Gold";
 		rotationFlags=1;
@@ -894,7 +877,7 @@ class CfgVehicles
     scope=2;
 		title="The Day of the Beast";
 		author="Zane Grey";
-    file="Survivalists_Retextures\gear\books\data\book_thedayofthebeast.html";		
+    file="Survivalists_Books\gear\books\data\book_thedayofthebeast.html";		
 		displayName="The Day of the Beast";
 		descriptionShort="The Day of the Beast";
 		rotationFlags=1;
@@ -908,7 +891,7 @@ class CfgVehicles
     scope=2;
 		title="The Quirt";
 		author="B.M. Bower";
-    file="Survivalists_Retextures\gear\books\data\book_thequirt.html";		
+    file="Survivalists_Books\gear\books\data\book_thequirt.html";		
 		displayName="The Quirt";
 		descriptionShort="The Quirt";
 		rotationFlags=1;
@@ -922,7 +905,7 @@ class CfgVehicles
     scope=2;
 		title="A Voyage to Arcturus";
 		author="David Lindsay";
-    file="Survivalists_Retextures\gear\books\data\book_avoyagetoarcturus.html";		
+    file="Survivalists_Books\gear\books\data\book_avoyagetoarcturus.html";		
 		displayName="A Voyage to Arcturus";
 		descriptionShort="A Voyage to Arcturus";
 		rotationFlags=1;
@@ -936,7 +919,7 @@ class CfgVehicles
     scope=2;
 		title="An Inquiry into the Nature and Causes of the Wealth of Nations";
 		author="Adam Smith";
-    file="Survivalists_Retextures\gear\books\data\book_wealthofnations.html";		
+    file="Survivalists_Books\gear\books\data\book_wealthofnations.html";		
 		displayName="An Inquiry into the Nature and Causes of the Wealth of Nations";
 		descriptionShort="An Inquiry into the Nature and Causes of the Wealth of Nations";
 		rotationFlags=1;
@@ -950,7 +933,7 @@ class CfgVehicles
     scope=2;
 		title="Andersen's Fairy Tales";
 		author="Hans Christian Andersen";
-    file="Survivalists_Retextures\gear\books\data\book_andersensfairytales.html";		
+    file="Survivalists_Books\gear\books\data\book_andersensfairytales.html";		
 		displayName="Andersen's Fairy Tales";
 		descriptionShort="Andersen's Fairy Tales";
 		rotationFlags=1;
@@ -964,7 +947,7 @@ class CfgVehicles
     scope=2;
 		title="Black Beauty";
 		author="Anna Sewell";
-    file="Survivalists_Retextures\gear\books\data\book_blackbeauty.html";
+    file="Survivalists_Books\gear\books\data\book_blackbeauty.html";
 		displayName="Black Beauty";
 		descriptionShort="Black Beauty";
 		rotationFlags=1;
@@ -978,7 +961,7 @@ class CfgVehicles
     scope=2;
 		title="Buddenbrooks";
 		author="Thomas Mann";
-    file="Survivalists_Retextures\gear\books\data\book_buddenbrooks.html";		
+    file="Survivalists_Books\gear\books\data\book_buddenbrooks.html";		
 		displayName="Buddenbrooks";
 		descriptionShort="Buddenbrooks";
 		rotationFlags=1;
@@ -992,7 +975,7 @@ class CfgVehicles
     scope=2;
 		title="Dead Souls";
 		author="Nikolai Vasilievich Gogol";
-    file="Survivalists_Retextures\gear\books\data\book_deadsouls.html";		
+    file="Survivalists_Books\gear\books\data\book_deadsouls.html";		
 		displayName="Dead Souls";
 		descriptionShort="Dead Souls";
 		rotationFlags=1;
@@ -1006,7 +989,7 @@ class CfgVehicles
     scope=2;
 		title="Erewhon";
 		author="Samuel Butler";
-    file="Survivalists_Retextures\gear\books\data\book_erewhon.html";		
+    file="Survivalists_Books\gear\books\data\book_erewhon.html";		
 		displayName="Erewhon";
 		descriptionShort="Erewhon";
 		rotationFlags=1;
@@ -1020,7 +1003,7 @@ class CfgVehicles
     scope=2;
 		title="Father Goriot";
 		author="Honore de Balzac";
-    file="Survivalists_Retextures\gear\books\data\book_fathergoriot.html";		
+    file="Survivalists_Books\gear\books\data\book_fathergoriot.html";		
 		displayName="Father Goriot";
 		descriptionShort="Father Goriot";
 		rotationFlags=1;
@@ -1034,7 +1017,7 @@ class CfgVehicles
     scope=2;
 		title="Great Expectations";
 		author="Charles Dickens";
-    file="Survivalists_Retextures\gear\books\data\book_greatexpectations.html";		
+    file="Survivalists_Books\gear\books\data\book_greatexpectations.html";		
 		displayName="Great Expectations";
 		descriptionShort="Great Expectations";
 		rotationFlags=1;
@@ -1048,7 +1031,7 @@ class CfgVehicles
     scope=2;
 		title="Gulliver's Travels";
 		author="Jonathan Swift";
-    file="Survivalists_Retextures\gear\books\data\book_gulliverstravels.html";		
+    file="Survivalists_Books\gear\books\data\book_gulliverstravels.html";		
 		displayName="Gulliver's Travels";
 		descriptionShort="Gulliver's Travels";
 		rotationFlags=1;
@@ -1062,7 +1045,7 @@ class CfgVehicles
     scope=2;
 		title="Heart of Darkness";
 		author="Joseph Conrad";
-    file="Survivalists_Retextures\gear\books\data\book_heartofdarkness.html";
+    file="Survivalists_Books\gear\books\data\book_heartofdarkness.html";
 		displayName="Heart of Darkness";
 		descriptionShort="Heart of Darkness";
 		rotationFlags=1;
@@ -1076,7 +1059,7 @@ class CfgVehicles
     scope=2;
 		title="Herland";
 		author="Charlotte Perkins Stetson Gilman";
-    file="Survivalists_Retextures\gear\books\data\book_herland.html";		
+    file="Survivalists_Books\gear\books\data\book_herland.html";		
 		displayName="Herland";
 		descriptionShort="Herland";
 		rotationFlags=1;
@@ -1090,7 +1073,7 @@ class CfgVehicles
     scope=2;
 		title="Ivanhoe";
 		author="Walter Scott";
-    file="Survivalists_Retextures\gear\books\data\book_ivanhoe.html";		
+    file="Survivalists_Books\gear\books\data\book_ivanhoe.html";		
 		displayName="Ivanhoe";
 		descriptionShort="Ivanhoe";
 		rotationFlags=1;
@@ -1104,7 +1087,7 @@ class CfgVehicles
     scope=2;
 		title="Kidnapped";
 		author="Robert Louis Stevenson";
-    file="Survivalists_Retextures\gear\books\data\book_kidnapped.html";		
+    file="Survivalists_Books\gear\books\data\book_kidnapped.html";		
 		displayName="Kidnapped";
 		descriptionShort="Kidnapped";
 		rotationFlags=1;
@@ -1118,7 +1101,7 @@ class CfgVehicles
     scope=2;
 		title="La Chartreuse de Parme";
 		author="Stendhal";
-    file="Survivalists_Retextures\gear\books\data\book_lachartreusedeparma.html";		
+    file="Survivalists_Books\gear\books\data\book_lachartreusedeparma.html";		
 		displayName="La Chartreuse de Parme";
 		descriptionShort="La Chartreuse de Parme";
 		rotationFlags=1;
@@ -1132,7 +1115,7 @@ class CfgVehicles
     scope=2;
 		title="Lord Jim";
 		author="Joseph Conrad";
-    file="Survivalists_Retextures\gear\books\data\book_lordjim.html";		
+    file="Survivalists_Books\gear\books\data\book_lordjim.html";		
 		displayName="Lord Jim";
 		descriptionShort="Lord Jim";
 		rotationFlags=1;
@@ -1146,7 +1129,7 @@ class CfgVehicles
     scope=2;
 		title="Madame Bovary";
 		author="Gustave Flaubert";
-    file="Survivalists_Retextures\gear\books\data\book_madamebovary.html";		
+    file="Survivalists_Books\gear\books\data\book_madamebovary.html";		
 		displayName="Madame Bovary";
 		descriptionShort="Madame Bovary";
 		rotationFlags=1;
@@ -1160,7 +1143,7 @@ class CfgVehicles
     scope=2;
 		title="Nostromo: A Tale of the Seaboard";
 		author="Joseph Conrad";
-    file="Survivalists_Retextures\gear\books\data\book_nostromo.html";		
+    file="Survivalists_Books\gear\books\data\book_nostromo.html";		
 		displayName="Nostromo: A Tale of the Seaboard";
 		descriptionShort="Nostromo: A Tale of the Seaboard";
 		rotationFlags=1;
@@ -1174,7 +1157,7 @@ class CfgVehicles
     scope=2;
 		title="On the Origin of Species by Means of Natural Selection";
 		author="Charles Darwin";
-    file="Survivalists_Retextures\gear\books\data\book_naturalselection.html";		
+    file="Survivalists_Books\gear\books\data\book_naturalselection.html";		
 		displayName="On the Origin of Species by Means of Natural Selection";
 		descriptionShort="On the Origin of Species by Means of Natural Selection";
 		rotationFlags=1;
@@ -1188,7 +1171,7 @@ class CfgVehicles
     scope=2;
 		title="The Metamorphoses of Ovid";
 		author="Publius Ovidius Naso";
-    file="Survivalists_Retextures\gear\books\data\book_metamorphofovid.html";		
+    file="Survivalists_Books\gear\books\data\book_metamorphofovid.html";		
 		displayName="The Metamorphoses of Ovid";
 		descriptionShort="The Metamorphoses of Ovid";
 		rotationFlags=1;
@@ -1202,7 +1185,7 @@ class CfgVehicles
     scope=2;
 		title="Moby Dick";
 		author="Herman Melville";
-    file="Survivalists_Retextures\gear\books\data\book_mobydick.html";
+    file="Survivalists_Books\gear\books\data\book_mobydick.html";
 		displayName="Moby Dick";
 		descriptionShort="Moby Dick";
 		rotationFlags=1;
@@ -1216,7 +1199,7 @@ class CfgVehicles
     scope=2;
 		title="King Lear";
 		author="";
-    file="Survivalists_Retextures\gear\books\data\book_kinglear.html";
+    file="Survivalists_Books\gear\books\data\book_kinglear.html";
 		displayName="King Lear";
 		descriptionShort="King Lear";
 		rotationFlags=1;
@@ -1230,7 +1213,7 @@ class CfgVehicles
     scope=2;
 		title="La Débâcle";
 		author="Emile Zola";
-    file="Survivalists_Retextures\gear\books\data\book_ladebacle.html";		
+    file="Survivalists_Books\gear\books\data\book_ladebacle.html";		
 		displayName="La Débâcle";
 		descriptionShort="La Débâcle";
 		rotationFlags=1;
@@ -1244,7 +1227,7 @@ class CfgVehicles
     scope=2;
 		title="The Canterbury Tales and Other Poems";
 		author="";
-    file="Survivalists_Retextures\gear\books\data\book_thecanterburytales.html";		
+    file="Survivalists_Books\gear\books\data\book_thecanterburytales.html";		
 		displayName="The Canterbury Tales and Other Poems";
 		descriptionShort="The Canterbury Tales and Other Poems";
 		rotationFlags=1;
@@ -1258,7 +1241,7 @@ class CfgVehicles
     scope=2;
 		title="A Vindication of the Rights of Women";
 		author="Mary Wollstonecraft [Godwin]";
-    file="Survivalists_Retextures\gear\books\data\book_therightsofwoman.html";		
+    file="Survivalists_Books\gear\books\data\book_therightsofwoman.html";		
 		displayName="A Vindication of the Rights of Women";
 		descriptionShort="A Vindication of the Rights of Women";
 		rotationFlags=1;
@@ -1272,7 +1255,7 @@ class CfgVehicles
     scope=2;
 		title="A Journey to the Interior of the Earth";
 		author="Jules Verne";
-    file="Survivalists_Retextures\gear\books\data\book_totheinterioroftheearth.html";		
+    file="Survivalists_Books\gear\books\data\book_totheinterioroftheearth.html";		
 		displayName="A Journey to the Interior of the Earth";
 		descriptionShort="A Journey to the Interior of the Earth";
 		rotationFlags=1;
@@ -1286,7 +1269,7 @@ class CfgVehicles
     scope=2;
 		title="Njal's Saga";
 		author="Unknown Icelanders";
-    file="Survivalists_Retextures\gear\books\data\book_njalssaga.html";		
+    file="Survivalists_Books\gear\books\data\book_njalssaga.html";		
 		displayName="Njal's Saga";
 		descriptionShort="Njal's Saga";
 		rotationFlags=1;
@@ -1300,7 +1283,7 @@ class CfgVehicles
     scope=2;
 		title="The Trial";
 		author="Franz Kafka";
-    file="Survivalists_Retextures\gear\books\data\book_thetrial.html";
+    file="Survivalists_Books\gear\books\data\book_thetrial.html";
 		displayName="The Trial";
 		descriptionShort="The Trial";
 		rotationFlags=1;
@@ -1314,7 +1297,7 @@ class CfgVehicles
     scope=2;
 		title="Don Quixote";
 		author="Miguel de Cervantes Saavedra";
-    file="Survivalists_Retextures\gear\books\data\book_donquixote.html";		
+    file="Survivalists_Books\gear\books\data\book_donquixote.html";		
 		displayName="Don Quixote";
 		descriptionShort="Don Quixote";
 		rotationFlags=1;
@@ -1328,7 +1311,7 @@ class CfgVehicles
     scope=2;
 		title="Philosophiae Naturalis Principia Mathematica";
 		author="Isaac Newton";
-    file="Survivalists_Retextures\gear\books\data\book_philosophianaturalis.html";
+    file="Survivalists_Books\gear\books\data\book_philosophianaturalis.html";
 		displayName="Philosophiae Naturalis Principia Mathematica";
 		descriptionShort="Philosophiae Naturalis Principia Mathematica";
 		rotationFlags=1;
@@ -1342,7 +1325,7 @@ class CfgVehicles
     scope=2;
 		title="Pride and Prejudice";
 		author="Jane Austen";
-    file="Survivalists_Retextures\gear\books\data\book_prideandprejudice.html";		
+    file="Survivalists_Books\gear\books\data\book_prideandprejudice.html";		
 		displayName="Pride and Prejudice";
 		descriptionShort="Pride and Prejudice";
 		rotationFlags=1;
@@ -1356,7 +1339,7 @@ class CfgVehicles
     scope=2;
 		title="Rasselas";
 		author="Samuel Johnson";
-    file="Survivalists_Retextures\gear\books\data\book_rasselas.html";		
+    file="Survivalists_Books\gear\books\data\book_rasselas.html";		
 		displayName="Rasselas";
 		descriptionShort="Rasselas";
 		rotationFlags=1;
@@ -1370,7 +1353,7 @@ class CfgVehicles
     scope=2;
 		title="Scaramouche";
 		author="Rafael Sabatini";
-    file="Survivalists_Retextures\gear\books\data\book_scaramouchie.html";		
+    file="Survivalists_Books\gear\books\data\book_scaramouchie.html";		
 		displayName="Scaramouche";
 		descriptionShort="Scaramouche";
 		rotationFlags=1;
@@ -1384,7 +1367,7 @@ class CfgVehicles
     scope=2;
 		title="Sons and Lovers";
 		author="David Herbert Lawrence";
-    file="Survivalists_Retextures\gear\books\data\book_sonsandlovers.html";		
+    file="Survivalists_Books\gear\books\data\book_sonsandlovers.html";		
 		displayName="Sons and Lovers";
 		descriptionShort="Sons and Lovers";
 		rotationFlags=1;
@@ -1398,7 +1381,7 @@ class CfgVehicles
     scope=2;
 		title="The Call of the Wild";
 		author="Jack London";
-    file="Survivalists_Retextures\gear\books\data\book_thecallofthewild.html";		
+    file="Survivalists_Books\gear\books\data\book_thecallofthewild.html";		
 		displayName="The Call of the Wild";
 		descriptionShort="The Call of the Wild";
 		rotationFlags=1;
@@ -1412,7 +1395,7 @@ class CfgVehicles
     scope=2;
 		title="The Coming Race";
 		author="Edward Bulwer Lytton";
-    file="Survivalists_Retextures\gear\books\data\book_thecomingrace.html";		
+    file="Survivalists_Books\gear\books\data\book_thecomingrace.html";		
 		displayName="The Coming Race";
 		descriptionShort="The Coming Race";
 		rotationFlags=1;
@@ -1426,7 +1409,7 @@ class CfgVehicles
     scope=2;
 		title="The Island of Doctor Moreau";
 		author="H. G. Wells";
-    file="Survivalists_Retextures\gear\books\data\book_theislandofdoctormoreau.html";		
+    file="Survivalists_Books\gear\books\data\book_theislandofdoctormoreau.html";		
 		displayName="The Island of Doctor Moreau";
 		descriptionShort="The Island of Doctor Moreau";
 		rotationFlags=1;
@@ -1440,7 +1423,7 @@ class CfgVehicles
     scope=2;
 		title="The Mahabharata of Krishna-Dwaipayana Vyasa Bk. 4";
 		author="Kisari Mohan Ganguli";
-    file="Survivalists_Retextures\gear\books\data\book_themahabharata.html";		
+    file="Survivalists_Books\gear\books\data\book_themahabharata.html";		
 		displayName="The Mahabharata of Krishna-Dwaipayana Vyasa Bk. 4";
 		descriptionShort="The Mahabharata of Krishna-Dwaipayana Vyasa Bk. 4";
 		rotationFlags=1;
@@ -1454,7 +1437,7 @@ class CfgVehicles
     scope=2;
 		title="The Man Who Was Thursday";
 		author="G. K. Chesterton";
-    file="Survivalists_Retextures\gear\books\data\book_themanwhowasthursday.html";		
+    file="Survivalists_Books\gear\books\data\book_themanwhowasthursday.html";		
 		displayName="The Man Who Was Thursday";
 		descriptionShort="The Man Who Was Thursday";
 		rotationFlags=1;
@@ -1468,7 +1451,7 @@ class CfgVehicles
     scope=2;
 		title="The Possessed";
 		author="Fyodor Dostoevsky";
-    file="Survivalists_Retextures\gear\books\data\book_thepossessed.html";		
+    file="Survivalists_Books\gear\books\data\book_thepossessed.html";		
 		displayName="The Possessed";
 		descriptionShort="The Possessed";
 		rotationFlags=1;
@@ -1482,7 +1465,7 @@ class CfgVehicles
     scope=2;
 		title="The Prisoner of Zenda";
 		author="Anthony Hope";
-    file="Survivalists_Retextures\gear\books\data\book_theprisonerofzenda.html";		
+    file="Survivalists_Books\gear\books\data\book_theprisonerofzenda.html";		
 		displayName="The Prisoner of Zenda";
 		descriptionShort="The Prisoner of Zenda";
 		rotationFlags=1;
@@ -1496,7 +1479,7 @@ class CfgVehicles
     scope=2;
 		title="A Princess of Mars";
 		author="Edgar Rice Burroughs";
-    file="Survivalists_Retextures\gear\books\data\book_aprincessofmars.html";		
+    file="Survivalists_Books\gear\books\data\book_aprincessofmars.html";		
 		displayName="A Princess of Mars";
 		descriptionShort="A Princess of Mars";
 		rotationFlags=1;
@@ -1510,7 +1493,7 @@ class CfgVehicles
     scope=2;
 		title="King Solomon's Mines";
 		author="H. Rider Haggard";
-    file="Survivalists_Retextures\gear\books\data\book_kingsolomonmines.html";		
+    file="Survivalists_Books\gear\books\data\book_kingsolomonmines.html";		
 		displayName="King Solomon's Mines";
 		descriptionShort="King Solomon's Mines";
 		rotationFlags=1;
@@ -1524,7 +1507,7 @@ class CfgVehicles
     scope=2;
 		title="Middlemarch";
 		author="George Eliot";
-    file="Survivalists_Retextures\gear\books\data\book_middlemarch.html";		
+    file="Survivalists_Books\gear\books\data\book_middlemarch.html";		
 		displayName="Middlemarch";
 		descriptionShort="Middlemarch";
 		rotationFlags=1;
@@ -1538,7 +1521,7 @@ class CfgVehicles
     scope=2;
 		title="The House of the Seven Gables";
 		author="Nathaniel Hawthorne";
-    file="Survivalists_Retextures\gear\books\data\book_thehouseofthesevengables.html";		
+    file="Survivalists_Books\gear\books\data\book_thehouseofthesevengables.html";		
 		displayName="The House of the Seven Gables";
 		descriptionShort="The House of the Seven Gables";
 		rotationFlags=1;
@@ -1552,7 +1535,7 @@ class CfgVehicles
     scope=2;
 		title="The Monk - A romance";
 		author="M. G. Lewis";
-    file="Survivalists_Retextures\gear\books\data\book_themonkaromance.html";		
+    file="Survivalists_Books\gear\books\data\book_themonkaromance.html";		
 		displayName="The Monk - A romance";
 		descriptionShort="The Monk - A romance";
 		rotationFlags=1;
@@ -1566,7 +1549,7 @@ class CfgVehicles
     scope=2;
 		title="The Private Memoirs and Confessions of a Justified Sinner";
 		author="James Hogg";
-    file="Survivalists_Retextures\gear\books\data\book_thejustifiedsinner.html";		
+    file="Survivalists_Books\gear\books\data\book_thejustifiedsinner.html";		
 		displayName="The Private Memoirs and Confessions of a Justified Sinner";
 		descriptionShort="The Private Memoirs and Confessions of a Justified Sinner";
 		rotationFlags=1;
@@ -1580,7 +1563,7 @@ class CfgVehicles
     scope=2;
 		title="The Red Badge of Courage";
 		author="Stephen Crane";
-    file="Survivalists_Retextures\gear\books\data\book_theredbadgeofcourage.html";		
+    file="Survivalists_Books\gear\books\data\book_theredbadgeofcourage.html";		
 		displayName="The Red Badge of Courage";
 		descriptionShort="The Red Badge of Courage";
 		rotationFlags=1;
@@ -1594,7 +1577,7 @@ class CfgVehicles
     scope=2;
 		title="A Doll's House";
 		author="Henrik Ibsen";
-    file="Survivalists_Retextures\gear\books\data\book_adollshouse.html";		
+    file="Survivalists_Books\gear\books\data\book_adollshouse.html";		
 		displayName="A Doll's House";
 		descriptionShort="A Doll's House";
 		rotationFlags=1;
@@ -1608,7 +1591,7 @@ class CfgVehicles
     scope=2;
 		title="An Old Babylonian Version of the Gilgamesh Epic";
 		author="Anonymous";
-    file="Survivalists_Retextures\gear\books\data\book_gilgameshepic.html";		
+    file="Survivalists_Books\gear\books\data\book_gilgameshepic.html";		
 		displayName="An Old Babylonian Version of the Gilgamesh Epic";
 		descriptionShort="An Old Babylonian Version of the Gilgamesh Epic";
 		rotationFlags=1;
@@ -1622,7 +1605,7 @@ class CfgVehicles
     scope=2;
 		title="Anna Karenina";
 		author="Leo Tolstoy";
-    file="Survivalists_Retextures\gear\books\data\book_annakarenina.html";		
+    file="Survivalists_Books\gear\books\data\book_annakarenina.html";		
 		displayName="Anna Karenina";
 		descriptionShort="Anna Karenina";
 		rotationFlags=1;
@@ -1636,7 +1619,7 @@ class CfgVehicles
     scope=2;
 		title="Candide";
 		author="Voltaire";
-    file="Survivalists_Retextures\gear\books\data\book_candide.html";		
+    file="Survivalists_Books\gear\books\data\book_candide.html";		
 		displayName="Candide";
 		descriptionShort="Candide";
 		rotationFlags=1;
@@ -1650,7 +1633,7 @@ class CfgVehicles
     scope=2;
 		title="Faust";
 		author="Johann Wolfgang von Goethe";
-    file="Survivalists_Retextures\gear\books\data\book_faust.html";		
+    file="Survivalists_Books\gear\books\data\book_faust.html";		
 		displayName="Faust";
 		descriptionShort="Faust";
 		rotationFlags=1;
@@ -1664,7 +1647,7 @@ class CfgVehicles
     scope=2;
 		title="Hindu Literature";
 		author="Epiphanius Wilson";
-    file="Survivalists_Retextures\gear\books\data\book_hinduliterature.html";		
+    file="Survivalists_Books\gear\books\data\book_hinduliterature.html";		
 		displayName="Hindu Literature";
 		descriptionShort="Hindu Literature";
 		rotationFlags=1;
@@ -1678,7 +1661,7 @@ class CfgVehicles
     scope=2;
 		title="Hunger";
 		author="Knut Hamsun";
-    file="Survivalists_Retextures\gear\books\data\book_hunger.html";		
+    file="Survivalists_Books\gear\books\data\book_hunger.html";		
 		displayName="Hunger";
 		descriptionShort="Hunger";
 		rotationFlags=1;
@@ -1692,7 +1675,7 @@ class CfgVehicles
     scope=2;
 		title="Japanese Literature";
 		author="Various";
-    file="Survivalists_Retextures\gear\books\data\book_japaneseliterature.html";		
+    file="Survivalists_Books\gear\books\data\book_japaneseliterature.html";		
 		displayName="Japanese Literature";
 		descriptionShort="Japanese Literature";
 		rotationFlags=1;
@@ -1706,7 +1689,7 @@ class CfgVehicles
     scope=2;
 		title="Le Rouge et le noir";
 		author="Stendhal";
-    file="Survivalists_Retextures\gear\books\data\book_lerouge.html";		
+    file="Survivalists_Books\gear\books\data\book_lerouge.html";		
 		displayName="Le Rouge et le noir";
 		descriptionShort="Le Rouge et le noir";
 		rotationFlags=1;
@@ -1720,7 +1703,7 @@ class CfgVehicles
     scope=2;
 		title="The Decameron of Giovanni Boccaccio";
 		author="Giovanni Boccaccio";
-    file="Survivalists_Retextures\gear\books\data\book_thedecameron.html";		
+    file="Survivalists_Books\gear\books\data\book_thedecameron.html";		
 		displayName="The Decameron of Giovanni Boccaccio";
 		descriptionShort="The Decameron of Giovanni Boccaccio";
 		rotationFlags=1;
@@ -1734,7 +1717,7 @@ class CfgVehicles
     scope=2;
 		title="The Poems of Giacomo Leopardi";
 		author="Giacomo Leopardi";
-    file="Survivalists_Retextures\gear\books\data\book_giacomoleopardi.html";		
+    file="Survivalists_Books\gear\books\data\book_giacomoleopardi.html";		
 		displayName="The Poems of Giacomo Leopardi";
 		descriptionShort="The Poems of Giacomo Leopardi";
 		rotationFlags=1;
@@ -1748,7 +1731,7 @@ class CfgVehicles
     scope=2;
 		title="Alice's Adventures in Wonderland";
 		author="";
-    file="Survivalists_Retextures\gear\books\data\book_aliceinwonderland.html";		
+    file="Survivalists_Books\gear\books\data\book_aliceinwonderland.html";		
 		displayName="Alice's Adventures in Wonderland";
 		descriptionShort="Alice's Adventures in Wonderland";
 		rotationFlags=1;
@@ -1762,7 +1745,7 @@ class CfgVehicles
     scope=2;
 		title="The Scarlet Pimpernel";
 		author="Baroness Orczy";
-    file="Survivalists_Retextures\gear\books\data\book_thescarletpimpernel.html";		
+    file="Survivalists_Books\gear\books\data\book_thescarletpimpernel.html";		
 		displayName="The Scarlet Pimpernel";
 		descriptionShort="The Scarlet Pimpernel";
 		rotationFlags=1;
@@ -1776,7 +1759,7 @@ class CfgVehicles
     scope=2;
 		title="The Three Musketeers";
 		author="";
-    file="Survivalists_Retextures\gear\books\data\book_thethreemusketeers.html";		
+    file="Survivalists_Books\gear\books\data\book_thethreemusketeers.html";		
 		displayName="The Three Musketeers";
 		descriptionShort="The Three Musketeers";
 		rotationFlags=1;
@@ -1790,7 +1773,7 @@ class CfgVehicles
     scope=2;
 		title="The Turn of the Screw";
 		author="Henry James";
-    file="Survivalists_Retextures\gear\books\data\book_theturnofthescrew.html";		
+    file="Survivalists_Books\gear\books\data\book_theturnofthescrew.html";		
 		displayName="The Turn of the Screw";
 		descriptionShort="The Turn of the Screw";
 		rotationFlags=1;
@@ -1804,7 +1787,7 @@ class CfgVehicles
     scope=2;
 		title="Translations of Shakuntala and Other Works";
 		author="K?alid?asa";
-    file="Survivalists_Retextures\gear\books\data\book_shakuntala.html";		
+    file="Survivalists_Books\gear\books\data\book_shakuntala.html";		
 		displayName="Translations of Shakuntala and Other Works";
 		descriptionShort="Translations of Shakuntala and Other Works";
 		rotationFlags=1;
@@ -1818,7 +1801,7 @@ class CfgVehicles
     scope=2;
 		title="Treasure Island";
 		author="Robert Louis Stevenson";
-    file="Survivalists_Retextures\gear\books\data\book_treasureisland.html";		
+    file="Survivalists_Books\gear\books\data\book_treasureisland.html";		
 		displayName="Treasure Island";
 		descriptionShort="Treasure Island";
 		rotationFlags=1;
@@ -1832,7 +1815,7 @@ class CfgVehicles
     scope=2;
 		title="Ulysses";
 		author="James Joyce";
-    file="Survivalists_Retextures\gear\books\data\book_ulysses.html";		
+    file="Survivalists_Books\gear\books\data\book_ulysses.html";		
 		displayName="Ulysses";
 		descriptionShort="Ulysses";
 		rotationFlags=1;
@@ -1846,7 +1829,7 @@ class CfgVehicles
     scope=2;
 		title="Uncle Silas";
 		author="J. S. LeFanu";
-    file="Survivalists_Retextures\gear\books\data\book_unclesilas.html";		
+    file="Survivalists_Books\gear\books\data\book_unclesilas.html";		
 		displayName="Uncle Silas";
 		descriptionShort="Uncle Silas";
 		rotationFlags=1;
@@ -1860,7 +1843,7 @@ class CfgVehicles
     scope=2;
 		title="The Aeneid";
 		author="Virgil";
-    file="Survivalists_Retextures\gear\books\data\book_theaeneid.html";		
+    file="Survivalists_Books\gear\books\data\book_theaeneid.html";		
 		displayName="The Aeneid";
 		descriptionShort="The Aeneid";
 		rotationFlags=1;
@@ -1874,7 +1857,7 @@ class CfgVehicles
     scope=2;
 		title="War and Peace";
 		author="Leo Tolstoy";
-    file="Survivalists_Retextures\gear\books\data\book_warandpeace.html";		
+    file="Survivalists_Books\gear\books\data\book_warandpeace.html";		
 		displayName="War and Peace";
 		descriptionShort="War and Peace";
 		rotationFlags=1;
@@ -1888,7 +1871,7 @@ class CfgVehicles
     scope=2;
 		title="Wieland or The Transformation";
 		author="Charles Brockden Brown";
-    file="Survivalists_Retextures\gear\books\data\book_weiland.html";		
+    file="Survivalists_Books\gear\books\data\book_weiland.html";		
 		displayName="Wieland or The Transformation";
 		descriptionShort="Wieland or The Transformation";
 		rotationFlags=1;
@@ -1902,7 +1885,7 @@ class CfgVehicles
     scope=2;
 		title="Wuthering Heights";
 		author="Emily Bronte";
-    file="Survivalists_Retextures\gear\books\data\book_wutheringheights.html";		
+    file="Survivalists_Books\gear\books\data\book_wutheringheights.html";		
 		displayName="Wuthering Heights";
 		descriptionShort="Wuthering Heights";
 		rotationFlags=1;
@@ -1916,7 +1899,7 @@ class CfgVehicles
     scope=2;
 		title="Cinq Semaines En Ballon";
 		author="Jules Verne";
-    file="Survivalists_Retextures\gear\books\data\book_cinqsemaines.html";		
+    file="Survivalists_Books\gear\books\data\book_cinqsemaines.html";		
 		displayName="Cinq Semaines En Ballon";
 		descriptionShort="Cinq Semaines En Ballon";
 		rotationFlags=1;
@@ -1930,7 +1913,7 @@ class CfgVehicles
     scope=2;
 		title="Dracula";
 		author="Bram Stoker";
-    file="Survivalists_Retextures\gear\books\data\book_dracula.html";		
+    file="Survivalists_Books\gear\books\data\book_dracula.html";		
 		displayName="Dracula";
 		descriptionShort="Dracula";
 		rotationFlags=1;
@@ -1944,7 +1927,7 @@ class CfgVehicles
     scope=2;
 		title="Das Nibelungenlied";
 		author="Unknown";
-    file="Survivalists_Retextures\gear\books\data\book_dasnibelungenlied.html";		
+    file="Survivalists_Books\gear\books\data\book_dasnibelungenlied.html";		
 		displayName="Das Nibelungenlied";
 		descriptionShort="Das Nibelungenlied";
 		rotationFlags=1;
@@ -1958,7 +1941,7 @@ class CfgVehicles
     scope=2;
 		title="The Last Man";
 		author="Mary Shelley";
-    file="Survivalists_Retextures\gear\books\data\book_thelastman.html";		
+    file="Survivalists_Books\gear\books\data\book_thelastman.html";		
 		displayName="The Last Man";
 		descriptionShort="The Last Man";
 		rotationFlags=1;
@@ -1972,7 +1955,7 @@ class CfgVehicles
     scope=2;
 		title="Romeo und Julia";
 		author="William Shakespeare";
-    file="Survivalists_Retextures\gear\books\data\book_romeoundjulia.html";		
+    file="Survivalists_Books\gear\books\data\book_romeoundjulia.html";		
 		displayName="Romeo und Julia";
 		descriptionShort="Romeo und Julia";
 		rotationFlags=1;
@@ -1986,7 +1969,7 @@ class CfgVehicles
     scope=2;
 		title="Frankenstein";
 		author="Mary Wollstonecraft (Godwin) Shelley";
-    file="Survivalists_Retextures\gear\books\data\book_frankenstein.html";		
+    file="Survivalists_Books\gear\books\data\book_frankenstein.html";		
 		displayName="Frankenstein";
 		descriptionShort="Frankenstein";
 		rotationFlags=1;
@@ -2000,7 +1983,7 @@ class CfgVehicles
     scope=2;
 		title="De la terre a la lune";
 		author="Jules Verne";
-    file="Survivalists_Retextures\gear\books\data\book_delaterrealalune.html";		
+    file="Survivalists_Books\gear\books\data\book_delaterrealalune.html";		
 		displayName="De la terre a la lune";
 		descriptionShort="De la terre a la lune";
 		rotationFlags=1;
@@ -2014,7 +1997,7 @@ class CfgVehicles
     scope=2;
 		title="L'Île mystérieuse";
 		author="Jules Verne";
-    file="Survivalists_Retextures\gear\books\data\book_mysterieuse.html";		
+    file="Survivalists_Books\gear\books\data\book_mysterieuse.html";		
 		displayName="L'Île mystérieuse";
 		descriptionShort="L'Île mystérieuse";
 		rotationFlags=1;
@@ -2028,7 +2011,7 @@ class CfgVehicles
     scope=2;
 		title="La Comédie humaine volume I";
 		author="Honoré de Balzac";
-    file="Survivalists_Retextures\gear\books\data\book_lacomediehumaine.html";		
+    file="Survivalists_Books\gear\books\data\book_lacomediehumaine.html";		
 		displayName="La Comédie humaine volume I";
 		descriptionShort="La Comédie humaine volume I";
 		rotationFlags=1;
@@ -2042,7 +2025,7 @@ class CfgVehicles
     scope=2;
 		title="Les Corneilles";
 		author="J.-H. Rosny";
-    file="Survivalists_Retextures\gear\books\data\book_lescorneilles.html";		
+    file="Survivalists_Books\gear\books\data\book_lescorneilles.html";		
 		displayName="Les Corneilles";
 		descriptionShort="Les Corneilles";
 		rotationFlags=1;
@@ -2056,7 +2039,7 @@ class CfgVehicles
     scope=2;
 		title="20000 Lieues sous les mers";
 		author="Jules Verne";
-    file="Survivalists_Retextures\gear\books\data\book_2000kleagues.html";		
+    file="Survivalists_Books\gear\books\data\book_2000kleagues.html";		
 		displayName="20000 Lieues sous les mers";
 		descriptionShort="20000 Lieues sous les mers";
 		rotationFlags=1;
@@ -2070,7 +2053,7 @@ class CfgVehicles
     scope=2;
 		title="Three Men in a Boat";
 		author="Jerome K. Jerome";
-    file="Survivalists_Retextures\gear\books\data\book_threemeninaboat.html";		
+    file="Survivalists_Books\gear\books\data\book_threemeninaboat.html";		
 		displayName="Three Men in a Boat";
 		descriptionShort="Three Men in a Boat";
 		rotationFlags=1;

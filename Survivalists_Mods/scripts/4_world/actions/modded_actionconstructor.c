@@ -10,8 +10,6 @@ modded class ActionConstructor
     actions.Insert(ActionTeleportToEvent);
     actions.Insert(ActionTeleportAwayFromEvent);
 
-    actions.Insert(ActionReadBook);
-
     actions.Insert(ActionPutGogglesOnHead);
     actions.Insert(ActionPutGogglesOnFace);
 
