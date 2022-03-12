@@ -513,6 +513,64 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_DeerMask: Clothing
+	{
+		scope=2;
+		displayName="Deer Skull Mask";
+		descriptionShort="A hollowed out deer skull";
+		model="Survivalists_Mods\characters\masks\SRP_DeerMask_g.p3d";
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot="Mask";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Mask"
+		};
+		weight=1000;
+		itemSize[]={3,3};
+		absorbency=0;
+		heatIsolation=0.8;
+		// noMask=0;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\DeerMask_CO.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\SRP_DeerMask.p3d";
+			female="Survivalists_Mods\characters\masks\SRP_DeerMask.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\masks\data\DeerMask.rvmat"}},
+						{0.69999999,{"Survivalists_Mods\characters\masks\data\DeerMask.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\masks\data\DeerMask_damage.rvmat"}},
+						{0.30000001,{"Survivalists_Mods\characters\masks\data\DeerMask_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\masks\data\DeerMask_destruct.rvmat"}}
+          };
+				};
+			};
+		};
+  };
+
   // ------------------------------------------ MVS Redux
 	class SRP_S10Respirator_Colorbase: GP5GasMask
 	{
