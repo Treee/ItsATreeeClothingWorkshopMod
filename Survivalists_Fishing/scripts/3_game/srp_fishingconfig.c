@@ -81,13 +81,31 @@ class SRPFishingConfig
   ref array<ref SRPFishingHotspot> m_FishingHotspots;
   ref array<ref SRPFishingRodLuck> m_FishingRodLuck;  
 
+  float m_ClamDigChance;
   float m_ClamPearlChance;
+  float m_DigClamToolDamage;
+  ref array<string> m_ClamTypes; // = {"SRP_Clam","SRP_Clam_Blue","SRP_Clam_Red","SRP_Clam_Silver"};
 
   float GetClamPearlChance()
   {
     return m_ClamPearlChance;
   }
   
+  float GetClamDigChance()
+  {
+    return m_ClamDigChance;
+  }
+
+  float GetClamDigToolDamage()
+  {
+    return m_DigClamToolDamage;
+  }
+
+  string GetRandomClam()
+  {
+    return m_ClamTypes.Get(Math.RandomInt(0,m_ClamTypes.Count()));
+  }
+
   string GetRandomSaltWaterJunk(float chance, string rodName)
   {
     string junk_type = "";
