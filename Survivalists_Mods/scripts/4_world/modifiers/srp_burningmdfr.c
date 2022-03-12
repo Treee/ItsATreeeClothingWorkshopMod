@@ -1,5 +1,8 @@
 class SRP_BurningMdfr: ModifierBase
 {
+  float timeBetweenEvents = 4.0; // 4 seconds between burnings
+  float accumulatedTime = 4.0; // start with a burning event
+
 	override void Init()
 	{
 		m_TrackActivatedTime = false;
@@ -37,7 +40,12 @@ class SRP_BurningMdfr: ModifierBase
 
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-		BurnPlayer(player);
+    if (accumulatedTime > timeBetweenEvents)
+    {
+		  BurnPlayer(player);
+      accumulatedTime = 0;
+    }
+    accumulatedTime += deltaT;
 	}
 
   void BurnPlayer(PlayerBase player)

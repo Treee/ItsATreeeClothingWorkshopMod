@@ -145,7 +145,59 @@ modded class PlayerBase extends ManBase
     }
     return false;
   }
-  
+
+  int GetPlayerRadiationProtection()
+  {
+    float protection = 0;
+    ItemBase wornItem;
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.HEADGEAR));
+    if (wornItem)
+    {
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+    }
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.GLOVES));
+    if (wornItem)
+    {
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+    }
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.BODY));
+    if (wornItem)
+    {
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+    }
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.LEGS));
+    if (wornItem)
+    {
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+    }
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.FEET));
+    if (wornItem)
+    {
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+    }
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.MASK));
+    if (wornItem)
+    {
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL, true);
+    }
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.ARMBAND));
+    if (wornItem)
+    {
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+    }
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.BACK));
+    if (wornItem)
+    {
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+    }
+    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.HEAD));
+    if (wornItem && (wornItem.GetType() == "DUB_Muthead_M" || wornItem.GetType() == "DUB_Muthead_F" || wornItem.GetType() == "DUB_Muthead_M_2" || wornItem.GetType() == "DUB_Muthead_F_2" || wornItem.GetType() == "DUB_Carlhead"))
+    {
+      protection += 6.0;
+    }
+    return protection;
+  }
+
   float SRPAIVisionModifier()
   {
     float vision = 1.0;

@@ -4,25 +4,24 @@ modded class SRP_LabTube_MutantLiquidSterilizedIrradiated
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB)
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//effectively resets the timer
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
-      player_PB.GetModifiersManager().ActivateModifier( eModifiers.MDF_CONTAMINATION2 );
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 300);
+      player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
     }
   }
   override void OnInventoryExit(Man player)
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB && GetGame().IsDedicatedServer())
+    if (GetGame().IsDedicatedServer() && player_PB)
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//if activated, removed
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//if activated, removed
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
     }
   }
@@ -34,25 +33,24 @@ modded class DUB_Mutantsyringe_Pure
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB)
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//effectively resets the timer
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
-      player_PB.GetModifiersManager().ActivateModifier( eModifiers.MDF_CONTAMINATION2 );
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 300);
+      player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
     }
   }
   override void OnInventoryExit(Man player)
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB && GetGame().IsDedicatedServer())
+    if (GetGame().IsDedicatedServer() && player_PB)
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//if activated, removed
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//if activated, removed
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
     }
   }
@@ -63,25 +61,24 @@ modded class DUB_Mutantsyringe_Pure_Accel
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB)
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//effectively resets the timer
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
-      player_PB.GetModifiersManager().ActivateModifier( eModifiers.MDF_CONTAMINATION2 );
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 300);
+      player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
     }
   }
   override void OnInventoryExit(Man player)
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB && GetGame().IsDedicatedServer())
+    if (GetGame().IsDedicatedServer() && player_PB)
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//if activated, removed
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//if activated, removed
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
     }
   }
@@ -92,25 +89,24 @@ modded class DUB_Mutantsyringe_Admin2
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB)
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//effectively resets the timer
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
-      player_PB.GetModifiersManager().ActivateModifier( eModifiers.MDF_CONTAMINATION2 );
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 300);
+      player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
     }
   }
   override void OnInventoryExit(Man player)
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB && GetGame().IsDedicatedServer())
+    if (GetGame().IsDedicatedServer() && player_PB)
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//if activated, removed
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//if activated, removed
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
     }
   }
@@ -121,25 +117,24 @@ modded class DUB_Mutantsyringe_Admin4
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB)
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//effectively resets the timer
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
-      player_PB.GetModifiersManager().ActivateModifier( eModifiers.MDF_CONTAMINATION2 );
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 300);
+      player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
     }
   }
   override void OnInventoryExit(Man player)
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB && GetGame().IsDedicatedServer())
+    if (GetGame().IsDedicatedServer() && player_PB)
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//if activated, removed
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//if activated, removed
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
     }
   }
@@ -150,25 +145,24 @@ modded class DUB_Mutantsyringe_Pure_Sup
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB)
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//effectively resets the timer
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
-      player_PB.GetModifiersManager().ActivateModifier( eModifiers.MDF_CONTAMINATION2 );
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 300);
+      player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
     }
   }
   override void OnInventoryExit(Man player)
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB && GetGame().IsDedicatedServer())
+    if (GetGame().IsDedicatedServer() && player_PB)
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//if activated, removed
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//if activated, removed
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
     }
   }
@@ -179,25 +173,24 @@ modded class DUB_Mutantsyringe_Crude
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB)
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//effectively resets the timer
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
-      player_PB.GetModifiersManager().ActivateModifier( eModifiers.MDF_CONTAMINATION2 );
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 300);
+      player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
     }
   }
   override void OnInventoryExit(Man player)
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB && GetGame().IsDedicatedServer())
+    if (GetGame().IsDedicatedServer() && player_PB)
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//if activated, removed
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//if activated, removed
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
     }
   }
@@ -208,25 +201,24 @@ modded class DUB_Mutantsyringe_Crude_Cure
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB)
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//effectively resets the timer
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
-      player_PB.GetModifiersManager().ActivateModifier( eModifiers.MDF_CONTAMINATION2 );
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 300);
+      player_PB.GetModifiersManager().ActivateModifier( SRP_eModifiers.MDF_SRPBURNING );
     }
   }
   override void OnInventoryExit(Man player)
   {
     super.OnInventoryExit(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (player_PB && GetGame().IsDedicatedServer())
+    if (GetGame().IsDedicatedServer() && player_PB)
     {
-      if( player_PB.GetModifiersManager().IsModifierActive(eModifiers.MDF_CONTAMINATION2) )//if activated, removed
+      if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//if activated, removed
       {
-        player_PB.GetModifiersManager().DeactivateModifier( eModifiers.MDF_CONTAMINATION2, false );
+        player_PB.GetModifiersManager().DeactivateModifier( SRP_eModifiers.MDF_SRPBURNING, false );
       }
     }
   }
