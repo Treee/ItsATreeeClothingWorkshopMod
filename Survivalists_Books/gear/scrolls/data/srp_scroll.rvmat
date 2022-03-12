@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Books\gear\books\data\srp_scroll_smdi.paa";
+	texture="Survivalists_Books\gear\scrolls\data\srp_scroll_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
