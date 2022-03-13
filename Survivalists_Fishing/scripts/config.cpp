@@ -80,49 +80,49 @@ class CfgNonAIVehicles
 	{
 		scope=2;
 		inventorySlot[]={"SRP_ClamMeat"};
-		model="Survivalists_Mods\proxy\srp_clammeat_proxy.p3d";
+		model="Survivalists_Fishing\proxy\srp_clammeat_proxy.p3d";
 	};
   class Proxysrp_clampearl_proxy: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot[]={"SRP_ClamPearl"};
-		model="Survivalists_Mods\proxy\srp_clampearl_proxy.p3d";
+		model="Survivalists_Fishing\proxy\srp_clampearl_proxy.p3d";
 	};
   class Proxysrp_fish1_proxy: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot[]={"SRP_Fish_Small1"};
-		model="Survivalists_Mods\proxy\srp_fish1_proxy.p3d";
+		model="Survivalists_Fishing\proxy\srp_fish1_proxy.p3d";
 	};
   class Proxysrp_fish2_proxy: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot[]={"SRP_Fish_Small2"};
-		model="Survivalists_Mods\proxy\srp_fish2_proxy.p3d";
+		model="Survivalists_Fishing\proxy\srp_fish2_proxy.p3d";
 	};
   class Proxysrp_fish3_proxy: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot[]={"SRP_Fish_Small3"};
-		model="Survivalists_Mods\proxy\srp_fish3_proxy.p3d";
+		model="Survivalists_Fishing\proxy\srp_fish3_proxy.p3d";
 	};
   class Proxysrp_fish4_proxy: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot[]={"SRP_Fish_Small4"};
-		model="Survivalists_Mods\proxy\srp_fish4_proxy.p3d";
+		model="Survivalists_Fishing\proxy\srp_fish4_proxy.p3d";
 	};
   class Proxysrp_fish5_proxy: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot[]={"SRP_Fish_Small5"};
-		model="Survivalists_Mods\proxy\srp_fish5_proxy.p3d";
+		model="Survivalists_Fishing\proxy\srp_fish5_proxy.p3d";
 	};
 
   class Proxysrp_fish1_large_proxy: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot[]={"SRP_Fish_Large1"};
-		model="Survivalists_Mods\proxy\srp_fish1_large_proxy.p3d";
+		model="Survivalists_Fishing\proxy\srp_fish1_large_proxy.p3d";
 	};
 };
