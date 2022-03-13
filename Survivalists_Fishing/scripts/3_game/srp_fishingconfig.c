@@ -180,11 +180,14 @@ class SRPFishCatch
   string GetFish()
   {
     string aggregatedFishType = GetFishType();
+    // Print("GetFish: " + aggregatedFishType);
     if (GetFishColor() != "")
     {
       aggregatedFishType += "_" + GetFishColor();
+      // Print("GetFish: " + aggregatedFishType);
     }
     aggregatedFishType += "_" + GetFishSize();
+    // Print("GetFish: " + aggregatedFishType);
     return aggregatedFishType;
   }
 
@@ -287,22 +290,28 @@ class SRPFishingConfig
     TStringArray options = new TStringArray;
     foreach(SRPFishCatch fish: m_FishCatches)
     {
+      // Print("Fish Start: " + fish.GetFishType() + " Luck required: " + fish.GetCatchChance());
       // salt water wish with enough luck
       if (!fish.IsFreshWaterFish() && fish.IsEnoughLuck(chance))
       { // the fish requires a lure and player has a lure
+        // Print("Salt water fish is catchable: does it require a lure? " + fish.RequiresLure() + " do we have a lure? " + hasLure);
         if (fish.RequiresLure() && hasLure)
         { // the action requires deepSea AND the fish is deap sea fish
+          // Print("fish is lured. is this a deep sea cast? " + deepSea + " is this fish deep sea? " + fish.IsDeepSeaFish());
           if (deepSea && fish.IsDeepSeaFish())
           {
+            // Print("Get the fish");
             options.Insert(fish.GetFish());
           }// the action does not require deep sea and the fish is NOT deep sea
           else if (!deepSea && !fish.IsDeepSeaFish())       
           {
+            // Print("Get the fish");
             options.Insert(fish.GetFish());
           }
         }// the fish does not require a lure
         else
         { // the action requires deepSea AND the fish is deap sea fish
+          // Print("dumb fish dopesnt need to be lured. is the deep sea cast? " + deepSea + " is this fish deep sea? " + deepSea);
           if (deepSea && fish.IsDeepSeaFish())
           {
             options.Insert(fish.GetFish());
@@ -315,7 +324,7 @@ class SRPFishingConfig
       }
     }
     fishType = options.GetRandomElement();
-    Print("Fish Type: " + fishType + " Chance: " + chance);
+    // Print("Fish Type: " + fishType + " Chance: " + chance + "hasLure: " + hasLure + " deapSea: " + deepSea);
     return fishType;
   }
 

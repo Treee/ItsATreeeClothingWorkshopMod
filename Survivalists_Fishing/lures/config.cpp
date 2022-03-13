@@ -49,7 +49,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=30;
+					hitpoints=100;
 					healthLevels[]=
 					{
 						{1.0,{"Survivalists_Fishing\lures\data\fishinglures.rvmat"}},						

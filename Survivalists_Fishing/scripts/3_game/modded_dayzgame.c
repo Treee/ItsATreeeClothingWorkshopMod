@@ -147,6 +147,10 @@ modded class DayZGame
         m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("ObsoleteFishingRod", 0.02));
         m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("ImprovisedFishingRod", 0.05));
         m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("FishingRod", 0.1));
+        m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("SRP_HandMadeFishingRod", 0.1));
+        m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("SRP_HandMadeFishingRod_Blue", 0.15));
+        m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("SRP_HandMadeFishingRod_Red", 0.15));
+        m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("SRP_HandMadeFishingRod_Purple", 0.2));
 
         m_SRPFishingConfig.m_FishingClam = new ref array<ref SRPFishingClam>;
         m_SRPFishingConfig.m_FishingClam.Insert(new SRPFishingClam("SRP_Clam", 0.5, 0.05, 10));
