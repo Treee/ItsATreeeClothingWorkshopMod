@@ -45,24 +45,21 @@ class ActionOpenClam: ActionContinuousBase
     {			
       ItemBase new_item = ItemBase.Cast(GetGame().CreateObjectEx(item.GetType()+"_Opened", action_data.m_Player.GetPosition(), false));
       if (new_item) 
-      {
-        float m_PearlChance = 0.05;
+      {        
         if (GetDayZGame().GetSRPFishingConfig())
         {
-          m_PearlChance = GetDayZGame().GetSRPFishingConfig().GetClamPearlChance();
+          SRPFishingClam clam = GetDayZGame().GetSRPFishingConfig().GetClamDataByName(item.GetType());
+          float rnd = Math.RandomFloatInclusive(0,1);
+          if (clam.IsLuckyOpen(rnd))
+          {
+            new_item.GetInventory().CreateAttachment("SRP_Pearl");
+          }
+          new_item.GetInventory().CreateAttachment("SRP_ClamFilletMeat");
+          float removeHP = new_item.GetMaxHealth() * 0.8;
+          new_item.AddHealth(-removeHP);      
         }
-
-        float rnd = Math.RandomFloatInclusive(0,1);
-        float calculatPearlChance = 1-m_PearlChance;
-        if (rnd > calculatPearlChance)
-        {
-          new_item.GetInventory().CreateAttachment("SRP_Pearl");
-        }
-        new_item.GetInventory().CreateAttachment("SRP_ClamFilletMeat");
-        float removeHP = new_item.GetMaxHealth() * 0.8;
-        new_item.AddHealth(-removeHP);      
       }
+		  item.Delete();
     }
-		item.Delete();
 	}
 };

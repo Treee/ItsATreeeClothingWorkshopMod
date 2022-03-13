@@ -64,6 +64,12 @@ class CfgSlots
 		displayName="Fish";
 		ghostIcon="set:dayz_inventory image:food";
 	};
+  class Slot_SRP_FishingLure
+	{
+		name="SRP_FishingLure";
+		displayName="Fishing Lure";
+		ghostIcon="set:dayz_inventory image:chemlight";
+	};
 };
 
 class CfgNonAIVehicles

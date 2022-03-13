@@ -25,22 +25,119 @@ modded class DayZGame
       {
         m_SRPFishingConfig = new SRPFishingConfig();
 
-        m_SRPFishingConfig.m_SaltWaterJunkItems = {"Shovel"};
-        m_SRPFishingConfig.m_SaltWaterRareItems = {"Hammer"};
-        m_SRPFishingConfig.m_SaltWaterEpicItems = {"WoodAxe"};
-        m_SRPFishingConfig.m_SaltWaterLegendaryItems = {"Pot"};
-        m_SRPFishingConfig.m_SaltWaterFish = {"Sardines", "Mackerel","CoralFish_Blue", "CoralFish_Green", "CoralFish_Purple", "CoralFish_Red", "CoralFish_Yellow", "AngelFish_Blue", "AngelFish_Orange", "AngelFish_Red","AngelFish_Yellow","SailFish_Blue","SailFish_Green","SailFish_Red","SailFish_Yellow","SailFish_Silver","AnglerFish_Blue","AnglerFish_Purple","AnglerFish_Silver","HammerHeadFish_Blue","HammerHeadFish_Red","HammerHeadFish_Silver","HammerHeadFish_Yellow"};
-        m_SRPFishingConfig.m_SaltWaterLootChances = {0,0.50,0.85,0.97};
-        m_SRPFishingConfig.m_SaltWaterFishChances = {0,0.50,0.85,0.97};
-        
-        m_SRPFishingConfig.m_FreshWaterJunkItems = {"Hammer"};			
-        m_SRPFishingConfig.m_FreshWaterRareItems = {"Shovel"};
-        m_SRPFishingConfig.m_FreshWaterEpicItems = {"WoodAxe"};
-        m_SRPFishingConfig.m_FreshWaterLegendaryItems = {"Pot"};
-        m_SRPFishingConfig.m_FreshWaterFish = {"Bitterlings", "Carp", "TroutFish_Brown", "TroutFish_Blue", "TroutFish_Red", "TroutFish_Yellow", "MutantFish_Red", "MutantFish_Blue", "MutantFish_Green", "MutantFish_Yellow","SplakeFish_Red","SplakeFish_Blue","SplakeFish_Green","SplakeFish_Yellow","SplakeFish_Purple","PerchFish_Red","PerchFish_Blue","PerchFish_Green","PerchFish_Yellow","PerchFish_Silver","TilapiaFish_Blue","TilapiaFish_Red","TilapiaFish_Green","TilapiaFish_Yellow","TilapiaFish_Silver"};
-        m_SRPFishingConfig.m_FreshWaterLootChances = {0,0.50,0.85,0.97};
-        m_SRPFishingConfig.m_FreshWaterFishChances = {0,0.45,0.85,0.97};
+        m_SRPFishingConfig.m_FishingJunk = new ref array<ref SRPFishingJunk>;
+        // Salt water junk
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Wellies_Black"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "Wellies_Black"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "Wellies_Black"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "Wellies_Black")); 
+        // fresh water junk
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Wellies_Green", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "Wellies_Grey", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "Pot",true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "Wellies_Black",true));      
 
+
+        m_SRPFishingConfig.m_FishCatches = new ref array<ref SRPFishCatch>;
+        // FRESHWATER
+        SRPFishCatch fish = new SRPFishCatch("Bitterlings", 1, true);
+        fish.m_FishColors = {""};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("Carp", 1, true);
+        fish.m_FishColors = {""};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("TroutFish", 1, true);
+        fish.m_FishColors = {"Brown","Blue","Red","Yellow"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.25, 0.10, 0.03};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("MutantFish", 0.1, true, true);
+        fish.m_FishColors = {"Red","Blue","Green","Yellow"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.25, 0.10, 0.03};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("SplakeFish", 0.5, true);
+        fish.m_FishColors = {"Red","Blue","Green","Yellow","Purple"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.50, 0.25, 0.10, 0.03};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("PerchFish", 0.5, true);
+        fish.m_FishColors = {"Red","Blue","Green","Yellow","Silver"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.50, 0.25, 0.10, 0.03};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("TilapiaFish", 0.25, true);
+        fish.m_FishColors = {"Blue","Red","Green","Yellow","Silver"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.50, 0.25, 0.10, 0.03};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        // SALTWATER
+        fish = new SRPFishCatch("Mackerel", 1);
+        fish.m_FishColors = {""};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("Sardines", 1);
+        fish.m_FishColors = {""};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("CoralFish", 0.5);
+        fish.m_FishColors = {"Blue","Green","Purple","Red","Yellow"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.50, 0.25, 0.10, 0.03};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("AngelFish", 0.5);
+        fish.m_FishColors = {"Blue","Orange","Red","Yellow"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.50, 0.10, 0.03};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("AnglerFish", 0.5, false, true, true);
+        fish.m_FishColors = {"Blue","Purple","Silver"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.50, 0.10};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("SailFish", 0.2, false, true, true);
+        fish.m_FishColors = {"Blue","Green", "Red","Yellow","Silver"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.50,0.25, 0.10,0.03};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
+
+        fish = new SRPFishCatch("HammerHeadFish", 0.2, false, true, true);
+        fish.m_FishColors = {"Blue","Red","Silver","Yellow"};
+        fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
+        fish.m_FishColorChances = {1, 0.50,0.25, 0.10};
+        fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
+        m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
         m_SRPFishingConfig.m_FishingHotspots = new ref array<ref SRPFishingHotspot>;
         m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("1000 0 1400", 1000));
@@ -51,10 +148,11 @@ modded class DayZGame
         m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("ImprovisedFishingRod", 0.05));
         m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("FishingRod", 0.1));
 
-        m_SRPFishingConfig.m_ClamPearlChance = 0.05;
-        m_SRPFishingConfig.m_ClamDigChance = 0.5;
-        m_SRPFishingConfig.m_DigClamToolDamage = 10;
-        m_SRPFishingConfig.m_ClamTypes = {"SRP_Clam","SRP_Clam_Blue","SRP_Clam_Red","SRP_Clam_Silver"};
+        m_SRPFishingConfig.m_FishingClam = new ref array<ref SRPFishingClam>;
+        m_SRPFishingConfig.m_FishingClam.Insert(new SRPFishingClam("SRP_Clam", 0.5, 0.05, 10));
+        m_SRPFishingConfig.m_FishingClam.Insert(new SRPFishingClam("SRP_Clam_Blue", 0.25, 0.1, 7.5));
+        m_SRPFishingConfig.m_FishingClam.Insert(new SRPFishingClam("SRP_Clam_Red", 0.1, 0.25, 5));
+        m_SRPFishingConfig.m_FishingClam.Insert(new SRPFishingClam("SRP_Clam_Silver", 0.05, 0.75, 2));
 
         JsonFileLoader<ref SRPFishingConfig>.JsonSaveFile("$profile:\\Survivalists_Fishing\\SRPFishingConfig.json", m_SRPFishingConfig);
       } 

@@ -15,6 +15,31 @@ class CfgPatches
 class CfgVehicles
 {	
   class FishingRod_Base_New;
+  
+  class ImprovisedFishingRod: FishingRod_Base_New
+  {
+    attachments[]=
+		{
+			"Hook",
+      "SRP_FishingLure"
+		};  
+  };
+  class ObsoleteFishingRod: FishingRod_Base_New
+  {
+    attachments[]=
+		{
+			"Hook",
+      "SRP_FishingLure"
+		};  
+  };
+  class FishingRod: FishingRod_Base_New
+  {
+    attachments[]=
+		{
+			"Hook",
+      "SRP_FishingLure"
+		};  
+  };
 
   class SRP_HandMadeFishingRod: FishingRod_Base_New
 	{
@@ -31,7 +56,8 @@ class CfgVehicles
 		lootCategory="Crafted";
 		attachments[]=
 		{
-			"Hook"
+			"Hook",
+      "SRP_FishingLure"
 		};
 		energyResources[]=
 		{			

@@ -1,3 +1,36 @@
+modded class CCTWaterSurface
+{
+	override bool Can( PlayerBase player, ActionTarget target )
+	{
+		if ( !target || ( target && target.GetObject() ) )
+			return false;
+		
+		// See if we are looking at something			
+		vector hit_pos = target.GetCursorHitPos();
+		if (hit_pos == vector.Zero)
+			return false;
+		
+		// See if the surface at the cursor position is water (surfType.Contains("water"))
+		// Small Y offset, as it will prioritize water when surfaces are really close together
+		string surfType;
+		g_Game.SurfaceGetType3D(hit_pos[0], hit_pos[1] + 0.1, hit_pos[2], surfType);
+		
+		// See if the player is looking at the sea
+		bool isSeaCheck = false;
+		if ( m_SurfaceType == UAWaterType.ALL )
+			isSeaCheck = ( hit_pos[1] <= ( g_Game.SurfaceGetSeaLevel() + 0.001 ) );
+		
+		// Sometimes SurfaceGetType3D ignores the Y, this makes it so the proper distance is calculated
+		hit_pos[1] = g_Game.SurfaceY(hit_pos[0],hit_pos[2]);
+
+    Print("Distance: " + vector.DistanceSq(hit_pos, player.GetPosition()) + " ISSea: " + isSeaCheck + " surfaceType: " + surfType + " 2nd surface: " + m_SurfaceType + " max distance: " + m_MaximalActionDistanceSq);
+		
+		// Combine the tests and check the distance
+		return ( vector.DistanceSq(hit_pos, player.GetPosition()) <= m_MaximalActionDistanceSq && (isSeaCheck || surfType.Contains(m_SurfaceType)) );
+	}
+};
+
+
 modded class FishingActionData
 {
 	const float FISHING_SUCCESS 		= 0.2;
@@ -38,27 +71,35 @@ modded class ActionFishingNewCB
 			{
         // damage the hook
 				m_ActionDataFishing.m_Bait.AddHealth(-m_ActionDataFishing.FISHING_DAMAGE);
+        ItemBase lure = ItemBase.Cast(m_ActionDataFishing.m_MainItem.FindAttachmentBySlotName("SRP_FishingLure"));
+        if (lure)
+        {
+          lure.AddHealth(-m_ActionDataFishing.FISHING_DAMAGE);
+        }
 			}
 			
 			float rnd = Math.RandomFloatInclusive(0.0,1.0);
+      Print("Rolled " + rnd);
       // if we roll 20 or higher
 			if (rnd > m_ActionDataFishing.FISHING_GARBAGE_CHANCE)
 			{
+        bool hasLure = (ItemBase.Cast(m_ActionDataFishing.m_MainItem.FindAttachmentBySlotName("SRP_FishingLure")) != NULL);
 			  rnd = Math.RandomFloatInclusive(0.0,1.0);
         string fishClassName;
         // if the surface is sea
 				if (m_ActionDataFishing.m_IsSurfaceSea)
         {
           // give salt water fish
-          fishClassName = GetSaltWaterFish(rnd, m_ActionDataFishing.m_MainItem.GetType());
+          fishClassName = GetSaltWaterFish(rnd, m_ActionDataFishing.m_MainItem.GetType(), hasLure);
         }
 				else
         {
           // fresh water fish
-          fishClassName = GetFreshWaterFish(rnd, m_ActionDataFishing.m_MainItem.GetType());
+          fishClassName = GetFreshWaterFish(rnd, m_ActionDataFishing.m_MainItem.GetType(), hasLure);
         }
         if (fishClassName != "")
         {
+          Print("Fish spawned: " + fishClassName);
           fish = ItemBase.Cast(GetGame().CreateObjectEx(fishClassName,m_ActionDataFishing.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
         }
 			} // we rolled a 20 or lower
@@ -67,7 +108,7 @@ modded class ActionFishingNewCB
         string junk_type;
         // synced random on client and server
 			  rnd = Math.RandomFloatInclusive(0.0,1.0);
-
+        Print("Junk Randon: " + rnd);
         // if the surface is sea
 				if (m_ActionDataFishing.m_IsSurfaceSea )
 				{
@@ -80,6 +121,7 @@ modded class ActionFishingNewCB
         }
         if (junk_type != "")
         {
+          Print("Junk Type: " + junk_type);
           fish = ItemBase.Cast(GetGame().CreateObjectEx(junk_type,m_ActionDataFishing.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
           fish.SetHealth("","Health",fish.GetMaxHealth("","Health") * 0.1);
         }
@@ -105,14 +147,14 @@ modded class ActionFishingNewCB
 		}
 	}
 
-  string GetSaltWaterFish(float chance, string rodName)
+  string GetSaltWaterFish(float chance, string rodName, bool hasLure)
   {
     string fishType = "Mackerel"; // default
     if (GetDayZGame().GetSRPFishingConfig())
     {
-      if (GetDayZGame().GetSRPFishingConfig().m_SaltWaterFish)
+      if (GetDayZGame().GetSRPFishingConfig())
       {
-        fishType = GetDayZGame().GetSRPFishingConfig().GetRandomSaltWaterFish(chance, rodName);
+        fishType = GetDayZGame().GetSRPFishingConfig().GetRandomSaltWaterFish(chance, rodName, hasLure);
       }
     }
     return fishType;
@@ -128,14 +170,14 @@ modded class ActionFishingNewCB
     return junkType;
   }
 
-  string GetFreshWaterFish(float chance, string rodName)
+  string GetFreshWaterFish(float chance, string rodName, bool hasLure)
   {
     string fishType = "Carp"; // default
     if (GetDayZGame().GetSRPFishingConfig())
     {
-      if (GetDayZGame().GetSRPFishingConfig().m_FreshWaterFish)
+      if (GetDayZGame().GetSRPFishingConfig())
       {
-        fishType = GetDayZGame().GetSRPFishingConfig().GetRandomFreshWaterFish(chance, rodName);
+        fishType = GetDayZGame().GetSRPFishingConfig().GetRandomFreshWaterFish(chance, rodName, hasLure);
       }
     }
     return fishType;

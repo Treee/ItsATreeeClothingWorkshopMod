@@ -49,8 +49,6 @@ class ActionDigClam: ActionContinuousBase
 					string surface_type;
 					vector position;
 					position = target.GetCursorHitPos();
-
-					//float distance = vector.Distance(plr_pos,position);
 					
 					if ( GetGame().SurfaceIsSea(position[0],position[2]) )
 					{
@@ -100,29 +98,21 @@ class ActionDigClam: ActionContinuousBase
 	override void OnFinishProgressServer( ActionData action_data )
 	{	
 		ItemBase clam;    
-    float m_DigChance = 0.5;
-    if (GetDayZGame().GetSRPFishingConfig())
-    {
-      m_DigChance = GetDayZGame().GetSRPFishingConfig().GetClamDigChance();
-    }
-    float m_DigClamToolDamage = 10;
-    if (GetDayZGame().GetSRPFishingConfig())
-    {
-      m_DigClamToolDamage = GetDayZGame().GetSRPFishingConfig().GetClamDigToolDamage();
-    }
-
     float rnd = Math.RandomFloatInclusive(0,1);
-    string itemClass = "SmallStone";
-    if (rnd > m_DigChance)
+    if (GetDayZGame().GetSRPFishingConfig())
     {
-      if (GetDayZGame().GetSRPFishingConfig())
+      SRPFishingClam clamData = GetDayZGame().GetSRPFishingConfig().GetClamData(rnd);
+      string itemClass = "SmallStone";
+      float m_DigClamToolDamage = 10;
+      if (clamData)
       {
-        itemClass = GetDayZGame().GetSRPFishingConfig().GetRandomClam();
+        itemClass = clamData.GetClamType();
+        m_DigClamToolDamage = clamData.GetClamDigToolDamage();
       }
+      Class.CastTo(clam, GetGame().CreateObjectEx(itemClass, action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE) );
+      MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_MainItem, m_DigClamToolDamage);
+      action_data.m_Player.GetSoftSkillsManager().AddSpecialty( m_SpecialtyWeight );
     }
-		Class.CastTo(clam,  GetGame().CreateObjectEx(itemClass, action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE) );
-		MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_MainItem, m_DigClamToolDamage);
-		action_data.m_Player.GetSoftSkillsManager().AddSpecialty( m_SpecialtyWeight );
 	}
 	
 	void SetDiggingAnimation( ItemBase item )

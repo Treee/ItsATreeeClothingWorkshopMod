@@ -29,7 +29,7 @@ class CfgVehicles
 		itemSize[]={1,2};
 		inventorySlot[]=
 		{
-			"FishingLure"
+			"SRP_FishingLure"
 		};
     hiddenSelections[]=
 		{

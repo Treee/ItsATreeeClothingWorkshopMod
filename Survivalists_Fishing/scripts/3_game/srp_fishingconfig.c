@@ -1,8 +1,200 @@
+class SRPFishingClam
+{
+  protected float m_ClamDigChance;
+  protected float m_ClamPearlChance;
+  protected float m_DigClamToolDamage;
+  protected string m_ClamType;
+
+  void SRPFishingClam(string clamType, float digChance, float pearlChance, float toolDamage)
+  {
+    m_ClamDigChance = digChance;
+    m_ClamPearlChance = pearlChance;
+    m_DigClamToolDamage = toolDamage;
+    m_ClamType = clamType;
+  }
+
+  float GetClamPearlChance()
+  {
+    return 1 - m_ClamPearlChance;
+  }
+
+  bool IsLuckyOpen(float chance)
+  {
+    return chance >= GetClamPearlChance();
+  }
+
+  float GetRawDigChance()
+  {
+    return m_ClamDigChance;
+  }
+  
+  float GetClamDigChance()
+  {
+    return 1 - m_ClamDigChance;
+  }
+
+  bool IsLuckyDig(float chance)
+  {
+    return chance >= GetClamDigChance();
+  }
+
+  float GetClamDigToolDamage()
+  {
+    return m_DigClamToolDamage;
+  }
+
+  string GetClamType()
+  {
+    return m_ClamType;
+  }
+};
+
+class SRPFishingJunk
+{
+  protected float m_LootChance;
+  protected string m_LootType;
+  protected bool m_IsFreshWater;
+
+  void SRPFishingJunk(float lootChance, string lootName, bool freshWater = false)  
+  {
+    m_LootChance = lootChance;
+    m_LootType = lootName;
+    m_IsFreshWater = freshWater;
+  }
+
+  // 1- lootchance to get the probability from a random roll 0 being the lowest 100 highest
+  float GetLootChance()
+  {
+    return 1 - m_LootChance;
+  }
+
+  bool IsEnoughLuck(float luck)
+  {
+    return luck >= GetLootChance();
+  }
+
+  string GetLootName()
+  {
+    return m_LootType;
+  }
+
+  bool IsFreshWaterJunk()
+  {
+    return m_IsFreshWater;
+  }
+};
+
+class SRPFishCatch
+{
+  protected float m_ChanceToCatch;
+  protected bool m_RequiresLure;
+  protected bool m_IsDeepSeaFish;
+  protected bool m_IsFreshWaterFish;
+  protected string m_FishType;
+  ref array<string> m_FishColors;
+  ref array<string> m_FishSizes;
+  ref array<float> m_FishColorChances;
+  ref array<float> m_FishSizeChances;
+
+  void SRPFishCatch(string fishType, float chance, bool freshWater = false, bool needsLure = false, bool isDeepSea = false)
+  {
+    m_ChanceToCatch = chance;
+    m_RequiresLure = needsLure;
+    m_IsDeepSeaFish = isDeepSea;
+    m_IsFreshWaterFish = freshWater;
+    m_FishType = fishType;
+  }
+
+  float GetCatchChance()
+  {
+    return 1 - m_ChanceToCatch;
+  }
+
+  bool IsEnoughLuck(float chance)
+  {
+    return chance >= GetCatchChance();
+  }
+
+  bool RequiresLure()
+  {
+    return m_RequiresLure;
+  }
+
+  bool IsDeepSeaFish()
+  {
+    return m_IsDeepSeaFish;
+  }
+
+  bool IsFreshWaterFish()
+  {
+    return m_IsFreshWaterFish;
+  }
+
+  string GetFishType()
+  {
+    return m_FishType;
+  }
+
+  string GetFishSize()
+  {
+    float rnd = Math.RandomFloatInclusive(0,1);
+    float smallestChance = 1;    
+    int sizeIndex = 0;
+    for (int i = m_FishSizeChances.Count() - 1; i > -1; i--)
+    {
+      // if our random chance is good enough to get this size
+      if (rnd >= ((1 - m_FishSizeChances[i])))
+      {
+        // make sure this is the best chance we got
+        if (smallestChance > m_FishSizeChances[i])
+        {
+          smallestChance = m_FishSizeChances[i];
+          sizeIndex = i;
+        }
+      }
+    }
+    return m_FishSizes[sizeIndex];
+  }
+
+  string GetFishColor()
+  {
+    float rnd = Math.RandomFloatInclusive(0,1);    
+    float smallestChance = 1;    
+    int colorIndex = 0;    
+    for (int i = m_FishColorChances.Count() - 1; i > -1; i--)
+    {
+      // if our random chance is good enough to get this size
+      if (rnd >= ((1 - m_FishColorChances[i])))
+      {
+        // make sure this is the best chance we got
+        if (smallestChance > m_FishColorChances[i])
+        {
+          smallestChance = m_FishColorChances[i];
+          colorIndex = i;
+        }
+      }
+    }
+    return m_FishColors[colorIndex];
+  }
+
+  string GetFish()
+  {
+    string aggregatedFishType = GetFishType();
+    if (GetFishColor() != "")
+    {
+      aggregatedFishType += "_" + GetFishColor();
+    }
+    aggregatedFishType += "_" + GetFishSize();
+    return aggregatedFishType;
+  }
+
+};
+
 class SRPFishingHotspot
 {
-  vector m_location;
-  float m_radius;
-  float m_modifier = 0.0;
+  protected vector m_location;
+  protected float m_radius;
+  protected float m_modifier = 0.0;
 
   void SRPFishingHotspot(vector location, float radius)
   {
@@ -38,8 +230,9 @@ class SRPFishingHotspot
 
 class SRPFishingRodLuck
 {
-  string m_rodName;
-  float m_luckModifier;
+  protected string m_rodName;
+  protected float m_luckModifier;
+  
   void SRPFishingRodLuck(string rodName, float luckModifier)
   {
     m_rodName = rodName;
@@ -59,96 +252,70 @@ class SRPFishingRodLuck
 
 class SRPFishingConfig
 {  
-  ref array<string> m_FishSizes = {"_Small", "_Medium", "_Large", "_Epic"};
-
-  ref array<string> m_SaltWaterFish;
-	ref array<string> m_SaltWaterJunkItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
-	ref array<string> m_SaltWaterRareItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
-	ref array<string> m_SaltWaterEpicItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
-	ref array<string> m_SaltWaterLegendaryItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
-	
-  ref array<string> m_FreshWaterFish;
-  ref array<string> m_FreshWaterJunkItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
-	ref array<string> m_FreshWaterRareItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
-	ref array<string> m_FreshWaterEpicItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
-	ref array<string> m_FreshWaterLegendaryItems; // = {"Wellies_Black","Wellies_Brown","Wellies_Green","Wellies_Grey","Pot"};
-
-  ref array<float> m_SaltWaterLootChances; // = {junk,rare,epic,legendary}; // fish are considered the uncommon tier here
-  ref array<float> m_SaltWaterFishChances;
-  ref array<float> m_FreshWaterLootChances; // = {junk,rare,epic,legendary}; // fish are considered the uncommon tier here
-  ref array<float> m_FreshWaterFishChances;
-
+  ref array<ref SRPFishingJunk> m_FishingJunk;
+  ref array<ref SRPFishCatch> m_FishCatches;
   ref array<ref SRPFishingHotspot> m_FishingHotspots;
-  ref array<ref SRPFishingRodLuck> m_FishingRodLuck;  
-
-  float m_ClamDigChance;
-  float m_ClamPearlChance;
-  float m_DigClamToolDamage;
-  ref array<string> m_ClamTypes; // = {"SRP_Clam","SRP_Clam_Blue","SRP_Clam_Red","SRP_Clam_Silver"};
-
-  float GetClamPearlChance()
-  {
-    return m_ClamPearlChance;
-  }
-  
-  float GetClamDigChance()
-  {
-    return m_ClamDigChance;
-  }
-
-  float GetClamDigToolDamage()
-  {
-    return m_DigClamToolDamage;
-  }
-
-  string GetRandomClam()
-  {
-    return m_ClamTypes.Get(Math.RandomInt(0,m_ClamTypes.Count()));
-  }
+  ref array<ref SRPFishingRodLuck> m_FishingRodLuck;
+  ref array<ref SRPFishingClam> m_FishingClam;
 
   string GetRandomSaltWaterJunk(float chance, string rodName)
   {
     string junk_type = "";
     float rodLuckModifier = GetRodLuckModifier(rodName);
     chance += Math.RandomFloatInclusive(0, rodLuckModifier);
-    // legendary
-    if (chance > m_SaltWaterLootChances[3])
+
+    TStringArray options = new TStringArray;
+    foreach(SRPFishingJunk junkItem: m_FishingJunk)
     {
-      junk_type = m_SaltWaterLegendaryItems.Get(Math.RandomInt(0,m_SaltWaterLegendaryItems.Count()));
+      if (!junkItem.IsFreshWaterJunk() && junkItem.IsEnoughLuck(chance))
+      {
+        options.Insert(junkItem.GetLootName());
+      }
     }
-    // epic
-    else if (chance > m_SaltWaterLootChances[2])
+    if (options.Count() > 0)
     {
-      junk_type = m_SaltWaterEpicItems.Get(Math.RandomInt(0,m_SaltWaterEpicItems.Count()));
-    }
-    // rare
-    else if (chance > m_SaltWaterLootChances[1])
-    {
-      junk_type = m_SaltWaterRareItems.Get(Math.RandomInt(0,m_SaltWaterRareItems.Count()));
-    }
-    // junk
-    else if (chance > m_SaltWaterLootChances[0])
-    {
-      junk_type = m_SaltWaterJunkItems.Get(Math.RandomInt(0,m_SaltWaterJunkItems.Count()));
+      junk_type = options.GetRandomElement();
     }
     return junk_type;
   }
 
-  string GetRandomSaltWaterFish(float chance, string rodName)
+  string GetRandomSaltWaterFish(float chance, string rodName, bool hasLure = false, bool deepSea = false)
   {
     float rodLuckModifier = GetRodLuckModifier(rodName);
     chance += Math.RandomFloatInclusive(0, rodLuckModifier);
-
-    string fishType = m_SaltWaterFish.Get(Math.RandomInt(0,m_SaltWaterFish.Count()));
-    for (int i = m_SaltWaterFishChances.Count() - 1; i > -1; i--)
+    string fishType = "";
+    TStringArray options = new TStringArray;
+    foreach(SRPFishCatch fish: m_FishCatches)
     {
-      if (chance >= m_SaltWaterFishChances[i])
-      {
-        fishType = fishType + m_FishSizes[i];
-        break;
+      // salt water wish with enough luck
+      if (!fish.IsFreshWaterFish() && fish.IsEnoughLuck(chance))
+      { // the fish requires a lure and player has a lure
+        if (fish.RequiresLure() && hasLure)
+        { // the action requires deepSea AND the fish is deap sea fish
+          if (deepSea && fish.IsDeepSeaFish())
+          {
+            options.Insert(fish.GetFish());
+          }// the action does not require deep sea and the fish is NOT deep sea
+          else if (!deepSea && !fish.IsDeepSeaFish())       
+          {
+            options.Insert(fish.GetFish());
+          }
+        }// the fish does not require a lure
+        else
+        { // the action requires deepSea AND the fish is deap sea fish
+          if (deepSea && fish.IsDeepSeaFish())
+          {
+            options.Insert(fish.GetFish());
+          }// the action does not require deep sea and the fish is NOT deep sea
+          else if (!deepSea && !fish.IsDeepSeaFish())       
+          {
+            options.Insert(fish.GetFish());
+          }
+        }      
       }
     }
-    // Print("Fish Type: " + fishType + " Chance: " + chance);
+    fishType = options.GetRandomElement();
+    Print("Fish Type: " + fishType + " Chance: " + chance);
     return fishType;
   }
 
@@ -158,45 +325,77 @@ class SRPFishingConfig
     float rodLuckModifier = GetRodLuckModifier(rodName);
     chance += Math.RandomFloatInclusive(0, rodLuckModifier);
 
-    // legendary
-    if (chance > m_FreshWaterLootChances[3])
+    TStringArray options = new TStringArray;
+    foreach(SRPFishingJunk junkItem: m_FishingJunk)
     {
-      junk_type = m_FreshWaterLegendaryItems.Get(Math.RandomInt(0,m_FreshWaterLegendaryItems.Count()));
+      if (junkItem.IsFreshWaterJunk() && junkItem.IsEnoughLuck(chance))
+      {
+        options.Insert(junkItem.GetLootName());
+      }
     }
-    // epic
-    else if (chance > m_FreshWaterLootChances[2])
+    if (options.Count() > 0)
     {
-      junk_type = m_FreshWaterEpicItems.Get(Math.RandomInt(0,m_FreshWaterEpicItems.Count()));
-    }
-    // rare
-    else if (chance > m_FreshWaterLootChances[1])
-    {
-      junk_type = m_FreshWaterRareItems.Get(Math.RandomInt(0,m_FreshWaterRareItems.Count()));
-    }
-    // junk
-    else if (chance > m_FreshWaterLootChances[0])
-    {
-      junk_type = m_FreshWaterJunkItems.Get(Math.RandomInt(0,m_FreshWaterJunkItems.Count()));
+      junk_type = options.GetRandomElement();
     }
     return junk_type;
   }
 
-  string GetRandomFreshWaterFish(float chance, string rodName)
+  string GetRandomFreshWaterFish(float chance, string rodName, bool hasLure = false)
   {
     float rodLuckModifier = GetRodLuckModifier(rodName);
     chance += Math.RandomFloatInclusive(0, rodLuckModifier);
-
-    string fishType = m_FreshWaterFish.Get(Math.RandomInt(0,m_FreshWaterFish.Count()));
-    for (int i = m_FreshWaterFishChances.Count() - 1; i > -1; i--)
+    string fishType = "";
+    TStringArray options = new TStringArray;
+    foreach(SRPFishCatch fish: m_FishCatches)
     {
-      if (chance >= m_FreshWaterFishChances[i])
+      // fresh water wish with enough luck
+      if (fish.IsFreshWaterFish() && fish.IsEnoughLuck(chance))
+      { // the fish requires a lure and player has a lure
+        if (fish.RequiresLure() && hasLure)
+        {
+          options.Insert(fish.GetFish());
+        }// the fish does not require a lure
+        else
+        { 
+          options.Insert(fish.GetFish());
+        }      
+      }
+    }
+    fishType = options.GetRandomElement();
+    // Print("Fish Type: " + fishType + " Chance: " + chance);
+    return fishType;
+  }
+
+  SRPFishingClam GetClamData(float chance)
+  {
+    float smallestChance = 1;    
+    SRPFishingClam clam;
+    foreach (SRPFishingClam temp: m_FishingClam)
+    {
+      if (temp.IsLuckyDig(chance))
       {
-        fishType = fishType + m_FishSizes[i];
+        if (smallestChance > temp.GetRawDigChance())
+        {
+          smallestChance = temp.GetRawDigChance();
+          clam = temp;
+        }
+      }
+    }
+    return clam;
+  }
+
+  SRPFishingClam GetClamDataByName(string clamType)
+  {
+    SRPFishingClam clam;
+    foreach (SRPFishingClam temp: m_FishingClam)
+    {
+      if (temp.GetClamType() == clamType)
+      {
+        clam = temp;
         break;
       }
     }
-    // Print("Fish Type: " + fishType + " Chance: " + chance);
-    return fishType;
+    return clam;
   }
 
   // returns a float relative to how far away from a hotspot the player is
