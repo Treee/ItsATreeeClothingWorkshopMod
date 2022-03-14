@@ -1595,6 +1595,14 @@ class CfgVehicles
 			};
 		};
 	};
+  
+  class SRP_Cardboardbox_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Cardboard Box Kit";
+		descriptionShort="A Cardboard Box Kit";
+    model="Survivalists_Mods\gear\containers\srp_cardboardbox_kit.p3d";
+	};
 
   class SRP_Cardboardbox: Container_Base // new
 	{

@@ -160,7 +160,6 @@ class SRP_Furniture_LargeLogPile extends SRP_DeployableContainer_Base
 	}
 }
 
-class SRP_Cardboardbox extends SRP_DeployableContainer_Base{};
 class SRP_PostBox extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxBlue extends SRP_DeployableContainer_Base{};
 class SRP_PostBoxWooden extends SRP_DeployableContainer_Base{};
@@ -291,6 +290,8 @@ class SRP_SewingTable extends SRP_Container_Base
       AddAction(ActionInteractWithGUICraftingWorkbench);
   }
 };
+
+class SRP_Cardboardbox extends SRP_DeployableContainer_Base{};
 
 class SRP_StonePile_Small extends SRP_Container_Base{};
 class SRP_StonePile_Large extends SRP_Container_Base{};

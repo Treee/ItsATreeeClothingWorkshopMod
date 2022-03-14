@@ -46,6 +46,7 @@ class SRP_KitBase extends ItemBase
 };
 // If you add a new kit, add it to this list so it gets the right stuff
 //craftable kits
+class SRP_Cardboardbox_Kit extends SRP_KitBase{};
 class SRP_BedsideTable_Kit extends SRP_KitBase{};
 class SRP_BedsideTableMetal_Kit extends SRP_KitBase{};
 class SRP_MedicalBedSmall_Wood_Kit extends SRP_KitBase{};

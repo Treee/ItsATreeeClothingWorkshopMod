@@ -23,6 +23,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1 add any item that has a kit in this list so it can be dismantled.
+    InsertIngredient(0,"SRP_Cardboardbox");
     InsertIngredient(0,"SRP_BedsideTableMetal");
     InsertIngredient(0,"SRP_Potbelly_Stove");
     InsertIngredient(0,"SRP_ShootingTarget");
