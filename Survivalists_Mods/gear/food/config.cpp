@@ -933,39 +933,6 @@ class CfgVehicles
 		};
 	};
 
-  class DUB_Spiderlegs: HumanSteakMeat
-	{
-    inventorySlot[]=
-		{
-      "Ingredient",
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-			"SmokingD",
-      "AnimalPelt1",
-      "AnimalPelt2",
-      "AnimalPelt3",
-      "AnimalPelt4",
-      "AnimalPelt5",
-      "AnimalPelt6",
-      "AnimalPelt7",
-      "AnimalPelt8",
-      "AnimalPelt9",
-      "AnimalPelt10"
-		};
-  };
-
   // ----------------------- CUSTOM STUFF
   class SRP_CandyCane: Worm  // new
 	{
