@@ -15,8 +15,75 @@ class CfgPatches
 class CfgVehicles
 {	
 	class Container_Base;
+  class Inventory_Base;
 
-  class SRP_Tacklebox: Container_Base // new
+  class SRP_Fishing_KitBase: Inventory_Base
+	{
+		scope=0; //0 means cannot be directly spawned
+		displayName="Fishing Kit";
+		descriptionShort="A wooden box that holds various items.";
+		model="\DZ\gear\camping\wooden_case.p3d";
+		itemsCargoSize[]={0,0};
+		itemSize[]={7,5};
+		carveNavmesh=1;
+		canBeDigged=0;
+		simulation="inventoryItem";
+		physLayer="item_small";
+		rotationFlags=2;
+		heavyItem=1;
+		weight=3000;
+		itemBehaviour=2;
+		hiddenSelections[]={"camoground"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Fishing\containers\data\wooden_case_fishing_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_Tacklebox: Container_Base
 	{
 		scope=2;
 		displayName="Tacklebox";
@@ -52,7 +119,66 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Aquarium: Container_Base // new
+  class SRP_AquariumIntermediate_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Aquarium Starter Kit";
+		descriptionShort="This kit is missing a few pieces, namely wood fashioned into a base and top then glass to encase the water.";
+    attachments[]=
+    {
+      "SRP_Aquarium_Top",
+      "SRP_Aquarium_Bot",
+      "SRP_Aquarium_Glass1",
+      "SRP_Aquarium_Glass2",
+      "SRP_Aquarium_Glass3",
+      "SRP_Aquarium_Glass4"      
+    };
+	};
+  class SRP_AquariumIntermediate_Top: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Aquarium Top";
+		descriptionShort="The top of an aquarium.";
+    model="Survivalists_Fishing\containers\aquarium_top.p3d";
+    inventorySlot[]=
+    {
+      "SRP_Aquarium_Top"
+    };
+	};
+  class SRP_AquariumIntermediate_Bot: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Aquarium Bottom";
+		descriptionShort="The foundation of an aquarium";
+    model="Survivalists_Fishing\containers\aquarium_bot.p3d";
+    inventorySlot[]=
+    {
+      "SRP_Aquarium_Bot"
+    };
+	};
+  class SRP_AquariumIntermediate_Glass: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Aquarium Glass";
+		descriptionShort="A small sheet of glass";
+    model="Survivalists_Fishing\containers\aquarium_glass.p3d";
+    inventorySlot[]=
+    {
+      "SRP_Aquarium_Glass1",
+      "SRP_Aquarium_Glass2",
+      "SRP_Aquarium_Glass3",
+      "SRP_Aquarium_Glass4",
+    };
+	};
+
+  class SRP_Aquarium_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Aquarium Kit";
+		descriptionShort="This kit contains the required materials to build a large fish display.";
+	};
+
+  class SRP_Aquarium: Container_Base
 	{
 		scope=2;
 		displayName="Aquarium";
@@ -86,7 +212,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_WoodenFishHanger: Container_Base // new
+  class SRP_WoodenFishHanger_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Wooden Fish Display Kit";
+		descriptionShort="This kit contains the required materials to build a large fish display.";
+	};
+
+  class SRP_WoodenFishHanger: Container_Base
 	{
 		scope=2;
 		displayName="Wooden Fish Post";

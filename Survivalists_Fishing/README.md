@@ -33,3 +33,5 @@
 - "Medieval Lamp Post" (https://skfb.ly/6XuLK) by Daan van Leeuwen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Clam with pearl (Low poly)" (https://skfb.ly/6X9zz) by RasenDan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Icons Vectors by Vecteezy" (https://www.vecteezy.com/free-vector/icons)

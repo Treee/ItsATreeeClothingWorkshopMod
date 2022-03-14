@@ -70,6 +70,42 @@ class CfgSlots
 		displayName="Fishing Lure";
 		ghostIcon="set:dayz_inventory image:chemlight";
 	};
+  class Slot_SRP_Aquarium_Top
+	{
+		name="SRP_Aquarium_Top";
+		displayName="Aquarium Top";
+		ghostIcon="set:dayz_inventory image:planks";
+	};
+  class Slot_SRP_Aquarium_Bot
+	{
+		name="SRP_Aquarium_Bot";
+		displayName="Aquarium Foundation";
+		ghostIcon="set:dayz_inventory image:planks";
+	};
+  class Slot_SRP_Aquarium_Glass1
+	{
+		name="SRP_Aquarium_Glass1";
+		displayName="Glass Pane";
+		ghostIcon="set:dayz_inventory image:plates";
+	};
+  class Slot_SRP_Aquarium_Glass2
+	{
+		name="SRP_Aquarium_Glass2";
+		displayName="Glass Pane";
+		ghostIcon="set:dayz_inventory image:plates";
+	};
+  class Slot_SRP_Aquarium_Glass3
+	{
+		name="SRP_Aquarium_Glass3";
+		displayName="Glass Pane";
+		ghostIcon="set:dayz_inventory image:plates";
+	};
+  class Slot_SRP_Aquarium_Glass4
+	{
+		name="SRP_Aquarium_Glass4";
+		displayName="Glass Pane";
+		ghostIcon="set:dayz_inventory image:plates";
+	};
 };
 
 class CfgNonAIVehicles
