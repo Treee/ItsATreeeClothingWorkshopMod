@@ -15,6 +15,21 @@ class CfgPatches
 class CfgVehicles
 {
 	class Inventory_Base;
+  class SRP_Fishing_KitBase;
+
+  class SRP_FishingLureMetal_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Metal Fishing Lure Kit";
+		descriptionShort="This kit contains the things needed to make a metal fishing lure.";
+	};
+  class SRP_FishingLureWood_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Wooden Fishing Lure Kit";
+		descriptionShort="This kit contains the things needed to make a wooden fishing lure.";
+	};
+
 
   // base fishing lure, not meant to be spawned into the game
 	class SRP_FishingLure_ColorBase: Inventory_Base

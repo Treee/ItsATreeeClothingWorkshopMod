@@ -78,3 +78,6 @@ class SRP_AquariumIntermediate_Kit extends SRP_Fishing_Intermediate_KitBase
 class SRP_AquariumIntermediate_Top extends SRP_Fishing_Intermediate_KitBase{};
 class SRP_AquariumIntermediate_Bot extends SRP_Fishing_Intermediate_KitBase{};
 class SRP_AquariumIntermediate_Glass extends SRP_Fishing_Intermediate_KitBase{};
+
+class SRP_FishingLureMetal_Kit extends SRP_Fishing_Intermediate_KitBase{};
+class SRP_FishingLureWood_Kit extends SRP_Fishing_Intermediate_KitBase{};
