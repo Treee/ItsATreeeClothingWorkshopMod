@@ -42,6 +42,12 @@ modded class PluginRecipesManager
     RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_LargeScale2);
     RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_LargeScale3);
     RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_LargeScale4);
+    //========CRAFTING RODS
+    RegisterRecipe(new SRP_Fishing_Construct_FishRodKit);
+    RegisterRecipe(new SRP_Fishing_Construct_FishRod);
+    RegisterRecipe(new SRP_Fishing_Construct_FishRod_Red);
+    RegisterRecipe(new SRP_Fishing_Construct_FishRod_Blue);
+    RegisterRecipe(new SRP_Fishing_Construct_FishRod_Purple);
 
     //========= Preparing Fish
     RegisterRecipe(new PrepareCoralFish);

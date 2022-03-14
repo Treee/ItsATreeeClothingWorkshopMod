@@ -54,7 +54,17 @@ class SRP_Fishing_Intermediate_KitBase extends ItemBase
   bool HasAttachmentFilled(string slotName)
   {
     return FindAttachmentBySlotName(slotName) != null;
-  }  
+  }
+  bool HasAttachmentFilledWithQuantity(string slotName, float quantity)
+  {
+    EntityAI eai = FindAttachmentBySlotName(slotName);
+    if (eai)
+    {
+      ItemBase item = ItemBase.Cast(eai);
+      return (item && item.GetQuantity() >= quantity);    
+    }
+    return false;
+  }
 };
 
 //===============KITBASE
@@ -81,3 +91,18 @@ class SRP_AquariumIntermediate_Glass extends SRP_Fishing_Intermediate_KitBase{};
 
 class SRP_FishingLureMetal_Kit extends SRP_Fishing_Intermediate_KitBase{};
 class SRP_FishingLureWood_Kit extends SRP_Fishing_Intermediate_KitBase{};
+
+class SRP_FishingWoodRod_Kit extends SRP_Fishing_Intermediate_KitBase
+{
+  bool CanCraft()
+  {
+    bool isValid = HasAttachmentFilledWithQuantity("Material_Shelter_FrameSticks",4);
+    isValid &= HasAttachmentFilledWithQuantity("WoodenStick",10);
+    isValid &= HasAttachmentFilled("Rope");
+    isValid &= HasAttachmentFilled("Material_FPole_Rope");
+    isValid &= HasAttachmentFilled("Material_Shelter_Rope");
+    isValid &= HasAttachmentFilled("Material_MetalWire");
+    isValid &= HasAttachmentFilled("Material_FPole_MetalWire");
+    return isValid;
+  } 
+};

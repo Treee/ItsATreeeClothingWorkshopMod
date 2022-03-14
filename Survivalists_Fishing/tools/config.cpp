@@ -15,6 +15,7 @@ class CfgPatches
 class CfgVehicles
 {	
   class FishingRod_Base_New;
+  class SRP_Fishing_KitBase;
   
   class ImprovisedFishingRod: FishingRod_Base_New
   {
@@ -40,6 +41,23 @@ class CfgVehicles
       "SRP_FishingLure"
 		};  
   };
+  
+  class SRP_FishingWoodRod_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Wooden Fishing Rod Kit";
+		descriptionShort="This kit contains the things needed to make a wooden fishing rod.";
+    attachments[]=
+    {
+      "Material_Shelter_FrameSticks",
+      "WoodenStick",
+      "Rope",
+			"Material_FPole_Rope",
+			"Material_Shelter_Rope",
+      "Material_MetalWire",
+			"Material_FPole_MetalWire"
+    };
+	};
 
   class SRP_HandMadeFishingRod: FishingRod_Base_New
 	{
