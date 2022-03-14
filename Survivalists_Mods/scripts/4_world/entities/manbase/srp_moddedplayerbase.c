@@ -5,8 +5,6 @@ modded class PlayerBase extends ManBase
   string selectedCraftingBench = "";
   EntityAI guiCraftingBench = null;
 
-  SRP_ActionOpenMapCB m_OpenMapCallback;
-
   ItemBook currentBookInHands;
 
   void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary

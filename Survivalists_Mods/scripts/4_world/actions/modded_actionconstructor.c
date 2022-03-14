@@ -6,7 +6,6 @@ modded class ActionConstructor
     
 		actions.Insert(ActionToggleMuteTransmitter);  
 		actions.Insert(ActionInteractWithGUICraftingWorkbench);
-		actions.Insert(SRP_ActionOpenMap);
     actions.Insert(ActionTeleportToEvent);
     actions.Insert(ActionTeleportAwayFromEvent);
 
