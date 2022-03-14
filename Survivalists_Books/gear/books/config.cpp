@@ -181,6 +181,19 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_collective_co.paa"
 		};
 	};
+	class SRP_ReadableBook_RadioEtiquette: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Radio Etiquette and Protocols";
+		author="Clayton Sr.";
+		file="Survivalists_Books\gear\books\data\book_radioetiguetteprotocol.html";
+		displayName="Radio Etiquette and Protocols";
+		descriptionShort="A guide on proper radio usage when speaking through a transmitter.";
+		hiddenSelectionsTextures[] =
+		{
+		  "Survivalists_Books\gear\books\data\book_radioetiguetteprotocol_co.paa"
+		};
+	};  
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase

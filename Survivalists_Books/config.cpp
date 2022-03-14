@@ -36,7 +36,3 @@ class CfgPatches
     };
   };
 };
-class CfgVehicles
-{
-
-};
