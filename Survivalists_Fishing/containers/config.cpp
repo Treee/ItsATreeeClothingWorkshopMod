@@ -119,8 +119,9 @@ class CfgVehicles
 		descriptionShort="An old world aquarium.";
 		model="Survivalists_Fishing\containers\aquarium.p3d";    
 		itemBehaviour=0;
+    carveNavmesh=1;
     useEntityHierarchy="true";
-		physLayer="item_small";
+		physLayer="item_large";		
 		weight=5000;
 		itemSize[]={6,6};
     itemsCargoSize[]={0,0};
@@ -161,7 +162,7 @@ class CfgVehicles
 		model="Survivalists_Fishing\containers\woodenfishhanger.p3d";    
 		itemBehaviour=0;
     useEntityHierarchy="true";
-		physLayer="item_small";
+		physLayer="item_large";		
 		weight=5000;
 		itemSize[]={6,6};
     itemsCargoSize[]={0,0};

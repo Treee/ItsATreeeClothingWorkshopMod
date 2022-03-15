@@ -478,6 +478,7 @@ class CfgVehicles
   class TroutFish_Brown_Small: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -492,6 +493,7 @@ class CfgVehicles
   class TroutFish_Brown_Medium: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -506,6 +508,7 @@ class CfgVehicles
   class TroutFish_Brown_Large: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -519,6 +522,7 @@ class CfgVehicles
   class TroutFish_Brown_Epic: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -533,6 +537,7 @@ class CfgVehicles
   class TroutFish_Blue_Small: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -547,6 +552,7 @@ class CfgVehicles
   class TroutFish_Blue_Medium: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -561,6 +567,7 @@ class CfgVehicles
   class TroutFish_Blue_Large: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -574,6 +581,7 @@ class CfgVehicles
   class TroutFish_Blue_Epic: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -588,6 +596,7 @@ class CfgVehicles
   class TroutFish_Red_Small: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -602,6 +611,7 @@ class CfgVehicles
   class TroutFish_Red_Medium: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -616,6 +626,7 @@ class CfgVehicles
   class TroutFish_Red_Large: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -629,6 +640,7 @@ class CfgVehicles
   class TroutFish_Red_Epic: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -643,6 +655,7 @@ class CfgVehicles
   class TroutFish_Yellow_Small: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -657,6 +670,7 @@ class CfgVehicles
   class TroutFish_Yellow_Medium: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -671,6 +685,7 @@ class CfgVehicles
   class TroutFish_Yellow_Large: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -684,6 +699,7 @@ class CfgVehicles
   class TroutFish_Yellow_Epic: TroutFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\trout_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -740,6 +756,7 @@ class CfgVehicles
   class MutantFish_Red_Small: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -754,6 +771,7 @@ class CfgVehicles
   class MutantFish_Red_Medium: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -768,6 +786,7 @@ class CfgVehicles
   class MutantFish_Red_Large: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -781,6 +800,7 @@ class CfgVehicles
   class MutantFish_Red_Epic: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -795,6 +815,7 @@ class CfgVehicles
   class MutantFish_Blue_Small: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -809,6 +830,7 @@ class CfgVehicles
   class MutantFish_Blue_Medium: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -823,6 +845,7 @@ class CfgVehicles
   class MutantFish_Blue_Large: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -836,6 +859,7 @@ class CfgVehicles
   class MutantFish_Blue_Epic: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -850,6 +874,7 @@ class CfgVehicles
   class MutantFish_Green_Small: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -864,6 +889,7 @@ class CfgVehicles
   class MutantFish_Green_Medium: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -878,6 +904,7 @@ class CfgVehicles
   class MutantFish_Green_Large: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -891,6 +918,7 @@ class CfgVehicles
   class MutantFish_Green_Epic: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -905,6 +933,7 @@ class CfgVehicles
   class MutantFish_Yellow_Small: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -919,6 +948,7 @@ class CfgVehicles
   class MutantFish_Yellow_Medium: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -933,6 +963,7 @@ class CfgVehicles
   class MutantFish_Yellow_Large: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -946,6 +977,7 @@ class CfgVehicles
   class MutantFish_Yellow_Epic: MutantFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\mutantfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1001,6 +1033,7 @@ class CfgVehicles
   class SplakeFish_Red_Small: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1015,6 +1048,7 @@ class CfgVehicles
   class SplakeFish_Red_Medium: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1029,6 +1063,7 @@ class CfgVehicles
   class SplakeFish_Red_Large: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1042,6 +1077,7 @@ class CfgVehicles
   class SplakeFish_Red_Epic: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1056,6 +1092,7 @@ class CfgVehicles
   class SplakeFish_Blue_Small: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1070,6 +1107,7 @@ class CfgVehicles
   class SplakeFish_Blue_Medium: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1084,6 +1122,7 @@ class CfgVehicles
   class SplakeFish_Blue_Large: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1097,6 +1136,7 @@ class CfgVehicles
   class SplakeFish_Blue_Epic: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1111,6 +1151,7 @@ class CfgVehicles
   class SplakeFish_Green_Small: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1125,6 +1166,7 @@ class CfgVehicles
   class SplakeFish_Green_Medium: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1139,6 +1181,7 @@ class CfgVehicles
   class SplakeFish_Green_Large: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1152,6 +1195,7 @@ class CfgVehicles
   class SplakeFish_Green_Epic: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1166,6 +1210,7 @@ class CfgVehicles
   class SplakeFish_Yellow_Small: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1180,6 +1225,7 @@ class CfgVehicles
   class SplakeFish_Yellow_Medium: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1194,6 +1240,7 @@ class CfgVehicles
   class SplakeFish_Yellow_Large: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1207,6 +1254,7 @@ class CfgVehicles
   class SplakeFish_Yellow_Epic: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1221,6 +1269,7 @@ class CfgVehicles
   class SplakeFish_Purple_Small: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1235,6 +1284,7 @@ class CfgVehicles
   class SplakeFish_Purple_Medium: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1249,6 +1299,7 @@ class CfgVehicles
   class SplakeFish_Purple_Large: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1262,6 +1313,7 @@ class CfgVehicles
   class SplakeFish_Purple_Epic: SplakeFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1317,6 +1369,7 @@ class CfgVehicles
   class PerchFish_Red_Small: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1331,6 +1384,7 @@ class CfgVehicles
   class PerchFish_Red_Medium: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1345,6 +1399,7 @@ class CfgVehicles
   class PerchFish_Red_Large: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1358,6 +1413,7 @@ class CfgVehicles
   class PerchFish_Red_Epic: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1372,6 +1428,7 @@ class CfgVehicles
   class PerchFish_Blue_Small: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1386,6 +1443,7 @@ class CfgVehicles
   class PerchFish_Blue_Medium: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1400,6 +1458,7 @@ class CfgVehicles
   class PerchFish_Blue_Large: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1413,6 +1472,7 @@ class CfgVehicles
   class PerchFish_Blue_Epic: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1427,6 +1487,7 @@ class CfgVehicles
   class PerchFish_Green_Small: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1441,6 +1502,7 @@ class CfgVehicles
   class PerchFish_Green_Medium: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1455,6 +1517,7 @@ class CfgVehicles
   class PerchFish_Green_Large: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1468,6 +1531,7 @@ class CfgVehicles
   class PerchFish_Green_Epic: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1482,6 +1546,7 @@ class CfgVehicles
   class PerchFish_Yellow_Small: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1496,6 +1561,7 @@ class CfgVehicles
   class PerchFish_Yellow_Medium: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1510,6 +1576,7 @@ class CfgVehicles
   class PerchFish_Yellow_Large: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1523,6 +1590,7 @@ class CfgVehicles
   class PerchFish_Yellow_Epic: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1537,6 +1605,7 @@ class CfgVehicles
   class PerchFish_Silver_Small: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1551,6 +1620,7 @@ class CfgVehicles
   class PerchFish_Silver_Medium: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1565,6 +1635,7 @@ class CfgVehicles
   class PerchFish_Silver_Large: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1578,6 +1649,7 @@ class CfgVehicles
   class PerchFish_Silver_Epic: PerchFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1633,6 +1705,7 @@ class CfgVehicles
   class TilapiaFish_Blue_Small: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1647,6 +1720,7 @@ class CfgVehicles
   class TilapiaFish_Blue_Medium: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1661,6 +1735,7 @@ class CfgVehicles
   class TilapiaFish_Blue_Large: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1674,6 +1749,7 @@ class CfgVehicles
   class TilapiaFish_Blue_Epic: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1688,6 +1764,7 @@ class CfgVehicles
   class TilapiaFish_Red_Small: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1702,6 +1779,7 @@ class CfgVehicles
   class TilapiaFish_Red_Medium: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1716,6 +1794,7 @@ class CfgVehicles
   class TilapiaFish_Red_Large: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1729,6 +1808,7 @@ class CfgVehicles
   class TilapiaFish_Red_Epic: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1744,6 +1824,7 @@ class CfgVehicles
   class TilapiaFish_Green_Small: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1758,6 +1839,7 @@ class CfgVehicles
   class TilapiaFish_Green_Medium: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1772,6 +1854,7 @@ class CfgVehicles
   class TilapiaFish_Green_Large: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1785,6 +1868,7 @@ class CfgVehicles
   class TilapiaFish_Green_Epic: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1799,6 +1883,7 @@ class CfgVehicles
   class TilapiaFish_Yellow_Small: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1813,6 +1898,7 @@ class CfgVehicles
   class TilapiaFish_Yellow_Medium: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1827,6 +1913,7 @@ class CfgVehicles
   class TilapiaFish_Yellow_Large: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1840,6 +1927,7 @@ class CfgVehicles
   class TilapiaFish_Yellow_Epic: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1854,6 +1942,7 @@ class CfgVehicles
   class TilapiaFish_Silver_Small: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -1868,6 +1957,7 @@ class CfgVehicles
   class TilapiaFish_Silver_Medium: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -1882,6 +1972,7 @@ class CfgVehicles
   class TilapiaFish_Silver_Large: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1895,6 +1986,7 @@ class CfgVehicles
   class TilapiaFish_Silver_Epic: TilapiaFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
