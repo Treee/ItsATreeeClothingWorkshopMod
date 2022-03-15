@@ -15,6 +15,7 @@ class CfgPatches
 class CfgVehicles
 {
   class Container_Base;
+  class Inventory_Base;
   class SmallProtectorCase;
   class PlateCarrierPouches;
 
@@ -3357,5 +3358,94 @@ class CfgVehicles
     scope=2;
     displayName="Locker Kit - Single - Tan";
     descriptionShort="A kit that holds everything needed for a locker";
+  };
+
+  class SRP_HiddenStash_Base: Inventory_Base
+	{
+		scope=0;
+		displayName="Hidden Stash Base";
+		descriptionShort="An item used to make a hidden stash";
+		model="\dz\gear\food\food_can.p3d";
+		weight=20;
+		absorbency=1;
+		itemSize[]={2,2};
+		canBeSplit=1;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=0;
+		rotationFlags=63;
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1.0,{"DZ\gear\food\data\food_can.rvmat"}},						
+						{0.69999999,{"DZ\gear\food\data\food_can.rvmat"}},						
+						{0.5,{"DZ\gear\food\data\food_can_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\food\data\food_can_damage.rvmat"}},						
+						{0.0,{"DZ\gear\food\data\food_can_destruct.rvmat"}}
+				  };
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};	
+  };
+
+  class SRP_HiddenStash_FoodCan: SRP_HiddenStash_Base
+  {
+    scope=2;
+    displayName="$STR_UnknownFoodCan0";
+		descriptionShort="$STR_UnknownFoodCan1";
+		weight=440;
+    itemSize[]={2,2};
+    allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={2,2};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
   };
 };
