@@ -477,6 +477,7 @@ class CfgVehicles
   class CoralFish_Blue_Small: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -491,6 +492,7 @@ class CfgVehicles
   class CoralFish_Blue_Medium: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -505,6 +507,7 @@ class CfgVehicles
   class CoralFish_Blue_Large: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -518,6 +521,7 @@ class CfgVehicles
   class CoralFish_Blue_Epic: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -533,6 +537,7 @@ class CfgVehicles
   class CoralFish_Green_Small: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -547,6 +552,7 @@ class CfgVehicles
   class CoralFish_Green_Medium: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -561,6 +567,7 @@ class CfgVehicles
   class CoralFish_Green_Large: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -574,6 +581,7 @@ class CfgVehicles
   class CoralFish_Green_Epic: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -589,6 +597,7 @@ class CfgVehicles
   class CoralFish_Purple_Small: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -603,6 +612,7 @@ class CfgVehicles
   class CoralFish_Purple_Medium: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -617,6 +627,7 @@ class CfgVehicles
   class CoralFish_Purple_Large: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -630,6 +641,7 @@ class CfgVehicles
   class CoralFish_Purple_Epic: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -645,6 +657,7 @@ class CfgVehicles
   class CoralFish_Red_Small: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -659,6 +672,7 @@ class CfgVehicles
   class CoralFish_Red_Medium: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -673,6 +687,7 @@ class CfgVehicles
   class CoralFish_Red_Large: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -686,6 +701,7 @@ class CfgVehicles
   class CoralFish_Red_Epic: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -700,6 +716,7 @@ class CfgVehicles
   class CoralFish_Yellow_Small: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -714,6 +731,7 @@ class CfgVehicles
   class CoralFish_Yellow_Medium: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -728,6 +746,7 @@ class CfgVehicles
   class CoralFish_Yellow_Large: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -741,6 +760,7 @@ class CfgVehicles
   class CoralFish_Yellow_Epic: CoralFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -774,7 +794,6 @@ class CfgVehicles
 					hitpoints=50;
 					healthLevels[]=
 					{
-						
 						{1,{"Survivalists_Fishing\fish\saltwater\data\angelfish.rvmat"}},						
 						{0.69999999,{"Survivalists_Fishing\fish\saltwater\data\angelfish.rvmat"}},						
 						{0.5,{"Survivalists_Fishing\fish\saltwater\data\angelfish.rvmat"}},						
@@ -797,6 +816,7 @@ class CfgVehicles
   class AngelFish_Blue_Small: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -811,6 +831,7 @@ class CfgVehicles
   class AngelFish_Blue_Medium: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -825,6 +846,7 @@ class CfgVehicles
   class AngelFish_Blue_Large: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -838,6 +860,7 @@ class CfgVehicles
   class AngelFish_Blue_Epic: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -853,6 +876,7 @@ class CfgVehicles
   class AngelFish_Orange_Small: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -867,6 +891,7 @@ class CfgVehicles
   class AngelFish_Orange_Medium: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -881,6 +906,7 @@ class CfgVehicles
   class AngelFish_Orange_Large: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -894,6 +920,7 @@ class CfgVehicles
   class AngelFish_Orange_Epic: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -909,6 +936,7 @@ class CfgVehicles
   class AngelFish_Red_Small: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -923,6 +951,7 @@ class CfgVehicles
   class AngelFish_Red_Medium: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -937,6 +966,7 @@ class CfgVehicles
   class AngelFish_Red_Large: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -950,6 +980,7 @@ class CfgVehicles
   class AngelFish_Red_Epic: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -965,6 +996,7 @@ class CfgVehicles
   class AngelFish_Yellow_Small: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish.p3d";
     itemSize[]={1,2};
 		weight=250;
 		varQuantityInit=500;
@@ -979,6 +1011,7 @@ class CfgVehicles
   class AngelFish_Yellow_Medium: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_m.p3d";
     itemSize[]={2,2};
 		weight=500;
 		varQuantityInit=750;
@@ -993,6 +1026,7 @@ class CfgVehicles
   class AngelFish_Yellow_Large: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_l.p3d";
     itemSize[]={2,3};
 		weight=750;
 		varQuantityInit=1000;
@@ -1006,6 +1040,7 @@ class CfgVehicles
   class AngelFish_Yellow_Epic: AngelFish_ColorBase
   {
     scope=2;
+    model="Survivalists_Fishing\fish\saltwater\angelfish_xl.p3d";
     itemSize[]={3,3};
 		weight=1500;
 		varQuantityInit=1500;
@@ -1044,7 +1079,6 @@ class CfgVehicles
 					hitpoints=50;
 					healthLevels[]=
 					{
-						
 						{1,{"Survivalists_Fishing\fish\saltwater\data\sailfish.rvmat"}},						
 						{0.69999999,{"Survivalists_Fishing\fish\saltwater\data\sailfish.rvmat"}},						
 						{0.5,{"Survivalists_Fishing\fish\saltwater\data\sailfish.rvmat"}},						
@@ -1067,7 +1101,8 @@ class CfgVehicles
   class SailFish_Blue_Small: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1081,7 +1116,8 @@ class CfgVehicles
   class SailFish_Blue_Medium: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1095,7 +1131,8 @@ class CfgVehicles
   class SailFish_Blue_Large: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
+    itemSize[]={4,7};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1108,7 +1145,8 @@ class CfgVehicles
   class SailFish_Blue_Epic: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
+    itemSize[]={5,8};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1123,7 +1161,8 @@ class CfgVehicles
   class SailFish_Green_Small: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1137,7 +1176,8 @@ class CfgVehicles
   class SailFish_Green_Medium: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1151,7 +1191,8 @@ class CfgVehicles
   class SailFish_Green_Large: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
+    itemSize[]={4,7};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1164,7 +1205,8 @@ class CfgVehicles
   class SailFish_Green_Epic: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
+    itemSize[]={5,8};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1178,7 +1220,8 @@ class CfgVehicles
   class SailFish_Red_Small: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1192,7 +1235,8 @@ class CfgVehicles
   class SailFish_Red_Medium: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1206,7 +1250,8 @@ class CfgVehicles
   class SailFish_Red_Large: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
+    itemSize[]={4,7};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1219,7 +1264,8 @@ class CfgVehicles
   class SailFish_Red_Epic: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
+    itemSize[]={5,8};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1233,7 +1279,8 @@ class CfgVehicles
   class SailFish_Yellow_Small: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1247,7 +1294,8 @@ class CfgVehicles
   class SailFish_Yellow_Medium: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1261,7 +1309,8 @@ class CfgVehicles
   class SailFish_Yellow_Large: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
+    itemSize[]={4,7};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1274,7 +1323,8 @@ class CfgVehicles
   class SailFish_Yellow_Epic: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
+    itemSize[]={5,8};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1288,7 +1338,8 @@ class CfgVehicles
   class SailFish_Silver_Small: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1302,7 +1353,8 @@ class CfgVehicles
   class SailFish_Silver_Medium: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1316,7 +1368,8 @@ class CfgVehicles
   class SailFish_Silver_Large: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
+    itemSize[]={4,7};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1329,7 +1382,8 @@ class CfgVehicles
   class SailFish_Silver_Epic: SailFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
+    itemSize[]={5,8};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1361,7 +1415,6 @@ class CfgVehicles
 					hitpoints=50;
 					healthLevels[]=
 					{
-						
 						{1,{"Survivalists_Fishing\fish\saltwater\data\anglerfish.rvmat"}},						
 						{0.69999999,{"Survivalists_Fishing\fish\saltwater\data\anglerfish.rvmat"}},						
 						{0.5,{"Survivalists_Fishing\fish\saltwater\data\anglerfish.rvmat"}},						
@@ -1384,7 +1437,8 @@ class CfgVehicles
   class AnglerFish_Blue_Small: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish.p3d";
+    itemSize[]={2,3};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1398,7 +1452,8 @@ class CfgVehicles
   class AnglerFish_Blue_Medium: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_m.p3d";
+    itemSize[]={3,3};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1412,7 +1467,8 @@ class CfgVehicles
   class AnglerFish_Blue_Large: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_l.p3d";
+    itemSize[]={3,4};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1425,7 +1481,8 @@ class CfgVehicles
   class AnglerFish_Blue_Epic: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_xl.p3d";
+    itemSize[]={3,5};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1439,7 +1496,8 @@ class CfgVehicles
   class AnglerFish_Purple_Small: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish.p3d";
+    itemSize[]={2,3};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1453,7 +1511,8 @@ class CfgVehicles
   class AnglerFish_Purple_Medium: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_m.p3d";
+    itemSize[]={3,3};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1467,7 +1526,8 @@ class CfgVehicles
   class AnglerFish_Purple_Large: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_l.p3d";
+    itemSize[]={3,4};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1480,7 +1540,8 @@ class CfgVehicles
   class AnglerFish_Purple_Epic: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_xl.p3d";
+    itemSize[]={3,5};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1494,7 +1555,8 @@ class CfgVehicles
   class AnglerFish_Silver_Small: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish.p3d";
+    itemSize[]={2,3};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1508,7 +1570,8 @@ class CfgVehicles
   class AnglerFish_Silver_Medium: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_m.p3d";
+    itemSize[]={3,3};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1522,7 +1585,8 @@ class CfgVehicles
   class AnglerFish_Silver_Large: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_l.p3d";
+    itemSize[]={3,4};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1535,7 +1599,8 @@ class CfgVehicles
   class AnglerFish_Silver_Epic: AnglerFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\anglerfish_xl.p3d";
+    itemSize[]={3,5};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1596,7 +1661,8 @@ class CfgVehicles
   class HammerHeadFish_Blue_Small: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1610,7 +1676,8 @@ class CfgVehicles
   class HammerHeadFish_Blue_Medium: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1624,7 +1691,8 @@ class CfgVehicles
   class HammerHeadFish_Blue_Large: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_l.p3d";
+    itemSize[]={5,6};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1637,7 +1705,8 @@ class CfgVehicles
   class HammerHeadFish_Blue_Epic: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_xl.p3d";
+    itemSize[]={6,7};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1651,7 +1720,8 @@ class CfgVehicles
   class HammerHeadFish_Red_Small: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1665,7 +1735,8 @@ class CfgVehicles
   class HammerHeadFish_Red_Medium: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1679,7 +1750,8 @@ class CfgVehicles
   class HammerHeadFish_Red_Large: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_l.p3d";
+    itemSize[]={5,6};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1692,7 +1764,8 @@ class CfgVehicles
   class HammerHeadFish_Red_Epic: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_xl.p3d";
+    itemSize[]={6,7};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1706,7 +1779,8 @@ class CfgVehicles
   class HammerHeadFish_Silver_Small: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1720,7 +1794,8 @@ class CfgVehicles
   class HammerHeadFish_Silver_Medium: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1734,7 +1809,8 @@ class CfgVehicles
   class HammerHeadFish_Silver_Large: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_l.p3d";
+    itemSize[]={5,6};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1747,7 +1823,8 @@ class CfgVehicles
   class HammerHeadFish_Silver_Epic: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_xl.p3d";
+    itemSize[]={6,7};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
@@ -1761,7 +1838,8 @@ class CfgVehicles
   class HammerHeadFish_Yellow_Small: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={1,2};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
+    itemSize[]={4,5};
 		weight=250;
 		varQuantityInit=500;
 		varQuantityMax=500;
@@ -1775,7 +1853,8 @@ class CfgVehicles
   class HammerHeadFish_Yellow_Medium: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,2};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_m.p3d";
+    itemSize[]={4,6};
 		weight=500;
 		varQuantityInit=750;
 		varQuantityMax=750;
@@ -1789,7 +1868,8 @@ class CfgVehicles
   class HammerHeadFish_Yellow_Large: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={2,3};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_l.p3d";
+    itemSize[]={5,6};
 		weight=750;
 		varQuantityInit=1000;
 		varQuantityMax=1000;
@@ -1802,7 +1882,8 @@ class CfgVehicles
   class HammerHeadFish_Yellow_Epic: HammerHeadFish_ColorBase
   {
     scope=2;
-    itemSize[]={3,3};
+    model="Survivalists_Fishing\fish\saltwater\hammerheadshark_xl.p3d";
+    itemSize[]={6,7};
 		weight=1500;
 		varQuantityInit=1500;
 		varQuantityMax=1500;
