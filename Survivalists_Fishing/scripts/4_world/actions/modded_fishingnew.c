@@ -125,7 +125,7 @@ modded class ActionFishingNewCB
         {
           // Print("Junk Type: " + junk_type);
           fish = ItemBase.Cast(GetGame().CreateObjectEx(junk_type,m_ActionDataFishing.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
-          fish.SetHealth("","Health",fish.GetMaxHealth("","Health") * 0.1);
+          fish.SetHealth("","Health",fish.GetMaxHealth("","Health") * 0.05);
         }
 			}
 			

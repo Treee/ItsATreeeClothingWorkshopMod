@@ -27,15 +27,44 @@ modded class DayZGame
 
         m_SRPFishingConfig.m_FishingJunk = new ref array<ref SRPFishingJunk>;
         // Salt water junk
-        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Wellies_Black"));
-        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "Wellies_Black"));
-        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "Wellies_Black"));
-        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "Wellies_Black")); 
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Paper"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Fabric"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Rag"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "BurlapStrip"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Bark_Oak"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Bark_Birch"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Rope"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "WaterBottle"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "CamoNet"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "Netting"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "GiftWrapPaper"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "DuctTape"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "HatchbackWheel"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "HatchbackDoors_Driver"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "SeaChest"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "SmallProtectorCase"));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "LargeTent")); 
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "AmmoBox")); 
         // fresh water junk
-        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Wellies_Green", true));
-        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "Wellies_Grey", true));
-        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "Pot",true));
-        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "Wellies_Black",true));      
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Paper", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Fabric", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Rag", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Rope", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "BurlapStrip", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Bark_Oak", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(1, "Bark_Birch", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "WaterBottle", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "Netting", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "GiftWrapPaper", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.5, "WoodenCrate", true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "MediumTent",true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "SmallProtectorCase",true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "PartyTent",true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "HatchbackWheel",true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.25, "HatchbackDoors_Driver",true));
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "CarTent",true));      
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "LargeTent",true));      
+        m_SRPFishingConfig.m_FishingJunk.Insert(new SRPFishingJunk(0.1, "AmmoBox",true));      
 
 
         m_SRPFishingConfig.m_FishCatches = new ref array<ref SRPFishCatch>;
