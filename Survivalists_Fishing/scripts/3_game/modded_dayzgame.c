@@ -83,35 +83,35 @@ modded class DayZGame
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("TroutFish", 1, true);
+        fish = new SRPFishCatch("SRP_TroutFish", 1, true);
         fish.m_FishColors = {"Brown","Blue","Red","Yellow"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.25, 0.10, 0.03};
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("MutantFish", 0.1, true, true);
+        fish = new SRPFishCatch("SRP_MutantFish", 0.1, true, true);
         fish.m_FishColors = {"Red","Blue","Green","Yellow"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.25, 0.10, 0.03};
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("SplakeFish", 0.5, true);
+        fish = new SRPFishCatch("SRP_SplakeFish", 0.5, true);
         fish.m_FishColors = {"Red","Blue","Green","Yellow","Purple"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.50, 0.25, 0.10, 0.03};
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("PerchFish", 0.5, true);
+        fish = new SRPFishCatch("SRP_PerchFish", 0.5, true);
         fish.m_FishColors = {"Red","Blue","Green","Yellow","Silver"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.50, 0.25, 0.10, 0.03};
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("TilapiaFish", 0.25, true);
+        fish = new SRPFishCatch("SRP_TilapiaFish", 0.25, true);
         fish.m_FishColors = {"Blue","Red","Green","Yellow","Silver"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.50, 0.25, 0.10, 0.03};
@@ -133,35 +133,35 @@ modded class DayZGame
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("CoralFish", 0.5);
+        fish = new SRPFishCatch("SRP_CoralFish", 0.5);
         fish.m_FishColors = {"Blue","Green","Purple","Red","Yellow"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.50, 0.25, 0.10, 0.03};
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("AngelFish", 0.5);
+        fish = new SRPFishCatch("SRP_AngelFish", 0.5);
         fish.m_FishColors = {"Blue","Orange","Red","Yellow"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.50, 0.10, 0.03};
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("AnglerFish", 0.5, false, true, true);
+        fish = new SRPFishCatch("SRP_AnglerFish", 0.5, false, true, true);
         fish.m_FishColors = {"Blue","Purple","Silver"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.50, 0.10};
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("SailFish", 0.2, false, true, true);
+        fish = new SRPFishCatch("SRP_SailFish", 0.2, false, true, true);
         fish.m_FishColors = {"Blue","Green", "Red","Yellow","Silver"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.50,0.25, 0.10,0.03};
         fish.m_FishSizeChances = {1, 0.50, 0.10, 0.03};
         m_SRPFishingConfig.m_FishCatches.Insert(fish);
 
-        fish = new SRPFishCatch("HammerHeadFish", 0.2, false, true, true);
+        fish = new SRPFishCatch("SRP_HammerHeadFish", 0.2, false, true, true);
         fish.m_FishColors = {"Blue","Red","Silver","Yellow"};
         fish.m_FishSizes = {"Small", "Medium", "Large", "Epic"};
         fish.m_FishColorChances = {1, 0.50,0.25, 0.10};

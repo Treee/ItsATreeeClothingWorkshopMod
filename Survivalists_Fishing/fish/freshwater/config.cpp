@@ -435,7 +435,7 @@ class CfgVehicles
 	};
 
   //======================================= Trout FISH
-  class TroutFish_ColorBase: SRP_FreshWaterFish_Base
+  class SRP_TroutFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Trout";
@@ -475,7 +475,7 @@ class CfgVehicles
   };
 
   // brown
-  class TroutFish_Brown_Small: TroutFish_ColorBase
+  class SRP_TroutFish_Brown_Small: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout.p3d";
@@ -490,7 +490,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_co.paa"
     };
   };
-  class TroutFish_Brown_Medium: TroutFish_ColorBase
+  class SRP_TroutFish_Brown_Medium: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_m.p3d";
@@ -505,7 +505,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_co.paa"
     };
   };
-  class TroutFish_Brown_Large: TroutFish_ColorBase
+  class SRP_TroutFish_Brown_Large: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_l.p3d";
@@ -519,7 +519,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_co.paa"
     };
   };
-  class TroutFish_Brown_Epic: TroutFish_ColorBase
+  class SRP_TroutFish_Brown_Epic: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_xl.p3d";
@@ -534,7 +534,7 @@ class CfgVehicles
     };
   };
   // blue
-  class TroutFish_Blue_Small: TroutFish_ColorBase
+  class SRP_TroutFish_Blue_Small: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout.p3d";
@@ -549,7 +549,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_blue_co.paa"
     };
   };
-  class TroutFish_Blue_Medium: TroutFish_ColorBase
+  class SRP_TroutFish_Blue_Medium: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_m.p3d";
@@ -564,7 +564,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_blue_co.paa"
     };
   };
-  class TroutFish_Blue_Large: TroutFish_ColorBase
+  class SRP_TroutFish_Blue_Large: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_l.p3d";
@@ -578,7 +578,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_blue_co.paa"
     };
   };
-  class TroutFish_Blue_Epic: TroutFish_ColorBase
+  class SRP_TroutFish_Blue_Epic: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_xl.p3d";
@@ -593,7 +593,7 @@ class CfgVehicles
     };
   };  
   // red
-  class TroutFish_Red_Small: TroutFish_ColorBase
+  class SRP_TroutFish_Red_Small: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout.p3d";
@@ -608,7 +608,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_red_co.paa"
     };
   };
-  class TroutFish_Red_Medium: TroutFish_ColorBase
+  class SRP_TroutFish_Red_Medium: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_m.p3d";
@@ -623,7 +623,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_red_co.paa"
     };
   };
-  class TroutFish_Red_Large: TroutFish_ColorBase
+  class SRP_TroutFish_Red_Large: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_l.p3d";
@@ -637,7 +637,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_red_co.paa"
     };
   };
-  class TroutFish_Red_Epic: TroutFish_ColorBase
+  class SRP_TroutFish_Red_Epic: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_xl.p3d";
@@ -652,7 +652,7 @@ class CfgVehicles
     };
   };
   // yellow
-  class TroutFish_Yellow_Small: TroutFish_ColorBase
+  class SRP_TroutFish_Yellow_Small: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout.p3d";
@@ -667,7 +667,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_yellow_co.paa"
     };
   };
-  class TroutFish_Yellow_Medium: TroutFish_ColorBase
+  class SRP_TroutFish_Yellow_Medium: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_m.p3d";
@@ -682,7 +682,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_yellow_co.paa"
     };
   };
-  class TroutFish_Yellow_Large: TroutFish_ColorBase
+  class SRP_TroutFish_Yellow_Large: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_l.p3d";
@@ -696,7 +696,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\trout_yellow_co.paa"
     };
   };
-  class TroutFish_Yellow_Epic: TroutFish_ColorBase
+  class SRP_TroutFish_Yellow_Epic: SRP_TroutFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\trout_xl.p3d";
@@ -712,7 +712,7 @@ class CfgVehicles
   };
 
   //======================================= Mutant FISH
-  class MutantFish_ColorBase: SRP_FreshWaterFish_Base
+  class SRP_MutantFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Mutant Fish";
@@ -753,7 +753,7 @@ class CfgVehicles
   };
 
   // Red
-  class MutantFish_Red_Small: MutantFish_ColorBase
+  class SRP_MutantFish_Red_Small: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
@@ -768,7 +768,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_co.paa"
     };
   };
-  class MutantFish_Red_Medium: MutantFish_ColorBase
+  class SRP_MutantFish_Red_Medium: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_m.p3d";
@@ -783,7 +783,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_co.paa"
     };
   };
-  class MutantFish_Red_Large: MutantFish_ColorBase
+  class SRP_MutantFish_Red_Large: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_l.p3d";
@@ -797,7 +797,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_co.paa"
     };
   };
-  class MutantFish_Red_Epic: MutantFish_ColorBase
+  class SRP_MutantFish_Red_Epic: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_xl.p3d";
@@ -812,7 +812,7 @@ class CfgVehicles
     };
   };
   // blue
-  class MutantFish_Blue_Small: MutantFish_ColorBase
+  class SRP_MutantFish_Blue_Small: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
@@ -827,7 +827,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_blue_co.paa"
     };
   };
-  class MutantFish_Blue_Medium: MutantFish_ColorBase
+  class SRP_MutantFish_Blue_Medium: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_m.p3d";
@@ -842,7 +842,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_blue_co.paa"
     };
   };
-  class MutantFish_Blue_Large: MutantFish_ColorBase
+  class SRP_MutantFish_Blue_Large: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_l.p3d";
@@ -856,7 +856,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_blue_co.paa"
     };
   };
-  class MutantFish_Blue_Epic: MutantFish_ColorBase
+  class SRP_MutantFish_Blue_Epic: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_xl.p3d";
@@ -871,7 +871,7 @@ class CfgVehicles
     };
   };  
   // Green
-  class MutantFish_Green_Small: MutantFish_ColorBase
+  class SRP_MutantFish_Green_Small: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
@@ -886,7 +886,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_green_co.paa"
     };
   };
-  class MutantFish_Green_Medium: MutantFish_ColorBase
+  class SRP_MutantFish_Green_Medium: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_m.p3d";
@@ -901,7 +901,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_green_co.paa"
     };
   };
-  class MutantFish_Green_Large: MutantFish_ColorBase
+  class SRP_MutantFish_Green_Large: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_l.p3d";
@@ -915,7 +915,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_green_co.paa"
     };
   };
-  class MutantFish_Green_Epic: MutantFish_ColorBase
+  class SRP_MutantFish_Green_Epic: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_xl.p3d";
@@ -930,7 +930,7 @@ class CfgVehicles
     };
   };
   // yellow
-  class MutantFish_Yellow_Small: MutantFish_ColorBase
+  class SRP_MutantFish_Yellow_Small: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish.p3d";
@@ -945,7 +945,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_yellow_co.paa"
     };
   };
-  class MutantFish_Yellow_Medium: MutantFish_ColorBase
+  class SRP_MutantFish_Yellow_Medium: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_m.p3d";
@@ -960,7 +960,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_yellow_co.paa"
     };
   };
-  class MutantFish_Yellow_Large: MutantFish_ColorBase
+  class SRP_MutantFish_Yellow_Large: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_l.p3d";
@@ -974,7 +974,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\mutantfish_yellow_co.paa"
     };
   };
-  class MutantFish_Yellow_Epic: MutantFish_ColorBase
+  class SRP_MutantFish_Yellow_Epic: SRP_MutantFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\mutantfish_xl.p3d";
@@ -990,7 +990,7 @@ class CfgVehicles
   };
 
   //======================================= SPLAKE FISH
-  class SplakeFish_ColorBase: SRP_FreshWaterFish_Base
+  class SRP_SplakeFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Splake";
@@ -1030,7 +1030,7 @@ class CfgVehicles
   };
 
   // Red
-  class SplakeFish_Red_Small: SplakeFish_ColorBase
+  class SRP_SplakeFish_Red_Small: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake.p3d";
@@ -1045,7 +1045,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_co.paa"
     };
   };
-  class SplakeFish_Red_Medium: SplakeFish_ColorBase
+  class SRP_SplakeFish_Red_Medium: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
@@ -1060,7 +1060,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_co.paa"
     };
   };
-  class SplakeFish_Red_Large: SplakeFish_ColorBase
+  class SRP_SplakeFish_Red_Large: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
@@ -1074,7 +1074,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_co.paa"
     };
   };
-  class SplakeFish_Red_Epic: SplakeFish_ColorBase
+  class SRP_SplakeFish_Red_Epic: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
@@ -1089,7 +1089,7 @@ class CfgVehicles
     };
   };
   // blue
-  class SplakeFish_Blue_Small: SplakeFish_ColorBase
+  class SRP_SplakeFish_Blue_Small: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake.p3d";
@@ -1104,7 +1104,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_blue_co.paa"
     };
   };
-  class SplakeFish_Blue_Medium: SplakeFish_ColorBase
+  class SRP_SplakeFish_Blue_Medium: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
@@ -1119,7 +1119,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_blue_co.paa"
     };
   };
-  class SplakeFish_Blue_Large: SplakeFish_ColorBase
+  class SRP_SplakeFish_Blue_Large: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
@@ -1133,7 +1133,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_blue_co.paa"
     };
   };
-  class SplakeFish_Blue_Epic: SplakeFish_ColorBase
+  class SRP_SplakeFish_Blue_Epic: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
@@ -1148,7 +1148,7 @@ class CfgVehicles
     };
   };  
   // Green
-  class SplakeFish_Green_Small: SplakeFish_ColorBase
+  class SRP_SplakeFish_Green_Small: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake.p3d";
@@ -1163,7 +1163,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_green_co.paa"
     };
   };
-  class SplakeFish_Green_Medium: SplakeFish_ColorBase
+  class SRP_SplakeFish_Green_Medium: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
@@ -1178,7 +1178,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_green_co.paa"
     };
   };
-  class SplakeFish_Green_Large: SplakeFish_ColorBase
+  class SRP_SplakeFish_Green_Large: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
@@ -1192,7 +1192,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_green_co.paa"
     };
   };
-  class SplakeFish_Green_Epic: SplakeFish_ColorBase
+  class SRP_SplakeFish_Green_Epic: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
@@ -1207,7 +1207,7 @@ class CfgVehicles
     };
   };
   // yellow
-  class SplakeFish_Yellow_Small: SplakeFish_ColorBase
+  class SRP_SplakeFish_Yellow_Small: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake.p3d";
@@ -1222,7 +1222,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_yellow_co.paa"
     };
   };
-  class SplakeFish_Yellow_Medium: SplakeFish_ColorBase
+  class SRP_SplakeFish_Yellow_Medium: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
@@ -1237,7 +1237,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_yellow_co.paa"
     };
   };
-  class SplakeFish_Yellow_Large: SplakeFish_ColorBase
+  class SRP_SplakeFish_Yellow_Large: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
@@ -1251,7 +1251,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_yellow_co.paa"
     };
   };
-  class SplakeFish_Yellow_Epic: SplakeFish_ColorBase
+  class SRP_SplakeFish_Yellow_Epic: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
@@ -1266,7 +1266,7 @@ class CfgVehicles
     };
   };
   // Purple
-  class SplakeFish_Purple_Small: SplakeFish_ColorBase
+  class SRP_SplakeFish_Purple_Small: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake.p3d";
@@ -1281,7 +1281,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_purple_co.paa"
     };
   };
-  class SplakeFish_Purple_Medium: SplakeFish_ColorBase
+  class SRP_SplakeFish_Purple_Medium: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_m.p3d";
@@ -1296,7 +1296,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_purple_co.paa"
     };
   };
-  class SplakeFish_Purple_Large: SplakeFish_ColorBase
+  class SRP_SplakeFish_Purple_Large: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_l.p3d";
@@ -1310,7 +1310,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\splake_purple_co.paa"
     };
   };
-  class SplakeFish_Purple_Epic: SplakeFish_ColorBase
+  class SRP_SplakeFish_Purple_Epic: SRP_SplakeFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\splake_xl.p3d";
@@ -1326,7 +1326,7 @@ class CfgVehicles
   };
 
   //======================================= PERCH FISH
-  class PerchFish_ColorBase: SRP_FreshWaterFish_Base
+  class SRP_PerchFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Perch";
@@ -1366,7 +1366,7 @@ class CfgVehicles
   };
 
   // Red
-  class PerchFish_Red_Small: PerchFish_ColorBase
+  class SRP_PerchFish_Red_Small: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch.p3d";
@@ -1381,7 +1381,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_co.paa"
     };
   };
-  class PerchFish_Red_Medium: PerchFish_ColorBase
+  class SRP_PerchFish_Red_Medium: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
@@ -1396,7 +1396,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_co.paa"
     };
   };
-  class PerchFish_Red_Large: PerchFish_ColorBase
+  class SRP_PerchFish_Red_Large: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
@@ -1410,7 +1410,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_co.paa"
     };
   };
-  class PerchFish_Red_Epic: PerchFish_ColorBase
+  class SRP_PerchFish_Red_Epic: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
@@ -1425,7 +1425,7 @@ class CfgVehicles
     };
   };
   // blue
-  class PerchFish_Blue_Small: PerchFish_ColorBase
+  class SRP_PerchFish_Blue_Small: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch.p3d";
@@ -1440,7 +1440,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_blue_co.paa"
     };
   };
-  class PerchFish_Blue_Medium: PerchFish_ColorBase
+  class SRP_PerchFish_Blue_Medium: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
@@ -1455,7 +1455,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_blue_co.paa"
     };
   };
-  class PerchFish_Blue_Large: PerchFish_ColorBase
+  class SRP_PerchFish_Blue_Large: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
@@ -1469,7 +1469,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_blue_co.paa"
     };
   };
-  class PerchFish_Blue_Epic: PerchFish_ColorBase
+  class SRP_PerchFish_Blue_Epic: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
@@ -1484,7 +1484,7 @@ class CfgVehicles
     };
   };  
   // Green
-  class PerchFish_Green_Small: PerchFish_ColorBase
+  class SRP_PerchFish_Green_Small: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch.p3d";
@@ -1499,7 +1499,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_green_co.paa"
     };
   };
-  class PerchFish_Green_Medium: PerchFish_ColorBase
+  class SRP_PerchFish_Green_Medium: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
@@ -1514,7 +1514,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_green_co.paa"
     };
   };
-  class PerchFish_Green_Large: PerchFish_ColorBase
+  class SRP_PerchFish_Green_Large: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
@@ -1528,7 +1528,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_green_co.paa"
     };
   };
-  class PerchFish_Green_Epic: PerchFish_ColorBase
+  class SRP_PerchFish_Green_Epic: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
@@ -1543,7 +1543,7 @@ class CfgVehicles
     };
   };
   // yellow
-  class PerchFish_Yellow_Small: PerchFish_ColorBase
+  class SRP_PerchFish_Yellow_Small: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch.p3d";
@@ -1558,7 +1558,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_yellow_co.paa"
     };
   };
-  class PerchFish_Yellow_Medium: PerchFish_ColorBase
+  class SRP_PerchFish_Yellow_Medium: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
@@ -1573,7 +1573,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_yellow_co.paa"
     };
   };
-  class PerchFish_Yellow_Large: PerchFish_ColorBase
+  class SRP_PerchFish_Yellow_Large: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
@@ -1587,7 +1587,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_yellow_co.paa"
     };
   };
-  class PerchFish_Yellow_Epic: PerchFish_ColorBase
+  class SRP_PerchFish_Yellow_Epic: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
@@ -1602,7 +1602,7 @@ class CfgVehicles
     };
   };
   // Silver
-  class PerchFish_Silver_Small: PerchFish_ColorBase
+  class SRP_PerchFish_Silver_Small: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch.p3d";
@@ -1617,7 +1617,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_silver_co.paa"
     };
   };
-  class PerchFish_Silver_Medium: PerchFish_ColorBase
+  class SRP_PerchFish_Silver_Medium: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_m.p3d";
@@ -1632,7 +1632,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_silver_co.paa"
     };
   };
-  class PerchFish_Silver_Large: PerchFish_ColorBase
+  class SRP_PerchFish_Silver_Large: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_l.p3d";
@@ -1646,7 +1646,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\perch_silver_co.paa"
     };
   };
-  class PerchFish_Silver_Epic: PerchFish_ColorBase
+  class SRP_PerchFish_Silver_Epic: SRP_PerchFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\perch_xl.p3d";
@@ -1662,7 +1662,7 @@ class CfgVehicles
   };
 
   //======================================= TILAPIA FISH
-  class TilapiaFish_ColorBase: SRP_FreshWaterFish_Base
+  class SRP_TilapiaFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Tilapia";
@@ -1702,7 +1702,7 @@ class CfgVehicles
   };
 
   // blue
-  class TilapiaFish_Blue_Small: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Blue_Small: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
@@ -1717,7 +1717,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_co.paa"
     };
   };
-  class TilapiaFish_Blue_Medium: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Blue_Medium: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
@@ -1732,7 +1732,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_co.paa"
     };
   };
-  class TilapiaFish_Blue_Large: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Blue_Large: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
@@ -1746,7 +1746,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_co.paa"
     };
   };
-  class TilapiaFish_Blue_Epic: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Blue_Epic: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
@@ -1761,7 +1761,7 @@ class CfgVehicles
     };
   };
   // Red
-  class TilapiaFish_Red_Small: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Red_Small: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
@@ -1776,7 +1776,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_red_co.paa"
     };
   };
-  class TilapiaFish_Red_Medium: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Red_Medium: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
@@ -1791,7 +1791,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_red_co.paa"
     };
   };
-  class TilapiaFish_Red_Large: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Red_Large: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
@@ -1805,7 +1805,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_red_co.paa"
     };
   };
-  class TilapiaFish_Red_Epic: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Red_Epic: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
@@ -1821,7 +1821,7 @@ class CfgVehicles
   };
 
   // Green
-  class TilapiaFish_Green_Small: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Green_Small: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
@@ -1836,7 +1836,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_green_co.paa"
     };
   };
-  class TilapiaFish_Green_Medium: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Green_Medium: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
@@ -1851,7 +1851,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_green_co.paa"
     };
   };
-  class TilapiaFish_Green_Large: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Green_Large: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
@@ -1865,7 +1865,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_green_co.paa"
     };
   };
-  class TilapiaFish_Green_Epic: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Green_Epic: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
@@ -1880,7 +1880,7 @@ class CfgVehicles
     };
   };
   // yellow
-  class TilapiaFish_Yellow_Small: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Yellow_Small: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
@@ -1895,7 +1895,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_yellow_co.paa"
     };
   };
-  class TilapiaFish_Yellow_Medium: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Yellow_Medium: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
@@ -1910,7 +1910,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_yellow_co.paa"
     };
   };
-  class TilapiaFish_Yellow_Large: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Yellow_Large: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
@@ -1924,7 +1924,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_yellow_co.paa"
     };
   };
-  class TilapiaFish_Yellow_Epic: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Yellow_Epic: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";
@@ -1939,7 +1939,7 @@ class CfgVehicles
     };
   };
   // Silver
-  class TilapiaFish_Silver_Small: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Silver_Small: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia.p3d";
@@ -1954,7 +1954,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_silver_co.paa"
     };
   };
-  class TilapiaFish_Silver_Medium: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Silver_Medium: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_m.p3d";
@@ -1969,7 +1969,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_silver_co.paa"
     };
   };
-  class TilapiaFish_Silver_Large: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Silver_Large: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_l.p3d";
@@ -1983,7 +1983,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\freshwater\data\tilapia_silver_co.paa"
     };
   };
-  class TilapiaFish_Silver_Epic: TilapiaFish_ColorBase
+  class SRP_TilapiaFish_Silver_Epic: SRP_TilapiaFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\freshwater\tilapia_xl.p3d";

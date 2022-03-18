@@ -24,7 +24,7 @@ class PrepareCoralFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"CoralFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_CoralFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -91,7 +91,7 @@ class PrepareAngelFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"AngelFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_AngelFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -158,7 +158,7 @@ class PrepareSailFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SailFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SailFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -225,7 +225,7 @@ class PrepareAnglerFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"AnglerFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_AnglerFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -292,7 +292,7 @@ class PrepareHammerHeadFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"HammerHeadFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_HammerHeadFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -359,7 +359,7 @@ class PrepareTroutFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"TroutFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_TroutFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -426,7 +426,7 @@ class PrepareMutantFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"MutantFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_MutantFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -493,7 +493,7 @@ class PrepareSplakeFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SplakeFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_SplakeFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -560,7 +560,7 @@ class PreparePerchFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"PerchFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_PerchFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -627,7 +627,7 @@ class PrepareTilapiaFish extends PrepareFish
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"TilapiaFish_ColorBase");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_TilapiaFish_ColorBase");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing

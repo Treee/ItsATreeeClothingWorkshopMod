@@ -434,7 +434,7 @@ class CfgVehicles
 	};
 
   //======================================= CORAL FISH
-  class CoralFish_ColorBase: SRP_SaltWaterFish_Base
+  class SRP_CoralFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="Coral Fish";
@@ -474,7 +474,7 @@ class CfgVehicles
   };
 
   // blue
-  class CoralFish_Blue_Small: CoralFish_ColorBase
+  class SRP_CoralFish_Blue_Small: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
@@ -489,7 +489,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_co.paa"
     };
   };
-  class CoralFish_Blue_Medium: CoralFish_ColorBase
+  class SRP_CoralFish_Blue_Medium: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
@@ -504,7 +504,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_co.paa"
     };
   };
-  class CoralFish_Blue_Large: CoralFish_ColorBase
+  class SRP_CoralFish_Blue_Large: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
@@ -518,7 +518,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_co.paa"
     };
   };
-  class CoralFish_Blue_Epic: CoralFish_ColorBase
+  class SRP_CoralFish_Blue_Epic: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
@@ -534,7 +534,7 @@ class CfgVehicles
   };
   
   // green
-  class CoralFish_Green_Small: CoralFish_ColorBase
+  class SRP_CoralFish_Green_Small: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
@@ -549,7 +549,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_green_co.paa"
     };
   };
-  class CoralFish_Green_Medium: CoralFish_ColorBase
+  class SRP_CoralFish_Green_Medium: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
@@ -564,7 +564,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_green_co.paa"
     };
   };
-  class CoralFish_Green_Large: CoralFish_ColorBase
+  class SRP_CoralFish_Green_Large: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
@@ -578,7 +578,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_green_co.paa"
     };
   };
-  class CoralFish_Green_Epic: CoralFish_ColorBase
+  class SRP_CoralFish_Green_Epic: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
@@ -594,7 +594,7 @@ class CfgVehicles
   };
   
   // purple
-  class CoralFish_Purple_Small: CoralFish_ColorBase
+  class SRP_CoralFish_Purple_Small: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
@@ -609,7 +609,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_purple_co.paa"
     };
   };
-  class CoralFish_Purple_Medium: CoralFish_ColorBase
+  class SRP_CoralFish_Purple_Medium: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
@@ -624,7 +624,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_purple_co.paa"
     };
   };
-  class CoralFish_Purple_Large: CoralFish_ColorBase
+  class SRP_CoralFish_Purple_Large: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
@@ -638,7 +638,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_purple_co.paa"
     };
   };
-  class CoralFish_Purple_Epic: CoralFish_ColorBase
+  class SRP_CoralFish_Purple_Epic: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
@@ -654,7 +654,7 @@ class CfgVehicles
   };  
   
   // red
-  class CoralFish_Red_Small: CoralFish_ColorBase
+  class SRP_CoralFish_Red_Small: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
@@ -669,7 +669,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_red_co.paa"
     };
   };
-  class CoralFish_Red_Medium: CoralFish_ColorBase
+  class SRP_CoralFish_Red_Medium: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
@@ -684,7 +684,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_red_co.paa"
     };
   };
-  class CoralFish_Red_Large: CoralFish_ColorBase
+  class SRP_CoralFish_Red_Large: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
@@ -698,7 +698,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_red_co.paa"
     };
   };
-  class CoralFish_Red_Epic: CoralFish_ColorBase
+  class SRP_CoralFish_Red_Epic: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
@@ -713,7 +713,7 @@ class CfgVehicles
     };
   };  
   // yellow
-  class CoralFish_Yellow_Small: CoralFish_ColorBase
+  class SRP_CoralFish_Yellow_Small: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish.p3d";
@@ -728,7 +728,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_yellow_co.paa"
     };
   };
-  class CoralFish_Yellow_Medium: CoralFish_ColorBase
+  class SRP_CoralFish_Yellow_Medium: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_m.p3d";
@@ -743,7 +743,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_yellow_co.paa"
     };
   };
-  class CoralFish_Yellow_Large: CoralFish_ColorBase
+  class SRP_CoralFish_Yellow_Large: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_l.p3d";
@@ -757,7 +757,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\coralfish_yellow_co.paa"
     };
   };
-  class CoralFish_Yellow_Epic: CoralFish_ColorBase
+  class SRP_CoralFish_Yellow_Epic: SRP_CoralFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\coralfish_xl.p3d";
@@ -774,7 +774,7 @@ class CfgVehicles
 
 
   //======================================= ANGEL FISH
-  class AngelFish_ColorBase: SRP_SaltWaterFish_Base
+  class SRP_AngelFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="Angel Fish";
@@ -813,7 +813,7 @@ class CfgVehicles
   };
 
   // blue
-  class AngelFish_Blue_Small: AngelFish_ColorBase
+  class SRP_AngelFish_Blue_Small: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish.p3d";
@@ -828,7 +828,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_blue_co.paa"
     };
   };
-  class AngelFish_Blue_Medium: AngelFish_ColorBase
+  class SRP_AngelFish_Blue_Medium: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_m.p3d";
@@ -843,7 +843,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_blue_co.paa"
     };
   };
-  class AngelFish_Blue_Large: AngelFish_ColorBase
+  class SRP_AngelFish_Blue_Large: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_l.p3d";
@@ -857,7 +857,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_blue_co.paa"
     };
   };
-  class AngelFish_Blue_Epic: AngelFish_ColorBase
+  class SRP_AngelFish_Blue_Epic: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_xl.p3d";
@@ -873,7 +873,7 @@ class CfgVehicles
   };
   
   // orange
-  class AngelFish_Orange_Small: AngelFish_ColorBase
+  class SRP_AngelFish_Orange_Small: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish.p3d";
@@ -888,7 +888,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_orange_co.paa"
     };
   };
-  class AngelFish_Orange_Medium: AngelFish_ColorBase
+  class SRP_AngelFish_Orange_Medium: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_m.p3d";
@@ -903,7 +903,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_orange_co.paa"
     };
   };
-  class AngelFish_Orange_Large: AngelFish_ColorBase
+  class SRP_AngelFish_Orange_Large: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_l.p3d";
@@ -917,7 +917,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_orange_co.paa"
     };
   };
-  class AngelFish_Orange_Epic: AngelFish_ColorBase
+  class SRP_AngelFish_Orange_Epic: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_xl.p3d";
@@ -933,7 +933,7 @@ class CfgVehicles
   };
   
   // red
-  class AngelFish_Red_Small: AngelFish_ColorBase
+  class SRP_AngelFish_Red_Small: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish.p3d";
@@ -948,7 +948,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_red_co.paa"
     };
   };
-  class AngelFish_Red_Medium: AngelFish_ColorBase
+  class SRP_AngelFish_Red_Medium: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_m.p3d";
@@ -963,7 +963,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_red_co.paa"
     };
   };
-  class AngelFish_Red_Large: AngelFish_ColorBase
+  class SRP_AngelFish_Red_Large: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_l.p3d";
@@ -977,7 +977,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_red_co.paa"
     };
   };
-  class AngelFish_Red_Epic: AngelFish_ColorBase
+  class SRP_AngelFish_Red_Epic: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_xl.p3d";
@@ -993,7 +993,7 @@ class CfgVehicles
   };  
    
   // yellow
-  class AngelFish_Yellow_Small: AngelFish_ColorBase
+  class SRP_AngelFish_Yellow_Small: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish.p3d";
@@ -1008,7 +1008,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_yellow_co.paa"
     };
   };
-  class AngelFish_Yellow_Medium: AngelFish_ColorBase
+  class SRP_AngelFish_Yellow_Medium: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_m.p3d";
@@ -1023,7 +1023,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_yellow_co.paa"
     };
   };
-  class AngelFish_Yellow_Large: AngelFish_ColorBase
+  class SRP_AngelFish_Yellow_Large: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_l.p3d";
@@ -1037,7 +1037,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\angelfish_yellow_co.paa"
     };
   };
-  class AngelFish_Yellow_Epic: AngelFish_ColorBase
+  class SRP_AngelFish_Yellow_Epic: SRP_AngelFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\angelfish_xl.p3d";
@@ -1053,7 +1053,7 @@ class CfgVehicles
   };
 
   //======================================= SAILFISH
-  class SailFish_ColorBase: SRP_SaltWaterFish_Base
+  class SRP_SailFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="SailFish";
@@ -1098,7 +1098,7 @@ class CfgVehicles
   };
 
   // blue
-  class SailFish_Blue_Small: SailFish_ColorBase
+  class SRP_SailFish_Blue_Small: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
@@ -1113,7 +1113,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
     };
   };
-  class SailFish_Blue_Medium: SailFish_ColorBase
+  class SRP_SailFish_Blue_Medium: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
@@ -1128,7 +1128,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
     };
   };
-  class SailFish_Blue_Large: SailFish_ColorBase
+  class SRP_SailFish_Blue_Large: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
@@ -1142,7 +1142,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_co.paa"
     };
   };
-  class SailFish_Blue_Epic: SailFish_ColorBase
+  class SRP_SailFish_Blue_Epic: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
@@ -1158,7 +1158,7 @@ class CfgVehicles
   };
   
   // green
-  class SailFish_Green_Small: SailFish_ColorBase
+  class SRP_SailFish_Green_Small: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
@@ -1173,7 +1173,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_green_co.paa"
     };
   };
-  class SailFish_Green_Medium: SailFish_ColorBase
+  class SRP_SailFish_Green_Medium: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
@@ -1188,7 +1188,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_green_co.paa"
     };
   };
-  class SailFish_Green_Large: SailFish_ColorBase
+  class SRP_SailFish_Green_Large: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
@@ -1202,7 +1202,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_green_co.paa"
     };
   };
-  class SailFish_Green_Epic: SailFish_ColorBase
+  class SRP_SailFish_Green_Epic: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
@@ -1217,7 +1217,7 @@ class CfgVehicles
     };
   };
   // red
-  class SailFish_Red_Small: SailFish_ColorBase
+  class SRP_SailFish_Red_Small: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
@@ -1232,7 +1232,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_red_co.paa"
     };
   };
-  class SailFish_Red_Medium: SailFish_ColorBase
+  class SRP_SailFish_Red_Medium: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
@@ -1247,7 +1247,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_red_co.paa"
     };
   };
-  class SailFish_Red_Large: SailFish_ColorBase
+  class SRP_SailFish_Red_Large: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
@@ -1261,7 +1261,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_red_co.paa"
     };
   };
-  class SailFish_Red_Epic: SailFish_ColorBase
+  class SRP_SailFish_Red_Epic: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
@@ -1276,7 +1276,7 @@ class CfgVehicles
     };
   };
   // yellow
-  class SailFish_Yellow_Small: SailFish_ColorBase
+  class SRP_SailFish_Yellow_Small: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
@@ -1291,7 +1291,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_yellow_co.paa"
     };
   };
-  class SailFish_Yellow_Medium: SailFish_ColorBase
+  class SRP_SailFish_Yellow_Medium: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
@@ -1306,7 +1306,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_yellow_co.paa"
     };
   };
-  class SailFish_Yellow_Large: SailFish_ColorBase
+  class SRP_SailFish_Yellow_Large: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
@@ -1320,7 +1320,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_yellow_co.paa"
     };
   };
-  class SailFish_Yellow_Epic: SailFish_ColorBase
+  class SRP_SailFish_Yellow_Epic: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
@@ -1335,7 +1335,7 @@ class CfgVehicles
     };
   };  
   // silver
-  class SailFish_Silver_Small: SailFish_ColorBase
+  class SRP_SailFish_Silver_Small: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish.p3d";
@@ -1350,7 +1350,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_silver_co.paa"
     };
   };
-  class SailFish_Silver_Medium: SailFish_ColorBase
+  class SRP_SailFish_Silver_Medium: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_m.p3d";
@@ -1365,7 +1365,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_silver_co.paa"
     };
   };
-  class SailFish_Silver_Large: SailFish_ColorBase
+  class SRP_SailFish_Silver_Large: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_l.p3d";
@@ -1379,7 +1379,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\sailfish_silver_co.paa"
     };
   };
-  class SailFish_Silver_Epic: SailFish_ColorBase
+  class SRP_SailFish_Silver_Epic: SRP_SailFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\sailfish_xl.p3d";
@@ -1395,7 +1395,7 @@ class CfgVehicles
   };
 
   //======================================= ANGLER FISH
-  class AnglerFish_ColorBase: SRP_SaltWaterFish_Base
+  class SRP_AnglerFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="Angler Fish";
@@ -1434,7 +1434,7 @@ class CfgVehicles
   };
 
   // blue
-  class AnglerFish_Blue_Small: AnglerFish_ColorBase
+  class SRP_AnglerFish_Blue_Small: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish.p3d";
@@ -1449,7 +1449,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_co.paa"
     };
   };
-  class AnglerFish_Blue_Medium: AnglerFish_ColorBase
+  class SRP_AnglerFish_Blue_Medium: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_m.p3d";
@@ -1464,7 +1464,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_co.paa"
     };
   };
-  class AnglerFish_Blue_Large: AnglerFish_ColorBase
+  class SRP_AnglerFish_Blue_Large: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_l.p3d";
@@ -1478,7 +1478,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_co.paa"
     };
   };
-  class AnglerFish_Blue_Epic: AnglerFish_ColorBase
+  class SRP_AnglerFish_Blue_Epic: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_xl.p3d";
@@ -1493,7 +1493,7 @@ class CfgVehicles
     };
   };  
   // Purple
-  class AnglerFish_Purple_Small: AnglerFish_ColorBase
+  class SRP_AnglerFish_Purple_Small: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish.p3d";
@@ -1508,7 +1508,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_purple_co.paa"
     };
   };
-  class AnglerFish_Purple_Medium: AnglerFish_ColorBase
+  class SRP_AnglerFish_Purple_Medium: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_m.p3d";
@@ -1523,7 +1523,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_purple_co.paa"
     };
   };
-  class AnglerFish_Purple_Large: AnglerFish_ColorBase
+  class SRP_AnglerFish_Purple_Large: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_l.p3d";
@@ -1537,7 +1537,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_purple_co.paa"
     };
   };
-  class AnglerFish_Purple_Epic: AnglerFish_ColorBase
+  class SRP_AnglerFish_Purple_Epic: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_xl.p3d";
@@ -1552,7 +1552,7 @@ class CfgVehicles
     };
   };
   // Silver
-  class AnglerFish_Silver_Small: AnglerFish_ColorBase
+  class SRP_AnglerFish_Silver_Small: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish.p3d";
@@ -1567,7 +1567,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_silver_co.paa"
     };
   };
-  class AnglerFish_Silver_Medium: AnglerFish_ColorBase
+  class SRP_AnglerFish_Silver_Medium: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_m.p3d";
@@ -1582,7 +1582,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_silver_co.paa"
     };
   };
-  class AnglerFish_Silver_Large: AnglerFish_ColorBase
+  class SRP_AnglerFish_Silver_Large: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_l.p3d";
@@ -1596,7 +1596,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\anglerfish_silver_co.paa"
     };
   };
-  class AnglerFish_Silver_Epic: AnglerFish_ColorBase
+  class SRP_AnglerFish_Silver_Epic: SRP_AnglerFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\anglerfish_xl.p3d";
@@ -1612,7 +1612,7 @@ class CfgVehicles
   };
 
   //======================================= HAMMERHEAD SHARK
-  class HammerHeadFish_ColorBase: SRP_SaltWaterFish_Base
+  class SRP_HammerHeadFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="Hammer Head Shark";
@@ -1658,7 +1658,7 @@ class CfgVehicles
   };
 
   // blue
-  class HammerHeadFish_Blue_Small: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Blue_Small: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
@@ -1673,7 +1673,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_co.paa"
     };
   };
-  class HammerHeadFish_Blue_Medium: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Blue_Medium: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_m.p3d";
@@ -1688,7 +1688,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_co.paa"
     };
   };
-  class HammerHeadFish_Blue_Large: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Blue_Large: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_l.p3d";
@@ -1702,7 +1702,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_co.paa"
     };
   };
-  class HammerHeadFish_Blue_Epic: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Blue_Epic: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_xl.p3d";
@@ -1717,7 +1717,7 @@ class CfgVehicles
     };
   };  
   // Red
-  class HammerHeadFish_Red_Small: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Red_Small: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
@@ -1732,7 +1732,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_red_co.paa"
     };
   };
-  class HammerHeadFish_Red_Medium: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Red_Medium: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_m.p3d";
@@ -1747,7 +1747,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_red_co.paa"
     };
   };
-  class HammerHeadFish_Red_Large: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Red_Large: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_l.p3d";
@@ -1761,7 +1761,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_red_co.paa"
     };
   };
-  class HammerHeadFish_Red_Epic: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Red_Epic: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_xl.p3d";
@@ -1776,7 +1776,7 @@ class CfgVehicles
     };
   };
   // Silver
-  class HammerHeadFish_Silver_Small: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Silver_Small: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
@@ -1791,7 +1791,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_silver_co.paa"
     };
   };
-  class HammerHeadFish_Silver_Medium: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Silver_Medium: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_m.p3d";
@@ -1806,7 +1806,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_silver_co.paa"
     };
   };
-  class HammerHeadFish_Silver_Large: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Silver_Large: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_l.p3d";
@@ -1820,7 +1820,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_silver_co.paa"
     };
   };
-  class HammerHeadFish_Silver_Epic: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Silver_Epic: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_xl.p3d";
@@ -1835,7 +1835,7 @@ class CfgVehicles
     };
   };
   // Yellow
-  class HammerHeadFish_Yellow_Small: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Yellow_Small: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark.p3d";
@@ -1850,7 +1850,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_yellow_co.paa"
     };
   };
-  class HammerHeadFish_Yellow_Medium: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Yellow_Medium: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_m.p3d";
@@ -1865,7 +1865,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_yellow_co.paa"
     };
   };
-  class HammerHeadFish_Yellow_Large: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Yellow_Large: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_l.p3d";
@@ -1879,7 +1879,7 @@ class CfgVehicles
       "Survivalists_Fishing\fish\saltwater\data\hammerheadshark_yellow_co.paa"
     };
   };
-  class HammerHeadFish_Yellow_Epic: HammerHeadFish_ColorBase
+  class SRP_HammerHeadFish_Yellow_Epic: SRP_HammerHeadFish_ColorBase
   {
     scope=2;
     model="Survivalists_Fishing\fish\saltwater\hammerheadshark_xl.p3d";
