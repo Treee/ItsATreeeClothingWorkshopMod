@@ -35,6 +35,12 @@ class CfgVehicles
   class SRP_Comtacs_ColorBase;
   class SRP_SlimHelmetFull;
   class SRP_Cowboy_Hat_Carl;
+  class SRP_CombatHelmet;
+  class SRP_CombatHelmetV2;
+  class SRP_CombatHelmet6B47;
+  class SRP_CombatHelmetHighCut;
+  class SRP_CombatHelmetAltyn;
+  class SRP_AltynHelmetVisor;
 
 	class SRP_PoliceCap: BaseballCap_ColorBase
 	{
@@ -1356,4 +1362,114 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\Cowboy_Carl_Brown_CO.paa"
 		};
 	};
+
+  class SRP_CombatHelmet_Black: SRP_CombatHelmet
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmet_black_co.paa"
+		};
+  };
+  class SRP_CombatHelmet_Tan: SRP_CombatHelmet
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmet_tan_co.paa"
+		};
+  };
+  class SRP_CombatHelmetV2_Black: SRP_CombatHelmetV2
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_black_co.paa"
+		};
+  };
+  class SRP_CombatHelmetV2_Tan: SRP_CombatHelmetV2
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_tan_co.paa"
+		};
+  };
+  class SRP_CombatHelmet6B47_Black: SRP_CombatHelmet6B47
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmet6b47_black_co.paa"
+		};
+  };
+  class SRP_CombatHelmet6B47_Tan: SRP_CombatHelmet6B47
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmet6b47_tan_co.paa"
+		};
+  };
+  class SRP_CombatHelmetHighCut_Black: SRP_CombatHelmetHighCut
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_black_co.paa"
+		};
+  };
+  class SRP_CombatHelmetHighCut_Tan: SRP_CombatHelmetHighCut
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_tan_co.paa"
+		};
+  };
+  class SRP_CombatHelmetAltyn_Black: SRP_CombatHelmetAltyn
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmetaltyn_black_co.paa"
+		};
+  };
+  class SRP_AltynHelmetVisor_Black: SRP_AltynHelmetVisor
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmetaltyn_black_co.paa"
+		};
+  };
+  class SRP_CombatHelmetAltyn_Tan: SRP_CombatHelmetAltyn
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmetaltyn_tan_co.paa"
+		};
+  };
+  class SRP_AltynHelmetVisor_Tan: SRP_AltynHelmetVisor
+  {
+    scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_combathelmetaltyn_tan_co.paa"
+		};
+  };
+
 };

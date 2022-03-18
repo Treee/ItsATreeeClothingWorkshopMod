@@ -1145,7 +1145,8 @@ class CfgVehicles
 		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
-			"Headgear"
+			"Headgear",
+      "Eyewear"
 		};
 		simulation="clothing";
 		vehicleClass="Clothing";
