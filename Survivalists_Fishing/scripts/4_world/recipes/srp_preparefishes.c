@@ -2,7 +2,7 @@ class PrepareCoralFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "SaltWaterFishFilletMeat_CoralFish";
+    m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_CoralFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -69,7 +69,7 @@ class PrepareAngelFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "SaltWaterFishFilletMeat_AngelFish";
+    m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_AngelFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -136,7 +136,7 @@ class PrepareSailFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "SaltWaterFishFilletMeat_SailFish";
+    m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_SailFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -203,7 +203,7 @@ class PrepareAnglerFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "SaltWaterFishFilletMeat_AnglerFish";
+    m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_AnglerFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -270,7 +270,7 @@ class PrepareHammerHeadFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "SaltWaterFishFilletMeat_HammerHeadFish";
+    m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_HammerHeadFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -337,7 +337,7 @@ class PrepareTroutFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "FreshWaterFishFilletMeat_Trout";
+    m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_Trout";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -404,7 +404,7 @@ class PrepareMutantFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "FreshWaterFishFilletMeat_MutantFish";
+    m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_MutantFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -471,7 +471,7 @@ class PrepareSplakeFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "FreshWaterFishFilletMeat_Splake";
+    m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_Splake";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -538,7 +538,7 @@ class PreparePerchFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "FreshWaterFishFilletMeat_Perch";
+    m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_Perch";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units
@@ -605,7 +605,7 @@ class PrepareTilapiaFish extends PrepareFish
 {	
   override void Init()
 	{
-    m_FishFilletClassName = "FreshWaterFishFilletMeat_Tilapia";
+    m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_Tilapia";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 6;//animation length in relative time units

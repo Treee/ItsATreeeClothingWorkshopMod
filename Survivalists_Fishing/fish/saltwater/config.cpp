@@ -466,7 +466,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_CoralFish: SRP_SaltWaterFishFilletMeat_Base
+  class SRP_SaltWaterFishFilletMeat_CoralFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Coral Fish Fillet";
@@ -805,7 +805,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_AngelFish: SRP_SaltWaterFishFilletMeat_Base
+  class SRP_SaltWaterFishFilletMeat_AngelFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Angel Fish Fillet";
@@ -1090,7 +1090,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_SailFish: SRP_SaltWaterFishFilletMeat_Base
+  class SRP_SaltWaterFishFilletMeat_SailFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="SailFish Fillet";
@@ -1426,7 +1426,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_AnglerFish: SRP_SaltWaterFishFilletMeat_Base
+  class SRP_SaltWaterFishFilletMeat_AnglerFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Angler Fish Fillet";
@@ -1650,7 +1650,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_HammerHeadFish: SRP_SaltWaterFishFilletMeat_Base
+  class SRP_SaltWaterFishFilletMeat_HammerHeadFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Hammer Head Shark Fillet";

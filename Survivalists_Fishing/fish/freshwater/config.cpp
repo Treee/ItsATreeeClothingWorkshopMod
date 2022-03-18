@@ -467,7 +467,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_Trout: SRP_FreshWaterFishFilletMeat_Base
+  class SRP_FreshWaterFishFilletMeat_Trout: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Trout Fillet";
@@ -745,7 +745,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_MutantFish: SRP_FreshWaterFishFilletMeat_Base
+  class SRP_FreshWaterFishFilletMeat_MutantFish: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Mutant Fish Fillet";
@@ -1022,7 +1022,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_Splake: SRP_FreshWaterFishFilletMeat_Base
+  class SRP_FreshWaterFishFilletMeat_Splake: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Splake Fish Fillet";
@@ -1358,7 +1358,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_Perch: SRP_FreshWaterFishFilletMeat_Base
+  class SRP_FreshWaterFishFilletMeat_Perch: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Perch Fish Fillet";
@@ -1694,7 +1694,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_Tilapia: SRP_FreshWaterFishFilletMeat_Base
+  class SRP_FreshWaterFishFilletMeat_Tilapia: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Tilapia Fish Fillet";
