@@ -28,6 +28,22 @@ class CfgVehicles
 		physLayer="item_small";
 		weight=5000;
 		itemSize[]={6,5};
+    attachments[]=
+    {
+      "SRP_FishingLure1",
+      "SRP_FishingLure2",
+      "SRP_FishingLure3",
+      "SRP_FishingLure4",
+      "SRP_FishingLure5",
+      "SRP_FishingLure6",
+      "SRP_FishingLure7",
+      "SRP_FishingLure8",
+      "SRP_FishingLure9",
+      "SRP_FishingLure10",
+      "SRP_FishingLure11",
+      "SRP_FishingLure12",
+      "SRP_FishingLure13",
+    };
     hiddenSelections[]=
 		{
 			"zbytek"

@@ -99,7 +99,7 @@ class CfgVehicles
 	};
 
   //======================================================== CUSTOM FISH
-	class FreshWaterFish_Base: Edible_Base
+	class SRP_FreshWaterFish_Base: Edible_Base
 	{
     scope=0;
     displayName="Fresh Water Fish";
@@ -250,7 +250,7 @@ class CfgVehicles
 		};
 	};
 
-  class FreshWaterFishFilletMeat_Base: Edible_Base
+  class SRP_FreshWaterFishFilletMeat_Base: Edible_Base
 	{
 		scope=0;
 		displayName="Fresh Water Fish Fillet";
@@ -435,7 +435,7 @@ class CfgVehicles
 	};
 
   //======================================= Trout FISH
-  class TroutFish_ColorBase: FreshWaterFish_Base
+  class TroutFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Trout";
@@ -467,7 +467,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_Trout: FreshWaterFishFilletMeat_Base
+  class FreshWaterFishFilletMeat_Trout: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Trout Fillet";
@@ -712,7 +712,7 @@ class CfgVehicles
   };
 
   //======================================= Mutant FISH
-  class MutantFish_ColorBase: FreshWaterFish_Base
+  class MutantFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Mutant Fish";
@@ -745,7 +745,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_MutantFish: FreshWaterFishFilletMeat_Base
+  class FreshWaterFishFilletMeat_MutantFish: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Mutant Fish Fillet";
@@ -990,7 +990,7 @@ class CfgVehicles
   };
 
   //======================================= SPLAKE FISH
-  class SplakeFish_ColorBase: FreshWaterFish_Base
+  class SplakeFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Splake";
@@ -1022,7 +1022,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_Splake: FreshWaterFishFilletMeat_Base
+  class FreshWaterFishFilletMeat_Splake: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Splake Fish Fillet";
@@ -1326,7 +1326,7 @@ class CfgVehicles
   };
 
   //======================================= PERCH FISH
-  class PerchFish_ColorBase: FreshWaterFish_Base
+  class PerchFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Perch";
@@ -1358,7 +1358,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_Perch: FreshWaterFishFilletMeat_Base
+  class FreshWaterFishFilletMeat_Perch: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Perch Fish Fillet";
@@ -1662,7 +1662,7 @@ class CfgVehicles
   };
 
   //======================================= TILAPIA FISH
-  class TilapiaFish_ColorBase: FreshWaterFish_Base
+  class TilapiaFish_ColorBase: SRP_FreshWaterFish_Base
   {
     scope=0;
     displayName="Tilapia";
@@ -1694,7 +1694,7 @@ class CfgVehicles
 		};
   };
 
-  class FreshWaterFishFilletMeat_Tilapia: FreshWaterFishFilletMeat_Base
+  class FreshWaterFishFilletMeat_Tilapia: SRP_FreshWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Tilapia Fish Fillet";

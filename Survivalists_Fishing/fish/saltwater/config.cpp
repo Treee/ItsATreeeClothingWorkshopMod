@@ -98,7 +98,7 @@ class CfgVehicles
 	};
 
   //======================================================== CUSTOM FISH
-	class SaltWaterFish_Base: Edible_Base
+	class SRP_SaltWaterFish_Base: Edible_Base
 	{
     scope=0;
     displayName="Salt Water Fish";
@@ -249,7 +249,7 @@ class CfgVehicles
 		};
 	};
 
-  class SaltWaterFishFilletMeat_Base: Edible_Base
+  class SRP_SaltWaterFishFilletMeat_Base: Edible_Base
 	{
 		scope=0;
 		displayName="Salt Water Fish Fillet";
@@ -434,7 +434,7 @@ class CfgVehicles
 	};
 
   //======================================= CORAL FISH
-  class CoralFish_ColorBase: SaltWaterFish_Base
+  class CoralFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="Coral Fish";
@@ -466,7 +466,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_CoralFish: SaltWaterFishFilletMeat_Base
+  class SaltWaterFishFilletMeat_CoralFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Coral Fish Fillet";
@@ -774,7 +774,7 @@ class CfgVehicles
 
 
   //======================================= ANGEL FISH
-  class AngelFish_ColorBase: SaltWaterFish_Base
+  class AngelFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="Angel Fish";
@@ -805,7 +805,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_AngelFish: SaltWaterFishFilletMeat_Base
+  class SaltWaterFishFilletMeat_AngelFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Angel Fish Fillet";
@@ -1053,7 +1053,7 @@ class CfgVehicles
   };
 
   //======================================= SAILFISH
-  class SailFish_ColorBase: SaltWaterFish_Base
+  class SailFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="SailFish";
@@ -1090,7 +1090,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_SailFish: SaltWaterFishFilletMeat_Base
+  class SaltWaterFishFilletMeat_SailFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="SailFish Fillet";
@@ -1395,7 +1395,7 @@ class CfgVehicles
   };
 
   //======================================= ANGLER FISH
-  class AnglerFish_ColorBase: SaltWaterFish_Base
+  class AnglerFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="Angler Fish";
@@ -1426,7 +1426,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_AnglerFish: SaltWaterFishFilletMeat_Base
+  class SaltWaterFishFilletMeat_AnglerFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Angler Fish Fillet";
@@ -1612,7 +1612,7 @@ class CfgVehicles
   };
 
   //======================================= HAMMERHEAD SHARK
-  class HammerHeadFish_ColorBase: SaltWaterFish_Base
+  class HammerHeadFish_ColorBase: SRP_SaltWaterFish_Base
   {
     scope=0;
     displayName="Hammer Head Shark";
@@ -1650,7 +1650,7 @@ class CfgVehicles
 		};
   };
 
-  class SaltWaterFishFilletMeat_HammerHeadFish: SaltWaterFishFilletMeat_Base
+  class SaltWaterFishFilletMeat_HammerHeadFish: SRP_SaltWaterFishFilletMeat_Base
   {
     scope=2;
 		displayName="Hammer Head Shark Fillet";

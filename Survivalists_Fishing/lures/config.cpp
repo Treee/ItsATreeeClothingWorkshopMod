@@ -38,13 +38,26 @@ class CfgVehicles
 		displayName="Fishing Lure";
 		descriptionShort="A fishing lure. Used to entice fish to your bait.";
 		model="Survivalists_Fishing\lures\fishinglure1.p3d";
-		rotationFlags=16;
+		rotationFlags=64;
 		weight=1;
 		absorbency=0.80000001;
 		itemSize[]={1,2};
 		inventorySlot[]=
 		{
-			"SRP_FishingLure"
+			"SRP_FishingLure", // fishing rod slot
+      "SRP_FishingLure1", // rest are tackle box proxy
+      "SRP_FishingLure2",
+      "SRP_FishingLure3",
+      "SRP_FishingLure4",
+      "SRP_FishingLure5",
+      "SRP_FishingLure6",
+      "SRP_FishingLure7",
+      "SRP_FishingLure8",
+      "SRP_FishingLure9",
+      "SRP_FishingLure10",
+      "SRP_FishingLure11",
+      "SRP_FishingLure12",
+      "SRP_FishingLure13",
 		};
     hiddenSelections[]=
 		{

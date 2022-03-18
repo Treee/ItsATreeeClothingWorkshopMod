@@ -27,17 +27,17 @@ class SRP_Tacklebox extends Barrel_ColorBase
 		}
 	}
 
-  bool CanReceiveItemIntoCargo(EntityAI item)
+  override bool CanReceiveItemIntoCargo(EntityAI item)
 	{
     if (item.IsKindOf("FishingLure_ColorBase"))
     {
       return true;
     }
-    if (item.IsKindOf("Mackerel") || item.IsKindOf("Sardines") || item.IsKindOf("SaltWaterFish_Base") || item.IsKindOf("SaltWaterFishFilletMeat_Base"))
+    if (item.IsKindOf("Mackerel") || item.IsKindOf("Sardines") || item.IsKindOf("SRP_SaltWaterFish_Base") || item.IsKindOf("SRP_SaltWaterFishFilletMeat_Base"))
     {
       return true;
     }
-    if (item.IsKindOf("Bitterlings") || item.IsKindOf("Carp") || item.IsKindOf("FreshWaterFish_Base") || item.IsKindOf("FreshWaterFishFilletMeat_Base"))
+    if (item.IsKindOf("Bitterlings") || item.IsKindOf("Carp") || item.IsKindOf("SRP_FreshWaterFish_Base") || item.IsKindOf("SRP_FreshWaterFishFilletMeat_Base"))
     {
       return true;
     }
@@ -54,11 +54,11 @@ class SRP_Tacklebox extends Barrel_ColorBase
     {
       return true;
     }
-    if (item.IsKindOf("Mackerel") || item.IsKindOf("Sardines") || item.IsKindOf("SaltWaterFish_Base") || item.IsKindOf("SaltWaterFishFilletMeat_Base"))
+    if (item.IsKindOf("Mackerel") || item.IsKindOf("Sardines") || item.IsKindOf("SRP_SaltWaterFish_Base") || item.IsKindOf("SRP_SaltWaterFishFilletMeat_Base"))
     {
       return true;
     }
-    if (item.IsKindOf("Bitterlings") || item.IsKindOf("Carp") || item.IsKindOf("FreshWaterFish_Base") || item.IsKindOf("FreshWaterFishFilletMeat_Base"))
+    if (item.IsKindOf("Bitterlings") || item.IsKindOf("Carp") || item.IsKindOf("SRP_FreshWaterFish_Base") || item.IsKindOf("SRP_FreshWaterFishFilletMeat_Base"))
     {
       return true;
     }

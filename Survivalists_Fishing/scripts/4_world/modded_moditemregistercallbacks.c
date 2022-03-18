@@ -7,12 +7,12 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Clam_Opened", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/tuna.anm");
     pType.AddItemInHandsProfileIK("SRP_Pearl", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/carp_live.anm");	
     
-    pType.AddItemInHandsProfileIK("SaltWaterFish_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/carp_live.anm");	
-    pType.AddItemInHandsProfileIK("SaltWaterFishFilletMeat_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/mackerel_fillet.anm"); 
-    pType.AddItemInHandsProfileIK("FreshWaterFish_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/carp_live.anm");	
-    pType.AddItemInHandsProfileIK("FreshWaterFishFilletMeat_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/mackerel_fillet.anm"); 
-    pType.AddItemInHandsProfileIK("FishingLure_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/bait_worm.anm");
-    pType.AddItemInHandsProfileIK("HandMadeFishingRod", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/ImprovisedFishingRod.anm");
+    pType.AddItemInHandsProfileIK("SRP_SaltWaterFish_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/carp_live.anm");	
+    pType.AddItemInHandsProfileIK("SRP_SaltWaterFishFilletMeat_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/mackerel_fillet.anm"); 
+    pType.AddItemInHandsProfileIK("SRP_FreshWaterFish_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/carp_live.anm");	
+    pType.AddItemInHandsProfileIK("SRP_FreshWaterFishFilletMeat_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/mackerel_fillet.anm"); 
+    pType.AddItemInHandsProfileIK("SRP_FishingLure_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/bait_worm.anm");
+    pType.AddItemInHandsProfileIK("SRP_HandMadeFishingRod", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/ImprovisedFishingRod.anm");
   };
 
   // override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
