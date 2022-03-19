@@ -11,6 +11,7 @@
 **/*.p3d
 **/*.tga
 *.obf
+*.rar
 
 
 /temp/
