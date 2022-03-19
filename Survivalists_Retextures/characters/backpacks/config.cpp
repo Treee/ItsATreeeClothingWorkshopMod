@@ -1280,6 +1280,20 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Teal_co.paa"
 		};
 	};
+  class DUB_Monsterv2_Professor: DUB_Monsterv2
+	{
+		scope=2;
+		displayName="Professor";
+		descriptionShort="A unique mutant";
+		hiddenSelections[]=
+		{
+			"Glow"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Professor_co.paa"
+		};
+	};
 
 	class SRP_MessengerBag_Tan: SRP_MessengerBag_Leather
 	{	

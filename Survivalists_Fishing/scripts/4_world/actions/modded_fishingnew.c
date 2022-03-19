@@ -30,7 +30,6 @@ modded class CCTWaterSurface
 	}
 };
 
-
 modded class FishingActionData
 {
 	const float FISHING_SUCCESS 		= 0.2;
