@@ -179,6 +179,9 @@ class CfgVehicles
       "SRP_Fish_Small3",
       "SRP_Fish_Small4",
       "SRP_Fish_Small5",
+      "SRP_Fish_Small6",
+      "SRP_Fish_Small7",
+      "SRP_Fish_Small8",
 		};
 		hiddenSelections[]=
 		{

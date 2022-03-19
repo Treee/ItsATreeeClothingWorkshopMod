@@ -163,6 +163,23 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_WoodenFishHangerIntermediate_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Wooden Fish Hanger Starter Kit";
+		descriptionShort="The beginnings of a large display for fish. Gather appropriate materials and apply force.";
+    attachments[]=
+    {
+			"Material_FPole_WoodenLog2",
+			"MetalWire",
+			"Material_MetalWire",
+			"Rope",
+			"Material_FPole_Rope",
+			"Material_Shelter_Rope",
+      "Material_FPole_Nails"
+    };
+	};
+
   class SRP_WoodenFishHanger_Kit: SRP_Fishing_KitBase
 	{
 		scope=2;
@@ -201,6 +218,67 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]=
 		{
 			"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"
+		};
+	};
+
+  class SRP_WoodenFishRackIntermediate_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Wooden Fish Rack Starter Kit";
+		descriptionShort="The beginnings of a rack display for fish. Gather appropriate materials and apply force.";
+    attachments[]=
+    {
+			"Material_L2_WoodenLogs",
+			"MetalWire",
+			"Material_MetalWire",
+			"Rope",
+			"Material_FPole_Rope",
+			"Material_Shelter_Rope",
+      "Material_FPole_Nails"
+    };
+	};
+
+  class SRP_WoodenFishRack_Kit: SRP_Fishing_KitBase
+	{
+		scope=2;
+		displayName="Wooden Fish Rack Kit";
+		descriptionShort="This kit contains the required materials to build a large fish rack.";
+	};
+
+  class SRP_WoodenFishRack: Container_Base
+	{
+		scope=2;
+		displayName="Wooden Fish Rack";
+		descriptionShort="A wooden rack to hang a several fish.";
+		model="Survivalists_Fishing\containers\woodenfishrack.p3d";    
+		itemBehaviour=0;
+    useEntityHierarchy="true";
+		physLayer="item_large";		
+		weight=5000;
+		itemSize[]={6,6};
+    itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "SRP_Fish_Small1",
+      "SRP_Fish_Small2",
+      "SRP_Fish_Small3",
+      "SRP_Fish_Small4",
+      "SRP_Fish_Small5",
+      "SRP_Fish_Small6",
+      "SRP_Fish_Small7",
+      "SRP_Fish_Small8",
+    };
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Fishing\containers\data\woodenfishrack_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"
 		};
 	};
 };

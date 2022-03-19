@@ -34,4 +34,6 @@
 
 - "Clam with pearl (Low poly)" (https://skfb.ly/6X9zz) by RasenDan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Tanning Rack" (https://skfb.ly/6WCyA) by Thunder is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+
 - "Icons Vectors by Vecteezy" (https://www.vecteezy.com/free-vector/icons)

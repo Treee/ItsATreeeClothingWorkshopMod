@@ -170,7 +170,16 @@ modded class DayZGame
 
         m_SRPFishingConfig.m_FishingHotspots = new ref array<ref SRPFishingHotspot>;
         m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("1000 0 1400", 1000));
-        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("5000 0 2400", 50));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("14297 3 6447", 250));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("13546 3 10194", 50));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("9857 0 7650", 110));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("10296 1 5629", 75));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("6935 3 1283", 110));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("6645 0 3477", 35));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("6072 6 4535", 35));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("5431 0 835", 50));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("4953 2 2140", 65));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("4085 2 4450", 50));
 
         m_SRPFishingConfig.m_FishingRodLuck = new ref array<ref SRPFishingRodLuck>;
         m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("ObsoleteFishingRod", 0.02));

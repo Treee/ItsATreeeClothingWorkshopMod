@@ -35,6 +35,7 @@ class SRP_Fishing_Deconstruct_PlacedObjectKit extends RecipeBase
 		//INGREDIENTS
 		//ingredient 2 
     InsertIngredient(1,"SRP_WoodenFishHanger");	
+    InsertIngredient(1,"SRP_WoodenFishRack");	
     InsertIngredient(1,"SRP_Aquarium");	
 		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing

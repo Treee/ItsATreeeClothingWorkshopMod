@@ -65,16 +65,21 @@ class SRP_Fishing_Intermediate_KitBase extends ItemBase
     }
     return false;
   }
+  bool CanCraft()
+  {
+    return false;
+  }
 };
 
 //===============KITBASE
+class SRP_WoodenFishRack_Kit extends SRP_KitBase{};
 class SRP_WoodenFishHanger_Kit extends SRP_KitBase{};
 class SRP_Aquarium_Kit extends SRP_KitBase{};
 
 //==================INTERMEDIATE KITBASE
 class SRP_AquariumIntermediate_Kit extends SRP_Fishing_Intermediate_KitBase
 {
-  bool CanCraft()
+  override bool CanCraft()
   {
     bool isValid = HasAttachmentFilled("SRP_Aquarium_Top");
     isValid &= HasAttachmentFilled("SRP_Aquarium_Bot");
@@ -92,9 +97,40 @@ class SRP_AquariumIntermediate_Glass extends SRP_Fishing_Intermediate_KitBase{};
 class SRP_FishingLureMetal_Kit extends SRP_Fishing_Intermediate_KitBase{};
 class SRP_FishingLureWood_Kit extends SRP_Fishing_Intermediate_KitBase{};
 
+class SRP_WoodenFishHangerIntermediate_Kit extends SRP_Fishing_Intermediate_KitBase
+{
+  override bool CanCraft()
+  {
+    bool isValid = HasAttachmentFilledWithQuantity("Material_FPole_WoodenLog2",6);    
+    isValid &= HasAttachmentFilled("MetalWire");
+    isValid &= HasAttachmentFilled("Material_MetalWire");
+    isValid &= HasAttachmentFilled("Rope");
+    isValid &= HasAttachmentFilled("Material_FPole_Rope");
+    isValid &= HasAttachmentFilled("Material_Shelter_Rope");
+    isValid &= HasAttachmentFilledWithQuantity("Material_FPole_Nails",60);
+    return isValid;
+  } 
+};
+
+class SRP_WoodenFishRackIntermediate_Kit extends SRP_Fishing_Intermediate_KitBase
+{
+  override bool CanCraft()
+  {
+    bool isValid = HasAttachmentFilledWithQuantity("Material_L2_WoodenLogs",4);    
+    isValid &= HasAttachmentFilled("MetalWire");
+    isValid &= HasAttachmentFilled("Material_MetalWire");
+    isValid &= HasAttachmentFilled("Rope");
+    isValid &= HasAttachmentFilled("Material_FPole_Rope");
+    isValid &= HasAttachmentFilled("Material_Shelter_Rope");
+    isValid &= HasAttachmentFilledWithQuantity("Material_FPole_Nails",60);
+    return isValid;
+  } 
+};
+
+
 class SRP_FishingWoodRod_Kit extends SRP_Fishing_Intermediate_KitBase
 {
-  bool CanCraft()
+  override bool CanCraft()
   {
     bool isValid = HasAttachmentFilledWithQuantity("Material_Shelter_FrameSticks",4);
     isValid &= HasAttachmentFilledWithQuantity("WoodenStick",10);

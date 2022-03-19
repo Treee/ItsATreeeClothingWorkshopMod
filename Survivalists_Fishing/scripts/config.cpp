@@ -58,6 +58,24 @@ class CfgSlots
 		displayName="Fish";
 		ghostIcon="set:dayz_inventory image:food";
 	};
+  class Slot_SRP_Fish_Small6
+	{
+		name="SRP_Fish_Small6";
+		displayName="Fish";
+		ghostIcon="set:dayz_inventory image:food";
+	};
+  class Slot_SRP_Fish_Small7
+	{
+		name="SRP_Fish_Small7";
+		displayName="Fish";
+		ghostIcon="set:dayz_inventory image:food";
+	};
+  class Slot_SRP_Fish_Small8
+	{
+		name="SRP_Fish_Small8";
+		displayName="Fish";
+		ghostIcon="set:dayz_inventory image:food";
+	};
   class Slot_SRP_Fish_Large1
 	{
 		name="SRP_Fish_Large1";
@@ -231,6 +249,24 @@ class CfgNonAIVehicles
 		scope=2;
 		inventorySlot[]={"SRP_Fish_Small5"};
 		model="Survivalists_Fishing\proxy\srp_fish5_proxy.p3d";
+	};
+  class Proxysrp_fish6_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Fish_Small6"};
+		model="Survivalists_Fishing\proxy\srp_fish6_proxy.p3d";
+	};
+  class Proxysrp_fish7_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Fish_Small7"};
+		model="Survivalists_Fishing\proxy\srp_fish7_proxy.p3d";
+	};
+  class Proxysrp_fish8_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Fish_Small8"};
+		model="Survivalists_Fishing\proxy\srp_fish8_proxy.p3d";
 	};
 
   class Proxysrp_fish1_large_proxy: ProxyAttachment

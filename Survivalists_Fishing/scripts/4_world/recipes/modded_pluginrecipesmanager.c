@@ -9,7 +9,10 @@ modded class PluginRecipesManager
     //---------Deconstruct Items into Kits
     RegisterRecipe(new SRP_Fishing_Deconstruct_PlacedObjectKit);
     //---------Crafting Kits
+    RegisterRecipe(new SRP_Fishing_Construct_FishDisplayStarterKit);
     RegisterRecipe(new SRP_Fishing_Construct_FishDisplay);
+    RegisterRecipe(new SRP_Fishing_Construct_FishRackStarterKit);
+    RegisterRecipe(new SRP_Fishing_Construct_FishRack);
     RegisterRecipe(new SRP_Fishing_Construct_AquariumStarterKit);    
     RegisterRecipe(new SRP_Fishing_Construct_AquariumStarterKit_Top);    
     RegisterRecipe(new SRP_Fishing_Construct_AquariumStarterKit_Bot);    
