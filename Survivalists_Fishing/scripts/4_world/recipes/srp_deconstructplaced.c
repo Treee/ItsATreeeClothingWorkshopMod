@@ -61,7 +61,7 @@ class SRP_Fishing_Deconstruct_PlacedObjectKit extends RecipeBase
 	{
     if (ingredients[1])
     {
-      ItemBase item = ItemBase.Cast(ingredients[1])
+      ItemBase item = ItemBase.Cast(ingredients[1]);
       if (item)
       {
         return item.GetInventory().AttachmentCount() == 0 && item.GetNumberOfItems() == 0;
