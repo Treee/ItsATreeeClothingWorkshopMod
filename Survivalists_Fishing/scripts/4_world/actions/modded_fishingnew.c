@@ -48,7 +48,7 @@ modded class ActionFishingNewCB
   override void CreateActionComponent()
 	{
 		EnableStateChangeCallback();
-		m_ActionData.m_ActionComponent = new CAContinuousRepeatFishing(1.0);
+		m_ActionData.m_ActionComponent = new CAContinuousRepeatFishing(6.0);
 	}
 
 	override void HandleFishingResultSuccess()
