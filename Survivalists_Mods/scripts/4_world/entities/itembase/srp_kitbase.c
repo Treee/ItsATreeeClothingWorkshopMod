@@ -138,6 +138,10 @@ class SRP_SpikeBarricade_Wood_Kit extends SRP_KitBase{};
 
 
 // non craftable kits
+class SRP_PostBox_Kit extends SRP_KitBase{};
+class SRP_PostBoxBlue_Kit extends SRP_KitBase{};
+class SRP_PostBoxWooden_Kit extends SRP_KitBase{};
+
 class SRP_Fridge_Kit extends SRP_KitBase{};
 class SRP_FridgeLarge_Kit extends SRP_KitBase{};
 class SRP_FridgeRetro_Kit extends SRP_KitBase{};

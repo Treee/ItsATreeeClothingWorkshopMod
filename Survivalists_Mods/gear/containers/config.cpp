@@ -946,6 +946,12 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_PostBox_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Post Box Kit";
+		descriptionShort="A Post Box Kit";
+	};
   class SRP_PostBox: Container_Base // BP_post_box
 	{
 		scope=2;
@@ -996,6 +1002,13 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_PostBoxBlue_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Blue Post Box Kit";
+		descriptionShort="A Blue Post Box Kit";
+	};
   class SRP_PostBoxBlue: Container_Base // BP_post_box
 	{
 		scope=2;
@@ -1045,6 +1058,13 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+
+  class SRP_PostBoxWooden_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Post Box Kit";
+		descriptionShort="A Wooden Post Box Kit";
 	};
   class SRP_PostBoxWooden: Container_Base // new
 	{

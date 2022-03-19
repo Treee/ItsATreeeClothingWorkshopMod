@@ -75,7 +75,11 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_LockerQuad_Colorbase");
     InsertIngredient(0,"SRP_LockerMilitary_Colorbase");
 
-    InsertIngredient(0,"SRP_FridgeMinsk_Kit");
+    InsertIngredient(0,"SRP_FridgeMinsk");
+
+    InsertIngredient(0,"SRP_PostBox");
+    InsertIngredient(0,"SRP_PostBoxBlue");
+    InsertIngredient(0,"SRP_PostBoxWooden");
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
