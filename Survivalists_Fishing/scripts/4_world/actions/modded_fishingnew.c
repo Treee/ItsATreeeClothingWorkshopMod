@@ -123,8 +123,9 @@ modded class ActionFishingNewCB
         if (junk_type != "")
         {
           // Print("Junk Type: " + junk_type);
-          fish = ItemBase.Cast(GetGame().CreateObjectEx(junk_type,m_ActionDataFishing.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
-          fish.SetHealth("","Health",fish.GetMaxHealth("","Health") * 0.05);
+          EntityAI junkItem = EntityAI.Cast(GetGame().CreateObjectEx(junk_type,m_ActionDataFishing.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+          // fish = ItemBase.Cast(GetGame().CreateObjectEx(junk_type,m_ActionDataFishing.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+          junkItem.AddHealth(-100000);
         }
 			}
 			

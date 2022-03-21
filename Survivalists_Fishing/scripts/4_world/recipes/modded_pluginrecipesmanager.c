@@ -18,6 +18,11 @@ modded class PluginRecipesManager
     RegisterRecipe(new SRP_Fishing_Construct_AquariumStarterKit_Bot);    
     RegisterRecipe(new SRP_Fishing_Construct_AquariumStarterKit_Glass);    
     RegisterRecipe(new SRP_Fishing_Construct_AquariumKit); 
+    //=====CRAFTING BAIT
+    RegisterRecipe(new SRP_Fishing_Construct_ClamBait); 
+    RegisterRecipe(new SRP_Fishing_Construct_ClamBaitBone); 
+    RegisterRecipe(new SRP_Fishing_Construct_SmallFishBait); 
+    RegisterRecipe(new SRP_Fishing_Construct_SmallFishBaitBone);
     //=====CRAFTING LURES
     RegisterRecipe(new SRP_Fishing_Construct_FishLureMetalKit);
     RegisterRecipe(new SRP_Fishing_Construct_FishLureWoodKit);

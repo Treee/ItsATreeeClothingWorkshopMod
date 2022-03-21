@@ -3468,4 +3468,21 @@ class CfgVehicles
 			allowOwnedCargoManipulation=1;
 		};
   };
+
+  class SRP_HiddenStash_Guts: SRP_HiddenStash_Base
+  {
+    scope=2;
+		displayName="$STR_CfgVehicles_Guts0";
+		descriptionShort="$STR_CfgVehicles_Guts1";
+		model="\dz\gear\food\animal_guts.p3d";
+		weight=440;
+		itemSize[]={3,2};
+    allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={3,2};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+  };
 };

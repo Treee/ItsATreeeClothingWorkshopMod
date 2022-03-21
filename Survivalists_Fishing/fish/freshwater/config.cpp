@@ -60,7 +60,6 @@ class CfgVehicles
     stackedUnit="percentage";
 	};
 
-
   class Carp_Small: Carp
 	{
 		scope=2;

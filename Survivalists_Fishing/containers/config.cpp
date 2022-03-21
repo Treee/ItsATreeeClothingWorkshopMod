@@ -219,6 +219,24 @@ class CfgVehicles
 		{
 			"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
+						{0.69999999,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
+						{0.5,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
+						{0.30000001,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
+						{0,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}}
+					};
+				};
+			};
+		};
 	};
 
   class SRP_WoodenFishRackIntermediate_Kit: SRP_Fishing_KitBase
@@ -279,6 +297,24 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]=
 		{
 			"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
+						{0.69999999,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
+						{0.5,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
+						{0.30000001,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
+						{0,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}}
+					};
+				};
+			};
 		};
 	};
 };
