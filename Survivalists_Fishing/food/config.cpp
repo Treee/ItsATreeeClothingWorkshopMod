@@ -206,7 +206,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Clam";
-		descriptionShort="A closed clam. Pry it open with some type of tool.";
+		descriptionShort="A closed clam. Pry it open with your bare hands!";
 		model="Survivalists_Fishing\food\clam.p3d";
 		debug_ItemCategory=6;
 		itemSize[]={2,1};
@@ -355,7 +355,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Clam";
-		descriptionShort="A closed clam. Pry it open with some type of tool.";
+		descriptionShort="A closed clam. Pry it open with your bare hands!";
 		model="Survivalists_Fishing\food\clam.p3d";
 		debug_ItemCategory=6;
 		itemSize[]={2,1};
@@ -504,7 +504,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Clam";
-		descriptionShort="A closed clam. Pry it open with some type of tool.";
+		descriptionShort="A closed clam. Pry it open with your bare hands!";
 		model="Survivalists_Fishing\food\clam.p3d";
 		debug_ItemCategory=6;
 		itemSize[]={2,1};
@@ -653,7 +653,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Clam";
-		descriptionShort="A closed clam. Pry it open with some type of tool.";
+		descriptionShort="A closed clam. Pry it open with your bare hands!";
 		model="Survivalists_Fishing\food\clam.p3d";
 		debug_ItemCategory=6;
 		itemSize[]={2,1};
