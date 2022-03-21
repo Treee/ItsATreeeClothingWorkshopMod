@@ -3394,14 +3394,6 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=0;
 		rotationFlags=63;
-    hiddenSelections[]=
-		{
-			"camoGround"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"dz\gear\food\data\UnknownFoodCan_co.paa"
-		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -3458,9 +3450,18 @@ class CfgVehicles
     scope=2;
     displayName="$STR_UnknownFoodCan0";
 		descriptionShort="$STR_UnknownFoodCan1";
+    model="\dz\gear\food\food_can.p3d";
 		weight=440;
     itemSize[]={2,2};
     allowOwnedCargoManipulation=1;
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
 		class Cargo
 		{
 			itemsCargoSize[]={2,2};
