@@ -24,7 +24,11 @@ class SRP_HiddenStash_Base extends Inventory_Base
 		  
   override bool IsOpen()
 	{
-		return m_Openable.IsOpened();
+    if (m_Openable)
+    {
+		  return m_Openable.IsOpened();
+    }
+    return false;
 	}
   
   override string GetDisplayName()
