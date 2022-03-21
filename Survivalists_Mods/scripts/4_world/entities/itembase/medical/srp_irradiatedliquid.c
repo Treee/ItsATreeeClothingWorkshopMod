@@ -4,7 +4,7 @@ modded class SRP_LabTube_MutantLiquidSterilizedIrradiated
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 5 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
       if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
@@ -33,7 +33,7 @@ modded class DUB_Mutantsyringe_Pure
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 5 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
       if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
@@ -61,7 +61,7 @@ modded class DUB_Mutantsyringe_Pure_Accel
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 5 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
       if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
@@ -89,7 +89,7 @@ modded class DUB_Mutantsyringe_Admin2
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 5 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
       if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
@@ -117,7 +117,7 @@ modded class DUB_Mutantsyringe_Admin4
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 5 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
       if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
@@ -145,7 +145,7 @@ modded class DUB_Mutantsyringe_Pure_Sup
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 5 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
       if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
@@ -173,7 +173,7 @@ modded class DUB_Mutantsyringe_Crude
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 5 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
       if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {
@@ -201,7 +201,7 @@ modded class DUB_Mutantsyringe_Crude_Cure
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 6 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (player_PB.GetPlayerRadiationProtection() < 5 || !player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
       if( player_PB.GetModifiersManager().IsModifierActive(SRP_eModifiers.MDF_SRPBURNING) )//effectively resets the timer
       {

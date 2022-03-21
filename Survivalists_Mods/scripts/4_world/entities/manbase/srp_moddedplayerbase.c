@@ -152,41 +152,49 @@ modded class PlayerBase extends ManBase
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+      Print("Worn Item: " + wornItem + " Protection Total: " + protection);
     }
     wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.GLOVES));
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+      Print("Worn Item: " + wornItem + " Protection Total: " + protection);
     }
     wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.BODY));
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+      Print("Worn Item: " + wornItem + " Protection Total: " + protection);
     }
     wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.LEGS));
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+      Print("Worn Item: " + wornItem + " Protection Total: " + protection);
     }
     wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.FEET));
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+      Print("Worn Item: " + wornItem + " Protection Total: " + protection);
     }
     wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.MASK));
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL, true);
+      Print("Worn Item: " + wornItem + " Protection Total: " + protection);
     }
     wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.ARMBAND));
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+      Print("Worn Item: " + wornItem + " Protection Total: " + protection);
     }
     wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.BACK));
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+      Print("Worn Item: " + wornItem + " Protection Total: " + protection);
     }
     wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.HEAD));
     if (wornItem && (wornItem.GetType() == "DUB_Muthead_M" || wornItem.GetType() == "DUB_Muthead_F" || wornItem.GetType() == "DUB_Muthead_M_2" || wornItem.GetType() == "DUB_Muthead_F_2" || wornItem.GetType() == "DUB_Carlhead"))
