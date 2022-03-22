@@ -840,14 +840,14 @@ class CfgVehicles
 		itemSize[]={1,2};
 		weight=60;
     inventorySlot[]={};
-  }
+  };
 
   class SRP_DrugTestKit: BloodTestKit
   {
     scope=2;
     displayName="Drug Test Kit";    
 		descriptionShort="Tests for drugs in the system";
-  }
+  };
 
   //--------------------------------- CUSTOM SYRINE INJECTIONS
 	class SRP_FullSyringe_Base: ClearSyringe  // BP_BloodSyringe_Base
