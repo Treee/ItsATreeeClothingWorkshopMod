@@ -229,11 +229,11 @@ class CfgVehicles
 					hitpoints=50;
 					healthLevels[]=
 					{
-						{1,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
+						{1.0,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
 						{0.69999999,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
 						{0.5,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
 						{0.30000001,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}},
-						{0,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}}
+						{0.0,{"Survivalists_Fishing\containers\data\woodenfishhanger.rvmat"}}
 					};
 				};
 			};
@@ -308,11 +308,11 @@ class CfgVehicles
 					hitpoints=50;
 					healthLevels[]=
 					{
-						{1,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
+						{1.0,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
 						{0.69999999,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
 						{0.5,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
 						{0.30000001,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}},
-						{0,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}}
+						{0.0,{"Survivalists_Fishing\containers\data\woodenfishrack.rvmat"}}
 					};
 				};
 			};

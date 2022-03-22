@@ -21,7 +21,7 @@ class CfgVehicles
     scope=0;
     author="Base";
     title="Base";
-    file="path\to\file";
+		file="Survivalists_Books\gear\books\data\book_Hunting.html";
     displayName="Worn Book";
 		descriptionShort="A worn book.";
     rotationFlags=1;

@@ -22,7 +22,7 @@ class CfgVehicles
     model="Survivalists_Books\gear\scrolls\srp_scroll.p3d";
     author="Base";
     title="Base";
-    file="path\to\file";
+		file="Survivalists_Books\gear\scrolls\data\scroll_Care_Poem.html";
     displayName="Worn Scroll";
 		descriptionShort="A worn scroll.";
     itemSize[]={1,3};
@@ -97,7 +97,7 @@ class CfgVehicles
 		scope=2;
 		title="Care";
 		author="Unknown";
-		file="Survivalists_Books\gear\books\data\scroll_Care_Poem.html";
+		file="Survivalists_Books\gear\scrolls\data\scroll_Care_Poem.html";
 		displayName="Care";
 		descriptionShort="A rolled up piece of paper tied by some old rags";
 	};
@@ -107,7 +107,7 @@ class CfgVehicles
 		scope=2;
 		title="The Darkness Among Us";
 		author="Unknown";
-		file="Survivalists_Books\gear\books\data\scroll_Darkness_Among_Us_Poem.html";
+		file="Survivalists_Books\gear\scrolls\data\scroll_Darkness_Among_Us_Poem.html";
 		displayName="The Darkness Among Us";
 		descriptionShort="A rolled up piece of paper tied by some old rags";
 	};
@@ -117,7 +117,7 @@ class CfgVehicles
 		scope=2;
 		title="The Legend of Dollface";
 		author="Unknown";
-		file="Survivalists_Books\gear\books\data\scroll_Legend_Of_Dollface.html";
+		file="Survivalists_Books\gear\scrolls\data\scroll_Legend_Of_Dollface.html";
 		displayName="The Legend of Dollface";
 		descriptionShort="A rolled up piece of paper tied by some bloody old rags";
 	};
@@ -127,7 +127,7 @@ class CfgVehicles
 		scope=2;
 		title="Beginners Tips For Carpenters";
 		author="Toolman Ray";
-		file="Survivalists_Books\gear\books\data\scroll_crafting_carpentry.html";
+		file="Survivalists_Books\gear\scrolls\data\scroll_crafting_carpentry.html";
 		displayName="Beginners Tips For Carpenters";
 		descriptionShort="A rolled up piece of paper tied by some cheap twine";
 	};
@@ -137,7 +137,7 @@ class CfgVehicles
 		scope=2;
 		title="Beginners Tips For Farmers";
 		author="Farmer Bran";
-		file="Survivalists_Books\gear\books\data\scroll_crafting_farming.html";
+		file="Survivalists_Books\gear\scrolls\data\scroll_crafting_farming.html";
 		displayName="Beginners Tips For Farmers";
 		descriptionShort="A rolled up piece of paper tied by some long woven grass";
 	};
@@ -147,7 +147,7 @@ class CfgVehicles
 		scope=2;
 		title="Basic Survival Guide";
 		author="Boy Scout #51832";
-		file="Survivalists_Books\gear\books\data\scroll_crafting_generic.html";
+		file="Survivalists_Books\gear\scrolls\data\scroll_crafting_generic.html";
 		displayName="Basic Survival Guide";
 		descriptionShort="A rolled up piece of paper tied by some string";
 	};
@@ -157,7 +157,7 @@ class CfgVehicles
 		scope=2;
 		title="Tailoring For The Aspiring Tailor";
 		author="Taylor the Tailor";
-		file="Survivalists_Books\gear\books\data\scroll_crafting_tailoring.html";
+		file="Survivalists_Books\gear\scrolls\data\scroll_crafting_tailoring.html";
 		displayName="Tailoring For The Aspiring Tailor";
 		descriptionShort="A rolled up piece of paper tied by some elegant ribbon";
 	};
@@ -167,7 +167,7 @@ class CfgVehicles
 		scope=2;
 		title="Guns, Nuts and Trucks";
 		author="Beefy Armsman";
-		file="Survivalists_Books\gear\books\data\scroll_crafting_weapons.html";
+		file="Survivalists_Books\gear\scrolls\data\scroll_crafting_weapons.html";
 		displayName="Guns, Nuts and Trucks";
 		descriptionShort="A rolled up piece of paper held closed by grease";
 	};
