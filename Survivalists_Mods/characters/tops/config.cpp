@@ -25,9 +25,10 @@ class CfgVehicles
 		scope=2;
 		displayName="The Queen's Shawl";
 		descriptionShort="Ignore biohzard effects";
-    class Protection {
+    class Protection
+    {
       biological=6;
-    }
+    };
 	};
 
   //----------------------------------- BASE GAME OVERRIDE

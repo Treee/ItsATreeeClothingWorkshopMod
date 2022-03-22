@@ -32,7 +32,7 @@ class CfgVehicles
   class sleepingbag_colorbase_mung_Deployed: Inventory_Base
 	{
     itemsCargoSize[]={0,0};
-  }
+  };
 
   // ----------------------  BASE GAME OVERRIDES
   // the only change here is setting the build base action to use shovels
@@ -1870,7 +1870,7 @@ class CfgVehicles
 			"CardHand4",
 			"CardHand5",
 		};
-  }
+  };
 
   class SRP_PlayingCard_ColorBase: Inventory_Base  // new
 	{
