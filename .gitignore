@@ -12,6 +12,7 @@
 **/*.tga
 *.obf
 *.rar
+*.bin
 
 
 /temp/
