@@ -543,7 +543,7 @@ class CfgVehicles
 		displayName="Sheet Metal Scraps";
 		descriptionShort="Sheet Metal Scraps";
 		model="Survivalists_Mods\gear\consumables\craftingmaterials_sheetmetal.p3d";
-  }
+  };
   class SRP_CraftingMaterial_MetalScraps_Cut: SRP_CraftingMaterial_MetalScraps
   {
 		scope=2;
@@ -557,7 +557,7 @@ class CfgVehicles
     {
       "Survivalists_Mods\gear\consumables\data\craftingmaterials_metalcut_co.paa"
     };
-  }
+  };
   class SRP_CraftingMaterial_MetalRod: SRP_CraftingMaterial_Metal
   {
 		scope=2;
@@ -570,7 +570,7 @@ class CfgVehicles
 		varQuantityMax=1;
 		varQuantityDestroyOnMin=1;
 		varStackMax=1;
-  }
+  };
   class SRP_CraftingMaterial_StoneBrick: SRP_CraftingMaterial_Metal
   {
 		scope=2;
@@ -578,7 +578,7 @@ class CfgVehicles
 		descriptionShort="Stone Brick. Pretty heavy.";
 		model="Survivalists_Mods\gear\consumables\craftingmaterials_stonebrick.p3d";
     itemSize[]={2,3};
-  }
+  };
   class SRP_CraftingMaterial_MetalBeam: SRP_CraftingMaterial_Metal
   {
 		scope=2;
@@ -591,7 +591,7 @@ class CfgVehicles
 		varQuantityMax=1;
 		varQuantityDestroyOnMin=1;
 		varStackMax=1;
-  }
+  };
 
   class SRP_CraftingMaterial_BagBase: Inventory_Base
 	{

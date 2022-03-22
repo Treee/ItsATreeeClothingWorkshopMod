@@ -2474,7 +2474,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\containers\data\srp_binder_kuru_co.paa"
 		};
 
-  }
+  };
 
   class SRP_StonePile_Small_Kit: SRP_KitBase // new
 	{
