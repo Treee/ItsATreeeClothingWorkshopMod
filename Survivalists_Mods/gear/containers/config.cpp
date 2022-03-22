@@ -3444,7 +3444,6 @@ class CfgVehicles
 			};
 		};	
   };
-
   class SRP_HiddenStash_FoodCan: SRP_HiddenStash_Base
   {
     scope=2;
@@ -3469,7 +3468,6 @@ class CfgVehicles
 			allowOwnedCargoManipulation=1;
 		};
   };
-
   class SRP_HiddenStash_Guts: SRP_HiddenStash_Base
   {
     scope=2;

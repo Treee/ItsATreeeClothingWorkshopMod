@@ -14,6 +14,7 @@ class CfgPatches
 };
 class CfgVehicles
 {	
+  class Inventory_Base;
 	class Container_Base;
   class SRP_Fishing_KitBase;
 
@@ -317,4 +318,78 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_CanOfWorms: Inventory_Base
+	{
+		scope=2;
+		displayName="Can of Worms";
+		descriptionShort="A whole can of worms. Wriggly.";
+		model="\dz\gear\food\food_can.p3d";
+		weight=20;
+		absorbency=1;
+		itemSize[]={2,2};
+		canBeSplit=0;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    varQuantityDestroyOnMin=1;
+		rotationFlags=63;
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1.0,{"DZ\gear\food\data\food_can.rvmat"}},						
+						{0.69999999,{"DZ\gear\food\data\food_can.rvmat"}},						
+						{0.5,{"DZ\gear\food\data\food_can_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\food\data\food_can_damage.rvmat"}},						
+						{0.0,{"DZ\gear\food\data\food_can_destruct.rvmat"}}
+				  };
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};	
+  };
 };

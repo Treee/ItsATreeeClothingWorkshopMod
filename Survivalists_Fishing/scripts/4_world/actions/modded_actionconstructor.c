@@ -6,5 +6,6 @@ modded class ActionConstructor
     
     actions.Insert(ActionOpenClam);		
     actions.Insert(ActionDigClam);		
+    actions.Insert(ActionUnpackWorm);		
   }
 };

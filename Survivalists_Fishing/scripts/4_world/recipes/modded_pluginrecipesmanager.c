@@ -19,6 +19,8 @@ modded class PluginRecipesManager
     RegisterRecipe(new SRP_Fishing_Construct_AquariumStarterKit_Glass);    
     RegisterRecipe(new SRP_Fishing_Construct_AquariumKit); 
     //=====CRAFTING BAIT
+    RegisterRecipe(new SRP_Fishing_Construct_CanOfWorms); 
+    RegisterRecipe(new SRP_Fishing_Construct_CanOfWormsAdd); 
     RegisterRecipe(new SRP_Fishing_Construct_ClamBait); 
     RegisterRecipe(new SRP_Fishing_Construct_ClamBaitBone); 
     RegisterRecipe(new SRP_Fishing_Construct_SmallFishBait); 
