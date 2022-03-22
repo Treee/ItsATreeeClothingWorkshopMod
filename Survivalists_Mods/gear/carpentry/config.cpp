@@ -831,7 +831,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
     {
-			"dz\gear\consumables\data\oak_bark_co.rvmat"
+			"dz\gear\consumables\data\oak_bark.rvmat"
 		};		
 		class DamageSystem
 		{
@@ -842,11 +842,11 @@ class CfgVehicles
 					hitpoints=1000000;
 					healthLevels[]=
 					{
-						{1.0,{"dz\gear\consumables\data\oak_bark_co.rvmat"}},
-            {0.69999999,{"dz\gear\consumables\data\oak_bark_co.rvmat"}},
-            {0.5,{"dz\gear\consumables\data\oak_bark_co_damage.rvmat"}},
-            {0.30000001,{"dz\gear\consumables\data\oak_bark_co_damage.rvmat"}},
-            {0.0,{"dz\gear\consumables\data\oak_bark_co_destruct.rvmat"}}
+						{1.0,{"dz\gear\consumables\data\oak_bark.rvmat"}},
+            {0.69999999,{"dz\gear\consumables\data\oak_bark.rvmat"}},
+            {0.5,{"dz\gear\consumables\data\oak_bark_damage.rvmat"}},
+            {0.30000001,{"dz\gear\consumables\data\oak_bark_damage.rvmat"}},
+            {0.0,{"dz\gear\consumables\data\oak_bark_destruct.rvmat"}}
 					};
 				};
 			};
