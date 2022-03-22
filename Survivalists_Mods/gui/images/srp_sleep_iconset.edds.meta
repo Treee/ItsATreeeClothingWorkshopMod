@@ -4,7 +4,7 @@ MetaFileClass {
  ChangeDate -662377808
  Configurations {
   TGAResourceClass PC {
-   SourceFile "srp_sleep_iconset.tga"
+   SourceFile "srp_sleep_iconset.paa"
   }
   TGAResourceClass XBOX_ONE : PC {
   }

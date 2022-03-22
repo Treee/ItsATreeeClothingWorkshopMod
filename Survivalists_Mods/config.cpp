@@ -2,12 +2,12 @@ class CfgMods
 {
 	class Survivalists_Mods
 	{
-		type = "mod";
-		author = "ItsATreee | Sir Locksley | Orin | Alevaric | Mar | Turko";
-		name = "Survivalists_Mods";
-		dir = "Survivalists_Mods";
+		type="mod";
+		author="ItsATreee | Sir Locksley | Orin | Alevaric | Mar | Turko";
+		name="Survivalists_Mods";
+		dir="Survivalists_Mods";
     inputs="Survivalists_Mods/inputs.xml";
-		dependencies[] = {"Game","World","Mission"};
+		dependencies[]={"Game","World","Mission"};
 		class defs
 		{
       class imageSets
