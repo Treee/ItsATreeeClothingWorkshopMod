@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\characters\headgear\data\DeerMask_NOHQ.paa";
+	texture="Survivalists_Mods\characters\masks\data\DeerMask_NOHQ.paa";
 	uvSource="norm";
 	class uvTransform
 	{
