@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\gear\consumables\data\srp_longradio_nopox.paa";
+	texture="Survivalists_Mods\gear\radio\data\srp_longradio_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="Survivalists_Mods\gear\consumables\data\srp_radio.paa";
+	texture="Survivalists_Mods\gear\radio\data\srp_longradio_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{

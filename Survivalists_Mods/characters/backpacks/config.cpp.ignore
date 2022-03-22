@@ -23,18 +23,9 @@ class CfgVehicles
 	class MassNBC_Bag: Container_Base
 	{
 		scope=2;
-		displayName="NBC Bag";
-		descriptionShort="A yellow bag meant to contain the NBC set, Gas mask not included. 'Mass' Thanks to BaconAndDoritos for his quick maffs";
-		itemsize[]={6,6};
 		itemsCargoSize[]={9,6}; // increase to account for gas mask
-		Model="MassTextures\bag\medbag\cannister.p3d";
-		inventorySlot[]=
-		{
-			"NBC"
-		};
-		weight=75;
-		allowOwnedCargoManipulation=1;
 	};
+
   class HuntingBag: Clothing
 	{
 		itemsCargoSize[]={10,7};
