@@ -1389,21 +1389,21 @@ class CfgSlots
 		displayName="Forge Starter Kit";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=10;
-  }
+  };
 
   class Slot_SRP_Pestle
   {
 		name="SRP_Pestle";
 		displayName="Pestle";
 		ghostIcon="set:dayz_inventory image:missing";
-  }
+  };
   class Slot_SRP_Flower1
   {
 		name="SRP_Flower1";
 		displayName="Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=10;
-  }
+  };
 
   class Slot_SRP_CrushedPowder1
   {
@@ -1411,72 +1411,72 @@ class CfgSlots
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=200;
-  }
+  };
   class Slot_SRP_CrushedPowder2
   {
 		name="SRP_CrushedPowder2";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=200;
-  }
+  };
   class Slot_SRP_CrushedPowder3
   {
 		name="SRP_CrushedPowder3";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=200;
-  }
+  };
   class Slot_SRP_CrushedPowder4
   {
 		name="SRP_CrushedPowder4";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=200;
-  }
+  };
   class Slot_SRP_CrushedPowder5
   {
 		name="SRP_CrushedPowder5";
 		displayName="Crushed Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=200;
-  }
+  };
 
   class Slot_SRP_SkeletonSkull
   {
 		name="SRP_SkeletonSkull";
 		displayName="Skeleton Skull";
 		ghostIcon="set:dayz_inventory image:missing";
-  }
+  };
   class Slot_SRP_SkeletonArmLeft
   {
 		name="SRP_SkeletonArmLeft";
 		displayName="Skeleton Left Arm";
 		ghostIcon="set:dayz_inventory image:missing";
-  }
+  };
   class Slot_SRP_SkeletonArmRight
   {
 		name="SRP_SkeletonArmRight";
 		displayName="Skeleton Right Arm";
 		ghostIcon="set:dayz_inventory image:missing";
-  }
+  };
   class Slot_SRP_SkeletonPelvis
   {
 		name="SRP_SkeletonPelvis";
 		displayName="Skeleton Pelvis";
 		ghostIcon="set:dayz_inventory image:missing";
-  }
+  };
   class Slot_SRP_SkeletonLegLeft
   {
 		name="SRP_SkeletonLegLeft";
 		displayName="Skeleton Left Leg";
 		ghostIcon="set:dayz_inventory image:missing";
-  }
+  };
   class Slot_SRP_SkeletonLegRight
   {
 		name="SRP_SkeletonLegRight";
 		displayName="Skeleton Right Leg";
 		ghostIcon="set:dayz_inventory image:missing";
-  }
+  };
 };
 
 class CfgNonAIVehicles
@@ -1957,124 +1957,4 @@ class CfgNonAIVehicles
   // THIS WORKS BY SETTING THE PATH OF A PROXY TO SOMETHING
   // NONEXISTENT SO WHEN THE GAME TRIES TO RENDER, THERE IS NOTHING
 
-	class Proxyshoulder1: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder1"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder1.p3d";
-	};
-	class Proxyshoulder2: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder2"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder2.p3d";
-	};
-	class Proxyshoulder3: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder3"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder3.p3d";
-	};
-	class Proxyshoulder4: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder4"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder4.p3d";
-	};
-	class Proxyshoulder5: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder5"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder5.p3d";
-	};
-	class Proxyshoulder6: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder6"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder6.p3d";
-	};
-	class Proxyshoulder7: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder7"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder7.p3d";
-	};
-	class Proxyshoulder8: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder8"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder8.p3d";
-	};
-	class Proxyshoulder9: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder9"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder9.p3d";
-	};
-	class Proxyshoulder10: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder10"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder10.p3d";
-	};
-	class Proxyshoulder11: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder11"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder11.p3d";
-	};
-	class Proxyshoulder12: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder12"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder12.p3d";
-	};
-	class Proxyshoulder13: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder13"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder13.p3d";
-	};
-	class Proxyshoulder14: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder14"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder14.p3d";
-	};
-	class Proxyshoulder15: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder15"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder15.p3d";
-	};
-	class Proxyshoulder16: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder16"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder16.p3d";
-	};
-	class Proxyshoulder17: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder17"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder17.p3d";
-	};
-	class Proxyshoulder18: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder18"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder18.p3d";
-	};
-	class Proxyshoulder19: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder19"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder19.p3d";
-	};
-	class Proxyshoulder20: ProxyAttachment
-	{
-		scope=2;
-		inventorySlot[]={"1Shoulder20"};
-		model="\MuchStuffPack\MSP_Storage_proxies\shoulder20.p3d";
-	};
 };
