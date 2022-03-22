@@ -13,6 +13,7 @@
 *.obf
 *.rar
 *.bin
+*.cpp.ignore
 
 
 /temp/
