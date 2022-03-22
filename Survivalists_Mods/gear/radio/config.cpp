@@ -56,7 +56,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"GearPDA\data\pda_co.paa",
+			"Survivalists_Mods\gear\radio\data\pda_co.paa",
 			"Survivalists_Mods\gear\radio\data\pda_on_co.paa"
 		};
   };
