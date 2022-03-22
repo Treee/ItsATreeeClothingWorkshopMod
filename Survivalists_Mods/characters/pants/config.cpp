@@ -24,7 +24,7 @@ class CfgVehicles
 		class Protection 
     {
       biological=1;
-    }
+    };
 	};
 
   class CargoPants_ColorBase: Clothing

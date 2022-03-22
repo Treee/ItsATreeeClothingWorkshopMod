@@ -25,7 +25,7 @@ class CfgVehicles
 		class Protection 
     {
       biological=1;
-    }
+    };
 	};
 
   class TacticalGloves_ColorBase: Clothing

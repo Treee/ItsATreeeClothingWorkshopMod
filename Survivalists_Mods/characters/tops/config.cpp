@@ -40,7 +40,7 @@ class CfgVehicles
 		class Protection 
     {
       biological=1;
-    }
+    };
 	};
   class M65Jacket_ColorBase: Clothing
 	{
@@ -180,5 +180,5 @@ class CfgVehicles
   class SRP_PlatHoodie_Wolfbeard: SRP_PlatHoodie
   {
     scope=2;
-  }
+  };
 };

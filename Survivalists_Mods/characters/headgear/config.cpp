@@ -47,8 +47,8 @@ class CfgVehicles
     class Protection 
     {
       biological=1;
-    }
-  }
+    };
+  };
   
   class BaseballCap_ColorBase: Clothing
 	{
@@ -208,7 +208,7 @@ class CfgVehicles
 				};
 			};
 		};
-  }
+  };
 
   class SRP_Brewsterhelm: BallisticHelmet_ColorBase
   {
@@ -314,7 +314,7 @@ class CfgVehicles
 				};
 			};
 		};
-  }
+  };
   // -=============================== OLD MVS STUFF  
 
   class BaseballCap_MilitaryPatrolTan: BaseballCap_ColorBase  // new

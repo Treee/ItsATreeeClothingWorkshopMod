@@ -25,7 +25,7 @@ class CfgVehicles
       repairableWithKits[]={5,6}; // duct tape and tire repair kit
 		  heatIsolation=0.8;
       biological=1;
-    }
+    };
 	};
 
   class AthleticShoes_ColorBase: Clothing
@@ -101,7 +101,7 @@ class CfgVehicles
     class Protection
     {
       biological=6;
-    }
+    };
 	};
 
 };
