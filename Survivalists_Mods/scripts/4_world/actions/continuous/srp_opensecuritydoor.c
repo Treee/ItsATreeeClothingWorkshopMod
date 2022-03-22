@@ -2,7 +2,7 @@ modded class Jmc_Security_Door
 {
   bool m_IsHackingSoundActivated = false;
   int m_CurrentHackingAttempts = 0;
-  int m_MaxHackingAttemps = 2;  
+  int m_MaxHackingAttemps = 1;  
 
   override void StartSirens()
   {
@@ -23,7 +23,7 @@ modded class Jmc_Security_Door
 
   bool CanHack()
   {
-    return m_CurrentHackingAttempts < m_MaxHackingAttemps;
+    return m_CurrentHackingAttempts <= m_MaxHackingAttemps;
   }
 };
 
@@ -120,8 +120,18 @@ class ActionSRPHackSecurityDoor: ActionContinuousBase
     EntityAI handsItem = action_data.m_Player.GetItemInHands();
 		if( Class.CastTo(door, action_data.m_Target.GetObject()) && Class.CastTo(kit, handsItem))
 		{
-			door.StartOpenDoors();
-      door.HackDoor();
+      float rnd = Math.RandomFloatInclusive(0, 1);
+      if (rnd > 0.65)
+      {
+        door.StartOpenDoors();
+        door.HackDoor();
+      }
+      else
+      {
+        action_data.m_Player.AddHealth("", "Health", -50 );
+        action_data.m_Player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+        action_data.m_Player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+      }
       kit.AddHealth("", "", -100);
 		}
 	}

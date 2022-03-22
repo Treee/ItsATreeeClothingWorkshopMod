@@ -141,6 +141,10 @@ modded class PlayerBase extends ManBase
     {
       return true;
     }
+    if (GetPlayerRadiationProtection() > 5)
+    {
+      return true;
+    }
     return false;
   }
 
