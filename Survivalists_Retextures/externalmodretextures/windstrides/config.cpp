@@ -22,6 +22,8 @@ class CfgVehicles
 	class Winter_Parka_Base;
 	class Kneepads_Jeans_Base;
 	class Layered_Shirt_Base;
+  class Skinny_Jeans_ColorBase;
+
 	class Layered_Shirt_Cheburashka: Layered_Shirt_Base
 	{
 		scope=2;
@@ -223,5 +225,115 @@ class CfgVehicles
 	{
 		scope=2;
 		color="pink";
+	};
+  class Skinny_Jeans_Chocolate: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_chocolate_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_Coal: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_coal_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_HeartBunnyPetal: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_heartbunnypetal_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_HeartBunnySky: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_heartbunnysky_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_HeartPink: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_heartpink_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_Lime: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_lime_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_PurpleDark: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_purpledark_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_RedBunny: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_redbunny_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_TealBunny: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_tealbunny_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
+	};
+  class Skinny_Jeans_YellowBunny: Skinny_Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.8;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skinny_jeans_yellowbunny_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein_ca.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
+    };
 	};
 };

@@ -1663,6 +1663,102 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\Janek_hoodie.paa"
 		};
 	};
+  class SRP_Hoodie_Grey: Hoodie_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hoodie_grey_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_grey_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_grey_co.paa"
+		};
+	};
+  class SRP_Hoodie_Brown: Hoodie_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hoodie_brown_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_brown_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_brown_co.paa"
+		};
+	};
+  class SRP_Hoodie_Blue: Hoodie_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hoodie_blue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_blue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_blue_co.paa"
+		};
+	};
+  class SRP_Hoodie_Red: Hoodie_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hoodie_red_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_red_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_red_co.paa"
+		};
+	};
+  class SRP_Hoodie_Purple: Hoodie_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hoodie_purple_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_purple_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_purple_co.paa"
+		};
+	};
+  class SRP_Hoodie_Pink: Hoodie_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hoodie_pink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_pink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hoodie_pink_co.paa"
+		};
+	};
 	class SRP_ParamedicJacket_BlackMedic: ParamedicJacket_ColorBase
 	{
 		scope=2;

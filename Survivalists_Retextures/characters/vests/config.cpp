@@ -774,6 +774,166 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa"
 		};
 	};
+  class SRP_PlateCarrier_Lavender: PlateCarrierVest
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_lavender_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_lavender_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_lavender_co.paa"
+		};
+	};
+  class SRP_PlateCarrier_Petal: PlateCarrierVest
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_petal_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_petal_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_petal_co.paa"
+		};
+	};
+  class SRP_PlateCarrier_Stone: PlateCarrierVest
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_stone_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_stone_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_stone_co.paa"
+		};
+	};
+  class SRP_PlateCarrier_Storm: PlateCarrierVest
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_storm_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_storm_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_storm_co.paa"
+		};
+	};
+  class SRP_PlateCarrier_Sunny: PlateCarrierVest
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_sunny_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_sunny_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_sunny_co.paa"
+		};
+	};
+  class SRP_PlateCarrierHolster_Lavender: PlateCarrierHolster
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_lavender_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_lavender_co.paa"
+		};
+	};
+  class SRP_PlateCarrierHolster_Petal: PlateCarrierHolster
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_petal_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_petal_co.paa"
+		};
+	};
+  class SRP_PlateCarrierHolster_Stone: PlateCarrierHolster
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_stone_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_stone_co.paa"
+		};
+	};
+  class SRP_PlateCarrierHolster_Storm: PlateCarrierHolster
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_storm_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_storm_co.paa"
+		};
+	};
+  class SRP_PlateCarrierHolster_Sunny: PlateCarrierHolster
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_sunny_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_sunny_co.paa"
+		};
+	};
 	class SRP_PlateCarrierHolster_MTP: PlateCarrierHolster
 	{
 		scope=2;
@@ -884,6 +1044,81 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
 			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
+		};
+	};
+  class SRP_PlateCarrierPouches_Lavender: PlateCarrierPouches
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_lavender_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_lavender_co.paa"
+		};
+	};
+  class SRP_PlateCarrierPouches_Petal: PlateCarrierPouches
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_petal_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_petal_co.paa"
+		};
+	};
+  class SRP_PlateCarrierPouches_Stone: PlateCarrierPouches
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_stone_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_stone_co.paa"
+		};
+	};
+  class SRP_PlateCarrierPouches_Storm: PlateCarrierPouches
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_storm_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_storm_co.paa"
+		};
+	};
+  class SRP_PlateCarrierPouches_Sunny: PlateCarrierPouches
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_sunny_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest_sunny_co.paa"
 		};
 	};
 	class SRP_PlateCarrierPouches_MTP: PlateCarrierPouches
