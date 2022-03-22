@@ -925,11 +925,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"Survivalists_Mods\gear\mining\forge_crucible.rvmat"}},
-            {0.69999999,	{	"Survivalists_Mods\gear\mining\forge_crucible.rvmat"}},
-            {0.5,	{	"Survivalists_Mods\gear\mining\forge_crucible_damage.rvmat"}},
-            {0.30000001,	{	"Survivalists_Mods\gear\mining\forge_crucible_damage.rvmat"}},
-            {0.0,	{	"Survivalists_Mods\gear\mining\forge_crucible_destruct.rvmat"}}
+						{1.0,	{	"Survivalists_Mods\gear\mining\data\forge_crucible.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\mining\data\forge_crucible.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\mining\data\forge_crucible_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\mining\data\forge_crucible_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\mining\data\forge_crucible_destruct.rvmat"}}
 					};
 				};
 			};
