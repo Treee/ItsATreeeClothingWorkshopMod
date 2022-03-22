@@ -49,16 +49,16 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{	"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold.rvmat.rvmat"}},
-            {0.69999999,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold.rvmat.rvmat"}},
-            {0.5,	{	"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold.rvmat_damage.rvmat"}},
-            {0.30000001,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold.rvmat_damage.rvmat"}},
-            {0.0,	{	"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold.rvmat_destruct.rvmat"}}
+						{1.0,	{	"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold.rvmat"}},
+            {0.69999999,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold.rvmat"}},
+            {0.5,	{	"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold_damage.rvmat"}},
+            {0.30000001,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold_damage.rvmat"}},
+            {0.0,	{	"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa",	"Survivalists_Mods\gear\optics\data\srp_pistolscope_gold_destruct.rvmat"}}
 					};
 				};
 			};
 		};
-  }
+  };
 
   
   // ------------------------------------------ Custom Stuff
