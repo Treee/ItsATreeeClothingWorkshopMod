@@ -27,6 +27,7 @@ class CfgVehicles
   class ShortJeans_ColorBase;
   class CanvasPants_ColorBase;
 	class CanvasPantsMidi_ColorBase;
+  class Jeans_ColorBase;
 
 	class SRPPolicePants: PolicePants
 	{
@@ -828,6 +829,117 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\shortjeans_leather_co.paa",
 			"Survivalists_Retextures\characters\pants\data\shortjeans_leather_co.paa",
 			"Survivalists_Retextures\characters\pants\data\shortjeans_leather_co.paa"
+		};
+	};
+
+  class SRP_Jeans_Orange: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_orange_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_orange_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_orange_co.paa"
+		};
+	};
+  class SRP_Jeans_Blue: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_blue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_blue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_blue_co.paa"
+		};
+	};
+  class SRP_Jeans_Lime: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_lime_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_lime_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_lime_co.paa"
+		};
+	};
+  class SRP_Jeans_Moss: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_moss_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_moss_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_moss_co.paa"
+		};
+	};
+  class SRP_Jeans_Pink: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_pink_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_pink_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_pink_co.paa"
+		};
+	};
+  class SRP_Jeans_Purple: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_purple_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_purple_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_purple_co.paa"
+		};
+	};
+  class SRP_Jeans_Red: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_red_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_red_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_red_co.paa"
+		};
+	};
+  class SRP_Jeans_Rose: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_rose_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_rose_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_rose_co.paa"
+		};
+	};
+  class SRP_Jeans_Teal: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_teal_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_teal_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_teal_co.paa"
+		};
+	};
+  class SRP_Jeans_Yellow: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_yellow_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_yellow_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_yellow_co.paa"
 		};
 	};
 };
