@@ -233,7 +233,11 @@ modded class PlayerBase extends ManBase
 		else if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
 		{
 			vision = 0.0;
-		}        
+		}  
+    else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
+		{
+			vision = 0.0;
+		}       
 		else if (armbandAttachment && armbandAttachment.GetType() == "Skylar_BioZone_Protection")
     {
       vision = 0.3;
@@ -254,6 +258,8 @@ modded class PlayerBase extends ManBase
 
     if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
       ignoreFalling = true;
+    else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
+      ignoreFalling = true;
     else if (suitAttachment && (suitAttachment.GetType() == "DUB_Lich" || suitAttachment.IsInherited(DUB_Lich)))
       ignoreFalling = true;
     else if ( mutantAttachment && mutantAttachment.GetType() == "DUB_Observerhead")
@@ -271,6 +277,10 @@ modded class PlayerBase extends ManBase
     EntityAI suitAttachment = GetInventory().FindAttachment(InventorySlots.BACK);
 
     if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
+		{
+			height = 15;
+		}
+    else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
 		{
 			height = 15;
 		}
