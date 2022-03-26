@@ -176,7 +176,8 @@ class CfgVehicles
 			"WalkieTalkie",
       "Knife",
       "Pistol",
-      "Belt_Left"
+      "Belt_Left",
+      "Shoulder"
 		};
     hiddenSelections[]=
 		{
