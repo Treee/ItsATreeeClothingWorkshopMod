@@ -78,3 +78,4 @@ class SRP_HiddenStash_Base extends Inventory_Base
 };
 class SRP_HiddenStash_FoodCan extends SRP_HiddenStash_Base{};
 class SRP_HiddenStash_Guts extends SRP_HiddenStash_Base{};
+class SRP_HiddenStash_Teddy extends SRP_HiddenStash_Base{};

@@ -3484,4 +3484,20 @@ class CfgVehicles
 			allowOwnedCargoManipulation=1;
 		};
   };
+  class SRP_HiddenStash_Teddy: SRP_HiddenStash_Base
+  {
+    scope=2;
+		displayName="$STR_CfgVehicles_Bear_ColorBase0";
+		descriptionShort="$STR_CfgVehicles_Bear_ColorBase1";
+		model="\dz\gear\containers\teddybear.p3d";
+		weight=440;
+		itemSize[]={2,3};
+    allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+		  itemsCargoSize[]={2,3};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+  };
 };
