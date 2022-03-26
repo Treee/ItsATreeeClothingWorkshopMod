@@ -20,7 +20,7 @@ class ActionFlipCapBackward extends ActionSingleUseBase
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		if (item && item.GetInventory().AttachmentCount() == 0)
+		if (item)// && item.GetInventory().AttachmentCount() == 0)
 			return true;
 		return false;
 	}
@@ -57,7 +57,7 @@ class ActionFlipCapForward extends ActionSingleUseBase
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		if (item && item.GetInventory().AttachmentCount() == 0)
+		if (item)// && item.GetInventory().AttachmentCount() == 0)
 			return true;
 		return false;
 	}
