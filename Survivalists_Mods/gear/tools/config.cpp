@@ -427,6 +427,14 @@ class CfgVehicles
 		fragility=0.001;
     physLayer="item_small";
 		openItemSpillRange[]={20,40};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\caliper_co.paa"
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
