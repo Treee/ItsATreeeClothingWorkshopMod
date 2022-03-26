@@ -14,41 +14,8 @@ class CfgPatches
 };
 class CfgAmmo
 {
-	class Bullet_Base;
   class Bullet_12GaugePellets;
   class Shotgun_Base;
-  //---------------------- BASE GAME OVERRIDE
-	class Bullet_380: Bullet_Base
-	{
-		scope=2;
-		hit=7;
-		tracerScale=1;
-		initSpeed=290;
-		typicalSpeed=290;
-		airFriction=-0.0016;
-		class DamageApplied
-		{
-			type="Projectile";
-			dispersion=0;
-			bleedThreshold=1;
-			defaultDamageOverride[]=
-			{
-				{0.5,1}
-			};
-			class Health
-			{
-				damage=26;
-			};
-			class Blood
-			{
-				damage=100;
-			};
-			class Shock
-			{
-				damage=33;
-			};
-		};
-	};
 
   //----------------------- CUSTOME STUFF
   class Bullet_12Nail: Bullet_12GaugePellets
