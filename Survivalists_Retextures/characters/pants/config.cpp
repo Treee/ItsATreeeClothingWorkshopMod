@@ -942,4 +942,26 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\jeans_f_yellow_co.paa"
 		};
 	};
+  class SRP_Jeans_CadPat_Green: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_cadpat_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_cadpat_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_cadpat_co.paa"
+		};
+	};
+  class SRP_Jeans_CadPat_Blue: Jeans_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\jeans_cadpatblue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_cadpatblue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\jeans_f_cadpatblue_co.paa"
+		};
+	};
 };

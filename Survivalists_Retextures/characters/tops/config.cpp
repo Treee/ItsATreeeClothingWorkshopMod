@@ -309,6 +309,39 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\shirt_plain_burgandy_co.paa"
 		};
 	};
+  class SRP_Shirt_CatBlue: Shirt_ColorBase
+	{
+		scope=2;
+		heatIsolation=0.60000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\shirt_catblue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\shirt_catblue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\shirt_catblue_co.paa"
+		};
+	};
+  class SRP_Shirt_CatLime: Shirt_ColorBase
+	{
+		scope=2;
+		heatIsolation=0.60000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\shirt_catlime_co.paa",
+			"Survivalists_Retextures\characters\tops\data\shirt_catlime_co.paa",
+			"Survivalists_Retextures\characters\tops\data\shirt_catlime_co.paa"
+		};
+	};
+  class SRP_Shirt_CatPink: Shirt_ColorBase
+	{
+		scope=2;
+		heatIsolation=0.60000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\shirt_catpink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\shirt_catpink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\shirt_catpink_co.paa"
+		};
+	};
 	class SRP_Shirt_PlainGrape: Shirt_ColorBase
 	{
 		scope=2;
@@ -1341,6 +1374,38 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowfancy_co.paa",
 			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowfancy_co.paa",
 			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowfancy_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_HeartBlue: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartsblue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartsblue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartsblue_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_HeartPink: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartspink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartspink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartspink_co.paa"
 		};
 	};
 	class SRP_Sweater_SantaRL: Sweater_ColorBase

@@ -170,6 +170,14 @@ class CfgVehicles
     descriptionShort="Espen Industries. This bag comfortably sits across your shoulders.";
 		model="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_g.p3d";
 		itemsCargoSize[]={8,8};
+    attachments[]=
+		{
+			"Chemlight",
+			"WalkieTalkie",
+      "Knife",
+      "Pistol",
+      "Belt_Left"
+		};
     hiddenSelections[]=
 		{
 			"zbytek"
