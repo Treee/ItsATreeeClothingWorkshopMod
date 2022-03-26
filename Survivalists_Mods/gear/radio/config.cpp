@@ -16,13 +16,10 @@ class CfgPatches
 class CfgVehicles
 {
   // base classes
+  class Radio;
   class PersonalRadio;
   class Cassette;
   class Inventory_Base;
-
-  // modded classes
-	class GGRadio_Radio_Base;
-
   // Look into this as a way to webhook radio stations
   // class Radio;
   // class My_Radio : Radio
@@ -38,16 +35,6 @@ class CfgVehicles
   // }
 
   //-------------------------------------- MOD OVERRIDE
-	class GGRadio_Radio: GGRadio_Radio_Base
-	{
-		inventorySlot[]=
-		{
-			"GGRadio_Radio",
-			"MassRadio",
-			"walkietalkie"
-		};
-	};
-
   class ItemPDA: Inventory_Base
   {
 		hiddenSelections[]=
@@ -62,7 +49,74 @@ class CfgVehicles
   };
 
   //-------------------------------------- BASE GAME OVERRIDE
-
+	class SRP_CassettePlayer: Inventory_Base
+	{
+		scope=2;
+    displayName="Cassette Player";
+		descriptionShort="A surprisingly reliable working piece of electronics.";
+		model="\dz\gear\radio\unitra_wilga.p3d";
+    repairableWithKits[]={5,7};
+		itemSize[]={2,3};
+		fragility=0.0099999998;
+		absorbency=0.5;
+		repairCosts[]={30,25};
+    oldpower=0;
+    inventorySlot[]=
+		{
+			"GGRadio_Radio",
+			"MassRadio",
+			"walkietalkie"
+		};
+		attachments[]=
+		{
+			"BatteryD",
+      "SRP_Cassette"
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			autoSwitchOff=1;
+			energyUsagePerSecond=0.05;
+			attachmentAction=1;
+			wetnessExposure=0.1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{						
+						{1.0,{"DZ\gear\radio\data\unitra_wilga.rvmat"}},						
+						{0.69999999,{"DZ\gear\radio\data\unitra_wilga.rvmat"}},						
+						{0.5,{"DZ\gear\radio\data\unitra_wilga_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\radio\data\unitra_wilga_damage.rvmat"}},						
+						{0.0,{"DZ\gear\radio\data\unitra_wilga_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+  };
 
   //----------------------------------- Custom Stuff
   class SRP_PersonalRadio_NumberStations: Inventory_Base  // new
@@ -283,6 +337,7 @@ class CfgVehicles
 		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
+      "SRP_Cassette",
 			"Cassette",
 			"Cassette2",
 			"Cassette3",

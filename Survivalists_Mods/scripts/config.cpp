@@ -1477,6 +1477,13 @@ class CfgSlots
 		displayName="Skeleton Right Leg";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+
+  class Slot_SRP_Cassette
+	{
+		name = "SRP_Cassette";
+		displayName = "Cassette";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
 };
 
 class CfgNonAIVehicles

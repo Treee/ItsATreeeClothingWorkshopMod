@@ -51,11 +51,10 @@ class CfgPatches
       "Munghardsmeleesling", // meleesling
       "Munghardsriflesling", // riflesling
       "Mass_Textures", // MassNBC_Bag, MassRatnik, removing admin compass
-      "CarRadioGlow", // PsychoDayZRadio
       "MSP_Scripts",    // MSP_Fridge_Base
       "BaseBuildingPlus", // removing admin tools
       "GearPDA_scripts", // PDA retexture      
-      "deerisle" // for the map
+      "deerisle" // for the map (security door)
 		};
 	};
 };
