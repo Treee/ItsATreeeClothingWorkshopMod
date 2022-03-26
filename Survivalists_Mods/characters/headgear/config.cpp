@@ -367,6 +367,16 @@ class CfgVehicles
 		};
 	};
 
+  class BaseballCap_MilitaryPatrolTan_Backwards: BaseballCap_MilitaryPatrolTan
+  {
+		scope=2;
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_patrolcap_backwards_m.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_patrolcap_backwards_f.p3d";
+		};
+  };
+
   class BaseballCap_Pakol: BaseballCap_ColorBase  // new
 	{
 		scope=2;

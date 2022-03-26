@@ -12,6 +12,9 @@ modded class ActionConstructor
     actions.Insert(ActionPutGogglesOnHead);
     actions.Insert(ActionPutGogglesOnFace);
 
+    actions.Insert(ActionFlipCapForward);
+    actions.Insert(ActionFlipCapBackward);
+
     actions.Insert(ActionMortarCrushIntoPowder);
 
     actions.Insert(ActionConvertStarterForgeKit);

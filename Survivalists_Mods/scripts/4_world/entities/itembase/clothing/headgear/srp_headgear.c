@@ -27,6 +27,25 @@ class SRP_Goggles_Face extends Clothing
 	}
 }
 
+class BaseballCap_MilitaryPatrolTan extends BaseballCap_ColorBase 
+{
+  override void SetActions()
+	{
+		super.SetActions();		
+		AddAction(ActionFlipCapBackward);
+	}
+};
+
+class BaseballCap_MilitaryPatrolTan_Backwards extends BaseballCap_ColorBase
+{
+  override void SetActions()
+	{
+		super.SetActions();		
+		AddAction(ActionFlipCapForward);
+	}
+};
+
+
 class SRP_SlimHelmetFull: Mich2001Helmet{};
 
 class SRP_SlimHelmetFull_Kain extends SRP_SlimHelmetFull{};
