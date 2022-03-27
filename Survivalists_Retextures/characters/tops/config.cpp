@@ -255,16 +255,24 @@ class CfgVehicles
 		};
 	};
 	class SRP_Labcoat_BGSD_Carr: LabCoat
-	{
-		scope=2;
-		heatIsolation=1;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\tops\data\labcoat_bgsd_carr_co.paa",
-			"Survivalists_Retextures\characters\tops\data\labcoat_bgsd_carr_co.paa",
-			"Survivalists_Retextures\characters\tops\data\labcoat_bgsd_carr_co.paa"
-		};
-	};
+  {
+    displayName="Dr. Carr's Ladcoat";
+    descriptionShort="A BGSD branded labcoat which belongs to Doctor Richard Carr of the BGFSD";
+    scope=2;
+    heatIsolation=1;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\labcoat_bgsd_carr_co.paa",
+      "Survivalists_Retextures\characters\tops\data\labcoat_bgsd_carr_co.paa",
+      "Survivalists_Retextures\characters\tops\data\labcoat_bgsd_carr_co.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\labcoat_BGSD.rvmat",
+      "Survivalists_Retextures\characters\tops\data\labcoat_BGSD.rvmat",
+      "Survivalists_Retextures\characters\tops\data\labcoat_BGSD.rvmat"
+    };
+  };
 	class SRP_Labcoat_BGSD_Hansen: LabCoat
 	{
 		scope=2;
