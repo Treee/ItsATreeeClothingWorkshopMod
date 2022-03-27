@@ -40,7 +40,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\gear\patches\data\srp_flagpatch_BGSD_ID_co.paa",
-			"Survivalists_Retextures\gear\patches\data\srp_wovencloth_Armband_BGSD_co.paa"
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
 	class SRP_Madhatter_Patch: SRP_PatchFlag_ColorBase
