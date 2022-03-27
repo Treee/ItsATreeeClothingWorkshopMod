@@ -75,7 +75,7 @@ class CfgVehicles
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\gear\patches\srp_patcharmbandflag.p3d";
-			female="Survivalists_Mods\gear\patches\srp_patcharmbandflag.p3d";
+			female="Survivalists_Mods\gear\patches\srp_patcharmbandflag_f.p3d";
 		};
 		class AnimEvents
 		{
