@@ -5,14 +5,14 @@ modded class WoodBase
     // forcing hunting knifes to be considered bark cutting
 		if ( m_PrimaryDropsAmount > 0 )
 		{
-			if ( IsTree() && item && ( item.IsInherited(HuntingKnife) ) )
+			if ( IsTree() && IsBarkYieldingItem(item) )
 			{
 				return -1;
 			}
 		}
 		else
 		{
-			if ( item && ( item.IsInherited(HuntingKnife) ) )
+			if ( IsBarkYieldingItem(item) )
 			{
 				return -1;
 			}
@@ -20,10 +20,10 @@ modded class WoodBase
     return super.GetAmountOfDrops(item);
 	}
 	
-	void GetMaterialAndQuantityMap(ItemBase item, out map<string,int> output_map)
+	override void GetMaterialAndQuantityMap(ItemBase item, out map<string,int> output_map)
 	{
     // force hutning knife to be considered bark cutting
-		if ( IsTree() && item && ( item.IsInherited(HuntingKnife) ) && m_BarkType != "" )
+		if ( IsTree() && IsBarkYieldingItem(item) && m_BarkType != "" )
 		{
 			output_map.Insert(m_BarkType,1);
 		}
@@ -33,7 +33,7 @@ modded class WoodBase
 		}
 	}
 	
-	float GetDamageToMiningItemEachDrop(ItemBase item)
+	override float GetDamageToMiningItemEachDrop(ItemBase item)
 	{
     // force hunting knife to be damaged
 		if (m_ToolDamage > -1)
@@ -41,18 +41,35 @@ modded class WoodBase
 		
 		if ( IsTree() )
 		{
-			if ( item && item.IsInherited(HuntingKnife) )
+			if ( IsBarkYieldingItem(item) )
 			{
 				return 20;
 			}			
 		}
 		else
 		{
-			if ( item && item.IsInherited(HuntingKnife) )
+			if ( IsBarkYieldingItem(item) )
 			{
 				return 30;
 			}
 		}
     return super.GetDamageToMiningItemEachDrop(item);
 	}
+
+  bool IsBarkYieldingItem(ItemBase item)
+  {
+    bool yieldsBark = false;
+    if (item)
+    {
+      if (item.GetType() == "SRP_KatanaSlim" || item.IsInherited(SRP_KatanaSlim))
+      {
+        yieldsBark = true;
+      }
+      else if (item.IsInherited(HuntingKnife))
+      {
+        yieldsBark = true;
+      }
+    }
+    return yieldsBark;
+  }
 };
