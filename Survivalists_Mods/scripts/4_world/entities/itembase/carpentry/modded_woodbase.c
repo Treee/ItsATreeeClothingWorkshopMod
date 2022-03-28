@@ -61,11 +61,7 @@ modded class WoodBase
     bool yieldsBark = false;
     if (item)
     {
-      if (item.GetType() == "SRP_KatanaSlim" || item.IsInherited(SRP_KatanaSlim))
-      {
-        yieldsBark = true;
-      }
-      else if (item.IsInherited(HuntingKnife))
+      if (item.IsInherited(HuntingKnife))
       {
         yieldsBark = true;
       }
