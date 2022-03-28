@@ -23,6 +23,7 @@ class CfgVehicles
 	class Kneepads_Jeans_Base;
 	class Layered_Shirt_Base;
   class Skinny_Jeans_ColorBase;
+  class Scarf_ColorBase;
 
 	class Layered_Shirt_Cheburashka: Layered_Shirt_Base
 	{
@@ -336,4 +337,49 @@ class CfgVehicles
       "Survivalists_Retextures\externalmodretextures\windstrides\data\skein2_ca.paa"
     };
 	};
+  class Scarf_Green: Scarf_ColorBase
+  {
+    scope=2;
+    visibilityModifier=0.85000002;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_green_co.paa"
+    };
+  };
+  class Scarf_purple: Scarf_ColorBase
+  {
+    scope=2;
+    visibilityModifier=0.85000002;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_purple_co.paa"
+    };
+  };
+  class Scarf_White_Plaid: Scarf_ColorBase
+  {
+    scope=2;
+    visibilityModifier=0.85000002;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_white_plaid_co.paa"
+    };
+  };
+  class Scarf_Red_Plaid: Scarf_ColorBase
+  {
+    scope=2;
+    visibilityModifier=0.85000002;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_red_plaid_co.paa"
+    };
+  };
+  class Scarf_blue_yellow: Scarf_ColorBase
+  {
+    scope=2;
+    visibilityModifier=0.85000002;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_blue_Yellow_co.paa"
+    };
+  };
 };
