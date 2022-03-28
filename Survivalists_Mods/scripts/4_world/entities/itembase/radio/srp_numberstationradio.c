@@ -5,12 +5,11 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
   bool m_Playing;
   bool m_SyncPlaying;
   int m_RadioFrequencyIndex;
-  int m_RadioFrequencyIndexSync;
     
   void SRP_PersonalRadio_NumberStations()
   {
     RegisterNetSyncVariableBool( "m_SyncPlaying" );
-    RegisterNetSyncVariableInt( "m_RadioFrequencyIndexSync" );
+    RegisterNetSyncVariableInt( "m_RadioFrequencyIndex" );
   }
     
   override void OnVariablesSynchronized()
@@ -25,11 +24,11 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
     {
       TurnOff();
     }
-    if (m_RadioFrequencyIndex != m_RadioFrequencyIndexSync)
-    {
-      m_RadioFrequencyIndex = m_RadioFrequencyIndexSync;
-      Play();
-    }
+    // if (m_RadioFrequencyIndex != m_RadioFrequencyIndex)
+    // {
+    //   m_RadioFrequencyIndex = m_RadioFrequencyIndex;
+    //   Play();
+    // }
 	}	
    
   override void SetActions()
@@ -62,7 +61,11 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
   
   override void OnWorkStart()
   {
-    Play();
+    // short circuit to play / stop in one line
+    if (!Play())
+    {
+      TurnOff();
+    }
   }
 
   override void OnWorkStop()
@@ -72,12 +75,12 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
 
   void SetNextFrequency()
   {
-    m_RadioFrequencyIndexSync++;
-    m_RadioFrequencyIndexSync = m_RadioFrequencyIndexSync % GetNumberStations().Count();
+    m_RadioFrequencyIndex++;
+    m_RadioFrequencyIndex = m_RadioFrequencyIndex % GetNumberStations().Count();
     SetSynchDirty();
   }
   
-  void Play()
+  bool Play()
   {    
     if (!GetGame().IsDedicatedServer())
     {
@@ -86,10 +89,16 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
         StopSoundSet( m_ActiveSound );
       }
       string soundSetName = GetNumberStations().Get(m_RadioFrequencyIndex);
+      if (soundSetName == "")
+      {
+        return false;
+      }
       PlaySoundSetLoop(m_ActiveSound, soundSetName, 0, 0);
     }    
     m_Playing = true;
     m_SyncPlaying = true;
+    SetSynchDirty();
+    return true;
   }
   
   void Stop()
@@ -101,6 +110,7 @@ class SRP_PersonalRadio_NumberStations extends ItemBase
     {
       StopSoundSet( m_ActiveSound );
     }    
+    SetSynchDirty();
   }
 
   TStringArray GetNumberStations()
