@@ -957,8 +957,7 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Headgear",
-      "SRP_Comtacs",
-      // "MVS_Comtacs"
+      "SRP_Comtacs"
 		};
 		itemInfo[]=
 		{
@@ -994,6 +993,64 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\headgear\srp_comtacs.p3d";
 			female="Survivalists_Mods\characters\headgear\srp_comtacs.p3d";
+		};
+	};
+
+  class SRP_EarProtection_ColorBase: BalaclavaMask_ColorBase
+	{
+		scope=0;
+		displayName="Ear Protection";
+		descriptionShort="Espen Industries. Ear Protection - a trusted satefy protection headset that is field proven by law enforcement and militaries world wide";
+		model="Survivalists_Mods\characters\headgear\srp_comtacs_protection_g.p3d";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		rotationFlags=16;
+		weight=110;
+		itemSize[]={3,2};
+		absorbency=0.80000001;
+		heatIsolation=0.25;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+    color="base";
+		inventorySlot[]=
+		{
+			"Headgear",
+      "SRP_Comtacs"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		headSelectionsToHide[]=
+		{
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\characters\headgear\data\BaseballCapII.rvmat"}},
+            {0.699,{"DZ\characters\headgear\data\BaseballCapII.rvmat"}},
+            {0.5,{"DZ\characters\headgear\data\BaseballCapII_damage.rvmat"}},
+            {0.301,{"DZ\characters\headgear\data\BaseballCapII_damage.rvmat"}},
+            {0.0,{"DZ\characters\headgear\data\BaseballCapII_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_comtacs_protection.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_comtacs_protection.p3d";
 		};
 	};
 

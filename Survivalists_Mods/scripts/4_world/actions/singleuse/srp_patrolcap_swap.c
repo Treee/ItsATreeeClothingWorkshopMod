@@ -29,7 +29,8 @@ class ActionFlipCapBackward extends ActionSingleUseBase
 
 	override void OnExecuteServer( ActionData action_data )
 	{
-    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, "BaseballCap_MilitaryPatrolTan_Backwards", action_data.m_Player);
+    string patrolCapType = action_data.m_MainItem.GetType();
+    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, patrolCapType+ "_Backwards", action_data.m_Player);
     lambda.SetTransferParams(true, true, true, false, 1);
     action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
 	}
@@ -66,7 +67,9 @@ class ActionFlipCapForward extends ActionSingleUseBase
 
 	override void OnExecuteServer( ActionData action_data )
 	{
-    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, "BaseballCap_MilitaryPatrolTan", action_data.m_Player);
+    string patrolCapType = action_data.m_MainItem.GetType();
+    patrolCapType.Replace("_Backwards", "");
+    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, patrolCapType, action_data.m_Player);
     lambda.SetTransferParams(true, true, true, false, 1);
     action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
 	}

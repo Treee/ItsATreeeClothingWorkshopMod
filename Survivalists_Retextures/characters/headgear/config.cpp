@@ -41,6 +41,10 @@ class CfgVehicles
   class SRP_CombatHelmetHighCut;
   class SRP_CombatHelmetAltyn;
   class SRP_AltynHelmetVisor;
+  class BaseballCap_MilitaryPatrolTan;
+  class BaseballCap_MilitaryPatrolTan_Backwards;
+  class SRP_EarProtection_ColorBase;
+
 
 	class SRP_PoliceCap: BaseballCap_ColorBase
 	{
@@ -1335,6 +1339,40 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_EarProtection_ColorBase_OD: SRP_EarProtection_ColorBase
+	{
+		scope=2;
+		displayName="Ear Protection - OD";
+		visibilityModifier=0.94999999;
+    color="od";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co.paa"
+		};
+	};
+	class SRP_EarProtection_ColorBase_Tan: SRP_EarProtection_ColorBase
+	{
+		scope=2;
+		displayName="Ear Protection - Tan";
+		visibilityModifier=0.94999999;
+    color="tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Tan.paa"
+		};
+	};
+	class SRP_EarProtection_ColorBase_Black: SRP_EarProtection_ColorBase
+	{
+		scope=2;
+		displayName="Ear Protection - Black";
+		visibilityModifier=0.94999999;
+    color="black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Black.paa"
+		};
+	};
+
   class SRP_SlimHelmetFull_Kain: SRP_SlimHelmetFull
   {
     scope=2;
@@ -1472,4 +1510,57 @@ class CfgVehicles
 		};
   };
 
+  class BaseballCap_MilitaryPatrolBlack: BaseballCap_MilitaryPatrolTan
+	{
+		scope=2;
+		color="MilitaryPatrolBlack";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_black_co.paa"
+		};
+	};
+
+  class BaseballCap_MilitaryPatrolBlack_Backwards: BaseballCap_MilitaryPatrolTan_Backwards
+  {
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_black_co.paa"
+		};
+  };
+
+  class BaseballCap_MilitaryPatrolGreen: BaseballCap_MilitaryPatrolTan
+	{
+		scope=2;
+		color="MilitaryPatrolGreen";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"
+		};
+	};
+
+  class BaseballCap_MilitaryPatrolGreen_Backwards: BaseballCap_MilitaryPatrolTan_Backwards
+  {
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"
+		};
+  };
 };

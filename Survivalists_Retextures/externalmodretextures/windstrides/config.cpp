@@ -382,4 +382,22 @@ class CfgVehicles
       "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_blue_Yellow_co.paa"
     };
   };
+  class Scarf_red: Scarf_ColorBase
+  {
+    scope=2;
+    visibilityModifier=0.85000002;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_red_co.paa"
+    };
+  };
+  class Scarf_pink_yellow: Scarf_ColorBase
+  {
+    scope=2;
+    visibilityModifier=0.85000002;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_pink_Yellow_co.paa"
+    };
+  };
 };
