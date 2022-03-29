@@ -40,7 +40,7 @@ class BaseballCap_MilitaryPatrolTan extends BaseballCap_ColorBase
       if (Class.CastTo(player, parent.GetHierarchyRoot()))
       {
         player.SendMessageToClient( player, "Ear Protection On" );
-        GetGame().GetSoundScene().SetSoundVolume(0.1,1);        
+        GetGame().GetSoundScene().SetSoundVolume(0.3,1);        
       }
     }
   }		
@@ -92,7 +92,7 @@ class SRP_Comtacs_ColorBase extends BalaclavaMask_ColorBase
     if (Class.CastTo(player, parent.GetHierarchyRoot()))
     {
       player.SendMessageToClient( player, "Ear Protection On" );
-      GetGame().GetSoundScene().SetSoundVolume(0.1,1);
+      GetGame().GetSoundScene().SetSoundVolume(0.3,1);
     }
   }		
 	// !Called on CHILD when it's detached from parent.
