@@ -72,9 +72,9 @@ class SRP_Fishing_Intermediate_KitBase extends ItemBase
 };
 
 //===============KITBASE
-class SRP_WoodenFishRack_Kit extends SRP_KitBase{};
-class SRP_WoodenFishHanger_Kit extends SRP_KitBase{};
-class SRP_Aquarium_Kit extends SRP_KitBase{};
+class SRP_WoodenFishRack_Kit extends SRP_Fishing_KitBase{};
+class SRP_WoodenFishHanger_Kit extends SRP_Fishing_KitBase{};
+class SRP_Aquarium_Kit extends SRP_Fishing_KitBase{};
 
 //==================INTERMEDIATE KITBASE
 class SRP_AquariumIntermediate_Kit extends SRP_Fishing_Intermediate_KitBase
