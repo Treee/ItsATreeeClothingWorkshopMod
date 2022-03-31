@@ -73,7 +73,7 @@ class SRP_RadioElectronics_Intermediate_KitBase extends ItemBase
 };
 
 //===============KITBASE
-// class SRP_ElectronicsJammer_Dish_Kit extends SRP_RadioElectronics_KitBase{};
-// class SRP_ElectronicsJammer_Tower_Kit extends SRP_RadioElectronics_KitBase{};
-// class SRP_ElectronicsJammer_TowerAdvanced_Kit extends SRP_RadioElectronics_KitBase{};
+class SRP_ElectronicsJammer_Dish_Kit extends SRP_RadioElectronics_KitBase{};
+class SRP_ElectronicsJammer_Tower_Kit extends SRP_RadioElectronics_KitBase{};
+class SRP_ElectronicsJammer_TowerAdvanced_Kit extends SRP_RadioElectronics_KitBase{};
 

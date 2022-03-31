@@ -2,12 +2,21 @@ class SRP_ElectronicsJammer_Base extends Container_Base
 {
   void SRP_ElectronicsJammer_Base() 
   {
+    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(InitializeJammer, 500, false);
+  }
+  void ~SRP_ElectronicsJammer_Base() 
+  {
+    Print("[SRP_ElectronicsJammer_Base] - Server Destroying object" + GetType() + " - " + GetPosition());
+  }
+
+  void InitializeJammer()
+  {
     if (GetGame().IsDedicatedServer())
     {
       RadioElectronicsConfig config = GetDayZGame().GetRadioElectronicsConfig();
       if (config)
       {
-        Print("[SRP_ElectronicsJammer_Base] - " + GetType() + " - " + GetPosition())
+        Print("[SRP_ElectronicsJammer_Base] - " + GetType() + " - " + GetPosition());
         SRPRadioTowerInfo tower = config.GetTowerBeingJammed(GetPosition());
         if (tower)
         {
@@ -18,16 +27,12 @@ class SRP_ElectronicsJammer_Base extends Container_Base
           else
           {
             tower.ImpactRadioTower(true);
-            config.IncrementActiveTowers();
+            config.DecrementActiveTowers();
             GetDayZGame().SaveRadioElectronicsConfig();
           }
         }
       }
     }
-  }
-  void ~SRP_ElectronicsJammer_Base() 
-  {
-    Print("[SRP_ElectronicsJammer_Base] - Server Destroying object" + GetType() + " - " + GetPosition());
   }
 
   void DismantleJammer()
@@ -44,7 +49,7 @@ class SRP_ElectronicsJammer_Base extends Container_Base
           if (tower.IsJammed())
           {
             tower.ImpactRadioTower(false);
-            config.DecrementActiveTowers();
+            config.IncrementActiveTowers();
             GetDayZGame().SaveRadioElectronicsConfig();
           }
           else
