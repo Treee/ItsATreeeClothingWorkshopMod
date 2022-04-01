@@ -68,7 +68,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Electronics Jammer Kit - Dish";
 		descriptionShort="This kit contains the required materials to build a rudimentary radio jammer.";
-    model="Survivalists_RadioElectronics\radio\srp_radiojammer.p3d";
 	};
 
   class SRP_ElectronicsJammer_Dish: SRP_ElectronicsJammer_Base
@@ -84,7 +83,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Electronics Jammer Kit - Tower";
 		descriptionShort="This kit contains the required materials to build a rudimentary radio jammer.";
-    model="Survivalists_RadioElectronics\radio\srp_radiojammer_2.p3d";
 	};
 
   class SRP_ElectronicsJammer_Tower: SRP_ElectronicsJammer_Base
@@ -100,7 +98,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Electronics Jammer Kit - Advanced Tower";
 		descriptionShort="This kit contains the required materials to build an advanced radio jammer.";
-    model="Survivalists_RadioElectronics\radio\srp_radiojammer_1.p3d";
 	};
 
   class SRP_ElectronicsJammer_TowerAdvanced: SRP_ElectronicsJammer_Base
