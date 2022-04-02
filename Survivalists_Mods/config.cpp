@@ -53,7 +53,6 @@ class CfgPatches
       "Mass_Textures", // MassNBC_Bag, MassRatnik, removing admin compass
       "MSP_Scripts",    // MSP_Fridge_Base
       "BaseBuildingPlus", // removing admin tools
-      "GearPDA_scripts", // PDA retexture      
       "deerisle" // for the map (security door)
 		};
 	};

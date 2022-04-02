@@ -35,18 +35,6 @@ class CfgVehicles
   // }
 
   //-------------------------------------- MOD OVERRIDE
-  class ItemPDA: Inventory_Base
-  {
-		hiddenSelections[]=
-		{
-			"body"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\radio\data\pda_co.paa",
-			"Survivalists_Mods\gear\radio\data\pda_on_co.paa"
-		};
-  };
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class SRP_CassettePlayer: Inventory_Base
