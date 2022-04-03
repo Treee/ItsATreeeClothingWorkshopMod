@@ -91,7 +91,7 @@ modded class ActionGiveBloodTarget
     ActionGiveBloodData action_data_b = ActionGiveBloodData.Cast( action_data );
     // Print("[ActionGiveBloodTarget] - Start: " + action_data_b);
     BloodContainerBase bloodContainer = BloodContainerBase.Cast(action_data_b.m_MainItem);
-    if (bloodContainer)
+    if (bloodContainer)4
     {
       // Print("[ActionGiveBloodTarget] - Is Blood Container");
       if (!bloodContainer.IsBloodContainerSterile())

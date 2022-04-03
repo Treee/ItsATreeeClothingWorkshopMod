@@ -1,26 +1,22 @@
 modded class PlayerBase
 {
-  int m_FacePaintState;
-	protected int	m_FacePaintStateLocal;
+  protected int m_FacePaintState;
 
   override void Init()
   {
     super.Init();
 
     m_FacePaintState = -1;
-    m_FacePaintStateLocal = -1;
-
     RegisterNetSyncVariableInt("m_FacePaintState", -1, m_ModuleLifespan.GetFacePaintCount(GetType()));
-    RegisterNetSyncVariableInt("m_FacePaintStateLocal", -1, m_ModuleLifespan.GetFacePaintCount(GetType()));
   }
 
   override void OnVariablesSynchronized()
 	{
     super.OnVariablesSynchronized();
 
-    if (m_FacePaintState > -1 && (IsPlayerLoaded() || IsControlledPlayer()))
+    if (m_FacePaintState >= -1 && (IsPlayerLoaded() || IsControlledPlayer()))
     {
-      UpdateFacePaintState();
+      UpdateFacePaintVisual();
     }
 	}
 
@@ -59,21 +55,25 @@ modded class PlayerBase
       {
         value = nextFacePaint.GetMaterial(1);
       }
+      if (index == -1)
+      {
+        nextFacePaint = m_ModuleLifespan.GetFacePaintMaterials(GetType(), 0);
+        if (nextFacePaint)
+        {
+          value = nextFacePaint.GetMaterial(0);
+        }
+      }
     }
     return value;
   }
-
-  void UpdateFacePaintState()
-	{
-		UpdateFacePaintVisual();
-		m_FacePaintStateLocal = m_FacePaintState;
-	}
-
+  
   void UpdateFacePaintVisual()
-	{
+	{    
     string camoMaterial = GetCurrentCamoMaterialPath(m_FacePaintState);
-    // SetFaceTexture("");    
-    SetFaceMaterial(camoMaterial);
+    if (camoMaterial != "")
+    {
+      SetFaceMaterial(camoMaterial);
+    }
 	}
 
 };

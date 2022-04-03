@@ -31,12 +31,13 @@ modded class PluginLifespan
 						string survivor_facepaint_name = "";
 						GetGame().ConfigGetChildName( survivor_path, j, survivor_facepaint_name );
 						
+            string suvivor_bloodyhands_normalpath = survivor_path + " BloodyHands";
 						string survivor_facepaint_path = survivor_path + " " + survivor_facepaint_name;
 
 						if ( survivor_facepaint_name.Contains("FacePaint_") )
 						{
 							string paint_material, normal_material;
-							string path_normal = survivor_facepaint_path + " mat_normal";
+							string path_normal = suvivor_bloodyhands_normalpath + " mat_normal";
 							string path_paint = survivor_facepaint_path + " mat_paint";
 
 		        	TStringArray parts = new TStringArray;
