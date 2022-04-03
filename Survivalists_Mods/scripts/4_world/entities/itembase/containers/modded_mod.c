@@ -75,6 +75,21 @@ modded class Msp_Fridge_Base
   }
 };
 
+modded class BBP_Step_LadderKit
+{
+	override void OnPlacementComplete( Man player, vector position = "0 0 0", vector orientation = "0 0 0" )
+  {
+    super.OnPlacementComplete(player, position, orientation);
+    if( GetGame().IsDedicatedServer() )
+    {
+      if (m_AdminLog)
+      {            
+        m_AdminLog.OnPlacementComplete( player, this);
+      }
+    }
+  }
+};
+
 modded class DUB_Gunframe
 {
   override bool CanPutInCargo( EntityAI parent )

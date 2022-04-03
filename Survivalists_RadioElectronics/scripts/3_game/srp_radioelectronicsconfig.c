@@ -13,7 +13,7 @@ class SRPRadioTowerInfo
   bool IsWithinJammingRange(vector jammerPosition)
   {
     float distance = vector.Distance(jammerPosition, m_location);
-    Print("Checking location: " + m_location + " with hieght " + m_heightRequirement + " distance " + distance);
+    // Print("Checking location: " + m_location + " with hieght " + m_heightRequirement + " distance " + distance);
     // this only checks distance to.
     // need to force that distaince to be upwards and not lateral
     return distance <= m_heightRequirement;
