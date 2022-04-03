@@ -27,9 +27,6 @@ class ActionPaintFace: ActionContinuousBase
 
   override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-    if (target.GetObject())
-      return false;
-
     int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
 		EntityAI equipedMask = player.GetInventory().FindPlaceholderForSlot( slot_id );
 
@@ -76,8 +73,8 @@ class ActionPaintFaceTargetCB : ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		// m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.SHAVE);
-    m_ActionData.m_ActionComponent = new CAContinuousTime(1.0);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.SHAVE);
+    // m_ActionData.m_ActionComponent = new CAContinuousTime(1.0);
 	}
 };
 
