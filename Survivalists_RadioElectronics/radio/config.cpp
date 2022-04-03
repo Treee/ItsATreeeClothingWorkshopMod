@@ -49,7 +49,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=50;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,{"Survivalists_RadioElectronics\radio\data\srp_radiojammer.rvmat"}},
@@ -59,6 +59,69 @@ class CfgVehicles
 						{0.0,{"Survivalists_RadioElectronics\radio\data\srp_radiojammer.rvmat"}}
 					};
 				};
+        class GlobalArmor
+        {
+          class Projectile
+          {
+            class Health
+            {
+              damage=0.30000001;
+            };
+            class Blood
+            {
+              damage=0;
+            };
+            class Shock
+            {
+              damage=0.60000002;
+            };
+          };
+          class Melee
+          {
+            class Health
+            {
+              damage=0.25;
+            };
+            class Blood
+            {
+              damage=0;
+            };
+            class Shock
+            {
+              damage=0.25;
+            };
+          };
+          class Infected
+          {
+            class Health
+            {
+              damage=0.25;
+            };
+            class Blood
+            {
+              damage=0;
+            };
+            class Shock
+            {
+              damage=0.25;
+            };
+          };
+          class FragGrenade
+          {
+            class Health
+            {
+              damage=0.5;
+            };
+            class Blood
+            {
+              damage=0;
+            };
+            class Shock
+            {
+              damage=0.25999999;
+            };
+          };
+        };
 			};
 		};
 	};

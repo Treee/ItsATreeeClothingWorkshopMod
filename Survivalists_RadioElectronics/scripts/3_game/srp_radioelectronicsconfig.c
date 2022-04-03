@@ -38,7 +38,7 @@ class RadioElectronicsConfig
   protected int m_RequiredNumberOfActiveRadioTowers = 11;
   protected int m_NumberOfActiveRadioTowers = 0;  
 
-  protected const float m_ICRadioMaxDelay = 60;
+  protected const int m_ICRadioMaxDelay = 60;
 
   protected bool m_IsICRadioActive;
 
