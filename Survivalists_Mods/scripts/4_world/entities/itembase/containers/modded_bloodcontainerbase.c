@@ -8,13 +8,24 @@ modded class BloodContainerBase
 		RegisterNetSyncVariableBool("m_IsContainerSterilized");
 	}
 
+  override string GetDisplayName()
+	{
+    string itemName = super.GetDisplayName();
+    if (IsContainerSterile())
+    {
+      itemName = itemName + " Sterlizied";
+    }
+		return itemName;
+	}
+
   void SetIsSterilized(bool isSterile)
   {
+    // Print("Sterilized: " + isSterile);
     m_IsContainerSterilized = isSterile;
     SetSynchDirty();
   }
 
-  bool IsBloodContainerSterile()
+  bool IsContainerSterile()
   {
     return m_IsContainerSterilized;
   }
@@ -26,25 +37,25 @@ modded class ActionCollectBloodTargetLambda
 	override void CopyOldPropertiesToNew(notnull EntityAI old_item, EntityAI new_item)
 	{
 		super.CopyOldPropertiesToNew(old_item, new_item);
-    Print("[ActionCollectBloodTargetLambda] - CopyOldPropertiesToNew");
+    // Print("[ActionCollectBloodTargetLambda] - CopyOldPropertiesToNew");
 		if ( new_item )
 		{
-      Print("[ActionCollectBloodTargetLambda] - NEW ITEM");
+      // Print("[ActionCollectBloodTargetLambda] - NEW ITEM");
 			BloodContainerBase old_item_IB = BloodContainerBase.Cast(old_item);
 			BloodContainerBase new_item_IB = BloodContainerBase.Cast(new_item);
       if ( Class.CastTo(old_item_IB, BloodContainerBase.Cast(old_item)) && Class.CastTo(new_item_IB, BloodContainerBase.Cast(new_item)))
       {
-        Print("[ActionCollectBloodTargetLambda] - ITEMS ARE BLOOD CONTAINERS");
-        new_item_IB.SetIsSterilized(old_item_IB.IsBloodContainerSterile());
+        // Print("[ActionCollectBloodTargetLambda] - ITEMS ARE BLOOD CONTAINERS");
+        new_item_IB.SetIsSterilized(old_item_IB.IsContainerSterile());
         // if the old item is not sterilized
-        if (!old_item_IB.IsBloodContainerSterile())
+        if (!old_item_IB.IsContainerSterile())
         {
           // wound infection or hemolytic reaction?
           float diceRoll = Math.RandomFloatInclusive(0.3,0.9);
-          Print("[ActionCollectBloodTargetLambda] - OLD ITEM NOT STERILE - ROLL: " + diceRoll);
+          // Print("[ActionCollectBloodTargetLambda] - OLD ITEM NOT STERILE - ROLL: " + diceRoll);
           if (diceRoll > 0.5)
           {
-            Print("[ActionCollectBloodTargetLambda] - OLD ITEM NOT STERILE - INFECTED");
+            // Print("[ActionCollectBloodTargetLambda] - OLD ITEM NOT STERILE - INFECTED");
             m_Target.InsertAgent(eAgents.WOUND_AGENT);
           }
         }
@@ -68,7 +79,7 @@ modded class ActionGiveBloodSelf
     if (bloodContainer)
     {
       // Print("[ActionGiveBloodSelf] - Is Blood Container");
-      if (!bloodContainer.IsBloodContainerSterile())
+      if (!bloodContainer.IsContainerSterile())
       {
         float diceRoll = Math.RandomFloatInclusive(0.3,0.9);
         // Print("[ActionGiveBloodSelf] - OLD ITEM NOT STERILE - ROLL: " + diceRoll);
@@ -91,10 +102,10 @@ modded class ActionGiveBloodTarget
     ActionGiveBloodData action_data_b = ActionGiveBloodData.Cast( action_data );
     // Print("[ActionGiveBloodTarget] - Start: " + action_data_b);
     BloodContainerBase bloodContainer = BloodContainerBase.Cast(action_data_b.m_MainItem);
-    if (bloodContainer)4
+    if (bloodContainer)
     {
       // Print("[ActionGiveBloodTarget] - Is Blood Container");
-      if (!bloodContainer.IsBloodContainerSterile())
+      if (!bloodContainer.IsContainerSterile())
       {
         float diceRoll = Math.RandomFloatInclusive(0.3,0.9);
         // Print("[ActionGiveBloodTarget] - OLD ITEM NOT STERILE - ROLL: " + diceRoll);
