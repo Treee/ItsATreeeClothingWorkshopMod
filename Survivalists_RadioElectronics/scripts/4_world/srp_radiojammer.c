@@ -4,10 +4,6 @@ class SRP_ElectronicsJammer_Base extends Container_Base
   {
     GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(InitializeJammer, 500, false);
   }
-  void ~SRP_ElectronicsJammer_Base() 
-  {
-    Print("[SRP_ElectronicsJammer_Base] - Server Destroying object" + GetType() + " - " + GetPosition());
-  }
 
   void InitializeJammer()
   {
@@ -16,7 +12,7 @@ class SRP_ElectronicsJammer_Base extends Container_Base
       RadioElectronicsConfig config = GetDayZGame().GetRadioElectronicsConfig();
       if (config)
       {
-        Print("[SRP_ElectronicsJammer_Base] - " + GetType() + " - " + GetPosition());
+        // Print("[SRP_ElectronicsJammer_Base] - " + GetType() + " - " + GetPosition());
         SRPRadioTowerInfo tower = config.GetTowerBeingJammed(GetPosition());
         if (tower)
         {
@@ -30,6 +26,7 @@ class SRP_ElectronicsJammer_Base extends Container_Base
             config.DecrementActiveTowers();
             GetDayZGame().SaveRadioElectronicsConfig();
           }
+          LogRadioEvent();
         }
       }
     }
@@ -42,7 +39,7 @@ class SRP_ElectronicsJammer_Base extends Container_Base
       RadioElectronicsConfig config = GetDayZGame().GetRadioElectronicsConfig();
       if (config)
       {
-        Print("[SRP_ElectronicsJammer_Base] - DismantleJammer" + GetType() + " - " + GetPosition());
+        // Print("[SRP_ElectronicsJammer_Base] - DismantleJammer" + GetType() + " - " + GetPosition());
         SRPRadioTowerInfo tower = config.GetTowerBeingJammed(GetPosition());
         if (tower)
         {
@@ -56,10 +53,27 @@ class SRP_ElectronicsJammer_Base extends Container_Base
           {
             // do nothing, this tower is not jammed (how is that possible if we were jsut previously jamming)
           }
+          LogRadioEvent();
         }
       }
     }
   }
+
+  void LogRadioEvent()
+  {
+    // Print("[LogRadioEvent]");
+    if( GetGame().IsDedicatedServer() )
+    {
+      // Print("[LogRadioEvent] - SERVER ");
+      RadioElectronicsConfig config = GetDayZGame().GetRadioElectronicsConfig();
+      if (config && m_AdminLog)
+      {          
+        // Print("[LogRadioEvent] - SERVER - CONFIG");        
+        m_AdminLog.DirectAdminLogPrint( "[RADIO JAMMER] - [[IC RADIO ACTIVE]]::" + config.IsRadioNetworkWorking() + " [[IC RADIO MAX DELAY]]::" + config.GetMaxRadioDelay() + " [[Position]]::" + GetPosition() );
+      }
+    }
+  }
+
 
   override bool CanPutInCargo( EntityAI parent )
 	{

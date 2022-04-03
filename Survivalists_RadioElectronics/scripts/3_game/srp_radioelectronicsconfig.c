@@ -36,10 +36,9 @@ class RadioElectronicsConfig
 
   protected const int m_MaxNumberOfActiveRadioTowers = 22;
   protected int m_RequiredNumberOfActiveRadioTowers = 11;
-  protected int m_NumberOfActiveRadioTowers = 0;
-  protected int m_LastUpdateTime = 0;
+  protected int m_NumberOfActiveRadioTowers = 0;  
 
-  protected float m_ICRadioDelayMultiplier = 0;
+  protected const float m_ICRadioMaxDelay = 60;
 
   protected bool m_IsICRadioActive;
 
@@ -47,8 +46,6 @@ class RadioElectronicsConfig
   {
     Print("[RadioElectronicsConfig] - InitializeActiveTowers - saved active towers " + m_NumberOfActiveRadioTowers);
     m_NumberOfActiveRadioTowers = 0;
-    m_ICRadioDelayMultiplier = 0;
-    m_LastUpdateTime = 0;
     m_IsICRadioActive = true;
     Print("[RadioElectronicsConfig] - InitializeActiveTowers - " + m_NumberOfActiveRadioTowers);
     foreach(SRPRadioTowerInfo tower: m_RadioTowerInfo)
@@ -82,30 +79,8 @@ class RadioElectronicsConfig
     if (m_NumberOfActiveRadioTowers < m_MaxNumberOfActiveRadioTowers)
     {
       m_NumberOfActiveRadioTowers += numberoverride;
-      Print("IncrementActiveTowers: previous: " + (m_NumberOfActiveRadioTowers - 1) + " next: " + m_NumberOfActiveRadioTowers);
+      // Print("IncrementActiveTowers: previous: " + (m_NumberOfActiveRadioTowers - 1) + " next: " + m_NumberOfActiveRadioTowers);
     }
-
-    if (m_IsICRadioActive)
-    {
-      if (IsRadioNetworkWorking())
-      {
-        Print("[RadioElectronicsConfig] - IncrementActiveTowers - DISCORD CALL TO INCREASE IC RADIO SPEED");
-      }
-    }
-    else
-    {      
-      Print("[RadioElectronicsConfig] - IncrementActiveTowers - DISCORD CALL TO ENABLE IC RADIO");
-      m_IsICRadioActive = true;
-      m_LastUpdateTime = GetGame().GetTime();    
-    }
-    // if (!m_IsICRadioActive && IsRadioNetworkWorking())
-    // {
-    //   int timeDiff = GetGame().GetTime() - m_LastUpdateTime;
-    //   if (timeDiff > 300000)
-    //   {
-    //     // emit discord hook call to start ic radio
-    //   }
-    // }
   };
 
   void DecrementActiveTowers(int numberoverride = 1)
@@ -113,28 +88,33 @@ class RadioElectronicsConfig
     if (m_NumberOfActiveRadioTowers > 0)
     {
       m_NumberOfActiveRadioTowers -= numberoverride;
-      Print("DecrementActiveTowers: previous: " + (m_NumberOfActiveRadioTowers - 1) + " next: " + m_NumberOfActiveRadioTowers);
-    }
-
-    // if the radio is currently working
-    if (m_IsICRadioActive)
-    {
-      if (IsRadioNetworkWorking())
-      {
-        // emit discord hook call to stop slow radio
-        Print("[RadioElectronicsConfig] - DecrementActiveTowers - DISCORD CALL TO SLOW IC RADIO");
-      }
-      else
-      {
-        // emit discord hook call to stop ic radio
-        Print("[RadioElectronicsConfig] - DecrementActiveTowers - DISCORD CALL TO DISABLE IC RADIO");
-        m_IsICRadioActive = false;
-      }
+      // Print("DecrementActiveTowers: previous: " + (m_NumberOfActiveRadioTowers - 1) + " next: " + m_NumberOfActiveRadioTowers);
     }
   };
 
   bool IsRadioNetworkWorking()
   {
     return m_NumberOfActiveRadioTowers >= m_RequiredNumberOfActiveRadioTowers;
+  }
+
+  int GetNumberOfActiveTowers()
+  {
+    return m_NumberOfActiveRadioTowers;
+  }
+
+  int GetMaxRadioDelay()
+  {
+    int delay = m_ICRadioMaxDelay + (m_ICRadioMaxDelay * (1-GetRadioDelayMultiplier()));
+    if (delay < 5)
+    {
+      delay = 5;
+    }
+    // never let it post immediately, always a little delay
+    return delay;
+  }
+
+  float GetRadioDelayMultiplier()
+  {    
+    return GetNumberOfActiveTowers() / m_MaxNumberOfActiveRadioTowers;
   }
 };
