@@ -63,11 +63,18 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=50;
+					healthLevels[]=
+					{
+            {1.0,{"DZ\gear\medical\data\epipen.rvmat"}},
+            {0.69999999,{"DZ\gear\medical\data\epipen.rvmat"}},
+            {0.5,{"DZ\gear\medical\data\epipen.rvmat"}},
+            {0.30000001,{"DZ\gear\medical\data\epipen.rvmat"}},
+            {0.0,{"DZ\gear\medical\data\epipen_destruct.rvmat"}}
+					};
 				};
 			};
 		};
 	};
-
   //===============================MALE
   class SurvivorM_Mirek: SurvivorMale_Base
 	{

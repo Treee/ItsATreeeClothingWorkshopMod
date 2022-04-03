@@ -1,5 +1,7 @@
 # Change Log
 
+- Added Damage System for paint stick to show damaged state
+- Paint Stick takes 2 hp damage per use.
 - Paint face animation changed from 1s debug to shave face duration
 - Fixed having a target removed the action to paint face
 - Removed an unused net sync variable

@@ -14,7 +14,8 @@ class SRP_FacePaintStick: Inventory_Base
 	override void OnApply(PlayerBase player)
 	{
     // Print("PaintStick::OnApply() " + camoIndex);
-    player.SetFacePaint(camoIndex);    
+    player.SetFacePaint(camoIndex);
+    AddHealth(-2);
 	}
 };
 
