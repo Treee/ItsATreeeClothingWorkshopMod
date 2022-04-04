@@ -90,19 +90,4 @@ modded class BBP_Step_LadderKit
   }
 };
 
-modded class DUB_Gunframe
-{
-  override bool CanPutInCargo( EntityAI parent )
-	{
-		return GetInventory().AttachmentCount() == 0;
-	}
-};
-modded class DUB_Meleeframe
-{
-  override bool CanPutInCargo( EntityAI parent )
-	{
-		return GetInventory().AttachmentCount() == 0;
-	}
-};
-
 class DUB_Lich: Clothing{};
