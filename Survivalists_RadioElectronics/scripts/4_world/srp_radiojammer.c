@@ -1,4 +1,4 @@
-class SRP_ElectronicsJammer_Base extends Container_Base
+class SRP_ElectronicsJammer_Base extends House
 {
   void SRP_ElectronicsJammer_Base() 
   {
@@ -66,9 +66,10 @@ class SRP_ElectronicsJammer_Base extends Container_Base
     {
       // Print("[LogRadioEvent] - SERVER ");
       RadioElectronicsConfig config = GetDayZGame().GetRadioElectronicsConfig();
+      PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
       if (config && m_AdminLog)
       {          
-        // Print("[LogRadioEvent] - SERVER - CONFIG");        
+        // Print("[LogRadioEvent] - SERVER - CONFIG"); 
         m_AdminLog.DirectAdminLogPrint( "[RADIO JAMMER] - [[IC RADIO ACTIVE]]::" + config.IsRadioNetworkWorking() + " [[IC RADIO MAX DELAY]]::" + config.GetMaxRadioDelay() + " [[Position]]::" + GetPosition() );
       }
     }
