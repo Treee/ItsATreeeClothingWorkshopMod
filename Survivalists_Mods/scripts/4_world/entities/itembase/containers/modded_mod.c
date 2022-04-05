@@ -46,35 +46,6 @@ modded class MassNBC_Bag
 	}
 };
 
-modded class MassRatnik
-{
-	override bool IsTwoHandedBehaviour() 
-	{
-		return true;
-	}
-	override bool IsHeavyBehaviour() 
-	{
-		return true;
-	}
-};
-
-modded class Msp_Fridge_Base
-{
-	ref array<string> m_AllowedCargo = 
-  {
-    "SodaCan_ColorBase", 
-    "Bottle_Base",
-    "Edible_Base",
-    "SRP_FullSyringe_Base",
-    "SRP_InjectionVial_Base"
-  };
-
-  void ~Msp_Fridge_Base()
-  {
-    delete m_AllowedCargo;
-  }
-};
-
 modded class BBP_Step_LadderKit
 {
 	override void OnPlacementComplete( Man player, vector position = "0 0 0", vector orientation = "0 0 0" )

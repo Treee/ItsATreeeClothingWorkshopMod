@@ -50,8 +50,7 @@ class CfgPatches
       "MunghardsBrain",     // mung_brain
       "Munghardsmeleesling", // meleesling
       "Munghardsriflesling", // riflesling
-      "Mass_Textures", // MassNBC_Bag, MassRatnik, removing admin compass
-      "MSP_Scripts",    // MSP_Fridge_Base
+      "Mass_Textures", // MassNBC_Bag, removing admin compass
       "BaseBuildingPlus", // removing admin tools
       "deerisle" // for the map (security door)
 		};
