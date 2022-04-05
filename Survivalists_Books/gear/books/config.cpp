@@ -24,7 +24,7 @@ class CfgVehicles
 		file="Survivalists_Books\gear\books\data\book_Hunting.html";
     displayName="Worn Book";
 		descriptionShort="A worn book.";
-    rotationFlags=1;
+    rotationFlags=16;
     inventorySlot[]=
 		{
 			"Book",
