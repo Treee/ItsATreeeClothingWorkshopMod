@@ -23,7 +23,7 @@ class CfgVehicles
 
   //=-------------------------------------- CUSTOM STUFF
 
-	class SRP_AdvancedWorkbench: Container_Base // BP1_Workbench
+	class SRP_AdvancedWorkbench: Container_Base
 	{
 		scope=2;
 		displayName="Ammo Workbench";
@@ -118,7 +118,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_AmmoPress: Inventory_Base // AmmoPress
+	class SRP_AmmoPress: Inventory_Base
 	{
 		scope=2;
 		displayName="Ammo Prep";
@@ -169,7 +169,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_CasePrep: Inventory_Base  // CasePrep
+	class SRP_CasePrep: Inventory_Base
 	{
 		scope=2;
 		displayName="Case Prep";

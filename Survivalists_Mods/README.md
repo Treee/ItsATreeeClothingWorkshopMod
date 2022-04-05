@@ -746,6 +746,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Druid clothes" (https://skfb.ly/6uSOy) by ArtLeaving is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
+
+- https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic
+
 - https://freesound.org/people/djgriffin/sounds/591250/ (Tibetan chant example)
 - https://freesound.org/people/GregorQuendel/sounds/514509/ (Throat Singing Percussion Trailer.wav)
 - https://freesound.org/people/dkaufman/sounds/387563/ (Langtang, Nepal mountain chants)

@@ -25,8 +25,7 @@ class CfgVehicles
 
   // ----------------------- CUSTOM STUFF
 
-  // BP_PouchBottle_Black, BP_PouchBottle_Green, BP_PouchBottle_Tan non existent model and texture files
-  class SRP_WaterBottleBase: WaterBottle  // BP1_BootleColor_base
+  class SRP_WaterBottleBase: WaterBottle 
 	{
 		scope=0;
 		displayName="SRP BottleBase do no spawn";
@@ -58,7 +57,7 @@ class CfgVehicles
 		};
 	};
   
-  class SRP_AlcoholBase: Vodka  // new
+  class SRP_AlcoholBase: Vodka
 	{
 		scope=0;
 		displayName="SRP AlchoholBase do no spawn";
@@ -90,7 +89,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_SodaCanBase: SodaCan_ColorBase  // BP1_Dri_Base
+  class SRP_SodaCanBase: SodaCan_ColorBase
   {
     scope=0; // scope 1 dont spawn in
 		hiddenSelections[]=
@@ -110,7 +109,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_WineBottle: SRP_AlcoholBase  // new
+  class SRP_WineBottle: SRP_AlcoholBase
 	{
 		scope=2;
 		displayName="Bottle of Wine";
@@ -130,8 +129,7 @@ class CfgVehicles
     };
 	};
 
-
-	class SRP_PepsiBottle: SRP_WaterBottleBase  // BP1_bootle_pepsi
+	class SRP_PepsiBottle: SRP_WaterBottleBase
 	{
 		scope=2;
 		displayName="Pepsi";
@@ -146,7 +144,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_ZhiguliBeerBottle: SRP_WaterBottleBase  // BP1_bootle_sigul
+	class SRP_ZhiguliBeerBottle: SRP_WaterBottleBase
 	{
 		scope=2;
 		displayName="Zhiguli";
@@ -180,7 +178,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_SodaCanBaltika0: SRP_SodaCanBase  // BP1_baltika0
+	class SRP_SodaCanBaltika0: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Baltika 0";
@@ -195,7 +193,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_SodaCanBaltika7: SRP_SodaCanBase  // BP1_baltika7
+	class SRP_SodaCanBaltika7: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Baltika 7";
@@ -210,7 +208,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_SodaCanBaltika9: SRP_SodaCanBase  // BP1_baltika9
+	class SRP_SodaCanBaltika9: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Baltika 9";
@@ -225,7 +223,7 @@ class CfgVehicles
 		};
 	};
   
-	class SRP_SodaCanCherryCola: SRP_SodaCanBase  // BP1_cola_cherry
+	class SRP_SodaCanCherryCola: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Cherry Cola";
@@ -240,7 +238,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_SodaCanLemonade: SRP_SodaCanBase  // BP1_limonad
+	class SRP_SodaCanLemonade: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Lemonade";
@@ -255,7 +253,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_SodaCanTarhun: SRP_SodaCanBase  // BP1_tarhun
+	class SRP_SodaCanTarhun: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Tarhun Soda";
@@ -270,7 +268,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_SodaCan5HrEnergy: SRP_SodaCanBase  // BP1_tonik_5h
+	class SRP_SodaCan5HrEnergy: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Energy Drink";
@@ -285,7 +283,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_SodaCanElionVodka: SRP_SodaCanBase  // BP1_tonik_Elion
+	class SRP_SodaCanElionVodka: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Elion";
@@ -300,7 +298,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_SodaCanCocktail: SRP_SodaCanBase  // BP1_tonik_yagua
+	class SRP_SodaCanCocktail: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Jaguar";
@@ -315,7 +313,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_SodaCanAKDigital: SRP_SodaCanBase  // new
+  class SRP_SodaCanAKDigital: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="AK/AR Digital";
@@ -335,7 +333,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_SodaCan_Slim_DeadBull: SRP_SodaCanBase  // new (slim can varient)
+  class SRP_SodaCan_Slim_DeadBull: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Dead Bull";
@@ -355,7 +353,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_SodaCan_Medium_FreshWater: SRP_SodaCanBase  // new (medium size can varient)
+  class SRP_SodaCan_Medium_FreshWater: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Whater H20";
@@ -375,7 +373,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_SodaCan_Large_Saltika: SRP_SodaCanBase  // new (large size can varient)
+  class SRP_SodaCan_Large_Saltika: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Saltika";
@@ -395,7 +393,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_SodaBottle_DoublTap: SRP_SodaCanBase  // new (bottle variant)
+  class SRP_SodaBottle_DoublTap: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Doubl Tap";
@@ -414,7 +412,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
     };
 	};
-  class SRP_SodaBottle_Electric: SRP_SodaCanBase  // new (bottle variant)
+  class SRP_SodaBottle_Electric: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Electric";
@@ -433,7 +431,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
     };
 	};
-  class SRP_SodaBottle_Juggernaut: SRP_SodaCanBase  // new (bottle variant)
+  class SRP_SodaBottle_Juggernaut: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Juggernaut";
@@ -452,7 +450,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
     };
 	};
-  class SRP_SodaBottle_Reviver: SRP_SodaCanBase  // new (bottle variant)
+  class SRP_SodaBottle_Reviver: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Revival";
@@ -471,7 +469,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
     };
 	};
-  class SRP_SodaBottle_Speedy: SRP_SodaCanBase  // new (bottle variant)
+  class SRP_SodaBottle_Speedy: SRP_SodaCanBase
 	{
 		scope=2;
 		displayName="Speedy";
@@ -490,7 +488,6 @@ class CfgVehicles
       "Survivalists_Mods\gear\drinks\data\bottlebeer_zombiesoda.rvmat"
     };
 	};
-
 
   // ------------------------------- MVS Redux
   class SRP_MilitaryCanteen_Base: Canteen
@@ -525,79 +522,6 @@ class CfgVehicles
           };
 				};
 			};
-		};		
-	};
-
-	class SRP_MilitaryCanteen_OD: SRP_MilitaryCanteen_Base
-	{
-		scope=2;
-		displayName="Military Canteen - OD";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\canteen_co.paa"
-		};		
-	};
-	class SRP_MilitaryCanteen_ERDL: SRP_MilitaryCanteen_Base
-	{
-		scope=2;
-		displayName="Military Canteen - ERDL";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\canteen_co_ERDL.paa"
-		};		
-	};
-	class SRP_MilitaryCanteen_Tan: SRP_MilitaryCanteen_Base
-	{
-		scope=2;
-		displayName="Military Canteen - Tan";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\canteen_co_Tan.paa"
-		};		
-	};
-	class SRP_MilitaryCanteen_Black: SRP_MilitaryCanteen_Base
-	{
-		scope=2;
-		displayName="Military Canteen - Black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\canteen_co_Black.paa"
-		};		
-	};
-	class SRP_MilitaryCanteen_Snow: SRP_MilitaryCanteen_Base
-	{
-		scope=2;
-		displayName="Military Canteen - Snow";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\canteen_co_Snow.paa"
-		};		
-	};
-	class SRP_MilitaryCanteen_Multicam: SRP_MilitaryCanteen_Base
-	{
-		scope=2;
-		displayName="Military Canteen - Multicam";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\canteen_co_MC.paa"
-		};		
-	};
-	class SRP_MilitaryCanteen_Multicam_Tropic: SRP_MilitaryCanteen_Base
-	{
-		scope=2;
-		displayName="Military Canteen - Multicam Tropic";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\canteen_co_MC_Tropic.paa"
-		};		
-	};
-	class SRP_MilitaryCanteen_Multicam_Black: SRP_MilitaryCanteen_Base
-	{
-		scope=2;
-		displayName="Military Canteen - Multicam Black";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\drinks\data\canteen_co_MC_Black.paa"
 		};		
 	};
 };
