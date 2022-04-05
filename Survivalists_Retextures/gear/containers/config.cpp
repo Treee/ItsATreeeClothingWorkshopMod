@@ -70,7 +70,6 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\containers\data\teddybear_yellow_co.paa"
 		};
 	};
-
   class Bear_Arbi: Bear_ColorBase
 	{
 		scope=2;
