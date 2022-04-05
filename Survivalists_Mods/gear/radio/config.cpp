@@ -107,7 +107,7 @@ class CfgVehicles
   };
 
   //----------------------------------- Custom Stuff
-  class SRP_PersonalRadio_NumberStations: Inventory_Base  // new
+  class SRP_PersonalRadio_NumberStations: Inventory_Base
   {
 		scope=2;
 		displayName="Strange Radio";
@@ -146,7 +146,7 @@ class CfgVehicles
   };
 
   // 500 range
-  class SRP_PersonalRadioSmallRed_Handheld: PersonalRadio  // Motorola1-5
+  class SRP_PersonalRadioSmallRed_Handheld: PersonalRadio
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
@@ -166,7 +166,7 @@ class CfgVehicles
   };
 
   // 1km range
-  class SRP_PersonalRadioSmallYellow_Handheld: PersonalRadio  // Motorola1-5
+  class SRP_PersonalRadioSmallYellow_Handheld: PersonalRadio
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
@@ -185,7 +185,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_PersonalRadioSmallWhite_Handheld: PersonalRadio  // Motorola1-5
+  class SRP_PersonalRadioSmallWhite_Handheld: PersonalRadio
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
@@ -205,7 +205,7 @@ class CfgVehicles
   };
 
   // 2.5km range
-  class SRP_PersonalRadioSmallGreen_Handheld: PersonalRadio  // Motorola1-5
+  class SRP_PersonalRadioSmallGreen_Handheld: PersonalRadio
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
@@ -224,7 +224,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_PersonalRadioSmallBlue_Handheld: PersonalRadio  // Motorola1-5
+  class SRP_PersonalRadioSmallBlue_Handheld: PersonalRadio
   {
 		scope=2;
 		displayName="Small Hand Held Radio";
@@ -244,7 +244,7 @@ class CfgVehicles
   };
 
   // 5km range
-  class SRP_PersonalRadio_Handheld: PersonalRadio  // new
+  class SRP_PersonalRadio_Handheld: PersonalRadio
   {
 		scope=2;
 		displayName="Hand Held Radio";
@@ -267,7 +267,7 @@ class CfgVehicles
   };
 
   // 7.5km range
-  class SRP_PersonalRadio_LongRange: PersonalRadio  // SRPLRRadio
+  class SRP_PersonalRadio_LongRange: PersonalRadio
 	{
 		scope=2;
 		displayName="Military Radio";
@@ -295,7 +295,7 @@ class CfgVehicles
 	};
 
   // sneaky radio
-  class SRP_PersonalRadio_SneakyBear: PersonalRadio  // Motorola1-5
+  class SRP_PersonalRadio_SneakyBear: PersonalRadio
   {
 		scope=2;
 		displayName="Teddy Bear";

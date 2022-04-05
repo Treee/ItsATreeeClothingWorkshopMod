@@ -63,7 +63,7 @@ class CfgVehicles
   
   // ------------------------------------------ Custom Stuff
   
-  class SRP_ItemOptics_CanScope: ItemOptics // SRP_cancog
+  class SRP_ItemOptics_CanScope: ItemOptics
 	{
 		scope=2;
 		displayName="Crafted Sight";
@@ -120,7 +120,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_ItemOptics_AKCanScope: ItemOptics // SRP_ak_cancog
+	class SRP_ItemOptics_AKCanScope: ItemOptics
 	{
 		displayName="Crafted AK Mount & Sight";
 		descriptionShort="A tin can that has been modified with some wire to resemble something along the lines of a weapons optic. This versoin has an L Bracket attatched to it so that it may be attatched to an AK or Mosin. Also known as the CanCog";
