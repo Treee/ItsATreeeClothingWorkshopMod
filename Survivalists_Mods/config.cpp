@@ -46,6 +46,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
+			"DZ_Scripts",
       "Munghardssleepingbag", // munghards
       "Munghardsmeleesling", // meleesling
       "Munghardsriflesling", // riflesling
@@ -60,7 +61,7 @@ class CfgVehicles
 {
   class Inventory_Base;
 
-  class SRP_KitBase: Inventory_Base //SRP_dec_base
+  class SRP_KitBase: Inventory_Base
 	{
 		scope=0; //0 means cannot be directly spawned
 		displayName="Kit Box";
