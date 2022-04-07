@@ -47,7 +47,6 @@ class CfgPatches
 		{
 			"DZ_Data",
       "Munghardssleepingbag", // munghards
-      "MunghardsBrain",     // mung_brain
       "Munghardsmeleesling", // meleesling
       "Munghardsriflesling", // riflesling
       "Mass_Textures", // MassNBC_Bag, removing admin compass
