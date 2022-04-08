@@ -322,4 +322,114 @@ class CfgVehicles
 			};
 		};
 	};
+
+  //-------------------------------- Music Tapes
+  class Cassette;
+	class SRPRadio_CassetteTape_DeerIsleBase: Cassette
+	{
+		displayName="Cassette Tape";
+		descriptionShort="Cassette tape that has a recording.";
+		weight=100;
+		repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+		inventorySlot[]=
+		{
+      "SRP_Cassette",
+			"Cassette",
+			"Cassette2",
+			"Cassette3",
+			"Cassette4",
+			"Cassette5",
+			"Cassette6",
+			"Cassette7",
+			"Cassette8",
+			"Cassette9",
+			"Cassette10",
+			"Cassette11",
+			"Cassette12",
+			"Cassette13",
+			"Cassette14",
+			"Cassette15",
+			"Cassette16",
+			"Cassette17",
+			"Cassette18",
+			"Cassette19",
+			"Cassette20",
+			"Cassette21",
+			"Cassette22",
+			"Cassette23",
+			"Cassette24",
+			"Cassette25",
+			"Cassette26"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"DZ\gear\tools\data\cassette_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\gear\tools\data\cassette.rvmat"}},
+            {0.69999999,{"DZ\gear\tools\data\cassette.rvmat"}},
+            {0.5,{"DZ\gear\tools\data\cassette_damage.rvmat"}},
+            {0.30000001,{"DZ\gear\tools\data\cassette_damage.rvmat"}},
+            {0.0,{"DZ\gear\tools\data\cassette_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class CfgCassette
+		{
+		};
+	};
+
+	class SRPRadio_CassetteTape_DeerIsleMusicTape1: SRPRadio_CassetteTape_DeerIsleBase
+	{
+		scope=2;
+		displayName="Strange Recording";
+		descriptionShort="A strange recording.";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_DeerIsleMusicTape1_SoundSet1";
+		};
+	};
+};
+
+class CfgSoundShaders
+{
+	class SRPRadio_Cassette_DeerIsle_SoundShader_Base
+	{
+		samples[]={};
+		frequency=1;
+		range=80;
+		volume=1.2;
+	};
+	class SRPRadio_DeerIsleMusicTape1_Shader1: SRPRadio_Cassette_DeerIsle_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_TestMod\sounds\data\elevator-morse.ogg",1}
+		};
+	};
+};
+
+class CfgSoundSets
+{
+	class SRPRadio_DeerIsleMusicTape1_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_DeerIsleMusicTape1_Shader1"
+		};
+	};
 };

@@ -226,6 +226,20 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\anger.ogg",1}
 		};
 	};
+  class SRPRadio_Kalasnjikov_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Kalasnjikov By Goran Bregovic.ogg",1}
+		};
+	};
+  class SRPRadio_HejSekiSeki_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Lepa Brena - Hej Seki Seki.ogg",1}
+		};
+	};
 };
 
 class CfgSoundSets
@@ -431,6 +445,20 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"SRPRadio_Gague_Anger_Shader1"
+		};
+	};
+  class SRPRadio_Kalasnjikov_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_Kalasnjikov_Shader1"
+		};
+	};
+  class SRPRadio_HejSekiSeki_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_HejSekiSeki_Shader1"
 		};
 	};
 };

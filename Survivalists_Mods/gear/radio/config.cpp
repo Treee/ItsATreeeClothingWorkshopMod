@@ -675,6 +675,26 @@ class CfgVehicles
 			soundSet="SRPRadio_Gague_Anger_SoundSet1";
 		};
 	};
+  class SRPRadio_CassetteTape_Kalasnjikov: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Kalasanjikov";
+		descriptionShort="Music Tape - Goran Bregovic";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Kalasnjikov_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_HejSekiSeki: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Hej Seki Seki";
+		descriptionShort="Music Tape - Lepa Brena";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_HejSekiSeki_SoundSet1";
+		};
+	};
 
   // -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base
