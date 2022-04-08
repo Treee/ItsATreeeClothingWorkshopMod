@@ -49,7 +49,7 @@ modded class ActionGiveSalineTarget
         }
       }
     }
-    super.OnFinishProgressServer(action_data)
+    super.OnFinishProgressServer(action_data);
   }
 };
 
@@ -72,6 +72,6 @@ modded class ActionGiveSalineSelf
         }
       }
     }
-    super.OnFinishProgressServer(action_data)
+    super.OnFinishProgressServer(action_data);
   }
 };
