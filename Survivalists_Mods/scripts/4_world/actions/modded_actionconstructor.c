@@ -31,5 +31,7 @@ modded class ActionConstructor
     actions.Insert(ActionFlipPlayingCard); 
 
     actions.Insert(ActionTuneCrypticFrequency);
+
+    actions.Insert(ActionSRPSealLetter);
 	}
 };

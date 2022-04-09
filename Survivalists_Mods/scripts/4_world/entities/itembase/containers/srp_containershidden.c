@@ -82,6 +82,16 @@ class SRP_HiddenStash_Guts extends SRP_HiddenStash_Base{};
 class SRP_HiddenStash_Teddy extends SRP_HiddenStash_Base{};
 
 
+class SRP_SealPress_ColorBase extends Inventory_Base
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSealLetter);
+	}
+};
+
+
 class SRP_UnSealedLetter extends Inventory_Base
 {
   override bool CanReceiveAttachment(EntityAI attachment, int slotId)
@@ -112,7 +122,7 @@ class SRP_SealedLetter_ColorBase extends Inventory_Base
 
 	override bool CanReceiveAttachment(EntityAI attachment, int slotId)
 	{
-		if (attachment && (attachment.IsKindOf("Paper") || attachment.IsKindOf("WrittenNote")) )
+		if (attachment && (attachment.IsKindOf("Paper") || attachment.IsKindOf("WrittenNote") || attachment.GetType() == "WrittenNote") )
 			return super.CanReceiveAttachment( attachment, slotId );
 		
 		return false;
