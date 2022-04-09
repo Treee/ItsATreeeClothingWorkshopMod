@@ -49,7 +49,7 @@ class CfgVehicles
 			"Survivalists_Retextures\externalmodretextures\windstrides\data\kneepads_jeans_olive_co.paa"
 		};
 	};
-  class Kneepads_Jeans_Black: Kneepads_Jeans_Base
+  class Kneepads_Jeans_Fred: Kneepads_Jeans_Base
 	{
 		scope=2;
 		visibilityModifier=0.80000001;

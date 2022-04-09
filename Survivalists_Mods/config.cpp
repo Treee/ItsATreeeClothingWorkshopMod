@@ -52,6 +52,7 @@ class CfgPatches
       "Munghardsriflesling", // riflesling
       "Mass_Textures", // MassNBC_Bag, removing admin compass
       "BaseBuildingPlus", // removing admin tools
+      "Notes_Gear", // WrittenNote from notes
       "deerisle" // for the map (security door)
 		};
 	};
