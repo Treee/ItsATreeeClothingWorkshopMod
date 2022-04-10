@@ -15,6 +15,7 @@ class CfgPatches
 
 class CfgVehicles
 {
+  class Canteen;
   class SRP_MilitaryCanteen_Base;
 
 	class SRP_MilitaryCanteen_OD: SRP_MilitaryCanteen_Base
@@ -88,6 +89,67 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\gear\drinks\data\canteen_co_MC_Black.paa"
 		};		
+	};
+
+  class SRP_Canteen_Blue: Canteen
+	{
+		scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\drinks\data\canteen_blue_co.paa"
+    };
+	};
+  class SRP_Canteen_Pink: Canteen
+	{
+		scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\drinks\data\canteen_pink_co.paa"
+    };
+	};
+  class SRP_Canteen_Purple: Canteen
+	{
+		scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\drinks\data\canteen_purple_co.paa"
+    };
+	};
+  class SRP_Canteen_Neon: Canteen
+	{
+		scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\drinks\data\canteen_neon_co.paa"
+    };
+	};
+  class SRP_Canteen_Red: Canteen
+	{
+		scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\gear\drinks\data\canteen_red_co.paa"
+    };
 	};
 
 };

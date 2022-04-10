@@ -829,10 +829,6 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\gear\camping\data\alpocalypseguitar_co.paa"
 		};
-    hiddenSelectionsMaterials[]=
-		{
-			"Survivalists_Mods\gear\camping\data\alpocalypseguitar.rvmat"
-		};
 		class AnimEvents
 		{
 			class SoundWeapon
