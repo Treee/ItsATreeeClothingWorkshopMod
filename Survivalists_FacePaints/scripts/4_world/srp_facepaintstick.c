@@ -15,7 +15,15 @@ class SRP_FacePaintStick: Inventory_Base
 	{
     // Print("PaintStick::OnApply() " + camoIndex);
     player.SetFacePaint(camoIndex);
-    AddHealth(-2);
+    if (GetDayZGame().GetSRPFacePaintConfig())
+    {
+      float dmg = GetDayZGame().GetSRPFacePaintConfig().GetPaintStickDamagerPerUse();
+      AddHealth(-dmg);
+    }
+    else
+    {
+      AddHealth(-2);
+    }
 	}
 };
 

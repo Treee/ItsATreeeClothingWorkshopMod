@@ -6,14 +6,24 @@ class CfgMods
 		author="ItsATreee";
 		name="Survivalists_FacePaints";
 		dir="Survivalists_FacePaints";
-		dependencies[]={"World"};
+    dependencies[]={"Game","World","Mission"};
 		class defs
 		{
+			class gameScriptModule
+			{
+				value="";
+        files[]={"Survivalists_FacePaints/scripts/3_game"};			
+      };
 			class worldScriptModule
 			{
 				value="";
         files[]={"Survivalists_FacePaints/scripts/4_world"};			
       };
+      class missionScriptModule
+			{
+				value="";
+				files[]={"Survivalists_FacePaints/scripts/5_mission"};
+			};
 		};
 	};
 };

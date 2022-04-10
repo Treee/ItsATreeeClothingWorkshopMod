@@ -20,6 +20,25 @@ modded class PlayerBase
     }
 	}
 
+  override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
+  {
+    super.OnRPC(sender, rpc_type, ctx);
+
+    switch(rpc_type)
+    {
+      case SRP_FACEPAINT_RPC.CHECK_SRP_FACEPAINT_CONFIG: // this case is for grabbing FacePaint config from the server
+      {
+        Param1<SRPFacePaintConfig> configParams;
+        if(!ctx.Read(configParams))
+        {
+          return;        
+        }
+        GetDayZGame().SetSRPFacePaintConfig(configParams.param1);
+        break;
+      }
+    }
+  }
+
   void SetFacePaint(int index)
   {
     m_FacePaintState = index;
