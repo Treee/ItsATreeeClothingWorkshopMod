@@ -1,5 +1,6 @@
 # Change Log
 
+- Added a server config file to set the damage of the paint stick
 - Added Damage System for paint stick to show damaged state
 - Paint Stick takes 2 hp damage per use.
 - Paint face animation changed from 1s debug to shave face duration
