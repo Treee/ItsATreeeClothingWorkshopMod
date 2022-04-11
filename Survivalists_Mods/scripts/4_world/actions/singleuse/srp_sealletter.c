@@ -34,9 +34,12 @@ class ActionSRPSealLetter extends ActionSingleUseBase
     if (action_data.m_Target && action_data.m_Target.GetObject())
     {
       string sealedLetterColor = action_data.m_MainItem.ConfigGetString("color");
-      TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_Target.GetObject(), "SRP_SealedLetter_" + sealedLetterColor, action_data.m_Player);
-      lambda.SetTransferParams(true, true, true, false, 1);
-      action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
+      if (sealedLetterColor != "clean")
+      {
+        TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_Target.GetObject(), "SRP_SealedLetter_" + sealedLetterColor, action_data.m_Player);
+        lambda.SetTransferParams(true, true, true, false, 1);
+        action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
+      }
     }
 	}
 };

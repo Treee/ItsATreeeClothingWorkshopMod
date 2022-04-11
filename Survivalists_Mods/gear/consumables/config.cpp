@@ -830,6 +830,20 @@ class CfgVehicles
 	};
 
   //========================================================= CONCRETES
+  class SRP_SealPress_Clean: SRP_SealPress_ColorBase
+  {
+    scope=2;
+    displayName="Seal Press - Clean";
+    color="clean";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_sealedletter_co.paa"
+    };
+  };
   class SRP_SealPress_Black: SRP_SealPress_ColorBase
   {
     scope=2;
