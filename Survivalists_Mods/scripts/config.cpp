@@ -118,6 +118,43 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
 	};
 
+  //======================= COINAGE
+  class Slot_SRP_CoinPlatinum
+	{
+		name="SRP_CoinPlatinum";
+		displayName="Platinum Coins";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=1000;
+	};
+  class Slot_SRP_CoinIron
+	{
+		name="SRP_CoinIron";
+		displayName="Iron Coins";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=1000;
+	};
+  class Slot_SRP_CoinGold
+	{
+		name="SRP_CoinGold";
+		displayName="Gold Coins";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=1000;
+	};
+  class Slot_SRP_CoinBronze
+	{
+		name="SRP_CoinBronze";
+		displayName="Bronze Coins";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=1000;
+	};
+  class Slot_SRP_CoinCopper
+	{
+		name="SRP_CoinCopper";
+		displayName="Copper Coins";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=1000;
+	};
+
   //===================== CUSTOM
   class Slot_Compass
 	{

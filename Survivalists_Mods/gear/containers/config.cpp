@@ -2037,6 +2037,14 @@ class CfgVehicles
 		{
 			"VestPouch"
 		};
+    attachments[]=
+    {
+      "SRP_CoinPlatinum",
+      "SRP_CoinIron",
+      "SRP_CoinGold",
+      "SRP_CoinBronze",
+      "SRP_CoinCopper"
+    };
     itemSize[]={3,3};
 		itemsCargoSize[]={3,3};
     repairableWithKits[]={5,2};
@@ -2066,6 +2074,14 @@ class CfgVehicles
 		{
 			"VestPouch"
 		};
+    attachments[]=
+    {
+      "SRP_CoinPlatinum",
+      "SRP_CoinIron",
+      "SRP_CoinGold",
+      "SRP_CoinBronze",
+      "SRP_CoinCopper"
+    };
     itemSize[]={4,4};
 		itemsCargoSize[]={4,4};
     repairableWithKits[]={5,2};
@@ -2098,6 +2114,14 @@ class CfgVehicles
 		{
 			"VestPouch"
 		};
+    attachments[]=
+    {
+      "SRP_CoinPlatinum",
+      "SRP_CoinIron",
+      "SRP_CoinGold",
+      "SRP_CoinBronze",
+      "SRP_CoinCopper"
+    };
     itemSize[]={3,3};
 		itemsCargoSize[]={3,3};
     repairableWithKits[]={5,2};

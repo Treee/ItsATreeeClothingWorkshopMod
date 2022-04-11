@@ -383,6 +383,7 @@ class CfgVehicles
 		displayName="Metal Coin - Platinum";
 		model="Survivalists_Mods\gear\mining\srp_coinage_platinum.p3d";
     color="platinum";
+    inventorySlot[]={"SRP_CoinPlatinum"};
   };
 
   class SRP_Coinage_Iron: SRP_Coinage_ColorBase
@@ -391,6 +392,7 @@ class CfgVehicles
 		displayName="Metal Coin - Iron";
 		model="Survivalists_Mods\gear\mining\srp_coinage_iron.p3d";
     color="iron";
+    inventorySlot[]={"SRP_CoinIron"};
   };
 
   class SRP_Coinage_Gold: SRP_Coinage_ColorBase
@@ -399,6 +401,7 @@ class CfgVehicles
 		displayName="Metal Coin - Gold";
 		model="Survivalists_Mods\gear\mining\srp_coinage_gold.p3d";
     color="gold";
+    inventorySlot[]={"SRP_CoinGold"};
   };
 
   class SRP_Coinage_GoldWorn: SRP_Coinage_ColorBase
@@ -415,6 +418,7 @@ class CfgVehicles
 		displayName="Metal Coin - Bronze";
 		model="Survivalists_Mods\gear\mining\srp_coinage_bronze.p3d";
     color="bronze";
+    inventorySlot[]={"SRP_CoinBronze"};
   };
 
   class SRP_Coinage_Copper: SRP_Coinage_ColorBase
@@ -423,6 +427,7 @@ class CfgVehicles
 		displayName="Metal Coin - Copper";
 		model="Survivalists_Mods\gear\mining\srp_coinage_copper.p3d";
     color="copper";
+    inventorySlot[]={"SRP_CoinCopper"};
   };
 
   class SRP_Coinage_GoldWorn_Arbiters: SRP_Coinage_GoldWorn
