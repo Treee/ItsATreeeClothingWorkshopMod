@@ -123,7 +123,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="dz\characters\data\generic_damage_mc.paa";
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -184,6 +184,6 @@ class Stage7
 };
 class Stage8
 {
-  texture="Survivalists_Mods\gear\mining\data\srp_mining_gem_a_e_co.paa";
+  texture="Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_e_co.paa";
   texGen="0";
 };

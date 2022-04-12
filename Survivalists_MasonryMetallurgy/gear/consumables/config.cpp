@@ -16,7 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
   class Inventory_Base;
-  
+
 //==================================== STONE CHUNK WITH ORE
   class SRP_Mining_StoneChunk_ColorBase: Inventory_Base
   {
@@ -246,4 +246,212 @@ class CfgVehicles
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_platinum_raw_co.paa"
 		};
 	};
+//==================================== GEMS BEST -> WORST
+  class SRP_Mining_Crystal_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="SRP_Mining_Crystal_ColorBase Do Not Spawn";
+		descriptionShort="SRP_Mining_Crystal_ColorBase Do Not Spawn";
+		model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+		animClass="NoFireClass";
+    color="base";
+		weight=500;
+		itemSize[]={1,2};
+    canBeSplit=1;
+		varQuantityDestroyOnMin=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		inventorySlot[]={};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_red_ca.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a.rvmat"}},
+            {0.69999999,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a.rvmat"}},
+            {0.5,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_damage.rvmat"}},
+            {0.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_Crystal_A_Red: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_red";
+		displayName="Exquisite Gem - Ruby";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_red_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_Blue: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_Blue";
+		displayName="Exquisite Gem - Sapphire";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_blue_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_Green: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_Green";
+		displayName="Exquisite Gem - Emerald";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_Green_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_Purple: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_Purple";
+		displayName="Exquisite Gem - Amethyst";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_Purple_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_LightBlue: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_lightblue";
+		displayName="Exquisite Gem - Aquamarine";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_lightblue_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_Orange: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_orange";
+		displayName="Exquisite Gem - Citrine";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_orange_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_Clear: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_clear";
+		displayName="Exquisite Gem - Diamond";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_clear_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_Yellow: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_yellow";
+		displayName="Exquisite Gem - Topaz";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_yellow_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_Pink: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_pink";
+		displayName="Exquisite Gem - Quartz";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_pink_ca.paa"
+		};
+  };
+  class SRP_Mining_Crystal_A_Rainbow: SRP_Mining_Crystal_ColorBase
+	{
+		scope=2;
+    color="a_rainbow";
+		displayName="Exquisite Gem - Opal";
+		descriptionShort="An exquisite gem pulled from the depths of the earth.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_rainbow_ca.paa"
+		};
+  };
 };
