@@ -748,6 +748,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "seal and letter" (https://skfb.ly/6A6ZR) by Loïc is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Stylized Crystal Gem pack - Handpainted" (https://skfb.ly/oqvUq) by ashkan.fancy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic
