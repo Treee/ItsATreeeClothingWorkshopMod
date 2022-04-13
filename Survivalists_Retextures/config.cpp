@@ -17,6 +17,7 @@ class CfgPatches
 			"Windstrideclothing",
 			"Munghardsponcho",
       "Dressupbox",
+      "Survivalists_MasonryMetallurgy",
 			"Survivalists_Mods"
 		};
 	};
