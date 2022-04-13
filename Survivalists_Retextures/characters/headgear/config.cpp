@@ -1339,7 +1339,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_EarProtection_ColorBase_OD: SRP_EarProtection_ColorBase
+  class SRP_EarProtection_OD: SRP_EarProtection_ColorBase
 	{
 		scope=2;
 		displayName="Ear Protection - OD";
@@ -1350,7 +1350,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co.paa"
 		};
 	};
-	class SRP_EarProtection_ColorBase_Tan: SRP_EarProtection_ColorBase
+	class SRP_EarProtection_Tan: SRP_EarProtection_ColorBase
 	{
 		scope=2;
 		displayName="Ear Protection - Tan";
@@ -1361,7 +1361,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Tan.paa"
 		};
 	};
-	class SRP_EarProtection_ColorBase_Black: SRP_EarProtection_ColorBase
+	class SRP_EarProtection_Black: SRP_EarProtection_ColorBase
 	{
 		scope=2;
 		displayName="Ear Protection - Black";

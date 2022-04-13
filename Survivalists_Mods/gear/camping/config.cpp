@@ -1604,19 +1604,6 @@ class CfgVehicles
 		physLayer="item_small";
 	};
 
-  class SRP_MetalBucket: Inventory_Base  // new
-	{
-		scope=2;
-		displayName="Bucket";
-		descriptionShort="Holds stuff inside if you hold it upright.";
-		model="Survivalists_Mods\gear\camping\srp_bucket.p3d";
-		weight=250;
-		itemSize[]={3,3};
-		absorbency=0.30000001;
-    varTemperatureMax=1500;
-		physLayer="item_small";
-	};
-
   class SRP_BoatPaddle: Paddle
   {
 		scope=2;

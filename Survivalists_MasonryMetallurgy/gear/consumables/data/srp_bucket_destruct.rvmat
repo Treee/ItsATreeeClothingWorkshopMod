@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\gear\camping\data\alpocalypseguitar_nohq.paa";
+	texture="Survivalists_MasonryMetallurgy\gear\consumables\data\srp_bucket_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -32,19 +32,19 @@ class Stage2
 };
 class Stage3
 {
-  texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	texture="dz\characters\data\generic_destruct_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{
-		aside[]={0,3,0};
-		up[]={3,0,0};
+		aside[]={1,0,0};
+		up[]={0,1,0};
 		dir[]={0,0,0};
 		pos[]={0,0,0};
 	};
 };
 class Stage4
 {
-	texture="Survivalists_Mods\gear\camping\data\alpocalypseguitar_as.paa";
+	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\gear\camping\data\alpocalypseguitar_smdi.paa";
+	texture="Survivalists_MasonryMetallurgy\gear\consumables\data\srp_bucket_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
