@@ -11,8 +11,6 @@ class CfgPatches
 
 class CfgSlots
 {
-  //=====================BASE GAME OVERRIDE
-
   //====================WEAPON CRAFTING SLOTS
   class Slot_SRP_GunBarrel
 	{
@@ -857,13 +855,6 @@ class CfgSlots
 	// 	displayName="Hand Tool";
 	// 	ghostIcon="set:dayz_inventory image:missing";
 	// };
-  class Slot_SRP_ForgeBellows
-	{
-		name="SRP_ForgeBellows";
-		displayName="Bellows";
-    ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-	};
-
   class Slot_SRP_Patch
   {
 		name="SRP_Patch";
@@ -993,24 +984,6 @@ class CfgSlots
 		displayName="Metal Rod";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=10;
-  };
-  class Slot_SRP_Crucible
-  {
-		name="SRP_Crucible";
-		displayName="Hot Crucible";
-		ghostIcon="set:dayz_inventory image:missing";
-  };
-  class Slot_SRP_IngotMold
-  {
-		name="SRP_IngotMold";
-		displayName="Hot Ingot Mold";
-		ghostIcon="set:dayz_inventory image:missing";
-  };
-  class Slot_SRP_Ingot
-  {
-		name="SRP_Ingot";
-		displayName="Hot Ingot";
-		ghostIcon="set:dayz_inventory image:missing";
   };
 
   class Slot_SRP_Katana
@@ -1792,13 +1765,6 @@ class CfgNonAIVehicles
     inventorySlot[]={"SRP_SkeletonLegRight"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_skeletonlegright_proxy.p3d"; //proxy path 
   };
-  class Proxyforge_stoneadvancedbellows: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_ForgeBellows"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\forge_stoneadvancedbellows.p3d"; //proxy path 
-  };
-
   class Proxysrp_pouch_magazine_proxy1: ProxyAttachment //same as p3d name
   {
     scope = 2;
@@ -1923,24 +1889,6 @@ class CfgNonAIVehicles
     model = "Survivalists_Mods\proxy\srp_cardhand_proxy5.p3d"; //proxy path 
   };
 
-  class Proxysrp_crucible_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_Crucible"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_crucible_proxy.p3d"; //proxy path 
-  };
-  class Proxysrp_ingotmold_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_IngotMold"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_ingotmold_proxy.p3d"; //proxy path 
-  };
-  class Proxysrp_ingot_proxy: ProxyAttachment //same as p3d name
-  {
-    scope = 2;
-    inventorySlot[] = {"SRP_Ingot"}; // same as slot name 
-    model = "Survivalists_Mods\proxy\srp_ingot_proxy.p3d"; //proxy path 
-  };
   class Proxysrp_katana_proxy: ProxyAttachment //same as p3d name
   {
     scope = 2;
