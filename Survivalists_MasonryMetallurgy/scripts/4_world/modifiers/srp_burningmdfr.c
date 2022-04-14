@@ -7,7 +7,7 @@ class SRP_BurningMdfr: ModifierBase
 	{
 		m_TrackActivatedTime = false;
 		m_IsPersistent = false;
-		m_ID 					= SRP_eModifiers.MDF_SRPBURNING;
+		m_ID 					= SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING;
 		m_TickIntervalInactive 	= DEFAULT_TICK_TIME_INACTIVE_LONG;
 		m_TickIntervalActive 	= DEFAULT_TICK_TIME_ACTIVE;		
 		DisableActivateCheck();
@@ -52,7 +52,26 @@ class SRP_BurningMdfr: ModifierBase
   {
     player.AddHealth("", "Blood", -250); //do 350 blood dmg
     player.AddHealth("", "", -25); //do 35 dmg
-    player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
-    player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+    player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(GetDamageZones_Light().GetRandomElement());
+    player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(GetDamageZones_Light().GetRandomElement());
+  }
+
+  TStringArray GetDamageZones_Light()
+  {
+    return {
+      "Head",
+      "Neck",
+      "Pelvis",
+      "Spine",
+      "Spine1",
+      "Spine2",
+      "Spine3",
+      "LeftForeArmRoll",
+      "RightForeArmRoll",
+      "LeftFoot",
+      "LeftToeBase",
+      "RightFoot",
+      "RightToeBase"
+    };
   }
 };
