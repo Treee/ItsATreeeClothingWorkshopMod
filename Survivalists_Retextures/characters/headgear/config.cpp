@@ -1563,7 +1563,6 @@ class CfgVehicles
 		};
 	};
 
-
   class SRP_Cowboy_Hat_Pink: SRP_Cowboy_Hat_Carl
 	{
 		scope=2;
