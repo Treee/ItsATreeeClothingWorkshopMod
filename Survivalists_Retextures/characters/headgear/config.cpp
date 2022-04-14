@@ -45,7 +45,6 @@ class CfgVehicles
   class BaseballCap_MilitaryPatrolTan_Backwards;
   class SRP_EarProtection_ColorBase;
 
-
 	class SRP_PoliceCap: BaseballCap_ColorBase
 	{
 		scope=2;
@@ -1388,19 +1387,6 @@ class CfgVehicles
 		};
   };
 
-  class SRP_Cowboy_Hat_Carl_Brown: SRP_Cowboy_Hat_Carl
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\headgear\data\Cowboy_Carl_Brown_CO.paa"
-		};
-	};
-
   class SRP_CombatHelmet_Black: SRP_CombatHelmet
   {
     scope=2;
@@ -1563,4 +1549,43 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"
 		};
   };
+
+  class SRP_Cowboy_Hat_Carl_Brown: SRP_Cowboy_Hat_Carl
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\Cowboy_Carl_Brown_CO.paa"
+		};
+	};
+
+
+  class SRP_Cowboy_Hat_Pink: SRP_Cowboy_Hat_Carl
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\Cowboy_pink_CO.paa"
+		};
+	};
+  class SRP_Cowboy_Hat_Purple: SRP_Cowboy_Hat_Carl
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\Cowboy_purple_CO.paa"
+		};
+	};
 };

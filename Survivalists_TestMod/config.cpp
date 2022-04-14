@@ -35,6 +35,13 @@ class CfgVehicles
 {
   class HouseNoDestruct;
 
+  class Land_jmc_billboard_largeground_sign1: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_TestMod\objects\jmc_billboard_largeground.p3d";
+	};
+
+
   class jmc_dungeon_Door06_Double_Lever: HouseNoDestruct
 	{
 		scope=1;
@@ -325,7 +332,7 @@ class CfgVehicles
 
   //-------------------------------- Music Tapes
   class Cassette;
-	class SRPRadio_CassetteTape_DeerIsleBase: Cassette
+	class JMC_Radio_CassetteTape_Base: Cassette
 	{
 		displayName="Cassette Tape";
 		descriptionShort="Cassette tape that has a recording.";
@@ -393,7 +400,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRPRadio_CassetteTape_DeerIsleMusicTape1: SRPRadio_CassetteTape_DeerIsleBase
+	class JMC_Radio_CassetteTape_MusicTape1: JMC_Radio_CassetteTape_Base
 	{
 		scope=2;
 		displayName="Strange Recording";
@@ -401,6 +408,28 @@ class CfgVehicles
 		class CfgCassette
 		{
 			soundSet="SRPRadio_DeerIsleMusicTape1_SoundSet1";
+		};
+	};
+
+  class BoxCerealCrunchin;
+  class JMC_BoxCerealCrunchin_Paulies: BoxCerealCrunchin // new
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_TestMod\objects\data\srp_cerealbox_paulie_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2.5;
+			energy=420;
+			water=50;
+			nutritionalIndex=1;
+			toxicity=0;
 		};
 	};
 };

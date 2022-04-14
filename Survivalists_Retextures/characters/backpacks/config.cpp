@@ -1191,6 +1191,114 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Black_CO.paa"
 		};
 	};
+  class SRP_Big_Military_Pack_Blue: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Blue_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Coco: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Coco_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Lavender: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Lavender_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Orange: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Orange_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Pink: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Pink_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Red: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Red_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Storm: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Storm_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Sunny: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Sunny_CO.paa"
+		};
+	};
+  class SRP_Big_Military_Pack_Teal: SRP_Big_Military_Pack_Tan
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Big_Military_Pack_Teal_CO.paa"
+		};
+	};
 
   class SRP_Rifle_Bag_Tan: SRP_Rifle_Bag_Green
   {
