@@ -116,43 +116,6 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
 	};
 
-  //======================= COINAGE
-  class Slot_SRP_CoinPlatinum
-	{
-		name="SRP_CoinPlatinum";
-		displayName="Platinum Coins";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=1000;
-	};
-  class Slot_SRP_CoinIron
-	{
-		name="SRP_CoinIron";
-		displayName="Iron Coins";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=1000;
-	};
-  class Slot_SRP_CoinGold
-	{
-		name="SRP_CoinGold";
-		displayName="Gold Coins";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=1000;
-	};
-  class Slot_SRP_CoinBronze
-	{
-		name="SRP_CoinBronze";
-		displayName="Bronze Coins";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=1000;
-	};
-  class Slot_SRP_CoinCopper
-	{
-		name="SRP_CoinCopper";
-		displayName="Copper Coins";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=1000;
-	};
-
   //===================== CUSTOM
   class Slot_Compass
 	{
@@ -943,49 +906,6 @@ class CfgSlots
     ghostIcon="set:dayz_inventory image:vestpouches";		
   };
   
-  class Slot_SRP_RawOre1
-  {
-		name="SRP_RawOre1";
-		displayName="Raw Ore";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=4;
-  };
-  class Slot_SRP_RawOre2
-  {
-		name="SRP_RawOre2";
-		displayName="Raw Ore";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=4;
-  };
-  class Slot_SRP_MetalPlate1
-  {
-		name="SRP_MetalPlate1";
-		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:plates";
-    stackMax=20;
-  };
-  class Slot_SRP_MetalPlate2
-  {
-		name="SRP_MetalPlate2";
-		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:plates";
-    stackMax=20;
-  };
-  class Slot_SRP_MetalRod1
-  {
-		name="SRP_MetalRod1";
-		displayName="Metal Rod";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=10;
-  };
-  class Slot_SRP_MetalRod2
-  {
-		name="SRP_MetalRod2";
-		displayName="Metal Rod";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=10;
-  };
-
   class Slot_SRP_Katana
   {
 		name="SRP_Katana";
@@ -1393,14 +1313,6 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
   };
   //=====================
-  class Slot_SRP_ForgeStarterKit
-  {
-		name="SRP_ForgeStarterKit";
-		displayName="Forge Starter Kit";
-		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=10;
-  };
-
   class Slot_SRP_Pestle
   {
 		name="SRP_Pestle";

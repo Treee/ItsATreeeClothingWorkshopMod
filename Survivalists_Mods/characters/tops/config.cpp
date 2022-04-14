@@ -181,4 +181,112 @@ class CfgVehicles
   {
     scope=2;
   };
+
+  class SRP_Sweater_ColorBase: Clothing
+	{
+    scope=0;
+		displayName="Turtleneck Sweater";
+		descriptionShort="A loose fitting turtleneck sweater";
+		model="Survivalists_Mods\characters\tops\SRP_Sweater_g.p3d";
+		inventorySlot[]=
+		{
+			"Body"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Body"
+		};
+		rotationFlags=64;
+		weight=2000;
+		itemSize[]={4,4};
+		itemsCargoSize[]={6,5};
+		quickBarBonus=2;
+		varWetMax=0.39;
+		heatIsolation=0.90;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
+		soundAttType="LeatherJacket";
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"personality"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\tops\data\srp_Sweater_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\tops\data\srp_sweater.rvmat"}},
+						{0.7,{"Survivalists_Mods\characters\tops\data\srp_sweater.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\tops\data\srp_sweater_damage.rvmat"}},
+						{0.3,{"Survivalists_Mods\characters\tops\data\srp_sweater_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\tops\data\srp_sweater_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Melee
+				{
+					class Health
+					{
+						damage=0.69;
+					};
+					class Blood
+					{
+						damage=0.69;
+					};
+					class Shock
+					{
+						damage=0.85;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.71;
+					};
+					class Blood
+					{
+						damage=0.71;
+					};
+					class Shock
+					{
+						damage=0.85;
+					};
+				};
+			};
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\tops\SRP_Sweater_m.p3d";
+			female="Survivalists_Mods\characters\tops\SRP_Sweater_f.p3d";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 };

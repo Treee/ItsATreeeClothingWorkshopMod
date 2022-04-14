@@ -43,6 +43,7 @@ class CfgVehicles
 
   // modded classes
   class DUB_Monkrobe;
+  class SRP_Sweater_ColorBase;
 
 	class SRPPoliceJacket: PoliceJacket
 	{
@@ -2808,4 +2809,51 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\denim_jacket_Black_co.paa"
 		};
 	};
+
+  class SRP_Sweater_Orange: SRP_Sweater_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_Sweater_CO.paa"
+		};
+	};
+	class SRP_Sweater_Mustard: SRP_Sweater_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_Sweater_Mustard_CO.paa"
+		};
+	};
+	class SRP_Sweater_Blue: SRP_Sweater_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_Sweater_Blue_CO.paa"
+		};
+	};
+	class SRP_Sweater_Grey: SRP_Sweater_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_Sweater_Grey_CO.paa"
+		};
+	};
+	class SRP_Sweater_Green: SRP_Sweater_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_Sweater_Green_CO.paa"
+		};
+	};
+
 };
