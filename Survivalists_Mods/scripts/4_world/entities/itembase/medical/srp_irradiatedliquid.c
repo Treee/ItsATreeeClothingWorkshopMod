@@ -6,7 +6,10 @@ modded class SRP_LabTube_MutantLiquidSterilizedIrradiated
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-	  	player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
+      {
+	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      }
     }
   }
 };
@@ -19,7 +22,10 @@ modded class DUB_Mutantsyringe_Pure
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
+      {
+	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      }
     }
   }
 };
@@ -31,7 +37,10 @@ modded class DUB_Mutantsyringe_Pure_Accel
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
+      {
+	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      }
     }
   }
 };
@@ -43,7 +52,10 @@ modded class DUB_Mutantsyringe_Admin2
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
+      {
+	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      }
     }
   }
 };
@@ -55,7 +67,10 @@ modded class DUB_Mutantsyringe_Admin4
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
+      {
+	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      }
     }
   }
 };
@@ -67,7 +82,10 @@ modded class DUB_Mutantsyringe_Pure_Sup
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
+      {
+	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      }
     }
   }
 };
@@ -79,7 +97,10 @@ modded class DUB_Mutantsyringe_Crude
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
+      {
+	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      }
     }
   }
 };
@@ -91,7 +112,10 @@ modded class DUB_Mutantsyringe_Crude_Cure
     PlayerBase player_PB = PlayerBase.Cast( player );
     if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
     {
-      player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
+      {
+	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 99);
+      }
     }
   }
 };
