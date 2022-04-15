@@ -129,7 +129,7 @@ class CfgVehicles
   class SRP_MedicalCurtains_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName=" Kit";
+		displayName="Medical Curtains Kit";
 		descriptionShort="A Medical Curtain Kit";
 	};
 
@@ -234,6 +234,55 @@ class CfgVehicles
 		class Cargo
 		{
 			itemsCargoSize[]={2,3};
+		};
+	};
+
+  class SRP_DecontaminationShower_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Decontamination Shower Kit";
+		descriptionShort="A Decontamination Shower  Kit";
+	};
+
+  class SRP_DecontaminationShower: Inventory_Base // new
+	{
+		scope=2;
+		displayName="Decontamination Shower ";
+		descriptionShort="This medical equipmment is used to help decontaminate someone by flushing them with water.";
+		model="Survivalists_Mods\gear\medical\srp_decontaminationshower.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		itemSize[]={4,9};
+    itemsCargoSize[]={0,0};
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "pole"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_sign_green_co.paa",
+      "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_green_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\medical\data\srp_decontaminationshower.rvmat", "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_sign.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\medical\data\srp_decontaminationshower.rvmat", "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_sign.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\medical\data\srp_decontaminationshower_damage.rvmat", "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_sign_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\medical\data\srp_decontaminationshower_damage.rvmat", "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_sign_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\medical\data\srp_decontaminationshower_destruct.rvmat", "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_sign_destruct.rvmat"}}
+					};
+				};
+			};
 		};
 	};
 

@@ -114,6 +114,8 @@ class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
 
 class SRP_MetalBox_Kit extends SRP_KitBase{};
 
+class SRP_DecontaminationShower_Kit extends SRP_KitBase{};
+
 // Building Kits
 class SRP_Carpentry_WoodenHouseOuthouse_Kit extends SRP_KitBase{};
 class SRP_Carpentry_WoodenBarn_Kit extends SRP_KitBase{};
