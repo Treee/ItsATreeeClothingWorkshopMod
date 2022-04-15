@@ -37,37 +37,6 @@ class CraftingComponent // TailorCraftComponent
   float changeHealth;
 }
 
-class MiningOreConfig
-{
-  vector m_location;
-  float m_radius = 10;
-  float platinumChance = 2.0;
-  float goldChance = 2.0;
-  float ironChance = 2.0;
-  float copperChance = 2.0;
-  float tinChance = 2.0;
-
-  void MiningOreConfig(vector location, float radius, float plat, float gold, float iron, float copper, float tin)
-  {
-    m_location = location;
-    m_radius = radius;
-    platinumChance = plat;
-    goldChance = gold;
-    ironChance = iron;
-    copperChance = copper;
-    tinChance = tin;
-  }
-  bool IsPlayerInRange(vector playerLocation)
-  {
-    if (m_location)
-    {
-      // Print("Player is " + vector.Distance(m_location, playerLocation) + " meters from radius center. Plat: " + platinumChance + " Gold: " + goldChance + " Iron: " + ironChance + " Copper: " + copperChance + " Tin: " + tinChance);
-      return vector.Distance(m_location, playerLocation) <= m_radius;
-    }
-    return false;
-  }
-}
-
 class SRPConfig
 {
   bool g_SRPIsSleepActive;
@@ -120,14 +89,11 @@ class SRPConfig
   ref CraftingConfig advancedWorkbench = new CraftingConfig();
   ref CraftingConfig drugWorkbench = new CraftingConfig();
     
-  ref array<ref MiningOreConfig> g_QuarryLocations;
-
   void ~SRPConfig()
   {
     delete tailorWorkbench;
     delete advancedWorkbench;
     delete drugWorkbench;
-    delete g_QuarryLocations;
   }
 }
 
@@ -342,45 +308,6 @@ class SRPGlobals
     config.g_SRPWeedChanceForCough = 35;
     config.g_SRPWeedChanceForLaugh = 70;
     config.g_SRPTobaccoChanceForCough = 35;
-
-    ref array<ref MiningOreConfig> local_QuarryLocations = new ref array<ref MiningOreConfig>;    
-    // platinumChance = 0.99;
-    // goldChance = 0.99;
-    // ironChance = 0.99;
-    // copperChance = 0.99;
-    // tinChance = 0.99;
-
-    // crotch island
-    local_QuarryLocations.Insert(new MiningOreConfig("11153 38 2274",215,0.95,0.90,0.85,2,2));
-    // fishers camp
-    local_QuarryLocations.Insert(new MiningOreConfig("10543 3 5607",60,2,2,0.75,0.80,0.75));
-    // rotten island
-    local_QuarryLocations.Insert(new MiningOreConfig("13017 2 6282",550,2,0.95,0.80,2,2));
-    // north stonington
-    local_QuarryLocations.Insert(new MiningOreConfig("6833 27 1730",60,2,0.95,0.80,2,0.75));
-    // prison island
-    local_QuarryLocations.Insert(new MiningOreConfig("5457 34 700",200,0.75,2,0.95,0.90,2));
-    // temple island
-    local_QuarryLocations.Insert(new MiningOreConfig("442 16 716",550,0.60,0.60,2,2,0.80));
-    // north milo ravine
-    local_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.90,2,2,2));
-    // south east westbrook
-    local_QuarryLocations.Insert(new MiningOreConfig("4497 49 5545",250,2,2,0.80,0.80,0.80));
-    //rfci
-    local_QuarryLocations.Insert(new MiningOreConfig("3787 13 8821",450,0.80,0.80,0.80,0.80,0.80));
-    //east waldo
-    local_QuarryLocations.Insert(new MiningOreConfig("9468 15 9039",75,2,2,0.80,0.75,0.85));
-    //north bayville
-    local_QuarryLocations.Insert(new MiningOreConfig("9052 17 13021",100,0.80,0.80,0.75,2,2));
-    //portland
-    local_QuarryLocations.Insert(new MiningOreConfig("5892 6 13717",330,0.80,0.80,0.80,0.80,0.80));
-    //archipeleago
-    local_QuarryLocations.Insert(new MiningOreConfig("2810 30 13686",200,0.85,0.85,0.80,0.75,0.85));
-    //arctic
-    // local_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.90,0.80,0.75,0.85));
-    //industrial explosion
-    // local_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.90,0.80,0.75,0.85));
-    config.g_QuarryLocations = local_QuarryLocations;
   }
 }
 

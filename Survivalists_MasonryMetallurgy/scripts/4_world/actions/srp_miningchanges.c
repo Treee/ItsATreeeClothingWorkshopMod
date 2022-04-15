@@ -110,20 +110,18 @@ modded class CAContinuousMineRock
 
   bool CheckQuarryDistances(vector playerPosition, RockBase targetRock)
   {
-    SRPConfig config = GetDayZGame().GetSRPConfigGlobal();    
-    if (config.g_QuarryLocations)
+    SRPMMConfig config = GetDayZGame().GetSRPMMConfig();    
+    if (config)
     {
-      for ( int i = config.g_QuarryLocations.Count() - 1; i >= 0; i-- )
+      MiningOreConfig miningConfig = config.IsPlayerInMiningQuarry(playerPosition);
+      if (targetRock && miningConfig)
       {
-        if (config.g_QuarryLocations.Get(i).IsPlayerInRange(playerPosition))
-        {
-          if (targetRock)
-          {
-            targetRock.SetRockProbabilities(config.g_QuarryLocations.Get(i));
-            return true;
-          }
-          return true;
-        }
+        targetRock.SetRockProbabilities(miningConfig);
+        return true;
+      }
+      if (miningConfig)   
+      {
+        return true;
       }
     }
     return false;
