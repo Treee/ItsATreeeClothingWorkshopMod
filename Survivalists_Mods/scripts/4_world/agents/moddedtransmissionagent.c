@@ -4,7 +4,6 @@ modded class PluginTransmissionAgents
 	{    
 		//add new agents here
 		RegisterAgent(new SleepAgent);
-		RegisterAgent(new BiohazardAgent);
 	}
 
   AgentBase GetAgentByAgentId(int agentId)
