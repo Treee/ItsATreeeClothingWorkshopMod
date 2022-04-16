@@ -544,5 +544,6 @@ modded class PlayerBase extends ManBase
   {
     super.SetActions(InputActionMap);
     AddAction(ActionFlipPlayingCard, InputActionMap);      
+    AddAction(ActionTriggerDecontaminationShower, InputActionMap);      
   }
 }

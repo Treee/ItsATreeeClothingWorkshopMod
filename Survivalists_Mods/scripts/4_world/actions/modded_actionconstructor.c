@@ -33,5 +33,7 @@ modded class ActionConstructor
     actions.Insert(ActionTuneCrypticFrequency);
 
     actions.Insert(ActionSRPSealLetter);
+
+    actions.Insert(ActionTriggerDecontaminationShower);
 	}
 };

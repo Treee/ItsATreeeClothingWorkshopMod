@@ -240,14 +240,14 @@ class CfgVehicles
   class SRP_DecontaminationShower_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Decontamination Shower Kit";
-		descriptionShort="A Decontamination Shower  Kit";
+		displayName="Decontamination Shower Kit - Green";
+		descriptionShort="A Decontamination Shower Kit";
 	};
 
   class SRP_DecontaminationShower: Inventory_Base // new
 	{
 		scope=2;
-		displayName="Decontamination Shower ";
+		displayName="Decontamination Shower";
 		descriptionShort="This medical equipmment is used to help decontaminate someone by flushing them with water.";
 		model="Survivalists_Mods\gear\medical\srp_decontaminationshower.p3d";
 		slopeTolerance=0.30000001;
@@ -284,6 +284,50 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+
+  class SRP_DecontaminationShower_Red_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Decontamination Shower Kit - Red";
+		descriptionShort="A Decontamination Shower Kit";
+	};
+
+  class SRP_DecontaminationShower_Red: SRP_DecontaminationShower // new
+	{
+		scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "pole"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_sign_red_co.paa",
+      "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_red_co.paa"
+    };
+	};
+
+  class SRP_DecontaminationShower_Yellow_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Decontamination Shower Kit - Yellow";
+		descriptionShort="A Decontamination Shower Kit";
+	};
+
+  class SRP_DecontaminationShower_Yellow: SRP_DecontaminationShower // new
+	{
+		scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "pole"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_sign_yellow_co.paa",
+      "Survivalists_Mods\gear\medical\data\srp_decontaminationshower_yellow_co.paa"
+    };
 	};
 
   // ---------------------------- CUSTOM MEDICINE
