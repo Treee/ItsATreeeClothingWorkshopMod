@@ -296,6 +296,8 @@ class SRP_Cardboardbox extends SRP_Container_Base{};
 class SRP_StonePile_Small extends SRP_Container_Base{};
 class SRP_StonePile_Large extends SRP_Container_Base{};
 
+class SRP_HoneyCombStand extends SRP_Container_Base{};
+
 class SRP_BuildingComponentFrame_ColorBase extends SRP_Container_Base{};
 class SRP_BuildingComponentFrame_WornRamp extends SRP_BuildingComponentFrame_ColorBase{};
 class SRP_BuildingComponentFrame_WornLPlatform extends SRP_BuildingComponentFrame_ColorBase{};

@@ -11,6 +11,49 @@ class CfgPatches
 
 class CfgSlots
 {
+  //==========================TEDDY BEARS
+  class Slot_SRP_Teddy1
+	{
+		name="SRP_Teddy1";
+		displayName="Teddy Bear";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Teddy2
+	{
+		name="SRP_Teddy2";
+		displayName="Teddy Bear";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Teddy3
+	{
+		name="SRP_Teddy3";
+		displayName="Teddy Bear";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Teddy4
+	{
+		name="SRP_Teddy4";
+		displayName="Teddy Bear";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Teddy5
+	{
+		name="SRP_Teddy5";
+		displayName="Teddy Bear";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Teddy6
+	{
+		name="SRP_Teddy6";
+		displayName="Teddy Bear";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Teddy7
+	{
+		name="SRP_Teddy7";
+		displayName="Teddy Bear";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
   //====================WEAPON CRAFTING SLOTS
   class Slot_SRP_GunBarrel
 	{
@@ -1412,6 +1455,49 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
+
+  class Proxysrp_teddybear_proxy1: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Teddy1"};
+		model="Survivalists_Mods\proxy\srp_teddybear_proxy1.p3d";
+	};
+  class Proxysrp_teddybear_proxy2: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Teddy2"};
+		model="Survivalists_Mods\proxy\srp_teddybear_proxy2.p3d";
+	};
+  class Proxysrp_teddybear_proxy3: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Teddy3"};
+		model="Survivalists_Mods\proxy\srp_teddybear_proxy3.p3d";
+	};
+  class Proxysrp_teddybear_proxy4: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Teddy4"};
+		model="Survivalists_Mods\proxy\srp_teddybear_proxy4.p3d";
+	};
+  class Proxysrp_teddybear_proxy5: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Teddy5"};
+		model="Survivalists_Mods\proxy\srp_teddybear_proxy5.p3d";
+	};
+  class Proxysrp_teddybear_proxy6: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Teddy6"};
+		model="Survivalists_Mods\proxy\srp_teddybear_proxy6.p3d";
+	};
+  class Proxysrp_teddybear_proxy7: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Teddy7"};
+		model="Survivalists_Mods\proxy\srp_teddybear_proxy7.p3d";
+	};
 
   class ProxyCompass_proxy: ProxyAttachment
 	{

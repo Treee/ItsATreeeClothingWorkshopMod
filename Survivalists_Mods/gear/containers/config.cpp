@@ -32,6 +32,20 @@ class CfgVehicles
 		};
 	};
 
+  class Bear_ColorBase: Container_Base
+	{
+    inventorySlot[]=
+		{
+			"SRP_Teddy1",
+			"SRP_Teddy2",
+			"SRP_Teddy3",
+			"SRP_Teddy4",
+			"SRP_Teddy5",
+			"SRP_Teddy6",
+			"SRP_Teddy7",
+		};
+  };
+
   //--------------------------------------- Custom Stuff  
   class SRP_Fridge_Kit: SRP_KitBase //new
 	{
@@ -2573,6 +2587,67 @@ class CfgVehicles
 		attachments[]=
 		{
 			"Material_FPole_Stones"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+
+  class SRP_HoneyCombStand_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Honey Comb Display Kit - Metal";
+		descriptionShort="A metal honey comb display kit";
+	};
+
+  class SRP_HoneyCombStand: Container_Base  // new
+	{
+		scope=2;
+		displayName="Honey Comb Display - Metal";
+		descriptionShort="A display stand";
+		model="Survivalists_Mods\gear\containers\srp_honeycomb.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		itemsCargoSize[]={0,0};
+		attachments[]=
+		{
+			"SRP_Teddy1",
+			"SRP_Teddy2",
+			"SRP_Teddy3",
+			"SRP_Teddy4",
+			"SRP_Teddy5",
+			"SRP_Teddy6",
+			"SRP_Teddy7",
 		};
     class DamageSystem
 		{
