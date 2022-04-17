@@ -58,7 +58,7 @@ class SRP_GlassDisplayCase_Hook_ArmbandDouble extends SRP_GlassDisplayCase_Hook
     string item_name = item.GetType();	
 		TStringArray item_texture_array = new TStringArray;
     GetGame().ConfigGetTextArray("cfgVehicles " + item_name + " hiddenSelectionsTextures", item_texture_array);	
-    Print("Detached: " + item_texture_array[0]);
+    // Print("Detached: " + item_texture_array[0]);
     if (item_texture_array && item_texture_array.Count() > 0)
     {
       int idx1 = item.GetHiddenSelectionIndex("rightarmroll");
