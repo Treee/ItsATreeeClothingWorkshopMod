@@ -11,6 +11,127 @@ class CfgPatches
 
 class CfgSlots
 {
+  //==========================Armband Hook
+  class Slot_SRP_DisplayHook1
+	{
+		name="SRP_DisplayHook1";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook2
+	{
+		name="SRP_DisplayHook2";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook3
+	{
+		name="SRP_DisplayHook3";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook4
+	{
+		name="SRP_DisplayHook4";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook5
+	{
+		name="SRP_DisplayHook5";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook6
+	{
+		name="SRP_DisplayHook6";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook7
+	{
+		name="SRP_DisplayHook7";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook8
+	{
+		name="SRP_DisplayHook8";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook9
+	{
+		name="SRP_DisplayHook9";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook10
+	{
+		name="SRP_DisplayHook10";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook11
+	{
+		name="SRP_DisplayHook11";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook12
+	{
+		name="SRP_DisplayHook12";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook13
+	{
+		name="SRP_DisplayHook13";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook14
+	{
+		name="SRP_DisplayHook14";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook15
+	{
+		name="SRP_DisplayHook15";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook16
+	{
+		name="SRP_DisplayHook16";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook17
+	{
+		name="SRP_DisplayHook17";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook18
+	{
+		name="SRP_DisplayHook18";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook19
+	{
+		name="SRP_DisplayHook19";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_DisplayHook20
+	{
+		name="SRP_DisplayHook20";
+		displayName="Display Hook";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
   //==========================TEDDY BEARS
   class Slot_SRP_Teddy1
 	{
@@ -1455,6 +1576,127 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
+
+  class Proxysrp_displayhook_proxy1: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook1"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy1.p3d";
+	};
+  class Proxysrp_displayhook_proxy2: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook2"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy2.p3d";
+	};
+  class Proxysrp_displayhook_proxy3: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook3"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy3.p3d";
+	};
+  class Proxysrp_displayhook_proxy4: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook4"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy4.p3d";
+	};
+  class Proxysrp_displayhook_proxy5: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook5"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy5.p3d";
+	};
+  class Proxysrp_displayhook_proxy6: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook6"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy6.p3d";
+	};
+  class Proxysrp_displayhook_proxy7: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook7"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy7.p3d";
+	};
+  class Proxysrp_displayhook_proxy8: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook8"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy8.p3d";
+	};
+  class Proxysrp_displayhook_proxy9: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook9"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy9.p3d";
+	};
+  class Proxysrp_displayhook_proxy10: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook10"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy10.p3d";
+	};
+    class Proxysrp_displayhook_proxy11: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook11"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy11.p3d";
+	};
+  class Proxysrp_displayhook_proxy12: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook12"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy12.p3d";
+	};
+  class Proxysrp_displayhook_proxy13: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook13"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy13.p3d";
+	};
+  class Proxysrp_displayhook_proxy14: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook14"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy14.p3d";
+	};
+  class Proxysrp_displayhook_proxy15: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook15"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy15.p3d";
+	};
+  class Proxysrp_displayhook_proxy16: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook16"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy16.p3d";
+	};
+  class Proxysrp_displayhook_proxy17: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook17"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy17.p3d";
+	};
+  class Proxysrp_displayhook_proxy18: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook18"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy18.p3d";
+	};
+  class Proxysrp_displayhook_proxy19: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook19"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy19.p3d";
+	};
+  class Proxysrp_displayhook_proxy20: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook20"};
+		model="Survivalists_Mods\proxy\srp_displayhook_proxy20.p3d";
+	};
 
   class Proxysrp_teddybear_proxy1: ProxyAttachment
 	{

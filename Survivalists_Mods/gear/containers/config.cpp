@@ -2649,6 +2649,14 @@ class CfgVehicles
 			"SRP_Teddy6",
 			"SRP_Teddy7",
 		};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_honeycomb_co.paa"
+		};
     class DamageSystem
 		{
 			class GlobalHealth
@@ -2681,8 +2689,166 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_GlassDisplayCase_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Glass Display Kit - Wooden";
+		descriptionShort="A wooden glass display kit";
+	};
+
+  class SRP_GlassDisplayCase: Container_Base 
+	{
+		scope=2;
+		displayName="Glass Display - Wooden";
+		descriptionShort="A display stand";
+		model="Survivalists_Mods\gear\containers\srp_displaycase.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "SRP_DisplayHook1",
+      "SRP_DisplayHook2",
+      "SRP_DisplayHook3",
+      "SRP_DisplayHook4",
+      "SRP_DisplayHook5",
+      "SRP_DisplayHook6",
+      "SRP_DisplayHook7",
+      "SRP_DisplayHook8",
+      "SRP_DisplayHook9",
+      "SRP_DisplayHook10",
+      "SRP_DisplayHook11",
+      "SRP_DisplayHook12",
+      "SRP_DisplayHook13",
+      "SRP_DisplayHook14",
+      "SRP_DisplayHook15",
+      "SRP_DisplayHook16",
+      "SRP_DisplayHook17",
+      "SRP_DisplayHook18",
+      "SRP_DisplayHook19",
+      "SRP_DisplayHook20",
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_displaycase_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+  class SRP_GlassDisplayCase_Hook: Inventory_Base
+	{
+		scope=0;
+		displayName="Glass Display Hook - Base";
+		descriptionShort="A hook meant for a display case.";
+		model="Survivalists_Mods\gear\containers\srp_displaycase_hook.p3d";
+		weight=10000;
+		itemSize[]={10,15};
+		itemsCargoSize[]={0,0};
+    clothingType="male";
+    inventorySlot[]=
+    {
+      "SRP_DisplayHook1",
+      "SRP_DisplayHook2",
+      "SRP_DisplayHook3",
+      "SRP_DisplayHook4",
+      "SRP_DisplayHook5",
+      "SRP_DisplayHook6",
+      "SRP_DisplayHook7",
+      "SRP_DisplayHook8",
+      "SRP_DisplayHook9",
+      "SRP_DisplayHook10",
+      "SRP_DisplayHook11",
+      "SRP_DisplayHook12",
+      "SRP_DisplayHook13",
+      "SRP_DisplayHook14",
+      "SRP_DisplayHook15",
+      "SRP_DisplayHook16",
+      "SRP_DisplayHook17",
+      "SRP_DisplayHook18",
+      "SRP_DisplayHook19",
+      "SRP_DisplayHook20",
+    };
+    attachments[]=
+    {
+      "Armband"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+	};
+  class SRP_GlassDisplayCase_Hook_Armband: SRP_GlassDisplayCase_Hook
+	{
+    scope=2;
+		displayName="Glass Display Hook - Armband";
+		descriptionShort="A hook that holds a single armband. Meant for a display case.";
+    model="Survivalists_Mods\gear\containers\srp_displaycase_hook_armband.p3d";
+  };
+  class SRP_GlassDisplayCase_Hook_ArmbandDouble: SRP_GlassDisplayCase_Hook
+	{
+    scope=2;
+		displayName="Glass Display Hook - Double Armband";
+		descriptionShort="A hook that holds a single armband. Meant for a display case.";
+    model="Survivalists_Mods\gear\containers\srp_displaycase_hook_doublearmband.p3d";
+  };
+  class SRP_GlassDisplayCase_Hook_ArmbandLeather: SRP_GlassDisplayCase_Hook
+	{
+    scope=2;
+		displayName="Glass Display Hook - Leather Armband";
+		descriptionShort="A hook that holds a leather armband. Meant for a display case.";
+    model="Survivalists_Mods\gear\containers\srp_displaycase_hook_leatherarmband.p3d";
+  };
+  class SRP_GlassDisplayCase_Hook_ArmbandPatch: SRP_GlassDisplayCase_Hook
+	{
+    scope=2;
+		displayName="Glass Display Hook - Patch Armband";
+		descriptionShort="A hook that holds a patch armband. Meant for a display case.";
+    model="Survivalists_Mods\gear\containers\srp_displaycase_hook_patcharmband.p3d";
+  };
   
-  class SRP_LockerSingle_Colorbase: Container_Base  // new
+  
+  class SRP_LockerSingle_Colorbase: Container_Base
 	{
 		scope=0;
 		displayName="Storage Locker - Single";
@@ -2812,7 +2978,7 @@ class CfgVehicles
 			};
     };
 	};
-  class SRP_LockerTriple_Colorbase: Container_Base  // new
+  class SRP_LockerTriple_Colorbase: Container_Base
 	{
 		scope=0;
 		displayName="Storage Locker - Triple";
@@ -2972,7 +3138,7 @@ class CfgVehicles
 			};
     };
 	};
-  class SRP_LockerQuad_Colorbase: Container_Base  // new
+  class SRP_LockerQuad_Colorbase: Container_Base
 	{
 		scope=0;
 		displayName="Storage Locker - Quad";
@@ -3102,7 +3268,7 @@ class CfgVehicles
 			};
     };
 	};
-  class SRP_LockerMilitary_Colorbase: Container_Base  // new
+  class SRP_LockerMilitary_Colorbase: Container_Base
 	{
 		scope=0;
 		displayName="Storage Locker - Military";

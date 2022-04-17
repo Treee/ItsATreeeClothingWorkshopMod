@@ -63,6 +63,16 @@ class CfgVehicles
     heatIsolation=0.80000001;
   };
 
+  class Armband_ColorBase: Clothing
+	{
+		hiddenSelections[] = {"zbytek", "leftarmroll", "rightarmroll"};
+	};
+
+  class MassArmbandDouble_Colorbase: Armband_ColorBase
+	{
+    hiddenSelections[] = {"zbytek", "leftarmroll", "rightarmroll"};
+	};
+
   //===================== CUSTOM SHIRTS
 
   class SRP_PlatHoodie: Clothing
