@@ -20,7 +20,7 @@ class CfgVehicles
   class Inventory_Base;
   class LongWoodenStick;
   class WoodenStick;
-  class FireWood;
+  class Firewood;
   class WoodenLog;
   class Bark_Oak;
   class Bark_Birch;
@@ -39,7 +39,7 @@ class CfgVehicles
 		displayName="Wooden Stick";
 		descriptionShort="A wooden stick. Oddly feels hot to the touch.";
   };
-  class FireWood_Irradiated: FireWood
+  class Firewood_Irradiated: Firewood
 	{
 		scope=2;
 		displayName="Firewood";

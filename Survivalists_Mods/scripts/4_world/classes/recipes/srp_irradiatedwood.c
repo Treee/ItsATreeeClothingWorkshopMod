@@ -1,3 +1,14 @@
+modded class SawWoodenLog
+{	
+	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+	{
+    if (ingredients[0] && ingredients[0].GetType().Contains("_Irradiated"))
+    {
+      return false;
+    }
+		return true;
+	}
+};
 class SawWoodenLog_Irradiated extends RecipeBase
 {	
 	override void Init()
@@ -48,7 +59,7 @@ class SawWoodenLog_Irradiated extends RecipeBase
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		AddResult("Firewood_Irradiated");//add results here
+		AddResult("FireWood_Irradiated");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
@@ -60,7 +71,7 @@ class SawWoodenLog_Irradiated extends RecipeBase
 		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
 		
 		//result2
-		AddResult("Firewood_Irradiated");//add results here
+		AddResult("FireWood_Irradiated");//add results here
 
 		m_ResultSetFullQuantity[1] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[1] = -1;//-1 = do nothing
@@ -72,7 +83,7 @@ class SawWoodenLog_Irradiated extends RecipeBase
 		m_ResultReplacesIngredient[1] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
 		
 		//result3
-		AddResult("Firewood_Irradiated");//add results here
+		AddResult("FireWood_Irradiated");//add results here
 
 		m_ResultSetFullQuantity[2] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[2] = -1;//-1 = do nothing
@@ -91,9 +102,21 @@ class SawWoodenLog_Irradiated extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
+    Debug.Log("Recipe SawWoodenLog_Irradiated Do method called","recipes");
 	}
 };
 
+modded class SplitFirewood
+{	
+  override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+	{
+    if (ingredients[0] && ingredients[0].GetType().Contains("_Irradiated"))
+    {
+      return false;
+    }
+		return true;
+	}
+};
 class SplitFirewood_Irradiated extends RecipeBase
 {	
 	override void Init()
@@ -167,10 +190,26 @@ class SplitFirewood_Irradiated extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		Debug.Log("Recipe Do method called","recipes");
+    Debug.Log("Recipe SplitFirewood_Irradiated Do method called","recipes");
 	}
 };
 
+modded class SplitLongWoodenStick
+{	
+	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+	{
+		ItemBase ingredient1 = ingredients[0];
+		
+		if ( ingredient1.IsEmpty() && !ingredient1.GetType().Contains("_Irradiated"))
+		{
+			return true;
+		}
+		else
+		{
+			return false;	
+		}
+	}
+};
 class SplitLongWoodenStick_Irradiated extends RecipeBase
 {	
 	override void Init()
@@ -272,6 +311,6 @@ class SplitLongWoodenStick_Irradiated extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		
+    Debug.Log("Recipe SplitLongWoodenStick_Irradiated Do method called","recipes");
 	}
 };
