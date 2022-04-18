@@ -4,7 +4,7 @@ modded class SRP_LabTube_MutantLiquidSterilizedIrradiated
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
     {
       if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
       {
@@ -20,7 +20,7 @@ modded class DUB_Mutantsyringe_Pure
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
     {
       if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
       {
@@ -35,7 +35,7 @@ modded class DUB_Mutantsyringe_Pure_Accel
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
     {
       if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
       {
@@ -50,7 +50,7 @@ modded class DUB_Mutantsyringe_Admin2
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
     {
       if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
       {
@@ -65,7 +65,7 @@ modded class DUB_Mutantsyringe_Admin4
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
     {
       if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
       {
@@ -80,7 +80,7 @@ modded class DUB_Mutantsyringe_Pure_Sup
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
     {
       if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
       {
@@ -95,7 +95,7 @@ modded class DUB_Mutantsyringe_Crude
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
     {
       if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
       {
@@ -110,7 +110,7 @@ modded class DUB_Mutantsyringe_Crude_Cure
   {
     super.OnInventoryEnter(player);
     PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea(0.0)))
+    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
     {
       if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
       {

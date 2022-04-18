@@ -103,7 +103,7 @@ class SRP_LabTube_MutantLiquidSterilized extends SRP_LabTube_Colorbase
     {
       m_RadiationExposure += change;
     }
-
+    // Print("Radiation: " + m_RadiationExposure);
     if (m_RadiationExposure >= m_MaxExposure)
     {
       TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(this, "SRP_LabTube_MutantLiquidSterilizedIrradiated", m_Player);

@@ -4,7 +4,7 @@ modded class ContaminationStage1Mdfr
 	{
     // Print("ContaminationStage1Mdfr::chemical poison: " + player.GetSingleAgentCount(eAgents.CHEMICAL_POISON));
     // Print("ContaminationStage1Mdfr::dub agent: " + player.GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT));
-    if (player && player.SRPIgnoreContaminatedArea(0.0))
+    if (player && player.SRPIgnoreContaminatedArea())
     {
       // Print("ContaminationStage1Mdfr::no stage 1 contamination");
       return false;
@@ -19,7 +19,7 @@ modded class ContaminationStage2Mdfr
 	{
     // Print("ContaminationStage2Mdfr::chemical poison: " + player.GetSingleAgentCount(eAgents.CHEMICAL_POISON));
     // Print("ContaminationStage2Mdfr::dub agent: " + player.GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT));
-    if (player && player.SRPIgnoreContaminatedArea(0.0))
+    if (player && player.SRPIgnoreContaminatedArea())
     {
       // Print("ContaminationStage2Mdfr::no stage 2 contamination");
       return false;
@@ -34,7 +34,7 @@ modded class ContaminationStage3Mdfr
 	{
     // Print("ContaminationStage3Mdfr::chemical poison: " + player.GetSingleAgentCount(eAgents.CHEMICAL_POISON));
     // Print("ContaminationStage3Mdfr::dub agent: " + player.GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT));
-    if (player && player.SRPIgnoreContaminatedArea(0.0))
+    if (player && player.SRPIgnoreContaminatedArea())
     {
       // Print("ContaminationStage3Mdfr::no stage 3 contamination");
       return false;

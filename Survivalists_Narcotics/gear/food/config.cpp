@@ -16,8 +16,195 @@ class CfgPatches
 class CfgVehicles
 {
   class Edible_Base;
+  class FoodAnimationSources;
+  class FruitStageTransitions;
   class Inventory_Base;
   class DryBag_ColorBase;
+
+
+  // ================= VANILLA
+  class Cannabis_Irradiated: Edible_Base
+	{
+		scope=2;
+    displayName="Cannabis";
+		descriptionShort="Cannabis harvested from a cannabis plant. Oddly feels warm to the touch.";
+		model="\dz\gear\food\cannabis_seedman.p3d";
+		debug_ItemCategory=6;
+		rotationFlags=34;
+		weight=0;
+		itemSize[]={1,1};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=10;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		quantityBar=1;
+		inventorySlot[]=
+		{
+			"Ingredient",
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8",
+			"DirectCookingA",
+			"DirectCookingB",
+			"DirectCookingC",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+      "SmokingD"
+		};
+		containsSeedsType="";
+		containsSeedsQuantity="0";
+		hiddenSelections[]=
+		{
+			"cs_raw"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\cannabis_seedman_raw_CO.paa",
+			"dz\gear\food\data\cannabis_seedman_baked_CO.paa",
+			"dz\gear\food\data\cannabis_seedman_raw_CO.paa",
+			"dz\gear\food\data\cannabis_seedman_raw_CO.paa",
+			"dz\gear\food\data\cannabis_seedman_baked_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\food\data\cannabis_seedman_raw.rvmat",
+			"dz\gear\food\data\cannabis_seedman_baked.rvmat",
+			"dz\gear\food\data\cannabis_seedman_raw.rvmat",
+			"dz\gear\food\data\cannabis_seedman_dried.rvmat",
+			"dz\gear\food\data\cannabis_seedman_burnt.rvmat",
+			"dz\gear\food\data\cannabis_seedman_rotten.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10;
+					healthLevels[]=
+					{
+						
+						{
+							1,
+							{}
+						},
+						
+						{
+							0.69999999,
+							{}
+						},
+						
+						{
+							0.5,
+							{}
+						},
+						
+						{
+							0.30000001,
+							{}
+						},
+						
+						{
+							0,
+							{}
+						}
+					};
+				};
+			};
+		};
+		class AnimationSources: FoodAnimationSources
+		{
+		};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,30,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: FruitStageTransitions
+			{
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class pickUpItem
+				{
+					soundSet="Zucchini_pickup_SoundSet";
+					id=797;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+	};
+
 
   // ============================================= BASE EDIBLE DRUGS
   class SRP_ConsumableDrug_Colorbase: Edible_Base
@@ -165,6 +352,24 @@ class CfgVehicles
 			"Survivalists_Narcotics\gear\food\data\joint_co.paa",
 		};
 		descriptionShort="A joint for smoking...and getting baked";
+    class ClothingTypes
+		{
+			male="Survivalists_Narcotics\gear\food\cigarette_m.p3d";
+			female="Survivalists_Narcotics\gear\food\cigarette_m.p3d";
+		};
+  };
+  class SRP_Smokable_ZWeedIrradiated: SRP_Smokable_ColorBase
+  {
+    scope=2;
+    displayName="ZWeed Joint - Irradiated";
+    color="ZWeedIrradiated";
+    model="Survivalists_Narcotics\gear\food\cigarette_g.p3d";
+    hiddenSelections[]= {"zbytek"};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Narcotics\gear\food\data\joint_co.paa",
+		};
+		descriptionShort="A joint for smoking...and getting baked. Oddly feels warm to the touch.";
     class ClothingTypes
 		{
 			male="Survivalists_Narcotics\gear\food\cigarette_m.p3d";

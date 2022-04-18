@@ -72,6 +72,16 @@ class SRP_Smokable_ZWeed extends SRP_Smokable_ColorBase {
 		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_STONED );
 	}
 };
+class SRP_Smokable_ZWeedIrradiated extends SRP_Smokable_ColorBase {
+  override void OnConsume(float amount, PlayerBase consumer)
+	{
+		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_STONEDIRRADIATED ) )
+		{
+			consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_STONEDIRRADIATED );
+		}
+		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_STONEDIRRADIATED );
+	}
+};
 class SRP_Smokable_Test extends SRP_Smokable_ColorBase {
   override void OnConsume(float amount, PlayerBase consumer)
 	{

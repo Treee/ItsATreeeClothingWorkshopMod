@@ -5,7 +5,7 @@ enum SRP_DrugSymptomIDs: SymptomIDs
   SYMPTOM_TOBACCO = 421,//finished
   SYMPTOM_ACIDSMILE = 422,   // finished
   SYMPTOM_ACIDSKULL = 423,   // finished
-  SYMPTOM_MUSHROOMS = 424,
+  SYMPTOM_WEEDIRRADIATED = 424,
   SYMPTOM_METH = 425, //finished
   SYMPTOM_COCAINE = 426, // finished
   SYMPTOM_PCP = 427,
@@ -20,6 +20,7 @@ modded class SymptomManager
 	{
     super.Init();
     RegisterSymptom(new WeedEffectSymptom);
+    RegisterSymptom(new WeedIrradiatedEffectSymptom);
     RegisterSymptom(new TobaccoEffectSymptom);
     RegisterSymptom(new SaltsEffectSymptom);
     RegisterSymptom(new MethEffectSymptom);

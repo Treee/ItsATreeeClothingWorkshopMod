@@ -3,7 +3,8 @@ modded class AreaExposureMdfr
 	override void OnActivate(PlayerBase player)
 	{
     // Print("AreaExposureMdfr::OnActivate::Start");
-    if (player && player.SRPIgnoreContaminatedArea(0.0))
+    player.SetBioZoneStatus(true);
+    if (player && player.SRPIgnoreContaminatedArea())
     {
       if (player.GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 9600)
       {
@@ -23,17 +24,22 @@ modded class AreaExposureMdfr
   override void OnDeactivate(PlayerBase player)
 	{
     // Print("AreaExposureMdfr::OnDeactivate::Start");
+    player.SetBioZoneStatus(false);
     if (player && player.GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 9600)
     {
       // Print("AreaExposureMdfr::OnDeactivate:: we are a level 3 mutant");
       player.GetModifiersManager().DeactivateModifier(DUB_Modifiers.MDF_BioHazardHeal);
+    }
+    else
+    {
+      super.OnDeactivate(player);
     }
   }
 
   override void OnTick(PlayerBase player, float deltaT)
 	{
     // Print("AreaExposureMdfr::OnTick::Start");
-    if (player && player.SRPIgnoreContaminatedArea(deltaT))
+    if (player && player.SRPIgnoreContaminatedArea())
     {
       // Print("OnTick::Mutant: return from activation");
       return;

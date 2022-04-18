@@ -18,9 +18,51 @@ class CfgVehicles
 {
   class Container_Base;
   class Inventory_Base;
+  class LongWoodenStick;
+  class WoodenStick;
+  class FireWood;
+  class WoodenLog;
+  class Bark_Oak;
+  class Bark_Birch;
 
   class SRP_KitBase;
-
+  //========================================== VANILLA OVERRIDE
+  class LongWoodenStick_Irradiated: LongWoodenStick
+	{
+		scope=2;
+		displayName="Long Wooden Stick";
+		descriptionShort="A long wooden stick. Oddly feels hot to the touch.";
+	};
+	class WoodenStick_Irradiated: WoodenStick
+	{
+		scope=2;
+		displayName="Wooden Stick";
+		descriptionShort="A wooden stick. Oddly feels hot to the touch.";
+  };
+  class FireWood_Irradiated: FireWood
+	{
+		scope=2;
+		displayName="Firewood";
+		descriptionShort="A small log. Oddly feels hot to the touch.";
+  };
+  class WoodenLog_Irradiated: WoodenLog
+	{
+		scope=2;
+		displayName="Wooden Log";
+		descriptionShort="A large log. Oddly feels hot to the touch.";
+  };
+  class Bark_Oak_Irradiated: Bark_Oak
+	{
+		scope=2;
+		displayName="Oak Bark";
+		descriptionShort="Some oak bark. Oddly feels hot to the touch.";
+  };
+  class Bark_Birch_Irradiated: Bark_Birch
+	{
+		scope=2;
+		displayName="Birch Bark";
+		descriptionShort="Some birch bark. Oddly feels hot to the touch.";
+  };
   //=-------------------------------------- CUSTOM STUFF
 
 	class SRP_AdvancedWorkbench: Container_Base

@@ -19,7 +19,7 @@ class SRP_BathSaltsMdfr: ModifierBase
 	
 	override void OnReconnect(PlayerBase player)
 	{
-		OnActivate(player);
+		OnDeactivate(player);
 	}
 	
 	override string GetDebugText()

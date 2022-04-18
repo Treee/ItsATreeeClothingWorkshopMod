@@ -5,7 +5,7 @@ enum SRP_eDrugModifiers: eModifiers
   MDF_TOBACCO = 421,//finished
   MDF_ACIDSMILE = 422,   // finished
   MDF_ACIDSKULL = 423,   // finished
-  MDF_MUSHROOMS = 424,
+  MDF_STONEDIRRADIATED = 424,
   MDF_METH = 425, //finished
   MDF_COCAINE = 426, //finished
   MDF_PCP = 427,
@@ -24,6 +24,7 @@ modded class ModifiersManager
 
 		AddModifier(new SRP_TobaccoMdfr);
 		AddModifier(new SRP_StonedMdfr);
+		AddModifier(new SRP_StonedIrradiatedMdfr);
 		AddModifier(new SRP_SmileAcidMdfr);
 		AddModifier(new SRP_SkullAcidMdfr);
 		AddModifier(new SRP_BathSaltsMdfr);

@@ -7,6 +7,8 @@ modded class PlayerBase extends ManBase
 
   ItemBook currentBookInHands;
 
+  protected bool m_IsInBioZone = false;
+
   void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
 	{
 		PlayerBase man;
@@ -102,20 +104,19 @@ modded class PlayerBase extends ManBase
     }
     return super.CanSprint();
   }
-
-  bool SRPIgnoreContaminatedArea(float deltaT)
+  
+  void SetBioZoneStatus(bool isInZone)
   {
-    // temp fix for irradiating SRP_LabTube_MutantLiquidSterilized until i localize hand items
-    ItemBase item = GetItemInHands();
-    if (item)
-    {
-      SRP_LabTube_MutantLiquidSterilized labTube = SRP_LabTube_MutantLiquidSterilized.Cast(item);
-      if (labTube)
-      {
-        labTube.UpdateRadiationExposure(this, deltaT);
-      }
-    }
+    m_IsInBioZone = isInZone;
+  }
 
+  bool IsInBioZone()
+  {
+    return m_IsInBioZone;
+  }
+
+  bool SRPIgnoreContaminatedArea()
+  {
     if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 2400)
     {
       return true;

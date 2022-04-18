@@ -25,7 +25,7 @@ modded class WoodBase
     // force hutning knife to be considered bark cutting
 		if ( IsTree() && IsBarkYieldingItem(item) && m_BarkType != "" )
 		{
-			output_map.Insert(m_BarkType,1);
+			output_map.Insert(GetBarkType(),1);
 		}
 		else
 		{

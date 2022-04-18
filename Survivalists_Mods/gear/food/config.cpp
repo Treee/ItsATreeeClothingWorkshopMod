@@ -2305,6 +2305,7 @@ class CfgVehicles
 			};
 		};
 	};
+  
   class SRP_PlantHerbEdible_Colorbase: Edible_Base
 	{
 		scope=0;
