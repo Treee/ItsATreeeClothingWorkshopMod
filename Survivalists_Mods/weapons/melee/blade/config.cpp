@@ -113,6 +113,7 @@ class CfgVehicles
 {
   class Inventory_Base;
   class HuntingKnife;
+  class WoodAxe;
 
   class SRP_KitBase;
 
@@ -1348,4 +1349,95 @@ class CfgVehicles
 			};
 		};
 	};
+  
+	class SRP_Viking_Axe: WoodAxe
+	{
+		scope=2;
+		displayName="Old Viking Axe";
+		descriptionShort="An old norse axe from a time long forgotten.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_viking_Axe.p3d";
+		repairableWithKits[]={5,4};
+		repairCosts[]={30,25};
+		rotationFlags=12;
+		autoQuickbar=1;
+		weight=1550;
+		itemSize[]={2,7};
+		itemBehaviour=2;
+		fragility=0.01;
+		inventorySlot="Melee";
+		lootCategory="Tools";
+		openItemSpillRange[]={20,40};
+		itemInfo[]=
+		{
+			"Axe"
+		};
+		isMeleeWeapon=1;
+		suicideAnim="woodaxe";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\SRP_Viking_Battle_Axe_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=150;
+					healthLevels[]=
+					{						
+						{1.0,{"Survivalists_Mods\weapons\melee\blade\data\SRP_Viking_Axe.rvmat"}},
+            {0.7,{"Survivalists_Mods\weapons\melee\blade\data\SRP_Viking_Axe.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\SRP_Viking_Axe_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\weapons\melee\blade\data\SRP_Viking_Axe_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\SRP_Viking_Axe_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUp_Light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="baseballbat_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
 };
