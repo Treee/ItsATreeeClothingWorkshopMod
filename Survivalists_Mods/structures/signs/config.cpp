@@ -19,6 +19,46 @@ class CfgVehicles
   class Container_Base;
 
   class SRP_KitBase;
+
+  class Land_srp_billboard_largeground_sign1: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\srp_billboard_largeground.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_billboard_apocalypse_co.paa"
+		};
+	};
+  class Land_srp_billboard_largeground_sign2: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\srp_billboard_largeground.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_billboard_apocalypse_sign1_co.paa"
+		};
+	};
+  class Land_srp_billboard_largeground_cougar: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\srp_billboard_largeground.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_billboard_apocalypse_cougar_co.paa"
+		};
+	};
   
   class SRP_ForestSign_Original_Kit: SRP_KitBase //new
 	{
