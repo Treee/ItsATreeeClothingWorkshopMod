@@ -87,23 +87,29 @@ class SRP_Comtacs_ColorBase extends BalaclavaMask_ColorBase
 	// !Called on CHILD when it's attached to parent.
 	override void OnWasAttached( EntityAI parent, int slot_id ) 
   {
-    PlayerBase player;
-    // Print("SRP_Comtacs_ColorBase::OnWasAttached: " + parent + " slot_id: " + slot_id + " heirarchy: " + player);
-    if (Class.CastTo(player, parent.GetHierarchyRoot()))
+    if (!GetGame().IsDedicatedServer())
     {
-      player.SendMessageToClient( player, "Ear Protection On" );
-      GetGame().GetSoundScene().SetSoundVolume(0.3,1);
+      PlayerBase player;
+      // Print("SRP_Comtacs_ColorBase::OnWasAttached: " + parent + " slot_id: " + slot_id + " heirarchy: " + player);
+      if (Class.CastTo(player, parent.GetHierarchyRoot()))
+      {
+        player.SendMessageToClient( player, "Ear Protection On" );
+        GetGame().GetSoundScene().SetSoundVolume(0.3,1);
+      }
     }
   }		
 	// !Called on CHILD when it's detached from parent.
 	override void OnWasDetached( EntityAI parent, int slot_id ) 
   { 
-    PlayerBase player;
-    // Print("SRP_Comtacs_ColorBase::OnWasDetached: " + parent + " slot_id: " + slot_id + " heirarchy: " + player);
-    if (Class.CastTo(player, parent.GetHierarchyRoot()))
+    if (!GetGame().IsDedicatedServer())
     {
-      player.SendMessageToClient( player, "Ear Protection Off" );
-      GetGame().GetSoundScene().SetSoundVolume(1,1);
+      PlayerBase player;
+      // Print("SRP_Comtacs_ColorBase::OnWasDetached: " + parent + " slot_id: " + slot_id + " heirarchy: " + player);
+      if (Class.CastTo(player, parent.GetHierarchyRoot()))
+      {
+        player.SendMessageToClient( player, "Ear Protection Off" );
+        GetGame().GetSoundScene().SetSoundVolume(1,1);
+      }
     }
   }
 };
