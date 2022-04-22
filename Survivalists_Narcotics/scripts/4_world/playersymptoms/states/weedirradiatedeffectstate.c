@@ -42,13 +42,13 @@ class WeedIrradiatedEffectSymptom extends SymptomBase
 
     if (isBoosted)
     {
-      player.GetStatWater().Add(2.5);
-      player.GetStatEnergy().Add(2.5);    
+      player.GetStatWater().Add(0.5);
+      player.GetStatEnergy().Add(0.5);    
     }
     else
     {
-      player.GetStatWater().Add(-3.5);
-      player.GetStatEnergy().Add(-3.5);
+      player.GetStatWater().Add(-0.5);
+      player.GetStatEnergy().Add(-0.5);
       player.AddHealth("","Blood", -0.7 );
     }
 	}

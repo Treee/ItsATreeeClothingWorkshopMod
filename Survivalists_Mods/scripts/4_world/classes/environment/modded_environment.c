@@ -51,14 +51,14 @@ modded class Environment
 
       if (isBoosted)
       {
-        m_Player.GetStatWater().Add(0.7 * pDelta);
-        m_Player.GetStatEnergy().Add(0.7 * pDelta);    
+        m_Player.GetStatWater().Add(0.5 * pDelta);
+        m_Player.GetStatEnergy().Add(0.5 * pDelta);    
       }
       else
       {
-        m_Player.GetStatWater().Add(-0.9 * pDelta);
-        m_Player.GetStatEnergy().Add(-0.9 * pDelta);
-        m_Player.AddHealth("","Blood", -1 * pDelta );
+        m_Player.GetStatWater().Add(-0.5 * pDelta);
+        m_Player.GetStatEnergy().Add(-0.5 * pDelta);
+        m_Player.AddHealth("","Blood", -0.7 * pDelta );
       }
     }
   }
