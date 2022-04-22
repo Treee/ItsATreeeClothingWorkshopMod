@@ -46,7 +46,7 @@ modded class MassNBC_Bag
 	}
 };
 
-modded class BBP_Step_LadderKit
+modded class BBP_Step_Ladder_Kit
 {
 	override void OnPlacementComplete( Man player, vector position = "0 0 0", vector orientation = "0 0 0" )
   {

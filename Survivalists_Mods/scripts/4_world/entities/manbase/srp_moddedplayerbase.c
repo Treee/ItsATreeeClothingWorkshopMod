@@ -82,7 +82,7 @@ modded class PlayerBase extends ManBase
       }
     }
     item = GetItemInHands();
-    if (item && (item.GetType() == "SRP_BerserkSword" || item.GetType() == "SRP_Car_WoodenDerby" || item.IsInherited(SRP_Car_WoodenDerby) || item.GetType() == "BBP_Step_LadderKit"))
+    if (item && (item.GetType() == "SRP_BerserkSword" || item.GetType() == "SRP_Car_WoodenDerby" || item.IsInherited(SRP_Car_WoodenDerby) || item.GetType() == "BBP_Step_Ladder_Kit"))
     {
       return false;
     }
