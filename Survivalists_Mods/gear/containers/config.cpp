@@ -2039,6 +2039,14 @@ class CfgVehicles
     descriptionShort="This protected case is meant to hold several syringes safely.";
 		itemSize[]={4,4};
 		itemsCargoSize[]={4,4};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcase_syringe_co.paa"
+		};
 	};
 
   class SRP_LeatherPouch_Default: PlateCarrierPouches  // new
