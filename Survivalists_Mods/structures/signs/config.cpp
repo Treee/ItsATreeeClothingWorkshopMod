@@ -59,6 +59,163 @@ class CfgVehicles
 			"Survivalists_Mods\structures\signs\data\srp_billboard_apocalypse_cougar_co.paa"
 		};
 	};
+
+	class Land_SRP_RoadSign_Waldoboro: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns1.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_1_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Bayville: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns1.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_2_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_OldTown: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns1.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_3_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Portland: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns2.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_1_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Westbrook: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns2.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_2_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_SandyBay: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns2.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_3_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Stonington: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns3.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_1_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Hazelands: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns3.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_2_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Oceanville: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns3.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_3_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Asheville: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns4.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_1_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Kushville: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns4.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_2_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Duskar: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns4.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_3_CA.paa"
+		};
+	};
   
   class SRP_ForestSign_Original_Kit: SRP_KitBase //new
 	{
