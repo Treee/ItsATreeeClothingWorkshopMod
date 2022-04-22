@@ -76,42 +76,11 @@ class SRP_SaltWaterFish_Base extends Edible_Base
 	}
 };
 
-class SRP_FreshWaterFishFilletMeat_Base extends Edible_Base
+class SRP_FreshWaterFishFilletMeat_Base extends CarpFilletMeat
 {
-	override bool CanBeCooked()
-	{
-		return true;
-	}		
-	
-	override bool CanBeCookedOnStick()
-	{
-		return true;
-	}
-	
-	override bool IsMeat()
-	{
-		return true;
-	}
-	
-	override bool CanDecay()
-	{
-		return true;
-	}
-
   override bool CanProcessDecay()
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
-	}
-	
-	override void SetActions()
-	{
-		super.SetActions();
-		
-		AddAction(ActionForceFeed);
-		AddAction(ActionEatMeat);
-		
-		AddAction(ActionCreateIndoorFireplace);
-		AddAction(ActionCreateIndoorOven);
 	}
 };
 
@@ -121,42 +90,11 @@ class SRP_FreshWaterFishFilletMeat_Splake extends SRP_FreshWaterFishFilletMeat_B
 class SRP_FreshWaterFishFilletMeat_Perch extends SRP_FreshWaterFishFilletMeat_Base{};
 class SRP_FreshWaterFishFilletMeat_Tilapia extends SRP_FreshWaterFishFilletMeat_Base{};
 
-class SRP_SaltWaterFishFilletMeat_Base extends Edible_Base
+class SRP_SaltWaterFishFilletMeat_Base extends MackerelFilletMeat
 {
-	override bool CanBeCooked()
-	{
-		return true;
-	}		
-	
-	override bool CanBeCookedOnStick()
-	{
-		return true;
-	}
-	
-	override bool IsMeat()
-	{
-		return true;
-	}
-	
-	override bool CanDecay()
-	{
-		return true;
-	}
-
   override bool CanProcessDecay()
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
-	}
-	
-	override void SetActions()
-	{
-		super.SetActions();
-		
-		AddAction(ActionForceFeed);
-		AddAction(ActionEatMeat);
-		
-		AddAction(ActionCreateIndoorFireplace);
-		AddAction(ActionCreateIndoorOven);
 	}
 };
 
