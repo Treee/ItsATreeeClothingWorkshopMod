@@ -74,6 +74,10 @@ modded class PlayerBase extends ManBase
     {
       if (item && (item.GetType() == "DUB_Flippers"))
       {
+        if ( GetGame().GetWaterDepth(GetPosition()) >= 1.3 )
+        {
+          return true;
+        }
         return false;
       }
     }
