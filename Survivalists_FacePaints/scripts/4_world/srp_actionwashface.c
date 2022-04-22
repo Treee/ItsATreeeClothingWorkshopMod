@@ -2,8 +2,8 @@ class ActionWashFaceCB : ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		// m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.SHAVE);
-		m_ActionData.m_ActionComponent = new CAContinuousTime(1.0);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.SHAVE);
+		// m_ActionData.m_ActionComponent = new CAContinuousTime(1.0);
 	}
 };
 
@@ -12,8 +12,7 @@ class ActionWashFace: ActionContinuousBase
   void ActionWashFace()
 	{
 		m_CallbackClass = ActionWashFaceCB;
-		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
-		
+		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;		
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_SHAVE;
 		m_FullBody = false;
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT | DayZPlayerConstants.STANCEMASK_CROUCH;
@@ -27,8 +26,15 @@ class ActionWashFace: ActionContinuousBase
 
   override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-    if (target.GetObject())
+    PlayerBase man;
+    if (target && Class.CastTo(man, target.GetObject()) )
+    {
       return false;
+    }
+    if (player && player.GetFacePaintIndex() == -1)
+    {
+      return false;
+    }
 
     int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
 		EntityAI equipedMask = player.GetInventory().FindPlaceholderForSlot( slot_id );
@@ -57,8 +63,8 @@ class ActionWashFaceTargetCB : ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		// m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.SHAVE);
-    m_ActionData.m_ActionComponent = new CAContinuousTime(1.0);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.SHAVE);
+    // m_ActionData.m_ActionComponent = new CAContinuousTime(1.0);
 	}
 };
 
@@ -82,17 +88,23 @@ class ActionWashFaceTarget: ActionContinuousBase
   override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
     PlayerBase man;
-    if (target && Class.CastTo(man, target.GetObject()) )
+    if (target && !Class.CastTo(man, target.GetObject()) )
     {
-      int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
-      EntityAI equipedMask = man.GetInventory().FindPlaceholderForSlot( slot_id );
-
-      slot_id = InventorySlots.GetSlotIdFromString("Eyewear");	
-      EntityAI equipedGlasses = man.GetInventory().FindPlaceholderForSlot( slot_id );
-      // cannot apply when wearing eyewear or masks
-      return !(equipedMask || equipedGlasses);
+      return false;
     }
-    return false;
+    if (man.GetFacePaintIndex() == -1)
+    {
+      return false;
+    }
+
+    int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
+    EntityAI equipedMask = man.GetInventory().FindPlaceholderForSlot( slot_id );
+
+    slot_id = InventorySlots.GetSlotIdFromString("Eyewear");	
+    EntityAI equipedGlasses = man.GetInventory().FindPlaceholderForSlot( slot_id );
+    // cannot apply when wearing eyewear or masks
+    return !(equipedMask || equipedGlasses);
+
 	}
 		
 	override string GetText()

@@ -4,8 +4,6 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
-		actions.Insert(ActionFacePaintStickSwitch);
-
 		actions.Insert(ActionPaintFace);
 		actions.Insert(ActionPaintFaceTarget);
 

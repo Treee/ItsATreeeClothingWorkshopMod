@@ -943,7 +943,7 @@ class CfgVehicles
   };
 
   //--------------------------------- CUSTOM SYRINE INJECTIONS
-	class SRP_FullSyringe_Base: ClearSyringe  // BP_BloodSyringe_Base
+	class SRP_FullSyringe_Base: ClearSyringe 
 	{
 		scope=0; // dont spawn
 		displayName="dont spawn, base class for a full syringe";
@@ -970,7 +970,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_FullSyringe_Kuru: SRP_FullSyringe_Base  // BP_Kuru_Syringe
+  class SRP_FullSyringe_Kuru: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Kuru Injector";
@@ -985,7 +985,7 @@ class CfgVehicles
 		};
 	};
   
-	class SRP_FullSyringe_KuruCure: SRP_FullSyringe_Base // BP_Kuru_Syringe_Vaccine
+	class SRP_FullSyringe_KuruCure: SRP_FullSyringe_Base
 	{
 		scope=2;
 		displayName="Kuru Virus Cure";
@@ -1000,7 +1000,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_FullSyringe_Salmonella: SRP_FullSyringe_Base  // BP_Salmonella_Syringe
+  class SRP_FullSyringe_Salmonella: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Salmonella Injector";
@@ -1015,7 +1015,7 @@ class CfgVehicles
 		};
   };
 
-	class SRP_FullSyringe_SalmonellaCure: SRP_FullSyringe_Base  // BP_Salmonella_Syringe_Vaccine
+	class SRP_FullSyringe_SalmonellaCure: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Salmonella Cure";
@@ -1030,7 +1030,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_FullSyringe_Influenza: SRP_FullSyringe_Base  // BP_Influenza_Syringe
+	class SRP_FullSyringe_Influenza: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Influenza Injector";
@@ -1045,7 +1045,7 @@ class CfgVehicles
 		};
   };
 
-	class SRP_FullSyringe_InfluenzaCure: SRP_FullSyringe_Base  // BP_Influenza_Syringe_Vaccine
+	class SRP_FullSyringe_InfluenzaCure: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Influenza Cure";
@@ -1060,7 +1060,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_FullSyringe_Cholera: SRP_FullSyringe_Base  // BP_Cholera_Syringe
+  class SRP_FullSyringe_Cholera: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Cholera Injector";
@@ -1075,7 +1075,7 @@ class CfgVehicles
 		};
   };
 
-	class SRP_FullSyringe_CholeraCure: SRP_FullSyringe_Base  // BP_Cholera_Syringe_Vaccine
+	class SRP_FullSyringe_CholeraCure: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Cholera Cure";
@@ -1090,7 +1090,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_FullSyringe_Ceftazidim: SRP_FullSyringe_Base  // BP_Ceftazidim_Syringe
+  class SRP_FullSyringe_Ceftazidim: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Ceftazidim Injector";
@@ -1105,7 +1105,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_FullSyringe_Ampicillin: SRP_FullSyringe_Base  // BP_Ampiciline_Syringe
+  class SRP_FullSyringe_Ampicillin: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Ampicillin Injector";
@@ -1120,7 +1120,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_InjectionVial_Base: InjectionVial  // BP_InjectionVial_base
+  class SRP_InjectionVial_Base: InjectionVial 
 	{
 		scope=0;// base class
 		displayName="do not spawn. base class";
@@ -1141,7 +1141,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_InjectionVial_Kuru: SRP_InjectionVial_Base  // BP_Kuru_flask
+	class SRP_InjectionVial_Kuru: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Kuru Virus Vial";
@@ -1156,7 +1156,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\medical\data\injectionvial_kuru.paa"
 		};
 	};
-	class SRP_InjectionVial_KuruCure: SRP_InjectionVial_Base  // BP_Kuru_flask_Vaccine
+	class SRP_InjectionVial_KuruCure: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Kuru Cure Flask";
@@ -1172,7 +1172,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_InjectionVial_Salmonella: SRP_InjectionVial_Base  // BP_Salmonella_flask
+	class SRP_InjectionVial_Salmonella: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Salmonella Bacteria Vial";
@@ -1187,7 +1187,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\medical\data\injectionvial_salm.paa"
 		};
 	};
-	class SRP_InjectionVial_SalmonellaCure: SRP_InjectionVial_Base  // BP_Salmonella_flask_Vaccine
+	class SRP_InjectionVial_SalmonellaCure: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Salmonella Cure Flask";
@@ -1203,7 +1203,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_InjectionVial_Influenza: SRP_InjectionVial_Base  // BP_Influenza_flask
+  class SRP_InjectionVial_Influenza: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Influenza Virus Vial";
@@ -1218,7 +1218,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\medical\data\injectionvial_inf.paa"
 		};
 	};
-	class SRP_InjectionVial_InfluenzaCure: SRP_InjectionVial_Base  // BP_Influenza_flask_Vaccine
+	class SRP_InjectionVial_InfluenzaCure: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Influenza Cure Flask";
@@ -1234,7 +1234,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_InjectionVial_Cholera: SRP_InjectionVial_Base  // BP_Cholera_flask
+  class SRP_InjectionVial_Cholera: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Cholera Virus Flask";
@@ -1249,7 +1249,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\medical\data\injectionvial_holera.paa"
 		};
 	};
-	class SRP_InjectionVial_CholeraCure: SRP_InjectionVial_Base  // BP_Cholera_flask_Vaccine
+	class SRP_InjectionVial_CholeraCure: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Cholera Cure Flask";
@@ -1265,7 +1265,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_InjectionVial_Ceftazidim: SRP_InjectionVial_Base  // BP_Ceftazidim_flask
+  class SRP_InjectionVial_Ceftazidim: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Ceftazidim Flask";
@@ -1281,7 +1281,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_InjectionVial_Ampicillin: SRP_InjectionVial_Base  // BP_Ampiciline_flask
+	class SRP_InjectionVial_Ampicillin: SRP_InjectionVial_Base 
 	{
 		scope=2;
 		displayName="Ampicillin + Sulbactam";

@@ -45,6 +45,11 @@ modded class PlayerBase
     SetSynchDirty();
   }
 
+  int GetFacePaintIndex()
+  {
+    return m_FacePaintState;
+  }
+
   void ClearPaint()
   {
     SetFacePaint(-1);
@@ -95,4 +100,8 @@ modded class PlayerBase
     }
 	}
 
+  int GetPlayerFacePaintCount()
+  {
+    return m_ModuleLifespan.GetFacePaintCount(GetType());
+  }
 };

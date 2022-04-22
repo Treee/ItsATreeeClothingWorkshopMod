@@ -1,20 +1,19 @@
 class SRP_FacePaintStick: Inventory_Base
 {
-  int camoIndex = 0;
+  protected int m_camoIndex = 0;
 
 	override void SetActions()
 	{
 		super.SetActions();
 		
-		AddAction(ActionFacePaintStickSwitch);		
     AddAction(ActionPaintFace);
     AddAction(ActionPaintFaceTarget);
 	}
 	
 	override void OnApply(PlayerBase player)
 	{
-    // Print("PaintStick::OnApply() " + camoIndex);
-    player.SetFacePaint(camoIndex);
+    // Print("PaintStick::OnApply() " + m_camoIndex);
+    player.SetFacePaint(m_camoIndex);
     if (GetDayZGame().GetSRPFacePaintConfig())
     {
       float dmg = GetDayZGame().GetSRPFacePaintConfig().GetPaintStickDamagerPerUse();
@@ -25,6 +24,11 @@ class SRP_FacePaintStick: Inventory_Base
       AddHealth(-2);
     }
 	}
+
+  void SetCamoIndex(int currentIndex)
+  {
+    m_camoIndex = currentIndex;
+  }
 };
 
 
