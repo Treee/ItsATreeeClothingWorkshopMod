@@ -1,5 +1,7 @@
 # Change Log
 
+- Added scroll wheel options to paint stick.
+- Fixed Wash Face action overriding bandage with rag
 - Added a server config file to set the damage of the paint stick
 - Added Damage System for paint stick to show damaged state
 - Paint Stick takes 2 hp damage per use.
