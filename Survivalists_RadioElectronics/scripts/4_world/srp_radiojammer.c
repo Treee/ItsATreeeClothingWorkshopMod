@@ -1,65 +1,33 @@
-class SRP_ElectronicsJammer_Base extends House
+class SRP_ElectronicsJammer_Base extends DeployableContainer_Base
 {
   void SRP_ElectronicsJammer_Base() 
-  {
+  {    
+    // Print("[SRP_ElectronicsJammer_Base]: " + GetGame().IsDedicatedServer());
     GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(InitializeJammer, 500, false);
   }
 
   void InitializeJammer()
   {
-    if (GetGame().IsDedicatedServer())
+    // Print("[SRP_ElectronicsJammer_Base]: " + GetGame().IsDedicatedServer());
+    RadioElectronicsConfig config;
+    if (GetGame().IsDedicatedServer() && Class.CastTo(config, GetDayZGame().GetRadioElectronicsConfig()))
     {
-      RadioElectronicsConfig config = GetDayZGame().GetRadioElectronicsConfig();
-      if (config)
-      {
-        // Print("[SRP_ElectronicsJammer_Base] - " + GetType() + " - " + GetPosition());
-        SRPRadioTowerInfo tower = config.GetTowerBeingJammed(GetPosition());
-        if (tower)
-        {
-          if (tower.IsJammed())
-          {
-            // do nothing, this tower is already jammed (or maybe do more)
-          }
-          else
-          {
-            tower.ImpactRadioTower(true);
-            config.DecrementActiveTowers();
-            GetDayZGame().SaveRadioElectronicsConfig();
-          }
-          LogRadioEvent();
-        }
-      }
+      bool m_ImpactedNetwork = config.DeployJammer(GetPosition());        
+      LogRadioEvent(m_ImpactedNetwork);
     }
   }
 
   void DismantleJammer()
   {
-    if (GetGame().IsDedicatedServer())
+    RadioElectronicsConfig config;
+    if (GetGame().IsDedicatedServer() && Class.CastTo(config, GetDayZGame().GetRadioElectronicsConfig()))
     {
-      RadioElectronicsConfig config = GetDayZGame().GetRadioElectronicsConfig();
-      if (config)
-      {
-        // Print("[SRP_ElectronicsJammer_Base] - DismantleJammer" + GetType() + " - " + GetPosition());
-        SRPRadioTowerInfo tower = config.GetTowerBeingJammed(GetPosition());
-        if (tower)
-        {
-          if (tower.IsJammed())
-          {
-            tower.ImpactRadioTower(false);
-            config.IncrementActiveTowers();
-            GetDayZGame().SaveRadioElectronicsConfig();
-          }
-          else
-          {
-            // do nothing, this tower is not jammed (how is that possible if we were jsut previously jamming)
-          }
-          LogRadioEvent();
-        }
-      }
+      bool m_ImpactedNetwork = config.DismantleJammer(GetPosition());        
+      LogRadioEvent(m_ImpactedNetwork);
     }
   }
 
-  void LogRadioEvent()
+  void LogRadioEvent(bool impactedNetwork)
   {
     // Print("[LogRadioEvent]");
     if( GetGame().IsDedicatedServer() )
@@ -70,7 +38,7 @@ class SRP_ElectronicsJammer_Base extends House
       if (config && m_AdminLog)
       {          
         // Print("[LogRadioEvent] - SERVER - CONFIG"); 
-        m_AdminLog.DirectAdminLogPrint( "[RADIO JAMMER] - [[IC RADIO ACTIVE]]::" + config.IsRadioNetworkWorking() + " [[IC RADIO MAX DELAY]]::" + config.GetMaxRadioDelay() + " [[Position]]::" + GetPosition() );
+        m_AdminLog.DirectAdminLogPrint( "[RADIO JAMMER] - [[IC RADIO ACTIVE]]::" + config.IsRadioNetworkWorking() + " [[IC RADIO MAX DELAY]]::" + config.GetMaxRadioDelay() + " [[Position]]::" + GetPosition() + "[[DID DEPLOY AFFECT NETWORK]]::" + impactedNetwork );
       }
     }
   }
@@ -86,6 +54,6 @@ class SRP_ElectronicsJammer_Base extends House
   }
 };
 
-class SRP_ElectronicsJammer_Dish extends SRP_ElectronicsJammer_Base {};
-class SRP_ElectronicsJammer_Tower extends SRP_ElectronicsJammer_Base {};
-class SRP_ElectronicsJammer_TowerAdvanced extends SRP_ElectronicsJammer_Base {};
+class SRP_ElectronicsJammer_Dish extends SRP_ElectronicsJammer_Base{};
+class SRP_ElectronicsJammer_Tower extends SRP_ElectronicsJammer_Base{};
+class SRP_ElectronicsJammer_TowerAdvanced extends SRP_ElectronicsJammer_Base{};

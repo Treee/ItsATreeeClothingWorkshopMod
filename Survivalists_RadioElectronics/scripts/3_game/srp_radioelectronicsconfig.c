@@ -12,11 +12,13 @@ class SRPRadioTowerInfo
 
   bool IsWithinJammingRange(vector jammerPosition)
   {
-    float distance = vector.Distance(jammerPosition, m_location);
-    // Print("Checking location: " + m_location + " with hieght " + m_heightRequirement + " distance " + distance);
-    // this only checks distance to.
-    // need to force that distaince to be upwards and not lateral
-    return distance <= m_heightRequirement;
+    bool isInTowerRange = vector.Distance(jammerPosition, m_location) <= 100; // is it in the general area
+    bool isMeetingHeightRequirements = Math.AbsFloat(jammerPosition[1] - m_location[1]) < m_heightRequirement;
+    // if (isInTowerRange && isMeetingHeightRequirements)
+    // {
+    //   Print("JammerPosition: " + jammerPosition + " IsInTowerRange: " + isInTowerRange + " Distance From Point: " + (vector.Distance(jammerPosition, m_location) <= 100) + " IsMEetingHeightRq: " + Math.AbsFloat(jammerPosition[1] - m_location[1]));
+    // }
+    return isInTowerRange && isMeetingHeightRequirements;
   }
 
   void ImpactRadioTower(bool isJammed = false)
@@ -34,23 +36,21 @@ class RadioElectronicsConfig
 {
   ref array<ref SRPRadioTowerInfo> m_RadioTowerInfo;
 
-  protected const int m_MaxNumberOfActiveRadioTowers = 22;
-  protected int m_RequiredNumberOfActiveRadioTowers = 11;
-  protected int m_NumberOfActiveRadioTowers = 0;  
-
-  protected const int m_ICRadioMaxDelay = 60;
+  int m_MaxNumberOfActiveRadioTowers;
+  int m_RequiredNumberOfActiveRadioTowers;
+  int m_NumberOfActiveRadioTowers;  
+  int m_ICRadioMaxDelay;
 
   protected bool m_IsICRadioActive;
 
   void InitializeActiveTowers()
   {
-    Print("[RadioElectronicsConfig] - InitializeActiveTowers - saved active towers " + m_NumberOfActiveRadioTowers);
     m_NumberOfActiveRadioTowers = 0;
     m_IsICRadioActive = true;
-    Print("[RadioElectronicsConfig] - InitializeActiveTowers - " + m_NumberOfActiveRadioTowers);
+    Print("[RadioElectronicsConfig] - InitializeActiveTowers - active towers " + m_NumberOfActiveRadioTowers);
     foreach(SRPRadioTowerInfo tower: m_RadioTowerInfo)
     {
-      // Print("[RadioElectronicsConfig] - InitializeActiveTowers - ");
+      // Print("[RadioElectronicsConfig] - InitializeActiveTowers - " + tower);
       if (!tower.IsJammed())
       {
         IncrementActiveTowers();
@@ -60,19 +60,45 @@ class RadioElectronicsConfig
         Print("Tower jammed!");
       }
     }
+    Print("[RadioElectronicsConfig] - InitializeActiveTowers - " + m_NumberOfActiveRadioTowers + " After Jamming Check");
   }
 
-  SRPRadioTowerInfo GetTowerBeingJammed(vector position)
+  bool DeployJammer(vector position)
   {
+    // Print("DeployJammer Start");
+    bool m_ImapctedNetwork = false;
     foreach(SRPRadioTowerInfo tower: m_RadioTowerInfo)
     {
-      if (tower.IsWithinJammingRange(position))
+      if (tower.IsWithinJammingRange(position) && !tower.IsJammed())
       {
-        return tower;
+        Print("Found Tower In Jamming Range that was not already jammed");
+        tower.ImpactRadioTower(true);
+        DecrementActiveTowers();
+        GetDayZGame().SaveRadioElectronicsConfig();
+        m_ImapctedNetwork = true;
       }
     }
-    return NULL;
+    // Print("DeployJammer End");
+    return m_ImapctedNetwork;
   }
+
+  bool DismantleJammer(vector position)
+  {
+    bool m_ImapctedNetwork = false;
+    foreach(SRPRadioTowerInfo tower: m_RadioTowerInfo)
+    {
+      if (tower.IsWithinJammingRange(position) && tower.IsJammed())
+      {
+        Print("Found Tower In Jamming Range that was jammed - unjamming");
+        tower.ImpactRadioTower(false);
+        IncrementActiveTowers();
+        GetDayZGame().SaveRadioElectronicsConfig();
+        m_ImapctedNetwork = true;
+      }
+    }
+    return m_ImapctedNetwork;
+  }
+
 
   void IncrementActiveTowers(int numberoverride = 1)
   {
@@ -104,7 +130,7 @@ class RadioElectronicsConfig
 
   int GetMaxRadioDelay()
   {
-    int delay = m_ICRadioMaxDelay + (m_ICRadioMaxDelay * (1-GetRadioDelayMultiplier()));
+    int delay = m_ICRadioMaxDelay + ((2*m_ICRadioMaxDelay) * (1-GetRadioDelayMultiplier()));
     if (delay < 5)
     {
       delay = 5;

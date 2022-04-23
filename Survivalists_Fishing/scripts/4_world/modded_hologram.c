@@ -2,7 +2,7 @@ modded class Hologram
 {
   override string ProjectionBasedOnParent()
 	{
-    EntityAI itemInHands = m_Player.GetHumanInventory().GetEntityInHands();
+    EntityAI itemInHands = m_Player.GetItemInHands();
     // Print("ProjectionBasedOnParent " + itemInHands);
     if (itemInHands.IsInherited(SRP_Fishing_KitBase))
     {
@@ -40,7 +40,7 @@ modded class Hologram
 	{	
     super.EvaluateCollision(action_item);
     
-    EntityAI itemInHands = m_Player.GetHumanInventory().GetEntityInHands();
+    EntityAI itemInHands = m_Player.GetItemInHands();
     if (itemInHands && itemInHands.IsInherited(SRP_Fishing_KitBase)) // if the item in our hands is our kit
     {
       // ignore collision

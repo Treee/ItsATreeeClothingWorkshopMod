@@ -23,7 +23,7 @@ class SRP_Fishing_KitBase extends ItemBase
 			kitItem.SetPosition(position);
 			kitItem.SetOrientation(orientation);
 
-      this.Delete();
+      GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(Delete, 1000, false);
 		}
 	}
 
