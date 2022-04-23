@@ -1,34 +1,41 @@
 class SRP_HiddenStash_Base extends Inventory_Base
 {
-	protected ref OpenableBehaviour m_Openable;
+	bool m_IsOpened;
 	
 	void SRP_HiddenStash_Base()
 	{
     // start not opened
-		m_Openable = new OpenableBehaviour(false);		
+		m_IsOpened = false;
 		
-		RegisterNetSyncVariableBool("m_Openable.m_IsOpened");
+		RegisterNetSyncVariableBool("m_IsOpened");
 	}
+  override void OnVariablesSynchronized()
+	{
+    if (IsOpen())
+    {
+      Open();
+    }
+    else 
+    {
+      Close();
+    }
+  };
 	
 	override void Open()
 	{
-		m_Openable.Open();
+		m_IsOpened = true;
     SetSynchDirty();
 	}
 	
 	override void Close()
 	{
-		m_Openable.Close();
+		m_IsOpened = false;
     SetSynchDirty();
 	}
 		  
   override bool IsOpen()
 	{
-    if (m_Openable)
-    {
-		  return m_Openable.IsOpened();
-    }
-    return false;
+    return m_IsOpened;
 	}
   
   override string GetDisplayName()
