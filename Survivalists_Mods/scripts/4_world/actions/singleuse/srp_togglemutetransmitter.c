@@ -1,67 +1,50 @@
-class ActionToggleMuteTransmitter: ActionInteractBase
+class ActionToggleMuteTransmitter: ActionSingleUseBase
 {
 	void ActionToggleMuteTransmitter()
 	{
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_ITEM_OFF;	
+		m_CommandUID        = DayZPlayerConstants.CMD_ACTIONMOD_ITEM_ON;
+		m_Text = "Toggle Mute Radio";
 	}
 
-	override string GetText()
-	{
-		return "Toggle transmist";
+  override void CreateConditionComponents()  
+	{	
+		m_ConditionItem = new CCINonRuined;
+		m_ConditionTarget = new CCTNone;
 	}
-	
-	override typename GetInputType()
+
+  override bool HasTarget()
 	{
-		return ToggleMuteTransmitterActionInput;
-	}
-	
-	override bool HasTarget()
-	{
-		return false;
-	}
-	
-	override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
-	{
-		TransmitterBase radio = TransmitterBase.Cast(player.GetHumanInventory().GetEntityInHands());
-		if (radio)
-		{
-			if (radio.IsTransmitter())
-			{
-				if (radio.HasEnergyManager() && radio.GetCompEM().IsWorking())
-				{
-					return true;
-				}
-			}
-		}
 		return false;
 	}
 		
+  override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
+	{
+    TransmitterBase radio;
+		if (Class.CastTo(radio, item) && radio.IsTransmitter())
+		{
+      if (radio.HasEnergyManager() && radio.GetCompEM().IsWorking())
+      {
+        return true;
+      }			
+		}
+		return false;	
+  }
+		
 	override void OnExecuteServer( ActionData action_data )
 	{
-		PlayerBase player = PlayerBase.Cast(action_data.m_Player);
-
-		TransmitterBase radio = TransmitterBase.Cast(player.GetHumanInventory().GetEntityInHands());
-		if(radio)
+    TransmitterBase radio;
+		if (Class.CastTo(radio, action_data.m_MainItem))
 		{
 			if(!radio.IsMuted())
 			{				
-				//if (player != null)
-					SendMessageToClient( player, "Radio Muted" );
+        SendMessageToClient( action_data.m_Player, "Radio Muted" );
 				radio.MuteTransmitter();
-				//m_SRP_RadioNoTransmit.NoRadioTransmitToggleHeading ();
 			}
 			else if(radio.IsMuted())
 			{
-				//if (player != null)
-					SendMessageToClient( player, "Radio UnMuted" );
+        SendMessageToClient( action_data.m_Player, "Radio UnMuted" );
 				radio.UnMuteTransmitter();
-				//m_SRP_RadioNoTransmit = new SRP_RadioNoTransmit (true);
 			}
-		} 
-		else
-		{
-			if (player != null)
-				//SendMessageToClient( player, "brak instancji transmitter_item" );
 		}
-	}
-}
+  }	
+};

@@ -1,6 +1,17 @@
-modded class TransmitterBase extends ItemTransmitter
+modded class TransmitterBase
 {
 	bool m_Muted = false;
+
+  void TransmitterBase()
+  {
+    RegisterNetSyncVariableBool("m_Muted");
+  }
+
+  override void OnVariablesSynchronized()
+	{
+    super.OnVariablesSynchronized();
+    UpdateMuteRadioState(m_Muted);
+  };
 	
 	bool IsMuted()
 	{
@@ -9,15 +20,20 @@ modded class TransmitterBase extends ItemTransmitter
 	
 	void MuteTransmitter()
 	{
-		EnableBroadcast(false);
 		m_Muted = true;
+    SetSynchDirty();
 	}
 	
 	void UnMuteTransmitter()
 	{
-		EnableBroadcast(true);
 		m_Muted = false;
+    SetSynchDirty();
 	}
+
+  void UpdateMuteRadioState(bool isMuted)
+  {
+    EnableBroadcast(isMuted);
+  }
 
   override void OnWorkStart()
 	{
@@ -27,7 +43,7 @@ modded class TransmitterBase extends ItemTransmitter
 		//stop the static noise
 		SoundTurnedOnNoiseStop();
 	}
-
+  
   override void OnInventoryEnter(Man player)
   {
     super.OnInventoryEnter(player);
