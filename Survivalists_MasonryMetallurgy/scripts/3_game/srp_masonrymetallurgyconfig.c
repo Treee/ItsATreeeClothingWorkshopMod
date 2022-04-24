@@ -18,7 +18,7 @@ class MiningOreConfig
     copperChance = copper;
     tinChance = tin;
   }
-  bool IsPlayerInRange(vector playerLocation)
+  bool IsInRange(vector playerLocation)
   {
     if (m_location)
     {
@@ -33,13 +33,13 @@ class SRPMMConfig
 {
   ref array<ref MiningOreConfig> g_QuarryLocations;
 
-  MiningOreConfig IsPlayerInMiningQuarry(vector position)
+  MiningOreConfig IsInMiningQuarry(vector position)
   {
     if (g_QuarryLocations)
     {
       for ( int i = g_QuarryLocations.Count() - 1; i >= 0; i-- )
       {
-        if (g_QuarryLocations.Get(i).IsPlayerInRange(position))
+        if (g_QuarryLocations.Get(i).IsInRange(position))
         {
           return g_QuarryLocations.Get(i);
         }

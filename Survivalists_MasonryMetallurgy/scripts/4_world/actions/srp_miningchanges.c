@@ -2,177 +2,78 @@ modded class CAContinuousMineRock
 {	
 	override bool GetMiningData(ActionData action_data )
 	{
-		RockBase ntarget;
-    bool isInQuarry = false;
-    // Print("CAContinuousMineRock::Start");
-		if ( Class.CastTo(ntarget, action_data.m_Target.GetObject()) )
-		{
-      // Print("CAContinuousMineRock::Is Rock");
-			m_AmountOfDrops = Math.Max(1,ntarget.GetAmountOfDrops(action_data.m_MainItem));   
-      isInQuarry = CheckQuarryDistances(action_data.m_Player.GetPosition(), ntarget);
-      if (isInQuarry)
-      {
-        ntarget.GetMaterialAndQuantityMap(action_data.m_MainItem,m_MaterialAndQuantityMap);
-      }
-      else
-      { // auto fails rock creation
-        GetMaterialAndQuantityMapRuined(action_data.m_MainItem,m_MaterialAndQuantityMap);
-      }
-			//m_Material = ntarget.GetMaterial(action_data.m_MainItem);
-			//m_AmountOfMaterialPerDrop = Math.Max(1,ntarget.GetAmountOfMaterialPerDrop(action_data.m_MainItem));
-			m_DamageToMiningItemEachDrop = ntarget.GetDamageToMiningItemEachDrop(action_data.m_MainItem);
-			m_AdjustedDamageToMiningItemEachDrop = action_data.m_Player.GetSoftSkillsManager().SubtractSpecialtyBonus( m_DamageToMiningItemEachDrop, m_Action.GetSpecialtyWeight(), true );
-			return true;
-		}
-    string surface_type;
-    vector position;
-    position = action_data.m_Target.GetCursorHitPos();
-    
-    GetGame().SurfaceGetType( position[0], position[2], surface_type );
-    // Print("CAContinuousMineRock::Is not rock");
-    if (surface_type == "stone_ext" || surface_type == "stone_int" || surface_type == "jmc_gravel")
+    bool isValid = super.GetMiningData(action_data);
+    if (!isValid)
     {
-      // Print("CAContinuousMineRock::Surface Type: " + surface_type);
-      m_AmountOfDrops = 1;   
-      isInQuarry = CheckQuarryDistances(action_data.m_Player.GetPosition(), NULL);
-      if (isInQuarry)
+      vector position = action_data.m_Target.GetCursorHitPos();
+
+      string surface_type_ground;    
+      GetGame().SurfaceGetType( position[0], position[2], surface_type_ground );
+
+      string surface_type_3d;    
+      GetGame().SurfaceGetType3D( position[0], position[1]+0.1, position[2], surface_type_3d );
+      position[1] = GetGame().SurfaceY(position[0],position[2]);
+
+      // Print("CAContinuousMineRock::Is not rock:");
+      if (IsMinableSurface(surface_type_ground) || IsMinableSurface(surface_type_3d))
       {
-        GetMaterialAndQuantityMap(action_data.m_MainItem,m_MaterialAndQuantityMap);
+        m_AmountOfDrops = 1;
+        GetMaterialAndQuantityMap(action_data.m_MainItem, action_data.m_Player.GetPosition(),m_MaterialAndQuantityMap);          
+        m_DamageToMiningItemEachDrop = GetDamageToMiningItemEachDrop(action_data.m_MainItem);
+        m_AdjustedDamageToMiningItemEachDrop = action_data.m_Player.GetSoftSkillsManager().SubtractSpecialtyBonus( m_DamageToMiningItemEachDrop, m_Action.GetSpecialtyWeight(), true );
+        return true;
       }
-      else
-      { // auto fails rock creation
-        GetMaterialAndQuantityMapRuined(action_data.m_MainItem,m_MaterialAndQuantityMap);
-      }
-      //m_Material = ntarget.GetMaterial(action_data.m_MainItem);
-      //m_AmountOfMaterialPerDrop = Math.Max(1,ntarget.GetAmountOfMaterialPerDrop(action_data.m_MainItem));
-      m_DamageToMiningItemEachDrop = GetDamageToMiningItemEachDrop(action_data.m_MainItem);
-      m_AdjustedDamageToMiningItemEachDrop = action_data.m_Player.GetSoftSkillsManager().SubtractSpecialtyBonus( m_DamageToMiningItemEachDrop, m_Action.GetSpecialtyWeight(), true );
-      return true;
+      // Print("MINING DATA FALSE");
+      return false;
     }
-
-		return false;
+    // Print("MINING DATA TRUE");
+		return isValid;
 	}
 
-  override int Execute( ActionData action_data )
-	{
-		Object targetObject;
-		Class.CastTo(targetObject, action_data.m_Target.GetObject());
-    // error out if no data is loaded or no player
-		if ( !action_data.m_Player || !m_DataLoaded )
-		{
-			return UA_ERROR;
-		}
-		// finished if the pickaxe is destroyed
-		if ( (action_data.m_MainItem && action_data.m_MainItem.IsDamageDestroyed()) )
-		{
-			return UA_FINISHED;
-		}
-		else
-		{
-      // if we need to wait longer for material drops
-			if ( m_TimeElpased < m_AdjustedTimeBetweenMaterialDrops )
-			{ // increment the time elapsed
-				m_TimeElpased += action_data.m_Player.GetDeltaT();
-			}
-			else
-			{
-				if ( GetGame().IsServer() )
-				{
-					float damage = 0;
-					if (m_AmountOfDrops > 0)
-						damage = (1 / m_AmountOfDrops) * 100;
-          if (targetObject)
-					  targetObject.DecreaseHealth("","",damage,true);
-					CreatePrimaryItems(action_data);
-					if (action_data.m_MainItem)
-						action_data.m_MainItem.DecreaseHealth( "", "", m_AdjustedDamageToMiningItemEachDrop );
-					else
-					{
-						DamagePlayersHands(action_data.m_Player);
-					}
-				}
-				if ( targetObject && targetObject.IsDamageDestroyed() )
-				{
-					if ( m_SpentUnits )
-					{
-						m_SpentUnits.param1 = m_TimeElpased;
-						SetACData(m_SpentUnits);
-					}
-					OnCompletePogress(action_data);
-					return UA_FINISHED;
-				}
-				m_TimeElpased = m_TimeElpased - m_AdjustedTimeBetweenMaterialDrops;
-				OnCompletePogress(action_data);
-			}
-			return UA_PROCESSING;
-		}
-	}
-
-  bool CheckQuarryDistances(vector playerPosition, RockBase targetRock)
+  bool IsMinableSurface(string surfaceType)
   {
-    SRPMMConfig config = GetDayZGame().GetSRPMMConfig();    
-    if (config)
-    {
-      MiningOreConfig miningConfig = config.IsPlayerInMiningQuarry(playerPosition);
-      if (targetRock && miningConfig)
-      {
-        targetRock.SetRockProbabilities(miningConfig);
-        return true;
-      }
-      if (miningConfig)   
-      {
-        return true;
-      }
-    }
-    return false;
+    // Print("[IsMinableSurface] - " + surfaceType);
+    return ( surfaceType == "stone_ext" || surfaceType == "stone_int" || surfaceType == "jmc_gravel" );
   }
 
-  void GetMaterialAndQuantityMapRuined(ItemBase item, out map<string,int> output_map)
+  void GetMaterialAndQuantityMap(ItemBase item, vector position, out map<string,int> output_map)
 	{
-		if ( item && item.KindOf("Pickaxe") )
+		if ( item )
 		{
-			output_map.Insert("Stone_Ruined",2);
-		}
-		else if ( item && item.KindOf("SledgeHammer") )
-		{
-			output_map.Insert("Stone_Ruined",1);
-		}
-		else if ( item )
-		{
-			output_map.Insert("Stone_Ruined",1);
-		}
-	}
-
-  void GetMaterialAndQuantityMap(ItemBase item, out map<string,int> output_map)
-	{
-		if ( item && item.KindOf("Pickaxe") )
-		{
-			output_map.Insert("Stone",2);
-		}
-		else if ( item && item.KindOf("SledgeHammer") )
-		{
-			output_map.Insert("Stone",1);
-		}
-		else if ( item )
-		{
-			output_map.Insert("Stone",1);
+      SRPMMConfig config;
+      MiningOreConfig miningConfig;
+      if ( Class.CastTo(config, GetDayZGame().GetSRPMMConfig()) && Class.CastTo(miningConfig, config.IsInMiningQuarry(position)) )
+      {
+        output_map.Insert("Stone", 1);
+      }
+      else
+      {
+        output_map.Insert("Stone_Ruined", 1);
+      }
 		}
 	}
 
   float GetDamageToMiningItemEachDrop(ItemBase item)
 	{
-		if ( item && item.IsKindOf("Pickaxe") )
+		if (item)
 		{
-			return 20;
+			switch (item.GetType())
+			{
+        case "SledgeHammer":
+        case "Pickaxe":
+          return 20;
+        case "Wrench":
+        case "Screwdriver":
+        case "MeatTenderizer":
+          return 25;
+        case "PipeWrench":
+        case "Crowbar":
+          return 50;
+        case "Hammer":
+          return 40;
+			}
 		}
-		else if ( item && item.IsKindOf("SledgeHammer") )
-		{
-			return 20;
-		}
-		else
-		{
-			return 40;
-		}
+		return 25;
 	}
 };
 
@@ -184,54 +85,55 @@ modded class ActionMineRock
 		m_ConditionItem = new CCINonRuined;
 	}
 
+  override string GetYieldName( PlayerBase player, ActionTarget target, ItemBase item )
+	{				
+		string yieldName = " - Large Stones";
+		RockBase rock;
+    if (target && target.GetObject() && Class.CastTo(rock, target.GetObject()))
+    {
+      yieldName = " - Ore";
+    }
+		return yieldName;
+	}
+
   override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-		//Action not allowed if player has broken legs
-		if (player.GetBrokenLegs() == eBrokenLegs.BROKEN_LEGS)
-			return false;
+    vector position = target.GetCursorHitPos();
+    if (position == vector.Zero)
+      return false;
+    
+    string surface_type_ground;    
+    GetGame().SurfaceGetType( position[0], position[2], surface_type_ground );
 
-    // Print("ActionMineRock: Legs OK: "+ target.GetComponentIndex());
-    if (target)
+    string surface_type_3d;    
+    GetGame().SurfaceGetType3D( position[0], position[1]+0.1, position[2], surface_type_3d );
+    position[1] = GetGame().SurfaceY(position[0],position[2]);
+
+    if (!target.GetObject() && (IsMinableSurface(surface_type_3d) || IsMinableSurface(surface_type_ground)) && IsPlayerInMiningRange(position[2], player.GetPosition()[2],1) )
     {
-      Object targetObject = target.GetObject();
-      // Print("ActionMineRock: HAS TARGET");
-      if (targetObject && targetObject.IsRock() )
-      {
-        // Print("ActionMineRock: IS ROCK");
-        return true;
-      }
-      // Print("ActionMineRock: NOT ROCK " + targetObject);
-
-  		// See if we are looking at something			
-      vector position = target.GetCursorHitPos();
-      if (position == vector.Zero)
-        return false;
-      
-      string surface_type;
-      
-      GetGame().SurfaceGetType3D( position[0], position[1]+0.1, position[2], surface_type );
-
-      // Print("ActionMineRock: CURSOR HIT: " + surface_type);
-      if (surface_type == "stone_ext" || surface_type == "stone_int" || surface_type == "jmc_gravel")
-      {
-        // Print("ActionMineRock: IS STONE");
-        // Sometimes SurfaceGetType3D ignores the Y, this makes it so the proper distance is calculated
-		    position[1] = GetGame().SurfaceY(position[0],position[2]);
-        // Print("SX: " + position[0] + " SY: " + position[1] + " SZ: " + position[2] + " PX: " + player.GetPosition()[0] + " PY: " + player.GetPosition()[1] + " PZ: " + player.GetPosition()[2] + " Z delta: " + Math.AbsFloat(position[2]-player.GetPosition()[2]));
-        if ( Math.AbsFloat(position[2]-player.GetPosition()[2]) <= 0.8)
-        {
-          // Print("ActionMineRock: WITHIN 1 METER");
-          return true;
-        }
-        // Print("ActionMineRock: OUTSIDE 1 METER: " + vector.DistanceSq(position, player.GetPosition()) );
-        return false;
-      }
-      // Print("ActionMineRock: NOT STONE");
-      return false;      
+      // Print("ActionMineRock: WITHIN 1 METER");
+      return true;
     }
-    // Print("ActionMineRock: ALL FAIL " + targetObject);   
+    // Print("ActionMineRock: NOT STONE SURFACE OR NOT IN RANGE: " + (vector.DistanceSq(position, player.GetPosition())));  
+    if (target.GetObject())
+    {
+      // Print("ActionMineRock: SUPER");
+      return super.ActionCondition(player, target, item);    
+    }
     return false;
 	}
+
+  bool IsMinableSurface(string surfaceType)
+  {
+    // Print("[IsMinableSurface] - " + surfaceType);
+    return ( surfaceType == "stone_ext" || surfaceType == "stone_int" || surfaceType == "jmc_gravel" );
+  }
+
+  bool IsPlayerInMiningRange(float cursorPositionY, float playerPositionY, float requiredDistance)
+  {
+    // Print("CursorY: " + cursorPositionY + " PlayerY: " + playerPositionY + " ABS Diff: " + Math.AbsFloat(cursorPositionY - playerPositionY) + " ReqDistance: " + requiredDistance);
+    return ( Math.AbsFloat(cursorPositionY - playerPositionY) <= requiredDistance );
+  }
 };
 
 modded class ActionMineRock1H

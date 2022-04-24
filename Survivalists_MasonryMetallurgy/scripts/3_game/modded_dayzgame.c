@@ -31,33 +31,33 @@ modded class DayZGame
         // ironChance = 0.99;
         // copperChance = 0.99;
         // tinChance = 0.99;
-
+        // the lower the number the higher chance to get the ore
         // crotch island
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("11153 38 2274",215,0.95,0.90,0.85,2,2));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("11153 30 2274",215,0.95,0.95,0.5,2,2));
         // fishers camp
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("10543 3 5607",60,2,2,0.75,0.80,0.75));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("10543 3 5607",60,0.95,0.5,2,2,0.95));
         // rotten island
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("13017 2 6282",550,2,0.95,0.80,2,2));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("13017 2 6282",550,0.5,2,2,0.95,0.95));
         // north stonington
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("6833 27 1730",60,2,0.95,0.80,2,0.75));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("6833 27 1730",60,2,2,0.95,0.95,0.5));
         // prison island
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("5457 34 700",200,0.75,2,0.95,0.90,2));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("5457 0 700",200,2,0.95,0.95,0.5,2));
         // temple island
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("442 16 716",550,0.60,0.60,2,2,0.80));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("442 14 716",550,0.95,0.95,0.5,2,2));
         // north milo ravine
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.90,2,2,2));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.5,2,2,0.95));
         // south east westbrook
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("4497 49 5545",250,2,2,0.80,0.80,0.80));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("4497 0 5545",250,0.5,2,2,0.95,0.95));
         //rfci
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("3787 13 8821",450,0.80,0.80,0.80,0.80,0.80));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("3787 0 8821",450,2,2,0.95,0.95,0.5));
         //east waldo
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("9468 15 9039",75,2,2,0.80,0.75,0.85));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("9468 15 9039",75,2,0.95,0.95,0.5,2));
         //north bayville
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("9052 17 13021",100,0.80,0.80,0.75,2,2));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("9052 0 13021",100,0.95,0.95,0.5,2,2));
         //portland
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("5892 6 13717",330,0.80,0.80,0.80,0.80,0.80));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("5892 0 13717",330,0.95,0.5,2,2,0.95));
         //archipeleago
-        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("2810 30 13686",200,0.85,0.85,0.80,0.75,0.85));
+        m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("2810 30 13686",200,0.5,2,2,0.95,0.95));
         //arctic
         // m_SRPMMConfig.g_QuarryLocations.Insert(new MiningOreConfig("6052 5 4843",150,0.95,0.90,0.80,0.75,0.85));
         //industrial explosion

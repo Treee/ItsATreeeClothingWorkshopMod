@@ -1,74 +1,83 @@
 modded class RockBase
 {
-  ref MiningOreConfig probabilities;
-
-  void RockBase()
-  {
-    probabilities = new MiningOreConfig("0 0 0",10,2.0,2.0,2.0,2.0,2.0);
-  }
-
-  void SetRockProbabilities(MiningOreConfig oreConfig)
-  {
-    if (oreConfig)
-    {
-      probabilities = oreConfig;
-    }
-  }
-
+	override int GetAmountOfDrops(ItemBase item)
+	{
+		return 1;
+	}	
+	
   override void GetMaterialAndQuantityMap(ItemBase item, out map<string,int> output_map)
 	{
-		if ( item && item.KindOf("Pickaxe") )
+    Print("[RockBase] - [GetMaterialAndQuantityMap] - START: ");
+		if ( item )
 		{
-			// output_map.Insert("Stone",2);
-      array<string> stoneChunks = GetMiningStoneChunks();
-      if (stoneChunks && stoneChunks.Count() > 0)
+      Print("[RockBase] - [GetMaterialAndQuantityMap] - ITEM EXISTS: ");
+      if (IsInQuarry())
       {
-        for (int i = 0; i < stoneChunks.Count(); i++)
+        // output_map.Insert("Stone",2);
+        Print("[RockBase] - [GetMaterialAndQuantityMap] - IS IN QUARRY: ");
+        array<string> stoneChunks = GetMiningStoneChunks();
+        if (stoneChunks && stoneChunks.Count() > 0)
         {
-          output_map.Insert(stoneChunks.Get(i), 1);
+          for (int i = 0; i < stoneChunks.Count(); i++)
+          {
+            output_map.Insert(stoneChunks.Get(i), 1);
+          }
         }
       }
-		}
-		else if ( item && item.KindOf("SledgeHammer") )
-		{
-			output_map.Insert("Stone",1);
-		}
-		else if ( item )
-		{
-			output_map.Insert("Stone",1);
+      else
+      {
+        Print("[RockBase] - [GetMaterialAndQuantityMap] - IS NOT IN QUARRY: ");
+        output_map.Insert("Stone_Ruined", 1);
+      }
 		}
 	}
+
+  override float GetDamageToMiningItemEachDrop(ItemBase item)
+  {
+    return ( super.GetDamageToMiningItemEachDrop(item) / 2 );
+  }
 
   //values between 0-1
   array<string> GetMiningStoneChunks()
   {
+    SRPMMConfig config;
+    MiningOreConfig miningConfig;
     array<string> stoneChunks = new array<string>;
-    float chance = Math.RandomFloatInclusive(0,1);
-    if (chance >= probabilities.platinumChance)
+    if ( Class.CastTo(config, GetDayZGame().GetSRPMMConfig()) && Class.CastTo(miningConfig, config.IsInMiningQuarry(GetPosition())) )
     {
-      stoneChunks.Insert("SRP_Mining_StoneChunk_Platinum");      
-    }
-    chance = Math.RandomFloatInclusive(0,1);
-    if (chance >= probabilities.goldChance)
-    {
-      stoneChunks.Insert("SRP_Mining_StoneChunk_Gold");      
-    }
-    chance = Math.RandomFloatInclusive(0,1);
-    if (chance >= probabilities.ironChance)
-    {
-      stoneChunks.Insert("SRP_Mining_StoneChunk_Iron");
-    }
-    chance = Math.RandomFloatInclusive(0,1);
-    if (chance >= probabilities.copperChance)
-    {
-      stoneChunks.Insert("SRP_Mining_StoneChunk_Copper");
-    }
-    chance = Math.RandomFloatInclusive(0,1);
-    if (chance >= probabilities.tinChance)
-    {
-      stoneChunks.Insert("SRP_Mining_StoneChunk_Tin");          
+      if (Math.RandomFloatInclusive(0,1) >= miningConfig.platinumChance)
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Platinum");      
+      }
+      if (Math.RandomFloatInclusive(0,1) >= miningConfig.goldChance)
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Gold");      
+      }
+      if (Math.RandomFloatInclusive(0,1) >= miningConfig.ironChance)
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Iron");
+      }
+      if (Math.RandomFloatInclusive(0,1) >= miningConfig.copperChance)
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Copper");
+      }
+      if (Math.RandomFloatInclusive(0,1) >= miningConfig.tinChance)
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Tin");          
+      }
     }
     return stoneChunks;
+  }
+
+  bool IsInQuarry()
+  {
+    SRPMMConfig config;
+    MiningOreConfig miningConfig;
+    if ( Class.CastTo(config, GetDayZGame().GetSRPMMConfig()) && Class.CastTo(miningConfig, config.IsInMiningQuarry(GetPosition())) )
+    {
+      return true;
+    }
+    return false;
   }
 };
 

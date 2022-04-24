@@ -99,3 +99,15 @@ modded class Crowbar
     AddAction(ActionSawPlanks);
 	}
 };
+
+
+modded class Pickaxe
+{
+	override void SetActions()
+	{
+		super.SetActions();
+		
+		RemoveAction(ActionDismantleBBP);
+		RemoveAction(ActionDestroyBBP);
+	}
+};
