@@ -7,14 +7,14 @@ modded class RockBase
 	
   override void GetMaterialAndQuantityMap(ItemBase item, out map<string,int> output_map)
 	{
-    Print("[RockBase] - [GetMaterialAndQuantityMap] - START: ");
+    // Print("[RockBase] - [GetMaterialAndQuantityMap] - START: ");
 		if ( item )
 		{
-      Print("[RockBase] - [GetMaterialAndQuantityMap] - ITEM EXISTS: ");
+      // Print("[RockBase] - [GetMaterialAndQuantityMap] - ITEM EXISTS: ");
       if (IsInQuarry())
       {
         // output_map.Insert("Stone",2);
-        Print("[RockBase] - [GetMaterialAndQuantityMap] - IS IN QUARRY: ");
+        // Print("[RockBase] - [GetMaterialAndQuantityMap] - IS IN QUARRY: ");
         array<string> stoneChunks = GetMiningStoneChunks();
         if (stoneChunks && stoneChunks.Count() > 0)
         {
@@ -26,7 +26,7 @@ modded class RockBase
       }
       else
       {
-        Print("[RockBase] - [GetMaterialAndQuantityMap] - IS NOT IN QUARRY: ");
+        // Print("[RockBase] - [GetMaterialAndQuantityMap] - IS NOT IN QUARRY: ");
         output_map.Insert("Stone_Ruined", 1);
       }
 		}
