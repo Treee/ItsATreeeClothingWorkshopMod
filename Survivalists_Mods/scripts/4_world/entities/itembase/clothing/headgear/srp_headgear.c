@@ -37,9 +37,9 @@ class BaseballCap_MilitaryPatrolTan extends BaseballCap_ColorBase
     {
       PlayerBase player;
       // Print("SRP_Comtacs_ColorBase::OnWasAttached: " + parent + " slot_id: " + slot_id + " heirarchy: " + player);
-      if (Class.CastTo(player, parent.GetHierarchyRoot()))
+      if (Class.CastTo(player, parent.GetHierarchyRootPlayer()))
       {
-        if( player.GetInstanceType() == DayZPlayerInstanceType.INSTANCETYPE_CLIENT && !GetGame().IsDedicatedServer() ) 
+		    if ( (!GetGame().IsDedicatedServer()) && player.IsControlledPlayer() )
         {
           player.SendMessageToClient( player, "Ear Protection On" );
           GetGame().GetSoundScene().SetSoundVolume(0.3,1);
@@ -55,9 +55,9 @@ class BaseballCap_MilitaryPatrolTan extends BaseballCap_ColorBase
     {
       PlayerBase player;
       // Print("SRP_Comtacs_ColorBase::OnWasAttached: " + parent + " slot_id: " + slot_id + " heirarchy: " + player);
-      if (Class.CastTo(player, parent.GetHierarchyRoot()))
+      if (Class.CastTo(player, parent.GetHierarchyRootPlayer()))
       {
-        if( player.GetInstanceType() == DayZPlayerInstanceType.INSTANCETYPE_CLIENT && !GetGame().IsDedicatedServer() ) 
+		    if ( (!GetGame().IsDedicatedServer()) && player.IsControlledPlayer() )
         {
           player.SendMessageToClient( player, "Ear Protection Off" );
           GetGame().GetSoundScene().SetSoundVolume(1,1);
@@ -95,9 +95,9 @@ class SRP_Comtacs_ColorBase extends BalaclavaMask_ColorBase
   {
     PlayerBase player;
     // Print("SRP_Comtacs_ColorBase::OnWasAttached: " + parent + " slot_id: " + slot_id + " heirarchy: " + player);
-    if (Class.CastTo(player, parent.GetHierarchyRoot()))
+    if (Class.CastTo(player, parent.GetHierarchyRootPlayer()))
     {
-      if( player.GetInstanceType() == DayZPlayerInstanceType.INSTANCETYPE_CLIENT && !GetGame().IsDedicatedServer() ) 
+      if ( (!GetGame().IsDedicatedServer()) && player.IsControlledPlayer() )
       {
         player.SendMessageToClient( player, "Ear Protection On" );
         GetGame().GetSoundScene().SetSoundVolume(0.3,1);
@@ -109,9 +109,9 @@ class SRP_Comtacs_ColorBase extends BalaclavaMask_ColorBase
   { 
     PlayerBase player;
     // Print("SRP_Comtacs_ColorBase::OnWasAttached: " + parent + " slot_id: " + slot_id + " heirarchy: " + player);
-    if (Class.CastTo(player, parent.GetHierarchyRoot()))
+    if (Class.CastTo(player, parent.GetHierarchyRootPlayer()))
     {
-      if( player.GetInstanceType() == DayZPlayerInstanceType.INSTANCETYPE_CLIENT && !GetGame().IsDedicatedServer() ) 
+      if ( (!GetGame().IsDedicatedServer()) && player.IsControlledPlayer() )
       {
         player.SendMessageToClient( player, "Ear Protection Off" );
         GetGame().GetSoundScene().SetSoundVolume(1,1);
