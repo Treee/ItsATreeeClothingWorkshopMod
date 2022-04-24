@@ -8,7 +8,8 @@ class CfgPatches
     requiredAddons[]=
     {
       "DZ_Data",
-      "DZ_Scripts"
+      "DZ_Scripts",
+      "Survivalists_RadioElectronics"
     };
   };
 };
@@ -124,6 +125,26 @@ class CfgVehicles
         };
 			};
 		};
+	};
+
+  class SRP_RadioElectronicsJammer_Intermediate_Kit: SRP_RadioElectronics_KitBase
+	{
+		scope=2;
+		displayName="Advanced Electronics Intermediate Kit - Radio Jammer";
+		descriptionShort="This kit is missing a few pieces, add the other ingredients and apply work to finish";
+    attachments[]=
+    {
+      "Truck_01_MetalSheets",
+      "Material_MetalSheets",
+      "Lightbulb",
+      "MetalWire",
+			"Material_MetalWire",
+			"Material_FPole_MetalWire",
+			"Rope",
+			"Material_FPole_Rope",
+			"Material_Shelter_Rope",
+      "Stones"
+    };
 	};
 
   class SRP_ElectronicsJammer_Dish_Kit: SRP_RadioElectronics_KitBase

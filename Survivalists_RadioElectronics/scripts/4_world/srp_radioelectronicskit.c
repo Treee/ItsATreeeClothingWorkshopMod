@@ -66,14 +66,34 @@ class SRP_RadioElectronics_Intermediate_KitBase extends ItemBase
     }
     return false;
   }
+
   bool CanCraft()
   {
     return false;
   }
 };
 
-//===============KITBASE
+//===============SRP_RadioElectronics_KitBase
 class SRP_ElectronicsJammer_Dish_Kit extends SRP_RadioElectronics_KitBase{};
 class SRP_ElectronicsJammer_Tower_Kit extends SRP_RadioElectronics_KitBase{};
 class SRP_ElectronicsJammer_TowerAdvanced_Kit extends SRP_RadioElectronics_KitBase{};
 
+//===============SRP_RadioElectronics_Intermediate_KitBase
+
+class SRP_RadioElectronicsJammer_Intermediate_Kit extends SRP_RadioElectronics_Intermediate_KitBase
+{
+  override bool CanCraft()
+  {
+    bool isValid = HasAttachmentFilledWithQuantity("Truck_01_MetalSheets", 40);
+    isValid &= HasAttachmentFilledWithQuantity("Material_MetalSheets", 20);
+    isValid &= HasAttachmentFilled("Lightbulb");
+    isValid &= HasAttachmentFilled("MetalWire");
+    isValid &= HasAttachmentFilled("Material_MetalWire");
+    isValid &= HasAttachmentFilled("Material_FPole_MetalWire");
+    isValid &= HasAttachmentFilled("Rope");
+    isValid &= HasAttachmentFilled("Material_FPole_Rope");
+    isValid &= HasAttachmentFilled("Material_Shelter_Rope");
+    isValid &= HasAttachmentFilledWithQuantity("Stones", 16);
+    return isValid;
+  }
+};
