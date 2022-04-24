@@ -182,6 +182,8 @@ modded class DayZGame
         m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("4953 2 2140", 65));
         m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("4085 2 4450", 50));
         m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("442 16 716", 100));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("14006 0 2115", 200));
+        m_SRPFishingConfig.m_FishingHotspots.Insert(new SRPFishingHotspot("1858 0 6559", 200));
 
         m_SRPFishingConfig.m_FishingRodLuck = new ref array<ref SRPFishingRodLuck>;
         m_SRPFishingConfig.m_FishingRodLuck.Insert(new SRPFishingRodLuck("ObsoleteFishingRod", 0.02));
