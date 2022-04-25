@@ -85,17 +85,20 @@ class SleepEffectSymptom extends SymptomBase
 	override void OnGetActivatedClient(PlayerBase player)
 	{
     SRPConfig config = GetDayZGame().GetSRPConfigGlobal();
-    // Print("SleepMdfr: OnActivate Start - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));        
-    SECONDS_PER_DAY = config.g_SRPSleepMaximumAwakeTime;
-    m_YawnInterval = config.g_SRPSleepYawnInterval;
-    m_SleepynessIncreaseAmount = config.g_SRPSleepynessIncreaseAmount;
-    m_RestfulnessIncreaseAmount = config.g_SRPRestfulnessIncreaseAmount;
-    YAWN_THRESHOLD = SECONDS_PER_DAY * config.g_SRPSleepYawnThreshold; // 20 percent awake = start yawning
-    PASS_OUT_THRESHOLD = SECONDS_PER_DAY + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
-    TIREDNESS_25PERCENT = SECONDS_PER_DAY * 0.25;
-    TIREDNESS_50PERCENT = SECONDS_PER_DAY * 0.50;
-    TIREDNESS_75PERCENT = SECONDS_PER_DAY * 0.75;
-    TIREDNESS_100PERCENT = SECONDS_PER_DAY * 0.80; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
+    if (config)
+    {
+      // Print("SleepMdfr: OnActivate Start - Sleepyness count: " + player.GetSingleAgentCount(SRP_Medical_Agents.SLEEP_AGENT));        
+      SECONDS_PER_DAY = config.g_SRPSleepMaximumAwakeTime;
+      m_YawnInterval = config.g_SRPSleepYawnInterval;
+      m_SleepynessIncreaseAmount = config.g_SRPSleepynessIncreaseAmount;
+      m_RestfulnessIncreaseAmount = config.g_SRPRestfulnessIncreaseAmount;
+      YAWN_THRESHOLD = SECONDS_PER_DAY * config.g_SRPSleepYawnThreshold; // 20 percent awake = start yawning
+      PASS_OUT_THRESHOLD = SECONDS_PER_DAY + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
+      TIREDNESS_25PERCENT = SECONDS_PER_DAY * 0.25;
+      TIREDNESS_50PERCENT = SECONDS_PER_DAY * 0.50;
+      TIREDNESS_75PERCENT = SECONDS_PER_DAY * 0.75;
+      TIREDNESS_100PERCENT = SECONDS_PER_DAY * 0.80; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
+    }
 
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetActivated", m_Player.ToString());
 	}

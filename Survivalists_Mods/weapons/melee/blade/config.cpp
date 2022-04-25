@@ -1440,4 +1440,111 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_GreatBattleAxe: WoodAxe
+	{
+		scope=2;
+		displayName="Battle Axe";
+		descriptionShort="A large axe needed to be wielded by a large man.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_greatbattleaxe.p3d";
+		repairableWithKits[]={5,4};
+		repairCosts[]={30,25};
+		rotationFlags=12;
+		autoQuickbar=1;
+		weight=1550;
+		itemSize[]={2,7};
+		itemBehaviour=2;
+		fragility=0.01;
+		inventorySlot="Melee";
+		lootCategory="Tools";
+		openItemSpillRange[]={20,40};
+		itemInfo[]=
+		{
+			"Axe"
+		};
+		isMeleeWeapon=1;
+		suicideAnim="woodaxe";
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "wraps"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe_co.paa",
+			"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe_wraps_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=150;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe.rvmat"}},
+            {0.7,{"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe_damage.rvmat"}},
+            {0.3,{"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUp_Light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="baseballbat_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+	class SRP_GreatBattleAxe_Phantom: SRP_GreatBattleAxe
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "wraps"
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe_phantom_co.paa",
+			"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe_wraps_phantom_co.paa",      
+		};
+	};
+
 };
