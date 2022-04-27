@@ -19,26 +19,11 @@ class CfgVehicles
 {
   class Inventory_Base;
   class Pen_ColorBase;
-  class Hatchet;
   class Compass;
   class FarmingHoe;
   class Container_Base;
 
   class SRP_KitBase;
-
-  // -------------------------- MODDED MODS
-  class admin_Hatchet: Hatchet
-	{
-    scope=0; // make sure it cannot spawn ever!!!!!
-		displayName="ADMIN HATCHET";
-		descriptionShort="No materials required for building, only dirty cheaters use this item.";
-	};
-
-  class MassAdminStash: Compass
-	{
-    scope=0; // do not let it even be spawned in
-		itemsCargoSize[]={0,0}; // if it somehow got in, no storage
-	};
 
   // ---------------------------- BASE GAME OVERRIDE
 	class Heatpack: Inventory_Base
@@ -163,6 +148,21 @@ class CfgVehicles
 	{
     canBeSplit=1;
   };
+
+  // -------------------------- MODDED MODS
+  class BBP_Admin_Hammer: Hammer
+  {
+    scope=0;
+    displayName="ADMIN HAMMER";
+    descriptionShort="No materials required for building, only dirty cheaters use this item.";
+    itemSize[]={2,2};
+  };
+
+  class MassAdminStash: Compass
+	{
+    scope=0; // do not let it even be spawned in
+		itemsCargoSize[]={0,0}; // if it somehow got in, no storage
+	};
 
   // ---------------------------- Custom Stuff
 
