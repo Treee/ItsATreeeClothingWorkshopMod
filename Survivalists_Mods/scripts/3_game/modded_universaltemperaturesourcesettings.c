@@ -1,6 +1,7 @@
 modded class UniversalTemperatureSourceSettings
 {
   bool m_IsRadioactiveSource = false;
+  bool m_IsComfortHeat = false;
 };
 
 modded class UniversalTemperatureSource
@@ -14,4 +15,14 @@ modded class UniversalTemperatureSource
 	{
 		m_Settings.m_IsRadioactiveSource = isRadioactive;
 	}
+
+  bool IsComfortHeatSource()
+  {
+    return m_Settings.m_IsComfortHeat;
+  }
+
+  void SetIsComfortHeatSource(bool isComfortHeat)
+  {
+    m_Settings.m_IsComfortHeat = isComfortHeat;
+  }
 };

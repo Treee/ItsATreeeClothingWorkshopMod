@@ -1,11 +1,14 @@
 modded class Environment
 {
   bool m_HasRadioactiveFuel;
+  bool m_HasComfortHeatSource;
+
   override protected void ProcessTemperatureSources()
 	{
     super.ProcessTemperatureSources();
     
     m_HasRadioactiveFuel = false;
+    m_HasComfortHeatSource = false;
     // get temperature from the source (based on distance), save it for min/max filtering
 		for (int i = 0; i < m_UTemperatureSources.Count(); i++)
 		{
@@ -13,13 +16,22 @@ modded class Environment
       {
         m_HasRadioactiveFuel = true;
       }
+      if (m_UTemperatureSources[i] && m_UTemperatureSources[i].IsComfortHeatSource())
+      {
+        m_HasComfortHeatSource = true;
+      }
 		}
 	}
 
   override void Update(float pDelta)
 	{
     super.Update(pDelta);
-    // Print("[Environment] After super " + m_HasRadioactiveFuel);
+    if (m_Player)
+    {
+      // Print("[Environment] After super " + m_HasComfortHeatSource);
+      m_Player.SetIsNearComfortHeatSource(m_HasComfortHeatSource);
+    }
+
 		if (m_Player && m_HasRadioactiveFuel)
 		{
       // Print("[Environment] is radioactive fueld");

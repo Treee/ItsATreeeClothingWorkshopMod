@@ -30,10 +30,6 @@ modded class ActionTestBloodTarget
     if (woundSeverity != "N/A") {
       testResult += "Wound Infection: " + woundSeverity + " ";
     }
-    string biohazardSeverity = GetAgentSeverity(1000, ntarget.GetSingleAgentCount(SRP_Medical_Agents.BIOHAZARD_AGENT));    
-    if (biohazardSeverity != "N/A") {
-      testResult += "BioHazard: " + biohazardSeverity + " ";
-    }
     if (testResult == "") {
       testResult = "Blood Test Results Negative";
     }
@@ -87,10 +83,6 @@ modded class ActionTestBloodSelf
     string woundSeverity = GetAgentSeverity(1000, action_data.m_Player.GetSingleAgentCount(eAgents.WOUND_AGENT));    
     if (woundSeverity != "N/A") {
       testResult += "Wound Infection: " + woundSeverity + " ";
-    }
-    string biohazardSeverity = GetAgentSeverity(1000, action_data.m_Player.GetSingleAgentCount(SRP_Medical_Agents.BIOHAZARD_AGENT));    
-    if (biohazardSeverity != "N/A") {
-      testResult += "BioHazard: " + biohazardSeverity + " ";
     }
     if (testResult == "") {
       testResult = "Blood Test Results Negative";

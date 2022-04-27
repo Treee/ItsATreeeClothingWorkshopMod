@@ -1,6 +1,7 @@
-modded class PlayerBase extends ManBase
+modded class PlayerBase
 {
-  EffectSound m_SleepSounds;
+  protected EffectSound m_SleepSounds;
+  protected float m_TotalTiredness = 0;
   
   string selectedCraftingBench = "";
   EntityAI guiCraftingBench = null;
@@ -8,6 +9,19 @@ modded class PlayerBase extends ManBase
   ItemBook currentBookInHands;
 
   protected bool m_IsInBioZone = false;
+  protected bool m_IsNearComfortHeatSource = false;
+
+  override void Init()
+  {
+    super.Init();
+    RegisterNetSyncVariableFloat("m_TotalTiredness", 0, 65536);
+  }
+
+  override void OnVariablesSynchronized()
+  {
+    super.OnVariablesSynchronized();
+    ProcessPlayerSleep();
+  }
 
   void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
 	{
@@ -108,6 +122,21 @@ modded class PlayerBase extends ManBase
     }
     return super.CanSprint();
   }
+
+  override bool IsSprinting()
+	{
+    return ( super.IsSprinting() || m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_SPRINT );				
+	}
+
+  bool IsRunning()
+	{
+    return ( m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_RUN );				
+	}
+
+  bool IsWalking()
+	{
+    return ( m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_WALK );				
+	}
   
   void SetBioZoneStatus(bool isInZone)
   {
@@ -519,30 +548,71 @@ modded class PlayerBase extends ManBase
     }
   }
 
-  bool HasSleepAgent()
+  float GetTotalTiredness()
   {
-    return m_AgentPool.HasAgent(SRP_Medical_Agents.SLEEP_AGENT);
+    return m_TotalTiredness;
+  }
+
+  void SetTotalTiredness(float tiredness)
+  {
+    m_TotalTiredness = tiredness;
+  }
+
+  void SetIsNearComfortHeatSource(bool isNearComfort)
+  {
+    m_IsNearComfortHeatSource = isNearComfort;
+  }
+
+  bool IsNearComfortHeatSource()
+  {
+    return m_IsNearComfortHeatSource;
+  }
+
+  void ProcessPlayerSleep()
+  {
+    // Print("[PlayerBase] - [ProcessPlayerSleep] - TotalTiredNess: " + m_TotalTiredness);
   }
 
   bool IsAwake()
   {
-    return !GetEmoteManager().m_IsLayDown && !IsUnconscious();
+    return !( GetEmoteManager().m_IsLayDown || IsUnconscious() );
   }
 
   void SRP_SetUnconscious()
   {
-    SetHealth("", "Shock", 0);
+    SetHealth("", "Shock", PlayerConstants.UNCONSCIOUS_THRESHOLD - 1);
     GetModifiersManager().ActivateModifier(eModifiers.MDF_UNCONSCIOUSNESS);
   }
 
-  void TryYawn(bool isMale)
-  {    
+  void TryYawn()
+  {
     // Print("SRP Modded Playerbase:: TryYawn chance to yawn: " + chance);
-    if (isMale) {
-      PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns_Male.GetRandomElement(), 0, 0);
+    if (IsMale()) {
+      PlaySoundSet(m_SleepSounds, GetMaleYawns().GetRandomElement(), 0, 0);
     } else {
-      PlaySoundSet(m_SleepSounds, SRP_SoundSets_Yawns_Female.GetRandomElement(), 0, 0);
+      PlaySoundSet(m_SleepSounds, GetFemaleYawns().GetRandomElement(), 0, 0);
     }
+  }
+
+  TStringArray GetMaleYawns()
+  {
+    return {
+      "Survivalists_Mods_Yawn_Male_SoundSet1",
+      "Survivalists_Mods_Yawn_Male_SoundSet2",
+      "Survivalists_Mods_Yawn_Male_SoundSet3",
+      "Survivalists_Mods_Yawn_Male_SoundSet4"
+    };
+  }
+
+  TStringArray GetFemaleYawns()
+  {
+    return {
+      "Survivalists_Mods_Yawn_Female_SoundSet1",
+      "Survivalists_Mods_Yawn_Female_SoundSet2",
+      "Survivalists_Mods_Yawn_Female_SoundSet3",
+      "Survivalists_Mods_Yawn_Female_SoundSet4",
+      "Survivalists_Mods_Yawn_Female_SoundSet5",
+    };
   }
 
   override void SetActions(out TInputActionMap InputActionMap)

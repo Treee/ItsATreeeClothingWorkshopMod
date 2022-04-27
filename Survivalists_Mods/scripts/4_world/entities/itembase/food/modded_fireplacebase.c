@@ -18,22 +18,16 @@ modded class FireplaceBase
     return super.GetItemToConsume();		
 	}
 
-	// override protected void AddToFireConsumables( ItemBase item )
-	// {
-  //   super.AddToFireConsumables(item);
-  //   if (item.GetType().Contains("_Irradiated"))
-  //   {
-  //     m_IrradiatedFuelCount++;
-  //   }
-	// }
-	// override protected void RemoveFromFireConsumables( FireConsumable fire_consumable )
-	// {
-  //   if (fire_consumable.GetItem().GetType().Contains("_Irradiated"))
-  //   {
-  //     m_IrradiatedFuelCount--;
-  //   }
-  //   super.RemoveFromFireConsumables(fire_consumable);
-	// }
+  override void EEInit()
+	{
+		super.EEInit();
+    // Print("[FireplaceBase] - [EEInit] - Start");
+		if (GetGame().IsServer() || !GetGame().IsMultiplayer())
+		{
+      // Print("[FireplaceBase] - [EEInit] - IS COMFORT HEAT SOURCE");
+      m_UTSource.SetIsComfortHeatSource(true);
+		}		
+	}
 
   override protected bool IsKindling( ItemBase item )
 	{

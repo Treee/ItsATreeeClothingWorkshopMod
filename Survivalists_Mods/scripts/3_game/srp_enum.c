@@ -4,12 +4,6 @@ enum SRP_RPC
   CLIENT_REQUEST_CRAFT
 }
 
-enum SRP_Medical_Agents
-{
-  SLEEP_AGENT = 512,
-  BIOHAZARD_AGENT = 1024,
-}
-
 enum SRP_eDisplayElements
 {
   DELM_TDCY_TIREDNESS

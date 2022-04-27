@@ -129,10 +129,29 @@ class ActionSRPHackSecurityDoor: ActionContinuousBase
       else
       {
         action_data.m_Player.AddHealth("", "Health", -50 );
-        action_data.m_Player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
-        action_data.m_Player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(SRP_DamageZones_LightBleeding.GetRandomElement());
+        action_data.m_Player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(GetBleedingDamageZones().GetRandomElement());
+        action_data.m_Player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(GetBleedingDamageZones().GetRandomElement());
       }
       kit.AddHealth("", "", -100);
 		}
 	}
+
+  TStringArray GetBleedingDamageZones()
+  {
+    return {
+      "Head",
+      "Neck",
+      "Pelvis",
+      "Spine",
+      "Spine1",
+      "Spine2",
+      "Spine3",
+      "LeftForeArmRoll",
+      "RightForeArmRoll",
+      "LeftFoot",
+      "LeftToeBase",
+      "RightFoot",
+      "RightToeBase"
+    };
+  }
 };

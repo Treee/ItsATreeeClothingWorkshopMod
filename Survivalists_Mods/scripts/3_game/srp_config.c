@@ -46,6 +46,22 @@ class SRPConfig
 
   float g_SRPSleepynessIncreaseAmount;
   float g_SRPRestfulnessIncreaseAmount;
+  float g_SRPRestfulnessFireComfortIncreaseAmount;
+  float g_SRPRestfulnessUnconsciousIncreaseAmount;
+  float g_SRPRestfulnessSprintingIncreaseAmount;
+  float g_SRPRestfulnessRunningIncreaseAmount;
+  float g_SRPRestfulnessWalkingIncreaseAmount;
+
+  float g_SRPRestfulnessBrokenLegsIncreaseAmount;
+  float g_SRPRestfulnessFeverIncreaseAmount;
+  float g_SRPRestfulnessGluttonIncreaseAmount;
+  float g_SRPRestfulnessMorphineIncreaseAmount;
+  float g_SRPRestfulnessPainKillersIncreaseAmount;
+  float g_SRPRestfulnessEpinephrineIncreaseAmount;
+  float g_SRPRestfulnessHungerIncreaseAmount;
+  float g_SRPRestfulnessThirstIncreaseAmount;
+
+  float g_SRPRestfulnessMovementIncreaseAmount;
   float g_SRPSleepYawnThreshold;
   float g_SRPSleepPassOutThreshold;
 
@@ -232,40 +248,26 @@ class SRPGlobals
     config.g_SRPSleepMaximumAwakeTime = 14400; // 4 hours in seconds is the "max" awake time before passing out
     config.g_SRPSleepYawnInterval = 120;        // time in between yawns
 
-    config.g_SRPSleepynessIncreaseAmount = 1.5; // we get sleepy x units per
-    config.g_SRPRestfulnessIncreaseAmount = 50; // we get rested x units per
+    config.g_SRPSleepynessIncreaseAmount = 0.9; // we get sleepy x units per
+    config.g_SRPRestfulnessIncreaseAmount = 1.5; // we get rested x units per
+    config.g_SRPRestfulnessFireComfortIncreaseAmount = 1.5;
+    config.g_SRPRestfulnessUnconsciousIncreaseAmount = 10;
+    config.g_SRPRestfulnessSprintingIncreaseAmount = 2.5;
+    config.g_SRPRestfulnessRunningIncreaseAmount = 1.5;
+    config.g_SRPRestfulnessWalkingIncreaseAmount = 0.5;
+    config.g_SRPRestfulnessMovementIncreaseAmount = 0.3;
+
+    config.g_SRPRestfulnessBrokenLegsIncreaseAmount = 1.9;
+    config.g_SRPRestfulnessFeverIncreaseAmount = 1.2;
+    config.g_SRPRestfulnessGluttonIncreaseAmount = 0.6;
+    config.g_SRPRestfulnessMorphineIncreaseAmount = 2.1;
+    config.g_SRPRestfulnessPainKillersIncreaseAmount = 1.6;
+    config.g_SRPRestfulnessEpinephrineIncreaseAmount = -5.2;
+    config.g_SRPRestfulnessHungerIncreaseAmount = 0.7;
+    config.g_SRPRestfulnessThirstIncreaseAmount = 0.6;
+
     config.g_SRPSleepYawnThreshold = 0.8; // 80% sleepyness triggers yawning. 0% means yawning when fully awake
+
     config.g_SRPSleepPassOutThreshold = 600; // how many extra seconds do they get before they 100% pass out
   }
-}
-
-ref array<string> SRP_SoundSets_Yawns_Male = {
-  "SRP_Mods_Yawn_Male_SoundSet1",
-  "SRP_Mods_Yawn_Male_SoundSet2",
-  "SRP_Mods_Yawn_Male_SoundSet3",
-  "SRP_Mods_Yawn_Male_SoundSet4"
-};
-
-ref array<string> SRP_SoundSets_Yawns_Female = {
-  "SRP_Mods_Yawn_Female_SoundSet1",
-  "SRP_Mods_Yawn_Female_SoundSet2",
-  "SRP_Mods_Yawn_Female_SoundSet3",
-  "SRP_Mods_Yawn_Female_SoundSet4",
-  "SRP_Mods_Yawn_Female_SoundSet5",
-};
-
-ref array<string> SRP_DamageZones_LightBleeding = {
-  "Head",
-  "Neck",
-  "Pelvis",
-  "Spine",
-  "Spine1",
-  "Spine2",
-  "Spine3",
-  "LeftForeArmRoll",
-  "RightForeArmRoll",
-  "LeftFoot",
-  "LeftToeBase",
-  "RightFoot",
-  "RightToeBase"
 };
