@@ -1,5 +1,6 @@
 class SRP_SleepMdfr extends ModifierBase
 {	
+  bool m_IsSleepActive = false;
   float PASS_OUT_THRESHOLD = 0; // 5 minutes passed 0 is pass out territory
   float TIREDNESS_INCREASE = 0;
   float RESTFULLNESS_SLEEPING = 0;
@@ -33,35 +34,33 @@ class SRP_SleepMdfr extends ModifierBase
     SRPConfig config;
     if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
     {
-      if (config.g_SRPIsSleepActive)
-      {
-        PASS_OUT_THRESHOLD = config.g_SRPSleepMaximumAwakeTime + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
-        TIREDNESS_INCREASE = config.g_SRPSleepynessIncreaseAmount;
-        RESTFULLNESS_SLEEPING = config.g_SRPRestfulnessIncreaseAmount;
-        RESTFULLNESS_FIRECOMFORT = config.g_SRPRestfulnessFireComfortIncreaseAmount;
-        RESTFULLNESS_UNCONSCIOUS = config.g_SRPRestfulnessUnconsciousIncreaseAmount;
+      m_IsSleepActive = config.g_SRPIsSleepActive;
+      PASS_OUT_THRESHOLD = config.g_SRPSleepMaximumAwakeTime + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
+      TIREDNESS_INCREASE = config.g_SRPSleepynessIncreaseAmount;
+      RESTFULLNESS_SLEEPING = config.g_SRPRestfulnessIncreaseAmount;
+      RESTFULLNESS_FIRECOMFORT = config.g_SRPRestfulnessFireComfortIncreaseAmount;
+      RESTFULLNESS_UNCONSCIOUS = config.g_SRPRestfulnessUnconsciousIncreaseAmount;
 
-        RESTFULLNESS_SPRINTING = config.g_SRPRestfulnessSprintingIncreaseAmount;
-        RESTFULLNESS_RUNNING = config.g_SRPRestfulnessRunningIncreaseAmount;
-        RESTFULLNESS_WALKING = config.g_SRPRestfulnessWalkingIncreaseAmount;
-        RESTFULLNESS_MOVEMENT = config.g_SRPRestfulnessMovementIncreaseAmount;
+      RESTFULLNESS_SPRINTING = config.g_SRPRestfulnessSprintingIncreaseAmount;
+      RESTFULLNESS_RUNNING = config.g_SRPRestfulnessRunningIncreaseAmount;
+      RESTFULLNESS_WALKING = config.g_SRPRestfulnessWalkingIncreaseAmount;
+      RESTFULLNESS_MOVEMENT = config.g_SRPRestfulnessMovementIncreaseAmount;
 
-        RESTFULLNESS_BROKENLEG = config.g_SRPRestfulnessBrokenLegsIncreaseAmount;
-        RESTFULLNESS_FEVER = config.g_SRPRestfulnessFeverIncreaseAmount;
-        RESTFULLNESS_GLUTTON = config.g_SRPRestfulnessGluttonIncreaseAmount;
-        RESTFULLNESS_MORPHINE = config.g_SRPRestfulnessMorphineIncreaseAmount;
-        RESTFULLNESS_PAINKILLERS = config.g_SRPRestfulnessPainKillersIncreaseAmount;
-        RESTFULLNESS_EPINEPHRINE = config.g_SRPRestfulnessEpinephrineIncreaseAmount;
-        RESTFULLNESS_HUNGER = config.g_SRPRestfulnessHungerIncreaseAmount;
-        RESTFULLNESS_THIRST = config.g_SRPRestfulnessThirstIncreaseAmount;
-        // Print("[SRP_SleepMdfr] - [ActivateCondition] - g_SRPIsSleepActive TRUE :: PASSOUT THRESHHOLD " + PASS_OUT_THRESHOLD);
-      }
+      RESTFULLNESS_BROKENLEG = config.g_SRPRestfulnessBrokenLegsIncreaseAmount;
+      RESTFULLNESS_FEVER = config.g_SRPRestfulnessFeverIncreaseAmount;
+      RESTFULLNESS_GLUTTON = config.g_SRPRestfulnessGluttonIncreaseAmount;
+      RESTFULLNESS_MORPHINE = config.g_SRPRestfulnessMorphineIncreaseAmount;
+      RESTFULLNESS_PAINKILLERS = config.g_SRPRestfulnessPainKillersIncreaseAmount;
+      RESTFULLNESS_EPINEPHRINE = config.g_SRPRestfulnessEpinephrineIncreaseAmount;
+      RESTFULLNESS_HUNGER = config.g_SRPRestfulnessHungerIncreaseAmount;
+      RESTFULLNESS_THIRST = config.g_SRPRestfulnessThirstIncreaseAmount;
+      // Print("[SRP_SleepMdfr] - [ActivateCondition] - g_SRPIsSleepActive TRUE :: PASSOUT THRESHHOLD " + PASS_OUT_THRESHOLD);      
     }
 	}
 
   override bool ActivateCondition(PlayerBase player)
 	{
-		return true;
+		return m_IsSleepActive;
 	}
 	
 	override void OnActivate(PlayerBase player)
@@ -84,7 +83,7 @@ class SRP_SleepMdfr extends ModifierBase
 	
   override void OnDeactivate(PlayerBase player)
 	{
-    // player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_SLEEP);
+    player.GetSymptomManager().RemoveSecondarySymptom(SRP_SymptomIDs.SYMPTOM_SLEEP);
 	}
 
 	override bool DeactivateCondition(PlayerBase player)

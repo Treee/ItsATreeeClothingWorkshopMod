@@ -2,15 +2,18 @@ class SleepEffectSymptom extends SymptomBase
 {
 	PluginPlayerStatus m_ModulePlayerStatus;
 
-  float m_LastTirednessCount;
+  bool m_IsSleepActive = false;
+
   int m_TirednessTendency = -1;
-  float m_LastYawnEvent;
   int m_YawnInterval = 0;
+  int TIREDNESS_0PERCENT = 0;
+
+  float m_LastTirednessCount;
+  float m_LastYawnEvent;
 
   float YAWN_THRESHOLD = 0; // 20 percent awake = start yawning
   float PASS_OUT_THRESHOLD = 0; // 5 minutes passed 0 is pass out territory
 
-  int TIREDNESS_0PERCENT = 0;
   float TIREDNESS_25PERCENT = 0;
   float TIREDNESS_50PERCENT = 0;
   float TIREDNESS_75PERCENT = 0;
@@ -31,32 +34,38 @@ class SleepEffectSymptom extends SymptomBase
 	//!gets called every frame
 	override void OnUpdateServer(PlayerBase player, float deltatime)
 	{
-    // Print("[SleepEffectSymptom] - [OnUpdateServer]");
-    float total_tiredness = player.GetTotalTiredness();
-    if (player.IsAwake())
+    if (m_IsSleepActive)
     {
-      if (total_tiredness >= PASS_OUT_THRESHOLD && !player.IsUnconscious())
+      // Print("[SleepEffectSymptom] - [OnUpdateServer]");
+      float total_tiredness = player.GetTotalTiredness();
+      if (player.IsAwake())
       {
-        player.SRP_SetUnconscious();        
-      }      
+        if (total_tiredness >= PASS_OUT_THRESHOLD && !player.IsUnconscious())
+        {
+          player.SRP_SetUnconscious();        
+        }      
+      }
     }
 	}
 	
 	override void OnUpdateClient(PlayerBase player, float deltatime)
 	{
-    float total_tiredness = player.GetTotalTiredness();
-    if (player.IsAwake())
+    if (m_IsSleepActive)
     {
-      // Print("Player Is Awake: Sleep Count: " + total_tiredness);
-      if (total_tiredness > YAWN_THRESHOLD && m_LastYawnEvent > m_YawnInterval && !player.IsUnconscious())
+      float total_tiredness = player.GetTotalTiredness();
+      if (player.IsAwake())
       {
-        player.TryYawn();
-        m_LastYawnEvent = 0;
+        // Print("Player Is Awake: Sleep Count: " + total_tiredness);
+        if (total_tiredness > YAWN_THRESHOLD && m_LastYawnEvent > m_YawnInterval && !player.IsUnconscious())
+        {
+          player.TryYawn();
+          m_LastYawnEvent = 0;
+        }
       }
+      // Print("[SleepEffectSymptom] - [OnUpdateClient] " + total_tiredness);
+      m_ModulePlayerStatus.DisplayTirednessTendency(NTFKEY_SRP_TIREDNESS, total_tiredness, GetTendency(total_tiredness), GetTirednessLevel(total_tiredness));
+      m_LastYawnEvent += deltatime;
     }
-    // Print("[SleepEffectSymptom] - [OnUpdateClient] " + total_tiredness);
-    m_ModulePlayerStatus.DisplayTirednessTendency(NTFKEY_SRP_TIREDNESS, total_tiredness, GetTendency(total_tiredness), GetTirednessLevel(total_tiredness));
-    m_LastYawnEvent += deltatime;
 	}
 	
 	//!gets called once on an Symptom which is being activated
@@ -65,6 +74,7 @@ class SleepEffectSymptom extends SymptomBase
     SRPConfig config;
     if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
     {
+      m_IsSleepActive = config.g_SRPIsSleepActive;
       PASS_OUT_THRESHOLD = config.g_SRPSleepMaximumAwakeTime + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
     }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetActivated", m_Player.ToString());
@@ -76,6 +86,7 @@ class SleepEffectSymptom extends SymptomBase
     SRPConfig config;
     if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
     {
+      m_IsSleepActive = config.g_SRPIsSleepActive;
       // Print("[SleepEffectSymptom] - [OnGetActivatedClient] - CONFIG");        
       m_YawnInterval = config.g_SRPSleepYawnInterval;
       YAWN_THRESHOLD = config.g_SRPSleepMaximumAwakeTime * config.g_SRPSleepYawnThreshold; // 20 percent awake = start yawning
