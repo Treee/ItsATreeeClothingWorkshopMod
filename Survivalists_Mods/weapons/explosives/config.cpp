@@ -75,6 +75,10 @@ class CfgVehicles
       "Dynamite2",
       "Dynamite3",
       "Dynamite4",
+      "VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD"
     };
 		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
@@ -126,6 +130,13 @@ class CfgVehicles
 		weight=15;
     varTemperatureMax=100;
     itemSize[]={3,5};
+    inventorySlot[]=
+    {      
+      "VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD"
+    };
 		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {
       "Survivalists_Mods\weapons\explosives\data\dynamite_stack_co.paa"
