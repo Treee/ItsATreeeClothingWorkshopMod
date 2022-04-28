@@ -1,6 +1,6 @@
 modded class TransmitterBase
 {
-	bool m_Muted = false;
+	protected bool m_Muted = false;
 
   void TransmitterBase()
   {
@@ -10,7 +10,7 @@ modded class TransmitterBase
   override void OnVariablesSynchronized()
 	{
     super.OnVariablesSynchronized();
-    UpdateMuteRadioState(m_Muted);
+    UpdateMuteRadioState();
   };
 	
 	bool IsMuted()
@@ -21,18 +21,20 @@ modded class TransmitterBase
 	void MuteTransmitter()
 	{
 		m_Muted = true;
+    UpdateMuteRadioState();
     SetSynchDirty();
 	}
 	
 	void UnMuteTransmitter()
 	{
 		m_Muted = false;
+    UpdateMuteRadioState();
     SetSynchDirty();
 	}
 
-  void UpdateMuteRadioState(bool isMuted)
+  void UpdateMuteRadioState()
   {
-    EnableBroadcast(isMuted);
+    EnableBroadcast(m_Muted);
   }
 
   override void OnWorkStart()

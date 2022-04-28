@@ -204,7 +204,7 @@ class CfgVehicles
 		descriptionShort="Scribbles and jagged writting is seen.";
 		hiddenSelectionsTextures[] =
 		{
-		  "Survivalists_Books\gear\books\data\a_clean_book_example_co.paa"
+		  "Survivalists_Books\gear\books\data\book_jonahdreamleviathan_co.paa"
 		};
 	};  
 
