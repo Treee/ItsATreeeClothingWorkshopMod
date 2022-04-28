@@ -2055,10 +2055,8 @@ class CfgVehicles
     displayName="Leather Pouch";
     descriptionShort="A leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouch.p3d";
-    inventorySlot[]=
-		{
-			"VestPouch"
-		};
+		rotationFlags=16;
+    inventorySlot[]={};
     attachments[]=
     {
       "SRP_CoinPlatinum",
@@ -2071,7 +2069,6 @@ class CfgVehicles
 		itemsCargoSize[]={3,3};
     repairableWithKits[]={5,2};
 		repairCosts[]={30,25};
-		allowOwnedCargoManipulation=1;
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -2092,10 +2089,8 @@ class CfgVehicles
     displayName="Medieval Leather Pouch";
     descriptionShort="A medieval leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouchmedieval.p3d";
-    inventorySlot[]=
-		{
-			"VestPouch"
-		};
+    rotationFlags=16;
+    inventorySlot[]={};
     attachments[]=
     {
       "SRP_CoinPlatinum",
@@ -2108,7 +2103,6 @@ class CfgVehicles
 		itemsCargoSize[]={4,4};
     repairableWithKits[]={5,2};
 		repairCosts[]={30,25};
-		allowOwnedCargoManipulation=1;
     hiddenSelections[]=
 		{
 			"pouch",
@@ -2132,10 +2126,7 @@ class CfgVehicles
     displayName="Small Leather Pouch";
     descriptionShort="A small leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouchsmall.p3d";
-    inventorySlot[]=
-		{
-			"VestPouch"
-		};
+    inventorySlot[]={};
     attachments[]=
     {
       "SRP_CoinPlatinum",

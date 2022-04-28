@@ -194,6 +194,19 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_radioetiguetteprotocol_co.paa"
 		};
 	};  
+  class SRP_ReadableBook_Premonition: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="The Dream";
+		author="Jonah";
+		file="Survivalists_Books\gear\books\data\book_jonahdreamleviathan.html";
+		displayName="The Prophecy";
+		descriptionShort="Scribbles and jagged writting is seen.";
+		hiddenSelectionsTextures[] =
+		{
+		  "Survivalists_Books\gear\books\data\a_clean_book_example_co.paa"
+		};
+	};  
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase

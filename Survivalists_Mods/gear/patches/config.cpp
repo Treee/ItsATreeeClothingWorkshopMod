@@ -138,6 +138,14 @@ class CfgVehicles
 		displayName="Single Armband Starter Kit - Solid Colors";
     descriptionShort="A simple kit for a single armband. Meant for solid colors";
     inventorySlot="";
+    hiddenSelectionsTextures[]=
+		{
+			"\dz\characters\tops\data\armbend_white_g_co.paa",
+			"\dz\characters\tops\data\armbend_small_white_co.paa",
+			"\dz\characters\tops\data\armbend_small_white_co.paa",
+			"\dz\characters\tops\Data\armbend_big_white_co.paa",
+			"\dz\characters\tops\Data\armbend_big_white_co.paa"
+		};
 	};
   class SRP_SingleArmband_StarterKit2: Armband_ColorBase
 	{
@@ -145,6 +153,14 @@ class CfgVehicles
 		displayName="Single Armband Starter Kit - Medical Insignia";
     descriptionShort="A simple kit for a single armband. Meant to distinguish medical personel";
     inventorySlot="";
+    hiddenSelectionsTextures[]=
+		{
+			"\dz\characters\tops\data\armbend_white_g_co.paa",
+			"\dz\characters\tops\data\armbend_small_white_co.paa",
+			"\dz\characters\tops\data\armbend_small_white_co.paa",
+			"\dz\characters\tops\Data\armbend_big_white_co.paa",
+			"\dz\characters\tops\Data\armbend_big_white_co.paa"
+		};
 	};
 
   class SRP_Armband_Base: Clothing

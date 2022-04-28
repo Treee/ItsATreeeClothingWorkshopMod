@@ -1,6 +1,6 @@
 class SRP_HiddenStash_Base extends Inventory_Base
 {
-	bool m_IsOpened;
+	protected bool m_IsOpened;
 	
 	void SRP_HiddenStash_Base()
 	{
