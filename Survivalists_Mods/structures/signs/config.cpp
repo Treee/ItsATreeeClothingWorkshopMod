@@ -59,7 +59,6 @@ class CfgVehicles
 			"Survivalists_Mods\structures\signs\data\srp_billboard_apocalypse_cougar_co.paa"
 		};
 	};
-
 	class Land_SRP_RoadSign_Waldoboro: HouseNoDestruct
 	{
 		scope=1;
@@ -216,7 +215,112 @@ class CfgVehicles
 			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_3_CA.paa"
 		};
 	};
-  
+
+  class Land_SRP_RoadSign_Eastbrook : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\SRP_RoadSigns1.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_4_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Oldfield : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\SRP_RoadSigns1.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_5_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Fairfield : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\SRP_RoadSigns2.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_4_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_SunsetCross : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\SRP_RoadSigns2.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_5_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Mountainville : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\SRP_RoadSigns3.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_4_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_WarrenCove : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\SRP_RoadSigns3.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_5_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_Threepwood : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\SRP_RoadSigns4.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_4_CA.paa"
+		};
+	};
+	class Land_SRP_RoadSign_GeorgeTown : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\SRP_RoadSigns4.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_5_CA.paa"
+		};
+	};  
+
   class SRP_ForestSign_Original_Kit: SRP_KitBase //new
 	{
 		scope=2;
