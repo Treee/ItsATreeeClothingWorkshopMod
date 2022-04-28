@@ -1,4 +1,4 @@
-class SRP_FullSyringe_Base: Inventory_Base
+class SRP_FullSyringe_Base extends Inventory_Base
 {
   override void SetActions()
 	{
@@ -8,14 +8,14 @@ class SRP_FullSyringe_Base: Inventory_Base
 	}
 };
 
-class SRP_FullSyringe_Kuru: SRP_FullSyringe_Base
+class SRP_FullSyringe_Kuru extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
     player.InsertAgent(eAgents.BRAIN, 2000); // max of 5000
 	}
 };
-class SRP_FullSyringe_KuruCure: SRP_FullSyringe_Base
+class SRP_FullSyringe_KuruCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
@@ -25,14 +25,14 @@ class SRP_FullSyringe_KuruCure: SRP_FullSyringe_Base
 	}
 };
 
-class SRP_FullSyringe_Salmonella: SRP_FullSyringe_Base
+class SRP_FullSyringe_Salmonella extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
     player.InsertAgent(eAgents.SALMONELLA, 100); // max of 300
 	}
 };
-class SRP_FullSyringe_SalmonellaCure: SRP_FullSyringe_Base
+class SRP_FullSyringe_SalmonellaCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
@@ -42,14 +42,14 @@ class SRP_FullSyringe_SalmonellaCure: SRP_FullSyringe_Base
 	}
 };
 
-class SRP_FullSyringe_Influenza: SRP_FullSyringe_Base
+class SRP_FullSyringe_Influenza extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
     player.InsertAgent(eAgents.INFLUENZA, 100); // max of 1000
 	}
 };
-class SRP_FullSyringe_InfluenzaCure: SRP_FullSyringe_Base
+class SRP_FullSyringe_InfluenzaCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
@@ -60,14 +60,14 @@ class SRP_FullSyringe_InfluenzaCure: SRP_FullSyringe_Base
 	}
 };
 
-class SRP_FullSyringe_Cholera: SRP_FullSyringe_Base
+class SRP_FullSyringe_Cholera extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
     player.InsertAgent(eAgents.CHOLERA, 100); // max of 1000
 	}
 };
-class SRP_FullSyringe_CholeraCure: SRP_FullSyringe_Base
+class SRP_FullSyringe_CholeraCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
@@ -77,14 +77,14 @@ class SRP_FullSyringe_CholeraCure: SRP_FullSyringe_Base
 	}
 };
 
-class SRP_FullSyringe_Ceftazidim: SRP_FullSyringe_Base
+class SRP_FullSyringe_Ceftazidim extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
     player.m_ModifiersManager.ActivateModifier(eModifiers.MDF_CHARCOAL);
 	}
 };
-class SRP_FullSyringe_Ampicillin: SRP_FullSyringe_Base
+class SRP_FullSyringe_Ampicillin extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
