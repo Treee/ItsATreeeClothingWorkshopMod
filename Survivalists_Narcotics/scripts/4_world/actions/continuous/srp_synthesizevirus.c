@@ -66,10 +66,6 @@ class ActionSynthesizeVirus: ActionContinuousBase
         return true;
       if (target.GetObject().GetType() == "SRP_LabEquipment_Tuner")
         return true;
-      if (target.GetObject().GetType() == "DUB_Microscope")
-        return true;
-      if (target.GetObject().GetType() == "SRP_ComputerTerminal")
-        return true;
       if (target.GetObject().GetType() == "SRP_ComputerTerminalSlim")
         return true;
       if (target.GetObject().GetType() == "SRP_ComputerTerminalWide")
@@ -115,8 +111,8 @@ class ActionSynthesizeVirus: ActionContinuousBase
     if (ichorType != "SRP_LabTube_")
     {
       ItemBase ichor = ItemBase.Cast(GetGame().CreateObjectEx(ichorType, action_data_b.m_Player.GetPosition(), false));
-      ichor.SetQuantity(Math.RandomIntInclusive(1,10));
-      action_data_b.m_MainItem.AddQuantity(-150);
+      ichor.SetQuantity(Math.RandomIntInclusive(1,5));
+      action_data_b.m_MainItem.AddQuantity(-Math.RandomIntInclusive(50,150));
     }
 	}
 };

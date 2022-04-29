@@ -190,6 +190,21 @@ class CfgVehicles
   class SRP_FullSyringe_Ceftazidim: SRP_FullSyringe_Base 
 	{
 		scope=2;
+		displayName="Stomach Virus Injector";
+		descriptionShort="A full syringe of stomach virus. Cross your fingers this was manufactured properly.";
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\dz\gear\medical\data\SyringeFluid_Grey_CA.paa"
+		};
+	};
+
+  class SRP_FullSyringe_CeftazidimCure: SRP_FullSyringe_Base 
+	{
+		scope=2;
 		displayName="Ceftazidim Injector";
 		descriptionShort="A full syringe of Ceftazidim. Cross your fingers this was manufactured properly.";
     hiddenSelections[]=
@@ -203,6 +218,20 @@ class CfgVehicles
 	};
 
   class SRP_FullSyringe_Ampicillin: SRP_FullSyringe_Base 
+	{
+		scope=2;
+		displayName="Bacteria Injector";
+		descriptionShort="A full syringe of bacteria. Nasty stuff.";
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\dz\gear\medical\data\SyringeFluid_Grey_CA.paa"
+		};
+	};
+  class SRP_FullSyringe_AmpicillinCure: SRP_FullSyringe_Base 
 	{
 		scope=2;
 		displayName="Ampicillin Injector";
