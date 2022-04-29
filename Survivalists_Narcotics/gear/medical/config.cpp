@@ -235,7 +235,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Narcotics\gear\medical\data\injectionvial_kline1.paa"
+			"Survivalists_Narcotics\gear\medical\data\srp_injectionvial_kuru_co.paa"
 		};
 	};
 

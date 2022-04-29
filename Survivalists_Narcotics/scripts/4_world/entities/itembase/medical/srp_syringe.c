@@ -81,13 +81,32 @@ class SRP_FullSyringe_Ceftazidim extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
-    player.m_ModifiersManager.ActivateModifier(eModifiers.MDF_CHARCOAL);
+    player.InsertAgent(eAgents.SALMONELLA, 30); // max of 300
 	}
 };
+class SRP_FullSyringe_CeftazidimCure extends SRP_FullSyringe_Base
+{
+  override void OnApply(PlayerBase player)
+	{
+    player.InsertAgent(eAgents.SALMONELLA,-300);
+    player.m_ModifiersManager.ActivateModifier(eModifiers.MDF_CHARCOAL);
+    player.RemoveAgent(eAgents.SALMONELLA);
+	}
+};
+
 class SRP_FullSyringe_Ampicillin extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
+    player.InsertAgent(eAgents.WOUND_AGENT, 100); // max of 1000
+	}
+};
+class SRP_FullSyringe_AmpicillinCure extends SRP_FullSyringe_Base
+{
+  override void OnApply(PlayerBase player)
+	{
+    player.InsertAgent(eAgents.WOUND_AGENT,-1000);
     player.m_ModifiersManager.ActivateModifier(eModifiers.MDF_ANTIBIOTICS);
+    player.RemoveAgent(eAgents.WOUND_AGENT);
 	}
 };

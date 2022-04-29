@@ -267,4 +267,126 @@ class CfgVehicles
     };
   };
 
+  //========================================================== VIRUS/CURE TUBES
+  class SRP_LabTube_Kuru: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Concentrated Kuru";
+		descriptionShort="A single test tube. Contains some ichor. What are you doing with this?";
+    color="kuruliquid";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
+    };
+  };
+  class SRP_LabTube_Salmonella: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Concentrated Salmonella";
+		descriptionShort="A single test tube. Contains some ichor. What are you doing with this?";
+    color="salmonellaliquid";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
+    };
+  };
+  class SRP_LabTube_Influenza: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Concentrated Influenza";
+		descriptionShort="A single test tube. Contains some ichor. What are you doing with this?";
+    color="influenzaliquid";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
+    };
+  };
+  class SRP_LabTube_Cholera: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Concentrated Cholera";
+		descriptionShort="A single test tube. Contains some ichor. What are you doing with this?";
+    color="choleraliquid";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
+    };
+  };
+  class SRP_LabTube_StomachVirus: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Concentrated Stomach Virus";
+		descriptionShort="A single test tube. Contains some ichor. What are you doing with this?";
+    color="stomachliquid";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
+    };
+  };
+  class SRP_LabTube_Bacteria: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Concentrated Bacteria";
+		descriptionShort="A single test tube. Contains some ichor. What are you doing with this?";
+    color="bacterialiquid";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
+    };
+  };
+
 };

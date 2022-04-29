@@ -7,6 +7,8 @@ modded class ActionConstructor
     actions.Insert(ActionTestDrugsTarget);
     actions.Insert(ActionTestDrugsSelf);
 
+    actions.Insert(ActionSynthesizeVirus);
+
     // Smoking
     actions.Insert(ActionSmokeSRPSmokableSelf);
     actions.Insert(ActionForceSmokeSRPSmokable);

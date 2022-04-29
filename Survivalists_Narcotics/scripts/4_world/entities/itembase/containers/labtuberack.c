@@ -123,3 +123,10 @@ class SRP_LabTube_MutantLiquidSterilized extends SRP_LabTube_Colorbase
   }
 };
 class SRP_LabTube_MutantLiquidSterilizedIrradiated extends SRP_LabTube_Colorbase{};
+
+class SRP_LabTube_Kuru extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_Salmonella extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_Influenza extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_Cholera extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_StomachVirus extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_Bacteria extends SRP_LabTube_Colorbase{};
