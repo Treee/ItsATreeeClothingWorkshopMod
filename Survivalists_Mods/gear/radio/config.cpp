@@ -738,6 +738,7 @@ class CfgVehicles
 		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
+      "SRP_Cassette",
 			"Cassette",
 			"Cassette2",
 			"Cassette3",
@@ -1066,6 +1067,7 @@ class CfgVehicles
 		repairCosts[]={30,25};
 		inventorySlot[]=
 		{
+      "SRP_Cassette",
 			"Cassette",
 			"Cassette2",
 			"Cassette3",
