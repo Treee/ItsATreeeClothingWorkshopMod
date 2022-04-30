@@ -35,5 +35,8 @@ modded class ActionConstructor
     actions.Insert(ActionSRPSealLetter);
 
     actions.Insert(ActionTriggerDecontaminationShower);
+
+    actions.Insert(ActionLockDisplayCase);
+    actions.Insert(ActionUnLockDisplayCase);
 	}
 };

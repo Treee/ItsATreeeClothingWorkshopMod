@@ -99,3 +99,14 @@ modded class Crowbar
     AddAction(ActionSawPlanks);
 	}
 };
+
+modded class Lockpick
+{	
+	override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionLockDisplayCase);
+		AddAction(ActionUnLockDisplayCase);
+	}
+};

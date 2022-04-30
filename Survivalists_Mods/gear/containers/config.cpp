@@ -2638,6 +2638,7 @@ class CfgVehicles
 		weight=10000;
 		itemSize[]={10,15};
 		itemsCargoSize[]={0,0};
+    allowOwnedCargoManipulation="true";
 		attachments[]=
 		{
 			"SRP_Teddy1",
@@ -2706,6 +2707,7 @@ class CfgVehicles
 		weight=10000;
 		itemSize[]={10,15};
 		itemsCargoSize[]={0,0};
+    allowOwnedCargoManipulation="true";
     attachments[]=
     {
       "SRP_DisplayHook1",
@@ -2779,6 +2781,7 @@ class CfgVehicles
 		itemSize[]={10,15};
 		itemsCargoSize[]={0,0};
     clothingType="male";
+    allowOwnedCargoManipulation="true";
     inventorySlot[]=
     {
       "SRP_DisplayHook1",

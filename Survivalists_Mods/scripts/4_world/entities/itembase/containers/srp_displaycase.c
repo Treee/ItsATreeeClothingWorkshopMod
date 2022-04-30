@@ -1,5 +1,104 @@
 class SRP_DisplayCase_Base extends DeployableContainer_Base
 {
+  protected bool m_IsDisplayLocked = true;
+
+  override void EEInit()
+  {
+    super.EEInit();
+    RegisterNetSyncVariableBool("m_IsDisplayLocked");
+    // LockDisplayCase(); 
+  }
+
+	override void OnVariablesSynchronized()
+	{
+		super.OnVariablesSynchronized();
+		
+		if (IsDisplayCaseLocked())
+    {
+      LockDisplayCase();
+    }
+    else
+    {
+      UnLockDisplayCase();
+    }
+	}
+
+  override string GetDisplayName()
+	{
+    string itemName = super.GetDisplayName();
+    if (IsDisplayCaseLocked())
+    {
+      itemName = itemName + " - Locked";
+    }
+		return itemName;
+	}
+
+  // call only on server side
+  void ModifyDisplayCase(bool securityState)
+  {
+    m_IsDisplayLocked = securityState;
+    if (IsDisplayCaseLocked())
+    {
+      LockDisplayCase();
+    }
+    else
+    {
+      UnLockDisplayCase();
+    }
+    SetSynchDirty();
+  }
+
+  bool IsDisplayCaseLocked()
+  {
+    return m_IsDisplayLocked;
+  }
+
+  void LockDisplayCase()
+  {
+    int slot_id;       
+    ItemBase item;
+    EntityAI childItem;
+		for ( int i = 0; i < GetInventory().GetAttachmentSlotsCount(); i++ )
+		{
+			slot_id = GetInventory().GetAttachmentSlotId(i);
+	    GetInventory().SetSlotLock(slot_id, true);
+      // Print("LockDisplayCase Slot ID: " + slot_id);
+      if (Class.CastTo(item, GetInventory().FindAttachment(slot_id)))
+      {
+        // Print("LockDisplayCase Slot Item: " + item + " Sloot count: "  + item.GetInventory().GetAttachmentSlotsCount());
+        for ( int k = 0; k < item.GetInventory().GetAttachmentSlotsCount(); k++ )
+        {
+          slot_id = item.GetInventory().GetAttachmentSlotId(k);
+          // Print("Item Slot ID: " + slot_id);
+          item.GetInventory().SetSlotLock(slot_id, true);
+        }        
+      }
+    }			
+  }
+
+  void UnLockDisplayCase()
+  {
+    int slot_id;       
+    ItemBase item;
+    EntityAI childItem;
+		for ( int i = 0; i < GetInventory().GetAttachmentSlotsCount(); i++ )
+		{
+			slot_id = GetInventory().GetAttachmentSlotId(i);
+	    GetInventory().SetSlotLock(slot_id, false);
+      // Print("UnLockDisplayCase Slot ID: " + slot_id);
+      if (Class.CastTo(item, GetInventory().FindAttachment(slot_id)))
+      {
+        // Print("UnLockDisplayCase Slot Item: " + item + " Sloot count: "  + item.GetInventory().GetAttachmentSlotsCount());
+        for ( int k = 0; k < item.GetInventory().GetAttachmentSlotsCount(); k++ )
+        {
+          slot_id = item.GetInventory().GetAttachmentSlotId(k);
+          // Print("Item Slot ID: " + slot_id);
+          item.GetInventory().SetSlotLock(slot_id, false);
+        }        
+      }
+    }
+  }
+
 	override void SetActions()
 	{
 		super.SetActions();
