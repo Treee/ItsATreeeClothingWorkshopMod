@@ -87,6 +87,8 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 
     InsertIngredient(0,"SRP_HoneyCombStand");
     InsertIngredient(0,"SRP_GlassDisplayCase");
+    InsertIngredient(0,"SRP_GlassDisplayCaseLarge");
+    InsertIngredient(0,"SRP_MuseumTable");
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing

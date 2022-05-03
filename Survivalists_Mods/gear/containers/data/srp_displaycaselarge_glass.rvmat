@@ -2,13 +2,13 @@ ambient[]={0.5,0.5,0.5,0.5};
 diffuse[]={0.5,0.5,0.5,0.5};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={0.3,0.3,0.3,0.3};
-specularPower=32.299999;
+specular[]={0.2,0.2,0.2,0.2};
+specularPower=1000;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\gear\containers\data\srp_museumtable_nohq.paa";
+	texture="Survivalists_Mods\gear\containers\data\srp_displaycaselarge_glass_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
+	texture="Survivalists_Mods\gear\containers\data\srp_displaycaselarge_glass_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\gear\containers\data\srp_museumtable_smdi.paa";
+	texture="Survivalists_Mods\gear\containers\data\srp_displaycaselarge_glass_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,32,128,1)fresnel(2,1.65)";
+	texture="#(ai,64,64,1)fresnel(1.19,0.71)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -80,7 +80,7 @@ class Stage6
 };
 class Stage7
 {
-	texture="dz\data\data\env_land_co.paa";
+	texture="Survivalists_Mods\gear\containers\data\srp_displaycaselarge_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{

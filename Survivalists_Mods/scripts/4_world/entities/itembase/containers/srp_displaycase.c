@@ -120,6 +120,8 @@ class SRP_DisplayCase_Base extends DeployableContainer_Base
 
 class SRP_HoneyCombStand extends SRP_DisplayCase_Base{};
 class SRP_GlassDisplayCase extends SRP_DisplayCase_Base{};
+class SRP_GlassDisplayCaseLarge extends SRP_DisplayCase_Base{};
+class SRP_MuseumTable extends SRP_DisplayCase_Base{};
 
 
 class SRP_GlassDisplayCase_Hook extends Inventory_Base

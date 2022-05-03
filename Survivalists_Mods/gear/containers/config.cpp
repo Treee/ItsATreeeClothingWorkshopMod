@@ -2848,6 +2848,145 @@ class CfgVehicles
 		descriptionShort="A hook that holds a patch armband. Meant for a display case.";
     model="Survivalists_Mods\gear\containers\srp_displaycase_hook_patcharmband.p3d";
   };
+
+  
+  class SRP_MuseumTable_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Museum Table Kit - Wood";
+		descriptionShort="A fancy wooden display table kit";
+	};
+
+  class SRP_MuseumTable: Container_Base  // new
+	{
+		scope=2;
+		displayName="Museum Table - Wood";
+		descriptionShort="A fancy display stand.";
+		model="Survivalists_Mods\gear\containers\srp_museumtable.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		itemsCargoSize[]={0,0};
+    allowOwnedCargoManipulation="true";
+    attachments[]=
+    {
+      "Shoulder",
+      "SRP_DisplayHook1",
+      "SRP_DisplayHook2",
+      "SRP_DisplayHook3",
+      "SRP_DisplayHook4",
+      "SRP_DisplayHook5",
+      "SRP_DisplayHook6",
+      "SRP_DisplayHook7",
+      "SRP_DisplayHook8",
+      "SRP_DisplayHook9",
+      "SRP_DisplayHook10"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_museumtable_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_GlassDisplayCaseLarge_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Large Glass Display Kit - Wooden";
+		descriptionShort="A large wooden glass display kit";
+	};
+
+  class SRP_GlassDisplayCaseLarge: Container_Base 
+	{
+		scope=2;
+		displayName="Large Glass Display - Wooden";
+		descriptionShort="A large display stand";
+		model="Survivalists_Mods\gear\containers\srp_displaycaselarge.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		itemsCargoSize[]={0,0};
+    allowOwnedCargoManipulation="true";
+    attachments[]=
+    {
+      "SRP_DisplayHook1"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "glass"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_displaycaselarge_co.paa",
+			"Survivalists_Mods\gear\containers\data\srp_displaycaselarge_glass_ca.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
   
   
   class SRP_LockerSingle_Colorbase: Container_Base

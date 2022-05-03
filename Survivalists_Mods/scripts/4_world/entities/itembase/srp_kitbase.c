@@ -48,6 +48,8 @@ class SRP_KitBase extends ItemBase
 //craftable kits
 class SRP_HoneyCombStand_Kit extends SRP_KitBase{};
 class SRP_GlassDisplayCase_Kit extends SRP_KitBase{};
+class SRP_GlassDisplayCaseLarge_Kit extends SRP_KitBase{};
+class SRP_MuseumTable_Kit extends SRP_KitBase{};
 
 class SRP_Cardboardbox_Kit extends SRP_KitBase{};
 class SRP_BedsideTable_Kit extends SRP_KitBase{};

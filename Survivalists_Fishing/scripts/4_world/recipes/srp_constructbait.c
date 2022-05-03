@@ -4,7 +4,7 @@ class SRP_Fishing_Construct_CanOfWorms extends RecipeBase
 	{
 		m_Name = "Make Can Of Worms";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -79,7 +79,7 @@ class SRP_Fishing_Construct_CanOfWormsAdd extends RecipeBase
 	{
 		m_Name = "Add Worm";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 1;//animation length in relative time units
+		m_AnimationLength = 0.5;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
