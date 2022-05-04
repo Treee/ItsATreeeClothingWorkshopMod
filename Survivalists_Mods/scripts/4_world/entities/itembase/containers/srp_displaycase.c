@@ -120,7 +120,18 @@ class SRP_DisplayCase_Base extends DeployableContainer_Base
 
 class SRP_HoneyCombStand extends SRP_DisplayCase_Base{};
 class SRP_GlassDisplayCase extends SRP_DisplayCase_Base{};
-class SRP_GlassDisplayCaseLarge extends SRP_DisplayCase_Base{};
+class SRP_GlassDisplayCaseLarge extends SRP_DisplayCase_Base
+{
+  override bool CanReceiveItemIntoCargo (EntityAI item)
+	{
+		return GetInventory().GetCargo().GetItemCount() < 1;
+	}
+
+  override bool CanLoadItemIntoCargo( EntityAI item )
+  {
+		return GetInventory().GetCargo().GetItemCount() < 1;
+  }
+};
 class SRP_MuseumTable extends SRP_DisplayCase_Base{};
 
 

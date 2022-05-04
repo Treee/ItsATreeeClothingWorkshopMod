@@ -2939,7 +2939,7 @@ class CfgVehicles
 		physLayer="item_large";
 		weight=10000;
 		itemSize[]={10,15};
-		itemsCargoSize[]={0,0};
+		itemsCargoSize[]={10,10};
     allowOwnedCargoManipulation="true";
     attachments[]=
     {
