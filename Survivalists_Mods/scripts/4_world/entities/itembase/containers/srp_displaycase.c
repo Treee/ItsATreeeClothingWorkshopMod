@@ -122,6 +122,8 @@ class SRP_HoneyCombStand extends SRP_DisplayCase_Base{};
 class SRP_GlassDisplayCase extends SRP_DisplayCase_Base{};
 class SRP_GlassDisplayCaseLarge extends SRP_DisplayCase_Base
 {
+  protected EntityAI displayedItem;
+
   override bool CanReceiveItemIntoCargo (EntityAI item)
 	{
 		return GetInventory().GetCargo().GetItemCount() < 1;
@@ -131,6 +133,44 @@ class SRP_GlassDisplayCaseLarge extends SRP_DisplayCase_Base
   {
 		return GetInventory().GetCargo().GetItemCount() < 1;
   }
+
+  override bool CanReleaseCargo( EntityAI parent )
+	{
+		return !IsDisplayCaseLocked();
+	}
+
+  override void EECargoIn(EntityAI item)
+	{
+		super.EECargoIn(item);
+    CreateDisplayObject(item.GetType());
+	}
+
+  override void EECargoOut(EntityAI item)
+  {
+		super.EECargoOut(item);
+    DeleteDisplayObject();
+  }
+
+  override void OnStoreSave(ParamsWriteContext ctx)
+	{
+    DeleteDisplayObject()
+    super.OnStoreSave(ctx);
+	}
+
+  void CreateDisplayObject(string itemType)
+  {
+    displayedItem = EntityAI.Cast(GetGame().CreateObjectEx(itemType, "0 0 0", ECE_IN_INVENTORY|ECE_LOCAL));
+    MiscGameplayFunctions.AttachTo(displayedItem,this,"0 1 0","0 0 0","");
+  }
+
+  void DeleteDisplayObject()
+  {
+    if (displayedItem)
+    {
+      displayedItem.Delete();
+    }
+  }
+	
 };
 class SRP_MuseumTable extends SRP_DisplayCase_Base{};
 

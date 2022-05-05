@@ -2939,12 +2939,8 @@ class CfgVehicles
 		physLayer="item_large";
 		weight=10000;
 		itemSize[]={10,15};
-		itemsCargoSize[]={10,10};
+		itemsCargoSize[]={12,12};
     allowOwnedCargoManipulation="true";
-    attachments[]=
-    {
-      "SRP_DisplayHook1"
-    };
     hiddenSelections[]=
     {
       "zbytek",
