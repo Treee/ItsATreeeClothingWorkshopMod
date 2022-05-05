@@ -104,4 +104,22 @@ class CfgVehicles
     };
 	};
 
+  class Sneakers_Sneaky: Sneakers_ColorBase
+	{
+		scope=2;
+		displayName="These shoes are very quiet";
+		descriptionShort="Shoes that move silently";
+    soundAttType="None";
+    hiddenSelectionsTextures[]=
+		{
+			"\dz\characters\shoes\data\Sneakers_Black_co.paa",
+			"\dz\characters\shoes\data\Sneakers_Black_co.paa",
+			"\dz\characters\shoes\data\Sneakers_Black_co.paa"
+		};
+    class Protection
+    {
+      biological=6;
+    };
+	};
+
 };
