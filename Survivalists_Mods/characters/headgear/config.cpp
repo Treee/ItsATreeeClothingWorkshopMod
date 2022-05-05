@@ -680,7 +680,6 @@ class CfgVehicles
     rotationFlags=16;
 		inventorySlot[]=
 		{
-			"Glass",
       "SRP_AltynVisor"
 		};
     hiddenSelections[] = {"zbytek"};

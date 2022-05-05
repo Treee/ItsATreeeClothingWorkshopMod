@@ -153,7 +153,7 @@ class SRP_GlassDisplayCaseLarge extends SRP_DisplayCase_Base
 
   override void OnStoreSave(ParamsWriteContext ctx)
 	{
-    DeleteDisplayObject()
+    DeleteDisplayObject();
     super.OnStoreSave(ctx);
 	}
 

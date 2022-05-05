@@ -30,8 +30,8 @@ class ActionLockDisplayCase: ActionContinuousBase
 		
     if (target.GetObject())
     {
-      SRP_DisplayCase_Base displayCase;
-      if (Class.CastTo(displayCase, target.GetObject())
+      SRP_DisplayCase_Base displayCase = SRP_DisplayCase_Base.Cast(target.GetObject());
+      if (displayCase)
       {
         return !displayCase.IsDisplayCaseLocked();
       }
@@ -41,8 +41,8 @@ class ActionLockDisplayCase: ActionContinuousBase
 
 	protected void LockDisplayCase(ActionTarget target)
 	{
-    SRP_DisplayCase_Base displayCase;
-    if (Class.CastTo(displayCase, target.GetObject())
+    SRP_DisplayCase_Base displayCase = SRP_DisplayCase_Base.Cast(target.GetObject());
+    if (displayCase)
     {
       displayCase.ModifyDisplayCase(true);
     }
@@ -92,8 +92,8 @@ class ActionUnLockDisplayCase: ActionContinuousBase
 		
     if (target.GetObject())
     {
-      SRP_DisplayCase_Base displayCase;
-      if (Class.CastTo(displayCase, target.GetObject())
+      SRP_DisplayCase_Base displayCase = SRP_DisplayCase_Base.Cast(target.GetObject());
+      if (displayCase)
       {
         return displayCase.IsDisplayCaseLocked();
       }
@@ -103,8 +103,8 @@ class ActionUnLockDisplayCase: ActionContinuousBase
 
 	protected void UnlockDisplayCase(ActionTarget target)
 	{
-    SRP_DisplayCase_Base displayCase;
-    if (Class.CastTo(displayCase, target.GetObject())
+    SRP_DisplayCase_Base displayCase = SRP_DisplayCase_Base.Cast(target.GetObject());
+    if (displayCase)
     {
       displayCase.ModifyDisplayCase(false);
     }
