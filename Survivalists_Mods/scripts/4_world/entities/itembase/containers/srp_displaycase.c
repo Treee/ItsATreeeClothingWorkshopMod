@@ -122,7 +122,7 @@ class SRP_HoneyCombStand extends SRP_DisplayCase_Base{};
 class SRP_GlassDisplayCase extends SRP_DisplayCase_Base{};
 class SRP_GlassDisplayCaseLarge extends SRP_DisplayCase_Base
 {
-  protected EntityAI displayedItem;
+  protected ItemBase displayedItem;
 
   override bool CanReceiveItemIntoCargo (EntityAI item)
 	{
@@ -159,7 +159,8 @@ class SRP_GlassDisplayCaseLarge extends SRP_DisplayCase_Base
 
   void CreateDisplayObject(string itemType)
   {
-    displayedItem = EntityAI.Cast(GetGame().CreateObjectEx(itemType, "0 0 0", ECE_IN_INVENTORY|ECE_LOCAL));
+    displayedItem = ItemBase.Cast(GetGame().CreateObjectEx(itemType, "0 0 0", ECE_IN_INVENTORY|ECE_LOCAL));
+    displayedItem.SetTakeable(false);
     MiscGameplayFunctions.AttachTo(displayedItem,this,"0 1 0","0 0 0","");
   }
 

@@ -120,6 +120,16 @@ class CfgVehicles
     {
       biological=6;
     };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000;
+        };
+      };
+    };
 	};
 
 };
