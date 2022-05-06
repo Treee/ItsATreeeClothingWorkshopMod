@@ -572,6 +572,26 @@ modded class PlayerBase
   {
     // Print("[PlayerBase] - [ProcessPlayerSleep] - TotalTiredNess: " + m_TotalTiredness);
   }
+  
+  override void ProcessFeetDamageServer(int pUserInt)
+	{    
+    if (SRP_IgnoreShoeDamage())
+    {
+      return;
+    }
+    super.ProcessFeetDamageServer(pUserInt);
+  };
+
+  // turn this into onwasattached and onwasdetached
+  bool SRP_IgnoreShoeDamage()
+  {
+    EntityAI shoes = FindAttachmentBySlotName("Feet");
+    if (shoes && shoes.GetType() == "Sneakers_Skylar_Biozone")
+    {
+      return true;
+    }
+    return false;
+  }
 
   bool IsAwake()
   {

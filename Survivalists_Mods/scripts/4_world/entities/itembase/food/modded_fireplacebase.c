@@ -9,24 +9,18 @@ modded class FireplaceBase
   override protected FireConsumable GetItemToConsume()
 	{
     m_UTSource.SetIsRadioactiveSource(false);
+    m_UTSource.SetIsComfortHeatSource(false);
     // Print("[FireplaceBase] - [FireConsumable] - [GetItemToConsume]");
     if (m_ItemToConsume && m_ItemToConsume.GetItem() && m_ItemToConsume.GetItem().GetType().Contains("_Irradiated"))
     {
       // Print("[FireplaceBase] - [FireConsumable] - [GetItemToConsume]=====================IRADIATED!!");
       m_UTSource.SetIsRadioactiveSource(true);
     }
-    return super.GetItemToConsume();		
-	}
-
-  override void EEInit()
-	{
-		super.EEInit();
-    // Print("[FireplaceBase] - [EEInit] - Start");
-		if (GetGame().IsServer() || !GetGame().IsMultiplayer())
-		{
-      // Print("[FireplaceBase] - [EEInit] - IS COMFORT HEAT SOURCE");
+    if (m_ItemToConsume && m_ItemToConsume.GetItem())
+    {
       m_UTSource.SetIsComfortHeatSource(true);
-		}		
+    }
+    return super.GetItemToConsume();		
 	}
 
   override protected bool IsKindling( ItemBase item )
@@ -75,4 +69,4 @@ modded class FireplaceBase
     }
     return energy;
 	}
-}
+};

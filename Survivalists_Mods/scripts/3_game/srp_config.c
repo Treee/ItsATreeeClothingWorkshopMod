@@ -48,6 +48,10 @@ class SRPConfig
   float g_SRPRestfulnessIncreaseAmount;
   float g_SRPRestfulnessFireComfortIncreaseAmount;
   float g_SRPRestfulnessUnconsciousIncreaseAmount;
+  float g_SRPRestfulnessDaytimeIncreaseAmount;
+  float g_SRPRestfulnessNighttimeIncreaseAmount;
+  float g_SRPRestfulnessInsideShelterIncreaseAmount;
+
   float g_SRPRestfulnessSprintingIncreaseAmount;
   float g_SRPRestfulnessRunningIncreaseAmount;
   float g_SRPRestfulnessWalkingIncreaseAmount;
@@ -245,26 +249,34 @@ class SRPGlobals
   {
     config.g_SRPIsSleepActive = true;
 
-    config.g_SRPSleepMaximumAwakeTime = 14400; // 4 hours in seconds is the "max" awake time before passing out
+    config.g_SRPSleepMaximumAwakeTime = 28800; // 8 hours in seconds is the "max" awake time before passing out
     config.g_SRPSleepYawnInterval = 120;        // time in between yawns
 
-    config.g_SRPSleepynessIncreaseAmount = 0.9; // we get sleepy x units per
-    config.g_SRPRestfulnessIncreaseAmount = 1.5; // we get rested x units per
-    config.g_SRPRestfulnessFireComfortIncreaseAmount = 1.5;
-    config.g_SRPRestfulnessUnconsciousIncreaseAmount = 10;
-    config.g_SRPRestfulnessSprintingIncreaseAmount = 2.5;
-    config.g_SRPRestfulnessRunningIncreaseAmount = 1.5;
-    config.g_SRPRestfulnessWalkingIncreaseAmount = 0.5;
-    config.g_SRPRestfulnessMovementIncreaseAmount = 0.3;
+    config.g_SRPSleepynessIncreaseAmount = 0.25; // we get sleepy x units per
+    // things that increase sleep
+    config.g_SRPRestfulnessIncreaseAmount = 3.5; // we get rested x units per
+    config.g_SRPRestfulnessFireComfortIncreaseAmount = 3.0;
+    config.g_SRPRestfulnessUnconsciousIncreaseAmount = 9;
+    config.g_SRPRestfulnessEpinephrineIncreaseAmount = -9.2; // negative numbers for properties that rest players during day and night
 
-    config.g_SRPRestfulnessBrokenLegsIncreaseAmount = 1.9;
-    config.g_SRPRestfulnessFeverIncreaseAmount = 1.2;
-    config.g_SRPRestfulnessGluttonIncreaseAmount = 0.6;
-    config.g_SRPRestfulnessMorphineIncreaseAmount = 2.1;
-    config.g_SRPRestfulnessPainKillersIncreaseAmount = 1.6;
-    config.g_SRPRestfulnessEpinephrineIncreaseAmount = -5.2;
-    config.g_SRPRestfulnessHungerIncreaseAmount = 0.7;
-    config.g_SRPRestfulnessThirstIncreaseAmount = 0.6;
+    config.g_SRPRestfulnessDaytimeIncreaseAmount = -0.9; // negative numbers for properties that rest players during day and night
+    config.g_SRPRestfulnessNighttimeIncreaseAmount = -2.1;
+
+    config.g_SRPRestfulnessInsideShelterIncreaseAmount = -1.7;
+
+    // things that decrease sleep
+    config.g_SRPRestfulnessSprintingIncreaseAmount = 0.9;
+    config.g_SRPRestfulnessRunningIncreaseAmount = 0.75;
+    config.g_SRPRestfulnessWalkingIncreaseAmount = 0.25;
+    config.g_SRPRestfulnessMovementIncreaseAmount = 0.3; // not really used
+
+    config.g_SRPRestfulnessBrokenLegsIncreaseAmount = 0.7;
+    config.g_SRPRestfulnessFeverIncreaseAmount = 0.3;
+    config.g_SRPRestfulnessGluttonIncreaseAmount = 0.2;
+    config.g_SRPRestfulnessMorphineIncreaseAmount = 0.7;
+    config.g_SRPRestfulnessPainKillersIncreaseAmount = 0.6;
+    config.g_SRPRestfulnessHungerIncreaseAmount = 0.15;
+    config.g_SRPRestfulnessThirstIncreaseAmount = 0.1;
 
     config.g_SRPSleepYawnThreshold = 0.8; // 80% sleepyness triggers yawning. 0% means yawning when fully awake
 

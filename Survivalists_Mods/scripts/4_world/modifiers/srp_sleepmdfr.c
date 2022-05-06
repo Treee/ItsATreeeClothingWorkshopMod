@@ -1,11 +1,18 @@
 class SRP_SleepMdfr extends ModifierBase
 {	
   bool m_IsSleepActive = false;
+  bool m_HasCheckForBedding = false;
+  float m_BeddingValue = 0;
   float PASS_OUT_THRESHOLD = 0; // 5 minutes passed 0 is pass out territory
   float TIREDNESS_INCREASE = 0;
   float RESTFULLNESS_SLEEPING = 0;
   float RESTFULLNESS_FIRECOMFORT = 0;
   float RESTFULLNESS_UNCONSCIOUS = 0;
+
+  float RESTFULLNESS_DAYTIME = 0;
+  float RESTFULLNESS_NIGHTTIME = 0;
+
+  float RESTFULLNESS_INSIDESHELTER = 0;
   
   float RESTFULLNESS_SPRINTING = 0;
   float RESTFULLNESS_RUNNING = 0;
@@ -40,6 +47,11 @@ class SRP_SleepMdfr extends ModifierBase
       RESTFULLNESS_SLEEPING = config.g_SRPRestfulnessIncreaseAmount;
       RESTFULLNESS_FIRECOMFORT = config.g_SRPRestfulnessFireComfortIncreaseAmount;
       RESTFULLNESS_UNCONSCIOUS = config.g_SRPRestfulnessUnconsciousIncreaseAmount;
+
+      RESTFULLNESS_DAYTIME = config.g_SRPRestfulnessDaytimeIncreaseAmount;
+      RESTFULLNESS_NIGHTTIME = config.g_SRPRestfulnessNighttimeIncreaseAmount;
+
+      RESTFULLNESS_INSIDESHELTER = config.g_SRPRestfulnessInsideShelterIncreaseAmount;
 
       RESTFULLNESS_SPRINTING = config.g_SRPRestfulnessSprintingIncreaseAmount;
       RESTFULLNESS_RUNNING = config.g_SRPRestfulnessRunningIncreaseAmount;
@@ -96,19 +108,25 @@ class SRP_SleepMdfr extends ModifierBase
     int tendency = GetModifierTendency(!player.IsAwake());
 
     float modifier = ( GetNextTiredness(!player.IsAwake()) * tendency );
-    // Print("modifier 1: " + modifier);
+    Print("modifier 1: " + modifier);
     modifier += ( GetUnconsciousRestfulness(player.IsUnconscious()) * tendency );
-    // Print("modifier uncon: " + modifier);
-    modifier += ( GetHeatComfortRestfulness(player.IsNearComfortHeatSource()) * tendency );
-    // Print("modifier heat: " + modifier);
+    Print("modifier uncon: " + modifier);
+    modifier += ( GetHeatComfortRestfulness(player) * tendency );
+    Print("modifier heat: " + modifier);
     modifier += ( GetMedicalRestfulness(player) * tendency );
-    // Print("modifier medical: " + modifier);
+    Print("modifier medical: " + modifier);
     modifier += ( GetHungerRestfulness(player.GetStatEnergy().Get()) * tendency );
-    // Print("modifier hunger: " + modifier);
+    Print("modifier hunger: " + modifier);
     modifier += ( GetThirstRestfulness(player.GetStatWater().Get()) * tendency );
-    // Print("modifier thirst: " + modifier);
+    Print("modifier thirst: " + modifier);
     modifier += ( GetMovementStateRestfulness(player));
-    // Print("modifier mvt state: " + modifier);
+    Print("modifier mvt state: " + modifier);
+    modifier += ( GetDayNightCycleRestfulness(!player.IsAwake()));
+    Print("day night: " + modifier);
+    modifier += ( GetBuildingComfortRestfulness(player.IsSoundInsideBuilding(), !player.IsAwake()));
+    Print("inside shelter: " + modifier);
+    modifier += ( GetBeddingComfortRestfulness(player));
+    Print("bedding comfort: " + modifier);
     
     // subtract dT as Tick automatically calculates it for us
     // modify dT relative to what can influence sleep rate
@@ -120,7 +138,7 @@ class SRP_SleepMdfr extends ModifierBase
     float clamped = Math.Min(PASS_OUT_THRESHOLD, Math.Max(0, newAttachedTime));    
     // Print("First Clamp: " + clamped);
 
-    // Print("[SRP_SleepMdfr] - [OnTick] - TotalAttachedTime: " + GetAttachedTime() + " clamped time: " + clamped);
+    Print("[SRP_SleepMdfr] - [OnTick] - TotalAttachedTime: " + GetAttachedTime() + " clamped time: " + clamped);
         
     SetAttachedTime(clamped);
     player.SetTotalTiredness(clamped);
@@ -145,6 +163,83 @@ class SRP_SleepMdfr extends ModifierBase
       return RESTFULLNESS_SLEEPING;
     }
     return TIREDNESS_INCREASE;
+  }
+
+  float GetBeddingComfortRestfulness(PlayerBase player)
+  {  
+    if (!player.IsAwake())
+    {
+      if (!m_HasCheckForBedding)
+      {
+        vector from = player.GetPosition();
+        vector to = player.GetPosition();
+        set<Object> hit_object = new set<Object>;
+        to[1] = to[1] - 0.5;
+        vector contactPos;
+        vector contactDir;
+        int contactComponent;
+        bool hit = DayZPhysics.RaycastRV( from, to, contactPos, contactDir, contactComponent, hit_object, NULL, player, false, false, ObjIntersectFire );
+        if (hit && hit_object.Count() > 0)
+        {
+          if (hit_object[0].GetType().Contains("sleepingbag"))
+          {
+            m_BeddingValue = -0.8
+          }
+          else if (hit_object[0].GetType() == "SRP_MedicalBed_Mattress") 
+          {
+            m_BeddingValue = -1.2
+          }
+          else if (hit_object[0].GetType() == "SRP_MedicalBed_Wood") 
+          {
+            m_BeddingValue = -2.2
+          }
+          else if (hit_object[0].GetType() == "SRP_MedicalBedSmall_Wood") 
+          {
+            m_BeddingValue = -1.2
+          }
+          else
+          {
+            m_BeddingValue = 0;
+          }
+        }
+        else
+        {
+          m_BeddingValue = 0;
+        }
+        m_HasCheckForBedding = true;
+      }
+    }
+    else
+    {
+      m_BeddingValue = 0;
+      m_HasCheckForBedding = false;
+    }
+    return m_BeddingValue;
+  }
+
+  float GetBuildingComfortRestfulness(bool isInBuilding, bool isSleeping)
+  {
+    if (isSleeping)
+    {
+      if (isInBuilding)
+      {
+        return RESTFULLNESS_INSIDESHELTER;
+      }
+    }
+    return 0;
+  }
+
+  float GetDayNightCycleRestfulness(bool isSleeping)
+  {
+    if (isSleeping)
+    {
+      if (GetGame().GetWorld().IsNight())
+      {
+        return RESTFULLNESS_NIGHTTIME;
+      }
+      return RESTFULLNESS_DAYTIME;
+    }
+    return 0;
   }
 
   float GetMovementStateRestfulness(PlayerBase player)
@@ -178,12 +273,19 @@ class SRP_SleepMdfr extends ModifierBase
     return 0;
   }
 
-  float GetHeatComfortRestfulness(bool isNearWarmComfort)
+  float GetHeatComfortRestfulness(PlayerBase player)
   {
-    if (isNearWarmComfort)
+    if (player.IsNearComfortHeatSource())
     {
-      // Print("[SRP_SleepMdfr] - [GetHeatComfortRestfulness] - : NEAR COMFORT!!");
-      return RESTFULLNESS_FIRECOMFORT;
+      if (player.IsAwake())
+      {
+        // Print("[SRP_SleepMdfr] - [GetHeatComfortRestfulness] - : NEAR COMFORT!!");
+        return RESTFULLNESS_FIRECOMFORT * 0.1;
+      }
+      else
+      {
+        return RESTFULLNESS_FIRECOMFORT;
+      }
     }
     return 0;
   }
