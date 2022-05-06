@@ -212,8 +212,8 @@ class SRPFishingHotspot
     if (distance <= m_radius)
     {
       // get a nicely weight value between 0 and 1 relative to the distance we are from the center of the hotspot
-      float max = 0.3;
-      m_modifier = max - TranslateToNewRange(distance, 0.0, max, 0.0, m_radius);
+      float max = 1;
+      m_modifier = max - TranslateToNewRange(distance, 0.3, max, 0.0, m_radius);
       // Print("Your player is in a hotspot and is: " + m_modifier + " to the center");
       return true;
     }
