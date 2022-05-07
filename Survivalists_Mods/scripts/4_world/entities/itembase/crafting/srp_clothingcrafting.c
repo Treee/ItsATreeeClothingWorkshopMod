@@ -10,13 +10,13 @@ class SRP_IntermediateClothingKitBase extends ItemBase
     return FindAttachmentBySlotName(slotName) != null;
   }
 
-  bool HasAttachmentFilledWithItem(string slotName, string itemName)
+  bool HasAttachmentFilledWithItem(string slotName, string itemName, int minHealthLevel = 2)
   {
     EntityAI eai = FindAttachmentBySlotName(slotName);
     if (eai)
     {
       ItemBase item = ItemBase.Cast(eai);
-      return (item && item.GetType() == itemName);    
+      return (item && item.GetType() == itemName && item.GetHealthLevel() <= minHealthLevel );    
     }
     return false;
   }
