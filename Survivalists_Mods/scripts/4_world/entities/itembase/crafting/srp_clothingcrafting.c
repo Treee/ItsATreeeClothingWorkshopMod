@@ -55,11 +55,11 @@ class SRP_IntermediateClothingKitBase extends ItemBase
     return false;
   };
 
-  bool HasAttachmentFilledWithCorrectItem(string slotName, TStringArray types)
+  bool HasAttachmentFilledWithCorrectItem(string slotName, TStringArray types, int minHealthLevel = 2)
   {
     for(int i=0; i<types.Count(); i++)
     {
-      if (HasAttachmentFilledWithItem(slotName, types.Get(i)))
+      if (HasAttachmentFilledWithItem(slotName, types.Get(i), minHealthLevel))
       {
         return true;
       }

@@ -33,7 +33,6 @@ class Craft_SRP_StoneForgeWorkbenchStarter_Kit extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"BBP_Mortar_Mix");//you can insert multiple ingredients this way
 		InsertIngredient(1,"SRP_CraftingMaterial_Mortar");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[1] = 0;// 0 = do nothing
@@ -74,8 +73,7 @@ class Craft_SRP_StoneForgeWorkbenchFinisher_Kit extends RecipeBase
 		m_Name = "Start Basic Forge Foundation Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 8;//animation length in relative time units
-		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
-		
+		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision		
 		
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
@@ -102,7 +100,6 @@ class Craft_SRP_StoneForgeWorkbenchFinisher_Kit extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"BBP_Mortar_Mix");//you can insert multiple ingredients this way
 		InsertIngredient(1,"SRP_CraftingMaterial_Mortar");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[1] = 0;// 0 = do nothing

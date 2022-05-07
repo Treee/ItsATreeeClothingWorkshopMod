@@ -387,7 +387,6 @@ class Craft_SRP_CrucibleEmptyMortar extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"BBP_Mortar_Mix");//you can insert multiple ingredients this way
     InsertIngredient(0,"SRP_CraftingMaterial_Mortar");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
@@ -669,7 +668,6 @@ class Craft_SRP_IngotMold_Mortar extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"BBP_Mortar_Mix");//you can insert multiple ingredients this way
     InsertIngredient(1,"SRP_CraftingMaterial_Mortar");//you can insert multiple ingredients this way
 
 		m_IngredientAddHealth[1] = 0;// 0 = do nothing
