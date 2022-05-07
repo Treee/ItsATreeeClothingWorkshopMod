@@ -6,16 +6,6 @@ modded class PluginRecipesManager
 		// UnregisterRecipe("CraftStoneKnife");	// Removing an existing recipe
    
     // Crafting
-
-    //rremove these after 1 or 2 updates
-    RegisterRecipe(new SRP_ConvertOldMiningGemAqua);
-    RegisterRecipe(new SRP_ConvertOldMiningGemAmethyst);
-    RegisterRecipe(new SRP_ConvertOldMiningGemJade);
-    RegisterRecipe(new SRP_ConvertOldMiningGemAmber);
-    RegisterRecipe(new SRP_ConvertOldMiningGemQuartz);
-    RegisterRecipe(new SRP_ConvertOldMiningGemRuby);
-    RegisterRecipe(new SRP_ConvertOldMiningGemTopaz);
-
     //---------Deconstruct Items into Kits
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
     RegisterRecipe(new Deconstruct_RockPile);

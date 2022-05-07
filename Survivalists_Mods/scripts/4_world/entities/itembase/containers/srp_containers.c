@@ -278,14 +278,7 @@ class SRP_Container_Base extends DeployableContainer_Base
 		}
 	}
 }
-class SRP_SewingTable extends SRP_Container_Base
-{
-  override void SetActions()
-  {
-      super.SetActions();
-      AddAction(ActionInteractWithGUICraftingWorkbench);
-  }
-};
+class SRP_SewingTable extends SRP_Container_Base{};
 
 class SRP_PostBox extends SRP_Container_Base{};
 class SRP_PostBoxBlue extends SRP_Container_Base{};

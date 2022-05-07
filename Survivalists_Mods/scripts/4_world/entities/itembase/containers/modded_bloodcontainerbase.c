@@ -60,6 +60,8 @@ modded class ActionCollectBloodTargetLambda
           }
         }
       }
+      // attempt to just transfer over player agents to the bag
+      new_item_IB.TransferAgents(m_Target.GetAgents());
 		}
 		else
 		{
