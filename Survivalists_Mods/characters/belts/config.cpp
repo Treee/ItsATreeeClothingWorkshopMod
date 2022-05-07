@@ -309,7 +309,7 @@ class CfgVehicles
 	class SRP_Knife_Sheath_Tan: NylonKnifeSheath
 	{
 		scope = 2;
-		displayName = "Knife Sheath - Tan";
+		displayName = "Knife Sheath";
     descriptionShort="Espen Industries. A military style knife sheath.";
 		model = "Survivalists_Mods\characters\belts\Knife_Sheath.p3d";
 		hiddenSelections[] = {"zbytek"};

@@ -364,6 +364,13 @@ class CfgVehicles
 		};
 	};
 
+  class Fabric: Inventory_Base
+	{
+    inventorySlot[]+=
+		{
+			"Material_Shelter_Fabric"
+		};
+  };
 
   // ------------------------- EVENT STUFF
   class SRP_PortalBone_Kit: SRP_KitBase  // new

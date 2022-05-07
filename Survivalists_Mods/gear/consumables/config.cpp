@@ -19,6 +19,7 @@ class CfgVehicles
   class Inventory_Base;
   class ButaneCanister;
   class Stone;
+  class Paper;
 
   //--------------------------------------------- BASE GAME OVERRIDES
 	class Battery9V: Inventory_Base
@@ -505,6 +506,35 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Paper_Hint1: Paper
+  {
+		scope=2;
+		displayName="Diary Page";
+		descriptionShort="The scribbles and rantings of a strange individual.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\loot_paper_mining_co.paa"
+    };
+  };
+
+  class SRP_Paper_Hint2: Paper
+  {
+		scope=2;
+		displayName="Diary Page";
+		descriptionShort="The scribbles and rantings of a strange individual.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\loot_paper_fishing_co.paa"
+    };
+  };
 
   //====================================================== SEALED LETTER AND WAX
   

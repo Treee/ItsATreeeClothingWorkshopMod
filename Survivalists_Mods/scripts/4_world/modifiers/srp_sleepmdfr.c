@@ -108,25 +108,25 @@ class SRP_SleepMdfr extends ModifierBase
     int tendency = GetModifierTendency(!player.IsAwake());
 
     float modifier = ( GetNextTiredness(!player.IsAwake()) * tendency );
-    Print("modifier 1: " + modifier);
+    // Print("modifier 1: " + modifier);
     modifier += ( GetUnconsciousRestfulness(player.IsUnconscious()) * tendency );
-    Print("modifier uncon: " + modifier);
+    // Print("modifier uncon: " + modifier);
     modifier += ( GetHeatComfortRestfulness(player) * tendency );
-    Print("modifier heat: " + modifier);
+    // Print("modifier heat: " + modifier);
     modifier += ( GetMedicalRestfulness(player) * tendency );
-    Print("modifier medical: " + modifier);
+    // Print("modifier medical: " + modifier);
     modifier += ( GetHungerRestfulness(player.GetStatEnergy().Get()) * tendency );
-    Print("modifier hunger: " + modifier);
+    // Print("modifier hunger: " + modifier);
     modifier += ( GetThirstRestfulness(player.GetStatWater().Get()) * tendency );
-    Print("modifier thirst: " + modifier);
+    // Print("modifier thirst: " + modifier);
     modifier += ( GetMovementStateRestfulness(player));
-    Print("modifier mvt state: " + modifier);
+    // Print("modifier mvt state: " + modifier);
     modifier += ( GetDayNightCycleRestfulness(!player.IsAwake()));
-    Print("day night: " + modifier);
+    // Print("day night: " + modifier);
     modifier += ( GetBuildingComfortRestfulness(player.IsSoundInsideBuilding(), !player.IsAwake()));
-    Print("inside shelter: " + modifier);
+    // Print("inside shelter: " + modifier);
     modifier += ( GetBeddingComfortRestfulness(player));
-    Print("bedding comfort: " + modifier);
+    // Print("bedding comfort: " + modifier);
     
     // subtract dT as Tick automatically calculates it for us
     // modify dT relative to what can influence sleep rate
@@ -138,7 +138,7 @@ class SRP_SleepMdfr extends ModifierBase
     float clamped = Math.Min(PASS_OUT_THRESHOLD, Math.Max(0, newAttachedTime));    
     // Print("First Clamp: " + clamped);
 
-    Print("[SRP_SleepMdfr] - [OnTick] - TotalAttachedTime: " + GetAttachedTime() + " clamped time: " + clamped);
+    // Print("[SRP_SleepMdfr] - [OnTick] - TotalAttachedTime: " + GetAttachedTime() + " clamped time: " + clamped);
         
     SetAttachedTime(clamped);
     player.SetTotalTiredness(clamped);
@@ -156,7 +156,7 @@ class SRP_SleepMdfr extends ModifierBase
   }
   
   float GetNextTiredness(bool isSleeping)
-  {    
+  {
     if (isSleeping)
     {
       // Print("[SRP_SleepMdfr] - [GetNextTiredness] - : IS SLEEPING");
