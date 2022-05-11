@@ -151,7 +151,7 @@ class CfgVehicles
 		displayName="Marshmellow Fluff";
 		descriptionShort="Just a jar of marshmellow fluff, very good with your favourite chocolate.";
 		hiddenSelections[]={"zbytek","camoground"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\marshmellow_fluff_co.paa","Survivalists_Retextures\gear\food\data\marshmellow_fluff_co.paa"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\marshmellow_fluff_ca.paa","Survivalists_Retextures\gear\food\data\marshmellow_fluff_ca.paa"};
 		class Nutrition
 		{
 			fullnessIndex=0;
@@ -167,7 +167,7 @@ class CfgVehicles
 		displayName="Marmite";
 		descriptionShort="Uck";
 		hiddenSelections[]={"zbytek","camoground"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\jar_marmite_co.paa","Survivalists_Retextures\gear\food\data\jar_marmite_co.paa"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\jar_marmite_ca.paa","Survivalists_Retextures\gear\food\data\jar_marmite_ca.paa"};
 	};
 	class Honey_PeanutButter: Honey
 	{
@@ -175,7 +175,7 @@ class CfgVehicles
 		displayName="Peanut-Butter";
 		descriptionShort="Smooth peanut-butter, use some jam for a great snack.";
 		hiddenSelections[]={"zbytek","camoground"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\jar_peanutbutter_co.paa","Survivalists_Retextures\gear\food\data\jar_peanutbutter_co.paa"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\jar_peanutbutter_ca.paa","Survivalists_Retextures\gear\food\data\jar_peanutbutter_ca.paa"};
 	};
 	class Honey_AppleSauce: Honey
 	{
@@ -183,7 +183,7 @@ class CfgVehicles
 		displayName="Apple Sauce";
 		descriptionShort="Grandma's own brand apple sauce.";
 		hiddenSelections[]={"zbytek","camoground"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\jar_applesauce_co.paa","Survivalists_Retextures\gear\food\data\jar_applesauce_co.paa"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\jar_applesauce_ca.paa","Survivalists_Retextures\gear\food\data\jar_applesauce_ca.paa"};
 	};
   class BoxCerealCrunchin_Frosties: BoxCerealCrunchin
 	{
