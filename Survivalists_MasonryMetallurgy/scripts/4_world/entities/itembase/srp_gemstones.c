@@ -1,16 +1,3 @@
-class SRP_Mining_UnCutGem_ColorBase extends ItemBase
-{
-  
-};
-
-class SRP_Mining_UnCutGem_Aqua extends SRP_Mining_UnCutGem_ColorBase{};
-class SRP_Mining_UnCutGem_Amethyst extends SRP_Mining_UnCutGem_ColorBase{};
-class SRP_Mining_UnCutGem_Jade extends SRP_Mining_UnCutGem_ColorBase{};
-class SRP_Mining_UnCutGem_Amber extends SRP_Mining_UnCutGem_ColorBase{};
-class SRP_Mining_UnCutGem_Quartz extends SRP_Mining_UnCutGem_ColorBase{};
-class SRP_Mining_UnCutGem_Ruby extends SRP_Mining_UnCutGem_ColorBase{};
-class SRP_Mining_UnCutGem_Topaz extends SRP_Mining_UnCutGem_ColorBase{};
-
 class SRP_Mining_CutGem_ColorBase extends ItemBase
 {
 
