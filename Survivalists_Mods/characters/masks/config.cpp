@@ -571,6 +571,93 @@ class CfgVehicles
 		};
   };
 
+  class SRP_Fake_Gasmask: Clothing
+	{
+		scope=2;
+		displayName="Toy Gasmask";
+		descriptionShort="A toy gasmask";
+		model="Survivalists_Mods\characters\masks\SRP_Fake_Gasmask_g.p3d";
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot[]={"Eyewear","Mask"};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Mask",
+			"Eyewear"
+		};
+		weight=1000;
+		itemSize[]={2,2};
+		absorbency=0;
+		heatIsolation=0.80000001;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"hood",
+			"bracing"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_hood_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_bracing_co.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\SRP_Fake_Gasmask.p3d";
+			female="Survivalists_Mods\characters\masks\SRP_Fake_Gasmask.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_hood.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_bracing.rvmat"
+							}
+						},
+						{0.69999999,{
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_hood.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_bracing.rvmat"
+							}
+						},
+						{0.5,{
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_hood.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_bracing.rvmat"
+							}
+						},
+						{0.30000001,{
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_hood.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_bracing.rvmat"
+							}
+						},
+						{0.0,{
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_hood.rvmat",
+								"Survivalists_Mods\characters\masks\data\srp_fake_gasmask_bracing.rvmat"
+							}
+						}
+					};
+				};
+			};
+		};
+	};
+
   // ------------------------------------------ MVS Redux
 	class SRP_S10Respirator_Colorbase: GP5GasMask
 	{
