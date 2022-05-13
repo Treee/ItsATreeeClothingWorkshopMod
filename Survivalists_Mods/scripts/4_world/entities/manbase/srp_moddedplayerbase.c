@@ -182,6 +182,17 @@ modded class PlayerBase
     return false;
   }
 
+  bool IsPlayerMutant()
+  {
+    int slot_id = InventorySlots.GetSlotIdFromString("Head");
+    Head_Default tempHead = Head_Default.Cast(GetInventory().FindPlaceholderForSlot( slot_id ));
+    if (tempHead && (tempHead.GetType() == "DUB_Muthead_M" || tempHead.GetType() == "DUB_Muthead_F" || tempHead.GetType() == "DUB_Muthead_M_2" || tempHead.GetType() == "DUB_Muthead_F_2" || tempHead.GetType() == "DUB_Carlhead"))
+    {
+      return true;
+    }
+    return false;
+  }
+
   int GetPlayerRadiationProtection()
   {
     float protection = 0;

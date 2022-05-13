@@ -121,7 +121,7 @@ class SRP_SleepMdfr extends ModifierBase
     // Print("modifier thirst: " + modifier);
     modifier += ( GetMovementStateRestfulness(player));
     // Print("modifier mvt state: " + modifier);
-    modifier += ( GetDayNightCycleRestfulness(!player.IsAwake()));
+    modifier += ( GetDayNightCycleRestfulness(!player.IsAwake(), player.IsPlayerMutant()));
     // Print("day night: " + modifier);
     modifier += ( GetBuildingComfortRestfulness(player.IsSoundInsideBuilding(), !player.IsAwake()));
     // Print("inside shelter: " + modifier);
@@ -229,15 +229,32 @@ class SRP_SleepMdfr extends ModifierBase
     return 0;
   }
 
-  float GetDayNightCycleRestfulness(bool isSleeping)
+  float GetDayNightCycleRestfulness(bool isSleeping, bool isMutant)
   {
     if (isSleeping)
     {
       if (GetGame().GetWorld().IsNight())
       {
-        return RESTFULLNESS_NIGHTTIME;
+        if (isMutant)
+        {
+          return RESTFULLNESS_DAYTIME;  
+        }
+        else
+        {
+          return RESTFULLNESS_NIGHTTIME;
+        }
       }
-      return RESTFULLNESS_DAYTIME;
+      else
+      {
+        if (isMutant)
+        {
+          return (RESTFULLNESS_NIGHTTIME / 2);  
+        }
+        else
+        {
+          return RESTFULLNESS_DAYTIME;
+        }
+      }
     }
     return 0;
   }
