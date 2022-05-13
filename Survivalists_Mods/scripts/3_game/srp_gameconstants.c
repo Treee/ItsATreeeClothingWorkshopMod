@@ -18,7 +18,7 @@ modded class PlayerConstants
 	static const float HEALTH_REGEN_MAX						= 0.015;		// defgault 0.03
 	
 	static const float LEG_HEALTH_REGEN						= 0.5;		// default 1
-	static const float LEG_HEALTH_REGEN_BROKEN				= 0.02;		// default 0.18
+	static const float LEG_HEALTH_REGEN_BROKEN				= 0.035;		// default 0.18
 
 }
 
