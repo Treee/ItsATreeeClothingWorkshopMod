@@ -739,6 +739,7 @@ class CfgVehicles
       "AnimalPelt1",
       "AnimalPelt2",
       "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
       "Rope",
       "Rags"
     };
@@ -763,6 +764,7 @@ class CfgVehicles
       "AnimalPelt1",
       "AnimalPelt2",
       "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
       "Rope",
       "Rags"
     };
@@ -787,6 +789,7 @@ class CfgVehicles
       "AnimalPelt1",
       "AnimalPelt2",
       "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
       "Rope",
       "Rags"
     };
@@ -811,6 +814,7 @@ class CfgVehicles
       "AnimalPelt1",
       "AnimalPelt2",
       "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
       "Rope",
       "Rags"
     };
@@ -835,6 +839,7 @@ class CfgVehicles
       "AnimalPelt1",
       "AnimalPelt2",
       "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
       "Rope",
       "Rags"
     };
@@ -859,6 +864,7 @@ class CfgVehicles
       "AnimalPelt1",
       "AnimalPelt2",
       "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
       "Rope",
       "Rags"
     };
@@ -883,6 +889,7 @@ class CfgVehicles
       "AnimalPelt1",
       "AnimalPelt2",
       "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
       "Rope",
       "Rags"
     };
