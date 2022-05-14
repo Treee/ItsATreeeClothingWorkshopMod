@@ -122,6 +122,49 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\ambience\data\chanting_610805.ogg",1}
 		};
 	};
+  class Survivalists_Mods_Ambience_Chanting14_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\chanting_64602_64621.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_Chanting15_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\chanting_64602_64621_79647.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_Chanting16_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\chanting_141367_141366.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_Chanting17_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\chanting_395402.ogg",1}
+		};
+	};
+
+  class Survivalists_Mods_Ambience_Tribal1_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\tribal_198491.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_Tribal2_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\tribal_400605_400809_20780_195313.ogg",1}
+		};
+	};
 };
 class CfgSoundSets
 {
@@ -214,6 +257,49 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"Survivalists_Mods_Ambience_Chanting13_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Chanting14_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Chanting14_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Chanting15_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Chanting15_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Chanting16_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Chanting16_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Chanting17_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Chanting17_SoundShader"
+		};
+	};
+
+  class Survivalists_Mods_Ambience_Tribal1_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Tribal1_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Tribal2_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Tribal2_SoundShader"
 		};
 	};
 };

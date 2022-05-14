@@ -770,7 +770,6 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - https://freesound.org/people/djgriffin/sounds/591250/ (Tibetan chant example)
 - https://freesound.org/people/GregorQuendel/sounds/514509/ (Throat Singing Percussion Trailer.wav)
-- https://freesound.org/people/dkaufman/sounds/387563/ (Langtang, Nepal mountain chants)
 - https://freesound.org/people/Falsalama/sounds/64621/ (tibetan chant falsalama 2 wet.wav)
 - https://freesound.org/people/Falsalama/sounds/64602/ (chant.mp3)
 - https://freesound.org/people/Falsalama/sounds/64603/ (Tibetan Chant by Falsalama 1.wav)
@@ -788,9 +787,11 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 - https://freesound.org/people/the_very_Real_Horst/sounds/195313/ (Yin-Yang-Sound-of-Tibetan-Silver-Bells.mp3)
 - https://freesound.org/people/molicki/sounds/237688/ (1 Molicki, Ohm 0;33.mp3)
 - https://freesound.org/people/electra/sounds/445129/ (Tibetan bells loop)
+
 - https://freesound.org/people/imagery2/sounds/458570/ (Red alert buzzer)
 - https://freesound.org/people/unfa/sounds/352143/ (clean explosions)
 - https://freesound.org/people/Mr_KeybOred/sounds/372086/ (distant explosions)
+
 - https://freesound.org/people/deleted_user_6515881/sounds/352764/
 - https://freesound.org/people/MShades/sounds/25916/
 - https://freesound.org/people/ARCHIVES84/sounds/610805/
