@@ -1128,7 +1128,7 @@ class CfgVehicles
   class SRPRadio_CassetteTape_ShortStory_WhiteFingerHag: SRPRadio_CassetteTape_ShortStory_Base
 	{
 		scope=2;
-		displayName="The White Fingered Hag of Treepwood";
+		displayName="The White Fingered Hag of Threepwood";
 		descriptionShort="Gather round the fire and listen to a spooky story.";
 		class CfgCassette
 		{
@@ -1148,7 +1148,7 @@ class CfgVehicles
   class SRPRadio_CassetteTape_ShortStory_IbargiooftheGreatWesternWoods: SRPRadio_CassetteTape_ShortStory_Base
 	{
 		scope=2;
-		displayName="Heavens Gate";
+		displayName="Ibargio of the Great Western Woods";
 		descriptionShort="Gather round the fire and listen to a spooky story.";
 		class CfgCassette
 		{
