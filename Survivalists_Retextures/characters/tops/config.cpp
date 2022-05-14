@@ -40,6 +40,7 @@ class CfgVehicles
 	class DenimJacket;
 	class Raincoat_ColorBase;
 	class WoolCoat_ColorBase;
+  class SRP_Rolled_Shirt_ColorBase;
 
   // modded classes
   class DUB_Monkrobe;
@@ -2853,6 +2854,79 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\tops\data\srp_Sweater_Green_CO.paa"
+		};
+	};
+
+  class SRP_Rolled_Shirt_Gray_Plaid: SRP_Rolled_Shirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\SRP_Rolled_Gray_Plaid_co.paa"
+		};
+	};
+	class SRP_Rolled_Shirt_Green_Plaid: SRP_Rolled_Shirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\SRP_Rolled_Shirt_Green_Plaid_co.paa"
+		};
+	};
+	class SRP_Rolled_Shirt_Red_Plaid: SRP_Rolled_Shirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\SRP_Rolled_Shirt_Red_Plaid_co.paa"
+		};
+	};
+	class SRP_Rolled_Shirt_Pink_Plaid: SRP_Rolled_Shirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\SRP_Rolled_Pink_Plaid_co.paa"
+		};
+	};
+	class SRP_Rolled_Shirt_Tan: SRP_Rolled_Shirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\SRP_Rolled_Shirt_Tan_co.paa"
+		};
+	};
+	class SRP_Rolled_Shirt_Pink: SRP_Rolled_Shirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\SRP_Rolled_Shirt_Pink_co.paa"
+		};
+	};
+	class SRP_Rolled_Shirt_Green: SRP_Rolled_Shirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\SRP_Rolled_Shirt_Green_co.paa"
+		};
+	};
+	class SRP_Rolled_Shirt_Blue: SRP_Rolled_Shirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\SRP_Rolled_Shirt_Blue_co.paa"
 		};
 	};
 

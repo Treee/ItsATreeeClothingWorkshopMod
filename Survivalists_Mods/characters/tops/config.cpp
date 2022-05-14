@@ -299,4 +299,112 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Rolled_Shirt_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Rolled up shirt";
+		descriptionShort="An unbuttoned shirt with rolled up sleeves.";
+		model="Survivalists_Mods\characters\tops\SRP_Rolled_Shirt_g.p3d";
+		inventorySlot[]=
+		{
+			"Body"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Body"
+		};
+		rotationFlags=64;
+		weight=2000;
+		itemSize[]={3,3};
+		itemsCargoSize[]={6,5};
+		quickBarBonus=2;
+		varWetMax=0.38999999;
+		heatIsolation=0.75;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
+		soundAttType="LeatherJacket";
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"personality"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\tops\data\SRP_Rolled_Shirt_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\tops\data\srp_rolled_shirt.rvmat"}},
+						{0.69999999,{"Survivalists_Mods\characters\tops\data\srp_rolled_shirt.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\tops\data\srp_rolled_shirt_damage.rvmat"}},
+						{0.30000001,{"Survivalists_Mods\characters\tops\data\srp_rolled_shirt_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\characters\tops\data\srp_rolled_shirt_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Melee
+				{
+					class Health
+					{
+						damage=0.69;
+					};
+					class Blood
+					{
+						damage=0.69;
+					};
+					class Shock
+					{
+						damage=0.85000002;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.70999998;
+					};
+					class Blood
+					{
+						damage=0.70999998;
+					};
+					class Shock
+					{
+						damage=0.85000002;
+					};
+				};
+			};
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\tops\SRP_Rolled_Shirt_m.p3d";
+			female="Survivalists_Mods\characters\tops\SRP_Rolled_Shirt_f.p3d";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 };
