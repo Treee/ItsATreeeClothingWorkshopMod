@@ -46,5 +46,23 @@ class CfgVehicles
 			male="Survivalists_Mods\characters\accessories\Wedding_Ring_m.p3d";
 			female="Survivalists_Mods\characters\accessories\Wedding_Ring_f.p3d";
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\accessories\data\Wedding_ring.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\accessories\data\Wedding_ring.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\accessories\data\Wedding_ring.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\accessories\data\Wedding_ring.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\accessories\data\Wedding_ring.rvmat"}}
+					};
+				};
+			};
+		};
 	};
 };
