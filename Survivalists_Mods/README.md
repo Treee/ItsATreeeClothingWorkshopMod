@@ -791,6 +791,19 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 - https://freesound.org/people/imagery2/sounds/458570/ (Red alert buzzer)
 - https://freesound.org/people/unfa/sounds/352143/ (clean explosions)
 - https://freesound.org/people/Mr_KeybOred/sounds/372086/ (distant explosions)
+- https://freesound.org/people/deleted_user_6515881/sounds/352764/
+- https://freesound.org/people/MShades/sounds/25916/
+- https://freesound.org/people/ARCHIVES84/sounds/610805/
+- https://freesound.org/people/szegvari/sounds/578142/
+- https://freesound.org/people/djgriffin/sounds/21220/
+- https://freesound.org/people/Timbre/sounds/103539/
+- https://freesound.org/people/djgriffin/sounds/591250/
+- https://freesound.org/people/chipfork71/sounds/50087/
+- https://freesound.org/people/waveletaudio/sounds/545718/
+- https://freesound.org/people/waveletaudio/sounds/543951/
+- https://freesound.org/people/szegvari/sounds/609180/
+- https://freesound.org/people/zagi2/sounds/223377/
+- https://freesound.org/people/tc630/sounds/349490/
 
 # Wishlist
 
