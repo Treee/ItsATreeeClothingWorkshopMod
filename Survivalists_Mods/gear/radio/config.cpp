@@ -1155,5 +1155,26 @@ class CfgVehicles
 			soundSet="SRPRadio_ShortStory_IbargiooftheGreatWesternWoods_SoundSet1";
 		};
 	};
+
+  class SRPRadio_CassetteTape_ShortStory_MissleDynamics: SRPRadio_CassetteTape_ShortStory_Base
+	{
+		scope=2;
+		displayName="Missle  Dynamics";
+		descriptionShort="Espen Industries - How a missle works.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ShortStory_MissleDynamics_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_ShortStory_TechJargon: SRPRadio_CassetteTape_ShortStory_Base
+	{
+		scope=2;
+		displayName="Innovation";
+		descriptionShort="Espen Industries - New release of retro encabulator.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ShortStory_TechJargon_SoundSet1";
+		};
+	};
   
 };
