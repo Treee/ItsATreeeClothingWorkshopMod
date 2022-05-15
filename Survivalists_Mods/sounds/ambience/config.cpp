@@ -23,13 +23,13 @@ class CfgSoundShaders
 		range=1000;
 		rangeCurve[]=
 		{
-			{50,0.75},
-			{250,0.5},
-			{500,0.30000001},
-			{750,0.30001},
-			{1000,0.1}
+			{100,0.998},
+			{250,0.75},
+			{500,0.50},
+			{750,0.45},
+			{1000,0.3332}
 		};
-		volume=1;
+		volume=1.2;
 	};
 	class Survivalists_Mods_Ambience_Chanting1_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
 	{
