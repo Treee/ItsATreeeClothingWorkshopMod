@@ -2856,6 +2856,24 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\srp_Sweater_Green_CO.paa"
 		};
 	};
+  class SRP_Sweater_Cream: SRP_Sweater_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_Sweater_Cream_CO.paa"
+		};
+	};
+  class SRP_Sweater_Burgundy: SRP_Sweater_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.85;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_Sweater_Burgundy_CO.paa"
+		};
+	};
 
   class SRP_Rolled_Shirt_Gray_Plaid: SRP_Rolled_Shirt_ColorBase
 	{
