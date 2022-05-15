@@ -764,6 +764,16 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Maximus Helmet" (https://skfb.ly/o7oYq) by Arthur Krut is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "SciFi Light 11" (https://skfb.ly/6nBPv) by inuhitman is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+- "SciFi Light 12" (https://skfb.ly/6nBPw) by inuhitman is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+- "SciFi Light 13" (https://skfb.ly/6nBPB) by inuhitman is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+- "SciFi Light 15" (https://skfb.ly/6nBPF) by inuhitman is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+- "Light Saber" (https://skfb.ly/ot8Ey) by Umut Calim is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

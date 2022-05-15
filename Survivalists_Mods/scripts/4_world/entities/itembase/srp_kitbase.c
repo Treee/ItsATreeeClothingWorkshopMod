@@ -145,7 +145,6 @@ class SRP_WindowBarricade_Wood_Kit extends SRP_KitBase{};
 class SRP_WindowBarricadeTall_Wood_Kit extends SRP_KitBase{};
 class SRP_SpikeBarricade_Wood_Kit extends SRP_KitBase{};
 
-
 // non craftable kits
 class SRP_PostBox_Kit extends SRP_KitBase{};
 class SRP_PostBoxBlue_Kit extends SRP_KitBase{};
@@ -416,3 +415,4 @@ class SRP_WeaponLongBarrel_Kit extends SRP_IntermediateCraftingKitBase
 };
 class SRP_WeaponMediumBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 class SRP_WeaponShortBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
+

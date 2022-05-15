@@ -1,0 +1,18 @@
+// base kit, chooses the category
+class SRP_DecorativeLightKit_Kit extends SRP_IntermediateCraftingKitBase{};
+// long light kit, chooses the color
+class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
+
+
+class SRP_DecorativeLight_Long_Colorbase extends SRP_Container_Base{};
+
+class SRP_DecorativeLight_Long_Blue extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_Green extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_LightBlue extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_Orange extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_Pink extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_Purple extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_Rainbow extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_Red extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_Yellow extends SRP_DecorativeLight_Long_Colorbase{};
+class SRP_DecorativeLight_Long_White extends SRP_DecorativeLight_Long_Colorbase{};

@@ -9,6 +9,7 @@ modded class PluginRecipesManager
     //---------Deconstruct Items into Kits
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
     RegisterRecipe(new Deconstruct_RockPile);
+    RegisterRecipe(new Deconstruct_LightKits);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit_BuildingFrame);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit_StreetSign);     
