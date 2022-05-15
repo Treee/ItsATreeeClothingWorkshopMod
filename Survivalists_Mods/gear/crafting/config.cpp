@@ -899,6 +899,31 @@ class CfgVehicles
 			"Survivalists_Mods\gear\crafting\data\wooden_case_textiles_co.paa"
 		};
 	};
+  class SRP_ClothingVestsPouches_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Clothing Kit - Pouches";
+		descriptionShort="A kit with the appropriate materials to make vest pouches.";
+    attachments[]=
+    {
+      "SRP_SewingThread1",
+      "SRP_SewingThread2",
+      "SRP_SewingThread3",
+      "SRP_SewingThread4",
+      "SRP_SewingThread5",
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
+      "Rope",
+      "Rags"
+    };
+    hiddenSelections[]={"camoground"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\wooden_case_textiles_co.paa"
+		};
+	};
 
   //------------- Machining
   class SRP_LatheWorkbench_Kit: SRP_KitBase 

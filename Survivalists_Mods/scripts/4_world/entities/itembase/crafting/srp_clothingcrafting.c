@@ -74,5 +74,5 @@ class SRP_ClothingGloves_Kit extends SRP_IntermediateClothingKitBase{};
 class SRP_ClothingHeadgear_Kit extends SRP_IntermediateClothingKitBase{};
 class SRP_ClothingMasks_Kit extends SRP_IntermediateClothingKitBase{};
 class SRP_ClothingPants_Kit extends SRP_IntermediateClothingKitBase{};
-class SRP_ClothingTops_Kit extends SRP_IntermediateClothingKitBase{};
 class SRP_ClothingVests_Kit extends SRP_IntermediateClothingKitBase{};
+class SRP_ClothingVestsPouches_Kit extends SRP_IntermediateClothingKitBase{};
