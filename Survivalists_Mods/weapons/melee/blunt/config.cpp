@@ -34,7 +34,6 @@ class CfgVehicles
 		itemSize[]={2,4};
 	};
 
-
   class SRP_WeaponBluntMacerator_Kit: SRP_KitBase //new
 	{
 		scope=2;
