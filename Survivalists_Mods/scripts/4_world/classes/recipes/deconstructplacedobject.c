@@ -851,7 +851,7 @@ class Deconstruct_RockPile extends RecipeBase
 	}
 };
 
-class Deconstruct_LightKits extends RecipeBase
+class Deconstruct_ObjectIntoKitBase extends RecipeBase
 {	
 	override void Init()
 	{
@@ -867,7 +867,7 @@ class Deconstruct_LightKits extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = 3;//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
@@ -876,7 +876,7 @@ class Deconstruct_LightKits extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1 add any item that has a kit in this list so it can be dismantled.		
-    InsertIngredient(0,"SRP_DecorativeLight_Long_Colorbase");
+    // InsertIngredient(0,"SRP_DecorativeLight_Long_Colorbase");
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
@@ -898,7 +898,7 @@ class Deconstruct_LightKits extends RecipeBase
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-    AddResult("SRP_DecorativeLight_LongKit_Kit");//add results here
+    // AddResult("SRP_DecorativeLight_LongKit_Kit");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
@@ -917,6 +917,43 @@ class Deconstruct_LightKits extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		Debug.Log("SRP_DecorativeLight_LongKit_Kit: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
+		Debug.Log("Deconstruct_ObjectIntoKitBase: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
+	}
+};
+
+class Deconstruct_DecorativeLight_Long extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();		
+    InsertIngredient(0,"SRP_DecorativeLight_Long_Colorbase");
+    AddResult("SRP_DecorativeLight_LongKit_Kit");//add results here
+	}
+}
+class Deconstruct_DecorativeLight_Flat extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();		
+    InsertIngredient(0,"SRP_DecorativeLight_Flat_Colorbase");
+    AddResult("SRP_DecorativeLight_FlatKit_Kit");//add results here
+	}
+};
+class Deconstruct_DecorativeLight_LongFancy extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();		
+    InsertIngredient(0,"SRP_DecorativeLight_LongFancy_Colorbase");
+    AddResult("SRP_DecorativeLight_LongFancyKit_Kit");//add results here
+	}
+};
+class Deconstruct_DecorativeLight_Corner extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();		
+    InsertIngredient(0,"SRP_DecorativeLight_Corner_Colorbase");
+    AddResult("SRP_DecorativeLight_CornerKit_Kit");//add results here
 	}
 };
