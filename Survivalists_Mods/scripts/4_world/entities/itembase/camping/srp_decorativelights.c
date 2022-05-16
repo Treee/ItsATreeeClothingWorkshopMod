@@ -5,7 +5,6 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
 
 
 class SRP_DecorativeLight_Long_Colorbase extends SRP_Container_Base{};
-
 class SRP_DecorativeLight_Long_Blue extends SRP_DecorativeLight_Long_Colorbase{};
 class SRP_DecorativeLight_Long_Green extends SRP_DecorativeLight_Long_Colorbase{};
 class SRP_DecorativeLight_Long_LightBlue extends SRP_DecorativeLight_Long_Colorbase{};
@@ -16,3 +15,46 @@ class SRP_DecorativeLight_Long_Rainbow extends SRP_DecorativeLight_Long_Colorbas
 class SRP_DecorativeLight_Long_Red extends SRP_DecorativeLight_Long_Colorbase{};
 class SRP_DecorativeLight_Long_Yellow extends SRP_DecorativeLight_Long_Colorbase{};
 class SRP_DecorativeLight_Long_White extends SRP_DecorativeLight_Long_Colorbase{};
+
+
+class SRP_DecorativeLight_FlatKit_Kit extends SRP_IntermediateCraftingKitBase{};
+
+class SRP_DecorativeLight_Flat_Colorbase extends SRP_Container_Base{};
+class SRP_DecorativeLight_Flat_Blue extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_Green extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_LightBlue extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_Orange extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_Pink extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_Purple extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_Rainbow extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_Red extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_Yellow extends SRP_DecorativeLight_Flat_Colorbase{};
+class SRP_DecorativeLight_Flat_White extends SRP_DecorativeLight_Flat_Colorbase{};
+
+class SRP_DecorativeLight_LongFancyKit_Kit extends SRP_IntermediateCraftingKitBase{};
+
+class SRP_DecorativeLight_LongFancy_Colorbase extends SRP_Container_Base{};
+class SRP_DecorativeLight_LongFancy_Blue extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_Green extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_LightBlue extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_Orange extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_Pink extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_Purple extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_Rainbow extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_Red extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_Yellow extends SRP_DecorativeLight_LongFancy_Colorbase{};
+class SRP_DecorativeLight_LongFancy_White extends SRP_DecorativeLight_LongFancy_Colorbase{};
+
+class SRP_DecorativeLight_CornerKit_Kit extends SRP_IntermediateCraftingKitBase{};
+
+class SRP_DecorativeLight_Corner_Colorbase extends SRP_Container_Base{};
+class SRP_DecorativeLight_Corner_Blue extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_Green extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_LightBlue extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_Orange extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_Pink extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_Purple extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_Rainbow extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_Red extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_Yellow extends SRP_DecorativeLight_Corner_Colorbase{};
+class SRP_DecorativeLight_Corner_White extends SRP_DecorativeLight_Corner_Colorbase{};
