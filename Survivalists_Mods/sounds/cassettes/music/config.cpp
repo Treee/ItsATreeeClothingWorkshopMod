@@ -240,6 +240,29 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\Lepa Brena - Hej Seki Seki.ogg",1}
 		};
 	};
+
+  class SRPRadio_TheFightingSide_BadMan_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[] =
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\THE_FIGHTING_SIDE-BAD_MAN.ogg",1}
+		};
+	};
+	class SRPRadio_TheFightingSide_Hymns_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[] =
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\THE_FIGHTING_SIDE-HYMNS.ogg",1}
+		};
+	};
+	class SRPRadio_TheFightingSide_SomethingFamiliar_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[] =
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\THE_FIGHTING_SIDE-SOMETHING_FAMILIAR.ogg",1}
+		};
+	};
+
 };
 
 class CfgSoundSets
@@ -459,6 +482,28 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"SRPRadio_HejSekiSeki_Shader1"
+		};
+	};
+
+  class SRPRadio_TheFightingSide_BadMan_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_TheFightingSide_BadMan_Shader1"
+		};
+	};
+	class SRPRadio_TheFightingSide_Hymns_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_TheFightingSide_Hymns_Shader1"
+		};
+	};
+	class SRPRadio_TheFightingSide_SomethingFamiliar_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_TheFightingSide_SomethingFamiliar_Shader1"
 		};
 	};
 };

@@ -696,6 +696,37 @@ class CfgVehicles
 		};
 	};
 
+  class SRPRadio_CassetteTape_TheFightingSide_BadMan: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Bad Man";
+		descriptionShort="Music Tape - Credit | The Fighting Side";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_TheFightingSide_BadMan_SoundSet1";
+		};
+	};
+	class SRPRadio_CassetteTape_TheFightingSide_Hymns: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Hymns";
+		descriptionShort="Music Tape - Credit | The Fighting Side";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_TheFightingSide_Hymns_SoundSet1";
+		};
+	};
+	class SRPRadio_CassetteTape_TheFightingSide_SomethingFamiliar: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Something Familiar";
+		descriptionShort="Music Tape - Credit | The Fighting Side";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_TheFightingSide_SomethingFamiliar_SoundSet1";
+		};
+	};
+
   // -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base
 	{
