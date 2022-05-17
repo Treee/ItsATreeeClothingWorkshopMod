@@ -1673,7 +1673,7 @@ class CfgVehicles
     };
   };
 
-  //============================================== DECORATIVE LIGHTS
+//============================================== DECORATIVE LIGHTS
 
   class SRP_DecorativeLightKit_Kit: SRP_KitBase
 	{
@@ -1845,6 +1845,169 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_VerticalLongKit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_Colorbase: Inventory_Base
+	{
+		scope=0;
+		displayName="Decorative Light - Vertical Long";
+		descriptionShort="This is a decorative light that is long and veritcal.";
+		model="Survivalists_Mods\gear\camping\srp_decorativelightlongvertical.p3d";
+		carveNavmesh=1;
+		weight=1500;
+		itemSize[]={3,2};
+    itemCargoSize[]={0,0};
+    isTakeable=0;
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlong.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlong.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlong.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlong.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlong.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_Blue: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Blue";
+    color="Blue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_blue_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_Green: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Green";
+    color="Green";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_green_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_LightBlue: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Light Blue";
+    color="LightBlue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_lightblue_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_Orange: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Orange";
+    color="Orange";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_orange_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_Pink: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Pink";
+    color="Pink";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_pink_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_Purple: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Purple";
+    color="Purple";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_purple_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_Rainbow: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Rainbow";
+    color="Rainbow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_rainbow_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_Red: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Red";
+    color="Red";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_red_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_Yellow: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Yellow";
+    color="Yellow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlong_yellow_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLong_White: SRP_DecorativeLight_VerticalLong_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long White";
+    color="White";    
+	};
+
   class SRP_DecorativeLight_FlatKit_Kit: SRP_KitBase
 	{
 		scope=2;
@@ -2008,6 +2171,168 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_VerticalFlatKit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_Colorbase: Inventory_Base
+	{
+		scope=0;
+		displayName="Decorative Light - Vertical Flat";
+		descriptionShort="This is a decorative light that is flat and vertical.";
+		model="Survivalists_Mods\gear\camping\srp_decorativelightflatvertical.p3d";
+		carveNavmesh=1;
+		weight=1500;
+		itemSize[]={3,2};
+    itemCargoSize[]={0,0};
+    isTakeable=0;
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightflat.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightflat.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightflat.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightflat.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightflat.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_Blue: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Blue";
+    color="Blue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_blue_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_Green: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Green";
+    color="Green";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_green_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_LightBlue: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Light Blue";
+    color="LightBlue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_lightblue_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_Orange: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Orange";
+    color="Orange";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_orange_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_Pink: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Pink";
+    color="Pink";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_pink_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_Purple: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Purple";
+    color="Purple";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_purple_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_Rainbow: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Rainbow";
+    color="Rainbow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_rainbow_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_Red: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Red";
+    color="Red";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_red_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_Yellow: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat Yellow";
+    color="Yellow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightflat_yellow_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalFlat_White: SRP_DecorativeLight_VerticalFlat_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Flat White";
+    color="White";    
+	};
 
   class SRP_DecorativeLight_LongFancyKit_Kit: SRP_KitBase
 	{
@@ -2172,18 +2497,180 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_VerticalLongFancyKit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Fancy Long";
+		descriptionShort="Espen Industries. A placeable decorative fancy light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Colorbase: Inventory_Base
+	{
+		scope=0;
+		displayName="Decorative Light - Long Fancy";
+		descriptionShort="This is a decorative light that is vertical, long and fancy.";
+		model="Survivalists_Mods\gear\camping\srp_decorativelightlongfancyvertical.p3d";
+		carveNavmesh=1;
+		weight=1500;
+		itemSize[]={3,2};
+    itemCargoSize[]={0,0};
+    isTakeable=0;
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Blue: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Blue";
+    color="Blue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_blue_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Green: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Green";
+    color="Green";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_green_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_LightBlue: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Light Blue";
+    color="LightBlue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_lightblue_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Orange: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Orange";
+    color="Orange";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_orange_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Pink: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Pink";
+    color="Pink";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_pink_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Purple: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Purple";
+    color="Purple";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_purple_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Rainbow: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Rainbow";
+    color="Rainbow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_rainbow_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Red: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Red";
+    color="Red";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_red_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Yellow: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy Yellow";
+    color="Yellow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightlongfancy_yellow_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_White: SRP_DecorativeLight_VerticalLongFancy_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Vertical Long Fancy White";
+    color="White";    
+	};
 
   class SRP_DecorativeLight_CornerKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Corner";
-		descriptionShort="Espen Industries. A placeable decorative fancy light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A placeable decorative corner light kit. When built you can light up small areas.";
 	};
   class SRP_DecorativeLight_Corner_Colorbase: Inventory_Base
 	{
 		scope=0;
-		displayName="Decorative Light - Long Fancy";
-		descriptionShort="This is a decorative light that is long and fancy.";
+		displayName="Decorative Light - Corner";
+		descriptionShort="This is a decorative light that fits in a corner.";
 		model="Survivalists_Mods\gear\camping\srp_decorativelightcorner.p3d";
 		carveNavmesh=1;
 		weight=1500;
@@ -2336,7 +2823,170 @@ class CfgVehicles
     color="White";    
 	};
 
-  //----------------------------------- Playing/Trading Cards
+  class SRP_DecorativeLight_HorizontalCornerKit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner";
+		descriptionShort="Espen Industries. A placeable decorative corner light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Colorbase: Inventory_Base
+	{
+		scope=0;
+		displayName="Decorative Light - Horizontal Corner";
+		descriptionShort="This is a decorative light that fits in a corner.";
+		model="Survivalists_Mods\gear\camping\srp_decorativelightcornerhorizontal.p3d";
+		carveNavmesh=1;
+		weight=1500;
+		itemSize[]={3,2};
+    itemCargoSize[]={0,0};
+    isTakeable=0;
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Blue: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Blue";
+    color="Blue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_blue_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Green: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Green";
+    color="Green";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_green_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_LightBlue: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Light Blue";
+    color="LightBlue";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_lightblue_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Orange: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Orange";
+    color="Orange";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_orange_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Pink: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Pink";
+    color="Pink";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_pink_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Purple: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Purple";
+    color="Purple";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_purple_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Rainbow: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Rainbow";
+    color="Rainbow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_rainbow_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Red: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Red";
+    color="Red";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_red_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Yellow: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner Yellow";
+    color="Yellow";
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_decorativelightcorner_yellow_co.paa"
+		};
+	};
+  class SRP_DecorativeLight_HorizontalCorner_White: SRP_DecorativeLight_HorizontalCorner_Colorbase
+	{
+		scope=2;
+		displayName="Decorative Light - Horizontal Corner White";
+    color="White";    
+	};
+
+//----------------------------------- Playing/Trading Cards
   class SRP_DeckOfCards: Inventory_Base  // new
 	{
 		scope=2;
