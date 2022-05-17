@@ -486,7 +486,7 @@ class CfgVehicles
 		varQuantityInit=200;
 		varQuantityMin=0;
 		varQuantityMax=200;
-		quantityBar=1;
+    canBeSplit=1;
     inventorySlot[]=
     {
       "SRP_SewingThread1",
