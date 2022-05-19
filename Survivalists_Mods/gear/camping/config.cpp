@@ -1680,13 +1680,19 @@ class CfgVehicles
 		scope=2;
 		displayName="Decorative Light Kit";
 		descriptionShort="Espen Industries. The foundation of a decorative light kit - Still needs a bit of work to make something specific.";
+    attachments[]=
+		{	
+      "Lightbulb",
+			"LargeBattery",
+      "Material_MetalWire"
+		};
 	};
 
   class SRP_DecorativeLight_LongKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Long";
-		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
 	};
   class SRP_DecorativeLight_Long_Colorbase: Inventory_Base
 	{
@@ -1845,11 +1851,72 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_Long_Blue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_Green_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Green";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_LightBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Light Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_Orange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Orange";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_Pink_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Pink";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_Purple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Purple";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_Rainbow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Rainbow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Red";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_Yellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Yellow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Long_White_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long White";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+
   class SRP_DecorativeLight_VerticalLongKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Vertical Long";
-		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
 	};
   class SRP_DecorativeLight_VerticalLong_Colorbase: Inventory_Base
 	{
@@ -2008,11 +2075,73 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_VerticalLong_Blue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_Green_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Green";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_LightBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Light Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_Orange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Orange";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_Pink_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Pink";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_Purple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Purple";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_Rainbow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Rainbow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Red";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_Yellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Yellow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLong_White_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long White";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+
+
   class SRP_DecorativeLight_FlatKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Flat";
-		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
 	};
   class SRP_DecorativeLight_Flat_Colorbase: Inventory_Base
 	{
@@ -2171,11 +2300,73 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_Flat_Blue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Blue";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
+	};
+  class SRP_DecorativeLight_Flat_Green_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Green";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Flat_LightBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Light Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Flat_Orange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Orange";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Flat_Pink_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Pink";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Flat_Purple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Purple";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Flat_Rainbow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Rainbow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Flat_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Red";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Flat_Yellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat Yellow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Flat_White_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Flat White";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+
+
   class SRP_DecorativeLight_VerticalFlatKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Vertical Flat";
-		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
 	};
   class SRP_DecorativeLight_VerticalFlat_Colorbase: Inventory_Base
 	{
@@ -2332,13 +2523,74 @@ class CfgVehicles
 		scope=2;
 		displayName="Decorative Light - Vertical Flat White";
     color="White";    
+	};  
+
+  class SRP_DecorativeLight_VerticalFlat_Blue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Blue";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_Green_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Green";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_LightBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Light Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_Orange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Orange";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_Pink_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Pink";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_Purple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Purple";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_Rainbow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Rainbow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Red";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_Yellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat Yellow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalFlat_White_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Flat White";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
 	};
 
   class SRP_DecorativeLight_LongFancyKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Fancy Long";
-		descriptionShort="Espen Industries. A placeable decorative fancy light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
 	};
   class SRP_DecorativeLight_LongFancy_Colorbase: Inventory_Base
 	{
@@ -2497,11 +2749,72 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_LongFancy_Blue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_Green_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Green";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_LightBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Light Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_Orange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Orange";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_Pink_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Pink";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_Purple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Purple";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_Rainbow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Rainbow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Red";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_Yellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy Yellow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_LongFancy_White_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Long Fancy White";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+
   class SRP_DecorativeLight_VerticalLongFancyKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Vertical Fancy Long";
-		descriptionShort="Espen Industries. A placeable decorative fancy light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
 	};
   class SRP_DecorativeLight_VerticalLongFancy_Colorbase: Inventory_Base
 	{
@@ -2660,11 +2973,72 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_VerticalLongFancy_Blue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Green_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Green";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_LightBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Light Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Orange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Orange";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Pink_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Pink";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Purple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Purple";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Rainbow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Rainbow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Red";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_Yellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy Yellow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_VerticalLongFancy_White_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Vertical Long Fancy White";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+
   class SRP_DecorativeLight_CornerKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Corner";
-		descriptionShort="Espen Industries. A placeable decorative corner light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
 	};
   class SRP_DecorativeLight_Corner_Colorbase: Inventory_Base
 	{
@@ -2823,11 +3197,72 @@ class CfgVehicles
     color="White";    
 	};
 
+  class SRP_DecorativeLight_Corner_Blue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_Green_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Green";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_LightBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Light Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_Orange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Orange";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_Pink_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Pink";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_Purple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Purple";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_Rainbow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Rainbow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Red";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_Yellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner Yellow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_Corner_White_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Corner White";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+
   class SRP_DecorativeLight_HorizontalCornerKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Decorative Light Kit - Horizontal Corner";
-		descriptionShort="Espen Industries. A placeable decorative corner light kit. When built you can light up small areas.";
+		descriptionShort="Espen Industries. A light kit that needs a some more work to complete.";
 	};
   class SRP_DecorativeLight_HorizontalCorner_Colorbase: Inventory_Base
 	{
@@ -2984,6 +3419,67 @@ class CfgVehicles
 		scope=2;
 		displayName="Decorative Light - Horizontal Corner White";
     color="White";    
+	};
+
+  class SRP_DecorativeLight_HorizontalCorner_Blue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Green_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Green";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_LightBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Light Blue";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Orange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Orange";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Pink_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Pink";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Purple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Purple";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Rainbow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Rainbow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Red";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_Yellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner Yellow";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
+	};
+  class SRP_DecorativeLight_HorizontalCorner_White_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Decorative Light Kit - Horizontal Corner White";
+		descriptionShort="Espen Industries. A placeable decorative light kit. When built you can light up small areas.";
 	};
 
 //----------------------------------- Playing/Trading Cards

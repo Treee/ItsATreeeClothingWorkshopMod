@@ -867,8 +867,8 @@ class Deconstruct_ObjectIntoKitBase extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = 3;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
@@ -929,7 +929,16 @@ class Deconstruct_DecorativeLight_Long extends Deconstruct_ObjectIntoKitBase
     InsertIngredient(0,"SRP_DecorativeLight_Long_Colorbase");
     AddResult("SRP_DecorativeLight_LongKit_Kit");//add results here
 	}
-}
+};
+class Deconstruct_DecorativeLight_VerticalLong extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();		
+    InsertIngredient(0,"SRP_DecorativeLight_VerticalLong_Colorbase");
+    AddResult("SRP_DecorativeLight_VerticalLongKit_Kit");//add results here
+	}
+};
 class Deconstruct_DecorativeLight_Flat extends Deconstruct_ObjectIntoKitBase
 {	
 	override void Init()
@@ -937,6 +946,15 @@ class Deconstruct_DecorativeLight_Flat extends Deconstruct_ObjectIntoKitBase
     super.Init();		
     InsertIngredient(0,"SRP_DecorativeLight_Flat_Colorbase");
     AddResult("SRP_DecorativeLight_FlatKit_Kit");//add results here
+	}
+};
+class Deconstruct_DecorativeLight_VerticalFlat extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();		
+    InsertIngredient(0,"SRP_DecorativeLight_VerticalFlat_Colorbase");
+    AddResult("SRP_DecorativeLight_VerticalFlatKit_Kit");//add results here
 	}
 };
 class Deconstruct_DecorativeLight_LongFancy extends Deconstruct_ObjectIntoKitBase
@@ -948,6 +966,15 @@ class Deconstruct_DecorativeLight_LongFancy extends Deconstruct_ObjectIntoKitBas
     AddResult("SRP_DecorativeLight_LongFancyKit_Kit");//add results here
 	}
 };
+class Deconstruct_DecorativeLight_VerticalLongFancy extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();		
+    InsertIngredient(0,"SRP_DecorativeLight_VerticalLongFancy_Colorbase");
+    AddResult("SRP_DecorativeLight_VerticalLongFancyKit_Kit");//add results here
+	}
+};
 class Deconstruct_DecorativeLight_Corner extends Deconstruct_ObjectIntoKitBase
 {	
 	override void Init()
@@ -955,5 +982,14 @@ class Deconstruct_DecorativeLight_Corner extends Deconstruct_ObjectIntoKitBase
     super.Init();		
     InsertIngredient(0,"SRP_DecorativeLight_Corner_Colorbase");
     AddResult("SRP_DecorativeLight_CornerKit_Kit");//add results here
+	}
+};
+class Deconstruct_DecorativeLight_HorizontalCorner extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();		
+    InsertIngredient(0,"SRP_DecorativeLight_HorizontalCorner_Colorbase");
+    AddResult("SRP_DecorativeLight_HorizontalCornerKit_Kit");//add results here
 	}
 };

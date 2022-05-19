@@ -99,7 +99,7 @@ class CfgVehicles
   // --- taxidermy
   class Pelt_Base: Inventory_Base
   {
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "AnimalPelt1",
       "AnimalPelt2",
@@ -117,10 +117,8 @@ class CfgVehicles
   // drug workbench
   class HeadlightH7: Inventory_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
-			"Reflector_1_1",
-			"Reflector_2_1",
       "Lightbulb"
 		};
 	};
@@ -1379,11 +1377,11 @@ class CfgVehicles
 		itemSize[]={2,2};
 		itemBehaviour=1;
 		canBeSplit=1;
-		varQuantityInit=50;
+		varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=100;
+		varQuantityMax=200;
 		varQuantityDestroyOnMin=1;
-		varStackMax=100;
+		varStackMax=200;
 		inventorySlot[]=
     {
       "SRP_DyeBottle1",

@@ -11,9 +11,13 @@ modded class PluginRecipesManager
     RegisterRecipe(new Deconstruct_RockPile);
 
     RegisterRecipe(new Deconstruct_DecorativeLight_Long);
+    RegisterRecipe(new Deconstruct_DecorativeLight_VerticalLong);
     RegisterRecipe(new Deconstruct_DecorativeLight_Flat);
+    RegisterRecipe(new Deconstruct_DecorativeLight_VerticalFlat);
     RegisterRecipe(new Deconstruct_DecorativeLight_LongFancy);
+    RegisterRecipe(new Deconstruct_DecorativeLight_VerticalLongFancy);
     RegisterRecipe(new Deconstruct_DecorativeLight_Corner);
+    RegisterRecipe(new Deconstruct_DecorativeLight_HorizontalCorner);
     
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
     RegisterRecipe(new Deconstruct_IntermediaryObjectKit_BuildingFrame);
