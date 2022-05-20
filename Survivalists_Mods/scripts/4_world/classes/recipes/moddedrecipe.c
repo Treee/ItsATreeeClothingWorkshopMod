@@ -30,6 +30,7 @@ modded class PluginRecipesManager
     RegisterRecipe(new Deconstruct_IntermediaryBarricadeKit);
     RegisterRecipe(new Deconstruct_IntermediaryStreetLightKit);
     RegisterRecipe(new Deconstruct_IntermediaryWoodenFurnitureKit);
+    RegisterRecipe(new Deconstruct_IntermediaryObjectKit_Barrels);
    
     RegisterRecipe(new SawWoodenLog_Irradiated);
     RegisterRecipe(new SplitLongWoodenStick_Irradiated);

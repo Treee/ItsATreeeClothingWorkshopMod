@@ -2358,6 +2358,19 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_MetalBarrelKit_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Metal Barrel Kit";
+		descriptionShort="A Metal Barrel Kit";
+    attachments[]=
+    {
+      "Material_Nails",
+      "Material_MetalSheets",
+      "Material_MetalWire"
+    };
+	};
+
   class SRP_MetalBarrel_Old_Kit: SRP_KitBase // new
 	{
 		scope=2;

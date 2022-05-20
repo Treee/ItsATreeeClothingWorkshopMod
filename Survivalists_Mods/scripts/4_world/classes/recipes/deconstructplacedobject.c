@@ -57,12 +57,6 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"SRP_Furniture_OldWoodenChair");
     InsertIngredient(0,"SRP_Furniture_WoodenChair");
 
-    InsertIngredient(0,"SRP_MetalBarrel_Old");
-    InsertIngredient(0,"SRP_MetalBarrel_Blue");
-    InsertIngredient(0,"SRP_MetalBarrel_Red");
-    InsertIngredient(0,"SRP_MetalBarrel_Yellow");
-    InsertIngredient(0,"SRP_MetalBarrel_Concrete");
-
     InsertIngredient(0,"SRP_HangingWoodenSign");
 
     InsertIngredient(0,"SRP_StoneForgeWorkbench");
@@ -557,5 +551,19 @@ class Deconstruct_IntermediaryObjectKit_StreetSign extends Deconstruct_ObjectInt
 		InsertIngredient(0,"SRP_StreetSign_Caution");
 
 		AddResult("SRP_StreetSign_Kit");//add results here
+	}
+};
+class Deconstruct_IntermediaryObjectKit_Barrels extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();
+    InsertIngredient(0,"SRP_MetalBarrel_Old");
+    InsertIngredient(0,"SRP_MetalBarrel_Blue");
+    InsertIngredient(0,"SRP_MetalBarrel_Red");
+    InsertIngredient(0,"SRP_MetalBarrel_Yellow");
+    InsertIngredient(0,"SRP_MetalBarrel_Concrete");
+
+		AddResult("SRP_MetalBarrelKit_Kit");//add results here
 	}
 };
