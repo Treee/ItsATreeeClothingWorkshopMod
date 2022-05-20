@@ -415,33 +415,75 @@ class SRP_MilitaryCaseLarge extends SRP_Container_Base{};
 class SRP_MilitaryCaseLong extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongBlue extends SRP_Container_Base{};
 class SRP_MilitaryCaseLongTan extends SRP_Container_Base{};
-class SRP_BarricadeMetal extends SRP_Container_Base{};
 class SRP_ComputerTerminal extends SRP_Container_Base{};
 class SRP_ComputerTerminalSlim extends SRP_Container_Base{};
 class SRP_ComputerTerminalWide extends SRP_Container_Base{};
 
-class SRP_StreetSign_Base extends SRP_Container_Base{};
-class SRP_StreetSign_Caution extends SRP_Container_Base{};
-class SRP_StreetSign_CautionBiohazard extends SRP_Container_Base{};
-class SRP_StreetSign_NoSmoking extends SRP_Container_Base{};
-class SRP_StreetSign_Handicap extends SRP_Container_Base{};
-class SRP_StreetSign_NoParking extends SRP_Container_Base{};
-class SRP_StreetSign_Yield extends SRP_Container_Base{};
-class SRP_StreetSign_Pedestrians extends SRP_Container_Base{};
-class SRP_StreetSign_NoBikes extends SRP_Container_Base{};
-class SRP_StreetSign_NoLeftTurn extends SRP_Container_Base{};
-class SRP_StreetSign_SpeedLimit extends SRP_Container_Base{};
-class SRP_StreetSign_BikePath extends SRP_Container_Base{};
-class SRP_StreetSign_OneWay extends SRP_Container_Base{};
-class SRP_StreetSign_HandicapSmall extends SRP_Container_Base{};
-class SRP_StreetSign_Highway extends SRP_Container_Base{};
-class SRP_HangingWoodenSign extends SRP_Container_Base{};
+class SRP_StreetSign_Base extends SRP_Container_Base
+{
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+};
+class SRP_StreetSign_Caution extends SRP_StreetSign_Base{};
+class SRP_StreetSign_CautionBiohazard extends SRP_StreetSign_Base{};
+class SRP_StreetSign_NoSmoking extends SRP_StreetSign_Base{};
+class SRP_StreetSign_Handicap extends SRP_StreetSign_Base{};
+class SRP_StreetSign_NoParking extends SRP_StreetSign_Base{};
+class SRP_StreetSign_Yield extends SRP_StreetSign_Base{};
+class SRP_StreetSign_Pedestrians extends SRP_StreetSign_Base{};
+class SRP_StreetSign_NoBikes extends SRP_StreetSign_Base{};
+class SRP_StreetSign_NoLeftTurn extends SRP_StreetSign_Base{};
+class SRP_StreetSign_SpeedLimit extends SRP_StreetSign_Base{};
+class SRP_StreetSign_BikePath extends SRP_StreetSign_Base{};
+class SRP_StreetSign_OneWay extends SRP_StreetSign_Base{};
+class SRP_StreetSign_HandicapSmall extends SRP_StreetSign_Base{};
+class SRP_StreetSign_Highway extends SRP_StreetSign_Base{};
+class SRP_HangingWoodenSign extends SRP_StreetSign_Base{};
 
-class SRP_Barricade_Wood extends SRP_Container_Base{};
-class SRP_BarricadeWithWindow_Wood extends SRP_Container_Base{};
-class SRP_WindowBarricade_Wood extends SRP_Container_Base{};
-class SRP_WindowBarricadeTall_Wood extends SRP_Container_Base{};
-class SRP_SpikeBarricade_Wood extends SRP_Container_Base{};
+class SRP_Barricade_Wood extends SRP_Container_Base
+{
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+};
+class SRP_BarricadeWithWindow_Wood extends SRP_Container_Base
+{
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+};
+class SRP_WindowBarricade_Wood extends SRP_Container_Base
+{
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+};
+class SRP_WindowBarricadeTall_Wood extends SRP_Container_Base
+{
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+};
+class SRP_SpikeBarricade_Wood extends SRP_Container_Base
+{
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+};
+class SRP_BarricadeMetal extends SRP_Container_Base
+{
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+};
 
 class SRP_Furniture_Barrel extends SRP_Container_Base{};
 class SRP_Furniture_BarrelTable extends SRP_Container_Base{};
