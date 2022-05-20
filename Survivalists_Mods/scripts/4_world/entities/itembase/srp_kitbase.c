@@ -410,6 +410,8 @@ class SRP_WeaponLongBarrel_Kit extends SRP_IntermediateCraftingKitBase
 class SRP_WeaponMediumBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 class SRP_WeaponShortBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 
+class SRP_MedicalKit_Kit extends SRP_IntermediateCraftingKitBase{};
+
 class SRP_MetalBarrelKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_MetalBarrel_Old_Kit extends SRP_KitBase{};
 class SRP_MetalBarrel_Blue_Kit extends SRP_KitBase{};

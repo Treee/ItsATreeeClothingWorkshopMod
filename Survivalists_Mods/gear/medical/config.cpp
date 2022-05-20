@@ -59,7 +59,20 @@ class CfgVehicles
       "morphine"
     };
   };
-  //------------------------------------------- CUSTOM STUFF  
+  //------------------------------------------- CUSTOM STUFF
+  class SRP_MedicalKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Medical Component Kit";
+		descriptionShort="A Medical Component Kit";
+    attachments[]=
+    {
+      "Rags",
+      "MedicalBandage",
+      "Disinfectant"
+    };
+	};
+
   class SRP_BandageDressing_Healing: BandageDressing
   {
     scope=2;
