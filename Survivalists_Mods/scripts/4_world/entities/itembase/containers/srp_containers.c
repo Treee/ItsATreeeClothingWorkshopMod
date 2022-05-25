@@ -160,6 +160,18 @@ class SRP_Furniture_LargeLogPile extends SRP_DeployableContainer_Base
 	}
 }
 
+class SRP_SentientCrystal_ColorBase extends SRP_DeployableContainer_Base
+{
+  override bool DisableVicinityIcon()
+  {
+    return true;
+  }
+  override bool CanPutIntoHands (EntityAI parent)
+  {
+    return false;
+  }
+};
+
 class SRP_GiftBoxSmall extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxMedium extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxLarge extends SRP_DeployableContainer_Base{};

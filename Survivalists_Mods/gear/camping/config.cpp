@@ -389,7 +389,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     class DamageSystem
@@ -420,7 +420,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     class DamageSystem
@@ -451,7 +451,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     class DamageSystem
@@ -482,7 +482,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     hiddenSelections[]=
@@ -525,7 +525,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     class DamageSystem
@@ -556,7 +556,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     class DamageSystem
@@ -587,7 +587,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     class DamageSystem
@@ -618,7 +618,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     class DamageSystem
@@ -649,7 +649,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		itemCargoSize[]={0,0};
+		itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		rotationFlags=2;
     class DamageSystem
@@ -1673,6 +1673,30 @@ class CfgVehicles
     };
   };
 
+  class SRP_SentientCrystal_ColorBase: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Unique Crystal";
+		descriptionShort="A large rock with smooth surfaces.";
+		model="Survivalists_Mods\gear\camping\srp_sentientcrystal_large.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemsCargoSize[]={0,0};
+		physLayer="item_large";
+    isTakeable=0;
+    itemBehaviour=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\doormatrug_co.paa"
+    };
+
+	};
+
 //============================================== DECORATIVE LIGHTS
 
   class SRP_DecorativeLightKit_Kit: SRP_KitBase
@@ -1703,7 +1727,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=1500;
 		itemSize[]={3,2};
-    itemCargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     isTakeable=0;
 		rotationFlags=2;
 		hiddenSelections[]=
@@ -1927,7 +1951,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=1500;
 		itemSize[]={3,2};
-    itemCargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     isTakeable=0;
 		rotationFlags=2;
 		hiddenSelections[]=
@@ -2152,7 +2176,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=1500;
 		itemSize[]={3,2};
-    itemCargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     isTakeable=0;
 		rotationFlags=2;
 		hiddenSelections[]=
@@ -2377,7 +2401,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=1500;
 		itemSize[]={3,2};
-    itemCargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     isTakeable=0;
 		rotationFlags=2;
 		hiddenSelections[]=
@@ -2601,7 +2625,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=1500;
 		itemSize[]={3,2};
-    itemCargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     isTakeable=0;
 		rotationFlags=2;
 		hiddenSelections[]=
@@ -2825,7 +2849,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=1500;
 		itemSize[]={3,2};
-    itemCargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     isTakeable=0;
 		rotationFlags=2;
 		hiddenSelections[]=
@@ -3049,7 +3073,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=1500;
 		itemSize[]={3,2};
-    itemCargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     isTakeable=0;
 		rotationFlags=2;
 		hiddenSelections[]=
@@ -3273,7 +3297,7 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=1500;
 		itemSize[]={3,2};
-    itemCargoSize[]={0,0};
+    itemsCargoSize[]={0,0};
     isTakeable=0;
 		rotationFlags=2;
 		hiddenSelections[]=
