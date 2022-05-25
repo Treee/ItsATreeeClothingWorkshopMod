@@ -772,7 +772,7 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "SciFi Light 15" (https://skfb.ly/6nBPF) by inuhitman is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
-- "Light Saber" (https://skfb.ly/ot8Ey) by Umut Calim is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Vintage Slot Machine" (https://skfb.ly/G8Cn) by doomsentinel is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
