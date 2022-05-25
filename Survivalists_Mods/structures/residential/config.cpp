@@ -26,42 +26,41 @@ class CfgVehicles
 		{
 			class Doors1
 			{
+				animPeriod=0.5;
         initPhase=0;
-				// animPeriod=2;
-        // source="user"; // default
 				displayName="door1";
 				component="Doors1";
 				soundPos="doors1_action";
-				initOpened=2;
-				// soundOpen="jmc_crypto_door_stone";
-				// soundClose="jmc_crypto_door_stone";
-        // soundLocked="jmc_crypto_door_stone";
-				// soundOpenABit="jmc_crypto_door_stone";
+				// initOpened=2;
+				soundOpen="srp_slotmachine_actionsound_spinningreels";
+				soundClose="srp_slotmachine_actionsound_pulllever";
+        soundLocked="srp_slotmachine_actionsound_pulllever";
+				soundOpenABit="srp_slotmachine_actionsound_pulllever";
 			};
 		};
-    // class AnimationSources
-    // {
-    //   class lever
-    //   {
-    //       initPhase=0;
-    //       animPeriod=1;
-    //   };
-    //   class spinner1_rotate
-    //   {
-    //       initPhase=0;
-    //       animPeriod=0.5;
-    //   };
-    //   class spinner2_rotate
-    //   {
-    //       initPhase=0;
-    //       animPeriod=0.2;
-    //   };
-    //   class spinner3_rotate
-    //   {
-    //       initPhase=0;
-    //       animPeriod=0.7;
-    //   };
-    // };
+    class AnimationSources
+    {
+      class lever
+      {
+          initPhase=0;
+          animPeriod=1;
+      };
+      class spinner1_rotate
+      {
+          initPhase=0;
+          animPeriod=0.5;
+      };
+      class spinner2_rotate
+      {
+          initPhase=0;
+          animPeriod=0.2;
+      };
+      class spinner3_rotate
+      {
+          initPhase=0;
+          animPeriod=0.7;
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth

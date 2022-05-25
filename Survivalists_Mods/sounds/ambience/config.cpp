@@ -31,6 +31,21 @@ class CfgSoundShaders
 		};
 		volume=1.2;
 	};
+  class Survivalists_Mods_Ambience_Casino_SoundShader_Base
+	{
+		samples[]={};
+		frequency=1;
+		range=100;
+		rangeCurve[]=
+		{
+			{5,0.998},
+			{25,0.75},
+			{50,0.50},
+			{75,0.45},
+			{100,0.3332}
+		};
+		volume=1;
+	};
 	class Survivalists_Mods_Ambience_Chanting1_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
 	{
 		samples[]=
@@ -163,6 +178,43 @@ class CfgSoundShaders
 		samples[]=
 		{
 			{"Survivalists_Mods\sounds\ambience\data\tribal_400605_400809_20780_195313.ogg",1}
+		};
+	};
+
+
+  class Survivalists_Mods_Ambience_Casino_SlotsPayout_SoundShader: Survivalists_Mods_Ambience_Casino_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\slots_payout.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_Casino_SlotsSpinning_SoundShader: Survivalists_Mods_Ambience_Casino_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\slots_spinning.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_Casino_SlotsWinningPayout_SoundShader: Survivalists_Mods_Ambience_Casino_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\slots_winning_payout.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_Casino_SlotsWinning_SoundShader: Survivalists_Mods_Ambience_Casino_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\slots_winning.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_Casino_SlotsResetting_SoundShader: Survivalists_Mods_Ambience_Casino_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\slots_resetting.ogg",1}
 		};
 	};
 };
@@ -301,5 +353,90 @@ class CfgSoundSets
 		{
 			"Survivalists_Mods_Ambience_Tribal2_SoundShader"
 		};
+	};
+
+  class Survivalists_Mods_Ambience_Casino_SlotsPayout_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Casino_SlotsPayout_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Casino_SlotsSpinning_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Casino_SlotsSpinning_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Casino_SlotsWinningPayout_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Casino_SlotsWinningPayout_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Casino_SlotsWinning_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Casino_SlotsWinning_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_Casino_SlotsResetting_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Casino_SlotsResetting_SoundShader"
+		};
+	};
+};
+
+class CfgSounds
+{
+	class default
+	{
+		name="";
+		titles[]={};
+	};
+	class srp_slotmachine_pulllever: default
+	{
+		sound[]=
+		{
+			"Survivalists_Mods\sounds\ambience\data\slots_resetting.ogg",
+			10,
+			1,
+			15
+		};
+	};
+  class srp_slotmachine_spinningreels: default
+	{
+		sound[]=
+		{
+			"Survivalists_Mods\sounds\ambience\data\slots_spinning.ogg",
+			3,
+			1,
+			15
+		};
+	};
+};
+
+class CfgActionSounds
+{
+	class srp_slotmachine_actionsound_pulllever
+	{
+		sounds[]=
+		{
+			"srp_slotmachine_pulllever"
+		};
+		distance=15;
+	};
+  class srp_slotmachine_actionsound_spinningreels
+	{
+		sounds[]=
+		{
+			"srp_slotmachine_spinningreels"
+		};
+		distance=15;
 	};
 };

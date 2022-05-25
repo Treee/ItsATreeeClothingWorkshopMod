@@ -38,5 +38,7 @@ modded class ActionConstructor
 
     actions.Insert(ActionLockDisplayCase);
     actions.Insert(ActionUnLockDisplayCase);
+
+    actions.Insert(ActionPullSlotMachineLever);
 	}
 };

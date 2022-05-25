@@ -816,6 +816,11 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 - https://freesound.org/people/zagi2/sounds/223377/
 - https://freesound.org/people/tc630/sounds/349490/
 
+- https://freesound.org/people/lukaso/sounds/69689/
+- https://freesound.org/people/pierrecartoons1979/sounds/118240/
+- https://freesound.org/people/jack126guy/sounds/361346/
+- https://freesound.org/people/Timbre/sounds/316931/
+
 # Wishlist
 
 - "Armor Set" (https://skfb.ly/oqo8Q) by gimora is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
