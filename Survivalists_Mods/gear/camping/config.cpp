@@ -1675,8 +1675,8 @@ class CfgVehicles
 
   class SRP_SentientCrystal_ColorBase: Inventory_Base  // new
 	{
-		scope=2;
-		displayName="Unique Crystal";
+		scope=0;
+		displayName="The Artifact";
 		descriptionShort="A large rock with smooth surfaces.";
 		model="Survivalists_Mods\gear\camping\srp_sentientcrystal_large.p3d";
 		carveNavmesh=1;
@@ -1694,8 +1694,32 @@ class CfgVehicles
     {
       "Survivalists_Mods\gear\camping\data\doormatrug_co.paa"
     };
-
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_sentientcrystal.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_sentientcrystal.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_sentientcrystal.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_sentientcrystal.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_sentientcrystal.rvmat"}}
+					};
+				};
+			};
+		};
 	};
+
+  class SRP_SentientCrystal_LargeSpaceman: SRP_SentientCrystal_ColorBase
+  {
+		scope=2;
+		displayName="The Artifact";
+		descriptionShort="A large rock with smooth surfaces.";
+  };
 
 //============================================== DECORATIVE LIGHTS
 

@@ -171,6 +171,8 @@ class SRP_SentientCrystal_ColorBase extends SRP_DeployableContainer_Base
     return false;
   }
 };
+class SRP_SentientCrystal_LargeSpaceman extends SRP_SentientCrystal_ColorBase{};
+
 
 class SRP_GiftBoxSmall extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxMedium extends SRP_DeployableContainer_Base{};
