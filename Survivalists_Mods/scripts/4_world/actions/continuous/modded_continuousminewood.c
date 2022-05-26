@@ -13,6 +13,15 @@ modded class CAContinuousMineWood
       }
     }
     super.CreatePrimaryItems(action_data);
+
+    MineActionData adata = MineActionData.Cast(action_data);
+    if (adata.m_HarvestType == SRP_EHarvestType.BUSH_FORAGE || adata.m_HarvestType == SRP_EHarvestType.TREE_FORAGE)
+    {      
+      for (int k = 0; k < m_MaterialAndQuantityMap.Count(); k++)
+      {      
+        RandomizeForagedFood(k);
+      }
+    }
 	}
   
   override void CreateSecondaryItems(ActionData action_data, string material_secondary = "", int quantity_secondary = -1)
@@ -25,5 +34,34 @@ modded class CAContinuousMineWood
     }
     super.CreateSecondaryItems(action_data);
 	}
+
+  void RandomizeForagedFood(int index)
+  {
+    float chance = Math.RandomFloatInclusive(0,1);
+    // if (chance > 0.75)
+    if (chance > 0)
+    {
+      Edible_Base food = Edible_Base.Cast(m_MinedItem[index]);
+
+      chance = Math.RandomFloatInclusive(0,1);
+      if ( chance > 0.50 )
+      {
+        food.ChangeFoodStage( FoodStageType.ROTTEN );
+        food.SetHealth( "", "", food.GetMaxHealth()*0.1 );
+      }
+      else if ( chance > 0.25 )
+      {
+        food.ChangeFoodStage( FoodStageType.DRIED );
+        food.SetHealth( "", "", food.GetMaxHealth()*0.4 );
+      }
+      else
+      {
+        food.ChangeFoodStage( FoodStageType.DRIED );
+        food.SetHealth( "", "", food.GetMaxHealth()*0.2 );
+      }
+      chance = Math.RandomFloatInclusive(0.1, 0.5);
+      food.SetQuantity(food.GetQuantityMax()*chance );
+    }
+  }
 
 };

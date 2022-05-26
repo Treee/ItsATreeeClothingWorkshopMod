@@ -1,3 +1,9 @@
+enum SRP_EHarvestType: EHarvestType
+{
+	BUSH_FORAGE,
+  TREE_FORAGE
+}
+
 modded class WoodBase
 {
 	override int GetAmountOfDrops(ItemBase item)
@@ -19,6 +25,20 @@ modded class WoodBase
 		}
     return super.GetAmountOfDrops(item);
 	}
+
+  override int GetAmountOfDropsEx(ItemBase item, EHarvestType type)
+	{
+    int amountOfDrops = super.GetAmountOfDropsEx(item, type);
+    if (type == SRP_EHarvestType.BUSH_FORAGE)
+    {
+      amountOfDrops = Math.RandomIntInclusive(1,2);
+    }
+    else if (type == SRP_EHarvestType.TREE_FORAGE)
+    {
+      amountOfDrops = Math.RandomIntInclusive(1,3);
+    }
+    return amountOfDrops;
+	}
 	
 	override void GetMaterialAndQuantityMap(ItemBase item, out map<string,int> output_map)
 	{
@@ -31,6 +51,22 @@ modded class WoodBase
 		{
 			super.GetMaterialAndQuantityMap(item, output_map);
 		}
+	}
+
+  override void GetMaterialAndQuantityMapEx(ItemBase item, out map<string,int> output_map, EHarvestType type)
+	{
+    if (type == SRP_EHarvestType.BUSH_FORAGE)
+    {
+      output_map.Insert(GetBushFruitList().GetRandomElement(),1);
+    }
+    else if (type == SRP_EHarvestType.TREE_FORAGE)
+    {
+      output_map.Insert(GetTreeFruitList().GetRandomElement(),1);
+    }
+    else
+    {
+      super.GetMaterialAndQuantityMapEx(item, output_map, type);
+    }
 	}
 	
 	override float GetDamageToMiningItemEachDrop(ItemBase item)
@@ -67,5 +103,26 @@ modded class WoodBase
       }
     }
     return yieldsBark;
+  }
+
+  TStringArray GetBushFruitList()
+  {
+    return {
+      "Tomato",
+      "GreenBellPepper",
+      "Zucchini",
+      "Pumpkin",
+      "Potato",
+      "SambucusBerry",
+      "CaninaBerry",
+    };
+  }
+  TStringArray GetTreeFruitList()
+  {
+    return {
+      "Apple",
+      "Plum",
+      "Pear",    
+    };
   }
 };
