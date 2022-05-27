@@ -8,6 +8,8 @@ modded class PluginRecipesManager
     // Crafting
     //---------Deconstruct Items into Kits
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
+    RegisterRecipe(new Deconstruct_PlacedObjectKit_Advanced);
+    RegisterRecipe(new Craft_SRP_Deconstruct_Kit);
 
     RegisterRecipe(new Deconstruct_RockPile);
     RegisterRecipe(new Deconstruct_PlankPile);

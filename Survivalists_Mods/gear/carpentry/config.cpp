@@ -31,7 +31,7 @@ class CfgVehicles
     {
       "SRP_ToolKit_Hammer",
       "SRP_ToolKit_Hatchet",
-      "SRP_ToolKit_HandSaw"
+      "SRP_ToolKit_HandSaw",
       "SRP_ToolKit_Pliers",
       "SRP_ToolKit_Screwdriver",      
       "SRP_ToolKit_Shovel",            

@@ -300,6 +300,15 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
 	// const int STATE_DAMAGED 	  	= 2;
 	// const int STATE_WORN 		  	= 1;
 	// const int STATE_PRISTINE 	  	= 0;
+  bool HasAttachmentFilledWithHealthLevel(string slotName, int maxItemDamageState=1)
+  {
+    EntityAI attachment = FindAttachmentBySlotName(slotName);
+    if (attachment)
+    {
+      return attachment.GetHealthLevel() <= maxItemDamageState;
+    }
+    return false;
+  }
 
   bool HasAttachmentFilledWithItem(string slotName, string itemName, int maxItemDamageState=1)
   {
@@ -318,6 +327,11 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
     {
       return attachment.GetHealthLevel() <= maxItemDamageState && attachment.GetQuantity() >= quantity;
     }
+    return false;
+  }
+
+  bool HasAllAttachmentsFilled()
+  {
     return false;
   }
 };
@@ -437,11 +451,53 @@ class SRP_WeaponShortBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 
 class SRP_MedicalKit_Kit extends SRP_IntermediateCraftingKitBase{};
 
-class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase{};
-
 class SRP_MetalBarrelKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_MetalBarrel_Old_Kit extends SRP_KitBase{};
 class SRP_MetalBarrel_Blue_Kit extends SRP_KitBase{};
 class SRP_MetalBarrel_Red_Kit extends SRP_KitBase{};
 class SRP_MetalBarrel_Yellow_Kit extends SRP_KitBase{};
 class SRP_MetalBarrel_Concrete_Kit extends SRP_KitBase{};
+
+class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override bool HasAllAttachmentsFilled()
+  {
+    bool isAllFilled = false;
+    isAllFilled |= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Hammer",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Hatchet",GameConstants.STATE_BADLY_DAMAGED);
+    // isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_HandSaw",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Pliers",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Screwdriver",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Shovel",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Caliper",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Handdrill",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Crowbar",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Wrench",GameConstants.STATE_BADLY_DAMAGED);
+    return isAllFilled;
+  }
+
+  void DamageTools()
+  {
+    DamageItemSlot("SRP_ToolKit_Hammer", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_Hatchet", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_Pliers", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_Screwdriver", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_Shovel", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_Caliper", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_Handdrill", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_Crowbar", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_Wrench", Math.RandomIntInclusive(10,20));
+    
+    AddHealth( Math.RandomIntInclusive(2, 10));
+  }
+
+  void DamageItemSlot(string slotName, int minDamage=0, int maxDamage=10)
+  {
+    EntityAI attachment = FindAttachmentBySlotName(slotName);
+    if (attachment)
+    {
+      int damage = Math.RandomIntInclusive(minDamage, maxDamage);
+      attachment.AddHealth(-damage);
+    }
+  }
+};

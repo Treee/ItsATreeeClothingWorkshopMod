@@ -20,6 +20,7 @@ class CfgVehicles
   //-------------------------------------BASE GAME OVERRIDE
 	class NBCBootsBase: Clothing
 	{
+    soundAttType="None";
 		class Protection 
     {
       repairableWithKits[]={5,6}; // duct tape and tire repair kit
@@ -77,6 +78,7 @@ class CfgVehicles
   class LeatherShoes_ColorBase: Clothing
   {
     attachments[]={"SRP_GunDerringer"};
+    soundAttType="None";
   };
   class Sneakers_ColorBase: Clothing
   {
@@ -85,6 +87,7 @@ class CfgVehicles
   class Ballerinas_ColorBase: Clothing
   {
     attachments[]={"SRP_GunDerringer"};
+    soundAttType="None";
   };
 
   class Sneakers_Skylar_Biozone: Sneakers_ColorBase

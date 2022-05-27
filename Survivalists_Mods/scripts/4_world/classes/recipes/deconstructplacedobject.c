@@ -2,9 +2,9 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Dismantle";
+		m_Name = "Dismantle - Using Crude Tools (Obsolete)";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 2;//animation length in relative time units
+		m_AnimationLength = 4;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -126,6 +126,235 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 	{
 		Debug.Log("Deconstruct_PlacedObjectKit: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
     SRP_KitBase.Cast( GetGame().CreateObjectEx(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
+	}
+};
+
+class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
+{	
+	override void Init()
+	{
+		m_Name = "Dismantle";
+		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
+		m_AnimationLength = 2;//animation length in relative time units
+		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
+				
+		//conditions
+		m_MinDamageIngredient[0] = -1;//-1 = disable check
+		m_MaxDamageIngredient[0] = -1;//-1 = disable check
+		
+		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
+		
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		
+		m_MinQuantityIngredient[1] = -1;//-1 = disable check
+		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+		//----------------------------------------------------------------------------------------------------------------------
+		
+		//INGREDIENTS
+		//ingredient 1 add any item that has a kit in this list so it can be dismantled.
+    InsertIngredient(0,"SRP_Cardboardbox");
+    InsertIngredient(0,"SRP_BedsideTableMetal");
+    InsertIngredient(0,"SRP_Potbelly_Stove");
+    InsertIngredient(0,"SRP_ShootingTarget");
+    InsertIngredient(0,"SRP_ShootingTargets");
+    InsertIngredient(0,"SRP_Fridge");
+    InsertIngredient(0,"SRP_FridgeLarge");
+    InsertIngredient(0,"SRP_FridgeRetro");
+    InsertIngredient(0,"SRP_MilitaryCaseSmall");
+    InsertIngredient(0,"SRP_MilitaryCaseSmallBlack");
+    InsertIngredient(0,"SRP_MilitaryCaseMedium");
+    InsertIngredient(0,"SRP_MilitaryCaseLong");
+    InsertIngredient(0,"SRP_MilitaryCaseLarge");
+    InsertIngredient(0,"SRP_MilitaryCaseLongBlue");
+    InsertIngredient(0,"SRP_MilitaryCaseLongTan");
+    InsertIngredient(0,"SRP_GChair");
+    InsertIngredient(0,"SRP_GChairHigh");
+    InsertIngredient(0,"SRP_GOutdoorTable");
+    InsertIngredient(0,"SRP_GOutdoorTableUmbrella");
+    InsertIngredient(0,"SRP_Umbrella");
+    InsertIngredient(0,"SRP_Carpet");
+    InsertIngredient(0,"SRP_CarpetRug");
+    InsertIngredient(0,"SRP_MedicalCurtains");
+    InsertIngredient(0,"SRP_SewingTable");
+    InsertIngredient(0,"SRP_LatheWorkbench");
+    InsertIngredient(0,"SRP_WornWorkbench");
+    InsertIngredient(0,"SRP_WornWorkbench_Metal");
+    InsertIngredient(0,"SRP_ComputerTerminal");
+    InsertIngredient(0,"SRP_ComputerTerminalSlim");
+    InsertIngredient(0,"SRP_ComputerTerminalWide");
+    InsertIngredient(0,"SRP_MetalBox");
+    InsertIngredient(0,"SRP_Furniture_OldWoodenChair");
+    InsertIngredient(0,"SRP_Furniture_WoodenChair");
+
+    InsertIngredient(0,"SRP_HangingWoodenSign");
+
+    InsertIngredient(0,"SRP_StoneForgeWorkbench");
+    InsertIngredient(0,"SRP_AdvancedStoneForgeWorkbench");
+
+    InsertIngredient(0,"SRP_Furniture_BarCounter");
+
+    InsertIngredient(0,"SRP_LockerSingle_Colorbase");
+    InsertIngredient(0,"SRP_LockerTriple_Colorbase");
+    InsertIngredient(0,"SRP_LockerQuad_Colorbase");
+    InsertIngredient(0,"SRP_LockerMilitary_Colorbase");
+
+    InsertIngredient(0,"SRP_FridgeMinsk");
+
+    InsertIngredient(0,"SRP_PostBox");
+    InsertIngredient(0,"SRP_PostBoxBlue");
+    InsertIngredient(0,"SRP_PostBoxWooden");
+
+    InsertIngredient(0,"SRP_DecontaminationShower");
+    InsertIngredient(0,"SRP_DecontaminationShower_Red");
+    InsertIngredient(0,"SRP_DecontaminationShower_Yellow");
+
+    InsertIngredient(0,"SRP_HoneyCombStand");
+    InsertIngredient(0,"SRP_GlassDisplayCase");
+    InsertIngredient(0,"SRP_GlassDisplayCaseLarge");
+    InsertIngredient(0,"SRP_MuseumTable");
+
+		m_IngredientAddHealth[0] = 0;// 0 = do nothing
+		m_IngredientSetHealth[0] = -1; // -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
+		m_IngredientDestroy[0] = true;// false = do nothing
+		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
+		//----------------------------------------------------------------------------------------------------------------------
+		
+		//ingredient 2
+		InsertIngredient(1,"SRP_Deconstruction_Kit");
+		
+		m_IngredientAddHealth[1] = 0;// 0 = do nothing
+		m_IngredientSetHealth[1] = -1; // -1 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
+		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//----------------------------------------------------------------------------------------------------------------------
+		
+		//result1
+		// AddResult("SRP_BedsideTable_Kit");//add results here
+
+		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
+		m_ResultSetQuantity[0] = -1;//-1 = do nothing
+		m_ResultSetHealth[0] = -1;//-1 = do nothing
+		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
+		m_ResultInheritsColor[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result classname will be a composite of the name provided in AddResult method and config value "color" of ingredient (value)
+		m_ResultToInventory[0] = -2;//(value) == -2 spawn result on the ground;(value) == -1 place anywhere in the players inventory, (value) >= 0 means switch position with ingredient number(value)
+		m_ResultUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this result
+		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
+	}
+
+	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+	{
+    SRP_Deconstruction_Kit deconstructKit;
+    if (ingredients[1] && Class.CastTo(deconstructKit, ingredients[1]))
+    {
+      return deconstructKit.HasAllAttachmentsFilled();
+    }
+    // check to see if all attachments are filled
+		return false;
+	}
+
+	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
+	{
+		Debug.Log("Deconstruct_PlacedObjectKit_Advanced: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
+    SRP_KitBase.Cast( GetGame().CreateObjectEx(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
+    SRP_Deconstruction_Kit deconstructKit;
+    if (ingredients[1] && Class.CastTo(deconstructKit, ingredients[1]))
+    {
+      deconstructKit.DamageTools();
+    }
+	}
+};
+
+class Craft_SRP_Deconstruct_Kit extends RecipeBase
+{	
+	override void Init()
+	{
+		m_Name = "Create Deconstruction Kit";
+		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
+		m_AnimationLength = 2;//animation length in relative time units
+		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
+				
+		//conditions
+		m_MinDamageIngredient[0] = -1;//-1 = disable check
+		m_MaxDamageIngredient[0] = -1;//-1 = disable check
+		
+		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MaxQuantityIngredient[0] = 3;//-1 = disable check
+		
+		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;//-1 = disable check
+		
+		m_MinQuantityIngredient[1] = -1;//-1 = disable check
+		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+		//----------------------------------------------------------------------------------------------------------------------
+		
+		//INGREDIENTS
+		//ingredient 1 add any item that has a kit in this list so it can be dismantled.
+		InsertIngredient(0,"Hammer");
+		InsertIngredient(0,"Hatchet");
+		InsertIngredient(0,"HandSaw");
+		InsertIngredient(0,"Pliers");
+		InsertIngredient(0,"Screwdriver");
+		InsertIngredient(0,"Shovel");
+		InsertIngredient(0,"SRP_Caliper");
+		InsertIngredient(0,"SRP_Handdrill");
+		InsertIngredient(0,"SRP_Handdrill_Old");
+		InsertIngredient(0,"Crowbar");
+		InsertIngredient(0,"Wrench");
+
+		m_IngredientAddHealth[0] = -10;// 0 = do nothing
+		m_IngredientSetHealth[0] = -1; // -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
+		m_IngredientDestroy[0] = false;// false = do nothing
+		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
+		//----------------------------------------------------------------------------------------------------------------------
+		
+		//ingredient 2
+    InsertIngredient(1,"Hammer");
+		InsertIngredient(1,"Hatchet");
+		InsertIngredient(1,"HandSaw");
+		InsertIngredient(1,"Pliers");
+		InsertIngredient(1,"Screwdriver");
+		InsertIngredient(1,"Shovel");
+		InsertIngredient(1,"SRP_Caliper");
+		InsertIngredient(1,"SRP_Handdrill");
+		InsertIngredient(1,"SRP_Handdrill_Old");
+		InsertIngredient(1,"Crowbar");
+		InsertIngredient(1,"Wrench");
+		
+		m_IngredientAddHealth[1] = -10;// 0 = do nothing
+		m_IngredientSetHealth[1] = -1; // -1 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
+		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//----------------------------------------------------------------------------------------------------------------------
+		
+		//result1
+		AddResult("SRP_Deconstruction_Kit");//add results here
+
+		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
+		m_ResultSetQuantity[0] = -1;//-1 = do nothing
+		m_ResultSetHealth[0] = -1;//-1 = do nothing
+		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
+		m_ResultInheritsColor[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result classname will be a composite of the name provided in AddResult method and config value "color" of ingredient (value)
+		m_ResultToInventory[0] = -2;//(value) == -2 spawn result on the ground;(value) == -1 place anywhere in the players inventory, (value) >= 0 means switch position with ingredient number(value)
+		m_ResultUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this result
+		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
+	}
+
+	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+	{
+    return true;
+	}
+
+	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
+	{
+		Debug.Log("Craft_SRP_Deconstruct_Kit: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
 	}
 };
 
@@ -265,7 +494,7 @@ class Deconstruct_ObjectIntoKitBase extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Dismantle";
+		m_Name = "Dismantle - Using Crude Tools";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 4;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
