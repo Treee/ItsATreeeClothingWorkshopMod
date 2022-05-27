@@ -59,7 +59,7 @@ modded class CAContinuousMineWood
         food.ChangeFoodStage( FoodStageType.DRIED );
         food.SetHealth( "", "", food.GetMaxHealth()*0.2 );
       }
-      chance = Math.RandomFloatInclusive(0.1, 0.5);
+      chance = Math.RandomFloatInclusive(0.1, 0.3);
       food.SetQuantity(food.GetQuantityMax()*chance );
     }
   }

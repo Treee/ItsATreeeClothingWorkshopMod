@@ -22,9 +22,25 @@ class CfgVehicles
 
   class SRP_KitBase;
   //------------------------------ BASE BUILDING
-
-
-
+  class SRP_Deconstruction_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Carpentry Deconstruction Kit";
+		descriptionShort="A kit with the appropriate tools to correctly disassemble a placed item.";
+    attachments[]=
+    {
+      "SRP_ToolKit_Hammer",
+      "SRP_ToolKit_Hatchet",
+      "SRP_ToolKit_HandSaw"
+      "SRP_ToolKit_Pliers",
+      "SRP_ToolKit_Screwdriver",      
+      "SRP_ToolKit_Shovel",            
+      "SRP_ToolKit_Caliper",
+      "SRP_ToolKit_Handdrill",
+      "SRP_ToolKit_Crowbar",
+      "SRP_ToolKit_Wrench",
+    };
+	};
 
   //--------------------------------- TAXIDERMY
   class SRP_Taxidermy_Kit: SRP_KitBase //new

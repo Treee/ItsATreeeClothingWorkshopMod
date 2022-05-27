@@ -85,10 +85,11 @@ class CfgVehicles
 
   class FieldShovel: Inventory_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"no",
-			"FShovel"
+			"FShovel",
+      "SRP_ToolKit_Shovel"
 		};
 	};
 
@@ -96,12 +97,16 @@ class CfgVehicles
 	{
 		scope=2;
 		repairableWithKits[]={6}; // tire repair kit
+    inventorySlot[]+=
+		{
+      "SRP_ToolKit_Hammer"
+		};
 	};
 
   class FireExtinguisher: Inventory_Base
 	{
 		scope=2;
-    inventorySlot[]=
+    inventorySlot[]+=
 		{
 			"Shoulder",
 			"Melee",
@@ -111,36 +116,63 @@ class CfgVehicles
 
   class Lockpick: Inventory_Base
   {
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "SRP_Tool1",
       "SRP_Tool2",
-      "SRP_Tool3",
-      "MVS_Lockpick"
+      "SRP_Tool3"
     };
   };
   class Screwdriver: Inventory_Base
   {
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "SRP_Tool1",
       "SRP_Tool2",
       "SRP_Tool3",
-      "Screwdriver",
-      "MassScrewDriver",
-      "Screwdriver1",
-      "Screwdriver2"
+      "SRP_ToolKit_Screwdriver"
     };
   };
   class Pliers: Inventory_Base
   {
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "SRP_Tool1",
       "SRP_Tool2",
       "SRP_Tool3",
-      "Pliers",
-      "Pliers1"
+      "SRP_ToolKit_Pliers"
+    };
+  };
+
+  class Shovel: Inventory_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_ToolKit_Shovel"
+    };
+  };
+
+  class Crowbar: Inventory_Base
+	{
+    inventorySlot[]+=
+    {
+      "SRP_ToolKit_Crowbar"
+    };
+  };
+
+  class Wrench: Inventory_Base
+	{
+    inventorySlot[]+=
+    {
+      "SRP_ToolKit_Wrench"
+    };
+  };
+
+  class HandSaw: Inventory_Base
+	{
+    inventorySlot[]+=
+    {
+      "SRP_ToolKit_HandSaw"
     };
   };
 
@@ -215,6 +247,10 @@ class CfgVehicles
 		itemSize[]={2,3};
 		fragility=0.001;
 		openItemSpillRange[]={20,40};
+    inventorySlot[]=
+    {
+      "SRP_ToolKit_Handdrill"
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -285,6 +321,10 @@ class CfgVehicles
 		itemSize[]={2,3};
 		fragility=0.001;
 		openItemSpillRange[]={20,40};
+    inventorySlot[]=
+    {
+      "SRP_ToolKit_Handdrill"
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -427,6 +467,10 @@ class CfgVehicles
 		fragility=0.001;
     physLayer="item_small";
 		openItemSpillRange[]={20,40};
+    inventorySlot[]=
+    {
+      "SRP_ToolKit_Caliper"
+    };
     hiddenSelections[]=
 		{
 			"zbytek"

@@ -32,6 +32,6 @@ class ActionForageBush extends ActionMineBushByHand
 
   override void OnActionInfoUpdate( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		m_Text =  "Forage Fruits and Vegetables";
+		m_Text = "Forage Fruits and Vegetables";
 	}
 };

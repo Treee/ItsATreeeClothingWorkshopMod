@@ -295,6 +295,31 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
   {
     return FindAttachmentBySlotName(slotName) != null;
   }
+	// const int STATE_RUINED 		 	= 4;
+	// const int STATE_BADLY_DAMAGED 	= 3;
+	// const int STATE_DAMAGED 	  	= 2;
+	// const int STATE_WORN 		  	= 1;
+	// const int STATE_PRISTINE 	  	= 0;
+
+  bool HasAttachmentFilledWithItem(string slotName, string itemName, int maxItemDamageState=1)
+  {
+    EntityAI attachment = FindAttachmentBySlotName(slotName);
+    if (attachment && attachment.GetType() == itemName)
+    {
+      return attachment.GetHealthLevel() <= maxItemDamageState;
+    }
+    return false;
+  }
+
+  bool HasAttachmentFilledWithItemAndQuantity(string slotName, string itemName, int quantity=0, int maxItemDamageState=1)
+  {
+    EntityAI attachment = FindAttachmentBySlotName(slotName);
+    if (attachment && attachment.GetType() == itemName)
+    {
+      return attachment.GetHealthLevel() <= maxItemDamageState && attachment.GetQuantity() >= quantity;
+    }
+    return false;
+  }
 };
 class SRP_TetrisShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_BuildingComponentFrame_Kit extends SRP_IntermediateCraftingKitBase{};
@@ -411,6 +436,8 @@ class SRP_WeaponMediumBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 class SRP_WeaponShortBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 
 class SRP_MedicalKit_Kit extends SRP_IntermediateCraftingKitBase{};
+
+class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_MetalBarrelKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_MetalBarrel_Old_Kit extends SRP_KitBase{};

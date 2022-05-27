@@ -121,14 +121,10 @@ class CfgVehicles
   // attachment proxy override
   class Hatchet: Inventory_Base
   {
-    inventorySlot[]=
-    {
-      "MassTool",
+    inventorySlot[]+=
+    {      
 			"Hatchet",
-			"Hatchet1",
-			"Hatchet2",
-			"Hatchet3",
-			"Hatchet4"
+      "SRP_ToolKit_Hatchet"
     };
   };
 

@@ -11,6 +11,68 @@ class CfgPatches
 
 class CfgSlots
 {
+  //====================Tool Kit Slots
+  class Slot_SRP_ToolKit_Hammer
+	{
+		name="SRP_ToolKit_Hammer";
+		displayName="Hammer";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_Hatchet
+	{
+		name="SRP_ToolKit_Hatchet";
+		displayName="Hatchet";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_Pliers
+	{
+		name="SRP_ToolKit_Pliers";
+		displayName="Pliers";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_Screwdriver
+	{
+		name="SRP_ToolKit_Screwdriver";
+		displayName="Screwdriver";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_HandSaw
+	{
+		name="SRP_ToolKit_HandSaw";
+		displayName="HandSaw";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_Shovel
+	{
+		name="SRP_ToolKit_Shovel";
+		displayName="Shovel";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_Caliper
+	{
+		name="SRP_ToolKit_Caliper";
+		displayName="Caliper";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_Handdrill
+	{
+		name="SRP_ToolKit_Handdrill";
+		displayName="Handdrill";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_Crowbar
+	{
+		name="SRP_ToolKit_Crowbar";
+		displayName="Crowbar";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_ToolKit_Wrench
+	{
+		name="SRP_ToolKit_Wrench";
+		displayName="Wrench";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+
   //==========================Armband Hook
   class Slot_SRP_DisplayHook1
 	{
