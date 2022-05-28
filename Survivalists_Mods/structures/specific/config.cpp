@@ -31,5 +31,20 @@ class CfgVehicles
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_co.paa"
 		};
 	};
+  class Land_srp_artifact_ancientspear_1: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_ancientspear.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "blade"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_ancientspear_co.paa",
+      "Survivalists_Mods\structures\specific\artifacts\data\srp_ancientspear_head_co.paa"
+		};
+	};
 
 };

@@ -1,8 +1,8 @@
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
-forcedDiffuse[]={1,1,1,1};
+forcedDiffuse[]={0,0,0,0};
 emmisive[]={1,1,1,1};
-specular[]={0.2,0.2,0.2,0.2};
+specular[]={0.5,0.5,0.5,0.5};
 specularPower=100;
 PixelShaderID="Super";
 VertexShaderID="Super";
@@ -98,7 +98,7 @@ class TexGen7
 
 class Stage1
 {
-	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_nohq.paa";
+	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_ancientspear_head_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -122,7 +122,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_mc.paa";
+	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_ancientspear_head_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -134,7 +134,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
+	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_ancientspear_head_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -146,7 +146,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_smdi.paa";
+	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_ancientspear_head_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -170,7 +170,7 @@ class Stage6
 };
 class Stage7
 {
-	texture="dz\data\data\env_land_co.paa";
+  texture="dz\data\data\env_co.paa";
   uvSource="tex";
   class uvTransform
   {
@@ -182,6 +182,6 @@ class Stage7
 };
 class Stage8
 {
-	texture= "Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_e_co.paa";
+	texture= "Survivalists_Mods\structures\specific\artifacts\data\srp_ancientspear_head_e_co.paa";
 	texGen= "0";
 };

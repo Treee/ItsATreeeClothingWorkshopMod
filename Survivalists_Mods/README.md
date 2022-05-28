@@ -780,6 +780,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Galaxy Ball" (https://skfb.ly/JOry) by andrekek is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Fantasy Themed Spear" (https://skfb.ly/6WZsR) by SangeetBlaze is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Alien Skull" (https://skfb.ly/6xZMx) by giantSwing is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic
