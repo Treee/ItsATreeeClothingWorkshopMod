@@ -15,8 +15,7 @@ class CfgPatches
 };
 class CfgVehicles
 {
-	class HouseNoDestruct;
-	class House;
+	class HouseNoDestruct;	
 
   class Land_srp_artifact_galaxymap_1: HouseNoDestruct
 	{
@@ -46,5 +45,57 @@ class CfgVehicles
       "Survivalists_Mods\structures\specific\artifacts\data\srp_ancientspear_head_co.paa"
 		};
 	};
-
+  
+  class Land_srp_artifact_ancientmarker_green: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_ancientmarker.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_ancientmarker_green_co.paa"
+		};
+	};
+  class Land_srp_artifact_ancientmarker_blue: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_ancientmarker.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_ancientmarker_blue_co.paa"
+		};
+	};
+  class Land_srp_artifact_ancientmarker_red: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_ancientmarker.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_ancientmarker_red_co.paa"
+		};
+	};
+  class Land_srp_artifact_ancientmarker_yellow: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_ancientmarker.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_ancientmarker_yellow_co.paa"
+		};
+	};
 };

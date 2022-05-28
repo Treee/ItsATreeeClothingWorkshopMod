@@ -782,7 +782,9 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Fantasy Themed Spear" (https://skfb.ly/6WZsR) by SangeetBlaze is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- "Alien Skull" (https://skfb.ly/6xZMx) by giantSwing is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Sith wayfinder(low-poly, hand painted)" (https://skfb.ly/6VGSZ) by KimMurzin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Game Boy Classic" (https://skfb.ly/6YNov) by Georg Klein is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
