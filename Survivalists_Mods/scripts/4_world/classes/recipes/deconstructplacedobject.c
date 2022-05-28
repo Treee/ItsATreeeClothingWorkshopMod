@@ -118,8 +118,8 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 	}
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
-	{
-		return true;
+	{    
+		return ingredients[0].IsEmpty();
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -330,12 +330,15 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    SRP_Deconstruction_Kit deconstructKit;
-    if (ingredients[1] && Class.CastTo(deconstructKit, ingredients[1]))
+    if (ingredients[0].IsEmpty())
     {
-      return deconstructKit.HasAllAttachmentsFilled();
+      // check to see if all attachments are filled
+      SRP_Deconstruction_Kit deconstructKit;
+      if (ingredients[1] && Class.CastTo(deconstructKit, ingredients[1]))
+      {
+        return deconstructKit.HasAllAttachmentsFilled();
+      }
     }
-    // check to see if all attachments are filled
 		return false;
 	}
 
@@ -503,7 +506,7 @@ class Deconstruct_PileOfMaterials extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-		return true;
+		return ingredients[0].IsEmpty();
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -633,7 +636,7 @@ class Deconstruct_ObjectIntoKitBase extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-		return true;
+		return ingredients[0].IsEmpty();
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
