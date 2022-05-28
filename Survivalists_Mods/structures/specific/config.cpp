@@ -150,4 +150,17 @@ class CfgVehicles
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_totemwood_co.paa"
 		};
 	};
+  class Land_srp_artifact_totem_face: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_totemface.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_totemface_co.paa"
+		};
+	};
 };
