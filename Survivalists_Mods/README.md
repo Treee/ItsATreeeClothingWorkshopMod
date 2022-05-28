@@ -786,6 +786,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Game Boy Classic" (https://skfb.ly/6YNov) by Georg Klein is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Wolf Totem" (https://skfb.ly/6Z8uz) by Thunder is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "#3DSM5 - Three Wise Monkeys Totem" (https://skfb.ly/BCv8) by Dennis Würger is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Totem" (https://skfb.ly/6WYRx) by Joe is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

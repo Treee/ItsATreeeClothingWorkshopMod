@@ -111,4 +111,43 @@ class CfgVehicles
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_gameboy_ca.paa"
 		};
 	};
+  class Land_srp_artifact_totem_wolf: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_totemwolf.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_totemwolf_co.paa"
+		};
+	};
+  class Land_srp_artifact_totem_monkey: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_totemmonkey.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_totemmonkey_co.paa"
+		};
+	};
+  class Land_srp_artifact_totem_wood: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_totemwood.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_totemwood_co.paa"
+		};
+	};
 };
