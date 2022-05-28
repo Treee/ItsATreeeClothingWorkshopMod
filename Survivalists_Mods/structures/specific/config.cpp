@@ -98,4 +98,17 @@ class CfgVehicles
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_ancientmarker_yellow_co.paa"
 		};
 	};
+  class Land_srp_artifact_gameboy_1: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_gameboy.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_gameboy_ca.paa"
+		};
+	};
 };
