@@ -1,8 +1,8 @@
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
-forcedDiffuse[]={0,0,0,0};
-emmisive[]={5,5,5,5};
-specular[]={1,1,1,1};
+forcedDiffuse[]={1,1,1,1};
+emmisive[]={1,1,1,1};
+specular[]={0.2,0.2,0.2,0.2};
 specularPower=100;
 PixelShaderID="Super";
 VertexShaderID="Super";
@@ -98,7 +98,7 @@ class TexGen7
 
 class Stage1
 {
-	texture="Survivalists_Mods\gear\camping\data\srp_streetlightslim_nohq.paa";
+	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -122,19 +122,19 @@ class Stage2
 };
 class Stage3
 {
-  texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{
-		aside[]={0,3,0};
-		up[]={3,0,0};
+		aside[]={1,0,0};
+		up[]={0,1,0};
 		dir[]={0,0,1};
 		pos[]={0,0,0};
 	};
 };
 class Stage4
 {
-	texture="Survivalists_Mods\gear\camping\data\srp_streetlightslim_as.paa";
+	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -146,7 +146,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\gear\camping\data\srp_streetlightslim_smdi.paa";
+	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -158,31 +158,30 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,32,128,1)fresnel(0.98,0.53)";
-	uvSource="tex";
-	class uvTransform
-	{
-		aside[]={1,0,0};
-		up[]={0,1,0};
-		dir[]={0,0,1};
-		pos[]={0,0,0};
-	};
+  texture="#(ai,64,64,1)fresnel(1.4,1.3)";
+  uvSource="tex";
+  class uvTransform
+  {
+    aside[]={1,0,0};
+    up[]={0,1,0};
+    dir[]={0,0,1};
+    pos[]={0,0,0};
+  };
 };
 class Stage7
 {
-    texture="dz\data\data\env_co.paa";
-    uvSource="tex";
-    class uvTransform
-    {
-        aside[]={1,0,0};
-        up[]={0,1,0};
-        dir[]={0,0,1};
-        pos[]={0,0,0};
-    };
-    textGen="7";
+  texture="dz\data\data\env_co.paa";
+  uvSource="tex";
+  class uvTransform
+  {
+      aside[]={1,0,0};
+      up[]={0,1,0};
+      dir[]={0,0,1};
+      pos[]={0,0,0};
+  };
 };
 class Stage8
 {
-    texture="Survivalists_Mods\gear\camping\data\srp_streetlightslim_e_co.paa";
-    texGen="0";
+	texture= "Survivalists_Mods\structures\specific\artifacts\data\srp_galaxyball_e_co.paa";
+	texGen= "0";
 };
