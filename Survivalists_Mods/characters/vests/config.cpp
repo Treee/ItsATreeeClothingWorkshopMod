@@ -1672,6 +1672,142 @@ class CfgVehicles
 			};
 		};
 	};
+  
+  class SRP_Ratnik_Armor_Green: Clothing
+	{	
+		scope=2;
+		displayName="Ratnik Leg Pads";
+    descriptionShort="Espen Industries. Leg armor designed for enhanced ratnik protection.";
+		model="Survivalists_Mods\characters\vests\Ratnik_armor_g.p3d";
+    attachments[]={};
+		rotationFlags=16;
+		inventorySlot="Hips";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Vest",
+			"Clothing"
+		};
+		weight=12000;
+		itemSize[]={2,3};
+		quickBarBonus=2;
+		absorbency=0;
+		heatIsolation=0.80;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\vests\data\Ratnik_Green_CO.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\vests\Ratnik_armor_m.p3d";
+			female="Survivalists_Mods\characters\vests\Ratnik_armor_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+          transferToAttachmentsCoef=0.5;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\vests\data\Ratnik.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\vests\data\Ratnik.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\vests\data\Ratnik_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\vests\data\Ratnik_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\vests\data\Ratnik_destruct.rvmat"}}
+					};
+				};
+			};
+      class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.30000001;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.60000002;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="SmershVest_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="SmershVest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 
   class SRP_Bandoiler: Clothing
 	{	

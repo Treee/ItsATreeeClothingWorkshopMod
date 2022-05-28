@@ -1403,6 +1403,32 @@ class CfgVehicles
 		};	
 	};
 
+
+  class SRP_Ratnik_Armor_Black: SRP_Ratnik_Armor_Green
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Black_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Armor_Tan: SRP_Ratnik_Armor_Green
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Tan_CO.paa"
+		};	
+	};
+
   class SRP_Light_Ratnik_Black: SRP_Light_Ratnik_Green
 	{
 		scope=2;
