@@ -210,7 +210,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Tac_Vest_Green: Clothing
+  class SRP_Tac_Vest_Green: PlateCarrierVest
 	{	
 		scope=2;
 		displayName="Tactical Vest";
@@ -234,22 +234,9 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
-    inventorySlot="Vest";
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Vest",
-			"Clothing"
-		};
-		weight=12000;
 		itemSize[]={5,5};
 		quickBarBonus=2;
-		absorbency=0;
     itemBehaviour=2;
-		heatIsolation=0.80;
-		repairableWithKits[]={3};
-		repairCosts[]={25};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -269,7 +256,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+          hitpoints=225;
+					transferToAttachmentsCoef=0.5;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\characters\vests\data\Tac_Vest.rvmat"}},
@@ -280,13 +268,13 @@ class CfgVehicles
 					};
 				};
 			};
-			class GlobalArmor
+      class GlobalArmor
 			{
 				class Projectile
 				{
 					class Health
 					{
-						damage=0.5;
+						damage=0.30000001;
 					};
 					class Blood
 					{
@@ -294,7 +282,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25999999;
+						damage=0.60000002;
 					};
 				};
 				class Melee
@@ -405,7 +393,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Ratnik_Green: Clothing
+  class SRP_Ratnik_Green: PlateCarrierVest
 	{	
 		scope=2;
 		displayName="Full Ratnik";
@@ -432,22 +420,11 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
-    inventorySlot="Vest";
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Vest",
-			"Clothing"
-		};
-		weight=15000;
 		itemSize[]={7,7};
 		itemBehaviour=0;
 		quickBarBonus=2;
-		absorbency=0;
-		heatIsolation=0.80;
-		repairableWithKits[]={3};
-		repairCosts[]={25};
+    repairableWithKits[]={3};
+		repairCosts[]={75};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -467,7 +444,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=250;
+					transferToAttachmentsCoef=0.5;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\characters\vests\data\Ratnik.rvmat"}},
@@ -484,7 +462,7 @@ class CfgVehicles
 				{
 					class Health
 					{
-						damage=0.15000001;
+						damage=0.2000001;
 					};
 					class Blood
 					{
@@ -492,7 +470,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.15000001;
+						damage=0.2000001;
 					};
 				};
 				class Melee
@@ -603,7 +581,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Light_Ratnik_Green: Clothing
+  class SRP_Light_Ratnik_Green: PlateCarrierVest
 	{	
 		scope=2;
 		displayName="Light Ratnik";
@@ -630,21 +608,10 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
-		inventorySlot="Vest";
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Vest",
-			"Clothing"
-		};
-		weight=12000;
 		itemSize[]={6,6};
-		absorbency=0;
     itemBehaviour=0;
-		heatIsolation=0.80;
 		repairableWithKits[]={3};
-		repairCosts[]={25};
+		repairCosts[]={75};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -664,7 +631,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=225;
+					transferToAttachmentsCoef=0.5;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\characters\vests\data\Ratnik.rvmat"}},
@@ -681,7 +649,7 @@ class CfgVehicles
 				{
 					class Health
 					{
-						damage=0.5;
+						damage=0.30000001;
 					};
 					class Blood
 					{
@@ -689,7 +657,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.5;
+						damage=0.60000002;
 					};
 				};
 				class Melee
@@ -800,7 +768,7 @@ class CfgVehicles
 		};
 	};
 
-	class SRP_Chestrig_Green: Clothing
+	class SRP_Chestrig_Green: PlateCarrierVest
 	{
 		scope=2;
 		displayName="Chest Rig";
@@ -825,21 +793,10 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
-    inventorySlot="Vest";
-    simulation="clothing";
-		vehicleClass="Clothing";
-    itemInfo[]=
-		{
-			"Vest",
-			"Clothing"
-		};
-    weight=12000;
 		itemSize[]={4,4};
-		absorbency=0;
     itemBehaviour=2;
-		heatIsolation=0.80;
 		repairableWithKits[]={3};
-		repairCosts[]={25};
+		repairCosts[]={75};
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]=
 		{
@@ -860,7 +817,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=225;
+					transferToAttachmentsCoef=0.5;
           healthLevels[]= 
           {
             {1.0,{"Survivalists_Mods\characters\vests\data\chestrig.rvmat"}},
@@ -869,6 +827,69 @@ class CfgVehicles
             {0.3,{"Survivalists_Mods\characters\vests\data\chestrig_damage.rvmat"}},
             {0.0,{"Survivalists_Mods\characters\vests\data\chestrig_destruct.rvmat"}}
           };
+				};
+			};
+      class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.30000001;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.60000002;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
 				};
 			};
 		};
@@ -917,7 +938,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Army_Vest_1_Green: Clothing
+  class SRP_Army_Vest_1_Green: PlateCarrierVest
 	{	
 		scope=2;
 		displayName="Light Armored Vest";
@@ -943,22 +964,10 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
-    inventorySlot="Vest";
-		itemSize[]={5,5};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Vest",
-			"Clothing"
-		};
-		weight=12000;
 		quickBarBonus=2;
-		absorbency=0;
     itemBehaviour=2;
-		heatIsolation=0.80;
 		repairableWithKits[]={3};
-		repairCosts[]={25};
+		repairCosts[]={75};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -978,7 +987,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=225;
+					transferToAttachmentsCoef=0.5;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\characters\vests\data\Army_Vest_1.rvmat"}},
@@ -995,7 +1005,7 @@ class CfgVehicles
 				{
 					class Health
 					{
-						damage=0.5;
+						damage=0.30000001;
 					};
 					class Blood
 					{
@@ -1003,7 +1013,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25999999;
+						damage=0.60000002;
 					};
 				};
 				class Melee
@@ -1048,7 +1058,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25;
+						damage=0.25999999;
 					};
 				};
 			};
@@ -1114,11 +1124,11 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Army_Vest_2_Green: Clothing
+  class SRP_Army_Vest_2_Green: PlateCarrierVest
 	{	
 		scope=2;
-		displayName="6B45 vest";
-		descriptionShort="Espen Industries. A 6B45 armored vest vest";
+		displayName="6B45 Vest";
+		descriptionShort="Espen Industries. A 6B45 armored vest";
 		model="Survivalists_Mods\characters\vests\Army_Vest_2_g.p3d";
 		attachments[]=
 		{
@@ -1140,22 +1150,10 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
-    inventorySlot="Vest";
-		itemSize[]={5,5};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Vest",
-			"Clothing"
-		};
-		weight=12000;
 		quickBarBonus=2;
-		absorbency=0;
     itemBehaviour=2;
-		heatIsolation=0.80;
 		repairableWithKits[]={3};
-		repairCosts[]={25};
+		repairCosts[]={75};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -1175,7 +1173,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=225;
+					transferToAttachmentsCoef=0.5;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\characters\vests\data\Army_Vest_2.rvmat"}},
@@ -1192,7 +1191,7 @@ class CfgVehicles
 				{
 					class Health
 					{
-						damage=0.5;
+						damage=0.30000001;
 					};
 					class Blood
 					{
@@ -1200,7 +1199,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25999999;
+						damage=0.60000002;
 					};
 				};
 				class Melee
@@ -1245,7 +1244,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25;
+						damage=0.25999999;
 					};
 				};
 			};
@@ -1312,7 +1311,7 @@ class CfgVehicles
 
 	};
 
-  class SRP_JPC_Vest_Green: Clothing
+  class SRP_JPC_Vest_Green: PlateCarrierVest
 	{	
 		scope=2;
 		displayName="JPC Vest";
@@ -1333,22 +1332,10 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
-    inventorySlot="Vest";
-		itemSize[]={5,5};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Vest",
-			"Clothing"
-		};
-		weight=12000;
 		quickBarBonus=2;
-		absorbency=0;
     itemBehaviour=2;
-		heatIsolation=0.80;
 		repairableWithKits[]={3};
-		repairCosts[]={25};
+		repairCosts[]={75};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -1368,7 +1355,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=225;
+					transferToAttachmentsCoef=0.5;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\characters\vests\data\JPC_Vest.rvmat"}},
@@ -1385,7 +1373,7 @@ class CfgVehicles
 				{
 					class Health
 					{
-						damage=0.5;
+						damage=0.30000001;
 					};
 					class Blood
 					{
@@ -1393,7 +1381,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25999999;
+						damage=0.60000002;
 					};
 				};
 				class Melee
@@ -1438,7 +1426,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25;
+						damage=0.25999999;
 					};
 				};
 			};
@@ -1504,7 +1492,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Tac_Tec_Vest_Green: Clothing
+  class SRP_Tac_Tec_Vest_Green: PlateCarrierVest
 	{	
 		scope=2;
 		displayName="Tac-Tec Vest";
@@ -1525,22 +1513,10 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
-    inventorySlot="Vest";
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemSize[]={5,5};
-		itemInfo[]=
-		{
-			"Vest",
-			"Clothing"
-		};
-		weight=12000;
 		quickBarBonus=2;
-		absorbency=0;
     itemBehaviour=2;
-		heatIsolation=0.80;
 		repairableWithKits[]={3};
-		repairCosts[]={25};
+		repairCosts[]={75};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -1560,7 +1536,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=225;
+					transferToAttachmentsCoef=0.5;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\characters\vests\data\Tac_Tec_Vest.rvmat"}},
@@ -1577,7 +1554,7 @@ class CfgVehicles
 				{
 					class Health
 					{
-						damage=0.5;
+						damage=0.30000001;
 					};
 					class Blood
 					{
@@ -1585,7 +1562,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25999999;
+						damage=0.60000002;
 					};
 				};
 				class Melee
@@ -1630,7 +1607,7 @@ class CfgVehicles
 					};
 					class Shock
 					{
-						damage=0.25;
+						damage=0.25999999;
 					};
 				};
 			};
