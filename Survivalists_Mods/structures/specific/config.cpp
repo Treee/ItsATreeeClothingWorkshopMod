@@ -163,4 +163,109 @@ class CfgVehicles
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_totemface_co.paa"
 		};
 	};
+
+  class Land_srp_artifact_runestone_arrow_large: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactarrow_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactarrow_large_co.paa"
+		};
+	};
+  class Land_srp_artifact_runestone_arrow_small: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactarrow_small.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactarrow_small_co.paa"
+		};
+	};
+  class Land_srp_artifact_runestone_claw_large: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactclaw_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactclaw_large_co.paa"
+		};
+	};
+  class Land_srp_artifact_runestone_claw_small: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactclaw_small.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactclaw_small_co.paa"
+		};
+	};
+  class Land_srp_artifact_runestone_stone_large: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactstone_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactstone_large_co.paa"
+		};
+	};
+  class Land_srp_artifact_runestone_stone_small: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactstone_small.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactstone_large_co.paa"
+		};
+	};
+  class Land_srp_artifact_runestone_wave_large: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactwave_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactwave_large_co.paa"
+		};
+	};
+  class Land_srp_artifact_runestone_wave_small: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactwave_small.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactwave_small_co.paa"
+		};
+	};
 };
