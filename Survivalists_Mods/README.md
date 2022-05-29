@@ -796,6 +796,14 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Magic runestones" (https://skfb.ly/6RrDJ) by reddification is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Fantasy Ruin Rocks" (https://skfb.ly/6WvQu) by KZNYKN is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Time Stones" (https://skfb.ly/opoJD) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Ancient Maze - #3December2020 Day1" (https://skfb.ly/6WUND) by LordDiego is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Jar 01" (https://skfb.ly/ooZFz) by Nichgon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

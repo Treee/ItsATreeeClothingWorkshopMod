@@ -268,4 +268,135 @@ class CfgVehicles
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactwave_small_co.paa"
 		};
 	};
+  class Land_srp_artifact_stonehenge_1: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactstonehenge_1.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactstonehenge_co.paa"
+		};
+	};
+  class Land_srp_artifact_stonehenge_2: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactstonehenge_2.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactstonehenge_co.paa"
+		};
+	};
+  class Land_srp_artifact_stonehenge_3: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactstonehenge_3.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactstonehenge_co.paa"
+		};
+	};
+  class Land_srp_artifact_stonehenge_4: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactstonehenge_4.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactstonehenge_co.paa"
+		};
+	};
+  class Land_srp_artifact_stonehenge_5: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactstonehenge_5.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactstonehenge_teardrop_co.paa"
+		};
+	};
+  class Land_srp_artifact_stonehenge_6: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactstonehenge_6.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactstonehenge_teardrop_co.paa"
+		};
+	};
+  class Land_srp_artifact_maze_idol: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_ancientmaze_idol.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactmaze_idol_co.paa"
+		};
+	};
+
+  class Land_srp_artifact_jar_large: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactjar_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactjar_co.paa"
+		};
+	};
+  class Land_srp_artifact_jar_medium: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactjar_medium.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactjar_co.paa"
+		};
+	};
+  class Land_srp_artifact_jar_small: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactjar_small.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactjar_co.paa"
+		};
+	};
 };
