@@ -122,7 +122,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="Survivalists_Mods\structures\specific\artifacts\data\srp_artifactclock_gear_mc.paa";
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource="tex";
 	class uvTransform
 	{
