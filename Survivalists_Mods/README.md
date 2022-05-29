@@ -804,6 +804,14 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Jar 01" (https://skfb.ly/ooZFz) by Nichgon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Broken Steampunk Clock" (https://skfb.ly/6T9V7) by VassKacsoHunor is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Grandfather Clock" (https://skfb.ly/6XN6V) by Lyskilde is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "CLOCK" (https://skfb.ly/Z9wG) by HASSAN is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Antique 1930s Clock" (https://skfb.ly/6AIGK) by Fishboe is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

@@ -399,4 +399,18 @@ class CfgVehicles
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactjar_co.paa"
 		};
 	};
+
+  class Land_srp_artifact_clock_gear: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_artifactclock_gear.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactclock_gear_co.paa"
+		};
+	};
 };
