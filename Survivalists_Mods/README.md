@@ -774,7 +774,9 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Vintage Slot Machine" (https://skfb.ly/G8Cn) by doomsentinel is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- "Roulette Table" (https://skfb.ly/o6JxN) by crittaa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Spin-N-Win Machine" (https://skfb.ly/6ZEIt) by Arman.Abgaryan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Gambling table" (https://skfb.ly/6tXZQ) by kwad_rat is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Crystal" (https://skfb.ly/o6rqw) by Zambur is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 

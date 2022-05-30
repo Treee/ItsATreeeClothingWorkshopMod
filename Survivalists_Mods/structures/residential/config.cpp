@@ -118,4 +118,32 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Casino_gamblingtable_1: HouseNoDestruct
+	{
+		scope=2;
+		model="Survivalists_Mods\structures\residential\srp_gamblingtable.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\residential\data\srp_gamblingtable_co.paa"
+		};
+	};
+  class SRP_Casino_spinnwin_1: HouseNoDestruct
+	{
+		scope=2;
+		model="Survivalists_Mods\structures\residential\srp_spinnwin.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\residential\data\srp_spinnwin_co.paa"
+		};
+	};
+
 };
