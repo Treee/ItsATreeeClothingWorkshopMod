@@ -658,6 +658,404 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_BirdMask: Clothing
+	{
+		scope=2;
+		displayName="Bird Mask";
+		descriptionShort="Espen Industries. A tribal bird mask";
+		model="Survivalists_Mods\characters\masks\srp_birdmask_g.p3d";
+		inventorySlot[]=
+		{
+			"Headgear",
+      "Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=500;
+		itemSize[]={3,2};
+		ragQuantity=0;
+		varWetMax=0.75;
+		heatIsolation=0.75;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_birdmask_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_birdmask_m.p3d";
+			female="Survivalists_Mods\characters\masks\srp_birdmask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\masks\data\srp_birdmask.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\masks\data\srp_birdmask.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\masks\data\srp_birdmask.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\masks\data\srp_birdmask.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\masks\data\srp_birdmask.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.75;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_DemonSkullMask: Clothing
+	{
+		scope=2;
+		displayName="Demon Skull Mask";
+		descriptionShort="Espen Industries. A replica of a pit fiend skull in the form of a mask";
+		model="Survivalists_Mods\characters\masks\srp_demonskullmask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Eyes"
+		};
+    headSelectionsToHide[]=
+		{
+			"Clipping_Welding_Mask"
+		};
+		weight=500;
+		itemSize[]={3,2};
+		ragQuantity=0;
+		varWetMax=0.75;
+		heatIsolation=0.50;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_demonskullmask_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_demonskullmask_m.p3d";
+			female="Survivalists_Mods\characters\masks\srp_demonskullmask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\masks\data\srp_demonskullmask.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\masks\data\srp_demonskullmask.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\masks\data\srp_demonskullmask.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\masks\data\srp_demonskullmask.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\masks\data\srp_demonskullmask.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.50;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_FakeTacticalMask: Clothing
+	{
+		scope=2;
+		displayName="Fake Tactical Mask";
+		descriptionShort="Espen Industries. A replica of a tactical mask";
+		model="Survivalists_Mods\characters\masks\srp_faketacticalmask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Eyes"
+		};
+    headSelectionsToHide[]=
+		{
+			"Clipping_Welding_Mask"
+		};
+		weight=500;
+		itemSize[]={3,2};
+		ragQuantity=0;
+		varWetMax=0.75;
+		heatIsolation=0.50;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_faketacticalmask_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_faketacticalmask_m.p3d";
+			female="Survivalists_Mods\characters\masks\srp_faketacticalmask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\masks\data\srp_faketacticalmask.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\masks\data\srp_faketacticalmask.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\masks\data\srp_faketacticalmask.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\masks\data\srp_faketacticalmask.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\masks\data\srp_faketacticalmask.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.50;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_InariFoxMask: Clothing
+	{
+		scope=2;
+		displayName="Inari Fox Mask";
+		descriptionShort="Espen Industries. A replica of an Inari Fox mask";
+		model="Survivalists_Mods\characters\masks\srp_inarifoxmask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Eyes"
+		};
+    headSelectionsToHide[]=
+		{
+			"Clipping_Welding_Mask"
+		};
+		weight=500;
+		itemSize[]={3,2};
+		ragQuantity=0;
+		varWetMax=0.75;
+		heatIsolation=0.50;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_inarifoxmask_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_inarifoxmask_m.p3d";
+			female="Survivalists_Mods\characters\masks\srp_inarifoxmask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\masks\data\srp_inarifoxmask.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\masks\data\srp_inarifoxmask.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\masks\data\srp_inarifoxmask.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\masks\data\srp_inarifoxmask.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\masks\data\srp_inarifoxmask.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.50;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_GeishaMask: Clothing
+	{
+		scope=2;
+		displayName="Geisha Mask";
+		descriptionShort="Espen Industries. A replica of an Ghost in the Shell Geisha mask";
+		model="Survivalists_Mods\characters\masks\srp_geishamask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Eyes"
+		};
+    headSelectionsToHide[]=
+		{
+			"Clipping_Welding_Mask"
+		};
+		weight=500;
+		itemSize[]={3,2};
+		ragQuantity=0;
+		varWetMax=0.75;
+		heatIsolation=0.50;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "maskeyes"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\masks\data\srp_geishamask_co.paa",
+			"Survivalists_Mods\characters\masks\data\srp_geishamaskeyes_co.paa",
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\masks\srp_geishamask_m.p3d";
+			female="Survivalists_Mods\characters\masks\srp_geishamask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\masks\data\srp_geishamask.rvmat", "Survivalists_Mods\characters\masks\data\srp_geishamaskeyes.rvmat"}},
+						{0.7,	{	"Survivalists_Mods\characters\masks\data\srp_geishamask.rvmat", "Survivalists_Mods\characters\masks\data\srp_geishamaskeyes.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\characters\masks\data\srp_geishamask.rvmat", "Survivalists_Mods\characters\masks\data\srp_geishamaskeyes.rvmat"}},
+						{0.3,	{	"Survivalists_Mods\characters\masks\data\srp_geishamask.rvmat", "Survivalists_Mods\characters\masks\data\srp_geishamaskeyes.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\characters\masks\data\srp_geishamask.rvmat", "Survivalists_Mods\characters\masks\data\srp_geishamaskeyes.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.50;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
   // ------------------------------------------ MVS Redux
 	class SRP_S10Respirator_Colorbase: GP5GasMask
 	{

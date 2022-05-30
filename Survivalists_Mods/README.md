@@ -814,6 +814,18 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Antique 1930s Clock" (https://skfb.ly/6AIGK) by Fishboe is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Inari Fox Mask" (https://skfb.ly/6UBtQ) by Doverlock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Ghost in the Shell Geisha Mask" (https://skfb.ly/6BDTn) by naxete is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Demon Mask" (https://skfb.ly/orqrM) by egorova.e is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "FACE TAKTICAL MASK" (https://skfb.ly/o8rAt) by Idmental is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Evil Bird Mask" (https://skfb.ly/otLRF) by Maria Kokova is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Steampunk Goggles" (https://skfb.ly/osQCn) by ehcawen is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

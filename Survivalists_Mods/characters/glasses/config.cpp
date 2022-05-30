@@ -73,6 +73,20 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_SteamPunkGoggles: AviatorGlasses
+	{
+		scope=2;
+		displayName="Steam Punk Goggles";
+    rotationFlags=64;
+    descriptionShort="Espen Industries. Through steam technology, these goggles offer maximum protection from air.";
+		model="Survivalists_Mods\characters\glasses\srp_steampunkgoggles_g.p3d";
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\glasses\srp_steampunkgoggles_m.p3d";
+			female="Survivalists_Mods\characters\glasses\srp_steampunkgoggles_m.p3d";
+		};
+	};
+
   class SRP_Goggles_Face: Clothing
   {	
 		scope=2;
