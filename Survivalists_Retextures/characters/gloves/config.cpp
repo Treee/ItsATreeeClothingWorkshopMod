@@ -19,6 +19,8 @@ class CfgVehicles
 	class WorkingGloves_ColorBase;
 	class NBCGloves_ColorBase;
 	class TacticalGloves_Black;
+  class SRP_BoxingGloves_Colorbase;
+
 	class WorkingGloves_White: WorkingGloves_ColorBase
 	{
 		scope=2;
@@ -174,4 +176,65 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\gloves\data\TacticalG57.paa"
 		};
 	};
+
+  class SRP_BoxingGloves_Red: SRP_BoxingGloves_Colorbase
+  {
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\gloves\data\srp_boxinggloves_co.paa"
+    };
+  };
+  class SRP_BoxingGloves_Blue: SRP_BoxingGloves_Colorbase
+  {
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\gloves\data\srp_boxinggloves_blue_co.paa"
+    };
+  };
+  class SRP_BoxingGloves_Green: SRP_BoxingGloves_Colorbase
+  {
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\gloves\data\srp_boxinggloves_green_co.paa"
+    };
+  };
+  class SRP_BoxingGloves_Grey: SRP_BoxingGloves_Colorbase
+  {
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\gloves\data\srp_boxinggloves_grey_co.paa"
+    };
+  };
+  class SRP_BoxingGloves_Pink: SRP_BoxingGloves_Colorbase
+  {
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\gloves\data\srp_boxinggloves_pink_co.paa"
+    };
+  };
 };

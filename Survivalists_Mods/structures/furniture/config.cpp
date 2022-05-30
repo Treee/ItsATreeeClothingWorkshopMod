@@ -27,6 +27,20 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\furniture\SRP_BarCounter.p3d";
 	};
 
+  class Land_srp_furnature_punchingbag: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\furniture\srp_punchingbag.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\furniture\data\srp_punchingbag_co.paa"
+		};
+	};
+
   class SRP_Furniture_BarCounter_Kit: SRP_KitBase
 	{
 		scope=2;

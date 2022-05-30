@@ -46,6 +46,8 @@ class CfgVehicles
   class SRP_Tac_Vest_Green;
   class SRP_Tac_Tec_Vest_Green;
   class SRP_Small_Bottle_Tan;
+
+  class SRP_Ratnik_Armor_Green;
   
 	class SRP_PoliceVest: PoliceVest
 	{

@@ -100,4 +100,43 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_BoxingGloves_Colorbase: TacticalGloves_ColorBase
+  {
+    scope=0;
+    displayName="Boxing Gloves";
+    descriptionShort="Espen Industries. Boxing gloves manufactures to soften even the hardest blows.";
+		model="Survivalists_Mods\characters\gloves\srp_boxinggloves_g.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\gloves\data\srp_boxinggloves_co.paa"
+    };
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\gloves\srp_boxinggloves_m.p3d";
+			female="Survivalists_Mods\characters\gloves\srp_boxinggloves_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=15000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\gloves\data\srp_boxinggloves.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\gloves\data\srp_boxinggloves.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\gloves\data\srp_boxinggloves.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\gloves\data\srp_boxinggloves.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\gloves\data\srp_boxinggloves.rvmat"}}
+					};
+				};
+			};
+		};
+  };
 };
