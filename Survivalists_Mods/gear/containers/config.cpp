@@ -596,6 +596,177 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_BookCaseCube_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Cubed Book Case Kit";
+		descriptionShort="A cubed book case Kit";
+	};
+  class SRP_BookCaseCube: Container_Base //new
+	{
+		scope=2;
+		displayName="Book Case - Cubed";
+		descriptionShort="An easy to build cube book case.";
+		model="Survivalists_Mods\gear\containers\srp_bookcasecube.p3d";
+		attachments[]=
+		{
+			"Melee",
+			"Feet",
+			"Gloves",
+			"Eyewear",
+			"Headgear",
+			"Pistol"
+		};
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		class Cargo
+		{
+			itemsCargoSize[]={8,8};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Display
+			{
+				name="Display";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee",
+					"Feet",
+					"Gloves",
+					"Eyewear",
+					"Headgear",
+					"Pistol"
+				};
+				icon="shoulderright";
+			};
+		};
+	};
+
+  class SRP_GarbageBin_ColorBase: Container_Base //new
+	{
+		scope=0;
+		displayName="Garbage Bin - Base";
+		descriptionShort="A large garbage bin to throw things away. Someone seems to clean it every 10 minutes.";
+		model="Survivalists_Mods\gear\containers\srp_garbagebin.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={10,15};
+    itemsCargoSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_garbagebin_co.paa"
+    };
+	};
+
+  class SRP_GarbageBin_Waste: SRP_GarbageBin_ColorBase //new
+	{
+		scope=2;
+		displayName="Garbage Bin - Waste";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_garbagebin_co.paa"
+    };
+	};
+  class SRP_GarbageBin_Recycling: SRP_GarbageBin_ColorBase //new
+	{
+		scope=2;
+		displayName="Garbage Bin - Recycling";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_garbagebin_recycle_co.paa"
+    };
+	};
+  class SRP_GarbageBin_Compost: SRP_GarbageBin_ColorBase //new
+	{
+		scope=2;
+		displayName="Garbage Bin - Compost";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_garbagebin_compost_co.paa"
+    };
+	};
+
+  class SRP_GuitarCase_ColorBase: Container_Base //new
+	{
+		scope=0;
+		displayName="Guitar Case - Base";
+		descriptionShort="A guitar case. Can hold a wide variety of things.";
+		model="Survivalists_Mods\gear\containers\srp_guitarcase.p3d";
+		carveNavmesh=1;
+		canBeDigged=0;
+		heavyItem=1;
+		weight=10000;
+		itemSize[]={4,8};
+    itemsCargoSize[]={3,3};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_guitarcase_co.paa"
+    };
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+	};
+
+  class SRP_GuitarCase_Blue_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Guitar Case Kit - Blue";
+		descriptionShort="A kit for placing a guitar case.";
+	};
+
+  class SRP_GuitarCase_Blue: SRP_GuitarCase_ColorBase //new
+	{
+		scope=2;
+		displayName="Guitar Case - Blue";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_guitarcase_co.paa"
+    };
+	};
+
   class SRP_TetrisShelfKit_Kit: SRP_KitBase //new
 	{
 		scope=2;

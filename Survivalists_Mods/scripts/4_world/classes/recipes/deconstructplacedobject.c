@@ -297,6 +297,8 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
     InsertIngredient(0,"SRP_MetalBarrel_Yellow");
     InsertIngredient(0,"SRP_MetalBarrel_Concrete");
 
+    InsertIngredient(0,"SRP_BookCaseCube");
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
@@ -791,6 +793,7 @@ class Deconstruct_IntermediaryWoodenShelfKit extends Deconstruct_ObjectIntoKitBa
     InsertIngredient(0,"SRP_WoodenShelfGroundTall");
     InsertIngredient(0,"SRP_GunShelfWall");
     InsertIngredient(0,"SRP_GunShelfGround");
+    InsertIngredient(0,"SRP_BookCaseCube");
 
     AddResult("SRP_WoodenShelfKit_Kit");//add results here
 	}

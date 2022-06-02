@@ -27,7 +27,19 @@ class SRP_PainkillerTablets extends PainkillerTablets
 	}
 }
 
-class SRP_Dexamphetamine extends SRP_PainkillerTablets{};
+class SRP_Dexamphetamine extends SRP_PainkillerTablets
+{
+  override void OnConsume(float amount, PlayerBase consumer)
+	{
+    super.OnConsume(amount, consumer);
+		if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_EPINEPHRINE ) )//effectively resets the timer
+		{
+			consumer.GetModifiersManager().DeactivateModifier( eModifiers.MDF_EPINEPHRINE );
+		}
+		consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
+	}
+};
+
 class SRP_Analgine extends SRP_PainkillerTablets{};
 class SRP_Drotaverine extends SRP_PainkillerTablets{};
 

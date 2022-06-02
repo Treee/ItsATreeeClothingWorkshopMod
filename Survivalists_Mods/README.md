@@ -830,6 +830,18 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Boxing Glove" (https://skfb.ly/6YPXK) by Pedro Perim is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
 
+- "Garbage Bin" (https://skfb.ly/onWL7) by Glen Ortiz is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Book shelf" (https://skfb.ly/6WWAZ) by Verdant is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Coat Rack" (https://skfb.ly/ooyZL) by Whostea is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Coat Rack" (https://skfb.ly/68XKy) by martn00 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Coat Rack" (https://skfb.ly/6WF9C) by KurtSteiner is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "C4 Guitar Case" (https://skfb.ly/69GsB) by Warkarma is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

@@ -283,6 +283,8 @@ class SRP_LockerMilitary_Black_Kit extends SRP_KitBase{};
 class SRP_LockerMilitary_Gray_Kit extends SRP_KitBase{};
 class SRP_LockerMilitary_Tan_Kit extends SRP_KitBase{};
 
+class SRP_GuitarCase_Blue_Kit extends SRP_KitBase{};
+
 // This crafted item is not placeable. Most of these represent intermediate kits
 class SRP_IntermediateCraftingKitBase extends ItemBase
 {

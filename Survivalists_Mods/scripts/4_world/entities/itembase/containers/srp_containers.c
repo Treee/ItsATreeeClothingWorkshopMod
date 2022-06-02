@@ -203,6 +203,36 @@ class SRP_Furniture_WoodBenchSmall extends SRP_DeployableContainer_Base{};
 class SRP_Furniture_WoodBenchSlim extends SRP_DeployableContainer_Base{};
 class SRP_Furniture_PileOfPlanks extends SRP_DeployableContainer_Base{};
 
+class SRP_GarbageBin_ColorBase extends SRP_DeployableContainer_Base
+{
+  void SRP_GarbageBin_ColorBase()
+  {
+    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(EmptyContents, 600000, false);
+  }
+
+  void EmptyContents()
+  {
+    if (HasAnyCargo())
+    {
+      CargoBase cargo = GetInventory().GetCargo();
+      EntityAI item;
+      for (int i = 0; i < cargo.GetItemCount(); i++)
+      {
+        if (Class.CastTo(item, cargo.GetItem(i)))
+        {
+          item.Delete();
+        }        
+      }
+    }
+    // call every 10 minutes
+    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(EmptyContents, 600000, false);
+  }
+};
+
+class SRP_GarbageBin_Waste extends SRP_GarbageBin_ColorBase{};
+class SRP_GarbageBin_Recycling extends SRP_GarbageBin_ColorBase{};
+class SRP_GarbageBin_Compost extends SRP_GarbageBin_ColorBase{};
+
 class SRP_CollectableSign_Base extends SRP_DeployableContainer_Base
 {
   override bool CanPutInCargo( EntityAI parent )
@@ -302,6 +332,8 @@ class SRP_Cardboardbox extends SRP_Container_Base{};
 
 class SRP_StonePile_Small extends SRP_Container_Base{};
 class SRP_StonePile_Large extends SRP_Container_Base{};
+
+class SRP_BookCaseCube extends SRP_Container_Base{};
 
 class SRP_BuildingComponentFrame_ColorBase extends SRP_Container_Base{};
 class SRP_BuildingComponentFrame_WornRamp extends SRP_BuildingComponentFrame_ColorBase{};
@@ -652,6 +684,9 @@ class SRP_Openable_Container extends Barrel_ColorBase
 };
 
 class SRP_BedsideTableMetal extends SRP_Openable_Container{};
+
+class SRP_GuitarCase_ColorBase extends SRP_Openable_Container{};
+class SRP_GuitarCase_Blue extends SRP_GuitarCase_ColorBase{};
 
 class SRP_WoodenBox_Locked extends SRP_Openable_Container
 {
