@@ -3060,6 +3060,20 @@ class CfgVehicles
     model="Survivalists_Mods\gear\containers\srp_displaycase_hook_patcharmband.p3d";
   };
 
+  class SRP_WoodenDisplayKit_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Wooden Display Kit";
+		descriptionShort="A Wooden Display Kit - Still needs a bit of work. Combine with other materials to finish.";
+    attachments[]=
+    {
+      "Material_Nails",
+      "Material_WoodenPlanks",
+      "Material_MetalSheets",
+      "Material_MetalWire"
+    };
+	};
+
   class SRP_CoatRack_Basic_Kit: SRP_KitBase // new
 	{
 		scope=2;

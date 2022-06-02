@@ -7,6 +7,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
+      "DZ_Data",
 			"DZ_Weapons_Melee",
       "Survivalists_Mods"
 		};
@@ -15,6 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
   class BaseballBat;
+  class Inventory_Base;
 
   class SRP_KitBase;
 
@@ -47,4 +49,83 @@ class CfgVehicles
       "Material_Shelter_Rope"      
 		};
 	};
+
+//====================================================================================== STAFFS
+  class SRP_Staff_Wooden_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Staff";
+		descriptionShort="A long staff.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_staffwooden.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden_co.paa"
+		};
+		rotationFlags=16;
+		weight=500;
+		itemSize[]={1,8};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		suicideAnim="spear";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSpear";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeSpear_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeSpear_Heavy";
+				range=3.7;
+			};
+		};
+	};
+
+  class SRP_Staff_Wooden_Brown: SRP_Staff_Wooden_ColorBase
+  {
+    scope=2;
+		displayName="Wooden Staff";
+		descriptionShort="A long wooden staff.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden_co.paa"
+		};
+  };
 };

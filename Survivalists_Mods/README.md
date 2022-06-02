@@ -842,6 +842,20 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "C4 Guitar Case" (https://skfb.ly/69GsB) by Warkarma is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Skull Staff" (https://skfb.ly/6xxNt) by Devin Eggleston is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Wizard Staff" (https://skfb.ly/6WTSE) by Gw1p is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Staff" (https://skfb.ly/6RCvO) by Flackim is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Exterremancer's Staff - Weapon Design" (https://skfb.ly/ot79T) by Mikael Rune is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Moonlight Warstaff - Weaponcraft" (https://skfb.ly/o98BQ) by Joan Tieu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- ""The Forgotten Spear" West African Style Spear" (https://skfb.ly/6zMWV) by Shaquille Horton-Mcglaston is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Stylized Purple Copper Staff" (https://skfb.ly/6WNzE) by ShiraYa is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

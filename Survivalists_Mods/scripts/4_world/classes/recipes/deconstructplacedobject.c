@@ -803,6 +803,18 @@ class Deconstruct_IntermediaryWoodenShelfKit extends Deconstruct_ObjectIntoKitBa
     AddResult("SRP_WoodenShelfKit_Kit");//add results here
 	}
 };
+class Deconstruct_IntermediaryWoodenDisplayKit extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();
+    InsertIngredient(0,"SRP_CoatRack_Basic");
+    InsertIngredient(0,"SRP_CoatRack_Fancy");
+    InsertIngredient(0,"SRP_CoatRack_Simple");
+
+    AddResult("SRP_WoodenDisplayKit_Kit");//add results here
+	}
+};
 class Deconstruct_IntermediaryMetalShelfKit extends Deconstruct_ObjectIntoKitBase
 {	
 	override void Init()

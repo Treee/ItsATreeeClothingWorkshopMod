@@ -341,9 +341,11 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
     return false;
   }
 };
+
 class SRP_TetrisShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_BuildingComponentFrame_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WoodenShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_WoodenDisplayKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_MetalShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_BarricadeKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_StreetLightKit_Kit extends SRP_IntermediateCraftingKitBase{};
