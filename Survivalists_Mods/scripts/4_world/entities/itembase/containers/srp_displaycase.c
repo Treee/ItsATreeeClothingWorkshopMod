@@ -238,3 +238,28 @@ class SRP_GlassDisplayCase_Hook_ArmbandPatch extends SRP_GlassDisplayCase_Hook
 		return ( attachment && (attachment.IsKindOf("SRP_PatchFlag_ColorBase") || attachment.IsKindOf("SRP_PatchLogo_ColorBase")) );
 	}
 };
+
+class SRP_CoatRack_Base extends DeployableContainer_Base
+{
+	override void SetActions()
+	{
+		super.SetActions();
+		RemoveAction(ActionTakeItem);
+    RemoveAction(ActionSwapItemToHands);
+		RemoveAction(ActionTakeItemToHands);
+	}
+
+  override bool CanPutInCargo( EntityAI parent )
+	{
+		return false;
+	}
+  
+  override bool CanPutIntoHands (EntityAI parent)
+  {
+    return false;
+  }
+};
+
+class SRP_CoatRack_Basic extends SRP_CoatRack_Base{};
+class SRP_CoatRack_Fancy extends SRP_CoatRack_Base{};
+class SRP_CoatRack_Simple extends SRP_CoatRack_Base{};

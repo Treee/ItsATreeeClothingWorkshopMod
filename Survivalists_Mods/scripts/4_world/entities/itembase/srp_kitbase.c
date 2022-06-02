@@ -51,6 +51,10 @@ class SRP_GlassDisplayCase_Kit extends SRP_KitBase{};
 class SRP_GlassDisplayCaseLarge_Kit extends SRP_KitBase{};
 class SRP_MuseumTable_Kit extends SRP_KitBase{};
 
+class SRP_CoatRack_Basic_Kit extends SRP_KitBase{};
+class SRP_CoatRack_Fancy_Kit extends SRP_KitBase{};
+class SRP_CoatRack_Simple_Kit extends SRP_KitBase{};
+
 class SRP_Cardboardbox_Kit extends SRP_KitBase{};
 class SRP_BedsideTable_Kit extends SRP_KitBase{};
 class SRP_BedsideTableMetal_Kit extends SRP_KitBase{};

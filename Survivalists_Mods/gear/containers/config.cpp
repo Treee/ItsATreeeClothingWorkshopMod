@@ -3060,6 +3060,204 @@ class CfgVehicles
     model="Survivalists_Mods\gear\containers\srp_displaycase_hook_patcharmband.p3d";
   };
 
+  class SRP_CoatRack_Basic_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Coat Rack Kit - Basic";
+		descriptionShort="A coat rack kit that is used to display armbands.";
+	};
+  class SRP_CoatRack_Basic: Container_Base 
+	{
+		scope=2;
+		displayName="Coat Rack - Basic";
+		descriptionShort="A display stand";
+		model="Survivalists_Mods\gear\containers\srp_coatrackbasic.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		itemsCargoSize[]={0,0};
+    allowOwnedCargoManipulation="true";
+    attachments[]=
+    {
+      "SRP_DisplayHook1",
+      "SRP_DisplayHook2",
+      "SRP_DisplayHook3",
+      "SRP_DisplayHook4"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_coatrackbasic_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_CoatRack_Fancy_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Coat Rack Kit - Fancy";
+		descriptionShort="A coat rack kit that is used to display armbands.";
+	};
+  class SRP_CoatRack_Fancy: Container_Base 
+	{
+		scope=2;
+		displayName="Coat Rack - Fancy";
+		descriptionShort="A display stand";
+		model="Survivalists_Mods\gear\containers\srp_coatrackfancy.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		itemsCargoSize[]={0,0};
+    allowOwnedCargoManipulation="true";
+    attachments[]=
+    {
+      "SRP_DisplayHook1",
+      "SRP_DisplayHook2",
+      "SRP_DisplayHook3",
+      "SRP_DisplayHook4",
+      "SRP_DisplayHook5",
+      "SRP_DisplayHook6",
+      "SRP_DisplayHook7",
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_coatrackfancy_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_CoatRack_Simple_Kit: SRP_KitBase // new
+	{
+		scope=2;
+		displayName="Coat Rack Kit - Simple";
+		descriptionShort="A coat rack kit that is used to display armbands.";
+	};
+  class SRP_CoatRack_Simple: Container_Base 
+	{
+		scope=2;
+		displayName="Coat Rack - Simple";
+		descriptionShort="A display stand";
+		model="Survivalists_Mods\gear\containers\srp_coatracksimple.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+		itemsCargoSize[]={0,0};
+    allowOwnedCargoManipulation="true";
+    attachments[]=
+    {
+      "SRP_DisplayHook1",
+      "SRP_DisplayHook2",
+      "SRP_DisplayHook3",
+      "SRP_DisplayHook4"
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_coatracksimple_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
   
   class SRP_MuseumTable_Kit: SRP_KitBase // new
 	{

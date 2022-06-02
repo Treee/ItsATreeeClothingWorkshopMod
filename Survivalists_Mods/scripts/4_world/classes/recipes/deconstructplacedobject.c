@@ -298,6 +298,11 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
     InsertIngredient(0,"SRP_MetalBarrel_Concrete");
 
     InsertIngredient(0,"SRP_BookCaseCube");
+    InsertIngredient(0,"SRP_GuitarCase_ColorBase");
+
+    InsertIngredient(0,"SRP_CoatRack_Basic");
+    InsertIngredient(0,"SRP_CoatRack_Fancy");
+    InsertIngredient(0,"SRP_CoatRack_Simple");
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
