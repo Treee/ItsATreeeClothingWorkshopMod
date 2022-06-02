@@ -3082,7 +3082,15 @@ class CfgVehicles
       "SRP_DisplayHook1",
       "SRP_DisplayHook2",
       "SRP_DisplayHook3",
-      "SRP_DisplayHook4"
+      "SRP_DisplayHook4",
+      "SRP_DisplayHook5",
+      "SRP_DisplayHook6",
+      "SRP_DisplayHook7",
+      "SRP_DisplayHook8",
+      "SRP_DisplayHook9",
+      "SRP_DisplayHook10",
+      "SRP_DisplayHook11",
+      "SRP_DisplayHook12",
     };
     hiddenSelections[]=
     {
@@ -3151,6 +3159,11 @@ class CfgVehicles
       "SRP_DisplayHook5",
       "SRP_DisplayHook6",
       "SRP_DisplayHook7",
+      "SRP_DisplayHook8",
+      "SRP_DisplayHook9",
+      "SRP_DisplayHook10",
+      "SRP_DisplayHook11",
+      "SRP_DisplayHook12",
     };
     hiddenSelections[]=
     {
@@ -3215,7 +3228,15 @@ class CfgVehicles
       "SRP_DisplayHook1",
       "SRP_DisplayHook2",
       "SRP_DisplayHook3",
-      "SRP_DisplayHook4"
+      "SRP_DisplayHook4",
+      "SRP_DisplayHook5",
+      "SRP_DisplayHook6",
+      "SRP_DisplayHook7",
+      "SRP_DisplayHook8",
+      "SRP_DisplayHook9",
+      "SRP_DisplayHook10",
+      "SRP_DisplayHook11",
+      "SRP_DisplayHook12",
     };
     hiddenSelections[]=
     {
