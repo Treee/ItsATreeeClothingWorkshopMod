@@ -113,7 +113,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_Staff_Wooden_Brown: SRP_Staff_Wooden_ColorBase
   {
     scope=2;
@@ -193,7 +192,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_Staff_Skull_Basic: SRP_Staff_Skull_ColorBase
   {
     scope=2;
@@ -207,6 +205,82 @@ class CfgVehicles
     {
       "Survivalists_Mods\weapons\melee\blunt\data\srp_staffskullhead_co.paa",
       "Survivalists_Mods\weapons\melee\blunt\data\srp_staffskullhandle_co.paa",      
+		};
+  };
+
+  class SRP_Staff_Sun_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Sun Staff";
+		descriptionShort="A long staff with a metal ornament at the top.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_staffsun.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun_co.paa",  
+		};
+		rotationFlags=16;
+		weight=500;
+		itemSize[]={1,8};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		suicideAnim="spear";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSpear";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeSpear_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeSpear_Heavy";
+				range=3.7;
+			};
+		};
+	};
+  class SRP_Staff_Sun_Basic: SRP_Staff_Sun_ColorBase
+  {
+    scope=2;
+		displayName="Sun Staff - Basic";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun_co.paa"    
 		};
   };
 };
