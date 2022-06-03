@@ -4346,4 +4346,40 @@ class CfgVehicles
 			allowOwnedCargoManipulation=1;
 		};
   };
+
+  // class SRP_Letter_Holder: Container_Base
+	// {
+	// 	scope=2;
+	// 	displayName="Letter Holder";
+	// 	descriptionShort="A letter folder used for holding letters";
+	// 	model="Survivalists_Mods\gear\containers\SRP_Letter_Holder.p3d";
+	// 	inventorySlot[]=
+	// 	{
+	// 		"Belt_Left"
+	// 	};
+  //   attachments[]=
+  //   {
+  //     "SRP_CourierNote1",
+  //     "SRP_CourierNote2",
+  //     "SRP_CourierNote3",
+  //     "SRP_CourierNote4",
+  //     "SRP_CourierNote5",
+  //     "SRP_CourierNote6",
+  //     "SRP_CourierNote7",
+  //     "SRP_CourierNote8",
+  //     "SRP_CourierNote9",
+  //     "SRP_CourierNote10",
+  //   };
+	// 	weight=440;
+	// 	itemSize[]={2,3};
+	// 	itemsCargoSize[]={2,2};
+	// 	hiddenSelections[]=
+	// 	{
+	// 		"zbytek"
+	// 	};
+	// 	hiddenSelectionsTextures[]=
+	// 	{
+	// 		"Survivalists_Mods\gear\containers\data\Letter_Holder_co.paa"
+	// 	};
+	// };
 };
