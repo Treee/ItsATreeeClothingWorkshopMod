@@ -283,4 +283,156 @@ class CfgVehicles
       "Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun_co.paa"    
 		};
   };
+
+  class SRP_Staff_Copper_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Copper Staff";
+		descriptionShort="A long staff made from copper.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_staffcopper.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffcopper_co.paa",  
+		};
+		rotationFlags=16;
+		weight=500;
+		itemSize[]={1,8};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		suicideAnim="spear";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffcopper.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffcopper.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffcopper.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffcopper.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffcopper.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSpear";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeSpear_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeSpear_Heavy";
+				range=3.7;
+			};
+		};
+	};
+  class SRP_Staff_Copper_Basic: SRP_Staff_Copper_ColorBase
+  {
+    scope=2;
+		displayName="Copper Staff - Basic";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffcopper_co.paa"    
+		};
+  };
+
+  class SRP_Staff_Spear_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Spear Staff";
+		descriptionShort="A long staff with a spear embedded.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_staffspear.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear_co.paa",  
+		};
+		rotationFlags=16;
+		weight=500;
+		itemSize[]={1,8};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		suicideAnim="spear";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSpear";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeSpear_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeSpear_Heavy";
+				range=3.7;
+			};
+		};
+	};
+  class SRP_Staff_Spear_Basic: SRP_Staff_Spear_ColorBase
+  {
+    scope=2;
+		displayName="Spear Staff - Basic";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear_co.paa"    
+		};
+  };
 };
