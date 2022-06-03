@@ -112,6 +112,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Staff_Sun_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_spear.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/advanced_spear.anm"); 
     pType.AddItemInHandsProfileIK("SRP_Staff_Copper_Basic", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_spear.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/advanced_spear.anm"); 
     pType.AddItemInHandsProfileIK("SRP_Staff_Spear_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_spear.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/advanced_spear.anm"); 
+    pType.AddItemInHandsProfileIK("SRP_Staff_Moon_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_spear.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/advanced_spear.anm"); 
   }
 
   override void RegisterHeavy( DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior )

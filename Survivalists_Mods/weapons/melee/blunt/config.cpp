@@ -435,4 +435,80 @@ class CfgVehicles
       "Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear_co.paa"    
 		};
   };
+
+  class SRP_Staff_Moon_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Moon Staff";
+		descriptionShort="A long staff with a moon symbol on top.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_staffmoon.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffmoon_co.paa",  
+		};
+		rotationFlags=16;
+		weight=500;
+		itemSize[]={1,8};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		suicideAnim="spear";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffmoon.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffmoon.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffmoon.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffmoon.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffmoon.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSpear";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeSpear_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeSpear_Heavy";
+				range=3.7;
+			};
+		};
+	};
+  class SRP_Staff_Moon_Basic: SRP_Staff_Moon_ColorBase
+  {
+    scope=2;
+		displayName="Moon Staff - Basic";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_staffmoon_co.paa"    
+		};
+  };
 };
