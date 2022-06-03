@@ -1721,6 +1721,81 @@ class CfgVehicles
 		descriptionShort="A large rock with smooth surfaces.";
   };
 
+  class SRP_Ladder_Opened_Kit: SRP_KitBase  // new
+	{
+		scope=2;
+		displayName="Ladder";
+		descriptionShort="A ladder that can be stood up.";
+		model="Survivalists_Mods\gear\camping\srp_ladder_closed.p3d";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_ladder_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  
+  class SRP_Ladder_Opened: Inventory_Base  // new
+	{
+		scope=2;
+		displayName="Ladder";
+		descriptionShort="A ladder that can be stood up.";
+		model="Survivalists_Mods\gear\camping\srp_ladder_opened.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemsCargoSize[]={0,0};
+		physLayer="item_large";
+    isTakeable=0;
+    itemBehaviour=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_ladder_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_ladder.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
 //============================================== DECORATIVE LIGHTS
 
   class SRP_DecorativeLightKit_Kit: SRP_KitBase

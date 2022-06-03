@@ -17,12 +17,16 @@ class SRP_KitBase extends ItemBase
   override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
 	{
 		super.OnPlacementComplete(player, position, orientation);
-		if (GetGame().IsServer())
+		if (GetGame().IsDedicatedServer())
 		{
 			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(GetKitItemName(), position, ECE_PLACE_ON_SURFACE));
 			kitItem.SetPosition(position);
 			kitItem.SetOrientation(orientation);
 
+      if (m_AdminLog)
+      {            
+        m_AdminLog.OnPlacementComplete( player, this);
+      }
       GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(Delete, 1000, false);
 		}
 	}
@@ -46,6 +50,8 @@ class SRP_KitBase extends ItemBase
 };
 // If you add a new kit, add it to this list so it gets the right stuff
 //craftable kits
+class SRP_Ladder_Opened_Kit extends SRP_KitBase{};
+
 class SRP_HoneyCombStand_Kit extends SRP_KitBase{};
 class SRP_GlassDisplayCase_Kit extends SRP_KitBase{};
 class SRP_GlassDisplayCaseLarge_Kit extends SRP_KitBase{};

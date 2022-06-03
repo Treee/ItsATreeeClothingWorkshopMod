@@ -42,5 +42,7 @@ modded class ActionConstructor
     actions.Insert(ActionPullSlotMachineLever);
 
     actions.Insert(ActionForageBush);
+
+    actions.Insert(ActionPackLadder);
 	}
 };

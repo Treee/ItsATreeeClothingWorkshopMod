@@ -652,5 +652,6 @@ modded class PlayerBase
     AddAction(ActionFlipPlayingCard, InputActionMap);      
     AddAction(ActionTriggerDecontaminationShower, InputActionMap);      
     AddAction(ActionForageBush, InputActionMap);      
+    AddAction(ActionPackLadder, InputActionMap);      
   }
 }
