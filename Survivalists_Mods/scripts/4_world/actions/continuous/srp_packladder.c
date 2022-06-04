@@ -27,7 +27,7 @@ class ActionPackLadder: ActionContinuousBase
 	{
 		if( !target || !player) return false;
 
-    Print("targets " + target.GetObject());
+    // Print("targets " + target.GetObject());
 
 		SRP_Ladder_Opened ladder;
 		if( Class.CastTo(ladder, target.GetObject()))

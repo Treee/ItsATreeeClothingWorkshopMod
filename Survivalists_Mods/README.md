@@ -862,7 +862,7 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Firelink greatsword - Gwyn phase" (https://skfb.ly/opSJo) by Michal Cavrnoch is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- "Highland Officers Sword" (https://skfb.ly/otrRR) by Arnold Konrad is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+- "Set of Warhammers" (https://skfb.ly/otuzt) by Asylum Nox is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 

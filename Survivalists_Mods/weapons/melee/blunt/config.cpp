@@ -20,6 +20,85 @@ class CfgVehicles
 
   class SRP_KitBase;
 
+//====================================================================================== HAMMERS
+  class SRP_WarHammer_Pike_ColorBase: Inventory_Base
+	{
+		scope=2;
+		displayName="Warhammer - Pike";
+		descriptionShort="A warhammer with a pike on the end.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers.p3d";
+		// hiddenSelections[]=
+		// {
+		// 	"zbytek"
+		// };
+    // hiddenSelectionsTextures[]=
+    // {
+    //   "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher_co.paa"
+		// };
+		rotationFlags=16;
+		weight=500;
+		itemSize[]={1,8};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		suicideAnim="spear";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+		// class DamageSystem
+		// {
+		// 	class GlobalHealth
+		// 	{
+		// 		class Health
+		// 		{
+		// 			hitpoints=100;
+		// 			healthLevels[]=
+		// 			{
+		// 				{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
+    //         {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
+    //         {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
+    //         {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
+    //         {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}}
+		// 			};
+		// 		};
+		// 	};
+		// };
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSpear";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeSpear_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeSpear_Heavy";
+				range=3.7;
+			};
+		};
+	};
+  // class SRP_WarHammer_Pike_Basic: SRP_WarHammer_Pike_ColorBase
+  // {
+  //   scope=2;
+	// 	displayName="Wooden Staff";
+	// 	descriptionShort="A long wooden staff.";
+	// 	hiddenSelections[]=
+	// 	{
+	// 		"zbytek"
+	// 	};
+  //   hiddenSelectionsTextures[]=
+  //   {
+  //     "Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden_co.paa"
+	// 	};
+  // };
+
+//====================================================================================== MACE
   class SRP_WeaponBluntKit_Kit: SRP_KitBase //new
 	{
 		scope=2;
