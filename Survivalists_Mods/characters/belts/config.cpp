@@ -261,6 +261,7 @@ class CfgVehicles
     attachments[]=
 		{
       "SRP_KatanaSheath",
+      "SRP_MasterSwordSheath",
 			"Belt_Left",
 			"Chemlight",
 			"Belt_Back",
@@ -285,6 +286,37 @@ class CfgVehicles
 		{
 			male="Survivalists_Mods\characters\belts\Military_Belt.p3d";
 			female="Survivalists_Mods\characters\belts\Military_Belt.p3d";
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Attachments
+			{
+				name="$STR_attachment_accessories";
+				description="";
+				attachmentSlots[]=
+				{
+          "Belt_Left",
+          "Chemlight",
+          "Belt_Back",
+          "Belt_Right",
+          "WalkieTalkie",
+          "LargePouch1"
+				};
+				icon="set:dayz_inventory image:cat_fp_tents";
+				view_index=1;
+			};
+      class WeaponSheaths
+			{
+				name="Weapon Sheaths";
+				description="";
+				attachmentSlots[]=
+				{
+          "SRP_KatanaSheath",
+          "SRP_MasterSwordSheath",
+				};
+				icon="set:dayz_inventory image:cat_fp_tents";
+				view_index=2;
+			};
 		};
     class DamageSystem
 		{

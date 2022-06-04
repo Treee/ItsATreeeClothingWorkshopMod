@@ -858,6 +858,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Ladder" (https://skfb.ly/UrWM) by Francesco Coldesina is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Master Sword" (https://skfb.ly/6WrC9) by ctnhan97 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Firelink greatsword - Gwyn phase" (https://skfb.ly/opSJo) by Michal Cavrnoch is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Highland Officers Sword" (https://skfb.ly/otrRR) by Arnold Konrad is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

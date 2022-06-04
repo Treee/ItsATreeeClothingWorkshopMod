@@ -1201,10 +1201,22 @@ class CfgSlots
 		displayName="Katana";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+  class Slot_SRP_MasterSword
+  {
+		name="SRP_MasterSword";
+		displayName="Master Sword";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
   class Slot_SRP_KatanaSheath
   {
 		name="SRP_KatanaSheath";
 		displayName="Katana Sheath";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_MasterSwordSheath
+  {
+		name="SRP_MasterSwordSheath";
+		displayName="Master Sword Sheath";
 		ghostIcon="set:dayz_inventory image:missing";
   };
   class Slot_SRP_Bones
@@ -2265,6 +2277,18 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"SRP_KatanaSheath"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_katanasheath_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_mastersword_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_MasterSword"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_mastersword_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_masterswordsheath_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_MasterSwordSheath"}; // same as slot name 
+    model = "Survivalists_Mods\proxy\srp_masterswordsheath_proxy.p3d"; //proxy path 
   };
 
   class Proxysrp_comtacs: ProxyAttachment //same as p3d name

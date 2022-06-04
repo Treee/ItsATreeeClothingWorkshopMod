@@ -1532,4 +1532,412 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_MasterSword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Replica Master Sword";
+		descriptionShort="The master sword held by only the worthy. A wooden replica.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_mastersword.p3d";
+		debug_ItemCategory=2;
+		rotationFlags=17;
+		weight=4400;
+		itemSize[]={2,7};
+		fragility=0.001;
+		itemBehaviour=1;
+		openItemSpillRange[]={20,50};
+		suicideAnim="woodaxe";
+		isMeleeWeapon=1;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_MasterSword"
+		};
+    hiddenSelections[]=
+		{
+			"blade",
+      "hiltdeco",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_blade_co.paa",
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_hiltdeco_co.paa",      
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabard_co.paa",      
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabarddeco_co.paa",      
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+						{
+							1.0,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_blade.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_hiltdeco.rvmat",
+							}
+						},
+						{
+							0.69999999,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_blade.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_hiltdeco.rvmat",
+							}
+						},
+						{
+							0.5,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_blade.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_hiltdeco.rvmat",
+							}
+						},
+						{
+							0.30000001,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_blade.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_hiltdeco.rvmat",
+							}
+						},
+						{
+							0.0,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_blade.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_hiltdeco.rvmat",
+							}
+						}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeCrowbar";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeCrowbar_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeCrowbar_Heavy";
+				range=4.0999999;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="crowbar_drop_SoundSet";
+					id=898;
+				};
+				class Crowbar_loop
+				{
+					soundSet="Crowbar_loop_SoundSet";
+					id=1119;
+				};
+				class Crowbar_end
+				{
+					soundSet="Crowbar_end_SoundSet";
+					id=1120;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+
+  class SRP_MasterSword_Sheath_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Replica Master Sword Sheath";
+		descriptionShort="Holds the master sword. A wooden replica.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_mastersword_sheath.p3d";
+		debug_ItemCategory=2;
+		rotationFlags=17;
+		weight=4400;
+		itemSize[]={2,7};
+		fragility=0.001;
+		itemBehaviour=1;
+		openItemSpillRange[]={20,50};
+		suicideAnim="woodaxe";
+		isMeleeWeapon=1;
+    attachments[]=
+    {
+      "SRP_MasterSword"
+    };
+		inventorySlot[]=
+		{
+      "SRP_MasterSwordSheath"
+		};
+    hiddenSelections[]=
+		{
+      "scabard",
+      "scabarddeco",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabard_co.paa",      
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabarddeco_co.paa",      
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+						{
+							1.0,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabard.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabarddeco.rvmat",
+							}
+						},
+						{
+							0.69999999,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabard.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabarddeco.rvmat",
+							}
+						},
+						{
+							0.5,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabard.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabarddeco.rvmat",
+							}
+						},
+						{
+							0.30000001,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabard.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabarddeco.rvmat",
+							}
+						},
+						{
+							0.0,
+								{
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabard.rvmat",
+								"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabarddeco.rvmat",
+							}
+						}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeCrowbar";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeCrowbar_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeCrowbar_Heavy";
+				range=4.0999999;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="crowbar_drop_SoundSet";
+					id=898;
+				};
+				class Crowbar_loop
+				{
+					soundSet="Crowbar_loop_SoundSet";
+					id=1119;
+				};
+				class Crowbar_end
+				{
+					soundSet="Crowbar_end_SoundSet";
+					id=1120;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+
+  class SRP_MasterSword_Basic: SRP_MasterSword_ColorBase
+	{
+		scope=2;
+		displayName="Replica Master Sword";
+		descriptionShort="The master sword held by only the worthy. A wooden replica.";
+    hiddenSelections[]=
+		{
+			"blade",
+      "hiltdeco",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_blade_co.paa",
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_hiltdeco_co.paa",      
+		};
+	};
+
+  class SRP_MasterSword_Sheath_Basic: SRP_MasterSword_Sheath_ColorBase
+	{
+		scope=2;
+		displayName="Replica Master Sword Sheath";
+		descriptionShort="Holds the master sword. A wooden replica.";
+    hiddenSelections[]=
+		{
+      "scabard",
+      "scabarddeco",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabard_co.paa",      
+			"Survivalists_Mods\weapons\melee\blade\data\srp_mastersword_scabarddeco_co.paa",      
+		};
+	};
+
+  class SRP_FireyGreatsword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Twisted Greatsword";
+		descriptionShort="A wrought piece of iron twisted into a spire.";
+		model="\Survivalists_Mods\weapons\melee\blade\srp_fireygreatsword.p3d";
+		rotationFlags=16;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		weight=600;
+		itemSize[]={1,7};
+		itemBehaviour=2;
+		fragility=0.02;
+		openItemSpillRange[]={40,70};
+		isMeleeWeapon=1;
+    hiddenSelections[]=
+		{
+      "zbytek",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword_co.paa",     
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword.rvmat"}},
+						{0.69999999,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword.rvmat"}},
+						{0.30000001,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUp_Light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="baseballbat_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_FireyGreatsword_Basic: SRP_FireyGreatsword_ColorBase
+	{
+		scope=2;
+		displayName="Twisted Greatsword";
+		descriptionShort="A wrought piece of iron twisted into a spire.";
+		hiddenSelections[]=
+		{
+      "zbytek",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword_co.paa",     
+		};
+	};
+
 };
