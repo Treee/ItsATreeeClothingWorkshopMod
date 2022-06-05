@@ -1539,7 +1539,7 @@ class CfgVehicles
 		descriptionShort="The master sword held by only the worthy. A wooden replica.";
 		model="Survivalists_Mods\weapons\melee\blade\srp_mastersword.p3d";
 		debug_ItemCategory=2;
-		rotationFlags=17;
+		rotationFlags=20;
 		weight=4400;
 		itemSize[]={2,7};
 		fragility=0.001;
@@ -1939,5 +1939,158 @@ class CfgVehicles
 			"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword_co.paa",     
 		};
 	};
+
+//================================================================== SPEARS
+  class SRP_Spear_Pike_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Spear - Pike";
+		descriptionShort="A long wooden dowl with a sharp metal pike at the end.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_warhammers_pike.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pike_co.paa"
+		};
+		rotationFlags=16;
+		weight=500;
+		itemSize[]={1,8};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		suicideAnim="spear";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pike.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pike.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pike.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pike.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pike.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSpear";
+				range=2.2;
+			};
+			class Heavy
+			{
+				ammo="MeleeSpear_Heavy";
+				range=2.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeSpear_Heavy";
+				range=3.7;
+			};
+		};
+	};
+  class SRP_Spear_Pike_Basic: SRP_Spear_Pike_ColorBase
+  {
+    scope=2;
+		displayName="Spear - Pike";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pike_co.paa"
+		};
+  };
+
+  class SRP_Spear_PikeHook_ColorBase: SRP_Spear_Pike_ColorBase
+	{
+		scope=0;
+		displayName="Spear - Hook Pike";
+		descriptionShort="A long wooden dowl with a sharp metal pike at the end.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_warhammers_pikehook.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook_co.paa"
+		};
+		rotationFlags=16;
+		weight=500;
+		itemSize[]={1,8};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		suicideAnim="spear";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSpear";
+				range=2.2;
+			};
+			class Heavy
+			{
+				ammo="MeleeSpear_Heavy";
+				range=2.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeSpear_Heavy";
+				range=3.7;
+			};
+		};
+	};
+  class SRP_Spear_PikeHook_Basic: SRP_Spear_PikeHook_ColorBase
+  {
+    scope=2;
+		displayName="Spear - Hook Pike";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook_co.paa"
+		};
+  };
 
 };

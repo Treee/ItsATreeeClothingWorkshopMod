@@ -21,20 +21,20 @@ class CfgVehicles
   class SRP_KitBase;
 
 //====================================================================================== HAMMERS
-  class SRP_WarHammer_Pike_ColorBase: Inventory_Base
+  class SRP_WarHammer_Basic_ColorBase: Inventory_Base
 	{
-		scope=2;
-		displayName="Warhammer - Pike";
-		descriptionShort="A warhammer with a pike on the end.";
-		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers.p3d";
-		// hiddenSelections[]=
-		// {
-		// 	"zbytek"
-		// };
-    // hiddenSelectionsTextures[]=
-    // {
-    //   "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher_co.paa"
-		// };
+		scope=0;
+		displayName="Warhammer - Basic";
+		descriptionShort="A warhammer made from hard wood and some iron bracings.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_basic.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_basic_co.paa"
+		};
 		rotationFlags=16;
 		weight=500;
 		itemSize[]={1,8};
@@ -46,57 +46,533 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
-		// class DamageSystem
-		// {
-		// 	class GlobalHealth
-		// 	{
-		// 		class Health
-		// 		{
-		// 			hitpoints=100;
-		// 			healthLevels[]=
-		// 			{
-		// 				{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
-    //         {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
-    //         {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
-    //         {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
-    //         {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}}
-		// 			};
-		// 		};
-		// 	};
-		// };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_basic.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_basic.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_basic.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_basic.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_basic.rvmat"}}
+					};
+				};
+			};
+		};
 		class MeleeModes
 		{
 			class Default
 			{
-				ammo="MeleeSpear";
-				range=1.8;
+				ammo="MeleeBat";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeSpear_Heavy";
-				range=1.8;
+				ammo="MeleeBat_Heavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeSpear_Heavy";
+				ammo="MeleeBat_Heavy";
 				range=3.7;
 			};
 		};
 	};
-  // class SRP_WarHammer_Pike_Basic: SRP_WarHammer_Pike_ColorBase
-  // {
-  //   scope=2;
-	// 	displayName="Wooden Staff";
-	// 	descriptionShort="A long wooden staff.";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"zbytek"
-	// 	};
-  //   hiddenSelectionsTextures[]=
-  //   {
-  //     "Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden_co.paa"
-	// 	};
-  // };
+  class SRP_WarHammer_Basic_Wood: SRP_WarHammer_Basic_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Basic Wood";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_basic_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_Brutal_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Brutal";
+		descriptionShort="A warhammer made from hard wrought iron. Meant for crushing skulls and tearing down structures.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_brutal.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_brutal_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_brutal.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_brutal.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_brutal.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_brutal.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_brutal.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_WarHammer_Brutal_Basic: SRP_WarHammer_Brutal_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Brutal";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_brutal_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_Engraved_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Engraved";
+		descriptionShort="A warhammer made from hard wrought iron. Decorated with orante metals.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_engraved.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_engraved_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_engraved.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_engraved.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_engraved.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_engraved.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_engraved.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_WarHammer_Engraved_Basic: SRP_WarHammer_Engraved_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Engraved";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_engraved_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_Heavy_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Heavy";
+		descriptionShort="A heavy warhammer. A serious blunt force.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_heavy.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_heavy_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_heavy.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_heavy.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_heavy.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_heavy.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_heavy.rvmat"}}
+					};
+				};
+			};
+		};
+    class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeBat";
+				range=2.2;
+			};
+			class Heavy
+			{
+				ammo="MeleeBat_Heavy";
+				range=2.7;
+			};
+			class Sprint
+			{
+				ammo="MeleeBat_Heavy";
+				range=4.7;
+			};
+		};
+	};
+  class SRP_WarHammer_Heavy_Basic: SRP_WarHammer_Heavy_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Heavy";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_heavy_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_Mallet_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Mallet";
+		descriptionShort="A heavy warhammer. Looks more like a mallet.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_mallet.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_mallet_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_mallet.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_mallet.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_mallet.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_mallet.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_mallet.rvmat"}}
+					};
+				};
+			};
+		};
+    class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeBat";
+				range=2.2;
+			};
+			class Heavy
+			{
+				ammo="MeleeBat_Heavy";
+				range=2.7;
+			};
+			class Sprint
+			{
+				ammo="MeleeBat_Heavy";
+				range=4.7;
+			};
+		};
+	};
+  class SRP_WarHammer_Mallet_Basic: SRP_WarHammer_Mallet_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Mallet";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_mallet_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_Simple_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Simple";
+		descriptionShort="A heavy hammer. More for bashing skulls than nails.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_shotput.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotput_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotput.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotput.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotput.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotput.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotput.rvmat"}}
+					};
+				};
+			};
+		};
+    class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeBat";
+				range=2.2;
+			};
+			class Heavy
+			{
+				ammo="MeleeBat_Heavy";
+				range=2.7;
+			};
+			class Sprint
+			{
+				ammo="MeleeBat_Heavy";
+				range=3.8;
+			};
+		};
+	};
+  class SRP_WarHammer_Simple_Basic: SRP_WarHammer_Simple_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Simple";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotput_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_Long_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Long";
+		descriptionShort="A heavy hammer. More for bashing skulls than nails. This one is longer than most others.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_shotputlong.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputlong_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputlong.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputlong.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputlong.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputlong.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputlong.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_WarHammer_Long_Basic: SRP_WarHammer_Long_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Long";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputlong_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_Pike_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Pike";
+		descriptionShort="A heavy hammer. More for bashing skulls than nails. A sharp pike rests at the edge.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_shotputpike.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputpike_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputpike.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputpike.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputpike.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputpike.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputpike.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_WarHammer_Pike_Basic: SRP_WarHammer_Pike_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Pike";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputpike_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_Prong_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Prong";
+		descriptionShort="A heavy hammer. More for bashing skulls than nails. Has pronged edges.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_shotputprong.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputprong_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputprong.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputprong.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputprong.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputprong.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputprong.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_WarHammer_Prong_Basic: SRP_WarHammer_Prong_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Prong";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputprong_co.paa"
+		};
+  };
+
+  class SRP_WarHammer_SkullCrusher_ColorBase: SRP_WarHammer_Basic_ColorBase
+	{
+		scope=0;
+		displayName="Warhammer - Skull Crusher";
+		descriptionShort="A heavy hammer. More for bashing skulls than nails. Heavy round edge for exceptional skull crushing.";
+		model="Survivalists_Mods\weapons\melee\blunt\srp_warhammers_skullcrusher.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_WarHammer_SkullCrusher_Basic: SRP_WarHammer_SkullCrusher_ColorBase
+  {
+    scope=2;
+		displayName="Warhammer - Skull Crusher";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher_co.paa"
+		};
+  };
 
 //====================================================================================== MACE
   class SRP_WeaponBluntKit_Kit: SRP_KitBase //new

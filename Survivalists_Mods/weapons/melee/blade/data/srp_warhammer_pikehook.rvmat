@@ -9,7 +9,7 @@ VertexShaderID="Super";
 
 class Stage1
 {
-	texture="Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_pikehook_nohq.paa";
+	texture="Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -33,7 +33,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_pikehook_mc.paa";
+	texture="Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -57,7 +57,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_pikehook_smdi.paa";
+	texture="Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
