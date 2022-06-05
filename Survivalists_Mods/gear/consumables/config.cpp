@@ -549,6 +549,19 @@ class CfgVehicles
     {
       "Paper"
     };
+    inventorySlot[]=
+    {
+      "SRP_CourierNote1",
+      "SRP_CourierNote2",
+      "SRP_CourierNote3",
+      "SRP_CourierNote4",
+      "SRP_CourierNote5",
+      "SRP_CourierNote6",
+      "SRP_CourierNote7",
+      "SRP_CourierNote8",
+      "SRP_CourierNote9",
+      "SRP_CourierNote10",
+    };
     hiddenSelections[]=
     {
       "zbytek"
@@ -630,6 +643,19 @@ class CfgVehicles
     attachments[]=
     {
       "Paper"
+    };
+    inventorySlot[]=
+    {
+      "SRP_CourierNote1",
+      "SRP_CourierNote2",
+      "SRP_CourierNote3",
+      "SRP_CourierNote4",
+      "SRP_CourierNote5",
+      "SRP_CourierNote6",
+      "SRP_CourierNote7",
+      "SRP_CourierNote8",
+      "SRP_CourierNote9",
+      "SRP_CourierNote10",
     };
     hiddenSelections[]=
     {
