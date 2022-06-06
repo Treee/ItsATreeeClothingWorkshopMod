@@ -424,6 +424,10 @@ class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
         isSolved &= requiredPelts.Get(i) == animalPelt.GetType();
         // Print("AnimalPelt"+i + ": " + requiredPelts.Get(i) + " this pelt: " + animalPelt.GetType() + ": " + isSolved);
       }
+      else
+      {
+        isSolved &= false;
+      }
     }
     ItemBase rope = GetItemInSlot("Rope");
     isSolved &= (rope != null);
