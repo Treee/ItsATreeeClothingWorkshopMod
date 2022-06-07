@@ -21,6 +21,22 @@ class CfgVehicles
   class SRP_KitBase;
 
 //====================================================================================== HAMMERS
+  class SRP_WeaponBluntWarHammer_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - War Hammer";
+		descriptionShort="A blunt weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"      
+		};
+	};
+
   class SRP_WarHammer_Basic_ColorBase: Inventory_Base
 	{
 		scope=0;
@@ -606,6 +622,22 @@ class CfgVehicles
 	};
 
 //====================================================================================== STAFFS
+  class SRP_WeaponStaff_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Staff";
+		descriptionShort="A staff weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"      
+		};
+	};
+  
   class SRP_Staff_Wooden_ColorBase: Inventory_Base
 	{
 		scope=0;

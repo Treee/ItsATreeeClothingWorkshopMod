@@ -159,7 +159,7 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
 		AddResult("SRP_Mining_RawOre_");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
-		m_ResultSetQuantity[0] = Math.RandomIntInclusive(1,3);//-1 = do nothing
+		m_ResultSetQuantity[0] = 1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
 		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
 		m_ResultInheritsColor[0] = 0;// (value) == -1 means do nothing; a (value) >= 0 means this result classname will be a composite of the name provided in AddResult method and config value "color" of ingredient (value)
@@ -175,13 +175,18 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
+    m_ResultSetQuantity[0] = Math.RandomIntInclusive(1,3);//-1 = do nothing
+
+    float chance = Math.RandomFloatInclusive(0,1);
     // 20% chance to ruin the product
-    if (Math.RandomFloat(0,1) >= 0.80)
+    if (chance >= 0.80)
     {
       m_ResultSetHealth[0] = -1000;
     }
+    
+    chance = Math.RandomFloatInclusive(0,1);
     // 3% change for crude tools to create a crystal
-    if (Math.RandomFloat(0,1) >= 0.96)
+    if (chance >= 0.96)
     {
       array<string> gemstones = new array<string>;
       gemstones.Insert("SRP_Mining_UnCutGem_Aqua");

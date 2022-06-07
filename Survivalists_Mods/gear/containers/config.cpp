@@ -4352,8 +4352,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Letter Holder";
 		descriptionShort="A letter folder used for holding letters";
-		// model="Survivalists_Mods\gear\containers\SRP_Letter_Holder.p3d";
-    model="Survivalists_Mods\gear\containers\giftboxsmall.p3d";
+		model="Survivalists_Mods\gear\containers\SRP_Letter_Holder.p3d";
 		inventorySlot[]=
 		{
 			"Belt_Left"

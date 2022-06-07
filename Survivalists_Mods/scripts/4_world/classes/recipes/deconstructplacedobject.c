@@ -126,6 +126,13 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 	{
 		Debug.Log("Deconstruct_PlacedObjectKit: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
     SRP_KitBase.Cast( GetGame().CreateObjectEx(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
+    
+    PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
+    if (m_AdminLog)
+    {
+      m_AdminLog.DirectAdminLogPrint("||DECONSTRUCTION||");
+      m_AdminLog.OnPlacementComplete( player, ingredients[0]);
+    }
 	}
 };
 
@@ -358,6 +365,12 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
     {
       deconstructKit.DamageTools();
     }
+    PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
+    if (m_AdminLog)
+    {
+      m_AdminLog.DirectAdminLogPrint("||DECONSTRUCTION||");
+      m_AdminLog.OnPlacementComplete( player, ingredients[0]);
+    }
 	}
 };
 
@@ -519,6 +532,12 @@ class Deconstruct_PileOfMaterials extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
 		Debug.Log("Deconstruct_PileOfMaterials: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
+    PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
+    if (m_AdminLog)
+    {
+      m_AdminLog.DirectAdminLogPrint("||DECONSTRUCTION||");
+      m_AdminLog.OnPlacementComplete( player, ingredients[0]);
+    }
 	}
 };
 
@@ -649,6 +668,12 @@ class Deconstruct_ObjectIntoKitBase extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
 		Debug.Log("Deconstruct_ObjectIntoKitBase: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
+    PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
+    if (m_AdminLog)
+    {
+      m_AdminLog.DirectAdminLogPrint("||DECONSTRUCTION||");
+      m_AdminLog.OnPlacementComplete( player, ingredients[0]);
+    }
 	}
 };
 class Deconstruct_DecorativeLight_Long extends Deconstruct_ObjectIntoKitBase

@@ -6,7 +6,7 @@ modded class PluginRecipesManager
 		// UnregisterRecipe("CraftStoneKnife");	// Removing an existing recipe
    
     // Crafting
-    //---------Deconstruct Items into Kits
+    //---------Deconstruct Items into Kits    
     RegisterRecipe(new Deconstruct_PlacedObjectKit);
     RegisterRecipe(new Deconstruct_PlacedObjectKit_Advanced);
     RegisterRecipe(new Craft_SRP_Deconstruct_Kit);
