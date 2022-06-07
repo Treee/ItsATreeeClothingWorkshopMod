@@ -382,7 +382,8 @@ class SRP_WeaponBladeKatana_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeWarCleaver_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladePipeAxe_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBladeCelticAxe_Kit extends SRP_IntermediateCraftingKitBase{};
-// blunt weapons
+// blunt weapons 
+class SRP_WeaponSpear_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponStaff_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBluntWarHammer_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBluntKit_Kit extends SRP_IntermediateCraftingKitBase{};

@@ -163,6 +163,19 @@ class CfgVehicles
       "Material_Shelter_Rope"      
 		};
 	};
+  class SRP_WeaponBladeKnifeOld_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Forged Knife";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"      
+		};
+	};
   class SRP_WeaponBladeBerserkSword_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -393,6 +406,77 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger_arbiters_co.paa"
+		};
+  };
+
+  class SRP_KnifeOld: HuntingKnife
+  {
+		scope=2;
+		displayName="Forged Knife";
+		descriptionShort="An forged dagger. Very crude.";
+		model="Survivalists_Mods\weapons\melee\blade\srp_knifeold.p3d";
+    inventorySlot[]=
+		{
+			"Knife"
+		};
+    repairableWithKits[]={4};
+		repairCosts[]={10};
+		RestrainUnlockType=1;
+		canSkinBodies=1;
+		weight=200;
+    varTemperatureMax=100;
+    itemSize[]={1,3};
+		lootCategory="Tools";
+		openItemSpillRange[]={10,20};
+    isMeleeWeapon=1;
+		suicideAnim="onehanded";
+		hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_knifeold_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_knifeold.rvmat"
+		}; 
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_knifeold.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_knifeold.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_knifeold.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_knifeold.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_knifeold.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
 		};
   };
 
@@ -1941,6 +2025,22 @@ class CfgVehicles
 	};
 
 //================================================================== SPEARS
+  class SRP_WeaponSpear_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Spear";
+		descriptionShort="A spear weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"      
+		};
+	};
+
   class SRP_Spear_Pike_ColorBase: Inventory_Base
 	{
 		scope=0;
