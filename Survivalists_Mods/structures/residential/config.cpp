@@ -21,45 +21,12 @@ class CfgVehicles
 	{
 		scope=2;
 		model="Survivalists_Mods\structures\residential\srp_slotmachine_large.p3d";
-		class Doors
-		// class AnimationSources
-		{
-			class Doors1
-			{
-				animPeriod=0.5;
-        initPhase=0;
-				displayName="door1";
-				component="Doors1";
-				soundPos="doors1_action";
-				// initOpened=2;
-				soundOpen="srp_slotmachine_actionsound_spinningreels";
-				soundClose="srp_slotmachine_actionsound_pulllever";
-        soundLocked="srp_slotmachine_actionsound_pulllever";
-				soundOpenABit="srp_slotmachine_actionsound_pulllever";
-			};
-		};
     class AnimationSources
     {
-      class lever
-      {
-          initPhase=0;
-          animPeriod=1;
-      };
-      class spinner1_rotate
-      {
-          initPhase=0;
-          animPeriod=0.5;
-      };
-      class spinner2_rotate
-      {
-          initPhase=0;
-          animPeriod=0.2;
-      };
-      class spinner3_rotate
-      {
-          initPhase=0;
-          animPeriod=0.7;
-      };
+      class lever{source="user";initPhase=0;animPeriod=1;};
+      class spinner1_rotate{source="user";initPhase=0;animPeriod=1;};
+      class spinner2_rotate{source="user";initPhase=0;animPeriod=1;};
+      class spinner3_rotate{source="user";initPhase=0;animPeriod=1;};
     };
 		class DamageSystem
 		{
@@ -83,37 +50,6 @@ class CfgVehicles
 				class FragGrenade
 				{
 					class Health{	damage=0;};class Blood{	damage=0;};class Shock{	damage=0;};
-				};
-			};
-			class DamageZones
-			{
-				class twin1
-				{
-					class Health
-					{
-						hitpoints=2000;
-						transferToGlobalCoef=0;
-					};
-					componentNames[]=
-					{
-						"doorsTwin1"
-					};
-					fatalInjuryCoef=-1;
-					class ArmorType
-					{
-						class Projectile
-						{
-							class Health{	damage=2;};class Blood{	damage=0;};class Shock{	damage=0;};
-						};
-						class Melee
-						{
-							class Health{	damage=2.5;};class Blood{	damage=0;};class Shock{	damage=0;};
-						};
-						class FragGrenade
-						{
-							class Health{	damage=2;};class Blood{	damage=0;};class Shock{	damage=0;};
-						};
-					};
 				};
 			};
 		};

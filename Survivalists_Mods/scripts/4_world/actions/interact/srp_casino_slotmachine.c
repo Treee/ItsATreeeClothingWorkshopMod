@@ -39,7 +39,7 @@ class ActionPullSlotMachineLever: ActionInteractBase
 			name.ToLower();
 			if (name == "lever")
       {
-				return true;
+				return !lever.IsStateChanging();
       }
 		}
 		return false;
