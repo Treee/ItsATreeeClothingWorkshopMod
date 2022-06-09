@@ -653,6 +653,5 @@ modded class PlayerBase
     AddAction(ActionTriggerDecontaminationShower, InputActionMap);      
     AddAction(ActionForageBush, InputActionMap);      
     AddAction(ActionPackLadder, InputActionMap);      
-    AddAction(ActionPullSlotMachineLever, InputActionMap);      
   }
 }
