@@ -23,7 +23,7 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\residential\srp_slotmachine_large.p3d";
     class AnimationSources
     {
-      class lever{source="user";initPhase=0;animPeriod=1;};
+      class lever{source="user";initPhase=1;animPeriod=1;};
       class spinner1_rotate{source="user";initPhase=0;animPeriod=1;};
       class spinner2_rotate{source="user";initPhase=0;animPeriod=1;};
       class spinner3_rotate{source="user";initPhase=0;animPeriod=1;};
