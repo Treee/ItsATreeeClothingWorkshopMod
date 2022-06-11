@@ -587,8 +587,6 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Gold Ingot" (https://skfb.ly/o69UQ) by Matthew_Games is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- "Fantasy Designed Coins - (Gold, Silver, Copper)" (https://skfb.ly/6TtQu) by Kigha is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
 - "Portal" (https://skfb.ly/6vZK6) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Bone Portal" (https://skfb.ly/6xBRC) by Gabrieltim3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -771,12 +769,6 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 - "SciFi Light 13" (https://skfb.ly/6nBPB) by inuhitman is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
 - "SciFi Light 15" (https://skfb.ly/6nBPF) by inuhitman is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
-
-- "Vintage Slot Machine" (https://skfb.ly/G8Cn) by doomsentinel is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
-- "Spin-N-Win Machine" (https://skfb.ly/6ZEIt) by Arman.Abgaryan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
-- "Gambling table" (https://skfb.ly/6tXZQ) by kwad_rat is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Crystal" (https://skfb.ly/o6rqw) by Zambur is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 

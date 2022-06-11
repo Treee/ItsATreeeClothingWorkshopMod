@@ -97,6 +97,7 @@ class CfgVehicles
 	{
 		scope=2;
 		repairableWithKits[]={6}; // tire repair kit
+    repairCosts[]={30};
     inventorySlot[]+=
 		{
       "SRP_ToolKit_Hammer"
