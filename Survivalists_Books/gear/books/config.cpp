@@ -214,7 +214,7 @@ class CfgVehicles
 		author="Skylar Wolfe";
 		file="Survivalists_Books\gear\books\data\book_historyofsaltycougar.html";
 		displayName="The Origin Story of The Salty Cougar Tavern";
-		descriptionShort="Need handwritting and several pictures cover the pages of this book.";
+		descriptionShort="Neat handwritting and several pictures cover the pages of this book.";
 		hiddenSelectionsTextures[] =
 		{
 		  "Survivalists_Books\gear\books\data\book_historyofsaltycougar_co.paa"
