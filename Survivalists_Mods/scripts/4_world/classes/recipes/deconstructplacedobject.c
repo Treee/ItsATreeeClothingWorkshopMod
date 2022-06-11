@@ -245,18 +245,6 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
     InsertIngredient(0,"SRP_BuildingComponentFrame_FineDoublePlatform");
     InsertIngredient(0,"SRP_BuildingComponentFrame_FineLongDoublePlatform");
     InsertIngredient(0,"SRP_Furniture_WoodenStairs");
-    InsertIngredient(0,"SRP_TetrisShelfLDown");
-    InsertIngredient(0,"SRP_TetrisShelfLUp");
-    InsertIngredient(0,"SRP_TetrisShelfLLeft");
-    InsertIngredient(0,"SRP_TetrisShelfLRight");
-    InsertIngredient(0,"SRP_TetrisShelfIVertical");
-    InsertIngredient(0,"SRP_TetrisShelfIHorizontal");
-    InsertIngredient(0,"SRP_TetrisShelfTUp");
-    InsertIngredient(0,"SRP_TetrisShelfTDown");
-    InsertIngredient(0,"SRP_TetrisShelfTVertical");
-    InsertIngredient(0,"SRP_TetrisShelfSHorizontal");
-    InsertIngredient(0,"SRP_TetrisShelfSVertical");
-    InsertIngredient(0,"SRP_TetrisShelfBox");
     InsertIngredient(0,"SRP_WoodenShelfSimple");
     InsertIngredient(0,"SRP_WoodenShelfSimpleGround");
     InsertIngredient(0,"SRP_WoodenShelfGround");

@@ -138,7 +138,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\drybag_mintblue_co.paa"
 		};
 	};
-	class GhillieBushrag_Winter: GhillieBushrag_ColorBase
+	class GhillieBushrag_White: GhillieBushrag_ColorBase
 	{
 		scope=2;
 		visibilityModifier=0.69999999;
@@ -160,7 +160,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\ghillie_black_co.paa"
 		};
 	};
-	class GhillieTop_Winter: GhillieTop_ColorBase
+	class GhillieTop_White: GhillieTop_ColorBase
 	{
 		scope=2;
 		visibilityModifier=0.69999999;
@@ -182,7 +182,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\ghillie_black_co.paa"
 		};
 	};
-	class GhillieSuit_Winter: GhillieSuit_ColorBase
+	class GhillieSuit_White: GhillieSuit_ColorBase
 	{
 		scope=2;
 		visibilityModifier=0.69999999;

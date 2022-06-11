@@ -16,7 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
 	class GhillieAtt_ColorBase;
-	class GhillieAtt_Winter: GhillieAtt_ColorBase
+	class GhillieAtt_White: GhillieAtt_ColorBase
 	{
 		scope=2;
 		displayName="Ghillie Wrap - Winter";

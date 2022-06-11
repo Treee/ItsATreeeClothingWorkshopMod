@@ -282,7 +282,7 @@ class SRP_SleepMdfr extends ModifierBase
 
   float GetUnconsciousRestfulness(bool IsUnconscious)
   {    
-    if (IsUnconscious)
+    if (IsUnconscious && (GetAttachedTime() < PASS_OUT_THRESHOLD))
     {
       // Print("[SRP_SleepMdfr] - [GetUnconsciousRestfulness] - : UNCONSCIOUS");
       return RESTFULLNESS_UNCONSCIOUS;
