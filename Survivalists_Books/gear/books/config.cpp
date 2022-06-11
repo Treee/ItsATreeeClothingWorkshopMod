@@ -207,6 +207,19 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_jonahdreamleviathan_co.paa"
 		};
 	};  
+  class SRP_ReadableBook_SaltyCougar: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="The Origin Story of The Salty Cougar Tavern";
+		author="Skylar Wolfe";
+		file="Survivalists_Books\gear\books\data\book_historyofsaltycougar.html";
+		displayName="The Origin Story of The Salty Cougar Tavern";
+		descriptionShort="Need handwritting and several pictures cover the pages of this book.";
+		hiddenSelectionsTextures[] =
+		{
+		  "Survivalists_Books\gear\books\data\book_historyofsaltycougar_co.paa"
+		};
+	}; 
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase

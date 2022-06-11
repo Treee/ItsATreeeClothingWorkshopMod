@@ -171,4 +171,13 @@ class CfgVehicles
 		displayName="Guns, Nuts and Trucks";
 		descriptionShort="A rolled up piece of paper held closed by grease";
 	};
+  class SRP_ReadableScroll_History_Collective: SRP_ReadableScroll_Colorbase
+	{
+		scope=2;
+		title="Recounting the Past";
+		author="Silent Observer";
+		file="Survivalists_Books\gear\scrolls\data\scroll_history_collective.html";
+		displayName="Recounting the Past";
+		descriptionShort="A rolled up piece of paper held closed by wax";
+	};
 };
