@@ -77,6 +77,14 @@ class Craft_SRP_MetalCoins extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
+    SRP_ForgeIngotRod_ColorBase rod;
+    if (Class.CastTo(rod, ingredients[0]))
+    {
+      if (rod.GetRodColor() == "tin")
+      {
+        return false;
+      }
+    }
     return true;
 	}
 
