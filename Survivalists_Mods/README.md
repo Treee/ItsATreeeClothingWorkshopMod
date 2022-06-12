@@ -740,6 +740,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Locker Equipment" (https://skfb.ly/opIqH) by Dmitriy Mitroshin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Locker" (https://skfb.ly/oqQrZ) by Tiago Lopes is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - "Hat" (https://skfb.ly/FGyI) by Siesta is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Druid clothes" (https://skfb.ly/6uSOy) by ArtLeaving is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

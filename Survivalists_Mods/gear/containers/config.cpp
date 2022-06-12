@@ -3428,7 +3428,6 @@ class CfgVehicles
 		};
 	};
   
-  
   class SRP_LockerSingle_Colorbase: Container_Base
 	{
 		scope=0;
