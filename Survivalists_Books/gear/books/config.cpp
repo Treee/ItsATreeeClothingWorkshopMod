@@ -220,6 +220,19 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_historyofsaltycougar_co.paa"
 		};
 	}; 
+  class SRP_ReadableBook_MutantHistory: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Mutant";
+		author="Arthur J. Merle";
+		file="Survivalists_Books\gear\books\data\book_historyofmutants.html";
+		displayName="Mutant";
+		descriptionShort="A brief account on Mutant history.";
+		hiddenSelectionsTextures[] =
+		{
+		  "Survivalists_Books\gear\books\data\book_historyofmutants_co.paa"
+		};
+	}; 
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
