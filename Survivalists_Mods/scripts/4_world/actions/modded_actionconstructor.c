@@ -42,5 +42,6 @@ modded class ActionConstructor
     actions.Insert(ActionForageBush);
 
     actions.Insert(ActionPackLadder);
+    actions.Insert(ActionPackSRPSleepingBag);
 	}
 };
