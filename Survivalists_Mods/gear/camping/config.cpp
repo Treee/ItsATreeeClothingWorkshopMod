@@ -372,7 +372,7 @@ class CfgVehicles
 		};
   };
 
-  // ------------------------- EVENT STUFF
+// ------------------------- EVENT STUFF
   class SRP_PortalBone_Kit: SRP_KitBase  // new
 	{
 		scope=2;
@@ -665,7 +665,7 @@ class CfgVehicles
 	};
 
 
-  // ----------------------- CUSTOM STUFF
+// ----------------------- CUSTOM STUFF
 
   class SRP_Potbelly_Stove_Kit: SRP_KitBase //
 	{
@@ -1795,6 +1795,78 @@ class CfgVehicles
 			};
 		};
 	};
+  
+  class SRP_SleepingBag_ColorBase: Inventory_Base  // new
+	{
+		scope=0;
+		displayName="Sleeping Bag";
+		descriptionShort="A woven sleeping bag.";
+		model="Survivalists_Mods\gear\camping\srp_sleepingbagunrolled.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemsCargoSize[]={0,0};
+		physLayer="item_large";
+    isTakeable=0;
+    itemBehaviour=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_sleepingbagunrolled_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_sleepingbagunrolled.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_sleepingbagunrolled.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_sleepingbagunrolled.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_sleepingbagunrolled.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_sleepingbagunrolled.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_SleepingBag_Basic_Kit: SRP_KitBase
+  {
+		scope=2;
+    displayName="Sleeping Bag - Packed";
+		descriptionShort="A rolled sleeping bag.";
+		model="Survivalists_Mods\gear\camping\srp_sleepingbagrolled.p3d";
+    itemSize[]={4,3};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_sleepingbagrolled_co.paa"
+    };
+  };
+
+  class SRP_SleepingBag_Basic: SRP_SleepingBag_ColorBase  // new
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_sleepingbagunrolled_co.paa"
+    };
+	};
+  
 
 //============================================== DECORATIVE LIGHTS
 

@@ -357,6 +357,9 @@ class SRP_BuildingComponentFrame_FineLongDoublePlatform extends SRP_BuildingComp
 class SRP_MedicalBedSmall_Wood extends SRP_Container_Base{};
 class SRP_WoodenBench extends SRP_Container_Base{};
 
+class SRP_SleepingBag_ColorBase extends SRP_Container_Base{};
+class SRP_SleepingBag_Basic extends SRP_SleepingBag_ColorBase{};
+
 class SRP_MetalBarrel_Colorbase extends SRP_Container_Base{};
 class SRP_MetalBarrel_Old extends SRP_Container_Base{};
 class SRP_MetalBarrel_Blue extends SRP_MetalBarrel_Colorbase{};

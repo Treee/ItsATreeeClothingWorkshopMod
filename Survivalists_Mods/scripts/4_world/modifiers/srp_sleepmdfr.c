@@ -185,6 +185,10 @@ class SRP_SleepMdfr extends ModifierBase
           {
             m_BeddingValue = -0.8;
           }
+          else if (hit_object[0].GetType().Contains("SRP_SleepingBag")) 
+          {
+            m_BeddingValue = -0.8;
+          }
           else if (hit_object[0].GetType() == "SRP_MedicalBed_Mattress") 
           {
             m_BeddingValue = -1.2;
