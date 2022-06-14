@@ -1193,6 +1193,65 @@ class CfgVehicles
     color="times";
     inventorySlots[]={};
   };
+
+  //======================================= POOL BALLS
+  class SRP_PoolBall_ColorBase: Inventory_Base // new
+	{
+		scope=0;
+		displayName="Pool Ball";
+		descriptionShort="This pool ball is relatively round and solid.";
+		model="Survivalists_Mods\gear\carpentry\srp_poolball.p3d";
+		weight=1000;
+		itemBehaviour=1;
+		physLayer="item_small";
+    color="base";
+		itemSize[]={2,2};
+    isTakeable=0;
+    itemsCargoSize[]={0,0};
+    inventorySlots[]={};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\srp_poolball8_co.paa"
+		};	
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\srp_poolball.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\srp_poolball.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\srp_poolball.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\srp_poolball.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\srp_poolball.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_PoolBall_8: SRP_PoolBall_ColorBase // new
+  {
+    scope=2;
+		displayName="Pool Ball - 8";
+    color="8";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\srp_poolball8_co.paa"
+		};
+  };
+
   // ---------------------PRE FABS
   class SRP_PrefabHouse_Base: HouseNoDestruct  // new
 	{
