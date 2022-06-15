@@ -866,6 +866,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Pool Ball" (https://skfb.ly/otzPy) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Oil Cans" (https://skfb.ly/6CZqP) by Caboose3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Decorative Pottery Collection" (https://skfb.ly/onZDG) by Atlas is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Large Dirt Pile" (https://skfb.ly/ouyYI) by staticcc is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

@@ -4400,4 +4400,877 @@ class CfgVehicles
 		};
 
 	};
+
+  class SRP_OilCan_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Oil Can - Base";
+		descriptionShort="An old oil can. Some people collect these.";
+		model="Survivalists_Mods\gear\containers\srp_oilcan.p3d";
+		weight=10000;
+    color="base";
+		itemSize[]={3,3};
+		itemsCargoSize[]={0,0};
+    inventorySlot[]={};
+    attachments[]={};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_oilcan_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+	};
+  class SRP_OilCan_Basic: SRP_OilCan_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    displayName="Oil Can - Basic";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_oilcan_co.paa"
+    };    
+	};
+
+//=================================================================== POTS
+  class SRP_PotteryPot_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Pottery Vase - Base";
+		descriptionShort="An old vase. Can be used to hold things.";
+		model="Survivalists_Mods\gear\containers\srp_jar1.p3d";
+    physLayer="item_large";
+		weight=10000;
+    color="base";
+    carveNavmesh=1;
+		itemBehaviour=2;
+		itemSize[]={3,3};
+		itemsCargoSize[]={0,0};
+    inventorySlot[]={};
+    attachments[]={};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000;
+				};
+			};
+		};
+	};
+
+  class SRP_PotteryPot1_ColorBase: SRP_PotteryPot_ColorBase
+	{
+		scope=0;
+    displayName="Pottery Vase - Bottle";
+		model="Survivalists_Mods\gear\containers\srp_jar1.p3d";
+	};
+  class SRP_PotteryPot2_ColorBase: SRP_PotteryPot_ColorBase
+	{
+		scope=0;
+    displayName="Pottery Vase - Teardrop Tall";
+		model="Survivalists_Mods\gear\containers\srp_jar2.p3d";
+	};
+  class SRP_PotteryPot3_ColorBase: SRP_PotteryPot_ColorBase
+	{
+		scope=0;
+    displayName="Pottery Vase - Bulb Wide";
+		model="Survivalists_Mods\gear\containers\srp_jar3.p3d";
+	};
+  class SRP_PotteryPot4_ColorBase: SRP_PotteryPot_ColorBase
+	{
+		scope=0;
+    displayName="Pottery Vase - Cone";
+		model="Survivalists_Mods\gear\containers\srp_jar4.p3d";
+	};
+  class SRP_PotteryPot5_ColorBase: SRP_PotteryPot_ColorBase
+	{
+		scope=0;
+    displayName="Pottery Vase - Cone Short";
+		model="Survivalists_Mods\gear\containers\srp_jar5.p3d";
+	};
+  class SRP_PotteryPot6_ColorBase: SRP_PotteryPot_ColorBase
+	{
+		scope=0;
+    displayName="Pottery Vase - Decanter";
+		model="Survivalists_Mods\gear\containers\srp_jar6.p3d";
+	};
+  class SRP_PotteryPot7_ColorBase: SRP_PotteryPot_ColorBase
+	{
+		scope=0;
+    displayName="Pottery Vase - Teardrop Wide";
+		model="Survivalists_Mods\gear\containers\srp_jar7.p3d";
+	};
+  class SRP_PotteryPot8_ColorBase: SRP_PotteryPot_ColorBase
+	{
+		scope=0;
+    displayName="Pottery Vase - Bulb Short";
+		model="Survivalists_Mods\gear\containers\srp_jar8.p3d";
+	};
+
+//=================================================================== TYPE 1
+  class SRP_PotteryPot1_Basic: SRP_PotteryPot1_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };    
+	};
+  class SRP_PotteryPot2_Basic: SRP_PotteryPot2_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };    
+	};
+  class SRP_PotteryPot3_Basic: SRP_PotteryPot3_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };    
+	};
+  class SRP_PotteryPot4_Basic: SRP_PotteryPot4_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };    
+	};
+  class SRP_PotteryPot5_Basic: SRP_PotteryPot5_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };    
+	};
+  class SRP_PotteryPot6_Basic: SRP_PotteryPot6_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };    
+	};
+  class SRP_PotteryPot7_Basic: SRP_PotteryPot7_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };    
+	};
+  class SRP_PotteryPot8_Basic: SRP_PotteryPot8_ColorBase
+	{
+		scope=2;
+    color="basic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar1_co.paa"
+    };    
+	};
+
+//=================================================================== TYPE 2
+  class SRP_PotteryPot1_Ornament: SRP_PotteryPot1_ColorBase
+	{
+		scope=2;
+    color="ornament";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar2_co.paa"
+    };    
+	};
+  class SRP_PotteryPot2_Ornament: SRP_PotteryPot2_ColorBase
+	{
+		scope=2;
+    color="ornament";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar2_co.paa"
+    };    
+	};
+  class SRP_PotteryPot3_Ornament: SRP_PotteryPot3_ColorBase
+	{
+		scope=2;
+    color="ornament";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar2_co.paa"
+    };    
+	};
+  class SRP_PotteryPot4_Ornament: SRP_PotteryPot4_ColorBase
+	{
+		scope=2;
+    color="ornament";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar2_co.paa"
+    };    
+	};
+  class SRP_PotteryPot5_Ornament: SRP_PotteryPot5_ColorBase
+	{
+		scope=2;
+    color="ornament";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar2_co.paa"
+    };    
+	};
+  class SRP_PotteryPot6_Ornament: SRP_PotteryPot6_ColorBase
+	{
+		scope=2;
+    color="ornament";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar2_co.paa"
+    };    
+	};
+  class SRP_PotteryPot7_Ornament: SRP_PotteryPot7_ColorBase
+	{
+		scope=2;
+    color="ornament";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar2_co.paa"
+    };    
+	};
+  class SRP_PotteryPot8_Ornament: SRP_PotteryPot8_ColorBase
+	{
+		scope=2;
+    color="ornament";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar2_co.paa"
+    };    
+	};
+
+//=================================================================== TYPE 3
+  class SRP_PotteryPot1_Flower: SRP_PotteryPot1_ColorBase
+	{
+		scope=2;
+    color="flower";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar3_co.paa"
+    };    
+	};
+  class SRP_PotteryPot2_Flower: SRP_PotteryPot2_ColorBase
+	{
+		scope=2;
+    color="flower";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar3_co.paa"
+    };    
+	};
+  class SRP_PotteryPot3_Flower: SRP_PotteryPot3_ColorBase
+	{
+		scope=2;
+    color="flower";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar3_co.paa"
+    };    
+	};
+  class SRP_PotteryPot4_Flower: SRP_PotteryPot4_ColorBase
+	{
+		scope=2;
+    color="flower";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar3_co.paa"
+    };    
+	};
+  class SRP_PotteryPot5_Flower: SRP_PotteryPot5_ColorBase
+	{
+		scope=2;
+    color="flower";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar3_co.paa"
+    };    
+	};
+  class SRP_PotteryPot6_Flower: SRP_PotteryPot6_ColorBase
+	{
+		scope=2;
+    color="flower";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar3_co.paa"
+    };    
+	};
+  class SRP_PotteryPot7_Flower: SRP_PotteryPot7_ColorBase
+	{
+		scope=2;
+    color="flower";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar3_co.paa"
+    };    
+	};
+  class SRP_PotteryPot8_Flower: SRP_PotteryPot8_ColorBase
+	{
+		scope=2;
+    color="flower";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar3_co.paa"
+    };    
+	};
+
+//=================================================================== TYPE 4
+  class SRP_PotteryPot1_Geometric: SRP_PotteryPot1_ColorBase
+	{
+		scope=2;
+    color="geometric";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar4_co.paa"
+    };    
+	};
+  class SRP_PotteryPot2_Geometric: SRP_PotteryPot2_ColorBase
+	{
+		scope=2;
+    color="geometric";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar4_co.paa"
+    };    
+	};
+  class SRP_PotteryPot3_Geometric: SRP_PotteryPot3_ColorBase
+	{
+		scope=2;
+    color="geometric";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar4_co.paa"
+    };    
+	};
+  class SRP_PotteryPot4_Geometric: SRP_PotteryPot4_ColorBase
+	{
+		scope=2;
+    color="geometric";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar4_co.paa"
+    };    
+	};
+  class SRP_PotteryPot5_Geometric: SRP_PotteryPot5_ColorBase
+	{
+		scope=2;
+    color="geometric";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar4_co.paa"
+    };    
+	};
+  class SRP_PotteryPot6_Geometric: SRP_PotteryPot6_ColorBase
+	{
+		scope=2;
+    color="geometric";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar4_co.paa"
+    };    
+	};
+  class SRP_PotteryPot7_Geometric: SRP_PotteryPot7_ColorBase
+	{
+		scope=2;
+    color="geometric";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar4_co.paa"
+    };    
+	};
+  class SRP_PotteryPot8_Geometric: SRP_PotteryPot8_ColorBase
+	{
+		scope=2;
+    color="geometric";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar4_co.paa"
+    };    
+	};
+
+//=================================================================== TYPE 5
+  class SRP_PotteryPot1_Modern: SRP_PotteryPot1_ColorBase
+	{
+		scope=2;
+    color="modern";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar5_co.paa"
+    };    
+	};
+  class SRP_PotteryPot2_Modern: SRP_PotteryPot2_ColorBase
+	{
+		scope=2;
+    color="modern";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar5_co.paa"
+    };    
+	};
+  class SRP_PotteryPot3_Modern: SRP_PotteryPot3_ColorBase
+	{
+		scope=2;
+    color="modern";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar5_co.paa"
+    };    
+	};
+  class SRP_PotteryPot4_Modern: SRP_PotteryPot4_ColorBase
+	{
+		scope=2;
+    color="modern";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar5_co.paa"
+    };    
+	};
+  class SRP_PotteryPot5_Modern: SRP_PotteryPot5_ColorBase
+	{
+		scope=2;
+    color="modern";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar5_co.paa"
+    };    
+	};
+  class SRP_PotteryPot6_Modern: SRP_PotteryPot6_ColorBase
+	{
+		scope=2;
+    color="modern";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar5_co.paa"
+    };    
+	};
+  class SRP_PotteryPot7_Modern: SRP_PotteryPot7_ColorBase
+	{
+		scope=2;
+    color="modern";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar5_co.paa"
+    };    
+	};
+  class SRP_PotteryPot8_Modern: SRP_PotteryPot8_ColorBase
+	{
+		scope=2;
+    color="modern";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar5_co.paa"
+    };    
+	};
+
+//=================================================================== TYPE 6
+  class SRP_PotteryPot1_Celtic: SRP_PotteryPot1_ColorBase
+	{
+		scope=2;
+    color="celtic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar6_co.paa"
+    };    
+	};
+  class SRP_PotteryPot2_Celtic: SRP_PotteryPot2_ColorBase
+	{
+		scope=2;
+    color="celtic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar6_co.paa"
+    };    
+	};
+  class SRP_PotteryPot3_Celtic: SRP_PotteryPot3_ColorBase
+	{
+		scope=2;
+    color="celtic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar6_co.paa"
+    };    
+	};
+  class SRP_PotteryPot4_Celtic: SRP_PotteryPot4_ColorBase
+	{
+		scope=2;
+    color="celtic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar6_co.paa"
+    };    
+	};
+  class SRP_PotteryPot5_Celtic: SRP_PotteryPot5_ColorBase
+	{
+		scope=2;
+    color="celtic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar6_co.paa"
+    };    
+	};
+  class SRP_PotteryPot6_Celtic: SRP_PotteryPot6_ColorBase
+	{
+		scope=2;
+    color="celtic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar6_co.paa"
+    };    
+	};
+  class SRP_PotteryPot7_Celtic: SRP_PotteryPot7_ColorBase
+	{
+		scope=2;
+    color="celtic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar6_co.paa"
+    };    
+	};
+  class SRP_PotteryPot8_Celtic: SRP_PotteryPot8_ColorBase
+	{
+		scope=2;
+    color="celtic";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar6_co.paa"
+    };    
+	};
+
+//=================================================================== TYPE 7
+  class SRP_PotteryPot1_Rossetta: SRP_PotteryPot1_ColorBase
+	{
+		scope=2;
+    color="rossetta";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar7_co.paa"
+    };    
+	};
+  class SRP_PotteryPot2_Rossetta: SRP_PotteryPot2_ColorBase
+	{
+		scope=2;
+    color="rossetta";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar7_co.paa"
+    };    
+	};
+  class SRP_PotteryPot3_Rossetta: SRP_PotteryPot3_ColorBase
+	{
+		scope=2;
+    color="rossetta";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar7_co.paa"
+    };    
+	};
+  class SRP_PotteryPot4_Rossetta: SRP_PotteryPot4_ColorBase
+	{
+		scope=2;
+    color="rossetta";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar7_co.paa"
+    };    
+	};
+  class SRP_PotteryPot5_Rossetta: SRP_PotteryPot5_ColorBase
+	{
+		scope=2;
+    color="rossetta";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar7_co.paa"
+    };    
+	};
+  class SRP_PotteryPot6_Rossetta: SRP_PotteryPot6_ColorBase
+	{
+		scope=2;
+    color="rossetta";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar7_co.paa"
+    };    
+	};
+  class SRP_PotteryPot7_Rossetta: SRP_PotteryPot7_ColorBase
+	{
+		scope=2;
+    color="rossetta";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar7_co.paa"
+    };    
+	};
+  class SRP_PotteryPot8_Rossetta: SRP_PotteryPot8_ColorBase
+	{
+		scope=2;
+    color="rossetta";		
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_ceramicjar7_co.paa"
+    };    
+	};
 };
