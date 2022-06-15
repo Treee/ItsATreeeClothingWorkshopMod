@@ -16,7 +16,20 @@ class CfgPatches
 class CfgVehicles
 {
 	class HouseNoDestruct;	
-
+  
+  class Land_srp_artifact_rubixcube_1: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_rubixcube.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_rubixcube_co.paa"
+		};
+	};
   class Land_srp_artifact_galaxymap_1: HouseNoDestruct
 	{
 		scope=1;
