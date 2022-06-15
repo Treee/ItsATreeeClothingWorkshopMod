@@ -872,6 +872,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Large Dirt Pile" (https://skfb.ly/ouyYI) by staticcc is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Simple Rubix Cube" (https://skfb.ly/6zsty) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Potion Bottle" (https://skfb.ly/oqFTL) by savscarlett is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

@@ -232,7 +232,20 @@ class CfgVehicles
 		{
 		  "Survivalists_Books\gear\books\data\book_historyofmutants_co.paa"
 		};
-	}; 
+	};
+  class SRP_ReadableBook_BanditryGuide: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Teddy’s Guide to Banditry for Troubled Individuals";
+		author="TeDdY";
+		file="Survivalists_Books\gear\books\data\book_banditryguide.html";
+		displayName="Teddy’s Guide to Banditry for Troubled Individuals";
+		descriptionShort="Scrawl stretches across the pages.";
+		hiddenSelectionsTextures[] =
+		{
+		  "Survivalists_Books\gear\books\data\book_banditryguide_co.paa"
+		};
+	};
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
