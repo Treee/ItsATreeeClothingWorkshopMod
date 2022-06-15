@@ -43,5 +43,12 @@ modded class ActionConstructor
 
     actions.Insert(ActionPackLadder);
     actions.Insert(ActionPackSRPSleepingBag);
+
+    actions.Insert(ActionTurnRubixCubeClockwise_Row1);
+    actions.Insert(ActionTurnRubixCubeClockwise_Row2);
+    actions.Insert(ActionTurnRubixCubeClockwise_Col1);
+    actions.Insert(ActionTurnRubixCubeClockwise_Col2);
+    actions.Insert(ActionTurnRubixCubeClockwise_Z1);
+    actions.Insert(ActionTurnRubixCubeClockwise_Z2);
 	}
 };

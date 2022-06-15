@@ -45,6 +45,13 @@ class CfgSoundShaders
 			{"\DZ\sounds\environment\buildings\doors\MetalTwinBig\doorMetalTwinBigClose_1",1}
 		};
 	};
+  class SRP_Door_RubixCubeTurning_SoundShader: SRP_Door_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\doors\data\rubixcube-turning.ogg",1}
+		};
+	};
 };
 class CfgSoundSets
 {
@@ -60,6 +67,13 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"SRP_Door_MetalClose_SoundShader"
+		};
+	};
+  class SRP_Door_RubixCubeTurning_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRP_Door_RubixCubeTurning_SoundShader"
 		};
 	};
 };

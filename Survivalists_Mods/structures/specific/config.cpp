@@ -29,6 +29,15 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_rubixcube_co.paa"
 		};
+    class AnimationSources
+    {
+      class row1{source="user";initPhase=0;animPeriod=1;};
+      class row2{source="user";initPhase=0;animPeriod=1;};
+      class col1{source="user";initPhase=0;animPeriod=1;};
+      class col2{source="user";initPhase=0;animPeriod=1;};
+      class z1{source="user";initPhase=0;animPeriod=1;};
+      class z2{source="user";initPhase=0;animPeriod=1;};
+    };
 	};
   class Land_srp_artifact_galaxymap_1: HouseNoDestruct
 	{

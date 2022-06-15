@@ -654,5 +654,11 @@ modded class PlayerBase
     AddAction(ActionForageBush, InputActionMap);      
     AddAction(ActionPackLadder, InputActionMap);      
     AddAction(ActionPackSRPSleepingBag, InputActionMap);      
+    AddAction(ActionTurnRubixCubeClockwise_Row1, InputActionMap);      
+    AddAction(ActionTurnRubixCubeClockwise_Row2, InputActionMap);      
+    AddAction(ActionTurnRubixCubeClockwise_Col1, InputActionMap);      
+    AddAction(ActionTurnRubixCubeClockwise_Col2, InputActionMap);      
+    AddAction(ActionTurnRubixCubeClockwise_Z1, InputActionMap);      
+    AddAction(ActionTurnRubixCubeClockwise_Z2, InputActionMap);    
   }
-}
+};
