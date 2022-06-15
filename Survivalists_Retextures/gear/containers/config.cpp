@@ -174,6 +174,22 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\containers\data\teddybear_Trippy_co.paa"
 		};
 	};
+  class Bear_Golden: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Golden_co.paa"
+		};
+	};
+  class Bear_Miles: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Miles_co.paa"
+		};
+	};
 
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {
