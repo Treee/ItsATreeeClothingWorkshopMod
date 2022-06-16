@@ -299,6 +299,8 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
     InsertIngredient(0,"SRP_CoatRack_Fancy");
     InsertIngredient(0,"SRP_CoatRack_Simple");
 
+    InsertIngredient(0,"SRP_Letter_Colorbase");
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
@@ -912,5 +914,14 @@ class Deconstruct_IntermediaryObjectKit_Barrels extends Deconstruct_ObjectIntoKi
     InsertIngredient(0,"SRP_MetalBarrel_Concrete");
 
 		AddResult("SRP_MetalBarrelKit_Kit");//add results here
+	}
+};
+class Deconstruct_IntermediaryObjectKit_CarvedLetters extends Deconstruct_ObjectIntoKitBase
+{	
+	override void Init()
+	{
+    super.Init();
+    InsertIngredient(0,"SRP_Letter_Colorbase");
+		AddResult("SRP_LetterKit_Kit");//add results here
 	}
 };

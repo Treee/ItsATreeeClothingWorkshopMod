@@ -62,6 +62,16 @@ class SRP_Letter_Colorbase extends SRP_Container_Base
 	{
 		return false;
 	}
+
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 
 class SRP_Letter_A extends SRP_Letter_Colorbase{};

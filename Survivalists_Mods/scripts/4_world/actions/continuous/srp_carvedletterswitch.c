@@ -1,3 +1,13 @@
+class CarvedSymbolActionReciveData extends ActionReciveData
+{
+  int m_CarvedSymbolId;
+}
+
+class CarvedSymbolActionData extends ActionData
+{
+  int m_CarvedSymbolId;
+};
+
 class ActionSwitchLetterOptionCB extends ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
@@ -48,12 +58,63 @@ class ActionSwitchLetterOption extends ActionContinuousBase
     SRP_LetterKit_Kit carvedLetterKit;
 		if (action_data.m_MainItem && Class.CastTo(carvedLetterKit, action_data.m_MainItem))
 		{
-      string newKitName = "SRP_Letter_" + GetLetterOptions().Get(m_VariantID) + "_Kit";
+      int variantId = CarvedSymbolActionData.Cast(action_data).m_CarvedSymbolId;
+      string newKitName = "SRP_Letter_" + GetLetterOptions().Get(variantId) + "_Kit";
       // Print("New kit name: " + newKitName);
       GetGame().CreateObjectEx(newKitName, action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
       carvedLetterKit.Delete();
 		}
 	}
+
+  override ActionData CreateActionData()
+	{
+		CarvedSymbolActionData action_data = new CarvedSymbolActionData;
+		return action_data;
+	}
+
+  override bool SetupAction( PlayerBase player, ActionTarget target, ItemBase item, out ActionData action_data, Param extra_data = NULL )
+	{	
+		if ( super.SetupAction( player, target, item, action_data, extra_data ) )
+		{			
+			if ( !GetGame().IsDedicatedServer() )
+			{
+				CarvedSymbolActionData.Cast(action_data).m_CarvedSymbolId = m_VariantID;
+			}
+			return true;
+		}		
+		return false;
+	}
+
+  override void WriteToContext(ParamsWriteContext ctx, ActionData action_data)
+	{
+		super.WriteToContext(ctx, action_data);
+		ctx.Write(CarvedSymbolActionData.Cast(action_data).m_CarvedSymbolId);
+	}
+
+	override bool ReadFromContext(ParamsReadContext ctx, out ActionReciveData action_recive_data )
+	{
+		action_recive_data = new CarvedSymbolActionReciveData;
+		super.ReadFromContext(ctx, action_recive_data);
+		
+		int variantId;
+		if ( ctx.Read(variantId) )
+		{
+      // Print("[ReadFromContext] - " + variantId)
+			CarvedSymbolActionReciveData.Cast( action_recive_data ).m_CarvedSymbolId = variantId;
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+  }
+
+  override void HandleReciveData(ActionReciveData action_recive_data, ActionData action_data)
+	{
+		super.HandleReciveData(action_recive_data, action_data);    
+		CarvedSymbolActionData.Cast(action_data).m_CarvedSymbolId = CarvedSymbolActionReciveData.Cast( action_recive_data ).m_CarvedSymbolId;
+	}
+
 
   void OnUpdateActions( Object item, Object target, int component_index )
 	{
