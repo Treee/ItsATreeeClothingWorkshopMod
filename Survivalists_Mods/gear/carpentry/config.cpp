@@ -21,7 +21,7 @@ class CfgVehicles
   class Inventory_Base;
 
   class SRP_KitBase;
-  //------------------------------ BASE BUILDING
+//------------------------------ BASE BUILDING
   class SRP_Deconstruction_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -42,7 +42,7 @@ class CfgVehicles
     };
 	};
 
-  //--------------------------------- TAXIDERMY
+//--------------------------------- TAXIDERMY
   class SRP_Taxidermy_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -87,7 +87,7 @@ class CfgVehicles
 	};
 
 
-  //------------------------------- BUILDING FRAMES
+//------------------------------- BUILDING FRAMES
   class SRP_BuildingComponentFrame_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -427,9 +427,7 @@ class CfgVehicles
     color="finedoubleplatform";
   };
 
-
-
-  //-------------------------------- Barricades
+//-------------------------------- Barricades
   class SRP_BarricadeKit_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -804,34 +802,353 @@ class CfgVehicles
 		};
 	};
 
-  //============================ LETTERS
-
-  class SRP_LetterKit1_Kit: SRP_KitBase //new
+//============================ LETTERS
+  // intermediate kit, chooses an option
+  class SRP_LetterKit_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Wooden Letter Kit - A-M";
-		descriptionShort="A Wooden Letter Kit - A-M";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
 	};
-
-  class SRP_LetterKit2_Kit: SRP_KitBase //new
+  // deploy kit. one per symbol
+  class SRP_Letter_A_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Wooden Letter Kit - N-Z";
-		descriptionShort="A Wooden Letter Kit - N-Z";
+    model="Survivalists_Mods\gear\carpentry\srp_letters_a.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
 	};
-  class SRP_LetterNumberKit_Kit: SRP_KitBase //new
+  class SRP_Letter_B_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Wooden Number Kit - 0-9";
-		descriptionShort="A Wooden Number Kit - 0-9";
+    model="Survivalists_Mods\gear\carpentry\srp_letters_b.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
 	};
-  class SRP_LetterSignsKit_Kit: SRP_KitBase //new
+  class SRP_Letter_C_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Wooden Accents Kit";
-		descriptionShort="A Wooden Accents Kit";
+    model="Survivalists_Mods\gear\carpentry\srp_letters_c.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_D_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_d.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_E_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_e.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_F_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_f.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_G_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_g.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_H_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_h.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_I_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_i.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_J_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_j.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_K_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_k.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_L_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_l.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_M_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_m.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_N_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_n.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_O_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_o.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_P_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_p.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_Q_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_q.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_R_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_r.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_S_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_s.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_T_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_t.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_U_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_u.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_V_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_v.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_W_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_w.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_X_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_x.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_Y_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_y.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_Z_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_z.p3d";
+		displayName="Wooden Letter Kit";
+		descriptionShort="A Wooden Letter Kit";
+	};
+  class SRP_Letter_0_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_0.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_1_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_1.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_2_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_2.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_3_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_3.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_4_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_4.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_5_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_5.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_6_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_6.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_7_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_7.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_8_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_8.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_9_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_9.p3d";
+		displayName="Wooden Number Kit";
+		descriptionShort="A Wooden Number Kit";
+	};
+  class SRP_Letter_Ampersand_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_ampersand.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Asterisk_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_asterisk.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Dollars_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_dollars.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Equals_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_equals.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Exclamation_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_exclamation.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Hash_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_hash.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Parenthesis_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_parenthesis.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Percent_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_percent.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Plus_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_plus.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Question_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_question.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Slash_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_slash.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+	};
+  class SRP_Letter_Times_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_times.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
 	};
   
+// deployed item, one per actual item
   class SRP_Letter_Colorbase: Inventory_Base // new
 	{
 		scope=0;
@@ -1194,7 +1511,7 @@ class CfgVehicles
     inventorySlots[]={};
   };
 
-  //======================================= POOL BALLS
+//======================================= POOL BALLS
   class SRP_PoolBall_ColorBase: Inventory_Base // new
 	{
 		scope=0;
@@ -1252,7 +1569,7 @@ class CfgVehicles
 		};
   };
 
-  // ---------------------PRE FABS
+// ---------------------PRE FABS
   class SRP_PrefabHouse_Base: HouseNoDestruct  // new
 	{
 		scope=0;
@@ -1372,7 +1689,7 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\carpentry\srp_woodenshed.p3d";
 	};
   
-  // ---------------------DOORS
+// ---------------------DOORS
   class SRP_Carpentry_HouseDoor: Fence  // new
 	{
 		scope=0;

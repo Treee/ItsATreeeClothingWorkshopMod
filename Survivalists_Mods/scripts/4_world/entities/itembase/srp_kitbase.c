@@ -6,7 +6,7 @@ class SRP_KitBase extends ItemBase
 
   string GetKitItemName()
   {
-    string kitType = this.GetType();
+    string kitType = GetType();
     if (kitType != "") {
       // int trimLength = kitType.Length() - 4; // -4 for _Kit removal
       kitType = kitType.Substring(0, kitType.Length() - 4);
@@ -19,6 +19,7 @@ class SRP_KitBase extends ItemBase
 		super.OnPlacementComplete(player, position, orientation);
 		if (GetGame().IsDedicatedServer())
 		{
+      // Print("Placing object: " + GetKitItemName());
 			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(GetKitItemName(), position, ECE_PLACE_ON_SURFACE));
 			kitItem.SetPosition(position);
 			kitItem.SetOrientation(orientation);
@@ -394,11 +395,7 @@ class SRP_WeaponBluntMacerator_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_Dynamite_Stick_Kit extends SRP_IntermediateCraftingKitBase{};
 
-class SRP_LetterKit1_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_LetterKit2_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_LetterSignsKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_StreetSign_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_LetterNumberKit_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
 {

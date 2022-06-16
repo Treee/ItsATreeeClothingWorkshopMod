@@ -1,0 +1,124 @@
+class ActionSwitchLetterOptionCB extends ActionContinuousBaseCB
+{
+	override void CreateActionComponent()
+	{
+		m_ActionData.m_ActionComponent = new CAContinuousTime(4.0);
+	}
+};
+
+class ActionSwitchLetterOption extends ActionContinuousBase
+{	
+  void ActionSwitchLetterOption()
+	{
+		m_CallbackClass = ActionSwitchLetterOptionCB;
+		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_CRAFTING;
+		m_FullBody = false;
+		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT | DayZPlayerConstants.STANCEMASK_CROUCH;
+    m_Text = "Letter - ";
+
+    if ( GetGame().IsClient() || !GetGame().IsMultiplayer() )
+		{
+			GetVariantManager().GetOnUpdateInvoker().Insert(OnUpdateActions);
+		}
+	}
+	
+	override void CreateConditionComponents()  
+	{	
+		m_ConditionItem = new CCINonRuined;
+		m_ConditionTarget = new CCTSelf;
+	}
+
+  override void OnActionInfoUpdate( PlayerBase player, ActionTarget target, ItemBase item )
+	{
+		string letter = GetLetterOptions().Get(m_VariantID);
+		if (letter && letter != "" )
+		{
+			m_Text = "Letter - " + letter;
+		}
+	}
+
+  override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
+	{	
+    return true;
+	}
+
+  override void OnFinishProgressServer( ActionData action_data )
+	{	
+    SRP_LetterKit_Kit carvedLetterKit;
+		if (action_data.m_MainItem && Class.CastTo(carvedLetterKit, action_data.m_MainItem))
+		{
+      string newKitName = "SRP_Letter_" + GetLetterOptions().Get(m_VariantID) + "_Kit";
+      // Print("New kit name: " + newKitName);
+      GetGame().CreateObjectEx(newKitName, action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
+      carvedLetterKit.Delete();
+		}
+	}
+
+  void OnUpdateActions( Object item, Object target, int component_index )
+	{
+		SRP_LetterKit_Kit carvedLetterKit;
+		if (Class.CastTo(carvedLetterKit, item))
+		{
+      GetVariantManager().SetActionVariantCount(GetLetterOptions().Count());
+		}
+		else
+		{
+			GetVariantManager().Clear();
+		}
+	}
+
+  TStringArray GetLetterOptions()
+  {
+    return {
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "Ampersand",
+      "Asterisk",
+      "Dollars",
+      "Equals",
+      "Exclamation",
+      "Hash",
+      "Parenthesis",
+      "Percent",
+      "Plus",
+      "Question",
+      "Slash",
+      "Times",
+    };
+  }
+};
