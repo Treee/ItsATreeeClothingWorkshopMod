@@ -66,23 +66,23 @@ class Land_srp_artifact_rubixcube_1 extends House
   void SpinClockWise()
   {
     string selection = GetSelectionFromComponent(m_CurrentComponent);
-    Print("SpinClockWise: " + m_CurrentComponent + " selection: " + selection);
+    // Print("SpinClockWise: " + m_CurrentComponent + " selection: " + selection);
     if (selection != "")
     {
       int nextPhase = GetAnimationPhase(selection) + 1;
       SetAnimationPhase(selection, nextPhase);
-      Print("SPinning: " + selection + " to " + nextPhase);
+      // Print("SPinning: " + selection + " to " + nextPhase);
     }
   }
   void SpinCounterClockWise()
   {
     string selection = GetSelectionFromComponent(m_CurrentComponent);
-    Print("SpinCounterClockWise: " + m_CurrentComponent + " selection: " + selection);
+    // Print("SpinCounterClockWise: " + m_CurrentComponent + " selection: " + selection);
     if (selection != "")
     {
       int nextPhase = GetAnimationPhase(selection) - 1;
       SetAnimationPhase(selection, nextPhase);
-      Print("SPinning: " + selection + " to " + nextPhase);
+      // Print("SPinning: " + selection + " to " + nextPhase);
     }
   }
 
