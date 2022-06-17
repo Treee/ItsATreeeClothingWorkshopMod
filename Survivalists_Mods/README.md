@@ -874,6 +874,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Simple Rubix Cube" (https://skfb.ly/6zsty) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Pioneer Cdj 3000" (https://skfb.ly/o7rVZ) by MaxTht is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

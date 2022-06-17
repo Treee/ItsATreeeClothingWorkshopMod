@@ -48,6 +48,8 @@ class SRP_DeployableContainer_Base extends DeployableContainer_Base
 	}
 };
 
+class SRP_DJBooth_ColorBase extends SRP_DeployableContainer_Base{};
+
 class SRP_PotteryPot_ColorBase extends SRP_DeployableContainer_Base{};
 
 class SRP_DeskNamePlate extends SRP_DeployableContainer_Base{};
@@ -324,6 +326,7 @@ class SRP_Container_Base extends DeployableContainer_Base
 		}
 	}
 }
+
 class SRP_SewingTable extends SRP_Container_Base{};
 
 class SRP_PostBox extends SRP_Container_Base{};

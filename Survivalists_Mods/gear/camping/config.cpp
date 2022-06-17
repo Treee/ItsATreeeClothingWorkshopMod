@@ -1721,6 +1721,60 @@ class CfgVehicles
 		descriptionShort="A large rock with smooth surfaces.";
   };
 
+  class SRP_DJBooth_ColorBase: Inventory_Base  // new
+	{
+		scope=0;
+		displayName="DJ Booth";
+		descriptionShort="A console to make sick beats.";
+		model="Survivalists_Mods\gear\camping\srp_djbooth.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		itemsCargoSize[]={0,0};
+		physLayer="item_large";
+    isTakeable=0;
+    itemBehaviour=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_djbooth_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_djbooth.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_djbooth.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_djbooth.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_djbooth.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_djbooth.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_DJBooth_BacoBoss: SRP_DJBooth_ColorBase
+  {
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_djbooth_co.paa"
+    };
+  };
+
   class SRP_Ladder_Opened_Kit: SRP_KitBase  // new
 	{
 		scope=2;
