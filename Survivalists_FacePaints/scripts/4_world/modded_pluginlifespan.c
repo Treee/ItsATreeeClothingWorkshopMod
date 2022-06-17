@@ -2,7 +2,7 @@ modded class PluginLifespan
 {	
   protected ref map<string, ref array<ref FacePaintStyle>> m_FacePaintOptions;
 
-	void LoadFromCfg()
+	override void LoadFromCfg()
 	{
     super.LoadFromCfg();
 
