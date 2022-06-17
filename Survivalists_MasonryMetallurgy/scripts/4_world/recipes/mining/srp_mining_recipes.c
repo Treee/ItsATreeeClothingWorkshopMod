@@ -109,7 +109,7 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
 	{
 		m_Name = "Crush Stone Chunk";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 8;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -179,9 +179,14 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
 
     float chance = Math.RandomFloatInclusive(0,1);
     // 20% chance to ruin the product
+    // Print("Chance to ruin: " + chance);
     if (chance >= 0.80)
     {
       m_ResultSetHealth[0] = -1000;
+    }
+    else
+    {
+      m_ResultSetHealth[0] = -1;
     }
     
     chance = Math.RandomFloatInclusive(0,1);
@@ -293,6 +298,10 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
     if (Math.RandomFloatInclusive(0,1) >= 0.05)
     {
       m_ResultSetHealth[0] = -9999;
+    }
+    else
+    {
+      m_ResultSetHealth[0] = -1;
     }
 		Debug.Log("Craft_SRP_RefineUnCutGem_CrudeTool: Recipe Do method called","recipes");
 	}
