@@ -345,7 +345,22 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
     return false;
   }
 
+  bool HasAttachmentFilledWithQuantity(string slotName, int quantity=0, int maxItemDamageState=1)
+  {
+    EntityAI attachment = FindAttachmentBySlotName(slotName);
+    if (attachment)
+    {
+      return attachment.GetHealthLevel() <= maxItemDamageState && attachment.GetQuantity() >= quantity;
+    }
+    return false;
+  }
+
   bool HasAllAttachmentsFilled()
+  {
+    return false;
+  }
+
+  bool CanCraft()
   {
     return false;
   }

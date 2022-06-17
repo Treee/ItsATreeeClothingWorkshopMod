@@ -1,23 +1,64 @@
 class SRP_PatchFlag_ColorBase extends Clothing{};
 class SRP_PatchLogo_ColorBase extends Clothing{};
-class SRP_PatchFlag_StarterKit1 extends Clothing
-{
-  bool CanCraftIntoPatch(string firstLetter)
-  {
-    SRP_Letter_Colorbase category = SRP_Letter_Colorbase.Cast(FindAttachmentBySlotName("SRP_MagnetLetter"));
-    if (category)
-    {
-      string letterType = category.GetType();
-      string lastLetter = letterType.Get(letterType.Length() - 1);
-      lastLetter.ToLower();
 
-      bool sewing1 = FindAttachmentBySlotName("SRP_SewingThread1") != null;
-      bool sewing2 = FindAttachmentBySlotName("SRP_SewingThread2") != null;
-      bool letter = lastLetter == firstLetter;
-      // Print("letter: " + firstLetter + " matching? " + letter + " thread1: " + sewing1 + " thread2: " + sewing2);
-      return (sewing1 && sewing2 && letter);
-    }
-    return false;
+class SRP_PatchFlag_StarterKit extends SRP_IntermediateCraftingKitBase
+{
+  override bool CanCraft()
+  {
+    bool hasThread1 = HasAttachmentFilledWithQuantity("SRP_SewingThread1", 50);
+    bool hasThread2 = HasAttachmentFilledWithQuantity("SRP_SewingThread2", 50);
+    return (hasThread1 && hasThread2);
   }
+
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSwitchPatchFlagOption);
+	}
 };
-class SRP_PatchFlag_StarterKit2 extends SRP_PatchFlag_StarterKit1{};
+
+class SRP_PatchLogo_StarterKit extends SRP_IntermediateCraftingKitBase
+{
+  override bool CanCraft()
+  {
+    bool hasThread1 = HasAttachmentFilledWithQuantity("SRP_SewingThread1", 50);
+    bool hasThread2 = HasAttachmentFilledWithQuantity("SRP_SewingThread2", 50);
+    return (hasThread1 && hasThread2);
+  }
+
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSwitchPatchLogoOption);
+	}
+};
+class SRP_SingleArmband_StarterKit extends SRP_IntermediateCraftingKitBase
+{
+  override bool CanCraft()
+  {
+    bool hasThread1 = HasAttachmentFilledWithQuantity("SRP_SewingThread1", 50);
+    bool hasThread2 = HasAttachmentFilledWithQuantity("SRP_SewingThread2", 50);
+    return (hasThread1 && hasThread2);
+  }
+
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSwitchSingleArmbandOption);
+	}
+};
+class SRP_DoubleArmband_StarterKit extends SRP_IntermediateCraftingKitBase
+{
+  override bool CanCraft()
+  {
+    bool hasThread1 = HasAttachmentFilledWithQuantity("SRP_SewingThread1", 75);
+    bool hasThread2 = HasAttachmentFilledWithQuantity("SRP_SewingThread2", 75);
+    return (hasThread1 && hasThread2);
+  }
+
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSwitchDoubleArmbandOption);
+	}
+};

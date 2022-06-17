@@ -15,7 +15,9 @@ class CfgPatches
 };
 class CfgVehicles
 {
-	class Clothing;
+  class SRP_KitBase;
+
+	class Clothing;  
   class Inventory_Base;
   class Armband_ColorBase;
   // -------------------------- CUSTOM STUFF
@@ -95,71 +97,55 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_PatchFlag_StarterKit1: SRP_PatchFlag_ColorBase
+  class SRP_PatchFlag_StarterKit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Country Flag - A-M Empty Canvas";
+		displayName="Country Flags Kit - Empty Canvas";
     descriptionShort="An empty cloth patch. Add some thread and elbow grease to sew the finished patch.";
     inventorySlot="";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\patches\data\emptyflag_patch_co.paa",
-			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
-		};
     attachments[]=
 		{	
-      "SRP_MagnetLetter",
-			"SRP_SewingThread1",
-      "SRP_SewingThread2"
-		};
-	};
-  class SRP_PatchFlag_StarterKit2: SRP_PatchFlag_ColorBase
-	{
-		scope=2;
-		displayName="Country Flag - N-Z Empty Canvas";
-    descriptionShort="An empty cloth patch. Add some thread and elbow grease to sew the finished patch.";
-    inventorySlot="";
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\patches\data\emptyflag_patch_co.paa",
-			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
-		};
-    attachments[]=
-		{	
-      "SRP_MagnetLetter",
 			"SRP_SewingThread1",
       "SRP_SewingThread2"
 		};
 	};
 
-  class SRP_SingleArmband_StarterKit1: Armband_ColorBase
+  class SRP_PatchLogo_StarterKit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Single Armband Starter Kit - Solid Colors";
-    descriptionShort="A simple kit for a single armband. Meant for solid colors";
+		displayName="Patch Logo Kit - Empty Canvas";
+    descriptionShort="An empty cloth patch. Add some thread and elbow grease to sew the finished patch.";
     inventorySlot="";
-    hiddenSelectionsTextures[]=
-		{
-			"\dz\characters\tops\data\armbend_white_g_co.paa",
-			"\dz\characters\tops\data\armbend_small_white_co.paa",
-			"\dz\characters\tops\data\armbend_small_white_co.paa",
-			"\dz\characters\tops\Data\armbend_big_white_co.paa",
-			"\dz\characters\tops\Data\armbend_big_white_co.paa"
+    attachments[]=
+		{	
+			"SRP_SewingThread1",
+      "SRP_SewingThread2"
 		};
 	};
-  class SRP_SingleArmband_StarterKit2: Armband_ColorBase
+
+  class SRP_SingleArmband_StarterKit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Single Armband Starter Kit - Medical Insignia";
-    descriptionShort="A simple kit for a single armband. Meant to distinguish medical personel";
+		displayName="Single Armband Kit - Empty Canvas";
+    descriptionShort="An empty cloth armband. Add some thread and elbow grease to sew the finished patch.";
     inventorySlot="";
-    hiddenSelectionsTextures[]=
-		{
-			"\dz\characters\tops\data\armbend_white_g_co.paa",
-			"\dz\characters\tops\data\armbend_small_white_co.paa",
-			"\dz\characters\tops\data\armbend_small_white_co.paa",
-			"\dz\characters\tops\Data\armbend_big_white_co.paa",
-			"\dz\characters\tops\Data\armbend_big_white_co.paa"
+    attachments[]=
+		{	
+			"SRP_SewingThread1",
+      "SRP_SewingThread2"
+		};
+	};
+
+  class SRP_DoubleArmband_StarterKit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Double Armband Kit - Empty Canvas";
+    descriptionShort="An empty cloth armband. Add some thread and elbow grease to sew the finished patch.";
+    inventorySlot="";
+    attachments[]=
+		{	
+			"SRP_SewingThread1",
+      "SRP_SewingThread2"
 		};
 	};
 

@@ -52,5 +52,9 @@ modded class ActionConstructor
     actions.Insert(ActionTurnRubixCubeClockwise_Z2);
 
     actions.Insert(ActionSwitchLetterOption);
+    actions.Insert(ActionSwitchPatchFlagOption);
+    actions.Insert(ActionSwitchPatchLogoOption);
+    actions.Insert(ActionSwitchSingleArmbandOption);
+    actions.Insert(ActionSwitchDoubleArmbandOption);
 	}
 };
