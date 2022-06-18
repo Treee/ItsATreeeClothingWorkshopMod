@@ -183,14 +183,6 @@ class CfgVehicles
   };
 
   // -------------------------- MODDED MODS
-  class BBP_Admin_Hammer: Hammer
-  {
-    scope=0;
-    displayName="ADMIN HAMMER";
-    descriptionShort="No materials required for building, only dirty cheaters use this item.";
-    itemSize[]={2,2};
-  };
-
   class MassAdminStash: Compass
 	{
     scope=0; // do not let it even be spawned in

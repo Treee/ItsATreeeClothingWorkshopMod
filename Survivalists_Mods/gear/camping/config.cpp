@@ -29,10 +29,6 @@ class CfgVehicles
   class SRP_KitBase;
 
   //----------------------- MOD OVERRIDES
-  class sleepingbag_colorbase_mung_Deployed: Inventory_Base
-	{
-    itemsCargoSize[]={0,0};
-  };
 
   // ----------------------  BASE GAME OVERRIDES
   // the only change here is setting the build base action to use shovels

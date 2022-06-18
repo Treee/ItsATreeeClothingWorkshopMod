@@ -47,13 +47,9 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Scripts",
-      "Munghardssleepingbag", // munghards
-      "Munghardsmeleesling", // meleesling
-      "Munghardsriflesling", // riflesling
       "Mass_Textures", // MassNBC_Bag, removing admin compass
-      "BaseBuildingPlus", // removing admin tools
       "Notes_Gear", // WrittenNote from notes
-      "deerisle" // for the map (security door)
+      "deerisle", // for the map (security door)      
 		};
 	};
 };
