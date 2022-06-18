@@ -58,6 +58,13 @@ modded class PluginLifespan
 		}
 	}
 
+  override protected void SetPlayerLifespanLevel( PlayerBase player, LifespanLevel level )
+  {
+    // Print("teudhfidushfduisofh");
+    super.SetPlayerLifespanLevel( player, level )
+    // Print("f          ---------------");
+  }
+
   FacePaintStyle GetFacePaintMaterials(string player_class, int camoIndex = -1 )
 	{		
     array< ref FacePaintStyle> facepaint_styles = m_FacePaintOptions.Get( player_class );

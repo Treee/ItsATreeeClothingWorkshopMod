@@ -193,6 +193,15 @@ modded class PlayerBase
     return false;
   }
 
+  bool IsPlayerPreMutant()
+  {
+    if (IsAlive() && m_FliesEff)
+    {
+      return true;
+    }
+    return false;
+  }
+
   int GetPlayerRadiationProtection()
   {
     float protection = 0;
