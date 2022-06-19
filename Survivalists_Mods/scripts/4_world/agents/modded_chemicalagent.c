@@ -11,6 +11,10 @@ modded class ChemicalAgent
       {
         invasibility = 15.0;
       }
+      if (itemInHands.GetType() == "SRP_LabTube_MutantLiquidSterilizedIrradiatedNeutral")
+      {
+        invasibility = 6.0;
+      }
       else if (itemInHands.GetType() == "DUB_Mutantsyringe_Pure")
       {
         invasibility = 15.0;

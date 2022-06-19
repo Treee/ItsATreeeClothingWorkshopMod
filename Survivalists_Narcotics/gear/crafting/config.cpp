@@ -266,6 +266,26 @@ class CfgVehicles
       "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
     };
   };
+  class SRP_LabTube_MutantLiquidSterilizedIrradiatedNeutral: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Neturalized Irradiated Ichor";
+		descriptionShort="A single test tube. Contains some neutralized irradiated ichor. What are you doing with this?";
+    color="mutantliquidsterilizedirradiatedneutral";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_yellow.rvmat"
+    };
+  };
 
   //========================================================== VIRUS/CURE TUBES
   class SRP_LabTube_Kuru: SRP_LabTube_Colorbase

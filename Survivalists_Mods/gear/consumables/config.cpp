@@ -66,16 +66,19 @@ class CfgVehicles
 	{
     varStackMax=20;
   };
-
   class GardenLime: Inventory_Base
   {
     canBeSplit=1;
   };
+  class BurlapStrip: Inventory_Base
+	{
+		varQuantityMax=30;
+	};
 
   // windstride override
   class HumanSkull: Inventory_Base
   {
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "AnimalPelt1",
       "AnimalPelt2",
@@ -126,7 +129,7 @@ class CfgVehicles
   // bone armor kit
   class Bone: Inventory_Base
   {
-    inventorySlot[]=
+    inventorySlot[]+=
 		{
 			"SRP_Bones",
       "AnimalPelt1",
