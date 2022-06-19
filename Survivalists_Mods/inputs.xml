@@ -2,8 +2,11 @@
 <modded_inputs>
   <inputs>
     <actions>
-      <input name="UACompassToggle" loc="Compass Toggle" />
+      <input name="UACompassToggle" loc="Survivalists_settings_compasstoggle" />
     </actions>
+    <sorting name="Survivalists" loc="Survivalists_settings_menu">
+      <input name="UACompassToggle"/>
+    </sorting>
   </inputs>
   <preset>
     <input name="UACompassToggle">
