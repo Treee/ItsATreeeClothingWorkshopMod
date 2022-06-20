@@ -1,4 +1,4 @@
-class SRP_CraftingMaterial_Dye_Base extends Inventory_Base{};
+class SRP_CraftingMaterial_Dye_Base extends ItemBase{};
 
 class SRP_CraftingMaterial_Dye_Bleach extends SRP_CraftingMaterial_Dye_Base{};
 class SRP_CraftingMaterial_Dye_Black extends SRP_CraftingMaterial_Dye_Base{};

@@ -56,4 +56,4 @@ class SRP_MortarBowl extends Inventory_Base
 	}
 };
 
-class SRP_MortarPestle extends Inventory_Base{};
+class SRP_MortarPestle extends ItemBase{};
