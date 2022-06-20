@@ -505,7 +505,7 @@ class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
     bool isAllFilled = false;
     isAllFilled |= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Hammer",GameConstants.STATE_BADLY_DAMAGED);
     isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Hatchet",GameConstants.STATE_BADLY_DAMAGED);
-    // isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_HandSaw",GameConstants.STATE_BADLY_DAMAGED);
+    isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_HandSaw",GameConstants.STATE_BADLY_DAMAGED);
     isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Pliers",GameConstants.STATE_BADLY_DAMAGED);
     isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Screwdriver",GameConstants.STATE_BADLY_DAMAGED);
     isAllFilled &= HasAttachmentFilledWithHealthLevel("SRP_ToolKit_Shovel",GameConstants.STATE_BADLY_DAMAGED);
@@ -520,6 +520,7 @@ class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
   {
     DamageItemSlot("SRP_ToolKit_Hammer", Math.RandomIntInclusive(10,20));
     DamageItemSlot("SRP_ToolKit_Hatchet", Math.RandomIntInclusive(10,20));
+    DamageItemSlot("SRP_ToolKit_HandSaw", Math.RandomIntInclusive(10,20));
     DamageItemSlot("SRP_ToolKit_Pliers", Math.RandomIntInclusive(10,20));
     DamageItemSlot("SRP_ToolKit_Screwdriver", Math.RandomIntInclusive(10,20));
     DamageItemSlot("SRP_ToolKit_Shovel", Math.RandomIntInclusive(10,20));
