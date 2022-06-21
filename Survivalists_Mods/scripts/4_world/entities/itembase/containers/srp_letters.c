@@ -72,6 +72,12 @@ class SRP_Letter_Colorbase extends SRP_Container_Base
 	{
 		return false;
 	}
+
+  string GetLetterSymbol()
+  {
+    return ConfigGetString("color");
+  }
+
 };
 
 class SRP_Letter_A extends SRP_Letter_Colorbase{};
