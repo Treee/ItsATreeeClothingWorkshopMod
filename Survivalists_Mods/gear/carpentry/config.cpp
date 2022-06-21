@@ -27,6 +27,10 @@ class CfgVehicles
 		scope=2;
 		displayName="Carpentry Deconstruction Kit";
 		descriptionShort="A kit with the appropriate tools to correctly disassemble a placed item.";
+    inventorySlot[]=
+    {
+      "SRP_ToolKit_DeconstructKit"
+    };
     attachments[]=
     {
       "SRP_ToolKit_Hammer",
@@ -1212,7 +1216,7 @@ class CfgVehicles
     rotationFlags=16;
     isTakeable=0;
     itemsCargoSize[]={0,0};
-    inventorySlots[]=
+    inventorySlot[]=
     {
       "SRP_MagnetLetter"
     };
@@ -1409,154 +1413,154 @@ class CfgVehicles
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_0.p3d";
     color="0";
-    inventorySlots[]={}; // flag patch recipe expects last letter to be an actual letter. update if you add these in
+    inventorySlot[]={}; // flag patch recipe expects last letter to be an actual letter. update if you add these in
   };
   class SRP_Letter_1: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_1.p3d";
     color="1";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_2: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_2.p3d";
     color="2";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_3: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_3.p3d";
     color="3";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_4: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_4.p3d";
     color="4";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_5: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_5.p3d";
     color="5";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_6: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_6.p3d";
     color="6";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_7: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_7.p3d";
     color="7";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_8: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_8.p3d";
     color="8";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_9: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_numbers_9.p3d";
     color="9";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Ampersand: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_ampersand.p3d";
     color="ampersand";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Asterisk: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_asterisk.p3d";
     color="asterisk";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Dollars: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_dollars.p3d";
     color="dollars";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Equals: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_equals.p3d";
     color="equals";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Exclamation: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_exclamation.p3d";
     color="exclamation";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Hash: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_hash.p3d";
     color="hash";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Parenthesis: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_parenthesis.p3d";
     color="parenthesis";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Percent: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_percent.p3d";
     color="percent";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Plus: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_plus.p3d";
     color="plus";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Question: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_question.p3d";
     color="question";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Slash: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_slash.p3d";
     color="slash";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
   class SRP_Letter_Times: SRP_Letter_Colorbase
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_times.p3d";
     color="times";
-    inventorySlots[]={};
+    inventorySlot[]={};
   };
 
 //======================================= POOL BALLS
@@ -1573,7 +1577,7 @@ class CfgVehicles
 		itemSize[]={2,2};
     isTakeable=0;
     itemsCargoSize[]={0,0};
-    inventorySlots[]={};
+    inventorySlot[]={};
     hiddenSelections[]=
     {
       "zbytek"

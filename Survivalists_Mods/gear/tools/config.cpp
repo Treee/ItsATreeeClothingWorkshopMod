@@ -100,6 +100,9 @@ class CfgVehicles
     repairCosts[]={30};
     inventorySlot[]+=
 		{
+      "SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
       "SRP_ToolKit_Hammer"
 		};
 	};
@@ -149,7 +152,20 @@ class CfgVehicles
   {
     inventorySlot[]+=
     {
+      "SRP_LargeTool1",
+      "SRP_LargeTool2",
+      "SRP_LargeTool3",
       "SRP_ToolKit_Shovel"
+    };
+  };
+
+  class Pickaxe: Inventory_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_LargeTool1",
+      "SRP_LargeTool2",
+      "SRP_LargeTool3",
     };
   };
 
@@ -165,6 +181,9 @@ class CfgVehicles
 	{
     inventorySlot[]+=
     {
+      "SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
       "SRP_ToolKit_Wrench"
     };
   };
@@ -173,6 +192,9 @@ class CfgVehicles
 	{
     inventorySlot[]+=
     {
+      "SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
       "SRP_ToolKit_HandSaw"
     };
   };

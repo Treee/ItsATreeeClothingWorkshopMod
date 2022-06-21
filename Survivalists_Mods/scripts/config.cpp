@@ -75,6 +75,12 @@ class CfgSlots
 
 
   //====================Tool Kit Slots
+  class Slot_SRP_ToolKit_DeconstructKit
+	{
+		name="SRP_ToolKit_DeconstructKit";
+		displayName="Deconstruction Kit";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
   class Slot_SRP_ToolKit_Hammer
 	{
 		name="SRP_ToolKit_Hammer";
@@ -1231,19 +1237,37 @@ class CfgSlots
   class Slot_SRP_Tool1
   {
 		name="SRP_Tool1";
-		displayName="Tool1";
+		displayName="Small Tool";
 		ghostIcon="set:dayz_inventory image:missing";
   };
   class Slot_SRP_Tool2
   {
 		name="SRP_Tool2";
-		displayName="Tool2";
+		displayName="Small Tool";
 		ghostIcon="set:dayz_inventory image:missing";
   };
   class Slot_SRP_Tool3
   {
 		name="SRP_Tool3";
-		displayName="Tool3";
+		displayName="Small Tool";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_LargeTool1
+  {
+		name="SRP_LargeTool1";
+		displayName="Large Tool";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_LargeTool2
+  {
+		name="SRP_LargeTool2";
+		displayName="Large Tool";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_LargeTool3
+  {
+		name="SRP_LargeTool3";
+		displayName="Large Tool";
 		ghostIcon="set:dayz_inventory image:missing";
   };
   class Slot_SRP_Medical1
@@ -2315,6 +2339,24 @@ class CfgNonAIVehicles
     scope=2;
     inventorySlot[]={"SRP_Tool3"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_tool3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_largetool1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_largeTool1"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_largetool1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_largetool2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_largeTool2"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_largetool2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_largetool3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_largeTool3"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_largetool3_proxy.p3d"; //proxy path 
   };
   class Proxysrp_medical1_proxy: ProxyAttachment //same as p3d name
   {

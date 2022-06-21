@@ -1232,8 +1232,25 @@ class CfgVehicles
 		useEntityHierarchy="true";
 		attachments[]=
 		{
+      "SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
+      "SRP_LargeTool1",
+      "SRP_LargeTool2",
+      "SRP_LargeTool3",
 			"SRP_WoodDrill",
-			"SRP_WoodClamp"
+			"SRP_WoodClamp",
+      "SRP_ToolKit_Hammer",
+      "SRP_ToolKit_Hatchet",
+      "SRP_ToolKit_HandSaw",
+      "SRP_ToolKit_Pliers",
+      "SRP_ToolKit_Screwdriver",
+      "SRP_ToolKit_Shovel",
+      "SRP_ToolKit_Caliper",
+      "SRP_ToolKit_Handdrill",
+      "SRP_ToolKit_Crowbar",
+      "SRP_ToolKit_Wrench",
+      "SRP_ToolKit_DeconstructKit"
 		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
@@ -1241,23 +1258,67 @@ class CfgVehicles
 		heavyItem=1;
 		weight=500;
 		itemSize[]={14,14};
-    itemsCargoSize[]={3,3};
+    itemsCargoSize[]={4,4};
 		itemBehaviour=0;
 		repairKitType=1;
 		physLayer="item_large";
 		class GUIInventoryAttachmentsProps
 		{
-			class Tools
+      class Tools
 			{
 				name="Tools";
-				description="Attachments for a lathe";
+				description="Small Tools";
+				attachmentSlots[]=
+				{
+					"SRP_Tool1",
+          "SRP_Tool2",
+          "SRP_Tool3",
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
+      class LargeTools
+			{
+				name="Large Tools";
+				description="Large Tools";
+				attachmentSlots[]=
+				{
+					"SRP_LargeTool1",
+          "SRP_LargeTool2",
+          "SRP_LargeTool3",
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
+			class Augments
+			{
+				name="Augments";
+				description="Attachments for wood workbench";
 				attachmentSlots[]=
 				{
 					"SRP_WoodDrill",
           "SRP_WoodClamp"
 				};
 				icon="set:dayz_inventory image:cat_vehicle_engine";
-			};		
+			};
+      class ExtraTools
+			{
+				name="Extra Tools";
+				description="Extra Tools";
+				attachmentSlots[]=
+				{
+          "SRP_ToolKit_Hammer",
+          "SRP_ToolKit_Hatchet",
+          "SRP_ToolKit_HandSaw",
+          "SRP_ToolKit_Pliers",
+          "SRP_ToolKit_Screwdriver",
+          "SRP_ToolKit_Shovel",
+          "SRP_ToolKit_Caliper",
+          "SRP_ToolKit_Handdrill",
+          "SRP_ToolKit_Crowbar",
+          "SRP_ToolKit_Wrench",
+          "SRP_ToolKit_DeconstructKit"
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};	
 		};
 		class DamageSystem
 		{
@@ -1409,17 +1470,96 @@ class CfgVehicles
 		descriptionShort="A Workbench with basic tools.";
 		model="Survivalists_Mods\gear\crafting\SRP_genericworkbench_metal.p3d";
 		useEntityHierarchy="true";
-		attachments[]={};
+    attachments[]=
+		{
+      "SRP_Tool1",
+      "SRP_Tool2",
+      "SRP_Tool3",
+      "SRP_LargeTool1",
+      "SRP_LargeTool2",
+      "SRP_LargeTool3",
+			"SRP_WoodDrill",
+			"SRP_WoodClamp",
+      "SRP_ToolKit_Hammer",
+      "SRP_ToolKit_Hatchet",
+      "SRP_ToolKit_HandSaw",
+      "SRP_ToolKit_Pliers",
+      "SRP_ToolKit_Screwdriver",
+      "SRP_ToolKit_Shovel",
+      "SRP_ToolKit_Caliper",
+      "SRP_ToolKit_Handdrill",
+      "SRP_ToolKit_Crowbar",
+      "SRP_ToolKit_Wrench",
+      "SRP_ToolKit_DeconstructKit"
+		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
 		canBeDigged=0;
 		heavyItem=1;
 		weight=500;
 		itemSize[]={14,14};
-    itemsCargoSize[]={3,3};
+    itemsCargoSize[]={4,4};
 		itemBehaviour=0;
 		repairKitType=1;
 		physLayer="item_large";
+    class GUIInventoryAttachmentsProps
+		{
+      class Tools
+			{
+				name="Tools";
+				description="Small Tools";
+				attachmentSlots[]=
+				{
+					"SRP_Tool1",
+          "SRP_Tool2",
+          "SRP_Tool3",
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
+      class LargeTools
+			{
+				name="Large Tools";
+				description="Large Tools";
+				attachmentSlots[]=
+				{
+					"SRP_LargeTool1",
+          "SRP_LargeTool2",
+          "SRP_LargeTool3",
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
+			class Augments
+			{
+				name="Augments";
+				description="Attachments for wood workbench";
+				attachmentSlots[]=
+				{
+					"SRP_WoodDrill",
+          "SRP_WoodClamp"
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
+      class ExtraTools
+			{
+				name="Extra Tools";
+				description="Extra Tools";
+				attachmentSlots[]=
+				{
+          "SRP_ToolKit_Hammer",
+          "SRP_ToolKit_Hatchet",
+          "SRP_ToolKit_HandSaw",
+          "SRP_ToolKit_Pliers",
+          "SRP_ToolKit_Screwdriver",
+          "SRP_ToolKit_Shovel",
+          "SRP_ToolKit_Caliper",
+          "SRP_ToolKit_Handdrill",
+          "SRP_ToolKit_Crowbar",
+          "SRP_ToolKit_Wrench",
+          "SRP_ToolKit_DeconstructKit"
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};	
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
