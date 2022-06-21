@@ -11,7 +11,8 @@ class ActionShake8Ball: ActionContinuousBase
 	void ActionShake8Ball()
 	{
 		m_CallbackClass = ActionShake8BallCB;
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_CRAFTING;
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_HANDCUFFTARGET;
+    m_StanceMask = DayZPlayerConstants.STANCEIDX_ERECT | DayZPlayerConstants.STANCEIDX_CROUCH;
 		m_FullBody = true;
 		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
 		m_Text = "Shake 8 Ball";

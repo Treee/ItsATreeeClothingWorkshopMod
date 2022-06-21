@@ -22,6 +22,7 @@ class CfgVehicles
   class TacticalBaconCan_Opened;
   class Marmalade;
   class Worm;
+  class Guts;
   class MeatStageTransitions;
   class FoodAnimationSources;
   class BaseFoodStageTransitions;
@@ -934,6 +935,41 @@ class CfgVehicles
 	};
 
   // ----------------------- CUSTOM STUFF
+  class SRP_Guts_PigletCookiesAcid: Guts
+	{
+		scope=2;
+		displayName="Piglets Cookies";
+		descriptionShort="Chunks of rotten apples, frosted flakes and chunks of seaweed all mushed up in bread. There is a smell of sulfur and rotten eggs seaping from this cookie.";
+		hiddenSelections[]={"camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\food\data\animal_guts_PigletsCookie_co.paa"};
+    class Nutrition
+		{
+			fullnessIndex=1;
+			energy=100;
+			water=100;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+  class SRP_Guts_PigletCookiesMetal: Guts
+	{
+		scope=2;
+		displayName="Piglets Cookies";
+		descriptionShort="Shavings of scrap metal and steel cut oats sprinkled throughout a heavy mash of potato. A strong smell of gasoline and salt seaps from this cookie.";
+		hiddenSelections[]={"camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\food\data\animal_guts_PigletsCookiev2_co.paa"};
+    class Nutrition
+		{
+			fullnessIndex=1;
+			energy=100;
+			water=100;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+
   class SRP_CandyCane: Worm  // new
 	{
 		scope=2;
