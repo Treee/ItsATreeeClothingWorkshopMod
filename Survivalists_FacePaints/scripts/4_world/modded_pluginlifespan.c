@@ -36,16 +36,20 @@ modded class PluginLifespan
 
 						if ( survivor_facepaint_name.Contains("FacePaint_") )
 						{
-							string paint_material, normal_material;
+							string paint_material, paint_material_unshaved, paint_material_bearded, normal_material;
 							string path_normal = suvivor_bloodyhands_normalpath + " mat_normal";
 							string path_paint = survivor_facepaint_path + " mat_paint";
+							string path_paint_unshaved = survivor_facepaint_path + " mat_paint_unshaved";
+							string path_paint_bearded = survivor_facepaint_path + " mat_paint_bearded";
 
 		        	TStringArray parts = new TStringArray;
               survivor_facepaint_name.Split("_", parts);
 							GetGame().ConfigGetText(path_normal, normal_material);
 							GetGame().ConfigGetText(path_paint, paint_material);
+							GetGame().ConfigGetText(path_paint_unshaved, paint_material_unshaved);
+							GetGame().ConfigGetText(path_paint_bearded, paint_material_bearded);
 
-              facePaint_styles.Insert(new FacePaintStyle(parts[1],normal_material, paint_material,facepaintindex) );
+              facePaint_styles.Insert(new FacePaintStyle(parts[1],normal_material, paint_material, paint_material_unshaved, paint_material_bearded,facepaintindex) );
               facepaintindex++;
 						}
 					}

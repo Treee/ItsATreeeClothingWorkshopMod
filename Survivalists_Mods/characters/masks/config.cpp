@@ -1215,7 +1215,7 @@ class CfgVehicles
 		itemSize[]={3,2};
 		inventorySlot[]=
     {
-      "Mask"
+      "Beard"
     };
 		headSelectionsToHide[]={};
 		hiddenSelections[]=
@@ -1250,7 +1250,7 @@ class CfgVehicles
 		itemSize[]={3,2};
 		inventorySlot[]=
     {
-      "Mask"
+      "Beard"
     };
 		headSelectionsToHide[]={};
 		hiddenSelections[]=
@@ -1285,7 +1285,7 @@ class CfgVehicles
 		itemSize[]={3,2};
 		inventorySlot[]=
     {
-      "Mask"
+      "Beard"
     };
 		headSelectionsToHide[]={};
 		hiddenSelections[]=

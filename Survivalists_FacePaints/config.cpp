@@ -91,6 +91,8 @@ class CfgVehicles
 		class FacePaint_Bosnia
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bosnia\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bosnia\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bosnia\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Bulgaria1
 		{			

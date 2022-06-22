@@ -3,14 +3,18 @@ class FacePaintStyle
   string m_CamoName = "";
   string m_NormalMaterial = "";
   string m_PaintMaterial = "";
+  string m_PaintMaterialUnshaved = "";
+  string m_PaintMaterialBearded = "";
 	
   int m_PaintIndex = 0;
 
-	void FacePaintStyle(string camoName, string normal_material, string paint_material, int index )
+	void FacePaintStyle(string camoName, string normal_material, string paint_material, string paint_material_unshaved, string paint_material_bearded, int index )
 	{
     m_CamoName = camoName;
 		m_NormalMaterial = normal_material;
 		m_PaintMaterial = paint_material;
+    m_PaintMaterialUnshaved = m_PaintMaterialUnshaved;
+    m_PaintMaterialBearded = m_PaintMaterialBearded;
     m_PaintIndex = index;
     // Print("Index: " + m_PaintIndex + " CammoName: "+ camoName + " Normal Material: " + normal_material + " Painted: " + paint_material);
 	}
