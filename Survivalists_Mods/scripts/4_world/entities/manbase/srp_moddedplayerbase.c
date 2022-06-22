@@ -120,6 +120,10 @@ modded class PlayerBase
         }
       }
     }
+    if (GetTotalTiredness() < 2880)
+    {
+      return false;
+    }
     return super.CanSprint();
   }
 
