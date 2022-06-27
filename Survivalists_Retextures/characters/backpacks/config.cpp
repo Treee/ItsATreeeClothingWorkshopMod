@@ -1429,7 +1429,95 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 100000;
+					hitpoints = 10000000;
+					healthLevels[] = {};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage = 0.25;
+					};
+					class Blood
+					{
+						damage = 0.1;
+					};
+					class Shock
+					{
+						damage = 0.25;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage = 0.1;
+					};
+					class Blood
+					{
+						damage = 0.1;
+					};
+					class Shock
+					{
+						damage = 0.1;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage = 0;
+					};
+					class Blood
+					{
+						damage = 0;
+					};
+					class Shock
+					{
+						damage = 0;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage = 0.15;
+					};
+					class Blood
+					{
+						damage = 0;
+					};
+					class Shock
+					{
+						damage = 0.15;
+					};
+				};
+			};
+		};
+	};
+  class DUB_Monsterv2_Graylight: DUB_Monsterv2
+	{
+		scope=2;
+		displayName="Greylight";
+		descriptionShort="A unique mutant";
+		hiddenSelections[]=
+		{
+			"Glow"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_graylight_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 1000000;
 					healthLevels[] = {};
 				};
 			};

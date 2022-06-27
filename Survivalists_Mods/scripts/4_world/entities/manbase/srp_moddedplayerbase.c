@@ -174,7 +174,7 @@ modded class PlayerBase
     {
       return true;
     }
-    EntityAI back = GetInventory().FindAttachmentBySlotName("Extra");
+    EntityAI back = FindAttachmentBySlotName("Extra");
     if (back && (back.GetType() == "DUB_Monsterv2" || back.IsInherited(DUB_Monsterv2)))
     {
       return true;
@@ -261,7 +261,7 @@ modded class PlayerBase
   float SRPAIVisionModifier()
   {
     float vision = 1.0;
-    EntityAI suitAttachment = GetInventory().FindAttachmentBySlotName("Extra");
+    EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
     EntityAI armbandAttachment = GetInventory().FindAttachment(InventorySlots.ARMBAND);
     EntityAI feetAttachment = GetInventory().FindAttachment(InventorySlots.FEET);
     if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 28800)
@@ -311,7 +311,7 @@ modded class PlayerBase
   bool SRPIgnoreFallingDamage()
   {
     bool ignoreFalling = false;
-    EntityAI suitAttachment = GetInventory().FindAttachmentBySlotName("Extra");
+    EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
     EntityAI mutantAttachment = GetInventory().FindAttachment(InventorySlots.HEAD);
 
     if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
@@ -332,7 +332,7 @@ modded class PlayerBase
   float SRPGetJumpHeight()
   {
     float height = 2.6; // default
-    EntityAI suitAttachment = GetInventory().FindAttachmentBySlotName("Extra");
+    EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
 
     if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
 		{
