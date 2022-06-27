@@ -134,7 +134,6 @@ class CfgVehicles
 		descriptionShort="This kit is missing a few pieces, add the other ingredients and apply work to finish";
     attachments[]=
     {
-      "Truck_01_MetalSheets",
       "Material_MetalSheets",
       "Lightbulb",
       "MetalWire",

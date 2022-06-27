@@ -84,8 +84,7 @@ class SRP_RadioElectronicsJammer_Intermediate_Kit extends SRP_RadioElectronics_I
 {
   override bool CanCraft()
   {
-    bool isValid = HasAttachmentFilledWithQuantity("Truck_01_MetalSheets", 40);
-    isValid &= HasAttachmentFilledWithQuantity("Material_MetalSheets", 20);
+    bool isValid = HasAttachmentFilledWithQuantity("Material_MetalSheets", 20);
     isValid &= HasAttachmentFilled("Lightbulb");
     isValid &= HasAttachmentFilled("MetalWire");
     isValid &= HasAttachmentFilled("Material_MetalWire");
