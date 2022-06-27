@@ -2,7 +2,7 @@ class SRP_Guts_PigletCookiesAcid extends Guts
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
-    EntityAI suitAttachment = consumer.GetInventory().FindAttachment(InventorySlots.BACK);
+    EntityAI suitAttachment = consumer.GetInventory().FindAttachmentBySlotName("Extra");
 	  if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
 		{
       if( !consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_CHARCOAL ) )
@@ -24,7 +24,7 @@ class SRP_Guts_PigletCookiesMetal extends Guts
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
-    EntityAI suitAttachment = consumer.GetInventory().FindAttachment(InventorySlots.BACK);
+    EntityAI suitAttachment = consumer.GetInventory().FindAttachmentBySlotName("Extra");
 	  if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
 		{
       if( !consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_CHARCOAL ) )
