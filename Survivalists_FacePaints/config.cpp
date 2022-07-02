@@ -106,6 +106,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_adam_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_adam_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_adam_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_adam_body_shaved.rvmat";
@@ -282,6 +288,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_boris_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_boris_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_boris_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_boris_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_boris_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_boris_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -460,6 +472,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_cyril_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_cyril_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_cyril_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_cyril_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_cyril_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_cyril_body_shaved.rvmat";
@@ -636,6 +654,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_denis_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_denis_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_denis_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_denis_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_denis_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_denis_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -814,6 +838,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_elias_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_elias_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_elias_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_elias_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_elias_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_elias_body_shaved.rvmat";
@@ -990,6 +1020,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_francis_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_francis_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_francis_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_francis_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_francis_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_francis_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -1168,6 +1204,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_guo_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_guo_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_guo_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_guo_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_guo_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_guo_body_shaved.rvmat";
@@ -1344,6 +1386,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_hassan_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_hassan_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_hassan_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_hassan_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_hassan_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_hassan_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -1522,6 +1570,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_indar_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_indar_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_indar_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_indar_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_indar_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_indar_body_shaved.rvmat";
@@ -1698,6 +1752,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_jose_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_jose_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_jose_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_jose_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_jose_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_jose_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -1876,6 +1936,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_kaito_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_kaito_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_kaito_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_kaito_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_kaito_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_kaito_body_shaved.rvmat";
@@ -2052,6 +2118,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_lewis_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_lewis_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_lewis_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_lewis_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_lewis_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_lewis_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -2230,6 +2302,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_manua_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_manua_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_manua_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_manua_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_manua_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_manua_body_shaved.rvmat";
@@ -2406,6 +2484,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_niki_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_niki_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_niki_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_niki_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_niki_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_niki_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -2584,6 +2668,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_oliver_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_oliver_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_oliver_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_oliver_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_oliver_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_oliver_body_shaved.rvmat";
@@ -2760,6 +2850,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_peter_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_peter_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_peter_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_peter_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_peter_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_peter_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -2938,6 +3034,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_quinn_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_quinn_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_quinn_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_quinn_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_quinn_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_quinn_body_shaved.rvmat";
@@ -3114,6 +3216,12 @@ class CfgVehicles
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_rolf_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_rolf_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_rolf_body_bearded.rvmat";
+		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_rolf_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_rolf_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_rolf_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
 		{
@@ -3292,6 +3400,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_seth_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_seth_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_seth_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_seth_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_seth_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_seth_body_shaved.rvmat";
@@ -3469,6 +3583,12 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_taiki_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_taiki_body_bearded.rvmat";
 		};
+    class FacePaint_Clown1
+		{
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_m_taiki_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_clown1\hhl_m_taiki_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_clown1\hhl_m_taiki_body_bearded.rvmat";
+		};
     class FacePaint_Croatia
 		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_taiki_body_shaved.rvmat";
@@ -3642,6 +3762,10 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_eva_body.rvmat";
 		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_eva_body.rvmat";
+		};
     class FacePaint_Croatia
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_f_eva_body.rvmat";
@@ -3760,6 +3884,10 @@ class CfgVehicles
     class FacePaint_Bulgaria2
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_frida_body.rvmat";
+		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_frida_body.rvmat";
 		};
     class FacePaint_Croatia
 		{			
@@ -3880,6 +4008,10 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_gabi_body.rvmat";
 		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_gabi_body.rvmat";
+		};
     class FacePaint_Croatia
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_f_gabi_body.rvmat";
@@ -3998,6 +4130,10 @@ class CfgVehicles
     class FacePaint_Bulgaria2
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_helga_body.rvmat";
+		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_helga_body.rvmat";
 		};
     class FacePaint_Croatia
 		{			
@@ -4118,6 +4254,10 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_irena_body.rvmat";
 		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_irena_body.rvmat";
+		};
     class FacePaint_Croatia
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_f_irena_body.rvmat";
@@ -4236,6 +4376,10 @@ class CfgVehicles
     class FacePaint_Bulgaria2
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_judy_body.rvmat";
+		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_judy_body.rvmat";
 		};
     class FacePaint_Croatia
 		{			
@@ -4356,6 +4500,10 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_keiko_body.rvmat";
 		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_keiko_body.rvmat";
+		};
     class FacePaint_Croatia
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_f_keiko_body.rvmat";
@@ -4474,6 +4622,10 @@ class CfgVehicles
     class FacePaint_Bulgaria2
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_linda_body.rvmat";
+		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_linda_body.rvmat";
 		};
     class FacePaint_Croatia
 		{			
@@ -4594,6 +4746,10 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_maria_body.rvmat";
 		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_maria_body.rvmat";
+		};
     class FacePaint_Croatia
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_f_maria_body.rvmat";
@@ -4713,6 +4869,10 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_naomi_body.rvmat";
 		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_naomi_body.rvmat";
+		};
     class FacePaint_Croatia
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_f_naomi_body.rvmat";
@@ -4831,6 +4991,10 @@ class CfgVehicles
     class FacePaint_Bulgaria2
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_f_Baty_body.rvmat";
+		};
+    class FacePaint_Clown1
+		{			
+			mat_paint="Survivalists_FacePaints\heads\fp_clown1\hhl_f_baty_body.rvmat";
 		};
     class FacePaint_Croatia
 		{			
