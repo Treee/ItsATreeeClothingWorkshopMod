@@ -727,6 +727,47 @@ class CfgVehicles
 		};
 	};
 
+  class SRPRadio_CassetteTape_LocalViolence_Drowning: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Drowning";
+		descriptionShort="Music Tape - Credit | Local Violence";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_LocalViolence_Drowning_SoundSet1";
+		};
+	};
+	class SRPRadio_CassetteTape_LocalViolence_GoodEnough: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Good Enough";
+		descriptionShort="Music Tape - Credit | Local Violence";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_LocalViolence_GoodEnough_SoundSet1";
+		};
+	};
+	class SRPRadio_CassetteTape_LocalViolence_Probs: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Probs";
+		descriptionShort="Music Tape - Credit | Local Violence";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_LocalViolence_Probs_SoundSet1";
+		};
+	};
+	class SRPRadio_CassetteTape_Vinnie_MasterNoSpeech: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Villians";
+		descriptionShort="Music Tape - Credit | Vinnie and Joey Castilogni";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Vinnie_MasterNoSpeech_SoundSet1";
+		};
+	};
+
   // -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base
 	{

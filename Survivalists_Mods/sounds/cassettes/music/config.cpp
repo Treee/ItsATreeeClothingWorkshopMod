@@ -263,6 +263,24 @@ class CfgSoundShaders
 		};
 	};
 
+
+
+  class SRPRadio_LocalViolence_Drowning_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\Drowning_v1.ogg",1}};
+	};
+	class SRPRadio_LocalViolence_GoodEnough_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\Good_Enough_v1.ogg",1}};
+	};
+	class SRPRadio_LocalViolence_Probs_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\Probs_v2.ogg",1}};
+	};
+	class SRPRadio_Vinnie_MasterNoSpeech_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\V_Beat_Master_No_Speech.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -504,6 +522,35 @@ class CfgSoundSets
 		soundShaders[] =
 		{
 			"SRPRadio_TheFightingSide_SomethingFamiliar_Shader1"
+		};
+	};
+
+  class SRPRadio_LocalViolence_Drowning_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_LocalViolence_Drowning_Shader1"
+		};
+	};
+	class SRPRadio_LocalViolence_GoodEnough_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_LocalViolence_GoodEnough_Shader1"
+		};
+	};
+	class SRPRadio_LocalViolence_Probs_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_LocalViolence_Probs_Shader1"
+		};
+	};
+	class SRPRadio_Vinnie_MasterNoSpeech_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Vinnie_MasterNoSpeech_Shader1"
 		};
 	};
 };
