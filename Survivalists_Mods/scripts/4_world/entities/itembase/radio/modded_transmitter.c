@@ -34,7 +34,10 @@ modded class TransmitterBase
 
   void UpdateMuteRadioState()
   {
-    EnableBroadcast(m_Muted);
+    if (GetCompEM().IsWorking())
+    {
+      EnableBroadcast(m_Muted);
+    }
   }
 
   override void OnWorkStart()
