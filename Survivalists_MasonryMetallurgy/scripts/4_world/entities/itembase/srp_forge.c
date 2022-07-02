@@ -17,11 +17,11 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 
   override protected void AddDamageToItemByFire( ItemBase item, bool can_be_ruined )
 	{
-    if (item && item.GetType() == "Pipe" && item.GetHealthLevel() == GameConstants.STATE_BADLY_DAMAGED)
+    if (item && IsSmeltableItem(item.GetType()) && item.GetHealthLevel() == GameConstants.STATE_BADLY_DAMAGED)
     {
       item.Delete();
       ItemBase new_item = ItemBase.Cast(GetInventory().CreateInInventory("SRP_Mining_RawOre_Iron"));
-      int randomQuantity = Math.RandomIntInclusive(0,2);
+      int randomQuantity = Math.RandomIntInclusive(0,3);
       if (randomQuantity > 0)
       {
         new_item.SetQuantity(randomQuantity);
@@ -29,6 +29,27 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     }
 		super.AddDamageToItemByFire(item, can_be_ruined);
 	}
+
+  bool IsSmeltableItem(string itemType)
+  {
+    if (itemType == "Pipe")
+    {
+      return true;
+    }
+    if (itemType == "MetalPlate")
+    {
+      return true;
+    }
+    if (itemType == "PistolCore")
+    {
+      return true;
+    }
+    if (itemType == "RifleCore")
+    {
+      return true;
+    }
+    return false;
+  }
 
   // Undestroyable
   override string GetInvulnerabilityTypeString()
