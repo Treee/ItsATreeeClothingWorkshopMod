@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="Survivalists_FacePaints\heads\fp_czech1\fp_czech1full_mc.paa";
+	texture="Survivalists_FacePaints\heads\fp_czech1\fp_czech1_shaved_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{

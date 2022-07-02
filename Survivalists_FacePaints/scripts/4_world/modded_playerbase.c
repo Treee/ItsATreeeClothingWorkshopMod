@@ -10,15 +10,15 @@ modded class PlayerBase
     RegisterNetSyncVariableInt("m_FacePaintState", -1, m_ModuleLifespan.GetFacePaintCount(GetType()));
   }
 
-  // override void OnVariablesSynchronized()
-	// {
-  //   super.OnVariablesSynchronized();
+  override void OnVariablesSynchronized()
+	{
+    super.OnVariablesSynchronized();
 
-  //   if (m_FacePaintState >= -1 && (IsPlayerLoaded() || IsControlledPlayer()))
-  //   {
-  //     UpdateFacePaintVisual();
-  //   }
-	// }
+    if (m_FacePaintState >= -1 && (IsPlayerLoaded() || IsControlledPlayer()))
+    {
+      UpdateFacePaintVisual();
+    }
+	}
 
   override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
   {
@@ -91,14 +91,18 @@ modded class PlayerBase
     return value;
   }
   
-  // void UpdateFacePaintVisual()
-	// {    
-  //   string camoMaterial = GetCurrentCamoMaterialPath(m_FacePaintState);
-  //   if (camoMaterial != "")
-  //   {
-  //     SetFaceMaterial(camoMaterial);
-  //   }
-	// }
+  void UpdateFacePaintVisual()
+	{    
+    // female characters need this because they dont have beard so no player lifespan level stuff
+    if (!IsMale())
+    {
+      string camoMaterial = GetCurrentCamoMaterialPath(m_FacePaintState);
+      if (camoMaterial != "")
+      {
+        SetFaceMaterial(camoMaterial);
+      }
+    }
+	}
 
   int GetPlayerFacePaintCount()
   {

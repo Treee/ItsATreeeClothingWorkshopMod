@@ -64,11 +64,9 @@ class ActionPaintFace extends ActionContinuousBase
       return false;
     }
 
-    int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
-		EntityAI equipedMask = player.GetInventory().FindPlaceholderForSlot( slot_id );
+		EntityAI equipedMask = player.FindAttachmentBySlotName("Mask");
 
-    slot_id = InventorySlots.GetSlotIdFromString("Eyewear");	
-		EntityAI equipedGlasses = player.GetInventory().FindPlaceholderForSlot( slot_id );
+		EntityAI equipedGlasses = player.FindAttachmentBySlotName("Eyewear");
     // cannot apply when wearing eyewear or masks
     return !(equipedMask || equipedGlasses);
 	}
@@ -208,11 +206,10 @@ class ActionPaintFaceTarget extends ActionContinuousBase
     PlayerBase man;
     if (target && Class.CastTo(man, target.GetObject()) )
     {
-      int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
-      EntityAI equipedMask = man.GetInventory().FindPlaceholderForSlot( slot_id );
+      EntityAI equipedMask = man.FindAttachmentBySlotName("Mask");
 
-      slot_id = InventorySlots.GetSlotIdFromString("Eyewear");	
-      EntityAI equipedGlasses = man.GetInventory().FindPlaceholderForSlot( slot_id );
+		  EntityAI equipedGlasses = man.FindAttachmentBySlotName("Eyewear");
+
       // cannot apply when wearing eyewear or masks
       return !(equipedMask || equipedGlasses);
     }

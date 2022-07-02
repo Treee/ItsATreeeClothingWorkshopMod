@@ -1,7 +1,6 @@
 modded class PluginLifespan
 {	
   protected ref map<string, ref array<ref FacePaintStyle>> m_FacePaintOptions;
-	protected static const int LIFESPAN_MAX = 2; // value in minutes when player achieved maximum age in order to have full beard
 
 	override void LoadFromCfg()
 	{

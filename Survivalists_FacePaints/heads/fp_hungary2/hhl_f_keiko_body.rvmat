@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="Survivalists_FacePaints\heads\fp_bosnia\fp_bosnia_mc.paa";
+	texture="Survivalists_FacePaints\heads\fp_hungary2\fp_hungary2_shaved_mc.paa";
 	uvSource="tex";
 	class uvTransform
 	{
