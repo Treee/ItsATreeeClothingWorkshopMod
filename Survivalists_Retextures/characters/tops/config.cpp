@@ -1418,6 +1418,170 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartspink_co.paa"
 		};
 	};
+
+  class SRP_QuiltedJacket_DarkBlueStripe: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_darkbluestripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_darkbluestripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_darkbluestripe_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_DarkPurpleStripe: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_darkpurplestripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_darkpurplestripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_darkpurplestripe_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_GreyStripe: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_greystripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_greystripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_greystripe_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_HeartPurple: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartspurple_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartspurple_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_heartspurple_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_LimeStripe: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_limestripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_limestripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_limestripe_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_PinkPinkStripe: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_pinkpinkstripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_pinkpinkstripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_pinkpinkstripe_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_Rose: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_rose_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_rose_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_rose_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_SnowPink: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowpink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowpink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowpink_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_SnowWhite: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowwhite_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowwhite_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_snowwhite_co.paa"
+		};
+	};
+  class SRP_QuiltedJacket_TealYellowStripe: QuiltedJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_tealyellowstripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_tealyellowstripe_co.paa",
+			"Survivalists_Retextures\characters\tops\data\quiltedjacket_tealyellowstripe_co.paa"
+		};
+	};
+
+
+
 	class SRP_Sweater_SantaRL: Sweater_ColorBase
 	{
 		scope=2;

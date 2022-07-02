@@ -308,42 +308,42 @@ modded class PlayerBase
     return vision;
   }
 
-  bool SRPIgnoreFallingDamage()
-  {
-    bool ignoreFalling = false;
-    EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
-    EntityAI mutantAttachment = GetInventory().FindAttachment(InventorySlots.HEAD);
+  // bool SRPIgnoreFallingDamage()
+  // {
+  //   bool ignoreFalling = false;
+  //   EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
+  //   EntityAI mutantAttachment = GetInventory().FindAttachment(InventorySlots.HEAD);
 
-    if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
-      ignoreFalling = true;
-    else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
-      ignoreFalling = true;
-    else if (suitAttachment && (suitAttachment.GetType() == "DUB_Lich" || suitAttachment.IsInherited(DUB_Lich)))
-      ignoreFalling = true;
-    else if ( mutantAttachment && mutantAttachment.GetType() == "DUB_Observerhead")
-      ignoreFalling = true;
-    else if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 86893 && GetGame().GetWorld().IsNight())
-      ignoreFalling = true;
-    else if (GetGame().GetWaterDepth(GetPosition()) > 0 )
-      ignoreFalling = true;
-    return ignoreFalling;
-  }
+  //   if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
+  //     ignoreFalling = true;
+  //   else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
+  //     ignoreFalling = true;
+  //   else if (suitAttachment && (suitAttachment.GetType() == "DUB_Lich" || suitAttachment.IsInherited(DUB_Lich)))
+  //     ignoreFalling = true;
+  //   else if ( mutantAttachment && mutantAttachment.GetType() == "DUB_Observerhead")
+  //     ignoreFalling = true;
+  //   else if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 86893 && GetGame().GetWorld().IsNight())
+  //     ignoreFalling = true;
+  //   else if (GetGame().GetWaterDepth(GetPosition()) > 0 )
+  //     ignoreFalling = true;
+  //   return ignoreFalling;
+  // }
 
-  float SRPGetJumpHeight()
-  {
-    float height = 2.6; // default
-    EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
+  // float SRPGetJumpHeight()
+  // {
+  //   float height = 2.6; // default
+  //   EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
 
-    if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
-		{
-			height = 15;
-		}
-    else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
-		{
-			height = 15;
-		}
-    return height;
-  }
+  //   if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
+	// 	{
+	// 		height = 15;
+	// 	}
+  //   else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
+	// 	{
+	// 		height = 15;
+	// 	}
+  //   return height;
+  // }
 
   bool CheckRecipeCraftingValidity(CraftedItem craftedItem)
   {

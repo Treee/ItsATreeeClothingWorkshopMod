@@ -13,8 +13,8 @@ class FacePaintStyle
     m_CamoName = camoName;
 		m_NormalMaterial = normal_material;
 		m_PaintMaterial = paint_material;
-    m_PaintMaterialUnshaved = m_PaintMaterialUnshaved;
-    m_PaintMaterialBearded = m_PaintMaterialBearded;
+    m_PaintMaterialUnshaved = paint_material_unshaved;
+    m_PaintMaterialBearded = paint_material_bearded;
     m_PaintIndex = index;
     // Print("Index: " + m_PaintIndex + " CammoName: "+ camoName + " Normal Material: " + normal_material + " Painted: " + paint_material);
 	}
@@ -30,17 +30,24 @@ class FacePaintStyle
   }
 
 	string GetMaterial( int material_type )
-	{
-    string value = "";
+	{    
     if (material_type == 0)
     {
-      value = m_NormalMaterial;
+      return m_NormalMaterial;
     }
     else if (material_type == 1)
     {
-      value = m_PaintMaterial;
+      return m_PaintMaterial;
     }
-		return value;
+    else if (material_type == 2)
+    {
+      return m_PaintMaterialUnshaved;
+    }
+    else if (material_type == 3)
+    {
+      return m_PaintMaterialBearded;
+    }
+		return "";
 	}
 
 	void SetMaterial( int material_type, string material )
@@ -52,6 +59,14 @@ class FacePaintStyle
     else if (material_type == 1)
     {
       m_PaintMaterial = material;
+    }
+    else if (material_type == 2)
+    {
+      m_PaintMaterialUnshaved = material;
+    }
+    else if (material_type == 3)
+    {
+      m_PaintMaterialBearded = material;
     }
 	}
 	

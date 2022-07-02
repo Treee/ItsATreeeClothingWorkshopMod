@@ -1,6 +1,7 @@
 modded class PluginLifespan
 {	
   protected ref map<string, ref array<ref FacePaintStyle>> m_FacePaintOptions;
+	protected static const int LIFESPAN_MAX = 2; // value in minutes when player achieved maximum age in order to have full beard
 
 	override void LoadFromCfg()
 	{
@@ -65,8 +66,16 @@ modded class PluginLifespan
   override protected void SetPlayerLifespanLevel( PlayerBase player, LifespanLevel level )
   {
     // Print("teudhfidushfduisofh");
-    super.SetPlayerLifespanLevel( player, level )
-    // Print("f          ---------------");
+    if (player.GetFacePaintIndex() < 0)
+    {
+      // Print("No Face Paint applied: default behavior");
+      super.SetPlayerLifespanLevel( player, level );
+    }
+    else
+    {
+      // Print("replace the face material with this material index - camoindex: " + player.GetFacePaintIndex());
+      SetPaintedFaceMaterial(player, level);
+    }
   }
 
   FacePaintStyle GetFacePaintMaterials(string player_class, int camoIndex = -1 )
@@ -104,5 +113,101 @@ modded class PluginLifespan
     }
     return 0;
   }
+
+
+  protected void SetPaintedFaceMaterial( PlayerBase player, LifespanLevel level )
+	{
+		if (player.m_CorpseState != 0)
+			return;
+		int slot_id = InventorySlots.GetSlotIdFromString("Head");	
+		EntityAI players_head = player.GetInventory().FindPlaceholderForSlot( slot_id );
+
+    FacePaintStyle facepaint = GetFacePaintMaterials(player.GetPlayerClass(), player.GetFacePaintIndex());
+
+		if( players_head && facepaint )
+		{
+			switch(level.GetLevel())
+			{
+				case LifeSpanState.BEARD_NONE:
+				{
+          // Print("no beard: tex - " + level.GetTextureName());
+          // Print("no beard: mat - " + level.GetMaterialName());
+
+					players_head.SetObjectTexture( 0, "");
+					players_head.SetObjectMaterial( 0, "");		
+					
+					player.SetFaceTexture( level.GetTextureName() );
+          // Print("material to use: " + facepaint.GetMaterial(1) );
+					player.SetFaceMaterial( facepaint.GetMaterial(1) );
+					// player.SetFaceMaterial( level.GetMaterialName() );
+
+					player.SetLifeSpanStateVisible(LifeSpanState.BEARD_NONE);
+					//Print("LifeSpanState.BEARD_NONE");
+					break;
+				}
+				case LifeSpanState.BEARD_MEDIUM:
+				{
+          // Print("medium beard: tex - " + level.GetTextureName());
+          // Print("medium beard: mat - " + level.GetMaterialName());
+
+					players_head.SetObjectTexture( 0, "");
+					players_head.SetObjectMaterial( 0, "");	
+					
+					player.SetFaceTexture( level.GetTextureName() );
+
+          // Print("material to use: " + facepaint.GetMaterial(2) );
+
+					player.SetFaceMaterial( facepaint.GetMaterial(2) );
+					// player.SetFaceMaterial( level.GetMaterialName() );
+										
+					player.SetLifeSpanStateVisible(LifeSpanState.BEARD_MEDIUM);
+					//Print("LifeSpanState.BEARD_MEDIUM");
+					break;
+				}
+				
+				case LifeSpanState.BEARD_LARGE:
+				{	
+          // Print("large beard: tex - " + level.GetTextureName());
+          // Print("large beard: mat - " + level.GetMaterialName());
+
+					players_head.SetObjectTexture( 0, "");
+					players_head.SetObjectMaterial( 0, "");	
+							
+					player.SetFaceTexture( level.GetTextureName() );
+          // Print("material to use: " + facepaint.GetMaterial(3) );
+					player.SetFaceMaterial( facepaint.GetMaterial(3) );
+					// player.SetFaceMaterial( level.GetMaterialName() );
+			
+					player.SetLifeSpanStateVisible(LifeSpanState.BEARD_LARGE);
+					//Print("LifeSpanState.BEARD_LARGE");
+					break;
+				}
+				
+				case LifeSpanState.BEARD_EXTRA:
+				{
+          // Print("extra beard: tex - " + level.GetTextureName());
+          // Print("extra beard: mat - " + level.GetMaterialName());
+					players_head.SetObjectTexture( 0, level.GetTextureName() );
+					players_head.SetObjectMaterial( 0, level.GetMaterialName() );
+					
+					array< ref LifespanLevel> lifespan_levels = m_LifespanLevels.Get( player.GetPlayerClass() );
+					LifespanLevel prev_level = lifespan_levels.Get(LifeSpanState.BEARD_LARGE);
+
+          // Print("works: " + prev_level.GetMaterialName() + " not working: " + facepaint.GetMaterial(3));
+					player.SetFaceMaterial( facepaint.GetMaterial(3) );
+					// player.SetFaceMaterial( prev_level.GetMaterialName() );
+					
+					player.SetLifeSpanStateVisible(LifeSpanState.BEARD_EXTRA);
+					//Print("LifeSpanState.BEARD_EXTRA");
+					break;
+				}									
+				default:
+				{
+					Print("Lifespan state missing");
+					break;
+				}
+			}	
+		}
+	}
 
 };

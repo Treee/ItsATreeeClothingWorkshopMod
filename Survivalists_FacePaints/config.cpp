@@ -89,122 +89,178 @@ class CfgVehicles
   class SurvivorM_Mirek: SurvivorMale_Base
 	{
 		class FacePaint_Bosnia
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_bosnia\hhl_m_adam_body_shaved.rvmat";
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bosnia\hhl_m_adam_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bosnia\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Bulgaria1
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria1\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria1\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria1\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Bulgaria2
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_bulgaria2\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Croatia
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_croatia\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_croatia\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_croatia\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Czech1
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_czech1\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_czech1\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_czech1\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Czech2
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_czech2\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_czech2\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_czech2\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Desert
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_desert\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_desert\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_desert\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Digital
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_digital\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_digital\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_digital\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_DigitalBlue
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_digitalblue\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_DragonScale
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_dragonscale\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_DragonScaleRed
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_dragonscalered\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_France
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_france\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_france\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_france\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Germany
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_germany\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_germany\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_germany\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Hungary1
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_hungary1\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_hungary1\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_hungary1\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Hungary2
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_hungary2\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_hungary2\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_hungary2\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Macedonia
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_macedonia\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Olive
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_olive\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_olive\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_olive\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Poland1
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_poland1\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_poland1\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_poland1\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Poland2
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_poland2\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_poland2\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_poland2\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Romania1
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_romania1\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fp_romania1\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_romania1\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Romania2
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_romania2\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fp_romania2\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_romania2\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Slovenia
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_slovenia\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_slovenia\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_slovenia\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_UK
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_uk\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_uk\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_uk\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_USA
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_usa\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_usa\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_usa\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Winter
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_winter\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_winter\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_winter\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Woodland
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_woodland\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_woodland\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_woodland\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_WoodlandGreen
-		{			
+		{
 			mat_paint="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_woodlandgreen\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_WoodlandRed
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_woodlandred\hhl_m_adam_body_bearded.rvmat";
 		};
     class FacePaint_Yugoslavia
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_adam_body_shaved.rvmat";
+			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_adam_body_unshaved.rvmat";
+			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_adam_body_bearded.rvmat";
 		};
 	};
   class SurvivorM_Boris: SurvivorMale_Base
