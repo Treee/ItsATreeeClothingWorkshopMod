@@ -31,32 +31,153 @@ class CfgVehicles
 		itemsCargoSize[]={10,7};
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
+    rootClassName="SRP_HuntingBag";
+    colorVariants[]=
+    {
+      "Mawlee",
+      "Black",
+      "Gorka",
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
+    };
   };
   class AssaultBag_ColorBase: Clothing
 	{
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
+    rootClassName="AssaultBag";
+    colorVariants[]=
+    {
+      "Ttsko",
+      "Green",
+      "Black",
+      // "Denim",
+      // "MTP",
+      // "ATAC",
+      // "ATACSFG",
+      // "USNAOR1",
+      // "USNAOR2",
+      // "SURPAT",
+      // "MARPATWinter",
+      // "EMP6",
+    };
   };
   class MountainBag_ColorBase: Clothing
 	{
 		itemsCargoSize[]={7,14};
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
+    rootClassName="MountainBag";
+    colorVariants[]=
+    {
+      "Red",
+      "Blue",
+      "Orange",
+      "Green",
+      // "Black",
+      // "MTP",
+      // "ATAC",
+      // "ATACSFG",
+      // "USNAOR1",
+      // "USNAOR2",
+      // "SURPAT",
+      // "MARPATWinter",
+      // "EMP6",
+    };
   };
   class TortillaBag: Clothing
 	{
     itemsCargoSize[]={10,8};
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
+    rootClassName="SRP_TortillaBag";
+    colorVariants[]=
+    {
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
+    };
   };
   class AliceBag_ColorBase: Clothing
 	{
 		itemsCargoSize[]={10,12};
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
+    rootClassName="AliceBag";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Camo",
+      // "MTP",
+      // "ATAC",
+      // "ATACSFG",
+      // "USNAOR1",
+      // "USNAOR2",
+      // "SURPAT",
+      // "MARPATWinter",
+      // "EMP6",
+    };
   };
-
-
+  class SmershBag: Clothing
+  {
+    rootClassName="SRP_SmershBag";
+    colorVariants[]=
+    {
+      "White",
+      "Black",
+      "Green",
+      "Tan",
+      "NBC",
+    };
+  };
+  class DryBag_ColorBase: Clothing
+  {
+    rootClassName="DryBag";
+    colorVariants[]=
+    {
+      "Orange",
+      "Yellow",
+      "Blue",
+      "Green",
+      "Black",
+      "Red",
+      "Pink",
+      "MintBlue"
+    };
+  };
+  class CourierBag: Clothing
+  {
+    rootClassName="SRP_CourierBag";
+    colorVariants[]=
+    {
+      "Black",
+    };
+  };
+  class TaloonBag_ColorBase: Clothing
+  {
+    rootClassName="TaloonBag";
+    colorVariants[]=
+    {
+      "Blue",
+      "Green",
+      "Orange",
+      "Violet",
+      // "Black1",
+      // "Black2"
+    };
+  };
   //--------------------------------- CUSTOM STUFF
 
   class SRP_LeatherBackpack_Default: HuntingBag 
@@ -66,6 +187,8 @@ class CfgVehicles
     descriptionShort="Espen Industries. This rugged leather backpack is large enough to store all of your travelling wares.";
 		model="Survivalists_Mods\characters\backpacks\leatherbackpack_g.p3d";
 		itemsCargoSize[]={8,8};
+    rootClassName="SRP_LeatherBackpack";
+    colorVariants[]={};
 		attachments[]=
 		{
 			"carman1",
@@ -126,6 +249,8 @@ class CfgVehicles
     descriptionShort="Espen Industries. This survival backpack has seen better days.";
 		model="Survivalists_Mods\characters\backpacks\survivalbackpack_g.p3d";
 		itemsCargoSize[]={8,8};
+    rootClassName="SRP_SurvivalBackpack";
+    colorVariants[]={};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -170,6 +295,12 @@ class CfgVehicles
     descriptionShort="Espen Industries. This bag comfortably sits across your shoulders.";
 		model="Survivalists_Mods\characters\backpacks\shoulderslingbackpack_g.p3d";
 		itemsCargoSize[]={8,8};
+    rootClassName="SRP_SlingBackpack";
+    colorVariants[]=
+    {
+      "Default",
+      "Red",
+    };
     attachments[]=
 		{
 			"Chemlight",
@@ -224,6 +355,13 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\backpacks\Small_Military_Pack_g.p3d";
 		itemsCargoSize[]={7,7};
     rotationFlags=1;
+    rootClassName="SRP_Small_Military_Pack";
+    colorVariants[]=
+    {
+      "Tan",
+      "Black",
+      "Green",
+    };
 		attachments[]=
 		{
       "VestBackpack","LargePouch1","Belt_Left","SmallPouch1","SmallPouch2","SRP_Patch"
@@ -269,6 +407,22 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\backpacks\Big_Military_Pack_g.p3d";
 		itemsCargoSize[]={10,10};
     rotationFlags=1;
+    rootClassName="SRP_Big_Military_Pack";
+    colorVariants[]=
+    {
+      "Tan",
+      "Black",
+      "Green",
+      "Blue",
+      "Coco",
+      "Lavender",
+      "Orange",
+      "Pink",
+      "Red",
+      "Storm",
+      "Sunny",
+      "Teal"      
+    };
 		attachments[]=
 		{
       "VestBackpack","LargePouch1","Belt_Left","SmallPouch1","SmallPouch2","SRP_Patch"
@@ -313,6 +467,13 @@ class CfgVehicles
     descriptionShort="Espen Industries. This large rifle bag serves the marksman well with ample storage for accessories and several guns.";
     model="Survivalists_Mods\characters\backpacks\Rifle_Bag_g.p3d";
     itemsCargoSize[]={5,8};
+    rootClassName="SRP_Rifle_Bag";
+    colorVariants[]=
+    {
+      "Tan",
+      "Black",
+      "Green"  
+    };
     attachments[]=
     {
       "Shoulder","Melee","Pistol","SmallPouch1","SmallPouch2","SRP_Patch"
@@ -372,6 +533,8 @@ class CfgVehicles
 		itemsCargoSize[]={8,8};
 		absorbency=0;
 		heatIsolation=0.80;
+    rootClassName="SRP_Rolltop_Bag";
+    colorVariants[]={};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -432,6 +595,15 @@ class CfgVehicles
 		inventorySlot="Back";
 		simulation="clothing";
 		vehicleClass="Clothing";
+    rootClassName="SRP_MessengerBag";
+    colorVariants[]=
+    {
+      "Leather",
+      "Tan",
+      "Brown",
+      "Pink",
+      "Blue",
+    };
 		itemInfo[]=
 		{
 			"Clothing",

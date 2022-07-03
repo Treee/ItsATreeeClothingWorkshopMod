@@ -791,7 +791,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\huntingB57.paa"
 		};
 	};
-	class SRP_AssaultBag_MTP: AssaultBag_Ttsko
+	class SRP_AssaultBag_MTP: AssaultBag_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -801,7 +801,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\m53_01.paa"
 		};
 	};
-	class SRP_AssaultBag_ATAC: AssaultBag_Ttsko
+	class SRP_AssaultBag_ATAC: AssaultBag_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -811,7 +811,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\m53_04.paa"
 		};
 	};
-	class SRP_AssaultBag_ATACSFG: AssaultBag_Ttsko
+	class SRP_AssaultBag_ATACSFG: AssaultBag_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -821,7 +821,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\m53_38.paa"
 		};
 	};
-	class SRP_AssaultBag_USNAOR2: AssaultBag_Ttsko
+	class SRP_AssaultBag_USNAOR2: AssaultBag_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -831,7 +831,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\m53_09.paa"
 		};
 	};
-	class SRP_AssaultBag_USNAOR1: AssaultBag_Ttsko
+	class SRP_AssaultBag_USNAOR1: AssaultBag_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -841,7 +841,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\m53_10.paa"
 		};
 	};
-	class SRP_AssaultBag_SURPAT: AssaultBag_Ttsko
+	class SRP_AssaultBag_SURPAT: AssaultBag_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -851,7 +851,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\m53_12.paa"
 		};
 	};
-	class SRP_AssaultBag_MARPATWinter: AssaultBag_Ttsko
+	class SRP_AssaultBag_MARPATWinter: AssaultBag_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -861,7 +861,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\m53_19.paa"
 		};
 	};
-	class SRP_AssaultBag_EMP6: AssaultBag_Ttsko
+	class SRP_AssaultBag_EMP6: AssaultBag_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
