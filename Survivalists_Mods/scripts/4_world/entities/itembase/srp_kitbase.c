@@ -429,10 +429,19 @@ class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
 
     ItemBase tannedLeather = GetItemInSlot("Material_Shelter_Leather");
     isSolved |= (tannedLeather && tannedLeather.GetQuantity() == 8);
-    // Print("tanned leather check: " + isSolved);
 
+    ItemBase animalSkull = GetItemInSlot("AnimalSkull");
+    isSolved &= (animalSkull != null);
 
-    // Print("pelts count: " + requiredPelts.Count());
+    ItemBase woodenSticks = GetItemInSlot("Material_Shelter_FrameSticks");
+    isSolved &= (woodenSticks && woodenSticks.GetQuantity() == 4);
+
+    ItemBase fabric = GetItemInSlot("Material_Shelter_Fabric");
+    isSolved &= (fabric && fabric.GetQuantity() == 4);
+
+    ItemBase rags = GetItemInSlot("Rags");
+    isSolved &= (rags && rags.GetQuantity() == 6);
+
     EntityAI animalPelt;
     for(int i=requiredPelts.Count() - 1; i > 0; i--)
     {
@@ -449,8 +458,17 @@ class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
     }
     ItemBase rope = GetItemInSlot("Rope");
     isSolved &= (rope != null);
-    // Print("rope check: " + isSolved);
 
+    ItemBase wire1 = GetItemInSlot("Material_MetalWire");
+    isSolved &= (wire1 != null);
+
+    ItemBase wire2 = GetItemInSlot("Material_FPole_MetalWire");
+    isSolved &= (wire2 != null);
+
+    ItemBase wire3 = GetItemInSlot("MetalWire");
+    isSolved &= (wire3 != null);
+
+    // Print("rope check: " + isSolved);
     return isSolved;
   }
 

@@ -350,6 +350,12 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:buttstock";
 	};
   //====================animal pelts
+  class Slot_AnimalSkull
+	{
+		name="AnimalSkull";
+		displayName="Animal Skull";
+		ghostIcon="set:dayz_inventory image:tf_stones";
+	};
   class Slot_AnimalPelt1
 	{
 		name="AnimalPelt1";

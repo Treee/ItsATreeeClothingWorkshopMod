@@ -54,18 +54,19 @@ class CfgVehicles
 		descriptionShort="A kit with the appropriate tools to build the base mount for a properly taxidermied animal.";
     attachments[]=
     {
+      "AnimalSkull",
       "AnimalPelt1",
       "AnimalPelt2",
       "AnimalPelt3",
       "AnimalPelt4",
-      "AnimalPelt5",
-      "AnimalPelt6",
-      "AnimalPelt7",
-      "AnimalPelt8",
-      "AnimalPelt9",
-      "AnimalPelt10",
       "Material_Shelter_Leather",
+      "Material_Shelter_FrameSticks",
+			"MetalWire",
+			"Material_MetalWire",
+			"Material_FPole_MetalWire"
+      "Material_Shelter_Fabric",
       "Rope",
+      "Rags",
     };
 	};
   class SRP_TaxidermyWall_Kit: SRP_KitBase //new
@@ -75,18 +76,19 @@ class CfgVehicles
 		descriptionShort="A kit with the appropriate tools to build the wall mount for a properly taxidermied animal.";
     attachments[]=
     {
+      "AnimalSkull",
       "AnimalPelt1",
       "AnimalPelt2",
       "AnimalPelt3",
       "AnimalPelt4",
-      "AnimalPelt5",
-      "AnimalPelt6",
-      "AnimalPelt7",
-      "AnimalPelt8",
-      "AnimalPelt9",
-      "AnimalPelt10",
+      "Material_Shelter_FrameSticks",
+			"MetalWire",
+			"Material_MetalWire",
+			"Material_FPole_MetalWire"
       "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
       "Rope",
+      "Rags",
     };
 	};
 
