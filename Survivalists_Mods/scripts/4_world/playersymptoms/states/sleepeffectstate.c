@@ -75,7 +75,7 @@ class SleepEffectSymptom extends SymptomBase
     if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
     {
       m_IsSleepActive = config.g_SRPIsSleepActive;
-      PASS_OUT_THRESHOLD = config.g_SRPSleepMaximumAwakeTime + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
+      PASS_OUT_THRESHOLD = config.g_SRPSleepMaximumAwakeTime - (2 * config.g_SRPSleepPassOutThreshold); // 5 minutes passed 0 is pass out territory
     }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetActivated", m_Player.ToString());
 	}
@@ -90,11 +90,11 @@ class SleepEffectSymptom extends SymptomBase
       // Print("[SleepEffectSymptom] - [OnGetActivatedClient] - CONFIG");        
       m_YawnInterval = config.g_SRPSleepYawnInterval;
       YAWN_THRESHOLD = config.g_SRPSleepMaximumAwakeTime * config.g_SRPSleepYawnThreshold; // 20 percent awake = start yawning
-      PASS_OUT_THRESHOLD = config.g_SRPSleepMaximumAwakeTime + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
+      PASS_OUT_THRESHOLD = config.g_SRPSleepMaximumAwakeTime - (2 * config.g_SRPSleepPassOutThreshold); // 5 minutes passed 0 is pass out territory
       TIREDNESS_25PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.25;
       TIREDNESS_50PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.50;
       TIREDNESS_75PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.75;
-      TIREDNESS_100PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.80; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
+      TIREDNESS_100PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.90; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
       // Print("Yawn int: " + m_YawnInterval + " yawn threashold: " + YAWN_THRESHOLD + " Passoutthresh: " + PASS_OUT_THRESHOLD);
     }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetActivated", m_Player.ToString());
