@@ -1,21 +1,28 @@
-class ActionShake8BallCB : ActionContinuousBaseCB
+class ActionShake8BallCB extends ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime(4);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.UNPACK);
 	}
 };
 
-class ActionShake8Ball: ActionContinuousBase
+class ActionShake8Ball extends ActionContinuousBase
 {	
 	void ActionShake8Ball()
 	{
 		m_CallbackClass = ActionShake8BallCB;
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_HANDCUFFTARGET;
-    m_StanceMask = DayZPlayerConstants.STANCEIDX_ERECT | DayZPlayerConstants.STANCEIDX_CROUCH;
-		m_FullBody = true;
-		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
-		m_Text = "Shake 8 Ball";
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_OPENITEM;
+		m_StanceMask = DayZPlayerConstants.STANCEIDX_ERECT | DayZPlayerConstants.STANCEIDX_CROUCH;
+	}
+
+  override bool HasTarget()	
+	{
+		return false;
+	}
+
+  override string GetText()
+	{
+		return "Shake 8 Ball";
 	}
 	
 	override void CreateConditionComponents()  
@@ -26,18 +33,13 @@ class ActionShake8Ball: ActionContinuousBase
 
   override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		if( !target || !player) return false;
-
-    // Print("targets " + target.GetObject());
-
 		SRP_PoolBall_8 poolball;
 		if( Class.CastTo(poolball, item))
 		{
       return true;
 		}
 		return false;
-	}
-	
+	}	
 
 	override void OnFinishProgressServer( ActionData action_data )
 	{	
