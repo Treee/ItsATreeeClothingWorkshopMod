@@ -120,7 +120,7 @@ modded class PlayerBase
         }
       }
     }
-    if (GetTotalTiredness() > 20500) // roughly 75% tiredness
+    if (GetTotalTiredness() > 24500) // roughly 75% tiredness
     {
       return false;
     }

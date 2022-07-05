@@ -62,6 +62,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={4,5,8};
+		repairCosts[]={50,100,100};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -663,6 +665,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={5,8};
+		repairCosts[]={100,100};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -742,6 +746,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={5,8};
+		repairCosts[]={100,100};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -820,6 +826,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={5,8};
+		repairCosts[]={100,100};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -896,6 +904,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={5,8};
+		repairCosts[]={100,100};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -972,6 +982,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={5,8};
+		repairCosts[]={100,100};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1048,6 +1060,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={5,8};
+		repairCosts[]={100,100};
 		class DamageSystem
 		{
 			class GlobalHealth

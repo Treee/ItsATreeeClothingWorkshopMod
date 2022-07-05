@@ -492,7 +492,7 @@ class CfgVehicles
 		};
     rotationFlags=17;
     repairableWithKits[]={4};
-		repairCosts[]={10};
+		repairCosts[]={25};
 		RestrainUnlockType=1;
 		canSkinBodies=1;
 		weight=200;
@@ -595,11 +595,12 @@ class CfgVehicles
 		displayName="Bamboo Katana";
 		descriptionShort="A bamboo katana. Used mostly for training.";
 		model="Survivalists_Mods\weapons\melee\blade\katanabamboo.p3d";
-		repairCosts[]={20};
 		rotationFlags=12;
 		weight=130;
 		itemSize[]={2,7};
 		itemBehaviour=2;
+    repairableWithKits[]={5,8};
+		repairCosts[]={25,25};
 		inventorySlot[]=
 		{
 			"Shoulder",
@@ -719,10 +720,11 @@ class CfgVehicles
 		displayName="Katana";
 		descriptionShort="A katana. Forged from steel.";
 		model="Survivalists_Mods\weapons\melee\blade\srp_katanaslim.p3d";
-		repairCosts[]={20};
 		rotationFlags=12;
 		weight=130;
 		itemSize[]={2,7};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
 		itemBehaviour=2;
 		inventorySlot[]=
 		{
@@ -844,11 +846,13 @@ class CfgVehicles
 		displayName="Katana Sheath";
 		descriptionShort="A katana sheath. Holds a katana.";
 		model="Survivalists_Mods\weapons\melee\blade\srp_katanaslim_sheath.p3d";
-		repairCosts[]={20};
 		rotationFlags=12;
 		weight=130;
 		itemSize[]={2,7};
 		itemBehaviour=2;
+    repairableWithKits[]={5,8};
+		repairCosts[]={50,25};
+
     attachments[]=
     {
       "SRP_Katana"
@@ -1087,6 +1091,8 @@ class CfgVehicles
 		itemBehaviour=2;
 		fragility=0.02;
 		openItemSpillRange[]={40,70};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
 		isMeleeWeapon=1;
 		class DamageSystem
 		{
@@ -1164,6 +1170,8 @@ class CfgVehicles
 		itemBehaviour=2;
 		fragility=0.02;
 		openItemSpillRange[]={40,70};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
 		isMeleeWeapon=1;
     hiddenSelections[]=
 		{
@@ -1251,14 +1259,14 @@ class CfgVehicles
 		};
     rotationFlags=17;
     repairableWithKits[]={4};
-		repairCosts[]={10};
+		repairCosts[]={20};
 		RestrainUnlockType=1;
 		canSkinBodies=1;
 		weight=200;
     varTemperatureMax=100;
     itemSize[]={1,3};
 		lootCategory="Tools";
-		openItemSpillRange[]={10,20};
+		openItemSpillRange[]={10,20};    
     isMeleeWeapon=1;
 		suicideAnim="onehanded";
 		hiddenSelections[]= {"zbytek"};
@@ -1347,6 +1355,8 @@ class CfgVehicles
 		itemBehaviour=2;
 		fragility=0.02;
 		openItemSpillRange[]={40,70};
+    repairableWithKits[]={5};
+		repairCosts[]={30};
 		isMeleeWeapon=1;
     hiddenSelections[]=
 		{
@@ -1629,6 +1639,8 @@ class CfgVehicles
 		fragility=0.001;
 		itemBehaviour=1;
 		openItemSpillRange[]={20,50};
+    repairableWithKits[]={5};
+		repairCosts[]={50};
 		suicideAnim="woodaxe";
 		isMeleeWeapon=1;
 		inventorySlot[]=
@@ -1766,6 +1778,8 @@ class CfgVehicles
 		fragility=0.001;
 		itemBehaviour=1;
 		openItemSpillRange[]={20,50};
+    repairableWithKits[]={5,8};
+		repairCosts[]={50,25};
 		suicideAnim="woodaxe";
 		isMeleeWeapon=1;
     attachments[]=
@@ -1941,6 +1955,8 @@ class CfgVehicles
 		itemBehaviour=2;
 		fragility=0.02;
 		openItemSpillRange[]={40,70};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
 		isMeleeWeapon=1;
     hiddenSelections[]=
 		{
@@ -2066,6 +2082,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2142,6 +2160,8 @@ class CfgVehicles
 		suicideAnim="spear";
 		itemBehaviour=2;
 		openItemSpillRange[]={30,60};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
 		class DamageSystem
 		{
 			class GlobalHealth
