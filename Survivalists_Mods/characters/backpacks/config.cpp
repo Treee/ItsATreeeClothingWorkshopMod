@@ -34,7 +34,6 @@ class CfgVehicles
     rootClassName="SRP_HuntingBag";
     colorVariants[]=
     {
-      "Mawlee",
       "Black",
       "Gorka",
       "MTP",

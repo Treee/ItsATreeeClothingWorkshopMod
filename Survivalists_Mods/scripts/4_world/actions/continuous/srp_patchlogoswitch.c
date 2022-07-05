@@ -175,8 +175,7 @@ class ActionSwitchPatchLogoOption extends ActionContinuousBase
       "SRP_PatchLogo_32",
       "SRP_PatchLogo_33",
       "SRP_PatchLogo_34",
-      "SRP_PatchLogo_35",
-      "SRP_PatchLogo_36"
+      "SRP_PatchLogo_35"
     };
   }
 };
