@@ -50,6 +50,7 @@ class CfgPatches
       "Mass_Textures", // MassNBC_Bag, removing admin compass
       "Notes_Gear", // WrittenNote from notes
       "deerisle", // for the map (security door)      
+      "Deerisle_Security_System" // overriding air craft carrier loot
 		};
 	};
 };
