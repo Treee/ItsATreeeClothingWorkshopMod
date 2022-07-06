@@ -31,7 +31,7 @@ class CfgVehicles
 		itemsCargoSize[]={10,7};
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
-    rootClassName="SRP_HuntingBag";
+    rootClassName="HuntingBag";
     colorVariants[]=
     {
       "Black",
@@ -50,21 +50,25 @@ class CfgVehicles
 	{
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
+    attachments[]+=
+		{
+			"CookingEquipment"
+		};
     rootClassName="AssaultBag";
     colorVariants[]=
     {
       "Ttsko",
       "Green",
       "Black",
-      // "Denim",
-      // "MTP",
-      // "ATAC",
-      // "ATACSFG",
-      // "USNAOR1",
-      // "USNAOR2",
-      // "SURPAT",
-      // "MARPATWinter",
-      // "EMP6",
+      "Denim",
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
     };
   };
   class MountainBag_ColorBase: Clothing
@@ -79,15 +83,15 @@ class CfgVehicles
       "Blue",
       "Orange",
       "Green",
-      // "Black",
-      // "MTP",
-      // "ATAC",
-      // "ATACSFG",
-      // "USNAOR1",
-      // "USNAOR2",
-      // "SURPAT",
-      // "MARPATWinter",
-      // "EMP6",
+      "Black",
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
     };
   };
   class TortillaBag: Clothing
@@ -95,7 +99,7 @@ class CfgVehicles
     itemsCargoSize[]={10,8};
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
-    rootClassName="SRP_TortillaBag";
+    rootClassName="TortillaBag";
     colorVariants[]=
     {
       "MTP",
@@ -119,19 +123,19 @@ class CfgVehicles
       "Green",
       "Black",
       "Camo",
-      // "MTP",
-      // "ATAC",
-      // "ATACSFG",
-      // "USNAOR1",
-      // "USNAOR2",
-      // "SURPAT",
-      // "MARPATWinter",
-      // "EMP6",
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
     };
   };
   class SmershBag: Clothing
   {
-    rootClassName="SRP_SmershBag";
+    rootClassName="SmershBag";
     colorVariants[]=
     {
       "White",
@@ -158,7 +162,7 @@ class CfgVehicles
   };
   class CourierBag: Clothing
   {
-    rootClassName="SRP_CourierBag";
+    rootClassName="CourierBag";
     colorVariants[]=
     {
       "Black",
@@ -173,8 +177,8 @@ class CfgVehicles
       "Green",
       "Orange",
       "Violet",
-      // "Black1",
-      // "Black2"
+      "Black1",
+      "Black2"
     };
   };
   //--------------------------------- CUSTOM STUFF
@@ -586,7 +590,7 @@ class CfgVehicles
   class SRP_MessengerBag_Leather: Clothing
 	{
 		scope=2;
-		displayName="Leather Messenger Bag";
+		displayName="Messenger Bag";
     descriptionShort="Espen Industries. A leather satchel with a strap. Sits comfortably across your shoulders.";
 		model="Survivalists_Mods\characters\backpacks\Leather_Satchel_g.p3d";
     repairableWithKits[]={5,8};
