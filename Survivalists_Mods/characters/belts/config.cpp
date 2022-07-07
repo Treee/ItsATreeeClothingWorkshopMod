@@ -126,6 +126,81 @@ class CfgVehicles
   class SRP_TacticalBelt: MilitaryBelt // new
   {
 		scope=2;
+		displayName="Tactical Belt (Deprecated. See make a ticket)";
+    descriptionShort="(Deprecated. See make a ticket) (Deprecated. See make a ticket) (Deprecated. See make a ticket) (Deprecated. See make a ticket)";
+		model="Survivalists_Mods\characters\belts\tacticalbelt_g.p3d";
+    attachments[]=
+		{
+			"VestHolster",
+      "Belt_Left",
+      "Belt_Back",
+      "WalkieTalkie",
+      "Chemlight",
+      "SmallPouch1",
+      "SmallPouch2",
+      "LargePouch1",
+      "LargePouch2"
+		};
+    itemsCargoSize[]={3,1};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\belts\data\tacticalbelt_Tan_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\belts\data\tacticalbelt.rvmat"
+		};
+    rootClassName="SRP_TacticalBelt";
+    colorVariants[]=
+    {
+      "Tan",
+      "Green",
+      "Black"
+    };
+    vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Belt"
+		};
+		weight=110;
+		itemSize[]={3,1};
+		absorbency=0.1;
+		heatIsolation=0;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\belts\tacticalbelt_m.p3d";
+			female="Survivalists_Mods\characters\belts\tacticalbelt_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=130;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\characters\belts\data\tacticalbelt.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\characters\belts\data\tacticalbelt.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\tacticalbelt_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\belts\data\tacticalbelt_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\characters\belts\data\tacticalbelt_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_TacticalBelt_ColorBase: Clothing // new
+  {
+		scope=2;
 		displayName="Tactical Belt";
     descriptionShort="Espen Industries. A military style belt with versatile attachments.";
 		model="Survivalists_Mods\characters\belts\tacticalbelt_g.p3d";
@@ -154,6 +229,25 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\characters\belts\data\tacticalbelt.rvmat"
 		};
+    rootClassName="SRP_TacticalBelt";
+    colorVariants[]=
+    {
+      "Tan",
+      "Green",
+      "Black"
+    };
+    vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Belt"
+		};
+		weight=110;
+		itemSize[]={3,1};
+		absorbency=0.1;
+		heatIsolation=0;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\characters\belts\tacticalbelt_m.p3d";
@@ -179,9 +273,9 @@ class CfgVehicles
 		};
   };
   
- 	class SRP_Elbow_Knee_Pads_Green: Clothing
+ 	class SRP_Elbow_Knee_Pads_ColorBase: Clothing
 	{	
-		scope=2;
+		scope=0;
 		displayName="Elbow and Knee pads";
     descriptionShort="Espen Industries. Elbow and knee pads for maximum protection.";
 		model="Survivalists_Mods\characters\belts\Elbowpads_Kneepads_g.p3d";
@@ -195,6 +289,13 @@ class CfgVehicles
 			"Vest",
 			"Clothing"
 		};
+    rootClassName="SRP_Elbow_Knee_Pads";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",
+      "Black"
+    };
 		weight=12000;
 		itemSize[]={2,3};
 		quickBarBonus=2;
@@ -252,9 +353,9 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Military_Belt_Tan: MilitaryBelt // new
+  class SRP_Military_Belt_ColorBase: Clothing // new
   {
-		scope=2;
+		scope=0;
 		displayName="Military Belt";
     descriptionShort="Espen Industries. A military style belt with versatile attachments.";
 		model="Survivalists_Mods\characters\belts\Military_Belt_g.p3d";
@@ -281,6 +382,21 @@ class CfgVehicles
     hiddenSelectionsMaterials[]=
 		{
 			"Survivalists_Mods\characters\belts\data\Military_belt.rvmat"
+		};
+    rootClassName="SRP_Military_Belt";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",
+      "Black"
+    };		
+    repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+    vehicleClass="Clothing";
+		simulation="clothing";
+		inventorySlot[]=
+		{
+			"Hips"
 		};
 		class ClothingTypes
 		{
@@ -338,14 +454,14 @@ class CfgVehicles
 		};
   };
 
-	class SRP_Knife_Sheath_Tan: NylonKnifeSheath
+	class SRP_Knife_Sheath_ColorBase: Clothing
 	{
-		scope = 2;
-		displayName = "Knife Sheath";
+		scope=0;
+		displayName="Knife Sheath";
     descriptionShort="Espen Industries. A military style knife sheath.";
-		model = "Survivalists_Mods\characters\belts\Knife_Sheath.p3d";
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = 
+		model="Survivalists_Mods\characters\belts\Knife_Sheath.p3d";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\characters\belts\data\sheath_Tan_CO.paa"
 		};
@@ -353,6 +469,33 @@ class CfgVehicles
     {
       "Survivalists_Mods\characters\belts\data\sheath.rvmat"
     };
+    rootClassName="SRP_Knife_Sheath";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",
+      "Black"
+    };
+    inventorySlot[]=
+		{
+			"Belt_Back"
+		};
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Belt"
+		};
+		weight=110;
+		itemSize[]={3,1};
+		attachments[]=
+		{
+			"Knife"
+		};
+		absorbency=0.1;
+		heatIsolation=0;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
     class ClothingTypes
 		{
 			male="Survivalists_Mods\characters\belts\Knife_Sheath.p3d";

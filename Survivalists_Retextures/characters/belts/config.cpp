@@ -16,22 +16,22 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class SRP_Elbow_Knee_Pads_Green;
-  class SRP_Military_Belt_Tan;
-  class SRP_Knife_Sheath_Tan;
-  class SRP_TacticalBelt;
+  class SRP_Elbow_Knee_Pads_ColorBase;
+  class SRP_Military_Belt_ColorBase;
+  class SRP_Knife_Sheath_ColorBase;
+  class SRP_TacticalBelt_ColorBase;
   class SRP_Car_WoodenDerby;
 
   //======================== MAIN MOD RETEXTURES
-  class SRP_Elbow_Knee_Pads_Tan : SRP_Elbow_Knee_Pads_Green
+  class SRP_Elbow_Knee_Pads_Green: SRP_Elbow_Knee_Pads_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\belts\data\Pads_Tan_CO.paa"
+			"Survivalists_Retextures\characters\belts\data\Pads_Green_CO.paa"
 		};	
 	};
-	class SRP_Elbow_Knee_Pads_Black : SRP_Elbow_Knee_Pads_Green
+	class SRP_Elbow_Knee_Pads_Black: SRP_Elbow_Knee_Pads_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -39,8 +39,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\belts\data\Pads_Black_CO.paa"
 		};	
 	};
+  class SRP_Elbow_Knee_Pads_Tan: SRP_Elbow_Knee_Pads_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\belts\data\Pads_Tan_CO.paa"
+		};	
+	};
 
-  class SRP_Military_Belt_Green: SRP_Military_Belt_Tan
+  class SRP_Military_Belt_Green: SRP_Military_Belt_ColorBase
 	{ 
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -48,7 +56,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\belts\data\Military_Belt_Green_CO.paa"
 		};	
 	};
-	class SRP_Military_Belt_Black: SRP_Military_Belt_Tan
+	class SRP_Military_Belt_Black: SRP_Military_Belt_ColorBase
 	{ 
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -56,8 +64,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\belts\data\Military_Belt_Black_CO.paa"
 		};	
 	};
+  class SRP_Military_Belt_Tan: SRP_Military_Belt_ColorBase
+	{ 
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\belts\data\Military_Belt_Tan_CO.paa"
+		};	
+	};
 
-	class SRP_Knife_Sheath_Green: SRP_Knife_Sheath_Tan
+	class SRP_Knife_Sheath_Green: SRP_Knife_Sheath_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -65,7 +81,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\belts\data\Sheath_Green_CO.paa"
 		};	
 	};
-	class SRP_Knife_Sheath_Black: SRP_Knife_Sheath_Tan
+	class SRP_Knife_Sheath_Black: SRP_Knife_Sheath_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -73,8 +89,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\belts\data\Sheath_Black_CO.paa"
 		};	
 	};
+  class SRP_Knife_Sheath_Tan: SRP_Knife_Sheath_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\belts\data\Sheath_Tan_CO.paa"
+		};	
+	};
 
-  class SRP_TacticalBelt_Green: SRP_TacticalBelt
+  class SRP_TacticalBelt_Green: SRP_TacticalBelt_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -82,12 +106,20 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\belts\data\tacticalbelt_Green_co.paa"
 		};	
 	};
-	class SRP_TacticalBelt_Black: SRP_TacticalBelt
+	class SRP_TacticalBelt_Black: SRP_TacticalBelt_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\belts\data\tacticalbelt_Black_co.paa"
+		};	
+	};
+  class SRP_TacticalBelt_Tan: SRP_TacticalBelt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\belts\data\tacticalbelt_Tan_co.paa"
 		};	
 	};
 

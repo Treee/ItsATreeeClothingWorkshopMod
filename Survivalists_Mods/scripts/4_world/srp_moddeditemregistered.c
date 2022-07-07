@@ -72,7 +72,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Holster_Belt", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
     
     // Belts
-    pType.AddItemInHandsProfileIK("SRP_Elbow_Knee_Pads_Green", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
+    pType.AddItemInHandsProfileIK("SRP_Elbow_Knee_Pads_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
     pType.AddItemInHandsProfileIK("SRP_Bandoiler", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
     pType.AddItemInHandsProfileIK("SRP_ShoulderSling", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
 
