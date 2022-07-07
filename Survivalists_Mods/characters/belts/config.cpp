@@ -22,6 +22,18 @@ class CfgVehicles
   class PlateCarrierPouches;
   class NylonKnifeSheath;
 
+  class LeatherBelt_ColorBase: Clothing
+	{
+    rootClassName="LeatherBelt";
+    colorVariants[]=
+    {
+      "Natural",
+      "Beige",
+      "Brown",
+      "Black",
+    };
+	};
+
   class SRP_LegHolster: CivilianBelt // BP_BeltGunBag
   {
 		scope=2;
@@ -126,8 +138,8 @@ class CfgVehicles
   class SRP_TacticalBelt: MilitaryBelt // new
   {
 		scope=2;
-		displayName="Tactical Belt (Deprecated. See make a ticket)";
-    descriptionShort="(Deprecated. See make a ticket) (Deprecated. See make a ticket) (Deprecated. See make a ticket) (Deprecated. See make a ticket)";
+		displayName="Tactical Belt (Deprecated. Make a ticket)";
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
 		model="Survivalists_Mods\characters\belts\tacticalbelt_g.p3d";
     attachments[]=
 		{
@@ -200,7 +212,7 @@ class CfgVehicles
 
   class SRP_TacticalBelt_ColorBase: Clothing // new
   {
-		scope=2;
+		scope=0;
 		displayName="Tactical Belt";
     descriptionShort="Espen Industries. A military style belt with versatile attachments.";
 		model="Survivalists_Mods\characters\belts\tacticalbelt_g.p3d";

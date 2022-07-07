@@ -26,11 +26,85 @@ class CfgVehicles
     {
       biological=1;
     };
+    rootClassName="NBCGloves";
+    colorVariants[]=
+    {
+      "Blue",
+      "Gray",
+      "Yellow",      
+    };
 	};
 
   class TacticalGloves_ColorBase: Clothing
 	{
 		itemSize[]={1,2};
+    rootClassName="TacticalGloves";
+    colorVariants[]=
+    {
+      "Black",
+      "Beige",
+      "Green",
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
+    };
+  };
+
+  class WorkingGloves_ColorBase: Clothing
+	{
+    rootClassName="WorkingGloves";
+    colorVariants[]=
+    {
+      "Black",
+      "Beige",
+      "Brown",
+      "Yellow",
+      "White",
+      "Red"
+    };
+  };
+
+  class SurgicalGloves_ColorBase: Clothing
+	{
+    rootClassName="SurgicalGloves";
+    colorVariants[]=
+    {
+      "Blue",
+      "LightBlue",
+      "Green",
+      "White",
+      "White",
+      "Red"
+    };
+  };
+
+  class LeatherGloves_ColorBase: Clothing
+	{
+    rootClassName="LeatherGloves";
+    colorVariants[]=
+    {
+      "Natural",
+      "Beige",
+      "Black",
+      "Brown"
+    };
+  };
+
+  class OMNOGloves_ColorBase: Clothing
+	{
+    rootClassName="OMNOGloves";
+    colorVariants[]=
+    {
+      "Gray",
+      "Brown",
+      "Green",
+      "Black"
+    };
   };
 
   //====================================== CUSTOM STUFF
@@ -101,12 +175,28 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_BoxingGloves_Colorbase: TacticalGloves_ColorBase
+  class SRP_BoxingGloves_Colorbase: Clothing
   {
     scope=0;
     displayName="Boxing Gloves";
     descriptionShort="Espen Industries. Boxing gloves manufactures to soften even the hardest blows.";
 		model="Survivalists_Mods\characters\gloves\srp_boxinggloves_g.p3d";
+    inventorySlot[]=
+		{
+			"Gloves"
+		};
+		simulation="clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Gloves"
+		};
+		weight=454;
+		itemSize[]={2,2};
+		varWetMax=0.79000002;
+		heatIsolation=0.60000002;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -114,6 +204,15 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\characters\gloves\data\srp_boxinggloves_co.paa"
+    };
+    rootClassName="SRP_BoxingGloves";
+    colorVariants[]=
+    {
+      "Red",
+      "Blue",
+      "Green",
+      "Grey",
+      "Pink",
     };
     class ClothingTypes
 		{
