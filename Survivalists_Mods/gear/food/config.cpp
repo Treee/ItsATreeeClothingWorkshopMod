@@ -945,8 +945,8 @@ class CfgVehicles
     class Nutrition
 		{
 			fullnessIndex=1;
-			energy=100;
-			water=100;
+			energy=5000;
+			water=5000;
 			nutritionalIndex=1;
 			toxicity=0;
 			agents=0;
@@ -962,8 +962,25 @@ class CfgVehicles
     class Nutrition
 		{
 			fullnessIndex=1;
-			energy=100;
-			water=100;
+			energy=5000;
+			water=5000;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+  class SRP_Guts_PigletCookiesBrains: Guts
+	{
+		scope=2;
+		displayName="Piglets Mac and Cheese Cookies";
+		descriptionShort="Large chunks of brain, scraps of orange armbands, clumps of rancid cheese and uncooked rice clumped together in a putrid sulfuric stench.";
+		hiddenSelections[]={"camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\food\data\animal_guts_PigletsCookiev3_co.paa"};
+    class Nutrition
+		{
+			fullnessIndex=1;
+			energy=5000;
+			water=5000;
 			nutritionalIndex=1;
 			toxicity=0;
 			agents=0;

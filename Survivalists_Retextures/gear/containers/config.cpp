@@ -191,6 +191,71 @@ class CfgVehicles
 		};
 	};
 
+  class Bear_Chip: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Chip_co.paa"
+		};
+	};
+  class Bear_Emporium: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Emporium_co.paa"
+		};
+	};
+  class Bear_Gray: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Gray_co.paa"
+		};
+	};
+  class Bear_Monolith: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Monolith_co.paa"
+		};
+	};
+  class Bear_Pig: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Pig_co.paa"
+		};
+	};
+  class Bear_Sierb: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Sierb_co.paa"
+		};
+	};
+  class Bear_GNB: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_gnb_co.paa"
+		};
+	};
+  class Bear_Arbiters: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_arbiters_co.paa"
+		};
+	};
+
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {
 		scope=2;

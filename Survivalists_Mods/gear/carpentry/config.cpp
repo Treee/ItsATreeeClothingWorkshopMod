@@ -63,7 +63,7 @@ class CfgVehicles
       "Material_Shelter_FrameSticks",
 			"MetalWire",
 			"Material_MetalWire",
-			"Material_FPole_MetalWire"
+			"Material_FPole_MetalWire",
       "Material_Shelter_Fabric",
       "Rope",
       "Rags",
@@ -84,7 +84,7 @@ class CfgVehicles
       "Material_Shelter_FrameSticks",
 			"MetalWire",
 			"Material_MetalWire",
-			"Material_FPole_MetalWire"
+			"Material_FPole_MetalWire",
       "Material_Shelter_Leather",
       "Material_Shelter_Fabric",
       "Rope",
