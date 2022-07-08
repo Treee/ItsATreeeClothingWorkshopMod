@@ -1,5 +1,6 @@
 modded class PluginLifespan
 {
+  protected static const int LIFESPAN_MAX = 960; // value in minutes when player achieved maximum age in order to have full beard
   override void SetPlayerLifespanLevel( PlayerBase player, LifespanLevel level )
 	{
     if (!player.IsPlayerPreMutant())

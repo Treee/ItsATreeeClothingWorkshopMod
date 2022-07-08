@@ -24,6 +24,10 @@ class CfgVehicles
   class Switchable_Base;
   class BalaclavaMask_ColorBase;
 
+	class Msp_BunnyEarsHeadband: Clothing
+	{
+    inventorySlot[]+={"Wig"};
+  };
   //-------------------------------------- BASE GAME OVERRIDE
   class BallisticHelmet_ColorBase: Clothing
 	{
