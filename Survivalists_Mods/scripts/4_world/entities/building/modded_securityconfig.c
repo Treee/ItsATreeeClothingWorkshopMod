@@ -84,6 +84,10 @@ modded class SecurityConfig
     return {
      "StarlightOptic",
      "ACOGOptic_6x",
+     "JMC_Keycard",
+     "NailBox",
+     "DUB_Mutantsyringe_Admin2",
+     "DUB_Mutantsyringe_Admin4",
     };
   }
 
