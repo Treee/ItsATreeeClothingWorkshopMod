@@ -75,8 +75,7 @@ modded class SecurityConfig
     return {
      "ttscarl",
      "ttrpd",
-     "FAL",
-     "M4A1"
+     "FAL",     
     };
   }
 
@@ -84,7 +83,7 @@ modded class SecurityConfig
   {
     return {
      "StarlightOptic",
-     "ACOGOptic_6x"
+     "ACOGOptic_6x",
     };
   }
 
@@ -105,6 +104,7 @@ modded class SecurityConfig
       "AmmoBox_357_20Rnd",
       "AmmoBox_545x39_20Rnd",
       "AmmoBox_545x39Tracer_20Rnd",
+      "AmmoBox_12gaFlash_10Rnd"
     };
   }
 }
