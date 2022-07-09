@@ -263,6 +263,22 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\containers\data\teddybear_TheStash_co.paa"
 		};
 	};
+  class Bear_Altar: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Altar_co.paa"
+		};
+	};
+  class Bear_Teddys: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Teddys_co.paa"
+		};
+	};
 
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {
