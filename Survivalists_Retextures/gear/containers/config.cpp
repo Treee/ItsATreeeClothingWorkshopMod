@@ -278,6 +278,14 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\containers\data\teddybear_Teddys_co.paa"
 		};
 	};
+  class Bear_Salty: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Salty_co.paa"
+		};
+	};
 
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {
