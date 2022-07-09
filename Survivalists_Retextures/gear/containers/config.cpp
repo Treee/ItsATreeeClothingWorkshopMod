@@ -190,7 +190,6 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\containers\data\teddybear_Miles_co.paa"
 		};
 	};
-
   class Bear_Chip: Bear_ColorBase
 	{
 		scope=2;

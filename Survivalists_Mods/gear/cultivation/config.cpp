@@ -410,7 +410,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=1; // was 7;
+			CropsCount=3; // was 7;
 			CropsType="Brookmint";
 		};
 	};
@@ -501,7 +501,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=1; // was 7;
+			CropsCount=3; // was 7;
 			CropsType="Dock";
 		};
 	};
@@ -592,7 +592,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=1; // was 7;
+			CropsCount=3; // was 7;
 			CropsType="Valerian";
 		};
 	};
@@ -683,7 +683,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=1; // was 7;
+			CropsCount=3; // was 7;
 			CropsType="Ribwort";
 		};
 	};
@@ -774,7 +774,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=1; // was 7;
+			CropsCount=3; // was 7;
 			CropsType="Rosemary";
 		};
 	};
@@ -865,7 +865,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=1; // was 7;
+			CropsCount=3; // was 7;
 			CropsType="GreenAmanita";
 		};
 	};
@@ -956,7 +956,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=1; // was 7;
+			CropsCount=3; // was 7;
 			CropsType="Yarrow";
 		};
 	};
@@ -1047,7 +1047,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			GrowthStagesCount=6;
-			CropsCount=1; // was 7;
+			CropsCount=3; // was 7;
 			CropsType="Mint";
 		};
 	};

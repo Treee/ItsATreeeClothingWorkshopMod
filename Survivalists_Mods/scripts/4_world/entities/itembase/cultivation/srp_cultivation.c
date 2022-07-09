@@ -5,7 +5,6 @@ modded class Plant_Cannabis
     m_FullMaturityTime = 2700;
   }
 };
-
 class Plant_Tobacco extends PlantBase
 {
   void Plant_Tobacco()
@@ -13,7 +12,6 @@ class Plant_Tobacco extends PlantBase
     m_FullMaturityTime = 2700;
   }
 };
-
 class Plant_Cocaine extends PlantBase
 {
   void Plant_Cocaine()
@@ -25,56 +23,56 @@ class Plant_Brookmint extends PlantBase
 {
   void Plant_Brookmint()
   {
-    m_FullMaturityTime = 2700;
+    m_FullMaturityTime = 2500;
   }
 };
 class Plant_Dock extends PlantBase
 {
   void Plant_Dock()
   {
-    m_FullMaturityTime = 2700;
+    m_FullMaturityTime = 2000;
   }
 };
 class Plant_Valerian extends PlantBase
 {
   void Plant_Valerian()
   {
-    m_FullMaturityTime = 2700;
+    m_FullMaturityTime = 2350;
   }
 };
 class Plant_Ribwort extends PlantBase
 {
   void Plant_Ribwort()
   {
-    m_FullMaturityTime = 2700;
+    m_FullMaturityTime = 2550;
   }
 };
 class Plant_Rosemary extends PlantBase
 {
   void Plant_Rosemary()
   {
-    m_FullMaturityTime = 2700;
+    m_FullMaturityTime = 2450;
   }
 };
 class Plant_GreenAmanita extends PlantBase
 {
   void Plant_GreenAmanita()
   {
-    m_FullMaturityTime = 2700;
+    m_FullMaturityTime = 2600;
   }
 };
 class Plant_Yarrow extends PlantBase
 {
   void Plant_Yarrow()
   {
-    m_FullMaturityTime = 2700;
+    m_FullMaturityTime = 2200;
   }
 };
 class Plant_Mint extends PlantBase
 {
   void Plant_Mint()
   {
-    m_FullMaturityTime = 2700;
+    m_FullMaturityTime = 2250;
   }
 };
 
