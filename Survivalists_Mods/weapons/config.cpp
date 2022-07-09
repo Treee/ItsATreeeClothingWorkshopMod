@@ -12,6 +12,34 @@ class CfgPatches
 	};
 };
 
+// jmc weapons
+class CfgAmmo
+{
+	class Bullet_Base;
+	class jmc_SnowOwl_Bullet: Bullet_Base
+	{
+		scope=0;
+	};
+};
+class CfgMagazines
+{
+	class Ammunition_Base;
+	class jmc_SnowOwl_Ammo: Ammunition_Base
+	{
+		scope=0;
+	};
+  class jmc_SnowOwl_Mag_Base;
+  class jmc_SnowOwl_Mag: jmc_SnowOwl_Mag_Base
+	{
+		scope=0;
+	};
+  class jmc_Prototype_Mag_Base;
+  class jmc_Prototype_Mag: jmc_Prototype_Mag_Base
+	{
+		scope=0;
+	};
+};
+
 class CfgAmmoTypes
 {
 	class AType_Bullet_12Nail
@@ -29,7 +57,7 @@ class CfgWeapons
   class RifleCore;
 	class Rifle_Base: RifleCore
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Shoulder",
 			"Shoulder1",
@@ -44,6 +72,26 @@ class CfgWeapons
 			"Melee"
 		};
 	};
+
+  class jmc_SnowOwl_Base;
+  class jmc_SnowOwl: jmc_SnowOwl_Base
+	{
+		scope=0;
+	};
+  class jmc_Prototype_Base;
+	class jmc_Prototype_Blue: jmc_Prototype_Base
+	{
+		scope=0;
+	};
+	class jmc_Prototype_Red: jmc_Prototype_Base
+	{
+		scope=0;
+	};
+	class jmc_Prototype_White: jmc_Prototype_Base
+	{
+		scope=0;
+	};
+
 };
 
 class CfgVehicles
