@@ -286,6 +286,22 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\containers\data\teddybear_Salty_co.paa"
 		};
 	};
+  class Bear_Arcadia: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Arcadia_co.paa"
+		};
+	};
+  class Bear_Dawnbreak: Bear_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\containers\data\teddybear_Dawnbreak_co.paa"
+		};
+	};
 
   class SRP_SmallProtectorCase_Woodland: SmallProtectorCase
   {
