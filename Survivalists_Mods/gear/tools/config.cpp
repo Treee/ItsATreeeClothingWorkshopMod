@@ -204,6 +204,14 @@ class CfgVehicles
     canBeSplit=1;
   };
 
+  class Pen_ColorBase: Inventory_Base
+  {
+    inventorySlot[]+=
+		{
+			"Pen_slot"
+		};
+  };
+
   // -------------------------- MODDED MODS
   class MassAdminStash: Compass
 	{
@@ -219,35 +227,6 @@ class CfgVehicles
     displayName="Advanced Heat Pack";
 		descriptionShort="This one gets hot hot hot.";
 		varTemperatureMax=250;
-	};
-
-	class Pen_Black: Pen_ColorBase
-	{
-		inventorySlot[]=
-		{
-			"Pen_slot"
-		};
-	};
-	class Pen_Red: Pen_ColorBase
-	{
-		inventorySlot[]=
-		{
-			"Pen_slot"
-		};
-	};
-	class Pen_Blue: Pen_ColorBase
-	{
-		inventorySlot[]=
-		{
-			"Pen_slot"
-		};
-	};
-	class Pen_Green: Pen_ColorBase
-	{
-		inventorySlot[]=
-		{
-			"Pen_slot"
-		};
 	};
 
   // carpentry or weapon smithing

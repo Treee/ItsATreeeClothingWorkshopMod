@@ -18,7 +18,7 @@ class CfgVehicles
 
 	class ItemCompass: Inventory_Base
 	{
-    inventorySlot[]=
+    inventorySlot[]+=
 		{
 			"Compass"	
 		};

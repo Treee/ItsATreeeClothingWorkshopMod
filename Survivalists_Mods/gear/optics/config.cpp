@@ -22,7 +22,7 @@ class CfgVehicles
 
 	class Binoculars: ItemOptics
 	{
-		inventorySlot[]={"Binoculars"};
+		inventorySlot[]+={"Binoculars"};
 	};
 
   class SRP_PistolOptic_Golden: PistolOptic
