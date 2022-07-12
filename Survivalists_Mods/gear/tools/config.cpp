@@ -18,7 +18,6 @@ class CfgPatches
 class CfgVehicles
 {
   class Inventory_Base;
-  class Pen_ColorBase;
   class Compass;
   class FarmingHoe;
   class Container_Base;
