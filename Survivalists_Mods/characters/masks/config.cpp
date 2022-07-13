@@ -22,6 +22,69 @@ class CfgVehicles
   class Clothing;
 
   //------------------------------------- BASE GAME OVERRIDE
+  class BalaclavaMask_ColorBase: Clothing
+	{
+		itemSize[]={1,2};
+    rootClassName="BalaclavaMask";
+    colorVariants[]=
+    {
+      "Black",
+      "BlackSkull",
+      "Beige",
+      "Blue",
+      "Green",
+      "Pink",
+      "White",
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
+    };
+  };
+  class Balaclava3Holes_ColorBase: Clothing
+	{
+		itemSize[]={1,2};
+    rootClassName="Balaclava3Holes";
+    colorVariants[]=
+    {
+      "Black",
+      "BlackSkull",
+      "Beige",
+      "Blue",
+      "Green",
+      "Pink",
+      "White",
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
+    };
+  };
+  class SurgicalMask: Clothing
+  {
+    rootClassName="SurgicalMask";
+    colorVariants[]=
+    {
+      "Black"
+    };
+  };
+  class HockeyMask: Clothing
+  {
+    rootClassName="HockeyMask";
+    colorVariants[]=
+    {
+      "Steel"
+    };
+  };
+
 	class GasMask: Clothing
 	{
 		soundVoiceType="none";
@@ -32,16 +95,6 @@ class CfgVehicles
 		soundVoiceType="none";
 		soundVoicePriority=3;
 	};
-
-  class Balaclava3Holes_ColorBase: Clothing
-	{
-		itemSize[]={1,2};
-  };
-
-  class BalaclavaMask_ColorBase: Clothing
-	{
-		itemSize[]={1,2};
-  };
 
 
   //---------------------------------------- BASE GAME RETEXTURES
@@ -1066,6 +1119,15 @@ class CfgVehicles
     color="base";
     rotationFlags=0;
 		itemSize[]={2,3};
+    rootClassName="SRP_S10Respirator";
+    colorVariants[]=
+    {
+      "FS",
+      "OD",
+      "Tan",
+      "Black",
+      "Snow",      
+    };
 		attachments[]=
     {
       "GasMaskFilter"
@@ -1116,6 +1178,14 @@ class CfgVehicles
     color="base";
     rotationFlags=0;
 		itemSize[]={2,3};
+    rootClassName="SRP_PMK2Respirator";
+    colorVariants[]=
+    {
+      "OD",
+      "Tan",
+      "Black",
+      "Snow",      
+    };
 		hiddenSelections[]=
     {
       "zbytek",
@@ -1168,6 +1238,14 @@ class CfgVehicles
     color="base";
     rotationFlags=0;
 		itemSize[]={2,3};
+    rootClassName="SRP_M50Respirator";
+    colorVariants[]=
+    {
+      "OD",
+      "Tan",
+      "Black",
+      "Snow",      
+    };
 		hiddenSelections[]=
     {
       "zbytek"
@@ -1213,6 +1291,15 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
 		itemSize[]={3,2};
+    rootClassName="SRP_FacialHairGoatee";
+    colorVariants[]=
+    {
+      "Brown",
+      "LightBrown",
+      "Black",
+      "Blonde",
+      "White",      
+    };
 		inventorySlot[]=
     {
       "Beard"
@@ -1248,6 +1335,15 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
 		itemSize[]={3,2};
+    rootClassName="SRP_FacialHairBeard";
+    colorVariants[]=
+    {
+      "Brown",
+      "LightBrown",
+      "Black",
+      "Blonde",
+      "White",      
+    };
 		inventorySlot[]=
     {
       "Beard"
@@ -1283,6 +1379,15 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
 		itemSize[]={3,2};
+    rootClassName="SRP_FacialHairChops";
+    colorVariants[]=
+    {
+      "Brown",
+      "LightBrown",
+      "Black",
+      "Blonde",
+      "White",      
+    };
 		inventorySlot[]=
     {
       "Beard"
