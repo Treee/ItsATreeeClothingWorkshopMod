@@ -20,75 +20,211 @@ class CfgVehicles
   //-------------------------------------BASE GAME OVERRIDE
 	class NBCBootsBase: Clothing
 	{
-    soundAttType="None";
+    soundAttType="none";
+    rootClassName="NBCBootsBase";
+    colorVariants[]=
+    {
+      "Gray",
+      "Yellow",
+      "Orange"
+    };
 		class Protection 
     {
-      repairableWithKits[]={5,6}; // duct tape and tire repair kit
-		  heatIsolation=0.8;
       biological=1;
     };
 	};
-
   class AthleticShoes_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
+    attachments[]+={"SRP_GunDerringer"};
+    rootClassName="AthleticShoes";
+    colorVariants[]=
+    {
+      "Blue",
+      "Black",
+      "Brown",
+      "Brown1",
+      "Green",
+      "Green1",
+      "Grey",
+      "White",
+    };
   };
   class HikingBoots_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
+    attachments[]+={"SRP_GunDerringer"};
+    rootClassName="HikingBoots";
+    colorVariants[]=
+    {
+      "Black",
+      "Brown",
+    };
   };
   class HikingBootsLow_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
+    attachments[]+={"SRP_GunDerringer"};
+    rootClassName="HikingBootsLow";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Beige",
+      "Grey",      
+    };
   };
   class Wellies_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer","Knife"};
+    attachments[]+={"SRP_GunDerringer","Knife"};
+    rootClassName="Wellies";
+    colorVariants[]=
+    {
+      "Black",
+      "Brown",
+      "Green",
+      "Grey",      
+    };
   };
   class WorkingBoots_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
+    attachments[]+={"SRP_GunDerringer"};
+    rootClassName="WorkingBoots";
+    colorVariants[]=
+    {
+      "Beige",
+      "Yellow",
+      "Brown",
+      "Green",
+      "Grey",      
+    };
   };
-
   class JungleBoots_ColorBase: Clothing
 	{
-    attachments[]={"SRP_GunDerringer","Knife"};
+    attachments[]+={"SRP_GunDerringer","Knife"};
     itemSize[]={2,2};
 		itemsCargoSize[]={1,2};
     repairableWithKits[]={5,3};
 		repairCosts[]={30,25};
+    rootClassName="JungleBoots";
+    colorVariants[]=
+    {
+      "Beige",
+      "Black",
+      "Brown",
+      "Green",
+      "Olive",      
+      "Yellow",
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
+    };
   };
-
   class DressShoes_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
+    attachments[]+={"SRP_GunDerringer"};
+    rootClassName="DressShoes";
+    colorVariants[]=
+    {
+      "Beige",
+      "Black",
+      "Brown",
+      "Sunburst",
+      "White",
+    };
   };
   class MilitaryBoots_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer","Knife"};
+    attachments[]+={"SRP_GunDerringer","Knife"};
+    rootClassName="MilitaryBoots";
+    colorVariants[]=
+    {
+      "Beige",
+      "Black",
+      "Bluerock",
+      "Brown",
+      "Redpunk",
+      "White",
+    };
   };
   class CombatBoots_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer","Knife"};
+    attachments[]+={"SRP_GunDerringer","Knife"};
+    rootClassName="CombatBoots";
+    colorVariants[]=
+    {
+      "Beige",
+      "Black",
+      "Brown",
+      "Green",
+      "Grey",
+    };
   };
   class JoggingShoes_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
+    attachments[]+={"SRP_GunDerringer"};
+    rootClassName="JoggingShoes";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Red",
+      "Violet",
+      "White",
+    };
   };
   class LeatherShoes_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
-    soundAttType="None";
+    attachments[]+={"SRP_GunDerringer"};
+    soundAttType="none";
+    rootClassName="LeatherShoes";
+    colorVariants[]=
+    {
+      "Black",
+      "Natural",
+      "Brown",
+      "Beige",      
+    };
   };
   class Sneakers_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
+    attachments[]+={"SRP_GunDerringer"};
+    rootClassName="LeatherShoes";
+    colorVariants[]=
+    {
+      "Black",
+      "Black1",
+      "BabyBlue",
+      "Grey",
+      "Green",
+      "Red",      
+      "Red1",      
+      "White",      
+      "Lime",      
+      "Purple",      
+      "DarkPurple",      
+      "Salmon",      
+      "Tan",      
+      "WhitePink",      
+    };
   };
   class Ballerinas_ColorBase: Clothing
   {
-    attachments[]={"SRP_GunDerringer"};
-    soundAttType="None";
+    attachments[]+={"SRP_GunDerringer"};
+    soundAttType="none";
+    rootClassName="Ballerinas";
+    colorVariants[]=
+    {
+      "Blue",
+      "Red",
+      "White",
+      "Yellow",      
+    };
   };
+  
+  //====================================================== CUSTOM STUFF
 
   class Sneakers_Skylar_Biozone: Sneakers_ColorBase
 	{
@@ -112,7 +248,7 @@ class CfgVehicles
 		scope=2;
 		displayName="These shoes are very quiet";
 		descriptionShort="Shoes that move silently";
-    soundAttType="None";
+    soundAttType="none";
     hiddenSelectionsTextures[]=
 		{
 			"\dz\characters\shoes\data\Sneakers_Black_co.paa",

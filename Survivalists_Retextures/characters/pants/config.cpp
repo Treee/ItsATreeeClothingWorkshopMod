@@ -1363,60 +1363,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\prison_pants_leather_co.paa"
 		};
 	};
-  class ShortJeans_Black: ShortJeans_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.98000002;
-    hiddenSelections[]=
-    {
-      "camoGround",
-			"camoMale",
-			"camoFemale",
-      "personality"
-    };
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\shortjeans_black_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_black_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_black_co.paa"
-		};
-	};
-  class ShortJeans_Grape: ShortJeans_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.98000002;
-    hiddenSelections[]=
-    {
-      "camoGround",
-			"camoMale",
-			"camoFemale",
-      "personality"
-    };
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\shortjeans_grape_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_grape_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_grape_co.paa"
-		};
-	};
-  class ShortJeans_Snow: ShortJeans_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.98000002;
-    hiddenSelections[]=
-    {
-      "camoGround",
-			"camoMale",
-			"camoFemale",
-      "personality"
-    };
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa",
-			"Survivalists_Retextures\characters\pants\data\shortjeans_snow_co.paa"
-		};
-	};
   class SRP_Leather_ShortJeans: ShortJeans_ColorBase
 	{
 		scope=2;

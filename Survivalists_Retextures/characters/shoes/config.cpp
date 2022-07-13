@@ -20,6 +20,258 @@ class CfgVehicles
 	class NBCBootsBase;
   class Sneakers_ColorBase;
 
+  class NBCBootsBase_Gray: NBCBootsBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"\dz\characters\shoes\data\NBC_Boots_grey_co.paa",
+			"\dz\characters\shoes\data\NBC_Boots_grey_co.paa",
+			"\dz\characters\shoes\data\NBC_Boots_grey_co.paa"
+		};
+	};
+	class NBCBootsBase_Yellow: NBCBootsBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"\dz\characters\shoes\data\NBC_Boots_yellow_co.paa",
+			"\dz\characters\shoes\data\NBC_Boots_yellow_co.paa",
+			"\dz\characters\shoes\data\NBC_Boots_yellow_co.paa"
+		};
+	};
+  class NBCBootsBase_Orange: NBCBootsBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa"
+		};
+	};
+	class AthleticShoes_White: AthleticShoes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\denshoe.paa",
+			"Survivalists_Retextures\characters\shoes\data\denshoe.paa",
+			"Survivalists_Retextures\characters\shoes\data\denshoe.paa"
+		};
+	};
+	class AthleticShoes_Green1: AthleticShoes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\denshoe_green.paa",
+			"Survivalists_Retextures\characters\shoes\data\denshoe_green.paa",
+			"Survivalists_Retextures\characters\shoes\data\denshoe_green.paa"
+		};
+	};
+	class AthleticShoes_Brown1: AthleticShoes_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\Janek_shoes.paa",
+			"Survivalists_Retextures\characters\shoes\data\Janek_shoes.paa",
+			"Survivalists_Retextures\characters\shoes\data\Janek_shoes.paa"
+		};
+	};
+	class JungleBoots_Yellow: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\jungleboots_yelo_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\jungleboots_yelo_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\jungleboots_yelo_co.paa"
+		};
+	};
+	class JungleBoots_Red9291: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\jungleboots_red9291_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\jungleboots_red9291_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\jungleboots_red9291_co.paa"
+		};
+	};
+	class JungleBoots_MTP: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots01.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots01.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots01.paa"
+		};
+	};
+	class JungleBoots_ATAC: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots04.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots04.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots04.paa"
+		};
+	};
+	class JungleBoots_ATACSFG: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots38.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots38.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots38.paa"
+		};
+	};
+	class JungleBoots_USNAOR2: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots09.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots09.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots09.paa"
+		};
+	};
+	class JungleBoots_USNAOR1: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots10.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots10.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots10.paa"
+		};
+	};
+	class JungleBoots_SURPAT: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots12.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots12.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots12.paa"
+		};
+	};
+	class JungleBoots_MARPATWinter: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots19.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots19.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots19.paa"
+		};
+	};
+	class JungleBoots_EMP6: JungleBoots_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots57.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots57.paa",
+			"Survivalists_Retextures\characters\shoes\data\JungleBoots57.paa"
+		};
+	};
+  class Sneakers_BabyBlue: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_BabyBlue_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_BabyBlue_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_BabyBlue_co.paa"
+		};
+	};
+  class Sneakers_Black1: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_black_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_black_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_black_co.paa"
+		};
+	};
+  class Sneakers_DarkPurple: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_darkpurp_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_darkpurp_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_darkpurp_co.paa"
+		};
+	};
+  class Sneakers_Lime: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_lime_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_lime_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_lime_co.paa"
+		};
+	};
+  class Sneakers_Purple: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_purple_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_purple_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_purple_co.paa"
+		};
+	};
+  class Sneakers_Red1: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_red_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_red_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_red_co.paa"
+		};
+	};
+  class Sneakers_Salmon: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_salmon_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_salmon_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_salmon_co.paa"
+		};
+	};
+  class Sneakers_Tan: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_tan_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_tan_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_tan_co.paa"
+		};
+	};
+  class Sneakers_WhitePink: Sneakers_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa"
+		};
+	};
+
+  //======================================= REMOVE THESE EVENTUALLY
 	class SRP_DenShoes_White: AthleticShoes_ColorBase
 	{
 		scope=2;
@@ -71,6 +323,22 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\shoes\data\Janek_shoes.paa"
 		};
 	};
+  class SRP_NBCBoots_Orange: NBCBootsBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa"
+		};
+	};
 	class SRP_JungleBoots_Yellow: JungleBoots_ColorBase
 	{
 		scope=2;
@@ -87,33 +355,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\shoes\data\jungleboots_yelo_co.paa",
 			"Survivalists_Retextures\characters\shoes\data\jungleboots_yelo_co.paa",
 			"Survivalists_Retextures\characters\shoes\data\jungleboots_yelo_co.paa"
-		};
-	};
-	class SRP_NBCBoots_Orange: NBCBootsBase
-	{
-		scope=2;
-		hiddenSelections[]=
-		{
-			"camoGround",
-			"camoMale",
-			"camoFemale"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa"
-		};
-	};
-	class JungleBoots_Red9291: JungleBoots_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\jungleboots_red9291_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\jungleboots_red9291_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\jungleboots_red9291_co.paa"
 		};
 	};
 	class SRP_BootRys_MTP: JungleBoots_ColorBase
@@ -194,115 +435,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\shoes\data\JungleBoots57.paa",
 			"Survivalists_Retextures\characters\shoes\data\JungleBoots57.paa",
 			"Survivalists_Retextures\characters\shoes\data\JungleBoots57.paa"
-		};
-	};
-
-  class Sneakers_BabyBlue: Sneakers_ColorBase
-	{
-		scope=2;
-    color="babyblue";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_BabyBlue_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_BabyBlue_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_BabyBlue_co.paa"
-		};
-	};
-  class Sneakers_Black: Sneakers_ColorBase
-	{
-		scope=2;
-    color="black";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_black_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_black_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_black_co.paa"
-		};
-	};
-  class Sneakers_DarkPurple: Sneakers_ColorBase
-	{
-		scope=2;
-    color="darkpurple";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_darkpurp_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_darkpurp_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_darkpurp_co.paa"
-		};
-	};
-  class Sneakers_Lime: Sneakers_ColorBase
-	{
-		scope=2;
-    color="lime";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_lime_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_lime_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_lime_co.paa"
-		};
-	};
-  class Sneakers_Purple: Sneakers_ColorBase
-	{
-		scope=2;
-    color="purple";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_purple_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_purple_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_purple_co.paa"
-		};
-	};
-  class Sneakers_Red: Sneakers_ColorBase
-	{
-		scope=2;
-    color="red";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_red_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_red_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_red_co.paa"
-		};
-	};
-  class Sneakers_Salmon: Sneakers_ColorBase
-	{
-		scope=2;
-    color="salmon";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_salmon_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_salmon_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_salmon_co.paa"
-		};
-	};
-  class Sneakers_Tan: Sneakers_ColorBase
-	{
-		scope=2;
-    color="tan";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_tan_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_tan_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_tan_co.paa"
-		};
-	};
-  class Sneakers_WhitePink: Sneakers_ColorBase
-	{
-		scope=2;
-    color="whitepink";
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa",
-			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa"
 		};
 	};
 };

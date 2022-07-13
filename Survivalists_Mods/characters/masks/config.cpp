@@ -15,11 +15,9 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class SurgicalMask;
-  class Bandana_ColorBase;
-  class HockeyMask;
-  class GP5GasMask_Filter;
   class Clothing;
+  class Bandana_ColorBase;
+  class GP5GasMask_Filter;
 
   //------------------------------------- BASE GAME OVERRIDE
   class BalaclavaMask_ColorBase: Clothing
