@@ -520,11 +520,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\taloon_bl1.paa"
 		};
 	};
-
+    
   class TortillaBag_MTP: TortillaBag
 	{
 		scope=2;
-		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\tortila01.paa",
@@ -535,7 +540,12 @@ class CfgVehicles
 	class TortillaBag_ATAC: TortillaBag
 	{
 		scope=2;
-		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\tortila04.paa",
@@ -546,7 +556,12 @@ class CfgVehicles
 	class TortillaBag_ATACSFG: TortillaBag
 	{
 		scope=2;
-		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\tortila38.paa",
@@ -557,7 +572,12 @@ class CfgVehicles
 	class TortillaBag_USNAOR2: TortillaBag
 	{
 		scope=2;
-		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\tortila09.paa",
@@ -568,7 +588,12 @@ class CfgVehicles
 	class TortillaBag_USNAOR1: TortillaBag
 	{
 		scope=2;
-		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\tortila10.paa",
@@ -579,7 +604,12 @@ class CfgVehicles
 	class TortillaBag_SURPAT: TortillaBag
 	{
 		scope=2;
-		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\tortila12.paa",
@@ -590,7 +620,12 @@ class CfgVehicles
 	class TortillaBag_MARPATWinter: TortillaBag
 	{
 		scope=2;
-		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\tortila19.paa",
@@ -601,7 +636,12 @@ class CfgVehicles
 	class TortillaBag_EMP6: TortillaBag
 	{
 		scope=2;
-		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\backpacks\data\tortila57.paa",

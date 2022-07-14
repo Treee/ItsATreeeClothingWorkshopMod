@@ -181,6 +181,46 @@ class CfgVehicles
       "Black2"
     };
   };
+  class GhillieBushrag_ColorBase: Clothing
+  {
+    rootClassName="GhillieBushrag";
+    colorVariants[]=
+    {
+      "Tan",
+      "Woodland",
+      "Orange",
+      "Mossy",
+      "White",
+      "Black"
+    };
+  };
+	class GhillieTop_ColorBase: Clothing
+  {
+    rootClassName="GhillieTop";
+    colorVariants[]=
+    {
+      "Tan",
+      "Woodland",
+      "Orange",
+      "Mossy",
+      "White",
+      "Black"
+    };
+  };
+	class GhillieSuit_ColorBase: Clothing
+  {
+    rootClassName="GhillieSuit";
+    colorVariants[]=
+    {
+      "Tan",
+      "Woodland",
+      "Orange",
+      "Mossy",
+      "White",
+      "Black"
+    };
+  };
+
   //--------------------------------- CUSTOM STUFF
 
   class SRP_LeatherBackpack_Default: HuntingBag 

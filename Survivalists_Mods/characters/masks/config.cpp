@@ -562,7 +562,7 @@ class CfgVehicles
 				};
 			};
 		};
-	};
+	};      
 
   class SRP_DeerMask: Clothing
 	{
@@ -572,7 +572,6 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\masks\SRP_DeerMask_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot="Mask";
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -580,6 +579,11 @@ class CfgVehicles
 			"Clothing",
 			"Mask"
 		};
+    inventorySlot[]=
+    {
+      "Skullpike",
+      "Mask",
+    };
 		weight=1000;
 		itemSize[]={3,3};
 		absorbency=0;

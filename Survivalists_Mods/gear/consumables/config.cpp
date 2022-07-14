@@ -1619,6 +1619,7 @@ class CfgVehicles
 		attachments[]={};
 		inventorySlot[]=
     {
+      "Skullpike",
       "SRP_SkeletonSkull",
       "AnimalPelt1",
       "AnimalPelt2",

@@ -8,7 +8,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
     Clothing target_clothing;
 		if ( target && Class.CastTo(target_clothing, target.GetObject()) )
     {
-      array<string> variantOptions = GetVariantIdOptions(GetInheritingClass(target_clothing.GetType()));
+      array<string> variantOptions = GetVariantIdOptions(target_clothing.GetType());
       if (variantOptions.Count() > 0)
       {
         string displayOption = variantOptions.Get(m_VariantID);
@@ -37,7 +37,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
       {
         return false;
       }
-      if (GetVariantIdOptions(GetInheritingClass(target_clothing.GetType())).Count() > 0)
+      if (GetVariantIdOptions(target_clothing.GetType()).Count() > 0)
       {
         // Print("Action condition- target is clothing: " + target_clothing);
 			  return true;	
@@ -57,13 +57,13 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
       {
         int variantId = SRP_VariantIdActionData.Cast(action_data).m_SRPVariantId;
 
-        string inheritedClass = GetInheritingClass(target_clothing.GetType());
+        // string inheritedClass = GetInheritingClass(target_clothing.GetType());
         // Print("finish progress server: variantId: " + variantId + " items inheriting class: " + inheritedClass + " item Name: "+ target_clothing.GetType());
 
-        string newItemName = GetRootClassName(inheritedClass);
+        string newItemName = GetRootClassName(target_clothing.GetType());
 
         // Print("rootclassname: " + newItemName);
-        array<string> variantOptions = GetVariantIdOptions(inheritedClass);
+        array<string> variantOptions = GetVariantIdOptions(target_clothing.GetType());
         if (variantOptions.Count() > 0)
         {
           newItemName = newItemName + "_" + variantOptions.Get(variantId);
@@ -83,7 +83,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
 		if (Class.CastTo(clothingItem, target))
 		{
       // Print("on update actions clothing cast: " + clothingItem);
-      GetVariantManager().SetActionVariantCount(GetVariantIdOptions(GetInheritingClass(clothingItem.GetType())).Count());
+      GetVariantManager().SetActionVariantCount(GetVariantIdOptions(clothingItem.GetType()).Count());
 		}
 		else
 		{
@@ -94,9 +94,15 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
 
   override TStringArray GetVariantIdOptions(string itemType)
   {
-    // Print("itemtype: " + itemType + " item to find variants: "+ string.Format("CfgVehicles %1 colorVariants", itemType));
-    array<string> variantOptions = new array<string>;
+    Print("itemtype: " + itemType + " item to find variants: "+ string.Format("CfgVehicles %1 colorVariants", itemType));
+    array<string> variantOptions = new array<string>;    
 		GetGame().ConfigGetTextArray( string.Format("CfgVehicles %1 colorVariants", itemType), variantOptions );
+
+    if (variantOptions.Count() == 0)
+    {
+      string inheritingClass = GetInheritingClass(itemType);      
+		  GetGame().ConfigGetTextArray( string.Format("CfgVehicles %1 colorVariants", inheritingClass), variantOptions );
+    }
     // Print("Variant Options: " + variantOptions.Count());
     return variantOptions;
   }
@@ -105,6 +111,11 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
   {
     string rootClassName;
     GetGame().ConfigGetText(string.Format("CfgVehicles %1 rootClassName", itemType), rootClassName);
+    if (rootClassName == "")
+    {
+      string inheritingClass = GetInheritingClass(itemType);
+      GetGame().ConfigGetText(string.Format("CfgVehicles %1 rootClassName", inheritingClass), rootClassName);
+    }
     // Print("trying to get root class for " + string.Format("CfgVehicles %1 rootClassName", itemType) + " returned " + rootClassName);
     return rootClassName;
   }
@@ -118,10 +129,10 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
     if (full_path.Count() > 0)
     { // full path = itemName: inheriting: inheriting, inherited class ex SRP_HuntingBag_MTP HuntingBag Clothing
       
-      foreach (string path : full_path)
-      {
-        Print("Path Item: " + path);
-      }
+      // foreach (string path : full_path)
+      // {
+      //   Print("Path Item: " + path);
+      // }
       return full_path.Get(1);
     }
     return "";
