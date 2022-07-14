@@ -120,7 +120,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
       
       foreach (string path : full_path)
       {
-        Print("Path Item: " + path;
+        Print("Path Item: " + path);
       }
       return full_path.Get(1);
     }

@@ -2544,6 +2544,51 @@ class CfgVehicles
     model="Survivalists_Mods\gear\food\food_brookmint.p3d";
     color="brookmint";
     rotationFlags=64;
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
 	};
   class Dock: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2552,6 +2597,51 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the dock herb.";
     model="Survivalists_Mods\gear\food\food_dock.p3d";
     color="dock";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};    
 	};
   class Valerian: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2560,6 +2650,51 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the valerian herb.";
     model="Survivalists_Mods\gear\food\food_valerian.p3d";
     color="valerian";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
 	};
   class Ribwort: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2568,6 +2703,51 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the ribwort herb.";
     model="Survivalists_Mods\gear\food\food_ribwort.p3d";
     color="ribwort";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
 	};
   class Rosemary: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2576,6 +2756,51 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the rosemary herb.";
     model="Survivalists_Mods\gear\food\food_rosemary.p3d";
     color="rosemary";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
 	};
   class GreenAmanita: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2585,6 +2810,51 @@ class CfgVehicles
     model="Survivalists_Mods\gear\food\food_greenamanita.p3d";
     color="greenamanita";
     rotationFlags=64;
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
 	};
   class Yarrow: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2593,6 +2863,51 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the Yarrow herb.";
     model="Survivalists_Mods\gear\food\food_yarrow.p3d";
     color="yarrow";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
 	};
   class Mint: SRP_PlantHerbEdible_Colorbase
 	{
@@ -2601,6 +2916,51 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the Mint herb.";
     model="Survivalists_Mods\gear\food\food_mint.p3d";
     color="mint";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
 	};
 
   class SRP_CrushedHerb_Colorbase: Edible_Base
