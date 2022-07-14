@@ -28,12 +28,11 @@ modded class GameConstants
 
 	const float STAMINA_SYNC_RATE = 1; //in secs
 			
-	const int REFRESHER_MAX_DURATION_DEFAULT		= 3600 * 24 * 10; 	//max duration of refresher in seconds - 40 days (+ 5 days final refresh )
-	const int REFRESHER_FREQUENCY_DEFAULT 			= 3600 * 24 * 5;	//frequency of lifetime refreshes/refresher time decreases - 5 days 
+	const int REFRESHER_MAX_DURATION_DEFAULT		= 3600 * 24 * 6; 	//max duration of refresher in seconds - 6 days (+ 2 days final refresh )
+	const int REFRESHER_FREQUENCY_DEFAULT 			= 3600 * 24 * 2;	//frequency of lifetime refreshes/refresher time decreases - 2 days 
 	const float REFRESHER_RADIUS 					= 80; 				//meters
 		
   const float FIRE_ATTACHMENT_DAMAGE_PER_SECOND 		= 0.016;		// default 0.125
-
 }
 
 modded class EmoteConstants
