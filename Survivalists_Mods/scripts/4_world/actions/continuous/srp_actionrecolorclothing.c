@@ -117,6 +117,11 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
 		
     if (full_path.Count() > 0)
     { // full path = itemName: inheriting: inheriting, inherited class ex SRP_HuntingBag_MTP HuntingBag Clothing
+      
+      foreach (string path : full_path)
+      {
+        Print("Path Item: " + path;
+      }
       return full_path.Get(1);
     }
     return "";
