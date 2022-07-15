@@ -94,7 +94,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
 
   override TStringArray GetVariantIdOptions(string itemType)
   {
-    Print("itemtype: " + itemType + " item to find variants: "+ string.Format("CfgVehicles %1 colorVariants", itemType));
+    // Print("itemtype: " + itemType + " item to find variants: "+ string.Format("CfgVehicles %1 colorVariants", itemType));
     array<string> variantOptions = new array<string>;    
 		GetGame().ConfigGetTextArray( string.Format("CfgVehicles %1 colorVariants", itemType), variantOptions );
 

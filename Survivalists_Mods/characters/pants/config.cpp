@@ -178,8 +178,8 @@ class CfgVehicles
     rootClassName="PolicePants";
     colorVariants[]=
     {
-      "Sherriff1",
-      "Sherriff2",      
+      "Sheriff1",
+      "Sheriff2",      
     };
   };
   class PolicePantsOrel: Clothing

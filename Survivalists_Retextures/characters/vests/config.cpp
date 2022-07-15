@@ -52,6 +52,12 @@ class CfgVehicles
   class PlateCarrierVest_Trader: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\SRPTraderVest.paa",
@@ -62,6 +68,12 @@ class CfgVehicles
   class PlateCarrierVest_Black: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\beliyvest2.paa",
@@ -72,6 +84,12 @@ class CfgVehicles
   class PlateCarrierVest_White: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\srp_ballisticvest_white_co.paa",
@@ -82,6 +100,12 @@ class CfgVehicles
 	class PlateCarrierVest_Pseudo: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest_pseudo_co.paa",
@@ -92,6 +116,12 @@ class CfgVehicles
   class PlateCarrierVest_MTP: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
@@ -102,6 +132,12 @@ class CfgVehicles
 	class PlateCarrierVest_ATAC: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
@@ -112,6 +148,12 @@ class CfgVehicles
 	class PlateCarrierVest_ATACSFG: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
@@ -122,6 +164,12 @@ class CfgVehicles
 	class PlateCarrierVest_USNAOR2: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
@@ -132,6 +180,12 @@ class CfgVehicles
 	class PlateCarrierVest_USNAOR1: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
@@ -142,6 +196,12 @@ class CfgVehicles
 	class PlateCarrierVest_SURPAT: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
@@ -152,6 +212,12 @@ class CfgVehicles
 	class PlateCarrierVest_MARPATWinter: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
@@ -162,6 +228,12 @@ class CfgVehicles
 	class PlateCarrierVest_EMP6: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
@@ -172,6 +244,12 @@ class CfgVehicles
   class PlateCarrierVest_Lavender: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest_lavender_co.paa",
@@ -182,6 +260,12 @@ class CfgVehicles
   class PlateCarrierVest_Petal: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest_petal_co.paa",
@@ -192,6 +276,12 @@ class CfgVehicles
   class PlateCarrierVest_Stone: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest_stone_co.paa",
@@ -202,6 +292,12 @@ class CfgVehicles
   class PlateCarrierVest_Storm: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest_storm_co.paa",
@@ -212,6 +308,12 @@ class CfgVehicles
   class PlateCarrierVest_Sunny: PlateCarrierVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\ballisticvest_sunny_co.paa",
@@ -811,6 +913,12 @@ class CfgVehicles
 	class ChestHolster_Black: ChestHolster
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\srp_chest_holster_black_co.paa",
@@ -821,6 +929,12 @@ class CfgVehicles
 	class ChestHolster_White: ChestHolster
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\srp_chest_holster_white_co.paa",
@@ -999,13 +1113,528 @@ class CfgVehicles
   class HuntingVest_Leather: HuntingVest
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+			"camoMale"
+		};
 		hiddenSelectionsTextures[]=	
 		{
 			"Survivalists_Retextures\characters\vests\data\hunting_vest_Leather_co.paa",
 			"Survivalists_Retextures\characters\vests\data\hunting_vest_Leather_co.paa"
 		};
 	};
+  //=================================== MAIN MOD VESTS
 
+  class SRP_Tac_Vest_Black: SRP_Tac_Vest_ColorBase
+	{
+    scope=2;	
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\vests\data\Tac_vest_CO.paa"
+		};	
+	};
+	class SRP_Tac_Vest_Tan: SRP_Tac_Vest_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Tan_Co.paa"
+		};	
+	};
+  class SRP_Tac_Vest_Sheriff: SRP_Tac_Vest_ColorBase
+	{
+    scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Sheriff_CA.paa"
+		};	
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Sheriff.rvmat"
+		};	
+	};
+  class SRP_Tac_Vest_Green: SRP_Tac_Vest_ColorBase
+	{
+    scope=2;	
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\vests\data\Tac_vest_Green_CO.paa"
+		};	
+	};
+	class SRP_Ratnik_Tan: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Tan_CO.paa"
+		};	
+	};
+	class SRP_Ratnik_Black: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Black_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Green: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Armor_Black: SRP_Ratnik_Armor_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Black_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Armor_Tan: SRP_Ratnik_Armor_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Tan_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Armor_Green: SRP_Ratnik_Armor_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
+		};	
+	};
+  class SRP_Light_Ratnik_Black: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Black_CO.paa"
+		};	
+	};
+	class SRP_Light_Ratnik_Tan: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Tan_CO.paa"
+		};	
+	};
+  class SRP_Light_Ratnik_Green: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
+		};	
+	};
+	class SRP_Chestrig_Tan: SRP_Chestrig_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Chestrig_tan_CO.paa"
+		};	
+	};
+	class SRP_Chestrig_Black: SRP_Chestrig_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Chestrig_Black_CO.paa"
+		};	
+	};
+  class SRP_Chestrig_Green: SRP_Chestrig_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Chestrig_Green_CO.paa"
+		};	
+	};
+	class SRP_Army_Vest_1_Black: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Army_Vest_1_Black_CO.paa"
+		};	
+	};
+	class SRP_Army_Vest_1_Tan: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Army_Vest_1_Tan_CO.paa"
+		};	
+	};
+  class SRP_Army_Vest_1_Green: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Army_Vest_1_Green_CO.paa"
+		};	
+	};
+	class SRP_Army_Vest_2_Black: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Army_Vest_2_Black_CO.paa"
+		};	
+	};
+	class SRP_Army_Vest_2_Tan: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Army_Vest_2_Tan_CO.paa"
+		};	
+	};
+  class SRP_Army_Vest_2_Green: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Army_Vest_2_Green_CO.paa"
+		};	
+	};
+	class SRP_JPC_Vest_Black: SRP_JPC_Vest_ColorBase
+	{
+    scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\JPC_Vest_Black_CO.paa"
+		};	
+	};
+	class SRP_JPC_Vest_Tan: SRP_JPC_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\JPC_Vest_Tan_CO.paa"
+		};	
+	};
+  class SRP_JPC_Vest_Green: SRP_JPC_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\JPC_Vest_Green_CO.paa"
+		};	
+	};
+	class SRP_Tac_Tec_Vest_Tan: SRP_Tac_Tec_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Tac_Tec_Tan_CO.paa"
+		};	
+	};
+	class SRP_Tac_Tec_Vest_Black: SRP_Tac_Tec_Vest_ColorBase
+	{
+    scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Tac_Tec_Black_CO.paa"
+		};	
+	};
+  class SRP_Tac_Tec_Vest_Green: SRP_Tac_Tec_Vest_ColorBase
+	{
+    scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Tac_Tec_Green_CO.paa"
+		};	
+	};
+
+
+  class SRP_Small_Bottle_Green: SRP_Small_Bottle_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Small_Bottle_Green_CO.paa"
+    };    
+  };   
+  class SRP_Small_Bottle_Black: SRP_Small_Bottle_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Small_Bottle_Black_CO.paa"
+    };    
+  };
+  class SRP_Small_Bottle_Tan: SRP_Small_Bottle_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Small_Bottle_Tan_CO.paa"
+    };    
+  };
+
+  //=================================== MAIN MOD VEST POUCHES
+
+  class SRP_Map_Pouch_Green: SRP_Map_Pouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Map_Pouch_Green_CO.paa"
+    };    
+  };
+  class SRP_Map_Pouch_Black: SRP_Map_Pouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Map_Pouch_Black_CO.paa"
+    };    
+  };
+  class SRP_Map_Pouch_Tan: SRP_Map_Pouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Map_Pouch_Tan_CO.paa"
+    };    
+  };
+  class SRP_Pistol_Mag_Pouch_Green: SRP_Pistol_Mag_Pouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Pistol_MagPouch_Green_CO.paa"
+    };    
+  };
+  class SRP_Pistol_Mag_Pouch_Black: SRP_Pistol_Mag_Pouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Pistol_MagPouch_Black_CO.paa"
+    };    
+  };
+  class SRP_Pistol_Mag_Pouch_Tan: SRP_Pistol_Mag_Pouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Pistol_MagPouch_Tan_CO.paa"
+    };    
+  };
+  class SRP_IFAK_Green: SRP_IFAK_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_IFAK_Green_CO.paa"
+    };    
+  };
+  class SRP_IFAK_Black: SRP_IFAK_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_IFAK_Black_CO.paa"
+    };    
+  };
+  class SRP_IFAK_Tan: SRP_IFAK_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_IFAK_Tan_CO.paa"
+    };    
+  };
+  class SRP_Magazine_Pouch_1_Green: SRP_Magazine_Pouch_1_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_AR_MagPouch_1_Green_CO.paa"
+    };    
+  };
+  class SRP_Magazine_Pouch_1_Black: SRP_Magazine_Pouch_1_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_AR_MagPouch_1_Black_CO.paa"
+    };    
+  };
+  class SRP_Magazine_Pouch_1_Tan: SRP_Magazine_Pouch_1_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_AR_MagPouch_1_Tan_CO.paa"
+    };    
+  };
+  class SRP_Empty_MagPouch_Green: SRP_Empty_MagPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Empty_MagPouch_Green_CO.paa"
+    };    
+  };
+  class SRP_Empty_MagPouch_Black: SRP_Empty_MagPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Empty_MagPouch_Black_CO.paa"
+    };    
+  };
+  class SRP_Empty_MagPouch_Tan: SRP_Empty_MagPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\SRP_Empty_MagPouch_Tan_CO.paa"
+    };    
+  };
+  class SRP_UtilityPouch_Green: SRP_UtilityPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_green_co.paa"
+    };    
+  };
+  class SRP_UtilityPouch_Black: SRP_UtilityPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_black_co.paa"
+    };    
+  };
+  class SRP_UtilityPouch_Tan: SRP_UtilityPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Tan_co.paa"
+    };    
+  };
+  class SRP_HeavyPouch_Green: SRP_HeavyPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Heavy_Green_CO.paa"
+    };    
+  };
+  class SRP_HeavyPouch_Black: SRP_HeavyPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Heavy_Black_CO.paa"
+    };    
+  };
+  class SRP_HeavyPouch_Tan: SRP_HeavyPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Heavy_Tan_CO.paa"
+    };    
+  };
+  class SRP_MediumPouch_Green: SRP_MediumPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_green_co.paa"
+    };    
+  };
+  class SRP_MediumPouch_Black: SRP_MediumPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_black_co.paa"
+    };    
+  };
+  class SRP_MediumPouch_Tan: SRP_MediumPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Tan_co.paa"
+    };    
+  };
+  class SRP_TacoPouch_Green: SRP_TacoPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\tacticalbelt_Green_co.paa"
+    };    
+  };
+  class SRP_TacoPouch_Black: SRP_TacoPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\tacticalbelt_Black_co.paa"
+    };    
+  };
+  class SRP_TacoPouch_Tan: SRP_TacoPouch_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\vests\data\tacticalbelt_Tan_co.paa"
+    };    
+  };
 
 
 
@@ -2304,521 +2933,4 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\hunting_vest_Leather_co.paa"
 		};
 	};
-
-
-
-
-
-
-  //=================================== MAIN MOD VESTS
-
-  class SRP_Tac_Vest_Black: SRP_Tac_Vest_ColorBase
-	{
-    scope=2;	
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-      "Survivalists_Retextures\characters\vests\data\Tac_vest_CO.paa"
-		};	
-	};
-	class SRP_Tac_Vest_Tan: SRP_Tac_Vest_ColorBase
-	{
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Tan_Co.paa"
-		};	
-	};
-  class SRP_Tac_Vest_Sheriff: SRP_Tac_Vest_ColorBase
-	{
-    scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Sheriff_CA.paa"
-		};	
-		hiddenSelectionsMaterials[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Tac_Vest_Sheriff.rvmat"
-		};	
-	};
-  class SRP_Tac_Vest_Green: SRP_Tac_Vest_ColorBase
-	{
-    scope=2;	
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-      "Survivalists_Retextures\characters\vests\data\Tac_vest_Green_CO.paa"
-		};	
-	};
-	class SRP_Ratnik_Tan: SRP_Ratnik_ColorBase
-	{
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Tan_CO.paa"
-		};	
-	};
-	class SRP_Ratnik_Black: SRP_Ratnik_ColorBase
-	{
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Black_CO.paa"
-		};	
-	};
-  class SRP_Ratnik_Green: SRP_Ratnik_ColorBase
-	{
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
-		};	
-	};
-  class SRP_Ratnik_Armor_Black: SRP_Ratnik_Armor_ColorBase
-	{
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Black_CO.paa"
-		};	
-	};
-  class SRP_Ratnik_Armor_Tan: SRP_Ratnik_Armor_ColorBase
-	{
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Tan_CO.paa"
-		};	
-	};
-  class SRP_Ratnik_Armor_Green: SRP_Ratnik_Armor_ColorBase
-	{
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
-		};	
-	};
-  class SRP_Light_Ratnik_Black: SRP_Light_Ratnik_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Black_CO.paa"
-		};	
-	};
-	class SRP_Light_Ratnik_Tan: SRP_Light_Ratnik_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Tan_CO.paa"
-		};	
-	};
-  class SRP_Light_Ratnik_Green: SRP_Light_Ratnik_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
-		};	
-	};
-	class SRP_Chestrig_Tan: SRP_Chestrig_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Chestrig_tan_CO.paa"
-		};	
-	};
-	class SRP_Chestrig_Black: SRP_Chestrig_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Chestrig_Black_CO.paa"
-		};	
-	};
-  class SRP_Chestrig_Green: SRP_Chestrig_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Chestrig_Green_CO.paa"
-		};	
-	};
-	class SRP_Army_Vest_1_Black: SRP_Army_Vest_1_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Army_Vest_1_Black_CO.paa"
-		};	
-	};
-	class SRP_Army_Vest_1_Tan: SRP_Army_Vest_1_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Army_Vest_1_Tan_CO.paa"
-		};	
-	};
-  class SRP_Army_Vest_1_Green: SRP_Army_Vest_1_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Army_Vest_1_Green_CO.paa"
-		};	
-	};
-	class SRP_Army_Vest_2_Black: SRP_Army_Vest_2_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Army_Vest_2_Black_CO.paa"
-		};	
-	};
-	class SRP_Army_Vest_2_Tan: SRP_Army_Vest_2_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Army_Vest_2_Tan_CO.paa"
-		};	
-	};
-  class SRP_Army_Vest_2_Green: SRP_Army_Vest_2_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Army_Vest_2_Green_CO.paa"
-		};	
-	};
-	class SRP_JPC_Vest_Black: SRP_JPC_Vest_ColorBase
-	{
-    scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\JPC_Vest_Black_CO.paa"
-		};	
-	};
-	class SRP_JPC_Vest_Tan: SRP_JPC_Vest_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\JPC_Vest_Tan_CO.paa"
-		};	
-	};
-  class SRP_JPC_Vest_Green: SRP_JPC_Vest_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\JPC_Vest_Green_CO.paa"
-		};	
-	};
-	class SRP_Tac_Tec_Vest_Tan: SRP_Tac_Tec_Vest_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Tac_Tec_Tan_CO.paa"
-		};	
-	};
-	class SRP_Tac_Tec_Vest_Black: SRP_Tac_Tec_Vest_ColorBase
-	{
-    scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Tac_Tec_Black_CO.paa"
-		};	
-	};
-  class SRP_Tac_Tec_Vest_Green: SRP_Tac_Tec_Vest_ColorBase
-	{
-    scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\vests\data\Tac_Tec_Green_CO.paa"
-		};	
-	};
-
-
-  class SRP_Small_Bottle_Green: SRP_Small_Bottle_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Small_Bottle_Green_CO.paa"
-    };    
-  };   
-  class SRP_Small_Bottle_Black: SRP_Small_Bottle_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Small_Bottle_Black_CO.paa"
-    };    
-  };
-  class SRP_Small_Bottle_Tan: SRP_Small_Bottle_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Small_Bottle_Tan_CO.paa"
-    };    
-  };
-
-  //=================================== MAIN MOD VEST POUCHES
-
-  class SRP_Map_Pouch_Green: SRP_Map_Pouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Map_Pouch_Green_CO.paa"
-    };    
-  };
-  class SRP_Map_Pouch_Black: SRP_Map_Pouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Map_Pouch_Black_CO.paa"
-    };    
-  };
-  class SRP_Map_Pouch_Tan: SRP_Map_Pouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Map_Pouch_Tan_CO.paa"
-    };    
-  };
-  class SRP_Pistol_Mag_Pouch_Green: SRP_Pistol_Mag_Pouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Pistol_MagPouch_Green_CO.paa"
-    };    
-  };
-  class SRP_Pistol_Mag_Pouch_Black: SRP_Pistol_Mag_Pouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Pistol_MagPouch_Black_CO.paa"
-    };    
-  };
-  class SRP_Pistol_Mag_Pouch_Tan: SRP_Pistol_Mag_Pouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Pistol_MagPouch_Tan_CO.paa"
-    };    
-  };
-  class SRP_IFAK_Green: SRP_IFAK_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_IFAK_Green_CO.paa"
-    };    
-  };
-  class SRP_IFAK_Black: SRP_IFAK_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_IFAK_Black_CO.paa"
-    };    
-  };
-  class SRP_IFAK_Tan: SRP_IFAK_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_IFAK_Tan_CO.paa"
-    };    
-  };
-  class SRP_Magazine_Pouch_1_Green: SRP_Magazine_Pouch_1_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_AR_MagPouch_1_Green_CO.paa"
-    };    
-  };
-  class SRP_Magazine_Pouch_1_Black: SRP_Magazine_Pouch_1_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_AR_MagPouch_1_Black_CO.paa"
-    };    
-  };
-  class SRP_Magazine_Pouch_1_Tan: SRP_Magazine_Pouch_1_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_AR_MagPouch_1_Tan_CO.paa"
-    };    
-  };
-  class SRP_Empty_MagPouch_Green: SRP_Empty_MagPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Empty_MagPouch_Green_CO.paa"
-    };    
-  };
-  class SRP_Empty_MagPouch_Black: SRP_Empty_MagPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Empty_MagPouch_Black_CO.paa"
-    };    
-  };
-  class SRP_Empty_MagPouch_Tan: SRP_Empty_MagPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\SRP_Empty_MagPouch_Tan_CO.paa"
-    };    
-  };
-  class SRP_UtilityPouch_Green: SRP_UtilityPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_green_co.paa"
-    };    
-  };
-  class SRP_UtilityPouch_Black: SRP_UtilityPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_black_co.paa"
-    };    
-  };
-  class SRP_UtilityPouch_Tan: SRP_UtilityPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Tan_co.paa"
-    };    
-  };
-  class SRP_HeavyPouch_Green: SRP_HeavyPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Heavy_Green_CO.paa"
-    };    
-  };
-  class SRP_HeavyPouch_Black: SRP_HeavyPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Heavy_Black_CO.paa"
-    };    
-  };
-  class SRP_HeavyPouch_Tan: SRP_HeavyPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Heavy_Tan_CO.paa"
-    };    
-  };
-  class SRP_MediumPouch_Green: SRP_MediumPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_green_co.paa"
-    };    
-  };
-  class SRP_MediumPouch_Black: SRP_MediumPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_black_co.paa"
-    };    
-  };
-  class SRP_MediumPouch_Tan: SRP_MediumPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\srp_pouchesvest_Tan_co.paa"
-    };    
-  };
-  class SRP_TacoPouch_Green: SRP_TacoPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\tacticalbelt_Green_co.paa"
-    };    
-  };
-  class SRP_TacoPouch_Black: SRP_TacoPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\tacticalbelt_Black_co.paa"
-    };    
-  };
-  class SRP_TacoPouch_Tan: SRP_TacoPouch_ColorBase
-  {
-    scope=2;
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Retextures\characters\vests\data\tacticalbelt_Tan_co.paa"
-    };    
-  };
 };

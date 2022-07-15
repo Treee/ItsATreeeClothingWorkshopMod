@@ -123,7 +123,7 @@ class CfgVehicles
     rootClassName="PressVest";
     colorVariants[]=
     {
-      "Black"     
+      "Black",   
       "Blue",
       "LightBlue",      
       "ATFBlue",      
@@ -559,6 +559,13 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
+    rootClassName="SRP_Tac_Vest";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		itemSize[]={5,5};
 		quickBarBonus=2;
     itemBehaviour=2;
@@ -745,6 +752,13 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
+    rootClassName="SRP_Ratnik";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		itemSize[]={7,7};
 		itemBehaviour=0;
 		quickBarBonus=2;
@@ -933,6 +947,13 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
+    rootClassName="SRP_Light_Ratnik";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		itemSize[]={6,6};
     itemBehaviour=0;
 		repairableWithKits[]={3};
@@ -1118,6 +1139,13 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
+    rootClassName="SRP_Chestrig";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		itemSize[]={4,4};
     itemBehaviour=2;
 		repairableWithKits[]={3};
@@ -1289,6 +1317,13 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
+    rootClassName="SRP_Army_Vest_1";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		quickBarBonus=2;
     itemBehaviour=2;
 		repairableWithKits[]={3};
@@ -1475,6 +1510,13 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
+    rootClassName="SRP_Army_Vest_2";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		quickBarBonus=2;
     itemBehaviour=2;
 		repairableWithKits[]={3};
@@ -1657,6 +1699,13 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
+    rootClassName="SRP_JPC_Vest";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		quickBarBonus=2;
     itemBehaviour=2;
 		repairableWithKits[]={3};
@@ -1838,6 +1887,13 @@ class CfgVehicles
       "LargePouch4",
       "LargePouch5",
 		};
+    rootClassName="SRP_Tac_Tec_Vest";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		quickBarBonus=2;
     itemBehaviour=2;
 		repairableWithKits[]={3};
@@ -2014,6 +2070,13 @@ class CfgVehicles
 			"Vest",
 			"Clothing"
 		};
+    rootClassName="SRP_Ratnik_Armor";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",      
+      "Black",      
+    };
 		weight=12000;
 		itemSize[]={2,3};
 		quickBarBonus=2;

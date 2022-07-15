@@ -57,7 +57,7 @@ class CfgVehicles
 	{
 		itemSize[]={1,2};
 		itemsCargoSize[]={1,1};
-    rootClassName="BallisticHelmet";
+    rootClassName="BaseballCap";
     colorVariants[]=
     {
       "Blue",
@@ -2174,7 +2174,7 @@ class CfgVehicles
     {
       "Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn.rvmat"
     };	
-    rootClassName="Altyn";
+    rootClassName="SRP_CombatHelmetAltyn";
     colorVariants[]=
     {
       "Black",
@@ -2268,7 +2268,7 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_AltynHelmetVisor_ColorBase: Inventory_Base
+  class SRP_AltynHelmetVisor_ColorBase: BalaclavaMask_ColorBase
 	{
 		scope=0;
 		displayName="Altyn Helmet Visor";
@@ -2290,7 +2290,7 @@ class CfgVehicles
     {
       "Survivalists_Mods\characters\headgear\data\srp_combathelmetaltyn.rvmat"
     };	
-    rootClassName="SRP_CombatHelmetVisor";
+    rootClassName="SRP_AltynHelmetVisor";
     colorVariants[]=
     {
       "Black",
@@ -3013,6 +3013,12 @@ class CfgVehicles
 			"Clothing",
 			"Headgear"
 		};
+    rootClassName="SRP_Cowboy_Hat";
+    colorVariants[]=
+    {
+      "Pink",
+      "Purple",      
+    };	
 		itemSize[]={2,1};
 		varWetMax=0.249;
 		heatIsolation=0.5;
@@ -3243,13 +3249,8 @@ class CfgVehicles
 			"Clothing",
 			"Headgear"
 		};
-    rootClassName="SRP_Cowboy_Hat_Carl";
-    colorVariants[]=
-    {
-      "Brown",
-      "Pink",
-      "Purple",
-    };
+    rootClassName="";
+    colorVariants[]={};
 		itemSize[]={2,2};
 		varWetMax=0.249;
 		heatIsolation=0.5;

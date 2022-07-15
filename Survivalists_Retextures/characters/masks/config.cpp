@@ -26,9 +26,6 @@ class CfgVehicles
   class SRP_FacialHairBeard_Colorbase;
   class SRP_FacialHairChops_Colorbase;
 
-
-
-
 	class SurgicalMask_Black: SurgicalMask
 	{
 		scope=2;
@@ -51,7 +48,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\masks\data\vinitagehockeym_co2907.paa"
 		};
 	};
-
   class Balaclava3Holes_MTP: Balaclava3Holes_ColorBase
 	{
 		scope=2;
