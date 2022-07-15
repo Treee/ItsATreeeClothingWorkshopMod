@@ -25,6 +25,12 @@ class CfgVehicles
   class NBCGloves_Blue: NBCGloves_ColorBase
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\nbc_gloves_blue_co.paa",
@@ -35,6 +41,12 @@ class CfgVehicles
   class NBCGloves_Gray: NBCGloves_ColorBase
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"\dz\characters\gloves\Data\NBC_Gloves_grey_co.paa",
@@ -45,11 +57,17 @@ class CfgVehicles
 	class NBCGloves_Yellow: NBCGloves_ColorBase
 	{
 		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
 		hiddenSelectionsTextures[]=
 		{
-			"\dz\characters\gloves\Data\NBC_Gloves_yellow_co.paa",
-			"\dz\characters\gloves\Data\NBC_Gloves_yellow_co.paa",
-			"\dz\characters\gloves\Data\NBC_Gloves_yellow_co.paa"
+			"Survivalists_Retextures\characters\gloves\data\nbc_gloves_yellow_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\nbc_gloves_yellow_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\nbc_gloves_yellow_co.paa"
 		};
 	};
 
