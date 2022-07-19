@@ -141,6 +141,17 @@ class ActionSwitchPatchFlagOption extends ActionContinuousBase
   TStringArray GetPatchFlagOptions()
   {
     return {
+      "SRP_PatchFlag_Mayor",
+      "SRP_PatchFlag_Blacksmith",
+      "SRP_PatchFlag_Carpenter",
+      "SRP_PatchFlag_Herbologist",
+      "SRP_PatchFlag_Medic",
+      "SRP_PatchFlag_Mutant",
+      "SRP_PatchFlag_Pirate",
+      "SRP_PatchFlag_Resident",
+      "SRP_PatchFlag_Security",
+      "SRP_PatchFlag_Tailor",
+      "SRP_PatchFlag_Trader",
       "SRP_PatchFlag_Afghanistan",
       "SRP_PatchFlag_Albania",
       "SRP_PatchFlag_Algeria",

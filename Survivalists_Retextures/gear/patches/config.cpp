@@ -32,6 +32,117 @@ class CfgVehicles
 		};	
   };
 
+  class SRP_PatchFlag_Mayor: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Mayor";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\MayorPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Blacksmith: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Blacksmith";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\BlacksmithPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Carpenter: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Carpenter";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\CarpenterPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Herbologist: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Herbologist";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\HerbologistPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Medic: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Medic";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\MedicPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Mutant: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Mutant";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\MutantPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Pirate: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Pirate";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\PiratePatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Resident: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Resident";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\ResidentPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Security: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Security";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\SecurityPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Tailor: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Tailor";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\TailorPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Trader: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Trader";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\TraderPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+
 	class SRP_BGSDID_Patch: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
