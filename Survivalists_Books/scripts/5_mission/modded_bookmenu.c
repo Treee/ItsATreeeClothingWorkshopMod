@@ -20,4 +20,13 @@ modded class BookMenu
 
 		return layoutRoot;
 	}
+
+  void ~BookMenu()
+  {
+    MissionGameplay mission = MissionGameplay.Cast( GetGame().GetMission() );
+    if( mission )
+    {
+      mission.PlayerControlEnable(false);
+    }
+  }
 };
