@@ -10,11 +10,13 @@ modded class PlayerBase
 
   protected bool m_IsInBioZone = false;
   protected bool m_IsNearComfortHeatSource = false;
+  protected bool m_TirednessSprintOverride = false;
 
   override void Init()
   {
     super.Init();
     RegisterNetSyncVariableFloat("m_TotalTiredness", 0, 65536);
+    RegisterNetSyncVariableBool("m_TirednessSprintOverride");
   }
 
   override void OnVariablesSynchronized()
@@ -120,7 +122,7 @@ modded class PlayerBase
         }
       }
     }
-    if (GetTotalTiredness() > 24500) // roughly 75% tiredness
+    if (GetTotalTiredness() > 23000 && !IsTirednessSprintOverriden()) // roughly 75% tiredness
     {
       return false;
     }
@@ -307,43 +309,6 @@ modded class PlayerBase
 
     return vision;
   }
-
-  // bool SRPIgnoreFallingDamage()
-  // {
-  //   bool ignoreFalling = false;
-  //   EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
-  //   EntityAI mutantAttachment = GetInventory().FindAttachment(InventorySlots.HEAD);
-
-  //   if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
-  //     ignoreFalling = true;
-  //   else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
-  //     ignoreFalling = true;
-  //   else if (suitAttachment && (suitAttachment.GetType() == "DUB_Lich" || suitAttachment.IsInherited(DUB_Lich)))
-  //     ignoreFalling = true;
-  //   else if ( mutantAttachment && mutantAttachment.GetType() == "DUB_Observerhead")
-  //     ignoreFalling = true;
-  //   else if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 86893 && GetGame().GetWorld().IsNight())
-  //     ignoreFalling = true;
-  //   else if (GetGame().GetWaterDepth(GetPosition()) > 0 )
-  //     ignoreFalling = true;
-  //   return ignoreFalling;
-  // }
-
-  // float SRPGetJumpHeight()
-  // {
-  //   float height = 2.6; // default
-  //   EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
-
-  //   if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
-	// 	{
-	// 		height = 15;
-	// 	}
-  //   else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
-	// 	{
-	// 		height = 15;
-	// 	}
-  //   return height;
-  // }
 
   bool CheckRecipeCraftingValidity(CraftedItem craftedItem)
   {
@@ -580,6 +545,16 @@ modded class PlayerBase
   void SetTotalTiredness(float tiredness)
   {
     m_TotalTiredness = tiredness;
+  }
+
+  bool IsTirednessSprintOverriden()
+  {
+    return m_TirednessSprintOverride;
+  }
+
+  void SetTirednessSprintOverride(bool overrideSprint)
+  {
+    m_TirednessSprintOverride = overrideSprint;
   }
 
   void SetIsNearComfortHeatSource(bool isNearComfort)
