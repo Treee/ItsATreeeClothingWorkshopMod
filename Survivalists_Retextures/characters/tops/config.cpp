@@ -45,6 +45,7 @@ class CfgVehicles
   // modded classes
   class DUB_Monkrobe;
   class SRP_Sweater_ColorBase;
+  class DUB_Duster;
 
   class NBCJacketBase_Gray: NBCJacketBase
 	{
@@ -2463,8 +2464,24 @@ class CfgVehicles
 		};
 	};
 
-
-
+  class DUB_Duster_Cow: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_cow_co.paa"
+    };
+	};
+  class DUB_Duster_Python: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_Python_co.paa"
+    };
+	};
 
   //================================================ REMOVE EVENTUALLY
 
