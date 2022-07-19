@@ -246,6 +246,19 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_banditryguide_co.paa"
 		};
 	};
+  class SRP_ReadableBook_NavigationProtocols: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Navigation in the Apocalypse";
+		author="Huntor";
+		file="Survivalists_Books\gear\books\data\book_navigationinapocalypse.html";
+		displayName="Navigation in the Apocalypse";
+		descriptionShort="Neat letters fill the pages of this book.";
+		hiddenSelectionsTextures[]=
+		{
+		  "Survivalists_Books\gear\books\data\book_navigationinapocalypse_co.paa"
+		};
+	};
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
