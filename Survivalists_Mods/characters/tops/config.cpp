@@ -604,6 +604,16 @@ class CfgVehicles
       "Purp",
     };
   };
+  class DUB_Duster: Clothing
+  {
+    rootClassName="DUB_Duster";
+    colorVariants[]=
+    {      
+      "Black",
+      "Cow",
+      "Python"
+    };
+  };
 
 
   class Armband_ColorBase: Clothing
