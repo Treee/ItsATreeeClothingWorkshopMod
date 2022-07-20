@@ -4,7 +4,7 @@ class SRP_Icepack extends Heatpack
 	{
 		if (GetGame().IsServer())
 		{
-			SetTemperature(10);
+			SetTemperature(-200);
 		}
 	}
 	
@@ -12,7 +12,7 @@ class SRP_Icepack extends Heatpack
 	{
 		if (GetGame().IsServer())
 		{
-			SetTemperature(10);
+			SetTemperature(-200);
 		}
 	}
 };

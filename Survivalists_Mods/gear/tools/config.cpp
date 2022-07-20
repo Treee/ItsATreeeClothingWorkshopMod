@@ -182,7 +182,7 @@ class CfgVehicles
     displayName="Advanced Ice Pack";
 		descriptionShort="This one gets cold cold cold.";
 		varTemperatureMax=10;
-    varEnergyMax=2000;
+    varEnergyMax=1200;
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -190,6 +190,12 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\tools\data\ice_pack_co.paa"
+		};
+    class EnergyManager
+		{
+			energyAtSpawn=1200;
+			energyUsagePerSecond=1;
+			updateInterval=20;
 		};
 	};
 
