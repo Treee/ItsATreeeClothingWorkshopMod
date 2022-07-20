@@ -27,59 +27,8 @@ class CfgVehicles
   // ---------------------------- BASE GAME OVERRIDE
 	class Heatpack: Inventory_Base
 	{
-		scope=2;
-		displayName="$STR_CfgVehicles_Heatpack0";
-		descriptionShort="$STR_CfgVehicles_Heatpack1";
-		model="\DZ\gear\tools\Heatpack.p3d";
-		animClass="Knife";
-		rotationFlags=17;
 		itemSize[]={1,1};
-		varEnergyInit=1000;
-		varEnergyMin=0;
-		varEnergyMax=1000;
 		varTemperatureMax=100;
-		weight=150;
-		fragility=0.0099999998;
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=30;
-					healthLevels[]=
-					{
-						{1,{"DZ\gear\tools\data\heat_pack.rvmat"}},
-            {0.69999999,{"DZ\gear\tools\data\heat_pack.rvmat"}},
-            {0.5,{"DZ\gear\tools\data\heat_pack_damage.rvmat"}},
-            {0.30000001,{"DZ\gear\tools\data\heat_pack_damage.rvmat"}},
-            {0,{"DZ\gear\tools\data\heat_pack_destruct.rvmat"	}}
-					};
-				};
-			};
-		};
-		class EnergyManager
-		{
-			energyAtSpawn=1200;
-			energyUsagePerSecond=1;
-			updateInterval=40;
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="pickUpBloodBag_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="bloodbag_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
 	};
 
   class FieldShovel: Inventory_Base
@@ -220,12 +169,28 @@ class CfgVehicles
 
   // ---------------------------- Custom Stuff
 
-  class SRP_Heatpack: Heatpack  // HeatpackBern
+  class SRP_Heatpack: Heatpack
 	{
 		scope=2;
     displayName="Advanced Heat Pack";
 		descriptionShort="This one gets hot hot hot.";
-		varTemperatureMax=250;
+    varEnergyMax=2000;
+	};
+  class SRP_Icepack: Heatpack 
+	{
+		scope=2;
+    displayName="Advanced Ice Pack";
+		descriptionShort="This one gets cold cold cold.";
+		varTemperatureMax=10;
+    varEnergyMax=2000;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\ice_pack_co.paa"
+		};
 	};
 
   // carpentry or weapon smithing
