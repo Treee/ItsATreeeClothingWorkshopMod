@@ -142,6 +142,156 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
+  class SRP_PatchFlag_Barber: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Barber";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\BarberPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Biologist: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Biologist";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\BiologistPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Brewer: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Brewer";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\BrewerPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Builder: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Builder";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\BuilderPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Corporal: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Corporal";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\CplPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Drug: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Drug";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\DrugPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Junker: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Junker";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\JunkerPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Miner: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Miner";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\MinerPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Neurologist: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Neurologist";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\NeurologistPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Physicist: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Physicist";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\PhysicistPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Private: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Private";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\PvtPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Scrapper: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Scrapper";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\ScrapperPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Seaman: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Seaman";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\SeamanPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Seaman1: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Seaman1";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\SemenPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_PatchFlag_Sergeant: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Sergeant";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\SgtPatch_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
 
 	class SRP_BGSDID_Patch: SRP_PatchFlag_ColorBase
 	{

@@ -408,6 +408,8 @@ class SRP_WeaponBluntWarHammer_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBluntKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponBluntMacerator_Kit extends SRP_IntermediateCraftingKitBase{};
 
+class SRP_AccessoryRing_Kit extends SRP_IntermediateCraftingKitBase{};
+
 class SRP_Dynamite_Stick_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_StreetSign_Kit extends SRP_IntermediateCraftingKitBase{};

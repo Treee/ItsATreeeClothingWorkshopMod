@@ -123,13 +123,19 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=10;
   };
-
-
-
+  class Slot_SRP_RawCrystal1
+  {
+		name="SRP_RawCrystal1";
+		displayName="Raw Crystal";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_RawCrystal2
+  {
+		name="SRP_RawCrystal2";
+		displayName="Raw Crystal";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
 };
-
-
-
 
 class CfgNonAIVehicles
 {

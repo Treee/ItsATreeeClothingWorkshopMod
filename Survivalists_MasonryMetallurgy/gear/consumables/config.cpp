@@ -1606,7 +1606,11 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
-		inventorySlot[]={};
+		inventorySlot[]=
+    {
+      "SRP_RawCrystal1",
+      "SRP_RawCrystal2"
+    };
     hiddenSelections[]=
 		{
 			"zbytek"

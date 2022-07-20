@@ -15,6 +15,9 @@ class CfgPatches
 class CfgVehicles
 {
 	class Clothing;
+
+  class SRP_KitBase;
+
 	class SRP_Wedding_Ring: Clothing
 	{
 		scope=2;
@@ -63,6 +66,20 @@ class CfgVehicles
 					};
 				};
 			};
+		};
+	};
+
+  class SRP_AccessoryRing_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Accessory Kit - Ring";
+		descriptionShort="An accessory kit. Used to make rings.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalRod1",
+      "SRP_RawCrystal1",
+      "Material_MetalWire",
 		};
 	};
 };
