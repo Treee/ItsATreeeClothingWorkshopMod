@@ -2482,6 +2482,24 @@ class CfgVehicles
       "Survivalists_Retextures\characters\tops\data\Duster_Python_co.paa"
     };
 	};
+  class DUB_Duster_OD: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_od_co.paa"
+    };
+	};
+  class DUB_Duster_Pink: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_pink_co.paa"
+    };
+	};
 
   //================================================ REMOVE EVENTUALLY
 

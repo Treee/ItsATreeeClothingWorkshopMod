@@ -611,7 +611,9 @@ class CfgVehicles
     {      
       "Black",
       "Cow",
-      "Python"
+      "Python",
+      "OD",
+      "Pink"
     };
   };
 
