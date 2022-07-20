@@ -2,7 +2,7 @@ modded class PlantBase
 {
 	void Harvest( PlayerBase player )
 	{
-    if (player && player.IsInBioZone() && m_CropsType == "Cannabis")
+    if (player && player.IsInBioZone() && (m_CropsType == "Cannabis" || m_CropsType == "Pumpkin"))
     {
       if ( !IsSpoiled() )
       {
