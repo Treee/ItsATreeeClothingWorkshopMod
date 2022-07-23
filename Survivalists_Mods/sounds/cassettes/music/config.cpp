@@ -191,6 +191,43 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\cassettes\music\data\First_Day_of_My_Life_Ft_Pancakes_bell_By_Skylar_Wolfe.ogg",1}
 		};
 	};
+
+  class SRPRadio_SkylarWolfe_JustLikeAPill_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Just_Like_a_Pill_By_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_WickedGame_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Wicked_Game_Sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_TenneseeWhiskey_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Tennesee_Whiskey_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_HeroSung_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Hero_Sung_By_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_DancingInTheMoonlight_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Dancing_In_The_Moonlight_Skylar_Wolfe.ogg",1}
+		};
+	};
+
   class SRPRadio_Pinkerton_TheShadow_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]=
@@ -453,6 +490,44 @@ class CfgSoundSets
 			"SRPRadio_SkylarWolfe_FirstDayOfMyLife_Shader1"
 		};
 	};
+
+  class SRPRadio_SkylarWolfe_JustLikeAPill_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_JustLikeAPill_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_WickedGame_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_WickedGame_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_TenneseeWhiskey_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_TenneseeWhiskey_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_HeroSung_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_HeroSung_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_DancingInTheMoonlight_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_DancingInTheMoonlight_Shader1"
+		};
+	};
+
+
   class SRPRadio_Pinkerton_TheShadow_SoundSet1
 	{
 		soundShaders[]=

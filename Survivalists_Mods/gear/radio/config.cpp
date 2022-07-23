@@ -625,6 +625,58 @@ class CfgVehicles
 			soundSet="SRPRadio_SkylarWolfe_FirstDayOfMyLife_SoundSet1";
 		};
 	}; 
+
+  class SRPRadio_CassetteTape_SkylarWolfe_JustLikeAPill: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Just Like A Pill";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_JustLikeAPill_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_WickedGame: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Wicked Game";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_WickedGame_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_TenneseeWhiskey: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Tennesee Whiskey";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_TenneseeWhiskey_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_HeroSung: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Hero Sung";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_HeroSung_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_DancingInTheMoonlight: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Dancing In The Moonlight";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_DancingInTheMoonlight_SoundSet1";
+		};
+	}; 
+
   class SRPRadio_CassetteTape_Pinkerton_TheShadow: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
