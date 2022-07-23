@@ -472,6 +472,22 @@ class CfgVehicles
       "Leather",      
     };
   };
+  class LeatherShirt_ColorBase: Clothing
+  {
+    rootClassName="LeatherShirt";
+    colorVariants[]=
+    {
+      "Natural",
+      "Choco",
+      "Lime",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Storm",
+      "Yellow",
+    };
+  };
+
   class MedicalScrubsShirt_ColorBase: Clothing
 	{
     rootClassName="MedicalScrubsShirt";
@@ -613,7 +629,13 @@ class CfgVehicles
       "Cow",
       "Python",
       "OD",
-      "Pink"
+      "Pink",
+      "Pink1",
+      "Chocolate",
+      "Forest",
+      "Lavender",
+      "Navy",
+      "Red",
     };
   };
 

@@ -104,6 +104,14 @@ class CfgVehicles
       "Winter",
       "Black",
       "Grey",
+      "MTP",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
+      "TigerCamo"
     };
   };
   class CanvasPants_ColorBase: Clothing
@@ -230,6 +238,13 @@ class CfgVehicles
       "Beige",
       "Brown",
       "Black",
+      "Choco",
+      "Lime",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Storm",
+      "Yellow",
     };
   };
   class MedicalScrubsPants_ColorBase: Clothing

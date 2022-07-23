@@ -185,7 +185,14 @@ class CfgVehicles
       "Black",
       "Natural",
       "Brown",
-      "Beige",      
+      "Beige",  
+      "Choco",
+      "Lime",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Storm",
+      "Yellow",    
     };
   };
   class Sneakers_ColorBase: Clothing

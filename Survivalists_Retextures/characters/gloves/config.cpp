@@ -19,8 +19,9 @@ class CfgVehicles
 	class WorkingGloves_ColorBase;
 	class NBCGloves_ColorBase;
 	class TacticalGloves_ColorBase;
-  class SRP_BoxingGloves_Colorbase;
+  class LeatherGloves_ColorBase;
 
+  class SRP_BoxingGloves_Colorbase;
 
   class NBCGloves_Blue: NBCGloves_ColorBase
 	{
@@ -257,6 +258,69 @@ class CfgVehicles
 		};
 	};
 
+  class LeatherGloves_Choco: LeatherGloves_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\leather_gloves_choco_co.paa"
+		};
+	};
+  class LeatherGloves_Lime: LeatherGloves_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Lime_co.paa"
+		};
+	};
+  class LeatherGloves_Orange: LeatherGloves_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Orange_co.paa"
+		};
+	};
+  class LeatherGloves_Pink: LeatherGloves_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Pink_co.paa"
+		};
+	};
+  class LeatherGloves_Purple: LeatherGloves_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Purple_co.paa"
+		};
+	};
+  class LeatherGloves_Storm: LeatherGloves_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Storm_co.paa"
+		};
+	};
+  class LeatherGloves_Yellow: LeatherGloves_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Yellow_co.paa"
+		};
+	};
 
   //================================ REMOVE THESE EVENTUALLY
 	class SRP_NBCGloves_Blue: NBCGloves_ColorBase

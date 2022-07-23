@@ -91,7 +91,14 @@ class CfgVehicles
       "Natural",
       "Beige",
       "Black",
-      "Brown"
+      "Brown",
+      "Choco",
+      "Lime",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Storm",
+      "Yellow",
     };
   };
 

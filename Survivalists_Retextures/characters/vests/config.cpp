@@ -24,6 +24,7 @@ class CfgVehicles
 	class PlateCarrierHolster;
 	class UKAssVest_ColorBase;
   class HuntingVest;
+  class LeatherStorageVest_ColorBase;
 
   // Pouches
   class SRP_Empty_MagPouch_ColorBase;
@@ -48,6 +49,7 @@ class CfgVehicles
   class SRP_Tac_Tec_Vest_ColorBase;
   class SRP_Small_Bottle_ColorBase;
 
+  class DUB_Poncho;
 
   class PlateCarrierVest_Trader: PlateCarrierVest
 	{
@@ -1124,6 +1126,115 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\hunting_vest_Leather_co.paa"
 		};
 	};
+
+
+  class LeatherStorageVest_Choco: LeatherStorageVest_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\crafted_leather_vest_choco_co.paa"
+		};
+	};
+  class LeatherStorageVest_Lime: LeatherStorageVest_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\crafted_leather_vest_Lime_co.paa"
+		};
+	};
+  class LeatherStorageVest_Orange: LeatherStorageVest_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\crafted_leather_vest_Orange_co.paa"
+		};
+	};
+  class LeatherStorageVest_Pink: LeatherStorageVest_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\crafted_leather_vest_Pink_co.paa"
+		};
+	};
+  class LeatherStorageVest_Purple: LeatherStorageVest_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\crafted_leather_vest_Purple_co.paa"
+		};
+	};
+  class LeatherStorageVest_Storm: LeatherStorageVest_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\crafted_leather_vest_Storm_co.paa"
+		};
+	};
+  class LeatherStorageVest_Yellow: LeatherStorageVest_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\crafted_leather_vest_Yellow_co.paa"
+		};
+	};
+
+  class DUB_Poncho_Flowers: DUB_Poncho
+	{
+		scope = 2;
+		hiddenSelections[] = {"vest"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\poncho_flowers_co.paa"};
+	};
+  class DUB_Poncho_PinkFlowers: DUB_Poncho
+	{
+		scope = 2;
+		hiddenSelections[] = {"vest"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\poncho_flowers_Pink_co.paa"};
+	};
+  class DUB_Poncho_PurpleFlowers: DUB_Poncho
+	{
+		scope = 2;
+		hiddenSelections[] = {"vest"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\poncho_flowers_purple_co.paa"};
+	};
+  class DUB_Poncho_PinkPurple: DUB_Poncho
+	{
+		scope = 2;
+		hiddenSelections[] = {"vest"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\poncho_pinkpurple_co.paa"};
+	};
+  class DUB_Poncho_PurpleBlue: DUB_Poncho
+	{
+		scope = 2;
+		hiddenSelections[] = {"vest"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\poncho_PurpleBlue_co.paa"};
+	};
+  class DUB_Poncho_Rose: DUB_Poncho
+	{
+		scope = 2;
+		hiddenSelections[] = {"vest"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\poncho_Rose_co.paa"};
+	};
+  class DUB_Poncho_YellowRed: DUB_Poncho
+	{
+		scope = 2;
+		hiddenSelections[] = {"vest"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\poncho_YellowRed_co.paa"};
+	};
+
   //=================================== MAIN MOD VESTS
 
   class SRP_Tac_Vest_Black: SRP_Tac_Vest_ColorBase

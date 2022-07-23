@@ -206,7 +206,14 @@ class CfgVehicles
       "Natural",
       "Beige",
       "Brown",
-      "Black",      
+      "Black",
+      "Choco",
+      "Lime",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Storm",
+      "Yellow",
     };
   };
   class HuntingVest: Clothing
@@ -215,6 +222,26 @@ class CfgVehicles
     colorVariants[]=
     {
       "Leather",      
+    };
+  };
+
+
+  ///============== MODDED
+  class DUB_Poncho: Clothing
+	{
+    rootClassName="DUB_Poncho";
+    colorVariants[]=
+    {
+      "Blue",
+      "Flake",
+      "Pink",
+      "Flowers",
+      "PinkFlowers",
+      "PurpleFlowers",
+      "PinkPurple",
+      "PurpleBlue",
+      "Rose",
+      "YellowRed",      
     };
   };
 

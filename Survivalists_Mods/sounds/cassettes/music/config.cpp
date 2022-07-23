@@ -527,7 +527,6 @@ class CfgSoundSets
 		};
 	};
 
-
   class SRPRadio_Pinkerton_TheShadow_SoundSet1
 	{
 		soundShaders[]=

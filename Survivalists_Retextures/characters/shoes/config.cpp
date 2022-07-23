@@ -19,6 +19,7 @@ class CfgVehicles
 	class JungleBoots_ColorBase;
 	class NBCBootsBase;
   class Sneakers_ColorBase;
+  class LeatherShoes_ColorBase;
 
   class NBCBootsBase_Gray: NBCBootsBase
 	{
@@ -268,6 +269,70 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa",
 			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa",
 			"Survivalists_Retextures\characters\shoes\data\sneakers_whitepink_co.paa"
+		};
+	};
+
+  class LeatherShoes_Choco: LeatherShoes_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\shoes_leathermoccasins_choco_co.paa"
+		};
+	};
+  class LeatherShoes_Lime: LeatherShoes_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\shoes_leathermoccasins_Lime_co.paa"
+		};
+	};
+  class LeatherShoes_Orange: LeatherShoes_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\shoes_leathermoccasins_Orange_co.paa"
+		};
+	};
+  class LeatherShoes_Pink: LeatherShoes_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\shoes_leathermoccasins_Pink_co.paa"
+		};
+	};
+  class LeatherShoes_Purple: LeatherShoes_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\shoes_leathermoccasins_Purple_co.paa"
+		};
+	};
+  class LeatherShoes_Storm: LeatherShoes_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\shoes_leathermoccasins_Storm_co.paa"
+		};
+	};
+  class LeatherShoes_Yellow: LeatherShoes_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\shoes_leathermoccasins_Yellow_co.paa"
 		};
 	};
 

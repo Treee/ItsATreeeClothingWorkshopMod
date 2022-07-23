@@ -27,6 +27,7 @@ class CfgVehicles
 	class Mich2001Helmet;
 	class BoonieHat_ColorBase;
   class FlatCap_ColorBase;
+  class LeatherHat_ColorBase;
 	class SRP_TurkeyBeanie_ColorBase;
 	class SRP_BeanieHat_Turkey; // remove this eventually
   class SRP_FaceMaskSkull_ColorBase;
@@ -898,6 +899,71 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\mich2001_19.paa"
 		};
 	};
+
+  class LeatherHat_Choco: LeatherHat_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\hat_leather_choco_co.paa"
+		};
+	};
+  class LeatherHat_Lime: LeatherHat_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\hat_leather_Lime_co.paa"
+		};
+	};
+  class LeatherHat_Orange: LeatherHat_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\hat_leather_Orange_co.paa"
+		};
+	};
+  class LeatherHat_Pink: LeatherHat_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\hat_leather_Pink_co.paa"
+		};
+	};
+  class LeatherHat_Purple: LeatherHat_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\hat_leather_Purple_co.paa"
+		};
+	};
+  class LeatherHat_Storm: LeatherHat_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\hat_leather_Storm_co.paa"
+		};
+	};
+  class LeatherHat_Yellow: LeatherHat_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\hat_leather_Yellow_co.paa"
+		};
+	};
+
   class SRP_TurkeyBeanie_Turkey: SRP_TurkeyBeanie_ColorBase
 	{
 		scope=2;
@@ -1449,7 +1515,7 @@ class CfgVehicles
 		};
   };
   
-    class BaseballCap_MilitaryPatrolBlack: BaseballCap_MilitaryPatrolTan
+  class BaseballCap_MilitaryPatrolBlack: BaseballCap_MilitaryPatrolTan
 	{
 		scope=2;
 		color="MilitaryPatrolBlack";

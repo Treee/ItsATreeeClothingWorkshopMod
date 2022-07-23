@@ -391,7 +391,14 @@ class CfgVehicles
       "Natural",
       "Beige",
       "Brown",
-      "Black"
+      "Black",
+      "Choco",
+      "Lime",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Storm",
+      "Yellow",
     };
   };
   class MedicalScrubsHat_ColorBase: Clothing

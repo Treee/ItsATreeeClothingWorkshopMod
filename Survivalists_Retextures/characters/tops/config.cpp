@@ -25,6 +25,7 @@ class CfgVehicles
 	class LabCoat;
 	class TacticalShirt_ColorBase;
 	class MiniDress_ColorBase;
+  class LeatherShirt_ColorBase;
 	class HuntingJacket_ColorBase;
 	class RidersJacket_ColorBase;
 	class QuiltedJacket_ColorBase;
@@ -2158,6 +2159,70 @@ class CfgVehicles
 		};
 	};
 
+  class LeatherShirt_Choco: LeatherShirt_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\long_sleeve_shirt_choco_co.paa"
+		};
+	};
+  class LeatherShirt_Lime: LeatherShirt_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\long_sleeve_shirt_Lime_co.paa"
+		};
+	};
+  class LeatherShirt_Orange: LeatherShirt_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\long_sleeve_shirt_Orange_co.paa"
+		};
+	};
+  class LeatherShirt_Pink: LeatherShirt_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\long_sleeve_shirt_Pink_co.paa"
+		};
+	};
+  class LeatherShirt_Purple: LeatherShirt_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\long_sleeve_shirt_Purple_co.paa"
+		};
+	};
+  class LeatherShirt_Storm: LeatherShirt_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\long_sleeve_shirt_Storm_co.paa"
+		};
+	};
+  class LeatherShirt_Yellow: LeatherShirt_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\long_sleeve_shirt_Yellow_co.paa"
+		};
+	};
+
   //==============MODDED
   class DUB_Monkrobe_blue: DUB_Monkrobe
   {
@@ -2498,6 +2563,60 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
     {
       "Survivalists_Retextures\characters\tops\data\Duster_pink_co.paa"
+    };
+	};
+  class DUB_Duster_Pink1: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_pink1_co.paa"
+    };
+	};
+  class DUB_Duster_Chocolate: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_Chocolate_co.paa"
+    };
+	};
+  class DUB_Duster_Forest: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_forest_co.paa"
+    };
+	};
+  class DUB_Duster_Lavender: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_Lavender_co.paa"
+    };
+	};
+  class DUB_Duster_Navy: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_Navy_co.paa"
+    };
+	};
+  class DUB_Duster_Red: DUB_Duster
+	{
+		scope = 2;
+    hiddenSelections[]={"jacket"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\Duster_Red_co.paa"
     };
 	};
 
