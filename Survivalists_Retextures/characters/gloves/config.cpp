@@ -261,7 +261,7 @@ class CfgVehicles
   class LeatherGloves_Choco: LeatherGloves_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]={"zbytek"};
+    hiddenSelections[]={"camomale","camofemale","camoground"};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\leather_gloves_choco_co.paa"
@@ -270,7 +270,7 @@ class CfgVehicles
   class LeatherGloves_Lime: LeatherGloves_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]={"zbytek"};
+    hiddenSelections[]={"camomale","camofemale","camoground"};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Lime_co.paa"
@@ -279,7 +279,7 @@ class CfgVehicles
   class LeatherGloves_Orange: LeatherGloves_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]={"zbytek"};
+    hiddenSelections[]={"camomale","camofemale","camoground"};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Orange_co.paa"
@@ -288,7 +288,7 @@ class CfgVehicles
   class LeatherGloves_Pink: LeatherGloves_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]={"zbytek"};
+    hiddenSelections[]={"camomale","camofemale","camoground"};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Pink_co.paa"
@@ -297,7 +297,7 @@ class CfgVehicles
   class LeatherGloves_Purple: LeatherGloves_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]={"zbytek"};
+    hiddenSelections[]={"camomale","camofemale","camoground"};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Purple_co.paa"
@@ -306,7 +306,7 @@ class CfgVehicles
   class LeatherGloves_Storm: LeatherGloves_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]={"zbytek"};
+    hiddenSelections[]={"camomale","camofemale","camoground"};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Storm_co.paa"
@@ -315,7 +315,7 @@ class CfgVehicles
   class LeatherGloves_Yellow: LeatherGloves_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]={"zbytek"};
+    hiddenSelections[]={"camomale","camofemale","camoground"};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Yellow_co.paa"
