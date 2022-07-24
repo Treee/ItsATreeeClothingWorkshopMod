@@ -318,6 +318,19 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\V_Beat_Master_No_Speech.ogg",1}};
 	};
+
+  class SRPRadio_IslandGeorge_LostInTheSnow_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\George_Hormel_Lost_In_The_Snow.ogg",1}};
+	};
+  class SRPRadio_IslandGeorge_TheBlast_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\George_Hormel_The_Blast.ogg",1}};
+	};
+  class SRPRadio_IslandGeorge_GTH_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\George_Hormel_GTH.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -627,4 +640,27 @@ class CfgSoundSets
 			"SRPRadio_Vinnie_MasterNoSpeech_Shader1"
 		};
 	};
+
+  class SRPRadio_IslandGeorge_LostInTheSnow_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_LostInTheSnow_Shader1"
+		};
+	};
+  class SRPRadio_IslandGeorge_TheBlast_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_TheBlast_Shader1"
+		};
+	};
+  class SRPRadio_IslandGeorge_GTH_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_GTH_Shader1"
+		};
+	};
 };
+

@@ -259,6 +259,19 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_navigationinapocalypse_co.paa"
 		};
 	};
+  class SRP_ReadableBook_CaptainHarlockSpacePirate: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Captain Harlock: Space Pirate";
+		author="Leiji Matsumoto";
+		file="";
+		displayName="Captain Harlock: Space Pirate";
+		descriptionShort="Pages worn thin, you dare not open this book for fear of it disintegrating";
+		hiddenSelectionsTextures[]=
+		{
+		  "Survivalists_Books\gear\books\data\book_spacepirates_co.paa"
+		};
+	};
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase

@@ -820,6 +820,37 @@ class CfgVehicles
 		};
 	};
 
+  class SRPRadio_CassetteTape_IslandGeorge_LostInTheSnow: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Lost In The Snow";
+		descriptionShort="Music Tape - Credit | Island George";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_LostInTheSnow_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_IslandGeorge_TheBlast: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="The Blast";
+		descriptionShort="Music Tape - Credit | Island George";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_TheBlast_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_IslandGeorge_GTH: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="GTH";
+		descriptionShort="Music Tape - Credit | Island George";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_GTH_SoundSet1";
+		};
+	};
+
   // -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base
 	{
