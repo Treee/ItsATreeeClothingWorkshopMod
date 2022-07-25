@@ -1253,6 +1253,107 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\riders_jacket_bayk.paa"
 		};
 	};
+  
+  class RidersJacket_UpInSmoke: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_upInsmoke_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_upInsmoke_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_upInsmoke_co.paa"
+		};
+	};
+  class RidersJacket_CheechNChong: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_cheechChong_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_cheechChong_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_cheechChong_co.paa"
+		};
+	};
+  class RidersJacket_Exploited: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_exploited_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_exploited_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_exploited_co.paa"
+		};
+	};
+  class RidersJacket_FlashGordon: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_flashgordon_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_flashgordon_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_flashgordon_co.paa"
+		};
+	};
+  class RidersJacket_FuckYou: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_Fu_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_Fu_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_Fu_co.paa"
+		};
+	};
+  class RidersJacket_Smiley1: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_haveANiceDay_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_haveANiceDay_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_haveANiceDay_co.paa"
+		};
+	};
+  class RidersJacket_Heart1: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_heart_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_heart_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_heart_co.paa"
+		};
+	};
+  class RidersJacket_Schrodinger: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_helloSchrodinger_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_helloSchrodinger_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_helloSchrodinger_co.paa"
+		};
+	};
+  class RidersJacket_Rainbow: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_rainbow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_rainbow_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_rainbow_co.paa"
+		};
+	};
+  class RidersJacket_SmileBeatles: RidersJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_smileBeatles_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_smileBeatles_co.paa",
+			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_smileBeatles_co.paa"
+		};
+	};
 	class RidersJacket_Rop: RidersJacket_ColorBase
 	{
 		scope=2;
@@ -1879,6 +1980,116 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\hunting_jacket_Leather_co.paa",
 			"Survivalists_Retextures\characters\tops\data\hunting_jacket_Leather_co.paa",
 			"Survivalists_Retextures\characters\tops\data\hunting_jacket_Leather_co.paa"
+		};
+	};
+  class HuntingJacket_GreenCamo: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo1_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo1_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo1_co.paa"
+		};
+	};
+  class HuntingJacket_BrownCamo: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo2_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo2_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo2_co.paa"
+		};
+	};
+  class HuntingJacket_PurpleCamo: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo3_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo3_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo3_co.paa"
+		};
+	};
+  class HuntingJacket_BlueCamo: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo4_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo4_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo4_co.paa"
+		};
+	};
+  class HuntingJacket_DarkGreenCamo: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo4_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo4_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo4_co.paa"
+		};
+	};
+  class HuntingJacket_RedCamo: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo5_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo5_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_camo5_co.paa"
+		};
+	};  
+  class HuntingJacket_WhiteSkull: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull1_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull1_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull1_co.paa"
+		};
+	};
+  class HuntingJacket_TanSkull: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull3_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull3_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull3_co.paa"
+		};
+	};
+  class HuntingJacket_PurpleSkull: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull4_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull4_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull4_co.paa"
+		};
+	};
+  class HuntingJacket_BlueSkull: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull5_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull5_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull5_co.paa"
+		};
+	};
+  class HuntingJacket_BlackSkull: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull6_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull6_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull6_co.paa"
 		};
 	};
   class LabCoat_BGSD: LabCoat

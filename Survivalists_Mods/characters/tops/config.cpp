@@ -8,7 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Characters",
-      "DZ_Characters_Tops",
+      "DZ_Characters_Tops",      
       "Survivalists_Mods"
 		};
 	};
@@ -281,6 +281,16 @@ class CfgVehicles
       "Unicorn",
       "Dreams",
       "Punk",
+      "UpInSmoke",
+      "CheechNChong",
+      "Exploited",
+      "FlashGordon",
+      "FuckYou",
+      "Smiley1",
+      "Heart1",
+      "Schrodinger",
+      "Rainbow",
+      "SmileBeatles",
     };
   };
   class WoolCoat_ColorBase: Clothing
@@ -469,7 +479,17 @@ class CfgVehicles
       "Grape",      
       "Navy",      
       "Red",      
-      "Leather",      
+      "Leather",
+      "GreenCamo",
+      "BrownCamo",
+      "PurpleCamo",
+      "DarkGreenCamo",
+      "RedCamo",
+      "WhiteSkull",
+      "TanSkull",
+      "PurpleSkull",
+      "BlueSkull",
+      "BlackSkull",
     };
   };
   class LeatherShirt_ColorBase: Clothing
