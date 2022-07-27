@@ -987,6 +987,47 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Marmalade_Gluttony: Marmalade
+	{
+		scope=2;
+		displayName="Gluttony Bio Jam";
+		descriptionShort="The jar glows softly. It seems to be generating a significant amount of heat.";
+		hiddenSelections[]={"zbytek","camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\food\data\marmalade_Gluttony_Bio_Jam_ca.paa","Survivalists_Mods\gear\food\data\marmalade_Gluttony_Bio_Jam_ca.paa"};
+    varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    class Nutrition
+		{
+			fullnessIndex=5;
+			energy=500;
+			water=500;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+  class SRP_Marmalade_PigletPudding: Marmalade
+	{
+		scope=2;
+		displayName="Piglet Pudding";
+		descriptionShort="The jar glows softly. It seems to be generating a significant amount of heat.";
+		hiddenSelections[]={"zbytek","camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\food\data\marmalade_pigletpudding_ca.paa","Survivalists_Mods\gear\food\data\marmalade_pigletpudding_ca.paa"};
+    varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    class Nutrition
+		{
+			fullnessIndex=5;
+			energy=500;
+			water=500;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+
   class SRP_CandyCane: Worm  // new
 	{
 		scope=2;

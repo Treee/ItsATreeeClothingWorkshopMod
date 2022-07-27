@@ -46,6 +46,10 @@ class CfgVehicles
       "Belt_Back"
 		};
     itemsCargoSize[]={5,4};
+    inventorySlot[]=
+		{
+			"Hips"
+		};
     hiddenSelections[]=
     {
       "zbytek"
@@ -96,6 +100,10 @@ class CfgVehicles
       "Belt_Back",
       "WalkieTalkie",
       "Chemlight"
+		};
+    inventorySlot[]=
+		{
+			"Hips"
 		};
     itemsCargoSize[]={3,3};
     hiddenSelections[]=
@@ -152,6 +160,10 @@ class CfgVehicles
       "SmallPouch2",
       "LargePouch1",
       "LargePouch2"
+		};
+    inventorySlot[]=
+		{
+			"Hips"
 		};
     itemsCargoSize[]={3,1};
     hiddenSelections[]=
@@ -228,6 +240,10 @@ class CfgVehicles
       "LargePouch1",
       "LargePouch2"
 		};
+    inventorySlot[]=
+		{
+			"Hips"
+		};
     itemsCargoSize[]={3,1};
     hiddenSelections[]=
     {
@@ -293,7 +309,10 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\belts\Elbowpads_Kneepads_g.p3d";
     attachments[]={};
 		rotationFlags=16;
-		inventorySlot="Gloves";
+		inventorySlot[]=
+		{
+			"Gloves"
+		};
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -693,8 +712,10 @@ class CfgVehicles
 		};
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};		
-		inventorySlot="Hips";
-		simulation="clothing";
+    inventorySlot[]=
+		{
+			"Hips"
+		};		simulation="clothing";
 		vehicleClass="Clothing";
 		weight=1000;
 		itemSize[]={3,2};
@@ -768,8 +789,10 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		rotationFlags=4;
-		inventorySlot="Hips";
-		simulation="clothing";
+    inventorySlot[]=
+		{
+			"Hips"
+		};		simulation="clothing";
 		vehicleClass="Clothing";
 		weight=1000;
 		itemSize[]={3,2};
