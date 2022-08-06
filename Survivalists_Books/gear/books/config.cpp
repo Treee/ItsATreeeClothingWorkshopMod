@@ -272,6 +272,19 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_spacepirates_co.paa"
 		};
 	};
+  class SRP_ReadableBook_BiomassResearch: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="On Biomass And It's Connection To Mutants";
+		author="Archivist :005";
+		file="Survivalists_Books\gear\books\data\book_biomassresearch.html";
+		displayName="On Biomass And It's Connection To Mutants";
+		descriptionShort="Pages worn thin, scribbles fills most of these pages.";
+		hiddenSelectionsTextures[]=
+		{
+		  "Survivalists_Books\gear\books\data\book_biomassresearch_co.paa"
+		};
+	};
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase

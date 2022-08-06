@@ -21,6 +21,9 @@ class CfgVehicles
   class SRP_LockerTriple_Colorbase;
   class SRP_LockerQuad_Colorbase;
   class SRP_LockerMilitary_Colorbase;
+
+  class DUB_Flagframe;
+  class DUB_Gunframe;
   
   class Bear_Blue: Bear_ColorBase
 	{
@@ -790,4 +793,81 @@ class CfgVehicles
       "Survivalists_Retextures\gear\containers\data\srp_locker_military_tan_co.paa"
     };
   };
+
+  // ========================================== PORTRAIT ORIENTATION
+  class DUB_Flagframe_Alcoholism: DUB_Flagframe 
+	{
+		scope=2;
+		displayName="Portrait Picture Frame";
+		descriptionShort="A picture frame for the avid collecter.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_alcoholism_co.paa"};
+	};
+  class DUB_Flagframe_ClosingTime: DUB_Flagframe 
+	{
+		scope=2;
+		displayName="Portrait Picture Frame";
+		descriptionShort="A picture frame for the avid collecter.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_closingtime_co.paa"};
+	};
+  class DUB_Flagframe_DarkWorld: DUB_Flagframe 
+	{
+		scope=2;
+		displayName="Portrait Picture Frame";
+		descriptionShort="A picture frame for the avid collecter.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_darkworld_co.paa"};
+	};
+  class DUB_Flagframe_MakeYouDie: DUB_Flagframe 
+	{
+		scope=2;
+		displayName="Portrait Picture Frame";
+		descriptionShort="A picture frame for the avid collecter.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_makeyoudie_co.paa"};
+	};
+
+  // ========================================== LANDSCAPE ORIENTATION
+  class DUB_Gunframe_Alcoholism: DUB_Gunframe 
+	{
+		scope=2;
+		displayName="Landscape Picture Frame";
+		descriptionShort="A picture frame for the avid collecter.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_alcoholism_co.paa"};
+	};
+  class DUB_Gunframe_ClosingTime: DUB_Gunframe 
+	{
+		scope=2;
+		displayName="Landscape Picture Frame";
+		descriptionShort="A picture frame for the avid collecter.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_closingtime_co.paa"};
+	};
+  class DUB_Gunframe_DarkWorld: DUB_Gunframe 
+	{
+		scope=2;
+		displayName="Landscape Picture Frame";
+		descriptionShort="A picture frame for the avid collecter.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_darkworld_co.paa"};
+	};
+  class DUB_Gunframe_MakeYouDie: DUB_Gunframe 
+	{
+		scope=2;
+		displayName="Landscape Picture Frame";
+		descriptionShort="A picture frame for the avid collecter.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_makeyoudie_co.paa"};
+	};
+
 };
