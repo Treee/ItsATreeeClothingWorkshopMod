@@ -152,6 +152,67 @@ class CfgSlots
 		displayName="Test Tube";
 		ghostIcon="set:dayz_inventory image:paper";
 	};
+
+  class Slot_SRP_PlantMaterial1
+	{
+		name="PlantMaterial1";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial2
+	{
+		name="PlantMaterial2";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial3
+	{
+		name="PlantMaterial3";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial4
+	{
+		name="PlantMaterial4";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial5
+	{
+		name="PlantMaterial5";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial6
+	{
+		name="PlantMaterial6";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial7
+	{
+		name="PlantMaterial7";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial8
+	{
+		name="PlantMaterial8";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial9
+	{
+		name="PlantMaterial9";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
+  class Slot_SRP_PlantMaterial10
+	{
+		name="PlantMaterial10";
+		displayName="Raw Plant Material";
+		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
+	};
 };
 
 class CfgNonAIVehicles

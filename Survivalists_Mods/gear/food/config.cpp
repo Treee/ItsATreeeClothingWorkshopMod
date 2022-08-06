@@ -2573,6 +2573,19 @@ class CfgVehicles
   class Cocaine: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
+    inventorySlot[]+=
+    {
+      "PlantMaterial1",
+      "PlantMaterial2",
+      "PlantMaterial3",
+      "PlantMaterial4",
+      "PlantMaterial5",
+      "PlantMaterial6",
+      "PlantMaterial7",
+      "PlantMaterial8",
+      "PlantMaterial9",
+      "PlantMaterial10",
+    };
 		displayName="Cocaine Plant Material";
 		descriptionShort="A harvested branch from the cocaine bush.";
     color="cocaine";

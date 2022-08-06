@@ -90,6 +90,7 @@ class SRP_LabTube_Red extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_Green extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_Yellow extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_MutantLiquid extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidBlood extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_MutantLiquidDisinfected extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_MutantLiquidAntibiotic extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_MutantLiquidSterilized extends SRP_LabTube_Colorbase

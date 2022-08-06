@@ -821,9 +821,21 @@ class CfgVehicles
     displayName="Cocaine Plant Material";
     descriptionShort="Holds cocaine plant material. You can see remnant of processing.";
     inventorySlot[]={};
-    attachments[]={};
+    attachments[]=
+    {
+      "PlantMaterial1",
+      "PlantMaterial2",
+      "PlantMaterial3",
+      "PlantMaterial4",
+      "PlantMaterial5",
+      "PlantMaterial6",
+      "PlantMaterial7",
+      "PlantMaterial8",
+      "PlantMaterial9",
+      "PlantMaterial10",
+    };
     itemSize[]={6,6};
-    itemsCargoSize[]={6,6};
+    itemsCargoSize[]={4,4};
 		hiddenSelectionsTextures[]=
 		{
 			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",

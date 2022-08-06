@@ -1294,6 +1294,8 @@ class CfgVehicles
 		rotationFlags=0;
 		itemSize[]={3,2};
     rootClassName="SRP_FacialHairGoatee";
+    varWetMax=0;
+    absorbency=0;
     colorVariants[]=
     {
       "Brown",
@@ -1338,6 +1340,8 @@ class CfgVehicles
 		rotationFlags=0;
 		itemSize[]={3,2};
     rootClassName="SRP_FacialHairBeard";
+    varWetMax=0;
+    absorbency=0;
     colorVariants[]=
     {
       "Brown",
@@ -1382,6 +1386,8 @@ class CfgVehicles
 		rotationFlags=0;
 		itemSize[]={3,2};
     rootClassName="SRP_FacialHairChops";
+    varWetMax=0;
+    absorbency=0;
     colorVariants[]=
     {
       "Brown",

@@ -61,6 +61,11 @@ class CfgVehicles
     itemSize[]={1,3};
     varTemperatureMax=100;
 		weight=15;
+    varQuantityInit=50;
+		varQuantityMin=0;
+		varQuantityMax=50;
+    stackedUnit="ml";
+    canBeSplit=1;
     inventorySlot[]=
     {
       "TestTube1",
@@ -179,8 +184,24 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=50;
-    stackedUnit="ml";
-    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_red.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidBlood: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Mixed Ichor";
+		descriptionShort="A single test tube. Contains some ichor. What are you doing with this?";
+    color="mutantliquidblood";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
 		hiddenSelections[]=
     {
       "zbytek"

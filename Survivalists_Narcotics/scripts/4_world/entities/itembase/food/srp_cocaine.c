@@ -8,8 +8,7 @@ class SRP_DrugCraft_CocaineStarter extends DryBag_ColorBase
     // Debug.Log("SRP_DrugCarton_ColorBase taking " + item);    
 		if (item && item.GetType() == "Cocaine")
 		{
-      Edible_Base driedSmokable = Edible_Base.Cast( item );
-      return (driedSmokable && driedSmokable.IsFoodDried());
+      return true;
     }
 		return false;
 	}

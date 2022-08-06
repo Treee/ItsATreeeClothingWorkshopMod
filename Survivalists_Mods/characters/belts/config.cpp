@@ -311,7 +311,8 @@ class CfgVehicles
 		rotationFlags=16;
 		inventorySlot[]=
 		{
-			"Gloves"
+			"Gloves",
+      "Hips"
 		};
 		simulation="clothing";
 		vehicleClass="Clothing";
@@ -402,6 +403,10 @@ class CfgVehicles
       "LargePouch1"
 		};
     itemsCargoSize[]={0,0};
+    itemSize[]={2,3};
+		quickBarBonus=2;
+		absorbency=0;
+		heatIsolation=0.80;
     hiddenSelections[]=
     {
       "zbytek"
