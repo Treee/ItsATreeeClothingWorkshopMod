@@ -35,7 +35,7 @@ class CfgVehicles
 
   class Lard: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -131,7 +131,7 @@ class CfgVehicles
 	};
 	class BearSteakMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -203,7 +203,7 @@ class CfgVehicles
 	};
 	class CowSteakMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -275,7 +275,7 @@ class CfgVehicles
 	};
 	class WolfSteakMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -347,7 +347,7 @@ class CfgVehicles
 	};
 	class GoatSteakMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -419,7 +419,7 @@ class CfgVehicles
 	};
 	class DeerSteakMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -491,7 +491,7 @@ class CfgVehicles
 	};
 	class ChickenBreastMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -563,7 +563,7 @@ class CfgVehicles
 	};
 	class SheepSteakMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -635,7 +635,7 @@ class CfgVehicles
 	};
 	class PigSteakMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -719,7 +719,7 @@ class CfgVehicles
 		varQuantityInit=150;
 		varQuantityMin=0;
 		varQuantityMax=150;
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -791,7 +791,7 @@ class CfgVehicles
 	};
 	class CarpFilletMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -863,7 +863,7 @@ class CfgVehicles
 	};
 	class MackerelFilletMeat: Edible_Base
 	{
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",
@@ -1115,7 +1115,7 @@ class CfgVehicles
 	class SRP_BoxCerealCrunchinBase: BoxCerealCrunchin // new
 	{
 		scope=0;
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
 			"Food4",
 			"Food5",
@@ -1765,9 +1765,9 @@ class CfgVehicles
     rotationFlags=63;
 		itemSize[]={2,2};
 		weight=440;
-		varQuantityInit=200;
+		varQuantityInit=100;
 		varQuantityMin=0;
-		varQuantityMax=600;
+		varQuantityMax=400;
     canBeSplit=1;
 		isMeleeWeapon=1;
     inventorySlot[]=
@@ -2033,7 +2033,7 @@ class CfgVehicles
 		weight=440;
 		varQuantityInit=0;
 		varQuantityMin=0;
-		varQuantityMax=600;
+		varQuantityMax=400;
 		isMeleeWeapon=1;
 		class DamageSystem
 		{
@@ -2166,7 +2166,7 @@ class CfgVehicles
 		weight=40;
 		varQuantityInit=0;
 		varQuantityMin=0;
-		varQuantityMax=600;
+		varQuantityMax=400;
 		isMeleeWeapon=1;
 		class DamageSystem
 		{
@@ -2334,7 +2334,7 @@ class CfgVehicles
 	{
     displayName="Cannabis";
 		descriptionShort="Cannabis harvested from a cannabis plant.";
-    inventorySlot[]=
+    inventorySlot[]+=
 		{
 			"Ingredient",
 			"Ingredient1",

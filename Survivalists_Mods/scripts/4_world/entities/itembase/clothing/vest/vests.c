@@ -121,34 +121,11 @@ class SRP_ModularVest_Base extends Clothing
 	}
   
 };
-class SRP_Tac_Vest_Green: SRP_ModularVest_Base{};
-class SRP_Tac_Vest_Black: SRP_ModularVest_Base{};
-class SRP_Tac_Vest_Tan: SRP_ModularVest_Base{};
-
-class SRP_Ratnik_Green: SRP_ModularVest_Base{};
-class SRP_Ratnik_Black: SRP_ModularVest_Base{};
-class SRP_Ratnik_Tan: SRP_ModularVest_Base{};
-
-class SRP_Light_Ratnik_Green: SRP_ModularVest_Base{};
-class SRP_Light_Ratnik_Black: SRP_ModularVest_Base{};
-class SRP_Light_Ratnik_Tan: SRP_ModularVest_Base{};
-
-class SRP_Chestrig_Green: SRP_ModularVest_Base{};
-class SRP_Chestrig_Black: SRP_ModularVest_Base{};
-class SRP_Chestrig_Tan: SRP_ModularVest_Base{};
-
-class SRP_Army_Vest_1_Green: SRP_ModularVest_Base{};
-class SRP_Army_Vest_1_Black: SRP_ModularVest_Base{};
-class SRP_Army_Vest_1_Tan: SRP_ModularVest_Base{};
-
-class SRP_Army_Vest_2_Green: SRP_ModularVest_Base{};
-class SRP_Army_Vest_2_Black: SRP_ModularVest_Base{};
-class SRP_Army_Vest_2_Tan: SRP_ModularVest_Base{};
-
-class SRP_JPC_Vest_Green: SRP_ModularVest_Base{};
-class SRP_JPC_Vest_Black: SRP_ModularVest_Base{};
-class SRP_JPC_Vest_Tan: SRP_ModularVest_Base{};
-
-class SRP_Tac_Tec_Vest_Green: SRP_ModularVest_Base{};
-class SRP_Tac_Tec_Vest_Black: SRP_ModularVest_Base{};
-class SRP_Tac_Tec_Vest_Tan: SRP_ModularVest_Base{};
+class SRP_Tac_Vest_ColorBase: SRP_ModularVest_Base{};
+class SRP_Ratnik_ColorBase: SRP_ModularVest_Base{};
+class SRP_Light_Ratnik_ColorBase: SRP_ModularVest_Base{};
+class SRP_Chestrig_ColorBase: SRP_ModularVest_Base{};
+class SRP_Army_Vest_1_ColorBase: SRP_ModularVest_Base{};
+class SRP_Army_Vest_2_ColorBase: SRP_ModularVest_Base{};
+class SRP_JPC_Vest_ColorBase: SRP_ModularVest_Base{};
+class SRP_Tac_Tec_Vest_ColorBase: SRP_ModularVest_Base{};
