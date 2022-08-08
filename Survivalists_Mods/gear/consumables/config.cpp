@@ -536,6 +536,48 @@ class CfgVehicles
       "Survivalists_Mods\gear\consumables\data\loot_paper_fishing_co.paa"
     };
   };
+  class SRP_Paper_CDCForm1: Paper
+  {
+		scope=2;
+		displayName="Medical Information Form";
+		descriptionShort="Boxes and lines to be filled out.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\loot_paper_cdcforminfo_co.paa"
+    };
+  };
+  class SRP_Paper_CDCForm2: Paper
+  {
+		scope=2;
+		displayName="Surgery Information Form";
+		descriptionShort="Boxes and lines to be filled out.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\loot_paper_cdcformsurgury_co.paa"
+    };
+  };
+  class SRP_Paper_CDCForm3: Paper
+  {
+		scope=2;
+		displayName="Medical Records Form";
+		descriptionShort="Boxes and lines to be filled out.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\loot_paper_cdcformrecord_co.paa"
+    };
+  };
 
   //====================================================== SEALED LETTER AND WAX
   
