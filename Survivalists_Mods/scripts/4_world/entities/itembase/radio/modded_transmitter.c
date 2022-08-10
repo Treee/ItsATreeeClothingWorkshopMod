@@ -36,7 +36,9 @@ modded class TransmitterBase
   {
     if (GetCompEM().IsWorking())
     {
-      EnableBroadcast(m_Muted);
+      // flip the boolean lol stupid bug and silly oversight
+      bool isMuted = !IsMuted();
+      EnableBroadcast(isMuted);
     }
   }
 
