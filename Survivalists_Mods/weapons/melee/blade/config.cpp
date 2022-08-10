@@ -1074,6 +1074,68 @@ class CfgVehicles
     };
   };
 
+  class SRP_KatanaSlim_Railen: SRP_KatanaSlim
+  {
+    scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_railen_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+
+  class SRP_KatanaSlim_Sheath_Railen: SRP_KatanaSlim_Sheath
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_railen_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_damage.rvmat"}},
+            {0.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
   class SRP_BerserkSword: Inventory_Base
 	{
 		scope=2;
