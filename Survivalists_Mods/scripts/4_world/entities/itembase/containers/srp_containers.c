@@ -538,6 +538,13 @@ class SRP_BarricadeMetal extends SRP_Container_Base
 		return true;
 	}
 };
+class SRP_Furniture_WitchTable extends SRP_Container_Base
+{
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
+};
 
 class SRP_Furniture_Barrel extends SRP_Container_Base{};
 class SRP_Furniture_BarrelTable extends SRP_Container_Base{};

@@ -41,10 +41,12 @@ class CfgVehicles
 		};
 	};
 
-  class Land_srp_furniture_witchtable: HouseNoDestruct
+  class SRP_Furniture_WitchTable: Container_Base  // new
 	{
-		scope=1;
-		model="Survivalists_Mods\structures\furniture\srp_witchtable.p3d";
+		scope=2;
+		displayName="Tarot Table";
+		descriptionShort="A table used to display tarot cards";
+    model="Survivalists_Mods\structures\furniture\srp_witchtable.p3d";
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -52,6 +54,52 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\structures\furniture\data\srp_witchtable_co.paa"
+		};
+    attachments[]=
+		{
+			"CardHand1",
+			"CardHand2",
+			"CardHand3",
+			"CardHand4",
+			"CardHand5",
+		};		
+    carveNavmesh=1;
+		itemBehaviour=2;
+		weight=3000;
+		itemSize[]={15,10};
+    itemsCargoSize[]={0,0};
+		useEntityHierarchy="true";
+		physLayer="item_large";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
 		};
 	};
 
