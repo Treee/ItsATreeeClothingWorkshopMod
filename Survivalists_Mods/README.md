@@ -878,6 +878,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "The Witch's Altar" (https://skfb.ly/6XROq) by sunnytrashpanda is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Tarot Cards" https://spells8.com/wp-content/uploads/2021/03/Printable-Tarot-Cards-Rider-Waite-Full-Deck.pdf
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

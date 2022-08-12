@@ -369,14 +369,14 @@ class CfgVehicles
   };
 
 // ------------------------- EVENT STUFF
-  class SRP_PortalBone_Kit: SRP_KitBase  // new
+  class SRP_PortalBone_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Bone Portal Kit";
 		descriptionShort="A kit for teleporting victims to a new destination.";
 	};
   
-  class SRP_PortalBone: Inventory_Base  // new
+  class SRP_PortalBone: Inventory_Base  
 	{
 		scope=2;
 		displayName="Bone Portal";
@@ -400,14 +400,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_PortalDruid_Kit: SRP_KitBase  // new
+  class SRP_PortalDruid_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Druid Portal Kit";
 		descriptionShort="A kit for teleporting victims to a new destination.";
 	};
   
-  class SRP_PortalDruid: Inventory_Base  // new
+  class SRP_PortalDruid: Inventory_Base  
 	{
 		scope=2;
 		displayName="Druid Portal";
@@ -431,14 +431,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_PortalArch_Kit: SRP_KitBase  // new
+  class SRP_PortalArch_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Arch Portal Kit";
 		descriptionShort="A kit for teleporting victims to a new destination.";
 	};
   
-  class SRP_PortalArch: Inventory_Base  // new
+  class SRP_PortalArch: Inventory_Base  
 	{
 		scope=2;
 		displayName="Arch Portal";
@@ -462,14 +462,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_PortalReturn_Kit: SRP_KitBase  // new
+  class SRP_PortalReturn_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Return Portal Kit";
 		descriptionShort="A kit for teleporting players back to a safe destination.";
 	};
   
-  class SRP_PortalReturn: Inventory_Base  // new
+  class SRP_PortalReturn: Inventory_Base  
 	{
 		scope=2;
 		displayName="Return Portal";
@@ -505,14 +505,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_AltarBone_Kit: SRP_KitBase  // new
+  class SRP_AltarBone_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Bone Altar Kit";
 		descriptionShort="Alter for a boss.";
 	};
   
-  class SRP_AltarBone: Inventory_Base  // new
+  class SRP_AltarBone: Inventory_Base  
 	{
 		scope=2;
 		displayName="Food Altar";
@@ -536,14 +536,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_AltarWraith_Kit: SRP_KitBase  // new
+  class SRP_AltarWraith_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Wraith Altar Kit";
 		descriptionShort="Alter for a boss.";
 	};
   
-  class SRP_AltarWraith: Inventory_Base  // new
+  class SRP_AltarWraith: Inventory_Base  
 	{
 		scope=2;
 		displayName="Ammo Altar";
@@ -567,14 +567,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_AltarDog_Kit: SRP_KitBase  // new
+  class SRP_AltarDog_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Dog Altar Kit";
 		descriptionShort="Alter for a boss.";
 	};
   
-  class SRP_AltarDog: Inventory_Base  // new
+  class SRP_AltarDog: Inventory_Base  
 	{
 		scope=2;
 		displayName="Repair Kit Altar";
@@ -598,14 +598,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_AltarWendigo_Kit: SRP_KitBase  // new
+  class SRP_AltarWendigo_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Wendigo Altar Kit";
 		descriptionShort="Alter for a boss.";
 	};
   
-  class SRP_AltarWendigo: Inventory_Base  // new
+  class SRP_AltarWendigo: Inventory_Base  
 	{
 		scope=2;
 		displayName="Wendigo Altar";
@@ -629,14 +629,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_AltarBigBoss_Kit: SRP_KitBase  // new
+  class SRP_AltarBigBoss_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Big Boss Altar Kit";
 		descriptionShort="Alter for a boss.";
 	};
   
-  class SRP_AltarBigBoss: Inventory_Base  // new
+  class SRP_AltarBigBoss: Inventory_Base  
 	{
 		scope=2;
 		displayName="Big Boss Altar";
@@ -790,7 +790,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_BowlSquare_Wood: SRP_Bowl_Wood  // new
+  class SRP_BowlSquare_Wood: SRP_Bowl_Wood  
 	{
 		scope=2;
 		displayName="Square Wooden Plate";
@@ -987,14 +987,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_StreetLightLarge_Metal_Kit: SRP_KitBase  // new
+  class SRP_StreetLightLarge_Metal_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Large Metal Street Light Kit";
 		descriptionShort="A placeable street light kit. When built you can light up the streets!";
 	};
 
-  class SRP_StreetLightLarge_Metal: Container_Base  // new
+  class SRP_StreetLightLarge_Metal: Container_Base  
 	{
 		scope=2;
 		displayName="Large Street Light - Metal";
@@ -1268,14 +1268,14 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_CarpetRug_Kit: SRP_KitBase  // new
+  class SRP_CarpetRug_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="An Old Rug Kit";
 		descriptionShort="An old carpet to decorate your home";
 	};
   
-  class SRP_CarpetRug: Inventory_Base  // new
+  class SRP_CarpetRug: Inventory_Base  
 	{
 		scope=2;
 		displayName="Old Carpet";
@@ -1404,7 +1404,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_WoodenBox_Locked: WoodenCrate  // new
+  class SRP_WoodenBox_Locked: WoodenCrate  
 	{
 		scope=2;
 		displayName="Locked Wooden Box";
@@ -1433,7 +1433,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_WoodenBox_Square: WoodenCrate  // new
+  class SRP_WoodenBox_Square: WoodenCrate  
 	{
 		scope=2;
 		displayName="Square Wooden Box";
@@ -1462,7 +1462,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_WoodenBox_Cask: WoodenCrate  // new
+  class SRP_WoodenBox_Cask: WoodenCrate  
 	{
 		scope=2;
 		displayName="Wooden Cask";
@@ -1486,7 +1486,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_DiceRpg_d4: Inventory_Base  // new
+  class SRP_DiceRpg_d4: Inventory_Base  
 	{
 		scope=2;
 		displayName="D4";
@@ -1505,37 +1505,37 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_dicerpg_co.paa"
     };
 	};
-  class SRP_DiceRpg_d6: SRP_DiceRpg_d4  // new
+  class SRP_DiceRpg_d6: SRP_DiceRpg_d4  
 	{
 		scope=2;
 		displayName="D6";
 		model="Survivalists_Mods\gear\camping\dicerpg_d6.p3d";
 	};
-  class SRP_DiceRpg_d8: SRP_DiceRpg_d4  // new
+  class SRP_DiceRpg_d8: SRP_DiceRpg_d4  
 	{
 		scope=2;
 		displayName="D8";
 		model="Survivalists_Mods\gear\camping\dicerpg_d8.p3d";
 	};
-  class SRP_DiceRpg_d10: SRP_DiceRpg_d4  // new
+  class SRP_DiceRpg_d10: SRP_DiceRpg_d4  
 	{
 		scope=2;
 		displayName="D10";
 		model="Survivalists_Mods\gear\camping\dicerpg_d10.p3d";
 	};
-  class SRP_DiceRpg_d12: SRP_DiceRpg_d4  // new
+  class SRP_DiceRpg_d12: SRP_DiceRpg_d4  
 	{
 		scope=2;
 		displayName="D12";
 		model="Survivalists_Mods\gear\camping\dicerpg_d12.p3d";
 	};
-  class SRP_DiceRpg_d20: SRP_DiceRpg_d4  // new
+  class SRP_DiceRpg_d20: SRP_DiceRpg_d4  
 	{
 		scope=2;
 		displayName="D20";
 		model="Survivalists_Mods\gear\camping\dicerpg_d20.p3d";
 	};
-  class SRP_DiceRpg_d100: SRP_DiceRpg_d4  // new
+  class SRP_DiceRpg_d100: SRP_DiceRpg_d4  
 	{
 		scope=2;
 		displayName="D100";
@@ -1543,7 +1543,7 @@ class CfgVehicles
 	};
 
 
-  class SRP_DiceSingle_White: Inventory_Base  // new
+  class SRP_DiceSingle_White: Inventory_Base  
 	{
 		scope=2;
 		displayName="A single dice";
@@ -1562,7 +1562,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_DiceSingle_WhiteRed: SRP_DiceSingle_White  // new
+  class SRP_DiceSingle_WhiteRed: SRP_DiceSingle_White  
 	{
 		scope=2;
     hiddenSelections[]={
@@ -1573,7 +1573,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_DiceSingle_BlackWhite: SRP_DiceSingle_WhiteRed  // new
+  class SRP_DiceSingle_BlackWhite: SRP_DiceSingle_WhiteRed  
 	{
 		scope=2;
     hiddenSelections[]={
@@ -1584,7 +1584,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_DiceSingle_BlackRed: SRP_DiceSingle_BlackWhite  // new
+  class SRP_DiceSingle_BlackRed: SRP_DiceSingle_BlackWhite  
 	{
 		scope=2;
     hiddenSelections[]={
@@ -1595,7 +1595,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_DeskNamePlate: Inventory_Base  // new
+  class SRP_DeskNamePlate: Inventory_Base  
 	{
 		scope=2;
 		displayName="Desk Nameplate";
@@ -1669,7 +1669,7 @@ class CfgVehicles
     };
   };
 
-  class SRP_SentientCrystal_ColorBase: Inventory_Base  // new
+  class SRP_SentientCrystal_ColorBase: Inventory_Base  
 	{
 		scope=0;
 		displayName="The Artifact";
@@ -1717,7 +1717,7 @@ class CfgVehicles
 		descriptionShort="A large rock with smooth surfaces.";
   };
 
-  class SRP_DJBooth_ColorBase: Inventory_Base  // new
+  class SRP_DJBooth_ColorBase: Inventory_Base  
 	{
 		scope=0;
 		displayName="DJ Booth";
@@ -1771,7 +1771,7 @@ class CfgVehicles
     };
   };
 
-  class SRP_Ladder_Opened_Kit: SRP_KitBase  // new
+  class SRP_Ladder_Opened_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="Ladder";
@@ -1805,7 +1805,7 @@ class CfgVehicles
 		};
 	};
   
-  class SRP_Ladder_Opened: Inventory_Base  // new
+  class SRP_Ladder_Opened: Inventory_Base  
 	{
 		scope=2;
 		displayName="Ladder";
@@ -1846,7 +1846,7 @@ class CfgVehicles
 		};
 	};
   
-  class SRP_SleepingBag_ColorBase: Inventory_Base  // new
+  class SRP_SleepingBag_ColorBase: Inventory_Base  
 	{
 		scope=0;
 		displayName="Sleeping Bag";
@@ -1904,7 +1904,7 @@ class CfgVehicles
     };
   };
 
-  class SRP_SleepingBag_Basic: SRP_SleepingBag_ColorBase  // new
+  class SRP_SleepingBag_Basic: SRP_SleepingBag_ColorBase  
 	{
 		scope=2;
     hiddenSelections[]=
@@ -3728,7 +3728,7 @@ class CfgVehicles
 	};
 
 //----------------------------------- Playing/Trading Cards
-  class SRP_DeckOfCards: Inventory_Base  // new
+  class SRP_DeckOfCards: Inventory_Base  
 	{
 		scope=2;
 		displayName="Deck of cards";
@@ -3916,7 +3916,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_PlayingCard_ColorBase: Inventory_Base  // new
+  class SRP_PlayingCard_ColorBase: Inventory_Base  
 	{
 		scope=0;
 		displayName="Playing Card Base";
@@ -3949,6 +3949,7 @@ class CfgVehicles
 			"CardQueenSpade",
 			"CardKingSpade",
 			"CardAceSpade",
+			"CardAceSpadeExtra",
       "Card2Club",
 			"Card3Club",
 			"Card4Club",
@@ -3962,6 +3963,7 @@ class CfgVehicles
 			"CardQueenClub",
 			"CardKingClub",
 			"CardAceClub",
+			"CardAceClubExtra",
       "Card2Heart",
 			"Card3Heart",
 			"Card4Heart",
@@ -3975,6 +3977,7 @@ class CfgVehicles
 			"CardQueenHeart",
 			"CardKingHeart",
 			"CardAceHeart",
+			"CardAceHeartExtra",
       "Card2Diamond",
 			"Card3Diamond",
 			"Card4Diamond",
@@ -3988,6 +3991,7 @@ class CfgVehicles
 			"CardQueenDiamond",
 			"CardKingDiamond",
 			"CardAceDiamond",
+			"CardAceDiamondExtra",
 		};
     hiddenSelections[]=
     {
@@ -4001,7 +4005,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_PlayingCard_circle: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_circle: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     displayName="Card - Circle";
@@ -4012,7 +4016,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
     };
   };
-  class SRP_PlayingCard_plus: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_plus: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     displayName="Card - Plus";
@@ -4023,7 +4027,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
     };
   };
-  class SRP_PlayingCard_square: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_square: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="square";
@@ -4034,7 +4038,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
     };
   };
-  class SRP_PlayingCard_star: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_star: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="star";
@@ -4045,7 +4049,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardback_shape_co.paa"
     };
   };
-  class SRP_PlayingCard_wave: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_wave: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="wave";
@@ -4058,7 +4062,7 @@ class CfgVehicles
   };
   
   // SPADES
-  class SRP_PlayingCard_2Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_2Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="2spade";
@@ -4069,7 +4073,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_3Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_3Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="3spade";
@@ -4080,7 +4084,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_4Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_4Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="4spade";
@@ -4091,7 +4095,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_5Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_5Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="5spade";
@@ -4102,7 +4106,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_6Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_6Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="6spade";
@@ -4113,7 +4117,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_7Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_7Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="7spade";
@@ -4124,7 +4128,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_8Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_8Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="8spade";
@@ -4135,7 +4139,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_9Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_9Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="9spade";
@@ -4146,7 +4150,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_10Spade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_10Spade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="10spade";
@@ -4157,7 +4161,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_jackSpade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_jackSpade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="jackspade";
@@ -4168,7 +4172,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_queenSpade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_queenSpade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="queenspade";
@@ -4179,7 +4183,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_kingSpade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_kingSpade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="kingspade";
@@ -4190,7 +4194,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_aceSpade: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_aceSpade: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="acespade";
@@ -4203,7 +4207,7 @@ class CfgVehicles
   };
 
   // CLUBS
-  class SRP_PlayingCard_2club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_2club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="2club";
@@ -4214,7 +4218,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_3club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_3club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="3club";
@@ -4225,7 +4229,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_4club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_4club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="4club";
@@ -4236,7 +4240,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_5club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_5club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="5club";
@@ -4247,7 +4251,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_6club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_6club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="6club";
@@ -4258,7 +4262,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_7club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_7club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="7club";
@@ -4269,7 +4273,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_8club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_8club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="8club";
@@ -4280,7 +4284,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_9club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_9club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="9club";
@@ -4291,7 +4295,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_10club: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_10club: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="10club";
@@ -4302,7 +4306,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_jackclub: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_jackclub: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="jackclub";
@@ -4313,7 +4317,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_queenclub: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_queenclub: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="queenclub";
@@ -4324,7 +4328,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_kingclub: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_kingclub: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="kingclub";
@@ -4335,7 +4339,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_aceclub: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_aceclub: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="aceclub";
@@ -4348,7 +4352,7 @@ class CfgVehicles
   };
 
   // Diamond
-  class SRP_PlayingCard_2diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_2diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="2diamond";
@@ -4359,7 +4363,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_3diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_3diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="3diamond";
@@ -4370,7 +4374,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_4diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_4diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="4diamond";
@@ -4381,7 +4385,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_5diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_5diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="5diamond";
@@ -4392,7 +4396,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_6diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_6diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="6diamond";
@@ -4403,7 +4407,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_7diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_7diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="7diamond";
@@ -4414,7 +4418,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_8diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_8diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="8diamond";
@@ -4425,7 +4429,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_9diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_9diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="9diamond";
@@ -4436,7 +4440,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_10diamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_10diamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="10diamond";
@@ -4447,7 +4451,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_jackdiamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_jackdiamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="jackdiamond";
@@ -4458,7 +4462,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_queendiamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_queendiamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="queendiamond";
@@ -4469,7 +4473,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_kingdiamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_kingdiamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="kingdiamond";
@@ -4480,7 +4484,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_acediamond: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_acediamond: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="acediamond";
@@ -4493,7 +4497,7 @@ class CfgVehicles
   };
 
   // Heart
-  class SRP_PlayingCard_2heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_2heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="2heart";
@@ -4504,7 +4508,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_3heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_3heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="3heart";
@@ -4515,7 +4519,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_4heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_4heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="4heart";
@@ -4526,7 +4530,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_5heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_5heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="5heart";
@@ -4537,7 +4541,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_6heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_6heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="6heart";
@@ -4548,7 +4552,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_7heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_7heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="7heart";
@@ -4559,7 +4563,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_8heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_8heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="8heart";
@@ -4570,7 +4574,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_9heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_9heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="9heart";
@@ -4581,7 +4585,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_10heart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_10heart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="10heart";
@@ -4592,7 +4596,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_jackheart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_jackheart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="jackheart";
@@ -4603,7 +4607,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_queenheart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_queenheart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="queenheart";
@@ -4614,7 +4618,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_kingheart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_kingheart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="kingheart";
@@ -4625,7 +4629,7 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
-  class SRP_PlayingCard_aceheart: SRP_PlayingCard_ColorBase  // new
+  class SRP_PlayingCard_aceheart: SRP_PlayingCard_ColorBase  
   {
     scope=2;
     color="aceheart";
@@ -4636,6 +4640,1040 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
     };
   };
+
+
+//=================TAROT Cards
+  class SRP_DeckOfCards_Tarot: SRP_DeckOfCards  
+	{
+		scope=2;
+		displayName="Deck of Tarot Cards";
+		descriptionShort="A container for multiple cards.";
+    attachments[]=
+		{
+			"Card2Spade",
+			"Card3Spade",
+			"Card4Spade",
+			"Card5Spade",
+			"Card6Spade",
+			"Card7Spade",
+			"Card8Spade",
+			"Card9Spade",
+			"Card10Spade",
+			"CardJackSpade",
+			"CardQueenSpade",
+			"CardKingSpade",
+			"CardAceSpade",
+			"CardAceSpadeExtra",
+      "Card2Club",
+			"Card3Club",
+			"Card4Club",
+			"Card5Club",
+			"Card6Club",
+			"Card7Club",
+			"Card8Club",
+			"Card9Club",
+			"Card10Club",
+			"CardJackClub",
+			"CardQueenClub",
+			"CardKingClub",
+			"CardAceClub",
+			"CardAceClubExtra",
+      "Card2Heart",
+			"Card3Heart",
+			"Card4Heart",
+			"Card5Heart",
+			"Card6Heart",
+			"Card7Heart",
+			"Card8Heart",
+			"Card9Heart",
+			"Card10Heart",
+			"CardJackHeart",
+			"CardQueenHeart",
+			"CardKingHeart",
+			"CardAceHeart",
+			"CardAceHeartExtra",
+      "Card2Diamond",
+			"Card3Diamond",
+			"Card4Diamond",
+			"Card5Diamond",
+			"Card6Diamond",
+			"Card7Diamond",
+			"Card8Diamond",
+			"Card9Diamond",
+			"Card10Diamond",
+			"CardJackDiamond",
+			"CardQueenDiamond",
+			"CardKingDiamond",
+			"CardAceDiamond",
+			"CardAceDiamondExtra",
+		};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_deckofcards_tarot_co.paa"
+    };
+    class GUIInventoryAttachmentsProps
+		{
+      class Cups
+			{
+				name="Cups";
+				description="For Cups";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "Card2Spade",
+          "Card3Spade",
+          "Card4Spade",
+          "Card5Spade",
+          "Card6Spade",
+          "Card7Spade",
+          "Card8Spade",
+          "Card9Spade",
+          "Card10Spade",
+          "CardJackSpade",
+          "CardQueenSpade",
+          "CardKingSpade",
+          "CardAceSpade",
+          "CardAceSpadeExtra",
+				};				
+			};
+			class Pentacles
+			{
+				name="Pentacles";
+				description="For Pentacles";
+        icon="set:dayz_inventory image:missing";
+				attachmentSlots[]=
+				{
+          "Card2Club",
+          "Card3Club",
+          "Card4Club",
+          "Card5Club",
+          "Card6Club",
+          "Card7Club",
+          "Card8Club",
+          "Card9Club",
+          "Card10Club",
+          "CardJackClub",
+          "CardQueenClub",
+          "CardKingClub",
+          "CardAceClub",
+          "CardAceClubExtra",
+				};
+			};
+			class Swords
+			{
+				name="Swords";
+				description="For Swords";
+		    icon="set:dayz_inventory image:missing";		    
+				attachmentSlots[]=
+				{
+          "Card2Heart",
+          "Card3Heart",
+          "Card4Heart",
+          "Card5Heart",
+          "Card6Heart",
+          "Card7Heart",
+          "Card8Heart",
+          "Card9Heart",
+          "Card10Heart",
+          "CardJackHeart",
+          "CardQueenHeart",
+          "CardKingHeart",
+          "CardAceHeart",
+          "CardAceHeartExtra",
+				};
+			};
+      class Wands
+			{
+				name="Wands";
+				description="For Wands";
+		    icon="set:dayz_inventory image:missing";		    
+				attachmentSlots[]=
+				{
+          "Card2Diamond",
+          "Card3Diamond",
+          "Card4Diamond",
+          "Card5Diamond",
+          "Card6Diamond",
+          "Card7Diamond",
+          "Card8Diamond",
+          "Card9Diamond",
+          "Card10Diamond",
+          "CardJackDiamond",
+          "CardQueenDiamond",
+          "CardKingDiamond",
+          "CardAceDiamondExtra",
+				};
+			};
+		};
+	};
+
+  class SRP_PlayingCard_tarot_cupsace: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsace";
+    displayName="Card - Ace of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsace_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsking: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsking";
+    displayName="Card - King of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsking_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsqueen: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsqueen";
+    displayName="Card - Queen of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsqueen_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsknight: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsknight";
+    displayName="Card - Knight of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsknight_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupspage: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupspage";
+    displayName="Card - Page of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupspage_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupstwo: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupstwo";
+    displayName="Card - 2 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupstwo_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsthree: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsthree";
+    displayName="Card - 3 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsthree_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsfour: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsfour";
+    displayName="Card - 4 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsfour_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsfive: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsfive";
+    displayName="Card - 5 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsfive_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupssix: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupssix";
+    displayName="Card - 6 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupssix_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsseven: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsseven";
+    displayName="Card - 7 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsseven_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupseight: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupseight";
+    displayName="Card - 8 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupseight_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsnine: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsnine";
+    displayName="Card - 9 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsnine_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_cupsten: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="cupsten";
+    displayName="Card - 10 of Cups";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_cupsten_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+
+  class SRP_PlayingCard_tarot_pentaclesace: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesace";
+    displayName="Card - Ace of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesace_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesking: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesking";
+    displayName="Card - King of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesking_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesqueen: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesqueen";
+    displayName="Card - Queen of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesqueen_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesknight: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesknight";
+    displayName="Card - Knight of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesknight_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclespage: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclespage";
+    displayName="Card - Page of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclespage_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclestwo: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclestwo";
+    displayName="Card - 2 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclestwo_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesthree: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesthree";
+    displayName="Card - 3 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesthree_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesfour: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesfour";
+    displayName="Card - 4 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesfour_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesfive: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesfive";
+    displayName="Card - 5 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesfive_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclessix: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclessix";
+    displayName="Card - 6 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclessix_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesseven: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesseven";
+    displayName="Card - 7 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesseven_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentacleseight: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentacleseight";
+    displayName="Card - 8 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentacleseight_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesnine: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesnine";
+    displayName="Card - 9 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesnine_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_pentaclesten: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="pentaclesten";
+    displayName="Card - 10 of Pentacles";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_pentaclesten_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+
+  class SRP_PlayingCard_tarot_swordsace: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsace";
+    displayName="Card - Ace of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsace_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsking: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsking";
+    displayName="Card - King of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsking_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsqueen: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsqueen";
+    displayName="Card - Queen of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsqueen_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsknight: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsknight";
+    displayName="Card - Knight of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsknight_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordspage: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordspage";
+    displayName="Card - Page of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordspage_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordstwo: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordstwo";
+    displayName="Card - 2 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordstwo_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsthree: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsthree";
+    displayName="Card - 3 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsthree_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsfour: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsfour";
+    displayName="Card - 4 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsfour_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsfive: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsfive";
+    displayName="Card - 5 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsfive_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordssix: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordssix";
+    displayName="Card - 6 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordssix_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsseven: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsseven";
+    displayName="Card - 7 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsseven_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordseight: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordseight";
+    displayName="Card - 8 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordseight_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsnine: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsnine";
+    displayName="Card - 9 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsnine_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_swordsten: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="swordsten";
+    displayName="Card - 10 of Swords";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_swordsten_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+
+  class SRP_PlayingCard_tarot_wandsace: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsace";
+    displayName="Card - Ace of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsace_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsking: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsking";
+    displayName="Card - King of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsking_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsqueen: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsqueen";
+    displayName="Card - Queen of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsqueen_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsknight: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsknight";
+    displayName="Card - Knight of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsknight_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandspage: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandspage";
+    displayName="Card - Page of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandspage_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandstwo: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandstwo";
+    displayName="Card - 2 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandstwo_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsthree: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsthree";
+    displayName="Card - 3 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsthree_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsfour: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsfour";
+    displayName="Card - 4 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsfour_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsfive: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsfive";
+    displayName="Card - 5 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsfive_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandssix: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandssix";
+    displayName="Card - 6 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandssix_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsseven: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsseven";
+    displayName="Card - 7 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsseven_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandseight: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandseight";
+    displayName="Card - 8 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandseight_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsnine: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsnine";
+    displayName="Card - 9 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsnine_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };
+  class SRP_PlayingCard_tarot_wandsten: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="wandsten";
+    displayName="Card - 10 of Wands";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_wandsten_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+
+  class SRP_PlayingCard_tarot_chariot: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="chariot";
+    displayName="Card - The Chariot";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_chariot_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_death: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="death";
+    displayName="Card - Death";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_death_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_devil: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="devil";
+    displayName="Card - The Devil";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_devil_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_emperor: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="emperor";
+    displayName="Card - The Emperor";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_emperor_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_empress: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="empress";
+    displayName="Card - The Empress";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_empress_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_fool: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="fool";
+    displayName="Card - The Fool";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_fool_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_fortune: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="fortune";
+    displayName="Card - Fortune";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_fortune_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_hangedman: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="hangedman";
+    displayName="Card - The Hangedman";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_hangedman_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_hermit: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="hermit";
+    displayName="Card - The Hermit";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_hermit_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_hierophant: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="hierophant";
+    displayName="Card - The Hierophant";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_hierophant_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_highpriestess: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="highpriestess";
+    displayName="Card - The High Priestess";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_highpriestess_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_judgement: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="judgement";
+    displayName="Card - Judgement";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_judgement_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_justice: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="justice";
+    displayName="Card - Justice";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_justice_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_lovers: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="lovers";
+    displayName="Card - The Lovers";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_lovers_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_magician: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="magician";
+    displayName="Card - The Magician";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_magician_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_moon: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="moon";
+    displayName="Card - The Moon";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_moon_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_star: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="star";
+    displayName="Card - The Star";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_star_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_strength: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="strength";
+    displayName="Card - Strength";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_strength_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_sun: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="sun";
+    displayName="Card - The Sun";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_sun_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_temperance: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="temperance";
+    displayName="Card - Temperance";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_temperance_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_tower: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="tower";
+    displayName="Card - The Tower";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_tower_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  };  
+  class SRP_PlayingCard_tarot_world: SRP_PlayingCard_ColorBase  
+  {
+    scope=2;
+    color="world";
+    displayName="Card - The World";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_playingcardfront_tarot_world_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_playingcardbackworn_co.paa"
+    };
+  }; 
+
   //------------------------------ BASE BUILDING
 
 };

@@ -1406,6 +1406,12 @@ class CfgSlots
 		displayName="Ace of Spades";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+  class Slot_CardAceSpadeExtra
+  {
+		name="CardAceSpadeExtra";
+		displayName="Ace of Spades";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
 
   class Slot_Card2Club
   {
@@ -1482,6 +1488,12 @@ class CfgSlots
   class Slot_CardAceClub
   {
 		name="CardAceClub";
+		displayName="Ace of Clubs";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_CardAceClubExtra
+  {
+		name="CardAceClubExtra";
 		displayName="Ace of Clubs";
 		ghostIcon="set:dayz_inventory image:missing";
   };
@@ -1564,6 +1576,12 @@ class CfgSlots
 		displayName="Ace of Diamonds";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+  class Slot_CardAceDiamondExtra
+  {
+		name="CardAceDiamondExtra";
+		displayName="Ace of Diamonds";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
 
   class Slot_Card2Heart
   {
@@ -1640,6 +1658,12 @@ class CfgSlots
   class Slot_CardAceHeart
   {
 		name="CardAceHeart";
+		displayName="Ace of Hearts";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_CardAceHeartExtra
+  {
+		name="CardAceHeartExtra";
 		displayName="Ace of Hearts";
 		ghostIcon="set:dayz_inventory image:missing";
   };

@@ -191,6 +191,10 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\characters\glasses\data\eyepatch_CO.paa"
 		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\glasses\data\eyepatch.rvmat"
+		};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\characters\glasses\eyepatch_m.p3d";
