@@ -165,6 +165,136 @@ class CfgSoundShaders
 			{"Survivalists_Mods\sounds\ambience\data\tribal_400605_400809_20780_195313.ogg",1}
 		};
 	};
+
+  class Survivalists_Mods_Ambience_MonsterLowGrowl1_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl1.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl2_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl2.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl3_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl3.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl4_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl4.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl5_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl5.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl6_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl6.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl7_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl7.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl8_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl8.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl9_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl9.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl10_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl10.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl11_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl11.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl12_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl12.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl13_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl13.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl14_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl4.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl15_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl5.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl16_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowgrowl6.ogg",1}
+		};
+	};
+
+  class Survivalists_Mods_Ambience_MonsterLowPounding1_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowpounding1.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowPounding2_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\lowpounding2.ogg",1}
+		};
+	};
+
+  
 };
 class CfgSoundSets
 {
@@ -302,4 +432,134 @@ class CfgSoundSets
 			"Survivalists_Mods_Ambience_Tribal2_SoundShader"
 		};
 	};
+
+  class Survivalists_Mods_Ambience_MonsterLowGrowl1_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl1_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl2_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl2_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl3_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl3_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl4_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl4_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl5_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl5_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl6_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl6_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl7_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl7_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl8_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl8_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl9_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl9_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl10_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl10_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl11_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl11_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl12_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl12_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl13_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl13_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl14_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl14_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowl15_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowl15_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowGrowll6_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowGrowll6_SoundShader"
+		};
+	};
+
+  class Survivalists_Mods_Ambience_MonsterLowPounding1_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowPounding1_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_MonsterLowPounding2_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_MonsterLowPounding2_SoundShader"
+		};
+	};
+
+  
 };

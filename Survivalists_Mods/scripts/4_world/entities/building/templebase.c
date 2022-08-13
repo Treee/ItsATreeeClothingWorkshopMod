@@ -1,17 +1,17 @@
-class TempleBase extends House
+class SRP_AmbientSoundEmiter_Base extends House
 {
   protected EffectSound 		m_TempleSound;
   protected int m_SoundIndex;
   protected int m_SoundIndexMax;
 
-  void TempleBase() 
+  void SRP_AmbientSoundEmiter_Base() 
   {
-    m_SoundIndexMax = GetTempleSounds().Count();
+    m_SoundIndexMax = GetTemplateSounds().Count();
     m_SoundIndex = Math.RandomIntInclusive(0, m_SoundIndexMax);
     GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(RequestSoundEvent, 500, false);
   }
 
-  void ~TempleBase()
+  void ~SRP_AmbientSoundEmiter_Base()
   {
     StopLoopSound();
   }
@@ -19,10 +19,10 @@ class TempleBase extends House
 	string GetSoundSet()
 	{
     m_SoundIndex = ((m_SoundIndex + 1) % m_SoundIndexMax);
-		return GetTempleSounds().Get(m_SoundIndex);
+		return GetTemplateSounds().Get(m_SoundIndex);
 	}
 
-  TStringArray GetTempleSounds()
+  TStringArray GetTemplateSounds()
   {
     return {
       "Survivalists_Mods_Ambience_Chanting1_SoundSet",
@@ -74,5 +74,33 @@ class TempleBase extends House
   }
 };
 
-class Land_srp_templebeacon extends TempleBase{};
+class SRP_AmbientSoundEmiter_BunkerMonster extends SRP_AmbientSoundEmiter_Base
+{
+  override TStringArray GetTemplateSounds()
+  {
+    return {
+      "Survivalists_Mods_Ambience_MonsterLowGrowl1_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl2_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl3_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl4_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl5_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl6_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl7_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl8_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl9_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl10_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl11_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl12_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl13_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl14_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowl15_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowGrowll6_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowPounding1_SoundSet",
+      "Survivalists_Mods_Ambience_MonsterLowPounding2_SoundSet",
+    };
+  }
+};
+
+class Land_srp_templebeacon extends SRP_AmbientSoundEmiter_Base{};
+class Land_srp_bunkermonsterbeacon extends SRP_AmbientSoundEmiter_BunkerMonster{};
 

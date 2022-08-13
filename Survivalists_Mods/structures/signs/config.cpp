@@ -331,6 +331,16 @@ class CfgVehicles
 		};
 	}; 
 
+  class Land_srp_bunkermonsterbeacon : HouseNoDestruct
+	{
+		scope = 1;
+		model = "Survivalists_Mods\structures\signs\srp_templebeacon.p3d";
+		hiddenSelections[] =
+		{
+			"zbytek"
+		};
+	};  
+
   class SRP_ForestSign_Original_Kit: SRP_KitBase //new
 	{
 		scope=2;
