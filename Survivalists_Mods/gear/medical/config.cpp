@@ -59,6 +59,11 @@ class CfgVehicles
       "morphine"
     };
   };
+  
+  class InjectionVial: Inventory_Base
+  {
+    canBeSplit=1;
+  };
   //------------------------------------------- CUSTOM STUFF
   class SRP_MedicalKit_Kit: SRP_KitBase //new
 	{
