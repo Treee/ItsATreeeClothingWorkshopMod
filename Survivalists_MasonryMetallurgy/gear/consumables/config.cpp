@@ -34,6 +34,8 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=12;
+    absorbency=0;
+    varWetMax=0;
 		inventorySlot[]={};
 		isMeleeWeapon=1;
 		class DamageSystem
@@ -148,6 +150,8 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=24;
 		varStackMax=24;
+    absorbency=0;
+    varWetMax=0;
 		inventorySlot[]=
     {
       "SRP_RawOre1",
@@ -263,6 +267,8 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=10;
+    absorbency=0;
+    varWetMax=0;
 		inventorySlot[]={};
     hiddenSelections[]=
 		{
@@ -1606,6 +1612,8 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
+    absorbency=0;
+    varWetMax=0;
 		inventorySlot[]=
     {
       "SRP_RawCrystal1",
@@ -1965,7 +1973,8 @@ class CfgVehicles
 		model="Survivalists_MasonryMetallurgy\gear\consumables\srp_bucket.p3d";
 		weight=250;
 		itemSize[]={3,3};
-		absorbency=0.30000001;
+    absorbency=0;
+    varWetMax=0;
     varTemperatureMax=1500;
 		physLayer="item_small";
     class DamageSystem
@@ -2040,6 +2049,8 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
+    absorbency=0;
+    varWetMax=0;
 		varTemperatureMax=1500;
 		class DamageSystem
 		{
@@ -2225,6 +2236,8 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
+    absorbency=0;
+    varWetMax=0;
 		varTemperatureMax=1500;
 		class DamageSystem
 		{
@@ -2412,6 +2425,8 @@ class CfgVehicles
 		varQuantityMax=10;
 		varStackMax=10;    
     varTemperatureMax=500;
+    absorbency=0;
+    varWetMax=0;
 		inventorySlot[]=
     {
       "SRP_Ingot"
@@ -2539,6 +2554,8 @@ class CfgVehicles
 		varQuantityMax=20;
 		varStackMax=10;    
     varTemperatureMax=500;
+    absorbency=0;
+    varWetMax=0;
     inventorySlot[]=
     {
       "SRP_MetalPlate1",
@@ -2668,6 +2685,8 @@ class CfgVehicles
 		varQuantityMax=10;
 		varStackMax=5;    
     varTemperatureMax=500;
+    absorbency=0;
+    varWetMax=0;
     inventorySlot[]=
     {
       "SRP_MetalRod1",
@@ -2794,6 +2813,8 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
     varStackMax=99;
+		absorbency=0;
+    varWetMax=0;
 		varQuantityMax=500;
 		inventorySlot[]={};
 		class DamageSystem
