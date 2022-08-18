@@ -26,6 +26,10 @@ class SRP_Notebook extends Inventory_Base
 		{
 			return true;
 		}
+    if ( item.IsKindOf("DUB_Newspaper_1"))
+		{
+			return true;
+		}    
 		return false;
 	}
 
@@ -55,6 +59,10 @@ class SRP_Notebook extends Inventory_Base
 		{
 			return true;
 		}
+    if ( item.IsKindOf("DUB_Newspaper_1"))
+		{
+			return true;
+		} 
 		return false;  
   }
 
