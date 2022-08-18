@@ -45,13 +45,13 @@ class Craft_SRP_CrushLargeStone_CrudeTool extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -20;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
+		m_ResultSetFullQuantity[0] = -1;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
 		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
@@ -70,37 +70,63 @@ class Craft_SRP_CrushLargeStone_CrudeTool extends RecipeBase
 	{
     // 5% chance to find ore
     float chance = Math.RandomFloatInclusive(0,1);
-    if (chance >= 0.94)
+    if (chance > 0.89)
     {
-      array<string> randomOre = new array<string>;
-      randomOre.Insert("SRP_Mining_RawOre_Copper");
-      randomOre.Insert("SRP_Mining_RawOre_Iron");
-      randomOre.Insert("SRP_Mining_RawOre_Tin");
-      randomOre.Insert("SRP_Mining_RawOre_Gold");
-      randomOre.Insert("SRP_Mining_RawOre_Platinum");
-      string randomOreName = randomOre.GetRandomElement();
+      string randomOreName = GetOreTypes().GetRandomElement();
       ItemBase newOre = ItemBase.Cast(GetGame().CreateObjectEx(randomOreName, player.GetPosition(), false));      
       newOre.SetQuantity(Math.RandomIntInclusive(1,3));
       results.Insert(newOre);
     }
     // 1% change for crude tools to create a crystal
-    if (chance >= 0.98)
+    if (chance > 0.98)
     {
-      array<string> gemstones = new array<string>;
-      gemstones.Insert("SRP_Mining_UnCutGem_Aqua");
-      gemstones.Insert("SRP_Mining_UnCutGem_Amethyst");
-      gemstones.Insert("SRP_Mining_UnCutGem_Jade");
-      gemstones.Insert("SRP_Mining_UnCutGem_Amber");
-      gemstones.Insert("SRP_Mining_UnCutGem_Quartz");
-      gemstones.Insert("SRP_Mining_UnCutGem_Ruby");
-      gemstones.Insert("SRP_Mining_UnCutGem_Topaz");
-      string randomGemstone = gemstones.GetRandomElement();
+      string randomGemstone = string.Format("SRP_Mining_Crystal_%1_%2", GetCrystalTier().GetRandomElement(), GetCrystalTypes().GetRandomElement());
       ItemBase gemstone = ItemBase.Cast(GetGame().CreateObjectEx(randomGemstone, player.GetPosition(), false));      
       gemstone.SetQuantity(1);
       results.Insert(gemstone);
     }
 		Debug.Log("Craft_SRP_CrushLargeStone_CrudeTool: Recipe Do method called","recipes");
 	}
+
+  TStringArray GetOreTypes()
+  {
+    return {
+      "SRP_Mining_RawOre_Copper",
+      "SRP_Mining_RawOre_Iron",
+      "SRP_Mining_RawOre_Tin",
+      "SRP_Mining_RawOre_Gold",
+      "SRP_Mining_RawOre_Platinum",
+    };
+  }
+
+  TStringArray GetCrystalTypes()
+  {
+    return {
+      "Red",
+      "Blue",
+      "Green",
+      "Purple",
+      "LightBlue",
+      "Orange",
+      "Clear",
+      "Yellow",
+      "Pink",
+      "Rainbow",
+    };
+  }
+  TStringArray GetCrystalTier()
+  {
+    return {
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+    };
+  }
 };
 
 class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
@@ -193,21 +219,42 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
     // 3% change for crude tools to create a crystal
     if (chance >= 0.96)
     {
-      array<string> gemstones = new array<string>;
-      gemstones.Insert("SRP_Mining_UnCutGem_Aqua");
-      gemstones.Insert("SRP_Mining_UnCutGem_Amethyst");
-      gemstones.Insert("SRP_Mining_UnCutGem_Jade");
-      gemstones.Insert("SRP_Mining_UnCutGem_Amber");
-      gemstones.Insert("SRP_Mining_UnCutGem_Quartz");
-      gemstones.Insert("SRP_Mining_UnCutGem_Ruby");
-      gemstones.Insert("SRP_Mining_UnCutGem_Topaz");
-      string randomGemstone = gemstones.GetRandomElement();
+      string randomGemstone = string.Format("SRP_Mining_Crystal_%1_%2", GetCrystalTier().GetRandomElement(), GetCrystalTypes().GetRandomElement());
       ItemBase gemstone = ItemBase.Cast(GetGame().CreateObjectEx(randomGemstone, player.GetPosition(), false));      
       gemstone.SetQuantity(1);
       results.Insert(gemstone);
     }
 		Debug.Log("Craft_SRP_CrushStoneChunk_CrudeTool: Recipe Do method called","recipes");
 	}
+
+  TStringArray GetCrystalTypes()
+  {
+    return {
+      "Red",
+      "Blue",
+      "Green",
+      "Purple",
+      "LightBlue",
+      "Orange",
+      "Clear",
+      "Yellow",
+      "Pink",
+      "Rainbow",
+    };
+  }
+  TStringArray GetCrystalTier()
+  {
+    return {
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+    };
+  }
 };
 
 class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
