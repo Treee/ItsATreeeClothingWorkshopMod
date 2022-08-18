@@ -2,9 +2,9 @@ const int NTFKEY_SRP_TIREDNESS  = 42;
 
 modded class PlayerConstants
 { 
-  static const float BAREFOOT_MOVEMENT_BLEED_MODIFIER = 0.015;
-  static const int CHECK_EVERY_N_STEP = 200;
-	static const float SHOES_MOVEMENT_DAMAGE_PER_STEP = 0.015;	
+  static const float BAREFOOT_MOVEMENT_BLEED_MODIFIER = 0.005;
+  static const int CHECK_EVERY_N_STEP = 500;
+	static const float SHOES_MOVEMENT_DAMAGE_PER_STEP = 0.005;	
 
 	static const float BLOOD_REGEN_RATE_PER_SEC				= 0.2; 	// default .3
 	static const float DAMAGE_ZONE_BLOOD_REGEN_MODIFIER 	= 0.5; //default 0.7

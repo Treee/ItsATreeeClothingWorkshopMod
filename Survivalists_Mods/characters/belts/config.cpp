@@ -312,7 +312,8 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Gloves",
-      "Hips"
+      "Hips",
+      "Extra"
 		};
 		simulation="clothing";
 		vehicleClass="Clothing";
