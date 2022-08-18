@@ -214,7 +214,7 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Crudly Cut Gem";
+		m_Name = "Cut Gem - Crude";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 8;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -224,7 +224,7 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = 8;//-1 = disable check
+		m_MinQuantityIngredient[0] = 1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -240,7 +240,7 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = -8;// 0 = do nothing
+		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
