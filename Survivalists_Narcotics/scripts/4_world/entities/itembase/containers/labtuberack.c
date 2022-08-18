@@ -77,7 +77,8 @@ class SRP_LabTubeRack extends ItemBase
       labtube = SRP_LabTube_Colorbase.Cast(FindAttachmentBySlotName(slotName));
       if (labtube)
       {
-        labtube.AddHealth(-10); // 10 damage per use
+        // labtube.AddHealth(-10); // 10 damage per use
+        labtube.AddQuantity(-10); // 10 damage per use
       }
     }
   }
