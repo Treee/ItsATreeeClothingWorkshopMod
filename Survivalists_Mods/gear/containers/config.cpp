@@ -44,67 +44,7 @@ class CfgVehicles
 			"SRP_Teddy6",
 			"SRP_Teddy7",
 		};
-  };
-
-  //----------------------------------------- MODDED OVERRIDE
-  class DUB_Newspaper_1: Inventory_Base
-	{
-    inventorySlot[]+=
-		{
-			"Book_slot",
-			"OpenBook",
-			"Book1",
-			"Book2",
-			"Book3",
-			"Book4",
-			"Book5",
-			"Book6",
-			"Book7",
-			"Book8",
-			"Book9",
-			"Book10",
-			"Book11",
-			"Book12",
-			"Book13",
-			"Book14",
-			"Book15",
-			"Book16",
-			"Book17",
-			"Book18",
-			"Book19",
-			"Book20",
-			"Book21",
-			"Book22",
-			"Book23",
-			"Book24",
-			"Book25",
-			"Book26",
-			"Book27",
-			"Book28",
-			"Book29",
-			"Book30",
-			"Book31",
-			"Book32",
-			"Book33",
-			"Book34",
-			"Book35",
-			"Book36",
-			"Book37",
-			"Book38",
-			"Book39",
-			"Book40",
-			"Book41",
-			"Book42",
-			"Book43",
-			"Book44",
-			"Book45",
-			"Book46",
-			"Book47",
-			"Book48",
-			"Book49",
-			"Book50"
-		};
-  };
+  };  
 
   //--------------------------------------- Custom Stuff  
   class SRP_Fridge_Kit: SRP_KitBase //new
@@ -675,7 +615,21 @@ class CfgVehicles
 			"Gloves",
 			"Eyewear",
 			"Headgear",
-			"Pistol"
+			"Pistol",
+      "SRP_Teddy1",
+			"SRP_Teddy2",
+			"SRP_Teddy3",
+			"SRP_Teddy4",
+			"SRP_Book1",
+			"SRP_Book2",
+			"SRP_Book3",
+			"SRP_Book4",
+			"SRP_Book5",
+			"SRP_Book6",
+			"SRP_Book7",
+			"SRP_Book8",
+			"SRP_Book9",
+			"SRP_Book10",      
 		};
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -707,6 +661,38 @@ class CfgVehicles
 					"Pistol"
 				};
 				icon="shoulderright";
+			};
+      class Teddy
+			{
+				name="Teddy";
+				description="";
+				attachmentSlots[]=
+				{
+          "SRP_Teddy1",
+          "SRP_Teddy2",
+          "SRP_Teddy3",
+          "SRP_Teddy4",
+				};
+				icon="";
+			};
+      class Books
+			{
+				name="Books";
+				description="";
+				attachmentSlots[]=
+				{
+          "SRP_Book1",
+          "SRP_Book2",
+          "SRP_Book3",
+          "SRP_Book4",
+          "SRP_Book5",
+          "SRP_Book6",
+          "SRP_Book7",
+          "SRP_Book8",
+          "SRP_Book9",
+          "SRP_Book10",
+				};
+				icon="set:dayz_inventory image:book";
 			};
 		};
 	};

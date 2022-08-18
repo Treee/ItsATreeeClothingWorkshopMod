@@ -11,6 +11,128 @@ class CfgPatches
 
 class CfgSlots
 {
+  //==================== Books
+  class Slot_SRP_Book1
+	{
+		name="SRP_Book1";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book2
+	{
+		name="SRP_Book2";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book3
+	{
+		name="SRP_Book3";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book4
+	{
+		name="SRP_Book4";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book5
+	{
+		name="SRP_Book5";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book6
+	{
+		name="SRP_Book6";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book7
+	{
+		name="SRP_Book7";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book8
+	{
+		name="SRP_Book8";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book9
+	{
+		name="SRP_Book9";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book10
+	{
+		name="SRP_Book10";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book11
+	{
+		name="SRP_Book11";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book12
+	{
+		name="SRP_Book12";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book13
+	{
+		name="SRP_Book13";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book14
+	{
+		name="SRP_Book14";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book15
+	{
+		name="SRP_Book15";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book16
+	{
+		name="SRP_Book16";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book17
+	{
+		name="SRP_Book17";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book18
+	{
+		name="SRP_Book18";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book19
+	{
+		name="SRP_Book19";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+  class Slot_SRP_Book20
+	{
+		name="SRP_Book20";
+		displayName="Book";
+		ghostIcon="set:dayz_inventory image:book";
+	};
+
   //==================== Bunny Item Slots
   class Slot_SRP_CourierNote1
 	{
@@ -1767,6 +1889,127 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
+
+  class Proxysrp_book1_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book1"};
+		model="Survivalists_Mods\proxy\srp_book1_proxy.p3d";
+	};
+  class Proxysrp_book2_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book2"};
+		model="Survivalists_Mods\proxy\srp_book2_proxy.p3d";
+	};
+  class Proxysrp_book3_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book3"};
+		model="Survivalists_Mods\proxy\srp_book3_proxy.p3d";
+	};
+  class Proxysrp_book4_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book4"};
+		model="Survivalists_Mods\proxy\srp_book4_proxy.p3d";
+	};
+  class Proxysrp_book5_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book5"};
+		model="Survivalists_Mods\proxy\srp_book5_proxy.p3d";
+	};
+  class Proxysrp_book6_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book6"};
+		model="Survivalists_Mods\proxy\srp_book6_proxy.p3d";
+	};
+  class Proxysrp_book7_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book7"};
+		model="Survivalists_Mods\proxy\srp_book7_proxy.p3d";
+	};
+  class Proxysrp_book8_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book8"};
+		model="Survivalists_Mods\proxy\srp_book8_proxy.p3d";
+	};
+  class Proxysrp_book9_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book9"};
+		model="Survivalists_Mods\proxy\srp_book9_proxy.p3d";
+	};
+  class Proxysrp_book10_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book10"};
+		model="Survivalists_Mods\proxy\srp_book10_proxy.p3d";
+	};
+  class Proxysrp_book11_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book11"};
+		model="Survivalists_Mods\proxy\srp_book11_proxy.p3d";
+	};
+  class Proxysrp_book12_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book12"};
+		model="Survivalists_Mods\proxy\srp_book12_proxy.p3d";
+	};
+  class Proxysrp_book13_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book13"};
+		model="Survivalists_Mods\proxy\srp_book13_proxy.p3d";
+	};
+  class Proxysrp_book14_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book14"};
+		model="Survivalists_Mods\proxy\srp_book14_proxy.p3d";
+	};
+  class Proxysrp_book15_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book15"};
+		model="Survivalists_Mods\proxy\srp_book15_proxy.p3d";
+	};
+  class Proxysrp_book16_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book16"};
+		model="Survivalists_Mods\proxy\srp_book16_proxy.p3d";
+	};
+  class Proxysrp_book17_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book17"};
+		model="Survivalists_Mods\proxy\srp_book17_proxy.p3d";
+	};
+  class Proxysrp_book18_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book18"};
+		model="Survivalists_Mods\proxy\srp_book18_proxy.p3d";
+	};
+  class Proxysrp_book19_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book19"};
+		model="Survivalists_Mods\proxy\srp_book19_proxy.p3d";
+	};
+  class Proxysrp_book20_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Book20"};
+		model="Survivalists_Mods\proxy\srp_book20_proxy.p3d";
+	};
 
   class Proxysrp_displayhook_proxy1: ProxyAttachment
 	{
