@@ -55,6 +55,8 @@ class CfgAmmoTypes
 class CfgWeapons
 {
   class RifleCore;
+  class Pistol_Base;
+
 	class Rifle_Base: RifleCore
 	{
 		inventorySlot[]+=
@@ -91,6 +93,14 @@ class CfgWeapons
 	{
 		scope=0;
 	};
+
+  class Flaregun_Base: Pistol_Base
+	{
+    inventorySlot[]+=
+		{
+   		"SRP_GunDerringer"
+		};
+  };
 
 };
 
