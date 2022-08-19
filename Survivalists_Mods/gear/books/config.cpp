@@ -16,6 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
   class ItemBook;
+  class Inventory_Base;
 
   //----------------------------------------- MODDED OVERRIDE
   class DUB_Newspaper_1: Inventory_Base
