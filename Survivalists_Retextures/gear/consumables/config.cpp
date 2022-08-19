@@ -16,7 +16,13 @@ class CfgPatches
 class CfgVehicles
 {
   class Rag;
+  class SRP_Coinage_Platinum;
+  class SRP_Coinage_Iron;
+  class SRP_Coinage_Gold;
   class SRP_Coinage_GoldWorn;
+  class SRP_Coinage_Bronze;
+  class SRP_Coinage_Copper;
+
 //===================================== RAGS
   class Rag_Black: Rag
 	{
@@ -181,20 +187,6 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\consumables\data\srp_coinage_disciples_co.paa"
 		};
   };  
-  class SRP_Coinage_GoldWorn_Emporium: SRP_Coinage_GoldWorn
-  {
-		scope=2;
-		displayName="Metal Coin - Emporium";
-    color="Goldwornemporium";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\gear\consumables\data\srp_coinage_emporium_co.paa"
-		};
-  };  
   class SRP_Coinage_GoldWorn_SaltyCougar: SRP_Coinage_GoldWorn
   {
 		scope=2;
@@ -221,6 +213,91 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\gear\consumables\data\srp_coinage_cougartown_co.paa"
+		};
+  };  
+
+  class SRP_Coinage_Platinum_Emporium: SRP_Coinage_Platinum
+  {
+		scope=2;
+		displayName="Platinum Coin - Emporium";
+    color="emporium";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\consumables\data\srp_coinage_emporium_co.paa"
+		};
+  };
+  class SRP_Coinage_Iron_Emporium: SRP_Coinage_Iron
+  {
+		scope=2;
+		displayName="Iron Coin - Emporium";
+    color="emporium";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\consumables\data\srp_coinage_emporium_co.paa"
+		};
+  };  
+  class SRP_Coinage_Gold_Emporium: SRP_Coinage_Gold
+  {
+		scope=2;
+		displayName="Gold Coin - Emporium";
+    color="emporium";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\consumables\data\srp_coinage_emporium_co.paa"
+		};
+  };  
+  class SRP_Coinage_GoldWorn_Emporium: SRP_Coinage_GoldWorn
+  {
+		scope=2;
+		displayName="Worn Gold Coin - Emporium";
+    color="emporium";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\consumables\data\srp_coinage_emporium_co.paa"
+		};
+  };  
+  class SRP_Coinage_Bronze_Emporium: SRP_Coinage_Bronze
+  {
+		scope=2;
+		displayName="Bronze Coin - Emporium";
+    color="emporium";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\consumables\data\srp_coinage_emporium_co.paa"
+		};
+  };  
+  class SRP_Coinage_Copper_Emporium: SRP_Coinage_Copper
+  {
+		scope=2;
+		displayName="Copper Coin - Emporium";
+    color="emporium";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\consumables\data\srp_coinage_emporium_co.paa"
 		};
   };  
 };
