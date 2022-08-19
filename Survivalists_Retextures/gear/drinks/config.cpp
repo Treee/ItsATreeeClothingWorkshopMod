@@ -19,11 +19,18 @@ class CfgVehicles
   class Canteen;
   class SRP_MilitaryCanteen_Base;
 
+
+// Dillards " Lake Of Fire" Spiced Whiskey 
+// A family recipie passed down by the Dillard family in the hills of Kentucky for over 150 years. Will warm you right up.
+
+// Dillards Lucifers Tears
+// 190 proof hard liquor Drink spiced with pure Capsaicin extract , Not for the faint if heart.
+
   class SodaCan_BrimstoneBeer: SodaCan_ColorBase
 	{
 		scope=2;
 		displayName="Brimstone Beer";
-		descriptionShort="Canned beer found in the apocalypse.";
+		descriptionShort="At the end of a hard day of surviving nothing helps you relax like a cold beer. Brewed by the Dillard family of Hart County Kentucky.";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\gear\drinks\data\brimstone_can_co.paa"
@@ -33,7 +40,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Lancaster Beer";
-		descriptionShort="Canned beer found in the apocalypse.";
+		descriptionShort="A Handcrafted luxury beer, Lancasters conjures a smooth enchanting flavor like nothing else, so sit back ,relax and stay for a spell.";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\gear\drinks\data\lancaster_can_co.paa"
