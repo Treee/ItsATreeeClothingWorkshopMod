@@ -28,6 +28,8 @@ class CfgVehicles
 	class BoonieHat_ColorBase;
   class FlatCap_ColorBase;
   class LeatherHat_ColorBase;
+  class OfficerHat;
+  class PoliceCap;
 	class SRP_TurkeyBeanie_ColorBase;
 	class SRP_BeanieHat_Turkey; // remove this eventually
   class SRP_FaceMaskSkull_ColorBase;
@@ -248,6 +250,72 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\baseball57.paa"
 		};
 	};
+  class BaseballCap_Black: BaseballCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_black_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_black_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_black_co.paa"
+		};
+	};
+  class BaseballCap_TTDBlack: BaseballCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\baseballcap_TTDBlack_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcap_TTDBlack_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcap_TTDBlack_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=25;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}},
+            {0.69999999,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}},
+            {0.5,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}},
+            {0.30000001,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}},
+            {0,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class BaseballCap_TTDWhite: BaseballCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\baseballcap_TTDWhite_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcap_TTDWhite_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcap_TTDWhite_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=25;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}},
+            {0.69999999,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}},
+            {0.5,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}},
+            {0.30000001,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}},
+            {0,	{	"Survivalists_Retextures\characters\headgear\data\baseballcap_TTD.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 
 	class BeanieHat_MTP: BeanieHat_ColorBase
 	{
@@ -452,6 +520,45 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\Ushanka57.paa"
 		};
 	};
+
+  class OfficerHat_Officer: OfficerHat
+  {
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\officerHat_dillard_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\officerHat_dillard_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\officerHat_dillard_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=35;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Retextures\characters\headgear\data\officerHat_dillard.rvmat"}},
+            {0.69999999,	{	"Survivalists_Retextures\characters\headgear\data\officerHat_dillard.rvmat"}},
+            {0.5,	{	"Survivalists_Retextures\characters\headgear\data\officerHat_dillard.rvmat"}},
+            {0.30000001,	{	"Survivalists_Retextures\characters\headgear\data\officerHat_dillard.rvmat"}},
+            {0,	{	"Survivalists_Retextures\characters\headgear\data\officerHat_dillard.rvmat"}}
+					};
+				};
+			};
+		};
+  };
+  class PoliceCap_Holiday: PoliceCap
+  {
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\policecap_dillard.paa",
+			"Survivalists_Retextures\characters\headgear\data\policecap_dillard.paa",
+			"Survivalists_Retextures\characters\headgear\data\policecap_dillard.paa"
+		};
+  };
 
 	class Bandana_65Black: Bandana_ColorBase
 	{

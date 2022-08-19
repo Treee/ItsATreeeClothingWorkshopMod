@@ -30,6 +30,18 @@ class CfgVehicles
   class Jeans_ColorBase;
   class LeatherPants_ColorBase;
 
+  class CargoPants_Officer: CargoPants_ColorBase
+  {
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\bdupants_officer_co.paa",
+			"Survivalists_Retextures\characters\pants\data\bdupants_officer_co.paa",
+			"Survivalists_Retextures\characters\pants\data\bdupants_officer_co.paa"
+		};
+  };
+
+
   class NBCPantsBase_Orange: NBCPantsBase
 	{
 		scope=2;

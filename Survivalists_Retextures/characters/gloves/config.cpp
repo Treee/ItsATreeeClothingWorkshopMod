@@ -234,6 +234,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\gloves\data\TacticalG57.paa"
 		};
 	};
+  class TacticalGloves_Officer: TacticalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\Dillard_OfficerGloves_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\Dillard_OfficerGloves_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\Dillard_OfficerGloves_co.paa"
+		};
+	};
 
 	class WorkingGloves_White: WorkingGloves_ColorBase
 	{

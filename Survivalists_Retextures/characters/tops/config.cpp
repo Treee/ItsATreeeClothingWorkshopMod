@@ -458,6 +458,26 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\tshirt_black_pes.paa"
 		};
 	};
+  class TShirt_Black: TShirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\shirt_planeblack_co.paa",
+			"Survivalists_Retextures\characters\tops\data\shirt_planeblack_co.paa",
+			"Survivalists_Retextures\characters\tops\data\shirt_planeblack_co.paa"
+		};
+	};
+  class TShirt_ThirstDevil: TShirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\TTD_shirt_co.paa",
+			"Survivalists_Retextures\characters\tops\data\TTD_shirt_co.paa",
+			"Survivalists_Retextures\characters\tops\data\TTD_shirt_co.paa"
+		};
+	};
 	class Hoodie_Orange: Hoodie_ColorBase
 	{
 		scope=2;
@@ -706,6 +726,26 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa",
 			"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa",
 			"Survivalists_Retextures\characters\tops\data\srp_jacket_Flecktarn_co.paa"
+		};
+	};
+  class TacticalShirt_Officer: TacticalShirt_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\officerJacket_dillard_co.paa",
+			"Survivalists_Retextures\characters\tops\data\officerJacket_dillard_co.paa",
+			"Survivalists_Retextures\characters\tops\data\officerJacket_dillard_co.paa"
+		};
+	};
+  class TacticalShirt_Olive: TacticalShirt_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\pcu5jacket_olive_co.paa",
+			"Survivalists_Retextures\characters\tops\data\pcu5jacket_olive_co.paa",
+			"Survivalists_Retextures\characters\tops\data\pcu5jacket_olive_co.paa"
 		};
 	};
   class Raincoat_Leather: Raincoat_ColorBase
@@ -2367,6 +2407,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\fbi_jumpsuit_top_blue_co.paa",
 			"Survivalists_Retextures\characters\tops\data\fbi_jumpsuit_top_blue_co.paa",
 			"Survivalists_Retextures\characters\tops\data\fbi_jumpsuit_top_blue_co.paa"
+		};
+	};
+  class JumpsuitJacket_Officer: JumpsuitJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\jumpsuit_top_officer_co.paa",
+			"Survivalists_Retextures\characters\tops\data\jumpsuit_top_officer_co.paa",
+			"Survivalists_Retextures\characters\tops\data\jumpsuit_top_officer_co.paa"
 		};
 	};
 
