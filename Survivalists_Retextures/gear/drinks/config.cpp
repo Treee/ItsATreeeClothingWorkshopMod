@@ -15,8 +15,30 @@ class CfgPatches
 
 class CfgVehicles
 {
+  class SodaCan_ColorBase;
   class Canteen;
   class SRP_MilitaryCanteen_Base;
+
+  class SodaCan_BrimstoneBeer: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Brimstone Beer";
+		descriptionShort="Canned beer found in the apocalypse.";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\drinks\data\brimstone_can_co.paa"
+		};
+	};
+  class SodaCan_LancasterBeer: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Lancaster Beer";
+		descriptionShort="Canned beer found in the apocalypse.";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\drinks\data\lancaster_can_co.paa"
+		};
+	};
 
 	class SRP_MilitaryCanteen_OD: SRP_MilitaryCanteen_Base
 	{
