@@ -25,6 +25,7 @@ class CfgVehicles
   class SRP_FacialHairGoatee_Colorbase;
   class SRP_FacialHairBeard_Colorbase;
   class SRP_FacialHairChops_Colorbase;
+  class SRP_JapaneseDemonMask_ColorBase;
 
 	class SurgicalMask_Black: SurgicalMask
 	{
@@ -518,6 +519,32 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\masks\data\srp_m50gasmask_co_Snow.paa"
 		};
 	};
+
+  class SRP_JapaneseDemonMask_Default: SRP_JapaneseDemonMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_japanesedemonmask_co.paa"
+		};
+	};
+  class SRP_JapaneseDemonMask_Inverse: SRP_JapaneseDemonMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_japanesedemonmask_difference_co.paa"
+		};
+	};
+
 
   //======================================= REMOVE EVENTUALLY
 

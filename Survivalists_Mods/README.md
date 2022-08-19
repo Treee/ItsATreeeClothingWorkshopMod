@@ -878,7 +878,11 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "The Witch's Altar" (https://skfb.ly/6XROq) by sunnytrashpanda is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Japanese demon mask" (https://skfb.ly/6SMqI) by Eques_inferno is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - "Tarot Cards" https://spells8.com/wp-content/uploads/2021/03/Printable-Tarot-Cards-Rider-Waite-Full-Deck.pdf
+
+- "Fire head mask" (https://skfb.ly/ouSsM) by VALIDOL is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
