@@ -3499,6 +3499,7 @@ class CfgVehicles
 			"Gloves",
 			"Vest",
 			"Headgear",
+      "Beard","EarRings","Rings","Wig","Coat","Scarf","Extra","LeftHand1",
 			"Knife",
 			"VestGrenadeA",
 			"VestGrenadeB",
@@ -3567,7 +3568,8 @@ class CfgVehicles
 					"Back",
 					"Hips",
 					"Legs",
-					"Feet"
+					"Feet",
+          "Beard","EarRings","Rings","Wig","Coat","Scarf","Extra","LeftHand1"
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};
@@ -3629,6 +3631,7 @@ class CfgVehicles
 			"Gloves",
 			"Vest",
 			"Headgear",
+      "Beard","EarRings","Rings","Wig","Coat","Scarf","Extra","LeftHand1",
 			"Knife",
 			"VestGrenadeA",
 			"VestGrenadeB",
@@ -3697,7 +3700,8 @@ class CfgVehicles
 					"Back",
 					"Hips",
 					"Legs",
-					"Feet"
+					"Feet",
+          "Beard","EarRings","Rings","Wig","Coat","Scarf","Extra","LeftHand1"
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};
@@ -3789,6 +3793,7 @@ class CfgVehicles
 			"Gloves",
 			"Vest",
 			"Headgear",
+      "Beard","EarRings","Rings","Wig","Coat","Scarf","Extra","LeftHand1",
 			"Knife",
 			"VestGrenadeA",
 			"VestGrenadeB",
@@ -3857,7 +3862,8 @@ class CfgVehicles
 					"Back",
 					"Hips",
 					"Legs",
-					"Feet"
+					"Feet",
+          "Beard","EarRings","Rings","Wig","Coat","Scarf","Extra","LeftHand1"
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};
@@ -3923,6 +3929,7 @@ class CfgVehicles
 			"Gloves",
 			"Vest",
 			"Headgear",
+      "Beard","EarRings","Rings","Wig","Coat","Scarf","Extra","LeftHand1",
 			"Knife",
 			"VestGrenadeA",
 			"VestGrenadeB",
@@ -3995,7 +4002,8 @@ class CfgVehicles
 					"Back",
 					"Hips",
 					"Legs",
-					"Feet"
+					"Feet",
+          "Beard","EarRings","Rings","Wig","Coat","Scarf","Extra","LeftHand1"
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};
