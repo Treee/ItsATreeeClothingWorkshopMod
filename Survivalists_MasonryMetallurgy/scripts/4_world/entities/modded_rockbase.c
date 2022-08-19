@@ -45,25 +45,31 @@ modded class RockBase
     array<string> stoneChunks = new array<string>;
     if ( Class.CastTo(config, GetDayZGame().GetSRPMMConfig()) && Class.CastTo(miningConfig, config.IsInMiningQuarry(GetPosition())) )
     {
-      if (Math.RandomFloatInclusive(0,1) >= miningConfig.platinumChance)
+      float chance = Math.RandomFloatInclusive(0,1);
+      if (chance >= miningConfig.platinumChance)
       {
-        stoneChunks.Insert("SRP_Mining_StoneChunk_Platinum");      
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Platinum");
+        // Print("plat chance: " + chance);
       }
-      if (Math.RandomFloatInclusive(0,1) >= miningConfig.goldChance)
+      if (chance >= miningConfig.goldChance)
       {
         stoneChunks.Insert("SRP_Mining_StoneChunk_Gold");      
+        // Print("gold chance: " + chance);
       }
-      if (Math.RandomFloatInclusive(0,1) >= miningConfig.ironChance)
+      if (chance >= miningConfig.ironChance)
       {
         stoneChunks.Insert("SRP_Mining_StoneChunk_Iron");
+        // Print("iron chance: " + chance);
       }
-      if (Math.RandomFloatInclusive(0,1) >= miningConfig.copperChance)
+      if (chance >= miningConfig.copperChance)
       {
         stoneChunks.Insert("SRP_Mining_StoneChunk_Copper");
+        // Print("copper chance: " + chance);
       }
-      if (Math.RandomFloatInclusive(0,1) >= miningConfig.tinChance)
+      if (chance >= miningConfig.tinChance)
       {
-        stoneChunks.Insert("SRP_Mining_StoneChunk_Tin");          
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Tin");      
+        // Print("tin chance: " + chance);    
       }
     }
     return stoneChunks;

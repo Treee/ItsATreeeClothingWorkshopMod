@@ -30,6 +30,12 @@ modded class CAContinuousMineRock
 		return isValid;
 	}
 
+	override void CreatePrimaryItems(ActionData action_data)
+	{
+    super.CreatePrimaryItems(action_data);
+    m_DataLoaded = GetMiningData(action_data);
+	}
+
   bool IsMinableSurface(string surfaceType)
   {
     // Print("[IsMinableSurface] - " + surfaceType);
