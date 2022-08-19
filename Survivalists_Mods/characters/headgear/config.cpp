@@ -23,16 +23,11 @@ class CfgVehicles
   class Clothing;
   class Switchable_Base;
   class BalaclavaMask_ColorBase;
-  class BeanieHat_ColorBase;
 
 	class Msp_BunnyEarsHeadband: Clothing
 	{
     inventorySlot[]+={"Wig"};
-  };
-  class MassCatEars: BeanieHat_ColorBase
-  {
-    inventorySlot[]+={"Wig"};
-  };
+  };  
 
   //-------------------------------------- BASE GAME OVERRIDE
   class BallisticHelmet_ColorBase: Clothing
@@ -148,6 +143,10 @@ class CfgVehicles
       "MARPATWinter",
       "EMP6",
     };
+  };
+  class MassCatEars: BeanieHat_ColorBase
+  {
+    inventorySlot[]+={"Wig"};
   };
   class Ushanka_ColorBase: Clothing
 	{

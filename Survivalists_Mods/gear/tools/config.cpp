@@ -169,6 +169,21 @@ class CfgVehicles
 
   // ---------------------------- Custom Stuff
 
+  class HammerMint_Emporium: Hammer
+	{
+		scope=2;
+		displayName="Coin Minter - Emporium";
+		descriptionShort="This hammer smashes the imprint of a die onto a metal coin";
+    color="emporium";
+	};
+  class HammerMint_Bazaar: Hammer
+	{
+		scope=2;
+		displayName="Coin Minter - Bazaar";
+		descriptionShort="This hammer smashes the imprint of a die onto a metal coin";
+    color="bazaar";
+	};
+
   class SRP_Heatpack: Heatpack
 	{
 		scope=2;
