@@ -285,6 +285,19 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_biomassresearch_co.paa"
 		};
 	};
+  class SRP_ReadableBook_FoodInTheForests: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Food In The Forests";
+		author="Jack Hoglund";
+		file="Survivalists_Books\gear\books\data\book_foodintheforest.html";
+		displayName="Food In The Forests";
+		descriptionShort="Pages worn thin, drips and drops of dried food are seen on each and every page.";
+		hiddenSelectionsTextures[]=
+		{
+		  "Survivalists_Books\gear\books\data\book_foodintheforest_co.paa"
+		};
+	};
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
