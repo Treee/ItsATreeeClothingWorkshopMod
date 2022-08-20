@@ -26,6 +26,7 @@ class CfgVehicles
   class SRP_FacialHairBeard_Colorbase;
   class SRP_FacialHairChops_Colorbase;
   class SRP_JapaneseDemonMask_ColorBase;
+  class SRP_JojoMask_ColorBase;
 
 	class SurgicalMask_Black: SurgicalMask
 	{
@@ -545,6 +546,18 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_JojoMask_Default: SRP_JojoMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_jojomask_co.paa"
+		};
+	};
 
   //======================================= REMOVE EVENTUALLY
 

@@ -884,6 +884,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Fire head mask" (https://skfb.ly/ouSsM) by VALIDOL is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "JOJO Ishikamen stone mask" (https://skfb.ly/ouDGT) by DopamineWarlock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Skeleton head bust | Skull with fabric | LowPoly" (https://skfb.ly/ow7xK) by mezuna is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic
