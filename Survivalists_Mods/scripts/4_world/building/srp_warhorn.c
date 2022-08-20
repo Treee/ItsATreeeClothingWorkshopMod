@@ -14,6 +14,7 @@ class Land_srp_warhorn_large extends House
   {
     m_IsPlayingSound = isPlaying;
     SetSynchDirty();
+    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(ResetPlaying, 1000, false);
   }
 
   override void OnVariablesSynchronized()
@@ -28,14 +29,11 @@ class Land_srp_warhorn_large extends House
   void PlaySound()
   {
     PlaySoundSet(m_ActiveSound, GetHornSounds().GetRandomElement(), 0, 0);
-    // GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(ResetPlaying, 8640000, false);
-    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(ResetPlaying, 8640000, false);
   }
 
   void ResetPlaying()
   {
-    m_IsPlayingSound = false;
-    SetSynchDirty();
+    SetPlaying(false);
   }
 
   bool IsPlaying()
@@ -58,11 +56,4 @@ class Land_srp_warhorn_large extends House
       "Survivalists_Mods_Ambience_WarHorn10_SoundSet",
     };
   }
-
-  override void SetActions()
-	{
-    super.SetActions();
-
-    AddAction(ActionBlowIntoHorn);
-	}
 };

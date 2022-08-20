@@ -1,4 +1,4 @@
-  class CfgPatches
+class CfgPatches
 {
 	class Survivalists_Mods_Vehicles_Parts
 	{

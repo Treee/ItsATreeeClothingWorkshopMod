@@ -2,7 +2,7 @@ class ActionBlowIntoHornCB extends ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime( UATimeSpent.FIREPLACE_IGNITE );
+		m_ActionData.m_ActionComponent = new CAContinuousTime( 9.0 );
 	}
 };
 
@@ -11,17 +11,15 @@ class ActionBlowIntoHorn extends ActionContinuousBase
 	void ActionBlowIntoHorn()
 	{
 		m_CallbackClass = ActionBlowIntoHornCB;
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_CRAFTING;
-		m_FullBody = true;
-		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_TAKETEMPSELF;
 		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;	
 		m_Text = "Blow Horn";
 	}
 
 	override void CreateConditionComponents()  
 	{	
-		m_ConditionTarget = new CCTNonRuined( UAMaxDistances.DEFAULT );
-		m_ConditionItem = new CCINotPresent;
+		m_ConditionItem = new CCINone;
+		m_ConditionTarget = new CCTCursor;
 	}
 		
 	override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
@@ -31,7 +29,20 @@ class ActionBlowIntoHorn extends ActionContinuousBase
 
 		if ( warhornTarget )
 		{			
-      return !warhornTarget.IsPlaying();
+      if (!warhornTarget.IsPlaying())
+      {
+        if ( GetGame().IsDedicatedServer() )
+        {
+          return true;
+        }
+        string name = warhornTarget.GetActionComponentName(target.GetComponentIndex());
+        // Print("what am i looking at? " + name);
+        name.ToLower();
+        if (name == "component01")
+        {
+          return true;
+        }
+      }
 		}
 		return false;
 	}
@@ -45,6 +56,10 @@ class ActionBlowIntoHorn extends ActionContinuousBase
 		if ( warhornTarget )
 		{			
       warhornTarget.SetPlaying(true);
+    }
+    if (action_data.m_MainItem)
+    {
+      action_data.m_MainItem.Delete();
     }
 	}
 };
