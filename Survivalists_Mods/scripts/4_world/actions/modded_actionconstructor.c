@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
+		actions.Insert(ActionBlowIntoHorn); 
+
 		actions.Insert(ActionToggleMuteTransmitter);  
 		actions.Insert(ActionInteractWithGUICraftingWorkbench);
     actions.Insert(ActionTeleportToEvent);

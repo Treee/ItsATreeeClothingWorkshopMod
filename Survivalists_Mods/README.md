@@ -888,6 +888,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Skeleton head bust | Skull with fabric | LowPoly" (https://skfb.ly/ow7xK) by mezuna is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Stylised Norse Horn" (https://skfb.ly/ouWtz) by Cleo Renshaw is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Viking War Horn" (https://skfb.ly/6AyR8) by Jairo Cardenas is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

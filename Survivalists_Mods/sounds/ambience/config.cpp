@@ -294,6 +294,76 @@ class CfgSoundShaders
 		};
 	};
 
+  class Survivalists_Mods_Ambience_WarHorn1_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn1.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn2_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn2.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn3_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn3.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn4_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn4.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn5_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn5.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn6_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn6.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn7_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn7.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn8_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn8.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn9_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn9.ogg",1}
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn10_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\ambience\data\warhorn10.ogg",1}
+		};
+	};
   
 };
 class CfgSoundSets
@@ -561,5 +631,74 @@ class CfgSoundSets
 		};
 	};
 
-  
+  class Survivalists_Mods_Ambience_WarHorn1_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn1_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn2_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn2_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn3_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn3_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn4_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn4_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn5_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn5_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn6_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn6_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn7_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn7_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn8_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn8_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn9_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn9_SoundShader"
+		};
+	};
+  class Survivalists_Mods_Ambience_WarHorn10_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_WarHorn10_SoundShader"
+		};
+	};
 };

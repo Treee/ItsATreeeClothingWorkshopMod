@@ -17,6 +17,22 @@ class CfgVehicles
 {
 	class HouseNoDestruct;	
   
+  class Land_srp_warhorn_large: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\sentry\srp_warhorn_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "stand"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\sentry\data\srp_warhorn_co.paa",
+      "Survivalists_Mods\structures\specific\sentry\data\srp_warhorn_stand_co.paa"
+		};
+	};
+
   class Land_srp_artifact_rubixcube_1: HouseNoDestruct
 	{
 		scope=1;
