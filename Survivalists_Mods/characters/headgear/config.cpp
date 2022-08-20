@@ -770,7 +770,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Full Helmet";
-		descriptionShort="Espen Industries. A slim helmet that coveres the whole head";
+		descriptionShort="Espen Industries. A slim helmet that covers the whole head";
 		model="Survivalists_Mods\characters\headgear\SRP_Maximus_Helmet_g.p3d";
 		repairableWithKits[]={8};
 		repairCosts[]={25};
@@ -910,6 +910,153 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_FireHead_ColorBase: Clothing
+	{
+		scope=2;
+		displayName="Fire Helmet";
+		descriptionShort="Espen Industries. A crude biohazard helmet that covers the whole head.";
+		model="Survivalists_Mods\characters\headgear\srp_fireheadgear_g.p3d";
+		repairableWithKits[]={8};
+		repairCosts[]={25};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		rotationFlags=2;
+		weight=1200;
+		itemSize[]={4,3};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Mich2001"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_fireheadgear_co.paa"
+		};
+    rootClassName="";
+    colorVariants[]={};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\srp_fireheadgear_m.p3d";
+			female="Survivalists_Mods\characters\headgear\srp_fireheadgear_m.p3d";
+		};
+    class Protection
+		{
+			biological=1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=80;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\srp_fireheadgear.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\srp_fireheadgear.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\srp_fireheadgear_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\srp_fireheadgear_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\srp_fireheadgear_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.35;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
   // -=============================== OLD MVS STUFF  
 
   class BaseballCap_MilitaryPatrolTan: BaseballCap_ColorBase  // new
