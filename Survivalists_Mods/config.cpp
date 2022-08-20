@@ -49,6 +49,8 @@ class CfgPatches
 			"DZ_Scripts",
       "DZM_VPPAdminToolsScripts", // VPP logging enhancement
       "Mass_Textures", // MassNBC_Bag, removing admin compass, cat ears
+      "Ragged_Eyepatch", //windstride
+      "Eyepatch", //windstride
       "Notes_Gear", // WrittenNote from notes
       "deerisle", // for the map (security door)      
       "Deerisle_Security_System", // overriding air craft carrier loot

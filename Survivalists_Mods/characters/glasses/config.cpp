@@ -19,6 +19,19 @@ class CfgVehicles
   class Clothing;
   class NVGoggles;
   class AviatorGlasses;
+  // ======================= Modded stuff
+  class Eyepatch: Clothing
+  {
+    inventorySlot[]+={      
+      "Extra"
+    };
+  };
+  class Ragged_Eyepatch: Clothing
+  {
+    inventorySlot[]+={      
+      "Extra"
+    };
+  };
   // ------------------------------ Custom Stuff
 
   class SRP_NVGoggles_Default: NVGoggles
@@ -170,7 +183,11 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		rotationFlags=16;
-		inventorySlot="Eyewear";
+    inventorySlot[]=
+		{
+			"Eyewear",
+      "Extra"
+		};
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
