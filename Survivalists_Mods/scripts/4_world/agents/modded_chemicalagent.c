@@ -15,33 +15,21 @@ modded class ChemicalAgent
       {
         invasibility = 6.0;
       }
-      else if (itemInHands.GetType() == "DUB_Mutantsyringe_Pure")
+      else if (itemInHands.GetType().Contains("DUB_Mutantsyringe"))
       {
         invasibility = 15.0;
       }
-      else if (itemInHands.GetType() == "DUB_Mutantsyringe_Pure_Accel")
+      else if (itemInHands.GetType().Contains("DUB_Mutant_Accel"))
       {
         invasibility = 10.0;
       }
-      else if (itemInHands.GetType() == "DUB_Mutantsyringe_Admin2")
+      else if (itemInHands.GetType().Contains("DUB_Mutant_Crude"))
       {
-        invasibility = 5.0;
+        invasibility = 15.0;
       }
-      else if (itemInHands.GetType() == "DUB_Mutantsyringe_Admin4")
+      else if (itemInHands.GetType().Contains("DUB_MutantSuppressor"))
       {
         invasibility = 8.0;
-      }
-      else if (itemInHands.GetType() == "DUB_Mutantsyringe_Pure_Sup")
-      {
-        invasibility = 4.5;
-      }
-      else if (itemInHands.GetType() == "DUB_Mutantsyringe_Crude")
-      {
-        invasibility = 3.5;
-      }
-      else if (itemInHands.GetType() == "DUB_Mutantsyringe_Crude_Cure")
-      {
-        invasibility = 7.5;
       }
       return invasibility;
     }

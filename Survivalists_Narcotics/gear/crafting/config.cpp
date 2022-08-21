@@ -308,6 +308,168 @@ class CfgVehicles
     };
   };
 
+  class SRP_LabTube_MutantLiquidClamIchor: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Clam Ichor";
+		descriptionShort="A single test tube. Contains some clam ichor. What are you doing with this?";
+    color="mutantliquidclamichor";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_yellow.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidFishIchor: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Fish Ichor";
+		descriptionShort="A single test tube. Contains some fish ichor. What are you doing with this?";
+    color="mutantliquidfishichor";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_yellow.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidBatteryAcid: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Battery Acid";
+		descriptionShort="A single test tube. Contains some battery acid. What are you doing with this?";
+    color="mutantliquidbatteryacid";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_yellow.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidIron: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Iron Shavings";
+		descriptionShort="A single test tube. Contains some iron shavings. What are you doing with this?";
+    color="mutantliquidiron";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_yellow.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidPureAdrenaline: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Pure Adrenaline";
+		descriptionShort="A single test tube. Contains some epinephrine. What are you doing with this?";
+    color="mutantliquidpureadrenaline";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_yellow.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidFat: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Liquid Fat";
+		descriptionShort="A single test tube. Contains some liquid fat. What are you doing with this?";
+    color="mutantliquidfat";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_yellow.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidMint: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Liquid Mint";
+		descriptionShort="A single test tube. Contains some liquid mint. What are you doing with this?";
+    color="mutantliquidmint";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_green.rvmat"
+    };
+  };
+  class SRP_LabTube_MutantLiquidAmanita: SRP_LabTube_Colorbase
+  {
+		scope=2;
+		displayName="Liquid Amanita";
+		descriptionShort="A single test tube. Contains some amanita liquid. What are you doing with this?";
+    color="mutantliquidamanita";
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=200;
+    stackedUnit="ml";
+    canBeSplit=1;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Narcotics\gear\crafting\data\testtube_green.rvmat"
+    };
+  };
+
+
   //========================================================== VIRUS/CURE TUBES
   class SRP_LabTube_Kuru: SRP_LabTube_Colorbase
   {

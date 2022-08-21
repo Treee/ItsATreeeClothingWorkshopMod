@@ -127,6 +127,15 @@ class SRP_LabTube_MutantLiquidSterilized extends SRP_LabTube_Colorbase
 class SRP_LabTube_MutantLiquidSterilizedIrradiated extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_MutantLiquidSterilizedIrradiatedNeutral extends SRP_LabTube_Colorbase{};
 
+class SRP_LabTube_MutantLiquidClamIchor extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidFishIchor extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidBatteryAcid extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidIron extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidPureAdrenaline extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidFat extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidMint extends SRP_LabTube_Colorbase{};
+class SRP_LabTube_MutantLiquidAmanita extends SRP_LabTube_Colorbase{};
+
 class SRP_LabTube_Kuru extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_Salmonella extends SRP_LabTube_Colorbase{};
 class SRP_LabTube_Influenza extends SRP_LabTube_Colorbase{};

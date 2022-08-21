@@ -938,4 +938,119 @@ class CfgVehicles
 		};
 	};
 
+
+  class SRP_Mutation_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Pure Mutant Embryo";
+		descriptionShort="Pure mutant genetic material. Apply work to evolve into more specific mutagens.";
+		model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2",
+      "TestTube3",
+      "TestTube4",
+      "TestTube5",
+      "TestTube6"
+    };
+	};
+
+  class SRP_Mutation_LongFall_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Mutated Long Fall Embryo";
+		descriptionShort="A mutated embryo evolved to create enhanced fibrous tissues in the legs.";
+    model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2"
+    };
+	};
+  class SRP_Mutation_Brawler_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Mutated Brawler Embryo";
+		descriptionShort="A mutated embryo evolved to enhance upper body strength.";
+    model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2"
+    };
+	};
+  class SRP_Mutation_BodyHeat_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Mutated Body Heat Embryo";
+		descriptionShort="A mutated embryo evolved to insulate the host from extreme temperatures.";
+    model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2"
+    };
+	};
+  class SRP_Mutation_Chameleon_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Mutated Chameleon Embryo";
+		descriptionShort="A mutated embryo evolved to mask the host from the undead.";
+    model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2"
+    };
+	};
+  class SRP_Mutation_Nocturnal_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Mutated Nocturnal Embryo";
+		descriptionShort="A mutated embryo evolved to increase light sensitivity during night time.";
+    model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2"
+    };
+	};
+  class SRP_Mutation_Aquatic_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Mutated Aquatic Embryo";
+		descriptionShort="A mutated embryo evolved to give the host pseudo gills and webbed feet.";
+    model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2"
+    };
+	};
+  class SRP_Mutation_Armor_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Mutated Juggernaut Embryo";
+		descriptionShort="A mutated embryo evolved to give the host stronger resolve.";
+    model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2"
+    };
+	};
+  class SRP_Mutation_IronStomach_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Mutated Iron Gut Embryo";
+		descriptionShort="A mutated embryo evolved to digest any material.";
+    model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+    attachments[]=
+    {
+      "TestTube1",
+      "TestTube2"
+    };
+	};
+
 };

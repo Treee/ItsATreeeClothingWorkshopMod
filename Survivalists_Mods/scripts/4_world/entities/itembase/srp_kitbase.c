@@ -562,3 +562,14 @@ class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
     }
   }
 };
+
+
+class SRP_Mutation_Kit extends SRP_IntermediateCraftingKitBase{};
+
+class SRP_Mutation_Brawler_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_Mutation_BodyHeat_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_Mutation_Chameleon_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_Mutation_Nocturnal_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_Mutation_Aquatic_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_Mutation_Armor_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_Mutation_IronStomach_Kit extends SRP_IntermediateCraftingKitBase{};
