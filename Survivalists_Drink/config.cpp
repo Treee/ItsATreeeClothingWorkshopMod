@@ -33,24 +33,7 @@ class CfgPatches
     };
   };
 };
-class cfgLiquidDefinitions
-{
-	class Vodka
-	{
-		type=2048;
-		displayName="Alcohol";
-		flammability=10;
-		class Nutrition
-		{
-			fullnessIndex=1;
-			energy=231;
-			water=15;
-			nutritionalIndex=75;
-			toxicity=0.050000001;
-			digestibility=2;
-		};
-	};
-};
+
 class CfgVehicles
 {
   class Bottle_Base;
