@@ -1,0 +1,1 @@
+class BoxCerealCrunchin_Coffee extends BoxCerealCrunchin{};

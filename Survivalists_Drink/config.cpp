@@ -36,10 +36,12 @@ class CfgPatches
 
 class CfgVehicles
 {
+  class Inventory_Base;
   class Bottle_Base;
   class Canteen;
   class BoxCerealCrunchin;
-  class Inventory_Base;
+  class SodaCan_ColorBase;
+  class WaterBottle;
 
 //====================================================== CUSTOM STUFF
   class SRPteabag: Inventory_Base
@@ -97,7 +99,7 @@ class CfgVehicles
 		model="Survivalists_Drink\drinks\wine.p3d";
 		weight=450;
 		itemSize[]={1,3};
-		destroyOnEmpty=0;
+		destroyOnEmpty=1;
 		varQuantityDestroyOnMin=0;
 		varLiquidTypeInit=2048;
 		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
@@ -171,7 +173,87 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"Survivalists_Drink\drinks\data\wineII_ca.paa","Survivalists_Drink\drinks\data\winelabel_swampwater_co.paa","Survivalists_Drink\drinks\data\winebottle_capII_co.paa"};
 	};
 
-//====================================================== FUNCTIONAL RETEXTURES
+  class Canteen_Glassware_Cup: Canteen
+	{
+		scope=2;
+		displayName="Glass Cup";
+		descriptionShort="A glass cup full of liquid.";
+		model="Survivalists_Drink\drinks\srp_glassware_cup.p3d";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\srp_glassware_cup_ca.paa"
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class SodaCan_in_B
+				{
+					soundSet="SodaCan_in_B_SoundSet";
+					id=202;
+				};
+				class WellPond_loop
+				{
+					soundSet="WellPond_loop_SoundSet";
+					id=209;
+				};
+				class WellBottle_loop
+				{
+					soundSet="WellBottle_loop_SoundSet";
+					id=210;
+				};
+				class pickup
+				{
+					soundSet="SodaCan_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="SodaCan_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_MilitaryCanteen_Base: Canteen
+	{
+		scope=0;
+		displayName="Military Canteen";
+		model="Survivalists_Drink\drinks\militarycanteen.p3d";
+    color="base";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\canteen_co.paa"
+		};	
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Drink\drinks\data\canteen.rvmat"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"Survivalists_Drink\drinks\data\canteen.rvmat"}},
+            {0.7,{"Survivalists_Drink\drinks\data\canteen.rvmat"}},
+            {0.5,{"Survivalists_Drink\drinks\data\canteen_damage.rvmat"}},
+            {0.3,{"Survivalists_Drink\drinks\data\canteen_damage.rvmat"}},
+            {0.0,{"Survivalists_Drink\drinks\data\canteen_destruct.rvmat"}}
+          };
+				};
+			};
+		};		
+	};
+  
   class SRP_BrownBottle: Bottle_Base
 	{
 		scope=2;
@@ -247,6 +329,83 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_BeerBottle: Bottle_Base
+	{
+		scope=2;
+		displayName="Beer Bottle";
+		descriptionShort="An old bottle filled with strong smelling beer. The label looks worn and old.";
+		model="Survivalists_Drink\drinks\beerbottle.p3d";
+		weight=450;
+		itemSize[]={1,3};
+		destroyOnEmpty=1;
+		varQuantityDestroyOnMin=0;
+		varLiquidTypeInit=2048;
+		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
+		varQuantityInit=500;
+		varQuantityMin=0;
+		varQuantityMax=500;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=20;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda.rvmat"}},
+            {0.69999999,{"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda.rvmat"}},
+            {0.5,{"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda.rvmat"}},
+            {0.30000001,{"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda.rvmat"}},
+            {0.0,{"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class GlassBottle_in_B
+				{
+					soundSet="GlassBottle_in_B_SoundSet";
+					id=202;
+				};
+				class GlassBottle_in_C
+				{
+					soundSet="GlassBottle_in_C_SoundSet";
+					id=203;
+				};
+				class WaterBottle_in_C1
+				{
+					soundSet="WaterBottle_in_C1_SoundSet";
+					id=204;
+				};
+				class GlassBottle_out_A
+				{
+					soundSet="GlassBottle_out_A_SoundSet";
+					id=205;
+				};
+				class GlassBottle_out_B
+				{
+					soundSet="GlassBottle_out_B_SoundSet";
+					id=206;
+				};
+				class WellPond_loop
+				{
+					soundSet="WellPond_loop_SoundSet";
+					id=209;
+				};
+				class WellBottle_loop
+				{
+					soundSet="WellBottle_loop_SoundSet";
+					id=210;
+				};
+			};
+		};
+	};
+
+//====================================================== FUNCTIONAL RETEXTURES
   class SRP_BrownBottle_LakeOfFire: SRP_BrownBottle
 	{
 		scope=2;
@@ -293,52 +452,6 @@ class CfgVehicles
 			"Survivalists_Drink\drinks\data\BrownBottle_luciferstears_ca.paa"
 		};	
   };
-  class Canteen_Glassware_Cup: Canteen
-	{
-		scope=2;
-		displayName="Glass Cup";
-		descriptionShort="A glass cup full of liquid.";
-		model="Survivalists_Drink\drinks\srp_glassware_cup.p3d";
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Drink\drinks\data\srp_glassware_cup_ca.paa"
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class SodaCan_in_B
-				{
-					soundSet="SodaCan_in_B_SoundSet";
-					id=202;
-				};
-				class WellPond_loop
-				{
-					soundSet="WellPond_loop_SoundSet";
-					id=209;
-				};
-				class WellBottle_loop
-				{
-					soundSet="WellBottle_loop_SoundSet";
-					id=210;
-				};
-				class pickup
-				{
-					soundSet="SodaCan_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="SodaCan_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
   class BoxCerealCrunchin_Coffee: BoxCerealCrunchin
 	{
 		scope=2;
@@ -356,4 +469,305 @@ class CfgVehicles
 	};
 
 //====================================================== PURE RETEXTURES
+
+	class SodaCan_Baltika0: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Baltika 0";
+		descriptionShort="A bottle of Baltika 0 beer";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\baltika0_co.paa"
+		};
+	};
+	class SodaCan_Baltika7: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Baltika 7";
+		descriptionShort="A bottle of Baltika 7 beer";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\baltika7_co.paa"
+		};
+	};
+	class SodaCan_Baltika9: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Baltika 9";
+		descriptionShort="A bottle of Baltika 9 beer";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\baltika9_co.paa"
+		};
+	};
+	class SodaCan_CherryCola: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Cherry Cola";
+		descriptionShort="A can of cherry cola";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\cola_cerry_co.paa"
+		};
+	};
+	class SodaCan_Lemonade: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Lemonade";
+		descriptionShort="A can of lemonade";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\limonad_co.paa"
+		};
+	};
+	class SodaCan_Tarhun: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Tarhun Soda";
+		descriptionShort="A can of tarhun soda";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\tarhun_co.paa"
+		};
+	};
+	class SodaCan_5HrEnergy: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Energy Drink";
+		descriptionShort="A bottle of '5 hour' energy drink.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\tonik_5h_co.paa"
+		};
+	};
+	class SodaCan_ElionVodka: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Elion";
+		descriptionShort="A can of Elion Vodka";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\tonik_Elion_co.paa"
+		};
+	};
+	class SodaCan_Cocktail: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Jaguar";
+		descriptionShort="A ready to drink cocktail. Party in a can";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\tonik_yagua_co.paa"
+		};
+	};  
+  class SodaCan_AKDigital: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="AK/AR Digital";
+		descriptionShort="A caffinated drink!";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\sodacan_akdigital_co.paa"
+		};
+	};
+  class SodaCan_DeadBull: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Dead Bull";
+		descriptionShort="A caffinated drink!";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\sodacan_deadbull_co.paa"
+		};
+	};
+  class SodaCan_FreshWater: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Whater H20";
+		descriptionShort="Canned water.";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\sodacan_freshwater_co.paa"
+		};
+	};
+  class SodaCan_Saltika: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Saltika";
+		descriptionShort="Why is this so salty?";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\sodacan_saltika_co.paa"
+		};
+	};
+
+  class WaterBottle_Pepsi: WaterBottle
+	{
+		scope=2;
+		displayName="Pepsi";
+		descriptionShort="A bottle of Pepsi";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottle_pepsi_co.paa"
+		};
+	};
+	class WaterBottle_ZhiguliBeer: WaterBottle
+	{
+		scope=2;
+		displayName="Zhiguli";
+		descriptionShort="A bottle of Zhiguli beer";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottle_sigul_co.paa"
+		};
+	};
+  class WaterBottle_Blood: WaterBottle
+	{
+		scope=2;
+		displayName="Red Bottle";
+		descriptionShort="A bottle of red liquid";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottle_blood_co.co.paa"
+		};
+		class Nutrition
+		{
+			toxicity=2;
+		};
+	};  
+
+  class SRP_BeerBottle_DoublTap: SRP_BeerBottle
+	{
+		scope=2;
+		displayName="Doubl Tap";
+		descriptionShort="Will this make me shoot better?";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda_doubletap_co.paa"
+		};
+	};
+  class SRP_BeerBottle_Electric: SRP_BeerBottle
+	{
+		scope=2;
+		displayName="Electric";
+		descriptionShort="Feel it in your fillings.";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda_electric_co.paa"
+		};
+	};
+  class SRP_BeerBottle_Juggernaut: SRP_BeerBottle
+	{
+		scope=2;
+		displayName="Juggernaut";
+		descriptionShort="All powerful!!";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda_jugger_co.paa"
+		};
+	};
+  class SRP_BeerBottle_Reviver: SRP_BeerBottle
+	{
+		scope=2;
+		displayName="Revival";
+		descriptionShort="Rejuvinate your thirst buds.";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda_reviver_co.paa"
+		};
+	};
+  class SRP_BeerBottle_Speedy: SRP_BeerBottle
+	{
+		scope=2;
+		displayName="Speedy";
+		descriptionShort="Can't run away from diabetes forever.";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda_speedy_co.paa"
+		};
+	};
 };

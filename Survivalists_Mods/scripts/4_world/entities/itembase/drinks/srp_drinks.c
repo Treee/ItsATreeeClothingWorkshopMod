@@ -1,19 +1,4 @@
-class SRP_SodaCanBase extends SodaCan_ColorBase{};
-
-class SRP_SodaCanBaltika0 extends SRP_SodaCanBase{};
-class SRP_SodaCanBaltika7 extends SRP_SodaCanBase{};
-class SRP_SodaCanBaltika9 extends SRP_SodaCanBase{};
-class SRP_SodaCanTarhun extends SRP_SodaCanBase{};
-class SRP_SodaCanElionVodka extends SRP_SodaCanBase{};
-class SRP_SodaCanCocktail extends SRP_SodaCanBase{};
-class SRP_SodaCanLemonade extends SRP_SodaCanBase{};
-class SRP_SodaCan_Medium_FreshWater extends SRP_SodaCanBase{};
-class SRP_SodaCan_Large_Saltika extends SRP_SodaCanBase{};
-class SRP_SodaCanCherryCola extends SRP_SodaCanBase{};
-class SRP_SodaCanAKDigital extends SRP_SodaCanBase{};
-
-
-class SRP_SodaBottle_DoublTap extends SRP_SodaCanBase
+modded class SRP_BeerBottle_DoublTap
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
@@ -25,7 +10,7 @@ class SRP_SodaBottle_DoublTap extends SRP_SodaCanBase
 	}
 };
 
-class SRP_SodaBottle_Electric extends SRP_SodaCanBase
+modded class SRP_BeerBottle_Electric
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
@@ -36,7 +21,7 @@ class SRP_SodaBottle_Electric extends SRP_SodaCanBase
 	}
 };
 
-class SRP_SodaBottle_Juggernaut extends SRP_SodaCanBase
+modded class SRP_BeerBottle_Juggernaut
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
@@ -47,7 +32,7 @@ class SRP_SodaBottle_Juggernaut extends SRP_SodaCanBase
 	}
 };
 
-class SRP_SodaBottle_Reviver extends SRP_SodaCanBase
+modded class SRP_BeerBottle_Reviver
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
@@ -59,7 +44,7 @@ class SRP_SodaBottle_Reviver extends SRP_SodaCanBase
 };
 
 
-class SRP_SodaCan_Slim_DeadBull extends SRP_SodaCanBase
+modded class SRP_BeerBottle_Speedy
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
@@ -70,7 +55,7 @@ class SRP_SodaCan_Slim_DeadBull extends SRP_SodaCanBase
 		consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
 	}	
 };
-class SRP_SodaBottle_Speedy extends SRP_SodaCanBase
+modded class SodaCan_DeadBull
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
@@ -81,7 +66,7 @@ class SRP_SodaBottle_Speedy extends SRP_SodaCanBase
 		consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
 	}	
 };
-class SRP_SodaCan5HrEnergy extends SRP_SodaCanBase
+modded class SodaCan_5HrEnergy
 {
   override void OnConsume(float amount, PlayerBase consumer)
 	{
