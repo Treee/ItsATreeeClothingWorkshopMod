@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "Survivalists_Drink\drinks\data\beer_nohq.paa";
+	texture = "Survivalists_Drink\drinks\data\winebottle_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "Survivalists_Drink\drinks\data\beer_smdi.paa";
+	texture = "Survivalists_Drink\drinks\data\winebottle_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

@@ -2,13 +2,13 @@ ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};
 forcedDiffuse[] = {0,0,0,1};
 emmisive[] = {0,0,0,1};
-specular[] = {1,1,1,1};
-specularPower = 600;
+specular[] = {0.1,0.1,0.1,0.1};
+specularPower = 100;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "Survivalists_Drink\drinks\data\beer_nohq.paa";
+	texture = "Survivalists_Drink\drinks\data\srp_glassware_cup_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-	texture = "#(argb,8,8,3)color(0,1,0,0.8,MC)";
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "Survivalists_Drink\drinks\data\beer_smdi.paa";
+	texture = "Survivalists_Drink\drinks\data\srp_glassware_cup_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-	texture = "#(ai,64,64,1)fresnel(1.54,5.58)";
+	texture = "#(ai,64,64,1)fresnel(1.54,1.58)";
 	uvSource = "tex";
 	class uvTransform
 	{

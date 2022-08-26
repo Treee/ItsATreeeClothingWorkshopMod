@@ -78,8 +78,7 @@ class CfgVehicles
       "LightBlue",
       "Green",
       "White",
-      "White",
-      "Red"
+      "White"
     };
   };
 
