@@ -26,4 +26,6 @@ class SRP_CandyCane extends Edible_Base
 		AddAction(ActionForceFeed);
 		AddAction(ActionEatFruit);
 	}
-}
+};
+
+class SRP_CandyCane1 extends SRP_CandyCane{};

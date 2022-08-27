@@ -42,11 +42,11 @@ class SRP_FoodCanRaw_Colorbase extends Edible_Base
 	}
 };
 
-class SRP_FoodCanRaw_Veggies extends SRP_FoodCanRaw_Colorbase {};
-class SRP_FoodCanRaw_Meat extends SRP_FoodCanRaw_Colorbase {};
-class SRP_FoodCanRaw_HumanMeat extends SRP_FoodCanRaw_Colorbase {};
-class SRP_FoodCanRaw_VeggieMeatCombo extends SRP_FoodCanRaw_Colorbase {};
-class SRP_FoodCanRaw_VeggieHumanMeatCombo extends SRP_FoodCanRaw_Colorbase {};
+class SRP_FoodCanRaw_Veggies extends SRP_FoodCanRaw_Colorbase{};
+class SRP_FoodCanRaw_Meat extends SRP_FoodCanRaw_Colorbase{};
+class SRP_FoodCanRaw_HumanMeat extends SRP_FoodCanRaw_Colorbase{};
+class SRP_FoodCanRaw_VeggieMeatCombo extends SRP_FoodCanRaw_Colorbase{};
+class SRP_FoodCanRaw_VeggieHumanMeatCombo extends SRP_FoodCanRaw_Colorbase{};
 
 
 class SRP_FoodCanPreserved_Colorbase extends Edible_Base 
@@ -63,7 +63,6 @@ class SRP_FoodCanPreserved_Veggies extends SRP_FoodCanPreserved_Colorbase
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_Veggies_Opened");
 	}
 };
-
 class SRP_FoodCanPreserved_Meat extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
@@ -71,7 +70,6 @@ class SRP_FoodCanPreserved_Meat extends SRP_FoodCanPreserved_Colorbase
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_Meat_Opened");
 	}
 };
-
 class SRP_FoodCanPreserved_HumanMeat extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
@@ -79,7 +77,6 @@ class SRP_FoodCanPreserved_HumanMeat extends SRP_FoodCanPreserved_Colorbase
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_HumanMeat_Opened");
 	}
 };
-
 class SRP_FoodCanPreserved_VeggieMeatCombo extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()
@@ -87,7 +84,6 @@ class SRP_FoodCanPreserved_VeggieMeatCombo extends SRP_FoodCanPreserved_Colorbas
 		ReplaceEdibleWithNew("SRP_PreservedFoodCan_VeggieMeatCombo_Opened");
 	}
 };
-
 class SRP_FoodCanPreserved_VeggieHumanMeatCombo extends SRP_FoodCanPreserved_Colorbase
 {
 	override void Open()

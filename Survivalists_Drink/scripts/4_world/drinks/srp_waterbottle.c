@@ -1,7 +1,7 @@
 class WaterBottle_Pepsi extends WaterBottle{};
 class WaterBottle_ZhiguliBeer extends WaterBottle
 {
-  override bool IsAlcohol()
+  override bool IsAlcoholDrink()
   {
     return true;
   }
@@ -9,7 +9,7 @@ class WaterBottle_ZhiguliBeer extends WaterBottle
 
 class WaterBottle_Blood extends WaterBottle
 {
-  override bool IsBlood()
+  override bool IsBloodDrink()
   {
     return true;
   }

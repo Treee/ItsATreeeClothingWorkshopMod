@@ -100,73 +100,886 @@ class CfgVehicles
     {
     };
   };
+  class BaseFoodStageTransitions;
   class FoodAnimationSources;
   class MeatStageTransitions;
 	class Edible_Base;
-  class HumanSteakMeat;
 
 	class Honey;
 	class Chips;
   class BakedBeansCan;
   class BakedBeansCan_Opened;
-  class BoxCerealCrunchin;
+  class Guts;
+  class TunaCan;
+  class TunaCan_Opened;
+  class PowderedMilk;
   class Snack_ColorBase;
-	class Zagorky_ColorBase;	
+  class Worm;
+	class Zagorky_ColorBase;
 
-//================================== CUSTOM STUFF
-  class SRPdonut: Edible_Base
+//================================== BASE GAME OVERRIDES
+  class BoxCerealCrunchin: Edible_Base
+  {
+    canBeSplit=1;
+  };
+
+  class Lard: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={7,100,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						50,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={4,300,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={4,250,100,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={5,250,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={7,100,0,1,0,16};
+					cooking_properties[]={100,330};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions
+			{
+				class Baked
+				{
+					class ToRotten
+					{
+						transition_to=6;
+						cooking_method=4;
+					};
+				};
+				class Dried
+				{
+					class ToBaked
+					{
+						transition_to=2;
+						cooking_method=1;
+					};
+					class ToBoiled
+					{
+						transition_to=3;
+						cooking_method=2;
+					};
+				};
+			};
+		};
+	};
+	class BearSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,400,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,350,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,350,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+	class CowSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,300,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,250,100,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,250,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+	class WolfSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,200,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,150,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,150,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+	class GoatSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,250,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,200,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,200,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+	class DeerSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,350,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,300,100,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,300,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+	class ChickenBreastMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,200,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,150,100,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={2,150,0,1,0};
+					cooking_properties[]={70,120,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+	class SheepSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,250,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,200,100,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,200,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+	class PigSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,300,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,250,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={2,250,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,50,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};			
+		};
+	};
+	class HumanSteakMeat: Edible_Base
 	{
 		scope=2;
-		displayName="Donut";
-		descriptionShort="It's a donut. How is this thing not stale yet? Oh well.";
-		model="Survivalists_Food\food\donut.p3d";
-		itemSize[]={2,2};
+		displayName="Steak";
+		descriptionShort="A weird smelling meat";
+		model="\dz\gear\food\meat_steak.p3d";
+		weight=0;
+		interactionWeight=1;
+		quantityBar=1;
+		absorbency=0.30000001;
+		itemSize[]={1,3};
+		varQuantityInit=150;
+		varQuantityMin=0;
+		varQuantityMax=150;
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={7,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={4,200,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={4,150,150,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={5,150,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={7,50,0,1,0,16};
+					cooking_properties[]={100,180};
+				};
+			};			
+		};
+	};
+	class CarpFilletMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,100,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						50,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,300,100,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,250,250,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,200,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};			
+		};
+	};
+	class MackerelFilletMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,100,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						50,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,600,100,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,400,400,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={2,400,130,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};			
+		};
+	};
+
+//================================== CUSTOM STUFF
+  class SRP_CandyCane: Worm
+	{
+		scope=2;
+		displayName="Candy Cane";
+		descriptionShort="A single candy cane";
+		model="Survivalists_Food\food\candycane.p3d";
+    rotationFlags=1;
+		weight=0;
+		itemSize[]={1,3};
 		varQuantityInit=100;
 		varQuantityMin=0;
 		varQuantityMax=100;
-		class Nutrition
+    hiddenSelections[]=
 		{
-			fullnessIndex=1;
-			energy=100;
-			water=10;
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\candycane_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Food\food\data\candycane.rvmat"
+		};
+    class Nutrition
+		{
+			fullnessIndex=2;
+			energy=150;
+			water=50;
 			nutritionalIndex=1;
 			toxicity=0;
 		};
-		class AnimEvents
+		class Food{};
+	};
+  class SRP_CandyCane1: SRP_CandyCane
+	{
+		scope=2;
+		displayName="Candy Cane";
+		descriptionShort="A single candy cane. Made from sugar.";
+		model="Survivalists_Food\food\candycane1.p3d";
+    hiddenSelections[]=
 		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class pickUpItem
-				{
-					soundSet="Zucchini_pickup_SoundSet";
-					id=797;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\candycane1_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Food\food\data\candycane1.rvmat"
 		};
 	};
   class srpChickenleg: Edible_Base
@@ -293,347 +1106,24 @@ class CfgVehicles
 			};
 		};
 	};
-  class srpSausage: Edible_Base
+  class SRPdonut: Edible_Base
 	{
 		scope=2;
-		displayName="Homemade Sausage";
-		descriptionShort="Ground meat inside animal casing. What meats are inside?";
-		model="Survivalists_Food\food\sausage.p3d";
-		rotationFlags=17;
-		weight=0;
-		interactionWeight=1;
-		quantityBar=1;
-		varQuantityInit=110;
+		displayName="Donut";
+		descriptionShort="It's a donut. How is this thing not stale yet? Oh well.";
+		model="Survivalists_Food\food\donut.p3d";
+		itemSize[]={2,2};
+		varQuantityInit=100;
 		varQuantityMin=0;
-		varQuantityMax=110;
-		itemSize[]={2,1};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
-		hiddenSelections[]={"cs_raw"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\sausage_raw_co.paa","Survivalists_Food\food\data\sausage_baked_co.paa","Survivalists_Food\food\data\sausage_boiled_co.paa","Survivalists_Food\food\data\sausage_dried_co.paa","Survivalists_Food\food\data\sausage_burnt_co.paa","Survivalists_Food\food\data\sausage_rotten_co.paa"};
-		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\sausage.rvmat"};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=50;
-					healthLevels[]={{1,{""}},{0.7,{""}},{0.5,{""}},{0.3,{""}},{0,{""}}};
-				};
-			};
-		};
-		class AnimationSources: FoodAnimationSources{};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={2.5,80,70,1,0,"4 +     16"};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,5,-1};
-					nutrition_properties[]={2,80,35,1,0,"4 +     16"};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,-1};
-					nutrition_properties[]={3.5,110,52.5,1,0};
-					cooking_properties[]={70,250};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,-1};
-					nutrition_properties[]={3,100,75,1,0};
-					cooking_properties[]={70,250};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,-1};
-					nutrition_properties[]={0.75,110,7,1,0};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,-1};
-					nutrition_properties[]={2,80,17.5,1,0,16};
-					cooking_properties[]={100,360};
-				};
-			};
-			class FoodStageTransitions: MeatStageTransitions{};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-	};
-	class srpSausage_Human: Edible_Base
-	{
-		scope=2;
-		displayName="Homemade Sausage";
-		descriptionShort="Ground meat inside animal casing. What meats are inside? Smells funny.";
-		model="Survivalists_Food\food\sausage.p3d";
-		rotationFlags=17;
-		weight=0;
-		interactionWeight=1;
-		quantityBar=1;
-		varQuantityInit=110;
-		varQuantityMin=0;
-		varQuantityMax=110;
-		itemSize[]={2,1};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
-		isMeleeWeapon=1;
-		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFist";
-				range=1;
-			};
-			class Heavy
-			{
-				ammo="MeleeFist_Heavy";
-				range=1;
-			};
-			class Sprint
-			{
-				ammo="MeleeFist_Heavy";
-				range=2.8;
-			};
-		};
-		hiddenSelections[]={"cs_raw"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\sausage_raw_co.paa","Survivalists_Food\food\data\sausage_baked_co.paa","Survivalists_Food\food\data\sausage_boiled_co.paa","Survivalists_Food\food\data\sausage_dried_co.paa","Survivalists_Food\food\data\sausage_burnt_co.paa","Survivalists_Food\food\data\sausage_rotten_co.paa"};
-		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\sausage.rvmat"};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=50;
-					healthLevels[]={{1,{""}},{0.7,{""}},{0.5,{""}},{0.3,{""}},{0,{""}}};
-				};
-			};
-		};
-		class AnimationSources: FoodAnimationSources{};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={2.5,80,70,1,0,"4 +     16"};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,5,-1};
-					nutrition_properties[]={2,80,35,1,0,"4 +     16"};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,-1};
-					nutrition_properties[]={3.5,110,52.5,1,0};
-					cooking_properties[]={70,250};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,-1};
-					nutrition_properties[]={3,100,75,1,0};
-					cooking_properties[]={70,250};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,-1};
-					nutrition_properties[]={0.75,110,7,1,0};
-					cooking_properties[]={70,250,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,-1};
-					nutrition_properties[]={2,80,17.5,1,0,16};
-					cooking_properties[]={100,300};
-				};
-			};
-			class FoodStageTransitions: MeatStageTransitions{};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-	};
-  class srpHotdog: Edible_Base
-	{
-		scope=2;
-		displayName="Hotdog";
-		descriptionShort="Homemade hotdog.";
-		model="Survivalists_Food\food\hotdog.p3d";
-		rotationFlags=17;
-		weight=0;
-		interactionWeight=1;
-		quantityBar=1;
-		varQuantityInit=200;
-		varQuantityMin=0;
-		varQuantityMax=200;
-		itemSize[]={2,1};
-		inventorySlot[]={};
-		isMeleeWeapon=1;
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\SRPHotdog_co.paa"};
-		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\srphotdog.rvmat"};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=50;
-					healthLevels[]={{1,{"Survivalists_Food\food\data\srphotdog.rvmat"}},{0.7,{"Survivalists_Food\food\data\srphotdog.rvmat"}},{0.5,{"Survivalists_Food\food\data\srphotdog.rvmat"}},{0.3,{"Survivalists_Food\food\data\srphotdog.rvmat"}},{0,{"Survivalists_Food\food\data\srphotdog.rvmat"}}};
-				};
-			};
-		};
+		varQuantityMax=100;
 		class Nutrition
 		{
-			fullnessIndex=2;
-			energy=250;
-			water=100;
+			fullnessIndex=1;
+			energy=100;
+			water=10;
 			nutritionalIndex=1;
 			toxicity=0;
 		};
-	};
-  class SRPsushi: Edible_Base
-	{
-		scope=2;
-		displayName="Sushi";
-		descriptionShort="Homemade sushi. It looks and smells exactly how you think it does.";
-		model="Survivalists_Food\food\sushi.p3d";
-		rotationFlags=17;
-		weight=0;
-		interactionWeight=1;
-		varQuantityInit=75;
-		varQuantityMin=0;
-		varQuantityMax=75;
-		itemSize[]={2,1};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
-		isMeleeWeapon=1;
-		hiddenSelections[]={"cs_raw"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\sushi_raw_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_raw_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa"};
-		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\sushi.rvmat"};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=50;
-					healthLevels[]={{1,{"Survivalists_Food\food\data\sushi.rvmat"}},{0.7,{"Survivalists_Food\food\data\sushi.rvmat"}},{0.5,{"Survivalists_Food\food\data\sushi.rvmat"}},{0.3,{"Survivalists_Food\food\data\sushi.rvmat"}},{0,{"Survivalists_Food\food\data\sushi.rvmat"}}};
-				};
-			};
-		};
-		class AnimationSources: FoodAnimationSources{};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={2.5,110,70,1,0,"4 +     16"};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={0,5,-1};
-					nutrition_properties[]={2,120,35,1,0,"4 +     16"};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,-1};
-					nutrition_properties[]={3.5,190,52.5,1,"4 +     16"};
-					cooking_properties[]={70,45};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,-1};
-					nutrition_properties[]={3,137,75,1,"4 +     16"};
-					cooking_properties[]={70,55};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,-1};
-					nutrition_properties[]={0.75,160,7,1,"4 +     16"};
-					cooking_properties[]={70,45,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,-1};
-					nutrition_properties[]={2,100,17.5,1,0,"4 +     16"};
-					cooking_properties[]={100,60};
-				};
-			};
-			class FoodStageTransitions: MeatStageTransitions{};
-		};
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -642,6 +1132,11 @@ class CfgVehicles
 				{
 					soundSet="openTunaCan_SoundSet";
 					id=204;
+				};
+				class pickUpItem
+				{
+					soundSet="Zucchini_pickup_SoundSet";
+					id=797;
 				};
 				class Eating_TakeFood
 				{
@@ -665,140 +1160,7 @@ class CfgVehicles
 				};
 			};
 		};
-	};
-
-  class srpStew_Base: Edible_Base
-	{
-    scope=0;
-		model="Survivalists_Food\food\SrpStewBowl.p3d";
-		weight=0;
-		canBeSplit=1;
-		interactionWeight=1;
-		quantityBar=0;
-		varQuantityInit=275;
-		varQuantityMin=0;
-		varQuantityMax=300;
-		itemSize[]={2,3};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
-		hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMeat_co.paa"};
-		class AnimationSources: FoodAnimationSources{};
-		class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,-1};
-					nutrition_properties[]={5,50,50,1,0,4};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,-1};
-					nutrition_properties[]={10,25,25,1,0,"4 +     16"};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={-1,-1,-1};
-					nutrition_properties[]={2,250,50,1,0};
-					cooking_properties[]={70,300};
-				};
-				class Boiled
-				{
-					visual_properties[]={-1,-1,-1};
-					nutrition_properties[]={2,200,150,1,0};
-					cooking_properties[]={70,55};
-				};
-				class Dried
-				{
-					visual_properties[]={-1,-1,-1};
-					nutrition_properties[]={3,200,0,1,0};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={-1,-1,-1};
-					nutrition_properties[]={5,50,0,1,0,16};
-					cooking_properties[]={100,660};
-				};
-			};
-			class FoodStageTransitions: MeatStageTransitions{};
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=50;
-					healthLevels[]={{1,{""}},{0.7,{""}},{0.5,{""}},{0.3,{""}},{0,{""}}};
-				};
-			};
-		};
-		class NoiseImpact
-		{
-			strength=600;
-			type="sound";
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class openTunaCan
-				{
-					soundSet="openTunaCan_SoundSet";
-					id=204;
-				};
-				class Eating_TakeFood
-				{
-					soundSet="Eating_TakeFood_Soundset";
-					id=889;
-				};
-				class Eating_BoxOpen
-				{
-					soundSet="Eating_BoxOpen_Soundset";
-					id=893;
-				};
-				class Eating_BoxShake
-				{
-					soundSet="Eating_BoxShake_Soundset";
-					id=894;
-				};
-				class Eating_BoxEnd
-				{
-					soundSet="Eating_BoxEnd_Soundset";
-					id=895;
-				};
-			};
-		};
-	};
-	class srpStew_Meat: srpStew_Base
-	{
-		scope=2;
-		displayName="Meat Stew";
-		descriptionShort="A hearty stew made of various meats.";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMeat_co.paa"};
-	};
-	class srpStew_Mix: srpStew_Base
-	{
-		scope=2;
-		displayName="Mixed Stew";
-		descriptionShort="A hearty stew made of various veggies and meats.";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMix_co.paa"};
-	};
-	class srpStew_Veggie: srpStew_Base
-	{
-		scope=2;
-		displayName="Vegetable Stew";
-		descriptionShort="A hearty stew made of various veggies.";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewVeg_co.paa"};
-	};
-
+	};  
   class srpBreadFlatDough: Edible_Base
 	{
 		scope=2;
@@ -1108,9 +1470,1777 @@ class CfgVehicles
 				};
 			};
 		};
+	};  
+  class srpHotdog: Edible_Base
+	{
+		scope=2;
+		displayName="Hotdog";
+		descriptionShort="Homemade hotdog.";
+		model="Survivalists_Food\food\hotdog.p3d";
+		rotationFlags=17;
+		weight=0;
+		interactionWeight=1;
+		quantityBar=1;
+		varQuantityInit=200;
+		varQuantityMin=0;
+		varQuantityMax=200;
+		itemSize[]={2,1};
+		inventorySlot[]={};
+		isMeleeWeapon=1;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\SRPHotdog_co.paa"};
+		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\srphotdog.rvmat"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]={{1,{"Survivalists_Food\food\data\srphotdog.rvmat"}},{0.7,{"Survivalists_Food\food\data\srphotdog.rvmat"}},{0.5,{"Survivalists_Food\food\data\srphotdog.rvmat"}},{0.3,{"Survivalists_Food\food\data\srphotdog.rvmat"}},{0,{"Survivalists_Food\food\data\srphotdog.rvmat"}}};
+				};
+			};
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=250;
+			water=100;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
 	};
+  class srpSausage: Edible_Base
+	{
+		scope=2;
+		displayName="Homemade Sausage";
+		descriptionShort="Ground meat inside animal casing. What meats are inside?";
+		model="Survivalists_Food\food\sausage.p3d";
+		rotationFlags=17;
+		weight=0;
+		interactionWeight=1;
+		quantityBar=1;
+		varQuantityInit=110;
+		varQuantityMin=0;
+		varQuantityMax=110;
+		itemSize[]={2,1};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		hiddenSelections[]={"cs_raw"};
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\sausage_raw_co.paa","Survivalists_Food\food\data\sausage_baked_co.paa","Survivalists_Food\food\data\sausage_boiled_co.paa","Survivalists_Food\food\data\sausage_dried_co.paa","Survivalists_Food\food\data\sausage_burnt_co.paa","Survivalists_Food\food\data\sausage_rotten_co.paa"};
+		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\sausage.rvmat"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]={{1,{""}},{0.7,{""}},{0.5,{""}},{0.3,{""}},{0,{""}}};
+				};
+			};
+		};
+		class AnimationSources: FoodAnimationSources{};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={2.5,80,70,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,5,-1};
+					nutrition_properties[]={2,80,35,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,-1};
+					nutrition_properties[]={3.5,110,52.5,1,0};
+					cooking_properties[]={70,250};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,-1};
+					nutrition_properties[]={3,100,75,1,0};
+					cooking_properties[]={70,250};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,-1};
+					nutrition_properties[]={0.75,110,7,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,-1};
+					nutrition_properties[]={2,80,17.5,1,0,16};
+					cooking_properties[]={100,360};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions{};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+	};
+	class srpSausage_Human: Edible_Base
+	{
+		scope=2;
+		displayName="Homemade Sausage";
+		descriptionShort="Ground meat inside animal casing. What meats are inside? Smells funny.";
+		model="Survivalists_Food\food\sausage.p3d";
+		rotationFlags=17;
+		weight=0;
+		interactionWeight=1;
+		quantityBar=1;
+		varQuantityInit=110;
+		varQuantityMin=0;
+		varQuantityMax=110;
+		itemSize[]={2,1};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFist";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeFist_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeFist_Heavy";
+				range=2.8;
+			};
+		};
+		hiddenSelections[]={"cs_raw"};
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\sausage_raw_co.paa","Survivalists_Food\food\data\sausage_baked_co.paa","Survivalists_Food\food\data\sausage_boiled_co.paa","Survivalists_Food\food\data\sausage_dried_co.paa","Survivalists_Food\food\data\sausage_burnt_co.paa","Survivalists_Food\food\data\sausage_rotten_co.paa"};
+		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\sausage.rvmat"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]={{1,{""}},{0.7,{""}},{0.5,{""}},{0.3,{""}},{0,{""}}};
+				};
+			};
+		};
+		class AnimationSources: FoodAnimationSources{};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={2.5,80,70,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,5,-1};
+					nutrition_properties[]={2,80,35,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,-1};
+					nutrition_properties[]={3.5,110,52.5,1,0};
+					cooking_properties[]={70,250};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,-1};
+					nutrition_properties[]={3,100,75,1,0};
+					cooking_properties[]={70,250};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,-1};
+					nutrition_properties[]={0.75,110,7,1,0};
+					cooking_properties[]={70,250,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,-1};
+					nutrition_properties[]={2,80,17.5,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions{};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+	};
+  class SRP_Brain: Guts
+	{
+		scope=2;
+		displayName="Brain";
+		descriptionShort="A full sized brain.";
+		model="Survivalists_Food\food\srpbrain.p3d";
+    rotationFlags=1;
+		weight=0;
+		itemSize[]={2,2};
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+	};
+  class SRP_BrainPiece: Worm
+	{
+		scope=2;
+		displayName="A piece of brain";
+		descriptionShort="A small chunk of a brain";
+		model="Survivalists_Food\food\srpbrainchunk.p3d";
+		rotationFlags=1;
+		weight=0;
+		itemSize[]={1,1};
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+	};  
+  class srpStew_Base: Edible_Base
+	{
+    scope=0;
+		model="Survivalists_Food\food\SrpStewBowl.p3d";
+		weight=0;
+		canBeSplit=1;
+		interactionWeight=1;
+		quantityBar=0;
+		varQuantityInit=275;
+		varQuantityMin=0;
+		varQuantityMax=300;
+		itemSize[]={2,3};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMeat_co.paa"};
+		class AnimationSources: FoodAnimationSources{};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,-1};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,-1};
+					nutrition_properties[]={10,25,25,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={-1,-1,-1};
+					nutrition_properties[]={2,250,50,1,0};
+					cooking_properties[]={70,300};
+				};
+				class Boiled
+				{
+					visual_properties[]={-1,-1,-1};
+					nutrition_properties[]={2,200,150,1,0};
+					cooking_properties[]={70,55};
+				};
+				class Dried
+				{
+					visual_properties[]={-1,-1,-1};
+					nutrition_properties[]={3,200,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={-1,-1,-1};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,660};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions{};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]={{1,{""}},{0.7,{""}},{0.5,{""}},{0.3,{""}},{0,{""}}};
+				};
+			};
+		};
+		class NoiseImpact
+		{
+			strength=600;
+			type="sound";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+	};
+	class srpStew_Meat: srpStew_Base
+	{
+		scope=2;
+		displayName="Meat Stew";
+		descriptionShort="A hearty stew made of various meats.";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMeat_co.paa"};
+	};
+	class srpStew_Mix: srpStew_Base
+	{
+		scope=2;
+		displayName="Mixed Stew";
+		descriptionShort="A hearty stew made of various veggies and meats.";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMix_co.paa"};
+	};
+	class srpStew_Veggie: srpStew_Base
+	{
+		scope=2;
+		displayName="Vegetable Stew";
+		descriptionShort="A hearty stew made of various veggies.";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewVeg_co.paa"};
+	};  
+  class SRPsushi: Edible_Base
+	{
+		scope=2;
+		displayName="Sushi";
+		descriptionShort="Homemade sushi. It looks and smells exactly how you think it does.";
+		model="Survivalists_Food\food\sushi.p3d";
+		rotationFlags=17;
+		weight=0;
+		interactionWeight=1;
+		varQuantityInit=75;
+		varQuantityMin=0;
+		varQuantityMax=75;
+		itemSize[]={2,1};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		isMeleeWeapon=1;
+		hiddenSelections[]={"cs_raw"};
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\sushi_raw_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_raw_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa"};
+		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\sushi.rvmat"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]={{1,{"Survivalists_Food\food\data\sushi.rvmat"}},{0.7,{"Survivalists_Food\food\data\sushi.rvmat"}},{0.5,{"Survivalists_Food\food\data\sushi.rvmat"}},{0.3,{"Survivalists_Food\food\data\sushi.rvmat"}},{0,{"Survivalists_Food\food\data\sushi.rvmat"}}};
+				};
+			};
+		};
+		class AnimationSources: FoodAnimationSources{};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={2.5,110,70,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={0,5,-1};
+					nutrition_properties[]={2,120,35,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,-1};
+					nutrition_properties[]={3.5,190,52.5,1,"4 +     16"};
+					cooking_properties[]={70,45};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,-1};
+					nutrition_properties[]={3,137,75,1,"4 +     16"};
+					cooking_properties[]={70,55};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,-1};
+					nutrition_properties[]={0.75,160,7,1,"4 +     16"};
+					cooking_properties[]={70,45,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,-1};
+					nutrition_properties[]={2,100,17.5,1,0,"4 +     16"};
+					cooking_properties[]={100,60};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions{};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+	};
+//================================== Raw Cookable Cans
+  class SRP_FoodCanRaw_Colorbase: Edible_Base 
+  {
+    scope=0;
+		displayName="Raw Canned Food";
+		descriptionShort="A can of food that is yet to be preserved from spoiling. Raw.";
+		model="\dz\gear\food\food_can_open.p3d";
+    rotationFlags=63;
+		itemSize[]={2,2};
+		weight=440;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=400;
+    canBeSplit=1;
+		isMeleeWeapon=1;
+    inventorySlot[]=
+		{
+			"DirectCookingA",
+			"DirectCookingB",
+			"DirectCookingC",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+			"SmokingD"
+		};
+    class AnimationSources: FoodAnimationSources
+		{
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					nutrition_properties[]={7,160,70,1,0,4};
+					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
+				};
+				class Rotten
+				{
+					nutrition_properties[]={10,75,35,1,0,"4+16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					nutrition_properties[]={3,500,50,1,0};
+					cooking_properties[]={70,290};
+				};
+				class Boiled
+				{
+					nutrition_properties[]={3,450,50,1,0};
+					cooking_properties[]={100,600};
+				};
+        class Dried
+				{
+					nutrition_properties[]={3,450,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					nutrition_properties[]={7,120,17.5,1,0,16};
+					cooking_properties[]={100,320};
+				};
+			};
+      class FoodStageTransitions: MeatStageTransitions
+			{
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,	{"DZ\gear\food\data\food_can.rvmat"}},
+            {0.69999999, {"DZ\gear\food\data\food_can.rvmat"}},
+            {0.5, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0.30000001, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0,	{"DZ\gear\food\data\food_can_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+  };
+  class SRP_FoodCanRaw_Veggies: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="Veggies";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
 
-//============================== FUNCTIONAL RETEXTURES
+			"Survivalists_Food\food\data\emptycan_veggies_co.paa"
+		};
+	};
+  class SRP_FoodCanRaw_Meat: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="Meat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+	};
+  class SRP_FoodCanRaw_HumanMeat: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="HumanMeat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					nutrition_properties[]={7,160,70,1,0,8};
+					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
+				};
+				class Rotten
+				{
+					nutrition_properties[]={10,75,35,1,0,"8+16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					nutrition_properties[]={3,500,50.5,1,2,8};
+					cooking_properties[]={70,290};
+				};
+				class Boiled
+				{
+					nutrition_properties[]={3,450,50,1,2,8};
+					cooking_properties[]={100,600};
+				};
+        class Dried
+				{
+					nutrition_properties[]={3,450,0,1,2,8};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					nutrition_properties[]={7,120,17.5,1,0,"8 + 16"};
+					cooking_properties[]={100,320};
+				};
+			};
+      class FoodStageTransitions: MeatStageTransitions
+			{
+			};
+		};
+	};
+  class SRP_FoodCanRaw_VeggieMeatCombo: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="VeggieMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+	};
+  class SRP_FoodCanRaw_VeggieHumanMeatCombo: SRP_FoodCanRaw_Colorbase
+	{
+		scope=2;
+    color="VeggieHumanMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					nutrition_properties[]={7,160,70,1,0,4};
+					cooking_properties[]={0,0}; // min food temp, time to cook, max food temp
+				};
+				class Rotten
+				{
+					nutrition_properties[]={10,75,35,1,0,"4+16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					nutrition_properties[]={3,200,400,1,0};
+					cooking_properties[]={70,290};
+				};
+				class Boiled
+				{
+					nutrition_properties[]={3,200,450,1,0};
+					cooking_properties[]={100,600};
+				};
+        class Dried
+				{
+					nutrition_properties[]={3,200,200,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					nutrition_properties[]={7,120,17.5,1,0,16};
+					cooking_properties[]={100,320};
+				};
+			};
+      class FoodStageTransitions: MeatStageTransitions
+			{
+			};
+		};
+	};
+//================================== Sealed Cans
+  class SRP_FoodCanPreserved_Colorbase: Edible_Base
+  {
+		displayName="Preserved Canned Food";
+		descriptionShort="A can of food that is preserved from spoiling.";
+		model="\dz\gear\food\food_can.p3d";
+    rotationFlags=63;
+		itemSize[]={2,2};
+		weight=440;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=400;
+		isMeleeWeapon=1;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,	{"DZ\gear\food\data\food_can.rvmat"}},
+            {0.69999999, {"DZ\gear\food\data\food_can.rvmat"}},
+            {0.5, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0.30000001, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0,	{"DZ\gear\food\data\food_can_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+  };
+  class SRP_FoodCanPreserved_Veggies: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="Veggies";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\emptycan_veggies_co.paa"
+		};
+	};
+  class SRP_FoodCanPreserved_Meat: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="Meat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+	};
+  class SRP_FoodCanPreserved_HumanMeat: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="HumanMeat";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+	};
+  class SRP_FoodCanPreserved_VeggieMeatCombo: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="VeggieMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+	};
+  class SRP_FoodCanPreserved_VeggieHumanMeatCombo: SRP_FoodCanPreserved_Colorbase
+	{
+		scope=2;
+    color="VeggieHumanMeatCombo";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+	};
+//================================== Opened Cans
+  class SRP_FoodCanPreserved_Opened: Edible_Base 
+  {
+		displayName="Preserved Canned Food Open";
+		descriptionShort="An opened can of preserved food. Who knows how long it has been in there.";
+		model="\dz\gear\food\food_can_open.p3d";
+    itemSize[]={2,2};
+		weight=40;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=400;
+		isMeleeWeapon=1;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,	{"DZ\gear\food\data\food_can.rvmat"}},
+            {0.69999999, {"DZ\gear\food\data\food_can.rvmat"}},
+            {0.5, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0.30000001, {"DZ\gear\food\data\food_can_damage.rvmat"}},
+            {0,	{"DZ\gear\food\data\food_can_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+  };
+	class SRP_FoodCanPreserved_Veggies_Opened: SRP_FoodCanPreserved_Opened
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\emptycan_veggies_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=200;
+			water=350;
+			nutritionalIndex=1;
+			toxicity=0;      
+		};
+	};
+  class SRP_FoodCanPreserved_Meat_Opened: SRP_FoodCanPreserved_Opened
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=450;
+			water=150;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class SRP_FoodCanPreserved_HumanMeat_Opened: SRP_FoodCanPreserved_Opened
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\food\data\UnknownFoodCan_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=450;
+			water=150;
+			nutritionalIndex=1;
+			toxicity=0;
+      digestibility=2;
+      agents=8;
+		};
+	};
+  class SRP_FoodCanPreserved_VeggieMeatCombo_Opened: SRP_FoodCanPreserved_Opened
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=150;
+			water=150;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class SRP_FoodCanPreserved_VeggieHumanMeatCombo_Opened: SRP_FoodCanPreserved_Opened
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\emptycan_veggiesmeatcombo_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=150;
+			water=150;
+			nutritionalIndex=1;
+			toxicity=0;
+      digestibility=2;
+      agents=8;
+		};
+	};
+//================================== CULTIVATION PLANTS
+  class Cannabis: Edible_Base
+	{
+    displayName="Cannabis";
+		descriptionShort="Cannabis harvested from a cannabis plant.";
+    inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8",
+			"DirectCookingA",
+			"DirectCookingB",
+			"DirectCookingC",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+      "SmokingD"
+		};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+  class SRP_PlantHerbEdible_Colorbase: Edible_Base
+	{
+		scope=0;
+		displayName="Edible Plant Material";
+		descriptionShort="Harvested material from a plant.";
+    model="\dz\gear\cultivation\plant_material.p3d";
+    color="base";
+		rotationFlags=16;
+		weight=0;
+		itemSize[]={2,2};
+		stackedUnit="g";
+		absorbency=0.2;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		quantityBar=1;
+    canBeSplit=1;
+		inventorySlot[]=
+		{
+			"Ingredient",
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8",
+			"DirectCookingA",
+			"DirectCookingB",
+			"DirectCookingC",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+      "SmokingD",
+      "SRP_Flower1",
+		};
+		containsSeedsType="";
+		containsSeedsQuantity="0";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+            {	1,{}},
+            {	0.69999999,{}},
+            {	0.5,{}},
+            {	0.30000001,{}},
+            {	0,{}}
+					};
+				};
+			};
+		};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class pickUpItem
+				{
+					soundSet="Zucchini_pickup_SoundSet";
+					id=797;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
+		};
+	};
+  class Tobacco: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Tobacco";
+		descriptionShort="Tobacco harvested from a tobacco plant.";
+		model="\dz\gear\food\cannabis_seedman.p3d";
+    color="tobacco";
+		itemSize[]={1,1};
+		hiddenSelections[]=
+		{
+			"cs_raw"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_baked_co.paa",
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_raw_co.paa",
+			"Survivalists_Mods\gear\cultivation\data\tobacco_seedman_baked_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\food\data\cannabis_seedman_raw.rvmat",
+			"dz\gear\food\data\cannabis_seedman_baked.rvmat",
+			"dz\gear\food\data\cannabis_seedman_raw.rvmat",
+			"dz\gear\food\data\cannabis_seedman_dried.rvmat",
+			"dz\gear\food\data\cannabis_seedman_burnt.rvmat",
+			"dz\gear\food\data\cannabis_seedman_rotten.rvmat"
+		};
+	};
+  class Cocaine: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+    inventorySlot[]+=
+    {
+      "PlantMaterial1",
+      "PlantMaterial2",
+      "PlantMaterial3",
+      "PlantMaterial4",
+      "PlantMaterial5",
+      "PlantMaterial6",
+      "PlantMaterial7",
+      "PlantMaterial8",
+      "PlantMaterial9",
+      "PlantMaterial10",
+    };
+		displayName="Cocaine Plant Material";
+		descriptionShort="A harvested branch from the cocaine bush.";
+    color="cocaine";
+	};
+  class Brookmint: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Brookmint Plant Material";
+		descriptionShort="A harvested branch from the brookmint herb.";
+    model="Survivalists_Food\food\food_brookmint.p3d";
+    color="brookmint";
+    rotationFlags=64;
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+  class Dock: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Dock Plant Material";
+		descriptionShort="A harvested branch from the dock herb.";
+    model="Survivalists_Food\food\food_dock.p3d";
+    color="dock";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};    
+	};
+  class Valerian: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Valerian Plant Material";
+		descriptionShort="A harvested branch from the valerian herb.";
+    model="Survivalists_Food\food\food_valerian.p3d";
+    color="valerian";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+  class Ribwort: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Ribwort Plant Material";
+		descriptionShort="A harvested branch from the ribwort herb.";
+    model="Survivalists_Food\food\food_ribwort.p3d";
+    color="ribwort";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+  class Rosemary: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Rosemary Plant Material";
+		descriptionShort="A harvested branch from the rosemary herb.";
+    model="Survivalists_Food\food\food_rosemary.p3d";
+    color="rosemary";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+  class GreenAmanita: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Green Amanita Plant Material";
+		descriptionShort="A harvested cap from the Green Amanita mushroom.";
+    model="Survivalists_Food\food\food_greenamanita.p3d";
+    color="greenamanita";
+    rotationFlags=64;
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+  class Yarrow: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Yarrow Plant Material";
+		descriptionShort="A harvested branch from the Yarrow herb.";
+    model="Survivalists_Food\food\food_yarrow.p3d";
+    color="yarrow";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+  class Mint: SRP_PlantHerbEdible_Colorbase
+	{
+		scope=2;
+		displayName="Mint Plant Material";
+		descriptionShort="A harvested branch from the Mint herb.";
+    model="Survivalists_Food\food\food_mint.p3d";
+    color="mint";
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={1,284,293,30,1};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]={1,100,293,10,1,16};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,35};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,45};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={1,69,172,70,1};
+					cooking_properties[]={70,150,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={1,20,40,10,1};
+					cooking_properties[]={100,20};
+				};
+			};
+			class FoodStageTransitions: BaseFoodStageTransitions
+			{
+			};
+		};
+	};
+//================================== FUNCTIONAL RETEXTURES
   class BoxCerealCrunchin_FlakedCorn: BoxCerealCrunchin
 	{
 		scope=2;
@@ -1142,7 +3272,6 @@ class CfgVehicles
 			toxicity=0;
 		};
 	};
-
   class Honey_Yeast: Honey
 	{
 		scope=2;
@@ -1160,8 +3289,46 @@ class CfgVehicles
 		hiddenSelections[]={"camoGround","zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\yeast_co.paa","Survivalists_Food\food\data\yeast_co.paa","Survivalists_Food\food\data\yeast_co.paa"};
 	};
-
-
+  class Honey_Gluttony: Honey
+	{
+		scope=2;
+		displayName="Gluttony Bio Jam";
+		descriptionShort="The jar glows softly. It seems to be generating a significant amount of heat.";
+		hiddenSelections[]={"zbytek","camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\honey_Gluttony_Bio_Jam_ca.paa","Survivalists_Food\food\data\honey_Gluttony_Bio_Jam_ca.paa"};
+    varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    class Nutrition
+		{
+			fullnessIndex=5;
+			energy=500;
+			water=500;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+  class Honey_PigletPudding: Honey
+	{
+		scope=2;
+		displayName="Piglet Pudding";
+		descriptionShort="The jar glows softly. It seems to be generating a significant amount of heat.";
+		hiddenSelections[]={"zbytek","camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\honey_pigletpudding_ca.paa","Survivalists_Food\food\data\honey_pigletpudding_ca.paa"};
+    varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    class Nutrition
+		{
+			fullnessIndex=5;
+			energy=500;
+			water=500;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
   class Snack_DonutPack: Snack_ColorBase
 	{
 		scope=2;
@@ -1177,8 +3344,58 @@ class CfgVehicles
 			"Survivalists_Food\food\data\snacks_donuts_co.paa"
 		};
 	};
-
-//============================ PURE RETEXUTRES
+  class SRP_Guts_PigletCookiesAcid: Guts
+	{
+		scope=2;
+		displayName="Piglets Cookies";
+		descriptionShort="Chunks of rotten apples, frosted flakes and chunks of seaweed all mushed up in bread. There is a smell of sulfur and rotten eggs seaping from this cookie.";
+		hiddenSelections[]={"camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\animal_guts_PigletsCookie_co.paa"};
+    class Nutrition
+		{
+			fullnessIndex=1;
+			energy=5000;
+			water=5000;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+  class SRP_Guts_PigletCookiesMetal: Guts
+	{
+		scope=2;
+		displayName="Piglets Cookies";
+		descriptionShort="Shavings of scrap metal and steel cut oats sprinkled throughout a heavy mash of potato. A strong smell of gasoline and salt seaps from this cookie.";
+		hiddenSelections[]={"camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\animal_guts_PigletsCookiev2_co.paa"};
+    class Nutrition
+		{
+			fullnessIndex=1;
+			energy=5000;
+			water=5000;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+  class SRP_Guts_PigletCookiesBrains: Guts
+	{
+		scope=2;
+		displayName="Piglets Mac and Cheese Cookies";
+		descriptionShort="Large chunks of brain, scraps of orange armbands, clumps of rancid cheese and uncooked rice clumped together in a putrid sulfuric stench.";
+		hiddenSelections[]={"camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\animal_guts_PigletsCookiev3_co.paa"};
+    class Nutrition
+		{
+			fullnessIndex=1;
+			energy=5000;
+			water=5000;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+//================================== PURE RETEXUTRES
 	class Zagorky_Snickers: Zagorky_ColorBase
 	{
 		scope=2;
@@ -1366,8 +3583,65 @@ class CfgVehicles
 		displayName="Frosted Flakes";
 		descriptionShort="They're Great!";
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\cerealbox_frosties_co.paa"};
+	};  
+  class BoxCerealCrunchin_Crisps: BoxCerealCrunchin
+	{
+		scope=2;
+    displayName="Bland Cereal Crips";
+		descriptionShort="A box filled with stale and bland breakfast cereal";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\dz\gear\food\Data\CerealBox_01_CO.paa"
+		};
 	};
-
+	class BoxCerealCrunchin_Kids: BoxCerealCrunchin
+	{
+		scope=2;
+		displayName="Kids Cereal";
+		descriptionShort="A box filled with chocolate flavoured breakfast cereal";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\cerealbox_kids_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=330;
+			water=-350;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BoxCerealCrunchin_Monstar: BoxCerealCrunchin
+	{
+		scope=2;
+		displayName="KosmoStar Cereal";
+		descriptionShort="A box filled with kosmostar breakfast cereal";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\cerealbox_monstar_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=330;
+			water=-250;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
   class Boyaredeez: BakedBeansCan
 	{
 		displayName="Canned Pasta and Meatballs";
@@ -1400,5 +3674,619 @@ class CfgVehicles
 		hiddenSelections[]={"camoGround"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\Ninja_co.paa"};
 	};
-
+  class BakedBeansCanPeas: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Peas";
+		descriptionShort="A can filled with peas";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_peas_co.paa"
+		};
+	};
+	class BakedBeansCanPeas_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Peas";
+		descriptionShort="A can filled with peas";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_peas_co.paa"
+		};
+	};
+	class BakedBeansCanMushrooms: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Mushrooms";
+		descriptionShort="A can filled with mushrooms";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_mushrooms_co.paa"
+		};
+	};
+	class BakedBeansCanMushrooms_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Mushrooms";
+		descriptionShort="A can full of mushrooms";
+		model="\dz\gear\food\food_can_open.p3d";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_mushrooms_co.paa"
+		};
+	};
+	class BakedBeansCanFishEggs: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Caviar";
+		descriptionShort="A can of cheap smelling caviar";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_caviar_co.paa"
+		};
+	};
+	class BakedBeansCanFishEggs_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Caviar";
+		descriptionShort="A can of cheap smelling caviar";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_caviar_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=298;
+			water=43.5;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BakedBeansCanOats: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Oats";
+		descriptionShort="A can of ready to eat porridge oats";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_oats_co.paa"
+		};
+	};
+	class BakedBeansCanOats_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Oats";
+		descriptionShort="A can of ready to eat porridge oats";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_oats_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=558;
+			water=23.5;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BakedBeansCanCondensedMilk: BakedBeansCan
+	{
+		scope=2;
+		displayName="Condensed Milk";
+		descriptionShort="A can of condensed milk";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_milk_co.paa"
+		};
+	};
+	class BakedBeansCanCondensedMilk_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Condensed Milk";
+		descriptionShort="A can of condensed milk";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_milk_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=300;
+			water=100;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class BakedBeansCanBeef: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef1_co.paa"
+		};
+	};
+	class BakedBeansCanBeef_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef1_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=1000;
+			water=50.5;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BakedBeansCanBeef1: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef2_co.paa"
+		};
+	};
+	class BakedBeansCanBeef1_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef2_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=800;
+			water=50;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BakedBeansCanBeef2: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of Beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef3_co.paa"
+		};
+	};
+	class BakedBeansCanBeef2_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of Beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef3_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=1200;
+			water=-43.5;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BakedBeansCanBeef3: BakedBeansCan
+	{
+    scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of Beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef4_co.paa"
+		};
+	};
+	class BakedBeansCanBeef3_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of Beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef4_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=400;
+			water=300;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BakedBeansCanBeef4: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of Beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef5_co.paa"
+		};
+	};
+	class BakedBeansCanBeef4_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of Beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef5_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=618;
+			water=23.5;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BakedBeansCanBeef5: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of Beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef6_co.paa"
+		};
+	};
+	class BakedBeansCanBeef5_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Beef";
+		descriptionShort="A can of Beef";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_beef6_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=518;
+			water=43.5;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class BakedBeansCanSweetCorn: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Sweetcorn";
+		descriptionShort="A can of sweetcorn";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_corn_co.paa"
+		};
+	};
+	class BakedBeansCanSweetCorn_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Sweetcorn";
+		descriptionShort="A can of sweetcorn";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_corn_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=348;
+			water=33.5;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class BakedBeansCanRagu: BakedBeansCan
+	{
+		scope=2;
+		displayName="Canned Ragu";
+		descriptionShort="A can of ragu";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_ragu_co.paa"
+		};
+	};
+	class BakedBeansCanRagu_Opened: BakedBeansCan_Opened
+	{
+		scope=2;
+		displayName="Canned Ragu";
+		descriptionShort="A can of ragu";
+    hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\canned_ragu_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=348;
+			water=33.5;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class TunaCanCaviar: TunaCan
+	{
+		scope=2;
+		displayName="Caviar";
+		descriptionShort="Unopened unfertilized fish eggs.";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\tunacan_caviar_co.paa"
+		};
+	};
+	class TunaCanCaviar_Opened: TunaCan_Opened
+	{
+		scope=2;
+		displayName="Caviar";
+		descriptionShort="Opened unfertilized fish eggs";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\tunacan_caviar_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=150;
+			water=100;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class TunaCanDuck: TunaCan
+	{
+		scope=2;
+		displayName="Duck";
+		descriptionShort="Unopened unfertilized fish eggs.";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\tunacan_duck_co.paa"
+		};
+	};
+	class TunaCanDuck_Opened: TunaCan_Opened
+	{
+		scope=2;
+		displayName="Duck";
+		descriptionShort="Opened unfertilized fish eggs";
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\tunacan_duck_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=150;
+			water=100;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class PowderedMilk_DriedNoodles: PowderedMilk
+	{
+		scope=2;
+		displayName="Dried Noodles";
+		descriptionShort="A packet of instant noodles.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\powederedmilk_chickennoodles_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=1.5;
+			energy=192;
+			water=-400;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class PowderedMilk_DriedNoodles1: PowderedMilk
+	{
+		scope=2;
+		displayName="Dried Noodles";
+		descriptionShort="A packet of instant noodles.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\powederedmilk_beefnoodles_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=1.5;
+			energy=192;
+			water=-400;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+	class PowderedMilk_SpiceyPeppers: PowderedMilk
+	{
+		scope=2;
+		displayName="Spicey Peppers";
+		descriptionShort="A packet of deadly peppers. The warning label on the back reads 'Not for consumption'";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\powederedmilk_spicypeppers_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=-1000;
+			water=-3000;
+			blood=-1500;
+			nutritionalIndex=2;
+			toxicity=1200;
+		};
+	};
+	class PowderedMilk_SpiceyPeppers1: PowderedMilk
+	{
+		scope=2;
+		displayName="Spicey Peppers";
+		descriptionShort="A packet of deadly peppers. The warning label on the back reads 'Not for consumption'";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\powederedmilk_spicypeppers1_co.paa"
+		};
+		class Nutrition
+		{
+			fullnessIndex=2;
+			energy=-1000;
+			water=-3000;
+			blood=-1500;
+			nutritionalIndex=2;
+			toxicity=1200;
+		};
+	};
 };

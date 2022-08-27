@@ -57,6 +57,7 @@ class CfgPatches
       "DeerIsle_Weapons",
       "Survivalists_Narcotics",
       "Survivalists_Drink",
+      "Survivalists_Food",
 		};
 	};
 };

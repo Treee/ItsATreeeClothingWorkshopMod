@@ -1,23 +1,27 @@
 # ATTRIBUTION
 
-- donut package model -- [link](https://www.cgtrader.com/free-3d-models/various/various-models/packaging-bag-3d-model-free)
+- "Simple Candy Canes" (https://skfb.ly/6GNBO) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- sushi -- [link](https://skfb.ly/6GOrJ)
+- "Candy Treasure Chest" (https://skfb.ly/6S7Zu) by Jay Topham is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- tea box and bag -- [link](https://skfb.ly/6GyBQ)
+- "Chicken leg" (https://skfb.ly/JUWD) by digitalmaison is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- bread -- [link](https://skfb.ly/6yCVQ)
+- "Donut [free download]" (https://skfb.ly/6WUxY) by scrampunk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- sausage -- [link](https://skfb.ly/6RREY)
+- donut package model -- [link](https://www.cgtrader.com/free-3d-models/various/various-models/packaging-bag-3d-model-free) (Royalty Free)
 
-- wine bottles -- [link](https://skfb.ly/6WMyW)
+- "Baked goods" (https://skfb.ly/6yCVQ) by Rigsters is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- chickenleg -- [link](https://skfb.ly/JUWD)
+- "Dock, brookmint, valerian three medicinal plants" (https://skfb.ly/6DGvY) by LadyIReyna is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
-- teapot -- [link](https://skfb.ly/FRUL)
+- "Ribwort" (https://skfb.ly/o6Qtz) by Keandir is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- donut -- [link](https://skfb.ly/6WUxY)
+- "Plants kit" (https://skfb.ly/697DD) by luyssport is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-- donut package -- [link](https://www.cgtrader.com/free-3d-models/various/various-models/packaging-bag-3d-model-free)
+- "Hotdog lowpoly (7k tris) 3D scan" (https://skfb.ly/6zFF7) by Xeverian is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-- wooden rolling pin -- [link](https://skfb.ly/onJ9R)
+- "Saucisse" (https://skfb.ly/6RREY) by oooFFFFEDDMODELS is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+- "Brain" (https://skfb.ly/6SnKS) by spliter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Sushi" (https://skfb.ly/6GOrJ) by seirogan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
