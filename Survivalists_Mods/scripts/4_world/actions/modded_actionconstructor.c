@@ -23,6 +23,8 @@ modded class ActionConstructor
     
     actions.Insert(ActionPourMoltenMetalIntoMold);
     actions.Insert(ActionEmptyIngotMold);
+    
+		actions.Insert(ActionOpenSRPdonutpack);
 
     // Modded Mods Actions
     actions.Insert(ActionSRPHackSecurityDoor);

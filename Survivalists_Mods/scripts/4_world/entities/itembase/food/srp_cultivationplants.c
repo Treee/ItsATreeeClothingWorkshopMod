@@ -1,6 +1,6 @@
 class SRP_PlantHerbEdible_Colorbase extends Edible_Base
 {
-  override bool IsAlchemyPlantFood()
+  override bool IsAlchemyReagent()
   {
     return true;
   }

@@ -1,20 +1,20 @@
 class SodaCan_Baltika0 extends SodaCan_ColorBase
 {
-  override bool IsAlcoholDrink()
+  override bool HasAlcoholEffect()
   {
     return true;
   }
 };
 class SodaCan_Baltika7 extends SodaCan_ColorBase
 {
-  override bool IsAlcoholDrink()
+  override bool HasAlcoholEffect()
   {
     return true;
   }
 };
 class SodaCan_Baltika9 extends SodaCan_ColorBase
 {
-  override bool IsAlcoholDrink()
+  override bool HasAlcoholEffect()
   {
     return true;
   }
@@ -24,35 +24,35 @@ class SodaCan_Lemonade extends SodaCan_ColorBase{};
 class SodaCan_Tarhun extends SodaCan_ColorBase{};
 class SodaCan_5HrEnergy extends SodaCan_ColorBase
 {
-  override bool IsCaffeinatedDrink()
+  override bool HasEpinephrineEffect()
   {
     return true;
   }
 };
 class SodaCan_ElionVodka extends SodaCan_ColorBase
 {
-  override bool IsAlcoholDrink()
+  override bool HasAlcoholEffect()
   {
     return true;
   }
 };
 class SodaCan_Cocktail extends SodaCan_ColorBase
 {
-  override bool IsAlcoholDrink()
+  override bool HasAlcoholEffect()
   {
     return true;
   }
 };
 class SodaCan_AKDigital extends SodaCan_ColorBase
 {
-  override bool IsCaffeinatedDrink()
+  override bool HasEpinephrineEffect()
   {
     return true;
   }
 };
 class SodaCan_DeadBull extends SodaCan_ColorBase
 {
-  override bool IsCaffeinatedDrink()
+  override bool HasEpinephrineEffect()
   {
     return true;
   }

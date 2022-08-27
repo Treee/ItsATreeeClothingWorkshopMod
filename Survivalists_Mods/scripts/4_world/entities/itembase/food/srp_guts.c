@@ -1,14 +1,14 @@
 class SRP_Guts_PigletCookiesAcid extends Guts
 {
-  override bool IsCharcoalFood()
+  override bool HasCharcoalEffect()
   {
     return true;
   }
-  override bool IsAdrenalineFood()
+  override bool HasEpinephrineEffect()
   {
     return true;
   }
-  override bool IsRadioactiveFood()
+  override bool HasRadioactiveEffect()
   {
     return true;
   }

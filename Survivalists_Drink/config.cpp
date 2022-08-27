@@ -6,15 +6,7 @@ class CfgMods
 		author="ItsATreee | Mar";
 		name="Survivalists_Drink";
 		dir="Survivalists_Drink";
-		dependencies[]={"World"};
-		class defs
-		{
-			class worldScriptModule
-			{
-				value="";
-        files[]={"Survivalists_Drink/scripts/4_world"};			
-      };
-		};
+		dependencies[]={};
 	};
 };
 class CfgPatches

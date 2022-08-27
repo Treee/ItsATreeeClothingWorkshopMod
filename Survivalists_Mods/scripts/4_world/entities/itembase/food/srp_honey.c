@@ -2,15 +2,15 @@ class Honey_Yeast extends Honey{};
 
 class Honey_Gluttony extends Honey
 {
-  override bool IsCharcoalFood()
+  override bool HasCharcoalEffect()
   {
     return true;
   }
-  override bool IsAdrenalineFood()
+  override bool HasEpinephrineEffect()
   {
     return true;
   }
-  override bool IsRadioactiveFood()
+  override bool HasRadioactiveEffect()
   {
     return true;
   }

@@ -6,25 +6,7 @@ class CfgMods
 		author="ItsATreee | Mar";
 		name="Survivalists_Food";
 		dir="Survivalists_Food";
-		dependencies[]={"Game","World","Mission"};
-    class defs
-		{
-			class gameScriptModule
-			{
-				value="";
-				files[]={"Survivalists_Food/scripts/3_game"};
-			};
-			class worldScriptModule
-			{
-				value="";
-				files[]={"Survivalists_Food/scripts/4_world"};
-			};
-			class missionScriptModule
-			{
-				value="";
-				files[]={"Survivalists_Food/scripts/5_mission"};
-			};
-		};
+		dependencies[]={};
 	};
 };
 class CfgPatches

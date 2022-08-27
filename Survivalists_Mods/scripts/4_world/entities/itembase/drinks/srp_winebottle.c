@@ -1,6 +1,6 @@
 class Winebottle extends Bottle_Base
 {
-  override bool IsAlcoholDrink()
+  override bool HasAlcoholEffect()
   {
     return true;
   }

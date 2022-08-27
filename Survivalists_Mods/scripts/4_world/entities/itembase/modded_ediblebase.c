@@ -4,7 +4,7 @@ modded class Edible_Base
 	{
     super.OnConsume(amount, consumer);
 
-    if (IsAlcoholDrink())
+    if (HasAlcoholEffect())
     {
       if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_ALCOHOL ) )
       {
@@ -12,7 +12,7 @@ modded class Edible_Base
       }
       consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_ALCOHOL );
     }
-    if (IsCharcoalFood())
+    if (HasCharcoalEffect())
     {
       if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_CHARCOAL ) )
       {
@@ -20,7 +20,7 @@ modded class Edible_Base
       }
       consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_CHARCOAL );
     }
-    if (IsAdrenalineFood() || IsCaffeinatedDrink())
+    if (HasEpinephrineEffect())
     {
       if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_EPINEPHRINE ) )
       {
@@ -28,7 +28,7 @@ modded class Edible_Base
       }
       consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
     }
-    if (IsAntibioticDrink())
+    if (HasAntibioticEffect())
     {
       if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_ANTIBIOTICS ) )//effectively resets the timer
       {
@@ -36,19 +36,19 @@ modded class Edible_Base
       }
       consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_ANTIBIOTICS );
     }
-    if (IsBloodRegenDrink() && consumer)
+    if (HasBloodRegenEffect() && consumer)
     {
-      consumer.AddHealth("","Blood", GetHealthRegenDrinkTotal());
+      consumer.AddHealth("","Blood", GetBloodRegenEffectTotal());
     }
-    if (IsHealthRegenDrink() && consumer)
+    if (HasHealthRegenEffect() && consumer)
     {
-      consumer.AddHealth(GetHealthRegenDrinkTotal());
+      consumer.AddHealth(GetHealthRegenEffectTotal());
     }
-    if (IsShockRegenDrink() && consumer)
+    if (HasShockRegenEffect() && consumer)
     {
-			consumer.AddHealth("","Shock", GetShockRegenDrinkTotal());
+			consumer.AddHealth("","Shock", GetShockRegenEffectTotal());
     }
-    if (IsRadioactiveFood())
+    if (HasRadioactiveEffect())
     {
       if (!consumer.IsAlpha())
       {

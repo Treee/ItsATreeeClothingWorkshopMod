@@ -1,6 +1,6 @@
 class SRP_BrownBottle extends Bottle_Base
 {
-  override bool IsAlcoholDrink()
+  override bool HasAlcoholEffect()
   {
     return true;
   }
