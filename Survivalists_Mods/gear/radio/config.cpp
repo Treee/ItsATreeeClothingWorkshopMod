@@ -824,7 +824,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Lost In The Snow";
-		descriptionShort="Music Tape - Credit | Island George";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised";
 		class CfgCassette
 		{
 			soundSet="SRPRadio_IslandGeorge_LostInTheSnow_SoundSet1";
@@ -834,7 +834,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="The Blast";
-		descriptionShort="Music Tape - Credit | Island George";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised";
 		class CfgCassette
 		{
 			soundSet="SRPRadio_IslandGeorge_TheBlast_SoundSet1";
@@ -844,7 +844,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="GTH";
-		descriptionShort="Music Tape - Credit | Island George";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised";
 		class CfgCassette
 		{
 			soundSet="SRPRadio_IslandGeorge_GTH_SoundSet1";

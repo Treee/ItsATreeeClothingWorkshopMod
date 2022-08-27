@@ -103,7 +103,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_black_co.paa",
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_blue_co.paa",
       "Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_fur_white_ca.paa"
 		};
 	};
@@ -118,7 +118,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_black_co.paa",
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_blue_co.paa",
       "Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_fur_black_ca.paa"
 		};
 	};
