@@ -78,7 +78,15 @@ class CfgVehicles
       "LightBlue",
       "Green",
       "White",
-      "White"
+      "SkyBlue",
+      "Coal",
+      "Lime",
+      "LightGreen",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Red",
+      "Yellow"      
     };
   };
 

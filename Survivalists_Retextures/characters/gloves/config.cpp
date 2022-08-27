@@ -20,6 +20,7 @@ class CfgVehicles
 	class NBCGloves_ColorBase;
 	class TacticalGloves_ColorBase;
   class LeatherGloves_ColorBase;
+  class SurgicalGloves_ColorBase;
 
   class SRP_BoxingGloves_Colorbase;
 
@@ -329,6 +330,97 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\gloves\data\leather_gloves_Yellow_co.paa"
+		};
+	};
+
+  class SurgicalGloves_SkyBlue: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_blue_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_blue_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_blue_co.paa"
+		};
+	};
+  class SurgicalGloves_Coal: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_coal_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_coal_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_coal_co.paa"
+		};
+	};
+  class SurgicalGloves_Lime: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_green_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_green_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_green_co.paa"
+		};
+	};
+  class SurgicalGloves_LightGreen: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_lime_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_lime_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_lime_co.paa"
+		};
+	};
+  class SurgicalGloves_Orange: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_orange_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_orange_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_orange_co.paa"
+		};
+	};
+  class SurgicalGloves_Pink: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_pink_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_pink_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_pink_co.paa"
+		};
+	};
+  class SurgicalGloves_Purple: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_purple_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_purple_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_purple_co.paa"
+		};
+	};
+  class SurgicalGloves_Red: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_red_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_red_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_red_co.paa"
+		};
+	};
+  class SurgicalGloves_Yellow: SurgicalGloves_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_yellow_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_yellow_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_yellow_co.paa"
 		};
 	};
 

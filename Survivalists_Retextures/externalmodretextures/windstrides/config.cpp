@@ -62,6 +62,66 @@ class CfgVehicles
 			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_black_co.paa"
 		};
 	};
+  class SRP_Winter_Parka_PinkWhite: Winter_Parka_Base
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "fur"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_pink_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_fur_white_ca.paa"
+		};
+	};
+  class SRP_Winter_Parka_PinkBlack: Winter_Parka_Base
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "fur"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_pink_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_fur_black_ca.paa"
+		};
+	};
+  class SRP_Winter_Parka_BlueWhite: Winter_Parka_Base
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "fur"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_black_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_fur_white_ca.paa"
+		};
+	};
+  class SRP_Winter_Parka_BlueBlack: Winter_Parka_Base
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "fur"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_black_co.paa",
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\winterparka_fur_black_ca.paa"
+		};
+	};
 	class SRP_Ragged_Eyepatchbblack: Ragged_Eyepatch
 	{
 		scope=2;
