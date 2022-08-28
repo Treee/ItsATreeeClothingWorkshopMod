@@ -46,29 +46,34 @@ modded class RockBase
     if ( Class.CastTo(config, GetDayZGame().GetSRPMMConfig()) && Class.CastTo(miningConfig, config.IsInMiningQuarry(GetPosition())) )
     {
       float chance = Math.RandomFloatInclusive(0,1);
-      if (chance >= miningConfig.platinumChance)
+      if (Math.RandomFloatInclusive(0,1) >= miningConfig.platinumChance)
       {
         stoneChunks.Insert("SRP_Mining_StoneChunk_Platinum");
+        chance = Math.RandomFloatInclusive(0,1);
         // Print("plat chance: " + chance);
       }
       if (chance >= miningConfig.goldChance)
       {
         stoneChunks.Insert("SRP_Mining_StoneChunk_Gold");      
+        chance = Math.RandomFloatInclusive(0,1);
         // Print("gold chance: " + chance);
       }
       if (chance >= miningConfig.ironChance)
       {
         stoneChunks.Insert("SRP_Mining_StoneChunk_Iron");
+        chance = Math.RandomFloatInclusive(0,1);
         // Print("iron chance: " + chance);
       }
       if (chance >= miningConfig.copperChance)
       {
         stoneChunks.Insert("SRP_Mining_StoneChunk_Copper");
+        chance = Math.RandomFloatInclusive(0,1);
         // Print("copper chance: " + chance);
       }
       if (chance >= miningConfig.tinChance)
       {
         stoneChunks.Insert("SRP_Mining_StoneChunk_Tin");      
+        chance = Math.RandomFloatInclusive(0,1);
         // Print("tin chance: " + chance);    
       }
     }
