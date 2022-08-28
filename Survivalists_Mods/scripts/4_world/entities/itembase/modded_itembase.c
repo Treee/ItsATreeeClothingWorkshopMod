@@ -52,4 +52,12 @@ modded class ItemBase
   {
     return false;
   }
+  bool IsPlacingKit()
+  {
+    return false;
+  }
+  bool IsCraftingKit()
+  {
+    return false;
+  }
 };

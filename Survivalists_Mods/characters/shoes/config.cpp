@@ -137,7 +137,7 @@ class CfgVehicles
   };
   class MilitaryBoots_ColorBase: Clothing
   {
-    attachments[]+={"SRP_GunDerringer","Knife"};
+    attachments[]+={"SRP_GunDerringer"};
     rootClassName="MilitaryBoots";
     colorVariants[]=
     {

@@ -94,6 +94,15 @@ class CfgWeapons
 		scope=0;
 	};
 
+  class Derringer_Base: Pistol_Base
+	{
+    itemSize[]={2,2};
+		inventorySlot[]+=
+		{
+   		"SRP_GunDerringer"
+		};
+	};
+
   class Flaregun_Base: Pistol_Base
 	{
     inventorySlot[]+=

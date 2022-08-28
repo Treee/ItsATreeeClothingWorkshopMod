@@ -365,7 +365,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=130;
+					hitpoints=250;
 					healthLevels[]=
 					{
 						{1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_snakedagger.rvmat"}},
@@ -445,7 +445,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=130;
+					hitpoints=300;
 					healthLevels[]=
 					{
 						{1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_knifeold.rvmat"}},
@@ -535,7 +535,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=130;
+					hitpoints=300;
 					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
 					healthLevels[]=
 					{
@@ -750,7 +750,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=300;
+					hitpoints=600;
 					healthLevels[]=
 					{
             {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"}},
@@ -879,7 +879,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=300;
+					hitpoints=600;
 					healthLevels[]=
 					{
             {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim.rvmat"}},
@@ -985,7 +985,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=300;
+					hitpoints=600;
 					healthLevels[]=
 					{
             {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
@@ -1016,7 +1016,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=300;
+					hitpoints=600;
 					healthLevels[]=
 					{
             {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
@@ -1060,7 +1060,7 @@ class CfgVehicles
       {
         class Health
         {
-          hitpoints=300;
+          hitpoints=600;
           healthLevels[]=
           {
             {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
@@ -1091,7 +1091,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=300;
+					hitpoints=600;
 					healthLevels[]=
 					{
             {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
@@ -1122,7 +1122,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=300;
+					hitpoints=600;
 					healthLevels[]=
 					{
             {1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_katanaslim_luci.rvmat"}},
@@ -1162,7 +1162,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=250;
+					hitpoints=750;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_berserksword.rvmat"}},
@@ -1256,7 +1256,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=250;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_macehandle.rvmat", "Survivalists_Mods\weapons\melee\blade\data\srp_maceglass.rvmat"}},
@@ -1364,7 +1364,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=130;
+					hitpoints=500;
 					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
 					healthLevels[]=
 					{
@@ -1528,7 +1528,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=150;
+					hitpoints=500;
 					healthLevels[]=
 					{						
 						{1.0,{"Survivalists_Mods\weapons\melee\blade\data\SRP_Viking_Axe.rvmat"}},
@@ -1620,7 +1620,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=150;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,{"Survivalists_Mods\weapons\melee\blade\data\srp_greatbattleaxe.rvmat"}},
@@ -2034,7 +2034,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=250;
+					hitpoints=750;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_firegreatsword.rvmat"}},
@@ -2152,7 +2152,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pike.rvmat"}},
@@ -2230,7 +2230,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_warhammer_pikehook.rvmat"}},

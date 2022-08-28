@@ -574,6 +574,12 @@ class CfgVehicles
 		weight=1000;
 		itemSize[]={5,4};
 		itemsCargoSize[]={8,8};
+    attachments[]=
+		{
+			"CookingEquipment",
+			"cookingtripod",
+			"fishingRod"
+		};
 		absorbency=0;
 		heatIsolation=0.80;
     rootClassName="SRP_Rolltop_Bag";

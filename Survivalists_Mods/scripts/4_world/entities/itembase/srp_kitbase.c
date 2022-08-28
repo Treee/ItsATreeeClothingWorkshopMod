@@ -301,6 +301,11 @@ class SRP_SleepingBag_Basic_Kit extends SRP_KitBase{};
 // This crafted item is not placeable. Most of these represent intermediate kits
 class SRP_IntermediateCraftingKitBase extends ItemBase
 {
+  override bool IsCraftingKit()
+  {
+    return true;
+  }
+
   override bool CanPutInCargo( EntityAI parent )
 	{
     return GetInventory().AttachmentCount() == 0;
@@ -358,6 +363,21 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
   bool HasAllAttachmentsFilled()
   {
     return false;
+  }
+
+  bool AreCorrectTypesAndSlots(TStringArray types, TStringArray slots)
+  {
+    bool isValid = true;
+    for(int slotIndex=0; slotIndex<slots.Count(); slotIndex++)
+    {
+      isValid &= HasAttachmentFilledWithItem(slots.Get(slotIndex), types.Get(slotIndex));
+      // if any slot is invalid, break the look 
+      if (!isValid)
+      {
+        break;
+      }
+    }
+    return isValid;
   }
 
   bool CanCraft()
@@ -484,28 +504,7 @@ class SRP_TaxidermyWall_Kit extends SRP_Taxidermy_Kit{};
 // GUNSMITHING
 class SRP_WoodAttachmentGunKit_Kit extends SRP_IntermediateCraftingKitBase{};
 
-class SRP_WeaponLongBarrel_Kit extends SRP_IntermediateCraftingKitBase
-{
-  bool AreCorrectTypesAndSlots(TStringArray types, TStringArray slots)
-  {
-    bool isValid = true;
-    for(int slotIndex=0; slotIndex<slots.Count(); slotIndex++)
-    {
-      isValid &= (GetItemInSlot(slots.Get(slotIndex)) != NULL);
-      // if any slot is invalid, break the look 
-      if (!isValid)
-      {
-        break;
-      }
-    }
-    return isValid;
-  }
-
-  ItemBase GetItemInSlot(string slotName)
-  {
-    return ItemBase.Cast(FindAttachmentBySlotName(slotName));
-  }
-};
+class SRP_WeaponLongBarrel_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WeaponMediumBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 class SRP_WeaponShortBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 
@@ -562,7 +561,6 @@ class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
     }
   }
 };
-
 
 class SRP_Mutation_Kit extends SRP_IntermediateCraftingKitBase{};
 

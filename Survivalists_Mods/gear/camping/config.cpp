@@ -1688,7 +1688,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\camping\data\doormatrug_co.paa"
+      "Survivalists_Mods\gear\camping\data\srp_sentientcrystal_co.paa"
     };
     class DamageSystem
 		{

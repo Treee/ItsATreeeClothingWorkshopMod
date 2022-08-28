@@ -1876,6 +1876,12 @@ class CfgSlots
 		displayName="Skeleton Right Leg";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+  class Slot_Fishingrod
+	{
+		name="Fishingrod";
+		displayName="Fishing Rod";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
 
   class Slot_SRP_Cassette
 	{
@@ -1889,7 +1895,12 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
-
+  class Proxysrp_fishingrod_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"Fishingrod"};
+		model="Survivalists_Mods\proxy\srp_fishingrod_proxy.p3d";
+	};
   class Proxysrp_book1_proxy: ProxyAttachment
 	{
 		scope=2;

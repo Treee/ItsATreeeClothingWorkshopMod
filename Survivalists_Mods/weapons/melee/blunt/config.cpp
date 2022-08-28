@@ -70,7 +70,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_basic.rvmat"}},
@@ -135,7 +135,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_brutal.rvmat"}},
@@ -182,7 +182,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_engraved.rvmat"}},
@@ -229,7 +229,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_heavy.rvmat"}},
@@ -294,7 +294,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_mallet.rvmat"}},
@@ -359,7 +359,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotput.rvmat"}},
@@ -424,7 +424,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputlong.rvmat"}},
@@ -471,7 +471,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputpike.rvmat"}},
@@ -518,7 +518,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_shotputprong.rvmat"}},
@@ -565,7 +565,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_warhammer_skullcrusher.rvmat"}},
@@ -673,7 +673,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffwooden.rvmat"}},
@@ -754,7 +754,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffskullhead.rvmat", "Survivalists_Mods\weapons\melee\blunt\data\srp_staffskullhandle.rvmat"}},
@@ -834,7 +834,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffsun.rvmat"}},
@@ -912,7 +912,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffcopper.rvmat"}},
@@ -990,7 +990,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffspear.rvmat"}},
@@ -1068,7 +1068,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=500;
 					healthLevels[]=
 					{
 						{1.0,	{	"Survivalists_Mods\weapons\melee\blunt\data\srp_staffmoon.rvmat"}},
