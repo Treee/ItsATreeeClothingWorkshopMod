@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
+		actions.Insert(ActionSalvageCarWreck); 
+
 		actions.Insert(ActionBlowIntoHorn); 
 
 		actions.Insert(ActionToggleMuteTransmitter);  

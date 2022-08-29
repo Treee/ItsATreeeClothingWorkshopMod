@@ -53,9 +53,9 @@ class SRP_PouchBase_Small extends Container_Base
   }
 };
 
-class SRP_Map_Pouch_Tan extends SRP_PouchBase_Small{};
+class SRP_Map_Pouch_ColorBase extends SRP_PouchBase_Small{};
 
-class SRP_Pistol_Mag_Pouch_Tan extends SRP_PouchBase_Small
+class SRP_Pistol_Mag_Pouch_ColorBase extends SRP_PouchBase_Small
 {
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
@@ -130,7 +130,7 @@ class SRP_PouchBase_Large extends Container_Base
 
 };
 
-class SRP_IFAK_Tan extends SRP_PouchBase_Large
+class SRP_IFAK_ColorBase extends SRP_PouchBase_Large
 {
   override bool CanReceiveItemIntoCargo(EntityAI item)
 	{
@@ -182,7 +182,7 @@ class SRP_IFAK_Tan extends SRP_PouchBase_Large
 
 };
 
-class SRP_Magazine_Pouch_1_Tan extends SRP_PouchBase_Large
+class SRP_Magazine_Pouch_1_ColorBase extends SRP_PouchBase_Large
 {
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
@@ -206,7 +206,7 @@ class SRP_Magazine_Pouch_1_Tan extends SRP_PouchBase_Large
 	}
 };
 
-class SRP_Empty_MagPouch_Tan extends SRP_PouchBase_Large
+class SRP_Empty_MagPouch_ColorBase extends SRP_PouchBase_Large
 {
   override bool CanReceiveItemIntoCargo(EntityAI item)
 	{
@@ -250,12 +250,20 @@ class SRP_Empty_MagPouch_Tan extends SRP_PouchBase_Large
 
 };
 
-class SRP_UtilityPouch_Tan extends SRP_PouchBase_Large
+class SRP_UtilityPouch_ColorBase extends SRP_PouchBase_Large
 {
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
+    if (attachment.GetType() == "Handsaw")
+    {
+      return false;
+    }
+    if (attachment.GetType() == "HackSaw")
+    {
+      return false;
+    }
     return GetInventory().AttachmentCount() < 1;
-	}
+  }
 
   override bool CanDisplayAttachmentSlot( string slot_name )
 	{
@@ -268,9 +276,51 @@ class SRP_UtilityPouch_Tan extends SRP_PouchBase_Large
     return canDisplay;
   }
 };
-class SRP_HeavyPouch_Tan extends SRP_PouchBase_Large{};
-class SRP_MediumPouch_Tan extends SRP_PouchBase_Large{};
-class SRP_TacoPouch_Tan extends SRP_PouchBase_Large{};
+class SRP_HeavyPouch_ColorBase extends SRP_PouchBase_Large
+{
+  override bool CanReceiveAttachment (EntityAI attachment, int slotId)
+	{
+    if (attachment.GetType() == "Handsaw")
+    {
+      return false;
+    }
+    if (attachment.GetType() == "HackSaw")
+    {
+      return false;
+    }
+		return super.CanReceiveAttachment(attachment, slotId);
+  }
+};
+class SRP_MediumPouch_ColorBase extends SRP_PouchBase_Large
+{
+  override bool CanReceiveAttachment (EntityAI attachment, int slotId)
+	{
+    if (attachment.GetType() == "Handsaw")
+    {
+      return false;
+    }
+    if (attachment.GetType() == "HackSaw")
+    {
+      return false;
+    }
+		return super.CanReceiveAttachment(attachment, slotId);
+  }
+};
+class SRP_TacoPouch_ColorBase extends SRP_PouchBase_Large
+{
+  override bool CanReceiveAttachment (EntityAI attachment, int slotId)
+	{
+    if (attachment.GetType() == "Handsaw")
+    {
+      return false;
+    }
+    if (attachment.GetType() == "HackSaw")
+    {
+      return false;
+    }
+		return super.CanReceiveAttachment(attachment, slotId);
+  }
+};
 
 
-class SRP_Small_Bottle_Tan extends Bottle_Base {};
+class SRP_Small_Bottle_ColorBase extends Bottle_Base {};

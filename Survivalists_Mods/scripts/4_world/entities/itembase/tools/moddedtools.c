@@ -15,6 +15,7 @@ modded class WoodAxe
 		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
+    AddAction(ActionSalvageCarWreck);
 	}
 }
 
@@ -42,6 +43,7 @@ modded class SledgeHammer
 		super.SetActions();	
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
+    AddAction(ActionSalvageCarWreck);
     // remove dat raiding ability
     RemoveAction(ActionDismantlePart);
 	}
@@ -86,6 +88,7 @@ modded class FirefighterAxe
 		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
+    AddAction(ActionSalvageCarWreck);
 	}
 }
 
@@ -109,4 +112,24 @@ modded class Lockpick
 		AddAction(ActionLockDisplayCase);
 		AddAction(ActionUnLockDisplayCase);
 	}
+};
+
+modded class Hacksaw
+{
+	override void SetActions()
+	{
+    super.SetActions();
+		
+		AddAction(ActionSalvageCarWreck);
+  }
+};
+
+modded class HandSaw
+{
+  override void SetActions()
+	{
+    super.SetActions();
+		
+		AddAction(ActionSalvageCarWreck);
+  }
 };
