@@ -121,11 +121,19 @@ class SRP_ModularVest_Base extends Clothing
 	}
   
 };
-class SRP_Tac_Vest_ColorBase: SRP_ModularVest_Base{};
-class SRP_Ratnik_ColorBase: SRP_ModularVest_Base{};
-class SRP_Light_Ratnik_ColorBase: SRP_ModularVest_Base{};
-class SRP_Chestrig_ColorBase: SRP_ModularVest_Base{};
-class SRP_Army_Vest_1_ColorBase: SRP_ModularVest_Base{};
-class SRP_Army_Vest_2_ColorBase: SRP_ModularVest_Base{};
-class SRP_JPC_Vest_ColorBase: SRP_ModularVest_Base{};
-class SRP_Tac_Tec_Vest_ColorBase: SRP_ModularVest_Base{};
+
+class SRP_Ratnik_ColorBase extends SRP_ModularVest_Base
+{
+  override bool IsSprintRemoved()
+  {
+    return true;
+  }
+};
+
+class SRP_Tac_Vest_ColorBase extends SRP_ModularVest_Base{};
+class SRP_Light_Ratnik_ColorBase extends SRP_ModularVest_Base{};
+class SRP_Chestrig_ColorBase extends SRP_ModularVest_Base{};
+class SRP_Army_Vest_1_ColorBase extends SRP_ModularVest_Base{};
+class SRP_Army_Vest_2_ColorBase extends SRP_ModularVest_Base{};
+class SRP_JPC_Vest_ColorBase extends SRP_ModularVest_Base{};
+class SRP_Tac_Tec_Vest_ColorBase extends SRP_ModularVest_Base{};

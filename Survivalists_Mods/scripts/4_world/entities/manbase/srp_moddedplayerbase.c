@@ -11,6 +11,7 @@ modded class PlayerBase
   protected bool m_IsInBioZone = false;
   protected bool m_IsNearComfortHeatSource = false;
   protected bool m_TirednessSprintOverride = false;
+  protected int m_DisableSprint = 0;
 
   override void Init()
   {
@@ -69,63 +70,46 @@ modded class PlayerBase
     }
   }
 
+  override void EEItemIntoHands(EntityAI item)
+	{
+		super.EEItemIntoHands( item );
+    // Print("Item going into hands: " + item.GetType());
+    if (item)
+    {
+      ItemBase ibCast = ItemBase.Cast(item);
+      if (ibCast.IsSprintRemoved())
+      {
+        SetIsSprintDisabled(true);
+      }
+    }
+	}
+	
+	override void EEItemOutOfHands(EntityAI item)
+	{
+		super.EEItemOutOfHands( item );
+    // Print("Item going out of hands: " + item.GetType());
+		if (item)
+    {
+      ItemBase ibCast = ItemBase.Cast(item);
+      if (ibCast.IsSprintRemoved())
+      {
+        SetIsSprintDisabled(false);
+      }
+    }
+	}
+
   override bool CanSprint()
-  {
-    ItemBase item;
-    if (Class.CastTo(item, FindAttachmentBySlotName("Vest")))
-    {
-      if (item && (item.GetType() == "SRP_Ratnik_Green" || item.GetType() == "SRP_Ratnik_Tan" || item.GetType() == "SRP_Ratnik_Black"))
-      {
-        return false;
-      }
-    }
-    if (Class.CastTo(item, FindAttachmentBySlotName("Hips")))
-    {
-      if (item && (item.GetType() == "SRP_Car_WoodenDerby" || item.IsInherited(SRP_Car_WoodenDerby)))
-      {
-        return false;
-      }
-    }
-    if (Class.CastTo(item, FindAttachmentBySlotName("Feet")))
-    {
-      if (item && (item.GetType() == "DUB_Flippers"))
-      {
-        if ( GetGame().GetWaterDepth(GetPosition()) >= 1.3 )
-        {
-          return true;
-        }
-        return false;
-      }
-    }
-    item = GetItemInHands();
-    if (item && (item.GetType() == "SRP_BerserkSword" || item.GetType() == "SRP_Car_WoodenDerby" || item.IsInherited(SRP_Car_WoodenDerby) || item.GetType() == "BBP_Step_Ladder_Kit"))
-    {
-      return false;
-    }
-    if (item && item.HasAnyCargo()) // if the item exists and has cargo
-    {
-      CargoBase cargoItem = item.GetInventory().GetCargo();
-      int currentWeight = 0;
-      int maxWeight = cargoItem.GetWidth() * cargoItem.GetHeight(); // x,y    
-      if (maxWeight >= 80)  
-      {
-        for ( int i = 0; i < cargoItem.GetItemCount(); ++i )
-        {
-          int x, y;
-          cargoItem.GetItemSize( i, x, y );
-          currentWeight += x * y;
-        }
-        float percentFilled = 1-((maxWeight-currentWeight)/maxWeight);
-        if (percentFilled >= 0.6)
-        {
-          return false;
-        }
-      }
-    }
+  {    
     if (GetTotalTiredness() > 23000 && !IsTirednessSprintOverriden()) // roughly 75% tiredness
     {
       return false;
     }
+
+    if (IsSprintDisabled())
+    {
+      return false;
+    }
+
     return super.CanSprint();
   }
 
@@ -258,6 +242,23 @@ modded class PlayerBase
       protection += 6.0;
     }
     return protection;
+  }
+
+  bool IsSprintDisabled()
+  {
+    return m_DisableSprint > 0;
+  }
+
+  void SetIsSprintDisabled(bool isDisabled)
+  {
+    if (isDisabled)
+    {
+      m_DisableSprint++;
+    }
+    else
+    {
+      m_DisableSprint--;
+    }    
   }
 
   float SRPAIVisionModifier()
