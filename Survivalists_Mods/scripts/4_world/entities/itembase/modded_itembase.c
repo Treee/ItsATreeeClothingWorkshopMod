@@ -3,7 +3,7 @@ modded class ItemBase
   override void OnWasAttached( EntityAI parent, int slot_id )
 	{
 		super.OnWasAttached(parent, slot_id);
-    Print("OnWasAttached");
+    // Print("OnWasAttached");
     if (IsSprintRemoved())
     {
       EntityAI owner = GetHierarchyRootPlayer();        
@@ -18,7 +18,7 @@ modded class ItemBase
 	override void OnWasDetached( EntityAI parent, int slot_id )
 	{
 		super.OnWasDetached(parent, slot_id);
-    Print("OnWasDetached");
+    // Print("OnWasDetached");
     if (IsSprintRemoved())
     {
       PlayerBase player = PlayerBase.Cast(parent);
