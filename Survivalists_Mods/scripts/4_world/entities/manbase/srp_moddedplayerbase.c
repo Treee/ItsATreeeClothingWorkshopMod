@@ -12,6 +12,8 @@ modded class PlayerBase
   protected bool m_IsNearComfortHeatSource = false;
   protected bool m_TirednessSprintOverride = false;
   protected int m_DisableSprint = 0;
+  protected float m_TotalAlcoholInStomach = 0;
+  protected float m_AccumulatedAlcoholCheck = 0;
 
   override void Init()
   {
@@ -70,6 +72,16 @@ modded class PlayerBase
     }
   }
 
+  override void OnScheduledTick(float deltaTime)
+	{
+    super.OnScheduledTick(deltaTime);
+    // always be degenerating alcohol in the system
+    if (m_TotalAlcoholInStomach > 0)
+    {
+      AddAlcoholConsuption(-deltaTime);
+    }
+	}
+	
   override void EEItemIntoHands(EntityAI item)
 	{
 		super.EEItemIntoHands( item );
@@ -267,6 +279,23 @@ modded class PlayerBase
       }
     }
     // Print("Sprint count: " + m_DisableSprint);
+  }
+
+  bool IsDrunkIncapacitated()
+  {
+    return m_TotalAlcoholInStomach > 1000;
+  }
+
+  void AddAlcoholConsuption(float alcoholToAdd)
+  {
+    // never go below 0 drinks had
+    m_TotalAlcoholInStomach = Math.Max(0, (m_TotalAlcoholInStomach + alcoholToAdd));    
+    // should we cap a ceiling?
+    // Print("total alcohol in stomach: " + m_TotalAlcoholInStomach + " added " + alcoholToAdd);
+    if (IsDrunkIncapacitated() && !IsUnconscious())
+    {
+      SRP_SetUnconscious(10);
+    }
   }
 
   float SRPAIVisionModifier()
@@ -606,9 +635,9 @@ modded class PlayerBase
     return !( GetEmoteManager().m_IsLayDown || IsUnconscious() );
   }
 
-  void SRP_SetUnconscious()
+  void SRP_SetUnconscious(int modifierAmount=1)
   {
-    SetHealth("", "Shock", PlayerConstants.UNCONSCIOUS_THRESHOLD - 1);
+    SetHealth("", "Shock", PlayerConstants.UNCONSCIOUS_THRESHOLD - modifierAmount);
     GetModifiersManager().ActivateModifier(eModifiers.MDF_UNCONSCIOUSNESS);
   }
 

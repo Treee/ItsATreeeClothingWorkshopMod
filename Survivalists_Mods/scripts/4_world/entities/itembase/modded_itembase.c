@@ -81,6 +81,10 @@ modded class ItemBase
   {
     return false;
   }
+  float GetAlcoholAmount()
+  {
+    return 0.0;
+  }
   bool HasEpinephrineEffect()
   {
     return false;
