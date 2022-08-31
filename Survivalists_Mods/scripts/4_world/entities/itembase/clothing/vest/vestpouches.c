@@ -310,7 +310,7 @@ class SRP_TacoPouch_ColorBase extends SRP_PouchBase_Large
 {
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
-    if (attachment.GetType() == "Handsaw")
+    if (attachment.GetType() == "HandSaw")
     {
       return false;
     }
