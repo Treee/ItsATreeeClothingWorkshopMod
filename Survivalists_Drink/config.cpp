@@ -34,6 +34,7 @@ class CfgVehicles
   class BoxCerealCrunchin;
   class SodaCan_ColorBase;
   class WaterBottle;
+  class Edible_Base;
 
 //====================================================== CUSTOM STUFF
   class SRPteabag: Inventory_Base
@@ -83,7 +84,7 @@ class CfgVehicles
 		descriptionShort="A coffee tea bag. This one is a mixed blend, very stale.";
 	};
 
-  class Winebottle: Bottle_Base
+  class Winebottle: Edible_Base
 	{
 		scope=2;
 		displayName="Red Wine";
@@ -91,8 +92,8 @@ class CfgVehicles
 		model="Survivalists_Drink\drinks\wine.p3d";
 		weight=450;
 		itemSize[]={1,3};
-		destroyOnEmpty=1;
-		varQuantityDestroyOnMin=0;
+		// destroyOnEmpty=1;
+		// varQuantityDestroyOnMin=0;
 		varLiquidTypeInit=2048;
 		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
 		varQuantityInit=750;
@@ -138,6 +139,14 @@ class CfgVehicles
 					id=210;
 				};
 			};
+		};
+    class Nutrition
+		{
+			totalVolume=1;
+			energy=50;
+			water=150;
+			nutritionalIndex=1;
+			toxicity=0;
 		};
 	};
 	class Winebottle_two: Winebottle
@@ -320,8 +329,16 @@ class CfgVehicles
 				};
 			};
 		};
+    class Nutrition
+		{
+			totalVolume=1;
+			energy=50;
+			water=150;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
 	};
-  class SRP_BeerBottle: Bottle_Base
+  class SRP_BeerBottle: Edible_Base
 	{
 		scope=2;
 		displayName="Beer Bottle";
@@ -329,8 +346,8 @@ class CfgVehicles
 		model="Survivalists_Drink\drinks\beerbottle.p3d";
 		weight=450;
 		itemSize[]={1,3};
-		destroyOnEmpty=1;
-		varQuantityDestroyOnMin=0;
+		// destroyOnEmpty=1;
+		// varQuantityDestroyOnMin=0;
 		varLiquidTypeInit=2048;
 		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
 		varQuantityInit=500;
@@ -394,6 +411,14 @@ class CfgVehicles
 					id=210;
 				};
 			};
+		};
+    class Nutrition
+		{
+			totalVolume=1;
+			energy=50;
+			water=150;
+			nutritionalIndex=1;
+			toxicity=0;
 		};
 	};
 

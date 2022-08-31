@@ -21,6 +21,7 @@ class CfgVehicles
   class Compass;
   class FarmingHoe;
   class Container_Base;
+  class FishingRod_Base_New;
 
   class SRP_KitBase;
 
@@ -158,6 +159,19 @@ class CfgVehicles
 		{
 			"Pen_slot"
 		};
+  };
+
+  class ImprovisedFishingRod: FishingRod_Base_New
+  {
+    inventorySlot[]+={"fishingRod"};
+  };
+	class ObsoleteFishingRod: FishingRod_Base_New
+	{
+    inventorySlot[]+={"fishingRod"};
+  };
+  class FishingRod: FishingRod_Base_New
+	{
+    inventorySlot[]+={"fishingRod"};
   };
 
   // -------------------------- MODDED MODS
