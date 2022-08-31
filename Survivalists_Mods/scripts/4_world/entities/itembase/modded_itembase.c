@@ -14,7 +14,6 @@ modded class ItemBase
       }
     }    
 	}
-	
 	override void OnWasDetached( EntityAI parent, int slot_id )
 	{
 		super.OnWasDetached(parent, slot_id);
@@ -28,7 +27,6 @@ modded class ItemBase
       }
     }
 	}
-
   override void OnInventoryEnter(Man player)
 	{
     super.OnInventoryEnter(player);
@@ -53,7 +51,6 @@ modded class ItemBase
       }
     }
 	}
-		
 	override void OnInventoryExit(Man player)
 	{
     EntityAI entity = player.GetHumanInventory().GetEntityInHands();    
@@ -79,7 +76,6 @@ modded class ItemBase
     }
     super.OnInventoryExit(player);
 	}  
-
 
   bool HasAlcoholEffect()
   {
@@ -147,13 +143,13 @@ modded class ItemBase
   }
   bool IsContainerFilledToRemoveSprint(int maxCargo=80)
   {
-    Print("IsContainerFilledToRemoveSprint: maxCargo: " + maxCargo);
+    // Print("IsContainerFilledToRemoveSprint: maxCargo: " + maxCargo);
     if (HasAnyCargo()) // if the item exists and has cargo
     {
       CargoBase cargoItem = GetInventory().GetCargo();
       int currentWeight = 0;
       int maxWeight = cargoItem.GetWidth() * cargoItem.GetHeight(); // x,y    
-      Print("has cargo with this size: " + maxWeight);
+      // Print("has cargo with this size: " + maxWeight);
       if (maxWeight >= maxCargo)  
       {
         for ( int i = 0; i < cargoItem.GetItemCount(); ++i )
@@ -163,7 +159,7 @@ modded class ItemBase
           currentWeight += x * y;
         }
         float percentFilled = 1-((maxWeight-currentWeight)/maxWeight);
-        Print("Percent filled: " + percentFilled);
+        // Print("Percent filled: " + percentFilled);
         return percentFilled >= GetPercentWeightToRemoveSprint();          
       }
     }
