@@ -95,6 +95,10 @@ modded class PlayerBase
       {
         SetIsSprintDisabled(false);
       }
+      if (ibCast.IsContainerFilledToRemoveSprint(80))
+      {
+        SetIsSprintDisabled(false);
+      }
     }
 	}
 
@@ -257,8 +261,12 @@ modded class PlayerBase
     }
     else
     {
-      m_DisableSprint--;
-    }    
+      if (m_DisableSprint > 0)
+      {
+        m_DisableSprint--;
+      }
+    }
+    // Print("Sprint count: " + m_DisableSprint);
   }
 
   float SRPAIVisionModifier()

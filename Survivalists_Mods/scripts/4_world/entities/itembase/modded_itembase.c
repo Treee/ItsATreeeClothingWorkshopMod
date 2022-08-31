@@ -1,9 +1,9 @@
 modded class ItemBase
-{
+{ 
   override void OnWasAttached( EntityAI parent, int slot_id )
 	{
 		super.OnWasAttached(parent, slot_id);
-    // Print("OnWasAttached");
+    Print("OnWasAttached");
     if (IsSprintRemoved())
     {
       EntityAI owner = GetHierarchyRootPlayer();        
@@ -18,7 +18,7 @@ modded class ItemBase
 	override void OnWasDetached( EntityAI parent, int slot_id )
 	{
 		super.OnWasDetached(parent, slot_id);
-    // Print("OnWasDetached");
+    Print("OnWasDetached");
     if (IsSprintRemoved())
     {
       PlayerBase player = PlayerBase.Cast(parent);
@@ -32,79 +32,54 @@ modded class ItemBase
   override void OnInventoryEnter(Man player)
 	{
     super.OnInventoryEnter(player);
-
     EntityAI entity = player.GetHumanInventory().GetEntityInHands();
     if (entity)
     {
+      // Print("OnInventoryEnter Item in hands: " + entity + " this item: " + GetType());
       ItemBase item = ItemBase.Cast(entity);
-      if (item && item.HasAnyCargo()) // if the item exists and has cargo
+      // Print("OnInventoryEnter item cast: " + item);
+      if (item.IsContainerFilledToRemoveSprint(80))
       {
-        CargoBase cargoItem = item.GetInventory().GetCargo();
-        int currentWeight = 0;
-        int maxWeight = cargoItem.GetWidth() * cargoItem.GetHeight(); // x,y    
-        if (maxWeight >= 80)  
+        PlayerBase playerPB = PlayerBase.Cast(player);
+        // Print("OnInventoryEnter container is filled above max and player cast: " + playerPB);
+        if (playerPB)
         {
-          for ( int i = 0; i < cargoItem.GetItemCount(); ++i )
+          if (!playerPB.IsSprintDisabled())
           {
-            int x, y;
-            cargoItem.GetItemSize( i, x, y );
-            currentWeight += x * y;
+            // Print("OnInventoryEnter: sprint is not disabled so disable it");
+            playerPB.SetIsSprintDisabled(true);            
           }
-          float percentFilled = 1-((maxWeight-currentWeight)/maxWeight);
-          PlayerBase playerPB = PlayerBase.Cast(player);
-          if (playerPB)
-          {
-            if (percentFilled >= 0.6)
-            {
-              playerPB.SetIsSprintDisabled(true);
-            }
-            else
-            {
-              playerPB.SetIsSprintDisabled(false);
-            }
-          }
-        }
+        }      
       }
     }
 	}
 		
 	override void OnInventoryExit(Man player)
 	{
-    super.OnInventoryExit(player);
-    EntityAI entity = player.GetHumanInventory().GetEntityInHands();
-    if (entity)
+    EntityAI entity = player.GetHumanInventory().GetEntityInHands();    
+    EntityAI owner = GetHierarchyParent();	
+    if (entity && !owner)
     {
+      // Print("OnInventoryExit Item in hands: " + entity + " this item: " + GetType());
       ItemBase item = ItemBase.Cast(entity);
-      if (item && item.HasAnyCargo()) // if the item exists and has cargo
+      // Print("OnInventoryExit item cast: " + item);
+      if (!item.IsContainerFilledToRemoveSprint(80))
       {
-        CargoBase cargoItem = item.GetInventory().GetCargo();
-        int currentWeight = 0;
-        int maxWeight = cargoItem.GetWidth() * cargoItem.GetHeight(); // x,y    
-        if (maxWeight >= 80)  
+        PlayerBase playerPB = PlayerBase.Cast(player);
+        // Print("OnInventoryExit container is not filled above max and player cast: " + playerPB);
+        if (playerPB)
         {
-          for ( int i = 0; i < cargoItem.GetItemCount(); ++i )
+          if (playerPB.IsSprintDisabled())
           {
-            int x, y;
-            cargoItem.GetItemSize( i, x, y );
-            currentWeight += x * y;
+            // Print("OnInventoryExit: sprint is disabled so disable it");
+            playerPB.SetIsSprintDisabled(false);            
           }
-          float percentFilled = 1-((maxWeight-currentWeight)/maxWeight);
-          PlayerBase playerPB = PlayerBase.Cast(player);
-          if (playerPB)
-          {
-            if (percentFilled >= 0.45)
-            {
-              playerPB.SetIsSprintDisabled(true);
-            }
-            else
-            {
-              playerPB.SetIsSprintDisabled(false);
-            }
-          }
-        }
+        }      
       }
     }
-	}
+    super.OnInventoryExit(player);
+	}  
+
 
   bool HasAlcoholEffect()
   {
@@ -169,5 +144,33 @@ modded class ItemBase
   bool IsSprintRemoved()
   {
     return false;
+  }
+  bool IsContainerFilledToRemoveSprint(int maxCargo=80)
+  {
+    Print("IsContainerFilledToRemoveSprint: maxCargo: " + maxCargo);
+    if (HasAnyCargo()) // if the item exists and has cargo
+    {
+      CargoBase cargoItem = GetInventory().GetCargo();
+      int currentWeight = 0;
+      int maxWeight = cargoItem.GetWidth() * cargoItem.GetHeight(); // x,y    
+      Print("has cargo with this size: " + maxWeight);
+      if (maxWeight >= maxCargo)  
+      {
+        for ( int i = 0; i < cargoItem.GetItemCount(); ++i )
+        {
+          int x, y;
+          cargoItem.GetItemSize( i, x, y );
+          currentWeight += x * y;
+        }
+        float percentFilled = 1-((maxWeight-currentWeight)/maxWeight);
+        Print("Percent filled: " + percentFilled);
+        return percentFilled >= GetPercentWeightToRemoveSprint();          
+      }
+    }
+    return false;
+  }  
+  float GetPercentWeightToRemoveSprint()
+  {
+    return 0.45;
   }
 };
