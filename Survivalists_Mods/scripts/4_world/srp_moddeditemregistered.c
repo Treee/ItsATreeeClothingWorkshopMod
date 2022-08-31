@@ -5,7 +5,7 @@ modded class ModItemRegisterCallbacks
     super.RegisterOneHanded( pType, pBehavior );     
     
     // food
-		pType.AddItemInHandsProfileIK("Bottle_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/water_bottle.anm");
+		pType.AddItemInHandsProfileIK("SRP_BeerBottle", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/water_bottle.anm");
 		pType.AddItemInHandsProfileIK("Winebottle", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/water_bottle.anm");
 
     pType.AddItemInHandsProfileIK("SRPsushi","dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/zucchini_seeds_pack.anm");
