@@ -34,7 +34,7 @@ class CfgVehicles
     };
 	};
 
-  class SRP_LegHolster: CivilianBelt // BP_BeltGunBag
+  class SRP_LegHolster: CivilianBelt 
   {
 		scope=2;
 		displayName="Belt and leg holster";
@@ -87,7 +87,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_PoliceBelt: MilitaryBelt // new
+  class SRP_PoliceBelt: MilitaryBelt
   {
 		scope=2;
 		displayName="Police Belt";
@@ -143,7 +143,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_TacticalBelt: MilitaryBelt // new
+  class SRP_TacticalBelt: MilitaryBelt 
   {
 		scope=2;
 		displayName="Tactical Belt (Deprecated. Make a ticket)";
@@ -222,7 +222,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_TacticalBelt_ColorBase: Clothing // new
+  class SRP_TacticalBelt_ColorBase: Clothing 
   {
 		scope=0;
 		displayName="Tactical Belt";
@@ -386,7 +386,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Military_Belt_ColorBase: Clothing // new
+  class SRP_Military_Belt_ColorBase: Clothing
   {
 		scope=0;
 		displayName="Military Belt";

@@ -54,7 +54,7 @@ class CfgVehicles
 		repairCosts[]={30,25};
 	};	
 
-  class SRP_NVGoggles_ShortRange: NVGoggles  // BP_NVBinocular
+  class SRP_NVGoggles_ShortRange: NVGoggles
 	{
 		scope=2;
     displayName="Short Range Night Vision Goggles";
