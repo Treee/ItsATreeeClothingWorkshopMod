@@ -20,6 +20,7 @@ class CfgVehicles
   class ButaneCanister;
   class Stone;
   class Paper;
+  class Box_Base;
 
   //--------------------------------------------- BASE GAME OVERRIDES
 	class Battery9V: Inventory_Base
@@ -155,6 +156,166 @@ class CfgVehicles
 	};
   
   //----------------------------------------------- CUSTOM STUFF
+  class AmmoBox_Ammo_Flare_5Rnd: Box_Base
+	{
+		scope=2;
+		displayName="Boxed Flare Gun Rounds - Yellow";
+		descriptionShort="A box of flare gun rounds in decent condition. Color indicates yellow.";
+		model="\dz\gear\consumables\Nails_box.p3d";
+		debug_ItemCategory=5;
+		iconType=1;
+		rotationFlags=17;
+		weight=85;
+    absorbency=0.80000001;
+		itemSize[]={1,1};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\box_of_flaregun_yellow_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=80;
+					healthLevels[]=
+					{
+						
+						{
+							1,
+							
+							{
+								"DZ\gear\consumables\data\Box_of_Nails.rvmat"
+							}
+						},
+						
+						{
+							0.69999999,
+							
+							{
+								"DZ\gear\consumables\data\Box_of_Nails.rvmat"
+							}
+						},
+						
+						{
+							0.5,
+							
+							{
+								"DZ\gear\consumables\data\Box_of_Nails_damage.rvmat"
+							}
+						},
+						
+						{
+							0.30000001,
+							
+							{
+								"DZ\gear\consumables\data\Box_of_Nails_damage.rvmat"
+							}
+						},
+						
+						{
+							0,
+							
+							{
+								"DZ\gear\consumables\data\Box_of_Nails_destruct.rvmat"
+							}
+						}
+					};
+				};
+			};
+		};
+		class Resources
+		{
+			class Ammo_Flare
+			{
+				value=5;
+				variable="quantity";
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class interact
+				{
+					soundset="ammoboxUnpack_SoundSet";
+					id=70;
+				};
+			};
+		};
+	};
+  class AmmoBox_Ammo_FlareRed_5Rnd: AmmoBox_Ammo_Flare_5Rnd
+	{
+		scope=2;
+		displayName="Boxed Flare Gun Rounds - Red";
+		descriptionShort="A box of flare gun rounds in decent condition. Color indicates red.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\box_of_flaregun_red_co.paa"
+		};
+		class Resources
+		{
+			class Ammo_FlareRed
+			{
+				value=5;
+				variable="quantity";
+			};
+		};
+	};
+  class AmmoBox_Ammo_FlareGreen_5Rnd: AmmoBox_Ammo_Flare_5Rnd
+	{
+		scope=2;
+		displayName="Boxed Flare Gun Rounds - Green";
+		descriptionShort="A box of flare gun rounds in decent condition. Color indicates green.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\box_of_flaregun_green_co.paa"
+		};
+		class Resources
+		{
+			class Ammo_FlareGreen
+			{
+				value=5;
+				variable="quantity";
+			};
+		};
+	};
+  class AmmoBox_Ammo_FlareBlue_5Rnd: AmmoBox_Ammo_Flare_5Rnd
+	{
+		scope=2;
+		displayName="Boxed Flare Gun Rounds - Blue";
+		descriptionShort="A box of flare gun rounds in decent condition. Color indicates blue.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\box_of_flaregun_blue_co.paa"
+		};
+		class Resources
+		{
+			class Ammo_FlareBlue
+			{
+				value=5;
+				variable="quantity";
+			};
+		};
+	};
+
   class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery
 	{
 		scope=2;

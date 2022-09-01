@@ -10,3 +10,15 @@ class SRP_SmallProtectorCase_Syringe extends SmallProtectorCase
 		return item.IsKindOf("ClearSyringe") || item.IsKindOf("Syringe") || item.IsKindOf("BloodSyringe");
   }
 };
+class SRP_SmallProtectorCase_FlareBox extends SmallProtectorCase
+{
+  override bool CanReceiveItemIntoCargo (EntityAI item)
+	{
+		return item.IsKindOf("Ammo_Flare") || item.IsKindOf("AmmoBox_Ammo_Flare_5Rnd");
+	}
+
+  override bool CanLoadItemIntoCargo( EntityAI item )
+  {
+		return item.IsKindOf("Ammo_Flare") || item.IsKindOf("AmmoBox_Ammo_Flare_5Rnd");
+  }
+};

@@ -2275,7 +2275,6 @@ class CfgVehicles
 		itemSize[]={4,4};
 		itemsCargoSize[]={10,5};
 	};
-
   class SRP_SmallProtectorCase_Syringe: SmallProtectorCase
 	{
 		scope=2;
@@ -2290,6 +2289,26 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\containers\data\loot_protectorcase_syringe_co.paa"
+		};
+	};
+  class SRP_SmallProtectorCase_FlareBox: SmallProtectorCase
+	{
+		scope=2;
+    displayName="Protected Flare Box";
+    descriptionShort="This protected case is meant to hold several flares safely.";
+		itemSize[]={4,4};
+		itemsCargoSize[]={2,2};
+    attachments[]=
+		{
+   		"SRP_GunDerringer"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\loot_protectorcase_flaregun_co.paa"
 		};
 	};
 
