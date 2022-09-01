@@ -14,11 +14,19 @@ class SRP_SmallProtectorCase_FlareBox extends SmallProtectorCase
 {
   override bool CanReceiveItemIntoCargo (EntityAI item)
 	{
-		return item.IsKindOf("Ammo_Flare") || item.IsKindOf("AmmoBox_Ammo_Flare_5Rnd");
+    if (item.GetType().Contains("Ammo_Flare"))
+    {
+      return true;
+    }
+    return false;
 	}
 
   override bool CanLoadItemIntoCargo( EntityAI item )
   {
-		return item.IsKindOf("Ammo_Flare") || item.IsKindOf("AmmoBox_Ammo_Flare_5Rnd");
+		if (item.GetType().Contains("Ammo_Flare"))
+    {
+      return true;
+    }
+    return false;
   }
 };
