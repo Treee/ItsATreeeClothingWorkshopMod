@@ -739,6 +739,20 @@ class CfgVehicles
       "Survivalists_Mods\gear\consumables\data\loot_paper_cdcformrecord_co.paa"
     };
   };
+  class SRP_Paper_BrewingHint: Paper
+  {
+		scope=2;
+		displayName="Rough Sketch";
+		descriptionShort="A rough sketch of a makeshift still.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\loot_paper_brewing_co.paa"
+    };
+  };
 
   //====================================================== SEALED LETTER AND WAX
   

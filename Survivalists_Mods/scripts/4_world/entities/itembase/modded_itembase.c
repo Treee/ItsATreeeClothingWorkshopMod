@@ -173,4 +173,12 @@ modded class ItemBase
   {
     return 0.45;
   }
+  bool IsSmeltable()
+  {
+    return false;
+  }
+  bool IsTransformedByHeat()
+  {
+    return false;
+  }
 };

@@ -24,6 +24,7 @@ class CfgVehicles
   class WoodenLog;
   class Bark_Oak;
   class Bark_Birch;
+  class FireplaceBase;
 
   class SRP_KitBase;
   //========================================== VANILLA OVERRIDE
@@ -1591,6 +1592,188 @@ class CfgVehicles
 				{
 					soundSet="pickUpBarrel_SoundSet";
 					id=797;
+				};
+			};
+		};
+	};
+
+
+  //==================================== BREWING
+  class SRP_BrewingWorkbench_ColorBase: FireplaceBase 
+	{
+		displayName="Brewing Still";
+		descriptionShort="A workbench with tools for manufacturing alcohol.";
+		model="Survivalists_Mods\gear\crafting\srp_brewingstill_alchemy.p3d";
+		weight=500;
+		itemSize[]={15,15};
+		itemBehaviour=0;
+		quantityBar=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=0;
+    varTemperatureMax=1000;
+		stackedUnit="";
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		canBeDigged=0;
+		physLayer="item_large";
+    itemsCargoSize[]={2,2};
+    attachments[]=
+		{
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+		};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy_ca.paa"};
+		class GUIInventoryAttachmentsProps
+		{
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_BrewingWorkbench_Alchemy_Kit: SRP_KitBase 
+	{
+		scope=2;
+		displayName="Brewing Still Kit - Alchemy";
+		descriptionShort="A brewing workbench kit";
+	};
+  class SRP_BrewingWorkbench_Alchemy: SRP_BrewingWorkbench_ColorBase 
+	{
+		scope=2;
+		displayName="Alchemy Still";
+		descriptionShort="A workbench with tools for manufacturing alcohol.";
+		model="Survivalists_Mods\gear\crafting\srp_brewingstill_alchemy.p3d";
+		itemSize[]={4,4};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy_ca.paa"};
+	};
+  class SRP_BrewingWorkbench_Ceramic_Kit: SRP_KitBase 
+	{
+		scope=2;
+		displayName="Brewing Still Kit - Ceramic";
+		descriptionShort="A brewing workbench kit";
+	};
+  class SRP_BrewingWorkbench_Ceramic: SRP_BrewingWorkbench_ColorBase 
+	{
+		scope=2;
+		displayName="Ceramic Still";
+		descriptionShort="A workbench with tools for manufacturing alcohol.";
+		model="Survivalists_Mods\gear\crafting\srp_brewingstill_ceramic.p3d";
+		itemSize[]={10,10};
+    itemsCargoSize[]={5,5};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_brewingstill_stone_co.paa"};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_stone.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_stone.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_stone.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_stone.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_stone.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_BrewingWorkbench_Copper_Kit: SRP_KitBase 
+	{
+		scope=2;
+		displayName="Brewing Still Kit - Copper";
+		descriptionShort="A brewing workbench kit";
+	};
+  class SRP_BrewingWorkbench_Copper: SRP_BrewingWorkbench_ColorBase 
+	{
+		scope=2;
+		displayName="Copper Still";
+		descriptionShort="A workbench with tools for manufacturing alcohol.";
+		model="Survivalists_Mods\gear\crafting\srp_brewingstill_copper.p3d";
+		itemSize[]={8,8};
+    itemsCargoSize[]={3,3};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_brewingstill_copper_co.paa"};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_copper.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_copper.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_copper.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_copper.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_copper.rvmat"}}
+					};
 				};
 			};
 		};
