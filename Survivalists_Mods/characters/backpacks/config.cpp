@@ -284,7 +284,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_SurvivalBackpack_Default: HuntingBag 
 	{
 		scope=2;
@@ -330,7 +329,6 @@ class CfgVehicles
 			};
 		};    
 	};
-
   class SRP_SlingBackpack_Default: AliceBag_ColorBase 
 	{
 		scope=2;
@@ -389,7 +387,6 @@ class CfgVehicles
 			};
 		}; 
 	};
-
   class SRP_Small_Military_Pack_Tan: HuntingBag 
 	{
 		scope=2;
@@ -441,7 +438,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_Big_Military_Pack_Tan: HuntingBag 
 	{
 		scope=2;
@@ -502,7 +498,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_Rifle_Bag_Green: HuntingBag 
   {
     scope=2;
@@ -553,7 +548,6 @@ class CfgVehicles
       };
     };
   };
-
   class SRP_Rolltop_Bag: Clothing
 	{	
 		scope=2;
@@ -632,7 +626,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_MessengerBag_Leather: Clothing
 	{
 		scope=2;
@@ -717,6 +710,72 @@ class CfgVehicles
 				{
 					soundset="BallisticHelmet_drop_SoundSet";
 					id=898;
+				};
+			};
+		};
+	};
+  class SRP_Bergan_Backpack: Clothing
+	{
+		scope=2;
+		displayName="Bergan Backpack";
+		descriptionShort="Espen Industries. This rugged leather backpack is large enough to store all of your travelling wares.";
+		model="Survivalists_Mods\characters\backpacks\Bergan_Backpack_g.p3d";
+    repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot="Back";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		rootClassName="SRP_Bergan_Backpack";
+		colorVariants[]={};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};
+		weight=1000;
+		itemSize[]={5,4};
+		itemsCargoSize[]={8,8};
+		absorbency=0;
+		heatIsolation=0.80;
+		attachments[]=
+		{
+			"SmallPouch1",
+			"SmallPouch2",
+			"LargePouch1",
+			"LargePouch2"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\SRP_Bergan_Backpack_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\SRP_Bergan_Backpack.rvmat"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\backpacks\Bergan_Backpack_m.p3d";
+			female="Survivalists_Mods\characters\backpacks\Bergan_Backpack_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Mods\characters\backpacks\data\SRP_Bergan_Backpack.rvmat"}},
+						{0.69999999,{"Survivalists_Mods\characters\backpacks\data\SRP_Bergan_Backpack.rvmat"}},
+						{0.5,{"Survivalists_Mods\characters\backpacks\data\SRP_Bergan_Backpack.rvmat"}},
+						{0.30000001,{"Survivalists_Mods\characters\backpacks\data\SRP_Bergan_Backpack.rvmat"}},
+						{0,{"Survivalists_Mods\characters\backpacks\data\SRP_Bergan_Backpack.rvmat"}}
+					};
 				};
 			};
 		};

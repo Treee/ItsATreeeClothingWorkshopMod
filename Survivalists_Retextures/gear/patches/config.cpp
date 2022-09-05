@@ -32,6 +32,16 @@ class CfgVehicles
 		};	
   };
 
+  class SRP_PatchFlag_DarkQueen: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Dark Queen";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\FlagPatch_DarkQueen_Co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
   class SRP_PatchFlag_Mayor: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
