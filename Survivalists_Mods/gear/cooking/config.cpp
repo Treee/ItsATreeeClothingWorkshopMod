@@ -17,6 +17,7 @@ class CfgVehicles
 {
   class Inventory_Base;
   class Pot;
+  class Bottle_Base;
   // ----------------------  BASE GAME OVERRIDES
   class PortableGasLamp: Inventory_Base 
 	{
@@ -72,6 +73,170 @@ class CfgVehicles
             {0.30000001,	{	"Survivalists_Mods\gear\cooking\data\srp_portablegaslamp_damage.rvmat"}},
             {0,	{	"Survivalists_Mods\gear\cooking\data\srp_portablegaslamp_destruct.rvmat"}}
 					};
+				};
+			};
+		};
+	};
+
+  class BrewingPot_Mash_Colorbase: Inventory_Base
+	{
+		scope=0;
+		displayName="Brewing Mash - Base";
+		descriptionShort="A pot of mash ready for brewing.";
+		model="\dz\gear\cooking\CookingPot.p3d";
+		rotationFlags=2;
+		weight=750;
+		itemSize[]={4,4};
+		itemsCargoSize[]={0,0};
+		fragility=0.0099999998;
+		varTemperatureMax=200;
+    destroyOnEmpty=0;
+    varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		inventorySlot[]={"CookingEquipment"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,{"DZ\gear\cooking\data\frying_pan.rvmat"}},
+            {0.69999999,{"DZ\gear\cooking\data\frying_pan.rvmat"}},
+            {0.5,{"DZ\gear\cooking\data\frying_pan_damage.rvmat"}},
+            {0.30000001,{"DZ\gear\cooking\data\frying_pan_damage.rvmat"}},
+            {0,{"DZ\gear\cooking\data\frying_pan_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class BrewingPot_Mash_Fruit: BrewingPot_Mash_Colorbase
+	{
+		scope=2;
+		displayName="Brewing Mash - Fruit";
+  };
+
+  class BrewingJug_Plastic_Alcohol: Bottle_Base
+	{
+		scope=2;
+		displayName="Brewing Reclaim Jug";
+		descriptionShort="A jug used to hold the runnoff of a still.";
+		model="DZ\structures\Furniture\Various\canister_DZ.p3d";		
+		weight=440;
+		itemSize[]={4,3};
+		inventorySlot[]={"BrewingBarrel"};
+		stackedRandom=0;
+		canBeDigged=1;
+		allowOwnedCargoManipulation=1;
+		varLiquidTypeInit=4096;
+		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048) -32768";
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=20000;
+		varTemperatureMax=200;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,{"dz\data\data\default.rvmat"}},
+						{0.69999999,{"dz\data\data\default.rvmat"}},
+						{0.5,{"dz\data\data\default.rvmat"}},
+						{0.30000001,{"dz\data\data\default.rvmat"}},
+						{0,{"dz\data\data\default.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpPotLight
+				{
+					soundSet="pickUpPotLight_SoundSet";
+					id=796;
+				};
+				class pickUpPot
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="pot_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class BrewingJug_Plastic_Water: Bottle_Base
+	{
+		scope=2;
+		displayName="Brewing Water Jug";
+		descriptionShort="A jug used to hold pure water.";
+		model="DZ\structures\Furniture\Various\canister_DZ.p3d";		
+		weight=440;
+		itemSize[]={4,3};
+		inventorySlot[]={"BrewingBarrel1"};
+		stackedRandom=0;
+		canBeDigged=1;
+		allowOwnedCargoManipulation=1;
+		varLiquidTypeInit=512;
+		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 1024 + 2048 + 4096 + 8192 + 16384) -32768";
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=20000;
+		varTemperatureMax=200;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,{"dz\data\data\default.rvmat"}},
+						{0.69999999,{"dz\data\data\default.rvmat"}},
+						{0.5,{"dz\data\data\default.rvmat"}},
+						{0.30000001,{"dz\data\data\default.rvmat"}},
+						{0,{"dz\data\data\default.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpPotLight
+				{
+					soundSet="pickUpPotLight_SoundSet";
+					id=796;
+				};
+				class pickUpPot
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="pot_drop_SoundSet";
+					id=898;
 				};
 			};
 		};

@@ -1611,15 +1611,16 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=0;
-    varTemperatureMax=1000;
 		stackedUnit="";
+    varTemperatureMax=1000;
 		destroyOnEmpty=0;
 		varQuantityDestroyOnMin=0;
 		canBeDigged=0;
 		physLayer="item_large";
-    itemsCargoSize[]={2,2};
+    itemsCargoSize[]={1,1};
     attachments[]=
 		{
+      "CookingEquipment",
 			"Firewood",
 			"WoodenStick",
 			"Rags",
@@ -1705,8 +1706,48 @@ class CfgVehicles
 		descriptionShort="A workbench with tools for manufacturing alcohol.";
 		model="Survivalists_Mods\gear\crafting\srp_brewingstill_alchemy.p3d";
 		itemSize[]={4,4};
+    attachments[]+={"BrewingBarrel","BrewingBarrel1"};
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy_ca.paa"};
+    class GUIInventoryAttachmentsProps
+		{
+      class Brewing
+			{
+				name="Brewing";
+				description="Still Attachments";
+				attachmentSlots[]=
+				{
+          "BrewingBarrel",
+          "BrewingBarrel1",
+          "CookingEquipment"
+				};
+				icon="set:dayz_inventory image:cat_fp_cooking";
+			};
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
 	};
   class SRP_BrewingWorkbench_Ceramic_Kit: SRP_KitBase 
 	{
@@ -1721,7 +1762,7 @@ class CfgVehicles
 		descriptionShort="A workbench with tools for manufacturing alcohol.";
 		model="Survivalists_Mods\gear\crafting\srp_brewingstill_ceramic.p3d";
 		itemSize[]={10,10};
-    itemsCargoSize[]={5,5};
+    attachments[]+={"BrewingBarrel","BrewingBarrelTable", "BrewingBarrel1"};
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_brewingstill_stone_co.paa"};
     class DamageSystem
@@ -1742,6 +1783,46 @@ class CfgVehicles
 				};
 			};
 		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Brewing
+			{
+				name="Brewing";
+				description="Still Attachments";
+				attachmentSlots[]=
+				{
+					"BrewingBarrelTable",
+					"BrewingBarrel",
+          "BrewingBarrel1",
+          "CookingEquipment"
+				};
+				icon="set:dayz_inventory image:cat_fp_cooking";
+			};
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
 	};
   class SRP_BrewingWorkbench_Copper_Kit: SRP_KitBase 
 	{
@@ -1756,7 +1837,7 @@ class CfgVehicles
 		descriptionShort="A workbench with tools for manufacturing alcohol.";
 		model="Survivalists_Mods\gear\crafting\srp_brewingstill_copper.p3d";
 		itemSize[]={8,8};
-    itemsCargoSize[]={3,3};
+    attachments[]+={"BrewingBarrel", "BrewingBarrel1"};
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_brewingstill_copper_co.paa"};
     class DamageSystem
@@ -1775,6 +1856,45 @@ class CfgVehicles
             {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_brewingstill_copper.rvmat"}}
 					};
 				};
+			};
+		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Brewing
+			{
+				name="Brewing";
+				description="Still Attachments";
+				attachmentSlots[]=
+				{
+          "BrewingBarrel",
+          "BrewingBarrel1",
+          "CookingEquipment"
+				};
+				icon="set:dayz_inventory image:cat_fp_cooking";
+			};
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
 			};
 		};
 	};

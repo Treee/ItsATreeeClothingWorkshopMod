@@ -1,5 +1,7 @@
 modded class ItemBase
 { 
+  protected int m_HeatCounter = 0;  
+
   override void OnWasAttached( EntityAI parent, int slot_id )
 	{
 		super.OnWasAttached(parent, slot_id);
@@ -181,4 +183,40 @@ modded class ItemBase
   {
     return false;
   }
+  void IncrementHeatTimer(int increment = 1)
+  {
+    m_HeatCounter += increment;
+  }
+  void ResetHeatTimer()
+  {
+    m_HeatCounter = 0;
+  }
+  int GetHeatTimer()
+  {
+    return m_HeatCounter;
+  }
+  int GetHeatTimerThreshold()
+  {
+    return -1;
+  }
+  void HandleHeatTransformation()
+  {
+    Print("Item is max heat and can transform: " + GetType());    
+  }
+
+  // make sure to use the slot name not the item name....
+	ItemBase GetItemOnSlot(string slot_type)
+	{    
+		int slot_id = InventorySlots.GetSlotIdFromString( slot_type );
+		EntityAI item_EAI = GetInventory().FindAttachment( slot_id );
+		ItemBase item_IB = ItemBase.Cast(item_EAI);
+		
+		if (item_EAI && !item_IB)
+		{
+			string str = "Warning! GetItemOnSlot() >> found item on slot " + slot_type + " can't be cast to ItemBase! Found item is " + item_EAI.GetType() + " and the player is " + GetType() + "!";
+			Error(str);
+			return null;
+		}
+		return item_IB;
+	}
 };

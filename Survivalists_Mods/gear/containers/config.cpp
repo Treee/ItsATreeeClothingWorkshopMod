@@ -2029,6 +2029,62 @@ class CfgVehicles
 		};
 	};
 
+  class BrewingTable: Inventory_Base
+	{
+		scope=2;
+		displayName="Brewing Table";
+		descriptionShort="A table meant to hold brewing materials";
+		model="DZ\structures\furniture\various\table_dz.p3d";
+    inventorySlot[]={"BrewingBarrelTable"};		
+    attachments[]={};
+		carveNavmesh=1;
+		canBeDigged=0;
+		weight=1000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,{"dz\data\data\default.rvmat"}},
+						{0.69999999,{"dz\data\data\default.rvmat"}},
+						{0.5,{"dz\data\data\default.rvmat"}},
+						{0.30000001,{"dz\data\data\default.rvmat"}},
+						{0,{"dz\data\data\default.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpPotLight
+				{
+					soundSet="pickUpPotLight_SoundSet";
+					id=796;
+				};
+				class pickUpPot
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="pot_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
   class SRP_BedsideTableMetal_Kit: SRP_KitBase // new
 	{
 		scope=2;
@@ -2538,11 +2594,11 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_MetalBarrel_Colorbase: Container_Base  // new
+  class SRP_MetalBarrel_Colorbase: Container_Base  // plan for vanilla replacement
 	{
 		scope=2;
-		displayName="Metal Barrel";
-		descriptionShort="A sturdy barrel.";
+		displayName="Metal Barrel (Deprecated)";
+		descriptionShort="A sturdy barrel. (Deprecated) - Planned for replacement/removal. Do not store anything inside this object.";
 		model="Survivalists_Mods\gear\containers\srp_metalbarrel.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;

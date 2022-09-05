@@ -198,6 +198,22 @@ class CfgVehicles
     color="bazaar";
 	};
 
+  class HammerLabeler_ColorBase: Hammer
+  {
+		scope=0;
+		displayName="Bottle Labeler - Base";
+		descriptionShort="This hammer smashes the imprint of a label onto a bottle";
+    color="base";
+  };
+
+  class HammerLabeler_IslandGeorge: HammerLabeler_ColorBase
+	{
+		scope=2;
+		displayName="Bottle Labeler - Island George";
+		descriptionShort="This hammer smashes the imprint of a label onto a bottle";
+    color="IslandGeorge";
+	};
+
   class SRP_Heatpack: Heatpack
 	{
 		scope=2;

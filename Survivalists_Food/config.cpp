@@ -1983,6 +1983,54 @@ class CfgVehicles
 			};
 		};
 	};
+
+//================================== Brewing Food
+  class BoxCerealCrunchin_Coffee: BoxCerealCrunchin
+	{
+		scope=2;
+		displayName="Coffee";
+		descriptionShort="Generic Ground Coffee";
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\cereal_box_coffee_co.paa"};
+		class Nutrition
+		{
+			fullnessIndex=2.5;
+			energy=20;
+			water=10;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class BoxCerealCrunchin_Hops: BoxCerealCrunchin
+	{
+		scope=2;
+		displayName="Hops";
+		descriptionShort="Generic Dried Hops";
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\cereal_box_hops_co.paa"};
+		class Nutrition
+		{
+			fullnessIndex=2.5;
+			energy=50;
+			water=-20;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+  class BoxCerealCrunchin_Barley: BoxCerealCrunchin
+	{
+		scope=2;
+		displayName="Barley";
+		descriptionShort="Generic Dried Barley";
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\cereal_box_barley_co.paa"};
+		class Nutrition
+		{
+			fullnessIndex=2.5;
+			energy=50;
+			water=-20;
+			nutritionalIndex=1;
+			toxicity=0;
+		};
+	};
+
 //================================== Raw Cookable Cans
   class SRP_FoodCanRaw_Colorbase: Edible_Base 
   {

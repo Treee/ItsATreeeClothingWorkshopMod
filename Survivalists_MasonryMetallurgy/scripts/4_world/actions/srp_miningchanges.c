@@ -67,19 +67,18 @@ modded class CAContinuousMineRock
 			{
         case "SledgeHammer":
         case "Pickaxe":
-          return 20;
+          return Math.RandomIntInclusive(10,40);
         case "Wrench":
         case "Screwdriver":
         case "MeatTenderizer":
-          return 25;
         case "PipeWrench":
         case "Crowbar":
-          return 50;
+          return Math.RandomIntInclusive(35,50);
         case "Hammer":
-          return 40;
+          return Math.RandomIntInclusive(45,65);
 			}
 		}
-		return 25;
+		return Math.RandomIntInclusive(50,90);
 	}
 };
 

@@ -25,11 +25,11 @@ class SRP_BrewingWorkbench extends FireplaceBase
 	{
 		super.OnVariablesSynchronized();
 		
-		if ( !IsBeingPlaced() )
-		{
-			//Refresh particles and sounds
-			RefreshFireParticlesAndSounds( false );					
-		}
+		// if ( !IsBeingPlaced() )
+		// {
+		// 	//Refresh particles and sounds
+		// 	RefreshFireParticlesAndSounds( false );					
+		// }
 	}
 
   // false here because we do not want the ability to destroy the forge when nothing is attached (unlike a fire)
@@ -110,11 +110,26 @@ class SRP_BrewingWorkbench extends FireplaceBase
     }
 
     // tool attachments
-    // if (item && item.GetType() == "SRP_AdvancedStoneForgeWorkbench_Bellows")
-    // {
-    //   return super.CanReceiveAttachment(attachment, slotId);
-    // }
-
+    if (item)
+    {
+      if (item.GetType() == "BrewingTable")
+      {
+        return true;
+      }
+      if (item.GetType() == "BrewingJug_Plastic_Water")
+      {
+        return true;
+      }
+      if (item.GetType().Contains("BrewingPot_Mash"))
+      {
+        return true;
+      }
+      if (item.GetType() == "BrewingJug_Plastic_Alcohol")
+      {
+        // check to see if the table is attached
+        return true;
+      }
+    }
 		return false;
 	}
 	
@@ -128,6 +143,27 @@ class SRP_BrewingWorkbench extends FireplaceBase
 		if ( IsKindling( item ) || IsFuel( item ) )
     {
       return super.CanLoadAttachment(attachment);
+    }
+
+    // tool attachments
+    if (item)
+    {
+      if (item.GetType() == "BrewingTable")
+      {
+        return true;
+      }
+      if (item.GetType() == "BrewingJug_Plastic_Water")
+      {
+        return true;
+      }
+      if (item.GetType() == "BrewingJug_Plastic_Alcohol")
+      {
+        return true;
+      }
+      if (item.GetType().Contains("BrewingPot_Mash"))
+      {
+        return true;
+      }
     }
 
 		return false;
@@ -178,6 +214,27 @@ class SRP_BrewingWorkbench extends FireplaceBase
 				return true;
 			}
 		}
+
+    if (item)
+    {
+      if (item.GetType() == "BrewingTable")
+      {
+        return true;
+      }
+      if (item.GetType() == "BrewingJug_Plastic_Alcohol")
+      {
+        // cant remove it item is above 30C
+        return item.GetTemperature() < 30;
+      }
+      if (item.GetType() == "BrewingJug_Plastic_Water")
+      {
+        return item.GetTemperature() < 30;
+      }
+      if (item.GetType().Contains("BrewingPot_Mash"))
+      {
+        return true;
+      }
+    }
 		
 		return false;
 	}
@@ -202,17 +259,126 @@ class SRP_BrewingWorkbench extends FireplaceBase
 		GetGame().ObjectDelete( clutter_cutter );
 	}
 
-  override protected void AddTemperatureToItemByFire( ItemBase item )
-	{
-    super.AddTemperatureToItemByFire(item);
-    
-    if (item.IsTransformedByHeat())
+  override protected void Heating()
+  {
+    // we are hot enough to be brewing
+    if (GetTemperature() > 180)
     {
-      // handle heat transformation event
+      if (GetHeatTimerThreshold() > -1 && GetHeatTimer() > GetHeatTimerThreshold())
+      { 
+        HandleHeatTransformation();
+        ResetHeatTimer();
+      }            
+      IncrementHeatTimer();
     }
+    super.Heating();
+  }
 
-	}
+  // override protected void AddTemperatureToItemByFire( ItemBase item )
+	// {
+	// }
+
+  override void HandleHeatTransformation()
+  {    
+    ItemBase waterJug = GetItemOnSlot("BrewingBarrel1");
+    if (!waterJug) {return;}
+
+    ItemBase alcoholJug = GetItemOnSlot("BrewingBarrel");
+    if (!alcoholJug) {return;}
+
+    ItemBase potMash = GetItemOnSlot("CookingEquipment");
+    if (!potMash) {return;}
+
+    // Print("pot mash exists");
+    int waterTotal = GetWaterJugConsumptionTotal();
+    int alcoholTotal = GetAlcoholJugConsumptionTotal();
+    int mashTotal = GetPotMashConsumptionTotal();
+
+    if (waterJug.GetQuantity() > waterTotal && potMash.GetQuantity() > mashTotal)
+    {
+      waterJug.AddQuantity(waterTotal);
+      potMash.AddQuantity(mashTotal);
+      
+      // clamp to max jug size      
+      if (alcoholJug.GetQuantityMax() < (alcoholJug.GetQuantity() + alcoholTotal))
+      {
+        alcoholTotal = alcoholJug.GetQuantityMax() - alcoholJug.GetQuantity();
+      }
+      alcoholJug.AddQuantity(alcoholTotal);
+      // Print("Brewing alcohol!!!");
+      // play a sound
+    }
+  }
+
+  int GetWaterJugConsumptionTotal()
+  {
+    return 0;
+  }
+  int GetAlcoholJugConsumptionTotal()
+  {
+    return 0;
+  }
+  int GetPotMashConsumptionTotal()
+  {
+    return 0;
+  }
+
 };
-class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench{};
-class SRP_BrewingWorkbench_Ceramic extends SRP_BrewingWorkbench{};
-class SRP_BrewingWorkbench_Copper extends SRP_BrewingWorkbench{};
+class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench
+{
+  override int GetHeatTimerThreshold()
+  {
+    return 1200;//20mins
+  }
+  override int GetWaterJugConsumptionTotal()
+  {
+    return -Math.RandomIntInclusive(150,500);
+  }
+  override int GetAlcoholJugConsumptionTotal()
+  {
+    return Math.RandomIntInclusive(25,50);
+  }
+  override int GetPotMashConsumptionTotal()
+  {
+    return -Math.RandomIntInclusive(35,85);
+  }
+};
+class SRP_BrewingWorkbench_Copper extends SRP_BrewingWorkbench
+{
+  override int GetHeatTimerThreshold()
+  {
+    return 600;//10mins
+  }
+  override int GetWaterJugConsumptionTotal()
+  {
+    return -Math.RandomIntInclusive(50,150);
+  }
+  override int GetAlcoholJugConsumptionTotal()
+  {
+    return Math.RandomIntInclusive(25,100);
+  }
+  override int GetPotMashConsumptionTotal()
+  {
+    return -Math.RandomIntInclusive(15,35);
+  }
+};
+class SRP_BrewingWorkbench_Ceramic extends SRP_BrewingWorkbench
+{
+  override int GetHeatTimerThreshold()
+  {
+    // return 300;//5mins
+    return 10;//5mins
+  }
+  override int GetWaterJugConsumptionTotal()
+  {
+    return -Math.RandomIntInclusive(10,20);
+  }
+  override int GetAlcoholJugConsumptionTotal()
+  {  
+    return Math.RandomIntInclusive(100,250);
+  }
+  override int GetPotMashConsumptionTotal()
+  {
+    return -Math.RandomIntInclusive(5,10);
+  }
+};

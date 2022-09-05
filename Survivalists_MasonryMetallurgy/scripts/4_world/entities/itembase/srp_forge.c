@@ -80,17 +80,17 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     SRP_MetalBucket_Mortar mortarBucket = SRP_MetalBucket_Mortar.Cast(item);
     if (mortarBucket)
     {
-      mortarBucket.ResetCounter();
+      mortarBucket.ResetHeatTimer();
     };
     SRP_ForgeIngotMold_Mortar mortarIngotMold = SRP_ForgeIngotMold_Mortar.Cast(item);
     if (mortarIngotMold)
     {
-      mortarIngotMold.ResetCounter();
+      mortarIngotMold.ResetHeatTimer();
     };
     SRP_ForgeCrucible_Empty crucible = SRP_ForgeCrucible_Empty.Cast(item);
     if (crucible)
     {
-      crucible.ResetCounter();
+      crucible.ResetHeatTimer();
     };
 	}
 

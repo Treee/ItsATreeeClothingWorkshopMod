@@ -42,23 +42,11 @@ class SRP_MetalBucket extends Inventory_Base
 class SRP_MetalBucket_Lime extends SRP_MetalBucket{};
 class SRP_MetalBucket_Mortar extends SRP_MetalBucket
 {
-  int m_HeatCounter = 0;
-
-  void IncrementHeatTimer(int increment = 1)
-  {
-    m_HeatCounter += increment;
-  }
-
-  void ResetCounter()
-  {
-    m_HeatCounter = 0;
-  }
-
   void HandleHardenEvent()
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (m_HeatCounter > 600)
+    if (GetHeatTimer() > 600)
     {
       GetGame().CreateObjectEx("SRP_ForgeCrucible_Empty", this.GetPosition(), false);
       this.Delete();
@@ -134,23 +122,11 @@ class SRP_ForgeIngotMold_Lime extends SRP_ForgeIngotMold_ColorBase
 };
 class SRP_ForgeIngotMold_Mortar extends SRP_ForgeIngotMold_ColorBase
 {
-  int m_HeatCounter = 0;
-
-  void IncrementHeatTimer(int increment = 1)
-  {
-    m_HeatCounter += increment;
-  }
-
-  void ResetCounter()
-  {
-    m_HeatCounter = 0;
-  }
-
   void HandleHardenEvent()
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (m_HeatCounter > 600)
+    if (GetHeatTimer() > 600)
     {
       GetGame().CreateObjectEx("SRP_ForgeIngotMold_Empty", this.GetPosition(), false);
       this.Delete();
@@ -285,20 +261,13 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
 
 class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
 {
-  int m_HeatCounter = 0;
-
-  void IncrementHeatTimer(int increment = 1)
+  override void IncrementHeatTimer(int increment = 1)
   {
     // only increment heat if there is something inside the raw ore slot
     if (HasOreInSlot("SRP_RawOre1") || HasOreInSlot("SRP_RawOre2"))
     {
-      m_HeatCounter += increment;
+      super.IncrementHeatTimer(increment);
     }
-  }
-
-  void ResetCounter()
-  {
-    m_HeatCounter = 0;
   }
 
   override bool CanReceiveAttachment( EntityAI attachment, int slotId )
@@ -386,7 +355,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (m_HeatCounter > 10)
+    if (GetHeatTimer() > 10)
     {
       if (HasMoreThanOneOreAttached())
       {

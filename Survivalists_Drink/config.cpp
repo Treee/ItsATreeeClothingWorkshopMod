@@ -31,7 +31,6 @@ class CfgVehicles
   class Inventory_Base;
   class Bottle_Base;
   class Canteen;
-  class BoxCerealCrunchin;
   class SodaCan_ColorBase;
   class WaterBottle;
   class Edible_Base;
@@ -172,6 +171,14 @@ class CfgVehicles
 		descriptionShort="A nice bottle of swamp water. You know you want to drink it regardless of the consequences.";
 		hiddenSelections[]={"glass","label","cap"};
 		hiddenSelectionsTextures[]={"Survivalists_Drink\drinks\data\wineII_ca.paa","Survivalists_Drink\drinks\data\winelabel_swampwater_co.paa","Survivalists_Drink\drinks\data\winebottle_capII_co.paa"};
+	};
+  class Winebottle_IslandGeorge: Winebottle
+	{
+		scope=2;
+		displayName="Pumpkin Wine";
+		descriptionShort="Pumpkin Wine - When life gives you pumpkins…";
+		hiddenSelections[]={"glass","label","cap"};
+		hiddenSelectionsTextures[]={"Survivalists_Drink\drinks\data\wineII_orange_ca.paa","Survivalists_Drink\drinks\data\winelabel_islandgeorge_co.paa","Survivalists_Drink\drinks\data\winebottle_capII_co.paa"};
 	};
 
   class Canteen_Glassware_Cup: Canteen
@@ -469,21 +476,6 @@ class CfgVehicles
 			"Survivalists_Drink\drinks\data\BrownBottle_luciferstears_ca.paa"
 		};	
   };
-  class BoxCerealCrunchin_Coffee: BoxCerealCrunchin
-	{
-		scope=2;
-		displayName="Coffee";
-		descriptionShort="Generic Ground Coffee";
-		hiddenSelectionsTextures[]={"Survivalists_Drink\drinks\data\cereal_box_coffee_co.paa"};
-		class Nutrition
-		{
-			fullnessIndex=2.5;
-			energy=20;
-			water=10;
-			nutritionalIndex=1;
-			toxicity=0;
-		};
-	};
 
 //====================================================== PURE RETEXTURES
 
@@ -939,6 +931,34 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Drink\drinks\data\bottlebeer_zombiesoda_speedy_co.paa"
+		};
+	};
+  class SRP_BeerBottle_Unknown: SRP_BeerBottle
+	{
+		scope=2;
+		displayName="Unknown Beer";
+		descriptionShort="An unlabeled beer bottle.";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_ca.paa"
+		};
+	};
+  class SRP_BeerBottle_IslandGeorge: SRP_BeerBottle
+	{
+		scope=2;
+		displayName="Island George's Pumpkin Beer";
+		descriptionShort="A bottle of finely crafted pumpkin beer.";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_ca.paa"
 		};
 	};
 };

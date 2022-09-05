@@ -1882,6 +1882,24 @@ class CfgSlots
 		displayName="Fishing Rod";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
+  class Slot_BrewingBarrel
+	{
+		name="BrewingBarrel";
+		displayName="Brewing Container - Alcohol";
+		ghostIcon="set:dayz_inventory image:barrel";
+	};
+  class Slot_BrewingBarrel1
+	{
+		name="BrewingBarrel1";
+		displayName="Brewing Container - Water";
+		ghostIcon="set:dayz_inventory image:barrel";
+	};
+  class Slot_BrewingBarrelTable
+	{
+		name="BrewingBarrelTable";
+		displayName="Table";
+		ghostIcon="set:dayz_inventory image:planks";
+	};
 
   class Slot_SRP_Cassette
 	{
@@ -1895,6 +1913,18 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
+  class Proxysrp_barrel1_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"BrewingBarrel"};
+		model="Survivalists_Mods\proxy\srp_barrel1_proxy.p3d";
+	};
+  class Proxysrp_barreltable1_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"BrewingBarrelTable"};
+		model="Survivalists_Mods\proxy\srp_barreltable1_proxy.p3d";
+	};
   class Proxysrp_fishingrod_proxy: ProxyAttachment
 	{
 		scope=2;
