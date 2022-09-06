@@ -4,36 +4,14 @@ modded class AreaExposureMdfr
 	{
     // Print("AreaExposureMdfr::OnActivate::Start");
     player.SetBioZoneStatus(true);
-    if (player && player.SRPIgnoreContaminatedArea())
-    {
-      if (player.GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 9600)
-      {
-        // Print("OnActivate::Turn on biohazard heal");
-        player.GetModifiersManager().ActivateModifier(DUB_Modifiers.MDF_BioHazardHeal);
-      }
-      // Print("OnActivate::Mutant: return from activation");
-      return;
-    }
-    else
-    {
-      // Print("call super");
-      super.OnActivate(player);
-    }
+    super.OnActivate(player);
 	}
 
   override void OnDeactivate(PlayerBase player)
 	{
     // Print("AreaExposureMdfr::OnDeactivate::Start");
     player.SetBioZoneStatus(false);
-    if (player && player.GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 9600)
-    {
-      // Print("AreaExposureMdfr::OnDeactivate:: we are a level 3 mutant");
-      player.GetModifiersManager().DeactivateModifier(DUB_Modifiers.MDF_BioHazardHeal);
-    }
-    else
-    {
-      super.OnDeactivate(player);
-    }
+    super.OnDeactivate(player);
   }
 
   override void OnTick(PlayerBase player, float deltaT)
@@ -42,6 +20,16 @@ modded class AreaExposureMdfr
     if (player && player.SRPIgnoreContaminatedArea())
     {
       // Print("OnTick::Mutant: return from activation");
+      if (player.IsPlayerMutant())
+      {
+        player.GetStatEnergy().Add(DIGESTION_SPEED + 1.2);
+        player.GetStatWater().Add(DIGESTION_SPEED);
+      }
+      else if (player.IsAlpha() player.IsQueenAlpha())
+      {
+        player.GetStatEnergy().Add(20);
+        player.GetStatWater().Add(20);
+      }
       return;
     }
     else

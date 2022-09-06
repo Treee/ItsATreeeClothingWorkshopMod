@@ -156,28 +156,7 @@ modded class PlayerBase
 
   bool SRPIgnoreContaminatedArea()
   {
-    if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 2400)
-    {
-      return true;
-    }
-    EntityAI attachment = GetInventory().FindAttachment(InventorySlots.ARMBAND);
-		if(attachment && (attachment.GetType() == "Skylar_BioZone_Protection" || attachment.GetType() == "Sneakers_Skylar_Biozone"))
-    {
-      return true;
-    }
-    attachment = GetInventory().FindAttachment(InventorySlots.FEET);
-    if(attachment && (attachment.GetType() == "Sneakers_Skylar_Biozone"))
-    {
-      return true;
-    }
-    int slot_id = InventorySlots.GetSlotIdFromString("Head");
-    Head_Default tempHead = Head_Default.Cast(GetInventory().FindPlaceholderForSlot( slot_id ));
-    if (tempHead && (tempHead.GetType() == "DUB_Muthead_M" || tempHead.GetType() == "DUB_Muthead_F" || tempHead.GetType() == "DUB_Muthead_M_2" || tempHead.GetType() == "DUB_Muthead_F_2" || tempHead.GetType() == "DUB_Carlhead"))
-    {
-      return true;
-    }
-    EntityAI back = FindAttachmentBySlotName("Extra");
-    if (back && (back.GetType() == "DUB_Monsterv2" || back.IsInherited(DUB_Monsterv2)))
+    if (IsPlayerMutant())
     {
       return true;
     }
@@ -212,50 +191,54 @@ modded class PlayerBase
   {
     float protection = 0;
     ItemBase wornItem;
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.HEADGEAR));
+    wornItem = GetItemOnSlot("Headgear");
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
     }
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.GLOVES));
+    wornItem = GetItemOnSlot("Gloves");
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
     }
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.BODY));
+    wornItem = GetItemOnSlot("Body");
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
     }
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.LEGS));
+    wornItem = GetItemOnSlot("Bottom");
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
     }
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.FEET));
+    wornItem = GetItemOnSlot("Feet");
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
     }
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.MASK));
+    wornItem = GetItemOnSlot("Mask");
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL, true);
     }
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.ARMBAND));
+    wornItem = GetItemOnSlot("Armband");
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
     }
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.BACK));
+    wornItem = GetItemOnSlot("Backpack");
     if (wornItem)
     {
       protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
     }
-    wornItem = ItemBase.Cast(GetInventory().FindAttachment(InventorySlots.HEAD));
-    if (wornItem && (wornItem.GetType() == "DUB_Muthead_M" || wornItem.GetType() == "DUB_Muthead_F" || wornItem.GetType() == "DUB_Muthead_M_2" || wornItem.GetType() == "DUB_Muthead_F_2" || wornItem.GetType() == "DUB_Carlhead"))
+    wornItem = GetItemOnSlot("Extra");
+    if (wornItem)
     {
-      protection += 6.0;
+      protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
+    }
+    if (IsPlayerMutant())
+    {
+      protection += 8.0;
     }
     return protection;
   }
