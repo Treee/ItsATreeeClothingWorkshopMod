@@ -850,6 +850,16 @@ class CfgVehicles
 			soundSet="SRPRadio_IslandGeorge_GTH_SoundSet1";
 		};
 	};
+  class SRPRadio_CassetteTape_IslandGeorge_SlenderMalice: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Sl3nder Malice Ft. Wavy Jone";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_SlenderMalice_SoundSet1";
+		};
+	};
 
   // -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base

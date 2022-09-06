@@ -331,6 +331,10 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\George_Hormel_GTH.ogg",1}};
 	};
+  class SRPRadio_IslandGeorge_SlenderMalice_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Mods\sounds\cassettes\music\data\sl3nder_malice_ft_wavy_jone.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -660,6 +664,13 @@ class CfgSoundSets
 		soundShaders[] =
 		{
 			"SRPRadio_IslandGeorge_GTH_Shader1"
+		};
+	};
+  class SRPRadio_IslandGeorge_SlenderMalice_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_SlenderMalice_Shader1"
 		};
 	};
 };
