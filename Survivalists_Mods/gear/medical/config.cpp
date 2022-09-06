@@ -27,18 +27,17 @@ class CfgVehicles
   class BandageDressing: Inventory_Base
   {
     canBeSplit=1;
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "SRP_Medical1",
       "SRP_Medical2",
-      "SRP_Medical3",
-      "MedicalBandage"
+      "SRP_Medical3"
     };
   };
 
   class Morphine: Inventory_Base
   {
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "SRP_Medical1",
       "SRP_Medical2",
@@ -50,13 +49,21 @@ class CfgVehicles
 
   class Epinephrine: Inventory_Base
   {
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "SRP_Medical1",
       "SRP_Medical2",
-      "SRP_Medical3",
-      "epinephrine",
-      "morphine"
+      "SRP_Medical3"
+    };
+  };
+
+  class AntiChemInjector: Inventory_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Medical1",
+      "SRP_Medical2",
+      "SRP_Medical3"
     };
   };
   
