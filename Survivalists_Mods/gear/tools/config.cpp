@@ -685,4 +685,106 @@ class CfgVehicles
 		};
 	};
 
+  //============================================= ELECTRONIC Hardeners
+  class TireRepairKit_ElectronicsKit_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Basic Hacking Protocol";
+		descriptionShort="A basic anti hacking tool. Easily removed";
+		model="\dz\vehicles\parts\Tire_Repair_Kit.p3d";
+		weight=1000;
+		itemSize[]={2,3};
+		absorbency=0;
+		rotationFlags=16;
+		stackedUnit="percentage";
+		quantityBar=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		repairKitType=6;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_green_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,{"DZ\vehicles\parts\data\Tire_Repair_Kit.rvmat"}},
+						{0.69999999,{"DZ\vehicles\parts\data\Tire_Repair_Kit.rvmat"}},
+						{0.5,{"DZ\vehicles\parts\data\Tire_Repair_Kit_damage.rvmat"}},
+						{0.30000001,{"DZ\vehicles\parts\data\Tire_Repair_Kit_damage.rvmat"}},
+						{0,{"DZ\vehicles\parts\data\Tire_Repair_Kit_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="smallprotectorcase_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="smallprotectorcase_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class TireRepairKit_ElectronicsKit_Green: TireRepairKit_ElectronicsKit_ColorBase
+	{
+		scope=2;
+		displayName="Basic Hacking Protocol";
+		descriptionShort="A basic anti hacking tool. Easily removed";
+    color="green";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_green_co.paa"};
+	};
+  class TireRepairKit_ElectronicsKit_Yellow: TireRepairKit_ElectronicsKit_ColorBase
+	{
+		scope=2;
+		displayName="Advanced Hacking Protocol";
+		descriptionShort="A basic anti hacking tool. Moderately difficult to removed";
+    color="yellow";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_yellow_co.paa"};
+	};
+  class TireRepairKit_ElectronicsKit_Red: TireRepairKit_ElectronicsKit_ColorBase
+	{
+		scope=2;
+		displayName="Expert Hacking Protocol";
+		descriptionShort="A basic anti hacking tool. Difficult to remove";
+    color="red";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_red_co.paa"};
+	};
+  class TireRepairKit_ElectronicsKit_Blue: TireRepairKit_ElectronicsKit_ColorBase
+	{
+		scope=2;
+		displayName="Master Hacking Protocol";
+		descriptionShort="A basic anti hacking tool. Nearly impossible to remove";
+    color="blue";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_blue_co.paa"};
+	};
+  class TireRepairKit_ElectronicsKit_Purple: TireRepairKit_ElectronicsKit_ColorBase
+	{
+		scope=2;
+		displayName="Supreme Hacking Protocol";
+		descriptionShort="A basic anti hacking tool. Basically impossible to remove";
+    color="purple";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_purple_co.paa"};
+	};
+
+
 };
