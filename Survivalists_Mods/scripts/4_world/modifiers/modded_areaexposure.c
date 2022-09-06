@@ -37,6 +37,10 @@ modded class AreaExposureMdfr
           player.AddHealth("","", 20);
           player.GetBleedingManagerServer().RemoveMostSignificantBleedingSourceEx(NULL);
           player.RemoveAllAgents();
+          if (player.GetTotalTiredness() > 0)
+          {
+            player.SetTotalTiredness(player.GetTotalTiredness() - 500);
+          }
           buffInterval = 0;
         }
       }
