@@ -80,7 +80,7 @@ class Craft_SRP_MetalCoins extends RecipeBase
     SRP_ForgeIngotRod_ColorBase rod;
     if (Class.CastTo(rod, ingredients[0]))
     {
-      if (rod.GetRodColor() == "tin")
+      if (rod.GetColor() == "tin")
       {
         return false;
       }
@@ -167,7 +167,7 @@ class Craft_SRP_ForgeIngotPlate_ColorBase extends RecipeBase
       SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(tongs.FindAttachmentBySlotName("SRP_Ingot"));
       if (ingot)
       {
-        string ingotColor = ingot.GetIngotColor();
+        string ingotColor = ingot.GetColor();
         ItemBase plates = ItemBase.Cast(GetGame().CreateObjectEx("SRP_ForgeIngotPlate_"+ingotColor, player.GetPosition(), false));
         plates.SetQuantity(Math.RandomIntInclusive(1,5));
         results.Insert(plates);
@@ -251,7 +251,7 @@ class Craft_SRP_ForgeIngotRod_ColorBase extends RecipeBase
       SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(tongs.FindAttachmentBySlotName("SRP_Ingot"));
       if (ingot)
       {
-        string ingotColor = ingot.GetIngotColor();
+        string ingotColor = ingot.GetColor();
         ItemBase rods = ItemBase.Cast(GetGame().CreateObjectEx("SRP_ForgeIngotRod_"+ingotColor, player.GetPosition(), false));
         rods.SetQuantity(Math.RandomIntInclusive(1,2));
         results.Insert(rods);

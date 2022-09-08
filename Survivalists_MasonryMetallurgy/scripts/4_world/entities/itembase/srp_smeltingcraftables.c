@@ -39,11 +39,6 @@ class SRP_ForgeIngotPlate_ColorBase extends Inventory_Base
     }
   }
 
-  bool HasCorrectQuantityAndType(int quantity, string acceptedType)
-  {
-    return GetQuantity() >= quantity && acceptedType == GetPlateColor();
-  }
-
   string GetPlateColor()
   {
     return ConfigGetString("color");
@@ -95,16 +90,6 @@ class SRP_ForgeIngotRod_ColorBase extends Inventory_Base
         player_PB.GetModifiersManager().ActivateModifier( SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING );
       }
     }
-  }
-
-  bool HasCorrectQuantityAndType(int quantity, string acceptedType)
-  {
-    return GetQuantity() >= quantity && acceptedType == GetRodColor();
-  }
-
-  string GetRodColor()
-  {
-    return ConfigGetString("color");
   }
 };
 class SRP_ForgeIngotRod_Copper extends SRP_ForgeIngotRod_ColorBase{};

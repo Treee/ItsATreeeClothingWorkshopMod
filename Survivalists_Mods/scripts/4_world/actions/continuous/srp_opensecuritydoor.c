@@ -27,15 +27,6 @@ modded class Jmc_Security_Door
   }
 };
 
-modded class ElectronicRepairKit
-{
-  override void SetActions()
-  {
-    super.SetActions();
-    AddAction(ActionSRPHackSecurityDoor);
-  }
-};
-
 class ActionSRPHackSecurityDoorCB : ActionContinuousBaseCB
 {
 	override void CreateActionComponent()

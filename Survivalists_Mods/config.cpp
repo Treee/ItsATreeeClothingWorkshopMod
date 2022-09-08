@@ -58,6 +58,7 @@ class CfgPatches
       "Survivalists_Narcotics",
       "Survivalists_Drink",
       "Survivalists_Food",
+      "Survivalists_RadioElectronics"
 		};
 	};
 };

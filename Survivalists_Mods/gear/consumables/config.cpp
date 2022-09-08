@@ -326,7 +326,15 @@ class CfgVehicles
 		rotationFlags=17;
 		itemSize[]={2,3};
 		weight=170;
-		inventorySlot[]={};
+		inventorySlot[]=
+    {
+      "SRP_ElectricalWire1",
+      "SRP_ElectricalWire2",
+      "SRP_ElectricalWire3",
+      "SRP_ElectricalWire4",
+      "SRP_ElectricalWire5",
+      "SRP_ElectricalWire6",
+    };
     color="base";
 		hiddenSelections[]=
 		{
@@ -450,96 +458,6 @@ class CfgVehicles
 			};
 		};
 	};
-  class MetalWire_Red: MetalWire_ColorBase
-	{
-		scope=2;
-		displayName="Electronics Wiring - Red";
-    color="red";
-    hiddenSelections[]=
-		{			
-			"rolled"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\consumables\data\string_metalwire_red_co.paa",
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"dz\gear\crafting\data\String_MetalWire.rvmat",
-		};
-	};
-  class MetalWire_Green: MetalWire_ColorBase
-	{
-		scope=2;
-		displayName="Electronics Wiring - Green";
-    color="green";
-    hiddenSelections[]=
-		{			
-			"rolled"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\consumables\data\string_metalwire_green_co.paa",
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"dz\gear\crafting\data\String_MetalWire.rvmat",
-		};
-	};
-  class MetalWire_Yellow: MetalWire_ColorBase
-	{
-		scope=2;
-		displayName="Electronics Wiring - Yellow";
-    color="yellow";
-    hiddenSelections[]=
-		{			
-			"rolled"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\consumables\data\string_metalwire_yellow_co.paa",
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"dz\gear\crafting\data\String_MetalWire.rvmat",
-		};
-	};
-  class MetalWire_Blue: MetalWire_ColorBase
-	{
-		scope=2;
-		displayName="Electronics Wiring - Blue";
-    color="blue";
-				hiddenSelections[]=
-		{			
-			"rolled"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\consumables\data\string_metalwire_blue_co.paa",
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"dz\gear\crafting\data\String_MetalWire.rvmat",
-		};
-	};
-  class MetalWire_White: MetalWire_ColorBase
-	{
-		scope=2;
-		displayName="Electronics Wiring - White";
-    color="white";
-    hiddenSelections[]=
-		{			
-			"rolled"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\consumables\data\string_metalwire_white_co.paa",
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"dz\gear\crafting\data\String_MetalWire.rvmat",
-		};
-	};
   class MetalWire_Black: MetalWire_ColorBase
 	{
 		scope=2;
@@ -558,18 +476,36 @@ class CfgVehicles
 			"dz\gear\crafting\data\String_MetalWire.rvmat",
 		};
 	};
-  class MetalWire_Purple: MetalWire_ColorBase
+  class MetalWire_Brown: MetalWire_ColorBase
 	{
 		scope=2;
-		displayName="Electronics Wiring - Purple";
-    color="purple";
+		displayName="Electronics Wiring - Brown";
+    color="brown";
     hiddenSelections[]=
 		{			
 			"rolled"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\consumables\data\string_metalwire_purple_co.paa",
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_red_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+		};
+	};
+  class MetalWire_Red: MetalWire_ColorBase
+	{
+		scope=2;
+		displayName="Electronics Wiring - Red";
+    color="red";
+    hiddenSelections[]=
+		{			
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_red_co.paa",
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -594,7 +530,114 @@ class CfgVehicles
 			"dz\gear\crafting\data\String_MetalWire.rvmat",
 		};
 	};
-
+  class MetalWire_Yellow: MetalWire_ColorBase
+	{
+		scope=2;
+		displayName="Electronics Wiring - Yellow";
+    color="yellow";
+    hiddenSelections[]=
+		{			
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_yellow_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+		};
+	};
+  class MetalWire_Green: MetalWire_ColorBase
+	{
+		scope=2;
+		displayName="Electronics Wiring - Green";
+    color="green";
+    hiddenSelections[]=
+		{			
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_green_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+		};
+	};
+  class MetalWire_Blue: MetalWire_ColorBase
+	{
+		scope=2;
+		displayName="Electronics Wiring - Blue";
+    color="blue";
+				hiddenSelections[]=
+		{			
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_blue_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+		};
+	};
+  class MetalWire_Purple: MetalWire_ColorBase
+	{
+		scope=2;
+		displayName="Electronics Wiring - Purple";
+    color="purple";
+    hiddenSelections[]=
+		{			
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_purple_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+		};
+	}; 
+  class MetalWire_Grey: MetalWire_ColorBase
+	{
+		scope=2;
+		displayName="Electronics Wiring - Grey";
+    color="grey";
+    hiddenSelections[]=
+		{			
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\crafting\data\string_metalwire_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+		};
+	}; 
+  class MetalWire_White: MetalWire_ColorBase
+	{
+		scope=2;
+		displayName="Electronics Wiring - White";
+    color="white";
+    hiddenSelections[]=
+		{			
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_white_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+		};
+	};     
 
   //----------------------------------------------------- SPRAYCANS
   class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery

@@ -701,7 +701,14 @@ class CfgVehicles
 		varQuantityInit=100;
 		varQuantityMin=0;
 		varQuantityMax=100;
-		repairKitType=6;
+		repairKitType=7;
+    inventorySlot[]=
+		{
+			"SRP_HackingKit1",
+			"SRP_HackingKit2",
+			"SRP_HackingKit3",
+			"SRP_HackingKit4"
+		};
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_green_co.paa"};
 		class DamageSystem
@@ -739,12 +746,11 @@ class CfgVehicles
 			};
 		};
 	};
-
   class TireRepairKit_ElectronicsKit_Green: TireRepairKit_ElectronicsKit_ColorBase
 	{
 		scope=2;
 		displayName="Basic Hacking Protocol";
-		descriptionShort="A basic anti hacking tool. Easily removed";
+		descriptionShort="A basic anti hacking tool. Easily removed. Requires three wires to remove of at least 100 to 200 rating.";
     color="green";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_green_co.paa"};
@@ -753,7 +759,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Advanced Hacking Protocol";
-		descriptionShort="A basic anti hacking tool. Moderately difficult to removed";
+		descriptionShort="An anti hacking tool. Moderately difficult to removed. Requires three wires to remove of at least 50 to 100 rating.";
     color="yellow";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_yellow_co.paa"};
@@ -762,7 +768,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Expert Hacking Protocol";
-		descriptionShort="A basic anti hacking tool. Difficult to remove";
+		descriptionShort="An expert anti hacking tool. Difficult to remove. Requires four wires to remove of at least 50 to 100 rating.";
     color="red";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_red_co.paa"};
@@ -771,7 +777,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Master Hacking Protocol";
-		descriptionShort="A basic anti hacking tool. Nearly impossible to remove";
+		descriptionShort="A master anti hacking tool. Nearly impossible to remove. Requires five wires to remove of at least 75 or higher rating.";
     color="blue";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_blue_co.paa"};
@@ -780,11 +786,10 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Supreme Hacking Protocol";
-		descriptionShort="A basic anti hacking tool. Basically impossible to remove";
+		descriptionShort="A supreme anti hacking tool. Basically impossible to remove. Requires six wires to remove of at least 75 or higher rating.";
     color="purple";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_purple_co.paa"};
 	};
-
 
 };

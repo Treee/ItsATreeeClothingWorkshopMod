@@ -1900,12 +1900,72 @@ class CfgSlots
 		displayName="Table";
 		ghostIcon="set:dayz_inventory image:planks";
 	};
-
   class Slot_SRP_Cassette
 	{
 		name = "SRP_Cassette";
 		displayName = "Cassette";
 		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_HackingKit1
+	{
+		name = "SRP_HackingKit1";
+		displayName = "Hacking Kit";
+		ghostIcon="set:dayz_inventory image:grenade";
+	};
+  class Slot_SRP_HackingKit2
+	{
+		name = "SRP_HackingKit2";
+		displayName = "Hacking Kit";
+		ghostIcon="set:dayz_inventory image:grenade";
+	};
+  class Slot_SRP_HackingKit3
+	{
+		name = "SRP_HackingKit3";
+		displayName = "Hacking Kit";
+		ghostIcon="set:dayz_inventory image:grenade";
+	};
+  class Slot_SRP_HackingKit4
+	{
+		name = "SRP_HackingKit4";
+		displayName = "Hacking Kit";
+		ghostIcon="set:dayz_inventory image:grenade";
+	};
+
+  class Slot_SRP_ElectricalWire1
+	{
+		name = "SRP_ElectricalWire1";
+		displayName = "Electrical Wires";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
+  class Slot_SRP_ElectricalWire2
+	{
+		name = "SRP_ElectricalWire2";
+		displayName = "Electrical Wires";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
+  class Slot_SRP_ElectricalWire3
+	{
+		name = "SRP_ElectricalWire3";
+		displayName = "Electrical Wires";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
+  class Slot_SRP_ElectricalWire4
+	{
+		name = "SRP_ElectricalWire4";
+		displayName = "Electrical Wires";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
+  class Slot_SRP_ElectricalWire5
+	{
+		name = "SRP_ElectricalWire5";
+		displayName = "Electrical Wires";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
+  class Slot_SRP_ElectricalWire6
+	{
+		name = "SRP_ElectricalWire6";
+		displayName = "Electrical Wires";
+		ghostIcon="set:dayz_inventory image:metalwire";
 	};
 };
 

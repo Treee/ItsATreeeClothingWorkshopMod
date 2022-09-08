@@ -203,7 +203,34 @@ modded class ItemBase
   {
     Print("Item is max heat and can transform: " + GetType());    
   }
-
+  bool HasCorrectQuantityAndType(int quantity, string acceptedType, bool exactAmount=false)
+  {
+    if (exactAmount)
+    {
+      return GetQuantity() == quantity && acceptedType == GetColor();
+    }
+    return GetQuantity() >= quantity && acceptedType == GetColor();
+  }
+  string GetColor()
+  {
+    return ConfigGetString("color");
+  }
+  int GetResistorDigit()
+  {
+    return -1;
+  }
+  int GetResistorMultiplier()
+  {
+    return 0;
+  }
+  float GetResistorTolerance()
+  {
+    return 0;
+  }
+  int GetResistorTemperaturCoeffcient()
+  {
+    return 0;
+  }
   // make sure to use the slot name not the item name....
 	ItemBase GetItemOnSlot(string slot_type)
 	{    

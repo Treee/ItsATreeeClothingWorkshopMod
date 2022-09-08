@@ -197,11 +197,6 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
     }
   }
 
-  string GetIngotColor()
-  {
-    return ConfigGetString("color");
-  }
-
   bool IsHotEnough(int expectedTemperature)
   {
     // Print("Current Temperature of " + GetType() + " is " + GetTemperature() + " Max: " + GetTemperatureMax() + " expected: " + expectedTemperature);
@@ -282,14 +277,14 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
     {
       SRP_Mining_RawOre_ColorBase rawOre1 = SRP_Mining_RawOre_ColorBase.Cast(FindAttachmentBySlotName("SRP_RawOre1"));
       SRP_Mining_RawOre_ColorBase attachingOre1 = SRP_Mining_RawOre_ColorBase.Cast(attachment);
-      return rawOre1.GetOreColor() != attachingOre1.GetOreColor();
+      return rawOre1.GetColor() != attachingOre1.GetColor();
     }
     // if we have ore in slot 2 and we are attaching to slot 1
     else if (HasOreInSlot("SRP_RawOre2") && InventorySlots.GetSlotIdFromString("SRP_RawOre1") == slotId)
     {
       SRP_Mining_RawOre_ColorBase rawOre2 = SRP_Mining_RawOre_ColorBase.Cast(FindAttachmentBySlotName("SRP_RawOre2"));
       SRP_Mining_RawOre_ColorBase attachingOre2 = SRP_Mining_RawOre_ColorBase.Cast(attachment);
-      return rawOre2.GetOreColor() != attachingOre2.GetOreColor();
+      return rawOre2.GetColor() != attachingOre2.GetColor();
     }
     else
     { // if empty, allow ores
@@ -377,18 +372,7 @@ class SRP_ForgeCrucible_Gold extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Platinum extends SRP_ForgeCrucible_ColorBase{};
 
 //======================================================= ORE
-class SRP_Mining_RawOre_ColorBase extends Inventory_Base
-{
-  bool HasCorrectQuantityAndType(int quantity, string acceptedType)
-  {
-    return GetQuantity() >= quantity && acceptedType == GetOreColor();
-  }
-
-  string GetOreColor()
-  {
-    return ConfigGetString("color");
-  }
-};
+class SRP_Mining_RawOre_ColorBase extends Inventory_Base{};
 class SRP_Mining_RawOre_Copper extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Tin extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Bronze extends SRP_Mining_RawOre_ColorBase{};
@@ -412,13 +396,13 @@ class SRP_MiningTool_IronTongsSmall extends Inventory_Base
     return FindAttachmentBySlotName("SRP_Ingot") != null;
   }
 
-  string GetIngotColor()
+  string GetColor()
   {
     string ingotColor = "";
     SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(FindAttachmentBySlotName("SRP_Ingot"));
     if (ingot)
     {
-      ingotColor = ingot.GetIngotColor();
+      ingotColor = ingot.GetColor();
     }
     return ingotColor;
   }

@@ -35,6 +35,53 @@ class CfgVehicles
   // }
 
   //-------------------------------------- MOD OVERRIDE
+  class SRP_ElectronicsJammer_Base: Inventory_Base
+  {
+    attachments[]=
+    {
+			"SRP_HackingKit1",
+			"SRP_HackingKit2",
+			"SRP_HackingKit3",
+			"SRP_HackingKit4",
+      "SRP_ElectricalWire1",
+      "SRP_ElectricalWire2",
+      "SRP_ElectricalWire3",
+      "SRP_ElectricalWire4",
+      "SRP_ElectricalWire5",
+      "SRP_ElectricalWire6"
+    };
+    class GUIInventoryAttachmentsProps
+		{
+			class HackingKits
+			{
+				name="Hacking Kits";
+				description="Hacking kits that make dismantling harder.";
+				attachmentSlots[]=
+				{
+					"SRP_HackingKit1",
+					"SRP_HackingKit2",
+					"SRP_HackingKit3",
+					"SRP_HackingKit4",
+				};
+				icon="set:dayz_inventory image:book";
+			};
+      class ElectricalWires
+			{
+				name="Electrical Wires";
+				description="Electrical wires to diffuse the hacking kits.";
+				attachmentSlots[]=
+				{
+					"SRP_ElectricalWire1",
+					"SRP_ElectricalWire2",
+					"SRP_ElectricalWire3",
+					"SRP_ElectricalWire4",
+					"SRP_ElectricalWire5",
+					"SRP_ElectricalWire6",
+				};
+				icon="set:dayz_inventory image:metalwire";
+			};
+		};
+  };
 
   //-------------------------------------- BASE GAME OVERRIDE
 	class SRP_CassettePlayer: Inventory_Base
