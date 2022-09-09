@@ -38,11 +38,6 @@ class SRP_ForgeIngotPlate_ColorBase extends Inventory_Base
       }
     }
   }
-
-  string GetPlateColor()
-  {
-    return ConfigGetString("color");
-  }
 };
 class SRP_ForgeIngotPlate_Copper extends SRP_ForgeIngotPlate_ColorBase{};
 class SRP_ForgeIngotPlate_Tin extends SRP_ForgeIngotPlate_ColorBase{};

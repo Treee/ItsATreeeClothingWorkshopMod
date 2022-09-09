@@ -835,7 +835,7 @@ class CfgVehicles
       "PlantMaterial10",
     };
     itemSize[]={6,6};
-    itemsCargoSize[]={4,4};
+    itemsCargoSize[]={0,0};
 		hiddenSelectionsTextures[]=
 		{
 			"DZ\characters\backpacks\data\DryBag_Orange_co.paa",

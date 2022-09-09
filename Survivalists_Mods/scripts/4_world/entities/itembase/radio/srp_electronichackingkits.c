@@ -152,11 +152,11 @@ class TireRepairKit_ElectronicsKit_Green extends TireRepairKit_ElectronicsKit_Co
   }
   override int GetMaxPower()
   {
-    return 5;
+    return 4;
   }
   override int GetMinPower()
   {
-    return 2;
+    return 0;
   }
 };
 class TireRepairKit_ElectronicsKit_Yellow extends TireRepairKit_ElectronicsKit_ColorBase
@@ -175,7 +175,7 @@ class TireRepairKit_ElectronicsKit_Yellow extends TireRepairKit_ElectronicsKit_C
   }
   override int GetMinPower()
   {
-    return 3;
+    return 1;
   }
 };
 class TireRepairKit_ElectronicsKit_Red extends TireRepairKit_ElectronicsKit_ColorBase
@@ -194,11 +194,11 @@ class TireRepairKit_ElectronicsKit_Red extends TireRepairKit_ElectronicsKit_Colo
   }
   override int GetMaxPower()
   {
-    return 5;
+    return 6;
   }
   override int GetMinPower()
   {
-    return 3;
+    return 2;
   }
 };
 class TireRepairKit_ElectronicsKit_Blue extends TireRepairKit_ElectronicsKit_ColorBase
@@ -217,11 +217,11 @@ class TireRepairKit_ElectronicsKit_Blue extends TireRepairKit_ElectronicsKit_Col
   }
   override int GetMaxPower()
   {
-    return 7;
+    return 6;
   }
   override int GetMinPower()
   {
-    return 4;
+    return 3;
   }
 };
 class TireRepairKit_ElectronicsKit_Purple extends TireRepairKit_ElectronicsKit_ColorBase
@@ -240,10 +240,10 @@ class TireRepairKit_ElectronicsKit_Purple extends TireRepairKit_ElectronicsKit_C
   }
   override int GetMaxPower()
   {
-    return 9;
+    return 6;
   }
   override int GetMinPower()
   {
-    return 5;
+    return 4;
   }
 };
