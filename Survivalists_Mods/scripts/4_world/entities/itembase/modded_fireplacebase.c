@@ -6,6 +6,24 @@ modded class FireplaceBase
 
   int m_IrradiatedFuelCount = 0;
 
+
+
+
+
+	override void EEItemAttached(EntityAI item, string slot_name)
+	{
+		super.EEItemAttached( item, slot_name );
+
+    if (item.GetType().Contains("_Irradiated"))
+    {
+      PARTICLE_SMALL_FIRE = ParticleList.FLAREPROJ_ACTIVATE_GREEN;
+      PARTICLE_NORMAL_FIRE = ParticleList.FLAREPROJ_ACTIVATE_GREEN;
+      PARTICLE_OVEN_FIRE = ParticleList.FLAREPROJ_ACTIVATE_GREEN;
+
+      RefreshFireParticlesAndSounds(true);		
+    }
+	}
+
   override protected FireConsumable GetItemToConsume()
 	{
     m_UTSource.SetIsRadioactiveSource(false);
