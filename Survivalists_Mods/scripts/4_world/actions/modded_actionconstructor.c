@@ -28,6 +28,8 @@ modded class ActionConstructor
     
 		actions.Insert(ActionOpenSRPdonutpack);
 
+		actions.Insert(ActionCheckJammerCurrent);
+
     // Modded Mods Actions
     actions.Insert(ActionSRPHackSecurityDoor);
 

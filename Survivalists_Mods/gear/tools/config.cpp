@@ -792,4 +792,166 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_purple_co.paa"};
 	};
 
+
+  //==================================================== ELECTRONIC TOOLS
+  class BatteryCharger_VoltMeter: Inventory_Base
+	{
+		scope=2;
+		displayName="Makleshit Voltmeter";
+		descriptionShort="This makeshift volt meter is capable of reading current. Its accuracy is questionable.";
+		model="\dz\gear\camping\battery_charger.p3d";
+		attachments[]=
+		{
+			"LargeBattery"
+		};
+		weight=5000;
+		itemSize[]={3,3};
+		itemBehaviour=1;
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"light_stand_by",
+			"light_charging",
+			"light_charged",
+			"switch_on",
+			"clips_detached",
+			"clips_folded",
+			"cord_plugged",
+			"cord_folded",
+			"placing"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa",
+			"dz\gear\camping\data\battery_charger_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\camping\data\battery_charger.rvmat",
+			"dz\gear\camping\data\battery_charger.rvmat",
+			"dz\gear\camping\data\battery_charger.rvmat",
+			"dz\gear\camping\data\battery_charger.rvmat",
+			"dz\gear\camping\data\battery_charger.rvmat",
+			"dz\gear\camping\data\battery_charger.rvmat",
+			"dz\gear\camping\data\battery_charger.rvmat",
+			"dz\gear\camping\data\battery_charger.rvmat",
+			"dz\gear\camping\data\battery_charger.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=90;
+					transferToAttachmentsCoef=0.5;
+					healthLevels[]=
+					{
+						{1,{"DZ\gear\camping\data\battery_charger.rvmat"}},
+						{0.69999999,{"DZ\gear\camping\data\battery_charger.rvmat"}},
+						{0.5,{"DZ\gear\camping\data\battery_charger_damage.rvmat"}},
+						{0.30000001,{"DZ\gear\camping\data\battery_charger_damage.rvmat"}},
+						{0,{"DZ\gear\camping\data\battery_charger_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		repairableWithKits[]={7};
+		repairCosts[]={25};
+		class AnimationSources
+		{
+			class cord_folded
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class cord_plugged
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class clips_detached
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class clips_folded
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class switch_on
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class switch_off
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class clips_car_battery
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class clips_truck_battery
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class light_stand_by
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class light_charging
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class light_charged
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class placing
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="batterycharger_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
 };

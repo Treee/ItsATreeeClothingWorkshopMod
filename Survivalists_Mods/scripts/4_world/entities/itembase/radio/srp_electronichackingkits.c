@@ -14,6 +14,38 @@ modded class SRP_ElectronicsJammer_Base
     return (GetItemOnSlot("SRP_HackingKit1")||GetItemOnSlot("SRP_HackingKit2")||GetItemOnSlot("SRP_HackingKit3")||GetItemOnSlot("SRP_HackingKit4"));
   }
 
+  int GetPriorityHackingKitCurrent()
+  {
+    ItemBase hackingKit;
+    TireRepairKit_ElectronicsKit_ColorBase castedObj;
+    hackingKit = GetItemOnSlot("SRP_HackingKit4");
+    if (hackingKit)
+    {
+      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
+      return castedObj.GetMeterRead();
+    }
+    hackingKit = GetItemOnSlot("SRP_HackingKit3");
+    if (hackingKit)
+    {
+      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
+      return castedObj.GetMeterRead();
+    }
+
+    hackingKit = GetItemOnSlot("SRP_HackingKit2");
+    if (hackingKit)
+    {
+      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
+      return castedObj.GetMeterRead();
+    }
+
+    hackingKit = GetItemOnSlot("SRP_HackingKit1");
+    if (hackingKit)
+    {
+      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
+      return castedObj.GetMeterRead();
+    }
+    return -1;
+  }
 
 
   // bool CanRemoveHackingKit()
@@ -101,7 +133,7 @@ class TireRepairKit_ElectronicsKit_ColorBase extends ElectronicRepairKit
     // pick random tolerance from list
     m_ErrorTolerance = GetErrorTolerances().GetRandomElement();
     m_RequiredTemperatureCoefficient = GetTemperatureCoefficients().GetRandomElement();
-    Print(string.Format("digits: %1 number: %2 power: %3 multiplier: %4 requiredCurrent: %5 tolerance: %6", digits, digits.ToInt(), power, Math.Pow(10, power), m_RequiredCurrent, m_ErrorTolerance))
+    // Print(string.Format("digits: %1 number: %2 power: %3 multiplier: %4 requiredCurrent: %5 tolerance: %6", digits, digits.ToInt(), power, Math.Pow(10, power), m_RequiredCurrent, m_ErrorTolerance));
   }
   override bool CanDetachAttachment (EntityAI parent)
 	{
@@ -138,6 +170,19 @@ class TireRepairKit_ElectronicsKit_ColorBase extends ElectronicRepairKit
   int GetMinPower()
   {
     return 0;
+  }
+
+  int GetMeterRead()
+  {
+    int toleranceDelta = GetCurrentRequirement() * GetErrorTolerance();
+    if (Math.RandomIntInclusive(0,1) == 0)    
+    {
+      return Math.RandomIntInclusive(GetCurrentRequirement(), GetCurrentRequirement() + toleranceDelta);
+    }
+    else
+    {
+      return Math.RandomIntInclusive(GetCurrentRequirement() - toleranceDelta, GetCurrentRequirement());
+    }
   }
 };
 class TireRepairKit_ElectronicsKit_Green extends TireRepairKit_ElectronicsKit_ColorBase

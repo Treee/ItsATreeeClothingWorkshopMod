@@ -12,4 +12,26 @@ class SRP_DrugCraft_CocaineStarter extends DryBag_ColorBase
     }
 		return false;
 	}
+
+  bool IsReadyToCraft()
+  {
+    bool isReady = true;
+    for(int i = 1; i < 11; i++)
+    {
+      ItemBase plantMaterial = GetItemOnSlot(string.Format("PlantMaterial%1",i));
+      if (plantMaterial)
+      {
+        Edible_Base edible = Edible_Base.Cast(plantMaterial);
+        if (edible)
+        {
+          isReady &= edible.IsFoodDried();
+        }
+      }
+      if (!isReady)
+      {
+        break;
+      }
+    }
+    return isReady;
+  }
 };

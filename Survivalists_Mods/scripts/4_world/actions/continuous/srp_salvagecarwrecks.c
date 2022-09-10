@@ -32,7 +32,7 @@ class ActionSalvageCarWreckCB : ActionContinuousBaseCB
 	}
 };
 
-class ActionSalvageCarWreck: ActionContinuousBase
+class ActionSalvageCarWreck extends ActionContinuousBase
 {	
 	void ActionSalvageCarWreck()
 	{
