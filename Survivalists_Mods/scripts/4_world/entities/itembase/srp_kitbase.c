@@ -383,6 +383,14 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
     }
     return isValid;
   }
+  
+  void DamageAttachments()
+  {
+  }
+
+  void DamageItemSlot(string slotName, int minDamage=0, int maxDamage=10)
+  {
+  }
 
   bool CanCraft()
   {
@@ -521,6 +529,8 @@ class SRP_MetalBarrel_Red_Kit extends SRP_KitBase{};
 class SRP_MetalBarrel_Yellow_Kit extends SRP_KitBase{};
 class SRP_MetalBarrel_Concrete_Kit extends SRP_KitBase{};
 
+class TireRepairKit_ElectronicsKit_Kit extends SRP_IntermediateCraftingKitBase{};
+
 class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
 {
   override bool HasAllAttachmentsFilled()
@@ -539,7 +549,7 @@ class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
     return isAllFilled;
   }
 
-  void DamageTools()
+  override void DamageAttachments()
   {
     DamageItemSlot("SRP_ToolKit_Hammer", Math.RandomIntInclusive(10,20));
     DamageItemSlot("SRP_ToolKit_Hatchet", Math.RandomIntInclusive(10,20));
@@ -553,16 +563,6 @@ class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
     DamageItemSlot("SRP_ToolKit_Wrench", Math.RandomIntInclusive(10,20));
     
     AddHealth( Math.RandomIntInclusive(2, 10));
-  }
-
-  void DamageItemSlot(string slotName, int minDamage=0, int maxDamage=10)
-  {
-    EntityAI attachment = FindAttachmentBySlotName(slotName);
-    if (attachment)
-    {
-      int damage = Math.RandomIntInclusive(minDamage, maxDamage);
-      attachment.AddHealth(-damage);
-    }
   }
 };
 

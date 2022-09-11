@@ -4,6 +4,25 @@ class SRP_BeerBottle extends Bottle_Base
   {
     return true;
   }
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		RemoveAction(ActionFillFuel);
+		RemoveAction(ActionFillCoolant);
+		RemoveAction(ActionFillGeneratorTank);
+		RemoveAction(ActionWaterGardenSlot);
+		RemoveAction(ActionWaterPlant);
+		RemoveAction(ActionExtinguishFireplaceByLiquid);
+		RemoveAction(ActionFillBottleBase);
+		// RemoveAction(ActionDrink);
+		// RemoveAction(ActionForceDrink);
+
+		// AddAction(ActionDrainLiquid);
+		// AddAction(ActionPourLiquid);
+		// AddAction(ActionEmptyBottleBase);
+		// AddAction(ActionWashHandsItem);
+	}
 };
 
 class SRP_BeerBottle_DoublTap extends SRP_BeerBottle

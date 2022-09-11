@@ -746,6 +746,17 @@ class CfgVehicles
 			};
 		};
 	};
+  class TireRepairKit_ElectronicsKit_Kit: TireRepairKit_ElectronicsKit_ColorBase
+	{
+		scope=2;
+		displayName="Starter Hacking Kit";
+		descriptionShort="The beginnings of a hacking kit used to harden radio jammers.";
+    color="kit";
+    hiddenSelections[]={"zbytek"};
+    attachments[]={"TruckBattery", "VestGrenadeA", "SRP_CopperWire1", "SRP_ElectricalWire1","SRP_ElectricalWire2"};
+    hiddenSelectionsTextures[]={"DZ\vehicles\parts\data\tire_repair_kit_co.paa"};
+	};
+
   class TireRepairKit_ElectronicsKit_Green: TireRepairKit_ElectronicsKit_ColorBase
 	{
 		scope=2;

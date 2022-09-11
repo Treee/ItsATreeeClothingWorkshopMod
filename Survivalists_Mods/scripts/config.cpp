@@ -1961,6 +1961,12 @@ class CfgSlots
 		displayName = "Electrical Wires";
 		ghostIcon="set:dayz_inventory image:metalwire";
 	};
+  class Slot_SRP_CopperWire1
+	{
+		name = "SRP_CopperWire1";
+		displayName = "Copper Wire";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
 };
 
 class CfgNonAIVehicles

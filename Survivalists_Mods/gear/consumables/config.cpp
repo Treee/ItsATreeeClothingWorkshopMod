@@ -458,6 +458,34 @@ class CfgVehicles
 			};
 		};
 	};
+  class MetalWire_Copper: MetalWire_ColorBase
+	{
+		scope=2;
+		displayName="Raw Copper Wire";
+    descriptionShort="Copper wire spun from molten copper ingots.";
+    color="copper";
+    canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		varQuantityDestroyOnMin=1;
+    inventorySlot[]=
+		{
+			"SRP_CopperWire1"
+		};
+    hiddenSelections[]=
+		{			
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_brown_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+		};
+	};
   class MetalWire_Black: MetalWire_ColorBase
 	{
 		scope=2;
@@ -489,7 +517,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\consumables\data\string_metalwire_red_co.paa",
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_brown_co.paa",
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -622,7 +650,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"dz\gear\crafting\data\string_metalwire_co.paa",
+			"Survivalists_Mods\gear\consumables\data\string_metalwire_grey_co.paa",			
 		};
 		hiddenSelectionsMaterials[]=
 		{
