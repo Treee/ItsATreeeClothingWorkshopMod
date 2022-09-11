@@ -197,12 +197,6 @@ class CfgSlots
 
 
   //====================Tool Kit Slots
-  class Slot_SRP_ToolKit_DeconstructKit
-	{
-		name="SRP_ToolKit_DeconstructKit";
-		displayName="Deconstruction Kit";
-		ghostIcon="set:dayz_inventory image:shoulderright";
-	};
   class Slot_SRP_ToolKit_Hammer
 	{
 		name="SRP_ToolKit_Hammer";

@@ -750,7 +750,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Basic Hacking Protocol";
-		descriptionShort="A basic anti hacking tool. Easily removed. Requires three wires to remove of at least 100 to 200 rating.";
+		descriptionShort="A basic anti hacking tool that carries an additional current between 1 and 10k Volts to an internal explosive. A variable rate tolerance cipher rotates between 1, and 2 percent. The circuitry runs below 20C and requires shielding of 15C.";
     color="green";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_green_co.paa"};
@@ -759,7 +759,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Advanced Hacking Protocol";
-		descriptionShort="An anti hacking tool. Moderately difficult to removed. Requires three wires to remove of at least 50 to 100 rating.";
+		descriptionShort="An anti hacking tool that carries an additional current between 1 and 100k Volts to an internal explosive. A variable rate tolerance cipher rotates between 1, and 2 percent. The circuitry runs below 20C and requires shielding of 15C.";
     color="yellow";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_yellow_co.paa"};
@@ -768,7 +768,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Expert Hacking Protocol";
-		descriptionShort="An expert anti hacking tool. Difficult to remove. Requires four wires to remove of at least 50 to 100 rating.";
+		descriptionShort="An expert anti hacking tool that carries an additional current between 100 and 100k Volts to an internal explosive. A variable rate tolerance cipher rotates between 1, and 2 percent. The circuitry runs between 25 and 50C.";
     color="red";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_red_co.paa"};
@@ -777,7 +777,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Master Hacking Protocol";
-		descriptionShort="A master anti hacking tool. Nearly impossible to remove. Requires five wires to remove of at least 75 or higher rating.";
+		descriptionShort="A master anti hacking tool that carries an additional current between 1k and 1M Volts to an internal explosive. A variable rate tolerance cipher rotates between 0.1, 0.25, and 0.5 percent. The circuitry runs between 15 and 50C.";
     color="blue";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_blue_co.paa"};
@@ -786,7 +786,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Supreme Hacking Protocol";
-		descriptionShort="A supreme anti hacking tool. Basically impossible to remove. Requires six wires to remove of at least 75 or higher rating.";
+		descriptionShort="A supreme anti hacking tool that carries an additional current between 10k and 1M Volts to an internal explosive. A variable rate tolerance cipher rotates between 0.1, 0.25, and 0.5 percent. The circuitry runs between 50 and 100C.";
     color="purple";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_purple_co.paa"};
@@ -797,7 +797,7 @@ class CfgVehicles
   class BatteryCharger_VoltMeter: Inventory_Base
 	{
 		scope=2;
-		displayName="Makleshit Voltmeter";
+		displayName="Makeshift Voltmeter";
 		descriptionShort="This makeshift volt meter is capable of reading current. Its accuracy is questionable.";
 		model="\dz\gear\camping\battery_charger.p3d";
 		attachments[]=
@@ -953,5 +953,75 @@ class CfgVehicles
 			};
 		};
 	};
-
+  class PowerTool_ElectricHandDrill: Inventory_Base
+	{
+		scope=2;
+		displayName="Electric Handdrill (Model To Change)";
+		descriptionShort="A motorized hand held drill that is used to dissasemble things quickly.";
+		model="\dz\gear\tools\Hammer.p3d";
+		rotationFlags=17;
+		weight=940;
+		itemSize[]={2,3};
+		fragility=0.0080000004;
+		openItemSpillRange[]={20,50};
+    inventorySlot[]={"SRP_ToolKit_Hammer"};
+    attachments[]={"CarBattery","TruckBattery"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\gear\tools\data\Hammer.rvmat"}},
+						{0.69999999,{"DZ\gear\tools\data\Hammer.rvmat"}},
+						{0.5,{"DZ\gear\tools\data\Hammer_damage.rvmat"}},
+						{0.30000001,{"DZ\gear\tools\data\Hammer_damage.rvmat"}},
+						{0.0,{"DZ\gear\tools\data\Hammer_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeHammer";
+				range=1.1;
+			};
+			class Heavy
+			{
+				ammo="MeleeHammer_Heavy";
+				range=1.1;
+			};
+			class Sprint
+			{
+				ammo="MeleeHammer_Heavy";
+				range=3.3;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class WoodHammer_SoundSet
+				{
+					soundSet="WoodHammer_SoundSet";
+					id=11161;
+				};
+			};
+		};
+	};
 };

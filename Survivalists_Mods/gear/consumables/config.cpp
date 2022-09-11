@@ -462,6 +462,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Black";
+    descriptionShort="Digit: 0 Multiplier: 1 Tolerance: N/A Temperature Coefficient: N/A";
     color="black";
     hiddenSelections[]=
 		{			
@@ -480,6 +481,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Brown";
+    descriptionShort="Digit: 1 Multiplier: 10 Tolerance: 1% Temperature Coefficient: 100C";
     color="brown";
     hiddenSelections[]=
 		{			
@@ -498,6 +500,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Red";
+    descriptionShort="Digit: 2 Multiplier: 100 Tolerance: 2% Temperature Coefficient: 50C";    
     color="red";
     hiddenSelections[]=
 		{			
@@ -516,6 +519,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Orange";
+    descriptionShort="Digit: 3 Multiplier: 1K Tolerance: N/A Temperature Coefficient: 15C";
     color="orange";
     hiddenSelections[]=
 		{			
@@ -534,6 +538,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Yellow";
+    descriptionShort="Digit: 4 Multiplier: 10K Tolerance: N/A Temperature Coefficient: 25C";
     color="yellow";
     hiddenSelections[]=
 		{			
@@ -552,6 +557,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Green";
+    descriptionShort="Digit: 5 Multiplier: 100K Tolerance: 0.5% Temperature Coefficient: N/A";
     color="green";
     hiddenSelections[]=
 		{			
@@ -570,8 +576,9 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Blue";
+    descriptionShort="Digit: 6 Multiplier: 1M Tolerance: 0.25% Temperature Coefficient: N/A";
     color="blue";
-				hiddenSelections[]=
+    hiddenSelections[]=
 		{			
 			"rolled"
 		};
@@ -588,6 +595,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Purple";
+    descriptionShort="Digit: 7 Multiplier: 10M Tolerance: 0.01% Temperature Coefficient: N/A";
     color="purple";
     hiddenSelections[]=
 		{			
@@ -606,6 +614,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - Grey";
+    descriptionShort="Digit: 8 Multiplier: N/A Tolerance: 0.05% Temperature Coefficient: N/A";
     color="grey";
     hiddenSelections[]=
 		{			
@@ -624,6 +633,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Electronics Wiring - White";
+    descriptionShort="Digit: 9 Multiplier: N/A Tolerance: N/A Temperature Coefficient: N/A";    
     color="white";
     hiddenSelections[]=
 		{			

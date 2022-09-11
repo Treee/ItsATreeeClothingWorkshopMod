@@ -25,12 +25,8 @@ class CfgVehicles
   class SRP_Deconstruction_Kit: SRP_KitBase //new
 	{
 		scope=2;
-		displayName="Carpentry Deconstruction Kit";
+		displayName="Carpentry Deconstruction Kit. (Tagged for Removal. Do not store anything inside this item.)";
 		descriptionShort="A kit with the appropriate tools to correctly disassemble a placed item.";
-    inventorySlot[]=
-    {
-      "SRP_ToolKit_DeconstructKit"
-    };
     attachments[]=
     {
       "SRP_ToolKit_Hammer",

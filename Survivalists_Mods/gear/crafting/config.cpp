@@ -1250,8 +1250,7 @@ class CfgVehicles
       "SRP_ToolKit_Caliper",
       "SRP_ToolKit_Handdrill",
       "SRP_ToolKit_Crowbar",
-      "SRP_ToolKit_Wrench",
-      "SRP_ToolKit_DeconstructKit"
+      "SRP_ToolKit_Wrench"
 		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
@@ -1315,8 +1314,7 @@ class CfgVehicles
           "SRP_ToolKit_Caliper",
           "SRP_ToolKit_Handdrill",
           "SRP_ToolKit_Crowbar",
-          "SRP_ToolKit_Wrench",
-          "SRP_ToolKit_DeconstructKit"
+          "SRP_ToolKit_Wrench"
 				};
 				icon="set:dayz_inventory image:cat_vehicle_engine";
 			};	
@@ -1490,8 +1488,7 @@ class CfgVehicles
       "SRP_ToolKit_Caliper",
       "SRP_ToolKit_Handdrill",
       "SRP_ToolKit_Crowbar",
-      "SRP_ToolKit_Wrench",
-      "SRP_ToolKit_DeconstructKit"
+      "SRP_ToolKit_Wrench"
 		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
@@ -1555,8 +1552,7 @@ class CfgVehicles
           "SRP_ToolKit_Caliper",
           "SRP_ToolKit_Handdrill",
           "SRP_ToolKit_Crowbar",
-          "SRP_ToolKit_Wrench",
-          "SRP_ToolKit_DeconstructKit"
+          "SRP_ToolKit_Wrench"
 				};
 				icon="set:dayz_inventory image:cat_vehicle_engine";
 			};	

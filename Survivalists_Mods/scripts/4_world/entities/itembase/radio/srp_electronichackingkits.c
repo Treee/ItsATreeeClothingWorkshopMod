@@ -47,67 +47,129 @@ modded class SRP_ElectronicsJammer_Base
     return -1;
   }
 
+  ItemBase GetPriorityHackingKit()
+  {
+    ItemBase hackingKit;
+    TireRepairKit_ElectronicsKit_ColorBase castedObj;
+    hackingKit = GetItemOnSlot("SRP_HackingKit4");
+    if (hackingKit)
+    {
+      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
+      return castedObj;
+    }
+    hackingKit = GetItemOnSlot("SRP_HackingKit3");
+    if (hackingKit)
+    {
+      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
+      return castedObj;
+    }
 
-  // bool CanRemoveHackingKit()
-  // {
-  //   string slotName = "SRP_HackingKit";
-  //   ItemBase hackingKit;
-  //   ItemBase wire;
-  //   bool canRemove = true;
-  //   for(int i = 4; i > 0;  i--)
-  //   {
-  //     hackingKit = GetItemOnSlot(slotName+i);
-  //     if (hackingKit)
-  //     {
-  //       TStringArray wireColors = hackingKit.GetSlotWireCombinations();
-  //       TIntArray wireQuantities = hackingKit.GetSlotWireQuantities();
-  //       int maxCount = hackingKit.GetRequiredWireCount();
-  //       for (int w = 0; w<maxCount; w++)
-  //       {
-  //         wire = GetItemOnSlot("SRP_ElectricalWire"+w);
-  //         if (wire)
-  //         {
-  //           canRemove &= hackingKit.GetSlotWireCombinations(w).Contains(wire.GetColor());
-  //         }
-  //       }
-  //     }
-  //   }
-  //   return canRemove;
+    hackingKit = GetItemOnSlot("SRP_HackingKit2");
+    if (hackingKit)
+    {
+      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
+      return castedObj;
+    }
 
-  //   if (hackingKitSlot == "")
-  //     return false;
-    
-  //   hackingkit = GetItemOnSlot(hackingKitSlot);
-  //   Print("checking slot: " + "SRP_HackingKit"+i);
-  //   TireRepairKit_ElectronicsKit_ColorBase kit = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingkit);
-  //   if (kit)
-  //   {
-  //     bool canDiffuse = false;
-  //     TStringArray wireColors = GetSlotWireCombinations();
-  //     TIntArray wireQuantities = GetSlotWireQuantities();
-  //     return kit.CanDiffuse();
-  //   }
-  //   return false;
-  // }
-  // void RemoveHackingKit()
-  // {
-  //   for(int i = 4; i > 0;  i--)
-  //   {
-  //     if (GetItemOnSlot("SRP_HackingKit"+i))
-  //     {
-  //     }
-  //   }
-  //   if (hackingKitSlot == "")
-  //     return;
+    hackingKit = GetItemOnSlot("SRP_HackingKit1");
+    if (hackingKit)
+    {
+      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
+      return castedObj;
+    }
+    return null;
+  }
 
-  //   hackingkit = GetItemOnSlot(hackingKitSlot);
-  //   Print("checking slot: " + "SRP_HackingKit"+i);
-  //   TireRepairKit_ElectronicsKit_ColorBase kit = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingkit);
-  //   if (kit && kit.CanDiffuse())
-  //   {
-  //     this.Delete();
-  //   }    
-  // }
+  void RemovePriorityHackingKit()
+  {    
+    ItemBase wire1 = GetItemOnSlot("SRP_ElectricalWire1");
+    if (wire1)
+    {
+      wire1.Delete();
+    }
+    ItemBase wire2 = GetItemOnSlot("SRP_ElectricalWire2");
+    if (wire2)
+    {
+      wire2.Delete();
+    }
+    ItemBase wire3 = GetItemOnSlot("SRP_ElectricalWire3");
+    if (wire3)
+    {
+      wire3.Delete();
+    }
+    ItemBase wire4 = GetItemOnSlot("SRP_ElectricalWire4");
+    if (wire4)
+    {
+      wire4.Delete();
+    }
+    ItemBase wire5 = GetItemOnSlot("SRP_ElectricalWire5");
+    if (wire5)
+    {
+      wire5.Delete();
+    }
+    ItemBase wire6 = GetItemOnSlot("SRP_ElectricalWire6");
+    if (wire6)
+    {
+      wire6.Delete();
+    }
+
+    ItemBase hackingKit;
+    hackingKit = GetItemOnSlot("SRP_HackingKit4");
+    if (hackingKit)
+    {
+      hackingKit.Delete();
+      return;
+    }
+    hackingKit = GetItemOnSlot("SRP_HackingKit3");
+    if (hackingKit)
+    {
+      hackingKit.Delete();
+      return;
+    }
+
+    hackingKit = GetItemOnSlot("SRP_HackingKit2");
+    if (hackingKit)
+    {
+      hackingKit.Delete();
+      return;
+    }
+
+    hackingKit = GetItemOnSlot("SRP_HackingKit1");
+    if (hackingKit)
+    {
+      hackingKit.Delete();
+      return;
+    }
+  }
+
+  bool IsSolved()
+  {
+    bool isSolved = true;
+    ItemBase wire1 = GetItemOnSlot("SRP_ElectricalWire1");        
+    ItemBase wire2 = GetItemOnSlot("SRP_ElectricalWire2");        
+    ItemBase wire3 = GetItemOnSlot("SRP_ElectricalWire3");        
+    ItemBase wireMultiplier = GetItemOnSlot("SRP_ElectricalWire4");        
+    ItemBase wireTempCoefficient = GetItemOnSlot("SRP_ElectricalWire5");        
+    ItemBase wireTolerance = GetItemOnSlot("SRP_ElectricalWire6");   
+    ItemBase hackingkitIB = GetPriorityHackingKit();     
+    if (wire1 && wire2 && wire3 && wireMultiplier && wireTempCoefficient && wireTolerance && hackingkitIB)
+    {
+      TireRepairKit_ElectronicsKit_ColorBase hackingKit = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingkitIB);
+      string number = string.Format("%1%2%3", wire1.GetResistorDigit(), wire2.GetResistorDigit(), wire3.GetResistorDigit());      
+      int wireResistance = number.ToInt() * wireMultiplier.GetResistorMultiplier(); // 10KOhms
+      
+      int toleranceDelta = hackingKit.GetCurrentRequirement() * hackingKit.GetErrorTolerance();
+      // we are within range of tolerance
+      isSolved &= (wireResistance < (hackingKit.GetCurrentRequirement() + toleranceDelta) && wireResistance > (hackingKit.GetCurrentRequirement() - toleranceDelta));
+      isSolved &= wireTempCoefficient >= hackingKit.GetTemperatureCoefficientRequirement();
+      isSolved &= wireTolerance <= hackingKit.GetErrorTolerance();
+    }
+    else
+    {
+      isSolved &= false;
+    }
+    return isSolved;
+  }
 };
 
 //https://learn.sparkfun.com/tutorials/resistors/all
@@ -171,7 +233,6 @@ class TireRepairKit_ElectronicsKit_ColorBase extends ElectronicRepairKit
   {
     return 0;
   }
-
   int GetMeterRead()
   {
     int toleranceDelta = GetCurrentRequirement() * GetErrorTolerance();
@@ -189,11 +250,15 @@ class TireRepairKit_ElectronicsKit_Green extends TireRepairKit_ElectronicsKit_Co
 {
   override TFloatArray GetErrorTolerances()
   {
-    return {0.01,0.02,0.005};
+    return {0.01,0.02};
+  }
+  override TIntArray GetTemperatureCoefficients()
+  {
+    return {15};
   }
   override int GetNumberOfDigits()
   {
-    return 2;
+    return 3;
   }
   override int GetMaxPower()
   {
@@ -208,11 +273,15 @@ class TireRepairKit_ElectronicsKit_Yellow extends TireRepairKit_ElectronicsKit_C
 {
   override TFloatArray GetErrorTolerances()
   {
-    return {0.01,0.02,0.005};
+    return {0.01,0.02};
+  }
+  override TIntArray GetTemperatureCoefficients()
+  {
+    return {15};
   }
   override int GetNumberOfDigits()
   {
-    return 2;
+    return 3;
   }
   override int GetMaxPower()
   {
@@ -227,7 +296,7 @@ class TireRepairKit_ElectronicsKit_Red extends TireRepairKit_ElectronicsKit_Colo
 {
   override TFloatArray GetErrorTolerances()
   {
-    return {0.01,0.02,0.005};
+    return {0.01,0.02};
   }
   override TIntArray GetTemperatureCoefficients()
   {
@@ -239,7 +308,7 @@ class TireRepairKit_ElectronicsKit_Red extends TireRepairKit_ElectronicsKit_Colo
   }
   override int GetMaxPower()
   {
-    return 6;
+    return 5;
   }
   override int GetMinPower()
   {
@@ -250,7 +319,7 @@ class TireRepairKit_ElectronicsKit_Blue extends TireRepairKit_ElectronicsKit_Col
 {
   override TFloatArray GetErrorTolerances()
   {
-    return {0.005,0.0025,0.0001};
+    return {0.005,0.0025,0.001};
   }
   override TIntArray GetTemperatureCoefficients()
   {
@@ -273,7 +342,7 @@ class TireRepairKit_ElectronicsKit_Purple extends TireRepairKit_ElectronicsKit_C
 {
   override TFloatArray GetErrorTolerances()
   {
-    return {0.005,0.0025,0.0001};
+    return {0.005,0.0025,0.001};
   }
   override TIntArray GetTemperatureCoefficients()
   {
