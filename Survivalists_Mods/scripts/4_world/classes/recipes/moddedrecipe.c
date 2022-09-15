@@ -14,26 +14,6 @@ modded class PluginRecipesManager
     RegisterRecipe(new Deconstruct_PlankPile);
     RegisterRecipe(new Deconstruct_LogPile);
 
-    RegisterRecipe(new Deconstruct_DecorativeLight_Long);
-    RegisterRecipe(new Deconstruct_DecorativeLight_VerticalLong);
-    RegisterRecipe(new Deconstruct_DecorativeLight_Flat);
-    RegisterRecipe(new Deconstruct_DecorativeLight_VerticalFlat);
-    RegisterRecipe(new Deconstruct_DecorativeLight_LongFancy);
-    RegisterRecipe(new Deconstruct_DecorativeLight_VerticalLongFancy);
-    RegisterRecipe(new Deconstruct_DecorativeLight_Corner);
-    RegisterRecipe(new Deconstruct_DecorativeLight_HorizontalCorner);
-    
-    RegisterRecipe(new Deconstruct_IntermediaryObjectKit);
-    RegisterRecipe(new Deconstruct_IntermediaryObjectKit_BuildingFrame);
-    RegisterRecipe(new Deconstruct_IntermediaryObjectKit_StreetSign);     
-    RegisterRecipe(new Deconstruct_IntermediaryWoodenShelfKit);     
-    RegisterRecipe(new Deconstruct_IntermediaryMetalShelfKit);
-    RegisterRecipe(new Deconstruct_IntermediaryBarricadeKit);
-    RegisterRecipe(new Deconstruct_IntermediaryStreetLightKit);
-    RegisterRecipe(new Deconstruct_IntermediaryWoodenFurnitureKit);
-    RegisterRecipe(new Deconstruct_IntermediaryObjectKit_Barrels);
-    RegisterRecipe(new Deconstruct_IntermediaryObjectKit_CarvedLetters);
-   
     RegisterRecipe(new SawWoodenLog_Irradiated);
     RegisterRecipe(new SplitLongWoodenStick_Irradiated);
     RegisterRecipe(new SplitFirewood_Irradiated);

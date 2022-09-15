@@ -34,7 +34,7 @@ class CfgVehicles
 
   class Bear_ColorBase: Container_Base
 	{
-    inventorySlot[]=
+    inventorySlot[]+=
 		{
 			"SRP_Teddy1",
 			"SRP_Teddy2",
@@ -51,13 +51,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Fridge Kit";
-		descriptionShort="A Fridge Kit";
+		descriptionShort="A Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
   class SRP_Fridge: Container_Base // BP_FridgeBig
 	{
 		scope=2;
 		displayName="Fridge";
-		descriptionShort="A fridge";
+		descriptionShort="A fridge. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 		model="Survivalists_Mods\gear\containers\refrigerator.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
@@ -76,13 +76,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Big Fridge Kit";
-		descriptionShort="A Big Fridge Kit";
+		descriptionShort="A Big Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
   class SRP_FridgeLarge: Container_Base // new
 	{
 		scope=2;
 		displayName="Big Fridge";
-		descriptionShort="A really big fridge";
+		descriptionShort="A really big fridge. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 		model="Survivalists_Mods\gear\containers\refrigeratorlarge.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
@@ -101,13 +101,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Retro Fridge Kit";
-		descriptionShort="A Retro Fridge Kit";
+		descriptionShort="A Retro Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
   class SRP_FridgeRetro: Container_Base // new
 	{
 		scope=2;
 		displayName="Retro Fridge";
-		descriptionShort="A really retro fridge";
+		descriptionShort="A really retro fridge. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 		model="Survivalists_Mods\gear\containers\refrigeratorretro.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
@@ -126,13 +126,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Minsk Fridge Kit";
-		descriptionShort="A Minsk Fridge Kit";
+		descriptionShort="A Minsk Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
   class SRP_FridgeMinsk: Container_Base // new
 	{
 		scope=2;
 		displayName="Minsk Fridge";
-		descriptionShort="A Minsk fridge";
+		descriptionShort="A Minsk fridge. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 		model="Survivalists_Mods\gear\containers\refrigeratorminsk.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
@@ -173,7 +173,7 @@ class CfgVehicles
 		displayName="Simple Wooden Shelf Kit";
 		descriptionShort="A Simple Wooden Shelf Kit";
 	};
-  class SRP_WoodenShelfSimple: Container_Base //BP_Shelf
+  class SRP_WoodenShelfSimple: Container_Base
 	{
 		scope=2;
 		displayName="Simple Wooden Shelf";
@@ -545,13 +545,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Extra Large Metal Shelf Kit - Ground";
-		descriptionShort="A Extra Large Metal Shelf Kit";
+		descriptionShort="A Extra Large Metal Shelf Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
   class SRP_MetalShelfGroundXL: Container_Base //new
 	{
 		scope=2;
 		displayName="Large Metal Shelf - Ground";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A Convenient shelf where you can put your junk. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 		model="Survivalists_Mods\gear\containers\groundshelfmetalxlarge.p3d";
 		attachments[]=
 		{
@@ -600,13 +600,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Cubed Book Case Kit";
-		descriptionShort="A cubed book case Kit";
+		descriptionShort="A cubed book case kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
   class SRP_BookCaseCube: Container_Base //new
 	{
 		scope=2;
 		displayName="Book Case - Cubed";
-		descriptionShort="An easy to build cube book case.";
+		descriptionShort="An easy to build cube book case. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 		model="Survivalists_Mods\gear\containers\srp_bookcasecube.p3d";
 		attachments[]=
 		{
@@ -701,7 +701,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Garbage Bin - Base";
-		descriptionShort="A large garbage bin to throw things away. Someone seems to clean it every 10 minutes.";
+		descriptionShort="A large garbage bin to throw things away. Espen technologies breakthoughs allows this container to be clean every 10 minutes.";
 		model="Survivalists_Mods\gear\containers\srp_garbagebin.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -3655,7 +3655,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100000;
+					hitpoints=500;
+          healthLevels[] = {{1,""},{0.7,""},{0.5,""},{0.3,""},{0.1,""}};
 				};
 			};
 		};
@@ -3787,7 +3788,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100000;
+					hitpoints=500;
+          healthLevels[] = {{1,""},{0.7,""},{0.5,""},{0.3,""},{0.1,""}};
 				};
 			};
 		};
@@ -3949,7 +3951,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100000;
+					hitpoints=500;
+          healthLevels[] = {{1,""},{0.7,""},{0.5,""},{0.3,""},{0.1,""}};
 				};
 			};
 		};
@@ -4089,7 +4092,8 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100000;
+					hitpoints=500;
+          healthLevels[] = {{1,""},{0.7,""},{0.5,""},{0.3,""},{0.1,""}};
 				};
 			};
 		};
@@ -4332,7 +4336,7 @@ class CfgVehicles
   class SRP_LockerMilitary_Green_Kit: SRP_KitBase
   {
     scope=2;
-    displayName="Locker Kit - Military - GReen";
+    displayName="Locker Kit - Military - Green";
     descriptionShort="A kit that holds everything needed for a locker";
   };
   class SRP_LockerMilitary_Black_Kit: SRP_KitBase

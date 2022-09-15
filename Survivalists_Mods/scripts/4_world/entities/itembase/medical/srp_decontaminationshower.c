@@ -50,6 +50,10 @@ class SRP_DecontaminationShower extends DeployableContainer_Base
     m_IsPlayingSound = false;
     SetSynchDirty();
   }
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
 
 class SRP_DecontaminationShower_Red extends SRP_DecontaminationShower{};

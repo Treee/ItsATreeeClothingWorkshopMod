@@ -761,6 +761,10 @@ class CfgVehicles
   {
     scope=2;
     color="green";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Retextures\gear\containers\data\srp_locker_military_green_co.paa"
@@ -770,6 +774,10 @@ class CfgVehicles
   {
     scope=2;
     color="black";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Retextures\gear\containers\data\srp_locker_military_black_co.paa"
@@ -779,6 +787,10 @@ class CfgVehicles
   {
     scope=2;
     color="gray";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Retextures\gear\containers\data\srp_locker_military_gray_co.paa"
@@ -788,6 +800,10 @@ class CfgVehicles
   {
     scope=2;
     color="tan";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Retextures\gear\containers\data\srp_locker_military_tan_co.paa"

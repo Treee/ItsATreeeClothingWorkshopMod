@@ -54,14 +54,42 @@ class SRP_PotteryPot_ColorBase extends SRP_DeployableContainer_Base{};
 
 class SRP_DeskNamePlate extends SRP_DeployableContainer_Base{};
 class SRP_WoodenBox_Cask extends SRP_DeployableContainer_Base{};
-class SRP_BedsideTable extends SRP_DeployableContainer_Base{};
+class SRP_BedsideTable extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+    override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
 class SRP_MedicalBed_Frame extends SRP_DeployableContainer_Base{};
 class SRP_MedicalBed_Mattress extends SRP_DeployableContainer_Base{};
 class SRP_MedicalBed_Wood extends SRP_DeployableContainer_Base{};
 class SRP_BloodPressureMonitor extends SRP_DeployableContainer_Base{};
-class SRP_LatheWorkbench extends SRP_DeployableContainer_Base{};
-class SRP_WornWorkbench extends SRP_DeployableContainer_Base{};
-class SRP_WornWorkbench_Metal extends SRP_DeployableContainer_Base{};
+class SRP_LatheWorkbench extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class SRP_WornWorkbench extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class SRP_WornWorkbench_Metal extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
 
 class SRP_Carpet extends SRP_DeployableContainer_Base
 {
@@ -69,6 +97,11 @@ class SRP_Carpet extends SRP_DeployableContainer_Base
   {
     super.EEItemAttached(item, slot_name);
     UpdateShoulderProxyVisibility(item, slot_name);
+  }
+
+  override bool CanBeDeconstructed()
+  {
+    return true;
   }
 };
 
@@ -78,6 +111,10 @@ class SRP_CarpetRug extends SRP_DeployableContainer_Base
   {
     super.EEItemAttached(item, slot_name);
     UpdateShoulderProxyVisibility(item, slot_name);
+  }
+  override bool CanBeDeconstructed()
+  {
+    return true;
   }
 };
 
@@ -188,23 +225,73 @@ class SRP_LabEquipment_Tuner extends SRP_DeployableContainer_Base{};
 class SRP_LabEquipment_Oscilliscope extends SRP_DeployableContainer_Base{};
 class SRP_LabEquipment_GeigerCounter extends SRP_DeployableContainer_Base{};
 
-class SRP_TetrisShelfLDown extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfLUp extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfLLeft extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfLRight extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfIVertical extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfIHorizontal extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfTUp extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfTDown extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfTVertical extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfSHorizontal extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfSVertical extends SRP_DeployableContainer_Base{};
-class SRP_TetrisShelfBox extends SRP_DeployableContainer_Base{};
+class SRP_TetrisShelf_ColorBase extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+  override string GetCraftingKitName()
+  {
+    return "SRP_TetrisShelfKit_Kit";
+  }
+};
+class SRP_TetrisShelfLDown extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfLLeft extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfLRight extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfIVertical extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfIHorizontal extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfTUp extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfTDown extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfTVertical extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfSHorizontal extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfSVertical extends SRP_TetrisShelf_ColorBase{};
+class SRP_TetrisShelfBox extends SRP_TetrisShelf_ColorBase{};
 
-class SRP_Furniture_LogStump extends SRP_DeployableContainer_Base{};
-class SRP_Furniture_LogBenchSmall extends SRP_DeployableContainer_Base{};
-class SRP_Furniture_WoodBenchSmall extends SRP_DeployableContainer_Base{};
-class SRP_Furniture_WoodBenchSlim extends SRP_DeployableContainer_Base{};
+class SRP_Furniture_LogStump extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
+class SRP_Furniture_LogBenchSmall extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
+class SRP_Furniture_WoodBenchSmall extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
+class SRP_Furniture_WoodBenchSlim extends SRP_DeployableContainer_Base
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
 class SRP_Furniture_PileOfPlanks extends SRP_DeployableContainer_Base{};
 
 class SRP_GarbageBin_ColorBase extends SRP_DeployableContainer_Base
@@ -325,6 +412,11 @@ class SRP_Container_Base extends DeployableContainer_Base
 			SetSimpleHiddenSelectionState(SIMPLE_SELECTION_SHOULDER_MELEE,!boo);
 		}
 	}
+
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 }
 
 class SRP_SewingTable extends SRP_Container_Base{};
@@ -338,9 +430,13 @@ class SRP_Cardboardbox extends SRP_Container_Base{};
 class SRP_StonePile_Small extends SRP_Container_Base{};
 class SRP_StonePile_Large extends SRP_Container_Base{};
 
-class SRP_BookCaseCube extends SRP_Container_Base{};
-
-class SRP_BuildingComponentFrame_ColorBase extends SRP_Container_Base{};
+class SRP_BuildingComponentFrame_ColorBase extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_BuildingComponentFrame_Kit";
+  }
+};
 class SRP_BuildingComponentFrame_WornRamp extends SRP_BuildingComponentFrame_ColorBase{};
 class SRP_BuildingComponentFrame_WornLPlatform extends SRP_BuildingComponentFrame_ColorBase{};
 class SRP_BuildingComponentFrame_WornUPlatform extends SRP_BuildingComponentFrame_ColorBase{};
@@ -359,14 +455,32 @@ class SRP_BuildingComponentFrame_FineSinglePlatform extends SRP_BuildingComponen
 class SRP_BuildingComponentFrame_FineDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
 class SRP_BuildingComponentFrame_FineLongDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
 
-class SRP_MedicalBedSmall_Wood extends SRP_Container_Base{};
-class SRP_WoodenBench extends SRP_Container_Base{};
+class SRP_MedicalBedSmall_Wood extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
+class SRP_WoodenBench extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
 
 class SRP_SleepingBag_ColorBase extends SRP_Container_Base{};
 class SRP_SleepingBag_Basic extends SRP_SleepingBag_ColorBase{};
 
-class SRP_MetalBarrel_Colorbase extends SRP_Container_Base{};
-class SRP_MetalBarrel_Old extends SRP_Container_Base{};
+class SRP_MetalBarrel_Colorbase extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_MetalBarrelKit_Kit";
+  }
+};
+class SRP_MetalBarrel_Old extends SRP_MetalBarrel_Colorbase{};
 class SRP_MetalBarrel_Blue extends SRP_MetalBarrel_Colorbase{};
 class SRP_MetalBarrel_Red extends SRP_MetalBarrel_Colorbase{};
 class SRP_MetalBarrel_Yellow extends SRP_MetalBarrel_Colorbase{};
@@ -439,17 +553,96 @@ class SRP_MetalBox extends SRP_Container_Base{};
 class SRP_Fridge extends SRP_Container_Base{};
 class SRP_FridgeLarge extends SRP_Container_Base{};
 class SRP_FridgeRetro extends SRP_Container_Base{};
-class SRP_GunShelfWall extends SRP_Container_Base{};
-class SRP_GunShelfGround extends SRP_Container_Base{};
-class SRP_WoodenShelfSimple extends SRP_Container_Base{};
-class SRP_WoodenShelfSimpleGround extends SRP_Container_Base{};
-class SRP_WoodenShelfGround extends SRP_Container_Base{};
-class SRP_WoodenShelfGroundTall extends SRP_Container_Base{};
-class SRP_MetalShelfSimpleGround extends SRP_Container_Base{};
-class SRP_MetalShelfGround extends SRP_Container_Base{};
-class SRP_MetalShelfGroundLarge extends SRP_Container_Base{};
-class SRP_MetalShelfGroundXL extends SRP_Container_Base{};
-class SRP_Furniture_WoodenTable extends SRP_Container_Base{};
+
+//======================================================== Wooden shelfs
+class SRP_WoodenShelfSimple extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenShelfKit_Kit";
+  }
+};
+class SRP_WoodenShelfSimpleGround extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenShelfKit_Kit";
+  }
+};
+class SRP_WoodenShelfGround extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenShelfKit_Kit";
+  }
+};
+class SRP_WoodenShelfGroundTall extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenShelfKit_Kit";
+  }
+};
+class SRP_GunShelfWall extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenShelfKit_Kit";
+  }
+};
+class SRP_GunShelfGround extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenShelfKit_Kit";
+  }
+};
+class SRP_BookCaseCube extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenShelfKit_Kit";
+  }
+};
+
+//======================================================== Metal Shelfs
+class SRP_MetalShelfSimpleGround extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_MetalShelfKit_Kit";
+  }
+};
+class SRP_MetalShelfGround extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_MetalShelfKit_Kit";
+  }
+};
+class SRP_MetalShelfGroundLarge extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_MetalShelfKit_Kit";
+  }
+};
+class SRP_MetalShelfGroundXL extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_MetalShelfKit_Kit";
+  }
+};
+
+//======================================================= Wooden Furniture Kits
+class SRP_Furniture_WoodenTable extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
 class SRP_GChair extends SRP_Container_Base{};
 class SRP_GChairHigh extends SRP_Container_Base{};
 class SRP_GOutdoorTable extends SRP_Container_Base{};
@@ -457,11 +650,43 @@ class SRP_GOutdoorTableUmbrella extends SRP_Container_Base{};
 class SRP_Umbrella extends SRP_Container_Base{};
 class SRP_ShootingTarget extends SRP_Container_Base{};
 class SRP_ShootingTargets extends SRP_Container_Base{};
-class SRP_StreetLightLarge extends SRP_Container_Base{};
-class SRP_StreetLightMedium extends SRP_Container_Base{};
-class SRP_StreetLightLarge_Metal extends SRP_Container_Base{};
-class SRP_StreetLightMedium_Wood extends SRP_Container_Base{};
-class SRP_StreetLightSlim extends SRP_Container_Base{};
+
+class SRP_StreetLightLarge extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_StreetLightKit_Kit";
+  }
+};
+class SRP_StreetLightMedium extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_StreetLightKit_Kit";
+  }
+};
+class SRP_StreetLightLarge_Metal extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_StreetLightKit_Kit";
+  }
+};
+class SRP_StreetLightMedium_Wood extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_StreetLightKit_Kit";
+  }
+};
+class SRP_StreetLightSlim extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_StreetLightKit_Kit";
+  }
+};
+
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};
 class SRP_MilitaryCaseMedium extends SRP_Container_Base{};
@@ -479,6 +704,10 @@ class SRP_StreetSign_Base extends SRP_Container_Base
 	{
 		return true;
 	}
+  override string GetCraftingKitName()
+  {
+    return "SRP_StreetSign_Kit";
+  }
 };
 class SRP_StreetSign_Caution extends SRP_StreetSign_Base{};
 class SRP_StreetSign_CautionBiohazard extends SRP_StreetSign_Base{};
@@ -502,6 +731,10 @@ class SRP_Barricade_Wood extends SRP_Container_Base
 	{
 		return true;
 	}
+  override string GetCraftingKitName()
+  {
+    return "SRP_BarricadeKit_Kit";
+  }
 };
 class SRP_BarricadeWithWindow_Wood extends SRP_Container_Base
 {
@@ -509,6 +742,10 @@ class SRP_BarricadeWithWindow_Wood extends SRP_Container_Base
 	{
 		return true;
 	}
+  override string GetCraftingKitName()
+  {
+    return "SRP_BarricadeKit_Kit";
+  }
 };
 class SRP_WindowBarricade_Wood extends SRP_Container_Base
 {
@@ -516,6 +753,10 @@ class SRP_WindowBarricade_Wood extends SRP_Container_Base
 	{
 		return true;
 	}
+  override string GetCraftingKitName()
+  {
+    return "SRP_BarricadeKit_Kit";
+  }
 };
 class SRP_WindowBarricadeTall_Wood extends SRP_Container_Base
 {
@@ -523,6 +764,10 @@ class SRP_WindowBarricadeTall_Wood extends SRP_Container_Base
 	{
 		return true;
 	}
+  override string GetCraftingKitName()
+  {
+    return "SRP_BarricadeKit_Kit";
+  }
 };
 class SRP_SpikeBarricade_Wood extends SRP_Container_Base
 {
@@ -530,6 +775,10 @@ class SRP_SpikeBarricade_Wood extends SRP_Container_Base
 	{
 		return true;
 	}
+  override string GetCraftingKitName()
+  {
+    return "SRP_BarricadeKit_Kit";
+  }
 };
 class SRP_BarricadeMetal extends SRP_Container_Base
 {
@@ -537,6 +786,10 @@ class SRP_BarricadeMetal extends SRP_Container_Base
 	{
 		return true;
 	}
+  override string GetCraftingKitName()
+  {
+    return "SRP_BarricadeKit_Kit";
+  }
 };
 class SRP_Furniture_WitchTable extends SRP_Container_Base
 {
@@ -546,11 +799,35 @@ class SRP_Furniture_WitchTable extends SRP_Container_Base
 	}
 };
 
-class SRP_Furniture_Barrel extends SRP_Container_Base{};
-class SRP_Furniture_BarrelTable extends SRP_Container_Base{};
+class SRP_Furniture_Barrel extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
+class SRP_Furniture_BarrelTable extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
 class SRP_Furniture_Sofa extends SRP_Container_Base{};
-class SRP_Furniture_Sofa_Modern extends SRP_Container_Base{};
-class SRP_Furniture_Sofa_Old extends SRP_Container_Base{};
+class SRP_Furniture_Sofa_Modern extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
+class SRP_Furniture_Sofa_Old extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
 class SRP_Furniture_BarCounter extends SRP_Container_Base{};
 class SRP_Furniture_OldWoodenChair extends SRP_Container_Base{};
 class SRP_Furniture_WoodenChair extends SRP_Container_Base{};
@@ -592,7 +869,13 @@ class SRP_Gravestone_18 extends SRP_Container_Base{};
 class SRP_Gravestone_19 extends SRP_Container_Base{};
 class SRP_Gravestone_19Open extends SRP_Container_Base{};
 
-class SRP_ToolRack_Hammers extends SRP_Container_Base{};
+class SRP_ToolRack_Hammers extends SRP_Container_Base
+{
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenFurnitureKit_Kit";
+  }
+};
 
 class SRP_ArmorStandBasic extends SRP_Container_Base
 {
@@ -644,6 +927,11 @@ class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
     RemoveAction(ActionSwapItemToHands);
 		RemoveAction(ActionTakeItemToHands);
 	}
+
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
 
 class SRP_Openable_Container extends Barrel_ColorBase
@@ -696,6 +984,11 @@ class SRP_Openable_Container extends Barrel_ColorBase
     super.Close();
 		GetInventory().LockInventory(HIDE_INV_FROM_SCRIPT);
 	}
+
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
 
 class SRP_BedsideTableMetal extends SRP_Openable_Container{};

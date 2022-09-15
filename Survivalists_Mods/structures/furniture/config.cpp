@@ -700,6 +700,12 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_LogStump_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Log Stump Kit";
+		descriptionShort="A placeable log stump kit!";
+	};
   class SRP_Furniture_LogStump: Container_Base  // new
 	{
 		scope=2;
@@ -747,6 +753,12 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_LogBenchSmall_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Log Bench Kit - Small";
+		descriptionShort="A placeable log bench kit!";
+	};
   class SRP_Furniture_LogBenchSmall: Container_Base  // new
 	{
 		scope=2;
@@ -794,6 +806,12 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_WoodBenchSmall_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Wood Bench Kit - Small";
+		descriptionShort="A placeable weed bench kit!";
+	};
   class SRP_Furniture_WoodBenchSmall: Container_Base  // new
 	{
 		scope=2;
@@ -841,6 +859,12 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_WoodBenchSlim_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Wood Bench Kit - Slim";
+		descriptionShort="A placeable wood bench kit!";
+	};
   class SRP_Furniture_WoodBenchSlim: Container_Base  // new
 	{
 		scope=2;

@@ -341,7 +341,11 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 	// 	float temperature = GetTemperature();
 	// 	temperature = temperature + amount;
 	// 	SetTemperature( temperature );
-	// }	
+	// }
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
 
 class SRP_AdvancedStoneForgeWorkbench extends SRP_StoneForgeWorkbench{};

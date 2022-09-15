@@ -521,6 +521,126 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_TurkeyBeanie_ColorBase: BeanieHat_ColorBase  // new
+	{
+		scope=0;
+    displayName="Turkey Beanie";
+    descriptionShort="Espen Industries. A well knit cap with turkey legs.";
+    model="Survivalists_Mods\characters\headgear\turkeybeanie_g.p3d";
+    rotationFlags="64";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_turkey_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"
+		};
+    rootClassName="SRP_TurkeyBeanie";
+    colorVariants[]=
+    {
+      "Turkey",
+      "TurkeyPink",
+      "SkylarPink",
+      "Green",      
+      "Grey",      
+      "Purple",      
+      "Teal",      
+      "Yellow",      
+      "Light",      
+      "Dark",      
+      "Snowflake",      
+    };
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\turkeybeanie_m.p3d";
+			female="Survivalists_Mods\characters\headgear\turkeybeanie_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  // remove this eventually
+  class SRP_BeanieHat_Turkey: BeanieHat_ColorBase  // new
+	{
+		scope=2;
+		color="Deprecated Make a ticket";
+    displayName="Deprecated make a ticket. Deprecated make a ticket";
+    descriptionShort="Espen Industries. A well knit cap with turkey legs.";
+    model="Survivalists_Mods\characters\headgear\turkeybeanie_g.p3d";
+    rotationFlags="64";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\srp_turkey_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"
+		};
+    rootClassName="SRP_TurkeyBeanie";
+    colorVariants[]=
+    {
+      "Turkey",
+      "TurkeyPink",
+      "SkylarPink",
+      "Green",      
+      "Grey",      
+      "Purple",      
+      "Teal",      
+      "Yellow",      
+      "Light",      
+      "Dark",      
+      "Snowflake",      
+    };
+    class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\headgear\turkeybeanie_m.p3d";
+			female="Survivalists_Mods\characters\headgear\turkeybeanie_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\characters\headgear\data\turkeybeanie.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
   class SRP_MinerHelmet: Headtorch_ColorBase
   {
 		scope=2;

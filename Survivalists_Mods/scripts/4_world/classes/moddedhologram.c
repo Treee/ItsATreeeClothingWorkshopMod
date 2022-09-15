@@ -1,18 +1,12 @@
 modded class Hologram
 {
-  override string ProjectionBasedOnParent()
+  override string GetProjectionName(ItemBase item)
 	{
-    EntityAI itemInHands = m_Player.GetItemInHands();
-    // Print("ProjectionBasedOnParent " + itemInHands);
-    if (itemInHands.IsInherited(SRP_KitBase))
+    if (item && item.IsPlacingKit())
     {
-      // Print("Inherits from my kit");
-      SRP_KitBase srpKit = SRP_KitBase.Cast(itemInHands);
-      return srpKit.GetKitItemName();
+      return item.GetKitItemName();
     }
-    string s = super.ProjectionBasedOnParent();
-    // Print("Parent projection..... " + s);
-		return s;
+    return super.GetProjectionName(item);
 	}
 
 	override EntityAI PlaceEntity( EntityAI entity_for_placing )

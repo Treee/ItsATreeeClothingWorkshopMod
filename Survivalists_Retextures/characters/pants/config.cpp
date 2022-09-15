@@ -886,4 +886,946 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\leatherpants_Yellow_co.paa"
 		};
 	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   //================================== REMOVE EVENTUALLY
+
+	class SRP_NBCPants_Orange: NBCPantsBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_CargoPants_Janek: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Rain: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Bandit: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Bandit1: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Bandit2: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Bandit3: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Denim: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_MTP: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_ATAC: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_ATACSFG: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_USNAOR2: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_USNAOR1: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_SUMRAK: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_MARPATWinter: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_EMP6: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_ERDL: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_CargoPants_Snow: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_CargoPants_Tan: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Olive: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Brown: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_CargoPants_Blue: CargoPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaMTP_Pants: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaATAC_Pants: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaATACSFG_Pants: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaUSNAOR2_Pants: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaUSNAOR1_Pants: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaSURPAT_Pants: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaMARPATWinter_Pants: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaEMP6_Pants: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaPants_ERDL: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaPants_Snow: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaPants_Multicam: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaPants_MulticamTropic: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_GorkaPants_MulticamBlack: GorkaPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_HunterPants_Beliy: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_Janek: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_MTP: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_ATAC: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_ATACSFG: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_USNAOR2: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_USNAOR1: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_SURPAT: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_MARPATWinter: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_HunterPants_EMP6: HunterPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRPPolicePants: PolicePants
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_PolicePants2: PolicePants
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_PolicePantsOre1_2: PolicePantsOrel
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_PolicePantsOrel_WKPants: PolicePantsOrel
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_ParamedicPants_Black: ParamedicPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_PrisonUniformPants_Beliy: PrisonUniformPants
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_PrisonUniformPants_Blue: PrisonUniformPants
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Leather_PrisonPants: PrisonUniformPants
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Leather_ShortJeans: ShortJeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_TrackSuitPants_boj: TrackSuitPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		color="boj";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_PGopTactMTP: TrackSuitPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+	class SRP_PGopTactATAC: TrackSuitPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Leather_CanvasPants: CanvasPants_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Leather_CanvasPantsMidi: CanvasPantsMidi_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Orange: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Blue: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Lime: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Moss: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Pink: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Purple: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Red: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Rose: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Teal: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_Yellow: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_CadPat_Green: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
+  class SRP_Jeans_CadPat_Blue: Jeans_ColorBase
+	{
+		scope=2;
+    descriptionShort="(Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket) (Deprecated. Make a ticket)";
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\monsterv2_Chip_co.paa"
+		};
+	};
 };

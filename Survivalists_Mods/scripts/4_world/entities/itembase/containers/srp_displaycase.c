@@ -116,6 +116,10 @@ class SRP_DisplayCase_Base extends DeployableContainer_Base
   {
     return false;
   }
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 }
 
 class SRP_HoneyCombStand extends SRP_DisplayCase_Base{};
@@ -257,6 +261,14 @@ class SRP_CoatRack_Base extends DeployableContainer_Base
   override bool CanPutIntoHands (EntityAI parent)
   {
     return false;
+  }
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+  override string GetCraftingKitName()
+  {
+    return "SRP_WoodenDisplayKit_Kit";
   }
 };
 

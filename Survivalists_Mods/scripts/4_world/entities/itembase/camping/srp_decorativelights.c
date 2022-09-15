@@ -15,7 +15,13 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
   class SRP_DecorativeLight_Long_Yellow_Kit extends SRP_KitBase{};
   class SRP_DecorativeLight_Long_White_Kit extends SRP_KitBase{};
 
-  class SRP_DecorativeLight_Long_Colorbase extends SRP_Container_Base{};
+  class SRP_DecorativeLight_Long_Colorbase extends SRP_Container_Base
+  {
+    override string GetCraftingKitName()
+    {
+      return "SRP_DecorativeLight_LongKit_Kit";
+    }
+  };
   class SRP_DecorativeLight_Long_Blue extends SRP_DecorativeLight_Long_Colorbase{};
   class SRP_DecorativeLight_Long_Green extends SRP_DecorativeLight_Long_Colorbase{};
   class SRP_DecorativeLight_Long_LightBlue extends SRP_DecorativeLight_Long_Colorbase{};
@@ -41,7 +47,13 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
   class SRP_DecorativeLight_VerticalLong_Yellow_Kit extends SRP_KitBase{};
   class SRP_DecorativeLight_VerticalLong_White_Kit extends SRP_KitBase{};
 
-  class SRP_DecorativeLight_VerticalLong_Colorbase extends SRP_Container_Base{};
+  class SRP_DecorativeLight_VerticalLong_Colorbase extends SRP_Container_Base
+  {
+    override string GetCraftingKitName()
+    {
+      return "SRP_DecorativeLight_VerticalLongKit_Kit";
+    }
+  };
   class SRP_DecorativeLight_VerticalLong_Blue extends SRP_DecorativeLight_VerticalLong_Colorbase{};
   class SRP_DecorativeLight_VerticalLong_Green extends SRP_DecorativeLight_VerticalLong_Colorbase{};
   class SRP_DecorativeLight_VerticalLong_LightBlue extends SRP_DecorativeLight_VerticalLong_Colorbase{};
@@ -67,7 +79,13 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
   class SRP_DecorativeLight_Flat_Yellow_Kit extends SRP_KitBase{};
   class SRP_DecorativeLight_Flat_White_Kit extends SRP_KitBase{};
 
-  class SRP_DecorativeLight_Flat_Colorbase extends SRP_Container_Base{};
+  class SRP_DecorativeLight_Flat_Colorbase extends SRP_Container_Base
+  {
+    override string GetCraftingKitName()
+    {
+      return "SRP_DecorativeLight_FlatKit_Kit";
+    }
+  };
   class SRP_DecorativeLight_Flat_Blue extends SRP_DecorativeLight_Flat_Colorbase{};
   class SRP_DecorativeLight_Flat_Green extends SRP_DecorativeLight_Flat_Colorbase{};
   class SRP_DecorativeLight_Flat_LightBlue extends SRP_DecorativeLight_Flat_Colorbase{};
@@ -93,7 +111,13 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
   class SRP_DecorativeLight_VerticalFlat_Yellow_Kit extends SRP_KitBase{};
   class SRP_DecorativeLight_VerticalFlat_White_Kit extends SRP_KitBase{};
 
-  class SRP_DecorativeLight_VerticalFlat_Colorbase extends SRP_Container_Base{};
+  class SRP_DecorativeLight_VerticalFlat_Colorbase extends SRP_Container_Base
+  {
+    override string GetCraftingKitName()
+    {
+      return "SRP_DecorativeLight_VerticalFlatKit_Kit";
+    }
+  };
   class SRP_DecorativeLight_VerticalFlat_Blue extends SRP_DecorativeLight_VerticalFlat_Colorbase{};
   class SRP_DecorativeLight_VerticalFlat_Green extends SRP_DecorativeLight_VerticalFlat_Colorbase{};
   class SRP_DecorativeLight_VerticalFlat_LightBlue extends SRP_DecorativeLight_VerticalFlat_Colorbase{};
@@ -119,7 +143,13 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
   class SRP_DecorativeLight_LongFancy_Yellow_Kit extends SRP_KitBase{};
   class SRP_DecorativeLight_LongFancy_White_Kit extends SRP_KitBase{};
 
-  class SRP_DecorativeLight_LongFancy_Colorbase extends SRP_Container_Base{};
+  class SRP_DecorativeLight_LongFancy_Colorbase extends SRP_Container_Base
+  {
+    override string GetCraftingKitName()
+    {
+      return "SRP_DecorativeLight_LongFancyKit_Kit";
+    }
+  };
   class SRP_DecorativeLight_LongFancy_Blue extends SRP_DecorativeLight_LongFancy_Colorbase{};
   class SRP_DecorativeLight_LongFancy_Green extends SRP_DecorativeLight_LongFancy_Colorbase{};
   class SRP_DecorativeLight_LongFancy_LightBlue extends SRP_DecorativeLight_LongFancy_Colorbase{};
@@ -145,7 +175,13 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
   class SRP_DecorativeLight_VerticalLongFancy_Yellow_Kit extends SRP_KitBase{};
   class SRP_DecorativeLight_VerticalLongFancy_White_Kit extends SRP_KitBase{};
 
-  class SRP_DecorativeLight_VerticalLongFancy_Colorbase extends SRP_Container_Base{};
+  class SRP_DecorativeLight_VerticalLongFancy_Colorbase extends SRP_Container_Base
+  {
+    override string GetCraftingKitName()
+    {
+      return "SRP_DecorativeLight_VerticalLongFancyKit_Kit";
+    }
+  };
   class SRP_DecorativeLight_VerticalLongFancy_Blue extends SRP_DecorativeLight_VerticalLongFancy_Colorbase{};
   class SRP_DecorativeLight_VerticalLongFancy_Green extends SRP_DecorativeLight_VerticalLongFancy_Colorbase{};
   class SRP_DecorativeLight_VerticalLongFancy_LightBlue extends SRP_DecorativeLight_VerticalLongFancy_Colorbase{};
@@ -171,7 +207,13 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
   class SRP_DecorativeLight_Corner_Yellow_Kit extends SRP_KitBase{};
   class SRP_DecorativeLight_Corner_White_Kit extends SRP_KitBase{};
 
-  class SRP_DecorativeLight_Corner_Colorbase extends SRP_Container_Base{};
+  class SRP_DecorativeLight_Corner_Colorbase extends SRP_Container_Base
+  {
+    override string GetCraftingKitName()
+    {
+      return "SRP_DecorativeLight_CornerKit_Kit";
+    }
+  };
   class SRP_DecorativeLight_Corner_Blue extends SRP_DecorativeLight_Corner_Colorbase{};
   class SRP_DecorativeLight_Corner_Green extends SRP_DecorativeLight_Corner_Colorbase{};
   class SRP_DecorativeLight_Corner_LightBlue extends SRP_DecorativeLight_Corner_Colorbase{};
@@ -197,7 +239,13 @@ class SRP_DecorativeLight_LongKit_Kit extends SRP_IntermediateCraftingKitBase{};
   class SRP_DecorativeLight_HorizontalCorner_Yellow_Kit extends SRP_KitBase{};
   class SRP_DecorativeLight_HorizontalCorner_White_Kit extends SRP_KitBase{};
 
-  class SRP_DecorativeLight_HorizontalCorner_Colorbase extends SRP_Container_Base{};
+  class SRP_DecorativeLight_HorizontalCorner_Colorbase extends SRP_Container_Base
+  {
+    override string GetCraftingKitName()
+    {
+      return "SRP_DecorativeLight_HorizontalCornerKit_Kit";
+    }
+  };
   class SRP_DecorativeLight_HorizontalCorner_Blue extends SRP_DecorativeLight_HorizontalCorner_Colorbase{};
   class SRP_DecorativeLight_HorizontalCorner_Green extends SRP_DecorativeLight_HorizontalCorner_Colorbase{};
   class SRP_DecorativeLight_HorizontalCorner_LightBlue extends SRP_DecorativeLight_HorizontalCorner_Colorbase{};

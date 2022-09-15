@@ -1,29 +1,22 @@
 class SRP_KitBase extends ItemBase 
 {
-  void SRP_KitBase(){}
-  
-  void ~SRP_KitBase(){}
-
-  string GetKitItemName()
-  {
-    string kitType = GetType();
-    if (kitType != "") {
-      // int trimLength = kitType.Length() - 4; // -4 for _Kit removal
-      kitType = kitType.Substring(0, kitType.Length() - 4);
-    }
-    return kitType;
-  }
-
   override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
 	{
 		super.OnPlacementComplete(player, position, orientation);
 		if (GetGame().IsDedicatedServer())
 		{
       // Print("Placing object: " + GetKitItemName());
-			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(GetKitItemName(), position, ECE_PLACE_ON_SURFACE));
-			kitItem.SetPosition(position);
-			kitItem.SetOrientation(orientation);
-
+			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(GetKitItemName(), position, ECE_PLACE_ON_SURFACE));			
+      if (kitItem)
+      {
+        kitItem.SetPosition(position);
+        kitItem.SetOrientation(orientation);
+        // ItemBase item = ItemBase.Cast(kitItem);
+        // if (item)
+        // {
+        //   item.SetHealth(item.GetHealth() * 0.1);
+        // }
+      }
       if (m_AdminLog)
       {            
         m_AdminLog.OnPlacementComplete( player, this);
@@ -37,9 +30,19 @@ class SRP_KitBase extends ItemBase
     return true;
   }
 
+  override bool IsPlacingKit()
+  {
+    return true;
+  }
+
   override bool CanAssignAttachmentsToQuickbar()
 	{
 		return false;
+	}
+
+  override bool IsTwoHandedBehaviour()
+	{
+		return true;
 	}
 
   override void SetActions()
@@ -99,6 +102,11 @@ class SRP_Furniture_OldWoodenChair_Kit extends SRP_KitBase{};
 class SRP_Furniture_WoodenChair_Kit extends SRP_KitBase{};
 class SRP_Furniture_WoodenStairs_Kit extends SRP_KitBase{};
 class SRP_WoodenBench_Kit extends SRP_KitBase{};
+
+class SRP_Furniture_LogStump_Kit extends SRP_KitBase{};
+class SRP_Furniture_LogBenchSmall_Kit extends SRP_KitBase{};
+class SRP_Furniture_WoodBenchSmall_Kit extends SRP_KitBase{};
+class SRP_Furniture_WoodBenchSlim_Kit extends SRP_KitBase{};
 
 class SRP_BuildingComponentFrame_WornRamp_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_WornLPlatform_Kit extends SRP_KitBase{};

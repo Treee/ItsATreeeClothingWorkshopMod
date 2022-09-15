@@ -79,6 +79,23 @@ modded class ItemBase
     super.OnInventoryExit(player);
 	}  
 
+    // make sure to use the slot name not the item name....
+	ItemBase GetItemOnSlot(string slot_type)
+	{    
+		int slot_id = InventorySlots.GetSlotIdFromString( slot_type );
+		EntityAI item_EAI = GetInventory().FindAttachment( slot_id );
+		ItemBase item_IB = ItemBase.Cast(item_EAI);
+		
+		if (item_EAI && !item_IB)
+		{
+			string str = "Warning! GetItemOnSlot() >> found item on slot " + slot_type + " can't be cast to ItemBase! Found item is " + item_EAI.GetType() + " and the player is " + GetType() + "!";
+			Error(str);
+			return null;
+		}
+		return item_IB;
+	}
+
+//===================================== STATUS EFFECT BOOLS
   bool HasAlcoholEffect()
   {
     return false;
@@ -131,6 +148,7 @@ modded class ItemBase
   {
     return 0;
   }
+//====================================== CRAFTING BOOLS
   bool IsAlchemyReagent()
   {
     return false;
@@ -143,6 +161,31 @@ modded class ItemBase
   {
     return false;
   }
+  bool CanBeDeconstructed()
+  {
+    return false;
+  }
+  bool HasCorrectQuantityAndType(int quantity, string acceptedType, bool exactAmount=false)
+  {
+    if (exactAmount)
+    {
+      return GetQuantity() == quantity && acceptedType == GetColor();
+    }
+    return GetQuantity() >= quantity && acceptedType == GetColor();
+  }
+  string GetKitName()
+  {
+    return string.Format("%1_Kit", GetType());
+  }
+  string GetKitItemName()
+  {
+    return string.Format("%1", GetType().Substring(0, GetType().Length() - 4));
+  }
+  string GetCraftingKitName()
+  {
+    return "";
+  }
+//========================================= SPRINTING BOOLS
   bool IsSprintRemoved()
   {
     return false;
@@ -175,6 +218,7 @@ modded class ItemBase
   {
     return 0.45;
   }
+//========================================= HEAT BASED CRAFTABLES  
   bool IsSmeltable()
   {
     return false;
@@ -203,14 +247,7 @@ modded class ItemBase
   {
     Print("Item is max heat and can transform: " + GetType());    
   }
-  bool HasCorrectQuantityAndType(int quantity, string acceptedType, bool exactAmount=false)
-  {
-    if (exactAmount)
-    {
-      return GetQuantity() == quantity && acceptedType == GetColor();
-    }
-    return GetQuantity() >= quantity && acceptedType == GetColor();
-  }
+//========================================= ELECTRONICS BASED CRAFTABLES
   string GetColor()
   {
     return ConfigGetString("color");
@@ -231,19 +268,5 @@ modded class ItemBase
   {
     return 0;
   }
-  // make sure to use the slot name not the item name....
-	ItemBase GetItemOnSlot(string slot_type)
-	{    
-		int slot_id = InventorySlots.GetSlotIdFromString( slot_type );
-		EntityAI item_EAI = GetInventory().FindAttachment( slot_id );
-		ItemBase item_IB = ItemBase.Cast(item_EAI);
-		
-		if (item_EAI && !item_IB)
-		{
-			string str = "Warning! GetItemOnSlot() >> found item on slot " + slot_type + " can't be cast to ItemBase! Found item is " + item_EAI.GetType() + " and the player is " + GetType() + "!";
-			Error(str);
-			return null;
-		}
-		return item_IB;
-	}
+
 };

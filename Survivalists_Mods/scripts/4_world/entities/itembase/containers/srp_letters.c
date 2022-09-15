@@ -4,7 +4,7 @@ class SRP_LetterKit_Kit extends SRP_IntermediateCraftingKitBase
 	{
 		super.SetActions();
 		AddAction(ActionSwitchLetterOption);
-	}
+	}  
 };
 
 class SRP_Letter_A_Kit extends SRP_KitBase{};
@@ -77,7 +77,10 @@ class SRP_Letter_Colorbase extends SRP_Container_Base
   {
     return ConfigGetString("color");
   }
-
+  override string GetCraftingKitName()
+  {
+    return "SRP_LetterKit_Kit";
+  }
 };
 
 class SRP_Letter_A extends SRP_Letter_Colorbase{};
