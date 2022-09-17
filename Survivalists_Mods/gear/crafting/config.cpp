@@ -33,18 +33,42 @@ class CfgVehicles
 		scope=2;
 		displayName="Long Wooden Stick";
 		descriptionShort="A long wooden stick. Oddly feels hot to the touch.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\wooden_stick_irradiated_co.paa"
+		};
 	};
 	class WoodenStick_Irradiated: WoodenStick
 	{
 		scope=2;
 		displayName="Wooden Stick";
 		descriptionShort="A wooden stick. Oddly feels hot to the touch.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\bp_wooden_stick_irradiated_co.paa"
+		};
   };
   class Firewood_Irradiated: Firewood
 	{
 		scope=2;
 		displayName="Firewood";
 		descriptionShort="A small log. Oddly feels hot to the touch.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\firewood_irradiated_co.paa"
+		};
   };
   class WoodenLog_Irradiated: WoodenLog
 	{
@@ -57,12 +81,28 @@ class CfgVehicles
 		scope=2;
 		displayName="Oak Bark";
 		descriptionShort="Some oak bark. Oddly feels hot to the touch.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\oak_bark_irradiated_co.paa"
+		};
   };
   class Bark_Birch_Irradiated: Bark_Birch
 	{
 		scope=2;
 		displayName="Birch Bark";
 		descriptionShort="Some birch bark. Oddly feels hot to the touch.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\birch_bark_irradiated_co.paa"
+		};
   };
   //=-------------------------------------- CUSTOM STUFF
 

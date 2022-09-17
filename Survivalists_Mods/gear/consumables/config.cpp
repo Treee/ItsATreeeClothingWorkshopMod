@@ -17,42 +17,36 @@ class CfgVehicles
 {
   class Spraycan_ColorBase;
   class Inventory_Base;
-  class ButaneCanister;
   class Stone;
   class Paper;
   class Box_Base;
-
+hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\birch_bark_irradiated_co.paa"
+		};
   //--------------------------------------------- BASE GAME OVERRIDES
 	class Battery9V: Inventory_Base
 	{
     varQuantityInit=200;
 		varQuantityMax=200;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\9v_espen_co.paa"
+		};
 		class EnergyManager
 		{
 			energyStorageMax=200;
 			energyAtSpawn=200;
 		};
-	};
-	class TruckBattery: Inventory_Base
-	{
-    varQuantityInit=6000;
-		varQuantityMax=6000;
-		class EnergyManager
-		{
-			energyStorageMax=6000;
-			energyAtSpawn=6000;
-		};
-	};
-	class CarBattery: Inventory_Base
-	{
-    varQuantityInit=2000;
-		varQuantityMax=2000;
-		class EnergyManager
-		{
-			energyStorageMax=2000;
-			energyAtSpawn=2000;
-		};
-	};
+	};	
 	class AircraftBattery: Inventory_Base
 	{
     varQuantityInit=2000;
@@ -70,11 +64,74 @@ class CfgVehicles
   class GardenLime: Inventory_Base
   {
     canBeSplit=1;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\garden_lime_espen_co.paa"
+		};
   };
   class BurlapStrip: Inventory_Base
 	{
 		varQuantityMax=30;
 	};
+  class ButaneCanister: Inventory_Base
+  {
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\butane_canister_espen_co.paa"
+		};
+  };
+  class LargeGasCanister: Inventory_Base
+  {
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\lootgascannisterlarge_espen_co.paa"
+		};
+  };
+  class MediumGasCanister: Inventory_Base
+  {
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\lootgascannistermedium_espen_co.paa"
+		};
+  };
+  class SmallGasCanister: Inventory_Base
+  {
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\lootgascannistermedium_espen_co.paa"
+		};
+  };
+  class Matchbox: Inventory_Base
+  {
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\matchbox_espen_co.paa"
+		};
+  };
 
   // windstride override
   class HumanSkull: Inventory_Base
