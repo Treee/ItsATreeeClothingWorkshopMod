@@ -79,7 +79,7 @@ modded class ItemBase
     super.OnInventoryExit(player);
 	}  
 
-    // make sure to use the slot name not the item name....
+  // make sure to use the slot name not the item name....
 	ItemBase GetItemOnSlot(string slot_type)
 	{    
 		int slot_id = InventorySlots.GetSlotIdFromString( slot_type );
