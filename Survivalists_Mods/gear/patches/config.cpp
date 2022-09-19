@@ -19,8 +19,8 @@ class CfgVehicles
 
 	class Clothing;  
   class Inventory_Base;
-  class Armband_ColorBase;
-  // -------------------------- CUSTOM STUFF
+  class MassArmbandDouble_Colorbase;
+  class Flag_Base;  
 
   //------------------------------ FLAG PATCHES
 	class SRP_PatchFlag_ColorBase: Clothing
@@ -213,7 +213,7 @@ class CfgVehicles
 				};
 			};
 		};
-	};
+	};  
 	
   //---------------------------- LOGO PATCHES
 	class SRP_PatchLogo_ColorBase: Clothing
@@ -290,5 +290,73 @@ class CfgVehicles
 			};
 		};
 	};
+
+  //------------------------------------- EVENT THINGS
+  // -------------------------- CUSTOM STUFF
+  class Armband_Event_Generic: MassArmbandDouble_Colorbase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa","Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa"};
+	};
+  class Flag_Event_Generic: Flag_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Mods\gear\patches\data\template_flag_event_co.paa"};
+	};
+  class SRP_PatchFlag_Event_Generic: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Event Participant";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\flagpatch_event_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_Armband_Event_Generic: SRP_Armband_Base
+	{	
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\SRParmband_event_co.paa"
+		};	
+  };
+
+  class Armband_Event_Espen: MassArmbandDouble_Colorbase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa","Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa"};
+	};
+  class Flag_Event_Espen: Flag_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Mods\gear\patches\data\template_flag_event_espen_co.paa"};
+	};
+  class SRP_PatchFlag_Event_Espen: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - Event Participant";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\flagpatch_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
+  class SRP_Armband_Event_Espen: SRP_Armband_Base
+	{	
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\SRParmband_event_espen_co.paa"
+		};	
+  };
 
 };

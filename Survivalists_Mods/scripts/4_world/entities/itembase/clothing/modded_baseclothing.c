@@ -144,3 +144,61 @@ class Sneakers_Sneaky extends Sneakers_ColorBase
 	}
 
 };
+
+
+class SRP_EventArmband extends Armband_ColorBase
+{
+  override void OnWasDetached( EntityAI parent, int slot_id )
+  {
+    Delete();
+  }
+};
+class Armband_Event_Generic extends SRP_EventArmband{};
+class Armband_Event_Espen extends SRP_EventArmband{};
+
+class Flag_Event_Generic extends Flag_Base
+{
+  override void OnWasDetached( EntityAI parent, int slot_id )
+  {
+    Delete();
+  }
+};
+class Flag_Event_Espen extends Flag_Base
+{
+  override void OnWasDetached( EntityAI parent, int slot_id )
+  {
+    Delete();
+  }
+};
+
+class SRP_PatchFlag_Event_Generic extends SRP_PatchFlag_ColorBase
+{
+  override void OnWasDetached( EntityAI parent, int slot_id )
+  {
+    Delete();
+  }
+};
+class SRP_PatchFlag_Event_Espen extends SRP_PatchFlag_ColorBase
+{
+  override void OnWasDetached( EntityAI parent, int slot_id )
+  {
+    Delete();
+  }
+};
+
+class SRP_Armband_Base extends Clothing{};
+
+class SRP_Armband_Event_Generic extends SRP_Armband_Base
+{
+  override void OnWasDetached( EntityAI parent, int slot_id )
+  {
+    Delete();
+  }
+};
+class SRP_Armband_Event_Espen extends SRP_Armband_Base
+{
+  override void OnWasDetached( EntityAI parent, int slot_id )
+  {
+    Delete();
+  }
+};
