@@ -21,7 +21,6 @@ modded class WoodAxe
 
 modded class Shovel
 {
-
 	override void SetActions()
 	{
 		super.SetActions();		
