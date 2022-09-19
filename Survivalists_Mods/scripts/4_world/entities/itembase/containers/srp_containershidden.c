@@ -1,4 +1,4 @@
-class SRP_HiddenStash_Base extends Inventory_Base
+class SRP_HiddenStash_Base extends ItemBase
 {
 	protected bool m_IsOpened;
 	
@@ -50,17 +50,7 @@ class SRP_HiddenStash_Base extends Inventory_Base
 
 	override bool CanPutInCargo( EntityAI parent )
 	{
-		if ( !super.CanPutInCargo( parent ))
-			return false;
-
-    // if there are items inside and the stash is open
-		if ( GetNumberOfItems() > 0 && IsOpen() )
-			return true;
-    // if the stash is closed
-    if ( !IsOpen() )
-			return true;
-
-		return false;
+    return true;
 	}
 
   override bool CanReceiveItemIntoCargo( EntityAI item )
@@ -89,7 +79,7 @@ class SRP_HiddenStash_Guts extends SRP_HiddenStash_Base{};
 class SRP_HiddenStash_Teddy extends SRP_HiddenStash_Base{};
 
 
-class SRP_SealPress_ColorBase extends Inventory_Base
+class SRP_SealPress_ColorBase extends ItemBase
 {
   override void SetActions()
 	{
@@ -99,7 +89,7 @@ class SRP_SealPress_ColorBase extends Inventory_Base
 };
 
 
-class SRP_UnSealedLetter extends Inventory_Base
+class SRP_UnSealedLetter extends ItemBase
 {
   override bool CanReceiveAttachment(EntityAI attachment, int slotId)
 	{
@@ -111,7 +101,7 @@ class SRP_UnSealedLetter extends Inventory_Base
 };
 
 
-class SRP_SealedLetter_ColorBase extends Inventory_Base
+class SRP_SealedLetter_ColorBase extends ItemBase
 { 
   override string GetDisplayName()
 	{

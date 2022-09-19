@@ -2000,6 +2000,23 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_FireyGreatsword_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Firey Greatsword";
+		descriptionShort="A bladed weapon kit - Finish with some leather and other materials. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope",    
+      "Material_Shelter_Fabric"
+		};
+	};
+
   class SRP_FireyGreatsword_ColorBase: Inventory_Base
 	{
 		scope=0;
