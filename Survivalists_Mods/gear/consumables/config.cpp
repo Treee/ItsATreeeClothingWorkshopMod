@@ -742,6 +742,14 @@ hiddenSelections[]=
 		descriptionShort="Military radio battery pack";
 		model="Survivalists_Mods\gear\consumables\SRP_LRRadioBattery.p3d";
 		inventorySlot[]={"SRPRadioBattery"};
+    hiddenSelections[]=
+		{			
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_longradio_co.paa",
+		};
 		itemSize[]={1,2};
 		class EnergyManager
 		{
