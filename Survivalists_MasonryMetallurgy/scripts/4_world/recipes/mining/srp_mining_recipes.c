@@ -96,6 +96,8 @@ class Craft_SRP_CrushLargeStone_CrudeTool extends RecipeBase
       "SRP_Mining_RawOre_Tin",
       "SRP_Mining_RawOre_Gold",
       "SRP_Mining_RawOre_Platinum",
+      "SRP_Mining_RawOre_Silver",
+      "SRP_Mining_RawOre_Zinc",
     };
   }
 

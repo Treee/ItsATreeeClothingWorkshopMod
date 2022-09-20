@@ -133,6 +133,52 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Mining_StoneChunk_Silver: SRP_Mining_StoneChunk_ColorBase
+	{
+		scope=2;
+		displayName="Silver Ore";
+		descriptionShort="Stone with chunks of raw silver ore.";
+    color="silver";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_silver_co.paa"
+		};
+	};
+  class SRP_Mining_StoneChunk_Zinc: SRP_Mining_StoneChunk_ColorBase
+	{
+		scope=2;
+		displayName="Zinc Ore";
+		descriptionShort="Stone with chunks of raw zinc ore.";
+    color="zinc";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_zinc_co.paa"
+		};
+	};
+  class SRP_Mining_StoneChunk_Clay: SRP_Mining_StoneChunk_ColorBase
+	{
+		scope=2;
+		displayName="Clay Chunk";
+		descriptionShort="Chunk of clay";
+    color="clay";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_clay_co.paa"
+		};
+	};
+
 //==================================== CHRUSHED STONE AKA PURE ORE
   class SRP_Mining_RawOre_ColorBase: Inventory_Base
 	{
@@ -249,6 +295,37 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_platinum_raw_co.paa"
+		};
+	};
+
+  class SRP_Mining_RawOre_Silver: SRP_Mining_RawOre_ColorBase
+	{
+		scope=2;
+		displayName="Raw Silver Ore";
+		descriptionShort="Raw silver ore. Excess rock has been removed.";
+    color="silver";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_silver_co.paa"
+		};
+	};
+  class SRP_Mining_RawOre_Zinc: SRP_Mining_RawOre_ColorBase
+	{
+		scope=2;
+		displayName="Raw Zinc Ore";
+		descriptionShort="Raw zinc ore. Excess rock has been removed.";
+    color="zinc";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_zinc_co.paa"
 		};
 	};
 //==================================== GEMS A
@@ -2212,6 +2289,52 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_ForgeCrucible_Silver: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Silver";
+		descriptionShort="Very hot molten metal.";
+    color="silver";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_crucible_silver_co.paa"
+		};
+	};
+  class SRP_ForgeCrucible_Zinc: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Zinc";
+		descriptionShort="Very hot molten metal.";
+    color="zinc";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_crucible_zinc_co.paa"
+		};
+	};
+  class SRP_ForgeCrucible_Brass: SRP_ForgeCrucible_ColorBase
+	{
+		scope=2;
+		displayName="Molten Metal - Brass";
+		descriptionShort="Very hot molten metal.";
+    color="brass";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_crucible_brass_co.paa"
+		};
+	};
+
 //===================================== INGOT MOLDS
   class SRP_ForgeIngotMold_ColorBase: Inventory_Base
   {
@@ -2405,6 +2528,48 @@ class CfgVehicles
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_crucible_platinum_co.paa"
 		};
 	};
+  class SRP_ForgeIngotMold_Silver: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Silver";    
+    color="silver";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_crucible_silver_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Zinc: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Zinc";    
+    color="zinc";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_crucible_zinc_co.paa"
+		};
+	};
+  class SRP_ForgeIngotMold_Brass: SRP_ForgeIngotMold_ColorBase
+	{
+		scope=2;
+		displayName="Ingot Mold - Brass";    
+    color="brass";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_crucible_brass_co.paa"
+		};
+	};
 
 //===================================== INGOTS
   class SRP_ForgeIngot_ColorBase: Inventory_Base
@@ -2532,6 +2697,49 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_platinum_co.paa"
+		};
+	};
+
+  class SRP_ForgeIngot_Silver: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Silver";    
+    color="silver";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_silver_co.paa"
+		};
+	};
+  class SRP_ForgeIngot_Zinc: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Zinc";    
+    color="zinc";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_zinc_co.paa"
+		};
+	};
+  class SRP_ForgeIngot_Brass: SRP_ForgeIngot_ColorBase
+	{
+		scope=2;
+		displayName="Metal Ingot - Brass";    
+    color="brass";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_brass_co.paa"
 		};
 	};
 
@@ -2666,6 +2874,49 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_ForgeIngotPlate_Silver: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Silver";    
+    color="silver";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_silver_co.paa"
+		};
+	};
+  class SRP_ForgeIngotPlate_Zinc: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Zinc";    
+    color="zinc";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_zinc_co.paa"
+		};
+	};
+  class SRP_ForgeIngotPlate_Brass: SRP_ForgeIngotPlate_ColorBase
+	{
+		scope=2;
+		displayName="Metal Plate - Brass";    
+    color="brass";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_brass_co.paa"
+		};
+	};
+
 //===================================== RODS
   class SRP_ForgeIngotRod_ColorBase: Inventory_Base
   {
@@ -2793,6 +3044,48 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_platinum_co.paa"
+		};
+	};
+  class SRP_ForgeIngotRod_Silver: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Silver";    
+    color="silver";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_silver_co.paa"
+		};
+	};
+  class SRP_ForgeIngotRod_Zinc: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Zinc";    
+    color="zinc";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_zinc_co.paa"
+		};
+	};
+  class SRP_ForgeIngotRod_Brass: SRP_ForgeIngotRod_ColorBase
+	{
+		scope=2;
+		displayName="Metal Rod - Brass";    
+    color="brass";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_forge_ingot_brass_co.paa"
 		};
 	};
 

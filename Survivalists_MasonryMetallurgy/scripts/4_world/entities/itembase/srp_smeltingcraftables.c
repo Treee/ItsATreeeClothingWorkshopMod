@@ -1,4 +1,4 @@
-class SRP_ForgeIngotPlate_ColorBase extends Inventory_Base
+class SRP_ForgeIngotPlate_ColorBase extends ItemBase
 {
   override protected bool CanHaveTemperature()
 	{
@@ -45,8 +45,11 @@ class SRP_ForgeIngotPlate_Bronze extends SRP_ForgeIngotPlate_ColorBase{};
 class SRP_ForgeIngotPlate_Iron extends SRP_ForgeIngotPlate_ColorBase{};
 class SRP_ForgeIngotPlate_Gold extends SRP_ForgeIngotPlate_ColorBase{};
 class SRP_ForgeIngotPlate_Platinum extends SRP_ForgeIngotPlate_ColorBase{};
+class SRP_ForgeIngotPlate_Silver extends SRP_ForgeIngotPlate_ColorBase{};
+class SRP_ForgeIngotPlate_Zinc extends SRP_ForgeIngotPlate_ColorBase{};
+class SRP_ForgeIngotPlate_Brass extends SRP_ForgeIngotPlate_ColorBase{};
 
-class SRP_ForgeIngotRod_ColorBase extends Inventory_Base
+class SRP_ForgeIngotRod_ColorBase extends ItemBase
 {
   override protected bool CanHaveTemperature()
 	{
@@ -93,3 +96,6 @@ class SRP_ForgeIngotRod_Bronze extends SRP_ForgeIngotRod_ColorBase{};
 class SRP_ForgeIngotRod_Iron extends SRP_ForgeIngotRod_ColorBase{};
 class SRP_ForgeIngotRod_Gold extends SRP_ForgeIngotRod_ColorBase{};
 class SRP_ForgeIngotRod_Platinum extends SRP_ForgeIngotRod_ColorBase{};
+class SRP_ForgeIngotRod_Silver extends SRP_ForgeIngotRod_ColorBase{};
+class SRP_ForgeIngotRod_Zinc extends SRP_ForgeIngotRod_ColorBase{};
+class SRP_ForgeIngotRod_Brass extends SRP_ForgeIngotRod_ColorBase{};

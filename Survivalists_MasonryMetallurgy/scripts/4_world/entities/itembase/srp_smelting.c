@@ -155,6 +155,9 @@ class SRP_ForgeIngotMold_Bronze extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Iron extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Gold extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Platinum extends SRP_ForgeIngotMold_ColorBase{};
+class SRP_ForgeIngotMold_Silver extends SRP_ForgeIngotMold_ColorBase{};
+class SRP_ForgeIngotMold_Zinc extends SRP_ForgeIngotMold_ColorBase{};
+class SRP_ForgeIngotMold_Brass extends SRP_ForgeIngotMold_ColorBase{};
 
 //=====================================================INGOTS
 class SRP_ForgeIngot_ColorBase extends Inventory_Base
@@ -210,7 +213,9 @@ class SRP_ForgeIngot_Bronze extends SRP_ForgeIngot_ColorBase{};
 class SRP_ForgeIngot_Iron extends SRP_ForgeIngot_ColorBase{};
 class SRP_ForgeIngot_Gold extends SRP_ForgeIngot_ColorBase{};
 class SRP_ForgeIngot_Platinum extends SRP_ForgeIngot_ColorBase{};
-
+class SRP_ForgeIngot_Silver extends SRP_ForgeIngot_ColorBase{};
+class SRP_ForgeIngot_Zinc extends SRP_ForgeIngot_ColorBase{};
+class SRP_ForgeIngot_Brass extends SRP_ForgeIngot_ColorBase{};
 
 //=====================================================CRUCIBLES
 class SRP_ForgeCrucible_ColorBase extends Inventory_Base
@@ -334,12 +339,19 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
     {
       bool combination1 = rawOre1.HasCorrectQuantityAndType(4, "copper") && rawOre2.HasCorrectQuantityAndType(4, "tin");
       bool combination2 = rawOre1.HasCorrectQuantityAndType(4, "tin") && rawOre2.HasCorrectQuantityAndType(4, "copper");
+      string color = "";
+      ItemBase newItem;
       if (combination1 || combination2)
       {
-        // for now only bronze is complex, if you see this, study because it will be hidden soon.
-        string color = "bronze";// rawOre.ConfigGetString("color");
-        string newClassName = "SRP_ForgeCrucible_" + color;
-        ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(newClassName, this.GetPosition(), false));
+        newItem = ItemBase.Cast(GetGame().CreateObjectEx("SRP_ForgeCrucible_Bronze", this.GetPosition(), false));
+        newItem.SetTemperature(200);
+        this.Delete();
+      }
+      combination1 = rawOre1.HasCorrectQuantityAndType(4, "copper") && rawOre2.HasCorrectQuantityAndType(3, "zinc",true);
+      combination2 = rawOre1.HasCorrectQuantityAndType(3, "zinc",true) && rawOre2.HasCorrectQuantityAndType(4, "copper");
+      if (combination1 || combination2)
+      {
+        newItem = ItemBase.Cast(GetGame().CreateObjectEx("SRP_ForgeCrucible_Brass", this.GetPosition(), false));
         newItem.SetTemperature(200);
         this.Delete();
       }
@@ -350,7 +362,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (GetHeatTimer() > 10)
+    if (GetHeatTimer() > 600)
     {
       if (HasMoreThanOneOreAttached())
       {
@@ -370,6 +382,9 @@ class SRP_ForgeCrucible_Bronze extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Iron extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Gold extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Platinum extends SRP_ForgeCrucible_ColorBase{};
+class SRP_ForgeCrucible_Silver extends SRP_ForgeCrucible_ColorBase{};
+class SRP_ForgeCrucible_Zinc extends SRP_ForgeCrucible_ColorBase{};
+class SRP_ForgeCrucible_Brass extends SRP_ForgeCrucible_ColorBase{};
 
 //======================================================= ORE
 class SRP_Mining_RawOre_ColorBase extends Inventory_Base{};
@@ -379,7 +394,9 @@ class SRP_Mining_RawOre_Bronze extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Iron extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Gold extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Platinum extends SRP_Mining_RawOre_ColorBase{};
-
+class SRP_Mining_RawOre_Silver extends SRP_Mining_RawOre_ColorBase{};
+class SRP_Mining_RawOre_Zinc extends SRP_Mining_RawOre_ColorBase{};
+class SRP_Mining_RawOre_Clay extends SRP_Mining_RawOre_ColorBase{};
 
 
 class SRP_MiningTool_IronTongsSmall extends Inventory_Base
