@@ -34,7 +34,8 @@ class CfgVehicles
   class SRP_Small_Military_Pack_Tan;
   class SRP_Big_Military_Pack_Tan;
   class SRP_Rifle_Bag_Green;
-  class SRP_MessengerBag_Leather;  
+  class SRP_MessengerBag_Leather;
+  class SRP_Trader_Backpack_ColorBase;
 
   class DUB_Monsterv2;
 
@@ -1212,29 +1213,18 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\Leather_Satchel_Blue_CO.paa"
 		};
 	};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  class SRP_Trader_Backpack_Leather: SRP_Trader_Backpack_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\SRP_Trader_Backpack_CO.paa",
+		};
+	};
 
   // ===================================================== Remove these in next update
 	class SRP_SmershBag_White: SmershBag

@@ -780,4 +780,68 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Trader_Backpack_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Leather Backpack";
+		descriptionShort="Espen Industries. This rugged leather backpack is large enough to store all of your travelling wares.";
+		model="Survivalists_Mods\characters\backpacks\Trader_Backpack_g.p3d";
+    repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot="Back";
+		simulation="clothing";
+		vehicleClass="Clothing";
+		rootClassName="SRP_Trader_Backpack";
+		colorVariants[]={};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};
+		weight=1000;
+		itemSize[]={5,4};
+		absorbency=0.5;
+		heatIsolation=0.80;
+		itemsCargoSize[]={8,10};
+		attachments[]=
+		{
+			"Chemlight"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\SRP_Trader_Backpack_CO.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\characters\backpacks\data\SRP_Trader_Backpack.rvmat"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\characters\backpacks\Trader_Backpack_m.p3d";
+			female="Survivalists_Mods\characters\backpacks\Trader_Backpack_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{						
+						{1.0,{"Survivalists_Mods\characters\backpacks\data\SRP_Trader_Backpack.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\characters\backpacks\data\SRP_Trader_Backpack.rvmat"}},						
+						{0.5,{"Survivalists_Mods\characters\backpacks\data\SRP_Trader_Backpack.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\characters\backpacks\data\SRP_Trader_Backpack.rvmat"}},						
+						{0.0,{"Survivalists_Mods\characters\backpacks\data\SRP_Trader_Backpack.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 };
