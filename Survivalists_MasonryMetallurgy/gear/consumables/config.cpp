@@ -178,6 +178,21 @@ class CfgVehicles
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_clay_co.paa"
 		};
 	};
+  class SRP_Mining_StoneChunk_Coke: SRP_Mining_StoneChunk_ColorBase
+	{
+		scope=2;
+		displayName="Coke Chunk";
+		descriptionShort="Chunk of Coke";
+    color="coke";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_coke_co.paa"
+		};
+	};
 
 //==================================== CHRUSHED STONE AKA PURE ORE
   class SRP_Mining_RawOre_ColorBase: Inventory_Base
@@ -326,6 +341,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_zinc_co.paa"
+		};
+	};
+  class SRP_Mining_RawOre_Coal: SRP_Mining_RawOre_ColorBase
+	{
+		scope=2;
+		displayName="Raw Coal Ore";
+		descriptionShort="Raw coal. Ready to be burned.";
+    color="zinc";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_coal_co.paa"
 		};
 	};
 //==================================== GEMS A

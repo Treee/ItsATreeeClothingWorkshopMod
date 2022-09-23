@@ -447,8 +447,7 @@ class SRP_Mining_RawOre_Gold extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Platinum extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Silver extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Zinc extends SRP_Mining_RawOre_ColorBase{};
-class SRP_Mining_RawOre_Clay extends SRP_Mining_RawOre_ColorBase{};
-
+class SRP_Mining_RawOre_Coal extends SRP_Mining_RawOre_ColorBase{};
 
 class SRP_MiningTool_IronTongsSmall extends ItemBase
 {
