@@ -545,6 +545,16 @@ class SRP_MiningTool_IronTongsSmall extends ItemBase
 class SRP_MiningTool_IronTongsMedium extends SRP_MiningTool_IronTongsSmall{};
 class SRP_MiningTool_IronTongsLarge extends SRP_MiningTool_IronTongsSmall{};
 
+class SRP_Tool_CoalRake extends ItemBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionSRPRakeFireplaceAshes);
+	}
+};
+
 class SRP_Coinage_ColorBase extends ItemBase
 {
   override bool IsForgeHardened()

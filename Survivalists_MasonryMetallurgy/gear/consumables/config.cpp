@@ -181,7 +181,7 @@ class CfgVehicles
   class SRP_Mining_StoneChunk_Coke: SRP_Mining_StoneChunk_ColorBase
 	{
 		scope=2;
-		displayName="Coke Chunk";
+		displayName="Chunk of Coke";
 		descriptionShort="Chunk of Coke";
     color="coke";
     hiddenSelections[]=
