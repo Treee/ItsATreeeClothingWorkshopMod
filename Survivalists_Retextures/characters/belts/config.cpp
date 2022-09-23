@@ -20,6 +20,7 @@ class CfgVehicles
   class SRP_Military_Belt_ColorBase;
   class SRP_Knife_Sheath_ColorBase;
   class SRP_TacticalBelt_ColorBase;
+  class SRP_TacticalHolster_ColorBase;
   class SRP_Car_WoodenDerby;
 
   //======================== MAIN MOD RETEXTURES
@@ -136,5 +137,18 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\belts\data\srp_woodencar_illusive_co.paa"
 		};	
+	};
+
+  class SRP_TacticalHolster_Black: SRP_TacticalHolster_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\belts\data\SRP_Tactical_Holster_Belt_CO.paa"
+		};
 	};
 };
