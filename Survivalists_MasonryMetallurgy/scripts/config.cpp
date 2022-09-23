@@ -31,6 +31,12 @@ class CfgSlots
 		displayName="Hot Crucible";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+  class Slot_SRP_Coin
+  {
+		name="SRP_Coin";
+		displayName="Hot Blank";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
   class Slot_SRP_IngotMold
   {
 		name="SRP_IngotMold";
@@ -165,5 +171,10 @@ class CfgNonAIVehicles
     inventorySlot[] = {"SRP_Ingot"}; // same as slot name 
     model = "Survivalists_MasonryMetallurgy\proxy\srp_ingot_proxy.p3d"; //proxy path 
   };
-
+  class Proxysrp_coin_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_Coin"}; // same as slot name 
+    model = "Survivalists_MasonryMetallurgy\proxy\srp_coin_proxy.p3d"; //proxy path 
+  };
 };

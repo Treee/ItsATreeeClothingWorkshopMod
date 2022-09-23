@@ -114,6 +114,7 @@ class CfgVehicles
   class Inventory_Base;
   class HuntingKnife;
   class WoodAxe;
+  class Cleaver;
 
   class SRP_KitBase;
 
@@ -127,6 +128,21 @@ class CfgVehicles
       "SRP_ToolKit_Hatchet"
     };
   };
+
+  class DUB_MonsterclawV2: Cleaver
+	{
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 150;
+					healthLevels[] = {{1,{""}},{0.7,{""}},{0.5,{""}},{0.3,{""}},{0.1,{""}}};
+				};
+			};
+		};
+	};
 
   //============================== CUSTOM STUFF
 
@@ -241,7 +257,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Weapon Kit - Pipe Axe";
-		descriptionShort="A bladed weapon kit - Finish with a pipe. Do not put back into the forge.";
+		descriptionShort="A bladed weapon kit - Finish with an axe. Do not put back into the forge.";
     attachments[]={};
 	};
   class SRP_WeaponBladeCelticAxe_Kit: SRP_KitBase //new
@@ -252,12 +268,13 @@ class CfgVehicles
     attachments[]=
 		{
 			"SRP_MetalPlate1",
-      "Material_Shelter_Leather",
+      "SRP_MetalPlate2",
       "SRP_MetalRod1",
       "SRP_MetalRod2",
       "Material_MetalWire",
       "Material_Shelter_Rope",    
-      "Material_Shelter_Fabric"
+      "Material_Shelter_Fabric",
+      "Material_Shelter_Leather",
 		};
 	};
 

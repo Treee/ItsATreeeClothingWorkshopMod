@@ -502,7 +502,8 @@ class CfgVehicles
     {
       "SRP_Crucible",
       "SRP_IngotMold",
-      "SRP_Ingot"
+      "SRP_Ingot",
+      "SRP_Coin"
     };
 		class DamageSystem
 		{
@@ -540,7 +541,8 @@ class CfgVehicles
     {
       "SRP_Crucible",
       "SRP_IngotMold",
-      "SRP_Ingot"
+      "SRP_Ingot",
+      "SRP_Coin"
     };
 		class DamageSystem
 		{
@@ -578,7 +580,8 @@ class CfgVehicles
     {
       "SRP_Crucible",
       "SRP_IngotMold",
-      "SRP_Ingot"
+      "SRP_Ingot",
+      "SRP_Coin"
     };
 		class DamageSystem
 		{

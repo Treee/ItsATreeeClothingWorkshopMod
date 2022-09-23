@@ -115,7 +115,7 @@ class ActionSRPVariantIdOption extends ActionContinuousBase
 
   void OnUpdateActions( Object item, Object target, int component_index ){}
 
-  TStringArray GetVariantIdOptions(string itemType)
+  TStringArray GetVariantIdOptions(string itemType="")
   {
     return {};
   }

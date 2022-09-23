@@ -171,6 +171,10 @@ modded class ItemBase
     {
       return GetQuantity() == quantity && acceptedType == GetColor();
     }
+    if (acceptedType == "")
+    {
+      return GetQuantity() >= quantity;
+    }
     return GetQuantity() >= quantity && acceptedType == GetColor();
   }
   string GetKitName()
@@ -223,6 +227,10 @@ modded class ItemBase
   {
     return false;
   }
+  bool IsForgeHardened()
+  {
+    return false;
+  }
   bool IsTransformedByHeat()
   {
     return false;
@@ -246,6 +254,10 @@ modded class ItemBase
   void HandleHeatTransformation()
   {
     Print("Item is max heat and can transform: " + GetType());    
+  }
+  bool IsHotEnough(int expectedTemperature)
+  {
+    return (GetTemperature() >= expectedTemperature);
   }
 //========================================= ELECTRONICS BASED CRAFTABLES
   string GetColor()

@@ -91,6 +91,8 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=0;
     varTemperatureMax=1000;
+    absorbency=0;
+    varWetMax=0;
 		stackedUnit="";
 		physLayer="item_large";		
     attachments[]=
@@ -197,6 +199,8 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=0;
     varTemperatureMax=1000;
+    absorbency=0;
+    varWetMax=0;
 		stackedUnit="";
 		physLayer="item_large";		
     attachments[]=

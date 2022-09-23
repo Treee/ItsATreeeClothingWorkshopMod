@@ -3108,6 +3108,7 @@ class CfgVehicles
     varStackMax=99;
 		absorbency=0;
     varWetMax=0;
+    varTemperatureMax=500;
 		varQuantityMax=500;
 		inventorySlot[]={};
 		class DamageSystem
@@ -3119,11 +3120,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage.rvmat"}},
-            {0.69999999,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage.rvmat"}},
-            {0.5,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage_damage.rvmat"}},
-            {0.30000001,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage_damage.rvmat"}},
-            {0.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage_destruct.rvmat"}}
+						{1.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_brassblank.rvmat"}},
+            {0.69999999,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_brassblank.rvmat"}},
+            {0.5,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_brassblank_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_brassblank_damage.rvmat"}},
+            {0.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_brassblank_destruct.rvmat"}}
 					};
 				};
 			};
@@ -3182,4 +3183,45 @@ class CfgVehicles
     color="copper";
     inventorySlot[]={"SRP_CoinCopper"};
   };  
+  class SRP_Coinage_BrassBlank: SRP_Coinage_ColorBase
+  {
+		scope=2;
+		displayName="Brass Casing Blank";
+		descriptionShort="A brass cartridge blank.";
+		model="Survivalists_MasonryMetallurgy\gear\consumables\srp_coinage_goldworn.p3d";
+    color="brassblank";
+    varStackMax=25;
+    varQuantityMax=50;
+    inventorySlot[]={"SRP_Coin"};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_brassblank_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_brassblank.rvmat"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage.rvmat"}},
+            {0.69999999,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage.rvmat"}},
+            {0.5,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage_damage.rvmat"}},
+            {0.30000001,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage_damage.rvmat"}},
+            {0.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_coinage_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  }; 
 };

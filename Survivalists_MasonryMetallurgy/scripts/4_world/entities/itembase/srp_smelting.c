@@ -1,5 +1,5 @@
 //================================================ METAL BUCKETS
-class SRP_MetalBucket extends Inventory_Base
+class SRP_MetalBucket extends ItemBase
 {
   override protected bool CanHaveTemperature()
 	{
@@ -38,11 +38,15 @@ class SRP_MetalBucket extends Inventory_Base
       }
     }
   }
+  override bool IsForgeHardened()
+  {
+    return true;
+  }  
 };
 class SRP_MetalBucket_Lime extends SRP_MetalBucket{};
 class SRP_MetalBucket_Mortar extends SRP_MetalBucket
 {
-  void HandleHardenEvent()
+  override void HandleHeatTransformation()
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
@@ -52,10 +56,18 @@ class SRP_MetalBucket_Mortar extends SRP_MetalBucket
       this.Delete();
     }
   }
+  override int GetHeatTimerThreshold()
+  {
+    return 600;
+  }
+  override bool IsTransformedByHeat()
+  {
+    return true;
+  }
 };
 
 //==================================================INGOT MOLDS
-class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
+class SRP_ForgeIngotMold_ColorBase extends ItemBase
 {
   override protected bool CanHaveTemperature()
 	{
@@ -101,6 +113,10 @@ class SRP_ForgeIngotMold_ColorBase extends Inventory_Base
 		
 		AddAction(ActionEmptyIngotMold);
 	}
+  override bool IsForgeHardened()
+  {
+    return true;
+  }
 };
 class SRP_ForgeIngotMold_MetalEmpty extends SRP_ForgeIngotMold_ColorBase
 {
@@ -110,6 +126,10 @@ class SRP_ForgeIngotMold_MetalEmpty extends SRP_ForgeIngotMold_ColorBase
 		
 		RemoveAction(ActionEmptyIngotMold);
 	}
+  override bool IsForgeHardened()
+  {
+    return false;
+  } 
 };
 class SRP_ForgeIngotMold_Lime extends SRP_ForgeIngotMold_ColorBase
 {
@@ -119,10 +139,14 @@ class SRP_ForgeIngotMold_Lime extends SRP_ForgeIngotMold_ColorBase
 		
 		RemoveAction(ActionEmptyIngotMold);
 	}
+  override bool IsForgeHardened()
+  {
+    return false;
+  } 
 };
 class SRP_ForgeIngotMold_Mortar extends SRP_ForgeIngotMold_ColorBase
 {
-  void HandleHardenEvent()
+  override void HandleHeatTransformation()
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
@@ -139,6 +163,14 @@ class SRP_ForgeIngotMold_Mortar extends SRP_ForgeIngotMold_ColorBase
 		
 		RemoveAction(ActionEmptyIngotMold);
 	}
+  override int GetHeatTimerThreshold()
+  {
+    return 600;
+  }
+  override bool IsTransformedByHeat()
+  {
+    return true;
+  }
 };
 class SRP_ForgeIngotMold_Empty extends SRP_ForgeIngotMold_ColorBase
 {
@@ -148,6 +180,14 @@ class SRP_ForgeIngotMold_Empty extends SRP_ForgeIngotMold_ColorBase
 		
 		RemoveAction(ActionEmptyIngotMold);
 	}
+  override int GetHeatTimerThreshold()
+  {
+    return 600;
+  }
+  override bool IsTransformedByHeat()
+  {
+    return true;
+  }
 };
 class SRP_ForgeIngotMold_Copper extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Tin extends SRP_ForgeIngotMold_ColorBase{};
@@ -160,7 +200,7 @@ class SRP_ForgeIngotMold_Zinc extends SRP_ForgeIngotMold_ColorBase{};
 class SRP_ForgeIngotMold_Brass extends SRP_ForgeIngotMold_ColorBase{};
 
 //=====================================================INGOTS
-class SRP_ForgeIngot_ColorBase extends Inventory_Base
+class SRP_ForgeIngot_ColorBase extends ItemBase
 {
   override protected bool CanHaveTemperature()
 	{
@@ -199,11 +239,9 @@ class SRP_ForgeIngot_ColorBase extends Inventory_Base
       }
     }
   }
-
-  bool IsHotEnough(int expectedTemperature)
+  override bool IsForgeHardened()
   {
-    // Print("Current Temperature of " + GetType() + " is " + GetTemperature() + " Max: " + GetTemperatureMax() + " expected: " + expectedTemperature);
-    return (GetTemperature() >= expectedTemperature);
+    return true;
   }
 };
 
@@ -218,7 +256,7 @@ class SRP_ForgeIngot_Zinc extends SRP_ForgeIngot_ColorBase{};
 class SRP_ForgeIngot_Brass extends SRP_ForgeIngot_ColorBase{};
 
 //=====================================================CRUCIBLES
-class SRP_ForgeCrucible_ColorBase extends Inventory_Base
+class SRP_ForgeCrucible_ColorBase extends ItemBase
 {
   override protected bool CanHaveTemperature()
 	{
@@ -256,6 +294,10 @@ class SRP_ForgeCrucible_ColorBase extends Inventory_Base
         }
       }
     }
+  }
+  override bool IsForgeHardened()
+  {
+    return true;
   }
 };
 
@@ -358,7 +400,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
     }
   }
 
-  void HandleHardenEvent()
+  override void HandleHeatTransformation()
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
@@ -374,6 +416,15 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
       }
     }
   }
+  
+  override int GetHeatTimerThreshold()
+  {
+    return 600;
+  }
+  override bool IsTransformedByHeat()
+  {
+    return true;
+  }
 };
 
 class SRP_ForgeCrucible_Copper extends SRP_ForgeCrucible_ColorBase{};
@@ -387,7 +438,7 @@ class SRP_ForgeCrucible_Zinc extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Brass extends SRP_ForgeCrucible_ColorBase{};
 
 //======================================================= ORE
-class SRP_Mining_RawOre_ColorBase extends Inventory_Base{};
+class SRP_Mining_RawOre_ColorBase extends ItemBase{};
 class SRP_Mining_RawOre_Copper extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Tin extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Bronze extends SRP_Mining_RawOre_ColorBase{};
@@ -399,21 +450,27 @@ class SRP_Mining_RawOre_Zinc extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Clay extends SRP_Mining_RawOre_ColorBase{};
 
 
-class SRP_MiningTool_IronTongsSmall extends Inventory_Base
+class SRP_MiningTool_IronTongsSmall extends ItemBase
 {
   override void SetActions()
 	{
 		super.SetActions();
 		
 		AddAction(ActionPourMoltenMetalIntoMold);
+		AddAction(ActionSRPSwapBrassCasingOption);
 	}
 
   bool HasIngotAttached()
   {
     return FindAttachmentBySlotName("SRP_Ingot") != null;
   }
+  
+  bool HasCoinAttached()
+  {
+    return GetItemOnSlot("SRP_Coin") != null;
+  }
 
-  string GetColor()
+  override string GetColor()
   {
     string ingotColor = "";
     SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(FindAttachmentBySlotName("SRP_Ingot"));
@@ -431,6 +488,17 @@ class SRP_MiningTool_IronTongsSmall extends Inventory_Base
     if (ingot)
     {
       isHotEnough = ingot.IsHotEnough(expectedTemperature);
+    }
+    return isHotEnough;
+  }
+
+  bool IsAttachedCoinHotEnough(int expectedTemperature)
+  {
+    bool isHotEnough = false;
+    SRP_Coinage_ColorBase coin = SRP_Coinage_ColorBase.Cast(FindAttachmentBySlotName("SRP_Coin"));
+    if (coin)
+    {
+      isHotEnough = coin.IsHotEnough(expectedTemperature);
     }
     return isHotEnough;
   }
@@ -454,7 +522,79 @@ class SRP_MiningTool_IronTongsSmall extends Inventory_Base
       ingot.AddQuantity(-quantity);
     }
   }
+
+  bool HasEnoughCoins(int quantity)
+  {
+    bool hasEnough = false;
+    ItemBase coin = ItemBase.Cast(GetItemOnSlot("SRP_Coin"));
+    if (coin)
+    {
+      hasEnough = coin.GetQuantity() >= quantity;
+    }
+    return hasEnough;
+  }
+
+  void ReduceCoinCount(int quantity)
+  {
+    ItemBase coin = ItemBase.Cast(GetItemOnSlot("SRP_Coin"));
+    if (coin)
+    {
+      coin.AddQuantity(-quantity);
+    }
+  }
 };
 class SRP_MiningTool_IronTongsMedium extends SRP_MiningTool_IronTongsSmall{};
 class SRP_MiningTool_IronTongsLarge extends SRP_MiningTool_IronTongsSmall{};
 
+class SRP_Coinage_ColorBase extends ItemBase
+{
+  override bool IsForgeHardened()
+  {
+    return true;
+  }
+};
+class SRP_Coinage_Platinum extends SRP_Coinage_ColorBase{};
+class SRP_Coinage_Iron extends SRP_Coinage_ColorBase{};
+class SRP_Coinage_Gold extends SRP_Coinage_ColorBase{};
+class SRP_Coinage_GoldWorn extends SRP_Coinage_ColorBase{};
+class SRP_Coinage_Bronze extends SRP_Coinage_ColorBase{};
+class SRP_Coinage_Copper extends SRP_Coinage_ColorBase{};
+class SRP_Coinage_BrassBlank extends SRP_Coinage_ColorBase
+{
+  override protected bool CanHaveTemperature()
+	{
+		// return true used on selected items that have a temperature effect
+		return true;
+	}
+  override void OnInventoryEnter(Man player)
+  {
+    super.OnInventoryEnter(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (GetGame().IsDedicatedServer() && player_PB.GetItemInHands() == this)
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING, false );
+        }
+        player_PB.GetModifiersManager().ActivateModifier( SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING );
+      }
+    }
+  }
+  override void OnInventoryExit(Man player)
+  {
+    super.OnInventoryExit(player);
+    PlayerBase player_PB = PlayerBase.Cast( player );
+    if (player_PB && GetGame().IsDedicatedServer())
+    {
+      if (GetTemperature() > 80)
+      {
+        if( player_PB.GetModifiersManager().IsModifierActive(SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING ) )//effectively resets the timer
+        {
+          player_PB.GetModifiersManager().DeactivateModifier( SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING, false );
+        }
+      }
+    }
+  }
+};

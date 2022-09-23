@@ -17,11 +17,11 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 
   override protected void AddDamageToItemByFire( ItemBase item, bool can_be_ruined )
 	{
-    if (item && IsSmeltableItem(item.GetType()) && item.GetHealthLevel() == GameConstants.STATE_BADLY_DAMAGED)
+    if (item && item.IsSmeltable() && item.GetHealthLevel() == GameConstants.STATE_BADLY_DAMAGED)
     {
       item.Delete();
       ItemBase new_item = ItemBase.Cast(GetInventory().CreateInInventory("SRP_Mining_RawOre_Iron"));
-      int randomQuantity = Math.RandomIntInclusive(0,3);
+      int randomQuantity = Math.RandomIntInclusive(0,2);
       if (randomQuantity > 0)
       {
         new_item.SetQuantity(randomQuantity);
@@ -29,27 +29,6 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     }
 		super.AddDamageToItemByFire(item, can_be_ruined);
 	}
-
-  bool IsSmeltableItem(string itemType)
-  {
-    if (itemType == "Pipe")
-    {
-      return true;
-    }
-    if (itemType == "MetalPlate")
-    {
-      return true;
-    }
-    if (itemType == "PistolCore")
-    {
-      return true;
-    }
-    if (itemType == "RifleCore")
-    {
-      return true;
-    }
-    return false;
-  }
 
   // Undestroyable
   override string GetInvulnerabilityTypeString()
@@ -77,21 +56,11 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
   override void EECargoOut(EntityAI item)
 	{
 		super.EECargoOut(item);
-    SRP_MetalBucket_Mortar mortarBucket = SRP_MetalBucket_Mortar.Cast(item);
-    if (mortarBucket)
+    ItemBase heatedItem = ItemBase.Cast(item);
+    if (heatedItem && heatedItem.IsTransformedByHeat())
     {
-      mortarBucket.ResetHeatTimer();
-    };
-    SRP_ForgeIngotMold_Mortar mortarIngotMold = SRP_ForgeIngotMold_Mortar.Cast(item);
-    if (mortarIngotMold)
-    {
-      mortarIngotMold.ResetHeatTimer();
-    };
-    SRP_ForgeCrucible_Empty crucible = SRP_ForgeCrucible_Empty.Cast(item);
-    if (crucible)
-    {
-      crucible.ResetHeatTimer();
-    };
+      heatedItem.ResetHeatTimer();
+    }
 	}
 
   override void EEItemAttached ( EntityAI item, string slot_name ) 
@@ -256,92 +225,18 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
   override protected void AddTemperatureToItemByFire( ItemBase item )
 	{
     super.AddTemperatureToItemByFire(item);
-    
-    SRP_MetalBucket_Mortar mortarBucket = SRP_MetalBucket_Mortar.Cast(item);
-    float temperature = 0;
-    if (mortarBucket)
+
+    if (item && item.IsForgeHardened())
     {
-      mortarBucket.AddHealth( PARAM_BURN_DAMAGE_COEF );
-      mortarBucket.IncrementHeatTimer(1);
-      mortarBucket.HandleHardenEvent();
-      if ( mortarBucket.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
-      {
-        temperature = mortarBucket.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
-        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
-        mortarBucket.SetTemperature( temperature );
-      }
-    }
-    SRP_ForgeIngotMold_Mortar mortarIngotMold = SRP_ForgeIngotMold_Mortar.Cast(item);
-    if (mortarIngotMold)
-    {
-      mortarIngotMold.AddHealth( PARAM_BURN_DAMAGE_COEF );
-      mortarIngotMold.IncrementHeatTimer(1);
-      mortarIngotMold.HandleHardenEvent();
-      if ( mortarIngotMold.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
-      {
-        temperature = mortarIngotMold.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
-        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
-        mortarIngotMold.SetTemperature( temperature );
-      }
-    }
-    SRP_ForgeIngotMold_ColorBase filledIngotMold = SRP_ForgeIngotMold_ColorBase.Cast(item);
-    if (filledIngotMold && filledIngotMold.GetType() != "SRP_ForgeIngotMold_Mortar")
-    {
-      filledIngotMold.AddHealth( PARAM_BURN_DAMAGE_COEF );
-      if ( filledIngotMold.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
-      {
-        temperature = filledIngotMold.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
-        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
-        filledIngotMold.SetTemperature( temperature );
-      }
-    }
-    SRP_ForgeIngot_ColorBase ingot = SRP_ForgeIngot_ColorBase.Cast(item);
-    if (ingot)
-    {
-      ingot.AddHealth( PARAM_BURN_DAMAGE_COEF );
-      if ( ingot.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
-      {
-        temperature = ingot.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
-        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 500 );
-        ingot.SetTemperature( temperature );
-      }
-    }
-    SRP_ForgeCrucible_Empty crucible = SRP_ForgeCrucible_Empty.Cast(item);
-    if (crucible)
-    {
-      crucible.AddHealth( PARAM_BURN_DAMAGE_COEF );
-      crucible.IncrementHeatTimer(1);
-      crucible.HandleHardenEvent();
-      if ( crucible.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
-      {
-        temperature = crucible.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
-        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
-        crucible.SetTemperature( temperature );
-      }
-    }
-    SRP_ForgeCrucible_ColorBase filledCrucible = SRP_ForgeCrucible_ColorBase.Cast(item);
-    if (filledCrucible && filledCrucible.GetType() != "SRP_ForgeCrucible_Empty")
-    {
-      // Print("filled crucible: " + item.GetType() + " max temp: " + item.GetTemperatureMax() + " min heat min temp: " + PARAM_ITEM_HEAT_MIN_TEMP);
       item.AddHealth( PARAM_BURN_DAMAGE_COEF );
-      if ( item.GetTemperatureMax() >= PARAM_ITEM_HEAT_MIN_TEMP )
+      if (item.IsTransformedByHeat())
       {
-        temperature = item.GetTemperature() + PARAM_ITEM_HEAT_TEMP_INCREASE_COEF;
-        // Print("pre clamp: " + temperature);
-        temperature = Math.Clamp ( temperature, PARAM_ITEM_HEAT_MIN_TEMP, 1500 );
-        // Print("post clamp: " + temperature);
-        item.SetTemperature( temperature );
-        // Print("temperature: " + temperature);
+        item.IncrementHeatTimer(1);
+        item.HandleHeatTransformation();
       }
     }
 	}
 
-  // override protected void AddTemperatureToFireplace( float amount )
-	// {
-	// 	float temperature = GetTemperature();
-	// 	temperature = temperature + amount;
-	// 	SetTemperature( temperature );
-	// }
   override bool CanBeDeconstructed()
   {
     return true;

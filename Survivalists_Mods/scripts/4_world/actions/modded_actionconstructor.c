@@ -61,6 +61,7 @@ modded class ActionConstructor
     actions.Insert(ActionTurnRubixCubeClockwise_Z1);
     actions.Insert(ActionTurnRubixCubeClockwise_Z2);
 
+    actions.Insert(ActionSRPSwapBrassCasingOption);
     actions.Insert(ActionSRPRecolorClothingOption);
     actions.Insert(ActionSwitchLetterColorOption);
     actions.Insert(ActionSwitchLetterOption);

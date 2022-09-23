@@ -132,3 +132,19 @@ modded class HandSaw
 		AddAction(ActionSalvageCarWreck);
   }
 };
+
+modded class Pipe
+{
+  override bool IsSmeltable()
+  {
+    return true;
+  }
+};
+
+modded class MetalPlate
+{
+  override bool IsSmeltable()
+  {
+    return true;
+  }
+};

@@ -618,6 +618,8 @@ class CfgVehicles
 		{
 			"SRP_MetalPlate1",
       "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
       "Material_MetalWire",
       "Material_Shelter_Rope"      
 		};
