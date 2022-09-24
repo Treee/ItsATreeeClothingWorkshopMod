@@ -412,7 +412,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Red: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_red";
+    color="ruby";
 		displayName="Exquisite Gem - Ruby";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -428,7 +428,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Blue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_Blue";
+    color="sapphire";
 		displayName="Exquisite Gem - Sapphire";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -444,7 +444,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Green: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_Green";
+    color="jade";
 		displayName="Exquisite Gem - Emerald";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -460,7 +460,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Purple: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_Purple";
+    color="amethyst";
 		displayName="Exquisite Gem - Amethyst";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -476,7 +476,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_LightBlue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_lightblue";
+    color="aqua";
 		displayName="Exquisite Gem - Aquamarine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -492,7 +492,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Orange: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_orange";
+    color="amber";
 		displayName="Exquisite Gem - Citrine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -508,7 +508,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Clear: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_clear";
+    color="diamond";
 		displayName="Exquisite Gem - Diamond";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -524,7 +524,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Yellow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_yellow";
+    color="topaz";
 		displayName="Exquisite Gem - Topaz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -540,7 +540,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Pink: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_pink";
+    color="quartz";
 		displayName="Exquisite Gem - Quartz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -556,7 +556,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_A_Rainbow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="a_rainbow";
+    color="opal";
 		displayName="Exquisite Gem - Opal";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_a.p3d";
@@ -574,7 +574,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Red: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_red";
+    color="ruby";
 		displayName="Exquisite Gem - Ruby";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -590,7 +590,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Blue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_Blue";
+    color="sapphire";
 		displayName="Exquisite Gem - Sapphire";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -606,7 +606,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Green: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_Green";
+    color="jade";
 		displayName="Exquisite Gem - Emerald";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -622,7 +622,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Purple: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_Purple";
+    color="amethyst";
 		displayName="Exquisite Gem - Amethyst";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -638,7 +638,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_LightBlue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_lightblue";
+    color="aqua";
 		displayName="Exquisite Gem - Aquamarine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -654,7 +654,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Orange: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_orange";
+    color="amber";
 		displayName="Exquisite Gem - Citrine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -670,7 +670,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Clear: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_clear";
+    color="diamond";
 		displayName="Exquisite Gem - Diamond";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -686,7 +686,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Yellow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_yellow";
+    color="topaz";
 		displayName="Exquisite Gem - Topaz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -702,7 +702,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Pink: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_pink";
+    color="quartz";
 		displayName="Exquisite Gem - Quartz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -718,7 +718,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_B_Rainbow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="b_rainbow";
+    color="opal";
 		displayName="Exquisite Gem - Opal";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_b.p3d";
@@ -736,7 +736,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Red: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_red";
+    color="ruby";
 		displayName="Exquisite Gem - Ruby";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -752,7 +752,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Blue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_Blue";
+    color="sapphire";
 		displayName="Exquisite Gem - Sapphire";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -768,7 +768,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Green: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_Green";
+    color="jade";
 		displayName="Exquisite Gem - Emerald";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -784,7 +784,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Purple: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_Purple";
+    color="amethyst";
 		displayName="Exquisite Gem - Amethyst";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -800,7 +800,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_LightBlue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_lightblue";
+    color="aqua";
 		displayName="Exquisite Gem - Aquamarine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -816,7 +816,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Orange: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_orange";
+    color="amber";
 		displayName="Exquisite Gem - Citrine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -832,7 +832,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Clear: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_clear";
+    color="diamond";
 		displayName="Exquisite Gem - Diamond";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -848,7 +848,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Yellow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_yellow";
+    color="topaz";
 		displayName="Exquisite Gem - Topaz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -864,7 +864,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Pink: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_pink";
+    color="quartz";
 		displayName="Exquisite Gem - Quartz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -880,7 +880,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_C_Rainbow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="c_rainbow";
+    color="opal";
 		displayName="Exquisite Gem - Opal";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_c.p3d";
@@ -898,7 +898,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Red: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_red";
+    color="ruby";
 		displayName="Exquisite Gem - Ruby";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -914,7 +914,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Blue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_Blue";
+    color="sapphire";
 		displayName="Exquisite Gem - Sapphire";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -930,7 +930,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Green: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_Green";
+    color="jade";
 		displayName="Exquisite Gem - Emerald";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -946,7 +946,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Purple: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_Purple";
+    color="amethyst";
 		displayName="Exquisite Gem - Amethyst";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -962,7 +962,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_LightBlue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_lightblue";
+    color="aqua";
 		displayName="Exquisite Gem - Aquamarine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -978,7 +978,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Orange: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_orange";
+    color="amber";
 		displayName="Exquisite Gem - Citrine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -994,7 +994,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Clear: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_clear";
+    color="diamond";
 		displayName="Exquisite Gem - Diamond";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -1010,7 +1010,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Yellow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_yellow";
+    color="topaz";
 		displayName="Exquisite Gem - Topaz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -1026,7 +1026,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Pink: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_pink";
+    color="quartz";
 		displayName="Exquisite Gem - Quartz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -1042,7 +1042,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_D_Rainbow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="d_rainbow";
+    color="opal";
 		displayName="Exquisite Gem - Opal";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_d.p3d";
@@ -1060,7 +1060,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Red: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_red";
+    color="ruby";
 		displayName="Exquisite Gem - Ruby";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1076,7 +1076,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Blue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_Blue";
+    color="sapphire";
 		displayName="Exquisite Gem - Sapphire";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1092,7 +1092,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Green: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_Green";
+    color="jade";
 		displayName="Exquisite Gem - Emerald";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1108,7 +1108,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Purple: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_Purple";
+    color="amethyst";
 		displayName="Exquisite Gem - Amethyst";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1124,7 +1124,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_LightBlue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_lightblue";
+    color="aqua";
 		displayName="Exquisite Gem - Aquamarine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1140,7 +1140,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Orange: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_orange";
+    color="amber";
 		displayName="Exquisite Gem - Citrine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1156,7 +1156,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Clear: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_clear";
+    color="diamond";
 		displayName="Exquisite Gem - Diamond";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1172,7 +1172,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Yellow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_yellow";
+    color="topaz";
 		displayName="Exquisite Gem - Topaz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1188,7 +1188,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Pink: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_pink";
+    color="quartz";
 		displayName="Exquisite Gem - Quartz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1204,7 +1204,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_E_Rainbow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="e_rainbow";
+    color="opal";
 		displayName="Exquisite Gem - Opal";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
@@ -1222,7 +1222,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Red: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_red";
+    color="ruby";
 		displayName="Exquisite Gem - Ruby";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1238,7 +1238,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Blue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_Blue";
+    color="sapphire";
 		displayName="Exquisite Gem - Sapphire";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1254,7 +1254,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Green: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_Green";
+    color="jade";
 		displayName="Exquisite Gem - Emerald";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1270,7 +1270,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Purple: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_Purple";
+    color="amethyst";
 		displayName="Exquisite Gem - Amethyst";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1286,7 +1286,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_LightBlue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_lightblue";
+    color="aqua";
 		displayName="Exquisite Gem - Aquamarine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1302,7 +1302,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Orange: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_orange";
+    color="amber";
 		displayName="Exquisite Gem - Citrine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1318,7 +1318,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Clear: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_clear";
+    color="diamond";
 		displayName="Exquisite Gem - Diamond";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1334,7 +1334,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Yellow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_yellow";
+    color="topaz";
 		displayName="Exquisite Gem - Topaz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1350,7 +1350,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Pink: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_pink";
+    color="quartz";
 		displayName="Exquisite Gem - Quartz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1366,7 +1366,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_F_Rainbow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="f_rainbow";
+    color="opal";
 		displayName="Exquisite Gem - Opal";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_f.p3d";
@@ -1384,7 +1384,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Red: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_red";
+    color="ruby";
 		displayName="Exquisite Gem - Ruby";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1400,7 +1400,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Blue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_Blue";
+    color="sapphire";
 		displayName="Exquisite Gem - Sapphire";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1416,7 +1416,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Green: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_Green";
+    color="jade";
 		displayName="Exquisite Gem - Emerald";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1432,7 +1432,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Purple: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_Purple";
+    color="amethyst";
 		displayName="Exquisite Gem - Amethyst";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1448,7 +1448,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_LightBlue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_lightblue";
+    color="aqua";
 		displayName="Exquisite Gem - Aquamarine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1464,7 +1464,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Orange: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_orange";
+    color="amber";
 		displayName="Exquisite Gem - Citrine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1480,7 +1480,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Clear: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_clear";
+    color="diamond";
 		displayName="Exquisite Gem - Diamond";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1496,7 +1496,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Yellow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_yellow";
+    color="topaz";
 		displayName="Exquisite Gem - Topaz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1512,7 +1512,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Pink: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_pink";
+    color="quartz";
 		displayName="Exquisite Gem - Quartz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1528,7 +1528,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_G_Rainbow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="g_rainbow";
+    color="opal";
 		displayName="Exquisite Gem - Opal";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_g.p3d";
@@ -1546,7 +1546,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Red: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_red";
+    color="ruby";
 		displayName="Exquisite Gem - Ruby";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1562,7 +1562,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Blue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_Blue";
+    color="sapphire";
 		displayName="Exquisite Gem - Sapphire";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1578,7 +1578,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Green: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_Green";
+    color="jade";
 		displayName="Exquisite Gem - Emerald";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1594,7 +1594,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Purple: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_Purple";
+    color="amethyst";
 		displayName="Exquisite Gem - Amethyst";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1610,7 +1610,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_LightBlue: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_lightblue";
+    color="aqua";
 		displayName="Exquisite Gem - Aquamarine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1626,7 +1626,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Orange: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_orange";
+    color="amber";
 		displayName="Exquisite Gem - Citrine";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1642,7 +1642,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Clear: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_clear";
+    color="diamond";
 		displayName="Exquisite Gem - Diamond";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1658,7 +1658,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Yellow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_yellow";
+    color="topaz";
 		displayName="Exquisite Gem - Topaz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1674,7 +1674,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Pink: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_pink";
+    color="quartz";
 		displayName="Exquisite Gem - Quartz";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";
@@ -1690,7 +1690,7 @@ class CfgVehicles
   class SRP_Mining_Crystal_H_Rainbow: SRP_Mining_Crystal_ColorBase
 	{
 		scope=2;
-    color="h_rainbow";
+    color="opal";
 		displayName="Exquisite Gem - Opal";
 		descriptionShort="An exquisite gem pulled from the depths of the earth.";
     model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_h.p3d";

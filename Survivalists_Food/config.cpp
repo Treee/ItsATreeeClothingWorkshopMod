@@ -82,6 +82,219 @@ class CfgVehicles
     {
     };
   };
+  class StewStageTransitions
+  {
+    class Raw
+    {
+      class ToBaked
+      {
+        transition_to=2;
+        cooking_method=1;
+      };
+      class ToBoiled
+      {
+        transition_to=3;
+        cooking_method=2;
+      };
+      class ToDried
+      {
+        transition_to=4;
+        cooking_method=3;
+      };
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=1;
+      };
+      class ToRotten
+      {
+        transition_to=6;
+        cooking_method=4;
+      };
+    };
+    class Rotten
+    {
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=1;
+      };
+    };
+    class Baked
+    {
+      class ToBaked
+      {
+        transition_to=5;
+        cooking_method=1;
+      };
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=3;
+      };
+      class ToRotten
+      {
+        transition_to=6;
+        cooking_method=4;
+      };
+    };
+    class Boiled
+    {
+      class ToBoiled
+      {
+        transition_to=3;
+        cooking_method=2;
+      };
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=3;
+      };
+      class ToRotten
+      {
+        transition_to=6;
+        cooking_method=4;
+      };
+    };
+    class Dried
+    {
+      class ToBaked
+      {
+        transition_to=5;
+        cooking_method=1;
+      };
+      class ToBoiled
+      {
+        transition_to=3;
+        cooking_method=2;
+      };
+      class ToDried
+      {
+        transition_to=5;
+        cooking_method=3;
+      };
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=3;
+      };
+      class ToRotten
+      {
+        transition_to=6;
+        cooking_method=4;
+      };
+    };
+    class Burned
+    {
+    };
+  };
+  class FishStageTransitions
+  {
+    class Raw
+    {
+      class ToBaked
+      {
+        transition_to=2;
+        cooking_method=1;
+      };
+      class ToBoiled
+      {
+        transition_to=3;
+        cooking_method=2;
+      };
+      class ToDried
+      {
+        transition_to=4;
+        cooking_method=3;
+      };
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=1;
+      };
+      class ToRotten
+      {
+        transition_to=6;
+        cooking_method=4;
+      };
+    };
+    class Rotten
+    {
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=1;
+      };
+    };
+    class Baked
+    {
+      class ToBaked
+      {
+        transition_to=5;
+        cooking_method=1;
+      };
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=3;
+      };
+      class ToRotten
+      {
+        transition_to=6;
+        cooking_method=4;
+      };
+    };
+    class Boiled
+    {
+      class ToBoiled
+      {
+        transition_to=3;
+        cooking_method=2;
+      };
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=3;
+      };
+      class ToRotten
+      {
+        transition_to=6;
+        cooking_method=4;
+      };
+    };
+    class Dried
+    {
+      class ToBaked
+      {
+        transition_to=5;
+        cooking_method=1;
+      };
+      class ToBoiled
+      {
+        transition_to=3;
+        cooking_method=2;
+      };
+      class ToDried
+      {
+        transition_to=5;
+        cooking_method=3;
+      };
+      class ToBurned
+      {
+        transition_to=5;
+        cooking_method=3;
+      };
+      class ToRotten
+      {
+        transition_to=6;
+        cooking_method=4;
+      };
+    };
+    class Burned
+    {
+    };
+  };
+
   class BaseFoodStageTransitions;
   class FoodAnimationSources;
   class MeatStageTransitions;
@@ -169,6 +382,34 @@ class CfgVehicles
 			};
 			class FoodStageTransitions: MeatStageTransitions
 			{
+        class Raw
+        {
+          class ToBaked
+          {
+            transition_to=2;
+            cooking_method=1;
+          };
+          class ToBoiled
+          {
+            transition_to=3;
+            cooking_method=2;
+          };
+          class ToDried
+          {
+            transition_to=4;
+            cooking_method=3;
+          };
+          class ToBurned
+          {
+            transition_to=5;
+            cooking_method=3;
+          };
+          class ToRotten
+          {
+            transition_to=6;
+            cooking_method=4;
+          };
+        };
 				class Baked
 				{
 					class ToRotten
@@ -1789,7 +2030,7 @@ class CfgVehicles
 				{
 					visual_properties[]={-1,-1,-1};
 					nutrition_properties[]={2,200,150,1,0};
-					cooking_properties[]={70,55};
+					cooking_properties[]={70,300};
 				};
 				class Dried
 				{
@@ -1804,7 +2045,7 @@ class CfgVehicles
 					cooking_properties[]={100,660};
 				};
 			};
-			class FoodStageTransitions: MeatStageTransitions{};
+			class FoodStageTransitions: StewStageTransitions{};
 		};
 		class DamageSystem
 		{
@@ -1949,7 +2190,7 @@ class CfgVehicles
 					cooking_properties[]={100,60};
 				};
 			};
-			class FoodStageTransitions: MeatStageTransitions{};
+			class FoodStageTransitions: FishStageTransitions{};
 		};
 		class AnimEvents
 		{
@@ -2094,7 +2335,7 @@ class CfgVehicles
 					cooking_properties[]={100,320};
 				};
 			};
-      class FoodStageTransitions: MeatStageTransitions
+      class FoodStageTransitions: StewStageTransitions
 			{
 			};
 		};
@@ -2222,7 +2463,7 @@ class CfgVehicles
 					cooking_properties[]={100,320};
 				};
 			};
-      class FoodStageTransitions: MeatStageTransitions
+      class FoodStageTransitions: StewStageTransitions
 			{
 			};
 		};
@@ -2287,7 +2528,7 @@ class CfgVehicles
 					cooking_properties[]={100,320};
 				};
 			};
-      class FoodStageTransitions: MeatStageTransitions
+      class FoodStageTransitions: StewStageTransitions
 			{
 			};
 		};

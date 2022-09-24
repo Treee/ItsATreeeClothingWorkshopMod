@@ -24,7 +24,9 @@ modded class PluginRecipesManager
 
     RegisterRecipe(new Craft_SRP_CrushLargeStone_CrudeTool);
     RegisterRecipe(new Craft_SRP_CrushStoneChunk_CrudeTool);
+    RegisterRecipe(new Craft_SRP_CrushStoneChunk_JewlingTool);
     RegisterRecipe(new Craft_SRP_RefineUnCutGem_CrudeTool);
+    RegisterRecipe(new Craft_SRP_RefineUnCutGem_JewlCuttingTool);
     RegisterRecipe(new Craft_SRP_CrucibleEmptyLime);
     RegisterRecipe(new Craft_SRP_CrucibleEmptyMortar);
     RegisterRecipe(new Craft_SRP_MetalBucket);

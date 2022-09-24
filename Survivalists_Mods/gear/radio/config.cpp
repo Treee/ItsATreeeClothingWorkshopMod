@@ -901,7 +901,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Sl3nder Malice Ft. Wavy Jone";
-		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		descriptionShort="Music Tape - Credit |  Henry De Ville |";
 		class CfgCassette
 		{
 			soundSet="SRPRadio_IslandGeorge_SlenderMalice_SoundSet1";

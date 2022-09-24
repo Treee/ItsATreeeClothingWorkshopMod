@@ -182,6 +182,122 @@ class CfgVehicles
 	};
 
   // ---------------------------- Custom Stuff
+  class WeaponCleaningKit_JewlersKit : Inventory_Base 
+  {
+    scope=2;
+    displayName="Jewlers Kit";
+    descriptionShort="A kit for assembling jewels on finely crafted settings.";
+		model="\dz\gear\tools\cleaning_kit_wood.p3d";
+    itemsCargoSize[]={0,0};
+		debug_ItemCategory=2;
+		animClass="Knife";
+		rotationFlags=17;
+		stackedUnit="percentage";
+		quantityBar=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		weight=780;
+		itemSize[]={2,3};
+		fragility=0.0099999998;
+    hiddenSelections[]= {"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\cleaning_kit_jewling_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1.0,{"DZ\gear\tools\data\cleaning_kit_wood.rvmat"}},						
+						{0.69999999,{"DZ\gear\tools\data\cleaning_kit_wood.rvmat"}},						
+						{0.5,{"DZ\gear\tools\data\cleaning_kit_wood_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\tools\data\cleaning_kit_wood_damage.rvmat"}},						
+						{0.0,{"DZ\gear\tools\data\cleaning_kit_wood_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+  };
+  class LeatherSewingKit_JewelCuttingTools: Inventory_Base
+	{
+		scope=2;
+		displayName="Jewel Cutting Tools";
+		descriptionShort="A set of tools meant for finely cutting gems.";
+		model="\dz\gear\tools\leather_sewing_kit.p3d";
+		debug_ItemCategory=2;
+		animClass="Knife";
+		rotationFlags=1;
+		stackedUnit="percentage";
+		quantityBar=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		weight=1200;
+		itemSize[]={2,3};
+		fragility=0.0099999998;
+    hiddenSelections[]= {"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\leather_sewing_kit_jewlcuttingtools_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"DZ\gear\tools\data\leather_sewing_kit.rvmat"}},
+						{0.69999999,{"DZ\gear\tools\data\leather_sewing_kit.rvmat"}},
+						{0.5,{"DZ\gear\tools\data\leather_sewing_kit_damage.rvmat"}},
+						{0.30000001,{"DZ\gear\tools\data\leather_sewing_kit_damage.rvmat"}},
+						{0.0,{"DZ\gear\tools\data\leather_sewing_kit_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class Stitch
+				{
+					soundSet="StitchUpSelf_SoundSet";
+					id=201;
+				};
+				class pickup
+				{
+					soundSet="sewingkit_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="sewingkit_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 
   class HammerMint_Emporium: Hammer
 	{
