@@ -993,6 +993,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\m65_jacket_leather_co.paa"
 		};
 	};
+  class M65Jacket_MadhatterNavy: M65Jacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\m65_jacket_Madhatter_navy_co.paa",
+			"Survivalists_Retextures\characters\tops\data\m65_jacket_Madhatter_navy_co.paa",
+			"Survivalists_Retextures\characters\tops\data\m65_jacket_Madhatter_navy_co.paa"
+		};
+	};
 	class GorkaEJacket_MTP: GorkaEJacket_ColorBase
 	{
 		scope=2;

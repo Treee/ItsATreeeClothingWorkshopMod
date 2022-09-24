@@ -20,14 +20,7 @@ class CfgVehicles
   class Stone;
   class Paper;
   class Box_Base;
-hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\crafting\data\birch_bark_irradiated_co.paa"
-		};
+
   //--------------------------------------------- BASE GAME OVERRIDES
 	class Battery9V: Inventory_Base
 	{
@@ -132,7 +125,11 @@ hiddenSelections[]=
 			"Survivalists_Mods\gear\consumables\data\matchbox_espen_co.paa"
 		};
   };
-
+  class GasMask_Filter: Inventory_Base
+	{
+		itemSize[]={1,2};
+  };
+  
   // windstride override
   class HumanSkull: Inventory_Base
   {

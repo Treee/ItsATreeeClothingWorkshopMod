@@ -34,6 +34,7 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=12;
+    varTemperatureMax=1500;
     absorbency=0;
     varWetMax=0;
 		inventorySlot[]={};
@@ -132,7 +133,6 @@ class CfgVehicles
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_platinum_co.paa"
 		};
 	};
-
   class SRP_Mining_StoneChunk_Silver: SRP_Mining_StoneChunk_ColorBase
 	{
 		scope=2;
@@ -349,6 +349,7 @@ class CfgVehicles
 		displayName="Raw Coal Ore";
 		descriptionShort="Raw coal. Ready to be burned.";
     color="zinc";
+    inventorySlot[]={"SRP_FuelCoal"};
     hiddenSelections[]=
 		{
 			"zbytek"

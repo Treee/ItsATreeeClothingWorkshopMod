@@ -1967,6 +1967,13 @@ class CfgSlots
 		displayName = "Copper Wire";
 		ghostIcon="set:dayz_inventory image:metalwire";
 	};
+  class Slot_SRP_FuelCoal
+	{
+		name = "SRP_FuelCoal";
+		displayName = "Coal";
+		ghostIcon="set:dayz_inventory image:stones";
+    stackMax=1;
+	};
 };
 
 class CfgNonAIVehicles

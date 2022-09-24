@@ -5,7 +5,12 @@ modded class FireplaceBase
 	const float FUEL_BURN_RATE_OVEN					= 0.20; // 0.85 by default; 75% reduction
 
   int m_IrradiatedFuelCount = 0;
-  
+
+  // override bool CanPutInCargo( EntityAI parent )
+	// {
+	// 	return false;
+	// }
+
 	override void EEItemAttached(EntityAI item, string slot_name)
 	{
 		super.EEItemAttached( item, slot_name );

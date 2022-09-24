@@ -30,6 +30,21 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 		super.AddDamageToItemByFire(item, can_be_ruined);
 	}
 
+  override protected void SpendFireConsumable( float amount )
+	{
+    ItemBase coal;
+    if (Class.CastTo(coal, GetItemOnSlot("SRP_FuelCoal")))
+    {
+      coal.AddHealth(-(amount/2));
+      // Print("coal hp: " + coal.GetHealth());
+      if (coal.GetHealth() < 1)
+      {
+        coal.Delete();
+      }
+    }
+    super.SpendFireConsumable(amount);
+	}
+
   // Undestroyable
   override string GetInvulnerabilityTypeString()
 	{
@@ -53,6 +68,28 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 		return false;
 	}
 
+  override protected void SetFuelBurnRateMP( float value )
+	{
+    super.SetFuelBurnRateMP(value);
+    // Print("setting fuel burn rate: " + value);		
+	}
+
+  override void RefreshFireplaceVisuals()
+  {
+    super.RefreshFireplaceVisuals();
+    
+    if (GetItemOnSlot("SRP_FuelCoal") != null)
+    {
+      // Print("Fuel is attached");
+      SetFuelBurnRateMP(0.35);
+    }
+    else
+    {
+      // Print("Fuel is not attached");
+      SetFuelBurnRateMP(1);
+    }
+  }
+
   override void EECargoOut(EntityAI item)
 	{
 		super.EECargoOut(item);
@@ -75,7 +112,6 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 			//add to consumables
 			AddToFireConsumables ( item_base );
 		}
-
 		//refresh fireplace visuals
 		RefreshFireplaceVisuals();
 	}
@@ -130,7 +166,7 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     }
 
     // tool attachments
-    if (item && item.GetType() == "SRP_AdvancedStoneForgeWorkbench_Bellows")
+    if (item && item.GetType() == "SRP_AdvancedStoneForgeWorkbench_Bellows" || item.GetType() == "SRP_Mining_RawOre_Coal")
     {
       return super.CanReceiveAttachment(attachment, slotId);
     }
@@ -149,7 +185,11 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     {
       return super.CanLoadAttachment(attachment);
     }
-
+    // tool attachments
+    if (item && item.GetType() == "SRP_AdvancedStoneForgeWorkbench_Bellows" || item.GetType() == "SRP_Mining_RawOre_Coal")
+    {
+      return super.CanLoadAttachment(attachment);
+    }
 		return false;
 	}
 

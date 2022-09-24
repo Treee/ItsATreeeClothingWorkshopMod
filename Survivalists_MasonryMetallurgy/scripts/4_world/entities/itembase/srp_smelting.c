@@ -437,6 +437,49 @@ class SRP_ForgeCrucible_Silver extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Zinc extends SRP_ForgeCrucible_ColorBase{};
 class SRP_ForgeCrucible_Brass extends SRP_ForgeCrucible_ColorBase{};
 
+//======================================================= Chunks
+class SRP_Mining_StoneChunk_ColorBase extends ItemBase
+{
+  override protected bool CanHaveTemperature()
+	{
+		return true;
+	}
+  override bool IsForgeHardened()
+  {
+    return true;
+  }
+};
+class SRP_Mining_StoneChunk_Copper extends SRP_Mining_StoneChunk_ColorBase{};
+class SRP_Mining_StoneChunk_Iron extends SRP_Mining_StoneChunk_ColorBase{};
+class SRP_Mining_StoneChunk_Tin extends SRP_Mining_StoneChunk_ColorBase{};
+class SRP_Mining_StoneChunk_Gold extends SRP_Mining_StoneChunk_ColorBase{};
+class SRP_Mining_StoneChunk_Platinum extends SRP_Mining_StoneChunk_ColorBase{};
+class SRP_Mining_StoneChunk_Silver extends SRP_Mining_StoneChunk_ColorBase{};
+class SRP_Mining_StoneChunk_Zinc extends SRP_Mining_StoneChunk_ColorBase{};
+class SRP_Mining_StoneChunk_Clay extends SRP_Mining_StoneChunk_ColorBase{};
+class SRP_Mining_StoneChunk_Coke extends SRP_Mining_StoneChunk_ColorBase
+{
+  override void HandleHeatTransformation()
+  {
+    // Print(" Heat event: " + m_HeatCounter);
+    // should be like 10 minutes or so
+    if (GetHeatTimer() > 10 && GetQuantity() > 5)
+    {
+      GetGame().CreateObjectEx("SRP_Mining_RawOre_Coal", GetPosition(), false);
+      AddQuantity(-6);
+    }
+  }
+  
+  override int GetHeatTimerThreshold()
+  {
+    return 1200;
+  }
+  override bool IsTransformedByHeat()
+  {
+    return true;
+  }
+};
+
 //======================================================= ORE
 class SRP_Mining_RawOre_ColorBase extends ItemBase{};
 class SRP_Mining_RawOre_Copper extends SRP_Mining_RawOre_ColorBase{};

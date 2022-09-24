@@ -103,6 +103,7 @@ class CfgVehicles
 			"MedicalBandage",
 			"Paper",
 			"Bark",
+      "SRP_FuelCoal"
 		};
 		class Cargo
 		{
@@ -119,7 +120,8 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"Firewood",
-					"WoodenStick"
+					"WoodenStick",
+          "SRP_FuelCoal"
 				};
 				icon="set:dayz_inventory image:cat_fp_fuel";
 			};
@@ -212,6 +214,7 @@ class CfgVehicles
 			"MedicalBandage",
 			"Paper",
 			"Bark",
+      "SRP_FuelCoal"
 		};
 		class Cargo
 		{
@@ -238,7 +241,8 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"Firewood",
-					"WoodenStick"
+					"WoodenStick",
+          "SRP_FuelCoal"
 				};
 				icon="set:dayz_inventory image:cat_fp_fuel";
 			};

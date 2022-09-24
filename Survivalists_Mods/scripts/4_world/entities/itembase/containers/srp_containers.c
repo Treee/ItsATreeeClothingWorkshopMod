@@ -550,9 +550,30 @@ class SRP_MetalBarrel_Concrete extends SRP_MetalBarrel_Colorbase
 };
 
 class SRP_MetalBox extends SRP_Container_Base{};
-class SRP_Fridge extends SRP_Container_Base{};
-class SRP_FridgeLarge extends SRP_Container_Base{};
-class SRP_FridgeRetro extends SRP_Container_Base{};
+class SRP_Fridge extends SRP_Container_Base
+{
+  override bool CanReceiveItemIntoCargo (EntityAI item)
+	{
+    Edible_Base edible;
+    if (Class.CastTo(edible, item))
+    {
+      return true;
+    }
+		return false;
+	}
+
+  override bool CanLoadItemIntoCargo( EntityAI item )
+  {
+		Edible_Base edible;
+    if (Class.CastTo(edible, item))
+    {
+      return true;
+    }
+		return false;
+  }
+};
+class SRP_FridgeLarge extends SRP_Fridge{};
+class SRP_FridgeRetro extends SRP_Fridge{};
 
 //======================================================== Wooden shelfs
 class SRP_WoodenShelfSimple extends SRP_Container_Base
@@ -1020,4 +1041,25 @@ class SRP_WoodenBox_Square extends SRP_Openable_Container
   }
 };
 class SRP_MedicalCurtains extends SRP_Openable_Container{};
-class SRP_FridgeMinsk extends SRP_Openable_Container{};
+class SRP_FridgeMinsk extends SRP_Openable_Container
+{
+  override bool CanReceiveItemIntoCargo (EntityAI item)
+	{
+    Edible_Base edible;
+    if (Class.CastTo(edible, item))
+    {
+      return true;
+    }
+		return false;
+	}
+
+  override bool CanLoadItemIntoCargo( EntityAI item )
+  {
+		Edible_Base edible;
+    if (Class.CastTo(edible, item))
+    {
+      return true;
+    }
+		return false;
+  }
+};
