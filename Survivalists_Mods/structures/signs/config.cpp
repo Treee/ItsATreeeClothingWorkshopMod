@@ -1647,6 +1647,20 @@ class CfgVehicles
 		};
 	};
 
+  class SRPInvestor_Sign_Rekis8853_House: HouseNoDestruct
+	{
+		scope=1;
+    model="Survivalists_Mods\structures\signs\SRP_CollectableSign_wide.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_collectablesign_rekis_co.paa"
+		};
+	};
+
   class SRP_PictureFrame: Container_Base
 	{
 		scope=0;
