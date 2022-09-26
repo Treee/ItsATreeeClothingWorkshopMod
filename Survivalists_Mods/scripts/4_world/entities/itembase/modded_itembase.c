@@ -8,11 +8,10 @@ modded class ItemBase
     // Print("OnWasAttached");
     if (IsSprintRemoved())
     {
-      EntityAI owner = GetHierarchyRootPlayer();        
-      if (owner && owner.IsPlayer())
+      PlayerBase player = PlayerBase.Cast(parent);
+  		if (player)
       {
-        PlayerBase owner_PB = PlayerBase.Cast(owner);
-        owner_PB.SetIsSprintDisabled(true);
+        player.SetIsSprintDisabledByHeavyItemEquipped(true);
       }
     }    
 	}
@@ -25,7 +24,7 @@ modded class ItemBase
       PlayerBase player = PlayerBase.Cast(parent);
   		if (player)
       {
-        player.SetIsSprintDisabled(false);
+        player.SetIsSprintDisabledByHeavyItemEquipped(false);
       }
     }
 	}

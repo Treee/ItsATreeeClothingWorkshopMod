@@ -12,6 +12,9 @@ modded class PlayerBase
   protected bool m_IsNearComfortHeatSource = false;
   protected bool m_TirednessSprintOverride = false;
   protected int m_DisableSprint = 0;
+  protected bool m_HeavyItemInHandsSprintDisable = false;
+  protected bool m_HeavyItemEquippedSprintDisable = false;
+
   protected float m_TotalAlcoholInStomach = 0;
   protected float m_AccumulatedAlcoholCheck = 0;
 
@@ -121,10 +124,20 @@ modded class PlayerBase
       return false;
     }
 
-    if (IsSprintDisabled())
+    if (IsSprintDisabledByHeavyItemInHands())
     {
       return false;
     }
+
+    if (IsSprintDisabledByHeavyItemEquipped())
+    {
+      return false;
+    }
+
+    // if (IsSprintDisabled())
+    // {
+    //   return false;
+    // }
 
     return super.CanSprint();
   }
@@ -243,6 +256,27 @@ modded class PlayerBase
     return protection;
   }
 
+  //new
+  bool IsSprintDisabledByHeavyItemInHands()
+  {
+    return m_HeavyItemInHandsSprintDisable;
+  }
+  void SetIsSprintDisabledByHeavyItemInHands(bool isDisabled)
+  {
+    m_HeavyItemInHandsSprintDisable = isDisabled;
+  }
+
+  // new
+  bool IsSprintDisabledByHeavyItemEquipped()
+  {
+    return m_HeavyItemEquippedSprintDisable;
+  }
+  void SetIsSprintDisabledByHeavyItemEquipped(bool isDisabled)
+  {
+    m_HeavyItemEquippedSprintDisable = isDisabled;
+  }
+
+  // old
   bool IsSprintDisabled()
   {
     return m_DisableSprint > 0;
