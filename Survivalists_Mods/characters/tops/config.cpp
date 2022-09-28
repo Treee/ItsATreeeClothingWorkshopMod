@@ -670,6 +670,27 @@ class CfgVehicles
     hiddenSelections[] = {"zbytek", "leftarmroll", "rightarmroll"};
 	};
 
+  class Leather_Cloak_ColorBase: Clothing
+	{
+    rootClassName="Leather_Cloak_down";
+    colorVariants[]=
+    {      
+      "Blue",
+      "Coffee",
+      "Green",
+      "Grey",
+      "HeartsBlue",
+      "HeartsPink",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Red",
+      "Snow",
+      "Teal",
+      "Yellow",
+    };
+	};
+
   //===================== CUSTOM SHIRTS
 
   class SRP_PlatHoodie: Clothing

@@ -24,6 +24,8 @@ class CfgVehicles
 	class Layered_Shirt_Base;
   class Skinny_Jeans_ColorBase;
   class Scarf_ColorBase;
+  class Leather_Cloak_down;
+  class Leather_Cloak_up;
 
 	class Layered_Shirt_Cheburashka: Layered_Shirt_Base
 	{
@@ -451,4 +453,186 @@ class CfgVehicles
       "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_pink_Yellow_co.paa"
     };
   };
+	class Leather_Cloak_down_blue: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_blue";
+    color="blue";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_blue_co.paa"};
+	};
+	class Leather_Cloak_up_blue: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_blue";
+    color="blue";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_blue_co.paa"};
+	};
+  class Leather_Cloak_down_coffee: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_coffee";
+    color="coffee";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_coffee_co.paa"};
+	};
+	class Leather_Cloak_up_coffee: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_coffee";
+    color="coffee";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_coffee_co.paa"};
+	};
+  class Leather_Cloak_down_green: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_green";
+    color="green";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_green_co.paa"};
+	};
+	class Leather_Cloak_up_green: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_green";
+    color="green";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_green_co.paa"};
+	};
+  class Leather_Cloak_down_grey: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_grey";
+    color="grey";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_grey_co.paa"};
+	};
+	class Leather_Cloak_up_grey: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_grey";
+    color="grey";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_grey_co.paa"};
+	};
+  class Leather_Cloak_down_heartsblue: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_heartsblue";
+    color="heartsblue";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_heartsblue_co.paa"};
+	};
+	class Leather_Cloak_up_heartsblue: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_heartsblue";
+    color="heartsblue";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_heartsblue_co.paa"};
+	};
+  class Leather_Cloak_down_heartspink: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_heartspink";
+    color="heartspink";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_heartspink_co.paa"};
+	};
+	class Leather_Cloak_up_heartspink: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_heartspink";
+    color="heartspink";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_heartspink_co.paa"};
+	};
+  class Leather_Cloak_down_orange: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_orange";
+    color="orange";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_orange_co.paa"};
+	};
+	class Leather_Cloak_up_orange: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_orange";
+    color="orange";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_orange_co.paa"};
+	};
+  class Leather_Cloak_down_pink: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_pink";
+    color="pink";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_pink_co.paa"};
+	};
+	class Leather_Cloak_up_pink: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_pink";
+    color="pink";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_pink_co.paa"};
+	};
+  class Leather_Cloak_down_purple: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_purple";
+    color="purple";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_purple_co.paa"};
+	};
+	class Leather_Cloak_up_purple: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_purple";
+    color="purple";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_purple_co.paa"};
+	};
+  class Leather_Cloak_down_red: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_red";
+    color="red";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_red_co.paa"};
+	};
+	class Leather_Cloak_up_red: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_red";
+    color="red";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_red_co.paa"};
+	};
+  class Leather_Cloak_down_snow: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_snow";
+    color="snow";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_snow_co.paa"};
+	};
+	class Leather_Cloak_up_snow: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_snow";
+    color="snow";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_snow_co.paa"};
+	};
+  class Leather_Cloak_down_teal: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_teal";
+    color="teal";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_teal_co.paa"};
+	};
+	class Leather_Cloak_up_teal: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_teal";
+    color="teal";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_teal_co.paa"};
+	};
+  class Leather_Cloak_down_yellow: Leather_Cloak_down
+	{
+		scope=2;
+		transformation_hood="Leather_Cloak_up_yellow";
+    color="yellow";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_yellow_co.paa"};
+	};
+	class Leather_Cloak_up_yellow: Leather_Cloak_up
+	{
+		scope=2;
+		transformation_nohood="Leather_Cloak_down_yellow";
+    color="yellow";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_yellow_co.paa"};
+	};
 };

@@ -6,10 +6,10 @@ modded class FireplaceBase
 
   int m_IrradiatedFuelCount = 0;
 
-  // override bool CanPutInCargo( EntityAI parent )
-	// {
-	// 	return false;
-	// }
+  override bool CanPutInCargo( EntityAI parent )
+	{
+		return false;
+	}
 
 	override void EEItemAttached(EntityAI item, string slot_name)
 	{
