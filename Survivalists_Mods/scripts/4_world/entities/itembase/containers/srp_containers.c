@@ -103,6 +103,19 @@ class SRP_WornWorkbench extends SRP_DeployableContainer_Base
   {
     return true;
   }
+
+  bool HasAllAttachments()
+  {
+    if (GetItemOnSlot("SRP_WoodDrill") == NULL)
+    {
+      return false;
+    }
+    if (GetItemOnSlot("SRP_WoodClamp") == NULL)
+    {
+      return false;
+    }
+    return true;
+  }
 };
 class SRP_WornWorkbench_Metal extends SRP_DeployableContainer_Base
 {

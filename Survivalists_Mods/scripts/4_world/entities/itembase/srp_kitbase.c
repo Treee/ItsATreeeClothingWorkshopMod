@@ -1,3 +1,30 @@
+class TurnItemIntoItemLambda_KitDeployment : TurnItemIntoItemLambda
+{
+	vector m_DeployPosition;
+  vector m_DeployOrientation;
+
+	void TurnItemIntoItemLambda_KitDeployment (EntityAI old_item, string new_item_type, PlayerBase player, vector deployPosition="0 0 0", vector deployOrientation="0 0 0") 
+  {
+    m_DeployPosition = deployPosition;
+    m_DeployOrientation = deployOrientation;
+  }
+
+	override void CopyOldPropertiesToNew (notnull EntityAI old_item, EntityAI new_item)
+	{
+		super.CopyOldPropertiesToNew(old_item, new_item);
+
+		if (new_item) 
+		{							
+      new_item.SetPosition(m_DeployPosition);
+      new_item.SetOrientation(m_DeployOrientation);
+		}
+		else
+		{
+			Debug.LogError("TurnItemIntoItemLambda_KitDeployment: failed to create new item and place it","static");
+		}
+	}
+};
+
 class SRP_KitBase extends ItemBase 
 {
   override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
@@ -5,23 +32,35 @@ class SRP_KitBase extends ItemBase
 		super.OnPlacementComplete(player, position, orientation);
 		if (GetGame().IsDedicatedServer())
 		{
-      // Print("Placing object: " + GetKitItemName());
-			EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(GetKitItemName(), position, ECE_PLACE_ON_SURFACE));			
-      if (kitItem)
+      PlayerBase playerPB = PlayerBase.Cast(player);
+      if (player)
       {
-        kitItem.SetPosition(position);
-        kitItem.SetOrientation(orientation);
-        // ItemBase item = ItemBase.Cast(kitItem);
-        // if (item)
-        // {
-        //   item.SetHealth(item.GetHealth() * 0.1);
-        // }
+        float deploymentCost = GetMaxHealth() * 0.05;
+        AddHealth(-deploymentCost);
+        // Print("Placing object: " + GetKitItemName());
+        TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(this, GetKitItemName(), playerPB, position, orientation);
+        lambda.SetTransferParams(false, false);
+        MiscGameplayFunctions.TurnItemIntoItemEx(playerPB, lambda);
       }
+
+
+
+			// EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(GetKitItemName(), position, ECE_PLACE_ON_SURFACE));			
+      // if (kitItem)
+      // {
+      //   kitItem.SetPosition(position);
+      //   kitItem.SetOrientation(orientation);
+      //   // ItemBase item = ItemBase.Cast(kitItem);
+      //   // if (item)
+      //   // {
+      //   //   item.SetHealth(item.GetHealth() * 0.1);
+      //   // }
+      // }
       if (m_AdminLog)
       {            
         m_AdminLog.OnPlacementComplete( player, this);
       }
-      GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(Delete, 1000, false);
+      // GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(Delete, 1000, false);
 		}
 	}
 

@@ -72,19 +72,20 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
 		Debug.Log("Deconstruct_PlacedObjectKit: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");    
-    
-    if (Math.RandomIntInclusive(1, 20) > 3)
+    string newItemName = "";
+    // if the item has no crafting kit for itself (since this is crude crafting)
+    if (ingredients[0].GetCraftingKitName() == "")
     {
-      // if the item has no crafting kit for itself (since this is crude crafting)
-      if (ingredients[0].GetCraftingKitName() == "")
-      {
-        GetGame().CreateObjectEx(ingredients[0].GetKitName(), player.GetPosition(), false);
-      }    
-      else // else the item has crafting kit for itself (since this is crude crafting)
-      {
-        GetGame().CreateObjectEx(ingredients[0].GetCraftingKitName(), player.GetPosition(), false);
-      }
+      newItemName = ingredients[0].GetKitName();
+    }    
+    else // else the item has crafting kit for itself (since this is crude crafting)
+    {
+      newItemName = ingredients[0].GetCraftingKitName();
     }
+
+    TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(ingredients[0], newItemName, player, player.GetPosition());
+    lambda.SetTransferParams(false, false);
+    MiscGameplayFunctions.TurnItemIntoItemEx(player, lambda);
 
     PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
     if (m_AdminLog)
@@ -158,7 +159,7 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
     // only deconstruct items that can be deconstructed AND are empty
 		if (ingredients[0].CanBeDeconstructed() && ingredients[0].IsEmpty())
     {
-      m_IngredientAddHealth[1] = -Math.RandomIntInclusive(0,5); 
+      m_IngredientAddHealth[1] = -Math.RandomIntInclusive(0,3); 
       return true;
     }
     return false;
@@ -167,22 +168,22 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
 		Debug.Log("Deconstruct_PlacedObjectKit_Advanced: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
-    EntityAI kit = EntityAI.Cast(GetGame().CreateObjectEx(ingredients[0].GetKitName(), player.GetPosition(), false));
-    // SRP_KitBase.Cast( GetGame().CreateObjectEx(ingredients[0].GetType()+"_Kit", player.GetPosition(), false) );
-    if (kit)
-    {
-      PowerTool_ElectricHandDrill tool = PowerTool_ElectricHandDrill.Cast(ingredients[1]);
-      if (tool)
-      {
-        tool.ConsumeBattery(Math.RandomIntInclusive(200,400));
-      }
+   
+    TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(ingredients[0], ingredients[0].GetKitName(), player, player.GetPosition());
+    lambda.SetTransferParams(false, false);
+    MiscGameplayFunctions.TurnItemIntoItemEx(player, lambda);
 
-      PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
-      if (m_AdminLog)
-      {
-        m_AdminLog.DirectAdminLogPrint("||DECONSTRUCTION||");
-        m_AdminLog.OnPlacementComplete( player, ingredients[0]);
-      }
+    PowerTool_ElectricHandDrill tool = PowerTool_ElectricHandDrill.Cast(ingredients[1]);
+    if (tool)
+    {
+      tool.ConsumeBattery(Math.RandomIntInclusive(200,400));
+    }
+
+    PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
+    if (m_AdminLog)
+    {
+      m_AdminLog.DirectAdminLogPrint("||DECONSTRUCTION||");
+      m_AdminLog.OnPlacementComplete( player, ingredients[0]);
     }
 	}
 };
