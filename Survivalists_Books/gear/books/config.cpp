@@ -90,6 +90,19 @@ class CfgVehicles
   };
 
   //============================= 
+  class SRP_ReadableBook_HistoryOfCannibalism: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Cannibal History of Deer Isle";
+		author="The Librarian";
+		file="Survivalists_Books\gear\books\data\book_canibalismhistory.html";
+		displayName="Cannibal History of Deer Isle";
+		descriptionShort="A brief history of cannibalism on Deer Isle";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Books\gear\books\data\book_canibalismhistory_co.paa"
+		};
+	};
   class SRP_ReadableBook_HuntingOnDeerIsle: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
