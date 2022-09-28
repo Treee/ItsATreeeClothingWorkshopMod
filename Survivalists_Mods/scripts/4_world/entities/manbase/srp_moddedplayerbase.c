@@ -94,7 +94,11 @@ modded class PlayerBase
       ItemBase ibCast = ItemBase.Cast(item);
       if (ibCast.IsSprintRemoved())
       {
-        SetIsSprintDisabled(true);
+        SetIsSprintDisabledByHeavyItemInHands(true);
+      }
+      if (ibCast.IsContainerFilledToRemoveSprint(80))
+      {
+        SetIsSprintDisabledByHeavyItemInHands(true);
       }
     }
 	}
@@ -104,16 +108,9 @@ modded class PlayerBase
 		super.EEItemOutOfHands( item );
     // Print("Item going out of hands: " + item.GetType());
 		if (item)
-    {
-      ItemBase ibCast = ItemBase.Cast(item);
-      if (ibCast.IsSprintRemoved())
-      {
-        SetIsSprintDisabled(false);
-      }
-      if (ibCast.IsContainerFilledToRemoveSprint(80))
-      {
-        SetIsSprintDisabled(false);
-      }
+    {      
+      // always clear this bool when things get out of hand. haha
+      SetIsSprintDisabledByHeavyItemInHands(false);
     }
 	}
 
@@ -126,18 +123,15 @@ modded class PlayerBase
 
     if (IsSprintDisabledByHeavyItemInHands())
     {
+      // Print("heavy item in hands");
       return false;
     }
 
     if (IsSprintDisabledByHeavyItemEquipped())
     {
+      // Print("heavy item equipped");
       return false;
     }
-
-    // if (IsSprintDisabled())
-    // {
-    //   return false;
-    // }
 
     return super.CanSprint();
   }
@@ -274,28 +268,6 @@ modded class PlayerBase
   void SetIsSprintDisabledByHeavyItemEquipped(bool isDisabled)
   {
     m_HeavyItemEquippedSprintDisable = isDisabled;
-  }
-
-  // old
-  bool IsSprintDisabled()
-  {
-    return m_DisableSprint > 0;
-  }
-
-  void SetIsSprintDisabled(bool isDisabled)
-  {
-    if (isDisabled)
-    {
-      m_DisableSprint++;
-    }
-    else
-    {
-      if (m_DisableSprint > 0)
-      {
-        m_DisableSprint--;
-      }
-    }
-    // Print("Sprint count: " + m_DisableSprint);
   }
 
   bool IsDrunkIncapacitated()

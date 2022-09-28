@@ -34,7 +34,7 @@ modded class ItemBase
     EntityAI entity = player.GetHumanInventory().GetEntityInHands();
     if (entity)
     {
-      // Print("OnInventoryEnter Item in hands: " + entity + " this item: " + GetType());
+      // Print("OnInventoryEnter Item in hands: " + entity + " this item: " + entity.GetType());
       ItemBase item = ItemBase.Cast(entity);
       // Print("OnInventoryEnter item cast: " + item);
       if (item.IsContainerFilledToRemoveSprint(80))
@@ -43,10 +43,10 @@ modded class ItemBase
         // Print("OnInventoryEnter container is filled above max and player cast: " + playerPB);
         if (playerPB)
         {
-          if (!playerPB.IsSprintDisabled())
+          if (!playerPB.IsSprintDisabledByHeavyItemInHands())
           {
             // Print("OnInventoryEnter: sprint is not disabled so disable it");
-            playerPB.SetIsSprintDisabled(true);            
+            playerPB.SetIsSprintDisabledByHeavyItemInHands(true);            
           }
         }      
       }
@@ -58,8 +58,8 @@ modded class ItemBase
     EntityAI owner = GetHierarchyParent();	
     if (entity && !owner)
     {
-      // Print("OnInventoryExit Item in hands: " + entity + " this item: " + GetType());
-      ItemBase item = ItemBase.Cast(entity);
+      // Print("OnInventoryExit Item in hands: " + entity + " this item: " + entity.GetType());
+      ItemBase item = ItemBase.Cast(entity);      
       // Print("OnInventoryExit item cast: " + item);
       if (!item.IsContainerFilledToRemoveSprint(80))
       {
@@ -67,10 +67,10 @@ modded class ItemBase
         // Print("OnInventoryExit container is not filled above max and player cast: " + playerPB);
         if (playerPB)
         {
-          if (playerPB.IsSprintDisabled())
+          if (playerPB.IsSprintDisabledByHeavyItemInHands())
           {
             // Print("OnInventoryExit: sprint is disabled so disable it");
-            playerPB.SetIsSprintDisabled(false);            
+            playerPB.SetIsSprintDisabledByHeavyItemInHands(false);            
           }
         }      
       }
@@ -80,7 +80,7 @@ modded class ItemBase
 
   // make sure to use the slot name not the item name....
 	ItemBase GetItemOnSlot(string slot_type)
-	{    
+	{
 		int slot_id = InventorySlots.GetSlotIdFromString( slot_type );
 		EntityAI item_EAI = GetInventory().FindAttachment( slot_id );
 		ItemBase item_IB = ItemBase.Cast(item_EAI);
