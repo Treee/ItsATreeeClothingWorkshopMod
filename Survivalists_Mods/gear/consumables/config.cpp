@@ -1906,15 +1906,15 @@ class CfgVehicles
   class SRP_CraftingMaterial_MetalScraps: SRP_CraftingMaterial_Metal
   {
 		scope=2;
-		displayName="Sheet Metal Scraps";
-		descriptionShort="Sheet Metal Scraps";
+		displayName="Sheet Metal Scraps - Half";
+		descriptionShort="Sheet metal has been cut in half. A bit easier to manage.";
 		model="Survivalists_Mods\gear\consumables\craftingmaterials_sheetmetal.p3d";
   };
   class SRP_CraftingMaterial_MetalScraps_Cut: SRP_CraftingMaterial_MetalScraps
   {
 		scope=2;
-		displayName="Cut Sheet Metal Scraps";
-		descriptionShort="Cut Sheet Metal Scraps";
+		displayName="Cut Sheet Metal Scraps - Quarter";
+		descriptionShort="Scraps cut into quarters. Fits in your hands nicely.";
     hiddenSelections[]=
     {
       "zbytek"

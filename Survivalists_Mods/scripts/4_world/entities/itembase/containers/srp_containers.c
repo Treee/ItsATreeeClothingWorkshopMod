@@ -75,6 +75,27 @@ class SRP_LatheWorkbench extends SRP_DeployableContainer_Base
   {
     return true;
   }
+
+  bool HasAllAttachments()
+  {
+    if (GetItemOnSlot("SRP_LatheBelt") == NULL)
+    {
+      return false;
+    }
+    if (GetItemOnSlot("SRP_LatheTable") == NULL)
+    {
+      return false;
+    }
+    if (GetItemOnSlot("SRP_LatheGearDrive") == NULL)
+    {
+      return false;
+    }
+    if (GetItemOnSlot("SRP_LatheClamp") == NULL)
+    {
+      return false;
+    }
+    return true;
+  }
 };
 class SRP_WornWorkbench extends SRP_DeployableContainer_Base
 {
