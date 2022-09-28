@@ -36,7 +36,7 @@ modded class ActionSkinning
     {
       EntityAI body;
       Class.CastTo(body, action_data.m_Target.GetObject());
-      
+      // Print("body is type: " + body.GetType());
       if (body.IsKindOf("SurvivorBase"))
       {
         ItemBase added_item;
@@ -44,11 +44,7 @@ modded class ActionSkinning
         int randomBoneSpawnChance = Math.RandomIntInclusive(0, 100);
         string bodypart = "";//SRP_Brain
 
-        if (randomBoneSpawnChance > 49 && randomBoneSpawnChance < 69)
-        {
-          bodypart = "SRP_Brain";
-        }
-        else if (randomBoneSpawnChance > 68 && randomBoneSpawnChance < 79)
+        if (randomBoneSpawnChance > 49 && randomBoneSpawnChance < 79)
         {
           bodypart = "SRP_Brain";
         }

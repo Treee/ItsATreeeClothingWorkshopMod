@@ -15,6 +15,7 @@ class CfgPatches
 class CfgVehicles
 {
 	class Clothing;
+  class DayZInfected;
 
   class SRP_KitBase;
 
@@ -82,4 +83,29 @@ class CfgVehicles
       "Material_MetalWire",
 		};
 	};
+  
+  class ZombieBase: DayZInfected
+	{
+    class Skinning
+		{
+			class Guts
+			{
+				item = "Guts";
+				count = 1;
+				quantityMinMaxCoef[] = {0.5,0.8};
+			};
+			class Bones
+			{
+				item = "Bone";
+				count = 2;
+				quantityMinMaxCoef[] = {0.2,0.4};
+			};
+			class Skin
+			{
+				item = "DUB_Humanpelt";
+				count = 1;
+				quantityMinMaxCoef[] = {0.8,1};
+			};
+		};
+  };
 };
