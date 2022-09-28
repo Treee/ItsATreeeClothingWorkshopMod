@@ -2597,9 +2597,9 @@ class CfgVehicles
   class SRP_MetalBarrel_Colorbase: Container_Base  // plan for vanilla replacement
 	{
 		scope=2;
-		displayName="Metal Barrel (Deprecated)";
-		descriptionShort="A sturdy barrel. (Deprecated) - Planned for replacement/removal. Do not store anything inside this object.";
-		model="Survivalists_Mods\gear\containers\srp_metalbarrel.p3d";
+		displayName="Metal Barrel";
+		descriptionShort="A metal barrel used to store various things.";
+		model="\dz\gear\cooking\barrel_holes.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
 		heavyItem=1;
@@ -2611,15 +2611,15 @@ class CfgVehicles
     color="base";
 		hiddenSelections[]=
 		{
-			"zbytek"
+			"ashes",
+			"camoGround",
+			"inventory"
 		};
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\containers\data\srp_metalbarrel_co.paa"
-		};
-    hiddenSelectionsMaterials[]=
-		{
-			"Survivalists_Mods\gear\containers\data\srp_metalbarrel.rvmat"
+			"\dz\gear\cooking\data\stoneground_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_worn_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_worn_co.paa",
 		};
 		class Cargo
 		{
@@ -2648,6 +2648,19 @@ class CfgVehicles
 				};
 			};
 		};
+    class AnimationSources
+		{
+      class LidOn
+			{
+				source="user";
+				initPhase=0;
+			};
+      class LidOff
+			{
+				source="user";
+				initPhase=1;
+			};
+		};
 	};
 
   class SRP_MetalBarrelKit_Kit: SRP_KitBase // new
@@ -2666,60 +2679,75 @@ class CfgVehicles
   class SRP_MetalBarrel_Old_Kit: SRP_KitBase // new
 	{
 		scope=2;
-		displayName="Metal Barrel Kit - Old";
+		displayName="Metal Barrel Kit - Worn";
 		descriptionShort="A Metal Barrel Kit";
 	};
   class SRP_MetalBarrel_Old: SRP_MetalBarrel_Colorbase // new
   {
     scope=2;
     color="old";
+    hiddenSelectionsTextures[]=
+		{
+			"\dz\gear\cooking\data\stoneground_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_worn_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_worn_co.paa",
+		};
   };
 
   class SRP_MetalBarrel_Blue_Kit: SRP_KitBase // new
 	{
 		scope=2;
-		displayName="Metal Barrel Kit - Blue";
+		displayName="Metal Barrel Kit - Ammo";
 		descriptionShort="A Metal Barrel Kit";
 	};
   class SRP_MetalBarrel_Blue: SRP_MetalBarrel_Colorbase // new
   {
     scope=2;
     color="blue";
+    descriptionShort="OOC Dev Note: Will only store ammo in the comming updates.";
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\containers\data\srp_metalbarrel_blue_co.paa"
+      "\dz\gear\cooking\data\stoneground_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_ammo_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_ammo_co.paa",
 		};
   };
 
   class SRP_MetalBarrel_Red_Kit: SRP_KitBase // new
 	{
 		scope=2;
-		displayName="Metal Barrel Kit - Red";
+		displayName="Metal Barrel Kit - Medical";
 		descriptionShort="A Metal Barrel Kit";
 	};
   class SRP_MetalBarrel_Red: SRP_MetalBarrel_Colorbase // new
   {
     scope=2;
     color="red";
+    descriptionShort="OOC Dev Note: Will only store medical items in the comming updates.";
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\containers\data\srp_metalbarrel_red_co.paa"
+      "\dz\gear\cooking\data\stoneground_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_medical_co.paa",
+      "Survivalists_Mods\gear\containers\data\barrel_holes_medical_co.paa",
 		};
   };
 
   class SRP_MetalBarrel_Yellow_Kit: SRP_KitBase // new
 	{
 		scope=2;
-		displayName="Metal Barrel Kit - Yellow";
+		displayName="Metal Barrel Kit - Biohazard";
 		descriptionShort="A Metal Barrel Kit";
 	};
   class SRP_MetalBarrel_Yellow: SRP_MetalBarrel_Colorbase // new
   {
     scope=2;
     color="yellow";
+    descriptionShort="OOC Dev Note: Will only store irradiated items in the comming updates.";
     hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\containers\data\srp_metalbarrel_yellow_co.paa"
+      "\dz\gear\cooking\data\stoneground_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_biohazard_co.paa",
+      "Survivalists_Mods\gear\containers\data\barrel_holes_biohazard_co.paa",
 		};
   };
 
@@ -2744,6 +2772,12 @@ class CfgVehicles
 		varQuantityMax=5000;
     destroyOnEmpty=0;
 		varQuantityDestroyOnMin=0;
+    hiddenSelectionsTextures[]=
+		{
+			"\dz\gear\cooking\data\stoneground_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_concrete_co.paa",
+			"Survivalists_Mods\gear\containers\data\barrel_holes_concrete_co.paa",
+		};
   };
 
   class SRP_CassetteBinder: SmallProtectorCase
