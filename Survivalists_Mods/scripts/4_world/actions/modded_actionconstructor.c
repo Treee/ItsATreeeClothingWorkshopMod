@@ -63,6 +63,7 @@ modded class ActionConstructor
 
     actions.Insert(ActionSRPRakeFireplaceAshes);
     actions.Insert(ActionSRPSwapBrassCasingOption);
+    actions.Insert(ActionSRPSwapClayPotOption);
     actions.Insert(ActionSRPRecolorClothingOption);
     actions.Insert(ActionSwitchLetterColorOption);
     actions.Insert(ActionSwitchLetterOption);

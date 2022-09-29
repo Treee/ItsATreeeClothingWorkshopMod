@@ -4649,7 +4649,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_PotteryPot1_ColorBase: SRP_PotteryPot_ColorBase
 	{
 		scope=0;
@@ -4699,7 +4698,112 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\containers\srp_jar8.p3d";
 	};
 
+//=================================================================== POT KITS
+  class SRP_PotteryPotKit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit";
+		descriptionShort="A kit used to choose between the various types of clay pots.";
+	};
+  class SRP_PotteryPot1Kit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bottle";
+		descriptionShort="A kit used to choose between the various types of bottle shaped clay pots.";
+	};
+  class SRP_PotteryPot2Kit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Tall";
+		descriptionShort="A kit used to choose between the various types of teardrop shaped clay pots.";
+	};
+  class SRP_PotteryPot3Kit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Wide";
+		descriptionShort="A kit used to choose between the various types of bulb shaped clay pots.";
+	};
+  class SRP_PotteryPot4Kit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Cone";
+		descriptionShort="A kit used to choose between the various types of cone shaped clay pots.";
+	};
+  class SRP_PotteryPot5Kit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Short Cone";
+		descriptionShort="A kit used to choose between the various types of short cone shaped clay pots.";
+	};
+  class SRP_PotteryPot6Kit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Decanter";
+		descriptionShort="A kit used to choose between the various types of decanter shaped clay pots.";
+	};
+  class SRP_PotteryPot7Kit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Wide";
+		descriptionShort="A kit used to choose between the various types of teardrop wide shaped clay pots.";
+	};
+  class SRP_PotteryPot8Kit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Short";
+		descriptionShort="A kit used to choose between the various types of short bulb shaped clay pots.";
+	};
+
 //=================================================================== TYPE 1
+  class SRP_PotteryPot1_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bottle - Basic";
+		descriptionShort="A bottle shaped clay pot.";
+	};
+  class SRP_PotteryPot2_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Tall - Basic";
+		descriptionShort="A tall teardrop shaped clay pot.";
+	};
+  class SRP_PotteryPot3_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Wide - Basic";
+		descriptionShort="A wide bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot4_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Cone - Basic";
+		descriptionShort="A cone shaped clay pot.";
+	};
+  class SRP_PotteryPot5_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Short Cone - Basic";
+		descriptionShort="A short cone shaped clay pot.";
+	};
+  class SRP_PotteryPot6_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Decanter - Basic";
+		descriptionShort="A decanter shaped clay pot.";
+	};
+  class SRP_PotteryPot7_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Wide - Basic";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot8_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Short - Basic";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+
   class SRP_PotteryPot1_Basic: SRP_PotteryPot1_ColorBase
 	{
 		scope=2;
@@ -4806,6 +4910,55 @@ class CfgVehicles
 	};
 
 //=================================================================== TYPE 2
+  class SRP_PotteryPot1_Ornament_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bottle - Ornamental";
+		descriptionShort="A bottle shaped clay pot.";
+	};
+  class SRP_PotteryPot2_Ornament_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Tall - Ornamental";
+		descriptionShort="A tall teardrop shaped clay pot.";
+	};
+  class SRP_PotteryPot3_Ornament_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Wide - Ornamental";
+		descriptionShort="A wide bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot4_Ornament_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Cone - Ornamental";
+		descriptionShort="A cone shaped clay pot.";
+	};
+  class SRP_PotteryPot5_Ornament_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Short Cone - Ornamental";
+		descriptionShort="A short cone shaped clay pot.";
+	};
+  class SRP_PotteryPot6_Ornament_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Decanter - Ornamental";
+		descriptionShort="A decanter shaped clay pot.";
+	};
+  class SRP_PotteryPot7_Ornament_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Wide - Ornamental";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot8_Ornament_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Short - Ornamental";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+
   class SRP_PotteryPot1_Ornament: SRP_PotteryPot1_ColorBase
 	{
 		scope=2;
@@ -4912,6 +5065,55 @@ class CfgVehicles
 	};
 
 //=================================================================== TYPE 3
+  class SRP_PotteryPot1_Flower_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bottle - Flower";
+		descriptionShort="A bottle shaped clay pot.";
+	};
+  class SRP_PotteryPot2_Flower_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Tall - Flower";
+		descriptionShort="A tall teardrop shaped clay pot.";
+	};
+  class SRP_PotteryPot3_Flower_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Wide - Flower";
+		descriptionShort="A wide bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot4_Flower_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Cone - Flower";
+		descriptionShort="A cone shaped clay pot.";
+	};
+  class SRP_PotteryPot5_Flower_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Short Cone - Flower";
+		descriptionShort="A short cone shaped clay pot.";
+	};
+  class SRP_PotteryPot6_Flower_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Decanter - Flower";
+		descriptionShort="A decanter shaped clay pot.";
+	};
+  class SRP_PotteryPot7_Flower_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Wide - Flower";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot8_Flower_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Short - Flower";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+
   class SRP_PotteryPot1_Flower: SRP_PotteryPot1_ColorBase
 	{
 		scope=2;
@@ -5018,6 +5220,55 @@ class CfgVehicles
 	};
 
 //=================================================================== TYPE 4
+  class SRP_PotteryPot1_Geometric_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bottle - Geometric";
+		descriptionShort="A bottle shaped clay pot.";
+	};
+  class SRP_PotteryPot2_Geometric_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Tall - Geometric";
+		descriptionShort="A tall teardrop shaped clay pot.";
+	};
+  class SRP_PotteryPot3_Geometric_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Wide - Geometric";
+		descriptionShort="A wide bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot4_Geometric_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Cone - Geometric";
+		descriptionShort="A cone shaped clay pot.";
+	};
+  class SRP_PotteryPot5_Geometric_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Short Cone - Geometric";
+		descriptionShort="A short cone shaped clay pot.";
+	};
+  class SRP_PotteryPot6_Geometric_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Decanter - Geometric";
+		descriptionShort="A decanter shaped clay pot.";
+	};
+  class SRP_PotteryPot7_Geometric_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Wide - Geometric";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot8_Geometric_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Short - Geometric";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+
   class SRP_PotteryPot1_Geometric: SRP_PotteryPot1_ColorBase
 	{
 		scope=2;
@@ -5124,6 +5375,55 @@ class CfgVehicles
 	};
 
 //=================================================================== TYPE 5
+  class SRP_PotteryPot1_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bottle - Modern";
+		descriptionShort="A bottle shaped clay pot.";
+	};
+  class SRP_PotteryPot2_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Tall - Modern";
+		descriptionShort="A tall teardrop shaped clay pot.";
+	};
+  class SRP_PotteryPot3_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Wide - Modern";
+		descriptionShort="A wide bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot4_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Cone - Modern";
+		descriptionShort="A cone shaped clay pot.";
+	};
+  class SRP_PotteryPot5_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Short Cone - Modern";
+		descriptionShort="A short cone shaped clay pot.";
+	};
+  class SRP_PotteryPot6_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Decanter - Modern";
+		descriptionShort="A decanter shaped clay pot.";
+	};
+  class SRP_PotteryPot7_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Wide - Modern";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot8_Modern_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Short - Modern";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+
   class SRP_PotteryPot1_Modern: SRP_PotteryPot1_ColorBase
 	{
 		scope=2;
@@ -5230,6 +5530,55 @@ class CfgVehicles
 	};
 
 //=================================================================== TYPE 6
+  class SRP_PotteryPot1_Celtic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bottle - Celtic";
+		descriptionShort="A bottle shaped clay pot.";
+	};
+  class SRP_PotteryPot2_Celtic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Tall - Celtic";
+		descriptionShort="A tall teardrop shaped clay pot.";
+	};
+  class SRP_PotteryPot3_Celtic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Wide - Celtic";
+		descriptionShort="A wide bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot4_Celtic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Cone - Celtic";
+		descriptionShort="A cone shaped clay pot.";
+	};
+  class SRP_PotteryPot5_Celtic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Short Cone - Celtic";
+		descriptionShort="A short cone shaped clay pot.";
+	};
+  class SRP_PotteryPot6_Celtic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Decanter - Celtic";
+		descriptionShort="A decanter shaped clay pot.";
+	};
+  class SRP_PotteryPot7_Celtic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Wide - Celtic";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot8_Celtic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Short - Celtic";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+
   class SRP_PotteryPot1_Celtic: SRP_PotteryPot1_ColorBase
 	{
 		scope=2;
@@ -5336,6 +5685,55 @@ class CfgVehicles
 	};
 
 //=================================================================== TYPE 7
+  class SRP_PotteryPot1_Rossetta_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bottle - Rossetta";
+		descriptionShort="A bottle shaped clay pot.";
+	};
+  class SRP_PotteryPot2_Rossetta_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Tall - Rossetta";
+		descriptionShort="A tall teardrop shaped clay pot.";
+	};
+  class SRP_PotteryPot3_Rossetta_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Wide - Rossetta";
+		descriptionShort="A wide bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot4_Rossetta_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Cone - Rossetta";
+		descriptionShort="A cone shaped clay pot.";
+	};
+  class SRP_PotteryPot5_Rossetta_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Short Cone - Rossetta";
+		descriptionShort="A short cone shaped clay pot.";
+	};
+  class SRP_PotteryPot6_Rossetta_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Decanter - Rossetta";
+		descriptionShort="A decanter shaped clay pot.";
+	};
+  class SRP_PotteryPot7_Rossetta_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Teardrop Wide - Rossetta";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+  class SRP_PotteryPot8_Rossetta_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Pottery Kit - Bulb Short - Rossetta";
+		descriptionShort="A short bulb shaped clay pot.";
+	};
+
   class SRP_PotteryPot1_Rossetta: SRP_PotteryPot1_ColorBase
 	{
 		scope=2;

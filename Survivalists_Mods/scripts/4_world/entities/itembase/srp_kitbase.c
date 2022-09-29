@@ -1,4 +1,4 @@
-class TurnItemIntoItemLambda_KitDeployment : TurnItemIntoItemLambda
+class TurnItemIntoItemLambda_KitDeployment extends TurnItemIntoItemLambda
 {
 	vector m_DeployPosition;
   vector m_DeployOrientation;
@@ -42,25 +42,10 @@ class SRP_KitBase extends ItemBase
         lambda.SetTransferParams(false, false);
         MiscGameplayFunctions.TurnItemIntoItemEx(playerPB, lambda);
       }
-
-
-
-			// EntityAI kitItem = EntityAI.Cast(GetGame().CreateObjectEx(GetKitItemName(), position, ECE_PLACE_ON_SURFACE));			
-      // if (kitItem)
-      // {
-      //   kitItem.SetPosition(position);
-      //   kitItem.SetOrientation(orientation);
-      //   // ItemBase item = ItemBase.Cast(kitItem);
-      //   // if (item)
-      //   // {
-      //   //   item.SetHealth(item.GetHealth() * 0.1);
-      //   // }
-      // }
       if (m_AdminLog)
       {            
         m_AdminLog.OnPlacementComplete( player, this);
       }
-      // GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(Delete, 1000, false);
 		}
 	}
 
@@ -623,3 +608,132 @@ class SRP_Mutation_Nocturnal_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_Mutation_Aquatic_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_Mutation_Armor_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_Mutation_IronStomach_Kit extends SRP_IntermediateCraftingKitBase{};
+
+class SRP_PotteryPotKit_Kit extends SRP_IntermediateCraftingKitBase{};
+class SRP_PotteryPot1Kit_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwapClayPotOption);
+	}
+};
+class SRP_PotteryPot2Kit_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwapClayPotOption);
+	}
+};
+class SRP_PotteryPot3Kit_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwapClayPotOption);
+	}
+};
+class SRP_PotteryPot4Kit_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwapClayPotOption);
+	}
+};
+class SRP_PotteryPot5Kit_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwapClayPotOption);
+	}
+};
+class SRP_PotteryPot6Kit_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwapClayPotOption);
+	}
+};
+class SRP_PotteryPot7Kit_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwapClayPotOption);
+	}
+};
+class SRP_PotteryPot8Kit_Kit extends SRP_IntermediateCraftingKitBase
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionSRPSwapClayPotOption);
+	}
+};
+
+class SRP_PotteryPot1_Basic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot2_Basic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot3_Basic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot4_Basic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot5_Basic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot6_Basic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot7_Basic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot8_Basic_Kit extends SRP_KitBase{};
+
+class SRP_PotteryPot1_Ornament_Kit extends SRP_KitBase{};
+class SRP_PotteryPot2_Ornament_Kit extends SRP_KitBase{};
+class SRP_PotteryPot3_Ornament_Kit extends SRP_KitBase{};
+class SRP_PotteryPot4_Ornament_Kit extends SRP_KitBase{};
+class SRP_PotteryPot5_Ornament_Kit extends SRP_KitBase{};
+class SRP_PotteryPot6_Ornament_Kit extends SRP_KitBase{};
+class SRP_PotteryPot7_Ornament_Kit extends SRP_KitBase{};
+class SRP_PotteryPot8_Ornament_Kit extends SRP_KitBase{};
+
+class SRP_PotteryPot1_Flower_Kit extends SRP_KitBase{};
+class SRP_PotteryPot2_Flower_Kit extends SRP_KitBase{};
+class SRP_PotteryPot3_Flower_Kit extends SRP_KitBase{};
+class SRP_PotteryPot4_Flower_Kit extends SRP_KitBase{};
+class SRP_PotteryPot5_Flower_Kit extends SRP_KitBase{};
+class SRP_PotteryPot6_Flower_Kit extends SRP_KitBase{};
+class SRP_PotteryPot7_Flower_Kit extends SRP_KitBase{};
+class SRP_PotteryPot8_Flower_Kit extends SRP_KitBase{};
+
+class SRP_PotteryPot1_Geometric_Kit extends SRP_KitBase{};
+class SRP_PotteryPot2_Geometric_Kit extends SRP_KitBase{};
+class SRP_PotteryPot3_Geometric_Kit extends SRP_KitBase{};
+class SRP_PotteryPot4_Geometric_Kit extends SRP_KitBase{};
+class SRP_PotteryPot5_Geometric_Kit extends SRP_KitBase{};
+class SRP_PotteryPot6_Geometric_Kit extends SRP_KitBase{};
+class SRP_PotteryPot7_Geometric_Kit extends SRP_KitBase{};
+class SRP_PotteryPot8_Geometric_Kit extends SRP_KitBase{};
+
+class SRP_PotteryPot1_Modern_Kit extends SRP_KitBase{};
+class SRP_PotteryPot2_Modern_Kit extends SRP_KitBase{};
+class SRP_PotteryPot3_Modern_Kit extends SRP_KitBase{};
+class SRP_PotteryPot4_Modern_Kit extends SRP_KitBase{};
+class SRP_PotteryPot5_Modern_Kit extends SRP_KitBase{};
+class SRP_PotteryPot6_Modern_Kit extends SRP_KitBase{};
+class SRP_PotteryPot7_Modern_Kit extends SRP_KitBase{};
+class SRP_PotteryPot8_Modern_Kit extends SRP_KitBase{};
+
+class SRP_PotteryPot1_Celtic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot2_Celtic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot3_Celtic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot4_Celtic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot5_Celtic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot6_Celtic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot7_Celtic_Kit extends SRP_KitBase{};
+class SRP_PotteryPot8_Celtic_Kit extends SRP_KitBase{};
+
+class SRP_PotteryPot1_Rossetta_Kit extends SRP_KitBase{};
+class SRP_PotteryPot2_Rossetta_Kit extends SRP_KitBase{};
+class SRP_PotteryPot3_Rossetta_Kit extends SRP_KitBase{};
+class SRP_PotteryPot4_Rossetta_Kit extends SRP_KitBase{};
+class SRP_PotteryPot5_Rossetta_Kit extends SRP_KitBase{};
+class SRP_PotteryPot6_Rossetta_Kit extends SRP_KitBase{};
+class SRP_PotteryPot7_Rossetta_Kit extends SRP_KitBase{};
+class SRP_PotteryPot8_Rossetta_Kit extends SRP_KitBase{};
