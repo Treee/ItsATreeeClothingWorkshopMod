@@ -147,7 +147,7 @@ modded class ItemBase
   {
     return 0;
   }
-//====================================== CRAFTING BOOLS
+//====================================== CRAFTING
   bool IsAlchemyReagent()
   {
     return false;
