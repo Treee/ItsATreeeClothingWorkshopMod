@@ -31,10 +31,10 @@ modded class AreaExposureMdfr
         buffInterval += deltaT;
         if (buffInterval > 10)
         {
-          player.GetStatEnergy().Add(20);
-          player.GetStatWater().Add(20);
-          player.AddHealth("","Blood", 20);
-          player.AddHealth("","", 20);
+          player.GetStatEnergy().Add(200);
+          player.GetStatWater().Add(200);
+          player.AddHealth("","Blood", 200);
+          player.AddHealth("","", 200);
           player.GetBleedingManagerServer().RemoveMostSignificantBleedingSourceEx(NULL);
           player.RemoveAllAgents();
           if (player.GetTotalTiredness() > 0)
