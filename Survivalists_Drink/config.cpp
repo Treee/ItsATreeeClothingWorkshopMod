@@ -83,16 +83,14 @@ class CfgVehicles
 		descriptionShort="A coffee tea bag. This one is a mixed blend, very stale.";
 	};
 
-  class Winebottle: Edible_Base
+  class Winebottle: SodaCan_ColorBase
 	{
 		scope=2;
 		displayName="Red Wine";
 		descriptionShort="A nice bottle of red wine. For when you want to get wasted but in a classier manner.";
 		model="Survivalists_Drink\drinks\wine.p3d";
-		weight=450;
+		weight=45;
 		itemSize[]={1,3};
-		// destroyOnEmpty=1;
-		// varQuantityDestroyOnMin=0;
 		varLiquidTypeInit=2048;
 		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
 		varQuantityInit=750;
@@ -262,16 +260,14 @@ class CfgVehicles
 		};		
 	};
   
-  class SRP_BrownBottle: Bottle_Base
+  class SRP_BrownBottle: SodaCan_ColorBase
 	{
 		scope=2;
 		displayName="Liquor Bottle";
 		descriptionShort="An old bottle filled with strong smelling liquor. The label looks worn and handwritten. Can be refilled.";
 		model="Survivalists_Drink\drinks\brownbottle.p3d";
-		weight=450;
+		weight=45;
 		itemSize[]={1,3};
-		destroyOnEmpty=0;
-		varQuantityDestroyOnMin=0;
 		varLiquidTypeInit=2048;
 		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
 		varQuantityInit=500;
@@ -345,16 +341,14 @@ class CfgVehicles
 			toxicity=0;
 		};
 	};
-  class SRP_BeerBottle: Edible_Base
+  class SRP_BeerBottle: SodaCan_ColorBase
 	{
 		scope=2;
 		displayName="Beer Bottle";
 		descriptionShort="An old bottle filled with strong smelling beer. The label looks worn and old.";
 		model="Survivalists_Drink\drinks\beerbottle.p3d";
-		weight=450;
+		weight=45;
 		itemSize[]={1,3};
-		// destroyOnEmpty=1;
-		// varQuantityDestroyOnMin=0;
 		varLiquidTypeInit=2048;
 		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
 		varQuantityInit=500;
@@ -437,7 +431,7 @@ class CfgVehicles
 		descriptionShort="A family recipie passed down by the Dillard family in the hills of Kentucky for over 150 years. Will warm you right up.";
 		weight=450;
 		itemSize[]={1,3};
-		destroyOnEmpty=0;
+		destroyOnEmpty=1;
 		varQuantityDestroyOnMin=0;
 		varLiquidTypeInit=2048;
 		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
@@ -460,7 +454,7 @@ class CfgVehicles
 		descriptionShort="190 proof hard liquor Drink spiced with pure Capsaicin extract , Not for the faint if heart.";
 		weight=450;
 		itemSize[]={1,3};
-		destroyOnEmpty=0;
+		destroyOnEmpty=1;
 		varQuantityDestroyOnMin=0;
 		varLiquidTypeInit=2048;
 		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
