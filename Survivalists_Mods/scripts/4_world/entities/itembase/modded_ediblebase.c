@@ -53,7 +53,9 @@ modded class Edible_Base
     {
       if (!consumer.IsAlpha())
       {
-        consumer.InsertAgent(eAgents.CHEMICAL_POISON, 100);
+        consumer.InsertAgent(eAgents.CHEMICAL_POISON, 150);
+        consumer.AddHealth("","Shock", -50);
+        consumer.AddHealth("","Blood", -100);
       }
     }    
 	}

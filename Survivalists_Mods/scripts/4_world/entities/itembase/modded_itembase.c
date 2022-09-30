@@ -35,9 +35,9 @@ modded class ItemBase
     if (entity)
     {
       // Print("OnInventoryEnter Item in hands: " + entity + " this item: " + entity.GetType());
-      ItemBase item = ItemBase.Cast(entity);
+      ItemBase itemInHands = ItemBase.Cast(entity);
       // Print("OnInventoryEnter item cast: " + item);
-      if (item.IsContainerFilledToRemoveSprint(80))
+      if (itemInHands.IsContainerFilledToRemoveSprint(80))
       {
         PlayerBase playerPB = PlayerBase.Cast(player);
         // Print("OnInventoryEnter container is filled above max and player cast: " + playerPB);
@@ -59,11 +59,12 @@ modded class ItemBase
     if (entity && !owner)
     {
       // Print("OnInventoryExit Item in hands: " + entity + " this item: " + entity.GetType());
+      PlayerBase playerPB;
       ItemBase item = ItemBase.Cast(entity);      
       // Print("OnInventoryExit item cast: " + item);
       if (!item.IsContainerFilledToRemoveSprint(80))
       {
-        PlayerBase playerPB = PlayerBase.Cast(player);
+        playerPB = PlayerBase.Cast(player);
         // Print("OnInventoryExit container is not filled above max and player cast: " + playerPB);
         if (playerPB)
         {
@@ -73,7 +74,7 @@ modded class ItemBase
             playerPB.SetIsSprintDisabledByHeavyItemInHands(false);            
           }
         }      
-      }
+      }      
     }
     super.OnInventoryExit(player);
 	}  

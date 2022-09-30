@@ -167,6 +167,10 @@ modded class PlayerBase
     {
       return true;
     }
+    // if (IsAlpha())
+    // {
+    //   return true;
+    // }
     if (GetPlayerRadiationProtection() > 5)
     {
       return true;
