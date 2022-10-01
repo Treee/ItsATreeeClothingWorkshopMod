@@ -216,6 +216,48 @@ class CfgVehicles
 		};
 	};
 
+
+  class Land_SRP_RoadSign_FullMap1: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns1.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_fullmap_co.paa"
+		};
+	};
+  class Land_SRP_RoadSign_FullMap2: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns2.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_fullmap_co.paa"
+		};
+	};
+  class Land_SRP_RoadSign_FullMap3: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_RoadSigns3.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\SRP_Town_Signs_fullmap_co.paa"
+		};
+	};
+
+
   class Land_SRP_RoadSign_Eastbrook : HouseNoDestruct
 	{
 		scope = 1;
