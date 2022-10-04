@@ -5,7 +5,6 @@ modded class PlayerBase
   override void Init()
   {
     super.Init();
-
     m_FacePaintState = -1;
     RegisterNetSyncVariableInt("m_FacePaintState", -1, m_ModuleLifespan.GetFacePaintCount(GetType()));
   }
@@ -14,7 +13,7 @@ modded class PlayerBase
 	{
     super.OnVariablesSynchronized();
 
-    if (m_FacePaintState >= -1 && (IsPlayerLoaded() || IsControlledPlayer()))
+    if (GetFacePaintIndex() >= -1 && (IsPlayerLoaded() || IsControlledPlayer()))
     {
       UpdateFacePaintVisual();
     }
@@ -38,6 +37,27 @@ modded class PlayerBase
       }
     }
   }
+
+  void OnStoreSaveLifespan( ParamsWriteContext ctx )
+	{
+    super.OnStoreSaveLifespan(ctx);
+    ctx.Write(m_FacePaintState);
+	}
+	bool OnStoreLoadLifespan( ParamsReadContext ctx, int version )
+	{	
+    if (!super.OnStoreLoadLifespan(ctx, version))
+    {
+      return false;
+    }
+
+    int facePaintState = -1;
+    if(ctx.Read( facePaintState ))
+    {
+      m_FacePaintState = facePaintState;
+    }
+
+		return true;
+	}
 
   void SetFacePaint(int index)
   {
