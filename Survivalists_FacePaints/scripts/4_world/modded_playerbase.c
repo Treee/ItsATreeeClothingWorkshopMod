@@ -38,12 +38,12 @@ modded class PlayerBase
     }
   }
 
-  void OnStoreSaveLifespan( ParamsWriteContext ctx )
+  override void OnStoreSaveLifespan( ParamsWriteContext ctx )
 	{
     super.OnStoreSaveLifespan(ctx);
     ctx.Write(m_FacePaintState);
 	}
-	bool OnStoreLoadLifespan( ParamsReadContext ctx, int version )
+	override bool OnStoreLoadLifespan( ParamsReadContext ctx, int version )
 	{	
     if (!super.OnStoreLoadLifespan(ctx, version))
     {

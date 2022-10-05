@@ -268,6 +268,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_adam_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_adam_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_adam_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_adam_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Boris: SurvivorMale_Base
 	{
@@ -451,6 +637,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_boris_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_boris_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_boris_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_boris_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Cyril: SurvivorMale_Base
 	{
@@ -634,6 +1006,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_cyril_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_cyril_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_cyril_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_cyril_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Denis: SurvivorMale_Base
 	{
@@ -817,6 +1375,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_denis_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_denis_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_denis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_denis_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Elias: SurvivorMale_Base
 	{
@@ -1000,6 +1744,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_elias_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_elias_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_elias_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_elias_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Francis: SurvivorMale_Base
 	{
@@ -1183,6 +2113,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_francis_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_francis_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_francis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_francis_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Guo: SurvivorMale_Base
 	{
@@ -1366,6 +2482,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_guo_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_guo_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_guo_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Hassan: SurvivorMale_Base
 	{
@@ -1549,6 +2851,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_hassan_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_hassan_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_hassan_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_hassan_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Indar: SurvivorMale_Base
 	{
@@ -1732,6 +3220,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_indar_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_indar_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_indar_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_indar_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Jose: SurvivorMale_Base
 	{
@@ -1915,6 +3589,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_jose_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_jose_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_jose_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_jose_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Kaito: SurvivorMale_Base
 	{
@@ -2098,6 +3958,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_kaito_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_kaito_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_kaito_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_kaito_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Lewis: SurvivorMale_Base
 	{
@@ -2281,6 +4327,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_lewis_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_lewis_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_lewis_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_lewis_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Manua: SurvivorMale_Base
 	{
@@ -2464,6 +4696,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_manua_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_manua_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_manua_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_manua_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Niki: SurvivorMale_Base
 	{
@@ -2647,6 +5065,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_niki_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_niki_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_niki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_niki_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Oliver: SurvivorMale_Base
 	{
@@ -2830,6 +5434,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_oliver_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_oliver_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_oliver_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_oliver_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Peter: SurvivorMale_Base
 	{
@@ -3013,6 +5803,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_peter_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_peter_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_peter_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_peter_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Quinn: SurvivorMale_Base
 	{
@@ -3196,6 +6172,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_quinn_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_quinn_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_quinn_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_quinn_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Rolf: SurvivorMale_Base
 	{
@@ -3379,6 +6541,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_rolf_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_rolf_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_rolf_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_rolf_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Seth: SurvivorMale_Base
 	{
@@ -3562,6 +6910,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_seth_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_seth_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_seth_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_seth_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Taiki: SurvivorMale_Base
 	{
@@ -3745,6 +7279,192 @@ class CfgVehicles
 			mat_paint_unshaved="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_taiki_body_unshaved.rvmat";
 			mat_paint_bearded="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_m_taiki_body_bearded.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_brazil\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_germany\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_germany\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_italy\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_italy\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_argentina\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_france\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_france\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_england\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_england\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_spain\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_spain\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_netherlands\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_uruguay\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_sweden\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_belgium\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_ukraine\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_russia\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_russia\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_serbia\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_mexico\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_poland\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_poland\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_hungary\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_portugal\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_switzerland\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_czechia\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_austria\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_austria\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_chile\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_chile\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_croatia\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_denmark\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_paraguay\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_colombia\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_usa\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_usa\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_romania\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_romania\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_southkorea\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_nigeria\hhl_m_taiki_body_bearded.rvmat";
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_japan\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fpf_japan\hhl_m_taiki_body_bearded.rvmat";
+    };    
 	};
   
   //===============================FEMALE
@@ -3870,6 +7590,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_eva_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_eva_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_eva_body.rvmat";      
+    };    
 	};
   class SurvivorF_Frida: SurvivorFemale_Base
 	{
@@ -3993,6 +7837,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_frida_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_frida_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_frida_body.rvmat";      
+    };    
 	};
   class SurvivorF_Gabi: SurvivorFemale_Base
 	{
@@ -4116,6 +8084,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_gabi_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_gabi_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_gabi_body.rvmat";      
+    };    
 	};
   class SurvivorF_Helga: SurvivorFemale_Base
 	{
@@ -4239,6 +8331,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_helga_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_helga_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_helga_body.rvmat";      
+    };    
 	};
   class SurvivorF_Irena: SurvivorFemale_Base
 	{
@@ -4362,6 +8578,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_irena_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_irena_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_irena_body.rvmat";      
+    };    
 	};
   class SurvivorF_Judy: SurvivorFemale_Base
 	{
@@ -4485,6 +8825,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_judy_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_judy_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_judy_body.rvmat";      
+    };    
 	};
   class SurvivorF_Keiko: SurvivorFemale_Base
 	{
@@ -4608,6 +9072,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_keiko_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_keiko_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_keiko_body.rvmat";      
+    };    
 	};
   class SurvivorF_Linda: SurvivorFemale_Base
 	{
@@ -4731,6 +9319,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_linda_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_linda_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_linda_body.rvmat";      
+    };    
 	};
   class SurvivorF_Maria: SurvivorFemale_Base
 	{
@@ -4854,6 +9566,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_maria_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_maria_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_maria_body.rvmat";      
+    };    
 	};
   class SurvivorF_Naomi: SurvivorFemale_Base
 	{
@@ -4977,6 +9813,130 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_naomi_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_naomi_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_naomi_body.rvmat";      
+    };    
 	};
   class SurvivorF_Baty: SurvivorFemale_Base
 	{
@@ -5100,5 +10060,129 @@ class CfgVehicles
 		{			
 			mat_paint="Survivalists_FacePaints\heads\fp_yugoslavia\hhl_f_Baty_body.rvmat";
 		};
+    class FacePaint_FlagBrazil
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_brazil\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagGermany
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_germany\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagItaly
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_italy\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagArgentina
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_argentina\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagFrance
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_france\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagEngland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_england\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagSpain
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_spain\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagNetherlands
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_netherlands\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagUruguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_uruguay\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagSweden
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_sweden\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagBelgium
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_belgium\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagUkraine
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_ukraine\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagRussia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_russia\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagSerbia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_serbia\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagMexico
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_mexico\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagPoland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_poland\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagHungary
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_hungary\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagPortugal
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_portugal\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagSwitzerland
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_switzerland\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagCzechia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_czechia\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagAustria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_austria\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagChile
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_chile\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagCroatia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_croatia\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagDenmark
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_denmark\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagParaguay
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_paraguay\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagColombia
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_colombia\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagUSA
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_usa\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagRomania
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_romania\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagSouthKorea
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_southkorea\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagNigeria
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_nigeria\hhl_f_Baty_body.rvmat";      
+    };
+    class FacePaint_FlagJapan
+    {
+      mat_paint="Survivalists_FacePaints\heads\fpf_japan\hhl_f_Baty_body.rvmat";      
+    };    
 	};
 };
