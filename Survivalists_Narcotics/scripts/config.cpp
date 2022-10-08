@@ -213,6 +213,92 @@ class CfgSlots
 		displayName="Raw Plant Material";
 		ghostIcon="set:dayz_inventory image:cat_gp_fillingr";
 	};
+
+  class Slot_SRP_Cigar1
+	{
+		name="Cigar1";
+		displayName="Cigar";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Cigar2
+	{
+		name="Cigar2";
+		displayName="Cigar";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Cigar3
+	{
+		name="Cigar3";
+		displayName="Cigar";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Cigar4
+	{
+		name="Cigar4";
+		displayName="Cigar";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Cigar5
+	{
+		name="Cigar5";
+		displayName="Cigar";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Cigar6
+	{
+		name="Cigar6";
+		displayName="Cigar";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Cigar7
+	{
+		name="Cigar7";
+		displayName="Cigar";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+
+  class Slot_SRP_Smokes1
+	{
+		name="Smokes1";
+		displayName="Pack of Smokes";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Smokes2
+	{
+		name="Smokes2";
+		displayName="Pack of Smokes";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Smokes3
+	{
+		name="Smokes3";
+		displayName="Pack of Smokes";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Smokes4
+	{
+		name="Smokes4";
+		displayName="Pack of Smokes";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Smokes5
+	{
+		name="Smokes5";
+		displayName="Pack of Smokes";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Smokes6
+	{
+		name="Smokes6";
+		displayName="Pack of Smokes";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
+  class Slot_SRP_Smokes7
+	{
+		name="Smokes7";
+		displayName="Pack of Smokes";
+		ghostIcon="set:dayz_inventory image:paper";
+	};
 };
 
 class CfgNonAIVehicles

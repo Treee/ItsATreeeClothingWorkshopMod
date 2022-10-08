@@ -732,7 +732,16 @@ class CfgVehicles
     color="Cigar";
     model="Survivalists_Narcotics\gear\food\cigar_g.p3d";
 		descriptionShort="A finely wrapped tobacco cigar. A rare luxury.";
-    inventorySlot[]={};
+    inventorySlot[]=
+    {
+      "Cigar1",
+      "Cigar2",
+      "Cigar3",
+      "Cigar4",
+      "Cigar5",
+      "Cigar6",
+      "Cigar7",    
+    };
     class ClothingTypes
 		{
 			male="Survivalists_Narcotics\gear\food\cigar_m.p3d";

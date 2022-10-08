@@ -234,6 +234,16 @@ class CfgVehicles
       "CigaretteCase7",
       "CigaretteCase8"
     };
+    inventorySlot[]=
+    {
+      "Smokes1",
+      "Smokes2",
+      "Smokes3",
+      "Smokes4",
+      "Smokes5",
+      "Smokes6",
+      "Smokes7",
+    };
     class DamageSystem
 		{
 			class GlobalHealth
@@ -276,11 +286,10 @@ class CfgVehicles
 		varQuantityMax=0;
 		stackedUnit="";
     varTemperatureMax=100;
-    itemSize[]={6, 2};
-    itemsCargoSize[]={10,4};
+    itemSize[]={4,2};
+    itemsCargoSize[]={0,0};
     hiddenSelections[]= {"zbytek"};
   };
-
   //================================================= PACKS OF SMOKES
 
   class SRP_DrugPack_ZWeed: SRP_DrugPack_ColorBase
@@ -317,6 +326,17 @@ class CfgVehicles
     color="ZWeed";
     displayName="Carton of ZWeed Packs";
     descriptionShort="A big carton of joint packs!";
+    attachments[]=
+    {
+      "Smokes1",
+      "Smokes2",
+      "Smokes3",
+      "Smokes4",
+      "Smokes5",
+      "Smokes6",
+      "Smokes7",
+    };
+    itemsCargoSize[]={0,0};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Narcotics\gear\container\data\carton_of_joints_co.paa"
@@ -328,7 +348,18 @@ class CfgVehicles
 		scope=2;
     color="Cigarette";
     displayName="Carton of Cigarette Packs";
-    descriptionShort="A big carton of cigarette packs!";
+    descriptionShort="A big carton of cigarette packs!";  
+    attachments[]=
+    {
+      "Smokes1",
+      "Smokes2",
+      "Smokes3",
+      "Smokes4",
+      "Smokes5",
+      "Smokes6",
+      "Smokes7",
+    };
+    itemsCargoSize[]={0,0};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Narcotics\gear\container\data\carton_of_cigarettes_co.paa"
@@ -341,6 +372,17 @@ class CfgVehicles
     color="Cigar";
     displayName="Cigar Box";
     descriptionShort="A box of finely wrapped cigars.";
+    itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "Cigar1",
+      "Cigar2",
+      "Cigar3",
+      "Cigar4",
+      "Cigar5",
+      "Cigar6",
+      "Cigar7",
+    };
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Narcotics\gear\container\data\carton_of_cigars_co.paa"
