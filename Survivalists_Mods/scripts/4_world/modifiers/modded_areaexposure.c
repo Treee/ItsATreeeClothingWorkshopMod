@@ -23,23 +23,23 @@ modded class AreaExposureMdfr
       // Print("OnTick::Mutant: return from activation");
       if (player.IsPlayerMutant())
       {
-        player.GetStatEnergy().Add(PlayerConstants.DIGESTION_SPEED + 1.2);
-        player.GetStatWater().Add(PlayerConstants.DIGESTION_SPEED);
+        player.GetStatEnergy().Add(PlayerConstants.DIGESTION_SPEED + 0.8);
+        player.GetStatWater().Add(PlayerConstants.DIGESTION_SPEED + 0.5);
       }
       else if (player.IsAlpha() || player.IsQueenAlpha())
       {        
         buffInterval += deltaT;
         if (buffInterval > 10)
         {
-          player.GetStatEnergy().Add(200);
-          player.GetStatWater().Add(200);
+          player.GetStatEnergy().Add(500);
+          player.GetStatWater().Add(500);
           player.AddHealth("","Blood", 200);
           player.AddHealth("","", 200);
           player.GetBleedingManagerServer().RemoveMostSignificantBleedingSourceEx(NULL);
           player.RemoveAllAgents();
-          if (player.GetTotalTiredness() > 0)
+          if( !player.GetModifiersManager().IsModifierActive(eModifiers.MDF_EPINEPHRINE ) )
           {
-            player.SetTotalTiredness(player.GetTotalTiredness() - 500);
+            player.GetModifiersManager().DeactivateModifier( eModifiers.MDF_EPINEPHRINE );
           }
           buffInterval = 0;
         }

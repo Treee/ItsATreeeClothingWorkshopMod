@@ -40,9 +40,9 @@ class ActionPackLadder: ActionContinuousBase
 
 	override void OnFinishProgressServer( ActionData action_data )
 	{	
-    EntityAI.Cast(GetGame().CreateObjectEx("SRP_Ladder_Opened_Kit", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
     if(action_data.m_Target.GetObject())
     {
+      EntityAI.Cast(GetGame().CreateObjectEx("SRP_Ladder_Opened_Kit", action_data.m_Target.GetObject().GetPosition(), ECE_PLACE_ON_SURFACE));
       action_data.m_Target.GetObject().Delete();
     }
 	}

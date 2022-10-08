@@ -860,14 +860,14 @@ class CfgVehicles
   class SRP_StreetLightSlim_Kit: SRP_KitBase  // SRP_StreetLightL_kit
 	{
 		scope=2;
-		displayName="Slim Street Light Kit";
+		displayName="Street Light Kit - Tall Slim Metal Lamp";
 		descriptionShort="A placeable street light kit. When built you can light up the streets!";
 	};
 
   class SRP_StreetLightSlim: Container_Base  // SRP_StreetLightLarge
 	{
 		scope=2;
-		displayName="Street Light Slim";
+		displayName="Street Light - Tall Slim Metal Lamp";
 		descriptionShort="This is a large street light which can be used to light up the streets";
 		model="Survivalists_Mods\gear\camping\srp_streetlightslim.p3d";
 		carveNavmesh=1;
@@ -923,14 +923,14 @@ class CfgVehicles
   class SRP_StreetLightLarge_Kit: SRP_KitBase  // SRP_StreetLightL_kit
 	{
 		scope=2;
-		displayName="Large Street Light Kit";
+		displayName="Street Light Kit - Tall Wooden Lamp Post";
 		descriptionShort="A placeable street light kit. When built you can light up the streets!";
 	};
 
   class SRP_StreetLightLarge: Container_Base  // SRP_StreetLightLarge
 	{
 		scope=2;
-		displayName="Street Light - Wood";
+		displayName="Street Light - Tall Wooden Lamp Post";
 		descriptionShort="This is a large street light which can be used to light up the streets";
 		model="Survivalists_Mods\gear\camping\SRP_StreetLightL.p3d";
 		attachments[]=
@@ -990,14 +990,14 @@ class CfgVehicles
   class SRP_StreetLightLarge_Metal_Kit: SRP_KitBase  
 	{
 		scope=2;
-		displayName="Large Metal Street Light Kit";
+		displayName="Street Light Kit - Tall Slim Metal Hook";
 		descriptionShort="A placeable street light kit. When built you can light up the streets!";
 	};
 
   class SRP_StreetLightLarge_Metal: Container_Base  
 	{
 		scope=2;
-		displayName="Large Street Light - Metal";
+		displayName="Street Light - Tall Slim Metal Hook";
 		descriptionShort="This is a large street light which can be used to light up the streets";
 		model="Survivalists_Mods\gear\camping\lamppostlarge.p3d";
 		attachments[]=
@@ -1055,14 +1055,14 @@ class CfgVehicles
   class SRP_StreetLightMedium_Kit: SRP_KitBase  // SRP_StreetLightM_kit
 	{
 		scope=2;
-		displayName="Street Light Kit";
+		displayName="Street Light Kit - Wooden Half Lamp Post";
 		descriptionShort="A placeable street light kit. When built you can light up the streets!";
 	};
 
 	class SRP_StreetLightMedium: Container_Base  // SRP_StreetLightM
 	{
 		scope=2;
-		displayName="Street Light";
+		displayName="Street Light - Wooden Half Lamp Post";
 		descriptionShort="This is a medium street light which can be used to light up the streets";
 		model="Survivalists_Mods\gear\camping\SRP_StreetLightM.p3d";
 		attachments[]=
@@ -1122,14 +1122,14 @@ class CfgVehicles
   class SRP_StreetLightMedium_Wood_Kit: SRP_KitBase  // SRP_StreetLightM_kit
 	{
 		scope=2;
-		displayName="Medium Street Light Kit";
+		displayName="Street Light Kit - Wooden Fancy Half Lamp Post";
 		descriptionShort="A placeable street light kit. When built you can light up the streets!";
 	};
 
 	class SRP_StreetLightMedium_Wood: Container_Base  // SRP_StreetLightM
 	{
 		scope=2;
-		displayName="Medium Street Light";
+		displayName="Street Light - Wooden Fancy Half Lamp Post";
 		descriptionShort="This is a large street light which can be used to light up the streets";
 		model="Survivalists_Mods\gear\camping\lamppostmedium.p3d";
 		attachments[]=

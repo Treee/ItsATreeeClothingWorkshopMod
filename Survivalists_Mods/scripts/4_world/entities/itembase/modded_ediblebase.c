@@ -51,11 +51,16 @@ modded class Edible_Base
     }
     if (HasRadioactiveEffect())
     {
-      if (!consumer.IsAlpha())
+      if (!(consumer.IsAlpha() || consumer.IsQueenAlpha()))
       {
         consumer.InsertAgent(eAgents.CHEMICAL_POISON, 150);
         consumer.AddHealth("","Shock", -50);
         consumer.AddHealth("","Blood", -100);
+      }
+      else
+      {
+        consumer.AddHealth("","Shock", 50);
+        consumer.AddHealth("","Blood", 100);
       }
     }    
 	}

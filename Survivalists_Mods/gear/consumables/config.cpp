@@ -69,6 +69,7 @@ class CfgVehicles
   class BurlapStrip: Inventory_Base
 	{
 		varQuantityMax=30;
+    itemSize[]={2,1};
 	};
   class ButaneCanister: Inventory_Base
   {
@@ -83,6 +84,7 @@ class CfgVehicles
   };
   class LargeGasCanister: Inventory_Base
   {
+    itemSize[]={2,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -94,6 +96,7 @@ class CfgVehicles
   };
   class MediumGasCanister: Inventory_Base
   {
+    itemSize[]={2,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -105,6 +108,7 @@ class CfgVehicles
   };
   class SmallGasCanister: Inventory_Base
   {
+    itemSize[]={2,1};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -128,6 +132,11 @@ class CfgVehicles
   class GasMask_Filter: Inventory_Base
 	{
 		itemSize[]={1,2};
+  };
+  class Rag: Inventory_Base
+	{
+    itemSize[]={2,1};
+		scope=2;
   };
   
   // windstride override
