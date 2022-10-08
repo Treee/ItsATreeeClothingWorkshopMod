@@ -20,6 +20,27 @@ class CfgAmmo
 	{
 		scope=0;
 	};
+  
+  class MeleeDamage;
+	class MeleeMjolnir: MeleeDamage
+	{
+		class DamageApplied
+		{
+			type="Melee";
+			class Health
+			{
+				damage=0;
+			};
+			class Blood
+			{
+				damage=0;
+			};
+			class Shock
+			{
+				damage=0;
+			};
+		};
+	};
 };
 class CfgMagazines
 {

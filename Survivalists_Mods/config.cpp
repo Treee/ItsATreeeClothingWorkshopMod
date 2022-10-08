@@ -55,6 +55,7 @@ class CfgPatches
       "deerisle", // for the map (security door)      
       "Deerisle_Security_System", // overriding air craft carrier loot
       "DeerIsle_Weapons",
+      "JMC_Mjolnir",
       "Survivalists_Narcotics",
       "Survivalists_Drink",
       "Survivalists_Food",
