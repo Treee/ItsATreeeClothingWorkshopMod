@@ -1,5 +1,7 @@
 modded class WoundAgent
 {	
+	static const float RESISTANCE_STAGE_2 = 0.65;
+
 	override void Init()
 	{
     super.Init();
