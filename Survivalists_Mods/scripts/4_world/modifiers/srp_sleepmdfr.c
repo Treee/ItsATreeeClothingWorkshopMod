@@ -72,7 +72,12 @@ class SRP_SleepMdfr extends ModifierBase
 
   override bool ActivateCondition(PlayerBase player)
 	{
-		return m_IsSleepActive;
+    PlayerIdentity identity = player.GetIdentity();
+    if (identity)
+    {
+		  return m_IsSleepActive;
+    }
+    return false;
 	}
 	
 	override void OnActivate(PlayerBase player)
