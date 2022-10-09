@@ -459,7 +459,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_adam_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_adam_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_adam_body_bearded.rvmat";
-    };     
+    };
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_adam_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_adam_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_adam_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Boris: SurvivorMale_Base
 	{
@@ -834,7 +840,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_boris_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_boris_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_boris_body_bearded.rvmat";
-    };     
+    };
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_boris_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_boris_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_boris_body_bearded.rvmat";
+    };
 	};
   class SurvivorM_Cyril: SurvivorMale_Base
 	{
@@ -1209,7 +1221,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_cyril_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_cyril_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_cyril_body_bearded.rvmat";
-    };    
+    };   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_cyril_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_cyril_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_cyril_body_bearded.rvmat";
+    }; 
 	};
   class SurvivorM_Denis: SurvivorMale_Base
 	{
@@ -1584,7 +1602,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_denis_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_denis_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_denis_body_bearded.rvmat";
-    };      
+    };    
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_denis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_denis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_denis_body_bearded.rvmat";
+    };  
 	};
   class SurvivorM_Elias: SurvivorMale_Base
 	{
@@ -1960,6 +1984,12 @@ class CfgVehicles
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_elias_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_elias_body_bearded.rvmat";
     }; 
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_elias_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_elias_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_elias_body_bearded.rvmat";
+    };
 	};
   class SurvivorM_Francis: SurvivorMale_Base
 	{
@@ -2335,6 +2365,12 @@ class CfgVehicles
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_francis_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_francis_body_bearded.rvmat";
     };   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_francis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_francis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_francis_body_bearded.rvmat";
+    };
 	};
   class SurvivorM_Guo: SurvivorMale_Base
 	{
@@ -2709,6 +2745,12 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_guo_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_guo_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_guo_body_bearded.rvmat";
+    };
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_guo_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_guo_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_guo_body_bearded.rvmat";
     };     
 	};
   class SurvivorM_Hassan: SurvivorMale_Base
@@ -3084,7 +3126,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_hassan_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_hassan_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_hassan_body_bearded.rvmat";
-    };       
+    };     
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_hassan_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_hassan_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_hassan_body_bearded.rvmat";
+    };  
 	};
   class SurvivorM_Indar: SurvivorMale_Base
 	{
@@ -3459,7 +3507,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_indar_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_indar_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_indar_body_bearded.rvmat";
-    };       
+    };
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_indar_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_indar_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_indar_body_bearded.rvmat";
+    };   
 	};
   class SurvivorM_Jose: SurvivorMale_Base
 	{
@@ -3835,6 +3889,12 @@ class CfgVehicles
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_jose_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_jose_body_bearded.rvmat";
     };       
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_jose_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_jose_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_jose_body_bearded.rvmat";
+    };
 	};
   class SurvivorM_Kaito: SurvivorMale_Base
 	{
@@ -4209,7 +4269,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_kaito_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_kaito_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_kaito_body_bearded.rvmat";
-    };     
+    };
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_kaito_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_kaito_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_kaito_body_bearded.rvmat";
+    };
 	};
   class SurvivorM_Lewis: SurvivorMale_Base
 	{
@@ -4585,6 +4651,12 @@ class CfgVehicles
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_lewis_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_lewis_body_bearded.rvmat";
     };     
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_lewis_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_lewis_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_lewis_body_bearded.rvmat";
+    };
 	};
   class SurvivorM_Manua: SurvivorMale_Base
 	{
@@ -4959,7 +5031,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_manua_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_manua_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_manua_body_bearded.rvmat";
-    };      
+    };    
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_manua_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_manua_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_manua_body_bearded.rvmat";
+    };  
 	};
   class SurvivorM_Niki: SurvivorMale_Base
 	{
@@ -5334,7 +5412,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_niki_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_niki_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_niki_body_bearded.rvmat";
-    };     
+    };  
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_niki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_niki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_niki_body_bearded.rvmat";
+    };   
 	};
   class SurvivorM_Oliver: SurvivorMale_Base
 	{
@@ -5709,7 +5793,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_oliver_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_oliver_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_oliver_body_bearded.rvmat";
-    };       
+    };   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_oliver_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_oliver_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_oliver_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Peter: SurvivorMale_Base
 	{
@@ -6084,7 +6174,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_peter_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_peter_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_peter_body_bearded.rvmat";
-    };     
+    }; 
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_peter_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_peter_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_peter_body_bearded.rvmat";
+    };    
 	};
   class SurvivorM_Quinn: SurvivorMale_Base
 	{
@@ -6459,7 +6555,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_quinn_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_quinn_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_quinn_body_bearded.rvmat";
-    };     
+    };  
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_quinn_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_quinn_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_quinn_body_bearded.rvmat";
+    };   
 	};
   class SurvivorM_Rolf: SurvivorMale_Base
 	{
@@ -6835,6 +6937,12 @@ class CfgVehicles
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_rolf_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_rolf_body_bearded.rvmat";
     };        
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_rolf_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_rolf_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_rolf_body_bearded.rvmat";
+    };
 	};
   class SurvivorM_Seth: SurvivorMale_Base
 	{
@@ -7209,7 +7317,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_seth_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_seth_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_seth_body_bearded.rvmat";
-    };       
+    };    
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_seth_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_seth_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_seth_body_bearded.rvmat";
+    };   
 	};
   class SurvivorM_Taiki: SurvivorMale_Base
 	{
@@ -7584,7 +7698,13 @@ class CfgVehicles
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_taiki_body_shaved.rvmat";
       mat_paint_unshaved="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_taiki_body_unshaved.rvmat";
       mat_paint_bearded="Survivalists_FacePaints\heads\fpf_scottland\hhl_m_taiki_body_bearded.rvmat";
-    };     
+    };  
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_taiki_body_shaved.rvmat";
+      mat_paint_unshaved="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_taiki_body_unshaved.rvmat";
+      mat_paint_bearded="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_m_taiki_body_bearded.rvmat";
+    };   
 	};
   
   //===============================FEMALE
@@ -7837,7 +7957,11 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_eva_body.rvmat";      
-		};    
+		};   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_eva_body.rvmat";
+    }; 
 	};
   class SurvivorF_Frida: SurvivorFemale_Base
 	{
@@ -8089,6 +8213,10 @@ class CfgVehicles
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_frida_body.rvmat";      
 		};     
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_frida_body.rvmat";
+    };
 	};
   class SurvivorF_Gabi: SurvivorFemale_Base
 	{
@@ -8339,7 +8467,11 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_gabi_body.rvmat";      
-		};    
+		};
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_gabi_body.rvmat";
+    };
 	};
   class SurvivorF_Helga: SurvivorFemale_Base
 	{
@@ -8590,7 +8722,11 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_helga_body.rvmat";      
-		};     
+		};   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_helga_body.rvmat";
+    };  
 	};
   class SurvivorF_Irena: SurvivorFemale_Base
 	{
@@ -8841,7 +8977,11 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_irena_body.rvmat";      
-		};    
+		};   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_irena_body.rvmat";
+    }; 
 	};
   class SurvivorF_Judy: SurvivorFemale_Base
 	{
@@ -9092,7 +9232,11 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_judy_body.rvmat";      
-		};    
+		};   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_judy_body.rvmat";
+    }; 
 	};
   class SurvivorF_Keiko: SurvivorFemale_Base
 	{
@@ -9344,6 +9488,10 @@ class CfgVehicles
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_keiko_body.rvmat";      
 		};    
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_keiko_body.rvmat";
+    };
 	};
   class SurvivorF_Linda: SurvivorFemale_Base
 	{
@@ -9594,7 +9742,11 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_linda_body.rvmat";      
-		};    
+		};  
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_linda_body.rvmat";
+    };  
 	};
   class SurvivorF_Maria: SurvivorFemale_Base
 	{
@@ -9845,7 +9997,11 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_maria_body.rvmat";      
-		};       
+		};   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_maria_body.rvmat";
+    };    
 	};
   class SurvivorF_Naomi: SurvivorFemale_Base
 	{
@@ -10096,7 +10252,11 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_naomi_body.rvmat";      
-		};    
+		}; 
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_naomi_body.rvmat";
+    };   
 	};
   class SurvivorF_Baty: SurvivorFemale_Base
 	{
@@ -10347,6 +10507,10 @@ class CfgVehicles
     class FacePaint_FlagScottland
 		{			
       mat_paint="Survivalists_FacePaints\heads\fpf_scottland\hhl_f_Baty_body.rvmat";      
-		};       
+		};   
+    class FacePaint_ScarLeftEyeBear
+    {
+      mat_paint="Survivalists_FacePaints\heads\fps_lefteyebear\hhl_f_Baty_body.rvmat";
+    };    
 	};
 };

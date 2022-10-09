@@ -517,7 +517,7 @@ class CfgVehicles
 	class SRP_SewingThread: Inventory_Base
 	{
 		scope=2;
-		displayName="Sewing Thread";
+		displayName="Sewing Thread - White";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
 		model="\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
 		weight=500;
@@ -528,6 +528,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=200;
     canBeSplit=1;
+    color="white";
     inventorySlot[]=
     {
       "SRP_SewingThread1",
@@ -548,8 +549,9 @@ class CfgVehicles
 	class SRP_SewingThread_Black: SRP_SewingThread
 	{
 		scope=2;
-		displayName="Sewing Thread";
+		displayName="Sewing Thread - Black";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="black";
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -562,8 +564,9 @@ class CfgVehicles
 	class SRP_SewingThread_Green: SRP_SewingThread
 	{
 		scope=2;
-		displayName="Sewing Thread";
+		displayName="Sewing Thread - Green";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="green";
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -576,8 +579,9 @@ class CfgVehicles
 	class SRP_SewingThread_LightBlue: SRP_SewingThread
 	{
 		scope=2;
-		displayName="Sewing Thread";
+		displayName="Sewing Thread - Light Blue";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="lightblue";
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -590,8 +594,9 @@ class CfgVehicles
 	class SRP_SewingThread_Red: SRP_SewingThread
 	{
 		scope=2;
-		displayName="Sewing Thread";
+		displayName="Sewing Thread - Red";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="red";
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -604,8 +609,9 @@ class CfgVehicles
 	class SRP_SewingThread_Blue: SRP_SewingThread
 	{
 		scope=2;
-		displayName="Sewing Thread";
+		displayName="Sewing Thread - Blue";
 		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="blue";
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -618,8 +624,9 @@ class CfgVehicles
   class SRP_SewingThread_Grey : SRP_SewingThread
 	{
 		scope = 2;
-		displayName = "Sewing Thread";
+		displayName = "Sewing Thread - Gray";
 		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="gray";
 		hiddenSelections[] =
 		{
 			"zbytek"
@@ -632,8 +639,9 @@ class CfgVehicles
 	class SRP_SewingThread_Orange : SRP_SewingThread
 	{
 		scope = 2;
-		displayName = "Sewing Thread";
+		displayName = "Sewing Thread - Orange";
 		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="orange";
 		hiddenSelections[] =
 		{
 			"zbytek"
@@ -646,8 +654,9 @@ class CfgVehicles
 	class SRP_SewingThread_Pink : SRP_SewingThread
 	{
 		scope = 2;
-		displayName = "Sewing Thread";
+		displayName = "Sewing Thread - Pink";
 		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="pink";
 		hiddenSelections[] =
 		{
 			"zbytek"
@@ -660,8 +669,9 @@ class CfgVehicles
 	class SRP_SewingThread_Purple : SRP_SewingThread
 	{
 		scope = 2;
-		displayName = "Sewing Thread";
+		displayName = "Sewing Thread - Purple";
 		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="purple";
 		hiddenSelections[] =
 		{
 			"zbytek"
@@ -674,8 +684,9 @@ class CfgVehicles
 	class SRP_SewingThread_Yellow : SRP_SewingThread
 	{
 		scope = 2;
-		displayName = "Sewing Thread";
+		displayName = "Sewing Thread - Yellow";
 		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
+    color="yellow";
 		hiddenSelections[] =
 		{
 			"zbytek"

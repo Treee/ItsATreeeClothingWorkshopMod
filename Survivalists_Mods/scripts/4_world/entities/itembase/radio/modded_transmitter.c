@@ -49,6 +49,16 @@ modded class TransmitterBase
 		
 		//stop the static noise
 		SoundTurnedOnNoiseStop();
+    // set mute or not
+    UpdateMuteRadioState();
+	}
+
+  override void OnWorkStop()
+	{
+		//turn on broadcasting/receiving
+		super.OnWorkStop();
+    // set mute or not
+    UpdateMuteRadioState();
 	}
   
   override void OnInventoryEnter(Man player)
