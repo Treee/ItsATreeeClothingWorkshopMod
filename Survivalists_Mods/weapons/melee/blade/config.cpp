@@ -1231,6 +1231,84 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_WitcherSword: Inventory_Base
+	{
+		scope=2;
+		displayName="Antique Replica Witcher Sword";
+		descriptionShort="A trusty sword that is known to slay monsters of the most terrible kind.";
+		model="\Survivalists_Mods\weapons\melee\blade\srp_witchersword.p3d";
+		rotationFlags=16;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		weight=600;
+		itemSize[]={1,7};
+		itemBehaviour=2;
+		fragility=0.02;
+		openItemSpillRange[]={40,70};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
+		isMeleeWeapon=1;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=750;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_witchersword.rvmat"}},
+						{0.69999999,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_witchersword.rvmat"}},
+						{0.5,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_witchersword_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_witchersword_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Mods\weapons\melee\blade\data\srp_witchersword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUp_Light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="baseballbat_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 
   class SRP_CrystalMace: Inventory_Base
 	{
