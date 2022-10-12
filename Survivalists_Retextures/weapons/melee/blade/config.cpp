@@ -16,6 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
   class SRP_BerserkSword;
+  class SRP_WitcherSword_ColorBase;
 
 	class SRP_BerserkSword_Illusive: SRP_BerserkSword
 	{
@@ -29,5 +30,41 @@ class CfgVehicles
     {
       "Survivalists_Retextures\weapons\melee\blade\data\srp_berserksword_illusive_co.paa"
     };
+  };
+
+  class SRP_WitcherSword_Benji: SRP_WitcherSword_ColorBase
+	{
+    scope=2;
+		displayName="Aerondight";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\weapons\melee\blade\data\srp_witchersword_benji_co.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Retextures\weapons\melee\blade\data\srp_witchersword_benji.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=750;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Retextures\weapons\melee\blade\data\srp_witchersword_benji.rvmat"}},
+						{0.69999999,	{	"Survivalists_Retextures\weapons\melee\blade\data\srp_witchersword_benji.rvmat"}},
+						{0.5,	{	"Survivalists_Retextures\weapons\melee\blade\data\srp_witchersword_benji.rvmat"}},
+						{0.30000001,	{	"Survivalists_Retextures\weapons\melee\blade\data\srp_witchersword_benji.rvmat"}},
+						{0.0,	{	"Survivalists_Retextures\weapons\melee\blade\data\srp_witchersword_benji.rvmat"}}
+					};
+				};
+			};
+		};
   };
 };

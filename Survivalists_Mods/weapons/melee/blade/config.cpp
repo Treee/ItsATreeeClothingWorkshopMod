@@ -1231,9 +1231,9 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_WitcherSword: Inventory_Base
+  class SRP_WitcherSword_ColorBase: Inventory_Base
 	{
-		scope=2;
+		scope=0;
 		displayName="Antique Replica Witcher Sword";
 		descriptionShort="A trusty sword that is known to slay monsters of the most terrible kind.";
 		model="\Survivalists_Mods\weapons\melee\blade\srp_witchersword.p3d";
@@ -1251,6 +1251,14 @@ class CfgVehicles
     repairableWithKits[]={4};
 		repairCosts[]={50};
 		isMeleeWeapon=1;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_witchersword_co.paa"
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1309,7 +1317,20 @@ class CfgVehicles
 			};
 		};
 	};
-
+  
+  class SRP_WitcherSword_Basic: SRP_WitcherSword_ColorBase
+	{
+    scope=2;
+		displayName="Aerondight Replica";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_witchersword_co.paa"
+    };
+  };
   class SRP_CrystalMace: Inventory_Base
 	{
 		scope=2;

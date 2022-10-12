@@ -799,7 +799,7 @@ class CfgVehicles
 		itemSize[]={3,2};
 		itemsCargoSize[]={4,5};
 		absorbency=0;
-		heatIsolation=0.80000001;
+		heatIsolation=0.60000001;
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -848,4 +848,79 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_DualTacticalHolster_ColorBase: Clothing
+  {
+    scope=0;
+    displayName="Double drop leg Holster";
+    descriptionShort="An Espen Industries branded drop leg holster combined with another to fit on both legs.";
+    model="Survivalists_Mods\characters\belts\SRP_Tactical_Holster_Belt_g.p3d";
+    attachments[]=
+    {
+      "Belt_Back",
+      "Belt_Right",
+      "Belt_Left",
+      "LargePouch1"
+    };
+    repairableWithKits[]={5,8};
+    repairCosts[]={30,25};
+    inventorySlot[]=
+    {
+      "Hips"
+    };
+    simulation="clothing";
+    vehicleClass="Clothing";
+    weight=1000;
+    itemSize[]={3,2};
+    itemsCargoSize[]={5,5};
+    absorbency=0;
+    heatIsolation=0.60001;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\characters\belts\data\SRP_Tactical_Holster_Belt_CO.paa"
+    };
+    class ClothingTypes
+    {
+      male="Survivalists_Mods\characters\belts\SRP_Tactical_Dual_Belt_m.p3d";
+      female="Survivalists_Mods\characters\belts\SRP_Tactical_Dual_Belt_m.p3d";
+    };
+    class DamageSystem
+    {
+      class GlobalHealth
+      {
+        class Health
+        {
+          hitpoints=300;
+          healthLevels[]=
+          {
+            {1,{"Survivalists_Mods\characters\belts\data\SRP_Tactical_Holster_Belt.rvmat" }},
+            {0.69999999,{"Survivalists_Mods\characters\belts\data\SRP_Tactical_Holster_Belt.rvmat"}},
+            {0.5,{"Survivalists_Mods\characters\belts\data\SRP_Tactical_Holster_Belt_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\characters\belts\data\SRP_Tactical_Holster_Belt_damage.rvmat"}},
+            {0,{"Survivalists_Mods\characters\belts\data\SRP_Tactical_Holster_Belt_destruct.rvmat"}}
+          };
+        };
+      };
+    };
+    class AnimEvents
+    {
+      class SoundWeapon
+      {
+        class pickUpItem
+        {
+          soundSet="pickUpPot_SoundSet";
+          id=797;
+        };
+        class drop
+        {
+          soundset="BallisticHelmet_drop_SoundSet";
+          id=898;
+        };
+      };
+    };
+  };
 };

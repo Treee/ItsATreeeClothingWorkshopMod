@@ -191,7 +191,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_WarHammer_Basic_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sledgehammer.asi", pBehavior, 		"dz/anims/anm/player/ik/two_handed/sledge_hammer.anm");
     pType.AddItemInHandsProfileIK("SRP_Spear_Pike_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_spear.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/advanced_spear.anm");     
     pType.AddItemInHandsProfileIK("SRP_BerserkSword", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");    
-    pType.AddItemInHandsProfileIK("SRP_WitcherSword", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");    
+    pType.AddItemInHandsProfileIK("SRP_WitcherSword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");    
   }
 
   override void RegisterHeavy( DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior )
