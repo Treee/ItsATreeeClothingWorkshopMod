@@ -207,6 +207,21 @@ class CfgVehicles
       "Material_Shelter_Rope"  
 		};
 	};
+  class SRP_WeaponBladeAerondightSword_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Weapon Kit - Aerondight Sword";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"  
+		};
+	};
   class SRP_WeaponBladeCrystalMace_Kit: SRP_KitBase //new
 	{
 		scope=2;

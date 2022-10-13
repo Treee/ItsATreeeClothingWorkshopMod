@@ -53,7 +53,7 @@ class CfgVehicles
 		displayName="Fridge Kit";
 		descriptionShort="A Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
-  class SRP_Fridge: Container_Base // BP_FridgeBig
+  class SRP_Fridge: Container_Base // double door window
 	{
 		scope=2;
 		displayName="Fridge";
@@ -72,13 +72,13 @@ class CfgVehicles
 			allowOwnedCargoManipulation=1;
 		};
 	};
-  class SRP_FridgeLarge_Kit: SRP_KitBase //new
+  class SRP_FridgeLarge_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Big Fridge Kit";
 		descriptionShort="A Big Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
-  class SRP_FridgeLarge: Container_Base // new
+  class SRP_FridgeLarge: Container_Base // quad window
 	{
 		scope=2;
 		displayName="Big Fridge";
@@ -103,7 +103,7 @@ class CfgVehicles
 		displayName="Retro Fridge Kit";
 		descriptionShort="A Retro Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
-  class SRP_FridgeRetro: Container_Base // new
+  class SRP_FridgeRetro: Container_Base // blue with stikey notes
 	{
 		scope=2;
 		displayName="Retro Fridge";
@@ -128,7 +128,7 @@ class CfgVehicles
 		displayName="Minsk Fridge Kit";
 		descriptionShort="A Minsk Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
 	};
-  class SRP_FridgeMinsk: Container_Base // new
+  class SRP_FridgeMinsk: Container_Base // tall white
 	{
 		scope=2;
 		displayName="Minsk Fridge";

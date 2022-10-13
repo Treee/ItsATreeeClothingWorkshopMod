@@ -19,20 +19,10 @@ class Cannabis_Irradiated extends Edible_Base
 	{
 		return true;
 	}
-
-  override void OnInventoryEnter(Man player)
+  override bool HasRadioactiveEffect()
   {
-    super.OnInventoryEnter(player);
-    PlayerBase player_PB = PlayerBase.Cast( player );
-    if (GetGame().IsDedicatedServer() && player_PB && (!player_PB.SRPIgnoreContaminatedArea()))
-    {
-      if (player_PB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
-      {
-	  	  player_PB.InsertAgent(eAgents.CHEMICAL_POISON, 25);
-      }
-    }
+    return true;
   }
-	
 	override void SetActions()
 	{
 		super.SetActions();
