@@ -131,6 +131,7 @@ class SRP_MetalBarrel_Red extends SRP_MetalBarrel_Colorbase
       "BloodBagFull",
       "BloodBagIV",
       "BloodTestKit",
+      "SRP_LabTube_Colorbase",
     };
   }
 };

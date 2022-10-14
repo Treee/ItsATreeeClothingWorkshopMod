@@ -140,6 +140,12 @@ class CfgVehicles
 		physLayer="item_large";
 		weight=10000;
 		itemSize[]={10,15};
+    hiddenSelections[]={"zbytek","door"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\refrigeratorminsk_co.paa",
+      "Survivalists_Mods\gear\containers\data\refrigeratorminskdoors_co.paa"
+    };
 		class Cargo
 		{
 			itemsCargoSize[]={10,15};
@@ -151,6 +157,25 @@ class CfgVehicles
       class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
       class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
 		};
+	};
+
+  class SRP_FridgeMinsk_Medical_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Minsk Fridge Kit - Medical";
+		descriptionShort="A Minsk Fridge Kit. Branded with medical insignia";
+	};
+  class SRP_FridgeMinsk_Medical: SRP_FridgeMinsk // tall white
+	{
+		scope=2;
+		displayName="Minsk Fridge - Medical";
+		descriptionShort="A Minsk fridge. Branded with medical insignia";
+    hiddenSelections[]={"zbytek","door"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\refrigeratorminsk_medical_co.paa",
+      "Survivalists_Mods\gear\containers\data\refrigeratorminskdoors_medical_co.paa"
+    };
 	};
 
   class SRP_WoodenShelfKit_Kit: SRP_KitBase //new

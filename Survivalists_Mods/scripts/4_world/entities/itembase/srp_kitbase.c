@@ -191,6 +191,7 @@ class SRP_Fridge_Kit extends SRP_KitBase{};
 class SRP_FridgeLarge_Kit extends SRP_KitBase{};
 class SRP_FridgeRetro_Kit extends SRP_KitBase{};
 class SRP_FridgeMinsk_Kit extends SRP_KitBase{};
+class SRP_FridgeMinsk_Medical_Kit extends SRP_KitBase{};
 
 class SRP_MilitaryCaseSmall_Kit extends SRP_KitBase{};
 class SRP_MilitaryCaseSmallBlack_Kit extends SRP_KitBase{};
