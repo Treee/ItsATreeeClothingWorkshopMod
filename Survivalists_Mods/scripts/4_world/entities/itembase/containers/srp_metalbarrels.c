@@ -8,9 +8,132 @@ class SRP_MetalBarrel_Colorbase extends SRP_Container_Base
 // general storage
 class SRP_MetalBarrel_Old extends SRP_MetalBarrel_Colorbase{};
 //ammo
-class SRP_MetalBarrel_Blue extends SRP_MetalBarrel_Colorbase{};
+class SRP_MetalBarrel_Blue extends SRP_MetalBarrel_Colorbase
+{
+  override bool CanReceiveItemIntoCargo (EntityAI item)
+	{
+    ItemBase ibItem;
+    if (Class.CastTo(ibItem, item))
+    {
+      if (ibItem.IsAmmoPile())
+      {
+        return true;
+      }
+      if (ibItem.IsMagazine())
+      {
+        return true;
+      }
+      if (ibItem.IsKindOf("Grenade_Base"))
+      {
+        return true;
+      }
+      if (ibItem.GetType().Contains("AmmoBox_"))
+      {
+        return true;
+      }
+      if (ibItem.GetType().Contains("SRP_Explosive_"))
+      {
+        return true;
+      }
+    }
+    return false;		
+	}
+
+  override bool CanLoadItemIntoCargo( EntityAI item )
+  {
+    ItemBase ibItem;
+    if (Class.CastTo(ibItem, item))
+    {
+      if (ibItem.IsAmmoPile())
+      {
+        return true;
+      }
+      if (ibItem.IsMagazine())
+      {
+        return true;
+      }
+      if (ibItem.IsKindOf("Grenade_Base"))
+      {
+        return true;
+      }
+      if (ibItem.GetType().Contains("AmmoBox_"))
+      {
+        return true;
+      }
+      if (ibItem.GetType().Contains("SRP_Explosive_"))
+      {
+        return true;
+      }
+    }
+    return false;		
+  }
+};
 //medical
-class SRP_MetalBarrel_Red extends SRP_MetalBarrel_Colorbase{};
+class SRP_MetalBarrel_Red extends SRP_MetalBarrel_Colorbase
+{
+  override bool CanReceiveItemIntoCargo (EntityAI item)
+	{
+    ItemBase ibItem;
+    if (Class.CastTo(ibItem, item))
+    {
+      TStringArray allowedItems = GetAllowedItems();
+      foreach(string allowed : allowedItems)
+      {
+        if (ibItem.IsKindOf(allowed))
+        {
+          return true;
+        }
+      }
+    }
+    return false;		
+	}
+
+  override bool CanLoadItemIntoCargo( EntityAI item )
+  {
+    ItemBase ibItem;
+    if (Class.CastTo(ibItem, item))
+    {
+      TStringArray allowedItems = GetAllowedItems();
+      foreach(string allowed : allowedItems)
+      {
+        if (ibItem.IsKindOf(allowed))
+        {
+          return true;
+        }
+      }
+    }
+    return false;		
+  }
+
+  TStringArray GetAllowedItems()
+  {
+    return {
+      "BandageDressing",
+      "DisinfectantSpray",
+      "DisinfectantAlcohol",
+      "PurificationTablets",
+      "CharcoalTablets",
+      "PainkillerTablets",
+      "VitaminBottle",
+      "IodineTincture",
+      "TetracyclineAntibiotics",
+      "Epinephrine",
+      "Morphine",
+      "AntiChemInjector",
+      "Syringe",
+      "ClearSyringe",
+      "BloodSyringe",
+      "InjectionVial",
+      "SalineBag",
+      "StartKitIV",
+      "SalineBagIV",
+      "BloodBagEmpty",
+      "BloodBagFull",
+      "BloodBagIV",
+      "BloodTestKit",
+    };
+  }
+};
 //radioactive
 class SRP_MetalBarrel_Yellow extends SRP_MetalBarrel_Colorbase
 {
