@@ -58,7 +58,7 @@ class CfgVehicles
 		descriptionShort="A single test tube. Careful not to break the glass.";
 		model="Survivalists_Narcotics\gear\crafting\testtube.p3d";
     color="default";
-    itemSize[]={1,3};
+    itemSize[]={1,2};
     varTemperatureMax=100;
 		weight=15;
     varQuantityInit=50;

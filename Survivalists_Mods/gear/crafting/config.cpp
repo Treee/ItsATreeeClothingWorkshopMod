@@ -28,6 +28,14 @@ class CfgVehicles
 
   class SRP_KitBase;
   //========================================== VANILLA OVERRIDE
+  class Bark_ColorBase: Inventory_Base
+	{
+    itemSize[]={1,2};
+  };
+  class Rope: Inventory_Base
+	{
+    itemSize[]={1,2};
+  };
   class LongWoodenStick_Irradiated: LongWoodenStick
 	{
 		scope=2;

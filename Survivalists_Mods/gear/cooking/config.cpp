@@ -22,7 +22,7 @@ class CfgVehicles
   class PortableGasLamp: Inventory_Base 
 	{
 		scope=2;
-		itemSize[]={4,3};
+		itemSize[]={3,3};
     inventorySlot[]=
     {
       "SRP_Lantern"
@@ -36,7 +36,7 @@ class CfgVehicles
     descriptionShort="This lamp emits only a small amount of light.";
 		model="Survivalists_Mods\gear\cooking\srp_portablegaslamp.p3d";
 		weight=330;
-		itemSize[]={4,3};
+		itemSize[]={3,3};
 		attachments[]=
 		{
 			"GasCanister"

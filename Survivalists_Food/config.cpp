@@ -302,9 +302,6 @@ class CfgVehicles
 
 	class Honey;
 	class Chips;
-  class BakedBeansCan;
-  class BakedBeansCan_Opened;
-  class Guts;
   class TunaCan;
   class TunaCan_Opened;
   class PowderedMilk;
@@ -316,8 +313,58 @@ class CfgVehicles
   class BoxCerealCrunchin: Edible_Base
   {
     canBeSplit=1;
+    itemSize[]={2,3};
   };
-
+  class Guts: Edible_Base
+  {
+    canBeSplit=1;
+    itemSize[]={2,2};
+  };
+  class Rice: Edible_Base
+  {
+    canBeSplit=1;
+    itemSize[]={2,2};
+  };
+  class BakedBeansCan: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class BakedBeansCan_Opened: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class PeachesCan: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class PeachesCan_Opened: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class TacticalBaconCan: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class TacticalBaconCan_Opened: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class SpaghettiCan: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class SpaghettiCan_Opened: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class SardinesCan: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
+  class SardinesCan_Opened: Edible_Base
+  {
+    itemSize[]={1,2};
+  };
   class Lard: Edible_Base
 	{
 		inventorySlot[]+=
