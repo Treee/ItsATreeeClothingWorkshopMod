@@ -31,27 +31,27 @@ class cfgWeapons
 		model="Survivalists_Mods\rifles\ESPAR47\ESPAR47.p3d";
 		hiddenSelections[]=
 		{
-			"zbytek"
+			"zbytek",
+			"Barrel"
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom_CO.paa",
-			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_HndGrd_CO.paa",
-			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Muzzle_CO.paa",
+			"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel_CO.paa",
 			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top_CO.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
 			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
-			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_HndGrd.rvmat",
-			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Muzzle.rvmat",
+			"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
 			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 		};
 		attachments[]=
 		{
 			"weaponButtstockM4",
+			"WeaponHandguardM4",
 			"weaponOptics",
-			"weaponFlashlight",
+			"weaponflashlight",
 			"weaponMuzzleM4"
 		};
 		repairableWithKits[]={1};
@@ -77,11 +77,188 @@ class cfgWeapons
 		weight=1840;
 		recoilModifier[]={1,1,1};
 		swayModifier[]={1.2,1.2,1};
-    itemSize[]={8,3};
+		itemSize[]={5,3};
 		modes[]=
 		{
 			"SemiAuto",
 			"FullAuto",
+		};
+		class SemiAuto: Mode_SemiAuto
+		{
+			soundSetShot[]=
+			{
+				"AK_Shot_SoundSet",
+				"AK_Tail_SoundSet",
+				"AK_InteriorTail_SoundSet"
+			};
+			soundSetShotExt[]=
+			{
+				
+				{
+					"AK_silencer_SoundSet",
+					"AK_silencerTail_SoundSet",
+					"AK_silencerInteriorTail_SoundSet"
+				},
+				
+				{
+					"AK_silencerHomeMade_SoundSet",
+					"AK_silencerHomeMadeTail_SoundSet",
+					"AK_silencerInteriorHomeMadeTail_SoundSet"
+				}
+			};
+			begin1[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				1,
+				1,
+				900
+			};
+			begin2[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_1",
+				1,
+				1,
+				900
+			};
+			begin3[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_2",
+				1,
+				1,
+				900
+			};
+			soundBegin[]=
+			{
+				"begin1",
+				0.33333001,
+				"begin2",
+				0.33333001,
+				"begin2",
+				0.33333001
+			};
+			reloadTime=0.12;
+			recoil="recoil_AKM";
+			recoilProne="recoil_AKM_prone";
+			dispersion=0.0020000001;
+			magazineSlot="magazine";
+			beginSilenced_Pro[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				1,
+				1,
+				200
+			};
+			beginSilenced_HomeMade[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				1,
+				1,
+				300
+			};
+			soundBeginExt[]=
+			{
+				
+				{
+					"beginSilenced_Pro",
+					1
+				},
+				
+				{
+					"beginSilenced_HomeMade",
+					1
+				}
+			};
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			soundSetShot[]=
+			{
+				"AK_Shot_SoundSet",
+				"AK_Tail_SoundSet",
+				"AK_InteriorTail_SoundSet"
+			};
+			soundSetShotExt[]=
+			{
+				
+				{
+					"AK_silencer_SoundSet",
+					"AK_silencerTail_SoundSet",
+					"AK_silencerInteriorTail_SoundSet"
+				},
+				
+				{
+					"AK_silencerHomeMade_SoundSet",
+					"AK_silencerHomeMadeTail_SoundSet",
+					"AK_silencerInteriorHomeMadeTail_SoundSet"
+				}
+			};
+			begin1[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				1,
+				1,
+				900
+			};
+			begin2[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_1",
+				1,
+				1,
+				900
+			};
+			begin3[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_2",
+				1,
+				1,
+				900
+			};
+			soundBegin[]=
+			{
+				"begin1",
+				0.33333001,
+				"begin2",
+				0.33333001,
+				"begin2",
+				0.33333001
+			};
+			reloadTime=0.097999997;
+			recoil="recoil_AKM";
+			recoilProne="recoil_AKM_prone";
+			dispersion=0.0020000001;
+			magazineSlot="magazine";
+			beginSilenced_Pro[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				1,
+				1,
+				200
+			};
+			beginSilenced_HomeMade[]=
+			{
+				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				1,
+				1,
+				300
+			};
+			soundBeginExt[]=
+			{
+				
+				{
+					"beginSilenced_Pro",
+					1
+				},
+				
+				{
+					"beginSilenced_HomeMade",
+					1
+				}
+			};
+		};
+		class NoiseShoot
+		{
+			strength=82;
+			type="shot";
 		};
 		class Particles
 		{
@@ -152,7 +329,9 @@ class cfgWeapons
 							1,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat"
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						},
 						
@@ -160,7 +339,9 @@ class cfgWeapons
 							0.69999999,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat"
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						},
 						
@@ -168,7 +349,9 @@ class cfgWeapons
 							0.5,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_damage.rvmat"
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						},
 						
@@ -176,7 +359,9 @@ class cfgWeapons
 							0.30000001,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_damage.rvmat"
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						},
 						
@@ -184,7 +369,9 @@ class cfgWeapons
 							0,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_destruct.rvmat"
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						}
 					};

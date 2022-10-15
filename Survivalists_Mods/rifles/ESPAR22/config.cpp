@@ -29,22 +29,23 @@ class cfgWeapons
 		model="Survivalists_Mods\rifles\ESPAR22\ESPAR22.p3d";
 		hiddenSelections[]=
 		{
-			"zbytek"
+			"zbytek",
+			"Barrel"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_CO.paa"
+			"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_CO.paa","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel_CO.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat"
+			"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 		};
 		attachments[]=
 		{
 			"weaponButtstockM4",
 			"WeaponHandguardM4",
 			"weaponOptics",
-			"pistolFlashlight",
+			"weaponflashlight",
 			"pistolMuzzle"
 		};
 		repairableWithKits[]={1};
@@ -63,7 +64,7 @@ class cfgWeapons
 		weight=1840;
 		recoilModifier[]={1,1,1};
 		swayModifier[]={1.2,1.2,1};
-    itemSize[]={8,3};
+		itemSize[]={5,3};
 		modes[]=
 		{
 			"SemiAuto",
@@ -251,7 +252,7 @@ class cfgWeapons
 							1,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat"
+								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						},
 						
@@ -259,7 +260,7 @@ class cfgWeapons
 							0.69999999,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat"
+								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						},
 						
@@ -267,7 +268,7 @@ class cfgWeapons
 							0.5,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_damage.rvmat"
+								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_damage.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						},
 						
@@ -275,7 +276,7 @@ class cfgWeapons
 							0.30000001,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_damage.rvmat"
+								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_damage.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						},
 						
@@ -283,7 +284,7 @@ class cfgWeapons
 							0,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_destruct.rvmat"
+								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_destruct.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						}
 					};
