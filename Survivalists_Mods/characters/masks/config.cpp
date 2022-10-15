@@ -87,11 +87,13 @@ class CfgVehicles
 	{
 		soundVoiceType="none";
 		soundVoicePriority=3;
+    itemSize[]={2,2};
 	};
 	class GP5GasMask: Clothing
 	{
 		soundVoiceType="none";
 		soundVoicePriority=3;
+    itemSize[]={2,2};
 	};
 
 
@@ -505,7 +507,7 @@ class CfgVehicles
 		};
 		rotationFlags=1;
 		weight=130;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
 		ragQuantity=1;
 		varWetMax=1;
 		heatIsolation=1;
@@ -730,7 +732,7 @@ class CfgVehicles
 			"Headgear"
 		};
 		weight=500;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
 		ragQuantity=0;
 		varWetMax=0.75;
 		heatIsolation=0.75;
@@ -810,7 +812,7 @@ class CfgVehicles
 			"Clipping_Welding_Mask"
 		};
 		weight=500;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
 		ragQuantity=0;
 		varWetMax=0.75;
 		heatIsolation=0.50;
@@ -890,7 +892,7 @@ class CfgVehicles
 			"Clipping_Welding_Mask"
 		};
 		weight=500;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
 		ragQuantity=0;
 		varWetMax=0.75;
 		heatIsolation=0.50;
@@ -970,7 +972,7 @@ class CfgVehicles
 			"Clipping_Welding_Mask"
 		};
 		weight=500;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
 		ragQuantity=0;
 		varWetMax=0.75;
 		heatIsolation=0.50;
@@ -1050,7 +1052,7 @@ class CfgVehicles
 			"Clipping_Welding_Mask"
 		};
 		weight=500;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
 		ragQuantity=0;
 		varWetMax=0.75;
 		heatIsolation=0.50;
@@ -1132,8 +1134,8 @@ class CfgVehicles
 			"Clipping_Welding_Mask"
 		};
 		weight=500;
-		itemSize[]={3,2};
-		ragQuantity=0;
+		itemSize[]={2,2};
+    ragQuantity=0;
 		varWetMax=0.75;
 		heatIsolation=0.50;
 		repairableWithKits[]={5,2};
@@ -1211,7 +1213,7 @@ class CfgVehicles
 			"Clipping_Welding_Mask"
 		};
 		weight=500;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
 		ragQuantity=0;
 		varWetMax=0.75;
 		heatIsolation=0.50;
@@ -1279,7 +1281,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\masks\srps10gasmask_g.p3d";
     color="base";
     rotationFlags=0;
-		itemSize[]={2,3};
+		itemSize[]={2,2};
     rootClassName="SRP_S10Respirator";
     colorVariants[]=
     {
@@ -1338,7 +1340,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\masks\srppmk2_g.p3d";
     color="base";
     rotationFlags=0;
-		itemSize[]={2,3};
+		itemSize[]={2,2};
     rootClassName="SRP_PMK2Respirator";
     colorVariants[]=
     {
@@ -1398,7 +1400,7 @@ class CfgVehicles
 		model="Survivalists_Mods\characters\masks\srp_m50gasmask_g.p3d";
     color="base";
     rotationFlags=0;
-		itemSize[]={2,3};
+		itemSize[]={2,2};
     rootClassName="SRP_M50Respirator";
     colorVariants[]=
     {
@@ -1451,7 +1453,7 @@ class CfgVehicles
 		descriptionShort="Espen Industries. Sinister looking facial hair.";
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
     rootClassName="SRP_FacialHairGoatee";
     varWetMax=0;
     absorbency=0;
@@ -1497,7 +1499,7 @@ class CfgVehicles
 		descriptionShort="Espen Industries. A full manly beard.";
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
     rootClassName="SRP_FacialHairBeard";
     varWetMax=0;
     absorbency=0;
@@ -1543,7 +1545,7 @@ class CfgVehicles
 		descriptionShort="Espen Industries. A full manly beard.";
 		model="Survivalists_Mods\characters\masks\srp_facialhair_g.p3d";
 		rotationFlags=0;
-		itemSize[]={3,2};
+		itemSize[]={2,2};
     rootClassName="SRP_FacialHairChops";
     varWetMax=0;
     absorbency=0;
