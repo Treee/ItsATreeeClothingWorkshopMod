@@ -50,7 +50,7 @@ class SRP_MetalBucket_Mortar extends SRP_MetalBucket
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (GetHeatTimer() > 600)
+    if (GetHeatTimer() > 300)
     {
       GetGame().CreateObjectEx("SRP_ForgeCrucible_Empty", this.GetPosition(), false);
       this.Delete();
@@ -58,7 +58,7 @@ class SRP_MetalBucket_Mortar extends SRP_MetalBucket
   }
   override int GetHeatTimerThreshold()
   {
-    return 600;
+    return 300;
   }
   override bool IsTransformedByHeat()
   {
@@ -150,7 +150,7 @@ class SRP_ForgeIngotMold_Mortar extends SRP_ForgeIngotMold_ColorBase
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (GetHeatTimer() > 600)
+    if (GetHeatTimer() > 300)
     {
       GetGame().CreateObjectEx("SRP_ForgeIngotMold_Empty", this.GetPosition(), false);
       this.Delete();
@@ -165,7 +165,7 @@ class SRP_ForgeIngotMold_Mortar extends SRP_ForgeIngotMold_ColorBase
 	}
   override int GetHeatTimerThreshold()
   {
-    return 600;
+    return 300;
   }
   override bool IsTransformedByHeat()
   {
@@ -182,7 +182,7 @@ class SRP_ForgeIngotMold_Empty extends SRP_ForgeIngotMold_ColorBase
 	}
   override int GetHeatTimerThreshold()
   {
-    return 600;
+    return 300;
   }
   override bool IsTransformedByHeat()
   {
@@ -404,7 +404,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (GetHeatTimer() > 600)
+    if (GetHeatTimer() > 300)
     {
       if (HasMoreThanOneOreAttached())
       {
@@ -419,7 +419,7 @@ class SRP_ForgeCrucible_Empty extends SRP_ForgeCrucible_ColorBase
   
   override int GetHeatTimerThreshold()
   {
-    return 600;
+    return 300;
   }
   override bool IsTransformedByHeat()
   {
@@ -463,7 +463,7 @@ class SRP_Mining_StoneChunk_Coke extends SRP_Mining_StoneChunk_ColorBase
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (GetHeatTimer() > 1200 && GetQuantity() > 5)
+    if (GetHeatTimer() > 600 && GetQuantity() > 5)
     {
       GetGame().CreateObjectEx("SRP_Mining_RawOre_Coal", GetPosition(), false);
       AddQuantity(-6);
@@ -472,7 +472,7 @@ class SRP_Mining_StoneChunk_Coke extends SRP_Mining_StoneChunk_ColorBase
   
   override int GetHeatTimerThreshold()
   {
-    return 1200;
+    return 600;
   }
   override bool IsTransformedByHeat()
   {
