@@ -16,8 +16,106 @@ class CfgAmmo
 {
   class Bullet_12GaugePellets;
   class Shotgun_Base;
+  class Bullet_Base;
 
-  //----------------------- CUSTOME STUFF
+  class Bullet_22: Bullet_Base
+  {
+    class DamageApplied
+    {
+      type="Projectile";
+      dispersion=0;
+      bleedThreshold=1;
+      defaultDamageOverride[]=
+      {
+          {0.69999999,1}
+      };
+      class Health
+      {
+          damage=35;
+      };
+      class Blood
+      {
+          damage=100;
+      };
+      class Shock
+      {
+          damage=20;
+      };
+    };
+  };
+  class Bullet_45ACP: Bullet_Base
+  {
+    class DamageApplied
+    {
+      type="Projectile";
+      dispersion=0;
+      bleedThreshold=1;
+      class Health
+      {
+        damage=50;
+      };
+      class Blood
+      {
+        damage=100;
+      };
+      class Shock
+      {
+        damage=25;
+        damageOverride[]=
+        {
+          {0.89999998,1}
+        };
+      };
+    };
+  };
+  class Bullet_380: Bullet_Base
+  {
+    class DamageApplied
+    {
+      type="Projectile";
+      dispersion=0;
+      bleedThreshold=1;
+      class Health
+      {
+        damage=45;
+      };
+      class Blood
+      {
+        damage=100;
+      };
+      class Shock
+      {
+        damage=30;
+      };
+    };
+  };
+  class Bullet_9x19: Bullet_Base
+  {
+    class DamageApplied
+    {
+      type="Projectile";
+      dispersion=0;
+      bleedThreshold=1;
+      defaultDamageOverride[]=
+      {
+          {0.94999999,1}
+      };
+      class Health
+      {
+          damage=55;
+      };
+      class Blood
+      {
+          damage=100;
+      };
+      class Shock
+      {
+          damage=40;
+      };
+    };
+	};
+
+  //----------------------- CUSTOM STUFF
   class Bullet_12Nail: Bullet_12GaugePellets
 	{
 		scope=2;

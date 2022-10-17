@@ -20,6 +20,105 @@ class CfgVehicles
 
   class SRP_KitBase;
 
+  class ttbaseballbat_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Reinforced Baseball Bat";
+		descriptionShort="Espen Industries. Reinforced baseball bat used for bashing heads. Inspected by Master Gunsmith: Turko";
+		model="Survivalists_Mods\weapons\melee\blunt\ttbaseballbat.p3d";
+		debug_ItemCategory=2;
+		rotationFlags=17;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		weight=566;
+		itemSize[]={1,7};
+		itemBehaviour=2;
+		fragility=0.02;
+		openItemSpillRange[]={20,50};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeBat";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeBat_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeBat_Heavy";
+				range=3.7;
+			};
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\ttbaseballbat_co.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\melee\blunt\data\ttbaseballbat.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\melee\blunt\data\ttbaseballbat.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\melee\blunt\data\ttbaseballbat.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\melee\blunt\data\ttbaseballbat.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\melee\blunt\data\ttbaseballbat.rvmat"}}
+					};
+				};
+			};
+		};
+		soundImpactType="wood";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUp_Light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="baseballbat_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class ttbaseballbat_Simple: Inventory_Base
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blunt\data\ttbaseballbat_co.paa"
+    };
+	};
+
 //====================================================================================== HAMMERS
   class SRP_WeaponBluntWarHammer_Kit: SRP_KitBase //new
 	{

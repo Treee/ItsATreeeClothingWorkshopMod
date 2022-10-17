@@ -145,11 +145,19 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Letter_Slash_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
     pType.AddItemInHandsProfileIK("SRP_Letter_Times_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
 
+    
+    pType.AddItemInHandsProfileIK("tnails_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/machete.anm"); 
+    pType.AddItemInHandsProfileIK("tbladed_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/machete.anm"); 
+    pType.AddItemInHandsProfileIK("tantosword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/machete.anm"); 
+		pType.AddItemInHandsProfileIK("PipeAxe_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/Hatchet.anm"); 
+
   };
 
   override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
   {
     super.RegisterTwoHanded( pType, pBehavior );  
+    pType.AddItemInHandsProfileIK("ttcelticaxe_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_fireaxe.asi", pBehavior,"dz/anims/anm/player/ik/two_handed/FirefighterAxe.anm");
+    pType.AddItemInHandsProfileIK("ttbaseballbat_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_bat.asi", pBehavior,"dz/anims/anm/player/ik/two_handed/baseballbat.anm");	
     pType.AddItemInHandsProfileIK("BrewingPot_Mash_Colorbase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
     pType.AddItemInHandsProfileIK("SRP_PotteryPot_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
     pType.AddItemInHandsProfileIK("SRP_OilCan_Basic", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    

@@ -128,22 +128,6 @@ class CfgVehicles
       "SRP_ToolKit_Hatchet"
     };
   };
-
-  class DUB_MonsterclawV2: Cleaver
-	{
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints = 150;
-					healthLevels[] = {{1,{""}},{0.7,{""}},{0.5,{""}},{0.3,{""}},{0.1,{""}}};
-				};
-			};
-		};
-	};
-
   //============================== CUSTOM STUFF
 
   class SRP_WeaponBladeKit_Kit: SRP_KitBase //new
@@ -2250,6 +2234,658 @@ class CfgVehicles
 		};
 	};
 
+  class ttcelticaxe_ColorBase: Inventory_Base
+  {
+		scope=0;
+		displayName="Celtic War Axe";
+		descriptionShort="Espen Industries. Double edge war axe. Inspected by Master Gunsmith: Turko";
+		model="Survivalists_Mods\weapons\melee\blade\ttcelticaxe.p3d";
+    inventorySlot[]=
+		{
+			"Knife"
+		};
+    rotationFlags=17;
+    repairableWithKits[]={4};
+		repairCosts[]={20};
+    build_action_type=10;
+		RestrainUnlockType=1;
+		canSkinBodies=1;
+		weight=200;
+    varTemperatureMax=100;
+    itemSize[]={1,3};
+		lootCategory="Tools";
+		openItemSpillRange[]={10,20};    
+    isMeleeWeapon=1;
+		suicideAnim="onehanded";
+		hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_warcleaver_co.paa"
+		};
+		hiddenSelectionsMaterials[]= {
+			"Survivalists_Mods\weapons\melee\blade\data\srp_warcleaver.rvmat"
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};  
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLabels[]={1,0.69999999,0.5,0.30000001,0};
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Mods\weapons\melee\blade\data\srp_warcleaver.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\srp_warcleaver.rvmat"}},
+            {0.5,{"Survivalists_Mods\weapons\melee\blade\data\srp_warcleaver_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\srp_warcleaver_damage.rvmat"}},
+            {0,{"Survivalists_Mods\weapons\melee\blade\data\srp_warcleaver_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+  };
+  class ttcelticaxe_Simple: ttcelticaxe_ColorBase
+  {
+		scope=2;
+		hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= 
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\srp_warcleaver_co.paa"
+		};		
+  };
+
+  class tnails_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Nailed Baseball Bat";
+		descriptionShort="Espen Industries. Reinforced baseball bat used for nailing heads. Inspected by Master Gunsmith: Turko";
+		model="Survivalists_Mods\weapons\melee\blade\tnails.p3d";
+		debug_ItemCategory=2;
+		animClass="Knife";
+		RestrainUnlockType=1;
+		repairableWithKits[]={4};
+		repairCosts[]={12};
+		inventorySlot[]={};
+		rotationFlags=17;
+		canSkinBodies=1;
+		weight=500;
+		itemSize[]={1,5};
+		lootTag[]=
+		{
+			"Work",
+			"Forester",
+			"Hunting",
+			"Farm"
+		};
+		lootCategory="Tools";
+		itemInfo[]=
+		{
+			"Knife"
+		};
+		openItemSpillRange[]={20,35};
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\tnails_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\melee\blade\data\tnails.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\tnails.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\melee\blade\data\tnails.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\tnails.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\melee\blade\data\tnails.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="onehanded";
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeMachete";
+				range=1.4;
+			};
+			class Heavy
+			{
+				ammo="MeleeMachete_Heavy";
+				range=1.4;
+			};
+			class Sprint
+			{
+				ammo="MeleeMachete_Heavy";
+				range=3.3;
+			};
+		};
+		soundImpactType="metal";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+				class CutTies_end
+				{
+					soundSet="CutTies_end_SoundSet";
+					id=519;
+				};
+				class CutTies_loop
+				{
+					soundSet="CutTies_loop_SoundSet";
+					id=520;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class tnails_Simple: tnails_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\tnails_co.paa"
+		};
+	};
+
+  class tbladed_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Bladed Baseball Bat";
+		descriptionShort="Espen Industries. Reinforced baseball bat used for slashing heads. Inspected by Master Gunsmith: Turko";
+		model="Survivalists_Mods\weapons\melee\blade\tbladed.p3d";
+		debug_ItemCategory=2;
+		animClass="Knife";
+		RestrainUnlockType=1;
+		repairableWithKits[]={4};
+		repairCosts[]={12};
+		inventorySlot[]={};
+		rotationFlags=17;
+		canSkinBodies=1;
+		weight=500;
+		itemSize[]={1,5};
+		lootTag[]=
+		{
+			"Work",
+			"Forester",
+			"Hunting",
+			"Farm"
+		};
+		lootCategory="Tools";
+		itemInfo[]=
+		{
+			"Knife"
+		};
+		openItemSpillRange[]={20,50};
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\tbladed_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\melee\blade\data\tbladed.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\tbladed.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\melee\blade\data\tbladed.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\tbladed.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\melee\blade\data\tbladed.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="onehanded";
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeMachete";
+				range=1.4;
+			};
+			class Heavy
+			{
+				ammo="MeleeMachete_Heavy";
+				range=1.4;
+			};
+			class Sprint
+			{
+				ammo="MeleeMachete_Heavy";
+				range=3.3;
+			};
+		};
+		soundImpactType="metal";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+				class CutTies_end
+				{
+					soundSet="CutTies_end_SoundSet";
+					id=519;
+				};
+				class CutTies_loop
+				{
+					soundSet="CutTies_loop_SoundSet";
+					id=520;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class tbladed_Simple: tbladed_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\tbladed_co.paa"
+		};
+	};
+
+  class tantosword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Raider's Machete";
+		descriptionShort="Espen Industries. A heavy bladed weapon intended for cutting and slashing. Inspected by Master Gunsmith: Turko";
+		model="Survivalists_Mods\weapons\melee\blade\tantosword.p3d";
+		debug_ItemCategory=2;
+		animClass="Knife";
+		RestrainUnlockType=1;
+		repairableWithKits[]={4};
+		repairCosts[]={12};
+		inventorySlot[]={};
+		rotationFlags=17;
+		canSkinBodies=1;
+		weight=500;
+		itemSize[]={1,5};
+		lootTag[]=
+		{
+			"Work",
+			"Forester",
+			"Hunting",
+			"Farm"
+		};
+		lootCategory="Tools";
+		itemInfo[]=
+		{
+			"Knife"
+		};
+		openItemSpillRange[]={20,50};
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\tantosword_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\melee\blade\data\tantosword.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\tantosword.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\melee\blade\data\tantosword.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\tantosword.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\melee\blade\data\tantosword.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="onehanded";
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeMachete";
+				range=1.4;
+			};
+			class Heavy
+			{
+				ammo="MeleeMachete_Heavy";
+				range=1.4;
+			};
+			class Sprint
+			{
+				ammo="MeleeMachete_Heavy";
+				range=3.3;
+			};
+		};
+		soundImpactType="metal";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+				class CutTies_end
+				{
+					soundSet="CutTies_end_SoundSet";
+					id=519;
+				};
+				class CutTies_loop
+				{
+					soundSet="CutTies_loop_SoundSet";
+					id=520;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class tantosword_Simple: tantosword_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\tantosword_co.paa"
+		};
+	};
+  
+  class PipeAxe_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Pipe Axe";
+		descriptionShort="Espen Industries. A light homemade axe that is used for cutting. Inspected by Master Gunsmith: Turko";
+		model="Survivalists_Mods\weapons\melee\blade\homemadeaxe.p3d";
+		debug_ItemCategory=2;
+		build_action_type=10;
+		dismantle_action_type=74;
+		repairableWithKits[]={4};
+		repairCosts[]={18};
+		rotationFlags=17;
+		weight=1133;
+		itemSize[]={2,4};
+		fragility=0.0099999998;
+		inventorySlot[]={};
+		lootCategory="Tools";
+		lootTag[]=
+		{
+			"Work",
+			"Forester",
+			"Camping"
+		};
+		itemInfo[]=
+		{
+			"Axe"
+		};
+		openItemSpillRange[]={20,50};
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\homemadeaxe_ca.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=150;
+					healthLevels[]=
+					{					
+						{1,{"Survivalists_Mods\weapons\melee\blade\data\homemadeaxe.rvmat"}},					
+						{0.69999999,{"Survivalists_Mods\weapons\melee\blade\data\homemadeaxe.rvmat"}},					
+						{0.5,{"Survivalists_Mods\weapons\melee\blade\data\homemadeaxe.rvmat"}},					
+						{0.30000001,{"Survivalists_Mods\weapons\melee\blade\data\homemadeaxe.rvmat"}},					
+						{0,{"Survivalists_Mods\weapons\melee\blade\data\homemadeaxe.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeHatchet";
+				range=1.4;
+			};
+			class Heavy
+			{
+				ammo="MeleeHatchet_Heavy";
+				range=1.4;
+			};
+			class Sprint
+			{
+				ammo="MeleeHatchet_Heavy";
+				range=3.3;
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="woodaxe";
+		soundImpactType="metal";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class WoodHammer_SoundSet
+				{
+					soundSet="WoodHammer_SoundSet";
+					id=11161;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class PipeAxe_Simple: PipeAxe_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\weapons\melee\blade\data\homemadeaxe_ca.paa"
+		};
+	};
 //================================================================== SPEARS
   class SRP_WeaponSpear_Kit: SRP_KitBase //new
 	{
