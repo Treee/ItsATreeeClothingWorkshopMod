@@ -1,0 +1,39 @@
+class CfgPatches
+{
+	class tec9
+	{
+		units[]=
+		{
+			"tec9"
+		};
+		weapons[]={};
+		requiredVersion=0.1;
+		requiredAddons[]=
+		{
+			"DZ_Data",
+			"DZ_Weapons_Firearms"
+		};
+	};
+};
+class Mode_Safe;
+class Mode_SemiAuto;
+class Mode_FullAuto;
+class cfgWeapons
+{
+	class FNX45;
+	class tec9: FNX45
+	{
+		scope=2;
+		displayName="Tec-9";
+		descriptionShort="Espen Industries. Semi-Automatic pistol chambered in .45 ACP. Modified to take UMP magazines. Inspected by Master Gunsmith: Turko";
+		model="Survivalists_Mods\weapons\smgs\tec9\tec9.p3d";
+		attachments[]={"pistolMuzzle"};
+		itemSize[]={4,3};
+		magazines[]=
+		{
+			"Mag_UMP_25Rnd",
+
+		};
+		spawnDamageRange[]={0,0.60000002};
+	};
+};
