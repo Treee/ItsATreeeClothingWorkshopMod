@@ -7,8 +7,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data",
-			"DZ_Weapons_Firearms"		
+			"DZ_Weapons_Firearms",		
+			"Survivalists_Weapons"
 		};
 	};
 };

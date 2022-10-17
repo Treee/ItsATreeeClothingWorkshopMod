@@ -10,7 +10,7 @@ class CfgPatches
 			"DZ_Weapons_Melee",
       "DZ_Weapons_Melee_Blade",
       "DZ_Weapons_Melee_Blunt",
-      "Survivalists_Mods"
+      "Survivalists_Weapons"
 		};
 	};
 };

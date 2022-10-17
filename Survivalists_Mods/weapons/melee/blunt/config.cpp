@@ -7,9 +7,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-      "DZ_Data",
 			"DZ_Weapons_Melee",
-      "Survivalists_Mods"
+      "Survivalists_Weapons"
 		};
 	};
 };
