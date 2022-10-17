@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Survivalists_Mods_Weapons_Muzzles
+	class Survivalists_Mods_Weapons_Attachments_Muzzles
 	{
 		units[]={};
 		weapons[]={};

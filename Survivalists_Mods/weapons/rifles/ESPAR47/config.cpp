@@ -28,7 +28,7 @@ class cfgWeapons
 		scope=2;
 		displayName="ESP-AR47";
 		descriptionShort="The ESP-AR47 is a 762x39mm Assault Rifle designed and manufactured by Espen Industries back in 2002 after the US Military called for M4 platforms which could 'Utilize the enemies ammunition'. Whilst the gun remained popular within Espen Industries itself, the rifle was never used by the military outside of training. ";
-		model="Survivalists_Mods\rifles\ESPAR47\ESPAR47.p3d";
+		model="Survivalists_Mods\weapons\rifles\ESPAR47\ESPAR47.p3d";
 		hiddenSelections[]=
 		{
 			"zbytek",
@@ -36,15 +36,15 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom_CO.paa",
-			"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel_CO.paa",
-			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top_CO.paa"
+			"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Bottom_CO.paa",
+			"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel_CO.paa",
+			"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top_CO.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
-			"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
-			"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
+			"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+			"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+			"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 		};
 		attachments[]=
 		{
@@ -329,9 +329,9 @@ class cfgWeapons
 							1,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
-								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						},
 						
@@ -339,9 +339,9 @@ class cfgWeapons
 							0.69999999,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
-								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						},
 						
@@ -349,9 +349,9 @@ class cfgWeapons
 							0.5,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
-								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						},
 						
@@ -359,9 +359,9 @@ class cfgWeapons
 							0.30000001,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
-								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						},
 						
@@ -369,9 +369,9 @@ class cfgWeapons
 							0,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
-								"Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
-								"Survivalists_Mods\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat",
+								"Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top.rvmat"
 							}
 						}
 					};

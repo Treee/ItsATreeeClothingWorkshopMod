@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_NOHQ.paa";
+	texture="Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_SMDI.paa";
+	texture="Survivalists_Mods\weapons\rifles\ESPAR47\data\ESPAR47_Top_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

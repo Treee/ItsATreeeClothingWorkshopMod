@@ -18,7 +18,7 @@ class CfgPatches
 class Mode_Safe;
 class Mode_semiAuto;
 class Mode_FullAuto;
-class cfgWeapons
+class CfgWeapons
 {
 	class M4A1;
 	class ESPAR22: M4A1
@@ -26,7 +26,7 @@ class cfgWeapons
 		scope=2;
 		displayName="ESP-22AR";
 		descriptionShort="The ESP-22AR is a .22 Assault Rifle designed and manufactured by Espen Industries back in 2001. Espen Industries initally recieved alot of backlash from the general public after it was advertised as 'Baby's first gun'. Lightweight and Chambered in .22 the ESP-22AR was perfect for speed shooting competitions. ";
-		model="Survivalists_Mods\rifles\ESPAR22\ESPAR22.p3d";
+		model="Survivalists_Mods\weapons\rifles\ESPAR22\ESPAR22.p3d";
 		hiddenSelections[]=
 		{
 			"zbytek",
@@ -34,11 +34,11 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_CO.paa","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel_CO.paa"
+			"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESPAR22_CO.paa","Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel_CO.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
+			"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 		};
 		attachments[]=
 		{
@@ -252,7 +252,7 @@ class cfgWeapons
 							1,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						},
 						
@@ -260,7 +260,7 @@ class cfgWeapons
 							0.69999999,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						},
 						
@@ -268,7 +268,7 @@ class cfgWeapons
 							0.5,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_damage.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESPAR22_damage.rvmat","Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						},
 						
@@ -276,7 +276,7 @@ class cfgWeapons
 							0.30000001,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_damage.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESPAR22_damage.rvmat","Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						},
 						
@@ -284,7 +284,7 @@ class cfgWeapons
 							0,
 							
 							{
-								"Survivalists_Mods\rifles\ESPAR22\data\ESPAR22_destruct.rvmat","Survivalists_Mods\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
+								"Survivalists_Mods\weapons\rifles\ESPAR22\data\ESPAR22_destruct.rvmat","Survivalists_Mods\weapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
 							}
 						}
 					};

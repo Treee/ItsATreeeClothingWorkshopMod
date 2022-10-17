@@ -1974,6 +1974,19 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:stones";
     stackMax=1;
 	};
+
+  // WEAPONS
+  class Slot_SRP_StockPouch
+	{
+		name="SRP_StockPouch";
+		displayName="ButtStock Pouch";
+	};
+	class Slot_SRP_GunDerringer
+  {
+      name="SRP_GunDerringer";
+      displayName="Derringer";
+      ghostIcon="set:dayz_inventory image:pistol";
+  };
 };
 
 class CfgNonAIVehicles
@@ -2757,6 +2770,22 @@ class CfgNonAIVehicles
     inventorySlot[]={"SRP_Medical3"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_medical3_proxy.p3d"; //proxy path 
   };
+
+  class Proxysrp_buttstockpouch_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]=
+		{
+			"SRP_StockPouch"
+		};
+		model="Survivalists_Mods\proxy\srp_buttstockpouch_proxy.p3d";
+	};
+	// class Proxyttp90mag: ProxyAttachment
+	// {
+	// 	scope=2;
+	// 	inventorySlot="magazine";
+	// 	model="Survivalists_Weapons\smgs\ttp90\ttp90mag.p3d";
+	// };
   // -------------------- HIDING PROXIES
   // THIS WORKS BY SETTING THE PATH OF A PROXY TO SOMETHING
   // NONEXISTENT SO WHEN THE GAME TRIES TO RENDER, THERE IS NOTHING
