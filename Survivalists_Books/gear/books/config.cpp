@@ -90,6 +90,19 @@ class CfgVehicles
   };
 
   //============================= 
+  class SRP_ReadableBook_ThingsToKnowOnDeerIsle: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Things to Know on Deer Isle - Book One";
+		author="Skylar Wolfe and Thog";
+		file="Survivalists_Books\gear\books\data\book_ThingsToKnow.html";
+		displayName="Things to Know on Deer Isle - Book One";
+		descriptionShort="A brief history of common knowledge on Deer Isle";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Books\gear\books\data\book_ThingsToKnow_co.paa"
+		};
+	};
   class SRP_ReadableBook_HistoryOfCannibalism: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
