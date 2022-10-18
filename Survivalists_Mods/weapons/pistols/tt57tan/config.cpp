@@ -57,7 +57,8 @@ class CfgMagazines
     ammo="Bullet_9x39";
     ammoItems[]=
     {
-      "Ammo_9x39"
+      "Ammo_9x39",
+      "Ammo_9x39AP"
     };
 	};
 };
