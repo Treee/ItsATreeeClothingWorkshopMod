@@ -388,7 +388,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\SRP_Holster_Tan_CO.paa"
 		};
 	};
-	class PlateCarrierHolster_Green: PlateCarrierHolster
+	class PlateCarrierHolster_Green1: PlateCarrierHolster
 	{
 		scope=2;
 		displayName="Green Holster";
@@ -404,7 +404,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\SRP_Holster_Green_CO.paa"
 		};
 	};
-	class PlateCarrierHolster_Black: PlateCarrierHolster
+	class PlateCarrierHolster_Black1: PlateCarrierHolster
 	{
 		scope=2;
 		displayName="Black Holster";
@@ -692,7 +692,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\SRP_Holster_Tan_CO.paa"
 		};
 	};
-	class PlateCarrierPouches_Green: PlateCarrierPouches
+	class PlateCarrierPouches_Green1: PlateCarrierPouches
 	{
 		scope=2;
     hiddenSelections[]=
@@ -708,7 +708,7 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\SRP_Holster_Green_CO.paa"
 		};
 	};
-	class PlateCarrierPouches_Black: PlateCarrierPouches
+	class PlateCarrierPouches_Black1: PlateCarrierPouches
 	{
 		scope=2;
     hiddenSelections[]=

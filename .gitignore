@@ -10,7 +10,7 @@
 **/*.ogg
 **/*.p3d
 **/*.tga
-**/*.obf
+**/*thing.obf
 *.rar
 *.bin
 *.cpp.ignore
