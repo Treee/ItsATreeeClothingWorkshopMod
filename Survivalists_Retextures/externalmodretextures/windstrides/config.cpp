@@ -160,6 +160,9 @@ class CfgVehicles
 			"Survivalists_Retextures\externalmodretextures\windstrides\data\ragged_eyepatchbrown_co.paa"
 		};
 	};
+
+
+
 	class Shemagh_Checkered_Black_color: Shemagh_ColorBase
 	{
 		visibilityModifier=0.85000002;
@@ -170,11 +173,62 @@ class CfgVehicles
 			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_checkered_black_co.paa"
 		};
 	};
-	class Shemagh_BlackC: Shemagh_Checkered_Black_color
+  class Shemagh_Checkered_Black: Shemagh_Checkered_Black_color
 	{
 		scope=2;
-		color="blackc";
+		color="Checkered_Black";
 	};
+  
+  class Shemagh_Bandit_Checkered_Black_color: Shemagh_Bandit_ColorBase
+	{
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_bandit_checkered_black_co.paa",
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_bandit_checkered_black_co.paa",
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_bandit_checkered_black_co.paa"
+		};
+	};
+	class Shemagh_Bandit_Checkered_Black: Shemagh_Bandit_Checkered_Black_color
+	{
+		scope=2;
+		color="Checkered_Black";
+	};
+
+  class Shemagh_Facemask_Checkered_Black_color: Shemagh_Facemask_ColorBase
+	{
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_facemask_checkered_black_co.paa",
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_facemask_checkered_black_co.paa",
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_facemask_checkered_black_co.paa"
+		};
+	};
+	class Shemagh_Facemask_Checkered_Black: Shemagh_Facemask_Checkered_Black_color
+	{
+		scope=2;
+		color="Checkered_Black";
+	};
+
+  class Shemagh_Scarf_Checkered_Black_color: Shemagh_Scarf_ColorBase
+	{
+		visibilityModifier=0.85000002;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_scarf_checkered_black_co.paa",
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_scarf_checkered_black_co.paa",
+			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_scarf_checkered_black_co.paa"
+		};
+	};
+	class Shemagh_Scarf_Checkered_Black: Shemagh_Scarf_Checkered_Black_color
+	{
+		scope=2;
+		color="Checkered_Black";
+	};
+
+
+	
 	class Shemagh_Checkered_Pink_color: Shemagh_ColorBase
 	{
 		visibilityModifier=0.85000002;
@@ -190,21 +244,7 @@ class CfgVehicles
 		scope=2;
 		color="pink";
 	};
-	class Shemagh_Scarf_Checkered_Black_color: Shemagh_Scarf_ColorBase
-	{
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_scarf_checkered_black_co.paa",
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_scarf_checkered_black_co.paa",
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_scarf_checkered_black_co.paa"
-		};
-	};
-	class Shemagh_Scarf_Blackc: Shemagh_Scarf_Checkered_Black_color
-	{
-		scope=2;
-		color="blackc";
-	};
+	
 	class Shemagh_Scarf_Checkered_Pink_color: Shemagh_Scarf_ColorBase
 	{
 		visibilityModifier=0.85000002;
@@ -220,21 +260,7 @@ class CfgVehicles
 		scope=2;
 		color="pink";
 	};
-	class Shemagh_Facemask_Checkered_Black_color: Shemagh_Facemask_ColorBase
-	{
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_facemask_checkered_black_co.paa",
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_facemask_checkered_black_co.paa",
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_facemask_checkered_black_co.paa"
-		};
-	};
-	class Shemagh_Facemask_Black: Shemagh_Facemask_Checkered_Black_color
-	{
-		scope=2;
-		color="black";
-	};
+
 	class Shemagh_Facemask_Checkered_Pink_color: Shemagh_Facemask_ColorBase
 	{
 		visibilityModifier=0.85000002;
@@ -250,21 +276,7 @@ class CfgVehicles
 		scope=2;
 		color="pink";
 	};
-	class Shemagh_Bandit_Checkered_Black_color: Shemagh_Bandit_ColorBase
-	{
-		visibilityModifier=0.85000002;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_bandit_checkered_black_co.paa",
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_bandit_checkered_black_co.paa",
-			"Survivalists_Retextures\externalmodretextures\windstrides\data\shemagh_bandit_checkered_black_co.paa"
-		};
-	};
-	class Shemagh_Bandit_Blackc: Shemagh_Bandit_Checkered_Black_color
-	{
-		scope=2;
-		color="blackc";
-	};
+	
 	class Shemagh_Bandit_Checkered_Pink_color: Shemagh_Bandit_ColorBase
 	{
 		visibilityModifier=0.85000002;
@@ -280,6 +292,8 @@ class CfgVehicles
 		scope=2;
 		color="pink";
 	};
+
+
   class Skinny_Jeans_Chocolate: Skinny_Jeans_ColorBase
 	{
 		scope=2;
