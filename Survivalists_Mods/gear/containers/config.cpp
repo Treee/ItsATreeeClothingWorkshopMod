@@ -4668,9 +4668,13 @@ class CfgVehicles
       "SRP_Rifle8",
       "SRP_Rifle9",
       "SRP_Rifle10",
+			"VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
+      "Shoulder",
+			"Melee",
       "Pistol",
-      "Knife",
-      "Melee",
     };
     hiddenSelections[]=
     {
@@ -4701,15 +4705,28 @@ class CfgVehicles
 				};
 				icon="set:dayz_inventory image:shoulderright";
 			};
-      class Misc
+      class Explosives
 			{
-				name="Misc";
-				description="Misc Positions";
+				name="Explosives";
+				description="Explosives Positions";
 				attachmentSlots[]=
 				{
-          "Pistol",
-          "Knife",
+          "VestGrenadeA",
+          "VestGrenadeB",
+          "VestGrenadeC",
+          "VestGrenadeD",
+				};
+		    icon="set:dayz_inventory image:grenade";
+			};
+      class Melee
+			{
+				name="Melee";
+				description="Pistol and Melee Positions";
+				attachmentSlots[]=
+				{
+          "Shoulder",
           "Melee",
+          "Pistol",
 				};
 				icon="set:dayz_inventory image:shoulderright";
 			};
