@@ -92,7 +92,17 @@ class CfgWeapons
 			"Shoulder7",
 			"Shoulder8",
 			"Shoulder9",
-			"Melee"
+			"Melee",
+      "SRP_Rifle1",
+      "SRP_Rifle2",
+      "SRP_Rifle3",
+      "SRP_Rifle4",
+      "SRP_Rifle5",
+      "SRP_Rifle6",
+      "SRP_Rifle7",
+      "SRP_Rifle8",
+      "SRP_Rifle9",
+      "SRP_Rifle10",
 		};
 	};
 

@@ -639,6 +639,8 @@ class SRP_StreetLightSlim extends SRP_Container_Base
   }
 };
 
+class SRP_GunWall_ColorBase extends SRP_Container_Base{};
+
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};
 class SRP_MilitaryCaseMedium extends SRP_Container_Base{};

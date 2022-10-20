@@ -2019,4 +2019,73 @@ class CfgVehicles
 		};
 	};
 
+  //======================================= SMITHING
+  class SRP_Grindstone_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Grindstone";
+		descriptionShort="A makeshift grindstone that is powered by pressing on the pedal.";
+		model="Survivalists_Mods\gear\crafting\srp_grindstone.p3d";
+		inventorySlot[]={};
+		heavyItem=1;
+    itemBehaviour=0;
+		weight=10000;
+		itemSize[]={8,8};
+		physLayer="item_large";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_grindstone_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_grindstone.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_grindstone.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_grindstone.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_grindstone.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_grindstone.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+    class AnimationSources
+    {
+      class spinner1_rotate{source="user";initPhase=0;animPeriod=2;};
+    };
+	};
+  class SRP_Grindstone_Simple: SRP_Grindstone_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_grindstone_co.paa"};
+    color="simple";
+	};
+  class SRP_Grindstone_Hobbit: SRP_Grindstone_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_grindstone_hobbit_co.paa"};
+    color="hobbit";
+	};
+
 };

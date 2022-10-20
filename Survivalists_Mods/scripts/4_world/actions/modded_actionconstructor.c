@@ -54,6 +54,9 @@ modded class ActionConstructor
     actions.Insert(ActionPackLadder);
     actions.Insert(ActionPackSRPSleepingBag);
 
+    actions.Insert(ActionToggleGrindstoneOn);
+    actions.Insert(ActionToggleGrindstoneOff);
+
     actions.Insert(ActionTurnRubixCubeClockwise_Row1);
     actions.Insert(ActionTurnRubixCubeClockwise_Row2);
     actions.Insert(ActionTurnRubixCubeClockwise_Col1);

@@ -4638,6 +4638,94 @@ class CfgVehicles
       "Survivalists_Mods\gear\containers\data\srp_oilcan_co.paa"
     };    
 	};
+  
+  class SRP_GunWall_ColorBase_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Gun Wall Kit - Chain Fence";
+    descriptionShort="A kit that holds everything needed for a makeshift gun wall";
+  };
+
+  class SRP_GunWall_ColorBase: Container_Base
+	{
+		scope=2;
+		displayName="Gun Wall";
+		descriptionShort="A makeshift gun wall.";
+		model="Survivalists_Mods\gear\containers\srp_gunwall.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "SRP_Rifle1",
+      "SRP_Rifle2",
+      "SRP_Rifle3",
+      "SRP_Rifle4",
+      "SRP_Rifle5",
+      "SRP_Rifle6",
+      "SRP_Rifle7",
+      "SRP_Rifle8",
+      "SRP_Rifle9",
+      "SRP_Rifle10",
+      "Pistol",
+      "Knife",
+      "Melee",
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_chainlinkfence_co.paa"
+    };
+    class GUIInventoryAttachmentsProps
+		{
+			class Rifles
+			{
+				name="Rifles";
+				description="Rifle Positions";
+				attachmentSlots[]=
+				{
+          "SRP_Rifle1",
+          "SRP_Rifle2",
+          "SRP_Rifle3",
+          "SRP_Rifle4",
+          "SRP_Rifle5",
+          "SRP_Rifle6",
+          "SRP_Rifle7",
+          "SRP_Rifle8",
+          "SRP_Rifle9",
+          "SRP_Rifle10",
+				};
+				icon="set:dayz_inventory image:shoulderright";
+			};
+      class Misc
+			{
+				name="Misc";
+				description="Misc Positions";
+				attachmentSlots[]=
+				{
+          "Pistol",
+          "Knife",
+          "Melee",
+				};
+				icon="set:dayz_inventory image:shoulderright";
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+          healthLevels[] = {{1,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.7,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.5,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.3,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.1,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"}};
+				};
+			};
+		};
+	};
 
 //=================================================================== POTS
   class SRP_PotteryPot_ColorBase: Inventory_Base

@@ -26,7 +26,7 @@ class SRPdonut extends Edible_Base
 	}
 	override bool CanDecay()
 	{
-		return true;
+		return false;
 	}
 	override void SetActions()
 	{

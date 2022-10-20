@@ -110,6 +110,8 @@ class SRP_Potbelly_Stove_Kit extends SRP_KitBase{};
 class SRP_ShootingTarget_Kit extends SRP_KitBase{};
 class SRP_ShootingTargets_Kit extends SRP_KitBase{};
 
+class SRP_GunWall_ColorBase_Kit extends SRP_KitBase{};
+
 class SRP_StreetLightLarge_Kit extends SRP_KitBase{};
 class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase{};
