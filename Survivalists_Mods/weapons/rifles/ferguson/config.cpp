@@ -23,6 +23,7 @@ class cfgWeapons
 		displayName="Ferguson Rifle";
 		descriptionShort="Espen Industries. Ferguson breech-loading rifle. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_Mods\weapons\rifles\ferguson\ferguson.p3d";
+    hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Mods\weapons\rifles\ferguson\data\ferguson_co.paa"};
 		hiddenSelectionsMaterials[]={"Survivalists_Mods\weapons\rifles\ferguson\data\base.rvmat"};
 		chamberSize=1;

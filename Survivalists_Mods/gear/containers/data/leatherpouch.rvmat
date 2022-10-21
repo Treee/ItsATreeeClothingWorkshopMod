@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\characters\backpacks\data\leatherbackpack_base_nohq.paa";
+	texture="Survivalists_Mods\gear\containers\data\leatherpouch_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
