@@ -148,7 +148,7 @@ class CfgVehicles
 		varQuantityInit=100;
 		varQuantityMin=0;
 		varQuantityMax=100;
-		varQuantityDestroyOnMin=1;
+		varQuantityDestroyOnMin=1;    
     hiddenSelections[]=
 		{
 			"camoGround"
@@ -319,6 +319,10 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=100;
 		varQuantityDestroyOnMin=1;
+    inventorySlot[]=
+    {
+      "SRP_AmmoGunpowder"
+    };
 		hiddenSelections[]=
 		{
 			"camoGround"
@@ -403,7 +407,7 @@ class CfgVehicles
 		varQuantityInit=100;
 		varQuantityMin=0;
 		varQuantityMax=100;
-		varQuantityDestroyOnMin=1;
+		varQuantityDestroyOnMin=1;    
 		hiddenSelections[]=
 		{
 			"camoGround"
@@ -447,7 +451,11 @@ class CfgVehicles
 		canBeSplit=1;
 		varQuantityInit=10;
 		varQuantityMin=0;
-		varQuantityMax=60;
+		varQuantityMax=60;   
+    inventorySlot[]=
+    {
+      "SRP_AmmoCasings"
+    }; 
   };
   class SRP_EmptyCasingPistol_9x19: SRP_BulletCrafting_Pistol60Count
 	{
@@ -459,7 +467,7 @@ class CfgVehicles
   class SRP_StarterKitPistol_9x19: SRP_BulletCrafting_Pistol60Count
   {
     scope=2;
-		displayName="9x19 Ammo Starter Kit";
+		displayName="9x19 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet9mmcasingpowder.p3d";
   };
@@ -469,11 +477,15 @@ class CfgVehicles
 		displayName="9x19 Caliber Bullets";
 		descriptionShort="9x19 bullets";
 		model="Survivalists_Mods\weapons\ammunition\bullet9mm.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitPistol_9x19: SRP_BulletCrafting_Pistol60Count
 	{
 		scope=2;
-		displayName="9x19 Bullet Kit";
+		displayName="9x19 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet9mmcasingpellet.p3d";    
 	};
@@ -488,7 +500,7 @@ class CfgVehicles
   class SRP_StarterKitPistol_357: SRP_BulletCrafting_Pistol60Count
   {
     scope=2;
-		displayName=".357 Ammo Starter Kit";
+		displayName=".357 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet357casingpowder.p3d";
   };
@@ -498,11 +510,15 @@ class CfgVehicles
 		displayName=".357 Caliber Bullets";
 		descriptionShort=".357 bullets";
 		model="Survivalists_Mods\weapons\ammunition\bullet357.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitPistol_357: SRP_BulletCrafting_Pistol60Count
 	{
 		scope=2;
-		displayName=".357 Bullet Kit";
+		displayName=".357 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet357casingpellet.p3d";    
 	};
@@ -517,7 +533,7 @@ class CfgVehicles
   class SRP_StarterKitPistol_22: SRP_BulletCrafting_Pistol60Count
   {
     scope=2;
-		displayName=".22 Ammo Starter Kit";
+		displayName=".22 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet22mmcasingpowder.p3d";
   };
@@ -527,11 +543,15 @@ class CfgVehicles
 		displayName=".22 Caliber Bullets";
 		descriptionShort=".22 bullets";
 		model="Survivalists_Mods\weapons\ammunition\bullet22mm.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitPistol_22: SRP_BulletCrafting_Pistol60Count
 	{
 		scope=2;
-		displayName=".22 Bullet Kit";
+		displayName=".22 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet22mmcasingpellet.p3d";    
 	};
@@ -546,7 +566,7 @@ class CfgVehicles
   class SRP_StarterKitPistol_45ACP: SRP_BulletCrafting_Pistol60Count  // SRP_45ACP_Powderkit
   {
     scope=2;
-		displayName="45ACP Ammo Starter Kit";
+		displayName="45ACP Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet45acpcasingpowder.p3d";
   };
@@ -556,11 +576,15 @@ class CfgVehicles
 		displayName="45ACP Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet45acp.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitPistol_45ACP: SRP_BulletCrafting_Pistol60Count  // SRP_45ACP_Bulletskit
 	{
 		scope=2;
-		displayName="45ACP Bullet Kit";
+		displayName="45ACP Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet45acpcasingpellet.p3d";
 	};
@@ -575,7 +599,7 @@ class CfgVehicles
   class SRP_StarterKitPistol_380: SRP_BulletCrafting_Pistol60Count  // SRP_380_Powderkit
   {
     scope=2;
-		displayName="380 Ammo Starter Kit";
+		displayName="380 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet380casingpowder.p3d";
   };
@@ -585,11 +609,15 @@ class CfgVehicles
 		displayName="380 Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet380.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitPistol_380: SRP_BulletCrafting_Pistol60Count  // SRP_380_Bulletskit
 	{
 		scope=2;
-		displayName="380 Bullet Kit";
+		displayName="380 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet380casingpellet.p3d";
 	};
@@ -608,6 +636,10 @@ class CfgVehicles
 		varQuantityInit=10;
 		varQuantityMin=0;
 		varQuantityMax=40;
+    inventorySlot[]=
+    {
+      "SRP_AmmoCasings"
+    };
   };
   class SRP_EmptyCasingRifle_556: SRP_BulletCrafting_Rifle40Count  // SRP_556x45_Casings
 	{
@@ -619,7 +651,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_556: SRP_BulletCrafting_Rifle40Count  // SRP_556x45_Powderkit
   {
     scope=2;
-		displayName="5.56 Ammo Starter Kit";
+		displayName="5.56 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet556casingpowder.p3d";
   };
@@ -629,11 +661,15 @@ class CfgVehicles
 		displayName="5.56 Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet556.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_556: SRP_BulletCrafting_Rifle40Count  // SRP_556x45_Bulletskit
 	{
 		scope=2;
-		displayName="5.56 Bullet Kit";
+		displayName="5.56 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet556casingpellet.p3d";
 	};
@@ -649,7 +685,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_545: SRP_BulletCrafting_Rifle40Count  // SRP_545x39_Powderkit
   {
     scope=2;
-		displayName="5.45 Ammo Starter Kit";
+		displayName="5.45 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet545casingpowder.p3d";
   };
@@ -659,11 +695,15 @@ class CfgVehicles
 		displayName="5.45 Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet545.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_545: SRP_BulletCrafting_Rifle40Count  // SRP_545x39_Bulletskit
 	{
 		scope=2;
-		displayName="5.45 Bullet Kit";
+		displayName="5.45 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet545casingpellet.p3d";
 	};
@@ -678,7 +718,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_762x39: SRP_BulletCrafting_Rifle40Count  // SRP_762x39_Powderkit
   {
     scope=2;
-		displayName="7.62x39 Ammo Starter Kit";
+		displayName="7.62x39 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet762x39casingpowder.p3d";
   };
@@ -688,11 +728,15 @@ class CfgVehicles
 		displayName="7.62x39 Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet762x39.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_762x39: SRP_BulletCrafting_Rifle40Count  // SRP_762x39_Bulletskit
 	{
 		scope=2;
-		displayName="7.62x39 Bullet Kit";
+		displayName="7.62x39 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet762x39casingpellet.p3d";
 	};
@@ -707,7 +751,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_762x54: SRP_BulletCrafting_Rifle40Count  // SRP_762x54_Powderkit
   {
     scope=2;
-		displayName="7.62x54 Ammo Starter Kit";
+		displayName="7.62x54 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet762x54casingpowder.p3d";
   };
@@ -717,11 +761,15 @@ class CfgVehicles
 		displayName="7.62x54 Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet762x54.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_762x54: SRP_BulletCrafting_Rifle40Count  // SRP_762x54_Bulletskit
 	{
 		scope=2;
-		displayName="7.62x54 Bullet Kit";
+		displayName="7.62x54 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet762x54casingpellet.p3d";
 	};
@@ -736,7 +784,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_308: SRP_BulletCrafting_Rifle40Count  // SRP_308_Powderkit
   {
     scope=2;
-		displayName="308 Ammo Starter Kit";
+		displayName="308 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet308casingpowder.p3d";
   };
@@ -746,11 +794,15 @@ class CfgVehicles
 		displayName="308 Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet308.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_308: SRP_BulletCrafting_Rifle40Count  // SRP_308_Bulletskit
 	{
 		scope=2;
-		displayName="308 Bullet Kit";
+		displayName="308 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet308casingpellet.p3d";
 	};
@@ -765,7 +817,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_9x39: SRP_BulletCrafting_Rifle40Count  // SRP_9x39_Powderkit
   {
     scope=2;
-		displayName="9x39 Ammo Starter Kit";
+		displayName="9x39 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet9x39casingpowder.p3d";
   };
@@ -775,11 +827,15 @@ class CfgVehicles
 		displayName="9x39 Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet9x39.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_9x39: SRP_BulletCrafting_Rifle40Count  // SRP_9x39_Bulletskit
 	{
 		scope=2;
-		displayName="9x39 Bullet Kit";
+		displayName="9x39 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet9x39casingpellet.p3d";
 	};
@@ -794,7 +850,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_300Blackout: SRP_BulletCrafting_Rifle40Count  // new
   {
     scope=2;
-		displayName="300 Blackout Ammo Starter Kit";
+		displayName="300 Blackout Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet300blackoutcasingpowder.p3d";
   };
@@ -804,11 +860,15 @@ class CfgVehicles
 		displayName="300 Blackout Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet300blackout.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_300Blackout: SRP_BulletCrafting_Rifle40Count  // new
 	{
 		scope=2;
-		displayName="300 Blackout Bullet Kit";
+		displayName="300 Blackout Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet300blackoutcasingpellet.p3d";
 	};
@@ -823,7 +883,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_50Cal: SRP_BulletCrafting_Rifle40Count  // new
   {
     scope=2;
-		displayName="50 Cal Ammo Starter Kit";
+		displayName="50 Cal Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet50Calcasingpowder.p3d";
   };
@@ -833,11 +893,15 @@ class CfgVehicles
 		displayName="50 Cal Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet50Cal.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_50Cal: SRP_BulletCrafting_Rifle40Count  // new
 	{
 		scope=2;
-		displayName="50 Cal Bullet Kit";
+		displayName="50 Cal Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet50Calcasingpellet.p3d";
 	};
@@ -852,7 +916,7 @@ class CfgVehicles
   class SRP_StarterKitRifle_12x7: SRP_BulletCrafting_Rifle40Count  // new
   {
     scope=2;
-		displayName="12.7 Ammo Starter Kit";
+		displayName="12.7 Ammo Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\bullet12x7casingpowder.p3d";
   };
@@ -862,11 +926,15 @@ class CfgVehicles
 		displayName="12.7 Caliber Bullets";
 		descriptionShort="";
 		model="Survivalists_Mods\weapons\ammunition\bullet12x7.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
 	};
 	class SRP_BulletKitRifle_12x7: SRP_BulletCrafting_Rifle40Count  // new
 	{
 		scope=2;
-		displayName="12.7 Bullet Kit";
+		displayName="12.7 Bullet Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET";
 		descriptionShort="It remains to clog on a workbench and you can shoot.";
 		model="Survivalists_Mods\weapons\ammunition\bullet12x7casingpellet.p3d";
 	};
@@ -883,6 +951,10 @@ class CfgVehicles
 		varQuantityInit=10;
 		varQuantityMin=0;
 		varQuantityMax=60;
+    inventorySlot[]=
+    {
+      "SRP_AmmoCasings"
+    };
   };
 
   class SRP_EmptyCasing_Shotgun: SRP_BulletCrafting_Shotgun60Count
@@ -896,7 +968,7 @@ class CfgVehicles
   class SRP_Shotgun_StarterKit: SRP_BulletCrafting_Shotgun60Count
   {
     scope=2;
-		displayName="Shotgun Bullet Starter Kit";
+		displayName="Shotgun Bullet Starter Kit - DEV NOTE: NO LONGER NEEDED. TRADE UP. PUT IN TICKET.";
 		descriptionShort="Casings and gun powder combined. Ready for a projectile to be added.";
 		model="Survivalists_Mods\weapons\ammunition\shotguncasingpowder.p3d";
   };
@@ -907,6 +979,10 @@ class CfgVehicles
 		displayName="12 Gauge Projectiles - Crushed Stone";
 		descriptionShort="Stones crushed into chunks small enough for 12 gauge casings.";
 		model="Survivalists_Mods\weapons\ammunition\crushedstone.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
   };
 
   class SRP_BulletKitShotgun_12GAStone: SRP_BulletCrafting_Shotgun60Count  // SRP_12ga_Stonekit
@@ -931,6 +1007,10 @@ class CfgVehicles
 		displayName="12 Gauge Projectiles - Chopped Nail";
 		descriptionShort="Nails chopped into chunks small enough for 12 gauge casings.";
 		model="Survivalists_Mods\weapons\ammunition\crushednail.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
   };
   class SRP_BulletKitShotgun_12GANail: SRP_BulletCrafting_Shotgun60Count  // SRP_12ga_Nailskit
   {
@@ -954,6 +1034,10 @@ class CfgVehicles
 		displayName="12 Gauge Projectiles - Pellet";
 		descriptionShort="Pellets pulled from other bullets small enough for 12 gauge casings.";
 		model="Survivalists_Mods\weapons\ammunition\metalball.p3d";
+    inventorySlot[]=
+    {
+      "SRP_AmmoBullets"
+    };
   };
   class SRP_BulletKitShotgun_12GAPellet: SRP_BulletCrafting_Shotgun60Count  // new
   {

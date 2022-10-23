@@ -183,7 +183,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Ammo Workbench";
-		descriptionShort="A workbench with tools for manufacturing ammunition and repairing weaponry.";
+		descriptionShort="A workbench with tools for manufacturing ammunition and repairing weaponry. OOC DEV NOTE: REDUCING STORAGE TO 80 SLOTS";
 		model="Survivalists_Mods\gear\crafting\SRP_AmmoWorkbench.p3d";
 		useEntityHierarchy="true";
 		attachments[]=
@@ -193,7 +193,10 @@ class CfgVehicles
 			"CanisterGasoline",
 			"SRP_Lantern",
 			"SRP_CasePrep",
-			"SRP_AmmoPress"
+			"SRP_AmmoPress",
+      "SRP_AmmoCasings",
+      "SRP_AmmoGunpowder",
+      "SRP_AmmoBullets",
 		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
@@ -234,6 +237,18 @@ class CfgVehicles
 					"Back",
 					"CanisterGasoline",
 					"SRP_Lantern"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class AmmoCrafting
+			{
+				name="AmmoCrafting";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_AmmoCasings",
+          "SRP_AmmoGunpowder",
+          "SRP_AmmoBullets",
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};

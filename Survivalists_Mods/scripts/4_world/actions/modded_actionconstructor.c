@@ -9,7 +9,7 @@ modded class ActionConstructor
 		actions.Insert(ActionBlowIntoHorn); 
 
 		actions.Insert(ActionToggleMuteTransmitter);  
-		actions.Insert(ActionInteractWithGUICraftingWorkbench);
+		actions.Insert(ActionInteractWithAmmoCraftingWorkbench);
     actions.Insert(ActionTeleportToEvent);
     actions.Insert(ActionTeleportAwayFromEvent);
 

@@ -1,7 +1,6 @@
 enum SRP_RPC
 {
-  CHECK_SRP_CONFIG = 275344,
-  CLIENT_REQUEST_CRAFT
+  CHECK_SRP_CONFIG = 275344
 }
 
 enum SRP_eDisplayElements

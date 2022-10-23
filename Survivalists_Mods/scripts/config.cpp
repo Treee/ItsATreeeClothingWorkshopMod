@@ -901,6 +901,24 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
 		selection="AmmoPress";
 	};
+  class Slot_SRP_AmmoCasings
+	{
+		name="SRP_AmmoCasings";
+		displayName="Ammo Casings";
+		ghostIcon="set:dayz_gui image:cartridge_int";    
+	};
+  class Slot_SRP_AmmoGunpowder
+	{
+		name="SRP_AmmoGunpowder";
+		displayName="Ammo GunPowder";
+		ghostIcon="set:dayz_inventory image:explosive";
+	};
+  class Slot_SRP_AmmoBullets
+	{
+		name="SRP_AmmoBullets";
+		displayName="Ammo Bullets";
+		ghostIcon="set:dayz_gui image:cartridge_pistol";
+	};
 	class Slot_Gun1
 	{
 		name="shoulder1";
