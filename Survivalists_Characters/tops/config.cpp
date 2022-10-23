@@ -1048,4 +1048,122 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_ESPG3_TacShirt_Colorbase: Clothing
+  {
+    scope=0;
+    displayName="ESP-G3 Combat Shirt";
+    descriptionShort="The ESP-G3 Combat Shirt weas designed and manufactured in mass quantities in the 2001. Whilst not commonly used by the US military, due to it's extortionate cost, it did become favourable amongst military enthusiasts and private military companies";
+    model="Survivalists_characters\tops\SRP_ESP_G3_TacShirt_g.p3d";
+    inventorySlot[]=
+    {
+      "Body"
+    };
+    itemInfo[]=
+    {
+      "Clothing",
+      "Body"
+    };
+    rotationFlags=64;
+    weight=2000;
+    itemSize[]={3,3};
+    itemsCargoSize[]={6,5};
+    attachments[]=
+    {
+      "SRP_Patch"
+    };
+    quickBarBonus=2;
+    varWetMax=0.38999999;
+    heatIsolation=0.75;
+    repairableWithKits[]={3};
+    repairCosts[]={25};
+    soundAttType="LeatherJacket";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_characters\tops\data\ESP_G3_TacShirt_CO.paa"
+    };
+    rootClassName="SRP_ESPG3_TacShirt";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green"
+    };
+    class DamageSystem
+    {
+      class GlobalHealth
+      {
+        class Health
+        {
+          hitpoints=130;
+          healthLevels[]=
+          {
+            {1,{"Survivalists_characters\tops\data\ESP_G3_TacShirt.rvmat"}},
+            {0.69999999,{"Survivalists_characters\tops\data\ESP_G3_TacShirt.rvmat"}},
+            {0.5,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_damage.rvmat"}},
+            {0.30000001,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_damage.rvmat"}},
+            {0,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_destruct.rvmat"}}
+          };
+        };
+      };
+      class GlobalArmor
+      {
+          class Melee
+          {
+              class Health
+              {
+                  damage=0.69;
+              };
+              class Blood
+              {
+                  damage=0.69;
+              };
+              class Shock
+              {
+                  damage=0.85000002;
+              };
+          };
+          class Infected
+          {
+              class Health
+              {
+                  damage=0.70999998;
+              };
+              class Blood
+              {
+                  damage=0.70999998;
+              };
+              class Shock
+              {
+                  damage=0.85000002;
+              };
+          };
+      };
+    };
+    class ClothingTypes
+    {
+      male="Survivalists_characters\tops\SRP_ESP_G3_TacShirt_m.p3d";
+      female="Survivalists_characters\tops\SRP_ESP_G3_TacShirt_f.p3d";
+    };
+    class AnimEvents
+    {
+      class SoundWeapon
+      {
+        class pickUpItem
+        {
+          soundSet="Shirt_pickup_SoundSet";
+          id=797;
+        };
+        class drop
+        {
+          soundset="Shirt_drop_SoundSet";
+          id=898;
+        };
+      };
+    };
+  };
 };
