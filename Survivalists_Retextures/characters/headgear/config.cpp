@@ -1069,7 +1069,7 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\characters\headgear\data\srp_turkey_co.paa"
+			"Survivalists_Retextures\characters\headgear\data\srp_turkey_co.paa"
 		};
 	};
 	class SRP_TurkeyBeanie_TurkeyPink: SRP_TurkeyBeanie_ColorBase

@@ -30,6 +30,8 @@ class CfgVehicles
   class Jeans_ColorBase;
   class LeatherPants_ColorBase;
 
+  class SRP_ESPG3_TacPants_Colorbase;
+
   class CargoPants_Officer: CargoPants_ColorBase
   {
 		scope=2;
@@ -886,4 +888,25 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\leatherpants_Yellow_co.paa"
 		};
 	};
+
+  class SRP_ESPG3_TacPants_Black: SRP_ESPG3_TacPants_Colorbase
+  {
+    scope=2;
+  };
+  class SRP_ESPG3_TacPants_Tan: SRP_ESPG3_TacPants_Colorbase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_Tan_CO.paa"
+    };
+  };
+  class SRP_ESPG3_TacPants_Green: SRP_ESPG3_TacPants_Colorbase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_Green_CO.paa"
+    };
+  };
 };

@@ -42,6 +42,7 @@ class CfgVehicles
 	class Raincoat_ColorBase;
 	class WoolCoat_ColorBase;
   class SRP_Rolled_Shirt_ColorBase;
+  class SRP_ESPG3_TacShirt_Colorbase;
 
   // modded classes
   class DUB_Monkrobe;
@@ -2890,4 +2891,25 @@ class CfgVehicles
       "Survivalists_Retextures\characters\tops\data\Duster_Red_co.paa"
     };
 	};
+
+  class SRP_ESPG3_TacShirt_Black : SRP_ESPG3_TacShirt_Colorbase
+  {
+    scope=2;
+  };
+  class SRP_ESPG3_TacShirt_Tan : SRP_ESPG3_TacShirt_Colorbase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\ESP_G3_TacShirt_Tan_CO.paa"
+    };
+  };
+  class SRP_ESPG3_TacShirt_Green : SRP_ESPG3_TacShirt_Colorbase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\ESP_G3_TacShirt_Green_CO.paa"
+    };
+  };
 };
