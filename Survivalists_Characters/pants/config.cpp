@@ -336,4 +336,120 @@ class CfgVehicles
       "Red",
     };
   };
+
+//======================================= CUSTOM CLOTHING
+  class SRP_ESPG3_TacPants_Colorbase: Clothing
+  {
+    scope=0;
+    displayName="ESP-G3 Combat Pants";
+    descriptionShort="The ESP-G3 Combat Pants were designed and manufactured in mass quantities in the 2001. Whilst not commonly used by the US military, due to their extortionate cost, they did become favourable amongst military enthusiasts and private military companies";
+    model="Survivalists_characters\pants\SRP_ESP_G3_TacPants_g.p3d";
+    inventorySlot[]=
+    {
+      "Legs"
+    };
+    simulation="clothing";
+    itemInfo[]=
+    {
+      "Clothing",
+      "Legs"
+    };
+    itemSize[]={4,3};
+    itemsCargoSize[]={6,4};
+    weight=530;
+    ragQuantity=3;
+    varWetMax=1;
+    heatIsolation=0.80000001;
+    repairableWithKits[]={5,2};
+    repairCosts[]={30,25};
+    quickBarBonus=2;
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "personality"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_characters\pants\Data\ESP_G3_TacPants_CO.paa"
+    };
+    class ClothingTypes
+    {
+      male="Survivalists_characters\pants\SRP_ESP_G3_TacPants_m.p3d";
+      female="Survivalists_characters\pants\SRP_ESP_G3_TacPants_f.p3d";
+    };
+    rootClassName="SRP_ESPG3_TacPants";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green"
+    };
+    class DamageSystem
+    {
+      class GlobalHealth
+      {
+        class Health
+        {
+          hitpoints=100;
+          healthLevels[]=
+          {
+            {1,{"Survivalists_characters\pants\Data\ESP_G3_TacPants.rvmat"}},
+            {0.69999999,{"Survivalists_characters\pants\Data\ESP_G3_TacPants.rvmat"}},
+            {0.5,{"Survivalists_characters\pants\Data\ESP_G3_TacPants_damage.rvmat"}},
+            {0.30000001,{"Survivalists_characters\pants\Data\ESP_G3_TacPants_damage.rvmat"}},
+            {0,{"Survivalists_characters\pants\Data\ESP_G3_TacPants_destruct.rvmat"}}
+          };
+        };
+      };
+      class GlobalArmor
+      {
+        class Melee
+        {
+          class Health
+          {
+            damage=0.89999998;
+          };
+          class Blood
+          {
+            damage=0.89999998;
+          };
+          class Shock
+          {
+            damage=0.89999998;
+          };
+        };
+        class Infected
+        {
+          class Health
+          {
+            damage=0.89999998;
+          };
+          class Blood
+          {
+            damage=0.89999998;
+          };
+          class Shock
+          {
+            damage=0.89999998;
+          };
+        };
+      };
+    };
+    class AnimEvents
+    {
+      class SoundWeapon
+      {
+        class pickUpItem
+        {
+          soundSet="Shirt_pickup_SoundSet";
+          id=797;
+        };
+        class drop
+        {
+          soundset="Shirt_drop_SoundSet";
+          id=898;
+        };
+      };
+    };
+  };  
 };
