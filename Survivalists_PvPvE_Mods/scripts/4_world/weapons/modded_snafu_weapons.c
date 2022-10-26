@@ -72,7 +72,7 @@ modded class GCGN_Vityaz_Base
 		inventory.CreateInInventory( "SNAFU_AKHuntingOptic" );
 		inventory.CreateInInventory( "SNAFU_AK19_Stock" );
 		inventory.CreateInInventory( "AK_PlasticHndgrd" );
-		SpawnAttachedMagazine("GCGN_Vityaz_30Rnd");
+		SpawnAttachedMagazine("GCGN_Vityaz_Mag");
   }
 };
 modded class HK416_Base
