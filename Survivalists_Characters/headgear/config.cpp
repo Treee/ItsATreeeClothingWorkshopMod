@@ -29,7 +29,7 @@ class CfgVehicles
     inventorySlot[]+={"Wig"};
   };  
 
-  //-------------------------------------- BASE GAME OVERRIDE
+//-------------------------------------- BASE GAME OVERRIDE
   class BallisticHelmet_ColorBase: Clothing
 	{
 		repairableWithKits[]={5,8};
@@ -476,7 +476,7 @@ class CfgVehicles
     };
   };
 
-  // ----------------------------------------- Custom Stuff  
+// ----------------------------------------- Custom Stuff  
   class SRP_BaseballCap_Tinfoil: BaseballCap_ColorBase  // new
 	{
 		scope=2;
@@ -1155,7 +1155,88 @@ class CfgVehicles
         "Survivalists_characters\headgear\data\ArthurCrown_Sapphire_co.paa"
     };
 	};
-  // -=============================== OLD MVS STUFF  
+
+
+  class SRP_Masked_HighcutHelmet_ColorBase: Mich2001Helmet
+	{
+		scope=2;
+		displayName="Masked Highcut helmet";
+		descriptionShort="A Highcut helmet with shrapnel defense facemask";
+		model="Survivalists_characters\headgear\SRP_Masked_HighcutHelmet_G.p3d";
+		repairableWithKits[]={8};
+		repairCosts[]={25};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1000;
+		itemSize[]={3,3};
+		attachments[] = {"NVG","helmetFlashlight","SRP_Comtacs"};
+		varWetMax=0.249;
+		heatIsolation=0.30000001;
+		headSelectionsToHide[]=
+		{
+			"Clipping_HelmetMich"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"Mask"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_characters\headgear\data\Full_Face_Helm_ca.paa",
+			"Survivalists_characters\headgear\data\Full_Face_Helm_Mask_ca.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=80;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_characters\headgear\data\Full_FaceHelm.rvmat"}},						
+						{0.69999999,{"Survivalists_characters\headgear\data\Full_FaceHelm.rvmat"}},						
+						{0.5,{"Survivalists_characters\headgear\data\Full_FaceHelm.rvmat"}},						
+						{0.30000001,{"Survivalists_characters\headgear\data\Full_FaceHelm.rvmat"}},						
+						{0,{"Survivalists_characters\headgear\data\Full_FaceHelm.rvmat"}}
+					};
+				};
+			};
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_characters\headgear\SRP_Masked_HighcutHelmet_m.p3d";
+			female="Survivalists_characters\headgear\SRP_Masked_HighcutHelmet_m.p3d";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+// -=============================== OLD MVS STUFF  
 
   class BaseballCap_MilitaryPatrolTan: BaseballCap_ColorBase
 	{
@@ -2361,7 +2442,7 @@ class CfgVehicles
 		};
 	};
 
-  //================================= CUSTOM STUFF
+//================================= CUSTOM STUFF
   class SRP_SlimHelmetFull: Clothing
   {
     scope=2;
