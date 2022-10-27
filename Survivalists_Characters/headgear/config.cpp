@@ -1032,6 +1032,129 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class MetalCrown_ColorBase: Clothing
+	{
+    scope=0;
+		displayName="Crown";
+		descriptionShort="A forged crown, embedded with a flawless ruby. Heavy is the head that wears the crown.";
+		model="Survivalists_characters\headgear\ArthurCrown_g.p3d";
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		rotationFlags=16;
+		weight=110;
+		itemSize[]={3,2};
+		varWetMax=1;
+		heatIsolation=0.2;
+		repairableWithKits[]={3,8};
+		repairCosts[]={50,25};
+		headSelectionsToHide[]=
+		{
+			"Clipping_baseballcap"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_characters\headgear\data\ArthurCrown_Ruby_co.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_characters\headgear\data\ArthurCrown.rvmat"}},						
+						{0.69999999,{"Survivalists_characters\headgear\data\ArthurCrown.rvmat"}},						
+						{0.5,{"Survivalists_characters\headgear\data\ArthurCrown.rvmat"}},						
+						{0.30000001,{"Survivalists_characters\headgear\data\ArthurCrown.rvmat"}},						
+						{0,{"Survivalists_characters\headgear\data\ArthurCrown.rvmat"}}
+					};
+				};
+			};
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_characters\headgear\ArthurCrown_m.p3d";
+			female="Survivalists_characters\headgear\ArthurCrown_m.p3d";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class MetalCrown_Basic: MetalCrown_ColorBase
+	{
+    scope=2;
+	};
+	class MetalCrown_Emerald: MetalCrown_ColorBase
+	{
+    scope=2;
+		displayName="Emerald Crown";
+		descriptionShort="A forged crown, embedded with a flawless emerald. Heavy is the head that wears the crown.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+        "Survivalists_characters\headgear\data\ArthurCrown_Emerald_co.paa"
+    };
+	};
+	class MetalCrown_Amethyst: MetalCrown_ColorBase
+	{
+    scope=2;
+		displayName="Amethyst Crown";
+		descriptionShort="A forged crown, embedded with a flawless amethyst. Heavy is the head that wears the crown.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+        "Survivalists_characters\headgear\data\ArthurCrown_Amethyst_co.paa"
+    };
+	};
+	class MetalCrown_Sapphire: MetalCrown_ColorBase
+	{
+    scope=2;
+		displayName="Sapphire Crown";
+		descriptionShort="A forged crown, embedded with a flawless sapphire. Heavy is the head that wears the crown.";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+        "Survivalists_characters\headgear\data\ArthurCrown_Sapphire_co.paa"
+    };
+	};
   // -=============================== OLD MVS STUFF  
 
   class BaseballCap_MilitaryPatrolTan: BaseballCap_ColorBase

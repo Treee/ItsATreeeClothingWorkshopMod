@@ -9,7 +9,8 @@ class CfgPatches
 		{
 			"DZ_Characters",
       "DZ_Characters_Backpacks",
-      "Mass_Textures"
+      "Mass_Textures",
+      "Dressupbox"
 		};
 	};
 };
@@ -17,6 +18,7 @@ class CfgVehicles
 {
   class Container_Base;
   class Clothing;
+  class Clothing_Base;
 
   //--------------------------------- MOD OVERRIDE
 	class MassNBC_Bag: Container_Base
@@ -24,6 +26,11 @@ class CfgVehicles
 		scope=2;
 		itemsCargoSize[]={9,6}; // increase to account for gas mask
 	};
+
+  class DUB_Leatherbag: Clothing_Base
+	{
+    itemSize[]={1,5};
+  };
 
   class HuntingBag: Clothing
 	{

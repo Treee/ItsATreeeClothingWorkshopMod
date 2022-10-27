@@ -15,6 +15,8 @@ class CfgPatches
 
 class CfgVehicles
 {
+  class M4_PlasticHndgrd;
+	class M4_OEBttstck;
   class Inventory_Base;
   class SRP_KitBase;
 //===================================================== CONTAINERS
@@ -78,7 +80,7 @@ class CfgVehicles
 		};
 	};
 
-//===================================================== CRAFTING PIECES        
+//===================================================== CRAFTING PIECES
 
   class SRP_WoodAttachmentGunKit_Kit: SRP_KitBase //new
 	{
@@ -640,4 +642,691 @@ class CfgVehicles
 		descriptionShort="A simple hammer.";
     color="simple";
   };
+//==================================================Handguard_Colorbase
+
+	class ESP_LW_HndGrd_ColorBase: M4_PlasticHndgrd
+	{
+		scope=0;
+		displayName="ESP-LW 12.5' Handguard";
+		descriptionShort="The ESP-LW is a light weight handguard made from titanium and plastic. It is perfect for turning your M4 platform into CQB weapon. ";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_LW_HndGrd.p3d";
+		rotationFlags=17;
+		inventorySlot[]=
+		{
+			"weaponHandguardM4"
+		};
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_LW_HndGrd_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_LW_HndGrd.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_LW_HndGrd.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_LW_HndGrd.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_LW_HndGrd.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_LW_HndGrd.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+	class ESP_RIS_Plated_HndGrd_Long_ColorBase: M4_PlasticHndgrd
+	{
+		scope=0;
+		displayName="ESP-RIS Handguard 15'FPS";
+		descriptionShort="The ESP-RIS handguard is a rail intergration system which can fit on any M4 platforms. This handguard also features a cutout for the weapons ironsight.";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_Plate_RIS_Long_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardM4"
+		};
+		hasRailFunctionality=1;
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+	class ESPEN_RIS_Plated_HndGrd_ColorBase: M4_PlasticHndgrd
+	{
+		scope=0;
+		displayName="ESP-RIS Handguard 12.5' ";
+		descriptionShort="The ESP-RIS handguard is a rail intergration system which can fit on any M4 platforms.";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_Plate_RIS_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={4,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardM4"
+		};
+		hasRailFunctionality=1;
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+	class ESP_RIS_Erg_HndGrd_ColorBase: M4_PlasticHndgrd
+	{
+		scope=0;
+		displayName="ESP-Erg 12.5' Handguard";
+		descriptionShort="The ESP-Erg is a minimalist handguard with an RIS ontop. It is lightweight, durable and slight oval curve makes a more comfortable grip.";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_Urgi_Grip.p3d";
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardM4"
+		};
+		hasRailFunctionality=1;
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+	class ESP_RIS_Erg_HndGrd_Long_ColorBase: M4_PlasticHndgrd
+	{	
+		scope=0;
+		displayName="ESP-Erg 15' Handguard";
+		descriptionShort="The ESP-Erg is a minimalist handguard with an RIS ontop. It is lightweight, durable and slight oval curve makes a more comfortable grip. This 15' handguard also features a cutout for the weapons ironsight";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_Urgi_Grip_Long.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardM4"
+		};
+		hasRailFunctionality=1;
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+	class ESP_M16_HndGrd_ColorBase: M4_PlasticHndgrd
+	{	
+		scope=0;
+		displayName="ESP-16 12.5' Handguard";
+		descriptionShort="The ESP-16 Handguard is a retro styled handguard which means to replicate the look of the original ESP-M16 which was manufactured back in 1959.";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_M16_Grip.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardM4"
+		};
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_HndGrd_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_HndGrd.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_HndGrd.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_HndGrd.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_HndGrd.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_HndGrd.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+	class ESP_P90_UpgradeKit: M4_PlasticHndgrd
+	{	
+		scope=2;
+		displayName="ESP-P90 Upgrade Kit";
+		descriptionShort="The ESP-P90 Upgrade kit was designed to be sold seperately alongside the ESP-P90 to allow the user to attach various RIS compatible accessories to the end of the weapon.";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_P90_UpgradeKit.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={4,1};
+		inventorySlot[]=
+		{
+			"P90UpgradeKit"
+		};
+		hasRailFunctionality=1;
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_P90_UpgradeKit_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_P90_UpgradeKit.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_P90_UpgradeKit.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_P90_UpgradeKit.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_P90_UpgradeKit.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_P90_UpgradeKit.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+
+	// HandGuard Retextures
+
+	class ESP_Lightweight_HndGrd_Green: ESP_LW_HndGrd_ColorBase
+	{
+		scope=2;
+		color="Green";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_LW_HndGrd_CO.paa"
+		};
+	};
+	class ESP_PlatedRIS_HndGrd_Long_Tan: ESP_RIS_Plated_HndGrd_Long_ColorBase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd_CO.paa"
+		};
+	};
+	class ESP_PlatedRIS_HndGrd_Tan: ESPEN_RIS_Plated_HndGrd_ColorBase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_AR47_HndGrd_CO.paa"
+		};
+	};
+	class ESP_RIS_Erg_HndGrd_Tan: ESP_RIS_Erg_HndGrd_ColorBase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd_CO.paa"
+		};
+	};
+	class ESP_RIS_Erg_HndGrd_Black: ESP_RIS_Erg_HndGrd_ColorBase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd_Black_CO.paa"
+		};
+	};
+	class ESP_RIS_Erg_HndGrd_Long_Tan: ESP_RIS_Erg_HndGrd_Long_ColorBase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd_CO.paa"
+		};
+	};
+	class ESP_RIS_Erg_HndGrd_Long_Black: ESP_RIS_Erg_HndGrd_Long_ColorBase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\Urgi_HndGurd_Black_CO.paa"
+		};
+	};
+	class ESP_M16_HndGrd_Wood: ESP_M16_HndGrd_ColorBase
+	{
+		scope=2;
+		color="Wood";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_HndGrd_CO.paa"
+		};
+	};
+	class ESP_M16_HndGrd_Black: ESP_M16_HndGrd_ColorBase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_HndGrd_Black_CO.paa"
+		};
+	};
+
+//==================================================ButtStock_Colorbase
+
+	class ESP_SNPR_Stck_ColorBase: M4_OEBttstck
+	{
+		scope=0;
+		displayName="ES-SNPR Stock";
+		descriptionShort="The ESP-SNPR stock is a recoil absorbing and highly adjustable marksman stock which was designed for competitive shooting. This stock is made to fit on all M4 platforms.";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_SNPR_BttStck.p3d";
+		inventorySlot[]=
+		{
+			"weaponButtstockM4"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_SNPR_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_SNPR.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_SNPR.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_SNPR.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_SNPR.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_SNPR.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class ESP_M16_Stck_Colorbase: M4_OEBttstck
+	{
+		scope=0;
+		displayName="ES-M16 Stock";
+		descriptionShort="The ESP-16 stock was designed to allow users to recreate the iconic look of the ESP-16 rifle which was manufactured back in 1959.";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_M16_BttStck.p3d";
+		attachments[]=
+		{
+			"StockPouch"
+		};
+		inventorySlot[]=
+		{
+			"weaponButtstockM4"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_Stck_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_Stck.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_Stck.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_Stck.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_Stck.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_Stck.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class ESP_Crane_Stock_Colorbase: M4_OEBttstck
+	{
+		scope=0;
+		displayName="ES-Krain Stock";
+		descriptionShort="The ES-Krain stock is a heavy duty stock designed for M4 platforms. It was designed to be heavier than the average stock to allow users to better control recoil.";
+		model="Survivalists_Mods\weapons\attachments\support\ESP_Crane_BttStck.p3d";
+		inventorySlot[]=
+		{
+			"weaponButtstockM4"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+	// Stock Retextures
+
+	class ESP_M16_Stck_Wood: ESP_M16_Stck_Colorbase
+	{
+		scope=2;
+		color="Wood";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_Stck_CO.paa"
+		};
+	};
+	class ESP_M16_Stck_Black: ESP_M16_Stck_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_M16_Stck_Black_CO.paa"
+		};
+	};
+	class ESP_SNPR_Stck_Black: ESP_SNPR_Stck_ColorBase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_SNPR_CO.paa"
+		};
+	};
+	class ESP_Crane_Stock_Tan: ESP_Crane_Stock_Colorbase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck_CO.paa"
+		};
+	};
+	class ESP_Crane_Stock_Black: ESP_Crane_Stock_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck_Black_CO.paa"
+		};
+	};
 };
