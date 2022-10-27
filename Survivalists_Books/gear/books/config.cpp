@@ -90,6 +90,58 @@ class CfgVehicles
   };
 
   //============================= 
+  class SRP_ReadableBook_TheBunkerShortStory: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="The Bunker";
+		author="PiGLeT, scribed By Skylar Wolfe";
+		file="Survivalists_Books\gear\books\data\book_thebunkershortstory.html";
+		displayName="The Bunker";
+		descriptionShort="A short story comic.";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Books\gear\books\data\book_thebunkershortstory_co.paa"
+		};
+	};
+  class SRP_ReadableBook_TheBooksOfVigo: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="The Book Of Vigo";
+		author="Vigo Muse of Frost";
+		file="Survivalists_Books\gear\books\data\book_thebookofvigo.html";
+		displayName="The Book Of Vigo";
+		descriptionShort="A book with frost covering parts of the cover and pages.";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Books\gear\books\data\book_thebookofvigo_co.paa"
+		};
+	};  
+  class SRP_ReadableBook_HerbologyAndAlchemy: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="A book on Herbology and Alchemy";
+		author="Clayton Collier Sr";
+		file="Survivalists_Books\gear\books\data\book_herbologyandalchemy.html";
+		displayName="A book on Herbology and Alchemy";
+		descriptionShort="A book on Herbology and Alchemy";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Books\gear\books\data\book_herbologyandalchemy_co.paa"
+		};
+	};
+  class SRP_ReadableBook_TheCoalition: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="On the Coalition";
+		author="The Archivist";
+		file="Survivalists_Books\gear\books\data\book_thecoalition.html";
+		displayName="On the Coalition";
+		descriptionShort="A brief history of The Coalition Faction on Deer Isle";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Books\gear\books\data\book_thecoalition_co.paa"
+		};
+	};
   class SRP_ReadableBook_ThingsToKnowOnDeerIsle: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
