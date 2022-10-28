@@ -95,6 +95,15 @@ modded class PlayerBase
     }
 	}
 
+  override void EEKilled( Object killer )
+	{
+    if ( m_AdminLog )
+		{
+      m_AdminLog.DirectAdminLogPrint(string.Format("ADMIN HELPER::||%1", GetEquippedItems()));
+		}
+		super.EEKilled( killer );
+	};
+
   override bool CanSprint()
   {    
     if (GetTotalTiredness() > 23000 && !IsTirednessSprintOverriden()) // roughly 75% tiredness
@@ -121,6 +130,31 @@ modded class PlayerBase
 	{
     return ( super.IsSprinting() || m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_SPRINT );				
 	}
+
+  string GetEquippedItems()
+  {
+    array<EntityAI> itemsArray = new array<EntityAI>;
+		ItemBase item;
+		GetInventory().EnumerateInventory(InventoryTraversalType.PREORDER, itemsArray);
+		
+    string itemString = "";
+		for (int i = 0; i < itemsArray.Count(); i++)
+		{
+			Class.CastTo(item, itemsArray.Get(i));
+			if (item && !item.IsInherited(SurvivorBase))
+      {
+        if (item.HasQuantity())
+        {
+          itemString = string.Format("%1,%2x%3", itemString, item.GetType(),item.GetQuantity());
+        }
+        else
+        {
+          itemString = string.Format("%1,%2", itemString, item.GetType());
+        }
+      }
+		}
+    return itemString;
+  }
 
   bool IsRunning()
 	{

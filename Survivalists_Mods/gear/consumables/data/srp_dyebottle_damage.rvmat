@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Survivalists_Mods\characters\headgear\data\Alchemist_Hat_NOHQ.paa";
+	texture="Survivalists_Mods\gear\consumables\data\srp_dyebottle_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Survivalists_Mods\characters\headgear\data\Alchemist_Hat_SMDI.paa";
+	texture="Survivalists_Mods\gear\consumables\data\srp_dyebottle_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
