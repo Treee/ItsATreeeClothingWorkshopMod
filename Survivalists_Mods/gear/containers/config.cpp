@@ -1222,177 +1222,6 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_PostBox_Kit: SRP_KitBase //new
-	{
-		scope=2;
-		displayName="Post Box Kit";
-		descriptionShort="A Post Box Kit";
-	};
-  class SRP_PostBox: Container_Base // BP_post_box
-	{
-		scope=2;
-		displayName="Post Box";
-		descriptionShort="A box for mailing letters.";
-		model="Survivalists_Mods\gear\containers\mailboxregular.p3d";
-		weight=1000;
-		itemSize[]={10,15};
-		itemsCargoSize[]={3,4};
-		slopeTolerance=0.30000001;
-		carveNavmesh=1;
-		canBeDigged=0;
-		heavyItem=1;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=250;
-					healthLevels[]=
-					{
-						{1,{"DZ\weapons\melee\blunt\Data\BaseballBat.rvmat"}},
-            {0.69999999,{"DZ\weapons\melee\blunt\Data\BaseballBat.rvmat"}},
-            {0.5,{"DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat"}},
-            {0.30000001,{"DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat"}},
-            {0,{"DZ\weapons\melee\blunt\Data\BaseballBat_destruct.rvmat"}}
-					};
-				};
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="smallprotectorcase_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="smallprotectorcase_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
-
-  class SRP_PostBoxBlue_Kit: SRP_KitBase //new
-	{
-		scope=2;
-		displayName="Blue Post Box Kit";
-		descriptionShort="A Blue Post Box Kit";
-	};
-  class SRP_PostBoxBlue: Container_Base // BP_post_box
-	{
-		scope=2;
-		displayName="Blue Post Box";
-		descriptionShort="A box for mailing letters.";
-		model="Survivalists_Mods\gear\containers\mailboxregularblue.p3d";
-		weight=1000;
-		itemSize[]={10,15};
-		itemsCargoSize[]={3,4};
-		slopeTolerance=0.30000001;
-		carveNavmesh=1;
-		canBeDigged=0;
-		heavyItem=1;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=250;
-					healthLevels[]=
-					{
-						{1,{"DZ\weapons\melee\blunt\Data\BaseballBat.rvmat"}},
-            {0.69999999,{"DZ\weapons\melee\blunt\Data\BaseballBat.rvmat"}},
-            {0.5,{"DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat"}},
-            {0.30000001,{"DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat"}},
-            {0,{"DZ\weapons\melee\blunt\Data\BaseballBat_destruct.rvmat"}}
-					};
-				};
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="smallprotectorcase_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="smallprotectorcase_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
-
-  class SRP_PostBoxWooden_Kit: SRP_KitBase //new
-	{
-		scope=2;
-		displayName="Wooden Post Box Kit";
-		descriptionShort="A Wooden Post Box Kit";
-	};
-  class SRP_PostBoxWooden: Container_Base // new
-	{
-		scope=2;
-		displayName="Wooden Post Box";
-		descriptionShort="A box for mailing letters.";
-		model="Survivalists_Mods\gear\containers\mailboxwooden.p3d";
-		weight=1000;
-		itemSize[]={10,15};
-		itemsCargoSize[]={3,4};
-		slopeTolerance=0.30000001;
-		carveNavmesh=1;
-		canBeDigged=0;
-		heavyItem=1;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=250;
-					healthLevels[]=
-					{
-						{1,{"DZ\weapons\melee\blunt\Data\BaseballBat.rvmat"}},
-            {0.69999999,{"DZ\weapons\melee\blunt\Data\BaseballBat.rvmat"}},
-            {0.5,{"DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat"}},
-            {0.30000001,{"DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat"}},
-            {0,{"DZ\weapons\melee\blunt\Data\BaseballBat_destruct.rvmat"}}
-					};
-				};
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="smallprotectorcase_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="smallprotectorcase_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
-
   class SRP_MilitaryCaseSmall_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -4639,14 +4468,14 @@ class CfgVehicles
     };    
 	};
   
-  class SRP_GunWall_ColorBase_Kit: SRP_KitBase
+  class SRP_GunWall_Fence_Kit: SRP_KitBase
   {
     scope=2;
     displayName="Gun Wall Kit - Chain Fence";
     descriptionShort="A kit that holds everything needed for a makeshift gun wall";
   };
 
-  class SRP_GunWall_ColorBase: Container_Base
+  class SRP_GunWall_Fence: Container_Base
 	{
 		scope=2;
 		displayName="Gun Wall";

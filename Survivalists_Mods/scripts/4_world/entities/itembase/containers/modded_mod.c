@@ -1,1 +1,0 @@
-class DUB_Lich: Clothing{};

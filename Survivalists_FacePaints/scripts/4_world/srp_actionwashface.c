@@ -35,6 +35,10 @@ class ActionWashFace: ActionContinuousBase
     {
       return false;
     }
+    if (player && player.IsBleeding())
+    {
+      return false;
+    }
 
     int slot_id = InventorySlots.GetSlotIdFromString("Mask");	
 		EntityAI equipedMask = player.GetInventory().FindPlaceholderForSlot( slot_id );
@@ -89,6 +93,10 @@ class ActionWashFaceTarget: ActionContinuousBase
 	{	
     PlayerBase man;
     if (target && !Class.CastTo(man, target.GetObject()) )
+    {
+      return false;
+    }
+    if (man.IsBleeding())
     {
       return false;
     }

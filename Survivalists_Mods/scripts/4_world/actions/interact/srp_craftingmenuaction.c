@@ -41,10 +41,14 @@ class ActionInteractWithAmmoCraftingWorkbench extends ActionInteractBase
       string resultName = target_bench.HasCorrectAmmoComponents();
       if (resultName != "")
       {
+        // Print("result: " + resultName);
         Magazine ammo = Magazine.Cast( GetGame().CreateObjectEx(resultName, action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE) );
-        ammo.ServerSetAmmoCount(10);
-        target_bench.DecreaseHealth(1);		
-        target_bench.RemoveAmmoCraftingComponents();
+        if (ammo)
+        {
+          ammo.ServerSetAmmoCount(10);
+          target_bench.DecreaseHealth(1);		
+          target_bench.RemoveAmmoCraftingComponents();
+        }
       }
     }
 	}

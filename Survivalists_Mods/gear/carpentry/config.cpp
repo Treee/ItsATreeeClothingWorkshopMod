@@ -24,7 +24,7 @@ class CfgVehicles
 //------------------------------ BASE BUILDING
   class SRP_Deconstruction_Kit: SRP_KitBase //new
 	{
-		scope=2;
+		scope=0;
 		displayName="Carpentry Deconstruction Kit. (Tagged for Removal. Do not store anything inside this item.)";
 		descriptionShort="A kit with the appropriate tools to correctly disassemble a placed item.";
     attachments[]=

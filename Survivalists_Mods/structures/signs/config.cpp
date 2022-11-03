@@ -516,7 +516,7 @@ class CfgVehicles
 		scope=1;
 		model="Survivalists_Mods\structures\signs\neonsign_star.p3d";
 	};
-   class NeonSign_Masson: HouseNoDestruct
+  class NeonSign_Masson: HouseNoDestruct
 	{
 		scope=1;
 		model="Survivalists_Mods\structures\signs\neonsign_masson.p3d";

@@ -1,54 +1,5 @@
-class TurnItemIntoItemLambda_KitDeployment extends TurnItemIntoItemLambda
-{
-	vector m_DeployPosition;
-  vector m_DeployOrientation;
-
-	void TurnItemIntoItemLambda_KitDeployment (EntityAI old_item, string new_item_type, PlayerBase player, vector deployPosition="0 0 0", vector deployOrientation="0 0 0") 
-  {
-    m_DeployPosition = deployPosition;
-    m_DeployOrientation = deployOrientation;
-  }
-
-	override void CopyOldPropertiesToNew (notnull EntityAI old_item, EntityAI new_item)
-	{
-		super.CopyOldPropertiesToNew(old_item, new_item);
-
-		if (new_item) 
-		{							
-      new_item.SetPosition(m_DeployPosition);
-      new_item.SetOrientation(m_DeployOrientation);
-		}
-		else
-		{
-			Debug.LogError("TurnItemIntoItemLambda_KitDeployment: failed to create new item and place it","static");
-		}
-	}
-};
-
 class SRP_KitBase extends ItemBase 
 {
-  override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
-	{
-		super.OnPlacementComplete(player, position, orientation);
-		if (GetGame().IsDedicatedServer())
-		{
-      PlayerBase playerPB = PlayerBase.Cast(player);
-      if (player)
-      {
-        float deploymentCost = GetMaxHealth() * 0.05;
-        AddHealth(-deploymentCost);
-        // Print("Placing object: " + GetKitItemName());
-        TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(this, GetKitItemName(), playerPB, position, orientation);
-        lambda.SetTransferParams(false, false);
-        MiscGameplayFunctions.TurnItemIntoItemEx(playerPB, lambda);
-      }
-      if (m_AdminLog)
-      {            
-        m_AdminLog.OnPlacementComplete( player, this);
-      }
-		}
-	}
-
 	override bool IsDeployable() 
   {
     return true;
@@ -110,7 +61,7 @@ class SRP_Potbelly_Stove_Kit extends SRP_KitBase{};
 class SRP_ShootingTarget_Kit extends SRP_KitBase{};
 class SRP_ShootingTargets_Kit extends SRP_KitBase{};
 
-class SRP_GunWall_ColorBase_Kit extends SRP_KitBase{};
+class SRP_GunWall_Fence_Kit extends SRP_KitBase{};
 
 class SRP_StreetLightLarge_Kit extends SRP_KitBase{};
 class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase{};
@@ -183,11 +134,6 @@ class SRP_BarricadeWithWindow_Wood_Kit extends SRP_KitBase{};
 class SRP_WindowBarricade_Wood_Kit extends SRP_KitBase{};
 class SRP_WindowBarricadeTall_Wood_Kit extends SRP_KitBase{};
 class SRP_SpikeBarricade_Wood_Kit extends SRP_KitBase{};
-
-// non craftable kits
-class SRP_PostBox_Kit extends SRP_KitBase{};
-class SRP_PostBoxBlue_Kit extends SRP_KitBase{};
-class SRP_PostBoxWooden_Kit extends SRP_KitBase{};
 
 class SRP_Fridge_Kit extends SRP_KitBase{};
 class SRP_FridgeLarge_Kit extends SRP_KitBase{};

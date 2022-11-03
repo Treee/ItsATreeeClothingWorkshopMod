@@ -245,15 +245,15 @@ class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
   {
     if (part == "556")
     {
-      part = string.Format("%1x45");
+      part = string.Format("%1x45", part);
     }
     if (part == "545")
     {
-      part = string.Format("%1x39");
+      part = string.Format("%1x39", part);
     }
     if (part == "308")
     {
-      part = string.Format("%1Win");
+      part = string.Format("%1Win", part);
     }
     if (part == "50Cal" || part == "12x7")
     {
@@ -563,10 +563,6 @@ class SRP_Container_Base extends DeployableContainer_Base
 
 class SRP_SewingTable extends SRP_Container_Base{};
 
-class SRP_PostBox extends SRP_Container_Base{};
-class SRP_PostBoxBlue extends SRP_Container_Base{};
-class SRP_PostBoxWooden extends SRP_Container_Base{};
-
 class SRP_Cardboardbox extends SRP_Container_Base{};
 
 class SRP_StonePile_Small extends SRP_Container_Base{};
@@ -749,7 +745,7 @@ class SRP_StreetLightSlim extends SRP_Container_Base
   }
 };
 
-class SRP_GunWall_ColorBase extends SRP_Container_Base{};
+class SRP_GunWall_Fence extends SRP_Container_Base{};
 
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};

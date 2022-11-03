@@ -84,7 +84,23 @@ modded class ItemBase
       }      
     }
     super.OnInventoryExit(player);
-	}  
+	}
+  override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
+	{
+		super.OnPlacementComplete(player, position, orientation);
+
+		if (IsPlacingKit() && GetGame().IsDedicatedServer())
+		{
+      PlayerBase playerPB = PlayerBase.Cast(player);
+      if (player)
+      {
+        // Print("Placing object: " + GetKitItemName());
+        TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(this, GetKitItemName(), playerPB, position, orientation);
+        lambda.SetTransferParams(false, false);
+        MiscGameplayFunctions.TurnItemIntoItemEx(playerPB, lambda);
+      }
+		}
+	}
 
   // make sure to use the slot name not the item name....
 	ItemBase GetItemOnSlot(string slot_type)

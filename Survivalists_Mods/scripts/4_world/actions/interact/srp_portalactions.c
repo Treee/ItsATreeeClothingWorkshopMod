@@ -44,13 +44,11 @@ class ActionTeleportToEvent: ActionInteractBase
         action_data.m_Player.GetInventory().CreateInInventory(GetRandomCloak().GetRandomElement());
         action_data.m_Player.GetInventory().CreateInInventory(GetRandomShirt().GetRandomElement());
         action_data.m_Player.GetInventory().CreateInInventory(GetRandomPants().GetRandomElement());
-        action_data.m_Player.GetInventory().CreateInInventory(GetRandomWand().GetRandomElement());
         action_data.m_Player.GetInventory().CreateInInventory(GetRandomShoes().GetRandomElement());        
-        action_data.m_Player.GetInventory().CreateInInventory("HuntingKnife");
-        action_data.m_Player.GetInventory().CreateInInventory("HuntingKnife");
         action_data.m_Player.GetInventory().CreateInInventory("HuntingKnife");
         action_data.m_Player.GetStatWater().Set( 5000 );
         action_data.m_Player.GetStatEnergy().Set( 7500 );
+        action_data.m_Player.GetInventory().CreateInInventory(GetRandomWand().GetRandomElement());
       }
       portal.TeleportPlayer(action_data.m_Player, "event");
     }
