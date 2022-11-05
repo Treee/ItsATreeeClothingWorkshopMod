@@ -20,7 +20,7 @@ class CfgVehicles
 		model="Survivalists_PostBox\consumables\srp_waxstick.p3d";
 		weight=20;
 		absorbency=1;
-		itemSize[]={2,2};
+		itemSize[]={1,2};
     hiddenSelections[]=
     {
       "zbytek"

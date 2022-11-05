@@ -3,6 +3,7 @@ modded class ActionConstructor
 	override void RegisterActions(TTypenameArray actions)
 	{
 		super.RegisterActions(actions);
+    actions.Insert(ActionSRPApplyWax);
     actions.Insert(ActionSRPSealLetter);
     actions.Insert(ActionCheckPostBoxOwner);
     actions.Insert(ActionUnlockPostBox);

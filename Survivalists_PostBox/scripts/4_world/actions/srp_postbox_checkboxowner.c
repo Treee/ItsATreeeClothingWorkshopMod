@@ -26,7 +26,7 @@ class ActionCheckPostBoxOwner extends ActionInteractBase
         }
         else
         {
-          return !postBox.HasBeenChecked() && postBox.GetOwnerName() == "";
+          return !postBox.HasBeenChecked() && postBox.GetSRPOwnerName() == "";
         }
       }
 			return false;

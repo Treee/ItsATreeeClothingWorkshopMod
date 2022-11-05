@@ -2,11 +2,11 @@ modded class ItemManager
 {
   void ItemManager(Widget root)
   {
-    SRP_PostBoxKeys_ColorBase.SyncEvent_OnPostBoxKeysInfoUpdate.Insert(OnItemInfoUpdate); // hook into our ScriptInvoker to receive updates across script modules
+    SRP_OwnedItem_Base.SyncEvent_OnSRPOwnerInfoUpdate.Insert(OnItemInfoUpdate); // hook into our ScriptInvoker to receive updates across script modules
   }
   void ~ItemManager()
   {
-    SRP_PostBoxKeys_ColorBase.SyncEvent_OnPostBoxKeysInfoUpdate.Remove(OnItemInfoUpdate); // unsubscribe when ItemManager is destroyed
+    SRP_OwnedItem_Base.SyncEvent_OnSRPOwnerInfoUpdate.Remove(OnItemInfoUpdate); // unsubscribe when ItemManager is destroyed
   }
 
 	override void PrepareTooltip(EntityAI item, int x = 0, int y = 0)
@@ -15,10 +15,10 @@ modded class ItemManager
 		{
 			return;
 		}
-    if (item.IsInherited(SRP_PostBoxKeys_ColorBase))
+    if (item.IsInherited(SRP_OwnedItem_Base))
     {
-      SRP_PostBoxKeys_ColorBase keys = SRP_PostBoxKeys_ColorBase.Cast(item);
-      keys.TryFetchKeyOwnerInfo();
+      SRP_OwnedItem_Base ownedItem = SRP_OwnedItem_Base.Cast(item);
+      ownedItem.TryFetchKeyOwnerInfo();
     }
 		super.PrepareTooltip(item,x,y);
 	}

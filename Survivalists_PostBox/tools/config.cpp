@@ -63,7 +63,7 @@ class CfgVehicles
 		model="Survivalists_PostBox\tools\srp_waxsealer.p3d";
 		weight=20;
 		absorbency=1;
-		itemSize[]={2,2};
+		itemSize[]={1,2};
     hiddenSelections[]=
     {
       "zbytek"
@@ -79,7 +79,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=50;
+					hitpoints=100;
 					healthLevels[]=
 					{
             {	1.0,{"Survivalists_PostBox\containers\data\srp_sealedletter.rvmat"	}},
@@ -134,11 +134,11 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_SealPress_Clean: SRP_SealPress_ColorBase
+  class SRP_SealPress_NoWax: SRP_SealPress_ColorBase
   {
     scope=2;
-    displayName="Seal Press - Clean";
-    color="clean";
+    displayName="Seal Press";
+    color="NoWax";
     hiddenSelections[]=
     {
       "zbytek"

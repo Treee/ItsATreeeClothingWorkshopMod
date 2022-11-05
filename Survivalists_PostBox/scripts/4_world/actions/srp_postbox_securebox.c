@@ -31,7 +31,7 @@ class ActionUnlockPostBox extends ActionContinuousBase
       SRP_PostBoxKeys_ColorBase key = SRP_PostBoxKeys_ColorBase.Cast(item);
       if (postBox && key)
       {
-        return postBox.IsPostBoxLocked() && key.CanSecurePostBox(postBox.GetOwnerSteamIDHash());
+        return postBox.IsPostBoxLocked() && key.CanSecurePostBox(postBox.GetSRPOwnerSteamIDHash());
       }
 			return false;
 		}
@@ -68,7 +68,7 @@ class ActionLockPostBox extends ActionUnlockPostBox
       SRP_PostBoxKeys_ColorBase key = SRP_PostBoxKeys_ColorBase.Cast(item);
       if (postBox && key)
       {
-        return !postBox.IsPostBoxLocked() && key.CanSecurePostBox(postBox.GetOwnerSteamIDHash());
+        return !postBox.IsPostBoxLocked() && key.CanSecurePostBox(postBox.GetSRPOwnerSteamIDHash());
       }
 			return false;
 		}
