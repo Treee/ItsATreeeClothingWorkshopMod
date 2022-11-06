@@ -21,13 +21,13 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Ruger1022;
-	class ttbar: Ruger1022
+  class ttbar: Ruger1022
 	{
 		scope=2;
-		displayName="Browning M1918A2";
-		descriptionShort="Espen Industries. The Browning Automatic Rifle is a family of US automatic rifles and machineguns used by the United States and the numerous other countries during the 20th century. Chambered in .308, takes LAR magazines. Inspected by Master Gunsmith: Turko";
+		displayName="ESP-M1918A2";
+		descriptionShort="The ESP-M1918A2 is a family of US automatic rifles and machineguns used by the United States and the numerous other countries during the 20th century. Chambered in .308, takes LAR magazines.";
 		model="Survivalists_Mods\weapons\rifles\ttbar\ttbar.p3d";
-		attachments[]={"StockPouch"};
+		attachments[]={"StockPouch","RISAdapter","weaponOpticsHunting","weaponOptics"};
 		itemSize[]={8,3};
 		chamberableFrom[]=
 		{
@@ -38,13 +38,89 @@ class cfgWeapons
 		{
 			"Mag_FAL_20Rnd"
 		};
+		recoilModifier[]={2,2.5,3};
+		swayModifier[]={2,2,1.1};
 		spawnDamageRange[]={0,0.60000002};
-		modes[]={"SemiAuto"};
-		soundSetShot[]=
+		modes[]=
 		{
-			"SCOUT_Shot_SoundSet",
-			"SCOUT_Tail_SoundSet",
-			"SCOUT_InteriorTail_SoundSet"
+			"SemiAuto"	
+		};
+		class SemiAuto: Mode_SemiAuto
+		{
+			soundSetShot[]=
+			{
+				"FNFAL_Shot_SoundSet",
+				"FNFAL_Tail_SoundSet",
+				"FNFAL_InteriorTail_SoundSet"
+			};
+			soundSetShotExt[]=
+			{				
+				{
+					"FNFAL_silencerHomeMade_SoundSet",
+					"FNFAL_silencerHomeMadeTail_SoundSet",
+					"FNFAL_silencerInteriorHomeMadeTail_SoundSet"
+				}
+			};
+			begin1[]=
+			{
+				"",
+				1,
+				1,
+				900
+			};
+			begin2[]=
+			{
+				"",
+				1,
+				1,
+				900
+			};
+			begin3[]=
+			{
+				"",
+				1,
+				1,
+				900
+			};
+			soundBegin[]=
+			{
+				"begin1",
+				0.33333001,
+				"begin2",
+				0.33333001,
+				"begin3",
+				0.33333001
+			};
+			reloadTime=0.12;
+			recoil="recoil_AKM";
+			recoilProne="recoil_AKM_prone";
+			dispersion=0.0020000001;
+			magazineSlot="magazine";
+			beginSilenced_Pro[]=
+			{
+				"",
+				1,
+				1,
+				200
+			};
+			beginSilenced_HomeMade[]=
+			{
+				"",
+				1,
+				1,
+				300
+			};
+			soundBeginExt[]=
+			{
+				{
+					"beginSilenced_Pro",
+					1
+				},
+				{
+					"beginSilenced_HomeMade",
+					1
+				}
+			};
 		};
 	};
 };

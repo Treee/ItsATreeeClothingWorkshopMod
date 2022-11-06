@@ -2,7 +2,7 @@ ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={0.7,0.7,0.7,1};
+specular[]={1,1,1,1};
 specularPower=100;
 PixelShaderID="Super";
 VertexShaderID="Super";
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-    texture="Survivalists_Mods\weapons\rifles\ttbar\data\ttbarpoly_as.paa";
+    texture="#(argb,8,8,3)color(1,1,1,1,AS)";
     uvSource="tex";
     class uvTransform
     {

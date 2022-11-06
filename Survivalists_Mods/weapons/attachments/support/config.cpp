@@ -1329,4 +1329,48 @@ class CfgVehicles
 			"Survivalists_Mods\weapons\attachments\support\data\ESP_Crane_BttStck_Black_CO.paa"
 		};
 	};
+
+//==================================================Adapters
+
+  class ESP_RIS_Adapter: Inventory_Base
+	{
+		scope=2;
+		displayName="RIS Adapter";
+		descriptionShort="An RIS Adapter";
+		model="Survivalists_Mods\weapons\attachments\support\RIS_Adapter.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"RISAdapter"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\weapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\weapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}},						
+						{0.5,{"Survivalists_Mods\weapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\weapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}},						
+						{0,{"Survivalists_Mods\weapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
 };

@@ -2004,12 +2004,28 @@ class CfgSlots
       displayName="Derringer";
       ghostIcon="set:dayz_inventory image:pistol";
   };
+
+
+  class Slot_RIS_Adapter
+  {
+    name="RISAdapter"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="RIS Adapter"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+  };
 };
 
 class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
+
+  class ProxyRIS_Adapter_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="RISAdapter";
+		model="Survivalists_Mods\proxy\RIS_Adapter_Proxy.p3d";
+	};
+
   class Proxysrp_barrel1_proxy: ProxyAttachment
 	{
 		scope=2;
