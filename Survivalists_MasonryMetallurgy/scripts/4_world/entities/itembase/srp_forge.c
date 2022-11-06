@@ -266,16 +266,19 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 	{
     super.AddTemperatureToItemByFire(item);
 
-    if (item && item.IsForgeHardened())
+    if (item && item.IsTransformedByHeat())
     {
-      item.AddHealth( PARAM_BURN_DAMAGE_COEF );
-      if (item.IsTransformedByHeat())
-      {
-        item.IncrementHeatTimer(1);
-        item.HandleHeatTransformation();
-      }
+      item.IncrementHeatTimer(1);
+      item.HandleHeatTransformation();
     }
 	}
+  
+  protected void AddDamageToItemByFireEx(ItemBase item, bool can_be_ruined, bool pAttachment)
+  {
+    if (item && item.IsForgeHardened())
+      return;
+    super.AddDamageToItemByFireEx(item, can_be_ruined, pAttachment);
+  }
 
   override bool CanBeDeconstructed()
   {

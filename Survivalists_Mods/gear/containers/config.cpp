@@ -2634,7 +2634,7 @@ class CfgVehicles
 		};
   };
 
-  class SRP_CassetteBinder: SmallProtectorCase
+  class SRP_CassetteBinder: Inventory_Base
   {
 		scope=2;
 		displayName="Cassette Binder";

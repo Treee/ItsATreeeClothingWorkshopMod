@@ -481,7 +481,17 @@ class SRP_Mining_StoneChunk_Coke extends SRP_Mining_StoneChunk_ColorBase
 };
 
 //======================================================= ORE
-class SRP_Mining_RawOre_ColorBase extends ItemBase{};
+class SRP_Mining_RawOre_ColorBase extends ItemBase
+{
+  override protected bool CanHaveTemperature()
+	{
+		return true;
+	}
+  override bool IsForgeHardened()
+  {
+    return true;
+  }
+};
 class SRP_Mining_RawOre_Copper extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Tin extends SRP_Mining_RawOre_ColorBase{};
 class SRP_Mining_RawOre_Bronze extends SRP_Mining_RawOre_ColorBase{};
