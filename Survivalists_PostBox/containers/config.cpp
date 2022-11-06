@@ -293,6 +293,125 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_LetterHolder_ColorBase: Container_Base
+	{
+		scope=0;
+		displayName="Letter Holder";
+		descriptionShort="A letter folder used for holding letters";
+		model="Survivalists_PostBox\containers\SRP_Letter_Holder.p3d";
+		inventorySlot[]=
+		{
+			"Belt_Left"
+		};
+    attachments[]=
+    {
+      "SRP_CourierNote1",
+      "SRP_CourierNote2",
+      "SRP_CourierNote3",
+      "SRP_CourierNote4",
+      "SRP_CourierNote5",
+      "SRP_CourierNote6",
+      "SRP_CourierNote7",
+      "SRP_CourierNote8",
+      "SRP_CourierNote9",
+      "SRP_CourierNote10",
+    };
+		weight=440;
+		itemSize[]={2,3};
+		itemsCargoSize[]={2,2};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_PostBox\containers\data\Letter_Holder_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1.0,{"Survivalists_PostBox\containers\data\Letter_Holder.rvmat"}},						
+						{0.69999999,{"Survivalists_PostBox\containers\data\Letter_Holder.rvmat"}},						
+						{0.5,{"Survivalists_PostBox\containers\data\Letter_Holder.rvmat"}},						
+						{0.30000001,{"Survivalists_PostBox\containers\data\Letter_Holder.rvmat"}},						
+						{0.0,{"Survivalists_PostBox\containers\data\Letter_Holder.rvmat"}}
+				  };
+				};
+			};
+		};
+	};
+  class SRP_LetterHolder_Maroon: SRP_LetterHolder_ColorBase
+	{
+		scope=2;
+    color="maroon";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_PostBox\containers\data\Letter_Holder_co.paa"
+		};
+	};
+  class SRP_LetterHolder_Blue: SRP_LetterHolder_ColorBase
+	{
+		scope=2;
+    color="blue";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_PostBox\containers\data\Letter_Holder_blue_co.paa"
+		};
+	};
+  class SRP_LetterHolder_Purple: SRP_LetterHolder_ColorBase
+	{
+		scope=2;
+    color="purple";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_PostBox\containers\data\Letter_Holder_purple_co.paa"
+		};
+	};
+  class SRP_LetterHolder_Green: SRP_LetterHolder_ColorBase
+	{
+		scope=2;
+    color="green";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_PostBox\containers\data\Letter_Holder_green_co.paa"
+		};
+	};
+  class SRP_Letter_Holder: SRP_LetterHolder_ColorBase
+  {
+    scope=2;
+    color="maroon";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_PostBox\containers\data\Letter_Holder_co.paa"
+		};
+  };
+
   class SRP_UnSealedLetter: Inventory_Base
 	{
 		scope=2;

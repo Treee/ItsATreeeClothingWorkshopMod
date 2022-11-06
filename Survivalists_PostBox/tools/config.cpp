@@ -25,6 +25,19 @@ class CfgVehicles
 		weight=4;
 		itemSize[]={1,1};
 		fragility=0.0099999998;
+    inventorySlot[]=
+    {
+      "SRP_Key1",
+      "SRP_Key2",
+      "SRP_Key3",
+      "SRP_Key4",
+      "SRP_Key5",
+      "SRP_Key6",
+      "SRP_Key7",
+      "SRP_Key8",
+      "SRP_Key9",
+      "SRP_Key10",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -129,6 +142,151 @@ class CfgVehicles
 				{
 					soundSet="pickUpCourierBag_SoundSet";
 					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_KeyRing: Inventory_Base
+	{
+		scope=2;
+		displayName="Key Ring";
+		descriptionShort="A ring of wire used to hold several keys.";
+		model="\dz\gear\crafting\String_MetalWire.p3d";
+		rotationFlags=17;
+		itemSize[]={1,2};
+		weight=170;
+		inventorySlot[]={};
+		attachments[]=
+    {
+      "SRP_Key1",
+      "SRP_Key2",
+      "SRP_Key3",
+      "SRP_Key4",
+      "SRP_Key5",
+      "SRP_Key6",
+      "SRP_Key7",
+      "SRP_Key8",
+      "SRP_Key9",
+      "SRP_Key10",
+    };
+		hiddenSelections[]=
+		{
+			"att_battery_car",
+			"att_battery_car_plugged",
+			"att_battery_truck",
+			"att_battery_truck_plugged",
+			"att_battery_car_plug",
+			"att_battery_truck_plug",
+			"rolled"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\crafting\data\string_metalwire_co.paa",
+			"dz\gear\crafting\data\string_metalwire_co.paa",
+			"dz\gear\crafting\data\string_metalwire_co.paa",
+			"dz\gear\crafting\data\string_metalwire_co.paa",
+			"",
+			"",
+			"dz\gear\crafting\data\string_metalwire_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+			"dz\gear\crafting\data\String_MetalWire.rvmat",
+			"",
+			"",
+			"dz\gear\crafting\data\String_MetalWire.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\crafting\data\String_MetalWire.rvmat"}},						
+						{0.69999999,{"DZ\gear\crafting\data\String_MetalWire.rvmat"}},						
+						{0.5,{"DZ\gear\crafting\data\String_MetalWire_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\crafting\data\String_MetalWire_damage.rvmat"}},						
+						{0,{"DZ\gear\crafting\data\String_MetalWire_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimationSources
+		{
+			class Att_battery_car
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class Att_battery_car_plugged
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class Att_battery_truck
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class Att_battery_truck_plugged
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class Att_battery_car_plug
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class Att_battery_truck_plug
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class Rolled
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+		};
+		soundImpactType="metal";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class rope_untie
+				{
+					soundSet="rope_untie_SoundSet";
+					id=202;
+				};
+				class rope_struggle
+				{
+					soundSet="rope_struggle_SoundSet";
+					id=203;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarbedWire_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="barbedwire_drop_SoundSet";
+					id=898;
 				};
 			};
 		};

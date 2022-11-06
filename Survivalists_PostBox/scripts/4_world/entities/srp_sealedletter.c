@@ -9,6 +9,8 @@ class SRP_SealedLetter_ColorBase extends SRP_OwnedItem_Base
 		super.SetActions();		
 		AddAction(ActionUnlockPostBox);
 		AddAction(ActionLockPostBox);
+		AddAction(ActionSRPDepositLetter);
+  
 	}
   override bool NameOverride(out string output)
 	{

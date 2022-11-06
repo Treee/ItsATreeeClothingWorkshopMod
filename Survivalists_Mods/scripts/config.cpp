@@ -195,69 +195,6 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:book";
 	};
 
-  //==================== Bunny Item Slots
-  class Slot_SRP_CourierNote1
-	{
-		name="SRP_CourierNote1";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote2
-	{
-		name="SRP_CourierNote2";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote3
-	{
-		name="SRP_CourierNote3";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote4
-	{
-		name="SRP_CourierNote4";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote5
-	{
-		name="SRP_CourierNote5";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote6
-	{
-		name="SRP_CourierNote6";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote7
-	{
-		name="SRP_CourierNote7";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote8
-	{
-		name="SRP_CourierNote8";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote9
-	{
-		name="SRP_CourierNote9";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_CourierNote10
-	{
-		name="SRP_CourierNote10";
-		displayName="Envelope";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-
-
   //====================Tool Kit Slots
   class Slot_SRP_ToolKit_Hammer
 	{

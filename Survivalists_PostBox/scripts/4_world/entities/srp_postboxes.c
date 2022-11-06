@@ -77,23 +77,13 @@ class SRP_PostBox_Base extends SRP_OwnedItem_Base
     RemoveAction(ActionSwapItemToHands);
 		RemoveAction(ActionTakeItemToHands);
 	}
+  override bool CanDisplayAttachmentSlot( string slot_name )
+	{
+    return CanViewBoxContents();
+	}
   override bool CanDisplayCargo()
 	{
-    PlayerBase player;
-    if (GetSRPOwnerSteamIDHash() != "" && Class.CastTo(player, GetGame().GetPlayer()))
-    {
-      // Print("test: " + player.GetIdentity().GetId() + " against " + GetSRPOwnerSteamIDHash());      
-      if (IsPlayerOwner(player.GetIdentity().GetId()))
-      {
-        return true;
-      }
-    }
-    else if (!IsPostBoxLocked())
-    {
-      // Print("not locked, show cargo");
-      return true;
-    }    
-    return false;
+    return CanViewBoxContents();
 	}
   override bool CanPutInCargo( EntityAI parent )
 	{
@@ -162,6 +152,28 @@ class SRP_PostBox_Base extends SRP_OwnedItem_Base
   bool IsPlayerOwner(string steamIdHash)
   {
     return GetSRPOwnerSteamIDHash() == steamIdHash;
+  }
+  bool CanViewBoxContents()
+  {
+    PlayerBase player;
+    if (GetSRPOwnerSteamIDHash() != "" && Class.CastTo(player, GetGame().GetPlayer()))
+    {
+      // Print("test: " + player.GetIdentity().GetId() + " against " + GetSRPOwnerSteamIDHash());      
+      if (IsPlayerOwner(player.GetIdentity().GetId()))
+      {
+        return true;
+      }
+    }
+    else if (!IsPostBoxLocked())
+    {
+      // Print("not locked, show cargo");
+      return true;
+    }    
+    return false;
+  }
+  bool CanDepositLetter()
+  {
+    return GetInventory().AttachmentCount() < 10
   }
 };
 
