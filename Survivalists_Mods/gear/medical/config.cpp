@@ -32,6 +32,8 @@ class CfgVehicles
   class BandageDressing: Inventory_Base
   {
     canBeSplit=1;
+    varQuantityInit=2;
+		varQuantityMax=8;
     inventorySlot[]+=
     {
       "SRP_Medical1",
@@ -77,6 +79,65 @@ class CfgVehicles
     canBeSplit=1;
   };
   //------------------------------------------- CUSTOM STUFF
+  class SRP_StimPackInjector_Base: Epinephrine
+	{
+		scope=0;
+		displayName="Stim Pack Injector";
+		descriptionShort="Stim Pack Injector";
+		model="\dz\gear\medical\Epinephrine.p3d";
+		debug_ItemCategory=7;
+		rotationFlags=17;
+		itemSize[]={1,2};
+		weight=60;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{					
+						{1,{"DZ\gear\medical\data\epipen.rvmat"}},					
+						{0.69999999,{"DZ\gear\medical\data\epipen.rvmat"}},					
+						{0.5,{"DZ\gear\medical\data\epipen_damage.rvmat"}},					
+						{0.30000001,{"DZ\gear\medical\data\epipen_damage.rvmat"}},					
+						{0,{"DZ\gear\medical\data\epipen_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		soundImpactType="plastic";
+	};
+  class SRP_StimPackInjector_Espen: SRP_StimPackInjector_Base
+	{
+		scope=2;
+		displayName="Stim Pack Injector - Espen Industries";
+		descriptionShort="Stim Pack Injector manufactured by Espen Pharmacuticals. 'Espen Indisutries, making you better one part at a time.' - Espen.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\epipen_espen_co.paa"
+    };
+	};
+  class SRP_StimPackInjector_Stag: SRP_StimPackInjector_Base
+	{
+		scope=2;
+		displayName="Stim Pack Injector - STAG Industries";
+		descriptionShort="Stim Pack Injector manufactured by STAG Medical Division. 'Your life in better hands.' - Konstantin.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\epipen_stag_co.paa"
+    };
+	};
+
   class SRP_MedicalKit_Kit: SRP_KitBase //new
 	{
 		scope=2;
