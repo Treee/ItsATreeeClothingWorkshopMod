@@ -85,4 +85,8 @@ class SRP_OwnedItem_Base extends ItemBase
   {
     return m_SRPOwnerSteamIDHash;
   }
+  bool HasOwner()
+  {
+    return GetSRPOwnerName() != "";
+  }
 };

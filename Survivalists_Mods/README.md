@@ -898,6 +898,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Chain Link Fence Low Poly Version" (https://skfb.ly/o9Xyx) by Kain Hunter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Medieval Notice Board" (https://skfb.ly/ouuCF) by hannah1205 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Windmill (game ready)" (https://skfb.ly/osGzx) by LamedeFeu is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

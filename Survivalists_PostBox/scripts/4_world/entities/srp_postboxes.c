@@ -173,7 +173,11 @@ class SRP_PostBox_Base extends SRP_OwnedItem_Base
   }
   bool CanDepositLetter()
   {
-    return GetInventory().AttachmentCount() < 10
+    return GetInventory().AttachmentCount() < 10;
+  }
+  bool IsEmpty()
+  {
+    return GetInventory().AttachmentCount() == 0;
   }
 };
 
