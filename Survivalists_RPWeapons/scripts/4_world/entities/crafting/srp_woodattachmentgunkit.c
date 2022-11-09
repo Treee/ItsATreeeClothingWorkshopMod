@@ -1,0 +1,1 @@
+class SRP_WoodAttachmentGunKit_Kit extends SRP_WeaponCraftingKitBase{};

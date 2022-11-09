@@ -403,29 +403,7 @@ class SRP_ArmorKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WoodenStickArmor_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_SimpleBoneArmor_Kit extends SRP_IntermediateCraftingKitBase{};
 
-// bladed weapons
-class SRP_WeaponBladeKit_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeKnifeOld_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeKarambitKnife_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeSnakeDagger_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeBerserkSword_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeAerondightSword_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeCrystalMace_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeKatana_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeWarCleaver_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladePipeAxe_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBladeCelticAxe_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_FireyGreatsword_Kit extends SRP_IntermediateCraftingKitBase{};
-// blunt weapons 
-class SRP_WeaponSpear_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponStaff_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBluntWarHammer_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBluntKit_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponBluntMacerator_Kit extends SRP_IntermediateCraftingKitBase{};
-
 class SRP_AccessoryRing_Kit extends SRP_IntermediateCraftingKitBase{};
-
-class SRP_Dynamite_Stick_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_StreetSign_Kit extends SRP_IntermediateCraftingKitBase{};
 
@@ -495,13 +473,6 @@ class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
   }
 };
 class SRP_TaxidermyWall_Kit extends SRP_Taxidermy_Kit{};
-
-// GUNSMITHING
-class SRP_WoodAttachmentGunKit_Kit extends SRP_IntermediateCraftingKitBase{};
-
-class SRP_WeaponLongBarrel_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WeaponMediumBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
-class SRP_WeaponShortBarrel_Kit extends SRP_WeaponLongBarrel_Kit{};
 
 class SRP_MedicalKit_Kit extends SRP_IntermediateCraftingKitBase{};
 
