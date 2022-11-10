@@ -86,7 +86,7 @@ class CfgVehicles
 		descriptionShort="Stim Pack Injector";
 		model="\dz\gear\medical\Epinephrine.p3d";
 		debug_ItemCategory=7;
-		rotationFlags=17;
+		rotationFlags=12;
 		itemSize[]={1,2};
 		weight=60;
 		class DamageSystem
