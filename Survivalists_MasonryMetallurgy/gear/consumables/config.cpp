@@ -377,7 +377,29 @@ class CfgVehicles
 		varQuantityMax=10;
     absorbency=0;
     varWetMax=0;
-		inventorySlot[]={};
+		inventorySlot[]=
+    {
+      "SRP_DisplayHook1",
+      "SRP_DisplayHook2",
+      "SRP_DisplayHook3",
+      "SRP_DisplayHook4",
+      "SRP_DisplayHook5",
+      "SRP_DisplayHook6",
+      "SRP_DisplayHook7",
+      "SRP_DisplayHook8",
+      "SRP_DisplayHook9",
+      "SRP_DisplayHook10",
+      "SRP_DisplayHook11",
+      "SRP_DisplayHook12",
+      "SRP_DisplayHook13",
+      "SRP_DisplayHook14",
+      "SRP_DisplayHook15",
+      "SRP_DisplayHook16",
+      "SRP_DisplayHook17",
+      "SRP_DisplayHook18",
+      "SRP_DisplayHook19",
+      "SRP_DisplayHook20",
+    };
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -1725,7 +1747,27 @@ class CfgVehicles
 		inventorySlot[]=
     {
       "SRP_RawCrystal1",
-      "SRP_RawCrystal2"
+      "SRP_RawCrystal2",
+      "SRP_DisplayHook1",
+      "SRP_DisplayHook2",
+      "SRP_DisplayHook3",
+      "SRP_DisplayHook4",
+      "SRP_DisplayHook5",
+      "SRP_DisplayHook6",
+      "SRP_DisplayHook7",
+      "SRP_DisplayHook8",
+      "SRP_DisplayHook9",
+      "SRP_DisplayHook10",
+      "SRP_DisplayHook11",
+      "SRP_DisplayHook12",
+      "SRP_DisplayHook13",
+      "SRP_DisplayHook14",
+      "SRP_DisplayHook15",
+      "SRP_DisplayHook16",
+      "SRP_DisplayHook17",
+      "SRP_DisplayHook18",
+      "SRP_DisplayHook19",
+      "SRP_DisplayHook20",
     };
     hiddenSelections[]=
 		{
