@@ -22,8 +22,28 @@ class CfgVehicles
 
 	class Binoculars: ItemOptics
 	{
-		inventorySlot[]+={"Binoculars"};
+		inventorySlot[]+=
+    {
+      "Binoculars",
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+      "LargePouch5",
+    };
 	};
+
+  class Rangefinder: ItemOptics
+	{
+    inventorySlot[]+=
+    {
+      "LargePouch1",
+      "LargePouch2",
+      "LargePouch3",
+      "LargePouch4",
+      "LargePouch5",
+    };
+  };
 
   class SRP_PistolOptic_Golden: PistolOptic
 	{
