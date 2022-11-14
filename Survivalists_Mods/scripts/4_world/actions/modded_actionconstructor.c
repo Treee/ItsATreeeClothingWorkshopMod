@@ -4,6 +4,11 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
+		actions.Insert(ActionSwapLens_Black); 
+		actions.Insert(ActionSwapLens_Blue); 
+		actions.Insert(ActionSwapLens_Green); 
+		actions.Insert(ActionSwapLens_Orange); 
+
 		actions.Insert(ActionSalvageCarWreck); 
 
 		actions.Insert(ActionBlowIntoHorn); 
