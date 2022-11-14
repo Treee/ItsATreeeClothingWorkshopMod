@@ -13,7 +13,7 @@ class SRP_AmbientSoundEmiter_Base extends House
 
   void ~SRP_AmbientSoundEmiter_Base()
   {
-    StopLoopSound();
+    StopSoundSet(m_TempleSound);
   }
 	
 	string GetSoundSet()
@@ -55,14 +55,6 @@ class SRP_AmbientSoundEmiter_Base extends House
       GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(RequestSoundEvent, 450000, false);
 		}
 	}
-
-  void StopLoopSound()
-  {
-    if (!GetGame().IsDedicatedServer())
-		{
-      StopSoundSet(m_TempleSound);
-    }
-  }
 
   override bool CanPutInCargo( EntityAI parent )
 	{
