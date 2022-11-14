@@ -249,6 +249,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\drybag_mintblue_co.paa"
 		};
 	};
+  class DryBag_Espen: DryBag_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\backpacks\data\drybag_Espen_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_Espen_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_Espen_co.paa"
+    };
+  };
 
   class GhillieBushrag_White: GhillieBushrag_ColorBase
 	{

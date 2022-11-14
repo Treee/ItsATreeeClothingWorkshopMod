@@ -479,6 +479,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\TTD_shirt_co.paa"
 		};
 	};
+  class TShirt_Espen: TShirt_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\shirt_Espen_co.paa",
+      "Survivalists_Retextures\characters\tops\data\shirt_Espen_co.paa",
+      "Survivalists_Retextures\characters\tops\data\shirt_Espen_co.paa"
+    };
+  };
 	class Hoodie_Orange: Hoodie_ColorBase
 	{
 		scope=2;
