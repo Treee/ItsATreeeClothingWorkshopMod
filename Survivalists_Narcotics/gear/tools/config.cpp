@@ -23,6 +23,11 @@ class CfgVehicles
 		descriptionShort="A well preserved smoking pipe of the old world.";
     model="Survivalists_Narcotics\gear\tools\smokingpipe.p3d";
     itemSize[]={1,2};
+    color="SmokingPipe";
+    inventorySlot[]=
+    {
+      "Mask"
+    };
     varQuantityInit=30;
 		varQuantityMin=0;
 		varQuantityMax=30;

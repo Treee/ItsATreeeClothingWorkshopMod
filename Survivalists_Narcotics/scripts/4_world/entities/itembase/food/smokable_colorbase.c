@@ -10,6 +10,16 @@ class SRP_Smokable_ColorBase extends Edible_Base {
 		ExtinguishSmokable();
 	}
 
+  override void OnWasAttached( EntityAI parent, int slot_id )
+	{
+		super.OnWasAttached(parent, slot_id);
+    PlayerBase player;
+    if (GetGame().IsDedicatedServer() && Class.CastTo(player, parent))
+    {
+      MiscGameplayFunctions.TurnItemIntoItem(this, GetSmokableType(), player);
+    }
+	}
+
 	void ExtinguishSmokable()
 	{
 		if (m_SmokeParticle)
@@ -46,11 +56,17 @@ class SRP_Smokable_ColorBase extends Edible_Base {
 		AddAction(ActionSmokeSRPSmokableSelf);
 		AddAction(ActionForceSmokeSRPSmokable);
 	}
+
+  string GetSmokableType()
+  {
+    return string.Format("SRP_SmokableWearable_%1", ConfigGetString("color"));
+  }
 };
 
-class SRP_SmokingPipe extends SRP_Smokable_ColorBase {};
+class SRP_SmokingPipe extends SRP_Smokable_ColorBase{};
 
-class SRP_Smokable_Cigarette extends SRP_Smokable_ColorBase {
+class SRP_Smokable_Cigarette extends SRP_Smokable_ColorBase 
+{
   override void OnConsume(float amount, PlayerBase consumer)
 	{
 		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_TOBACCO ) )
@@ -72,7 +88,8 @@ class SRP_Smokable_Cigar extends SRP_Smokable_ColorBase
 	}
 };
 
-class SRP_Smokable_ZWeed extends SRP_Smokable_ColorBase {
+class SRP_Smokable_ZWeed extends SRP_Smokable_ColorBase 
+{
   override void OnConsume(float amount, PlayerBase consumer)
 	{
 		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_STONED ) )
@@ -82,7 +99,8 @@ class SRP_Smokable_ZWeed extends SRP_Smokable_ColorBase {
 		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_STONED );
 	}
 };
-class SRP_Smokable_ZWeedIrradiated extends SRP_Smokable_ColorBase {
+class SRP_Smokable_ZWeedIrradiated extends SRP_Smokable_ColorBase
+{
   override void OnConsume(float amount, PlayerBase consumer)
 	{
 		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_STONEDIRRADIATED ) )
@@ -92,7 +110,8 @@ class SRP_Smokable_ZWeedIrradiated extends SRP_Smokable_ColorBase {
 		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_STONEDIRRADIATED );
 	}
 };
-class SRP_Smokable_Test extends SRP_Smokable_ColorBase {
+class SRP_Smokable_Test extends SRP_Smokable_ColorBase
+{
   override void OnConsume(float amount, PlayerBase consumer)
 	{
 		if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_TEST ) )

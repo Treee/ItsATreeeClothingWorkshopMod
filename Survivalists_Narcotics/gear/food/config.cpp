@@ -610,8 +610,11 @@ class CfgVehicles
       "CigaretteCase11",
       "CigaretteCase12", 
       "CigaretteCase13",
-      "CigaretteCase14"
+      "CigaretteCase14",
+      "Mask",
     };
+    noHelmet=0;
+		noEyewear=0;
     varTemperatureMax=100;
     weight=100;
     itemSize[]={1,2};
@@ -620,6 +623,11 @@ class CfgVehicles
     varQuantityInit=5;
 		varQuantityMin=0;
 		varQuantityMax=5;
+    class ClothingTypes
+		{
+			male="Survivalists_Narcotics\gear\food\cigarette_m.p3d";
+			female="Survivalists_Narcotics\gear\food\cigarette_m.p3d";
+		};
     class DamageSystem
 		{
 			class GlobalHealth
@@ -717,13 +725,7 @@ class CfgVehicles
     scope=2;
     displayName="Cigarette";
     color="Cigarette";
-    model="Survivalists_Narcotics\gear\food\cigarette_g.p3d";
 		descriptionShort="Relieve that stress... ahhhhh";
-    class ClothingTypes
-		{
-			male="Survivalists_Narcotics\gear\food\cigarette_m.p3d";
-			female="Survivalists_Narcotics\gear\food\cigarette_m.p3d";
-		};
   };
   class SRP_Smokable_Cigar: SRP_Smokable_ColorBase
   {
@@ -740,7 +742,8 @@ class CfgVehicles
       "Cigar4",
       "Cigar5",
       "Cigar6",
-      "Cigar7",    
+      "Cigar7",
+      "Mask"
     };
     class ClothingTypes
 		{
