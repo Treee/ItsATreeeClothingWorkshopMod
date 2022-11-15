@@ -1,13 +1,64 @@
-class SRP_Smokable_ColorBase extends Edible_Base {
-	Particle 				m_SmokeParticle;
-	vector 					m_ParticleLocalPos = Vector(0, 0.11, 0);
-  bool            m_isLit = false;
+class SRP_SwitchAndIgniteLambda extends TurnItemIntoItemLambda
+{
+  bool m_IsIgnited;
+	void SRP_SwitchAndIgniteLambda(EntityAI old_item, string new_item_type, PlayerBase player, bool isIgnited=false) 
+  { 
+    m_IsIgnited = isIgnited;
+  }
 
-	void SRP_Smokable_ColorBase(){}
+	override void CopyOldPropertiesToNew (notnull EntityAI old_item, EntityAI new_item)
+	{
+		super.CopyOldPropertiesToNew(old_item, new_item);
+	}
+	
+	override void OnSuccess (EntityAI new_item)
+	{
+		super.OnSuccess(new_item);
+		SRP_Smokable_ColorBase smokable;
+		if ( SRP_Smokable_ColorBase.CastTo(smokable, new_item) ) 
+		{	
+      if (m_IsIgnited)
+      {
+        smokable.LightSmokable();
+      };
+		}
+    SRP_SmokableWearable_ColorBase wearableSmokable;
+		if ( SRP_SmokableWearable_ColorBase.CastTo(wearableSmokable, new_item) ) 
+		{	
+      if (m_IsIgnited)
+      {
+        wearableSmokable.LightSmokable();
+      };
+		}
+	}
+};
+
+class SRP_Smokable_ColorBase extends Edible_Base 
+{
+	protected Particle m_SmokeParticle;
+  protected bool m_IsIgnited = false;
+
+	void SRP_Smokable_ColorBase()
+  {
+    RegisterNetSyncVariableBool( "m_IsIgnited" );
+  }
 
 	void ~SRP_Smokable_ColorBase()
 	{
 		ExtinguishSmokable();
+	}
+
+  override void OnVariablesSynchronized()
+	{
+		super.OnVariablesSynchronized();
+    if (m_IsIgnited)
+    {
+      LightSmokable();
+    }
+    else
+    {
+      ExtinguishSmokable();
+    }
 	}
 
   override void OnWasAttached( EntityAI parent, int slot_id )
@@ -16,36 +67,51 @@ class SRP_Smokable_ColorBase extends Edible_Base {
     PlayerBase player;
     if (GetGame().IsDedicatedServer() && Class.CastTo(player, parent))
     {
-      MiscGameplayFunctions.TurnItemIntoItem(this, GetSmokableType(), player);
+      SRP_SwitchAndIgniteLambda lambda = new SRP_SwitchAndIgniteLambda(this, GetSmokableType(), player, IsLit());
+		  MiscGameplayFunctions.TurnItemIntoItemEx(player, lambda);
     }
 	}
 
 	void ExtinguishSmokable()
 	{
-		if (m_SmokeParticle)
+    if (GetGame() && GetGame().IsDedicatedServer())
+    {
+      SetLit(false);
+      SetSynchDirty();
+      return;
+    }
+		if ( m_SmokeParticle && GetGame() && !GetGame().IsDedicatedServer() )
 		{
 			m_SmokeParticle.Stop();
-      SetLit(false);
-		}
+      m_SmokeParticle = null;
+		}    
 	}
 
-  void LightSmokable() {
-    if ( GetGame().IsClient()  ||  !GetGame().IsMultiplayer() ) // client side
+  void LightSmokable()
+  {    
+    if (GetGame().IsDedicatedServer())
     {
-      m_SmokeParticle = Particle.PlayOnObject(ParticleList.CAMP_NORMAL_SMOKE, this, m_ParticleLocalPos, Vector(0,0,0), true);
-      m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.SIZE, 0.01);
-      m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.VELOCITY, 0.01);
-      m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.VELOCITY_RND, 0.01);
       SetLit(true);
-    }	
+      SetSynchDirty();
+      return;
+    }
+		if ( !m_SmokeParticle && GetGame() && !GetGame().IsDedicatedServer() )
+    {
+      m_SmokeParticle = ParticleManager.GetInstance().PlayOnObject( ParticleList.CAMP_NORMAL_SMOKE, this, GetSmokeEffectPosition() );
+      m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.SIZE, 0.001);
+      m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.VELOCITY, 0.001);
+      m_SmokeParticle.ScaleParticleParamFromOriginal(EmitorParam.VELOCITY_RND, 0.001);
+    }
   }
 
-  void SetLit(bool isLit) {
-    m_isLit = isLit;
+  void SetLit(bool isLit) 
+  {
+    m_IsIgnited = isLit;
   }
 
-  bool IsLit() {
-    return m_isLit;
+  bool IsLit() 
+  {
+    return m_IsIgnited;
   }
 
 	override void SetActions()
@@ -60,6 +126,10 @@ class SRP_Smokable_ColorBase extends Edible_Base {
   string GetSmokableType()
   {
     return string.Format("SRP_SmokableWearable_%1", ConfigGetString("color"));
+  }
+  vector GetSmokeEffectPosition()
+  {
+    return Vector(0, 0.11, 0);
   }
 };
 

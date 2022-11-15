@@ -15,38 +15,32 @@ class ActionSmokeSRPSmokableSelf: ActionContinuousBase
 		m_CommandUIDProne = DayZPlayerConstants.CMD_ACTIONFB_TAKETEMPSELF;
 		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
 	}
-	
 	override void CreateConditionComponents()  
 	{
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTSelf;
 	}
-	
 	override bool HasProneException()
 	{
 		return true;
 	}
-
 	override bool HasTarget()
 	{
 		return false;
 	}
-		
 	override string GetText()
 	{
 		return "Smoke";
 	}
-
   override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(item);
-    // Print("ActionSmokeSRPSmokableSelf: " + smokable.IsLit());
-    if (smokable.IsLit()) {
-      return  true;
+    SRP_Smokable_ColorBase smokable;
+    if (SRP_Smokable_ColorBase.CastTo(smokable, item))
+    {
+      return smokable.IsLit();
     }
 		return false;
 	}
-
   override void OnEndServer( ActionData action_data )
 	{	
     // Print("Smokable OnEndServer");
@@ -129,35 +123,32 @@ class ActionExtinguishSmokeSRPSmokableSelf: ActionSingleUseBase
 
   override bool ActionCondition ( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(item);
-    // Debug.Log("ActionExtinguishSmokeSRPSmokableSelf","ActionCondition");
-    if (smokable && smokable.IsLit()) {
-      return true;
+    SRP_Smokable_ColorBase smokable;
+    if (SRP_Smokable_ColorBase.CastTo(smokable, item))
+    {
+      return smokable.IsLit();
     }
 		return false;
 	}
 
-	override void OnStartClient( ActionData action_data )
-	{
-		if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
-		{
-      SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(action_data.m_MainItem);
-      if (smokable && smokable.IsLit())
-      {
-        smokable.ExtinguishSmokable();
-      }
-		}
-	}
+	// override void OnStartClient( ActionData action_data )
+	// {
+	// 	if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
+	// 	{
+  //     SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.CastTo(action_data.m_MainItem);
+  //     if (smokable && smokable.IsLit())
+  //     {
+  //       smokable.ExtinguishSmokable();
+  //     }
+	// 	}
+	// }
 	
 	override void OnStartServer( ActionData action_data )
 	{
-		if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
+    SRP_Smokable_ColorBase smokable;
+		if ( action_data.m_MainItem  && SRP_Smokable_ColorBase.CastTo(smokable, action_data.m_MainItem))
 		{
-      SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(action_data.m_MainItem);
-      if (smokable && smokable.IsLit())
-      {
-        smokable.SetLit(false);
-      }
+      smokable.ExtinguishSmokable();
 		}
 	}
 };
@@ -168,54 +159,47 @@ class ActionLightSmokableInHands: ActionSingleUseBase
 	{
     m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_LIGHTFLARE;
 	}
-	
 	override void CreateConditionComponents()  
 	{	
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNone;
 	}
-
 	override bool HasTarget()
 	{
 		return false;
 	}
-
 	override string GetText()
 	{
 		return "Ignite";
 	}
-
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-    SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(item);
-		if (smokable && !smokable.IsLit())
-		{
-			return true;
-		}
+    SRP_Smokable_ColorBase smokable;
+    if (SRP_Smokable_ColorBase.CastTo(smokable, item))
+    {
+      return !smokable.IsLit();
+    }
 		return false;
 	}
 	
-	override void OnStartClient( ActionData action_data )
-	{
-		if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
-		{
-      SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(action_data.m_MainItem);
-      if (smokable && !smokable.IsLit())
-      {
-        smokable.LightSmokable();
-      }
-		}
-	}
+	// override void OnStartClient( ActionData action_data )
+	// {
+	// 	if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
+	// 	{
+  //     SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.CastTo(action_data.m_MainItem);
+  //     if (smokable && !smokable.IsLit())
+  //     {
+  //       smokable.LightSmokable();
+  //     }
+	// 	}
+	// }
 	
 	override void OnStartServer( ActionData action_data )
 	{
-		if ( action_data.m_MainItem  &&  action_data.m_MainItem.IsInherited(SRP_Smokable_ColorBase) )
+    SRP_Smokable_ColorBase smokable;
+		if ( action_data.m_MainItem  && SRP_Smokable_ColorBase.CastTo(smokable, action_data.m_MainItem))
 		{
-      SRP_Smokable_ColorBase smokable = SRP_Smokable_ColorBase.Cast(action_data.m_MainItem);
-      if (smokable && !smokable.IsLit())
-      {
-        smokable.SetLit(true);
-      }
+      smokable.LightSmokable();
 		}
 	}
 };
