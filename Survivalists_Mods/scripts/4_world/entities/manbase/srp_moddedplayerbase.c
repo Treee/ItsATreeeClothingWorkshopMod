@@ -131,6 +131,15 @@ modded class PlayerBase
     return ( super.IsSprinting() || m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_SPRINT );				
 	}
 
+  bool HasNavigationItem()
+  {
+    if (GetMapNavigationBehaviour())
+    {
+      return GetMapNavigationBehaviour().PlayerHasNavigationItem();
+    }
+    return false;
+  }
+
   string GetEquippedItems()
   {
     array<EntityAI> itemsArray = new array<EntityAI>;

@@ -1,11 +1,6 @@
 modded class MissionGameplay
 {
-  private ref CompassHeadingMenu m_CompassHeadingMenu;
-	
-  void ~MissionGameplay()
-  {
-    delete m_CompassHeadingMenu;
-  }
+  protected SRPCompassMenu m_CompassUI;
 	
 	override void OnUpdate(float timeslice) 
 	{
@@ -14,11 +9,11 @@ modded class MissionGameplay
     if (GetUApi()) 
     {
       UAInput inp = GetUApi().GetInputByName("UACompassToggle");
-      if (inp && inp.LocalPress()) {
-        if (m_CompassHeadingMenu) {
-            m_CompassHeadingMenu.CompassToggleHeading();
-        } else {
-            m_CompassHeadingMenu = new CompassHeadingMenu(true);
+      if (inp && inp.LocalPress())
+      {
+        if( !m_CompassUI )
+        {
+          m_CompassUI = GetGame().GetUIManager().EnterScriptedMenu( SRP_COMPASS_MENU, null);
         }
       }
     }
