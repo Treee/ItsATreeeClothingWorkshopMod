@@ -19,8 +19,8 @@ class WeedEffectSymptom extends SymptomBase
 	{
     player.m_IsUnderWeedEffect = true;
     // Print("Water Pre reduction: " + player.GetStatWater().Get().ToString() + " Food Pree reduction: " + player.GetStatEnergy().Get().ToString() + " reduced by amount: " + (deltatime * -0.2));
-    player.GetStatWater().Add(deltatime * -0.4);
-    player.GetStatEnergy().Add(deltatime * -0.4);
+    player.GetStatWater().Add(deltatime * -0.3);
+    player.GetStatEnergy().Add(deltatime * -0.3);
 
     if (laughCounter > 25)
     {

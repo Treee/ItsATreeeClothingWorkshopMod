@@ -63,8 +63,8 @@ modded class Environment
 
       if (isBoosted)
       {
-        m_Player.GetStatWater().Add(0.5 * pDelta);
-        m_Player.GetStatEnergy().Add(0.5 * pDelta);    
+        m_Player.GetStatEnergy().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + 0.1));
+        m_Player.GetStatWater().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + 0.1));
       }
       else
       {
