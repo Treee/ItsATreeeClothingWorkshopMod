@@ -20,7 +20,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Smokable ColorBase";
-		descriptionShort="Smokable Drugs";
+		descriptionShort="Converts back into a normal item when going into cargo or the floor; in hands remains clothing.";
     model="Survivalists_Narcotics\gear\food\cigarette_g.p3d";
 		inventorySlot[]=
 		{
@@ -84,7 +84,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Wearable ZWeed Joint";
-		descriptionShort="A joint for smoking...and getting baked";
+		descriptionShort="Converts back into a normal item when going into cargo or the floor; in hands remains clothing.";
     color="ZWeed";
     hiddenSelections[]= {"zbytek"};
     hiddenSelectionsTextures[]=
@@ -96,7 +96,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Wearable ZWeed Joint - Irradiated";
-		descriptionShort="A joint for smoking...and getting baked. Oddly feels warm to the touch.";
+		descriptionShort="Converts back into a normal item when going into cargo or the floor; in hands remains clothing.";
     color="ZWeedIrradiated";
     hiddenSelections[]= {"zbytek"};
     hiddenSelectionsTextures[]=
@@ -110,7 +110,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Wearable Cigarette";
-		descriptionShort="Relieve that stress... ahhhhh";
+		descriptionShort="Converts back into a normal item when going into cargo or the floor; in hands remains clothing.";
     color="Cigarette";
     model="Survivalists_Narcotics\gear\food\cigarette_g.p3d";
     class ClothingTypes
@@ -123,7 +123,7 @@ class CfgVehicles
   {
     scope=2;
     displayName="Wearable Cigar";
-		descriptionShort="A finely wrapped tobacco cigar. A rare luxury.";
+		descriptionShort="Converts back into a normal item when going into cargo or the floor; in hands remains clothing.";
     color="Cigar";
     model="Survivalists_Narcotics\gear\food\cigar_g.p3d";
     class ClothingTypes
@@ -138,7 +138,7 @@ class CfgVehicles
 		scope=2;
     displayName="Wearable Smoking Pipe";
     color="SmokingPipe";
-		descriptionShort="A well preserved smoking pipe of the old world.";
+		descriptionShort="Converts back into a normal item when going into cargo or the floor; in hands remains clothing.";
     model="Survivalists_Narcotics\gear\tools\smokingpipe.p3d";
     class ClothingTypes
 		{
