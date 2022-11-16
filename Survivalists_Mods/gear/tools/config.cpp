@@ -10,7 +10,8 @@ class CfgPatches
 			"DZ_Data",
 			"DZ_Gear_Tools",
       "DZ_Weapons_Melee_Blade", // hatchet
-      "DZ_Gear_Navigation", // admin compass
+      "DZ_Gear_Navigation",
+      "Mass_Textures", // removing admin compass
       "Survivalists_Mods"
 		};
 	};
