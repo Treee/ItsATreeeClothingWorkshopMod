@@ -59,7 +59,7 @@ modded class IngameHud
   override void Update( float timeslice )
 	{
 		super.Update( timeslice );		
-		if( debouncer > 0.2 && GetGame() && GetGame().GetInput() && GetGame().GetInput().LocalPress("UACompassToggle", false) )
+		if( debouncer > 0.15 && GetGame() && GetGame().GetInput() && GetGame().GetInput().LocalPress("UACompassToggle", false) )
 		{
 			CompassToggleHeading();
       debouncer = 0.0;
