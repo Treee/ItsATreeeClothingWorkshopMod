@@ -50,6 +50,21 @@ class CfgVehicles
 			"Survivalists_Mods\structures\signs\data\stickers_stag_ca.paa",
 		};
 	};
+  class Land_srp_sticker_1024_locknsons: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\srp_sticker_1024.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "back"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\stickers_locknsons_ca.paa",
+			"Survivalists_Mods\structures\signs\data\stickers_locknsons_ca.paa",
+		};
+	};
 
   class Land_srp_billboard_largeground_sign1: HouseNoDestruct
 	{
