@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
+      "Mass_Textures",
       "Survivalists_Mods"
 		};
 	};
@@ -46,6 +47,35 @@ class CfgVehicles
 		};
   };  
 
+  //======================================= MODDED MODS
+  class MassLargePlateCarrierPouches: PlateCarrierPouches
+	{
+		descriptionShort="Large Plate Carrier Pouches. Yes. this fits on a normal platecarrier. 'Mass' OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
+	};
+	class MassLargePlateCarrierPouches_Black: MassLargePlateCarrierPouches
+	{
+		descriptionShort="Large Plate Carrier Pouches. Yes. this fits on a normal platecarrier. 'Mass' OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
+	};
+	class MassLargePlateCarrierPouches_Tan: MassLargePlateCarrierPouches
+	{
+		descriptionShort="Large Plate Carrier Pouches. Yes. this fits on a normal platecarrier. 'Mass' OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
+	};
+	class MassPlateCarrierPouches_Black: PlateCarrierPouches
+	{
+		descriptionShort="Black Plate Carrier Pouches To go with Mass's Black Plate Carrier OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
+	};
+	class MassPlateCarrierPouches_PartizanM: MassPlateCarrierPouches_Black
+	{
+		descriptionShort="PartizanM Plate Carrier Pouches To go with Mass's PartizanM Plate Carrier OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
+	};
+	class MassPlateCarrierPouches_Winter: MassPlateCarrierPouches_Black
+	{
+		descriptionShort="Winter Plate Carrier Pouches To go with Mass's Winter Plate Carrier OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
+	};
+	class MassPlateCarrierPouches_ODG: MassPlateCarrierPouches_Black
+	{
+		descriptionShort="Olive Drab Green Plate Carrier Pouches To go with Mass's Olive Drab Green Plate Carrier OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
+	};
   //--------------------------------------- Custom Stuff  
   class SRP_Fridge_Kit: SRP_KitBase //new
 	{
