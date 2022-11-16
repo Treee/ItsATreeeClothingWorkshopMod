@@ -701,32 +701,32 @@ class Craft_SRP_MetalBucket extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = 5;//-1 = disable check
+		m_MinQuantityIngredient[0] = 12;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[1] = -1;//-1 = disable check
+		m_MinQuantityIngredient[1] = 12;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_ForgeIngotPlate_Iron");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_Mining_StoneChunk_Clay");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = -5;// 0 = do nothing
+		m_IngredientAddQuantity[0] = -12;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
+		InsertIngredient(1,"SRP_Mining_StoneChunk_Clay");//you can insert multiple ingredients this way
 		
-		m_IngredientAddHealth[1] = -10;// 0 = do nothing
+		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
+		m_IngredientAddQuantity[1] = -12;// 0 = do nothing
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------

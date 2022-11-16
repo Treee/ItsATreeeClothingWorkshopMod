@@ -15,21 +15,6 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
     m_LightDistance = 10;
   }
 
-  override protected void AddDamageToItemByFire( ItemBase item, bool can_be_ruined )
-	{
-    if (item && item.IsSmeltable() && item.GetHealthLevel() == GameConstants.STATE_BADLY_DAMAGED)
-    {
-      item.Delete();
-      ItemBase new_item = ItemBase.Cast(GetInventory().CreateInInventory("SRP_Mining_RawOre_Iron"));
-      int randomQuantity = Math.RandomIntInclusive(0,2);
-      if (randomQuantity > 0)
-      {
-        new_item.SetQuantity(randomQuantity);
-      }
-    }
-		super.AddDamageToItemByFire(item, can_be_ruined);
-	}
-
   override protected void SpendFireConsumable( float amount )
 	{
     ItemBase coal;
@@ -274,9 +259,23 @@ class SRP_StoneForgeWorkbench extends FireplaceBase
 	}
   
   protected void AddDamageToItemByFireEx(ItemBase item, bool can_be_ruined, bool pAttachment)
-  {
-    if (item && item.IsForgeHardened())
+  {    
+    if (!item)
       return;
+    
+    if (item.IsForgeHardened())
+      return;
+    
+    if (item.IsSmeltable() && item.GetHealthLevel() == GameConstants.STATE_BADLY_DAMAGED)
+    {      
+      ItemBase new_item = ItemBase.Cast(GetInventory().CreateInInventory(item.GetSmeltableOutput()));
+      int randomQuantity = item.GetSmeltableYield();
+      if (randomQuantity > 0)
+      {
+        new_item.SetQuantity(randomQuantity);
+      }
+      item.Delete();
+    }
     super.AddDamageToItemByFireEx(item, can_be_ruined, pAttachment);
   }
 

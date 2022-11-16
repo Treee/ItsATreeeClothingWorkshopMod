@@ -902,6 +902,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Windmill (game ready)" (https://skfb.ly/osGzx) by LamedeFeu is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+- "A Big Igloo" (https://skfb.ly/6SLtE) by SangeetBlaze is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Simple Igloo" (https://skfb.ly/6SH8F) by SangeetBlaze is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Franken-Armor" (https://skfb.ly/6VDPQ) by Liam Moffitt is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

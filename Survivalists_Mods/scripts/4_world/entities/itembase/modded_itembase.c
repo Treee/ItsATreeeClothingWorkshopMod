@@ -276,11 +276,25 @@ modded class ItemBase
   }
   void HandleHeatTransformation()
   {
-    Print("Item is max heat and can transform: " + GetType());    
+    // Print("Item is max heat and can transform: " + GetType());    
   }
   bool IsHotEnough(int expectedTemperature)
   {
     return (GetTemperature() >= expectedTemperature);
+  }
+  TStringArray GetSmeltableOptions()
+  {
+    return {};
+  }
+  string GetSmeltableOutput(string forceOverride="")
+  {    
+    if (forceOverride != "")
+      return forceOverride;
+    return GetSmeltableOptions().GetRandomElement();
+  }
+  int GetSmeltableYield()
+  {
+    return 0;
   }
 //========================================= ELECTRONICS BASED CRAFTABLES
   string GetColor()

@@ -4,8 +4,7 @@ class SRP_ForgeIngotPlate_ColorBase extends ItemBase
 	{
 		// return true used on selected items that have a temperature effect
 		return true;
-	}
-
+	}  
   override void OnInventoryEnter(Man player)
   {
     super.OnInventoryEnter(player);
@@ -37,6 +36,26 @@ class SRP_ForgeIngotPlate_ColorBase extends ItemBase
         player_PB.GetModifiersManager().ActivateModifier( SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING );
       }
     }
+  }
+  override bool IsSmeltable()
+  {
+    return true;
+  }
+  // 2 ingots = 1-5 plates 10 in a stack
+  // best case a stack gives 2 ingots
+  override string GetSmeltableOutput(string forceOverride="")
+  {    
+    return ConvertIntoIngotString();
+  }
+
+  override int GetSmeltableYield()
+  {
+    return (GetQuantity() / 2.2);
+  }
+
+  string ConvertIntoIngotString()
+  {
+    return string.Format("SRP_ForgeIngot_%1", ConfigGetString("color"));
   }
 };
 class SRP_ForgeIngotPlate_Copper extends SRP_ForgeIngotPlate_ColorBase{};
@@ -88,6 +107,24 @@ class SRP_ForgeIngotRod_ColorBase extends ItemBase
         player_PB.GetModifiersManager().ActivateModifier( SRP_MasonMetallurgy_eModifiers.MDF_SRPBURNING );
       }
     }
+  }
+  override string GetSmeltableOutput(string forceOverride="")
+  {    
+    return ConvertIntoIngotString();
+  }
+  override bool IsSmeltable()
+  {
+    return true;
+  }
+  // 2 ingots = 1-2 rods
+  override int GetSmeltableYield()
+  {
+    return GetQuantity();
+  }
+
+  string ConvertIntoIngotString()
+  {
+    return string.Format("SRP_ForgeIngot_%1", ConfigGetString("color"));
   }
 };
 class SRP_ForgeIngotRod_Copper extends SRP_ForgeIngotRod_ColorBase{};
