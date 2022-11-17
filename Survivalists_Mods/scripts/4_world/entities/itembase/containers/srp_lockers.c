@@ -110,6 +110,7 @@ class SRP_LockerMilitary_Colorbase extends SRP_Openable_Container
 };
 
 //======================= SINGLE
+class SRP_LockerSingle_Pelt extends SRP_LockerSingle_Colorbase{};
 class SRP_LockerSingle_Black extends SRP_LockerSingle_Colorbase{};
 class SRP_LockerSingle_Blue extends SRP_LockerSingle_Colorbase{};
 class SRP_LockerSingle_Brown extends SRP_LockerSingle_Colorbase{};

@@ -77,6 +77,41 @@ class CfgVehicles
 		descriptionShort="Olive Drab Green Plate Carrier Pouches To go with Mass's Olive Drab Green Plate Carrier OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
 	};
   //--------------------------------------- Custom Stuff  
+  class SRP_RainCollector: Container_Base
+	{
+		scope=2;
+		displayName="Rain Collector";
+		descriptionShort="Used to collect water when it rains";
+		model="Survivalists_Mods\gear\containers\SRP_RainCollector.p3d";
+		attachments[] =
+		{
+			"Material_MetalSheets"
+		};
+		itemSize[]={10,15};
+		itemBehaviour=2;
+		stackedUnit="ml";
+		physLayer="item_large";
+		quantityBar=1;
+		rotationFlags=2;
+		heavyItem=1;
+		weight=10000;
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		varLiquidTypeInit=512;
+		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256) -32768";
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=200000;
+		absorbency=15.0;
+		class Cargo
+		{
+			itemsCargoSize[]={0,0};
+			openable=1;
+			allowOwnedCargoManipulation=0;
+		};
+	};
+
+
   class SRP_Fridge_Kit: SRP_KitBase //new
 	{
 		scope=2;
@@ -4051,6 +4086,63 @@ class CfgVehicles
 				initOpened=0.69999999;
 			};
     };
+	};
+
+  class SRP_LockerSingle_Pelt_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Locker Kit - Single - Pelt";
+    descriptionShort="A kit that holds only pelts in a locker";
+  };
+
+  class SRP_LockerSingle_Pelt: SRP_LockerSingle_Colorbase
+	{
+		scope=2;
+		displayName="Storage Locker - Pelts";
+		descriptionShort="A storage container only for pelts.";
+    color="pelt";
+    itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+			"AnimalPelt1",
+			"AnimalPelt2",
+			"AnimalPelt3",
+			"AnimalPelt4",
+			"AnimalPelt5",
+			"AnimalPelt6",
+			"AnimalPelt7",
+			"AnimalPelt8",
+			"AnimalPelt9",
+			"AnimalPelt10",
+    };
+    class Cargo
+		{
+			itemsCargoSize[]={0,0};
+			openable=0;
+			allowOwnedCargoManipulation=0;
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Pelts
+			{
+				name="Pelts";
+				description="";
+				attachmentSlots[]=
+				{
+          "AnimalPelt1",
+          "AnimalPelt2",
+          "AnimalPelt3",
+          "AnimalPelt4",
+          "AnimalPelt5",
+          "AnimalPelt6",
+          "AnimalPelt7",
+          "AnimalPelt8",
+          "AnimalPelt9",
+          "AnimalPelt10",
+				};
+				icon="set:dayz_inventory image:animal_pelt";
+			};
+		};
 	};
 
   class SRP_LockerSingle_Black_Kit: SRP_KitBase

@@ -237,6 +237,7 @@ class SRP_Gravestone_19Open_Kit extends SRP_KitBase{};
 class SRP_StonePile_Small_Kit extends SRP_KitBase{};
 class SRP_StonePile_Large_Kit extends SRP_KitBase{};
 
+class SRP_LockerSingle_Pelt_Kit extends SRP_KitBase{};
 class SRP_LockerSingle_Black_Kit extends SRP_KitBase{};
 class SRP_LockerSingle_Blue_Kit extends SRP_KitBase{};
 class SRP_LockerSingle_Brown_Kit extends SRP_KitBase{};
