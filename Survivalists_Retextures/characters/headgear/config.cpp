@@ -47,6 +47,7 @@ class CfgVehicles
   class BaseballCap_MilitaryPatrolTan;
   class BaseballCap_MilitaryPatrolTan_Backwards;
   class SRP_EarProtection_ColorBase;
+  class SRP_FrakenArmor_Helmet_ColorBase;
 
 
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
@@ -1704,6 +1705,19 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\headgear\data\Cowboy_purple_CO.paa"
+		};
+	};
+
+  class SRP_FrakenArmor_Helmet_Basic: SRP_FrakenArmor_Helmet_ColorBase  // new
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_frakenarmor_helmet_co.paa"
 		};
 	};
 };

@@ -48,7 +48,8 @@ class CfgVehicles
   class SRP_Tac_Vest_ColorBase;
   class SRP_Tac_Tec_Vest_ColorBase;
   class SRP_Small_Bottle_ColorBase;
-
+  class SRP_FrakenArmor_Vest_ColorBase;
+  
   class DUB_Poncho;
 
   class PlateCarrierVest_ThirstyDevil: PlateCarrierVest
@@ -2009,4 +2010,17 @@ class CfgVehicles
       "Survivalists_Retextures\characters\vests\data\tacticalbelt_Tan_co.paa"
     };    
   };
+
+  class SRP_FrakenArmor_Vest_Basic: SRP_FrakenArmor_Vest_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\srp_frakenarmor_chest_co.paa"
+		};
+	};
 };

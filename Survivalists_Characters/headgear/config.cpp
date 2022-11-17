@@ -579,6 +579,51 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_FrakenArmor_Helmet_ColorBase: BeanieHat_ColorBase  // new
+	{
+		scope=0;
+    displayName="Fraken Armor - Helmet";
+    descriptionShort="A gruesome mask made from human leather.";
+    model="Survivalists_Characters\headgear\srp_frakenarmor_helmet_g.p3d";
+    rotationFlags="64";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\headgear\data\srp_turkey_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Characters\headgear\data\srp_frakenarmor_helmet.rvmat"
+		};
+    rootClassName="SRP_FrakenArmor_Mask";
+    colorVariants[]={};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\srp_frakenarmor_helmet_m.p3d";
+			female="Survivalists_Characters\headgear\srp_frakenarmor_helmet_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=160;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\headgear\data\srp_frakenarmor_helmet.rvmat"}},
+            {0.69999999,	{	"Survivalists_Characters\headgear\data\srp_frakenarmor_helmet.rvmat"}},
+            {0.5,	{	"Survivalists_Characters\headgear\data\srp_frakenarmor_helmet.rvmat"}},
+            {0.30000001,	{	"Survivalists_Characters\headgear\data\srp_frakenarmor_helmet.rvmat"}},
+            {0.0,	{	"Survivalists_Characters\headgear\data\srp_frakenarmor_helmet.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 
   class SRP_MinerHelmet: Headtorch_ColorBase
   {

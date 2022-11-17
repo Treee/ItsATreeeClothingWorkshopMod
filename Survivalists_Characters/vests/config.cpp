@@ -282,6 +282,24 @@ class CfgVehicles
       "Material_Shelter_Fabric",
 		};
 	};
+  class SRP_SimpleLeatherSkinArmor_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Simple Leather Skin Armor Kit";
+		descriptionShort="A Leather Skin Armor Kit - Finish with a needle and thread.";
+    attachments[]=
+		{
+      "Material_MetalWire",
+      "Material_Shelter_Rope",
+      "Material_FPole_Rope",
+      "Material_Shelter_Fabric",
+      "AnimalPelt1",
+			"AnimalPelt2",
+			"AnimalPelt3",
+			"AnimalPelt4",
+			"AnimalPelt5",
+		};
+	};
 
   class SRP_Brewstershield: PlateCarrierVest
 	{
@@ -387,7 +405,7 @@ class CfgVehicles
 				};
 			};
 		};
-	};
+	};  
 
   class SRP_Bandoiler: Clothing
 	{	
@@ -2218,6 +2236,112 @@ class CfgVehicles
 				{
 					soundset="SmershVest_drop_SoundSet";
 					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_FrakenArmor_Vest_ColorBase: PlateCarrierVest
+	{
+		scope=0;
+		displayName="Fraken Armor -  Vest";
+		descriptionShort="A gruesome vest made from human leather.";
+		model="Survivalists_Characters\vests\srp_frakenarmor_vest_g.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\vests\data\srp_frakenarmor_chest_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Characters\vests\data\srp_frakenarmor_chest.rvmat"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\vests\srp_frakenarmor_vest_m.p3d";
+			female="Survivalists_Characters\vests\srp_frakenarmor_vest_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=350;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\vests\data\srp_frakenarmor_chest.rvmat"}},
+            {0.69999999,	{	"Survivalists_Characters\vests\data\srp_frakenarmor_chest.rvmat"}},
+            {0.5,	{	"Survivalists_Characters\vests\data\srp_frakenarmor_chest.rvmat"}},
+            {0.30000001,	{	"Survivalists_Characters\vests\data\srp_frakenarmor_chest.rvmat"}},
+            {0.0,	{	"Survivalists_Characters\vests\data\srp_frakenarmor_chest.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
 				};
 			};
 		};
