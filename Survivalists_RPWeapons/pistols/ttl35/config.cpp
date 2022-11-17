@@ -11,14 +11,14 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons",
+			"ttl35",
 		};
 	};
 };
 class Mode_Safe;
 class Mode_Single;
 class OpticsInfoRifle;
-class cfgWeapons
+class CfgWeapons
 {
 	class CZ75;
 	class ttl35: CZ75

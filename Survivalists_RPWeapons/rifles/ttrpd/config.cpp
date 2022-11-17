@@ -11,7 +11,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"ttrpd"
 		};
 	};
 };
@@ -42,15 +42,15 @@ class cfgWeapons
 		chamberSize=1;
 		itemSize[]={9,4};
 	};
-};
-class OpticsInfo: OpticsInfoRifle
-{
-	memoryPointCamera="eye";
-	modelOptics="-";
-	distanceZoomMin=100;
-	distanceZoomMax=100;
-	discreteDistance[]={100,200,300,400,500,600,700,800,900,1000};
-	discreteDistanceInitIndex=0;
+  class OpticsInfo: OpticsInfoRifle
+  {
+    memoryPointCamera="eye";
+    modelOptics="-";
+    distanceZoomMin=100;
+    distanceZoomMax=100;
+    discreteDistance[]={100,200,300,400,500,600,700,800,900,1000};
+    discreteDistanceInitIndex=0;
+  };
 };
 class CfgMagazines
 {

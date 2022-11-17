@@ -11,14 +11,14 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"tec9"
 		};
 	};
 };
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_FullAuto;
-class cfgWeapons
+class CfgWeapons
 {
 	class FNX45;
 	class tec9: FNX45
@@ -32,7 +32,6 @@ class cfgWeapons
 		magazines[]=
 		{
 			"Mag_UMP_25Rnd",
-
 		};
 		spawnDamageRange[]={0,0.60000002};
 	};

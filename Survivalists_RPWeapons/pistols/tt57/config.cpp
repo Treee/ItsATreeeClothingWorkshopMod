@@ -11,13 +11,14 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons",
+			"tt57tan",
+      "tt57blk"
 		};
 	};
 };
 class Mode_Safe;
 class Mode_SemiAuto;
-class cfgWeapons
+class CfgWeapons
 {
 	class Glock19;
 	class tt57tan: Glock19

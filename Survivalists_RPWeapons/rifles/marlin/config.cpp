@@ -11,14 +11,14 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"marlin"
 		};
 	};
 };
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_FullAuto;
-class cfgWeapons
+class CfgWeapons
 {
 	class Repeater;
 	class marlin: Repeater

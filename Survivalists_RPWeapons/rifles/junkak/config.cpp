@@ -11,29 +11,42 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"junkak"
 		};
 	};
 };
 class Mode_Safe;
 class Mode_SemiAuto;
 class OpticsInfoRifle;
-class cfgWeapons
+class CfgWeapons
 {
-	class AKM;
-	class junkak: AKM
+	class AKM_Base;
+	class junkak: AKM_Base
 	{
 		scope=2;
 		displayName="Junker AKM";
 		descriptionShort="Home-made junker weapon. Seems to be made out of old materials, yet it still... works. Chambered in 7.62x39mm.";
-		model="Survivalists_RPWeapons\rifles\junkak\junkak.p3d";
+		model="Survivalists_RPWeapons\rifles\junkak\tt_junkak.p3d";
+		itemSize[]={7,3};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\junkak\data\junkak_co.paa"
+		};
 		attachments[]=
 		{
-			"suppressorImpro",
-			"weaponOpticsHunting",
-			"weaponOptics"
+			"weaponButtstockAK",
+			"weaponHandguardAK",
+			"weaponOpticsAK",
+			"AKRISAdapter",
+			"weaponOptics",
+			"weaponFlashlight",
+			"weaponBayonetAK",
+			"weaponWrap"
 		};
-		itemSize[]={7,3};
 		chamberableFrom[]=
 		{
 			"Ammo_762x39",
@@ -43,9 +56,31 @@ class cfgWeapons
 		{
 			"Mag_AKM_30Rnd",
 			"Mag_AKM_Palm30Rnd",
-			"Mag_AKM_Drum75Rnd"
+			"Mag_AKM_Palm30Rnd_Black",
+			"Mag_AKM_Palm30Rnd_Green",
+			"Mag_AKM_Drum75Rnd",
+			"Mag_AKM_Drum75Rnd_Green",
+			"Mag_AKM_Drum75Rnd_Black"
 		};
 		spawnDamageRange[]={0,0.60000002};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\junkak\data\base.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\junkak\data\base.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\junkak\data\base.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\junkak\data\base.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\junkak\data\base.rvmat"}}
+					};
+				};
+			};
+		};
 		modes[]={"SemiAuto"};
 	};
 };

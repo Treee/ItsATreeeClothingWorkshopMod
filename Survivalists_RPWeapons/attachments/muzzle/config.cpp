@@ -105,6 +105,7 @@ class CfgVehicles
 		};
 	};
   
+  //===============================================Suppressors
   class SRP_PistolSuppressor_Golden: PistolSuppressor
 	{
     scope=2;
@@ -138,5 +139,182 @@ class CfgVehicles
 				};
 			};
 		};
-  };
+  };  
+	class STG_PBS5_Suppressor: AK_Suppressor
+	{
+		scope=2;
+		displayName="PBS5 Suppressor";
+		descriptionShort="A S.T.A.G. PBS5 Suppressor";
+		model="Survivalists_RPWeapons\attachments\muzzle\STG_BPS5_Suppressor.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=100;
+		itemSize[]={3,1};
+		itemModelLength=0.23;
+		lootCategory="Attachments";
+		inventorySlot[]=
+		{
+			"weaponMuzzleAK"
+		};
+		simulation="ItemSuppressor";
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		noiseShootModifier=-0.89999998;
+		recoilModifier[]={0.89999998,0.89999998,0.89999998};
+		swayModifier[]={1.3,1.3,1.3};
+		selectionFireAnim="zasleh";
+		soundIndex=1;
+		muzzlePos="usti hlavne";
+		class Particles
+		{
+			class OnFire
+			{
+				class MuzzleFlashAssault
+				{
+					overrideParticle="weapon_shot_akm_02";
+					onlyWithinHealthLabel[]={0,3};
+				};
+			};
+			class OnOverheating
+			{
+				shotsToStartOverheating=2;
+				maxOverheatingValue=20;
+				overheatingDecayInterval=1;
+				class SmokingBarrel
+				{
+					overrideParticle="smoking_barrel_small";
+					onlyWithinRainLimits[]={0,0.2};
+				};
+				class SmokingBarrelHotSteamSmall
+				{
+					overrideParticle="smoking_barrel_steam_small";
+					positionOffset[]={0,0.1,0};
+					onlyWithinRainLimits[]={0.2,1};
+				};
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\muzzle\data\STG_PBS5_Suppressor.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\muzzle\data\STG_PBS5_Suppressor.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\muzzle\data\STG_PBS5_Suppressor.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\muzzle\data\STG_PBS5_Suppressor.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\muzzle\data\STG_PBS5_Suppressor.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class ESP_Wrapped_Suppressor: M4_Suppressor
+	{
+		scope=2;
+		displayName="Wrapped Suppressor";
+		descriptionShort="A suppressor wrapped in rags";
+		model="Survivalists_RPWeapons\attachments\muzzle\ESP_Wrapped_Suppressor.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=73;
+		itemSize[]={3,1};
+		itemModelLength=0.148;
+		inventorySlot[]=
+		{
+			"weaponMuzzleM4",
+			"weaponMuzzleAK"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\muzzle\data\ESP_Wrapped_Suppressor_CO.paa"
+		};
+		simulation="ItemSuppressor";
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		noiseShootModifier=-0.89999998;
+		recoilModifier[]={0.89999998,0.89999998,0.89999998};
+		swayModifier[]={1.3,1.3,1.3};
+		selectionFireAnim="zasleh";
+		soundIndex=1;
+		muzzlePos="usti hlavne";
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\muzzle\data\ESP_Wrapped_Suppressor.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\muzzle\data\ESP_Wrapped_Suppressor.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\muzzle\data\ESP_Wrapped_Suppressor.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\muzzle\data\ESP_Wrapped_Suppressor.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\muzzle\data\ESP_Wrapped_Suppressor.rvmat"}}
+					};
+				};
+			};
+		};
+		class Particles
+		{
+			class OnFire
+			{
+				class MuzzleFlash
+				{
+					overrideParticle="weapon_shot_fnx_02";
+					onlyWithinHealthLabel[]={0,3};
+				};
+			};
+			class OnOverheating
+			{
+				shotsToStartOverheating=3;
+				maxOverheatingValue=10;
+				overheatingDecayInterval=1;
+				class SmokeTrail
+				{
+					overrideParticle="smoking_barrel_small";
+					onlyWithinRainLimits[]={0,0.2};
+				};
+				class SmokingBarrelHotSteamSmall
+				{
+					overrideParticle="smoking_barrel_steam_small";
+					positionOffset[]={0,0.1,0};
+					onlyWithinOverheatLimits[]={0,1};
+					onlyWithinRainLimits[]={0.2,1};
+				};
+			};
+		};
+	};
+	class ESP_Wrapped_Suppressor_Green: ESP_Wrapped_Suppressor
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\muzzle\data\ESP_Wrapped_Suppressor_Green_CO.paa"
+		};
+	};
+	class ESP_Wrapped_Suppressor_Black: ESP_Wrapped_Suppressor
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\muzzle\data\ESP_Wrapped_Suppressor_Black_CO.paa"
+		};
+	};
 };

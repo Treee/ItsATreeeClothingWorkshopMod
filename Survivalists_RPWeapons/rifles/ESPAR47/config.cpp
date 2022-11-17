@@ -20,7 +20,7 @@ class Mode_Burst;
 class Mode_semiAuto;
 class Mode_FullAuto;
 
-class cfgWeapons
+class CfgWeapons
 {
 	class M4A1;
 	class ESPAR47: M4A1
@@ -69,8 +69,7 @@ class cfgWeapons
 			"Mag_AKM_Palm30Rnd_Green",
 			"Mag_AKM_Drum75Rnd",
 			"Mag_AKM_Drum75Rnd_Green",
-			"Mag_AKM_Drum75Rnd_Black",
-			"Mag_AKM_Drum_TEST"
+			"Mag_AKM_Drum75Rnd_Black"
 		};
 		magazineSwitchTime=0.5;
 		ejectType=1;

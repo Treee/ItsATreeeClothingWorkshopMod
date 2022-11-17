@@ -11,7 +11,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"ttmp5"
 		};
 	};
 };
@@ -25,8 +25,8 @@ class cfgWeapons
 	class ttmp5: MP5K
 	{
 		scope=2;
-		displayName="MP5";
-		descriptionShort="Espen Industries. The MP5 is a submachine gun produced exclusively by H&K, which features a lightweight polymer body making it easy to wield over longer periods of time. Chambered in 9x19mm. Inspected by Master Gunsmith: Turko";
+		displayName="ESP-M5k";
+		descriptionShort="The ESP-M5k is a submachine gun produced exclusively by Espen Industries, which features a lightweight polymer body making it easy to wield over longer periods of time. Chambered in 9x19mm. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\smgs\ttmp5\ttmp5.p3d";
 		attachments[]={"weaponOptics","pistolMuzzle"};
 		chamberableFrom[]={"Ammo_9x19"};

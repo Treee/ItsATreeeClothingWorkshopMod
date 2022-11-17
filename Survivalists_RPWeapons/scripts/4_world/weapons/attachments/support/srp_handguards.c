@@ -20,5 +20,3 @@ class ESP_RIS_Erg_HndGrd_Long_Black extends ESP_RIS_Erg_HndGrd_Long_ColorBase{};
 class ESP_M16_HndGrd_ColorBase extends SRP_Handguard_Base{};
 class ESP_M16_HndGrd_Wood extends ESP_M16_HndGrd_ColorBase{};
 class ESP_M16_HndGrd_Black extends ESP_M16_HndGrd_ColorBase{};
-
-class ESP_P90_UpgradeKit extends SRP_Handguard_Base{};

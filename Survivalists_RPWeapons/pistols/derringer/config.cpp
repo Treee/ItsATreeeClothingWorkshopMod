@@ -7,17 +7,16 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Weapons_Firearms",		
-			"Survivalists_Weapons"
+			"DZ_Weapons_Firearms",
     };
 	};
 };
 class Mode_Safe;
 class Mode_Single;
-class cfgWeapons
+class CfgWeapons
 {
 	class flaregun;
-	class derringer: flaregun
+	class tt_derringer: flaregun
 	{
 		scope=2;
 		displayName="Derringer .22";

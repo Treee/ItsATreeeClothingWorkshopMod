@@ -7,7 +7,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]={
       "DZ_Pistols",
-      "Survivalists_Weapons"
+      "kingcobra"
     };
 		magazines[]={};
 		ammo[]={};
@@ -15,7 +15,7 @@ class CfgPatches
 };
 class Mode_Safe;
 class Mode_SemiAuto;
-class cfgWeapons
+class CfgWeapons
 {
 	class Magnum;
 	class kingcobra: Magnum

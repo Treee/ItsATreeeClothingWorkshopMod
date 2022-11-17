@@ -11,23 +11,30 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"ttbar"
 		};
 	};
 };
 class Mode_Safe;
 class Mode_SemiAuto;
 class OpticsInfoRifle;
-class cfgWeapons
+class CfgWeapons
 {
 	class Ruger1022;
   class ttbar: Ruger1022
 	{
 		scope=2;
-		displayName="ESP-M1918A2";
-		descriptionShort="The ESP-M1918A2 is a family of US automatic rifles and machineguns used by the United States and the numerous other countries during the 20th century. Chambered in .308, takes LAR magazines.";
+		displayName="ESP-1918A2";
+		descriptionShort="The ESP-M1918A2 is a family of US automatic rifles and machineguns used by the United States and the numerous other countries during the 20th century. Chambered in .308 it was recently adapted to takes LAR magazines.";
 		model="Survivalists_RPWeapons\rifles\ttbar\ttbar.p3d";
-		attachments[]={"SRP_StockPouch","RISAdapter","weaponOpticsHunting","weaponOptics"};
+		attachments[]=
+		{
+			"SRP_StockPouch",
+			"RISAdapter",
+			"weaponOpticsHunting",
+			"weaponOptics",
+			"weaponWrap"
+		};
 		itemSize[]={8,3};
 		chamberableFrom[]=
 		{
@@ -41,6 +48,24 @@ class cfgWeapons
 		recoilModifier[]={2,2.5,3};
 		swayModifier[]={2,2,1.1};
 		spawnDamageRange[]={0,0.60000002};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\ttbar\data\poly.rvmat","Survivalists_RPWeapons\rifles\ttbar\data\wood.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\ttbar\data\poly.rvmat","Survivalists_RPWeapons\rifles\ttbar\data\wood.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\ttbar\data\poly.rvmat","Survivalists_RPWeapons\rifles\ttbar\data\wood.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\ttbar\data\poly.rvmat","Survivalists_RPWeapons\rifles\ttbar\data\wood.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\ttbar\data\poly.rvmat","Survivalists_RPWeapons\rifles\ttbar\data\wood.rvmat"}}
+					};
+				};
+			};
+		};
 		modes[]=
 		{
 			"SemiAuto"	

@@ -5,7 +5,7 @@ class CfgPatches
 		units[]={"ttmakarov"};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={"DZ_Pistols","Survivalists_Weapons"};
+		requiredAddons[]={"DZ_Pistols","ttmakarov"};
 		magazines[]={"Mag_IJ70_8Rnd"};
 		ammo[]={};
 	};

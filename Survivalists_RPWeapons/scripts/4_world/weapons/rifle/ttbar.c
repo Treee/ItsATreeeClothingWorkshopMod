@@ -1,5 +1,16 @@
 class ttbar extends RifleBoltLock_Base
 {
+  override void OnDebugSpawn()
+	{
+		GameInventory inventory = GetInventory();
+
+		inventory.CreateInInventory( "ESP_Spectre" );
+		inventory.CreateInInventory( "Battery9V" );
+		inventory.CreateInInventory( "SRP_ButtstockPouch_Purple" );
+		inventory.CreateInInventory( "ESP_RIS_Adapter" );
+    SpawnAttachedMagazine("Mag_FAL_20Rnd");
+	}
+
 	override bool CanReceiveAttachment( EntityAI attachment, int slotId )
 	{
 		if(!IsInitialized() && !attachment.IsInitialized())

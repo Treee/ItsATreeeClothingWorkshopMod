@@ -11,14 +11,14 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"higgins"
 		};
 	};
 };
 class Mode_Safe;
 class Mode_Single;
 class OpticsInfoRifle;
-class cfgWeapons
+class CfgWeapons
 {
 	class Mosin9130;
 	class higgins: Mosin9130

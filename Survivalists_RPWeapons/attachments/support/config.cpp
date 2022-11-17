@@ -1,13 +1,13 @@
 class CfgPatches
 {
-	class Survivalists_RPWeapons_Attachments_Supports
+	class Survivalists_RPWeapons_Attachments_supports
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-      "DZ_Weapons_Supports",
+      "DZ_Weapons_supports",
 			"Survivalists_Weapons",
       "Survivalists_RPWeapons_Crafting"
 		};
@@ -19,6 +19,9 @@ class CfgVehicles
   class M4_PlasticHndgrd;
 	class M4_OEBttstck;
   class Inventory_Base;
+  class AK74_Hndgrd;
+	class AK_WoodBttstck;
+
   class SRP_Weapon_KitBase;
 //===================================================== CONTAINERS
 	class SRP_ButtstockPouch_ColorBase: Inventory_Base
@@ -1014,6 +1017,233 @@ class CfgVehicles
 			};
 		};
 	};
+  class ESP_SCAR_URGI_HNDGRD_Colorbase: M4_PlasticHndgrd
+	{
+		scope=0;
+		displayName="ESP-SCR Erg Handghuard";
+		descriptionShort="The ESP-SCR Erg Handguard was designed with comfort in mind. Featuring an M-lock mounting system this handguard is easier to grip and made from lightweight materials.";
+		model="Survivalists_RPWeapons\attachments\support\ESP_SCAR_Urgi_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"ScarHndGrd"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"Steel",
+			"Metal"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class ESP_SCAR_RIS_HNDGRD_Colorbase: M4_PlasticHndgrd
+	{
+		scope=0;
+		displayName="ESP-SCR RIS Handghuard";
+		descriptionShort="The ESP-SCR RIS Handghuard is a Rail Intergration system which allows the user to mount a variety of attachments to the end of the ESP-SCR.";
+		model="Survivalists_RPWeapons\attachments\support\ESP_SCAR_RIS_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		hasRailFunctionality=1;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"ScarHndGrd"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class STG_AK_Poli_HNDGRD_Colorbase: AK74_Hndgrd
+	{
+		scope=0;
+		displayName="S.T.A.G. Poli Handguard";
+		descriptionShort="The S.T.A.G. Poli is a polymer made handguard designed for most AK platforms. It is much lighter than it's wooden counterpart.";
+		model="Survivalists_RPWeapons\attachments\support\STG_AK_Poli_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardAK"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ttak458poli_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{
+						{1,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}},
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}},
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}},
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}},
+						{0,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class STG_AK_Wood_HNDGRD_Colorbase: AK74_Hndgrd
+	{
+		scope=0;
+		displayName="S.T.A.G. Wood Handguard";
+		descriptionShort="The S.T.A.G. Wood Handguard is much longer than the typical wooden handguard, allowing the user to comfortably hold their weapon further down the barrel.";
+		model="Survivalists_RPWeapons\attachments\support\STG_AK_Wood_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardAK"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttak458\data\ttak458_Stock_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\ttak458\data\Base_Stock.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\ttak458\data\Base_Stock.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\ttak458\data\Base_Stock.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\ttak458\data\Base_Stock.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\ttak458\data\Base_Stock.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class STG_AK_Junk_HNDGRD_Colorbase: AK74_Hndgrd
+	{
+		scope=0;
+		displayName="Junk AK Handguard";
+		descriptionShort="These pieces of scrap seem to be fashioned into some sort of handguard?";
+		model="Survivalists_RPWeapons\attachments\support\STG_AK_Junk_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardAK"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\junkak_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
 	class ESP_P90_UpgradeKit: M4_PlasticHndgrd
 	{	
 		scope=2;
@@ -1077,6 +1307,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 
 	// HandGuard Retextures
 
@@ -1159,6 +1390,86 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_RPWeapons\attachments\support\data\ESP_M16_HndGrd_Black_CO.paa"
+		};
+	};
+  class ESP_SCAR_URGI_HNDGRD_Tan: ESP_SCAR_URGI_HNDGRD_Colorbase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelections[]=
+		{
+			"Steel",
+			"Metal"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal_Tan_CO.paa"
+		};
+	};
+	class ESP_SCAR_URGI_HNDGRD_Black: ESP_SCAR_URGI_HNDGRD_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelections[]=
+		{
+			"Steel",
+			"Metal"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal_CO.paa"
+		};
+	};
+	class ESP_SCAR_RIS_HNDGRD_Black: ESP_SCAR_RIS_HNDGRD_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR_CO.paa"
+		};
+	};
+	class STG_AK_Poli_HNDGRD_Green: STG_AK_Poli_HNDGRD_Colorbase
+	{
+		scope=2;
+		color="Green";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ttak458poli_co.paa"
+		};
+	};
+	class STG_AK_Wood_HNDGRD_Dark_Wood: STG_AK_Wood_HNDGRD_Colorbase
+	{
+		scope=2;
+		color="Dark_Wood";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttak458\data\ttak458_Stock_co.paa"
+		};
+	};
+	class STG_AK_Junk_HNDGRD_Junk: STG_AK_Junk_HNDGRD_Colorbase
+	{
+		scope=2;
+		color="Junk";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\junkak_co.paa"
 		};
 	};
 
@@ -1279,6 +1590,188 @@ class CfgVehicles
 			};
 		};
 	};
+  class ESP_SCAR_Collapse_Stck_Colorbase: M4_OEBttstck
+	{
+		scope=0;
+		displayName="ESP-SCR Collapsable stock";
+		descriptionShort="The ESP-SCR Collapsable stock is as it's name suggests, as collapsable stock which allows the user to weild their ESP-SCR in any environment";
+		model="Survivalists_RPWeapons\attachments\support\ESP_SCAR_Collapse_Stck.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"ScarBttStck"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"Metal",
+			"Plastic",
+			"Steel"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Plastic_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Plastic.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Plastic.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Plastic.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Plastic.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Plastic.rvmat","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class ESP_SCAR_Stck_Colorbase: M4_OEBttstck
+	{
+		scope=0;
+		displayName="ESP-SCR Stock ";
+		descriptionShort="The ESP-SCR Stock is the standard stock which is sold alongside any ESP-SCR. It features an ergonimic rest for the users chin, but can also be removed and replaced if it becomes damaged.";
+		model="Survivalists_RPWeapons\attachments\support\ESP_SCAR_Stck.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"ScarBttStck"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class STG_AK_Junk_Stck_ColorBase: AK_WoodBttstck
+	{
+		scope=0;
+		displayName="Junk AK Stock";
+		descriptionShort="This pieces of wood seems to try and resemble some form of weapon stock?";
+		model="Survivalists_RPWeapons\attachments\support\STG_AK_Junk_Stck.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponButtstockAK"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\junkak_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\STG_AK_JUNK_HndGrd.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class STG_AK_Poli_Stck_Colorbase: AK_WoodBttstck
+	{
+		scope=0;
+		displayName="S.T.A.G. Poli Stock";
+		descriptionShort="The S.T.A.G Poli Stock is an Ak platform weapon stock made from polymers. It is lighter than it's wooden counterparts but is also more adjustable.";
+		model="Survivalists_RPWeapons\attachments\support\STG_AK_Poli_Stck.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponButtstockAK"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ttak458poli_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
 
 	// Stock Retextures
 
@@ -1327,48 +1820,88 @@ class CfgVehicles
 			"Survivalists_RPWeapons\attachments\support\data\ESP_Crane_BttStck_Black_CO.paa"
 		};
 	};
-
-//==================================================Adapters
-
-  class ESP_RIS_Adapter: Inventory_Base
+  class ESP_SCAR_Collapse_Stck_Black: ESP_SCAR_Collapse_Stck_Colorbase
 	{
 		scope=2;
-		displayName="RIS Adapter";
-		descriptionShort="An RIS Adapter";
-		model="Survivalists_RPWeapons\attachments\support\RIS_Adapter.p3d";
-		rotationFlags=17;
-		reversed=0;
-		weight=300;
-		itemSize[]={2,1};
-		inventorySlot[]=
-		{
-			"RISAdapter"
-		};
-		dispersionModifier=-0.00012500001;
-		dispersionCondition="true";
-		recoilModifier[]={0.80000001,0.80000001,0.80000001};
-		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		color="Black";
 		hiddenSelections[]=
 		{
-			"Zbytek"
+			"Metal",
+			"Plastic",
+			"Steel"
 		};
-		class DamageSystem
+		hiddenSelectionsTextures[]=
 		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=250;
-					healthLevels[]=
-					{						
-						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}},						
-						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}},						
-						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}},						
-						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}},						
-						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_Adapter.rvmat"}}
-					};
-				};
-			};
-		}; 
+			"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Plastic_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel_CO.paa"
+		};
 	};
+	class ESP_SCAR_Collapse_Stck_Tan: ESP_SCAR_Collapse_Stck_Colorbase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelections[]=
+		{
+			"Metal",
+			"Plastic",
+			"Steel"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Metal_Tan_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Plastic_CO.paa","Survivalists_RPWeapons\attachments\support\data\SCAR_URGI_Steel_CO.paa"
+		};
+	};
+	class ESP_SCAR_Stck_Tan: ESP_SCAR_Stck_Colorbase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR_Tan_CO.paa"
+		};
+	};
+	class ESP_SCAR_Stck_Black: ESP_SCAR_Stck_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR_CO.paa"
+		};
+	};
+	class STG_AK_Junk_Stck_Junk: STG_AK_Junk_Stck_ColorBase
+	{
+		scope=2;
+		color="Junk";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\junkak_co.paa"
+		};
+	};
+	class STG_AK_Poli_Stck_Green: STG_AK_Poli_Stck_Colorbase
+	{
+		scope=2;
+		color="Green";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ttak458poli_co.paa"
+		};
+	};
+
+
 };

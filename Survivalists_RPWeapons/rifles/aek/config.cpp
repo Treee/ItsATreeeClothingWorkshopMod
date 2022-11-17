@@ -11,14 +11,14 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"aek"
 		};
 	};
 };
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_FullAuto;
-class cfgWeapons
+class CfgWeapons
 {
 	class AK101;
 	class aek: AK101
@@ -46,10 +46,10 @@ class cfgWeapons
 		};
 		spawnDamageRange[]={0,0.60000002};
 		soundSetShot[]=
-			{
-				"TTGunshot1",
-				"TTGunshot1",
-				"M4_InteriorTail_SoundSet"
-			};
+    {
+      "TTGunshot1",
+      "TTGunshot1",
+      "M4_InteriorTail_SoundSet"
+    };
 	};
 };

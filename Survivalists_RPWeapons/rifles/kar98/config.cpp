@@ -11,14 +11,14 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"kar98"
 		};
 	};
 };
 class Mode_Safe;
 class Mode_Single;
 class OpticsInfoRifle;
-class cfgWeapons
+class CfgWeapons
 {
 	class Mosin9130;
 	class kar98: Mosin9130
@@ -51,13 +51,6 @@ class cfgWeapons
 			1,
 			20
 		};
-		// reloadSound[]=
-		// {
-		// 	"DZ\sounds\weapons\firearms\mosin9130\mosin_cycling",
-		// 	0.80000001,
-		// 	1,
-		// 	20
-		// };
 		reloadAction="ReloadMosinFull";
 		shotAction="ReloadMosinShort";
 		modes[]={"Single"};

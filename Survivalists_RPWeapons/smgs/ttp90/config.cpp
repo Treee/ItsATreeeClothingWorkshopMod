@@ -11,7 +11,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons"
+			"ttp90"
 		};
 	};
 };
@@ -19,16 +19,16 @@ class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
-class cfgWeapons
+class CfgWeapons
 {
 	class CZ61;
 	class ttp90: CZ61
 	{
 		scope=2;
-		displayName="FN P90";
-		descriptionShort="Espen Industries. FN P90 is a personal defense weapon designed and manufactured by the Belgian FN Herstal. This weapon is sometimes also considered a submachine gun or a compact assault rifle. This specific model is re-worked by Espen Industries to accept .380 ACP. Inspected by Master Gunsmith: Turko";
+		displayName="ESP-P90";
+		descriptionShort="The ESP-P90 is a personal defense weapon designed and manufactured Espen Industries. Chambered in .380 ACP this weapon is sometimes also considered a submachine gun or a compact assault rifle.";
 		model="Survivalists_RPWeapons\smgs\ttp90\ttp90.p3d";
-		attachments[]={"weaponOptics","pistolMuzzle"};
+		attachments[]={"weaponOptics","pistolMuzzle","P90UpgradeKit","weaponFlashlight","pistolFlashlight"};
 		chamberableFrom[]={"Ammo_380"};
 		magazines[]={"ttp90mag"};
 		magazineSwitchTime=0.5;
@@ -37,7 +37,6 @@ class cfgWeapons
 		recoilModifier[]={1,1,1};
 		swayModifier[]={1,1,1};
 		itemSize[]={5,3};
-
 		class Particles
 		{
 			class OnFire
@@ -102,49 +101,26 @@ class cfgWeapons
 					hitpoints=300;
 					healthLevels[]=
 					{
-						
-						{
-							1,
-							
-							{
-								"DZ\weapons\firearms\MP5\data\mp5k_body.rvmat"
-							}
-						},
-						
-						{
-							0.69999999,
-							
-							{
-								"DZ\weapons\firearms\MP5\data\mp5k_body.rvmat"
-							}
-						},
-						
-						{
-							0.5,
-							
-							{
-								"DZ\weapons\firearms\MP5\data\mp5k_body_damage.rvmat"
-							}
-						},
-						
-						{
-							0.30000001,
-							
-							{
-								"DZ\weapons\firearms\MP5\data\mp5k_body_damage.rvmat"
-							}
-						},
-						
-						{
-							0,
-							
-							{
-								"DZ\weapons\firearms\MP5\data\mp5k_body_destruct.rvmat"
-							}
-						}
+						{1,{"Survivalists_RPWeapons\smgs\ttp90\data\base.rvmat"}},
+						{0.69999999,{"Survivalists_RPWeapons\smgs\ttp90\data\base.rvmat"}},
+						{0.5,{"Survivalists_RPWeapons\smgs\ttp90\data\base_damage.rvmat"}},
+						{0.30000001,{"Survivalists_RPWeapons\smgs\ttp90\data\base_damage.rvmat"}},
+						{0,{"Survivalists_RPWeapons\smgs\ttp90\data\base_destruct.rvmat"}}
 					};
 				};
 			};
+		};
+	};
+  class ttp90_Tan: ttp90
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\smgs\ttp90\data\ttp90_tan_co.paa"
 		};
 	};
 };

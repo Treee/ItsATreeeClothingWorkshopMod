@@ -53,6 +53,12 @@ class CfgSlots
     displayName="RIS Adapter"; // this is what shows when the player hovers over the icon
     ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
   };
+  class Slot_AK_Adapter
+  {
+    name="AKRISAdapter"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="AK RIS Adapter"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+  };
 };
   
 class CfgNonAIVehicles
@@ -65,6 +71,12 @@ class CfgNonAIVehicles
 		inventorySlot="RISAdapter";
 		model="Survivalists_RPWeapons\proxy\RIS_Adapter_Proxy.p3d";
 	};
+  class ProxyAK_RIS_Adapter_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="AKRISAdapter";
+		model="Survivalists_RPWeapons\proxy\AK_RIS_Adapter_Proxy.p3d";
+	};
   class Proxysrp_buttstockpouch_proxy: ProxyAttachment
 	{
 		scope=2;
@@ -74,7 +86,7 @@ class CfgNonAIVehicles
 		};
 		model="Survivalists_RPWeapons\proxy\srp_buttstockpouch_proxy.p3d";
 	};
-    class Proxysrp_katana_proxy: ProxyAttachment //same as p3d name
+  class Proxysrp_katana_proxy: ProxyAttachment //same as p3d name
   {
     scope = 2;
     inventorySlot[] = {"SRP_Katana"}; // same as slot name 
