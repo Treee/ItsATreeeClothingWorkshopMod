@@ -111,7 +111,6 @@ class CfgVehicles
 		};
 	};
 
-
   class SRP_Fridge_Kit: SRP_KitBase //new
 	{
 		scope=2;

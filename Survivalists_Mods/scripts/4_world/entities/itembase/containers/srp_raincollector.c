@@ -46,6 +46,10 @@ class SRP_RainCollector extends Container_Base
   {
     return false;
   }
+  override bool CanPutIntoHands (EntityAI parent)
+	{
+		return false;
+	}
   override bool IsOpen()
 	{
 		return true;
@@ -65,4 +69,15 @@ class SRP_RainCollector extends Container_Base
       // Print( "Quantity of " + GetType() + " is: " +  GetQuantity() );
     }
   }
+  override bool IsWell()
+	{
+		return true;
+	}
+  override void SetActions()
+	{
+		super.SetActions();
+
+    AddAction(ActionWashHandsWellOne);
+		AddAction(ActionDrinkWellContinuous);
+	}
 };
