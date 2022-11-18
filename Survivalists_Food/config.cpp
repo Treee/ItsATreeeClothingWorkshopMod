@@ -3115,6 +3115,7 @@ class CfgVehicles
   class Cocaine: SRP_PlantHerbEdible_Colorbase
 	{
 		scope=2;
+    itemSize[]={2,1};
     inventorySlot[]+=
     {
       "PlantMaterial1",
@@ -3139,6 +3140,7 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the brookmint herb.";
     model="Survivalists_Food\food\food_brookmint.p3d";
     color="brookmint";
+    itemSize[]={1,1};
     rotationFlags=64;
     class Food
 		{
@@ -3193,6 +3195,7 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the dock herb.";
     model="Survivalists_Food\food\food_dock.p3d";
     color="dock";
+    itemSize[]={1,2};
     class Food
 		{
 			class FoodStages
@@ -3246,6 +3249,7 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the valerian herb.";
     model="Survivalists_Food\food\food_valerian.p3d";
     color="valerian";
+    itemSize[]={1,1};
     class Food
 		{
 			class FoodStages
@@ -3299,6 +3303,7 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the ribwort herb.";
     model="Survivalists_Food\food\food_ribwort.p3d";
     color="ribwort";
+    itemSize[]={1,2};
     class Food
 		{
 			class FoodStages
@@ -3352,6 +3357,7 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the rosemary herb.";
     model="Survivalists_Food\food\food_rosemary.p3d";
     color="rosemary";
+    itemSize[]={1,2};
     class Food
 		{
 			class FoodStages
@@ -3406,6 +3412,7 @@ class CfgVehicles
     model="Survivalists_Food\food\food_greenamanita.p3d";
     color="greenamanita";
     rotationFlags=64;
+    itemSize[]={2,1};
     class Food
 		{
 			class FoodStages
@@ -3459,6 +3466,7 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the Yarrow herb.";
     model="Survivalists_Food\food\food_yarrow.p3d";
     color="yarrow";
+    itemSize[]={2,1};
     class Food
 		{
 			class FoodStages
@@ -3512,6 +3520,7 @@ class CfgVehicles
 		descriptionShort="A harvested branch from the Mint herb.";
     model="Survivalists_Food\food\food_mint.p3d";
     color="mint";
+    itemSize[]={1,1};
     class Food
 		{
 			class FoodStages

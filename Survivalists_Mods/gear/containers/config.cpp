@@ -111,24 +111,24 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_Fridge_Kit: SRP_KitBase //new
+  class SRP_Fridge_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Fridge Kit";
-		descriptionShort="A Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="A Fridge Kit.";
 	};
   class SRP_Fridge: Container_Base // double door window
 	{
 		scope=2;
 		displayName="Fridge";
-		descriptionShort="A fridge. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="A fridge.";
 		model="Survivalists_Mods\gear\containers\refrigerator.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
     useEntityHierarchy="true";
 		physLayer="item_large";
 		weight=10000;
-		itemSize[]={10,15};
+		itemSize[]={10,5};
 		class Cargo
 		{
 			itemsCargoSize[]={10,15};
@@ -140,13 +140,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Big Fridge Kit";
-		descriptionShort="A Big Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="A Big Fridge Kit.";
 	};
   class SRP_FridgeLarge: Container_Base // quad window
 	{
 		scope=2;
 		displayName="Big Fridge";
-		descriptionShort="A really big fridge. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="A really big fridge.";
 		model="Survivalists_Mods\gear\containers\refrigeratorlarge.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
@@ -156,22 +156,22 @@ class CfgVehicles
 		itemSize[]={10,15};
 		class Cargo
 		{
-			itemsCargoSize[]={10,15};
+			itemsCargoSize[]={10,6};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
 	};
-  class SRP_FridgeRetro_Kit: SRP_KitBase //new
+  class SRP_FridgeRetro_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Retro Fridge Kit";
-		descriptionShort="A Retro Fridge Kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="A Retro Fridge Kit.";
 	};
   class SRP_FridgeRetro: Container_Base // blue with stikey notes
 	{
 		scope=2;
 		displayName="Retro Fridge";
-		descriptionShort="A really retro fridge. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="A really retro fridge.";
 		model="Survivalists_Mods\gear\containers\refrigeratorretro.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
@@ -181,12 +181,42 @@ class CfgVehicles
 		itemSize[]={10,15};
 		class Cargo
 		{
-			itemsCargoSize[]={10,15};
+			itemsCargoSize[]={10,4};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
 	};
-  class SRP_FridgeMinsk_Kit: SRP_KitBase //new
+  class SRP_FridgeRetro_HerbRack_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Herb Drier Kit";
+		descriptionShort="A Herb Drier Kit.";
+	};
+  class SRP_FridgeRetro_HerbRack: Container_Base // blue with stikey notes
+	{
+		scope=2;
+		displayName="Retro Fridge - Herb Drier";
+		descriptionShort="A really retro fridge used to dry herbs.";
+		model="Survivalists_Mods\gear\containers\refrigeratorretro.p3d";
+    carveNavmesh=1;
+		itemBehaviour=2;
+    useEntityHierarchy="true";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\refrigeratorretro_herbs_co.paa"
+    };
+		class Cargo
+		{
+			itemsCargoSize[]={10,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+	};
+  class SRP_FridgeMinsk_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Minsk Fridge Kit";
@@ -196,7 +226,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Minsk Fridge";
-		descriptionShort="A Minsk fridge. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="A Minsk fridge.";
 		model="Survivalists_Mods\gear\containers\refrigeratorminsk.p3d";
     carveNavmesh=1;
 		itemBehaviour=2;
@@ -212,7 +242,7 @@ class CfgVehicles
     };
 		class Cargo
 		{
-			itemsCargoSize[]={10,15};
+			itemsCargoSize[]={10,4};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
