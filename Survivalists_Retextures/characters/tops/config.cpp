@@ -489,6 +489,36 @@ class CfgVehicles
       "Survivalists_Retextures\characters\tops\data\shirt_Espen_co.paa"
     };
   };
+  class TShirt_RedStag: TShirt_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\tshirt_red_stag_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_red_stag_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_red_stag_co.paa"
+    };
+  };
+  class TShirt_EspenBold: TShirt_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\tshirt_white_espen_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_white_espen_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_white_espen_co.paa"
+    };
+  };
+  class TShirt_Stag: TShirt_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\tshirt_white_stag_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_white_stag_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_white_stag_co.paa"
+    };
+  };
 	class Hoodie_Orange: Hoodie_ColorBase
 	{
 		scope=2;

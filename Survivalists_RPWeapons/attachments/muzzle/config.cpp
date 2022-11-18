@@ -7,7 +7,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"Survivalists_Weapons"
+			"DZ_Weapons_Muzzles"
 		};
 	};
 };

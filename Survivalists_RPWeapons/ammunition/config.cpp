@@ -10,7 +10,6 @@ class CfgPatches
       "DZ_Data",
 			"DZ_Weapons_Magazines",
       "DZ_Weapons_Ammunition",
-      "Survivalists_Weapons",
       "JMC_Mjolnir",
       "jmc_SnowOwl",
       "jmc_Prototype",

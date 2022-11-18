@@ -2785,13 +2785,6 @@ class CfgNonAIVehicles
     inventorySlot[]={"SRP_Rifle10"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_rifle10_proxy.p3d"; //proxy path 
   };
-
-	// class Proxyttp90mag: ProxyAttachment
-	// {
-	// 	scope=2;
-	// 	inventorySlot="magazine";
-	// 	model="Survivalists_Weapons\smgs\ttp90\ttp90mag.p3d";
-	// };
   // -------------------- HIDING PROXIES
   // THIS WORKS BY SETTING THE PATH OF A PROXY TO SOMETHING
   // NONEXISTENT SO WHEN THE GAME TRIES TO RENDER, THERE IS NOTHING

@@ -9,7 +9,7 @@ class CfgPatches
 		{
       "jmc_SnowOwl",
       "jmc_Prototype",
-      "Survivalists_Weapons"
+      "DZ_Data"
 		};
 	};
 };

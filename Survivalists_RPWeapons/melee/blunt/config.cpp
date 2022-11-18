@@ -7,8 +7,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Weapons_Melee",
-      "Survivalists_Weapons"
+			"DZ_Weapons_Melee"
 		};
 	};
 };

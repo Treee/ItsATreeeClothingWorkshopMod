@@ -102,7 +102,7 @@ class CfgVehicles
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=200000;
-		absorbency=15.0;
+		absorbency=0.1;
 		class Cargo
 		{
 			itemsCargoSize[]={0,0};
