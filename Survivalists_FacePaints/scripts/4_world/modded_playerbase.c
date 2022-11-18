@@ -38,26 +38,26 @@ modded class PlayerBase
     }
   }
 
-  override void OnStoreSaveLifespan( ParamsWriteContext ctx )
-	{
-    super.OnStoreSaveLifespan(ctx);
-    ctx.Write(m_FacePaintState);
-	}
-	override bool OnStoreLoadLifespan( ParamsReadContext ctx, int version )
-	{	
-    if (!super.OnStoreLoadLifespan(ctx, version))
-    {
-      return false;
-    }
+  // override void OnStoreSaveLifespan( ParamsWriteContext ctx )
+	// {
+  //   super.OnStoreSaveLifespan(ctx);
+  //   ctx.Write(m_FacePaintState);
+	// }
+	// override bool OnStoreLoadLifespan( ParamsReadContext ctx, int version )
+	// {	
+  //   if (!super.OnStoreLoadLifespan(ctx, version))
+  //   {
+  //     return false;
+  //   }
 
-    int facePaintState = -1;
-    if(ctx.Read( facePaintState ))
-    {
-      m_FacePaintState = facePaintState;
-    }
+  //   int facePaintState = -1;
+  //   if(ctx.Read( facePaintState ))
+  //   {
+  //     m_FacePaintState = facePaintState;
+  //   }
 
-		return true;
-	}
+	// 	return true;
+	// }
 
   void SetFacePaint(int index)
   {
