@@ -19,7 +19,6 @@ class CfgVehicles
   class Inventory_Base;
   class SmallProtectorCase;
   class PlateCarrierPouches;
-
   class SRP_KitBase;
   
   //-------------------------------------- BASE GAME OVERRIDE
@@ -45,8 +44,7 @@ class CfgVehicles
 			"SRP_Teddy6",
 			"SRP_Teddy7",
 		};
-  };  
-
+  };
   //======================================= MODDED MODS
   class MassLargePlateCarrierPouches: PlateCarrierPouches
 	{

@@ -6,12 +6,12 @@ modded class PlateCarrierPouches
     PlateCarrierPouches pouches;
     if (Class.CastTo(pouches, parent))
     {
-      string itemType = GetType().Substring(0,4);
-      itemType.ToLower();
-      if (itemType == "mass")
-      {
+      // string itemType = GetType().Substring(0,4);
+      // itemType.ToLower();
+      // if (itemType == "mass")
+      // {
         Delete();
-      }
+      // }
     }
   }
   // override bool CanPutAsAttachment (EntityAI parent)

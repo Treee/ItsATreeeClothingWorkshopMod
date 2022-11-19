@@ -1,4 +1,4 @@
-class SRP_Military_Belt_Tan extends MilitaryBelt
+class SRP_Military_Belt_ColorBase extends MilitaryBelt
 {
 	override bool CanPutInCargo( EntityAI parent )
 	{
@@ -9,9 +9,17 @@ class SRP_Military_Belt_Tan extends MilitaryBelt
 		
 		return IsEmpty();
 	}
-	
+
 	override bool CanReceiveAttachment( EntityAI attachment,int slotId )
 	{
+    if (attachment && (InventorySlots.GetSlotName(slotId) == "Belt_Right" || InventorySlots.GetSlotName(slotId) == "VestHolster" || InventorySlots.GetSlotName(slotId) == "Belt_Back"))
+    {
+      if (attachment.GetType() == "PlateCarrierPouches" || attachment.IsInherited(PlateCarrierPouches))
+      {
+        return false;
+      }
+    }
+
     if (IsSheathSlotId(slotId))
     {
       return CanEquipSheath();
@@ -54,3 +62,6 @@ class SRP_Military_Belt_Tan extends MilitaryBelt
     };
   }
 };
+class SRP_Military_Belt_Green extends SRP_Military_Belt_ColorBase{};
+class SRP_Military_Belt_Black extends SRP_Military_Belt_ColorBase{};
+class SRP_Military_Belt_Tan extends SRP_Military_Belt_ColorBase{};
