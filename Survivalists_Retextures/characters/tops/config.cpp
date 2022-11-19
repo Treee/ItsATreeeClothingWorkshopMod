@@ -1445,16 +1445,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\riders_jacket_black_smileBeatles_co.paa"
 		};
 	};
-	class RidersJacket_Rop: RidersJacket_ColorBase
-	{
-		scope=2;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\tops\data\ridejacketROP.paa",
-			"Survivalists_Retextures\characters\tops\data\ridejacketROP.paa",
-			"Survivalists_Retextures\characters\tops\data\ridejacketROP.paa"
-		};
-	};
   class WoolCoat_Leather: WoolCoat_ColorBase
 	{
 		scope=2;

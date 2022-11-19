@@ -43,11 +43,11 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Mods\structures\residential\data\srp_igloo_small_co.paa"};
 		model="Survivalists_Mods\structures\residential\srp_igloo_small.p3d";
 	};
-  class Land_Building_SRP_LabBuilding: HouseNoDestruct
-	{
-		scope=0;
-    hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\residential\data\srp_igloo_small_co.paa"};
-		model="Survivalists_Mods\structures\residential\srp_labbuilding.p3d";
-	};
+  // class Land_Building_SRP_LabBuilding: HouseNoDestruct
+	// {
+	// 	scope=0;
+  //   hiddenSelections[]={"zbytek"};
+  //   hiddenSelectionsTextures[]={"Survivalists_Mods\structures\residential\data\srp_igloo_small_co.paa"};
+	// 	model="Survivalists_Mods\structures\residential\srp_labbuilding.p3d";
+	// };
 };
