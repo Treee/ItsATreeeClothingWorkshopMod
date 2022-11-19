@@ -19,10 +19,14 @@ class CfgVehicles
   class Pot;
   class Bottle_Base;
   // ----------------------  BASE GAME OVERRIDES
+  class PortableGasStove: Inventory_Base
+	{
+    itemSize[]={2,2};
+  };
   class PortableGasLamp: Inventory_Base 
 	{
 		scope=2;
-		itemSize[]={3,3};
+		itemSize[]={2,3};
     inventorySlot[]=
     {
       "SRP_Lantern"
@@ -36,7 +40,7 @@ class CfgVehicles
     descriptionShort="This lamp emits only a small amount of light.";
 		model="Survivalists_Mods\gear\cooking\srp_portablegaslamp.p3d";
 		weight=330;
-		itemSize[]={3,3};
+		itemSize[]={2,3};
 		attachments[]=
 		{
 			"GasCanister"

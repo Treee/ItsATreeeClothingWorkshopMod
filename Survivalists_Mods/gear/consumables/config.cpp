@@ -73,6 +73,7 @@ class CfgVehicles
 	};
   class ButaneCanister: Inventory_Base
   {
+    itemSize[]={1,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -84,7 +85,7 @@ class CfgVehicles
   };
   class LargeGasCanister: Inventory_Base
   {
-    itemSize[]={2,2};
+    itemSize[]={1,3};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -96,7 +97,7 @@ class CfgVehicles
   };
   class MediumGasCanister: Inventory_Base
   {
-    itemSize[]={2,2};
+    itemSize[]={1,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -108,7 +109,7 @@ class CfgVehicles
   };
   class SmallGasCanister: Inventory_Base
   {
-    itemSize[]={2,1};
+    itemSize[]={1,1};
     hiddenSelections[]=
 		{
 			"zbytek"
