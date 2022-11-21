@@ -1,31 +1,13 @@
 modded class PlateCarrierPouches
 {
-  override void OnWasAttached( EntityAI parent, int slot_id ) 
-  { 
-    super.OnWasAttached(parent,slot_id);
+  override bool CanPutAsAttachment (EntityAI parent)
+  {
     PlateCarrierPouches pouches;
+    // attaching pouches to more pouches is a nono
     if (Class.CastTo(pouches, parent))
     {
-      // string itemType = GetType().Substring(0,4);
-      // itemType.ToLower();
-      // if (itemType == "mass")
-      // {
-        Delete();
-      // }
+      return false;
     }
+    return super.CanPutAsAttachment(parent);
   }
-  // override bool CanPutAsAttachment (EntityAI parent)
-  // {
-  //   PlateCarrierPouches pouches;
-  //   if (Class.CastTo(pouches, parent))
-  //   {
-  //     string itemType = GetType().Substring(0,4);
-  //     itemType.ToLower();
-  //     if (itemType == "mass")
-  //     {
-  //       return false;
-  //     }
-  //   }
-  //   return super.CanPutAsAttachment(parent);
-  // }
 };

@@ -51,6 +51,7 @@ class CfgVehicles
   class SRP_FrakenArmor_Vest_ColorBase;
   
   class DUB_Poncho;
+  class DUB_Waistcoat;
 
   class PlateCarrierVest_ThirstyDevil: PlateCarrierVest
 	{
@@ -2023,4 +2024,13 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\srp_frakenarmor_chest_co.paa"
 		};
 	};
+  class DUB_Waistcoat_Gray: DUB_Waistcoat
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\waistcoat_maximillian_co.paa",
+		};
+  };
 };
