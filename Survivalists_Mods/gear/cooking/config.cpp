@@ -16,9 +16,13 @@ class CfgPatches
 class CfgVehicles
 {
   class Inventory_Base;
-  class Pot;
   class Bottle_Base;
   // ----------------------  BASE GAME OVERRIDES
+  class Pot: Bottle_Base
+  {
+    itemSize[]={3,2};
+    varQuantityMax=1000;
+  };
   class PortableGasStove: Inventory_Base
 	{
     itemSize[]={2,2};
