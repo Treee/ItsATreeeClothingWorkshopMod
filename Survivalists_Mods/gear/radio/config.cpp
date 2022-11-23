@@ -161,7 +161,7 @@ class CfgVehicles
 		descriptionShort="A radio that fits in your hand. Something feels strange.";
     model="Survivalists_Mods\gear\radio\handheldradio.p3d";
     repairableWithKits[]={5,7};
-    itemSize[]={1,3};
+    itemSize[]={1,2};
 		repairCosts[]={30,25};
     attachments[]=
 		{
@@ -202,6 +202,7 @@ class CfgVehicles
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
     range=500;
+    itemSize[]={1,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -222,6 +223,7 @@ class CfgVehicles
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
     range=1000;
+    itemSize[]={1,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -241,6 +243,7 @@ class CfgVehicles
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
     range=1000;
+    itemSize[]={1,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -261,6 +264,7 @@ class CfgVehicles
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
     range=2500;
+    itemSize[]={1,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -280,6 +284,7 @@ class CfgVehicles
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
     range=2500;
+    itemSize[]={1,2};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -299,6 +304,7 @@ class CfgVehicles
     model="Survivalists_Mods\gear\radio\handheldradio.p3d";
     repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
+    itemSize[]={1,2};
     hiddenSelections[]=
 		{
 			"zbytek"

@@ -2827,7 +2827,7 @@ class CfgVehicles
     physLayer="item_small";
     color="base";
 		weight=500;
-		itemSize[]={3,3};
+		itemSize[]={2,3};
     canBeSplit=1;
 		varQuantityDestroyOnMin=1;
 		varQuantityInit=1;
@@ -3001,7 +3001,7 @@ class CfgVehicles
     physLayer="item_small";
     color="base";
 		weight=500;
-		itemSize[]={5,2};
+		itemSize[]={5,1};
     canBeSplit=1;
 		varQuantityDestroyOnMin=1;
 		varQuantityInit=1;

@@ -78,6 +78,10 @@ class CfgVehicles
   {
     canBeSplit=1;
   };
+  class SalineBag: Inventory_Base
+  {
+    itemSize[]={1,2};
+  };
   //------------------------------------------- CUSTOM STUFF
   class SRP_StimPackInjector_Base: Epinephrine
 	{

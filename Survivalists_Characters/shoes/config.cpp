@@ -34,6 +34,7 @@ class CfgVehicles
 	};
   class AthleticShoes_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     rootClassName="AthleticShoes";
     colorVariants[]=
@@ -50,6 +51,7 @@ class CfgVehicles
   };
   class HikingBoots_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     rootClassName="HikingBoots";
     colorVariants[]=
@@ -60,6 +62,7 @@ class CfgVehicles
   };
   class HikingBootsLow_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     rootClassName="HikingBootsLow";
     colorVariants[]=
@@ -72,6 +75,7 @@ class CfgVehicles
   };
   class Wellies_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer","Knife"};
     rootClassName="Wellies";
     colorVariants[]=
@@ -84,6 +88,7 @@ class CfgVehicles
   };
   class WorkingBoots_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     rootClassName="WorkingBoots";
     colorVariants[]=
@@ -123,6 +128,7 @@ class CfgVehicles
   };
   class DressShoes_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     rootClassName="DressShoes";
     colorVariants[]=
@@ -136,6 +142,8 @@ class CfgVehicles
   };
   class MilitaryBoots_ColorBase: Clothing
   {
+    itemSize[]={2,2};
+    itemsCargoSize[]={1,2};
     attachments[]+={"SRP_GunDerringer"};
     rootClassName="MilitaryBoots";
     colorVariants[]=
@@ -150,6 +158,7 @@ class CfgVehicles
   };
   class CombatBoots_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer","Knife"};
     rootClassName="CombatBoots";
     colorVariants[]=
@@ -163,6 +172,7 @@ class CfgVehicles
   };
   class JoggingShoes_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     rootClassName="JoggingShoes";
     colorVariants[]=
@@ -176,6 +186,7 @@ class CfgVehicles
   };
   class LeatherShoes_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     soundAttType="none";
     rootClassName="LeatherShoes";
@@ -196,6 +207,7 @@ class CfgVehicles
   };
   class Sneakers_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     rootClassName="LeatherShoes";
     colorVariants[]=
@@ -218,6 +230,7 @@ class CfgVehicles
   };
   class Ballerinas_ColorBase: Clothing
   {
+    itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
     soundAttType="none";
     rootClassName="Ballerinas";
@@ -228,6 +241,10 @@ class CfgVehicles
       "White",
       "Yellow",      
     };
+  };
+  class TTSKOBoots: Clothing
+	{
+    itemSize[]={2,2};
   };
   
   //====================================================== CUSTOM STUFF

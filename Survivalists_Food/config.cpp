@@ -313,17 +313,17 @@ class CfgVehicles
   class BoxCerealCrunchin: Edible_Base
   {
     canBeSplit=1;
-    itemSize[]={2,3};
+    itemSize[]={2,2};
   };
   class Guts: Edible_Base
   {
     canBeSplit=1;
-    itemSize[]={2,2};
+    itemSize[]={2,1};
   };
   class Rice: Edible_Base
   {
     canBeSplit=1;
-    itemSize[]={2,2};
+    itemSize[]={2,1};
   };
   class BakedBeansCan: Edible_Base
   {
@@ -1003,7 +1003,7 @@ class CfgVehicles
 		interactionWeight=1;
 		quantityBar=1;
 		absorbency=0.30000001;
-		itemSize[]={1,3};
+		itemSize[]={1,2};
 		varQuantityInit=150;
 		varQuantityMin=0;
 		varQuantityMax=150;
@@ -2327,7 +2327,7 @@ class CfgVehicles
 		descriptionShort="A can of food that is yet to be preserved from spoiling. Raw.";
 		model="\dz\gear\food\food_can_open.p3d";
     rotationFlags=63;
-		itemSize[]={2,2};
+		itemSize[]={1,2};
 		weight=440;
 		varQuantityInit=100;
 		varQuantityMin=0;
@@ -2587,7 +2587,7 @@ class CfgVehicles
 		descriptionShort="A can of food that is preserved from spoiling.";
 		model="\dz\gear\food\food_can.p3d";
     rotationFlags=63;
-		itemSize[]={2,2};
+		itemSize[]={1,2};
 		weight=440;
 		varQuantityInit=0;
 		varQuantityMin=0;
@@ -2714,7 +2714,7 @@ class CfgVehicles
 		displayName="Preserved Canned Food Open";
 		descriptionShort="An opened can of preserved food. Who knows how long it has been in there.";
 		model="\dz\gear\food\food_can_open.p3d";
-    itemSize[]={2,2};
+    itemSize[]={1,2};
 		weight=40;
 		varQuantityInit=0;
 		varQuantityMin=0;
@@ -3574,7 +3574,6 @@ class CfgVehicles
 		displayName="Flaked Corn";
 		descriptionShort="Flaked corn - used in brewing of alcohol. Adds fermentable sugars without adding color, body or malt flavors.";
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\cereal_box_flakedcorn_co.paa"};
-		itemSize[]={5,6};
 		class Nutrition
 		{
 			fullnessIndex=2.5;

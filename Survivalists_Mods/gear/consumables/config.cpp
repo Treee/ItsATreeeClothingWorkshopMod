@@ -14,14 +14,17 @@ class CfgPatches
 	};
 };
 class CfgVehicles
-{
-  class Spraycan_ColorBase;
+{  
   class Inventory_Base;
   class Stone;
   class Paper;
   class Box_Base;
 
   //--------------------------------------------- BASE GAME OVERRIDES
+  class Spraycan_ColorBase: Inventory_Base
+  {
+    itemSize[]={1,2};
+  };
 	class Battery9V: Inventory_Base
 	{
     varQuantityInit=200;
