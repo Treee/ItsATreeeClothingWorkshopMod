@@ -115,6 +115,10 @@ class CfgVehicles
 			CropsType="Cannabis";
 		};
 	};
+  class PlantMaterial: Inventory_Base
+  {
+    itemSize[]={2,1};
+  };
   // --------------------------- CUSTOM STUFF
 
   class TobaccoSeeds: SeedBase

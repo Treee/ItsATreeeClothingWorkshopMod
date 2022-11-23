@@ -152,6 +152,12 @@ class CfgVehicles
   class WeaponCleaningKit: Inventory_Base
 	{
     canBeSplit=1;
+    itemSize[]={2,2};
+  };
+  class LeatherSewingKit: Inventory_Base
+	{
+    canBeSplit=1;
+    itemSize[]={2,2};
   };
 
   class Pen_ColorBase: Inventory_Base
@@ -199,7 +205,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=100;
 		weight=780;
-		itemSize[]={2,3};
+		itemSize[]={2,2};
 		fragility=0.0099999998;
     hiddenSelections[]= {"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\cleaning_kit_jewling_co.paa"};
@@ -255,7 +261,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=100;
 		weight=1200;
-		itemSize[]={2,3};
+		itemSize[]={2,2};
 		fragility=0.0099999998;
     hiddenSelections[]= {"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\leather_sewing_kit_jewlcuttingtools_co.paa"};

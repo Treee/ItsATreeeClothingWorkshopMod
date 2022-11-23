@@ -362,6 +362,7 @@ class CfgVehicles
 
   class Fabric: Inventory_Base
 	{
+    itemSize[]={2,3};
     inventorySlot[]+=
 		{
 			"Material_Shelter_Fabric"

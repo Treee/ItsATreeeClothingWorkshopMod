@@ -60,6 +60,7 @@ class CfgVehicles
   class GardenLime: Inventory_Base
   {
     canBeSplit=1;
+    itemSize[]={2,3};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -1370,7 +1371,7 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\consumables\srp_dyebottle.p3d";
     color="base";
 		weight=120;
-		itemSize[]={2,2};
+		itemSize[]={1,1};
 		itemBehaviour=1;
 		canBeSplit=1;
 		varQuantityInit=1;
