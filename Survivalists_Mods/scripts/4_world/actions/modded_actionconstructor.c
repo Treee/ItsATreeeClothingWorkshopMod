@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
+		actions.Insert(ActionSearchChickenCoop); 
+
 		actions.Insert(ActionSwapLens_Black); 
 		actions.Insert(ActionSwapLens_Blue); 
 		actions.Insert(ActionSwapLens_Green); 
