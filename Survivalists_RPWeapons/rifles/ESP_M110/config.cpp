@@ -74,45 +74,38 @@ class CfgWeapons
 		{
 			soundSetShot[]=
 			{
-				"M4_Shot_SoundSet",
-				"M4_Tail_SoundSet",
-				"M4_InteriorTail_SoundSet"
+				"FNFAL_Shot_SoundSet",
+				"FNFAL_Tail_SoundSet",
+				"FNFAL_InteriorTail_SoundSet"
 			};
 			soundSetShotExt[]=
-			{
-				
+			{				
 				{
-					"M4_silencer_SoundSet",
-					"M4_silencerTail_SoundSet",
-					"M4_silencerInteriorTail_SoundSet"
+					"FNFAL_silencerHomeMade_SoundSet",
+					"FNFAL_silencerHomeMadeTail_SoundSet",
+					"FNFAL_silencerInteriorHomeMadeTail_SoundSet"
 				},
-				
-				{
-					"M4_silencerHomeMade_SoundSet",
-					"M4_silencerHomeMadeTail_SoundSet",
-					"M4_silencerInteriorHomeMadeTail_SoundSet"
-				}
 			};
 			begin1[]=
 			{
 				"",
 				1,
 				1,
-				1000
+				900
 			};
 			begin2[]=
 			{
 				"",
 				1,
 				1,
-				1000
+				900
 			};
 			begin3[]=
 			{
 				"",
 				1,
 				1,
-				1000
+				900
 			};
 			soundBegin[]=
 			{
@@ -124,41 +117,30 @@ class CfgWeapons
 				0.33333001
 			};
 			reloadTime=0.12;
-			recoil="recoil_m4";
-			recoilProne="recoil_m4_prone";
+			recoil="recoil_fal";
+			recoilProne="recoil_fal_prone";
 			dispersion=0.0020000001;
 			magazineSlot="magazine";
-			beginSilenced_Pro1[]=
+			beginSilenced_Pro[]=
 			{
 				"",
 				1,
 				1,
-				75
-			};
-			beginSilenced_Pro2[]=
-			{
-				"",
-				1,
-				1,
-				75
+				200
 			};
 			beginSilenced_HomeMade[]=
 			{
 				"",
 				1,
 				1,
-				150
+				300
 			};
 			soundBeginExt[]=
 			{
-				
 				{
-					"beginSilenced_Pro1",
-					0.5,
-					"beginSilenced_Pro2",
-					0.5
-				},
-				
+					"beginSilenced_Pro",
+					1
+				},			
 				{
 					"beginSilenced_HomeMade",
 					1

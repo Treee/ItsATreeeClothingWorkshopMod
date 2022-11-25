@@ -1307,9 +1307,7 @@ class CfgVehicles
 		};
 	};
 
-
 	// HandGuard Retextures
-
 	class ESP_Lightweight_HndGrd_Green: ESP_LW_HndGrd_ColorBase
 	{
 		scope=2;

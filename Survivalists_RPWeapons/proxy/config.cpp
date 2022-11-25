@@ -59,6 +59,24 @@ class CfgSlots
     displayName="AK RIS Adapter"; // this is what shows when the player hovers over the icon
     ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
   };
+  class Slot_Scar_HndGrd
+  {
+    name="ScarHndGrd"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="Hand Guard"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+  };
+  class Slot_Scar_BttStck
+  {
+    name="ScarBttStck"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="Butt Stock"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+  };
+  class Slot_P90_UpgradeKit
+  {
+    name="P90UpgradeKit"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="P90 Upgrade Kit"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+  };
 };
   
 class CfgNonAIVehicles
@@ -110,4 +128,22 @@ class CfgNonAIVehicles
     inventorySlot[] = {"SRP_MasterSwordSheath"}; // same as slot name 
     model = "Survivalists_RPWeapons\proxy\srp_masterswordsheath_proxy.p3d"; //proxy path 
   };
+  class ProxyScar_HandGrd_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="ScarHndGrd";
+		model="Survivalists_RPWeapons\proxy\Scar_HandGrd_Proxy.p3d";
+	};
+	class ProxyScar_BttStck_Proxy: ProxyAttachment 
+	{
+		scope=2;
+		inventorySlot="ScarBttStck";
+		model="Survivalists_RPWeapons\proxy\Scar_BttStck_Proxy.p3d";
+	};
+	class ProxyESP_P90UpgradeKit_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="P90UpgradeKit";
+		model="Survivalists_RPWeapons\proxy\ESP_P90UpgradeKit_Proxy.p3d";
+	};
 };  

@@ -26,7 +26,6 @@ class CfgWeapons
    		"SRP_GunDerringer"
 		};
 	};
-
   class Flaregun_Base: Pistol_Base
 	{
     inventorySlot[]+=
@@ -34,4 +33,17 @@ class CfgWeapons
    		"SRP_GunDerringer"
 		};
   };
+
+  class Derringer_Black: Derringer_Base
+	{
+		scope=0;
+	};
+	class Derringer_Pink: Derringer_Base
+	{
+		scope=0;
+	};
+	class Derringer_Grey: Derringer_Base
+	{
+		scope=0;
+	};
 };
