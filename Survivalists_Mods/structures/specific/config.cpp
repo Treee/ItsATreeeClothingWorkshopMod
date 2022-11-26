@@ -32,6 +32,21 @@ class CfgVehicles
       "Survivalists_Mods\structures\specific\artifacts\data\srp_willowtreeleaves_ca.paa"
 		};
 	};
+  class Land_srp_willowtree_muwu: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_willowtree.p3d";
+    hiddenSelections[]=
+		{
+			"trunk",
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_willowtreetrunk_co.paa",
+      "Survivalists_Mods\structures\specific\artifacts\data\srp_willowtreeleaves_muwu_ca.paa"
+		};
+	};
 
   class Land_srp_warhorn_large: HouseNoDestruct
 	{
