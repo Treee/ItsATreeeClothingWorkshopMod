@@ -59,6 +59,8 @@ class SRP_Military_Belt_ColorBase extends MilitaryBelt
     return {
       "SRP_KatanaSheath",
       "SRP_MasterSwordSheath",
+      "SRP_GladiusSword",
+      "SRP_GladiusSwordSheath"
     };
   }
 };

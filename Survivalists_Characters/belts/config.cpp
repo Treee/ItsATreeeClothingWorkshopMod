@@ -316,6 +316,8 @@ class CfgVehicles
 		{
       "SRP_KatanaSheath",
       "SRP_MasterSwordSheath",
+      "SRP_GladiusSword",
+      "SRP_GladiusSwordSheath",
 			"Belt_Left",
 			"Chemlight",
 			"Belt_Back",
@@ -386,6 +388,8 @@ class CfgVehicles
 				{
           "SRP_KatanaSheath",
           "SRP_MasterSwordSheath",
+          "SRP_GladiusSword",
+          "SRP_GladiusSwordSheath"
 				};
 				icon="set:dayz_inventory image:cat_fp_tents";
 				view_index=2;
