@@ -3188,6 +3188,18 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_gladius_ornamental_co.paa"};
   };
+  class SRP_GladiusSword_Tyler: SRP_GladiusSword_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_gladius_tyler_co.paa"};
+  };
+  class SRP_GladiusSwordSheath_Tyler: SRP_GladiusSwordSheath_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_gladius_tyler_co.paa"};
+  };
 
 //================================================================== SPEARS
   class SRP_WeaponSpear_Kit: SRP_Weapon_KitBase
