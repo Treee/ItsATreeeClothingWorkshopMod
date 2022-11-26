@@ -77,6 +77,18 @@ class CfgSlots
     displayName="P90 Upgrade Kit"; // this is what shows when the player hovers over the icon
     ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
   };
+  class Slot_SRP_GladiusSword
+  {
+		name="SRP_GladiusSword";
+		displayName="Gladius Sword";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_GladiusSwordSheath
+  {
+		name="SRP_GladiusSwordSheath";
+		displayName="Gladius Sword Sheath";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
 };
   
 class CfgNonAIVehicles
@@ -127,6 +139,18 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"SRP_MasterSwordSheath"}; // same as slot name 
     model = "Survivalists_RPWeapons\proxy\srp_masterswordsheath_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_gladius_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_GladiusSword"}; // same as slot name 
+    model = "Survivalists_RPWeapons\proxy\srp_gladius_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_gladiussheath_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_GladiusSwordSheath"}; // same as slot name 
+    model = "Survivalists_RPWeapons\proxy\srp_gladiussheath_proxy.p3d"; //proxy path 
   };
   class ProxyScar_HandGrd_Proxy: ProxyAttachment
 	{
