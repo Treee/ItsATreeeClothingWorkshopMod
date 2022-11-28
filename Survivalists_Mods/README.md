@@ -910,6 +910,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Willow Tree" (https://skfb.ly/oyCFp) by vervoortward is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Modern Chess Board" (https://skfb.ly/onSSn) by TheDevilsEye is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Sword of Victory" Public Domain (https://sketchfab.com/3d-models/the-sword-of-victory-f39dc69dbbfe49c68045bec2c16e03ba#download)
+
+- "Lumiere 4x3 Double Sided Non-backlit Display" (https://skfb.ly/oovLr) by exhibitbook is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

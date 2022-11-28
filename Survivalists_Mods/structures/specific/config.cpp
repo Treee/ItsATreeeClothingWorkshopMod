@@ -495,4 +495,125 @@ class CfgVehicles
 			"Survivalists_Mods\structures\specific\artifacts\data\srp_artifactclock_grandfather_co.paa"
 		};
 	};
+
+
+  class Land_SRP_LabEquipment_Containers_Cart: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\containers_cart.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Containers_Cube: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\containers_cube.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Containers_CubeOpened: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\containers_cubeopened.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Containers_CubeSmall: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\containers_cubesmall.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Containers_Mesh: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\containers_mesh.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Containers_MeshSquare: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\containers_meshsquare.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Containers_Rectangle: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\containers_rectangle.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_TallContainers_1: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\tallcontainers_1.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_TallContainers_2: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\tallcontainers_2.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_TallContainers_EggCabinet: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\tallcontainers_eggcabinet.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_TallContainers_EggIncubator: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\tallcontainers_eggincubator.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_TallContainers_VerticalTank: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\tallcontainers_verticaltanker.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Terminals_DblMonitor_Left: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\terminals_dblmonitor_left.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Terminals_DblMonitor_Right: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\terminals_dblmonitor_right.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Terminals_Left: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\terminals_left.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Terminals_Right: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\terminals_right.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
+  class Land_SRP_LabEquipment_Terminals_SingleMonitor_Left: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\terminals_singlemonitor_left.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
+	};
 };

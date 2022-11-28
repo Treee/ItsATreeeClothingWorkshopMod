@@ -1037,51 +1037,50 @@ class CfgSlots
 		displayName="Can7";
 		ghostIcon="tincan";
 		selection="Can7";
-	};
-	class Slot_Ingredient;
-	class Slot_Ingredient1: Slot_Ingredient
+	};	
+	class Slot_Ingredient1
 	{
 		name="Ingredient1";
 		displayName="Ingredient1";
 		ghostIcon="ingredient";
 	};
-	class Slot_Ingredient2: Slot_Ingredient
+	class Slot_Ingredient2
 	{
 		name="Ingredient2";
 		displayName="Ingredient2";
 		ghostIcon="ingredient";
 	};
-	class Slot_Ingredient3: Slot_Ingredient
+	class Slot_Ingredient3
 	{
 		name="Ingredient3";
 		displayName="Ingredient3";
 		ghostIcon="ingredient";
 	};
-	class Slot_Ingredient4: Slot_Ingredient
+	class Slot_Ingredient4
 	{
 		name="Ingredient4";
 		displayName="Ingredient4";
 		ghostIcon="ingredient";
 	};
-	class Slot_Ingredient5: Slot_Ingredient
+	class Slot_Ingredient5
 	{
 		name="Ingredient5";
 		displayName="Ingredient5";
 		ghostIcon="ingredient";
 	};
-	class Slot_Ingredient6: Slot_Ingredient
+	class Slot_Ingredient6
 	{
 		name="Ingredient6";
 		displayName="Ingredient6";
 		ghostIcon="ingredient";
 	};
-	class Slot_Ingredient7: Slot_Ingredient
+	class Slot_Ingredient7
 	{
 		name="Ingredient7";
 		displayName="Ingredient7";
 		ghostIcon="ingredient";
 	};
-	class Slot_Ingredient8: Slot_Ingredient
+	class Slot_Ingredient8
 	{
 		name="Ingredient8";
 		displayName="Ingredient8";
