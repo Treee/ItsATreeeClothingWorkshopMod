@@ -3976,7 +3976,7 @@ class CfgVehicles
 		hiddenSelections[]={"camoGround"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\Boyaredeez_co.paa"};
 	};
-	class Boyardeez_Opened: BakedBeansCan_Opened
+	class Boyaredeez_Opened: BakedBeansCan_Opened
 	{
 		displayName="Canned Pasta and Meatballs";
 		descriptionShort="A can of pasta and meatballs. Just like grandma used to make.";
