@@ -49,13 +49,7 @@ class SRP_ChessBoard_BishopPrimary extends SRP_ChessPiece_ColorBase{};
 class SRP_ChessBoard_QueenPrimary extends SRP_ChessPiece_ColorBase{};
 class SRP_ChessBoard_KingPrimary extends SRP_ChessPiece_ColorBase{};
 
-class SRP_ChessPieceAlternate_ColorBase extends SRP_ChessPiece_ColorBase
-{
-  void SRP_ChessPieceAlternate_ColorBase()
-  {
-    SetOrientation("0 180 0");
-  }
-};
+class SRP_ChessPieceAlternate_ColorBase extends SRP_ChessPiece_ColorBase{};
 class SRP_ChessBoard_KnightAlternate extends SRP_ChessPieceAlternate_ColorBase{};
 class SRP_ChessBoard_PawnAlternate extends SRP_ChessPieceAlternate_ColorBase{};
 class SRP_ChessBoard_RookAlternate extends SRP_ChessPieceAlternate_ColorBase{};

@@ -3,7 +3,6 @@ modded class ModItemRegisterCallbacks
   override void RegisterOneHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
   {
     super.RegisterOneHanded( pType, pBehavior );     
-    
     pType.AddItemInHandsProfileIK("SRP_ChessPiece_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
     
     // food
@@ -140,7 +139,9 @@ modded class ModItemRegisterCallbacks
 
   override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
   {
-    super.RegisterTwoHanded( pType, pBehavior );  
+    super.RegisterTwoHanded( pType, pBehavior ); 
+		pType.AddItemInHandsProfileIK("SRP_ChessBoard_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_extinguisher.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/firewood.anm");
+
     pType.AddItemInHandsProfileIK("BrewingPot_Mash_Colorbase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
     pType.AddItemInHandsProfileIK("SRP_PotteryPot_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
     pType.AddItemInHandsProfileIK("SRP_OilCan_Basic", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    

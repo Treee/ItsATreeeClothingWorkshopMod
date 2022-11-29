@@ -1919,6 +1919,14 @@ class CfgVehicles
 	};
 
 
+	class SRP_ChessBoard_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Chess Game Kit";
+		descriptionShort="A kit used to create pieces for a chess game";
+		model="\dz\gear\cooking\log01.p3d";
+		itemSize[]={3,1};
+	};
   class SRP_ChessBoard_ColorBase: Inventory_Base  
 	{
 		scope=0;
@@ -2288,7 +2296,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Chess Piece - Knight";
-    model="Survivalists_Mods\gear\camping\srp_chessboard_knight.p3d";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_knight_alternate.p3d";
     color="KnightAlternate";
     hiddenSelections[]=
 		{
@@ -2318,7 +2326,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Chess Piece - Bishop";
-    model="Survivalists_Mods\gear\camping\srp_chessboard_bishop.p3d";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_bishop_alternate.p3d";
     color="BishopAlternate";
     hiddenSelections[]=
 		{
