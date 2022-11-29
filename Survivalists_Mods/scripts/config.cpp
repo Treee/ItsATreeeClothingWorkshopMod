@@ -1965,6 +1965,392 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:stones";
     stackMax=1;
 	};
+  
+  //============================================= CHESS PIECES
+  class Slot_SRP_Chess1
+	{
+		name="SRP_Chess1";
+		displayName="Row 1 Column A";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess2
+	{
+		name="SRP_Chess2";
+		displayName="Row 1 Column B";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess3
+	{
+		name="SRP_Chess3";
+		displayName="Row 1 Column C";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess4
+	{
+		name="SRP_Chess4";
+		displayName="Row 1 Column D";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess5
+	{
+		name="SRP_Chess5";
+		displayName="Row 1 Column E";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess6
+	{
+		name="SRP_Chess6";
+		displayName="Row 1 Column F";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess7
+	{
+		name="SRP_Chess7";
+		displayName="Row 1 Column G";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess8
+	{
+		name="SRP_Chess8";
+		displayName="Row 1 Column H";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess9
+	{
+		name="SRP_Chess9";
+		displayName="Row 2 Column A";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess10
+	{
+		name="SRP_Chess10";
+		displayName="Row 2 Column B";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess11
+	{
+		name="SRP_Chess11";
+		displayName="Row 2 Column C";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess12
+	{
+		name="SRP_Chess12";
+		displayName="Row 2 Column D";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess13
+	{
+		name="SRP_Chess13";
+		displayName="Row 2 Column E";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess14
+	{
+		name="SRP_Chess14";
+		displayName="Row 2 Column F";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess15
+	{
+		name="SRP_Chess15";
+		displayName="Row 2 Column G";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess16
+	{
+		name="SRP_Chess16";
+		displayName="Row 2 Column H";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess17
+	{
+		name="SRP_Chess17";
+		displayName="Row 3 Column A";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess18
+	{
+		name="SRP_Chess18";
+		displayName="Row 3 Column B";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess19
+	{
+		name="SRP_Chess19";
+		displayName="Row 3 Column C";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess20
+	{
+		name="SRP_Chess20";
+		displayName="Row 3 Column D";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess21
+	{
+		name="SRP_Chess21";
+		displayName="Row 3 Column E";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess22
+	{
+		name="SRP_Chess22";
+		displayName="Row 3 Column F";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess23
+	{
+		name="SRP_Chess23";
+		displayName="Row 3 Column G";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess24
+	{
+		name="SRP_Chess24";
+		displayName="Row 3 Column H";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess25
+	{
+		name="SRP_Chess25";
+		displayName="Row 4 Column A";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess26
+	{
+		name="SRP_Chess26";
+		displayName="Row 4 Column B";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess27
+	{
+		name="SRP_Chess27";
+		displayName="Row 4 Column C";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess28
+	{
+		name="SRP_Chess28";
+		displayName="Row 4 Column D";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess29
+	{
+		name="SRP_Chess29";
+		displayName="Row 4 Column E";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess30
+	{
+		name="SRP_Chess30";
+		displayName="Row 4 Column F";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess31
+	{
+		name="SRP_Chess31";
+		displayName="Row 4 Column G";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess32
+	{
+		name="SRP_Chess32";
+		displayName="Row 4 Column H";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess33
+	{
+		name="SRP_Chess33";
+		displayName="Row 5 Column A";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess34
+	{
+		name="SRP_Chess34";
+		displayName="Row 5 Column B";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess35
+	{
+		name="SRP_Chess35";
+		displayName="Row 5 Column C";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess36
+	{
+		name="SRP_Chess36";
+		displayName="Row 5 Column D";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess37
+	{
+		name="SRP_Chess37";
+		displayName="Row 5 Column E";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess38
+	{
+		name="SRP_Chess38";
+		displayName="Row 5 Column F";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess39
+	{
+		name="SRP_Chess39";
+		displayName="Row 5 Column G";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess40
+	{
+		name="SRP_Chess40";
+		displayName="Row 5 Column H";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess41
+	{
+		name="SRP_Chess41";
+		displayName="Row 6 Column A";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess42
+	{
+		name="SRP_Chess42";
+		displayName="Row 6 Column B";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess43
+	{
+		name="SRP_Chess43";
+		displayName="Row 6 Column C";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess44
+	{
+		name="SRP_Chess44";
+		displayName="Row 6 Column D";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess45
+	{
+		name="SRP_Chess45";
+		displayName="Row 6 Column E";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess46
+	{
+		name="SRP_Chess46";
+		displayName="Row 6 Column F";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess47
+	{
+		name="SRP_Chess47";
+		displayName="Row 6 Column G";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess48
+	{
+		name="SRP_Chess48";
+		displayName="Row 6 Column H";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess49
+	{
+		name="SRP_Chess49";
+		displayName="Row 7 Column A";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess50
+	{
+		name="SRP_Chess50";
+		displayName="Row 7 Column B";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess51
+	{
+		name="SRP_Chess51";
+		displayName="Row 7 Column C";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess52
+	{
+		name="SRP_Chess52";
+		displayName="Row 7 Column D";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess53
+	{
+		name="SRP_Chess53";
+		displayName="Row 7 Column E";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess54
+	{
+		name="SRP_Chess54";
+		displayName="Row 7 Column F";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess55
+	{
+		name="SRP_Chess55";
+		displayName="Row 7 Column G";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess56
+	{
+		name="SRP_Chess56";
+		displayName="Row 7 Column H";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess57
+	{
+		name="SRP_Chess57";
+		displayName="Row 8 Column A";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess58
+	{
+		name="SRP_Chess58";
+		displayName="Row 8 Column B";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess59
+	{
+		name="SRP_Chess59";
+		displayName="Row 8 Column C";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess60
+	{
+		name="SRP_Chess60";
+		displayName="Row 8 Column D";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess61
+	{
+		name="SRP_Chess61";
+		displayName="Row 8 Column E";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess62
+	{
+		name="SRP_Chess62";
+		displayName="Row 8 Column F";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess63
+	{
+		name="SRP_Chess63";
+		displayName="Row 8 Column G";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Chess64
+	{
+		name="SRP_Chess64";
+		displayName="Row 8 Column H";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
 };
 
 class CfgNonAIVehicles
@@ -2784,6 +3170,392 @@ class CfgNonAIVehicles
     inventorySlot[]={"SRP_Rifle10"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_rifle10_proxy.p3d"; //proxy path 
   };
+
+
+  class Proxysrp_chess1_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess1"};
+		model="Survivalists_Mods\proxy\chess\srp_chess1_proxy.p3d";
+	};
+  class Proxysrp_chess2_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess2"};
+		model="Survivalists_Mods\proxy\chess\srp_chess2_proxy.p3d";
+	};
+  class Proxysrp_chess3_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess3"};
+		model="Survivalists_Mods\proxy\chess\srp_chess3_proxy.p3d";
+	};
+  class Proxysrp_chess4_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess4"};
+		model="Survivalists_Mods\proxy\chess\srp_chess4_proxy.p3d";
+	};
+  class Proxysrp_chess5_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess5"};
+		model="Survivalists_Mods\proxy\chess\srp_chess5_proxy.p3d";
+	};
+  class Proxysrp_chess6_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess6"};
+		model="Survivalists_Mods\proxy\chess\srp_chess6_proxy.p3d";
+	};
+  class Proxysrp_chess7_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess7"};
+		model="Survivalists_Mods\proxy\chess\srp_chess7_proxy.p3d";
+	};
+  class Proxysrp_chess8_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess8"};
+		model="Survivalists_Mods\proxy\chess\srp_chess8_proxy.p3d";
+	};
+  class Proxysrp_chess9_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess9"};
+		model="Survivalists_Mods\proxy\chess\srp_chess9_proxy.p3d";
+	};
+  class Proxysrp_chess10_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess10"};
+		model="Survivalists_Mods\proxy\chess\srp_chess10_proxy.p3d";
+	};
+  class Proxysrp_chess11_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess11"};
+		model="Survivalists_Mods\proxy\chess\srp_chess11_proxy.p3d";
+	};
+  class Proxysrp_chess12_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess12"};
+		model="Survivalists_Mods\proxy\chess\srp_chess12_proxy.p3d";
+	};
+  class Proxysrp_chess13_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess13"};
+		model="Survivalists_Mods\proxy\chess\srp_chess13_proxy.p3d";
+	};
+  class Proxysrp_chess14_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess14"};
+		model="Survivalists_Mods\proxy\chess\srp_chess14_proxy.p3d";
+	};
+  class Proxysrp_chess15_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess15"};
+		model="Survivalists_Mods\proxy\chess\srp_chess15_proxy.p3d";
+	};
+  class Proxysrp_chess16_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess16"};
+		model="Survivalists_Mods\proxy\chess\srp_chess16_proxy.p3d";
+	};
+  class Proxysrp_chess17_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess17"};
+		model="Survivalists_Mods\proxy\chess\srp_chess17_proxy.p3d";
+	};
+  class Proxysrp_chess18_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess18"};
+		model="Survivalists_Mods\proxy\chess\srp_chess18_proxy.p3d";
+	};
+  class Proxysrp_chess19_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess19"};
+		model="Survivalists_Mods\proxy\chess\srp_chess19_proxy.p3d";
+	};
+  class Proxysrp_chess20_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess20"};
+		model="Survivalists_Mods\proxy\chess\srp_chess20_proxy.p3d";
+	};
+  class Proxysrp_chess21_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess21"};
+		model="Survivalists_Mods\proxy\chess\srp_chess21_proxy.p3d";
+	};
+  class Proxysrp_chess22_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess22"};
+		model="Survivalists_Mods\proxy\chess\srp_chess22_proxy.p3d";
+	};
+  class Proxysrp_chess23_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess23"};
+		model="Survivalists_Mods\proxy\chess\srp_chess23_proxy.p3d";
+	};
+  class Proxysrp_chess24_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess24"};
+		model="Survivalists_Mods\proxy\chess\srp_chess24_proxy.p3d";
+	};
+  class Proxysrp_chess25_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess25"};
+		model="Survivalists_Mods\proxy\chess\srp_chess25_proxy.p3d";
+	};
+  class Proxysrp_chess26_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess26"};
+		model="Survivalists_Mods\proxy\chess\srp_chess26_proxy.p3d";
+	};
+  class Proxysrp_chess27_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess27"};
+		model="Survivalists_Mods\proxy\chess\srp_chess27_proxy.p3d";
+	};
+  class Proxysrp_chess28_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess28"};
+		model="Survivalists_Mods\proxy\chess\srp_chess28_proxy.p3d";
+	};
+  class Proxysrp_chess29_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess29"};
+		model="Survivalists_Mods\proxy\chess\srp_chess29_proxy.p3d";
+	};
+  class Proxysrp_chess30_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess30"};
+		model="Survivalists_Mods\proxy\chess\srp_chess30_proxy.p3d";
+	};
+  class Proxysrp_chess31_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess31"};
+		model="Survivalists_Mods\proxy\chess\srp_chess31_proxy.p3d";
+	};
+  class Proxysrp_chess32_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess32"};
+		model="Survivalists_Mods\proxy\chess\srp_chess32_proxy.p3d";
+	};
+  class Proxysrp_chess33_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess33"};
+		model="Survivalists_Mods\proxy\chess\srp_chess33_proxy.p3d";
+	};
+  class Proxysrp_chess34_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess34"};
+		model="Survivalists_Mods\proxy\chess\srp_chess34_proxy.p3d";
+	};
+  class Proxysrp_chess35_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess35"};
+		model="Survivalists_Mods\proxy\chess\srp_chess35_proxy.p3d";
+	};
+  class Proxysrp_chess36_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess36"};
+		model="Survivalists_Mods\proxy\chess\srp_chess36_proxy.p3d";
+	};
+  class Proxysrp_chess37_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess37"};
+		model="Survivalists_Mods\proxy\chess\srp_chess37_proxy.p3d";
+	};
+  class Proxysrp_chess38_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess38"};
+		model="Survivalists_Mods\proxy\chess\srp_chess38_proxy.p3d";
+	};
+  class Proxysrp_chess39_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess39"};
+		model="Survivalists_Mods\proxy\chess\srp_chess39_proxy.p3d";
+	};
+  class Proxysrp_chess40_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess40"};
+		model="Survivalists_Mods\proxy\chess\srp_chess40_proxy.p3d";
+	};
+  class Proxysrp_chess41_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess41"};
+		model="Survivalists_Mods\proxy\chess\srp_chess41_proxy.p3d";
+	};
+  class Proxysrp_chess42_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess42"};
+		model="Survivalists_Mods\proxy\chess\srp_chess42_proxy.p3d";
+	};
+  class Proxysrp_chess43_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess43"};
+		model="Survivalists_Mods\proxy\chess\srp_chess43_proxy.p3d";
+	};
+  class Proxysrp_chess44_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess44"};
+		model="Survivalists_Mods\proxy\chess\srp_chess44_proxy.p3d";
+	};
+  class Proxysrp_chess45_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess45"};
+		model="Survivalists_Mods\proxy\chess\srp_chess45_proxy.p3d";
+	};
+  class Proxysrp_chess46_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess46"};
+		model="Survivalists_Mods\proxy\chess\srp_chess46_proxy.p3d";
+	};
+  class Proxysrp_chess47_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess47"};
+		model="Survivalists_Mods\proxy\chess\srp_chess47_proxy.p3d";
+	};
+  class Proxysrp_chess48_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess48"};
+		model="Survivalists_Mods\proxy\chess\srp_chess48_proxy.p3d";
+	};
+  class Proxysrp_chess49_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess49"};
+		model="Survivalists_Mods\proxy\chess\srp_chess49_proxy.p3d";
+	};
+  class Proxysrp_chess50_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess50"};
+		model="Survivalists_Mods\proxy\chess\srp_chess50_proxy.p3d";
+	};
+  class Proxysrp_chess51_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess51"};
+		model="Survivalists_Mods\proxy\chess\srp_chess51_proxy.p3d";
+	};
+  class Proxysrp_chess52_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess52"};
+		model="Survivalists_Mods\proxy\chess\srp_chess52_proxy.p3d";
+	};
+  class Proxysrp_chess53_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess53"};
+		model="Survivalists_Mods\proxy\chess\srp_chess53_proxy.p3d";
+	};
+  class Proxysrp_chess54_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess54"};
+		model="Survivalists_Mods\proxy\chess\srp_chess54_proxy.p3d";
+	};
+  class Proxysrp_chess55_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess55"};
+		model="Survivalists_Mods\proxy\chess\srp_chess55_proxy.p3d";
+	};
+  class Proxysrp_chess56_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess56"};
+		model="Survivalists_Mods\proxy\chess\srp_chess56_proxy.p3d";
+	};
+  class Proxysrp_chess57_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess57"};
+		model="Survivalists_Mods\proxy\chess\srp_chess57_proxy.p3d";
+	};
+  class Proxysrp_chess58_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess58"};
+		model="Survivalists_Mods\proxy\chess\srp_chess58_proxy.p3d";
+	};
+  class Proxysrp_chess59_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess59"};
+		model="Survivalists_Mods\proxy\chess\srp_chess59_proxy.p3d";
+	};
+  class Proxysrp_chess60_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess60"};
+		model="Survivalists_Mods\proxy\chess\srp_chess60_proxy.p3d";
+	};  
+  class Proxysrp_chess61_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess61"};
+		model="Survivalists_Mods\proxy\chess\srp_chess61_proxy.p3d";
+	}; 
+  class Proxysrp_chess62_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess62"};
+		model="Survivalists_Mods\proxy\chess\srp_chess62_proxy.p3d";
+	}; 
+  class Proxysrp_chess63_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess63"};
+		model="Survivalists_Mods\proxy\chess\srp_chess63_proxy.p3d";
+	}; 
+  class Proxysrp_chess64_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Chess64"};
+		model="Survivalists_Mods\proxy\chess\srp_chess64_proxy.p3d";
+	}; 
   // -------------------- HIDING PROXIES
   // THIS WORKS BY SETTING THE PATH OF A PROXY TO SOMETHING
   // NONEXISTENT SO WHEN THE GAME TRIES TO RENDER, THERE IS NOTHING

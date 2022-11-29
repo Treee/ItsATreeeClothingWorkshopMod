@@ -4,6 +4,8 @@ modded class ModItemRegisterCallbacks
   {
     super.RegisterOneHanded( pType, pBehavior );     
     
+    pType.AddItemInHandsProfileIK("SRP_ChessPiece_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
+    
     // food
 		pType.AddItemInHandsProfileIK("SRP_BeerBottle", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/water_bottle.anm");
 		pType.AddItemInHandsProfileIK("Winebottle", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/water_bottle.anm");
@@ -171,7 +173,7 @@ modded class ModItemRegisterCallbacks
   override void RegisterHeavy( DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior )
   {
     super.RegisterHeavy( pType, pBehavior );
-    
+    pType.AddItemInHandsProfileIK("SRP_ChessBoard_ColorBase", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
     pType.AddItemInHandsProfileIK("BrewingJug_Plastic_Alcohol", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
     pType.AddItemInHandsProfileIK("BrewingJug_Plastic_Water", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
     pType.AddItemInHandsProfileIK("BrewingTable", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");

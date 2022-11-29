@@ -1917,7 +1917,479 @@ class CfgVehicles
       "Survivalists_Mods\gear\camping\data\srp_sleepingbagunrolled_co.paa"
     };
 	};
-  
+
+
+  class SRP_ChessBoard_ColorBase: Inventory_Base  
+	{
+		scope=0;
+		displayName="Chess Board Base";
+		descriptionShort="A chess board. Place pieces on top to play a game.";
+		model="Survivalists_Mods\gear\camping\srp_chessboard.p3d";
+		weight=500;
+		itemSize[]={3,3};
+		itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "SRP_Chess1",
+      "SRP_Chess2",
+      "SRP_Chess3",
+      "SRP_Chess4",
+      "SRP_Chess5",
+      "SRP_Chess6",
+      "SRP_Chess7",
+      "SRP_Chess8",
+      "SRP_Chess9",
+      "SRP_Chess10",
+      "SRP_Chess11",
+      "SRP_Chess12",
+      "SRP_Chess13",
+      "SRP_Chess14",
+      "SRP_Chess15",
+      "SRP_Chess16",
+      "SRP_Chess17",
+      "SRP_Chess18",
+      "SRP_Chess19",
+      "SRP_Chess20",
+      "SRP_Chess21",
+      "SRP_Chess22",
+      "SRP_Chess23",
+      "SRP_Chess24",
+      "SRP_Chess25",
+      "SRP_Chess26",
+      "SRP_Chess27",
+      "SRP_Chess28",
+      "SRP_Chess29",
+      "SRP_Chess30",
+      "SRP_Chess31",
+      "SRP_Chess32",
+      "SRP_Chess33",
+      "SRP_Chess34",
+      "SRP_Chess35",
+      "SRP_Chess36",
+      "SRP_Chess37",
+      "SRP_Chess38",
+      "SRP_Chess39",
+      "SRP_Chess40",
+      "SRP_Chess41",
+      "SRP_Chess42",
+      "SRP_Chess43",
+      "SRP_Chess44",
+      "SRP_Chess45",
+      "SRP_Chess46",
+      "SRP_Chess47",
+      "SRP_Chess48",
+      "SRP_Chess49",
+      "SRP_Chess50",
+      "SRP_Chess51",
+      "SRP_Chess52",
+      "SRP_Chess53",
+      "SRP_Chess54",
+      "SRP_Chess55",
+      "SRP_Chess56",
+      "SRP_Chess57",
+      "SRP_Chess58",
+      "SRP_Chess59",
+      "SRP_Chess60",
+      "SRP_Chess61",
+      "SRP_Chess62",
+      "SRP_Chess63",
+      "SRP_Chess64",
+    };
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_co.paa"
+    };
+    class GUIInventoryAttachmentsProps
+		{
+      class Grid_Cells
+			{
+				name="Grid Cells";
+				description="For chess pieces.";
+        icon="set:dayz_inventory image:book";
+				attachmentSlots[]=
+				{                
+          "SRP_Chess57",
+          "SRP_Chess58",
+          "SRP_Chess59",
+          "SRP_Chess60",
+          "SRP_Chess61",
+          "SRP_Chess62",
+          "SRP_Chess63",
+          "SRP_Chess64",
+          "SRP_Chess49",
+          "SRP_Chess50",
+          "SRP_Chess51",
+          "SRP_Chess52",
+          "SRP_Chess53",
+          "SRP_Chess54",
+          "SRP_Chess55",
+          "SRP_Chess56",
+          "SRP_Chess41",
+          "SRP_Chess42",
+          "SRP_Chess43",
+          "SRP_Chess44",
+          "SRP_Chess45",
+          "SRP_Chess46",
+          "SRP_Chess47",
+          "SRP_Chess48",
+          "SRP_Chess33",
+          "SRP_Chess34",
+          "SRP_Chess35",
+          "SRP_Chess36",
+          "SRP_Chess37",
+          "SRP_Chess38",
+          "SRP_Chess39",
+          "SRP_Chess40",
+          "SRP_Chess25",
+          "SRP_Chess26",
+          "SRP_Chess27",
+          "SRP_Chess28",
+          "SRP_Chess29",
+          "SRP_Chess30",
+          "SRP_Chess31",
+          "SRP_Chess32",
+          "SRP_Chess17",
+          "SRP_Chess18",
+          "SRP_Chess19",
+          "SRP_Chess20",
+          "SRP_Chess21",
+          "SRP_Chess22",
+          "SRP_Chess23",
+          "SRP_Chess24",
+          "SRP_Chess9",
+          "SRP_Chess10",
+          "SRP_Chess11",
+          "SRP_Chess12",
+          "SRP_Chess13",
+          "SRP_Chess14",
+          "SRP_Chess15",
+          "SRP_Chess16",
+          "SRP_Chess1",
+          "SRP_Chess2",
+          "SRP_Chess3",
+          "SRP_Chess4",
+          "SRP_Chess5",
+          "SRP_Chess6",
+          "SRP_Chess7",
+          "SRP_Chess8",          
+				};				
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_ChessBoard_Board: SRP_ChessBoard_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Board";
+		descriptionShort="A chess board. Place pieces on top to play a game.";
+    color="board";
+  };
+
+  class SRP_ChessPiece_ColorBase: Inventory_Base  
+	{
+		scope=0;
+		displayName="Chess Piece Base";
+		descriptionShort="A chess piece. Place on top of a chess board to play a game.";
+		model="Survivalists_Mods\gear\camping\srp_chessboard.p3d";
+		weight=500;
+		itemSize[]={1,1};
+		itemsCargoSize[]={0,0};
+    inventorySlot[]=
+    {
+      "SRP_Chess1",
+      "SRP_Chess2",
+      "SRP_Chess3",
+      "SRP_Chess4",
+      "SRP_Chess5",
+      "SRP_Chess6",
+      "SRP_Chess7",
+      "SRP_Chess8",
+      "SRP_Chess9",
+      "SRP_Chess10",
+      "SRP_Chess11",
+      "SRP_Chess12",
+      "SRP_Chess13",
+      "SRP_Chess14",
+      "SRP_Chess15",
+      "SRP_Chess16",
+      "SRP_Chess17",
+      "SRP_Chess18",
+      "SRP_Chess19",
+      "SRP_Chess20",
+      "SRP_Chess21",
+      "SRP_Chess22",
+      "SRP_Chess23",
+      "SRP_Chess24",
+      "SRP_Chess25",
+      "SRP_Chess26",
+      "SRP_Chess27",
+      "SRP_Chess28",
+      "SRP_Chess29",
+      "SRP_Chess30",
+      "SRP_Chess31",
+      "SRP_Chess32",
+      "SRP_Chess33",
+      "SRP_Chess34",
+      "SRP_Chess35",
+      "SRP_Chess36",
+      "SRP_Chess37",
+      "SRP_Chess38",
+      "SRP_Chess39",
+      "SRP_Chess40",
+      "SRP_Chess41",
+      "SRP_Chess42",
+      "SRP_Chess43",
+      "SRP_Chess44",
+      "SRP_Chess45",
+      "SRP_Chess46",
+      "SRP_Chess47",
+      "SRP_Chess48",
+      "SRP_Chess49",
+      "SRP_Chess50",
+      "SRP_Chess51",
+      "SRP_Chess52",
+      "SRP_Chess53",
+      "SRP_Chess54",
+      "SRP_Chess55",
+      "SRP_Chess56",
+      "SRP_Chess57",
+      "SRP_Chess58",
+      "SRP_Chess59",
+      "SRP_Chess60",
+      "SRP_Chess61",
+      "SRP_Chess62",
+      "SRP_Chess63",
+      "SRP_Chess64",
+    };
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_chessboard.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_ChessBoard_PawnPrimary: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Pawn";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_pawn.p3d";
+    color="PawnPrimary";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_co.paa"
+    };
+  };
+  class SRP_ChessBoard_PawnAlternate: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Pawn";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_pawn.p3d";
+    color="PawnAlternate";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_alternatepieces_co.paa"
+    };
+  };
+  class SRP_ChessBoard_RookPrimary: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Rook";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_rook.p3d";
+    color="RookPrimary";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_co.paa"
+    };
+  };
+  class SRP_ChessBoard_RookAlternate: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Rook";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_rook.p3d";
+    color="RookAlternate";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_alternatepieces_co.paa"
+    };
+  };
+  class SRP_ChessBoard_KnightPrimary: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Knight";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_knight.p3d";
+    color="KnightPrimary";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_co.paa"
+    };
+  };
+  class SRP_ChessBoard_KnightAlternate: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Knight";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_knight.p3d";
+    color="KnightAlternate";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_alternatepieces_co.paa"
+    };
+  };
+  class SRP_ChessBoard_BishopPrimary: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Bishop";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_bishop.p3d";
+    color="BishopPrimary";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_co.paa"
+    };
+  };
+  class SRP_ChessBoard_BishopAlternate: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Bishop";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_bishop.p3d";
+    color="BishopAlternate";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_alternatepieces_co.paa"
+    };
+  };
+  class SRP_ChessBoard_QueenPrimary: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Queen";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_queen.p3d";
+    color="QueenPrimary";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_co.paa"
+    };
+  };
+  class SRP_ChessBoard_QueenAlternate: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - Queen";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_queen.p3d";
+    color="QueenAlternate";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_alternatepieces_co.paa"
+    };
+  };
+  class SRP_ChessBoard_KingPrimary: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - King";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_king.p3d";
+    color="KingPrimary";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_co.paa"
+    };
+  };
+  class SRP_ChessBoard_KingAlternate: SRP_ChessPiece_ColorBase  
+	{
+		scope=2;
+		displayName="Chess Piece - King";
+    model="Survivalists_Mods\gear\camping\srp_chessboard_king.p3d";
+    color="KingAlternate";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_chessboard_alternatepieces_co.paa"
+    };
+  };
+
 
 //============================================== DECORATIVE LIGHTS
 
