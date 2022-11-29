@@ -16,24 +16,19 @@ class CfgPatches
 class CfgWeapons
 {
   class RifleCore;
-  class Pistol_Base;
+//=========================================== VANILLA OVERRIDE  
+  class Pistol_Base: PistolCore
+	{
+		inventorySlot[]+=
+		{
+			"SRP_GunDerringer"
+		};
+	};
 
   class Derringer_Base: Pistol_Base
 	{
     itemSize[]={2,2};
-		inventorySlot[]+=
-		{
-   		"SRP_GunDerringer"
-		};
 	};
-  class Flaregun_Base: Pistol_Base
-	{
-    inventorySlot[]+=
-		{
-   		"SRP_GunDerringer"
-		};
-  };
-
   class Derringer_Black: Derringer_Base
 	{
 		scope=0;

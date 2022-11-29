@@ -24,6 +24,24 @@ class CfgVehicles
 			"Hook",
       "SRP_FishingLure"
 		};  
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\crafting\data\wooden_stick.rvmat"}},						
+						{0.69999999,{"DZ\gear\crafting\data\wooden_stick.rvmat"}},						
+						{0.5,{"DZ\gear\crafting\data\wooden_stick_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\crafting\data\wooden_stick_damage.rvmat"}},						
+						{0,{"DZ\gear\crafting\data\wooden_stick_destruct.rvmat"}}
+					};
+				};
+			};
+		};
   };
   class ObsoleteFishingRod: FishingRod_Base_New
   {
@@ -31,7 +49,25 @@ class CfgVehicles
 		{
 			"Hook",
       "SRP_FishingLure"
-		};  
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\crafting\data\wooden_stick.rvmat"}},						
+						{0.69999999,{"DZ\gear\crafting\data\wooden_stick.rvmat"}},						
+						{0.5,{"DZ\gear\crafting\data\wooden_stick_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\crafting\data\wooden_stick_damage.rvmat"}},						
+						{0,{"DZ\gear\crafting\data\wooden_stick_destruct.rvmat"}}
+					};
+				};
+			};
+		};
   };
   class FishingRod: FishingRod_Base_New
   {
@@ -40,6 +76,24 @@ class CfgVehicles
 			"Hook",
       "SRP_FishingLure"
 		};  
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=750;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\tools\data\fishing_rod.rvmat"}},						
+						{0.69999999,{"DZ\gear\tools\data\fishing_rod.rvmat"}},						
+						{0.5,{"DZ\gear\tools\data\fishing_rod_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\tools\data\fishing_rod_damage.rvmat"}},						
+						{0,{"DZ\gear\tools\data\fishing_rod_destruct.rvmat"}}
+					};
+				};
+			};
+		};
   };
   
   class SRP_FishingWoodRod_Kit: SRP_Fishing_KitBase
@@ -58,7 +112,6 @@ class CfgVehicles
 			"Material_FPole_MetalWire"
     };
 	};
-
   class SRP_HandMadeFishingRod: FishingRod_Base_New
 	{
 		scope=2;
@@ -107,7 +160,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=150;
+					hitpoints=1500;
 					healthLevels[]=
 					{						
 						{1.0,{"Survivalists_Fishing\tools\data\handmadefishingrod.rvmat"}},						
@@ -155,7 +208,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_HandMadeFishingRod_Blue: SRP_HandMadeFishingRod
 	{
 		scope=2;
@@ -172,7 +224,6 @@ class CfgVehicles
 			"Survivalists_Fishing\tools\data\handmadefishingrod.rvmat"
 		};
 	};
-
   class SRP_HandMadeFishingRod_Purple: SRP_HandMadeFishingRod
 	{
 		scope=2;
@@ -189,7 +240,6 @@ class CfgVehicles
 			"Survivalists_Fishing\tools\data\handmadefishingrod.rvmat"
 		};
 	};
-
   class SRP_HandMadeFishingRod_Red: SRP_HandMadeFishingRod
 	{
 		scope=2;
@@ -206,5 +256,4 @@ class CfgVehicles
 			"Survivalists_Fishing\tools\data\handmadefishingrod.rvmat"
 		};
 	};
-
 };
