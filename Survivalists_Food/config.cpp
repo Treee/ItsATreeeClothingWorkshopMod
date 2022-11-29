@@ -359,11 +359,11 @@ class CfgVehicles
   };
   class SardinesCan: Edible_Base
   {
-    itemSize[]={1,2};
+    itemSize[]={2,1};
   };
   class SardinesCan_Opened: Edible_Base
   {
-    itemSize[]={1,2};
+    itemSize[]={2,1};
   };
   class Lard: Edible_Base
 	{
@@ -3800,6 +3800,20 @@ class CfgVehicles
 			water=0;
 			nutritionalIndex=1;
 			toxicity=0;
+		};
+	};
+  class Zagorky_RiceCrispy: Zagorky_ColorBase
+	{
+		scope=2;
+		displayName="Rice Crispy";
+		descriptionShort="Oooey gooey rice crispies made with mashmallow and rice crisps.";
+		hiddenSelections[]=
+		{			
+      "camoground"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Food\food\data\tuna_ricecrispy_co.paa"
 		};
 	};
 	class Chips_Potato: Chips
