@@ -800,7 +800,36 @@ class CfgVehicles
 			soundSet="SRPRadio_HejSekiSeki_SoundSet1";
 		};
 	};
-
+  class SRPRadio_CassetteTape_Narkotik: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Narkotik";
+		descriptionShort="Music Tape - Narkotik";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Narkotik_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_RussianItsMyLife: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Its My Life (Russian)";
+		descriptionShort="Music Tape - Turko";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ItsMyLifeRussian_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Kalinka: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Kalinka";
+		descriptionShort="Music Tape - Kalinka";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Kalinka_Shader1";
+		};
+	};
   class SRPRadio_CassetteTape_TheFightingSide_BadMan: SRPRadio_CassetteTape_Base
 	{
 		scope=2;

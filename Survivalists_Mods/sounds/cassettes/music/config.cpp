@@ -278,6 +278,28 @@ class CfgSoundShaders
 		};
 	};
 
+  class SRPRadio_Narkotik_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Narkotik.ogg",1}
+		};
+	};
+  class SRPRadio_ItsMyLifeRussian_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Its my life Russian version.ogg",1}
+		};
+	};
+  class SRPRadio_Kalinka_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Mods\sounds\cassettes\music\data\Kalinka.ogg",1}
+		};
+	};
+
   class SRPRadio_TheFightingSide_BadMan_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[] =
@@ -593,7 +615,27 @@ class CfgSoundSets
 			"SRPRadio_HejSekiSeki_Shader1"
 		};
 	};
-
+  class SRPRadio_Narkotik_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_Narkotik_Shader1"
+		};
+	};
+  class SRPRadio_ItsMyLifeRussian_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_ItsMyLifeRussian_Shader1"
+		};
+	};
+  class SRPRadio_Kalinka_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_Kalinka_Shader1"
+		};
+	};
   class SRPRadio_TheFightingSide_BadMan_SoundSet1
 	{
 		soundShaders[] =
