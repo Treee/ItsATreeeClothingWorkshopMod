@@ -15,7 +15,7 @@ class CfgPatches
 
 class CfgWeapons
 {
-  class RifleCore;
+  class PistolCore;
 //=========================================== VANILLA OVERRIDE  
   class Pistol_Base: PistolCore
 	{
