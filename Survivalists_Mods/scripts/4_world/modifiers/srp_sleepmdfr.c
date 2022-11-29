@@ -310,7 +310,8 @@ class SRP_SleepMdfr extends ModifierBase
       if (player.IsAwake())
       {
         // Print("[SRP_SleepMdfr] - [GetHeatComfortRestfulness] - : NEAR COMFORT!!");
-        return RESTFULLNESS_FIRECOMFORT * 0.1;
+        // slowly regen sleep when not sleeping (negative is because reversing awake tendency)
+        return -RESTFULLNESS_FIRECOMFORT * 0.1;
       }
       else
       {

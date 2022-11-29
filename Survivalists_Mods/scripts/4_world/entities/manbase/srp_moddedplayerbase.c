@@ -191,10 +191,6 @@ modded class PlayerBase
     {
       return true;
     }
-    // if (IsAlpha())
-    // {
-    //   return true;
-    // }
     if (GetPlayerRadiationProtection() > 5)
     {
       return true;
@@ -233,61 +229,7 @@ modded class PlayerBase
     {
       return 8.0;
     }
-
     return m_TotalContaminationProtection;
-    
-    // float protection = 0;
-    // ItemBase wornItem;
-    // wornItem = GetItemOnSlot("Headgear");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
-    // }
-    // wornItem = GetItemOnSlot("Gloves");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
-    // }
-    // wornItem = GetItemOnSlot("Body");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
-    // }
-    // wornItem = GetItemOnSlot("Bottom");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
-    // }
-    // wornItem = GetItemOnSlot("Feet");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
-    // }
-    // wornItem = GetItemOnSlot("Mask");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL, true);
-    // }
-    // wornItem = GetItemOnSlot("Armband");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
-    // }
-    // wornItem = GetItemOnSlot("Backpack");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
-    // }
-    // wornItem = GetItemOnSlot("Extra");
-    // if (wornItem)
-    // {
-    //   protection += wornItem.GetProtectionLevel(DEF_BIOLOGICAL);
-    // }
-    // if (IsPlayerMutant())
-    // {
-    //   protection += 8.0;
-    // }
-    // return protection;
   }
 
   bool IsSprintDisabledByHeavyItemInHands()
