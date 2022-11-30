@@ -8,7 +8,18 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-			"Survivalists_Retextures"
+			"Survivalists_Retextures",
+      "Ragged_Eyepatch",
+      "Assets_Shemagh",
+      "Winter_Parka",
+      "Kneepads_Jeans",
+      "Layered_Shirt",
+      "Leather_cloak",
+      "Galife_Pants",
+      "High_Knee_Sneakers",
+      "SK8_Sneakers",
+      "Leggings",
+      "Scarf"
 		};
 	};
 };
@@ -26,6 +37,10 @@ class CfgVehicles
   class Scarf_ColorBase;
   class Leather_Cloak_down;
   class Leather_Cloak_up;
+  class Galife_Pants_ColorBase;
+  class High_Knee_Sneakers;
+  class Leggings_ColorBase;
+  class Kirza_Boots_ColorBase;
 
 	class Layered_Shirt_Cheburashka: Layered_Shirt_Base
 	{
@@ -161,8 +176,6 @@ class CfgVehicles
 		};
 	};
 
-
-
 	class Shemagh_Checkered_Black_color: Shemagh_ColorBase
 	{
 		visibilityModifier=0.85000002;
@@ -178,7 +191,7 @@ class CfgVehicles
 		scope=2;
 		color="Checkered_Black";
 	};
-  
+
   class Shemagh_Bandit_Checkered_Black_color: Shemagh_Bandit_ColorBase
 	{
 		visibilityModifier=0.85000002;
@@ -467,6 +480,30 @@ class CfgVehicles
       "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_pink_Yellow_co.paa"
     };
   };
+  class Scarf_bluekitty: Scarf_ColorBase
+  {
+    scope=2;    
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_bluekitty_co.paa"
+    };
+  };
+  class Scarf_greykitty: Scarf_ColorBase
+  {
+    scope=2;    
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_greykitty_co.paa"
+    };
+  };
+  class Scarf_pinkkitty: Scarf_ColorBase
+  {
+    scope=2;    
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\externalmodretextures\windstrides\data\scarf_pinkkitty_co.paa"
+    };
+  };
 	class Leather_Cloak_down_blue: Leather_Cloak_down
 	{
 		scope=2;
@@ -648,5 +685,124 @@ class CfgVehicles
 		transformation_nohood="Leather_Cloak_down_yellow";
     color="yellow";
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leather_cloak_yellow_co.paa"};
+	};
+
+  class Galife_Pants_Blue: Galife_Pants_ColorBase
+	{
+		scope=2;		
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\galife_pants_blue_co.paa"};
+	};
+  class Galife_Pants_Coal: Galife_Pants_ColorBase
+	{
+		scope=2;		
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\galife_pants_Coal_co.paa"};
+	};
+  class Galife_Pants_Pink: Galife_Pants_ColorBase
+	{
+		scope=2;		
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\galife_pants_Pink_co.paa"};
+	};
+  class Galife_Pants_Green: Galife_Pants_ColorBase
+	{
+		scope=2;		
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\galife_pants_Green_co.paa"};
+	};
+  class Galife_Pants_Wool: Galife_Pants_ColorBase
+	{
+		scope=2;		
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\galife_pants_Wool_co.paa"};
+	};
+
+  class High_Knee_Sneakers_Blue: High_Knee_Sneakers
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\high_knee_sneakers_blue_co.paa"};
+	};
+  class High_Knee_Sneakers_Brown: High_Knee_Sneakers
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\high_knee_sneakers_Brown_co.paa"};
+	};
+  class High_Knee_Sneakers_Green: High_Knee_Sneakers
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\high_knee_sneakers_Green_co.paa"};
+	};
+  class High_Knee_Sneakers_Pink: High_Knee_Sneakers
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\high_knee_sneakers_Pink_co.paa"};
+	};
+  class High_Knee_Sneakers_Purple: High_Knee_Sneakers
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\high_knee_sneakers_Purple_co.paa"};
+	};
+  class Kirza_Boots_Blue: Kirza_Boots_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\kirza_boots_blue_co.paa"};
+	};
+
+  class Leggings_Blue: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leggings_sports_blue_co.paa"};
+	};
+  class Leggings_Blue1: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Windstrideclothing\Models\Leggings\data\leggings_blue_co.paa"};
+	};
+  class Leggings_Adidas: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Windstrideclothing\Models\Leggings\data\leggings_sports_co.paa"};
+	};
+  class Leggings_Red: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Windstrideclothing\Models\Leggings\data\leggings_red_co.paa"};
+	};
+  class Leggings_Purple: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Windstrideclothing\Models\Leggings\data\leggings_purple_co.paa"};
+	};
+  class Leggings_Grey: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Windstrideclothing\Models\Leggings\data\fleece_leggings_grey_co.paa"};
+	};
+  class Leggings_Black: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Windstrideclothing\Models\Leggings\data\latex_leggings_black_co.paa"};
+	};
+  class Leggings_White: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Windstrideclothing\Models\Leggings\data\latex_leggings_white_co.paa"};
+	};
+  class Leggings_AdidasKitty: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leggings_sports_kitty_co.paa"};
+	};
+  class Leggings_AdidasPink: Leggings_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\externalmodretextures\windstrides\data\leggings_sports_pink_co.paa"};
 	};
 };

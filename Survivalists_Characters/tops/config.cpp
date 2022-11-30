@@ -9,7 +9,8 @@ class CfgPatches
 		{
 			"DZ_Characters",
       "DZ_Characters_Tops",
-      "Survivalists_Armbands_Flag"
+      "Survivalists_Armbands_Flag",
+      "Winter_Parka"
 		};
 	};
 };
@@ -28,7 +29,19 @@ class CfgVehicles
       biological=6;
     };
 	};
-
+  //-------------------------------------MOD OVERRIDE
+	class Winter_Parka_Base: Clothing
+  {
+    rootClassName="SRP_Winter_Parka";
+    colorVariants[]=
+    {
+      "Black",
+      "PinkWhite",
+      "PinkBlack",
+      "BlueWhite",
+      "BlueBlack"
+    };
+  }; 
   //----------------------------------- BASE GAME OVERRIDE
   class NBCJacketBase: Clothing
 	{

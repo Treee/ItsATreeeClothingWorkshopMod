@@ -15,6 +15,7 @@ class CfgPatches
 };
 class CfgVehicles
 {
+  class WitchHat;
 	class BallisticHelmet_ColorBase;
 	class BaseballCap_ColorBase;
 	class SantasHat;
@@ -1707,6 +1708,31 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\Cowboy_purple_CO.paa"
 		};
 	};
+
+  class WitchHat_Blue: WitchHat
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\witchhat_blue_co.paa"};
+  };
+  class WitchHat_BlueKitty: WitchHat
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\witchhat_BlueKitty_co.paa"};
+  };
+  class WitchHat_Pink: WitchHat
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\witchhat_Pink_co.paa"};
+  };
+  class WitchHat_RedKitty: WitchHat
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\witchhat_RedKitty_co.paa"};
+  };
 
   class SRP_FrakenArmor_Helmet_Basic: SRP_FrakenArmor_Helmet_ColorBase  // new
 	{

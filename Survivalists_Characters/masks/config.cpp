@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Characters",
-      "DZ_Characters_Masks"
+      "DZ_Characters_Masks",
+      "Scarf"
 		};
 	};
 };
@@ -17,6 +18,28 @@ class CfgVehicles
   class Clothing;
   class Bandana_ColorBase;
   class GP5GasMask_Filter;
+
+  //------------------------------------- MODDED OVERRIDE
+  class Scarf_ColorBase: Clothing
+	{
+    rootClassName="Scarf";
+    colorVariants[]=
+    {
+      "Brown",
+      "ColorPalette1",
+      "Blue",
+      "Green",
+      "Purple",
+      "White_Plaid",
+      "Red_Plaid",
+      "blue_yellow",
+      "red",
+      "pink_yellow",
+      "bluekitty",
+      "greykitty",
+      "pinkkitty"      
+    };
+  };
 
   //------------------------------------- BASE GAME OVERRIDE
   class BalaclavaMask_ColorBase: Clothing

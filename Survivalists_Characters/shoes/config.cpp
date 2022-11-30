@@ -8,7 +8,9 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Characters",
-      "DZ_Characters_Shoes"
+      "DZ_Characters_Shoes",
+      "High_Knee_Sneakers",
+      "SK8_Sneakers",
 		};
 	};
 };
@@ -16,6 +18,33 @@ class CfgVehicles
 {
   class Clothing;
 
+  //-------------------------------------MODDED OVERRIDE
+  class High_Knee_Sneakers: Clothing
+	{
+    rootClassName="High_Knee_Sneakers";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Brown",
+      "Green",
+      "Pink",
+      "Purple",    
+    };
+  };
+  class Kirza_Boots_ColorBase: Clothing
+	{
+    rootClassName="High_Knee_Sneakers";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Brown",
+      "Green",
+      "Pink",
+      "Purple",    
+    };
+  };
   //-------------------------------------BASE GAME OVERRIDE
 	class NBCBootsBase: Clothing
 	{

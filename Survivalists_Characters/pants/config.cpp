@@ -8,7 +8,9 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Characters",
-      "DZ_Characters_Pants"
+      "DZ_Characters_Pants",
+      "Kneepads_Jeans",
+      "Galife_Pants"
 		};
 	};
 };
@@ -16,6 +18,57 @@ class CfgVehicles
 {
   class Clothing;
 
+  //-------------------------------------MODDED OVERRIDE
+  class Skinny_Jeans_ColorBase: Clothing
+  {
+    rootClassName="Skinny_Jeans";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Chocolate",
+      "Coal",
+      "HeartBunnyPetal",
+      "HeartBunnySky",
+      "HeartPink",
+      "Lime",
+      "PurpleDark",
+      "RedBunny",
+      "TealBunny",
+      "YellowBunny"
+    };
+  };
+  class Galife_Pants_ColorBase: Clothing
+  {
+    rootClassName="Galife_Pants";
+    colorVariants[]=
+    {
+      "Olive",
+      "Navy",
+      "Blue",
+      "Coal",
+      "Green",
+      "Pink",
+      "Wool"      
+    };
+  };
+  class Leggings_Colorbase: Clothing
+  {
+    rootClassName="Leggings";
+    colorVariants[]=
+    {
+      "Blue",
+      "Blue1",
+      "Adidas",
+      "adidasKitty",
+      "AdidasPink",
+      "Red",
+      "Purple",
+      "Grey",
+      "Black",
+      "White",
+    };
+  };
   //-------------------------------------BASE GAME OVERRIDE
   class Jeans_ColorBase: Clothing
   {

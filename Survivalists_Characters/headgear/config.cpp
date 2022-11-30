@@ -13,7 +13,7 @@ class CfgPatches
       "DZ_Characters_Masks",
       "DZ_Gear_Optics",
       "DZ_Characters_Glasses",
-      "MSP_Clothing_Data"//bunny ears
+      "MSP_Clothing_Data"//bunny ears, slouchie
 		};
 	};
 };
@@ -27,7 +27,28 @@ class CfgVehicles
 	class Msp_BunnyEarsHeadband: Clothing
 	{
     inventorySlot[]+={"Wig"};
-  };  
+  };
+  class Msp_Slouchie_ColorBase: Clothing
+	{
+    rootClassName="Msp_Slouchie";
+    colorVariants[]=
+    {
+      "Beige",
+      "Black",
+      "Blue",
+      "Red",
+      "Red1",      
+      "Green",      
+      "GreenWeed",      
+      "GreyKitty",      
+      "Pink",      
+      "PinkKitty",      
+      "PinkWeed",      
+      "PinkPurple",      
+      "Teal",      
+      "TealWeed",      
+    };
+	};
 
 //-------------------------------------- BASE GAME OVERRIDE
   class BallisticHelmet_ColorBase: Clothing
@@ -473,6 +494,27 @@ class CfgVehicles
       "USNAOR2",      
       "SURPAT",      
       "MARPATWinter",      
+    };
+  };
+  class WitchHood_ColorBase: Clothing
+  {
+    rootClassName="WitchHood";
+    colorVariants[]=
+    {
+      "Black",
+      "Brown",
+      "Red",           
+    };
+  };
+  class WitchHat: Clothing
+  {
+    rootClassName="WitchHat";
+    colorVariants[]=
+    {
+      "Blue",
+      "BlueKitty",
+      "Pink",
+      "RedKitty",           
     };
   };
 
