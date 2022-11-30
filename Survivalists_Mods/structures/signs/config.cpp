@@ -66,6 +66,37 @@ class CfgVehicles
 		};
 	};
 
+  class Land_srp_picturewall_large_map: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\srp_picturewall_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "back"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_picturewall_map_2k_co.paa",
+			"Survivalists_Mods\structures\signs\data\srp_picturewall_map_2k_co.paa",
+		};
+	};
+  class Land_srp_picturewall_large_mapfactions: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\srp_picturewall_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "back"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\srp_picturewall_map_factions_co.paa",
+			"Survivalists_Mods\structures\signs\data\srp_picturewall_map_factions_co.paa",
+		};
+	};
+
   class Land_srp_billboard_largeground_sign1: HouseNoDestruct
 	{
 		scope=1;
