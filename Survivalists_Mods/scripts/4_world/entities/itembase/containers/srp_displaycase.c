@@ -225,7 +225,7 @@ class SRP_GlassDisplayCase_Hook_ArmbandDouble extends SRP_GlassDisplayCase_Hook
 	
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
-		return ( attachment && attachment.IsKindOf("MassArmbandDouble_Colorbase") );
+		return ( attachment && (attachment.IsKindOf("MassArmbandDouble_Colorbase") || attachment.IsKindOf("SRP_DoubleArmband_ColorBase") ));
 	}
 };
 class SRP_GlassDisplayCase_Hook_ArmbandLeather extends SRP_GlassDisplayCase_Hook

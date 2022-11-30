@@ -9,7 +9,8 @@ class CfgPatches
 		{
       "DZ_Data",
 			"DZ_Characters",
-      "Survivalists_Mods"
+      "DZ_Characters_Tops",
+      "DZ_Gear_Camping"
 		};
 	};
 };
@@ -19,7 +20,7 @@ class CfgVehicles
 
 	class Clothing;  
   class Inventory_Base;
-  class MassArmbandDouble_Colorbase;
+  class Armband_ColorBase;
   class Flag_Base;  
 
   //------------------------------ FLAG PATCHES
@@ -214,6 +215,79 @@ class CfgVehicles
 			};
 		};
 	};  
+
+  class SRP_DoubleArmband_ColorBase: Armband_ColorBase
+	{	
+		scope=0;
+		model="\DZ\characters\tops\armbend_g.p3d";
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		itemsCargoSize[]={1,1};
+		absorbency=0;
+		heatIsolation=0.80;
+		hiddenSelections[]=
+		{
+			"camoGround",
+      "camoFemale_big_a",
+      "camoFemale_small_a",
+      "camoMale_big_a",
+      "camoMale_small_a",
+      //"zbytek" // only use this selection if you dont care about small/big armbands with/out tops
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\DZ\characters\tops\data\armbend_big_white_co.paa",
+			"\DZ\characters\tops\data\armbend_big_white_co.paa",
+			"\DZ\characters\tops\data\armbend_big_white_co.paa",
+			"\DZ\characters\tops\data\armbend_big_white_co.paa",
+			"\DZ\characters\tops\data\armbend_big_white_co.paa",
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Mods\gear\patches\srp_doublearmband_m.p3d";
+			female="Survivalists_Mods\gear\patches\srp_doublearmband_f.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+          healthLevels[]=
+          {
+            {1.0,{"DZ\characters\tops\Data\armband_big_a.rvmat"}},
+            {0.7,{"DZ\characters\tops\Data\armband_big_a.rvmat"}},
+            {0.5,{"DZ\characters\tops\Data\armband_big_a_damage.rvmat"}},
+            {0.3,{"DZ\characters\tops\Data\armband_big_a_damage.rvmat"}},
+            {0.0,{"DZ\characters\tops\Data\armband_big_a_destruct.rvmat"}}
+          };
+				};
+			};
+		};
+	};  
+
+  class SRP_DoubleArmband_Test: SRP_DoubleArmband_ColorBase
+	{
+		scope=2;
+		color="test";
+    hiddenSelections[]=
+		{
+			"camoGround",
+      "camoFemale_big_a",
+      "camoFemale_small_a",
+      "camoMale_big_a",
+      "camoMale_small_a",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+		};
+	};
 	
   //---------------------------- LOGO PATCHES
 	class SRP_PatchLogo_ColorBase: Clothing
@@ -293,7 +367,7 @@ class CfgVehicles
 
   //------------------------------------- EVENT THINGS
   // -------------------------- CUSTOM STUFF
-  class Armband_Event_Generic: MassArmbandDouble_Colorbase
+  class SRP_DoubleArmband_Event_Generic: SRP_DoubleArmband_ColorBase
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa","Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa"};
@@ -326,7 +400,7 @@ class CfgVehicles
 		};	
   };
 
-  class Armband_Event_Espen: MassArmbandDouble_Colorbase
+  class SRP_DoubleArmband_Event_Espen: SRP_DoubleArmband_ColorBase
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa","Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa"};

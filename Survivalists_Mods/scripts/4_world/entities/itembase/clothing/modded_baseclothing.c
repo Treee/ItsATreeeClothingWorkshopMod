@@ -30,6 +30,8 @@ modded class DarkMotoHelmet_ColorBase
 	}
 };
 
+class SRP_DoubleArmband_ColorBase extends Armband_ColorBase{};
+
 class Skylar_BioZone_Protection extends Armband_ColorBase
 {
   override bool CanDetachAttachment (EntityAI parent)
