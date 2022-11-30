@@ -37,7 +37,6 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
       {
         return false;
       }
-      // if (GetVariantIdOptions(target_clothing.GetType()).Count() > 0)
       if (target_clothing.HasDyableOptions())
       {
         // Print("Action condition- target is clothing: " + target_clothing);
