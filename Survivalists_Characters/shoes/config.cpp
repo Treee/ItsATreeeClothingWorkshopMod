@@ -34,7 +34,7 @@ class CfgVehicles
   };
   class Kirza_Boots_ColorBase: Clothing
 	{
-    rootClassName="High_Knee_Sneakers";
+    rootClassName="Kirza_Boots";
     colorVariants[]=
     {
       "Black",

@@ -32,9 +32,11 @@ class CfgVehicles
   //-------------------------------------MOD OVERRIDE
 	class Winter_Parka_Base: Clothing
   {
-    rootClassName="SRP_Winter_Parka";
+    rootClassName="Winter_Parka";
     colorVariants[]=
     {
+      "White",
+      "Green",
       "Black",
       "PinkWhite",
       "PinkBlack",
