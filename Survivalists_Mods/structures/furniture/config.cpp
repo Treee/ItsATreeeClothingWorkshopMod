@@ -41,6 +41,26 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_Gazebo_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Gazebo Kit";
+		descriptionShort="A placeable gazebo kit!";
+	};
+  class SRP_Furniture_Gazebo: HouseNoDestruct
+	{
+		scope=2;
+		model="Survivalists_Mods\structures\furniture\srp_gazebo.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\furniture\data\srp_gazeebo_co.paa"
+		};
+	};
+
   class SRP_Furniture_WitchTable: Container_Base  // new
 	{
 		scope=2;

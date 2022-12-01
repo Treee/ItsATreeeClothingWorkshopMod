@@ -79,6 +79,7 @@ class SRP_Furniture_OldWoodenChair_Kit extends SRP_KitBase{};
 class SRP_Furniture_WoodenChair_Kit extends SRP_KitBase{};
 class SRP_Furniture_WoodenStairs_Kit extends SRP_KitBase{};
 class SRP_WoodenBench_Kit extends SRP_KitBase{};
+class SRP_Furniture_Gazebo_Kit extends SRP_KitBase{};
 
 class SRP_Furniture_LogStump_Kit extends SRP_KitBase{};
 class SRP_Furniture_LogBenchSmall_Kit extends SRP_KitBase{};
