@@ -1,6 +1,10 @@
 modded class DayZGame
 {
   protected ref SRPConfig m_SRPConfig;
+  void DayZGame()
+  {  
+    RemoveMutantSurvivorClassTypes();
+  }
 
   void ~DayZGame()
   {
@@ -18,17 +22,24 @@ modded class DayZGame
     return m_SRPConfig;
   }
 
-  override string CreateRandomPlayer()
-	{
-    string randomSkin = super.CreateRandomPlayer();
-    if (randomSkin == "DUB_SurMutant_F" || randomSkin == "DUB_SurMutant_F_2")
-    {
-      randomSkin = "SurvivorF_Eva";
-    }
-    else if (randomSkin == "DUB_SurMutant_M" || randomSkin == "DUB_SurMutant_M_2")
-    {
-      randomSkin = "SurvivorM_Mirek";
-    }
-		return randomSkin;
+  void RemoveMutantSurvivorClassTypes()
+  {
+    string path = "cfgVehicles";
+		string child_name = "";
+		int count = ConfigGetChildrenCount( path );
+		m_CharClassNames.Clear();
+
+		for (int p = 0; p < count; ++p)
+		{
+			ConfigGetChildName( path, p, child_name );
+			
+			if (ConfigGetInt(path + " " + child_name + " scope") == 2 && IsKindOf(child_name, "SurvivorBase"))
+			{
+        if (!child_name.Contains("DUB_"))
+        {
+          m_CharClassNames.Insert(child_name);
+        }
+      }
+		}
   }
 };
