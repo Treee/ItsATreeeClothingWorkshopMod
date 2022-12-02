@@ -708,6 +708,82 @@ class CfgVehicles
 
   //===================== CUSTOM SHIRTS
 
+  class SRP_Bowtie_ColorBase: Clothing
+	{
+    scope=0;
+		displayName="Bow Tie";
+		descriptionShort="A tie for any formal occasion.";
+		model="Survivalists_Characters\tops\srp_bowtie_g.p3d";
+		inventorySlot[]=
+		{
+			"Armband",
+      "Extra",
+      "Wig"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Armband"
+		};
+    rootClassName="SRP_Bowtie";
+    colorVariants[]=
+    {      
+      "BlackWhiteDot"
+    };
+		rotationFlags=34;
+		weight=80;
+		itemSize[]={1,2};
+		ragQuantity=1;
+		varWetMax=1;
+		absorbency=0.80000001;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]={"Survivalists_Characters\tops\data\srp_bowtie_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},						
+						{0.69999999,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},						
+						{0.5,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},						
+						{0.30000001,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},						
+						{0,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}}
+					};
+				};
+			};
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\tops\srp_bowtie_m.p3d";
+			female="Survivalists_Characters\tops\srp_bowtie_f.p3d";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
   class SRP_PlatHoodie: Clothing
 	{
     scope=2;

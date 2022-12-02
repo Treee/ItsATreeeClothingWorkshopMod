@@ -43,6 +43,7 @@ class CfgVehicles
 	class WoolCoat_ColorBase;
   class SRP_Rolled_Shirt_ColorBase;
   class SRP_ESPG3_TacShirt_Colorbase;
+  class SRP_Bowtie_ColorBase;
 
   // modded classes
   class DUB_Monkrobe;
@@ -2941,5 +2942,48 @@ class CfgVehicles
     {
       "Survivalists_Retextures\characters\tops\data\ESP_G3_TacShirt_Green_CO.paa"
     };
+  };
+
+  class SRP_Bowtie_BlackWhiteDot: SRP_Bowtie_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\srp_bowtie_co.paa"};
+  };
+  class SRP_Bowtie_Black: SRP_Bowtie_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\srp_bowtie_black_co.paa"};
+  };
+  class SRP_Bowtie_Blue: SRP_Bowtie_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\srp_bowtie_blue_co.paa"};
+  };
+  class SRP_Bowtie_Gold: SRP_Bowtie_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\srp_bowtie_gold_co.paa"};
+  };
+  class SRP_Bowtie_Purple: SRP_Bowtie_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\srp_bowtie_purple_co.paa"};
+  };
+  class SRP_Bowtie_Red: SRP_Bowtie_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\srp_bowtie_red_co.paa"};
+  };
+  class SRP_Bowtie_Yellow: SRP_Bowtie_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\srp_bowtie_yellow_co.paa"};
   };
 };
