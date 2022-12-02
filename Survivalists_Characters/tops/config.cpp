@@ -728,7 +728,13 @@ class CfgVehicles
     rootClassName="SRP_Bowtie";
     colorVariants[]=
     {      
-      "BlackWhiteDot"
+      "BlackWhiteDot",
+      "Black",
+      "Blue",
+      "Gold",
+      "Purple",
+      "Red",
+      "Yellow",
     };
 		rotationFlags=34;
 		weight=80;
