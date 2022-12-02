@@ -738,7 +738,7 @@ class CfgVehicles
     };
 		rotationFlags=34;
 		weight=80;
-		itemSize[]={1,2};
+		itemSize[]={2,1};
 		ragQuantity=1;
 		varWetMax=1;
 		absorbency=0.80000001;
