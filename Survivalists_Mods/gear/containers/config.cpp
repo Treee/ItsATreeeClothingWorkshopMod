@@ -126,7 +126,7 @@ class CfgVehicles
     useEntityHierarchy="true";
 		physLayer="item_large";
 		weight=10000;
-		itemSize[]={10,5};
+		itemSize[]={10,6};
 		class Cargo
 		{
 			itemsCargoSize[]={10,15};
@@ -179,7 +179,7 @@ class CfgVehicles
 		itemSize[]={10,15};
 		class Cargo
 		{
-			itemsCargoSize[]={10,4};
+			itemsCargoSize[]={10,6};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
@@ -240,7 +240,7 @@ class CfgVehicles
     };
 		class Cargo
 		{
-			itemsCargoSize[]={10,4};
+			itemsCargoSize[]={10,6};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
