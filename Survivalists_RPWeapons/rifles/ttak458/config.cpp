@@ -23,7 +23,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="Molot VEPR";
-		descriptionShort="Molot VEPR is a Soviet rifle chambered in 7.62x39, mostly intended for civilian use. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. Molot VEPR is a Soviet rifle chambered in 7.62x39, mostly intended for civilian use. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\ttak458\ttak458.p3d";
 		hiddenSelections[]=
 		{
@@ -197,7 +197,7 @@ class cfgWeapons
 	{
 		scope=2;
     displayName="Molot VEPR-FM";
-		descriptionShort="The Molot VEPR-FM is a Soviet rifle chambered in 7.62x39, mostly intended for military use.";
+		descriptionShort="S.T.A.G. Industries. The Molot VEPR-FM is a Soviet rifle chambered in 7.62x39, mostly intended for military use. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\ttak458\ttak458poli.p3d";
 		hiddenSelections[]=
 		{

@@ -20,7 +20,7 @@ class cfgWeapons
 		scope=2;
 		absorbency=0;
 		displayName="PM Makarov";
-		descriptionShort="Espen Industries. PM Makarov is a Soviet pistol chambered in .380 ACP. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. PM Makarov is a Soviet pistol chambered in .380 ACP. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\pistols\ttmakarov\ttmakarov.p3d";
 		magazines[]={"Mag_IJ70_8Rnd"};
 		attachments[]=

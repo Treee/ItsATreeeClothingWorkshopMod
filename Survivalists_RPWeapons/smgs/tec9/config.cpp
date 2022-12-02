@@ -25,7 +25,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="Tec-9";
-		descriptionShort="Espen Industries. Semi-Automatic pistol chambered in .45 ACP. Modified to take UMP magazines. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. Semi-Automatic pistol chambered in .45 ACP. Modified to take UMP magazines. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\smgs\tec9\tec9.p3d";
 		attachments[]={"pistolMuzzle"};
 		itemSize[]={4,3};

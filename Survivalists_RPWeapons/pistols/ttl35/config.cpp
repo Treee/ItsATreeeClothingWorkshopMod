@@ -25,7 +25,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="Lahti L-35";
-		descriptionShort="Espen Industries. The Lahti L-35 is a recoil operated, single-action, locked breech firearm fitted with a concealed hammer. Chambered in 9x19mm. Product of Finland. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. The Lahti L-35 is a recoil operated, single-action, locked breech firearm fitted with a concealed hammer. Chambered in 9x19mm. Product of Finland. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\pistols\ttl35\ttl35.p3d";
 		attachments[]={};
 		magazines[]={"ttl35mag"};

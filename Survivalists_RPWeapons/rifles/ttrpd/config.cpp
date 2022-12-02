@@ -25,7 +25,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="RPD";
-		descriptionShort="Espen Industries. RPD is a handheld light machine gun developed in the Soviet Union. It was created as a replacement for the DP machine gun. Chambered in 7.62x39mm. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. RPD is a handheld light machine gun developed in the Soviet Union. It was created as a replacement for the DP machine gun. Chambered in 7.62x39mm. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\ttrpd\ttrpd.p3d";
 		attachments[]={"suppressorImpro"};
 		magazines[]={"ttrpdmag"};

@@ -25,7 +25,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="Agram 2000";
-		descriptionShort="Espen Industries. Agram 2000 is a Croatian submachine gun based on the Beretta's model M12. Chambered in 9x19mm. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. Agram 2000 is a Croatian submachine gun based on the Beretta's model M12. Chambered in 9x19mm. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\smgs\ttagram\ttagram.p3d";
 		attachments[]={"weaponFlashlight","pistolMuzzle"};
 		chamberableFrom[]={"Ammo_9x19"};

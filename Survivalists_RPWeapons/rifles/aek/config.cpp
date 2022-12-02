@@ -25,7 +25,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="AEK-971";
-		descriptionShort="Espen Industries. AEK-971 is a Soviet issued assault rifle chambered in 5.56x45. Widely used by Russian special forces and avid collectors. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. AEK-971 is a Soviet issued assault rifle chambered in 5.56x45. Widely used by Russian special forces and avid collectors. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\aek\aek.p3d";
 		attachments[]=
 		{

@@ -21,7 +21,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="Ithaca M37";
-		descriptionShort="Espen Industries. Ithaca M37 is a pump action shotgun made in large numbers for civilian, military and police usage. It utilizes a novel combination ejection/loading port on the bottom of the gun which leaves the sides closed to the elements. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. Ithaca M37 is a pump action shotgun made in large numbers for civilian, military and police usage. It utilizes a novel combination ejection/loading port on the bottom of the gun which leaves the sides closed to the elements. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\shotguns\ttitacha\ttitacha.p3d";
 		hiddenSelectionsTextures[]={};
 		hiddenSelectionsMaterials[]={};

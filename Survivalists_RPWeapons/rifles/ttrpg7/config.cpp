@@ -26,7 +26,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="RPG-7";
-		descriptionShort="Espen Industries. This looks and feels like an RPG-7, a rocket propelled grenade launcher mounted with an explosive warhead. Dont let the looks fool you. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. This looks and feels like an RPG-7, a rocket propelled grenade launcher mounted with an explosive warhead. Dont let the looks fool you. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\ttrpg7\ttrpg7.p3d";
 		attachments[]={};
 		chamberableFrom[]=

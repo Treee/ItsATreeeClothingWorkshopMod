@@ -25,7 +25,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="Becker Revolving Shotgun";
-		descriptionShort="Espen Industries. Becker shotgun is a semi-automatic 12gauge shotgun with a rotating cylinder. Manufactured in Germany. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. Becker shotgun is a semi-automatic 12gauge shotgun with a rotating cylinder. Manufactured in Germany. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\shotguns\ttbecker\ttbecker.p3d";
 		attachments[]={};
 		winchesterTypeOpticsMount=1;

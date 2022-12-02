@@ -25,7 +25,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="FN Five-SeveN Coyote";
-		descriptionShort="Espen Industries. FN Five-SeveN is a semi-automatic pistol designed and manufactured by FN Herstal in Belgium. Redesigned by Espen Industries to accept 9x39mm. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. FN Five-SeveN is a semi-automatic pistol designed and manufactured by FN Herstal in Belgium. Redesigned by S.T.A.G. Industries to accept 9x39mm. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\pistols\tt57\tt57.p3d";
 		attachments[]={"pistolFlashlight"};
 		magazines[]={"tt57mag"};
@@ -48,7 +48,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="FN Five-SeveN Gray";
-		descriptionShort="Espen Industries. FN Five-SeveN is a semi-automatic pistol designed and manufactured by FN Herstal in Belgium. Redesigned by Espen Industries to accept 9x39mm. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G Industries. FN Five-SeveN is a semi-automatic pistol designed and manufactured by FN Herstal in Belgium. Redesigned by S.T.A.G. Industries to accept 9x39mm. Inspected by Master Gunsmith: Turko";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_RPWeapons\pistols\tt57\data\tt57blk_co.paa"};
 	};

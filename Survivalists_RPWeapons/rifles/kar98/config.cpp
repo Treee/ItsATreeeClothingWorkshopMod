@@ -25,7 +25,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="Karabiner 98k";
-		descriptionShort="Espen Industries. K98k is a bolt action rifle that originated from Germany during WW2. Chambered in 7.62x54mm. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. K98k is a bolt action rifle that originated from Germany during WW2. Chambered in 7.62x54mm. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\kar98\kar98.p3d";
 		attachments[]={"weaponOpticsHunting","weaponMuzzleAK","SRP_StockPouch","weaponWrap"};
 		winchesterTypeOpticsMount=1;

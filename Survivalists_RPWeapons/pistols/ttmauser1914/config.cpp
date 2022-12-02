@@ -26,7 +26,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="Mauser 1914";
-		descriptionShort="Mauser 1914 is a compact 9mm semi automatic pistol manufactured by S.T.A.G Industries. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. Mauser 1914 is a compact 9mm semi automatic pistol manufactured in Germany. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\pistols\ttmauser1914\ttmauser1914.p3d";
 		attachments[]={};
 		magazines[]={"Mag_CZ75_15Rnd"};

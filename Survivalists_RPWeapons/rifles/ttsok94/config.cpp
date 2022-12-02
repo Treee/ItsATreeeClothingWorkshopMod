@@ -24,8 +24,8 @@ class cfgWeapons
 	class ttsok94: AKM_Base
 	{
 		scope=2;
-    displayName="S.T.A.G. SOK-94";
-		descriptionShort="The S.T.A.G. SOK-94 is a semi-automatic hunting rifle chambered in 7.62x39. Inspected by Master Gunsmith: Turko";
+    displayName="SOK-94";
+		descriptionShort="S.T.A.G. Industries. SOK-94 is a semi-automatic hunting rifle chambered in 7.62x39. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\ttsok94\ttsok94.p3d";
     hiddenSelections[]=
 		{

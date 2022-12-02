@@ -25,7 +25,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="AVS-36";
-		descriptionShort="Espen Industries. AVS-36 is a Soviet semi-automatic battle rifle chambered in 7.62x39. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. AVS-36 is a Soviet semi-automatic battle rifle chambered in 7.62x39. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\avs36\avs36.p3d";
 		attachments[]={"weaponOpticsHunting"};
 		winchesterTypeOpticsMount=1;

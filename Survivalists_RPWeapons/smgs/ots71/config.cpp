@@ -26,7 +26,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="OTS-71";
-		descriptionShort="Espen Industries. OTS-71 is a select fire sub-machine gun of Croatian origin. Chambered in 9x19, accepts MP5 magazines and various attachments. Inspected by Master Gunsmith: Turko";
+		descriptionShort="S.T.A.G. Industries. OTS-71 is a select fire sub-machine gun of Croatian origin. Chambered in 9x19, accepts MP5 magazines and various attachments. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\smgs\ots71\ots71.p3d";
 		attachments[]={"weaponFlashlight","weaponMuzzleAK"};
 		chamberableFrom[]={"Ammo_9x19"};
