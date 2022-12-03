@@ -44,39 +44,32 @@ class Stage3
 };
 class Stage4
 {
-	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
-	uvSource = "tex";
+	texture="dz\gear\camping\data\canvas_as.paa";
+	uvSource="tex";
 	class uvTransform
 	{
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
-		dir[] = {0,0,0};
-		pos[] = {0,0,0};
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
 	};
 };
 class Stage5
 {
-	texture = "#(argb,8,8,3)color(1,0,1,0,SMDI)";
-	uvSource = "tex";
+	texture="dz\gear\camping\data\canvas_smdi.paa";
+	uvSource="tex";
 	class uvTransform
 	{
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
-		dir[] = {0,0,0};
-		pos[] = {0,0,0};
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
 	};
 };
 class Stage6
 {
-	texture = "#(ai,64,64,1)fresnel(1.82,0.71)";
-	uvSource = "tex";
-	class uvTransform
-	{
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
-		dir[] = {0,0,1};
-		pos[] = {0,0,0};
-	};
+	texture="#(ai,32,128,1)fresnel(1.61,0.22)";
+	uvSource="none";
 };
 class Stage7
 {
