@@ -61,7 +61,7 @@ modded class DayZGame
         m_RadioElectronicsConfig.m_RadioTowerInfo.Insert(new SRPRadioTowerInfo("8509 312 10076",10));
 
         m_RadioElectronicsConfig.m_MaxNumberOfActiveRadioTowers = m_RadioElectronicsConfig.GetTotalNumberOfTowers();
-        m_RadioElectronicsConfig.m_RequiredNumberOfActiveRadioTowers = m_RadioElectronicsConfig.GetTotalNumberOfTowers();
+        m_RadioElectronicsConfig.m_RequiredNumberOfActiveRadioTowers = (m_RadioElectronicsConfig.GetTotalNumberOfTowers() / 2);
         m_RadioElectronicsConfig.m_NumberOfActiveRadioTowers = 0;
         m_RadioElectronicsConfig.m_ICRadioMaxDelay = 60;
 

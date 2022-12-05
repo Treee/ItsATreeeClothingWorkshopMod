@@ -45,8 +45,13 @@ class RadioElectronicsConfig
 
   void InitializeActiveTowers()
   {
+    // set everything to not jammed
+    foreach(SRPRadioTowerInfo tower: m_RadioTowerInfo)
+    {
+      tower.ImpactRadioTower();
+    }
+    m_IsICRadioActive = true;
     m_NumberOfActiveRadioTowers = m_MaxNumberOfActiveRadioTowers;
-    m_IsICRadioActive = true;    
     // Print("[RadioElectronicsConfig] - InitializeActiveTowers - " + m_NumberOfActiveRadioTowers + " After Jamming Check");
   }
 
