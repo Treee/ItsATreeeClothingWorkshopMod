@@ -45,22 +45,9 @@ class RadioElectronicsConfig
 
   void InitializeActiveTowers()
   {
-    m_NumberOfActiveRadioTowers = 0;
-    m_IsICRadioActive = true;
-    Print("[RadioElectronicsConfig] - InitializeActiveTowers - active towers " + m_NumberOfActiveRadioTowers);
-    foreach(SRPRadioTowerInfo tower: m_RadioTowerInfo)
-    {
-      // Print("[RadioElectronicsConfig] - InitializeActiveTowers - " + tower);
-      if (!tower.IsJammed())
-      {
-        IncrementActiveTowers();
-      }
-      else
-      {
-        Print("Tower jammed!");
-      }
-    }
-    Print("[RadioElectronicsConfig] - InitializeActiveTowers - " + m_NumberOfActiveRadioTowers + " After Jamming Check");
+    m_NumberOfActiveRadioTowers = m_MaxNumberOfActiveRadioTowers;
+    m_IsICRadioActive = true;    
+    // Print("[RadioElectronicsConfig] - InitializeActiveTowers - " + m_NumberOfActiveRadioTowers + " After Jamming Check");
   }
 
   bool DeployJammer(vector position)
@@ -71,7 +58,7 @@ class RadioElectronicsConfig
     {
       if (tower.IsWithinJammingRange(position) && !tower.IsJammed())
       {
-        Print("Found Tower In Jamming Range that was not already jammed");
+        // Print("Found Tower In Jamming Range that was not already jammed");
         tower.ImpactRadioTower(true);
         DecrementActiveTowers();
         GetDayZGame().SaveRadioElectronicsConfig();
@@ -89,7 +76,7 @@ class RadioElectronicsConfig
     {
       if (tower.IsWithinJammingRange(position) && tower.IsJammed())
       {
-        Print("Found Tower In Jamming Range that was jammed - unjamming");
+        // Print("Found Tower In Jamming Range that was jammed - unjamming");
         tower.ImpactRadioTower(false);
         IncrementActiveTowers();
         GetDayZGame().SaveRadioElectronicsConfig();
@@ -114,7 +101,7 @@ class RadioElectronicsConfig
     if (m_NumberOfActiveRadioTowers > 0)
     {
       m_NumberOfActiveRadioTowers -= numberoverride;
-      // Print("DecrementActiveTowers: previous: " + (m_NumberOfActiveRadioTowers - 1) + " next: " + m_NumberOfActiveRadioTowers);
+      // Print("DecrementActiveTowers: previous: " + (m_NumberOfActiveRadioTowers + 1) + " next: " + m_NumberOfActiveRadioTowers);
     }
   };
 
@@ -126,6 +113,11 @@ class RadioElectronicsConfig
   int GetNumberOfActiveTowers()
   {
     return m_NumberOfActiveRadioTowers;
+  }
+
+  int GetTotalNumberOfTowers()
+  {    
+    return m_RadioTowerInfo.Count();
   }
 
   int GetMaxRadioDelay()

@@ -1,18 +1,21 @@
 class SRP_ElectronicsJammer_Base extends DeployableContainer_Base
 {
   protected EffectSound 		m_JammerSoundLoop;
-	ref Timer 					m_SoundLoopStartTimer;
-
-  void SRP_ElectronicsJammer_Base() 
-  {    
-    // Print("[SRP_ElectronicsJammer_Base]: " + GetGame().IsDedicatedServer());
-    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(InitializeJammer, 500, false);
-  }
 
   void ~SRP_ElectronicsJammer_Base()
   {
     StopLoopSound();
   }
+
+  override void EEInit()
+	{		
+		super.EEInit();
+		// Print("[SRP_ElectronicsJammer_Base]: jammer created");
+		if (GetGame().IsDedicatedServer())
+		{
+ 			InitializeJammer();
+		}
+	}
 
   void InitializeJammer()
   {
@@ -23,19 +26,7 @@ class SRP_ElectronicsJammer_Base extends DeployableContainer_Base
       bool m_ImpactedNetwork = config.DeployJammer(GetPosition());        
       LogRadioEvent(m_ImpactedNetwork);
     }
-
-    if (!GetGame().IsDedicatedServer())
-		{
-			if (!m_SoundLoopStartTimer)
-			{
-				m_SoundLoopStartTimer = new Timer(CALL_CATEGORY_SYSTEM);
-			}
-			
-			if (!m_SoundLoopStartTimer.IsRunning()) // Makes sure the timer is NOT running already
-			{
-				m_SoundLoopStartTimer.Run(1.5, this, "StartLoopSound", NULL, false);
-			}
-		}
+    RequestSoundEvent();
   }
 
   void DismantleJammer()
@@ -46,10 +37,7 @@ class SRP_ElectronicsJammer_Base extends DeployableContainer_Base
       bool m_ImpactedNetwork = config.DismantleJammer(GetPosition());        
       LogRadioEvent(m_ImpactedNetwork);
     }
-    if (!GetGame().IsDedicatedServer())
-		{
-      StopLoopSound();
-    }
+    StopLoopSound();
   }
 
   void LogRadioEvent(bool impactedNetwork)
@@ -79,14 +67,24 @@ class SRP_ElectronicsJammer_Base extends DeployableContainer_Base
     };
   }
 
-  // Play the loop sound
-	void StartLoopSound()
+  void RequestSoundEvent()
 	{
     if (!GetGame().IsDedicatedServer())
 		{
-      PlaySoundSetLoop(m_JammerSoundLoop, GetRandomJammerSounds().GetRandomElement(), 0, 0);
+      PlaySoundSet(m_JammerSoundLoop, GetRandomJammerSounds().GetRandomElement(), 1, 1);
+      GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(RequestSoundEvent, 450000, false);
 		}
 	}
+
+
+  // // Play the loop sound
+	// void StartLoopSound()
+	// {
+  //   if (!GetGame().IsDedicatedServer())
+	// 	{
+  //     PlaySoundSetLoop(m_JammerSoundLoop, GetRandomJammerSounds().GetRandomElement(), 0, 0);
+	// 	}
+	// }
 
   void StopLoopSound()
   {
