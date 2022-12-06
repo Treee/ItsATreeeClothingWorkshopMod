@@ -64,7 +64,7 @@ class SRP_WeaponCraftingKitBase extends ItemBase
     return false;
   }
 
-  bool AreCorrectTypesAndSlots(TStringArray types, TStringArray slots)
+  bool AreCorrectTypesAndSlots(TStringArray slots, TStringArray types)
   {
     bool isValid = true;
     for(int slotIndex=0; slotIndex<slots.Count(); slotIndex++)

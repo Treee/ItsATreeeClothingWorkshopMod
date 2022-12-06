@@ -87,12 +87,12 @@ class Craft_SRP_WeaponShortBarrel_Kit_ColtSA_Revolver extends Craft_SRP_WeaponGu
 		AddResult("DUB_ColtSA");
 	}
 
-  TStringArray GetSlotTypes()
+  override TStringArray GetSlotTypes()
   {
     return {"SRP_GunBarrel","SRP_MainReceiver","SRP_Trigger","SRP_Hammer","SRP_GunGrip"};
   }
 
-  TStringArray GetItemTypes()
+  override TStringArray GetItemTypes()
   {
     return {"TT_RifledBarrel_Small","TT_MainReceiver_SemiSmall","TT_Trigger_Simple","TT_Hammer_Simple","TT_Grip_Wood"};
   }
@@ -108,12 +108,12 @@ class Craft_SRP_WeaponShortBarrel_Kit_JunkShotgun extends Craft_SRP_WeaponGunCra
 		AddResult("DUB_JunkShotgun");
 	}
 
-  TStringArray GetSlotTypes()
+  override TStringArray GetSlotTypes()
   {
     return {"SRP_GunBarrel","SRP_MainReceiver","SRP_Trigger","SRP_Hammer","SRP_GunGrip"};
   }
 
-  TStringArray GetItemTypes()
+  override TStringArray GetItemTypes()
   {
     return {"TT_GunBarrel_Small","TT_MainReceiver_SemiSmall","TT_Trigger_Simple","TT_Hammer_Simple","TT_Grip_Wood"};
   }
@@ -129,12 +129,12 @@ class Craft_SRP_WeaponMediumBarrel_Kit_Contender extends Craft_SRP_WeaponGunCraf
 		AddResult("DUB_Contender");
 	}
 
-  TStringArray GetSlotTypes()
+  override TStringArray GetSlotTypes()
   {
     return {"SRP_GunBarrel","SRP_MainReceiver","SRP_Trigger","SRP_Hammer","SRP_GunGrip","SRP_GunButtStock"};
   }
 
-  TStringArray GetItemTypes()
+  override TStringArray GetItemTypes()
   {
     return {"TT_RifledBarrel_Medium","TT_MainReceiver_SemiMedium","TT_Trigger_Simple","TT_Hammer_Simple","TT_Grip_Wood","TT_Buttstock_Wood"};
   }
@@ -150,12 +150,12 @@ class Craft_SRP_WeaponLongBarrel_Kit_Model18871 extends Craft_SRP_WeaponGunCraft
 		AddResult("DUB_Model1887");
 	}
 
-  TStringArray GetSlotTypes()
+  override TStringArray GetSlotTypes()
   {
     return {"SRP_GunBarrel","SRP_MainReceiver","SRP_Trigger","SRP_Hammer","SRP_GunGrip","SRP_GunButtStock"};
   }
 
-  TStringArray GetItemTypes()
+  override TStringArray GetItemTypes()
   {
     return {"TT_GunBarrel_Long","TT_MainReceiver_SemiLarge","TT_Trigger_Simple","TT_Hammer_Simple","TT_Grip_Wood","TT_Buttstock_Wood"};
   }
@@ -171,12 +171,12 @@ class Craft_SRP_WeaponLongBarrel_Kit_JunkerAK extends Craft_SRP_WeaponGunCraftin
 		AddResult("junkak");
 	}
 
-  TStringArray GetSlotTypes()
+  override TStringArray GetSlotTypes()
   {
     return {"SRP_GunBarrel","SRP_MainReceiver","SRP_Trigger","SRP_Hammer","SRP_GunGrip","SRP_GunButtStock"};
   }
 
-  TStringArray GetItemTypes()
+  override TStringArray GetItemTypes()
   {
     return {"TT_GunBarrel_Long","TT_MainReceiver_SemiLarge","TT_Trigger_Simple","TT_Hammer_Simple","TT_Grip_Wood","TT_Buttstock_Wood"};
   }
@@ -192,12 +192,12 @@ class Craft_SRP_WeaponMediumBarrel_Kit_OTS71 extends Craft_SRP_WeaponGunCrafting
 		AddResult("ots71");
 	}
 
-  TStringArray GetSlotTypes()
+  override TStringArray GetSlotTypes()
   {
     return {"SRP_GunBarrel","SRP_MainReceiver","SRP_Trigger","SRP_Hammer","SRP_GunGrip"};
   }
 
-  TStringArray GetItemTypes()
+  override TStringArray GetItemTypes()
   {
     return {"TT_RifledBarrel_Medium","TT_MainReceiver_AutoMedium","TT_Trigger_Simple","TT_Hammer_Simple","TT_Grip_Wood"};
   }
@@ -213,12 +213,12 @@ class Craft_SRP_WeaponMediumBarrel_Kit_Boomstick extends Craft_SRP_WeaponGunCraf
 		AddResult("boomstick");
 	}
 
-  TStringArray GetSlotTypes()
+  override TStringArray GetSlotTypes()
   {
     return {"SRP_GunBarrel","SRP_MainReceiver","SRP_Trigger","SRP_GunGrip"};
   }
 
-  TStringArray GetItemTypes()
+  override TStringArray GetItemTypes()
   {
     return {"TT_RifledBarrel_Medium","TT_MainReceiver_SemiMedium","TT_Trigger_Simple","TT_Grip_Wood"};
   }
