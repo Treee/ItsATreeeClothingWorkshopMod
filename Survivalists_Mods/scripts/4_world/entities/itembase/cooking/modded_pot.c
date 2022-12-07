@@ -9,3 +9,18 @@ modded class Pot
 		return super.CanPutInCargo(parent);
 	}
 };
+
+modded class PortableGasStove
+{
+  override bool CanPutInCargo(EntityAI parent)
+	{
+    if (GetCookingEquipment())
+    { // if you have more than 100ml of liquid and we are trying to put into an item attached to a player
+      if (GetCookingEquipment().GetQuantity() > 100 && parent.GetHierarchyRootPlayer())
+      {
+        return false;
+      }
+    }
+    return super.CanPutInCargo(parent);
+	}
+};
