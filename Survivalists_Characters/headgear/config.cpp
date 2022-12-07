@@ -2425,7 +2425,9 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Headgear",
-      "SRP_Comtacs"
+      "SRP_Comtacs",
+      "Wig",
+      "Extra"
 		};
 		itemInfo[]=
 		{
@@ -2490,7 +2492,9 @@ class CfgVehicles
     inventorySlot[]=
 		{
 			"Headgear",
-      "SRP_Comtacs"
+      "SRP_Comtacs",
+      "Wig",
+      "Extra"
 		};
 		itemInfo[]=
 		{
