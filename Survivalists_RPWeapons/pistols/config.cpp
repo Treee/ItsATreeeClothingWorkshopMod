@@ -21,10 +21,13 @@ class CfgWeapons
 	{
 		inventorySlot[]+=
 		{
-			"SRP_GunDerringer"
+			"SRP_GunDerringer",
+      "SRP_Pistol1",
+      "SRP_Pistol2",
+      "SRP_Pistol3",
+      "SRP_Pistol4",
 		};
 	};
-
   class Derringer_Base: Pistol_Base
 	{
     itemSize[]={2,2};

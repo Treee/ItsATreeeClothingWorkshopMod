@@ -12,13 +12,81 @@ class CfgPatches
 	};
 };
 class CfgVehicles
-{
+{  
   // ------------------------------------ BASE GAME OVERRIDE
 	class ItemSuppressor;
+  class Mosin_Compensator: ItemSuppressor
+	{
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
+  };
+  class MP5_Compensator: ItemSuppressor
+	{
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
+  };
+  class Groza_Barrel_Short: ItemSuppressor
+	{
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
+  };
+  class Groza_Barrel_Grip: ItemSuppressor
+	{
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
+  };
+  class Groza_Barrel_Suppressor: ItemSuppressor
+	{
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
+  };
+  class MakarovPBSuppressor: ItemSuppressor
+	{
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
+  };
+
   // Increasing Suppressor health and normalizing suppression
 	class M4_Suppressor: ItemSuppressor
 	{
 		noiseShootModifier=-0.5;
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -41,6 +109,13 @@ class CfgVehicles
 	class AK_Suppressor: ItemSuppressor
 	{
 		noiseShootModifier=-0.5;
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -63,6 +138,13 @@ class CfgVehicles
 	class ImprovisedSuppressor: ItemSuppressor
 	{
 		noiseShootModifier=-0.75;
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -85,6 +167,13 @@ class CfgVehicles
   class PistolSuppressor: ItemSuppressor
 	{
 		noiseShootModifier=-0.2;
+    inventorySlot[]+=
+		{
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -152,10 +241,6 @@ class CfgVehicles
 		itemSize[]={3,1};
 		itemModelLength=0.23;
 		lootCategory="Attachments";
-		inventorySlot[]=
-		{
-			"weaponMuzzleAK"
-		};
 		simulation="ItemSuppressor";
 		dispersionModifier=-0.00050000002;
 		dispersionCondition="true";
@@ -223,10 +308,13 @@ class CfgVehicles
 		weight=73;
 		itemSize[]={3,1};
 		itemModelLength=0.148;
-		inventorySlot[]=
+    inventorySlot[]=
 		{
-			"weaponMuzzleM4",
-			"weaponMuzzleAK"
+      "weaponMuzzleAK",
+			"SRP_Suppressor1",
+			"SRP_Suppressor2",
+			"SRP_Suppressor3",
+			"SRP_Suppressor4",
 		};
 		hiddenSelections[]=
 		{

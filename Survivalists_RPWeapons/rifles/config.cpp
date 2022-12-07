@@ -7,9 +7,11 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
+      "DZ_Data",
       "jmc_SnowOwl",
       "jmc_Prototype",
-      "DZ_Data"
+      "MassBuildings", // rifle core overrides
+      "Mass_Textures", // rifle core overrides
 		};
 	};
 };
@@ -21,17 +23,6 @@ class CfgWeapons
 	{
 		inventorySlot[]+=
 		{
-			"Shoulder",
-			"Shoulder1",
-			"Shoulder2",
-			"Shoulder3",
-			"Shoulder4",
-			"Shoulder5",
-			"Shoulder6",
-			"Shoulder7",
-			"Shoulder8",
-			"Shoulder9",
-			"Melee",
       "SRP_Rifle1",
       "SRP_Rifle2",
       "SRP_Rifle3",

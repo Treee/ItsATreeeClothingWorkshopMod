@@ -4590,14 +4590,28 @@ class CfgVehicles
       "SRP_Rifle7",
       "SRP_Rifle8",
       "SRP_Rifle9",
-      "SRP_Rifle10",
 			"VestGrenadeA",
 			"VestGrenadeB",
 			"VestGrenadeC",
 			"VestGrenadeD",
-      "Shoulder",
-			"Melee",
-      "Pistol",
+      "SRP_Grenade1",
+      "SRP_Grenade2",
+      "SRP_Grenade3",
+      "SRP_Grenade4",
+      "SRP_Suppressor1",
+      "SRP_Suppressor2",
+      "SRP_Suppressor3",
+      "SRP_Suppressor4",
+      "SRP_Pistol1",
+      "SRP_Pistol2",
+      "SRP_Pistol3",
+      "SRP_Pistol4",      
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
     };
     hiddenSelections[]=
     {
@@ -4624,7 +4638,6 @@ class CfgVehicles
           "SRP_Rifle7",
           "SRP_Rifle8",
           "SRP_Rifle9",
-          "SRP_Rifle10",
 				};
 				icon="set:dayz_inventory image:shoulderright";
 			};
@@ -4638,20 +4651,53 @@ class CfgVehicles
           "VestGrenadeB",
           "VestGrenadeC",
           "VestGrenadeD",
+          "SRP_Grenade1",
+          "SRP_Grenade2",
+          "SRP_Grenade3",
+          "SRP_Grenade4",
 				};
 		    icon="set:dayz_inventory image:grenade";
 			};
-      class Melee
+      class Suppressors
 			{
-				name="Melee";
-				description="Pistol and Melee Positions";
+				name="Suppressors";
+				description="Suppressors Positions";
 				attachmentSlots[]=
 				{
-          "Shoulder",
-          "Melee",
-          "Pistol",
+          "SRP_Suppressor1",
+          "SRP_Suppressor2",
+          "SRP_Suppressor3",
+          "SRP_Suppressor4",
 				};
-				icon="set:dayz_inventory image:shoulderright";
+		    icon="set:dayz_inventory image:supressor";
+			};
+      class Pistol
+			{
+				name="Pistol";
+				description="Pistol Positions";
+				attachmentSlots[]=
+				{
+          "SRP_Pistol1",
+          "SRP_Pistol2",
+          "SRP_Pistol3",
+          "SRP_Pistol4",
+				};
+		    icon="set:dayz_inventory image:pistol";
+			};
+      class Optic
+			{
+				name="Optic";
+				description="Optic Positions";
+				attachmentSlots[]=
+				{
+          "SRP_Optic1",
+          "SRP_Optic2",
+          "SRP_Optic3",
+          "SRP_Optic4",
+          "SRP_Optic5",
+          "SRP_Optic6",
+				};
+				icon="set:dayz_inventory image:opticacog";
 			};
 		};
     class DamageSystem

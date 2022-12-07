@@ -11,7 +11,7 @@ class CfgPatches
 
 class CfgSlots
 {
-    // WEAPONS
+//======================WEAPONS
   class Slot_SRP_StockPouch
 	{
 		name="SRP_StockPouch";
@@ -89,12 +89,192 @@ class CfgSlots
 		displayName="Gladius Sword Sheath";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+
+//==================== GUN PROXY
+  class Slot_SRP_Rifle1
+	{
+		name="SRP_Rifle1";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle2
+	{
+		name="SRP_Rifle2";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle3
+	{
+		name="SRP_Rifle3";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle4
+	{
+		name="SRP_Rifle4";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle5
+	{
+		name="SRP_Rifle5";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle6
+	{
+		name="SRP_Rifle6";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle7
+	{
+		name="SRP_Rifle7";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle8
+	{
+		name="SRP_Rifle8";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle9
+	{
+		name="SRP_Rifle9";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Rifle10
+	{
+		name="SRP_Rifle10";
+		displayName="Rifle";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+//==================== Grenade PROXY
+  class Slot_SRP_Grenade1
+	{
+		name="SRP_Grenade1";
+		displayName="Explosive";
+		ghostIcon="set:dayz_inventory image:grenade";
+	};
+  class Slot_SRP_Grenade2
+	{
+		name="SRP_Grenade2";
+		displayName="Explosive";
+		ghostIcon="set:dayz_inventory image:grenade";
+	};
+  class Slot_SRP_Grenade3
+	{
+		name="SRP_Grenade3";
+		displayName="Explosive";
+		ghostIcon="set:dayz_inventory image:grenade";
+	};
+  class Slot_SRP_Grenade4
+	{
+		name="SRP_Grenade4";
+		displayName="Explosive";
+		ghostIcon="set:dayz_inventory image:grenade";
+	};
+//==================== Suppressor PROXY
+  class Slot_SRP_Suppressor1
+	{
+		name="SRP_Suppressor1";
+		displayName="Explosive";
+		ghostIcon="set:dayz_inventory image:supressor";
+	};
+  class Slot_SRP_Suppressor2
+	{
+		name="SRP_Suppressor2";
+		displayName="Explosive";
+		ghostIcon="set:dayz_inventory image:supressor";
+	};
+  class Slot_SRP_Suppressor3
+	{
+		name="SRP_Suppressor3";
+		displayName="Explosive";
+		ghostIcon="set:dayz_inventory image:supressor";
+	};
+  class Slot_SRP_Suppressor4
+	{
+		name="SRP_Suppressor4";
+		displayName="Explosive";
+		ghostIcon="set:dayz_inventory image:supressor";
+	};
+//==================== Pistol PROXY
+  class Slot_SRP_Pistol1
+	{
+		name="SRP_Pistol1";
+		displayName="Pistol";
+		ghostIcon="set:dayz_inventory image:pistol";
+	};
+  class Slot_SRP_Pistol2
+	{
+		name="SRP_Pistol2";
+		displayName="Pistol";
+		ghostIcon="set:dayz_inventory image:pistol";
+	};
+  class Slot_SRP_Pistol3
+	{
+		name="SRP_Pistol3";
+		displayName="Pistol";
+		ghostIcon="set:dayz_inventory image:pistol";
+	};
+  class Slot_SRP_Pistol4
+	{
+		name="SRP_Pistol4";
+		displayName="Pistol";
+		ghostIcon="set:dayz_inventory image:pistol";
+	};  
+  class Slot_SRP_Pistol5
+	{
+		name="SRP_Pistol5";
+		displayName="Pistol";
+		ghostIcon="set:dayz_inventory image:pistol";
+	};  
+//==================== Optic PROXY
+  class Slot_SRP_Optic1
+	{
+		name="SRP_Optic1";
+		displayName="Optic";
+		ghostIcon="set:dayz_inventory image:opticacog";
+	};
+  class Slot_SRP_Optic2
+	{
+		name="SRP_Optic2";
+		displayName="Optic";
+		ghostIcon="set:dayz_inventory image:opticacog";
+	};
+  class Slot_SRP_Optic3
+	{
+		name="SRP_Optic3";
+		displayName="Optic";
+		ghostIcon="set:dayz_inventory image:opticacog";
+	};
+  class Slot_SRP_Optic4
+	{
+		name="SRP_Optic4";
+		displayName="Optic";
+		ghostIcon="set:dayz_inventory image:opticacog";
+	};  
+  class Slot_SRP_Optic5
+	{
+		name="SRP_Optic5";
+		displayName="Optic";
+		ghostIcon="set:dayz_inventory image:opticacog";
+	}; 
+  class Slot_SRP_Optic6
+	{
+		name="SRP_Optic6";
+		displayName="Optic";
+		ghostIcon="set:dayz_inventory image:opticacog";
+	};   
 };
   
 class CfgNonAIVehicles
 {
 	class ProxyAttachment;
-
+//======================WEAPONS
   class ProxyRIS_Adapter_Proxy: ProxyAttachment
 	{
 		scope=2;
@@ -170,4 +350,184 @@ class CfgNonAIVehicles
 		inventorySlot="P90UpgradeKit";
 		model="Survivalists_RPWeapons\proxy\ESP_P90UpgradeKit_Proxy.p3d";
 	};
+
+//=================== RIFLE Proxies
+  class Proxysrp_rifle1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle1"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle2"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle3"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle4"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle4_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle5_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle5"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle5_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle6_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle6"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle6_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle7_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle7"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle7_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle8_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle8"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle8_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle9_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle9"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle9_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_rifle10_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Rifle10"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_rifle10_proxy.p3d"; //proxy path 
+  };
+//=================== Grenade Proxies
+  class Proxysrp_grenade1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Grenade1"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_grenade1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_grenade2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Grenade2"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_grenade2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_grenade3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Grenade3"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_grenade3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_grenade4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Grenade4"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_grenade4_proxy.p3d"; //proxy path 
+  };
+//=================== Suppressor Proxies
+  class Proxysrp_suppressor1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Suppressor1"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_suppressor1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_suppressor2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Suppressor2"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_suppressor2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_suppressor3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Suppressor3"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_suppressor3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_suppressor4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Suppressor4"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_suppressor4_proxy.p3d"; //proxy path 
+  };
+//=================== Pistol Proxies
+  class Proxysrp_pistol1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Pistol1"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_pistol1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_pistol2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Pistol2"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_pistol2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_pistol3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Pistol3"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_pistol3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_pistol4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Pistol4"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_pistol4_proxy.p3d"; //proxy path 
+  };  
+  class Proxysrp_pistol5_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Pistol5"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_pistol5_proxy.p3d"; //proxy path 
+  };  
+//=================== optic Proxies
+  class Proxysrp_optic1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Optic1"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_optic1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_optic2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Optic2"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_optic2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_optic3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Optic3"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_optic3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_optic4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Optic4"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_optic4_proxy.p3d"; //proxy path 
+  };  
+  class Proxysrp_optic5_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Optic5"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_optic5_proxy.p3d"; //proxy path 
+  };  
+  class Proxysrp_optic6_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Optic6"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_optic6_proxy.p3d"; //proxy path 
+  };  
 };  

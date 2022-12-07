@@ -5,7 +5,8 @@ class CfgPatches
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={      
+		requiredAddons[]=
+    {      
       "DZ_Weapons_Explosives"
     };
 	};
@@ -54,7 +55,18 @@ class CfgAmmo
 
 class CfgVehicles
 {
-  class Grenade_Base;
+  class ExplosivesBase;
+
+  class Grenade_Base: ExplosivesBase
+	{
+    inventorySlot[]+=
+		{
+      "SRP_Grenade1",
+      "SRP_Grenade2",
+      "SRP_Grenade3",
+      "SRP_Grenade4",
+    };
+  };
 
   class SRP_Weapon_KitBase;
 

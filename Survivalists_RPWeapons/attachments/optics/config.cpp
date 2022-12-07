@@ -7,20 +7,257 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data",
-			"DZ_Scripts",
 			"DZ_Weapons_Optics"
 		};
 	};
 };
 class CfgVehicles
 {
-	class ItemOptics;
-	class HuntingOptic;
-	class Inventory_Base;
-	class ACOGOptic;
-	class ReflexOptic;
+  class ItemOptics_Base;
 
+//========================================== Vanilla Override
+  class M4_CarryHandleOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class BUISOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class M68Optic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class M4_T3NRDSOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class FNP45_MRDSOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class Crossbow_RedpointOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class ReflexOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class ACOGOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class ACOGOptic_6x: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class PUScopeOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class KashtanOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class LongrangeOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class HuntingOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class PistolOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class PSO1Optic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class PSO11Optic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class GrozaOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class KobraOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class KazuarOptic: ItemOptics_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+  class StarlightOptic: ItemOptics_Base  
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
+    };
+  };
+
+//========================================== Custom Stuff Override
 	class ESP_Tac_Craftsmen: HuntingOptic
 	{
 		scope=2;
@@ -33,10 +270,6 @@ class CfgVehicles
 		reversed=0;
 		weight=700;
 		itemSize[]={3,1};
-		inventorySlot[]=
-		{
-			"weaponOpticsHunting"
-		};
 		simulation="itemoptics";
 		dispersionModifier=-0.001;
 		dispersionCondition="true";
@@ -128,10 +361,6 @@ class CfgVehicles
 		reversed=0;
 		weight=700;
 		itemSize[]={4,1};
-		inventorySlot[]=
-		{
-			"weaponOpticsHunting"
-		};
 		simulation="itemoptics";
 		dispersionModifier=-0.001;
 		dispersionCondition="true";
@@ -225,10 +454,6 @@ class CfgVehicles
 		reversed=0;
 		weight=700;
 		itemSize[]={4,1};
-		inventorySlot[]=
-		{
-			"weaponOpticsHunting"
-		};
 		simulation="itemoptics";
 		dispersionModifier=-0.001;
 		dispersionCondition="true";
@@ -321,9 +546,8 @@ class CfgVehicles
 		reversed=0;
 		weight=700;
 		itemSize[]={3,1};
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
-			"weaponOpticsHunting",
 			"weaponOptics"
 		};
 		simulation="itemoptics";
@@ -419,9 +643,8 @@ class CfgVehicles
 		reversed=0;
 		weight=440;
 		itemSize[]={2,1};
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
-			"WeaponOptics",
 			"WeaponOpticsHunting"
 		};
 		selectionFireAnim="zasleh";
@@ -503,10 +726,6 @@ class CfgVehicles
 		};
 		animClass="Binoculars";
 		simulation="itemoptics";
-		inventorySlot[]=
-		{
-			"WeaponOptics"
-		};
 		selectionFireAnim="zasleh";
 		memoryPointCamera="eyeScope";
 		cameraDir="cameraDir";
