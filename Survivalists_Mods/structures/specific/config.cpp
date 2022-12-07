@@ -616,4 +616,34 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\structures\specific\labequipment\data\srp_sciencelab_equipment_co.paa"};
 	};
+  class Land_SRP_LabEquipment_RetroTerminal: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\srp_retroterminal.p3d";
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "screen"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\structures\specific\labequipment\data\srp_retroterminal_co.paa",
+      "Survivalists_Mods\structures\specific\labequipment\data\srp_retroterminal_screen_co.paa"
+    };
+	};
+  class Land_SRP_LabEquipment_RetroTerminal_MickFras: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\labequipment\srp_retroterminal.p3d";
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "screen"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\structures\specific\labequipment\data\srp_retroterminal_co.paa",
+      "Survivalists_Mods\structures\specific\labequipment\data\srp_retroterminal_screen_co.paa"
+    };
+	};
 };
