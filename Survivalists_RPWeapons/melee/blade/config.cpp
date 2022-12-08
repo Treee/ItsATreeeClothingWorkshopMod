@@ -298,7 +298,17 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\trenchknife.p3d";
     inventorySlot[]=
 		{
-			"Knife"
+			"Knife",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
     repairableWithKits[]={4};
 		repairCosts[]={10};
@@ -368,7 +378,17 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\srp_snakedagger.p3d";
     inventorySlot[]=
 		{
-			"Knife"
+			"Knife",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
     repairableWithKits[]={4};
 		repairCosts[]={10};
@@ -446,7 +466,17 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\srp_knifeold.p3d";
     inventorySlot[]=
 		{
-			"Knife"
+			"Knife",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
     repairableWithKits[]={4};
 		repairCosts[]={10};
@@ -517,7 +547,17 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\karambitknife.p3d";
     inventorySlot[]=
 		{
-			"Knife"
+			"Knife",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
     rotationFlags=17;
     repairableWithKits[]={4};
@@ -633,7 +673,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		hiddenSelections[]=
 		{
@@ -759,7 +809,17 @@ class CfgVehicles
 		{
 			"Shoulder",
 			"Melee",
-      "SRP_Katana"
+      "SRP_Katana",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		hiddenSelections[]=
 		{
@@ -889,7 +949,17 @@ class CfgVehicles
 		{
       "SRP_KatanaSheath",
       "Shoulder",
-      "Melee"
+      "Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		hiddenSelections[]=
 		{
@@ -1176,7 +1246,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		weight=600;
 		itemSize[]={1,7};
@@ -1254,7 +1334,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		weight=600;
 		itemSize[]={1,7};
@@ -1354,7 +1444,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		weight=600;
 		itemSize[]={1,7};
@@ -1448,7 +1548,17 @@ class CfgVehicles
 		{
 			"Knife",
       "Shoulder",
-      "Melee"
+      "Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
     rotationFlags=12;
     repairableWithKits[]={4};
@@ -1541,7 +1651,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		weight=600;
 		itemSize[]={1,7};
@@ -1636,7 +1756,20 @@ class CfgVehicles
 		itemSize[]={2,7};
 		itemBehaviour=2;
 		fragility=0.01;
-		inventorySlot="Melee";
+		inventorySlot[]=
+    {
+      "Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+    };
 		lootCategory="Tools";
 		openItemSpillRange[]={20,40};
 		itemInfo[]=
@@ -1729,7 +1862,17 @@ class CfgVehicles
 		inventorySlot[]=
     {
       "Melee",
-      "Shoulder"
+      "Shoulder",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
     };
 		lootCategory="Tools";
 		openItemSpillRange[]={20,40};
@@ -1844,7 +1987,17 @@ class CfgVehicles
 		{
 			"Shoulder",
 			"Melee",
-      "SRP_MasterSword"
+      "SRP_MasterSword",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
     hiddenSelections[]=
 		{
@@ -1981,7 +2134,17 @@ class CfgVehicles
 		isMeleeWeapon=1;
     attachments[]=
     {
-      "SRP_MasterSword"
+      "SRP_MasterSword",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
     };
 		inventorySlot[]=
 		{
@@ -2164,7 +2327,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		weight=600;
 		itemSize[]={1,7};
@@ -2266,7 +2439,17 @@ class CfgVehicles
 		{
 			"Knife",
       "Melee",
-      "Shoulder"
+      "Shoulder",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
     rotationFlags=12;
     repairableWithKits[]={4};
@@ -2406,7 +2589,17 @@ class CfgVehicles
     inventorySlot[]=
 		{
       "Melee",
-      "Shoulder"
+      "Shoulder",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		rotationFlags=17;
 		canSkinBodies=1;
@@ -2535,7 +2728,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
       "Melee",
-      "Shoulder"
+      "Shoulder",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		rotationFlags=12;
 		canSkinBodies=1;
@@ -2664,7 +2867,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
       "Melee",
-      "Shoulder"
+      "Shoulder",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		rotationFlags=12;
 		canSkinBodies=1;
@@ -2797,7 +3010,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
       "Melee",
-      "Shoulder"
+      "Shoulder",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		lootCategory="Tools";
 		lootTag[]=
@@ -2943,7 +3166,17 @@ class CfgVehicles
 		{
 			"Shoulder",
 			"Melee",
-      "SRP_GladiusSword"
+      "SRP_GladiusSword",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		hiddenSelections[]=
 		{
@@ -3068,6 +3301,16 @@ class CfgVehicles
     attachments[]=
     {
       "SRP_GladiusSword",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
     };
 		inventorySlot[]=
 		{
@@ -3253,7 +3496,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;
@@ -3331,7 +3584,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;

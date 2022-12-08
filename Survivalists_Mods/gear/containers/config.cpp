@@ -4713,6 +4713,57 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_MeleeWall_Fence_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Melee Weapon Wall Kit - Chain Fence";
+    descriptionShort="A kit that holds everything needed for a makeshift melee wall display";
+  };
+
+  class SRP_MeleeWall_Fence: Container_Base
+	{
+		scope=2;
+		displayName="Melee Weapon Wall";
+		descriptionShort="A makeshift melee weapon wall.";
+		model="Survivalists_Mods\gear\containers\srp_gunwall_melee.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_chainlinkfence_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+          healthLevels[] = {{1,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.7,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.5,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.3,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.1,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"}};
+				};
+			};
+		};
+	};
+
 //=================================================================== POTS
   class SRP_PotteryPot_ColorBase: Inventory_Base
 	{

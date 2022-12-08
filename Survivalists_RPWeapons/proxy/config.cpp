@@ -48,6 +48,66 @@ class CfgSlots
 		displayName="Gladius Sword Sheath";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+  class Slot_SRP_Melee1
+	{
+		name="SRP_Melee1";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee2
+	{
+		name="SRP_Melee2";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee3
+	{
+		name="SRP_Melee3";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee4
+	{
+		name="SRP_Melee4";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee5
+	{
+		name="SRP_Melee5";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee6
+	{
+		name="SRP_Melee6";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee7
+	{
+		name="SRP_Melee7";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee8
+	{
+		name="SRP_Melee8";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee9
+	{
+		name="SRP_Melee9";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
+  class Slot_SRP_Melee10
+	{
+		name="SRP_Melee10";
+		displayName="Melee";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+	};
 
 //======================Gun Attachments
   class Slot_SRP_StockPouch
@@ -388,6 +448,67 @@ class CfgNonAIVehicles
 		model="Survivalists_RPWeapons\proxy\ESP_P90UpgradeKit_Proxy.p3d";
 	};
 
+//=================== Melee Proxies
+  class Proxysrp_melee1_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee1"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee1_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee2"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee3"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee4"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee4_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee5_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee5"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee5_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee6_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee6"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee6_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee7_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee7"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee7_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee8_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee8"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee8_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee9_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee9"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee9_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_melee10_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"SRP_Melee10"}; // same as slot name 
+    model="Survivalists_RPWeapons\proxy\srp_melee10_proxy.p3d"; //proxy path 
+  };
 //=================== RIFLE Proxies
   class Proxysrp_rifle1_proxy: ProxyAttachment //same as p3d name
   {

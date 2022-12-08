@@ -746,6 +746,7 @@ class SRP_StreetLightSlim extends SRP_Container_Base
 };
 
 class SRP_GunWall_Fence extends SRP_Container_Base{};
+class SRP_MeleeWall_Fence extends SRP_Container_Base{};
 
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};

@@ -29,7 +29,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		weight=566;
 		itemSize[]={1,7};
@@ -154,7 +164,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;
@@ -704,6 +724,19 @@ class CfgVehicles
 		descriptionShort="A heavy mace that is used for bashing. Created by Turko.";
 		model="Survivalists_RPWeapons\melee\blunt\srp_macerator.p3d";
 		itemSize[]={2,4};
+    inventorySlot[]+=
+    {
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+    };
 	};
 
   class SRP_WeaponBluntMacerator_Kit: SRP_Weapon_KitBase //new
@@ -759,7 +792,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;
@@ -840,7 +883,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;
@@ -920,7 +973,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;
@@ -998,7 +1061,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;
@@ -1076,7 +1149,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;
@@ -1154,7 +1237,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Shoulder",
-			"Melee"
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
 		};
 		suicideAnim="spear";
 		itemBehaviour=2;

@@ -68,6 +68,7 @@ class SRP_ShootingTarget_Kit extends SRP_KitBase{};
 class SRP_ShootingTargets_Kit extends SRP_KitBase{};
 
 class SRP_GunWall_Fence_Kit extends SRP_KitBase{};
+class SRP_MeleeWall_Fence_Kit extends SRP_KitBase{};
 
 class SRP_StreetLightLarge_Kit extends SRP_KitBase{};
 class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase{};
