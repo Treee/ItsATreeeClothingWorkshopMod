@@ -29,7 +29,13 @@ class SRP_KitBase extends ItemBase
 };
 // If you add a new kit, add it to this list so it gets the right stuff
 //craftable kits
-class SRP_Ladder_Opened_Kit extends SRP_KitBase{};
+class SRP_Ladder_Opened_Kit extends SRP_KitBase
+{
+  override bool CanPutInCargo( EntityAI parent )
+  {
+    return false;
+  }
+};
 
 class SRP_HoneyCombStand_Kit extends SRP_KitBase{};
 class SRP_GlassDisplayCase_Kit extends SRP_KitBase{};
