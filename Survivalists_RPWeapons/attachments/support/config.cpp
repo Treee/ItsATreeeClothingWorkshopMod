@@ -842,7 +842,6 @@ class CfgVehicles
 		{
 			"weaponHandguardM4"
 		};
-		hasRailFunctionality=1;
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
 		swayModifier[]={0.69999999,0.69999999,0.69999999};
 		hiddenSelections[]=
@@ -1900,5 +1899,188 @@ class CfgVehicles
 		};
 	};
 
+	// Grips And Other
+	class ESP_RIS_Cover_Colorbase: Inventory_Base
+	{	
+		scope=0;
+		displayName="RIS Cover";
+		descriptionShort="A polymer RIS cover.";
+		model="Survivalists_RPWeapons\attachments\support\ESP_RIS_Cover.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"RISLeft",
+			"RISRight",
+			"RISBottom"
+		};
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class ESP_Angle_Grip_Colorbase: Inventory_Base
+	{	
+		scope=0;
+		displayName="Angled Foregrip";
+		descriptionShort="A polymer angled foregrip designed for RIS handguards";
+		model="Survivalists_RPWeapons\attachments\support\ESP_Angle_Grip.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"RISLeft",
+			"RISRight",
+			"RISBottom"
+		};
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 
+	// Grips and Other - Retextures
+	class ESP_RIS_Cover_Black: ESP_RIS_Cover_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_CO.paa"
+		};
+	};
+	class ESP_RIS_Cover_Tan: ESP_RIS_Cover_Colorbase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_Tan_CO.paa"
+		};
+	};
+	class ESP_RIS_Cover_Green: ESP_RIS_Cover_Colorbase
+	{
+		scope=2;
+		color="Green";
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_Green_CO.paa"
+		};
+	};
+	class ESP_RIS_Cover_RedWood: ESP_RIS_Cover_Colorbase
+	{
+		scope=2;
+		color="RedWood";
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_RedWood_CO.paa"
+		};
+	};
+	class ESP_Angle_Grip_Tan: ESP_Angle_Grip_Colorbase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip_CO.paa"
+		};
+	};
+	class ESP_Angle_Grip_Green: ESP_Angle_Grip_Colorbase
+	{
+		scope=2;
+		color="Green";
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip_Green_CO.paa"
+		};
+	};
+	class ESP_Angle_Grip_Black: ESP_Angle_Grip_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Angle_Grip_Black_CO.paa"
+		};
+	};
 };

@@ -33,9 +33,11 @@ class cfgWeapons
 			"ScarHndGrd",
 			"ScarBttStck",
 			"weaponOptics",
-			"weaponFlashlight",
 			"weaponMuzzleM4",
-			"weaponWrap"
+			"weaponWrap",
+			"RISLeft",
+			"RISRight",
+			"RISBottom"
 		};
 		ironsightsExcludingOptics[]=
 		{

@@ -50,8 +50,10 @@ class CfgWeapons
 			"weaponButtstockM4",
 			"WeaponHandguardM4",
 			"weaponOptics",
-			"weaponflashlight",
-			"weaponMuzzleM4"
+			"weaponMuzzleM4",
+			"RISLeft",
+			"RISRight",
+			"RISBottom"
 		};
 		repairableWithKits[]={1};
 		repairCosts[]={25};
@@ -73,8 +75,8 @@ class CfgWeapons
 		magazineSwitchTime=0.5;
 		ejectType=1;
 		weight=1840;
-		recoilModifier[]={1,1,1};
-		swayModifier[]={1.2,1.2,1};
+		recoilModifier[]={1.4,1.4,1.4};
+		swayModifier[]={1.8,1.8,1.2};
 		itemSize[]={5,3};
 		modes[]=
 		{
@@ -319,7 +321,7 @@ class CfgWeapons
 			{
 				class Health
 				{
-					hitpoints=225;
+					hitpoints=450;
 					healthLevels[]=
 					{
 						

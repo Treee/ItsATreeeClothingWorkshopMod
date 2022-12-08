@@ -44,8 +44,10 @@ class CfgWeapons
 			"weaponButtstockM4",
 			"WeaponHandguardM4",
 			"weaponOptics",
-			"weaponflashlight",
-			"pistolMuzzle"
+			"pistolMuzzle",
+			"RISLeft",
+			"RISRight",
+			"RISBottom"
 		};
 		repairableWithKits[]={1};
 		repairCosts[]={25};
@@ -243,7 +245,7 @@ class CfgWeapons
 			{
 				class Health
 				{
-					hitpoints=225;
+					hitpoints=450;
 					healthLevels[]=
 					{
 						

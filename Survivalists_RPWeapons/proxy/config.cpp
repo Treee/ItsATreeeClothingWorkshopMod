@@ -11,18 +11,7 @@ class CfgPatches
 
 class CfgSlots
 {
-//======================WEAPONS
-  class Slot_SRP_StockPouch
-	{
-		name="SRP_StockPouch";
-		displayName="ButtStock Pouch";
-	};
-	class Slot_SRP_GunDerringer
-  {
-      name="SRP_GunDerringer";
-      displayName="Derringer";
-      ghostIcon="set:dayz_inventory image:pistol";
-  };
+//======================Melee Weapons
   class Slot_SRP_Katana
   {
 		name="SRP_Katana";
@@ -46,6 +35,31 @@ class CfgSlots
 		name="SRP_MasterSwordSheath";
 		displayName="Master Sword Sheath";
 		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_GladiusSword
+  {
+		name="SRP_GladiusSword";
+		displayName="Gladius Sword";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_GladiusSwordSheath
+  {
+		name="SRP_GladiusSwordSheath";
+		displayName="Gladius Sword Sheath";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+
+//======================Gun Attachments
+  class Slot_SRP_StockPouch
+	{
+		name="SRP_StockPouch";
+		displayName="ButtStock Pouch";
+	};
+	class Slot_SRP_GunDerringer
+  {
+      name="SRP_GunDerringer";
+      displayName="Derringer";
+      ghostIcon="set:dayz_inventory image:pistol";
   };
   class Slot_RIS_Adapter
   {
@@ -77,17 +91,23 @@ class CfgSlots
     displayName="P90 Upgrade Kit"; // this is what shows when the player hovers over the icon
     ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
   };
-  class Slot_SRP_GladiusSword
+  class Slot_RIS_Left
   {
-		name="SRP_GladiusSword";
-		displayName="Gladius Sword";
-		ghostIcon="set:dayz_inventory image:missing";
+    name="RISLeft"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="Left RIS"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
   };
-  class Slot_SRP_GladiusSwordSheath
+  class Slot_RIS_Right
   {
-		name="SRP_GladiusSwordSheath";
-		displayName="Gladius Sword Sheath";
-		ghostIcon="set:dayz_inventory image:missing";
+    name="RISRight"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="Right RIS"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+  };
+  class Slot_RIS_Bottom
+  {
+    name="RISBottom"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="Bottom RIS"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
   };
 
 //==================== GUN PROXY
@@ -270,7 +290,6 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:opticacog";
 	};   
 };
-  
 class CfgNonAIVehicles
 {
 	class ProxyAttachment;
@@ -278,13 +297,13 @@ class CfgNonAIVehicles
   class ProxyRIS_Adapter_Proxy: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="RISAdapter";
+		inventorySlot[]={"RISAdapter"};
 		model="Survivalists_RPWeapons\proxy\RIS_Adapter_Proxy.p3d";
 	};
   class ProxyAK_RIS_Adapter_Proxy: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="AKRISAdapter";
+		inventorySlot[]={"AKRISAdapter"};
 		model="Survivalists_RPWeapons\proxy\AK_RIS_Adapter_Proxy.p3d";
 	};
   class Proxysrp_buttstockpouch_proxy: ProxyAttachment
@@ -296,6 +315,24 @@ class CfgNonAIVehicles
 		};
 		model="Survivalists_RPWeapons\proxy\srp_buttstockpouch_proxy.p3d";
 	};
+  class ProxyRIS_Left_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"RISLeft"};
+		model="Survivalists_RPWeapons\proxy\RIS_Left_Proxy.p3d";
+	};
+	class ProxyRIS_Right_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"RISRight"};
+		model="Survivalists_RPWeapons\proxy\RIS_Right_Proxy.p3d";
+	};
+	class ProxyRIS_Bottom_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"RISBottom"};
+		model="Survivalists_RPWeapons\proxy\RIS_Bottom_Proxy.p3d";
+	};  
   class Proxysrp_katana_proxy: ProxyAttachment //same as p3d name
   {
     scope = 2;
@@ -335,19 +372,19 @@ class CfgNonAIVehicles
   class ProxyScar_HandGrd_Proxy: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="ScarHndGrd";
+		inventorySlot[]={"ScarHndGrd"};
 		model="Survivalists_RPWeapons\proxy\Scar_HandGrd_Proxy.p3d";
 	};
 	class ProxyScar_BttStck_Proxy: ProxyAttachment 
 	{
 		scope=2;
-		inventorySlot="ScarBttStck";
+		inventorySlot[]={"ScarBttStck"};
 		model="Survivalists_RPWeapons\proxy\Scar_BttStck_Proxy.p3d";
 	};
 	class ProxyESP_P90UpgradeKit_Proxy: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="P90UpgradeKit";
+		inventorySlot[]={"P90UpgradeKit"};
 		model="Survivalists_RPWeapons\proxy\ESP_P90UpgradeKit_Proxy.p3d";
 	};
 

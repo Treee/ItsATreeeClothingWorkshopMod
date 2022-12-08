@@ -43,7 +43,10 @@ class cfgWeapons
 			"weaponFlashlight",
 			"weaponMuzzleAK",
 			"weaponBayonetAK",
-			"weaponWrap"
+			"weaponWrap",
+			"RISLeft",
+			"RISRight",
+			"RISBottom"
 		};
 		itemSize[]={7,3};
 		chamberableFrom[]=
@@ -210,15 +213,19 @@ class cfgWeapons
 		attachments[]=
 		{
 			"weaponButtstockAK",
+			"weaponButtstockM4",
 			"weaponHandguardAK",
 			"weaponOpticsAK",
 			"AKRISAdapter",
 			"weaponOptics",
-			"weaponFlashlight",
 			"weaponMuzzleAK",
 			"weaponBayonetAK",
-			"weaponWrap"
+			"weaponWrap",
+			"RISLeft",
+			"RISRight",
+			"RISBottom"
 		};
+		itemSize[]={7,3};
 		chamberableFrom[]=
 		{
 			"Ammo_762x39",

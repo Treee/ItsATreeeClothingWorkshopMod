@@ -104,4 +104,50 @@ class CfgVehicles
 			};
 		}; 
 	};
+	class STG_AK_Stck_Adapter: Inventory_Base
+	{
+		scope=2;
+		displayName="AK-Stock Adapter";
+		descriptionShort="An M4 Stock adapter for AK platforms";
+		model="Survivalists_RPWeapons\attachments\Adapters\STG_AK_Stck_Adapter.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		IsStockAdapter=1;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"weaponButtstockAK"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\adapters\data\STG_AK_Stck_Adptr_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\adapters\data\STG_AK_Stck_Adptr.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\adapters\data\STG_AK_Stck_Adptr.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\adapters\data\STG_AK_Stck_Adptr.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\adapters\data\STG_AK_Stck_Adptr.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\adapters\data\STG_AK_Stck_Adptr.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
 };

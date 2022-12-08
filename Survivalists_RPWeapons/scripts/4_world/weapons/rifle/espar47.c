@@ -1,4 +1,4 @@
-class ESPAR47 extends M4A1_Base
+class ESPAR47 extends RifleBoltLock_Base
 {
   // override bool CanEnterIronsights()
 	// {
@@ -7,6 +7,22 @@ class ESPAR47 extends M4A1_Base
 	// 		return true;
 	// 	return super.CanEnterIronsights();
 	// }
+	override bool CanDisplayAttachmentSlot( string slot_name)
+  {
+    if ( slot_name == "RISLeft" )
+		{
+      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
+		}
+		if ( slot_name == "RISRight" )
+		{
+      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
+		}
+		if ( slot_name == "RISBottom" )
+		{
+      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
+		}
+		return true;
+  }	
   override void OnDebugSpawn()
 	{
 		GameInventory inventory = GetInventory();
