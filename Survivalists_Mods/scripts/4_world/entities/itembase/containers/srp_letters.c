@@ -55,6 +55,10 @@ class SRP_Letter_Plus_Kit extends SRP_KitBase{};
 class SRP_Letter_Question_Kit extends SRP_KitBase{};
 class SRP_Letter_Slash_Kit extends SRP_KitBase{};
 class SRP_Letter_Times_Kit extends SRP_KitBase{};
+class SRP_Letter_ArrowUp_Kit extends SRP_KitBase{};
+class SRP_Letter_ArrowDown_Kit extends SRP_KitBase{};
+class SRP_Letter_ArrowLeft_Kit extends SRP_KitBase{};
+class SRP_Letter_ArrowRight_Kit extends SRP_KitBase{};
 
 class SRP_Letter_Colorbase extends SRP_Container_Base
 {
@@ -131,3 +135,7 @@ class SRP_Letter_Plus extends SRP_Letter_Colorbase{};
 class SRP_Letter_Question extends SRP_Letter_Colorbase{};
 class SRP_Letter_Slash extends SRP_Letter_Colorbase{};
 class SRP_Letter_Times extends SRP_Letter_Colorbase{};
+class SRP_Letter_ArrowUp extends SRP_Letter_Colorbase{};
+class SRP_Letter_ArrowDown extends SRP_Letter_Colorbase{};
+class SRP_Letter_ArrowLeft extends SRP_Letter_Colorbase{};
+class SRP_Letter_ArrowRight extends SRP_Letter_Colorbase{};

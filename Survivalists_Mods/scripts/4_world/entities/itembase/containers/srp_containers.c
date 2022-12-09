@@ -349,6 +349,10 @@ class SRP_SentientCrystal_ColorBase extends SRP_DeployableContainer_Base
   {
     return true;
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
   override bool CanPutIntoHands (EntityAI parent)
   {
     return false;
@@ -362,10 +366,34 @@ class SRP_GiftBoxMedium extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxLarge extends SRP_DeployableContainer_Base{};
 class SRP_GiftBoxLetter extends SRP_DeployableContainer_Base{};
 
-class SRP_LabEquipment_Projector extends SRP_DeployableContainer_Base{};
-class SRP_LabEquipment_Tuner extends SRP_DeployableContainer_Base{};
-class SRP_LabEquipment_Oscilliscope extends SRP_DeployableContainer_Base{};
-class SRP_LabEquipment_GeigerCounter extends SRP_DeployableContainer_Base{};
+class SRP_LabEquipment_Projector extends SRP_DeployableContainer_Base
+{
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
+};
+class SRP_LabEquipment_Tuner extends SRP_DeployableContainer_Base
+{
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
+};
+class SRP_LabEquipment_Oscilliscope extends SRP_DeployableContainer_Base
+{
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
+};
+class SRP_LabEquipment_GeigerCounter extends SRP_DeployableContainer_Base
+{
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
+};
 
 class SRP_TetrisShelf_ColorBase extends SRP_DeployableContainer_Base
 {
@@ -377,6 +405,10 @@ class SRP_TetrisShelf_ColorBase extends SRP_DeployableContainer_Base
   {
     return "SRP_TetrisShelfKit_Kit";
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 class SRP_TetrisShelfLDown extends SRP_TetrisShelf_ColorBase{};
 class SRP_TetrisShelfLLeft extends SRP_TetrisShelf_ColorBase{};
@@ -476,6 +508,10 @@ class SRP_CollectableSign_Base extends SRP_DeployableContainer_Base
   {
     return true;
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 class SRP_CollectableSign2_Base extends SRP_DeployableContainer_Base
 {
@@ -487,6 +523,10 @@ class SRP_CollectableSign2_Base extends SRP_DeployableContainer_Base
   {
     return true;
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 
 class SRP_PictureFrame extends SRP_DeployableContainer_Base
@@ -499,6 +539,10 @@ class SRP_PictureFrame extends SRP_DeployableContainer_Base
   {
     return true;
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 class SRP_PictureFrame_Ragnar extends SRP_DeployableContainer_Base
 {
@@ -510,6 +554,10 @@ class SRP_PictureFrame_Ragnar extends SRP_DeployableContainer_Base
   {
     return true;
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 
 
@@ -574,6 +622,10 @@ class SRP_BuildingComponentFrame_ColorBase extends SRP_Container_Base
   {
     return "SRP_BuildingComponentFrame_Kit";
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 class SRP_BuildingComponentFrame_WornRamp extends SRP_BuildingComponentFrame_ColorBase{};
 class SRP_BuildingComponentFrame_WornLPlatform extends SRP_BuildingComponentFrame_ColorBase{};
@@ -745,8 +797,20 @@ class SRP_StreetLightSlim extends SRP_Container_Base
   }
 };
 
-class SRP_GunWall_Fence extends SRP_Container_Base{};
-class SRP_MeleeWall_Fence extends SRP_Container_Base{};
+class SRP_GunWall_Fence extends SRP_Container_Base
+{
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
+};
+class SRP_MeleeWall_Fence extends SRP_Container_Base
+{
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
+};
 
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};
@@ -769,6 +833,10 @@ class SRP_StreetSign_Base extends SRP_Container_Base
   {
     return "SRP_StreetSign_Kit";
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 class SRP_StreetSign_Caution extends SRP_StreetSign_Base{};
 class SRP_StreetSign_CautionBiohazard extends SRP_StreetSign_Base{};

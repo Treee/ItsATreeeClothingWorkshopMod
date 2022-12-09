@@ -98,7 +98,10 @@ class SRP_DisplayCase_Base extends DeployableContainer_Base
       }
     }
   }
-
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 	override void SetActions()
 	{
 		super.SetActions();
@@ -245,6 +248,10 @@ class SRP_GlassDisplayCase_Hook_ArmbandPatch extends SRP_GlassDisplayCase_Hook
 
 class SRP_CoatRack_Base extends DeployableContainer_Base
 {
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 	override void SetActions()
 	{
 		super.SetActions();

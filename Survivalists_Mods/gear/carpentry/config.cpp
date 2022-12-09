@@ -1197,6 +1197,38 @@ class CfgVehicles
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
 	};
+  class SRP_Letter_ArrowUp_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowup.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+    itemBehaviour=1;
+	};
+  class SRP_Letter_ArrowDown_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowdown.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+    itemBehaviour=1;
+	};
+  class SRP_Letter_ArrowLeft_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowleft.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+    itemBehaviour=1;
+	};
+  class SRP_Letter_ArrowRight_Kit: SRP_KitBase //new
+	{
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowright.p3d";
+		displayName="Wooden Symbol Kit";
+		descriptionShort="A Wooden Symbol Kit";
+    itemBehaviour=1;
+	};
   
 // DEPLOYED LETTER - DEFAULT
   class SRP_Letter_Colorbase: Inventory_Base // new
@@ -1559,6 +1591,34 @@ class CfgVehicles
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_signs_times.p3d";
     color="times";
+    inventorySlot[]={};
+  };
+  class SRP_Letter_ArrowUp: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowup.p3d";
+    color="arrowup";
+    inventorySlot[]={};
+  };
+  class SRP_Letter_ArrowDown: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowdown.p3d";
+    color="arrowdown";
+    inventorySlot[]={};
+  };
+  class SRP_Letter_ArrowLeft: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowleft.p3d";
+    color="arrowleft";
+    inventorySlot[]={};
+  };
+  class SRP_Letter_ArrowRight: SRP_Letter_Colorbase
+  {
+		scope=2;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowright.p3d";
+    color="arrowright";
     inventorySlot[]={};
   };
 

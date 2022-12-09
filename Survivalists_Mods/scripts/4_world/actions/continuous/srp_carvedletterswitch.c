@@ -180,6 +180,10 @@ class ActionSwitchLetterOption extends ActionContinuousBase
       "Question",
       "Slash",
       "Times",
+      "ArrowUp",
+      "ArrowDown",
+      "ArrowLeft",
+      "ArrowRight",
     };
   }
 };
