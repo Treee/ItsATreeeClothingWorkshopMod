@@ -2136,6 +2136,12 @@ class CfgVehicles
     attachments[]=
     {
       "SRP_MasterSword",
+    };
+		inventorySlot[]=
+		{
+      "SRP_MasterSwordSheath",
+      "Melee",
+      "Shoulder",
       "SRP_Melee1",
       "SRP_Melee2",
       "SRP_Melee3",
@@ -2146,12 +2152,6 @@ class CfgVehicles
       "SRP_Melee8",
       "SRP_Melee9",
       "SRP_Melee10",
-    };
-		inventorySlot[]=
-		{
-      "SRP_MasterSwordSheath",
-      "Melee",
-      "Shoulder"
 		};
     hiddenSelections[]=
 		{
@@ -3302,6 +3302,12 @@ class CfgVehicles
     attachments[]=
     {
       "SRP_GladiusSword",
+    };
+		inventorySlot[]=
+		{
+      "SRP_GladiusSwordSheath",
+      "Shoulder",
+      "Melee",
       "SRP_Melee1",
       "SRP_Melee2",
       "SRP_Melee3",
@@ -3312,12 +3318,6 @@ class CfgVehicles
       "SRP_Melee8",
       "SRP_Melee9",
       "SRP_Melee10",
-    };
-		inventorySlot[]=
-		{
-      "SRP_GladiusSwordSheath",
-      "Shoulder",
-      "Melee"
 		};
 		hiddenSelections[]=
 		{
