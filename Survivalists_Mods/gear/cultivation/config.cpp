@@ -100,12 +100,7 @@ class CfgVehicles
 	{
     displayName="Cannabis Seeds";
 		descriptionShort="Cannabis seeds harvested from a cannabis plant.";
-  };
-  class CannabisSeedsPack: Inventory_Base
-	{
-    displayName="Cannabis Seeds Pack";
-		descriptionShort="A pack of cannabis seeds.";
-  };
+  };  
   class Plant_Cannabis: PlantBase
 	{
 		class Horticulture
@@ -118,6 +113,49 @@ class CfgVehicles
   class PlantMaterial: Inventory_Base
   {
     itemSize[]={2,1};
+  };
+
+  class TomatoSeedsPack: Inventory_Base
+  {
+    class Horticulture
+		{
+			ContainsSeedsType="TomatoSeeds";
+			ContainsSeedsQuantity=4;
+		};
+  };
+  class PepperSeedsPack: Inventory_Base
+  {
+    class Horticulture
+		{
+			ContainsSeedsType="PepperSeeds";
+			ContainsSeedsQuantity=4;
+		};
+  };
+  class PumpkinSeedsPack: Inventory_Base
+  {
+    class Horticulture
+		{
+			ContainsSeedsType="PumpkinSeeds";
+			ContainsSeedsQuantity=4;
+		};
+  };
+  class ZucchiniSeedsPack: Inventory_Base
+  {
+    class Horticulture
+		{
+			ContainsSeedsType="ZucchiniSeeds";
+			ContainsSeedsQuantity=4;
+		};
+  };
+  class CannabisSeedsPack: Inventory_Base
+	{
+    displayName="Cannabis Seeds Pack";
+		descriptionShort="A pack of cannabis seeds.";
+    class Horticulture
+		{
+			ContainsSeedsType="CannabisSeeds";
+			ContainsSeedsQuantity=4;
+		};
   };
   // --------------------------- CUSTOM STUFF
 

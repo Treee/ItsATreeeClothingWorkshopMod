@@ -1197,6 +1197,22 @@ class CfgVehicles
 			};			
 		};
 	};
+  class Tomato: Edible_Base
+  {
+		containsSeedsQuantity="2";
+  };
+	class GreenBellPepper: Edible_Base
+	{
+		containsSeedsQuantity="2";
+  };
+  class Zucchini: Edible_Base
+	{
+		containsSeedsQuantity="2";
+  };
+  class Pumpkin: Edible_Base
+	{
+		containsSeedsQuantity="2";
+  };
 
 //================================== CUSTOM STUFF
   class SRP_CandyCane: Worm
