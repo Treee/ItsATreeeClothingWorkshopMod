@@ -5,7 +5,7 @@ class CfgPatches
 		units[]={"ttp38"};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={"DZ_Pistols","ttp38"};
+		requiredAddons[]={"DZ_Pistols","Survivalists_Weapons_JMC_Pistols_ttp38"};
 		magazines[]={"Mag_IJ70_8Rnd"};
 		ammo[]={};
 	};

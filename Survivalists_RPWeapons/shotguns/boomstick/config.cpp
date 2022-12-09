@@ -8,7 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",		
-			"boomstick"
+			"Survivalists_Weapons_JMC_Shotguns_Boomstick"
 		};
 	};
 };

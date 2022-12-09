@@ -7,7 +7,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Weapons_Optics"
+			"DZ_Weapons_Optics",
+      "Survivalists_Weapons_JMC_Attachments_Optics"
 		};
 	};
 };

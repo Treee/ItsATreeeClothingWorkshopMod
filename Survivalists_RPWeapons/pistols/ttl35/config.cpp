@@ -11,7 +11,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"ttl35",
+			"Survivalists_Weapons_JMC_Pistols_ttl35",
 		};
 	};
 };

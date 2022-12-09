@@ -11,7 +11,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"ttsok94"
+			"Survivalists_Weapons_JMC_Rifles_ttsok94"
 		};
 	};
 };

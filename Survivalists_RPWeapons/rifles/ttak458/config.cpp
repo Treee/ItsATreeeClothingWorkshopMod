@@ -8,8 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"ttak458",
-      "ttak458poli"
+			"Survivalists_Weapons_JMC_Rifles_ttak458"
 		};
 	};
 };

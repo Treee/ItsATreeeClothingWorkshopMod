@@ -5,7 +5,7 @@ class CfgPatches
 		units[]={"ttglock18c"};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={"DZ_Pistols","ttglock18c"};
+		requiredAddons[]={"DZ_Pistols","Survivalists_Weapons_JMC_Pistols_ttglock18c"};
 		magazines[]={"Mag_Glock_15Rnd"};
 		ammo[]={};
 	};

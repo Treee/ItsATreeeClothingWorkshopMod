@@ -7,7 +7,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Weapons_Lights"
+			"DZ_Weapons_Lights",
+      "Survivalists_Weapons_JMC_Attachments_Lights"
 		};
 	};
 };

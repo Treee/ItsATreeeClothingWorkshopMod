@@ -11,7 +11,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-			"DZ_Weapons_Firearms"
+			"DZ_Weapons_Firearms",
+      "Survivalists_Weapons_JMC_Rifles_ESP_M14"
 		};
 	};
 };

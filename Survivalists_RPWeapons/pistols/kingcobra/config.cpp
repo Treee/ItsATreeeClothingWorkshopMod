@@ -7,7 +7,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]={
       "DZ_Pistols",
-      "kingcobra"
+      "Survivalists_Weapons_JMC_Pistols_Kingcobra"
     };
 		magazines[]={};
 		ammo[]={};

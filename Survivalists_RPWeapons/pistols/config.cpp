@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
       "DZ_Pistols_Derringer",
-      "DZ_Pistols_Flaregun"
+      "DZ_Pistols_Flaregun",
+      "Survivalists_Weapons_JMC_Pistols"
 		};
 	};
 };

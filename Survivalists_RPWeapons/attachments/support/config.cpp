@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Supports",
-      "Survivalists_RPWeapons_Crafting"
+      "Survivalists_RPWeapons_Crafting",
+      "Survivalists_Weapons_JMC_Attachments_supports"
 		};
 	};
 };

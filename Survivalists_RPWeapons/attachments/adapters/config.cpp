@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class RIS_Adapters
+	class Survivalists_RPWeapons_Attachments_Adapters
 	{
 		units[]=
 		{
@@ -11,7 +11,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-			"DZ_Scripts"
+			"DZ_Scripts",
+      "Survivalists_Weapons_JMC_Attachments_Adapters"
 		};
 	};
 };

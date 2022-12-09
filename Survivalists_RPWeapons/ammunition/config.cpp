@@ -13,7 +13,8 @@ class CfgPatches
       "JMC_Mjolnir",
       "jmc_SnowOwl",
       "jmc_Prototype",
-      "jmc_SnowOwl_Ammo"
+      "jmc_SnowOwl_Ammo",
+      "Survivalists_Weapons_JMC_Ammunition"
 		};
 	};
 };
