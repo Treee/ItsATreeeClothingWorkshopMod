@@ -2313,6 +2313,23 @@ class CfgVehicles
 			"Survivalists_Mods\gear\containers\data\loot_protectorcase_flaregun_co.paa"
 		};
 	};
+  class SRP_SmallProtectorCase_FlagArmbandBox: SmallProtectorCase
+	{
+		scope=2;
+    displayName="Protected Armband & Flag Box";
+    descriptionShort="This protected case is meant to hold several armbands and flags safely.";
+		itemSize[]={4,4};
+		itemsCargoSize[]={10,20};
+    attachments[]={};
+    // hiddenSelections[]=
+		// {
+		// 	"zbytek"
+		// };
+		// hiddenSelectionsTextures[]=
+		// {
+		// 	"Survivalists_Mods\gear\containers\data\loot_protectorcase_flaregun_co.paa"
+		// };
+	};
 
   class SRP_LeatherPouch_Default: PlateCarrierPouches  // new
 	{
