@@ -27,11 +27,6 @@ class CfgVehicles
 		itemsCargoSize[]={9,6}; // increase to account for gas mask
 	};
 
-  class DUB_Leatherbag: Clothing_Base
-	{
-    itemSize[]={1,5};
-  };
-
   class HuntingBag: Clothing
 	{
 		itemsCargoSize[]={10,7};
