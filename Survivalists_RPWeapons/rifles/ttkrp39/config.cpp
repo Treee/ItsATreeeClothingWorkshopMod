@@ -36,6 +36,6 @@ class cfgWeapons
 		weight=1840;
 		recoilModifier[]={1,1,1};
 		swayModifier[]={1.2,1.2,1};
-		itemSize[]={5,2};
+		itemSize[]={8,2};
 	};
 };
