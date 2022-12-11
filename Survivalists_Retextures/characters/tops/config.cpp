@@ -9,7 +9,9 @@ class CfgPatches
 		{
 			"DZ_Characters",
 			"DZ_Characters_Tops",
-			"Survivalists_Retextures"
+      "Wool_GreatCoat",
+      "Dressupbox",
+      "Survivalists_Characters_Tops"
 		};
 	};
 };
@@ -49,6 +51,7 @@ class CfgVehicles
   class DUB_Monkrobe;
   class SRP_Sweater_ColorBase;
   class DUB_Duster;
+  class Wool_GreatCoat_ColorBase;
 
   class NBCJacketBase_Gray: NBCJacketBase
 	{
@@ -1490,6 +1493,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\TrackSuit_J06.paa",
 			"Survivalists_Retextures\characters\tops\data\TrackSuit_J06.paa",
 			"Survivalists_Retextures\characters\tops\data\TrackSuit_J06.paa"
+		};
+	};
+  class STAG_TracksuitJacket: TrackSuitJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\STAG_TracksuitJacket_co.paa",
+			"Survivalists_Retextures\characters\tops\data\STAG_TracksuitJacket_co.paa",
+			"Survivalists_Retextures\characters\tops\data\STAG_TracksuitJacket_co.paa"
 		};
 	};
 	class PoliceJacket_Sheriff: PoliceJacket
@@ -2985,5 +2998,13 @@ class CfgVehicles
     scope=2;
 		hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\srp_bowtie_yellow_co.paa"};
+  };
+  class STAG_GreatCoat: Wool_GreatCoat_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\STAG_GreatCoat_co.paa"
+    };
   };
 };

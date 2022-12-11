@@ -568,6 +568,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\TrackSuit_P06.paa"
 		};
 	};
+  class STAG_TracksuitPants: TrackSuitPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\STAG_TracksuitPants_co.paa",
+			"Survivalists_Retextures\characters\pants\data\STAG_TracksuitPants_co.paa",
+			"Survivalists_Retextures\characters\pants\data\STAG_TracksuitPants_co.paa"
+		};
+	};
 	class GorkaPants_MTP: GorkaPants_ColorBase
 	{
 		scope=2;

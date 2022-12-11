@@ -515,6 +515,17 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\Ushanka57.paa"
 		};
 	};
+  class STAG_Ushanka: Ushanka_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.89999998;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\STAG_Ushanka_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\STAG_Ushanka_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\STAG_Ushanka_co.paa"
+		};
+	};
 
   class OfficerHat_Officer: OfficerHat
   {

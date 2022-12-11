@@ -24,6 +24,7 @@ class CfgVehicles
 
   class DUB_Flagframe;
   class DUB_Gunframe;
+  class DUB_Meleeframe;
   
   class Bear_Blue: Bear_ColorBase
 	{
@@ -854,6 +855,61 @@ class CfgVehicles
 		hiddenSelections[]={"center"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_makeyoudie_co.paa"};
 	};
+
+  class STAG_Poster1: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="S.T.A.G. Poster";
+    descriptionShort="Framed artwork of S.T.A.G. Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\STAG_Poster1_CO.paa"};
+  };
+  class STAG_Poster2: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="S.T.A.G. Poster";
+    descriptionShort="Framed artwork of S.T.A.G. Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\STAG_Poster2_CO.paa"};
+  };
+  class STAG_Poster3: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="S.T.A.G. Poster";
+    descriptionShort="Framed artwork of S.T.A.G. Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\STAG_Poster3_CO.paa"};
+  };
+  class STAG_Poster4: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="S.T.A.G. Poster";
+    descriptionShort="Framed artwork of S.T.A.G. Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\STAG_Poster4_CO.paa"};
+  };
+  class STAG_Poster5: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="S.T.A.G. Poster";
+    descriptionShort="Framed artwork of S.T.A.G. Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\STAG_Poster5_CO.paa"};
+  };
+  class STAG_Poster6: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="S.T.A.G. Poster";
+    descriptionShort="Framed artwork of S.T.A.G. Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\STAG_Poster6_CO.paa"};
+  };
 
   // ========================================== LANDSCAPE ORIENTATION
   class DUB_Gunframe_Alcoholism: DUB_Gunframe 
