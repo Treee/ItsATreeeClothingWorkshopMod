@@ -4483,7 +4483,7 @@ class CfgVehicles
 		descriptionShort="$STR_UnknownFoodCan1";
     model="\dz\gear\food\food_can.p3d";
 		weight=440;
-    itemSize[]={2,2};
+    itemSize[]={1,2};
     allowOwnedCargoManipulation=1;
     hiddenSelections[]=
 		{
@@ -4495,7 +4495,7 @@ class CfgVehicles
 		};
 		class Cargo
 		{
-			itemsCargoSize[]={2,2};
+			itemsCargoSize[]={1,2};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
