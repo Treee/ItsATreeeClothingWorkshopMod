@@ -33,6 +33,8 @@ modded class GameConstants
 	const float REFRESHER_RADIUS 					= 80; 				//meters
 		
   const float FIRE_ATTACHMENT_DAMAGE_PER_SECOND 		= 0.016;		// default 0.125
+
+  const string DEFAULT_CHARACTER_NAME = "Survivor";
 }
 
 modded class EmoteConstants
