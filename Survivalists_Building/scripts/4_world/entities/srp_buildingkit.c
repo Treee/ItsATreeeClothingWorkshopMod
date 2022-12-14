@@ -1,4 +1,4 @@
-class SRP_Building_KitBase extends KitBase 
+class SRP_Building_KitBase extends ItemBase 
 {
   string GetBuildingKitItemName()
   {
@@ -11,17 +11,23 @@ class SRP_Building_KitBase extends KitBase
 
     if (GetGame().IsDedicatedServer())
 		{
-      Print("name: " + GetBuildingKitItemName());
-			BaseBuildingBase placedItem = BaseBuildingBase.Cast( GetGame().CreateObjectEx( GetBuildingKitItemName(), GetPosition(), ECE_PLACE_ON_SURFACE ) );
-      if (placedItem)
+      PlayerBase playerPB = PlayerBase.Cast(player);
+      if (player)
       {
-        placedItem.SetOrientation(orientation);
+        SRP_TurnItemIntoItemLambda_BuildingKitDeployment lambda = new SRP_TurnItemIntoItemLambda_BuildingKitDeployment(this, GetBuildingKitItemName(), playerPB, position, orientation);
+        lambda.SetTransferParams(false, false);
+        MiscGameplayFunctions.TurnItemIntoItemEx(playerPB, lambda);
       }
-      Print("Complete");
+
+      // Print("name: " + GetBuildingKitItemName());
+			// BaseBuildingBase placedItem = BaseBuildingBase.Cast( GetGame().CreateObjectEx( GetBuildingKitItemName(), GetPosition(), ECE_PLACE_ON_SURFACE ) );
+      // if (placedItem)
+      // {
+      //   placedItem.SetOrientation(orientation);
+      // }
+      // Print("Complete");
 		}
 	}
-
-
 	override bool DoPlacingHeightCheck()
 	{
 		return true;
@@ -30,17 +36,17 @@ class SRP_Building_KitBase extends KitBase
 	{
 		return 2.54;
 	}
-	override void DisassembleKit(ItemBase item)
-	{
-		if (!IsHologram())
-		{
-			// ItemBase stick = ItemBase.Cast(GetGame().CreateObjectEx("WoodenStick",GetPosition(),ECE_PLACE_ON_SURFACE));
-			// MiscGameplayFunctions.TransferItemProperties(this, stick);
-			// stick.SetQuantity(2);
-			// Rope rope = Rope.Cast(item);
-			// CreateRope(rope);
-		}
-	}
+	// override void DisassembleKit(ItemBase item)
+	// {
+	// 	if (!IsHologram())
+	// 	{
+	// 		// ItemBase stick = ItemBase.Cast(GetGame().CreateObjectEx("WoodenStick",GetPosition(),ECE_PLACE_ON_SURFACE));
+	// 		// MiscGameplayFunctions.TransferItemProperties(this, stick);
+	// 		// stick.SetQuantity(2);
+	// 		// Rope rope = Rope.Cast(item);
+	// 		// CreateRope(rope);
+	// 	}
+	// }
 	override void OnDebugSpawn()
 	{
 		// SpawnEntityOnGroundPos("Shovel", GetPosition());
@@ -64,6 +70,12 @@ class SRP_Building_KitBase extends KitBase
   override bool IsTwoHandedBehaviour()
 	{
 		return true;
+	}
+  override void SetActions()
+	{
+		super.SetActions();
+		AddAction(ActionTogglePlaceObject);
+		AddAction(ActionDeployObject);
 	}
 };
 

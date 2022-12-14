@@ -7,7 +7,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-      "DZ_Structures_Residential"
+      "DZ_Structures_Residential",
+      "Survivalists_Building_Gear_Camping"
 		};
 	};
 };
@@ -15,139 +16,124 @@ class CfgVehicles
 {
   class HouseNoDestruct;
   class Fence;
-  class SRP_KitBase;
+
+  class SRP_Building_KitBase;
 // ---------------------PRE FABS
-  class SRP_PrefabHouse_Base: HouseNoDestruct  // new
+  class SRP_PrefabHouse_Base: HouseNoDestruct
 	{
 		scope=0;
-		displayName="Russian House";
-		descriptionShort="A house.";
-		model="Survivalists_Building\structures\residential\srp_russianhouse.p3d";
+		displayName="BaseHouse";
+		descriptionShort="Base House";
+		model="Survivalists_Building\structures\residential\srp_woodenouthouse_full.p3d";
 		carveNavmesh=1;
 		weight=500;
+    storageCategory=1;
 		itemSize[]={15,10};
+    itemsCargoSize[]={0,0};
 		physLayer="item_large";
-		rotationFlags=2;
+		// rotationFlags=2;
     minPlacingDist=2;
 	};
 
-  class SRP_Structures_RussianHouse_Kit: SRP_KitBase  // new
+  class SRP_Structures_WoodenHouseOuthouse_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Wooden Outhouse kit";
+		descriptionShort="A kit for building a place to do the most important business.";
+    projectionTypename="SRP_Structures_WoodenHouseOuthouse";
+	};
+  class SRP_Structures_WoodenHouseOuthouse: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_woodenouthouse_full.p3d";
+	};
+  class SRP_Structures_RussianHouse_Kit: SRP_Building_KitBase
 	{
 		scope=2;
 		displayName="Russian House Kit";
 		descriptionShort="The kit for a house";
+    projectionTypename="SRP_Structures_RussianHouse";
 	};
-
-  class SRP_Structures_RussianHouse: SRP_PrefabHouse_Base  // new
+  class SRP_Structures_RussianHouse: SRP_PrefabHouse_Base
 	{
-		scope=1;
-		displayName="Russian House";
-		descriptionShort="A house.";
+		scope=2;
 		model="Survivalists_Building\structures\residential\srp_russianhouse.p3d";
 	};
-
-  class SRP_Structures_RussianHouse1_Kit: SRP_KitBase  // new
+  class SRP_Structures_RussianHouse1_Kit: SRP_Building_KitBase
 	{
 		scope=2;
 		displayName="Russian House Kit - Variant 1";
 		descriptionShort="The kit for a house";
+    projectionTypename="SRP_Structures_RussianHouse1";
 	};
-
-  class SRP_Structures_RussianHouse1: SRP_PrefabHouse_Base  // new
+  class SRP_Structures_RussianHouse1: SRP_PrefabHouse_Base
 	{
-		scope=1;
-		displayName="Russian House";
-		descriptionShort="A house.";
+		scope=2;
 		model="Survivalists_Building\structures\residential\srp_russianhouse1.p3d";
 	};
-
-  class SRP_Structures_WoodenHouseSingleRoom_Kit: SRP_KitBase  // new
+  class SRP_Structures_WoodenHouseSingleRoom_Kit: SRP_Building_KitBase
 	{
 		scope=2;
 		displayName="Wooden House Kit - Single Room";
 		descriptionShort="The kit for a house";
+    projectionTypename="SRP_Structures_WoodenHouseSingleRoom";
 	};
-
-  class SRP_Structures_WoodenHouseSingleRoom: SRP_PrefabHouse_Base  // new
-	{
-		scope=1;
-		displayName="Wooden House";
-		descriptionShort="A house.";
-		model="Survivalists_Building\structures\residential\srp_woodenhousesingleroom.p3d";
-	};
-
-  class SRP_Structures_WoodenHouseOuthouse_Kit: SRP_KitBase  // new
+  class SRP_Structures_WoodenHouseSingleRoom: SRP_PrefabHouse_Base
 	{
 		scope=2;
-		displayName="Wooden Out House Kit";
-		descriptionShort="The kit for an out house";
+		model="Survivalists_Building\structures\residential\srp_woodenhousesingleroom.p3d";
 	};
-
-  class SRP_Structures_WoodenHouseOuthouse: SRP_PrefabHouse_Base  // new
-	{
-		scope=1;
-		displayName="Wooden Out House";
-		descriptionShort="An out house.";
-		model="Survivalists_Building\structures\residential\srp_woodenouthouse_full.p3d";
-	};
-  
-  class SRP_Structures_WoodenBarn_Kit: SRP_KitBase  // new
+  class SRP_Structures_WoodenBarn_Kit: SRP_Building_KitBase
 	{
 		scope=2;
 		displayName="Wooden Barn Kit";
 		descriptionShort="The kit for a barn";
+    projectionTypename="SRP_Structures_WoodenBarn";
 	};
-
-  class SRP_Structures_WoodenBarn: SRP_PrefabHouse_Base  // new
+  class SRP_Structures_WoodenBarn: SRP_PrefabHouse_Base
 	{
-		scope=1;
-		displayName="Wooden Barn";
-		descriptionShort="A barn.";
+		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenbarn.p3d";
 	};
-
-  class SRP_Structures_WoodenShanty_Kit: SRP_KitBase  // new
+  class SRP_Structures_WoodenShanty_Kit: SRP_Building_KitBase
 	{
 		scope=2;
 		displayName="Wooden Shanty Kit";
 		descriptionShort="The kit for a shanty";
+    projectionTypename="SRP_Structures_WoodenShanty";
 	};
-
-  class SRP_Structures_WoodenShanty: SRP_PrefabHouse_Base  // new
+  class SRP_Structures_WoodenShanty: SRP_PrefabHouse_Base
 	{
-		scope=1;
-		displayName="Wooden Shanty";
-		descriptionShort="A shanty.";
+		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenshanty.p3d";
 	};
-
-  class SRP_Structures_WoodenShed_Kit: SRP_KitBase  // new
+  class SRP_Structures_WoodenShed_Kit: SRP_Building_KitBase
 	{
 		scope=2;
 		displayName="Wooden Shed Kit";
 		descriptionShort="The kit for a Shed";
+    projectionTypename="SRP_Structures_WoodenShed";
 	};
-
-  class SRP_Structures_WoodenShed: SRP_PrefabHouse_Base  // new
+  class SRP_Structures_WoodenShed: SRP_PrefabHouse_Base
 	{
-		scope=1;
-		displayName="Wooden Shed";
-		descriptionShort="A Shed.";
+		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenshed.p3d";
 	};
   
-// ---------------------DOORS
-  class SRP_Structures_HouseDoor: Fence  // new
+// ---------------------DOORS (Scope 0 for now)
+  class SRP_PrefabDoor_Base: HouseNoDestruct
 	{
 		scope=0;
 		displayName="Door";
-		descriptionShort="A door.";
+		descriptionShort="A door that can take a codelock";
 		model="Survivalists_Building\structures\residential\srp_russianhousedoor.p3d";
 		carveNavmesh=1;
 		weight=500;
+    storageCategory=1;
 		itemSize[]={15,10};
+    itemsCargoSize[]={0,0};
 		physLayer="item_large";
-		rotationFlags=2;
+		// rotationFlags=2;
     minPlacingDist=5;
     handheld="false";
     attachments[]=
@@ -246,68 +232,151 @@ class CfgVehicles
 			{
 			};
 		};
-    class Construction
-		{
-			class wall
-			{
-				class wall_gate
-				{
-					name="Door";
-					is_gate=1;
-					id=1;
-					required_parts[]={};
-					conflicted_parts[]={};
-					collision_data[]={};
-					build_action_type=1;
-					dismantle_action_type=0;
-				};
-			};
-		};
 	};
-
-  class SRP_Structures_RussianHouseDoor_Kit: SRP_KitBase  // new
+  // class SRP_Structures_HouseDoor: Fence
+	// {
+	// 	scope=0;
+	// 	displayName="Door";
+	// 	descriptionShort="A door.";
+	// 	model="Survivalists_Building\structures\residential\srp_russianhousedoor.p3d";
+	// 	carveNavmesh=1;
+	// 	weight=500;
+	// 	itemSize[]={15,10};
+	// 	physLayer="item_large";
+	// 	rotationFlags=2;
+  //   minPlacingDist=5;
+  //   handheld="false";
+  //   attachments[]=
+	// 	{
+	// 		"Att_CombinationLock"
+	// 	};
+  //   class GUIInventoryAttachmentsProps
+	// 	{
+	// 		class Attachments
+	// 		{
+	// 			name="$STR_CfgVehicles_Fence_Att_Category_Attachments";
+	// 			description="";
+	// 			attachmentSlots[]=
+	// 			{
+	// 				"Att_CombinationLock"
+	// 			};
+	// 			icon="set:dayz_inventory image:cat_bb_attachments";
+	// 			selection="wall";
+	// 		};
+	// 	};
+  //   class DamageSystem
+	// 	{
+	// 		class GlobalHealth
+	// 		{
+	// 			class Health
+	// 			{
+	// 				hitpoints=1000;
+	// 			};
+	// 		};
+	// 		class GlobalArmor
+	// 		{
+	// 			class Projectile
+	// 			{
+	// 				class Health
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 				class Blood
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 				class Shock
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 			};
+	// 			class Melee
+	// 			{
+	// 				class Health
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 				class Blood
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 				class Shock
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 			};
+	// 			class FragGrenade
+	// 			{
+	// 				class Health
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 				class Blood
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 				class Shock
+	// 				{
+	// 					damage=0;
+	// 				};
+	// 			};
+	// 		};
+	// 	};
+  //   class AnimationSources
+	// 	{
+	// 		class AnimRotate
+	// 		{
+	// 			source="user";
+	// 			component="selection_door";
+	// 			animPeriod=1;
+	// 			initPhase=0;
+	// 			initOpened=0.5;
+	// 		};
+  //     class AnimSourceHidden
+	// 		{
+	// 			source="user";
+	// 			animPeriod=0.0099999998;
+	// 			initPhase=1;
+	// 		};
+	// 		class Wall_Gate_Rotate: AnimRotate
+	// 		{
+	// 		};
+	// 	};
+	// };
+  class SRP_Structures_RussianHouseDoor_Kit: SRP_Building_KitBase
 	{
-		scope=2;
+		scope=0;
 		displayName="Russian House Door Kit";
 		descriptionShort="The kit for a door";
+    projectionTypename="SRP_Structures_RussianHouseDoor";
 	};
-
-  class SRP_Structures_RussianHouseDoor: SRP_Structures_HouseDoor  // new
+  class SRP_Structures_RussianHouseDoor: SRP_PrefabDoor_Base
 	{
-		scope=2;
-		displayName="Door";
-		descriptionShort="A door.";
+		scope=0;
 		model="Survivalists_Building\structures\residential\srp_russianhousedoor.p3d";
 	};
-
-  class SRP_Structures_RussianHouse1Door_Kit: SRP_KitBase  // new
+  class SRP_Structures_RussianHouse1Door_Kit: SRP_Building_KitBase
 	{
-		scope=2;
+		scope=0;
 		displayName="Russian House Door Kit - Variant 1";
 		descriptionShort="The kit for a door";
+    projectionTypename="SRP_Structures_RussianHouse1Door";
 	};
-
-  class SRP_Structures_RussianHouse1Door: SRP_Structures_HouseDoor  // new
+  class SRP_Structures_RussianHouse1Door: SRP_PrefabDoor_Base
 	{
-		scope=2;
-		displayName="Door";
-		descriptionShort="A door.";
+		scope=0;
 		model="Survivalists_Building\structures\residential\srp_russianhouse1door.p3d";
 	};
-
-  class SRP_Structures_WoodenShedDoor_Kit: SRP_KitBase  // new
+  class SRP_Structures_WoodenShedDoor_Kit: SRP_Building_KitBase
 	{
-		scope=2;
+		scope=0;
 		displayName="Wooden Shed Door Kit";
 		descriptionShort="The kit for a door";
+    projectionTypename="SRP_Structures_WoodenShedDoor";
 	};
-
-  class SRP_Structures_WoodenShedDoor: SRP_Structures_HouseDoor  // new
+  class SRP_Structures_WoodenShedDoor: SRP_PrefabDoor_Base
 	{
-		scope=2;
-		displayName="Door";
-		descriptionShort="A door.";
+		scope=0;
 		model="Survivalists_Building\structures\residential\srp_woodensheddoor.p3d";
 	};
-
 };
