@@ -52,11 +52,26 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\residential\srp_cleanwarehouse.p3d";
 	};
   class Land_Building_SRP_CleanWarehouse_Cromwell: HouseNoDestruct
-	{
+	{ 
 		scope=1;
     // hiddenSelections[]={"zbytek"};
     // hiddenSelectionsTextures[]={"Survivalists_Mods\structures\residential\data\srp_generalstore_inside_co.paa"};
 		model="Survivalists_Mods\structures\residential\srp_cleanwarehouse.p3d";
+	};
+
+  class Land_Building_SRP_SciFiTeleporter: HouseNoDestruct
+	{
+		scope=1;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\residential\data\srp_scifi_teleporter_co.paa"};
+		model="Survivalists_Mods\structures\residential\srp_scifi_teleporter.p3d";
+	};
+  class Land_Building_SRP_SciFiTeleporter_Cromwell: HouseNoDestruct
+	{
+		scope=1;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\residential\data\srp_scifi_teleporter_co.paa"};
+		model="Survivalists_Mods\structures\residential\srp_scifi_teleporter.p3d";
 	};
 
 };
