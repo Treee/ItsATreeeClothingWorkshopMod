@@ -137,7 +137,7 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
 	{
 		m_Name = "Crush Stone Chunk";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 8;//animation length in relative time units
+		m_AnimationLength = 4;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -264,7 +264,7 @@ class Craft_SRP_CrushStoneChunk_JewlingTool extends RecipeBase
 	{
 		m_Name = "Crush Stone Chunk - Jewels";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -384,7 +384,7 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
 	{
 		m_Name = "Cut Gem - Crude";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 8;//animation length in relative time units
+		m_AnimationLength = 3;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -480,7 +480,7 @@ class Craft_SRP_RefineUnCutGem_JewlCuttingTool extends RecipeBase
 	{
 		m_Name = "Cut Gem - Advanced";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -494,7 +494,7 @@ class Craft_SRP_RefineUnCutGem_JewlCuttingTool extends RecipeBase
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[1] = 100;//-1 = disable check
+		m_MinQuantityIngredient[1] = 50;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -513,8 +513,8 @@ class Craft_SRP_RefineUnCutGem_JewlCuttingTool extends RecipeBase
 
 		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -100;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -50;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -539,7 +539,7 @@ class Craft_SRP_RefineUnCutGem_JewlCuttingTool extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
     // 50% chance to ruin the product
-    if (Math.RandomFloatInclusive(0,1) >= 0.5)
+    if (Math.RandomFloatInclusive(0,1) >= 0.36)
     {
       m_ResultSetHealth[0] = -9999;
     }
