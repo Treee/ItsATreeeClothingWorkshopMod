@@ -948,7 +948,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf - L Shape Down";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisL_down.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -963,7 +963,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf - L Shape Up";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisL_up.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -978,7 +978,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf - L Shape Left";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisL_left.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -993,7 +993,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf - L Shape Right";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisL_right.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1009,7 +1009,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf - I Shape Vertical";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisI_vertical.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1024,7 +1024,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf Kit - I Shape Horizontal";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisI_horizontal.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1039,7 +1039,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf - T Shape Up";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisT_up.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1054,7 +1054,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf - T Shape Down";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisT_down.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1069,7 +1069,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf Kit - T Shape Vertical";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisT_vertical.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1084,7 +1084,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf - S Shape Horizontal";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisS_horizontal.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1099,7 +1099,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf Kit - S Shape Vertical";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisS_vertical.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;
@@ -1114,7 +1114,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf Kit - Box Shape";
-		descriptionShort="A Convenient shelf where you can put your junk";
+		descriptionShort="A retro shaped shelf that glows in the dark. Set things on top.";
 		model="Survivalists_Mods\gear\containers\wallshelftetrisbox.p3d";
 		carveNavmesh=1;
 		canBeDigged=0;

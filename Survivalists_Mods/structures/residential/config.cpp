@@ -70,7 +70,7 @@ class CfgVehicles
 	{
 		scope=1;
     hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\residential\data\srp_scifi_teleporter_co.paa"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\structures\residential\data\srp_scifi_teleporter_cromwell_co.paa"};
 		model="Survivalists_Mods\structures\residential\srp_scifi_teleporter.p3d";
 	};
 

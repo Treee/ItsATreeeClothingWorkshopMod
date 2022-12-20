@@ -50,6 +50,7 @@ class CfgVehicles
   class SRP_Furniture_Gazebo: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		model="Survivalists_Mods\structures\furniture\srp_gazebo.p3d";
     hiddenSelections[]=
 		{

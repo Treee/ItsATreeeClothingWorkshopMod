@@ -32,7 +32,7 @@ class CfgVehicles
     itemsCargoSize[]={0,0};
 		physLayer="item_large";
 		// rotationFlags=2;
-    minPlacingDist=2;
+    minPlacingDist=5;
 	};
 
   class SRP_Structures_WoodenHouseOuthouse_Kit: SRP_Building_KitBase
@@ -118,6 +118,73 @@ class CfgVehicles
 	{
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenshed.p3d";
+	};
+  class Land_srp_wooden_2floor_tavern_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Wooden Tavern 2 Floor Kit";
+		descriptionShort="The kit for a wooden tavernw ith 2 floors and multiple windows";
+    projectionTypename="Land_srp_wooden_2floor_tavern";
+	};
+  class Land_srp_wooden_2floor_tavern: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_wooden_2floor_tavern.p3d";
+    class Doors
+		{
+			class window1f_1
+			{
+				displayName="Window 1 Floor 1";
+				component="window1f_1";
+				soundPos="window1f_1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window1f_2
+			{
+				displayName="Window 1 Floor 1";
+				component="window1f_2";
+				soundPos="window1f_2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window1f_3
+			{
+				displayName="Window 1 Floor 1";
+				component="window1f_3";
+				soundPos="window1f_3_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window1f_4
+			{
+				displayName="Window 1 Floor 1";
+				component="window1f_4";
+				soundPos="window1f_4_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+		};
 	};
   
 // ---------------------DOORS (Scope 0 for now)
