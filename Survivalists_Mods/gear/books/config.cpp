@@ -15,9 +15,35 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class ItemBook;
+  class Book_Base;
   class Inventory_Base;
 
+  class ItemBook: Book_Base
+	{
+    inventorySlot[]+=
+    {
+      "SRP_Book1",
+			"SRP_Book2",
+			"SRP_Book3",
+			"SRP_Book4",
+			"SRP_Book5",
+			"SRP_Book6",
+			"SRP_Book7",
+			"SRP_Book8",
+			"SRP_Book9",
+			"SRP_Book10",
+			"SRP_Book11",
+			"SRP_Book12",
+			"SRP_Book13",
+			"SRP_Book14",
+			"SRP_Book15",
+			"SRP_Book16",
+			"SRP_Book17",
+			"SRP_Book18",
+			"SRP_Book19",
+			"SRP_Book20",
+    };
+  };
   //----------------------------------------- MODDED OVERRIDE
   class DUB_Newspaper_1: Inventory_Base
 	{
@@ -75,59 +101,6 @@ class CfgVehicles
 			"Book48",
 			"Book49",
 			"Book50",
-      "SRP_Book1",
-			"SRP_Book2",
-			"SRP_Book3",
-			"SRP_Book4",
-			"SRP_Book5",
-			"SRP_Book6",
-			"SRP_Book7",
-			"SRP_Book8",
-			"SRP_Book9",
-			"SRP_Book10",
-			"SRP_Book11",
-			"SRP_Book12",
-			"SRP_Book13",
-			"SRP_Book14",
-			"SRP_Book15",
-			"SRP_Book16",
-			"SRP_Book17",
-			"SRP_Book18",
-			"SRP_Book19",
-			"SRP_Book20",
-		};
-  };
-  
-  class SRP_ReadableBook_Colorbase: ItemBook
-  {
-    inventorySlot[]+=
-		{
-      "SRP_Book1",
-			"SRP_Book2",
-			"SRP_Book3",
-			"SRP_Book4",
-			"SRP_Book5",
-			"SRP_Book6",
-			"SRP_Book7",
-			"SRP_Book8",
-			"SRP_Book9",
-			"SRP_Book10",
-			"SRP_Book11",
-			"SRP_Book12",
-			"SRP_Book13",
-			"SRP_Book14",
-			"SRP_Book15",
-			"SRP_Book16",
-			"SRP_Book17",
-			"SRP_Book18",
-			"SRP_Book19",
-			"SRP_Book20",
-		};
-  };
-  class SRP_ReadableScroll_Colorbase: ItemBook
-  {
-    inventorySlot[]+=
-		{
       "SRP_Book1",
 			"SRP_Book2",
 			"SRP_Book3",
