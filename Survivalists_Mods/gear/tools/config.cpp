@@ -180,6 +180,10 @@ class CfgVehicles
 	{
     inventorySlot[]+={"fishingRod"};
   };
+  class Blowtorch: Inventory_Base
+	{
+		itemSize[]={2,1};
+  };
 
   // -------------------------- MODDED MODS
   class MassAdminStash: Compass
