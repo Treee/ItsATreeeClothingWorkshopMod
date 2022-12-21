@@ -2218,7 +2218,17 @@ class CfgVehicles
 			"Book47",
 			"Book48",
 			"Book49",
-			"Book50"
+			"Book50",
+      "SRP_Book1",
+			"SRP_Book2",
+			"SRP_Book3",
+			"SRP_Book4",
+			"SRP_Book5",
+			"SRP_Book6",
+			"SRP_Book7",
+			"SRP_Book8",
+			"SRP_Book9",
+			"SRP_Book10", 
 		};
 		rotationFlags=1;
 		weight=140;
