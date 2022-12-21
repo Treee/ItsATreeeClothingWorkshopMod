@@ -9,16 +9,16 @@ modded class PlayerConstants
 	static const float BLOOD_REGEN_RATE_PER_SEC				= 0.2; 	// default .3
 	static const float DAMAGE_ZONE_BLOOD_REGEN_MODIFIER 	= 0.5; //default 0.7
 
-	static const float BLOOD_REGEN_MODIFIER_ENERGY_HIGH		= 0.75; // default 1
+	static const float BLOOD_REGEN_MODIFIER_ENERGY_HIGH		= 0.95; // default 1
 	
-	static const float BLOOD_REGEN_MODIFIER_WATER_HIGH		= 0.75; //default 1
+	static const float BLOOD_REGEN_MODIFIER_WATER_HIGH		= 0.95; //default 1
 	
-	static const float SALINE_BLOOD_REGEN_PER_SEC			= 1.5;	// default 3		
+	static const float SALINE_BLOOD_REGEN_PER_SEC			= 2.3;	// default 3		
 
-	static const float HEALTH_REGEN_MAX						= 0.015;		// defgault 0.03
+	static const float HEALTH_REGEN_MAX						= 0.02;		// defgault 0.03
 	
-	static const float LEG_HEALTH_REGEN						= 0.5;		// default 1
-	static const float LEG_HEALTH_REGEN_BROKEN				= 0.035;		// default 0.18
+	static const float LEG_HEALTH_REGEN						= 0.75;		// default 1
+	static const float LEG_HEALTH_REGEN_BROKEN				= 0.025;		// default 0.18
 
 }
 
