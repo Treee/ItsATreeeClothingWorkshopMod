@@ -138,7 +138,8 @@ class SRP_FridgeMinsk_Medical extends SRP_FridgeMinsk{};
 class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
 {
   protected float m_CollectionLifespan;
-  protected const int HERB_DRYING_TIME = 150;
+  // protected const int HERB_DRYING_TIME = 1;
+  protected const int HERB_DRYING_TIME = 130;
 
   void SRP_FridgeRetro_HerbRack()
   {

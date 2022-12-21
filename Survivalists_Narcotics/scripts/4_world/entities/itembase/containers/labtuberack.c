@@ -23,6 +23,14 @@ class SRP_LabTubeRack extends ItemBase
     return false;
   }
 
+  bool IsBleachPuzzleSolved() {
+    bool slot1 = IsSlotFilledWithColor("TestTube5", "clear") || IsSlotFilledWithColor("TestTube5", "red") || IsSlotFilledWithColor("TestTube5", "blue");
+    bool slot2 = IsSlotFilledWithColor("TestTube3", "blue") || IsSlotFilledWithColor("TestTube3", "yellow") || IsSlotFilledWithColor("TestTube3", "green");
+    bool slot4 = IsSlotFilledWithColor("TestTube4", "green") || IsSlotFilledWithColor("TestTube4", "blue") || IsSlotFilledWithColor("TestTube4", "red");
+    bool slot5 = IsSlotFilledWithColor("TestTube1", "yellow") || IsSlotFilledWithColor("TestTube1", "green") || IsSlotFilledWithColor("TestTube1", "clear");
+    return slot1 && slot2 && slot4 && slot5;
+  }
+
   bool IsCocainePuzzleSolved() {
     bool slot1 = IsSlotFilledWithColor("TestTube5", "green") || IsSlotFilledWithColor("TestTube5", "clear") || IsSlotFilledWithColor("TestTube5", "green");
     bool slot2 = IsSlotFilledWithColor("TestTube3", "blue") || IsSlotFilledWithColor("TestTube3", "red") || IsSlotFilledWithColor("TestTube3", "clear");

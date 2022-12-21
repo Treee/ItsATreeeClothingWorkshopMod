@@ -26,7 +26,7 @@ class CfgVehicles
     color="base";
     weight=0;
 		itemSize[]={1,1};
-		stackedUnit="g";
+		stackedUnit="pc.";
 		absorbency=0.2;
 		varQuantityInit=1;
 		varQuantityMin=0;

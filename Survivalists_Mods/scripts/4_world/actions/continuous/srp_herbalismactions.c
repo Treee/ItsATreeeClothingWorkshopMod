@@ -7,11 +7,11 @@ class ReplaceHerbsWithCrushedPowder extends TurnItemIntoItemLambda
 
     SRP_CrushedHerb_Colorbase crushedHerb;
     Class.CastTo(crushedHerb, new_item);
+    int multiplier = old_item.GetQuantity();
+    int itemCount = Math.RandomIntInclusive(1, 5);
 
-    int m_ItemCount = Math.RandomIntInclusive(1, old_item.GetQuantity() +  Math.RandomIntInclusive(1,7));
-
-    crushedHerb.SetQuantity(m_ItemCount);
-    // Print("ReplaceHerbsWithCrushedPowder::SetupNewItem new_item=" + new_item + " count=" + m_ItemCount);
+    crushedHerb.SetQuantity((itemCount * multiplier));
+    // Print("ReplaceHerbsWithCrushedPowder::SetupNewItem crushedHerb=" + crushedHerb + " count=" + itemCount);
 	}
 };
 
@@ -63,7 +63,8 @@ class ActionMortarCrushIntoPowder: ActionSingleUseBase
         string color = herb.ConfigGetString("color");
         string newClassName = "SRP_CrushedHerb_" + color;
         // replace it with powder
-        MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, new ReplaceHerbsWithCrushedPowder(herb, newClassName, action_data.m_Player));
+        action_data.m_Player.ServerReplaceItemWithNew(new ReplaceHerbsWithCrushedPowder(herb, newClassName, action_data.m_Player));
+        // MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, new ReplaceHerbsWithCrushedPowder(herb, newClassName, action_data.m_Player));
       }
 		}
 	}
