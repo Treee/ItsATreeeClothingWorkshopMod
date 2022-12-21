@@ -6,7 +6,7 @@ modded class QuantityConversions
 		if ( Class.CastTo(ib, item) )
 		{
 			if ( item.IsMagazine() )
-				return QUANTITY_HIDDEN;
+				return QUANTITY_PROGRESS;
 			
 			if ( !ib.m_CanShowQuantity )
 				return QUANTITY_HIDDEN;
@@ -32,5 +32,5 @@ modded class QuantityConversions
 			}
 		}
 		return QUANTITY_HIDDEN;
-	}	
+	}
 }
