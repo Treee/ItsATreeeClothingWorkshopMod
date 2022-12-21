@@ -182,7 +182,7 @@ class CfgVehicles
   };
   class Blowtorch: Inventory_Base
 	{
-		itemSize[]={2,1};
+		itemSize[]={2,2};
   };
 
   // -------------------------- MODDED MODS
