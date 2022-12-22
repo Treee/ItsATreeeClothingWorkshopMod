@@ -1,6 +1,6 @@
-class ESPAR22 extends RifleBoltLock_Base
+class ESP_AR15 : RifleBoltLock_Base
 {
-  private void HideUnhideSelection(string selectionName, bool hide = false)
+	private void HideUnhideSelection(string selectionName, bool hide = false)
   {
     TStringArray selectionNames = new TStringArray;
     ConfigGetTextArray("simpleHiddenSelections",selectionNames);
@@ -8,7 +8,7 @@ class ESPAR22 extends RifleBoltLock_Base
     SetSimpleHiddenSelectionState(selectionId, hide);
   }
 
-    override void EEInit()
+  override void EEInit()
 	{
 		super.EEInit();
 
@@ -47,37 +47,22 @@ class ESPAR22 extends RifleBoltLock_Base
 			HideUnhideSelection("Buffer", 1);
 			HideUnhideSelection("PistolGrip", 1);
 		}
-	}
+	}	
 
 	override bool CanDisplayAttachmentSlot( string slot_name)
   {
     if ( slot_name == "RISLeft" )
 		{
-      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
+      return ( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
 		}
 		if ( slot_name == "RISRight" )
 		{
-      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
+      return ( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
 		}
 		if ( slot_name == "RISBottom" )
 		{
-      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
+      return ( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
 		}
-    return true;
+		return true;
   }
-	
-  override void OnDebugSpawn()
-	{
-		GameInventory inventory = GetInventory();
-				
-		inventory.CreateInInventory( "ESP_Short_Range" );
-		inventory.CreateInInventory( "UniversalLight" );
-		inventory.CreateInInventory( "PistolSuppressor" );
-		inventory.CreateInInventory( "Battery9V" );
-		inventory.CreateInInventory( "Battery9V" );
-		inventory.CreateInInventory( "ESP_M16_Stck_Black" );
-		inventory.CreateInInventory( "ESP_RIS_Erg_HndGrd_Tan" );
-    
-    SpawnAttachedMagazine("Mag_Ruger1022_30Rnd");
-	}	
 };

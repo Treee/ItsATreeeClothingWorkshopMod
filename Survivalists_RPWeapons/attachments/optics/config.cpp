@@ -15,6 +15,7 @@ class CfgPatches
 class CfgVehicles
 {
   class ItemOptics_Base;
+  class ItemOptics;
 
 //========================================== Vanilla Override
   class M4_CarryHandleOptic: ItemOptics_Base
@@ -717,8 +718,8 @@ class CfgVehicles
 	class ESP_RedDot: ReflexOptic
 	{
 		scope=2;
-		displayName="$STR_cfgVehicles_ReflexOptic0";
-		descriptionShort="$STR_cfgVehicles_ReflexOptic1";
+		displayName="ESP-RD";
+		descriptionShort="The ESP-RedDot is a compact optic that is typically used at closer ranges.";
 		model="Survivalists_RPWeapons\attachments\optics\ESP_RedDot.p3d";
 		debug_ItemCategory=3;
 		attachments[]=
@@ -786,6 +787,427 @@ class CfgVehicles
 		};
 		repairableWithKits[]={7};
 		repairCosts[]={25};
+		class EnergyManager
+		{
+			hasIcon=1;
+			energyUsagePerSecond=0.02;
+			plugType=1;
+			attachmentAction=1;
+		};
+	};
+
+
+  class ESP_Holographic: ItemOptics
+	{
+		scope=2;
+		displayName="ESP-Holo";
+		descriptionShort="The ESP-Holo is Espen Industries take on the Holographic optic. Using a simillar reticle this optic is was often used by the US Military";
+		model="Survivalists_RPWeapons\attachments\optics\ESP_EOTECH.p3d";
+		debug_ItemCategory=3;
+		attachments[]=
+		{
+			"BatteryD"
+		};
+		animClass="Binoculars";
+		simulation="itemoptics";
+		inventorySlot[]=
+		{
+			"WeaponOptics"
+		};
+		selectionFireAnim="zasleh";
+		memoryPointCamera="eyeScope";
+		cameraDir="cameraDir";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		recoilModifier[]={1,1,1};
+		swayModifier[]={1,1,1};
+    repairableWithKits[]={7};
+		repairCosts[]={25};
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=30;
+					healthLevels[]=
+					{						
+						{1,{"DZ\weapons\attachments\optics\data\red_dot_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
+						{0.69999999,{}},						
+						{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
+						{0.30000001,{}},						
+						{0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}}
+					};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera="eyeScope";
+			cameraDir="cameraDir";
+			modelOptics="-";
+			opticsDisablePeripherialVision=0.67000002;
+			opticsFlare=1;
+			opticsPPEffects[]={};
+			opticSightTexture="dz\weapons\attachments\optics\data\collimdot_red_ca.paa";
+			opticsZoomMin=0.52359998;
+			opticsZoomMax=0.52359998;
+			opticsZoomInit=0.52359998;
+			distanceZoomMin=25;
+			distanceZoomMax=200;
+			discreteDistance[]={25,50,100,200};
+			discreteDistanceInitIndex=0;
+			PPMaskProperties[]={0.5,0.5,0.40000001,0.050000001};
+			PPLensProperties[]={1,0.15000001,0,0};
+			PPBlurProperties=0.2;
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			energyUsagePerSecond=0.02;
+			plugType=1;
+			attachmentAction=1;
+		};
+	};
+	class ESP_Holographic_Tan: ESP_Holographic
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC_Tan_CO.paa"
+		};
+	};
+	class ESP_Scope3X: ItemOptics
+	{
+		scope=2;
+		displayName="ESP-3X";
+		descriptionShort="The ESP-3X was among Espen Industries first line of modern optics. It's simple design and 3x magnification makes it ideal for close to mid range engagements";
+		model="Survivalists_RPWeapons\attachments\optics\ESP_Scope3X.p3d";
+		debug_ItemCategory=3;
+		attachments[]=
+		{
+			"BatteryD"
+		};
+		animClass="Binoculars";
+		simulation="itemoptics";
+		inventorySlot[]=
+		{
+			"WeaponOptics"
+		};
+		selectionFireAnim="zasleh";
+		memoryPointCamera="eyeScope";
+		cameraDir="cameraDir";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		recoilModifier[]={1,1,1};
+		swayModifier[]={1,1,1};
+    repairableWithKits[]={7};
+		repairCosts[]={25};
+		hiddenSelections[]=
+		{
+			"reddot"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			""
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=30;
+					healthLevels[]=
+					{						
+						{1,{"DZ\weapons\attachments\optics\data\red_dot_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
+						{0.69999999,{}},						
+						{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
+						{0.30000001,{}},						
+						{0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}}
+					};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera="eyeScope";
+			cameraDir="cameraDir";
+			modelOptics="-";
+			opticsDisablePeripherialVision=0.67000002;
+			opticsFlare=1;
+			opticsPPEffects[]={};
+			opticSightTexture="dz\weapons\attachments\optics\data\collimdot_red_ca.paa";
+			opticsZoomMin = "0.3926/2";
+			opticsZoomMax = "0.3926/2";
+			opticsZoomInit = "0.3926/2";
+			distanceZoomMin=25;
+			distanceZoomMax=200;
+			discreteDistance[]={25,50,100,200};
+			discreteDistanceInitIndex=0;
+			PPMaskProperties[]={0.5,0.5,0.40000001,0.050000001};
+			PPLensProperties[]={1,0.15000001,0,0};
+			PPBlurProperties=0.2;
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			energyUsagePerSecond=0.02;
+			plugType=1;
+			attachmentAction=1;
+		};
+	};
+	class ESP_Scope4X: ItemOptics
+	{
+		scope=2;
+		displayName="ESP-4X";
+		descriptionShort="The ESP-4X was among Espen Industries first line of modern optics. It's simple design and 3x magnification makes it ideal for close to mid range engagements";
+		model="Survivalists_RPWeapons\attachments\optics\ESP_Scope4x.p3d";
+		debug_ItemCategory=3;
+		attachments[]=
+		{
+			"BatteryD"
+		};
+		animClass="Binoculars";
+		simulation="itemoptics";
+		inventorySlot[]=
+		{
+			"WeaponOptics"
+		};
+		selectionFireAnim="zasleh";
+		memoryPointCamera="eyeScope";
+		cameraDir="cameraDir";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		recoilModifier[]={1,1,1};
+		swayModifier[]={1,1,1};
+		repairableWithKits[]={7};
+		repairCosts[]={25};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=30;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
+						{0.69999999,{}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
+						{0.30000001,{}},						
+						{0,{"Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}}
+					};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera="eyeScope";
+			cameraDir="cameraDir";
+			modelOptics="-";
+			opticsDisablePeripherialVision=0.67000002;
+			opticsFlare=1;
+			opticsPPEffects[]={};
+			opticSightTexture="dz\weapons\attachments\optics\data\collimdot_red_ca.paa";
+			opticsZoomMin = "0.3926/3";
+			opticsZoomMax = "0.3926/3";
+			opticsZoomInit = "0.3926/3";
+			distanceZoomMin=25;
+			distanceZoomMax=200;
+			discreteDistance[]={25,50,100,200};
+			discreteDistanceInitIndex=0;
+			PPMaskProperties[]={0.5,0.5,0.40000001,0.050000001};
+			PPLensProperties[]={1,0.15000001,0,0};
+			PPBlurProperties=0.2;
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			energyUsagePerSecond=0.02;
+			plugType=1;
+			attachmentAction=1;
+		};
+	};
+	class ESP_XPS3: ItemOptics
+	{
+		scope=2;
+		displayName="ESP-PS3";
+		descriptionShort="The ESP-PS3 is a newer and smaller model of the ESP-Holo. By reducing it's size Espen Industries were able to reduce it's weight by almost half";
+		model="Survivalists_RPWeapons\attachments\optics\ESP_XPS3.p3d";
+		debug_ItemCategory=3;
+		attachments[]=
+		{
+			"BatteryD"
+		};
+		animClass="Binoculars";
+		simulation="itemoptics";
+		inventorySlot[]=
+		{
+			"WeaponOptics"
+		};
+		selectionFireAnim="zasleh";
+		memoryPointCamera="eyeScope";
+		cameraDir="cameraDir";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		recoilModifier[]={1,1,1};
+		swayModifier[]={1,1,1};
+    repairableWithKits[]={7};
+		repairCosts[]={25};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=30;
+					healthLevels[]=
+					{
+						
+						{1,{"DZ\weapons\attachments\optics\data\red_dot_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
+						{0.69999999,{}},						
+						{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
+						{0.30000001,{}},						
+						{0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}}
+					};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera="eyeScope";
+			cameraDir="cameraDir";
+			modelOptics="-";
+			opticsDisablePeripherialVision=0.67000002;
+			opticsFlare=1;
+			opticsPPEffects[]={};
+			opticSightTexture="dz\weapons\attachments\optics\data\collimdot_red_ca.paa";
+			opticsZoomMin=0.52359998;
+			opticsZoomMax=0.52359998;
+			opticsZoomInit=0.52359998;
+			distanceZoomMin=25;
+			distanceZoomMax=200;
+			discreteDistance[]={25,50,100,200};
+			discreteDistanceInitIndex=0;
+			PPMaskProperties[]={0.5,0.5,0.40000001,0.050000001};
+			PPLensProperties[]={1,0.15000001,0,0};
+			PPBlurProperties=0.2;
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			energyUsagePerSecond=0.02;
+			plugType=1;
+			attachmentAction=1;
+		};
+	};
+	class ESP_Pistol_Reddot: ItemOptics
+	{
+		scope=2;
+		displayName="ESP-PRD";
+		descriptionShort="The ESP-PRD is a smaller version of the ESP-RD which is designed to be used on pistols";
+		model="Survivalists_RPWeapons\attachments\optics\ESP_Pistol_Reddot.p3d";
+		debug_ItemCategory=3;
+		attachments[]=
+		{
+			"BatteryD"
+		};
+		animClass="Binoculars";
+		rotationFlags=17;
+		reversed=0;
+		weight=150;
+		itemSize[]={1,1};
+		inventorySlot[]=
+		{
+			"pistolOptics",
+			"weaponOpticsCrossbow"
+		};
+		simulation="itemoptics";
+		selectionFireAnim="zasleh";
+		memoryPointCamera="eyeScope";
+		cameraDir="cameraDir";
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		recoilModifier[]={1,1,1};
+		swayModifier[]={1,1,1};
+    repairableWithKits[]={7};
+		repairCosts[]={25};
+		hiddenSelections[]=
+		{
+			"reddot"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			""
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=30;
+					healthLevels[]=
+					{						
+						{1,{"DZ\weapons\attachments\optics\data\lensglass_ca.paa"}},						
+						{0.69999999,{}},						
+						{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa"}},						
+						{0.30000001,{}},						
+						{0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa"}}
+					};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera="eyeScope";
+			cameraDir="cameraDir";
+			modelOptics="-";
+			opticsDisablePeripherialVision=0.67000002;
+			opticsFlare=1;
+			opticsPPEffects[]={};
+			opticsZoomMin=0.52359998;
+			opticsZoomMax=0.52359998;
+			opticsZoomInit=0.52359998;
+			distanceZoomMin=25;
+			distanceZoomMax=50;
+			discreteDistance[]={25,50};
+			discreteDistanceInitIndex=0;
+			PPMaskProperties[]={0.5,0.5,0.40000001,0.050000001};
+			PPLensProperties[]={1,0.15000001,0,0};
+			PPBlurProperties=0.2;
+			PPDOFProperties[]={1,0.2,20,185,4,10};
+			opticSightTexture="dz\weapons\attachments\optics\data\collimdot_red_ca.paa";
+		};
 		class EnergyManager
 		{
 			hasIcon=1;

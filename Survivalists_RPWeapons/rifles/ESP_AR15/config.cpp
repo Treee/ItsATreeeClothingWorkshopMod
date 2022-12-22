@@ -4,14 +4,14 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"ESPAR47"
+			"ESP_AR15"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-      "Survivalists_Weapons_JMC_Rifles_ESPAR47"
+			"Survivalists_Weapons"
 		};
 	};
 };
@@ -20,40 +20,33 @@ class Mode_Burst;
 class Mode_semiAuto;
 class Mode_FullAuto;
 
-class CfgWeapons
+class cfgWeapons
 {
 	class M4A1;
-	class ESPAR47: M4A1
+	class ESP_AR15: M4A1
 	{
 		scope=2;
-		displayName="ESP-AR47";
-		descriptionShort="The ESP-AR47 is a 762x39mm Assault Rifle designed and manufactured by Espen Industries back in 2002 after the US Military called for M4 platforms which could 'Utilize the enemies ammunition'. Whilst the gun remained popular within Espen Industries itself, the rifle was never used by the military outside of training. ";
-		model="Survivalists_RPWeapons\rifles\ESPAR47\ESPAR47.p3d";
+		displayName="ESP-AR15";
+		descriptionShort="The ESP-AR15 is a 5.56x45mm NATO, gas-operated, magazine-fed carbine rifle based on the popular M4 Platform.";
+		model="Survivalists_RPWeapons\rifles\ESP_AR15\ESP_AR15.p3d";
 		hiddenSelections[]=
 		{
-			"zbytek",
-			"Barrel"
+			"zbytek"
 		};
-    simpleHiddenSelections[]=
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Body_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Body.rvmat"
+		};
+		simpleHiddenSelections[]=
 		{
 			"hide_barrel",
 			"GasBlock",
 			"PistolGrip",
 			"Buffer"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_RPWeapons\rifles\ESPAR47\data\ESPAR47_Bottom_CO.paa",
-      "Survivalists_RPWeapons\rifles\ESPAR47\data\ESPAR47_Top_CO.paa",
-      "Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Body_CO.paa",
-      "Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Attachments_CO.paa"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"Survivalists_RPWeapons\rifles\ESPAR47\data\ESPAR47_Bottom.rvmat",
-      "Survivalists_RPWeapons\rifles\ESPAR47\data\ESPAR47_Top.rvmat",
-      "Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Body.rvmat",
-      "Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Attachments.rvmat"
 		};
 		attachments[]=
 		{
@@ -69,25 +62,33 @@ class CfgWeapons
 		repairCosts[]={25};
 		chamberableFrom[]=
 		{
-			"Ammo_762x39",
-			"Ammo_762x39Tracer"
+			"Ammo_556x45",
+			"Ammo_556x45Tracer"
 		};
 		magazines[]=
 		{
-			"Mag_AKM_30Rnd",
-			"Mag_AKM_Palm30Rnd",
-			"Mag_AKM_Palm30Rnd_Black",
-			"Mag_AKM_Palm30Rnd_Green",
-			"Mag_AKM_Drum75Rnd",
-			"Mag_AKM_Drum75Rnd_Green",
-			"Mag_AKM_Drum75Rnd_Black"
+			"Mag_STANAG_30Rnd",
+			"Mag_STANAGCoupled_30Rnd",
+			"Mag_STANAG_60Rnd",
+			"Mag_CMAG_10Rnd",
+			"Mag_CMAG_20Rnd",
+			"Mag_CMAG_30Rnd",
+			"Mag_CMAG_40Rnd",
+			"Mag_CMAG_10Rnd_Green",
+			"Mag_CMAG_20Rnd_Green",
+			"Mag_CMAG_30Rnd_Green",
+			"Mag_CMAG_40Rnd_Green",
+			"Mag_CMAG_10Rnd_Black",
+			"Mag_CMAG_20Rnd_Black",
+			"Mag_CMAG_30Rnd_Black",
+			"Mag_CMAG_40Rnd_Black"
 		};
 		magazineSwitchTime=0.5;
 		ejectType=1;
 		weight=1840;
-		recoilModifier[]={1.4,1.4,1.4};
+		recoilModifier[]={1,1,1};
 		swayModifier[]={1.8,1.8,1.2};
-		itemSize[]={8,3};
+		itemSize[]={7,3};
 		modes[]=
 		{
 			"SemiAuto",
@@ -97,45 +98,45 @@ class CfgWeapons
 		{
 			soundSetShot[]=
 			{
-				"AK_Shot_SoundSet",
-				"AK_Tail_SoundSet",
-				"AK_InteriorTail_SoundSet"
+				"M4_Shot_SoundSet",
+				"M4_Tail_SoundSet",
+				"M4_InteriorTail_SoundSet"
 			};
 			soundSetShotExt[]=
 			{
 				
 				{
-					"AK_silencer_SoundSet",
-					"AK_silencerTail_SoundSet",
-					"AK_silencerInteriorTail_SoundSet"
+					"M4_silencer_SoundSet",
+					"M4_silencerTail_SoundSet",
+					"M4_silencerInteriorTail_SoundSet"
 				},
 				
 				{
-					"AK_silencerHomeMade_SoundSet",
-					"AK_silencerHomeMadeTail_SoundSet",
-					"AK_silencerInteriorHomeMadeTail_SoundSet"
+					"M4_silencerHomeMade_SoundSet",
+					"M4_silencerHomeMadeTail_SoundSet",
+					"M4_silencerInteriorHomeMadeTail_SoundSet"
 				}
 			};
 			begin1[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				"",
 				1,
 				1,
-				900
+				1000
 			};
 			begin2[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_1",
+				"",
 				1,
 				1,
-				900
+				1000
 			};
 			begin3[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_2",
+				"",
 				1,
 				1,
-				900
+				1000
 			};
 			soundBegin[]=
 			{
@@ -143,34 +144,43 @@ class CfgWeapons
 				0.33333001,
 				"begin2",
 				0.33333001,
-				"begin2",
+				"begin3",
 				0.33333001
 			};
 			reloadTime=0.12;
-			recoil="recoil_AKM";
-			recoilProne="recoil_AKM_prone";
+			recoil="recoil_m4";
+			recoilProne="recoil_m4_prone";
 			dispersion=0.0020000001;
 			magazineSlot="magazine";
-			beginSilenced_Pro[]=
+			beginSilenced_Pro1[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				"",
 				1,
 				1,
-				200
+				75
+			};
+			beginSilenced_Pro2[]=
+			{
+				"",
+				1,
+				1,
+				75
 			};
 			beginSilenced_HomeMade[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				"",
 				1,
 				1,
-				300
+				150
 			};
 			soundBeginExt[]=
 			{
 				
 				{
-					"beginSilenced_Pro",
-					1
+					"beginSilenced_Pro1",
+					0.5,
+					"beginSilenced_Pro2",
+					0.5
 				},
 				
 				{
@@ -183,45 +193,45 @@ class CfgWeapons
 		{
 			soundSetShot[]=
 			{
-				"AK_Shot_SoundSet",
-				"AK_Tail_SoundSet",
-				"AK_InteriorTail_SoundSet"
+				"M4_Shot_SoundSet",
+				"M4_Tail_SoundSet",
+				"M4_InteriorTail_SoundSet"
 			};
 			soundSetShotExt[]=
 			{
 				
 				{
-					"AK_silencer_SoundSet",
-					"AK_silencerTail_SoundSet",
-					"AK_silencerInteriorTail_SoundSet"
+					"M4_silencer_SoundSet",
+					"M4_silencerTail_SoundSet",
+					"M4_silencerInteriorTail_SoundSet"
 				},
 				
 				{
-					"AK_silencerHomeMade_SoundSet",
-					"AK_silencerHomeMadeTail_SoundSet",
-					"AK_silencerInteriorHomeMadeTail_SoundSet"
+					"M4_silencerHomeMade_SoundSet",
+					"M4_silencerHomeMadeTail_SoundSet",
+					"M4_silencerInteriorHomeMadeTail_SoundSet"
 				}
 			};
 			begin1[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				"",
+				1.7782794,
 				1,
-				1,
-				900
+				1000
 			};
 			begin2[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_1",
+				"",
+				1.7782794,
 				1,
-				1,
-				900
+				1000
 			};
 			begin3[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_2",
+				"",
+				1.7782794,
 				1,
-				1,
-				900
+				1000
 			};
 			soundBegin[]=
 			{
@@ -232,31 +242,40 @@ class CfgWeapons
 				"begin2",
 				0.33333001
 			};
-			reloadTime=0.097999997;
-			recoil="recoil_AKM";
-			recoilProne="recoil_AKM_prone";
+			reloadTime=0.064999998;
+			recoil="recoil_m4";
+			recoilProne="recoil_m4_prone";
 			dispersion=0.0020000001;
 			magazineSlot="magazine";
-			beginSilenced_Pro[]=
+			beginSilenced_Pro1[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				"",
 				1,
 				1,
-				200
+				75
+			};
+			beginSilenced_Pro2[]=
+			{
+				"",
+				1,
+				1,
+				75
 			};
 			beginSilenced_HomeMade[]=
 			{
-				"dz\sounds\weapons\firearms\akm\akm_single_0",
+				"",
 				1,
 				1,
-				300
+				150
 			};
 			soundBeginExt[]=
 			{
 				
 				{
-					"beginSilenced_Pro",
-					1
+					"beginSilenced_Pro1",
+					0.5,
+					"beginSilenced_Pro2",
+					0.5
 				},
 				
 				{
@@ -387,6 +406,20 @@ class CfgWeapons
 					};
 				};
 			};
+		};
+
+	};
+
+	class ESP_AR15_Tan: ESP_AR15
+	{	
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Body_Tan_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Body.rvmat"
 		};
 	};
 };

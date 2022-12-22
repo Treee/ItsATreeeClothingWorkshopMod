@@ -32,13 +32,24 @@ class CfgWeapons
 			"zbytek",
 			"Barrel"
 		};
+    simpleHiddenSelections[]=
+		{
+			"hide_barrel",
+			"GasBlock",
+			"PistolGrip",
+			"Buffer"
+		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\rifles\ESPAR22\data\ESPAR22_CO.paa","Survivalists_RPWeapons\rifles\ESPAR22\data\ESP_M4_Barrel_CO.paa"
+			"Survivalists_RPWeapons\rifles\ESPAR22\data\ESPAR22_CO.paa",
+      "Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Body_CO.paa",
+      "Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Attachments_CO.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"Survivalists_RPWeapons\rifles\ESPAR22\data\ESPAR22.rvmat","Survivalists_RPWeapons\rifles\ESPAR22\data\ESP_M4_Barrel.rvmat"
+			"Survivalists_RPWeapons\rifles\ESPAR22\data\ESPAR22.rvmat",
+      "Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Body.rvmat",
+      "Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Attachments.rvmat"
 		};
 		attachments[]=
 		{
@@ -66,7 +77,7 @@ class CfgWeapons
 		weight=1840;
 		recoilModifier[]={1,1,1};
 		swayModifier[]={1.2,1.2,1};
-		itemSize[]={5,3};
+		itemSize[]={7,3};
 		modes[]=
 		{
 			"SemiAuto",

@@ -54,7 +54,10 @@ class cfgWeapons
 		};
 		simpleHiddenSelections[]=
 		{
-			"hide_barrel"
+			"hide_barrel",
+			"Ironsight_Up",
+			"Ironsight_Down",
+			"Grip"
 		};
 		hiddenSelectionsTextures[]=
 		{

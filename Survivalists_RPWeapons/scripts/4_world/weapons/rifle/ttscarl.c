@@ -1,12 +1,43 @@
 class ttscarl extends RifleBoltLock_Base
 {
-  // override bool CanEnterIronsights()
-	// {
-	// 	ItemOptics optic = GetAttachedOptics();
-	// 	if (optic && PSO1Optic.Cast(optic) || PSO11Optic.Cast(optic) || KazuarOptic.Cast(optic))
-	// 		return true;
-	// 	return super.CanEnterIronsights();
-	// }
+  private void HideUnhideSelection(string selectionName, bool hide = false)
+  {
+      TStringArray selectionNames = new TStringArray;
+      ConfigGetTextArray("simpleHiddenSelections",selectionNames);
+      int selectionId = selectionNames.Find(selectionName);
+      SetSimpleHiddenSelectionState(selectionId, hide);
+  }
+
+  override void EEInit()
+	{
+		super.EEInit();
+
+		HideUnhideSelection("Ironsight_Up", 1);
+		HideUnhideSelection("Grip", 1);
+    HideUnhideSelection("Ironsight_Down", 0);
+	}
+
+	override void EEItemAttached(EntityAI item, string slot_name)
+	{
+		super.EEItemAttached(item,slot_name);	
+
+		if (item.IsKindOf("ItemOptics"))
+		{
+			HideUnhideSelection("Ironsight_Down", 1);
+			HideUnhideSelection("Ironsight_Up", 0);
+		}
+	}
+
+	override void EEItemDetached(EntityAI item, string slot_name)
+	{	
+		super.EEItemDetached(item,slot_name);
+
+		if (item.IsKindOf("ItemOptics"))
+		{
+			HideUnhideSelection("Ironsight_Up", 1);
+			HideUnhideSelection("Ironsight_Down", 0);
+		}
+	}
 	override bool CanDisplayAttachmentSlot( string slot_name)
   {
     if ( slot_name == "RISLeft" )

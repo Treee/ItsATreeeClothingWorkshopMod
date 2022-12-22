@@ -1,12 +1,53 @@
 class ESPAR47 extends RifleBoltLock_Base
 {
-  // override bool CanEnterIronsights()
-	// {
-	// 	ItemOptics optic = GetAttachedOptics();
-	// 	if (optic && PSO1Optic.Cast(optic) || PSO11Optic.Cast(optic) || KazuarOptic.Cast(optic))
-	// 		return true;
-	// 	return super.CanEnterIronsights();
-	// }
+  private void HideUnhideSelection(string selectionName, bool hide = false)
+  {
+      TStringArray selectionNames = new TStringArray;
+      ConfigGetTextArray("simpleHiddenSelections",selectionNames);
+      int selectionId = selectionNames.Find(selectionName);
+      SetSimpleHiddenSelectionState(selectionId, hide);
+  }
+
+  override void EEInit()
+	{
+		super.EEInit();
+
+		HideUnhideSelection("GasBlock", 1);
+		HideUnhideSelection("PistolGrip", 1);
+		HideUnhideSelection("Buffer", 1);
+	}
+
+	override void EEItemAttached(EntityAI item, string slot_name)
+	{
+		super.EEItemAttached(item,slot_name);	
+
+		if (item.IsKindOf("ESP_XLHndgrdBase"))
+		{
+			HideUnhideSelection("GasBlock", 0);
+		}
+
+		if (item.IsKindOf("ESP_GripStock"))
+		{
+			HideUnhideSelection("Buffer", 0);
+			HideUnhideSelection("PistolGrip", 0);
+		}
+	}
+
+	override void EEItemDetached(EntityAI item, string slot_name)
+	{	
+		super.EEItemDetached(item,slot_name);
+
+		if (item.IsKindOf("ESP_XLHndgrdBase"))
+		{
+			HideUnhideSelection("GasBlock", 1);
+		}
+
+		if (item.IsKindOf("ESP_GripStock"))
+		{
+			HideUnhideSelection("Buffer", 1);
+			HideUnhideSelection("PistolGrip", 1);
+		}
+	}
 	override bool CanDisplayAttachmentSlot( string slot_name)
   {
     if ( slot_name == "RISLeft" )

@@ -954,6 +954,132 @@ class CfgVehicles
 			};
 		};
 	};
+  
+  class ESP_XLHndgrdBase: Inventory_Base{};
+	class ESP_Erg_XlHndgrd: ESP_XLHndgrdBase
+	{	
+		scope=2;
+		displayName="ESP-Erg 18' Handguard";
+		descriptionShort="The Erg 18 Handguard is a light weight 18inch handguard. Installing this on any of the ESP AR platforms means that you will remove the ironsight from the gasblock";
+		model="Survivalists_RPWeapons\attachments\support\ESP_Urgi_Grip_Longest.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardM4"
+		};
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+	class ESP_RIS_XlHndgrd: ESP_XLHndgrdBase
+  {	
+		scope=2;
+		displayName="ESP-RIS 18' Handguard";
+		descriptionShort="The RIS 18 Handguard is an 18inch handguard with rails at the very end of it. Installing this on any of the ESP AR platforms means that you will remove the ironsight from the gasblock";
+		model="Survivalists_RPWeapons\attachments\support\ESP_RIS_HndGrd_Longest.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardM4"
+		};
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
 	class ESP_M16_HndGrd_ColorBase: M4_PlasticHndgrd
 	{	
 		scope=0;
@@ -1243,6 +1369,51 @@ class CfgVehicles
 			};
 		}; 
 	};
+  class STG_AK_Geksagon: AK74_Hndgrd
+	{
+		scope=2;
+		displayName="S.T.A.G. Geksagon Handguard";
+		descriptionShort="The S.T.A.G. Geksagon is a steel mesh cage. The mesh design was used to create a lighterweight handguard whilst still remaining rigid and durable.";
+		model="Survivalists_RPWeapons\attachments\Support\STG_AK_Geksagon.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardAK"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
 	class ESP_P90_UpgradeKit: M4_PlasticHndgrd
 	{	
 		scope=2;
@@ -1306,6 +1477,51 @@ class CfgVehicles
 			};
 		};
 	};
+  class STG_AK_CMRD_HNDGRD: AK74_Hndgrd
+  {
+    scope=2;
+		displayName="S.T.A.G. CMRD Handguard";
+		descriptionShort="The S.T.A.G. CMRD is a handguard made from steel. It's longer design helps protect the gasblock of the rifle whilst still offering substantial space to grip";
+		model="Survivalists_RPWeapons\attachments\Support\STG_AK_CMRD_HndGrd.p3d";
+    rotationFlags=17;
+		reversed=0;
+		weight=300;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"weaponHandguardAK"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\Support\data\STG_AK_HandGuards.rvmat"}}
+					};
+				};
+			};
+		};
+  };
 
 	// HandGuard Retextures
 	class ESP_Lightweight_HndGrd_Green: ESP_LW_HndGrd_ColorBase
@@ -1469,7 +1685,24 @@ class CfgVehicles
 			"Survivalists_RPWeapons\attachments\support\data\junkak_co.paa"
 		};
 	};
-
+  class ESP_Erg_XlHndgrd_Tan: ESP_Erg_XlHndgrd
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_Tan_CO.paa"
+		};
+	};
+	class ESP_RIS_XlHndgrd_Tan: ESP_RIS_XlHndgrd
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_Tan_CO.paa"
+		};
+	};
 //==================================================ButtStock_Colorbase
 
 	class ESP_SNPR_Stck_ColorBase: M4_OEBttstck
@@ -1769,6 +2002,83 @@ class CfgVehicles
 			};
 		}; 
 	};
+  
+  class ESP_GripStock: Inventory_Base{};
+  class ESP_MCK1_Stock_Colorbase: ESP_GripStock
+	{
+		scope=0;
+		displayName="ES-MCK1";
+		descriptionShort="The ESP-MCK1 stock is a rifle stock and grip combined in one. Whilst offering less adjustment, the combined design is supposed to offer the user more comfort.";
+		model="Survivalists_RPWeapons\attachments\support\ESP_MCK1_Stock.p3d";
+		itemsize[]={3,2};
+		inventorySlot[]=
+		{
+			"weaponButtstockM4"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class ESP_LW_Stock: M4_OEBttstck
+	{
+		scope=2;
+		displayName="ES-LW Stock";
+		descriptionShort="The ES-LW stock is a lightweight stock designed for M4 platforms. It was designed for use in most CQB scenarios due to it's maneuverability";
+		model="Survivalists_RPWeapons\attachments\support\ESP_LW_Stock.p3d";
+		inventorySlot[]=
+		{
+			"weaponButtstockM4"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_Ar15_Extras_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_AR15_Extras.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_AR15_Extras.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_AR15_Extras.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_AR15_Extras.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\ESP_AR15\data\ESP_AR15_Extras.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 
 	// Stock Retextures
 
@@ -1899,7 +2209,33 @@ class CfgVehicles
 			"Survivalists_RPWeapons\attachments\support\data\ttak458poli_co.paa"
 		};
 	};
-
+	class ESP_MCK1_Stock_Grey: ESP_MCK1_Stock_Colorbase
+	{
+		scope=2;
+		color="Grey";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock_CO.paa"
+		};
+	};
+  class ESP_MCK1_Stock_Tan: ESP_MCK1_Stock_Colorbase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock_Tan_CO.paa"
+		};
+	};
+	class ESP_MCK1_Stock_Black: ESP_MCK1_Stock_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock_Black_CO.paa"
+		};
+	};
 	// Grips And Other
 	class ESP_RIS_Cover_Colorbase: Inventory_Base
 	{	
