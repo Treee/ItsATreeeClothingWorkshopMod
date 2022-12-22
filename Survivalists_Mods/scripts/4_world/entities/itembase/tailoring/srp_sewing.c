@@ -4,3 +4,8 @@ class SRP_SewingThread_Green extends SRP_SewingThread{};
 class SRP_SewingThread_LightBlue extends SRP_SewingThread{};
 class SRP_SewingThread_Red extends SRP_SewingThread{};
 class SRP_SewingThread_Blue extends SRP_SewingThread{};
+class SRP_SewingThread_Grey extends SRP_SewingThread{};
+class SRP_SewingThread_Orange extends SRP_SewingThread{};
+class SRP_SewingThread_Pink extends SRP_SewingThread{};
+class SRP_SewingThread_Purple extends SRP_SewingThread{};
+class SRP_SewingThread_Yellow extends SRP_SewingThread{};

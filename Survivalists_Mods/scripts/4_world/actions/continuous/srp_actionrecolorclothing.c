@@ -69,8 +69,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
         ReplaceItemWithNewLambdaBase lambda = new ReplaceItemWithNewLambdaBase(target_clothing, newItemName);
         MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, lambda);        
         // dye.AddQuantity(-Math.RandomIntInclusive(50,100));
-        int slottype = GetWearableSlotType(target_clothing);
-        dye.ReduceQuantityBySlotType(slottype)
+        dye.ReduceQuantityBySlotType(target_clothing.GetWearableSlotType());
       }
 		}
 	}
@@ -90,34 +89,4 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
 			GetVariantManager().Clear();
 		}
 	}
-
-  int GetWearableSlotType(Clothing clothing)
-  {
-    if (clothing.GetInventory())
-    {
-      if (clothing.GetInventory().HasInventorySlot(InventorySlots.HEADGEAR))
-        return InventorySlots.HEADGEAR;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.MASK))
-        return InventorySlots.MASK;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.EYEWEAR))
-        return InventorySlots.EYEWEAR;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.GLOVES))
-        return InventorySlots.GLOVES;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.ARMBAND))
-        return InventorySlots.ARMBAND;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.BODY))
-        return InventorySlots.BODY;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.VEST))
-        return InventorySlots.VEST;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.BACK))
-        return InventorySlots.BACK;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.HIPS))
-        return InventorySlots.HIPS;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.LEGS))
-        return InventorySlots.LEGS;
-      else if (clothing.GetInventory().HasInventorySlot(InventorySlots.FEET))
-        return InventorySlots.FEET;    
-    }
-    return -1;
-  }
 };

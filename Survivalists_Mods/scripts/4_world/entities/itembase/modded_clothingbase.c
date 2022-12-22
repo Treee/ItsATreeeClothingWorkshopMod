@@ -78,4 +78,33 @@ modded class Clothing
   {
     return m_DyableColorVariants.Count();
   }
+  int GetWearableSlotType()
+  {
+    if (GetInventory())
+    {
+      if (GetInventory().HasInventorySlot(InventorySlots.HEADGEAR))
+        return InventorySlots.HEADGEAR;
+      else if (GetInventory().HasInventorySlot(InventorySlots.MASK))
+        return InventorySlots.MASK;
+      else if (GetInventory().HasInventorySlot(InventorySlots.EYEWEAR))
+        return InventorySlots.EYEWEAR;
+      else if (GetInventory().HasInventorySlot(InventorySlots.GLOVES))
+        return InventorySlots.GLOVES;
+      else if (GetInventory().HasInventorySlot(InventorySlots.ARMBAND))
+        return InventorySlots.ARMBAND;
+      else if (GetInventory().HasInventorySlot(InventorySlots.BODY))
+        return InventorySlots.BODY;
+      else if (GetInventory().HasInventorySlot(InventorySlots.VEST))
+        return InventorySlots.VEST;
+      else if (GetInventory().HasInventorySlot(InventorySlots.BACK))
+        return InventorySlots.BACK;
+      else if (GetInventory().HasInventorySlot(InventorySlots.HIPS))
+        return InventorySlots.HIPS;
+      else if (GetInventory().HasInventorySlot(InventorySlots.LEGS))
+        return InventorySlots.LEGS;
+      else if (GetInventory().HasInventorySlot(InventorySlots.FEET))
+        return InventorySlots.FEET;    
+    }
+    return -1;
+  }
 };
