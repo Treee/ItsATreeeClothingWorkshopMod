@@ -517,6 +517,10 @@ class CfgVehicles
       "RedKitty",           
     };
   };
+  class WeldingMask: Clothing
+	{
+    itemSize[]={2,2};
+  };
 
 // ----------------------------------------- Custom Stuff  
   class SRP_BaseballCap_Tinfoil: BaseballCap_ColorBase  // new
