@@ -205,6 +205,21 @@ class CfgVehicles
       "Material_Shelter_Rope"  
 		};
 	};
+  class SRP_WeaponBladeAndurilSword_Kit: SRP_Weapon_KitBase
+	{
+		scope=2;
+		displayName="Weapon Kit - Anduril Sword";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"  
+		};
+	};
   class SRP_WeaponBladeGladiusSword_Kit: SRP_Weapon_KitBase
 	{
 		scope=2;
@@ -1421,7 +1436,6 @@ class CfgVehicles
 			};
 		};
 	};
-  
   class SRP_WitcherSword_Basic: SRP_WitcherSword_ColorBase
 	{
     scope=2;
@@ -1433,6 +1447,116 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_RPWeapons\melee\blade\data\srp_witchersword_co.paa"
+    };
+  };
+
+  class SRP_LotR_SwordAnduril_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Antique Replica Lord of the Rings Sword - Anduril";
+		descriptionShort="A trusty sword that is known to slay monsters of the most terrible kind.";
+		model="\Survivalists_RPWeapons\melee\blade\srp_lotr_swordanduril.p3d";
+		rotationFlags=12;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		weight=600;
+		itemSize[]={1,7};
+		itemBehaviour=2;
+		fragility=0.02;
+		openItemSpillRange[]={40,70};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
+		isMeleeWeapon=1;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_RPWeapons\melee\blade\data\srp_lotr_swordanduril_co.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=750;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_RPWeapons\melee\blade\data\srp_lotr_swordanduril.rvmat"}},
+						{0.69999999,	{	"Survivalists_RPWeapons\melee\blade\data\srp_lotr_swordanduril.rvmat"}},
+						{0.5,	{	"Survivalists_RPWeapons\melee\blade\data\srp_lotr_swordanduril_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_RPWeapons\melee\blade\data\srp_lotr_swordanduril_damage.rvmat"}},
+						{0.0,	{	"Survivalists_RPWeapons\melee\blade\data\srp_lotr_swordanduril_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeFireAxe";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeFireAxe_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUp_Light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="baseballbat_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_LotR_SwordAnduril_Basic: SRP_LotR_SwordAnduril_ColorBase
+	{
+    scope=2;
+		displayName="Anduril Replica";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_RPWeapons\melee\blade\data\srp_lotr_swordanduril_co.paa"
     };
   };
   class SRP_CrystalMace: Inventory_Base
