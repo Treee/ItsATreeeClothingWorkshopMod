@@ -1094,9 +1094,9 @@ class CfgVehicles
   class PowerTool_ElectricHandDrill: Inventory_Base
 	{
 		scope=2;
-		displayName="Electric Handdrill (Model To Change)";
-		descriptionShort="A motorized hand held drill that is used to dissasemble things quickly.";
-		model="\dz\gear\tools\Hammer.p3d";
+		displayName="Power Drill";
+		descriptionShort="A motorized hand held drill that is used to dissasemble things quickly. Manufactured by Espen Industries";
+		model="Survivalists_Mods\gear\tools\srp_powerdrill_espen.p3d";
 		rotationFlags=17;
 		weight=940;
 		itemSize[]={2,3};
@@ -1104,6 +1104,8 @@ class CfgVehicles
 		openItemSpillRange[]={20,50};
     inventorySlot[]={"SRP_ToolKit_Hammer"};
     attachments[]={"CarBattery","TruckBattery"};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\srp_powerdrill_espen_co.paa"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1113,11 +1115,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,{"DZ\gear\tools\data\Hammer.rvmat"}},
-						{0.69999999,{"DZ\gear\tools\data\Hammer.rvmat"}},
-						{0.5,{"DZ\gear\tools\data\Hammer_damage.rvmat"}},
-						{0.30000001,{"DZ\gear\tools\data\Hammer_damage.rvmat"}},
-						{0.0,{"DZ\gear\tools\data\Hammer_destruct.rvmat"}}
+						{1.0,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_espen.rvmat"}},
+						{0.69999999,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_espen.rvmat"}},
+						{0.5,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_espen_damage.rvmat"}},
+						{0.30000001,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_espen_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_espen_destruct.rvmat"}}
 					};
 				};
 			};
@@ -1162,4 +1164,31 @@ class CfgVehicles
 			};
 		};
 	};
+  class PowerTool_ElectricHandDrill_Stag: PowerTool_ElectricHandDrill
+  {
+		scope=2;
+		displayName="Power Drill";
+		descriptionShort="A motorized hand held drill that is used to dissasemble things quickly. Manufactured by STAG Industries";
+		model="Survivalists_Mods\gear\tools\srp_powerdrill_stag.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\srp_powerdrill_stag_co.paa"};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_stag.rvmat"}},
+						{0.69999999,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_stag.rvmat"}},
+						{0.5,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_stag_damage.rvmat"}},
+						{0.30000001,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_stag_damage.rvmat"}},
+						{0.0,{"Survivalists_Mods\gear\tools\data\srp_powerdrill_stag_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+  };
 };

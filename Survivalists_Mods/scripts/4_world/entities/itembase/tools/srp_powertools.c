@@ -28,3 +28,4 @@ class PowerTool_ElectricHandDrill extends ItemBase
   }
 }
 
+class PowerTool_ElectricHandDrill_Stag extends PowerTool_ElectricHandDrill{};
