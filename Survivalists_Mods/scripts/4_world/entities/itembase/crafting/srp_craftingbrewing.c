@@ -336,11 +336,11 @@ class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench
   }
   override int GetAlcoholJugConsumptionTotal()
   {
-    return Math.RandomIntInclusive(25,50);
+    return Math.RandomIntInclusive(100,250);
   }
   override int GetPotMashConsumptionTotal()
   {
-    return -Math.RandomIntInclusive(35,85);
+    return -Math.RandomIntInclusive(15,35);
   }
 };
 class SRP_BrewingWorkbench_Copper extends SRP_BrewingWorkbench
@@ -355,30 +355,30 @@ class SRP_BrewingWorkbench_Copper extends SRP_BrewingWorkbench
   }
   override int GetAlcoholJugConsumptionTotal()
   {
-    return Math.RandomIntInclusive(25,100);
+    return Math.RandomIntInclusive(200,450);
   }
   override int GetPotMashConsumptionTotal()
   {
-    return -Math.RandomIntInclusive(15,35);
+    return -Math.RandomIntInclusive(15,25);
   }
 };
 class SRP_BrewingWorkbench_Ceramic extends SRP_BrewingWorkbench
 {
   override int GetHeatTimerThreshold()
   {
-    // return 300;//5mins
-    return 10;//5mins
+    return 300;//5mins
+    // return 10;//5mins
   }
   override int GetWaterJugConsumptionTotal()
   {
-    return -Math.RandomIntInclusive(10,20);
+    return -Math.RandomIntInclusive(35,50);
   }
   override int GetAlcoholJugConsumptionTotal()
   {  
-    return Math.RandomIntInclusive(100,250);
+    return Math.RandomIntInclusive(500,850);
   }
   override int GetPotMashConsumptionTotal()
   {
-    return -Math.RandomIntInclusive(5,10);
+    return -Math.RandomIntInclusive(5,15);
   }
 };
