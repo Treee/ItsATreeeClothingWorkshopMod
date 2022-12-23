@@ -305,6 +305,21 @@ class CfgVehicles
       "Material_Shelter_Leather",
 		};
 	};
+  class SRP_WeaponBladeGreatRuneSword_Kit: SRP_Weapon_KitBase
+	{
+		scope=2;
+		displayName="Weapon Kit - Great Rune Sword";
+		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "Material_MetalWire",
+      "Material_Shelter_Rope"  
+		};
+	};
 
   class SRP_Trenchknife: HuntingKnife
   {
@@ -2422,6 +2437,169 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\srp_mastersword_scabard_co.paa",      
 			"Survivalists_RPWeapons\melee\blade\data\srp_mastersword_scabarddeco_co.paa",      
+		};
+	};
+
+  class SRP_GreatRuneSword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Great Rune Sword";
+		descriptionShort="A sword forged with runes etched into the sides.";
+		model="Survivalists_RPWeapons\melee\blade\srp_greatrunesword.p3d";
+		debug_ItemCategory=2;
+		rotationFlags=12;
+		weight=4400;
+		itemSize[]={2,5};
+		fragility=0.001;
+		itemBehaviour=1;
+		openItemSpillRange[]={20,50};
+    repairableWithKits[]={5};
+		repairCosts[]={50};
+		suicideAnim="woodaxe";
+		isMeleeWeapon=1;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword_co.paa"    
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword.rvmat"}},
+						{0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword.rvmat"}},
+						{0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword.rvmat"}},
+						{0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword.rvmat"}},
+						{0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeCrowbar";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeCrowbar_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeCrowbar_Heavy";
+				range=4.0999999;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="crowbar_drop_SoundSet";
+					id=898;
+				};
+				class Crowbar_loop
+				{
+					soundSet="Crowbar_loop_SoundSet";
+					id=1119;
+				};
+				class Crowbar_end
+				{
+					soundSet="Crowbar_end_SoundSet";
+					id=1120;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+
+  class SRP_GreatRuneSword_Basic: SRP_GreatRuneSword_ColorBase
+	{
+		scope=2;
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword_co.paa"    
+		};
+	};
+  class SRP_GreatRuneSword_Black: SRP_GreatRuneSword_ColorBase
+	{
+		scope=2;
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword_black_co.paa"    
+		};
+	};
+  class SRP_GreatRuneSword_Blue: SRP_GreatRuneSword_ColorBase
+	{
+		scope=2;
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword_blueish_co.paa"    
+		};
+	};
+  class SRP_GreatRuneSword_Gold: SRP_GreatRuneSword_ColorBase
+	{
+		scope=2;
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword_gold_co.paa"    
+		};
+	};
+  class SRP_GreatRuneSword_Red: SRP_GreatRuneSword_ColorBase
+	{
+		scope=2;
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword_red_co.paa"    
+		};
+	};
+  class SRP_GreatRuneSword_Silver: SRP_GreatRuneSword_ColorBase
+	{
+		scope=2;
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword_silver_co.paa"    
 		};
 	};
 
