@@ -148,6 +148,21 @@ modded class Pipe
     return Math.RandomIntInclusive(0, 2);
   }
 };
+modded class PipeWrench
+{
+  override bool IsSmeltable()
+  {
+    return true;
+  }
+  override TStringArray GetSmeltableOptions()
+  {
+    return {"SRP_Mining_RawOre_Iron"};
+  }
+  override int GetSmeltableYield()
+  {
+    return Math.RandomIntInclusive(0, 2);
+  }
+};
 
 modded class MetalPlate
 {
