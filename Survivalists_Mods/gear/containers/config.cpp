@@ -894,6 +894,11 @@ class CfgVehicles
 		itemBehaviour=0;
 		physLayer="item_large";
 		allowOwnedCargoManipulation=1;
+    attachments[]=
+    {
+      "Shoulder",
+      "Pistol"
+    };
     hiddenSelections[]=
 		{
       "zbytek"

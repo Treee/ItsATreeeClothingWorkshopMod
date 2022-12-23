@@ -2,7 +2,7 @@ class Craft_SRP_MetalCoins extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Shave Into 10 Coins";
+		m_Name = "Shave Into 50 Coins";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -66,7 +66,7 @@ class Craft_SRP_MetalCoins extends RecipeBase
 		AddResult("SRP_Coinage_");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
-		m_ResultSetQuantity[0] = 10;//-1 = do nothing
+		m_ResultSetQuantity[0] = 50;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
 		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
 		m_ResultInheritsColor[0] = 0;// (value) == -1 means do nothing; a (value) >= 0 means this result classname will be a composite of the name provided in AddResult method and config value "color" of ingredient (value)
