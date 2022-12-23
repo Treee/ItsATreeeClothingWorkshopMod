@@ -164,3 +164,12 @@ modded class MetalPlate
     return Math.RandomIntInclusive(0, 3);
   }
 };
+
+modded class Sickle
+{
+	override void SetActions()
+	{
+		super.SetActions();		
+		AddAction(SRP_ActionHarvestCrops_All);
+	}
+};

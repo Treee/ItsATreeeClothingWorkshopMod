@@ -827,7 +827,7 @@ class CfgVehicles
 		descriptionShort="Music Tape - Kalinka";		
 		class CfgCassette
 		{
-			soundSet="SRPRadio_Kalinka_Shader1";
+			soundSet="SRPRadio_Kalinka_SoundSet1";
 		};
 	};
   class SRPRadio_CassetteTape_TheFightingSide_BadMan: SRPRadio_CassetteTape_Base

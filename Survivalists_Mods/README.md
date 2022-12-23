@@ -928,6 +928,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Andúril - The Lord of the Rings Sword" (https://skfb.ly/6YFCU) by Matt Kwiatkowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Drill "Soviet"" (https://skfb.ly/ovOqu) by Sergey Khanin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Drill/Screwdriver tool" (https://skfb.ly/ouLMI) by Artieee is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

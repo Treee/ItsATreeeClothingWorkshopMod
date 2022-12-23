@@ -1724,7 +1724,6 @@ class CfgSlots
 		name="SRP_Flower1";
 		displayName="Herbs";
 		ghostIcon="set:dayz_inventory image:missing";
-    stackMax=10;
   };
 
   class Slot_SRP_CrushedPowder1

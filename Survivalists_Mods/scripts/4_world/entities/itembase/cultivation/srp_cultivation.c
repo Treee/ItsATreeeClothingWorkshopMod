@@ -23,7 +23,7 @@ class Plant_Brookmint extends PlantBase
 {
   void Plant_Brookmint()
   {
-    m_FullMaturityTime = 2500;
+    m_FullMaturityTime = 2000;
   }
 };
 class Plant_Dock extends PlantBase
@@ -37,42 +37,43 @@ class Plant_Valerian extends PlantBase
 {
   void Plant_Valerian()
   {
-    m_FullMaturityTime = 2350;
+    m_FullMaturityTime = 2000;
   }
 };
 class Plant_Ribwort extends PlantBase
 {
   void Plant_Ribwort()
   {
-    m_FullMaturityTime = 2550;
+    m_FullMaturityTime = 2000;
   }
 };
 class Plant_Rosemary extends PlantBase
 {
   void Plant_Rosemary()
   {
-    m_FullMaturityTime = 2450;
+    m_FullMaturityTime = 2000;
   }
 };
 class Plant_GreenAmanita extends PlantBase
 {
   void Plant_GreenAmanita()
   {
-    m_FullMaturityTime = 2600;
+    // m_FullMaturityTime = 10;
+    m_FullMaturityTime = 2000;
   }
 };
 class Plant_Yarrow extends PlantBase
 {
   void Plant_Yarrow()
   {
-    m_FullMaturityTime = 2200;
+    m_FullMaturityTime = 2000;
   }
 };
 class Plant_Mint extends PlantBase
 {
   void Plant_Mint()
   {
-    m_FullMaturityTime = 2250;
+    m_FullMaturityTime = 2000;
   }
 };
 

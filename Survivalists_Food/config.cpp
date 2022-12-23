@@ -2969,7 +2969,7 @@ class CfgVehicles
 		rotationFlags=16;
 		weight=0;
 		itemSize[]={2,2};
-		stackedUnit="pc.";
+		stackedUnit="g";
 		absorbency=0.2;
 		varQuantityInit=1;
 		varQuantityMin=0;

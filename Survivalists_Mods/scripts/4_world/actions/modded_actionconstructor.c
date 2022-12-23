@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
+		actions.Insert(SRP_ActionHarvestCrops_All); 
+
 		actions.Insert(ActionSearchChickenCoop); 
 
 		actions.Insert(ActionSwapLens_Black); 

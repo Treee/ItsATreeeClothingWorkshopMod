@@ -1,19 +1,21 @@
 
-class ReplaceHerbsWithCrushedPowder extends TurnItemIntoItemLambda
-{
-	override void CopyOldPropertiesToNew (notnull EntityAI old_item, EntityAI new_item)
-	{
-		super.CopyOldPropertiesToNew(old_item, new_item);
+// class ReplaceHerbsWithCrushedPowder extends TurnItemIntoItemLambda
+// {
+// 	override void CopyOldPropertiesToNew (notnull EntityAI old_item, EntityAI new_item)
+// 	{
+// 		super.CopyOldPropertiesToNew(old_item, new_item);
 
-    SRP_CrushedHerb_Colorbase crushedHerb;
-    Class.CastTo(crushedHerb, new_item);
-    int multiplier = old_item.GetQuantity();
-    int itemCount = Math.RandomIntInclusive(1, 5);
-
-    crushedHerb.SetQuantity((itemCount * multiplier));
-    // Print("ReplaceHerbsWithCrushedPowder::SetupNewItem crushedHerb=" + crushedHerb + " count=" + itemCount);
-	}
-};
+//     SRP_CrushedHerb_Colorbase crushedHerb;
+//     Class.CastTo(crushedHerb, new_item);
+//     int multiplier = old_item.GetQuantity();
+//     int itemCount = Math.RandomIntInclusive(1, 5);
+//     int result = (itemCount * multiplier);
+//     Print("old item count: " + multiplier + " random num items: " + itemCount + " result: " + result);
+//     crushedHerb.SetQuantity(result);
+//     Print("new quantity: " + crushedHerb.GetQuantity());
+//     // Print("ReplaceHerbsWithCrushedPowder::SetupNewItem crushedHerb=" + crushedHerb + " count=" + itemCount);
+// 	}
+// };
 
 class ActionMortarCrushIntoPowderCB : ActionSingleUseBaseCB
 {
@@ -60,13 +62,14 @@ class ActionMortarCrushIntoPowder: ActionSingleUseBase
       // if there is a herb in the mortar
       if (herb)
       {
-        string color = herb.ConfigGetString("color");
-        string newClassName = "SRP_CrushedHerb_" + color;
+        int result = Math.RandomIntInclusive(2,7) * Math.RandomIntInclusive(1, 5);
+
         // replace it with powder
-        action_data.m_Player.ServerReplaceItemWithNew(new ReplaceHerbsWithCrushedPowder(herb, newClassName, action_data.m_Player));
+        TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(herb, string.Format("SRP_CrushedHerb_%1", herb.ConfigGetString("color")), action_data.m_Player);
+        lambda.SetTransferParams(true, true, true, true, result);
+        action_data.m_Player.ServerReplaceItemWithNew(lambda);
         // MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, new ReplaceHerbsWithCrushedPowder(herb, newClassName, action_data.m_Player));
       }
 		}
 	}
-	
 };
