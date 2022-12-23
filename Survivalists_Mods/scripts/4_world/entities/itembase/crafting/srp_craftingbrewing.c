@@ -340,7 +340,7 @@ class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench
   }
   override int GetPotMashConsumptionTotal()
   {
-    return -Math.RandomIntInclusive(15,35);
+    return -3;
   }
 };
 class SRP_BrewingWorkbench_Copper extends SRP_BrewingWorkbench
@@ -359,7 +359,7 @@ class SRP_BrewingWorkbench_Copper extends SRP_BrewingWorkbench
   }
   override int GetPotMashConsumptionTotal()
   {
-    return -Math.RandomIntInclusive(15,25);
+    return -2;
   }
 };
 class SRP_BrewingWorkbench_Ceramic extends SRP_BrewingWorkbench
@@ -379,6 +379,6 @@ class SRP_BrewingWorkbench_Ceramic extends SRP_BrewingWorkbench
   }
   override int GetPotMashConsumptionTotal()
   {
-    return -Math.RandomIntInclusive(5,15);
+    return -1;
   }
 };
