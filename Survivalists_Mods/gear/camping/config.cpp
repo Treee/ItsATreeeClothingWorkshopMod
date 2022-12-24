@@ -788,8 +788,6 @@ class CfgVehicles
 		};
   };
 
-
-
   class SRP_Bowl_Wood: Inventory_Base  // Bp_Bowl
 	{
 		scope=2;
@@ -836,7 +834,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\camping\data\platewood.rvmat"
 		};
 	};
-
 	class SRP_Bowl_DarkWood: SRP_Bowl_Wood  // 
 	{
 		scope=2;
@@ -849,7 +846,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\camping\data\plate_dark_co.paa"
 		};
 	};
-
 	class SRP_Bowl_CherryWood: SRP_Bowl_Wood  // 
 	{
 		scope=2;
@@ -862,7 +858,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\camping\data\plate_cherry_co.paa"
 		};
 	};
-
   class SRP_BowlSquare_Wood: SRP_Bowl_Wood  
 	{
 		scope=2;
