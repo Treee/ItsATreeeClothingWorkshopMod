@@ -64,6 +64,10 @@ class SRP_MetalShelfGroundXL_Kit extends SRP_KitBase{};
 class SRP_GunShelfGround_Kit extends SRP_KitBase{};
 class SRP_Potbelly_Stove_Kit extends SRP_KitBase{};
 
+class SRP_BBQ_Basic_Kit extends SRP_KitBase{};
+class SRP_BBQ_Grill_Kit extends SRP_KitBase{};
+class SRP_BBQ_FirePit_Kit extends SRP_KitBase{};
+
 class SRP_ShootingTarget_Kit extends SRP_KitBase{};
 class SRP_ShootingTargets_Kit extends SRP_KitBase{};
 

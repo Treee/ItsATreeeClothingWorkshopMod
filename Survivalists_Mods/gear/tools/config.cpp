@@ -340,6 +340,24 @@ class CfgVehicles
 		descriptionShort="This hammer smashes the imprint of a label onto a bottle";
     color="IslandGeorge";
 	};
+  class HammerLabeler_ProfessionalsVodka: HammerLabeler_ColorBase
+	{
+		scope=2;
+		displayName="Bottle Labeler - Professionals Vodka";
+    color="ProfessionalsVodka";
+	};
+  class HammerLabeler_ProfessionalsAle: HammerLabeler_ColorBase
+	{
+		scope=2;
+		displayName="Bottle Labeler - Professionals Ale";
+    color="ProfessionalsAle";
+	};
+  class HammerLabeler_ProfessionalsWhiskey: HammerLabeler_ColorBase
+	{
+		scope=2;
+		displayName="Bottle Labeler - Professionals Whiskey";
+    color="ProfessionalsWhiskey";
+	};
 
   class SRP_Heatpack: Heatpack
 	{

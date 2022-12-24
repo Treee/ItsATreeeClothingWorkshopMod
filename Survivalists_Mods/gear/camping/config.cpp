@@ -670,7 +670,6 @@ class CfgVehicles
 		displayName="Potbelly Stove Kit";
 		descriptionShort="A Potbelly Stove Kit";
 	};
-
   class SRP_Potbelly_Stove: BarrelHoles_ColorBase //
 	{
 		scope=2;
@@ -679,36 +678,25 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\camping\potbellystove.p3d";
 		itemSize[]={10,15};
 		weight=10000;
-		stackedUnit="ml";
-		attachments[]=
-		{
-			"Firewood",
-			"WoodenStick",
-			"Rags",
-			"MedicalBandage",
-			"Paper",
-			"Bark",
-			"DirectCookingA",
-			"DirectCookingB",
-			"DirectCookingC",
-			"SmokingA",
-			"SmokingB",
-			"SmokingC",
-			"SmokingD"
-		};
-    hiddenSelections[]={
+    hiddenSelections[]=
+    {
+      "ashes",
       "zbytek"
     };
-    hiddenSelectionsTextures[]={
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\potbellystove_co.paa",
       "Survivalists_Mods\gear\camping\data\potbellystove_co.paa"
     };
-		hiddenSelectionsMaterials[]={
-      "Survivalists_Mods\gear\camping\data\potbellystove.rvmat"
+		hiddenSelectionsMaterials[]=
+    {
+      "Survivalists_Mods\gear\camping\data\potbellystove.rvmat",
+      "Survivalists_Mods\gear\camping\data\potbellystove.rvmat",
     };
 		class Cargo
 		{
 			itemsCargoSize[]={7,7};
-			openable=1;
+			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
     class AnimationSources
@@ -717,6 +705,90 @@ class CfgVehicles
       class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
 		};
 	};
+
+  class SRP_BBQ_Basic_Kit: SRP_KitBase //
+	{
+		scope=2;
+		displayName="Barbeque Smoker Kit";
+		descriptionShort="A Barbeque Smoker Kit";
+	};
+  class SRP_BBQ_Grill_Kit: SRP_KitBase //
+	{
+		scope=2;
+		displayName="Camp Grill Kit";
+		descriptionShort="A Camp Grill Kit";
+	};
+  class SRP_BBQ_FirePit_Kit: SRP_KitBase //
+	{
+		scope=2;
+		displayName="Fire Pit Kit";
+		descriptionShort="A Fire Pit Kit";
+	};
+  class SRP_BBQ_ColorBase: BarrelHoles_ColorBase
+	{
+    scope=0;
+		displayName="Barbeque Smoker";
+		descriptionShort="A large grill meant for smoking or grilling food.";
+		model="Survivalists_Mods\gear\camping\srp_bbq.p3d";
+		itemSize[]={10,15};
+		weight=10000;
+    hiddenSelections[]={"ashes","zbytek"};
+    hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Mods\gear\camping\data\srp_bbq_co.paa"};
+		hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stonegroundnoemit.rvmat", "Survivalists_Mods\gear\camping\data\srp_bbq.rvmat"};
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+	};  
+  class SRP_BBQ_Basic: SRP_BBQ_ColorBase
+  {
+    scope=2;
+  };
+  class SRP_BBQ_Grill: SRP_BBQ_ColorBase
+  {
+    scope=2;
+    displayName="Camp Grill";
+		descriptionShort="A small grill meant for smoking or grilling food.";
+		model="Survivalists_Mods\gear\camping\srp_bbq_campfiregrill.p3d";
+		itemSize[]={5,2};
+		weight=10000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_bbq_campfiregrill_co.paa"};
+		hiddenSelectionsMaterials[]={"Survivalists_Mods\gear\camping\data\srp_bbq_campfiregrill.rvmat"};
+		class Cargo
+		{
+			itemsCargoSize[]={0,0};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+  };
+  class SRP_BBQ_FirePit: SRP_BBQ_ColorBase
+  {
+    scope=2;
+    displayName="Fire Pit";
+		descriptionShort="A fire pit meant for smoking or grilling food.";
+		model="Survivalists_Mods\gear\camping\srp_bbq_firepit.p3d";
+		itemSize[]={5,5};
+		weight=10000;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_bbq_firepit_ca.paa"};
+		hiddenSelectionsMaterials[]={"Survivalists_Mods\gear\camping\data\srp_bbq_firepit.rvmat"};
+		class Cargo
+		{
+			itemsCargoSize[]={5,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+  };
+
+
 
   class SRP_Bowl_Wood: Inventory_Base  // Bp_Bowl
 	{

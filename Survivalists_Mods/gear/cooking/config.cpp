@@ -17,6 +17,7 @@ class CfgVehicles
 {
   class Inventory_Base;
   class Bottle_Base;
+
   // ----------------------  BASE GAME OVERRIDES
   class Pot: Bottle_Base
   {

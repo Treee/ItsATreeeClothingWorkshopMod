@@ -955,4 +955,47 @@ class CfgVehicles
 			"Survivalists_Drink\drinks\data\bottlebeer_ca.paa"
 		};
 	};
+
+  class SRP_BeerBottle_ProfessionalsVodka: SRP_BeerBottle
+	{
+		scope=2;
+		displayName="Professional Brewing Vodka";
+    descriptionShort="A bottle of Professionally Brewed Vodka. Do NOT drink responsibly";
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_vodka_ca.paa"
+		};
+	};
+  class SRP_BeerBottle_ProfessionalsAle: SRP_BeerBottle
+	{
+		scope=2;
+    displayName="Professional Brewing Ale";
+    descriptionShort="A bottle of Professionally Brewed Ale. Perfect for a cold night by the fire";   
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_ale_ca.paa"
+		};
+	};
+  class SRP_BeerBottle_ProfessionalsWhiskey: SRP_BeerBottle
+	{
+		scope=2;
+    displayName="Professional Brewing Whiskey";
+    descriptionShort="A bottle of Professionally Brewed Whiskey. Sure to put some hair on your chest";    
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\bottlebeer_whiskey_ca.paa"
+		};
+	};
 };

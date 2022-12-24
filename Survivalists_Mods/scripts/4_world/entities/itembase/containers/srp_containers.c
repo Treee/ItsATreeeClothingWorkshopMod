@@ -803,6 +803,10 @@ class SRP_GunWall_Fence extends SRP_Container_Base
 	{
 		return false;
 	}
+  override bool IgnoreOutOfReachCondition()
+  {
+    return true;
+  }
 };
 class SRP_MeleeWall_Fence extends SRP_Container_Base
 {
@@ -810,6 +814,10 @@ class SRP_MeleeWall_Fence extends SRP_Container_Base
 	{
 		return false;
 	}
+  override bool IgnoreOutOfReachCondition()
+  {
+    return true;
+  }
 };
 
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
@@ -1047,6 +1055,21 @@ class SRP_Potbelly_Stove extends BarrelHoles_ColorBase
   {
     return false;
   }
+
+	override protected vector GetSmokeEffectPosition()
+	{
+		return Vector( -0.611, 2.033, 0 );
+	}
+
+  override bool CanDisplayAttachmentCategory( string category_name )
+	{
+		if ( ( category_name == "CookingEquipment" ) || ( category_name == "Smoking" ) )
+		{
+			return true;
+		}
+				//super
+		return super.CanDisplayAttachmentCategory( category_name );
+	}	
 
 	override void SetActions()
 	{
