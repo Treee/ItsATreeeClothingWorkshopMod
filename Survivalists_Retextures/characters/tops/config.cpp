@@ -1218,6 +1218,19 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\bushcraft_top_Olive.paa"
 		};
 	};
+  class GorkaEJacket_STAG: GorkaEJacket_ColorBase
+	{
+		scope=2;
+		color="STAG";
+		descriptionShort="A S.T.A.G. standard gorka jacket, designed for maximum mobility and efficiency in harsh weather conditions. The design did not exit production stage until after the fall, as it was tended to be compatible with the upcoming S.T.A.G. Industries heavy protection series.";
+		visibilityModifier=0.75;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\STAG_GorkaJacket_co.paa",
+			"Survivalists_Retextures\characters\tops\data\STAG_GorkaJacket_co.paa",
+			"Survivalists_Retextures\characters\tops\data\STAG_GorkaJacket_co.paa"
+		};
+	};
 	class RidersJacket_Brown: RidersJacket_ColorBase
 	{
 		scope=2;

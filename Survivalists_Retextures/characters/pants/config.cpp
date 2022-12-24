@@ -708,6 +708,18 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_Black_co.paa"
 		};
 	};
+  class GorkaPants_STAG: GorkaPants_ColorBase
+	{
+		scope=2;
+		descriptionShort="A S.T.A.G. standard gorka bottom, designed for maximum mobiliy and efficiency in harsh weather. The design did not exit production stage until after the fall, as it was intended to be compatible with the upcoming S.T.A.G. Industries heavy protection series.";
+		visibilityModifier=0.75;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\STAG_GorkaPants_co.paa",
+			"Survivalists_Retextures\characters\pants\data\STAG_GorkaPants_co.paa",
+			"Survivalists_Retextures\characters\pants\data\STAG_GorkaPants_co.paa"
+		};
+	};
 	class PolicePants_Sheriff1: PolicePants
 	{
 		scope=2;
