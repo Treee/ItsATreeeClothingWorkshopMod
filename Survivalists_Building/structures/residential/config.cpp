@@ -184,6 +184,97 @@ class CfgVehicles
 				soundLocked="doorWoodNolatchRattle";
 				soundOpenABit="doorWoodNolatchOpenABit";
 			};
+      class window2f_1
+			{
+				displayName="Window 1 Floor 2";
+				component="window2f_1";
+				soundPos="window2f_1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_2
+			{
+				displayName="Window 1 Floor 1";
+				component="window2f_2";
+				soundPos="window2f_2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_3
+			{
+				displayName="Window 1 Floor 1";
+				component="window2f_3";
+				soundPos="window2f_3_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_4
+			{
+				displayName="Window 1 Floor 1";
+				component="window2f_4";
+				soundPos="window2f_4_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_5
+			{
+				displayName="Window 1 Floor 1";
+				component="window2f_5";
+				soundPos="window2f_5_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window3f_1
+			{
+				displayName="Window 1 Floor 1";
+				component="window3f_1";
+				soundPos="window3f_1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window3f_2
+			{
+				displayName="Window 1 Floor 1";
+				component="window3f_2";
+				soundPos="window3f_2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
 		};
 	};
   
