@@ -8,7 +8,7 @@ class CfgPatches
 		requiredAddons[]=
     {      
       "DZ_Weapons_Explosives",
-      "Survivalists_Weapons_JMC_Explosives"
+      // "Survivalists_Weapons_JMC_Explosives"
     };
 	};
 };

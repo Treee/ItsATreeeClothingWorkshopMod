@@ -11,7 +11,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-      "Survivalists_Weapons_JMC_Rifles_ESP_G36C"
+      // "Survivalists_Weapons_JMC_Rifles_ESP_G36C"
 		};
 	};
 };

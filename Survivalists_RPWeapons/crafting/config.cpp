@@ -8,7 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
       "DZ_Data",
-      "Survivalists_Weapons_JMC_Crafting"
+      // "Survivalists_Weapons_JMC_Crafting"
 		};
 	};
 };

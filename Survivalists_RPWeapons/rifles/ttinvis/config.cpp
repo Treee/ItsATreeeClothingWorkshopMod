@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-			"DZ_Weapons_Firearms"		
+			"DZ_Weapons_Firearms",
+      "ttinvis"
 		};
 	};
 };

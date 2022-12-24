@@ -6,7 +6,8 @@ class CfgPatches
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={      
-      "DZ_Weapons_Projectiles"
+      "DZ_Weapons_Projectiles",
+      "Survivalists_Weapons_Projectiles"
     };
 	};
 };

@@ -12,7 +12,7 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Weapons_Firearms",
-      "Survivalists_Weapons_JMC_Rifles_ESP_M14"
+      // "Survivalists_Weapons_JMC_Rifles_ESP_M14"
 		};
 	};
 };

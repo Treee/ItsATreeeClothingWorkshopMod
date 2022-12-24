@@ -12,7 +12,7 @@ class CfgPatches
 		{
 			"DZ_Weapons_Firearms",
 			"DZ_Weapons_Firearms_VSS",
-      "Survivalists_Weapons_JMC_rifles_ttkrp39"
+      // "Survivalists_Weapons_JMC_rifles_ttkrp39"
 		};
 	};
 };

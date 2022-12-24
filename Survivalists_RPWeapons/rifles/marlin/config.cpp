@@ -11,7 +11,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-			"Survivalists_Weapons_JMC_Rifles_Marlin"
+      "marlin"
+			// "Survivalists_Weapons_JMC_Rifles_Marlin"
 		};
 	};
 };

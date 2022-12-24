@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"ESP_M110"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Weapons_Firearms", "Survivalists_Weapons_JMC_Rifles_ESP_M110"};
+		requiredAddons[] = {"DZ_Weapons_Firearms"};//, "Survivalists_Weapons_JMC_Rifles_ESP_M110"};
 	};
 };
 class Mode_Safe;

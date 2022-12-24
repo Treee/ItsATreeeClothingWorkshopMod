@@ -9,7 +9,7 @@ class CfgPatches
 		{
 			"DZ_Weapons_Supports",
       "Survivalists_RPWeapons_Crafting",
-      "Survivalists_Weapons_JMC_Attachments_supports"
+      // "Survivalists_Weapons_JMC_Attachments_supports"
 		};
 	};
 };
