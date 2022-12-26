@@ -80,3 +80,5 @@ class SRP_Building_KitBase extends ItemBase
 };
 
 class SRP_Carpentry_WoodenOutHouse_Kit extends SRP_Building_KitBase{};
+class Land_srp_wooden_2floor_tavern_Kit extends SRP_Building_KitBase{};
+class Land_srp_treehouse_circular_Kit extends SRP_Building_KitBase{};

@@ -84,6 +84,8 @@ class SRP_BBQ_Grill extends SRP_BBQ_ColorBase
 	{
 		return Vector( 0, 0.30, 0 );
 	}
+  override void SoundBarrelOpenPlay(){}
+	override void SoundBarrelClosePlay(){}
 };
 class SRP_BBQ_FirePit extends SRP_BBQ_ColorBase
 {
@@ -106,4 +108,7 @@ class SRP_BBQ_FirePit extends SRP_BBQ_ColorBase
 	{
 		return Vector( 0, 0.463, 0 );
 	}
+  override void SoundBarrelOpenPlay(){}
+	override void SoundBarrelClosePlay(){}
+
 };

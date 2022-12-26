@@ -123,7 +123,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Tavern 2 Floor Kit";
-		descriptionShort="The kit for a wooden tavernw ith 2 floors and multiple windows";
+		descriptionShort="The kit for a wooden tavern with 2 floors and multiple windows";
     projectionTypename="Land_srp_wooden_2floor_tavern";
 	};
   class Land_srp_wooden_2floor_tavern: SRP_PrefabHouse_Base
@@ -276,6 +276,19 @@ class CfgVehicles
 				soundOpenABit="doorWoodNolatchOpenABit";
 			};
 		};
+	};
+
+  class Land_srp_treehouse_circular_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Circular Wooden Tree House Kit - 1 Door";
+		descriptionShort="The kit for a wooden tree house with a single entry point.";
+    projectionTypename="Land_srp_treehouse_circular";
+	};
+  class Land_srp_treehouse_circular: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_treehouse_circular.p3d";
 	};
   
 // ---------------------DOORS (Scope 0 for now)
