@@ -290,6 +290,42 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_treehouse_circular.p3d";
 	};
+  class Land_srp_treehouse_box_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Cubed Wooden Tree House Kit - 1 Door";
+		descriptionShort="The kit for a wooden tree house with a single entry point.";
+    projectionTypename="Land_srp_treehouse_box";
+	};
+  class Land_srp_treehouse_box: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_treehouse_box.p3d";
+	};
+  class Land_srp_treehouse_doubleplatform_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Wooden Tree House Kit - 2 Platform";
+		descriptionShort="The kit for a wooden tree house with two flat areas.";
+    projectionTypename="Land_srp_treehouse_doubleplatform";
+	};
+  class Land_srp_treehouse_doubleplatform: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_treehouse_doubleplatform.p3d";
+	};
+  class Land_srp_treehouse_tripleplatform_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Wooden Tree House Kit - 3 Platform";
+		descriptionShort="The kit for a wooden tree house with three flat areas.";
+    projectionTypename="Land_srp_treehouse_tripleplatform";
+	};
+  class Land_srp_treehouse_tripleplatform: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_treehouse_tripleplatform.p3d";
+	};
   
 // ---------------------DOORS (Scope 0 for now)
   class SRP_PrefabDoor_Base: HouseNoDestruct

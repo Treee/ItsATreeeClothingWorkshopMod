@@ -25,3 +25,6 @@ class SRP_DefaultHouse extends BuildingSuper
 class SRP_Carpentry_WoodenOutHouse extends SRP_DefaultHouse{};
 class Land_srp_wooden_2floor_tavern extends SRP_DefaultHouse{};
 class Land_srp_treehouse_circular extends SRP_DefaultHouse{};
+class Land_srp_treehouse_box extends SRP_DefaultHouse{};
+class Land_srp_treehouse_doubleplatform extends SRP_DefaultHouse{};
+class Land_srp_treehouse_tripleplatform extends SRP_DefaultHouse{};
