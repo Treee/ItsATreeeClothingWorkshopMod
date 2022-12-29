@@ -56,6 +56,7 @@ class CfgVehicles
 	};
   class CanisterGasoline: Bottle_Base
 	{
+    varQuantityInit=0;
 		inventorySlot[]+={"CanisterGasoline"};
     hiddenSelections[]=
 		{
