@@ -224,6 +224,57 @@ class CfgVehicles
 	};
   
   //----------------------------------------------- CUSTOM STUFF
+
+  class GasMask_Filter_Espen: GasMask_Filter
+	{
+		scope=2;
+		displayName="Enhanced Gas Mask Filter - Espen Industries";
+		descriptionShort="This gas mask filter has been modified to have an extended lifetime. Will last roughly 3.5x the time of a regular filter.";
+		varQuantityInit=500;
+		varQuantityMax=500;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\gasmask_filter_espen_co.paa"
+		};
+	};
+  class GasMask_Filter_Stag: GasMask_Filter
+	{
+		scope=2;
+		displayName="Enhanced Gas Mask Filter - Stag Industries";
+		descriptionShort="This gas mask filter has been modified to have an extended lifetime. Will last roughly 6x the time of a regular filter.";
+		varQuantityInit=1000;
+		varQuantityMax=1000;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\gasmask_filter_stag_co.paa"
+		};
+	};
+  class GasMask_Filter_LockNSons: GasMask_Filter
+	{
+		scope=2;
+		displayName="Enhanced Gas Mask Filter - Lock & Sons";
+		descriptionShort="This gas mask filter has been modified to have an extended lifetime. Will last roughly 10x the time of a regular filter.";
+		varQuantityInit=1500;
+		varQuantityMax=1500;
+		hiddenSelections[]=
+		{
+			"camoGround"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\gasmask_filter_locknsons_co.paa"
+		};
+	};
+
+
   class AmmoBox_Ammo_Flare_5Rnd: Box_Base
 	{
 		scope=2;
