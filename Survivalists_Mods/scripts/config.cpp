@@ -11,6 +11,37 @@ class CfgPatches
 
 class CfgSlots
 {
+  //================== PINS
+  class Slot_SRP_Pin1
+	{
+		name="SRP_Pin1";
+		displayName="Collectible Pin";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Pin2
+	{
+		name="SRP_Pin2";
+		displayName="Collectible Pin";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Pin3
+	{
+		name="SRP_Pin3";
+		displayName="Collectible Pin";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Pin4
+	{
+		name="SRP_Pin4";
+		displayName="Collectible Pin";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
+  class Slot_SRP_Pin5
+	{
+		name="SRP_Pin5";
+		displayName="Collectible Pin";
+		ghostIcon="set:dayz_inventory image:missing";
+	};
   //==================== Books
   class Slot_SRP_Book1
 	{
@@ -2313,6 +2344,37 @@ class CfgNonAIVehicles
 		inventorySlot[]={"Fishingrod"};
 		model="Survivalists_Mods\proxy\srp_fishingrod_proxy.p3d";
 	};
+  class Proxysrp_pin1_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Pin1"};
+		model="Survivalists_Mods\proxy\srp_pin1_proxy.p3d";
+	};
+  class Proxysrp_pin2_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Pin2"};
+		model="Survivalists_Mods\proxy\srp_pin2_proxy.p3d";
+	};
+  class Proxysrp_pin3_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Pin3"};
+		model="Survivalists_Mods\proxy\srp_pin3_proxy.p3d";
+	};
+  class Proxysrp_pin4_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Pin4"};
+		model="Survivalists_Mods\proxy\srp_pin4_proxy.p3d";
+	};
+  class Proxysrp_pin5_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Pin5"};
+		model="Survivalists_Mods\proxy\srp_pin5_proxy.p3d";
+	};
+
   class Proxysrp_book1_proxy: ProxyAttachment
 	{
 		scope=2;

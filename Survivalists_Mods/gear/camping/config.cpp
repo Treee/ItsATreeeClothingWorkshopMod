@@ -663,6 +663,71 @@ class CfgVehicles
 
 
 // ----------------------- CUSTOM STUFF
+  class SRP_Collectible_Pin_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Collectible Pin";
+		descriptionShort="A decorative pin that can be attached to a few things.";
+		model="Survivalists_Mods\gear\camping\srp_collectiblepin.p3d";
+		inventorySlot[]=
+    {
+      "SRP_Pin1",
+      "SRP_Pin2",
+      "SRP_Pin3",
+      "SRP_Pin4",
+      "SRP_Pin5",
+    };
+		weight=250;
+		itemSize[]={1,1};
+		absorbency=0.30000001;
+		hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_collectible_pin_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_collectible_pin.rvmat"
+		};
+	};
+  class SRP_Collectible_Pin_Basic: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_co.paa"};
+	};
+  class SRP_Collectible_Pin_Altar: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin - ALTAR";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_altar_co.paa"};
+	};
+  class SRP_Collectible_Pin_Espen: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin - Espen";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_espen_co.paa"};
+	};
+  class SRP_Collectible_Pin_Stag: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin - STAG";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_stag_co.paa"};
+	};
+  class SRP_Collectible_Pin_LockNSons: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin - Lock & Sons";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_locknsons_co.paa"};
+	};
 
   class SRP_Potbelly_Stove_Kit: SRP_KitBase //
 	{
