@@ -225,6 +225,11 @@ class CfgVehicles
 		itemsCargoSize[]={1,1};
 		absorbency=0;
 		heatIsolation=0.80;
+    attachments[]=
+    {
+      "SRP_Pin1",
+      "SRP_Pin2"
+    };
 		hiddenSelections[]=
 		{
 			"camoGround",
