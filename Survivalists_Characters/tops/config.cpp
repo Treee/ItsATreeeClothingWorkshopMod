@@ -742,8 +742,8 @@ class CfgVehicles
 		ragQuantity=1;
 		varWetMax=1;
 		absorbency=0.80000001;
-		repairableWithKits[]={5,2};
-		repairCosts[]={30,25};
+		repairableWithKits[]={2,3,5};
+		repairCosts[]={20,20,25};
 		hiddenSelections[]=
 		{
 			"zbytek"
@@ -812,8 +812,8 @@ class CfgVehicles
 		varWetMax=1;
 		heatIsolation=0.8;
 		ragQuantity=4;
-		repairableWithKits[]={5,2};
-		repairCosts[]={30,25};
+		repairableWithKits[]={2,3,5};
+		repairCosts[]={20,20,25};
 		soundAttType="WoolShirt";
     headSelectionsToHide[]=
 		{
@@ -929,8 +929,8 @@ class CfgVehicles
 		quickBarBonus=2;
 		varWetMax=0.39;
 		heatIsolation=0.90;
-		repairableWithKits[]={3};
-		repairCosts[]={25};
+		repairableWithKits[]={2,3,5};
+		repairCosts[]={20,20,25};
 		soundAttType="LeatherJacket";
 		hiddenSelections[]=
 		{
@@ -1048,8 +1048,8 @@ class CfgVehicles
 		quickBarBonus=2;
 		varWetMax=0.38999999;
 		heatIsolation=0.75;
-		repairableWithKits[]={3};
-		repairCosts[]={25};
+		repairableWithKits[]={2,3,5};
+		repairCosts[]={20,20,25};
 		soundAttType="LeatherJacket";
 		hiddenSelections[]=
 		{
@@ -1172,8 +1172,8 @@ class CfgVehicles
     quickBarBonus=2;
     varWetMax=0.38999999;
     heatIsolation=0.75;
-    repairableWithKits[]={3};
-    repairCosts[]={25};
+		repairableWithKits[]={2,3,5};
+		repairCosts[]={20,20,25};
     soundAttType="LeatherJacket";
     hiddenSelections[]=
     {
