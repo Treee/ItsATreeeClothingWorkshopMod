@@ -2,9 +2,7 @@ modded class ActionOpenDoors
 {
   override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    if (!super.ActionCondition(player, target, item))
-      return false;
-    
+    bool superCondition = super.ActionCondition(player, target, item);
 		SRP_DefaultHouse srpHouse;
 		if( Class.CastTo(srpHouse, target.GetObject()))
     {
@@ -14,11 +12,10 @@ modded class ActionOpenDoors
       // Print(string.Format("name: %1 target component: %2", windowPrefix, name));
 			if (windowPrefix == "window")
       {
-        return srpHouse.HasProperDistanceToSRPWindow(name, player);
+        return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player);
       }
-      return false;
     }
-    return false;
+    return superCondition;
 	}
 };
 
@@ -26,9 +23,7 @@ modded class ActionCloseDoors
 {
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    if (!super.ActionCondition(player, target, item))
-      return false;
-
+    bool superCondition = super.ActionCondition(player, target, item);
 		SRP_DefaultHouse srpHouse;
 		if( Class.CastTo(srpHouse, target.GetObject()))
     {
@@ -38,10 +33,9 @@ modded class ActionCloseDoors
       // Print(string.Format("name: %1 target component: %2", windowPrefix, name));
 			if (windowPrefix == "window")
       {
-        return srpHouse.HasProperDistanceToSRPWindow(name, player);
+        return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player);
       }
-      return false;
     }
-    return false;
+    return superCondition;
 	}
 };
