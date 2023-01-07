@@ -446,40 +446,4 @@ class CfgVehicles
 			};
 		};
 	};
-  class Land_SRP_ShippingContainer_20ft_Construction: HouseNoDestruct
-	{
-		scope=1;		    
-    hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_Building\structures\industrial\data\srp_shippingcontainer_construction_co.paa"};    
-    model="Survivalists_Building\structures\industrial\srp_shippingcontainer_20ft.p3d";
-    class Doors
-		{
-			class DoorsTwin1
-			{
-				displayName="door Twin1";
-				component="doorstwin1";
-				soundPos="doorstwin1_action";
-				animPeriod=1;
-				initPhase=0;
-				initOpened=0.30000001;
-				soundOpen="doorMetalContainerOpen";
-				soundClose="doorMetalContainerClose";
-				soundLocked="doorMetalContainerRattle";
-				soundOpenABit="doorMetalContainerOpenABit";
-			};
-      class DoorsTwin2
-			{
-				displayName="door Twin2";
-				component="doorstwin2";
-				soundPos="doorstwin2_action";
-				animPeriod=1;
-				initPhase=0;
-				initOpened=0.30000001;
-				soundOpen="doorMetalContainerOpen";
-				soundClose="doorMetalContainerClose";
-				soundLocked="doorMetalContainerRattle";
-				soundOpenABit="doorMetalContainerOpenABit";
-			};
-		};
-	};
 };

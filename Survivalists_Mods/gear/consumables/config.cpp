@@ -16,9 +16,11 @@ class CfgPatches
 class CfgVehicles
 {  
   class Inventory_Base;
-  class Stone;
   class Paper;
   class Box_Base;
+  class Firewood;
+  class Bark_Oak;
+  class Bark_Birch;
 
   //--------------------------------------------- BASE GAME OVERRIDES
   class Spraycan_ColorBase: Inventory_Base
@@ -56,6 +58,11 @@ class CfgVehicles
   class WoodenPlank: Inventory_Base
 	{
     varStackMax=20;
+		varQuantityMax=400;
+    inventorySlot[]+=
+		{
+      "SRP_Construction_WoodenPlanks"
+		};
   };
   class GardenLime: Inventory_Base
   {
@@ -215,15 +222,98 @@ class CfgVehicles
     varQuantityMax=30;
   };
 
+  class Stone: Inventory_Base
+  {
+    varQuantityMax=400;
+    inventorySlot[]+={"SRP_Construction_Stone"};
+  };
   class Stone_Ruined: Stone
 	{
 		scope=2;
 		displayName="Ruined Stone";
-		descriptionShort="This stone is not suitable for building; or anything...";
+		descriptionShort="This stone is not suitable for building; or anything...a quarry probably has better rocks.";
     inventorySlot[]={};
 	};
+
+  class Bark_ColorBase: Inventory_Base
+	{
+    itemSize[]={1,2};
+  };
+	class WoodenLog: Inventory_Base
+	{
+		varQuantityMax=400;
+    inventorySlot[]+=
+		{
+      "SRP_Construction_WoodenLogs"
+		};
+  };
+  class MetalPlate: Inventory_Base
+	{
+    varQuantityMax=800;
+    inventorySlot[]+=
+		{
+      "SRP_Construction_MetalPlate"
+		};
+  };
+  class Nail: Inventory_Base
+	{
+    varStackMax=99;
+    varQuantityMax=990;
+    inventorySlot[]+=
+		{
+      "SRP_Construction_Nails"
+		};
+  };
   
   //----------------------------------------------- CUSTOM STUFF
+  class Firewood_Irradiated: Firewood
+	{
+		scope=2;
+		displayName="Firewood";
+		descriptionShort="A small log. Oddly feels hot to the touch.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\firewood_irradiated_co.paa"
+		};
+  };
+  class WoodenLog_Irradiated: WoodenLog
+	{
+		scope=2;
+		displayName="Wooden Log";
+		descriptionShort="A large log. Oddly feels hot to the touch.";
+  };
+  class Bark_Oak_Irradiated: Bark_Oak
+	{
+		scope=2;
+		displayName="Oak Bark";
+		descriptionShort="Some oak bark. Oddly feels hot to the touch.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\oak_bark_irradiated_co.paa"
+		};
+  };
+  class Bark_Birch_Irradiated: Bark_Birch
+	{
+		scope=2;
+		displayName="Birch Bark";
+		descriptionShort="Some birch bark. Oddly feels hot to the touch.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\consumables\data\birch_bark_irradiated_co.paa"
+		};
+  };
 
   class GasMask_Filter_Espen: GasMask_Filter
 	{
@@ -1349,7 +1439,7 @@ class CfgVehicles
 		canBeSplit=1;
 		varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=4;
+		varQuantityMax=400;
 		varQuantityDestroyOnMin=1;
 		varStackMax=4;
 		inventorySlot[]={};
@@ -1386,6 +1476,10 @@ class CfgVehicles
 		scope=2;
 		displayName="Bag of Cement";
 		descriptionShort="A bag of cement. Combined with various things to build sturdy things.";
+    inventorySlot[]=
+		{
+      "SRP_Construction_Cement"
+		};
     hiddenSelections[]=
     {
       "zbytek"
@@ -1402,7 +1496,8 @@ class CfgVehicles
 		descriptionShort="A bag of mortar. Combined with various things to fill in gaps between stones.";
     inventorySlot[]=
 		{	
-      "Material_Mortar"
+      "Material_Mortar",
+      "SRP_Construction_Mortar"
 		};
     hiddenSelections[]=
     {

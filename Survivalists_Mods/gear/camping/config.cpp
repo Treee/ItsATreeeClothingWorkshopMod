@@ -361,11 +361,14 @@ class CfgVehicles
 	};
 
   class Fabric: Inventory_Base
-	{
+	{    
+    varStackMax=4;
+    varQuantityMax=200;
     itemSize[]={2,3};
     inventorySlot[]+=
 		{
-			"Material_Shelter_Fabric"
+			"Material_Shelter_Fabric",
+      "SRP_Construction_Fabric"
 		};
   };
 

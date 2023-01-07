@@ -326,7 +326,65 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_treehouse_tripleplatform.p3d";
 	};
-  
+
+  class Land_srp_constructionmaterials_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Construction Materials Kit";
+		descriptionShort="The kit for a caravan to store building materials.";
+    projectionTypename="Land_srp_constructionmaterials";
+	};
+  class Land_srp_constructionmaterials: SRP_PrefabHouse_Base
+	{
+		scope=2;		    
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Building\structures\industrial\data\srp_shippingcontainer_construction_co.paa"};    
+    model="Survivalists_Building\structures\industrial\srp_shippingcontainer_20ft.p3d";
+    attachments[]=
+    {
+      "SRP_Construction_WoodenLogs",
+      "SRP_Construction_WoodenPlanks",
+      "SRP_Construction_Stone",
+      "SRP_Construction_Mortar",
+      "SRP_Construction_Cement",
+      "SRP_Construction_MetalPlate",
+      "SRP_Construction_Nails",
+      "SRP_Construction_MetalWire",
+      "SRP_Construction_Pipe",
+      "SRP_Construction_Epoxy",
+      "SRP_Construction_Fabric",
+    };
+    class Doors
+		{
+			class DoorsTwin1
+			{
+				displayName="door Twin1";
+				component="doorstwin1";
+				soundPos="doorstwin1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorMetalContainerOpen";
+				soundClose="doorMetalContainerClose";
+				soundLocked="doorMetalContainerRattle";
+				soundOpenABit="doorMetalContainerOpenABit";
+			};
+      class DoorsTwin2
+			{
+				displayName="door Twin2";
+				component="doorstwin2";
+				soundPos="doorstwin2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorMetalContainerOpen";
+				soundClose="doorMetalContainerClose";
+				soundLocked="doorMetalContainerRattle";
+				soundOpenABit="doorMetalContainerOpenABit";
+			};
+		};
+	};
+
 // ---------------------DOORS (Scope 0 for now)
   class SRP_PrefabDoor_Base: HouseNoDestruct
 	{

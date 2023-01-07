@@ -85,3 +85,5 @@ class Land_srp_treehouse_circular_Kit extends SRP_Building_KitBase{};
 class Land_srp_treehouse_box_Kit extends SRP_Building_KitBase{};
 class Land_srp_treehouse_doubleplatform_Kit extends SRP_Building_KitBase{};
 class Land_srp_treehouse_tripleplatform_Kit extends SRP_Building_KitBase{};
+
+class Land_srp_constructionmaterials_Kit extends SRP_Building_KitBase{};

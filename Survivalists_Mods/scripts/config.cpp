@@ -11,6 +11,84 @@ class CfgPatches
 
 class CfgSlots
 {
+  //================== Construction Materials
+  class Slot_SRP_Construction_Mortar
+	{
+		name="SRP_Construction_Mortar";
+		displayName="Mortar";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=400; // max stack mortar bags is 4
+	};
+  class Slot_SRP_Construction_Cement
+	{
+		name="SRP_Construction_Cement";
+		displayName="Cement";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=400; // max stack cement bags is 4
+	};
+  class Slot_SRP_Construction_WoodenLogs
+	{
+		name="SRP_Construction_WoodenLogs";
+		displayName="Wooden Logs";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+    stackMax=400; // max stack logs is 50
+	};
+  class Slot_SRP_Construction_WoodenPlanks
+	{
+		name="SRP_Construction_WoodenPlanks";
+		displayName="Wooden Planks";
+		ghostIcon="set:dayz_inventory image:planks";
+    stackMax=400; // max stack planks is 20
+	};
+  class Slot_SRP_Construction_MetalPlate
+	{
+		name="SRP_Construction_MetalPlate";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:plates";
+    stackMax=800; // max stack metal plate is 40
+	};
+  class Slot_SRP_Construction_Nails
+	{
+		name="SRP_Construction_Nails";
+		displayName="Nails";
+		ghostIcon="set:dayz_inventory image:nails";
+    stackMax=990; // max stack nails is 99
+	};
+  class Slot_SRP_Construction_Epoxy
+	{
+		name="SRP_Construction_Epoxy";
+		displayName="Epoxy";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=5000; // max stack epoxy is 100
+	};
+  class Slot_SRP_Construction_MetalWire
+	{
+		name="SRP_Construction_MetalWire";
+		displayName="Metal Wire";
+		ghostIcon="set:dayz_inventory image:metalwire";
+    stackMax=100; // max stack wire is 1
+	};
+  class Slot_SRP_Construction_Pipe
+	{
+		name="SRP_Construction_Pipe";
+		displayName="Pipe";
+		ghostIcon="set:dayz_inventory image:shoulderright";
+    stackMax=50; // max stack pipe is 1
+	};
+  class Slot_SRP_Construction_Stone
+	{
+		name="SRP_Construction_Stone";
+		displayName="Stone";
+		ghostIcon="set:dayz_inventory image:stones";
+    stackMax=400; // max stack pipe is 1
+	};
+  class Slot_SRP_Construction_Fabric
+	{
+		name="SRP_Construction_Fabric";
+		displayName="Fabric";
+		ghostIcon="set:dayz_inventory image:fabric";
+    stackMax=200; // max stack fabric is 4
+	};
   //================== PINS
   class Slot_SRP_Pin1
 	{

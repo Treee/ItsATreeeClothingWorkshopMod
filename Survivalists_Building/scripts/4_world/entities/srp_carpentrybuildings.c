@@ -1,6 +1,6 @@
 class SRP_DefaultHouse extends BuildingSuper
 {
-  const float MAX_ACTION_DETECTION_DISTANCE 		= 1.65;		//meters
+  const float MAX_ACTION_WINDOW_DETECTION_DISTANCE 		= 1.65;		//meters
 
   override bool IsBuilding()
 	{
@@ -31,7 +31,7 @@ class SRP_DefaultHouse extends BuildingSuper
 			vector selection_pos = ModelToWorld( GetMemoryPointPos( selection ) );
 			float distance = vector.Distance( selection_pos, player.GetPosition() );
       // Print(string.Format("mem point exists: position: %1 distance: %2", selection_pos, distance));
-			if ( distance >= MAX_ACTION_DETECTION_DISTANCE )
+			if ( distance >= MAX_ACTION_WINDOW_DETECTION_DISTANCE )
 			{
 				return false;
 			}
@@ -60,4 +60,15 @@ class Land_SRP_ShippingContainer_20ft_Yellow extends SRP_DefaultHouse{};
 class Land_SRP_ShippingContainer_20ft_Stag extends SRP_DefaultHouse{};
 class Land_SRP_ShippingContainer_20ft_Locknsons extends SRP_DefaultHouse{};
 class Land_SRP_ShippingContainer_20ft_Espen extends SRP_DefaultHouse{};
-class Land_SRP_ShippingContainer_20ft_Construction extends SRP_DefaultHouse{};
+
+class Land_srp_constructionmaterials extends SRP_DefaultHouse
+{
+  override bool IsInventoryVisible()
+	{
+		return true;
+	}
+	override bool CanReleaseAttachment (EntityAI attachment)
+  {
+    return false;
+  }
+};

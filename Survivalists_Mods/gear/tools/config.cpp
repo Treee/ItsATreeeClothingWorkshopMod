@@ -185,6 +185,21 @@ class CfgVehicles
 		itemSize[]={2,2};
   };
 
+  class EpoxyPutty: Inventory_Base
+	{
+    canBeSplit=1;
+    varStackMax=100;
+    varQuantityMax=5000;
+    inventorySlot[]+={"SRP_Construction_Epoxy"};
+  };
+  class Pipe: Inventory_Base
+	{
+    canBeSplit=1;
+    varStackMax=1;
+    varQuantityMax=50;
+    inventorySlot[]+={"SRP_Construction_Pipe"};
+  };
+
   // -------------------------- MODDED MODS
   class MassAdminStash: Compass
 	{

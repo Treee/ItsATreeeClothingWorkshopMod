@@ -20,10 +20,6 @@ class CfgVehicles
   class Inventory_Base;
   class LongWoodenStick;
   class WoodenStick;
-  class Firewood;
-  class WoodenLog;
-  class Bark_Oak;
-  class Bark_Birch;
   class FireplaceBase;
 
   class SRP_KitBase: Inventory_Base
@@ -93,13 +89,16 @@ class CfgVehicles
 		};
 	};
   //========================================== VANILLA OVERRIDE
-  class Bark_ColorBase: Inventory_Base
-	{
-    itemSize[]={1,2};
-  };
   class Rope: Inventory_Base
 	{
     itemSize[]={1,2};
+  };
+  class MetalWire: Inventory_Base
+	{
+    canBeSplit=1;
+    varStackMax=1;
+    varQuantityMax=100;
+    inventorySlot[]+={"SRP_Construction_MetalWire"};
   };
   class LongWoodenStick_Irradiated: LongWoodenStick
 	{
@@ -127,54 +126,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\crafting\data\bp_wooden_stick_irradiated_co.paa"
-		};
-  };
-  class Firewood_Irradiated: Firewood
-	{
-		scope=2;
-		displayName="Firewood";
-		descriptionShort="A small log. Oddly feels hot to the touch.";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\crafting\data\firewood_irradiated_co.paa"
-		};
-  };
-  class WoodenLog_Irradiated: WoodenLog
-	{
-		scope=2;
-		displayName="Wooden Log";
-		descriptionShort="A large log. Oddly feels hot to the touch.";
-  };
-  class Bark_Oak_Irradiated: Bark_Oak
-	{
-		scope=2;
-		displayName="Oak Bark";
-		descriptionShort="Some oak bark. Oddly feels hot to the touch.";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\crafting\data\oak_bark_irradiated_co.paa"
-		};
-  };
-  class Bark_Birch_Irradiated: Bark_Birch
-	{
-		scope=2;
-		displayName="Birch Bark";
-		descriptionShort="Some birch bark. Oddly feels hot to the touch.";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\crafting\data\birch_bark_irradiated_co.paa"
 		};
   };
   //=-------------------------------------- CUSTOM STUFF
