@@ -604,6 +604,10 @@ class CfgVehicles
     varTemperatureMax=100;
     itemSize[]={1,3};
 		lootCategory="Tools";
+    itemInfo[]=
+		{
+			"Knife"
+		};
 		openItemSpillRange[]={10,20};
     isMeleeWeapon=1;
 		suicideAnim="onehanded";
