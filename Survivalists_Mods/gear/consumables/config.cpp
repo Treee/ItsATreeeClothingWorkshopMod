@@ -264,6 +264,10 @@ class CfgVehicles
       "SRP_Construction_Nails"
 		};
   };
+  class DuctTape: Inventory_Base
+	{
+    canBeSplit=1;
+  };
   
   //----------------------------------------------- CUSTOM STUFF
   class Firewood_Irradiated: Firewood

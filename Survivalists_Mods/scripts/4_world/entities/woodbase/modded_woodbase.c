@@ -105,6 +105,13 @@ modded class WoodBase
     return yieldsBark;
   }
 
+  override void OnTreeCutDown( EntityAI cutting_entity )
+  {
+    Print("WoodBase testing yo");
+    super.OnTreeCutDown(cutting_entity);
+    Print("WoodBase testing yo yo");
+  }
+
   TStringArray GetBushFruitList()
   {
     return {
