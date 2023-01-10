@@ -6,33 +6,6 @@ class CfgMods
 		author="ItsATreee | Sir Locksley | Turko | Orin | Alevaric | Mar";
 		name="Survivalists_Mods";
 		dir="Survivalists_Mods";
-    inputs="Survivalists_Mods/inputs.xml";
-		dependencies[]={"Game","World","Mission"};
-		class defs
-		{
-      class imageSets
-      {
-        files[]=
-        {
-          "Survivalists_Mods/gui/images/srp_sleep_iconset.imageset"
-        };
-      };
-			class gameScriptModule
-			{
-				value = "";
-        files[] = {"Survivalists_Mods/scripts/3_game"};			
-      };
-			class worldScriptModule
-			{
-				value = "";
-        files[] = {"Survivalists_Mods/scripts/4_world"};			
-      };
-      class missionScriptModule
-			{
-				value="";
-				files[]= {"Survivalists_Mods/scripts/5_mission"};
-			};
-		};
 	};
 };
 
