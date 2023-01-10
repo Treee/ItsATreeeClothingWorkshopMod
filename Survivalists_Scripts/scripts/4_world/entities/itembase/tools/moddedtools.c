@@ -120,6 +120,8 @@ modded class Hacksaw
     super.SetActions();
 		
 		AddAction(ActionSalvageCarWreck);
+		RemoveAction(ActionDestroyCodeLockOnFence);
+		RemoveAction(ActionDestroyCodeLockOnTent);
   }
 };
 

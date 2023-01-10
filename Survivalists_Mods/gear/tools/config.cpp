@@ -20,8 +20,7 @@ class CfgVehicles
 {
   class Inventory_Base;
   class Compass;
-  class FarmingHoe;
-  class Container_Base;
+  class Hacksaw;
   class FishingRod_Base_New;
 
   class SRP_KitBase;
@@ -214,6 +213,88 @@ class CfgVehicles
 	};
 
   // ---------------------------- Custom Stuff
+  class SRP_Hacksaw_Espen: Hacksaw
+	{
+		scope=2;
+		displayName="Reinforced Hacksaw - Espen";
+		descriptionShort="This tool has been manufactured to withstand more wear and tear along with cutting through metal faster.";
+		repairableWithKits[]={};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\hacksaw_espen_co.paa"};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\tools\data\hacksaw.rvmat"}},						
+						{0.69999999,{"DZ\gear\tools\data\hacksaw.rvmat"}},						
+						{0.5,{"DZ\gear\tools\data\hacksaw_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\tools\data\hacksaw_damage.rvmat"}},						
+						{0,{"DZ\gear\tools\data\hacksaw_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Hacksaw_Stag: Hacksaw
+	{
+		scope=2;
+		displayName="Reinforced Hacksaw - STAG";
+		descriptionShort="This tool has been manufactured to withstand more wear and tear along with cutting through metal faster.";
+		repairableWithKits[]={};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\hacksaw_stag_co.paa"};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=400;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\tools\data\hacksaw.rvmat"}},						
+						{0.69999999,{"DZ\gear\tools\data\hacksaw.rvmat"}},						
+						{0.5,{"DZ\gear\tools\data\hacksaw_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\tools\data\hacksaw_damage.rvmat"}},						
+						{0,{"DZ\gear\tools\data\hacksaw_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Hacksaw_LocknSons: Hacksaw
+	{
+		scope=2;
+		displayName="Reinforced Hacksaw - Lock & Sons";
+		descriptionShort="This tool has been manufactured to withstand more wear and tear along with cutting through metal faster.";
+		repairableWithKits[]={};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\hacksaw_locknsons_co.paa"};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=700;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\tools\data\hacksaw.rvmat"}},						
+						{0.69999999,{"DZ\gear\tools\data\hacksaw.rvmat"}},						
+						{0.5,{"DZ\gear\tools\data\hacksaw_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\tools\data\hacksaw_damage.rvmat"}},						
+						{0,{"DZ\gear\tools\data\hacksaw_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
   class WeaponCleaningKit_JewlersKit : Inventory_Base 
   {
     scope=2;
