@@ -7,43 +7,14 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{			
-			"DZ_Gear_Books",
-			"Survivalists_Books",
-      "Survivalists_Books_Gear_Books"
+			"DZ_Data",
 		};
 	};
 };
 class CfgVehicles
 {
-  class Book_Base;
   class Inventory_Base;
 
-  class ItemBook: Book_Base
-	{
-    inventorySlot[]+=
-    {
-      "SRP_Book1",
-			"SRP_Book2",
-			"SRP_Book3",
-			"SRP_Book4",
-			"SRP_Book5",
-			"SRP_Book6",
-			"SRP_Book7",
-			"SRP_Book8",
-			"SRP_Book9",
-			"SRP_Book10",
-			"SRP_Book11",
-			"SRP_Book12",
-			"SRP_Book13",
-			"SRP_Book14",
-			"SRP_Book15",
-			"SRP_Book16",
-			"SRP_Book17",
-			"SRP_Book18",
-			"SRP_Book19",
-			"SRP_Book20",
-    };
-  };
   //----------------------------------------- MODDED OVERRIDE
   class DUB_Newspaper_1: Inventory_Base
 	{

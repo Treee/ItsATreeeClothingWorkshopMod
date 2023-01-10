@@ -717,13 +717,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Cubed Book Case Kit";
-		descriptionShort="A cubed book case kit. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="A cubed book case kit.";
 	};
   class SRP_BookCaseCube: Container_Base //new
 	{
 		scope=2;
 		displayName="Book Case - Cubed";
-		descriptionShort="An easy to build cube book case. (OOC DEV NOTE: Reducing Storage to 40 slots.)";
+		descriptionShort="An easy to build cube book case.";
 		model="Survivalists_Mods\gear\containers\srp_bookcasecube.p3d";
 		attachments[]=
 		{
@@ -758,7 +758,7 @@ class CfgVehicles
 		allowOwnedCargoManipulation=1;
 		class Cargo
 		{
-			itemsCargoSize[]={8,8};
+			itemsCargoSize[]={10,4};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};

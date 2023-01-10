@@ -7,27 +7,39 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{			
-			"DZ_Gear_Books",
-			"Survivalists_Books"
+			"DZ_Gear_Books"
 		};
 	};
 };
 class CfgVehicles
 {
-  class ItemBook;
+  class Book_Base;
   
-  class SRP_ReadableBook_Colorbase: ItemBook
-  {
-    scope=0;
-    author="Base";
-    title="Base";
-		file="Survivalists_Books\gear\books\data\book_Hunting.html";
-    displayName="Worn Book";
-		descriptionShort="A worn book.";
-    rotationFlags=16;
-    inventorySlot[]=
-		{
-			"Book",
+  class ItemBook: Book_Base
+	{
+    inventorySlot[]+=
+    {
+      "SRP_Book1",
+			"SRP_Book2",
+			"SRP_Book3",
+			"SRP_Book4",
+			"SRP_Book5",
+			"SRP_Book6",
+			"SRP_Book7",
+			"SRP_Book8",
+			"SRP_Book9",
+			"SRP_Book10",
+			"SRP_Book11",
+			"SRP_Book12",
+			"SRP_Book13",
+			"SRP_Book14",
+			"SRP_Book15",
+			"SRP_Book16",
+			"SRP_Book17",
+			"SRP_Book18",
+			"SRP_Book19",
+			"SRP_Book20",
+      "Book",
       "Book1",
 			"Book2",
 			"Book3",
@@ -78,7 +90,17 @@ class CfgVehicles
 			"Book48",
 			"Book49",
 			"Book50"
-		};
+    };
+  };
+  class SRP_ReadableBook_Colorbase: ItemBook
+  {
+    scope=0;
+    author="Base";
+    title="Base";
+		file="Survivalists_Books\gear\books\data\book_Hunting.html";
+    displayName="Worn Book";
+		descriptionShort="A worn book.";
+    rotationFlags=16;
     hiddenSelections[]=
 		{
 			"zbytek"
