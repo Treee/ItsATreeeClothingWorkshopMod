@@ -159,7 +159,10 @@ class CfgVehicles
     canBeSplit=1;
     itemSize[]={2,2};
   };
-
+	class SewingKit: Inventory_Base
+	{
+    canBeSplit=1;
+  };
   class Pen_ColorBase: Inventory_Base
   {
     inventorySlot[]+=
