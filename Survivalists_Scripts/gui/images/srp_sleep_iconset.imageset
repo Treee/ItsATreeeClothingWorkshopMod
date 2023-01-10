@@ -1,0 +1,42 @@
+ImageSetClass {
+ Name "srp_sleep_iconset"
+ RefSize 512 512
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{EE4943FC72F50C6E}Survivalists_Scripts/gui/images/srp_sleep_iconset.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass iconSleep0 {
+   Name "iconSleep0"
+   Pos 0 0
+   Size 38 38
+   Flags 0
+  }
+  ImageSetDefClass iconSleep1 {
+   Name "iconSleep1"
+   Pos 38 0
+   Size 38 38
+   Flags 0
+  }
+  ImageSetDefClass iconSleep2 {
+   Name "iconSleep2"
+   Pos 76 0
+   Size 38 38
+   Flags 0
+  }
+  ImageSetDefClass iconSleep3 {
+   Name "iconSleep3"
+   Pos 114 0
+   Size 38 38
+   Flags 0
+  }
+  ImageSetDefClass iconSleep4 {
+   Name "iconSleep4"
+   Pos 152 0
+   Size 38 38
+   Flags 0
+  }
+ }
+}
