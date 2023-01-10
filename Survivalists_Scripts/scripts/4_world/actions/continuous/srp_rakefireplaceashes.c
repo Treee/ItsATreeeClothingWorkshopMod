@@ -19,7 +19,7 @@ class ActionSRPRakeFireplaceAshes: ActionContinuousBase
 	override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
 	{
 		FireplaceBase targetIB;
-		if (Class.CastTo(targetIB, target.GetObject()) && targetIB.IsFireplace())
+		if (Class.CastTo(targetIB, target.GetObject()) && targetIB.IsFireplace() && !targetIB.IsDamageDestroyed())
 		{
       return targetIB.HasAshes();
 		}
@@ -35,5 +35,6 @@ class ActionSRPRakeFireplaceAshes: ActionContinuousBase
       coke.SetQuantity(Math.RandomIntInclusive(1,3));
     }
     MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_MainItem, Math.RandomIntInclusive(4,10));
+    MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_Target.GetObject(), 5);
 	}
 };

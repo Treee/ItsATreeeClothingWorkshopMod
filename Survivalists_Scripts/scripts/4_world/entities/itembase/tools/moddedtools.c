@@ -188,3 +188,13 @@ modded class Sickle
 		AddAction(SRP_ActionHarvestCrops_All);
 	}
 };
+
+modded class FarmingHoe
+{
+	override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionSRPRakeFireplaceAshes);
+	}
+};
