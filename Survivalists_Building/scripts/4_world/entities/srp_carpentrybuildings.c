@@ -68,7 +68,8 @@ class Land_srp_constructionmaterials extends SRP_DefaultHouse
 		return true;
 	}
 	override bool CanReleaseAttachment (EntityAI attachment)
-  {
-    return false;
-  }
+	{
+		return false;
+	}
+
 };

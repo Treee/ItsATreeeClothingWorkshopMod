@@ -89,6 +89,13 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:fabric";
     stackMax=200; // max stack fabric is 4
 	};
+  class Slot_SRP_Construction_Rope
+	{
+		name="SRP_Construction_Rope";
+		displayName="Rope";
+		ghostIcon="set:dayz_inventory image:rope";
+    stackMax=100; // max stack rope is 1
+	};
   //================== PINS
   class Slot_SRP_Pin1
 	{

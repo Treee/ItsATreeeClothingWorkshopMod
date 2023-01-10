@@ -336,7 +336,9 @@ class CfgVehicles
 	};
   class Land_srp_constructionmaterials: SRP_PrefabHouse_Base
 	{
-		scope=2;		    
+		scope=2;
+    displayName="Construction Office";
+    descriptionShort="A localized storage container that holds materials for a large build.";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Building\structures\industrial\data\srp_shippingcontainer_construction_co.paa"};    
     model="Survivalists_Building\structures\industrial\srp_shippingcontainer_20ft.p3d";
@@ -353,6 +355,7 @@ class CfgVehicles
       "SRP_Construction_Pipe",
       "SRP_Construction_Epoxy",
       "SRP_Construction_Fabric",
+      "SRP_Construction_Rope"
     };
     class Doors
 		{

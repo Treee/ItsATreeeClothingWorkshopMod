@@ -198,8 +198,11 @@ class CfgVehicles
   class Pipe: Inventory_Base
 	{
     canBeSplit=1;
-    varStackMax=1;
-    varQuantityMax=50;
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=50;
+		varQuantityDestroyOnMin=1;
+		varStackMax=1;
     inventorySlot[]+={"SRP_Construction_Pipe"};
   };
 

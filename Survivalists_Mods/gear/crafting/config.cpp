@@ -92,12 +92,23 @@ class CfgVehicles
   class Rope: Inventory_Base
 	{
     itemSize[]={1,2};
+    canBeSplit=1;
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		varQuantityDestroyOnMin=1;
+		varStackMax=1;
+
+    inventorySlot[]+={"SRP_Construction_Rope"};
   };
   class MetalWire: Inventory_Base
 	{
     canBeSplit=1;
-    varStackMax=1;
-    varQuantityMax=100;
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=100;
+		varQuantityDestroyOnMin=1;
+		varStackMax=1;
     inventorySlot[]+={"SRP_Construction_MetalWire"};
   };
   class LongWoodenStick_Irradiated: LongWoodenStick
