@@ -9,17 +9,17 @@ class SRP_ShippingContainerBase extends House
     if (!HasBeenChecked())
     {
       int chanceRoll = Math.RandomIntInclusive(1,20);
-      // 1-15 is nothing
-      if (chanceRoll > 0 && chanceRoll <= 15) //1-15
+      // 1-16 is nothing
+      if (chanceRoll > 0 && chanceRoll <= 16) //1-16
       {
         // do nothing
       }
-      else if (chanceRoll > 15 && chanceRoll <= 17) //16,17
+      else if (chanceRoll > 16 && chanceRoll < 19) //17,18
       {
         SpawnZombies(2);
         SetHasRandomEventPerformed(true);
       }
-      else if (chanceRoll > 17 && chanceRoll <= 19) // 18,19
+      else if (chanceRoll == 19) //19
       {
         SpawnIEDExplosion();
         SetHasRandomEventPerformed(true);
