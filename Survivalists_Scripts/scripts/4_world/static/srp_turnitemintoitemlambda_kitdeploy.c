@@ -27,3 +27,28 @@ class TurnItemIntoItemLambda_KitDeployment extends TurnItemIntoItemLambda
 		}
 	}
 };
+
+class ReplaceItemWithNewLambda_SawWoodenLogs extends ReplaceItemWithNewLambdaBase
+{
+	int m_ItemCount;
+	
+	void ReplaceItemWithNewLambda_SawWoodenLogs(EntityAI old_item, string new_item_type, PlayerBase player, int count) 
+	{
+		m_ItemCount = count; 
+	}
+
+	override void CopyOldPropertiesToNew(notnull EntityAI old_item, EntityAI new_item)
+	{
+		super.CopyOldPropertiesToNew(old_item, new_item);
+
+		ItemBase planks;
+		Class.CastTo(planks, new_item);
+		
+		ItemBase woodenlog;
+		Class.CastTo(woodenlog, old_item);
+		
+		MiscGameplayFunctions.TransferItemProperties(woodenlog, planks);
+		
+		planks.SetQuantity(m_ItemCount);
+	}
+};

@@ -4,7 +4,8 @@ modded class ModItemRegisterCallbacks
   {
     super.RegisterOneHanded( pType, pBehavior );     
     pType.AddItemInHandsProfileIK("SRP_ChessPiece_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/bait_worm.anm");  
-    
+		pType.AddItemInHandsProfileIK("SRP_HandPlane_Crude", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/book.anm");
+		pType.AddItemInHandsProfileIK("SRP_HandPlane_Metal", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/book.anm");
     // food
 		pType.AddItemInHandsProfileIK("SRP_BeerBottle", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/water_bottle.anm");
 		pType.AddItemInHandsProfileIK("Winebottle", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/water_bottle.anm");

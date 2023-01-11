@@ -794,6 +794,165 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_HandPlane_Crude: Inventory_Base
+	{
+		scope=2;
+		displayName="Crude Hand Plane";
+		descriptionShort="A crudly fashioned hand plane for wood working.";
+		model="Survivalists_Mods\gear\tools\srp_handplane_crude.p3d";
+		rotationFlags=17;
+		weight=100;
+		itemSize[]={2,3};
+		fragility=0.001;
+    physLayer="item_small";
+		openItemSpillRange[]={20,40};
+    inventorySlot[]={};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\srp_handplane_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}}
+          };
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeWrench";
+				range=1.6;
+			};
+			class Heavy
+			{
+				ammo="MeleeWrench_Heavy";
+				range=1.6;
+			};
+			class Sprint
+			{
+				ammo="MeleeWrench_Heavy";
+				range=4.0999999;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="wrench_drop_SoundSet";
+					id=898;
+				};
+				class wrench_loop
+				{
+					soundSet="SledgeWoodHammer_loop_SoundSet";
+					id=1117;
+				};
+				class wrench_end
+				{
+					soundSet="SledgeWoodHammer_end_SoundSet";
+					id=1118;
+				};
+			};
+		};
+	};
+  class SRP_HandPlane_Metal: Inventory_Base
+	{
+		scope=2;
+		displayName="Metal Hand Plane";
+		descriptionShort="A primitive hand plane made from pig iron and wood. Useful for working with wood.";
+		model="Survivalists_Mods\gear\tools\srp_handplane_metal.p3d";
+		rotationFlags=17;
+		weight=100;
+		itemSize[]={2,3};
+		fragility=0.001;
+    physLayer="item_small";
+		openItemSpillRange[]={20,40};
+    inventorySlot[]={};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\tools\data\srp_handplane_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\tools\data\srp_handplane.rvmat"}}
+          };
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeWrench";
+				range=1.6;
+			};
+			class Heavy
+			{
+				ammo="MeleeWrench_Heavy";
+				range=1.6;
+			};
+			class Sprint
+			{
+				ammo="MeleeWrench_Heavy";
+				range=4.0999999;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="wrench_drop_SoundSet";
+					id=898;
+				};
+				class wrench_loop
+				{
+					soundSet="SledgeWoodHammer_loop_SoundSet";
+					id=1117;
+				};
+				class wrench_end
+				{
+					soundSet="SledgeWoodHammer_end_SoundSet";
+					id=1118;
+				};
+			};
+		};
+	};
+
   // herbalism
   class SRP_MortarBowl: Inventory_Base
 	{
