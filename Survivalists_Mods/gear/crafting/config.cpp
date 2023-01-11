@@ -2065,4 +2065,57 @@ class CfgVehicles
     color="hobbit";
 	};
 
+  class SRP_Anvil_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Anvil";
+		descriptionShort="A heavy iron anvil. Useful for forming metal into shapes.";
+		model="Survivalists_Mods\gear\crafting\srp_anvil.p3d";
+		inventorySlot[]={};
+		heavyItem=1;
+    itemBehaviour=0;
+		weight=100000;
+		itemSize[]={8,8};
+    itemsCargoSize[]={0,0};
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_anvil_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000;
+					healthLevels[]=
+					{
+            {1.01,{"Survivalists_Mods\gear\crafting\data\srp_anvil.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\crafting\data\srp_anvil.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\crafting\data\srp_anvil.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\crafting\data\srp_anvil.rvmat"}},
+            {0.0099999998,{"Survivalists_Mods\gear\crafting\data\srp_anvil.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpBarrelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpBarrel_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};		
+  class SRP_Anvil_Basic: SRP_Anvil_ColorBase
+  {
+    scope=2;
+  };
 };
