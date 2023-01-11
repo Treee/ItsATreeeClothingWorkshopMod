@@ -4,7 +4,7 @@ ImageSetClass {
  Textures {
   ImageSetTextureClass {
    mpix 1
-   path "{EE4943FC72F50C6E}Survivalists_Scripts/gui/images/srp_sleep_iconset.edds"
+   path "Survivalists_Scripts/gui/images/srp_sleep_iconset.edds"
   }
  }
  Images {

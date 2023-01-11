@@ -94,7 +94,7 @@ class SleepEffectSymptom extends SymptomBase
       TIREDNESS_25PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.25;
       TIREDNESS_50PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.50;
       TIREDNESS_75PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.75;
-      TIREDNESS_100PERCENT = config.g_SRPSleepMaximumAwakeTime * 0.90; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
+      TIREDNESS_100PERCENT = config.g_SRPSleepMaximumAwakeTime; // allow for oversleep (6 hrs of rest, 2 hrs of free time)
       // Print("Yawn int: " + m_YawnInterval + " yawn threashold: " + YAWN_THRESHOLD + " Passoutthresh: " + PASS_OUT_THRESHOLD);
     }
 		if (LogManager.IsSymptomLogEnable()) Debug.SymptomLog("n/a", this.ToString(), "n/a", "OnGetActivated", m_Player.ToString());
@@ -132,15 +132,23 @@ class SleepEffectSymptom extends SymptomBase
   {
     // Print("GetTirednessLevel: " + total_tiredness + " -0: " + TIREDNESS_0PERCENT + " -1: " + TIREDNESS_25PERCENT + " -2: " + TIREDNESS_50PERCENT + " -3: " + TIREDNESS_75PERCENT + " -4: " + TIREDNESS_100PERCENT);
     // the retun numbers here correlate to icons in srp_sleep_iconset.imageset
-    if (total_tiredness >= TIREDNESS_0PERCENT && total_tiredness < TIREDNESS_25PERCENT){ // fully slept full moon      
+    if (total_tiredness >= TIREDNESS_0PERCENT && total_tiredness < TIREDNESS_25PERCENT)
+    { // fully slept full moon      
       return 4;
-    } else if (total_tiredness >= TIREDNESS_25PERCENT && total_tiredness < TIREDNESS_50PERCENT) { // 75% awake,
+    } 
+    else if (total_tiredness >= TIREDNESS_25PERCENT && total_tiredness < TIREDNESS_50PERCENT) 
+    { // 75% awake,
       return 3;
-    } else if (total_tiredness >= TIREDNESS_50PERCENT && total_tiredness < TIREDNESS_75PERCENT) { // 50% awake
+    } 
+    else if (total_tiredness >= TIREDNESS_50PERCENT && total_tiredness < TIREDNESS_75PERCENT) 
+    { // 50% awake
       return 2;
-    } else if (total_tiredness >= TIREDNESS_75PERCENT && total_tiredness < TIREDNESS_100PERCENT) { // 25% awake
+    } 
+    else if (total_tiredness >= TIREDNESS_75PERCENT && total_tiredness < PASS_OUT_THRESHOLD) 
+    { // 25% awake
       return 1;
-    } else if (total_tiredness >= TIREDNESS_100PERCENT) { // 0% awake
+    } 
+    else if (total_tiredness >= PASS_OUT_THRESHOLD && total_tiredness < TIREDNESS_100PERCENT) { // 0% awake
       return 0;
     }
     return 0;

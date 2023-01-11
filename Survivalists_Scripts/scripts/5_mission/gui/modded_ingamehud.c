@@ -4,12 +4,6 @@ modded class IngameHud
 
   string panelSleep = "Sleep";
   string iconSleepName = "IconSleep";
-  string iconSleepArrowUp3 = "SleepArrowUp3";
-  string iconSleepArrowUp2 = "SleepArrowUp2";
-  string iconSleepArrowUp1 = "SleepArrowUp1";
-  string iconSleepArrowDown1 = "SleepArrowDown1";
-  string iconSleepArrowDown2 = "SleepArrowDown2";
-  string iconSleepArrowDown3 = "SleepArrowDown3";
 
   private Widget m_CompassHeadingRootWidget;
   private TextWidget m_CompassHeadingText;
@@ -39,7 +33,7 @@ modded class IngameHud
     {
       m_sleepPanelWidget = GetGame().GetWorkspace().CreateWidgets("Survivalists_Scripts/gui/layouts/srp_sleep_layout.layout");
       if (m_sleepPanelWidget) {
-        m_sleepPanelWidget.Show(true);
+        m_sleepPanelWidget.Show(false);
       }
     }
     if (!m_CompassHeadingRootWidget && (GetGame().IsClient() || !GetGame().IsMultiplayer()))
@@ -73,7 +67,7 @@ modded class IngameHud
     super.RefreshHudVisibility();
     bool genericShow = ( !m_HudHidePlayer && !m_HudHideUI && m_HudState ) || m_HudInventory;
     // show the sleep icon like the other status icons
-    SetSleepWidgetVisibility(( !m_HudHidePlayer && !m_HudHideUI && m_HudState ) || m_HudInventory);
+    SetSleepWidgetVisibility(genericShow);
     m_CompassHeadingRootWidget.Show(genericShow);
   }
 
@@ -167,33 +161,6 @@ modded class IngameHud
       // Print("Tiredness DisplayNotifier: " + key);
 			DisplayTirednessTendencyNormal( key, status );
       SetTirednessState(status);
-      // tendency arrows
-      string arrow_name = "SleepArrowUp";
-      if ( tirednessDelta < 0 )
-      {
-        arrow_name = "SleepArrowDown";
-      }
-      tirednessDelta = Math.AbsInt( tirednessDelta );
-
-      for ( int x = 1; x < 4; x++ )
-      { 
-        // Print("Hiding Arrows: " + x.ToString());
-        Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( String("SleepArrowUp" + x.ToString() ) ) );
-        if( w )
-          w.Show( false );
-        Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( String("SleepArrowDown" + x.ToString() ) ) );
-        if( w )
-          w.Show( false );
-      }
-
-      if( tirednessDelta > 0 )
-      {
-        // Print("Sleep Tendency show " + tirednessDelta);
-        string widget_name = arrow_name + Math.Clamp( tirednessDelta, 1, 3 );
-        Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( widget_name ) );
-        if( w )
-          w.Show( true );
-      }
     }
 	}
   void DisplayTirednessTendencyNormal( int key, int status )
