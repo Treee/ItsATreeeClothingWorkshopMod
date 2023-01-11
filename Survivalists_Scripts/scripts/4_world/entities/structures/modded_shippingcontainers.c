@@ -26,7 +26,7 @@ class SRP_ShippingContainerBase extends House
       }
       else if (chanceRoll == 20) // 20
       {
-        SpawnZombies(Math.RandomIntInclusive(2,5));
+        SpawnZombies(Math.RandomIntInclusive(2,4));
         SetHasRandomEventPerformed(true);
       }
       SetHasBeenChecked(true);      
