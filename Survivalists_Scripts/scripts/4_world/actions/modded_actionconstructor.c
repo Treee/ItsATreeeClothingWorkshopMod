@@ -6,6 +6,7 @@ modded class ActionConstructor
     
 		actions.Insert(SRP_ActionSawPlanks); 
 
+		actions.Insert(SRP_ActionMetalSmith); 
 		actions.Insert(SRP_ActionHarvestCrops_All); 
 
 		actions.Insert(ActionSearchChickenCoop); 

@@ -98,8 +98,11 @@ class CfgVehicles
 		varQuantityMax=100;
 		varQuantityDestroyOnMin=1;
 		varStackMax=1;
-
-    inventorySlot[]+={"SRP_Construction_Rope"};
+    inventorySlot[]+=
+    {
+      "SRP_Construction_Rope",
+      "Smithing_Rope"
+    };
   };
   class MetalWire: Inventory_Base
 	{
@@ -109,8 +112,12 @@ class CfgVehicles
 		varQuantityMax=100;
 		varQuantityDestroyOnMin=1;
 		varStackMax=1;
-    inventorySlot[]+={"SRP_Construction_MetalWire"};
-  };
+    inventorySlot[]+=
+    {
+      "SRP_Construction_MetalWire",
+      "Smithing_MetalWire"
+    };
+  };      
   class LongWoodenStick_Irradiated: LongWoodenStick
 	{
 		scope=2;
@@ -2071,21 +2078,102 @@ class CfgVehicles
 		displayName="Anvil";
 		descriptionShort="A heavy iron anvil. Useful for forming metal into shapes.";
 		model="Survivalists_Mods\gear\crafting\srp_anvil.p3d";
+    physLayer="item_large";
 		inventorySlot[]={};
+    attachments[]=
+    {
+      "SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalPlate3",
+      "SRP_MetalPlate4",
+      "SRP_MetalPlate5",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "SRP_MetalRod3",
+      "SRP_MetalRod4",
+      "SRP_MetalRod5",
+      "Smithing_Leather",
+      "Smithing_MetalWire",
+      "Smithing_Fabric",
+      "Smithing_Rope",
+      "SRP_PreciousStone1",
+      "SRP_PreciousStone2",
+      "SRP_PreciousStone3",
+      "SRP_PreciousStone4",
+      "SRP_PreciousStone5",
+    };
 		heavyItem=1;
     itemBehaviour=0;
-		weight=100000;
+		weight=10000;
 		itemSize[]={8,8};
     itemsCargoSize[]={0,0};
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_anvil_co.paa"};
-		class DamageSystem
+    class GUIInventoryAttachmentsProps
+		{
+      class Misc
+			{
+				name="Misc";
+				description="Other ingredients";
+				attachmentSlots[]=
+				{
+          "Smithing_Leather",
+					"Smithing_MetalWire",
+          "Smithing_Fabric",
+          "Smithing_Rope",
+				};
+				icon="set:dayz_inventory image:missing";
+			};
+			class MetalPlates
+			{
+				name="Metal Plates";
+				description="Smithable Metal Plates";
+				attachmentSlots[]=
+				{
+					"SRP_MetalPlate1",
+          "SRP_MetalPlate2",
+          "SRP_MetalPlate3",
+          "SRP_MetalPlate4",
+          "SRP_MetalPlate5",
+				};
+				icon="set:dayz_inventory image:plates";
+			};
+      class MetalRods
+			{
+				name="Metal Rods";
+				description="Smithable Metal Rods";
+				attachmentSlots[]=
+				{
+					"SRP_MetalRod1",
+          "SRP_MetalRod2",
+          "SRP_MetalRod3",
+          "SRP_MetalRod4",
+          "SRP_MetalRod5",
+				};
+				icon="set:dayz_inventory image:missing";
+			};
+      class GemStones
+			{
+				name="Crystals and Gems";
+				description="Various rough and refined precious stones.";
+				attachmentSlots[]=
+				{
+					"SRP_PreciousStone1",
+          "SRP_PreciousStone2",
+          "SRP_PreciousStone3",
+          "SRP_PreciousStone4",
+          "SRP_PreciousStone5",
+				};
+				icon="set:dayz_inventory image:missing";
+			};
+		};
+    class DamageSystem
 		{
 			class GlobalHealth
 			{
 				class Health
 				{
-					hitpoints=10000;
+					hitpoints=5000;
 					healthLevels[]=
 					{
             {1.01,{"Survivalists_Mods\gear\crafting\data\srp_anvil.rvmat"}},

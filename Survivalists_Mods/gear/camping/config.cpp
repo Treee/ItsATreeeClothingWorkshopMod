@@ -368,7 +368,8 @@ class CfgVehicles
     inventorySlot[]+=
 		{
 			"Material_Shelter_Fabric",
-      "SRP_Construction_Fabric"
+      "SRP_Construction_Fabric",
+      "Smithing_Fabric",
 		};
   };
 

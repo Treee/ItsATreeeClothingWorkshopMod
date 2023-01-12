@@ -150,7 +150,13 @@ class CfgVehicles
     itemSize[]={2,1};
 		scope=2;
   };
-  
+  class TannedLeather: Inventory_Base
+	{
+		inventorySlot[]+=
+		{
+			"Smithing_Leather"
+		};
+  };
   // windstride override
   class HumanSkull: Inventory_Base
   {

@@ -11,6 +11,136 @@ class CfgPatches
 
 class CfgSlots
 {
+  //================== MetalSmithing
+  class Slot_SRP_PreciousStone1
+  {
+		name="SRP_PreciousStone1";
+		displayName="Precious Stone";
+		ghostIcon="set:dayz_inventory image:stones";
+  };
+  class Slot_SRP_PreciousStone2
+  {
+		name="SRP_PreciousStone2";
+		displayName="Precious Stone";
+		ghostIcon="set:dayz_inventory image:stones";
+  };
+  class Slot_SRP_PreciousStone3
+  {
+		name="SRP_PreciousStone3";
+		displayName="Precious Stone";
+		ghostIcon="set:dayz_inventory image:stones";
+  };
+  class Slot_SRP_PreciousStone4
+  {
+		name="SRP_PreciousStone4";
+		displayName="Precious Stone";
+		ghostIcon="set:dayz_inventory image:stones";
+  };
+  class Slot_SRP_PreciousStone5
+  {
+		name="SRP_PreciousStone5";
+		displayName="Precious Stone";
+		ghostIcon="set:dayz_inventory image:stones";
+  };
+
+  class Slot_Smithing_Leather
+	{
+		name="Smithing_Leather";
+		displayName="Leather";
+		ghostIcon="set:dayz_inventory image:animal_pelt";
+	};
+  class Slot_Smithing_MetalWire
+	{
+		name="Smithing_MetalWire";
+		displayName="Metal Wire";
+		ghostIcon="set:dayz_inventory image:metalwire";
+    stackMax=5; // max stack wire is 1
+	};
+  class Slot_Smithing_Fabric
+	{
+		name="Smithing_Fabric";
+		displayName="Fabric";
+		ghostIcon="set:dayz_inventory image:tarp";
+    stackMax=20; // max stack fabric is 4
+	};
+  class Slot_Smithing_Rope
+	{
+		name="Smithing_Rope";
+		displayName="Rope";
+		ghostIcon="set:dayz_inventory image:rope";
+    stackMax=10; // max stack rope is 1
+	};
+  class Slot_SRP_MetalPlate1
+  {
+		name="SRP_MetalPlate1";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:plates";
+    stackMax=5;
+  };
+  class Slot_SRP_MetalPlate2
+  {
+		name="SRP_MetalPlate2";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:plates";
+    stackMax=5;
+  };
+  class Slot_SRP_MetalPlate3
+  {
+		name="SRP_MetalPlate3";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:plates";
+    stackMax=5;
+  };
+  class Slot_SRP_MetalPlate4
+  {
+		name="SRP_MetalPlate4";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:plates";
+    stackMax=5;
+  };
+  class Slot_SRP_MetalPlate5
+  {
+		name="SRP_MetalPlate5";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:plates";
+    stackMax=5;
+  };
+
+  class Slot_SRP_MetalRod1
+  {
+		name="SRP_MetalRod1";
+		displayName="Metal Rod";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=5;
+  };
+  class Slot_SRP_MetalRod2
+  {
+		name="SRP_MetalRod2";
+		displayName="Metal Rod";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=5;
+  };
+  class Slot_SRP_MetalRod3
+  {
+		name="SRP_MetalRod3";
+		displayName="Metal Rod";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=5;
+  };
+  class Slot_SRP_MetalRod4
+  {
+		name="SRP_MetalRod4";
+		displayName="Metal Rod";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=5;
+  };
+  class Slot_SRP_MetalRod5
+  {
+		name="SRP_MetalRod5";
+		displayName="Metal Rod";
+		ghostIcon="set:dayz_inventory image:missing";
+    stackMax=5;
+  };
   //================== Construction Materials
   class Slot_SRP_Construction_Mortar
 	{
@@ -86,7 +216,7 @@ class CfgSlots
 	{
 		name="SRP_Construction_Fabric";
 		displayName="Fabric";
-		ghostIcon="set:dayz_inventory image:fabric";
+		ghostIcon="set:dayz_inventory image:tarp";
     stackMax=200; // max stack fabric is 4
 	};
   class Slot_SRP_Construction_Rope

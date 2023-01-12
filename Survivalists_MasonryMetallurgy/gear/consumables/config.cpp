@@ -399,6 +399,11 @@ class CfgVehicles
       "SRP_DisplayHook18",
       "SRP_DisplayHook19",
       "SRP_DisplayHook20",
+      "SRP_PreciousStone1",
+      "SRP_PreciousStone2",
+      "SRP_PreciousStone3",
+      "SRP_PreciousStone4",
+      "SRP_PreciousStone5",
     };
     hiddenSelections[]=
 		{
@@ -2647,7 +2652,7 @@ class CfgVehicles
 //===================================== INGOTS
   class SRP_ForgeIngot_ColorBase: Inventory_Base
   {
-		scope=2;
+		scope=0;
 		displayName="Metal Ingot";
 		descriptionShort="A metal ingot that has been cooled into the shape of a bar.";
 		model="Survivalists_MasonryMetallurgy\gear\consumables\srp_forge_ingot.p3d";
@@ -2819,7 +2824,7 @@ class CfgVehicles
 //===================================== PLATES
   class SRP_ForgeIngotPlate_ColorBase: Inventory_Base
   {
-		scope=2;
+		scope=0;
 		displayName="Metal Plate";
 		descriptionShort="A metal ingot that has been shaped into a metal plate.";
 		model="Survivalists_MasonryMetallurgy\gear\consumables\srp_forge_ingotplate.p3d";
@@ -2841,6 +2846,9 @@ class CfgVehicles
     {
       "SRP_MetalPlate1",
       "SRP_MetalPlate2",
+      "SRP_MetalPlate3",
+      "SRP_MetalPlate4",
+      "SRP_MetalPlate5",
     };
 		class DamageSystem
 		{
@@ -2993,7 +3001,7 @@ class CfgVehicles
 //===================================== RODS
   class SRP_ForgeIngotRod_ColorBase: Inventory_Base
   {
-		scope=2;
+		scope=0;
 		displayName="Metal Rod";
 		descriptionShort="A metal ingot that has been shaped into a metal rod.";
 		model="Survivalists_MasonryMetallurgy\gear\consumables\srp_forge_ingotrod.p3d";
@@ -3015,6 +3023,9 @@ class CfgVehicles
     {
       "SRP_MetalRod1",
       "SRP_MetalRod2",
+      "SRP_MetalRod3",
+      "SRP_MetalRod4",
+      "SRP_MetalRod5",
     };
 		class DamageSystem
 		{
