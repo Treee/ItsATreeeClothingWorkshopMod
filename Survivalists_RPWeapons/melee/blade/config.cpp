@@ -134,197 +134,197 @@ class CfgVehicles
   };
   //============================== CUSTOM STUFF
 
-  class SRP_WeaponBladeKit_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Blade";
-		descriptionShort="A Weapon Kit - Still needs a bit of work";
-	};
+  // class SRP_WeaponBladeKit_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Blade";
+	// 	descriptionShort="A Weapon Kit - Still needs a bit of work";
+	// };
 
-  class SRP_WeaponBladeKarambitKnife_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Karambit Knife";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"      
-		};
-	};
-  class SRP_WeaponBladeSnakeDagger_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Snake Dagger";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"      
-		};
-	};
-  class SRP_WeaponBladeKnifeOld_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Forged Knife";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"      
-		};
-	};
-  class SRP_WeaponBladeBerserkSword_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Berserk Sword";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"  
-		};
-	};
-  class SRP_WeaponBladeAerondightSword_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Aerondight Sword";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"  
-		};
-	};
-  class SRP_WeaponBladeAndurilSword_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Anduril Sword";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"  
-		};
-	};
-  class SRP_WeaponBladeGladiusSword_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Gladius Sword";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"  
-		};
-	};
-  class SRP_WeaponBladeCrystalMace_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Crystal Mace";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"
-		};
-	};
-  class SRP_WeaponBladeKatana_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Katana";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope",    
-      "Material_Shelter_Fabric"
-		};
-	};
-  class SRP_WeaponBladeWarCleaver_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - War Cleaver";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",  
-      "Material_Shelter_Fabric"
-		};
-	};
-  class SRP_WeaponBladePipeAxe_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Pipe Axe";
-		descriptionShort="A bladed weapon kit - Finish with an axe. Do not put back into the forge.";
-    attachments[]={};
-	};
-  class SRP_WeaponBladeCelticAxe_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Celtic Axe";
-		descriptionShort="A bladed weapon kit - Finish with some leather and other materials. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope",    
-      "Material_Shelter_Fabric",
-      "Material_Shelter_Leather",
-		};
-	};
-  class SRP_WeaponBladeGreatRuneSword_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Great Rune Sword";
-		descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"  
-		};
-	};
+  // class SRP_WeaponBladeKarambitKnife_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Karambit Knife";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"      
+	// 	};
+	// };
+  // class SRP_WeaponBladeSnakeDagger_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Snake Dagger";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"      
+	// 	};
+	// };
+  // class SRP_WeaponBladeKnifeOld_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Forged Knife";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"      
+	// 	};
+	// };
+  // class SRP_WeaponBladeBerserkSword_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Berserk Sword";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"  
+	// 	};
+	// };
+  // class SRP_WeaponBladeAerondightSword_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Aerondight Sword";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"  
+	// 	};
+	// };
+  // class SRP_WeaponBladeAndurilSword_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Anduril Sword";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"  
+	// 	};
+	// };
+  // class SRP_WeaponBladeGladiusSword_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Gladius Sword";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"  
+	// 	};
+	// };
+  // class SRP_WeaponBladeCrystalMace_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Crystal Mace";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"
+	// 	};
+	// };
+  // class SRP_WeaponBladeKatana_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Katana";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope",    
+  //     "Material_Shelter_Fabric"
+	// 	};
+	// };
+  // class SRP_WeaponBladeWarCleaver_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - War Cleaver";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",  
+  //     "Material_Shelter_Fabric"
+	// 	};
+	// };
+  // class SRP_WeaponBladePipeAxe_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Pipe Axe";
+	// 	descriptionShort="A bladed weapon kit - Finish with an axe. Do not put back into the forge.";
+  //   attachments[]={};
+	// };
+  // class SRP_WeaponBladeCelticAxe_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Celtic Axe";
+	// 	descriptionShort="A bladed weapon kit - Finish with some leather and other materials. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope",    
+  //     "Material_Shelter_Fabric",
+  //     "Material_Shelter_Leather",
+	// 	};
+	// };
+  // class SRP_WeaponBladeGreatRuneSword_Kit: SRP_Weapon_KitBase
+	// {
+	// 	scope=2;
+	// 	displayName="Weapon Kit - Great Rune Sword";
+	// 	descriptionShort="A bladed weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
+  //   attachments[]=
+	// 	{
+	// 		"SRP_MetalPlate1",
+  //     "SRP_MetalPlate2",
+  //     "SRP_MetalRod1",
+  //     "SRP_MetalRod2",
+  //     "Material_MetalWire",
+  //     "Material_Shelter_Rope"  
+	// 	};
+	// };
 
   class SRP_Trenchknife: HuntingKnife
   {

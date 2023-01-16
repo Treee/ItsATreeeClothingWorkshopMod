@@ -42,7 +42,13 @@ class CfgSlots
 		displayName="Precious Stone";
 		ghostIcon="set:dayz_inventory image:stones";
   };
-
+  class Slot_Smithing_WoodenLogs
+	{
+		name="Smithing_WoodenLogs";
+		displayName="Wooden Logs";
+		ghostIcon="set:dayz_inventory image:woodenlog";
+    stackMax=5;
+	};
   class Slot_Smithing_Leather
 	{
 		name="Smithing_Leather";
@@ -74,71 +80,70 @@ class CfgSlots
   {
 		name="SRP_MetalPlate1";
 		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:plates";
+		ghostIcon="set:dayz_inventory image:tarp";
     stackMax=5;
   };
   class Slot_SRP_MetalPlate2
   {
 		name="SRP_MetalPlate2";
 		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:plates";
+		ghostIcon="set:dayz_inventory image:tarp";
     stackMax=5;
   };
   class Slot_SRP_MetalPlate3
   {
 		name="SRP_MetalPlate3";
 		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:plates";
+		ghostIcon="set:dayz_inventory image:tarp";
     stackMax=5;
   };
   class Slot_SRP_MetalPlate4
   {
 		name="SRP_MetalPlate4";
 		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:plates";
+		ghostIcon="set:dayz_inventory image:tarp";
     stackMax=5;
   };
   class Slot_SRP_MetalPlate5
   {
 		name="SRP_MetalPlate5";
 		displayName="Metal Plate";
-		ghostIcon="set:dayz_inventory image:plates";
+		ghostIcon="set:dayz_inventory image:tarp";
     stackMax=5;
   };
-
   class Slot_SRP_MetalRod1
   {
 		name="SRP_MetalRod1";
 		displayName="Metal Rod";
-		ghostIcon="set:dayz_inventory image:missing";
+		ghostIcon="set:dayz_inventory image:woodenlog";
     stackMax=5;
   };
   class Slot_SRP_MetalRod2
   {
 		name="SRP_MetalRod2";
 		displayName="Metal Rod";
-		ghostIcon="set:dayz_inventory image:missing";
+		ghostIcon="set:dayz_inventory image:woodenlog";
     stackMax=5;
   };
   class Slot_SRP_MetalRod3
   {
 		name="SRP_MetalRod3";
 		displayName="Metal Rod";
-		ghostIcon="set:dayz_inventory image:missing";
+		ghostIcon="set:dayz_inventory image:woodenlog";
     stackMax=5;
   };
   class Slot_SRP_MetalRod4
   {
 		name="SRP_MetalRod4";
 		displayName="Metal Rod";
-		ghostIcon="set:dayz_inventory image:missing";
+		ghostIcon="set:dayz_inventory image:woodenlog";
     stackMax=5;
   };
   class Slot_SRP_MetalRod5
   {
 		name="SRP_MetalRod5";
 		displayName="Metal Rod";
-		ghostIcon="set:dayz_inventory image:missing";
+		ghostIcon="set:dayz_inventory image:woodenlog";
     stackMax=5;
   };
   //================== Construction Materials

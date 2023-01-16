@@ -2096,6 +2096,7 @@ class CfgVehicles
       "Smithing_MetalWire",
       "Smithing_Fabric",
       "Smithing_Rope",
+      "Smithing_WoodenLogs",
       "SRP_PreciousStone1",
       "SRP_PreciousStone2",
       "SRP_PreciousStone3",
@@ -2121,6 +2122,7 @@ class CfgVehicles
 					"Smithing_MetalWire",
           "Smithing_Fabric",
           "Smithing_Rope",
+          "Smithing_WoodenLogs"
 				};
 				icon="set:dayz_inventory image:missing";
 			};

@@ -1,18 +1,47 @@
 class SRP_Anvil_ColorBase extends ItemBase
 {  
+  ref array<SRP_CraftableItem> potentialCraftableItems = new array<SRP_CraftableItem>;
+  protected bool m_HasCraftableMatches = false;
+
   override bool CanPutInCargo( EntityAI parent )
 	{
     return GetInventory().AttachmentCount() == 0;
 	}
-  bool HasAttachmentFilled(string slotName)
+
+  // when an item is attached, go through the recipes once and see if anything can be crafted
+  override void EEItemAttached(EntityAI item, string slot_name)
   {
-    return FindAttachmentBySlotName(slotName) != null;
+    super.EEItemAttached(item, slot_name);
+    potentialCraftableItems = new array<SRP_CraftableItem>;
+    if (CheckPotentialRecipeMatches(potentialCraftableItems))
+    {
+      // Print("Has matches");
+      SetHasCraftableMatches(true);
+    }
+    else
+    {
+      // Print("Has no matches");
+      SetHasCraftableMatches(false);
+    }
   }
-  bool HasAnySlotFilled()
-  {    
-    return GetInventory().AttachmentCount() > 0;
+  // when an item is attached, go through the recipes once and see if anything can be crafted
+  override void EEItemDetached(EntityAI item, string slot_name)
+  {
+    super.EEItemDetached(item, slot_name);
+    potentialCraftableItems = new array<SRP_CraftableItem>;
+    if (CheckPotentialRecipeMatches(potentialCraftableItems))
+    {
+      // Print("Has matches");
+      SetHasCraftableMatches(true);
+    }
+    else
+    {
+      // Print("Has no matches");
+      SetHasCraftableMatches(false);
+    }
   }
-  SRP_CraftableItem HasCorrectCombination()
+
+  bool CheckPotentialRecipeMatches(out array<SRP_CraftableItem> craftableItems)
   {        
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("", "");
     EntityAI attachment;
@@ -30,21 +59,33 @@ class SRP_Anvil_ColorBase extends ItemBase
         attachment.GetInventory().GetCurrentAttachmentSlotInfo(slotId, slotName);
         colorName = attachment.ConfigGetString("color");
         colorName.ToUpper();
-        if (slotName.Contains("SRP_MetalPlate") || slotName.Contains("SRP_MetalRod"))
-          enumId = EnumTools.StringToEnum(SRP_METALTYPE, colorName);
-        else if (slotName.Contains("SRP_PreciousStone"))
-          enumId = EnumTools.StringToEnum(SRP_CRYSTALTYPE, colorName);
-
+        
+        enumId = EnumTools.StringToEnum(SRP_COLOR, colorName);
         // Print(string.Format("item: %1 slot: %2 color: %3 enumId: %4", attachment.GetType(), slotName, colorName, enumId));
         craftableItem.RegisterIngredient(new SRP_ItemRequirement(slotName, enumId, attachment.GetQuantity()));
       }
     }
     // craftableItem.PrintIngredients();    
-    return GetDayZGame().GetSRPSmithingRecipesGlobal().IsRecipeMatch(craftableItem);
+    return GetDayZGame().GetSRPSmithingRecipesGlobal().IsRecipeMatch(craftableItem, craftableItems);
   }
-  string ReduceAttachedQuantities()
+
+  bool HasCraftableMatches()
   {
-    SRP_CraftableItem craftable = HasCorrectCombination();
+    return m_HasCraftableMatches;
+  }
+  void SetHasCraftableMatches(bool hasMatches)
+  {
+    m_HasCraftableMatches = hasMatches;
+  }
+  void GetPotentialRecipeMatchesDisplayName(out TStringArray recipeDisplayNames)
+  {
+    foreach (SRP_CraftableItem craftable : potentialCraftableItems)
+    {
+      recipeDisplayNames.Insert(craftable.GetDisplayName());
+    }
+  }
+  string ReduceAttachedQuantities(SRP_CraftableItem craftable)
+  {
     if (craftable)
     {
       ItemBase attachment;
@@ -60,7 +101,6 @@ class SRP_Anvil_ColorBase extends ItemBase
     }
     return craftable.GetItemClassName();
   }
-
   vector GetMemoryPointPosition(string selection)
   {
     if ( MemoryPointExists( selection ) )

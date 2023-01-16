@@ -250,7 +250,8 @@ class CfgVehicles
 		varQuantityMax=400;
     inventorySlot[]+=
 		{
-      "SRP_Construction_WoodenLogs"
+      "SRP_Construction_WoodenLogs",
+      "Smithing_WoodenLogs"
 		};
   };
   class MetalPlate: Inventory_Base
