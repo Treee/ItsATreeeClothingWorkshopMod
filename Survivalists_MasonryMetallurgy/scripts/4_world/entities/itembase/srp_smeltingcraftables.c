@@ -50,7 +50,7 @@ class SRP_ForgeIngotPlate_ColorBase extends ItemBase
 
   override int GetSmeltableYield()
   {
-    return (GetQuantity() / 2.2);
+    return 1;
   }
 
   string ConvertIntoIngotString()
@@ -119,7 +119,7 @@ class SRP_ForgeIngotRod_ColorBase extends ItemBase
   // 2 ingots = 1-2 rods
   override int GetSmeltableYield()
   {
-    return GetQuantity();
+    return 1;
   }
 
   string ConvertIntoIngotString()
