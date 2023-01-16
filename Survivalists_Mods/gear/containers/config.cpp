@@ -3119,10 +3119,10 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Glass Display Hook - Base";
-		descriptionShort="A hook meant for a display case.";
+		descriptionShort="A hook meant for a display case. Outside of a display case, this hook can only be stored when nothing is attached.";
 		model="Survivalists_Mods\gear\containers\srp_displaycase_hook.p3d";
 		weight=10000;
-		itemSize[]={10,15};
+		itemSize[]={1,2};
 		itemsCargoSize[]={0,0};
     clothingType="male";
     allowOwnedCargoManipulation="true";

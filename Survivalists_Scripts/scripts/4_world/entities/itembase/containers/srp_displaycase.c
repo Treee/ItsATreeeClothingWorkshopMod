@@ -187,12 +187,8 @@ class SRP_GlassDisplayCase_Hook extends Inventory_Base
 {
   override bool CanPutInCargo( EntityAI parent )
 	{
-    return GetInventory().AttachmentCount() == 0 && GetNumberOfItems() == 0;
+    return GetInventory().AttachmentCount() == 0;
 	}
-  override bool CanPutIntoHands(EntityAI parent)
-  {
-    return GetInventory().AttachmentCount() == 0 && GetNumberOfItems() == 0;
-  }
 };
 
 class SRP_GlassDisplayCase_Hook_Armband extends SRP_GlassDisplayCase_Hook
