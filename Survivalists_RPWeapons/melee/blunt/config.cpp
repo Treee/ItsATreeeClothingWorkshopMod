@@ -18,8 +18,6 @@ class CfgVehicles
   class BaseballBat;
   class Inventory_Base;
 
-  class SRP_Weapon_KitBase;
-
   class ttbaseballbat_ColorBase: Inventory_Base
 	{
 		scope=0;
@@ -130,22 +128,6 @@ class CfgVehicles
 	};
 
 //====================================================================================== HAMMERS
-  // class SRP_WeaponBluntWarHammer_Kit: SRP_Weapon_KitBase //new
-	// {
-	// 	scope=2;
-	// 	displayName="Weapon Kit - War Hammer";
-	// 	descriptionShort="A blunt weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-  //   attachments[]=
-	// 	{
-	// 		"SRP_MetalPlate1",
-  //     "SRP_MetalPlate2",
-  //     "SRP_MetalRod1",
-  //     "SRP_MetalRod2",
-  //     "Material_MetalWire",
-  //     "Material_Shelter_Rope"      
-	// 	};
-	// };
-
   class SRP_WarHammer_Basic_ColorBase: Inventory_Base
 	{
 		scope=0;
@@ -712,13 +694,6 @@ class CfgVehicles
   };
 
 //====================================================================================== MACE
-  // class SRP_WeaponBluntKit_Kit: SRP_Weapon_KitBase //new
-	// {
-	// 	scope=2;
-	// 	displayName="Weapon Kit - Blunt";
-	// 	descriptionShort="A Weapon Kit - Still needs a bit of work";
-	// };
-  
 	class Macerator: BaseballBat
 	{
 		scope=2;
@@ -740,40 +715,7 @@ class CfgVehicles
       "SRP_Melee10",
     };
 	};
-
-  class SRP_WeaponBluntMacerator_Kit: SRP_Weapon_KitBase //new
-	{
-		scope=2;
-		displayName="Weapon Kit - Macerator";
-		descriptionShort="A blunt weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalPlate2",
-      "SRP_MetalRod1",
-      "SRP_MetalRod2",
-      "Material_MetalWire",
-      "Material_Shelter_Rope"      
-		};
-	};
-
 //====================================================================================== STAFFS
-  // class SRP_WeaponStaff_Kit: SRP_Weapon_KitBase //new
-	// {
-	// 	scope=2;
-	// 	displayName="Weapon Kit - Staff";
-	// 	descriptionShort="A staff weapon kit - Finish with the appropriate tools. Do not put back into the forge.";
-  //   attachments[]=
-	// 	{
-	// 		"SRP_MetalPlate1",
-  //     "SRP_MetalPlate2",
-  //     "SRP_MetalRod1",
-  //     "SRP_MetalRod2",
-  //     "Material_MetalWire",
-  //     "Material_Shelter_Rope"      
-	// 	};
-	// };
-  
   class SRP_Staff_Wooden_ColorBase: Inventory_Base
 	{
 		scope=0;

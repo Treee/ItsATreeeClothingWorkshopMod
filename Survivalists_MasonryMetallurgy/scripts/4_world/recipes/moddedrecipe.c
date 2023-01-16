@@ -19,8 +19,6 @@ modded class PluginRecipesManager
     RegisterRecipe(new Craft_SRP_MetalCoins);
     RegisterRecipe(new Craft_SRP_ForgeIngotPlate_ColorBase);
     RegisterRecipe(new Craft_SRP_ForgeIngotRod_ColorBase);
-    // RegisterRecipe(new Craft_SRP_MiningPick);
-    // RegisterRecipe(new Craft_SRP_WoodAxe);
 
     RegisterRecipe(new Craft_SRP_CrushLargeStone_CrudeTool);
     RegisterRecipe(new Craft_SRP_CrushStoneChunk_CrudeTool);
