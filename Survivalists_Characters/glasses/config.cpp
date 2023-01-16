@@ -19,7 +19,37 @@ class CfgVehicles
 {
   class Clothing;
   class NVGoggles;
-  class AviatorGlasses;
+  // ========================== VANILLA
+  class SportGlasses_ColorBase: Clothing
+  {
+    inventorySlot[]+={      
+      "Extra"
+    };
+  };
+  class AviatorGlasses: Clothing
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class DesignerGlasses: Clothing
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class ThickFramesGlasses: Clothing
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class ThinFramesGlasses: Clothing
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class TacticalGoggles: Clothing
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class EyePatch_Improvised: Clothing
+  {
+    inventorySlot[]+={"Extra"};
+  };
   // ======================= Modded stuff
   class Eyepatch: Clothing
   {
