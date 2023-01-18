@@ -370,6 +370,7 @@ class CfgVehicles
 			"Material_Shelter_Fabric",
       "SRP_Construction_Fabric",
       "Smithing_Fabric",
+      "Tailoring_Fabric"
 		};
   };
 

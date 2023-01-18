@@ -609,8 +609,6 @@ class SRP_Container_Base extends DeployableContainer_Base
   }
 }
 
-class SRP_SewingTable extends SRP_Container_Base{};
-
 class SRP_Cardboardbox extends SRP_Container_Base{};
 
 class SRP_StonePile_Small extends SRP_Container_Base{};

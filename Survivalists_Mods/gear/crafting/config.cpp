@@ -19,7 +19,6 @@ class CfgVehicles
   class Container_Base;
   class Inventory_Base;
   class LongWoodenStick;
-  class WoodenStick;
   class FireplaceBase;
 
   class SRP_KitBase: Inventory_Base
@@ -115,9 +114,17 @@ class CfgVehicles
     inventorySlot[]+=
     {
       "SRP_Construction_MetalWire",
-      "Smithing_MetalWire"
+      "Smithing_MetalWire",
+      "Tailoring_MetalWire"
     };
-  };      
+  };    
+  class WoodenStick: Inventory_Base
+	{
+    inventorySlot[]+=
+    {
+      "Tailoring_Sticks"
+    };
+  };  
   class LongWoodenStick_Irradiated: LongWoodenStick
 	{
 		scope=2;
@@ -359,7 +366,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_SewingTable: Container_Base
+  class SRP_SewingTable: Inventory_Base
 	{
 		scope=2;
 		displayName="Tailor Machine";
@@ -375,13 +382,25 @@ class CfgVehicles
       "SRP_SewingThread3",
       "SRP_SewingThread4",
       "SRP_SewingThread5",
+      "TailoringPelt1",
+      "TailoringPelt2",
+      "TailoringPelt3",
+      "TailoringPelt4",
+      "TailoringPelt5",
+      "Tailoring_Leather",
+      "Tailoring_Sticks",
+      "Tailoring_Bones",
+      "Tailoring_Fabric",
+      "Tailoring_MetalWire",
+      "Tailoring_MetalPlate",
 		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
 		canBeDigged=0;
 		heavyItem=1;
 		weight=500;
-		itemSize[]={12,12};
+		itemSize[]={10,4};
+    itemsCargoSize[]={0,0};
 		itemBehaviour=0;
 		repairKitType=1;
 		physLayer="item_large";
@@ -392,30 +411,39 @@ class CfgVehicles
 		};
 		hiddenSelections[]=
 		{
-			"camoGround"
+			"zbytek"
 		};
-		class Cargo
-		{
-			itemsCargoSize[]={8,12};
-			openable=0;
-			allowOwnedCargoManipulation=1;
-		};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_sewingmachine_table_co.paa"};
 		class GUIInventoryAttachmentsProps
 		{
-			class Machine
+			class SewingMachine
 			{
-				name="Machine";
-				description="";
+				name="Sewing Machine";
+				description="A belt driven sewing machine.";
 				attachmentSlots[]=
 				{
 					"SRP_SewingMachine"
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
-			};
-      class Thread
+			};      
+      class AnimalPelts
 			{
-				name="Thread";
-				description="";
+				name="Animal Pelts";
+				description="Animal Pelts for sewing.";
+				attachmentSlots[]=
+				{
+					"TailoringPelt1",
+          "TailoringPelt2",
+          "TailoringPelt3",
+          "TailoringPelt4",
+          "TailoringPelt5",
+				};
+				icon="set:dayz_inventory image:animal_pelt";
+			};
+      class SewingThread
+			{
+				name="Sewing Thread";
+				description="Spools of thread for embroidering fabric.";
 				attachmentSlots[]=
 				{
 					"SRP_SewingThread1",
@@ -423,6 +451,21 @@ class CfgVehicles
           "SRP_SewingThread3",
           "SRP_SewingThread4",
           "SRP_SewingThread5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class Misc
+			{
+				name="Misc Ingredients";
+				description="Various ingredients that enhance fabric.";
+				attachmentSlots[]=
+				{
+					"Tailoring_Leather",
+          "Tailoring_Sticks",
+          "Tailoring_Bones",
+          "Tailoring_Fabric",
+          "Tailoring_MetalWire",
+          "Tailoring_MetalPlate",
 				};
 				icon="set:dayz_inventory image:cat_common_cargo";
 			};
@@ -499,6 +542,9 @@ class CfgVehicles
 			"SRP_SewingMachine"
 		};
 		heavyItem=1;
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=1;
 		weight=10000;
 		itemSize[]={4,4};
 		itemBehaviour=0;
@@ -511,10 +557,7 @@ class CfgVehicles
 		{
 			"zbytek"
 		};
-		hiddenSelectionsTextures[]=
-		{
-			"\Survivalists_Mods\gear\crafting\data\srp_sewingmachine_co.paa"
-		};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_sewingmachine_co.paa"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -583,7 +626,8 @@ class CfgVehicles
 		absorbency=0.2;
 		varQuantityInit=200;
 		varQuantityMin=0;
-		varQuantityMax=200;
+		varQuantityMax=1000;
+    varStackMax=200;
     canBeSplit=1;
     color="white";
     inventorySlot[]=
@@ -607,7 +651,6 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Sewing Thread - Black";
-		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
     color="black";
 		hiddenSelections[]=
 		{
@@ -622,7 +665,6 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Sewing Thread - Green";
-		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
     color="green";
 		hiddenSelections[]=
 		{
@@ -637,7 +679,6 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Sewing Thread - Light Blue";
-		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
     color="lightblue";
 		hiddenSelections[]=
 		{
@@ -652,7 +693,6 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Sewing Thread - Red";
-		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
     color="red";
 		hiddenSelections[]=
 		{
@@ -667,7 +707,6 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Sewing Thread - Blue";
-		descriptionShort="A thread... Used for you... YOU GUESSED IT. Sewing";
     color="blue";
 		hiddenSelections[]=
 		{
@@ -682,7 +721,6 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Sewing Thread - Gray";
-		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
     color="gray";
 		hiddenSelections[] =
 		{
@@ -697,7 +735,6 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Sewing Thread - Orange";
-		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
     color="orange";
 		hiddenSelections[] =
 		{
@@ -712,7 +749,6 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Sewing Thread - Pink";
-		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
     color="pink";
 		hiddenSelections[] =
 		{
@@ -727,7 +763,6 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Sewing Thread - Purple";
-		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
     color="purple";
 		hiddenSelections[] =
 		{
@@ -742,7 +777,6 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Sewing Thread - Yellow";
-		descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
     color="yellow";
 		hiddenSelections[] =
 		{

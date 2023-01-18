@@ -1,84 +1,62 @@
-class SRP_ActionMetalSmithCB : ActionContinuousBaseCB
-{
-	override void CreateActionComponent()
+class SRP_ActionMetalSmith extends ActionSRPVariantIdOption
+{	
+  void SRP_ActionMetalSmith()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime( 10 );
-	}
-};
-
-class SRP_ActionMetalSmith: ActionContinuousBase
-{
-	void SRP_ActionMetalSmith()
-	{
-		m_CallbackClass = SRP_ActionMetalSmithCB;
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_ASSEMBLE;
-		m_FullBody = true;
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
-		m_SpecialtyWeight = UASoftSkillsWeight.ROUGH_HIGH;
-    m_Text = "Craft";
-
-    if ( GetGame().IsClient() || !GetGame().IsMultiplayer() )
-		{
-			GetVariantManager().GetOnUpdateInvoker().Insert(OnUpdateActions);
-		}
+		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_CRAFTING;
+		m_FullBody = false;
 	}
-	
 	override void CreateConditionComponents()  
 	{
 		m_ConditionItem = new CCINonRuined;
-		m_ConditionTarget = new CCTNone;
-	}
-	
-	override bool CanBeUsedLeaning()
-	{
-		return false;
-	}
-
+    m_ConditionTarget = new CCTObject(UAMaxDistances.DEFAULT);
+  }
   override void OnActionInfoUpdate( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    SRP_Anvil_ColorBase anvil;    
-    if (Class.CastTo(anvil, target.GetObject()))
+    SRP_Anvil_ColorBase craftingWorkbench;    
+    if (Class.CastTo(craftingWorkbench, target.GetObject()))
     {
-      if (anvil.HasCraftableMatches())
+      if (craftingWorkbench.HasCraftableMatches())
       {
-			  m_Text = "Craft " + anvil.potentialCraftableItems.Get(m_VariantID).GetDisplayName();
+			  m_Text = "Craft " + craftingWorkbench.GetCraftableItemDisplayNameByIndex(m_VariantID);
       }
     }
 	}
-	
-	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
+  override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
     if (!target)
       return false;
-    SRP_Anvil_ColorBase anvil;    
-    if (Class.CastTo(anvil, target.GetObject()))
-    {       
-      return anvil.HasCraftableMatches();
+    SRP_Anvil_ColorBase craftingWorkbench;        
+    if (Class.CastTo(craftingWorkbench, target.GetObject()))
+    {      
+      // string.Format("Looking at the correct bench, has recipes? %1", craftingWorkbench.HasCraftableMatches());
+      return craftingWorkbench.HasCraftableMatches();
     }
 		return false;
 	}
-	
 	override void OnFinishProgressServer( ActionData action_data )
 	{
-    SRP_Anvil_ColorBase anvil;
-    if (Class.CastTo(anvil, action_data.m_Target.GetObject()))
+    SRP_Anvil_ColorBase craftingWorkbench;
+    if (Class.CastTo(craftingWorkbench, action_data.m_Target.GetObject()))
     {
-      anvil.ReduceAttachedQuantities(anvil.potentialCraftableItems.Get(m_VariantID));
-			anvil.DecreaseHealth( 10, false );
-      // Print("Creating " + anvil.potentialCraftableItems.Get(m_VariantID).GetItemClassName());
-      GetGame().CreateObjectEx(anvil.potentialCraftableItems.Get(m_VariantID).GetItemClassName(), anvil.GetMemoryPointPosition("sparks_position"), ECE_SETUP|ECE_NOSURFACEALIGN|ECE_KEEPHEIGHT);
+      int variantId = SRP_VariantIdActionData.Cast(action_data).m_SRPVariantId;
+      SRP_CraftableItem newItem = craftingWorkbench.GetCraftableItemByIndex(variantId);
+      craftingWorkbench.ReduceAttachedQuantities(newItem);
+			craftingWorkbench.DecreaseHealth( craftingWorkbench.GetCraftingDamage(), false );
+      // Print(string.Format("Creating %1 from inded %2",newItem.GetDisplayName(), variantId));
+      GetGame().CreateObjectEx(newItem.GetItemClassName(), craftingWorkbench.GetMemoryPointPosition("item_spawn_position"), ECE_SETUP|ECE_NOSURFACEALIGN|ECE_KEEPHEIGHT);
     }		
 	}
-
-  void OnUpdateActions( Object item, Object target, int component_index )
+  override void OnUpdateActions( Object item, Object target, int component_index )
 	{
-		SRP_Anvil_ColorBase anvil;
-		if (Class.CastTo(anvil, target))
+    SRP_Anvil_ColorBase craftingWorkbench;
+		if (Class.CastTo(craftingWorkbench, target))
 		{
-      if (anvil.HasCraftableMatches())
+      if (craftingWorkbench.HasCraftableMatches())
       {
         // Print("me actions " + target_player.GetPlayerFacePaintCount());
-        GetVariantManager().SetActionVariantCount(anvil.potentialCraftableItems.Count());
+        GetVariantManager().SetActionVariantCount(craftingWorkbench.GetPotentialCraftableItemCount());
       }
 		}
 		else
@@ -86,4 +64,4 @@ class SRP_ActionMetalSmith: ActionContinuousBase
 			GetVariantManager().Clear();
 		}
 	}
-}
+};

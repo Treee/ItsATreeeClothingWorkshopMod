@@ -154,7 +154,8 @@ class CfgVehicles
 	{
 		inventorySlot[]+=
 		{
-			"Smithing_Leather"
+			"Smithing_Leather",
+      "Tailoring_Leather"
 		};
   };
   // windstride override
@@ -184,6 +185,12 @@ class CfgVehicles
   // --- taxidermy
   class Pelt_Base: Inventory_Base
   {
+    canBeSplit=1;
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varQuantityDestroyOnMin=1;
+		varStackMax=1;
     inventorySlot[]+=
     {
       "AnimalPelt1",
@@ -196,7 +203,72 @@ class CfgVehicles
       "AnimalPelt8",
       "AnimalPelt9",
       "AnimalPelt10",
+      "TailoringPelt1",
+      "TailoringPelt2",
+      "TailoringPelt3",
+      "TailoringPelt4",
+      "TailoringPelt5",
     };
+  };
+  class WildboarPelt: Pelt_Base
+  {
+    color="boar";
+  };
+  class RabbitPelt: Pelt_Base
+  {
+    color="rabbit";
+  };
+  class CowPelt: Pelt_Base
+  {
+    color="cow";
+  };
+  class PigPelt: Pelt_Base
+  {
+    color="pig";
+  };
+  class DeerPelt: Pelt_Base
+  {
+    color="deer";
+  };
+  class GoatPelt: Pelt_Base
+  {
+    color="goat";
+  };
+  class BearPelt: Pelt_Base
+  {
+    color="bear";
+  };
+  class WolfPelt: Pelt_Base
+  {
+    color="wolf";
+  };
+  class SheepPelt: Pelt_Base
+  {
+    color="sheep";
+  };
+  class MouflonPelt: Pelt_Base
+  {
+    color="mouflon";
+  };
+  class FoxPelt: Pelt_Base
+  {
+    color="fox";
+  };
+  class DUB_Biowolfpelt: Pelt_Base
+  {
+    color="biowolf";
+  };
+  class DUB_Moosepelt: Pelt_Base
+  {
+    color="moose";
+  };
+  class DUB_Humanpelt: Pelt_Base
+  {
+    color="human";
+  };
+  class DUB_AlphaPelt: Pelt_Base
+  {
+    color="alpha";
   };
 
   // drug workbench
@@ -214,6 +286,7 @@ class CfgVehicles
     inventorySlot[]+=
 		{
 			"SRP_Bones",
+      "Tailoring_Bones",
       "AnimalPelt1",
       "AnimalPelt2",
       "AnimalPelt3",
@@ -259,7 +332,8 @@ class CfgVehicles
     varQuantityMax=800;
     inventorySlot[]+=
 		{
-      "SRP_Construction_MetalPlate"
+      "SRP_Construction_MetalPlate",
+      "Tailoring_MetalPlate"
 		};
   };
   class Nail: Inventory_Base

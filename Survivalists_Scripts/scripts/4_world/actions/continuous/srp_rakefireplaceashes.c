@@ -35,6 +35,11 @@ class ActionSRPRakeFireplaceAshes: ActionContinuousBase
       coke.SetQuantity(Math.RandomIntInclusive(1,3));
     }
     MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_MainItem, Math.RandomIntInclusive(4,10));
-    MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_Target.GetObject(), 5);
+    ItemBase rake;
+    Class.CastTo(rake, action_data.m_Target.GetObject());
+    if (rake)
+    {
+      MiscGameplayFunctions.DealAbsoluteDmg(rake, 5);
+    }
 	}
 };

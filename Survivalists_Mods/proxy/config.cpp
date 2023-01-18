@@ -11,6 +11,113 @@ class CfgPatches
 
 class CfgSlots
 {
+  //================== Tailoring
+ 
+  class Slot_SRP_SewingMachine
+	{
+		name="SRP_SewingMachine";
+		displayName="Sewing Machine";
+		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
+		selection="SewingMachine";
+	};
+  class Slot_SRP_SewingThread1
+	{
+		name="SRP_SewingThread1";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:rope";
+	};
+  class Slot_SRP_SewingThread2
+	{
+		name="SRP_SewingThread2";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:rope";
+	};
+  class Slot_SRP_SewingThread3
+	{
+		name="SRP_SewingThread3";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:rope";
+	};
+  class Slot_SRP_SewingThread4
+	{
+		name="SRP_SewingThread4";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:rope";
+	};
+  class Slot_SRP_SewingThread5
+	{
+		name="SRP_SewingThread5";
+		displayName="Sewing Thread";
+		ghostIcon="set:dayz_inventory image:rope";
+	};
+  class Slot_TailoringPelt1
+	{
+		name="TailoringPelt1";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:animal_pelt";    
+	};
+  class Slot_TailoringPelt2
+	{
+		name="TailoringPelt2";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:animal_pelt";    
+	};
+  class Slot_TailoringPelt3
+	{
+		name="TailoringPelt3";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:animal_pelt";    
+	};
+  class Slot_TailoringPelt4
+	{
+		name="TailoringPelt4";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:animal_pelt";    
+	};
+  class Slot_TailoringPelt5
+	{
+		name="TailoringPelt5";
+		displayName="Animal Pelt";
+		ghostIcon="set:dayz_inventory image:animal_pelt";    
+	};
+
+  class Slot_Tailoring_Leather
+	{
+		name="Tailoring_Leather";
+		displayName="Leather";
+		ghostIcon="set:dayz_inventory image:animal_pelt";
+	};
+  class Slot_Tailoring_Sticks
+	{
+		name="Tailoring_Sticks";
+		displayName="Wooden Sticks";
+		ghostIcon="set:dayz_inventory image:woodenstick";
+	};
+  class Slot_Tailoring_Bones
+	{
+		name="Tailoring_Bones";
+		displayName="Bones";
+		ghostIcon="set:dayz_inventory image:tf_stones";
+	};
+  class Slot_Tailoring_Fabric
+	{
+		name="Tailoring_Fabric";
+		displayName="Fabric";
+		ghostIcon="set:dayz_inventory image:tarp";
+	};
+  class Slot_Tailoring_MetalWire
+	{
+		name="Tailoring_MetalWire";
+		displayName="Metal Wire";
+		ghostIcon="set:dayz_inventory image:metalwire";
+	};
+  class Slot_Tailoring_MetalPlate
+	{
+		name="Tailoring_MetalPlate";
+		displayName="Metal Plate";
+		ghostIcon="set:dayz_inventory image:plates";
+	};
+    
   //================== MetalSmithing
   class Slot_SRP_PreciousStone1
   {
@@ -47,7 +154,6 @@ class CfgSlots
 		name="Smithing_WoodenLogs";
 		displayName="Wooden Logs";
 		ghostIcon="set:dayz_inventory image:woodenlog";
-    stackMax=5;
 	};
   class Slot_Smithing_Leather
 	{
@@ -60,21 +166,18 @@ class CfgSlots
 		name="Smithing_MetalWire";
 		displayName="Metal Wire";
 		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=5; // max stack wire is 1
 	};
   class Slot_Smithing_Fabric
 	{
 		name="Smithing_Fabric";
 		displayName="Fabric";
 		ghostIcon="set:dayz_inventory image:tarp";
-    stackMax=20; // max stack fabric is 4
 	};
   class Slot_Smithing_Rope
 	{
 		name="Smithing_Rope";
 		displayName="Rope";
 		ghostIcon="set:dayz_inventory image:rope";
-    stackMax=10; // max stack rope is 1
 	};
   class Slot_SRP_MetalPlate1
   {
@@ -1383,51 +1486,13 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
   };
 
-  class Slot_SRP_SewingMachine
-	{
-		name="SRP_SewingMachine";
-		displayName="Sewing Machine";
-		ghostIcon="set:dayz_inventory image:cat_vehicle_engine";
-		selection="SewingMachine";
-	};
-
   class Slot_SRP_MagnetLetter
 	{
 		name="SRP_MagnetLetter";
 		displayName="Letter";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
-  class Slot_SRP_SewingThread1
-	{
-		name="SRP_SewingThread1";
-		displayName="Sewing Thread";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_SewingThread2
-	{
-		name="SRP_SewingThread2";
-		displayName="Sewing Thread";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_SewingThread3
-	{
-		name="SRP_SewingThread3";
-		displayName="Sewing Thread";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_SewingThread4
-	{
-		name="SRP_SewingThread4";
-		displayName="Sewing Thread";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  class Slot_SRP_SewingThread5
-	{
-		name="SRP_SewingThread5";
-		displayName="Sewing Thread";
-		ghostIcon="set:dayz_inventory image:missing";
-	};
-  
+
   class Slot_SRP_Comtacs
 	{
 		name="SRP_Comtacs";

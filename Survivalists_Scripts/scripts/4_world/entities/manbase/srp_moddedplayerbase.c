@@ -7,7 +7,6 @@ modded class PlayerBase
 
   protected bool m_IsInBioZone = false;
   protected bool m_IsNearComfortHeatSource = false;
-  protected bool m_TirednessSprintOverride = false;
   protected int m_DisableSprint = 0;
   protected bool m_HeavyItemInHandsSprintDisable = false;
   protected bool m_HeavyItemEquippedSprintDisable = false;
@@ -21,7 +20,6 @@ modded class PlayerBase
   {
     super.Init();
     RegisterNetSyncVariableFloat("m_TotalTiredness", 0, 65536);
-    RegisterNetSyncVariableBool("m_TirednessSprintOverride");
   }
 
   override void OnVariablesSynchronized()
@@ -106,22 +104,11 @@ modded class PlayerBase
 
   override bool CanSprint()
   {    
-    if (GetTotalTiredness() > 23000 && !IsTirednessSprintOverriden()) // roughly 75% tiredness
-    {
-      return false;
-    }
-
     if (IsSprintDisabledByHeavyItemInHands())
-    {
-      // Print("heavy item in hands");
       return false;
-    }
 
     if (IsSprintDisabledByHeavyItemEquipped())
-    {
-      // Print("heavy item equipped");
       return false;
-    }
 
     return super.CanSprint();
   }
@@ -325,16 +312,6 @@ modded class PlayerBase
   void SetTotalTiredness(float tiredness)
   {
     m_TotalTiredness = tiredness;
-  }
-
-  bool IsTirednessSprintOverriden()
-  {
-    return m_TirednessSprintOverride;
-  }
-
-  void SetTirednessSprintOverride(bool overrideSprint)
-  {
-    m_TirednessSprintOverride = overrideSprint;
   }
 
   void SetIsNearComfortHeatSource(bool isNearComfort)
