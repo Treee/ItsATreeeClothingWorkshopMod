@@ -25,6 +25,7 @@ class CfgVehicles
   class Paper;
   class Paddle;
   class PortableGasLamp;
+  class ShelterBase;
 
   class SRP_KitBase;
 
@@ -372,6 +373,19 @@ class CfgVehicles
       "Smithing_Fabric",
       "Tailoring_Fabric"
 		};
+  };
+
+  class ShelterFabric: ShelterBase
+  {
+		itemsCargoSize[]={8,2};
+  };
+  class ShelterLeather: ShelterBase
+  {
+		itemsCargoSize[]={10,3};
+  };
+  class ShelterStick: ShelterBase
+  {
+		itemsCargoSize[]={5,2};
   };
 
 // ------------------------- EVENT STUFF
