@@ -8,23 +8,23 @@ class SRP_ShippingContainerBase extends House
     // Print("something happened");
     if (!HasBeenChecked())
     {
-      int chanceRoll = Math.RandomIntInclusive(1,20);
-      // 1-16 is nothing
-      if (chanceRoll > 0 && chanceRoll <= 16) //1-16
+      int chanceRoll = Math.RandomIntInclusive(1,100);
+      // 1-94 is nothing
+      if (chanceRoll > 0 && chanceRoll <= 94) //1-94
       {
         // do nothing
       }
-      else if (chanceRoll > 16 && chanceRoll < 19) //17,18
+      else if (chanceRoll > 94 && chanceRoll < 99) //94,99
       {
         SpawnZombies(2);
         SetHasRandomEventPerformed(true);
       }
-      else if (chanceRoll == 19) //19
+      else if (chanceRoll == 99) //99
       {
         SpawnIEDExplosion();
         SetHasRandomEventPerformed(true);
       }
-      else if (chanceRoll == 20) // 20
+      else if (chanceRoll == 100) // 100
       {
         SpawnZombies(Math.RandomIntInclusive(2,4));
         SetHasRandomEventPerformed(true);
