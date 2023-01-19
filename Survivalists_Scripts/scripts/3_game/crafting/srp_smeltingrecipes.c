@@ -88,6 +88,9 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterToolSmallTongsRecipe());
     craftableItems.Insert(RegisterToolMediumTongsRecipe());
     craftableItems.Insert(RegisterToolLargeTongsRecipe());
+    // TOOLS
+    craftableItems.Insert(RegisterMaskShatteredRecipe());
+
     // Print(string.Format("======================================= SMELTING RECIPES REGISTERED"));
     // PrintRecipes();
   }
@@ -1377,6 +1380,23 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
+//===========================MASKS
+  SRP_CraftableItem RegisterMaskShatteredRecipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_ShatteredMask", "Shattered Mask");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.IRON, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.IRON, 3));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.ZINC, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate4", SRP_COLOR.IRON, 3));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate5", SRP_COLOR.IRON, 2));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalRod1", SRP_COLOR.IRON, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Leather", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Fabric", SRP_COLOR.NONE, 2));
+    return craftableItem;
+  }  
 //===========================END
 
 };

@@ -224,54 +224,17 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_WhiteFlag);
 
     //==========================================================Clothing
-
-      RegisterRecipe(new Craft_SRPClothing_BackpackKit);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_LeatherBackpack_Default);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_SurvivalBackpack_Default);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_SlingBackpack_Default);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_Small_Military_Pack_Tan);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_Big_Military_Pack_Tan);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_Rifle_Bag_Green);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_Rolltop_Bag);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_MessengerBag_Leather);
-      RegisterRecipe(new Craft_SRP_BackpackFromKit_DUB_Leatherbag);
+      // BACKPACKS
       RegisterRecipe(new Craft_DUB_ShieldBackpack);
       RegisterRecipe(new Craft_DUB_BagFlag);
-
-      // Belts    
-      RegisterRecipe(new Craft_SRPClothing_BeltKit);
-      RegisterRecipe(new Craft_SRP_BeltFromKit_Base_LegHolster);
-      RegisterRecipe(new Craft_SRP_BeltFromKit_Base_PoliceBelt);
-      RegisterRecipe(new Craft_SRP_BeltFromKit_Base_TacticalBelt);
-      RegisterRecipe(new Craft_SRP_BeltFromKit_Base_ElbowAndKneePads);
-      RegisterRecipe(new Craft_SRP_BeltFromKit_Base_MilitaryBelt);
-      RegisterRecipe(new Craft_SRP_BeltFromKit_Base_HipPouch);
-      RegisterRecipe(new Craft_SRP_BeltFromKit_Base_HipHolster);
-      
-      // Heads
-      RegisterRecipe(new Craft_SRP_TinfoilHat);
-      RegisterRecipe(new Craft_SRPClothing_HeadgearKit);
-      RegisterRecipe(new Craft_SRP_HeadgearFromKit_BeanieHat_Turkey);
-      RegisterRecipe(new Craft_SRP_HeadgearFromKit_BaseballCap_MilitaryPatrolTan);
-      RegisterRecipe(new Craft_SRP_HeadgearFromKit_BaseballCap_Pakol);
-      RegisterRecipe(new Craft_SRP_HeadgearFromKit_FaceMaskSkull_Tan);
-      RegisterRecipe(new Craft_SRP_HeadgearFromKit_MouthCover_Tan);
-      RegisterRecipe(new Craft_SRP_HeadgearFromKit_Shroud_Tan);
-      RegisterRecipe(new Craft_SRP_HeadgearFromKit_Cowboy_Hat);
-      RegisterRecipe(new Craft_SRP_HeadgearFromKit_Burlap_Mask);
-      RegisterRecipe(new Craft_SRP_LeatherCowl);
-      
+      // HEADS
+      RegisterRecipe(new Craft_SRP_TinfoilHat);      
+      RegisterRecipe(new Craft_SRP_GhillieWrapTan);
+      RegisterRecipe(new Craft_DUB_GhillieHoodTan);
+      RegisterRecipe(new Craft_DUB_GhillieHoodWoodland);
+      RegisterRecipe(new Craft_DUB_GhillieHoodMossy);
+      RegisterRecipe(new Craft_DUB_GhillieHoodWinter);
       // Mask
-      RegisterRecipe(new SRP_Craft_MakeshiftMetalTuskMask);
-      RegisterRecipe(new SRP_Craft_ArmoredMetalTuskMask);
-
-      RegisterRecipe(new SRP_Craft_RecolorScrapMaskBlue);
-      RegisterRecipe(new SRP_Craft_RecolorScrapMaskOrange);
-      RegisterRecipe(new SRP_Craft_RecolorScrapMaskRust);
-      RegisterRecipe(new SRP_Craft_RecolorScrapMaskV2Blue);
-      RegisterRecipe(new SRP_Craft_RecolorScrapMaskV2Orange);
-      RegisterRecipe(new SRP_Craft_RecolorScrapMaskV2Rust);
-      RegisterRecipe(new SRP_Craft_SRP_ShatteredMask);
       RegisterRecipe(new SRP_Craft_SRP_DUBDismaskFull);
       RegisterRecipe(new Craft_SRP_DrawnEyepatch);
       RegisterRecipe(new Craft_SRP_Eyepatch_Basic);
@@ -280,94 +243,21 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_Eyepatch_RaggedBrown);
 
       // Jackets / TOPS
-      RegisterRecipe(new Craft_SRPClothing_TopKit);    
-      RegisterRecipe(new Craft_SRPClothing_TopKit_NurseDress);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_Sweater);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_Shirt);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_TShirt);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_Hoodie);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_TacticalShirt);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_HikingJacket);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_ManSuitJacket);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_M65Jacket);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_WomanSuitJacket);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_GorkaJacket);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_RidersJacket);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_WoolCoat);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_TracksuitJacket);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_FirefighterJacket);
-      RegisterRecipe(new Craft_SRPClothing_TopKit_Minidress);
-
+		  RegisterRecipe(new Craft_SRP_LeatherArmband);
       RegisterRecipe(new Craft_SRPClothing_TopKit_InsulatedGhillie_Brown);
       RegisterRecipe(new Craft_SRPClothing_TopKit_InsulatedGhillie_White);
-		  RegisterRecipe(new Craft_SRP_LeatherArmband);
-
-      // PANTS
-      RegisterRecipe(new Craft_SRPClothing_PantsKit);
-
-      RegisterRecipe(new Craft_SRP_PantsFromKit_Jeans);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_CargoPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_HunterPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_CanvasPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_CanvasPantsMidi);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_TrackSuitPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_GorkaPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_FireFighterPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_USMCPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_SlacksPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_ShortJeans);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_BreechesPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_SkirtPants);
-      RegisterRecipe(new Craft_SRP_PantsFromKit_JumpsuitPants);
 
       // Vests
-      RegisterRecipe(new Craft_SRPClothing_VestKit);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_Bandoiler);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_Bandoiler_Alchemist);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_ShoulderSling);
-
-      RegisterRecipe(new Craft_SRPClothing_VestPouchesKit);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_MapPouch);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_PistolMagPouch);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_MedicalPouch);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_TacticalPouch);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_MediumPouch);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_MagazinePouch);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_MagazineDumpPouch);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_UtilityPouch);
-      RegisterRecipe(new Craft_SRPClothing_VestKit_HeavyPouch);
-
-      // Gloves
-      RegisterRecipe(new Craft_SRPClothing_GlovesKit);
-      RegisterRecipe(new Craft_SRP_GlovesFromKit_WorkingGloves);
-      RegisterRecipe(new Craft_SRP_GlovesFromKit_TacticalGloves);
-      RegisterRecipe(new Craft_SRP_GlovesFromKit_CombatGloves);
-      RegisterRecipe(new Craft_SRP_GlovesFromKit_BoxingGloves);
-
-      // Masks
-      RegisterRecipe(new Craft_SRPClothing_MasksKit);
-      RegisterRecipe(new Craft_SRP_MasksFromKit_Balaclava);
-      RegisterRecipe(new Craft_SRP_MasksFromKit_Balaclava3H);
-
-      RegisterRecipe(new Craft_SRP_GhillieWrapTan);
-      RegisterRecipe(new Craft_DUB_GhillieHoodTan);
-      RegisterRecipe(new Craft_DUB_GhillieHoodWoodland);
-      RegisterRecipe(new Craft_DUB_GhillieHoodMossy);
-      RegisterRecipe(new Craft_DUB_GhillieHoodWinter);
-
-      // RegisterRecipe(new Craft_SRP_AccessoryRing_StarterKit);
-
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Ruby);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Stone);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Skull);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Turquoise);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Rune);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_SnakeEye);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Azurite);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Wedding);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Earthen);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AccessoryRing_Celtic);
-
+      RegisterRecipe(new Craft_SRP_VestPouch_MapPouch);
+      RegisterRecipe(new Craft_SRP_VestPouch_PistolMagPouch);
+      RegisterRecipe(new Craft_SRP_VestPouch_MedicalPouch);
+      RegisterRecipe(new Craft_SRP_VestPouch_TacticalPouch);
+      RegisterRecipe(new Craft_SRP_VestPouch_MediumPouch);
+      RegisterRecipe(new Craft_SRP_VestPouch_MagazinePouch);
+      RegisterRecipe(new Craft_SRP_VestPouch_MagazineDumpPouch);
+      RegisterRecipe(new Craft_SRP_VestPouch_UtilityPouch);
+      RegisterRecipe(new Craft_SRP_VestPouch_HeavyPouch);
+      // Patches
       RegisterRecipe(new Craft_SRP_PatchFlag_StarterKit);
       RegisterRecipe(new Craft_SRP_PatchLogo_StarterKit);
       RegisterRecipe(new Craft_SRP_Armband_StarterKit);
@@ -826,76 +716,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_HackingKit_Purple);
 
     //==========================================================Weapons
-      // RegisterRecipe(new SRP_Craft_ThrowingKnivesBasic);
-
-      // RegisterRecipe(new Craft_SRP_WeaponBladeKit);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeKit1);
-      // RegisterRecipe(new Craft_SRP_WeaponBluntKit_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBluntKit_Kit1);
-      // RegisterRecipe(new Craft_SRP_WeaponBluntWarHammerKit_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponStaffKit_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponSpearKit_Kit);
       RegisterRecipe(new Craft_SRP_WeaponPipeAxe_Kit);
-      RegisterRecipe(new Craft_SRP_WeaponPipeAxe);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeKarambitKnife_Kit);
-      // RegisterRecipe(new Craft_SRP_KarambitKnife);
-      // RegisterRecipe(new Craft_SRP_KarambitKnife_Red);
-      // RegisterRecipe(new Craft_SRP_KarambitKnife_Blue);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeSnakeDagger_Kit);
-      // RegisterRecipe(new Craft_SRP_SnakeDagger);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeKnifeOld_Kit);
-      // RegisterRecipe(new Craft_SRP_KnifeOld);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeCelticAxe_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBluntMacerator_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeBerserkSword_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeAerondightSword_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeAndurilSword_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeGladiusSword_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeCrystalMace_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeKatana_Kit);
-      // RegisterRecipe(new Craft_SRP_WeaponBladeWarCleaver_Kit);  
-      // RegisterRecipe(new Craft_SRP_WeaponBluntFireygreatsowrd_Kit);  
-      // RegisterRecipe(new Craft_SRP_WeaponBladeGreatRuneSword_Kit);  
-
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_GreatRuneSword);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_GreatRuneSword_Black);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_GreatRuneSword_Gold);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_GreatRuneSword_Silver);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_GreatRuneSword_Red);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_GreatRuneSword_Blue);
-
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_BerserkSword);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AerondightSword);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_AndurilSword);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_KatanaSlim);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarCleaver);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_ttcelticaxe);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_Macerator);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_CrystalMace);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_FireyGreatsword);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_GladiusSword);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_GladiusSwordSheath);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_OrnamentalGladiusSword);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_OrnamentalGladiusSwordSheath);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerBasic);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerBrutal);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerEngraved);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerHeavy);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerMallet);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerSimple);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerLong);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerPike);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerProng);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarhammerSkullCrusher);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarspearPike);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarspearPikeHook);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarstaffWooden);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarstaffSkull);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarstaffSun);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarstaffCopper);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarstaffSpear);
-      // RegisterRecipe(new Craft_SRP_SmeltingWeapon_WarstaffMoon);
-    
+      RegisterRecipe(new Craft_SRP_WeaponPipeAxe);    
     //==========================================================Liquids
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Pelts);
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Flesh);

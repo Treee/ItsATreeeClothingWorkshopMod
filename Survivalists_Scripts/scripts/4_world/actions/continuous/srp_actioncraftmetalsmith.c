@@ -4,7 +4,7 @@ class SRP_ActionMetalSmith extends ActionSRPVariantIdOption
 	{
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
 		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_CRAFTING;
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_ASSEMBLE;
 		m_FullBody = false;
 	}
 	override void CreateConditionComponents()  
