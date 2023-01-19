@@ -87,7 +87,7 @@ class CfgVehicles
 			};
 		};
 	};
-  //========================================== VANILLA OVERRIDE
+//========================================== VANILLA OVERRIDE
   class Rope: Inventory_Base
 	{
     itemSize[]={1,2};
@@ -153,8 +153,59 @@ class CfgVehicles
 			"Survivalists_Mods\gear\crafting\data\bp_wooden_stick_irradiated_co.paa"
 		};
   };
-  //=-------------------------------------- CUSTOM STUFF
-
+//============================================CUSTOM STUFF
+  class SRP_ShootingTargets_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Shooting Targets Kit";
+		descriptionShort="A placeable shooting target set! Multiple targets.";
+	};
+  class SRP_ShootingTargets: Container_Base
+	{
+		scope=2;
+		displayName="Shooting Targets";
+		descriptionShort="Multiple targets for shooting at.";
+		model="Survivalists_Mods\gear\crafting\SRP_ShootingTargets.p3d";
+		overrideDrawArea="3.0";
+		forceFarBubble="true";
+		carveNavmesh=1;
+		weight=3000;
+		itemSize[]={15,10};
+		physLayer="item_large";
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000000;
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+			};
+		};
+	};
+//==========================================AMMO CRAFTING
 	class SRP_AdvancedWorkbench: Container_Base
 	{
 		scope=2;
@@ -264,7 +315,6 @@ class CfgVehicles
 			};
 		};
 	};
-
 	class SRP_AmmoPress: Inventory_Base
 	{
 		scope=2;
@@ -315,7 +365,6 @@ class CfgVehicles
 			};
 		};
 	};
-
 	class SRP_CasePrep: Inventory_Base
 	{
 		scope=2;
@@ -365,7 +414,7 @@ class CfgVehicles
 			};
 		};
 	};
-
+//==========================================TAILORING
   class SRP_SewingTable: Inventory_Base
 	{
 		scope=2;
@@ -613,7 +662,6 @@ class CfgVehicles
 			};
 		};
 	};
-	
 	class SRP_SewingThread: Inventory_Base
 	{
 		scope=2;
@@ -787,68 +835,13 @@ class CfgVehicles
 			"\Survivalists_Mods\gear\crafting\data\srp_sewingthread_yellow_co.paa"
 		};
 	}; 
-
-  class SRP_ShootingTargets_Kit: SRP_KitBase  // BP_ShootingTargetO_kit
-	{
-		scope=2;
-		displayName="Shooting Targets Kit";
-		descriptionShort="A placeable shooting target set! Multiple targets.";
-	};
-
-  class SRP_ShootingTargets: Container_Base // BP_ShootingTargetO
-	{
-		scope=2;
-		displayName="Shooting Targets";
-		descriptionShort="Multiple targets for shooting at.";
-		model="Survivalists_Mods\gear\crafting\SRP_ShootingTargets.p3d";
-		overrideDrawArea="3.0";
-		forceFarBubble="true";
-		carveNavmesh=1;
-		weight=3000;
-		itemSize[]={15,10};
-		physLayer="item_large";
-		rotationFlags=2;
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=1000000000;
-				};
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class movement
-				{
-					soundSet="seachest_movement_SoundSet";
-					id=1;
-				};
-				class pickUpItem_Light
-				{
-					soundSet="pickUpSeaChest_SoundSet";
-					id=796;
-				};
-				class pickUpItem
-				{
-					soundSet="pickUpSeaChest_SoundSet";
-					id=797;
-				};
-			};
-		};
-	};
-
-  //------------- Machining
+//==========================================MACHINING
   class SRP_LatheWorkbench_Kit: SRP_KitBase 
 	{
 		scope=2;
 		displayName="Lathe Workbench Kit";
 		descriptionShort="A lathe workbench kit";
 	};
-
   class SRP_LatheWorkbench: Container_Base
 	{
 		scope=2;
@@ -930,7 +923,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_LatheBelt: Inventory_Base
 	{
 		scope=2;
@@ -980,7 +972,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_LatheTable: Inventory_Base
 	{
 		scope=2;
@@ -1030,7 +1021,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_LatheGearDrive: Inventory_Base
 	{
 		scope=2;
@@ -1080,7 +1070,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_LatheClamp: Inventory_Base
 	{
 		scope=2;
@@ -1130,15 +1119,13 @@ class CfgVehicles
 			};
 		};
 	};
-
-  //===================== Wood and General Crafting
+//==========================================WOOD WORKING
   class SRP_WornWorkbench_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Worn Workbench Kit";
 		descriptionShort="A worn workbench kit";
 	};
-
   class SRP_WornWorkbench: Container_Base
 	{
 		scope=2;
@@ -1269,7 +1256,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_WorkbenchDrill: Inventory_Base
 	{
 		scope=2;
@@ -1319,7 +1305,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_WorkbenchClamp: Inventory_Base
 	{
 		scope=2;
@@ -1369,14 +1354,12 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_WornWorkbench_Metal_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Worn Metal Workbench Kit";
 		descriptionShort="A worn metal workbench kit";
 	};
-
   class SRP_WornWorkbench_Metal: Container_Base
 	{
 		scope=2;
@@ -1507,9 +1490,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-
-  //==================================== BREWING
+//==========================================BREWING
   class SRP_BrewingWorkbench_ColorBase: FireplaceBase 
 	{
 		displayName="Brewing Still";
@@ -1603,7 +1584,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_BrewingWorkbench_Alchemy_Kit: SRP_KitBase 
 	{
 		scope=2;
@@ -1810,7 +1790,7 @@ class CfgVehicles
 		};
 	};
 
-  //======================================= SMITHING
+//==========================================SMITHING
   class SRP_Grindstone_ColorBase: Inventory_Base
 	{
 		scope=0;
@@ -1878,7 +1858,6 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_grindstone_hobbit_co.paa"};
     color="hobbit";
 	};
-
   class SRP_Anvil_ColorBase: Inventory_Base
 	{
 		scope=0;
@@ -2011,6 +1990,13 @@ class CfgVehicles
 			};
 		};
 	};		
+  class SRP_Anvil_Basic_Kit: SRP_KitBase 
+	{
+		scope=2;
+		displayName="Smithing Anvil - Kit";
+		descriptionShort="A kit for placing an anvil";
+    projectionTypename="SRP_Anvil_Basic";
+	};
   class SRP_Anvil_Basic: SRP_Anvil_ColorBase
   {
     scope=2;

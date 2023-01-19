@@ -32,4 +32,6 @@ class SRP_Anvil_ColorBase extends SRP_CraftingBench_Base
     return 10;
   }
 };
+
+class SRP_Anvil_Basic_Kit extends SRP_KitBase{};
 class SRP_Anvil_Basic extends SRP_Anvil_ColorBase{};
