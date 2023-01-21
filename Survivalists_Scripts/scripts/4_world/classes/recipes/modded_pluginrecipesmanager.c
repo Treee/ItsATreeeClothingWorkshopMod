@@ -137,6 +137,18 @@ modded class PluginRecipesManager
       UnregisterRecipe("CraftBearPeltGhillieWhite");
       UnregisterRecipe("DUB_Barbwire_R");
 
+    //==========================================================DECONSTRUCTION
+      RegisterRecipe(new Deconstruct_PlacedObjectKit);
+      RegisterRecipe(new Deconstruct_PlacedObjectKit_Advanced);
+
+      RegisterRecipe(new Deconstruct_RockPile);
+      RegisterRecipe(new Deconstruct_PlankPile);
+      RegisterRecipe(new Deconstruct_LogPile);
+
+      RegisterRecipe(new SawWoodenLog_Irradiated);
+      RegisterRecipe(new SplitLongWoodenStick_Irradiated);
+      RegisterRecipe(new SplitFirewood_Irradiated);
+
     //==========================================================Camping
       RegisterRecipe(new Craft_SRP_ChessBoard_Kit);
       RegisterRecipe(new Craft_SRP_ChessBoard);
@@ -626,6 +638,12 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_Ciprolet);
       RegisterRecipe(new Craft_SRP_Toradol);
       RegisterRecipe(new Craft_SRP_MagnesiumSulfate);
+
+      RegisterRecipe(new Craft_SRP_Beer_DoubleTap);
+      RegisterRecipe(new Craft_SRP_Beer_Electric);
+      RegisterRecipe(new Craft_SRP_Beer_Juggernaut);
+      RegisterRecipe(new Craft_SRP_Beer_Reviver);
+      RegisterRecipe(new Craft_SRP_Beer_Speedy);
 
       RegisterRecipe(new Craft_SRP_BandageDressing_Healing);
       RegisterRecipe(new Craft_SRP_BandageDressing_Shock);
