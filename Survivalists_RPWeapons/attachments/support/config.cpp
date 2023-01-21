@@ -1522,6 +1522,98 @@ class CfgVehicles
 			};
 		};
   };
+  class ESP_SA80_RIS_HndGrd_Colorbase: M4_PlasticHndgrd
+	{
+		scope=0;
+		displayName="SA80A RIS Hand Guard";
+		descriptionShort="The SA80A RIS Handguard Is a simple RIS handguard designed to fit on the SA80A rifle.";
+		model="Survivalists_RPWeapons\attachments\Support\ESP_SA80A_RIS_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		hasRailFunctionality=1;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"SA80HndGrd"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ESP_SA80a\data\ESP_SA80a_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\ESP_SA80a\data\ESP_SA80a.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\ESP_SA80a\data\ESP_SA80a.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\ESP_SA80a\data\ESP_SA80a.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\ESP_SA80a\data\ESP_SA80a.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\ESP_SA80a\data\ESP_SA80a.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class ESP_SA80_Plastic_HndGrd_Colorbase: M4_PlasticHndgrd
+	{
+		scope=0;
+		displayName="SA80A Plastic Hand Guard";
+		descriptionShort="The SA80A typical Handguard. This simple handguard is made from lightweight polymer";
+		model="Survivalists_RPWeapons\attachments\Support\ESP_SA80A_Plastic_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		hasRailFunctionality=0;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"SA80HndGrd"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"\Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd.rvmat"}},						
+						{0.69999999,{"\Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd.rvmat"}},						
+						{0.5,{"\Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd.rvmat"}},						
+						{0.30000001,{"\Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd.rvmat"}},						
+						{0,{"\Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
 
 	// HandGuard Retextures
 	class ESP_Lightweight_HndGrd_Green: ESP_LW_HndGrd_ColorBase
@@ -1703,6 +1795,45 @@ class CfgVehicles
 			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_Tan_CO.paa"
 		};
 	};
+  class ESP_SA80_Plastic_HndGrd_Black: ESP_SA80_Plastic_HndGrd_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd_Black_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd.rvmat"
+		};
+	};
+	class ESP_SA80_Plastic_HndGrd_Green: ESP_SA80_Plastic_HndGrd_Colorbase
+	{
+		scope=2;
+		color="Green";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\SA80_Plastic_HndGrd.rvmat"
+		};
+	};
+	class ESP_SA80_RIS_HndGrd_Metal: ESP_SA80_RIS_HndGrd_Colorbase
+	{
+		scope=2;
+		color="Metal";
+	};
 //==================================================ButtStock_Colorbase
 
 	class ESP_SNPR_Stck_ColorBase: M4_OEBttstck
@@ -1815,6 +1946,48 @@ class CfgVehicles
 						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_Crane_BttStck.rvmat"}},						
 						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_Crane_BttStck.rvmat"}},						
 						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_Crane_BttStck.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class ESP_Engraved_Stock_Colorbase: M4_OEBttstck
+	{
+		scope=2;
+		displayName="Engraved M4 Stock";
+		descriptionShort="An M4 stock with some fancy engraving etched into the top of it";
+		model="Survivalists_RPWeapons\attachments\support\ESP_Engraved_BttStck.p3d";
+		inventorySlot[]=
+		{
+			"weaponButtstockM4"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttar9\data\ttar9_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttar9\data\base.rvmat"
+		};
+
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\ttar9\data\base.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\ttar9\data\base.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\ttar9\data\base.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\ttar9\data\base.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\ttar9\data\base.rvmat"}}
 					};
 				};
 			};
@@ -1938,6 +2111,10 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\attachments\support\data\junkak_co.paa"
 		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\junkak.rvmat"
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1982,6 +2159,10 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_RPWeapons\attachments\support\data\ttak458poli_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ttak458poli.rvmat"
 		};
 		class DamageSystem
 		{
@@ -2183,6 +2364,18 @@ class CfgVehicles
 			"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR_CO.paa"
 		};
 	};
+  class ESP_SCAR_Stck_Rare: ESP_SCAR_Stck_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttscarl\data\ttscarl_rare_co.paa"
+		};
+	};
 	class STG_AK_Junk_Stck_Junk: STG_AK_Junk_Stck_ColorBase
 	{
 		scope=2;
@@ -2272,11 +2465,11 @@ class CfgVehicles
 					hitpoints=200;
 					healthLevels[]=
 					{						
-						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}},						
-						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}},						
-						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}},						
-						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}},						
-						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat"}}
+						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat","Survivalists_RPWeapons\rifles\ESP_M110\data\M110.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat","Survivalists_RPWeapons\rifles\ESP_M110\data\M110.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat","Survivalists_RPWeapons\rifles\ESP_M110\data\M110.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat","Survivalists_RPWeapons\rifles\ESP_M110\data\M110.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER.rvmat","Survivalists_RPWeapons\rifles\ESP_M110\data\M110.rvmat"}}
 					};
 				};
 			};
@@ -2339,7 +2532,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_CO.paa"
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_BLACK_CO.paa"
 		};
 	};
 	class ESP_RIS_Cover_Tan: ESP_RIS_Cover_Colorbase
@@ -2352,7 +2545,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_Tan_CO.paa"
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_CO.paa"
 		};
 	};
 	class ESP_RIS_Cover_Green: ESP_RIS_Cover_Colorbase
@@ -2379,6 +2572,31 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_RedWood_CO.paa"
+		};
+	};
+  class ESP_RIS_Cover_Freedom: ESP_RIS_Cover_Colorbase
+	{
+		scope=2;
+		color="Freedom";
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_US_CO.paa"
+		};
+	};
+	class ESP_RIS_Cover_Rare: ESP_RIS_Cover_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"Zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\ESP_RIS_COVER_RARE_CO.paa"
 		};
 	};
 	class ESP_Angle_Grip_Tan: ESP_Angle_Grip_Colorbase

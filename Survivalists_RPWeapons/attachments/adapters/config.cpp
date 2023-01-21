@@ -151,4 +151,102 @@ class CfgVehicles
 			};
 		}; 
 	};
+  class ESP_PistolRail: Inventory_Base
+	{	
+		scope=2;
+		displayName="ESP Pistol Rail";
+		descriptionShort="The ESP Pistol Rail was designed to be sold seperately alongside handguns to allow the user to attach various RIS compatible accessories to the end of the weapon.";
+		model="Survivalists_RPWeapons\attachments\Adapters\ESP_PistolRail.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		inventorySlot[]=
+		{
+			"PistolRail"
+		};
+		hasRailFunctionality=1;
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\Adapters\data\ESP_PistolRail_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						
+						{
+							1,
+							
+							{
+								"Survivalists_RPWeapons\attachments\Adapters\data\ESP_PistolRail.rvmat"
+							}
+						},
+						
+						{
+							0.69999999,
+							
+							{
+								"Survivalists_RPWeapons\attachments\Adapters\data\ESP_PistolRail.rvmat"
+							}
+						},
+						
+						{
+							0.5,
+							
+							{
+								"Survivalists_RPWeapons\attachments\Adapters\data\ESP_PistolRail.rvmat"
+							}
+						},
+						
+						{
+							0.30000001,
+							
+							{
+								"Survivalists_RPWeapons\attachments\Adapters\data\ESP_PistolRail.rvmat"
+							}
+						},
+						
+						{
+							0,
+							
+							{
+								"Survivalists_RPWeapons\attachments\Adapters\data\ESP_PistolRail.rvmat"
+							}
+						}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
 };

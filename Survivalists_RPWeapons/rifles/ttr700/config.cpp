@@ -28,6 +28,18 @@ class cfgWeapons
 		displayName="R700";
 		descriptionShort="Espen Industries. R700 is magfed bolt action rifle chambered in .308 Winchester. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\ttr700\ttr700.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttr700\data\ttr700_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttr700\data\base.rvmat"
+		};
 		attachments[]={"weaponOpticsHunting","weaponMuzzleM4","weaponWrap"};
 		magazines[]={"ttr700mag"};
 		magazineSwitchTime=0.5;
@@ -38,6 +50,19 @@ class cfgWeapons
 		weight=12000;
 		chamberSize=1;
 		itemSize[]={9,3};
+	};
+  class ttr700_Rare: ttr700
+	{
+		scope=2;
+		displayName="Erik's Gun";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttr700\data\ttr700_Rare_Co.paa"
+		};
 	};
   class OpticsInfo: OpticsInfoRifle
   {

@@ -124,4 +124,16 @@ class cfgWeapons
 			"Survivalists_RPWeapons\rifles\ttscarl\data\ESP_SCAR_Tan_CO.paa"
 		};
 	};
+  class ttscarl_Rare: ttscarl
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\ttscarl\data\ttscarl_rare_co.paa"
+		};
+	};
 };

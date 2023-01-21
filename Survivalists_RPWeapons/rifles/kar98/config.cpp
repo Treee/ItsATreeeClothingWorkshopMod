@@ -28,6 +28,18 @@ class CfgWeapons
 		displayName="Karabiner 98k";
 		descriptionShort="S.T.A.G. Industries. K98k is a bolt action rifle that originated from Germany during WW2. Chambered in 7.62x54mm. Inspected by Master Gunsmith: Turko";
 		model="Survivalists_RPWeapons\rifles\kar98\kar98.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\kar98\data\kar98_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\rifles\kar98\data\base.rvmat"
+		};
 		attachments[]={"weaponOpticsHunting","weaponMuzzleAK","SRP_StockPouch","weaponWrap"};
 		winchesterTypeOpticsMount=1;
 		chamberableFrom[]={"Ammo_762x54","Ammo_762x54Tracer"};
@@ -228,6 +240,22 @@ class CfgWeapons
 					};
 				};
 			};
+		};
+	};
+  class kar98_Rare: kar98
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    	hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\rifles\kar98\data\Kar98_Rare_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\rifles\kar98\data\kar98_Rare.rvmat"
 		};
 	};
 };

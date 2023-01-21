@@ -550,7 +550,8 @@ class CfgVehicles
 		itemSize[]={3,1};
 		inventorySlot[]+=
 		{
-			"weaponOptics"
+			"WeaponOpticsHunting",
+      "weaponOptics"
 		};
 		simulation="itemoptics";
 		dispersionModifier=-0.001;
@@ -647,7 +648,8 @@ class CfgVehicles
 		itemSize[]={2,1};
 		inventorySlot[]+=
 		{
-			"WeaponOpticsHunting"
+			"WeaponOpticsHunting",
+      "weaponOptics"
 		};
 		selectionFireAnim="zasleh";
 		simulation="itemoptics";

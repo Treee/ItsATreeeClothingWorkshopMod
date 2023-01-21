@@ -169,6 +169,18 @@ class CfgSlots
     displayName="Bottom RIS"; // this is what shows when the player hovers over the icon
     ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
   };
+  class Slot_SA80_HndGrd
+  {
+    name="SA80HndGrd"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="Hand Guard"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+  };
+  class Slot_PistolRail
+  {
+    name="PistolRail"; // this is the name you use in "attachments[]={};" in your items config
+    displayName="Pistol Rail"; // this is what shows when the player hovers over the icon
+    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+  };
 
 //==================== GUN PROXY
   class Slot_SRP_Rifle1
@@ -447,7 +459,18 @@ class CfgNonAIVehicles
 		inventorySlot[]={"P90UpgradeKit"};
 		model="Survivalists_RPWeapons\proxy\ESP_P90UpgradeKit_Proxy.p3d";
 	};
-
+  class ProxySA80_HandGrd_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="SA80HndGrd";
+		model="Survivalists_RPWeapons\proxy\SA80_HandGrd_Proxy.p3d";
+	};
+	class ProxyESP_PistolRail_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot="PistolRail";
+		model="Survivalists_RPWeapons\proxy\ESP_PistolRail_Proxy.p3d";
+	};
 //=================== Melee Proxies
   class Proxysrp_melee1_proxy: ProxyAttachment //same as p3d name
   {
