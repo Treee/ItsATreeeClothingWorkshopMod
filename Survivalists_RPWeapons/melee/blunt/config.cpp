@@ -13,6 +13,51 @@ class CfgPatches
 		};
 	};
 };
+class CfgAmmo
+{
+  class MeleeBlunt;
+  
+  class SRP_MeleeBlunt_1H: MeleeBlunt
+	{
+		class DamageApplied
+		{
+			type="Melee";
+			class Health
+			{
+				damage=25;
+			};
+			class Blood
+			{
+				damage=0;
+			};
+			class Shock
+			{
+				damage=35;
+			};
+		};
+	};
+	class SRP_MeleeBlunt_1HHeavy: SRP_MeleeBlunt_1H{};
+  class SRP_MeleeBlunt_2H: MeleeBlunt
+	{
+		class DamageApplied
+		{
+			type="Melee";
+			class Health
+			{
+				damage=35;
+			};
+			class Blood
+			{
+				damage=5;
+			};
+			class Shock
+			{
+				damage=45;
+			};
+		};
+	};
+	class SRP_MeleeBlunt_2HHeavy: SRP_MeleeBlunt_2H{};
+};
 class CfgVehicles
 {
   class BaseballBat;
@@ -187,17 +232,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeBat";
+				ammo="SRP_MeleeBlunt_2H";
 				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeBat_Heavy";
+				ammo="SRP_MeleeBlunt_2HHeavy";
 				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeBat_Heavy";
+				ammo="SRP_MeleeBlunt_2HHeavy";
 				range=3.7;
 			};
 		};
@@ -775,17 +820,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeSpear";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeSpear_Heavy";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeSpear_Heavy";
+				ammo="SRP_MeleeBlunt_1HHeavy";
 				range=3.7;
 			};
 		};
@@ -866,17 +911,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeSpear";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeSpear_Heavy";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeSpear_Heavy";
+				ammo="SRP_MeleeBlunt_1HHeavy";
 				range=3.7;
 			};
 		};
@@ -956,17 +1001,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeSpear";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeSpear_Heavy";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeSpear_Heavy";
+				ammo="SRP_MeleeBlunt_1HHeavy";
 				range=3.7;
 			};
 		};
@@ -1044,17 +1089,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeSpear";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeSpear_Heavy";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeSpear_Heavy";
+				ammo="SRP_MeleeBlunt_1HHeavy";
 				range=3.7;
 			};
 		};
@@ -1132,17 +1177,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeSpear";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeSpear_Heavy";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeSpear_Heavy";
+				ammo="SRP_MeleeBlunt_1HHeavy";
 				range=3.7;
 			};
 		};
@@ -1220,17 +1265,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeSpear";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeSpear_Heavy";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeSpear_Heavy";
+				ammo="SRP_MeleeBlunt_1HHeavy";
 				range=3.7;
 			};
 		};

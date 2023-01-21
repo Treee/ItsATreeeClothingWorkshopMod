@@ -22,96 +22,48 @@ class CfgPatches
 
 class CfgAmmo
 {
-  class MeleeMachete;
-  class MeleeKnife;
-  class MeleeKnife_Heavy;
-
-	class MeleeKatana: MeleeMachete
-	{
-		affectSkeleton=0.2;
-		class DamageApplied
-		{
-			type="Melee";
-			bleedThreshold=1;
-			class Health
-			{
-				damage=25;
-			};
-			class Blood
-			{
-				damage=200;
-			};
-			class Shock
-			{
-				damage=15;
-			};
-			additionAnimalMeleeMultiplier=3;
-		};
-	};
-	class MeleeKatana_Heavy: MeleeMachete
+  class MeleeSlash;
+  
+  class SRP_MeleeSlash_1HSword: MeleeSlash
 	{
 		class DamageApplied
 		{
 			type="Melee";
-			bleedThreshold=1;
 			class Health
 			{
-				damage=50;
+				damage=20;
 			};
 			class Blood
 			{
-				damage=100;
+				damage=120;
 			};
 			class Shock
 			{
-				damage=60;
+				damage=0;
 			};
-			additionAnimalMeleeMultiplier=3;
 		};
 	};
-	class MeleeBritva: MeleeKnife
-	{
-		affectSkeleton=0.2;
-		class DamageApplied
-		{
-			type="Melee";
-			bleedThreshold=1;
-			class Health
-			{
-				damage=25;
-			};
-			class Blood
-			{
-				damage=400;
-			};
-			class Shock
-			{
-				damage=25;
-			};
-			additionAnimalMeleeMultiplier=3;
-		};
-	};
-	class MeleeBritva_Heavy: MeleeKnife_Heavy
+	class SRP_MeleeSlash_1HSwordHeavy: SRP_MeleeSlash_1HSword{};
+  class SRP_MeleeSlash_2HSword: MeleeSlash
 	{
 		class DamageApplied
 		{
 			type="Melee";
-			bleedThreshold=1;
 			class Health
 			{
-				damage=95;
+				damage=35;
 			};
 			class Blood
 			{
-				damage=600;
+				damage=150;
 			};
 			class Shock
 			{
-				damage=40;
+				damage=2;
 			};
-			additionAnimalMeleeMultiplier=3;
 		};
 	};
+	class SRP_MeleeSlash_2HSwordHeavy: SRP_MeleeSlash_2HSword{};
 };
 
 class CfgVehicles
@@ -699,23 +651,23 @@ class CfgVehicles
 		isMeleeWeapon=1;
 		suicideAnim="fireaxe";
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFireAxe";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -1130,23 +1082,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFireAxe";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_2HSword";
+        range=1.8;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=1.8;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=3.9;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -1226,23 +1178,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFireAxe";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_2HSword";
+        range=1.8;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=1.8;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=3.9;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -1336,23 +1288,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFireAxe";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_2HSword";
+        range=1.8;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=1.8;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=3.9;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -1455,17 +1407,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeFireAxe";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeFireAxe_Heavy";
+				ammo="SRP_MeleeBlunt_1HHeavy";
 				range=3.7;
 			};
 		};
@@ -1534,25 +1486,23 @@ class CfgVehicles
 			"Survivalists_RPWeapons\melee\blade\data\srp_warcleaver.rvmat"
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-        action="MeleeAttack%d";
-        ammo="MeleeLightBlunt";
-        range=1.2;
-        actionSounds="action_punch";
-			};
-			class Heavy
-			{
-				ammo="MeleeKnife_Heavy";
-				range=1.2;
-			};
-			class Sprint
-			{
-				ammo="MeleeKnife_Heavy";
-				range=3.3;
-			};
-		};    
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };    
     class DamageSystem
 		{
 			class GlobalHealth
@@ -1659,17 +1609,17 @@ class CfgVehicles
 		{
 			class Default
 			{
-				ammo="MeleeFireAxe";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
 			};
 			class Heavy
 			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
 			};
 			class Sprint
 			{
-				ammo="MeleeFireAxe_Heavy";
+				ammo="SRP_MeleeBlunt_1HHeavy";
 				range=3.7;
 			};
 		};
@@ -1865,23 +1815,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFireAxe";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -2014,23 +1964,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeCrowbar";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeCrowbar_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeCrowbar_Heavy";
-				range=4.0999999;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -2313,23 +2263,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeCrowbar";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeCrowbar_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeCrowbar_Heavy";
-				range=4.0999999;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -2474,23 +2424,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFireAxe";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_2HSword";
+        range=1.8;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=1.8;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=3.9;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -2572,23 +2522,23 @@ class CfgVehicles
 			"Survivalists_RPWeapons\melee\blade\data\srp_warcleaver.rvmat"
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFireAxe";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=3.7;
-			};
-		};  
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    }; 
     class DamageSystem
 		{
 			class GlobalHealth
@@ -2883,23 +2833,23 @@ class CfgVehicles
 		isMeleeWeapon=1;
 		suicideAnim="onehanded";
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeMachete";
-				range=1.4;
-			};
-			class Heavy
-			{
-				ammo="MeleeMachete_Heavy";
-				range=1.4;
-			};
-			class Sprint
-			{
-				ammo="MeleeMachete_Heavy";
-				range=3.3;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
 		soundImpactType="metal";
 		class AnimEvents
 		{
@@ -3022,23 +2972,23 @@ class CfgVehicles
 		isMeleeWeapon=1;
 		suicideAnim="onehanded";
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeMachete";
-				range=1.4;
-			};
-			class Heavy
-			{
-				ammo="MeleeMachete_Heavy";
-				range=1.4;
-			};
-			class Sprint
-			{
-				ammo="MeleeMachete_Heavy";
-				range=3.3;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
 		soundImpactType="metal";
 		class AnimEvents
 		{
@@ -3158,23 +3108,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeHatchet";
-				range=1.4;
-			};
-			class Heavy
-			{
-				ammo="MeleeHatchet_Heavy";
-				range=1.4;
-			};
-			class Sprint
-			{
-				ammo="MeleeHatchet_Heavy";
-				range=3.3;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
 		isMeleeWeapon=1;
 		suicideAnim="woodaxe";
 		soundImpactType="metal";
@@ -3311,23 +3261,23 @@ class CfgVehicles
 		isMeleeWeapon=1;
 		suicideAnim="fireaxe";
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeFireAxe";
-				range=1.8;
-			};
-			class Heavy
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=1.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeFireAxe_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -3616,23 +3566,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeSpear";
-				range=2.2;
-			};
-			class Heavy
-			{
-				ammo="MeleeSpear_Heavy";
-				range=2.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeSpear_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_2HSword";
+        range=1.8;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=1.8;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=3.9;
+      };
+    };
 	};
   class SRP_Spear_Pike_Basic: SRP_Spear_Pike_ColorBase
   {
@@ -3704,23 +3654,23 @@ class CfgVehicles
 			};
 		};
 		class MeleeModes
-		{
-			class Default
-			{
-				ammo="MeleeSpear";
-				range=2.2;
-			};
-			class Heavy
-			{
-				ammo="MeleeSpear_Heavy";
-				range=2.8;
-			};
-			class Sprint
-			{
-				ammo="MeleeSpear_Heavy";
-				range=3.7;
-			};
-		};
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_2HSword";
+        range=1.8;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=1.8;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_2HSwordHeavy";
+        range=3.9;
+      };
+    };
 	};
   class SRP_Spear_PikeHook_Basic: SRP_Spear_PikeHook_ColorBase
   {
