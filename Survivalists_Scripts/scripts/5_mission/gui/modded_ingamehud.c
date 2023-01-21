@@ -2,9 +2,6 @@ modded class IngameHud
 {
   protected Widget m_sleepPanelWidget;  
 
-  string panelSleep = "Sleep";
-  string iconSleepName = "IconSleep";
-
   private Widget m_CompassHeadingRootWidget;
   private TextWidget m_CompassHeadingText;
   private Widget m_CompassFrameWidget;
@@ -27,15 +24,8 @@ modded class IngameHud
 
 	override void Init( Widget hud_panel_widget )
 	{
-    // Print("SRP Mods IngameHud before Init()");
     super.Init(hud_panel_widget);
-    if (!m_sleepPanelWidget && (GetGame().IsClient() || !GetGame().IsMultiplayer()))
-    {
-      m_sleepPanelWidget = GetGame().GetWorkspace().CreateWidgets("Survivalists_Scripts/gui/layouts/srp_sleep_layout.layout");
-      if (m_sleepPanelWidget) {
-        m_sleepPanelWidget.Show(false);
-      }
-    }
+    // Print("SRP Mods IngameHud before Init()");
     if (!m_CompassHeadingRootWidget && (GetGame().IsClient() || !GetGame().IsMultiplayer()))
     {
       m_CompassHeadingRootWidget = GetGame().GetWorkspace().CreateWidgets("Survivalists_Scripts/gui/layouts/compass.layout");
@@ -45,11 +35,100 @@ modded class IngameHud
       if (m_CompassHeadingRootWidget)
         m_CompassHeadingRootWidget.Show(false);
     }
-
-    // Print("SRP Mods IngameHud after Init()");
-    DisplayTirednessNotifier(NTFKEY_SRP_TIREDNESS, 0, 0, 4);
   }
 
+  override void InitBadgesAndNotifiers()
+  {
+    super.InitBadgesAndNotifiers();
+    if (!m_sleepPanelWidget && (GetGame().IsClient() || !GetGame().IsMultiplayer()))
+    {
+      m_sleepPanelWidget = GetGame().GetWorkspace().CreateWidgets("Survivalists_Scripts/gui/layouts/srp_sleep_layout.layout");
+    }
+		m_StatesWidgetNames.Set( SRP_NTFKEY_TIREDNESS, "Sleep" );
+    m_sleepPanelWidget.Show(true);
+
+  	ImageWidget w;
+		Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget("IconSleep"));
+    m_StatesWidgets.Set(SRP_NTFKEY_TIREDNESS, w);
+    w.Show( true );
+    for ( int y = 0; y < 5; y++ )
+    {
+      w.LoadImageFile( y, string.Format("set:srp_sleep_iconset image:iconSleep%1", y) );
+    }
+
+    w.SetImage( 0 );
+    float alpha = w.GetAlpha();
+    w.SetColor( ARGB( alpha * 255, 220, 220, 220 ) );	//white
+    m_TendencyStatusCritical.Remove( w );
+    // clear all arrows
+    for ( int x = 1; x < 4; x++ )
+    {
+      Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("SleepArrowUp%1",x) ) );
+      w.Show( false );
+      Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("SleepArrowDown%1",x) ) );
+      w.Show( false );
+    }
+  }
+
+  override void DisplayNotifier( int key, int tendency, int status )
+	{
+    // do vanilla stuff for vanilla keys
+    if (key <= NTFKEY_HEARTBEAT)
+      super.DisplayNotifier(key, tendency, status);
+    else // otherwise do my stuff
+    {
+      ImageWidget w;
+      DisplayTendencyNormal(key, tendency, status);
+      // tendency arrows
+      string arrow_name = "ArrowUp";
+      if ( tendency < 0 )
+      {
+        arrow_name = "ArrowDown";
+      }
+      tendency = Math.AbsInt( tendency );
+
+      for ( int x = 1; x < 4; x++ )
+      { 
+        Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("%1ArrowUp%2",m_StatesWidgetNames.Get( key ), x) ) );
+        if( w )
+          w.Show( false );
+        Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("%1ArrowDown%2",m_StatesWidgetNames.Get( key ), x) ) );
+        if( w )
+          w.Show( false );
+      }      
+      if( tendency > 0 )
+      {
+        string widget_name = m_StatesWidgetNames.Get( key ) + arrow_name + Math.Clamp( tendency, 1, 3 );
+        Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( widget_name ) );
+        if( w )
+          w.Show( true );
+      }
+    }
+  }
+	override void DisplayTendencyNormal( int key, int tendency, int status )
+  {
+    // do vanilla stuff for vanilla keys
+    if (key == NTFKEY_SICK)
+      DisplayTendencyHealth(key, tendency, status);
+    else if (key == NTFKEY_BLEEDISH)
+      DisplayTendencyBlood(key, tendency, status);
+    else if (key == NTFKEY_HUNGRY)
+      DisplayTendencyHunger(key, tendency, status);
+    else if (key == NTFKEY_THIRSTY)
+      DisplayTendencyThirst(key, tendency, status);
+    else if (key <= NTFKEY_HEARTBEAT)
+      super.DisplayTendencyNormal(key, tendency, status);
+    else    
+      DisplayTendencySleep(key, tendency, status);    
+  }
+  override void RefreshHudVisibility()
+  {
+    super.RefreshHudVisibility();
+    bool genericShow = ( !m_HudHidePlayer && !m_HudHideUI && m_HudState ) || m_HudInventory;
+    // show the sleep icon like the other status icons
+    m_sleepPanelWidget.Show(genericShow);
+    m_CompassHeadingRootWidget.Show(genericShow);
+  }
   override void Update( float timeslice )
 	{
 		super.Update( timeslice );		
@@ -61,17 +140,173 @@ modded class IngameHud
     CompassUpdate();
     debouncer+= timeslice;
 	}
+//========================== TENDENCY DISPLAY
+	void DisplayTendencySleep( int key, int tendency, int status )
+	{
+    ImageWidget w;
+    Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("Icon%1",m_StatesWidgetNames.Get( key ) ) ) );
+    if( w )
+    {
+      w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
+      float alpha = w.GetAlpha();
+      
+      switch( status )
+      {
+        case 3:
+          w.SetColor( ARGB( alpha * 255, 220, 220, 0 ) );		//yellow
+          m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+          break;
+        case 4:
+          w.SetColor( ARGB( alpha * 255, 220, 0, 0 ) );		//red
+          m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+          break;
+        case 5:
+          if ( !m_TendencyStatusCritical.Contains( w ) )
+          {
+            m_TendencyStatusCritical.Insert( w, ARGB( alpha * 255, 220, 0, 0 ) );	//add to blinking group
+          }
+          break;
+        default:
+          w.SetColor( ARGB( alpha * 255, 200, 200, 200 ) );	//white
+          m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+          break;
+      }
+    }	
+	}
+  void DisplayTendencyHealth( int key, int tendency, int status )
+	{
+		ImageWidget w;
+		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
+		
+		if( w )
+		{
+			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
+			float alpha = w.GetAlpha();
+			
+			switch( status )
+			{
+				case 3:
+					w.SetColor( ARGB( alpha * 255, 150, 200, 0 ) );		//yellow
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 4:
+					w.SetColor( ARGB( alpha * 255, 200, 100, 0 ) );		//red
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 5:
+					if ( !m_TendencyStatusCritical.Contains( w ) )
+					{
+						m_TendencyStatusCritical.Insert( w, ARGB( alpha * 255, 200, 50, 0 ) );	//add to blinking group
+					}
+					break;
+				default:
+					w.SetColor( ARGB( alpha * 255, 0, 200, 0 ) );	//white
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+			}
+		}	
+	}
+  void DisplayTendencyBlood( int key, int tendency, int status )
+	{
+		ImageWidget w;
+		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
+		
+		if( w )
+		{
+			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
+			float alpha = w.GetAlpha();
+			
+			switch( status )
+			{
+				case 3:
+					w.SetColor( ARGB( alpha * 255, 225, 0, 0 ) );		//yellow
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 4:
+					w.SetColor( ARGB( alpha * 255, 225, 0, 0 ) );		//red
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 5:
+					if ( !m_TendencyStatusCritical.Contains( w ) )
+					{
+						m_TendencyStatusCritical.Insert( w, ARGB( alpha * 255, 225, 0, 0 ) );	//add to blinking group
+					}
+					break;
+				default:
+					w.SetColor( ARGB( alpha * 255, 225, 0, 0 ) );	//white
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+			}
+		}	
+	}
+  void DisplayTendencyHunger( int key, int tendency, int status )
+	{
+		ImageWidget w;
+		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
+		
+		if( w )
+		{
+			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
+			float alpha = w.GetAlpha();
+			
+			switch( status )
+			{
+				case 3:
+					w.SetColor( ARGB( alpha * 255, 225, 145, 0 ) );		//yellow
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 4:
+					w.SetColor( ARGB( alpha * 255, 225, 100, 0 ) );		//red
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 5:
+					if ( !m_TendencyStatusCritical.Contains( w ) )
+					{
+						m_TendencyStatusCritical.Insert( w, ARGB( alpha * 255, 225, 80, 0 ) );	//add to blinking group
+					}
+					break;
+				default:
+					w.SetColor( ARGB( alpha * 255, 225, 190, 0 ) );	//white
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+			}
+		}	
+	}
+  void DisplayTendencyThirst( int key, int tendency, int status )
+	{
+		ImageWidget w;
+		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
+		
+		if( w )
+		{
+			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
+			float alpha = w.GetAlpha();
+			
+			switch( status )
+			{
+				case 3:
+					w.SetColor( ARGB( alpha * 255, 0, 206, 209 ) );		//yellow
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 4:
+					w.SetColor( ARGB( alpha * 255, 30, 144, 220 ) );		//red
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 5:
+					if ( !m_TendencyStatusCritical.Contains( w ) )
+					{
+						m_TendencyStatusCritical.Insert( w, ARGB( alpha * 255, 30, 144, 220 ) );	//add to blinking group
+					}
+					break;
+				default:
+					w.SetColor( ARGB( alpha * 255, 0, 206, 209 ) );	//white
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+			}
+		}	
+	}
 
-  override void RefreshHudVisibility()
-  {
-    super.RefreshHudVisibility();
-    bool genericShow = ( !m_HudHidePlayer && !m_HudHideUI && m_HudState ) || m_HudInventory;
-    // show the sleep icon like the other status icons
-    SetSleepWidgetVisibility(genericShow);
-    m_CompassHeadingRootWidget.Show(genericShow);
-  }
-
-  //========================== COMPASS
+//========================== COMPASS
   void CompassUpdate() 
 	{
 		if(HasCompass()) 
@@ -151,63 +386,6 @@ modded class IngameHud
     }
     return false;
   }
+//==========================END
 
-  //========================== SLEEP
-  void DisplayTirednessNotifier( int key, int currentTirednessCount, int tirednessDelta, int status )
-	{
-		if( key == NTFKEY_SRP_TIREDNESS )
-		{
-      ImageWidget w;
-      // Print("Tiredness DisplayNotifier: " + key);
-			DisplayTirednessTendencyNormal( key, status );
-      SetTirednessState(status);
-    }
-	}
-  void DisplayTirednessTendencyNormal( int key, int status )
-	{
-		ImageWidget w;
-		Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget(iconSleepName));
-		// Print("Override DisplayTendencyNormal " + w);
-		if( w )
-		{
-			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
-			float alpha = w.GetAlpha();
-			
-			switch( status )
-			{
-				case 2:
-					w.SetColor( ARGB( alpha * 255, 220, 220, 0 ) );		//yellow
-					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
-					break;
-				case 1:
-					w.SetColor( ARGB( alpha * 255, 220, 0, 0 ) );		//red
-					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
-					break;
-				case 0:
-					if ( !m_TendencyStatusCritical.Contains( w ) )
-					{
-						m_TendencyStatusCritical.Insert( w, ARGB( alpha * 255, 220, 0, 0 ) );	//add to blinking group
-					}
-					break;
-				default:
-					w.SetColor( ARGB( alpha * 255, 220, 220, 220 ) );	//white
-					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
-					break;
-			}
-		}	
-	}
-  void SetTirednessState( int state )
-	{
-    // Print("Tiredness state " + state);
-		ImageWidget tiredness = ImageWidget.Cast( m_sleepPanelWidget.FindAnyWidget(iconSleepName) );
-		tiredness.LoadImageFile( 0, "set:srp_sleep_iconset image:iconSleep" + state );
-	}
-  void SetSleepWidgetVisibility(bool visible) 
-  {
-    if (m_sleepPanelWidget) 
-    {
-      // Print("SRP Mods In Game Hud SetSleepWidgetVisibility!! visible=" + visible);      
-      m_sleepPanelWidget.Show(visible);
-    }
-  }
 };

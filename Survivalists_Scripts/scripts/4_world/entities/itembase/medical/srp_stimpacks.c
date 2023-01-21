@@ -21,6 +21,7 @@ class SRP_StimPackInjector_Base extends ItemBase
     player.AddHealth("", "", 75); //do 35 dmg
     player.GetStatEnergy().Add(1500);
     player.GetStatWater().Add(1500);
+    player.GetStatTiredness().Add(2500);
 		if( player.GetModifiersManager().IsModifierActive(eModifiers.MDF_EPINEPHRINE ) )//effectively resets the timer
 		{
 			player.GetModifiersManager().DeactivateModifier( eModifiers.MDF_EPINEPHRINE );
@@ -28,7 +29,3 @@ class SRP_StimPackInjector_Base extends ItemBase
 		player.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
 	}
 };
-
-
-class SRP_StimPackInjector_Espen extends SRP_StimPackInjector_Base{};
-class SRP_StimPackInjector_Stag extends SRP_StimPackInjector_Base{};

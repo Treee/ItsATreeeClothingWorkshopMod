@@ -11,11 +11,6 @@ modded class CfgGameplayHandler
 	}
 };
 
-modded class Hud
-{
-  void DisplayTirednessNotifier( int key, int currentTirednessCount, int tirednessDelta, int status );
-};
-
 modded class MenuDefaultCharacterData
 {
   override string GetCharacterType()

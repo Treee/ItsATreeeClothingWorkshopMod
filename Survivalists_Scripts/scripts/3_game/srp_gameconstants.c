@@ -1,5 +1,3 @@
-const int NTFKEY_SRP_TIREDNESS  = 42;
-
 modded class PlayerConstants
 { 
   static const float BAREFOOT_MOVEMENT_BLEED_MODIFIER = 0.005;
@@ -20,6 +18,37 @@ modded class PlayerConstants
 	static const float LEG_HEALTH_REGEN						= 0.75;		// default 1
 	static const float LEG_HEALTH_REGEN_BROKEN				= 0.025;		// default 0.18
 
+	static const float METABOLIC_SPEED_TIREDNESS_BASAL = 0.01;
+  static const float METABOLIC_SPEED_TIREDNESS_WALK = 0.025;
+  static const float METABOLIC_SPEED_TIREDNESS_JOG = 0.05;
+  static const float METABOLIC_SPEED_TIREDNESS_SPRINT = 0.135;
+  
+  // reverse these values since 0 is fully awake 
+  static const float SL_TIREDNESS_CRITICAL = 0; //sl = stat level
+	static const float SL_TIREDNESS_LOW = 300;
+	static const float SL_TIREDNESS_NORMAL = 800;
+	static const float SL_TIREDNESS_HIGH = 3500;
+	static const float SL_TIREDNESS_MAX = 5000;
+  
+  // reverse these values since 0 is fully sober
+  static const float SL_ALCOHOLISM_CRITICAL = 0; //sl = stat level
+	static const float SL_ALCOHOLISM_LOW = 300;
+	static const float SL_ALCOHOLISM_NORMAL = 800;
+	static const float SL_ALCOHOLISM_HIGH = 3500;
+	static const float SL_ALCOHOLISM_MAX = 5000;
+
+  // reverse these values since 0 is fully sober
+  static const float SL_DRUGDEPENDENCY_CRITICAL = 0; //sl = stat level
+	static const float SL_DRUGDEPENDENCY_LOW = 20;
+	static const float SL_DRUGDEPENDENCY_NORMAL = 40;
+	static const float SL_DRUGDEPENDENCY_HIGH = 60;
+	static const float SL_DRUGDEPENDENCY_MAX = 100;
+
+  static const float SL_SANITY_CRITICAL = 20; //sl = stat level
+	static const float SL_SANITY_LOW = 40;
+	static const float SL_SANITY_NORMAL = 60;
+	static const float SL_SANITY_HIGH = 80;
+	static const float SL_SANITY_MAX = 100;
 }
 
 modded class GameConstants

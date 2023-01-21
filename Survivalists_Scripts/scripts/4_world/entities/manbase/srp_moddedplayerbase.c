@@ -2,7 +2,12 @@ modded class PlayerBase
 {
   protected EffectSound m_SleepSounds;
   protected float m_TotalTiredness = 0;
-  
+
+  protected PlayerStat<float> m_StatTiredness;
+  protected PlayerStat<float> m_StatAlcoholism;
+  protected PlayerStat<float> m_StatSanity;
+  protected PlayerStat<float> m_StatDrugDependency;
+
   ItemBook currentBookInHands;
 
   protected bool m_IsInBioZone = false;
@@ -413,4 +418,58 @@ modded class PlayerBase
     // AddAction(ActionTurnRubixCubeClockwise_Z1, InputActionMap);      
     // AddAction(ActionTurnRubixCubeClockwise_Z2, InputActionMap);    
   }
+
+  PlayerStat<float> GetStatTiredness()
+	{
+		if( !m_StatTiredness && GetPlayerStats() ) 
+		{
+			m_StatTiredness = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.TIREDNESS));
+		}
+		return m_StatTiredness;
+	}
+  PlayerStat<float> GetStatAlcoholism()
+	{
+		if( !m_StatAlcoholism && GetPlayerStats() ) 
+		{
+			m_StatAlcoholism = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.ALCOHOLISM));
+		}
+		return m_StatAlcoholism;
+	}
+  PlayerStat<float> GetStatSanity()
+	{
+		if( !m_StatSanity && GetPlayerStats() ) 
+		{
+			m_StatSanity = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.SANITY));
+		}
+		return m_StatSanity;
+	}
+  PlayerStat<float> GetStatDrugDependency()
+	{
+		if( !m_StatDrugDependency && GetPlayerStats() ) 
+		{
+			m_StatDrugDependency = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.DRUGDEPENDENCY));
+		}
+		return m_StatDrugDependency;
+	}
+
+  EStatLevels GetStatLevelTiredness()
+	{
+		float tiredness = GetStatTiredness().Get();
+		return GetStatLevel(tiredness, PlayerConstants.SL_TIREDNESS_CRITICAL, PlayerConstants.SL_TIREDNESS_LOW, PlayerConstants.SL_TIREDNESS_NORMAL, PlayerConstants.SL_TIREDNESS_HIGH);
+	}
+  EStatLevels GetStatLevelAlcoholism()
+	{
+		float alcoholism = GetStatAlcoholism().Get();
+		return GetStatLevel(alcoholism, PlayerConstants.SL_ALCOHOLISM_CRITICAL, PlayerConstants.SL_ALCOHOLISM_LOW, PlayerConstants.SL_ALCOHOLISM_NORMAL, PlayerConstants.SL_ALCOHOLISM_HIGH);
+	}
+  EStatLevels GetStatLevelSanity()
+	{
+		float sanity = GetStatSanity().Get();
+		return GetStatLevel(sanity, PlayerConstants.SL_SANITY_CRITICAL, PlayerConstants.SL_SANITY_LOW, PlayerConstants.SL_SANITY_NORMAL, PlayerConstants.SL_SANITY_HIGH);
+	}
+  EStatLevels GetStatLevelDrugDependency()
+	{
+		float drugDependency = GetStatDrugDependency().Get();
+		return GetStatLevel(drugDependency, PlayerConstants.SL_DRUGDEPENDENCY_CRITICAL, PlayerConstants.SL_DRUGDEPENDENCY_LOW, PlayerConstants.SL_DRUGDEPENDENCY_NORMAL, PlayerConstants.SL_DRUGDEPENDENCY_HIGH);
+	}
 };

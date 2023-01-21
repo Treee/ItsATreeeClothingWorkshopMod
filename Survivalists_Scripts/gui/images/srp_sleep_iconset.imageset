@@ -10,13 +10,13 @@ ImageSetClass {
  Images {
   ImageSetDefClass iconSleep0 {
    Name "iconSleep0"
-   Pos 0 0
+   Pos 153 0
    Size 38 38
    Flags 0
   }
   ImageSetDefClass iconSleep1 {
    Name "iconSleep1"
-   Pos 38 0
+   Pos 114 0
    Size 38 38
    Flags 0
   }
@@ -28,15 +28,17 @@ ImageSetClass {
   }
   ImageSetDefClass iconSleep3 {
    Name "iconSleep3"
-   Pos 114 0
+   Pos 38 0
    Size 38 38
    Flags 0
   }
   ImageSetDefClass iconSleep4 {
    Name "iconSleep4"
-   Pos 152 0
+   Pos 0 0
    Size 38 38
    Flags 0
   }
+ }
+ Groups {
  }
 }

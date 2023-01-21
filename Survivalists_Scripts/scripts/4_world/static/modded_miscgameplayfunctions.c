@@ -1,5 +1,28 @@
 modded class MiscGameplayFunctions
 {
+  static float GetTirednessMetabolicSpeed(int movement_speed)
+	{
+		float speed;
+		switch (movement_speed)
+		{
+		case DayZPlayerConstants.MOVEMENTIDX_WALK:
+			speed = PlayerConstants.METABOLIC_SPEED_TIREDNESS_WALK;
+		break;
+		case DayZPlayerConstants.MOVEMENTIDX_RUN:
+			speed = PlayerConstants.METABOLIC_SPEED_TIREDNESS_JOG;
+		break;
+		case DayZPlayerConstants.MOVEMENTIDX_SPRINT:
+			speed = PlayerConstants.METABOLIC_SPEED_TIREDNESS_SPRINT;
+		break;
+		default:
+			speed = 0;
+		break;
+		}
+
+		speed += PlayerConstants.METABOLIC_SPEED_TIREDNESS_BASAL;
+		return speed;
+	}
+	
   static void AttachTo(notnull Object child, notnull Object parent, vector local_pos = "0 0 0", vector orientation = "0 0 0", string mem_point = "")
   {
     if (mem_point != "")

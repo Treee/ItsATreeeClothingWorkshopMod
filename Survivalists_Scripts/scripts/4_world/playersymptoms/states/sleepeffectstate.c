@@ -1,6 +1,6 @@
 class SleepEffectSymptom extends SymptomBase
 {
-	PluginPlayerStatus m_ModulePlayerStatus;
+	// PluginPlayerStatus m_ModulePlayerStatus;
 
   bool m_IsSleepActive = false;
 
@@ -27,7 +27,7 @@ class SleepEffectSymptom extends SymptomBase
 		m_ID = SRP_SymptomIDs.SYMPTOM_SLEEP;
 		m_DestroyOnAnimFinish = true;
 		m_SyncToClient = true;
-    Class.CastTo(m_ModulePlayerStatus, GetPlugin(PluginPlayerStatus));
+    // Class.CastTo(m_ModulePlayerStatus, GetPlugin(PluginPlayerStatus));
     m_LastYawnEvent = 0;
 	}
 	
@@ -63,7 +63,7 @@ class SleepEffectSymptom extends SymptomBase
         }
       }
       // Print("[SleepEffectSymptom] - [OnUpdateClient] " + total_tiredness);
-      m_ModulePlayerStatus.DisplayTirednessTendency(NTFKEY_SRP_TIREDNESS, total_tiredness, GetTendency(total_tiredness), GetTirednessLevel(total_tiredness));
+      // m_ModulePlayerStatus.DisplayTirednessTendency(SRP_NTFKEY_TIREDNESS, total_tiredness, GetTendency(total_tiredness), GetTirednessLevel(total_tiredness));
       m_LastYawnEvent += deltatime;
     }
 	}
