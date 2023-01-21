@@ -15,9 +15,6 @@ modded class PlayerBase
   protected bool m_HeavyItemInHandsSprintDisable = false;
   protected bool m_HeavyItemEquippedSprintDisable = false;
 
-  protected float m_TotalAlcoholInStomach = 0;
-  protected float m_AccumulatedAlcoholCheck = 0;
-
   protected float m_TotalContaminationProtection = 0;
 
   void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
@@ -45,16 +42,6 @@ modded class PlayerBase
       }
     }
   }
-
-  override void OnScheduledTick(float deltaTime)
-	{
-    super.OnScheduledTick(deltaTime);
-    // always be degenerating alcohol in the system
-    if (m_TotalAlcoholInStomach > 0)
-    {
-      AddAlcoholConsuption(-deltaTime);
-    }
-	}
 	
   override void EEItemIntoHands(EntityAI item)
 	{
@@ -72,8 +59,7 @@ modded class PlayerBase
         SetIsSprintDisabledByHeavyItemInHands(true);
       }
     }
-	}
-	
+	}	
 	override void EEItemOutOfHands(EntityAI item)
 	{
 		super.EEItemOutOfHands( item );
@@ -84,7 +70,6 @@ modded class PlayerBase
       SetIsSprintDisabledByHeavyItemInHands(false);
     }
 	}
-
   override void EEKilled( Object killer )
 	{
     if ( m_AdminLog )
@@ -228,24 +213,6 @@ modded class PlayerBase
   {
     m_HeavyItemEquippedSprintDisable = isDisabled;
   }
-
-  bool IsDrunkIncapacitated()
-  {
-    return m_TotalAlcoholInStomach > 1000;
-  }
-
-  void AddAlcoholConsuption(float alcoholToAdd)
-  {
-    // never go below 0 drinks had
-    m_TotalAlcoholInStomach = Math.Max(0, (m_TotalAlcoholInStomach + alcoholToAdd));    
-    // should we cap a ceiling?
-    // Print("total alcohol in stomach: " + m_TotalAlcoholInStomach + " added " + alcoholToAdd);
-    if (IsDrunkIncapacitated() && !IsUnconscious())
-    {
-      SRP_SetUnconscious(10);
-    }
-  }
-
   float SRPAIVisionModifier()
   {
     float vision = 1.0;

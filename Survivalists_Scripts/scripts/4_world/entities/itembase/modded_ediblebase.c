@@ -6,7 +6,7 @@ modded class Edible_Base
 
     if (HasAlcoholEffect())
     {
-      consumer.AddAlcoholConsuption(50);
+      consumer.GetStatAlcoholism().Add(-(amount * 0.2));
       if( consumer.GetModifiersManager().IsModifierActive(SRP_eDrugModifiers.MDF_ALCOHOL ) )
       {
         consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_ALCOHOL );
