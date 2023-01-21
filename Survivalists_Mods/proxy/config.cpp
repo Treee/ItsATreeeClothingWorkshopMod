@@ -11,6 +11,67 @@ class CfgPatches
 
 class CfgSlots
 {
+  //================== Mask Wall
+  class Slot_SRP_Mask1
+	{
+		name="SRP_Mask1";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask2
+	{
+		name="SRP_Mask2";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask3
+	{
+		name="SRP_Mask3";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask4
+	{
+		name="SRP_Mask4";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask5
+	{
+		name="SRP_Mask5";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask6
+	{
+		name="SRP_Mask6";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask7
+	{
+		name="SRP_Mask7";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask8
+	{
+		name="SRP_Mask8";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask9
+	{
+		name="SRP_Mask9";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
+  class Slot_SRP_Mask10
+	{
+		name="SRP_Mask10";
+		displayName="Mask";
+		ghostIcon="set:dayz_inventory image:mask";
+	};
   //================== Tailoring
  
   class Slot_SRP_SewingMachine
@@ -2658,6 +2719,67 @@ class CfgNonAIVehicles
 		scope=2;
 		inventorySlot[]={"SRP_Pin5"};
 		model="Survivalists_Mods\proxy\srp_pin5_proxy.p3d";
+	};
+
+  class Proxysrp_mask1_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask1"};
+		model="Survivalists_Mods\proxy\srp_mask1_proxy.p3d";
+	};
+  class Proxysrp_mask2_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask2"};
+		model="Survivalists_Mods\proxy\srp_mask2_proxy.p3d";
+	};
+  class Proxysrp_mask3_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask3"};
+		model="Survivalists_Mods\proxy\srp_mask3_proxy.p3d";
+	};
+  class Proxysrp_mask4_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask4"};
+		model="Survivalists_Mods\proxy\srp_mask4_proxy.p3d";
+	};
+  class Proxysrp_mask5_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask5"};
+		model="Survivalists_Mods\proxy\srp_mask5_proxy.p3d";
+	};
+  class Proxysrp_mask6_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask6"};
+		model="Survivalists_Mods\proxy\srp_mask6_proxy.p3d";
+	};
+  class Proxysrp_mask7_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask7"};
+		model="Survivalists_Mods\proxy\srp_mask7_proxy.p3d";
+	};
+  class Proxysrp_mask8_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask8"};
+		model="Survivalists_Mods\proxy\srp_mask8_proxy.p3d";
+	};
+  class Proxysrp_mask9_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask9"};
+		model="Survivalists_Mods\proxy\srp_mask9_proxy.p3d";
+	};
+  class Proxysrp_mask10_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_Mask10"};
+		model="Survivalists_Mods\proxy\srp_mask10_proxy.p3d";
 	};
 
   class Proxysrp_book1_proxy: ProxyAttachment

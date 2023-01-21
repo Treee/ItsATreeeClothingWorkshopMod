@@ -3,7 +3,6 @@ class SRP_SleepMdfr extends ModifierBase
   bool m_IsSleepActive = false;
   bool m_HasCheckForBedding = false;
   float m_BeddingValue = 0;
-  float PASS_OUT_THRESHOLD = 0; // 5 minutes passed 0 is pass out territory
   float RESTFULLNESS_FIRECOMFORT = 0;
   float RESTFULLNESS_UNCONSCIOUS = 0;
 
@@ -36,7 +35,6 @@ class SRP_SleepMdfr extends ModifierBase
     if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
     {
       m_IsSleepActive = config.g_SRPIsSleepActive;
-      PASS_OUT_THRESHOLD = config.g_SRPSleepMaximumAwakeTime + config.g_SRPSleepPassOutThreshold; // 5 minutes passed 0 is pass out territory
       RESTFULLNESS_FIRECOMFORT = config.g_SRPRestfulnessFireComfortIncreaseAmount;
       RESTFULLNESS_UNCONSCIOUS = config.g_SRPRestfulnessUnconsciousIncreaseAmount;
 
@@ -53,7 +51,7 @@ class SRP_SleepMdfr extends ModifierBase
       RESTFULLNESS_EPINEPHRINE = config.g_SRPRestfulnessEpinephrineIncreaseAmount;
       RESTFULLNESS_HUNGER = config.g_SRPRestfulnessHungerIncreaseAmount;
       RESTFULLNESS_THIRST = config.g_SRPRestfulnessThirstIncreaseAmount;
-      // Print("[SRP_SleepMdfr] - [ActivateCondition] - g_SRPIsSleepActive TRUE :: PASSOUT THRESHHOLD " + PASS_OUT_THRESHOLD);      
+      // Print("[SRP_SleepMdfr] - [ActivateCondition] - g_SRPIsSleepActive TRUE :: ");      
     }
 	}
   override bool ActivateCondition(PlayerBase player)
@@ -97,9 +95,6 @@ class SRP_SleepMdfr extends ModifierBase
     // modify tiredness decrease with respect to shelter
     metabolic_speed += GetBuildingComfortRestfulness(player.IsSoundInsideBuilding(), player.IsAwake());    
     // Print(string.Format("SHELTER: %1", metabolic_speed));
-    // modify tiredness decrease with respect to being unconscious
-    metabolic_speed += GetUnconsciousRestfulness(player.IsUnconscious(), player.GetStatTiredness().Get());    
-    // Print(string.Format("UNCON: %1", metabolic_speed));
     // modify tiredness decrease with respect to heat comfort
     metabolic_speed += GetHeatComfortRestfulness(player);
     // Print(string.Format("HEAT COMFORT: %1", metabolic_speed));
@@ -260,16 +255,6 @@ class SRP_SleepMdfr extends ModifierBase
       {
         return RESTFULLNESS_INSIDESHELTER;
       }
-    }
-    return 0;
-  }
-  float GetUnconsciousRestfulness(bool isUnconscious, float currentTiredness)
-  {    
-    // we are uncon and suuuuuuuuuuper sleepy
-    if (isUnconscious && (currentTiredness > PASS_OUT_THRESHOLD))
-    {
-      // super recovery to avoid uncon loops
-      return RESTFULLNESS_UNCONSCIOUS;
     }
     return 0;
   }

@@ -817,6 +817,17 @@ class SRP_MeleeWall_Fence extends SRP_Container_Base
     return true;
   }
 };
+class SRP_MaskWall_Fence extends SRP_Container_Base
+{
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
+  override bool IgnoreOutOfReachCondition()
+  {
+    return true;
+  }
+};
 
 class SRP_MilitaryCaseSmall extends SRP_Container_Base{};
 class SRP_MilitaryCaseSmallBlack extends SRP_Container_Base{};

@@ -1,7 +1,6 @@
 modded class PlayerBase
 {
   protected EffectSound m_SleepSounds;
-  protected float m_TotalTiredness = 0;
 
   protected PlayerStat<float> m_StatTiredness;
   protected PlayerStat<float> m_StatAlcoholism;
@@ -20,18 +19,6 @@ modded class PlayerBase
   protected float m_AccumulatedAlcoholCheck = 0;
 
   protected float m_TotalContaminationProtection = 0;
-
-  override void Init()
-  {
-    super.Init();
-    RegisterNetSyncVariableFloat("m_TotalTiredness", 0, 65536);
-  }
-
-  override void OnVariablesSynchronized()
-  {
-    super.OnVariablesSynchronized();
-    ProcessPlayerSleep();
-  }
 
   void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
 	{
@@ -309,16 +296,6 @@ modded class PlayerBase
     return vision;
   }
 
-  float GetTotalTiredness()
-  {
-    return m_TotalTiredness;
-  }
-
-  void SetTotalTiredness(float tiredness)
-  {
-    m_TotalTiredness = tiredness;
-  }
-
   void SetIsNearComfortHeatSource(bool isNearComfort)
   {
     m_IsNearComfortHeatSource = isNearComfort;
@@ -327,11 +304,6 @@ modded class PlayerBase
   bool IsNearComfortHeatSource()
   {
     return m_IsNearComfortHeatSource;
-  }
-
-  void ProcessPlayerSleep()
-  {
-    // Print("[PlayerBase] - [ProcessPlayerSleep] - TotalTiredNess: " + m_TotalTiredness);
   }
   
   override void ProcessFeetDamageServer(int pUserInt)

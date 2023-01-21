@@ -7,17 +7,18 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
+      "DZ_Data",
 			"DZ_Characters",
       "DZ_Characters_Masks",
-      "Scarf"
+      "Scarf",
+      "Dressupbox"
 		};
 	};
 };
 class CfgVehicles
 {
   class Clothing;
-  class Bandana_ColorBase;
-  class GP5GasMask_Filter;
+  class Clothing_Base;
 
   //------------------------------------- MODDED OVERRIDE
   class Scarf_ColorBase: Clothing
@@ -38,6 +39,470 @@ class CfgVehicles
       "bluekitty",
       "greykitty",
       "pinkkitty"      
+    };
+  };
+  class DUB_PormaskR: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_PormaskL: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_PormaskFull: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_DismaskL: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_DismaskR: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_DismaskFull: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_DarkmaskL: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_DarkmaskR: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Deermask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_DevilmaskUnique: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Onimask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Predatormask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Silvertrimmask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Tuskmask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Plaguemask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Woodgoldmask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Jestermask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Bronzemask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Tribalmask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Spectermask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Clownmask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Zombiemask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Plaguecross: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Scrapmask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_ScrapmaskV2: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Snorkel: Clothing_Base
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_Humanmask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_GuyFawkesMask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
+  };
+  class DUB_WolfMask: Clothing
+  {
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
     };
   };
 
@@ -64,6 +529,19 @@ class CfgVehicles
       "MARPATWinter",
       "EMP6",
     };
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
   };
   class Balaclava3Holes_ColorBase: Clothing
 	{
@@ -87,6 +565,19 @@ class CfgVehicles
       "MARPATWinter",
       "EMP6",
     };
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
   };
   class SurgicalMask: Clothing
   {
@@ -94,6 +585,19 @@ class CfgVehicles
     colorVariants[]=
     {
       "Black"
+    };
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
     };
   };
   class HockeyMask: Clothing
@@ -103,6 +607,19 @@ class CfgVehicles
     {
       "Steel"
     };
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
   };
 
 	class GasMask: Clothing
@@ -110,12 +627,38 @@ class CfgVehicles
 		soundVoiceType="none";
 		soundVoicePriority=3;
     itemSize[]={2,2};
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
 	};
 	class GP5GasMask: Clothing
 	{
 		soundVoiceType="none";
 		soundVoicePriority=3;
     itemSize[]={2,2};
+    inventorySlot[]+=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
+    };
 	};
 
 
@@ -128,7 +671,17 @@ class CfgVehicles
     model="Survivalists_Characters\masks\srp_hannyamask_g.p3d";
     inventorySlot[]=
 		{
-			"Mask"
+			"Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -238,7 +791,17 @@ class CfgVehicles
     model="Survivalists_Characters\masks\srp_punishermask_g.p3d";
     inventorySlot[]=
 		{
-			"Mask"
+			"Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -314,7 +877,17 @@ class CfgVehicles
     model="Survivalists_Characters\masks\srp_bonemonstermask_g.p3d";
     inventorySlot[]=
 		{
-			"Mask"
+			"Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -390,7 +963,17 @@ class CfgVehicles
     model="Survivalists_Characters\masks\srp_shatteredmask_g.p3d";
     inventorySlot[]=
 		{
-			"Mask"
+			"Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -520,7 +1103,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Eyewear",
-      "Mask"
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -607,6 +1200,16 @@ class CfgVehicles
     {
       "Skullpike",
       "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
     };
 		weight=1000;
 		itemSize[]={3,3};
@@ -658,7 +1261,21 @@ class CfgVehicles
 		model="Survivalists_Characters\masks\SRP_Fake_Gasmask_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot[]={"Eyewear","Mask"};
+		inventorySlot[]=
+    {
+      "Eyewear",
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
+    };
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
@@ -746,7 +1363,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Headgear",
-      "Mask"
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -822,7 +1449,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Eyes",
-      "Mask"
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -902,7 +1539,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Eyes",
-      "Mask"
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -982,7 +1629,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Eyes",
-      "Mask"
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -1062,7 +1719,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Eyes",
-      "Mask"
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -1144,7 +1811,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Eyes",
-      "Mask"
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{
@@ -1223,7 +1900,17 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Eyes",
-      "Mask"
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
 		};
 		itemInfo[]=
 		{

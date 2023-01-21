@@ -1,22 +1,14 @@
 class SRPConfig
 {
   bool g_SRPIsSleepActive;
-  
-  int g_SRPSleepMaximumAwakeTime;
-  int g_SRPSleepYawnInterval;
 
-  float g_SRPSleepynessIncreaseAmount;
-  float g_SRPRestfulnessIncreaseAmount;
+  int g_SRPSleepYawnInterval;
+  
   float g_SRPRestfulnessFireComfortIncreaseAmount;
   float g_SRPRestfulnessUnconsciousIncreaseAmount;
   float g_SRPRestfulnessDaytimeIncreaseAmount;
   float g_SRPRestfulnessNighttimeIncreaseAmount;
   float g_SRPRestfulnessInsideShelterIncreaseAmount;
-
-  float g_SRPRestfulnessSprintingIncreaseAmount;
-  float g_SRPRestfulnessRunningIncreaseAmount;
-  float g_SRPRestfulnessWalkingIncreaseAmount;
-
   float g_SRPRestfulnessBrokenLegsIncreaseAmount;
   float g_SRPRestfulnessFeverIncreaseAmount;
   float g_SRPRestfulnessGluttonIncreaseAmount;
@@ -25,8 +17,6 @@ class SRPConfig
   float g_SRPRestfulnessEpinephrineIncreaseAmount;
   float g_SRPRestfulnessHungerIncreaseAmount;
   float g_SRPRestfulnessThirstIncreaseAmount;
-
-  float g_SRPRestfulnessMovementIncreaseAmount;
   float g_SRPSleepYawnThreshold;
   float g_SRPSleepPassOutThreshold;
 }
@@ -86,7 +76,7 @@ class SRPGlobals
   {
     config.g_SRPIsSleepActive = true;
 
-    config.g_SRPSleepYawnInterval = 120;        // seconds time in between yawns
+    config.g_SRPSleepYawnInterval = 180;        // seconds time in between yawns
 
     // things that increase sleep
     config.g_SRPRestfulnessFireComfortIncreaseAmount = 4.5;
@@ -105,7 +95,7 @@ class SRPGlobals
     config.g_SRPRestfulnessHungerIncreaseAmount = 0.15;
     config.g_SRPRestfulnessThirstIncreaseAmount = 0.15;
 
-    config.g_SRPSleepYawnThreshold = 0.8; // 80% sleepyness triggers yawning. 0% means yawning when fully awake
+    config.g_SRPSleepYawnThreshold = 0.2; // 80% sleepyness triggers yawning. 0% means yawning when fully awake
 
     config.g_SRPSleepPassOutThreshold = 600; // how many extra seconds do they get before they 100% pass out
   }

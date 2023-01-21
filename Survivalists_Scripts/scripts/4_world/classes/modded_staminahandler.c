@@ -166,12 +166,12 @@ modded class StaminaHandler
   protected float GetTirednessStaminaModifier()
   {
     // turn value between 0-1 then get it between 0-100
-    float normal = TranslateToNewRange(m_Player.GetTotalTiredness(),0,100,0,65536);
+    float normal = TranslateToNewRange(m_Player.GetStatTiredness().Get(),0,100,0,PlayerConstants.SL_TIREDNESS_MAX);
     // dont start reducing max stamina until we are 25% tired
-    if (normal < 25)    
-      return 0;    
+    if (normal > 75)    
+      return 0;
     
-    return normal - 25;// * 100;
+    return normal + 25;// * 100;
   }
 
   protected float TranslateToNewRange(float input, float newMin, float newMax, float oldMin = 0, float oldMax = 1)

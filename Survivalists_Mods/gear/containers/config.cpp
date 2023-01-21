@@ -4600,7 +4600,6 @@ class CfgVehicles
     displayName="Gun Wall Kit - Chain Fence";
     descriptionShort="A kit that holds everything needed for a makeshift gun wall";
   };
-
   class SRP_GunWall_Fence: Container_Base
 	{
 		scope=2;
@@ -4751,7 +4750,6 @@ class CfgVehicles
     displayName="Melee Weapon Wall Kit - Chain Fence";
     descriptionShort="A kit that holds everything needed for a makeshift melee wall display";
   };
-
   class SRP_MeleeWall_Fence: Container_Base
 	{
 		scope=2;
@@ -4774,6 +4772,57 @@ class CfgVehicles
       "SRP_Melee8",
       "SRP_Melee9",
       "SRP_Melee10",
+    };
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_chainlinkfence_co.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+          healthLevels[] = {{1,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.7,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.5,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.3,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"},{0.1,"Survivalists_Mods\gear\containers\data\srp_chainlinkfence.rvmat"}};
+				};
+			};
+		};
+	};
+
+  class SRP_MaskWall_Fence_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Mask Wall Kit - Chain Fence";
+    descriptionShort="A kit that holds everything needed for a makeshift mask wall display";
+  };
+  class SRP_MaskWall_Fence: Container_Base
+	{
+		scope=2;
+		displayName="Mask Wall";
+		descriptionShort="A makeshift mask display wall.";
+		model="Survivalists_Mods\gear\containers\srp_gunwall_masks.p3d";
+		physLayer="item_large";
+    clothingType = "male";
+		weight=10000;
+		itemSize[]={10,15};
+    itemsCargoSize[]={0,0};
+    attachments[]=
+    {
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10",
     };
     hiddenSelections[]=
     {
