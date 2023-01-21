@@ -108,7 +108,7 @@ class SRP_SleepMdfr extends ModifierBase
       metabolic_speed *= -1;
     
     float total = metabolic_speed * deltaT;
-    Print(string.Format("Starting: %1 Metobolic Speed: %2 Applied Delta: %3", player.GetStatTiredness().Get(), metabolic_speed, total));
+    // Print(string.Format("Starting: %1 Metobolic Speed: %2 Applied Delta: %3", player.GetStatTiredness().Get(), metabolic_speed, total));
     player.GetStatTiredness().Add( total );
   }
 //======================== ACTIVE AWAKE AND SLEEPING
