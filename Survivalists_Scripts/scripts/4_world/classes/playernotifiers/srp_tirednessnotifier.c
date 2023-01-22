@@ -27,7 +27,7 @@ class SRP_TirednessNotfr: NotifierBase
 		//DSLevels level = DetermineLevel( GetObservedValue(), PlayerConstants.THRESHOLD_ENERGY_WARNING, PlayerConstants.THRESHOLD_ENERGY_CRITICAL, PlayerConstants.THRESHOLD_ENERGY_BLINKING, PlayerConstants.THRESHOLD_ENERGY_EXTRA );
 	
 		EStatLevels tiredness_level = m_Player.GetStatLevelTiredness();
-    Print(string.Format("tiredness level: %1 from value: %2", tiredness_level, m_Player.GetStatTiredness().Get()));
+    // Print(string.Format("tiredness level: %1 from value: %2", tiredness_level, m_Player.GetStatTiredness().Get()));
 		DisplayElementTendency dis_elm = DisplayElementTendency.Cast(GetVirtualHud().GetElement(SRP_eDisplayElements.SRP_DELM_TDCY_TIREDNESS));
 		
 		if( dis_elm )
@@ -58,7 +58,7 @@ class SRP_TirednessNotfr: NotifierBase
 	
 	override float GetObservedValue()
 	{
-    Print("tiredness: " + m_Player.GetStatTiredness().Get());
+    // Print("tiredness: " + m_Player.GetStatTiredness().Get());
 		return m_Player.GetStatTiredness().Get();
 	}
 };
