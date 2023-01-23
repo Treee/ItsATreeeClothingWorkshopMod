@@ -887,6 +887,7 @@ class CfgVehicles
 		descriptionShort="An old fashioned fireplace meant to be used indoors.";
 		model="Survivalists_Mods\gear\camping\srp_fireplaceindoor_medieval.p3d";
 		overrideDrawArea="8.0";
+    physLayer="item_large";
 		openable=0;
 		itemSize[]={10,5};
 		itemsCargoSize[]={10,5};
@@ -976,6 +977,7 @@ class CfgVehicles
 		descriptionShort="An old fashioned fireplace meant to be used indoors.";
 		model="Survivalists_Mods\gear\camping\srp_fireplaceindoor_fancy.p3d";
 		overrideDrawArea="8.0";
+    physLayer="item_large";
 		openable=0;
 		itemSize[]={10,5};
 		itemsCargoSize[]={10,5};
@@ -1070,6 +1072,7 @@ class CfgVehicles
 		descriptionShort="An old fashioned fireplace meant to be used indoors.";
 		model="Survivalists_Mods\gear\camping\srp_fireplaceindoor_fancy.p3d";
 		overrideDrawArea="8.0";
+    physLayer="item_large";
 		openable=0;
 		itemSize[]={10,5};
 		itemsCargoSize[]={10,5};
@@ -1164,6 +1167,7 @@ class CfgVehicles
 		descriptionShort="An old fashioned fireplace meant to be used indoors.";
 		model="Survivalists_Mods\gear\camping\srp_fireplaceindoor_fancy.p3d";
 		overrideDrawArea="8.0";
+    physLayer="item_large";
 		openable=0;
 		itemSize[]={10,5};
 		itemsCargoSize[]={10,5};
@@ -1258,6 +1262,7 @@ class CfgVehicles
 		descriptionShort="An old fashioned fireplace meant to be used indoors.";
 		model="Survivalists_Mods\gear\camping\srp_fireplaceindoor_fancy.p3d";
 		overrideDrawArea="8.0";
+    physLayer="item_large";
 		openable=0;
 		itemSize[]={10,5};
 		itemsCargoSize[]={10,5};

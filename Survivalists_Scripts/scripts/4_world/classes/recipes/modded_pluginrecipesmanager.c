@@ -725,6 +725,8 @@ modded class PluginRecipesManager
     //==========================================================Tools
       RegisterRecipe(new Craft_SRP_Heatpack);
 
+      RegisterRecipe(new Craft_SRP_MakeshiftLighter);
+
       RegisterRecipe(new Craft_SRP_HandPlane_Crude);
       RegisterRecipe(new Craft_SRP_HandPlane_Metal);
 

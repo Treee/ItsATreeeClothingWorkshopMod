@@ -956,6 +956,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Medieval Fireplace (Free)" (https://skfb.ly/6XOZE) by wolfgar74 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Lighter" (https://skfb.ly/6WSY8) by laharudro is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Lighter" (https://skfb.ly/6XCH8) by Ekbercg is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

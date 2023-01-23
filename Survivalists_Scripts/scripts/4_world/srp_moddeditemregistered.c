@@ -57,6 +57,8 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_CrushedHerb_Colorbase", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
 		pType.AddItemInHandsProfileIK("BatteryCharger_VoltMeter", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,"dz/anims/anm/player/ik/gear/battery_charger.anm");
 
+    pType.AddItemInHandsProfileIK("SRP_Zippo_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_1h_lighter.asi", pBehavior,"dz/anims/anm/player/ik/gear/petrol_lighter.anm");	
+    pType.AddItemInHandsProfileIK("SRP_JunkLighter_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_1h_lighter.asi", pBehavior,"dz/anims/anm/player/ik/gear/petrol_lighter.anm");	
     //Clothing
     
     // Vest Pouches

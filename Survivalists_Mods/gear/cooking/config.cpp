@@ -39,6 +39,148 @@ class CfgVehicles
 	};
 
   // ----------------------  CUSTOM STUFF OVERRIDES
+	class SRP_Zippo_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Zippo Lighter";
+		descriptionShort="A zippo lighter. Known for its durability, this lighter will last many fires.";
+		model="Survivalists_Mods\gear\cooking\srp_zippo.p3d";
+		rotationFlags=12;
+		absorbency=0;
+		weight=50;
+		itemSize[]={1,1};
+		stackedUnit="ml";
+		quantityBar=1;
+		varQuantityInit=50;
+		varQuantityMin=0;
+		varQuantityMax=50;
+		varQuantityDestroyOnMin=0;
+		destroyOnEmpty=0;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cooking\data\srp_zippo_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\cooking\data\srp_zippo.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\cooking\data\srp_zippo.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\cooking\data\srp_zippo.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\cooking\data\srp_zippo.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\cooking\data\srp_zippo.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class LighterZippo
+				{
+					soundSet="Lighter_Soundset";
+					id=201;
+				};
+			};
+		};
+		soundImpactType="plastic";
+	};
+  class SRP_Zippo_Silver: SRP_Zippo_ColorBase
+	{
+		scope=2;
+		displayName="Zippo Lighter - Silver";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cooking\data\srp_zippo_co.paa"};
+	};
+  class SRP_Zippo_Survivalists: SRP_Zippo_ColorBase
+	{
+		scope=2;
+		displayName="Zippo Lighter - Survivalists";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cooking\data\srp_zippo_survivalists_co.paa"};
+	};
+  class SRP_Zippo_Stag: SRP_Zippo_ColorBase
+	{
+		scope=2;
+		displayName="Zippo Lighter - Stag";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cooking\data\srp_zippo_stag_co.paa"};
+	};
+  class SRP_Zippo_Espen: SRP_Zippo_ColorBase
+	{
+		scope=2;
+		displayName="Zippo Lighter - Espen";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cooking\data\srp_zippo_espen_co.paa"};
+	};
+  class SRP_Zippo_LocknSons: SRP_Zippo_ColorBase
+	{
+		scope=2;
+		displayName="Zippo Lighter - Lock & Sons";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cooking\data\srp_zippo_locknsons_co.paa"};
+	};
+  class SRP_JunkLighter_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Junk Lighter";
+		descriptionShort="A makeshift lighter. Careful not to zap yourself.";
+		model="Survivalists_Mods\gear\cooking\srp_junklighter.p3d";
+		rotationFlags=12;
+		absorbency=0;
+		weight=50;
+		itemSize[]={1,1};
+		stackedUnit="ml";
+		quantityBar=1;
+		varQuantityInit=10;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varQuantityDestroyOnMin=0;
+		destroyOnEmpty=0;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cooking\data\srp_junklighter_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\cooking\data\srp_junklighter.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\cooking\data\srp_junklighter.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\cooking\data\srp_junklighter.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\cooking\data\srp_junklighter.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\cooking\data\srp_junklighter.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class LighterZippo
+				{
+					soundSet="Lighter_Soundset";
+					id=201;
+				};
+			};
+		};
+		soundImpactType="plastic";
+	};
+  class SRP_JunkLighter_Basic: SRP_JunkLighter_ColorBase
+	{
+		scope=2;
+		displayName="Junk Lighter";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cooking\data\srp_junklighter_co.paa"};
+	};
 
   class SRP_PortableGasLamp: Inventory_Base
 	{

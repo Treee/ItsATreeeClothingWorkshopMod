@@ -184,6 +184,102 @@ class SRP_FireplaceIndoor_Fancy extends SRP_BBQ_ColorBase
 		RemoveAction(ActionCloseBarrelHoles);
 	}
 };
-class SRP_FireplaceIndoor_FancyPink extends SRP_FireplaceIndoor_Fancy{};
-class SRP_FireplaceIndoor_FancyBlue extends SRP_FireplaceIndoor_Fancy{};
-class SRP_FireplaceIndoor_FancyGreen extends SRP_FireplaceIndoor_Fancy{};
+class SRP_FireplaceIndoor_FancyPink extends SRP_BBQ_ColorBase
+{
+  void SRP_FireplaceIndoor_FancyPink()
+  {
+    Open();
+  }
+  override bool IsFireplaceIndoor()
+	{
+		return true;
+	}
+
+  override bool CanDisplayAttachmentCategory( string category_name )
+	{
+		return true;
+	}
+  
+  override protected vector GetFireEffectPosition()
+	{
+		return Vector( 0, 0.208, 0 );
+	}
+	
+	override protected vector GetSmokeEffectPosition()
+	{
+		return Vector( 0, 2, -0.253 );
+	}
+  override void SoundBarrelOpenPlay(){}
+	override void SoundBarrelClosePlay(){}
+  override void SetActions()
+	{
+		RemoveAction(ActionOpenBarrelHoles);
+		RemoveAction(ActionCloseBarrelHoles);
+	}
+};
+class SRP_FireplaceIndoor_FancyBlue extends SRP_BBQ_ColorBase
+{
+  void SRP_FireplaceIndoor_FancyBlue()
+  {
+    Open();
+  }
+  override bool IsFireplaceIndoor()
+	{
+		return true;
+	}
+
+  override bool CanDisplayAttachmentCategory( string category_name )
+	{
+		return true;
+	}
+  
+  override protected vector GetFireEffectPosition()
+	{
+		return Vector( 0, 0.208, 0 );
+	}
+	
+	override protected vector GetSmokeEffectPosition()
+	{
+		return Vector( 0, 2, -0.253 );
+	}
+  override void SoundBarrelOpenPlay(){}
+	override void SoundBarrelClosePlay(){}
+  override void SetActions()
+	{
+		RemoveAction(ActionOpenBarrelHoles);
+		RemoveAction(ActionCloseBarrelHoles);
+	}
+};
+class SRP_FireplaceIndoor_FancyGreen extends SRP_BBQ_ColorBase
+{
+  void SRP_FireplaceIndoor_FancyGreen()
+  {
+    Open();
+  }
+  override bool IsFireplaceIndoor()
+	{
+		return true;
+	}
+
+  override bool CanDisplayAttachmentCategory( string category_name )
+	{
+		return true;
+	}
+  
+  override protected vector GetFireEffectPosition()
+	{
+		return Vector( 0, 0.208, 0 );
+	}
+	
+	override protected vector GetSmokeEffectPosition()
+	{
+		return Vector( 0, 2, -0.253 );
+	}
+  override void SoundBarrelOpenPlay(){}
+	override void SoundBarrelClosePlay(){}
+  override void SetActions()
+	{
+		RemoveAction(ActionOpenBarrelHoles);
+		RemoveAction(ActionCloseBarrelHoles);
+	}
+};
