@@ -960,6 +960,7 @@ class CfgVehicles
 		{
 			"ashes"
 		};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_stone_logs_co.paa"};
 	};
   class SRP_FireplaceIndoor_Fancy_Kit: SRP_KitBase //
 	{
@@ -1046,8 +1047,296 @@ class CfgVehicles
 		};
 		hiddenSelections[]=
 		{
-			"ashes"
+			"ashes",
+      "zbytek"
 		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_stone_logs_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_fancy_co.paa"
+    };
+	};
+  class SRP_FireplaceIndoor_FancyPink_Kit: SRP_KitBase //
+	{
+		scope=2;
+		displayName="Indoor Fireplace Kit - Fancy Pink";
+		descriptionShort="An Indoor Fireplace Kit - Fancy Pink";
+    projectionTypename="SRP_FireplaceIndoor_FancyPink";
+	};
+  class SRP_FireplaceIndoor_FancyPink: FireplaceIndoor
+	{
+		scope=2;
+		displayName="Indoor Fireplace - FancyPink";
+		descriptionShort="An old fashioned fireplace meant to be used indoors.";
+		model="Survivalists_Mods\gear\camping\srp_fireplaceindoor_fancy.p3d";
+		overrideDrawArea="8.0";
+		openable=0;
+		itemSize[]={10,5};
+		itemsCargoSize[]={10,5};
+		attachments[]=
+		{
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+			"DirectCookingA",
+			"DirectCookingB",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+			"SmokingD"
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Smoking
+			{
+				name="$STR_attachment_Smoking";
+				description="";
+				attachmentSlots[]=
+				{
+					"SmokingA",
+					"SmokingB",
+					"SmokingC",
+					"SmokingD"
+				};
+				icon="set:dayz_inventory image:cookingequipment";
+			};
+			class CookingEquipment
+			{
+				name="$STR_attachment_CookingEquipment0";
+				description="";
+				attachmentSlots[]=
+				{
+					"DirectCookingA",
+					"DirectCookingB"
+				};
+				icon="set:dayz_inventory image:cookingequipment";
+			};
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
+		hiddenSelections[]=
+		{
+			"ashes",
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_stone_logs_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_fancy_pinkish_co.paa"
+    };
+	};
+  class SRP_FireplaceIndoor_FancyBlue_Kit: SRP_KitBase //
+	{
+		scope=2;
+		displayName="Indoor Fireplace Kit - Fancy Blue";
+		descriptionShort="An Indoor Fireplace Kit - Fancy Blue";
+    projectionTypename="SRP_FireplaceIndoor_FancyBlue";
+	};
+  class SRP_FireplaceIndoor_FancyBlue: FireplaceIndoor
+	{
+		scope=2;
+		displayName="Indoor Fireplace - FancyBlue";
+		descriptionShort="An old fashioned fireplace meant to be used indoors.";
+		model="Survivalists_Mods\gear\camping\srp_fireplaceindoor_fancy.p3d";
+		overrideDrawArea="8.0";
+		openable=0;
+		itemSize[]={10,5};
+		itemsCargoSize[]={10,5};
+		attachments[]=
+		{
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+			"DirectCookingA",
+			"DirectCookingB",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+			"SmokingD"
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Smoking
+			{
+				name="$STR_attachment_Smoking";
+				description="";
+				attachmentSlots[]=
+				{
+					"SmokingA",
+					"SmokingB",
+					"SmokingC",
+					"SmokingD"
+				};
+				icon="set:dayz_inventory image:cookingequipment";
+			};
+			class CookingEquipment
+			{
+				name="$STR_attachment_CookingEquipment0";
+				description="";
+				attachmentSlots[]=
+				{
+					"DirectCookingA",
+					"DirectCookingB"
+				};
+				icon="set:dayz_inventory image:cookingequipment";
+			};
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
+		hiddenSelections[]=
+		{
+			"ashes",
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_stone_logs_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_fancy_blueish_co.paa"
+    };
+	};
+  class SRP_FireplaceIndoor_FancyGreen_Kit: SRP_KitBase //
+	{
+		scope=2;
+		displayName="Indoor Fireplace Kit - Fancy Green";
+		descriptionShort="An Indoor Fireplace Kit - Fancy Green";
+    projectionTypename="SRP_FireplaceIndoor_FancyGreen";
+	};
+  class SRP_FireplaceIndoor_FancyGreen: FireplaceIndoor
+	{
+		scope=2;
+		displayName="Indoor Fireplace - FancyGreen";
+		descriptionShort="An old fashioned fireplace meant to be used indoors.";
+		model="Survivalists_Mods\gear\camping\srp_fireplaceindoor_fancy.p3d";
+		overrideDrawArea="8.0";
+		openable=0;
+		itemSize[]={10,5};
+		itemsCargoSize[]={10,5};
+		attachments[]=
+		{
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+			"DirectCookingA",
+			"DirectCookingB",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+			"SmokingD"
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Smoking
+			{
+				name="$STR_attachment_Smoking";
+				description="";
+				attachmentSlots[]=
+				{
+					"SmokingA",
+					"SmokingB",
+					"SmokingC",
+					"SmokingD"
+				};
+				icon="set:dayz_inventory image:cookingequipment";
+			};
+			class CookingEquipment
+			{
+				name="$STR_attachment_CookingEquipment0";
+				description="";
+				attachmentSlots[]=
+				{
+					"DirectCookingA",
+					"DirectCookingB"
+				};
+				icon="set:dayz_inventory image:cookingequipment";
+			};
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
+		hiddenSelections[]=
+		{
+			"ashes",
+      "zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_stone_logs_co.paa",
+      "Survivalists_Mods\gear\camping\data\srp_fireplaceindoor_fancy_greenish_co.paa"
+    };
 	};
 
   class SRP_Bowl_Wood: Inventory_Base  // Bp_Bowl

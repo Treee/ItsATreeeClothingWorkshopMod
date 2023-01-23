@@ -184,3 +184,6 @@ class SRP_FireplaceIndoor_Fancy extends SRP_BBQ_ColorBase
 		RemoveAction(ActionCloseBarrelHoles);
 	}
 };
+class SRP_FireplaceIndoor_FancyPink extends SRP_FireplaceIndoor_Fancy{};
+class SRP_FireplaceIndoor_FancyBlue extends SRP_FireplaceIndoor_Fancy{};
+class SRP_FireplaceIndoor_FancyGreen extends SRP_FireplaceIndoor_Fancy{};

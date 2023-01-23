@@ -69,6 +69,9 @@ class SRP_BBQ_Grill_Kit extends SRP_KitBase{};
 class SRP_BBQ_FirePit_Kit extends SRP_KitBase{};
 class SRP_FireplaceIndoor_Medieval_Kit extends SRP_KitBase{};
 class SRP_FireplaceIndoor_Fancy_Kit extends SRP_KitBase{};
+class SRP_FireplaceIndoor_FancyPink_Kit extends SRP_KitBase{};
+class SRP_FireplaceIndoor_FancyBlue_Kit extends SRP_KitBase{};
+class SRP_FireplaceIndoor_FancyGreen_Kit extends SRP_KitBase{};
 
 class SRP_ShootingTarget_Kit extends SRP_KitBase{};
 class SRP_ShootingTargets_Kit extends SRP_KitBase{};

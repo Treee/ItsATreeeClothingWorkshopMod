@@ -253,6 +253,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_Eyepatch_Ragged);
       RegisterRecipe(new Craft_SRP_Eyepatch_RaggedBlack);
       RegisterRecipe(new Craft_SRP_Eyepatch_RaggedBrown);
+      RegisterRecipe(new SRP_Craft_SRP_BoneMonsterMask);
 
       // Jackets / TOPS
 		  RegisterRecipe(new Craft_SRP_LeatherArmband);
