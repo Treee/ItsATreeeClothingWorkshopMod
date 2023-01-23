@@ -1112,6 +1112,7 @@ class SRP_Openable_Container extends Barrel_ColorBase
 
   protected override void UpdateVisualState()
 	{
+    super.UpdateVisualState();
 		if ( IsOpen() )
 		{
 			SetAnimationPhase("Lid",1);
@@ -1181,3 +1182,7 @@ class SRP_WoodenBox_Square extends SRP_Openable_Container
   }
 };
 class SRP_MedicalCurtains extends SRP_Openable_Container{};
+
+class SRP_MetalSafe_ColorBase extends SRP_Openable_Container{};
+class SRP_MetalSafe_Red extends SRP_MetalSafe_ColorBase{};
+class SRP_MetalSafe_Tall extends SRP_MetalSafe_ColorBase{};

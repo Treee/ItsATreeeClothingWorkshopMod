@@ -75,6 +75,9 @@ class SRP_GunWall_Fence_Kit extends SRP_KitBase{};
 class SRP_MeleeWall_Fence_Kit extends SRP_KitBase{};
 class SRP_MaskWall_Fence_Kit extends SRP_KitBase{};
 
+class SRP_MetalSafe_Red_Kit extends SRP_KitBase{};
+class SRP_MetalSafe_Tall_Kit extends SRP_KitBase{};
+
 class SRP_StreetLightLarge_Kit extends SRP_KitBase{};
 class SRP_StreetLightLarge_Metal_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase{};

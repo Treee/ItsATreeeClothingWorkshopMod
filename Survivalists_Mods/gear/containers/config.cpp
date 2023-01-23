@@ -4845,6 +4845,144 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_MetalSafe_ColorBase: Container_Base
+	{
+		scope=0;
+		displayName="Metal Safe";
+		descriptionShort="A somewhat secure metal box.";
+		model="Survivalists_Mods\gear\containers\srp_metalsafe.p3d";
+    carveNavmesh=1;
+		itemBehaviour=2;
+    useEntityHierarchy="true";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,15};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_metal_safe_co.paa"
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={10,5};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class AnimationSources
+		{
+      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
+      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\containers\data\srp_metal_safe.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\containers\data\srp_metal_safe.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\containers\data\srp_metal_safe.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\containers\data\srp_metal_safe.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\containers\data\srp_metal_safe.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=8;
+					};
+					class Blood
+					{
+						damage=8;
+					};
+					class Shock
+					{
+						damage=8;
+					};
+				};
+			};
+		};
+	};
+  class SRP_MetalSafe_Red_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Metal Safe Kit - Red";
+    descriptionShort="A kit that holds everything needed for a makeshift safe";
+    projectionTypename="SRP_MetalSafe_Red";
+  };
+  class SRP_MetalSafe_Red: SRP_MetalSafe_ColorBase
+  {
+    scope=2;
+		displayName="Metal Safe - Red";
+  };
+  class SRP_MetalSafe_Tall_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Metal Safe Kit - Tall";
+    descriptionShort="A kit that holds everything needed for a makeshift safe";
+    projectionTypename="SRP_MetalSafe_Tall";
+  };
+  class SRP_MetalSafe_Tall: SRP_MetalSafe_ColorBase
+  {
+    scope=2;
+		displayName="Metal Safe - Tall";
+    model="Survivalists_Mods\gear\containers\srp_metalsafe_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_metal_safe_large_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=5000;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\containers\data\srp_metal_safe_large.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\containers\data\srp_metal_safe_large.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\containers\data\srp_metal_safe_large.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\containers\data\srp_metal_safe_large.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\containers\data\srp_metal_safe_large.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=8;
+					};
+					class Blood
+					{
+						damage=8;
+					};
+					class Shock
+					{
+						damage=8;
+					};
+				};
+			};
+		};
+  };
+
 //=================================================================== POTS
   class SRP_PotteryPot_ColorBase: Inventory_Base
 	{
