@@ -952,6 +952,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Vintage Money safe" (https://skfb.ly/6YGGw) by Marcin.Kwiatkowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Fireplace" (https://skfb.ly/6XxKA) by Shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Medieval Fireplace (Free)" (https://skfb.ly/6XOZE) by wolfgar74 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic
