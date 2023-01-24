@@ -12,7 +12,7 @@ modded class ActionOpenDoors
       // Print(string.Format("name: %1 target component: %2", windowPrefix, name));
 			if (windowPrefix == "window")
       {
-        return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player);
+        return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player.GetPosition());
       }
     }
     return superCondition;
@@ -43,7 +43,7 @@ modded class ActionCloseDoors
       // Print(string.Format("name: %1 target component: %2", windowPrefix, name));
 			if (windowPrefix == "window")
       {
-        return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player);
+        return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player.GetPosition());
       }
     }
     // if a shipping container has been opened and a random event happened, dont let it close

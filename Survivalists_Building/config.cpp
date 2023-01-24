@@ -6,15 +6,6 @@ class CfgMods
 		author = "ItsATreee";
 		name = "Survivalists_Building";
 		dir = "Survivalists_Building";
-		dependencies[] = {"World"};
-		class defs
-		{
-			class worldScriptModule
-			{
-				value = "";
-        files[] = {"Survivalists_Building/scripts/4_world"};			
-      };
-		};
 	};
 };
 class CfgPatches

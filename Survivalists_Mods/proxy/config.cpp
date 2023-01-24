@@ -2671,7 +2671,7 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 	class ProxyMeat_steak;
-
+  
   class Proxysrp_barrel1_proxy: ProxyAttachment
 	{
 		scope=2;

@@ -8,7 +8,6 @@ class CfgPatches
 		requiredAddons[]=
 		{
       "DZ_Structures_Specific",
-      "Survivalists_Building_Gear_Camping"
 		};
 	};
 };

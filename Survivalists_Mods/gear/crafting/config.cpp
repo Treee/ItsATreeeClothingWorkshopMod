@@ -87,6 +87,18 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_Building_KitBase: SRP_KitBase
+  {
+		displayName="Building Kit";
+		descriptionShort="A wooden box used to transport small items. Find a suitable place to construct. Can be disassembled.";
+		hiddenSelections[]={"camoground"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_co.paa"
+		};
+
+  };
+
 //========================================== VANILLA OVERRIDE
   class Rope: Inventory_Base
 	{

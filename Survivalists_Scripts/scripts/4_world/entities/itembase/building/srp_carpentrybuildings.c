@@ -1,6 +1,7 @@
 class SRP_DefaultHouse extends BuildingSuper
 {
   const float MAX_ACTION_WINDOW_DETECTION_DISTANCE 		= 1.65;		//meters
+  const float MAX_TREEHOUSE_TREE_DETECTION_DISTANCE 		= 0.5;		//meters
 
   override bool IsBuilding()
 	{
@@ -24,12 +25,12 @@ class SRP_DefaultHouse extends BuildingSuper
 	}
 
   // Check if player is "inside"
-  bool HasProperDistanceToSRPWindow( string selection, PlayerBase player )
+  bool HasProperDistanceToSRPWindow( string selection, vector playerPosition )
 	{
 		if ( MemoryPointExists( selection ) )
 		{
 			vector selection_pos = ModelToWorld( GetMemoryPointPos( selection ) );
-			float distance = vector.Distance( selection_pos, player.GetPosition() );
+			float distance = vector.Distance( selection_pos, playerPosition );
       // Print(string.Format("mem point exists: position: %1 distance: %2", selection_pos, distance));
 			if ( distance >= MAX_ACTION_WINDOW_DETECTION_DISTANCE )
 			{
@@ -38,6 +39,21 @@ class SRP_DefaultHouse extends BuildingSuper
 		}		
 		return true;
 	}
+  // Check if the treehouse has a tree inside the little hole
+  bool HasProperDistanceToTree(string selection, vector buildingPosition)
+  {
+		if ( MemoryPointExists( selection ) )
+		{
+			vector selection_pos = ModelToWorld( GetMemoryPointPos( selection ) );
+			float distance = vector.Distance( selection_pos, buildingPosition );
+      // Print(string.Format("mem point exists: position: %1 distance: %2", selection_pos, distance));
+			if ( distance <= MAX_TREEHOUSE_TREE_DETECTION_DISTANCE )
+			{
+				return true;
+			}
+		}	
+    return false;	 
+  }
 };
 
 class SRP_Carpentry_WoodenOutHouse extends SRP_DefaultHouse{};

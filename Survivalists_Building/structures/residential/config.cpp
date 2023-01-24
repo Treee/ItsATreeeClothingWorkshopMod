@@ -8,14 +8,13 @@ class CfgPatches
 		requiredAddons[]=
 		{
       "DZ_Structures_Residential",
-      "Survivalists_Building_Gear_Camping"
+      "Survivalists_Mods_Gear_Crafting"
 		};
 	};
 };
 class CfgVehicles
 {
   class HouseNoDestruct;
-  class Fence;
 
   class SRP_Building_KitBase;
 // ---------------------PRE FABS
@@ -278,6 +277,7 @@ class CfgVehicles
 		};
 	};
 
+
   class Land_srp_treehouse_circular_Kit: SRP_Building_KitBase
 	{
 		scope=2;
@@ -300,7 +300,9 @@ class CfgVehicles
   class Land_srp_treehouse_box: SRP_PrefabHouse_Base
 	{
 		scope=2;
-		model="Survivalists_Building\structures\residential\srp_treehouse_box.p3d";
+		// model="Survivalists_Building\structures\residential\srp_treehouse_box.p3d";
+		model="Survivalists_Building\structures\residential\srp_treehouse_boxv2.p3d";
+    minPlacingDist=20;
 	};
   class Land_srp_treehouse_doubleplatform_Kit: SRP_Building_KitBase
 	{
