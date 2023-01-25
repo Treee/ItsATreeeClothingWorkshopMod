@@ -1303,7 +1303,7 @@ class CfgVehicles
 			};
 		};
 		hiddenSelections[]={"cs_raw"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\chicken_raw_co.paa","Survivalists_Food\food\data\chicken_rotten_co.paa","Survivalists_Food\food\data\chicken_baked_co.paa","Survivalists_Food\food\data\chicken_boiled_co.paa","Survivalists_Food\food\data\chicken_boiled_co.paa","Survivalists_Food\food\data\chicken_burnt_co.paa",};
+		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\chicken_raw_co.paa","Survivalists_Food\food\data\chicken_rotten_co.paa","Survivalists_Food\food\data\chicken_baked_co.paa","Survivalists_Food\food\data\chicken_boiled_co.paa","Survivalists_Food\food\data\chicken_boiled_co.paa","Survivalists_Food\food\data\chicken_burnt_co.paa"};
 		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\chicken.rvmat"};
 		class DamageSystem
 		{
@@ -3727,6 +3727,23 @@ class CfgVehicles
 		descriptionShort="Large chunks of brain, scraps of orange armbands, clumps of rancid cheese and uncooked rice clumped together in a putrid sulfuric stench.";
 		hiddenSelections[]={"camoground"};
     hiddenSelectionsTextures[]={"Survivalists_Food\food\data\animal_guts_PigletsCookiev3_co.paa"};
+    class Nutrition
+		{
+			fullnessIndex=1;
+			energy=5000;
+			water=5000;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
+  class SRP_Guts_PigletCookiesBlueStim: Guts
+	{
+		scope=2;
+		displayName="PiG's Stim-Pug Blue Cookie";
+		descriptionShort="Shreds of rubber tire, marshmellow fluff and lockpicks are mixed with blue mutant fish flesh, blue vitamins and butane. Eat at your own risk.";
+		hiddenSelections[]={"camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\animal_guts_PigletsCookiev4_co.paa"};
     class Nutrition
 		{
 			fullnessIndex=1;

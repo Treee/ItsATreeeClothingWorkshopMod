@@ -801,7 +801,10 @@ class CfgVehicles
     {
       "Green",
       "Tan",      
-      "Black",      
+      "Black",
+      "Blue",
+      "Pink",
+      "Teal" 
     };
 		itemSize[]={7,7};
 		itemBehaviour=0;
@@ -996,7 +999,10 @@ class CfgVehicles
     {
       "Green",
       "Tan",      
-      "Black",      
+      "Black",
+      "Blue",
+      "Pink",
+      "Teal"
     };
 		itemSize[]={6,6};
     itemBehaviour=0;
@@ -2119,7 +2125,10 @@ class CfgVehicles
     {
       "Green",
       "Tan",      
-      "Black",      
+      "Black",    
+      "Blue",
+      "Pink",
+      "Teal"
     };
 		weight=12000;
 		itemSize[]={2,3};

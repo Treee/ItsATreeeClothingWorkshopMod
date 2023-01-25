@@ -16,3 +16,4 @@ class SRP_Guts_PigletCookiesAcid extends Guts
 
 class SRP_Guts_PigletCookiesMetal extends SRP_Guts_PigletCookiesAcid{};
 class SRP_Guts_PigletCookiesBrains extends SRP_Guts_PigletCookiesAcid{};
+class SRP_Guts_PigletCookiesBlueStim extends SRP_Guts_PigletCookiesAcid{};

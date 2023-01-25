@@ -1586,6 +1586,42 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
 		};	
 	};
+  class SRP_Ratnik_Blue: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Blue_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Pink: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Pink_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Teal: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Teal_CO.paa"
+		};	
+	};
   class SRP_Ratnik_Armor_Black: SRP_Ratnik_Armor_ColorBase
 	{
     scope=2;
@@ -1622,6 +1658,42 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
 		};	
 	};
+  class SRP_Ratnik_Armor_Blue: SRP_Ratnik_Armor_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Blue_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Armor_Pink: SRP_Ratnik_Armor_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Pink_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_Armor_Teal: SRP_Ratnik_Armor_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Teal_CO.paa"
+		};	
+	};
   class SRP_Light_Ratnik_Black: SRP_Light_Ratnik_ColorBase
 	{
 		scope=2;
@@ -1644,6 +1716,30 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Green_CO.paa"
+		};	
+	};
+  class SRP_Light_Ratnik_Blue: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Blue_CO.paa"
+		};	
+	};
+  class SRP_Light_Ratnik_Pink: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Pink_CO.paa"
+		};	
+	};
+  class SRP_Light_Ratnik_Teal: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Teal_CO.paa"
 		};	
 	};
 	class SRP_Chestrig_Tan: SRP_Chestrig_ColorBase

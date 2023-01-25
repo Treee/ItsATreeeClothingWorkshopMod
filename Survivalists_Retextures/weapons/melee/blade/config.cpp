@@ -15,8 +15,46 @@ class CfgPatches
 };
 class CfgVehicles
 {
+  class Hatchet;
   class SRP_BerserkSword;
   class SRP_WitcherSword_ColorBase;
+
+  class Hatchet_Flowers: Hatchet
+	{
+		scope=2;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\weapons\melee\blade\data\hatchet_flowers_co.paa"
+    };
+	};
+  class Hatchet_Raccoon: Hatchet
+	{
+		scope=2;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\weapons\melee\blade\data\hatchet_Raccoon_co.paa"
+    };
+	};
+  class Hatchet_Splat: Hatchet
+	{
+		scope=2;
+		hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\weapons\melee\blade\data\hatchet_Splat_co.paa"
+    };
+	};
 
 	class SRP_BerserkSword_Illusive: SRP_BerserkSword
 	{
