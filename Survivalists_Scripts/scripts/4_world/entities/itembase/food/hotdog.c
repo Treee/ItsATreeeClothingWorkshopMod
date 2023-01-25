@@ -2,7 +2,7 @@ class srpHotdog extends Edible_Base
 {
 	override bool CanBeCooked()
 	{
-		return true;
+		return false;
 	}		
 	
 	override bool IsMeat()
@@ -11,7 +11,7 @@ class srpHotdog extends Edible_Base
 	}
 	override bool CanBeCookedOnStick()
 	{
-		return true;
+		return false;
 	}
 	override bool CanDecay()
 	{

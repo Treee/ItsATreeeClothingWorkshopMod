@@ -1622,6 +1622,30 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Teal_CO.paa"
 		};	
 	};
+  class SRP_Ratnik_WolfFur: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Test1_CO.paa"
+		};	
+	};
+  class SRP_Ratnik_BearFur: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Test2_CO.paa"
+		};	
+	};
   class SRP_Ratnik_Armor_Black: SRP_Ratnik_Armor_ColorBase
 	{
     scope=2;

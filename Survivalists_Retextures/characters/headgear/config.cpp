@@ -49,7 +49,7 @@ class CfgVehicles
   class BaseballCap_MilitaryPatrolTan_Backwards;
   class SRP_EarProtection_ColorBase;
   class SRP_FrakenArmor_Helmet_ColorBase;
-
+  class SRP_Alchemist_Hat;
 
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
 	{
@@ -1755,6 +1755,43 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\headgear\data\srp_frakenarmor_helmet_co.paa"
+		};
+	};
+
+  class SRP_Alchemist_Hat_Green: SRP_Alchemist_Hat
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\Alchemist_Hat_green_co.paa"
+		};
+	};
+  class SRP_Alchemist_Hat_Pink: SRP_Alchemist_Hat
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\Alchemist_Hat_pink_co.paa"
+		};
+	};
+  class SRP_Alchemist_Hat_Night: SRP_Alchemist_Hat
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\Alchemist_Hat_night_co.paa"
 		};
 	};
 };

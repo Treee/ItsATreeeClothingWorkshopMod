@@ -2932,6 +2932,13 @@ class CfgVehicles
 		{
 			"Headgear"
 		};
+    rootClassName="SRP_Alchemist_Hat";
+    colorVariants[]=
+    {
+      "Green",
+      "Pink",
+      "Night",
+    }; 
 		simulation="clothing";
 		vehicleClass="Clothing";
 		itemInfo[]=
