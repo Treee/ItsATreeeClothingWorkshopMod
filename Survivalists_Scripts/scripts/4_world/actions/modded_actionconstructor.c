@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
+		actions.Insert(SRP_PatDownTarget); 
+    
 		actions.Insert(SRP_ActionSawPlanks); 
 
 		actions.Insert(SRP_ActionTailor); 

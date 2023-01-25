@@ -376,19 +376,6 @@ class CfgVehicles
 		};
   };
 
-  class ShelterFabric: ShelterBase
-  {
-		itemsCargoSize[]={8,2};
-  };
-  class ShelterLeather: ShelterBase
-  {
-		itemsCargoSize[]={10,3};
-  };
-  class ShelterStick: ShelterBase
-  {
-		itemsCargoSize[]={5,2};
-  };
-
 // ------------------------- EVENT STUFF
   class SRP_PortalBone_Kit: SRP_KitBase  
 	{

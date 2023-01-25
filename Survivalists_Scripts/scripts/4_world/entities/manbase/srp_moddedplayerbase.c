@@ -94,6 +94,7 @@ modded class PlayerBase
 	{
     return ( super.IsSprinting() || m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_SPRINT );				
 	}
+
 	// override bool CanManipulateInventory()
 	// {
   //   Print(string.Format("CanManipulateInventory: IsControllerPlayer:%1 !Restrained: %2 !Prelocked: %3", IsControlledPlayer(), !IsRestrained(), !IsRestrainPrelocked()));
@@ -354,7 +355,9 @@ modded class PlayerBase
     AddAction(ActionForageBush, InputActionMap);      
     AddAction(ActionPackLadder, InputActionMap);      
     AddAction(ActionPackSRPSleepingBag, InputActionMap);          
-    AddAction(ActionSearchChickenCoop, InputActionMap);          
+    AddAction(ActionSearchChickenCoop, InputActionMap); 
+
+    // AddAction(SRP_PatDownTarget, InputActionMap);          
     // AddAction(ActionTurnRubixCubeClockwise_Row1, InputActionMap);      
     // AddAction(ActionTurnRubixCubeClockwise_Row2, InputActionMap);      
     // AddAction(ActionTurnRubixCubeClockwise_Col1, InputActionMap);      
