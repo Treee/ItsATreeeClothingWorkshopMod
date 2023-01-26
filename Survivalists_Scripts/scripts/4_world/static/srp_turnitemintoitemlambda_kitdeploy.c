@@ -13,6 +13,9 @@ class TurnItemIntoItemLambda_KitDeployment extends TurnItemIntoItemLambda
 	{
     float deploymentCost = old_item.GetMaxHealth() * 0.05;
     old_item.AddHealth(-deploymentCost);
+    
+    if (new_item.IsBuilding())
+      m_TransferHealth = false;
 
 		super.CopyOldPropertiesToNew(old_item, new_item);
 

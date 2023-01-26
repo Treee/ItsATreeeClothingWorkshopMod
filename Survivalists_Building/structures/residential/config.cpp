@@ -32,6 +32,8 @@ class CfgVehicles
 		physLayer="item_large";
 		// rotationFlags=2;
     minPlacingDist=5;
+    slopeTolerance=0;
+    alignHologramToTerain=1;
 	};
 
   class SRP_Structures_WoodenHouseOuthouse_Kit: SRP_Building_KitBase

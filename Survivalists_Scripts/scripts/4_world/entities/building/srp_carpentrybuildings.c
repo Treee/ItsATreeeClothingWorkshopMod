@@ -1,6 +1,7 @@
 class SRP_DefaultHouse extends BuildingSuper
 {
   const float MAX_ACTION_WINDOW_DETECTION_DISTANCE 		= 1.65;		//meters
+  const float MAX_ACTION_INSIDE_DETECTION_DISTANCE 		= 0.9;		//meters
   const float MAX_TREEHOUSE_TREE_DETECTION_DISTANCE 		= 0.5;		//meters
 
   override bool IsBuilding()
@@ -27,12 +28,25 @@ class SRP_DefaultHouse extends BuildingSuper
   // Check if player is "inside"
   bool HasProperDistanceToSRPWindow( string selection, vector playerPosition )
 	{
+    // Print(string.Format("has proper distance: %1", selection));
 		if ( MemoryPointExists( selection ) )
 		{
-			vector selection_pos = ModelToWorld( GetMemoryPointPos( selection ) );
-			float distance = vector.Distance( selection_pos, playerPosition );
-      // Print(string.Format("mem point exists: position: %1 distance: %2", selection_pos, distance));
-			if ( distance >= MAX_ACTION_WINDOW_DETECTION_DISTANCE )
+			vector selection_pos_action = ModelToWorld( GetMemoryPointPos( selection ) );
+      float distanceToPlayer;
+      if (MemoryPointExists("inside"))
+      {
+        vector selection_pos_inside = ModelToWorld( GetMemoryPointPos( "inside" ) );
+        float distanceToAction = vector.Distance( selection_pos_inside, selection_pos_action );
+        distanceToPlayer = vector.Distance( selection_pos_inside, playerPosition );
+        float delta = distanceToPlayer - distanceToAction;
+        // Print(string.Format("Has Inside and Has Delta: %1", delta));
+        // negative values means the player is inside
+        return delta < MAX_ACTION_INSIDE_DETECTION_DISTANCE;
+      }
+
+			distanceToPlayer = vector.Distance( selection_pos_action, playerPosition );
+      // Print(string.Format("mem point exists: position: %1 distance: %2", selection_pos_action, distanceToPlayer));
+			if ( distanceToPlayer >= MAX_ACTION_WINDOW_DETECTION_DISTANCE )
 			{
 				return false;
 			}
