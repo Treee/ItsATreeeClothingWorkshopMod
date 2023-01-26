@@ -33,6 +33,7 @@ modded class AreaExposureMdfr
         {
           player.GetStatEnergy().Add(500);
           player.GetStatWater().Add(500);
+          player.GetStatTiredness().Add(500);
           player.AddHealth("","Blood", 200);
           player.AddHealth("","", 200);
           player.GetBleedingManagerServer().RemoveMostSignificantBleedingSourceEx(NULL);
