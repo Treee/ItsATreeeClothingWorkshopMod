@@ -24,7 +24,7 @@ modded class PluginLifespan
 					string survivor_path = config_name + " " + survivor_name;
 					int survivor_lifespan_count = GetGame().ConfigGetChildrenCount( survivor_path );
           
-          ref array<ref FacePaintStyle> facePaint_styles = new array< ref FacePaintStyle>;
+          array<ref FacePaintStyle> facePaint_styles = new array< ref FacePaintStyle>;
           int facepaintindex = 0;
 					for ( j = 0; j < survivor_lifespan_count; j++ )
 					{
