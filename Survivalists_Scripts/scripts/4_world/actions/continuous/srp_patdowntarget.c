@@ -78,13 +78,13 @@ class SRP_PatDownTarget extends ActionContinuousBase
 
 		if ( !target_player.IsSurrendered() )
 		{
-      target_player.GetEmoteManager().PlaySurrenderInOut(true);
+      // target_player.GetEmoteManager().StartSurrenderEmote();
 			// SurrenderDataRestrain sdr = new SurrenderDataRestrain;
 			// target_player.EndSurrenderRequest(sdr);
 		}
 		else if ( target_player.IsEmotePlaying() )
 		{
-			target_player.m_EmoteManager.ServerRequestEmoteCancel();
+			// target_player.m_EmoteManager.ServerRequestEmoteCancel();
 		}
 		
 		// target_player.SetRestrainStarted(true);

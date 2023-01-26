@@ -11,11 +11,11 @@ modded class ActionCheckPulse
       if (s != "")      
         playerStats += string.Format("Blood is coming from the %1.", s);
 
-      s = GetStatString(action_data.m_Player.GetStatLevelEnergy(),"Hungry");
+      s = GetStatString(ntarget.GetStatLevelEnergy(),"Hungry");
       if (s != "")
         playerStats += string.Format("%1.", s);
 
-      s = GetStatString(action_data.m_Player.GetStatLevelWater(),"Thirsty");
+      s = GetStatString(ntarget.GetStatLevelWater(),"Thirsty");
       if (s != "")
         playerStats += string.Format("%1.", s);
 

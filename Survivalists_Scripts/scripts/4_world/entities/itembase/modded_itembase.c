@@ -101,6 +101,16 @@ modded class ItemBase
       }
 		}
 	}
+  // override bool CanBeMovedOverride()
+	// {
+  //   PlayerBase player = GetHierarchyRootPlayer();    
+  //   if (player && player.IsSurrendered())
+  //   {
+  //     // Print("is surrendered, no takey");
+  //     return false;
+  //   }
+  //   return super.CanBeMovedOverride();
+	// }
 
   // make sure to use the slot name not the item name....
 	ItemBase GetItemOnSlot(string slot_type)
