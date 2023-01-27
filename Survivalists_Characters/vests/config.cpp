@@ -804,7 +804,8 @@ class CfgVehicles
       "Black",
       "Blue",
       "Pink",
-      "Teal" 
+      "Teal",
+      "Yellow"
     };
 		itemSize[]={7,7};
 		itemBehaviour=0;
@@ -1002,7 +1003,8 @@ class CfgVehicles
       "Black",
       "Blue",
       "Pink",
-      "Teal"
+      "Teal",
+      "Yellow"
     };
 		itemSize[]={6,6};
     itemBehaviour=0;
@@ -2128,7 +2130,8 @@ class CfgVehicles
       "Black",    
       "Blue",
       "Pink",
-      "Teal"
+      "Teal",
+      "Yellow"
     };
 		weight=12000;
 		itemSize[]={2,3};

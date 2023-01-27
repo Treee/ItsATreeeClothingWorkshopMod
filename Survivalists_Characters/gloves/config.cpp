@@ -21,6 +21,7 @@ class CfgVehicles
 	{
     heatIsolation=0.6;
 		repairableWithKits[]={5,6}; // duct tape and repair kit
+    itemSize[]={1,2};
 		class Protection 
     {
       biological=1;
@@ -53,9 +54,14 @@ class CfgVehicles
       "EMP6",
     };
   };
+  class HandsCover_Improvised: Clothing
+	{
+    itemSize[]={1,2};
+  };
 
   class WorkingGloves_ColorBase: Clothing
 	{
+    itemSize[]={1,2};
     rootClassName="WorkingGloves";
     colorVariants[]=
     {
@@ -92,6 +98,7 @@ class CfgVehicles
   class LeatherGloves_ColorBase: Clothing
 	{
     rootClassName="LeatherGloves";
+    itemSize[]={1,2};
     colorVariants[]=
     {
       "Natural",
@@ -111,6 +118,7 @@ class CfgVehicles
   class OMNOGloves_ColorBase: Clothing
 	{
     rootClassName="OMNOGloves";
+    itemSize[]={1,2};
     colorVariants[]=
     {
       "Gray",
@@ -135,7 +143,7 @@ class CfgVehicles
 		simulation="clothing";
 		vehicleClass="Clothing";
 		weight=1000;
-		itemSize[]={2,2};
+		itemSize[]={1,2};
 		absorbency=0;
 		heatIsolation=0.80;
 		hiddenSelections[]=
@@ -2010,7 +2018,7 @@ class CfgVehicles
 			"Gloves"
 		};
 		weight=454;
-		itemSize[]={2,2};
+		itemSize[]={1,2};
 		varWetMax=0.79000002;
 		heatIsolation=0.60000002;
 		repairableWithKits[]={5,2};

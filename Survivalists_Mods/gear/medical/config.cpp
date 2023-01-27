@@ -82,6 +82,10 @@ class CfgVehicles
   {
     itemSize[]={1,2};
   };
+  class DisinfectantSpray: Edible_Base
+	{
+		itemSize[]={1,2};
+  };
   //------------------------------------------- CUSTOM STUFF
   class SRP_StimPackInjector_Base: Epinephrine
 	{

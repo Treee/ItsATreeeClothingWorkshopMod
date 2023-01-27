@@ -537,7 +537,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
 //===========================AXES
   SRP_CraftableItem RegisterCelticAxeRecipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_ttcelticaxe", "Celtic Axe");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("ttcelticaxe_Simple", "Celtic Axe");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.BRONZE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.TIN, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.IRON, 2));

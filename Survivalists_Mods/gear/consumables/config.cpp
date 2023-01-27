@@ -348,7 +348,10 @@ class CfgVehicles
   class DuctTape: Inventory_Base
 	{
     canBeSplit=1;
+    itemSize[]={1,2};
   };
+
+  
   
   //----------------------------------------------- CUSTOM STUFF
   class Firewood_Irradiated: Firewood

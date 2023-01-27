@@ -171,7 +171,7 @@ modded class StaminaHandler
     if (normal > 75)    
       return 0;
     
-    return normal + 25;// * 100;
+    return 100 - (normal + 25);// * 100;
   }
 
   protected float TranslateToNewRange(float input, float newMin, float newMax, float oldMin = 0, float oldMax = 1)

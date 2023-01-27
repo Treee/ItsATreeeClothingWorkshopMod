@@ -1199,19 +1199,19 @@ class CfgVehicles
 	};
   class Tomato: Edible_Base
   {
-		containsSeedsQuantity="2";
+		containsSeedsQuantity="0";
   };
 	class GreenBellPepper: Edible_Base
 	{
-		containsSeedsQuantity="2";
+		containsSeedsQuantity="0";
   };
   class Zucchini: Edible_Base
 	{
-		containsSeedsQuantity="2";
+		containsSeedsQuantity="0";
   };
   class Pumpkin: Edible_Base
 	{
-		containsSeedsQuantity="2";
+		containsSeedsQuantity="0";
   };
 
 //================================== CUSTOM STUFF

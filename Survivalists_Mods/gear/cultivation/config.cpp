@@ -117,6 +117,8 @@ class CfgVehicles
 
   class TomatoSeedsPack: Inventory_Base
   {
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cultivation\data\tomato_seeds_espen_co.paa"};
     class Horticulture
 		{
 			ContainsSeedsType="TomatoSeeds";
@@ -125,6 +127,8 @@ class CfgVehicles
   };
   class PepperSeedsPack: Inventory_Base
   {
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cultivation\data\pepper_seeds_stag_co.paa"};
     class Horticulture
 		{
 			ContainsSeedsType="PepperSeeds";
@@ -133,6 +137,8 @@ class CfgVehicles
   };
   class PumpkinSeedsPack: Inventory_Base
   {
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cultivation\data\pumpkin_seeds_espen_co.paa"};
     class Horticulture
 		{
 			ContainsSeedsType="PumpkinSeeds";
@@ -141,6 +147,8 @@ class CfgVehicles
   };
   class ZucchiniSeedsPack: Inventory_Base
   {
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cultivation\data\zucchini_seeds_espen_co.paa"};
     class Horticulture
 		{
 			ContainsSeedsType="ZucchiniSeeds";
@@ -149,6 +157,8 @@ class CfgVehicles
   };
   class CannabisSeedsPack: Inventory_Base
 	{
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\cultivation\data\cannabis_seeds_stag_co.paa"};
     displayName="Cannabis Seeds Pack";
 		descriptionShort="A pack of cannabis seeds.";
     class Horticulture

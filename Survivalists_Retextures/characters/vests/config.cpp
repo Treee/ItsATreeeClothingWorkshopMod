@@ -1622,6 +1622,18 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Teal_CO.paa"
 		};	
 	};
+  class SRP_Ratnik_Yellow: SRP_Ratnik_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Yellow_CO.paa"
+		};	
+	};
   class SRP_Ratnik_WolfFur: SRP_Ratnik_ColorBase
 	{
     scope=2;
@@ -1718,6 +1730,18 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Teal_CO.paa"
 		};	
 	};
+  class SRP_Ratnik_Armor_Yellow: SRP_Ratnik_Armor_ColorBase
+	{
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Yellow_CO.paa"
+		};	
+	};
   class SRP_Light_Ratnik_Black: SRP_Light_Ratnik_ColorBase
 	{
 		scope=2;
@@ -1764,6 +1788,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Teal_CO.paa"
+		};	
+	};
+  class SRP_Light_Ratnik_Yellow: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\Ratnik_Yellow_CO.paa"
 		};	
 	};
 	class SRP_Chestrig_Tan: SRP_Chestrig_ColorBase
