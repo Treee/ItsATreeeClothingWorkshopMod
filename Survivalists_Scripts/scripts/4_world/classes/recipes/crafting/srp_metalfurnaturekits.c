@@ -432,13 +432,13 @@ class SRP_Craft_Anvil extends RecipeBase
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[1] = 10;//-1 = disable check
+		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SRP_Forgeingot_Iron");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_ForgeIngot_Iron");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -449,9 +449,9 @@ class SRP_Craft_Anvil extends RecipeBase
 		//ingredient 2
 		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
 		
-		m_IngredientAddHealth[1] = 0;// 0 = do nothing
+		m_IngredientAddHealth[1] = -5;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
