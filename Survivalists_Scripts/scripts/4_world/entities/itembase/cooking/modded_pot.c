@@ -20,6 +20,11 @@ modded class PortableGasStove
       {
         return false;
       }
+      // if you have items on the pot and you try to store the gas stove, (small cargo exploit)
+      if (GetCookingEquipment().GetInventory().CountInventory() > 0)
+      {
+        return false;
+      }
     }
     return super.CanPutInCargo(parent);
 	}
