@@ -73,7 +73,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterRingEarthenRecipe());
     craftableItems.Insert(RegisterRingCelticRecipe());
     // TOOLS
-    craftableItems.Insert(RegisterWoodPickAxeRecipe());
+    craftableItems.Insert(RegisterToolWoodAxeRecipe());
     craftableItems.Insert(RegisterToolPickAxeRecipe());
     craftableItems.Insert(RegisterToolCanOpenerRecipe());
     craftableItems.Insert(RegisterToolPliersRecipe());
@@ -1159,7 +1159,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     return craftableItem;
   }
 //===========================TOOLS
-  SRP_CraftableItem RegisterWoodPickAxeRecipe()
+  SRP_CraftableItem RegisterToolWoodAxeRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("WoodAxe", "Wood Axe");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.IRON, 1));
@@ -1172,7 +1172,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
   SRP_CraftableItem RegisterToolPickAxeRecipe()
@@ -1188,7 +1188,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
   SRP_CraftableItem RegisterToolCanOpenerRecipe()
@@ -1284,7 +1284,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Fabric", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
   SRP_CraftableItem RegisterToolHammerRecipe()
@@ -1316,7 +1316,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
   SRP_CraftableItem RegisterToolSledgeHammerRecipe()

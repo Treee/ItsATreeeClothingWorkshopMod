@@ -164,6 +164,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_ChessBoard_BishopAlternate);
       RegisterRecipe(new Craft_SRP_ChessBoard_QueenAlternate);
       RegisterRecipe(new Craft_SRP_ChessBoard_KingAlternate);
+      RegisterRecipe(new Craft_SRP_LabTubeRack);
 
       RegisterRecipe(new Craft_SRP_DismantleRaft);
 
