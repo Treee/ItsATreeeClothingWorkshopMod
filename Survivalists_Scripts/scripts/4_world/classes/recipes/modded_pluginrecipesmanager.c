@@ -259,7 +259,7 @@ modded class PluginRecipesManager
 		  RegisterRecipe(new Craft_SRP_LeatherArmband);
       RegisterRecipe(new Craft_SRPClothing_TopKit_InsulatedGhillie_Brown);
       RegisterRecipe(new Craft_SRPClothing_TopKit_InsulatedGhillie_White);
-
+      RegisterRecipe(new Craft_SRPClothing_TopKit_InsulatedGhillie_Bear);
       // Vests
       RegisterRecipe(new Craft_SRP_VestPouch_MapPouch);
       RegisterRecipe(new Craft_SRP_VestPouch_PistolMagPouch);

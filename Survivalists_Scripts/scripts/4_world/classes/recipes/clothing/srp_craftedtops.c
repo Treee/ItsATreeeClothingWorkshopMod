@@ -145,3 +145,12 @@ class Craft_SRPClothing_TopKit_InsulatedGhillie_White extends Craft_SRPClothing_
 		AddResult("jmc_BearPeltGhillieWhite");//add results here
 	}
 };
+class Craft_SRPClothing_TopKit_InsulatedGhillie_Bear extends Craft_SRPClothing_TopKit_InsulatedGhillie
+{	
+	override void Init()
+	{
+    super.Init();
+    m_Name = "Sew Top - Bear Coat Ghillie";
+		AddResult("DUB_FurCoat");//add results here
+	}
+};
