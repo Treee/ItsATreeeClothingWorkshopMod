@@ -205,6 +205,11 @@ class CfgVehicles
     inventorySlot[]+={"SRP_Construction_Pipe"};
   };
 
+  class FireworksLauncher: Inventory_Base
+	{
+		itemSize[]={2,2};
+  };
+
   // -------------------------- MODDED MODS
   class MassAdminStash: Compass
 	{
