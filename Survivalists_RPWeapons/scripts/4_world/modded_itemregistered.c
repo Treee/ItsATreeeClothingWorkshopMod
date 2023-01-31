@@ -32,7 +32,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_GladiusSwordSheath_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,	"dz/anims/anm/player/ik/gear/crowbar.anm");
     pType.AddItemInHandsProfileIK("tnails_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/machete.anm"); 
     pType.AddItemInHandsProfileIK("tbladed_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/machete.anm"); 
-    pType.AddItemInHandsProfileIK("tantosword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/machete.anm"); 
+    pType.AddItemInHandsProfileIK("tantosword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/crowbar.anm"); 
 		pType.AddItemInHandsProfileIK("PipeAxe_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/Hatchet.anm"); 
   };
 
