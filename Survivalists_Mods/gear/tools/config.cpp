@@ -200,7 +200,7 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=50;
-		varQuantityDestroyOnMin=1;
+		varQuantityDestroyOnMin=0;
 		varStackMax=1;
     inventorySlot[]+={"SRP_Construction_Pipe"};
   };
