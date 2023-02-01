@@ -1508,6 +1508,7 @@ class CfgVehicles
 		displayName="Brewing Still";
 		descriptionShort="A workbench with tools for manufacturing alcohol.";
 		model="Survivalists_Mods\gear\crafting\srp_brewingstill_alchemy.p3d";
+    useEntityHierarchy="true";
 		weight=500;
 		itemSize[]={15,15};
 		itemBehaviour=0;
@@ -1519,6 +1520,7 @@ class CfgVehicles
     varTemperatureMax=1000;
 		destroyOnEmpty=0;
 		varQuantityDestroyOnMin=0;
+    carveNavmesh=0;
 		canBeDigged=0;
 		physLayer="item_large";
     itemsCargoSize[]={1,1};
@@ -1531,6 +1533,7 @@ class CfgVehicles
 			"MedicalBandage",
 			"Paper",
 			"Bark",
+      "SRP_FuelCoal"
 		};
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\crafting\data\srp_brewingstill_alchemy_ca.paa"};
@@ -1543,7 +1546,8 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"Firewood",
-					"WoodenStick"
+					"WoodenStick",
+          "SRP_FuelCoal"
 				};
 				icon="set:dayz_inventory image:cat_fp_fuel";
 			};
@@ -1601,6 +1605,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Brewing Still Kit - Alchemy";
 		descriptionShort="A brewing workbench kit";
+    projectionTypename="SRP_BrewingWorkbench_Alchemy";
 	};
   class SRP_BrewingWorkbench_Alchemy: SRP_BrewingWorkbench_ColorBase 
 	{
@@ -1633,7 +1638,8 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"Firewood",
-					"WoodenStick"
+					"WoodenStick",
+          "SRP_FuelCoal"
 				};
 				icon="set:dayz_inventory image:cat_fp_fuel";
 			};
@@ -1657,6 +1663,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Brewing Still Kit - Ceramic";
 		descriptionShort="A brewing workbench kit";
+    projectionTypename="SRP_BrewingWorkbench_Ceramic";
 	};
   class SRP_BrewingWorkbench_Ceramic: SRP_BrewingWorkbench_ColorBase 
 	{
@@ -1708,7 +1715,8 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"Firewood",
-					"WoodenStick"
+					"WoodenStick",
+          "SRP_FuelCoal"
 				};
 				icon="set:dayz_inventory image:cat_fp_fuel";
 			};
@@ -1732,6 +1740,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Brewing Still Kit - Copper";
 		descriptionShort="A brewing workbench kit";
+    projectionTypename="SRP_BrewingWorkbench_Copper";
 	};
   class SRP_BrewingWorkbench_Copper: SRP_BrewingWorkbench_ColorBase 
 	{
@@ -1782,7 +1791,8 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"Firewood",
-					"WoodenStick"
+					"WoodenStick",
+          "SRP_FuelCoal"
 				};
 				icon="set:dayz_inventory image:cat_fp_fuel";
 			};

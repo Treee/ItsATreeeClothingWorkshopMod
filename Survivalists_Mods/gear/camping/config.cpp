@@ -18,7 +18,6 @@ class CfgVehicles
 {
   class FenceKit;
   class BaseBuildingBase;
-  class BarrelHoles_ColorBase;
   class Inventory_Base;
   class Container_Base;
   class WoodenCrate;
@@ -26,8 +25,8 @@ class CfgVehicles
   class Paddle;
   class PortableGasLamp;
   class ShelterBase;
-  class FireplaceIndoor;
-
+  class FireplaceBase;
+  class BarrelHoles_ColorBase;
   class SRP_KitBase;
 
   //----------------------- MOD OVERRIDES
@@ -783,40 +782,102 @@ class CfgVehicles
 		scope=2;
 		displayName="Barbeque Smoker Kit";
 		descriptionShort="A Barbeque Smoker Kit";
+    projectionTypename="SRP_BBQ_Basic";
 	};
   class SRP_BBQ_Grill_Kit: SRP_KitBase //
 	{
 		scope=2;
 		displayName="Camp Grill Kit";
 		descriptionShort="A Camp Grill Kit";
+    projectionTypename="SRP_BBQ_Grill";
 	};
   class SRP_BBQ_FirePit_Kit: SRP_KitBase //
 	{
 		scope=2;
 		displayName="Fire Pit Kit";
 		descriptionShort="A Fire Pit Kit";
+    projectionTypename="SRP_BBQ_FirePit";    
 	};
-  class SRP_BBQ_ColorBase: BarrelHoles_ColorBase
+  class SRP_BBQ_ColorBase: FireplaceBase
 	{
     scope=0;
 		displayName="Barbeque Smoker";
 		descriptionShort="A large grill meant for smoking or grilling food.";
 		model="Survivalists_Mods\gear\camping\srp_bbq.p3d";
-		itemSize[]={10,15};
 		weight=10000;
     hiddenSelections[]={"ashes","zbytek"};
     hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Mods\gear\camping\data\srp_bbq_co.paa"};
 		hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stonegroundnoemit.rvmat", "Survivalists_Mods\gear\camping\data\srp_bbq.rvmat"};
-		class Cargo
+		overrideDrawArea="8.0";
+    physLayer="item_large";
+		openable=0;
+		itemSize[]={10,5};
+		itemsCargoSize[]={10,5};
+		attachments[]=
 		{
-			itemsCargoSize[]={5,5};
-			openable=0;
-			allowOwnedCargoManipulation=1;
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+			"DirectCookingA",
+			"DirectCookingB",
+			"SmokingA",
+			"SmokingB",
+			"SmokingC",
+			"SmokingD"
 		};
-    class AnimationSources
+		class GUIInventoryAttachmentsProps
 		{
-      class Lid{source="user";initPhase=0;animPeriod=0.0099999998;};
-      class Lid2{source="user";initPhase=1;animPeriod=0.0099999998;};
+			class Smoking
+			{
+				name="$STR_attachment_Smoking";
+				description="";
+				attachmentSlots[]=
+				{
+					"SmokingA",
+					"SmokingB",
+					"SmokingC",
+					"SmokingD"
+				};
+				icon="set:dayz_inventory image:cookingequipment";
+			};
+			class CookingEquipment
+			{
+				name="$STR_attachment_CookingEquipment0";
+				description="";
+				attachmentSlots[]=
+				{
+					"DirectCookingA",
+					"DirectCookingB"
+				};
+				icon="set:dayz_inventory image:cookingequipment";
+			};
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
 		};
 	};  
   class SRP_BBQ_Basic: SRP_BBQ_ColorBase
@@ -831,12 +892,12 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\camping\srp_bbq_campfiregrill.p3d";
 		itemSize[]={5,2};
 		weight=10000;
-    hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_bbq_campfiregrill_co.paa"};
-		hiddenSelectionsMaterials[]={"Survivalists_Mods\gear\camping\data\srp_bbq_campfiregrill.rvmat"};
+    hiddenSelections[]={"ashes","zbytek"};
+    hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Mods\gear\camping\data\srp_bbq_campfiregrill_co.paa"};
+		hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stonegroundnoemit.rvmat","Survivalists_Mods\gear\camping\data\srp_bbq_campfiregrill.rvmat"};
 		class Cargo
 		{
-			itemsCargoSize[]={0,0};
+			itemsCargoSize[]={1,1};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
@@ -849,9 +910,9 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\camping\srp_bbq_firepit.p3d";
 		itemSize[]={5,5};
 		weight=10000;
-    hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_bbq_firepit_ca.paa"};
-		hiddenSelectionsMaterials[]={"Survivalists_Mods\gear\camping\data\srp_bbq_firepit.rvmat"};
+    hiddenSelections[]={"ashes","zbytek"};
+    hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Mods\gear\camping\data\srp_bbq_firepit_ca.paa"};
+		hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Mods\gear\camping\data\srp_bbq_firepit.rvmat"};
 		class Cargo
 		{
 			itemsCargoSize[]={5,5};
@@ -867,7 +928,7 @@ class CfgVehicles
 		descriptionShort="An Indoor Fireplace Kit - Medieval";
     projectionTypename="SRP_FireplaceIndoor_Medieval";
 	};
-  class SRP_FireplaceIndoor_Medieval: FireplaceIndoor
+  class SRP_FireplaceIndoor_Medieval: FireplaceBase
 	{
 		scope=2;
 		displayName="Indoor Fireplace - Medieval";
@@ -957,7 +1018,7 @@ class CfgVehicles
 		descriptionShort="An Indoor Fireplace Kit - Fancy";
     projectionTypename="SRP_FireplaceIndoor_Fancy";
 	};
-  class SRP_FireplaceIndoor_Fancy: FireplaceIndoor
+  class SRP_FireplaceIndoor_Fancy: FireplaceBase
 	{
 		scope=2;
 		displayName="Indoor Fireplace - Fancy";
@@ -1052,7 +1113,7 @@ class CfgVehicles
 		descriptionShort="An Indoor Fireplace Kit - Fancy Pink";
     projectionTypename="SRP_FireplaceIndoor_FancyPink";
 	};
-  class SRP_FireplaceIndoor_FancyPink: FireplaceIndoor
+  class SRP_FireplaceIndoor_FancyPink: FireplaceBase
 	{
 		scope=2;
 		displayName="Indoor Fireplace - FancyPink";
@@ -1147,7 +1208,7 @@ class CfgVehicles
 		descriptionShort="An Indoor Fireplace Kit - Fancy Blue";
     projectionTypename="SRP_FireplaceIndoor_FancyBlue";
 	};
-  class SRP_FireplaceIndoor_FancyBlue: FireplaceIndoor
+  class SRP_FireplaceIndoor_FancyBlue: FireplaceBase
 	{
 		scope=2;
 		displayName="Indoor Fireplace - FancyBlue";
@@ -1242,7 +1303,7 @@ class CfgVehicles
 		descriptionShort="An Indoor Fireplace Kit - Fancy Green";
     projectionTypename="SRP_FireplaceIndoor_FancyGreen";
 	};
-  class SRP_FireplaceIndoor_FancyGreen: FireplaceIndoor
+  class SRP_FireplaceIndoor_FancyGreen: FireplaceBase
 	{
 		scope=2;
 		displayName="Indoor Fireplace - FancyGreen";

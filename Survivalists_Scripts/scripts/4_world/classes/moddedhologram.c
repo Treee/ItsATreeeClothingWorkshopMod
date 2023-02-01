@@ -1,9 +1,9 @@
 modded class Hologram
 {
   override string GetProjectionName(ItemBase item)
-	{
+	{    
     if (item && item.IsPlacingKit())
-    {
+    {      
       return item.GetKitItemName();
     }
     return super.GetProjectionName(item);

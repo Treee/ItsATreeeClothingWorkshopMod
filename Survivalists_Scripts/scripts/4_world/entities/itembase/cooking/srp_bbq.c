@@ -1,28 +1,5 @@
-class SRP_BBQ_ColorBase extends BarrelHoles_ColorBase
+class SRP_BBQ_ColorBase extends SRP_FireplaceBase
 {
-  override void OnVariablesSynchronized()
-	{
-		super.OnVariablesSynchronized();
-	}
-	
-  override bool CanShowSmoke()
-	{
-		return true;
-	}
-  protected override void UpdateVisualState()
-	{
-		if ( IsOpen() )
-		{
-			SetAnimationPhase("Lid2",0);
-			SetAnimationPhase("Lid",1);
-		}
-		else
-		{
-			SetAnimationPhase("Lid2",1);
-			SetAnimationPhase("Lid",0);
-		}
-	}
-
   override protected vector GetFireEffectPosition()
 	{
 		return Vector( 0, 0.804, 0 );
@@ -32,72 +9,34 @@ class SRP_BBQ_ColorBase extends BarrelHoles_ColorBase
 	{
 		return Vector( 0.322, 1.224, 0 );
 	}
-
-	override bool CanPutInCargo( EntityAI parent )
-  {
-    return false;
-  }
-    
-  override bool CanPutIntoHands(EntityAI parent)
-  {
-    return false;
-  }
-	
-  override bool CanDisplayAttachmentCategory( string category_name )
-	{
-		if ( ( category_name == "CookingEquipment" ) || ( category_name == "Smoking" ) )
-		{
-			return IsOpen();
-		}			
-		else
-		{
-			return !IsOpen();
-		}
-				//super
-		return super.CanDisplayAttachmentCategory( category_name );
-	}	
-
   override bool CanBeDeconstructed()
   {
     return true;
   }
 };
-class SRP_BBQ_Basic extends SRP_BBQ_ColorBase{};
-class SRP_BBQ_Grill extends SRP_BBQ_ColorBase
+class SRP_BBQ_Basic extends SRP_BBQ_ColorBase{}; // smoker
+class SRP_BBQ_Grill extends SRP_BBQ_ColorBase // rectangle cooker
 {
-  void SRP_BBQ_Grill()
-  {
-    Open();
-  }
-
-  override bool CanDisplayAttachmentCategory( string category_name )
-	{
-		return true;
-	}	
-
   override protected vector GetFireEffectPosition()
 	{
 		return Vector( 0, 0.030, 0 );
 	}
-	
 	override protected vector GetSmokeEffectPosition()
 	{
 		return Vector( 0, 0.30, 0 );
 	}
-  override void SoundBarrelOpenPlay(){}
-	override void SoundBarrelClosePlay(){}
 };
-class SRP_BBQ_FirePit extends SRP_BBQ_ColorBase
+class SRP_BBQ_FirePit extends SRP_BBQ_ColorBase // circular firepit
 {
-  void SRP_BBQ_FirePit()
-  {
-    Open();
-  }
+  // void SRP_BBQ_FirePit()
+  // {
+  //   Open();
+  // }
 
-  override bool CanDisplayAttachmentCategory( string category_name )
-	{
-		return true;
-	}
+  // override bool CanDisplayAttachmentCategory( string category_name )
+	// {
+	// 	return true;
+	// }
   
   override protected vector GetFireEffectPosition()
 	{
@@ -108,65 +47,38 @@ class SRP_BBQ_FirePit extends SRP_BBQ_ColorBase
 	{
 		return Vector( 0, 0.463, 0 );
 	}
-  override void SoundBarrelOpenPlay(){}
-	override void SoundBarrelClosePlay(){}
+  // override void SoundBarrelOpenPlay(){}
+	// override void SoundBarrelClosePlay(){}
 	
-	override void SetActions()
-	{
-		RemoveAction(ActionOpenBarrelHoles);
-		RemoveAction(ActionCloseBarrelHoles);
-	}
+	// override void SetActions()
+	// {
+	// 	RemoveAction(ActionOpenBarrelHoles);
+	// 	RemoveAction(ActionCloseBarrelHoles);
+	// }
 };
 
-class SRP_FireplaceIndoor_Medieval extends SRP_BBQ_ColorBase
+class SRP_FireplaceIndoor_Medieval extends SRP_FireplaceBase
 {
-  void SRP_FireplaceIndoor_Medieval()
-  {
-    Open();
-  }
   override bool IsFireplaceIndoor()
 	{
 		return true;
 	}
-
-  override bool CanDisplayAttachmentCategory( string category_name )
-	{
-		return true;
-	}
-  
   override protected vector GetFireEffectPosition()
 	{
 		return Vector( 0, 0.167, 0.122 );
 	}
-	
+
 	override protected vector GetSmokeEffectPosition()
 	{
 		return Vector( 0, 2, -0.253 );
 	}
-  override void SoundBarrelOpenPlay(){}
-	override void SoundBarrelClosePlay(){}
-  override void SetActions()
-	{
-		RemoveAction(ActionOpenBarrelHoles);
-		RemoveAction(ActionCloseBarrelHoles);
-	}
 };
-class SRP_FireplaceIndoor_Fancy extends SRP_BBQ_ColorBase
+class SRP_FireplaceIndoor_Fancy extends SRP_FireplaceIndoor_Medieval
 {
-  void SRP_FireplaceIndoor_Fancy()
-  {
-    Open();
-  }
   override bool IsFireplaceIndoor()
 	{
 		return true;
 	}
-
-  override bool CanDisplayAttachmentCategory( string category_name )
-	{
-		return true;
-	}
-  
   override protected vector GetFireEffectPosition()
 	{
 		return Vector( 0, 0.208, 0 );
@@ -176,30 +88,9 @@ class SRP_FireplaceIndoor_Fancy extends SRP_BBQ_ColorBase
 	{
 		return Vector( 0, 2, -0.253 );
 	}
-  override void SoundBarrelOpenPlay(){}
-	override void SoundBarrelClosePlay(){}
-  override void SetActions()
-	{
-		RemoveAction(ActionOpenBarrelHoles);
-		RemoveAction(ActionCloseBarrelHoles);
-	}
 };
-class SRP_FireplaceIndoor_FancyPink extends SRP_BBQ_ColorBase
+class SRP_FireplaceIndoor_FancyPink extends SRP_FireplaceIndoor_Medieval
 {
-  void SRP_FireplaceIndoor_FancyPink()
-  {
-    Open();
-  }
-  override bool IsFireplaceIndoor()
-	{
-		return true;
-	}
-
-  override bool CanDisplayAttachmentCategory( string category_name )
-	{
-		return true;
-	}
-  
   override protected vector GetFireEffectPosition()
 	{
 		return Vector( 0, 0.208, 0 );
@@ -209,77 +100,26 @@ class SRP_FireplaceIndoor_FancyPink extends SRP_BBQ_ColorBase
 	{
 		return Vector( 0, 2, -0.253 );
 	}
-  override void SoundBarrelOpenPlay(){}
-	override void SoundBarrelClosePlay(){}
-  override void SetActions()
-	{
-		RemoveAction(ActionOpenBarrelHoles);
-		RemoveAction(ActionCloseBarrelHoles);
-	}
 };
-class SRP_FireplaceIndoor_FancyBlue extends SRP_BBQ_ColorBase
+class SRP_FireplaceIndoor_FancyBlue extends SRP_FireplaceIndoor_Medieval
 {
-  void SRP_FireplaceIndoor_FancyBlue()
-  {
-    Open();
-  }
-  override bool IsFireplaceIndoor()
-	{
-		return true;
-	}
-
-  override bool CanDisplayAttachmentCategory( string category_name )
-	{
-		return true;
-	}
-  
   override protected vector GetFireEffectPosition()
 	{
 		return Vector( 0, 0.208, 0 );
 	}
-	
 	override protected vector GetSmokeEffectPosition()
 	{
 		return Vector( 0, 2, -0.253 );
 	}
-  override void SoundBarrelOpenPlay(){}
-	override void SoundBarrelClosePlay(){}
-  override void SetActions()
-	{
-		RemoveAction(ActionOpenBarrelHoles);
-		RemoveAction(ActionCloseBarrelHoles);
-	}
 };
-class SRP_FireplaceIndoor_FancyGreen extends SRP_BBQ_ColorBase
+class SRP_FireplaceIndoor_FancyGreen extends SRP_FireplaceIndoor_Medieval
 {
-  void SRP_FireplaceIndoor_FancyGreen()
-  {
-    Open();
-  }
-  override bool IsFireplaceIndoor()
-	{
-		return true;
-	}
-
-  override bool CanDisplayAttachmentCategory( string category_name )
-	{
-		return true;
-	}
-  
   override protected vector GetFireEffectPosition()
 	{
 		return Vector( 0, 0.208, 0 );
 	}
-	
 	override protected vector GetSmokeEffectPosition()
 	{
 		return Vector( 0, 2, -0.253 );
-	}
-  override void SoundBarrelOpenPlay(){}
-	override void SoundBarrelClosePlay(){}
-  override void SetActions()
-	{
-		RemoveAction(ActionOpenBarrelHoles);
-		RemoveAction(ActionCloseBarrelHoles);
 	}
 };
