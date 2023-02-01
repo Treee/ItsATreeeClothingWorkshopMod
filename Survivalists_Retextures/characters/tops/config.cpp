@@ -52,6 +52,7 @@ class CfgVehicles
   class SRP_Sweater_ColorBase;
   class DUB_Duster;
   class Wool_GreatCoat_ColorBase;
+  class DUB_WoolCoat;
 
   class NBCJacketBase_Gray: NBCJacketBase
 	{
@@ -3019,5 +3020,25 @@ class CfgVehicles
     {
       "Survivalists_Retextures\characters\tops\data\STAG_GreatCoat_co.paa"
     };
+  };
+  class DUB_WoolCoat_Red: DUB_WoolCoat
+  {
+    scope=2;
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\WoolCoat_Red_CO.paa"};
+  };
+  class DUB_WoolCoat_Green: DUB_WoolCoat
+  {
+    scope=2;
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\WoolCoat_Green_CO.paa"};
+  };
+  class DUB_WoolCoat_Brown: DUB_WoolCoat
+  {
+    scope=2;
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\WoolCoat_Brown_CO.paa"};
+  };
+  class DUB_WoolCoat_Purple: DUB_WoolCoat
+  {
+    scope=2;
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\WoolCoat_Purple_CO.paa"};
   };
 };

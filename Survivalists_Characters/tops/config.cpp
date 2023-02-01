@@ -10,7 +10,8 @@ class CfgPatches
 			"DZ_Characters",
       "DZ_Characters_Tops",
       "Survivalists_Armbands_Flag",
-      "Winter_Parka"
+      "Winter_Parka",
+      "Dressupbox"
 		};
 	};
 };
@@ -44,6 +45,17 @@ class CfgVehicles
       "BlueBlack"
     };
   }; 
+  class DUB_WoolCoat: Clothing
+	{
+    rootClassName="DUB_WoolCoat";
+    colorVariants[]=
+    {
+      "Red",
+      "Green",
+      "Brown",
+      "Purple",    
+    };
+	};
   //----------------------------------- BASE GAME OVERRIDE
   class NBCJacketBase: Clothing
 	{
