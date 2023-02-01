@@ -871,6 +871,10 @@ class SRP_StreetSign_HandicapSmall extends SRP_StreetSign_Base{};
 class SRP_StreetSign_Highway extends SRP_StreetSign_Base{};
 class SRP_HangingWoodenSign extends SRP_StreetSign_Base{};
 
+class SRP_SignBoard_Basic extends SRP_StreetSign_Base{};
+class SRP_SignBoard_Medieval extends SRP_StreetSign_Base{};
+class SRP_SignBoard_Medieval_2 extends SRP_StreetSign_Base{};
+
 class SRP_Barricade_Wood extends SRP_Container_Base
 {
   override bool DisableVicinityIcon()

@@ -1777,30 +1777,33 @@ class CfgVehicles
 
   class SRP_SignBoard_Basic : SRP_StreetSign_Base //new
   {
-    scope = 2;
-    displayName = "Sign Board";
-    model = "Survivalists_Mods\structures\signs\SRP_SignBoard_basic.p3d";
-    itemsCargoSize[] = { 0,0 };
-    hiddenSelections[] = { "zbytek" };
-    hiddenSelectionsTextures[] = { "Survivalists_Mods\structures\signs\data\SRP_Signboard_co.paa" };
+    scope=2;
+    displayName="Sign Board";
+    model="Survivalists_Mods\structures\signs\SRP_SignBoard_basic.p3d";
+    itemsCargoSize[]={ 0,0 };
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={ "Survivalists_Mods\structures\signs\data\SRP_Signboard_basic_co.paa" };
+    hiddenSelectionsMaterials[]={"Survivalists_Mods\structures\signs\data\srp_signboard_basic.rvmat"};
   };
   class SRP_SignBoard_Medieval : SRP_StreetSign_Base //new
   {
-    scope = 2;
-    displayName = "Sign Board";
-    model = "Survivalists_Mods\structures\signs\SRP_Signboard_Medieval.p3d";
-    itemsCargoSize[] = { 0,0 };
-    hiddenSelections[] = { "zbytek" };
-    hiddenSelectionsTextures[] = { "Survivalists_Mods\structures\signs\data\SRP_SignBoard_Medieval_co.paa" };
+    scope=2;
+    displayName="Sign Board";
+    model="Survivalists_Mods\structures\signs\SRP_Signboard_Medieval.p3d";
+    itemsCargoSize[]={ 0,0 };
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={ "Survivalists_Mods\structures\signs\data\SRP_SignBoard_Medieval_co.paa" };
+    hiddenSelectionsMaterials[]={"Survivalists_Mods\structures\signs\data\SRP_SignBoard_Medieval.rvmat"};
   };
   class SRP_SignBoard_Medieval_2 : SRP_StreetSign_Base //new
   {
-    scope = 2;
-    displayName = "Sign Board";
-    model = "Survivalists_Mods\structures\signs\SRP_Signboard_Medieval_2.p3d";
-    itemsCargoSize[] = { 0,0 };
-    hiddenSelections[] = { "zbytek" };
-    hiddenSelectionsTextures[] = { "Survivalists_Mods\structures\signs\data\SRP_Signboard_Medieval_2_co.paa" };
+    scope=2;
+    displayName="Sign Board";
+    model="Survivalists_Mods\structures\signs\SRP_Signboard_Medieval_2.p3d";
+    itemsCargoSize[]={ 0,0 };
+    hiddenSelections[]={ "zbytek" };
+    hiddenSelectionsTextures[]={ "Survivalists_Mods\structures\signs\data\SRP_Signboard_Medieval_2_co.paa" };
+    hiddenSelectionsMaterials[]={"Survivalists_Mods\structures\signs\data\SRP_SignBoard_Medieval_2.rvmat"};
   };
 
   class SRPInvestor_Sign_Rekis8853_House: HouseNoDestruct
