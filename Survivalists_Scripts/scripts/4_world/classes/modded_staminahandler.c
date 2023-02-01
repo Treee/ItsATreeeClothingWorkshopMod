@@ -64,6 +64,11 @@ modded class StaminaHandler
 			m_Stamina = Math.Max(0, Math.Min((m_Stamina + temp), m_StaminaCap));
 			m_Stamina = m_Stamina - m_StaminaDepletion;
 
+      if (m_Player.IsAlpha() || m_Player.IsQueenAlpha())
+      {
+        m_Stamina = m_StaminaCap;
+      }
+
 			if (GetGame().IsServer() || !GetGame().IsMultiplayer())
 			{
 				m_Player.GetStatStamina().Set(m_Stamina);
