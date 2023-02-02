@@ -533,3 +533,33 @@ class Craft_SRP_BandageDressing_Advanced_Antibiotic extends Craft_SRP_CraftingMa
     return canCraft;
   }
 };
+
+class Craft_SRP_CrudeStimPack extends Craft_SRP_CraftingMaterial_HerbalismBase
+{
+	override void Init()
+	{
+    super.Init();
+		m_Name = "Craft Crude Stim Pack";
+    
+    m_MinQuantityIngredient[1] = 25;//-1 = disable check
+    InsertIngredient(1,"SRP_LabTube_Colorbase");//you can insert multiple ingredients this way
+    m_IngredientAddQuantity[1] = -25;// 0 = do nothing
+
+    AddResult("SRP_StimPackInjector_Crude");//add results here
+	}
+
+  override bool HerbalismCraft(ItemBase mortarBowl, bool reduceAmount = false)
+  {
+    SRP_MortarBowl mortarPestle = SRP_MortarBowl.Cast(mortarBowl);
+    bool canCraft = false;
+    if (mortarPestle && mortarPestle.HasAllPowderSlotsFilled())
+    {
+      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder1",{"rosemary", "dock", "ribwort"},{150,125,50}, reduceAmount);        
+      canCraft |= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder2",{"greenamanita", "mint", "yarrow"},{150,75,50}, reduceAmount);        
+      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder3",{"valerian", "greenamanita","mint"},{50,75,50}, reduceAmount);
+      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder4",{"brookmint", "valerian", "rosemary"},{50,20,35}, reduceAmount);        
+      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder5",{"dock", "yarrow","valerian"},{125,50,50}, reduceAmount);        
+    }
+    return canCraft;
+  }
+};

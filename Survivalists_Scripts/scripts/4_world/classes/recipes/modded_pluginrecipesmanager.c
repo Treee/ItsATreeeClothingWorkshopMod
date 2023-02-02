@@ -654,6 +654,11 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_BandageDressing_Advanced_Healing);
       RegisterRecipe(new Craft_SRP_BandageDressing_Advanced_Shock);
       RegisterRecipe(new Craft_SRP_BandageDressing_Advanced_Antibiotic);
+      RegisterRecipe(new Craft_SRP_CrudeStimPack);
+
+      RegisterRecipe(new Craft_SRP_CraftingMisc_BloodTestKit);
+      RegisterRecipe(new Craft_SRP_CraftingMisc_DrugTestKit);
+      RegisterRecipe(new Craft_SRP_CraftingMisc_FacePaint);
 
     //==========================================================Medical
       RegisterRecipe(new Craft_SRP_BandageDressing); 

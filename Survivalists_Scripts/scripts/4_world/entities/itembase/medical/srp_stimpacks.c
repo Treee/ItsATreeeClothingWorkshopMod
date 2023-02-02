@@ -29,3 +29,24 @@ class SRP_StimPackInjector_Base extends ItemBase
 		player.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
 	}
 };
+class SRP_StimPackInjector_Espen extends SRP_StimPackInjector_Base{};
+class SRP_StimPackInjector_Stag extends SRP_StimPackInjector_Base{};
+class SRP_StimPackInjector_LocknSons extends SRP_StimPackInjector_Base{};
+class SRP_StimPackInjector_Crude extends SRP_StimPackInjector_Base
+{
+  override void OnApply(PlayerBase player)
+	{
+		if (!player)
+			return;
+
+    player.SetHealth("RightLeg", "", 50);
+		player.SetHealth("RightFoot", "", 50);
+		player.SetHealth("LeftLeg", "", 50);
+		player.SetHealth("LeftFoot", "", 50);
+    player.AddHealth("", "Blood", 100);
+    player.AddHealth("", "", 75); //do 35 dmg
+    player.GetStatEnergy().Add(100);
+    player.GetStatWater().Add(100);
+    player.GetStatTiredness().Add(250);
+	}
+};

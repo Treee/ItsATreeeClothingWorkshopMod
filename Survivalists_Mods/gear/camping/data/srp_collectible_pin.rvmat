@@ -2,7 +2,7 @@ ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={1,1,1,1};
+specular[]={2,1.8,1.6,1};
 specularPower=90;
 PixelShaderID="Super";
 VertexShaderID="Super";
@@ -80,13 +80,6 @@ class Stage6
 };
 class Stage7
 {
-	texture="dz\data\data\env_land_co.paa";
-	uvSource="tex";
-	class uvTransform
-	{
-		aside[]={1,0,0};
-		up[]={0,1,0};
-		dir[]={0,0,1};
-		pos[]={0,0,0};
-	};
+  texture = "dz\data\data\env_land_chrome_co.paa";
+  uvSource = "none";
 };

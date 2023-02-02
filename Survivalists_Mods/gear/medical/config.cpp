@@ -145,6 +145,34 @@ class CfgVehicles
       "Survivalists_Mods\gear\medical\data\epipen_stag_co.paa"
     };
 	};
+  class SRP_StimPackInjector_LocknSons: SRP_StimPackInjector_Base
+	{
+		scope=2;
+		displayName="Stim Pack Injector - Lock & Sons";
+		descriptionShort="Stim Pack Injector manufactured by Lock & Sons. You had no idea they had a medical division.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\epipen_locknsons_co.paa"
+    };
+	};
+  class SRP_StimPackInjector_Crude: SRP_StimPackInjector_Base
+	{
+		scope=2;
+		displayName="Stim Pack Injector - Crude";
+		descriptionShort="Stim Pack Injector manufactured by some alchemist or amateur doctor.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\epipen_crude_co.paa"
+    };
+	};
 
   class SRP_MedicalKit_Kit: SRP_KitBase //new
 	{

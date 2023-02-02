@@ -734,6 +734,28 @@ class CfgVehicles
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_locknsons_co.paa"};
 	};
+  class SRP_Collectible_Pin_Purple: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_purple_co.paa"};
+	};
+  class SRP_Collectible_Pin_Orange: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_orange_co.paa"};
+	};
+  class SRP_Collectible_Pin_Blue: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_blue_co.paa"};
+	};
+
 
   class SRP_Potbelly_Stove_Kit: SRP_KitBase //
 	{
