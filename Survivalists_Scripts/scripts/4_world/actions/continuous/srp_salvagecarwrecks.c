@@ -1,8 +1,8 @@
 class ActionSalvageCarWreckCB : ActionContinuousBaseCB
 {
-	static const float TIME_SAW_HANDSAW = 600;
-	static const float TIME_SAW_HACKSAW = 450;
-	static const float TIME_AXES = 660;
+	static const float TIME_SAW_HANDSAW = 45;
+	static const float TIME_SAW_HACKSAW = 20;
+	static const float TIME_AXES = 60;
 	
 	override void CreateActionComponent()
 	{
@@ -66,7 +66,7 @@ class ActionSalvageCarWreck extends ActionContinuousBase
 	override void OnFinishProgressServer( ActionData action_data )
 	{
     ItemBase metal = ItemBase.Cast( GetGame().CreateObjectEx("MetalPlate", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE) );
-    metal.SetQuantity(Math.RandomIntInclusive(1,7));
+    metal.SetQuantity(Math.RandomIntInclusive(1,4));
 						
 		action_data.m_MainItem.DecreaseHealth(10000);
 		

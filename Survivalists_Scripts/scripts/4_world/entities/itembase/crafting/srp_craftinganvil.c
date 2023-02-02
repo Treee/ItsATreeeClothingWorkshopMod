@@ -6,6 +6,7 @@ class SRP_Anvil_ColorBase extends SRP_CraftingBench_Base
     EntityAI attachment;
     int totalSlots = GetInventory().AttachmentCount();
     int slotId;
+    int quantity;
     string slotName;
     string colorName;
     int enumId = -1;
@@ -20,8 +21,10 @@ class SRP_Anvil_ColorBase extends SRP_CraftingBench_Base
         colorName.ToUpper();
         
         enumId = EnumTools.StringToEnum(SRP_COLOR, colorName);
+        // non null items with 0 quantity should be seen as 1
+        quantity = Math.Max(1, attachment.GetQuantity());
         // Print(string.Format("item: %1 slot: %2 color: %3 enumId: %4 quantity: %5", attachment.GetType(), slotName, colorName, enumId, attachment.GetQuantity()));
-        craftableItem.RegisterIngredient(new SRP_ItemRequirement(slotName, enumId, attachment.GetQuantity()));
+        craftableItem.RegisterIngredient(new SRP_ItemRequirement(slotName, enumId, quantity));
       }
     }
     // craftableItem.PrintIngredients();    
