@@ -299,6 +299,37 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_Shovel: Shovel
+	{
+		scope=2;
+		model="Survivalists_Mods\gear\tools\srp_shovel.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\srp_shovel_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\tools\data\srp_shovel.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\tools\data\srp_shovel.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\tools\data\srp_shovel_damage.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\tools\data\srp_shovel_damage.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\tools\data\srp_shovel_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Shovel_Durka: SRP_Shovel
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\srp_shovel_durka_co.paa"};
+	};
 
   class WeaponCleaningKit_JewlersKit : Inventory_Base 
   {
