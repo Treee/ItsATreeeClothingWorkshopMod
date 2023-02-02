@@ -755,8 +755,6 @@ class CfgVehicles
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_blue_co.paa"};
 	};
-
-
   class SRP_Potbelly_Stove_Kit: SRP_KitBase //
 	{
 		scope=2;
