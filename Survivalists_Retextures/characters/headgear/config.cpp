@@ -1741,6 +1741,42 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"
 		};
   };
+  class BaseballCap_MilitaryPatrol_MC_Black: BaseballCap_MilitaryPatrolTan
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MC_black_co.paa"};
+	};
+	class BaseballCap_MilitaryPatrol_ERDL: BaseballCap_MilitaryPatrolTan
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_ERDL_co.paa"};
+	};
+	class BaseballCap_MilitaryPatrol_CAD: BaseballCap_MilitaryPatrolTan
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_CAD_co.paa"};
+	};
+	class BaseballCap_MilitaryPatrol_ChocChip: BaseballCap_MilitaryPatrolTan
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_ChocChip_co.paa"};
+	};
+	class BaseballCap_MilitaryPatrol_M05: BaseballCap_MilitaryPatrolTan
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_M05_co.paa"};
+	};
+	class BaseballCap_MilitaryPatrol_MARPAT_Wood: BaseballCap_MilitaryPatrolTan
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MPat_Wood_co.paa"};
+	};
 
   class SRP_Cowboy_Hat_Carl_Brown: SRP_Cowboy_Hat_Carl
 	{
