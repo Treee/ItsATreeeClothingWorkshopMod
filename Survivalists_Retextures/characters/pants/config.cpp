@@ -931,4 +931,34 @@ class CfgVehicles
       "Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_Green_CO.paa"
     };
   };
+  class SRP_ESPG3_TacPants_MC_Black: SRP_ESPG3_TacPants_Colorbase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_MC_Black_CO.paa"};
+	};
+	class SRP_ESPG3_TacPants_CAD: SRP_ESPG3_TacPants_Colorbase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_CAD_CO.paa"};
+	};
+	class SRP_ESPG3_TacPants_M05: SRP_ESPG3_TacPants_Colorbase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_M05_CO.paa"};
+	};
+	class SRP_ESPG3_TacPants_ChocChip: SRP_ESPG3_TacPants_Colorbase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_ChocChip_CO.paa"};
+	};
+	class SRP_ESPG3_TacPants_ERDL: SRP_ESPG3_TacPants_Colorbase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_ERDL_CO.paa"};
+	};
+	class SRP_ESPG3_TacPants_MARPAT_Wood: SRP_ESPG3_TacPants_Colorbase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\pants\data\ESP_G3_TacPants_MPat_Wood_CO.paa"};
+	};
 };

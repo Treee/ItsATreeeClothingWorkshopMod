@@ -402,6 +402,12 @@ class CfgVehicles
       "Tan",
       "Black",
       "Green",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood",
     };
 		attachments[]=
 		{

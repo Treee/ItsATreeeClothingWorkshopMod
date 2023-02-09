@@ -1550,6 +1550,42 @@ class CfgVehicles
       "Survivalists_Retextures\characters\vests\data\Tac_vest_Green_CO.paa"
 		};	
 	};
+  class SRP_Tac_Vest_MC_Black: SRP_Tac_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_vest_MC_BlackCO.paa"};
+	};
+	class SRP_Tac_Vest_CAD: SRP_Tac_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_vest_CAD_CO.paa"};
+	};
+	class SRP_Tac_Vest_ChocChip: SRP_Tac_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_vest_ChocChip_CO.paa"};
+	};
+	class SRP_Tac_Vest_ERDL: SRP_Tac_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_vest_ERDL_CO.paa"};
+	};
+	class SRP_Tac_Vest_M05: SRP_Tac_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_vest_M05_CO.paa"};
+	};
+	class SRP_Tac_Vest_MARPAT_Wood: SRP_Tac_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_vest_MPAT_Wood_CO.paa"};
+	};
 	class SRP_Ratnik_Tan: SRP_Ratnik_ColorBase
 	{
     scope=2;
@@ -1633,6 +1669,37 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Yellow_CO.paa"
 		};	
+	};
+  class SRP_Ratnik_MC_Black: SRP_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_MC_Black_CO.paa"};
+	};
+	class SRP_Ratnik_ERDL: SRP_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_ERDL_CO.paa"};
+	};
+	class SRP_Ratnik_CAD: SRP_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_CAD_CO.paa"};
+	};
+	class SRP_Ratnik_ChocChip: SRP_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_ChocChip_CO.paa"};
+	};
+	class SRP_Ratnik_M05: SRP_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_M05_CO.paa"};
+	};
+	class SRP_Ratnik_MARPAT_Wood: SRP_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_MPat_Wood_CO.paa"};
 	};
   class SRP_Ratnik_WolfFur: SRP_Ratnik_ColorBase
 	{
@@ -1798,6 +1865,36 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Ratnik_Yellow_CO.paa"
 		};	
 	};
+  class SRP_Light_Ratnik_MC_Black: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_MC_Black_CO.paa"};
+	};
+	class SRP_Light_Ratnik_ERDL: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_ERDL_CO.paa"};
+	};
+	class SRP_Light_Ratnik_CAD: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_CAD_CO.paa"};
+	};
+	class SRP_Light_Ratnik_ChocChip: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_ChocChip_CO.paa"};
+	};
+	class SRP_Light_Ratnik_M05: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_M05_CO.paa"};
+	};
+	class SRP_Light_Ratnik_MARPAT_Wood: SRP_Light_Ratnik_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Ratnik_MPat_Wood_CO.paa"};
+	};
 	class SRP_Chestrig_Tan: SRP_Chestrig_ColorBase
 	{
 		scope=2;
@@ -1846,6 +1943,36 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Army_Vest_1_Green_CO.paa"
 		};	
 	};
+  class SRP_Army_Vest_1_MC_Black: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_1_MC_Black_CO.paa"};
+	};
+	class SRP_Army_Vest_1_CAD: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_1_CAD_CO.paa"};
+	};
+	class SRP_Army_Vest_1_ChocChip: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_1_ChocChip_CO.paa"};
+	};
+	class SRP_Army_Vest_1_ERDL: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_1_ERDL_CO.paa"};
+	};
+	class SRP_Army_Vest_1_M05: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_1_M05_CO.paa"};
+	};
+	class SRP_Army_Vest_1_MARPAT_Wood: SRP_Army_Vest_1_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_1_MPat_Wood_CO.paa"};
+	};
 	class SRP_Army_Vest_2_Black: SRP_Army_Vest_2_ColorBase
 	{
 		scope=2;
@@ -1869,6 +1996,36 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\vests\data\Army_Vest_2_Green_CO.paa"
 		};	
+	};
+  class SRP_Army_Vest_2_MC_Black: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_2_MC_Black_CO.paa"};
+	};
+	class SRP_Army_Vest_2_CAD: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_2_CAD_CO.paa"};
+	};
+	class SRP_Army_Vest_2_ChocChip: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_2_ChocChip_CO.paa"};
+	};
+	class SRP_Army_Vest_2_ERDL: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_2_ERDL_CO.paa"};
+	};
+	class SRP_Army_Vest_2_M05: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_2_M05_CO.paa"};
+	};
+	class SRP_Army_Vest_2_MARPAT_Wood: SRP_Army_Vest_2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Army_Vest_2_MPat_Wood_CO.paa"};
 	};
 	class SRP_JPC_Vest_Black: SRP_JPC_Vest_ColorBase
 	{
@@ -1894,6 +2051,36 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\JPC_Vest_Green_CO.paa"
 		};	
 	};
+  class SRP_JPC_Vest_MC_Black: SRP_JPC_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\JPC_Vest_MC_Black_CO.paa"};
+	};
+	class SRP_JPC_Vest_ERDL: SRP_JPC_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\JPC_Vest_ERDL_CO.paa"};
+	};
+	class SRP_JPC_Vest_MARPAT_Wood: SRP_JPC_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\JPC_Vest_MPat_Wood_CO.paa"};
+	};
+	class SRP_JPC_Vest_CAD: SRP_JPC_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\JPC_Vest_CAD_CO.paa"};
+	};
+	class SRP_JPC_Vest_M05: SRP_JPC_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\JPC_Vest_M05_CO.paa"};
+	};
+	class SRP_JPC_Vest_ChocChip: SRP_JPC_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\JPC_Vest_ChocChip_CO.paa"};
+	};
 	class SRP_Tac_Tec_Vest_Tan: SRP_Tac_Tec_Vest_ColorBase
 	{
 		scope=2;
@@ -1918,7 +2105,36 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\Tac_Tec_Green_CO.paa"
 		};	
 	};
-
+  class SRP_Tac_Tec_Vest_ERDL: SRP_Tac_Tec_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_Tec_ERDL_CO.paa"};
+	};
+  class SRP_Tac_Tec_Vest_MC_Black: SRP_Tac_Tec_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_Tec_MC_Black_CO.paa"};
+	};
+  class SRP_Tac_Tec_Vest_CAD: SRP_Tac_Tec_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_Tec_CAD_CO.paa"};
+	};
+  class SRP_Tac_Tec_Vest_ChocChip: SRP_Tac_Tec_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_Tec_ChocChip_CO.paa"};
+	};
+  class SRP_Tac_Tec_Vest_M05: SRP_Tac_Tec_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_Tec_M05_CO.paa"};
+	};
+  class SRP_Tac_Tec_Vest_MARPAT_Wood: SRP_Tac_Tec_Vest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\Tac_Tec_MPat_Wood_CO.paa"};
+	};
 
   class SRP_Small_Bottle_Green: SRP_Small_Bottle_ColorBase
   {

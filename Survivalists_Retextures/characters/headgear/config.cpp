@@ -1215,6 +1215,36 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_co.paa"
 		};
   };
+  class SRP_CombatHelmetV2_MC_Black: SRP_CombatHelmetV2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_MC_black_co.paa"};
+	};
+	class SRP_CombatHelmetV2_CAD: SRP_CombatHelmetV2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_CAD_co.paa"};
+	};
+	class SRP_CombatHelmetV2_ChocChip: SRP_CombatHelmetV2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_ChocChip_co.paa"};
+	};
+	class SRP_CombatHelmetV2_ERDL: SRP_CombatHelmetV2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_ERDL_co.paa"};
+	};
+	class SRP_CombatHelmetV2_M05: SRP_CombatHelmetV2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_M05_co.paa"};
+	};
+	class SRP_CombatHelmetV2_MARPAT_Wood: SRP_CombatHelmetV2_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_combathelmetv2_MPat_Wood_co.paa"};
+	};
 
   class SRP_CombatHelmet6B47_Black: SRP_CombatHelmet6B47_ColorBase
   {
@@ -1265,6 +1295,36 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_co.paa"
 		};
   };
+  class SRP_CombatHelmetHighCut_ERDL: SRP_CombatHelmetHighCut_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_ERDL_co.paa"};
+	};
+	class SRP_CombatHelmetHighCut_MARPAT_Wood: SRP_CombatHelmetHighCut_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_MPAT_Wood_co.paa"};
+	};
+	class SRP_CombatHelmetHighCut_MC_Black: SRP_CombatHelmetHighCut_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_MC_Black_co.paa"};
+	};
+	class SRP_CombatHelmetHighCut_CAD: SRP_CombatHelmetHighCut_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_CAD_co.paa"};
+	};
+	class SRP_CombatHelmetHighCut_M05: SRP_CombatHelmetHighCut_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_M05_co.paa"};
+	};
+	class SRP_CombatHelmetHighCut_ChocChip: SRP_CombatHelmetHighCut_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_ChocChip_co.paa"};
+	};
 
   class SRP_CombatHelmetAltyn_Black: SRP_CombatHelmetAltyn_ColorBase
   {

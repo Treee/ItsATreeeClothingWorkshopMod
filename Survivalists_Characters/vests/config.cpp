@@ -608,7 +608,13 @@ class CfgVehicles
     {
       "Green",
       "Tan",      
-      "Black",      
+      "Black",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood", 
     };
 		itemSize[]={5,5};
 		quickBarBonus=2;
@@ -805,7 +811,13 @@ class CfgVehicles
       "Blue",
       "Pink",
       "Teal",
-      "Yellow"
+      "Yellow",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood",
     };
 		itemSize[]={7,7};
 		itemBehaviour=0;
@@ -1004,7 +1016,13 @@ class CfgVehicles
       "Blue",
       "Pink",
       "Teal",
-      "Yellow"
+      "Yellow",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood",
     };
 		itemSize[]={6,6};
     itemBehaviour=0;
@@ -1374,7 +1392,13 @@ class CfgVehicles
     {
       "Green",
       "Tan",      
-      "Black",      
+      "Black",    
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood",  
     };
 		quickBarBonus=2;
     itemBehaviour=2;
@@ -1567,7 +1591,13 @@ class CfgVehicles
     {
       "Green",
       "Tan",      
-      "Black",      
+      "Black",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood", 
     };
 		quickBarBonus=2;
     itemBehaviour=2;
@@ -1756,7 +1786,13 @@ class CfgVehicles
     {
       "Green",
       "Tan",      
-      "Black",      
+      "Black",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood",    
     };
 		quickBarBonus=2;
     itemBehaviour=2;
@@ -1944,7 +1980,13 @@ class CfgVehicles
     {
       "Green",
       "Tan",      
-      "Black",      
+      "Black",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood", 
     };
 		quickBarBonus=2;
     itemBehaviour=2;
@@ -2131,7 +2173,7 @@ class CfgVehicles
       "Blue",
       "Pink",
       "Teal",
-      "Yellow"
+      "Yellow",
     };
 		weight=12000;
 		itemSize[]={2,3};

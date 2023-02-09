@@ -822,6 +822,36 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_Green_CO.paa"
 		};
 	};
+  class SRP_Small_Military_Pack_MC_Black: SRP_Small_Military_Pack_Tan
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_MC_Black_CO.paa"};
+	};
+	class SRP_Small_Military_Pack_CAD: SRP_Small_Military_Pack_Tan
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_CAD_CO.paa"};
+	};
+	class SRP_Small_Military_Pack_ChocChip: SRP_Small_Military_Pack_Tan
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_ChocChip_CO.paa"};
+	};
+	class SRP_Small_Military_Pack_ERDL: SRP_Small_Military_Pack_Tan
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_ERDL_CO.paa"};
+	};
+	class SRP_Small_Military_Pack_M05: SRP_Small_Military_Pack_Tan
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_M05_CO.paa"};
+	};
+	class SRP_Small_Military_Pack_MARPAT: SRP_Small_Military_Pack_Tan
+	{
+		scope=2;
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\backpacks\data\Small_Military_Pack_MPat_wood_CO.paa"};
+	};
 
   class SRP_Big_Military_Pack_Green: SRP_Big_Military_Pack_Tan
 	{

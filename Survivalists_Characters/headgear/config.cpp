@@ -1592,6 +1592,12 @@ class CfgVehicles
       "Black",
       "Green",
       "Tan",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood",
     };
 		class ClothingTypes
 		{
@@ -1828,6 +1834,12 @@ class CfgVehicles
       "Black",
       "Green",
       "Tan",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood",
     };
 		class ClothingTypes
 		{

@@ -435,7 +435,13 @@ class CfgVehicles
     {
       "Black",
       "Tan",
-      "Green"
+      "Green",
+      "MC_Black",
+      "CAD",
+      "M05",
+      "ChocChip",
+      "ERDL",
+      "MARPAT_Wood",
     };
     class DamageSystem
     {
