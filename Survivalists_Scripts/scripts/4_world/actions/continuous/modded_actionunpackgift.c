@@ -4,20 +4,24 @@ modded class ActionUnpackGift
 	{
     super.OnFinishProgressServer(action_data);
     
-    ItemBase paper;
-    if (Class.CastTo(paper, GetGame().CreateObjectEx("WrittenNote", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE)))
+    // only gift boxes ending in _1 are treasure hunts (CE spawned, not crafted)
+    if (action_data.m_MainItem && action_data.m_MainItem.GetType().Contains("_1"))
     {
-      PotentialTreasureLocation treasureSpot = GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureLocation();
-      vector treasureLocation = treasureSpot.GetRandomPointInside();
-      paper.GetWrittenNoteData().InitNoteInfo(null, paper);    
-      paper.GetWrittenNoteData().SetNoteText(GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureHuntText(treasureSpot));
+      ItemBase paper;
+      if (Class.CastTo(paper, GetGame().CreateObjectEx("WrittenNote", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE)))
+      {
+        PotentialTreasureLocation treasureSpot = GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureLocation();
+        vector treasureLocation = treasureSpot.GetRandomPointInside();
+        paper.GetWrittenNoteData().InitNoteInfo(null, paper);    
+        paper.GetWrittenNoteData().SetNoteText(GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureHuntText(treasureSpot));
 
-      Param1<string> text = new Param1<string>(paper.GetWrittenNoteData().GetNoteText());
-      paper.RPCSingleParam(ERPCs.RPC_READ_NOTE, text, true, action_data.m_Player.GetIdentity());
-      paper.AddHealth(-70);
-      SendMessageToClient( action_data.m_Player, "A worn and torn piece of paper falls to the ground.");
-      // SendMessageToClient( action_data.m_Player, string.Format("A worn and torn piece of paper falls to the ground. %1", treasureSpot.GetVectorPrettyString("X marks:", treasureLocation)));
-      BuryTreasure(treasureLocation);
+        Param1<string> text = new Param1<string>(paper.GetWrittenNoteData().GetNoteText());
+        paper.RPCSingleParam(ERPCs.RPC_READ_NOTE, text, true, action_data.m_Player.GetIdentity());
+        paper.AddHealth(-70);
+        SendMessageToClient( action_data.m_Player, "A worn and torn piece of paper falls to the ground.");
+        // SendMessageToClient( action_data.m_Player, string.Format("A worn and torn piece of paper falls to the ground. %1", treasureSpot.GetVectorPrettyString("X marks:", treasureLocation)));
+        BuryTreasure(treasureLocation);
+      }
     }
 	}
 
