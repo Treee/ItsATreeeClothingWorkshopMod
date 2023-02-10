@@ -1,23 +1,5 @@
 modded class ActionOpenDoors
 {
-  override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
-	{
-    bool superCondition = super.ActionCondition(player, target, item);
-		SRP_DefaultHouse srpHouse;
-		if( Class.CastTo(srpHouse, target.GetObject()))
-    {
-      string name = srpHouse.GetActionComponentName(target.GetComponentIndex());
-			name.ToLower();
-      string windowPrefix = name.Substring( 0, 6); // look for window
-      // Print(string.Format("name: %1 target component: %2", windowPrefix, name));
-			if (windowPrefix == "window")
-      {
-        return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player.GetPosition());
-      }
-    }
-    return superCondition;
-	}
-  
   override void OnEndServer( ActionData action_data )
 	{
     super.OnEndServer(action_data);
@@ -33,19 +15,6 @@ modded class ActionCloseDoors
 {
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    bool superCondition = super.ActionCondition(player, target, item);
-		SRP_DefaultHouse srpHouse;
-		if( Class.CastTo(srpHouse, target.GetObject()))
-    {
-      string name = srpHouse.GetActionComponentName(target.GetComponentIndex());
-			name.ToLower();
-      string windowPrefix = name.Substring( 0, 6); // look for window
-      // Print(string.Format("name: %1 target component: %2", windowPrefix, name));
-			if (windowPrefix == "window")
-      {
-        return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player.GetPosition());
-      }
-    }
     // if a shipping container has been opened and a random event happened, dont let it close
     SRP_ShippingContainerBase srpShippingContainer;
 		if( Class.CastTo(srpShippingContainer, target.GetObject()))
@@ -55,6 +24,6 @@ modded class ActionCloseDoors
         return false;
       }      
     }
-    return superCondition;
+    return super.ActionCondition(player, target, item);
 	}
 };
