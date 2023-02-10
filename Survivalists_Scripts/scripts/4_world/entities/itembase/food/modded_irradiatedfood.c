@@ -41,7 +41,6 @@ class Pumpkin_Irradiated extends Edible_Base
 		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_STONEDIRRADIATED );
 	}
 };
-
 class SlicedPumpkin_Irradiated extends Edible_Base
 {
 	override bool CanBeCooked()
@@ -85,5 +84,38 @@ class SlicedPumpkin_Irradiated extends Edible_Base
 			consumer.GetModifiersManager().DeactivateModifier( SRP_eDrugModifiers.MDF_STONEDIRRADIATED );
 		}
 		consumer.GetModifiersManager().ActivateModifier( SRP_eDrugModifiers.MDF_STONEDIRRADIATED );
+	}
+};
+class Cannabis_Irradiated extends Edible_Base
+{
+	override bool CanBeCooked()
+	{
+		return false;
+	}		
+	
+	override bool CanBeCookedOnStick()
+	{
+		return false;
+	}	
+	
+	override bool IsFruit()
+	{
+		return true;
+	}
+	
+	override bool CanDecay()
+	{
+		return true;
+	}
+  override bool HasRadioactiveEffect()
+  {
+    return true;
+  }
+	override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionForceFeed);
+		AddAction(ActionEat);
 	}
 };
