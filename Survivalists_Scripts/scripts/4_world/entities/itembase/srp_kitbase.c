@@ -37,6 +37,8 @@ class SRP_Ladder_Opened_Kit extends SRP_KitBase
   }
 };
 
+class SRP_MasonryMetallurgy_KitBase extends SRP_KitBase{};
+
 class SRP_HoneyCombStand_Kit extends SRP_KitBase{};
 class SRP_GlassDisplayCase_Kit extends SRP_KitBase{};
 class SRP_GlassDisplayCaseLarge_Kit extends SRP_KitBase{};
@@ -402,6 +404,7 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
   }
 };
 
+class SRP_MasonryMetallurgy_Intermediate_KitBase extends SRP_IntermediateCraftingKitBase{};
 class SRP_TetrisShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_BuildingComponentFrame_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WoodenShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};

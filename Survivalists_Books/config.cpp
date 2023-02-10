@@ -6,7 +6,7 @@ class CfgMods
 		author = "ItsATreee";
 		name = "Survivalists_Books";
 		dir = "Survivalists_Books";
-    dependencies[] = {"World","Mission"};
+    dependencies[] = {"World"};
 		class defs
 		{
 			class worldScriptModule
@@ -14,11 +14,6 @@ class CfgMods
 				value = "";
         files[] = {"Survivalists_Books/scripts/4_world"};			
       };
-      class missionScriptModule
-			{
-				value="";
-				files[]= {"Survivalists_Books/scripts/5_mission"};
-			};
 		};
 	};
 };
