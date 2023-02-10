@@ -36,6 +36,10 @@ class SRP_CraftingMaterial_Dye_Base extends ItemBase
       quantityReduced = 35;
     else if (slottype == InventorySlots.FEET)
       quantityReduced = 15;
+    else if (slottype == InventorySlots.FEET)
+      quantityReduced = 15;
+    else if (slottype == 999999)
+      quantityReduced = 35;
 
     AddQuantity(-quantityReduced);
   }

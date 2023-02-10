@@ -5,7 +5,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
     // Print("on action info update");
     m_Text = "No Option";
 
-    Clothing target_clothing;
+    ItemBase target_clothing;
 		if ( target && Class.CastTo(target_clothing, target.GetObject()) )
     {
       // array<string> variantOptions = GetVariantIdOptions(target_clothing.GetType());
@@ -30,7 +30,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
       return false;
     }
     // Print("Action condition- item in hands is spray can: " + dye);
-    Clothing target_clothing;
+    ItemBase target_clothing;
 		if ( target && Class.CastTo(target_clothing, target.GetObject()) )
 		{
       if (target_clothing.GetNumberOfItems() > 0)
@@ -51,7 +51,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
     SRP_CraftingMaterial_Dye_Base dye;
 		if (action_data.m_MainItem && Class.CastTo(dye, action_data.m_MainItem))
 		{
-      Clothing target_clothing;
+      ItemBase target_clothing;
       if ( action_data.m_Target && Class.CastTo(target_clothing, action_data.m_Target.GetObject()) )
       {
         int variantId = SRP_VariantIdActionData.Cast(action_data).m_SRPVariantId;
@@ -77,7 +77,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
   override void OnUpdateActions( Object item, Object target, int component_index )
 	{
     // Print("on update actions start");
-    Clothing clothingItem;
+    ItemBase clothingItem;
 		if (Class.CastTo(clothingItem, target))
 		{
       // Print("on update actions clothing cast: " + clothingItem);
