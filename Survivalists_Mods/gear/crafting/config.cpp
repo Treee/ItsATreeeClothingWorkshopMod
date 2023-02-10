@@ -98,7 +98,6 @@ class CfgVehicles
 		};
 
   };
-
 //========================================== VANILLA OVERRIDE
   class Rope: Inventory_Base
 	{

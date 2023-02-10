@@ -210,9 +210,11 @@ class Craft_SRP_CardboardBox_Kit extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-		if (ingredients[0] && ingredients[1])
+    SRP_Notebook notebook1;
+    SRP_Notebook notebook2;
+		if (Class.CastTo(notebook1, ingredients[0]) && Class.CastTo(notebook2, ingredients[1]))
     {
-      return (ingredients[0].GetInventory().GetCargo().GetItemCount() == 40 && ingredients[1].GetInventory().GetCargo().GetItemCount() == 40);
+      return notebook1.IsFullNotebook() && notebook2.IsFullNotebook();
     }
     return false;
 	}

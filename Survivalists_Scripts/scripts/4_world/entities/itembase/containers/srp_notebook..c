@@ -32,7 +32,6 @@ class SRP_Notebook extends Inventory_Base
 		}    
 		return false;
 	}
-
   override bool CanLoadItemIntoCargo( EntityAI item )
   {
 		if ( item.IsKindOf("Paper"))
@@ -65,5 +64,12 @@ class SRP_Notebook extends Inventory_Base
 		} 
 		return false;  
   }
-
+  bool IsFullNotebook()
+  {
+    if (GetInventory())
+    {
+      return GetInventory().GetCargo().GetItemCount() == 40;
+    }
+    return false;
+  }
 };
