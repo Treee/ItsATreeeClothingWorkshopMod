@@ -117,7 +117,6 @@ class CfgVehicles
       "Beige",
       "Black",
       "Blue",
-      "Dyed",
       "Green",
       "OrangeWhiteStripes",
       "Red",
