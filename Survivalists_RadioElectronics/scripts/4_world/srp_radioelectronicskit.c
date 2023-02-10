@@ -4,7 +4,7 @@ class SRP_RadioElectronics_KitBase extends ItemBase
   
   void ~SRP_RadioElectronics_KitBase(){}
 
-  string GetKitItemName()
+  override string GetKitItemName()
   {
     string kitType = this.GetType();
     if (kitType != "") {

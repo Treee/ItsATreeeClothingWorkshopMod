@@ -5,7 +5,7 @@ class PowerTool_ElectricHandDrill extends ItemBase
     return GetInventory().AttachmentCount() > 0;
   }
 
-  bool CanReceiveAttachment (EntityAI attachment, int slotId)
+  override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
 		return GetInventory().AttachmentCount() == 0;
 	}

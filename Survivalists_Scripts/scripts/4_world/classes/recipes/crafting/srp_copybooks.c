@@ -2,7 +2,7 @@ class Craft_SRP_CopyBook extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Craft Lab Tube Rack";
+		m_Name = "Copy Book";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
@@ -80,7 +80,7 @@ class Craft_SRP_CopyBook extends RecipeBase
     {
       if (Class.CastTo(book, printingPress.GetItemOnSlot("SRP_Book1")))
       {
-        GetGame().CreateObjectEx(book.GetType(), player.GetPosition(), false)
+        GetGame().CreateObjectEx(book.GetType(), player.GetPosition(), false);
       }
     }
 		Debug.Log("Craft_SRP_CopyBook: Recipe Do method called: " + m_Name,"recipes");

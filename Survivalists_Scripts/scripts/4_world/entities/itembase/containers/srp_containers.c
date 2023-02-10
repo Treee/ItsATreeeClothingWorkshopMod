@@ -271,7 +271,7 @@ class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
 
 class SRP_Furniture_SmallLogPile extends SRP_DeployableContainer_Base
 {
-  bool CanReceiveItemIntoCargo(EntityAI item)
+  override bool CanReceiveItemIntoCargo(EntityAI item)
 	{
     return false;
   }
@@ -308,7 +308,7 @@ class SRP_Furniture_SmallLogPile extends SRP_DeployableContainer_Base
 
 class SRP_Furniture_LargeLogPile extends SRP_DeployableContainer_Base
 {
-  bool CanReceiveItemIntoCargo(EntityAI item)
+  override bool CanReceiveItemIntoCargo(EntityAI item)
 	{
     return false;
   }

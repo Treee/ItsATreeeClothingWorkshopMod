@@ -5,7 +5,7 @@ enum SRP_SymptomIDs : SymptomIDs
 
 modded class SymptomManager
 {
-  void Init()
+  override void Init()
 	{
     super.Init();
     RegisterSymptom(new SleepEffectSymptom);

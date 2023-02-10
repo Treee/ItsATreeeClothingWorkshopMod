@@ -56,7 +56,7 @@ class ActionOpenCryptoDoor: ActionInteractBase
 		}
 	}
 
-  void OnStartClient(ActionData action_data)
+  override void OnStartClient(ActionData action_data)
 	{
     jmc_dungeon_Door06_Double_Lever lever;
     // Print("on client start");

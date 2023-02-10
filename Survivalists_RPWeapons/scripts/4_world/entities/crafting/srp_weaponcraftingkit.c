@@ -1,6 +1,6 @@
 class SRP_WeaponCraftingKitBase extends ItemBase
 {
-  bool IsCraftingKit()
+  override bool IsCraftingKit()
   {
     return true;
   }

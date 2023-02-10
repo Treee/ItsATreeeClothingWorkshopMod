@@ -47,7 +47,7 @@ class SRP_ElectronicsJammer_Base extends DeployableContainer_Base
     {
       // Print("[LogRadioEvent] - SERVER ");
       RadioElectronicsConfig config = GetDayZGame().GetRadioElectronicsConfig();
-      PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
+      // PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
       if (config && m_AdminLog)
       {          
         // Print("[LogRadioEvent] - SERVER - CONFIG"); 

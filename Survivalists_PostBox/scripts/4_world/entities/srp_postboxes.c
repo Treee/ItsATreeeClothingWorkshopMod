@@ -175,7 +175,7 @@ class SRP_PostBox_Base extends SRP_OwnedItem_Base
   {
     return GetInventory().AttachmentCount() < 10;
   }
-  bool IsEmpty()
+  override bool IsEmpty()
   {
     return GetInventory().AttachmentCount() == 0;
   }

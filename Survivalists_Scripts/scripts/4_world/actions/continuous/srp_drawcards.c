@@ -61,7 +61,7 @@ class ActionSRPSwitchDrawMode extends ActionSingleUseBase
       }
     }
 	}
-  protected void OnExecuteClient( ActionData action_data )
+  override protected void OnExecuteClient( ActionData action_data )
 	{
     if (action_data.m_Player)
     {

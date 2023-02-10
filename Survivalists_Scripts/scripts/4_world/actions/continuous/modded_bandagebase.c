@@ -6,7 +6,7 @@ modded class ActionBandageBase
     return canAction || item.IsInherited(SRP_BandageDressing);	
 	}
 	
-	void ApplyBandage( ItemBase item, PlayerBase player )
+	override void ApplyBandage( ItemBase item, PlayerBase player )
 	{	
     if (item)
     {

@@ -104,7 +104,7 @@ class ActionTurnRubixCubeCounterClockwise: ActionTurnRubixCubeClockwise
 		}
 	}
 
-  void OnStartClient(ActionData action_data)
+  override void OnStartClient(ActionData action_data)
 	{
     Land_srp_artifact_rubixcube_1 rubix;
     Print("on client start");

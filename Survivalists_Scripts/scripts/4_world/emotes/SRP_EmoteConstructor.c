@@ -1,6 +1,6 @@
 modded class EmoteConstructor
 {
-	void RegisterEmotes(TTypenameArray emotes)
+	override void RegisterEmotes(TTypenameArray emotes)
 	{
     super.RegisterEmotes(emotes);
 		

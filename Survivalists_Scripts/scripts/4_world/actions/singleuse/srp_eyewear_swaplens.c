@@ -42,28 +42,28 @@ class ActionSwapLens_Base extends ActionSingleUseBase
 
 class ActionSwapLens_Black extends ActionSwapLens_Base
 {
-  string GetLensColor()
+  override string GetLensColor()
   {
     return "Black";
   }
 };
 class ActionSwapLens_Blue extends ActionSwapLens_Base
 {
-  string GetLensColor()
+  override string GetLensColor()
   {
     return "Blue";
   }
 };
 class ActionSwapLens_Green extends ActionSwapLens_Base
 {
-  string GetLensColor()
+  override string GetLensColor()
   {
     return "Green";
   }
 };
 class ActionSwapLens_Orange extends ActionSwapLens_Base
 {
-  string GetLensColor()
+  override string GetLensColor()
   {
     return "Orange";
   }

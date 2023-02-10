@@ -1,6 +1,6 @@
 modded class ActionConstructor
 {	
-	void RegisterActions(TTypenameArray actions)
+	override void RegisterActions(TTypenameArray actions)
 	{
     super.RegisterActions(actions);
     

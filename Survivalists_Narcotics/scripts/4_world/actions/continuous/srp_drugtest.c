@@ -37,16 +37,6 @@ class ActionTestDrugsTarget extends ActionTestBloodTarget
     }
 		SendMessageToClient(ntarget, testResult);
 	}
-
-  void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
-	{
-		PlayerBase man;
-    Param1<string> m_MessageParam = new Param1<string>(message);
-		if( GetGame().IsServer() && Class.CastTo(man, reciever) && m_MessageParam && reciever.IsAlive() && message != "" )
-		{
-			GetGame().RPCSingleParam(man, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, man.GetIdentity());
-		}
-	}
 };
 
 class ActionTestDrugsSelf extends ActionTestBloodSelf
@@ -86,15 +76,5 @@ class ActionTestDrugsSelf extends ActionTestBloodSelf
       testResult = "Drug Test Results Negative";
     }
 		SendMessageToClient(action_data.m_Player, testResult);
-	}
-
-  void SendMessageToClient( Object reciever, string message ) //sends given string to client, don't use if not nescessary
-	{
-		PlayerBase man;
-    Param1<string> m_MessageParam = new Param1<string>(message);
-		if( GetGame().IsServer() && Class.CastTo(man, reciever) && m_MessageParam && reciever.IsAlive() && message != "" )
-		{
-			GetGame().RPCSingleParam(man, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, man.GetIdentity());
-		}
 	}
 };

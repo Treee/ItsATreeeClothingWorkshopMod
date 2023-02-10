@@ -16,7 +16,7 @@ enum SRP_DrugSymptomIDs: SymptomIDs
 
 modded class SymptomManager
 {
-  void Init()
+  override void Init()
 	{
     super.Init();
     RegisterSymptom(new WeedEffectSymptom);

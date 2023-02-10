@@ -1,6 +1,6 @@
 modded class ActionSawPlanksCB
 {	
-	float GetDefaultTime()
+	override float GetDefaultTime()
 	{
 		string item_type = m_ActionData.m_MainItem.GetType();
 		

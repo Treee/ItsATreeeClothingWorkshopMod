@@ -8,7 +8,7 @@ modded class Rag
   {
     return true;
   }
-  int GetHeatTimerThreshold()
+  override int GetHeatTimerThreshold()
   {
     return 900;
   }
