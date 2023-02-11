@@ -67,11 +67,14 @@ class SRP_FireplaceIndoor_Medieval extends SRP_FireplaceBase
 	{
 		return Vector( 0, 0.167, 0.122 );
 	}
-
 	override protected vector GetSmokeEffectPosition()
 	{
 		return Vector( 0, 2, -0.253 );
 	}
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
 class SRP_FireplaceIndoor_Fancy extends SRP_FireplaceIndoor_Medieval
 {
