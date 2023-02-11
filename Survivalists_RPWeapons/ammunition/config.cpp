@@ -510,12 +510,28 @@ class CfgVehicles
 		canBeSplit=1;
 		varQuantityInit=10;
 		varQuantityMin=0;
-		varQuantityMax=60;   
+		varQuantityMax=60;        
+  };
+  class SRP_BulletCrafting_Copper: SRP_BulletCrafting_Pistol60Count
+	{
+		scope=2;
+		displayName="Generic Copper Bullet Tips";
+		descriptionShort="Forged bullet tips. Useful for crafting ammunition.";
+		model="Survivalists_RPWeapons\ammunition\bullet9mm.p3d";    
     inventorySlot[]=
     {
-      "SRP_AmmoCasings"
+      "SRP_AmmoBullets"
     }; 
-  };
+	};
+
+
+
+
+
+
+////////////////////////////////////////////// eventually remove everything below
+
+
   class SRP_EmptyCasingPistol_9x19: SRP_BulletCrafting_Pistol60Count
 	{
 		scope=2;
@@ -528,11 +544,7 @@ class CfgVehicles
 		scope=2;
 		displayName="9x19 Caliber Bullets";
 		descriptionShort="9x19 bullets";
-		model="Survivalists_RPWeapons\ammunition\bullet9mm.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet9mm.p3d";    
 	};
   class SRP_EmptyCasingPistol_357: SRP_BulletCrafting_Pistol60Count
 	{
@@ -546,11 +558,7 @@ class CfgVehicles
 		scope=2;
 		displayName=".357 Caliber Bullets";
 		descriptionShort=".357 bullets";
-		model="Survivalists_RPWeapons\ammunition\bullet357.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet357.p3d";    
 	};
   class SRP_EmptyCasingPistol_22: SRP_BulletCrafting_Pistol60Count
 	{
@@ -564,11 +572,7 @@ class CfgVehicles
 		scope=2;
 		displayName=".22 Caliber Bullets";
 		descriptionShort=".22 bullets";
-		model="Survivalists_RPWeapons\ammunition\bullet22mm.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet22mm.p3d";    
 	};
   class SRP_EmptyCasingPistol_45ACP: SRP_BulletCrafting_Pistol60Count
 	{
@@ -582,11 +586,7 @@ class CfgVehicles
 		scope=2;
 		displayName="45ACP Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet45acp.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet45acp.p3d";    
 	};
   class SRP_EmptyCasingPistol_380: SRP_BulletCrafting_Pistol60Count
 	{
@@ -600,11 +600,7 @@ class CfgVehicles
 		scope=2;
 		displayName="380 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet380.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet380.p3d";    
 	};
 //------------------------------ Rifle Bullet Crafting
   class SRP_BulletCrafting_Rifle40Count: Inventory_Base
@@ -617,11 +613,7 @@ class CfgVehicles
 		canBeSplit=1;
 		varQuantityInit=10;
 		varQuantityMin=0;
-		varQuantityMax=40;
-    inventorySlot[]=
-    {
-      "SRP_AmmoCasings"
-    };
+		varQuantityMax=40;    
   };
   class SRP_EmptyCasingRifle_556: SRP_BulletCrafting_Rifle40Count
 	{
@@ -635,11 +627,7 @@ class CfgVehicles
 		scope=2;
 		displayName="5.56 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet556.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet556.p3d";    
 	};
   class SRP_EmptyCasingRifle_545: SRP_BulletCrafting_Rifle40Count
 	{
@@ -653,11 +641,7 @@ class CfgVehicles
 		scope=2;
 		displayName="5.45 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet545.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet545.p3d";    
 	};
   class SRP_EmptyCasingRifle_762x39: SRP_BulletCrafting_Rifle40Count
 	{
@@ -671,11 +655,7 @@ class CfgVehicles
 		scope=2;
 		displayName="7.62x39 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet762x39.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet762x39.p3d";    
 	};
   class SRP_EmptyCasingRifle_762x54: SRP_BulletCrafting_Rifle40Count
 	{
@@ -689,11 +669,7 @@ class CfgVehicles
 		scope=2;
 		displayName="7.62x54 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet762x54.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet762x54.p3d";    
 	};
   class SRP_EmptyCasingRifle_308: SRP_BulletCrafting_Rifle40Count
 	{
@@ -707,11 +683,7 @@ class CfgVehicles
 		scope=2;
 		displayName="308 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet308.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet308.p3d";    
 	};
   class SRP_EmptyCasingRifle_9x39: SRP_BulletCrafting_Rifle40Count
 	{
@@ -725,11 +697,7 @@ class CfgVehicles
 		scope=2;
 		displayName="9x39 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet9x39.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet9x39.p3d";    
 	};
   class SRP_EmptyCasingRifle_300Blackout: SRP_BulletCrafting_Rifle40Count
 	{
@@ -743,11 +711,7 @@ class CfgVehicles
 		scope=2;
 		displayName="300 Blackout Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet300blackout.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet300blackout.p3d";    
 	};
   class SRP_EmptyCasingRifle_50Cal: SRP_BulletCrafting_Rifle40Count
 	{
@@ -761,11 +725,7 @@ class CfgVehicles
 		scope=2;
 		displayName="50 Cal Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet50Cal.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet50Cal.p3d";    
 	};
   class SRP_EmptyCasingRifle_12x7: SRP_BulletCrafting_Rifle40Count
 	{
@@ -779,11 +739,7 @@ class CfgVehicles
 		scope=2;
 		displayName="12.7 Caliber Bullets";
 		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet12x7.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\bullet12x7.p3d";    
 	};
 
 // --------------- Shotgun Bullet Kits and Pellets
@@ -797,11 +753,7 @@ class CfgVehicles
 		canBeSplit=1;
 		varQuantityInit=10;
 		varQuantityMin=0;
-		varQuantityMax=60;
-    inventorySlot[]=
-    {
-      "SRP_AmmoCasings"
-    };
+		varQuantityMax=60;    
   };
   class SRP_EmptyCasing_Shotgun: SRP_BulletCrafting_Shotgun60Count
   {
@@ -815,32 +767,20 @@ class CfgVehicles
 		scope=2;
 		displayName="12 Gauge Projectiles - Crushed Stone";
 		descriptionShort="Stones crushed into chunks small enough for 12 gauge casings.";
-		model="Survivalists_RPWeapons\ammunition\crushedstone.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\crushedstone.p3d";    
   };
   class SRP_ProjectileShotgun_Nail: SRP_BulletCrafting_Shotgun60Count
   {
 		scope=2;
 		displayName="12 Gauge Projectiles - Chopped Nail";
 		descriptionShort="Nails chopped into chunks small enough for 12 gauge casings.";
-		model="Survivalists_RPWeapons\ammunition\crushednail.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\crushednail.p3d";    
   };
   class SRP_ProjectileShotgun_Pellet: SRP_BulletCrafting_Shotgun60Count
   {
 		scope=2;
 		displayName="12 Gauge Projectiles - Pellet";
 		descriptionShort="Pellets pulled from other bullets small enough for 12 gauge casings.";
-		model="Survivalists_RPWeapons\ammunition\metalball.p3d";
-    inventorySlot[]=
-    {
-      "SRP_AmmoBullets"
-    };
+		model="Survivalists_RPWeapons\ammunition\metalball.p3d";    
   };
 };

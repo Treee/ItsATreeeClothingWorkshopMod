@@ -4,8 +4,8 @@ modded class PluginRecipesManager
 	{
 		super.RegisterRecipies();
 
-    RegisterRecipe(new Craft_SRP_NailBullets);
-    RegisterRecipe(new Craft_SRP_StoneBullets);
+    RegisterRecipe(new Migrate_Old_Ammo);
+
     RegisterRecipe(new Disassemble_SRP_ShotgunAmmo);
     RegisterRecipe(new Disassemble_SRP_PistolAmmo);
     RegisterRecipe(new Disassemble_SRP_RifleAmmo);

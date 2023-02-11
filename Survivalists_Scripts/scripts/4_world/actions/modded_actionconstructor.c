@@ -4,6 +4,7 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
+    actions.Insert(SRP_ActionCraftAmmo);
     actions.Insert(ActionConvertStarterForgeKit);
     actions.Insert(ActionPourMoltenMetalIntoMold);
     actions.Insert(ActionEmptyIngotMold);
@@ -30,7 +31,6 @@ modded class ActionConstructor
 		actions.Insert(ActionBlowIntoHorn); 
 
 		actions.Insert(ActionToggleMuteTransmitter);  
-		actions.Insert(ActionInteractWithAmmoCraftingWorkbench);
     actions.Insert(ActionTeleportToEvent);
     actions.Insert(ActionTeleportAwayFromEvent);
 
@@ -84,7 +84,6 @@ modded class ActionConstructor
     actions.Insert(ActionTurnRubixCubeClockwise_Z2);
 
     actions.Insert(ActionSRPRakeFireplaceAshes);
-    actions.Insert(ActionSRPSwapBrassCasingOption);
     actions.Insert(ActionSRPSwapClayPotOption);
     actions.Insert(ActionSRPRecolorClothingOption);
     actions.Insert(ActionSwitchLetterColorOption);

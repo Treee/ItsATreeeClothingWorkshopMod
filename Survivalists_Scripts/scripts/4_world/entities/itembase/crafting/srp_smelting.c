@@ -509,7 +509,6 @@ class SRP_MiningTool_IronTongsSmall extends ItemBase
 		super.SetActions();
 		
 		AddAction(ActionPourMoltenMetalIntoMold);
-		AddAction(ActionSRPSwapBrassCasingOption);
 	}
 
   bool HasIngotAttached()

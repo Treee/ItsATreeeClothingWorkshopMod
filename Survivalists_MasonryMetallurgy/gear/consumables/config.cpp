@@ -2988,6 +2988,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Metal Plate - Brass";    
     color="brass";
+    inventorySlot[]+={"SRP_AmmoCasings"};
     hiddenSelections[]=
 		{
 			"zbytek"

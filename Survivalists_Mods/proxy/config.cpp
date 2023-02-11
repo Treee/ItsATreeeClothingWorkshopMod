@@ -1195,8 +1195,9 @@ class CfgSlots
 	{
 		name="SRP_AmmoCasings";
 		displayName="Ammo Casings";
-		ghostIcon="set:dayz_gui image:cartridge_int";    
-	};
+		ghostIcon="set:dayz_inventory image:tarp";
+    stackMax=1;
+	};  
   class Slot_SRP_AmmoGunpowder
 	{
 		name="SRP_AmmoGunpowder";

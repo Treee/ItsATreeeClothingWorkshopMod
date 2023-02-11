@@ -99,6 +99,11 @@ class SRP_CraftingBench_Base extends ItemBase
           // players that brute force recipes will find things to be most expensive.
           int quantityToRemove = Math.Max(requirement.GetRequiredQuantity(), attachment.GetQuantity());
           attachment.AddQuantity(-quantityToRemove);
+          if (attachment.GetQuantityMax() == 1 && quantityToRemove == 1)
+          {
+            // Print("deleting attachment due to max quantity: " + attachment.GetType());
+            attachment.Delete();
+          }
         }        
       }
     }

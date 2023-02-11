@@ -201,3 +201,13 @@ modded class FarmingHoe
 		AddAction(ActionSRPRakeFireplaceAshes);
 	}
 };
+
+modded class Pliers
+{	
+	override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(SRP_ActionCraftAmmo);
+	}
+}
