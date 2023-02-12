@@ -4,7 +4,7 @@ class Craft_SRP_WaterBottle_Blood extends RecipeBase
 	{
 		m_Name = "Fill Bottle";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

@@ -4,7 +4,7 @@ class Craft_SRP_MutantFinalMutagenOptions_Base extends RecipeBase
 	{
 		m_Name = "Finalize Mutation";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -248,7 +248,7 @@ class Craft_SRP_MutantEvolvedEggOptions_BaseDQ extends RecipeBase
 	{
 		m_Name = "Evolve Egg";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -388,7 +388,7 @@ class Craft_SRP_SerumOptions_BaseDQ extends RecipeBase
 	{
 		m_Name = "Extract Serum";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

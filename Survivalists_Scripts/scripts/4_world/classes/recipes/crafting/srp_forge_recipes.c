@@ -72,7 +72,7 @@ class Craft_SRP_StoneForgeWorkbenchFinisher_Kit extends RecipeBase
 	{
 		m_Name = "Start Basic Forge Foundation Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 8;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision		
 		
 		//conditions
@@ -139,7 +139,7 @@ class Craft_SRP_StoneForgeWorkbench_Kit extends RecipeBase
 	{
 		m_Name = "Create Forge Workbench Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 8;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

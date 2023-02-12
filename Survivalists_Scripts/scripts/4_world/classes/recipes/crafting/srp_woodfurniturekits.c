@@ -4,7 +4,7 @@ class Craft_SRP_WoodenFurnitureKit extends RecipeBase
 	{
 		m_Name = "Create Wooden Furniture - Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -86,7 +86,7 @@ class Craft_SRP_WoodenFurnitureKit_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Wooden Furniture - Options";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -235,7 +235,7 @@ class Craft_SRP_Furniture_Sofa_Modern_Kit extends RecipeBase
 	{
 		m_Name = "Create Wooden Furniture Kit - Couch Modern";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -302,7 +302,7 @@ class Craft_SRP_Furniture_Sofa_Old_Kit extends RecipeBase
 	{
 		m_Name = "Create Wooden Furniture Kit - Couch Old";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -369,7 +369,7 @@ class Craft_SRP_Furniture_LogStump extends RecipeBase
 	{
 		m_Name = "Create Wooden Furniture Kit - Log Stump";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -493,7 +493,7 @@ class Craft_SRP_Furniture_PileOfPlanks extends RecipeBase
 	{
 		m_Name = "Create Wooden Furniture Kit - Decorative Plank Pile";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -560,7 +560,7 @@ class Craft_SRP_Furniture_SmallLogPile extends RecipeBase
 	{
 		m_Name = "Create Wooden Furniture Kit - Log Pile - Small";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -627,7 +627,7 @@ class Craft_SRP_Furniture_LargeLogPile extends RecipeBase
 	{
 		m_Name = "Create Wooden Furniture Kit - Log Pile - Large";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

@@ -4,7 +4,7 @@ class Craft_SRP_PersonalRadio_SneakyBear extends RecipeBase
 	{
 		m_Name = "Make Bear Radio";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -71,7 +71,7 @@ class Craft_SRP_PersonalRadio_NumberStations extends RecipeBase
 	{
 		m_Name = "Hack Radio";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -138,7 +138,7 @@ class Craft_SRP_PersonalRadio_AnimalCaller extends RecipeBase
 	{
 		m_Name = "Craft Animal Caller";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions

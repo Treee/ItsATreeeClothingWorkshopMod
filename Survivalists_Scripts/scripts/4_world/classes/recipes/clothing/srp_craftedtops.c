@@ -4,7 +4,7 @@ class Craft_SRP_LeatherArmband extends RecipeBase   // Our example recipe which 
 	{
 		m_Name = "Craft Armband - Plain Leather";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -67,7 +67,7 @@ class Craft_SRPClothing_TopKit_InsulatedGhillie extends RecipeBase
 	{
 		m_Name = "Sew Top - Insulated Bear Ghillie";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions

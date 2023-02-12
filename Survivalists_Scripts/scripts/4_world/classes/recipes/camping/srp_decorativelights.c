@@ -4,7 +4,7 @@ class Craft_SRP_DecorativeLightKit_KitBase extends RecipeBase
 	{
 		m_Name = "Craft Decorative Light Starter Kit";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -66,7 +66,7 @@ class Craft_SRP_DecorativeLightKit_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Decorative Light Kit - Options";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -210,7 +210,7 @@ class Craft_SRP_DecorativeLightKit_IntoColorKit extends RecipeBase
 	{
 		m_Name = "Finish Decorative Light - Apply Filter";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

@@ -4,7 +4,7 @@ class Craft_SRP_LeatherPouch_Default extends RecipeBase   // Our example recipe 
 	{
 		m_Name = "Craft Leather Pouch - Plain";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -65,7 +65,7 @@ class Craft_SRP_LeatherPouch_Medieval extends RecipeBase   // Our example recipe
 	{
 		m_Name = "Craft Leather Pouch - Medieval";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -126,7 +126,7 @@ class Craft_SRP_LeatherPouch_Small extends RecipeBase   // Our example recipe wh
 	{
 		m_Name = "Craft Leather Pouch - Small";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

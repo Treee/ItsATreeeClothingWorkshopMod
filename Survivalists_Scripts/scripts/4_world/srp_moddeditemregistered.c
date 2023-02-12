@@ -88,59 +88,6 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_ShoulderSling", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
 
     pType.AddItemInHandsProfileIK("SRP_PoolBall_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/apple.anm");
-
-    pType.AddItemInHandsProfileIK("SRP_Letter_A_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_B_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_C_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_D_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_E_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_F_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_G_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_H_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_I_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_J_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_K_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_L_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_M_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_N_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_O_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_P_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Q_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_R_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_S_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_T_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_U_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_V_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_W_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_X_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Y_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Z_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    
-    pType.AddItemInHandsProfileIK("SRP_Letter_1_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_2_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_3_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_4_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_5_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_6_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_7_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_8_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_9_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_0_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-
-    pType.AddItemInHandsProfileIK("SRP_Letter_Ampersand_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Asterisk_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Dollars_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Equals_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Exclamation_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Hash_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Parenthesis_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Percent_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Plus_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Question_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Slash_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-    pType.AddItemInHandsProfileIK("SRP_Letter_Times_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_knife.asi", pBehavior, "dz/anims/anm/player/ik/gear/steak_knife.anm");
-
-    
   };
 
   override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)

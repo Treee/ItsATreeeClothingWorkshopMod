@@ -4,7 +4,7 @@ class Craft_DUB_ShieldBackpack extends RecipeBase
 	{
 		m_Name = "Fortify Backpack";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -71,7 +71,7 @@ class Craft_DUB_BagFlag extends RecipeBase
 	{
 		m_Name = "Create Battle Flag Bag Mount";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions

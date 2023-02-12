@@ -4,7 +4,7 @@ class SRP_DismantleElectronicJammers_Enhanced extends RecipeBase
 	{
 		m_Name = "Dismantle";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 8;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -103,7 +103,7 @@ class SRP_DismantleElectronicJammers_RemoveHackingKit extends RecipeBase
 	{
 		m_Name = "Remove Hacking Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions

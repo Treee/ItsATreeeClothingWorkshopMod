@@ -4,7 +4,7 @@ class Craft_SRP_WoodenGunAttachmentKit extends RecipeBase
 	{
 		m_Name = "Craft Gun Attachment Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -72,7 +72,7 @@ class Craft_SRP_WoodenGunAttachmentKit extends RecipeBase
 // 	{
 // 		m_Name = "Craft Gun Attachment - Wooden Body";
 // 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-// 		m_AnimationLength = 4;//animation length in relative time units
+// 		m_AnimationLength = 2;//animation length in relative time units
 // 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 // 		//conditions
@@ -139,7 +139,7 @@ class Craft_SRP_WoodenGunAttachmentKit_Grip extends RecipeBase
 	{
 		m_Name = "Craft Gun Attachment - Wooden Grip";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -206,7 +206,7 @@ class Craft_SRP_WoodenGunAttachmentKit_Buttstock extends RecipeBase
 	{
 		m_Name = "Craft Gun Attachment - Wooden Buttstock";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions

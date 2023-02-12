@@ -4,7 +4,7 @@ class Craft_SRP_Container_HiddenStash_Can extends RecipeBase
 	{
 		m_Name = "Cut Hidden Stash";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 6;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -76,7 +76,7 @@ class Craft_SRP_Container_HiddenStash_Guts extends RecipeBase
 	{
 		m_Name = "Make Hidden Stash";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 6;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -138,7 +138,7 @@ class Craft_SRP_Container_HiddenStash_Teddy extends RecipeBase
 	{
 		m_Name = "Cut Hidden Stash";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 6;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -200,7 +200,7 @@ class Craft_SRP_Container_TeddyDisplay extends RecipeBase
 	{
 		m_Name = "Cut Teddy Display Case";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 6;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

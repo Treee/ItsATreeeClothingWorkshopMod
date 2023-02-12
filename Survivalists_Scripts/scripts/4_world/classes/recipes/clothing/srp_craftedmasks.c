@@ -4,7 +4,7 @@ class SRP_Craft_SRP_DUBDismaskFull extends RecipeBase
 	{
 		m_Name = "Combine Mask Pieces";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

@@ -5,7 +5,7 @@ class Craft_SRP_CraftVirusFromIchorBase extends RecipeBase
 	{
 		m_Name = "Synthesize Virus";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -179,7 +179,7 @@ class Craft_SRP_CraftVirusCureBase extends RecipeBase
 	{
 		m_Name = "Synthesize Cure";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -347,7 +347,7 @@ class Craft_SRP_FillSyringeBase extends RecipeBase
 	{
 		m_Name = "Fill Syringe";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -614,7 +614,7 @@ class Craft_SRP_TransferContentsToVialBase extends RecipeBase
 	{
 		m_Name = "Fill Vial";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

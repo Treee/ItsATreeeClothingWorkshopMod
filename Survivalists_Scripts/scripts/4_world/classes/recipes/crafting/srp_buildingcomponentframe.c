@@ -4,7 +4,7 @@ class SRP_CraftBuildingComponentFrameKit extends RecipeBase
 	{
 		m_Name = "Create Building Component Frame Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -86,7 +86,7 @@ class Craft_SRP_BuildingComponentFrame_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Scaffolding - Options";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

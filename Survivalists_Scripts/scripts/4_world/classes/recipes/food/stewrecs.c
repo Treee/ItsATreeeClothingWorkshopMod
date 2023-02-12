@@ -4,7 +4,7 @@ class CraftVeggieStew extends RecipeBase
 	{
 		m_Name = "Create Vegetable Stew";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -94,7 +94,7 @@ class CraftMeatStew extends RecipeBase
 	{
 		m_Name = "Create Meat Stew";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -178,7 +178,7 @@ class CraftMixStew extends RecipeBase
 	{
 		m_Name = "Create Stew";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

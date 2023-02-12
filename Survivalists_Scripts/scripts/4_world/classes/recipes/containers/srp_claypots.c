@@ -4,7 +4,7 @@ class Craft_SRP_DecorativeClayPot_KitBase extends RecipeBase
 	{
 		m_Name = "Craft Decorative Clay Pot Starter Kit";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -66,7 +66,7 @@ class Craft_SRP_DecorativeClayPotKit_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Decorative Clay Pot Kit - Options";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

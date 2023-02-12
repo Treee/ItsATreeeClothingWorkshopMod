@@ -4,7 +4,7 @@ class CraftBreadDough extends RecipeBase
 	{
 		m_Name = "Create Raw Bread Dough.";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -62,7 +62,7 @@ class CraftBreadDough_Loaf extends RecipeBase
 	{
 		m_Name = "Mold Into Loaf";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -120,7 +120,7 @@ class CraftBreadDough_Flatbread extends RecipeBase
 	{
 		m_Name = "Mold Into Flatbread";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

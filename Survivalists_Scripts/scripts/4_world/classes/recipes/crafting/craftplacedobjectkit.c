@@ -4,7 +4,7 @@ class Craft_SRP_Potbelly_Stove_Kit extends RecipeBase
 	{
 		m_Name = "Create Potbelly Stove Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -72,7 +72,7 @@ class Craft_SRP_ShootingTargets_Kit extends RecipeBase
 	{
 		m_Name = "Craft Shooting Range Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -140,7 +140,7 @@ class Craft_SRP_PortableGasLamp extends RecipeBase
 	{
 		m_Name = "Craft Portable Gas Lamp";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

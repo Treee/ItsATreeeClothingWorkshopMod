@@ -4,7 +4,7 @@ class SRP_CraftStreetSignKit extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -72,7 +72,7 @@ class SRP_CraftStreetSignKitCaution extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - Caution";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -140,7 +140,7 @@ class SRP_CraftStreetSignKitNoSmoking extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - No Smoking";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -208,7 +208,7 @@ class SRP_CraftStreetSignKitYield extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - Yield";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -276,7 +276,7 @@ class SRP_CraftStreetSignKitPedestrians extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - Pedestrian Crossing";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -344,7 +344,7 @@ class SRP_CraftStreetSignKitNoBikes extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - No Bikes";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -412,7 +412,7 @@ class SRP_CraftStreetSignKitNoLeftTurn extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - No Left Turn";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -481,7 +481,7 @@ class SRP_CraftStreetSignKitSpeedLimit extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - Speed Limit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -549,7 +549,7 @@ class SRP_CraftStreetSignKitBikePath extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - Bike Path";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -617,7 +617,7 @@ class SRP_CraftStreetSignKitOneWay extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - One Way";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -685,7 +685,7 @@ class SRP_CraftStreetSignKitHandicapSmall extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - Handicap Small";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -753,7 +753,7 @@ class SRP_CraftStreetSignKitHandicap extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - Handicap";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -821,7 +821,7 @@ class SRP_CraftStreetSignKitNoParking extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - No Parking";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -889,7 +889,7 @@ class SRP_CraftStreetSignKitHighway extends RecipeBase
 	{
 		m_Name = "Create Street Sign Kit - Highway";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

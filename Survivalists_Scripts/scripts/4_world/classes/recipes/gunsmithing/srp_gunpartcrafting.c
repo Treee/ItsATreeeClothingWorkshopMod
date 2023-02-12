@@ -4,7 +4,7 @@ class Craft_SRP_GunBarrelLarge extends RecipeBase
 	{
 		m_Name = "Craft Gun Barrel - Long";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -72,7 +72,7 @@ class Craft_SRP_GunBarrelMedium extends RecipeBase
 	{
 		m_Name = "Cut Into Medium Length";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -139,7 +139,7 @@ class Craft_SRP_GunBarrelSmall extends RecipeBase
 	{
 		m_Name = "Cut Into Small Length";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -206,7 +206,7 @@ class Craft_SRP_RifledBarrelLarge extends RecipeBase
 	{
 		m_Name = "Rifle Barrel";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -274,7 +274,7 @@ class Craft_SRP_RifledBarrelMedium extends RecipeBase
 	{
 		m_Name = "Rifle Barrel";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -342,7 +342,7 @@ class Craft_SRP_RifledBarrelSmall extends RecipeBase
 	{
 		m_Name = "Rifle Barrel";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -410,7 +410,7 @@ class Craft_SRP_InternalMechanism_Trigger extends RecipeBase
 	{
 		m_Name = "Craft Internal Mechanism - Trigger";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -477,7 +477,7 @@ class Craft_SRP_InternalMechanism_Hammer extends RecipeBase
 	{
 		m_Name = "Craft Internal Mechanism - Hammer";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -545,7 +545,7 @@ class Craft_SRP_GunPartLathe_Base extends RecipeBase
 	{
 		m_Name = "Craft Item";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions

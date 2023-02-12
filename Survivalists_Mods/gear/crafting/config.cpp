@@ -33,7 +33,7 @@ class CfgVehicles
 		canBeDigged=0;
 		simulation="inventoryItem";
 		physLayer="item_small";
-		rotationFlags=2;
+		rotationFlags=16;
 		weight=3000;
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]=

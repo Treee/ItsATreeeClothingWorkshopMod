@@ -4,7 +4,7 @@ class Craft_SRP_CanScopeBacon extends RecipeBase
 	{
 		m_Name = "Create Can Scope";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -71,7 +71,7 @@ class Craft_SRP_AKCanScopeBacon extends RecipeBase
 	{
 		m_Name = "Create AK Can Scope";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -139,7 +139,7 @@ class Craft_SRP_CanScopeBeans extends RecipeBase
 	{
 		m_Name = "Create Can Scope";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -206,7 +206,7 @@ class Craft_SRP_AKCanScopeBeans extends RecipeBase
 	{
 		m_Name = "Create AK Can Scope";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -274,7 +274,7 @@ class Craft_SRP_CanScopePeaches extends RecipeBase
 	{
 		m_Name = "Create Can Scope";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -341,7 +341,7 @@ class Craft_SRP_AKCanScopePeaches extends RecipeBase
 	{
 		m_Name = "Create AK Can Scope";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -409,7 +409,7 @@ class Craft_SRP_CanScopeSpaghetti extends RecipeBase
 	{
 		m_Name = "Create Can Scope";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -477,7 +477,7 @@ class Craft_SRP_AKCanScopeSpaghetti extends RecipeBase
 	{
 		m_Name = "Create AK Can Scope";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

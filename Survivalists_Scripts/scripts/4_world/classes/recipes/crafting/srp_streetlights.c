@@ -4,7 +4,7 @@ class Craft_SRP_StreetLightKit extends RecipeBase
 	{
 		m_Name = "Create StreetLight - Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -72,7 +72,7 @@ class Craft_SRP_StreetLightSlim_Kit extends RecipeBase
 	{
 		m_Name = "Create Street Light Kit - Tall Slim Metal Lamp";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -140,7 +140,7 @@ class Craft_SRP_StreetLightLarge_Kit extends RecipeBase
 	{
 		m_Name = "Craft Street Light Kit - Tall Wooden Lamp Post";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -208,7 +208,7 @@ class Craft_SRP_StreetLightLarge_Metal_Kit extends RecipeBase
 	{
 		m_Name = "Craft Street Light Kit - Tall Slim Metal Hook";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -276,7 +276,7 @@ class Craft_SRP_StreetLightMedium_Kit extends RecipeBase
 	{
 		m_Name = "Craft Street Light Kit - Wooden Half Lamp Post";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -344,7 +344,7 @@ class Craft_SRP_StreetLightMedium_Wood_Kit extends RecipeBase
 	{
 		m_Name = "Craft Street Light Kit - Wooden Fancy Half Lamp Post";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

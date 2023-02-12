@@ -661,7 +661,7 @@ class SRP_CanRawGoodsPliers extends RecipeBase
 	{
 		m_Name = "Seal Canned Goods";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 6;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

@@ -5,7 +5,7 @@ class Craft_SRP_TetrisShelfKit extends RecipeBase
 	{
 		m_Name = "Create Tetris Shelf - Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -87,7 +87,7 @@ class Craft_SRP_TetrisShelfKit_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Wooden Furniture - Options";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -278,7 +278,7 @@ class Craft_SRP_WoodenShelfKit extends RecipeBase
 	{
 		m_Name = "Create Wooden Shelf - Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -360,7 +360,7 @@ class Craft_SRP_WoodenShelfKit_Kit_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Wooden Shelf - Options";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -539,7 +539,7 @@ class Craft_SRP_WoodenDisplayKit extends RecipeBase
 	{
 		m_Name = "Create Wooden Display - Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -621,7 +621,7 @@ class Craft_SRP_WoodenDisplayKit_Kit_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Wooden Display - Options";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -743,7 +743,7 @@ class Craft_SRP_MetalShelfKit extends RecipeBase
 	{
 		m_Name = "Create Metal Shelf - Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -815,7 +815,7 @@ class Craft_SRP_MetalShelfKit_Kit_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Metal Shelf - Options";
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

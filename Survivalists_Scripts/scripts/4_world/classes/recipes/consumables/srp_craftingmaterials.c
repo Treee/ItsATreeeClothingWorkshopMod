@@ -4,7 +4,7 @@ class SRP_Craft_MakeMetalScraps extends RecipeBase
 	{
 		m_Name = "Cut Sheet Metal - Crude";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 4;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -66,7 +66,7 @@ class SRP_Craft_MakeMetalScraps_Cut extends RecipeBase
 	{
 		m_Name = "Prepare Metal Scraps - Crude";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 4;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -128,7 +128,7 @@ class SRP_Craft_MakeMetalScraps_Advanced extends RecipeBase
 	{
 		m_Name = "Cut Sheet Metal - Advanced";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -191,7 +191,7 @@ class SRP_Craft_MakeMetalScraps_Cut_Advanced extends RecipeBase
 	{
 		m_Name = "Prepare Metal Scraps - Advanced";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 3;		// animation length in relative time units
+		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions

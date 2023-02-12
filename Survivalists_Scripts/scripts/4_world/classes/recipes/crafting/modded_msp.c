@@ -4,7 +4,7 @@ class Craft_Msp_EmptyPlanterBox extends RecipeBase
 	{
 		m_Name = "Build Empty Planter Box";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 10;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -71,7 +71,7 @@ class Craft_Msp_EmptySquarePlanterBox extends RecipeBase
 	{
 		m_Name = "Build Empty Square Planter Box";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 10;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions

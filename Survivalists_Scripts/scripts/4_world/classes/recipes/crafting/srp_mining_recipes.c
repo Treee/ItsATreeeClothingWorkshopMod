@@ -4,7 +4,7 @@ class Craft_SRP_CrushLargeStone_CrudeTool extends RecipeBase
 	{
 		m_Name = "Crush Stone Chunk";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -137,7 +137,7 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
 	{
 		m_Name = "Crush Stone Chunk";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -384,7 +384,7 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
 	{
 		m_Name = "Cut Gem - Crude";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

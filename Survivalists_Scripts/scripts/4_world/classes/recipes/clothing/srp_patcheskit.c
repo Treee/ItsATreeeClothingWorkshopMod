@@ -4,7 +4,7 @@ class Craft_SRP_PatchFlag_StarterKit extends RecipeBase
 	{
 		m_Name = "Craft Flag Patch Starter Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -71,7 +71,7 @@ class Craft_SRP_PatchLogo_StarterKit extends RecipeBase
 	{
 		m_Name = "Craft Logo Patch Starter Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -138,7 +138,7 @@ class Craft_SRP_Armband_StarterKit extends RecipeBase
 	{
 		m_Name = "Craft Armband Starter Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -205,7 +205,7 @@ class Craft_SRP_DoubleArmband_StarterKit extends RecipeBase
 	{
 		m_Name = "Craft Double Armband Starter Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

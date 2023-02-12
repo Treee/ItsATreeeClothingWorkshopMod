@@ -4,7 +4,7 @@ class SRP_Craft_BedMetal extends RecipeBase
 	{
 		m_Name = "Craft Small Metal Bed";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -73,7 +73,7 @@ class SRP_Craft_SRP_MetalBarrelKit_Kit extends RecipeBase
 	{
 		m_Name = "Craft Metal Barrel - Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -144,7 +144,7 @@ class SRP_Craft_SRP_MetalBarrelKit_OptionsBase extends RecipeBase
 	{
 		m_Name = "Craft Metal Barrel - Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision		
 		
 		//conditions
@@ -282,7 +282,7 @@ class SRP_Craft_MetalGunWallFence extends RecipeBase
 	{
 		m_Name = "Craft Gun Display - Fence";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -350,7 +350,7 @@ class SRP_Craft_MetalMeleeWallFence extends RecipeBase
 	{
 		m_Name = "Craft Melee Display - Fence";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -418,7 +418,7 @@ class SRP_Craft_Anvil extends RecipeBase
 	{
 		m_Name = "Craft Melee Display - Fence";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		

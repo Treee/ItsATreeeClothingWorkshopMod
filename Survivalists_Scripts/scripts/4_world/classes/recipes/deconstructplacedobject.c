@@ -4,7 +4,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 	{
 		m_Name = "Dismantle to Base Kit - Crude";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -195,7 +195,7 @@ class Deconstruct_PileOfMaterials extends RecipeBase
 	{
 		m_Name = "Dismantle";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions

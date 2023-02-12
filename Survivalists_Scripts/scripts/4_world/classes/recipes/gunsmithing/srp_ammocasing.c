@@ -4,7 +4,7 @@ class SRP_Craft_AmmoCasing_Crude extends RecipeBase
 	{
 		m_Name = "Craft Bullet Casing - Crude";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.01;// value > 0 for roughness, value < 0 for precision		
 		
 		//conditions
@@ -73,7 +73,7 @@ class SRP_Craft_AmmoCasing_Advanced extends RecipeBase
 	{
 		m_Name = "Craft Bullet Casing - Advanced";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.01;// value > 0 for roughness, value < 0 for precision		
 		
 		//conditions

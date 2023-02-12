@@ -4,7 +4,7 @@ class Craft_SRP_BandageDressing extends RecipeBase
 	{
 		m_Name = "Make Crude Bandage";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 3;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
 		
 		
