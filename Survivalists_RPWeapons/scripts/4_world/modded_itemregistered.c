@@ -62,11 +62,4 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_Staff_Spear_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_spear.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/advanced_spear.anm"); 
     pType.AddItemInHandsProfileIK("SRP_Staff_Moon_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_spear.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/advanced_spear.anm"); 
   }
-
-  override void RegisterHeavy( DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior )
-  {
-    super.RegisterHeavy( pType, pBehavior );
-    //==================================================== CRAFTING
-    pType.AddItemInHandsProfileIK("SRP_Weapon_KitBase", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");    
-  };
-}
+};

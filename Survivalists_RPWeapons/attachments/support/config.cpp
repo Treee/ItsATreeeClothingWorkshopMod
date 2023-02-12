@@ -8,7 +8,6 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Supports",
-      "Survivalists_RPWeapons_Crafting",
       // "Survivalists_Weapons_JMC_Attachments_supports"
 		};
 	};
@@ -21,8 +20,6 @@ class CfgVehicles
   class Inventory_Base;
   class AK74_Hndgrd;
 	class AK_WoodBttstck;
-
-  class SRP_Weapon_KitBase;
 //===================================================== CONTAINERS
 	class SRP_ButtstockPouch_ColorBase: Inventory_Base
 	{
@@ -84,81 +81,6 @@ class CfgVehicles
 	};
 
 //===================================================== CRAFTING PIECES
-
-  class SRP_WoodAttachmentGunKit_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Attachment Kit - Wood";
-		descriptionShort="A kit for creating wooden gun attachments.";
-    hiddenSelections[]={"camoground"};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_RPWeapons\attachments\support\data\srp_weaponkitbase_co.paa"
-		};
-	};
-  class SRP_WeaponLongBarrel_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Long Barreled Gun";
-		descriptionShort="A kit for assembling a long barreled weapon. Bring together all the parts and assemble.";
-    attachments[]=
-    {
-      "SRP_GunBarrel",
-      "SRP_MainReceiver",
-      "SRP_Trigger",
-      "SRP_Hammer",
-      "SRP_GunBody",
-      "SRP_GunGrip",
-      "SRP_GunButtStock"
-    };
-    hiddenSelections[]={"camoground"};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_RPWeapons\attachments\support\data\srp_weaponkitbase_co.paa"
-		};
-	};
-  class SRP_WeaponMediumBarrel_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Medium Barreled Gun";
-		descriptionShort="A kit for assembling a medium length barreled weapon. Bring together all the parts and assemble.";
-    attachments[]=
-    {
-      "SRP_GunBarrel",
-      "SRP_MainReceiver",
-      "SRP_Trigger",
-      "SRP_Hammer",
-      "SRP_GunBody",
-      "SRP_GunGrip",
-      "SRP_GunButtStock"      
-    };
-    hiddenSelections[]={"camoground"};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_RPWeapons\attachments\support\data\srp_weaponkitbase_co.paa"
-		};
-	};
-  class SRP_WeaponShortBarrel_Kit: SRP_Weapon_KitBase
-	{
-		scope=2;
-		displayName="Weapon Kit - Short Barreled Gun";
-		descriptionShort="A kit for assembling a short length barreled weapon. Bring together all the parts and assemble.";
-    attachments[]=
-    {
-      "SRP_GunBarrel",
-      "SRP_MainReceiver",
-      "SRP_Trigger",
-      "SRP_Hammer",
-      "SRP_GunBody",
-      "SRP_GunGrip",
-      "SRP_GunButtStock"      
-    };
-    hiddenSelections[]={"camoground"};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_RPWeapons\attachments\support\data\srp_weaponkitbase_co.paa"
-		};
-	};
 
   class TT_GunKit_ColorBase: Inventory_Base
 	{

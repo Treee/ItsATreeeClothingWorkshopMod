@@ -424,12 +424,6 @@ class SRP_StoneForgeWorkbenchStarter_Kit extends SRP_IntermediateCraftingKitBase
 class SRP_StoneForgeWorkbenchIntermediate_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_StoneForgeWorkbenchFinisher_Kit extends SRP_IntermediateCraftingKitBase{};
 
-// armor
-class SRP_ArmorKit_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_WoodenStickArmor_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_SimpleBoneArmor_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_SimpleLeatherSkinArmor_Kit extends SRP_IntermediateCraftingKitBase{};
-
 class SRP_ChessBoard_Kit extends SRP_IntermediateCraftingKitBase{};
 
 class SRP_AccessoryRing_Kit extends SRP_IntermediateCraftingKitBase{};

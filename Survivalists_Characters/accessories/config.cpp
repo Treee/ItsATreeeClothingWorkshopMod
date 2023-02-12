@@ -7,15 +7,13 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Characters",      
-      "Survivalists_Mods"
+			"DZ_Characters" 
 		};
 	};
 };
 class CfgVehicles
 {
 	class Clothing;
-  class SRP_KitBase;
 
 	class SRP_Wedding_Ring: Clothing
 	{
@@ -190,20 +188,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Characters\accessories\data\srp_ring_celtic_co.paa"
-		};
-	};
-
-  class SRP_AccessoryRing_Kit: SRP_KitBase //new
-	{
-		scope=2;
-		displayName="Accessory Kit - Ring";
-		descriptionShort="An accessory kit. Used to make rings.";
-    attachments[]=
-		{
-			"SRP_MetalPlate1",
-      "SRP_MetalRod1",
-      "SRP_RawCrystal1",
-      "Material_MetalWire",
 		};
 	};
 };

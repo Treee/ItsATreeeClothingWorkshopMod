@@ -59,6 +59,8 @@ modded class ModItemRegisterCallbacks
 
     pType.AddItemInHandsProfileIK("SRP_Zippo_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_1h_lighter.asi", pBehavior,"dz/anims/anm/player/ik/gear/petrol_lighter.anm");	
     pType.AddItemInHandsProfileIK("SRP_JunkLighter_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_1h_lighter.asi", pBehavior,"dz/anims/anm/player/ik/gear/petrol_lighter.anm");	
+    
+    pType.AddItemInHandsProfileIK("SRP_KitBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/paper.anm");
     //Clothing
     
     // Vest Pouches
@@ -185,7 +187,6 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("BrewingJug_Plastic_Alcohol", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
     pType.AddItemInHandsProfileIK("BrewingJug_Plastic_Water", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
     pType.AddItemInHandsProfileIK("BrewingTable", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
-    pType.AddItemInHandsProfileIK("SRP_KitBase", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
     pType.AddItemInHandsProfileIK("SRP_CraftingMaterial_BagBase", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
     pType.AddItemInHandsProfileIK("SRP_DeployableContainer_Base", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/55galDrum.anm");
     pType.AddItemInHandsProfileIK("SRP_Furniture_LogStump", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/55galDrum.anm");

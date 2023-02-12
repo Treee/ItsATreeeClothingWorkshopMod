@@ -56,6 +56,24 @@ class CfgVehicles
       "Purple",    
     };
 	};
+  ///============== MODDED
+  class DUB_Poncho: Clothing
+	{
+    rootClassName="DUB_Poncho";
+    colorVariants[]=
+    {
+      "Blue",
+      "Flake",
+      "Pink",
+      "Flowers",
+      "PinkFlowers",
+      "PurpleFlowers",
+      "PinkPurple",
+      "PurpleBlue",
+      "Rose",
+      "YellowRed",      
+    };
+  };
   //----------------------------------- BASE GAME OVERRIDE
   class NBCJacketBase: Clothing
 	{

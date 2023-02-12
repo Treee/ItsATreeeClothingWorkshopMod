@@ -24,23 +24,25 @@ class CfgVehicles
   class SRP_KitBase: Inventory_Base
 	{
 		scope=0; //0 means cannot be directly spawned
-		displayName="Kit Box";
-		descriptionShort="A wooden box used to transport small items. Find a suitable place to construct. Can be disassembled.";
-		model="\DZ\gear\camping\wooden_case.p3d";
+		displayName="Blueprint Kit";
+		descriptionShort="A blueprint kit. Contains everything needed to build. Can be disassembled.";
+		model="Survivalists_Mods\gear\crafting\srp_kitbase.p3d";
 		itemsCargoSize[]={0,0};
-		itemSize[]={7,5};
+		itemSize[]={4,4};
 		carveNavmesh=1;
 		canBeDigged=0;
 		simulation="inventoryItem";
 		physLayer="item_small";
 		rotationFlags=2;
-		heavyItem=1;
 		weight=3000;
-		itemBehaviour=2;
-		hiddenSelections[]={"camoground"};
+		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\crafting\data\srp_kitbase_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase.rvmat"
 		};
 		class DamageSystem
 		{
@@ -49,7 +51,14 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=100;
-          healthLevels[] = {{1,""},{0.7,""},{0.5,""},{0.3,""},{0.1,""}};
+          healthLevels[] = 
+          {
+            {1,"Survivalists_Mods\gear\crafting\data\srp_kitbase.rvmat"},
+            {0.7,"Survivalists_Mods\gear\crafting\data\srp_kitbase.rvmat"},
+            {0.5,"Survivalists_Mods\gear\crafting\data\srp_kitbase.rvmat"},
+            {0.3,"Survivalists_Mods\gear\crafting\data\srp_kitbase.rvmat"},
+            {0.1,"Survivalists_Mods\gear\crafting\data\srp_kitbase.rvmat"}
+          };
 				};
 			};
 			class GlobalArmor
@@ -91,13 +100,160 @@ class CfgVehicles
   {
 		displayName="Building Kit";
 		descriptionShort="A wooden box used to transport small items. Find a suitable place to construct. Can be disassembled.";
-		hiddenSelections[]={"camoground"};
+		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Mods\gear\crafting\data\srp_kitbase_co.paa"
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_building_co.paa"
 		};
-
   };
+  class SRP_AccessoryRing_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Accessory Kit - Ring";
+		descriptionShort="An accessory kit. Used to make rings.";
+    attachments[]=
+		{
+			"SRP_MetalPlate1",
+      "SRP_MetalRod1",
+      "SRP_RawCrystal1",
+      "Material_MetalWire",
+		};
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_accessoryring_co.paa"
+		};
+	};
+  //--------------------------------- TAXIDERMY
+  class SRP_Taxidermy_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Taxidermy Kit - Base Mount";
+		descriptionShort="A kit with the appropriate tools to build the base mount for a properly taxidermied animal.";
+    attachments[]=
+    {
+      "AnimalSkull",
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "Material_Shelter_Leather",
+      "Material_Shelter_FrameSticks",
+			"MetalWire",
+			"Material_MetalWire",
+			"Material_FPole_MetalWire",
+      "Material_Shelter_Fabric",
+      "Rope",
+      "Rags",
+    };
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_taxidermy_co.paa"
+		};
+	};
+  class SRP_TaxidermyWall_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Taxidermy Kit - Wall Mount";
+		descriptionShort="A kit with the appropriate tools to build the wall mount for a properly taxidermied animal.";
+    attachments[]=
+    {
+      "AnimalSkull",
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "Material_Shelter_FrameSticks",
+			"MetalWire",
+			"Material_MetalWire",
+			"Material_FPole_MetalWire",
+      "Material_Shelter_Leather",
+      "Material_Shelter_Fabric",
+      "Rope",
+      "Rags",
+    };
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_taxidermy_co.paa"
+		};
+	};
+  class SRP_WoodAttachmentGunKit_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Weapon Attachment Kit - Wood";
+		descriptionShort="A kit for creating wooden gun attachments.";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_weapons_co.paa"
+		};
+	};
+  class SRP_WeaponLongBarrel_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Weapon Kit - Long Barreled Gun";
+		descriptionShort="A kit for assembling a long barreled weapon. Bring together all the parts and assemble.";
+    attachments[]=
+    {
+      "SRP_GunBarrel",
+      "SRP_MainReceiver",
+      "SRP_Trigger",
+      "SRP_Hammer",
+      "SRP_GunBody",
+      "SRP_GunGrip",
+      "SRP_GunButtStock"
+    };
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_weapons_co.paa"
+		};
+	};
+  class SRP_WeaponMediumBarrel_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Weapon Kit - Medium Barreled Gun";
+		descriptionShort="A kit for assembling a medium length barreled weapon. Bring together all the parts and assemble.";
+    attachments[]=
+    {
+      "SRP_GunBarrel",
+      "SRP_MainReceiver",
+      "SRP_Trigger",
+      "SRP_Hammer",
+      "SRP_GunBody",
+      "SRP_GunGrip",
+      "SRP_GunButtStock"      
+    };
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_weapons_co.paa"
+		};
+	};
+  class SRP_WeaponShortBarrel_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Weapon Kit - Short Barreled Gun";
+		descriptionShort="A kit for assembling a short length barreled weapon. Bring together all the parts and assemble.";
+    attachments[]=
+    {
+      "SRP_GunBarrel",
+      "SRP_MainReceiver",
+      "SRP_Trigger",
+      "SRP_Hammer",
+      "SRP_GunBody",
+      "SRP_GunGrip",
+      "SRP_GunButtStock"      
+    };
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\crafting\data\srp_kitbase_weapons_co.paa"
+		};
+	};
+
 //========================================== VANILLA OVERRIDE
   class Rope: Inventory_Base
 	{
