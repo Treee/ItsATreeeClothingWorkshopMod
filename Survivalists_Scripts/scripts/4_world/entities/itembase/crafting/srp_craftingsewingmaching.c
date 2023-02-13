@@ -31,4 +31,8 @@ class SRP_SewingTable extends SRP_CraftingBench_Base
   {
     return 10;
   }
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };

@@ -34,6 +34,10 @@ class SRP_Anvil_ColorBase extends SRP_CraftingBench_Base
   {
     return 10;
   }
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
 
 class SRP_Anvil_Basic_Kit extends SRP_KitBase{};

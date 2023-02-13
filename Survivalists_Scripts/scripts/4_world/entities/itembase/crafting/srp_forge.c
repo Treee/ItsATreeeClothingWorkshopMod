@@ -99,6 +99,10 @@ class SRP_StoneForgeWorkbench extends SRP_Fireplace_Transformer
 		
 		return false;
 	}
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
 
 class SRP_AdvancedStoneForgeWorkbench extends SRP_StoneForgeWorkbench{};

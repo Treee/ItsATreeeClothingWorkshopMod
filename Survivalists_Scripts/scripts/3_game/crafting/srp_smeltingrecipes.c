@@ -204,7 +204,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem RegisterFireyGreatSword()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_FireyGreatsword", "Firey Greatsword");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_FireyGreatsword_Basic", "Firey Greatsword");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.GOLD, 3));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.PLATINUM, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.SILVER, 2));

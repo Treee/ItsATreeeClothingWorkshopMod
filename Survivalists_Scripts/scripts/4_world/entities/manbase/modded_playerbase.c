@@ -113,11 +113,16 @@ modded class PlayerBase
 		for (int i = 0; i < itemsArray.Count(); i++)
 		{
 			Class.CastTo(item, itemsArray.Get(i));
+      
+      if (item.GetType() == "DUB_Mutation1_Empty")
+        continue;
+      if (item.GetType() == "DUB_Mutation2_Empty")
+        continue;
 			if (item && !item.IsInherited(SurvivorBase))
       {
         if (item.HasQuantity())
         {
-          itemString = string.Format("%1,%2x%3", itemString, item.GetType(),item.GetQuantity());
+          itemString = string.Format("%1,%2||%3", itemString, item.GetType(),item.GetQuantity());
         }
         else
         {

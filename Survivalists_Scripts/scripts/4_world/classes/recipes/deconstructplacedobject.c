@@ -25,6 +25,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
     InsertIngredient(0,"Inventory_Base");
     InsertIngredient(0,"Container_Base");
     InsertIngredient(0,"BarrelHoles_ColorBase");    
+    InsertIngredient(0,"SRP_Furniture_Gazebo");    
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -123,6 +124,7 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
     InsertIngredient(0,"Inventory_Base");
     InsertIngredient(0,"Container_Base");
     InsertIngredient(0,"BarrelHoles_ColorBase");    
+    InsertIngredient(0,"SRP_Furniture_Gazebo");    
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing

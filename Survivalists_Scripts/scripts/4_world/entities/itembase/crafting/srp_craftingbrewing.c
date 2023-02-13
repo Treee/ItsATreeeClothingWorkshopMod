@@ -126,4 +126,8 @@ class SRP_BrewingWorkbench_Ceramic extends SRP_BrewingWorkbench
   {
     return -1;
   }
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
