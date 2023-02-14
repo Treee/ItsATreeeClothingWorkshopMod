@@ -25,8 +25,8 @@ class CfgWeapons
 	class ESP_M14: Ruger1022
 	{
 		scope=2;
-		displayName="ESP-M14";
-		descriptionShort="The ESP-M14 is part of a family of US Semi-automatic rifles used by the United States and the numerous other countries during the 20th century. Chambered in .308 it was recently adapted to takes LAR magazines.";
+		displayName="L&S M14";
+		descriptionShort="The L&S M14 is part of a family of US Semi-automatic rifles used by the United States and the numerous other countries during the 20th century. Chambered in .308 it was recently adapted to takes LAR magazines.";
 		model="Survivalists_RPWeapons\rifles\ESP_M14\ESP_M14.p3d";
 		hiddenSelections[]=
 		{

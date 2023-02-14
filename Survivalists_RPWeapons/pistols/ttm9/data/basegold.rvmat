@@ -3,7 +3,7 @@ diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
 specular[]={0.7,0.7,0.7,1};
-specularPower=160;
+specularPower=350;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
@@ -68,25 +68,25 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,32,128,1)fresnel(1.68,1.02)";
-	uvSource="tex";
+	texture="#(ai,32,128,1)fresnel(1.2887,2.4191)";
+	uvSource="none";
 	class uvTransform
 	{
 		aside[]={1,0,0};
 		up[]={0,1,0};
-		dir[]={0,0,1};
+		dir[]={0,0,0};
 		pos[]={0,0,0};
 	};
 };
 class Stage7
 {
-	texture="#(argb,8,8,3)color(0,0,0,1,CO)";
-	uvSource="tex";
+	texture="dz\weapons\pistols\de\data\env_gold_co.paa";
+	uvSource="none";
 	class uvTransform
 	{
 		aside[]={1,0,0};
 		up[]={0,1,0};
-		dir[]={0,0,1};
+		dir[]={0,0,0};
 		pos[]={0,0,0};
 	};
 };

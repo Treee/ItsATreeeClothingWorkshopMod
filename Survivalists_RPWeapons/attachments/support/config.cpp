@@ -566,7 +566,52 @@ class CfgVehicles
     color="simple";
   };
 //==================================================Handguard_Colorbase
-
+  class ESP_R700_HndGrd_Colorbase: M4_PlasticHndgrd
+	{
+		scope=2;
+		displayName="R700 Barrel Cover";
+		descriptionShort="The SA80A RIS Handguard Is a simple RIS handguard designed to fit on the SA80A rifle.";
+		model="Survivalists_RPWeapons\attachments\Support\ESP_R700_HndGrd.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		hasRailFunctionality=1;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"R700HndGrd"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\R700_HndGrd_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\R700_HndGrd.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\R700_HndGrd.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\R700_HndGrd.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\R700_HndGrd.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\R700_HndGrd.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
 	class ESP_LW_HndGrd_ColorBase: M4_PlasticHndgrd
 	{
 		scope=0;
@@ -1536,8 +1581,99 @@ class CfgVehicles
 			};
 		}; 
 	};
-
-	// HandGuard Retextures
+  class ESP_Vector_HndGrd_Erg: M4_PlasticHndgrd
+	{
+		scope=2;
+		displayName="Ergonomic Vector HandGuard";
+		descriptionShort="The Ergonimc Handguard for the Vector was designed to allow the user to fit their whole around the grip. Allowing for a more comfortable position and steadier aim.";
+		model="Survivalists_RPWeapons\attachments\Support\ESP_Vector_HndGrd11.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		hasRailFunctionality=0;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"VectorHndGrd"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_Handguard11_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_Handguard11.rvmat"}},						
+						{0.69999999,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_Handguard11.rvmat"}},						
+						{0.5,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_Handguard11.rvmat"}},						
+						{0.30000001,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_Handguard11.rvmat"}},						
+						{0,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_Handguard11.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+	class ESP_Vector_HndGrd: M4_PlasticHndgrd
+	{
+		scope=2;
+		displayName="Vector HandGuard";
+		descriptionShort="This was the traditional Vector Handguard which allowed users to mount scopes to the weapon further down towards the barrel.";
+		model="Survivalists_RPWeapons\attachments\Support\ESP_Vector_HndGrdMK1.p3d";
+		rotationFlags=17;
+		reversed=0;
+		weight=300;
+		hasRailFunctionality=0;
+		itemSize[]={3,1};
+		inventorySlot[]=
+		{
+			"VectorHndGrd"
+		};
+		dispersionModifier=-0.00012500001;
+		dispersionCondition="true";
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.89999998,0.89999998,0.89999998};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_HandguardMK1_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_HandguardMK1.rvmat"}},						
+						{0.69999999,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_HandguardMK1.rvmat"}},						
+						{0.5,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_HandguardMK1.rvmat"}},						
+						{0.30000001,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_HandguardMK1.rvmat"}},						
+						{0,{"\Survivalists_RPWeapons\attachments\support\data\ESP_Vector_HandguardMK1.rvmat"}}
+					};
+				};
+			};
+		}; 
+	};
+// HandGuard Retextures
 	class ESP_Lightweight_HndGrd_Green: ESP_LW_HndGrd_ColorBase
 	{
 		scope=2;
@@ -1757,7 +1893,130 @@ class CfgVehicles
 		color="Metal";
 	};
 //==================================================ButtStock_Colorbase
-
+  class ESP_R700ChassisBase: Inventory_Base{};
+	class ESP_R700_ChassisMK2_ColorBase: ESP_R700ChassisBase
+	{
+		scope=0;
+		displayName="ESP-R700 Mk2 Chassis";
+		descriptionShort="The ESP-R700 MK2 Chassis was an upgrade kit released to meet the militarys demand for a heavier and more supportive chassis for the R700 rifle. This kit was compatible with any R700 model and was sold seperately.";
+		model="Survivalists_RPWeapons\attachments\support\ESP_R700_Chassis_MK2.p3d";
+		rotationFlags=17;
+		itemSize[]={5,3};
+		inventorySlot[]=
+		{
+			"R700Chassis",
+			"shoulder"
+		};
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK2_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK2.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK2.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK2.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK2.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK2.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
+	class ESP_R700_ChassisMK3_ColorBase: ESP_R700ChassisBase
+	{
+		scope=0;
+		displayName="ESP-R700 Mk3 Chassis";
+		descriptionShort="The ESP-R700 MK3 Chassis was an upgrade kit released to meet the militarys demand for a heavier and more supportive chassis for the R700 rifle. This kit was compatible with any R700 model and was sold seperately.";
+		model="Survivalists_RPWeapons\attachments\support\ESP_R700_Chassis_MK3.p3d";
+		rotationFlags=17;
+		itemSize[]={5,3};
+		inventorySlot[]=
+		{
+			"R700Chassis",
+			"shoulder"
+		};
+		recoilModifier[]={0.80000001,0.80000001,0.80000001};
+		swayModifier[]={0.69999999,0.69999999,0.69999999};
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"Stock"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK3_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK3.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK3.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK3.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK3.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK3.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+	};
 	class ESP_SNPR_Stck_ColorBase: M4_OEBttstck
 	{
 		scope=0;
@@ -2183,8 +2442,26 @@ class CfgVehicles
 		};
 	};
 
-	// Stock Retextures
-
+// Stock Retextures
+  class ESP_R700_ChassisMK3_Black: ESP_R700_ChassisMK3_ColorBase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK3_CO.paa",
+      "Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK3Stock_CO.paa"
+		};
+	};
+	class ESP_R700_ChassisMK2_Black: ESP_R700_ChassisMK2_ColorBase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\R700_Chassis_MK2_CO.paa"
+		};
+	};
 	class ESP_M16_Stck_Wood: ESP_M16_Stck_Colorbase
 	{
 		scope=2;
@@ -2351,7 +2628,7 @@ class CfgVehicles
 			"Survivalists_RPWeapons\attachments\support\data\ESP_MCK1_Stock_Black_CO.paa"
 		};
 	};
-	// Grips And Other
+// Grips And Other
 	class ESP_RIS_Cover_Colorbase: Inventory_Base
 	{	
 		scope=0;
@@ -2443,7 +2720,7 @@ class CfgVehicles
 		};
 	};
 
-	// Grips and Other - Retextures
+// Grips and Other - Retextures
 	class ESP_RIS_Cover_Black: ESP_RIS_Cover_Colorbase
 	{
 		scope=2;

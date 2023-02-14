@@ -110,6 +110,21 @@ class CfgSlots
 	};
 
 //======================Gun Attachments
+  class Slot_R700HndGrd
+	{
+		name="R700HndGrd";
+		displayName="R700 Handguard";
+	};
+  class Slot_R700Chassis
+	{
+		name="R700Chassis";
+		displayName="R700 Chassis";
+	};
+  class Slot_VectorHndGrd
+	{
+		name="VectorHndGrd";
+		displayName="Vector Handguard";
+	};
   class Slot_SRP_StockPouch
 	{
 		name="SRP_StockPouch";
@@ -366,6 +381,24 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 //======================WEAPONS
+  class ProxyESP_R700HndGrd_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"R700HndGrd"};
+		model="Survivalists_RPWeapons\proxy\ESP_R700HndGrd_Proxy.p3d";
+	};
+  class ProxyESP_R700Chassis_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"R700Chassis"};
+		model="Survivalists_RPWeapons\proxy\ESP_R700Chassis_Proxy.p3d";
+	};
+  class ProxyESP_Vector_HndGrd_Proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"VectorHndGrd"};
+		model="Survivalists_RPWeapons\proxy\ESP_Vector_HndGrd_Proxy.p3d";
+	};
   class ProxyRIS_Adapter_Proxy: ProxyAttachment
 	{
 		scope=2;

@@ -20,8 +20,8 @@ class Mode_Safe;
 class Mode_SemiAuto;
 class cfgWeapons
 {
-	class Glock19;
-	class ttm9: Glock19
+	class FNX45_Base;
+	class ttm9: FNX45_Base
 	{
 		scope=2;
 		absorbency=0;
@@ -32,7 +32,9 @@ class cfgWeapons
 		attachments[]=
 		{
 			"pistolFlashlight",
-			"pistolMuzzle"
+			"pistolMuzzle",
+			"PistolRail",
+			"pistolOptics"
 		};
 		itemSize[]={3,2};
 		PPDOFProperties[]={0,0,0,0,0,0};
@@ -42,16 +44,32 @@ class cfgWeapons
 		muzzlePos="usti hlavne";
 		discreteDistance[]={25,50};
 		chamberableFrom[]={"Ammo_9x19"};
-    hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\pistols\ttm9\data\ttm9_co.paa"};
-    hiddenSelectionsMaterials[]={"Survivalists_RPWeapons\pistols\ttm9\data\base.rvmat"};
+    hiddenSelections[]={"zbytek","plastic"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\pistols\ttm9\data\ttm9_co.paa","Survivalists_RPWeapons\pistols\ttm9\data\ttm9_co.paa"};
+    hiddenSelectionsMaterials[]={"Survivalists_RPWeapons\pistols\ttm9\data\base.rvmat","Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic.rvmat"};
 	};
   class ttm9_Gold: ttm9
   {
-		scope=2;
+    scope=2;
     displayName="Golden Beretta M9";
-    hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\pistols\ttm9\data\ttm9gold_co.paa"};
-    hiddenSelectionsMaterials[]={"Survivalists_RPWeapons\pistols\ttm9\data\basegold.rvmat"};
+    hiddenSelections[]={"zbytek","plastic"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Gold_CO.paa", "Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Gold_CO.paa"};
+    hiddenSelectionsMaterials[]={"Survivalists_RPWeapons\pistols\ttm9\data\basegold.rvmat","Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic.rvmat"};
+  };
+  class ttm9_Tan: ttm9
+  {
+    scope=2;
+    displayName="Beretta M9";
+    hiddenSelections[]={"zbytek","plastic"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Tan_CO.paa","Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Tan_CO.paa"};
+    hiddenSelectionsMaterials[]={"Survivalists_RPWeapons\pistols\ttm9\data\base.rvmat","Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic.rvmat"};
+  };
+  class ttm9_Rare: ttm9
+  {
+    scope=2;
+    displayName="Beretta M9";
+    hiddenSelections[]={"zbytek","plastic"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Rare_CO.paa","Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Rare_CO.paa"};
+    hiddenSelectionsMaterials[]={"Survivalists_RPWeapons\pistols\ttm9\data\base.rvmat","Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic.rvmat"};
   };
 };

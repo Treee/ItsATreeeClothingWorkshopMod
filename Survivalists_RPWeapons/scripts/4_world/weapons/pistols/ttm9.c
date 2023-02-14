@@ -1,4 +1,4 @@
-class tt57tan extends Pistol_Base
+class ttm9 extends Pistol_Base
 {
 	override void OnDebugSpawn()
 	{
@@ -6,9 +6,8 @@ class tt57tan extends Pistol_Base
 		inventory.CreateInInventory( "PistolSuppressor" );
 		inventory.CreateInInventory( "ESP_PistolRail" );
 		
-		SpawnAttachedMagazine("tt57mag");
 	}
-  override bool CanDisplayAttachmentSlot( string slot_name)
+	override bool CanDisplayAttachmentSlot( string slot_name)
   {
     if ( slot_name == "pistolOptics" )
     {

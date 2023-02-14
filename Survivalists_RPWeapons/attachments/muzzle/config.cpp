@@ -312,6 +312,7 @@ class CfgVehicles
     inventorySlot[]=
 		{
       "weaponMuzzleAK",
+      "WeaponMuzzleM4",
 			"SRP_Suppressor1",
 			"SRP_Suppressor2",
 			"SRP_Suppressor3",

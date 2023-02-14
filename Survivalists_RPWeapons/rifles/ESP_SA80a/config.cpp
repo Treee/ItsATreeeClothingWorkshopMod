@@ -26,8 +26,8 @@ class cfgWeapons
 	class ESP_SA80a: Famas_Base
 	{
 		scope=2;
-		displayName="ESP_SA80a";
-		descriptionShort="The ESP-AR47 is a 762x39mm Assault Rifle designed and manufactured by Espen Industries back in 2002 after the US Military called for M4 platforms which could 'Utilize the enemies ammunition'. Whilst the gun remained popular within Espen Industries itself, the rifle was never used by the military outside of training. ";
+		displayName="L&S SA80a";
+		descriptionShort="The SA80 is a British family of 5.56x45mm NATO service weapons used by the British Army. The L85 Rifle variant has been the standard issue service rifle of the British Armed Forces since 1987, replacing the L1A1 Self-Loading Rifle. ";
 		model="Survivalists_RPWeapons\rifles\ESP_SA80a\ESP_SA80a.p3d";
 		hiddenSelections[]=
 		{

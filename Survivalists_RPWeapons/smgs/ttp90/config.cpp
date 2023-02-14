@@ -29,7 +29,19 @@ class CfgWeapons
 		displayName="ESP-P90";
 		descriptionShort="The ESP-P90 is a personal defense weapon designed and manufactured Espen Industries. Chambered in .380 ACP this weapon is sometimes also considered a submachine gun or a compact assault rifle.";
 		model="Survivalists_RPWeapons\smgs\ttp90\ttp90.p3d";
-		attachments[]={"weaponOptics","pistolMuzzle","P90UpgradeKit","weaponFlashlight","pistolFlashlight"};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\smgs\ttp90\data\ttp90_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\smgs\ttp90\data\base.rvmat"
+		};
+    attachments[]={"weaponOptics","pistolMuzzle","P90UpgradeKit","weaponFlashlight","pistolFlashlight"};
 		chamberableFrom[]={"Ammo_380"};
 		magazines[]={"ttp90mag"};
 		magazineSwitchTime=0.5;
@@ -122,6 +134,18 @@ class CfgWeapons
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_RPWeapons\smgs\ttp90\data\ttp90_tan_co.paa"
+		};
+	};
+  class ttp90_Rare: ttp90
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    	hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\smgs\ttp90\data\ttp90_Rare_co.paa"
 		};
 	};
 };

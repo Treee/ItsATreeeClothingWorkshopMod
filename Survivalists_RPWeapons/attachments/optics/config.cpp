@@ -16,6 +16,8 @@ class CfgVehicles
 {
   class ItemOptics_Base;
   class ItemOptics;
+  class Rangefinder;
+  class Inventory_Base;
 
 //========================================== Vanilla Override
   class M4_CarryHandleOptic: ItemOptics_Base
@@ -260,7 +262,8 @@ class CfgVehicles
   };
 
 //========================================== Custom Stuff Override
-	class ESP_Tac_Craftsmen: HuntingOptic
+// Hunting Scopes	
+  class ESP_Tac_Craftsmen: HuntingOptic
 	{
 		scope=2;
 		displayName="ESP-Tac 5-12x";
@@ -302,8 +305,8 @@ class CfgVehicles
 			memoryPointCamera="eyeScope";
 			cameraDir="cameraDir";
 			useModelOptics=1;
-			modelOptics="\DZ\weapons\attachments\optics\opticview_longrange.p3d";
-			preloadOpticType="Preload2DOptic_Longrange";
+			modelOptics="Survivalists_RPWeapons\attachments\optics\opticview_Tac_Craftsmen.p3d";
+			preloadOpticType="Preload2DOptic_Tac_Craftsmen";
 			opticsDisablePeripherialVision=0.67000002;
 			opticsFlare=1;
 			opticsPPEffects[]=
@@ -406,8 +409,8 @@ class CfgVehicles
 			memoryPointCamera="eyeScope";
 			cameraDir="cameraDir";
 			useModelOptics=1;
-			modelOptics="\DZ\weapons\attachments\optics\opticview_longrange.p3d";
-			preloadOpticType="Preload2DOptic_Longrange";
+			modelOptics="Survivalists_RPWeapons\attachments\optics\opticview_ESP_Long_Range.p3d";
+			preloadOpticType="Preload2DOptic_ESP_Long_Range";
 			opticsDisablePeripherialVision=0.67000002;
 			opticsFlare=1;
 			opticsPPEffects[]=
@@ -486,8 +489,8 @@ class CfgVehicles
 			memoryPointCamera="eyeScope";
 			cameraDir="cameraDir";
 			useModelOptics=1;
-			modelOptics="\DZ\weapons\attachments\optics\opticview_longrange.p3d";
-			preloadOpticType="Preload2DOptic_Longrange";
+			modelOptics="Survivalists_RPWeapons\attachments\optics\opticview_ESP_Hunter.p3d";
+			preloadOpticType="Preload2DOptic_ESP_Hunter";
 			opticsDisablePeripherialVision=0.67000002;
 			opticsFlare=1;
 			opticsPPEffects[]=
@@ -536,6 +539,7 @@ class CfgVehicles
 			};
 		};
 	};
+// Hybrid Scopes (AR and Hunting)
 	class ESP_Short_Range: HuntingOptic
 	{
 		scope=2;
@@ -717,6 +721,7 @@ class CfgVehicles
 			PPDOFProperties[]={1,0.1,20,200,4,10};
 		};
 	};
+// Assault Rifle Scopes
 	class ESP_RedDot: ReflexOptic
 	{
 		scope=2;
@@ -797,8 +802,6 @@ class CfgVehicles
 			attachmentAction=1;
 		};
 	};
-
-
   class ESP_Holographic: ItemOptics
 	{
 		scope=2;
@@ -1055,6 +1058,82 @@ class CfgVehicles
 			attachmentAction=1;
 		};
 	};
+  class ESP_Aimpoint: ItemOptics
+	{
+		scope=2;
+		displayName="Aimpoint 2000";
+		descriptionShort="Aimpoint 2000 was the first red dot sight that could be mounted with rings, which enabled both right and left handed shooters to use the sight.";
+		model="Survivalists_RPWeapons\attachments\optics\ESP_Aimpoint.p3d";
+		debug_ItemCategory=3;
+		attachments[]=
+		{
+			"BatteryD"
+		};
+		animClass="Binoculars";
+		simulation="itemoptics";
+		inventorySlot[]=
+		{
+			"WeaponOptics"
+		};
+		selectionFireAnim="zasleh";
+		memoryPointCamera="eyeScope";
+		cameraDir="cameraDir";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		recoilModifier[]={1,1,1};
+		swayModifier[]={1,1,1};
+		repairableWithKits[]={7};
+		repairCosts[]={25};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=30;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\optics\data\ESP_Aimpoint.rvmat"}},						
+						{0.69999999,{}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\optics\data\ESP_Aimpoint.rvmat"}},						
+						{0.30000001,{}},						
+						{0,{"Survivalists_RPWeapons\attachments\optics\data\ESP_Aimpoint.rvmat"}}
+					};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera="eyeScope";
+			cameraDir="cameraDir";
+			modelOptics="-";
+			opticsDisablePeripherialVision=0.67000002;
+			opticsFlare=1;
+			opticsPPEffects[]={};
+			opticSightTexture="dz\weapons\attachments\optics\data\collimdot_red_ca.paa";
+			opticsZoomMin = "0.3926/3";
+			opticsZoomMax = "0.3926/3";
+			opticsZoomInit = "0.3926/3";
+			distanceZoomMin=25;
+			distanceZoomMax=200;
+			discreteDistance[]={25,50,100,200};
+			discreteDistanceInitIndex=0;
+			PPMaskProperties[]={0.5,0.5,0.40000001,0.050000001};
+			PPLensProperties[]={1,0.15000001,0,0};
+			PPBlurProperties=0.2;
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			energyUsagePerSecond=0.02;
+			plugType=1;
+			attachmentAction=1;
+		};
+	};
 	class ESP_XPS3: ItemOptics
 	{
 		scope=2;
@@ -1132,6 +1211,7 @@ class CfgVehicles
 			attachmentAction=1;
 		};
 	};
+// Pistol Scopes  
 	class ESP_Pistol_Reddot: ItemOptics
 	{
 		scope=2;
@@ -1139,6 +1219,7 @@ class CfgVehicles
 		descriptionShort="The ESP-PRD is a smaller version of the ESP-RD which is designed to be used on pistols";
 		model="Survivalists_RPWeapons\attachments\optics\ESP_Pistol_Reddot.p3d";
 		debug_ItemCategory=3;
+    NeedRIS=1;
 		attachments[]=
 		{
 			"BatteryD"
@@ -1217,5 +1298,20 @@ class CfgVehicles
 			plugType=1;
 			attachmentAction=1;
 		};
+	};  
+	class Preload2DOptic_Tac_Craftsmen: Inventory_Base
+	{
+		scope=0;
+		model="Survivalists_RPWeapons\attachments\optics\opticview_Tac_Craftsmen.p3d";
+	};
+	class Preload2DOptic_ESP_Hunter: Inventory_Base
+	{
+		scope=0;
+		model="Survivalists_RPWeapons\attachments\optics\opticview_ESP_Hunter.p3d";
+	};
+	class Preload2DOptic_ESP_Long_Range: Inventory_Base
+	{
+		scope=0;
+		model="Survivalists_RPWeapons\attachments\optics\opticview_ESP_Long_Range.p3d";
 	};
 };
