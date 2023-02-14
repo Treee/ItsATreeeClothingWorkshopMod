@@ -74,6 +74,8 @@ modded class PlayerBase
 	{
     if ( m_AdminLog )
 		{
+      string equippedItems = GetEquippedItems();
+      GetDayZGame().GetAdminHelper().InsertBulkCompItem(CF_Date.Now(true).DateToEpoch(), GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), equippedItems);
       m_AdminLog.DirectAdminLogPrint(string.Format("ADMIN HELPER::||%1", GetEquippedItems()));
 		}
 		super.EEKilled( killer );
@@ -114,15 +116,15 @@ modded class PlayerBase
 		{
 			Class.CastTo(item, itemsArray.Get(i));
       
-      if (item.GetType() == "DUB_Mutation1_Empty")
-        continue;
-      if (item.GetType() == "DUB_Mutation2_Empty")
-        continue;
+      // if (item.GetType() == "DUB_Mutation1_Empty")
+      //   continue;
+      // if (item.GetType() == "DUB_Mutation2_Empty")
+      //   continue;
 			if (item && !item.IsInherited(SurvivorBase))
       {
         if (item.HasQuantity())
         {
-          itemString = string.Format("%1,%2||%3", itemString, item.GetType(),item.GetQuantity());
+          itemString = string.Format("%1,%2:%3", itemString, item.GetType(),item.GetQuantity());
         }
         else
         {

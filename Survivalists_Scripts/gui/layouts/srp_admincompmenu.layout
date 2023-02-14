@@ -22,14 +22,14 @@ FrameWidgetClass rootFrame {
     PanelWidgetClass pnl_bg {
      ignorepointer 1
      position 0 0
-     size 0.99 0.99
+     size 1 0.99
      halign center_ref
      valign center_ref
      hexactpos 0
      vexactpos 0
      hexactsize 0
      vexactsize 0
-     style rover_sim_black
+     style rover_sim_black_2
      {
       TextWidgetClass Title {
        ignorepointer 1
@@ -40,6 +40,7 @@ FrameWidgetClass rootFrame {
        vexactpos 0
        hexactsize 0
        vexactsize 0
+       scaled 0
        style Normal
        text "Bulk Compensation Tool"
        font "gui/fonts/Metron-Bold28"
@@ -50,7 +51,6 @@ FrameWidgetClass rootFrame {
        "text valign" center
       }
       ButtonWidgetClass BtnCancel {
-       position 0.15 0.02
        size 0.3 0.055
        halign right_ref
        valign bottom_ref
@@ -60,9 +60,9 @@ FrameWidgetClass rootFrame {
        vexactsize 0
        style Editor
        text "Cancel"
+       font "gui/fonts/metron"
       }
       ButtonWidgetClass BtnAccept {
-       position 0.15 0.02
        size 0.3 0.055
        valign bottom_ref
        hexactpos 0
@@ -71,19 +71,67 @@ FrameWidgetClass rootFrame {
        vexactsize 0
        style Editor
        text "Spawn Comp"
+       font "gui/fonts/metron"
       }
-      MultilineEditBoxWidgetClass EditBoxCompText {
-       position 0.06258 0.09865
-       size 304.75299 302.63699
+      ButtonWidgetClass BtnDelete {
+       size 0.30018 0.05967
+       halign center_ref
+       valign bottom_ref
        hexactpos 0
        vexactpos 0
-       hexactsize 1
-       vexactsize 1
-       scaled 0
-       text "REPLACE THIS TEXT"
+       hexactsize 0
+       vexactsize 0
+       style Editor
+       text "Delete Entry"
        font "gui/fonts/metron"
-       lines 20
+      }
+      EditBoxWidgetClass EditTxtSearch {
+       position 0.01226 0.09538
+       size 0.39665 0.03394
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 0
+       style Editor
        "limit visible" 1
+       font "gui/fonts/metron-italic22"
+      }
+      MultilineTextWidgetClass TxtCompDetails {
+       clipchildren 1
+       ignorepointer 1
+       position 0 0.6
+       size 0.97202 0.31455
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 0
+       style None
+       text ", TShirt_Red, Rag:4, Chemlight_Green:100, Apple:125, Rag:6, Nail:99, Nail:99, Nail:99, CanvasPantsMidi_Violet, Nail:99, Nail:99, AthleticShoes_Blue, DUB_Mutation1_Empty, DUB_Mutation2_Empty, TShirt_Red, Rag:4, Chemlight_Green:100, Apple:125, Rag:6, Nail:99, Nail:99, Nail:99, CanvasPantsMidi_Violet, Nail:99, Nail:99, AthleticShoes_Blue, DUB_Mutation1_Empty, DUB_Mutation2_Empty"
+       font "gui/fonts/metron14"
+       "exact text" 1
+       "size to text h" 0
+       "size to text v" 0
+       wrap 1
+       "strip newlines" 1
+      }
+      TextListboxWidgetClass TxtListItems {
+       inheritalpha 0
+       position 0 0.15
+       size 0.97112 0.42939
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 0
+       style Editor
+       "title visible" 1
+       colums "Stored Compensation Records"
+       "highlight row" 0
+       font "gui/fonts/metron22"
       }
      }
     }

@@ -5,7 +5,6 @@ modded class MissionServer
     SRPConfig config = SRPGlobals.Get();
     GetDayZGame().SetSRPConfigGlobal(config);
   }
-
   override void InvokeOnConnect(PlayerBase player, PlayerIdentity identity)
   {
     super.InvokeOnConnect(player, identity);
@@ -13,7 +12,6 @@ modded class MissionServer
     Print("Sending Survivalists Mod Config to Player: " + identity.GetName() + " RPC: " + SRP_RPC.CHECK_SRP_CONFIG);
     GetGame().RPCSingleParam(player, SRP_RPC.CHECK_SRP_CONFIG, configParams, true, identity );
   }
-
   override PlayerBase OnClientNewEvent(PlayerIdentity identity, vector pos, ParamsReadContext ctx)
 	{
 		string characterType;
@@ -44,7 +42,6 @@ modded class MissionServer
 		
 		return m_player;
 	}
-
   bool IsMutantCharacterType(string characterType)
   {
     return (characterType.Substring(0, 4) == "DUB_");
