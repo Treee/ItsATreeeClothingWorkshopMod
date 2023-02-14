@@ -595,7 +595,7 @@ class CfgVehicles
 	};
   class NeonSign_Masson: HouseNoDestruct
 	{
-		scope=1;
+		scope=0;
 		model="Survivalists_Mods\structures\signs\neonsign_masson.p3d";
 	};
 
