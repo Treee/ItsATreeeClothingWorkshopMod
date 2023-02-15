@@ -1,11 +1,11 @@
-// modded class VPPAdminHud
-// {
-// 	override void DefineButtons()
-// 	{
-// 		super.DefineButtons();
-// 		InsertButton("AdminBulkComp", "Admin Bulk Comp", "set:dayz_gui_vpp image:vpp_icon_item_manager","Spawn multiple items from a list.");
-// 	}
-// };
+modded class VPPAdminHud
+{
+	override void DefineButtons()
+	{
+		super.DefineButtons();
+		InsertButton("AdminBulkComp", "Admin Bulk Comp", "set:dayz_gui_vpp image:vpp_icon_item_manager","Spawn multiple items from a list.");
+	}
+};
 
 class AdminBulkComp extends AdminHudSubMenu
 {
@@ -61,6 +61,9 @@ class AdminBulkComp extends AdminHudSubMenu
       case m_ItemList:
         DisplaySelectedCompRequest();
       break;
+      case m_SearchEditText:
+        DisplaySelectedCompRequest();
+      break;
     }
     return false;
   }
@@ -82,19 +85,12 @@ class AdminBulkComp extends AdminHudSubMenu
   SRP_BulkCompRecord GetSelectedItem()
 	{
 		int oRow = m_ItemList.GetSelectedRow();
-		string rowContents;
 		if (oRow != -1)
 		{
-			m_ItemList.GetItemText(oRow, 0, rowContents);
-      TStringArray lineParts;
-      rowContents.Split("||", lineParts);
-      string timestamp = lineParts[0];
-      timestamp.Replace("TimeID:","");      
-      foreach(SRP_BulkCompRecord record : m_BulkCompRecords)
-      {
-        if (record.MatchesEntry(timestamp))
-          return record;
-      }      
+		  SRP_BulkCompRecord itemData;
+			m_ItemList.GetItemData(oRow, 0, itemData);
+      if (itemData != NULL) 
+        return itemData;
 		}
 		return NULL;
 	}
@@ -104,7 +100,7 @@ class AdminBulkComp extends AdminHudSubMenu
     foreach(SRP_BulkCompRecord record : m_BulkCompRecords)
     {
       if (record.MatchesSearchQuery(m_SearchEditText.GetText()))
-        m_ItemList.AddItem( record.GetDisplayListText(), NULL, 0 );
+        m_ItemList.AddItem( record.GetDisplayListText(), record, 0 );
     }
   }
   void DisplaySelectedCompRequest()
@@ -121,6 +117,7 @@ class AdminBulkComp extends AdminHudSubMenu
     if (selectedRecord != NULL)
     {
       // send rpc to delete data
+      GetRPCManager().VSendRPC("RPC_VPPItemManager", "DeleteAdminBulkData", new Param1<int>(selectedRecord.GetEpochTimeStamp()), true, null);
     }
   }
   void AcknowledgeSelectedCompRequest()
@@ -129,6 +126,7 @@ class AdminBulkComp extends AdminHudSubMenu
     if (selectedRecord != NULL)
     {
       // send rpc to spawn gear
+      GetRPCManager().VSendRPC("RPC_VPPItemManager", "SpawnAdminBulkData", new Param1<int>(selectedRecord.GetEpochTimeStamp()), true, null);
     }
   }
 

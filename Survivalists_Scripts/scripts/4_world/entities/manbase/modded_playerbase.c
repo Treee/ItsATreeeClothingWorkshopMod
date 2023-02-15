@@ -65,7 +65,9 @@ modded class PlayerBase
     if ( m_AdminLog )
 		{
       string equippedItems = GetEquippedItems();
-      GetDayZGame().GetAdminHelper().InsertBulkCompItem(CF_Date.Now(true).DateToEpoch(), GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), equippedItems);
+      int time = CF_Date.Now(true).DateToEpoch();
+      Print("timestamp?: " + time);
+      GetDayZGame().GetAdminHelper().InsertBulkCompItem(time, GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), equippedItems);
       m_AdminLog.DirectAdminLogPrint(string.Format("ADMIN HELPER::||%1", GetEquippedItems()));
 		}
 		super.EEKilled( killer );
