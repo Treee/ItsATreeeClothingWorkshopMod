@@ -33,8 +33,10 @@ modded class ActionTestBloodTarget
     if (testResult == "") {
       testResult = "Blood Test Results Negative";
     }
-		ntarget.SendMessageToClient(ntarget, testResult);
-    action_data.m_Player.SendMessageToClient(action_data.m_Player, testResult);
+		// ntarget.SendMessageToClient(ntarget, testResult);
+		SendMessageToClient(ntarget, testResult);
+    SendMessageToClient(action_data.m_Player, testResult);
+    // action_data.m_Player.SendMessageToClient(action_data.m_Player, testResult);
 	}
 
   string GetAgentSeverity(int maxAgents, int currentAgents) {
@@ -87,7 +89,8 @@ modded class ActionTestBloodSelf
     if (testResult == "") {
       testResult = "Blood Test Results Negative";
     }
-		action_data.m_Player.SendMessageToClient(action_data.m_Player, testResult);
+		// action_data.m_Player.SendMessageToClient(action_data.m_Player, testResult);
+		SendMessageToClient(action_data.m_Player, testResult);
 	}
 
   string GetAgentSeverity(int maxAgents, int currentAgents) {

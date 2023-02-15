@@ -331,13 +331,22 @@ class SRP_Drugs_DetermineQuality extends RecipeBase
     ItemBase theDrug = ItemBase.Cast(ingredients[1]);
     string itemName = theDrug.GetType();
     itemName.ToLower();
+    Param1<string> m_MessageParam;
     if (itemName.Contains("tainted"))
     {
-      player.SendMessageToClient(player, "You see broken and unordered crystal structures. This is not even close to being pure.");
+      // player.SendMessageToClient(player, "You see broken and unordered crystal structures. This is not even close to being pure.");
+      // SendMessageToClient(player, "You see broken and unordered crystal structures. This is not even close to being pure.");
+      m_MessageParam = new Param1<string>("You see broken and unordered crystal structures. This is not even close to being pure.");
     }
     else 
     {
-      player.SendMessageToClient(player, "This is the purest crystal you have ever seen.");
+      // player.SendMessageToClient(player, "This is the purest crystal you have ever seen.");
+      // SendMessageToClient(player, "This is the purest crystal you have ever seen.");
+      m_MessageParam = new Param1<string>("This is the purest crystal you have ever seen.");
+    }
+    if( GetGame().IsServer() && m_MessageParam && player.IsAlive())
+    {
+      GetGame().RPCSingleParam(player, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, player.GetIdentity());
     }
 	}
 };

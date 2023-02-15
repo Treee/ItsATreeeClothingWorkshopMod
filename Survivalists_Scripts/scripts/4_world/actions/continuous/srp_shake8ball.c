@@ -43,7 +43,8 @@ class ActionShake8Ball extends ActionContinuousBase
 
 	override void OnFinishProgressServer( ActionData action_data )
 	{	
-    action_data.m_Player.SendMessageToClient(action_data.m_Player, EightBallMessage());
+    // action_data.m_Player.SendMessageToClient(action_data.m_Player, EightBallMessage());
+    SendMessageToClient(action_data.m_Player, EightBallMessage());
 	}
 
   string EightBallMessage()

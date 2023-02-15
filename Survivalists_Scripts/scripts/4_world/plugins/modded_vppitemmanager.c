@@ -9,7 +9,9 @@ modded class VPPItemManager
 		if(type == CallType.Server)
 		{
 			if (!GetPermissionManager().VerifyPermission(sender.GetPlainId(), "AdminBulkComp", "", false)) return;
-			GetRPCManager().VSendRPC( "RPC_AdminBulkComp", "HandleAdminBulkData", new Param1<ref array<ref SRP_BulkCompRecord>>(GetDayZGame().GetAdminHelper().m_BulkCompItems), true, sender);
+			
+      Param1<ref array<ref SRP_BulkCompRecord>> dataToSend = new Param1<ref array<ref SRP_BulkCompRecord>>(GetDayZGame().GetAdminHelper().m_BulkCompItems);
+      GetRPCManager().VSendRPC( "RPC_AdminBulkComp", "HandleAdminBulkData", dataToSend, true, sender);
 			GetWebHooksManager().PostData(AdminActivityMessage, new AdminActivityMessage(sender.GetPlainId(), sender.GetName(), "[ItemManager] Sent saved presets data."));
 		}
 	}
