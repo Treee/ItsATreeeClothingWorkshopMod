@@ -1,3 +1,8 @@
+// enum SRP_EDayZProfilesOptions
+// {
+// 	SHOW_UISTAT_COLOR = 13
+// }
+
 modded class DayZGame
 {
   protected ref SRPConfig m_SRPConfig;
@@ -20,17 +25,21 @@ modded class DayZGame
     delete m_SRPConfig;
   }
 
+  override void RegisterProfilesOptions()
+	{
+    super.RegisterProfilesOptions();
+		// m_DayZProfileOptions.RegisterProfileOption(SRP_EDayZProfilesOptions.SHOW_UISTAT_COLOR, "UI Stats Colors");
+  }
+
   void SetSRPConfigGlobal(SRPConfig config)
   {
     Print("Survivalists_Scripts Settings Confirmed");
     m_SRPConfig = config;
   }
-
   SRPConfig GetSRPConfigGlobal()
   {
     return m_SRPConfig;
   }
-
   SRP_SmithingRecipes GetSRPSmithingRecipesGlobal()
   {
     return m_SmithingRecipes;
