@@ -51,17 +51,7 @@ modded class Environment
           isBoosted = true;
         }
       }
-      int slot_id = InventorySlots.GetSlotIdFromString("Head");
-      Head_Default tempHead;
-      if (Class.CastTo(tempHead, Head_Default.Cast(m_Player.GetInventory().FindPlaceholderForSlot( slot_id ))))
-      {
-        if (tempHead.GetType() == "DUB_Muthead_M" || tempHead.GetType() == "DUB_Muthead_F" || tempHead.GetType() == "DUB_Muthead_M_2" || tempHead.GetType() == "DUB_Muthead_F_2" || tempHead.GetType() == "DUB_Carlhead")
-        {
-          isBoosted = true;
-        }
-      }
-
-      if (isBoosted)
+      if (m_Player.IsPlayerMutant())
       {
         m_Player.GetStatEnergy().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + 0.1));
         m_Player.GetStatWater().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + 0.1));
