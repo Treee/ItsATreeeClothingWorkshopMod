@@ -4,6 +4,7 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
+    actions.Insert(SRP_ActionCookDrugs);
     actions.Insert(SRP_ActionCraftAmmo);
     actions.Insert(ActionConvertStarterForgeKit);
     actions.Insert(ActionPourMoltenMetalIntoMold);

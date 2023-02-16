@@ -68,6 +68,10 @@ class SRP_BrewingWorkbench extends SRP_Fireplace_Transformer
   {
     return 0;
   }
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
 };
 class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench
 {

@@ -8,6 +8,7 @@ modded class DayZGame
   protected ref SRPConfig m_SRPConfig;
   protected ref SRP_SmithingRecipes m_SmithingRecipes;
   protected ref SRP_TailoringRecipes m_TailoringRecipes;
+  protected ref SRP_DrugRecipes m_DrugRecipes;
   protected ref SRP_DynamicTreasureHunt m_DynamicDreasureHunt;
   protected ref SRP_AdminHelper m_AdminHelper;
 
@@ -16,6 +17,7 @@ modded class DayZGame
     RemoveMutantSurvivorClassTypes();
     m_SmithingRecipes = new SRP_SmithingRecipes();
     m_TailoringRecipes = new SRP_TailoringRecipes();
+    m_DrugRecipes = new SRP_DrugRecipes();
     m_DynamicDreasureHunt = new SRP_DynamicTreasureHunt();
     m_AdminHelper = new SRP_AdminHelper();
   }
@@ -47,6 +49,10 @@ modded class DayZGame
   SRP_TailoringRecipes GetSRPTailoringRecipesGlobal()
   {
     return m_TailoringRecipes;
+  }
+  SRP_DrugRecipes GetSRPDrugRecipesGlobal()
+  {
+    return m_DrugRecipes;
   }
   SRP_DynamicTreasureHunt GetDynamicTreasureHunt()
   {

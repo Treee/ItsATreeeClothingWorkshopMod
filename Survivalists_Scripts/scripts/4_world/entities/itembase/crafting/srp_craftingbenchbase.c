@@ -95,7 +95,13 @@ class SRP_CraftingBench_Base extends ItemBase
         if (Class.CastTo(attachment, GetInventory().FindAttachmentByName(requirement.GetAttachmentSlotName())))
         {
           if (attachment.GetType() == "SRP_SewingMachine")
-            continue;
+            attachment.AddHealth(-1);
+          if (attachment.GetType() == "MethRecipe")
+            attachment.AddHealth(-1);
+          if (attachment.GetType() == "BathSaltsRecipe")
+            attachment.AddHealth(-1);
+          if (attachment.GetType() == "AcidRecipe")
+            attachment.AddHealth(-1);
           // players that brute force recipes will find things to be most expensive.
           int quantityToRemove = Math.Max(requirement.GetRequiredQuantity(), attachment.GetQuantity());
           attachment.AddQuantity(-quantityToRemove);

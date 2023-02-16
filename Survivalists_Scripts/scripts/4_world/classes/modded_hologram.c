@@ -60,16 +60,21 @@ modded class Hologram
 		  float min_projection_dist;
 		  float max_projection_dist; 
       m_ContactDir = vector.Zero;
-		  float projection_radius = GetProjectionRadius();
+		  float projection_radius = GetProjectionRadius();      
 		  float camera_to_player_distance = vector.Distance( GetGame().GetCurrentCameraPosition(), player.GetPosition() );
       
       vector minMaxProjection = GetMinMaxProjectionDistance(projection_radius);
       min_projection_dist = minMaxProjection[0];
       max_projection_dist = minMaxProjection[1];
+      if (placeableKit.GetType() == "SRP_DrugWorkbench_Kit")
+      {
+        min_projection_dist = 0.8;
+        max_projection_dist = 4;
+      }
 
       vector from = GetFromVector(player);
       vector to = GetToVector(max_projection_dist, camera_to_player_distance, from);
-      
+      // Print(string.Format("radius: %1 min: %2 max: %3", projection_radius, min_projection_dist, max_projection_dist));
       vector contact_pos;
       set<Object> hit_object = new set<Object>;
 

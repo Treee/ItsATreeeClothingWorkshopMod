@@ -2178,4 +2178,12 @@ class CfgVehicles
   {
     scope=2;
   };
+//============================================DRUGS
+  class SRP_DrugWorkbench_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Drug Workbench Kit";
+		descriptionShort="Blueprints for a mixing tub. Use at your own risk.";
+    projectionTypename="SRP_DrugWorkbench";
+	};  
 };

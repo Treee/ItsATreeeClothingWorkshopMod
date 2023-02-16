@@ -110,7 +110,6 @@ class CfgVehicles
 		weight=1000;    
 		itemSize[]={12,12};
     itemBehaviour=0;
-    isTakeable=0;
     carveNavmesh=1;
     physLayer="item_large";
     attachments[]=
@@ -124,7 +123,13 @@ class CfgVehicles
       "Disinfectant",
       "Chemlight",
 			"Material_MetalSheets",
-      "Material_MetalWire"
+      "Material_MetalWire",
+      "TestTube1",
+      "TestTube2",
+      "TestTube3",
+      "TestTube4",
+      "TestTube5",
+      "TestTube6"
 		};
     class Cargo
 		{
@@ -138,7 +143,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=1000;
 					healthLevels[]=
 					{
             {1,{"Survivalists_Narcotics\gear\container\data\Methtub.rvmat"}},
@@ -172,6 +177,21 @@ class CfgVehicles
 					"AcidRecipe"
 				};
 				icon="set:dayz_inventory image:book";
+			};
+      class LabTubes
+			{
+				name="Lab tubes";
+				description="";
+				attachmentSlots[]=
+				{
+          "TestTube1",
+          "TestTube2",
+          "TestTube3",
+          "TestTube4",
+          "TestTube5",
+          "TestTube6"
+				};
+				icon="set:dayz_inventory image:woodenlog";
 			};
 			class Material
 			{

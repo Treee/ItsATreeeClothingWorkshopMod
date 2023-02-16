@@ -522,11 +522,6 @@ modded class PluginRecipesManager
 
       RegisterRecipe(new SRP_Drugs_SplitMediumMethJar);
   		RegisterRecipe(new SRP_Drugs_SplitLargeMethJar);
-
-      RegisterRecipe(new SRP_Drugs_CookBleach);
-      RegisterRecipe(new SRP_Drugs_CookMeth);
-      RegisterRecipe(new SRP_Drugs_MakeAcid);
-      RegisterRecipe(new SRP_Drugs_MakeBathSalts);
   
       RegisterRecipe(new SRP_Drugs_DetermineQuality);
 

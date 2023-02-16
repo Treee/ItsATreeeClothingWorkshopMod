@@ -1661,6 +1661,7 @@ class CfgVehicles
     scope=2;
     displayName="Dye - Bleach";
     color="bleach";
+    varQuantityInit=20;
   };
   class SRP_CraftingMaterial_Dye_Black: SRP_CraftingMaterial_Dye_Base
   {

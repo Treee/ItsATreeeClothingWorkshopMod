@@ -35,6 +35,7 @@ enum SRP_COLOR
   MOOSE,
   HUMAN,
   ALPHA,
+  CLEAR,
   WHITE, //thread colors (double up for all colors?)
   BLACK,
   GREEN,

@@ -304,6 +304,8 @@ class SRP_GuitarCase_Blue_Kit extends SRP_KitBase{};
 
 class SRP_SleepingBag_Basic_Kit extends SRP_KitBase{};
 
+class SRP_DrugWorkbench_Kit extends SRP_KitBase{};
+
 class SRP_BrewingWorkbench_Alchemy_Kit extends SRP_KitBase{};
 class SRP_BrewingWorkbench_Ceramic_Kit extends SRP_KitBase{};
 class SRP_BrewingWorkbench_Copper_Kit extends SRP_KitBase{};
