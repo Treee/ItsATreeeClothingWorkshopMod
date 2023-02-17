@@ -1,8 +1,3 @@
-// enum SRP_EDayZProfilesOptions
-// {
-// 	SHOW_UISTAT_COLOR = 13
-// }
-
 modded class DayZGame
 {
   protected ref SRPConfig m_SRPConfig;
@@ -11,6 +6,8 @@ modded class DayZGame
   protected ref SRP_DrugRecipes m_DrugRecipes;
   protected ref SRP_DynamicTreasureHunt m_DynamicDreasureHunt;
   protected ref SRP_AdminHelper m_AdminHelper;
+  
+  private ref SRPProfileOptions m_SRPProfileOptions;
 
   void DayZGame()
   {  
@@ -20,6 +17,7 @@ modded class DayZGame
     m_DrugRecipes = new SRP_DrugRecipes();
     m_DynamicDreasureHunt = new SRP_DynamicTreasureHunt();
     m_AdminHelper = new SRP_AdminHelper();
+    m_SRPProfileOptions = new SRPProfileOptions();
   }
 
   void ~DayZGame()
@@ -27,11 +25,20 @@ modded class DayZGame
     delete m_SRPConfig;
   }
 
-  override void RegisterProfilesOptions()
+  override void DeferredInit()
 	{
-    super.RegisterProfilesOptions();
-		// m_DayZProfileOptions.RegisterProfileOption(SRP_EDayZProfilesOptions.SHOW_UISTAT_COLOR, "UI Stats Colors");
-  }
+		super.DeferredInit();
+		//Register custom option 
+		m_SRPProfileOptions.RegisterProfileOption(SRP_EDayZProfilesOptions.SHOW_UISTAT_COLOR, "UI Stats Colors");
+	}
+  float GetSRPProfileVal(SRP_EDayZProfilesOptions option)
+	{
+		return m_SRPProfileOptions.GetProfileOptionVal(option);
+	}
+	void SetSRPProfileVal(SRP_EDayZProfilesOptions option, float value)
+	{
+		m_SRPProfileOptions.SetProfileOptionVal(option, value);
+	}
 
   void SetSRPConfigGlobal(SRPConfig config)
   {

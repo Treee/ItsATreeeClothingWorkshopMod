@@ -76,50 +76,14 @@ modded class IngameHud
     if (key <= NTFKEY_HEARTBEAT)
       super.DisplayNotifier(key, tendency, status);
     else // otherwise do my stuff
-    {
-      ImageWidget w;
-      DisplayTendencyNormal(key, tendency, status);
-      // tendency arrows
-      string arrow_name = "ArrowUp";
-      if ( tendency < 0 )
-      {
-        arrow_name = "ArrowDown";
-      }
-      tendency = Math.AbsInt( tendency );
-
-      for ( int x = 1; x < 4; x++ )
-      { 
-        Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("%1ArrowUp%2",m_StatesWidgetNames.Get( key ), x) ) );
-        if( w )
-          w.Show( false );
-        Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("%1ArrowDown%2",m_StatesWidgetNames.Get( key ), x) ) );
-        if( w )
-          w.Show( false );
-      }      
-      if( tendency > 0 )
-      {
-        string widget_name = m_StatesWidgetNames.Get( key ) + arrow_name + Math.Clamp( tendency, 1, 3 );
-        Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( widget_name ) );
-        if( w )
-          w.Show( true );
-      }
-    }
+      DisplaySRPNotifiers_Sleep(key, tendency, status);
   }
 	override void DisplayTendencyNormal( int key, int tendency, int status )
   {
-    // do vanilla stuff for vanilla keys
-    if (key == NTFKEY_SICK)
-      DisplayTendencyHealth(key, tendency, status);
-    else if (key == NTFKEY_BLEEDISH)
-      DisplayTendencyBlood(key, tendency, status);
-    else if (key == NTFKEY_HUNGRY)
-      DisplayTendencyHunger(key, tendency, status);
-    else if (key == NTFKEY_THIRSTY)
-      DisplayTendencyThirst(key, tendency, status);
-    else if (key <= NTFKEY_HEARTBEAT)
+    if (g_Game.GetSRPProfileVal(SRP_EDayZProfilesOptions.SHOW_UISTAT_COLOR))
       super.DisplayTendencyNormal(key, tendency, status);
-    else    
-      DisplayTendencySleep(key, tendency, status);    
+    else
+      DisplaySRPTendencyColors(key, tendency, status);   
   }
   override void RefreshHudVisibility()
   {
@@ -141,6 +105,60 @@ modded class IngameHud
     debouncer+= timeslice;
 	}
 //========================== TENDENCY DISPLAY
+  void DisplaySRPNotifiers_Sleep( int key, int tendency, int status )
+	{
+    ImageWidget w;
+    DisplayTendencyNormal(key, tendency, status);
+    // tendency arrows
+    string arrow_name = "ArrowUp";
+    if ( tendency < 0 )
+    {
+      arrow_name = "ArrowDown";
+    }
+    tendency = Math.AbsInt( tendency );
+
+    for ( int x = 1; x < 4; x++ )
+    { 
+      Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("%1ArrowUp%2",m_StatesWidgetNames.Get( key ), x) ) );
+      if( w )
+        w.Show( false );
+      Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("%1ArrowDown%2",m_StatesWidgetNames.Get( key ), x) ) );
+      if( w )
+        w.Show( false );
+    }      
+    if( tendency > 0 )
+    {
+      string widget_name = m_StatesWidgetNames.Get( key ) + arrow_name + Math.Clamp( tendency, 1, 3 );
+      Class.CastTo(w, m_sleepPanelWidget.FindAnyWidget( widget_name ) );
+      if( w )
+        w.Show( true );
+    }
+  }
+  void DisplaySRPTendencyColors(int key, int tendency, int status)
+  {
+    switch(key)
+    {
+      case NTFKEY_SICK:
+        DisplayTendencyHealth(key, tendency, status);
+      break;
+      case NTFKEY_BLEEDISH:
+        DisplayTendencyBlood(key, tendency, status);
+      break;
+      case NTFKEY_HUNGRY:
+        DisplayTendencyHunger(key, tendency, status);
+      break;
+      case NTFKEY_THIRSTY:
+        DisplayTendencyThirst(key, tendency, status);
+      break;
+      case SRP_NTFKEY_TIREDNESS:
+        DisplayTendencySleep(key, tendency, status); 
+      break;
+      default:
+        DisplayTendencyDefault(key, tendency, status);
+      break;
+    }    
+  }
+
 	void DisplayTendencySleep( int key, int tendency, int status )
 	{
     ImageWidget w;
@@ -300,6 +318,39 @@ modded class IngameHud
 					break;
 				default:
 					w.SetColor( ARGB( alpha * 255, 0, 206, 209 ) );	//white
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+			}
+		}	
+	}
+  void DisplayTendencyDefault( int key, int tendency, int status )
+	{
+		ImageWidget w;
+		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
+		
+		if( w )
+		{
+			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
+			float alpha = w.GetAlpha();
+			
+			switch( status )
+			{
+				case 3:
+					w.SetColor( ARGB( alpha * 255, 220, 220, 0 ) );		//yellow
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 4:
+					w.SetColor( ARGB( alpha * 255, 220, 0, 0 ) );		//red
+					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
+					break;
+				case 5:
+					if ( !m_TendencyStatusCritical.Contains( w ) )
+					{
+						m_TendencyStatusCritical.Insert( w, ARGB( alpha * 255, 220, 0, 0 ) );	//add to blinking group
+					}
+					break;
+				default:
+					w.SetColor( ARGB( alpha * 255, 220, 220, 220 ) );	//white
 					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
 					break;
 			}
