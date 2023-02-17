@@ -675,6 +675,16 @@ class CfgVehicles
 		displayName="Collectible Pin";
 		descriptionShort="A decorative pin that can be attached to a few things.";
 		model="Survivalists_Mods\gear\camping\srp_collectiblepin.p3d";
+    rootClassName="SRP_Collectible_Pin";
+    colorVariants[]=
+    {
+      "Basic",
+      "Purple",
+      "Orange",
+      "Blue",
+      "Grey",
+      "Green",
+    };
 		inventorySlot[]=
     {
       "SRP_Pin1",
@@ -754,6 +764,20 @@ class CfgVehicles
 		displayName="Collectible Pin";
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_blue_co.paa"};
+	};
+  class SRP_Collectible_Pin_Grey: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_grey_co.paa"};
+	};
+  class SRP_Collectible_Pin_Green: SRP_Collectible_Pin_ColorBase
+	{
+		scope=2;
+		displayName="Collectible Pin";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Mods\gear\camping\data\srp_collectible_pin_green_co.paa"};
 	};
   class SRP_Potbelly_Stove_Kit: SRP_KitBase //
 	{

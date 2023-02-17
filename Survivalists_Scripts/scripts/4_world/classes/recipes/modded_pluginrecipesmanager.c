@@ -423,6 +423,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_WoodenLetterSealer);
       RegisterRecipe(new Craft_SRP_CopyBook);
 
+      RegisterRecipe(new Craft_SRP_ArmbandPinCollectable);
+
       RegisterRecipe(new Craft_SRP_WoodenSignKit_Base);
 
       RegisterRecipe(new SRP_Craft_BedMetal);
