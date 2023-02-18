@@ -69,23 +69,13 @@ modded class TransmitterBase
     // is server, player has a radio in hands, is not muted
     if(GetGame().IsDedicatedServer() && player_PB && player_PB.GetItemInHands() == this)
     {
-      Param1<string> m_MessageParam;
-      if ( !IsMuted())
-      {
-        // player_PB.SendMessageToClient( player, "Radio is UnMuted" );
-        m_MessageParam = new Param1<string>("Radio is UnMuted");
-        // SendMessageToClient( player, "Radio is UnMuted" );
-      }
+      string messageText;
+      if ( IsMuted())
+        messageText = "Radio is Muted";
       else
-      {
-        // player_PB.SendMessageToClient( player, "Radio is Muted" );
-        m_MessageParam = new Param1<string>("Radio is Muted");
-        // SendMessageToClient( player, "Radio is Muted" );
-      }
-      if( GetGame().IsServer() && m_MessageParam && player_PB.IsAlive())
-      {
-        GetGame().RPCSingleParam(player_PB, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, player_PB.GetIdentity());
-      }
+        messageText = "Radio is UnMuted";
+      
+      MessageToOwnerImportant(messageText);
     }
   }
 

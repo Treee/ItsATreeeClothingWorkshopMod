@@ -44,7 +44,6 @@ class ActionCheckJammerCurrent extends ActionContinuousBase
     SRP_ElectronicsJammer_Base jammer = SRP_ElectronicsJammer_Base.Cast(action_data.m_Target.GetObject());
     if (jammer)
     {      
-      // action_data.m_Player.SendMessageToClient(action_data.m_Player, string.Format("%1 Volts", jammer.GetPriorityHackingKitCurrent()));
       SendMessageToClient(action_data.m_Player, string.Format("%1 Volts", jammer.GetPriorityHackingKitCurrent()));
     }
 	}

@@ -59,25 +59,21 @@ class SRP_Drugs_DetermineQuality extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    ItemBase theDrug = ItemBase.Cast(ingredients[1]);
-    string itemName = theDrug.GetType();
-    itemName.ToLower();
-    Param1<string> m_MessageParam;
-    if (itemName.Contains("tainted"))
+    ItemBase theDrug;
+    if (Class.CastTo(theDrug, ingredients[1]))
     {
-      // player.SendMessageToClient(player, "You see broken and unordered crystal structures. This is not even close to being pure.");
-      // SendMessageToClient(player, "You see broken and unordered crystal structures. This is not even close to being pure.");
-      m_MessageParam = new Param1<string>("You see broken and unordered crystal structures. This is not even close to being pure.");
-    }
-    else 
-    {
-      // player.SendMessageToClient(player, "This is the purest crystal you have ever seen.");
-      // SendMessageToClient(player, "This is the purest crystal you have ever seen.");
-      m_MessageParam = new Param1<string>("This is the purest crystal you have ever seen.");
-    }
-    if( GetGame().IsServer() && m_MessageParam && player.IsAlive())
-    {
-      GetGame().RPCSingleParam(player, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, player.GetIdentity());
-    }
+      string itemName = theDrug.GetType();
+      itemName.ToLower();
+      string messageText;
+      if (itemName.Contains("tainted"))
+      {
+        messageText = "You see broken and unordered crystal structures. This is not even close to being pure.";
+      }
+      else 
+      {
+        messageText = "This is the purest crystal you have ever seen.";
+      }
+      theDrug.MessageToOwnerAction(messageText);
+    }    
 	}
 };
