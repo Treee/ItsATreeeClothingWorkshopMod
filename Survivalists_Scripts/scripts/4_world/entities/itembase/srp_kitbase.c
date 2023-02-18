@@ -4,7 +4,10 @@ class SRP_KitBase extends ItemBase
   {
     return true;
   }
-
+  override bool IsSprintRemoved()
+  {
+    return true;
+  }
   override bool IsPlacingKit()
   {
     return true;
@@ -13,11 +16,6 @@ class SRP_KitBase extends ItemBase
   override bool CanAssignAttachmentsToQuickbar()
 	{
 		return false;
-	}
-
-  override bool IsTwoHandedBehaviour()
-	{
-		return true;
 	}
 
   override void SetActions()
@@ -34,7 +32,7 @@ class SRP_Ladder_Opened_Kit extends SRP_KitBase
   override bool CanPutInCargo( EntityAI parent )
   {
     return false;
-  }
+  }  
 };
 
 class SRP_MasonryMetallurgy_KitBase extends SRP_KitBase{};

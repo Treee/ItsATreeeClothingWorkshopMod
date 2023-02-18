@@ -53,6 +53,7 @@ modded class PlayerConstants
 
 modded class GameConstants
 {
+  const int SRP_MUTANT_HEAD_BIO_PROTECTION  = 8;
   const int UI_SRP_CUSTOM_MENU_GUICrafting  = 8764336;
 
 	const float STAMINA_SYNC_RATE = 1; //in secs

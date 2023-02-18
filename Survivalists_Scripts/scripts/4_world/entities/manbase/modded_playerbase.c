@@ -11,9 +11,9 @@ modded class PlayerBase
 
   protected bool m_IsInBioZone = false;
   protected bool m_IsNearComfortHeatSource = false;
-  protected int m_DisableSprint = 0;
   protected bool m_HeavyItemInHandsSprintDisable = false;
   protected bool m_HeavyItemEquippedSprintDisable = false;
+  protected bool m_IsPlayerMutant = false;
 
   protected float m_TotalContaminationProtection = 0;
 
@@ -66,7 +66,7 @@ modded class PlayerBase
 		{
       string equippedItems = GetEquippedItems();
       int time = CF_Date.Now(true).DateToEpoch();
-      Print("timestamp?: " + time);
+      // Print("timestamp?: " + time);
       GetDayZGame().GetAdminHelper().InsertBulkCompItem(time, GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), equippedItems);
       m_AdminLog.DirectAdminLogPrint(string.Format("ADMIN HELPER::||%1", GetEquippedItems()));
 		}
@@ -83,7 +83,6 @@ modded class PlayerBase
 
     return super.CanSprint();
   }
-
   override bool IsSprinting()
 	{
     return ( super.IsSprinting() || m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_SPRINT );				
@@ -96,7 +95,6 @@ modded class PlayerBase
     }
     return false;
   }
-
   string GetEquippedItems()
   {
     array<EntityAI> itemsArray = new array<EntityAI>;
@@ -126,50 +124,38 @@ modded class PlayerBase
 		}
     return itemString;
   }
-
   bool IsRunning()
 	{
     return ( m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_RUN );				
 	}
-
   bool IsWalking()
 	{
     return ( m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_WALK );				
 	}
-  
   void SetBioZoneStatus(bool isInZone)
   {
     m_IsInBioZone = isInZone;
   }
-
   bool IsInBioZone()
   {
     return m_IsInBioZone;
   }
-
   bool SRPIgnoreContaminatedArea()
   {
-    if (IsPlayerMutant())
-    {
-      return true;
-    }
     if (GetPlayerRadiationProtection() > 5)
     {
       return true;
     }
     return false;
   }
-
+  void SetIsPlayerMutant(bool isMutant)
+  {
+    m_IsPlayerMutant = isMutant;
+  }
   bool IsPlayerMutant()
   {
-    EntityAI tempHead = player.GetItemOnSlot("Head");
-    if (tempHead && (tempHead.GetType() == "DUB_Muthead_M" || tempHead.GetType() == "DUB_Muthead_F" || tempHead.GetType() == "DUB_Muthead_M_2" || tempHead.GetType() == "DUB_Muthead_F_2"))
-    {
-      return true;
-    }
-    return false;
+    return m_IsPlayerMutant;
   }
-
   bool IsPlayerPreMutant()
   {
     if (IsAlive() && m_FliesEff)
@@ -178,21 +164,14 @@ modded class PlayerBase
     }
     return false;
   }
-
   void ModifyContaminationProtection(float amount)
   {
     m_TotalContaminationProtection += amount;
   }
-
   float GetPlayerRadiationProtection()
   {
-    if (IsPlayerMutant())
-    {
-      return 8.0;
-    }
     return m_TotalContaminationProtection;
   }
-
   bool IsSprintDisabledByHeavyItemInHands()
   {
     return m_HeavyItemInHandsSprintDisable;
@@ -210,66 +189,14 @@ modded class PlayerBase
   {
     m_HeavyItemEquippedSprintDisable = isDisabled;
   }
-  float SRPAIVisionModifier()
-  {
-    float vision = 1.0;
-    EntityAI suitAttachment = FindAttachmentBySlotName("Extra");
-    EntityAI armbandAttachment = GetInventory().FindAttachment(InventorySlots.ARMBAND);
-    EntityAI feetAttachment = GetInventory().FindAttachment(InventorySlots.FEET);
-    if (GetSingleAgentCount(DUB_MutantAgent.MUTANT_AGENT) >= 28800)
-    {
-			vision = 0.0;
-      // Area 42
-			if (vector.Distance(GetPosition(), Vector(13399.7, 12.9225, 9843.49)) < 600)
-			{
-				vision = 0.5;
-			}
-			// Airfield
-			else if (vector.Distance(GetPosition(), Vector(5454.67, 75.6217, 3461.69)) < 550)
-			{
-				vision = 0.5;
-			}
-			// Paris
-			else if (vector.Distance(GetPosition(), Vector(2812.13, 22.4625, 3901.33)) < 750)
-			{
-				vision = 0.5;
-			}
-			// Temple
-			else if (vector.Distance(GetPosition(), Vector(422.315, 16.5728, 595.137)) < 850)
-			{
-				vision = 0.5;
-			}
-    }
-		else if (suitAttachment && (suitAttachment.GetType() == "DUB_Monsterv2" || suitAttachment.IsInherited(DUB_Monsterv2)))
-		{
-			vision = 0.0;
-		}  
-    else if (suitAttachment && (suitAttachment.GetType() == "DUB_Wendigosuit" || suitAttachment.IsInherited(DUB_Wendigosuit)))
-		{
-			vision = 0.0;
-		}       
-		else if (armbandAttachment && armbandAttachment.GetType() == "Skylar_BioZone_Protection")
-    {
-      vision = 0.3;
-    }
-    else if (feetAttachment && feetAttachment.GetType() == "Sneakers_Skylar_Biozone")
-    {
-      vision = 0.3;
-    }
-
-    return vision;
-  }
-
   void SetIsNearComfortHeatSource(bool isNearComfort)
   {
     m_IsNearComfortHeatSource = isNearComfort;
   }
-
   bool IsNearComfortHeatSource()
   {
     return m_IsNearComfortHeatSource;
   }
-  
   override void ProcessFeetDamageServer(int pUserInt)
 	{    
     if (SRP_IgnoreShoeDamage())

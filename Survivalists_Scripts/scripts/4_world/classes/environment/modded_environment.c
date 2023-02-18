@@ -51,7 +51,7 @@ modded class Environment
           isBoosted = true;
         }
       }
-      if (m_Player.IsPlayerMutant())
+      if (m_Player.IsPlayerMutant() || isBoosted)
       {
         m_Player.GetStatEnergy().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + 0.1));
         m_Player.GetStatWater().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + 0.1));

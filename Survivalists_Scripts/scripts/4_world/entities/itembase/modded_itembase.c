@@ -3,35 +3,53 @@ modded class ItemBase
   protected int m_HeatCounter = 0;  
   protected string m_BaseClassName;
   protected ref array<string> m_DyableColorVariants;
+  protected bool m_ItemHasBioImmunity;
+  protected bool m_IsMutantIdentifierItem;
 
   override void InitItemVariables()
 	{
     super.InitItemVariables();
-    InitializeColorVariants();
+    InitializeSRPVariables();
   };
   override void OnWasAttached( EntityAI parent, int slot_id )
 	{
 		super.OnWasAttached(parent, slot_id);
     // Print("OnWasAttached");
-    if (IsSprintRemoved())
+    PlayerBase player;
+    if(Class.CastTo(player, parent))
     {
-      PlayerBase player = PlayerBase.Cast(parent);
-  		if (player)
+      if (IsSprintRemoved())
       {
         player.SetIsSprintDisabledByHeavyItemEquipped(true);
       }
-    }    
+      if (HasBioImmunity()) 
+      {
+        player.ModifyContaminationProtection(GameConstants.SRP_MUTANT_HEAD_BIO_PROTECTION);
+      }
+      if (IsMutantIdentifier()) 
+      {
+        player.SetIsPlayerMutant(true);
+      }
+    }
 	}
 	override void OnWasDetached( EntityAI parent, int slot_id )
 	{
 		super.OnWasDetached(parent, slot_id);
     // Print("OnWasDetached");
-    if (IsSprintRemoved())
+    PlayerBase player;
+    if(Class.CastTo(player, parent))
     {
-      PlayerBase player = PlayerBase.Cast(parent);
-  		if (player)
+      if (IsSprintRemoved())
       {
         player.SetIsSprintDisabledByHeavyItemEquipped(false);
+      }
+      if (HasBioImmunity()) 
+      {
+        player.ModifyContaminationProtection(-GameConstants.SRP_MUTANT_HEAD_BIO_PROTECTION);
+      }
+      if (IsMutantIdentifier()) 
+      {
+        player.SetIsPlayerMutant(false);
       }
     }
 	}
@@ -134,6 +152,11 @@ modded class ItemBase
 		}
 		return item_IB;
 	}
+  void InitializeSRPVariables()
+  {
+    InitializeColorVariants();
+    InitializeBioImmunityVariables();
+  }
 //===================================== DYE STUFF
   void InitializeColorVariants()
   {
@@ -208,7 +231,23 @@ modded class ItemBase
     }
     return -1;
   }
-//===================================== STATUS EFFECT BOOLS
+//===================================== STATUS EFFECT
+  void InitializeBioImmunityVariables()
+  {
+		m_ItemHasBioImmunity = ConfigGetBool("BioImmunity");
+  }
+  bool HasBioImmunity()
+  {
+    return m_ItemHasBioImmunity;
+  }
+  void InitializeMutantVariables()
+  {
+		m_IsMutantIdentifierItem = ConfigGetBool("IsMutant");
+  }
+  bool IsMutantIdentifier()
+  {
+    return m_IsMutantIdentifierItem;
+  }
   bool HasAlcoholEffect()
   {
     return false;
@@ -260,7 +299,7 @@ modded class ItemBase
   int GetBloodRegenEffectTotal()
   {
     return 0;
-  }
+  }  
 //====================================== CRAFTING
   bool IsAlchemyReagent()
   {

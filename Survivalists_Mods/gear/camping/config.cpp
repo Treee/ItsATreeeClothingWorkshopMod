@@ -2493,6 +2493,8 @@ class CfgVehicles
 		displayName="Ladder";
 		descriptionShort="A ladder that can be stood up.";
 		model="Survivalists_Mods\gear\camping\srp_ladder_closed.p3d";
+    itemBehaviour=1;
+    rotationFlags=64;
     hiddenSelections[]=
 		{
       "zbytek"
