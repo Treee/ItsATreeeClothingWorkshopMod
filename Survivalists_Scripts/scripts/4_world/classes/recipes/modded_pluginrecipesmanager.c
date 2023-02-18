@@ -345,6 +345,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_LeatherPouch_Default);
       RegisterRecipe(new Craft_SRP_LeatherPouch_Medieval);
       RegisterRecipe(new Craft_SRP_LeatherPouch_Small);
+      RegisterRecipe(new DeCraft_SRP_LeatherPouches);
 
       RegisterRecipe(new Craft_SRP_Notebook);
       RegisterRecipe(new Craft_SRP_ExtraPaper);
