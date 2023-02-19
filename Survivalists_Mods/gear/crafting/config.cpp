@@ -30,6 +30,7 @@ class CfgVehicles
 		itemsCargoSize[]={0,0};
 		itemSize[]={4,4};
 		carveNavmesh=1;
+    itemBehaviour=1;
 		canBeDigged=0;
 		simulation="inventoryItem";
 		physLayer="item_small";
@@ -164,11 +165,11 @@ class CfgVehicles
       "AnimalPelt2",
       "AnimalPelt3",
       "AnimalPelt4",
+      "Material_Shelter_Leather",
       "Material_Shelter_FrameSticks",
 			"MetalWire",
 			"Material_MetalWire",
 			"Material_FPole_MetalWire",
-      "Material_Shelter_Leather",
       "Material_Shelter_Fabric",
       "Rope",
       "Rags",

@@ -4,7 +4,7 @@ class SRP_Fishing_Construct_FishLureMetalKit extends RecipeBase
 	{
 		m_Name = "Build Fishing Lure Kit - Metal";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -71,7 +71,7 @@ class SRP_Fishing_Construct_FishLureWoodKit extends RecipeBase
 	{
 		m_Name = "Build Fishing Lure Kit - Wood";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -159,7 +159,7 @@ class SRP_Fishing_Construct_FishLureMetal_Slim1 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - Slim Silver/Blue";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -225,7 +225,7 @@ class SRP_Fishing_Construct_FishLureMetal_Slim2 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - Slim Silver/Green";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -291,7 +291,7 @@ class SRP_Fishing_Construct_FishLureMetal_Slim3 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - Slim Silver/Purple";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -357,7 +357,7 @@ class SRP_Fishing_Construct_FishLureMetal_Slim4 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - Slim Silver/Yellow";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -424,7 +424,7 @@ class SRP_Fishing_Construct_FishLureMetal_TearDrop1 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - TearDrop Gold";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -490,7 +490,7 @@ class SRP_Fishing_Construct_FishLureMetal_TearDrop2 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - TearDrop Purple";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -556,7 +556,7 @@ class SRP_Fishing_Construct_FishLureMetal_TearDrop3 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - TearDrop Green";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -622,7 +622,7 @@ class SRP_Fishing_Construct_FishLureMetal_TearDrop4 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - TearDrop Blue";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -689,7 +689,7 @@ class SRP_Fishing_Construct_FishLureMetal_Rounded1 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - Rounded Gold";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -755,7 +755,7 @@ class SRP_Fishing_Construct_FishLureMetal_Rounded2 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - Rounded Purple";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -821,7 +821,7 @@ class SRP_Fishing_Construct_FishLureMetal_Rounded3 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - Rounded Green";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -887,7 +887,7 @@ class SRP_Fishing_Construct_FishLureMetal_Rounded4 extends RecipeBase
 	{
 		m_Name = "Craft Metal Fishing Lure - Rounded Blue";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -955,7 +955,7 @@ class SRP_Fishing_Construct_FishLureWood_SmallScale1 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Small Scale Red";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1042,7 +1042,7 @@ class SRP_Fishing_Construct_FishLureWood_SmallScale2 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Small Scale Purple";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1129,7 +1129,7 @@ class SRP_Fishing_Construct_FishLureWood_SmallScale3 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Small Scale Green";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1216,7 +1216,7 @@ class SRP_Fishing_Construct_FishLureWood_SmallScale4 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Small Scale Blue";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1304,7 +1304,7 @@ class SRP_Fishing_Construct_FishLureWood_PatternScale1 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Pattern Scale Green";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1391,7 +1391,7 @@ class SRP_Fishing_Construct_FishLureWood_PatternScale2 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Pattern Scale Yellow";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1478,7 +1478,7 @@ class SRP_Fishing_Construct_FishLureWood_PatternScale3 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Pattern Scale Blue";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1565,7 +1565,7 @@ class SRP_Fishing_Construct_FishLureWood_PatternScale4 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Pattern Scale Purple";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1653,7 +1653,7 @@ class SRP_Fishing_Construct_FishLureWood_LargeScale1 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Large Scale Yellow";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1740,7 +1740,7 @@ class SRP_Fishing_Construct_FishLureWood_LargeScale2 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Large Scale Pink";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1827,7 +1827,7 @@ class SRP_Fishing_Construct_FishLureWood_LargeScale3 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Large Scale Green";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -1914,7 +1914,7 @@ class SRP_Fishing_Construct_FishLureWood_LargeScale4 extends RecipeBase
 	{
 		m_Name = "Craft Wooden Fishing Lure - Large Scale Blue";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions

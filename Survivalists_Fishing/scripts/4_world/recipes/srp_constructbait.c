@@ -144,7 +144,7 @@ class SRP_Fishing_Construct_ClamBait extends RecipeBase
 	{
 		m_Name = "Hook Bait";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -209,7 +209,7 @@ class SRP_Fishing_Construct_ClamBaitBone extends RecipeBase
 	{
 		m_Name = "Hook Bone Bait";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -275,7 +275,7 @@ class SRP_Fishing_Construct_SmallFishBait extends RecipeBase
 	{
 		m_Name = "Hook Bait";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -341,7 +341,7 @@ class SRP_Fishing_Construct_SmallFishBaitBone extends RecipeBase
 	{
 		m_Name = "Hook Bone Bait";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 4;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions

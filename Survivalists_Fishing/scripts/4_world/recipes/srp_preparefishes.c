@@ -5,7 +5,7 @@ class PrepareCoralFish extends PrepareFish
     m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_CoralFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -72,7 +72,7 @@ class PrepareAngelFish extends PrepareFish
     m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_AngelFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -139,7 +139,7 @@ class PrepareSailFish extends PrepareFish
     m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_SailFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -206,7 +206,7 @@ class PrepareAnglerFish extends PrepareFish
     m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_AnglerFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -273,7 +273,7 @@ class PrepareHammerHeadFish extends PrepareFish
     m_FishFilletClassName = "SRP_SaltWaterFishFilletMeat_HammerHeadFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -340,7 +340,7 @@ class PrepareTroutFish extends PrepareFish
     m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_Trout";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -407,7 +407,7 @@ class PrepareMutantFish extends PrepareFish
     m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_MutantFish";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -474,7 +474,7 @@ class PrepareSplakeFish extends PrepareFish
     m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_Splake";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -541,7 +541,7 @@ class PreparePerchFish extends PrepareFish
     m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_Perch";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -608,7 +608,7 @@ class PrepareTilapiaFish extends PrepareFish
     m_FishFilletClassName = "SRP_FreshWaterFishFilletMeat_Tilapia";
 		m_Name = "#STR_gutandprepare0";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 6;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 		
 		//conditions

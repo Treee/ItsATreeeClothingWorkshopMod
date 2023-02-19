@@ -4,7 +4,7 @@ class SRP_Fishing_Construct_FishRodKit extends RecipeBase
 	{
 		m_Name = "Build Fishing Rod Kit - Wood";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -70,7 +70,7 @@ class SRP_Fishing_Construct_FishRod extends RecipeBase
 	{
 		m_Name = "Build Fishing Rod - Wood";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -144,7 +144,7 @@ class SRP_Fishing_Construct_FishRod_Red extends RecipeBase
 	{
 		m_Name = "Paint Fishing Rod - Red";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -210,7 +210,7 @@ class SRP_Fishing_Construct_FishRod_Blue extends RecipeBase
 	{
 		m_Name = "Paint Fishing Rod - Blue";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -276,7 +276,7 @@ class SRP_Fishing_Construct_FishRod_Purple extends RecipeBase
 	{
 		m_Name = "Paint Fishing Rod - Purple";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions

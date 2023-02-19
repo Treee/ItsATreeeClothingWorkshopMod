@@ -447,45 +447,53 @@ class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
 
     ItemBase tannedLeather = GetItemInSlot("Material_Shelter_Leather");
     isSolved |= (tannedLeather && tannedLeather.GetQuantity() == 8);
-
+    // Print("leather: " + isSolved);
     ItemBase animalSkull = GetItemInSlot("AnimalSkull");
     isSolved &= (animalSkull != null);
-
+    // Print("skull: " + isSolved);
     ItemBase woodenSticks = GetItemInSlot("Material_Shelter_FrameSticks");
     isSolved &= (woodenSticks && woodenSticks.GetQuantity() == 4);
-
+    // Print("sticks: " + isSolved);
     ItemBase fabric = GetItemInSlot("Material_Shelter_Fabric");
     isSolved &= (fabric && fabric.GetQuantity() == 4);
-
+    // Print("fabric: " + isSolved);
     ItemBase rags = GetItemInSlot("Rags");
     isSolved &= (rags && rags.GetQuantity() == 6);
-
+    // Print("rags: " + isSolved);    
+    ItemBase rope = GetItemInSlot("Rope");
+    isSolved &= (rope != null);
+    // Print("rope: " + isSolved);
+    ItemBase wire1 = GetItemInSlot("Material_MetalWire");
+    isSolved &= (wire1 != null);
+    // Print("wire1: " + isSolved);
+    ItemBase wire2 = GetItemInSlot("Material_FPole_MetalWire");
+    isSolved &= (wire2 != null);
+    // Print("wire2: " + isSolved);
+    ItemBase wire3 = GetItemInSlot("MetalWire");
+    isSolved &= (wire3 != null);
+    // Print("wire3: " + isSolved);
     EntityAI animalPelt;
-    for(int i=requiredPelts.Count() - 1; i > 0; i--)
+    int requiredIndex;
+    for(int i=requiredPelts.Count(); i > 0; i--)
     {
+      requiredIndex = i - 1;
       animalPelt = FindAttachmentBySlotName("AnimalPelt"+i);
       if (animalPelt)
       {
-        isSolved &= requiredPelts.Get(i) == animalPelt.GetType();
-        // Print("AnimalPelt"+i + ": " + requiredPelts.Get(i) + " this pelt: " + animalPelt.GetType() + ": " + isSolved);
+        string requiredPelt = requiredPelts.Get(requiredIndex);
+        requiredPelt.ToLower();
+        string actualPelt = animalPelt.GetType();
+        actualPelt.ToLower();
+        isSolved &= (requiredPelt == actualPelt);
+        // Print("AnimalPelt"+i + ": " + requiredPelt + " this pelt: " + actualPelt + ": " + isSolved);
       }
       else
       {
+        // Print("wut");
         isSolved &= false;
       }
     }
-    ItemBase rope = GetItemInSlot("Rope");
-    isSolved &= (rope != null);
-
-    ItemBase wire1 = GetItemInSlot("Material_MetalWire");
-    isSolved &= (wire1 != null);
-
-    ItemBase wire2 = GetItemInSlot("Material_FPole_MetalWire");
-    isSolved &= (wire2 != null);
-
-    ItemBase wire3 = GetItemInSlot("MetalWire");
-    isSolved &= (wire3 != null);
-
+    // Print("pelts: " + isSolved);
     // Print("rope check: " + isSolved);
     return isSolved;
   }

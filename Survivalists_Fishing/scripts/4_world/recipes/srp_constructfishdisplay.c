@@ -4,7 +4,7 @@ class SRP_Fishing_Construct_FishDisplayStarterKit extends RecipeBase
 	{
 		m_Name = "Build Wooden Fish Display Starter Kit - Tall";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -70,7 +70,7 @@ class SRP_Fishing_Construct_FishDisplay extends RecipeBase
 	{
 		m_Name = "Build Wooden Fish Display Kit - Tall";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -146,7 +146,7 @@ class SRP_Fishing_Construct_FishRackStarterKit extends RecipeBase
 	{
 		m_Name = "Build Wooden Fish Rack Starter Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -212,7 +212,7 @@ class SRP_Fishing_Construct_FishRack extends RecipeBase
 	{
 		m_Name = "Build Wooden Fish Display Rack";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -288,7 +288,7 @@ class SRP_Fishing_Construct_AquariumStarterKit extends RecipeBase
 	{
 		m_Name = "Build Aquarium Starter Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -354,7 +354,7 @@ class SRP_Fishing_Construct_AquariumStarterKit_Top extends RecipeBase
 	{
 		m_Name = "Build Aquarium Top";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -421,7 +421,7 @@ class SRP_Fishing_Construct_AquariumStarterKit_Bot extends RecipeBase
 	{
 		m_Name = "Build Aquarium Foundation";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -488,7 +488,7 @@ class SRP_Fishing_Construct_AquariumStarterKit_Glass extends RecipeBase
 	{
 		m_Name = "Build Aquarium Epoxy Glass";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
@@ -554,7 +554,7 @@ class SRP_Fishing_Construct_AquariumKit extends RecipeBase
 	{
 		m_Name = "Build Aquarium Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 12;//animation length in relative time units
+		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
 				
 		//conditions
