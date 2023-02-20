@@ -962,6 +962,14 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Old Shovel" (https://skfb.ly/6WMqM) by Oliver Triplett is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Propane Tanks" (https://skfb.ly/6UMFD) by Caboose3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Makeshift Advanced Telecommunications Device" (https://skfb.ly/6WQNU) by Matthew is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Fallout 76 - Enclave Tactical Pack" (https://skfb.ly/ozrp7) by Jamie McFarlane is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+### Sounds
+
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
 
 - https://soundcloud.com/walkintree/kalasnjikov-by-goran-bregovic

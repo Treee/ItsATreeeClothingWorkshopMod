@@ -45,7 +45,7 @@ class CfgVehicles
 			"SRP_Teddy7",
 		};
   };
-  //======================================= MODDED MODS
+//======================================= MODDED MODS
   class MassLargePlateCarrierPouches: PlateCarrierPouches
 	{
 		descriptionShort="Large Plate Carrier Pouches. Yes. this fits on a normal platecarrier. 'Mass' OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
@@ -74,7 +74,7 @@ class CfgVehicles
 	{
 		descriptionShort="Olive Drab Green Plate Carrier Pouches To go with Mass's Olive Drab Green Plate Carrier OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
 	};
-  //--------------------------------------- Custom Stuff  
+//--------------------------------------- Custom Stuff  
   class SRP_RainCollector: Container_Base
 	{
 		scope=2;
@@ -4982,6 +4982,83 @@ class CfgVehicles
 			};
 		};
   };
+
+  class SRP_PropaneLocker_Colorbase: Container_Base
+	{
+		scope=0;
+		displayName="Propane Storage Locker";
+		descriptionShort="A storage container for propane tanks.";
+		model="Survivalists_Mods\gear\containers\srp_locker_propane.p3d";
+		physLayer="item_large";
+		weight=10000;
+		itemSize[]={10,8};
+    attachments[]={};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_propane_cage_white_co.paa"
+    };
+    class Cargo
+		{
+			itemsCargoSize[]={8,4};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+          healthLevels[] = {
+            {1,"Survivalists_Mods\gear\containers\data\srp_propane_cage.rvmat"},
+            {0.7,"Survivalists_Mods\gear\containers\data\srp_propane_cage.rvmat"},
+            {0.5,"Survivalists_Mods\gear\containers\data\srp_propane_cage.rvmat"},
+            {0.3,"Survivalists_Mods\gear\containers\data\srp_propane_cage.rvmat"},
+            {0.1,"Survivalists_Mods\gear\containers\data\srp_propane_cage.rvmat"}
+          };
+				};
+			};
+		};
+    class AnimationSources
+		{
+      class Doors1
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=1;
+			};
+		};
+    class Doors
+		{
+			class Doors1
+			{
+				displayName="Door 1";
+				component="doors1";
+				soundPos="doors1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.69999999;
+			};
+    };
+	};
+  class SRP_PropaneLocker_Basic: SRP_PropaneLocker_Colorbase
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\containers\data\srp_propane_cage_white_co.paa"
+    };
+  };
+
 
 //=================================================================== POTS
   class SRP_PotteryPot_ColorBase: Inventory_Base

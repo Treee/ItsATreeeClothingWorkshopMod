@@ -22,7 +22,7 @@ class CfgVehicles
   class Bark_Oak;
   class Bark_Birch;
 
-  //--------------------------------------------- BASE GAME OVERRIDES
+//--------------------------------------------- BASE GAME OVERRIDES
   class Spraycan_ColorBase: Inventory_Base
   {
     itemSize[]={1,2};
@@ -353,7 +353,7 @@ class CfgVehicles
 
   
   
-  //----------------------------------------------- CUSTOM STUFF
+//----------------------------------------------- CUSTOM STUFF
   class Firewood_Irradiated: Firewood
 	{
 		scope=2;
@@ -613,7 +613,7 @@ class CfgVehicles
 		};
 	};
 
-  //--------------------------------------------------ELECTRONICS
+//--------------------------------------------------ELECTRONICS
   class MetalWire_ColorBase: Inventory_Base
 	{
 		scope=0;
@@ -974,7 +974,7 @@ class CfgVehicles
 		};
 	};     
 
-  //----------------------------------------------------- SPRAYCANS
+//----------------------------------------------------- SPRAYCANS
   class SRP_LongRangeRadioBattery: Battery9V // SRPLRRadioBattery
 	{
 		scope=2;
@@ -1421,7 +1421,7 @@ class CfgVehicles
     };
   };
 
-  //============================================= CONSUMABLES
+//============================================= CONSUMABLES
   class SRP_CraftingMaterial_Metal: Inventory_Base
 	{
 		scope=0;
@@ -1916,4 +1916,138 @@ class CfgVehicles
       "SRP_SkeletonLegRight"
     };
   };
+//============================================= PROPANE TANKS
+  class SRP_PropaneTank_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Propane Tank";
+		descriptionShort="A small propane tank that can be carried. Contents under pressure store properly or risk explosion.";
+		model="Survivalists_Mods\gear\consumables\srp_propanetank.p3d";
+		weight=340;
+		weightPerQuantityUnit=4;
+		itemSize[]={4,3};
+		stackedUnit="w";
+		quantityBar=1;
+		varQuantityInit=20;
+		varQuantityMin=0;
+		varQuantityMax=20;
+		varQuantityDestroyOnMin=0;
+    hiddenSelections[]={"zbytek","copper","plastic"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_red_co.paa",
+      "Survivalists_Mods\gear\consumables\data\srp_propane_copper_co.paa",
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tankplastic_yellow_co.paa"
+    };
+		inventorySlot[]=
+		{
+			"GasCanister"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank.rvmat"}},
+						{0.69999999,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank.rvmat"}},
+						{0.5,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank_damage.rvmat"}},
+						{0.30000001,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank_damage.rvmat"}},
+						{0,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class EnergyManager
+		{
+			switchOnAtSpawn=1;
+			isPassiveDevice=1;
+			energyStorageMax=2500;
+			energyUsagePerSecond=0;
+			energyAtSpawn=2500;
+			powerSocketsCount=1;
+			compatiblePlugTypes[]={7};
+			convertEnergyToQuantity=1;
+		};
+		soundImpactType="metal";
+	};
+  class SRP_PropaneTankLarge_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Large Propane Tank";
+		descriptionShort="A large propane tank. Contents under pressure store properly or risk explosion.";
+		model="Survivalists_Mods\gear\consumables\srp_propanetank_large.p3d";
+		weight=340;
+		weightPerQuantityUnit=4;
+		itemSize[]={10,8};
+		stackedUnit="w";
+		quantityBar=1;
+		varQuantityInit=20;
+		varQuantityMin=0;
+		varQuantityMax=20;
+		varQuantityDestroyOnMin=0;
+    hiddenSelections[]={"zbytek","metal"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_large_co.paa",    
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_large_metalpipe_co.paa"
+    };
+		inventorySlot[]=
+		{
+			"GasCanister"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000;
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank_large.rvmat"}},
+						{0.69999999,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank_large.rvmat"}},
+						{0.5,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank_large_damage.rvmat"}},
+						{0.30000001,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank_large_damage.rvmat"}},
+						{0,{"Survivalists_Mods\gear\consumables\data\srp_propane_tank_large_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class EnergyManager
+		{
+			switchOnAtSpawn=1;
+			isPassiveDevice=1;
+			energyStorageMax=25000;
+			energyUsagePerSecond=0;
+			energyAtSpawn=25000;
+			powerSocketsCount=1;
+			compatiblePlugTypes[]={7};
+			convertEnergyToQuantity=1;
+		};
+		soundImpactType="metal";
+	};  
+
+  class SRP_PropaneTank_Red: SRP_PropaneTank_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek","plastic"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_red_co.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tankplastic_yellow_co.paa"
+    };
+	};
+  class SRP_PropaneTankLarge_DeerIsle: SRP_PropaneTankLarge_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_large_co.paa"
+    };
+	}; 
 };
