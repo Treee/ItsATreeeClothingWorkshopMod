@@ -2037,7 +2037,7 @@ class CfgVehicles
     hiddenSelections[]={"zbytek","plastic"};
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_red_co.paa"
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_red_co.paa",
       "Survivalists_Mods\gear\consumables\data\srp_propane_tankplastic_yellow_co.paa"
     };
 	};

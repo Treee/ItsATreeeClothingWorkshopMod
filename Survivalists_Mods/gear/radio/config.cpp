@@ -253,7 +253,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\radio\data\handheldradiosmall_white_co.paa"
 		};
   };
-
   // 2.5km range
   class SRP_PersonalRadioSmallGreen_Handheld: PersonalRadio
   {
@@ -274,7 +273,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\radio\data\handheldradiosmall_green_co.paa"
 		};
   };
-
   class SRP_PersonalRadioSmallBlue_Handheld: PersonalRadio
   {
 		scope=2;
@@ -294,7 +292,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\radio\data\handheldradiosmall_blue_co.paa"
 		};
   };
-
   // 5km range
   class SRP_PersonalRadio_Handheld: PersonalRadio
   {
@@ -318,7 +315,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\radio\data\handheldradio.rvmat"
 		};
   };
-
   // 7.5km range
   class SRP_PersonalRadio_LongRange: PersonalRadio
 	{
@@ -346,7 +342,6 @@ class CfgVehicles
 			"Survivalists_Mods\gear\radio\data\srp_longradio.rvmat"
 		};
 	};
-
   // sneaky radio
   class SRP_PersonalRadio_SneakyBear: PersonalRadio
   {
@@ -368,6 +363,28 @@ class CfgVehicles
 		};
   };
 
+  // sneaky radio
+  class SRP_PersonalRadio_Terminal: PersonalRadio
+  {
+		scope=2;
+		displayName="Radio Terminal";
+		descriptionShort="A radio terminal. Very long distance.";
+		model="Survivalists_Mods\gear\radio\srp_radioterminal.p3d";
+    range=20000;
+    rotationFlags=64;
+    itemSize[]={10,8};
+    repairableWithKits[]={};
+		repairCosts[]={};
+    inventorySlot[]={};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_radioterminal_co.paa"
+		};
+  };
   //-------------------------------- Music Tapes
 	class SRPRadio_CassetteTape_Base: Cassette
 	{
