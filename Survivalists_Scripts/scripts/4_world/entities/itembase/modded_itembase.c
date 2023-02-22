@@ -121,7 +121,11 @@ modded class ItemBase
       {
         // Print("Placing object: " + GetKitItemName());
         TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(this, GetKitItemName(), playerPB, position, orientation);
-        lambda.SetTransferParams(false, false);
+        if (CanTransferHPOnDeploy())
+          lambda.SetTransferParams(false, false);
+        else
+          lambda.SetTransferParams(false, false, false);
+        
         MiscGameplayFunctions.TurnItemIntoItemEx(playerPB, lambda);
       }
 		}
@@ -313,6 +317,10 @@ modded class ItemBase
   {
     return false;
   }
+  bool CanTransferHPOnDeploy()
+  {
+    return true;
+  }
   bool CanBeDeconstructed()
   {
     return false;
@@ -445,6 +453,11 @@ modded class ItemBase
   int GetResistorTemperaturCoeffcient()
   {
     return 0;
+  }
+//========================================= SELECTION FLAGGING FUNCTIONS
+  bool CanAcceptPropaneTanks()
+  {
+    return false;
   }
 
 };

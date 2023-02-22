@@ -26,6 +26,24 @@ modded class PortableGasStove
         return false;
       }
     }
+    ItemBase gasTank;
+    if (Class.CastTo(gasTank, GetItemOnSlot("GasCanister")))
+    {
+      return false;
+    }    
+    return super.CanPutInCargo(parent);
+	}
+};
+
+modded class PortableGasLamp
+{
+  override bool CanPutInCargo(EntityAI parent)
+	{
+    ItemBase gasTank;
+    if (Class.CastTo(gasTank, GetItemOnSlot("GasCanister")))
+    {
+      return false;
+    }    
     return super.CanPutInCargo(parent);
 	}
 };

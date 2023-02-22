@@ -90,6 +90,9 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterToolLargeTongsRecipe());
     craftableItems.Insert(RegisterToolHacksawRecipe());
     craftableItems.Insert(RegisterToolHandsawRecipe());
+    craftableItems.Insert(RegisterToolPropaneRedRecipe());
+    craftableItems.Insert(RegisterToolPropaneYellowRecipe());
+    craftableItems.Insert(RegisterToolPropaneWhiteRecipe());
     // MASKS
     craftableItems.Insert(RegisterMaskShatteredRecipe());
     // BULLETS
@@ -1417,6 +1420,42 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Fabric", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem RegisterToolPropaneRedRecipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_PropaneTank_Red", "Propane Tank - Red");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.COPPER, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.COPPER, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.IRON, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate4", SRP_COLOR.COPPER, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate5", SRP_COLOR.COPPER, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem RegisterToolPropaneYellowRecipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_PropaneTank_Yellow", "Propane Tank - Yellow");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.IRON, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.IRON, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.IRON, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate4", SRP_COLOR.IRON, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate5", SRP_COLOR.IRON, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem RegisterToolPropaneWhiteRecipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_PropaneTank_White", "Propane Tank - White");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.COPPER, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.IRON, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.BRONZE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate4", SRP_COLOR.IRON, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate5", SRP_COLOR.COPPER, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
 //===========================MASKS

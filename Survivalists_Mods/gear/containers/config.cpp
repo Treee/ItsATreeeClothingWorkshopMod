@@ -4992,7 +4992,13 @@ class CfgVehicles
 		physLayer="item_large";
 		weight=10000;
 		itemSize[]={10,8};
-    attachments[]={};
+    attachments[]=
+    {
+      "SRP_PropaneTank1",
+      "SRP_PropaneTank2",
+      "SRP_PropaneTank3",
+      "SRP_PropaneTank4",
+    };
     hiddenSelections[]=
     {
       "zbytek"
@@ -5003,7 +5009,7 @@ class CfgVehicles
     };
     class Cargo
 		{
-			itemsCargoSize[]={8,4};
+			itemsCargoSize[]={6,3};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
@@ -5032,7 +5038,7 @@ class CfgVehicles
 				initPhase=0;
 				animPeriod=1;
 			};
-		};
+		};    
     class Doors
 		{
 			class Doors1
@@ -5046,6 +5052,13 @@ class CfgVehicles
 			};
     };
 	};
+  class SRP_PropaneLocker_Basic_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Propane Locker";
+    descriptionShort="A kit that holds everything needed for a propane locker.";
+    projectionTypename="SRP_PropaneLocker_Basic";
+  };
   class SRP_PropaneLocker_Basic: SRP_PropaneLocker_Colorbase
   {
     scope=2;

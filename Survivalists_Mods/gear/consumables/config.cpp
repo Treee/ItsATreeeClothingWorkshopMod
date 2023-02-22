@@ -1925,7 +1925,7 @@ class CfgVehicles
 		model="Survivalists_Mods\gear\consumables\srp_propanetank.p3d";
 		weight=340;
 		weightPerQuantityUnit=4;
-		itemSize[]={4,3};
+		itemSize[]={3,3};
 		stackedUnit="w";
 		quantityBar=1;
 		varQuantityInit=20;
@@ -1941,7 +1941,11 @@ class CfgVehicles
     };
 		inventorySlot[]=
 		{
-			"GasCanister"
+			"GasCanister",      
+      "SRP_PropaneTank1",
+      "SRP_PropaneTank2",
+      "SRP_PropaneTank3",
+      "SRP_PropaneTank4"    
 		};
 		class DamageSystem
 		{
@@ -1984,6 +1988,7 @@ class CfgVehicles
 		weightPerQuantityUnit=4;
 		itemSize[]={10,8};
 		stackedUnit="w";
+    physLayer="item_large";
 		quantityBar=1;
 		varQuantityInit=20;
 		varQuantityMin=0;
@@ -2041,6 +2046,26 @@ class CfgVehicles
       "Survivalists_Mods\gear\consumables\data\srp_propane_tankplastic_yellow_co.paa"
     };
 	};
+  class SRP_PropaneTank_Yellow: SRP_PropaneTank_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek","plastic"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_yellow_co.paa",
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tankplastic_yellow_co.paa"
+    };
+	};
+  class SRP_PropaneTank_White: SRP_PropaneTank_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek","plastic"};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tank_white_co.paa",
+      "Survivalists_Mods\gear\consumables\data\srp_propane_tankplastic_yellow_co.paa"
+    };
+	};
   class SRP_PropaneTankLarge_DeerIsle: SRP_PropaneTankLarge_ColorBase
 	{
 		scope=2;
@@ -2049,5 +2074,5 @@ class CfgVehicles
     {
       "Survivalists_Mods\gear\consumables\data\srp_propane_tank_large_co.paa"
     };
-	}; 
+	};
 };

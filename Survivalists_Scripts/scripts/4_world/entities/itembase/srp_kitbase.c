@@ -12,7 +12,6 @@ class SRP_KitBase extends ItemBase
   {
     return true;
   }
-
   override bool CanAssignAttachmentsToQuickbar()
 	{
 		return false;
@@ -307,6 +306,30 @@ class SRP_DrugWorkbench_Kit extends SRP_KitBase{};
 class SRP_BrewingWorkbench_Alchemy_Kit extends SRP_KitBase{};
 class SRP_BrewingWorkbench_Ceramic_Kit extends SRP_KitBase{};
 class SRP_BrewingWorkbench_Copper_Kit extends SRP_KitBase{};
+
+class SRP_PropaneLocker_Basic_Kit extends SRP_KitBase{};
+
+class SRP_PersonalRadio_TerminalBasic_Kit extends SRP_KitBase
+{
+  bool CanTransferHPOnDeploy()
+  {
+    return false;
+  }
+};
+class SRP_PersonalRadio_TerminalEspen_Kit extends SRP_KitBase
+{
+  bool CanTransferHPOnDeploy()
+  {
+    return false;
+  }
+};
+class SRP_PersonalRadio_TerminalStag_Kit extends SRP_KitBase
+{
+  bool CanTransferHPOnDeploy()
+  {
+    return false;
+  }
+};
 
 // This crafted item is not placeable. Most of these represent intermediate kits
 class SRP_IntermediateCraftingKitBase extends ItemBase

@@ -8,8 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Radio",
-      "Survivalists_Mods"
+      "DZ_Radio",      
+      "Survivalists_Mods_Gear_Crafting"
 		};
 	};
 };
@@ -20,6 +20,9 @@ class CfgVehicles
   class PersonalRadio;
   class Cassette;
   class Inventory_Base;
+  class HouseNoDestruct;
+
+  class SRP_KitBase;
   // Look into this as a way to webhook radio stations
   // class Radio;
   // class My_Radio : Radio
@@ -362,20 +365,21 @@ class CfgVehicles
 			"Survivalists_Mods\gear\radio\data\teddybear_voodoo_co.paa"
 		};
   };
-
-  // sneaky radio
-  class SRP_PersonalRadio_Terminal: PersonalRadio
+  class SRP_PersonalRadio_Terminal: HouseNoDestruct
   {
-		scope=2;
+		scope=0;
 		displayName="Radio Terminal";
 		descriptionShort="A radio terminal. Very long distance.";
 		model="Survivalists_Mods\gear\radio\srp_radioterminal.p3d";
-    range=20000;
-    rotationFlags=64;
-    itemSize[]={10,8};
-    repairableWithKits[]={};
-		repairCosts[]={};
-    inventorySlot[]={};
+    oldpower=0;
+		simulation="statictransmitter";
+		inputRange=8;
+		range=20000;
+		useEntityHierarchy="true";
+		attachments[]=
+		{
+			"LargeBattery"
+		};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -383,6 +387,147 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\radio\data\srp_radioterminal_co.paa"
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			autoSwitchOff=1;
+			energyUsagePerSecond=0.2;
+			attachmentAction=1;
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500000;
+				};
+			};
+		};
+  };
+  class SRP_PersonalRadio_TerminalBasic: SRP_PersonalRadio_Terminal
+  {
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_radioterminal_co.paa"
+		};
+  };
+  class SRP_PersonalRadio_TerminalEspen: SRP_PersonalRadio_Terminal
+  {
+		scope=2;
+		descriptionShort="A radio terminal. Very long distance. Manufactured by Espen Electronics Division.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_radioterminal_espen_co.paa"
+		};
+  };
+  class SRP_PersonalRadio_TerminalStag: SRP_PersonalRadio_Terminal
+  {
+		scope=2;
+		descriptionShort="A radio terminal. Very long distance. Manufactured by STAG Engineering.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_radioterminal_stag_co.paa"
+		};
+  };
+  class SRP_PersonalRadio_TerminalBasic_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Radio Terminal";
+    descriptionShort="A kit that holds everything needed for a standalone radio temrinal.";
+    projectionTypename="SRP_PersonalRadio_TerminalBasic";
+  };
+  class SRP_PersonalRadio_TerminalEspen_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Radio Terminal - ESPEN";
+    descriptionShort="A kit that holds everything needed for a standalone radio temrinal. Manufactured by Espen Electronics Division.";
+    projectionTypename="SRP_PersonalRadio_TerminalEspen";
+  };
+  class SRP_PersonalRadio_TerminalStag_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Radio Terminal - STAG";
+    descriptionShort="A kit that holds everything needed for a standalone radio temrinal. Manufactured by STAG Engineering.";
+    projectionTypename="SRP_PersonalRadio_TerminalStag";
+  };
+  class SRP_PersonalRadio_Backpack: PersonalRadio
+  {
+		scope=0;
+		displayName="Field Radio";
+		descriptionShort="A radio field radio. Meant to communicate over long distances.";
+		model="Survivalists_Mods\gear\radio\srp_radiobackpack_g.p3d";
+    range=20000;
+    rotationFlags=64;
+    itemSize[]={10,8};
+    repairableWithKits[]={};
+		repairCosts[]={};
+    inventorySlot[]={"Back"};
+    attachments[]={"CarBattery"};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_radiobackpackbase_co.paa"
+		};
+    class ClothingTypes
+		{
+      male="Survivalists_Mods\gear\radio\srp_radiobackpack_m.p3d";
+			female="Survivalists_Mods\gear\radio\srp_radiobackpack_m.p3d";
+		};
+  };
+  class SRP_PersonalRadio_BackpackBasic: SRP_PersonalRadio_Backpack
+  {
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_radiobackpackbase_co.paa"
+		};
+  };
+  class SRP_PersonalRadio_BackpackEspen: SRP_PersonalRadio_Backpack
+  {
+		scope=2;
+		descriptionShort="A radio field radio. Meant to communicate over long distances. Manufactured by Espen Electronics Division.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_radiobackpackbase_espen_co.paa"
+		};
+  };
+  class SRP_PersonalRadio_BackpackStag: SRP_PersonalRadio_Backpack
+  {
+		scope=2;
+		descriptionShort="A radio field radio. Meant to communicate over long distances. Manufactured by STAG Engineering.";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\radio\data\srp_radiobackpackbase_stag_co.paa"
 		};
   };
   //-------------------------------- Music Tapes

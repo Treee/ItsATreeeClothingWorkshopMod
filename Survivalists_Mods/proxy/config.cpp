@@ -11,7 +11,7 @@ class CfgPatches
 
 class CfgSlots
 {
-  //================== Mask Wall
+//================== Mask Wall
   class Slot_SRP_Mask1
 	{
 		name="SRP_Mask1";
@@ -72,8 +72,7 @@ class CfgSlots
 		displayName="Mask";
 		ghostIcon="set:dayz_inventory image:mask";
 	};
-  //================== Tailoring
- 
+//================== Tailoring
   class Slot_SRP_SewingMachine
 	{
 		name="SRP_SewingMachine";
@@ -141,7 +140,6 @@ class CfgSlots
 		displayName="Animal Pelt";
 		ghostIcon="set:dayz_inventory image:animal_pelt";    
 	};
-
   class Slot_Tailoring_Leather
 	{
 		name="Tailoring_Leather";
@@ -179,7 +177,7 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:plates";
 	};
     
-  //================== MetalSmithing
+//================== MetalSmithing
   class Slot_SRP_PreciousStone1
   {
 		name="SRP_PreciousStone1";
@@ -310,7 +308,7 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:woodenlog";
     stackMax=5;
   };
-  //================== Construction Materials
+//================== Construction Materials
   class Slot_SRP_Construction_Mortar
 	{
 		name="SRP_Construction_Mortar";
@@ -395,7 +393,7 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:rope";
     stackMax=100; // max stack rope is 1
 	};
-  //================== PINS
+//================== PINS
   class Slot_SRP_Pin1
 	{
 		name="SRP_Pin1";
@@ -426,7 +424,32 @@ class CfgSlots
 		displayName="Collectible Pin";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
-  //==================== Books
+//================== propane tanks
+  class Slot_SRP_PropaneTank1
+	{
+		name="SRP_PropaneTank1";
+		displayName="Propane Tank";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	};  
+  class Slot_SRP_PropaneTank2
+	{
+		name="SRP_PropaneTank2";
+		displayName="Propane Tank";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	}; 
+  class Slot_SRP_PropaneTank3
+	{
+		name="SRP_PropaneTank3";
+		displayName="Propane Tank";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	}; 
+  class Slot_SRP_PropaneTank4
+	{
+		name="SRP_PropaneTank4";
+		displayName="Propane Tank";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	}; 
+//==================== Books
   class Slot_SRP_Book1
 	{
 		name="SRP_Book1";
@@ -548,7 +571,7 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:book";
 	};
 
-  //====================Tool Kit Slots
+//====================Tool Kit Slots
   class Slot_SRP_ToolKit_Hammer
 	{
 		name="SRP_ToolKit_Hammer";
@@ -610,7 +633,7 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:shoulderright";
 	};
 
-  //==========================Armband Hook
+//==========================Armband Hook
   class Slot_SRP_DisplayHook1
 	{
 		name="SRP_DisplayHook1";
@@ -731,7 +754,7 @@ class CfgSlots
 		displayName="Display Hook";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
-  //==========================TEDDY BEARS
+//==========================TEDDY BEARS
   class Slot_SRP_Teddy1
 	{
 		name="SRP_Teddy1";
@@ -774,7 +797,7 @@ class CfgSlots
 		displayName="Teddy Bear";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
-  //====================WEAPON CRAFTING SLOTS
+//====================WEAPON CRAFTING SLOTS
   class Slot_SRP_GunBarrel
 	{
 		name="SRP_GunBarrel";
@@ -817,7 +840,7 @@ class CfgSlots
 		displayName="Gun ButtStock";
 		ghostIcon="set:dayz_inventory image:buttstock";
 	};
-  //====================animal pelts
+//====================animal pelts
   class Slot_AnimalSkull
 	{
 		name="AnimalSkull";
@@ -885,7 +908,7 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:animal_pelt";
 	};
 
-  //===================== CUSTOM
+//===================== CUSTOM
   class Slot_Compass
 	{
 		name="Compass";
@@ -921,7 +944,7 @@ class CfgSlots
 		displayName="Dynamite";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
-
+//===================== DYE
   class Slot_SRP_DyeBottle1
 	{
 		name="SRP_DyeBottle1";
@@ -994,7 +1017,7 @@ class CfgSlots
 		displayName="Dye Bottle";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
-
+//===================== CASSETTE
   class Slot_Cassette
 	{
 		name="Cassette";
@@ -1151,6 +1174,7 @@ class CfgSlots
 		displayName="Cassette";
 		ghostIcon="set:dayz_inventory image:missing";
 	};
+//===================== MISC
   class Slot_blade
 	{
 		name="blade";
@@ -1586,7 +1610,7 @@ class CfgSlots
 		displayName="Altyn Visor";
 		ghostIcon="set:dayz_inventory image:gorkavisor";
   };
-
+//===================== POUCHES
   class Slot_SmallPouch1
   {
 		name="SmallPouch1";
@@ -1662,7 +1686,7 @@ class CfgSlots
     stackMax="30";
   };
 
-  //--------------------------- TOOLS
+//--------------------------- TOOLS
   class Slot_SRP_Tool1
   {
 		name="SRP_Tool1";
@@ -1718,7 +1742,7 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
   };
   
-  // ------------------------ CARDS
+// ------------------------ CARDS
   class Slot_CardHand1
   {
 		name="CardHand1";
@@ -2090,7 +2114,7 @@ class CfgSlots
 		displayName="Ace of Hearts";
 		ghostIcon="set:dayz_inventory image:missing";
   };
-  //=====================
+//=====================HERBALISM
   class Slot_SRP_Pestle
   {
 		name="SRP_Pestle";
@@ -2139,7 +2163,7 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=200;
   };
-
+//===================== SKELLY
   class Slot_SRP_SkeletonSkull
   {
 		name="SRP_SkeletonSkull";
@@ -2281,7 +2305,7 @@ class CfgSlots
     stackMax=1;
 	};
   
-  //============================================= CHESS PIECES
+//============================================= CHESS PIECES
   class Slot_SRP_Chess1
 	{
 		name="SRP_Chess1";
@@ -2691,6 +2715,7 @@ class CfgNonAIVehicles
 		inventorySlot[]={"Fishingrod"};
 		model="Survivalists_Mods\proxy\srp_fishingrod_proxy.p3d";
 	};
+//===================== pins
   class Proxysrp_pin1_proxy: ProxyAttachment
 	{
 		scope=2;
@@ -2721,7 +2746,33 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_Pin5"};
 		model="Survivalists_Mods\proxy\srp_pin5_proxy.p3d";
 	};
+//===================== propane tanks
+  class Proxysrp_propanetank1_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_PropaneTank1"};
+		model="Survivalists_Mods\proxy\srp_propanetank1_proxy.p3d";
+	};
+  class Proxysrp_propanetank2_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_PropaneTank2"};
+		model="Survivalists_Mods\proxy\srp_propanetank2_proxy.p3d";
+	};
+  class Proxysrp_propanetank3_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_PropaneTank3"};
+		model="Survivalists_Mods\proxy\srp_propanetank3_proxy.p3d";
+	};
+  class Proxysrp_propanetank4_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_PropaneTank4"};
+		model="Survivalists_Mods\proxy\srp_propanetank4_proxy.p3d";
+	};
 
+//===================== mask wall
   class Proxysrp_mask1_proxy: ProxyAttachment
 	{
 		scope=2;
@@ -2782,7 +2833,7 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_Mask10"};
 		model="Survivalists_Mods\proxy\srp_mask10_proxy.p3d";
 	};
-
+//===================== books
   class Proxysrp_book1_proxy: ProxyAttachment
 	{
 		scope=2;
@@ -2903,7 +2954,7 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_Book20"};
 		model="Survivalists_Mods\proxy\srp_book20_proxy.p3d";
 	};
-
+//===================== display hooks
   class Proxysrp_displayhook_proxy1: ProxyAttachment
 	{
 		scope=2;
@@ -2964,7 +3015,7 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_DisplayHook10"};
 		model="Survivalists_Mods\proxy\srp_displayhook_proxy10.p3d";
 	};
-    class Proxysrp_displayhook_proxy11: ProxyAttachment
+  class Proxysrp_displayhook_proxy11: ProxyAttachment
 	{
 		scope=2;
 		inventorySlot[]={"SRP_DisplayHook11"};
@@ -3024,7 +3075,7 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_DisplayHook20"};
 		model="Survivalists_Mods\proxy\srp_displayhook_proxy20.p3d";
 	};
-
+//===================== teddy bear
   class Proxysrp_teddybear_proxy1: ProxyAttachment
 	{
 		scope=2;
@@ -3067,7 +3118,7 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_Teddy7"};
 		model="Survivalists_Mods\proxy\srp_teddybear_proxy7.p3d";
 	};
-
+//===================== MISC
   class ProxyCompass_proxy: ProxyAttachment
 	{
 		scope=2;
@@ -3179,7 +3230,7 @@ class CfgNonAIVehicles
 		inventorySlot[]={"firstaidkit"};
 		model="\DZ\gear\containers\FirstAidKit.p3d";
 	};
-
+//===================== dye/alchemy
   class Proxysrp_dyebottle1_proxy: ProxyAttachment //same as p3d name
   {
     scope=2;
@@ -3264,7 +3315,6 @@ class CfgNonAIVehicles
     inventorySlot[]={"SRP_Flower1"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_flower1_proxy.p3d"; //proxy path 
   };
-
   class Proxysrp_crushedpowder1_proxy: ProxyAttachment //same as p3d name
   {
     scope=2;
@@ -3295,7 +3345,7 @@ class CfgNonAIVehicles
     inventorySlot[]={"SRP_CrushedPowder5"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_crushedpowder5_proxy.p3d"; //proxy path 
   };
-
+//===================== skelly
   class Proxysrp_skeletonskull_proxy: ProxyAttachment //same as p3d name
   {
     scope=2;
@@ -3338,7 +3388,7 @@ class CfgNonAIVehicles
     inventorySlot[] = {"magazine3"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_pouch_magazine_proxy1.p3d"; //proxy path 
   };
-
+//===================== patches / pouches
   class Proxysrp_patch_proxy: ProxyAttachment //same as p3d name
   {
     scope = 2;
@@ -3424,7 +3474,7 @@ class CfgNonAIVehicles
     inventorySlot[] = {"LargePouch5"}; // same as slot name 
     model = "Survivalists_Mods\proxy\srp_largepouch_proxy5.p3d"; //proxy path 
   };
-
+//===================== cards
   class Proxysrp_cardhand_proxy1: ProxyAttachment //same as p3d name
   {
     scope = 2;
@@ -3517,7 +3567,7 @@ class CfgNonAIVehicles
     inventorySlot[]={"SRP_Medical3"}; // same as slot name 
     model="Survivalists_Mods\proxy\srp_medical3_proxy.p3d"; //proxy path 
   };
-
+//===================== chess
   class Proxysrp_chess1_proxy: ProxyAttachment
 	{
 		scope=2;
