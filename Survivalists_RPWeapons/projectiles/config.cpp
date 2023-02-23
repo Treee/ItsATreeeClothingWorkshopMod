@@ -13,37 +13,48 @@ class CfgPatches
 };
 class CfgAmmo
 {
-  class Bullet_12GaugePellets;
   class Shotgun_Base;
   class Bullet_Base;
 
-  class Bullet_22: Bullet_Base
+  class Bullet_12GaugePellets: Shotgun_Base
   {
-    class DamageApplied
-    {
-      type="Projectile";
-      dispersion=0;
-      bleedThreshold=1;
-      defaultDamageOverride[]=
-      {
-          {0.69999999,1}
-      };
-      class Health
-      {
-          damage=35;
-      };
-      class Blood
-      {
-          damage=100;
-      };
-      class Shock
-      {
-          damage=20;
-      };
-    };
+		damageBarrel=300;
+  };
+  class Bullet_12GaugeSlug: Bullet_Base
+  {
+		damageBarrel=300;
+  };
+  class Bullet_12GaugeRubberSlug: Bullet_12GaugeSlug
+  {
+		damageBarrel=240;
+  };
+  class Bullet_12GaugeBeanbag: Bullet_12GaugeSlug
+  {
+		damageBarrel=250;
+  };
+  class Bullet_556x45: Bullet_Base
+  {
+		damageBarrel=125;
+  };
+  class Bullet_545x39: Bullet_Base
+  {
+		damageBarrel=107;
+  };
+  class Bullet_762x54: Bullet_Base
+  {
+		damageBarrel=250;
+  };
+  class Bullet_308Win: Bullet_Base
+  {
+		damageBarrel=250;
+  };
+  class Bullet_762x39: Bullet_Base
+  {
+		damageBarrel=250;
   };
   class Bullet_45ACP: Bullet_Base
   {
+    damageBarrel=95;
     class DamageApplied
     {
       type="Projectile";
@@ -67,8 +78,39 @@ class CfgAmmo
       };
     };
   };
+  class Bullet_357: Bullet_Base
+  {
+		damageBarrel=95;
+  };
+  class Bullet_9x19: Bullet_Base
+  {
+		damageBarrel=80;
+    class DamageApplied
+    {
+      type="Projectile";
+      dispersion=0;
+      bleedThreshold=1;
+      defaultDamageOverride[]=
+      {
+        {0.94999999,1}
+      };
+      class Health
+      {
+        damage=55;
+      };
+      class Blood
+      {
+        damage=100;
+      };
+      class Shock
+      {
+        damage=40;
+      };
+    };
+  };
   class Bullet_380: Bullet_Base
   {
+		damageBarrel=75;
     class DamageApplied
     {
       type="Projectile";
@@ -88,8 +130,9 @@ class CfgAmmo
       };
     };
   };
-  class Bullet_9x19: Bullet_Base
+  class Bullet_22: Bullet_Base
   {
+		damageBarrel=55;
     class DamageApplied
     {
       type="Projectile";
@@ -97,22 +140,34 @@ class CfgAmmo
       bleedThreshold=1;
       defaultDamageOverride[]=
       {
-          {0.94999999,1}
+        {0.69999999,1}
       };
       class Health
       {
-          damage=55;
+        damage=35;
       };
       class Blood
       {
-          damage=100;
+        damage=100;
       };
       class Shock
       {
-          damage=40;
+        damage=20;
       };
     };
-	};
+  };
+  class Bullet_9x39AP: Bullet_Base
+  {
+		damageBarrel=125;
+  };
+  class Bullet_9x39: Bullet_Base
+  {
+		damageBarrel=125;
+  };
+  class Bullet_40mm_Base: Bullet_Base
+  {
+		damageBarrel=250;
+  };
 
   //----------------------- CUSTOM STUFF
   class Bullet_12Nail: Bullet_12GaugePellets
@@ -131,7 +186,7 @@ class CfgAmmo
 		initSpeed=450;
 		typicalSpeed=450;
 		airFriction=-0.0067500002;
-		damageBarrel=300;
+		damageBarrel=150;
 		dispersion=0.050000001;
 		projectilesCount=12;
 		weight=0.0049999999;
