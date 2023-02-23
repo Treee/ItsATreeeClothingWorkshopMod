@@ -56,8 +56,8 @@ class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
       return false;
 
     if (casings.GetColor() != "brass")
-      return false;
-    
+      return false;    
+
     return true;
   }
 
@@ -79,9 +79,11 @@ class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
     vector consumption = GetIngredientConsumptionValues(ammoType);
     float plateHP = -consumption[0];
     float gunpowderQuantity = -consumption[1];
-    float bulletsQuantity = -consumption[2];
-
+    float bulletsQuantity = -consumption[2];    
     casings.AddHealth(plateHP);
+    if (casings.GetHealth() < 10)
+      casings.Delete();
+
     gunpowder.AddQuantity(gunpowderQuantity);
     bullets.AddQuantity(bulletsQuantity);
   }
