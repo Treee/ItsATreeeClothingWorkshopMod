@@ -29,7 +29,34 @@ class CfgVehicles
   class BarrelHoles_ColorBase;
   class SRP_KitBase;
 
+  class Clothing;
+
   //----------------------- MOD OVERRIDES
+  class riflesling_colorbase_mung: Clothing
+  {
+    scope=0;
+  };
+  class riflesling_2_colorbase_mung: riflesling_colorbase_mung
+  {
+    scope=0;
+  };
+  class riflesling_2_black_mung: riflesling_colorbase_mung
+  {
+    scope=0;
+  };
+  class riflesling_black_mung: riflesling_colorbase_mung
+  {
+    scope=0;
+  };
+  class meleesling_colorbase_mung: Clothing
+  {
+    scope=0;
+  };
+  class meleesling_black_mung: meleesling_colorbase_mung
+  {
+    scope=0;
+  };
+
 
   // ----------------------  BASE GAME OVERRIDES
   // the only change here is setting the build base action to use shovels
