@@ -2534,7 +2534,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Characters\vests\data\SRP_Map_Pouch_Tan_CO.paa"
-		};	
+		};
+    rootClassName="SRP_Map_Pouch";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2568,7 +2575,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Characters\vests\data\SRP_Pistol_MagPouch_Tan_CO.paa"
-		};	
+		};
+    rootClassName="SRP_Pistol_Mag_Pouch";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2601,7 +2615,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Characters\vests\data\SRP_IFAK_Tan_CO.paa"
-		};	
+		};
+    rootClassName="SRP_IFAK";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2634,7 +2655,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Characters\vests\data\SRP_AR_MagPouch_1_Tan_CO.paa"
-		};	
+		};
+    rootClassName="SRP_Magazine_Pouch_1";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2665,7 +2693,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Characters\vests\data\SRP_Empty_MagPouch_Tan_CO.paa"
-		};	
+		};
+    rootClassName="SRP_Empty_MagPouch";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2701,7 +2736,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Characters\vests\data\srp_pouchesvest_tan_co.paa"
-		};	
+		};
+    rootClassName="SRP_UtilityPouch";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2739,6 +2781,13 @@ class CfgVehicles
 		{
 			"Survivalists_Characters\vests\data\srp_pouchesvest_Heavy_Tan_CO.paa"
 		};
+    rootClassName="SRP_HeavyPouch";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2776,6 +2825,13 @@ class CfgVehicles
 		{
 			"Survivalists_Characters\vests\data\srp_pouchesvest_tan_co.paa"
 		};
+    rootClassName="SRP_MediumPouch";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2817,6 +2873,13 @@ class CfgVehicles
 		{
 			"Survivalists_Characters\vests\data\tacticalbelt_Tan_co.paa"
 		};
+    rootClassName="SRP_TacoPouch";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Tan",
+    };
     class DamageSystem
 		{
 			class GlobalHealth
