@@ -24,8 +24,7 @@ class Deconstruct_PlacedObjectKit extends RecipeBase
 		//ingredient 1 add any item that has a kit in this list so it can be dismantled.
     InsertIngredient(0,"Inventory_Base");
     InsertIngredient(0,"Container_Base");
-    InsertIngredient(0,"BarrelHoles_ColorBase");    
-    InsertIngredient(0,"SRP_Furniture_Gazebo");    
+    InsertIngredient(0,"BarrelHoles_ColorBase");  
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -123,8 +122,7 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
 		//ingredient 1 add any item that has a kit in this list so it can be dismantled.
     InsertIngredient(0,"Inventory_Base");
     InsertIngredient(0,"Container_Base");
-    InsertIngredient(0,"BarrelHoles_ColorBase");    
-    InsertIngredient(0,"SRP_Furniture_Gazebo");    
+    InsertIngredient(0,"BarrelHoles_ColorBase");
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
