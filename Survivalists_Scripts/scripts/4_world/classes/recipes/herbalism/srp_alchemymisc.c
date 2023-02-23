@@ -130,8 +130,8 @@ class Craft_SRP_CraftingMisc_DrugTestKit extends Craft_SRP_CraftingMisc_Herbalis
     bool canCraft = false;
     if (mortarPestle && mortarPestle.HasAllPowderSlotsFilled())
     {
-      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder1",{"ribwort", "dock","yarrow"},{125,50,50}, reduceAmount);        
-      canCraft |= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder2",{"ribwort", "rosemary", "mint"},{150,150,50}, reduceAmount);        
+      canCraft |= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder1",{"ribwort", "dock","yarrow"},{125,50,50}, reduceAmount);        
+      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder2",{"ribwort", "rosemary", "mint"},{150,150,50}, reduceAmount);        
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder3",{"yarrow", "greenamanita", "valerian"},{150,125,50}, reduceAmount);        
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder4",{"greenamanita", "brookmint","dock"},{50,75,50}, reduceAmount);
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder5",{"mint", "dock", "valerian"},{50,20,35}, reduceAmount);        
@@ -159,9 +159,9 @@ class Craft_SRP_CraftingMisc_FacePaint extends Craft_SRP_CraftingMisc_HerbalismB
     bool canCraft = false;
     if (mortarPestle && mortarPestle.HasAllPowderSlotsFilled())
     {
-      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder1",{"yarrow", "greenamanita", "valerian"},{150,125,50}, reduceAmount);        
+      canCraft |= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder1",{"yarrow", "greenamanita", "valerian"},{150,125,50}, reduceAmount);        
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder2",{"mint", "dock", "valerian"},{50,20,35}, reduceAmount);        
-      canCraft |= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder3",{"ribwort", "rosemary", "mint"},{150,150,50}, reduceAmount);        
+      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder3",{"ribwort", "rosemary", "mint"},{150,150,50}, reduceAmount);        
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder4",{"ribwort", "dock","yarrow"},{125,50,50}, reduceAmount);        
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder5",{"greenamanita", "brookmint","dock"},{50,75,50}, reduceAmount);
     }

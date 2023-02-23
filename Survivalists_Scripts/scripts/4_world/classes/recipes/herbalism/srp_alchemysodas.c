@@ -221,11 +221,11 @@ class Craft_SRP_Beer_Speedy extends Craft_SRP_CraftingSoda_HerbalismBase
     bool canCraft = false;
     if (mortarPestle && mortarPestle.HasAllPowderSlotsFilled())
     {
-      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder1",{"mint", "greenamanita", "valerian"},{50,20,35}, reduceAmount);        
+      canCraft |= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder1",{"mint", "greenamanita", "valerian"},{50,20,35}, reduceAmount);        
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder2",{"mint", "brookmint", "dock"},{150,125,50}, reduceAmount);        
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder3",{"ribwort", "dock","yarrow"},{125,50,50}, reduceAmount);        
       canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder4",{"greenamanita", "brookmint","dock"},{50,75,50}, reduceAmount);
-      canCraft |= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder5",{"dock", "valerian", "brookmint"},{150,150,50}, reduceAmount);        
+      canCraft &= mortarPestle.HasSlotFilledWithCorrectPowder("SRP_CrushedPowder5",{"dock", "valerian", "brookmint"},{150,150,50}, reduceAmount);        
     }
     return canCraft;
   }
