@@ -1324,7 +1324,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Military Case Kit";
 		descriptionShort="A Military Case Kit";
-		model="Survivalists_Mods\gear\containers\militarycasesmall.p3d";
+		projectionTypename="SRP_MilitaryCaseSmall";
 	};
   class SRP_MilitaryCaseSmall: Container_Base // BP_mil_case
 	{
@@ -1386,7 +1386,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Small Military Case Kit";
 		descriptionShort="A Military Case Kit";
-		model="Survivalists_Mods\gear\containers\militarycasesmallblack.p3d";
+		projectionTypename="SRP_MilitaryCaseSmallBlack";
 	};
   class SRP_MilitaryCaseSmallBlack: Container_Base // new
 	{
@@ -1447,7 +1447,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Medium Military Case Kit";
 		descriptionShort="A Military Case Kit";
-		model="Survivalists_Mods\gear\containers\militarycasemedium.p3d";
+		projectionTypename="SRP_MilitaryCaseMedium";
 	};
   class SRP_MilitaryCaseMedium: Container_Base // new
 	{
@@ -1509,7 +1509,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Long Military Case Kit";
 		descriptionShort="A Military Case Kit";
-		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+		projectionTypename="SRP_MilitaryCaseLong";
 	};
   class SRP_MilitaryCaseLong: Container_Base // new
 	{
@@ -1571,7 +1571,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Long Military Case Kit - Blue";
 		descriptionShort="A Military Case Kit";
-		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+		projectionTypename="SRP_MilitaryCaseLongBlue";
 	};
   class SRP_MilitaryCaseLongBlue: Container_Base // new
 	{
@@ -1641,7 +1641,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Long Military Case Kit - Tan";
 		descriptionShort="A Military Case Kit";
-		model="Survivalists_Mods\gear\containers\militarycaselong.p3d";
+		projectionTypename="SRP_MilitaryCaseLongTan";
 	};
   class SRP_MilitaryCaseLongTan: Container_Base // new
 	{
@@ -1711,7 +1711,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Large Military Case Kit";
 		descriptionShort="A Military Case Kit";
-		model="Survivalists_Mods\gear\containers\militarycaselarge.p3d";
+		projectionTypename="SRP_MilitaryCaseLarge";
 	};
   class SRP_MilitaryCaseLarge: Container_Base // new
 	{
@@ -1831,7 +1831,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Cardboard Box Kit";
 		descriptionShort="A Cardboard Box Kit";
-    model="Survivalists_Mods\gear\containers\srp_cardboardbox_kit.p3d";
+    projectionTypename="SRP_Cardboardbox";
 	};
 
   class SRP_Cardboardbox: Container_Base // new

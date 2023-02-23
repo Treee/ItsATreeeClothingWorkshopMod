@@ -2668,7 +2668,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Chess Game Kit";
 		descriptionShort="A kit used to create pieces for a chess game";
-		model="\dz\gear\cooking\log01.p3d";
 		itemSize[]={3,1};
 	};
   class SRP_ChessBoard_ColorBase: Inventory_Base  
