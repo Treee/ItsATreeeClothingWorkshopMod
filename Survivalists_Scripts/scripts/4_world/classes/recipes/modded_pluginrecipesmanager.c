@@ -623,9 +623,6 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_BreakDownRifleCoreLarge_Expert);
       RegisterRecipe(new SRP_BreakDownRifleCoreMedium_Expert);
 
-      RegisterRecipe(new SRP_Craft_AmmoCasing_Crude);
-      RegisterRecipe(new SRP_Craft_AmmoCasing_Advanced);
-
       RegisterRecipe(new Craft_SRP_WoodenGunAttachmentKit);
       // RegisterRecipe(new Craft_SRP_WoodenGunAttachmentKit_Body);
       RegisterRecipe(new Craft_SRP_WoodenGunAttachmentKit_Grip);
