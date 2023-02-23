@@ -1,4 +1,4 @@
-class SRP_AdvancedWorkbench extends SRP_DeployableContainer_Base
+class SRP_AdvancedWorkbench extends SRP_Container_Base
 {
   override void SetActions()
 	{

@@ -374,7 +374,14 @@ class CfgVehicles
 		};
 	};
 //==========================================AMMO CRAFTING
-	class SRP_AdvancedWorkbench: Container_Base
+	class SRP_AdvancedWorkbench_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Ammo Workbench Kit";
+		descriptionShort="All the contents required to build an ammo crafting workbench.";
+    projectionTypename="SRP_AdvancedWorkbench";
+	};
+  class SRP_AdvancedWorkbench: Container_Base
 	{
 		scope=2;
 		displayName="Ammo Workbench";
