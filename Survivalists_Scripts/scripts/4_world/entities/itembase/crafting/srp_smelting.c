@@ -658,4 +658,18 @@ class SRP_Coinage_BrassBlank extends SRP_Coinage_ColorBase
       }
     }
   }
+  override bool IsSmeltable()
+  {
+    return true;
+  }
+  override TStringArray GetSmeltableOptions()
+  {
+    return {
+      "SRP_ForgeIngot_Brass"
+    };
+  }
+  override int GetSmeltableYield()
+  {
+    return 1;
+  }
 };
