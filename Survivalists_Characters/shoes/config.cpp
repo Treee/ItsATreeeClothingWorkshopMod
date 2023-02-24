@@ -153,6 +153,13 @@ class CfgVehicles
       "SURPAT",
       "MARPATWinter",
       "EMP6",
+      "MC_Black",
+      "ChocChip",
+      "ERDL",
+      "M05",
+      "MARPAT",
+      "TigerStripe",
+      "CADPAT",
     };
   };
   class DressShoes_ColorBase: Clothing
