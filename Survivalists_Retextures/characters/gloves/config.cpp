@@ -78,9 +78,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\Denglove_green.paa",
-			"Survivalists_Retextures\characters\gloves\data\Denglove_green.paa",
-			"Survivalists_Retextures\characters\gloves\data\Denglove_green.paa"
+			"Survivalists_Retextures\characters\gloves\data\Denglove_green_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\Denglove_green_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\Denglove_green_co.paa"
 		};
 	};
 	class OMNOGloves_Black: OMNOGloves_ColorBase
@@ -88,9 +88,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\denglove.paa",
-			"Survivalists_Retextures\characters\gloves\data\denglove.paa",
-			"Survivalists_Retextures\characters\gloves\data\denglove.paa"
+			"Survivalists_Retextures\characters\gloves\data\denglove_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\denglove_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\denglove_co.paa"
 		};
 	};
 
@@ -160,9 +160,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\TacticalG01.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG01.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG01.paa"
+			"Survivalists_Retextures\characters\gloves\data\TacticalG01_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG01_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG01_co.paa"
 		};
 	};
 	class TacticalGloves_ATAC: TacticalGloves_ColorBase
@@ -170,9 +170,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\TacticalG04.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG04.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG04.paa"
+			"Survivalists_Retextures\characters\gloves\data\TacticalG04_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG04_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG04_co.paa"
 		};
 	};
 	class TacticalGloves_ATACSFG: TacticalGloves_ColorBase
@@ -180,9 +180,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\TacticalG38.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG38.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG38.paa"
+			"Survivalists_Retextures\characters\gloves\data\TacticalG38_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG38_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG38_co.paa"
 		};
 	};
 	class TacticalGloves_USNAOR2: TacticalGloves_ColorBase
@@ -190,9 +190,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\TacticalG09.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG09.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG09.paa"
+			"Survivalists_Retextures\characters\gloves\data\TacticalG09_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG09_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG09_co.paa"
 		};
 	};
 	class TacticalGloves_USNAOR1: TacticalGloves_ColorBase
@@ -200,9 +200,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\TacticalG10.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG10.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG10.paa"
+			"Survivalists_Retextures\characters\gloves\data\TacticalG10_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG10_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG10_co.paa"
 		};
 	};
 	class TacticalGloves_SURPAT: TacticalGloves_ColorBase
@@ -210,9 +210,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\TacticalG12.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG12.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG12.paa"
+			"Survivalists_Retextures\characters\gloves\data\TacticalG12_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG12_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG12_co.paa"
 		};
 	};
 	class TacticalGloves_MARPATWinter: TacticalGloves_ColorBase
@@ -220,9 +220,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\TacticalG19.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG19.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG19.paa"
+			"Survivalists_Retextures\characters\gloves\data\TacticalG19_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG19_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG19_co.paa"
 		};
 	};
 	class TacticalGloves_EMP6: TacticalGloves_ColorBase
@@ -230,9 +230,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\gloves\data\TacticalG57.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG57.paa",
-			"Survivalists_Retextures\characters\gloves\data\TacticalG57.paa"
+			"Survivalists_Retextures\characters\gloves\data\TacticalG57_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG57_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\TacticalG57_co.paa"
 		};
 	};
   class TacticalGloves_Officer: TacticalGloves_ColorBase
