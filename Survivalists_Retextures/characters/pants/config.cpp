@@ -424,17 +424,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\cargoPants_CAD_CO.paa"
 		};
 	};
-	class CargoPants_ERDL2: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ERDL_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ERDL_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ERDL_CO.paa"
-		};
-	};
 	class CargoPants_M05: CargoPants_ColorBase
 	{
 		scope=2;
@@ -477,83 +466,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\cargoPants_TS_CO.paa",
 			"Survivalists_Retextures\characters\pants\data\cargoPants_TS_CO.paa",
 			"Survivalists_Retextures\characters\pants\data\cargoPants_TS_CO.paa"
-		};
-	};
-	class CargoPants_ChocChip2: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ChocChip2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ChocChip2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ChocChip2_CO.paa"
-		};
-	};
-	class CargoPants_CADPAT2: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_CAD2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_CAD2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_CAD2_CO.paa"
-		};
-	};
-	class CargoPants_ERDL3: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ERDL2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ERDL2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ERDL2_CO.paa"
-		};
-	};
-	class CargoPants_M052: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_M052_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_M052_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_M052_CO.paa"
-		};
-	};
-	class CargoPants_MARPAT2: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_MPat2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_MPat2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_MPat2_CO.paa"
-		};
-	};
-	class CargoPants_MulticamBlack2: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_MC_Black2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_MC_Black2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_MC_Black2_CO.paa"
-		};
-	};
-	class CargoPants_TigerStripe2: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_TS2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_TS2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_TS2_CO.paa"
 		};
 	};
 	class HunterPants_Black: HunterPants_ColorBase
@@ -822,17 +734,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_erdl_co.paa"
 		};
 	};
-  class GorkaPants_ERDL2: GorkaPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.75;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_ERDL_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_ERDL_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_ERDL_CO.paa"
-		};
-	};
 	class GorkaPants_Snow: GorkaPants_ColorBase
 	{
 		scope=2;
@@ -873,17 +774,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\SRP_GorkaPants_MC_Black_co.paa"
 		};
 	};
-  class GorkaPants_MulticamBlack2: GorkaPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.75;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_MC_Black_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_MC_Black_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_MC_Black_CO.paa"
-		};
-	};
   class GorkaPants_CAD: GorkaPants_ColorBase
 	{
 		scope=2;
@@ -906,7 +796,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\gorka_pants_ChocChip_CO.paa"
 		};
 	};
-  
   class GorkaPants_M05: GorkaPants_ColorBase
 	{
 		scope=2;
@@ -929,41 +818,17 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\gorka_pants_MARPAT_CO.paa"
 		};
 	};
-  class GorkaPants_TigerStripe1: GorkaPants_ColorBase
+  class GorkaPants_TigerStripe: GorkaPants_ColorBase
 	{
 		scope=2;
 		visibilityModifier=0.75;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS1_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS1_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS1_CO.paa"
+			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS_CO.paa",
+			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS_CO.paa",
+			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS_CO.paa"
 		};
 	};
-  class GorkaPants_TigerStripe2: GorkaPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.75;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS2_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS2_CO.paa"
-		};
-	};
-  class GorkaPants_TigerStripe3: GorkaPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.75;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS3_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS3_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\gorka_pants_TS3_CO.paa"
-		};
-	};
-
-
   class GorkaPants_STAG: GorkaPants_ColorBase
 	{
 		scope=2;

@@ -1776,14 +1776,14 @@ class CfgVehicles
 	{
 		scope = 2;
 		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"Benji_Retextures\data\srp_patrolcap_HK_co.paa"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_HK_co.paa"};
 	};
-  class BaseballCap_MilitaryPatrol_Hello_Kitty: BaseballCap_MilitaryPatrolTan_Backwards
-	{
-		scope = 2;
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"Benji_Retextures\data\srp_patrolcap_HK_co.paa"};
-	};
+  // class BaseballCap_MilitaryPatrol_Hello_Kitty_Backwards: BaseballCap_MilitaryPatrolTan_Backwards
+	// {
+	// 	scope = 2;
+	// 	hiddenSelections[] = {"zbytek"};
+	// 	hiddenSelectionsTextures[] = {"Benji_Retextures\data\srp_patrolcap_HK_co.paa"};
+	// };
 
   class SRP_Cowboy_Hat_Carl_Brown: SRP_Cowboy_Hat_Carl
 	{

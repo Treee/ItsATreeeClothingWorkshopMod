@@ -45,9 +45,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\aliceb01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb01.paa"
+			"Survivalists_Retextures\characters\backpacks\data\aliceb01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb01_co.paa"
 		};
 	};
 	class AliceBag_ATAC: AliceBag_ColorBase
@@ -55,9 +55,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\aliceb04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb04.paa"
+			"Survivalists_Retextures\characters\backpacks\data\aliceb04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb04_co.paa"
 		};
 	};
 	class AliceBag_ATACSFG: AliceBag_ColorBase
@@ -65,9 +65,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\aliceb38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb38.paa"
+			"Survivalists_Retextures\characters\backpacks\data\aliceb38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb38_co.paa"
 		};
 	};
 	class AliceBag_USNAOR2: AliceBag_ColorBase
@@ -75,9 +75,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\aliceb09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb09.paa"
+			"Survivalists_Retextures\characters\backpacks\data\aliceb09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb09_co.paa"
 		};
 	};
 	class AliceBag_USNAOR1: AliceBag_ColorBase
@@ -85,9 +85,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\aliceb10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb10.paa"
+			"Survivalists_Retextures\characters\backpacks\data\aliceb10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb10_co.paa"
 		};
 	};
 	class AliceBag_SURPAT: AliceBag_ColorBase
@@ -95,9 +95,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\aliceb12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb12.paa"
+			"Survivalists_Retextures\characters\backpacks\data\aliceb12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb12_co.paa"
 		};
 	};
 	class AliceBag_MARPATWinter: AliceBag_ColorBase
@@ -105,9 +105,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\aliceb19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb19.paa"
+			"Survivalists_Retextures\characters\backpacks\data\aliceb19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb19_co.paa"
 		};
 	};
 	class AliceBag_EMP6: AliceBag_ColorBase
@@ -115,9 +115,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\aliceb57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\aliceb57.paa"
+			"Survivalists_Retextures\characters\backpacks\data\aliceb57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\aliceb57_co.paa"
 		};
 	};
 
@@ -132,9 +132,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\denbp.paa",
-			"Survivalists_Retextures\characters\backpacks\data\denbp.paa",
-			"Survivalists_Retextures\characters\backpacks\data\denbp.paa"
+			"Survivalists_Retextures\characters\backpacks\data\denbp_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\denbp_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\denbp_co.paa"
 		};
 	};
 	class AssaultBag_MTP: AssaultBag_ColorBase
@@ -142,9 +142,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\m53_01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_01.paa"
+			"Survivalists_Retextures\characters\backpacks\data\m53_01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_01_co.paa"
 		};
 	};
 	class AssaultBag_ATAC: AssaultBag_ColorBase
@@ -152,9 +152,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\m53_04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_04.paa"
+			"Survivalists_Retextures\characters\backpacks\data\m53_04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_04_co.paa"
 		};
 	};
 	class AssaultBag_ATACSFG: AssaultBag_ColorBase
@@ -162,9 +162,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\m53_38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_38.paa"
+			"Survivalists_Retextures\characters\backpacks\data\m53_38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_38_co.paa"
 		};
 	};
 	class AssaultBag_USNAOR2: AssaultBag_ColorBase
@@ -172,9 +172,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\m53_09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_09.paa"
+			"Survivalists_Retextures\characters\backpacks\data\m53_09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_09_co.paa"
 		};
 	};
 	class AssaultBag_USNAOR1: AssaultBag_ColorBase
@@ -182,9 +182,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\m53_10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_10.paa"
+			"Survivalists_Retextures\characters\backpacks\data\m53_10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_10_co.paa"
 		};
 	};
 	class AssaultBag_SURPAT: AssaultBag_ColorBase
@@ -192,9 +192,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\m53_12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_12.paa"
+			"Survivalists_Retextures\characters\backpacks\data\m53_12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_12_co.paa"
 		};
 	};
 	class AssaultBag_MARPATWinter: AssaultBag_ColorBase
@@ -202,9 +202,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\m53_19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_19.paa"
+			"Survivalists_Retextures\characters\backpacks\data\m53_19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_19_co.paa"
 		};
 	};
 	class AssaultBag_EMP6: AssaultBag_ColorBase
@@ -212,9 +212,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\m53_57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\m53_57.paa"
+			"Survivalists_Retextures\characters\backpacks\data\m53_57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\m53_57_co.paa"
 		};
 	};
 
@@ -223,9 +223,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\impcourierbag_black.paa",
-			"Survivalists_Retextures\characters\backpacks\data\impcourierbag_black.paa",
-			"Survivalists_Retextures\characters\backpacks\data\impcourierbag_black.paa"
+			"Survivalists_Retextures\characters\backpacks\data\impcourierbag_black_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\impcourierbag_black_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\impcourierbag_black_co.paa"
 		};
 	};
 
@@ -332,9 +332,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mon_black.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mon_black.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mon_black.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mon_black_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mon_black_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mon_black_co.paa"
 		};
 	};
 	class MountainBag_MTP: MountainBag_ColorBase
@@ -342,9 +342,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mountain_01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_01.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mountain_01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_01_co.paa"
 		};
 	};
 	class MountainBag_ATAC: MountainBag_ColorBase
@@ -352,9 +352,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mountain_04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_04.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mountain_04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_04_co.paa"
 		};
 	};
 	class MountainBag_ATACSFG: MountainBag_ColorBase
@@ -362,9 +362,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mountain_38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_38.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mountain_38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_38_co.paa"
 		};
 	};
 	class MountainBag_USNAOR2: MountainBag_ColorBase
@@ -372,9 +372,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mountain_09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_09.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mountain_09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_09_co.paa"
 		};
 	};
 	class MountainBag_USNAOR1: MountainBag_ColorBase
@@ -382,9 +382,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mountain_10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_10.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mountain_10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_10_co.paa"
 		};
 	};
 	class MountainBag_SURPAT: MountainBag_ColorBase
@@ -392,9 +392,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mountain_12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_12.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mountain_12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_12_co.paa"
 		};
 	};
 	class MountainBag_MARPATWinter: MountainBag_ColorBase
@@ -402,9 +402,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mountain_19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_19.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mountain_19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_19_co.paa"
 		};
 	};
 	class MountainBag_EMP6: MountainBag_ColorBase
@@ -412,9 +412,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\mountain_57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\mountain_57.paa"
+			"Survivalists_Retextures\characters\backpacks\data\mountain_57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\mountain_57_co.paa"
 		};
 	};
 
@@ -510,9 +510,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\taloon_bl.paa",
-			"Survivalists_Retextures\characters\backpacks\data\taloon_bl.paa",
-			"Survivalists_Retextures\characters\backpacks\data\taloon_bl.paa"
+			"Survivalists_Retextures\characters\backpacks\data\taloon_bl_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\taloon_bl_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\taloon_bl_co.paa"
 		};
 	};
 	class TaloonBag_Black2: TaloonBag_ColorBase
@@ -526,9 +526,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\taloon_bl1.paa",
-			"Survivalists_Retextures\characters\backpacks\data\taloon_bl1.paa",
-			"Survivalists_Retextures\characters\backpacks\data\taloon_bl1.paa"
+			"Survivalists_Retextures\characters\backpacks\data\taloon_bl1_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\taloon_bl1_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\taloon_bl1_co.paa"
 		};
 	};
     
@@ -543,9 +543,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\tortila01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila01.paa"
+			"Survivalists_Retextures\characters\backpacks\data\tortila01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila01_co.paa"
 		};
 	};
 	class TortillaBag_ATAC: TortillaBag
@@ -559,9 +559,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\tortila04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila04.paa"
+			"Survivalists_Retextures\characters\backpacks\data\tortila04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila04_co.paa"
 		};
 	};
 	class TortillaBag_ATACSFG: TortillaBag
@@ -575,9 +575,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\tortila38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila38.paa"
+			"Survivalists_Retextures\characters\backpacks\data\tortila38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila38_co.paa"
 		};
 	};
 	class TortillaBag_USNAOR2: TortillaBag
@@ -591,9 +591,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\tortila09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila09.paa"
+			"Survivalists_Retextures\characters\backpacks\data\tortila09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila09_co.paa"
 		};
 	};
 	class TortillaBag_USNAOR1: TortillaBag
@@ -607,9 +607,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\tortila10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila10.paa"
+			"Survivalists_Retextures\characters\backpacks\data\tortila10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila10_co.paa"
 		};
 	};
 	class TortillaBag_SURPAT: TortillaBag
@@ -623,9 +623,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\tortila12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila12.paa"
+			"Survivalists_Retextures\characters\backpacks\data\tortila12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila12_co.paa"
 		};
 	};
 	class TortillaBag_MARPATWinter: TortillaBag
@@ -639,9 +639,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\tortila19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila19.paa"
+			"Survivalists_Retextures\characters\backpacks\data\tortila19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila19_co.paa"
 		};
 	};
 	class TortillaBag_EMP6: TortillaBag
@@ -655,9 +655,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\tortila57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\tortila57.paa"
+			"Survivalists_Retextures\characters\backpacks\data\tortila57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\tortila57_co.paa"
 		};
 	};
 
@@ -688,9 +688,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\hunting_black.paa",
-			"Survivalists_Retextures\characters\backpacks\data\hunting_black.paa",
-			"Survivalists_Retextures\characters\backpacks\data\hunting_black.paa"
+			"Survivalists_Retextures\characters\backpacks\data\hunting_black_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_black_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_black_co.paa"
 		};
 	};
 	class HuntingBag_Gorka: HuntingBag
@@ -704,9 +704,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\hunting_gorka.paa",
-			"Survivalists_Retextures\characters\backpacks\data\hunting_gorka.paa",
-			"Survivalists_Retextures\characters\backpacks\data\hunting_gorka.paa"
+			"Survivalists_Retextures\characters\backpacks\data\hunting_gorka_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_gorka_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_gorka_co.paa"
 		};
 	};
   class HuntingBag_MTP: HuntingBag
@@ -715,9 +715,9 @@ class CfgVehicles
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\huntingB01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB01.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB01.paa"
+			"Survivalists_Retextures\characters\backpacks\data\huntingB01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB01_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB01_co.paa"
 		};
 	};
 	class HuntingBag_ATAC: HuntingBag
@@ -726,9 +726,9 @@ class CfgVehicles
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\huntingB04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB04.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB04.paa"
+			"Survivalists_Retextures\characters\backpacks\data\huntingB04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB04_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB04_co.paa"
 		};
 	};
 	class HuntingBag_ATACSFG: HuntingBag
@@ -737,9 +737,9 @@ class CfgVehicles
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\huntingB38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB38.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB38.paa"
+			"Survivalists_Retextures\characters\backpacks\data\huntingB38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB38_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB38_co.paa"
 		};
 	};
 	class HuntingBag_USNAOR2: HuntingBag
@@ -748,9 +748,9 @@ class CfgVehicles
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\huntingB09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB09.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB09.paa"
+			"Survivalists_Retextures\characters\backpacks\data\huntingB09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB09_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB09_co.paa"
 		};
 	};
 	class HuntingBag_USNAOR1: HuntingBag
@@ -759,9 +759,9 @@ class CfgVehicles
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\huntingB10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB10.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB10.paa"
+			"Survivalists_Retextures\characters\backpacks\data\huntingB10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB10_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB10_co.paa"
 		};
 	};
 	class HuntingBag_SURPAT: HuntingBag
@@ -770,9 +770,9 @@ class CfgVehicles
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\huntingB12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB12.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB12.paa"
+			"Survivalists_Retextures\characters\backpacks\data\huntingB12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB12_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB12_co.paa"
 		};
 	};
 	class HuntingBag_MARPATWinter: HuntingBag
@@ -781,9 +781,9 @@ class CfgVehicles
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\huntingB19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB19.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB19.paa"
+			"Survivalists_Retextures\characters\backpacks\data\huntingB19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB19_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB19_co.paa"
 		};
 	};
 	class HuntingBag_EMP6: HuntingBag
@@ -792,9 +792,9 @@ class CfgVehicles
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\huntingB57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB57.paa",
-			"Survivalists_Retextures\characters\backpacks\data\huntingB57.paa"
+			"Survivalists_Retextures\characters\backpacks\data\huntingB57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB57_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\huntingB57_co.paa"
 		};
 	};
 

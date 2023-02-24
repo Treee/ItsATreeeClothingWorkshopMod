@@ -141,20 +141,12 @@ class CfgVehicles
       "Brown1",
       "Blue2",
       "ERDL",
-      "ERDL2",
-      "ERDL3",
       "ChocChip",
-      "ChocChip2",
       "CADPAT",
-      "CADPAT2",
       "M05",
-      "M052",
       "MARPAT",
-      "MARPAT2",
       "MulticamBlack",
-      "MulticamBlack2",
       "TigerStripe",
-      "TigerStripe2"
     };
   };
   class HunterPants_ColorBase: Clothing
@@ -242,18 +234,14 @@ class CfgVehicles
       "MARPATWinter",
       "EMP6",
       "ERDL",
-      "ERDL2",
       "Snow",
       "Multicam",
       "MulticamTropic",
       "MulticamBlack",
-      "MulticamBlack2",
       "CAD",
       "ChocChip",
       "M05",
-      "TigerStripe1",
-      "TigerStripe2",
-      "TigerStripe3"
+      "TigerStripe",
     };
   };
   class PolicePants: Clothing
