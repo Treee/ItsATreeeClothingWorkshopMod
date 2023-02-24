@@ -1714,6 +1714,8 @@ class CfgVehicles
       "ChocChip",
       "ERDL",
       "MARPAT_Wood",    
+      "HelloKitty",    
+      "Punisher",    
     };
 		quickBarBonus=2;
     itemBehaviour=2;

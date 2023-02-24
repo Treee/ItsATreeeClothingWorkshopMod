@@ -80,9 +80,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\SRPTraderVest.paa",
-			"Survivalists_Retextures\characters\vests\data\SRPTraderVest.paa",
-			"Survivalists_Retextures\characters\vests\data\SRPTraderVest.paa"
+			"Survivalists_Retextures\characters\vests\data\SRPTraderVest_co.paa",
+			"Survivalists_Retextures\characters\vests\data\SRPTraderVest_co.paa",
+			"Survivalists_Retextures\characters\vests\data\SRPTraderVest_co.paa"
 		};
 	};
   class PlateCarrierVest_Black: PlateCarrierVest
@@ -96,9 +96,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\beliyvest2.paa",
-			"Survivalists_Retextures\characters\vests\data\beliyvest2.paa",
-			"Survivalists_Retextures\characters\vests\data\beliyvest2.paa"
+			"Survivalists_Retextures\characters\vests\data\beliyvest2_co.paa",
+			"Survivalists_Retextures\characters\vests\data\beliyvest2_co.paa",
+			"Survivalists_Retextures\characters\vests\data\beliyvest2_co.paa"
 		};
 	};
   class PlateCarrierVest_White: PlateCarrierVest
@@ -144,9 +144,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa"
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa"
 		};
 	};
 	class PlateCarrierVest_ATAC: PlateCarrierVest
@@ -160,9 +160,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa"
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa"
 		};
 	};
 	class PlateCarrierVest_ATACSFG: PlateCarrierVest
@@ -176,9 +176,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa"
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa"
 		};
 	};
 	class PlateCarrierVest_USNAOR2: PlateCarrierVest
@@ -192,9 +192,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa"
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa"
 		};
 	};
 	class PlateCarrierVest_USNAOR1: PlateCarrierVest
@@ -208,9 +208,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa"
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa"
 		};
 	};
 	class PlateCarrierVest_SURPAT: PlateCarrierVest
@@ -224,9 +224,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa"
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa"
 		};
 	};
 	class PlateCarrierVest_MARPATWinter: PlateCarrierVest
@@ -240,9 +240,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa"
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa"
 		};
 	};
 	class PlateCarrierVest_EMP6: PlateCarrierVest
@@ -256,9 +256,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa"
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa"
 		};
 	};
   class PlateCarrierVest_Lavender: PlateCarrierVest
@@ -513,9 +513,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa",
 		};
 	};
 	class PlateCarrierHolster_ATAC: PlateCarrierHolster
@@ -529,9 +529,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa",
 		};
 	};
 	class PlateCarrierHolster_ATACSFG: PlateCarrierHolster
@@ -545,9 +545,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa",
 		};
 	};
 	class PlateCarrierHolster_USNAOR2: PlateCarrierHolster
@@ -561,9 +561,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa",
 		};
 	};
 	class PlateCarrierHolster_USNAOR1: PlateCarrierHolster
@@ -577,9 +577,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa",
 		};
 	};
 	class PlateCarrierHolster_SURPAT: PlateCarrierHolster
@@ -593,9 +593,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa",
 		};
 	};
 	class PlateCarrierHolster_MARPATWinter: PlateCarrierHolster
@@ -609,9 +609,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa",
 		};
 	};
   class PlateCarrierHolster_ThirstyDevil: PlateCarrierHolster
@@ -641,9 +641,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa",
 		};
 	};
   class PlateCarrierPouches_White: PlateCarrierPouches
@@ -817,9 +817,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest01.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest01_co.paa",
 		};
 	};
 	class PlateCarrierPouches_ATAC: PlateCarrierPouches
@@ -833,9 +833,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest04.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest04_co.paa",
 		};
 	};
 	class PlateCarrierPouches_ATACSFG: PlateCarrierPouches
@@ -849,9 +849,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest38.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest38_co.paa",
 		};
 	};
 	class PlateCarrierPouches_USNAOR2: PlateCarrierPouches
@@ -865,9 +865,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest09.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest09_co.paa",
 		};
 	};
 	class PlateCarrierPouches_USNAOR1: PlateCarrierPouches
@@ -881,9 +881,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest10.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest10_co.paa",
 		};
 	};
 	class PlateCarrierPouches_SURPAT: PlateCarrierPouches
@@ -897,9 +897,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest12.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest12_co.paa",
 		};
 	};
 	class PlateCarrierPouches_MARPATWinter: PlateCarrierPouches
@@ -913,9 +913,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest19.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest19_co.paa",
 		};
 	};
 	class PlateCarrierPouches_EMP6: PlateCarrierPouches
@@ -929,9 +929,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
-			"Survivalists_Retextures\characters\vests\data\ballisticvest57.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa",
+			"Survivalists_Retextures\characters\vests\data\ballisticvest57_co.paa",
 		};
 	};   
   class PlateCarrierPouches_ThirstyDevil: PlateCarrierPouches
@@ -955,9 +955,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\beliyvest.paa",
-			"Survivalists_Retextures\characters\vests\data\beliyvest.paa",
-			"Survivalists_Retextures\characters\vests\data\beliyvest.paa"
+			"Survivalists_Retextures\characters\vests\data\beliyvest_co.paa",
+			"Survivalists_Retextures\characters\vests\data\beliyvest_co.paa",
+			"Survivalists_Retextures\characters\vests\data\beliyvest_co.paa"
 		};
 	};	
   class PressVest_ATFBlue: PressVest_ColorBase
@@ -1019,9 +1019,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\PressVest01.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest01.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest01.paa"
+			"Survivalists_Retextures\characters\vests\data\PressVest01_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest01_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest01_co.paa"
 		};
 	};
 	class PressVest_ATAC: PressVest_ColorBase
@@ -1029,9 +1029,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\PressVest05.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest05.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest05.paa"
+			"Survivalists_Retextures\characters\vests\data\PressVest05_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest05_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest05_co.paa"
 		};
 	};
 	class PressVest_ATACSFG: PressVest_ColorBase
@@ -1039,9 +1039,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\PressVest39.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest39.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest39.paa"
+			"Survivalists_Retextures\characters\vests\data\PressVest39_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest39_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest39_co.paa"
 		};
 	};
 	class PressVest_USNAOR2: PressVest_ColorBase
@@ -1049,9 +1049,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\PressVest10.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest10.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest10.paa"
+			"Survivalists_Retextures\characters\vests\data\PressVest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest10_co.paa"
 		};
 	};
 	class PressVest_USNAOR1: PressVest_ColorBase
@@ -1059,9 +1059,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\PressVest11.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest11.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest11.paa"
+			"Survivalists_Retextures\characters\vests\data\PressVest11_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest11_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest11_co.paa"
 		};
 	};
 	class PressVest_SURPAT: PressVest_ColorBase
@@ -1069,9 +1069,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\PressVest13.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest13.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest13.paa"
+			"Survivalists_Retextures\characters\vests\data\PressVest13_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest13_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest13_co.paa"
 		};
 	};
 	class PressVest_MARPATWinter: PressVest_ColorBase
@@ -1079,9 +1079,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\PressVest20.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest20.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest20.paa"
+			"Survivalists_Retextures\characters\vests\data\PressVest20_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest20_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest20_co.paa"
 		};
 	};
 	class PressVest_EMP6: PressVest_ColorBase
@@ -1089,9 +1089,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\PressVest58.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest58.paa",
-			"Survivalists_Retextures\characters\vests\data\PressVest58.paa"
+			"Survivalists_Retextures\characters\vests\data\PressVest58_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest58_co.paa",
+			"Survivalists_Retextures\characters\vests\data\PressVest58_co.paa"
 		};
 	};
   class UKAssVest_White: UKAssVest_ColorBase
@@ -1220,9 +1220,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\rainvest.paa",
-			"Survivalists_Retextures\characters\vests\data\rainvest.paa",
-			"Survivalists_Retextures\characters\vests\data\rainvest.paa"
+			"Survivalists_Retextures\characters\vests\data\rainvest_co.paa",
+			"Survivalists_Retextures\characters\vests\data\rainvest_co.paa",
+			"Survivalists_Retextures\characters\vests\data\rainvest_co.paa"
 		};
 	};			
 	class HighCapacityVest_ATFBlack: HighCapacityVest_ColorBase
@@ -1302,9 +1302,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\TacticalVest03.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest03.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest03.paa"
+			"Survivalists_Retextures\characters\vests\data\TacticalVest03_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest03_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest03_co.paa"
 		};
 	};
 	class HighCapacityVest_ATAC: HighCapacityVest_ColorBase
@@ -1312,9 +1312,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\TacticalVest05.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest05.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest05.paa"
+			"Survivalists_Retextures\characters\vests\data\TacticalVest05_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest05_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest05_co.paa"
 		};
 	};
 	class HighCapacityVest_ATACSFG: HighCapacityVest_ColorBase
@@ -1322,9 +1322,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\TacticalVest39.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest39.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest39.paa"
+			"Survivalists_Retextures\characters\vests\data\TacticalVest39_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest39_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest39_co.paa"
 		};
 	};
 	class HighCapacityVest_USNAOR2: HighCapacityVest_ColorBase
@@ -1332,9 +1332,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\TacticalVest10.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest10.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest10.paa"
+			"Survivalists_Retextures\characters\vests\data\TacticalVest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest10_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest10_co.paa"
 		};
 	};
 	class HighCapacityVest_USNAOR1: HighCapacityVest_ColorBase
@@ -1342,9 +1342,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\TacticalVest11.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest11.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest11.paa"
+			"Survivalists_Retextures\characters\vests\data\TacticalVest11_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest11_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest11_co.paa"
 		};
 	};
 	class HighCapacityVest_SURPAT: HighCapacityVest_ColorBase
@@ -1352,9 +1352,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\TacticalVest13.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest13.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest13.paa"
+			"Survivalists_Retextures\characters\vests\data\TacticalVest13_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest13_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest13_co.paa"
 		};
 	};
 	class HighCapacityVest_MARPATWinter: HighCapacityVest_ColorBase
@@ -1362,9 +1362,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\TacticalVest20.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest20.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest20.paa"
+			"Survivalists_Retextures\characters\vests\data\TacticalVest20_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest20_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest20_co.paa"
 		};
 	};
 	class HighCapacityVest_EMP6: HighCapacityVest_ColorBase
@@ -1372,9 +1372,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\vests\data\TacticalVest58.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest58.paa",
-			"Survivalists_Retextures\characters\vests\data\TacticalVest58.paa"
+			"Survivalists_Retextures\characters\vests\data\TacticalVest58_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest58_co.paa",
+			"Survivalists_Retextures\characters\vests\data\TacticalVest58_co.paa"
 		};
 	};  
   class HuntingVest_Leather: HuntingVest
@@ -2080,6 +2080,16 @@ class CfgVehicles
 	{
 		scope=2;
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\vests\data\JPC_Vest_ChocChip_CO.paa"};
+	};
+  class SRP_JPC_Vest_HelloKitty: SRP_JPC_Vest_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\JPC_Vest_HK_CO.paa"};
+	};
+	class SRP_JPC_Vest_Punisher: SRP_JPC_Vest_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\JPC_Vest_Punish_CO.paa"};
 	};
 	class SRP_Tac_Tec_Vest_Tan: SRP_Tac_Tec_Vest_ColorBase
 	{
