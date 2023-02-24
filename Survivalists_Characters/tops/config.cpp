@@ -225,6 +225,13 @@ class CfgVehicles
       "Blue",
       "Red",
       "Green",
+      "ChocChip",
+      "CAD",
+      "ERDL",
+      "M05",
+      "MARPAT",
+      "MulticamBlack",
+      "TigerStripe",
     };
   };
   class Raincoat_ColorBase: Clothing
@@ -300,10 +307,17 @@ class CfgVehicles
       "MARPATWinter",
       "EMP6",
       "ERDL",
+      "ERDL2",
       "Snow",
       "Multicam",
       "MulticamTropic",
       "MulticamBlack",
+      "MulticamBlack2",
+      "CAD",
+      "ChocChip",
+      "M05",
+      "MARPAT",
+      "TigerStripe",
     };
   };
   class RidersJacket_ColorBase: Clothing
@@ -1224,6 +1238,8 @@ class CfgVehicles
       "ChocChip",
       "ERDL",
       "MARPAT_Wood",
+      "GreyHex",
+      "HelloKitty"
     };
     class DamageSystem
     {

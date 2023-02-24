@@ -402,17 +402,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\Bushcraft_Pants_Blue_co.paa"
 		};
 	};
-	class CargoPants_ROP: CargoPants_ColorBase
-	{
-		scope=2;
-		visibilityModifier=0.80000001;
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ROP_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ROP_CO.paa",
-			"Survivalists_Retextures\characters\pants\data\cargoPants_ROP_CO.paa"
-		};
-	};
 	class CargoPants_ChocChip: CargoPants_ColorBase
 	{
 		scope=2;
