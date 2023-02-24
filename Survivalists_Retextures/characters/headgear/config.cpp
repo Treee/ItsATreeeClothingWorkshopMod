@@ -56,9 +56,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\helmetmich01.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich01.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich01.paa"
+			"Survivalists_Retextures\characters\headgear\data\helmetmich01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich01_co.paa"
 		};
 	};
 	class BallisticHelmet_ATAC: BallisticHelmet_ColorBase
@@ -66,9 +66,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\helmetmich04.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich04.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich04.paa"
+			"Survivalists_Retextures\characters\headgear\data\helmetmich04_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich04_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich04_co.paa"
 		};
 	};
 	class BallisticHelmet_ATACSFG: BallisticHelmet_ColorBase
@@ -76,9 +76,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\helmetmich38.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich38.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich38.paa"
+			"Survivalists_Retextures\characters\headgear\data\helmetmich38_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich38_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich38_co.paa"
 		};
 	};
 	class BallisticHelmet_USNAOR2: BallisticHelmet_ColorBase
@@ -86,9 +86,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\helmetmich09.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich09.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich09.paa"
+			"Survivalists_Retextures\characters\headgear\data\helmetmich09_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich09_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich09_co.paa"
 		};
 	};
 	class BallisticHelmet_USNAOR1: BallisticHelmet_ColorBase
@@ -96,9 +96,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\helmetmich10.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich10.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich10.paa"
+			"Survivalists_Retextures\characters\headgear\data\helmetmich10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich10_co.paa"
 		};
 	};
 	class BallisticHelmet_SURPAT: BallisticHelmet_ColorBase
@@ -106,9 +106,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\helmetmich12.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich12.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich12.paa"
+			"Survivalists_Retextures\characters\headgear\data\helmetmich12_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich12_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich12_co.paa"
 		};
 	};
 	class BallisticHelmet_MARPATWinter: BallisticHelmet_ColorBase
@@ -116,9 +116,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\helmetmich19.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich19.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich19.paa"
+			"Survivalists_Retextures\characters\headgear\data\helmetmich19_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich19_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich19_co.paa"
 		};
 	};
 	class BallisticHelmet_EMP6: BallisticHelmet_ColorBase
@@ -126,9 +126,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\helmetmich57.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich57.paa",
-			"Survivalists_Retextures\characters\headgear\data\helmetmich57.paa"
+			"Survivalists_Retextures\characters\headgear\data\helmetmich57_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich57_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\helmetmich57_co.paa"
 		};
 	};
 	class BallisticHelmet_Rain: BallisticHelmet_ColorBase
@@ -136,9 +136,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BPRainhelm.paa",
-			"Survivalists_Retextures\characters\headgear\data\BPRainhelm.paa",
-			"Survivalists_Retextures\characters\headgear\data\BPRainhelm.paa"
+			"Survivalists_Retextures\characters\headgear\data\BPRainhelm_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BPRainhelm_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BPRainhelm_co.paa"
 		};
 	};
 
@@ -147,9 +147,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Lisiycap.paa",
-			"Survivalists_Retextures\characters\headgear\data\Lisiycap.paa",
-			"Survivalists_Retextures\characters\headgear\data\Lisiycap.paa"
+			"Survivalists_Retextures\characters\headgear\data\Lisiycap_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Lisiycap_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Lisiycap_co.paa"
 		};
 	};
 	class BaseballCap_PoliceCap: BaseballCap_ColorBase
@@ -170,9 +170,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\baseball01.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball01.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball01.paa"
+			"Survivalists_Retextures\characters\headgear\data\baseball01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball01_co.paa"
 		};
 	};
 	class BaseballCap_ATAC: BaseballCap_ColorBase
@@ -180,9 +180,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\baseball04.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball04.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball04.paa"
+			"Survivalists_Retextures\characters\headgear\data\baseball04_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball04_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball04_co.paa"
 		};
 	};
 	class BaseballCap_ATACSFG: BaseballCap_ColorBase
@@ -190,9 +190,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\baseball38.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball38.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball38.paa"
+			"Survivalists_Retextures\characters\headgear\data\baseball38_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball38_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball38_co.paa"
 		};
 	};
 	class BaseballCap_USNAOR2: BaseballCap_ColorBase
@@ -200,9 +200,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\baseball09.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball09.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball09.paa"
+			"Survivalists_Retextures\characters\headgear\data\baseball09_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball09_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball09_co.paa"
 		};
 	};
 	class BaseballCap_USNAOR1: BaseballCap_ColorBase
@@ -210,9 +210,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\baseball10.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball10.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball10.paa"
+			"Survivalists_Retextures\characters\headgear\data\baseball10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball10_co.paa"
 		};
 	};
 	class BaseballCap_SURPAT: BaseballCap_ColorBase
@@ -220,9 +220,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\baseball12.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball12.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball12.paa"
+			"Survivalists_Retextures\characters\headgear\data\baseball12_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball12_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball12_co.paa"
 		};
 	};
 	class BaseballCap_MARPATWinter: BaseballCap_ColorBase
@@ -230,9 +230,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\baseball19.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball19.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball19.paa"
+			"Survivalists_Retextures\characters\headgear\data\baseball19_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball19_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball19_co.paa"
 		};
 	};
 	class BaseballCap_EMP6: BaseballCap_ColorBase
@@ -240,9 +240,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\baseball57.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball57.paa",
-			"Survivalists_Retextures\characters\headgear\data\baseball57.paa"
+			"Survivalists_Retextures\characters\headgear\data\baseball57_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball57_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseball57_co.paa"
 		};
 	};
   class BaseballCap_Black: BaseballCap_ColorBase
@@ -317,9 +317,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat03.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat03.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat03.paa"
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat03_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat03_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat03_co.paa"
 		};
 	};
 	class BeanieHat_ATAC: BeanieHat_ColorBase
@@ -327,9 +327,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat05.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat05.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat05.paa"
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat05_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat05_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat05_co.paa"
 		};
 	};
 	class BeanieHat_ATACSFG: BeanieHat_ColorBase
@@ -337,9 +337,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat39.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat39.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat39.paa"
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat39_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat39_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat39_co.paa"
 		};
 	};
 	class BeanieHat_USNAOR2: BeanieHat_ColorBase
@@ -347,9 +347,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat10.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat10.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat10.paa"
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat10_co.paa"
 		};
 	};
 	class BeanieHat_USNAOR1: BeanieHat_ColorBase
@@ -357,9 +357,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat11.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat11.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat11.paa"
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat11_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat11_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat11_co.paa"
 		};
 	};
 	class BeanieHat_SURPAT: BeanieHat_ColorBase
@@ -367,9 +367,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat13.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat13.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat13.paa"
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat13_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat13_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat13_co.paa"
 		};
 	};
 	class BeanieHat_MARPATWinter: BeanieHat_ColorBase
@@ -377,9 +377,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat20.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat20.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat20.paa"
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat20_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat20_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat20_co.paa"
 		};
 	};
   class BurlapSackCover_Black: BurlapSackCover
@@ -420,9 +420,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat58.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat58.paa",
-			"Survivalists_Retextures\characters\headgear\data\BeanieHat58.paa"
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat58_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat58_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\BeanieHat58_co.paa"
 		};
 	};
   class Ushanka_Denim: Ushanka_ColorBase
@@ -430,9 +430,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\dencap.paa",
-			"Survivalists_Retextures\characters\headgear\data\dencap.paa",
-			"Survivalists_Retextures\characters\headgear\data\dencap.paa"
+			"Survivalists_Retextures\characters\headgear\data\dencap_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\dencap_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\dencap_co.paa"
 		};
 	};
 	class Ushanka_MTP: Ushanka_ColorBase
@@ -440,9 +440,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Ushanka01.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka01.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka01.paa"
+			"Survivalists_Retextures\characters\headgear\data\Ushanka01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka01_co.paa"
 		};
 	};
 	class Ushanka_ATAC: Ushanka_ColorBase
@@ -450,9 +450,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Ushanka04.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka04.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka04.paa"
+			"Survivalists_Retextures\characters\headgear\data\Ushanka04_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka04_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka04_co.paa"
 		};
 	};
 	class Ushanka_ATACSFG: Ushanka_ColorBase
@@ -460,9 +460,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Ushanka38.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka38.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka38.paa"
+			"Survivalists_Retextures\characters\headgear\data\Ushanka38_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka38_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka38_co.paa"
 		};
 	};
 	class Ushanka_USNAOR2: Ushanka_ColorBase
@@ -470,9 +470,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Ushanka09.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka09.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka09.paa"
+			"Survivalists_Retextures\characters\headgear\data\Ushanka09_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka09_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka09_co.paa"
 		};
 	};
 	class Ushanka_USNAOR1: Ushanka_ColorBase
@@ -480,9 +480,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Ushanka10.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka10.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka10.paa"
+			"Survivalists_Retextures\characters\headgear\data\Ushanka10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka10_co.paa"
 		};
 	};
 	class Ushanka_SURPAT: Ushanka_ColorBase
@@ -490,9 +490,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Ushanka12.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka12.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka12.paa"
+			"Survivalists_Retextures\characters\headgear\data\Ushanka12_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka12_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka12_co.paa"
 		};
 	};
 	class Ushanka_MARPATWinter: Ushanka_ColorBase
@@ -500,9 +500,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Ushanka19.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka19.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka19.paa"
+			"Survivalists_Retextures\characters\headgear\data\Ushanka19_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka19_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka19_co.paa"
 		};
 	};
 	class Ushanka_EMP6: Ushanka_ColorBase
@@ -510,9 +510,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\Ushanka57.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka57.paa",
-			"Survivalists_Retextures\characters\headgear\data\Ushanka57.paa"
+			"Survivalists_Retextures\characters\headgear\data\Ushanka57_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka57_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\Ushanka57_co.paa"
 		};
 	};
   class STAG_Ushanka: Ushanka_ColorBase
@@ -560,9 +560,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\policecap_dillard.paa",
-			"Survivalists_Retextures\characters\headgear\data\policecap_dillard.paa",
-			"Survivalists_Retextures\characters\headgear\data\policecap_dillard.paa"
+			"Survivalists_Retextures\characters\headgear\data\policecap_dillard_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\policecap_dillard_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\policecap_dillard_co.paa"
 		};
   };
 
@@ -571,11 +571,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65b_co.paa"
 		};
 	};
 	class Bandana_65Desert: Bandana_ColorBase
@@ -583,11 +583,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65d_co.paa"
 		};
 	};
 	class Bandana_65Tan: Bandana_ColorBase
@@ -595,11 +595,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_65t_co.paa"
 		};
 	};
 	class Bandana_CheckBlue: Bandana_ColorBase
@@ -607,11 +607,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cb_co.paa"
 		};
 	};
 	class Bandana_CheckBlueBright: Bandana_ColorBase
@@ -619,11 +619,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cbb_co.paa"
 		};
 	};
 	class Bandana_CheckGreen: Bandana_ColorBase
@@ -631,11 +631,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cg_co.paa"
 		};
 	};
 	class Bandana_CheckRed: Bandana_ColorBase
@@ -643,11 +643,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cr_co.paa"
 		};
 	};
 	class Bandana_CheckWhite: Bandana_ColorBase
@@ -655,11 +655,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_cw_co.paa"
 		};
 	};
 	class Bandana_Denim: Bandana_ColorBase
@@ -667,11 +667,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_denim_co.paa"
 		};
 	};
 	class Bandana_Kamysh: Bandana_ColorBase
@@ -679,11 +679,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_kamysh_co.paa"
 		};
 	};
 	class Bandana_USMC_D: Bandana_ColorBase
@@ -691,11 +691,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_d_co.paa"
 		};
 	};
 	class Bandana_USMC_W: Bandana_ColorBase
@@ -703,11 +703,11 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w.paa",
-			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w.paa"
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\bandanafhg_usmc_w_co.paa"
 		};
 	};
   class FlatCap_ERDL: FlatCap_ColorBase
@@ -765,9 +765,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\booniehat01.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat01.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat01.paa"
+			"Survivalists_Retextures\characters\headgear\data\booniehat01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat01_co.paa"
 		};
 	};
 	class BoonieHat_ATAC: BoonieHat_ColorBase
@@ -775,9 +775,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\booniehat05.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat05.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat05.paa"
+			"Survivalists_Retextures\characters\headgear\data\booniehat05_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat05_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat05_co.paa"
 		};
 	};
 	class BoonieHat_ATACSFG: BoonieHat_ColorBase
@@ -785,9 +785,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\booniehat39.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat39.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat39.paa"
+			"Survivalists_Retextures\characters\headgear\data\booniehat39_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat39_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat39_co.paa"
 		};
 	};
 	class BoonieHat_USNAOR2: BoonieHat_ColorBase
@@ -795,9 +795,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\booniehat10.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat10.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat10.paa"
+			"Survivalists_Retextures\characters\headgear\data\booniehat10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat10_co.paa"
 		};
 	};
 	class BoonieHat_USNAOR1: BoonieHat_ColorBase
@@ -805,9 +805,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\booniehat11.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat11.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat11.paa"
+			"Survivalists_Retextures\characters\headgear\data\booniehat11_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat11_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat11_co.paa"
 		};
 	};
 	class BoonieHat_SURPAT: BoonieHat_ColorBase
@@ -815,9 +815,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\booniehat13.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat13.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat13.paa"
+			"Survivalists_Retextures\characters\headgear\data\booniehat13_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat13_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat13_co.paa"
 		};
 	};
 	class BoonieHat_MARPATWinter: BoonieHat_ColorBase
@@ -825,9 +825,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\booniehat20.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat20.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat20.paa"
+			"Survivalists_Retextures\characters\headgear\data\booniehat20_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat20_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat20_co.paa"
 		};
 	};
 	class BoonieHat_EMP6: BoonieHat_ColorBase
@@ -835,9 +835,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\booniehat58.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat58.paa",
-			"Survivalists_Retextures\characters\headgear\data\booniehat58.paa"
+			"Survivalists_Retextures\characters\headgear\data\booniehat58_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat58_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\booniehat58_co.paa"
 		};
 	};
 	class BoonieHat_ERDL: BoonieHat_ColorBase
@@ -897,9 +897,9 @@ class CfgVehicles
 		descriptionShort="A hand sewn flat cap.";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\gordeycap.paa",
-			"Survivalists_Retextures\characters\headgear\data\gordeycap.paa",
-			"Survivalists_Retextures\characters\headgear\data\gordeycap.paa"
+			"Survivalists_Retextures\characters\headgear\data\gordeycap_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\gordeycap_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\gordeycap_co.paa"
 		};
 	};
 	class NBCHood_Orange: NBCHoodBase
@@ -937,9 +937,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\mich2001_57.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_57.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_57.paa"
+			"Survivalists_Retextures\characters\headgear\data\mich2001_57_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_57_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_57_co.paa"
 		};
 	};
 	class Mich2001Helmet_MTP: Mich2001Helmet
@@ -947,9 +947,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\mich2001_01.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_01.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_01.paa"
+			"Survivalists_Retextures\characters\headgear\data\mich2001_01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_01_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_01_co.paa"
 		};
 	};
 	class Mich2001Helmet_ATAC: Mich2001Helmet
@@ -957,9 +957,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\mich2001_04.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_04.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_04.paa"
+			"Survivalists_Retextures\characters\headgear\data\mich2001_04_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_04_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_04_co.paa"
 		};
 	};
 	class Mich2001Helmet_ATACSFG: Mich2001Helmet
@@ -967,9 +967,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\mich2001_38.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_38.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_38.paa"
+			"Survivalists_Retextures\characters\headgear\data\mich2001_38_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_38_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_38_co.paa"
 		};
 	};
 	class Mich2001Helmet_USNAOR2: Mich2001Helmet
@@ -977,9 +977,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\mich2001_09.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_09.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_09.paa"
+			"Survivalists_Retextures\characters\headgear\data\mich2001_09_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_09_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_09_co.paa"
 		};
 	};
 	class Mich2001Helmet_USNAOR1: Mich2001Helmet
@@ -987,9 +987,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\mich2001_10.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_10.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_10.paa"
+			"Survivalists_Retextures\characters\headgear\data\mich2001_10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_10_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_10_co.paa"
 		};
 	};
 	class Mich2001Helmet_SURPAT: Mich2001Helmet
@@ -997,9 +997,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\mich2001_12.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_12.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_12.paa"
+			"Survivalists_Retextures\characters\headgear\data\mich2001_12_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_12_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_12_co.paa"
 		};
 	};
 	class Mich2001Helmet_MARPATWinter: Mich2001Helmet
@@ -1007,9 +1007,9 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\mich2001_19.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_19.paa",
-			"Survivalists_Retextures\characters\headgear\data\mich2001_19.paa"
+			"Survivalists_Retextures\characters\headgear\data\mich2001_19_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_19_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\mich2001_19_co.paa"
 		};
 	};
 
@@ -1270,7 +1270,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_combathelmet6b47_co.paa"
 		};
   };
-
   class SRP_CombatHelmetHighCut_Black: SRP_CombatHelmetHighCut_ColorBase
   {
     scope=2;
@@ -1325,7 +1324,6 @@ class CfgVehicles
 		scope = 2;
 		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_combathelmethighcut_ChocChip_co.paa"};
 	};
-
   class SRP_CombatHelmetAltyn_Black: SRP_CombatHelmetAltyn_ColorBase
   {
     scope=2;
@@ -1403,7 +1401,7 @@ class CfgVehicles
     };
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Wraith.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Wraith_co.paa",
 			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
 		};
 	};
@@ -1419,7 +1417,7 @@ class CfgVehicles
     };
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Black.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Black_co.paa",
 			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
 		};
 	};
@@ -1435,7 +1433,7 @@ class CfgVehicles
     };
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Snow.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Snow_co.paa",
 			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
 		};
 	};
@@ -1467,7 +1465,7 @@ class CfgVehicles
     };
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Tan.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Tan_co.paa",
 			"Survivalists_Retextures\characters\headgear\data\srp_facemask_skullmask_co.paa"
 		};
 	};
@@ -1489,7 +1487,7 @@ class CfgVehicles
     color="tan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Tan.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Tan_co.paa",
 		};
 	};
 	class SRP_FaceMask_Black: SRP_FaceMask_ColorBase
@@ -1499,7 +1497,7 @@ class CfgVehicles
     color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Black.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Black_co.paa",
 		};
 	};
 	class SRP_FaceMask_Snow: SRP_FaceMask_ColorBase
@@ -1509,7 +1507,7 @@ class CfgVehicles
     color="snow";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Snow.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Snow_co.paa",
 		};
 	};
   class SRP_FaceMask_Wraith: SRP_FaceMask_ColorBase
@@ -1519,7 +1517,7 @@ class CfgVehicles
     color="wraith";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Wraith.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Wraith_co.paa",
 		};
 	};
 
@@ -1540,7 +1538,7 @@ class CfgVehicles
     color="tan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Tan.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Tan_co.paa",
 		};
 	};
 	class SRP_MouthCover_Black: SRP_MouthCover_ColorBase
@@ -1550,7 +1548,7 @@ class CfgVehicles
     color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Black.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Black_co.paa",
 		};
 	};
 	class SRP_MouthCover_Snow: SRP_MouthCover_ColorBase
@@ -1560,7 +1558,7 @@ class CfgVehicles
     color="snow";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Snow.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Snow_co.paa",
 		};
 	};
   class SRP_MouthCover_Wraith: SRP_MouthCover_ColorBase
@@ -1570,7 +1568,7 @@ class CfgVehicles
     color="wraith";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_facemask_co_Wraith.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_facemask_Wraith_co.paa",
 		};
 	};
 
@@ -1591,7 +1589,7 @@ class CfgVehicles
     color="tan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_shroud_co_Tan.paa"
+			"Survivalists_Retextures\characters\headgear\data\srp_shroud_Tan_co.paa"
 		};
 	};
 	class SRP_Shroud_Black: SRP_Shroud_ColorBase
@@ -1601,7 +1599,7 @@ class CfgVehicles
     color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_shroud_co_Black.paa"
+			"Survivalists_Retextures\characters\headgear\data\srp_shroud_Black_co.paa"
 		};
 	};
 
@@ -1624,7 +1622,7 @@ class CfgVehicles
     color="tan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Tan.paa"
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_Tan_co.paa"
 		};
 	};
 	class SRP_Comtacs_Black: SRP_Comtacs_ColorBase
@@ -1635,7 +1633,7 @@ class CfgVehicles
     color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Black.paa"
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_Black_co.paa"
 		};
 	};
 
@@ -1658,7 +1656,7 @@ class CfgVehicles
     color="tan";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Tan.paa"
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_Tan_co.paa"
 		};
 	};
 	class SRP_EarProtection_Black: SRP_EarProtection_ColorBase
@@ -1669,7 +1667,7 @@ class CfgVehicles
     color="black";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_co_Black.paa"
+			"Survivalists_Retextures\characters\headgear\data\srp_comtacs_Black_co.paa"
 		};
 	};
 
@@ -1701,7 +1699,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_black_co.paa"
 		};
 	};
-
   class BaseballCap_MilitaryPatrolBlack_Backwards: BaseballCap_MilitaryPatrolTan_Backwards
   {
 		scope=2;
@@ -1714,7 +1711,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_black_co.paa"
 		};
   };
-
   class BaseballCap_MilitaryPatrolGreen: BaseballCap_MilitaryPatrolTan
 	{
 		scope=2;
@@ -1728,7 +1724,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"
 		};
 	};
-
   class BaseballCap_MilitaryPatrolGreen_Backwards: BaseballCap_MilitaryPatrolTan_Backwards
   {
 		scope=2;
@@ -1776,6 +1771,18 @@ class CfgVehicles
 		scope=2;
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MPat_Wood_co.paa"};
+	};
+  class BaseballCap_MilitaryPatrol_Hello_Kitty: BaseballCap_MilitaryPatrolTan
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Benji_Retextures\data\srp_patrolcap_HK_co.paa"};
+	};
+  class BaseballCap_MilitaryPatrol_Hello_Kitty: BaseballCap_MilitaryPatrolTan_Backwards
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Benji_Retextures\data\srp_patrolcap_HK_co.paa"};
 	};
 
   class SRP_Cowboy_Hat_Carl_Brown: SRP_Cowboy_Hat_Carl
