@@ -7,15 +7,32 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data",
-      "Survivalists_Retextures"
+			"DZ_Gear_Camping",
+      "Survivalists_Mods_Gear_Camping"
 		};
 	};
 };
 class CfgVehicles
 {
+  class LargeTent;
+
   class SRP_Guitar_Alpocalypse;
 
+//================================================ VANILLA
+  class LargeTent_Stag: LargeTent
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\large_tent_STAG_co.paa"
+		};
+  };
+  
+//================================================ MODDED  
   class SRP_Guitar_Alpocalypse_Blue: SRP_Guitar_Alpocalypse
 	{
 		scope=2;
