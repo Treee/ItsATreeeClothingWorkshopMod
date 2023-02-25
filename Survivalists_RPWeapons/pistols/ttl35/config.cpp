@@ -38,6 +38,9 @@ class CfgWeapons
 		weight=12000;
 		chamberSize=1;
 		itemSize[]={3,2};
+    hiddenSelections[]={"zbytek","Wood"};
+		hiddenSelectionsTextures[]={"Survivalists_RPWeapons\pistols\ttl35\data\ttl35_co.paa","Survivalists_RPWeapons\pistols\ttl35\data\ttl35_co.paa"};
+		hiddenSelectionsMaterials[]={"Survivalists_RPWeapons\pistols\ttl35\data\base.rvmat","Survivalists_RPWeapons\pistols\ttl35\data\base_wood.rvmat"};
 	};
 };
 class CfgMagazines

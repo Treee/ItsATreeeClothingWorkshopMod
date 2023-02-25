@@ -37,7 +37,9 @@ class CfgWeapons
 			"hide_barrel",
 			"GasBlock",
 			"PistolGrip",
-			"Buffer"
+			"Buffer",
+      "GasBlock_High",
+			"GasBlock_Low"
 		};
 		hiddenSelectionsTextures[]=
 		{

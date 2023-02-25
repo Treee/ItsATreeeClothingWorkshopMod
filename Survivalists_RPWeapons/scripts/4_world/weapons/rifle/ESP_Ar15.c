@@ -15,6 +15,8 @@ class ESP_AR15 : RifleBoltLock_Base
 		HideUnhideSelection("GasBlock", 1);
 		HideUnhideSelection("PistolGrip", 1);
 		HideUnhideSelection("Buffer", 1);
+    HideUnhideSelection("GasBlock_High", 1);
+		HideUnhideSelection("GasBlock_Low", 0);
 	}
 
 	override void EEItemAttached(EntityAI item, string slot_name)
@@ -23,13 +25,19 @@ class ESP_AR15 : RifleBoltLock_Base
 
 		if (item.IsKindOf("ESP_XLHndgrdBase"))
 		{
-			HideUnhideSelection("GasBlock", 0);
+			HideUnhideSelection("GasBlock_High", 0);
+			HideUnhideSelection("GasBlock_Low", 1);
 		}
 
 		if (item.IsKindOf("ESP_GripStock"))
 		{
 			HideUnhideSelection("Buffer", 0);
 			HideUnhideSelection("PistolGrip", 0);
+		}
+    if (item.IsKindOf("ItemOptics"))
+		{
+			HideUnhideSelection("GasBlock_High", 0);
+			HideUnhideSelection("GasBlock_Low", 1);
 		}
 	}
 
@@ -39,13 +47,19 @@ class ESP_AR15 : RifleBoltLock_Base
 
 		if (item.IsKindOf("ESP_XLHndgrdBase"))
 		{
-			HideUnhideSelection("GasBlock", 1);
+			HideUnhideSelection("GasBlock_High", 1);
+		  HideUnhideSelection("GasBlock_Low", 0);
 		}
 
 		if (item.IsKindOf("ESP_GripStock"))
 		{
 			HideUnhideSelection("Buffer", 1);
 			HideUnhideSelection("PistolGrip", 1);
+		}
+    if (item.IsKindOf("ItemOptics"))
+		{
+			HideUnhideSelection("GasBlock_High", 1);
+			HideUnhideSelection("GasBlock_Low", 0);
 		}
 	}	
 

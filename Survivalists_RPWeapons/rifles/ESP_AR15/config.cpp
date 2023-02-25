@@ -46,7 +46,9 @@ class cfgWeapons
 			"hide_barrel",
 			"GasBlock",
 			"PistolGrip",
-			"Buffer"
+			"Buffer",
+      "GasBlock_High",
+			"GasBlock_Low"
 		};
 		attachments[]=
 		{

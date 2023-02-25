@@ -923,9 +923,9 @@ class CfgVehicles
 	};
   
   class ESP_XLHndgrdBase: Inventory_Base{};
-	class ESP_Erg_XlHndgrd: ESP_XLHndgrdBase
+	class ESP_Erg_XlHndgrd_Colorbase: ESP_XLHndgrdBase
 	{	
-		scope=2;
+		scope=0;
 		displayName="ESP-Erg 18' Handguard";
 		descriptionShort="The Erg 18 Handguard is a light weight 18inch handguard. Installing this on any of the ESP AR platforms means that you will remove the ironsight from the gasblock";
 		model="Survivalists_RPWeapons\attachments\support\ESP_Urgi_Grip_Longest.p3d";
@@ -945,7 +945,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_CO.paa"
+			"Survivalists_RPWeapons\attachments\support\data\Urgi_HndGurd_Black_CO.paa"
 		};
 		class DamageSystem
 		{
@@ -956,11 +956,11 @@ class CfgVehicles
 					hitpoints=200;
 					healthLevels[]=
 					{						
-						{1,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
-						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
-						{0.5,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
-						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}},						
-						{0,{"Survivalists_RPWeapons\attachments\support\data\ESP_AR15_Handguards.rvmat"}}
+						{1,{"Survivalists_RPWeapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\attachments\support\data\Urgi_HndGurd.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\attachments\support\data\Urgi_HndGurd.rvmat"}}
 					};
 				};
 			};
@@ -985,9 +985,9 @@ class CfgVehicles
 			};
 		};
 	};
-	class ESP_RIS_XlHndgrd: ESP_XLHndgrdBase
+	class ESP_RIS_XlHndgrd_Colorbase: ESP_XLHndgrdBase
   {	
-		scope=2;
+		scope=0;
 		displayName="ESP-RIS 18' Handguard";
 		descriptionShort="The RIS 18 Handguard is an 18inch handguard with rails at the very end of it. Installing this on any of the ESP AR platforms means that you will remove the ironsight from the gasblock";
 		model="Survivalists_RPWeapons\attachments\support\ESP_RIS_HndGrd_Longest.p3d";
@@ -1835,7 +1835,25 @@ class CfgVehicles
 			"Survivalists_RPWeapons\attachments\support\data\junkak_co.paa"
 		};
 	};
-  class ESP_Erg_XlHndgrd_Tan: ESP_Erg_XlHndgrd
+  class ESP_Erg_XlHndgrd_Tan: ESP_Erg_XlHndgrd_Colorbase
+	{
+		scope=2;
+		color="Tan";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\Urgi_HndGurd_CO.paa"
+		};
+	};
+  class ESP_Erg_XlHndgrd_Black: ESP_Erg_XlHndgrd_Colorbase
+	{
+		scope=2;
+		color="Black";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\support\data\Urgi_HndGurd_Black_CO.paa"
+		};
+	};
+	class ESP_RIS_XlHndgrd_Tan: ESP_RIS_XlHndgrd_Colorbase
 	{
 		scope=2;
 		color="Tan";
@@ -1844,13 +1862,13 @@ class CfgVehicles
 			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_Tan_CO.paa"
 		};
 	};
-	class ESP_RIS_XlHndgrd_Tan: ESP_RIS_XlHndgrd
+  class ESP_RIS_XlHndgrd_Black: ESP_RIS_XlHndgrd_Colorbase
 	{
 		scope=2;
-		color="Tan";
+		color="Black";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_Tan_CO.paa"
+			"Survivalists_RPWeapons\attachments\support\data\ESP_Ar15_Handguards_CO.paa"
 		};
 	};
   class ESP_SA80_Plastic_HndGrd_Black: ESP_SA80_Plastic_HndGrd_Colorbase
