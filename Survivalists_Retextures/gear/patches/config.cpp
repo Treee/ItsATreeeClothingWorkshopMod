@@ -2375,7 +2375,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_01: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_SquadLeader: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Squad Leader";
@@ -2385,7 +2385,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_02: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_TeamLeader: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Team Leader";
@@ -2395,7 +2395,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_03: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_MachineGunner: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Machinegunner";
@@ -2405,7 +2405,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_04: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Medic: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Medic";
@@ -2415,7 +2415,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_05: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Sniper: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Sniper";
@@ -2425,7 +2425,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_06: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Rifleman: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Rifleman";
@@ -2435,7 +2435,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_07: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_US: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - US";
@@ -2445,7 +2445,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_08: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_UK: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - UK";
@@ -2455,7 +2455,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_09: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_AUS: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - AUS";
@@ -2465,7 +2465,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_10: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_USIR: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - US";
@@ -2475,7 +2475,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_11: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_UKIR: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - UK";
@@ -2485,7 +2485,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_12: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_AUSIR: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - AUS";
@@ -2495,7 +2495,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_13: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_RottensRaiders: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Rotten's Raiders";
@@ -2505,7 +2505,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_14: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_A10Warthog: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - A10 Warthog";
@@ -2515,7 +2515,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_15: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_EOD: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - EOD";
@@ -2525,7 +2525,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_16: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_FckShtUp: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - F*ck Sh*t Up";
@@ -2535,7 +2535,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_17: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_NoFckGvn: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - No F*cks Given";
@@ -2545,7 +2545,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_18: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_TooOld: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - I'm Too Old for This Sh*t";
@@ -2555,7 +2555,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_19: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_WeylandCorp: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Weyland-Yutani Corp";
@@ -2565,7 +2565,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_20: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_TheWarriors: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - The Warriors";
@@ -2575,7 +2575,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_21: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_CAN: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Canada";
@@ -2585,7 +2585,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_22: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_CANIR: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Canada";
@@ -2595,7 +2595,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_23: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Obey: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - OBEY";
@@ -2605,7 +2605,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_24: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Blackwater: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Blackwater";
@@ -2615,7 +2615,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_25: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_LagoonTrade: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Lagoon Trade & Courier Services";
@@ -2625,7 +2625,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_26: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_HCLI: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - HCLI";
@@ -2635,7 +2635,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_27: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Boog: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Boogaloo";
@@ -2645,7 +2645,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_28: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_UN: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - UN";
@@ -2655,7 +2655,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_29: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Umbrella: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Umbrella";
@@ -2665,7 +2665,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_30: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_UmbrellaUS: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Umbrella";
@@ -2675,7 +2675,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_31: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Romania: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Romania";
@@ -2685,7 +2685,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_32: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Sweden: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Sweden";
@@ -2695,7 +2695,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_33: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_Anarchy: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - Anarchy";
@@ -2705,7 +2705,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_34: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_RTO: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - RTO";
@@ -2715,7 +2715,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-	class SRP_PatchLogo_35: SRP_PatchLogo_ColorBase
+	class SRP_PatchLogo_ThisWay: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
 		displayName="Identifier Patch - This is the Way";

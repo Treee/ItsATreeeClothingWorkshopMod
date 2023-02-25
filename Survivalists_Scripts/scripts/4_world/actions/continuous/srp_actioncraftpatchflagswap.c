@@ -1,57 +1,20 @@
-class PatchFlagSwitchReciveData extends ActionReciveData
-{
-  int m_PatchFlagId;
-}
-
-class PatchFlagSwitchData extends ActionData
-{
-  int m_PatchFlagId;
-};
-
-class ActionSwitchPatchFlagOptionCB extends ActionContinuousBaseCB
-{
-	override void CreateActionComponent()
-	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime(4.0);
-	}
-};
-
-class ActionSwitchPatchFlagOption extends ActionContinuousBase
+class ActionSwitchPatchFlagOption extends ActionSRPVariantIdOption
 {	
-  void ActionSwitchPatchFlagOption()
-	{
-		m_CallbackClass = ActionSwitchPatchFlagOptionCB;
-		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONMOD_CRAFTING;
-		m_FullBody = false;
-		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT | DayZPlayerConstants.STANCEMASK_CROUCH;
-    m_Text = "Flag - ";
-
-    if ( GetGame().IsClient() || !GetGame().IsMultiplayer() )
-		{
-			GetVariantManager().GetOnUpdateInvoker().Insert(OnUpdateActions);
-		}
-	}
-	
-	override void CreateConditionComponents()  
-	{	
-		m_ConditionItem = new CCINonRuined;
-		m_ConditionTarget = new CCTSelf;
-	}
-
   override void OnActionInfoUpdate( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		string letter = GetPatchFlagOptions().Get(m_VariantID);
-		if (letter && letter != "" )
-		{
-      // 14 = "SRP_PatchFlag_".Length();
-      letter = letter.Substring(14, letter.Length());
-			m_Text = "Flag - " + letter;
-		}
-	}
+    // Print("on action info update");
+    m_Text = "No Option";
 
+    string displayOption = GetVariantIdOptions().Get(m_VariantID);
+    if (displayOption && displayOption != "" )
+    {
+      displayOption = displayOption.Substring(14, displayOption.Length());
+      m_Text = "Flag Patch - " + displayOption;
+      // Print("on action info update: terxt: " + m_Text);
+    }
+	}
   override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
-	{	
+	{
     SRP_PatchFlag_StarterKit patchFlagStarterKit;
     // Print("Item: " + item);
     if (Class.CastTo(patchFlagStarterKit, item))
@@ -59,86 +22,37 @@ class ActionSwitchPatchFlagOption extends ActionContinuousBase
       // Print("bool?: " + patchFlagStarterKit.CanCraft());
       return patchFlagStarterKit.CanCraft();
     }
-    return false;
-	}
+    return false;	
+  }
 
   override void OnFinishProgressServer( ActionData action_data )
 	{	
     SRP_PatchFlag_StarterKit patchFlagStarterKit;
 		if (action_data.m_MainItem && Class.CastTo(patchFlagStarterKit, action_data.m_MainItem))
-		{
-      int variantId = PatchFlagSwitchData.Cast(action_data).m_PatchFlagId;
-      string newKitName = GetPatchFlagOptions().Get(variantId);
-      // Print("New kit name: " + newKitName);
-      GetGame().CreateObjectEx(newKitName, action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
-      patchFlagStarterKit.Delete();
+		{      
+      int variantId = SRP_VariantIdActionData.Cast(action_data).m_SRPVariantId;
+      TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, GetVariantIdOptions().Get(variantId), action_data.m_Player);
+      lambda.SetTransferParams(false, false);
+      action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
 		}
 	}
 
-  override ActionData CreateActionData()
+  override void OnUpdateActions( Object item, Object target, int component_index )
 	{
-		PatchFlagSwitchData action_data = new PatchFlagSwitchData;
-		return action_data;
-	}
-
-  override bool SetupAction( PlayerBase player, ActionTarget target, ItemBase item, out ActionData action_data, Param extra_data = NULL )
-	{	
-		if ( super.SetupAction( player, target, item, action_data, extra_data ) )
-		{			
-			if ( !GetGame().IsDedicatedServer() )
-			{
-				PatchFlagSwitchData.Cast(action_data).m_PatchFlagId = m_VariantID;
-			}
-			return true;
-		}		
-		return false;
-	}
-
-  override void WriteToContext(ParamsWriteContext ctx, ActionData action_data)
-	{
-		super.WriteToContext(ctx, action_data);
-		ctx.Write(PatchFlagSwitchData.Cast(action_data).m_PatchFlagId);
-	}
-
-	override bool ReadFromContext(ParamsReadContext ctx, out ActionReciveData action_recive_data )
-	{
-		action_recive_data = new PatchFlagSwitchReciveData;
-		super.ReadFromContext(ctx, action_recive_data);
-		
-		int variantId;
-		if ( ctx.Read(variantId) )
-		{
-      // Print("[ReadFromContext] - " + variantId)
-			PatchFlagSwitchReciveData.Cast( action_recive_data ).m_PatchFlagId = variantId;
-			return true;
+    // Print("on update actions start");
+    SRP_IntermediateCraftingKitBase intermediateKit;
+    if ( Class.CastTo(intermediateKit, item) )
+    {
+      // Print("on update actions clothing cast: " + clothingItem);
+      GetVariantManager().SetActionVariantCount(GetVariantIdOptions().Count());
 		}
 		else
 		{
-			return false;
-		}
-  }
-
-  override void HandleReciveData(ActionReciveData action_recive_data, ActionData action_data)
-	{
-		super.HandleReciveData(action_recive_data, action_data);    
-		PatchFlagSwitchData.Cast(action_data).m_PatchFlagId = PatchFlagSwitchReciveData.Cast( action_recive_data ).m_PatchFlagId;
-	}
-
-
-  void OnUpdateActions( Object item, Object target, int component_index )
-	{
-		SRP_PatchFlag_StarterKit patchFlagStarterKit;
-		if (Class.CastTo(patchFlagStarterKit, item))
-		{
-      GetVariantManager().SetActionVariantCount(GetPatchFlagOptions().Count());
-		}
-		else
-		{
+      // Print("clear items");
 			GetVariantManager().Clear();
 		}
 	}
-
-  TStringArray GetPatchFlagOptions()
+  override TStringArray GetVariantIdOptions(string itemType="")
   {
     return {
       "SRP_PatchFlag_Mayor",

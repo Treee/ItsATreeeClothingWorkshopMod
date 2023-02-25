@@ -11,6 +11,7 @@ modded class PluginRecipesManager
     RegisterRecipe(new SRP_DecraftBBPKits);
     
     //==========================================================UNREGISTER RECIPES
+      UnregisterRecipe("DUB_Guitar_R");
       UnregisterRecipe("FillSyringe");
       UnregisterRecipe("BBPCraftStepLadder");
       UnregisterRecipe("SRP_DismantleElectronicJammers");
