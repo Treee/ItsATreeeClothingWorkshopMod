@@ -832,9 +832,11 @@ class CfgVehicles
 		swayModifier[]={1,1,1};
     repairableWithKits[]={7};
 		repairCosts[]={25};
+		simpleHiddenSelections[] = {"hide"};
 		hiddenSelections[]=
 		{
-			"Zbytek"
+			"zbytek",
+			"reddot"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -866,7 +868,7 @@ class CfgVehicles
 			opticsDisablePeripherialVision=0.67000002;
 			opticsFlare=1;
 			opticsPPEffects[]={};
-			opticSightTexture="dz\weapons\attachments\optics\data\collimdot_red_ca.paa";
+			opticSightTexture="Survivalists_RPWeapons\attachments\optics\data\EOTech_Reticle_CA.paa";
 			opticsZoomMin=0.52359998;
 			opticsZoomMax=0.52359998;
 			opticsZoomInit=0.52359998;
@@ -886,12 +888,12 @@ class CfgVehicles
 			attachmentAction=1;
 		};
 	};
-	class ESP_Holographic_Tan: ESP_Holographic
+  class ESP_Holographic_Tan: ESP_Holographic
 	{
 		scope=2;
 		hiddenSelections[]=
 		{
-			"Zbytek"
+			"zbytek"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -1137,8 +1139,8 @@ class CfgVehicles
 	class ESP_XPS3: ItemOptics
 	{
 		scope=2;
-		displayName="ESP-PS3";
-		descriptionShort="The ESP-PS3 is a newer and smaller model of the ESP-Holo. By reducing it's size Espen Industries were able to reduce it's weight by almost half";
+		displayName="ESP-XS3";
+		descriptionShort="The ESP-XS3 is a newer and smaller model of the ESP-Holo. By reducing it's size Espen Industries were able to reduce it's weight by almost half";
 		model="Survivalists_RPWeapons\attachments\optics\ESP_XPS3.p3d";
 		debug_ItemCategory=3;
 		attachments[]=
@@ -1179,6 +1181,86 @@ class CfgVehicles
 						{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}},						
 						{0.30000001,{}},						
 						{0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa","Survivalists_RPWeapons\attachments\optics\data\ESP_HOLOGRAPHIC.rvmat"}}
+					};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera="eyeScope";
+			cameraDir="cameraDir";
+			modelOptics="-";
+			opticsDisablePeripherialVision=0.67000002;
+			opticsFlare=1;
+			opticsPPEffects[]={};
+			opticSightTexture="Survivalists_RPWeapons\attachments\optics\data\EOTech_Reticle_CA.paa";
+			opticsZoomMin=0.52359998;
+			opticsZoomMax=0.52359998;
+			opticsZoomInit=0.52359998;
+			distanceZoomMin=25;
+			distanceZoomMax=200;
+			discreteDistance[]={25,50,100,200};
+			discreteDistanceInitIndex=0;
+			PPMaskProperties[]={0.5,0.5,0.40000001,0.050000001};
+			PPLensProperties[]={1,0.15000001,0,0};
+			PPBlurProperties=0.2;
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			energyUsagePerSecond=0.02;
+			plugType=1;
+			attachmentAction=1;
+		};
+	};
+  class STG_OKP7: ReflexOptic
+	{
+		scope=2;
+		displayName="STAG OKP-7";
+		descriptionShort="The STAG OPK-7's key feature of is a rimless reflector attachment that doesn't block any field of fire sections; instead, reflector is protected by thin and durable visor that is almost un-noticeable when firing.";
+		model="Survivalists_RPWeapons\attachments\optics\STG_OPK.p3d";
+		debug_ItemCategory=3;
+		attachments[]=
+		{
+			"BatteryD"
+		};
+		animClass="Binoculars";
+		simulation="itemoptics";
+		selectionFireAnim="zasleh";
+		memoryPointCamera="eyeScope";
+		cameraDir="cameraDir";
+		rotationFlags=17;
+		reversed=0;
+		weight=250;
+		itemSize[]={2,1};
+		dispersionModifier=-0.00050000002;
+		dispersionCondition="true";
+		recoilModifier[]={1,1,1};
+		swayModifier[]={1,1,1};
+    repairableWithKits[]={7};
+		repairCosts[]={25};
+		hiddenSelections[]=
+		{
+			"reddot"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\attachments\optics\data\STG_OPK3_CO.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=30;
+          healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\attachments\optics\data\STG_OPK3.rvmat"}},						
+						{0.69999999,{}},						
+						{0.5,{"Survivalists_RPWeapons\attachments\optics\data\STG_OPK3.rvmat"}},						
+						{0.30000001,{}},						
+						{0,{"Survivalists_RPWeapons\attachments\optics\data\STG_OPK3.rvmat"}}
 					};
 				};
 			};

@@ -80,13 +80,13 @@ class Stage6
 };
 class Stage7
 {
-	texture="#(argb,8,8,3)color(0,0,0,1,CO)";
+	texture="dz\data\data\env_land_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
 		aside[]={1,0,0};
 		up[]={0,1,0};
-		dir[]={0,0,1};
+		dir[]={0,0,0};
 		pos[]={0,0,0};
 	};
 };
