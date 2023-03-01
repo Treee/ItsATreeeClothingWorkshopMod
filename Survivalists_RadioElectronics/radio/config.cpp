@@ -142,7 +142,6 @@ class CfgVehicles
 			"Rope",
 			"Material_FPole_Rope",
 			"Material_Shelter_Rope",
-      "Stones",
       "TruckBattery",
 			"LargeBattery"
     };

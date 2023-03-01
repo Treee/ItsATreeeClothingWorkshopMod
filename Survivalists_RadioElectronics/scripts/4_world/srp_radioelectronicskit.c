@@ -92,7 +92,7 @@ class SRP_RadioElectronicsJammer_Intermediate_Kit extends SRP_RadioElectronics_I
     isValid &= HasAttachmentFilled("Rope");
     isValid &= HasAttachmentFilled("Material_FPole_Rope");
     isValid &= HasAttachmentFilled("Material_Shelter_Rope");
-    isValid &= HasAttachmentFilledWithQuantity("Stones", 16);
+    // isValid &= HasAttachmentFilledWithQuantity("Stones", 16);
     isValid &= HasAttachmentFilled("TruckBattery");
     isValid &= HasAttachmentFilled("LargeBattery");
     return isValid;
