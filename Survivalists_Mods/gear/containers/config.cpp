@@ -4981,6 +4981,12 @@ class CfgVehicles
 				};
 			};
 		};
+    class Cargo
+		{
+			itemsCargoSize[]={10,8};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
   };
 
   class SRP_PropaneLocker_Colorbase: Container_Base

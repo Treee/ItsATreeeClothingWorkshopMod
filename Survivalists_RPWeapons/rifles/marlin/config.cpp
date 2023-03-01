@@ -27,7 +27,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName=".308 Marlin";
-		descriptionShort="Espen Industries. Marlin 1894 is a lever-action rifle chambered in .308. Allows modifications.";
+		descriptionShort="Marlin 1894 is a lever-action rifle chambered in .308. Allows modifications.";
 		model="Survivalists_RPWeapons\rifles\marlin\marlin.p3d";
 		attachments[]=
 		{
