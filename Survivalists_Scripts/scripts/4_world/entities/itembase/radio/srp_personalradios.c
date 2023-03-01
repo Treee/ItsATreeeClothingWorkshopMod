@@ -72,7 +72,6 @@ class SRP_PersonalRadio_Terminal extends StaticTransmitter
 	//--- POWER EVENTS
 	override void OnSwitchOn()
 	{
-		super.OnSwitchOn();
 		if ( !GetCompEM().CanWork() )
 		{
 			GetCompEM().SwitchOff();
@@ -88,17 +87,19 @@ class SRP_PersonalRadio_Terminal extends StaticTransmitter
 	}	
 	override void OnWorkStart()
 	{
-		super.OnWorkStart();
-		//turn off device
+		EnableBroadcast ( true );
+		EnableReceive ( true );
 		SwitchOn ( true ); // start send/receive voice
 		//sound
 		SoundTurnedOnNoiseStart();
 	}
 	override void OnWorkStop()
 	{
-		super.OnWorkStop();
+		GetCompEM().SwitchOff();
 		//turn off device
-		SwitchOn ( false ); // stop send/receive voice
+		EnableBroadcast ( false );
+		EnableReceive ( false );	
+		SwitchOn ( false );		
 		//sound
 		SoundTurnedOnNoiseStop();		
 	}

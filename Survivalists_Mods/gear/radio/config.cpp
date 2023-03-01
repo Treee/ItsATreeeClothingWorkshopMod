@@ -477,7 +477,6 @@ class CfgVehicles
     repairableWithKits[]={};
 		repairCosts[]={};
     inventorySlot[]={"Back"};
-    attachments[]={"CarBattery"};
     hiddenSelections[]=
 		{
 			"zbytek"
