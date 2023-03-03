@@ -29,7 +29,7 @@ class cfgWeapons
 		descriptionShort="The Vector is a submachine that fires .45 ACP rounds. This gun was designed in late 2003 by Kriss. This weapon was mostly popular with small private secruity companies";
 		model="Survivalists_RPWeapons\smgs\ESP_Vector\ESPVector.p3d";
 		attachments[]={"VectorHndGrd","weaponButtstockM4","weaponOptics","pistolMuzzle"};
-		chamberableFrom[]={"Ammo_9x19"};
+		chamberableFrom[]={"Ammo_45ACP"};
 		magazines[]={"ESPVectormag"};
 		magazineSwitchTime=0.5;
 		ejectType=1;
