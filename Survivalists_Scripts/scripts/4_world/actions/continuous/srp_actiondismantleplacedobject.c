@@ -26,7 +26,7 @@ class SRP_ActionDismantlePlacedObject: ActionContinuousBase
 	override void CreateConditionComponents()  
 	{	
 		m_ConditionItem = new CCINonRuined;
-		m_ConditionTarget = new CCTNonRuined( UAMaxDistances.BASEBUILDING );
+		m_ConditionTarget = new CCTNonRuined( UAMaxDistances.REPAIR );
 	}
 	override bool CanBeUsedLeaning()
 	{
@@ -42,7 +42,7 @@ class SRP_ActionDismantlePlacedObject: ActionContinuousBase
       return false;
 		
     House house;
-    if (!Class.CastTo(house, target))
+    if (!Class.CastTo(house, target.GetObject()))
       return false;
 
     if (!house.CanBeDeconstructed())
