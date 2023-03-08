@@ -16,5 +16,17 @@ modded class EmoteConstructor
     emotes.Insert(EmoteFreeze);
     emotes.Insert(EmoteHot);
     emotes.Insert(EmoteLegBreak);
+
+    int scratchBallsAnimation = emotes.Find(EmoteSurAnmScratchBalls);
+    if (scratchBallsAnimation > -1)
+    {
+      emotes.Remove(scratchBallsAnimation);
+    }
+    int slapAssAnimation = emotes.Find(EmoteSurAnmPoplacaniPoZadku);
+    if (slapAssAnimation > -1)
+    {
+      emotes.Remove(slapAssAnimation);
+    }
+    
 	}
 }
