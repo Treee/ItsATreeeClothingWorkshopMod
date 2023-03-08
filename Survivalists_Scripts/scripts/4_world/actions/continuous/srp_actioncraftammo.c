@@ -36,7 +36,17 @@ class SRP_ActionCraftAmmo extends ActionSRPVariantIdOption
         Magazine ammo = Magazine.Cast( GetGame().CreateObjectEx(string.Format("Ammo_%1", ammoType), action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE) );
         if (ammo)
         {
+          // Print("ammo stuff");
           ammo.ServerSetAmmoCount(target_bench.GetBulletYieldValue(ammoType));
+          target_bench.DecreaseHealth(1);		
+          target_bench.RemoveAmmoCraftingComponents(ammoType);
+        }
+        else
+        {
+          // stuff isnt ammo, items get to spawn normally
+          // EntityAI entity = GetGame().CreateObjectEx(ammoType, action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
+          // Print("grenade stuff " + entity + " ammot type: " + ammoType);
+          target_bench.GetInventory().CreateInInventory(ammoType);
           target_bench.DecreaseHealth(1);		
           target_bench.RemoveAmmoCraftingComponents(ammoType);
         }
@@ -73,7 +83,6 @@ class SRP_ActionCraftAmmo extends ActionSRPVariantIdOption
       // "RPG7_AP",
       // "LAW_HE",
       // "GrenadeM4",
-      // "40mm_Explosive",
       // "40mm_ChemGas",
       // already craftable via other means
       // "Flare",
@@ -100,7 +109,17 @@ class SRP_ActionCraftAmmo extends ActionSRPVariantIdOption
       "40mm_Smoke_Green",
       "40mm_Smoke_White",
       "40mm_Smoke_Black",
+      "M18SmokeGrenade_Red",
+      "M18SmokeGrenade_Green",
+      "M18SmokeGrenade_Yellow",
+      "M18SmokeGrenade_Purple",
+      "M18SmokeGrenade_White",
+      "RDG2SmokeGrenade_Black",
+      "RDG2SmokeGrenade_White",
+      "FlashGrenade",
       "40mm_Explosive"
+      "RGD5Grenade",
+      "M67Grenade",
     };
   }
 };

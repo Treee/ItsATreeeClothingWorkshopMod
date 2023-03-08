@@ -106,6 +106,13 @@ class SRP_AdvancedWorkbench extends SRP_Container_Base
       case "40mm_Smoke_Green":
       case "40mm_Smoke_White":
       case "40mm_Smoke_Black":
+      case "M18SmokeGrenade_Red":
+      case "M18SmokeGrenade_Green":
+      case "M18SmokeGrenade_Yellow":
+      case "M18SmokeGrenade_Purple":
+      case "M18SmokeGrenade_White":
+      case "RDG2SmokeGrenade_Black":
+      case "RDG2SmokeGrenade_White":
       case "357":
           return "10 7 5";
         break;
@@ -120,6 +127,7 @@ class SRP_AdvancedWorkbench extends SRP_Container_Base
       case "308Win":
       case "762x54":
       case "9x39AP":
+      case "FlashGrenade":
           return "20 15 10";
         break;
       
@@ -128,6 +136,8 @@ class SRP_AdvancedWorkbench extends SRP_Container_Base
         break;
 
       case "40mm_Explosive":
+      case "RGD5Grenade":
+      case "M67Grenade":
           return "100 50 20";
         break;
     }
@@ -154,6 +164,16 @@ class SRP_AdvancedWorkbench extends SRP_Container_Base
       case "40mm_Smoke_Black":
       case "700Nitro":
       case "40mm_Explosive":
+      case "RGD5Grenade":
+      case "M67Grenade":
+      case "M18SmokeGrenade_Red":
+      case "M18SmokeGrenade_Green":
+      case "M18SmokeGrenade_Yellow":
+      case "M18SmokeGrenade_Purple":
+      case "M18SmokeGrenade_White":
+      case "RDG2SmokeGrenade_Black":
+      case "RDG2SmokeGrenade_White":
+      case "FlashGrenade":
           return 1;
         break;
 
