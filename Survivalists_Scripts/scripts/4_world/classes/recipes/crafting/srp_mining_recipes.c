@@ -198,6 +198,10 @@ class Craft_SRP_CrushStoneChunk_CrudeTool extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
+    if (ingredients[0].GetType() == "SRP_Mining_StoneChunk_Clay")
+      return false;
+    if (ingredients[0].GetType() == "SRP_Mining_StoneChunk_Coke")
+      return false;
 		return true;
 	}
 
@@ -317,6 +321,10 @@ class Craft_SRP_CrushStoneChunk_JewlingTool extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
+    if (ingredients[0].GetType() == "SRP_Mining_StoneChunk_Clay")
+      return false;
+    if (ingredients[0].GetType() == "SRP_Mining_StoneChunk_Coke")
+      return false;
 		return true;
 	}
 
