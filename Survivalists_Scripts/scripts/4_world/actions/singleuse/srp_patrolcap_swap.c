@@ -20,7 +20,7 @@ class ActionFlipCapBackward extends ActionSingleUseBase
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		if (item)// && item.GetInventory().AttachmentCount() == 0)
+		if (item)
 			return true;
 		return false;
 	}
@@ -29,8 +29,7 @@ class ActionFlipCapBackward extends ActionSingleUseBase
 
 	override void OnExecuteServer( ActionData action_data )
 	{
-    string patrolCapType = action_data.m_MainItem.GetType();
-    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, patrolCapType+ "_Backwards", action_data.m_Player);
+    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, string.Format("SRP_MilitaryPatrolCapBackwards_%1", action_data.m_MainItem.GetColor()), action_data.m_Player);
     lambda.SetTransferParams(true, true, true, false, 1);
     action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
 	}
@@ -58,7 +57,7 @@ class ActionFlipCapForward extends ActionSingleUseBase
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		if (item)// && item.GetInventory().AttachmentCount() == 0)
+		if (item)
 			return true;
 		return false;
 	}
@@ -67,9 +66,7 @@ class ActionFlipCapForward extends ActionSingleUseBase
 
 	override void OnExecuteServer( ActionData action_data )
 	{
-    string patrolCapType = action_data.m_MainItem.GetType();
-    patrolCapType.Replace("_Backwards", "");
-    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, patrolCapType, action_data.m_Player);
+    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, string.Format("SRP_MilitaryPatrolCap_%1", action_data.m_MainItem.GetColor()), action_data.m_Player);
     lambda.SetTransferParams(true, true, true, false, 1);
     action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
 	}

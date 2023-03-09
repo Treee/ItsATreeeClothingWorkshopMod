@@ -45,8 +45,10 @@ class CfgVehicles
   class SRP_CombatHelmetHighCut_ColorBase;
   class SRP_CombatHelmetAltyn_ColorBase;
   class SRP_AltynHelmetVisor_ColorBase;
-  class BaseballCap_MilitaryPatrolTan;
-  class BaseballCap_MilitaryPatrolTan_Backwards;
+  class SRP_MilitaryPatrolCap_ColorBase;
+  class SRP_MilitaryPatrolCapBackwards_ColorBase;
+  class BaseballCap_MilitaryPatrolTan; // deprecated
+  class BaseballCap_MilitaryPatrolTan_Backwards; // deprecated
   class SRP_EarProtection_ColorBase;
   class SRP_FrakenArmor_Helmet_ColorBase;
   class SRP_Alchemist_Hat;
@@ -1686,6 +1688,9 @@ class CfgVehicles
 		};
   };
   
+
+
+//========================= REMOVE THESE  
   class BaseballCap_MilitaryPatrolBlack: BaseballCap_MilitaryPatrolTan
 	{
 		scope=2;
@@ -1784,7 +1789,145 @@ class CfgVehicles
 	// 	hiddenSelections[] = {"zbytek"};
 	// 	hiddenSelectionsTextures[] = {"Benji_Retextures\data\srp_patrolcap_HK_co.paa"};
 	// };
+//================================================= Patrol Hats
+  class SRP_MilitaryPatrolCap_Tan: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="Tan";
+	};
+  class SRP_MilitaryPatrolCapBackwards_Tan: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="Tan";
+  };
+  class SRP_MilitaryPatrolCap_Black: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="Black";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_black_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_Black: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="Black";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_black_co.paa"};
+  };
+  class SRP_MilitaryPatrolCap_Green: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="Green";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_Green: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="Green";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"};
+  };
+  class SRP_MilitaryPatrolCap_MC_Black: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="MC_Black";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MC_black_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_MC_Black: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="MC_Black";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MC_black_co.paa"};
+  };
+  class SRP_MilitaryPatrolCap_ERDL: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="ERDL";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_ERDL_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_ERDL: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="ERDL";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_ERDL_co.paa"};
+  };
+  class SRP_MilitaryPatrolCap_CAD: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="CAD";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_CAD_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_CAD: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="CAD";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_CAD_co.paa"};
+  };
+  class SRP_MilitaryPatrolCap_ChocChip: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="ChocChip";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_ChocChip_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_ChocChip: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="ChocChip";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_ChocChip_co.paa"};
+  };
+  class SRP_MilitaryPatrolCap_M05: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="M05";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_M05_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_M05: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="M05";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_M05_co.paa"};
+  };
+  class SRP_MilitaryPatrolCap_MARPAT_Wood: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="MARPAT_Wood";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MPat_Wood_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_MARPAT_Wood: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="MARPAT_Wood";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MPat_Wood_co.paa"};
+  };
+  class SRP_MilitaryPatrolCap_HelloKitty: SRP_MilitaryPatrolCap_ColorBase
+	{
+		scope=2;
+		color="HelloKitty";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_HK_co.paa"};
+	};
+  class SRP_MilitaryPatrolCapBackwards_HelloKitty: SRP_MilitaryPatrolCapBackwards_ColorBase
+  {
+		scope=2;
+    color="HelloKitty";
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_HK_co.paa"};
+  };
 
+//================================================= Cowboy Hats
   class SRP_Cowboy_Hat_Carl_Brown: SRP_Cowboy_Hat_Carl
 	{
 		scope=2;
@@ -1823,6 +1966,7 @@ class CfgVehicles
 		};
 	};
 
+//================================================= Witch Hats
   class WitchHat_Blue: WitchHat
   {
     scope=2;
@@ -1848,6 +1992,7 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\witchhat_RedKitty_co.paa"};
   };
 
+//================================================= Fraken Helmet
   class SRP_FrakenArmor_Helmet_Basic: SRP_FrakenArmor_Helmet_ColorBase  // new
 	{
 		scope=2;
@@ -1861,6 +2006,7 @@ class CfgVehicles
 		};
 	};
 
+//================================================= Alchemy Hats
   class SRP_Alchemist_Hat_Green: SRP_Alchemist_Hat
 	{
 		scope=2;

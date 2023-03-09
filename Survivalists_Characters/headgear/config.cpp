@@ -1328,8 +1328,131 @@ class CfgVehicles
 	};
 
 // -=============================== OLD MVS STUFF  
+  class SRP_MilitaryPatrolCap_ColorBase: Clothing
+	{
+    scope=0;
+    displayName="Patrol Cap";
+    descriptionShort="Espen Industries. A tight fitting cap with room for a patch above the bill.";
+    model="Survivalists_Characters\headgear\srp_patrolcap_g.p3d";
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+    rootClassName="SRP_MilitaryPatrolCap";
+    colorVariants[]=
+    {
+      "Tan",
+      "Green",
+      "Black",
+      "MC_Black",
+      "ERDL",
+      "CAD",
+      "ChocChip",
+      "M05",
+      "MARPAT_Wood",
+      "HelloKitty"
+    };
+		weight=110;
+		itemSize[]={1,2};
+		itemsCargoSize[]={1,1};
+		varWetMax=1;
+		heatIsolation=0.3;
+		repairableWithKits[]={3,8};
+		repairCosts[]={50,25};
+		headSelectionsToHide[]=
+		{
+			"Clipping_baseballcap"
+		};
+		attachments[]=
+		{
+      "SRP_Patch",
+      "SRP_Comtacs"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\headgear\data\srp_patrolcap_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Characters\headgear\data\srp_patrolcap.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\headgear\data\srp_patrolcap.rvmat"}},
+            {0.69999999,	{	"Survivalists_Characters\headgear\data\srp_patrolcap.rvmat"}},
+            {0.5,	{	"Survivalists_Characters\headgear\data\srp_patrolcap_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Characters\headgear\data\srp_patrolcap_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Characters\headgear\data\srp_patrolcap_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\srp_patrolcap_m.p3d";
+			female="Survivalists_Characters\headgear\srp_patrolcap_f.p3d";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_MilitaryPatrolCapBackwards_ColorBase: SRP_MilitaryPatrolCap_ColorBase
+	{
+    scope=0;
+    displayName="Backwards Patrol Cap";
+    rootClassName="SRP_MilitaryPatrolCapBackwards";
+    colorVariants[]=
+    {
+      "Tan",
+      "Green",
+      "Black",
+      "MC_Black",
+      "ERDL",
+      "CAD",
+      "ChocChip",
+      "M05",
+      "MARPAT_Wood",
+      "HelloKitty"
+    };
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\srp_patrolcap_backwards_m.p3d";
+			female="Survivalists_Characters\headgear\srp_patrolcap_backwards_f.p3d";
+		};
+	};
 
-  class BaseballCap_MilitaryPatrolTan: BaseballCap_ColorBase
+  class BaseballCap_MilitaryPatrolTan: BaseballCap_ColorBase // deprecated, delete eventually
 	{
 		scope=2;
 		color="MilitaryPatrolTan";
@@ -1354,8 +1477,20 @@ class CfgVehicles
 		{
 			"Survivalists_Characters\headgear\data\srp_patrolcap.rvmat"
 		};
-    rootClassName="";
-    colorVariants[]={};
+    rootClassName="SRP_MilitaryPatrolCap";
+    colorVariants[]=
+    {
+      "Tan",
+      "Green",
+      "Black",
+      "MC_Black",
+      "ERDL",
+      "CAD",
+      "ChocChip",
+      "M05",
+      "MARPAT_Wood",
+      "HelloKitty"
+    };
     class ClothingTypes
 		{
 			male="Survivalists_Characters\headgear\srp_patrolcap_m.p3d";
@@ -1380,12 +1515,23 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class BaseballCap_MilitaryPatrolTan_Backwards: BaseballCap_MilitaryPatrolTan
+  class BaseballCap_MilitaryPatrolTan_Backwards: BaseballCap_MilitaryPatrolTan // deprecated, delete eventually
   {
 		scope=2;
-    rootClassName="";
-    colorVariants[]={};
+    rootClassName="SRP_MilitaryPatrolCapBackwards";
+    colorVariants[]=
+    {
+      "Tan",
+      "Green",
+      "Black",
+      "MC_Black",
+      "ERDL",
+      "CAD",
+      "ChocChip",
+      "M05",
+      "MARPAT_Wood",
+      "HelloKitty"
+    };
     class ClothingTypes
 		{
 			male="Survivalists_Characters\headgear\srp_patrolcap_backwards_m.p3d";

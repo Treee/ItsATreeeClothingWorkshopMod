@@ -27,7 +27,7 @@ class SRP_Goggles_Face extends Clothing
 	}
 };
 
-class BaseballCap_MilitaryPatrolTan extends BaseballCap_ColorBase 
+class BaseballCap_MilitaryPatrolTan extends BaseballCap_ColorBase // deprecated
 {
   override void SetActions()
 	{
@@ -35,8 +35,24 @@ class BaseballCap_MilitaryPatrolTan extends BaseballCap_ColorBase
 		AddAction(ActionFlipCapBackward);
 	}
 };
+class BaseballCap_MilitaryPatrolTan_Backwards extends BaseballCap_ColorBase // deprecated
+{
+  override void SetActions()
+	{
+		super.SetActions();		
+		AddAction(ActionFlipCapForward);
+	}
+};
 
-class BaseballCap_MilitaryPatrolTan_Backwards extends BaseballCap_ColorBase
+class SRP_MilitaryPatrolCap_ColorBase extends BaseballCap_ColorBase 
+{
+  override void SetActions()
+	{
+		super.SetActions();		
+		AddAction(ActionFlipCapBackward);
+	}
+};
+class SRP_MilitaryPatrolCapBackwards_ColorBase extends BaseballCap_ColorBase
 {
   override void SetActions()
 	{
