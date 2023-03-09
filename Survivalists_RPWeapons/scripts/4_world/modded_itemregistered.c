@@ -4,10 +4,6 @@ modded class ModItemRegisterCallbacks
   {
     super.RegisterOneHanded( pType, pBehavior );  
 
-    //==================================================== AMMUNITION
-    pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Pistol60Count", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
-    pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Rifle40Count", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");
-    pType.AddItemInHandsProfileIK("SRP_BulletCrafting_Shotgun60Count", "dz/anims/workspaces/player/player_main/props/player_main_1h_compass.asi", pBehavior, "dz/anims/anm/player/ik/gear/compass.anm");    
     //==================================================== ATTACHMENTS
 		pType.AddItemInHandsProfileIK("TT_Grip_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,				"dz/anims/anm/player/ik/gear/electronic_repair_kit.anm");
 		pType.AddItemInHandsProfileIK("TT_Buttstock_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,				"dz/anims/anm/player/ik/gear/electronic_repair_kit.anm");

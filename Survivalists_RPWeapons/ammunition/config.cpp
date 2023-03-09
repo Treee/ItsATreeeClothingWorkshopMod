@@ -171,7 +171,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\ammunition\data\Sokol.paa"
+			"Survivalists_RPWeapons\ammunition\data\srp_explosive_nitrocellulose_co.paa"
 		};
 		class DamageSystem
 		{
@@ -219,7 +219,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\ammunition\data\Sokol.paa"
+			"Survivalists_RPWeapons\ammunition\data\srp_explosive_nitrocellulose_co.paa"
 		};
 		class DamageSystem
 		{
@@ -255,7 +255,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\ammunition\data\Sunar.paa"
+			"Survivalists_RPWeapons\ammunition\data\srp_explosive_pyroxylin_co.paa"
 		};
 		class DamageSystem
 		{
@@ -303,7 +303,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\ammunition\data\Sunar.paa"
+			"Survivalists_RPWeapons\ammunition\data\srp_explosive_pyroxylin_co.paa"
 		};
     class DamageSystem
 		{
@@ -338,7 +338,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\ammunition\data\Poroh.paa"
+			"Survivalists_RPWeapons\ammunition\data\srp_explosive_gunpowder_co.paa"
 		};
 		class DamageSystem
 		{
@@ -390,7 +390,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\ammunition\data\Poroh.paa"
+			"Survivalists_RPWeapons\ammunition\data\srp_explosive_gunpowder_co.paa"
 		};
 		class DamageSystem
 		{
@@ -425,7 +425,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\ammunition\data\Drob_can.paa"
+			"Survivalists_RPWeapons\ammunition\data\srp_explosive_fraction_co.paa"
 		};
 		class DamageSystem
 		{
@@ -473,7 +473,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_RPWeapons\ammunition\data\Drob_can.paa"
+			"Survivalists_RPWeapons\ammunition\data\srp_explosive_fraction_co.paa"
 		};
 		class DamageSystem
 		{
@@ -523,264 +523,4 @@ class CfgVehicles
       "SRP_AmmoBullets"
     }; 
 	};
-
-
-
-
-
-
-////////////////////////////////////////////// eventually remove everything below
-
-
-  class SRP_EmptyCasingPistol_9x19: SRP_BulletCrafting_Pistol60Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 9x19";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet9mmcasingempty.p3d";
-	};
-	class SRP_ProjectilePistol_9x19: SRP_BulletCrafting_Pistol60Count
-	{
-		scope=2;
-		displayName="9x19 Caliber Bullets";
-		descriptionShort="9x19 bullets";
-		model="Survivalists_RPWeapons\ammunition\bullet9mm.p3d";    
-	};
-  class SRP_EmptyCasingPistol_357: SRP_BulletCrafting_Pistol60Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for .357";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet357casingempty.p3d";
-	};
-	class SRP_ProjectilePistol_357: SRP_BulletCrafting_Pistol60Count
-	{
-		scope=2;
-		displayName=".357 Caliber Bullets";
-		descriptionShort=".357 bullets";
-		model="Survivalists_RPWeapons\ammunition\bullet357.p3d";    
-	};
-  class SRP_EmptyCasingPistol_22: SRP_BulletCrafting_Pistol60Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for .22";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet22mmcasingempty.p3d";
-	};
-	class SRP_ProjectilePistol_22: SRP_BulletCrafting_Pistol60Count
-	{
-		scope=2;
-		displayName=".22 Caliber Bullets";
-		descriptionShort=".22 bullets";
-		model="Survivalists_RPWeapons\ammunition\bullet22mm.p3d";    
-	};
-  class SRP_EmptyCasingPistol_45ACP: SRP_BulletCrafting_Pistol60Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for .45ACP";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet45acpcasingempty.p3d";
-	};
-	class SRP_ProjectilePistol_45ACP: SRP_BulletCrafting_Pistol60Count 
-	{
-		scope=2;
-		displayName="45ACP Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet45acp.p3d";    
-	};
-  class SRP_EmptyCasingPistol_380: SRP_BulletCrafting_Pistol60Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 380";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet380casingempty.p3d";
-	};
-	class SRP_ProjectilePistol_380: SRP_BulletCrafting_Pistol60Count 
-	{
-		scope=2;
-		displayName="380 Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet380.p3d";    
-	};
-//------------------------------ Rifle Bullet Crafting
-  class SRP_BulletCrafting_Rifle40Count: Inventory_Base
-  {
-    scope=0;
-		displayName="Base Bullet Crafting - Pistol";
-		descriptionShort="Base Bullet Kit Description";
-    itemSize[]={1,1};
-		weight=12;
-		canBeSplit=1;
-		varQuantityInit=10;
-		varQuantityMin=0;
-		varQuantityMax=40;    
-  };
-  class SRP_EmptyCasingRifle_556: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 5.56";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet556casingempty.p3d";
-	};
-	class SRP_ProjectileRifle_556: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="5.56 Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet556.p3d";    
-	};
-  class SRP_EmptyCasingRifle_545: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 5.45";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet545casingempty.p3d";
-	};
-	class SRP_ProjectileRifle_545: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="5.45 Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet545.p3d";    
-	};
-  class SRP_EmptyCasingRifle_762x39: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 7.62x39";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet762x39casingempty.p3d";
-	};
-	class SRP_ProjectileRifle_762x39: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="7.62x39 Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet762x39.p3d";    
-	};
-  class SRP_EmptyCasingRifle_762x54: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 7.62x54";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet762x54casingempty.p3d";
-	};
-	class SRP_ProjectileRifle_762x54: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="7.62x54 Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet762x54.p3d";    
-	};
-  class SRP_EmptyCasingRifle_308: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 308";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet308casingempty.p3d";
-	};
-	class SRP_ProjectileRifle_308: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="308 Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet308.p3d";    
-	};
-  class SRP_EmptyCasingRifle_9x39: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 9x39";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet9x39casingempty.p3d";
-	};
-	class SRP_ProjectileRifle_9x39: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="9x39 Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet9x39.p3d";    
-	};
-  class SRP_EmptyCasingRifle_300Blackout: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 300 Blackout";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet300blackoutcasingempty.p3d";
-	};
-	class SRP_ProjectileRifle_300Blackout: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="300 Blackout Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet300blackout.p3d";    
-	};
-  class SRP_EmptyCasingRifle_50Cal: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 50 Cal";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet50Calcasingempty.p3d";
-	};
-	class SRP_ProjectileRifle_50Cal: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="50 Cal Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet50Cal.p3d";    
-	};
-  class SRP_EmptyCasingRifle_12x7: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="Cartridge Cases for 12.7";
-		descriptionShort="Fill with gunpowder and bullets to complete.";
-		model="Survivalists_RPWeapons\ammunition\bullet12x7casingempty.p3d";
-	};
-	class SRP_ProjectileRifle_12x7: SRP_BulletCrafting_Rifle40Count
-	{
-		scope=2;
-		displayName="12.7 Caliber Bullets";
-		descriptionShort="";
-		model="Survivalists_RPWeapons\ammunition\bullet12x7.p3d";    
-	};
-
-// --------------- Shotgun Bullet Kits and Pellets
-  class SRP_BulletCrafting_Shotgun60Count: Inventory_Base
-  {
-    scope=0;
-		displayName="Base Bullet Crafting - Shotgun";
-		descriptionShort="Base Bullet Kit Description";
-    itemSize[]={1,1};
-		weight=28;
-		canBeSplit=1;
-		varQuantityInit=10;
-		varQuantityMin=0;
-		varQuantityMax=60;    
-  };
-  class SRP_EmptyCasing_Shotgun: SRP_BulletCrafting_Shotgun60Count
-  {
-    scope=2;
-		displayName="Shotgun Casings - Empty";
-		descriptionShort="Empty 12 gauge casings. Ready to be filled with gun powder and bullets.";
-		model="Survivalists_RPWeapons\ammunition\shotguncasingempty.p3d";
-  };
-  class SRP_ProjectileShotgun_Stone: SRP_BulletCrafting_Shotgun60Count
-  {
-		scope=2;
-		displayName="12 Gauge Projectiles - Crushed Stone";
-		descriptionShort="Stones crushed into chunks small enough for 12 gauge casings.";
-		model="Survivalists_RPWeapons\ammunition\crushedstone.p3d";    
-  };
-  class SRP_ProjectileShotgun_Nail: SRP_BulletCrafting_Shotgun60Count
-  {
-		scope=2;
-		displayName="12 Gauge Projectiles - Chopped Nail";
-		descriptionShort="Nails chopped into chunks small enough for 12 gauge casings.";
-		model="Survivalists_RPWeapons\ammunition\crushednail.p3d";    
-  };
-  class SRP_ProjectileShotgun_Pellet: SRP_BulletCrafting_Shotgun60Count
-  {
-		scope=2;
-		displayName="12 Gauge Projectiles - Pellet";
-		descriptionShort="Pellets pulled from other bullets small enough for 12 gauge casings.";
-		model="Survivalists_RPWeapons\ammunition\metalball.p3d";    
-  };
 };
