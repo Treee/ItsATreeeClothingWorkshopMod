@@ -391,7 +391,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem RegisterKatanaSlimSheathRecipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_KatanaSlim_Sheath", "Katana Sheath");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_KatanaSlim_Sheath_Black", "Katana Sheath");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.IRON, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.IRON, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.IRON, 1));
