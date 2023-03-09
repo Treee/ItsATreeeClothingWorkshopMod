@@ -308,6 +308,28 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:woodenlog";
     stackMax=5;
   };
+//================== Cabel Reel Materials
+  class Slot_SRP_MaterialSpool_Rope
+	{
+		name="SRP_MaterialSpool_Rope";
+		displayName="Rope";
+		ghostIcon="set:dayz_inventory image:rope";
+    stackMax=35; // max stack rope is 1
+	};
+  class Slot_SRP_MaterialSpool_MetalWire
+	{
+		name="SRP_MaterialSpool_MetalWire";
+		displayName="Metal Wire";
+		ghostIcon="set:dayz_inventory image:metalwire";
+    stackMax=35; // max stack wire is 1
+	};
+  class Slot_SRP_MaterialSpool_CopperWire
+	{
+		name="SRP_MaterialSpool_CopperWire";
+		displayName="Copper Wire";
+		ghostIcon="set:dayz_inventory image:metalwire";
+    stackMax=35; // max stack wire is 1
+	};
 //================== Construction Materials
   class Slot_SRP_Construction_Mortar
 	{

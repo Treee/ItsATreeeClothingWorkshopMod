@@ -1,0 +1,4 @@
+class SRP_MaterialsSpool_ColorBase extends ItemBase{};
+class SRP_MaterialsSpool_MetalWire extends SRP_MaterialsSpool_ColorBase{};
+class SRP_MaterialsSpool_CopperWire extends SRP_MaterialsSpool_ColorBase{};
+class SRP_MaterialsSpool_Rope extends SRP_MaterialsSpool_ColorBase{};

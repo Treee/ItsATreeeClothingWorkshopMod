@@ -348,6 +348,10 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_LeatherPouch_Small);
       RegisterRecipe(new DeCraft_SRP_LeatherPouches);
 
+      RegisterRecipe(new Craft_SRP_MaterialSpool_Rope);
+      RegisterRecipe(new Craft_SRP_MaterialSpool_MetalWire);
+      RegisterRecipe(new Craft_SRP_MaterialSpool_MetalWire_Copper);
+
       RegisterRecipe(new Craft_SRP_Notebook);
       RegisterRecipe(new Craft_SRP_ExtraPaper);
       RegisterRecipe(new Craft_SRP_CardboardBox_Kit);

@@ -263,11 +263,12 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=100;
-		varQuantityDestroyOnMin=0;
+		varQuantityDestroyOnMin=1;
 		varStackMax=1;
     inventorySlot[]+=
     {
       "SRP_Construction_Rope",
+      "SRP_MaterialSpool_Rope",
       "Smithing_Rope"
     };
   };
@@ -277,13 +278,14 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=100;
-		varQuantityDestroyOnMin=0;
+		varQuantityDestroyOnMin=1;
 		varStackMax=1;
     inventorySlot[]+=
     {
       "SRP_Construction_MetalWire",
+      "SRP_MaterialSpool_MetalWire",
       "Smithing_MetalWire",
-      "Tailoring_MetalWire"
+      "Tailoring_MetalWire",
     };
   };    
   class WoodenStick: Inventory_Base
@@ -1327,7 +1329,12 @@ class CfgVehicles
       "SRP_ToolKit_Caliper",
       "SRP_ToolKit_Handdrill",
       "SRP_ToolKit_Crowbar",
-      "SRP_ToolKit_Wrench"
+      "SRP_ToolKit_Wrench",
+      "SRP_MaterialSpool_Rope",
+      "SRP_MaterialSpool_MetalWire",
+      "SRP_MaterialSpool_CopperWire",
+      "Material_WoodenPlanks",
+      "Material_MetalSheets",
 		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
@@ -1341,6 +1348,17 @@ class CfgVehicles
 		physLayer="item_large";
 		class GUIInventoryAttachmentsProps
 		{
+      class Augments
+			{
+				name="Augments";
+				description="Attachments for wood workbench";
+				attachmentSlots[]=
+				{
+					"SRP_WoodDrill",
+          "SRP_WoodClamp"
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
       class Tools
 			{
 				name="Tools";
@@ -1364,18 +1382,7 @@ class CfgVehicles
           "SRP_LargeTool3",
 				};
 				icon="set:dayz_inventory image:cat_vehicle_engine";
-			};
-			class Augments
-			{
-				name="Augments";
-				description="Attachments for wood workbench";
-				attachmentSlots[]=
-				{
-					"SRP_WoodDrill",
-          "SRP_WoodClamp"
-				};
-				icon="set:dayz_inventory image:cat_vehicle_engine";
-			};
+			};			
       class ExtraTools
 			{
 				name="Extra Tools";
@@ -1393,6 +1400,20 @@ class CfgVehicles
           "SRP_ToolKit_Crowbar",
           "SRP_ToolKit_Wrench"
 				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
+      class ExtraMaterials
+			{
+				name="Extra Materials";
+				description="Extra Materials";
+				attachmentSlots[]=
+				{
+          "SRP_MaterialSpool_Rope",
+          "SRP_MaterialSpool_MetalWire",
+          "SRP_MaterialSpool_CopperWire",
+          "Material_WoodenPlanks",
+          "Material_MetalSheets", 
+        };
 				icon="set:dayz_inventory image:cat_vehicle_engine";
 			};	
 		};
@@ -1561,7 +1582,12 @@ class CfgVehicles
       "SRP_ToolKit_Caliper",
       "SRP_ToolKit_Handdrill",
       "SRP_ToolKit_Crowbar",
-      "SRP_ToolKit_Wrench"
+      "SRP_ToolKit_Wrench",
+      "SRP_MaterialSpool_Rope",
+      "SRP_MaterialSpool_MetalWire",
+      "SRP_MaterialSpool_CopperWire",
+      "Material_WoodenPlanks",
+      "Material_MetalSheets",      
 		};
 		destroyOnEmpty=0;
 		carveNavmesh=0;
@@ -1575,6 +1601,17 @@ class CfgVehicles
 		physLayer="item_large";
     class GUIInventoryAttachmentsProps
 		{
+      class Augments
+			{
+				name="Augments";
+				description="Attachments for wood workbench";
+				attachmentSlots[]=
+				{
+					"SRP_WoodDrill",
+          "SRP_WoodClamp"
+				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
       class Tools
 			{
 				name="Tools";
@@ -1599,17 +1636,6 @@ class CfgVehicles
 				};
 				icon="set:dayz_inventory image:cat_vehicle_engine";
 			};
-			class Augments
-			{
-				name="Augments";
-				description="Attachments for wood workbench";
-				attachmentSlots[]=
-				{
-					"SRP_WoodDrill",
-          "SRP_WoodClamp"
-				};
-				icon="set:dayz_inventory image:cat_vehicle_engine";
-			};
       class ExtraTools
 			{
 				name="Extra Tools";
@@ -1627,6 +1653,20 @@ class CfgVehicles
           "SRP_ToolKit_Crowbar",
           "SRP_ToolKit_Wrench"
 				};
+				icon="set:dayz_inventory image:cat_vehicle_engine";
+			};
+      class ExtraMaterials
+			{
+				name="Extra Materials";
+				description="Extra Materials";
+				attachmentSlots[]=
+				{
+          "SRP_MaterialSpool_Rope",
+          "SRP_MaterialSpool_MetalWire",
+          "SRP_MaterialSpool_CopperWire",
+          "Material_WoodenPlanks",
+          "Material_MetalSheets", 
+        };
 				icon="set:dayz_inventory image:cat_vehicle_engine";
 			};	
 		};

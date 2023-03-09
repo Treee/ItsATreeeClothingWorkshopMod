@@ -75,6 +75,149 @@ class CfgVehicles
 		descriptionShort="Olive Drab Green Plate Carrier Pouches To go with Mass's Olive Drab Green Plate Carrier OOC DEV NOTE: This pouch will delete itself if you attempt to attach it to another large plate carrier pouch";
 	};
 //--------------------------------------- Custom Stuff  
+  class SRP_MaterialsSpool_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Materials Spool";
+		descriptionShort="A circular object meant for wrapping lengths of material around.";
+		model="\dz\gear\camping\cable_reel.p3d";
+		itemSize[]={2,3};
+		itemBehaviour=2;
+		rotationFlags=2;
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\camping\data\cable_reel_co.paa",
+			"dz\gear\camping\data\cable_reel_co.paa",
+			"dz\gear\camping\data\cable_reel_co.paa",
+			"dz\gear\camping\data\cable_reel_co.paa",
+			"dz\gear\camping\data\cable_reel_co.paa",
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\gear\camping\data\cable_reel.rvmat",
+			"dz\gear\camping\data\cable_reel.rvmat",
+			"dz\gear\camping\data\cable_reel.rvmat",
+			"dz\gear\camping\data\cable_reel.rvmat",
+			"dz\gear\camping\data\cable_reel.rvmat",
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\camping\data\cable_reel.rvmat"}},						
+						{0.69999999,{"DZ\gear\camping\data\cable_reel.rvmat"}},						
+						{0.5,{"DZ\gear\camping\data\cable_reel_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\camping\data\cable_reel_damage.rvmat"}},						
+						{0,{"DZ\gear\camping\data\cable_reel_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		repairableWithKits[]={5,7};
+		repairCosts[]={30,25};
+		soundImpactType="plastic";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem_Light
+				{
+					soundSet="pickUpCableReelLight_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpCableReel_SoundSet";
+					id=797;
+				};
+				class cablereel_drop
+				{
+					soundset="cablereel_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_MaterialsSpool_MetalWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Metal Wire Spool";
+		attachments[]={"SRP_MaterialSpool_MetalWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_wire_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_wire_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_wire_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_wire_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_wire_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_CopperWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Copper Wire Spool";
+		attachments[]={"SRP_MaterialSpool_CopperWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_Rope: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Rope Spool";
+		attachments[]={"SRP_MaterialSpool_Rope"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+		};
+	};
+  
   class SRP_RainCollector: Container_Base
 	{
 		scope=2;
@@ -108,7 +251,6 @@ class CfgVehicles
 			allowOwnedCargoManipulation=0;
 		};
 	};
-
   class SRP_Fridge_Kit: SRP_KitBase
 	{
 		scope=2;

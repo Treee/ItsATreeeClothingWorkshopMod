@@ -765,10 +765,12 @@ class CfgVehicles
 		varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=100;
+    varStackMax=1;
 		varQuantityDestroyOnMin=1;
     inventorySlot[]=
 		{
-			"SRP_CopperWire1"
+			"SRP_CopperWire1",
+      "SRP_MaterialSpool_CopperWire"
 		};
     hiddenSelections[]=
 		{			
