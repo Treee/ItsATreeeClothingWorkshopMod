@@ -112,6 +112,45 @@ class CfgVehicles
   };
 
   //============================= 
+  class SRP_ReadableBook_ArchivistWolfPack: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="The Wolves of Warren Cove: The Wolfpack";
+		author="The Archivist";
+		file="Survivalists_Books\gear\books\data\book_thewolvesofwarrencove.html";
+		displayName="The Wolves of Warren Cove: The Wolfpack";
+		descriptionShort="A history on Warren Cove and its past inhabitants.";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Books\gear\books\data\book_thewolvesofwarrencove_co.paa"
+		};
+	};
+  class SRP_ReadableBook_IllusiveBunkerGuide: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Illusive's Bunker Guide";
+    author="Illusive";
+    file="Survivalists_Books\gear\books\data\book_illusives_bunkerguide.html";
+    displayName="Illusive's Bunker Guide";
+    descriptionShort="Illusive's guide to a perfect bunker trip.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_illusives_bunkerguide_co.paa"
+    };
+  };
+  class SRP_ReadableBook_ArthursManifesto: SRP_ReadableBook_Colorbase
+	{
+    scope=2;
+    title="Mutant - A Manifesto";
+    author="Arthur J.Merle";
+    file="Survivalists_Books\gear\books\data\book_mutantmanifesto.html";
+    displayName="Mutant Manifesto";
+    descriptionShort="The manifesto for Mutant kind, written by Arthur Julius Merle.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_mutantmanifesto_co.paa"
+    };
+	};
   class SRP_ReadableBook_TheBunkerShortStory: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
