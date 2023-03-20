@@ -9,6 +9,8 @@ modded class PluginRecipesManager
     RegisterRecipe(new Craft_Msp_EmptyPlanterBox);
     RegisterRecipe(new Craft_Msp_EmptySquarePlanterBox);
     RegisterRecipe(new SRP_DecraftBBPKits);
+    RegisterRecipe(new SRP_DecraftBBPBlueprints);
+    RegisterRecipe(new SRP_CraftBBPBlueprints);
     
     //==========================================================UNREGISTER RECIPES
       UnregisterRecipe("DUB_Guitar_R");
