@@ -1052,6 +1052,7 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=1;
+    varQuantityDestroyOnMin=0;
     hiddenSelections[]={
       "zbytek"
     };
@@ -1101,6 +1102,7 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=1;
+    varQuantityDestroyOnMin=0;
     hiddenSelections[]={
       "zbytek"
     };
@@ -1159,6 +1161,7 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=1;
+    varQuantityDestroyOnMin=0;
     hiddenSelections[]={
       "zbytek"
     };
@@ -1208,6 +1211,7 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=1;
+    varQuantityDestroyOnMin=0;
     hiddenSelections[]={
       "zbytek"
     };

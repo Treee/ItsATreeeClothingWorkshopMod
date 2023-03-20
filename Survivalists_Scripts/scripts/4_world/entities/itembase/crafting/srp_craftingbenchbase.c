@@ -94,18 +94,16 @@ class SRP_CraftingBench_Base extends ItemBase
       {
         if (Class.CastTo(attachment, GetInventory().FindAttachmentByName(requirement.GetAttachmentSlotName())))
         {
-          if (attachment.GetType() == "SRP_SewingMachine")
+          bool destroyItem = ShouldDestroyItem(attachment.GetType());
+          // do 1 hp of dmg to attachments that are not fully consumed
+          if (!destroyItem)
+          {
             attachment.AddHealth(-1);
-          if (attachment.GetType() == "MethRecipe")
-            attachment.AddHealth(-1);
-          if (attachment.GetType() == "BathSaltsRecipe")
-            attachment.AddHealth(-1);
-          if (attachment.GetType() == "AcidRecipe")
-            attachment.AddHealth(-1);
+          }   
           // players that brute force recipes will find things to be most expensive.
           int quantityToRemove = Math.Max(requirement.GetRequiredQuantity(), attachment.GetQuantity());
           attachment.AddQuantity(-quantityToRemove);
-          if (attachment.GetQuantityMax() == 1 && quantityToRemove == 1)
+          if (attachment.GetQuantityMax() == 1 && quantityToRemove == 1 && destroyItem)
           {
             // Print("deleting attachment due to max quantity: " + attachment.GetType());
             attachment.Delete();
@@ -127,5 +125,18 @@ class SRP_CraftingBench_Base extends ItemBase
   int GetCraftingDamage()
   {
     return 0;
+  }
+  bool ShouldDestroyItem(string item)
+  {
+    if (item == "SRP_SewingMachine")
+      return false;
+    if (item == "MethRecipe")
+      return false;
+    if (item == "BathSaltsRecipe")
+      return false;
+    if (item == "AcidRecipe")
+      return false;
+
+    return true;
   }
 };

@@ -771,6 +771,7 @@ class CfgVehicles
     varQuantityInit=1;
 		varQuantityMin=0;
 		varQuantityMax=1;
+    varQuantityDestroyOnMin=0;
 		weight=10000;
 		itemSize[]={4,4};
 		itemBehaviour=0;
