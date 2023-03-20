@@ -344,6 +344,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_SalvageClothingWithTool);	
       RegisterRecipe(new Craft_SRP_SalvageClothingWithMachine);	
 
+      RegisterRecipe(new SRP_Craft_Netting);	
+
     //==========================================================Containers
       RegisterRecipe(new Craft_SRP_LeatherPouch_Default);
       RegisterRecipe(new Craft_SRP_LeatherPouch_Medieval);
