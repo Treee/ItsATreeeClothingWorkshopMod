@@ -1424,7 +1424,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=5000;
+					hitpoints=1000;
 					healthLevels[]=
 					{
             {1.01,{"Survivalists_Mods\gear\crafting\data\srp_defaultworkbench.rvmat"}},
@@ -1706,6 +1706,9 @@ class CfgVehicles
 			};
 		};
 	};
+
+
+  
 //==========================================BREWING
   class SRP_BrewingWorkbench_ColorBase: FireplaceBase 
 	{

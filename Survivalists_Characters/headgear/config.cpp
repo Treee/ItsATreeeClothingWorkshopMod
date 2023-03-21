@@ -1269,7 +1269,7 @@ class CfgVehicles
 		};
 		weight=1000;
 		itemSize[]={3,3};
-		attachments[] = {"NVG","helmetFlashlight","SRP_Comtacs"};
+		attachments[]={"NVG","helmetFlashlight","SRP_Comtacs"};
 		varWetMax=0.249;
 		heatIsolation=0.30000001;
 		headSelectionsToHide[]=
@@ -1544,7 +1544,7 @@ class CfgVehicles
 		scope=2;
 		color="Pakol";
     displayName="Pakol";
-		descriptionShort = "Espen Industries. Pakol, popularly known as the Chitrali cap, is a soft round-topped men's hat, typically of wool and found in any of a variety of earthy colors.";
+		descriptionShort="Espen Industries. Pakol, popularly known as the Chitrali cap, is a soft round-topped men's hat, typically of wool and found in any of a variety of earthy colors.";
     model="Survivalists_Characters\headgear\srp_pakol_g.p3d";
     rotationFlags=64;
     attachments[]=
@@ -1605,8 +1605,8 @@ class CfgVehicles
       "SRP_Comtacs"  
     };
 		inventorySlot[]={"Headgear"};
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = 
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Characters\headgear\data\srp_combathelmet_co.paa"
 		};
@@ -3305,4 +3305,67 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_catears_co.paa"};
   };
+
+  class SRP_OfficersHat_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Officer Hat";
+		descriptionShort="An old and worn officers hat";
+		model="Survivalists_Characters\headgear\SRP_OfficerHat_g.p3d";
+		weight=100;
+		noMask=0;
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot[]={"Headgear"};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]={"Clothing","Headgear"};
+		// rootClassName="SRP_OfficersHat";
+		// colorVariants[]={"Pink","Purple"};
+		itemSize[]={2,1};
+		varWetMax=0.249;
+		heatIsolation=0.5;
+		visibilityModifier=0.95;
+		headSelectionsToHide[]={"Clipping_Gasmask"};
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\SRP_Officer_Hat_co.paa"};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\SRP_OfficerHat_m.p3d";
+			female="Survivalists_Characters\headgear\SRP_OfficerHat_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]={{1.0,{"Survivalists_Characters\headgear\data\SRP_OfficerHat.rvmat"}},{0.7,{"Survivalists_Characters\headgear\data\SRP_OfficerHat.rvmat"}},{0.5,{"Survivalists_Characters\headgear\data\SRP_OfficerHat_damage.rvmat"}},{0.3,{"Survivalists_Characters\headgear\data\SRP_OfficerHat_damage.rvmat"}},{0.0,{"Survivalists_Characters\headgear\data\SRP_OfficerHat_destruct.rvmat"}}};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_OfficersHat_Green: SRP_OfficersHat_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\SRP_Officer_Hat_co.paa"};
+	};
 };

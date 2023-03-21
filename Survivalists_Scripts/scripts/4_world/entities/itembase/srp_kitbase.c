@@ -313,21 +313,21 @@ class SRP_PropaneLocker_Basic_Kit extends SRP_KitBase{};
 
 class SRP_PersonalRadio_TerminalBasic_Kit extends SRP_KitBase
 {
-  bool CanTransferHPOnDeploy()
+  override bool CanTransferHPOnDeploy()
   {
     return false;
   }
 };
 class SRP_PersonalRadio_TerminalEspen_Kit extends SRP_KitBase
 {
-  bool CanTransferHPOnDeploy()
+  override bool CanTransferHPOnDeploy()
   {
     return false;
   }
 };
 class SRP_PersonalRadio_TerminalStag_Kit extends SRP_KitBase
 {
-  bool CanTransferHPOnDeploy()
+  override bool CanTransferHPOnDeploy()
   {
     return false;
   }
