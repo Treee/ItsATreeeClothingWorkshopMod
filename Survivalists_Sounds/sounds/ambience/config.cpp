@@ -363,6 +363,14 @@ class CfgSoundShaders
 			{"Survivalists_Sounds\sounds\ambience\data\warhorn10.ogg",1}
 		};
 	};
+
+  class Survivalists_Mods_Ambience_Aircraft_HelicopterFlyOver_SoundShader: Survivalists_Mods_Ambience_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\ambience\data\helicopter_flyover.ogg",1}
+		};
+	};
   
 };
 class CfgSoundSets
@@ -698,6 +706,14 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"Survivalists_Mods_Ambience_WarHorn10_SoundShader"
+		};
+	};
+
+  class Survivalists_Mods_Ambience_Aircraft_HelicopterFlyOver_SoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Ambience_Aircraft_HelicopterFlyOver_SoundShader"
 		};
 	};
 };

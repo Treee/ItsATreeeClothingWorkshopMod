@@ -37,7 +37,7 @@ class CfgVehicles
   //   };
   // }
 
-  //-------------------------------------- MOD OVERRIDE
+//-------------------------------------- MOD OVERRIDE
   class SRP_ElectronicsJammer_Base: Inventory_Base
   {
     attachments[]=
@@ -86,7 +86,7 @@ class CfgVehicles
 		};
   };
 
-  //-------------------------------------- BASE GAME OVERRIDE
+//-------------------------------------- BASE GAME OVERRIDE
 	class SRP_CassettePlayer: Inventory_Base
 	{
 		scope=2;
@@ -156,7 +156,7 @@ class CfgVehicles
 		};
   };
 
-  //----------------------------------- Custom Stuff
+//----------------------------------- Custom Stuff
   class SRP_PersonalRadio_NumberStations: Inventory_Base
   {
 		scope=2;
@@ -345,7 +345,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\radio\data\srp_longradio.rvmat"
 		};
 	};
-  // sneaky radio
+// -------------------------------- Radios
   class SRP_PersonalRadio_SneakyBear: PersonalRadio
   {
 		scope=2;
@@ -529,7 +529,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\radio\data\srp_radiobackpackbase_stag_co.paa"
 		};
   };
-  //-------------------------------- Music Tapes
+//-------------------------------- Music Tapes
 	class SRPRadio_CassetteTape_Base: Cassette
 	{
 		displayName="Cassette Tape";
@@ -698,7 +698,7 @@ class CfgVehicles
 			soundSet="SRPRadio_Bread_SoundSet1";
 		};
 	};
-
+// -------------------------------- Skylar
   class SRPRadio_CassetteTape_SkylarWolfe_ThreeLittleBirds: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
@@ -839,7 +839,6 @@ class CfgVehicles
 			soundSet="SRPRadio_SkylarWolfe_FirstDayOfMyLife_SoundSet1";
 		};
 	}; 
-
   class SRPRadio_CassetteTape_SkylarWolfe_JustLikeAPill: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
@@ -890,7 +889,7 @@ class CfgVehicles
 			soundSet="SRPRadio_SkylarWolfe_DancingInTheMoonlight_SoundSet1";
 		};
 	}; 
-
+// -------------------------------- Misc
   class SRPRadio_CassetteTape_Pinkerton_TheShadow: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
@@ -1062,7 +1061,17 @@ class CfgVehicles
 			soundSet="SRPRadio_Vinnie_MasterNoSpeech_SoundSet1";
 		};
 	};
-
+  class SRPRadio_CassetteTape_HelicopterFlyover: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Hellicopter Flyover Sounds";
+		descriptionShort="Credit goes to the wind and pressure differentials.";
+		class CfgCassette
+		{
+			soundSet="Survivalists_Mods_Ambience_Aircraft_HelicopterFlyOver_SoundSet";
+		};
+	};
+// -------------------------------- Island George
   class SRPRadio_CassetteTape_IslandGeorge_LostInTheSnow: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
@@ -1114,7 +1123,7 @@ class CfgVehicles
 		};
 	};
 
-  // -------------------------------- Mystery Tapes
+// -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base
 	{
 		scope=2;
@@ -1146,7 +1155,7 @@ class CfgVehicles
 		};
 	};
 
-  // -------------------------------- Kuru Research Tapes
+// -------------------------------- Kuru Research Tapes
 	class SRPRadio_CassetteTape_ResearchLog_Base: Cassette
 	{
 		displayName="Research Log Cassette";
@@ -1475,7 +1484,7 @@ class CfgVehicles
 		};
 	};
 
-  // -------------------- Short Stories
+// -------------------- Short Stories
   class SRPRadio_CassetteTape_ShortStory_Base: Cassette
 	{
 		displayName="Short Story Cassette";
