@@ -1103,6 +1103,16 @@ class CfgVehicles
 			soundSet="SRPRadio_IslandGeorge_SlenderMalice_SoundSet1";
 		};
 	};
+  class SRPRadio_CassetteTape_IslandGeorge_CloppingCoconuts: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Clopping Coconuts";
+		descriptionShort="Perfect equine synthesis.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_CloppingCoconuts_SoundSet1";
+		};
+	};
 
   // -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base

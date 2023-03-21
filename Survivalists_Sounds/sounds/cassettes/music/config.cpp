@@ -356,6 +356,10 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\sl3nder_malice_ft_wavy_jone.ogg",1}};
 	};
+  class SRPRadio_IslandGeorge_CloppingCoconuts_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\islandgeorge_cloppingcoconuts.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -714,5 +718,11 @@ class CfgSoundSets
 			"SRPRadio_IslandGeorge_SlenderMalice_Shader1"
 		};
 	};
+  class SRPRadio_IslandGeorge_CloppingCoconuts_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_CloppingCoconuts_Shader1"
+		};
+	};
 };
-
