@@ -20,7 +20,7 @@ class CfgVehicles
   class Clothing;
   class Clothing_Base;
 
-  //------------------------------------- MODDED OVERRIDE
+//------------------------------------- MODDED OVERRIDE
   class Scarf_ColorBase: Clothing
 	{
     rootClassName="Scarf";
@@ -506,7 +506,7 @@ class CfgVehicles
     };
   };
 
-  //------------------------------------- BASE GAME OVERRIDE
+//------------------------------------- BASE GAME OVERRIDE
   class BalaclavaMask_ColorBase: Clothing
 	{
 		itemSize[]={1,2};
@@ -1181,7 +1181,7 @@ class CfgVehicles
 		};
 	};      
 
-  class SRP_DeerMask: Clothing
+  class SRP_DeerMask: Clothing // deprecated
 	{
 		scope=2;
 		displayName="Deer Skull Mask";
@@ -1354,7 +1354,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_BirdMask: Clothing
+  class SRP_BirdMask: Clothing // deprecated
 	{
 		scope=2;
 		displayName="Bird Mask";
@@ -1620,7 +1620,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_InariFoxMask: Clothing
+  class SRP_InariFoxMask: Clothing // deprecated
 	{
 		scope=2;
 		displayName="Inari Fox Mask";
@@ -1776,6 +1776,282 @@ class CfgVehicles
 						{0.5,	{	"Survivalists_Characters\masks\data\srp_geishamask.rvmat", "Survivalists_Characters\masks\data\srp_geishamaskeyes.rvmat"}},
 						{0.3,	{	"Survivalists_Characters\masks\data\srp_geishamask.rvmat", "Survivalists_Characters\masks\data\srp_geishamaskeyes.rvmat"}},
 						{0.0,	{	"Survivalists_Characters\masks\data\srp_geishamask.rvmat", "Survivalists_Characters\masks\data\srp_geishamaskeyes.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.50;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+
+
+  class SRP_DeerMask_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Deer Skull Mask";
+		descriptionShort="A hollowed out deer skull";
+		model="Survivalists_Characters\masks\SRP_DeerMask_g.p3d";
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Mask"
+		};
+    inventorySlot[]=
+    {
+      "Skullpike",
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
+    };
+		weight=1000;
+		itemSize[]={3,3};
+		absorbency=0;
+		heatIsolation=0.8;
+		rootClassName="SRP_DeerMask";
+    colorVariants[]=
+    {
+      "BrownRed",
+      "Grey",
+      "PinkPurple",
+      "PurpleBlue",
+      "Basic"
+    };
+		headSelectionsToHide[]=
+		{
+			"Clipping_Gasmask"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\masks\data\DeerMask_CO.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\masks\SRP_DeerMask.p3d";
+			female="Survivalists_Characters\masks\SRP_DeerMask.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Characters\masks\data\DeerMask.rvmat"}},
+						{0.69999999,{"Survivalists_Characters\masks\data\DeerMask.rvmat"}},
+						{0.5,{"Survivalists_Characters\masks\data\DeerMask_damage.rvmat"}},
+						{0.30000001,{"Survivalists_Characters\masks\data\DeerMask_damage.rvmat"}},
+						{0.0,{"Survivalists_Characters\masks\data\DeerMask_destruct.rvmat"}}
+          };
+				};
+			};
+		};
+  };
+  class SRP_BirdMask_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Bird Mask";
+		descriptionShort="Espen Industries. A tribal bird mask";
+		model="Survivalists_Characters\masks\srp_birdmask_g.p3d";
+		inventorySlot[]=
+		{
+			"Headgear",
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+    rootClassName="SRP_BirdMask";
+    colorVariants[]=
+    {
+      "Grey",
+      "Pink",
+      "PurpleGreen",
+      "Basic"
+    };
+		weight=500;
+		itemSize[]={2,2};
+		ragQuantity=0;
+		varWetMax=0.75;
+		heatIsolation=0.75;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\masks\data\srp_birdmask_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\masks\srp_birdmask_m.p3d";
+			female="Survivalists_Characters\masks\srp_birdmask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\masks\data\srp_birdmask.rvmat"}},
+						{0.7,	{	"Survivalists_Characters\masks\data\srp_birdmask.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\masks\data\srp_birdmask.rvmat"}},
+						{0.3,	{	"Survivalists_Characters\masks\data\srp_birdmask.rvmat"}},
+						{0.0,	{	"Survivalists_Characters\masks\data\srp_birdmask.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.75;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_InariFoxMask_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Inari Fox Mask";
+		descriptionShort="Espen Industries. A replica of an Inari Fox mask";
+		model="Survivalists_Characters\masks\srp_inarifoxmask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Eyes"
+		};
+    headSelectionsToHide[]=
+		{
+			"Clipping_Welding_Mask"
+		};
+    rootClassName="SRP_InariFoxMask";
+    colorVariants[]=
+    {
+      "Bio",
+      "DarkBlue",
+      "Grey",
+      "Pink",
+      "Purple",
+      "Teal",
+      "Toxic",
+      "Basic"
+    };
+		weight=500;
+		itemSize[]={2,2};
+		ragQuantity=0;
+		varWetMax=0.75;
+		heatIsolation=0.50;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\masks\data\srp_inarifoxmask_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\masks\srp_inarifoxmask_m.p3d";
+			female="Survivalists_Characters\masks\srp_inarifoxmask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\masks\data\srp_inarifoxmask.rvmat"}},
+						{0.7,	{	"Survivalists_Characters\masks\data\srp_inarifoxmask.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\masks\data\srp_inarifoxmask.rvmat"}},
+						{0.3,	{	"Survivalists_Characters\masks\data\srp_inarifoxmask.rvmat"}},
+						{0.0,	{	"Survivalists_Characters\masks\data\srp_inarifoxmask.rvmat"}}
 					};
 				};
 			};

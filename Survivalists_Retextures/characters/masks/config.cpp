@@ -27,6 +27,9 @@ class CfgVehicles
   class SRP_FacialHairChops_Colorbase;
   class SRP_JapaneseDemonMask_ColorBase;
   class SRP_JojoMask_ColorBase;
+  class SRP_DeerMask_ColorBase;
+  class SRP_BirdMask_ColorBase;
+  class SRP_InariFoxMask_ColorBase;
 
 	class SurgicalMask_Black: SurgicalMask
 	{
@@ -558,4 +561,187 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\masks\data\srp_jojomask_co.paa"
 		};
 	};
+
+  class SRP_DeerMask_Basic: SRP_DeerMask_ColorBase
+	{
+		scope=2;
+  };
+  class SRP_DeerMask_BrownRed: SRP_DeerMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\DeerMask_brownred_CO.paa"
+		};
+  };
+  class SRP_DeerMask_Grey: SRP_DeerMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\DeerMask_grey_CO.paa"
+		};
+  };
+  class SRP_DeerMask_PinkPurple: SRP_DeerMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\DeerMask_pinkpurp_CO.paa"
+		};
+  };
+  class SRP_DeerMask_PurpleBlue: SRP_DeerMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\DeerMask_purpblue_CO.paa"
+		};
+  };
+
+  class SRP_BirdMask_Basic: SRP_BirdMask_ColorBase
+	{
+		scope=2;
+  };
+  class SRP_BirdMask_Grey: SRP_BirdMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_birdmask_grey_co.paa"
+		};
+  };
+  class SRP_BirdMask_Pink: SRP_BirdMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_birdmask_pink_co.paa"
+		};
+  };
+  class SRP_BirdMask_PurpleGreen: SRP_BirdMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_birdmask_purpgreen_co.paa"
+		};
+  };
+
+  class SRP_InariFoxMask_Basic: SRP_InariFoxMask_ColorBase
+	{
+		scope=2;
+  };
+  class SRP_InariFoxMask_Bio: SRP_InariFoxMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_inarifoxmask_Bio_co.paa"
+		};
+  };
+  class SRP_InariFoxMask_DarkBlue: SRP_InariFoxMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_inarifoxmask_darkblue_co.paa"
+		};
+  };
+  class SRP_InariFoxMask_Grey: SRP_InariFoxMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_inarifoxmask_gray_co.paa"
+		};
+  };
+  class SRP_InariFoxMask_Pink: SRP_InariFoxMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_inarifoxmask_pink_co.paa"
+		};
+  };
+  class SRP_InariFoxMask_Purple: SRP_InariFoxMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_inarifoxmask_Purple_co.paa"
+		};
+  };
+  class SRP_InariFoxMask_Teal: SRP_InariFoxMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_inarifoxmask_teal_co.paa"
+		};
+  };
+  class SRP_InariFoxMask_Toxic: SRP_InariFoxMask_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_inarifoxmask_toxic_co.paa"
+		};
+  };
 };
