@@ -298,6 +298,7 @@ class CfgVehicles
   class BaseFoodStageTransitions;
   class FoodAnimationSources;
   class MeatStageTransitions;
+  class NotCookable;
 	class Edible_Base;
 
 	class Honey;
@@ -306,7 +307,6 @@ class CfgVehicles
   class TunaCan_Opened;
   class PowderedMilk;
   class Snack_ColorBase;
-  class Worm;
 	class Zagorky_ColorBase;
 
 //================================== BASE GAME OVERRIDES
@@ -1213,6 +1213,33 @@ class CfgVehicles
 	{
 		containsSeedsQuantity="0";
   };
+  class Worm: Edible_Base
+	{
+    canBeSplit=1;
+    varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=99;
+		varQuantityDestroyOnMin=1;
+		varStackMax=1;
+		class AnimationSources: FoodAnimationSources
+		{
+		};
+		class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={2.5,1,1,1,0};
+					cooking_properties[]={0,0};
+				};
+			};
+			class FoodStageTransitions: NotCookable
+			{
+			};
+		};
+	};
 
 //================================== CUSTOM STUFF
   class SRP_CandyCane: Worm
