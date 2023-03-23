@@ -30,7 +30,7 @@ class CfgVehicles
       biological=6;
     };
 	};
-  //-------------------------------------MOD OVERRIDE
+//-------------------------------------MOD OVERRIDE
 	class Winter_Parka_Base: Clothing
   {
     rootClassName="Winter_Parka";
@@ -56,7 +56,7 @@ class CfgVehicles
       "Purple",    
     };
 	};
-  ///============== MODDED
+///============== MODDED
   class DUB_Poncho: Clothing
 	{
     rootClassName="DUB_Poncho";
@@ -74,7 +74,7 @@ class CfgVehicles
       "YellowRed",      
     };
   };
-  //----------------------------------- BASE GAME OVERRIDE
+//----------------------------------- BASE GAME OVERRIDE
   class NBCJacketBase: Clothing
 	{
 		heatIsolation=0.80000001;
@@ -563,6 +563,15 @@ class CfgVehicles
       "Purple",
       "Storm",
       "Yellow",
+    };
+  };
+  class TTsKOJacket_ColorBase: Clothing
+  {
+    rootClassName="TTsKOJacket";
+    colorVariants[]=
+    {
+      "Camo",
+      "Tan",      
     };
   };
 

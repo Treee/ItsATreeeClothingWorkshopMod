@@ -18,7 +18,7 @@ class CfgVehicles
 {
   class Clothing;
 
-  //-------------------------------------MODDED OVERRIDE
+//-------------------------------------MODDED OVERRIDE
   class Skinny_Jeans_ColorBase: Clothing
   {
     rootClassName="Skinny_Jeans";
@@ -69,7 +69,7 @@ class CfgVehicles
       "White",
     };
   };
-  //-------------------------------------BASE GAME OVERRIDE
+//-------------------------------------BASE GAME OVERRIDE
   class Jeans_ColorBase: Clothing
   {
     rootClassName="Jeans";
@@ -398,6 +398,15 @@ class CfgVehicles
       "Green",
       "Grey",
       "Red",
+    };
+  };
+  class TTSKOPants: Clothing
+  {
+    rootClassName="TTSKOPants";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",
     };
   };
 

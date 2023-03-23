@@ -29,6 +29,7 @@ class CfgVehicles
 	class CanvasPantsMidi_ColorBase;
   class Jeans_ColorBase;
   class LeatherPants_ColorBase;
+  class TTSKOPants;
 
   class SRP_ESPG3_TacPants_Colorbase;
 
@@ -1029,6 +1030,40 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\pants\data\leatherpants_Yellow_co.paa"
+		};
+	};
+
+  class TTSKOPants_Green: TTSKOPants
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale",
+			"personality"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\dz\characters\pants\data\TTsKO_Pants_g_camo_co.paa",
+			"\dz\characters\pants\data\TTsKO_Pants_camo_co.paa",
+			"\dz\characters\pants\data\TTsKO_Pants_camo_co.paa"
+		};
+	};
+  class TTSKOPants_Tan: TTSKOPants
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\ttsko_pants_tan_co.paa",
+			"Survivalists_Retextures\characters\pants\data\ttsko_pants_tan_co.paa",
+			"Survivalists_Retextures\characters\pants\data\ttsko_pants_tan_co.paa"
 		};
 	};
 

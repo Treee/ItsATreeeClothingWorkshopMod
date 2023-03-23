@@ -44,6 +44,7 @@ class CfgVehicles
 	class Raincoat_ColorBase;
 	class WoolCoat_ColorBase;
   class HikingJacket_ColorBase;
+  class TTsKOJacket_ColorBase;
 
   class SRP_Rolled_Shirt_ColorBase;
   class SRP_ESPG3_TacShirt_Colorbase;
@@ -2699,6 +2700,18 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\tops\data\long_sleeve_shirt_Yellow_co.paa"
+		};
+	};
+
+  class TTsKOJacket_Tan: TTsKOJacket_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.5;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\ttsko_jacket_tan_co.paa",
+			"Survivalists_Retextures\characters\tops\data\ttsko_jacket_tan_co.paa",
+			"Survivalists_Retextures\characters\tops\data\ttsko_jacket_tan_co.paa",
 		};
 	};
 
