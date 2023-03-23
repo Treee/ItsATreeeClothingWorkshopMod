@@ -31,9 +31,8 @@ class ActionSwitchPatchLogoOption extends ActionSRPVariantIdOption
 		if (action_data.m_MainItem && Class.CastTo(patchLogoStarterKit, action_data.m_MainItem))
 		{      
       int variantId = SRP_VariantIdActionData.Cast(action_data).m_SRPVariantId;
-      TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, GetVariantIdOptions().Get(variantId), action_data.m_Player);
-      lambda.SetTransferParams(false, false);
-      action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
+      action_data.m_MainItem.Delete();
+      GetGame().CreateObjectEx(GetVariantIdOptions().Get(variantId), action_data.m_Player.GetPosition(), false)
 		}
 	}
 
