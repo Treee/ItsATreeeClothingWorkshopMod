@@ -14,41 +14,15 @@ class WeedIrradiatedEffectSymptom extends SymptomBase
 	//!gets called every frame
 	override void OnUpdateServer(PlayerBase player, float deltatime)
 	{
-    bool isBoosted = false;
-    EntityAI attachment;
-    if (Class.CastTo(attachment, player.GetInventory().FindAttachment(InventorySlots.ARMBAND)))
+    if (player.SRPIgnoreContaminatedArea())
     {
-      if (attachment.GetType() == "Skylar_BioZone_Protection" || attachment.GetType() == "Sneakers_Skylar_Biozone")
-      {
-        isBoosted = true;
-      }
-    }
-    if (Class.CastTo(attachment, player.GetInventory().FindAttachment(InventorySlots.FEET)))
-    {
-      if (attachment.GetType() == "Sneakers_Skylar_Biozone")
-      {
-        isBoosted = true;
-      }
-    }
-    int slot_id = InventorySlots.GetSlotIdFromString("Head");
-    Head_Default tempHead;
-    if (Class.CastTo(tempHead, Head_Default.Cast(player.GetInventory().FindPlaceholderForSlot( slot_id ))))
-    {
-      if (tempHead.GetType() == "DUB_Muthead_M" || tempHead.GetType() == "DUB_Muthead_F" || tempHead.GetType() == "DUB_Muthead_M_2" || tempHead.GetType() == "DUB_Muthead_F_2" || tempHead.GetType() == "DUB_Carlhead")
-      {
-        isBoosted = true;
-      }
-    }
-
-    if (isBoosted)
-    {
-      player.GetStatEnergy().Add(PlayerConstants.DIGESTION_SPEED + 0.1);
-      player.GetStatWater().Add(PlayerConstants.DIGESTION_SPEED + 0.1);
+      player.GetStatEnergy().Add(0.2);
+      player.GetStatWater().Add(0.2);
     }
     else
     {
-      player.GetStatEnergy().Add(PlayerConstants.DIGESTION_SPEED - 0.5);
-      player.GetStatWater().Add(PlayerConstants.DIGESTION_SPEED - 0.5);
+      player.GetStatEnergy().Add(PlayerConstants.DIGESTION_SPEED);
+      player.GetStatWater().Add(PlayerConstants.DIGESTION_SPEED);
       player.AddHealth("","Blood", -0.7 );
     }
 	}
