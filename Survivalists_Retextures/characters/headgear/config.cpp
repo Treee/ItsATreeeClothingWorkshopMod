@@ -47,12 +47,11 @@ class CfgVehicles
   class SRP_AltynHelmetVisor_ColorBase;
   class SRP_MilitaryPatrolCap_ColorBase;
   class SRP_MilitaryPatrolCapBackwards_ColorBase;
-  class BaseballCap_MilitaryPatrolTan; // deprecated
-  class BaseballCap_MilitaryPatrolTan_Backwards; // deprecated
   class SRP_EarProtection_ColorBase;
   class SRP_FrakenArmor_Helmet_ColorBase;
   class SRP_Alchemist_Hat;
 
+//=============================================== Vanilla Override
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
 	{
 		scope=2;
@@ -1079,6 +1078,7 @@ class CfgVehicles
 		};
 	};
 
+//============================================= CUSTOM Item Retextures
   class SRP_TurkeyBeanie_Turkey: SRP_TurkeyBeanie_ColorBase
 	{
 		scope=2;
@@ -1688,110 +1688,6 @@ class CfgVehicles
 		};
   };
   
-
-
-//========================= REMOVE THESE  
-  class BaseballCap_MilitaryPatrolBlack: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="Black";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_black_co.paa"
-		};
-	};
-  class BaseballCap_MilitaryPatrolBlack_Backwards: BaseballCap_MilitaryPatrolTan_Backwards
-  {
-		scope=2;
-    color="Black";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_black_co.paa"
-		};
-  };
-  class BaseballCap_MilitaryPatrolGreen: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="Green";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"
-		};
-	};
-  class BaseballCap_MilitaryPatrolGreen_Backwards: BaseballCap_MilitaryPatrolTan_Backwards
-  {
-		scope=2;
-		color="Green";
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_green_co.paa"
-		};
-  };
-  class BaseballCap_MilitaryPatrol_MC_Black: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="MC_Black";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MC_black_co.paa"};
-	};
-	class BaseballCap_MilitaryPatrol_ERDL: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="ERDL";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_ERDL_co.paa"};
-	};
-	class BaseballCap_MilitaryPatrol_CAD: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="CAD";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_CAD_co.paa"};
-	};
-	class BaseballCap_MilitaryPatrol_ChocChip: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="ChocChip";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_ChocChip_co.paa"};
-	};
-	class BaseballCap_MilitaryPatrol_M05: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="M05";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_M05_co.paa"};
-	};
-	class BaseballCap_MilitaryPatrol_MARPAT_Wood: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="MARPAT_Wood";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_MPat_Wood_co.paa"};
-	};
-  class BaseballCap_MilitaryPatrol_Hello_Kitty: BaseballCap_MilitaryPatrolTan
-	{
-		scope=2;
-		color="HelloKitty";
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\headgear\data\srp_patrolcap_HK_co.paa"};
-	};
 //================================================= Patrol Hats
   class SRP_MilitaryPatrolCap_Tan: SRP_MilitaryPatrolCap_ColorBase
 	{

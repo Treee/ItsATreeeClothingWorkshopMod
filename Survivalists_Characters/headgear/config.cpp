@@ -225,6 +225,7 @@ class CfgVehicles
       "YellowScarred"
     };
 	};
+
 	class Headtorch_ColorBase: Switchable_Base
 	{
 		itemSize[]={2,1};
