@@ -31,6 +31,13 @@ class cfgWeapons
 		attachments[]={"weaponFlashlight","pistolMuzzle"};
 		chamberableFrom[]={"Ammo_9x19"};
 		magazines[]={"Mag_MP5_15Rnd","Mag_MP5_30Rnd"};
+    inventorySlot[]+=
+    {
+      "SRP_Pistol1",
+      "SRP_Pistol2",
+      "SRP_Pistol3",
+      "SRP_Pistol4",
+    };
 		magazineSwitchTime=0.5;
 		ejectType=1;
 		weight=1840;
