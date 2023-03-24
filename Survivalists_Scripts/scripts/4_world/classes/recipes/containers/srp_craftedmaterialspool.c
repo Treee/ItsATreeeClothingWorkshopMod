@@ -93,6 +93,6 @@ class Craft_SRP_MaterialSpool_MetalWire_Copper extends Craft_SRP_MaterialSpool_B
 		//ingredient 2	
 		InsertIngredient(1,"MetalWire_Copper"); //  secondary ingredient
 		//result
-		AddResult("SRP_MaterialsSpool_MetalWire_Copper");	// recipe result
+		AddResult("SRP_MaterialsSpool_CopperWire");	// recipe result
 	}
 };
