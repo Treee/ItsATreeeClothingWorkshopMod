@@ -2011,6 +2011,11 @@ class CfgVehicles
 		{
 			"Gloves"
 		};
+    attachments[]=
+    {
+      "SRP_Patch",
+      "SRP_PatchMirror"
+    };
 		simulation="clothing";
 		itemInfo[]=
 		{
