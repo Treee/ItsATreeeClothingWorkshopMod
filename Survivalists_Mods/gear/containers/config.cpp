@@ -2843,12 +2843,171 @@ class CfgVehicles
   {
     scope=2;
     color="red";
-    descriptionShort="OOC Dev Note: Will only store medical items in the comming updates.";
+    displayName="Medical Barrel";
+    descriptionShort="Stores medical materials and a good amount of blood.";
     hiddenSelectionsTextures[]=
 		{
       "\dz\gear\cooking\data\stoneground_co.paa",
 			"Survivalists_Mods\gear\containers\data\barrel_holes_medical_co.paa",
       "Survivalists_Mods\gear\containers\data\barrel_holes_medical_co.paa",
+		};
+    attachments[]=
+    {
+      "SRP_BloodBag_OP1",
+      "SRP_BloodBag_OP2",
+      "SRP_BloodBag_OP3",
+      "SRP_BloodBag_OP4",
+      "SRP_BloodBag_OP5",
+      "SRP_BloodBag_ON1",
+      "SRP_BloodBag_ON2",
+      "SRP_BloodBag_ON3",
+      "SRP_BloodBag_ON4",
+      "SRP_BloodBag_ON5",
+      "SRP_BloodBag_AP1",
+      "SRP_BloodBag_AP2",
+      "SRP_BloodBag_AP3",
+      "SRP_BloodBag_AP4",
+      "SRP_BloodBag_AP5",
+      "SRP_BloodBag_AN1",
+      "SRP_BloodBag_AN2",
+      "SRP_BloodBag_AN3",
+      "SRP_BloodBag_AN4",
+      "SRP_BloodBag_AN5",
+      "SRP_BloodBag_BP1",
+      "SRP_BloodBag_BP2",
+      "SRP_BloodBag_BP3",
+      "SRP_BloodBag_BP4",
+      "SRP_BloodBag_BP5",
+      "SRP_BloodBag_BN1",
+      "SRP_BloodBag_BN2",
+      "SRP_BloodBag_BN3",
+      "SRP_BloodBag_BN4",
+      "SRP_BloodBag_BN5",
+      "SRP_BloodBag_ABP1",
+      "SRP_BloodBag_ABP2",
+      "SRP_BloodBag_ABP3",
+      "SRP_BloodBag_ABP4",
+      "SRP_BloodBag_ABP5",
+      "SRP_BloodBag_ABN1",
+      "SRP_BloodBag_ABN2",
+      "SRP_BloodBag_ABN3",
+      "SRP_BloodBag_ABN4",
+      "SRP_BloodBag_ABN5",
+    };
+    class GUIInventoryAttachmentsProps
+		{
+			class OPositive
+			{
+				name="O+";
+				description="Labeled bags of O+ blood.";
+				attachmentSlots[]=
+				{
+          "SRP_BloodBag_OP1",
+          "SRP_BloodBag_OP2",
+          "SRP_BloodBag_OP3",
+          "SRP_BloodBag_OP4",
+          "SRP_BloodBag_OP5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class ONegative
+			{
+				name="O-";
+				description="Labeled bags of O- blood.";
+				attachmentSlots[]=
+				{
+          "SRP_BloodBag_ON1",
+          "SRP_BloodBag_ON2",
+          "SRP_BloodBag_ON3",
+          "SRP_BloodBag_ON4",
+          "SRP_BloodBag_ON5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+			class APositive
+			{
+				name="A+";
+				description="Labeled bags of A+ blood.";
+				attachmentSlots[]=
+				{
+          "SRP_BloodBag_AP1",
+          "SRP_BloodBag_AP2",
+          "SRP_BloodBag_AP3",
+          "SRP_BloodBag_AP4",
+          "SRP_BloodBag_AP5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class ANegative
+			{
+				name="A-";
+				description="Labeled bags of A- blood.";
+				attachmentSlots[]=
+				{
+          "SRP_BloodBag_AN1",
+          "SRP_BloodBag_AN2",
+          "SRP_BloodBag_AN3",
+          "SRP_BloodBag_AN4",
+          "SRP_BloodBag_AN5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};    
+      class BPositive
+			{
+				name="B+";
+				description="Labeled bags of B+ blood.";
+				attachmentSlots[]=
+				{
+          "SRP_BloodBag_BP1",
+          "SRP_BloodBag_BP2",
+          "SRP_BloodBag_BP3",
+          "SRP_BloodBag_BP4",
+          "SRP_BloodBag_BP5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class BNegative
+			{
+				name="B-";
+				description="Labeled bags of B- blood.";
+				attachmentSlots[]=
+				{
+          "SRP_BloodBag_BN1",
+          "SRP_BloodBag_BN2",
+          "SRP_BloodBag_BN3",
+          "SRP_BloodBag_BN4",
+          "SRP_BloodBag_BN5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class ABPositive
+			{
+				name="AB+";
+				description="Labeled bags of AB+ blood.";
+				attachmentSlots[]=
+				{
+          "SRP_BloodBag_ABP1",
+          "SRP_BloodBag_ABP2",
+          "SRP_BloodBag_ABP3",
+          "SRP_BloodBag_ABP4",
+          "SRP_BloodBag_ABP5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class ABNegative
+			{
+				name="AB-";
+				description="Labeled bags of AB- blood.";
+				attachmentSlots[]=
+				{
+          "SRP_BloodBag_ABN1",
+          "SRP_BloodBag_ABN2",
+          "SRP_BloodBag_ABN3",
+          "SRP_BloodBag_ABN4",
+          "SRP_BloodBag_ABN5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};  
 		};
   };
 

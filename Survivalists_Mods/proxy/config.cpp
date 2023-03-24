@@ -2185,6 +2185,247 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=200;
   };
+//=====================BLOOD BAGS
+  class Slot_SRP_BloodBag_OP1
+  {
+		name="SRP_BloodBag_OP1";
+		displayName="O+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_OP2
+  {
+		name="SRP_BloodBag_OP2";
+		displayName="O+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_OP3
+  {
+		name="SRP_BloodBag_OP3";
+		displayName="O+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_OP4
+  {
+		name="SRP_BloodBag_OP4";
+		displayName="O+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_OP5
+  {
+		name="SRP_BloodBag_OP5";
+		displayName="O+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ON1
+  {
+		name="SRP_BloodBag_ON1";
+		displayName="O- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ON2
+  {
+		name="SRP_BloodBag_ON2";
+		displayName="O- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ON3
+  {
+		name="SRP_BloodBag_ON3";
+		displayName="O- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ON4
+  {
+		name="SRP_BloodBag_ON4";
+		displayName="O- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ON5
+  {
+		name="SRP_BloodBag_ON5";
+		displayName="O- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  }; 
+  class Slot_SRP_BloodBag_AP1
+  {
+		name="SRP_BloodBag_AP1";
+		displayName="A+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AP2
+  {
+		name="SRP_BloodBag_AP2";
+		displayName="A+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AP3
+  {
+		name="SRP_BloodBag_AP3";
+		displayName="A+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AP4
+  {
+		name="SRP_BloodBag_AP4";
+		displayName="A+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AP5
+  {
+		name="SRP_BloodBag_AP5";
+		displayName="A+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AN1
+  {
+		name="SRP_BloodBag_AN1";
+		displayName="A- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AN2
+  {
+		name="SRP_BloodBag_AN2";
+		displayName="A- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AN3
+  {
+		name="SRP_BloodBag_AN3";
+		displayName="A- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AN4
+  {
+		name="SRP_BloodBag_AN4";
+		displayName="A- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_AN5
+  {
+		name="SRP_BloodBag_AN5";
+		displayName="A- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  }; 
+  class Slot_SRP_BloodBag_BP1
+  {
+		name="SRP_BloodBag_BP1";
+		displayName="B+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BP2
+  {
+		name="SRP_BloodBag_BP2";
+		displayName="B+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BP3
+  {
+		name="SRP_BloodBag_BP3";
+		displayName="B+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BP4
+  {
+		name="SRP_BloodBag_BP4";
+		displayName="B+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BP5
+  {
+		name="SRP_BloodBag_BP5";
+		displayName="B+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BN1
+  {
+		name="SRP_BloodBag_BN1";
+		displayName="B- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BN2
+  {
+		name="SRP_BloodBag_BN2";
+		displayName="B- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BN3
+  {
+		name="SRP_BloodBag_BN3";
+		displayName="B- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BN4
+  {
+		name="SRP_BloodBag_BN4";
+		displayName="B- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_BN5
+  {
+		name="SRP_BloodBag_BN5";
+		displayName="B- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  }; 
+  class Slot_SRP_BloodBag_ABP1
+  {
+		name="SRP_BloodBag_ABP1";
+		displayName="AB+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABP2
+  {
+		name="SRP_BloodBag_ABP2";
+		displayName="AB+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABP3
+  {
+		name="SRP_BloodBag_ABP3";
+		displayName="AB+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABP4
+  {
+		name="SRP_BloodBag_ABP4";
+		displayName="AB+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABP5
+  {
+		name="SRP_BloodBag_ABP5";
+		displayName="AB+ Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABN1
+  {
+		name="SRP_BloodBag_ABN1";
+		displayName="AB- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABN2
+  {
+		name="SRP_BloodBag_ABN2";
+		displayName="AB- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABN3
+  {
+		name="SRP_BloodBag_ABN3";
+		displayName="AB- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABN4
+  {
+		name="SRP_BloodBag_ABN4";
+		displayName="AB- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  };  
+  class Slot_SRP_BloodBag_ABN5
+  {
+		name="SRP_BloodBag_ABN5";
+		displayName="AB- Blood Bag";
+		ghostIcon="set:dayz_inventory image:missing";
+  }; 
 //===================== SKELLY
   class Slot_SRP_SkeletonSkull
   {

@@ -23,7 +23,7 @@ class CfgVehicles
 
   class SRP_KitBase;
 
-  // ------------------------------------------ VANILLA OVERRIDE
+// ------------------------------------------ VANILLA OVERRIDE
   class VitaminBottle: Edible_Base
 	{
     canBeSplit=1;
@@ -86,7 +86,53 @@ class CfgVehicles
 	{
 		itemSize[]={1,2};
   };
-  //------------------------------------------- CUSTOM STUFF
+  class BloodBagFull: Inventory_Base
+	{
+    inventorySlot[]+=
+    {
+      "SRP_BloodBag_OP1",
+      "SRP_BloodBag_OP2",
+      "SRP_BloodBag_OP3",
+      "SRP_BloodBag_OP4",
+      "SRP_BloodBag_OP5",
+      "SRP_BloodBag_ON1",
+      "SRP_BloodBag_ON2",
+      "SRP_BloodBag_ON3",
+      "SRP_BloodBag_ON4",
+      "SRP_BloodBag_ON5",
+      "SRP_BloodBag_AP1",
+      "SRP_BloodBag_AP2",
+      "SRP_BloodBag_AP3",
+      "SRP_BloodBag_AP4",
+      "SRP_BloodBag_AP5",
+      "SRP_BloodBag_AN1",
+      "SRP_BloodBag_AN2",
+      "SRP_BloodBag_AN3",
+      "SRP_BloodBag_AN4",
+      "SRP_BloodBag_AN5",
+      "SRP_BloodBag_BP1",
+      "SRP_BloodBag_BP2",
+      "SRP_BloodBag_BP3",
+      "SRP_BloodBag_BP4",
+      "SRP_BloodBag_BP5",
+      "SRP_BloodBag_BN1",
+      "SRP_BloodBag_BN2",
+      "SRP_BloodBag_BN3",
+      "SRP_BloodBag_BN4",
+      "SRP_BloodBag_BN5",
+      "SRP_BloodBag_ABP1",
+      "SRP_BloodBag_ABP2",
+      "SRP_BloodBag_ABP3",
+      "SRP_BloodBag_ABP4",
+      "SRP_BloodBag_ABP5",
+      "SRP_BloodBag_ABN1",
+      "SRP_BloodBag_ABN2",
+      "SRP_BloodBag_ABN3",
+      "SRP_BloodBag_ABN4",
+      "SRP_BloodBag_ABN5",
+    };
+	};
+//------------------------------------------- CUSTOM STUFF
   class SRP_StimPackInjector_Base: Epinephrine
 	{
 		scope=0;
