@@ -32,7 +32,7 @@ class ActionSwitchPatchLogoOption extends ActionSRPVariantIdOption
 		{      
       int variantId = SRP_VariantIdActionData.Cast(action_data).m_SRPVariantId;
       action_data.m_MainItem.Delete();
-      GetGame().CreateObjectEx(GetVariantIdOptions().Get(variantId), action_data.m_Player.GetPosition(), false)
+      GetGame().CreateObjectEx(GetVariantIdOptions().Get(variantId), action_data.m_Player.GetPosition(), false);
 		}
 	}
 

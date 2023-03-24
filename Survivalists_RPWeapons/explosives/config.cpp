@@ -69,7 +69,7 @@ class CfgVehicles
     };
   };
 
-  class SRP_Weapon_KitBase;
+  class SRP_KitBase;
 
   class SRP_Dynamite_Stick : Grenade_Base
   {
@@ -116,7 +116,7 @@ class CfgVehicles
 		};		
   };
 
-  class SRP_Dynamite_Stick_Kit: SRP_Weapon_KitBase
+  class SRP_Dynamite_Stick_Kit: SRP_KitBase
 	{
     scope=2;
     displayName="Dynamite Stack Kit";
@@ -130,6 +130,13 @@ class CfgVehicles
       "Dynamite3",
       "Dynamite4",    
     };
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]= {
+      "Survivalists_RPWeapons\explosives\data\dynamite_stick_co.paa"
+		};
+		hiddenSelectionsMaterials[]= {
+			"Survivalists_RPWeapons\explosives\data\dynamite_stick.rvmat"
+		};
 	};
 
   class SRP_Dynamite_Stack: Grenade_Base
