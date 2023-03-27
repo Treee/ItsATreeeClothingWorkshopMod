@@ -6,7 +6,7 @@ modded class ActionBreakLongWoodenStick
 		
     string newItemName = "WoodenStick";
 
-    if (startingItem && startingItem.GetType().Contains("_Irradiated"));
+    if (startingItem && startingItem.GetType().Contains("_Irradiated"))
       newItemName = string.Format("%1_Irradiated", newItemName);
 
 		BreakLongWoodenStick lambda = new BreakLongWoodenStick(action_data.m_MainItem, newItemName, action_data.m_Player, 3);
