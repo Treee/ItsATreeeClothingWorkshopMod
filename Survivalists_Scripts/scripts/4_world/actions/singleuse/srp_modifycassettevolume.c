@@ -36,7 +36,6 @@ class ActionIncreaseVolume: ActionSingleUseBase
 		if (Class.CastTo(radio, action_data.m_MainItem))
 		{		
       radio.ModifyVolume(1);
-      SendMessageToClient( action_data.m_Player, radio.GetPrettyVolume() );
 		}
   }	
 };
@@ -78,7 +77,6 @@ class ActionDecreaseVolume: ActionSingleUseBase
 		if (Class.CastTo(radio, action_data.m_MainItem))
 		{		
       radio.ModifyVolume(-1);
-      SendMessageToClient( action_data.m_Player, radio.GetPrettyVolume() );
 		}
   }	
 };
