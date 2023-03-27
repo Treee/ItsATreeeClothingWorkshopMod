@@ -4,6 +4,9 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
+    actions.Insert(ActionIncreaseVolume);
+    actions.Insert(ActionDecreaseVolume);
+
     actions.Insert(SRP_ActionDismantlePlacedObject);
 
     actions.Insert(SRP_ActionCookDrugs);

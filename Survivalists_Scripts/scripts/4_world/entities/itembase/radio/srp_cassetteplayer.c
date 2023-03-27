@@ -5,10 +5,12 @@ class SRP_CassettePlayer extends ItemBase
   bool m_Playing;
   bool m_SyncPlaying;
   string m_CassetteSoundSet;
+  int m_CassetteVolume = 5; // 0-10 == 0-1
     
   void SRP_CassettePlayer()
   {
     RegisterNetSyncVariableBool( "m_SyncPlaying" );    
+    RegisterNetSyncVariableInt( "m_CassetteVolume", 0, 15 );    
   }
     
   override void OnVariablesSynchronized()
@@ -23,6 +25,18 @@ class SRP_CassettePlayer extends ItemBase
     {
       TurnOff();
     }
+
+    if (m_Playing)
+    {
+      float currentVol = m_ActiveSound.GetSoundVolume();
+      float expectedVol = m_CassetteVolume * 0.1;
+      // string.Format("current: %1 expected: %2", currentVol, expectedVol);
+      if (currentVol != expectedVol)
+      {
+        // Print("sync sound");
+        m_ActiveSound.SetSoundVolume(expectedVol);
+      }
+    }
 	}	
    
   override void SetActions()
@@ -32,6 +46,8 @@ class SRP_CassettePlayer extends ItemBase
 		AddAction(ActionTurnOffWhileInHands);
 		AddAction(ActionTurnOnWhileOnGround);
 		AddAction(ActionTurnOffWhileOnGround);
+		AddAction(ActionIncreaseVolume);
+		AddAction(ActionDecreaseVolume);
 	}
 
   override void EEItemAttached( EntityAI item, string slot_name )
@@ -126,6 +142,16 @@ class SRP_CassettePlayer extends ItemBase
     {
       StopSoundSet( m_ActiveSound );
     }
+    SetSynchDirty();
+  }
+
+  void ModifyVolume(int deltaVolume)
+  {
+    m_CassetteVolume += deltaVolume;
+    // clamp to 15
+    m_CassetteVolume = Math.Min(m_CassetteVolume, 15);
+    // clamp to 0
+    m_CassetteVolume = Math.Max(m_CassetteVolume, 0);
     SetSynchDirty();
   }
 };
