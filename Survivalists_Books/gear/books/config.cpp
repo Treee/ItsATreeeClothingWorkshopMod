@@ -190,6 +190,19 @@ class CfgVehicles
 			"Survivalists_Books\gear\books\data\book_herbologyandalchemy_co.paa"
 		};
 	};
+  class SRP_ReadableBook_AlchemySociety_TaskList: SRP_ReadableBook_Colorbase
+	{
+		scope=2;
+		title="Alchemy Society Tasks";
+		author="Clayton Collier Sr";
+		file="Survivalists_Books\gear\books\data\book_alchemytasks.html";
+		displayName="Alchemy Society Tasks";
+		descriptionShort="Alchemy Society Tasks";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Books\gear\books\data\book_alchemytasks_co.paa"
+		};
+	};
   class SRP_ReadableBook_TheCoalition: SRP_ReadableBook_Colorbase
 	{
 		scope=2;
