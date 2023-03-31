@@ -212,24 +212,24 @@ modded class PlayerBase
 		return 0;
 	}
 
-  // float GetAimingLR()
-  // {
-  //   HumanCommandWeapons    hcw = GetCommandModifier_Weapons();
-  //   if (hcw != null)
-  //   {
-  //       return hcw.GetBaseAimingAngleLR();
-  //   }        
-  //   return 0.0;
-  // };
-  // float GetAimingUD()
-  // {
-  //   HumanCommandWeapons    hcw = GetCommandModifier_Weapons();
-  //   if (hcw != null)
-  //   {
-  //       return hcw.GetBaseAimingAngleUD();
-  //   }        
-  //   return 0.0;
-  // };
+  float GetAimingLR()
+  {
+    HumanCommandWeapons    hcw = GetCommandModifier_Weapons();
+    if (hcw != null)
+    {
+        return hcw.GetBaseAimingAngleLR();
+    }        
+    return 0.0;
+  };
+  float GetAimingUD()
+  {
+    HumanCommandWeapons    hcw = GetCommandModifier_Weapons();
+    if (hcw != null)
+    {
+        return hcw.GetBaseAimingAngleUD();
+    }        
+    return 0.0;
+  };
 
   // turn this into onwasattached and onwasdetached
   bool SRP_IgnoreShoeDamage()
