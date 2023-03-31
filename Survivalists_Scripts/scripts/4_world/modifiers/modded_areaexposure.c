@@ -10,8 +10,8 @@ modded class AreaExposureMdfr
       // Print("OnTick::Mutant: return from activation");
       if (player.IsPlayerMutant())
       {
-        player.GetStatEnergy().Add(PlayerConstants.DIGESTION_SPEED + 1.2);
-        player.GetStatWater().Add(PlayerConstants.DIGESTION_SPEED + 0.9);
+        player.GetStatEnergy().Add( ( PlayerConstants.DIGESTION_SPEED * deltaT ) + 0.2);
+        player.GetStatWater().Add( ( PlayerConstants.DIGESTION_SPEED * deltaT ) + 0.2);
       }
       else if (player.IsAlpha() || player.IsQueenAlpha())
       {        

@@ -85,3 +85,5 @@ modded class EmoteConstants
 	const int SRP_EMOTE_HOT = 79;
   const int SRP_EMOTE_LEGBREAK = 80;
 }
+
+const int SRP_MENU_RADIAL_MULTI	= 96;
