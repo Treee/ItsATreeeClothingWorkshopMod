@@ -2324,6 +2324,71 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_BlacksmithApron_ColorBase: Clothing
+  {
+		scope=0;
+		displayName="Blacksmiths Apron";
+		descriptionShort="A blacksmiths best friend";
+		model="Survivalists_Characters\Vests\SRP_BlacksmithApron_g.p3d";
+		inventorySlot[]=
+		{
+			"Vest"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Vest"
+		};
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Characters\vests\data\SRP_BlackSmithApron_CO.paa"};
+		weight=1200;
+		itemSize[]={3,3};
+		itemsCargoSize[]={5,4};
+		varWetMax=0.49000001;
+		heatIsolation=1;
+		repairableWithKits[]={3,8};
+		repairCosts[]={75,50};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\Vests\SRP_BlacksmithApron_m.p3d";
+			female="Survivalists_Characters\Vests\SRP_BlacksmithApron_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=225;
+					transferToAttachmentsCoef=0.5;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Characters\Vests\data\SRP_BlackSmithApron.rvmat"}},						
+						{0.69999999,{"Survivalists_Characters\Vests\data\SRP_BlackSmithApron.rvmat"}},						
+						{0.5,{"Survivalists_Characters\Vests\data\SRP_BlackSmithApron_damage.rvmat"}},						
+						{0.30000001,{"Survivalists_Characters\Vests\data\SRP_BlackSmithApron_damage.rvmat"}},						
+						{0,{"Survivalists_Characters\Vests\data\SRP_BlackSmithApron_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="SmershVest_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="SmershVest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 
   // ===================== VEST POUCHES
 
