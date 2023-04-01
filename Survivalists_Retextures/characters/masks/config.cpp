@@ -19,6 +19,8 @@ class CfgVehicles
 	class HockeyMask;
 	class Balaclava3Holes_ColorBase;
 	class BalaclavaMask_ColorBase;
+  class FaceCover_Improvised;
+
   class SRP_S10Respirator_Colorbase;
   class SRP_PMK2Respirator_Colorbase;
   class SRP_M50Respirator_Colorbase;
@@ -214,6 +216,56 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\masks\data\balaclava58_co.paa"
 		};
 	};
+  class FaceCover_Improvised_green: FaceCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_green_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_green_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_green_co.paa"
+    };
+  };
+  class FaceCover_Improvised_black: FaceCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_black_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_black_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_black_co.paa"
+    };
+  };
+  class FaceCover_Improvised_orange: FaceCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_orange_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_orange_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_orange_co.paa"
+    };
+  };
+  class FaceCover_Improvised_blue: FaceCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_blue_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_blue_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_blue_co.paa"
+    };
+  };
+  class FaceCover_Improvised_Red: FaceCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_red_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_red_co.paa",
+      "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_red_co.paa"
+    };
+  };
 
 	class SRP_FacialHairGoatee_Brown: SRP_FacialHairGoatee_Colorbase
 	{

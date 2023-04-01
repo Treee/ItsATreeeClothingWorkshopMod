@@ -30,6 +30,7 @@ class CfgVehicles
   class Jeans_ColorBase;
   class LeatherPants_ColorBase;
   class TTSKOPants;
+  class LegsCover_Improvised;
 
   class SRP_ESPG3_TacPants_Colorbase;
 
@@ -1066,6 +1067,58 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\ttsko_pants_tan_co.paa"
 		};
 	};
+
+  class LegsCover_Improvised_green: LegsCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_green_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_green_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_green_co.paa"
+    };
+  };
+  class LegsCover_Improvised_black: LegsCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_black_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_black_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_black_co.paa"
+    };
+  };
+  class LegsCover_Improvised_orange: LegsCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_orange_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_orange_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_orange_co.paa"
+    };
+  };
+  class LegsCover_Improvised_blue: LegsCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_blue_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_blue_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_blue_co.paa"
+    };
+  };
+  
+  class LegsCover_Improvised_Red: LegsCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_red_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_red_co.paa",
+      "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_red_co.paa"
+    };
+  };
 
   class SRP_ESPG3_TacPants_Black: SRP_ESPG3_TacPants_Colorbase
   {

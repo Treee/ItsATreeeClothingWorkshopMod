@@ -522,7 +522,18 @@ class CfgVehicles
 	{
     itemSize[]={2,2};
   };
-
+  class HeadCover_Improvised: Clothing
+	{
+    rootClassName="HeadCover_Improvised";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",      
+      "Orange",      
+      "Blue",      
+      "Red",      
+    };
+  };
 // ----------------------------------------- Custom Stuff  
   class SRP_BaseballCap_Tinfoil: BaseballCap_ColorBase  // new
 	{

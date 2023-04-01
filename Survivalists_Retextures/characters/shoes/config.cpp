@@ -20,6 +20,7 @@ class CfgVehicles
 	class NBCBootsBase;
   class Sneakers_ColorBase;
   class LeatherShoes_ColorBase;
+  class FeetCover_Improvised;
 
   class NBCBootsBase_Gray: NBCBootsBase
 	{
@@ -412,4 +413,55 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\shoes\data\shoes_leathermoccasins_Yellow_co.paa"
 		};
 	};
+  
+  class FeetCover_Improvised_green: FeetCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_green_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_green_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_green_co.paa"
+    };
+  };
+  class FeetCover_Improvised_black: FeetCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_black_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_black_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_black_co.paa"
+    };
+  };
+  class FeetCover_Improvised_orange: FeetCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_orange_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_orange_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_orange_co.paa"
+    };
+  };
+  class FeetCover_Improvised_blue: FeetCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_blue_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_blue_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_blue_co.paa"
+    };
+  };
+  class FeetCover_Improvised_Red: FeetCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_red_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_red_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_red_co.paa"
+    };
+  };
 };

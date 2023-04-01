@@ -686,6 +686,20 @@ class CfgVehicles
       "White",
     };
   };
+  class TorsoCover_Improvised: Clothing
+  {
+    rootClassName="TorsoCover_Improvised";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",      
+      "Orange",      
+      "Blue",      
+      "Red",      
+    };
+  };
+
+
   class DUB_Monkrobe: Clothing
   {
     rootClassName="DUB_Monkrobe";
@@ -758,7 +772,7 @@ class CfgVehicles
     };
 	};
 
-  //===================== CUSTOM SHIRTS
+//===================== CUSTOM SHIRTS
 
   class SRP_Bowtie_ColorBase: Clothing
 	{

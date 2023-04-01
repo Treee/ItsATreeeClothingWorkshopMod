@@ -660,7 +660,18 @@ class CfgVehicles
       "SRP_Mask10",
     };
 	};
-
+  class FaceCover_Improvised: Clothing
+	{
+    rootClassName="FaceCover_Improvised";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",      
+      "Orange",      
+      "Blue",      
+      "Red",      
+    };
+  };
 
   //---------------------------------------- BASE GAME RETEXTURES
   class SRP_HannyaMask: Clothing

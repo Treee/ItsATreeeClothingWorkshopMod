@@ -282,7 +282,18 @@ class CfgVehicles
 	{
     itemSize[]={2,2};
   };
-  
+  class FeetCover_Improvised: Clothing
+  {
+    rootClassName="FeetCover_Improvised";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",      
+      "Orange",      
+      "Blue",      
+      "Red",      
+    };
+  };
   //====================================================== CUSTOM STUFF
 
   class Sneakers_Skylar_Biozone: Sneakers_ColorBase

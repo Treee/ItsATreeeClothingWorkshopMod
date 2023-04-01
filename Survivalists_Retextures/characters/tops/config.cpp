@@ -45,6 +45,7 @@ class CfgVehicles
 	class WoolCoat_ColorBase;
   class HikingJacket_ColorBase;
   class TTsKOJacket_ColorBase;
+  class TorsoCover_Improvised;
 
   class SRP_Rolled_Shirt_ColorBase;
   class SRP_ESPG3_TacShirt_Colorbase;
@@ -2714,6 +2715,32 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\ttsko_jacket_tan_co.paa",
 		};
 	};
+
+  class TorsoCover_Improvised_green: TorsoCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\torsoCover_improvised_green_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_green_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_green_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_green_CO.paa"};
+  };
+  class TorsoCover_Improvised_black: TorsoCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\torsoCover_improvised_black_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_black_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_black_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_black_CO.paa"};
+  };
+  class TorsoCover_Improvised_orange: TorsoCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\torsoCover_improvised_orange_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_orange_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_orange_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_orange_CO.paa"};
+  };
+  class TorsoCover_Improvised_blue: TorsoCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\torsoCover_improvised_blue_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_blue_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_blue_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_blue_CO.paa"};
+  };
+  class TorsoCover_Improvised_Red: TorsoCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\torsoCover_improvised_red_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_red_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_red_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_red_CO.paa"};
+  };
 
   //==============MODDED
   class DUB_Monkrobe_blue: DUB_Monkrobe

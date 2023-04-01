@@ -409,6 +409,18 @@ class CfgVehicles
       "Tan",
     };
   };
+  class LegsCover_Improvised: Clothing
+  {
+    rootClassName="LegsCover_Improvised";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",      
+      "Orange",      
+      "Blue",      
+      "Red",      
+    };
+  };
 
 //======================================= CUSTOM CLOTHING
   class SRP_ESPG3_TacPants_Colorbase: Clothing

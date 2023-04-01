@@ -16,7 +16,7 @@ class CfgVehicles
 {
   class Clothing;  
   class MeleeDamage;
-  //-------------------------------------BASE GAME OVERRIDE
+//-------------------------------------BASE GAME OVERRIDE
   class NBCGloves_ColorBase: Clothing
 	{
     heatIsolation=0.6;
@@ -57,8 +57,16 @@ class CfgVehicles
   class HandsCover_Improvised: Clothing
 	{
     itemSize[]={1,2};
+    rootClassName="HandsCover_Improvised";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",      
+      "Orange",      
+      "Blue",      
+      "Red",      
+    };
   };
-
   class WorkingGloves_ColorBase: Clothing
 	{
     itemSize[]={1,2};
@@ -73,7 +81,6 @@ class CfgVehicles
       "Red"
     };
   };
-
   class SurgicalGloves_ColorBase: Clothing
 	{
     rootClassName="SurgicalGloves";
@@ -94,7 +101,6 @@ class CfgVehicles
       "Yellow"      
     };
   };
-
   class LeatherGloves_ColorBase: Clothing
 	{
     rootClassName="LeatherGloves";
@@ -114,7 +120,6 @@ class CfgVehicles
       "Yellow",
     };
   };
-
   class OMNOGloves_ColorBase: Clothing
 	{
     rootClassName="OMNOGloves";
@@ -127,8 +132,7 @@ class CfgVehicles
       "Black"
     };
   };
-
-  //====================================== CUSTOM STUFF
+//====================================== CUSTOM STUFF
   
 	class HookHand: Clothing
 	{	

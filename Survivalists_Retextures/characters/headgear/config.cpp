@@ -31,6 +31,8 @@ class CfgVehicles
   class LeatherHat_ColorBase;
   class OfficerHat;
   class PoliceCap;
+  class HeadCover_Improvised;
+
 	class SRP_TurkeyBeanie_ColorBase;
   class SRP_FaceMaskSkull_ColorBase;
   class SRP_FaceMask_ColorBase;
@@ -1077,7 +1079,56 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\hat_leather_Yellow_co.paa"
 		};
 	};
-
+  class HeadCover_Improvised_green: HeadCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_green_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_green_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_green_CO.paa"
+    };
+  };
+  class HeadCover_Improvised_black: HeadCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_black_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_black_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_black_CO.paa"
+    };
+  };
+  class HeadCover_Improvised_orange: HeadCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_orange_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_orange_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_orange_CO.paa"
+    };
+  };
+  class HeadCover_Improvised_blue: HeadCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_blue_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_blue_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_blue_CO.paa"
+    };
+  };
+  class HeadCover_Improvised_Red: HeadCover_Improvised
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_red_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_red_CO.paa",
+      "Survivalists_Retextures\characters\headgear\data\headCover_improvised_red_CO.paa"
+    };
+  };
 //============================================= CUSTOM Item Retextures
   class SRP_TurkeyBeanie_Turkey: SRP_TurkeyBeanie_ColorBase
 	{

@@ -21,6 +21,7 @@ class CfgVehicles
 	class TacticalGloves_ColorBase;
   class LeatherGloves_ColorBase;
   class SurgicalGloves_ColorBase;
+  class HandsCover_Improvised;
 
   class SRP_BoxingGloves_Colorbase;
 
@@ -423,4 +424,31 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\gloves\data\surgical_gloves_yellow_co.paa"
 		};
 	};
+
+  class HandsCover_Improvised_green: HandsCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\gloves\data\handscover_improvised_green_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_green_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_green_CO.paa"};
+  };
+  class HandsCover_Improvised_black: HandsCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\gloves\data\handscover_improvised_black_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_black_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_black_CO.paa"};
+  };
+  class HandsCover_Improvised_orange: HandsCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\gloves\data\handscover_improvised_orange_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_orange_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_orange_CO.paa"};
+  };
+  class HandsCover_Improvised_blue: HandsCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\gloves\data\handscover_improvised_blue_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_blue_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_blue_CO.paa"};
+  };
+  class HandsCover_Improvised_Red: HandsCover_Improvised
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\gloves\data\handscover_improvised_red_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_red_CO.paa","Survivalists_Retextures\characters\gloves\data\handscover_improvised_red_CO.paa"};
+  };
+
 };
