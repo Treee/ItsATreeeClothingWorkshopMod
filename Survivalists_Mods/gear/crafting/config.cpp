@@ -1465,7 +1465,7 @@ class CfgVehicles
 		};
 		heavyItem=1;
 		weight=10000;
-		itemSize[]={4,3};
+		itemSize[]={2,3};
 		itemBehaviour=0;
     class DamageSystem
 		{
@@ -1514,7 +1514,7 @@ class CfgVehicles
 		};
 		heavyItem=1;
 		weight=10000;
-		itemSize[]={4,3};
+		itemSize[]={2,3};
 		itemBehaviour=0;
     class DamageSystem
 		{

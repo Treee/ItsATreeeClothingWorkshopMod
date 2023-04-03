@@ -15,9 +15,10 @@ class CfgPatches
 class CfgVehicles
 {
   class HouseNoDestruct;
+  class Inventory_Base;
 
 // ---------------------PRE FABS
-  class SRP_PrefabCrafting_Base: HouseNoDestruct
+  class SRP_PrefabCrafting_Base: Inventory_Base
 	{
 		scope=0;
 		displayName="BaseCraftingBench";
@@ -43,20 +44,37 @@ class CfgVehicles
     {
       "SRP_WoodDrill",
       "SRP_WoodClamp",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      // "SRP_Construction_WoodenLogs",
-      // "SRP_Construction_WoodenPlanks",
-      // "SRP_Construction_Stone",
-      // "SRP_Construction_Mortar",
-      // "SRP_Construction_Cement",
-      // "SRP_Construction_MetalPlate",
-      // "SRP_Construction_Nails",
-      // "SRP_Construction_MetalWire",
-      // "SRP_Construction_Pipe",
-      // "SRP_Construction_Epoxy",
-      // "SRP_Construction_Fabric",
-      // "SRP_Construction_Rope"
+      "Material_WoodenLogs", // 2
+      "Material_L1_WoodenLogs", // 4
+      "Material_L2_WoodenLogs", // 4
+      "Material_L3_WoodenLogs", // 4
+      "Material_L1_WoodenPlanks", // 20
+      "Material_L1W1_WoodenPlanks", // 20
+      "Material_L1W2_WoodenPlanks", // 20
+      "Material_L1W3_WoodenPlanks", // 20
+      "Material_L2_WoodenPlanks", // 20
+      "Material_L2W1_WoodenPlanks", // 20
+      "Material_L2W2_WoodenPlanks", // 20
+      "Material_L2W3_WoodenPlanks", // 20       
+      "Truck_01_WoodenPlanks", //100
+      "Material_MetalSheets", // 20
+      "Material_Nails", // 99
+      "Material_L1_Nails",
+      "Material_L1W1_Nails",
+      "Material_L1W2_Nails",
+      "Material_L1W3_Nails",
+      "Material_L2_Nails",
+      "Material_L2W1_Nails",
+      "Material_L2W2_Nails",
+      "Material_L2W3_Nails",
+      "Material_L3_Nails",        
+      "Material_Shelter_Fabric", // 4
+      "Material_FPole_Rope", // 1
+      "Material_Shelter_Rope", // 1
+      "Rope", // 1
+      "MetalWire", // 1
+      "Material_MetalWire", // 1
+      "Material_FPole_MetalWire", // 1
     };
     class GUIInventoryAttachmentsProps
 		{
@@ -71,16 +89,81 @@ class CfgVehicles
 				};
 				icon="set:dayz_inventory image:cat_vehicle_engine";
 			};	
-      class ExtraMaterials
+      class WoodenLogs
 			{
-				name="Extra Materials";
-				description="Extra Materials";
+				name="Wooden Logs";
+				description="Wooden Logs";
 				attachmentSlots[]=
 				{
-          "Material_WoodenPlanks",
-          "Material_MetalSheets", 
+          "Material_WoodenLogs", // 2
+          "Material_L1_WoodenLogs", // 4
+          "Material_L2_WoodenLogs", // 4
+          "Material_L3_WoodenLogs", // 4
         };
-				icon="set:dayz_inventory image:cat_vehicle_engine";
+				icon="set:dayz_inventory image:woodenlog";
+			};	
+      class WoodenPlanks
+			{
+				name="Wooden Planks";
+				description="Wooden Planks";
+				attachmentSlots[]=
+				{
+          "Material_L1_WoodenPlanks", // 20
+          "Material_L1W1_WoodenPlanks", // 20
+          "Material_L1W2_WoodenPlanks", // 20
+          "Material_L1W3_WoodenPlanks", // 20
+          "Material_L2_WoodenPlanks", // 20
+          "Material_L2W1_WoodenPlanks", // 20
+          "Material_L2W2_WoodenPlanks", // 20
+          "Material_L2W3_WoodenPlanks", // 20       
+          "Truck_01_WoodenPlanks", //100
+        };
+				icon="set:dayz_inventory image:planks";
+			};
+      class MetalSheet
+			{
+				name="Sheet Metal";
+				description="Sheet Metal";
+				attachmentSlots[]=
+				{
+          "Material_MetalSheets", // 2
+        };
+				icon="set:dayz_inventory image:plates";
+			};
+      class Nails
+			{
+				name="Nails";
+				description="Nails";
+				attachmentSlots[]=
+				{
+          "Material_Nails", // 99
+          "Material_L1_Nails",
+          "Material_L1W1_Nails",
+          "Material_L1W2_Nails",
+          "Material_L1W3_Nails",
+          "Material_L2_Nails",
+          "Material_L2W1_Nails",
+          "Material_L2W2_Nails",
+          "Material_L2W3_Nails",
+          "Material_L3_Nails",        
+        };
+				icon="set:dayz_inventory image:nails";
+			};	
+      class ExtraMaterial
+			{
+				name="Extra Material";
+				description="Extra Material";
+				attachmentSlots[]=
+				{
+          "Material_Shelter_Fabric", // 4
+          "Material_FPole_Rope", // 1
+          "Material_Shelter_Rope", // 1
+          "Rope", // 1
+          "MetalWire", // 1
+          "Material_MetalWire", // 1
+          "Material_FPole_MetalWire", // 1
+        };
+				icon="set:dayz_inventory image:metalwire";
 			};	
 		};
 	};
@@ -94,20 +177,37 @@ class CfgVehicles
     {
       "SRP_WoodDrill",
       "SRP_WoodClamp",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      // "SRP_Construction_WoodenLogs",
-      // "SRP_Construction_WoodenPlanks",
-      // "SRP_Construction_Stone",
-      // "SRP_Construction_Mortar",
-      // "SRP_Construction_Cement",
-      // "SRP_Construction_MetalPlate",
-      // "SRP_Construction_Nails",
-      // "SRP_Construction_MetalWire",
-      // "SRP_Construction_Pipe",
-      // "SRP_Construction_Epoxy",
-      // "SRP_Construction_Fabric",
-      // "SRP_Construction_Rope"
+      "Material_WoodenPlanks", // 20
+      "Material_L1_WoodenPlanks", // 20
+      "Material_L1W1_WoodenPlanks", // 20
+      "Material_L1W2_WoodenPlanks", // 20
+      "Material_L1W3_WoodenPlanks", // 20
+      "Material_MetalSheets", // 20
+      "Truck_01_MetalSheets", // 40
+      "Material_L1W1_MetalSheets", // 20
+      "Material_L1W2_MetalSheets", // 20
+      "Material_L1W3_MetalSheets", // 20
+      "Material_L2W1_MetalSheets", // 20
+      "Material_L2W2_MetalSheets", // 20
+      "Material_L2W3_MetalSheets", // 20
+      "Material_L3W1_MetalSheets", // 20
+      "Material_L3W2_MetalSheets", // 20
+      "Material_Nails", // 99
+      "Material_L1_Nails",
+      "Material_L1W1_Nails",
+      "Material_L1W2_Nails",
+      "Material_L1W3_Nails",
+      "BatteryD", // 1
+      "CarBattery",
+      "TruckBattery",
+      "LargeBattery",
+      "Material_Shelter_Fabric", // 4
+      "Material_FPole_Rope", // 1
+      "Material_Shelter_Rope", // 1
+      "Rope", // 1
+      "MetalWire", // 1
+      "Material_MetalWire", // 1
+      "Material_FPole_MetalWire", // 1
     };
     class GUIInventoryAttachmentsProps
 		{
@@ -121,17 +221,81 @@ class CfgVehicles
           "SRP_WoodClamp"
 				};
 				icon="set:dayz_inventory image:cat_vehicle_engine";
-			};	
-      class ExtraMaterials
+			};
+      class WoodenPlanks
 			{
-				name="Extra Materials";
-				description="Extra Materials";
+				name="Wooden Planks";
+				description="Wooden Planks";
 				attachmentSlots[]=
 				{
-          "Material_WoodenPlanks",
-          "Material_MetalSheets", 
+          "Material_L1_WoodenPlanks", // 20
+          "Material_L1W1_WoodenPlanks", // 20
+          "Material_L1W2_WoodenPlanks", // 20
+          "Material_L1W3_WoodenPlanks", // 20
         };
-				icon="set:dayz_inventory image:cat_vehicle_engine";
+				icon="set:dayz_inventory image:planks";
+			};
+      class MetalSheet
+			{
+				name="Sheet Metal";
+				description="Sheet Metal";
+				attachmentSlots[]=
+				{
+          "Material_MetalSheets", // 20
+          "Truck_01_MetalSheets", // 40
+          "Material_L1W1_MetalSheets", // 20
+          "Material_L1W2_MetalSheets", // 20
+          "Material_L1W3_MetalSheets", // 20
+          "Material_L2W1_MetalSheets", // 20
+          "Material_L2W2_MetalSheets", // 20
+          "Material_L2W3_MetalSheets", // 20
+          "Material_L3W1_MetalSheets", // 20
+          "Material_L3W2_MetalSheets", // 20
+        };
+				icon="set:dayz_inventory image:plates";
+			};
+      class Nails
+			{
+				name="Nails";
+				description="Nails";
+				attachmentSlots[]=
+				{
+          "Material_Nails", // 99
+          "Material_L1_Nails",
+          "Material_L1W1_Nails",
+          "Material_L1W2_Nails",
+          "Material_L1W3_Nails",
+        };
+				icon="set:dayz_inventory image:nails";
+			};	
+      class PowerGeneration
+			{
+				name="Power Source";
+				description="Power Source";
+				attachmentSlots[]=
+				{
+          "BatteryD", // 1
+          "CarBattery",
+          "TruckBattery",
+          "LargeBattery",
+        };
+				icon="set:dayz_inventory image:nails";
+			};	
+      class ExtraMaterial
+			{
+				name="Extra Material";
+				description="Extra Material";
+				attachmentSlots[]=
+				{
+          "Material_Shelter_Fabric", // 4
+          "Material_FPole_Rope", // 1
+          "Material_Shelter_Rope", // 1
+          "Rope", // 1
+          "MetalWire", // 1
+          "Material_MetalWire", // 1
+          "Material_FPole_MetalWire", // 1
+        };
+				icon="set:dayz_inventory image:metalwire";
 			};	
 		};
 	};

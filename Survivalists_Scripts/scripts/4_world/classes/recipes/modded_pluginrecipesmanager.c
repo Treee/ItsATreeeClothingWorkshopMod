@@ -430,7 +430,6 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_CraftBuildingComponentFrameFineFlatDoublePlatformKit);
 
       RegisterRecipe(new Craft_SRP_Furniture_WoodenStairs_Kit);
-      RegisterRecipe(new Craft_SRP_WoodenLetterSealer);
       RegisterRecipe(new Craft_SRP_CopyBook);
 
       RegisterRecipe(new Craft_SRP_ArmbandPinCollectable);

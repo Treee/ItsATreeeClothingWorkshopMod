@@ -6,6 +6,7 @@ modded class Hammer
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
 		AddAction(SRP_ActionMetalSmith);
+		AddAction(SRP_ActionCarpentryCraft);
 	}
 }
 
