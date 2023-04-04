@@ -182,8 +182,6 @@ class CfgVehicles
       "Material_L1W1_WoodenPlanks", // 20
       "Material_L1W2_WoodenPlanks", // 20
       "Material_L1W3_WoodenPlanks", // 20
-      "Material_MetalSheets", // 20
-      "Truck_01_MetalSheets", // 40
       "Material_L1W1_MetalSheets", // 20
       "Material_L1W2_MetalSheets", // 20
       "Material_L1W3_MetalSheets", // 20
@@ -192,6 +190,7 @@ class CfgVehicles
       "Material_L2W3_MetalSheets", // 20
       "Material_L3W1_MetalSheets", // 20
       "Material_L3W2_MetalSheets", // 20
+      "Material_L3W3_MetalSheets", // 20
       "Material_Nails", // 99
       "Material_L1_Nails",
       "Material_L1W1_Nails",
@@ -228,6 +227,7 @@ class CfgVehicles
 				description="Wooden Planks";
 				attachmentSlots[]=
 				{
+          "Material_WoodenPlanks",
           "Material_L1_WoodenPlanks", // 20
           "Material_L1W1_WoodenPlanks", // 20
           "Material_L1W2_WoodenPlanks", // 20
@@ -241,8 +241,6 @@ class CfgVehicles
 				description="Sheet Metal";
 				attachmentSlots[]=
 				{
-          "Material_MetalSheets", // 20
-          "Truck_01_MetalSheets", // 40
           "Material_L1W1_MetalSheets", // 20
           "Material_L1W2_MetalSheets", // 20
           "Material_L1W3_MetalSheets", // 20
@@ -251,6 +249,7 @@ class CfgVehicles
           "Material_L2W3_MetalSheets", // 20
           "Material_L3W1_MetalSheets", // 20
           "Material_L3W2_MetalSheets", // 20
+          "Material_L3W3_MetalSheets", // 20
         };
 				icon="set:dayz_inventory image:plates";
 			};
@@ -279,7 +278,7 @@ class CfgVehicles
           "TruckBattery",
           "LargeBattery",
         };
-				icon="set:dayz_inventory image:nails";
+				icon="set:dayz_inventory image:carbattery";
 			};	
       class ExtraMaterial
 			{
@@ -299,5 +298,4 @@ class CfgVehicles
 			};	
 		};
 	};
-
 };

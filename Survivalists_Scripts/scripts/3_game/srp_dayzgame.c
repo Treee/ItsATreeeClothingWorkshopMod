@@ -5,6 +5,7 @@ modded class DayZGame
   protected ref SRP_TailoringRecipes m_TailoringRecipes;
   protected ref SRP_DrugRecipes m_DrugRecipes;
   protected ref SRP_WoodWorkbenchRecipes m_WoodWorkingRecipes;
+  protected ref SRP_MetalWorkbenchRecipes m_MetalWorkingRecipes;
   protected ref SRP_DynamicTreasureHunt m_DynamicDreasureHunt;
   protected ref SRP_AdminHelper m_AdminHelper;
   
@@ -17,6 +18,7 @@ modded class DayZGame
     m_TailoringRecipes = new SRP_TailoringRecipes();
     m_DrugRecipes = new SRP_DrugRecipes();
     m_WoodWorkingRecipes = new SRP_WoodWorkbenchRecipes();
+    m_MetalWorkingRecipes = new SRP_MetalWorkbenchRecipes();
     m_DynamicDreasureHunt = new SRP_DynamicTreasureHunt();
     m_AdminHelper = new SRP_AdminHelper();
     m_SRPProfileOptions = new SRPProfileOptions();
@@ -66,6 +68,10 @@ modded class DayZGame
   SRP_WoodWorkbenchRecipes GetSRPWoodWorkbenchRecipesGlobal()
   {
     return m_WoodWorkingRecipes;
+  }
+  SRP_MetalWorkbenchRecipes GetSRPMetalWorkbenchRecipesGlobal()
+  {
+    return m_MetalWorkingRecipes;
   }
   SRP_DynamicTreasureHunt GetDynamicTreasureHunt()
   {

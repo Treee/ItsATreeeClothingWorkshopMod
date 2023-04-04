@@ -32,12 +32,12 @@ class Craft_SRP_WoodenSignKit_Base extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"SRP_WornWorkbench");//you can insert multiple ingredients this way
+		InsertIngredient(1,"Firewood");//you can insert multiple ingredients this way
 		
-		m_IngredientAddHealth[1] = -1;// 0 = do nothing
+		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
-		m_IngredientDestroy[1] = false;// false = do nothing
+		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -56,8 +56,7 @@ class Craft_SRP_WoodenSignKit_Base extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    SRP_WornWorkbench bench = SRP_WornWorkbench.Cast(ingredients[1]);
-    return bench && bench.HasAllAttachments();
+    return true;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion

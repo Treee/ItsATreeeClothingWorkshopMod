@@ -9,6 +9,7 @@ modded class ActionConstructor
 
     actions.Insert(SRP_ActionDismantlePlacedObject);
 
+    actions.Insert(SRP_ActionMetalWorkingCraft);
     actions.Insert(SRP_ActionCarpentryCraft);
     actions.Insert(SRP_ActionCookDrugs);
     actions.Insert(SRP_ActionCraftAmmo);

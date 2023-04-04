@@ -153,7 +153,6 @@ modded class PluginRecipesManager
       RegisterRecipe(new SplitFirewood_Irradiated);
 
     //==========================================================Camping
-      RegisterRecipe(new Craft_SRP_ChessBoard_Kit);
       RegisterRecipe(new Craft_SRP_ChessBoard);
       RegisterRecipe(new Craft_SRP_ChessBoard_PawnPrimary);
       RegisterRecipe(new Craft_SRP_ChessBoard_RookPrimary);
@@ -175,7 +174,6 @@ modded class PluginRecipesManager
 
       RegisterRecipe(new Craft_SRP_HandofCards);
 
-      RegisterRecipe(new Craft_SRP_TetrisShelfKit);
       RegisterRecipe(new Craft_SRP_TetrisShelfLDown);
       RegisterRecipe(new Craft_SRP_TetrisShelfLUp);
       RegisterRecipe(new Craft_SRP_TetrisShelfLLeft);
@@ -189,7 +187,6 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_TetrisShelfSVertical);
       RegisterRecipe(new Craft_SRP_TetrisShelfBox);
 
-      RegisterRecipe(new Craft_SRP_WoodenShelfKit);
       RegisterRecipe(new Craft_SRP_WoodenShelfSimple_Kit);
       RegisterRecipe(new Craft_SRP_WoodenShelfSimpleGround_Kit);
       RegisterRecipe(new Craft_SRP_WoodenShelfGround_Kit);
@@ -198,12 +195,10 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_GunShelfGround_Kit);
       RegisterRecipe(new Craft_SRP_BoocCaseCube_Kit);
 
-      RegisterRecipe(new Craft_SRP_WoodenDisplayKit);
       RegisterRecipe(new Craft_SRP_WoodenDisplayKit_Kit_CoatRackBasic);
       RegisterRecipe(new Craft_SRP_WoodenDisplayKit_Kit_CoatRackSimple);
       RegisterRecipe(new Craft_SRP_WoodenDisplayKit_Kit_CoatRackFancy);
 
-      RegisterRecipe(new Craft_SRP_MetalShelfKit);
       RegisterRecipe(new Craft_SRP_MetalShelfSimpleGround_Kit);
       RegisterRecipe(new Craft_SRP_MetalShelfGround_Kit);
       RegisterRecipe(new Craft_SRP_MetalShelfGroundLarge_Kit);
@@ -404,15 +399,19 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_ShootingTargets_Kit);		
       RegisterRecipe(new Craft_SRP_PortableGasLamp);
 
-      RegisterRecipe(new Craft_SRP_BarricadeKit);
       RegisterRecipe(new Craft_SRP_Barricade_Wood_Kit);
       RegisterRecipe(new Craft_SRP_BarricadeWithWindow_Wood_Kit);
       RegisterRecipe(new Craft_SRP_WindowBarricade_Wood_Kit);
       RegisterRecipe(new Craft_SRP_WindowBarricadeTall_Wood_Kit);
       RegisterRecipe(new Craft_SRP_SpikeBarricade_Wood_Kit);
       RegisterRecipe(new Craft_SRP_BarricadeMetal_Kit);
+      RegisterRecipe(new Craft_SRP_Fortifications_BambooWall_Kit);
+      RegisterRecipe(new Craft_SRP_Fortifications_BambooWall_Yellow_Kit);
+      RegisterRecipe(new Craft_SRP_Fortifications_BambooWallCrossSmall_Kit);
+      RegisterRecipe(new Craft_SRP_Fortifications_BambooWallCrossSmall_Yellow_Kit);
+      RegisterRecipe(new Craft_SRP_Fortifications_BambooWallCross_Kit);
+      RegisterRecipe(new Craft_SRP_Fortifications_BambooWallCross_Yellow_Kit);
 
-      RegisterRecipe(new SRP_CraftBuildingComponentFrameKit);
       RegisterRecipe(new SRP_CraftBuildingComponentFrameWornRampKit);
       RegisterRecipe(new SRP_CraftBuildingComponentFrameWornLPlatformKit);
       RegisterRecipe(new SRP_CraftBuildingComponentFrameWornUPlatformKit);
@@ -504,7 +503,6 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_DUB_BioWolfwalltrophy);
       RegisterRecipe(new Craft_DUB_Alphawalltrophy);
 
-      RegisterRecipe(new Craft_SRP_WoodenFurnitureKit);
       RegisterRecipe(new Craft_SRP_BedsideTable_Kit);
       RegisterRecipe(new Craft_SRP_Furniture_WoodenTable_Kit);
       RegisterRecipe(new Craft_SRP_Furniture_Barrel_Kit);

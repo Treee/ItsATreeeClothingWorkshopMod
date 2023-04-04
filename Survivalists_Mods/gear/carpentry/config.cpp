@@ -27,14 +27,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Building Component Kit";
-		descriptionShort="A Building Component Kit";
-    attachments[]=
-    {
-      "Material_Nails",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      "Material_MetalWire"
-    };
+		descriptionShort="A Building Component Kit. Use epoxy putty to finish.";
 	};
 
   class SRP_BuildingComponentFrame_ColorBase: Inventory_Base // new
@@ -367,14 +360,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Barricade Kit";
-		descriptionShort="A Barricade Kit - Still needs a bit of work. Combine with other materials to finish.";
-    attachments[]=
-    {
-      "Material_Nails",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      "Material_MetalWire"
-    };
+		descriptionShort="A Barricade Kit - Still needs a bit of work.  Use epoxy putty to finish.";
 	};
 
   class SRP_Barricade_Wood_Kit: SRP_KitBase //new

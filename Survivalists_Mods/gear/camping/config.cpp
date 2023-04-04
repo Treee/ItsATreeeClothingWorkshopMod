@@ -2667,7 +2667,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Chess Game Kit";
-		descriptionShort="A kit used to create pieces for a chess game";
+		descriptionShort="A kit used to create pieces for a chess game. Combine with epoxy putty to finish.";
 		itemSize[]={3,1};
 	};
   class SRP_ChessBoard_ColorBase: Inventory_Base  

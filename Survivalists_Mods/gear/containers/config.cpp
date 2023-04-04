@@ -416,14 +416,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Shelf Kit";
-		descriptionShort="A Wooden Shelf Kit - Still needs a bit of work. Combine with other materials to finish.";
-    attachments[]=
-    {
-      "Material_Nails",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      "Material_MetalWire"
-    };
+		descriptionShort="A Wooden Shelf Kit - Still needs a bit of work. Use epoxy putty to finish.";
 	};
 
   class SRP_WoodenShelfSimple_Kit: SRP_KitBase //new
@@ -633,14 +626,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Metal Shelf Kit";
-		descriptionShort="A Metal Shelf Kit - Still needs a bit of work. Combine with other materials to finish.";
-    attachments[]=
-    {
-      "Material_Nails",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      "Material_MetalWire"
-    };
+		descriptionShort="A Metal Shelf Kit - Still needs a bit of work. Combine with a pipe to finish.";
 	};
 
   class SRP_MetalShelfSimpleGround_Kit: SRP_KitBase //new
@@ -1081,14 +1067,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tetris Shelf Kit";
-		descriptionShort="A Tetris Shelf Kit - Still needs a bit of work. Combine with other materials to finish.";
-    attachments[]=
-    {
-      "Material_Nails",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      "Material_MetalWire"
-    };
+		descriptionShort="A Tetris Shelf Kit - Still needs a bit of work. Use epoxy putty to finish.";
 	};
 
   class SRP_TetrisShelfLDown: Container_Base //new
@@ -1915,14 +1894,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Furniture Kit";
-		descriptionShort="A Wooden Furniture Kit - Still needs a bit of work. Combine with other materials to finish.";
-    attachments[]=
-    {
-      "Material_Nails",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      "Material_MetalWire"
-    };
+		descriptionShort="A Wooden Furniture Kit - Still needs a bit of work. Combine with epoxy putty to finish.";
 	};
 
   class SRP_MetalBox_Kit: SRP_KitBase //new

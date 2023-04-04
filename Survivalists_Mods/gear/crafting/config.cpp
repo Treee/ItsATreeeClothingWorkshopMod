@@ -1301,14 +1301,14 @@ class CfgVehicles
   class SRP_WornWorkbench_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Worn Workbench Kit";
-		descriptionShort="A worn workbench kit";
+		displayName="Tool Storage Kit";
+		descriptionShort="A tool storage kit";
 	};
   class SRP_WornWorkbench: Container_Base
 	{
 		scope=2;
-		displayName="Worn Workbench";
-		descriptionShort="A Workbench with basic tools.";
+		displayName="Tool Storage";
+		descriptionShort="A place to store basic tools.";
 		model="Survivalists_Mods\gear\crafting\SRP_genericworkbench.p3d";
 		useEntityHierarchy="true";
 		attachments[]=
@@ -1554,14 +1554,14 @@ class CfgVehicles
   class SRP_WornWorkbench_Metal_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Worn Metal Workbench Kit";
-		descriptionShort="A worn metal workbench kit";
+		displayName="Tool Storage Kit - Metal";
+		descriptionShort="A tool storage kit";
 	};
   class SRP_WornWorkbench_Metal: Container_Base
 	{
 		scope=2;
-		displayName="Worn Metal Workbench";
-		descriptionShort="A Workbench with basic tools.";
+		displayName="Tool Storage";
+		descriptionShort="A place to store basic tools.";
 		model="Survivalists_Mods\gear\crafting\SRP_genericworkbench_metal.p3d";
 		useEntityHierarchy="true";
     attachments[]=
