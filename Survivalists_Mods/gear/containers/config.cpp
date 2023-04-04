@@ -3471,13 +3471,6 @@ class CfgVehicles
 		scope=2;
 		displayName="Wooden Display Kit";
 		descriptionShort="A Wooden Display Kit - Still needs a bit of work. Combine with other materials to finish.";
-    attachments[]=
-    {
-      "Material_Nails",
-      "Material_WoodenPlanks",
-      "Material_MetalSheets",
-      "Material_MetalWire"
-    };
 	};
 
   class SRP_CoatRack_Basic_Kit: SRP_KitBase // new

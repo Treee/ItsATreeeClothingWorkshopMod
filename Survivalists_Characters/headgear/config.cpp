@@ -1010,7 +1010,7 @@ class CfgVehicles
 		rotationFlags=2;
 		weight=1200;
 		itemSize[]={4,3};
-		noNVStrap=1;
+		noNVStrap=0;
 		varWetMax=0.249;
 		heatIsolation=0.25;
 		visibilityModifier=0.94999999;

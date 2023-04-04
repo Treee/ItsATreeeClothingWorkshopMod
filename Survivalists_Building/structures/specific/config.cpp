@@ -21,4 +21,11 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Building\structures\specific\data\srp_treasurepile_gold_co.paa"};
 		model="Survivalists_Building\structures\specific\srp_treasurepile_gold.p3d";
 	};
+  class Land_Building_Specific_BearStatue_UniqueItem_Tyler: HouseNoDestruct
+	{
+		scope=1;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Building\structures\specific\data\srp_bearstatue_tyler_co.paa"};
+		model="Survivalists_Building\structures\specific\srp_bearstatue.p3d";
+	};
 };
