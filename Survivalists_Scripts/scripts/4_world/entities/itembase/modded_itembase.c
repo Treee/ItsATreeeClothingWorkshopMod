@@ -161,6 +161,28 @@ modded class ItemBase
     InitializeColorVariants();
     InitializeBioImmunityVariables();
   }
+//===================================== HELPERS
+  bool IsPistolMagazine() // for pistol mag pouches
+  {
+    return false;
+  }
+  bool IsFlatRifleMagazine() // for rifle mag pouches
+  {
+    return false;
+  }
+  bool IsKnifeTool()
+  {
+    return false;
+  }
+  bool IsMedicalItem()
+  {
+    return false;
+  }
+  // for items that attach to workbenches as a type of "tier modifier" (SRP_AdvancedStoneForgeWorkbench_Bellows for example)
+  bool IsAugmentAttachment()
+  {
+    return false;
+  }
 //===================================== DYE STUFF
   void InitializeColorVariants()
   {

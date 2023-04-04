@@ -136,6 +136,10 @@ class SRP_CraftingBench_Base extends ItemBase
       return false;
     if (item == "AcidRecipe")
       return false;
+    if (item == "SRP_WoodDrill")
+      return false;
+    if (item == "SRP_WoodClamp")
+      return false;
 
     return true;
   }

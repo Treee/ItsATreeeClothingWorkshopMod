@@ -43,7 +43,7 @@ class SRP_ActionMetalWorkingCraft extends ActionSRPVariantIdOption
       int variantId = SRP_VariantIdActionData.Cast(action_data).m_SRPVariantId;
       SRP_CraftableItem newItem = craftingWorkbench.GetCraftableItemByIndex(variantId);
       craftingWorkbench.ReduceAttachedQuantities(newItem);
-			craftingWorkbench.DecreaseHealth( craftingWorkbench.GetCraftingDamage(), false );
+			// craftingWorkbench.DecreaseHealth( craftingWorkbench.GetCraftingDamage(), false );
       // Print(string.Format("Creating %1 from inded %2",newItem.GetDisplayName(), variantId));
       GetGame().CreateObjectEx(newItem.GetItemClassName(), craftingWorkbench.GetMemoryPointPosition("item_spawn_position"), ECE_SETUP|ECE_NOSURFACEALIGN|ECE_KEEPHEIGHT);
     }		

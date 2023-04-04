@@ -2592,7 +2592,7 @@ class CfgVehicles
   //---------SMALL POUCHES
   class SRP_Map_Pouch_ColorBase: SRP_PouchBase_Small
 	{
-		scope=2;
+		scope=0;
 		displayName="Map Pouch";
 		descriptionShort="Espen Industries. A pouch that holds various small items.";
 		model="Survivalists_Characters\vests\SRP_Map_Pouch.p3d";
@@ -2630,7 +2630,7 @@ class CfgVehicles
 	};
   class SRP_Pistol_Mag_Pouch_ColorBase: SRP_PouchBase_Small
 	{
-		scope=2;
+		scope=0;
 		displayName="Pistol Magazine Pouch";
 		descriptionShort="Espen Industries. A single pouch that holds two Pistol mags";
 		model="Survivalists_Characters\vests\SRP_Pistol_MagPouch.p3d";
@@ -2673,7 +2673,7 @@ class CfgVehicles
   //---------LARGE POUCHES
   class SRP_IFAK_ColorBase: SRP_PouchBase_Large
 	{
-		scope=2;
+		scope=0;
 		displayName="IFAK Pouch";
 		descriptionShort="Espen Industries. An Individual First Aid Kit";
 		model="Survivalists_Characters\vests\SRP_IFAK_Pouch.p3d";
@@ -2711,7 +2711,7 @@ class CfgVehicles
 	};
   class SRP_Magazine_Pouch_1_ColorBase: SRP_PouchBase_Large
 	{
-		scope=2;
+		scope=0;
 		displayName="Magazine Pouch";
 		descriptionShort="Espen Industries. A single pouch that holds an AR mag";
 		model="Survivalists_Characters\vests\SRP_AR_MagPouch_1.p3d";
@@ -2751,7 +2751,7 @@ class CfgVehicles
 	};
   class SRP_Empty_MagPouch_ColorBase: SRP_PouchBase_Large
 	{
-		scope=2;
+		scope=0;
 		displayName="Magazine Dump Pouch";
 		descriptionShort="Espen Industries. A large bag used for empty magazines.";
 		model="Survivalists_Characters\vests\SRP_Empty_Mag_Pouch.p3d";
