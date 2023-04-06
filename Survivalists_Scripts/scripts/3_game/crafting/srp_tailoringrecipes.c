@@ -894,7 +894,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
   }  
   SRP_CraftableItem RegisterHeadBaseballCapMilitaryRecipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("BaseballCap_MilitaryPatrolTan", "Military Patrol Cap");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_MilitaryPatrolCap_Tan", "Military Patrol Cap");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingMachine", SRP_COLOR.NONE, 1));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread1", SRP_COLOR.NONE, 47));
