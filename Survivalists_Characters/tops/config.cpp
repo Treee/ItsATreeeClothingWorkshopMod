@@ -11,7 +11,8 @@ class CfgPatches
       "DZ_Characters_Tops",
       "Survivalists_Armbands_Flag",
       "Winter_Parka",
-      "Dressupbox"
+      "jmc_deerisle_misc",
+      "Dressupbox",
 		};
 	};
 };
@@ -55,7 +56,18 @@ class CfgVehicles
       "Brown",
       "Purple",    
     };
-	};
+	};  
+  class DUB_FurCoat: Clothing
+  {
+		inventorySlot[] += {"Back"};
+    heatIsolation=27;
+  };
+  class jmc_BearPeltGhillieWhite: Clothing
+  {
+    displayName="White Bear Ghillie";
+		descriptionShort="Cosmetic Only, does not protect against extreme cold.";
+  };
+
 ///============== MODDED
   class DUB_Poncho: Clothing
 	{
