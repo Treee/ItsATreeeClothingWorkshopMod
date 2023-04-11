@@ -1,5 +1,9 @@
 class SRP_StimPackInjector_Base extends ItemBase
 {
+  override bool IsMedicalItem()
+  {
+    return true;
+  }
 	override void SetActions()
 	{
 		super.SetActions();
