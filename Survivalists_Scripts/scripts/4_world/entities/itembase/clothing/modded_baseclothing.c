@@ -30,7 +30,56 @@ modded class DarkMotoHelmet_ColorBase
 	}
 };
 
-class SRP_DoubleArmband_ColorBase extends Armband_ColorBase{};
+class SRP_DoubleArmband_ColorBase extends Armband_ColorBase
+{
+  string m_DisplayTexture = "";
+
+  override void EOnInit(IEntity other, int extra)
+	{
+    int idx1;
+		TStringArray item_texture_array = new TStringArray;
+    GetGame().ConfigGetTextArray("cfgVehicles " + GetType() + " hiddenSelectionsTextures", item_texture_array);	
+    m_DisplayTexture = item_texture_array.Get(0);
+	}
+
+  void HideSelectionsForDisplayCase()
+  {
+    int idx1;
+    TStringArray item_selection_array = new TStringArray;
+    GetGame().ConfigGetTextArray("cfgVehicles SRP_DoubleArmband_ColorBase hiddenSelections", item_selection_array);	
+    
+    // hide everything
+    for(int i = 0; i < item_selection_array.Count(); i++)
+    {
+      idx1 = GetHiddenSelectionIndex(item_selection_array.Get(i));
+      if (item_selection_array.Get(i) == "camoGround" || item_selection_array.Get(i) == "camoFemale_big_a" || item_selection_array.Get(i) == "camoFemale_small_a")
+      {
+        SetObjectTexture(idx1,m_DisplayTexture);
+        // Print("Show: selection: " + item_selection_array.Get(i));
+      }
+      else
+      {
+        SetObjectTexture(idx1,"");
+        // Print("HIDE: selection: " + item_selection_array.Get(i));
+      }
+    }
+  }
+
+  void ResetSelectionsForWearing()
+  {
+    int idx1;
+    TStringArray item_selection_array = new TStringArray;
+    GetGame().ConfigGetTextArray("cfgVehicles SRP_DoubleArmband_ColorBase hiddenSelections", item_selection_array);	
+
+    // show all
+    for(int i = 0; i < item_selection_array.Count(); i++)
+    {
+      idx1 = GetHiddenSelectionIndex(item_selection_array.Get(i));
+      SetObjectTexture(idx1,m_DisplayTexture);
+      // Print("show: selection: " + item_selection_array.Get(i));
+    } 
+  }
+};
 
 class Skylar_BioZone_Protection extends Armband_ColorBase
 {

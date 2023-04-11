@@ -740,17 +740,6 @@ class CfgVehicles
     };
   };
 
-
-  class Armband_ColorBase: Clothing
-	{
-		hiddenSelections[] = {"zbytek", "leftarmroll", "rightarmroll"};
-	};
-
-  class MassArmbandDouble_Colorbase: Armband_ColorBase
-	{
-    hiddenSelections[] = {"zbytek", "leftarmroll", "rightarmroll"};
-	};
-
   class Leather_Cloak_ColorBase: Clothing
 	{
     rootClassName="Leather_Cloak_down";

@@ -190,12 +190,11 @@ class SRP_GlassDisplayCase_Hook extends Inventory_Base
     return GetInventory().AttachmentCount() == 0;
 	}
 };
-
 class SRP_GlassDisplayCase_Hook_Armband extends SRP_GlassDisplayCase_Hook
 {
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
-		return ( attachment && attachment.IsKindOf("Armband_ColorBase") );
+		return ( attachment && attachment.IsInherited(Armband_ColorBase) && !attachment.IsInherited(SRP_DoubleArmband_ColorBase) );
 	}
 };
 class SRP_GlassDisplayCase_Hook_ArmbandDouble extends SRP_GlassDisplayCase_Hook
@@ -203,42 +202,40 @@ class SRP_GlassDisplayCase_Hook_ArmbandDouble extends SRP_GlassDisplayCase_Hook
   override void EEItemAttached(EntityAI item, string slot_name)
 	{
 		super.EEItemAttached(item, slot_name);
-    int idx1 = item.GetHiddenSelectionIndex("rightarmroll");
-		item.SetObjectTexture(idx1,"");
+    SRP_DoubleArmband_ColorBase armband;
+    if (Class.CastTo(armband, item))
+    {
+      armband.HideSelectionsForDisplayCase();
+    }
 	}
 
   override void EEItemDetached(EntityAI item, string slot_name)
 	{
 		super.EEItemDetached(item, slot_name);
-
-    string item_name = item.GetType();	
-		TStringArray item_texture_array = new TStringArray;
-    GetGame().ConfigGetTextArray("cfgVehicles " + item_name + " hiddenSelectionsTextures", item_texture_array);	
-    // Print("Detached: " + item_texture_array[0]);
-    if (item_texture_array && item_texture_array.Count() > 0)
+    SRP_DoubleArmband_ColorBase armband;
+    if (Class.CastTo(armband, item))
     {
-      int idx1 = item.GetHiddenSelectionIndex("rightarmroll");
-		  item.SetObjectTexture(idx1,item_texture_array[0]);
+      armband.ResetSelectionsForWearing();
     }
 	}
 	
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
-		return ( attachment && (attachment.IsKindOf("MassArmbandDouble_Colorbase") || attachment.IsKindOf("SRP_DoubleArmband_ColorBase") ));
+		return ( attachment && attachment.IsInherited(SRP_DoubleArmband_ColorBase));
 	}
 };
 class SRP_GlassDisplayCase_Hook_ArmbandLeather extends SRP_GlassDisplayCase_Hook
 {
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
-		return ( attachment && attachment.IsKindOf("SRP_Armband_Base") );
+		return ( attachment && attachment.IsInherited(SRP_Armband_Base) );
 	}
 };
 class SRP_GlassDisplayCase_Hook_ArmbandPatch extends SRP_GlassDisplayCase_Hook
 {
   override bool CanReceiveAttachment (EntityAI attachment, int slotId)
 	{
-		return ( attachment && (attachment.IsKindOf("SRP_PatchFlag_ColorBase") || attachment.IsKindOf("SRP_PatchLogo_ColorBase")) );
+		return ( attachment && (attachment.IsInherited(SRP_PatchFlag_ColorBase) || attachment.IsInherited(SRP_PatchLogo_ColorBase)) );
 	}
 };
 

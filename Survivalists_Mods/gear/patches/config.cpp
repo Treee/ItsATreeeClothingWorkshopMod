@@ -20,7 +20,6 @@ class CfgVehicles
 
 	class Clothing;  
   class Inventory_Base;
-  class Armband_ColorBase;
   class Flag_Base;  
 
   //------------------------------ FLAG PATCHES
@@ -216,12 +215,28 @@ class CfgVehicles
 		};
 	};  
 
-  class SRP_DoubleArmband_ColorBase: Armband_ColorBase
+  class SRP_DoubleArmband_ColorBase: Clothing
 	{	
 		scope=0;
+		displayName="$STR_CfgVehicles_Armband_ColorBase0";
+		descriptionShort="$STR_CfgVehicles_Armband_ColorBase1";
 		model="\DZ\characters\tops\armbend_g.p3d";
-		repairableWithKits[]={5,8};
+		inventorySlot[]=
+		{
+			"Armband"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Armband"
+		};
+		rotationFlags=34;
+		weight=80;
+		itemSize[]={1,2};
+		ragQuantity=1;
+		varWetMax=1;
 		repairCosts[]={30,25};
+		repairableWithKits[]={5,8};
 		itemsCargoSize[]={1,1};
 		absorbency=0;
 		heatIsolation=0.80;
@@ -233,11 +248,10 @@ class CfgVehicles
 		hiddenSelections[]=
 		{
 			"camoGround",
-      "camoFemale_big_a",
+      "camoFemale_big_a", // female selections represent right arms
       "camoFemale_small_a",
-      "camoMale_big_a",
+      "camoMale_big_a", // male selections represent left arms
       "camoMale_small_a",
-      //"zbytek" // only use this selection if you dont care about small/big armbands with/out tops
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -267,6 +281,22 @@ class CfgVehicles
             {0.3,{"DZ\characters\tops\Data\armband_big_a_damage.rvmat"}},
             {0.0,{"DZ\characters\tops\Data\armband_big_a_destruct.rvmat"}}
           };
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
 				};
 			};
 		};
@@ -352,14 +382,6 @@ class CfgVehicles
   class SRP_DoubleArmband_Event_Generic: SRP_DoubleArmband_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]=
-		{
-			"camoGround",
-      "camoFemale_big_a",
-      "camoFemale_small_a",
-      "camoMale_big_a",
-      "camoMale_small_a",
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa",
@@ -400,14 +422,6 @@ class CfgVehicles
   class SRP_DoubleArmband_Event_Espen: SRP_DoubleArmband_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]=
-		{
-			"camoGround",
-      "camoFemale_big_a",
-      "camoFemale_small_a",
-      "camoMale_big_a",
-      "camoMale_small_a",
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
@@ -448,14 +462,6 @@ class CfgVehicles
   class SRP_DoubleArmband_Event_Stag: SRP_DoubleArmband_ColorBase
 	{
 		scope=2;
-    hiddenSelections[]=
-		{
-			"camoGround",
-      "camoFemale_big_a",
-      "camoFemale_small_a",
-      "camoMale_big_a",
-      "camoMale_small_a",
-		};
     hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\template_armbend_event_stag_co.paa",
