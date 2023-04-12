@@ -61,9 +61,12 @@ class Craft_SRP_SalvageForZinc extends RecipeBase
 	{
     if (ingredients[0])
     {
+      if (ingredients[0].IsDamageDestroyed())
+        return false;
+      
       float relativeAmount = ingredients[0].GetQuantity() / ingredients[0].GetQuantityMax();
       // less than 30% left
-      return !ingredients[0].IsDamageDestroyed() && relativeAmount < 0.31;
+      return relativeAmount < 0.31;
     }
     return false;
 	}
