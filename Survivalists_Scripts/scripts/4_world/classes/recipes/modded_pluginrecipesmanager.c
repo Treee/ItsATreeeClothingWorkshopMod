@@ -624,6 +624,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_IngotMold_Lime);
       RegisterRecipe(new Craft_SRP_IngotMold_Mortar);
 
+      RegisterRecipe(new Craft_SRP_SalvageForZinc);
+
     //==========================================================Gunsmithing           
       RegisterRecipe(new SRP_BreakDownPistolCore_Expert);
       RegisterRecipe(new SRP_BreakDownRifleCoreLarge_Expert);
