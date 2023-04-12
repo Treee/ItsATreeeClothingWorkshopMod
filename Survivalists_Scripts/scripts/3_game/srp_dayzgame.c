@@ -11,6 +11,8 @@ modded class DayZGame
   
   private ref SRPProfileOptions m_SRPProfileOptions;
 
+  private bool m_IsLeftShiftHolding;
+
   void DayZGame()
   {  
     RemoveMutantSurvivorClassTypes();
@@ -101,5 +103,26 @@ modded class DayZGame
         }
       }
 		}
+  }
+
+	bool IsLeftShiftDown()
+	{
+		return m_IsLeftShiftHolding;
+	}
+  override void OnKeyPress(int key)
+	{
+		if (key == KeyCode.KC_LSHIFT) 
+		{
+			m_IsLeftShiftHolding = true;
+		}
+    super.OnKeyPress(key);
+  }
+  override void OnKeyRelease(int key)
+	{
+		if (key == KeyCode.KC_LSHIFT) 
+		{
+			m_IsLeftShiftHolding = false;
+		}
+    super.OnKeyRelease(key);
   }
 };

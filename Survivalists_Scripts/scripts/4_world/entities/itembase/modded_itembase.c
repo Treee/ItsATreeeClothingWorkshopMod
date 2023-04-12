@@ -183,6 +183,137 @@ modded class ItemBase
   {
     return false;
   }
+	
+	override void OnRightClick()
+	{		
+    if (CanBeSplit() && !GetDayZGame().IsLeftCtrlDown() && GetDayZGame().IsLeftShiftDown() && !GetGame().GetPlayer().GetInventory().HasInventoryReservation(this,null))
+		{
+      SplitIntoSingleItemClient();
+		}
+    else
+    {
+		  super.OnRightClick();
+    }
+  }
+  void SplitIntoSingleItemClient()
+  {
+    if (GetGame().IsClient())
+    {
+      if (ScriptInputUserData.CanStoreInputUserData())
+      {
+        vector m4[4];
+        PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
+        
+        EntityAI root = GetHierarchyRoot();
+        
+        InventoryLocation dst = new InventoryLocation;
+        if (!player.GetInventory().FindFirstFreeLocationForNewEntity(GetType(), FindInventoryLocationType.CARGO, dst))
+        {						
+          if (root)
+          {
+            root.GetTransform(m4);
+            dst.SetGround(this, m4);
+          }
+          else
+            GetInventory().GetCurrentInventoryLocation(dst);
+        }
+        else
+        {
+          dst.SetCargo(dst.GetParent(), this, dst.GetIdx(), dst.GetRow(), dst.GetCol(), dst.GetFlip());
+          if (GetGame().GetPlayer().GetInventory().HasInventoryReservation(null, dst))
+          {
+            if (root)
+            {
+              root.GetTransform(m4);
+              dst.SetGround(this, m4);
+            }
+            else
+              GetInventory().GetCurrentInventoryLocation(dst);
+          }
+          else
+          {
+            GetGame().GetPlayer().GetInventory().AddInventoryReservationEx(null, dst, GameInventory.c_InventoryReservationTimeoutShortMS);
+          }
+        }
+				ScriptInputUserData ctx = new ScriptInputUserData;
+        ctx.Write(SRP_INPUT_UDT_ITEM_MANIPULATION);
+        ItemBase thiz = this; // @NOTE: workaround for correct serialization
+        ctx.Write(thiz);
+        dst.WriteToContext(ctx);
+        ctx.Send();
+      }
+    }
+		else if (!GetGame().IsMultiplayer())
+    {
+      SplitItemSingle(PlayerBase.Cast(GetGame().GetPlayer()));
+    }
+  }
+  void SplitSingleItemToInventoryLocation(notnull InventoryLocation dst)
+	{
+		if (!CanBeSplit())
+			return;
+		
+		float quantity = GetQuantity();
+		float split_quantity_new = 1;
+		
+		ItemBase new_item = ItemBase.Cast(GameInventory.LocationCreateEntity(dst, GetType(), ECE_IN_INVENTORY, RF_DEFAULT));
+
+		if (new_item)
+		{
+			if (new_item.GetQuantityMax() < split_quantity_new)
+			{
+				split_quantity_new = new_item.GetQuantityMax();
+			}
+			
+			new_item.SetResultOfSplit(true);
+			MiscGameplayFunctions.TransferItemProperties(this, new_item);
+			
+			if (dst.IsValid() && dst.GetType() == InventoryLocationType.ATTACHMENT && split_quantity_new > 1)
+			{
+				AddQuantity(-1);
+				new_item.SetQuantity(1);
+			}
+			else
+			{
+				AddQuantity(-split_quantity_new);
+				new_item.SetQuantity(split_quantity_new);				
+			}
+		}	
+	}
+  void SplitItemSingle(PlayerBase player)
+	{
+		if (!CanBeSplit())
+		{
+			return;
+		}
+		
+		float quantity = GetQuantity();
+		float split_quantity_new = 1;
+		
+		InventoryLocation invloc = new InventoryLocation;
+		bool found = player.GetInventory().FindFirstFreeLocationForNewEntity(GetType(), FindInventoryLocationType.ATTACHMENT, invloc);
+		
+		ItemBase new_item;
+		new_item = player.CreateCopyOfItemInInventoryOrGroundEx(this, true);
+		
+		if (new_item)
+		{
+			if (new_item.GetQuantityMax() < split_quantity_new)
+			{
+				split_quantity_new = new_item.GetQuantityMax();
+			}
+			if (found && invloc.IsValid() && invloc.GetType() == InventoryLocationType.ATTACHMENT && split_quantity_new > 1)
+			{
+				AddQuantity(-1);
+				new_item.SetQuantity(1);
+			}
+			else
+			{
+				AddQuantity(-split_quantity_new);
+				new_item.SetQuantity(split_quantity_new);
+			}
+		}
+	}
 //===================================== DYE STUFF
   void InitializeColorVariants()
   {

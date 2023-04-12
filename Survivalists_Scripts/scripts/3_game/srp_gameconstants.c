@@ -87,3 +87,6 @@ modded class EmoteConstants
 }
 
 const int SRP_MENU_RADIAL_MULTI	= 96;
+
+// Commands using action data chanel sync (15 total)
+const int SRP_INPUT_UDT_ITEM_MANIPULATION			= 8653;

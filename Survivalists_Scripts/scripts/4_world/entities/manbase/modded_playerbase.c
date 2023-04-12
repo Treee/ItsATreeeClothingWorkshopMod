@@ -72,6 +72,24 @@ modded class PlayerBase
 		}
 		super.EEKilled( killer );
 	};
+	override bool HandleRemoteItemManipulation(int userDataType, ParamsReadContext ctx)
+	{
+    if( userDataType == SRP_INPUT_UDT_ITEM_MANIPULATION )
+    {
+      ItemBase itemToSplit = NULL;
+      InventoryLocation destination = new InventoryLocation;
+      if (!ctx.Read(itemToSplit))
+        return false;
+      if (destination.ReadFromContext(ctx))
+      {
+        itemToSplit.SplitSingleItemToInventoryLocation(destination);
+        return true;
+      }
+      return false;
+    }
+    else	
+      return super.HandleRemoteItemManipulation(userDataType, ctx);
+  }
 
   override bool CanSprint()
   {    
@@ -241,7 +259,7 @@ modded class PlayerBase
     }
     return false;
   }
-
+//================================================================= SLEEPING STUFF
   bool IsAwake()
   {
     return !( GetEmoteManager().m_IsLayDown || IsUnconscious() );
@@ -301,7 +319,7 @@ modded class PlayerBase
     // AddAction(ActionTurnRubixCubeClockwise_Z1, InputActionMap);      
     // AddAction(ActionTurnRubixCubeClockwise_Z2, InputActionMap);    
   }
-
+//=========================================================== PLAYER STATS
   PlayerStat<float> GetStatTiredness()
 	{
 		if( !m_StatTiredness && GetPlayerStats() ) 
@@ -355,4 +373,5 @@ modded class PlayerBase
 		float drugDependency = GetStatDrugDependency().Get();
 		return GetStatLevel(drugDependency, PlayerConstants.SL_DRUGDEPENDENCY_CRITICAL, PlayerConstants.SL_DRUGDEPENDENCY_LOW, PlayerConstants.SL_DRUGDEPENDENCY_NORMAL, PlayerConstants.SL_DRUGDEPENDENCY_HIGH);
 	}
+//=========================================================== END
 };
