@@ -351,7 +351,16 @@ class CfgVehicles
     itemSize[]={1,2};
   };
 
-  
+  class Roadflare: Inventory_Base
+	{
+		inventorySlot[]+=
+		{
+			"VestGrenadeA",
+			"VestGrenadeB",
+			"VestGrenadeC",
+			"VestGrenadeD",
+		};    
+  };
   
 //----------------------------------------------- CUSTOM STUFF
   class Firewood_Irradiated: Firewood
