@@ -10,7 +10,8 @@ class CfgPatches
       "DZ_Data",
 			"DZ_Characters",
       "DZ_Characters_Tops",
-      "DZ_Gear_Camping"
+      "DZ_Gear_Camping",
+      "Canvas_Backpack" //windstrides
 		};
 	};
 };
@@ -243,7 +244,9 @@ class CfgVehicles
     attachments[]=
     {
       "SRP_Pin1",
-      "SRP_Pin2"
+      "SRP_Pin2",
+      "Pin1", // Windstrides
+      "Pin2",
     };
 		hiddenSelections[]=
 		{
