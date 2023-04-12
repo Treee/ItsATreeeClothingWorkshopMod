@@ -34,14 +34,11 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
 		if ( target && Class.CastTo(target_clothing, target.GetObject()) )
 		{
       if (target_clothing.GetNumberOfItems() > 0)
-      {
         return false;
-      }
+      if (target_clothing.IsContainer())
+        return false;
       if (target_clothing.HasDyableOptions())
-      {
-        // Print("Action condition- target is clothing: " + target_clothing);
 			  return true;	
-      }
 		}
     return false;
 	}

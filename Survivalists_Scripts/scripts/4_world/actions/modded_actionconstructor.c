@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
+    actions.Insert(SRP_ActionSprayPaintLocker);
+
     actions.Insert(ActionIncreaseVolume);
     actions.Insert(ActionDecreaseVolume);
 
@@ -18,8 +20,6 @@ modded class ActionConstructor
     actions.Insert(ActionEmptyIngotMold);
 
 		actions.Insert(ActionReadBook); 
-
-		actions.Insert(SRP_PatDownTarget); 
     
 		actions.Insert(SRP_ActionSawPlanks); 
 

@@ -3869,6 +3869,21 @@ class CfgVehicles
     {
       "Survivalists_Mods\gear\containers\data\srp_locker_single_co.paa"
     };
+    rootClassName="SRP_LockerSingle";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Brown",
+      "Gray",
+      "Green",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Red",
+      "White",
+      "Yellow",
+    };
     class Cargo
 		{
 			itemsCargoSize[]={8,4};
@@ -4001,6 +4016,21 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\containers\data\srp_locker_single_co.paa"
+    };
+    rootClassName="SRP_LockerTriple";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Brown",
+      "Gray",
+      "Green",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Red",
+      "White",
+      "Yellow",
     };
     class Cargo
 		{
@@ -4165,6 +4195,21 @@ class CfgVehicles
     {
       "Survivalists_Mods\gear\containers\data\srp_locker_quad_co.paa"
     };
+    rootClassName="SRP_LockerQuad";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Brown",
+      "Gray",
+      "Green",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Red",
+      "White",
+      "Yellow",
+    };
     class Cargo
 		{
 			itemsCargoSize[]={8,7};
@@ -4301,6 +4346,14 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Mods\gear\containers\data\srp_locker_military_co.paa"
+    };
+    rootClassName="SRP_LockerMilitary";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",
+      "Gray",
+      "Tan",
     };
     class Cargo
 		{

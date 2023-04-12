@@ -5,5 +5,6 @@ modded class Spraycan_ColorBase
 		super.SetActions();
 		
 		AddAction(ActionSwitchLetterColorOption);
+		AddAction(SRP_ActionSprayPaintLocker);
 	}
 };
