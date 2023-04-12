@@ -31,6 +31,7 @@ class CfgVehicles
   class LeatherPants_ColorBase;
   class TTSKOPants;
   class LegsCover_Improvised;
+  class SlacksPants_ColorBase;
 
   class SRP_ESPG3_TacPants_Colorbase;
 
@@ -1119,6 +1120,62 @@ class CfgVehicles
       "Survivalists_Retextures\characters\pants\data\LegCover_Improvised_red_co.paa"
     };
   };
+
+  class SlacksPants_TweedBlack: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_black_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_black_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_black_co.paa"
+    };
+	};
+  class SlacksPants_TweedGrey: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_grey_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_grey_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_grey_co.paa"
+    };
+	};
+  class SlacksPants_TweedNavy: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_navy_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_navy_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_navy_co.paa"
+    };
+	};
+  class SlacksPants_TweedSalmon: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_salmon_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_salmon_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_tweed_salmon_co.paa"
+    };
+	};
+  class SlacksPants_TweedLockNSons: SlacksPants_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\pants\data\slacks_locknsons_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_locknsons_co.paa",
+      "Survivalists_Retextures\characters\pants\data\slacks_locknsons_co.paa"
+    };
+	};
 
   class SRP_ESPG3_TacPants_Black: SRP_ESPG3_TacPants_Colorbase
   {

@@ -46,6 +46,7 @@ class CfgVehicles
   class HikingJacket_ColorBase;
   class TTsKOJacket_ColorBase;
   class TorsoCover_Improvised;
+  class ManSuit_ColorBase;
 
   class SRP_Rolled_Shirt_ColorBase;
   class SRP_ESPG3_TacShirt_Colorbase;
@@ -2741,6 +2742,62 @@ class CfgVehicles
     scope = 2;
     hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\torsoCover_improvised_red_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_red_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_red_CO.paa","Survivalists_Retextures\characters\tops\data\torsoCover_improvised_red_CO.paa"};
   };
+
+  class ManSuit_TweedBlack: ManSuit_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_black_co.paa"
+		};
+	};
+  class ManSuit_TweedGrey: ManSuit_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_grey_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_grey_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_grey_co.paa"
+		};
+	};
+  class ManSuit_TweedNavy: ManSuit_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_navy_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_navy_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_navy_co.paa"
+		};
+	};
+  class ManSuit_TweedSalmon: ManSuit_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_salmon_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_salmon_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_tweed_salmon_co.paa"
+		};
+	};
+  class ManSuit_TweedLockNSons: ManSuit_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\man_suit_locknsons_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_locknsons_co.paa",
+			"Survivalists_Retextures\characters\tops\data\man_suit_locknsons_co.paa"
+		};
+	};        
 
   //==============MODDED
   class DUB_Monkrobe_blue: DUB_Monkrobe

@@ -342,6 +342,10 @@ class CfgVehicles
       "Khaki",
       "LightGrey",
       "White",
+      "TweedBlack",
+      "TweedGrey",
+      "TweedNavy",
+      "TweedSalmon",
     };
   };
   class Breeches_ColorBase: Clothing

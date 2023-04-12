@@ -681,6 +681,10 @@ class CfgVehicles
       "Khaki",
       "LightGrey",
       "White",
+      "TweedBlack",
+      "TweedGrey",
+      "TweedNavy",
+      "TweedSalmon",
     };
   };
   class WomanSuit_ColorBase: Clothing
