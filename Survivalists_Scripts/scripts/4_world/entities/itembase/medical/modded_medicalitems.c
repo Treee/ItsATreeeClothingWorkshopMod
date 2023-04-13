@@ -106,6 +106,11 @@ modded class Morphine
 };
 modded class TetracyclineAntibiotics
 {
+  override void EOnInit(IEntity other, int extra)
+	{
+    int randomAmount = Math.RandomIntInclusive(1, GetQuantityMax());
+    SetQuantity(randomAmount);
+	}
   override bool IsMedicalItem()
   {
     return true;
@@ -120,6 +125,11 @@ modded class IodineTincture
 };
 modded class VitaminBottle
 {
+  override void EOnInit(IEntity other, int extra)
+	{
+    int randomAmount = Math.RandomIntInclusive(1, 12);
+    SetQuantity(randomAmount);
+	}
   override bool IsMedicalItem()
   {
     return true;
@@ -127,6 +137,11 @@ modded class VitaminBottle
 };
 modded class PainkillerTablets
 {
+  override void EOnInit(IEntity other, int extra)
+	{
+    int randomAmount = Math.RandomIntInclusive(1, GetQuantityMax());
+    SetQuantity(randomAmount);
+	}
   override bool IsMedicalItem()
   {
     return true;
@@ -134,6 +149,11 @@ modded class PainkillerTablets
 };
 modded class CharcoalTablets
 {
+  override void EOnInit(IEntity other, int extra)
+	{
+    int randomAmount = Math.RandomIntInclusive(1, GetQuantityMax());
+    SetQuantity(randomAmount);
+	}
   override bool IsMedicalItem()
   {
     return true;
@@ -141,6 +161,11 @@ modded class CharcoalTablets
 };
 modded class PurificationTablets
 {
+  override void EOnInit(IEntity other, int extra)
+	{
+    int randomAmount = Math.RandomIntInclusive(1, GetQuantityMax());
+    SetQuantity(randomAmount);
+	}
   override bool IsMedicalItem()
   {
     return true;
