@@ -360,6 +360,15 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\islandgeorge_cloppingcoconuts.ogg",1}};
 	};
+
+  class SRPRadio_ProbabLeigh_Labyrinth_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ProbabLeigh_Labyrinth.ogg",1}};
+	};
+  class SRPRadio_ProbabLeigh_DancesWithAliens_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ProbabLeigh_DancesWithAliens.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -723,6 +732,21 @@ class CfgSoundSets
 		soundShaders[] =
 		{
 			"SRPRadio_IslandGeorge_CloppingCoconuts_Shader1"
+		};
+	};
+
+  class SRPRadio_ProbabLeigh_Labyrinth_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_ProbabLeigh_Labyrinth_Shader1"
+		};
+	};
+  class SRPRadio_ProbabLeigh_DancesWithAliens_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_ProbabLeigh_DancesWithAliens_Shader1"
 		};
 	};
 };

@@ -1122,7 +1122,27 @@ class CfgVehicles
 			soundSet="SRPRadio_IslandGeorge_CloppingCoconuts_SoundSet1";
 		};
 	};
-
+// -------------------------------- ProbabLeigh
+  class SRPRadio_CassetteTape_ProbabLeigh_Labyrinth: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Labyrinth";
+		descriptionShort="Music Tape - Credit | ProbabLeigh | https://soundcloud.com/discover/sets/track-stations:1149168706";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ProbabLeigh_Labyrinth_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_ProbabLeigh_DancesWithAliens: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Dances With Aliens";
+		descriptionShort="Music Tape - Credit | ProbabLeigh | https://soundcloud.com/discover/sets/track-stations:1149216280";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ProbabLeigh_DancesWithAliens_SoundSet1";
+		};
+	};
 // -------------------------------- Mystery Tapes
 	class SRPRadio_CassetteTape_MysteryTap: SRPRadio_CassetteTape_Base
 	{
