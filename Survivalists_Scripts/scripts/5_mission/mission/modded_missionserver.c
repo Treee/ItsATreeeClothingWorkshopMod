@@ -5,6 +5,13 @@ modded class MissionServer
     SRPConfig config = SRPGlobals.Get();
     GetDayZGame().SetSRPConfigGlobal(config);
   }
+  void ~MissionServer()
+  {
+    if (GetGame().IsDedicatedServer())
+    {
+      SRPGlobals.SaveSRPConfig();
+    }
+  }
   override void InvokeOnConnect(PlayerBase player, PlayerIdentity identity)
   {
     super.InvokeOnConnect(player, identity);

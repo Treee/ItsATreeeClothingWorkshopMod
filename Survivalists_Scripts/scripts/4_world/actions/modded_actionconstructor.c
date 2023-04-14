@@ -4,6 +4,7 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
+    actions.Insert(SRP_ActionFeedBioFlower);
     actions.Insert(SRP_ActionSprayPaintLocker);
 
     actions.Insert(ActionIncreaseVolume);

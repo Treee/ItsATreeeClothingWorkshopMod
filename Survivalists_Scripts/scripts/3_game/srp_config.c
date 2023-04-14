@@ -19,6 +19,9 @@ class SRPConfig
   float g_SRPRestfulnessThirstIncreaseAmount;
   float g_SRPSleepYawnThreshold;
   float g_SRPSleepPassOutThreshold;
+
+  ref SRP_BioFlowerManager g_BioFlowerManager;
+
 }
 
 class SRPGlobals
@@ -72,6 +75,15 @@ class SRPGlobals
     JsonFileLoader<SRPConfig>.JsonSaveFile(configPath, config);
   }
 
+  static void SaveSRPConfig()
+  {
+    if (FileExist(configRoot) && m_SRPConfig)
+    {
+      Print("'Survivalists_Mods_Settings' being saved in " + configRoot);
+      JsonFileLoader<SRPConfig>.JsonSaveFile(configPath, m_SRPConfig);      
+    }
+  }
+
   private static void CreateDefaultConfigFile(inout SRPConfig config)
   {
     config.g_SRPIsSleepActive = true;
@@ -98,5 +110,14 @@ class SRPGlobals
     config.g_SRPSleepYawnThreshold = 0.2; // 80% sleepyness triggers yawning. 0% means yawning when fully awake
 
     config.g_SRPSleepPassOutThreshold = 600; // how many extra seconds do they get before they 100% pass out
+
+    config.g_BioFlowerManager = new SRP_BioFlowerManager();
+    config.g_BioFlowerManager.m_BioFlowers = new ref array<ref SRP_BioFlowerInfo>;
+
+    config.g_BioFlowerManager.m_BioFlowers.Insert(new SRP_BioFlowerInfo("ReactorBiozone", 100, "4683 20 7100"));
+    config.g_BioFlowerManager.m_BioFlowers.Insert(new SRP_BioFlowerInfo("BunkerBiozone", 100, "7157 655 11617"));
+    config.g_BioFlowerManager.m_BioFlowers.Insert(new SRP_BioFlowerInfo("SandyBayBiozone", 100, "5413 2 7634"));
+    config.g_BioFlowerManager.m_BioFlowers.Insert(new SRP_BioFlowerInfo("NorthHavenCastleBiozone", 100, "2610 40.5 13923"));
+    config.g_BioFlowerManager.m_BioFlowers.Insert(new SRP_BioFlowerInfo("AshevilleBiozone", 100, "7310.5 46 2590.5"));
   }
 };
