@@ -14,7 +14,7 @@ class SRP_ActionSprayPaintLocker extends ActionSRPVariantIdOption
         string displayOption = target_container.GetDyeOption(m_VariantID);
         if (displayOption != "" )
         {
-          m_Text = "Paint Locker - " + displayOption;          
+          m_Text = "Paint - " + displayOption;          
           // Print("on action info update: terxt: " + m_Text);
         }
       }

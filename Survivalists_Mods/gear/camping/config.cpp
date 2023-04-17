@@ -1562,6 +1562,18 @@ class CfgVehicles
 		weight=1500;
 		itemSize[]={3,6};
     rotationFlags=16;
+    rootClassName="SRP_Guitar_Alpocalypse";
+    colorVariants[]=
+    {
+      "Blue",
+      "Green",
+      "Pastel",
+      "Pink",
+      "Sunset",
+      "Teal",
+      "TieDye",
+      "Yellow",
+    };
     inventorySlot[]=
 		{
 			"Shoulder",
@@ -1927,6 +1939,7 @@ class CfgVehicles
 		};
 	};
 	
+//=========================================== CARPET & RUGS
   class SRP_Carpet_Kit: SRP_KitBase  // 
 	{
 		scope=2;
@@ -1934,7 +1947,7 @@ class CfgVehicles
 		descriptionShort="An old carpet to decorate your home";
 	};
   
-  class SRP_Carpet: Inventory_Base  // 
+  class SRP_Carpet: Inventory_Base  // deprecated
 	{
 		scope=2;
 		displayName="Old Carpet";
@@ -1943,8 +1956,18 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		physLayer="item_large";
 		rotationFlags=2;
+    rootClassName="SRP_Carpet";
+    colorVariants[]=
+    {
+      "Basic",
+      "BlueSea",
+      "Grape",
+      "Red",
+      "RedFloral",
+      "RedRose",
+      "RoyalBlue",
+    };
 		attachments[]=
 		{
 			"Shoulder",
@@ -2010,15 +2033,159 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_Carpet_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Old Carpet";
+		descriptionShort="An old carpet to decorate your home";
+		model="Survivalists_Mods\gear\camping\persianrug.p3d";
+		weight=500;
+		itemSize[]={15,10};
+		rotationFlags=2;
+    rootClassName="SRP_Carpet";
+    colorVariants[]=
+    {
+      "Basic",
+      "BlueSea",
+      "Grape",
+      "Red",
+      "RedFloral",
+      "RedRose",
+      "RoyalBlue",
+    };
+		attachments[]=
+		{
+			"Shoulder",
+			"Melee",
+			"Back",
+		};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\persianrug_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\persianrug.rvmat"
+    };
+		class Cargo
+		{
+			itemsCargoSize[]={6,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Storage
+			{
+				name="Storage";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee",
+					"Back",
+					"Shoulder"
+				};
+				icon="set:dayz_inventory image:shoulderleft";
+			};
+		};
+    class AnimationSources
+		{
+      class slot_shoulder_rifle
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=0.0099999998;
+			};
+			class slot_shoulder_melee
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.0099999998;
+			};
+			class slot_melee_rifle
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.0099999998;
+			};
+			class slot_melee_melee
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=0.0099999998;
+			};
+		};
+	};
+  class SRP_Carpet_Basic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_BlueSea_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_Espen_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_Grape_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_LockNSons_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_Red_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_RedFloral_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_RedRose_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_RoyalBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_Stag_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
 
   class SRP_CarpetRug_Kit: SRP_KitBase  
 	{
 		scope=2;
 		displayName="An Old Rug Kit";
 		descriptionShort="An old carpet to decorate your home";
-	};
-  
-  class SRP_CarpetRug: Inventory_Base  
+	};  
+  class SRP_CarpetRug: Inventory_Base  // deprecated
 	{
 		scope=2;
 		displayName="Old Carpet";
@@ -2027,8 +2194,20 @@ class CfgVehicles
 		carveNavmesh=1;
 		weight=500;
 		itemSize[]={15,10};
-		physLayer="item_large";
 		rotationFlags=2;
+    rootClassName="SRP_CarpetRug";
+    colorVariants[]=
+    {
+      "Basic",
+      "Green",
+      "Orange",
+      "Purple",
+      "Red",
+      "Teal",
+      "Yellow",
+      "Kitty",
+      "Planets",
+    };
 		attachments[]=
 		{
 			"Shoulder",
@@ -2094,6 +2273,155 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_CarpetRug_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Old Carpet";
+		descriptionShort="An old carpet to decorate your home";
+		model="Survivalists_Mods\gear\camping\doormatrug.p3d";
+		carveNavmesh=1;
+		weight=500;
+		itemSize[]={15,10};
+		rotationFlags=2;
+    rootClassName="SRP_CarpetRug";
+    colorVariants[]=
+    {
+      "Basic",
+      "Green",
+      "Orange",
+      "Purple",
+      "Red",
+      "Teal",
+      "Yellow",
+      "Kitty",
+      "Planets",
+    };
+		attachments[]=
+		{
+			"Shoulder",
+			"Melee",
+			"Back",
+		};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]={
+      "Survivalists_Mods\gear\camping\data\doormatrug_co.paa"
+    };
+		hiddenSelectionsMaterials[]={
+      "Survivalists_Mods\gear\camping\data\doormatrug.rvmat"
+    };
+		class Cargo
+		{
+			itemsCargoSize[]={6,6};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class GUIInventoryAttachmentsProps
+		{
+			class Storage
+			{
+				name="Storage";
+				description="";
+				attachmentSlots[]=
+				{
+					"Melee",
+					"Back",
+					"Shoulder"
+				};
+				icon="set:dayz_inventory image:shoulderleft";
+			};
+		};
+    class AnimationSources
+		{
+      class slot_shoulder_rifle
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=0.0099999998;
+			};
+			class slot_shoulder_melee
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.0099999998;
+			};
+			class slot_melee_rifle
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.0099999998;
+			};
+			class slot_melee_melee
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=0.0099999998;
+			};
+		};
+	};
+  class SRP_CarpetRug_Basic_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Blue_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Green_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Orange_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Purple_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Red_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Teal_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Yellow_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Kitty_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_CarpetRug_Planets_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="An Old Rug Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+//=========================================== end
 
   class SRP_WoodenBox_Long: WoodenCrate  // 
 	{

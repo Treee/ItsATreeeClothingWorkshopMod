@@ -123,33 +123,6 @@ class SRP_WornWorkbench_Metal extends SRP_DeployableContainer_Base
   }
 };
 
-class SRP_Carpet extends SRP_DeployableContainer_Base
-{
-  override void EEItemAttached(EntityAI item, string slot_name)
-  {
-    super.EEItemAttached(item, slot_name);
-    UpdateShoulderProxyVisibility(item, slot_name);
-  }
-
-  override bool CanBeDeconstructed()
-  {
-    return true;
-  }
-};
-
-class SRP_CarpetRug extends SRP_DeployableContainer_Base
-{
-  override void EEItemAttached(EntityAI item, string slot_name)
-  {
-    super.EEItemAttached(item, slot_name);
-    UpdateShoulderProxyVisibility(item, slot_name);
-  }
-  override bool CanBeDeconstructed()
-  {
-    return true;
-  }
-};
-
 class SRP_Furniture_SmallLogPile extends SRP_DeployableContainer_Base
 {
   override bool CanReceiveItemIntoCargo(EntityAI item)
