@@ -2052,6 +2052,8 @@ class CfgVehicles
       "RedFloral",
       "RedRose",
       "RoyalBlue",
+      "HumanWelcome",
+      "MutantWelcome"
     };
 		attachments[]=
 		{
@@ -2178,6 +2180,18 @@ class CfgVehicles
 		displayName="An Old Carpet Kit";
 		descriptionShort="An old carpet to decorate your home";
 	};
+  class SRP_Carpet_HumanWelcome_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_MutantWelcome_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};    
 
   class SRP_CarpetRug_Kit: SRP_KitBase  
 	{

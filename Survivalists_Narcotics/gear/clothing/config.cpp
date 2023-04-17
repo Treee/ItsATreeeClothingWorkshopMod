@@ -38,6 +38,9 @@ class CfgVehicles
 		heatIsolation=0.6;
     noHelmet=0;
 		noEyewear=0;
+    varQuantityInit=5;
+		varQuantityMin=0;
+		varQuantityMax=5;
 		headSelectionsToHide[]=
 		{
 			"Clipping_NioshFaceMask"

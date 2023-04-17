@@ -190,6 +190,18 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_stag_co.paa"};
 	};
+  class SRP_Carpet_HumanWelcome: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_human_co.paa"};
+	};
+  class SRP_Carpet_MutantWelcome: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_mutant_co.paa"};
+	};
 
   class SRP_CarpetRug_Basic: SRP_CarpetRug_ColorBase
 	{
