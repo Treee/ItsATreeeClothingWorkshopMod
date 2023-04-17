@@ -10,6 +10,7 @@ modded class MissionServer
     if (GetGame().IsDedicatedServer())
     {
       SRPGlobals.SaveSRPConfig();
+      GetDayZGame().SaveRnDJson();
     }
   }
   override void InvokeOnConnect(PlayerBase player, PlayerIdentity identity)

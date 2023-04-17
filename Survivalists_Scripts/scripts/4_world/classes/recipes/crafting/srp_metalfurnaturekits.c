@@ -416,7 +416,7 @@ class SRP_Craft_Anvil extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Craft Melee Display - Fence";
+		m_Name = "Craft Anvil";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision

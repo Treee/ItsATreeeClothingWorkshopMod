@@ -369,6 +369,27 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ProbabLeigh_DancesWithAliens.ogg",1}};
 	};
+
+  class SRPRadio_AcousticGuitar_TheStranger_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\acoustic-thestranger.ogg",1}};
+	};
+  class SRPRadio_AcousticGuitar_ImprovLoop_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\acoustic-guitar-loop-improve.ogg",1}};
+	};
+  class SRPRadio_AcousticGuitar_Avante_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\acoutstic-avante-guitar.ogg",1}};
+	};
+  class SRPRadio_AcousticGuitar_LostWords_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\acoustic-lost-words.ogg",1}};
+	};
+  class SRPRadio_AcousticGuitar_TheJourney_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\acoustic-guitar-loop.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -747,6 +768,43 @@ class CfgSoundSets
 		soundShaders[] =
 		{
 			"SRPRadio_ProbabLeigh_DancesWithAliens_Shader1"
+		};
+	};
+
+
+  class SRPRadio_AcousticGuitar_TheStranger_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_AcousticGuitar_TheStranger_Shader1"
+		};
+	};
+  class SRPRadio_AcousticGuitar_ImprovLoop_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_AcousticGuitar_ImprovLoop_Shader1"
+		};
+	};
+  class SRPRadio_AcousticGuitar_Avante_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_AcousticGuitar_Avante_Shader1"
+		};
+	};
+  class SRPRadio_AcousticGuitar_LostWords_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_AcousticGuitar_LostWords_Shader1"
+		};
+	};
+  class SRPRadio_AcousticGuitar_TheJourney_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_AcousticGuitar_TheJourney_Shader1"
 		};
 	};
 };

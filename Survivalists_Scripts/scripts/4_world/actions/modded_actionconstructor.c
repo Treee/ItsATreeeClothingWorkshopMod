@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
+    actions.Insert(ActionPlayGuitarOption);
+
     actions.Insert(SRP_ActionFeedBioFlower);
     actions.Insert(SRP_ActionSprayPaintLocker);
 

@@ -1071,6 +1071,57 @@ class CfgVehicles
 			soundSet="Survivalists_Mods_Ambience_Aircraft_HelicopterFlyOver_SoundSet";
 		};
 	};
+
+  class SRPRadio_CassetteTape_AcousticGuitar_TheStranger: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Acoustic Guitar - The Stranger";
+		descriptionShort="Music recorded from an acoustic guitar.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_AcousticGuitar_TheStranger_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_AcousticGuitar_ImprovLoop: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Acoustic Guitar - Improv Loop";
+		descriptionShort="Music recorded from an acoustic guitar.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_AcousticGuitar_ImprovLoop_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_AcousticGuitar_Avante: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Acoustic Guitar - Avante";
+		descriptionShort="Music recorded from an acoustic guitar.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_AcousticGuitar_Avante_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_AcousticGuitar_LostWords: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Acoustic Guitar - Lost Words";
+		descriptionShort="Music recorded from an acoustic guitar.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_AcousticGuitar_LostWords_Shader1";
+		};
+	};
+  class SRPRadio_CassetteTape_AcousticGuitar_TheJourney: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Acoustic Guitar - The Journey";
+		descriptionShort="Music recorded from an acoustic guitar.";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_AcousticGuitar_TheJourney_Shader1";
+		};
+	};
 // -------------------------------- Island George
   class SRPRadio_CassetteTape_IslandGeorge_LostInTheSnow: SRPRadio_CassetteTape_Base
 	{

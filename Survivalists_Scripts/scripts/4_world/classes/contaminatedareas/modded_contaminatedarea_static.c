@@ -16,7 +16,7 @@ modded class ContaminatedArea_Static
         value = Math.Max(0.1, value);
         value = Math.Min(1.5, value);
         params.m_ParamRadius *= value;
-        Print(string.Format("Zone: %1 Value: %2 New Radius: %3 Position: %4", params.m_ParamName, value, params.m_ParamRadius, flower.GetZonePosition()));
+        // Print(string.Format("Zone: %1 Value: %2 New Radius: %3 Position: %4", params.m_ParamName, value, params.m_ParamRadius, flower.GetZonePosition()));
       }
     }
 		super.SetupZoneData( params );
