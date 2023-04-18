@@ -202,6 +202,139 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_mutant_co.paa"};
 	};
+  class SRP_Carpet_MutantWelcome1: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_welcomemutant1_co.paa"};
+	};
+  class SRP_Carpet_FlowerGold: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_flowergold_co.paa"};
+	};
+  class SRP_Carpet_FlowerTeal: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_flowerTeal_co.paa"};
+	};
+  class SRP_Carpet_GeoGreen: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_GeoGreen_co.paa"};
+	};
+  class SRP_Carpet_GeoOrange: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_GeoOrange_co.paa"};
+	};
+  class SRP_Carpet_GeoPurple: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_GeoPurple_co.paa"};
+	};
+  class SRP_Carpet_GeoRed: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_GeoRed_co.paa"};
+	};
+  class SRP_Carpet_GeoTeal: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_GeoTeal_co.paa"};
+	};
+  class SRP_Carpet_GeoYellow: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_GeoYellow_co.paa"};
+	};
+  class SRP_Carpet_KnitBlue: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_KnitBlue_co.paa"};
+	};
+  class SRP_Carpet_KnitGreen: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_KnitGreen_co.paa"};
+	};
+  class SRP_Carpet_KnitLime: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_KnitLime_co.paa"};
+	};
+  class SRP_Carpet_KnitOrange: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_KnitOrange_co.paa"};
+	};
+  class SRP_Carpet_KnitPurple: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_KnitPurple_co.paa"};
+	};
+  class SRP_Carpet_KnitRed: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_KnitRed_co.paa"};
+	};
+  class SRP_Carpet_KnitTeal: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_KnitTeal_co.paa"};
+	};
+  class SRP_Carpet_KnitYellow: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_KnitYellow_co.paa"};
+	};
+  class SRP_Carpet_Pineapple: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_Pineapple_co.paa"};
+	};
+  class SRP_Carpet_PlaidBrown: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_PlaidBrown_co.paa"};
+	};
+  class SRP_Carpet_PlaidElf: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_PlaidElf_co.paa"};
+	};
+  class SRP_Carpet_PlaidRed: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_PlaidRed_co.paa"};
+	};
+  class SRP_Carpet_SnowflakeBlue: SRP_Carpet_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\persianrug_SnowflakeBlue_co.paa"};
+	};
+
 
   class SRP_CarpetRug_Basic: SRP_CarpetRug_ColorBase
 	{

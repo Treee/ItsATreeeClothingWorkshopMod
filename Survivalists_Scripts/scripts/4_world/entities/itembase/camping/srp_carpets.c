@@ -37,6 +37,29 @@ class SRP_Carpet_RedFloral_Kit extends SRP_KitBase{};
 class SRP_Carpet_RedRose_Kit extends SRP_KitBase{};
 class SRP_Carpet_RoyalBlue_Kit extends SRP_KitBase{};
 class SRP_Carpet_Stag_Kit extends SRP_KitBase{};
+class SRP_Carpet_MutantWelcome_Kit extends SRP_KitBase{};
+class SRP_Carpet_MutantWelcome1_Kit extends SRP_KitBase{};
+class SRP_Carpet_FlowerGold_Kit extends SRP_KitBase{};
+class SRP_Carpet_FlowerTeal_Kit extends SRP_KitBase{};
+class SRP_Carpet_GeoGreen_Kit extends SRP_KitBase{};
+class SRP_Carpet_GeoOrange_Kit extends SRP_KitBase{};
+class SRP_Carpet_GeoPurple_Kit extends SRP_KitBase{};
+class SRP_Carpet_GeoRed_Kit extends SRP_KitBase{};
+class SRP_Carpet_GeoTeal_Kit extends SRP_KitBase{};
+class SRP_Carpet_GeoYellow_Kit extends SRP_KitBase{};
+class SRP_Carpet_KnitBlue_Kit extends SRP_KitBase{};
+class SRP_Carpet_KnitGreen_Kit extends SRP_KitBase{};
+class SRP_Carpet_KnitLime_Kit extends SRP_KitBase{};
+class SRP_Carpet_KnitOrange_Kit extends SRP_KitBase{};
+class SRP_Carpet_KnitPurple_Kit extends SRP_KitBase{};
+class SRP_Carpet_KnitRed_Kit extends SRP_KitBase{};
+class SRP_Carpet_KnitTeal_Kit extends SRP_KitBase{};
+class SRP_Carpet_KnitYellow_Kit extends SRP_KitBase{};
+class SRP_Carpet_Pineapple_Kit extends SRP_KitBase{};
+class SRP_Carpet_PlaidBrown_Kit extends SRP_KitBase{};
+class SRP_Carpet_PlaidElf_Kit extends SRP_KitBase{};
+class SRP_Carpet_PlaidRed_Kit extends SRP_KitBase{};
+class SRP_Carpet_SnowflakeBlue_Kit extends SRP_KitBase{};
 
 class SRP_Carpet_ColorBase extends SRP_DeployableContainer_Base
 {

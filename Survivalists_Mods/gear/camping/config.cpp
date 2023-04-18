@@ -2053,7 +2053,29 @@ class CfgVehicles
       "RedRose",
       "RoyalBlue",
       "HumanWelcome",
-      "MutantWelcome"
+      "MutantWelcome",
+      "MutantWelcome1",
+      "FlowerGold",
+      "FlowerTeal",
+      "GeoGreen",
+      "GeoOrange",
+      "GeoPurple",
+      "GeoRed",
+      "GeoTeal",
+      "GeoYellow",
+      "KnitBlue",
+      "KnitGreen",
+      "KnitLime",
+      "KnitOrange",
+      "KnitPurple",
+      "KnitRed",
+      "KnitTeal",
+      "KnitYellow",
+      "Pineapple",
+      "PlaidBrown",
+      "PlaidElf",
+      "PlaidRed",
+      "SnowflakeBlue",
     };
 		attachments[]=
 		{
@@ -2191,7 +2213,139 @@ class CfgVehicles
 		scope=2;
 		displayName="An Old Carpet Kit";
 		descriptionShort="An old carpet to decorate your home";
-	};    
+	};
+  class SRP_Carpet_MutantWelcome1_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_FlowerGold_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_FlowerTeal_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_GeoGreen_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_GeoOrange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_GeoPurple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_GeoRed_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_GeoTeal_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_GeoYellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_KnitBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_KnitGreen_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_KnitLime_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_KnitOrange_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_KnitPurple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_KnitRed_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_KnitTeal_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_KnitYellow_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_Pineapple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_PlaidBrown_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_PlaidElf_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_PlaidRed_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
+  class SRP_Carpet_SnowflakeBlue_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="An Old Carpet Kit";
+		descriptionShort="An old carpet to decorate your home";
+	};
 
   class SRP_CarpetRug_Kit: SRP_KitBase  
 	{
