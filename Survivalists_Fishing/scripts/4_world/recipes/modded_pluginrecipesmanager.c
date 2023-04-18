@@ -28,49 +28,12 @@ modded class PluginRecipesManager
     //=====CRAFTING LURES
     RegisterRecipe(new SRP_Fishing_Construct_FishLureMetalKit);
     RegisterRecipe(new SRP_Fishing_Construct_FishLureWoodKit);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_Slim1);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_Slim2);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_Slim3);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_Slim4);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_TearDrop1);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_TearDrop2);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_TearDrop3);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_TearDrop4);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_Rounded1);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_Rounded2);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_Rounded3);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureMetal_Rounded4);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_SmallScale1);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_SmallScale2);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_SmallScale3);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_SmallScale4);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_PatternScale1);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_PatternScale2);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_PatternScale3);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_PatternScale4);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_LargeScale1);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_LargeScale2);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_LargeScale3);
-    RegisterRecipe(new SRP_Fishing_Construct_FishLureWood_LargeScale4);
     //========CRAFTING RODS
     RegisterRecipe(new SRP_Fishing_Construct_FishRodKit);
     RegisterRecipe(new SRP_Fishing_Construct_FishRod);
-    RegisterRecipe(new SRP_Fishing_Construct_FishRod_Red);
-    RegisterRecipe(new SRP_Fishing_Construct_FishRod_Blue);
-    RegisterRecipe(new SRP_Fishing_Construct_FishRod_Purple);
 
     //========= Preparing Fish
-    RegisterRecipe(new PrepareCoralFish);
-    RegisterRecipe(new PrepareAngelFish);
-    RegisterRecipe(new PrepareSailFish);
-    RegisterRecipe(new PrepareAnglerFish);
-    RegisterRecipe(new PrepareHammerHeadFish);
-    
-    RegisterRecipe(new PrepareTroutFish);
-    RegisterRecipe(new PrepareMutantFish);
-    RegisterRecipe(new PrepareSplakeFish);
-    RegisterRecipe(new PreparePerchFish);
-    RegisterRecipe(new PrepareTilapiaFish);
-
+    RegisterRecipe(new SRP_PrepareSaltWaterFish);
+    RegisterRecipe(new SRP_PrepareFreshWaterFish);
 	}
 };

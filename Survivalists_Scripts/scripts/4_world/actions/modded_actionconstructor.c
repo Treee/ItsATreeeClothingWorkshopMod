@@ -3,7 +3,10 @@ modded class ActionConstructor
 	override void RegisterActions(TTypenameArray actions)
 	{
 		super.RegisterActions(actions);
-
+    
+    actions.Insert(ActionSwitchWoodFishingLureOption);
+    actions.Insert(ActionSwitchMetalFishingLureOption);
+    
     actions.Insert(ActionPlayGuitarOption);
 
     actions.Insert(SRP_ActionFeedBioFlower);

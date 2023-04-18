@@ -1,3 +1,10 @@
+modded class ToolBase
+{	
+  override bool IsKnifeTool()
+  {
+    return true;
+  }
+}
 modded class Hammer
 {
 	override void SetActions()
@@ -124,7 +131,7 @@ modded class Hacksaw
 		
 		AddAction(ActionSalvageCarWreck);
 		RemoveAction(ActionDestroyCodeLockOnFence);
-		RemoveAction(ActionDestroyCodeLockOnTent);
+		RemoveAction(ActionDestroyCodeLockOnTent);		
   }
 };
 

@@ -55,11 +55,11 @@ modded class PrepareFish
     }
     else if (fishType.Contains("_large"))
     {
-      numberOfFillets = 5;
+      numberOfFillets = 4;
     }
     else if (fishType.Contains("_epic"))
     {
-      numberOfFillets = 9;
+      numberOfFillets = 8;
     }
     return numberOfFillets;
   }

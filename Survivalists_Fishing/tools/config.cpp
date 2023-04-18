@@ -125,6 +125,13 @@ class CfgVehicles
 		itemBehaviour=2;
 		absorbency=0.80000001;
 		lootCategory="Crafted";
+    rootClassName="SRP_HandMadeFishingRod";
+    colorVariants[]=
+    {
+      "Blue",    
+      "Purple",    
+      "Red",    
+    };
 		attachments[]=
 		{
 			"Hook",
@@ -160,7 +167,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=1500;
+					hitpoints=3000;
 					healthLevels[]=
 					{						
 						{1.0,{"Survivalists_Fishing\tools\data\handmadefishingrod.rvmat"}},						

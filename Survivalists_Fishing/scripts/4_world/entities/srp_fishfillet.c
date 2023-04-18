@@ -1,30 +1,36 @@
 class SRP_FreshWaterFish_Base extends Edible_Base
 {
+  string GetFilletType()
+  {
+    TStringArray parts = {};
+    GetType().Split("_", parts);
+    if (parts.Count() > 1)
+    {
+      Print("fillet: " + string.Format("SRP_FreshWaterFishFilletMeat_%1", parts.Get(1)));
+      return string.Format("SRP_FreshWaterFishFilletMeat_%1", parts.Get(1));
+    }
+    return "";
+  }
   override bool CanBeCookedOnStick()
 	{
 		return false;
 	}
-
 	override bool CanBeCooked()
 	{
 		return false;
 	}	
-	
 	override bool IsCorpse()
 	{
 		return true;
 	}	
-		
 	override bool CanDecay()
 	{
 		return true;
 	}
-
   override bool CanProcessDecay()
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
 	}
-	
 	override void SetActions()
 	{
 		super.SetActions();
@@ -39,31 +45,36 @@ class SRP_FreshWaterFish_Base extends Edible_Base
 
 class SRP_SaltWaterFish_Base extends Edible_Base
 {
+  string GetFilletType()
+  {
+    TStringArray parts = {};
+    GetType().Split("_", parts);
+    if (parts.Count() > 1)
+    {
+      return string.Format("SRP_SaltWaterFishFilletMeat_%1", parts.Get(1));
+    }
+    return "";
+  }
   override bool CanBeCookedOnStick()
 	{
 		return false;
 	}
-
 	override bool CanBeCooked()
 	{
 		return false;
 	}	
-	
 	override bool IsCorpse()
 	{
 		return true;
-	}	
-		
+	}		
 	override bool CanDecay()
 	{
 		return true;
 	}
-
   override bool CanProcessDecay()
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
 	}
-	
 	override void SetActions()
 	{
 		super.SetActions();
