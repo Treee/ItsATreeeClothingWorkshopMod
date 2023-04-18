@@ -421,29 +421,9 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"Flashlight");//you can insert multiple ingredients this way
-		InsertIngredient(1,"Crowbar");//you can insert multiple ingredients this way
-		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
-		InsertIngredient(1,"Wrench");//you can insert multiple ingredients this way
-		InsertIngredient(1,"Pipe");//you can insert multiple ingredients this way
-		InsertIngredient(1,"Screwdriver");//you can insert multiple ingredients this way
-		InsertIngredient(1,"Mace");//you can insert multiple ingredients this way
-		InsertIngredient(1,"Iceaxe");//you can insert multiple ingredients this way
-    InsertIngredient(1,"Sickle");//you can insert multiple ingredients this way
-		InsertIngredient(1,"Hacksaw");
-		InsertIngredient(1,"KitchenKnife");
-		InsertIngredient(1,"SteakKnife");
-		InsertIngredient(1,"HayHook");
-		InsertIngredient(1,"Cleaver");
-		InsertIngredient(1,"CombatKnife");
-		InsertIngredient(1,"HuntingKnife");
-		InsertIngredient(1,"Machete");
-		InsertIngredient(1,"WoodAxe");
-		InsertIngredient(1,"Hatchet");
-		InsertIngredient(1,"FirefighterAxe");
-		InsertIngredient(1,"Sword");
+		InsertIngredient(1,"Inventory_Base");//you can insert multiple ingredients this way
 
-		m_IngredientAddHealth[1] = -20;// 0 = do nothing
+		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
@@ -465,7 +445,12 @@ class Craft_SRP_RefineUnCutGem_CrudeTool extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-		return true;
+    ToolBase tool;
+    if (Class.CastTo(tool, ingredients[1]))
+    {
+      return tool.IsKnifeTool();
+    }
+    return false;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion

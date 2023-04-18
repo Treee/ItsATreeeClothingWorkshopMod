@@ -57,10 +57,8 @@ class Craft_SRP_DiceBase extends RecipeBase
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
     ToolBase tool;
-    SRP_SaltWaterFish_Base fish;
-    if (Class.CastTo(fish, ingredients[0]) && Class.CastTo(tool, ingredients[1]))
+    if (Class.CastTo(tool, ingredients[1]))
     {
-      m_FishFilletClassName = fish.GetFilletType();
       return tool.IsKnifeTool();
     }
     return false;

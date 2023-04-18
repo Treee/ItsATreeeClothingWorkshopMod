@@ -120,18 +120,9 @@ class Craft_SRP_GhillieWrapTan extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"KitchenKnife");
-		InsertIngredient(1,"SteakKnife");
-		InsertIngredient(1,"Cleaver");
-		InsertIngredient(1,"CombatKnife");
-		InsertIngredient(1,"HuntingKnife");
-		InsertIngredient(1,"Machete");
-		InsertIngredient(1,"Screwdriver");
-		InsertIngredient(1,"WoodAxe");
-		InsertIngredient(1,"Hatchet");
-		InsertIngredient(1,"FirefighterAxe");
+		InsertIngredient(1,"Inventory_Base");//you can insert multiple ingredients this way
 		
-		m_IngredientAddHealth[1] = -20;// 0 = do nothing
+		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
@@ -153,7 +144,12 @@ class Craft_SRP_GhillieWrapTan extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    return true;
+    ToolBase tool;
+		if ( Class.CastTo(tool, ingredients[1]))
+		{
+      return tool.IsKnifeTool();
+		}
+    return false;	
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -200,13 +196,7 @@ class Craft_DUB_GhillieHoodTan extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"HuntingKnife");//you can insert multiple ingredients this way
-		InsertIngredient(1,"KukriKnife");
-		InsertIngredient(1,"FangeKnife");
-		InsertIngredient(1,"Cleaver");
-		InsertIngredient(1,"CombatKnife");
-		InsertIngredient(1,"Machete");
-		InsertIngredient(1,"Hatchet");
+		InsertIngredient(1,"Inventory_Base");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[1] = -20;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
@@ -230,7 +220,12 @@ class Craft_DUB_GhillieHoodTan extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    return true;
+    ToolBase tool;
+		if ( Class.CastTo(tool, ingredients[1]))
+		{
+      return tool.IsKnifeTool();
+		}
+    return false;	
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -276,13 +271,7 @@ class Craft_DUB_GhillieHoodWoodland extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"HuntingKnife");//you can insert multiple ingredients this way
-		InsertIngredient(1,"KukriKnife");
-		InsertIngredient(1,"FangeKnife");
-		InsertIngredient(1,"Cleaver");
-		InsertIngredient(1,"CombatKnife");
-		InsertIngredient(1,"Machete");
-		InsertIngredient(1,"Hatchet");
+		InsertIngredient(1,"Inventory_Base");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[1] = -20;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
@@ -306,7 +295,12 @@ class Craft_DUB_GhillieHoodWoodland extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    return true;
+    ToolBase tool;
+		if ( Class.CastTo(tool, ingredients[1]))
+		{
+      return tool.IsKnifeTool();
+		}
+    return false;	
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -352,13 +346,7 @@ class Craft_DUB_GhillieHoodMossy extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"HuntingKnife");//you can insert multiple ingredients this way
-		InsertIngredient(1,"KukriKnife");
-		InsertIngredient(1,"FangeKnife");
-		InsertIngredient(1,"Cleaver");
-		InsertIngredient(1,"CombatKnife");
-		InsertIngredient(1,"Machete");
-		InsertIngredient(1,"Hatchet");
+		InsertIngredient(1,"Inventory_Base");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[1] = -20;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
@@ -382,7 +370,12 @@ class Craft_DUB_GhillieHoodMossy extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    return true;
+    ToolBase tool;
+		if ( Class.CastTo(tool, ingredients[1]))
+		{
+      return tool.IsKnifeTool();
+		}
+    return false;	
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -428,13 +421,7 @@ class Craft_DUB_GhillieHoodWinter extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
-		InsertIngredient(1,"HuntingKnife");//you can insert multiple ingredients this way
-		InsertIngredient(1,"KukriKnife");
-		InsertIngredient(1,"FangeKnife");
-		InsertIngredient(1,"Cleaver");
-		InsertIngredient(1,"CombatKnife");
-		InsertIngredient(1,"Machete");
-		InsertIngredient(1,"Hatchet");
+		InsertIngredient(1,"Inventory_Base");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[1] = -20;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
@@ -458,7 +445,12 @@ class Craft_DUB_GhillieHoodWinter extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    return true;
+    ToolBase tool;
+		if ( Class.CastTo(tool, ingredients[1]))
+		{
+      return tool.IsKnifeTool();
+		}
+    return false;	
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
