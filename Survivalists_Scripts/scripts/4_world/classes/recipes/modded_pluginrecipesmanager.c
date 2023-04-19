@@ -235,6 +235,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_WhiteFlag);
 
     //==========================================================Clothing
+      RegisterRecipe(new Craft_SRP_RepairClothing);
       // BACKPACKS
       RegisterRecipe(new Craft_DUB_ShieldBackpack);
       RegisterRecipe(new Craft_DUB_BagFlag);

@@ -35,4 +35,26 @@ class SRP_SewingTable extends SRP_CraftingBench_Base
   {
     return true;
   }
+  bool HasAllThreadSlotsFilledAndFull()
+  {
+    ItemBase attachment;
+    bool isFilledAndFull = true;
+    for(int i = 1; i < 6; i++)
+    {
+      if (Class.CastTo(attachment, GetInventory().FindAttachmentByName(string.Format("SRP_SewingThread%1",i))))
+        isFilledAndFull &= attachment.GetQuantity() == attachment.GetQuantityMax();
+      else
+        return false;
+    }
+    return isFilledAndFull
+  }
+  void ConsumeAllThreadSlots()
+  {
+    ItemBase attachment;
+    for(int i = 1; i < 6; i++)
+    {
+      if (Class.CastTo(attachment, GetInventory().FindAttachmentByName(string.Format("SRP_SewingThread%1",i))))
+        attachment.AddQuantity(-attachment.GetQuantityMax());
+    }
+  }
 };

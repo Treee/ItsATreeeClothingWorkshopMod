@@ -318,3 +318,83 @@ class Craft_SRP_SalvageClothingWithMachine extends Craft_SRP_ClothingThreadBase 
 		m_IngredientAddHealth[1] = -1;	// 0 = do nothing
   }
 };
+
+//======================= repair clothing
+class Craft_SRP_RepairClothing extends Craft_SRP_SewingThreadBase
+{
+
+	override void Init()
+	{
+		m_Name = "Repair Completely";	// action name in game
+		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
+		m_AnimationLength = 1;		// animation length in relative time units
+		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
+		
+		//conditions
+		m_MinDamageIngredient[0] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[0] = 3;	//-1 = disable check
+		m_MinQuantityIngredient[0] = -1;	//quantity 1 required for primary ingredient
+		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
+		
+		m_MinDamageIngredient[1] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[1] = -1;	//-1 = disable check
+		m_MinQuantityIngredient[1] = -1;	//quantity 1 required for secondary ingredient
+		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+		
+		//ingredient 1  
+		InsertIngredient(0,"Clothing");	// primary ingredient
+		
+		m_IngredientAddHealth[0] = 0;	// 0 = do nothing
+		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
+		m_IngredientDestroy[0] = false;	// -1 = do nothing
+		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//ingredient 2	
+		InsertIngredient(1,"SRP_SewingTable");	// primary ingredient
+		
+		m_IngredientAddHealth[1] = -1;	// 0 = do nothing
+		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
+		m_IngredientDestroy[1] = false;		// destroy secondary ingredient
+		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+		
+		//result
+		// AddResult("SRP_Armband_Base");	// recipe result
+		
+		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
+		m_ResultSetQuantity[0] = -1; 			// result quantity
+		m_ResultSetHealth[0] = -1;			// -1 = do nothing
+		m_ResultInheritsHealth[0] = -1;		// -1 = do nothing
+		m_ResultInheritsColor[0] = -1;		// -1 = do nothing
+		m_ResultToInventory[0] = -2;		// -1 = do nothing
+		m_ResultUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by soft skillson this result
+		m_ResultReplacesIngredient[0] = -1;	// -1 = do nothing
+	}
+
+  override bool CanDo(ItemBase ingredients[], PlayerBase player)
+	{
+    if (super.CanDo(ingredients,player))
+    {
+      Clothing clothingPiece;
+      SRP_SewingTable workbench;
+      if (Class.CastTo(clothingPiece, ingredients[0]) && Class.CastTo(workbench, ingredients[1]))
+      {
+        return clothingPiece.IsEmpty() && workbench.HasAllThreadSlotsFilledAndFull();
+      }
+    }
+		return false;
+	}
+  override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
+	{
+		Debug.Log("Craft_SRP_RepairClothing Recipe Do method called: " + m_Name,"recipes");
+
+    Clothing clothing;
+    SRP_SewingTable workbench;
+    if (Class.CastTo(clothing, ingredients[0]) && Class.CastTo(workbench, ingredients[1]))
+    {
+      workbench.ConsumeAllThreadSlots();      
+      clothing.SetHealth(clothing.GetMaxHealth());
+    }
+	}
+};

@@ -10,11 +10,11 @@ modded class ContaminatedArea_Static
       {
         SRP_BioFlowerInfo flower = config.g_BioFlowerManager.GetBioFlowerInfoByZone(params.m_ParamName);
         flower.SetZonePosition(GetWorldPosition());
-        float value = flower.GetFlowerEnergy() / 100;
-        flower.AddFlowerEnergy(-10);
+        float value = flower.GetFlowerEnergy() / 100;        
+        flower.AddFlowerEnergy(-Math.RandomIntInclusive(5,20));
         // clamp values to 0.1 and 1.5x
-        value = Math.Max(0.1, value);
-        value = Math.Min(1.5, value);
+        value = Math.Max(0.6, value);
+        value = Math.Min(2.0, value);
         params.m_ParamRadius *= value;
         // Print(string.Format("Zone: %1 Value: %2 New Radius: %3 Position: %4", params.m_ParamName, value, params.m_ParamRadius, flower.GetZonePosition()));
       }
