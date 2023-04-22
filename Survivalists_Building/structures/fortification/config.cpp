@@ -116,20 +116,7 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Building\structures\fortification\data\srp_barricade_bamboo_yellow_co.paa"};
 	};
-//======================================= PALISADE
-  class SRP_Fortifications_PalisadeAll_Kit: SRP_Building_KitBase
-	{
-		scope=0;
-		displayName="Palisade wall All";
-		descriptionShort="Palisade wall All";
-    projectionTypename="SRP_Fortifications_PalisadeAll";
-	};
-  class SRP_Fortifications_PalisadeAll: SRP_PrefabFortification_Base
-	{
-		scope=2;
-		model="Survivalists_Building\structures\fortification\srp_palisade_all.p3d";
-	};
-
+//======================================= PALISADE TOWER
   class Land_SRP_Fortifications_PalisadeTower_Small_Kit: SRP_Building_KitBase
 	{
 		scope=2;
@@ -169,7 +156,7 @@ class CfgVehicles
   class Land_SRP_Fortifications_PalisadeTower_Ramp_Kit: SRP_Building_KitBase
 	{
 		scope=2;
-		displayName="Palisade Tower Kit - Ramp";
+		displayName="Palisade Kit - Ramp";
 		descriptionShort="A kit for building a ramp.";
     projectionTypename="Land_SRP_Fortifications_PalisadeTower_Ramp";
 	};
@@ -193,7 +180,7 @@ class CfgVehicles
   class Land_SRP_Fortifications_PalisadeTower_Platform_Kit: SRP_Building_KitBase
 	{
 		scope=2;
-		displayName="Palisade Kit - Platform";
+		displayName="Palisade Platform Kit - Single";
 		descriptionShort="A kit for building a single platform.";
     projectionTypename="Land_SRP_Fortifications_PalisadeTower_Platform";
 	};
@@ -205,7 +192,7 @@ class CfgVehicles
   class Land_SRP_Fortifications_PalisadeTower_PlatformDouble_Kit: SRP_Building_KitBase
 	{
 		scope=2;
-		displayName="Palisade Tower Kit - Platform Double";
+		displayName="Palisade Platform Kit - Double";
 		descriptionShort="A kit for building a double length platform.";
     projectionTypename="Land_SRP_Fortifications_PalisadeTower_PlatformDouble";
 	};
@@ -217,7 +204,7 @@ class CfgVehicles
   class Land_SRP_Fortifications_PalisadeTower_PlatformTriple_Kit: SRP_Building_KitBase
 	{
 		scope=2;
-		displayName="Palisade Tower Kit - Platform Triple";
+		displayName="Palisade Platform Kit - Triple";
 		descriptionShort="A kit for building a triple platform.";
     projectionTypename="Land_SRP_Fortifications_PalisadeTower_PlatformTriple";
 	};
@@ -227,4 +214,134 @@ class CfgVehicles
 		model="Survivalists_Building\structures\fortification\srp_palisade_platformtriple.p3d";
 	};
 
+//======================================= PALISADE WALLS
+  class Land_SRP_Fortifications_PalisadeWall_TentSmall_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Tent Kit - Small";
+		descriptionShort="A kit for building a palisade tent.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_TentSmall";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_TentSmall: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_walltent_small.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_TentLarge_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Tent Kit - Large";
+		descriptionShort="A kit for building a palisade tent.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_TentLarge";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_TentLarge: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_walltent_large.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Planks_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Single Plank";
+		descriptionShort="A kit for building a plank barricade.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_Planks";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Planks: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallplank.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_PlanksDouble_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Double Plank";
+		descriptionShort="A kit for building a plank barricade.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_PlanksDouble";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_PlanksDouble: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallplankdouble.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Gate_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Gate";
+		descriptionShort="A kit for building a gate.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_Gate";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Gate: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallgate.p3d";
+    class Doors
+		{
+      class Doors1
+      {
+        displayName="Door 1";
+        component="doors1";
+        soundPos="doors1_action";
+        animPeriod=1;
+        initPhase=0;
+        initOpened=0.69999999;
+      };
+      class Doors2
+      {
+        displayName="Door 2";
+        component="doors2";
+        soundPos="doors2_action";
+        animPeriod=1;
+        initPhase=0;
+        initOpened=0.69999999;
+      };
+    };
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Fence_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Fence";
+		descriptionShort="A kit for building a fence.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_Fence";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Fence: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallfence.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceDouble_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Double Fence";
+		descriptionShort="A kit for building a fence.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_FenceDouble";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceDouble: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallfencedouble.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLog_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Log Fence";
+		descriptionShort="A kit for building a log fence.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_FenceLog";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLog: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wall.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLogDouble_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Double Log Fence";
+		descriptionShort="A kit for building a log fence.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_FenceLogDouble";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLogDouble: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_walldouble.p3d";
+	};
 };

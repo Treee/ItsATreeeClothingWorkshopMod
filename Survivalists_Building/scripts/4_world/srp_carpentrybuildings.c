@@ -91,6 +91,10 @@ class Land_SRP_ShippingContainer_20ft_Stag extends SRP_DefaultHouse{};
 class Land_SRP_ShippingContainer_20ft_Locknsons extends SRP_DefaultHouse{};
 class Land_SRP_ShippingContainer_20ft_Espen extends SRP_DefaultHouse{};
 
+// palisade gates
+class Land_SRP_Fortifications_PalisadeWall_Gate extends SRP_DefaultHouse{};
+
+
 class Land_srp_constructionmaterials extends SRP_DefaultHouse
 {
   override bool IsInventoryVisible()
