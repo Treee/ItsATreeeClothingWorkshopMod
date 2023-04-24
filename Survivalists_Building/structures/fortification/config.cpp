@@ -344,4 +344,150 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_walldouble.p3d";
 	};
+//======================================= STATIC LAND (Scope 1)
+  class SRP_Fortifications_BambooWall_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_bamboos_wall.p3d";
+	};
+  class SRP_Fortifications_BambooWall_Yellow_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_bamboos_wall.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Building\structures\fortification\data\srp_barricade_bamboo_yellow_co.paa"};
+	};  
+  class SRP_Fortifications_BambooWallCrossSmall_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_bamboos_cross_small.p3d";
+	};
+  class SRP_Fortifications_BambooWallCrossSmall_Yellow_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_bamboos_cross_small.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Building\structures\fortification\data\srp_barricade_bamboo_yellow_co.paa"};
+	}; 
+  class SRP_Fortifications_BambooWallCross_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_bamboos_cross.p3d";
+	};
+  class SRP_Fortifications_BambooWallCross_Yellow_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_bamboos_cross.p3d";
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Building\structures\fortification\data\srp_barricade_bamboo_yellow_co.paa"};
+	};
+  class Land_SRP_Fortifications_PalisadeTower_Small_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_tower_small.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeTower_LargeStairs_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_tower_large.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeTower_LargeLadder_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_tower_largeladder.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeTower_Ramp_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_ramp.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeTower_Stairs_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_tower_stairs.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeTower_Platform_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_platform.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeTower_PlatformDouble_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_platformdouble.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeTower_PlatformTriple_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_platformtriple.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_TentSmall_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_walltent_small.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_TentLarge_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_walltent_large.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Planks_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallplank.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_PlanksDouble_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallplankdouble.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Gate_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallgate.p3d";
+    class Doors
+		{
+      class Doors1
+      {
+        displayName="Door 1";
+        component="doors1";
+        soundPos="doors1_action";
+        animPeriod=1;
+        initPhase=0;
+        initOpened=0.69999999;
+      };
+      class Doors2
+      {
+        displayName="Door 2";
+        component="doors2";
+        soundPos="doors2_action";
+        animPeriod=1;
+        initPhase=0;
+        initOpened=0.69999999;
+      };
+    };
+	};
+  class Land_SRP_Fortifications_PalisadeWall_Fence_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallfence.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceDouble_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallfencedouble.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLog_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wall.p3d";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLogDouble_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_palisade_walldouble.p3d";
+	};
+//======================================= END
+
+
 };
