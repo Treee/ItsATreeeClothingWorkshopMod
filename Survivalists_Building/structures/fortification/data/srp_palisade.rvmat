@@ -1,13 +1,11 @@
-ambient[] = {0.075,0.66,0.3,0.0125};
-diffuse[] = {0.5,0.5,0.5,1};
-forcedDiffuse[] = {0.2,0.2,0.2,0.2};
+ambient[]={1,1,1,1};
+diffuse[]={1,1,1,1};
+forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
 specular[]={0.1,0.1,0.1,0.1};
 specularPower=100;
-PixelShaderID="TreeAdv";
-VertexShaderID="TreeNoFade";
-plantWind[]={0.01,0.15,20.95,10.5};
-
+PixelShaderID="Super";
+VertexShaderID="Super";
 class Stage1
 {
 	texture="Survivalists_Building\structures\fortification\data\srp_palisade_nohq.paa";
@@ -46,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="Survivalists_Building\structures\fortification\data\srp_palisade_windmask_co.paa";
+	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
 	uvSource="tex";
 	class uvTransform
 	{
