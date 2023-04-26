@@ -1742,11 +1742,11 @@ class CfgVehicles
     color="base";
     physLayer="item_small";
 		weight=500;
-		itemSize[]={1,2};
+		itemSize[]={1,1};
 		varQuantityDestroyOnMin=1;
-		varQuantityInit=0;
+		varQuantityInit=1;
 		varQuantityMin=0;
-		varQuantityMax=0;
+		varQuantityMax=5;
     absorbency=0;
     varWetMax=0;
 		inventorySlot[]=
@@ -1773,6 +1773,11 @@ class CfgVehicles
       "SRP_DisplayHook18",
       "SRP_DisplayHook19",
       "SRP_DisplayHook20",
+      "SRP_PreciousStone1",
+      "SRP_PreciousStone2",
+      "SRP_PreciousStone3",
+      "SRP_PreciousStone4",
+      "SRP_PreciousStone5",
     };
     hiddenSelections[]=
 		{
@@ -2089,7 +2094,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Exquisite Cut Gem - Opal";
 		descriptionShort="An exquisite gem refined from rough rock.";
-    color="quartz";
+    color="opal";
     physLayer="item_small";
     hiddenSelections[]=
 		{

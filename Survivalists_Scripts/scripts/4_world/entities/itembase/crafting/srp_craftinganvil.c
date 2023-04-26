@@ -38,6 +38,13 @@ class SRP_Anvil_ColorBase extends SRP_CraftingBench_Base
   {
     return true;
   }
+  override bool CanReceiveAttachment( EntityAI attachment,int slotId )
+	{
+    SRP_Mining_Crystal_ColorBase crystal;
+		if (Class.CastTo(crystal, attachment))
+      return false;
+		return super.CanReceiveAttachment( attachment, slotId );
+	};	
 };
 
 class SRP_Anvil_Basic_Kit extends SRP_KitBase{};

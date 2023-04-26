@@ -2171,7 +2171,7 @@ class CfgVehicles
 			};
       class GemStones
 			{
-				name="Crystals and Gems";
+				name="Cut Gems";
 				description="Various rough and refined precious stones.";
 				attachmentSlots[]=
 				{
