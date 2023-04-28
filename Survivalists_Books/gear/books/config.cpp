@@ -450,6 +450,32 @@ class CfgVehicles
 		  "Survivalists_Books\gear\books\data\book_foodintheforest_co.paa"
 		};
 	};
+  class SRP_ReadableBook_STAGStarvation: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="STAG Starvation";
+    author="STAG";
+		file="Survivalists_Books\gear\books\data\book_bible.html";		
+    displayName="S.T.A.G's Starter on Starvation";
+    descriptionShort="The first book of many on how to survive half rations in the work camps. S.T.A.G. loses 300 people per month to starvation.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_STAGStarvation_co.paa"
+    };
+  };
+  class SRP_ReadableBook_EspenParenting: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="A Father's Guide";
+    author="Espen";
+		file="Survivalists_Books\gear\books\data\book_bible.html";		
+    displayName="ESPEN Parenting";
+    descriptionShort="ESPEN Industries' take on parenting.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_EspenParenting_co.paa"
+    };
+  };
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
