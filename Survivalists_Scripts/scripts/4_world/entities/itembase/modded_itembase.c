@@ -490,6 +490,10 @@ modded class ItemBase
     }
     return GetQuantity() >= quantity && acceptedType == GetColor();
   }
+  bool IsDrugWorkbenchTool()
+  {
+    return false;
+  }
   string GetKitName()
   {
     return string.Format("%1_Kit", GetType());

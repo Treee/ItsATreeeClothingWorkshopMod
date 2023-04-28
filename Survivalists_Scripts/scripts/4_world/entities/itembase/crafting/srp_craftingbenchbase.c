@@ -143,4 +143,8 @@ class SRP_CraftingBench_Base extends ItemBase
 
     return true;
   }
+  bool CanAcceptTool(ItemBase item)
+  {
+    return false;
+  }
 };

@@ -38,4 +38,9 @@ class SRP_DrugWorkbench extends SRP_CraftingBench_Base
   {
     return 2;
   }
+  bool CanAcceptTool(ItemBase item)
+  {
+    return item.IsDrugWorkbenchTool();
+  }
 };
+class SRP_PrefabCrafting_drugtub extends SRP_DrugWorkbench{};

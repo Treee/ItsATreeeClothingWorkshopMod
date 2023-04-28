@@ -298,4 +298,77 @@ class CfgVehicles
 			};	
 		};
 	};
+  class SRP_PrefabCrafting_drugtub: SRP_PrefabCrafting_Base
+	{
+    scope=1;
+		color="DrugBench";
+		displayName="Illicit Drug Workbench";
+		descriptionShort="A workbench used for brewing the highest quality drugs in the apocalypse.";
+    model="Survivalists_Building\structures\crafting\srp_drugworkbench.p3d";
+    attachments[]=
+		{
+			"MethRecipe",
+			"BathSaltsRecipe",
+			"AcidRecipe",
+			"GasCanister",
+			"LargeBattery", //CarBattery and TruckBattery fill this (do script check?)
+			"LightBulb",
+      "Disinfectant",
+      "Chemlight",
+			"Material_MetalSheets",
+      "Material_MetalWire",
+      "TestTube1",
+      "TestTube2",
+      "TestTube3",
+      "TestTube4",
+      "TestTube5",
+      "TestTube6"
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Recipes
+			{
+				name="Recipe Book";
+				description="Various recipes to aid in crafting drugs.";
+				attachmentSlots[]=
+				{
+					"MethRecipe",
+					"BathSaltsRecipe",
+					"AcidRecipe"
+				};
+				icon="set:dayz_inventory image:book";
+			};
+      class LabTubes
+			{
+				name="Lab Tubes";
+				description="Liquid Ingredients";
+				attachmentSlots[]=
+				{
+          "TestTube1",
+          "TestTube2",
+          "TestTube3",
+          "TestTube4",
+          "TestTube5",
+          "TestTube6"
+				};
+				icon="set:dayz_inventory image:woodenlog";
+			};
+			class Material
+			{
+				name="Raw Materials";
+				description="Other Ingredients";
+				attachmentSlots[]=
+				{
+          "GasCanister",
+          "LargeBattery", //CarBattery and TruckBattery fill this (do script check?)
+          "LightBulb",
+          "Disinfectant",
+          "Chemlight",
+          "Material_MetalSheets",
+          "Material_MetalWire"
+				};
+				icon="set:dayz_inventory image:disinfectant";
+			};
+		};	
+	};
 };
