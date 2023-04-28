@@ -57,4 +57,37 @@ class SRP_SewingTable extends SRP_CraftingBench_Base
         attachment.AddQuantity(-attachment.GetQuantityMax());
     }
   }
+  override bool CanAcceptTool(ItemBase item)
+  {
+    return item.IsSewingWorkbenchTool();
+  }
+};
+
+class SRP_PrefabCrafting_tailoring extends SRP_SewingTable
+{
+  override void EEInit()
+	{
+		super.EEInit();
+    if (GetGame().IsDedicatedServer())
+    {
+      ItemBase attachment;
+      attachment = GetItemOnSlot("SRP_SewingMachine");
+      if (attachment == NULL)
+        GetInventory().CreateInInventory("SRP_SewingMachine");
+    }
+	}
+  override bool CanReleaseAttachment (EntityAI attachment)
+	{
+		if( attachment && attachment.GetType() == "SRP_SewingMachine" )
+			return false;
+		return super.CanReleaseAttachment(attachment);
+	}
+  override int GetCraftingDamage()
+  {
+    return 0;
+  }
+  override bool CanBeDeconstructed()
+  {
+    return false;
+  }
 };

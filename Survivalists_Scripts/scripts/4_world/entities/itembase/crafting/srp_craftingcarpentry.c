@@ -1,5 +1,31 @@
 class SRP_PrefabCrafting_carpentry extends SRP_CraftingBench_Base
 {
+  override void EEInit()
+	{
+		super.EEInit();
+    if (GetGame().IsDedicatedServer())
+    {
+      ItemBase attachment;
+      attachment = GetItemOnSlot("SRP_WoodClamp");
+      if (attachment == NULL)
+        GetInventory().CreateInInventory("SRP_WorkbenchClamp");
+      
+      attachment = GetItemOnSlot("SRP_WoodDrill");
+      if (!GetItemOnSlot("SRP_WoodDrill"))
+        GetInventory().CreateInInventory("SRP_WorkbenchDrill");
+    }
+	}
+  override bool CanReleaseAttachment (EntityAI attachment)
+	{
+		if(attachment)
+    {
+      if (attachment.GetType() == "SRP_WorkbenchClamp")
+        return false;
+      if (attachment.GetType() == "SRP_WorkbenchDrill")
+        return false;
+    }
+		return super.CanReleaseAttachment(attachment);
+	}  
   override bool CheckPotentialRecipeMatches(out array<SRP_CraftableItem> craftableItems)
   {        
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("", "");
@@ -34,10 +60,40 @@ class SRP_PrefabCrafting_carpentry extends SRP_CraftingBench_Base
   {
     return 10;
   }
+  override bool CanAcceptTool(ItemBase item)
+  {
+    return item.IsCarpentryWorkbenchTool();
+  }
 };
 
 class SRP_PrefabCrafting_metalworking extends SRP_CraftingBench_Base
 {
+  override void EEInit()
+	{
+		super.EEInit();
+    if (GetGame().IsDedicatedServer())
+    {
+      ItemBase attachment;
+      attachment = GetItemOnSlot("SRP_WoodClamp");
+      if (attachment == NULL)
+        GetInventory().CreateInInventory("SRP_WorkbenchClamp");
+      
+      attachment = GetItemOnSlot("SRP_WoodDrill");
+      if (!GetItemOnSlot("SRP_WoodDrill"))
+        GetInventory().CreateInInventory("SRP_WorkbenchDrill");
+    }
+	}
+  override bool CanReleaseAttachment (EntityAI attachment)
+	{
+		if(attachment)
+    {
+      if (attachment.GetType() == "SRP_WorkbenchClamp")
+        return false;
+      if (attachment.GetType() == "SRP_WorkbenchDrill")
+        return false;
+    }
+		return super.CanReleaseAttachment(attachment);
+	}
   override bool CheckPotentialRecipeMatches(out array<SRP_CraftableItem> craftableItems)
   {        
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("", "");
@@ -71,5 +127,9 @@ class SRP_PrefabCrafting_metalworking extends SRP_CraftingBench_Base
   override int GetCraftingDamage()
   {
     return 10;
+  }
+  override bool CanAcceptTool(ItemBase item)
+  {
+    return item.IsMetalWorkbenchTool();
   }
 };

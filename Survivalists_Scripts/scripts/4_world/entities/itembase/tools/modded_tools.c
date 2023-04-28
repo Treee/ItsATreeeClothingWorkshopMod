@@ -12,10 +12,20 @@ modded class Hammer
 		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
-		AddAction(SRP_ActionMetalSmith);
-		AddAction(SRP_ActionCarpentryCraft);
-		AddAction(SRP_ActionMetalWorkingCraft);
+		AddAction(SRP_ActionCraftOnWorkbench);
 	}
+  override bool IsMetalWorkbenchTool()
+  {
+    return true;
+  }
+  override bool IsAnvilWorkbenchTool()
+  {
+    return true;
+  }
+  override bool IsCarpentryWorkbenchTool()
+  {
+    return true;
+  }
 }
 modded class WoodAxe
 {

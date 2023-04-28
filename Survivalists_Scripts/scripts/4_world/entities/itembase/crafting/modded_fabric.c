@@ -4,6 +4,10 @@ modded class Fabric
 	{
 		super.SetActions();
 		
-		AddAction(SRP_ActionTailor);
+		AddAction(SRP_ActionCraftOnWorkbench);
 	}
+  override bool IsSewingWorkbenchTool()
+  {
+    return true;
+  }
 };

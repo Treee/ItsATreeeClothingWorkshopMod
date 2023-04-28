@@ -494,6 +494,34 @@ modded class ItemBase
   {
     return false;
   }
+  bool IsMetalWorkbenchTool()
+  {
+    return false;
+  }
+  bool IsCarpentryWorkbenchTool()
+  {
+    return false;
+  }
+  bool IsBrewingWorkbenchTool()
+  {
+    return false;
+  }
+  bool IsAmmoCraftingWorkbenchTool()
+  {
+    return false;
+  }
+  bool IsLatheWorkbenchTool()
+  {
+    return false;
+  }
+  bool IsSewingWorkbenchTool()
+  {
+    return false;
+  }
+  bool IsAnvilWorkbenchTool()
+  {
+    return false;
+  }
   string GetKitName()
   {
     return string.Format("%1_Kit", GetType());

@@ -42,7 +42,7 @@ enum SRP_COLOR
   LIGHTBLUE,
   RED,
   BLUE,
-  GREY,
+  GRAY,
   ORANGE,
   PINK,
   PURPLE,

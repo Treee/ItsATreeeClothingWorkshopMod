@@ -1707,8 +1707,6 @@ class CfgVehicles
 		};
 	};
 
-
-  
 //==========================================BREWING
   class SRP_BrewingWorkbench_ColorBase: FireplaceBase 
 	{

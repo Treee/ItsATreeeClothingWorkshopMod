@@ -371,4 +371,176 @@ class CfgVehicles
 			};
 		};	
 	};
+  class SRP_PrefabCrafting_tailoring: SRP_PrefabCrafting_Base
+	{
+    scope=1;
+		displayName="Tailoring Workbench";
+		descriptionShort="A sewing machine on a table ready to tailor clothing";
+    model="Survivalists_Building\structures\crafting\srp_tailorworkbench.p3d";
+    attachments[]=
+		{
+			"SRP_SewingMachine",
+      "SRP_SewingThread1",
+      "SRP_SewingThread2",
+      "SRP_SewingThread3",
+      "SRP_SewingThread4",
+      "SRP_SewingThread5",
+      "TailoringPelt1",
+      "TailoringPelt2",
+      "TailoringPelt3",
+      "TailoringPelt4",
+      "TailoringPelt5",
+      "Tailoring_Leather",
+      "Tailoring_Sticks",
+      "Tailoring_Bones",
+      "Tailoring_Fabric",
+      "Tailoring_MetalWire",
+      "Tailoring_MetalPlate",
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class SewingMachine
+			{
+				name="Sewing Machine";
+				description="A belt driven sewing machine.";
+				attachmentSlots[]=
+				{
+					"SRP_SewingMachine"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};      
+      class AnimalPelts
+			{
+				name="Animal Pelts";
+				description="Animal Pelts for sewing.";
+				attachmentSlots[]=
+				{
+					"TailoringPelt1",
+          "TailoringPelt2",
+          "TailoringPelt3",
+          "TailoringPelt4",
+          "TailoringPelt5",
+				};
+				icon="set:dayz_inventory image:animal_pelt";
+			};
+      class SewingThread
+			{
+				name="Sewing Thread";
+				description="Spools of thread for embroidering fabric.";
+				attachmentSlots[]=
+				{
+					"SRP_SewingThread1",
+          "SRP_SewingThread2",
+          "SRP_SewingThread3",
+          "SRP_SewingThread4",
+          "SRP_SewingThread5",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class Misc
+			{
+				name="Misc Ingredients";
+				description="Various ingredients that enhance fabric.";
+				attachmentSlots[]=
+				{
+					"Tailoring_Leather",
+          "Tailoring_Sticks",
+          "Tailoring_Bones",
+          "Tailoring_Fabric",
+          "Tailoring_MetalWire",
+          "Tailoring_MetalPlate",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+		};
+	};
+  class SRP_PrefabCrafting_smithing: SRP_PrefabCrafting_Base
+	{
+    scope=1;
+		displayName="Anvil Workbench";
+		descriptionShort="A heavy iron anvil. Useful for forming metal into shapes.";
+    model="Survivalists_Building\structures\crafting\srp_smithingworkbench.p3d";
+    attachments[]=
+    {
+      "SRP_MetalPlate1",
+      "SRP_MetalPlate2",
+      "SRP_MetalPlate3",
+      "SRP_MetalPlate4",
+      "SRP_MetalPlate5",
+      "SRP_MetalRod1",
+      "SRP_MetalRod2",
+      "SRP_MetalRod3",
+      "SRP_MetalRod4",
+      "SRP_MetalRod5",
+      "Smithing_Leather",
+      "Smithing_MetalWire",
+      "Smithing_Fabric",
+      "Smithing_Rope",
+      "Smithing_WoodenLogs",
+      "SRP_PreciousStone1",
+      "SRP_PreciousStone2",
+      "SRP_PreciousStone3",
+      "SRP_PreciousStone4",
+      "SRP_PreciousStone5",
+    };
+    class GUIInventoryAttachmentsProps
+		{
+      class Misc
+			{
+				name="Misc";
+				description="Other ingredients";
+				attachmentSlots[]=
+				{
+          "Smithing_Leather",
+					"Smithing_MetalWire",
+          "Smithing_Fabric",
+          "Smithing_Rope",
+          "Smithing_WoodenLogs"
+				};
+				icon="set:dayz_inventory image:missing";
+			};
+			class MetalPlates
+			{
+				name="Metal Plates";
+				description="Smithable Metal Plates";
+				attachmentSlots[]=
+				{
+					"SRP_MetalPlate1",
+          "SRP_MetalPlate2",
+          "SRP_MetalPlate3",
+          "SRP_MetalPlate4",
+          "SRP_MetalPlate5",
+				};
+				icon="set:dayz_inventory image:plates";
+			};
+      class MetalRods
+			{
+				name="Metal Rods";
+				description="Smithable Metal Rods";
+				attachmentSlots[]=
+				{
+					"SRP_MetalRod1",
+          "SRP_MetalRod2",
+          "SRP_MetalRod3",
+          "SRP_MetalRod4",
+          "SRP_MetalRod5",
+				};
+				icon="set:dayz_inventory image:woodenlog";
+			};
+      class GemStones
+			{
+				name="Cut Gems";
+				description="Various rough and refined precious stones.";
+				attachmentSlots[]=
+				{
+					"SRP_PreciousStone1",
+          "SRP_PreciousStone2",
+          "SRP_PreciousStone3",
+          "SRP_PreciousStone4",
+          "SRP_PreciousStone5",
+				};
+				icon="set:dayz_inventory image:stones";
+			};
+		};
+	};
 };

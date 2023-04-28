@@ -22,9 +22,8 @@ modded class ActionConstructor
 
     actions.Insert(SRP_ActionCraftOnWorkbench);
     
-    actions.Insert(SRP_ActionMetalWorkingCraft);
-    actions.Insert(SRP_ActionCarpentryCraft);
     actions.Insert(SRP_ActionCraftAmmo);
+
     actions.Insert(ActionConvertStarterForgeKit);
     actions.Insert(ActionPourMoltenMetalIntoMold);
     actions.Insert(ActionEmptyIngotMold);
@@ -33,8 +32,6 @@ modded class ActionConstructor
     
 		actions.Insert(SRP_ActionSawPlanks); 
 
-		actions.Insert(SRP_ActionTailor); 
-		actions.Insert(SRP_ActionMetalSmith); 
 		actions.Insert(SRP_ActionHarvestCrops_All); 
 
 		actions.Insert(ActionSearchChickenCoop); 
