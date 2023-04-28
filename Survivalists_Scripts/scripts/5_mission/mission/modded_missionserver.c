@@ -3,6 +3,10 @@ modded class MissionServer
   void MissionServer()
   {
     SRPConfig config = SRPGlobals.Get();
+    if (GetGame().IsDedicatedServer())
+    {
+      config.g_OilRigGasManager.PumpStartUpCheck();
+    }
     GetDayZGame().SetSRPConfigGlobal(config);
   }
   void ~MissionServer()

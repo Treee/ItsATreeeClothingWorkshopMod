@@ -1,9 +1,14 @@
 modded class ElectronicRepairKit
 {
+  override int GetTrasformerRepairValue()
+  {
+    return Math.RandomIntInclusive(25,45);
+  }
   override void SetActions()
   {
     super.SetActions();
     AddAction(ActionSRPHackSecurityDoor);
+    AddAction(SRP_ActionRepairOilRigPump);    
   }
 };
 
@@ -268,6 +273,10 @@ class TireRepairKit_ElectronicsKit_Green extends TireRepairKit_ElectronicsKit_Co
   {
     return 0;
   }
+  override int GetTrasformerRepairValue()
+  {
+    return Math.RandomIntInclusive(55,75);
+  }
 };
 class TireRepairKit_ElectronicsKit_Yellow extends TireRepairKit_ElectronicsKit_ColorBase
 {
@@ -290,6 +299,10 @@ class TireRepairKit_ElectronicsKit_Yellow extends TireRepairKit_ElectronicsKit_C
   override int GetMinPower()
   {
     return 1;
+  }
+  override int GetTrasformerRepairValue()
+  {
+    return Math.RandomIntInclusive(65,90);
   }
 };
 class TireRepairKit_ElectronicsKit_Red extends TireRepairKit_ElectronicsKit_ColorBase
@@ -314,6 +327,10 @@ class TireRepairKit_ElectronicsKit_Red extends TireRepairKit_ElectronicsKit_Colo
   {
     return 2;
   }
+  override int GetTrasformerRepairValue()
+  {
+    return Math.RandomIntInclusive(90,125);
+  }
 };
 class TireRepairKit_ElectronicsKit_Blue extends TireRepairKit_ElectronicsKit_ColorBase
 {
@@ -337,6 +354,10 @@ class TireRepairKit_ElectronicsKit_Blue extends TireRepairKit_ElectronicsKit_Col
   {
     return 3;
   }
+  override int GetTrasformerRepairValue()
+  {
+    return Math.RandomIntInclusive(100,145);
+  }
 };
 class TireRepairKit_ElectronicsKit_Purple extends TireRepairKit_ElectronicsKit_ColorBase
 {
@@ -359,5 +380,9 @@ class TireRepairKit_ElectronicsKit_Purple extends TireRepairKit_ElectronicsKit_C
   override int GetMinPower()
   {
     return 4;
+  }
+  override int GetTrasformerRepairValue()
+  {
+    return Math.RandomIntInclusive(150,200);
   }
 };

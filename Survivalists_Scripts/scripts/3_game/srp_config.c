@@ -21,6 +21,7 @@ class SRPConfig
   float g_SRPSleepPassOutThreshold;
 
   ref SRP_BioFlowerManager g_BioFlowerManager;
+  ref SRP_OilRigGasManager g_OilRigGasManager;
 
 }
 
@@ -119,5 +120,10 @@ class SRPGlobals
     config.g_BioFlowerManager.m_BioFlowers.Insert(new SRP_BioFlowerInfo("SandyBayBiozone", 100, "5413 2 7634"));
     config.g_BioFlowerManager.m_BioFlowers.Insert(new SRP_BioFlowerInfo("NorthHavenCastleBiozone", 100, "2610 40.5 13923"));
     config.g_BioFlowerManager.m_BioFlowers.Insert(new SRP_BioFlowerInfo("AshevilleBiozone", 100, "7310.5 46 2590.5"));
+
+    config.g_OilRigGasManager = new SRP_OilRigGasManager();
+    config.g_OilRigGasManager.m_RogueWave = new SRP_OilRigGasInfo("Deepwater", 500, "1725.1899 35 12687.2", Math.RandomFloatInclusive(0,1));
+    config.g_OilRigGasManager.m_Horizon = new SRP_OilRigGasInfo("Rogue", 500, "2144.8401 35 14620.29", Math.RandomFloatInclusive(0,1));
+    config.g_OilRigGasManager.m_Deepwater = new SRP_OilRigGasInfo("Horizon", 500, "4142.5 35 15419.3", Math.RandomFloatInclusive(0,1));
   }
 };

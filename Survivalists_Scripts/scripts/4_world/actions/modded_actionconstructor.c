@@ -4,6 +4,9 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
+    actions.Insert(SRP_ActionSabotageOilRigPump);
+    actions.Insert(SRP_ActionRepairOilRigPump);
+
     actions.Insert(ActionSwitchWoodFishingLureOption);
     actions.Insert(ActionSwitchMetalFishingLureOption);
     

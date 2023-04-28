@@ -35,7 +35,7 @@ class SRP_BioFlowerInfo
   {
     int temp = m_FlowerEnergy + delta;
     // dont go negative
-    m_FlowerEnergy = Math.Max(0, temp);
+    temp = Math.Max(0, temp);
     // dont get too big
     m_FlowerEnergy = Math.Min(300, temp);
   }

@@ -17,7 +17,6 @@ modded class Hammer
 		AddAction(SRP_ActionMetalWorkingCraft);
 	}
 }
-
 modded class WoodAxe
 {
 	override void SetActions()
@@ -28,7 +27,6 @@ modded class WoodAxe
     AddAction(ActionSalvageCarWreck);
 	}
 }
-
 modded class Shovel
 {
 	override void SetActions()
@@ -39,7 +37,6 @@ modded class Shovel
 		AddAction(ActionDetach);
 	}
 }
-
 modded class SledgeHammer
 {
 	override bool IsMeleeFinisher()
@@ -57,7 +54,6 @@ modded class SledgeHammer
     RemoveAction(ActionDismantlePart);
 	}
 }
-
 modded class Hatchet
 {
 	override void SetActions()
@@ -67,7 +63,6 @@ modded class Hatchet
 		AddAction(ActionDetach);
 	}
 }
-
 modded class BaseballBat
 {
 	override void SetActions()
@@ -78,7 +73,6 @@ modded class BaseballBat
 		AddAction(ActionDetach);
 	}
 }
-
 modded class NailedBaseballBat
 {
 	override void SetActions()
@@ -89,7 +83,6 @@ modded class NailedBaseballBat
 		AddAction(ActionDetach);
 	}
 }
-
 modded class FirefighterAxe
 {
 	override void SetActions()
@@ -100,7 +93,6 @@ modded class FirefighterAxe
     AddAction(ActionSalvageCarWreck);
 	}
 }
-
 modded class Crowbar
 {
 	override void SetActions()
@@ -111,7 +103,6 @@ modded class Crowbar
     AddAction(ActionSawPlanks);
 	}
 };
-
 modded class Lockpick
 {	
 	override void SetActions()
@@ -122,7 +113,6 @@ modded class Lockpick
 		AddAction(ActionUnLockDisplayCase);
 	}
 };
-
 modded class Hacksaw
 {
 	override void SetActions()
@@ -134,7 +124,6 @@ modded class Hacksaw
 		RemoveAction(ActionDestroyCodeLockOnTent);		
   }
 };
-
 modded class HandSaw
 {
   override void SetActions()
@@ -144,7 +133,6 @@ modded class HandSaw
 		AddAction(ActionSalvageCarWreck);
   }
 };
-
 modded class Pipe
 {
   override bool IsSmeltable()
@@ -174,8 +162,16 @@ modded class PipeWrench
   {
     return Math.RandomIntInclusive(0, 2);
   }
+  override int GetTrasformerRepairValue()
+  {
+    return Math.RandomIntInclusive(10,20);
+  }
+  override void SetActions()
+  {
+    super.SetActions();
+    AddAction(SRP_ActionRepairOilRigPump);    
+  }
 };
-
 modded class MetalPlate
 {
   override bool IsSmeltable()
@@ -191,7 +187,6 @@ modded class MetalPlate
     return Math.RandomIntInclusive(0, 3);
   }
 };
-
 modded class Sickle
 {
 	override void SetActions()
@@ -200,7 +195,6 @@ modded class Sickle
 		AddAction(SRP_ActionHarvestCrops_All);
 	}
 };
-
 modded class FarmingHoe
 {
 	override void SetActions()
@@ -210,13 +204,17 @@ modded class FarmingHoe
 		AddAction(ActionSRPRakeFireplaceAshes);
 	}
 };
-
 modded class Pliers
 {	
+  override int GetTrasformerRepairValue()
+  {
+    return Math.RandomIntInclusive(10,20);
+  }
 	override void SetActions()
 	{
 		super.SetActions();
 		
 		AddAction(SRP_ActionCraftAmmo);
+    AddAction(SRP_ActionRepairOilRigPump);
 	}
-}
+};

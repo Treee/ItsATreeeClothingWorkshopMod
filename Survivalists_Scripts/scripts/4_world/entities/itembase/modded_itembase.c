@@ -607,6 +607,10 @@ modded class ItemBase
   {
     return 0;
   }
+  int GetTrasformerRepairValue()
+  {
+    return 0;
+  }
 //========================================= SELECTION FLAGGING FUNCTIONS
   bool CanAcceptPropaneTanks()
   {
