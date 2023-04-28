@@ -46,7 +46,7 @@ class SRP_SewingTable extends SRP_CraftingBench_Base
       else
         return false;
     }
-    return isFilledAndFull
+    return isFilledAndFull;
   }
   void ConsumeAllThreadSlots()
   {
