@@ -548,7 +548,7 @@ class CfgVehicles
     scope=1;
 		displayName="Printing Press";
 		descriptionShort="Hand cranked printing press.";
-    model="Survivalists_Building\structures\crafting\srp_smithingworkbench.p3d";
+    model="Survivalists_Building\structures\crafting\srp_printingpress.p3d";
 		attachments[]={"SRP_Book1"};
 	};
   class SRP_PrefabCrafting_ammocrafting: SRP_PrefabCrafting_Base
