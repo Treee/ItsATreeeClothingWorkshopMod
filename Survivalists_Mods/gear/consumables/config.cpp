@@ -1172,13 +1172,11 @@ class CfgVehicles
 		scope=2;
 		displayName="Refillable Butane Canister";
 		descriptionShort="A canister used for re-fueling gas containers";
-		overrideDrawArea="3.0";
 		varQuantityInit=20;
 		varQuantityMin=0;
 		varQuantityMax=20;
 		stackedUnit="w";
-		varQuantityDestroyOnMin=0;
-		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=1;
 	};
 
   class SRP_ToiletPaper: Inventory_Base

@@ -387,7 +387,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Ammo Workbench";
-		descriptionShort="A workbench with tools for manufacturing ammunition and repairing weaponry. OOC DEV NOTE: REDUCING STORAGE TO 80 SLOTS";
+		descriptionShort="A workbench with tools for manufacturing ammunition and repairing weaponry.";
 		model="Survivalists_Mods\gear\crafting\SRP_AmmoWorkbench.p3d";
 		useEntityHierarchy="true";
 		attachments[]=
@@ -407,7 +407,7 @@ class CfgVehicles
 		canBeDigged=0;
 		heavyItem=1;
 		weight=500;
-		itemSize[]={12,12};
+		itemSize[]={10,8};
 		itemBehaviour=0;
 		repairKitType=1;
 		physLayer="item_large";

@@ -1,31 +1,8 @@
 class SRP_SewingTable extends SRP_CraftingBench_Base
 {
-  override bool CheckPotentialRecipeMatches(out array<SRP_CraftableItem> craftableItems)
-  {        
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("", "");
-    EntityAI attachment;
-    int totalSlots = GetInventory().AttachmentCount();
-    int slotId;
-    string slotName;
-    string colorName;
-    int enumId = -1;
-    
-    for (int i = 0; i < totalSlots; i++)
-    {
-      // Print("Sending: index " + i + " with max " + totalSlots);
-      if (Class.CastTo(attachment, GetInventory().GetAttachmentFromIndex(i)))
-      {        
-        attachment.GetInventory().GetCurrentAttachmentSlotInfo(slotId, slotName);
-        colorName = attachment.ConfigGetString("color");
-        colorName.ToUpper();
-        
-        enumId = EnumTools.StringToEnum(SRP_COLOR, colorName);
-        // Print(string.Format("ingredient: %1 slot: %2 color: %3 enumId: %4 quantity: %5", attachment.GetType(), slotName, colorName, enumId, attachment.GetQuantity()));
-        craftableItem.RegisterIngredient(new SRP_ItemRequirement(slotName, enumId, attachment.GetQuantity()));
-      }
-    }
-    // craftableItem.PrintIngredients();    
-    return GetDayZGame().GetSRPTailoringRecipesGlobal().IsRecipeMatch(craftableItem, craftableItems);
+  SRP_RecipeManager GetRecipeManager()
+  {
+    return GetDayZGame().GetSRPTailoringRecipesGlobal();
   }
   override int GetCraftingDamage()
   {
@@ -70,9 +47,7 @@ class SRP_PrefabCrafting_tailoring extends SRP_SewingTable
 		super.EEInit();
     if (GetGame().IsDedicatedServer())
     {
-      ItemBase attachment;
-      attachment = GetItemOnSlot("SRP_SewingMachine");
-      if (attachment == NULL)
+      if (!GetItemOnSlot("SRP_SewingMachine"))
         GetInventory().CreateInInventory("SRP_SewingMachine");
     }
 	}
@@ -89,5 +64,13 @@ class SRP_PrefabCrafting_tailoring extends SRP_SewingTable
   override bool CanBeDeconstructed()
   {
     return false;
+  }
+};
+
+class SRP_SewingMachine extends ItemBase
+{
+  override bool IsAugmentAttachment()
+  {
+    return true;
   }
 };

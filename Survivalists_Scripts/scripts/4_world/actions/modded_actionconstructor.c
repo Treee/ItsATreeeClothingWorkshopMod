@@ -22,8 +22,6 @@ modded class ActionConstructor
 
     actions.Insert(SRP_ActionCraftOnWorkbench);
     
-    actions.Insert(SRP_ActionCraftAmmo);
-
     actions.Insert(ActionConvertStarterForgeKit);
     actions.Insert(ActionPourMoltenMetalIntoMold);
     actions.Insert(ActionEmptyIngotMold);

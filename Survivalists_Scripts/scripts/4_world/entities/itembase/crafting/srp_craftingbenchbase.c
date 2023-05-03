@@ -45,7 +45,38 @@ class SRP_CraftingBench_Base extends ItemBase
   }
   bool CheckPotentialRecipeMatches(out array<SRP_CraftableItem> craftableItems)
   {
-    return false;
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("", "");
+    EntityAI attachment;
+    int totalSlots = GetInventory().AttachmentCount();
+    int slotId;
+    int quantity;
+    string slotName;
+    string colorName;
+    int enumId = -1;
+    
+    for (int i = 0; i < totalSlots; i++)
+    {
+      // Print("Sending: index " + i + " with max " + totalSlots);
+      if (Class.CastTo(attachment, GetInventory().GetAttachmentFromIndex(i)))
+      {        
+        attachment.GetInventory().GetCurrentAttachmentSlotInfo(slotId, slotName);
+        colorName = attachment.ConfigGetString("color");
+        colorName.ToUpper();
+        
+        enumId = EnumTools.StringToEnum(SRP_COLOR, colorName);
+        // non null items with 0 quantity should be seen as 1
+        quantity = Math.Max(1, attachment.GetQuantity());
+        // Print(string.Format("item: %1 slot: %2 color: %3 enumId: %4 quantity: %5", attachment.GetType(), slotName, colorName, enumId, quantity));
+        craftableItem.RegisterIngredient(new SRP_ItemRequirement(slotName, enumId, quantity));
+      }
+    }
+    // craftableItem.PrintIngredients();    
+    return GetRecipeManager().IsRecipeMatch(craftableItem, craftableItems);
+  }
+  
+  SRP_RecipeManager GetRecipeManager()
+  {
+    return NULL;
   }
   bool HasCraftableMatches()
   {
@@ -94,20 +125,20 @@ class SRP_CraftingBench_Base extends ItemBase
       {
         if (Class.CastTo(attachment, GetInventory().FindAttachmentByName(requirement.GetAttachmentSlotName())))
         {
-          bool destroyItem = ShouldDestroyItem(attachment.GetType());
-          // do 1 hp of dmg to attachments that are not fully consumed
-          if (!destroyItem)
+          // attached augments do not get damaged
+          if (attachment.IsAugmentAttachment())
+            continue;
+          // if the item is hp reduced and is not an augment attchment
+          if (requirement.ShouldReduceHP())
+            attachment.AddHealth(requirement.GetRequiredQuantity());
+          else
           {
-            attachment.AddHealth(-1);
-          }   
-          // players that brute force recipes will find things to be most expensive.
-          int quantityToRemove = Math.Max(requirement.GetRequiredQuantity(), attachment.GetQuantity());
-          attachment.AddQuantity(-quantityToRemove);
-          if (attachment.GetQuantityMax() == 1 && quantityToRemove == 1 && destroyItem)
-          {
-            // Print("deleting attachment due to max quantity: " + attachment.GetType());
-            attachment.Delete();
-          }
+            // players that brute force recipes will find things to be most expensive.
+            int quantityToRemove = Math.Max(requirement.GetRequiredQuantity(), attachment.GetQuantity());
+            attachment.AddQuantity(-quantityToRemove);
+            if (attachment.GetQuantityMax() == 1 && quantityToRemove == 1)
+              attachment.Delete();
+          } 
         }        
       }
     }
@@ -125,23 +156,6 @@ class SRP_CraftingBench_Base extends ItemBase
   int GetCraftingDamage()
   {
     return 0;
-  }
-  bool ShouldDestroyItem(string item)
-  {
-    if (item == "SRP_SewingMachine")
-      return false;
-    if (item == "MethRecipe")
-      return false;
-    if (item == "BathSaltsRecipe")
-      return false;
-    if (item == "AcidRecipe")
-      return false;
-    if (item == "SRP_WoodDrill")
-      return false;
-    if (item == "SRP_WoodClamp")
-      return false;
-
-    return true;
   }
   bool CanAcceptTool(ItemBase item)
   {

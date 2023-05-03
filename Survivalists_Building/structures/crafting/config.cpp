@@ -551,4 +551,45 @@ class CfgVehicles
     model="Survivalists_Building\structures\crafting\srp_smithingworkbench.p3d";
 		attachments[]={"SRP_Book1"};
 	};
+  class SRP_PrefabCrafting_ammocrafting: SRP_PrefabCrafting_Base
+	{
+    scope=1;
+		displayName="Ammo Workbench";
+		descriptionShort="A workbench with tools for manufacturing ammunition and repairing weaponry.";
+    model="Survivalists_Building\structures\crafting\SRP_AmmoWorkbench.p3d";
+		attachments[]=
+		{
+			"SRP_CasePrep",
+			"SRP_AmmoPress",
+      "SRP_AmmoCasings",
+      "SRP_AmmoGunpowder",
+      "SRP_AmmoBullets",
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Tools
+			{
+				name="Tools";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_CasePrep",
+					"SRP_AmmoPress"
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+      class AmmoCrafting
+			{
+				name="AmmoCrafting";
+				description="";
+				attachmentSlots[]=
+				{
+					"SRP_AmmoCasings",
+          "SRP_AmmoGunpowder",
+          "SRP_AmmoBullets",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+		};
+	};
 };

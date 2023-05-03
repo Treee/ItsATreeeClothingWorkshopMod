@@ -54,12 +54,14 @@ class SRP_ItemRequirement
   protected string m_AttachmentSlotName;
   protected int m_RequiredColor;
   protected int m_RequiredQuantity;
+  protected bool m_ReduceHP; // flag to swap dmg from quantity to hp
 
-  void SRP_ItemRequirement(string attachmentSlotName, int requiredColor=-1, int requiredQuantity=1)
+  void SRP_ItemRequirement(string attachmentSlotName, int requiredColor=-1, int requiredQuantity=1, bool reducehp=false)
   {
     m_AttachmentSlotName = attachmentSlotName;
     m_RequiredColor = requiredColor;
     m_RequiredQuantity = requiredQuantity;
+    m_ReduceHP = reducehp;
   }
 
   bool IsRequirementMatch(SRP_ItemRequirement requirement)
@@ -99,6 +101,10 @@ class SRP_ItemRequirement
   {
     return m_RequiredQuantity;
   }
+  bool ShouldReduceHP()
+  {
+    return m_ReduceHP;
+  }
   string PrintDebug()
   {
     return string.Format("%1 || %2 || %3", GetAttachmentSlotName(), GetRequiredColor(), GetRequiredQuantity());
@@ -109,12 +115,14 @@ class SRP_CraftableItem
 {
   protected string m_DisplayName;
   protected string m_ItemName;
+  protected int m_Quantity;
   ref array<ref SRP_ItemRequirement> m_RequiredIngredients;
 
-  void SRP_CraftableItem(string itemName, string displayName)
+  void SRP_CraftableItem(string itemName, string displayName, int quantity = 1)
   {
     m_ItemName = itemName;
     m_DisplayName = displayName;
+    m_Quantity = quantity;
     if (!m_RequiredIngredients)
     {
       m_RequiredIngredients = new array<ref SRP_ItemRequirement>;
@@ -137,6 +145,10 @@ class SRP_CraftableItem
   {
     return m_ItemName;
   }
+  int GetItemQuantity()
+  {
+    return m_Quantity;
+  }
   bool CompareToOtherIngredients(SRP_CraftableItem otherCraftable)
   {
     bool isCompleteMatch = true;
@@ -148,8 +160,8 @@ class SRP_CraftableItem
       // look at all the other ingredients
       foreach(SRP_ItemRequirement otherIngredient : otherCraftable.m_RequiredIngredients)
       {
-        // Print(string.Format("Against Recipe %1 || Ingredients %2", otherCraftable.GetItemClassName(), otherIngredient.PrintDebug()));
         // if there is a match
+        // Print(string.Format("Against Matching Ingredients %1", otherIngredient.PrintDebug()));
         if (ingredient.IsRequirementMatch(otherIngredient))
         {
           // set we matched to true; break out of the inner for loop

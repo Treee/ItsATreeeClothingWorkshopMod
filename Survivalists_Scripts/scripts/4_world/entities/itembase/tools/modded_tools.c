@@ -224,7 +224,11 @@ modded class Pliers
 	{
 		super.SetActions();
 		
-		AddAction(SRP_ActionCraftAmmo);
+		AddAction(SRP_ActionCraftOnWorkbench);
     AddAction(SRP_ActionRepairOilRigPump);
 	}
+  override bool IsAmmoCraftingWorkbenchTool()
+  {
+    return true;
+  }
 };
