@@ -183,6 +183,10 @@ modded class ItemBase
   {
     return false;
   }
+  bool CanBeStoredInNotebook()
+  {
+    return false;
+  }
 	
 	override void OnRightClick()
 	{		
