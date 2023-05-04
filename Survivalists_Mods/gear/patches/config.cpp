@@ -394,6 +394,18 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa",
 		};
   };
+  class Armband_Event_Generic: Armband_ColorBase
+	{
+		scope=2;
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_co.paa",
+		};
+  };
   class Flag_Event_Generic: Flag_Base
 	{
 		scope=2;
@@ -434,6 +446,18 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
 		};
 	};
+  class Armband_Event_Espen: Armband_ColorBase
+	{
+		scope=2;
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_espen_co.paa",
+		};
+	};
   class Flag_Event_Espen: Flag_Base
 	{
 		scope=2;
@@ -463,6 +487,18 @@ class CfgVehicles
   };
 
   class SRP_DoubleArmband_Event_Stag: SRP_DoubleArmband_ColorBase
+	{
+		scope=2;
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_stag_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_stag_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_stag_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_stag_co.paa",
+			"Survivalists_Mods\gear\patches\data\template_armbend_event_stag_co.paa",
+		};
+	};
+  class Armband_Event_Stag: Armband_ColorBase
 	{
 		scope=2;
     hiddenSelectionsTextures[]=

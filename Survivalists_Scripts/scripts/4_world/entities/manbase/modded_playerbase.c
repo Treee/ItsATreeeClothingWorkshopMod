@@ -119,15 +119,18 @@ modded class PlayerBase
 		ItemBase item;
 		GetInventory().EnumerateInventory(InventoryTraversalType.PREORDER, itemsArray);
 		
+    bool ruinItems = false;
+    Clothing eventArmbands;
+    if (Class.CastTo(eventArmbands, FindAttachmentBySlotName("Armband")))
+    {
+      ruinItems = eventArmbands.IsEventArmband();
+    }
+
     string itemString = "";
 		for (int i = 0; i < itemsArray.Count(); i++)
 		{
 			Class.CastTo(item, itemsArray.Get(i));
       
-      // if (item.GetType() == "DUB_Mutation1_Empty")
-      //   continue;
-      // if (item.GetType() == "DUB_Mutation2_Empty")
-      //   continue;
 			if (item && !item.IsInherited(SurvivorBase))
       {
         if (item.HasQuantity())
@@ -138,6 +141,8 @@ modded class PlayerBase
         {
           itemString = string.Format("%1,%2", itemString, item.GetType());
         }
+        if (ruinItems)
+          item.AddHealth(-9999999);
       }
 		}
     return itemString;

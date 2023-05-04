@@ -27,4 +27,8 @@ modded class Clothing
       }
     }	
 	}
+  bool IsEventArmband()
+  {
+    return false;
+  }
 };

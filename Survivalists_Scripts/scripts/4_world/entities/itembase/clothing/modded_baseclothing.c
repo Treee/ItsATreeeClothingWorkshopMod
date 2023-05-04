@@ -203,9 +203,14 @@ class SRP_EventArmband extends Armband_ColorBase
   {
     Delete();
   }
+  override bool IsEventArmband()
+  {
+    return true;
+  }
 };
 class Armband_Event_Generic extends SRP_EventArmband{};
 class Armband_Event_Espen extends SRP_EventArmband{};
+class Armband_Event_Stag extends SRP_EventArmband{};
 
 class Flag_Event_Generic extends Flag_Base
 {
@@ -239,17 +244,17 @@ class SRP_PatchFlag_Event_Espen extends SRP_PatchFlag_ColorBase
 
 class SRP_Armband_Base extends Clothing{};
 
-class SRP_Armband_Event_Generic extends SRP_Armband_Base
+class SRP_ArmbandLeatherEvent_Base extends Clothing
 {
   override void OnWasDetached( EntityAI parent, int slot_id )
   {
     Delete();
   }
-};
-class SRP_Armband_Event_Espen extends SRP_Armband_Base
-{
-  override void OnWasDetached( EntityAI parent, int slot_id )
+  override bool IsEventArmband()
   {
-    Delete();
+    return true;
   }
 };
+class SRP_Armband_Event_Generic extends SRP_ArmbandLeatherEvent_Base{};
+class SRP_Armband_Event_Espen extends SRP_ArmbandLeatherEvent_Base{};
+class SRP_Armband_Event_Stag extends SRP_ArmbandLeatherEvent_Base{};
