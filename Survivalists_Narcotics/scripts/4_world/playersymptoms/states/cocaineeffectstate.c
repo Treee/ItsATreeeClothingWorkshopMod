@@ -27,12 +27,8 @@ class CocaineEffectSymptom extends SymptomBase
     float m_randomChance = Math.RandomFloatInclusive(0,1);
     if (m_randomChance >= 0 && m_randomChance < 0.03 && randomSymptomBuildUp >= 20) 
     {
-      m_randomChance = Math.RandomFloatInclusive(0,1);
-      if (m_randomChance < 0.3) 
-      {
-        player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_LAUGHTER);
-      } 
-      else if (m_randomChance >= 0.3 && m_randomChance < 0.6)
+      m_randomChance = Math.RandomFloatInclusive(0,1);      
+      if (m_randomChance >= 0.3 && m_randomChance < 0.6)
       {
         player.GetSymptomManager().QueueUpPrimarySymptom(SymptomIDs.SYMPTOM_HOT);
       } 
