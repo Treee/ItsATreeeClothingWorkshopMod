@@ -276,7 +276,7 @@ class CfgVehicles
   class BrewingJug_Plastic_Alcohol: Bottle_Base
 	{
 		scope=2;
-		displayName="Brewing Reclaim Jug";
+		displayName="Alcohol Brewing Reclaim Jug";
 		descriptionShort="A jug used to hold the runnoff of a still.";
 		model="DZ\structures\Furniture\Various\canister_DZ.p3d";		
 		weight=440;
@@ -286,12 +286,72 @@ class CfgVehicles
 		canBeDigged=1;
 		allowOwnedCargoManipulation=1;
 		varLiquidTypeInit=4096;
-		liquidContainerType="1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 + 65536  - (1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048) -32768";
+		liquidContainerType="4096";
 		destroyOnEmpty=0;
 		varQuantityDestroyOnMin=0;
 		varQuantityInit=0;
 		varQuantityMin=0;
 		varQuantityMax=20000;
+		varTemperatureMax=200;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,{"dz\data\data\default.rvmat"}},
+						{0.69999999,{"dz\data\data\default.rvmat"}},
+						{0.5,{"dz\data\data\default.rvmat"}},
+						{0.30000001,{"dz\data\data\default.rvmat"}},
+						{0,{"dz\data\data\default.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpPotLight
+				{
+					soundSet="pickUpPotLight_SoundSet";
+					id=796;
+				};
+				class pickUpPot
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="pot_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class BrewingJug_Plastic_Disinfectant: Bottle_Base
+	{
+		scope=2;
+		displayName="Medical Brewing Reclaim Jug";
+		descriptionShort="A jug used to hold the runnoff of a still.";
+		model="DZ\structures\Furniture\Various\canister_DZ.p3d";		
+		weight=440;
+		itemSize[]={4,3};
+		inventorySlot[]={"BrewingBarrel"};
+		stackedRandom=0;
+		canBeDigged=1;
+		allowOwnedCargoManipulation=1;
+		varLiquidTypeInit=32768;
+		liquidContainerType="32768";
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=500;
 		varTemperatureMax=200;
 		class DamageSystem
 		{

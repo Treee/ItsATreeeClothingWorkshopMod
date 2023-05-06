@@ -21,7 +21,8 @@ class CfgVehicles
 
 	class Clothing;  
   class Inventory_Base;
-  class Flag_Base;  
+  class Flag_Base; 
+  class Armband_ColorBase;
 
   //------------------------------ FLAG PATCHES
 	class SRP_PatchFlag_ColorBase: Clothing

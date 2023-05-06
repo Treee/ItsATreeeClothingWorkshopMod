@@ -68,4 +68,5 @@ class BrewingJug_Plastic_ColorBase extends Bottle_Base
 }
 
 class BrewingJug_Plastic_Alcohol extends BrewingJug_Plastic_ColorBase{};
+class BrewingJug_Plastic_Disinfectant extends BrewingJug_Plastic_ColorBase{};
 class BrewingJug_Plastic_Water extends BrewingJug_Plastic_ColorBase{};

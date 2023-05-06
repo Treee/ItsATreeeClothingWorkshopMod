@@ -592,4 +592,171 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_PrefabCrafting_alchemybrewing: SRP_PrefabCrafting_Base 
+	{
+    scope=1;
+		displayName="Brewing Still - Alchemy";
+		descriptionShort="A workbench with tools for manufacturing alchemic liquids.";
+		model="Survivalists_Building\structures\crafting\srp_brewingstill_alchemy.p3d";
+    varTemperatureMax=1000;
+    attachments[]=
+		{
+      "SRP_FuelCoal",
+      "Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+      "BrewingBarrel",
+      "BrewingBarrel1",
+      "TestTube1"
+		};
+    hiddenSelections[]={"ashes","zbytek"};
+    hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa", "Survivalists_Building\structures\crafting\data\srp_brewingstill_alchemy_ca.paa"};
+    hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stonegroundnoemit.rvmat","Survivalists_Building\structures\crafting\data\srp_brewingstill_alchemy.rvmat"};
+		class GUIInventoryAttachmentsProps
+		{
+			class Fuel
+			{
+				name="Coal";
+				description="";
+				attachmentSlots[]=
+				{
+          "SRP_FuelCoal",
+          "Firewood",
+          "WoodenStick",
+          "Rags",
+          "MedicalBandage",
+          "Paper",
+          "Bark",
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+      class Liquids
+			{
+				name="Liquid Containers";
+				description="";
+				attachmentSlots[]=
+				{
+          "TestTube1",
+          "BrewingBarrel1",
+          "BrewingBarrel",
+				};
+				icon="set:dayz_inventory image:barrel";
+			};
+    };
+	};
+  class SRP_PrefabCrafting_copperbrewing: SRP_PrefabCrafting_Base 
+	{
+    scope=1;
+		displayName="Brewing Still - Medical";
+		descriptionShort="A workbench with tools for manufacturing medical grade liquids.";
+		model="Survivalists_Building\structures\crafting\srp_brewingstill_copper.p3d";
+    varTemperatureMax=1000;
+    attachments[]=
+		{
+      "SRP_FuelCoal",
+      "Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+      "BrewingBarrel",
+      "BrewingBarrel1",
+      "SRP_DyeBottle1",
+		};
+    hiddenSelections[]={"ashes","zbytek"};
+    hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa", "Survivalists_Building\structures\crafting\data\srp_brewingstill_copper_co.paa"};
+    hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stonegroundnoemit.rvmat","Survivalists_Building\structures\crafting\data\srp_brewingstill_copper.rvmat"};
+		class GUIInventoryAttachmentsProps
+		{
+			class Fuel
+			{
+				name="Coal";
+				description="";
+				attachmentSlots[]=
+				{
+          "SRP_FuelCoal",
+          "Firewood",
+          "WoodenStick",
+          "Rags",
+          "MedicalBandage",
+          "Paper",
+          "Bark",
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+      class Liquids
+			{
+				name="Liquid Containers";
+				description="";
+				attachmentSlots[]=
+				{
+          "SRP_DyeBottle1",
+          "BrewingBarrel1",
+          "BrewingBarrel",
+				};
+				icon="set:dayz_inventory image:barrel";
+			};
+    };
+	};
+  class SRP_PrefabCrafting_alcoholbrewing: SRP_PrefabCrafting_Base 
+	{
+    scope=1;
+		displayName="Brewing Still";
+		descriptionShort="A workbench with tools for manufacturing alcohol.";
+		model="Survivalists_Building\structures\crafting\srp_brewingstill_ceramic.p3d";
+    varTemperatureMax=1000;
+    attachments[]=
+		{
+      "SRP_FuelCoal",
+      "Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+      "BrewingBarrel",
+      "BrewingBarrelTable",
+      "BrewingBarrel1",
+      "CookingEquipment"
+		};
+    hiddenSelections[]={"ashes","zbytek"};
+    hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Building\structures\crafting\data\srp_brewingstill_stone_co.paa"};
+    hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stonegroundnoemit.rvmat","Survivalists_Building\structures\crafting\data\srp_brewingstill_stone.rvmat"};
+		class GUIInventoryAttachmentsProps
+		{
+			class Fuel
+			{
+				name="Coal";
+				description="";
+				attachmentSlots[]=
+				{
+          "SRP_FuelCoal",
+          "Firewood",
+          "WoodenStick",
+          "Rags",
+          "MedicalBandage",
+          "Paper",
+          "Bark",
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+      class Liquids
+			{
+				name="Liquid Containers";
+				description="";
+				attachmentSlots[]=
+				{
+          "CookingEquipment",
+          "BrewingBarrel1",
+          "BrewingBarrel",
+          "BrewingBarrelTable",
+				};
+				icon="set:dayz_inventory image:barrel";
+			};
+    };
+	};
 };

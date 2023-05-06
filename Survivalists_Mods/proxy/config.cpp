@@ -2472,7 +2472,7 @@ class CfgSlots
   class Slot_BrewingBarrel
 	{
 		name="BrewingBarrel";
-		displayName="Brewing Container - Alcohol";
+		displayName="Brewing Container - Liquid";
 		ghostIcon="set:dayz_inventory image:barrel";
 	};
   class Slot_BrewingBarrel1

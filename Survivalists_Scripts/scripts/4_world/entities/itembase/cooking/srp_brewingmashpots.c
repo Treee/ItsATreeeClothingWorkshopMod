@@ -86,7 +86,6 @@ class BrewingPot_Mash_ColorBase extends Bottle_Base
 		RemoveAction(ActionForceDrink);
 		RemoveAction(ActionDrainLiquid);
 		RemoveAction(ActionPourLiquid);
-		//RemoveAction(ActionTransferLiquid);
 		RemoveAction(ActionEmptyCookingPot);
 		RemoveAction(ActionDrinkCookingPot);
 	}

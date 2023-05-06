@@ -170,7 +170,6 @@ class SRP_MetalBarrel_Concrete extends SRP_MetalBarrel_Colorbase
   override void SetActions()
 	{
 		super.SetActions();		
-		AddAction(ActionTransferLiquid);
 		AddAction(ActionEmptyBottleBase);
 	}
 

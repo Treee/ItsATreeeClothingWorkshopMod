@@ -325,6 +325,21 @@ class SRP_Fireplace_Transformer extends SRP_FireplaceBase
 		ProcessInvulnerabilityCheck(GetInvulnerabilityTypeString());
     m_LightDistance = 10;
   }
+  override protected void Heating()
+  {
+    // we are hot enough to be brewing
+    // Print("Geating Event " + GetTemperature());
+    if (GetTemperature() > 999)
+    {
+      if (GetHeatTimerThreshold() > -1 && GetHeatTimer() > GetHeatTimerThreshold())
+      { 
+        HandleHeatTransformation();
+        ResetHeatTimer();
+      }            
+      IncrementHeatTimer();
+    }
+    super.Heating();
+  }
   override void EECargoOut(EntityAI item)
 	{
 		super.EECargoOut(item);

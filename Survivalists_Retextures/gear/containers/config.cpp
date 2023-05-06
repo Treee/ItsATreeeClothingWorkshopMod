@@ -910,6 +910,34 @@ class CfgVehicles
     hiddenSelections[]={"center"};
     hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\STAG_Poster6_CO.paa"};
   };
+  class STAG_Poster7: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="S.T.A.G. Poster";
+    descriptionShort="Framed artwork of S.T.A.G. Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\stag_poster_wolf.paa"};
+  };
+
+  class ESPEN_Poster1: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="ESPEN Poster";
+    descriptionShort="Framed artwork of ESPEN Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\espen_scientist_sattelite.paa"};
+  };
+  class ESPEN_Poster2: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="ESPEN Poster";
+    descriptionShort="Framed artwork of ESPEN Industries. ";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\espen_branding.paa"};
+  };
 
   // ========================================== LANDSCAPE ORIENTATION
   class DUB_Gunframe_Alcoholism: DUB_Gunframe 

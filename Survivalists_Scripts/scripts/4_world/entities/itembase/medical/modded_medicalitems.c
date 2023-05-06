@@ -122,6 +122,13 @@ modded class IodineTincture
   {
     return true;
   }
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionDrainLiquid);
+		AddAction(ActionPourLiquid);
+	}
 };
 modded class VitaminBottle
 {
@@ -177,6 +184,13 @@ modded class DisinfectantAlcohol
   {
     return true;
   }
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionDrainLiquid);
+		AddAction(ActionPourLiquid);
+	}
 };
 modded class DisinfectantSpray
 {
@@ -184,6 +198,13 @@ modded class DisinfectantSpray
   {
     return true;
   }
+  override void SetActions()
+	{
+		super.SetActions();
+		
+		AddAction(ActionDrainLiquid);
+		AddAction(ActionPourLiquid);
+	}
 };
 modded class BandageDressing
 {

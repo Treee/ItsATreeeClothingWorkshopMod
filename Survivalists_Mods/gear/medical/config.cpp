@@ -19,7 +19,6 @@ class CfgVehicles
   class Edible_Base;
   class PainkillerTablets;
   class TetracyclineAntibiotics;
-  class DisinfectantAlcohol;
 
   class SRP_KitBase;
 
@@ -85,6 +84,15 @@ class CfgVehicles
   class DisinfectantSpray: Edible_Base
 	{
 		itemSize[]={1,2};
+    liquidContainerType="32768";
+  };
+  class DisinfectantAlcohol: Edible_Base
+  {
+    liquidContainerType="32768";
+  };
+  class IodineTincture: Edible_Base
+	{
+    liquidContainerType="32768";
   };
   class BloodBagFull: Inventory_Base
 	{
