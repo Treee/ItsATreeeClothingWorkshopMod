@@ -50,6 +50,17 @@ class SRP_BurningMdfr: ModifierBase
 
   void BurnPlayer(PlayerBase player)
   {
+    DUB_Cybernetic_Base mutation;
+    if (Class.CastTo(mutation, player.GetItemOnSlot("Mutation1")))
+    {
+      if (mutation.IsArms())
+        return;
+    }
+    if (Class.CastTo(mutation, player.GetItemOnSlot("Mutation2")))
+    {
+      if (mutation.IsArms())
+        return;
+    } 
     player.AddHealth("", "Blood", -250); //do 350 blood dmg
     player.AddHealth("", "", -25); //do 35 dmg
     player.GetBleedingManagerServer().AttemptAddBleedingSourceBySelection(GetDamageZones_Light().GetRandomElement());
