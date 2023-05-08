@@ -321,8 +321,6 @@ class CfgSoundShaders
 		};
 	};
 
-
-
   class SRPRadio_LocalViolence_Drowning_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\Drowning_v1.ogg",1}};
@@ -360,6 +358,22 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\islandgeorge_cloppingcoconuts.ogg",1}};
 	};
+  class SRPRadio_IslandGeorge_SelfEsteem_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\IslandGeorge_Self_Esteem.ogg",1}};
+	};
+  class SRPRadio_IslandGeorge_RidersRepair_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\IslandGeorge_Riders_Repair.ogg",1}};
+	};
+  class SRPRadio_IslandGeorge_OceanBlue_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\IslandGeorge_Ocean_Blue.ogg",1}};
+	};
+  class SRPRadio_IslandGeorge_Automatic_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\IslandGeorge_Automatic.ogg",1}};
+	};
 
   class SRPRadio_ProbabLeigh_Labyrinth_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
@@ -368,6 +382,48 @@ class CfgSoundShaders
   class SRPRadio_ProbabLeigh_DancesWithAliens_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ProbabLeigh_DancesWithAliens.ogg",1}};
+	};
+
+  class SRPRadio_ThruItAll_LA_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ThruItAllLA.ogg",1}};
+	};
+  class SRPRadio_ThruItAll_SameTShirt_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ThruItAll_Same_T_Shirt_Different_Eon.ogg",1}};
+	};
+  class SRPRadio_ThruItAll_Irrelevant_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ThruItAll_Irrelevant.ogg",1}};
+	};
+  class SRPRadio_ThruItAll_Simulation_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ThruItAll_Simulation.ogg",1}};
+	};
+  class SRPRadio_ThruItAll_Tangled_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\ThruItAll_Tangled.ogg",1}};
+	};
+
+  class SRPRadio_HunterMyers_Pray_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\HunterMyers_Pray_for_Rain.ogg",1}};
+	};
+  class SRPRadio_HunterMyers_Half_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\HunterMyers_Half_Past_3.ogg",1}};
+	};
+  class SRPRadio_HunterMyers_EveryDay_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\HunterMyers_Every_Day_With_You.ogg",1}};
+	};
+  class SRPRadio_HunterMyers_Damn_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\HunterMyers_Damn_Shame.ogg",1}};
+	};
+  class SRPRadio_HunterMyers_Charcoal_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\HunterMyers_Charcoal.ogg",1}};
 	};
 
   class SRPRadio_AcousticGuitar_TheStranger_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
@@ -755,6 +811,106 @@ class CfgSoundSets
 			"SRPRadio_IslandGeorge_CloppingCoconuts_Shader1"
 		};
 	};
+  class SRPRadio_IslandGeorge_SelfEsteem_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_SelfEsteem_Shader1"
+		};
+	};
+  class SRPRadio_IslandGeorge_RidersRepair_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_RidersRepair_Shader1"
+		};
+	};
+  class SRPRadio_IslandGeorge_OceanBlue_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_OceanBlue_Shader1"
+		};
+	};
+  class SRPRadio_IslandGeorge_Automatic_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_Automatic_Shader1"
+		};
+	};
+
+  class SRPRadio_ThruItAll_LA_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_ThruItAll_LA_Shader1"
+		};
+	};
+  class SRPRadio_ThruItAll_SameTShirt_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_ThruItAll_SameTShirt_Shader1"
+		};
+	};
+  class SRPRadio_ThruItAll_Irrelevant_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_ThruItAll_Irrelevant_Shader1"
+		};
+	};
+  class SRPRadio_ThruItAll_Simulation_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_ThruItAll_Simulation_Shader1"
+		};
+	};
+  class SRPRadio_ThruItAll_Tangled_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_ThruItAll_Tangled_Shader1"
+		};
+	};
+
+  class SRPRadio_HunterMyers_Pray_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_HunterMyers_Pray_Shader1"
+		};
+	};
+  class SRPRadio_HunterMyers_Half_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_HunterMyers_Half_Shader1"
+		};
+	};
+  class SRPRadio_HunterMyers_EveryDay_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_HunterMyers_EveryDay_Shader1"
+		};
+	};
+  class SRPRadio_HunterMyers_Damn_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_HunterMyers_Damn_Shader1"
+		};
+	};
+  class SRPRadio_HunterMyers_Charcoal_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_HunterMyers_Charcoal_Shader1"
+		};
+	};
 
   class SRPRadio_ProbabLeigh_Labyrinth_SoundSet1
 	{
@@ -770,7 +926,6 @@ class CfgSoundSets
 			"SRPRadio_ProbabLeigh_DancesWithAliens_Shader1"
 		};
 	};
-
 
   class SRPRadio_AcousticGuitar_TheStranger_SoundSet1
 	{

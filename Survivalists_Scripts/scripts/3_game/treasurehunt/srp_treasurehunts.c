@@ -318,9 +318,9 @@ class SRP_DynamicTreasureHunt
       "AmmoBox_762x39_20Rnd",
       "AmmoBox_762x54_20Rnd",      
 			"SRP_Mining_RawOre_Zinc",
-			"SRP_MiningackInjector_Espen",
-      "SRP_Stim_RawOre_Silver",
-      "SRP_StimPPackInjector_Stag",
+      "SRP_Mining_RawOre_Silver",
+			"SRP_StimPackInjector_Espen",
+      "SRP_StimPackInjector_Stag",
       "SRP_StimPackInjector_LocknSons",
     };
   }

@@ -1173,6 +1173,150 @@ class CfgVehicles
 			soundSet="SRPRadio_IslandGeorge_CloppingCoconuts_SoundSet1";
 		};
 	};
+  class SRPRadio_CassetteTape_IslandGeorge_SelfEsteem: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Self Esteem";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_SelfEsteem_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_IslandGeorge_RidersRepair: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Riders Repair Advert";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_RidersRepair_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_IslandGeorge_OceanBlue: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Ocean Blue";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_OceanBlue_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_IslandGeorge_Automatic: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Automatic";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_Automatic_SoundSet1";
+		};
+	};
+// -------------------------------- ThruItAll
+  class SRPRadio_CassetteTape_ThruItAll_LA: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="LA";
+		descriptionShort="Music Tape - Credit | Thru It All | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk?si=14c6f1f0ca5a4e1d";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ThruItAll_LA_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_ThruItAll_SameTShirt: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Same T Shirt";
+		descriptionShort="Music Tape - Credit | Thru It All | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk?si=14c6f1f0ca5a4e1d";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ThruItAll_SameTShirt_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_ThruItAll_Irrelevant: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Irrelevant";
+		descriptionShort="Music Tape - Credit | Thru It All | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk?si=14c6f1f0ca5a4e1d";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ThruItAll_Irrelevant_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_ThruItAll_Simulation: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Simulation";
+		descriptionShort="Music Tape - Credit | Thru It All | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk?si=14c6f1f0ca5a4e1d";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ThruItAll_Simulation_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_ThruItAll_Tangled: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Tangled";
+		descriptionShort="Music Tape - Credit | Thru It All | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk?si=14c6f1f0ca5a4e1d";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_ThruItAll_Tangled_SoundSet1";
+		};
+	};
+// -------------------------------- Hunter Myers
+
+  class SRPRadio_CassetteTape_HunterMyers_Pray: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Pray for Rain";
+		descriptionShort="Music Tape - Credit | Hunters Myers | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_HunterMyers_Pray_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_HunterMyers_Half: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Half Past 3";
+		descriptionShort="Music Tape - Credit | Hunters Myers | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_HunterMyers_Half_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_HunterMyers_EveryDay: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Every Day With You";
+		descriptionShort="Music Tape - Credit | Hunters Myers | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_HunterMyers_EveryDay_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_HunterMyers_Damn: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Damn Shame";
+		descriptionShort="Music Tape - Credit | Hunters Myers | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_HunterMyers_Damn_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_HunterMyers_Charcoal: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Charcoal";
+		descriptionShort="Music Tape - Credit | Hunters Myers | https://open.spotify.com/artist/7FxFFtAwriucdNyhhdQ9wk";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_HunterMyers_Charcoal_SoundSet1";
+		};
+	};
+
 // -------------------------------- ProbabLeigh
   class SRPRadio_CassetteTape_ProbabLeigh_Labyrinth: SRPRadio_CassetteTape_Base
 	{
