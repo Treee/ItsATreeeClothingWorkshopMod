@@ -7,7 +7,6 @@ modded class ElectronicRepairKit
   override void SetActions()
   {
     super.SetActions();
-    AddAction(ActionSRPHackSecurityDoor);
     AddAction(SRP_ActionRepairOilRigPump);    
   }
 };
