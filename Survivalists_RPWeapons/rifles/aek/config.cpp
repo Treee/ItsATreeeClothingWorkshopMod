@@ -23,7 +23,7 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="AK-12";
-		descriptionShort="S.T.A.G. Industries. The AK-12 is a Soviet rifle chambered in 5.45x39.";
+		descriptionShort="S.T.A.G. Industries. The AK-12 is a Soviet rifle chambered in 5.56x45.";
 		model="Survivalists_RPWeapons\rifles\aek\STG_AK12.p3d";
 		hiddenSelections[]=
 		{
