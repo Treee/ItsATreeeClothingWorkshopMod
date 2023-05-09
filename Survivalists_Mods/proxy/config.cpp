@@ -2521,37 +2521,37 @@ class CfgSlots
   class Slot_SRP_ElectricalWire1
 	{
 		name = "SRP_ElectricalWire1";
-		displayName = "Electrical Wires";
+		displayName = "Digit Identifier";
 		ghostIcon="set:dayz_inventory image:metalwire";
 	};
   class Slot_SRP_ElectricalWire2
 	{
 		name = "SRP_ElectricalWire2";
-		displayName = "Electrical Wires";
+		displayName = "Digit Identifier";
 		ghostIcon="set:dayz_inventory image:metalwire";
 	};
   class Slot_SRP_ElectricalWire3
 	{
 		name = "SRP_ElectricalWire3";
-		displayName = "Electrical Wires";
+		displayName = "Digit Identifier";
 		ghostIcon="set:dayz_inventory image:metalwire";
 	};
   class Slot_SRP_ElectricalWire4
 	{
 		name = "SRP_ElectricalWire4";
-		displayName = "Electrical Wires";
+		displayName = "Multiplier";
 		ghostIcon="set:dayz_inventory image:metalwire";
 	};
   class Slot_SRP_ElectricalWire5
 	{
 		name = "SRP_ElectricalWire5";
-		displayName = "Electrical Wires";
+		displayName = "Tolerance";
 		ghostIcon="set:dayz_inventory image:metalwire";
 	};
   class Slot_SRP_ElectricalWire6
 	{
 		name = "SRP_ElectricalWire6";
-		displayName = "Electrical Wires";
+		displayName = "Temperature Coefficient";
 		ghostIcon="set:dayz_inventory image:metalwire";
 	};
   class Slot_SRP_CopperWire1

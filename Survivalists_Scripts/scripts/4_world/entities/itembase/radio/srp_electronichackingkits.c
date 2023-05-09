@@ -15,164 +15,97 @@ modded class SRP_ElectronicsJammer_Base
 {
   bool HasHackingKitAttached()
   {
-    return (GetItemOnSlot("SRP_HackingKit1")||GetItemOnSlot("SRP_HackingKit2")||GetItemOnSlot("SRP_HackingKit3")||GetItemOnSlot("SRP_HackingKit4"));
+    if (GetItemOnSlot("SRP_HackingKit1") || GetItemOnSlot("SRP_HackingKit2") || GetItemOnSlot("SRP_HackingKit3") || GetItemOnSlot("SRP_HackingKit4"))    
+      return true;
+    return false;
   }
 
   int GetPriorityHackingKitCurrent()
   {
-    ItemBase hackingKit;
-    TireRepairKit_ElectronicsKit_ColorBase castedObj;
-    hackingKit = GetItemOnSlot("SRP_HackingKit4");
-    if (hackingKit)
-    {
-      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
-      return castedObj.GetMeterRead();
-    }
-    hackingKit = GetItemOnSlot("SRP_HackingKit3");
-    if (hackingKit)
-    {
-      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
-      return castedObj.GetMeterRead();
-    }
-
-    hackingKit = GetItemOnSlot("SRP_HackingKit2");
-    if (hackingKit)
-    {
-      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
-      return castedObj.GetMeterRead();
-    }
-
-    hackingKit = GetItemOnSlot("SRP_HackingKit1");
-    if (hackingKit)
-    {
-      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
-      return castedObj.GetMeterRead();
-    }
+    TireRepairKit_ElectronicsKit_ColorBase hackingKit;
+    if (Class.CastTo(hackingKit, GetItemOnSlot("SRP_HackingKit4")))
+      return hackingKit.GetMeterRead();
+    if (Class.CastTo(hackingKit, GetItemOnSlot("SRP_HackingKit3")))
+      return hackingKit.GetMeterRead();
+    if (Class.CastTo(hackingKit, GetItemOnSlot("SRP_HackingKit2")))
+      return hackingKit.GetMeterRead();
+    if (Class.CastTo(hackingKit, GetItemOnSlot("SRP_HackingKit1")))
+      return hackingKit.GetMeterRead();
     return -1;
   }
 
   ItemBase GetPriorityHackingKit()
   {
     ItemBase hackingKit;
-    TireRepairKit_ElectronicsKit_ColorBase castedObj;
-    hackingKit = GetItemOnSlot("SRP_HackingKit4");
-    if (hackingKit)
-    {
-      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
-      return castedObj;
-    }
-    hackingKit = GetItemOnSlot("SRP_HackingKit3");
-    if (hackingKit)
-    {
-      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
-      return castedObj;
-    }
-
-    hackingKit = GetItemOnSlot("SRP_HackingKit2");
-    if (hackingKit)
-    {
-      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
-      return castedObj;
-    }
-
-    hackingKit = GetItemOnSlot("SRP_HackingKit1");
-    if (hackingKit)
-    {
-      castedObj = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingKit);
-      return castedObj;
-    }
-    return null;
+    if (Class.CastTo(hackingKit, GetItemOnSlot("SRP_HackingKit4")))
+      return hackingKit;
+    if (Class.CastTo(hackingKit, GetItemOnSlot("SRP_HackingKit3")))
+      return hackingKit;
+    if (Class.CastTo(hackingKit, GetItemOnSlot("SRP_HackingKit2")))
+      return hackingKit;
+    if (Class.CastTo(hackingKit, GetItemOnSlot("SRP_HackingKit1")))
+      return hackingKit;
+    return NULL;
   }
 
   void RemovePriorityHackingKit()
   {    
-    ItemBase wire1 = GetItemOnSlot("SRP_ElectricalWire1");
-    if (wire1)
-    {
-      wire1.Delete();
-    }
-    ItemBase wire2 = GetItemOnSlot("SRP_ElectricalWire2");
-    if (wire2)
-    {
-      wire2.Delete();
-    }
-    ItemBase wire3 = GetItemOnSlot("SRP_ElectricalWire3");
-    if (wire3)
-    {
-      wire3.Delete();
-    }
-    ItemBase wire4 = GetItemOnSlot("SRP_ElectricalWire4");
-    if (wire4)
-    {
-      wire4.Delete();
-    }
-    ItemBase wire5 = GetItemOnSlot("SRP_ElectricalWire5");
-    if (wire5)
-    {
-      wire5.Delete();
-    }
-    ItemBase wire6 = GetItemOnSlot("SRP_ElectricalWire6");
-    if (wire6)
-    {
-      wire6.Delete();
-    }
+    ItemBase wire;
+    if (Class.CastTo(wire, GetItemOnSlot("SRP_ElectricalWire1")))
+      wire.Delete();
+    if (Class.CastTo(wire, GetItemOnSlot("SRP_ElectricalWire2")))
+      wire.Delete();
+    if (Class.CastTo(wire, GetItemOnSlot("SRP_ElectricalWire3")))
+      wire.Delete();
+    if (Class.CastTo(wire, GetItemOnSlot("SRP_ElectricalWire4")))
+      wire.Delete();
+    if (Class.CastTo(wire, GetItemOnSlot("SRP_ElectricalWire5")))
+      wire.Delete();
+    if (Class.CastTo(wire, GetItemOnSlot("SRP_ElectricalWire6")))
+      wire.Delete();
 
     ItemBase hackingKit;
-    hackingKit = GetItemOnSlot("SRP_HackingKit4");
-    if (hackingKit)
-    {
+    if (Class.CastTo(hackingKit, GetPriorityHackingKit()))
       hackingKit.Delete();
-      return;
-    }
-    hackingKit = GetItemOnSlot("SRP_HackingKit3");
-    if (hackingKit)
-    {
-      hackingKit.Delete();
-      return;
-    }
-
-    hackingKit = GetItemOnSlot("SRP_HackingKit2");
-    if (hackingKit)
-    {
-      hackingKit.Delete();
-      return;
-    }
-
-    hackingKit = GetItemOnSlot("SRP_HackingKit1");
-    if (hackingKit)
-    {
-      hackingKit.Delete();
-      return;
-    }
   }
 
   bool IsSolved()
   {
-    bool isSolved = true;
-    ItemBase wire1 = GetItemOnSlot("SRP_ElectricalWire1");        
-    ItemBase wire2 = GetItemOnSlot("SRP_ElectricalWire2");        
-    ItemBase wire3 = GetItemOnSlot("SRP_ElectricalWire3");        
-    ItemBase wireMultiplier = GetItemOnSlot("SRP_ElectricalWire4");        
-    ItemBase wireTempCoefficient = GetItemOnSlot("SRP_ElectricalWire5");        
-    ItemBase wireTolerance = GetItemOnSlot("SRP_ElectricalWire6");   
-    ItemBase hackingkitIB = GetPriorityHackingKit();     
-    if (wire1 && wire2 && wire3 && wireMultiplier && wireTempCoefficient && wireTolerance && hackingkitIB)
-    {
-      TireRepairKit_ElectronicsKit_ColorBase hackingKit = TireRepairKit_ElectronicsKit_ColorBase.Cast(hackingkitIB);
-      string number = string.Format("%1%2%3", wire1.GetResistorDigit(), wire2.GetResistorDigit(), wire3.GetResistorDigit());      
-      int wireResistance = number.ToInt() * wireMultiplier.GetResistorMultiplier(); // 10KOhms
-      
-      int toleranceDelta = hackingKit.GetCurrentRequirement() * hackingKit.GetErrorTolerance();
-      // we are within range of tolerance
-      isSolved &= (wireResistance < (hackingKit.GetCurrentRequirement() + toleranceDelta) && wireResistance > (hackingKit.GetCurrentRequirement() - toleranceDelta));
-      isSolved &= wireTempCoefficient >= hackingKit.GetTemperatureCoefficientRequirement();
-      isSolved &= wireTolerance <= hackingKit.GetErrorTolerance();
-    }
-    else
-    {
-      isSolved &= false;
-    }
-    return isSolved;
+    ItemBase wire1;
+    if (!Class.CastTo(wire1, GetItemOnSlot("SRP_ElectricalWire1")))
+      return false;
+    ItemBase wire2;
+    if (!Class.CastTo(wire2, GetItemOnSlot("SRP_ElectricalWire2")))
+      return false;
+    ItemBase wire3;
+    if (!Class.CastTo(wire3, GetItemOnSlot("SRP_ElectricalWire3")))
+      return false;
+    ItemBase wireMultiplier;
+    if (!Class.CastTo(wireMultiplier, GetItemOnSlot("SRP_ElectricalWire4")))
+      return false;
+    ItemBase wireTempCoefficient;     
+    if (!Class.CastTo(wireTempCoefficient, GetItemOnSlot("SRP_ElectricalWire5")))
+      return false;
+    ItemBase wireTolerance;
+    if (!Class.CastTo(wireTolerance, GetItemOnSlot("SRP_ElectricalWire6")))
+      return false;
+    TireRepairKit_ElectronicsKit_ColorBase hackingKit;
+    if (!Class.CastTo(hackingKit, GetPriorityHackingKit()))
+      return false;
+
+    string number = string.Format("%1%2%3", wire1.GetResistorDigit(), wire2.GetResistorDigit(), wire3.GetResistorDigit());      
+    int wireResistance = number.ToInt() * (Math.Pow(10, wireMultiplier.GetResistorDigit()) / 100); // 10KOhms
+    int toleranceDelta = hackingKit.GetCurrentRequirement() * hackingKit.GetErrorTolerance();
+    // we are within range of tolerance
+    int lowerTolerance = hackingKit.GetCurrentRequirement() - toleranceDelta;
+    int upperTolerance = hackingKit.GetCurrentRequirement() + toleranceDelta;
+    if (wireResistance < lowerTolerance || wireResistance > upperTolerance)
+      return false;
+    if (wireTempCoefficient.GetResistorTemperaturCoeffcient() < hackingKit.GetTemperatureCoefficientRequirement())
+      return false;
+    if (wireTolerance.GetResistorTolerance() > hackingKit.GetErrorTolerance())
+      return false;
+    return true;
   }
 };
 
@@ -195,11 +128,11 @@ class TireRepairKit_ElectronicsKit_ColorBase extends ElectronicRepairKit
     int power = Math.RandomIntInclusive(GetMinPower(),GetMaxPower());
     // raise 10 to the power of the random number
     // multiply concat numbers by power of ten
-    m_RequiredCurrent = digits.ToInt() * Math.Pow(10, power); // 10KOhms
+    m_RequiredCurrent = digits.ToInt() * (Math.Pow(10, power) / 100); // 10KOhms
     // pick random tolerance from list
     m_ErrorTolerance = GetErrorTolerances().GetRandomElement();
     m_RequiredTemperatureCoefficient = GetTemperatureCoefficients().GetRandomElement();
-    // Print(string.Format("digits: %1 number: %2 power: %3 multiplier: %4 requiredCurrent: %5 tolerance: %6", digits, digits.ToInt(), power, Math.Pow(10, power), m_RequiredCurrent, m_ErrorTolerance));
+    // Print(string.Format("digits: %1 number: %2 power: %3 multiplier: %4 requiredCurrent: %5 tolerance: %6 tempcoef: %7 type: %8", digits, digits.ToInt(), power, Math.Pow(10, power), m_RequiredCurrent, m_ErrorTolerance, m_RequiredTemperatureCoefficient, GetType()));
   }
   override bool CanDetachAttachment (EntityAI parent)
 	{

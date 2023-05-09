@@ -1203,7 +1203,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Basic Hacking Protocol";
-		descriptionShort="A basic anti hacking tool that carries an additional current between 1 and 10k Volts to an internal explosive. A variable rate tolerance cipher rotates between 1, and 2 percent. The circuitry runs below 20C and requires shielding of 15C.";
+		descriptionShort="**REMOVE AT YOUR OWN RISK** A basic anti hacking tool that carries an additional current between 1 and 10k Volts to an internal explosive. The circuitry runs below 20C and requires shielding of 15C. A variable rate tolerance cipher rotates between 1, and 2 percent.";
     color="green";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_green_co.paa"};
@@ -1212,7 +1212,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Advanced Hacking Protocol";
-		descriptionShort="An anti hacking tool that carries an additional current between 1 and 100k Volts to an internal explosive. A variable rate tolerance cipher rotates between 1, and 2 percent. The circuitry runs below 20C and requires shielding of 15C.";
+		descriptionShort="**REMOVE AT YOUR OWN RISK** An anti hacking tool that carries an additional current between 1 and 100k Volts to an internal explosive. The circuitry runs below 20C and requires shielding of 15C. A variable rate tolerance cipher rotates between 1, and 2 percent.";
     color="yellow";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_yellow_co.paa"};
@@ -1221,7 +1221,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Expert Hacking Protocol";
-		descriptionShort="An expert anti hacking tool that carries an additional current between 100 and 100k Volts to an internal explosive. A variable rate tolerance cipher rotates between 1, and 2 percent. The circuitry runs between 25 and 50C.";
+		descriptionShort="**REMOVE AT YOUR OWN RISK** An expert anti hacking tool that carries an additional current between 100 and 100k Volts to an internal explosive. The circuitry runs between 25 and 50C. A variable rate tolerance cipher rotates between 1, and 2 percent.";
     color="red";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_red_co.paa"};
@@ -1230,7 +1230,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Master Hacking Protocol";
-		descriptionShort="A master anti hacking tool that carries an additional current between 1k and 1M Volts to an internal explosive. A variable rate tolerance cipher rotates between 0.1, 0.25, and 0.5 percent. The circuitry runs between 15 and 50C.";
+		descriptionShort="**REMOVE AT YOUR OWN RISK** A master anti hacking tool that carries an additional current between 1k and 1M Volts to an internal explosive. The circuitry runs between 15 and 50C. A variable rate tolerance cipher rotates between 0.1, 0.25, and 0.5 percent.";
     color="blue";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_blue_co.paa"};
@@ -1239,7 +1239,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Supreme Hacking Protocol";
-		descriptionShort="A supreme anti hacking tool that carries an additional current between 10k and 1M Volts to an internal explosive. A variable rate tolerance cipher rotates between 0.1, 0.25, and 0.5 percent. The circuitry runs between 50 and 100C.";
+		descriptionShort="**REMOVE AT YOUR OWN RISK** A supreme anti hacking tool that carries an additional current between 10k and 1M Volts to an internal explosive. The circuitry runs between 50 and 100C. A variable rate tolerance cipher rotates between 0.1, 0.25, and 0.5 percent.";
     color="purple";
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Mods\gear\tools\data\electronichacking_kit_purple_co.paa"};

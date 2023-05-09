@@ -168,25 +168,17 @@ class SRP_DismantleElectronicJammers_RemoveHackingKit extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{    
-    SRP_ElectronicsJammer_Base jammer = SRP_ElectronicsJammer_Base.Cast(ingredients[0]);
-    if (jammer && jammer.HasHackingKitAttached())
+    SRP_ElectronicsJammer_Base jammer;
+    if (Class.CastTo(jammer, ingredients[0]) && jammer.HasHackingKitAttached())
     {
       if (jammer.IsSolved())
-      {
         jammer.RemovePriorityHackingKit();
-      }
       else
-      {
-        float chance = Math.RandomIntInclusive(1,20);
-        if (chance >= 16) 
-        {
-          player.GetInventory().CreateInInventory("SRP_DrugExplosion");
-          PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
-          if (m_AdminLog)
-          {
-            m_AdminLog.DirectAdminLogPrint("Player Died To Explosion by diffusing a radio jammer. Nat 20 roll");
-          }
-        }
+      {       
+        player.GetInventory().CreateInInventory("SRP_DrugExplosion");
+        PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
+        if (m_AdminLog)
+          m_AdminLog.DirectAdminLogPrint("Player attempted to dismantle radio jammer and failed.");
       }
     }
 		Debug.Log("SRP_DismantleElectronicJammers_RemoveHackingKit: Recipe Do method called. Type: " +ingredients[0].GetType(),"recipes");
