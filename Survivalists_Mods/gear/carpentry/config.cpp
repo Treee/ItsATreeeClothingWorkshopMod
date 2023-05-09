@@ -1238,7 +1238,7 @@ class CfgVehicles
   {
 		scope=2;
     model="Survivalists_Mods\gear\carpentry\srp_letters_o.p3d";
-    color=" o";
+    color="o";
   };
   class SRP_Letter_P: SRP_Letter_Colorbase
   {
