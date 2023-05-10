@@ -80,16 +80,12 @@ class CfgVehicles
 		weight=10;
     varTemperatureMax=100;
     itemSize[]={1,3};
-    inventorySlot[]=
+    inventorySlot[]+=
     {
       "Dynamite1",
       "Dynamite2",
       "Dynamite3",
-      "Dynamite4",
-      "VestGrenadeA",
-			"VestGrenadeB",
-			"VestGrenadeC",
-			"VestGrenadeD"
+      "Dynamite4"
     };
 		hiddenSelections[]= {"zbytek"};
 		hiddenSelectionsTextures[]= {

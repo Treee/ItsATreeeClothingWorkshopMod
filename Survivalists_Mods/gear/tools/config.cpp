@@ -1195,7 +1195,7 @@ class CfgVehicles
 		descriptionShort="The beginnings of a hacking kit used to harden radio jammers.";
     color="kit";
     hiddenSelections[]={"zbytek"};
-    attachments[]={"TruckBattery", "VestGrenadeA", "SRP_CopperWire1", "SRP_ElectricalWire1","SRP_ElectricalWire2"};
+    attachments[]={"TruckBattery", "SRP_Grenade1", "IEDExplosiveA", "SRP_MaterialSpool_CopperWire", "SRP_ElectricalWire1","SRP_ElectricalWire2"};
     hiddenSelectionsTextures[]={"DZ\vehicles\parts\data\tire_repair_kit_co.paa"};
 	};
 

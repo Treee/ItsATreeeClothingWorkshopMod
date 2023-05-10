@@ -125,63 +125,43 @@ class Craft_SRP_HackingKit_ColorBase extends RecipeBase
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    bool canCraft = false;
     if (ingredients[0].IsCraftingKit())
     {
       ItemBase battery = ingredients[0].GetItemOnSlot("TruckBattery");
-      ItemBase grenade = ingredients[0].GetItemOnSlot("VestGrenadeA");
-      ItemBase copperWire = ingredients[0].GetItemOnSlot("SRP_CopperWire1");
-      ItemBase wire1 = ingredients[0].GetItemOnSlot("SRP_ElectricalWire1");
-      ItemBase wire2 = ingredients[0].GetItemOnSlot("SRP_ElectricalWire2");
-      canCraft |= grenade != null;
-      if (wire1)
-      {
-        if (GetRequiredWire1Color() != "")
-        {
-          canCraft &= wire1.GetColor() == GetRequiredWire1Color();
-        }
-        else
-        {
-          canCraft &= true;
-        }
-      }
-      else
-      {
-        canCraft &= false;
-      }
-      if (wire2)
-      {
-        if (GetRequiredWire2Color() != "")
-        {
-          canCraft &= wire2.GetColor() == GetRequiredWire2Color();
-        }
-        else
-        {
-          canCraft &= true;
-        }
-      }
-      else
-      {
-        canCraft &= false;
-      }
-      if (battery)
-      {
-        canCraft &= battery.GetQuantity() >= GetRequiredBatteryQuantity();
-      }
-      else
-      {
-        canCraft &= false;
-      }
-      if (copperWire)
-      {
-        canCraft &= copperWire.GetQuantity() >= GetRequiredCopperQuantity();
-      }
-      else
-      {
-        canCraft &= false;
-      }
+      if (!Class.CastTo(battery, ingredients[0].GetItemOnSlot("TruckBattery")))
+        return false;
+      if (battery.GetQuantity() < GetRequiredBatteryQuantity())
+        return false;
+      
+      ItemBase grenade;
+      ItemBase grenade1;
+      if (!Class.CastTo(grenade, ingredients[0].GetItemOnSlot("SRP_Grenade1")) && !Class.CastTo(grenade1, ingredients[0].GetItemOnSlot("IEDExplosiveA")))
+        return false;
+
+      
+      ItemBase copperWire;
+      if (!Class.CastTo(copperWire, ingredients[0].GetItemOnSlot("SRP_MaterialSpool_CopperWire")))
+        return false;
+      if (copperWire.GetQuantity() < GetRequiredCopperQuantity())
+        return false;
+
+      ItemBase wire1;
+      if (!Class.CastTo(wire1, ingredients[0].GetItemOnSlot("SRP_ElectricalWire1")))
+        return false;
+      if (GetRequiredWire1Color() != "")
+        if (wire1.GetColor() != GetRequiredWire1Color())
+          return false;
+      
+      ItemBase wire2;
+      if (!Class.CastTo(wire2, ingredients[0].GetItemOnSlot("SRP_ElectricalWire2")))
+        return false;
+      if (GetRequiredWire2Color() != "")
+        if (wire2.GetColor() != GetRequiredWire2Color())
+          return false;
+      
+      return true;
     }
-    return canCraft;
+    return false;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
@@ -223,7 +203,15 @@ class Craft_SRP_HackingKit_Green extends Craft_SRP_HackingKit_ColorBase
   }
   override int GetRequiredCopperQuantity()
   {
-    return 20;
+    return 10;
+  }
+  override string GetRequiredWire1Color()
+  {
+    return "green";
+  }
+  override string GetRequiredWire2Color()
+  {
+    return "green";
   }
 };
 class Craft_SRP_HackingKit_Yellow extends Craft_SRP_HackingKit_ColorBase
@@ -241,7 +229,15 @@ class Craft_SRP_HackingKit_Yellow extends Craft_SRP_HackingKit_ColorBase
   }
   override int GetRequiredCopperQuantity()
   {
-    return 35;
+    return 20;
+  }
+  override string GetRequiredWire1Color()
+  {
+    return "yellow";
+  }
+  override string GetRequiredWire2Color()
+  {
+    return "yellow";
   }
 };
 class Craft_SRP_HackingKit_Red extends Craft_SRP_HackingKit_ColorBase
@@ -259,9 +255,13 @@ class Craft_SRP_HackingKit_Red extends Craft_SRP_HackingKit_ColorBase
   }
   override int GetRequiredCopperQuantity()
   {
-    return 60;
+    return 25;
   }
   override string GetRequiredWire1Color()
+  {
+    return "red";
+  }
+  override string GetRequiredWire2Color()
   {
     return "red";
   }
@@ -281,9 +281,13 @@ class Craft_SRP_HackingKit_Blue extends Craft_SRP_HackingKit_ColorBase
   }
   override int GetRequiredCopperQuantity()
   {
-    return 85;
+    return 29;
   }
   override string GetRequiredWire1Color()
+  {
+    return "blue";
+  }
+  override string GetRequiredWire2Color()
   {
     return "blue";
   }
@@ -303,7 +307,7 @@ class Craft_SRP_HackingKit_Purple extends Craft_SRP_HackingKit_ColorBase
   }
   override int GetRequiredCopperQuantity()
   {
-    return 100;
+    return 35;
   }
   override string GetRequiredWire1Color()
   {
