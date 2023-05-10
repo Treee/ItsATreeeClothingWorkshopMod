@@ -195,6 +195,226 @@ class CfgVehicles
 			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
 		};
 	};
+  class SRP_MaterialsSpool_BlackWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Black Wire Spool";
+		attachments[]={"SRP_MaterialSpool_BlackWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_rope_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_BrownWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Brown Wire Spool";
+		attachments[]={"SRP_MaterialSpool_BrownWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_copper_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_RedWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Red Wire Spool";
+		attachments[]={"SRP_MaterialSpool_RedWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_red_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_red_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_red_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_red_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_red_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_OrangeWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Orange Wire Spool";
+		attachments[]={"SRP_MaterialSpool_OrangeWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_orange_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_orange_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_orange_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_orange_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_orange_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_YellowWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Yellow Wire Spool";
+		attachments[]={"SRP_MaterialSpool_YellowWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_yellow_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_yellow_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_yellow_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_yellow_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_yellow_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_GreenWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Green Wire Spool";
+		attachments[]={"SRP_MaterialSpool_GreenWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_green_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_green_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_green_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_green_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_green_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_BlueWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Blue Wire Spool";
+		attachments[]={"SRP_MaterialSpool_BlueWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_blue_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_blue_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_blue_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_blue_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_blue_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_PurpleWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Purple Wire Spool";
+		attachments[]={"SRP_MaterialSpool_PurpleWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_purple_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_purple_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_purple_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_purple_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_purple_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_GreyWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="Grey Wire Spool";
+		attachments[]={"SRP_MaterialSpool_GreyWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_grey_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_grey_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_grey_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_grey_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_grey_co.paa",
+		};
+	};
+  class SRP_MaterialsSpool_WhiteWire: SRP_MaterialsSpool_ColorBase
+	{
+		scope=2;
+		displayName="White Wire Spool";
+		attachments[]={"SRP_MaterialSpool_WhiteWire"};
+		hiddenSelections[]=
+		{
+			"socket_1_plugged",
+			"cord_plugged",
+			"placing",
+			"cord_folded",
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\cable_reel_white_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_white_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_white_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_white_co.paa",
+			"Survivalists_Mods\gear\containers\data\cable_reel_white_co.paa",
+		};
+	};
   class SRP_MaterialsSpool_Rope: SRP_MaterialsSpool_ColorBase
 	{
 		scope=2;

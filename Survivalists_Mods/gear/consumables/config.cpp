@@ -640,8 +640,16 @@ class CfgVehicles
       "SRP_ElectricalWire4",
       "SRP_ElectricalWire5",
       "SRP_ElectricalWire6",
+      "SRP_StackedElectricalWire1",
+      "SRP_StackedElectricalWire2",
     };
     color="base";
+    canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=100;
+    varStackMax=1;
+		varQuantityDestroyOnMin=1;
 		hiddenSelections[]=
 		{
 			"att_battery_car",
@@ -770,12 +778,6 @@ class CfgVehicles
 		displayName="Raw Copper Wire";
     descriptionShort="Copper wire spun from molten copper ingots.";
     color="copper";
-    canBeSplit=1;
-		varQuantityInit=1;
-		varQuantityMin=0;
-		varQuantityMax=100;
-    varStackMax=1;
-		varQuantityDestroyOnMin=1;
     inventorySlot[]=
 		{
 			"SRP_CopperWire1",
@@ -800,6 +802,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Black";
     descriptionShort="Digit: 0 Multiplier: 1 Tolerance: N/A Temperature Coefficient: N/A";
     color="black";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_BlackWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -819,6 +825,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Brown";
     descriptionShort="Digit: 1 Multiplier: 10 Tolerance: 1% Temperature Coefficient: 100C";
     color="brown";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_BrownWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -838,6 +848,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Red";
     descriptionShort="Digit: 2 Multiplier: 100 Tolerance: 2% Temperature Coefficient: 50C";    
     color="red";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_RedWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -857,6 +871,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Orange";
     descriptionShort="Digit: 3 Multiplier: 1K Tolerance: N/A Temperature Coefficient: 15C";
     color="orange";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_OrangeWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -876,6 +894,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Yellow";
     descriptionShort="Digit: 4 Multiplier: 10K Tolerance: N/A Temperature Coefficient: 25C";
     color="yellow";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_YellowWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -895,6 +917,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Green";
     descriptionShort="Digit: 5 Multiplier: 100K Tolerance: 0.5% Temperature Coefficient: N/A";
     color="green";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_GreenWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -914,6 +940,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Blue";
     descriptionShort="Digit: 6 Multiplier: 1M Tolerance: 0.25% Temperature Coefficient: N/A";
     color="blue";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_BlueWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -933,6 +963,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Purple";
     descriptionShort="Digit: 7 Multiplier: 10M Tolerance: 0.01% Temperature Coefficient: N/A";
     color="purple";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_PurpleWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -952,6 +986,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - Grey";
     descriptionShort="Digit: 8 Multiplier: N/A Tolerance: 0.05% Temperature Coefficient: N/A";
     color="grey";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_GreyWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"
@@ -971,6 +1009,10 @@ class CfgVehicles
 		displayName="Electronics Wiring - White";
     descriptionShort="Digit: 9 Multiplier: N/A Tolerance: N/A Temperature Coefficient: N/A";    
     color="white";
+    inventorySlot[]+=
+		{
+      "SRP_MaterialSpool_WhiteWire"
+		};
     hiddenSelections[]=
 		{			
 			"rolled"

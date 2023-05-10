@@ -1,8 +1,8 @@
-class Craft_SRP_MaterialSpool_Base extends RecipeBase
+class Craft_SRP_MaterialSpool extends RecipeBase
 {
 	override void Init()
 	{
-		m_Name = "Craft Material Spool - Base";	// action name in game
+		m_Name = "Craft Material Spool";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
@@ -28,7 +28,9 @@ class Craft_SRP_MaterialSpool_Base extends RecipeBase
 		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2	
-		// InsertIngredient(1,"DUB_Leatherstrip"); //  secondary ingredient
+		InsertIngredient(1,"MetalWire_ColorBase"); //  secondary ingredient
+		InsertIngredient(1,"MetalWire"); //  secondary ingredient
+		InsertIngredient(1,"Rope"); //  secondary ingredient
 		
 		m_IngredientAddHealth[1] = 0;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
@@ -37,13 +39,13 @@ class Craft_SRP_MaterialSpool_Base extends RecipeBase
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//result
-		// AddResult("SRP_LeatherPouch_Default");	// recipe result
+		AddResult("SRP_MaterialsSpool_");	// recipe result
 		
 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
 		m_ResultSetQuantity[0] = -1;			// result quantity
 		m_ResultSetHealth[0] = -1;			// -1 = do nothing
 		m_ResultInheritsHealth[0] = -1;		// -1 = do nothing
-		m_ResultInheritsColor[0] = -1;		// -1 = do nothing
+		m_ResultInheritsColor[0] = 1;		// -1 = do nothing
 		m_ResultToInventory[0] = -2;		// -1 = do nothing
 		m_ResultUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by soft skillson this result
 		m_ResultReplacesIngredient[0] = -1;	// -1 = do nothing
@@ -56,43 +58,44 @@ class Craft_SRP_MaterialSpool_Base extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
+    ItemBase ingredient;
+    if (Class.CastTo(ingredient, ingredients[1]))
+    {
+      string itemYield = "";
+      if (ingredient.GetType() == "Rope")
+        itemYield = "SRP_MaterialsSpool_Rope";
+      else if (ingredient.GetType() == "MetalWire")
+        itemYield = "SRP_MaterialsSpool_MetalWire";
+      else
+        itemYield = string.Format("SRP_MaterialsSpool_%1Wire", ingredient.GetColor());
+      GetGame().CreateObjectEx( itemYield , player.GetPosition(), ECE_PLACE_ON_SURFACE );
+    }
 		Debug.Log("Craft_SRP_MaterialSpool_Base Recipe Do method called: " + m_Name,"recipes");
 	}
 };
 
-class Craft_SRP_MaterialSpool_Rope extends Craft_SRP_MaterialSpool_Base
-{
-	override void Init()
-	{
-    super.Init();
-    m_Name = "Craft Material Spool - Rope";	// action name in game
-		//ingredient 2	
-		InsertIngredient(1,"Rope"); //  secondary ingredient
-		//result
-		AddResult("SRP_MaterialsSpool_Rope");	// recipe result
-	}
-};
-class Craft_SRP_MaterialSpool_MetalWire extends Craft_SRP_MaterialSpool_Base
-{
-	override void Init()
-	{
-    super.Init();
-    m_Name = "Craft Material Spool - Metal Wire";	// action name in game
-		//ingredient 2	
-		InsertIngredient(1,"MetalWire"); //  secondary ingredient
-		//result
-		AddResult("SRP_MaterialsSpool_MetalWire");	// recipe result
-	}
-};
-class Craft_SRP_MaterialSpool_MetalWire_Copper extends Craft_SRP_MaterialSpool_Base
-{
-	override void Init()
-	{
-    super.Init();
-    m_Name = "Craft Material Spool - Copper Wire";	// action name in game
-		//ingredient 2	
-		InsertIngredient(1,"MetalWire_Copper"); //  secondary ingredient
-		//result
-		AddResult("SRP_MaterialsSpool_CopperWire");	// recipe result
-	}
-};
+
+// class Craft_SRP_MaterialSpool_MetalWire extends Craft_SRP_MaterialSpool_Base
+// {
+// 	override void Init()
+// 	{
+//     super.Init();
+//     m_Name = "Craft Material Spool - Metal Wire";	// action name in game
+// 		//ingredient 2	
+// 		InsertIngredient(1,"MetalWire"); //  secondary ingredient
+// 		//result
+// 		AddResult("SRP_MaterialsSpool_MetalWire");	// recipe result
+// 	}
+// };
+// class Craft_SRP_MaterialSpool_MetalWire_Copper extends Craft_SRP_MaterialSpool_Base
+// {
+// 	override void Init()
+// 	{
+//     super.Init();
+//     m_Name = "Craft Material Spool - Copper Wire";	// action name in game
+// 		//ingredient 2	
+// 		InsertIngredient(1,"MetalWire_Copper"); //  secondary ingredient
+// 		//result
+// 		AddResult("SRP_MaterialsSpool_CopperWire");	// recipe result
+// 	}
+// };
