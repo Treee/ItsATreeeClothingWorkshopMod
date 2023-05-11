@@ -562,6 +562,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_Craft_AlcoholMash_Kit);	
 
       RegisterRecipe(new SRP_Craft_AddToMashPot_Fruit);		
+      RegisterRecipe(new SRP_Craft_AddToMashPot_Sugars);		
       
       RegisterRecipe(new SRP_Craft_BrandAlcoholDrink_Wine);		
       RegisterRecipe(new SRP_Craft_BrandAlcoholDrink_Beer);		

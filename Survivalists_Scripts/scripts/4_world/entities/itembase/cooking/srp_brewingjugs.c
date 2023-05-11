@@ -2,7 +2,7 @@ class BrewingJug_Plastic_ColorBase extends Bottle_Base
 {
 	void BrewingJug_Plastic_ColorBase()
 	{
-		m_LiquidEmptyRate = 200;
+		m_LiquidEmptyRate = 250;
 	}
 	
 	override bool IsContainer()
@@ -58,7 +58,7 @@ class BrewingJug_Plastic_ColorBase extends Bottle_Base
 		RemoveAction(ActionDrink);
 		RemoveAction(ActionForceDrink);
 
-		// AddAction(ActionExtinguishFireplaceByLiquid);
+		AddAction(SRP_SwapBrewingJug);
 		// AddAction(ActionFillBottleBase);
 		// AddAction(ActionDrainLiquid);
 		// AddAction(ActionPourLiquid);
@@ -69,4 +69,5 @@ class BrewingJug_Plastic_ColorBase extends Bottle_Base
 
 class BrewingJug_Plastic_Alcohol extends BrewingJug_Plastic_ColorBase{};
 class BrewingJug_Plastic_Disinfectant extends BrewingJug_Plastic_ColorBase{};
+class BrewingJug_Plastic_Gasoline extends BrewingJug_Plastic_ColorBase{};
 class BrewingJug_Plastic_Water extends BrewingJug_Plastic_ColorBase{};

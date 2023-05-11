@@ -721,7 +721,8 @@ class CfgVehicles
       "BrewingBarrel",
       "BrewingBarrelTable",
       "BrewingBarrel1",
-      "CookingEquipment"
+      "CookingEquipment",
+      "SRP_RawTar"
 		};
     hiddenSelections[]={"ashes","zbytek"};
     hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Building\structures\crafting\data\srp_brewingstill_stone_co.paa"};
@@ -750,13 +751,32 @@ class CfgVehicles
 				description="";
 				attachmentSlots[]=
 				{
-          "CookingEquipment",
           "BrewingBarrel1",
           "BrewingBarrel",
           "BrewingBarrelTable",
 				};
 				icon="set:dayz_inventory image:barrel";
 			};
+      class Alcohol
+			{
+				name="Alcohol Ingredients";
+				description="";
+				attachmentSlots[]=
+				{
+          "CookingEquipment"
+				};
+				icon="set:dayz_inventory image:barrel";
+			};
+      class Gasoline
+			{
+				name="Gasoline Ingredients";
+				description="";
+				attachmentSlots[]=
+				{
+          "SRP_RawTar"
+				};
+				icon="set:dayz_inventory image:barrel";
+			};      
     };
 	};
 };

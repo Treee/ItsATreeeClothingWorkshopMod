@@ -45,6 +45,7 @@ modded class Shovel
 		AddAction(ActionBuildPart);
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
+    AddAction(SRP_ActionDigTarSands);
 	}
 }
 modded class SledgeHammer

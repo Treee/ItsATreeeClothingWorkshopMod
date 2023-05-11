@@ -183,7 +183,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Chunk of Coke";
 		descriptionShort="Chunk of Coke";
-    color="coke";
+    color="coke";    
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -191,6 +191,23 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_coke_co.paa"
+		};
+	};
+  class SRP_Mining_StoneChunk_Tar: SRP_Mining_StoneChunk_ColorBase
+	{
+		scope=2;
+		displayName="Chunk of Oily Tar";
+		descriptionShort="Chunk of Oily Tar";
+    color="tar";
+    inventorySlot[]={"SRP_RawTar"};
+    varQuantityMax=100;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\stone_tar_co.paa"
 		};
 	};
 

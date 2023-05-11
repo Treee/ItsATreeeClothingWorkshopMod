@@ -4,6 +4,9 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
+    actions.Insert(SRP_ActionDigTarSands);
+    actions.Insert(SRP_SwapBrewingJug);
+
     actions.Insert(SRP_ActionSabotageOilRigPump);
     actions.Insert(SRP_ActionRepairOilRigPump);
 

@@ -86,11 +86,53 @@ class SRP_BrewingWorkbench_Copper extends SRP_BrewingWorkbench
 };
 class SRP_BrewingWorkbench_Ceramic extends SRP_BrewingWorkbench
 {
-  override void HandleHeatTransformation(){}
+  override void HandleHeatTransformation()
+  {    
+    ItemBase waterJug = GetItemOnSlot("BrewingBarrel1");
+    if (!Class.CastTo(waterJug, GetItemOnSlot("BrewingBarrel1")))
+      return;
+    int waterTotal = GetWaterJugConsumptionTotal();
+
+    ItemBase alcoholJug;
+    if (!Class.CastTo(alcoholJug, GetItemOnSlot("BrewingBarrel")))
+      return;
+    int brewingResultTotal = GetAlcoholJugConsumptionTotal();
+
+    ItemBase potMash;
+    int mashTotal;
+    if (Class.CastTo(potMash, GetItemOnSlot("CookingEquipment")))
+    {
+      mashTotal = GetPotMashConsumptionTotal();
+      if (alcoholJug.GetLiquidType() != LIQUID_BEER)
+        return;
+    }
+    else if (Class.CastTo(potMash, GetItemOnSlot("SRP_RawTar")))
+    {
+      mashTotal = GetPotMashConsumptionTotal() - 1;
+      brewingResultTotal = brewingResultTotal / 4;
+      if (alcoholJug.GetLiquidType() != LIQUID_GASOLINE)
+        return;
+    }
+    else
+      return;
+      
+    
+    if (waterJug.GetQuantity() > Math.AbsInt(waterTotal) && potMash.GetQuantity() > Math.AbsInt(mashTotal))
+    {
+      waterJug.AddQuantity(waterTotal);
+      potMash.AddQuantity(mashTotal);
+      
+      int nextQuantity = alcoholJug.GetQuantity() + brewingResultTotal;
+      brewingResultTotal = Math.Min(nextQuantity, alcoholJug.GetQuantityMax());
+      alcoholJug.SetQuantity(brewingResultTotal);
+      // Print("Brewing alcohol!!!");
+      // play a sound
+    }
+  }
 
   override int GetHeatTimerThreshold()
   {
-    return 300;//5mins
+    return 800;//5mins
     // return 10;//5mins
   }
   override int GetWaterJugConsumptionTotal()
@@ -99,11 +141,11 @@ class SRP_BrewingWorkbench_Ceramic extends SRP_BrewingWorkbench
   }
   override int GetAlcoholJugConsumptionTotal()
   {  
-    return Math.RandomIntInclusive(500,850);
+    return Math.RandomIntInclusive(150,250);
   }
   override int GetPotMashConsumptionTotal()
   {
-    return -1;
+    return -3;
   }
   override bool CanBeDeconstructed()
   {
@@ -266,33 +308,42 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
   override void HandleHeatTransformation()
   {    
     ItemBase waterJug = GetItemOnSlot("BrewingBarrel1");
-    if (!waterJug)
+    if (!Class.CastTo(waterJug, GetItemOnSlot("BrewingBarrel1")))
       return;
-
-    ItemBase alcoholJug = GetItemOnSlot("BrewingBarrel");
-    if (!alcoholJug)
-      return;
-
-    ItemBase potMash = GetItemOnSlot("CookingEquipment");
-    if (!potMash)
-      return;
-
-    // Print("pot mash exists");
     int waterTotal = GetWaterJugConsumptionTotal();
-    int alcoholTotal = GetAlcoholJugConsumptionTotal();
-    int mashTotal = GetPotMashConsumptionTotal();
 
+    ItemBase alcoholJug;
+    if (!Class.CastTo(alcoholJug, GetItemOnSlot("BrewingBarrel")))
+      return;
+    int brewingResultTotal = GetAlcoholJugConsumptionTotal();
+
+    ItemBase potMash;
+    int mashTotal;
+    if (Class.CastTo(potMash, GetItemOnSlot("CookingEquipment")))
+    {
+      mashTotal = GetPotMashConsumptionTotal();
+      if (alcoholJug.GetLiquidType() != LIQUID_BEER)
+        return;
+    }
+    else if (Class.CastTo(potMash, GetItemOnSlot("SRP_RawTar")))
+    {
+      mashTotal = GetPotMashConsumptionTotal() - 1;
+      brewingResultTotal = brewingResultTotal / 4;
+      if (alcoholJug.GetLiquidType() != LIQUID_GASOLINE)
+        return;
+    }
+    else
+      return;
+      
+    
     if (waterJug.GetQuantity() > Math.AbsInt(waterTotal) && potMash.GetQuantity() > Math.AbsInt(mashTotal))
     {
       waterJug.AddQuantity(waterTotal);
       potMash.AddQuantity(mashTotal);
       
-      // clamp to max jug size      
-      if (alcoholJug.GetQuantityMax() < (alcoholJug.GetQuantity() + alcoholTotal))
-      {
-        alcoholTotal = alcoholJug.GetQuantityMax() - alcoholJug.GetQuantity();
-      }
-      alcoholJug.AddQuantity(alcoholTotal);
+      int nextQuantity = alcoholJug.GetQuantity() + brewingResultTotal;
+      brewingResultTotal = Math.Min(nextQuantity, alcoholJug.GetQuantityMax());
+      alcoholJug.SetQuantity(brewingResultTotal);
       // Print("Brewing alcohol!!!");
       // play a sound
     }
@@ -301,10 +352,7 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
 	{
 		super.EEInit();
     if (GetGame().IsDedicatedServer())
-    {
-      if (!GetItemOnSlot("BrewingBarrel"))
-        GetInventory().CreateInInventory("BrewingJug_Plastic_Alcohol");
-      
+    {      
       if (!GetItemOnSlot("BrewingBarrel1"))
         GetInventory().CreateInInventory("BrewingJug_Plastic_Water");
       
@@ -316,8 +364,6 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
 	{
 		if(attachment)
     {
-      if (attachment.GetType() == "BrewingJug_Plastic_Alcohol")
-        return false;
       if (attachment.GetType() == "BrewingJug_Plastic_Water")
         return false;
       if (attachment.GetType() == "BrewingTable")
@@ -325,6 +371,23 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
     }
 		return super.CanReleaseAttachment(attachment);
 	}
+  override int GetHeatTimerThreshold()
+  {
+    return 800;//5mins
+    // return 10;//5mins
+  }
+  override int GetWaterJugConsumptionTotal()
+  {
+    return -Math.RandomIntInclusive(150,375);
+  }
+  override int GetAlcoholJugConsumptionTotal()
+  {  
+    return Math.RandomIntInclusive(200,550);
+  }
+  override int GetPotMashConsumptionTotal()
+  {
+    return -Math.RandomIntInclusive(1,7);
+  }
   override bool CanBeDeconstructed()
   {
     return false;

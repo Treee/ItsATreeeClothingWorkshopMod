@@ -393,6 +393,66 @@ class CfgVehicles
 			};
 		};
 	};
+  class BrewingJug_Plastic_Gasoline: Bottle_Base
+	{
+		scope=2;
+		displayName="Gasoline Brewing Reclaim Jug";
+		descriptionShort="A jug used to hold the runnoff of a still.";
+		model="DZ\structures\Furniture\Various\canister_DZ.p3d";		
+		weight=440;
+		itemSize[]={4,3};
+		inventorySlot[]={"BrewingBarrel"};
+		stackedRandom=0;
+		canBeDigged=1;
+		allowOwnedCargoManipulation=1;
+		varLiquidTypeInit=8192;
+		liquidContainerType="8192";
+		destroyOnEmpty=0;
+		varQuantityDestroyOnMin=0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=10000;
+		varTemperatureMax=200;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,{"dz\data\data\default.rvmat"}},
+						{0.69999999,{"dz\data\data\default.rvmat"}},
+						{0.5,{"dz\data\data\default.rvmat"}},
+						{0.30000001,{"dz\data\data\default.rvmat"}},
+						{0,{"dz\data\data\default.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpPotLight
+				{
+					soundSet="pickUpPotLight_SoundSet";
+					id=796;
+				};
+				class pickUpPot
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="pot_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
   class BrewingJug_Plastic_Water: Bottle_Base
 	{
 		scope=2;

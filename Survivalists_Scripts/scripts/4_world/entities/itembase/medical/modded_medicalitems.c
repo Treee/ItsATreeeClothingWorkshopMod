@@ -106,9 +106,10 @@ modded class Morphine
 };
 modded class TetracyclineAntibiotics
 {
-  override void EOnInit(IEntity other, int extra)
+  override void EEOnCECreate()
 	{
-    int randomAmount = Math.RandomIntInclusive(1, GetQuantityMax());
+    int max = GetQuantityMax() / 2;
+    int randomAmount = Math.RandomIntInclusive(1, max);
     SetQuantity(randomAmount);
 	}
   override bool IsMedicalItem()
@@ -132,9 +133,10 @@ modded class IodineTincture
 };
 modded class VitaminBottle
 {
-  override void EOnInit(IEntity other, int extra)
+  override void EEOnCECreate()
 	{
-    int randomAmount = Math.RandomIntInclusive(1, 12);
+    int max = GetQuantityMax() / 4;
+    int randomAmount = Math.RandomIntInclusive(1, max);
     SetQuantity(randomAmount);
 	}
   override bool IsMedicalItem()
@@ -144,9 +146,10 @@ modded class VitaminBottle
 };
 modded class PainkillerTablets
 {
-  override void EOnInit(IEntity other, int extra)
+  override void EEOnCECreate()
 	{
-    int randomAmount = Math.RandomIntInclusive(1, GetQuantityMax());
+    int max = GetQuantityMax() / 2;
+    int randomAmount = Math.RandomIntInclusive(1, max);
     SetQuantity(randomAmount);
 	}
   override bool IsMedicalItem()
@@ -156,9 +159,10 @@ modded class PainkillerTablets
 };
 modded class CharcoalTablets
 {
-  override void EOnInit(IEntity other, int extra)
+  override void EEOnCECreate()
 	{
-    int randomAmount = Math.RandomIntInclusive(1, GetQuantityMax());
+    int max = GetQuantityMax() / 2;
+    int randomAmount = Math.RandomIntInclusive(1, max);
     SetQuantity(randomAmount);
 	}
   override bool IsMedicalItem()
@@ -168,9 +172,10 @@ modded class CharcoalTablets
 };
 modded class PurificationTablets
 {
-  override void EOnInit(IEntity other, int extra)
+  override void EEOnCECreate()
 	{
-    int randomAmount = Math.RandomIntInclusive(1, GetQuantityMax());
+    int max = GetQuantityMax() / 2;
+    int randomAmount = Math.RandomIntInclusive(1, max);
     SetQuantity(randomAmount);
 	}
   override bool IsMedicalItem()

@@ -167,3 +167,31 @@ class SRP_Craft_AddToMashPot_Fruit extends SRP_Craft_AddToMashPot_Base
     Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called: " + m_Name,"recipes");
 	}
 };
+class SRP_Craft_AddToMashPot_Sugars extends SRP_Craft_AddToMashPot_Base
+{
+	override void Init()
+	{
+    super.Init();
+		m_Name = "Add To Mash Pot - Sugars";
+
+    m_IngredientAddQuantity[0] = 10;// 0 = do nothing
+		InsertIngredient(0,"BrewingPot_Mash_Fruit");//you can insert multiple ingredients this way
+
+    m_MinQuantityIngredient[1] = 100;//-1 = disable check
+		m_IngredientAddQuantity[1] = -100;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
+
+    InsertIngredient(1,"BoxCerealCrunchin_FlakedCorn");//you can insert multiple ingredients this way
+    InsertIngredient(1,"BoxCerealCrunchin_Hops");//you can insert multiple ingredients this way
+    InsertIngredient(1,"BoxCerealCrunchin_Barley");//you can insert multiple ingredients this way
+	}
+  override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+	{
+		return true;
+	}
+
+	override void Do(ItemBase ingredients[], PlayerBase player, array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
+	{		
+    Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called: " + m_Name,"recipes");
+	}
+};

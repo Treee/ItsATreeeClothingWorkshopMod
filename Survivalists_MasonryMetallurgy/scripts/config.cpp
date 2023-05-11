@@ -101,6 +101,13 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=4;
   };
+
+  class Slot_SRP_RawTar
+  {
+		name="SRP_RawTar";
+		displayName="Raw Tar";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
 };
 
 class CfgNonAIVehicles
