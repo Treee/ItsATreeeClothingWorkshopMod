@@ -761,6 +761,16 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_DismantleElectronicJammers_Enhanced);
       RegisterRecipe(new SRP_DismantleElectronicJammers_RemoveHackingKit);
 
+      RegisterRecipe(new Craft_SRP_Fuse_1);
+      RegisterRecipe(new Craft_SRP_Fuse_2);
+      RegisterRecipe(new Craft_SRP_Fuse_3);
+      RegisterRecipe(new Craft_SRP_Fuse_4);
+      RegisterRecipe(new Craft_SRP_Fuse_5);
+      RegisterRecipe(new Craft_SRP_Fuse_6);
+      RegisterRecipe(new Craft_SRP_Fuse_7);
+      RegisterRecipe(new Craft_SRP_Fuse_8);
+      RegisterRecipe(new Craft_SRP_Fuse_9);
+
     //==========================================================Tools
       RegisterRecipe(new Craft_SRP_Heatpack);
 

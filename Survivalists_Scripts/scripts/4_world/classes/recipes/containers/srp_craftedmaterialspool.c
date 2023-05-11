@@ -39,13 +39,13 @@ class Craft_SRP_MaterialSpool extends RecipeBase
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//result
-		AddResult("SRP_MaterialsSpool_");	// recipe result
+		// AddResult("SRP_MaterialsSpool_");	// recipe result
 		
 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
 		m_ResultSetQuantity[0] = -1;			// result quantity
 		m_ResultSetHealth[0] = -1;			// -1 = do nothing
 		m_ResultInheritsHealth[0] = -1;		// -1 = do nothing
-		m_ResultInheritsColor[0] = 1;		// -1 = do nothing
+		m_ResultInheritsColor[0] = 0;		// -1 = do nothing
 		m_ResultToInventory[0] = -2;		// -1 = do nothing
 		m_ResultUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by soft skillson this result
 		m_ResultReplacesIngredient[0] = -1;	// -1 = do nothing
@@ -67,35 +67,9 @@ class Craft_SRP_MaterialSpool extends RecipeBase
       else if (ingredient.GetType() == "MetalWire")
         itemYield = "SRP_MaterialsSpool_MetalWire";
       else
-        itemYield = string.Format("SRP_MaterialsSpool_%1Wire", ingredient.GetColor());
+        itemYield = "SRP_MaterialsSpool_ElectricalWire";
       GetGame().CreateObjectEx( itemYield , player.GetPosition(), ECE_PLACE_ON_SURFACE );
     }
 		Debug.Log("Craft_SRP_MaterialSpool_Base Recipe Do method called: " + m_Name,"recipes");
 	}
 };
-
-
-// class Craft_SRP_MaterialSpool_MetalWire extends Craft_SRP_MaterialSpool_Base
-// {
-// 	override void Init()
-// 	{
-//     super.Init();
-//     m_Name = "Craft Material Spool - Metal Wire";	// action name in game
-// 		//ingredient 2	
-// 		InsertIngredient(1,"MetalWire"); //  secondary ingredient
-// 		//result
-// 		AddResult("SRP_MaterialsSpool_MetalWire");	// recipe result
-// 	}
-// };
-// class Craft_SRP_MaterialSpool_MetalWire_Copper extends Craft_SRP_MaterialSpool_Base
-// {
-// 	override void Init()
-// 	{
-//     super.Init();
-//     m_Name = "Craft Material Spool - Copper Wire";	// action name in game
-// 		//ingredient 2	
-// 		InsertIngredient(1,"MetalWire_Copper"); //  secondary ingredient
-// 		//result
-// 		AddResult("SRP_MaterialsSpool_CopperWire");	// recipe result
-// 	}
-// };

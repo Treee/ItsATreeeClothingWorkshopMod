@@ -804,7 +804,11 @@ class CfgVehicles
     color="black";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_BlackWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -827,7 +831,11 @@ class CfgVehicles
     color="brown";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_BrownWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -850,7 +858,11 @@ class CfgVehicles
     color="red";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_RedWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -873,7 +885,11 @@ class CfgVehicles
     color="orange";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_OrangeWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -896,7 +912,11 @@ class CfgVehicles
     color="yellow";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_YellowWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -919,7 +939,11 @@ class CfgVehicles
     color="green";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_GreenWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -942,7 +966,11 @@ class CfgVehicles
     color="blue";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_BlueWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -965,7 +993,11 @@ class CfgVehicles
     color="purple";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_PurpleWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -988,7 +1020,11 @@ class CfgVehicles
     color="grey";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_GreyWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			
@@ -1011,7 +1047,11 @@ class CfgVehicles
     color="white";
     inventorySlot[]+=
 		{
-      "SRP_MaterialSpool_WhiteWire"
+      "SRP_MaterialSpool_ElectricalWire1",
+      "SRP_MaterialSpool_ElectricalWire2",
+      "SRP_MaterialSpool_ElectricalWire3",
+      "SRP_MaterialSpool_ElectricalWire4",
+      "SRP_MaterialSpool_ElectricalWire5",
 		};
     hiddenSelections[]=
 		{			

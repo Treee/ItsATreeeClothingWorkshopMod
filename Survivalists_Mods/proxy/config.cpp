@@ -330,75 +330,40 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:metalwire";
     stackMax=35; // max stack wire is 1
 	};
-  class Slot_SRP_MaterialSpool_BlackWire
+  class Slot_SRP_MaterialSpool_ElectricalWire1
 	{
-		name="SRP_MaterialSpool_BlackWire";
-		displayName="Black Wire";
+		name="SRP_MaterialSpool_ElectricalWire1";
+		displayName="Electrical Wire";
 		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
+    stackMax=100; // max stack wire is 1
 	};
-  class Slot_SRP_MaterialSpool_BrownWire
+  class Slot_SRP_MaterialSpool_ElectricalWire2
 	{
-		name="SRP_MaterialSpool_BrownWire";
-		displayName="Brown Wire";
+		name="SRP_MaterialSpool_ElectricalWire2";
+		displayName="Electrical Wire";
 		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
+    stackMax=100; // max stack wire is 1
 	};
-  class Slot_SRP_MaterialSpool_RedWire
+  class Slot_SRP_MaterialSpool_ElectricalWire3
 	{
-		name="SRP_MaterialSpool_RedWire";
-		displayName="Red Wire";
+		name="SRP_MaterialSpool_ElectricalWire3";
+		displayName="Electrical Wire";
 		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
+    stackMax=100; // max stack wire is 1
 	};
-  class Slot_SRP_MaterialSpool_OrangeWire
+  class Slot_SRP_MaterialSpool_ElectricalWire4
 	{
-		name="SRP_MaterialSpool_OrangeWire";
-		displayName="Orange Wire";
+		name="SRP_MaterialSpool_ElectricalWire4";
+		displayName="Electrical Wire";
 		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
+    stackMax=100; // max stack wire is 1
 	};
-  class Slot_SRP_MaterialSpool_YellowWire
+  class Slot_SRP_MaterialSpool_ElectricalWire5
 	{
-		name="SRP_MaterialSpool_YellowWire";
-		displayName="Yellow Wire";
+		name="SRP_MaterialSpool_ElectricalWire5";
+		displayName="Electrical Wire";
 		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
-	};
-  class Slot_SRP_MaterialSpool_GreenWire
-	{
-		name="SRP_MaterialSpool_GreenWire";
-		displayName="Green Wire";
-		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
-	};
-  class Slot_SRP_MaterialSpool_BlueWire
-	{
-		name="SRP_MaterialSpool_BlueWire";
-		displayName="Blue Wire";
-		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
-	};
-  class Slot_SRP_MaterialSpool_PurpleWire
-	{
-		name="SRP_MaterialSpool_PurpleWire";
-		displayName="Purple Wire";
-		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
-	};
-  class Slot_SRP_MaterialSpool_GreyWire
-	{
-		name="SRP_MaterialSpool_GreyWire";
-		displayName="Grey Wire";
-		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
-	};
-  class Slot_SRP_MaterialSpool_WhiteWire
-	{
-		name="SRP_MaterialSpool_WhiteWire";
-		displayName="White Wire";
-		ghostIcon="set:dayz_inventory image:metalwire";
-    stackMax=35; // max stack wire is 1
+    stackMax=100; // max stack wire is 1
 	};
 //================== Construction Materials
   class Slot_SRP_Construction_Mortar
