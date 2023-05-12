@@ -3295,6 +3295,12 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_bunnyears_co.paa"};
   };
+  class SRP_BunnyEars_Bunny: SRP_BunnyEars_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_BunnyEars_bunny_co.paa"};
+  };
 
 
   class SRP_OfficersHat_ColorBase: Clothing
