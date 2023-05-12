@@ -38,7 +38,7 @@ class CfgVehicles
   class SRP_Trader_Backpack_ColorBase;
 
   class DUB_Monsterv2;
-
+  class ALV_MV_Slingbag_Colorbase;
 
   class AliceBag_MTP: AliceBag_ColorBase
 	{
@@ -1264,5 +1264,55 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\backpacks\data\SRP_Trader_Backpack_CO.paa",
 		};
+	};
+
+  class ALV_MV_Slingbag_CAD: ALV_MV_Slingbag_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\backpacks\data\MV_Slingbag_CAD_CO.paa"};
+		hiddenSelectionsMaterials[] = {"alv_tac_gear\characters\Backpacks\data\MV_Slingbag.rvmat"};
+	};
+	class ALV_MV_Slingbag_ChocoChip: ALV_MV_Slingbag_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\backpacks\data\MV_Slingbag_CHOC_CO.paa"};
+		hiddenSelectionsMaterials[] = {"alv_tac_gear\characters\Backpacks\data\MV_Slingbag.rvmat"};
+	};
+	class ALV_MV_Slingbag_ERDL: ALV_MV_Slingbag_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\backpacks\data\MV_Slingbag_ERDL_CO.paa"};
+		hiddenSelectionsMaterials[] = {"alv_tac_gear\characters\Backpacks\data\MV_Slingbag.rvmat"};
+	};
+	class ALV_MV_Slingbag_M05: ALV_MV_Slingbag_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\backpacks\data\MV_Slingbag_M05_CO.paa"};
+		hiddenSelectionsMaterials[] = {"alv_tac_gear\characters\Backpacks\data\MV_Slingbag.rvmat"};
+	};
+	class ALV_MV_Slingbag_Marpat: ALV_MV_Slingbag_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\backpacks\data\MV_Slingbag_MPat_CO.paa"};
+		hiddenSelectionsMaterials[] = {"alv_tac_gear\characters\Backpacks\data\MV_Slingbag.rvmat"};
+	};
+	class ALV_MV_Slingbag_MC_Black: ALV_MV_Slingbag_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\backpacks\data\MV_Slingbag_MCBlack_CO.paa"};
+		hiddenSelectionsMaterials[] = {"alv_tac_gear\characters\Backpacks\data\MV_Slingbag.rvmat"};
+	};
+	class ALV_MV_Slingbag_TigerStripe: ALV_MV_Slingbag_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\backpacks\data\MV_Slingbag_TS_CO.paa"};
+		hiddenSelectionsMaterials[] = {"alv_tac_gear\characters\Backpacks\data\MV_Slingbag.rvmat"};
 	};
 };

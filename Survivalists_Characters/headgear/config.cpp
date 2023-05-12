@@ -49,6 +49,23 @@ class CfgVehicles
       "TealWeed",      
     };
 	};
+  class ALV_MV_TacCap_Forward_Colorbase: Clothing
+	{
+    rootClassName="ALV_MV_TacCap_Forward";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green",
+      "Cadpat",
+      "ChocoChip",      
+      "ERDL",      
+      "M05",      
+      "Marpat",      
+      "MC_Black",      
+      "TigerStripe",      
+    };
+	};
 
 //-------------------------------------- BASE GAME OVERRIDE
   class BallisticHelmet_ColorBase: Clothing

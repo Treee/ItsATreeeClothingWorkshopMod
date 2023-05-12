@@ -9,8 +9,9 @@ class CfgPatches
 		{
 			"DZ_Characters",
       "DZ_Characters_Pants",
+      "Alv_Tac_Gear_Pants",
       "Kneepads_Jeans",
-      "Galife_Pants"
+      "Galife_Pants",
 		};
 	};
 };
@@ -67,6 +68,42 @@ class CfgVehicles
       "Grey",
       "Black",
       "White",
+    };
+  };
+  class ALV_MV_CryeG3_Pants_Colorbase: Clothing
+  {
+    rootClassName="ALV_MV_CryeG3_Pants";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+      "Brown",
+      "Cadpat",
+      "ChocoChip",
+      "ERDL",
+      "M05",
+      "Marpat",
+      "MC_Black",
+      "TigerStripe",      
+    };
+  };
+  class ALV_MV_ScoutingPants_Colorbase: Clothing
+  {
+    rootClassName="ALV_MV_ScoutingPants";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+      "Brown",
+      "Cadpat",
+      "ChocoChip",
+      "ERDL",
+      "M05",
+      "Marpat",
+      "MC_Black",
+      "TigerStripe",      
     };
   };
 //-------------------------------------BASE GAME OVERRIDE

@@ -58,7 +58,10 @@ class CfgVehicles
   class DUB_Duster;
   class Wool_GreatCoat_ColorBase;
   class DUB_WoolCoat;
-
+  class ALV_MV_CryeG3_Top_Colorbase;
+  class ALV_MV_CryeG3LongSleeve_Top_Colorbase;
+  class ALV_MV_ScoutingHoodie_Colorbase;
+  
   class NBCJacketBase_Gray: NBCJacketBase
 	{
 		scope=2;
@@ -3325,5 +3328,131 @@ class CfgVehicles
   {
     scope=2;
     hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\tops\data\WoolCoat_Purple_CO.paa"};
-  };
+  };  
+  class ALV_MV_CryeG3_Top_CadPat: ALV_MV_CryeG3_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","personality"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_CAD_CO.paa"};
+	};
+	class ALV_MV_CryeG3LongSleeve_Top_CadPat: ALV_MV_CryeG3LongSleeve_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_CAD_CO.paa"};
+	};
+	class ALV_MV_CryeG3_Top_ChocoChip: ALV_MV_CryeG3_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","personality"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_CHOC_CO.paa"};
+	};
+	class ALV_MV_CryeG3LongSleeve_Top_ChocoChip: ALV_MV_CryeG3LongSleeve_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_CHOC_CO.paa"};
+	};
+	class ALV_MV_CryeG3_Top_ERDL: ALV_MV_CryeG3_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","personality"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_ERDL_CO.paa"};
+	};
+	class ALV_MV_CryeG3LongSleeve_Top_ERDL: ALV_MV_CryeG3LongSleeve_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_ERDL_CO.paa"};
+	};
+	class ALV_MV_CryeG3_Top_M05: ALV_MV_CryeG3_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","personality"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_M05_CO.paa"};
+	};
+	class ALV_MV_CryeG3LongSleeve_Top_M05: ALV_MV_CryeG3LongSleeve_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_M05_CO.paa"};
+	};
+	class ALV_MV_CryeG3_Top_Marpat: ALV_MV_CryeG3_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","personality"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_MPAT_CO.paa"};
+	};
+	class ALV_MV_CryeG3LongSleeve_Top_Marpat: ALV_MV_CryeG3LongSleeve_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_MPAT_CO.paa"};
+	};
+	class ALV_MV_CryeG3_Top_MC_Black: ALV_MV_CryeG3_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","personality"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_MCBlack_CO.paa"};
+	};
+	class ALV_MV_CryeG3LongSleeve_Top_MC_Black: ALV_MV_CryeG3LongSleeve_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_MCBlack_CO.paa"};
+	};
+	class ALV_MV_CryeG3_Top_TigerStripe: ALV_MV_CryeG3_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","personality"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_TS_CO.paa"};
+	};
+	class ALV_MV_CryeG3LongSleeve_Top_TigerStripe: ALV_MV_CryeG3LongSleeve_Top_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_CryeG3_Top_TS_CO.paa"};
+	};
+  class ALV_MV_ScoutingHoodie_Cadpat: ALV_MV_ScoutingHoodie_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek","Elbowpads"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_Scout_Hoodie_CAD_CO.paa","Alv_Tac_Gear\Characters\Tops\Data\MV_Pads_Black_CO.paa"};
+	};
+	class ALV_MV_ScoutingHoodie_ChocoChip: ALV_MV_ScoutingHoodie_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek","Elbowpads"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_Scout_Hoodie_CHOC_CO.paa","Alv_Tac_Gear\Characters\Tops\Data\MV_Pads_Black_CO.paa"};
+	};
+	class ALV_MV_ScoutingHoodie_ERDL: ALV_MV_ScoutingHoodie_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek","Elbowpads"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_Scout_Hoodie_ERDL_CO.paa","Alv_Tac_Gear\Characters\Tops\Data\MV_Pads_Black_CO.paa"};
+	};
+	class ALV_MV_ScoutingHoodie_M05: ALV_MV_ScoutingHoodie_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek","Elbowpads"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_Scout_Hoodie_M05_CO.paa","Alv_Tac_Gear\Characters\Tops\Data\MV_Pads_Black_CO.paa"};
+	};
+	class ALV_MV_ScoutingHoodie_Marpat: ALV_MV_ScoutingHoodie_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek","Elbowpads"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_Scout_Hoodie_MPat_CO.paa","Alv_Tac_Gear\Characters\Tops\Data\MV_Pads_Black_CO.paa"};
+	};
+	class ALV_MV_ScoutingHoodie_MC_Black: ALV_MV_ScoutingHoodie_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek","Elbowpads"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_Scout_Hoodie_MCBlack_CO.paa","Alv_Tac_Gear\Characters\Tops\Data\MV_Pads_Black_CO.paa"};
+	};
+	class ALV_MV_ScoutingHoodie_TigerStripe: ALV_MV_ScoutingHoodie_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek","Elbowpads"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_Scout_Hoodie_TS_CO.paa","Alv_Tac_Gear\Characters\Tops\Data\MV_Pads_Black_CO.paa"};
+	};
 };

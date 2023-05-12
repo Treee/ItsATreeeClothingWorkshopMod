@@ -13,6 +13,7 @@ class CfgPatches
       "Winter_Parka",
       "jmc_deerisle_misc",
       "Dressupbox",
+      "Alv_Tac_Gear_Tops"
 		};
 	};
 };
@@ -67,6 +68,73 @@ class CfgVehicles
     displayName="White Bear Ghillie";
 		descriptionShort="Cosmetic Only, does not protect against extreme cold.";
   };
+  class ALV_MV_CryeG3_Top_Colorbase: Clothing
+	{
+    rootClassName="ALV_MV_CryeG3_Top";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+      "Brown",    
+      "Cadpat",    
+      "ChocoChip",    
+      "ERDL",    
+      "M05",    
+      "MArpat",    
+      "MC_Black",    
+      "TigerStripe",      
+    };
+	}; 
+  class ALV_MV_CryeG3LongSleeve_Top_Colorbase: Clothing
+	{
+    rootClassName="ALV_MV_CryeG3LongSleeve_Top";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+      "Brown",    
+      "Cadpat",    
+      "ChocoChip",    
+      "ERDL",    
+      "M05",    
+      "MArpat",    
+      "MC_Black",    
+      "TigerStripe",      
+    };
+	}; 
+  class ALV_MV_Hoodie_Colorbase: Clothing
+	{
+    rootClassName="ALV_MV_Hoodie";
+    colorVariants[]=
+    {
+      "Grey",
+      "Tan",
+      "Red",
+      "Pink",
+      "Green",
+      "Black",
+    };
+	}; 
+  class ALV_MV_ScoutingHoodie_Colorbase: Clothing
+	{
+    rootClassName="ALV_MV_ScoutingHoodie";
+    colorVariants[]=
+    {
+      "Tan",
+      "Black",
+      "Green",
+      "Urban",
+      "Cadpat",    
+      "ChocoChip",    
+      "ERDL",    
+      "M05",    
+      "MArpat",    
+      "MC_Black",    
+      "TigerStripe",
+    };
+	}; 
 
 ///============== MODDED
   class DUB_Poncho: Clothing

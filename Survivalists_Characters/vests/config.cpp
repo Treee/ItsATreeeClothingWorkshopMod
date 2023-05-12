@@ -18,7 +18,7 @@ class CfgVehicles
   class Container_Base;
   class Bottle_Base;
 
-  // ----------------------  BASE GAME OVERRIDES
+// ----------------------  BASE GAME OVERRIDES
   class PlateCarrierVest: Clothing
 	{
     itemSize[]={5,4};
@@ -221,7 +221,58 @@ class CfgVehicles
     };
   };
 
-  // ----------------------  CUSTOM STUFF
+  class Alv_MV_JPC_ColorBase: Clothing
+	{
+    rootClassName="Alv_MV_JPC";
+    colorVariants[]=
+    {
+      "Black",      
+      "Tan",      
+      "Green",      
+    };
+  };
+  class Alv_MV_Ratnik_ColorBase: Clothing
+	{
+    rootClassName="Alv_MV_Ratnik";
+    colorVariants[]=
+    {
+      "Black",      
+      "Tan",      
+      "Green",      
+    };
+  };
+  class Alv_MV_ChestRig_ColorBase: Clothing
+	{
+    rootClassName="Alv_MV_ChestRig";
+    colorVariants[]=
+    {
+      "Black",      
+      "Tan",      
+      "Green",      
+    };
+  };
+  class Alv_MV_TacVest_ColorBase: Clothing
+	{
+    rootClassName="Alv_MV_TacVest";
+    colorVariants[]=
+    {
+      "Black",      
+      "Tan",      
+      "Green",      
+    };
+  };
+  class Alv_MV_Modular_Vest_ColorBase: Clothing
+	{
+    rootClassName="Alv_MV_Modular_Vest";
+    colorVariants[]=
+    {
+      "Black",      
+      "Tan",      
+      "Green",      
+    };
+  };
+
+// ----------------------  CUSTOM STUFF
   class SRP_Brewstershield: PlateCarrierVest
 	{
 		scope=2;
@@ -2390,7 +2441,7 @@ class CfgVehicles
 		};
 	};
 
-  // ===================== VEST POUCHES
+// ===================== VEST POUCHES
 
   class SRP_PouchBase_Small: Container_Base
   {
@@ -2966,4 +3017,5 @@ class CfgVehicles
 			};
 		};	
   };
+// ===================== END
 };

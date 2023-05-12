@@ -221,6 +221,23 @@ class CfgVehicles
       "Black"
     };
   };
+  class ALV_MV_Slingbag_Colorbase: Clothing
+  {
+    rootClassName="ALV_MV_Slingbag";
+    colorVariants[]=
+    {
+      "Black",
+      "Yellow",
+      "Green",
+      "Blue",      
+      "ChocoChip",
+      "ERDL",
+      "M05",
+      "Marpat",
+      "MC_Black",
+      "TigerStripe"
+    };
+  };
 
   //--------------------------------- CUSTOM STUFF
 

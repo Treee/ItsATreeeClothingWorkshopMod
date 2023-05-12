@@ -53,6 +53,11 @@ class CfgVehicles
 
   class DUB_Poncho;
   class DUB_Waistcoat;
+  class Alv_MV_JPC_Colorbase;
+  class Alv_MV_Ratnik_Colorbase;
+  class Alv_MV_ChestRig_Colorbase;
+  class Alv_MV_TacVest_Colorbase;
+  class Alv_MV_Modular_Vest_Colorbase;
 
   class PlateCarrierVest_ThirstyDevil: PlateCarrierVest
 	{
@@ -2416,4 +2421,216 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\waistcoat_maximillian_co.paa",
 		};
   };
+
+  class Alv_MV_JPC_Cadpat: Alv_MV_JPC_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_JPC_CAD_CO.paa"};
+	};
+	class Alv_MV_JPC_ChocoChip: Alv_MV_JPC_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_JPC_Choc_CO.paa"};
+	};
+	class Alv_MV_JPC_ERDL: Alv_MV_JPC_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_JPC_ERDL_CO.paa"};
+	};
+	class Alv_MV_JPC_M05: Alv_MV_JPC_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_JPC_M05_CO.paa"};
+	};
+	class Alv_MV_JPC_Marpat: Alv_MV_JPC_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_JPC_MPat_CO.paa"};
+	};
+	class Alv_MV_JPC_MC_Black: Alv_MV_JPC_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_JPC_MCBlack_CO.paa"};
+	};
+	class Alv_MV_JPC_TigerStripe: Alv_MV_JPC_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_JPC_TS_CO.paa"};
+	};
+	class Alv_MV_Ratnik_Cadpat: Alv_MV_Ratnik_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Ratnik_CAD_CO.paa"};
+	};
+	class Alv_MV_Ratnik_ChocoChip: Alv_MV_Ratnik_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Ratnik_Choc_CO.paa"};
+	};
+	class Alv_MV_Ratnik_ERDL: Alv_MV_Ratnik_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Ratnik_ERDL_CO.paa"};
+	};
+	class Alv_MV_Ratnik_M05: Alv_MV_Ratnik_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Ratnik_M05_CO.paa"};
+	};
+	class Alv_MV_Ratnik_Marpat: Alv_MV_Ratnik_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Ratnik_MPat_CO.paa"};
+	};
+	class Alv_MV_Ratnik_MC_Black: Alv_MV_Ratnik_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Ratnik_MCBlack_CO.paa"};
+	};
+	class Alv_MV_Ratnik_TigerStripe: Alv_MV_Ratnik_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Ratnik_TS_CO.paa"};
+	};
+	class Alv_MV_ChestRig_Cadpat: Alv_MV_ChestRig_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","straps"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Chestrig_CAD_CO.paa","Survivalists_Retextures\characters\vests\data\MV_ChestRigStraps_CAD_CO.paa"};
+	};
+	class Alv_MV_ChestRig_ChocoChip: Alv_MV_ChestRig_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","straps"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Chestrig_Choc_CO.paa","Survivalists_Retextures\characters\vests\data\MV_ChestRigStraps_Choc_CO.paa"};
+	};
+	class Alv_MV_ChestRig_ERDL: Alv_MV_ChestRig_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","straps"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Chestrig_ERDL_CO.paa","Survivalists_Retextures\characters\vests\data\MV_ChestRigStraps_ERDL_CO.paa"};
+	};
+	class Alv_MV_ChestRig_M05: Alv_MV_ChestRig_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","straps"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Chestrig_M05_CO.paa","Survivalists_Retextures\characters\vests\data\MV_ChestRigStraps_M05_CO.paa"};
+	};
+	class Alv_MV_ChestRig_Marpat: Alv_MV_ChestRig_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","straps"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Chestrig_MPat_CO.paa","Survivalists_Retextures\characters\vests\data\MV_ChestRigStraps_MPat_CO.paa"};
+	};
+	class Alv_MV_ChestRig_MC_Black: Alv_MV_ChestRig_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","straps"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Chestrig_MCBlack_CO.paa","Survivalists_Retextures\characters\vests\data\MV_ChestRigStraps_MCBlack_CO.paa"};
+	};
+	class Alv_MV_ChestRig_TigerStripe: Alv_MV_ChestRig_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek","straps"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_Chestrig_TS_CO.paa","Survivalists_Retextures\characters\vests\data\MV_ChestRigStraps_TS_CO.paa"};
+	};
+	class Alv_MV_TacVest_Cadpat: Alv_MV_TacVest_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_TacVest_CAD_CO.paa"};
+	};
+	class Alv_MV_TacVest_ChocoChip: Alv_MV_TacVest_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_TacVest_Choc_CO.paa"};
+	};
+	class Alv_MV_TacVest_ERDL: Alv_MV_TacVest_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_TacVest_ERDL_CO.paa"};
+	};
+	class Alv_MV_TacVest_M05: Alv_MV_TacVest_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_TacVest_M05_CO.paa"};
+	};
+	class Alv_MV_TacVest_Marpat: Alv_MV_TacVest_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_TacVest_MPat_CO.paa"};
+	};
+	class Alv_MV_TacVest_MC_Black: Alv_MV_TacVest_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_TacVest_MCBlack_CO.paa"};
+	};
+	class Alv_MV_TacVest_TigerStripe: Alv_MV_TacVest_Colorbase
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\MV_TacVest_TS_CO.paa"};
+	};
+	class Alv_MV_Modular_Vest_Cadpat: Alv_MV_Modular_Vest_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_CAD_CO.paa"};
+	};
+	class Alv_MV_Modular_Vest_ChocoChip: Alv_MV_Modular_Vest_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_CHOC_CO.paa"};
+	};
+	class Alv_MV_Modular_Vest_ERDL: Alv_MV_Modular_Vest_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_ERDL_CO.paa"};
+	};
+	class Alv_MV_Modular_Vest_M05: Alv_MV_Modular_Vest_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_M05_CO.paa"};
+	};
+	class Alv_MV_Modular_Vest_Marpat: Alv_MV_Modular_Vest_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_MPat_CO.paa"};
+	};
+	class Alv_MV_Modular_Vest_MC_Black: Alv_MV_Modular_Vest_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_MCBlack_CO.paa"};
+	};
+	class Alv_MV_Modular_Vest_TigerStripe: Alv_MV_Modular_Vest_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_TS_CO.paa"};
+	};
+
 };

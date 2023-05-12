@@ -52,6 +52,7 @@ class CfgVehicles
   class SRP_EarProtection_ColorBase;
   class SRP_FrakenArmor_Helmet_ColorBase;
   class SRP_Alchemist_Hat;
+  class ALV_MV_TacCap_Forward_Colorbase;
 
 //=============================================== Vanilla Override
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
@@ -1992,5 +1993,48 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\headgear\data\Alchemist_Hat_night_co.paa"
 		};
+	};
+//================================================= Alevarics Tactical Hats
+  class ALV_MV_TacCap_Forward_Cadpat: ALV_MV_TacCap_Forward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_CAD_CO.paa"};
+	};
+	class ALV_MV_TacCap_Forward_ChocoChip: ALV_MV_TacCap_Forward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_CHOC_CO.paa"};
+	};
+	class ALV_MV_TacCap_Forward_ERDL: ALV_MV_TacCap_Forward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_ERDL_CO.paa"};
+	};
+	class ALV_MV_TacCap_Forward_M05: ALV_MV_TacCap_Forward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_M05_CO.paa"};
+	};
+	class ALV_MV_TacCap_Forward_Marpat: ALV_MV_TacCap_Forward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_MPat_CO.paa"};
+	};
+	class ALV_MV_TacCap_Forward_MC_Black: ALV_MV_TacCap_Forward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_MCBlack_CO.paa"};
+	};
+	class ALV_MV_TacCap_Forward_TigerStripe: ALV_MV_TacCap_Forward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_TS_CO.paa"};
 	};
 };
