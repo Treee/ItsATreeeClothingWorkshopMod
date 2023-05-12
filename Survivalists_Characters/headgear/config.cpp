@@ -3223,13 +3223,79 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_CatEars_Basic: SRP_CatEars_ColorBase
   {
     scope=2;
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_catears_co.paa"};
   };
+
+  class SRP_BunnyEars_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Bunny Ears";
+		descriptionShort="Bunny ears that fit comfortably on your head.";
+		model="Survivalists_Characters\headgear\srp_bunnyears_g.p3d";
+		weight=100;
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		inventorySlot[]=
+		{
+			"Headgear",
+      "Extra"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+    attachments[]={};
+		itemSize[]={2,1};
+		varWetMax=0.249;
+		heatIsolation=0.2;
+		visibilityModifier=0.94999999;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\headgear\data\srp_bunnyears_co.paa"
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\srp_bunnyears_m.p3d";
+			female="Survivalists_Characters\headgear\srp_bunnyears_f.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{
+						{1,{"Survivalists_Characters\headgear\data\srp_bunnyears.rvmat"}},
+            {0.69999999,{"Survivalists_Characters\headgear\data\srp_bunnyears.rvmat"}},
+            {0.5,{"Survivalists_Characters\headgear\data\srp_bunnyears_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Characters\headgear\data\srp_bunnyears_damage.rvmat"}},
+            {0,{"Survivalists_Characters\headgear\data\srp_bunnyears_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_BunnyEars_Basic: SRP_BunnyEars_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_bunnyears_co.paa"};
+  };
+
 
   class SRP_OfficersHat_ColorBase: Clothing
 	{
