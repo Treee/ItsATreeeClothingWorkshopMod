@@ -69,4 +69,32 @@ class SRP_ActionCraftOnWorkbench extends ActionSRPVariantIdOption
 		else
 			GetVariantManager().Clear();
 	}
+  override bool SetupAction(PlayerBase player, ActionTarget target, ItemBase item, out ActionData action_data, Param extra_data = NULL)
+	{
+		if (super.SetupAction(player, target, item, action_data, extra_data))
+		{
+			if (!target && !target.GetObject())
+				return false;
+			SetupAnimation(target.GetObject().GetType());
+			return true;
+		}
+		return false;
+	}
+  void SetupAnimation(string targetBench)
+	{
+    switch(targetBench)
+    {
+      case "SRP_PrefabCrafting_carpentry":
+      case "SRP_PrefabCrafting_metalworking":
+      case "SRP_PrefabCrafting_smithing":
+				m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_ASSEMBLE;
+      break;
+      case "SRP_PrefabCrafting_drugtub":
+      case "SRP_PrefabCrafting_tailoring":
+      case "SRP_PrefabCrafting_printingpress":
+      case "SRP_PrefabCrafting_ammocrafting":
+				m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_RESTRAINTARGET; 
+      break;
+    }
+	}
 };
