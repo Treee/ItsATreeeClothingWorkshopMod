@@ -813,6 +813,7 @@ class CfgSoundSets
 	};
   class SRPRadio_IslandGeorge_SelfEsteem_SoundSet1
 	{
+    SoundPlayTime=167;
 		soundShaders[] =
 		{
 			"SRPRadio_IslandGeorge_SelfEsteem_Shader1"
@@ -820,6 +821,7 @@ class CfgSoundSets
 	};
   class SRPRadio_IslandGeorge_RidersRepair_SoundSet1
 	{
+    SoundPlayTime=66;
 		soundShaders[] =
 		{
 			"SRPRadio_IslandGeorge_RidersRepair_Shader1"
@@ -827,6 +829,7 @@ class CfgSoundSets
 	};
   class SRPRadio_IslandGeorge_OceanBlue_SoundSet1
 	{
+    SoundPlayTime=232;
 		soundShaders[] =
 		{
 			"SRPRadio_IslandGeorge_OceanBlue_Shader1"
@@ -834,6 +837,7 @@ class CfgSoundSets
 	};
   class SRPRadio_IslandGeorge_Automatic_SoundSet1
 	{
+    SoundPlayTime=170;
 		soundShaders[] =
 		{
 			"SRPRadio_IslandGeorge_Automatic_Shader1"
@@ -842,6 +846,7 @@ class CfgSoundSets
 
   class SRPRadio_ThruItAll_LA_SoundSet1
 	{
+    SoundPlayTime=149;
 		soundShaders[] =
 		{
 			"SRPRadio_ThruItAll_LA_Shader1"
@@ -849,6 +854,7 @@ class CfgSoundSets
 	};
   class SRPRadio_ThruItAll_SameTShirt_SoundSet1
 	{
+    SoundPlayTime=161;
 		soundShaders[] =
 		{
 			"SRPRadio_ThruItAll_SameTShirt_Shader1"
@@ -856,6 +862,7 @@ class CfgSoundSets
 	};
   class SRPRadio_ThruItAll_Irrelevant_SoundSet1
 	{
+    SoundPlayTime=173;
 		soundShaders[] =
 		{
 			"SRPRadio_ThruItAll_Irrelevant_Shader1"
@@ -863,6 +870,7 @@ class CfgSoundSets
 	};
   class SRPRadio_ThruItAll_Simulation_SoundSet1
 	{
+    SoundPlayTime=146;
 		soundShaders[] =
 		{
 			"SRPRadio_ThruItAll_Simulation_Shader1"
@@ -870,6 +878,7 @@ class CfgSoundSets
 	};
   class SRPRadio_ThruItAll_Tangled_SoundSet1
 	{
+    SoundPlayTime=157;
 		soundShaders[] =
 		{
 			"SRPRadio_ThruItAll_Tangled_Shader1"
@@ -878,6 +887,7 @@ class CfgSoundSets
 
   class SRPRadio_HunterMyers_Pray_SoundSet1
 	{
+    SoundPlayTime=185;
 		soundShaders[] =
 		{
 			"SRPRadio_HunterMyers_Pray_Shader1"
@@ -885,6 +895,7 @@ class CfgSoundSets
 	};
   class SRPRadio_HunterMyers_Half_SoundSet1
 	{
+    SoundPlayTime=172;
 		soundShaders[] =
 		{
 			"SRPRadio_HunterMyers_Half_Shader1"
@@ -892,6 +903,7 @@ class CfgSoundSets
 	};
   class SRPRadio_HunterMyers_EveryDay_SoundSet1
 	{
+    SoundPlayTime=177;
 		soundShaders[] =
 		{
 			"SRPRadio_HunterMyers_EveryDay_Shader1"
@@ -899,6 +911,7 @@ class CfgSoundSets
 	};
   class SRPRadio_HunterMyers_Damn_SoundSet1
 	{
+    SoundPlayTime=194;
 		soundShaders[] =
 		{
 			"SRPRadio_HunterMyers_Damn_Shader1"
@@ -906,6 +919,7 @@ class CfgSoundSets
 	};
   class SRPRadio_HunterMyers_Charcoal_SoundSet1
 	{
+    SoundPlayTime=210;
 		soundShaders[] =
 		{
 			"SRPRadio_HunterMyers_Charcoal_Shader1"
@@ -914,6 +928,7 @@ class CfgSoundSets
 
   class SRPRadio_ProbabLeigh_Labyrinth_SoundSet1
 	{
+    SoundPlayTime=115;
 		soundShaders[] =
 		{
 			"SRPRadio_ProbabLeigh_Labyrinth_Shader1"
@@ -921,6 +936,7 @@ class CfgSoundSets
 	};
   class SRPRadio_ProbabLeigh_DancesWithAliens_SoundSet1
 	{
+    SoundPlayTime=158;
 		soundShaders[] =
 		{
 			"SRPRadio_ProbabLeigh_DancesWithAliens_Shader1"
