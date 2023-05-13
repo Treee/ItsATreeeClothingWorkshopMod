@@ -352,6 +352,7 @@ class Craft_SRP_RepairClothing extends Craft_SRP_SewingThreadBase
 		
 		//ingredient 2	
 		InsertIngredient(1,"SRP_SewingTable");	// primary ingredient
+		InsertIngredient(1,"SRP_PrefabCrafting_tailoring");	// primary ingredient
 		
 		m_IngredientAddHealth[1] = -1;	// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
