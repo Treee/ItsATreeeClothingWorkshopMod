@@ -1,6 +1,6 @@
 class SRP_Anvil_ColorBase extends SRP_CraftingBench_Base
 {
-  SRP_RecipeManager GetRecipeManager()
+  override SRP_RecipeManager GetRecipeManager()
   {
     return GetDayZGame().GetSRPSmithingRecipesGlobal();
   }

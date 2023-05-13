@@ -23,7 +23,7 @@ class SRP_PrefabCrafting_carpentry extends SRP_CraftingBench_Base
     }
 		return super.CanReleaseAttachment(attachment);
 	}
-  SRP_RecipeManager GetRecipeManager()
+  override SRP_RecipeManager GetRecipeManager()
   {
     return GetDayZGame().GetSRPWoodWorkbenchRecipesGlobal();
   }
@@ -62,7 +62,7 @@ class SRP_PrefabCrafting_metalworking extends SRP_CraftingBench_Base
     }
 		return super.CanReleaseAttachment(attachment);
 	}
-  SRP_RecipeManager GetRecipeManager()
+  override SRP_RecipeManager GetRecipeManager()
   {
     return GetDayZGame().GetSRPMetalWorkbenchRecipesGlobal();
   }

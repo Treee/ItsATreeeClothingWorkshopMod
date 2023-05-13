@@ -23,7 +23,7 @@ class SRP_PrefabCrafting_ammocrafting extends SRP_CraftingBench_Base
     }
 		return super.CanReleaseAttachment(attachment);
 	}
-  SRP_RecipeManager GetRecipeManager()
+  override SRP_RecipeManager GetRecipeManager()
   {
     return GetDayZGame().GetSRPAmmoRecipesGlobal();
   }
@@ -43,7 +43,7 @@ class SRP_PrefabCrafting_ammocrafting extends SRP_CraftingBench_Base
 
 class SRP_AdvancedWorkbench extends SRP_CraftingBench_Base
 {
-  SRP_RecipeManager GetRecipeManager()
+  override SRP_RecipeManager GetRecipeManager()
   {
     return GetDayZGame().GetSRPAmmoRecipesGlobal();
   }
