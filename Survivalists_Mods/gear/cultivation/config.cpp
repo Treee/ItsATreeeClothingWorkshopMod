@@ -96,6 +96,25 @@ class CfgVehicles
   class Inventory_Base;
 
   // -------------------- BASE GAME OVERRIDE
+  class PotatoSeed: SeedBase
+	{
+    inventorySlot[]+=
+		{
+			"SeedBase_1",
+			"SeedBase_2",
+			"SeedBase_3",
+			"SeedBase_4",
+			"SeedBase_5",
+			"SeedBase_6",
+			"SeedBase_7",
+			"SeedBase_8",
+			"SeedBase_9",
+			"SeedBase_10",
+			"SeedBase_11",
+			"SeedBase_12",
+			"SeedBase_13"
+		};
+  };
   class CannabisSeeds: SeedBase
 	{
     displayName="Cannabis Seeds";
