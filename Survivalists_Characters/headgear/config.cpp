@@ -594,7 +594,7 @@ class CfgVehicles
       "Green"
     };
 	};
-  class ALV_MV_CombatHelmet_Colorbase: Mich2001Helmet
+  class ALV_MV_CombatHelmet_Colorbase: HeadGear_Base
 	{
     rootClassName="ALV_MV_CombatHelmet";
     colorVariants[]=
@@ -604,7 +604,7 @@ class CfgVehicles
       "Green"
     };
 	};
-  class ALV_MV_AssaultHelmet_Colorbase: Mich2001Helmet
+  class ALV_MV_AssaultHelmet_Colorbase: HeadGear_Base
 	{
     rootClassName="ALV_MV_AssaultHelmet";
     colorVariants[]=
@@ -799,6 +799,13 @@ class CfgVehicles
     isStrap=1;
     inventorySlot[]=
 		{
+			"Headgear"
+		};
+    simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
 			"Headgear"
 		};
     hiddenSelections[]=
