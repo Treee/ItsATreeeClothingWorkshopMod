@@ -82,6 +82,7 @@ class CfgVehicles
   };
   class Crossbow_RedpointOptic: ItemOptics_Base
   {
+    scope=0;
     inventorySlot[]+=
     {
       "SRP_Optic1",
