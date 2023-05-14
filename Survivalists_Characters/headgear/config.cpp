@@ -13,68 +13,24 @@ class CfgPatches
       "DZ_Characters_Masks",
       "DZ_Gear_Optics",
       "DZ_Characters_Glasses",
-      "MSP_Clothing_Data"//bunny ears, slouchie
+      "MSP_Clothing_Data",//bunny ears, slouchie
+      "Alv_Tac_Gear_Headgear"
 		};
 	};
 };
 class CfgVehicles
 {
-  class Inventory_Base;
-  class Clothing;
+  class HeadGear_Base;
   class Switchable_Base;
-  class BalaclavaMask_ColorBase;
-
-	class Msp_BunnyEarsHeadband: Clothing
-	{
-    inventorySlot[]+={"Wig"};
-  };
-  class Msp_Slouchie_ColorBase: Clothing
-	{
-    rootClassName="Msp_Slouchie";
-    colorVariants[]=
-    {
-      "Beige",
-      "Black",
-      "Blue",
-      "Red",
-      "Red1",      
-      "Green",      
-      "GreenWeed",      
-      "GreyKitty",      
-      "Pink",      
-      "PinkKitty",      
-      "PinkWeed",      
-      "PinkPurple",      
-      "Teal",      
-      "TealWeed",      
-    };
-	};
-  class ALV_MV_TacCap_Forward_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_TacCap_Forward";
-    colorVariants[]=
-    {
-      "Black",
-      "Tan",
-      "Green",
-      "Cadpat",
-      "ChocoChip",      
-      "ERDL",      
-      "M05",      
-      "Marpat",      
-      "MC_Black",      
-      "TigerStripe",      
-    };
-	};
+  class Inventory_Base;
 
 //-------------------------------------- BASE GAME OVERRIDE
-  class BallisticHelmet_ColorBase: Clothing
+  class BallisticHelmet_ColorBase: HeadGear_Base
 	{
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
     itemSize[]={3,3};
 		itemsCargoSize[]={1,1};
-    noMask=0;
     rootClassName="BallisticHelmet";
     colorVariants[]=
     {
@@ -92,7 +48,19 @@ class CfgVehicles
       "Rain"
     };
   };
-  class BaseballCap_ColorBase: Clothing
+  class HeadCover_Improvised: HeadGear_Base
+	{
+    rootClassName="HeadCover_Improvised";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",      
+      "Orange",      
+      "Blue",      
+      "Red",      
+    };
+  };
+  class BaseballCap_ColorBase: HeadGear_Base
 	{
 		itemSize[]={1,2};
 		itemsCargoSize[]={1,1};
@@ -120,17 +88,16 @@ class CfgVehicles
       "EMP6",
     };    
   };
-  class BurlapSackCover: Clothing
-  {
-    rootClassName="BurlapSackCover";
+  class ZSh3PilotHelmet: HeadGear_Base
+	{
+    rootClassName="ZSh3PilotHelmet";
     colorVariants[]=
     {
-      "Black",
-      "Skull",
-      "White",
-    }; 
+      "Green",
+      "Black",      
+    };    
   };
-  class ConstructionHelmet_ColorBase: Clothing
+  class ConstructionHelmet_ColorBase: HeadGear_Base
 	{
 		itemsCargoSize[]={1,1};
     rootClassName="ConstructionHelmet";
@@ -157,7 +124,17 @@ class CfgVehicles
       "EMP6",
     };    
   };
-  class BeanieHat_ColorBase: Clothing
+  class BurlapSackCover: HeadGear_Base
+  {
+    rootClassName="BurlapSackCover";
+    colorVariants[]=
+    {
+      "Black",
+      "Skull",
+      "White",
+    }; 
+  };  
+  class BeanieHat_ColorBase: HeadGear_Base
 	{
 		itemSize[]={2,1};
 		itemsCargoSize[]={2,1};
@@ -182,11 +159,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class MassCatEars: BeanieHat_ColorBase
-  {
-    inventorySlot[]+={"Wig"};
-  };
-  class Ushanka_ColorBase: Clothing
+  class Ushanka_ColorBase: HeadGear_Base
 	{
 		itemSize[]={2,2};
 		itemsCargoSize[]={1,1};
@@ -207,7 +180,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class MotoHelmet_ColorBase: Clothing
+  class MotoHelmet_ColorBase: HeadGear_Base
 	{
 		soundVoiceType="none";
 		soundVoicePriority=10;
@@ -224,7 +197,7 @@ class CfgVehicles
       "Yellow"
     };
 	};
-	class DarkMotoHelmet_ColorBase: Clothing
+	class DarkMotoHelmet_ColorBase: HeadGear_Base
 	{
 		soundVoiceType="none";
 		soundVoicePriority=10;
@@ -242,7 +215,6 @@ class CfgVehicles
       "YellowScarred"
     };
 	};
-
 	class Headtorch_ColorBase: Switchable_Base
 	{
 		itemSize[]={2,1};
@@ -253,7 +225,7 @@ class CfgVehicles
       "Grey"
     };
 	};
-  class Bandana_ColorBase: Clothing
+  class Bandana_ColorBase: HeadGear_Base
 	{
     rootClassName="Bandana";
     colorVariants[]=
@@ -280,7 +252,7 @@ class CfgVehicles
       "USMC_W",
     };
 	};
-  class RadarCap_ColorBase: Clothing
+  class RadarCap_ColorBase: HeadGear_Base
 	{
     rootClassName="RadarCap";
     colorVariants[]=
@@ -292,7 +264,7 @@ class CfgVehicles
       "Red"
     };
 	};
-  class MilitaryBeret_ColorBase: Clothing
+  class MilitaryBeret_ColorBase: HeadGear_Base
 	{
     rootClassName="MilitaryBeret";
     colorVariants[]=
@@ -304,7 +276,7 @@ class CfgVehicles
       "CDF"
     };
 	};
-  class FlatCap_ColorBase: Clothing
+  class FlatCap_ColorBase: HeadGear_Base
 	{
     rootClassName="FlatCap";
     colorVariants[]=
@@ -323,7 +295,7 @@ class CfgVehicles
       "MulticamBlack"
     };
 	};
-  class ZmijovkaCap_ColorBase: Clothing
+  class ZmijovkaCap_ColorBase: HeadGear_Base
 	{
     rootClassName="ZmijovkaCap";
     colorVariants[]=
@@ -335,7 +307,7 @@ class CfgVehicles
       "Red",      
     };
 	};
-  class CowboyHat_ColorBase: Clothing
+  class CowboyHat_ColorBase: HeadGear_Base
 	{
     rootClassName="CowboyHat";
     colorVariants[]=
@@ -346,7 +318,7 @@ class CfgVehicles
       "Green"  
     };
 	};
-  class BoonieHat_ColorBase: Clothing
+  class BoonieHat_ColorBase: HeadGear_Base
 	{
 		itemSize[]={2,2};
 		itemsCargoSize[]={1,1};
@@ -378,7 +350,7 @@ class CfgVehicles
       "MulticamBlack",
     };
   };
-  class GorkaHelmet: Clothing
+  class GorkaHelmet: HeadGear_Base
 	{
     rootClassName="GorkaHelmet";
     colorVariants[]=
@@ -387,7 +359,7 @@ class CfgVehicles
       "Green",
     };
   };
-  class FirefightersHelmet_ColorBase: Clothing
+  class FirefightersHelmet_ColorBase: HeadGear_Base
 	{
     rootClassName="FirefightersHelmet";
     colorVariants[]=
@@ -397,7 +369,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class SkateHelmet_ColorBase: Clothing
+  class SkateHelmet_ColorBase: HeadGear_Base
 	{
     rootClassName="SkateHelmet";
     colorVariants[]=
@@ -409,7 +381,11 @@ class CfgVehicles
       "Red",
     };
   };
-  class PrisonerCap: Clothing
+  class WeldingMask: HeadGear_Base
+	{
+    itemSize[]={2,2};
+  };
+  class PrisonerCap: HeadGear_Base
 	{
     rootClassName="PrisonerCap";
     colorVariants[]=
@@ -417,7 +393,7 @@ class CfgVehicles
       "Brown"
     };
   };
-  class GhillieHood_ColorBase: Clothing
+  class GhillieHood_ColorBase: HeadGear_Base
 	{
     rootClassName="GhillieHood";
     colorVariants[]=
@@ -427,7 +403,7 @@ class CfgVehicles
       "Mossy"
     };
   };
-  class LeatherHat_ColorBase: Clothing
+  class LeatherHat_ColorBase: HeadGear_Base
 	{
     rootClassName="LeatherHat";
     colorVariants[]=
@@ -445,7 +421,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class MedicalScrubsHat_ColorBase: Clothing
+  class MedicalScrubsHat_ColorBase: HeadGear_Base
 	{
     rootClassName="MedicalScrubsHat";
     colorVariants[]=
@@ -455,7 +431,7 @@ class CfgVehicles
       "Green",      
     };
   };
-  class DirtBikeHelmet_ColorBase: Clothing
+  class DirtBikeHelmet_ColorBase: HeadGear_Base
 	{
     rootClassName="DirtBikeHelmet";
     colorVariants[]=
@@ -469,7 +445,7 @@ class CfgVehicles
       "Blue",      
     };
   };
-  class NBCHoodBase: Clothing
+  class NBCHoodBase: HeadGear_Base
   {
     class Protection 
     {
@@ -483,7 +459,7 @@ class CfgVehicles
       "Orange" 
     };
   };
-  class HockeyHelmet_ColorBase: Clothing
+  class HockeyHelmet_ColorBase: HeadGear_Base
   {
     rootClassName="HockeyHelmet";
     colorVariants[]=
@@ -494,13 +470,41 @@ class CfgVehicles
       "White",      
     };
   };
-  class Mich2001Helmet: Clothing
+  class SantasHat: HeadGear_Base
+  {
+    rootClassName="SantasHat";
+    colorVariants[]=
+    {
+      "Elf",      
+    };
+  };  
+  class WitchHood_ColorBase: HeadGear_Base
+  {
+    rootClassName="WitchHood";
+    colorVariants[]=
+    {
+      "Black",
+      "Brown",
+      "Red",           
+    };
+  };
+  class WitchHat: HeadGear_Base
+  {
+    rootClassName="WitchHat";
+    colorVariants[]=
+    {
+      "Blue",
+      "BlueKitty",
+      "Pink",
+      "RedKitty",           
+    };
+  };
+  class Mich2001Helmet: HeadGear_Base
 	{
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
     itemSize[]={3,3};
 		itemsCargoSize[]={1,1};
-    noMask=0;
     rootClassName="Mich2001Helmet";
     colorVariants[]=
     {
@@ -513,46 +517,132 @@ class CfgVehicles
       "SURPAT",      
       "MARPATWinter",      
     };
+  };  
+  
+//-------------------------------------- MODDED OVERRIDE
+	class Msp_BunnyEarsHeadband: HeadGear_Base
+	{
+    inventorySlot[]+={"Wig"};
   };
-  class WitchHood_ColorBase: Clothing
+  class Msp_Slouchie_ColorBase: HeadGear_Base
+	{
+    rootClassName="Msp_Slouchie";
+    colorVariants[]=
+    {
+      "Beige",
+      "Black",
+      "Blue",
+      "Red",
+      "Red1",      
+      "Green",      
+      "GreenWeed",      
+      "GreyKitty",      
+      "Pink",      
+      "PinkKitty",      
+      "PinkWeed",      
+      "PinkPurple",      
+      "Teal",      
+      "TealWeed",      
+    };
+	};  
+  class MassCatEars: HeadGear_Base
   {
-    rootClassName="WitchHood";
+    inventorySlot[]+={"Wig"};
+  };
+//-------------------------------------- ALEVARIC OVERRIDE
+  class ALV_MV_TacCap_Forward_Colorbase: HeadGear_Base
+	{
+    rootClassName="ALV_MV_TacCap_Forward";
     colorVariants[]=
     {
       "Black",
-      "Brown",
-      "Red",           
-    };
-  };
-  class WitchHat: Clothing
-  {
-    rootClassName="WitchHat";
-    colorVariants[]=
-    {
-      "Blue",
-      "BlueKitty",
-      "Pink",
-      "RedKitty",           
-    };
-  };
-  class WeldingMask: Clothing
-	{
-    itemSize[]={2,2};
-  };
-  class HeadCover_Improvised: Clothing
-	{
-    rootClassName="HeadCover_Improvised";
-    colorVariants[]=
-    {
+      "Tan",
       "Green",
-      "Black",      
-      "Orange",      
-      "Blue",      
-      "Red",      
+      "Cadpat",
+      "ChocoChip",      
+      "ERDL",      
+      "M05",      
+      "Marpat",      
+      "MC_Black",      
+      "TigerStripe",      
     };
-  };
+	};
+  class ALV_MV_TacCap_Backward_Colorbase: HeadGear_Base
+	{
+    rootClassName="ALV_MV_TacCap_Backward";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green",
+      "Cadpat",
+      "ChocoChip",      
+      "ERDL",      
+      "M05",      
+      "Marpat",      
+      "MC_Black",      
+      "TigerStripe",      
+    };
+	};
+  class ALV_MV_Comtacs_Colorbase: HeadGear_Base
+	{
+    rootClassName="ALV_MV_Comtacs";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green"
+    };
+	};
+  class ALV_MV_CombatHelmet_Colorbase: Mich2001Helmet
+	{
+    rootClassName="ALV_MV_CombatHelmet";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green"
+    };
+	};
+  class ALV_MV_AssaultHelmet_Colorbase: Mich2001Helmet
+	{
+    rootClassName="ALV_MV_AssaultHelmet";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green"
+    };
+	};
+  class ALV_MV_HelmetComtacs_Colorbase: Inventory_Base
+	{
+    rootClassName="ALV_MV_HelmetComtacs";
+    colorVariants[]=
+    {
+      "Black"
+    };
+	};
+  class ALV_MV_HelmetCover_Colorbase: Inventory_Base
+	{
+    rootClassName="ALV_MV_HelmetCover";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green"
+    };
+	};
+  class ALV_MV_Kitsune_Helmet_Colorbase: HeadGear_Base
+	{
+    rootClassName="ALV_MV_Kitsune_Helmet_";
+    colorVariants[]=
+    {
+      "Red",
+      "Inverse"
+    };
+	};
 // ----------------------------------------- Custom Stuff  
-  class SRP_BaseballCap_Tinfoil: BaseballCap_ColorBase  // new
+  class SRP_BaseballCap_Tinfoil: HeadGear_Base  // new
 	{
 		scope=2;
 		color="Tinfoil";
@@ -595,8 +685,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_TurkeyBeanie_ColorBase: BeanieHat_ColorBase  // new
+  class SRP_TurkeyBeanie_ColorBase: HeadGear_Base  // new
 	{
 		scope=0;
     displayName="Turkey Beanie";
@@ -654,7 +743,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_FrakenArmor_Helmet_ColorBase: BeanieHat_ColorBase  // new
+  class SRP_FrakenArmor_Helmet_ColorBase: HeadGear_Base  // new
 	{
 		scope=0;
     displayName="Fraken Armor - Helmet";
@@ -673,7 +762,7 @@ class CfgVehicles
 		{
 			"Survivalists_Characters\headgear\data\srp_frakenarmor_helmet.rvmat"
 		};
-    rootClassName="SRP_FrakenArmor_Mask";
+    rootClassName="SRP_FrakenArmor_Helmet";
     colorVariants[]={};
     class ClothingTypes
 		{
@@ -699,14 +788,19 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_MinerHelmet: Headtorch_ColorBase
+  class SRP_MinerHelmet: Switchable_Base
   {
 		scope=2;
     displayName="Miner Helmet";
     descriptionShort="Espen Industries. Full head protection witha convenient light.";
     model="Survivalists_Characters\headgear\minerhelmet_g.p3d";
 		itemSize[]={3,2};
+    repairableWithKits[]={7};
+    isStrap=1;
+    inventorySlot[]=
+		{
+			"Headgear"
+		};
     hiddenSelections[]=
 		{
 			"zbytek",
@@ -750,10 +844,26 @@ class CfgVehicles
 					};
 				};
 			};
+		};    		
+		class EnergyManager
+		{
+			hasIcon=1;
+			autoSwitchOffWhenInCargo=1;
+			energyUsagePerSecond=0.0099999998;
+			plugType=1;
+			attachmentAction=1;
+			updateInterval=40;
 		};
+		class Reflectors
+		{
+			class Beam
+			{
+				selection="bulb";
+			};
+		};
+		soundImpactType="glass";
   };
-
-  class SRP_Brewsterhelm: BallisticHelmet_ColorBase
+  class SRP_Brewsterhelm: HeadGear_Base
   {
 		scope=2;
     displayName="Brewster Helmet";
@@ -860,8 +970,7 @@ class CfgVehicles
 			};
 		};
   };
-  
-  class SRP_MaximusHelmet: Clothing
+  class SRP_MaximusHelmet: HeadGear_Base
 	{
 		scope=2;
 		displayName="Full Helmet";
@@ -869,17 +978,6 @@ class CfgVehicles
 		model="Survivalists_Characters\headgear\SRP_Maximus_Helmet_g.p3d";
 		repairableWithKits[]={8};
 		repairCosts[]={25};
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
 		rotationFlags=2;
 		weight=1200;
 		itemSize[]={4,3};
@@ -1004,8 +1102,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_FireHead_ColorBase: Clothing
+  class SRP_FireHead_ColorBase: HeadGear_Base
 	{
 		scope=2;
 		displayName="Fire Helmet";
@@ -1013,17 +1110,6 @@ class CfgVehicles
 		model="Survivalists_Characters\headgear\srp_fireheadgear_g.p3d";
 		repairableWithKits[]={8};
 		repairCosts[]={25};
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
 		rotationFlags=2;
 		weight=1200;
 		itemSize[]={4,3};
@@ -1152,24 +1238,12 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class MetalCrown_ColorBase: Clothing
+  class MetalCrown_ColorBase: HeadGear_Base
 	{
     scope=0;
 		displayName="Crown";
 		descriptionShort="A forged crown, embedded with a flawless ruby. Heavy is the head that wears the crown.";
 		model="Survivalists_characters\headgear\ArthurCrown_g.p3d";
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
 		rotationFlags=16;
 		weight=110;
 		itemSize[]={3,2};
@@ -1275,9 +1349,7 @@ class CfgVehicles
         "Survivalists_characters\headgear\data\ArthurCrown_Sapphire_co.paa"
     };
 	};
-
-
-  class SRP_Masked_HighcutHelmet_ColorBase: Mich2001Helmet
+  class SRP_Masked_HighcutHelmet_ColorBase: HeadGear_Base
 	{
 		scope=2;
 		displayName="Masked Highcut helmet";
@@ -1285,17 +1357,6 @@ class CfgVehicles
 		model="Survivalists_characters\headgear\SRP_Masked_HighcutHelmet_G.p3d";
 		repairableWithKits[]={8};
 		repairCosts[]={25};
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
 		weight=1000;
 		itemSize[]={3,3};
 		attachments[]={"NVG","helmetFlashlight","SRP_Comtacs"};
@@ -1357,23 +1418,12 @@ class CfgVehicles
 	};
 
 // -=============================== OLD MVS STUFF  
-  class SRP_MilitaryPatrolCap_ColorBase: Clothing
+  class SRP_MilitaryPatrolCap_ColorBase: HeadGear_Base
 	{
     scope=0;
     displayName="Patrol Cap";
     descriptionShort="Espen Industries. A tight fitting cap with room for a patch above the bill.";
     model="Survivalists_Characters\headgear\srp_patrolcap_g.p3d";
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
     rootClassName="SRP_MilitaryPatrolCap";
     colorVariants[]=
     {
@@ -1480,8 +1530,7 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_patrolcap_backwards_f.p3d";
 		};
 	};
-  
-  class BaseballCap_Pakol: BaseballCap_ColorBase
+  class BaseballCap_Pakol: HeadGear_Base
 	{
 		scope=2;
 		color="Pakol";
@@ -1531,8 +1580,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_CombatHelmet_ColorBase: Mich2001Helmet
+  class SRP_CombatHelmet_ColorBase: HeadGear_Base
   {
     scope=0;
     displayName="Combat Helmet";
@@ -1546,7 +1594,6 @@ class CfgVehicles
       "SRP_PatchMirror",
       "SRP_Comtacs"  
     };
-		inventorySlot[]={"Headgear"};
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]=
 		{
@@ -1650,7 +1697,7 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_CombatHelmetV2_ColorBase: Mich2001Helmet
+  class SRP_CombatHelmetV2_ColorBase: HeadGear_Base
   {
     scope=0;
     displayName="Combat Helmet - V2";
@@ -1664,7 +1711,6 @@ class CfgVehicles
       "SRP_PatchMirror",
       "SRP_Comtacs"  
     };
-		inventorySlot[]={"Headgear"};
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -1774,7 +1820,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_CombatHelmet6B47_ColorBase: Mich2001Helmet
+  class SRP_CombatHelmet6B47_ColorBase: HeadGear_Base
   {
     scope=0;
     displayName="Combat Helmet - 6B47";
@@ -1788,7 +1834,6 @@ class CfgVehicles
       "SRP_PatchMirror",
       "SRP_Comtacs"  
     };
-		inventorySlot[]={"Headgear"};
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -1892,7 +1937,7 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_CombatHelmetHighCut_ColorBase: Mich2001Helmet
+  class SRP_CombatHelmetHighCut_ColorBase: HeadGear_Base
   {
     scope=0;
     displayName="Combat Helmet - High Cut";
@@ -1906,7 +1951,6 @@ class CfgVehicles
       "SRP_PatchMirror",
       "SRP_Comtacs"  
     };
-		inventorySlot[]={"Headgear"};
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -2016,7 +2060,7 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_CombatHelmetAltyn_ColorBase: Mich2001Helmet
+  class SRP_CombatHelmetAltyn_ColorBase: HeadGear_Base
   {
     scope=0;
     displayName="Combat Helmet - Altyn";
@@ -2031,7 +2075,6 @@ class CfgVehicles
       "SRP_Comtacs",
       "SRP_AltynVisor"
     };
-		inventorySlot[]={"Headgear"};
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -2135,7 +2178,7 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_AltynHelmetVisor_ColorBase: BalaclavaMask_ColorBase
+  class SRP_AltynHelmetVisor_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Altyn Helmet Visor";
@@ -2246,8 +2289,7 @@ class CfgVehicles
 			};
     };
 	};
-
-	class SRP_FaceMaskSkull_ColorBase: BalaclavaMask_ColorBase
+	class SRP_FaceMaskSkull_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Face Mask";
@@ -2314,7 +2356,7 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_facemask_skullmask.p3d";
 		};
 	};
-	class SRP_FaceMask_ColorBase: BalaclavaMask_ColorBase
+	class SRP_FaceMask_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Face Mask";
@@ -2378,7 +2420,7 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_facemask.p3d";
 		};
 	};
-  class SRP_MouthCover_ColorBase: BalaclavaMask_ColorBase
+  class SRP_MouthCover_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Mouth Cover";
@@ -2441,7 +2483,7 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_mouthcover.p3d";
 		};
 	};
-	class SRP_Shroud_ColorBase: BalaclavaMask_ColorBase
+	class SRP_Shroud_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Head Shroud";
@@ -2503,7 +2545,7 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_shroud.p3d";
 		};
 	};
-  class SRP_Comtacs_ColorBase: BalaclavaMask_ColorBase
+  class SRP_Comtacs_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Comtacs";
@@ -2532,11 +2574,6 @@ class CfgVehicles
       "SRP_Comtacs",
       "Wig",
       "Extra"
-		};
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
 		};
 		headSelectionsToHide[]=
 		{
@@ -2569,8 +2606,7 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_comtacs.p3d";
 		};
 	};
-
-  class SRP_EarProtection_ColorBase: BalaclavaMask_ColorBase
+  class SRP_EarProtection_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Ear Protection";
@@ -2638,7 +2674,7 @@ class CfgVehicles
 	};
 
 //================================= CUSTOM STUFF
-  class SRP_SlimHelmetFull: Clothing
+  class SRP_SlimHelmetFull: HeadGear_Base
   {
     scope=2;
     displayName="Full Helmet";
@@ -2646,17 +2682,6 @@ class CfgVehicles
     model="Survivalists_Characters\headgear\srp_slimhelmet_g.p3d";
     repairableWithKits[]={8};
 		repairCosts[]={25};
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
 		attachments[]=
 		{
 			"NVG"
@@ -2783,7 +2808,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_Goggles_Head: Clothing
+  class SRP_Goggles_Head: HeadGear_Base
 	{	
     scope=2;
 		displayName="Old Goggles";
@@ -2796,13 +2821,6 @@ class CfgVehicles
 		{
 			"Headgear",
       "Eyewear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
 		};
 		weight=1200;
 		itemSize[]={2,1};
@@ -2861,7 +2879,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_Cowboy_Hat: Clothing
+  class SRP_Cowboy_Hat: HeadGear_Base
 	{	
 		scope=2;
 		displayName="Cowboy hat";
@@ -2871,17 +2889,6 @@ class CfgVehicles
 		noMask=0;
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
     rootClassName="SRP_Cowboy_Hat";
     colorVariants[]=
     {
@@ -2944,7 +2951,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Burlap_Mask: Clothing
+  class SRP_Burlap_Mask: HeadGear_Base
 	{	
 		scope=2;
 		displayName="Burlap Mask";
@@ -2953,14 +2960,6 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
     rotationFlags=16;
-		inventorySlot="Headgear";
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
 		weight=1000;
 		itemSize[]={2,2};
 		absorbency=0;
@@ -3018,7 +3017,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Alchemist_Hat: Clothing
+  class SRP_Alchemist_Hat: HeadGear_Base
 	{
 		scope=2;
 		displayName="Leather Hat";
@@ -3028,10 +3027,6 @@ class CfgVehicles
 		noMask=0;
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
     rootClassName="SRP_Alchemist_Hat";
     colorVariants[]=
     {
@@ -3039,13 +3034,6 @@ class CfgVehicles
       "Pink",
       "Night",
     }; 
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
     attachments[]=
 		{
       "SRP_DyeBottle1",
@@ -3101,7 +3089,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Cowboy_Hat_Carl: Clothing
+  class SRP_Cowboy_Hat_Carl: HeadGear_Base
 	{
 		scope=2;
 		displayName="Cowboy hat";
@@ -3111,17 +3099,6 @@ class CfgVehicles
 		noMask=0;
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot[]=
-		{
-			"Headgear"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
     rootClassName="";
     colorVariants[]={};
 		itemSize[]={2,2};
@@ -3180,9 +3157,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-
-  class SRP_CatEars_ColorBase: Clothing
+  class SRP_CatEars_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Cat Ears";
@@ -3194,14 +3169,8 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Headgear",
+      "Wig",
       "Extra"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
 		};
     attachments[]={};
 		itemSize[]={2,1};
@@ -3246,8 +3215,7 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_catears_co.paa"};
   };
-
-  class SRP_BunnyEars_ColorBase: Clothing
+  class SRP_BunnyEars_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Bunny Ears";
@@ -3259,14 +3227,8 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"Headgear",
-      "Extra"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
+      "Wig",
+      "Extra",
 		};
     attachments[]={};
 		itemSize[]={2,1};
@@ -3305,7 +3267,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_BunnyEars_Basic: SRP_BunnyEars_ColorBase
   {
     scope=2;
@@ -3318,9 +3279,7 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_BunnyEars_bunny_co.paa"};
   };
-
-
-  class SRP_OfficersHat_ColorBase: Clothing
+  class SRP_OfficersHat_ColorBase: HeadGear_Base
 	{
 		scope=0;
 		displayName="Officer Hat";
@@ -3331,9 +3290,6 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		inventorySlot[]={"Headgear"};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]={"Clothing","Headgear"};
 		// rootClassName="SRP_OfficersHat";
 		// colorVariants[]={"Pink","Purple"};
 		itemSize[]={2,1};

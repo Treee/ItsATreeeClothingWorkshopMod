@@ -10,24 +10,78 @@ class CfgPatches
 			"DZ_Characters",
       "DZ_Characters_Backpacks",
       "Mass_Textures",
-      "Dressupbox"
+      "Dressupbox",
+      "Alv_Tac_Gear_Backpacks"
 		};
 	};
 };
 class CfgVehicles
 {
   class Container_Base;
-  class Clothing;
-  class Clothing_Base;
+  class Backpack_Base;
 
-  //--------------------------------- MOD OVERRIDE
+//--------------------------------- MOD/VANILLA OVERRIDE
 	class MassNBC_Bag: Container_Base
 	{
 		scope=2;
 		itemsCargoSize[]={9,6}; // increase to account for gas mask
 	};
 
-  class HuntingBag: Clothing
+  class TaloonBag_ColorBase: Backpack_Base
+  {
+    rootClassName="TaloonBag";
+    colorVariants[]=
+    {
+      "Blue",
+      "Green",
+      "Orange",
+      "Violet",
+      "Black1",
+      "Black2"
+    };
+  };
+  class TortillaBag: Backpack_Base
+	{
+    itemsCargoSize[]={10,8};
+    repairableWithKits[]={5,3,2};
+		repairCosts[]={30,25,25};
+    rootClassName="TortillaBag";
+    colorVariants[]=
+    {
+      "MTP",
+      "ATAC",
+      "ATACSFG",
+      "USNAOR1",
+      "USNAOR2",
+      "SURPAT",
+      "MARPATWinter",
+      "EMP6",
+    };
+  };
+  class CourierBag: Backpack_Base
+  {
+    rootClassName="CourierBag";
+    colorVariants[]=
+    {
+      "Black",
+    };
+  };
+  class DryBag_ColorBase: Backpack_Base
+  {
+    rootClassName="DryBag";
+    colorVariants[]=
+    {
+      "Orange",
+      "Yellow",
+      "Blue",
+      "Green",
+      "Black",
+      "Red",
+      "Pink",
+      "MintBlue"
+    };
+  }; 
+  class HuntingBag: Backpack_Base
 	{
 		itemsCargoSize[]={10,7};
     repairableWithKits[]={5,3,2};
@@ -35,6 +89,7 @@ class CfgVehicles
     rootClassName="HuntingBag";
     colorVariants[]=
     {
+      "Hannah",
       "Black",
       "Gorka",
       "MTP",
@@ -47,32 +102,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class AssaultBag_ColorBase: Clothing
-	{
-    repairableWithKits[]={5,3,2};
-		repairCosts[]={30,25,25};
-    attachments[]+=
-		{
-			"CookingEquipment"
-		};
-    rootClassName="AssaultBag";
-    colorVariants[]=
-    {
-      "Ttsko",
-      "Green",
-      "Black",
-      "Denim",
-      "MTP",
-      "ATAC",
-      "ATACSFG",
-      "USNAOR1",
-      "USNAOR2",
-      "SURPAT",
-      "MARPATWinter",
-      "EMP6",
-    };
-  };
-  class MountainBag_ColorBase: Clothing
+  class MountainBag_ColorBase: Backpack_Base
 	{
 		itemsCargoSize[]={7,14};
     repairableWithKits[]={5,3,2};
@@ -95,14 +125,82 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class TortillaBag: Clothing
-	{
-    itemsCargoSize[]={10,8};
-    repairableWithKits[]={5,3,2};
-		repairCosts[]={30,25,25};
-    rootClassName="TortillaBag";
+  class SmershBag: Backpack_Base
+  {
+    rootClassName="SmershBag";
     colorVariants[]=
     {
+      "White",
+      "Black",
+      "Green",
+      "Tan",
+      "NBC",
+    };
+  }; 
+  class ChildBag_ColorBase: Backpack_Base
+  {
+    rootClassName="ChildBag";
+    colorVariants[]=
+    {
+      "Green",
+      "Red",
+      "Blue",
+    };
+  };
+  class GhillieBushrag_ColorBase: Backpack_Base
+  {
+    rootClassName="GhillieBushrag";
+    colorVariants[]=
+    {
+      "Tan",
+      "Woodland",
+      "Orange",
+      "Mossy",
+      "White",
+      "Black"
+    };
+  };
+  class GhillieTop_ColorBase: Backpack_Base
+  {
+    rootClassName="GhillieTop";
+    colorVariants[]=
+    {
+      "Tan",
+      "Woodland",
+      "Orange",
+      "Mossy",
+      "White",
+      "Black"
+    };
+  };
+  class GhillieSuit_ColorBase: Backpack_Base
+  {
+    rootClassName="GhillieSuit";
+    colorVariants[]=
+    {
+      "Tan",
+      "Woodland",
+      "Orange",
+      "Mossy",
+      "White",
+      "Black"
+    };
+  };
+  class AssaultBag_ColorBase: Backpack_Base
+	{
+    repairableWithKits[]={5,3,2};
+		repairCosts[]={30,25,25};
+    attachments[]+=
+		{
+			"CookingEquipment"
+		};
+    rootClassName="AssaultBag";
+    colorVariants[]=
+    {
+      "Ttsko",
+      "Black",
+      "Green",
+      "Denim",
       "MTP",
       "ATAC",
       "ATACSFG",
@@ -113,7 +211,16 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class AliceBag_ColorBase: Clothing
+  class CoyoteBag_ColorBase: Backpack_Base
+  {
+    rootClassName="CoyoteBag";
+    colorVariants[]=
+    {
+      "Brown",
+      "Green"
+    };
+  };
+  class AliceBag_ColorBase: Backpack_Base
 	{
 		itemsCargoSize[]={10,12};
     repairableWithKits[]={5,3,2};
@@ -134,94 +241,40 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class SmershBag: Clothing
+
+//--------------------------------- ALEVARIC STUFF
+  class ALV_MV_DuffleBag_Colorbase: Backpack_Base
   {
-    rootClassName="SmershBag";
+    rootClassName="ALV_MV_DuffleBag";
     colorVariants[]=
     {
-      "White",
-      "Black",
+      "Black",      
       "Green",
-      "Tan",
-      "NBC",
-    };
-  };
-  class DryBag_ColorBase: Clothing
-  {
-    rootClassName="DryBag";
-    colorVariants[]=
-    {
-      "Orange",
-      "Yellow",
-      "Blue",
-      "Green",
+      "Camo",      
       "Black",
-      "Red",
-      "Pink",
-      "MintBlue"
+      "Teal",
     };
   };
-  class CourierBag: Clothing
+  class ALV_MV_RifleHolster_Colorbase: Backpack_Base
   {
-    rootClassName="CourierBag";
+    rootClassName="ALV_MV_RifleHolster";
     colorVariants[]=
     {
-      "Black",
-    };
-  };
-  class TaloonBag_ColorBase: Clothing
-  {
-    rootClassName="TaloonBag";
-    colorVariants[]=
-    {
-      "Blue",
-      "Green",
-      "Orange",
-      "Violet",
-      "Black1",
-      "Black2"
-    };
-  };
-  class GhillieBushrag_ColorBase: Clothing
-  {
-    rootClassName="GhillieBushrag";
-    colorVariants[]=
-    {
+      "Black",      
       "Tan",
-      "Woodland",
-      "Orange",
-      "Mossy",
-      "White",
-      "Black"
     };
   };
-	class GhillieTop_ColorBase: Clothing
+  class ALV_MV_BackPouches_Colorbase: Backpack_Base
   {
-    rootClassName="GhillieTop";
+    rootClassName="ALV_MV_BackPouches";
     colorVariants[]=
     {
+      "Black",      
       "Tan",
-      "Woodland",
-      "Orange",
-      "Mossy",
-      "White",
-      "Black"
+      "Green"
     };
   };
-	class GhillieSuit_ColorBase: Clothing
-  {
-    rootClassName="GhillieSuit";
-    colorVariants[]=
-    {
-      "Tan",
-      "Woodland",
-      "Orange",
-      "Mossy",
-      "White",
-      "Black"
-    };
-  };
-  class ALV_MV_Slingbag_Colorbase: Clothing
+  class ALV_MV_Slingbag_Colorbase: Backpack_Base
   {
     rootClassName="ALV_MV_Slingbag";
     colorVariants[]=
@@ -238,10 +291,28 @@ class CfgVehicles
       "TigerStripe"
     };
   };
-
-  //--------------------------------- CUSTOM STUFF
-
-  class SRP_LeatherBackpack_Default: HuntingBag 
+  class ALV_MV_SmallPack_Colorbase: Backpack_Base
+  {
+    rootClassName="ALV_MV_SmallPack";
+    colorVariants[]=
+    {
+      "Black",      
+      "Tan",
+      "Green"
+    };
+  };
+  class ALV_MV_LargePack_Colorbase: Backpack_Base
+  {
+    rootClassName="ALV_MV_LargePack";
+    colorVariants[]=
+    {
+      "Black",      
+      "Tan",
+      "Green"
+    };
+  };
+//--------------------------------- CUSTOM STUFF
+  class SRP_LeatherBackpack_Default: Backpack_Base 
 	{
 		scope=2;
     displayName="Leather Backpack";
@@ -302,7 +373,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_SurvivalBackpack_Default: HuntingBag 
+  class SRP_SurvivalBackpack_Default: Backpack_Base 
 	{
 		scope=2;
     displayName="Survival Backpack";
@@ -347,7 +418,7 @@ class CfgVehicles
 			};
 		};    
 	};
-  class SRP_SlingBackpack_Default: AliceBag_ColorBase 
+  class SRP_SlingBackpack_Default: Backpack_Base 
 	{
 		scope=2;
     displayName="Sling Backpack";
@@ -405,7 +476,7 @@ class CfgVehicles
 			};
 		}; 
 	};
-  class SRP_Small_Military_Pack_Tan: HuntingBag 
+  class SRP_Small_Military_Pack_Tan: Backpack_Base 
 	{
 		scope=2;
 		displayName="Small Military Pack";
@@ -462,7 +533,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Big_Military_Pack_Tan: HuntingBag 
+  class SRP_Big_Military_Pack_Tan: Backpack_Base 
 	{
 		scope=2;
 		displayName="Large Military Pack";
@@ -522,7 +593,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Rifle_Bag_Green: HuntingBag 
+  class SRP_Rifle_Bag_Green: Backpack_Base 
   {
     scope=2;
     displayName="Rifle bag";
@@ -572,7 +643,7 @@ class CfgVehicles
       };
     };
   };
-  class SRP_Rolltop_Bag: Clothing
+  class SRP_Rolltop_Bag: Backpack_Base
 	{	
 		scope=2;
 		displayName="Rolltop Bag";
@@ -581,14 +652,6 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		rotationFlags=16;
-		inventorySlot="Back";
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Back"
-		};
 		weight=1000;
 		itemSize[]={5,4};
 		itemsCargoSize[]={8,8};
@@ -650,7 +713,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_MessengerBag_Leather: Clothing
+  class SRP_MessengerBag_Leather: Backpack_Base
 	{
 		scope=2;
 		displayName="Messenger Bag";
@@ -658,9 +721,6 @@ class CfgVehicles
 		model="Survivalists_Characters\backpacks\Leather_Satchel_g.p3d";
     repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot="Back";
-		simulation="clothing";
-		vehicleClass="Clothing";
     rootClassName="SRP_MessengerBag";
     colorVariants[]=
     {
@@ -738,7 +798,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Bergan_Backpack: Clothing
+  class SRP_Bergan_Backpack: Backpack_Base
 	{
 		scope=2;
 		displayName="Bergan Backpack";
@@ -746,9 +806,6 @@ class CfgVehicles
 		model="Survivalists_Characters\backpacks\Bergan_Backpack_g.p3d";
     repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot="Back";
-		simulation="clothing";
-		vehicleClass="Clothing";
 		rootClassName="SRP_Bergan_Backpack";
 		colorVariants[]={};
     itemInfo[]=
@@ -804,8 +861,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_Trader_Backpack_ColorBase: Clothing
+  class SRP_Trader_Backpack_ColorBase: Backpack_Base
 	{
 		scope=0;
 		displayName="Leather Backpack";
@@ -813,9 +869,6 @@ class CfgVehicles
 		model="Survivalists_Characters\backpacks\Trader_Backpack_g.p3d";
     repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot="Back";
-		simulation="clothing";
-		vehicleClass="Clothing";
 		rootClassName="SRP_Trader_Backpack";
 		colorVariants[]={};
     itemInfo[]=
@@ -868,4 +921,5 @@ class CfgVehicles
 			};
 		};
 	};
+//--------------------------------- END
 };

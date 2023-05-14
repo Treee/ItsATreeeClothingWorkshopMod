@@ -14,28 +14,37 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class Clothing;  
+  class Gloves_Base;  
   class MeleeDamage;
 //-------------------------------------BASE GAME OVERRIDE
-  class NBCGloves_ColorBase: Clothing
+  class WorkingGloves_ColorBase: Gloves_Base
 	{
-    heatIsolation=0.6;
-		repairableWithKits[]={5,6}; // duct tape and repair kit
     itemSize[]={1,2};
-		class Protection 
-    {
-      biological=1;
-    };
-    rootClassName="NBCGloves";
+    rootClassName="WorkingGloves";
     colorVariants[]=
     {
-      "Blue",
-      "Gray",
-      "Yellow",      
+      "Black",
+      "Beige",
+      "Brown",
+      "Yellow",
+      "White",
+      "Red"
     };
-	};
-
-  class TacticalGloves_ColorBase: Clothing
+  };
+  class HandsCover_Improvised: Gloves_Base
+	{
+    itemSize[]={1,2};
+    rootClassName="HandsCover_Improvised";
+    colorVariants[]=
+    {
+      "Green",
+      "Black",      
+      "Orange",      
+      "Blue",      
+      "Red",      
+    };
+  };
+  class TacticalGloves_ColorBase: Gloves_Base
 	{
 		itemSize[]={1,2};
     rootClassName="TacticalGloves";
@@ -53,35 +62,25 @@ class CfgVehicles
       "MARPATWinter",
       "EMP6",
     };
-  };
-  class HandsCover_Improvised: Clothing
+  }; 
+  class NBCGloves_ColorBase: Gloves_Base
 	{
+    heatIsolation=0.8;
+		repairableWithKits[]={5,6}; // duct tape and repair kit
     itemSize[]={1,2};
-    rootClassName="HandsCover_Improvised";
+		class Protection 
+    {
+      biological=1;
+    };
+    rootClassName="NBCGloves";
     colorVariants[]=
     {
-      "Green",
-      "Black",      
-      "Orange",      
-      "Blue",      
-      "Red",      
+      "Blue",
+      "Gray",
+      "Yellow",      
     };
-  };
-  class WorkingGloves_ColorBase: Clothing
-	{
-    itemSize[]={1,2};
-    rootClassName="WorkingGloves";
-    colorVariants[]=
-    {
-      "Black",
-      "Beige",
-      "Brown",
-      "Yellow",
-      "White",
-      "Red"
-    };
-  };
-  class SurgicalGloves_ColorBase: Clothing
+	};    
+  class SurgicalGloves_ColorBase: Gloves_Base
 	{
     rootClassName="SurgicalGloves";
     colorVariants[]=
@@ -101,7 +100,7 @@ class CfgVehicles
       "Yellow"      
     };
   };
-  class LeatherGloves_ColorBase: Clothing
+  class LeatherGloves_ColorBase: Gloves_Base
 	{
     rootClassName="LeatherGloves";
     itemSize[]={1,2};
@@ -120,7 +119,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class OMNOGloves_ColorBase: Clothing
+  class OMNOGloves_ColorBase: Gloves_Base
 	{
     rootClassName="OMNOGloves";
     itemSize[]={1,2};
@@ -132,74 +131,31 @@ class CfgVehicles
       "Black"
     };
   };
+  class WoolGloves_ColorBase: Gloves_Base
+	{
+    rootClassName="WoolGloves";
+    itemSize[]={1,2};
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+      "White"
+    };
+  };
+  class WoolGlovesFingerless_ColorBase: Gloves_Base
+	{
+    rootClassName="WoolGlovesFingerless";
+    itemSize[]={1,2};
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+      "White"
+    };
+  };
 //====================================== CUSTOM STUFF
-  
-	class HookHand: Clothing
-	{	
-		scope=2;
-		displayName="Metal Hook";
-    descriptionShort="Espen Industries. A simple prosthetic for those that need a hand.";
-		model="Survivalists_Characters\gloves\hook_g.p3d";
-		repairableWithKits[]={5,8};
-		repairCosts[]={30,25};
-		rotationFlags=16;
-		inventorySlot="Gloves";
-		simulation="clothing";
-		vehicleClass="Clothing";
-		weight=1000;
-		itemSize[]={1,2};
-		absorbency=0;
-		heatIsolation=0.80;
-		hiddenSelections[]=
-		{
-			"zbytek",
-			"personality"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Characters\gloves\data\hook_CO.paa"		
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Characters\gloves\hook_m.p3d";
-			female="Survivalists_Characters\gloves\hook_f.p3d";
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=300;
-					healthLevels[]=
-					{
-            {1.0,{"Survivalists_Characters\gloves\data\hook.rvmat"}},
-            {0.69999999,{"Survivalists_Characters\gloves\data\hook.rvmat"}},
-            {0.5,{"Survivalists_Characters\gloves\data\hook_damage.rvmat"}},
-            {0.30000001,{"Survivalists_Characters\gloves\data\hook_damage.rvmat"}},
-            {0.0,{"Survivalists_Characters\gloves\data\hook_destruct.rvmat"}}
-					};
-				};
-			};
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="pickUpPot_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="BallisticHelmet_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
-
   class MeleeStunHit: MeleeDamage
 	{
 		affectSkeleton=1.4;
@@ -2005,27 +1961,79 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_BoxingGloves_Colorbase: Clothing
+	class HookHand: Gloves_Base
+	{	
+		scope=2;
+		displayName="Metal Hook";
+    descriptionShort="Espen Industries. A simple prosthetic for those that need a hand.";
+		model="Survivalists_Characters\gloves\hook_g.p3d";
+		repairableWithKits[]={5,8};
+		repairCosts[]={30,25};
+		rotationFlags=16;
+		weight=1000;
+		itemSize[]={1,2};
+		absorbency=0;
+		heatIsolation=0.80;
+		hiddenSelections[]=
+		{
+			"zbytek",
+			"personality"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\gloves\data\hook_CO.paa"		
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\gloves\hook_m.p3d";
+			female="Survivalists_Characters\gloves\hook_f.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=300;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_Characters\gloves\data\hook.rvmat"}},
+            {0.69999999,{"Survivalists_Characters\gloves\data\hook.rvmat"}},
+            {0.5,{"Survivalists_Characters\gloves\data\hook_damage.rvmat"}},
+            {0.30000001,{"Survivalists_Characters\gloves\data\hook_damage.rvmat"}},
+            {0.0,{"Survivalists_Characters\gloves\data\hook_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_BoxingGloves_Colorbase: Gloves_Base
   {
     scope=0;
     displayName="Boxing Gloves";
     descriptionShort="Espen Industries. Boxing gloves manufactures to soften even the hardest blows.";
 		model="Survivalists_Characters\gloves\srp_boxinggloves_g.p3d";
-    inventorySlot[]=
-		{
-			"Gloves"
-		};
     attachments[]=
     {
       "SRP_Patch",
       "SRP_PatchMirror"
     };
-		simulation="clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Gloves"
-		};
 		weight=454;
 		itemSize[]={1,2};
 		varWetMax=0.79000002;
@@ -2093,4 +2101,5 @@ class CfgVehicles
 			};
 		};
   };
+//====================================== END
 };

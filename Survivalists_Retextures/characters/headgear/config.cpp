@@ -2037,4 +2037,47 @@ class CfgVehicles
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_TS_CO.paa"};
 	};
+  
+  class ALV_MV_TacCap_Backward_Cadpat: ALV_MV_TacCap_Backward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_CAD_CO.paa"};
+	};
+	class ALV_MV_TacCap_Backward_ChocoChip: ALV_MV_TacCap_Backward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_CHOC_CO.paa"};
+	};
+	class ALV_MV_TacCap_Backward_ERDL: ALV_MV_TacCap_Backward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_ERDL_CO.paa"};
+	};
+	class ALV_MV_TacCap_Backward_M05: ALV_MV_TacCap_Backward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_M05_CO.paa"};
+	};
+	class ALV_MV_TacCap_Backward_Marpat: ALV_MV_TacCap_Backward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_MPat_CO.paa"};
+	};
+	class ALV_MV_TacCap_Backward_MC_Black: ALV_MV_TacCap_Backward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_MCBlack_CO.paa"};
+	};
+	class ALV_MV_TacCap_Backward_TigerStripe: ALV_MV_TacCap_Backward_Colorbase
+	{
+		scope=2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_TS_CO.paa"};
+	};
 };

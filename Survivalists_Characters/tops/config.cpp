@@ -19,7 +19,7 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class Clothing;
+  class Top_Base;
   // Remove eventually once Lore dictates
   class SaltyCougar_Armband;
   class Skylar_BioZone_Protection: SaltyCougar_Armband
@@ -33,7 +33,7 @@ class CfgVehicles
     };
 	};
 //-------------------------------------MOD OVERRIDE
-	class Winter_Parka_Base: Clothing
+	class Winter_Parka_Base: Top_Base
   {
     rootClassName="Winter_Parka";
     colorVariants[]=
@@ -47,7 +47,7 @@ class CfgVehicles
       "BlueBlack"
     };
   }; 
-  class DUB_WoolCoat: Clothing
+  class DUB_WoolCoat: Top_Base
 	{
     rootClassName="DUB_WoolCoat";
     colorVariants[]=
@@ -58,17 +58,35 @@ class CfgVehicles
       "Purple",    
     };
 	};  
-  class DUB_FurCoat: Clothing
+  class DUB_FurCoat: Top_Base
   {
 		inventorySlot[] += {"Back"};
     heatIsolation=27;
   };
-  class jmc_BearPeltGhillieWhite: Clothing
+  class DUB_Poncho: Top_Base
+	{
+    rootClassName="DUB_Poncho";
+    colorVariants[]=
+    {
+      "Blue",
+      "Flake",
+      "Pink",
+      "Flowers",
+      "PinkFlowers",
+      "PurpleFlowers",
+      "PinkPurple",
+      "PurpleBlue",
+      "Rose",
+      "YellowRed",      
+    };
+  };
+  class jmc_BearPeltGhillieWhite: Top_Base
   {
     displayName="White Bear Ghillie";
 		descriptionShort="Cosmetic Only, does not protect against extreme cold.";
-  };
-  class ALV_MV_CryeG3_Top_Colorbase: Clothing
+  };   
+//------------------------------------ ALEVARIC OVERRIDE
+  class ALV_MV_CryeG3_Top_Colorbase: Top_Base
 	{
     rootClassName="ALV_MV_CryeG3_Top";
     colorVariants[]=
@@ -86,7 +104,7 @@ class CfgVehicles
       "TigerStripe",      
     };
 	}; 
-  class ALV_MV_CryeG3LongSleeve_Top_Colorbase: Clothing
+  class ALV_MV_CryeG3LongSleeve_Top_Colorbase: Top_Base
 	{
     rootClassName="ALV_MV_CryeG3LongSleeve_Top";
     colorVariants[]=
@@ -104,7 +122,7 @@ class CfgVehicles
       "TigerStripe",      
     };
 	}; 
-  class ALV_MV_Hoodie_Colorbase: Clothing
+  class ALV_MV_Hoodie_Colorbase: Top_Base
 	{
     rootClassName="ALV_MV_Hoodie";
     colorVariants[]=
@@ -117,7 +135,39 @@ class CfgVehicles
       "Black",
     };
 	}; 
-  class ALV_MV_ScoutingHoodie_Colorbase: Clothing
+  class ALV_MV_HoodieRolled_Colorbase: Top_Base
+	{
+    rootClassName="ALV_MV_HoodieRolled";
+    colorVariants[]=
+    {
+      "Grey",
+      "Tan",
+      "Red",
+      "Pink",
+      "Green",
+      "Black",
+    };
+	};
+  class ALV_MV_FlannelShirt_Colorbase: Top_Base
+	{
+    rootClassName="ALV_MV_FlannelShirt";
+    colorVariants[]=
+    {
+      "Red",
+      "Black",
+      "White",
+    };
+	};
+  class ALV_MV_TacticalCoat_Colorbase: Top_Base
+	{
+    rootClassName="ALV_MV_TacticalCoat";
+    colorVariants[]=
+    {      
+      "Black",
+      "Patterned",
+    };
+	};
+  class ALV_MV_ScoutingHoodie_Colorbase: Top_Base
 	{
     rootClassName="ALV_MV_ScoutingHoodie";
     colorVariants[]=
@@ -134,28 +184,56 @@ class CfgVehicles
       "MC_Black",    
       "TigerStripe",
     };
-	}; 
-
-///============== MODDED
-  class DUB_Poncho: Clothing
+	};
+  class ALV_MV_PullOver_Colorbase: Top_Base
 	{
-    rootClassName="DUB_Poncho";
+    rootClassName="ALV_MV_PullOver";
+    colorVariants[]=
+    {
+      "Black",
+    };
+	};
+  class ALV_MV_Robe_Colorbase: Top_Base
+	{
+    rootClassName="ALV_MV_Robe";
+    colorVariants[]={};
+	};
+  class ALV_MV_VestShirt_Colorbase: Top_Base
+	{
+    rootClassName="ALV_MV_VestShirt";
     colorVariants[]=
     {
       "Blue",
-      "Flake",
-      "Pink",
-      "Flowers",
-      "PinkFlowers",
-      "PurpleFlowers",
-      "PinkPurple",
-      "PurpleBlue",
-      "Rose",
-      "YellowRed",      
+      "White",
+      "Brown",
+      "Governer",
+      "Grey",
+      "Burdundy",
+      "RoyalPurple",
+      "Beige"
     };
-  };
+	};
+  class ALV_MV_SmartShirt_Colorbase: Top_Base
+	{
+    rootClassName="ALV_MV_SmartShirt";
+    colorVariants[]=
+    {
+      "Blue",
+      "White",
+      "Brown",
+      "Governer"
+    };
+	};
+  class ALV_MV_Parka_Colorbase: Top_Base
+	{
+    rootClassName="ALV_MV_Parka";
+    colorVariants[]=
+    {
+      "Black",
+    };
+	};  
 //----------------------------------- BASE GAME OVERRIDE
-  class NBCJacketBase: Clothing
+  class NBCJacketBase: Top_Base
 	{
 		heatIsolation=0.80000001;
 		absorbency=0;
@@ -171,7 +249,7 @@ class CfgVehicles
       biological=1;
     };
 	};
-  class Sweater_ColorBase: Clothing
+  class Sweater_ColorBase: Top_Base
   {
     rootClassName="Sweater";
     colorVariants[]=
@@ -186,7 +264,7 @@ class CfgVehicles
       "SantaRedBlueRL",
     };
   };
-  class Shirt_ColorBase: Clothing
+  class Shirt_ColorBase: Top_Base
   {
     rootClassName="Shirt";
     colorVariants[]=
@@ -207,7 +285,7 @@ class CfgVehicles
       "PlainCat", 
     };
   };
-  class TShirt_ColorBase: Clothing
+  class TShirt_ColorBase: Top_Base
   {
     rootClassName="TShirt";
     colorVariants[]=
@@ -249,7 +327,7 @@ class CfgVehicles
       "BlackCatdog",
     };
   };
-  class Hoodie_ColorBase: Clothing
+  class Hoodie_ColorBase: Top_Base
   {
     rootClassName="Hoodie";
     colorVariants[]=
@@ -268,7 +346,7 @@ class CfgVehicles
       "Pink",      
     };
   };
-  class TacticalShirt_ColorBase: Clothing
+  class TacticalShirt_ColorBase: Top_Base
 	{
     itemsCargoSize[]={7,5};
     rootClassName="TacticalShirt";
@@ -296,7 +374,7 @@ class CfgVehicles
       "Flecktarn",
     };
   };
-  class HikingJacket_ColorBase: Clothing
+  class HikingJacket_ColorBase: Top_Base
 	{
     rootClassName="HikingJacket";
     colorVariants[]=
@@ -314,7 +392,7 @@ class CfgVehicles
       "TigerStripe",
     };
   };
-  class Raincoat_ColorBase: Clothing
+  class Raincoat_ColorBase: Top_Base
 	{
     rootClassName="Raincoat";
     colorVariants[]=
@@ -329,7 +407,7 @@ class CfgVehicles
       "Leather",
     };
   };
-  class M65Jacket_ColorBase: Clothing
+  class M65Jacket_ColorBase: Top_Base
 	{
 		itemsCargoSize[]={8,6};
     rootClassName="M65Jacket";
@@ -363,7 +441,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class GorkaEJacket_ColorBase: Clothing
+  class GorkaEJacket_ColorBase: Top_Base
 	{
     itemsCargoSize[]={8,5};
 		heatIsolation=0.80000001;
@@ -400,7 +478,7 @@ class CfgVehicles
       "TigerStripe",
     };
   };
-  class RidersJacket_ColorBase: Clothing
+  class RidersJacket_ColorBase: Top_Base
 	{
     rootClassName="RidersJacket";
     colorVariants[]=
@@ -431,7 +509,7 @@ class CfgVehicles
       "SmileBeatles",
     };
   };
-  class WoolCoat_ColorBase: Clothing
+  class WoolCoat_ColorBase: Top_Base
 	{
     rootClassName="WoolCoat";
     colorVariants[]=
@@ -449,7 +527,7 @@ class CfgVehicles
       "Leather",      
     };
   };
-  class TrackSuitJacket_ColorBase: Clothing
+  class TrackSuitJacket_ColorBase: Top_Base
 	{
     rootClassName="TrackSuitJacket";
     colorVariants[]=
@@ -464,7 +542,7 @@ class CfgVehicles
       "ATAC",
     };
   };
-  class PoliceJacket: Clothing
+  class PoliceJacket: Top_Base
 	{
     rootClassName="PoliceJacket";
     colorVariants[]=
@@ -473,7 +551,7 @@ class CfgVehicles
       "Sheriff1",
     };
   };
-  class PoliceJacketOrel: Clothing
+  class PoliceJacketOrel: Top_Base
 	{
     rootClassName="PoliceJacketOrel";
     colorVariants[]=
@@ -482,7 +560,7 @@ class CfgVehicles
       "Swat",    
     };
   };
-  class ParamedicJacket_ColorBase: Clothing
+  class ParamedicJacket_ColorBase: Top_Base
 	{
     rootClassName="ParamedicJacket";
     colorVariants[]=
@@ -493,7 +571,7 @@ class CfgVehicles
       "BlackMedic"
     };
   };
-  class FirefighterJacket_ColorBase: Clothing
+  class FirefighterJacket_ColorBase: Top_Base
 	{
     rootClassName="FirefighterJacket";
     colorVariants[]=
@@ -502,7 +580,7 @@ class CfgVehicles
       "Black",
     };
   };
-  class PrisonUniformJacket: Clothing
+  class PrisonUniformJacket: Top_Base
 	{
     rootClassName="PrisonUniformJacket";
     colorVariants[]=
@@ -515,7 +593,7 @@ class CfgVehicles
       "Leather"
     };
   };
-  class MiniDress_ColorBase: Clothing
+  class MiniDress_ColorBase: Top_Base
 	{
     rootClassName="MiniDress";
     colorVariants[]=
@@ -531,7 +609,7 @@ class CfgVehicles
       "Leather",
     };
   };
-  class QuiltedJacket_ColorBase: Clothing
+  class QuiltedJacket_ColorBase: Top_Base
 	{
     rootClassName="QuiltedJacket";
     colorVariants[]=
@@ -565,7 +643,7 @@ class CfgVehicles
       "TealYellowStripe",      
     };
   };
-  class BomberJacket_ColorBase: Clothing
+  class BomberJacket_ColorBase: Top_Base
 	{
     rootClassName="BomberJacket";
     colorVariants[]=
@@ -582,7 +660,7 @@ class CfgVehicles
       "Leather",      
     };
   };
-  class LeatherJacket_ColorBase: Clothing
+  class LeatherJacket_ColorBase: Top_Base
 	{
     rootClassName="LeatherJacket";
     colorVariants[]=
@@ -593,7 +671,7 @@ class CfgVehicles
       "Black",      
     };
   };
-  class HuntingJacket_ColorBase: Clothing
+  class HuntingJacket_ColorBase: Top_Base
 	{
     rootClassName="HuntingJacket";
     colorVariants[]=
@@ -630,7 +708,7 @@ class CfgVehicles
       "BlackSkull",
     };
   };
-  class LeatherShirt_ColorBase: Clothing
+  class LeatherShirt_ColorBase: Top_Base
   {
     rootClassName="LeatherShirt";
     colorVariants[]=
@@ -645,7 +723,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class TTsKOJacket_ColorBase: Clothing
+  class TTsKOJacket_ColorBase: Top_Base
   {
     rootClassName="TTsKOJacket";
     colorVariants[]=
@@ -654,8 +732,7 @@ class CfgVehicles
       "Tan",      
     };
   };
-
-  class MedicalScrubsShirt_ColorBase: Clothing
+  class MedicalScrubsShirt_ColorBase: Top_Base
 	{
     rootClassName="MedicalScrubsShirt";
     colorVariants[]=
@@ -665,7 +742,7 @@ class CfgVehicles
       "White",
     };
   };
-  class NurseDress_ColorBase: Clothing
+  class NurseDress_ColorBase: Top_Base
   {
     heatIsolation=0.80000001;
     rootClassName="NurseDress";
@@ -692,7 +769,7 @@ class CfgVehicles
       "WhiteBowPink",
     };
   };
-  class USMCJacket_ColorBase: Clothing
+  class USMCJacket_ColorBase: Top_Base
   {
     rootClassName="USMCJacket";
     colorVariants[]=
@@ -701,7 +778,7 @@ class CfgVehicles
       "Woodland",
     };
   };
-  class Blouse_ColorBase: Clothing
+  class Blouse_ColorBase: Top_Base
   {
     rootClassName="Blouse";
     colorVariants[]=
@@ -713,7 +790,7 @@ class CfgVehicles
       "Leather",
     };
   };
-  class DenimJacket: Clothing
+  class DenimJacket: Top_Base
   {
     rootClassName="DenimJacket";
     colorVariants[]=
@@ -722,7 +799,7 @@ class CfgVehicles
       "Leather",
     };
   };
-  class JumpsuitJacket_ColorBase: Clothing
+  class JumpsuitJacket_ColorBase: Top_Base
   {
     rootClassName="JumpsuitJacket";
     colorVariants[]=
@@ -736,7 +813,7 @@ class CfgVehicles
       "FBIBlue",
     };
   };
-  class ManSuit_ColorBase: Clothing
+  class ManSuit_ColorBase: Top_Base
   {
     rootClassName="ManSuit";
     colorVariants[]=
@@ -755,7 +832,7 @@ class CfgVehicles
       "TweedSalmon",
     };
   };
-  class WomanSuit_ColorBase: Clothing
+  class WomanSuit_ColorBase: Top_Base
   {
     rootClassName="WomanSuit";
     colorVariants[]=
@@ -770,7 +847,7 @@ class CfgVehicles
       "White",
     };
   };
-  class TorsoCover_Improvised: Clothing
+  class TorsoCover_Improvised: Top_Base
   {
     rootClassName="TorsoCover_Improvised";
     colorVariants[]=
@@ -783,8 +860,8 @@ class CfgVehicles
     };
   };
 
-
-  class DUB_Monkrobe: Clothing
+//===================== MODDED OVERRIDE
+  class DUB_Monkrobe: Top_Base
   {
     rootClassName="DUB_Monkrobe";
     colorVariants[]=
@@ -805,7 +882,7 @@ class CfgVehicles
       "Purp",
     };
   };
-  class DUB_Duster: Clothing
+  class DUB_Duster: Top_Base
   {
     rootClassName="DUB_Duster";
     colorVariants[]=
@@ -823,8 +900,7 @@ class CfgVehicles
       "Red",
     };
   };
-
-  class Leather_Cloak_ColorBase: Clothing
+  class Leather_Cloak_ColorBase: Top_Base
 	{
     rootClassName="Leather_Cloak_down";
     colorVariants[]=
@@ -846,8 +922,7 @@ class CfgVehicles
 	};
 
 //===================== CUSTOM SHIRTS
-
-  class SRP_Bowtie_ColorBase: Clothing
+  class SRP_Bowtie_ColorBase: Top_Base
 	{
     scope=0;
 		displayName="Bow Tie";
@@ -858,11 +933,6 @@ class CfgVehicles
 			"Armband",
       "Extra",
       "Wig"
-		};
-		itemInfo[]=
-		{
-			"Clothing",
-			"Armband"
 		};
     rootClassName="SRP_Bowtie";
     colorVariants[]=
@@ -928,8 +998,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_PlatHoodie: Clothing
+  class SRP_PlatHoodie: Top_Base
 	{
     scope=2;
 		displayName="Hoodie";
@@ -937,11 +1006,6 @@ class CfgVehicles
 		model="Survivalists_Characters\tops\srp_plathoodie_g.p3d";
 		inventorySlot[]=
 		{
-			"Body"
-		};
-		itemInfo[]=
-		{
-			"Clothing",
 			"Body"
 		};
 		weight=850;
@@ -1040,13 +1104,11 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_PlatHoodie_Wolfbeard: SRP_PlatHoodie
   {
     scope=2;
   };
-
-  class SRP_Sweater_ColorBase: Clothing
+  class SRP_Sweater_ColorBase: Top_Base
 	{
     scope=0;
 		displayName="Turtleneck Sweater";
@@ -1054,11 +1116,6 @@ class CfgVehicles
 		model="Survivalists_Characters\tops\SRP_Sweater_g.p3d";
 		inventorySlot[]=
 		{
-			"Body"
-		};
-		itemInfo[]=
-		{
-			"Clothing",
 			"Body"
 		};
 		rotationFlags=64;
@@ -1164,8 +1221,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_Rolled_Shirt_ColorBase: Clothing
+  class SRP_Rolled_Shirt_ColorBase: Top_Base
 	{
 		scope=0;
 		displayName="Rolled up shirt";
@@ -1173,11 +1229,6 @@ class CfgVehicles
 		model="Survivalists_Characters\tops\SRP_Rolled_Shirt_g.p3d";
 		inventorySlot[]=
 		{
-			"Body"
-		};
-		itemInfo[]=
-		{
-			"Clothing",
 			"Body"
 		};
 		rotationFlags=64;
@@ -1284,8 +1335,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_ESPG3_TacShirt_Colorbase: Clothing
+  class SRP_ESPG3_TacShirt_Colorbase: Top_Base
   {
     scope=0;
     displayName="ESP-G3 Combat Shirt";
@@ -1293,11 +1343,6 @@ class CfgVehicles
     model="Survivalists_characters\tops\SRP_ESP_G3_TacShirt_g.p3d";
     inventorySlot[]=
     {
-      "Body"
-    };
-    itemInfo[]=
-    {
-      "Clothing",
       "Body"
     };
     rotationFlags=64;
@@ -1410,4 +1455,5 @@ class CfgVehicles
       };
     };
   };
+//===================== END
 };

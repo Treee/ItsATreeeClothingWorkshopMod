@@ -11,60 +11,99 @@ class CfgPatches
 			"DZ_Gear_Optics",
       "DZ_Characters_Glasses",
       "Ragged_Eyepatch", //windstride
-      "Eyepatch" //windstride
+      "Eyepatch", //windstride
+      "Alv_Tac_Gear_Glasses"
 		};
 	};
 };
 class CfgVehicles
 {
-  class Clothing;
+  class Glasses_Base;
   class NVGoggles;
-  // ========================== VANILLA
-  class SportGlasses_ColorBase: Clothing
+// ========================== VANILLA OVERRIDE
+  class SportGlasses_ColorBase: Glasses_Base
   {
-    inventorySlot[]+={      
-      "Extra"
+    inventorySlot[]+={"Extra"};
+  };
+  class AviatorGlasses: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class DesignerGlasses: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class ThickFramesGlasses: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class ThinFramesGlasses: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class TacticalGoggles: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class EyePatch_Improvised: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class EyeMask_ColorBase: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+    rootClassName="EyeMask";
+    colorVariants[]=
+    {
+      "Valentines",
+      "NewYears",
+      "Christmas",
+      "Dead",
+      "Black",
+      "Blue",
+      "Red",
+      "Yellow",
     };
   };
-  class AviatorGlasses: Clothing
+// ========================== ALEVARIC OVERRIDE
+  class ALV_MV_Ballistic_Glasses_Colorbase: Glasses_Base
   {
     inventorySlot[]+={"Extra"};
-  };
-  class DesignerGlasses: Clothing
-  {
-    inventorySlot[]+={"Extra"};
-  };
-  class ThickFramesGlasses: Clothing
-  {
-    inventorySlot[]+={"Extra"};
-  };
-  class ThinFramesGlasses: Clothing
-  {
-    inventorySlot[]+={"Extra"};
-  };
-  class TacticalGoggles: Clothing
-  {
-    inventorySlot[]+={"Extra"};
-  };
-  class EyePatch_Improvised: Clothing
-  {
-    inventorySlot[]+={"Extra"};
-  };
-  // ======================= Modded stuff
-  class Eyepatch: Clothing
-  {
-    inventorySlot[]+={      
-      "Extra"
+    rootClassName="ALV_MV_Ballistic_Glasses";
+    colorVariants[]=
+    {
+      "Blue",
     };
   };
-  class Ragged_Eyepatch: Clothing
+  class ALV_MV_Ballistic_Goggles_Colorbase: Glasses_Base
   {
-    inventorySlot[]+={      
-      "Extra"
+    inventorySlot[]+={"Extra"};
+    rootClassName="ALV_MV_Ballistic_Goggles";
+    colorVariants[]=
+    {
+      "Blue",
     };
   };
-  // ------------------------------ Custom Stuff
-
+  class ALV_MV_Ballistic_Visor_Colorbase: NVGoggles
+  {
+    rootClassName="ALV_MV_Ballistic_Visor";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green",
+    };
+  };
+// ======================= Modded stuff
+  class Eyepatch: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+  };
+  class Ragged_Eyepatch: Glasses_Base
+  {
+    inventorySlot[]+={"Extra"};
+  };
+// ------------------------------ Custom Stuff
   class SRP_NVGoggles_Default: NVGoggles
 	{
 		scope=2;
@@ -74,7 +113,6 @@ class CfgVehicles
 		repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
 	};
-
   class SRP_NVGoggles_Quad: NVGoggles
 	{
 		scope=2;
@@ -83,8 +121,7 @@ class CfgVehicles
 		model="Survivalists_Characters\glasses\SRP_QuadNVG.p3d";
 		repairableWithKits[]={5,7};
 		repairCosts[]={30,25};
-	};	
-
+	};
   class SRP_NVGoggles_ShortRange: NVGoggles
 	{
 		scope=2;
@@ -103,35 +140,34 @@ class CfgVehicles
 		};
 	};
 
-
-  class SRP_WeldingGoggles: AviatorGlasses
+  class SRP_WeldingGoggles: Glasses_Base
 	{
 		scope=2;
 		displayName="Welding Goggles";
     descriptionShort="Espen Industries. Full eye protection from very bright lights.";
 		model="Survivalists_Characters\glasses\srp_weldinggoggles_g.p3d";
+    inventorySlot[]+={"Extra"};
 		class ClothingTypes
 		{
 			male="Survivalists_Characters\glasses\srp_weldinggoggles_m.p3d";
 			female="Survivalists_Characters\glasses\srp_weldinggoggles_m.p3d";
 		};
 	};
-
-  class SRP_SteamPunkGoggles: AviatorGlasses
+  class SRP_SteamPunkGoggles: Glasses_Base
 	{
 		scope=2;
 		displayName="Steam Punk Goggles";
     rotationFlags=64;
     descriptionShort="Espen Industries. Through steam technology, these goggles offer maximum protection from air.";
 		model="Survivalists_Characters\glasses\srp_steampunkgoggles_g.p3d";
+    inventorySlot[]+={"Extra"};
 		class ClothingTypes
 		{
 			male="Survivalists_Characters\glasses\srp_steampunkgoggles_m.p3d";
 			female="Survivalists_Characters\glasses\srp_steampunkgoggles_m.p3d";
 		};
 	};
-
-  class SRP_Goggles_Face: Clothing
+  class SRP_Goggles_Face: Glasses_Base
   {	
 		scope=2;
 		displayName="Old Goggles";
@@ -139,14 +175,7 @@ class CfgVehicles
 		model="Survivalists_Characters\headgear\gogglesHead_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot="Eyewear";
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Headgear"
-		};
+		inventorySlot[]+={"Extra"};
 		weight=1000;
 		itemSize[]={2,1};
 		absorbency=0;
@@ -204,8 +233,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_EyePatch: Clothing
+  class SRP_EyePatch: Glasses_Base
 	{	
 		scope=2;
 		displayName="Eyepatch";
@@ -214,18 +242,7 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		rotationFlags=16;
-    inventorySlot[]=
-		{
-			"Eyewear",
-      "Extra"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Eyewear"
-		};
+    inventorySlot[]+={"Extra"};
 		weight=1000;
 		itemSize[]={1,1};
 		absorbency=0;
@@ -283,4 +300,5 @@ class CfgVehicles
 			};
 		};
 	};
+// ========================== END  
 };

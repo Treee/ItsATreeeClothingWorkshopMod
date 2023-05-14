@@ -12,102 +12,16 @@ class CfgPatches
       "Alv_Tac_Gear_Pants",
       "Kneepads_Jeans",
       "Galife_Pants",
+      "Alv_Tac_Gear_Pants"
 		};
 	};
 };
 class CfgVehicles
 {
-  class Clothing;
+  class Pants_Base;
 
-//-------------------------------------MODDED OVERRIDE
-  class Skinny_Jeans_ColorBase: Clothing
-  {
-    rootClassName="Skinny_Jeans";
-    colorVariants[]=
-    {
-      "Black",
-      "Blue",
-      "Chocolate",
-      "Coal",
-      "HeartBunnyPetal",
-      "HeartBunnySky",
-      "HeartPink",
-      "Lime",
-      "PurpleDark",
-      "RedBunny",
-      "TealBunny",
-      "YellowBunny"
-    };
-  };
-  class Galife_Pants_ColorBase: Clothing
-  {
-    rootClassName="Galife_Pants";
-    colorVariants[]=
-    {
-      "Olive",
-      "Navy",
-      "Blue",
-      "Coal",
-      "Green",
-      "Pink",
-      "Wool"      
-    };
-  };
-  class Leggings_Colorbase: Clothing
-  {
-    rootClassName="Leggings";
-    colorVariants[]=
-    {
-      "Blue",
-      "Blue1",
-      "Adidas",
-      "adidasKitty",
-      "AdidasPink",
-      "Red",
-      "Purple",
-      "Grey",
-      "Black",
-      "White",
-    };
-  };
-  class ALV_MV_CryeG3_Pants_Colorbase: Clothing
-  {
-    rootClassName="ALV_MV_CryeG3_Pants";
-    colorVariants[]=
-    {
-      "Black",
-      "Green",
-      "Tan",
-      "Brown",
-      "Cadpat",
-      "ChocoChip",
-      "ERDL",
-      "M05",
-      "Marpat",
-      "MC_Black",
-      "TigerStripe",      
-    };
-  };
-  class ALV_MV_ScoutingPants_Colorbase: Clothing
-  {
-    rootClassName="ALV_MV_ScoutingPants";
-    colorVariants[]=
-    {
-      "Black",
-      "Green",
-      "Tan",
-      "Brown",
-      "Cadpat",
-      "ChocoChip",
-      "ERDL",
-      "M05",
-      "Marpat",
-      "MC_Black",
-      "TigerStripe",      
-    };
-  };
 //-------------------------------------BASE GAME OVERRIDE
-  class Jeans_ColorBase: Clothing
+  class Jeans_ColorBase: Pants_Base
   {
     rootClassName="Jeans";
     colorVariants[]=
@@ -132,21 +46,7 @@ class CfgVehicles
       "CadPat_Blue",
     };
   };
-  class NBCPantsBase: Clothing
-	{
-    rootClassName="NBCPantsBase";
-    colorVariants[]=
-    {
-      "Orange",
-      "Gray",
-      "Yellow",
-    };
-		class Protection 
-    {
-      biological=1;
-    };
-	};
-  class CargoPants_ColorBase: Clothing
+  class CargoPants_ColorBase: Pants_Base
 	{
 		itemsCargoSize[]={7,4};
     rootClassName="CargoPants";
@@ -186,7 +86,16 @@ class CfgVehicles
       "TigerStripe",
     };
   };
-  class HunterPants_ColorBase: Clothing
+  class TTSKOPants: Pants_Base
+  {
+    rootClassName="TTSKOPants";
+    colorVariants[]=
+    {
+      "Green",
+      "Tan",
+    };
+  };
+  class HunterPants_ColorBase: Pants_Base
 	{
 		itemsCargoSize[]={8,6};
     rootClassName="HunterPants";
@@ -208,8 +117,8 @@ class CfgVehicles
       "EMP6",
       "TigerCamo"
     };
-  };
-  class CanvasPants_ColorBase: Clothing
+  };      
+  class CanvasPants_ColorBase: Pants_Base
 	{
     rootClassName="CanvasPants";
     colorVariants[]=
@@ -222,7 +131,7 @@ class CfgVehicles
       "Leather"
     };
   };
-  class CanvasPantsMidi_ColorBase: Clothing
+  class CanvasPantsMidi_ColorBase: Pants_Base
 	{
     rootClassName="CanvasPantsMidi";
     colorVariants[]=
@@ -235,7 +144,7 @@ class CfgVehicles
       "Leather"
     };
   };
-  class TrackSuitPants_ColorBase: Clothing
+  class TrackSuitPants_ColorBase: Pants_Base
 	{
     rootClassName="TrackSuitPants";
     colorVariants[]=
@@ -250,7 +159,7 @@ class CfgVehicles
       "ATAC",
     };
   };
-  class GorkaPants_ColorBase: Clothing
+  class GorkaPants_ColorBase: Pants_Base
 	{
 		itemsCargoSize[]={8,6};
     heatIsolation=0.80000001;
@@ -281,7 +190,7 @@ class CfgVehicles
       "TigerStripe",
     };
   };
-  class PolicePants: Clothing
+  class PolicePants: Pants_Base
 	{
     rootClassName="PolicePants";
     colorVariants[]=
@@ -290,7 +199,7 @@ class CfgVehicles
       "Sheriff2",      
     };
   };
-  class PolicePantsOrel: Clothing
+  class PolicePantsOrel: Pants_Base
 	{
     rootClassName="PolicePantsOrel";
     colorVariants[]=
@@ -299,7 +208,7 @@ class CfgVehicles
       "WinterCamo",      
     };
   };
-  class ParamedicPants_ColorBase: Clothing
+  class ParamedicPants_ColorBase: Pants_Base
 	{
     rootClassName="ParamedicPants";
     colorVariants[]=
@@ -310,7 +219,7 @@ class CfgVehicles
       "Black",
     };
   };
-  class FirefightersPants_ColorBase: Clothing
+  class FirefightersPants_ColorBase: Pants_Base
 	{
     rootClassName="FirefightersPants";
     colorVariants[]=
@@ -319,7 +228,7 @@ class CfgVehicles
       "Black",
     };
   };
-  class PrisonUniformPants: Clothing
+  class PrisonUniformPants: Pants_Base
 	{
     rootClassName="PrisonUniformPants";
     colorVariants[]=
@@ -329,7 +238,7 @@ class CfgVehicles
       "Leather",
     };
   };
-  class LeatherPants_ColorBase: Clothing
+  class LeatherPants_ColorBase: Pants_Base
   {
     rootClassName="LeatherPants";
     colorVariants[]=
@@ -347,7 +256,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class MedicalScrubsPants_ColorBase: Clothing
+  class MedicalScrubsPants_ColorBase: Pants_Base
   {
     rootClassName="MedicalScrubsPants";
     colorVariants[]=
@@ -357,7 +266,7 @@ class CfgVehicles
       "White"
     };
   };
-  class USMCPants_ColorBase: Clothing
+  class USMCPants_ColorBase: Pants_Base
   {
     rootClassName="USMCPants";
     colorVariants[]=
@@ -366,7 +275,7 @@ class CfgVehicles
       "Woodland",      
     };
   };
-  class SlacksPants_ColorBase: Clothing
+  class SlacksPants_ColorBase: Pants_Base
   {
     rootClassName="SlacksPants";
     colorVariants[]=
@@ -385,7 +294,21 @@ class CfgVehicles
       "TweedSalmon",
     };
   };
-  class Breeches_ColorBase: Clothing
+  class NBCPantsBase: Pants_Base
+	{
+    rootClassName="NBCPantsBase";
+    colorVariants[]=
+    {
+      "Orange",
+      "Gray",
+      "Yellow",
+    };
+		class Protection 
+    {
+      biological=1;
+    };
+	};
+  class Breeches_ColorBase: Pants_Base
   {
     rootClassName="Breeches";
     colorVariants[]=
@@ -402,7 +325,7 @@ class CfgVehicles
       "Pink",
     };
   };
-  class ShortJeans_ColorBase: Clothing
+  class ShortJeans_ColorBase: Pants_Base
   {
     rootClassName="ShortJeans";
     colorVariants[]=
@@ -419,7 +342,7 @@ class CfgVehicles
       "Leather"
     };
   };
-  class Skirt_ColorBase: Clothing
+  class Skirt_ColorBase: Pants_Base
   {
     rootClassName="Skirt";
     colorVariants[]=
@@ -430,7 +353,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class JumpsuitPants_ColorBase: Clothing
+  class JumpsuitPants_ColorBase: Pants_Base
   {
     rootClassName="JumpsuitPants";
     colorVariants[]=
@@ -440,17 +363,8 @@ class CfgVehicles
       "Grey",
       "Red",
     };
-  };
-  class TTSKOPants: Clothing
-  {
-    rootClassName="TTSKOPants";
-    colorVariants[]=
-    {
-      "Green",
-      "Tan",
-    };
-  };
-  class LegsCover_Improvised: Clothing
+  };  
+  class LegsCover_Improvised: Pants_Base
   {
     rootClassName="LegsCover_Improvised";
     colorVariants[]=
@@ -462,9 +376,107 @@ class CfgVehicles
       "Red",      
     };
   };
-
+//-------------------------------------ALEVARIC OVERRIDE
+  class ALV_MV_CryeG3_Pants_Colorbase: Pants_Base
+  {
+    rootClassName="ALV_MV_CryeG3_Pants";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+      "Brown",
+      "Cadpat",
+      "ChocoChip",
+      "ERDL",
+      "M05",
+      "Marpat",
+      "MC_Black",
+      "TigerStripe",      
+    };
+  };
+  class ALV_MV_SurvivorPants_Colorbase: Pants_Base
+  {
+    rootClassName="ALV_MV_SurvivorPants";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",    
+    };
+  };
+  class ALV_MV_ScoutingPants_Colorbase: Pants_Base
+  {
+    rootClassName="ALV_MV_ScoutingPants";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+      "Brown",
+      "Cadpat",
+      "ChocoChip",
+      "ERDL",
+      "M05",
+      "Marpat",
+      "MC_Black",
+      "TigerStripe",      
+    };
+  };
+  
+//-------------------------------------MODDED OVERRIDE
+  class Skinny_Jeans_ColorBase: Pants_Base
+  {
+    rootClassName="Skinny_Jeans";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Chocolate",
+      "Coal",
+      "HeartBunnyPetal",
+      "HeartBunnySky",
+      "HeartPink",
+      "Lime",
+      "PurpleDark",
+      "RedBunny",
+      "TealBunny",
+      "YellowBunny"
+    };
+  };
+  class Galife_Pants_ColorBase: Pants_Base
+  {
+    rootClassName="Galife_Pants";
+    colorVariants[]=
+    {
+      "Olive",
+      "Navy",
+      "Blue",
+      "Coal",
+      "Green",
+      "Pink",
+      "Wool"      
+    };
+  };
+  class Leggings_Colorbase: Pants_Base
+  {
+    rootClassName="Leggings";
+    colorVariants[]=
+    {
+      "Blue",
+      "Blue1",
+      "Adidas",
+      "adidasKitty",
+      "AdidasPink",
+      "Red",
+      "Purple",
+      "Grey",
+      "Black",
+      "White",
+    };
+  };
 //======================================= CUSTOM CLOTHING
-  class SRP_ESPG3_TacPants_Colorbase: Clothing
+  class SRP_ESPG3_TacPants_Colorbase: Pants_Base
   {
     scope=0;
     displayName="ESP-G3 Combat Pants";
@@ -472,12 +484,6 @@ class CfgVehicles
     model="Survivalists_characters\pants\SRP_ESP_G3_TacPants_g.p3d";
     inventorySlot[]=
     {
-      "Legs"
-    };
-    simulation="clothing";
-    itemInfo[]=
-    {
-      "Clothing",
       "Legs"
     };
     itemSize[]={4,3};
@@ -586,4 +592,5 @@ class CfgVehicles
       };
     };
   };  
+//-------------------------------------END
 };

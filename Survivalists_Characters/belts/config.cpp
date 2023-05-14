@@ -8,20 +8,16 @@ class CfgPatches
 		requiredAddons[]=
 		{      
 			"DZ_Characters",
-      "DZ_Characters_Belts"
+      "DZ_Characters_Belts",
+      "Alv_Tac_Gear_Belt"
 		};
 	};
 };
 class CfgVehicles
 {
-  class Clothing;
-  class PlateCarrierHolster;
-  class MilitaryBelt;
-  class CivilianBelt;
-  class PlateCarrierPouches;
-  class NylonKnifeSheath;
-
-  class LeatherBelt_ColorBase: Clothing
+  class Belt_Base;
+//============================== VANILLA OVERRIDE
+  class LeatherBelt_ColorBase: Belt_Base
 	{
     rootClassName="LeatherBelt";
     colorVariants[]=
@@ -32,8 +28,53 @@ class CfgVehicles
       "Black",
     };
 	};
-
-  class SRP_LegHolster: CivilianBelt 
+//============================== ALEVARIC OVERRIDE
+  class AlV_MV_WarBelt_Colorbase: Belt_Base
+	{
+    rootClassName="AlV_MV_WarBelt";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+    };
+	};
+  class AlV_MV_DroplegBelt_Colorbase: Belt_Base
+	{
+    rootClassName="AlV_MV_DroplegBelt";
+    colorVariants[]=
+    {
+      "Black"
+    };
+	};
+  class ALV_MV_LeatherBelt_Colorbase: Belt_Base
+	{
+    rootClassName="ALV_MV_LeatherBelt";
+    colorVariants[]=
+    {
+      "Leather"
+    };
+	};
+  class AlV_MV_DroplegBeltSingle_Colorbase: Belt_Base
+	{
+    rootClassName="AlV_MV_DroplegBeltSingle";
+    colorVariants[]=
+    {
+      "Black"
+    };
+	};
+  class AlV_MV_WarBeltDropLeg_Colorbase: Belt_Base
+	{
+    rootClassName="AlV_MV_WarBeltDropLeg";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan",
+    };
+	};
+//============================== CUSTOM STUFF
+  class SRP_LegHolster: Belt_Base 
   {
 		scope=2;
 		displayName="Belt and leg holster";
@@ -45,10 +86,6 @@ class CfgVehicles
       "Belt_Back"
 		};
     itemsCargoSize[]={5,4};
-    inventorySlot[]=
-		{
-			"Hips"
-		};
     hiddenSelections[]=
     {
       "zbytek"
@@ -85,8 +122,7 @@ class CfgVehicles
 			};
 		};
   };
-
-  class SRP_PoliceBelt: MilitaryBelt
+  class SRP_PoliceBelt: Belt_Base
   {
 		scope=2;
 		displayName="Police Belt";
@@ -99,10 +135,6 @@ class CfgVehicles
       "Belt_Back",
       "WalkieTalkie",
       "Chemlight"
-		};
-    inventorySlot[]=
-		{
-			"Hips"
 		};
     itemsCargoSize[]={3,3};
     hiddenSelections[]=
@@ -141,8 +173,7 @@ class CfgVehicles
 			};
 		};
   };
-
-  class SRP_TacticalBelt_ColorBase: Clothing 
+  class SRP_TacticalBelt_ColorBase: Belt_Base 
   {
 		scope=0;
 		displayName="Tactical Belt";
@@ -159,10 +190,6 @@ class CfgVehicles
       "SmallPouch2",
       "LargePouch1",
       "LargePouch2"
-		};
-    inventorySlot[]=
-		{
-			"Hips"
 		};
     itemsCargoSize[]={3,1};
     hiddenSelections[]=
@@ -220,8 +247,7 @@ class CfgVehicles
 			};
 		};
   };
-  
- 	class SRP_Elbow_Knee_Pads_ColorBase: Clothing
+ 	class SRP_Elbow_Knee_Pads_ColorBase: Belt_Base
 	{	
 		scope=0;
 		displayName="Elbow and Knee pads";
@@ -235,8 +261,6 @@ class CfgVehicles
       "Hips",
       "Extra"
 		};
-		simulation="clothing";
-		vehicleClass="Clothing";
 		itemInfo[]=
 		{
 			"Vest",
@@ -305,8 +329,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_Military_Belt_ColorBase: Clothing
+  class SRP_Military_Belt_ColorBase: Belt_Base
   {
 		scope=0;
 		displayName="Military Belt";
@@ -414,8 +437,7 @@ class CfgVehicles
 			};
 		};
   };
-
-	class SRP_Knife_Sheath_ColorBase: Clothing
+	class SRP_Knife_Sheath_ColorBase: Belt_Base
 	{
 		scope=0;
 		displayName="Knife Sheath";
@@ -440,12 +462,6 @@ class CfgVehicles
     inventorySlot[]=
 		{
 			"Belt_Back"
-		};
-		vehicleClass="Clothing";
-		itemInfo[]=
-		{
-			"Clothing",
-			"Belt"
 		};
 		weight=110;
 		itemSize[]={3,1};
@@ -497,19 +513,16 @@ class CfgVehicles
 			};
 		};	
 	};
-
-  class SRP_Car_WoodenDerby: Clothing
+  class SRP_Car_WoodenDerby: Belt_Base
 	{	
 		scope=2;
 		displayName="Wooden Derby Car";
     descriptionShort="Espen Industries. A prop car made to satisfy shareholders.";
 		model="Survivalists_Characters\belts\srp_carwoodenderby_g.p3d";
     attachments[]={};		
-    vehicleClass="Clothing";
-		simulation="clothing";
-		inventorySlot[]=
+		inventorySlot[]+=
 		{
-			"Hips"
+			"Extra"
 		};
 		itemInfo[]=
 		{
@@ -572,7 +585,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_Car_WoodenDerby_Metal: SRP_Car_WoodenDerby
 	{	
 		scope=2;
@@ -627,8 +639,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_Pouch_Belt: Clothing
+  class SRP_Pouch_Belt: Belt_Base
 	{	
 		scope=2;
 		displayName="Leather Belt";
@@ -642,17 +653,11 @@ class CfgVehicles
 		};
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};		
-    inventorySlot[]=
-		{
-			"Hips"
-		};		simulation="clothing";
-		vehicleClass="Clothing";
 		weight=1000;
 		itemSize[]={3,2};
 		itemsCargoSize[]={5,6};
 		absorbency=0;
 		heatIsolation=0.80;
-		noMask=0;
 		hiddenSelections[]=
 		{
 			"zbytek",
@@ -703,8 +708,7 @@ class CfgVehicles
 			};
 		};
 	};
-  
-  class SRP_Holster_Belt: Clothing
+  class SRP_Holster_Belt: Belt_Base
 	{	
 		scope=2;
 		displayName="Leather Belt";
@@ -719,11 +723,6 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		rotationFlags=4;
-    inventorySlot[]=
-		{
-			"Hips"
-		};		simulation="clothing";
-		vehicleClass="Clothing";
 		weight=1000;
 		itemSize[]={3,2};
 		itemsCargoSize[]={4,6};
@@ -777,8 +776,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_TacticalHolster_ColorBase: Clothing
+  class SRP_TacticalHolster_ColorBase: Belt_Base
 	{
 		scope=0;
 		displayName="Drop leg Holster";
@@ -792,12 +790,6 @@ class CfgVehicles
 		};
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
-		inventorySlot[]=
-		{
-			"Hips"
-		};
-		simulation="clothing";
-		vehicleClass="Clothing";
 		weight=1000;
 		itemSize[]={3,2};
 		itemsCargoSize[]={4,5};
@@ -851,8 +843,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-  class SRP_DualTacticalHolster_ColorBase: Clothing
+  class SRP_DualTacticalHolster_ColorBase: Belt_Base
   {
     scope=0;
     displayName="Double drop leg Holster";
@@ -867,12 +858,6 @@ class CfgVehicles
     };
     repairableWithKits[]={5,8};
     repairCosts[]={30,25};
-    inventorySlot[]=
-    {
-      "Hips"
-    };
-    simulation="clothing";
-    vehicleClass="Clothing";
     weight=1000;
     itemSize[]={3,2};
     itemsCargoSize[]={5,5};
@@ -926,4 +911,5 @@ class CfgVehicles
       };
     };
   };
+//============================== END
 };
