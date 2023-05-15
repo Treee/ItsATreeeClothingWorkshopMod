@@ -13,6 +13,8 @@ modded class PluginRecipesManager
     RegisterRecipe(new SRP_CraftBBPBlueprints);
     
     //==========================================================UNREGISTER RECIPES
+      UnregisterRecipe("CraftArrow");
+      UnregisterRecipe("CraftArrowBone");
       UnregisterRecipe("DUB_Guitar_R");
       UnregisterRecipe("FillSyringe");
       UnregisterRecipe("BBPCraftStepLadder");
@@ -790,6 +792,7 @@ modded class PluginRecipesManager
     //==========================================================Weapons
       RegisterRecipe(new Craft_SRP_WeaponPipeAxe_Kit);
       RegisterRecipe(new Craft_SRP_WeaponPipeAxe);    
+      RegisterRecipe(new SRP_CraftPoisonBolt);    
     //==========================================================Liquids
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Pelts);
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Flesh);
