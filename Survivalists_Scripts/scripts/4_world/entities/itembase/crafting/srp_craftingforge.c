@@ -105,7 +105,7 @@ class SRP_StoneForgeWorkbench extends SRP_Fireplace_Transformer
   }
   override int DamagePerTransformEvent()
   {
-    return 5;
+    return 15;
   }
 };
 

@@ -43,7 +43,7 @@ class SRP_BrewingWorkbench extends SRP_Fireplace_Transformer
   }
   override int DamagePerTransformEvent()
   {
-    return 5;
+    return 15;
   }
 };
 class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench
