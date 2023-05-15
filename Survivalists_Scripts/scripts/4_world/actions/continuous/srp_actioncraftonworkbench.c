@@ -73,9 +73,12 @@ class SRP_ActionCraftOnWorkbench extends ActionSRPVariantIdOption
 	{
 		if (super.SetupAction(player, target, item, action_data, extra_data))
 		{
-			if (!target && !target.GetObject())
-				return false;
-			SetupAnimation(target.GetObject().GetType());
+      if (!GetGame().IsDedicatedServer())
+      {
+        if (!target || !target.GetObject())
+          return false;
+        SetupAnimation(target.GetObject().GetType());
+      }
 			return true;
 		}
 		return false;

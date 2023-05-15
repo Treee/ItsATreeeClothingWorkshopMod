@@ -114,6 +114,8 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterCybernetic10Recipe());
     craftableItems.Insert(RegisterCybernetic11Recipe());
     craftableItems.Insert(RegisterCybernetic12Recipe());
+    // CYBERNETICS
+    craftableItems.Insert(Register_CrossbowBroadBolt_Recipe());
     // Print(string.Format("======================================= SMELTING RECIPES REGISTERED"));
     // PrintRecipes();
   }
@@ -1881,6 +1883,21 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Leather", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+//===========================MISC
+  SRP_CraftableItem Register_CrossbowBroadBolt_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Ammo_BroadBolt", "Crossbow Bolt - Iron BroadBolt");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.BRONZE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.IRON, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalRod1", SRP_COLOR.IRON, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Leather", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Sticks", SRP_COLOR.NONE, 10));
     return craftableItem;
   }
 //===========================END
