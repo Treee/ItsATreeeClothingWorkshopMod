@@ -9,7 +9,7 @@ modded class DayZGame
   protected ref SRP_AmmoRecipes m_AmmoRecipes;
   protected ref SRP_DynamicTreasureHunt m_DynamicDreasureHunt;
   protected ref SRP_AdminHelper m_AdminHelper;
-  
+  protected ref SRP_MeatFarmingBlockConfig m_MeatFarmingConfig;
   private ref SRPProfileOptions m_SRPProfileOptions;
 
   private bool m_IsLeftShiftHolding;
@@ -24,6 +24,7 @@ modded class DayZGame
     m_MetalWorkingRecipes = new SRP_MetalWorkbenchRecipes();
     m_AmmoRecipes = new SRP_AmmoRecipes();
     m_DynamicDreasureHunt = new SRP_DynamicTreasureHunt();
+    m_MeatFarmingConfig = new SRP_MeatFarmingBlockConfig();
     m_AdminHelper = new SRP_AdminHelper();
     m_SRPProfileOptions = new SRPProfileOptions();
   }
@@ -47,6 +48,7 @@ modded class DayZGame
 	{
 		m_SRPProfileOptions.SetProfileOptionVal(option, value);
 	}
+
 
   void SetSRPConfigGlobal(SRPConfig config)
   {
@@ -88,6 +90,10 @@ modded class DayZGame
   SRP_AdminHelper GetAdminHelper()
   {
     return m_AdminHelper;
+  }
+  SRP_MeatFarmingBlockConfig GetSRPMeatFarmingConfigGlobal()
+  {
+    return m_MeatFarmingConfig;
   }
 
   void RemoveMutantSurvivorClassTypes()

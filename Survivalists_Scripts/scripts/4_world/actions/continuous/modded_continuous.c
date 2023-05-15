@@ -31,58 +31,136 @@ modded class ActionSkinning
 {
   override void OnFinishProgressServer(ActionData action_data)
   {
-    super.OnFinishProgressServer(action_data);
-    if (action_data.m_Target) 
-    {
-      EntityAI body;
-      Class.CastTo(body, action_data.m_Target.GetObject());
-      // Print("body is type: " + body.GetType());
-      if (body.IsKindOf("SurvivorBase"))
+    PlayerBase body;
+    if (Class.CastTo(body, action_data.m_Target.GetObject())) 
+    {    
+      if (!body.CanYieldSkinnedProducts() || body.IsPlayerMutant())
       {
-        ItemBase added_item;
-        vector pos_rnd = body.GetPosition() + Vector(Math.RandomFloat01() - 0.5, 0, Math.RandomFloat01() - 0.5);
-        int randomBoneSpawnChance = Math.RandomIntInclusive(0, 100);
-        string bodypart = "";//SRP_Brain
+        body.SetAsSkinned();
 
-        if (randomBoneSpawnChance > 49 && randomBoneSpawnChance < 79)
-        {
-          bodypart = "SRP_Brain";
-        }
-        else if (randomBoneSpawnChance > 78 && randomBoneSpawnChance < 82)
-        {
-          bodypart = "SRP_SkeletonFrame";
-        }
-        else if (randomBoneSpawnChance > 81 && randomBoneSpawnChance < 85)
-        {
-          bodypart = "SRP_SkeletonFrame_Skull";
-        }
-        else if (randomBoneSpawnChance > 84 && randomBoneSpawnChance < 88)
-        {
-          bodypart = "SRP_SkeletonFrame_ArmLeft";
-        }
-        else if (randomBoneSpawnChance > 87 && randomBoneSpawnChance < 91)
-        {
-          bodypart = "SRP_SkeletonFrame_ArmRight";
-        }
-        else if (randomBoneSpawnChance > 90 && randomBoneSpawnChance < 94)
-        {
-          bodypart = "SRP_SkeletonFrame_Pelvis";
-        }
-        else if (randomBoneSpawnChance > 93 && randomBoneSpawnChance < 97)
-        {
-          bodypart = "SRP_SkeletonFrame_LegLeft";
-        }
-        else if (randomBoneSpawnChance > 96)
-        {
-          bodypart = "SRP_SkeletonFrame_LegRight";
-        }
+        EntityAI bodyEAI;
+        Class.CastTo(bodyEAI, action_data.m_Target.GetObject());
 
-        if (bodypart != "")
-        {
-          Class.CastTo(added_item, GetGame().CreateObjectEx(bodypart, pos_rnd, false));
-          added_item.PlaceOnSurface();
-        }
+        DestroyPlayerBody(bodyEAI, action_data.m_Player);
+        MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_MainItem, UADamageApplied.SKINNING);
+		    PluginLifespan module_lifespan = PluginLifespan.Cast( GetPlugin( PluginLifespan ) );
+		    module_lifespan.UpdateBloodyHandsVisibility( action_data.m_Player, true );
+        
+        if (body.IsPlayerMutant()) // mutants should still yield bones
+          CreateSkeletalBone(body.GetPosition());
+
+        return; // short circuit
       }
+
+      CreateSkeletalBone(body.GetPosition());
+    }
+    super.OnFinishProgressServer(action_data);
+  }
+  void DestroyPlayerBody(EntityAI body, PlayerBase otherPlayer)
+  {
+    PlayerBase body_PB = PlayerBase.Cast(body);
+    
+    if (body_PB.IsRestrained() && body_PB.GetHumanInventory().GetEntityInHands())
+      MiscGameplayFunctions.TransformRestrainItem(body_PB.GetHumanInventory().GetEntityInHands(), null, otherPlayer, body_PB);
+    if (body_PB.IsWearingSplint())
+    {
+      EntityAI entity = otherPlayer.SpawnEntityOnGroundOnCursorDir("Splint", 0.5);
+      EntityAI attachment;
+      ItemBase new_item = ItemBase.Cast(entity);
+      Class.CastTo(attachment, body_PB.GetItemOnSlot("Splint_Right"));
+      if ( attachment && attachment.GetType() == "Splint_Applied" )
+      {
+        if (new_item)
+        {
+          MiscGameplayFunctions.TransferItemProperties(attachment,new_item);
+          if (GetGame().IsServer())
+          {
+            if (new_item.GetHealthLevel() < 4)
+            {
+              int newDmgLevel = new_item.GetHealthLevel() + 1;
+              
+              float max = new_item.GetMaxHealth("","");
+              
+              switch ( newDmgLevel )
+              {
+                case GameConstants.STATE_BADLY_DAMAGED:
+                  new_item.SetHealth( "", "", max * GameConstants.DAMAGE_BADLY_DAMAGED_VALUE );
+                  break;
+      
+                case GameConstants.STATE_DAMAGED:
+                  new_item.SetHealth( "", "", max * GameConstants.DAMAGE_DAMAGED_VALUE );
+                  break;
+      
+                case GameConstants.STATE_WORN:
+                  new_item.SetHealth( "", "", max * GameConstants.DAMAGE_WORN_VALUE );
+                  break;
+                
+                case GameConstants.STATE_RUINED:
+                  new_item.SetHealth( "", "", max * GameConstants.DAMAGE_RUINED_VALUE );
+                  break;
+                
+                default:
+                  break;
+              }
+            }
+          }
+        }
+        attachment.Delete();
+      }
+    }
+    
+    DropArrows(body);
+    int deadBodyLifetime;
+    if ( GetCEApi() )
+    {
+      deadBodyLifetime = GetCEApi().GetCEGlobalInt( "CleanupLifetimeDeadPlayer" );
+      if ( deadBodyLifetime <= 0 )
+      {
+        deadBodyLifetime = 3600;
+      }
+    }
+    array<EntityAI> children = new array<EntityAI>;
+    body_PB.GetInventory().EnumerateInventory(InventoryTraversalType.LEVELORDER, children);
+    int count = children.Count();
+    for (int i = 0; i < count; ++i)
+    {
+      EntityAI child = children.Get(i);
+      if ( child )
+      {
+        body_PB.GetInventory().DropEntity(InventoryMode.SERVER, body_PB, child);
+        child.SetLifetime( deadBodyLifetime );
+      }
+    }
+		GetGame().ObjectDelete(body); // Temporal deletion of the body
+  }
+  void CreateSkeletalBone(vector bodyPosition)
+  {
+    ItemBase added_item;
+    vector pos_rnd = bodyPosition + Vector(Math.RandomFloat01() - 0.5, 0, Math.RandomFloat01() - 0.5);
+    int randomBoneSpawnChance = Math.RandomIntInclusive(0, 100);
+    string bodypart = "";//SRP_Brain
+
+    if (randomBoneSpawnChance > 49 && randomBoneSpawnChance < 79)
+      bodypart = "SRP_Brain";
+    else if (randomBoneSpawnChance > 78 && randomBoneSpawnChance < 82)
+      bodypart = "SRP_SkeletonFrame";
+    else if (randomBoneSpawnChance > 81 && randomBoneSpawnChance < 85)
+      bodypart = "SRP_SkeletonFrame_Skull";
+    else if (randomBoneSpawnChance > 84 && randomBoneSpawnChance < 88)
+      bodypart = "SRP_SkeletonFrame_ArmLeft";
+    else if (randomBoneSpawnChance > 87 && randomBoneSpawnChance < 91)
+      bodypart = "SRP_SkeletonFrame_ArmRight";
+    else if (randomBoneSpawnChance > 90 && randomBoneSpawnChance < 94)
+      bodypart = "SRP_SkeletonFrame_Pelvis";
+    else if (randomBoneSpawnChance > 93 && randomBoneSpawnChance < 97)
+      bodypart = "SRP_SkeletonFrame_LegLeft";
+    else if (randomBoneSpawnChance > 96)
+      bodypart = "SRP_SkeletonFrame_LegRight";
+
+    if (bodypart != "")
+    {
+      Class.CastTo(added_item, GetGame().CreateObjectEx(bodypart, pos_rnd, false));
+      added_item.PlaceOnSurface();
     }
   }
 };

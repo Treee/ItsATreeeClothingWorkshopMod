@@ -14,6 +14,7 @@ modded class PlayerBase
   protected bool m_HeavyItemInHandsSprintDisable = false;
   protected bool m_HeavyItemEquippedSprintDisable = false;
   protected bool m_IsPlayerMutant = false;
+  protected bool m_CanYieldSkinnedProducts = true;
 
   protected float m_TotalContaminationProtection = 0;
 
@@ -70,6 +71,15 @@ modded class PlayerBase
       GetDayZGame().GetAdminHelper().InsertBulkCompItem(time, GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), equippedItems);
       m_AdminLog.DirectAdminLogPrint(string.Format("ADMIN HELPER::||%1", GetEquippedItems()));
 		}
+    if (GetGame().IsDedicatedServer())
+    {
+      if (GetDayZGame().GetSRPMeatFarmingConfigGlobal().IsBlockedFromGivingMeat(GetIdentity().GetId()))
+      {
+        SetCanYieldSkinnedProducts(false);
+      }
+      GetDayZGame().GetSRPMeatFarmingConfigGlobal().AddIDToBlockedMeatFarmers(GetIdentity().GetId());
+    }
+
 		super.EEKilled( killer );
 	};
 	override bool HandleRemoteItemManipulation(int userDataType, ParamsReadContext ctx)
@@ -91,6 +101,14 @@ modded class PlayerBase
       return super.HandleRemoteItemManipulation(userDataType, ctx);
   }
 
+  void SetCanYieldSkinnedProducts(bool state)
+  {
+    m_CanYieldSkinnedProducts = state;
+  }
+  bool CanYieldSkinnedProducts()
+  {
+    return m_CanYieldSkinnedProducts;
+  }
   override bool CanSprint()
   {    
     if (IsSprintDisabledByHeavyItemInHands())
