@@ -15,6 +15,7 @@ modded class PlayerBase
   protected bool m_HeavyItemEquippedSprintDisable = false;
   protected bool m_IsPlayerMutant = false;
   protected bool m_CanYieldSkinnedProducts = true;
+  bool m_IsSoftSurrendered = false;
 
   protected float m_TotalContaminationProtection = 0;
 
@@ -100,7 +101,49 @@ modded class PlayerBase
     else	
       return super.HandleRemoteItemManipulation(userDataType, ctx);
   }
+  override void Init()
+  {
+    super.Init();
+    SetIsSoftSurrendered(false);
+    RegisterNetSyncVariableBool("m_IsSoftSurrendered");
+  }
+  override bool CanManipulateInventory()
+	{
+    if (IsSoftSurrendered())		
+		  return true;
+    return super.CanManipulateInventory();
+	}
+  override bool CanReleaseAttachment (EntityAI attachment)
+	{
+		if(IsSoftSurrendered())
+			return false;
+		return super.CanReleaseAttachment(attachment);
+	}
+	
+	override bool CanReleaseCargo (EntityAI cargo)
+	{
+		if(IsSoftSurrendered())
+			return false;
+		return super.CanReleaseCargo(cargo);
+	}
 
+  void SetIsSoftSurrendered(bool state)
+  {
+    m_IsSoftSurrendered = state;
+    SetSynchDirty();
+  }
+  override bool IsRestrained()
+	{
+		return m_IsRestrained || IsSoftSurrendered();
+	}
+  bool IsSoftSurrendered()
+  {
+    return m_IsSoftSurrendered;
+  }
+  void AutoCloseSoftSurrender()
+  {
+    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater( SetIsSoftSurrendered, 15000, false, false );
+  }
   void SetCanYieldSkinnedProducts(bool state)
   {
     m_CanYieldSkinnedProducts = state;
@@ -334,6 +377,7 @@ modded class PlayerBase
     AddAction(ActionPackLadder, InputActionMap);      
     AddAction(ActionPackSRPSleepingBag, InputActionMap);          
     AddAction(ActionSearchChickenCoop, InputActionMap); 
+    AddAction(SRP_ActionSetPlayerSoftSurrender, InputActionMap); 
 
     // AddAction(ActionTurnRubixCubeClockwise_Row1, InputActionMap);      
     // AddAction(ActionTurnRubixCubeClockwise_Row2, InputActionMap);      

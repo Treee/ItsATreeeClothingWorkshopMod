@@ -130,17 +130,19 @@ modded class ItemBase
       }
 		}
 	}
-  // override bool CanBeMovedOverride()
-	// {
-  //   PlayerBase player = GetHierarchyRootPlayer();    
-  //   if (player && player.IsSurrendered())
-  //   {
-  //     // Print("is surrendered, no takey");
-  //     return false;
-  //   }
-  //   return super.CanBeMovedOverride();
-	// }
-
+  override bool CanRemoveFromCargo(EntityAI parent)
+	{
+		if (!super.CanRemoveFromCargo(parent))
+      return false; // short circuit items we already cannot take out
+    
+    PlayerBase itemParent;
+    if (Class.CastTo(itemParent, GetHierarchyRootPlayer()))
+    {
+      if (itemParent.IsAlive() && itemParent.IsSoftSurrendered())
+        return false;      
+    }
+    return true;
+	}
   // make sure to use the slot name not the item name....
 	ItemBase GetItemOnSlot(string slot_type)
 	{
