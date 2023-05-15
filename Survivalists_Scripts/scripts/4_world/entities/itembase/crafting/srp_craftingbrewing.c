@@ -41,6 +41,10 @@ class SRP_BrewingWorkbench extends SRP_Fireplace_Transformer
     }
     return yield;
   }
+  override int DamagePerTransformEvent()
+  {
+    return 5;
+  }
 };
 class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench
 {
@@ -222,6 +226,10 @@ class SRP_PrefabCrafting_alchemybrewing extends SRP_BrewingWorkbench
   {
     return false;
   }
+  override int DamagePerTransformEvent()
+  {
+    return 0;
+  }
 };
 class SRP_PrefabCrafting_copperbrewing extends SRP_BrewingWorkbench
 {
@@ -301,6 +309,10 @@ class SRP_PrefabCrafting_copperbrewing extends SRP_BrewingWorkbench
   override bool CanBeDeconstructed()
   {
     return false;
+  }
+  override int DamagePerTransformEvent()
+  {
+    return 0;
   }
 };
 class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
@@ -391,5 +403,9 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
   override bool CanBeDeconstructed()
   {
     return false;
+  }
+  override int DamagePerTransformEvent()
+  {
+    return 0;
   }
 };

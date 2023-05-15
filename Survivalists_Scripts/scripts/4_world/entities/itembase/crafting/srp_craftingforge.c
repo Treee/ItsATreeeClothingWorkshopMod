@@ -103,6 +103,10 @@ class SRP_StoneForgeWorkbench extends SRP_Fireplace_Transformer
   {
     return true;
   }
+  override int DamagePerTransformEvent()
+  {
+    return 5;
+  }
 };
 
 class SRP_AdvancedStoneForgeWorkbench extends SRP_StoneForgeWorkbench{};
@@ -114,11 +118,19 @@ class SRP_PrefabCrafting_basicforge extends SRP_StoneForgeWorkbench
   {
     return false;
   }
+  override int DamagePerTransformEvent()
+  {
+    return 0;
+  }
 };
 class SRP_PrefabCrafting_advancedforge extends SRP_StoneForgeWorkbench
 {
   override bool CanBeDeconstructed()
   {
     return false;
+  }
+  override int DamagePerTransformEvent()
+  {
+    return 0;
   }
 };

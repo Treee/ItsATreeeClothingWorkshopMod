@@ -335,6 +335,8 @@ class SRP_Fireplace_Transformer extends SRP_FireplaceBase
       { 
         HandleHeatTransformation();
         ResetHeatTimer();
+        if (DamagePerTransformEvent() > 0)
+          AddHealth(-DamagePerTransformEvent());
       }            
       IncrementHeatTimer();
     }
@@ -378,5 +380,9 @@ class SRP_Fireplace_Transformer extends SRP_FireplaceBase
       item.Delete();
     }
     super.AddDamageToItemByFireEx(item, can_be_ruined, pAttachment);
+  }
+  int DamagePerTransformEvent()
+  {
+    return 0;
   }
 };

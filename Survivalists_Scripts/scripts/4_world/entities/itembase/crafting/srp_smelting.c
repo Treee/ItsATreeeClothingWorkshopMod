@@ -463,10 +463,10 @@ class SRP_Mining_StoneChunk_Coke extends SRP_Mining_StoneChunk_ColorBase
   {
     // Print(" Heat event: " + m_HeatCounter);
     // should be like 10 minutes or so
-    if (GetHeatTimer() > 150 && GetQuantity() > 5)
+    if (GetHeatTimer() > 150 && GetQuantity() > 3)
     {
       GetGame().CreateObjectEx("SRP_Mining_RawOre_Coal", GetPosition(), false);
-      AddQuantity(-6);
+      AddQuantity(-4);
     }
   }
   
