@@ -106,3 +106,19 @@ class SRP_StoneForgeWorkbench extends SRP_Fireplace_Transformer
 };
 
 class SRP_AdvancedStoneForgeWorkbench extends SRP_StoneForgeWorkbench{};
+
+
+class SRP_PrefabCrafting_basicforge extends SRP_StoneForgeWorkbench
+{
+  override bool CanBeDeconstructed()
+  {
+    return false;
+  }
+};
+class SRP_PrefabCrafting_advancedforge extends SRP_StoneForgeWorkbench
+{
+  override bool CanBeDeconstructed()
+  {
+    return false;
+  }
+};

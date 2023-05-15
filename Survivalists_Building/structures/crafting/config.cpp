@@ -781,4 +781,102 @@ class CfgVehicles
 			};      
     };
 	};
+  class SRP_PrefabCrafting_basicforge: SRP_PrefabCrafting_Base 
+	{
+    scope=1;
+		displayName="Stone Forge";
+		descriptionShort="A workbench with tools for applying heat to raw and refined metals.";
+		model="Survivalists_Building\structures\crafting\srp_forge_stonebasic.p3d";
+    varTemperatureMax=1000;
+    attachments[]=
+		{
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+      "SRP_FuelCoal"
+		};
+    hiddenSelections[]={"ashes","zbytek"};
+    hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Building\structures\crafting\data\srp_stoneforge_co.paa"};
+    hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stonegroundnoemit.rvmat","Survivalists_Building\structures\crafting\data\srp_stoneforge.rvmat"};
+		class GUIInventoryAttachmentsProps
+		{
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick",
+          "SRP_FuelCoal"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
+	};
+  class SRP_PrefabCrafting_advancedforge: SRP_PrefabCrafting_Base 
+	{
+    scope=1;
+		displayName="Advanced Stone Forge";
+		descriptionShort="A workbench with tools for applying heat to raw and refined metals.";
+		model="Survivalists_Building\structures\crafting\srp_forge_stoneadvanced.p3d";
+    varTemperatureMax=1000;
+    attachments[]=
+		{
+			"Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+      "SRP_FuelCoal"
+		};
+    hiddenSelections[]={"ashes","zbytek"};
+    hiddenSelectionsTextures[]={"\dz\gear\cooking\data\stoneground_co.paa","Survivalists_Building\structures\crafting\data\srp_forgeandbellows_co.paa"};
+    hiddenSelectionsMaterials[]={"\dz\gear\cooking\data\stonegroundnoemit.rvmat","Survivalists_Building\structures\crafting\data\srp_forgeandbellows.rvmat"};
+		class GUIInventoryAttachmentsProps
+		{
+			class Fuel
+			{
+				name="$STR_attachment_Fuel0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Firewood",
+					"WoodenStick",
+          "SRP_FuelCoal"
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+			class Kindling
+			{
+				name="$STR_attachment_Kindling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"Rags",
+					"MedicalBandage",
+					"Paper",
+					"Bark"
+				};
+				icon="set:dayz_inventory image:cat_fp_kindling";
+			};
+		};
+	};
 };
