@@ -115,13 +115,13 @@ modded class PluginLifespan
   {
     return {      
       "LeftCheekBruise",
-      "LeftCheek",
+      "LeftCheekScar",
       "LeftEyeBearClaw",
       "LeftEyeBearClawFaded",
       "LeftEyeBruise",
-      "RightCheek",
+      "RightCheekScar",
       "RightKeloid",
-      "RightLong",
+      "RightLongScar",
     };
   }
 
