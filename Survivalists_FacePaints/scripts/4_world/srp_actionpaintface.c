@@ -12,8 +12,8 @@ class ActionPaintFaceCB extends ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.SHAVE);
-		// m_ActionData.m_ActionComponent = new CAContinuousTime(1.0);
+		// m_ActionData.m_ActionComponent = new CAContinuousTime(UATimeSpent.SHAVE);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(1.0);
 	}
 };
 

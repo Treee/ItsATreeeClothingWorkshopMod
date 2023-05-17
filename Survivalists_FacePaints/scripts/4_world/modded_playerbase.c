@@ -6,7 +6,7 @@ modded class PlayerBase
   {
     super.Init();
     m_FacePaintState = -1;
-    RegisterNetSyncVariableInt("m_FacePaintState", -1, m_ModuleLifespan.GetFacePaintCount(GetType()));
+    RegisterNetSyncVariableInt("m_FacePaintState", -1, m_ModuleLifespan.GetFacePaintCount());
   }
 
   override void OnVariablesSynchronized()
@@ -77,38 +77,21 @@ modded class PlayerBase
 
   string GetCurrentCamoIndexName(int index)
   {
-    string value = "";
     if ( m_ModuleLifespan )
-		{
-      FacePaintStyle nextFacePaint = m_ModuleLifespan.GetFacePaintMaterials(GetType(), index);
-      if (nextFacePaint)
-      {
-        value = nextFacePaint.GetPaintName();
-      }
-    }
-    return value;
+      return m_ModuleLifespan.GetPaintNameByIndex(index);
+    return "";
   }
 
   string GetCurrentCamoMaterialPath(int index)
-  {
-    string value = "";
+  {    
     if ( m_ModuleLifespan )
 		{
-      FacePaintStyle nextFacePaint = m_ModuleLifespan.GetFacePaintMaterials(GetType(), index);
-      if (nextFacePaint)
-      {
-        value = nextFacePaint.GetMaterial(1);
-      }
       if (index == -1)
-      {
-        nextFacePaint = m_ModuleLifespan.GetFacePaintMaterials(GetType(), 0);
-        if (nextFacePaint)
-        {
-          value = nextFacePaint.GetMaterial(0);
-        }
-      }
+        return m_ModuleLifespan.GetFemaleBaseMaterial(GetType());
+      else
+        return m_ModuleLifespan.GetPaintPathFemale(index, GetType());
     }
-    return value;
+    return "";
   }
   
   void UpdateFacePaintVisual()
@@ -118,14 +101,12 @@ modded class PlayerBase
     {
       string camoMaterial = GetCurrentCamoMaterialPath(m_FacePaintState);
       if (camoMaterial != "")
-      {
         SetFaceMaterial(camoMaterial);
-      }
     }
 	}
 
   int GetPlayerFacePaintCount()
   {
-    return m_ModuleLifespan.GetFacePaintCount(GetType());
+    return m_ModuleLifespan.GetFacePaintCount();
   }
 };

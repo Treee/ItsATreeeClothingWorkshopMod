@@ -1,65 +1,10 @@
 modded class PluginLifespan
 {	
-  protected ref map<string, ref array<ref FacePaintStyle>> m_FacePaintOptions;
-
+  protected int m_TotalCountFacePaints;
 	override void LoadFromCfg()
 	{
     super.LoadFromCfg();
-
-		m_FacePaintOptions = new map<string, ref array<ref FacePaintStyle>>;
-
-		string config_name = "CfgVehicles";
-		int config_count = GetGame().ConfigGetChildrenCount( config_name );
-			
-		int i, j, k, l, m;		
-		for ( i = 0; i < config_count; i++ )
-		{
-			string survivor_name = "";
-			GetGame().ConfigGetChildName( config_name, i, survivor_name );
-			
-			if ( survivor_name != "" && survivor_name != "access" )
-			{
-				if ( GetGame().IsKindOf(survivor_name, "SurvivorMale_Base")  ||  GetGame().IsKindOf(survivor_name, "SurvivorFemale_Base") )
-				{
-					string survivor_path = config_name + " " + survivor_name;
-					int survivor_lifespan_count = GetGame().ConfigGetChildrenCount( survivor_path );
-          
-          array<ref FacePaintStyle> facePaint_styles = new array< ref FacePaintStyle>;
-          int facepaintindex = 0;
-					for ( j = 0; j < survivor_lifespan_count; j++ )
-					{
-						string survivor_facepaint_name = "";
-						GetGame().ConfigGetChildName( survivor_path, j, survivor_facepaint_name );
-						
-            string suvivor_bloodyhands_normalpath = survivor_path + " BloodyHands";
-						string survivor_facepaint_path = survivor_path + " " + survivor_facepaint_name;
-
-						if ( survivor_facepaint_name.Contains("FacePaint_") )
-						{
-							string paint_material, paint_material_unshaved, paint_material_bearded, normal_material;
-							string path_normal = suvivor_bloodyhands_normalpath + " mat_normal";
-							string path_paint = survivor_facepaint_path + " mat_paint";
-							string path_paint_unshaved = survivor_facepaint_path + " mat_paint_unshaved";
-							string path_paint_bearded = survivor_facepaint_path + " mat_paint_bearded";
-
-		        	TStringArray parts = new TStringArray;
-              survivor_facepaint_name.Split("_", parts);
-							GetGame().ConfigGetText(path_normal, normal_material);
-							GetGame().ConfigGetText(path_paint, paint_material);
-							GetGame().ConfigGetText(path_paint_unshaved, paint_material_unshaved);
-							GetGame().ConfigGetText(path_paint_bearded, paint_material_bearded);
-
-              facePaint_styles.Insert(new FacePaintStyle(parts[1],normal_material, paint_material, paint_material_unshaved, paint_material_bearded,facepaintindex) );
-              facepaintindex++;
-						}
-					}
-          if (facePaint_styles.Count() > 0)
-          {
-            m_FacePaintOptions.Set(survivor_name, facePaint_styles);
-          }
-				}
-			}
-		}
+    m_TotalCountFacePaints = GetFacePaintCamoOptions().Count() + GetFacePaintFlagOptions().Count() + GetFacePaintMaskOptions().Count() + GetFacePaintScarOptions().Count();
 	}
 
   override protected void SetPlayerLifespanLevel( PlayerBase player, LifespanLevel level )
@@ -76,44 +21,206 @@ modded class PluginLifespan
       SetPaintedFaceMaterial(player, level);
     }
   }
-
-  FacePaintStyle GetFacePaintMaterials(string player_class, int camoIndex = -1 )
-	{		
-    array< ref FacePaintStyle> facepaint_styles = m_FacePaintOptions.Get( player_class );
-		
-		if ( facepaint_styles != NULL )
-		{
-      if (camoIndex > facepaint_styles.Count() - 1)
-      {
-        camoIndex = camoIndex % facepaint_styles.Count();
-      }
-
-			for ( int i = facepaint_styles.Count() - 1; i >= 0; i-- )
-			{
-				FacePaintStyle facepaint = facepaint_styles.Get( i );
-        if (facepaint)
-        {
-          if (camoIndex == facepaint.GetPaintIndex())
-          {
-            return facepaint;              
-          }
-        }
-			}
-		}
-    return NULL;
-	}
-
-  int GetFacePaintCount(string player_class)
+  string GetFemaleBaseMaterial(string playerType)
   {
-    array< ref FacePaintStyle> facepaint_styles = m_FacePaintOptions.Get( player_class );		
-		if ( facepaint_styles != NULL )
-		{
-      return facepaint_styles.Count();
-    }
-    return 0;
+    if ( m_BloodyHands.Contains(playerType))
+      return m_BloodyHands.Get(playerType).GetMaterial(BloodyHands.MATERIAL_TYPE_NORMAL);    
+    return "";
   }
 
+  int GetFacePaintCount()
+  {
+    return m_TotalCountFacePaints;
+  }
 
+  TStringArray GetFacePaintCamoOptions()
+  {
+    return {
+      "Bosnia",
+      "Bulgaria1",
+      "Bulgaria2",
+      "Clown1",
+      "Croatia",
+      "Czech1",
+      "Czech2",
+      "Desert",
+      "Digital",
+      "DigitalBlue",
+      "DragonScale",
+      "DragonScaleRed",
+      "France",
+      "Germany",
+      "Hungary1",
+      "Hungary2",
+      "Macedonia",
+      "Olive",
+      "Poland1",
+      "Poland2",
+      "Romania1",
+      "Romania2",
+      "Slovenia",
+      "UK",
+      "USA",
+      "Winter",
+      "Woodland",
+      "WoodlandGreen",
+      "WoodlandRed",
+      "Yugoslavia",
+    };
+  }
+  TStringArray GetFacePaintFlagOptions()
+  {
+    return {      
+      "Brazil",
+      "Germany",
+      "Italy",
+      "Argentina",
+      "France",
+      "England",
+      "Spain",
+      "Netherlands",
+      "Uruguay",
+      "Sweden",
+      "Belgium",
+      "Ukraine",
+      "Russia",
+      "Serbia",
+      "Mexico",
+      "Poland",
+      "Hungary",
+      "Portugal",
+      "Switzerland",
+      "Czechia",
+      "Austria",
+      "Chile",
+      "Croatia",
+      "Denmark",
+      "Paraguay",
+      "Colombia",
+      "USA",
+      "Romania",
+      "SouthKorea",
+      "Nigeria",
+      "Japan",
+      "Scottland",
+    };
+  }
+  TStringArray GetFacePaintMaskOptions()
+  {
+    return {      
+      "SkullFace",
+    };
+  }
+  TStringArray GetFacePaintScarOptions()
+  {
+    return {      
+      "LeftCheekBruise",
+      "LeftCheek",
+      "LeftEyeBearClaw",
+      "LeftEyeBearClawFaded",
+      "LeftEyeBruise",
+      "RightCheek",
+      "RightKeloid",
+      "RightLong",
+    };
+  }
+
+  string GetPaintByIndex(int index)
+  {
+    int array1Count = GetFacePaintCamoOptions().Count();
+    int array2Count = GetFacePaintFlagOptions().Count() + array1Count;
+    int array3Count = GetFacePaintMaskOptions().Count() + array2Count;
+    int array4Count = GetFacePaintScarOptions().Count() + array3Count;
+    // Print(string.Format("arr1: %1 arr2: %2 arr3: %3 arry: %4 index: %5", array1Count, array2Count, array3Count, array4Count, index));
+    int newIndex = index;
+    if (index < array1Count)
+    {
+      // use camo paints, index is smallest index possible
+      return string.Format("fp_%1", GetFacePaintCamoOptions().Get(newIndex));
+    }
+    else if (index >= array1Count && index < array2Count)
+    {
+      // use flag paints
+      newIndex -= array1Count;
+      return string.Format("fpf_%1", GetFacePaintFlagOptions().Get(newIndex));
+    }
+    else if (index >= array2Count && index < array3Count)
+    {
+      // use mask paints
+      newIndex -= array2Count;
+      return string.Format("fpm_%1", GetFacePaintMaskOptions().Get(newIndex));
+    }
+    else if (index >= array3Count && index < array4Count)
+    {
+      // use scar paints
+      newIndex -= array3Count;
+      return string.Format("fps_%1", GetFacePaintScarOptions().Get(newIndex));
+    }
+    return "error";
+  }
+  string GetPaintNameByIndex(int index)
+  {
+    int array1Count = GetFacePaintCamoOptions().Count();
+    int array2Count = GetFacePaintFlagOptions().Count() + array1Count;
+    int array3Count = GetFacePaintMaskOptions().Count() + array2Count;
+    int array4Count = GetFacePaintScarOptions().Count() + array3Count;
+    // Print(string.Format("arr1: %1 arr2: %2 arr3: %3 arry: %4 index: %5", array1Count, array2Count, array3Count, array4Count, index));
+    int newIndex = index;
+    if (index < array1Count)
+    {
+      // use camo paints, index is smallest index possible
+      return GetFacePaintCamoOptions().Get(newIndex);
+    }
+    else if (index >= array1Count && index < array2Count)
+    {
+      // use flag paints
+      newIndex -= array1Count;
+      return GetFacePaintFlagOptions().Get(newIndex);
+    }
+    else if (index >= array2Count && index < array3Count)
+    {
+      // use mask paints
+      newIndex -= array2Count;
+      return GetFacePaintMaskOptions().Get(newIndex);
+    }
+    else if (index >= array3Count && index < array4Count)
+    {
+      // use scar paints
+      newIndex -= array3Count;
+      return GetFacePaintScarOptions().Get(newIndex);
+    }
+    return "error";
+  }
+
+  protected string GetPaintPathMale(int facepaintIndex, string materialName)
+  {
+    string facepaintCategory = GetPaintByIndex(facepaintIndex);
+    TStringArray parts = new TStringArray;
+    materialName.Split("\\", parts);
+    string mat1 = materialName;
+    if (parts.Count() == 6)
+    {
+      string filename = parts.Get(5);
+      filename.Replace("_beard.", "_bearded.");
+      mat1 = string.Format("Survivalists_FacePaints\\heads\\%1\\%2", facepaintCategory, filename);
+      // Print("mat: " + mat1);
+    }
+    return mat1;
+  }
+  string GetPaintPathFemale(int facepaintIndex, string materialName)
+  {
+    string facepaintCategory = GetPaintByIndex(facepaintIndex);
+    TStringArray parts = new TStringArray;
+    materialName.Split("_", parts);
+    string mat1 = materialName;
+    if (parts.Count() == 2)
+    {
+      string filename = parts.Get(1);
+      mat1 = string.Format("Survivalists_FacePaints\\heads\\%1\\hhl_f_%2_body.rvmat", facepaintCategory, filename);
+      // Print("mat: " + mat1);
+    }
+    return mat1;
+  }
   protected void SetPaintedFaceMaterial( PlayerBase player, LifespanLevel level )
 	{
 		if (player.m_CorpseState != 0)
@@ -121,83 +228,51 @@ modded class PluginLifespan
 		int slot_id = InventorySlots.GetSlotIdFromString("Head");	
 		EntityAI players_head = player.GetInventory().FindPlaceholderForSlot( slot_id );
 
-    FacePaintStyle facepaint = GetFacePaintMaterials(player.GetPlayerClass(), player.GetFacePaintIndex());
+    string mat1 = GetPaintPathMale(player.GetFacePaintIndex(), level.GetMaterialName());
 
-		if( players_head && facepaint )
+		if( players_head && mat1 != "error" )
 		{
 			switch(level.GetLevel())
 			{
 				case LifeSpanState.BEARD_NONE:
 				{
-          // Print("no beard: tex - " + level.GetTextureName());
-          // Print("no beard: mat - " + level.GetMaterialName());
-
 					players_head.SetObjectTexture( 0, "");
 					players_head.SetObjectMaterial( 0, "");		
-					
 					player.SetFaceTexture( level.GetTextureName() );
-          // Print("material to use: " + facepaint.GetMaterial(1) );
-					player.SetFaceMaterial( facepaint.GetMaterial(1) );
-					// player.SetFaceMaterial( level.GetMaterialName() );
-
+					player.SetFaceMaterial( mat1 );
 					player.SetLifeSpanStateVisible(LifeSpanState.BEARD_NONE);
-					//Print("LifeSpanState.BEARD_NONE");
 					break;
 				}
 				case LifeSpanState.BEARD_MEDIUM:
 				{
-          // Print("medium beard: tex - " + level.GetTextureName());
-          // Print("medium beard: mat - " + level.GetMaterialName());
-
 					players_head.SetObjectTexture( 0, "");
 					players_head.SetObjectMaterial( 0, "");	
-					
 					player.SetFaceTexture( level.GetTextureName() );
-
-          // Print("material to use: " + facepaint.GetMaterial(2) );
-
-					player.SetFaceMaterial( facepaint.GetMaterial(2) );
-					// player.SetFaceMaterial( level.GetMaterialName() );
-										
+					player.SetFaceMaterial( mat1 );										
 					player.SetLifeSpanStateVisible(LifeSpanState.BEARD_MEDIUM);
-					//Print("LifeSpanState.BEARD_MEDIUM");
 					break;
 				}
-				
 				case LifeSpanState.BEARD_LARGE:
 				{	
-          // Print("large beard: tex - " + level.GetTextureName());
-          // Print("large beard: mat - " + level.GetMaterialName());
-
 					players_head.SetObjectTexture( 0, "");
 					players_head.SetObjectMaterial( 0, "");	
-							
 					player.SetFaceTexture( level.GetTextureName() );
-          // Print("material to use: " + facepaint.GetMaterial(3) );
-					player.SetFaceMaterial( facepaint.GetMaterial(3) );
-					// player.SetFaceMaterial( level.GetMaterialName() );
-			
+					player.SetFaceMaterial( mat1 );
 					player.SetLifeSpanStateVisible(LifeSpanState.BEARD_LARGE);
-					//Print("LifeSpanState.BEARD_LARGE");
 					break;
 				}
-				
 				case LifeSpanState.BEARD_EXTRA:
 				{
-          // Print("extra beard: tex - " + level.GetTextureName());
-          // Print("extra beard: mat - " + level.GetMaterialName());
 					players_head.SetObjectTexture( 0, level.GetTextureName() );
 					players_head.SetObjectMaterial( 0, level.GetMaterialName() );
 					
 					array< ref LifespanLevel> lifespan_levels = m_LifespanLevels.Get( player.GetPlayerClass() );
 					LifespanLevel prev_level = lifespan_levels.Get(LifeSpanState.BEARD_LARGE);
-
-          // Print("works: " + prev_level.GetMaterialName() + " not working: " + facepaint.GetMaterial(3));
-					player.SetFaceMaterial( facepaint.GetMaterial(3) );
-					// player.SetFaceMaterial( prev_level.GetMaterialName() );
 					
+          player.SetFaceTexture( prev_level.GetTextureName() );
+          mat1 = GetPaintPathMale(player.GetFacePaintIndex(), prev_level.GetMaterialName());
+					player.SetFaceMaterial( mat1 );
 					player.SetLifeSpanStateVisible(LifeSpanState.BEARD_EXTRA);
-					//Print("LifeSpanState.BEARD_EXTRA");
 					break;
 				}									
 				default:
@@ -208,5 +283,4 @@ modded class PluginLifespan
 			}	
 		}
 	}
-
 };
