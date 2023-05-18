@@ -20,9 +20,7 @@ class SRP_FacePaintStick: Inventory_Base
       AddHealth(-dmg);
     }
     else
-    {
       AddHealth(-2);
-    }
 	}
 
   void SetCamoIndex(int currentIndex)

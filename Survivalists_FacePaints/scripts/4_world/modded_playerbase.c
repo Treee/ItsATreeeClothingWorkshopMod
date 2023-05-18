@@ -1,24 +1,21 @@
 modded class PlayerBase
 {
   protected int m_FacePaintState;
-
+  int m_TempFacePaintState;
+//=============================================== VANILLA OVERRIDE
   override void Init()
   {
     super.Init();
     m_FacePaintState = -1;
     RegisterNetSyncVariableInt("m_FacePaintState", -1, m_ModuleLifespan.GetFacePaintCount());
   }
-
   override void OnVariablesSynchronized()
 	{
     super.OnVariablesSynchronized();
 
     if (GetFacePaintIndex() >= -1 && (IsPlayerLoaded() || IsControlledPlayer()))
-    {
       UpdateFacePaintVisual();
-    }
 	}
-
   override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
   {
     super.OnRPC(sender, rpc_type, ctx);
@@ -35,9 +32,19 @@ modded class PlayerBase
         GetDayZGame().SetSRPFacePaintConfig(configParams.param1);
         break;
       }
+      case SRP_FACEPAINT_RPC.SRPC_FP_RADIAL_MENU:
+      {
+        if (GetGame().IsDedicatedServer())
+        {
+          int camoId;
+          if ( !ctx.Read(camoId) )
+            return;
+          m_TempFacePaintState = camoId;
+        }
+      }
+      break;
     }
   }
-
   override void OnStoreSaveLifespan( ParamsWriteContext ctx )
 	{
     super.OnStoreSaveLifespan(ctx);
@@ -59,54 +66,55 @@ modded class PlayerBase
 		return true;
 	}
 
+//=============================================== CUSTOM
   void SetFacePaint(int index)
   {
     m_FacePaintState = index;
     SetSynchDirty();
   }
-
   int GetFacePaintIndex()
   {
     return m_FacePaintState;
   }
-
   void ClearPaint()
   {
     SetFacePaint(-1);
   }
-
-  string GetCurrentCamoIndexName(int index)
+  TStringArray GetFacePaintList(int index)
   {
-    if ( m_ModuleLifespan )
-      return m_ModuleLifespan.GetPaintNameByIndex(index);
-    return "";
-  }
-
-  string GetCurrentCamoMaterialPath(int index)
-  {    
-    if ( m_ModuleLifespan )
-		{
-      if (index == -1)
-        return m_ModuleLifespan.GetFemaleBaseMaterial(GetType());
-      else
-        return m_ModuleLifespan.GetPaintPathFemale(index, GetType());
+    if (m_ModuleLifespan)
+    {
+      switch(index)
+      {
+        case 1:
+          return m_ModuleLifespan.GetFacePaintCamoOptions();
+        break;
+        case 2:
+          return m_ModuleLifespan.GetFacePaintFlagOptions();
+        break;
+        case 3:
+          return m_ModuleLifespan.GetFacePaintMaskOptions();
+        break;
+        case 4:
+          return m_ModuleLifespan.GetFacePaintScarOptions();
+        break;
+      }
     }
-    return "";
+    return {};
   }
-  
   void UpdateFacePaintVisual()
 	{    
     // female characters need this because they dont have beard so no player lifespan level stuff
     if (!IsMale())
     {
-      string camoMaterial = GetCurrentCamoMaterialPath(m_FacePaintState);
-      if (camoMaterial != "")
+      string camoMaterial;
+      if (m_FacePaintState == -1)
+        camoMaterial = m_ModuleLifespan.GetFemaleBaseMaterial(GetType());
+      else
+        camoMaterial = m_ModuleLifespan.GetPaintPathFemale(m_FacePaintState, GetType());
+
+      if (camoMaterial)
         SetFaceMaterial(camoMaterial);
     }
 	}
-
-  int GetPlayerFacePaintCount()
-  {
-    return m_ModuleLifespan.GetFacePaintCount();
-  }
 };

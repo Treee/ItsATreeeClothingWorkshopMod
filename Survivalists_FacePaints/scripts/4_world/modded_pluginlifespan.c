@@ -9,17 +9,10 @@ modded class PluginLifespan
 
   override protected void SetPlayerLifespanLevel( PlayerBase player, LifespanLevel level )
   {
-    // Print("teudhfidushfduisofh");
     if (player.GetFacePaintIndex() < 0)
-    {
-      // Print("No Face Paint applied: default behavior");
       super.SetPlayerLifespanLevel( player, level );
-    }
     else
-    {
-      // Print("replace the face material with this material index - camoindex: " + player.GetFacePaintIndex());
       SetPaintedFaceMaterial(player, level);
-    }
   }
   string GetFemaleBaseMaterial(string playerType)
   {
@@ -27,12 +20,10 @@ modded class PluginLifespan
       return m_BloodyHands.Get(playerType).GetMaterial(BloodyHands.MATERIAL_TYPE_NORMAL);    
     return "";
   }
-
   int GetFacePaintCount()
   {
     return m_TotalCountFacePaints;
   }
-
   TStringArray GetFacePaintCamoOptions()
   {
     return {
@@ -109,6 +100,7 @@ modded class PluginLifespan
   {
     return {      
       "SkullFace",
+      "TearDrop"
     };
   }
   TStringArray GetFacePaintScarOptions()
@@ -124,7 +116,6 @@ modded class PluginLifespan
       "RightLongScar",
     };
   }
-
   string GetPaintByIndex(int index)
   {
     int array1Count = GetFacePaintCamoOptions().Count();
@@ -158,40 +149,6 @@ modded class PluginLifespan
     }
     return "error";
   }
-  string GetPaintNameByIndex(int index)
-  {
-    int array1Count = GetFacePaintCamoOptions().Count();
-    int array2Count = GetFacePaintFlagOptions().Count() + array1Count;
-    int array3Count = GetFacePaintMaskOptions().Count() + array2Count;
-    int array4Count = GetFacePaintScarOptions().Count() + array3Count;
-    // Print(string.Format("arr1: %1 arr2: %2 arr3: %3 arry: %4 index: %5", array1Count, array2Count, array3Count, array4Count, index));
-    int newIndex = index;
-    if (index < array1Count)
-    {
-      // use camo paints, index is smallest index possible
-      return GetFacePaintCamoOptions().Get(newIndex);
-    }
-    else if (index >= array1Count && index < array2Count)
-    {
-      // use flag paints
-      newIndex -= array1Count;
-      return GetFacePaintFlagOptions().Get(newIndex);
-    }
-    else if (index >= array2Count && index < array3Count)
-    {
-      // use mask paints
-      newIndex -= array2Count;
-      return GetFacePaintMaskOptions().Get(newIndex);
-    }
-    else if (index >= array3Count && index < array4Count)
-    {
-      // use scar paints
-      newIndex -= array3Count;
-      return GetFacePaintScarOptions().Get(newIndex);
-    }
-    return "error";
-  }
-
   protected string GetPaintPathMale(int facepaintIndex, string materialName)
   {
     string facepaintCategory = GetPaintByIndex(facepaintIndex);
