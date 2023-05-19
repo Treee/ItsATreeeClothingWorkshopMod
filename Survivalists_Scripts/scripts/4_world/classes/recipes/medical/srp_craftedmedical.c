@@ -581,6 +581,7 @@ class Craft_SRP_FullSyringe_Ampicillin extends Craft_SRP_FillSyringeBase
     super.Init();
 
 		InsertIngredient(0,"SRP_InjectionVial_Ampicillin");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_InjectionVial_BacterialInfection");//you can insert multiple ingredients this way
 
 		AddResult("SRP_FullSyringe_Ampicillin");//add results here
 	}

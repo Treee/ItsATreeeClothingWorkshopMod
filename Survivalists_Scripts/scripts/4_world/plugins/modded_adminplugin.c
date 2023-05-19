@@ -24,4 +24,30 @@ modded class PluginAdminLog
 			}
 		}
 	}
+
+  override void PlayerKilled( PlayerBase player, Object source ) 
+  {
+    super.PlayerKilled(player, source);
+    if (GetGame().IsDedicatedServer())
+    {
+      if (player && source)
+      {
+        if( player == source )	// deaths not caused by another object (starvation, dehydration)
+        {
+          float tox = player.GetStatToxicity().Get();
+          float tempComfort = player.GetStatHeatComfort().Get();
+          float tremor = player.GetStatTremor().Get();
+          int wetness = player.GetStatWet().Get();
+          float diet = player.GetStatDiet().Get();
+          int bloodtype = player.GetStatBloodType().Get();
+          string blood_type_name, blood_name;
+          bool positive;
+          blood_type_name = BloodTypes.GetBloodTypeName( bloodtype, blood_name, positive );
+          float heatbuffer = player.GetStatHeatBuffer().Get();
+          LogPrint(string.Format("Player EXTRA STATS || Tox:%1 HeatComfort:%2 Tremor:%3 Wetness:%4 Diet:%5 BloodType:%6 %7 Heatbuffer:%8", tox, tempComfort, tremor, wetness,diet,blood_type_name,positive,heatbuffer));
+          LogPrint(player.GetSymptomManager().LogSymptomsOnPlayer())
+        }
+      }
+    }
+  }
 };
