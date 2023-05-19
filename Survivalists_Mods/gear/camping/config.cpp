@@ -63,24 +63,6 @@ class CfgVehicles
   class TerritoryFlag: BaseBuildingBase
 	{
 		scope=2;
-		displayName="$STR_CfgVehicles_TerritoryFlag0";
-		descriptionShort="$STR_CfgVehicles_TerritoryFlag1";
-		model="\DZ\gear\camping\territory_flag.p3d";
-		bounding="BSphere";
-		overrideDrawArea="3.0";
-		forceFarBubble="true";
-		handheld="false";
-		lootCategory="Crafted";
-		carveNavmesh=1;
-		weight=60000;
-		itemSize[]={6,6};
-		physLayer="item_large";
-		createProxyPhysicsOnInit="false";
-		createdProxiesOnInit[]=
-		{
-			"Deployed"
-		};
-		rotationFlags=2;
 		attachments[]=
 		{
 			"Material_FPole_WoodenLog",
@@ -89,66 +71,9 @@ class CfgVehicles
 			"Material_FPole_MetalWire",
 			"Material_FPole_Rope",
 			"Material_FPole_Nails",
+      "StonesFlagTax",
 			"Material_FPole_MagicStick",
 			"Material_FPole_Flag"
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=100;
-				};
-			};
-			class GlobalArmor
-			{
-				class Projectile
-				{
-					class Health
-					{
-						damage=0;
-					};
-					class Blood
-					{
-						damage=0;
-					};
-					class Shock
-					{
-						damage=0;
-					};
-				};
-				class Melee
-				{
-					class Health
-					{
-						damage=0;
-					};
-					class Blood
-					{
-						damage=0;
-					};
-					class Shock
-					{
-						damage=0;
-					};
-				};
-				class FragGrenade
-				{
-					class Health
-					{
-						damage=0;
-					};
-					class Blood
-					{
-						damage=0;
-					};
-					class Shock
-					{
-						damage=0;
-					};
-				};
-			};
 		};
 		class GUIInventoryAttachmentsProps
 		{
@@ -195,6 +120,7 @@ class CfgVehicles
 				description="";
 				attachmentSlots[]=
 				{
+          "StonesFlagTax",
 					"Material_FPole_Flag"
 				};
 				icon="set:dayz_inventory image:tf_flag";

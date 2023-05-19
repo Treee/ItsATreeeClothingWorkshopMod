@@ -1232,6 +1232,14 @@ class CfgSlots
 		ghostIcon="set:dayz_inventory image:missing";
 	};
 //===================== MISC
+  class Slot_StonesFlagTax
+	{
+		name="StonesFlagTax";
+		displayName="#STR_CfgStones0";
+		selection="Stones";
+		ghostIcon="set:dayz_inventory image:stones";
+		stackMax=5;
+	};
   class Slot_blade
 	{
 		name="blade";

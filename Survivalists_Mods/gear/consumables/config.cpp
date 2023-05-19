@@ -304,7 +304,7 @@ class CfgVehicles
   class Stone: Inventory_Base
   {
     varQuantityMax=400;
-    inventorySlot[]+={"SRP_Construction_Stone"};
+    inventorySlot[]+={"SRP_Construction_Stone","StonesFlagTax"};
   };
   class Stone_Ruined: Stone
 	{
