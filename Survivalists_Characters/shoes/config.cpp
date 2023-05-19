@@ -16,10 +16,11 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class Shoes_Base;
+  // class Shoes_Base;
+  class Clothing;
 
 //-------------------------------------MODDED OVERRIDE
-  class High_Knee_Sneakers: Shoes_Base
+  class High_Knee_Sneakers: Clothing
 	{
     rootClassName="High_Knee_Sneakers";
     colorVariants[]=
@@ -32,7 +33,7 @@ class CfgVehicles
       "Purple",    
     };
   };
-  class Kirza_Boots_ColorBase: Shoes_Base
+  class Kirza_Boots_ColorBase: Clothing
 	{
     rootClassName="Kirza_Boots";
     colorVariants[]=
@@ -46,7 +47,7 @@ class CfgVehicles
     };
   };
 //-------------------------------------BASE GAME OVERRIDE	
-  class AthleticShoes_ColorBase: Shoes_Base
+  class AthleticShoes_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -63,7 +64,7 @@ class CfgVehicles
       "White",
     };
   };
-  class HikingBoots_ColorBase: Shoes_Base
+  class HikingBoots_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -74,7 +75,7 @@ class CfgVehicles
       "Brown",
     };
   };
-  class HikingBootsLow_ColorBase: Shoes_Base
+  class HikingBootsLow_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -87,7 +88,7 @@ class CfgVehicles
       "Grey",      
     };
   };
-  class Wellies_ColorBase: Shoes_Base
+  class Wellies_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer","Knife"};
@@ -100,7 +101,7 @@ class CfgVehicles
       "Grey",      
     };
   };
-  class WorkingBoots_ColorBase: Shoes_Base
+  class WorkingBoots_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -114,7 +115,7 @@ class CfgVehicles
       "Grey",      
     };
   };
-  class JungleBoots_ColorBase: Shoes_Base
+  class JungleBoots_ColorBase: Clothing
 	{
     attachments[]+={"SRP_GunDerringer","Knife"};
     itemSize[]={2,2};
@@ -147,7 +148,7 @@ class CfgVehicles
       "CADPAT",
     };
   };
-  class DressShoes_ColorBase: Shoes_Base
+  class DressShoes_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -161,7 +162,7 @@ class CfgVehicles
       "White",
     };
   };
-  class MilitaryBoots_ColorBase: Shoes_Base
+  class MilitaryBoots_ColorBase: Clothing
   {
     itemSize[]={2,2};
     itemsCargoSize[]={1,2};
@@ -177,7 +178,7 @@ class CfgVehicles
       "White",
     };
   };
-  class CombatBoots_ColorBase: Shoes_Base
+  class CombatBoots_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer","Knife"};
@@ -191,7 +192,7 @@ class CfgVehicles
       "Grey",
     };
   };
-  class JoggingShoes_ColorBase: Shoes_Base
+  class JoggingShoes_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -205,7 +206,7 @@ class CfgVehicles
       "White",
     };
   };
-  class LeatherShoes_ColorBase: Shoes_Base
+  class LeatherShoes_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -226,7 +227,7 @@ class CfgVehicles
       "Yellow",    
     };
   };
-  class Sneakers_ColorBase: Shoes_Base
+  class Sneakers_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -249,7 +250,7 @@ class CfgVehicles
       "WhitePink",      
     };
   };
-  class NBCBootsBase: Shoes_Base
+  class NBCBootsBase: Clothing
 	{
     soundAttType="none";
     rootClassName="NBCBoots";
@@ -264,7 +265,7 @@ class CfgVehicles
       biological=1;
     };
 	};
-  class Ballerinas_ColorBase: Shoes_Base
+  class Ballerinas_ColorBase: Clothing
   {
     itemSize[]={2,2};
     attachments[]+={"SRP_GunDerringer"};
@@ -278,11 +279,11 @@ class CfgVehicles
       "Yellow",      
     };
   };
-  class TTSKOBoots: Shoes_Base
+  class TTSKOBoots: Clothing
 	{
     itemSize[]={2,2};
   };
-  class FeetCover_Improvised: Shoes_Base
+  class FeetCover_Improvised: Clothing
   {
     rootClassName="FeetCover_Improvised";
     colorVariants[]=

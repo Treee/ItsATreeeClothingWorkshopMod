@@ -18,7 +18,8 @@ class CfgPatches
 class CfgVehicles
 {
   class Container_Base;
-  class Backpack_Base;
+  class Clothing;
+  // class Backpack_Base;
 
 //--------------------------------- MOD/VANILLA OVERRIDE
 	class MassNBC_Bag: Container_Base
@@ -27,7 +28,7 @@ class CfgVehicles
 		itemsCargoSize[]={9,6}; // increase to account for gas mask
 	};
 
-  class TaloonBag_ColorBase: Backpack_Base
+  class TaloonBag_ColorBase: Clothing
   {
     rootClassName="TaloonBag";
     colorVariants[]=
@@ -40,7 +41,7 @@ class CfgVehicles
       "Black2"
     };
   };
-  class TortillaBag: Backpack_Base
+  class TortillaBag: Clothing
 	{
     itemsCargoSize[]={10,8};
     repairableWithKits[]={5,3,2};
@@ -58,7 +59,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class CourierBag: Backpack_Base
+  class CourierBag: Clothing
   {
     rootClassName="CourierBag";
     colorVariants[]=
@@ -66,7 +67,7 @@ class CfgVehicles
       "Black",
     };
   };
-  class DryBag_ColorBase: Backpack_Base
+  class DryBag_ColorBase: Clothing
   {
     rootClassName="DryBag";
     colorVariants[]=
@@ -81,7 +82,7 @@ class CfgVehicles
       "MintBlue"
     };
   }; 
-  class HuntingBag: Backpack_Base
+  class HuntingBag: Clothing
 	{
 		itemsCargoSize[]={10,7};
     repairableWithKits[]={5,3,2};
@@ -102,7 +103,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class MountainBag_ColorBase: Backpack_Base
+  class MountainBag_ColorBase: Clothing
 	{
 		itemsCargoSize[]={7,14};
     repairableWithKits[]={5,3,2};
@@ -125,7 +126,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class SmershBag: Backpack_Base
+  class SmershBag: Clothing
   {
     rootClassName="SmershBag";
     colorVariants[]=
@@ -137,7 +138,7 @@ class CfgVehicles
       "NBC",
     };
   }; 
-  class ChildBag_ColorBase: Backpack_Base
+  class ChildBag_ColorBase: Clothing
   {
     rootClassName="ChildBag";
     colorVariants[]=
@@ -147,7 +148,7 @@ class CfgVehicles
       "Blue",
     };
   };
-  class GhillieBushrag_ColorBase: Backpack_Base
+  class GhillieBushrag_ColorBase: Clothing
   {
     rootClassName="GhillieBushrag";
     colorVariants[]=
@@ -160,7 +161,7 @@ class CfgVehicles
       "Black"
     };
   };
-  class GhillieTop_ColorBase: Backpack_Base
+  class GhillieTop_ColorBase: Clothing
   {
     rootClassName="GhillieTop";
     colorVariants[]=
@@ -173,7 +174,7 @@ class CfgVehicles
       "Black"
     };
   };
-  class GhillieSuit_ColorBase: Backpack_Base
+  class GhillieSuit_ColorBase: Clothing
   {
     rootClassName="GhillieSuit";
     colorVariants[]=
@@ -186,7 +187,7 @@ class CfgVehicles
       "Black"
     };
   };
-  class AssaultBag_ColorBase: Backpack_Base
+  class AssaultBag_ColorBase: Clothing
 	{
     repairableWithKits[]={5,3,2};
 		repairCosts[]={30,25,25};
@@ -211,7 +212,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class CoyoteBag_ColorBase: Backpack_Base
+  class CoyoteBag_ColorBase: Clothing
   {
     rootClassName="CoyoteBag";
     colorVariants[]=
@@ -220,7 +221,7 @@ class CfgVehicles
       "Green"
     };
   };
-  class AliceBag_ColorBase: Backpack_Base
+  class AliceBag_ColorBase: Clothing
 	{
 		itemsCargoSize[]={10,12};
     repairableWithKits[]={5,3,2};
@@ -243,7 +244,7 @@ class CfgVehicles
   };
 
 //--------------------------------- ALEVARIC STUFF
-  class ALV_MV_DuffleBag_Colorbase: Backpack_Base
+  class ALV_MV_DuffleBag_Colorbase: Clothing
   {
     rootClassName="ALV_MV_DuffleBag";
     colorVariants[]=
@@ -255,7 +256,7 @@ class CfgVehicles
       "Teal",
     };
   };
-  class ALV_MV_RifleHolster_Colorbase: Backpack_Base
+  class ALV_MV_RifleHolster_Colorbase: Clothing
   {
     rootClassName="ALV_MV_RifleHolster";
     colorVariants[]=
@@ -264,7 +265,7 @@ class CfgVehicles
       "Tan",
     };
   };
-  class ALV_MV_BackPouches_Colorbase: Backpack_Base
+  class ALV_MV_BackPouches_Colorbase: Clothing
   {
     rootClassName="ALV_MV_BackPouches";
     colorVariants[]=
@@ -274,7 +275,7 @@ class CfgVehicles
       "Green"
     };
   };
-  class ALV_MV_Slingbag_Colorbase: Backpack_Base
+  class ALV_MV_Slingbag_Colorbase: Clothing
   {
     rootClassName="ALV_MV_Slingbag";
     colorVariants[]=
@@ -291,7 +292,7 @@ class CfgVehicles
       "TigerStripe"
     };
   };
-  class ALV_MV_SmallPack_Colorbase: Backpack_Base
+  class ALV_MV_SmallPack_Colorbase: Clothing
   {
     rootClassName="ALV_MV_SmallPack";
     colorVariants[]=
@@ -301,7 +302,7 @@ class CfgVehicles
       "Green"
     };
   };
-  class ALV_MV_LargePack_Colorbase: Backpack_Base
+  class ALV_MV_LargePack_Colorbase: Clothing
   {
     rootClassName="ALV_MV_LargePack";
     colorVariants[]=
@@ -312,7 +313,7 @@ class CfgVehicles
     };
   };
 //--------------------------------- CUSTOM STUFF
-  class SRP_LeatherBackpack_Default: Backpack_Base 
+  class SRP_LeatherBackpack_Default: Clothing 
 	{
 		scope=2;
     displayName="Leather Backpack";
@@ -321,6 +322,19 @@ class CfgVehicles
 		itemsCargoSize[]={8,8};
     rootClassName="SRP_LeatherBackpack";
     colorVariants[]={};
+		heatIsolation=0.69999999;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		itemSize[]={5,6};
+    inventorySlot[]=
+		{
+			"Back"
+		};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};
 		attachments[]=
 		{
 			"carman1",
@@ -373,7 +387,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_SurvivalBackpack_Default: Backpack_Base 
+  class SRP_SurvivalBackpack_Default: Clothing 
 	{
 		scope=2;
     displayName="Survival Backpack";
@@ -382,6 +396,19 @@ class CfgVehicles
 		itemsCargoSize[]={8,8};
     rootClassName="SRP_SurvivalBackpack";
     colorVariants[]={};
+		heatIsolation=0.69999999;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		itemSize[]={5,6};
+    inventorySlot[]=
+		{
+			"Back"
+		};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};    
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -418,7 +445,7 @@ class CfgVehicles
 			};
 		};    
 	};
-  class SRP_SlingBackpack_Default: Backpack_Base 
+  class SRP_SlingBackpack_Default: Clothing 
 	{
 		scope=2;
     displayName="Sling Backpack";
@@ -431,6 +458,19 @@ class CfgVehicles
       "Default",
       "Red",
     };
+		heatIsolation=0.80000001;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		itemSize[]={6,7};
+    inventorySlot[]=
+		{
+			"Back"
+		};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};    
     attachments[]=
 		{
 			"Chemlight",
@@ -476,7 +516,7 @@ class CfgVehicles
 			};
 		}; 
 	};
-  class SRP_Small_Military_Pack_Tan: Backpack_Base 
+  class SRP_Small_Military_Pack_Tan: Clothing 
 	{
 		scope=2;
 		displayName="Small Military Pack";
@@ -497,6 +537,19 @@ class CfgVehicles
       "ERDL",
       "MARPAT_Wood",
     };
+		heatIsolation=0.69999999;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		itemSize[]={5,6};
+    inventorySlot[]=
+		{
+			"Back"
+		};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};
 		attachments[]=
 		{
       "VestBackpack","LargePouch1","Belt_Left","SmallPouch1","SmallPouch2","SRP_Patch"
@@ -533,7 +586,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Big_Military_Pack_Tan: Backpack_Base 
+  class SRP_Big_Military_Pack_Tan: Clothing 
 	{
 		scope=2;
 		displayName="Large Military Pack";
@@ -557,6 +610,19 @@ class CfgVehicles
       "Sunny",
       "Teal"      
     };
+		heatIsolation=0.69999999;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		itemSize[]={5,6};
+    inventorySlot[]=
+		{
+			"Back"
+		};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};
 		attachments[]=
 		{
       "VestBackpack","LargePouch1","Belt_Left","SmallPouch1","SmallPouch2","SRP_Patch"
@@ -593,7 +659,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Rifle_Bag_Green: Backpack_Base 
+  class SRP_Rifle_Bag_Green: Clothing 
   {
     scope=2;
     displayName="Rifle bag";
@@ -611,6 +677,19 @@ class CfgVehicles
     {
       "Shoulder","Melee","Pistol","SmallPouch1","SmallPouch2","SRP_Patch"
     };
+		heatIsolation=0.69999999;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		itemSize[]={5,6};
+    inventorySlot[]=
+		{
+			"Back"
+		};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
+		};
     hiddenSelections[]=
     {
       "zbytek"
@@ -643,7 +722,7 @@ class CfgVehicles
       };
     };
   };
-  class SRP_Rolltop_Bag: Backpack_Base
+  class SRP_Rolltop_Bag: Clothing
 	{	
 		scope=2;
 		displayName="Rolltop Bag";
@@ -660,6 +739,15 @@ class CfgVehicles
 			"CookingEquipment",
 			"cookingtripod",
 			"fishingRod"
+		};
+    inventorySlot[]=
+		{
+			"Back"
+		};
+    itemInfo[]=
+		{
+			"Clothing",
+			"Back"
 		};
 		absorbency=0;
 		heatIsolation=0.80;
@@ -713,7 +801,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_MessengerBag_Leather: Backpack_Base
+  class SRP_MessengerBag_Leather: Clothing
 	{
 		scope=2;
 		displayName="Messenger Bag";
@@ -745,6 +833,10 @@ class CfgVehicles
 			"Chemlight",
 			"WalkieTalkie",
 			"Compass"
+		};
+    inventorySlot[]=
+		{
+			"Back"
 		};
 		hiddenSelections[]=
 		{
@@ -798,7 +890,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Bergan_Backpack: Backpack_Base
+  class SRP_Bergan_Backpack: Clothing
 	{
 		scope=2;
 		displayName="Bergan Backpack";
@@ -824,6 +916,10 @@ class CfgVehicles
 			"SmallPouch2",
 			"LargePouch1",
 			"LargePouch2"
+		};
+    inventorySlot[]=
+		{
+			"Back"
 		};
 		hiddenSelections[]=
 		{
@@ -861,7 +957,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Trader_Backpack_ColorBase: Backpack_Base
+  class SRP_Trader_Backpack_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Leather Backpack";
@@ -884,6 +980,10 @@ class CfgVehicles
 		attachments[]=
 		{
 			"Chemlight"
+		};
+    inventorySlot[]=
+		{
+			"Back"
 		};
 		hiddenSelections[]=
 		{

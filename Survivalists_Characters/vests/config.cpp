@@ -15,12 +15,13 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class Vest_Base;
+  // class Vest_Base;
+  class Clothing;
   class Container_Base;
   class Bottle_Base;
 
 // ----------------------  BASE GAME OVERRIDES
-  class PlateCarrierVest: Vest_Base
+  class PlateCarrierVest: Clothing
 	{
     itemSize[]={5,4};
     heatIsolation=0.2;
@@ -50,7 +51,7 @@ class CfgVehicles
       "Sunny",
     };
 	};
-  class PlateCarrierHolster: Vest_Base
+  class PlateCarrierHolster: Clothing
 	{
     itemSize[]={2,2};
 		repairableWithKits[]={5,3,7};
@@ -116,7 +117,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class PressVest_ColorBase: Vest_Base
+  class PressVest_ColorBase: Clothing
 	{
 		repairableWithKits[]={5,3,7};
 		repairCosts[]={30,25,25};
@@ -140,7 +141,7 @@ class CfgVehicles
       "EMP6",
     };
 	};
-  class UKAssVest_ColorBase: Vest_Base
+  class UKAssVest_ColorBase: Clothing
 	{
     rootClassName="UKAssVest";
     colorVariants[]=
@@ -152,7 +153,7 @@ class CfgVehicles
       "White",       
     };
 	};
-  class PoliceVest: Vest_Base
+  class PoliceVest: Clothing
 	{
     rootClassName="PoliceVest";
     colorVariants[]=
@@ -163,7 +164,7 @@ class CfgVehicles
       "FBI",      
     };
 	};
-  class ChestHolster: Vest_Base
+  class ChestHolster: Clothing
 	{
     rootClassName="ChestHolster";
     colorVariants[]=
@@ -172,7 +173,7 @@ class CfgVehicles
       "White",      
     };
 	};
-  class HighCapacityVest_ColorBase: Vest_Base
+  class HighCapacityVest_ColorBase: Clothing
 	{
     itemsCargoSize[]={8,5};
 		repairableWithKits[]={5,3,7};
@@ -199,7 +200,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class LeatherStorageVest_ColorBase: Vest_Base
+  class LeatherStorageVest_ColorBase: Clothing
 	{
     rootClassName="LeatherStorageVest";
     colorVariants[]=
@@ -217,7 +218,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class HuntingVest: Vest_Base
+  class HuntingVest: Clothing
 	{
     rootClassName="HuntingVest";
     colorVariants[]=
@@ -226,7 +227,7 @@ class CfgVehicles
     };
   };
 // ----------------------  ALEVARIC OVERRIDE
-  class Alv_MV_Modular_Vest_ColorBase: Vest_Base
+  class Alv_MV_Modular_Vest_ColorBase: Clothing
 	{
     rootClassName="Alv_MV_Modular_Vest";
     colorVariants[]=
@@ -243,7 +244,7 @@ class CfgVehicles
       "TigerStripe",
     };
   };
-  class Alv_MV_Hunting_Vest_Colorbase: Vest_Base
+  class Alv_MV_Hunting_Vest_Colorbase: Clothing
 	{
     rootClassName="Alv_MV_Hunting_Vest";
     colorVariants[]=
@@ -253,7 +254,7 @@ class CfgVehicles
       "Camo",      
     };
   };
-  class Alv_MV_Ratnik_ColorBase: Vest_Base
+  class Alv_MV_Ratnik_ColorBase: Clothing
 	{
     rootClassName="Alv_MV_Ratnik";
     colorVariants[]=
@@ -270,7 +271,7 @@ class CfgVehicles
       "TigerStripe",
     };
   };
-  class Alv_MV_ChestRig_ColorBase: Vest_Base
+  class Alv_MV_ChestRig_ColorBase: Clothing
 	{
     rootClassName="Alv_MV_ChestRig";
     colorVariants[]=
@@ -287,7 +288,7 @@ class CfgVehicles
       "TigerStripe",
     };
   };
-  class Alv_MV_JPC_ColorBase: Vest_Base
+  class Alv_MV_JPC_ColorBase: Clothing
 	{
     rootClassName="Alv_MV_JPC";
     colorVariants[]=
@@ -304,7 +305,7 @@ class CfgVehicles
       "TigerStripe",
     };
   };  
-  class Alv_MV_ArmyVest1_Colorbase: Vest_Base
+  class Alv_MV_ArmyVest1_Colorbase: Clothing
 	{
     rootClassName="Alv_MV_ArmyVest1";
     colorVariants[]=
@@ -314,7 +315,7 @@ class CfgVehicles
       "Green",      
     };
   };
-  class Alv_MV_ArmyVest2_Colorbase: Vest_Base
+  class Alv_MV_ArmyVest2_Colorbase: Clothing
 	{
     rootClassName="Alv_MV_ArmyVest2";
     colorVariants[]=
@@ -324,7 +325,7 @@ class CfgVehicles
       "Green",      
     };
   }; 
-  class Alv_MV_TacVest_ColorBase: Vest_Base
+  class Alv_MV_TacVest_ColorBase: Clothing
 	{
     rootClassName="Alv_MV_TacVest";
     colorVariants[]=
@@ -341,7 +342,7 @@ class CfgVehicles
       "TigerStripe",
     };
   };
-  class Alv_MV_Bandoiler_Colorbase: Vest_Base
+  class Alv_MV_Bandoiler_Colorbase: Clothing
 	{
     rootClassName="Alv_MV_Bandoiler";
     colorVariants[]=
@@ -349,7 +350,7 @@ class CfgVehicles
       "Leather"     
     };
   }; 
-  class Alv_MV_LightRig_Colorbase: Vest_Base
+  class Alv_MV_LightRig_Colorbase: Clothing
 	{
     rootClassName="Alv_MV_LightRig";
     colorVariants[]=
@@ -463,7 +464,7 @@ class CfgVehicles
 			};
 		};
 	};  
-  class SRP_Bandoiler: Vest_Base
+  class SRP_Bandoiler: Clothing
 	{	
 		scope=2;
 		displayName="Leather bandoiler";
@@ -478,6 +479,10 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		rotationFlags=16;
+		inventorySlot = "Vest";
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Vest","Clothing"};
 		weight=1000;
 		itemSize[]={1,5};
 		itemsCargoSize[]={6,5};
@@ -549,7 +554,7 @@ class CfgVehicles
       "SRP_DyeBottle4",
 		};
   };
-  class SRP_ShoulderSling: Vest_Base
+  class SRP_ShoulderSling: Clothing
 	{	
 		scope=2;
 		displayName="Shoulder Sling";
@@ -563,6 +568,10 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		rotationFlags=12;
+		inventorySlot = "Vest";
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Vest","Clothing"};
 		weight=1000;
 		itemSize[]={2,3};
 		itemsCargoSize[]={6,5};
@@ -2167,7 +2176,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Ratnik_Armor_ColorBase: Vest_Base
+  class SRP_Ratnik_Armor_ColorBase: Clothing
 	{	
 		scope=0;
 		displayName="Ratnik Leg Pads";
@@ -2175,7 +2184,7 @@ class CfgVehicles
 		model="Survivalists_Characters\vests\Ratnik_armor_g.p3d";
     attachments[]={};
 		rotationFlags=16;
-		inventorySlot="Hips";
+		inventorySlot[]={"Hips","Extra"};
     rootClassName="SRP_Ratnik_Armor";
     colorVariants[]=
     {
@@ -2411,7 +2420,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_BlacksmithApron_ColorBase: Vest_Base
+  class SRP_BlacksmithApron_ColorBase: Clothing
   {
 		scope=0;
 		displayName="Blacksmiths Apron";

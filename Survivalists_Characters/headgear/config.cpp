@@ -20,12 +20,13 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class HeadGear_Base;
+  // class Headgear_Base;
+  class Clothing;
   class Switchable_Base;
   class Inventory_Base;
 
 //-------------------------------------- BASE GAME OVERRIDE
-  class BallisticHelmet_ColorBase: HeadGear_Base
+  class BallisticHelmet_ColorBase: Clothing
 	{
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
@@ -48,7 +49,7 @@ class CfgVehicles
       "Rain"
     };
   };
-  class HeadCover_Improvised: HeadGear_Base
+  class HeadCover_Improvised: Clothing
 	{
     rootClassName="HeadCover_Improvised";
     colorVariants[]=
@@ -60,7 +61,7 @@ class CfgVehicles
       "Red",      
     };
   };
-  class BaseballCap_ColorBase: HeadGear_Base
+  class BaseballCap_ColorBase: Clothing
 	{
 		itemSize[]={1,2};
 		itemsCargoSize[]={1,1};
@@ -88,7 +89,7 @@ class CfgVehicles
       "EMP6",
     };    
   };
-  class ZSh3PilotHelmet: HeadGear_Base
+  class ZSh3PilotHelmet: Clothing
 	{
     rootClassName="ZSh3PilotHelmet";
     colorVariants[]=
@@ -97,7 +98,7 @@ class CfgVehicles
       "Black",      
     };    
   };
-  class ConstructionHelmet_ColorBase: HeadGear_Base
+  class ConstructionHelmet_ColorBase: Clothing
 	{
 		itemsCargoSize[]={1,1};
     rootClassName="ConstructionHelmet";
@@ -124,7 +125,7 @@ class CfgVehicles
       "EMP6",
     };    
   };
-  class BurlapSackCover: HeadGear_Base
+  class BurlapSackCover: Clothing
   {
     rootClassName="BurlapSackCover";
     colorVariants[]=
@@ -134,7 +135,7 @@ class CfgVehicles
       "White",
     }; 
   };  
-  class BeanieHat_ColorBase: HeadGear_Base
+  class BeanieHat_ColorBase: Clothing
 	{
 		itemSize[]={2,1};
 		itemsCargoSize[]={2,1};
@@ -159,7 +160,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class Ushanka_ColorBase: HeadGear_Base
+  class Ushanka_ColorBase: Clothing
 	{
 		itemSize[]={2,2};
 		itemsCargoSize[]={1,1};
@@ -180,7 +181,7 @@ class CfgVehicles
       "EMP6",
     };
   };
-  class MotoHelmet_ColorBase: HeadGear_Base
+  class MotoHelmet_ColorBase: Clothing
 	{
 		soundVoiceType="none";
 		soundVoicePriority=10;
@@ -197,7 +198,7 @@ class CfgVehicles
       "Yellow"
     };
 	};
-	class DarkMotoHelmet_ColorBase: HeadGear_Base
+	class DarkMotoHelmet_ColorBase: Clothing
 	{
 		soundVoiceType="none";
 		soundVoicePriority=10;
@@ -225,7 +226,7 @@ class CfgVehicles
       "Grey"
     };
 	};
-  class Bandana_ColorBase: HeadGear_Base
+  class Bandana_ColorBase: Clothing
 	{
     rootClassName="Bandana";
     colorVariants[]=
@@ -252,7 +253,7 @@ class CfgVehicles
       "USMC_W",
     };
 	};
-  class RadarCap_ColorBase: HeadGear_Base
+  class RadarCap_ColorBase: Clothing
 	{
     rootClassName="RadarCap";
     colorVariants[]=
@@ -264,7 +265,7 @@ class CfgVehicles
       "Red"
     };
 	};
-  class MilitaryBeret_ColorBase: HeadGear_Base
+  class MilitaryBeret_ColorBase: Clothing
 	{
     rootClassName="MilitaryBeret";
     colorVariants[]=
@@ -276,7 +277,7 @@ class CfgVehicles
       "CDF"
     };
 	};
-  class FlatCap_ColorBase: HeadGear_Base
+  class FlatCap_ColorBase: Clothing
 	{
     rootClassName="FlatCap";
     colorVariants[]=
@@ -295,7 +296,7 @@ class CfgVehicles
       "MulticamBlack"
     };
 	};
-  class ZmijovkaCap_ColorBase: HeadGear_Base
+  class ZmijovkaCap_ColorBase: Clothing
 	{
     rootClassName="ZmijovkaCap";
     colorVariants[]=
@@ -307,7 +308,7 @@ class CfgVehicles
       "Red",      
     };
 	};
-  class CowboyHat_ColorBase: HeadGear_Base
+  class CowboyHat_ColorBase: Clothing
 	{
     rootClassName="CowboyHat";
     colorVariants[]=
@@ -318,7 +319,7 @@ class CfgVehicles
       "Green"  
     };
 	};
-  class BoonieHat_ColorBase: HeadGear_Base
+  class BoonieHat_ColorBase: Clothing
 	{
 		itemSize[]={2,2};
 		itemsCargoSize[]={1,1};
@@ -350,7 +351,7 @@ class CfgVehicles
       "MulticamBlack",
     };
   };
-  class GorkaHelmet: HeadGear_Base
+  class GorkaHelmet: Clothing
 	{
     rootClassName="GorkaHelmet";
     colorVariants[]=
@@ -359,7 +360,7 @@ class CfgVehicles
       "Green",
     };
   };
-  class FirefightersHelmet_ColorBase: HeadGear_Base
+  class FirefightersHelmet_ColorBase: Clothing
 	{
     rootClassName="FirefightersHelmet";
     colorVariants[]=
@@ -369,7 +370,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class SkateHelmet_ColorBase: HeadGear_Base
+  class SkateHelmet_ColorBase: Clothing
 	{
     rootClassName="SkateHelmet";
     colorVariants[]=
@@ -381,11 +382,11 @@ class CfgVehicles
       "Red",
     };
   };
-  class WeldingMask: HeadGear_Base
+  class WeldingMask: Clothing
 	{
     itemSize[]={2,2};
   };
-  class PrisonerCap: HeadGear_Base
+  class PrisonerCap: Clothing
 	{
     rootClassName="PrisonerCap";
     colorVariants[]=
@@ -393,7 +394,7 @@ class CfgVehicles
       "Brown"
     };
   };
-  class GhillieHood_ColorBase: HeadGear_Base
+  class GhillieHood_ColorBase: Clothing
 	{
     rootClassName="GhillieHood";
     colorVariants[]=
@@ -403,7 +404,7 @@ class CfgVehicles
       "Mossy"
     };
   };
-  class LeatherHat_ColorBase: HeadGear_Base
+  class LeatherHat_ColorBase: Clothing
 	{
     rootClassName="LeatherHat";
     colorVariants[]=
@@ -421,7 +422,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class MedicalScrubsHat_ColorBase: HeadGear_Base
+  class MedicalScrubsHat_ColorBase: Clothing
 	{
     rootClassName="MedicalScrubsHat";
     colorVariants[]=
@@ -431,7 +432,7 @@ class CfgVehicles
       "Green",      
     };
   };
-  class DirtBikeHelmet_ColorBase: HeadGear_Base
+  class DirtBikeHelmet_ColorBase: Clothing
 	{
     rootClassName="DirtBikeHelmet";
     colorVariants[]=
@@ -445,7 +446,7 @@ class CfgVehicles
       "Blue",      
     };
   };
-  class NBCHoodBase: HeadGear_Base
+  class NBCHoodBase: Clothing
   {
     class Protection 
     {
@@ -459,7 +460,7 @@ class CfgVehicles
       "Orange" 
     };
   };
-  class HockeyHelmet_ColorBase: HeadGear_Base
+  class HockeyHelmet_ColorBase: Clothing
   {
     rootClassName="HockeyHelmet";
     colorVariants[]=
@@ -470,7 +471,7 @@ class CfgVehicles
       "White",      
     };
   };
-  class SantasHat: HeadGear_Base
+  class SantasHat: Clothing
   {
     rootClassName="SantasHat";
     colorVariants[]=
@@ -478,7 +479,7 @@ class CfgVehicles
       "Elf",      
     };
   };  
-  class WitchHood_ColorBase: HeadGear_Base
+  class WitchHood_ColorBase: Clothing
   {
     rootClassName="WitchHood";
     colorVariants[]=
@@ -488,7 +489,7 @@ class CfgVehicles
       "Red",           
     };
   };
-  class WitchHat: HeadGear_Base
+  class WitchHat: Clothing
   {
     rootClassName="WitchHat";
     colorVariants[]=
@@ -499,7 +500,7 @@ class CfgVehicles
       "RedKitty",           
     };
   };
-  class Mich2001Helmet: HeadGear_Base
+  class Mich2001Helmet: Clothing
 	{
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
@@ -520,11 +521,11 @@ class CfgVehicles
   };  
   
 //-------------------------------------- MODDED OVERRIDE
-	class Msp_BunnyEarsHeadband: HeadGear_Base
+	class Msp_BunnyEarsHeadband: Clothing
 	{
     inventorySlot[]+={"Wig"};
   };
-  class Msp_Slouchie_ColorBase: HeadGear_Base
+  class Msp_Slouchie_ColorBase: Clothing
 	{
     rootClassName="Msp_Slouchie";
     colorVariants[]=
@@ -545,12 +546,12 @@ class CfgVehicles
       "TealWeed",      
     };
 	};  
-  class MassCatEars: HeadGear_Base
+  class MassCatEars: Clothing
   {
     inventorySlot[]+={"Wig"};
   };
 //-------------------------------------- ALEVARIC OVERRIDE
-  class ALV_MV_TacCap_Forward_Colorbase: HeadGear_Base
+  class ALV_MV_TacCap_Forward_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_TacCap_Forward";
     colorVariants[]=
@@ -567,7 +568,7 @@ class CfgVehicles
       "TigerStripe",      
     };
 	};
-  class ALV_MV_TacCap_Backward_Colorbase: HeadGear_Base
+  class ALV_MV_TacCap_Backward_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_TacCap_Backward";
     colorVariants[]=
@@ -584,7 +585,7 @@ class CfgVehicles
       "TigerStripe",      
     };
 	};
-  class ALV_MV_Comtacs_Colorbase: HeadGear_Base
+  class ALV_MV_Comtacs_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_Comtacs";
     colorVariants[]=
@@ -594,7 +595,7 @@ class CfgVehicles
       "Green"
     };
 	};
-  class ALV_MV_CombatHelmet_Colorbase: HeadGear_Base
+  class ALV_MV_CombatHelmet_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_CombatHelmet";
     colorVariants[]=
@@ -604,7 +605,7 @@ class CfgVehicles
       "Green"
     };
 	};
-  class ALV_MV_AssaultHelmet_Colorbase: HeadGear_Base
+  class ALV_MV_AssaultHelmet_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_AssaultHelmet";
     colorVariants[]=
@@ -632,7 +633,7 @@ class CfgVehicles
       "Green"
     };
 	};
-  class ALV_MV_Kitsune_Helmet_Colorbase: HeadGear_Base
+  class ALV_MV_Kitsune_Helmet_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_Kitsune_Helmet_";
     colorVariants[]=
@@ -642,13 +643,30 @@ class CfgVehicles
     };
 	};
 // ----------------------------------------- Custom Stuff  
-  class SRP_BaseballCap_Tinfoil: HeadGear_Base  // new
+  class SRP_BaseballCap_Tinfoil: Clothing  // new
 	{
 		scope=2;
 		color="Tinfoil";
     displayName="Tinfoil Hat";
     descriptionShort="Espen Industries. Light protection for the ... radio enthusiast ...";
     model="Survivalists_Characters\headgear\tinfoilhat_g.p3d";
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		itemSize[]={1,2};
+		itemsCargoSize[]={1,1};
+		varWetMax=1;
+		heatIsolation=0.2;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -685,7 +703,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_TurkeyBeanie_ColorBase: HeadGear_Base  // new
+  class SRP_TurkeyBeanie_ColorBase: Clothing  // new
 	{
 		scope=0;
     displayName="Turkey Beanie";
@@ -719,6 +737,23 @@ class CfgVehicles
       "Dark",      
       "Snowflake",      
     };
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		itemSize[]={2,1};
+		itemsCargoSize[]={2,1};
+		varWetMax=1;
+		heatIsolation=0.69999999;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
     class ClothingTypes
 		{
 			male="Survivalists_Characters\headgear\turkeybeanie_m.p3d";
@@ -743,7 +778,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_FrakenArmor_Helmet_ColorBase: HeadGear_Base  // new
+  class SRP_FrakenArmor_Helmet_ColorBase: Clothing  // new
 	{
 		scope=0;
     displayName="Fraken Armor - Helmet";
@@ -764,6 +799,23 @@ class CfgVehicles
 		};
     rootClassName="SRP_FrakenArmor_Helmet";
     colorVariants[]={};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		itemSize[]={2,1};
+		itemsCargoSize[]={2,1};
+		varWetMax=1;
+		heatIsolation=0.69999999;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};    
     class ClothingTypes
 		{
 			male="Survivalists_Characters\headgear\srp_frakenarmor_helmet_m.p3d";
@@ -870,7 +922,7 @@ class CfgVehicles
 		};
 		soundImpactType="glass";
   };
-  class SRP_Brewsterhelm: HeadGear_Base
+  class SRP_Brewsterhelm: Clothing
   {
 		scope=2;
     displayName="Brewster Helmet";
@@ -890,6 +942,23 @@ class CfgVehicles
 		};
     rootClassName="";
     colorVariants[]={};
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+    itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
+		varWetMax=0.249;
+		heatIsolation=0.30000001;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};    
     class ClothingTypes
 		{
 			male="Survivalists_Characters\headgear\brewsterhelm_m.p3d";
@@ -977,7 +1046,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_MaximusHelmet: HeadGear_Base
+  class SRP_MaximusHelmet: Clothing
 	{
 		scope=2;
 		displayName="Full Helmet";
@@ -985,9 +1054,14 @@ class CfgVehicles
 		model="Survivalists_Characters\headgear\SRP_Maximus_Helmet_g.p3d";
 		repairableWithKits[]={8};
 		repairCosts[]={25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
 		rotationFlags=2;
-		weight=1200;
-		itemSize[]={4,3};
+		weight=1200;		
+    itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
 		noNVStrap=1;
 		varWetMax=0.249;
 		heatIsolation=0.25;
@@ -1109,7 +1183,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_FireHead_ColorBase: HeadGear_Base
+  class SRP_FireHead_ColorBase: Clothing
 	{
 		scope=2;
 		displayName="Fire Helmet";
@@ -1117,9 +1191,14 @@ class CfgVehicles
 		model="Survivalists_Characters\headgear\srp_fireheadgear_g.p3d";
 		repairableWithKits[]={8};
 		repairCosts[]={25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
 		rotationFlags=2;
 		weight=1200;
-		itemSize[]={4,3};
+    itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
 		noNVStrap=0;
 		varWetMax=0.249;
 		heatIsolation=0.25;
@@ -1245,7 +1324,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class MetalCrown_ColorBase: HeadGear_Base
+  class MetalCrown_ColorBase: Clothing
 	{
     scope=0;
 		displayName="Crown";
@@ -1253,11 +1332,16 @@ class CfgVehicles
 		model="Survivalists_characters\headgear\ArthurCrown_g.p3d";
 		rotationFlags=16;
 		weight=110;
-		itemSize[]={3,2};
+		itemSize[]={3,2};        
+		itemsCargoSize[]={1,1};		
 		varWetMax=1;
 		heatIsolation=0.2;
 		repairableWithKits[]={3,8};
 		repairCosts[]={50,25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
 		headSelectionsToHide[]=
 		{
 			"Clipping_baseballcap"
@@ -1356,7 +1440,7 @@ class CfgVehicles
         "Survivalists_characters\headgear\data\ArthurCrown_Sapphire_co.paa"
     };
 	};
-  class SRP_Masked_HighcutHelmet_ColorBase: HeadGear_Base
+  class SRP_Masked_HighcutHelmet_ColorBase: Clothing
 	{
 		scope=2;
 		displayName="Masked Highcut helmet";
@@ -1365,10 +1449,15 @@ class CfgVehicles
 		repairableWithKits[]={8};
 		repairCosts[]={25};
 		weight=1000;
-		itemSize[]={3,3};
+    itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
 		attachments[]={"NVG","helmetFlashlight","SRP_Comtacs"};
 		varWetMax=0.249;
 		heatIsolation=0.30000001;
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
 		headSelectionsToHide[]=
 		{
 			"Clipping_HelmetMich"
@@ -1425,12 +1514,16 @@ class CfgVehicles
 	};
 
 // -=============================== OLD MVS STUFF  
-  class SRP_MilitaryPatrolCap_ColorBase: HeadGear_Base
+  class SRP_MilitaryPatrolCap_ColorBase: Clothing
 	{
     scope=0;
     displayName="Patrol Cap";
     descriptionShort="Espen Industries. A tight fitting cap with room for a patch above the bill.";
     model="Survivalists_Characters\headgear\srp_patrolcap_g.p3d";
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
     rootClassName="SRP_MilitaryPatrolCap";
     colorVariants[]=
     {
@@ -1537,13 +1630,31 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_patrolcap_backwards_f.p3d";
 		};
 	};
-  class BaseballCap_Pakol: HeadGear_Base
+  class BaseballCap_Pakol: Clothing
 	{
 		scope=2;
 		color="Pakol";
     displayName="Pakol";
 		descriptionShort="Espen Industries. Pakol, popularly known as the Chitrali cap, is a soft round-topped men's hat, typically of wool and found in any of a variety of earthy colors.";
     model="Survivalists_Characters\headgear\srp_pakol_g.p3d";
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};    
+		weight=110;
+    itemSize[]={1,2};
+		itemsCargoSize[]={1,1};
+		varWetMax=1;
+		heatIsolation=0.2;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
     rotationFlags=64;
     attachments[]=
 		{
@@ -1587,12 +1698,30 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_CombatHelmet_ColorBase: HeadGear_Base
+  class SRP_CombatHelmet_ColorBase: Clothing
   {
     scope=0;
     displayName="Combat Helmet";
 		descriptionShort="Espen Industries. The MICH-style combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
 		model="Survivalists_Characters\headgear\srp_combathelmet_g.p3d";
+		inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;
     attachments[]=
     {
       "NVG",
@@ -1704,12 +1833,30 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_CombatHelmetV2_ColorBase: HeadGear_Base
+  class SRP_CombatHelmetV2_ColorBase: Clothing
   {
     scope=0;
     displayName="Combat Helmet - V2";
 		descriptionShort="Espen Industries. The MICH-style v2 combat helmet offers good ballistic protection, much like the MICH 2001 combat helmet. Has room for several attachments.";
 		model="Survivalists_Characters\headgear\srp_combathelmetv2_g.p3d";
+    inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;
     attachments[]=
     {
       "NVG",
@@ -1827,12 +1974,30 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_CombatHelmet6B47_ColorBase: HeadGear_Base
+  class SRP_CombatHelmet6B47_ColorBase: Clothing
   {
     scope=0;
     displayName="Combat Helmet - 6B47";
 		descriptionShort = "Espen Industries. The Russian-designed 6B47 helmet is a part of Ratnik combat gear.";
 		model="Survivalists_Characters\headgear\srp_combathelmet6b47_g.p3d";
+    inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;    
     attachments[]=
     {
       "NVG",
@@ -1944,12 +2109,30 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_CombatHelmetHighCut_ColorBase: HeadGear_Base
+  class SRP_CombatHelmetHighCut_ColorBase: Clothing
   {
     scope=0;
     displayName="Combat Helmet - High Cut";
 		descriptionShort = "Espen Industries. The High Cut style combat helmet offers good ballistic protection, and comes prepped for comtac hearing protection.";
 		model="Survivalists_Characters\headgear\srp_combathelmethighcut_g.p3d";
+    inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;    
     attachments[]=
     {
       "NVG",
@@ -2067,12 +2250,30 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_CombatHelmetAltyn_ColorBase: HeadGear_Base
+  class SRP_CombatHelmetAltyn_ColorBase: Clothing
   {
     scope=0;
     displayName="Combat Helmet - Altyn";
 		descriptionShort = "Espen Industries. The Altyn helmet offers some of the best ballistic protection.";
 		model="Survivalists_Characters\headgear\srp_combathelmetaltyn_g.p3d";
+    inventorySlot[]=
+		{
+			"Headgear"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,3};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;
     attachments[]=
     {
       "NVG",
@@ -2185,7 +2386,7 @@ class CfgVehicles
 			};
 		};		
   };
-  class SRP_AltynHelmetVisor_ColorBase: HeadGear_Base
+  class SRP_AltynHelmetVisor_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Altyn Helmet Visor";
@@ -2296,15 +2497,28 @@ class CfgVehicles
 			};
     };
 	};
-	class SRP_FaceMaskSkull_ColorBase: HeadGear_Base
+	class SRP_FaceMaskSkull_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Face Mask";
 		descriptionShort="Espen Industries. A mask used for concealing one's identity.";
-		itemSize[]={3,2};
-		rotationFlags=0;
 		model="Survivalists_Characters\headgear\srp_facemask_skullmask_g.p3d";
     color="base";
+		rotationFlags=0;
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,2};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;
     rootClassName="SRP_FaceMaskSkull";
     colorVariants[]=
     {
@@ -2363,15 +2577,32 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_facemask_skullmask.p3d";
 		};
 	};
-	class SRP_FaceMask_ColorBase: HeadGear_Base
+	class SRP_FaceMask_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Face Mask";
 		descriptionShort="Espen Industries. A mask used for concealing one's identity.";
-		itemSize[]={3,2};
-		rotationFlags=0;
 		model="Survivalists_Characters\headgear\srp_facemask_g.p3d";
     color="base";
+    inventorySlot[]=
+		{
+			"Headgear","Mask"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,2};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;
+		rotationFlags=0;
     rootClassName="SRP_FaceMask";
     colorVariants[]=
     {
@@ -2380,11 +2611,6 @@ class CfgVehicles
       "Snow",
       "OD",
       "Tan",
-    };
-		inventorySlot[]=
-    {
-      "Mask",
-      "Headgear"
     };
 		headSelectionsToHide[]=
     {
@@ -2427,14 +2653,31 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_facemask.p3d";
 		};
 	};
-  class SRP_MouthCover_ColorBase: HeadGear_Base
+  class SRP_MouthCover_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Mouth Cover";
 		descriptionShort="Espen Industries. A mask used for concealing one's identity. Only covers the mouth.";
-		itemSize[]={3,2};
-		rotationFlags=0;
 		model="Survivalists_Characters\headgear\srp_mouthcover_g.p3d";
+    inventorySlot[]=
+		{
+      "Mask", "Extra"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,2};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;
+		rotationFlags=0;
     color="base";
     rootClassName="SRP_MouthCover";
     colorVariants[]=
@@ -2444,10 +2687,6 @@ class CfgVehicles
       "Snow",
       "OD",
       "Tan",
-    };
-		inventorySlot[]=
-    {
-      "Mask"
     };
 		headSelectionsToHide[]=
     {
@@ -2490,14 +2729,31 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_mouthcover.p3d";
 		};
 	};
-	class SRP_Shroud_ColorBase: HeadGear_Base
+	class SRP_Shroud_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Head Shroud";
 		descriptionShort="Espen Industries. A mask used for concealing one's identity.";
-		itemSize[]={3,2};
-		rotationFlags=0;
 		model="Survivalists_Characters\headgear\srp_shroud_g.p3d";
+    inventorySlot[]=
+		{
+			"Headgear","Mask","Extra"
+		};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]=
+		{
+			"Clothing",
+			"Headgear"
+		};
+		weight=1200;
+		itemSize[]={3,2};
+		itemsCargoSize[]={1,1};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.25;
+		visibilityModifier=0.94999999;
+		rotationFlags=0;
     color="base";
     rootClassName="SRP_Shroud";
     colorVariants[]=
@@ -2505,11 +2761,6 @@ class CfgVehicles
       "Black",
       "OD",
       "Tan",
-    };
-		inventorySlot[]=
-    {
-      "Mask",
-      "Headgear"
     };
 		headSelectionsToHide[]=
     {
@@ -2552,7 +2803,7 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_shroud.p3d";
 		};
 	};
-  class SRP_Comtacs_ColorBase: HeadGear_Base
+  class SRP_Comtacs_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Comtacs";
@@ -2613,7 +2864,7 @@ class CfgVehicles
 			female="Survivalists_Characters\headgear\srp_comtacs.p3d";
 		};
 	};
-  class SRP_EarProtection_ColorBase: HeadGear_Base
+  class SRP_EarProtection_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Ear Protection";
@@ -2681,7 +2932,7 @@ class CfgVehicles
 	};
 
 //================================= CUSTOM STUFF
-  class SRP_SlimHelmetFull: HeadGear_Base
+  class SRP_SlimHelmetFull: Clothing
   {
     scope=2;
     displayName="Full Helmet";
@@ -2689,6 +2940,10 @@ class CfgVehicles
     model="Survivalists_Characters\headgear\srp_slimhelmet_g.p3d";
     repairableWithKits[]={8};
 		repairCosts[]={25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
 		attachments[]=
 		{
 			"NVG"
@@ -2815,7 +3070,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_Goggles_Head: HeadGear_Base
+  class SRP_Goggles_Head: Clothing
 	{	
     scope=2;
 		displayName="Old Goggles";
@@ -2886,7 +3141,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_Cowboy_Hat: HeadGear_Base
+  class SRP_Cowboy_Hat: Clothing
 	{	
 		scope=2;
 		displayName="Cowboy hat";
@@ -2896,6 +3151,10 @@ class CfgVehicles
 		noMask=0;
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
     rootClassName="SRP_Cowboy_Hat";
     colorVariants[]=
     {
@@ -2958,7 +3217,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Burlap_Mask: HeadGear_Base
+  class SRP_Burlap_Mask: Clothing
 	{	
 		scope=2;
 		displayName="Burlap Mask";
@@ -2967,6 +3226,10 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
     rotationFlags=16;
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
 		weight=1000;
 		itemSize[]={2,2};
 		absorbency=0;
@@ -3024,7 +3287,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Alchemist_Hat: HeadGear_Base
+  class SRP_Alchemist_Hat: Clothing
 	{
 		scope=2;
 		displayName="Leather Hat";
@@ -3034,6 +3297,10 @@ class CfgVehicles
 		noMask=0;
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
     rootClassName="SRP_Alchemist_Hat";
     colorVariants[]=
     {
@@ -3096,7 +3363,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Cowboy_Hat_Carl: HeadGear_Base
+  class SRP_Cowboy_Hat_Carl: Clothing
 	{
 		scope=2;
 		displayName="Cowboy hat";
@@ -3106,6 +3373,10 @@ class CfgVehicles
 		noMask=0;
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
     rootClassName="";
     colorVariants[]={};
 		itemSize[]={2,2};
@@ -3164,7 +3435,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_CatEars_ColorBase: HeadGear_Base
+  class SRP_CatEars_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Cat Ears";
@@ -3222,7 +3493,7 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_catears_co.paa"};
   };
-  class SRP_BunnyEars_ColorBase: HeadGear_Base
+  class SRP_BunnyEars_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Bunny Ears";
@@ -3286,7 +3557,7 @@ class CfgVehicles
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Characters\headgear\data\srp_BunnyEars_bunny_co.paa"};
   };
-  class SRP_OfficersHat_ColorBase: HeadGear_Base
+  class SRP_OfficersHat_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Officer Hat";
@@ -3297,8 +3568,8 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		inventorySlot[]={"Headgear"};
-		// rootClassName="SRP_OfficersHat";
-		// colorVariants[]={"Pink","Purple"};
+		rootClassName="SRP_OfficersHat";
+		colorVariants[]={"Green"};
 		itemSize[]={2,1};
 		varWetMax=0.249;
 		heatIsolation=0.5;

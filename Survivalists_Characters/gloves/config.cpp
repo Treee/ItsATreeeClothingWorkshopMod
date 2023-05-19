@@ -14,10 +14,11 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class Gloves_Base;  
+  // class Gloves_Base;  
+  class Clothing;  
   class MeleeDamage;
 //-------------------------------------BASE GAME OVERRIDE
-  class WorkingGloves_ColorBase: Gloves_Base
+  class WorkingGloves_ColorBase: Clothing
 	{
     itemSize[]={1,2};
     rootClassName="WorkingGloves";
@@ -31,7 +32,7 @@ class CfgVehicles
       "Red"
     };
   };
-  class HandsCover_Improvised: Gloves_Base
+  class HandsCover_Improvised: Clothing
 	{
     itemSize[]={1,2};
     rootClassName="HandsCover_Improvised";
@@ -44,7 +45,7 @@ class CfgVehicles
       "Red",      
     };
   };
-  class TacticalGloves_ColorBase: Gloves_Base
+  class TacticalGloves_ColorBase: Clothing
 	{
 		itemSize[]={1,2};
     rootClassName="TacticalGloves";
@@ -63,7 +64,7 @@ class CfgVehicles
       "EMP6",
     };
   }; 
-  class NBCGloves_ColorBase: Gloves_Base
+  class NBCGloves_ColorBase: Clothing
 	{
     heatIsolation=0.8;
 		repairableWithKits[]={5,6}; // duct tape and repair kit
@@ -80,7 +81,7 @@ class CfgVehicles
       "Yellow",      
     };
 	};    
-  class SurgicalGloves_ColorBase: Gloves_Base
+  class SurgicalGloves_ColorBase: Clothing
 	{
     rootClassName="SurgicalGloves";
     colorVariants[]=
@@ -100,7 +101,7 @@ class CfgVehicles
       "Yellow"      
     };
   };
-  class LeatherGloves_ColorBase: Gloves_Base
+  class LeatherGloves_ColorBase: Clothing
 	{
     rootClassName="LeatherGloves";
     itemSize[]={1,2};
@@ -119,7 +120,7 @@ class CfgVehicles
       "Yellow",
     };
   };
-  class OMNOGloves_ColorBase: Gloves_Base
+  class OMNOGloves_ColorBase: Clothing
 	{
     rootClassName="OMNOGloves";
     itemSize[]={1,2};
@@ -131,7 +132,7 @@ class CfgVehicles
       "Black"
     };
   };
-  class WoolGloves_ColorBase: Gloves_Base
+  class WoolGloves_ColorBase: Clothing
 	{
     rootClassName="WoolGloves";
     itemSize[]={1,2};
@@ -143,7 +144,7 @@ class CfgVehicles
       "White"
     };
   };
-  class WoolGlovesFingerless_ColorBase: Gloves_Base
+  class WoolGlovesFingerless_ColorBase: Clothing
 	{
     rootClassName="WoolGlovesFingerless";
     itemSize[]={1,2};
@@ -1960,13 +1961,14 @@ class CfgVehicles
 			0.333
 		};
 	};
-
-	class HookHand: Gloves_Base
+	class HookHand: Clothing
 	{	
 		scope=2;
 		displayName="Metal Hook";
     descriptionShort="Espen Industries. A simple prosthetic for those that need a hand.";
 		model="Survivalists_Characters\gloves\hook_g.p3d";
+		inventorySlot[] = {"Gloves"};
+		itemInfo[] = {"Clothing","Gloves"};
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		rotationFlags=16;
@@ -2023,17 +2025,19 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_BoxingGloves_Colorbase: Gloves_Base
+  class SRP_BoxingGloves_Colorbase: Clothing
   {
     scope=0;
     displayName="Boxing Gloves";
     descriptionShort="Espen Industries. Boxing gloves manufactures to soften even the hardest blows.";
 		model="Survivalists_Characters\gloves\srp_boxinggloves_g.p3d";
+		inventorySlot[] = {"Gloves"};
+		itemInfo[] = {"Clothing","Gloves"};
     attachments[]=
     {
       "SRP_Patch",
       "SRP_PatchMirror"
-    };
+    };    
 		weight=454;
 		itemSize[]={1,2};
 		varWetMax=0.79000002;

@@ -18,9 +18,10 @@ class CfgPatches
 };
 class CfgVehicles
 {
-  class Mask_Base;
+  // class Mask_Base;
+  class Clothing;
 //------------------------------------- BASE GAME OVERRIDE
-  class GasMask: Mask_Base
+  class GasMask: Clothing
 	{
 		soundVoiceType="none";
 		soundVoicePriority=3;
@@ -39,7 +40,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
 	};
-  class BalaclavaMask_ColorBase: Mask_Base
+  class BalaclavaMask_ColorBase: Clothing
 	{
 		itemSize[]={1,2};
     rootClassName="BalaclavaMask";
@@ -75,7 +76,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class Balaclava3Holes_ColorBase: Mask_Base
+  class Balaclava3Holes_ColorBase: Clothing
 	{
 		itemSize[]={1,2};
     rootClassName="Balaclava3Holes";
@@ -111,7 +112,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class GP5GasMask: Mask_Base
+  class GP5GasMask: Clothing
 	{
 		soundVoiceType="none";
 		soundVoicePriority=3;
@@ -130,7 +131,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
 	};
-  class SurgicalMask: Mask_Base
+  class SurgicalMask: Clothing
   {
     rootClassName="SurgicalMask";
     colorVariants[]=
@@ -151,7 +152,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class HockeyMask: Mask_Base
+  class HockeyMask: Clothing
   {
     rootClassName="HockeyMask";
     colorVariants[]=
@@ -172,7 +173,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };		
-  class MimeMask_Male: Mask_Base
+  class MimeMask_Male: Clothing
   {
     rootClassName="MimeMask_Male";
     colorVariants[]=
@@ -192,7 +193,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };	
-  class MimeMask_Female: Mask_Base
+  class MimeMask_Female: Clothing
   {
     rootClassName="MimeMask_Female";
     colorVariants[]=
@@ -212,7 +213,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };	
-  class FaceCover_Improvised: Mask_Base
+  class FaceCover_Improvised: Clothing
 	{
     rootClassName="FaceCover_Improvised";
     colorVariants[]=
@@ -225,7 +226,7 @@ class CfgVehicles
     };
   };
 //------------------------------------- ALEVARIC OVERRIDE
-  class ALV_MV_MouthCover_Colorbase: Mask_Base
+  class ALV_MV_MouthCover_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_MouthCover";
     colorVariants[]=
@@ -235,7 +236,7 @@ class CfgVehicles
       "Tan"
     };
   };
-  class ALV_MV_Balaclava_Colorbase: Mask_Base
+  class ALV_MV_Balaclava_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_Balaclava";
     colorVariants[]=
@@ -245,7 +246,7 @@ class CfgVehicles
       "Tan"
     };
   };
-  class ALV_MV_BalaclavaOpen_Colorbase: Mask_Base
+  class ALV_MV_BalaclavaOpen_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_BalaclavaOpen";
     colorVariants[]=
@@ -255,7 +256,7 @@ class CfgVehicles
       "Tan"
     };
   };
-  class ALV_MV_Shemagh_Colorbase: Mask_Base
+  class ALV_MV_Shemagh_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_Shemagh";
     colorVariants[]=
@@ -265,7 +266,7 @@ class CfgVehicles
       "Tan"
     };
   };
-  class ALV_MV_Poncho_Colorbase: Mask_Base
+  class ALV_MV_Poncho_Colorbase: Clothing
 	{
     rootClassName="ALV_MV_Poncho";
     colorVariants[]=
@@ -276,7 +277,7 @@ class CfgVehicles
     };
   };
 //------------------------------------- MODDED OVERRIDE
-  class Scarf_ColorBase: Mask_Base
+  class Scarf_ColorBase: Clothing
 	{
     rootClassName="Scarf";
     colorVariants[]=
@@ -296,7 +297,7 @@ class CfgVehicles
       "pinkkitty"      
     };
   };
-  class DUB_PormaskR: Mask_Base
+  class DUB_PormaskR: Clothing
   {
     inventorySlot[]+=
     {
@@ -312,7 +313,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_PormaskL: Mask_Base
+  class DUB_PormaskL: Clothing
   {
     inventorySlot[]+=
     {
@@ -328,7 +329,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_PormaskFull: Mask_Base
+  class DUB_PormaskFull: Clothing
   {
     inventorySlot[]+=
     {
@@ -344,7 +345,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_DismaskL: Mask_Base
+  class DUB_DismaskL: Clothing
   {
     inventorySlot[]+=
     {
@@ -360,7 +361,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_DismaskR: Mask_Base
+  class DUB_DismaskR: Clothing
   {
     inventorySlot[]+=
     {
@@ -376,7 +377,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_DismaskFull: Mask_Base
+  class DUB_DismaskFull: Clothing
   {
     inventorySlot[]+=
     {
@@ -392,7 +393,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_DarkmaskL: Mask_Base
+  class DUB_DarkmaskL: Clothing
   {
     inventorySlot[]+=
     {
@@ -408,7 +409,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_DarkmaskR: Mask_Base
+  class DUB_DarkmaskR: Clothing
   {
     inventorySlot[]+=
     {
@@ -424,7 +425,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Deermask: Mask_Base
+  class DUB_Deermask: Clothing
   {
     inventorySlot[]+=
     {
@@ -440,7 +441,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_DevilmaskUnique: Mask_Base
+  class DUB_DevilmaskUnique: Clothing
   {
     inventorySlot[]+=
     {
@@ -456,7 +457,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Onimask: Mask_Base
+  class DUB_Onimask: Clothing
   {
     inventorySlot[]+=
     {
@@ -472,7 +473,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Predatormask: Mask_Base
+  class DUB_Predatormask: Clothing
   {
     inventorySlot[]+=
     {
@@ -488,7 +489,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Silvertrimmask: Mask_Base
+  class DUB_Silvertrimmask: Clothing
   {
     inventorySlot[]+=
     {
@@ -504,7 +505,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Tuskmask: Mask_Base
+  class DUB_Tuskmask: Clothing
   {
     inventorySlot[]+=
     {
@@ -520,7 +521,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Plaguemask: Mask_Base
+  class DUB_Plaguemask: Clothing
   {
     inventorySlot[]+=
     {
@@ -536,7 +537,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Woodgoldmask: Mask_Base
+  class DUB_Woodgoldmask: Clothing
   {
     inventorySlot[]+=
     {
@@ -552,7 +553,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Jestermask: Mask_Base
+  class DUB_Jestermask: Clothing
   {
     inventorySlot[]+=
     {
@@ -568,7 +569,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Bronzemask: Mask_Base
+  class DUB_Bronzemask: Clothing
   {
     inventorySlot[]+=
     {
@@ -584,7 +585,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Tribalmask: Mask_Base
+  class DUB_Tribalmask: Clothing
   {
     inventorySlot[]+=
     {
@@ -600,7 +601,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Spectermask: Mask_Base
+  class DUB_Spectermask: Clothing
   {
     inventorySlot[]+=
     {
@@ -616,7 +617,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Clownmask: Mask_Base
+  class DUB_Clownmask: Clothing
   {
     inventorySlot[]+=
     {
@@ -632,7 +633,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Zombiemask: Mask_Base
+  class DUB_Zombiemask: Clothing
   {
     inventorySlot[]+=
     {
@@ -648,7 +649,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Plaguecross: Mask_Base
+  class DUB_Plaguecross: Clothing
   {
     inventorySlot[]+=
     {
@@ -664,7 +665,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Scrapmask: Mask_Base
+  class DUB_Scrapmask: Clothing
   {
     inventorySlot[]+=
     {
@@ -680,7 +681,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_ScrapmaskV2: Mask_Base
+  class DUB_ScrapmaskV2: Clothing
   {
     inventorySlot[]+=
     {
@@ -696,7 +697,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Snorkel: Mask_Base
+  class DUB_Snorkel: Clothing
   {
     inventorySlot[]+=
     {
@@ -712,7 +713,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_Humanmask: Mask_Base
+  class DUB_Humanmask: Clothing
   {
     inventorySlot[]+=
     {
@@ -728,7 +729,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_GuyFawkesMask: Mask_Base
+  class DUB_GuyFawkesMask: Clothing
   {
     inventorySlot[]+=
     {
@@ -744,7 +745,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
-  class DUB_WolfMask: Mask_Base
+  class DUB_WolfMask: Clothing
   {
     inventorySlot[]+=
     {
@@ -762,7 +763,7 @@ class CfgVehicles
   };
 
 // ----------------------------------------- Custom Stuff
-  class SRP_HannyaMask: Mask_Base
+  class SRP_HannyaMask: Clothing
   {
     scope=2;
     displayName="Antique Hannya Mask";
@@ -875,7 +876,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_PunisherMask: Mask_Base
+  class SRP_PunisherMask: Clothing
   {
     scope=2;
     displayName="Antique Punisher Mask";
@@ -955,7 +956,7 @@ class CfgVehicles
 		soundVoiceType="none";
 		soundVoicePriority=5;
   };
-  class SRP_BoneMonsterMask: Mask_Base
+  class SRP_BoneMonsterMask: Clothing
   {
     scope=2;
     displayName="Antique Bone Monster Mask";
@@ -1035,7 +1036,7 @@ class CfgVehicles
 		soundVoiceType="none";
 		soundVoicePriority=5;
   };
-  class SRP_ShatteredMask: Mask_Base
+  class SRP_ShatteredMask: Clothing
   {
     scope=2;
     displayName="Antique Metal Mask";
@@ -1116,7 +1117,6 @@ class CfgVehicles
 		soundVoiceType="none";
 		soundVoicePriority=5;
   };
-
   class SRP_GasMask: GP5GasMask
   {
 		scope=2;
@@ -1166,7 +1166,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_Ballistic_Mask: Mask_Base
+  class SRP_Ballistic_Mask: Clothing
 	{
 		scope=2;
 		displayName="Ballistic Mask";
@@ -1247,7 +1247,7 @@ class CfgVehicles
 			};
 		};
 	};      
-  class SRP_DeerMask: Mask_Base // deprecated
+  class SRP_DeerMask: Clothing // deprecated
 	{
 		scope=2;
 		displayName="Deer Skull Mask";
@@ -1318,7 +1318,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_Fake_Gasmask: Mask_Base
+  class SRP_Fake_Gasmask: Clothing
 	{
 		scope=2;
 		displayName="Toy Gasmask";
@@ -1410,7 +1410,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_BirdMask: Mask_Base // deprecated
+  class SRP_BirdMask: Clothing // deprecated
 	{
 		scope=2;
 		displayName="Bird Mask";
@@ -1495,7 +1495,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_DemonSkullMask: Mask_Base
+  class SRP_DemonSkullMask: Clothing
 	{
 		scope=2;
 		displayName="Demon Skull Mask";
@@ -1584,7 +1584,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_FakeTacticalMask: Mask_Base
+  class SRP_FakeTacticalMask: Clothing
 	{
 		scope=2;
 		displayName="Fake Tactical Mask";
@@ -1673,7 +1673,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_InariFoxMask: Mask_Base // deprecated
+  class SRP_InariFoxMask: Clothing // deprecated
 	{
 		scope=2;
 		displayName="Inari Fox Mask";
@@ -1762,7 +1762,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_GeishaMask: Mask_Base
+  class SRP_GeishaMask: Clothing
 	{
 		scope=2;
 		displayName="Geisha Mask";
@@ -1854,7 +1854,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_DeerMask_ColorBase: Mask_Base
+  class SRP_DeerMask_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Deer Skull Mask";
@@ -1926,7 +1926,7 @@ class CfgVehicles
 			};
 		};
   };
-  class SRP_BirdMask_ColorBase: Mask_Base
+  class SRP_BirdMask_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Bird Mask";
@@ -2014,7 +2014,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_InariFoxMask_ColorBase: Mask_Base
+  class SRP_InariFoxMask_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Inari Fox Mask";
@@ -2110,7 +2110,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_JapaneseDemonMask_ColorBase: Mask_Base
+  class SRP_JapaneseDemonMask_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Japanese Demon Mask";
@@ -2194,7 +2194,7 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_JojoMask_ColorBase: Mask_Base
+  class SRP_JojoMask_ColorBase: Clothing
 	{
 		scope=0;
 		displayName="Jojo Mask";
@@ -2450,7 +2450,7 @@ class CfgVehicles
 			female="Survivalists_Characters\masks\srp_m50gasmask.p3d";
 		};
 	};
-  class SRP_FacialHairGoatee_Colorbase: Mask_Base
+  class SRP_FacialHairGoatee_Colorbase: Clothing
 	{
 		scope=0;
 		displayName="Goatee";
@@ -2495,7 +2495,7 @@ class CfgVehicles
 			female="Survivalists_Characters\masks\srp_facialhairgoatee.p3d";
 		};
 	};
-  class SRP_FacialHairBeard_Colorbase: Mask_Base
+  class SRP_FacialHairBeard_Colorbase: Clothing
 	{
 		scope=0;
 		displayName="Full Beard";
@@ -2540,7 +2540,7 @@ class CfgVehicles
 			female="Survivalists_Characters\masks\srp_facialhairbeard.p3d";
 		};
 	};
-  class SRP_FacialHairChops_Colorbase: Mask_Base
+  class SRP_FacialHairChops_Colorbase: Clothing
 	{
 		scope=0;
 		displayName="Beard Chops";
