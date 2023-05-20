@@ -27,7 +27,6 @@ modded class PluginAdminLog
 
   override void PlayerKilled( PlayerBase player, Object source ) 
   {
-    super.PlayerKilled(player, source);
     if (GetGame().IsDedicatedServer())
     {
       if (player && source)
@@ -44,10 +43,12 @@ modded class PluginAdminLog
           bool positive;
           blood_type_name = BloodTypes.GetBloodTypeName( bloodtype, blood_name, positive );
           float heatbuffer = player.GetStatHeatBuffer().Get();
-          LogPrint(string.Format("Player EXTRA STATS || Tox:%1 HeatComfort:%2 Tremor:%3 Wetness:%4 Diet:%5 BloodType:%6 %7 Heatbuffer:%8", tox, tempComfort, tremor, wetness,diet,blood_type_name,positive,heatbuffer));
+          LogPrint(string.Format("Player EXTRA STATS || Tox:%1 HeatComfort:%2 Tremor:%3 Wetness:%4 Diet:%5 BloodType:%6 Heatbuffer:%7", tox, tempComfort, tremor, wetness,diet,blood_type_name,heatbuffer));
+          // LogPrint(player.m_AgentPool.LogCurrentAgents());
           LogPrint(player.GetSymptomManager().LogSymptomsOnPlayer())
         }
       }
     }
+    super.PlayerKilled(player, source);
   }
 };

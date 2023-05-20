@@ -71,7 +71,19 @@ class CfgVehicles
   class Inventory_Base;
   class HuntingKnife;
   class WoodAxe;
-
+// class InventorySlotsOffsets
+// {
+//   class NameOfTheSlotHere
+//   {
+//     position[]={0,0.0,0.0};
+//     orientation[]={0,0,0};
+//   };
+//   class NameOfAnotherSlotHere
+//   {
+//     position[]={0,0.0,0.0};
+//     orientation[]={0,0,0};
+//   };  
+// };
   //============================== MODDED VANILLA
   // attachment proxy override
   class Hatchet: Inventory_Base
