@@ -45,7 +45,7 @@ modded class PluginAdminLog
           float heatbuffer = player.GetStatHeatBuffer().Get();
           LogPrint(string.Format("Player EXTRA STATS || Tox:%1 HeatComfort:%2 Tremor:%3 Wetness:%4 Diet:%5 BloodType:%6 Heatbuffer:%7", tox, tempComfort, tremor, wetness,diet,blood_type_name,heatbuffer));
           // LogPrint(player.m_AgentPool.LogCurrentAgents());
-          LogPrint(player.GetSymptomManager().LogSymptomsOnPlayer())
+          LogPrint(player.GetSymptomManager().LogSymptomsOnPlayer());
         }
       }
     }
