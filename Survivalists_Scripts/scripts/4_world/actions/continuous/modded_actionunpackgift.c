@@ -30,14 +30,12 @@ modded class ActionUnpackGift
     EntityAI containerToBury;
     if (Class.CastTo(containerToBury, GetGame().CreateObjectEx(GetDayZGame().GetDynamicTreasureHunt().GetRandomBuriableContainer(), treasureLocation, ECE_PLACE_ON_SURFACE)))
     {
-      int maxItems = Math.RandomIntInclusive(3,8);
+      int maxItems = Math.RandomIntInclusive(3,5);
       int totalCount = GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureItems().Count();
       EntityAI entity;
       ItemBase treasureItem;
-      string newItem;
       for (int i = 0; i < maxItems; i ++)
       {
-        newItem = GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureItem();         
         entity = containerToBury.GetInventory().CreateInInventory(GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureItem());
         if (Class.CastTo(treasureItem, entity))
         {
@@ -48,6 +46,8 @@ modded class ActionUnpackGift
           }
         }        
       }
+      containerToBury.GetInventory().CreateInInventory(GetDayZGame().GetDynamicTreasureHunt().GetRandomBearTreasureItem().GetRandomElement());
+
       ItemBase rewardNote = ItemBase.Cast(containerToBury.GetInventory().CreateInInventory("WrittenNote"));
       rewardNote.GetWrittenNoteData().InitNoteInfo(null, rewardNote);    
       rewardNote.GetWrittenNoteData().SetNoteText(GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureHuntRewardText());

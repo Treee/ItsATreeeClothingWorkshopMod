@@ -2,8 +2,8 @@ ambient[]={1,1,1,1};
 diffuse[]={4,4,4,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={0.67500001,0.67500001,0.67699999,1};
-specularPower=5500;
+specular[]={0.67500001,0.67500001,0.67699999,0.15000001};
+specularPower=3500;
 PixelShaderID="Multi";
 VertexShaderID="Multi";
 class TexGen0
@@ -22,8 +22,8 @@ class TexGen1
 	uvSource="tex1";
 	class uvTransform
 	{
-		aside[]={0.375,0,0};
-		up[]={0,0.375,0};
+		aside[]={0.75,0,0};
+		up[]={0,0.75,0};
 		dir[]={0,0,1};
 		pos[]={0,0,0};
 	};
@@ -77,8 +77,8 @@ class TexGen6
 	uvSource="tex1";
 	class uvTransform
 	{
-		aside[]={0.375,0,0};
-		up[]={0,0.375,0};
+		aside[]={0.75,0,0};
+		up[]={0,0.75,0};
 		dir[]={0,0,1};
 		pos[]={0,0,0};
 	};
@@ -101,22 +101,22 @@ class Stage0
 };
 class Stage1
 {
-	texture="#(argb,8,8,3)color(0.25,0.25,0.25,1.0,co)";
+  texture="#(argb,8,8,3)color(0.0,0.0,0.0,1.0,co)";
 	texGen="1";
 };
 class Stage2
 {
-	texture="#(argb,8,8,3)color(0.4282,0.3541,0.04941,1.0,co)";
+	texture="#(argb,8,8,3)color(0.0,0.0,0.0,1.0,co)";
 	texGen="2";
 };
 class Stage3
 {
-	texture="#(argb,8,8,3)color(0.4282,0.3541,0.04941,1.0,co)";
+	texture="#(argb,8,8,3)color(0.0,0.0,0.0,1.0,co)";
 	texGen="3";
 };
 class Stage4
 {
-	texture="dz\vehicles\wheeled\sedan_02\data\sedan_02_hood_mask.paa";
+	texture="Survivalists_Mods\vehicles\wheeled\data\krazyn8\sedan_02_hood_krazyn8_ca.paa";
 	texGen="4";
 };
 class Stage5
@@ -141,7 +141,7 @@ class Stage8
 };
 class Stage9
 {
-	texture="dz\vehicles\wheeled\sedan_02\data\sedan_02_hood_ca.paa";
+	texture="Survivalists_Mods\vehicles\wheeled\data\krazyn8\sedan_02_hood_krazyn8_ca.paa";
 	texGen="4";
 };
 class Stage10

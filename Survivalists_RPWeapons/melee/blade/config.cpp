@@ -71,19 +71,7 @@ class CfgVehicles
   class Inventory_Base;
   class HuntingKnife;
   class WoodAxe;
-// class InventorySlotsOffsets
-// {
-//   class NameOfTheSlotHere
-//   {
-//     position[]={0,0.0,0.0};
-//     orientation[]={0,0,0};
-//   };
-//   class NameOfAnotherSlotHere
-//   {
-//     position[]={0,0.0,0.0};
-//     orientation[]={0,0,0};
-//   };  
-// };
+
   //============================== MODDED VANILLA
   // attachment proxy override
   class Hatchet: Inventory_Base
@@ -475,7 +463,7 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\katanabamboo.p3d";
 		rotationFlags=12;
 		weight=130;
-		itemSize[]={2,7};
+		itemSize[]={1,7};
 		itemBehaviour=2;
     repairableWithKits[]={5,8};
 		repairCosts[]={25,25};
@@ -506,6 +494,19 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\katanaabamboo.rvmat"
 		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={0,0,35};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={90,0,-20};//x,y,z
+			};
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -610,7 +611,7 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\srp_katanaslim.p3d";
 		rotationFlags=12;
 		weight=130;
-		itemSize[]={2,7};
+		itemSize[]={1,7};
     repairableWithKits[]={4};
 		repairCosts[]={50};
 		itemBehaviour=2;
@@ -642,6 +643,19 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim.rvmat"
 		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={-90,35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={180,20,0};//x,y,z
+			};
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -746,7 +760,7 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\srp_katanaslim_sheath.p3d";
 		rotationFlags=12;
 		weight=130;
-		itemSize[]={2,7};
+		itemSize[]={1,7};
 		itemBehaviour=2;
     repairableWithKits[]={5,8};
 		repairCosts[]={50,25};
@@ -789,6 +803,19 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim.rvmat"
 		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.1,0.7,-0.027};
+        orientation[]={90,155,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.05,0.25,-0.2};//FB,UD,LR
+        orientation[]={0,150,0};//x,y,z
+			};
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1121,6 +1148,19 @@ class CfgVehicles
     repairableWithKits[]={4};
 		repairCosts[]={50};
 		isMeleeWeapon=1;
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,-0.2,0};//FB,UD,LR
+        orientation[]={0,20,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,-0.2,0};//FB,UD,LR
+        orientation[]={-0,-20,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1216,6 +1256,19 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_RPWeapons\melee\blade\data\srp_witchersword_co.paa"
+    };
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-20,0};
+      };  
+      class Shoulder
+      {
+        position[]={0.05,-0.15,-0.35};//FB,UD,LR
+        orientation[]={0,-30,0};//x,y,z
+      };
     };
 		class DamageSystem
 		{
@@ -1326,6 +1379,19 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_RPWeapons\melee\blade\data\srp_lotr_swordanduril_co.paa"
+    };
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-20,0};
+      };  
+      class Shoulder
+      {
+        position[]={0.05,-0.15,-0.35};//FB,UD,LR
+        orientation[]={0,-30,0};//x,y,z
+      };
     };
 		class DamageSystem
 		{
@@ -1748,6 +1814,7 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\SRP_Viking_Battle_Axe_CO.paa"
 		};
+
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1937,7 +2004,7 @@ class CfgVehicles
 		debug_ItemCategory=2;
 		rotationFlags=12;
 		weight=4400;
-		itemSize[]={2,7};
+		itemSize[]={1,7};
 		fragility=0.001;
 		itemBehaviour=1;
 		openItemSpillRange[]={20,50};
@@ -1973,6 +2040,19 @@ class CfgVehicles
 			"Survivalists_RPWeapons\melee\blade\data\srp_mastersword_scabard_co.paa",      
 			"Survivalists_RPWeapons\melee\blade\data\srp_mastersword_scabarddeco_co.paa",      
 		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2086,7 +2166,7 @@ class CfgVehicles
 		debug_ItemCategory=2;
 		rotationFlags=12;
 		weight=4400;
-		itemSize[]={2,7};
+		itemSize[]={1,7};
 		fragility=0.001;
 		itemBehaviour=1;
 		openItemSpillRange[]={20,50};
@@ -2124,6 +2204,19 @@ class CfgVehicles
 			"Survivalists_RPWeapons\melee\blade\data\srp_mastersword_scabard_co.paa",      
 			"Survivalists_RPWeapons\melee\blade\data\srp_mastersword_scabarddeco_co.paa",      
 		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.1,0.6,-0.027};
+        orientation[]={90,145,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0.2,-0.2};//FB,UD,LR
+        orientation[]={0,155,0};//x,y,z
+			};
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2271,7 +2364,7 @@ class CfgVehicles
 		debug_ItemCategory=2;
 		rotationFlags=12;
 		weight=4400;
-		itemSize[]={2,5};
+		itemSize[]={1,5};
 		fragility=0.001;
 		itemBehaviour=1;
 		openItemSpillRange[]={20,50};
@@ -2302,6 +2395,19 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\srp_greatrunesword_co.paa"    
 		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -2463,6 +2569,19 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\srp_firegreatsword_co.paa",     
 		};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,-0.25,0};//FB,UD,LR
+        orientation[]={0,20,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,-0.25,0};//FB,UD,LR
+        orientation[]={-0,-20,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -3266,7 +3385,7 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\srp_gladius.p3d";
 		rotationFlags=12;
 		weight=130;
-		itemSize[]={2,4};
+		itemSize[]={1,5};
     repairableWithKits[]={4};
 		repairCosts[]={50};
 		itemBehaviour=2;
@@ -3298,6 +3417,19 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\srp_gladius.rvmat"
 		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -3402,7 +3534,7 @@ class CfgVehicles
 		model="Survivalists_RPWeapons\melee\blade\srp_gladius_sheath.p3d";
 		rotationFlags=12;
 		weight=130;
-		itemSize[]={2,5};
+		itemSize[]={1,5};
 		itemBehaviour=2;
     repairableWithKits[]={5,8};
 		repairCosts[]={50,25};
@@ -3438,6 +3570,19 @@ class CfgVehicles
 		{
 			"Survivalists_RPWeapons\melee\blade\data\srp_gladius.rvmat"
 		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.2,0.55,-0.027};
+        orientation[]={90,145,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0.2,-0.2};//FB,UD,LR
+        orientation[]={0,155,0};//x,y,z
+			};
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -3605,6 +3750,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={4};
 		repairCosts[]={50};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,0,0};//FB,UD,LR
+        orientation[]={0,20,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,0,0};//FB,UD,LR
+        orientation[]={-0,-20,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -3693,6 +3851,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={4};
 		repairCosts[]={50};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,0,0};//FB,UD,LR
+        orientation[]={0,20,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,0,0};//FB,UD,LR
+        orientation[]={-0,-20,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth

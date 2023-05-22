@@ -210,6 +210,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={4,5,8};
 		repairCosts[]={50,100,100};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,0,0};//FB,UD,LR
+        orientation[]={0,20,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,0,0};//FB,UD,LR
+        orientation[]={-0,-20,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -798,6 +811,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={5,8};
 		repairCosts[]={100,100};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,0.65,-0.25};//FB,UD,LR
+        orientation[]={0,200,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,0.65,0.25};//FB,UD,LR
+        orientation[]={0,-200,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -889,6 +915,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={5,8};
 		repairCosts[]={100,100};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,0.65,-0.25};//FB,UD,LR
+        orientation[]={0,200,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,0.65,0.25};//FB,UD,LR
+        orientation[]={0,-200,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -979,6 +1018,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={5,8};
 		repairCosts[]={100,100};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,0.65,-0.25};//FB,UD,LR
+        orientation[]={0,200,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,0.65,0.25};//FB,UD,LR
+        orientation[]={0,-200,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1067,6 +1119,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={5,8};
 		repairCosts[]={100,100};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,0.65,-0.25};//FB,UD,LR
+        orientation[]={0,200,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,0.65,0.25};//FB,UD,LR
+        orientation[]={0,-200,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1155,6 +1220,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={5,8};
 		repairCosts[]={100,100};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,-0.1,-0.025};//FB,UD,LR
+        orientation[]={0,20,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,-0.1,0.025};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -1243,6 +1321,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={5,8};
 		repairCosts[]={100,100};
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.05,0.65,-0.25};//FB,UD,LR
+        orientation[]={0,200,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.01,0.65,0.25};//FB,UD,LR
+        orientation[]={0,-200,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth

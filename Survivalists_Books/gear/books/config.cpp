@@ -489,6 +489,19 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_phantomguide_co.paa"
     };
   };
+  class SRP_ReadableBook_RidersOfPortland: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Biography of the Riders";
+    author="Sirius Aurelius";
+		file="Survivalists_Books\gear\books\data\book_ridersofportland.html";		
+    displayName="Dossier on the Riders";
+    descriptionShort="An account on the Riders of Portland.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_ridersofportland_co.paa"
+    };
+  };
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase

@@ -324,6 +324,41 @@ class SRP_DynamicTreasureHunt
       "SRP_StimPackInjector_LocknSons",
     };
   }
+  TStringArray GetRandomBearTreasureItem()
+  {
+    return {
+      "Bear_Arbi",
+      "Bear_FrenchBread",
+      "Bear_FryingPan",
+      "Bear_Gloomy",
+      "Bear_Hat",
+      "Bear_SaltyCougar",
+      "Bear_Voodoo",
+      "Bear_Zombie",
+      "Bear_Axe",
+      "Bear_Guts",
+      "Bear_Cheddar",
+      "Bear_Maple",
+      "Bear_Trippy",
+      "Bear_Golden",
+      "Bear_Miles",
+      "Bear_Chip",
+      "Bear_Emporium",
+      "Bear_Gray",
+      "Bear_Monolith",
+      "Bear_Pig",
+      "Bear_Sierb",
+      "Bear_GNB",
+      "Bear_Arbiters",
+      "Bear_TheStash",
+      "Bear_Altar",
+      "Bear_Teddys",
+      "Bear_Salty",
+      "Bear_Arcadia",
+      "Bear_Dawnbreak",
+      "Bear_Hazey",
+    };
+  }
   string GetRandomBuriableContainer()
   {
     return GetBuriableContainers().GetRandomElement();

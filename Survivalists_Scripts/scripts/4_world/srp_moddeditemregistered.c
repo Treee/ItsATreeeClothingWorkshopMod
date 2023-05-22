@@ -96,7 +96,7 @@ modded class ModItemRegisterCallbacks
 		pType.AddItemInHandsProfileIK("SRP_ChessBoard_Kit", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_extinguisher.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/firewood.anm");
 		pType.AddItemInHandsProfileIK("SRP_PersonalRadio_Backpack", "dz/anims/workspaces/player/player_main/player_main_2h.asi", pBehavior, "dz/anims/anm/player/ik/explosives/FireworksLauncher.anm");
 		pType.AddItemInHandsProfileIK("SRP_PropaneTank_ColorBase", "dz/anims/workspaces/player/player_main/player_main_2h.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/fire_extinguisher.anm");
-    
+    pType.AddItemInHandsProfileIK("SRP_Big_Military_Pack_Tan","dz/anims/workspaces/player/player_main/weapons/player_main_2h_extinguisher.asi",	pBehavior,"dz/anims/anm/player/ik/two_handed/fire_extinguisher.anm");	
     pType.AddItemInHandsProfileIK("SRP_TeaKettle_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
     
     pType.AddItemInHandsProfileIK("BrewingPot_Mash_Colorbase", "dz/anims/workspaces/player/player_main/props/player_main_2h_pot.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/CookingPot.anm");    
@@ -171,7 +171,6 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_GarbageBin_Colorbase", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");    
     pType.AddItemInHandsProfileIK("SRP_GuitarCase_ColorBase", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");    
     pType.AddItemInHandsProfileIK("SRP_Ladder_Closed", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
-    
     pType.AddItemInHandsProfileIK("SRP_Car_WoodenDerby", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
   };
 }
