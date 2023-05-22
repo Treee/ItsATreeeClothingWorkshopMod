@@ -82,6 +82,10 @@ class CfgVehicles
     itemSize[]={1,3};
     inventorySlot[]+=
     {
+      "SRP_Grenade1",
+      "SRP_Grenade2",
+      "SRP_Grenade3",
+      "SRP_Grenade4",
       "Dynamite1",
       "Dynamite2",
       "Dynamite3",
