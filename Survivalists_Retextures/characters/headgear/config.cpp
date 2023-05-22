@@ -53,7 +53,7 @@ class CfgVehicles
   class SRP_FrakenArmor_Helmet_ColorBase;
   class SRP_Alchemist_Hat;
   class ALV_MV_TacCap_Forward_Colorbase;
-
+  class ALV_MV_TacCap_Backward_Colorbase;
 //=============================================== Vanilla Override
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
 	{
