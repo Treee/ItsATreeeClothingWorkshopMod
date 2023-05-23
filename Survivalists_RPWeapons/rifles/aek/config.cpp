@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Survivalists_RPWeapons_Rifles_ttak458
+	class Survivalists_RPWeapons_Rifles_ttaek
 	{
 		units[]={};
 		weapons[]={};

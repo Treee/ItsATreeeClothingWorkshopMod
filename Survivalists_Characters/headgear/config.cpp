@@ -13,7 +13,7 @@ class CfgPatches
       "DZ_Characters_Masks",
       "DZ_Gear_Optics",
       "DZ_Characters_Glasses",
-      "MSP_Clothing_Data",//bunny ears, slouchie
+      // "MSP_Clothing_Data",//bunny ears, slouchie
       "Alv_Tac_Gear_Headgear"
 		};
 	};
@@ -521,31 +521,31 @@ class CfgVehicles
   };  
   
 //-------------------------------------- MODDED OVERRIDE
-	class Msp_BunnyEarsHeadband: Clothing
-	{
-    inventorySlot[]+={"Wig"};
-  };
-  class Msp_Slouchie_ColorBase: Clothing
-	{
-    rootClassName="Msp_Slouchie";
-    colorVariants[]=
-    {
-      "Beige",
-      "Black",
-      "Blue",
-      "Red",
-      "Red1",      
-      "Green",      
-      "GreenWeed",      
-      "GreyKitty",      
-      "Pink",      
-      "PinkKitty",      
-      "PinkWeed",      
-      "PinkPurple",      
-      "Teal",      
-      "TealWeed",      
-    };
-	};  
+	// class Msp_BunnyEarsHeadband: Clothing
+	// {
+  //   inventorySlot[]+={"Wig"};
+  // };
+  // class Msp_Slouchie_ColorBase: Clothing
+	// {
+  //   rootClassName="Msp_Slouchie";
+  //   colorVariants[]=
+  //   {
+  //     "Beige",
+  //     "Black",
+  //     "Blue",
+  //     "Red",
+  //     "Red1",      
+  //     "Green",      
+  //     "GreenWeed",      
+  //     "GreyKitty",      
+  //     "Pink",      
+  //     "PinkKitty",      
+  //     "PinkWeed",      
+  //     "PinkPurple",      
+  //     "Teal",      
+  //     "TealWeed",      
+  //   };
+	// };  
   class MassCatEars: Clothing
   {
     inventorySlot[]+={"Wig"};

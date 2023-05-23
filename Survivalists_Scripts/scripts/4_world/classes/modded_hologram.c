@@ -66,11 +66,6 @@ modded class Hologram
       vector minMaxProjection = GetMinMaxProjectionDistance(projection_radius);
       min_projection_dist = minMaxProjection[0];
       max_projection_dist = minMaxProjection[1];
-      if (placeableKit.GetType() == "SRP_DrugWorkbench_Kit")
-      {
-        min_projection_dist = 0.8;
-        max_projection_dist = 4;
-      }
 
       vector from = GetFromVector(player);
       vector to = GetToVector(max_projection_dist, camera_to_player_distance, from);

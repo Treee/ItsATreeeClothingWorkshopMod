@@ -6,8 +6,8 @@ modded class PluginRecipesManager
 		super.RegisterRecipies();
 
     //--------- Modded Item Recipes
-    RegisterRecipe(new Craft_Msp_EmptyPlanterBox);
-    RegisterRecipe(new Craft_Msp_EmptySquarePlanterBox);
+    // RegisterRecipe(new Craft_Msp_EmptyPlanterBox);
+    // RegisterRecipe(new Craft_Msp_EmptySquarePlanterBox);
     RegisterRecipe(new SRP_DecraftBBPKits);
     RegisterRecipe(new SRP_DecraftBBPBlueprints);
     RegisterRecipe(new SRP_CraftBBPBlueprints);

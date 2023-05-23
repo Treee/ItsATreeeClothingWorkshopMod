@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Survivalists_RPWeapons_Rifles_ESPAR47
+	class Survivalists_RPWeapons_Rifles_ESPAR15
 	{
 		units[]=
 		{

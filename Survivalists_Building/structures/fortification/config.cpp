@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Survivalists_Building_Structures_Specific
+	class Survivalists_Building_Structures_Fortification
 	{
 		units[]={};
 		weapons[]={};

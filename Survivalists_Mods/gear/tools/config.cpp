@@ -25,7 +25,19 @@ class CfgVehicles
 
   class SRP_KitBase;
 
-  // ---------------------------- BASE GAME OVERRIDE
+// ---------------------------- BASE GAME OVERRIDE
+  class RemoteDetonator: Inventory_Base
+  {
+    scope=0;
+  };
+  class RemoteDetonatorReceiver: RemoteDetonator
+  {
+    scope=0;
+  };
+  class RemoteDetonatorTrigger: RemoteDetonator
+  {
+    scope=0;
+  };
 	class Heatpack: Inventory_Base
 	{
 		itemSize[]={1,1};
@@ -210,14 +222,14 @@ class CfgVehicles
 		itemSize[]={2,2};
   };
 
-  // -------------------------- MODDED MODS
+// -------------------------- MODDED MODS
   class MassAdminStash: Compass
 	{
     scope=0; // do not let it even be spawned in
 		itemsCargoSize[]={0,0}; // if it somehow got in, no storage
 	};
 
-  // ---------------------------- Custom Stuff
+// ---------------------------- Custom Stuff
   class SRP_Hacksaw_Espen: Hacksaw
 	{
 		scope=2;
@@ -1127,7 +1139,7 @@ class CfgVehicles
 		};
 	};
 
-  //============================================= ELECTRONIC Hardeners
+//============================================= ELECTRONIC Hardeners
   class TireRepairKit_ElectronicsKit_ColorBase: Inventory_Base
 	{
 		scope=0;
@@ -1246,7 +1258,7 @@ class CfgVehicles
 	};
 
 
-  //==================================================== ELECTRONIC TOOLS
+//==================================================== ELECTRONIC TOOLS
   class BatteryCharger_VoltMeter: Inventory_Base
 	{
 		scope=2;
@@ -1506,4 +1518,5 @@ class CfgVehicles
 			};
 		};
   };
+//==================================================== END
 };
