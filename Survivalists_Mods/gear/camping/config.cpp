@@ -32,6 +32,52 @@ class CfgVehicles
   class Clothing;
 
   //----------------------- MOD OVERRIDES
+  class Msp_Planter_Base;
+  class Msp_Storage_Base;
+  class Msp_Greenhouse_Base;
+  class Msp_Kit;
+
+  class Msp_PlanterBox: Msp_Planter_Base
+  {
+    scope=0;
+  };
+  class Msp_SquarePlanterBox: Msp_Planter_Base
+  {
+    scope=0;
+  };
+  class Msp_EmptySquarePlanterBox: Msp_Storage_Base
+  {
+    scope=0;
+  };
+  class Msp_EmptyPlanterBox: Msp_Storage_Base
+  {
+    scope=0;
+  };
+  class Msp_Greenhouse: Msp_Greenhouse_Base
+  {
+    scope=0;
+  };
+  class Msp_Greenhouse_Kit: Msp_Kit
+  {
+    scope=0;
+  };
+  class Msp_GreenhouseWood_Kit: Msp_Kit
+  {
+    scope=0;
+  };
+  class Msp_GreenhouseWood: Msp_Greenhouse_Base
+  {
+    scope=0;
+  };
+  class Msp_EmptyPlanterPot: Msp_Storage_Base
+  {
+    scope=0;
+  };
+  class Msp_PlanterPot: Msp_Planter_Base
+  {
+    scope=0;
+  };
+
   class riflesling_colorbase_mung: Clothing
   {
     scope=0;

@@ -1814,13 +1814,80 @@ class CfgVehicles
 				};
 			};
 		};
-		class Nutrition
+		class AnimationSources: FoodAnimationSources{};
+		class Food
 		{
-			fullnessIndex=2;
-			energy=250;
-			water=100;
-			nutritionalIndex=1;
-			toxicity=0;
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={2.5,80,70,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,5,-1};
+					nutrition_properties[]={2,80,35,1,0,"4 +     16"};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,-1};
+					nutrition_properties[]={3.5,110,52.5,1,0};
+					cooking_properties[]={70,250};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,-1};
+					nutrition_properties[]={3,100,75,1,0};
+					cooking_properties[]={70,250};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,-1};
+					nutrition_properties[]={0.75,110,7,1,0};
+					cooking_properties[]={70,250,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,-1};
+					nutrition_properties[]={2,80,17.5,1,0,0};
+					cooking_properties[]={100,300};
+				};
+			};
+			class FoodStageTransitions: MeatStageTransitions{};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class openTunaCan
+				{
+					soundSet="openTunaCan_SoundSet";
+					id=204;
+				};
+				class Eating_TakeFood
+				{
+					soundSet="Eating_TakeFood_Soundset";
+					id=889;
+				};
+				class Eating_BoxOpen
+				{
+					soundSet="Eating_BoxOpen_Soundset";
+					id=893;
+				};
+				class Eating_BoxShake
+				{
+					soundSet="Eating_BoxShake_Soundset";
+					id=894;
+				};
+				class Eating_BoxEnd
+				{
+					soundSet="Eating_BoxEnd_Soundset";
+					id=895;
+				};
+			};
 		};
 	};
   class srpSausage: Edible_Base
