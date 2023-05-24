@@ -818,7 +818,13 @@ class CfgVehicles
 		simulation="itemoptics";
 		inventorySlot[]=
 		{
-			"WeaponOptics"
+			"WeaponOptics",
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
 		};
 		selectionFireAnim="zasleh";
 		memoryPointCamera="eyeScope";
@@ -916,7 +922,13 @@ class CfgVehicles
 		simulation="itemoptics";
 		inventorySlot[]=
 		{
-			"WeaponOptics"
+			"WeaponOptics",
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
 		};
 		selectionFireAnim="zasleh";
 		memoryPointCamera="eyeScope";
@@ -1000,7 +1012,13 @@ class CfgVehicles
 		simulation="itemoptics";
 		inventorySlot[]=
 		{
-			"WeaponOptics"
+			"WeaponOptics",
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
 		};
 		selectionFireAnim="zasleh";
 		memoryPointCamera="eyeScope";
@@ -1076,7 +1094,13 @@ class CfgVehicles
 		simulation="itemoptics";
 		inventorySlot[]=
 		{
-			"WeaponOptics"
+			"WeaponOptics",
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
 		};
 		selectionFireAnim="zasleh";
 		memoryPointCamera="eyeScope";
@@ -1152,7 +1176,13 @@ class CfgVehicles
 		simulation="itemoptics";
 		inventorySlot[]=
 		{
-			"WeaponOptics"
+			"WeaponOptics",
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
 		};
 		selectionFireAnim="zasleh";
 		memoryPointCamera="eyeScope";
@@ -1315,7 +1345,13 @@ class CfgVehicles
 		inventorySlot[]=
 		{
 			"pistolOptics",
-			"weaponOpticsCrossbow"
+			"weaponOpticsCrossbow",
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
 		};
 		simulation="itemoptics";
 		selectionFireAnim="zasleh";
