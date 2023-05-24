@@ -233,3 +233,10 @@ modded class Pliers
     return true;
   }
 };
+modded class CanOpener
+{	
+  override bool IsKnifeTool()
+  {
+    return true;
+  }
+};

@@ -19,7 +19,7 @@ class SRP_FullSyringe_KuruCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
-    player.InsertAgent(eAgents.BRAIN,-5000);
+    player.InsertAgent(eAgents.BRAIN,-50000);
     player.m_ModifiersManager.DeactivateModifier(eModifiers.MDF_BRAIN);
     player.RemoveAgent(eAgents.BRAIN);    
 	}
@@ -36,7 +36,7 @@ class SRP_FullSyringe_SalmonellaCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
-    player.InsertAgent(eAgents.SALMONELLA,-300);
+    player.InsertAgent(eAgents.SALMONELLA,-30000);
     player.m_ModifiersManager.DeactivateModifier(eModifiers.MDF_SALMONELLA);
     player.RemoveAgent(eAgents.SALMONELLA);    
 	}
@@ -53,7 +53,7 @@ class SRP_FullSyringe_InfluenzaCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
-    player.InsertAgent(eAgents.INFLUENZA,-1000);
+    player.InsertAgent(eAgents.INFLUENZA,-10000);
     player.m_ModifiersManager.DeactivateModifier(eModifiers.MDF_COMMON_COLD);
     player.m_ModifiersManager.DeactivateModifier(eModifiers.MDF_INFLUENZA);
     player.RemoveAgent(eAgents.INFLUENZA);    
@@ -71,7 +71,7 @@ class SRP_FullSyringe_CholeraCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
-    player.InsertAgent(eAgents.CHOLERA,-1000);
+    player.InsertAgent(eAgents.CHOLERA,-10000);
     player.m_ModifiersManager.DeactivateModifier(eModifiers.MDF_CHOLERA);
     player.RemoveAgent(eAgents.CHOLERA);    
 	}
@@ -88,9 +88,11 @@ class SRP_FullSyringe_CeftazidimCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
-    player.InsertAgent(eAgents.SALMONELLA,-300);
+    player.InsertAgent(eAgents.SALMONELLA,-30000);
+    player.InsertAgent(eAgents.FOOD_POISON,-30000);
     player.m_ModifiersManager.ActivateModifier(eModifiers.MDF_CHARCOAL);
     player.RemoveAgent(eAgents.SALMONELLA);
+    player.RemoveAgent(eAgents.FOOD_POISON);
 	}
 };
 
@@ -105,7 +107,7 @@ class SRP_FullSyringe_AmpicillinCure extends SRP_FullSyringe_Base
 {
   override void OnApply(PlayerBase player)
 	{
-    player.InsertAgent(eAgents.WOUND_AGENT,-1000);
+    player.InsertAgent(eAgents.WOUND_AGENT,-10000);
     player.m_ModifiersManager.ActivateModifier(eModifiers.MDF_ANTIBIOTICS);
     player.RemoveAgent(eAgents.WOUND_AGENT);
 	}

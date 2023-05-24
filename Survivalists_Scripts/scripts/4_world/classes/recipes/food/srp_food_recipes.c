@@ -66,7 +66,10 @@ modded class OpenCan
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    ToolBase tool;
+    if ( player.IsPlacingLocal() )
+			return false;
+    
+    ItemBase tool;
     if (Class.CastTo(tool, ingredients[1]))
     {
       return tool.IsKnifeTool();

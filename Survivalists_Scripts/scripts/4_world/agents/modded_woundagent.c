@@ -1,7 +1,7 @@
 modded class WoundAgent
 {	
-  static const float RESISTANCE_STAGE_1 = 0.75;
-	static const float RESISTANCE_STAGE_2 = 0.95;
+  static const float RESISTANCE_STAGE_1 = 0.7;
+	static const float RESISTANCE_STAGE_2 = 0.9;
 
 	override void Init()
 	{
@@ -16,9 +16,9 @@ modded class CholeraAgent
 	override void Init()
 	{
     super.Init();
-		m_AntibioticsResistance = 0.9;
+		m_AntibioticsResistance = 0.85;
 		m_MaxCount 				= 5000;
-		m_Potency 				= EStatLevels.GREAT;
+		m_Potency 				= EStatLevels.LOW;
 	}
 };
 
@@ -26,9 +26,9 @@ modded class InfluenzaAgent
 {
 	override void Init()
 	{		
-		m_AntibioticsResistance = 0.9;
+		m_AntibioticsResistance = 0.75;
 		m_MaxCount 				= 3000;
-    m_Potency 				= EStatLevels.GREAT;
+    m_Potency 				= EStatLevels.LOW;
 	}
 };
 modded class FoodPoisonAgent
@@ -36,8 +36,8 @@ modded class FoodPoisonAgent
 	override void Init()
 	{
     super.Init();
-		m_AntibioticsResistance = 0.85;
+		m_AntibioticsResistance = 0.7;
 		m_MaxCount 				= 1000;
-		m_Potency 				= EStatLevels.MEDIUM;
+		m_Potency 				= EStatLevels.LOW;
 	}
 };
