@@ -364,6 +364,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_SmallProtectorCase_Syringe);
       RegisterRecipe(new Craft_SRP_SmallProtectorCase_Nails);
       RegisterRecipe(new Craft_SRP_SmallProtectorCase_Flare);
+      RegisterRecipe(new Craft_SRP_SmallProtectorCase_Armband);      
       RegisterRecipe(new Craft_SRP_Rebox_Nails);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_556x45);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_556x45Tracer);
