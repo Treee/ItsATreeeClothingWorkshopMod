@@ -162,6 +162,7 @@ modded class ItemBase
   {
     InitializeColorVariants();
     InitializeBioImmunityVariables();
+    InitializeMutantVariables();
   }
 //===================================== HELPERS
   bool IsPistolMagazine() // for pistol mag pouches
