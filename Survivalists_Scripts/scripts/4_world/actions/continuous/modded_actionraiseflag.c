@@ -37,8 +37,8 @@ modded class TerritoryFlag
 {
   override bool CanReceiveAttachment( EntityAI attachment, int slotId )
   {
-    if (!super.CanReceiveAttachment(attachment, slotId))
-      return attachment.GetType() == "Stone";
-    return false;
+    if (attachment.GetType() == "Stone")
+      return true;
+    return super.CanReceiveAttachment(attachment, slotId);
   }
 };
