@@ -53,8 +53,18 @@ modded class Environment
       }
       if (m_Player.IsPlayerMutant() || isBoosted)
       {
-        m_Player.GetStatEnergy().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + 0.1));
-        m_Player.GetStatWater().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + 0.1));
+        SRPConfig config;
+        if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
+        {
+          SRP_BioFlowerInfo flower = config.g_BioFlowerManager.GetBioFlowerInfoByPosition(m_Player.GetPosition());
+          float multiplier = 0.2;
+          if (flower)
+          {
+            multiplier += (( flower.GetFlowerEnergy() / 50 ) + 0.1);
+          }
+        }
+        m_Player.GetStatEnergy().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + multiplier));
+        m_Player.GetStatWater().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + multiplier));
       }
       else
       {
@@ -64,5 +74,4 @@ modded class Environment
       }
     }
   }
-
 };
