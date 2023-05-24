@@ -8,7 +8,8 @@ modded class Bottle_Base
     {
       if (GetLiquidType() == LIQUID_GASOLINE)
       {
-        int newQuantity = GetQuantity() * 0.5; // 10% for jesus
+        float randomEvaporation = Math.RandomFloatInclusive(0.01, 0.07);
+        int newQuantity = GetQuantity() * randomEvaporation; // 10% for jesus
         AddQuantity(-newQuantity);
       }        
     }
