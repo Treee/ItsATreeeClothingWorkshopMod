@@ -26,6 +26,8 @@ modded class ActionDismantlePart
 
   override protected bool DismantleCondition( PlayerBase player, ActionTarget target, ItemBase item, bool camera_check )
 	{	
+    if (super.DismantleCondition(player, target, item, camera_check))
+      return true;
     // our custom buildables check SRP_DefaultHouse
 		if ( player && !player.IsPlacingLocal() && !player.IsPlacingServer() )
 		{
@@ -45,7 +47,7 @@ modded class ActionDismantlePart
         return true;
       }
 		}
-		return super.DismantleCondition(player, target, item, camera_check);
+		return false;
 	}
 
   override void OnFinishProgressServer( ActionData action_data )
