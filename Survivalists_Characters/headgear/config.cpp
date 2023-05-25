@@ -2515,7 +2515,7 @@ class CfgVehicles
 		weight=1200;
 		itemSize[]={3,2};
 		itemsCargoSize[]={1,1};
-		noNVStrap=1;
+		noNVStrap=0;
 		varWetMax=0.249;
 		heatIsolation=0.25;
 		visibilityModifier=0.94999999;
@@ -2598,7 +2598,7 @@ class CfgVehicles
 		weight=1200;
 		itemSize[]={3,2};
 		itemsCargoSize[]={1,1};
-		noNVStrap=1;
+		noNVStrap=0;
 		varWetMax=0.249;
 		heatIsolation=0.25;
 		visibilityModifier=0.94999999;
@@ -2673,7 +2673,7 @@ class CfgVehicles
 		weight=1200;
 		itemSize[]={3,2};
 		itemsCargoSize[]={1,1};
-		noNVStrap=1;
+		noNVStrap=0;
 		varWetMax=0.249;
 		heatIsolation=0.25;
 		visibilityModifier=0.94999999;
@@ -2749,7 +2749,7 @@ class CfgVehicles
 		weight=1200;
 		itemSize[]={3,2};
 		itemsCargoSize[]={1,1};
-		noNVStrap=1;
+		noNVStrap=0;
 		varWetMax=0.249;
 		heatIsolation=0.25;
 		visibilityModifier=0.94999999;
