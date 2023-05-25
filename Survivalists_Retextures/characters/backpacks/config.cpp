@@ -120,6 +120,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\aliceb57_co.paa"
 		};
 	};
+  class AliceBag_Camo1: AliceBag_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\alicebackpack_bdu_camo_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\alicebackpack_bdu_camo_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\alicebackpack_bdu_camo_co.paa"
+		};
+	};
 
 	class AssaultBag_Denim: AssaultBag_ColorBase
 	{

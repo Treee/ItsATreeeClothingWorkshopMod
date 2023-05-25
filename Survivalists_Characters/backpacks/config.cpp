@@ -232,6 +232,7 @@ class CfgVehicles
       "Green",
       "Black",
       "Camo",
+      "Camo1",
       "MTP",
       "ATAC",
       "ATACSFG",
