@@ -18,12 +18,20 @@ class SRP_ActionFeedBioFlower: ActionSingleUseBase
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
+    if (!target)
+      return false;
+    if (!player.IsInBioZone())
+      return false;
+    House house;
+    if (!Class.CastTo(house, target.GetObject()))
+      return false;
+    if (!house.IsBioFlower())
+      return false;
     Edible_Base edible;
-		if ( Class.CastTo(edible, item) ) 
-		{
-			return true;
-		}
-		return false;
+		if (!Class.CastTo(edible, item)) 
+			return false;
+    
+		return true;
 	}
 	
 	override void OnExecuteServer( ActionData action_data )
@@ -36,13 +44,13 @@ class SRP_ActionFeedBioFlower: ActionSingleUseBase
       SRP_BioFlowerInfo flower = config.g_BioFlowerManager.GetBioFlowerInfoByPosition(action_data.m_Player.GetPosition());
       if (flower)
       {        
-        // Print("feed");
-        float value = edible.GetQuantity() / edible.GetQuantityMax();
-        // value = 100; // 1/16th parts
-        value *= 0.0625; // 1/16th parts
-        flower.AddFlowerEnergy(value);
-        edible.AddQuantity(-100000);
+        float quantityNormal = edible.GetQuantity() / edible.GetQuantityMax();
+        float flowerEnergy = edible.GetFoodEnergy(edible) * quantityNormal;
+        // value = 100; // 1/64th parts
+        flowerEnergy *= Math.RandomFloatInclusive(0.0625, 0.0078125); // random float between 1/16 and 1/128 parts
+        flower.AddFlowerEnergy(flowerEnergy);
       }
+      edible.AddQuantity(-100000);
     }
 	}
 };

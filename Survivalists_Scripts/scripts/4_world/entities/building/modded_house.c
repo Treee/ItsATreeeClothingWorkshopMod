@@ -1,5 +1,9 @@
 modded class House
 {
+  bool IsBioFlower()
+  {
+    return false;
+  }
   bool CanBeDeconstructed()
   {
     return false;
