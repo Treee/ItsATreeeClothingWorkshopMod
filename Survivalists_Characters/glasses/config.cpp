@@ -163,6 +163,40 @@ class CfgVehicles
 			male="Survivalists_Characters\glasses\srp_weldinggoggles_m.p3d";
 			female="Survivalists_Characters\glasses\srp_weldinggoggles_m.p3d";
 		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\glasses\data\srp_weldinggoggles.rvmat"}},
+            {0.69999999,	{	"Survivalists_Characters\glasses\data\srp_weldinggoggles.rvmat"}},
+            {0.5,	{	"Survivalists_Characters\glasses\data\srp_weldinggoggles.rvmat"}},
+            {0.30000001,	{	"Survivalists_Characters\glasses\data\srp_weldinggoggles.rvmat"}},
+            {0.0,	{	"Survivalists_Characters\glasses\data\srp_weldinggoggles.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
 	};
   class SRP_SteamPunkGoggles: Clothing
 	{
@@ -182,6 +216,40 @@ class CfgVehicles
 		{
 			male="Survivalists_Characters\glasses\srp_steampunkgoggles_m.p3d";
 			female="Survivalists_Characters\glasses\srp_steampunkgoggles_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\glasses\data\srp_steampunkgoggles.rvmat"}},
+            {0.69999999,	{	"Survivalists_Characters\glasses\data\srp_steampunkgoggles.rvmat"}},
+            {0.5,	{	"Survivalists_Characters\glasses\data\srp_steampunkgoggles.rvmat"}},
+            {0.30000001,	{	"Survivalists_Characters\glasses\data\srp_steampunkgoggles.rvmat"}},
+            {0.0,	{	"Survivalists_Characters\glasses\data\srp_steampunkgoggles.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
 		};
 	};
   class SRP_Goggles_Face: Clothing
