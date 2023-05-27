@@ -143,6 +143,19 @@ modded class ItemBase
     }
     return true;
 	}
+  override bool CanDetachAttachment (EntityAI parent)
+	{
+		if (!super.CanDetachAttachment(parent))
+      return false; // short circuit items we already cannot take out
+    
+    PlayerBase itemParent;
+    if (Class.CastTo(itemParent, GetHierarchyRootPlayer()))
+    {
+      if (itemParent.IsAlive() && itemParent.IsSoftSurrendered())
+        return false;      
+    }
+    return true;
+	}
   // make sure to use the slot name not the item name....
 	ItemBase GetItemOnSlot(string slot_type)
 	{

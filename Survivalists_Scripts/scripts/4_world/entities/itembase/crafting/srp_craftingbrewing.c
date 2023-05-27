@@ -35,7 +35,7 @@ class SRP_BrewingWorkbench extends SRP_Fireplace_Transformer
       case "SRP_LabTube_MutantLiquidAmanita":
         yield = "Grenade_ChemGas";
       break;
-      case "SRP_LabTube_MutantLiquidMint";
+      case "SRP_LabTube_MutantLiquidMint":
         yield = "dub_smokebomb";
       break;
     }
