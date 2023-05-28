@@ -138,8 +138,8 @@ class SRP_FridgeMinsk_Medical extends SRP_FridgeMinsk{};
 class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
 {
   protected float m_CollectionLifespan;
-  protected const int HERB_DRYING_TIME = 1;
-  // protected const int HERB_DRYING_TIME = 60;
+  // protected const int HERB_DRYING_TIME = 1;
+  protected const int HERB_DRYING_TIME = 45;
   protected const float HERB_DRYING_AMOUNT = 12.6; // controls for 10ish minutes of drying
 
   void SRP_FridgeRetro_HerbRack()
@@ -186,6 +186,7 @@ class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
     float new_cook_time;
     for (int i = 0; i < inItemCount; i++)
     {
+      inItem = GetInventory().GetCargo().GetItem(i);
       if (inItem.GetFoodStageType() != FoodStageType.RAW)
         continue;
 
