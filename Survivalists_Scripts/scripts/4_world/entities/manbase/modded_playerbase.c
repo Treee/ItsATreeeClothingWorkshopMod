@@ -377,7 +377,6 @@ modded class PlayerBase
     AddAction(ActionPackLadder, InputActionMap);      
     AddAction(ActionPackSRPSleepingBag, InputActionMap);          
     AddAction(ActionSearchChickenCoop, InputActionMap); 
-    AddAction(SRP_ActionSetPlayerSoftSurrender, InputActionMap); 
 
     // AddAction(ActionTurnRubixCubeClockwise_Row1, InputActionMap);      
     // AddAction(ActionTurnRubixCubeClockwise_Row2, InputActionMap);      

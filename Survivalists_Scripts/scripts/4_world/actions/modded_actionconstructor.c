@@ -4,8 +4,6 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
     
-    actions.Insert(SRP_ActionSetPlayerSoftSurrender);
-
     actions.Insert(SRP_ActionDigTarSands);
     actions.Insert(SRP_SwapBrewingJug);
 
