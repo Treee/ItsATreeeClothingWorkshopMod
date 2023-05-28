@@ -4,7 +4,7 @@ modded class ActionCraftBoltsFeather
 	{
 		if (IsFeatherType(item.ClassName()))
 		{
-      if (item.GetQuantity() < 5)
+      if (item.GetQuantity() < 3)
         return false;
 			//feather in hands
 			if (target.GetObject())
@@ -14,7 +14,7 @@ modded class ActionCraftBoltsFeather
 		{
       ItemBase feather;
       if (Class.CastTo(feather, target.GetObject()))
-        if (feather.GetQuantity() < 5)
+        if (feather.GetQuantity() < 3)
           return false;
 
 			// bolt in hands
@@ -31,12 +31,12 @@ modded class ActionCraftBoltsFeather
 		{
 			//feather in hands
 			feather = action_data.m_MainItem;
-		  feather.AddQuantity(-4);	// 1 minus total since base game already removes 1		
+		  feather.AddQuantity(-1);	// 1 minus total since base game already removes 1		
 		}
     else
     {
       if (Class.CastTo(feather, action_data.m_Target.GetObject()))
-        feather.AddQuantity(-4);
+        feather.AddQuantity(-1);
     }
 	}
 };
