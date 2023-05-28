@@ -9,3 +9,19 @@ modded class CarScript
     super.OnUpdate(dt);
   }
 };
+
+modded class CarRadiator
+{
+  override bool IsSmeltable()
+  {
+    return true;
+  }
+  override TStringArray GetSmeltableOptions()
+  {
+    return {"SRP_Mining_RawOre_Zinc","SRP_Mining_RawOre_Copper"};
+  }
+  override int GetSmeltableYield()
+  {
+    return Math.RandomIntInclusive(1,3);
+  }
+};
