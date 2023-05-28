@@ -5076,7 +5076,7 @@ class CfgVehicles
           "SRP_Optic5",
           "SRP_Optic6",
 				};
-				icon="set:dayz_inventory image:opticacog";
+				icon="set:dayz_inventory image:weaponoptics";
 			};
 		};
     class DamageSystem

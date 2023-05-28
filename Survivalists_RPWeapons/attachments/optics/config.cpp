@@ -553,10 +553,16 @@ class CfgVehicles
 		reversed=0;
 		weight=700;
 		itemSize[]={3,1};
-		inventorySlot[]+=
+		inventorySlot[]=
 		{
-			"WeaponOpticsHunting",
-      "weaponOptics"
+			"weaponOpticsHunting",
+      "weaponOptics",
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
 		};
 		simulation="itemoptics";
 		dispersionModifier=-0.001;
@@ -651,10 +657,16 @@ class CfgVehicles
 		reversed=0;
 		weight=440;
 		itemSize[]={2,1};
-		inventorySlot[]+=
+		inventorySlot[]=
 		{
-			"WeaponOpticsHunting",
-      "weaponOptics"
+			"weaponOpticsHunting",
+      "WeaponOptics",
+      "SRP_Optic1",
+      "SRP_Optic2",
+      "SRP_Optic3",
+      "SRP_Optic4",
+      "SRP_Optic5",
+      "SRP_Optic6",
 		};
 		selectionFireAnim="zasleh";
 		simulation="itemoptics";

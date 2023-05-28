@@ -344,37 +344,37 @@ class CfgSlots
 	{
 		name="SRP_Optic1";
 		displayName="Optic";
-		ghostIcon="set:dayz_inventory image:opticacog";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
   class Slot_SRP_Optic2
 	{
 		name="SRP_Optic2";
 		displayName="Optic";
-		ghostIcon="set:dayz_inventory image:opticacog";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
   class Slot_SRP_Optic3
 	{
 		name="SRP_Optic3";
 		displayName="Optic";
-		ghostIcon="set:dayz_inventory image:opticacog";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
   class Slot_SRP_Optic4
 	{
 		name="SRP_Optic4";
 		displayName="Optic";
-		ghostIcon="set:dayz_inventory image:opticacog";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};  
   class Slot_SRP_Optic5
 	{
 		name="SRP_Optic5";
 		displayName="Optic";
-		ghostIcon="set:dayz_inventory image:opticacog";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	}; 
   class Slot_SRP_Optic6
 	{
 		name="SRP_Optic6";
 		displayName="Optic";
-		ghostIcon="set:dayz_inventory image:opticacog";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};   
 };
 class CfgNonAIVehicles

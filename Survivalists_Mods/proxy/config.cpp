@@ -1565,7 +1565,7 @@ class CfgSlots
 	{
 		name="binocular";
 		displayName="Binoculars";
-		ghostIcon="set:dayz_inventory image:opticacog";
+		ghostIcon="set:dayz_inventory image:weaponoptics";
 	};
 	class Slot_FirstAid
 	{
