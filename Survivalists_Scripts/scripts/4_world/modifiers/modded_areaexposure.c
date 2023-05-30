@@ -1,6 +1,24 @@
 modded class AreaExposureMdfr
 {
   protected float buffInterval = 0;
+  protected float m_MutantEnergyModifier = 0;
+
+  override void OnActivate(PlayerBase player)
+	{
+    if (!player.IsPlayerMutant())
+      super.OnActivate(player);
+
+    SRPConfig config;
+    if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
+    {
+      SRP_BioFlowerInfo flower = config.g_BioFlowerManager.GetBioFlowerInfoByPosition(player.GetPosition());
+      m_MutantEnergyModifier = 0.2;
+      if (flower && flower.GetFlowerEnergy() > 0)
+      {
+        m_MutantEnergyModifier += (( flower.GetFlowerEnergy() / 50 ) + 0.1);
+      }
+    }
+	}
 
   override void OnTick(PlayerBase player, float deltaT)
 	{
@@ -10,8 +28,9 @@ modded class AreaExposureMdfr
       // Print("OnTick::Mutant: return from activation");
       if (player.IsPlayerMutant())
       {
-        player.GetStatEnergy().Add( ( PlayerConstants.DIGESTION_SPEED * deltaT ) + 0.2);
-        player.GetStatWater().Add( ( PlayerConstants.DIGESTION_SPEED * deltaT ) + 0.2);
+        player.GetStatEnergy().Add( ( PlayerConstants.DIGESTION_SPEED * deltaT ) + m_MutantEnergyModifier);
+        player.GetStatWater().Add( ( PlayerConstants.DIGESTION_SPEED * deltaT ) + m_MutantEnergyModifier);
+        // Print("Adding food in exposure modifier: " + m_MutantEnergyModifier);
       }
       else if (player.IsAlpha() || player.IsQueenAlpha())
       {        

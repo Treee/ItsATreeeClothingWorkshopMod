@@ -3,6 +3,17 @@ modded class Environment
   bool m_HasRadioactiveFuel;
   bool m_HasComfortHeatSource;
 
+  protected ref SRP_BioFlowerManager m_BioFlowerManager;
+
+  override void Init(PlayerBase pPlayer)
+	{
+    super.Init(pPlayer);
+
+    SRPConfig config;
+    if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
+      m_BioFlowerManager = config.g_BioFlowerManager;    
+  }
+
   override protected void ProcessTemperatureSources()
 	{
     super.ProcessTemperatureSources();
@@ -53,18 +64,18 @@ modded class Environment
       }
       if (m_Player.IsPlayerMutant() || isBoosted)
       {
-        SRPConfig config;
-        if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
+        float multiplier = 0.2;
+        SRP_BioFlowerInfo flower;
+        if (Class.CastTo(flower, m_BioFlowerManager.GetBioFlowerInfoByPosition(m_Player.GetPosition())))
         {
-          SRP_BioFlowerInfo flower = config.g_BioFlowerManager.GetBioFlowerInfoByPosition(m_Player.GetPosition());
-          float multiplier = 0.2;
-          if (flower)
+          if (flower && flower.GetFlowerEnergy() > 0)
           {
             multiplier += (( flower.GetFlowerEnergy() / 50 ) + 0.1);
           }
-        }
+        }          
         m_Player.GetStatEnergy().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + multiplier));
         m_Player.GetStatWater().Add(pDelta * (PlayerConstants.DIGESTION_SPEED + multiplier));
+        // Print("Adding food in environment: " + multiplier);
       }
       else
       {
