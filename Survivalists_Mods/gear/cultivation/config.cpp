@@ -95,7 +95,9 @@ class CfgVehicles
   class PlantBase;
   class Inventory_Base;
 
-  // -------------------- BASE GAME OVERRIDE
+  class SRP_KitBase;
+
+// -------------------- BASE GAME OVERRIDE
   class PotatoSeed: SeedBase
 	{
     inventorySlot[]+=
@@ -186,7 +188,7 @@ class CfgVehicles
 			ContainsSeedsQuantity=4;
 		};
   };
-  // --------------------------- CUSTOM STUFF
+// --------------------------- CUSTOM STUFF
 
   class TobaccoSeeds: SeedBase
 	{
@@ -1122,5 +1124,167 @@ class CfgVehicles
 			CropsType="Mint";
 		};
 	};
+// --------------------------- GARDEN PLOTS
+  class SRP_GardenPlotSmall_ColorBase: Inventory_Base
+	{
+		scope=0;
+		model="Survivalists_Mods\gear\cultivation\srp_gardenplot_small.p3d";
+		storageCategory=1;
+		lootCategory="Crafted";
+		useEntityHierarchy="true";
+		slopeTolerance=0.30000001;
+		alignHologramToTerain=1;
+		yawPitchRollLimit[]={10,10,10};
+		attachments[]=
+		{
+			"SeedBase_1",
+			"SeedBase_2",
+			"SeedBase_3",
+		};
+		physLayer="item_large";
+		class GUIInventoryAttachmentsProps
+		{
+			class Filling
+			{
+				name="$STR_attachment_Filling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"SeedBase_1",
+					"SeedBase_2",
+					"SeedBase_3"
+				};
+				icon="set:dayz_inventory image:cat_gp_filling";
+			};
+		};
+		hiddenSelections[]=
+		{
+			"seedbase_1",
+			"seedbase_2",
+			"seedbase_3",
+			"slotCovered_01",
+			"slotCovered_02",
+			"slotCovered_03",
+			"zbytek",
+      "dirt"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\cultivation\data\soil_cultivated_co.paa",
+			"dz\gear\cultivation\data\soil_cultivated_limed_CO.paa",
+			"dz\gear\cultivation\data\soil_cultivated_compost_CO.paa",
+			"",
+			"",
+			"",
+			"Survivalists_Mods\gear\cultivation\data\srp_gardenplot_co.paa",
+      "Survivalists_Mods\gear\cultivation\data\srp_gardenplotdirt_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"Survivalists_Mods\gear\cultivation\data\srp_gardenplot.rvmat",
+      "Survivalists_Mods\gear\cultivation\data\srp_gardenplotdirt.rvmat"
+		};
+		class AnimationSources
+		{
+			class slotVisible
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class slotHidden: slotVisible
+			{
+				initPhase=1;
+			};
+			class SeedBase_1: slotVisible
+			{
+			};
+			class SeedBase_2: slotVisible
+			{
+			};
+			class SeedBase_3: slotVisible
+			{
+			};
+			class slotCovered_01: slotHidden
+			{
+			};
+			class slotCovered_02: slotHidden
+			{
+			};
+			class slotCovered_03: slotHidden
+			{
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_GardenPlotSmall_Basic_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Small Garden Plater - 3 Plot";
+    descriptionShort="A 3 plot garden planter that grows a few plants.";
+    projectionTypename="SRP_GardenPlotSmall_Basic";
+  };
+  class SRP_GardenPlotSmall_Basic: SRP_GardenPlotSmall_ColorBase
+	{
+		scope=2;
+	};
+// --------------------------- END
 
 };
