@@ -1277,11 +1277,501 @@ class CfgVehicles
   class SRP_GardenPlotSmall_Basic_Kit: SRP_KitBase
   {
     scope=2;
-    displayName="Small Garden Plater - 3 Plot";
+    displayName="Small Garden Planter - 3 Plot";
     descriptionShort="A 3 plot garden planter that grows a few plants.";
     projectionTypename="SRP_GardenPlotSmall_Basic";
   };
   class SRP_GardenPlotSmall_Basic: SRP_GardenPlotSmall_ColorBase
+	{
+		scope=2;
+	};
+
+  class SRP_GardenPlotMedium_ColorBase: Inventory_Base
+	{
+		scope=0;
+		model="Survivalists_Mods\gear\cultivation\srp_gardenplot_medium.p3d";
+		storageCategory=1;
+		lootCategory="Crafted";
+		useEntityHierarchy="true";
+		slopeTolerance=0.30000001;
+		alignHologramToTerain=1;
+		yawPitchRollLimit[]={10,10,10};
+		attachments[]=
+		{
+			"SeedBase_1",
+			"SeedBase_2",
+			"SeedBase_3",
+			"SeedBase_4",
+			"SeedBase_5",
+			"SeedBase_6",
+		};
+		physLayer="item_large";
+		class GUIInventoryAttachmentsProps
+		{
+			class Filling
+			{
+				name="$STR_attachment_Filling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"SeedBase_1",
+					"SeedBase_2",
+					"SeedBase_3",
+					"SeedBase_4",
+					"SeedBase_5",
+					"SeedBase_6",
+				};
+				icon="set:dayz_inventory image:cat_gp_filling";
+			};
+		};
+		hiddenSelections[]=
+		{
+			"seedbase_1",
+			"seedbase_2",
+			"seedbase_3",
+			"seedbase_4",
+			"seedbase_5",
+			"seedbase_6",
+			"slotCovered_01",
+			"slotCovered_02",
+			"slotCovered_03",
+			"slotCovered_04",
+			"slotCovered_05",
+			"slotCovered_06",
+			"zbytek",
+      "dirt"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\cultivation\data\soil_cultivated_co.paa",
+			"dz\gear\cultivation\data\soil_cultivated_limed_CO.paa",
+			"dz\gear\cultivation\data\soil_cultivated_compost_CO.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"Survivalists_Mods\gear\cultivation\data\srp_gardenplot_co.paa",
+      "Survivalists_Mods\gear\cultivation\data\srp_gardenplotdirt_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+      "",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"Survivalists_Mods\gear\cultivation\data\srp_gardenplot.rvmat",
+      "Survivalists_Mods\gear\cultivation\data\srp_gardenplotdirt.rvmat"
+		};
+		class AnimationSources
+		{
+			class slotVisible
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class slotHidden: slotVisible
+			{
+				initPhase=1;
+			};
+			class SeedBase_1: slotVisible
+			{
+			};
+			class SeedBase_2: slotVisible
+			{
+			};
+			class SeedBase_3: slotVisible
+			{
+			};
+      class SeedBase_4: slotVisible
+			{
+			};
+      class SeedBase_5: slotVisible
+			{
+			};
+      class SeedBase_6: slotVisible
+			{
+			};
+			class slotCovered_01: slotHidden
+			{
+			};
+			class slotCovered_02: slotHidden
+			{
+			};
+			class slotCovered_03: slotHidden
+			{
+			};
+      class slotCovered_04: slotHidden
+			{
+			};
+      class slotCovered_05: slotHidden
+			{
+			};
+      class slotCovered_06: slotHidden
+			{
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_GardenPlotMedium_Basic_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Medium Garden Planter - 6 Plot";
+    descriptionShort="A 6 plot garden planter that grows a few plants.";
+    projectionTypename="SRP_GardenPlotMedium_Basic";
+  };
+  class SRP_GardenPlotMedium_Basic: SRP_GardenPlotMedium_ColorBase
+	{
+		scope=2;
+	};
+
+  class SRP_GardenPlotLarge_ColorBase: Inventory_Base
+	{
+		scope=0;
+		model="Survivalists_Mods\gear\cultivation\srp_gardenplot_large.p3d";
+		storageCategory=1;
+		lootCategory="Crafted";
+		useEntityHierarchy="true";
+		slopeTolerance=0.30000001;
+		alignHologramToTerain=1;
+		yawPitchRollLimit[]={10,10,10};
+		attachments[]=
+		{
+			"SeedBase_1",
+			"SeedBase_2",
+			"SeedBase_3",
+			"SeedBase_4",
+			"SeedBase_5",
+			"SeedBase_6",
+			"SeedBase_7",
+			"SeedBase_8",
+			"SeedBase_9",
+			"SeedBase_10",
+			"SeedBase_11",
+			"SeedBase_12",
+		};
+		physLayer="item_large";
+		class GUIInventoryAttachmentsProps
+		{
+			class Filling
+			{
+				name="$STR_attachment_Filling0";
+				description="";
+				attachmentSlots[]=
+				{
+					"SeedBase_1",
+					"SeedBase_2",
+					"SeedBase_3",
+					"SeedBase_4",
+					"SeedBase_5",
+					"SeedBase_6",
+					"SeedBase_7",
+					"SeedBase_8",
+					"SeedBase_9",
+					"SeedBase_10",
+					"SeedBase_11",
+					"SeedBase_12",
+				};
+				icon="set:dayz_inventory image:cat_gp_filling";
+			};
+		};
+		hiddenSelections[]=
+		{
+			"seedbase_1",
+			"seedbase_2",
+			"seedbase_3",
+			"seedbase_4",
+			"seedbase_5",
+			"seedbase_6",
+			"seedbase_7",
+			"seedbase_8",
+			"seedbase_9",
+			"seedbase_10",
+			"seedbase_11",
+			"seedbase_12",
+			"slotCovered_01",
+			"slotCovered_02",
+			"slotCovered_03",
+			"slotCovered_04",
+			"slotCovered_05",
+			"slotCovered_06",
+			"slotCovered_07",
+			"slotCovered_08",
+			"slotCovered_09",
+			"slotCovered_10",
+			"slotCovered_11",
+			"slotCovered_12",
+			"zbytek",
+      "dirt"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\cultivation\data\soil_cultivated_co.paa",
+			"dz\gear\cultivation\data\soil_cultivated_limed_CO.paa",
+			"dz\gear\cultivation\data\soil_cultivated_compost_CO.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"Survivalists_Mods\gear\cultivation\data\srp_gardenplot_co.paa",
+      "Survivalists_Mods\gear\cultivation\data\srp_gardenplotdirt_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"Survivalists_Mods\gear\cultivation\data\srp_gardenplot.rvmat",
+      "Survivalists_Mods\gear\cultivation\data\srp_gardenplotdirt.rvmat"
+		};
+		class AnimationSources
+		{
+			class slotVisible
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class slotHidden: slotVisible
+			{
+				initPhase=1;
+			};
+			class SeedBase_1: slotVisible
+			{
+			};
+			class SeedBase_2: slotVisible
+			{
+			};
+			class SeedBase_3: slotVisible
+			{
+			};
+      class SeedBase_4: slotVisible
+			{
+			};
+      class SeedBase_5: slotVisible
+			{
+			};
+      class SeedBase_6: slotVisible
+			{
+			};
+      class SeedBase_7: slotVisible
+			{
+			};
+			class SeedBase_8: slotVisible
+			{
+			};
+			class SeedBase_9: slotVisible
+			{
+			};
+      class SeedBase_10: slotVisible
+			{
+			};
+      class SeedBase_11: slotVisible
+			{
+			};
+      class SeedBase_12: slotVisible
+			{
+			};
+			class slotCovered_01: slotHidden
+			{
+			};
+			class slotCovered_02: slotHidden
+			{
+			};
+			class slotCovered_03: slotHidden
+			{
+			};
+      class slotCovered_04: slotHidden
+			{
+			};
+      class slotCovered_05: slotHidden
+			{
+			};
+      class slotCovered_06: slotHidden
+			{
+			};
+      class slotCovered_07: slotHidden
+			{
+			};
+			class slotCovered_08: slotHidden
+			{
+			};
+			class slotCovered_09: slotHidden
+			{
+			};
+      class slotCovered_10: slotHidden
+			{
+			};
+      class slotCovered_11: slotHidden
+			{
+			};
+      class slotCovered_12: slotHidden
+			{
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+			};
+		};
+	};
+
+  class SRP_GardenPlotLarge_Basic_Kit: SRP_KitBase
+  {
+    scope=2;
+    displayName="Large Garden Planter - 12 Plot";
+    descriptionShort="A 12 plot garden planter that grows a few plants.";
+    projectionTypename="SRP_GardenPlotLarge_Basic";
+  };
+  class SRP_GardenPlotLarge_Basic: SRP_GardenPlotLarge_ColorBase
 	{
 		scope=2;
 	};
