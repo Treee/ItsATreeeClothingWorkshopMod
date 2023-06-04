@@ -8,8 +8,7 @@ class ActionSwitchPatchLogoOption extends ActionSRPVariantIdOption
     string displayOption = GetVariantIdOptions().Get(m_VariantID);
     if (displayOption && displayOption != "" )
     {
-      displayOption = displayOption.Substring(14, displayOption.Length());
-      m_Text = "Logo Patch - " + displayOption;
+      m_Text = string.Format("Logo Patch - %1", displayOption);
       // Print("on action info update: terxt: " + m_Text);
     }
 	}
@@ -32,7 +31,7 @@ class ActionSwitchPatchLogoOption extends ActionSRPVariantIdOption
 		{      
       int variantId = SRP_VariantIdActionData.Cast(action_data).m_SRPVariantId;
       action_data.m_MainItem.Delete();
-      GetGame().CreateObjectEx(GetVariantIdOptions().Get(variantId), action_data.m_Player.GetPosition(), false);
+      GetGame().CreateObjectEx(string.Format("SRP_PatchLogo_%1", GetVariantIdOptions().Get(variantId)), action_data.m_Player.GetPosition(), false);
 		}
 	}
 
@@ -54,41 +53,41 @@ class ActionSwitchPatchLogoOption extends ActionSRPVariantIdOption
   override TStringArray GetVariantIdOptions(string itemType="")
   {
     return {
-      "SRP_PatchLogo_SquadLeader",
-      "SRP_PatchLogo_TeamLeader",
-      "SRP_PatchLogo_MachineGunner",
-      "SRP_PatchLogo_Medic",
-      "SRP_PatchLogo_Sniper",
-      "SRP_PatchLogo_Rifleman",
-      "SRP_PatchLogo_US",
-      "SRP_PatchLogo_UK",
-      "SRP_PatchLogo_AUS",
-      "SRP_PatchLogo_USIR",
-      "SRP_PatchLogo_UKIR",
-      "SRP_PatchLogo_AUSIR",
-      "SRP_PatchLogo_RottensRaiders",
-      "SRP_PatchLogo_A10Warthog",
-      "SRP_PatchLogo_EOD",
-      "SRP_PatchLogo_FckShtUp",
-      "SRP_PatchLogo_NoFckGvn",
-      "SRP_PatchLogo_TooOld",
-      "SRP_PatchLogo_WeylandCorp",
-      "SRP_PatchLogo_TheWarriors",
-      "SRP_PatchLogo_CAN",
-      "SRP_PatchLogo_CANIR",
-      "SRP_PatchLogo_Obey",
-      "SRP_PatchLogo_Blackwater",
-      "SRP_PatchLogo_LagoonTrade",
-      "SRP_PatchLogo_HCLI",
-      "SRP_PatchLogo_Boog",
-      "SRP_PatchLogo_UN",
-      "SRP_PatchLogo_Umbrella",
-      "SRP_PatchLogo_UmbrellaUS",
-      "SRP_PatchLogo_Romania",
-      "SRP_PatchLogo_Sweden",
-      "SRP_PatchLogo_Anarchy",
-      "SRP_PatchLogo_RTO",
-      "SRP_PatchLogo_ThisWay"
+      "SquadLeader",
+      "TeamLeader",
+      "MachineGunner",
+      "Medic",
+      "Sniper",
+      "Rifleman",
+      "US",
+      "UK",
+      "AUS",
+      "USIR",
+      "UKIR",
+      "AUSIR",
+      "RottensRaiders",
+      "A10Warthog",
+      "EOD",
+      "FckShtUp",
+      "NoFckGvn",
+      "TooOld",
+      "WeylandCorp",
+      "TheWarriors",
+      "CAN",
+      "CANIR",
+      "Obey",
+      "Blackwater",
+      "LagoonTrade",
+      "HCLI",
+      "Boog",
+      "UN",
+      "Umbrella",
+      "UmbrellaUS",
+      "Romania",
+      "Sweden",
+      "Anarchy",
+      "RTO",
+      "ThisWay"
     };
   }
 };
