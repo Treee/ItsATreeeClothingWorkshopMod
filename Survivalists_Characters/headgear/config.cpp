@@ -329,6 +329,7 @@ class CfgVehicles
       "Black",
       "Blue",
       "DPM",
+      "Camo",
       "Dubok",
       "Flecktran",
       "NavyBlue",

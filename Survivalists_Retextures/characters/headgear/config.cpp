@@ -894,6 +894,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\SRP_BoonieHat_MC_Black_co.paa"
 		};
 	};
+  class BoonieHat_Camo: BoonieHat_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_booniehat_camo_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_booniehat_camo_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_booniehat_camo_co.paa"
+		};
+	};
   class PrisonerCap_Brown: PrisonerCap
 	{
 		scope=2;
