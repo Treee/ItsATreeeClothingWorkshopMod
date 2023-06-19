@@ -175,7 +175,7 @@ modded class PipeWrench
   }
   override int GetTrasformerRepairValue()
   {
-    return Math.RandomIntInclusive(10,20);
+    return Math.RandomIntInclusive(15,50);
   }
   override void SetActions()
   {
@@ -219,7 +219,7 @@ modded class Pliers
 {	
   override int GetTrasformerRepairValue()
   {
-    return Math.RandomIntInclusive(10,20);
+    return Math.RandomIntInclusive(10,40);
   }
 	override void SetActions()
 	{
