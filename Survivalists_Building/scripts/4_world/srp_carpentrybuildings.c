@@ -157,6 +157,8 @@ class SRP_Structures_WoodenBarn extends SRP_DefaultHouse{};
 class SRP_Structures_WoodenShanty extends SRP_DefaultHouse{};
 class SRP_Structures_WoodenShed extends SRP_DefaultHouse{};
 class Land_srp_wooden_2floor_tavern extends SRP_DefaultHouse{};
+class Land_srp_wooden_house_thatch extends SRP_DefaultHouse{};
+
 class Land_srp_treehouse_circular extends SRP_DefaultHouse{};
 class Land_srp_treehouse_box extends SRP_DefaultHouse{};
 class Land_srp_treehouse_doubleplatform extends SRP_DefaultHouse{};

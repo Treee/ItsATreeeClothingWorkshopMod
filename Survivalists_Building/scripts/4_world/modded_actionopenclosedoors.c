@@ -9,7 +9,7 @@ modded class ActionOpenDoors
       string name = srpHouse.GetActionComponentName(target.GetComponentIndex());
 			name.ToLower();
       string windowPrefix = name.Substring( 0, 6); // look for window
-      // Print(string.Format("name: %1 target component: %2", windowPrefix, name));
+      // print(string.Format("name: %1 target component: %2", windowPrefix, name));
 			if (windowPrefix == "window")
       {
         return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player.GetPosition());
@@ -30,7 +30,7 @@ modded class ActionCloseDoors
       string name = srpHouse.GetActionComponentName(target.GetComponentIndex());
 			name.ToLower();
       string windowPrefix = name.Substring( 0, 6); // look for window
-      // Print(string.Format("name: %1 target component: %2", windowPrefix, name));
+      // print(string.Format("name: %1 target component: %2", windowPrefix, name));
 			if (windowPrefix == "window")
       {
         return superCondition && srpHouse.HasProperDistanceToSRPWindow(name, player.GetPosition());

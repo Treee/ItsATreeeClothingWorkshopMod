@@ -279,6 +279,113 @@ class CfgVehicles
 		};
 	};
 
+  class Land_srp_wooden_house_thatch_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Wooden House With Thatch Roof Kit";
+		descriptionShort="The kit for a wooden house with a thatch roof.";
+    projectionTypename="Land_srp_wooden_house_thatch";
+	};
+  class Land_srp_wooden_house_thatch: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_wooden_house_thatch.p3d";
+    // class Doors
+		// {
+		// 	class window1f_1
+		// 	{
+		// 		displayName="Window 1 Floor 1";
+		// 		component="window1f_1";
+		// 		soundPos="window1f_1_action";
+		// 		animPeriod=1;
+		// 		initPhase=0;
+		// 		initOpened=0.30000001;
+		// 		soundOpen="doorWoodNolatchOpen";
+		// 		soundClose="doorWoodNolatchClose";
+		// 		soundLocked="doorWoodNolatchRattle";
+		// 		soundOpenABit="doorWoodNolatchOpenABit";
+		// 	};
+    //   class window1f_2
+		// 	{
+		// 		displayName="Window 1 Floor 1";
+		// 		component="window1f_2";
+		// 		soundPos="window1f_2_action";
+		// 		animPeriod=1;
+		// 		initPhase=0;
+		// 		initOpened=0.30000001;
+		// 		soundOpen="doorWoodNolatchOpen";
+		// 		soundClose="doorWoodNolatchClose";
+		// 		soundLocked="doorWoodNolatchRattle";
+		// 		soundOpenABit="doorWoodNolatchOpenABit";
+		// 	};
+    //   class window1f_3
+		// 	{
+		// 		displayName="Window 1 Floor 1";
+		// 		component="window1f_3";
+		// 		soundPos="window1f_3_action";
+		// 		animPeriod=1;
+		// 		initPhase=0;
+		// 		initOpened=0.30000001;
+		// 		soundOpen="doorWoodNolatchOpen";
+		// 		soundClose="doorWoodNolatchClose";
+		// 		soundLocked="doorWoodNolatchRattle";
+		// 		soundOpenABit="doorWoodNolatchOpenABit";
+		// 	};
+    //   class window1f_4
+		// 	{
+		// 		displayName="Window 1 Floor 1";
+		// 		component="window1f_4";
+		// 		soundPos="window1f_4_action";
+		// 		animPeriod=1;
+		// 		initPhase=0;
+		// 		initOpened=0.30000001;
+		// 		soundOpen="doorWoodNolatchOpen";
+		// 		soundClose="doorWoodNolatchClose";
+		// 		soundLocked="doorWoodNolatchRattle";
+		// 		soundOpenABit="doorWoodNolatchOpenABit";
+		// 	};
+    //   class window1f_5
+		// 	{
+		// 		displayName="Window 1 Floor 1";
+		// 		component="window1f_5";
+		// 		soundPos="window1f_5_action";
+		// 		animPeriod=1;
+		// 		initPhase=0;
+		// 		initOpened=0.30000001;
+		// 		soundOpen="doorWoodNolatchOpen";
+		// 		soundClose="doorWoodNolatchClose";
+		// 		soundLocked="doorWoodNolatchRattle";
+		// 		soundOpenABit="doorWoodNolatchOpenABit";
+		// 	};
+    //   class window1f_6
+		// 	{
+		// 		displayName="Window 1 Floor 1";
+		// 		component="window1f_6";
+		// 		soundPos="window1f_6_action";
+		// 		animPeriod=1;
+		// 		initPhase=0;
+		// 		initOpened=0.30000001;
+		// 		soundOpen="doorWoodNolatchOpen";
+		// 		soundClose="doorWoodNolatchClose";
+		// 		soundLocked="doorWoodNolatchRattle";
+		// 		soundOpenABit="doorWoodNolatchOpenABit";
+		// 	};
+    //   class window1f_7
+		// 	{
+		// 		displayName="Window 1 Floor 1";
+		// 		component="window1f_7";
+		// 		soundPos="window1f_7_action";
+		// 		animPeriod=1;
+		// 		initPhase=0;
+		// 		initOpened=0.30000001;
+		// 		soundOpen="doorWoodNolatchOpen";
+		// 		soundClose="doorWoodNolatchClose";
+		// 		soundLocked="doorWoodNolatchRattle";
+		// 		soundOpenABit="doorWoodNolatchOpenABit";
+		// 	};
+		// };
+	};
+
 
   class Land_srp_treehouse_circular_Kit: SRP_Building_KitBase
 	{
