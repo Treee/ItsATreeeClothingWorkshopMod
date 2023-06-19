@@ -15,6 +15,7 @@ modded class ActionConstructor
     
     actions.Insert(ActionPlayGuitarOption);
 
+    actions.Insert(SRP_ActionPoisonBioFlower);
     actions.Insert(SRP_ActionFeedBioFlower);
     actions.Insert(SRP_ActionSprayPaintLocker);
 

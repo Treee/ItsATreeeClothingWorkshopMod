@@ -1234,4 +1234,37 @@ class CfgVehicles
     };
 	};
 
+  class SRP_PoisonInjector_Base: Epinephrine
+	{
+		scope=0;
+		displayName="Poison Injector";
+		descriptionShort="Poison Injector";
+		model="\dz\gear\medical\Epinephrine.p3d";
+		debug_ItemCategory=7;
+		rotationFlags=12;
+		itemSize[]={1,2};
+		weight=60;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\epipen_poison_co.paa"
+    };
+		soundImpactType="plastic";
+	};
+  class SRP_PoisonInjector_FlowerPoison: SRP_PoisonInjector_Base
+  {
+    scope=2;
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\epipen_poison_co.paa"
+    };
+  };
+
 };
