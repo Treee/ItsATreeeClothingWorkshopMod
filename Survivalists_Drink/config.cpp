@@ -669,10 +669,20 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Lancaster Beer";
-		descriptionShort="A Handcrafted luxury beer, Lancasters conjures a smooth enchanting flavor like nothing else, so sit back ,relax and stay for a spell.";
+		descriptionShort="A Handcrafted luxury beer, Lancasters conjures a smooth enchanting flavor like nothing else, so sit back, relax and stay for a spell.";
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Drink\drinks\data\lancaster_can_co.paa"
+		};
+	};
+  class SodaCan_PineapplePeakBeer: SodaCan_ColorBase
+	{
+		scope=2;
+		displayName="Pineapple Peak Beer";
+		descriptionShort="A Handcrafted luxury beer, Pineapple Peak conjures a smooth enchanting flavor like nothing else, so sit back, relax and stay for a spell.";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Drink\drinks\data\sodacan_pineapple_peak_co.paa"
 		};
 	};
 

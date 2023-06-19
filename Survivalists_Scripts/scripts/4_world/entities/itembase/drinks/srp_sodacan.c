@@ -59,3 +59,10 @@ class SodaCan_DeadBull extends SodaCan_ColorBase
 };
 class SodaCan_FreshWater extends SodaCan_ColorBase{};
 class SodaCan_Saltika extends SodaCan_ColorBase{};
+class SodaCan_PineapplePeakBeer extends SodaCan_ColorBase
+{
+  override bool HasAlcoholEffect()
+  {
+    return true;
+  }
+};
