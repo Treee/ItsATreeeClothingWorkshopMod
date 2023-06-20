@@ -16,6 +16,7 @@ class SRP_DrugRecipes extends SRP_RecipeManager
     craftableItems.Insert(Register_SaltsPure_Recipe());
     // CHEMICALS
     craftableItems.Insert(Register_Bleach_Recipe());
+    craftableItems.Insert(Register_SimpleFlowerPoison_Recipe());
   }
 //===========================TEMPLATE
   // SRP_CraftableItem Register_X_Recipe()
@@ -237,6 +238,25 @@ class SRP_DrugRecipes extends SRP_RecipeManager
    
     return craftableItem;
   }    
+  SRP_CraftableItem Register_SimpleFlowerPoison_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_PoisonInjector_FlowerPoison", "Strange Poison");
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TestTube1", SRP_COLOR.MUTANTLIQUIDAMANITA, 200));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TestTube2", SRP_COLOR.MUTANTLIQUIDSTERILIZEDIRRADIATEDNEUTRAL, 200));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TestTube3", SRP_COLOR.KURULIQUID, 50));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TestTube4", SRP_COLOR.KURULIQUID, 50));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TestTube5", SRP_COLOR.MUTANTLIQUIDSTERILIZEDIRRADIATEDNEUTRAL, 200));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TestTube6", SRP_COLOR.MUTANTLIQUIDAMANITA, 200));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("GasCanister", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("LargeBattery", SRP_COLOR.NONE, 250));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Disinfectant", SRP_COLOR.NONE, 20));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Chemlight", SRP_COLOR.NONE, 20));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalWire", SRP_COLOR.NONE, 1));
+   
+    return craftableItem;
+  }
 //===========================END
 
 };

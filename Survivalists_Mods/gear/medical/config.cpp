@@ -1257,6 +1257,8 @@ class CfgVehicles
   class SRP_PoisonInjector_FlowerPoison: SRP_PoisonInjector_Base
   {
     scope=2;
+    displayName="Bioflower Poison Injector";
+		descriptionShort="An injector containing a small amount of concentrated bioflower poison.";
     hiddenSelections[]=
     {
       "zbytek"
@@ -1266,5 +1268,18 @@ class CfgVehicles
       "Survivalists_Mods\gear\medical\data\epipen_poison_co.paa"
     };
   };
-
+  class SRP_PoisonInjector_EnhancedFlowerPoison: SRP_PoisonInjector_Base
+  {
+    scope=2;
+    displayName="Enhanced Bioflower Poison Injector";
+		descriptionShort="An injector containing a large amount of concentrated bioflower poison.";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\medical\data\epipen_poison_co.paa"
+    };
+  };
 };

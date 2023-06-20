@@ -48,11 +48,7 @@ class SRP_ActionPoisonBioFlower: ActionSingleUseBase
     {
       SRP_BioFlowerInfo flower = config.g_BioFlowerManager.GetBioFlowerInfoByPosition(action_data.m_Player.GetPosition());
       if (flower)
-      { 
-        // 300 max flower energy
-        int flowerEnergy = Math.RandomIntInclusive(50, 125);
-        flower.AddFlowerEnergy(-flowerEnergy);
-      }
+        flower.AddFlowerEnergy(injector.GetEnergyReduction());
       injector.Delete();
     }
 	}

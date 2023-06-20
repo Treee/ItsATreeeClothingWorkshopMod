@@ -856,6 +856,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_MutantSerumInjectors_Suppressor);
       RegisterRecipe(new Craft_SRP_MutantSerumInjectors_Crude);
       RegisterRecipe(new Craft_SRP_MutantSerumInjectors_Crude_Cure);
+      RegisterRecipe(new Craft_SRP_BioFlowerPoisonInhectorEnhanced);
 
     //==========================================================END
 	}
