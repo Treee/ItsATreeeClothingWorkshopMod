@@ -15,6 +15,9 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItems.Insert(Register_WoodenBarricade_IntermediateKit_Recipe());
     craftableItems.Insert(Register_WoodenScaffolding_IntermediateKit_Recipe());
     craftableItems.Insert(Register_WoodenFurniture_IntermediateKit_Recipe());
+    craftableItems.Insert(Register_WoodenFurniture_GardenPlanter_Small_Recipe());
+    craftableItems.Insert(Register_WoodenFurniture_GardenPlanter_Medium_Recipe());
+    craftableItems.Insert(Register_WoodenFurniture_GardenPlanter_Large_Recipe());
     
     // Building Kits
     craftableItems.Insert(Register_WoodenOuthouseKit_Recipe());
@@ -394,6 +397,87 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
   } 
+  SRP_CraftableItem Register_WoodenFurniture_GardenPlanter_Small_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_GardenPlotSmall_Basic_Kit", "Small Garden Planters");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_WoodenLogs", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenPlanks", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_WoodenPlanks", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_WoodenPlanks", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_WoodenPlanks", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenPlanks", SRP_COLOR.NONE, 2));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 5));
+
+    return craftableItem;
+  }
+  SRP_CraftableItem Register_WoodenFurniture_GardenPlanter_Medium_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_GardenPlotMedium_Basic_Kit", "Medium Garden Planters");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_WoodenLogs", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenPlanks", SRP_COLOR.NONE, 3));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_WoodenPlanks", SRP_COLOR.NONE, 3));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_WoodenPlanks", SRP_COLOR.NONE, 3));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_WoodenPlanks", SRP_COLOR.NONE, 3));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenPlanks", SRP_COLOR.NONE, 3));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_Nails", SRP_COLOR.NONE, 7));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 7));
+
+    return craftableItem;
+  }
+  SRP_CraftableItem Register_WoodenFurniture_GardenPlanter_Large_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_GardenPlotLarge_Basic_Kit", "Large Garden Planters");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_WoodenLogs", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenPlanks", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_WoodenPlanks", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_WoodenPlanks", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_WoodenPlanks", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenPlanks", SRP_COLOR.NONE, 4));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 10));
+
+    return craftableItem;
+  }
 //===========================BUILDING KITS
   SRP_CraftableItem Register_WoodenOuthouseKit_Recipe()
   {
