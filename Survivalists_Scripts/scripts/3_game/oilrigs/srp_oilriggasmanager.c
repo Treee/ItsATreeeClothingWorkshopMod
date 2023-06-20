@@ -18,7 +18,7 @@ class SRP_OilRigGasInfo
   bool IsCloseEnoughToRigArea(vector position)
   {
     // Print(string.Format("Check %1 is we are near: %2 meters", GetRigName(), vector.Distance(m_Position, position)));
-    return vector.Distance(m_Position, position) < 50;
+    return vector.Distance(m_Position, position) < 100;
   }
   int GetOilRigEnergy()
   {

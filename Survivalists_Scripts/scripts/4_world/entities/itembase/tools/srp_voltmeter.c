@@ -5,5 +5,6 @@ class BatteryCharger_VoltMeter extends Inventory_Base
 		super.SetActions();
 		
 		AddAction(ActionCheckJammerCurrent);
+		AddAction(ActionCheckOilRigCurrent);
 	}
 };

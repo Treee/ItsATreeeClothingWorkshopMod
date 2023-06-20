@@ -9,6 +9,7 @@ modded class ActionConstructor
 
     actions.Insert(SRP_ActionSabotageOilRigPump);
     actions.Insert(SRP_ActionRepairOilRigPump);
+    actions.Insert(ActionCheckOilRigCurrent);
 
     actions.Insert(ActionSwitchWoodFishingLureOption);
     actions.Insert(ActionSwitchMetalFishingLureOption);

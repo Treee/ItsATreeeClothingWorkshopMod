@@ -33,6 +33,8 @@ class SRP_ActionRepairOilRigPump: ActionContinuousBase
     {
       if ( GetGame().IsDedicatedServer() )
         return true;
+
+      // print(string.Format("energy of rig: %1", transformer.GetRigEnergy()));
 			return transformer.NeedsRepairs() || !transformer.IsMaxEnergy();
     }
 		return false;

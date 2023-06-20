@@ -5,6 +5,7 @@ class SRP_OilRigTransformer extends House
   ParticleSource m_Particle3;
 
   EffectSound m_ActiveSound;
+  const int MAX_RIG_ENERGY = 2000;
   protected int m_SoundEffectInterval = 60 * 1000;
   protected int m_Energy = -1;
   
@@ -19,11 +20,14 @@ class SRP_OilRigTransformer extends House
   }
   override void OnVariablesSynchronized()
 	{
-		super.OnVariablesSynchronized();
+		super.OnVariablesSynchronized();    
     if (NeedsRepairs())
       PlayElectricalSoundEffect();
     else
       StopSounds();
+
+
+    // Print("sync: " + m_Energy);
   };
   override void EEInit() 
   {
@@ -32,14 +36,18 @@ class SRP_OilRigTransformer extends House
 	}
   void InitElectricalPumps()
   {
-    SRPConfig config;
-    if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
-    {
-      SRP_OilRigGasInfo oilRigInfo;
-      if (Class.CastTo(oilRigInfo, config.g_OilRigGasManager.GetOilRigInfoByPosition(GetPosition())))
+    if (GetGame().IsDedicatedServer())
+		{
+      SRPConfig config;
+      if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
       {
-        m_Energy = oilRigInfo.GetOilRigEnergy();
-        // Print(string.Format("%1 starting with %2 energy.", oilRigInfo.GetRigName(), m_Energy));
+        SRP_OilRigGasInfo oilRigInfo;
+        if (Class.CastTo(oilRigInfo, config.g_OilRigGasManager.GetOilRigInfoByPosition(GetPosition())))
+        {
+          m_Energy = oilRigInfo.GetOilRigEnergy();
+          // Print(string.Format("%1 starting with %2 energy.", oilRigInfo.GetRigName(), m_Energy));
+          SetSynchDirty();
+        }
       }
     }
     if (!GetGame().IsDedicatedServer())
@@ -51,25 +59,34 @@ class SRP_OilRigTransformer extends House
   }
   bool NeedsRepairs()
   {
-    if (m_Energy == -1)
-      return false;
-    return m_Energy < 1000;
+    return m_Energy < MAX_RIG_ENERGY;
   }
   bool IsMaxEnergy()
   {
-    return m_Energy == 2000;
+    return m_Energy == MAX_RIG_ENERGY;
+  }
+  int GetRigEnergy()
+  {
+    return m_Energy;
   }
   void DoRepairEvent(int amountToRepair)
   {
+    // print("repair event");
     SRPConfig config;
     if (Class.CastTo(config, GetDayZGame().GetSRPConfigGlobal()))
     {
+      // print("config exists");
       SRP_OilRigGasInfo oilRigInfo;
       if (Class.CastTo(oilRigInfo, config.g_OilRigGasManager.GetOilRigInfoByPosition(GetPosition())))
       {
+        // print("position of transformer is within reason");
+        // clamp values to min/max
+        amountToRepair = Math.Min(amountToRepair, MAX_RIG_ENERGY);
+        amountToRepair = Math.Max(0, amountToRepair);
         oilRigInfo.ModifyOilRigEnergy(amountToRepair);
         m_Energy += amountToRepair;
         // Print("Repair Event: " + m_Energy + " delta: " + amountToRepair);
+        // print("Repair Event: " + m_Energy + " delta: " + amountToRepair);
         if (amountToRepair < 0)
           GetGame().CreateObjectEx("SRP_DrugExplosion", oilRigInfo.GetRigPosition(), ECE_NOSURFACEALIGN|ECE_KEEPHEIGHT);	
 
