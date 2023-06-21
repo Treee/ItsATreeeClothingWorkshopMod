@@ -240,3 +240,35 @@ modded class CanOpener
     return true;
   }
 };
+modded class Rope
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		RemoveAction(ActionRestrainSelf);
+	}
+};
+modded class DuctTape
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		RemoveAction(ActionRestrainSelf);
+	}
+};
+modded class MetalWire
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		RemoveAction(ActionRestrainSelf);
+	}
+};
+modded class BarbedWire
+{
+  override void SetActions()
+	{
+		super.SetActions();
+		RemoveAction(ActionRestrainSelf);
+	}
+};
