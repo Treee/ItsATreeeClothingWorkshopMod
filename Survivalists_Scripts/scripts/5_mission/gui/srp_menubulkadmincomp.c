@@ -117,7 +117,7 @@ class AdminBulkComp extends AdminHudSubMenu
     if (selectedRecord != NULL)
     {
       // send rpc to delete data
-      GetRPCManager().VSendRPC("RPC_VPPItemManager", "DeleteAdminBulkData", new Param1<int>(selectedRecord.GetEpochTimeStamp()), true, null);
+      GetRPCManager().VSendRPC("RPC_VPPItemManager", "DeleteAdminBulkData", new Param2<string,string>(selectedRecord.GetDateTimeStamp(), selectedRecord.GetBohemiaId()), true, null);
     }
   }
   void AcknowledgeSelectedCompRequest()
@@ -126,7 +126,7 @@ class AdminBulkComp extends AdminHudSubMenu
     if (selectedRecord != NULL)
     {
       // send rpc to spawn gear
-      GetRPCManager().VSendRPC("RPC_VPPItemManager", "SpawnAdminBulkData", new Param1<int>(selectedRecord.GetEpochTimeStamp()), true, null);
+      GetRPCManager().VSendRPC("RPC_VPPItemManager", "SpawnAdminBulkData", new Param2<string,string>(selectedRecord.GetDateTimeStamp(), selectedRecord.GetBohemiaId()), true, null);
     }
   }
 

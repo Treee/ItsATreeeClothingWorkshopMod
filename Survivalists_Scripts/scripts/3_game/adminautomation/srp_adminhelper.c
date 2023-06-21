@@ -1,22 +1,22 @@
 class SRP_BulkCompRecord
 { 
-  protected int m_EpochTimeStamp;
+  protected string m_DateTimeStamp;
   protected string m_BohemiaId;
   protected string m_SteamId;
   protected string m_PlayerName;
   protected string m_CompensationText;
 
-  void SRP_BulkCompRecord(int timestamp, string bisId, string steamId, string playerName, string compText)
+  void SRP_BulkCompRecord(string timestamp, string bisId, string steamId, string playerName, string compText)
   {
-    m_EpochTimeStamp = timestamp;
+    m_DateTimeStamp = timestamp;
     m_BohemiaId = bisId;
     m_SteamId = steamId;
     m_PlayerName = playerName;
     m_CompensationText = compText;
   }
-  int GetEpochTimeStamp()
+  string GetDateTimeStamp()
   {
-    return m_EpochTimeStamp;
+    return m_DateTimeStamp;
   }
   string GetBohemiaId()
   {
@@ -43,7 +43,7 @@ class SRP_BulkCompRecord
   string GetDisplayListText()
   {
     //CF_Date.Now(true).DateToEpoch()
-    return string.Format("TimeID:%1||BID:%2||%3||SteamID:%4", GetEpochTimeStamp(), GetBohemiaId(), GetPlayerName(), GetSteamId());
+    return string.Format("%1 - %2 - %3", GetPlayerName(), GetDateTimeStamp(), GetSteamId());
   }
   bool MatchesSearchQuery(string s)
   {
@@ -59,12 +59,12 @@ class SRP_BulkCompRecord
     
     return false;
   }
-  bool MatchesEntry(string epochTime)
+  bool MatchesEntry(string dateTime, string bID)
   {
     // Print("start");
-    // Print(epochTime);
-    // Print(GetEpochTimeStamp().ToString());
-    if (GetEpochTimeStamp().ToString() == epochTime)
+    // Print(dateTime);
+    // Print(GetDateTimeStamp().ToString());
+    if (GetDateTimeStamp() == dateTime && GetBohemiaId() == bID)
       return true;
     return false;
   }
@@ -78,7 +78,7 @@ class SRP_BulkCompRecord
 
 class SRP_AdminHelper
 {
-  private const string SPECIAL_FILE = "$profile:Survivalists_Scripts/AdminBulkComp.txt";
+  private const string SPECIAL_FILE = "$profile:Survivalists_Scripts/AdminBulkComp.bin";
   ref array<ref SRP_BulkCompRecord> m_BulkCompItems;
 
   void SRP_AdminHelper()
@@ -118,23 +118,23 @@ class SRP_AdminHelper
         file.Close();
 			}
   }
-  void InsertBulkCompItem(int epochtime, string bid, string steamid, string playername, string compText)
+  void InsertBulkCompItem(string datetime, string bid, string steamid, string playername, string compText)
   {
-    m_BulkCompItems.Insert(new SRP_BulkCompRecord(epochtime, bid, steamid, playername, compText));
+    m_BulkCompItems.Insert(new SRP_BulkCompRecord(datetime, bid, steamid, playername, compText));
     SaveDataToFile();
   }
-  SRP_BulkCompRecord GetBulkCompRecordByTimeStamp(int timestamp)
+  SRP_BulkCompRecord GetBulkCompRecordByTimeStamp(string timestamp, string bid)
   {
 		foreach(SRP_BulkCompRecord bulkRecord : m_BulkCompItems)
 		{
-    	if (bulkRecord.MatchesEntry(timestamp.ToString())) 
+    	if (bulkRecord.MatchesEntry(timestamp, bid)) 
         return bulkRecord;
     }
     return NULL;
   }
-  bool DeleteBulkCompRecordByTimestamp(int timestamp)
+  bool DeleteBulkCompRecordByTimestamp(string timestamp, string bid)
   {
-    SRP_BulkCompRecord record = GetBulkCompRecordByTimeStamp(timestamp);
+    SRP_BulkCompRecord record = GetBulkCompRecordByTimeStamp(timestamp, bid);
     if (record != NULL)
     {
       m_BulkCompItems.RemoveItem(record);

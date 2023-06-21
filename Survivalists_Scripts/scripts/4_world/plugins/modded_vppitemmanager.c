@@ -18,24 +18,25 @@ modded class VPPItemManager
 	}
   void DeleteAdminBulkData(CallType type, ParamsReadContext ctx, PlayerIdentity sender, Object target)
 	{
-		Param1<int> data; //timestamp
+		Param2<string, string> data; //timestamp
 		if(type == CallType.Server)
 		{
 			if (!ctx.Read(data)) return;
 			if (!GetPermissionManager().VerifyPermission(sender.GetPlainId(), "AdminBulkComp")) return;
 			
-      if (GetDayZGame().GetAdminHelper().DeleteBulkCompRecordByTimestamp(data.param1))
+      if (GetDayZGame().GetAdminHelper().DeleteBulkCompRecordByTimestamp(data.param1,data.param2))
       {
-				GetPermissionManager().NotifyPlayer(sender.GetPlainId(),"Successfully deleted bulk comp: "+data.param1,NotifyTypes.NOTIFY);
-				GetSimpleLogger().Log(string.Format("\"%1\" (steamid=%2) deleted the bulk comp: (%3)", sender.GetName(), sender.GetPlainId(), data.param1));
-				GetWebHooksManager().PostData(AdminActivityMessage, new AdminActivityMessage(sender.GetPlainId(), sender.GetName(), "[ItemManager] Delete bulk comp: " + data.param1));
+        string dataString = string.Format("%1 (%2)", data.param1, data.param2);
+				GetPermissionManager().NotifyPlayer(sender.GetPlainId(), string.Format("Successfully deleted bulk comp: %1", dataString),NotifyTypes.NOTIFY);
+				GetSimpleLogger().Log(string.Format("\"%1\" (steamid=%2) deleted the bulk comp: (%3)", sender.GetName(), sender.GetPlainId(), dataString));
+				GetWebHooksManager().PostData(AdminActivityMessage, new AdminActivityMessage(sender.GetPlainId(), sender.GetName(), string.Format("[ItemManager] Delete bulk comp: %1", dataString)));
         GetRPCManager().VSendRPC( "RPC_AdminBulkComp", "HandleAdminBulkData", new Param1<ref array<ref SRP_BulkCompRecord>>(GetDayZGame().GetAdminHelper().m_BulkCompItems), true, sender);
       }
 		}
 	}
   void SpawnAdminBulkData(CallType type, ParamsReadContext ctx, PlayerIdentity sender, Object target)
 	{
-		Param1<int> data; //timestamp
+		Param2<string, string> data; //timestamp
 		if(type == CallType.Server)
 		{
 			if (!ctx.Read(data)) return;
@@ -47,7 +48,7 @@ modded class VPPItemManager
         GetSimpleLogger().Log("[VPPItemManager]:: RPC SpawnAdminBulkData(): FAILED TO SPAWN ITEM BY SENDER: "+sender.GetPlainId()+" PLAYERBASE IS NULL!");
         return;
       }
-      SRP_BulkCompRecord bulkRequest = GetDayZGame().GetAdminHelper().GetBulkCompRecordByTimeStamp(data.param1);
+      SRP_BulkCompRecord bulkRequest = GetDayZGame().GetAdminHelper().GetBulkCompRecordByTimeStamp(data.param1, data.param2);
       // Print(string.Format("bulk request stuff: %1", bulkRequest.GetRawCompText()));
 
       TStringArray items = new TStringArray;
@@ -77,9 +78,9 @@ modded class VPPItemManager
         // Print(string.Format("ItemType: %1 Quantity: %2 Raw: %3", itemType, quantity, s));
         CreateEntity(itemType, targetPlayer.GetPosition(), -1, quantity);        
       }      
-
-      GetWebHooksManager().PostData(AdminActivityMessage, new AdminActivityMessage(sender.GetPlainId(), sender.GetName(), "[ItemManager] spawn object on self. item: " + data.param1));
-			GetSimpleLogger().Log(string.Format("\"%1\" (steamid=%2) Spawned Item: (%3)", sender.GetName(), sender.GetPlainId(), data.param1));
+      string dataString = string.Format("%1 (%2)", data.param1, data.param2);
+      GetWebHooksManager().PostData(AdminActivityMessage, new AdminActivityMessage(sender.GetPlainId(), sender.GetName(), string.Format("[ItemManager] spawn object on self. item: %1", dataString)));
+			GetSimpleLogger().Log(string.Format("\"%1\" (steamid=%2) Spawned Item: (%3)", sender.GetName(), sender.GetPlainId(), dataString));
       GetRPCManager().VSendRPC( "RPC_AdminBulkComp", "HandleAdminBulkData", new Param1<ref array<ref SRP_BulkCompRecord>>(GetDayZGame().GetAdminHelper().m_BulkCompItems), true, sender);
 		}
 	}

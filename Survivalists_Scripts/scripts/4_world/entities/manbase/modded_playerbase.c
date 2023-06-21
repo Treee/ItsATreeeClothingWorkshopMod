@@ -65,19 +65,16 @@ modded class PlayerBase
   override void EEKilled( Object killer )
 	{
     if ( m_AdminLog )
-		{
-      string equippedItems = GetEquippedItems();
-      int time = CF_Date.Now(true).DateToEpoch();
-      // Print("timestamp?: " + time);
-      GetDayZGame().GetAdminHelper().InsertBulkCompItem(time, GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), equippedItems);
       m_AdminLog.DirectAdminLogPrint(string.Format("ADMIN HELPER::||%1", GetEquippedItems()));
-		}
+    
     if (GetGame().IsDedicatedServer())
     {
+      CF_Date time = CF_Date.Now(true);
+      // Print("timestamp?: " + time.DateToString());
+      GetDayZGame().GetAdminHelper().InsertBulkCompItem(time.DateToString(), GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), GetEquippedItems());
       if (GetDayZGame().GetSRPMeatFarmingConfigGlobal().IsBlockedFromGivingMeat(GetIdentity().GetId()))
-      {
         SetCanYieldSkinnedProducts(false);
-      }
+      
       GetDayZGame().GetSRPMeatFarmingConfigGlobal().AddIDToBlockedMeatFarmers(GetIdentity().GetId());
     }
 
