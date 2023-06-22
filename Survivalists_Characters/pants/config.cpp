@@ -377,6 +377,14 @@ class CfgVehicles
       "Red",      
     };
   };
+  class BDUPants: Clothing
+	{
+    rootClassName="BDUPants";
+    colorVariants[]=
+    {
+      "CCE",
+    };
+  };
 //-------------------------------------ALEVARIC OVERRIDE
   class ALV_MV_CryeG3_Pants_Colorbase: Clothing
   {

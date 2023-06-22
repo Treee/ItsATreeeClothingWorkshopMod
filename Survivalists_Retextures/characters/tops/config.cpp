@@ -47,6 +47,7 @@ class CfgVehicles
   class TTsKOJacket_ColorBase;
   class TorsoCover_Improvised;
   class ManSuit_ColorBase;
+  class BDUJacket;
 
   class SRP_Rolled_Shirt_ColorBase;
   class SRP_ESPG3_TacShirt_Colorbase;
@@ -2800,7 +2801,25 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\man_suit_locknsons_co.paa",
 			"Survivalists_Retextures\characters\tops\data\man_suit_locknsons_co.paa"
 		};
-	};        
+	};    
+
+  class BDUJacket_CCE: BDUJacket
+	{
+		scope=2;
+    color="cce";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\bdu_jacket_CCE_co.paa",
+			"Survivalists_Retextures\characters\tops\data\bdu_jacket_CCE_co.paa",
+			"Survivalists_Retextures\characters\tops\data\bdu_jacket_CCE_co.paa"
+		};  
+  };  
 
   //==============MODDED
   class DUB_Monkrobe_blue: DUB_Monkrobe

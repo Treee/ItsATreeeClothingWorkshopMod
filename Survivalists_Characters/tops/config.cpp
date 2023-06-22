@@ -919,6 +919,14 @@ class CfgVehicles
       "Red",      
     };
   };
+  class BDUJacket: Clothing
+	{
+    rootClassName="BDUPants";
+    colorVariants[]=
+    {
+      "CCE",
+    };
+  };
 
 
 //===================== CUSTOM SHIRTS

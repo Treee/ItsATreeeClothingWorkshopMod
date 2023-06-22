@@ -32,6 +32,7 @@ class CfgVehicles
   class TTSKOPants;
   class LegsCover_Improvised;
   class SlacksPants_ColorBase;
+  class BDUPants;
 
   class SRP_ESPG3_TacPants_Colorbase;
   class ALV_MV_ScoutingPants_Colorbase;
@@ -1178,6 +1179,24 @@ class CfgVehicles
       "Survivalists_Retextures\characters\pants\data\slacks_locknsons_co.paa"
     };
 	};
+
+  class BDUPants_CCE: BDUPants
+	{
+		scope=2;
+    color="cce";
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\bdu_pants_CCE_co.paa",
+			"Survivalists_Retextures\characters\pants\data\bdu_pants_CCE_co.paa",
+			"Survivalists_Retextures\characters\pants\data\bdu_pants_CCE_co.paa"
+		};  
+  };
 
   class SRP_ESPG3_TacPants_Black: SRP_ESPG3_TacPants_Colorbase
   {
