@@ -8,8 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Melee",
-      "ttbaseballbat"
-      // "Survivalists_Weapons_JMC_Melee_Blunt"
+      // "ttbaseballbat"
+      "Survivalists_Weapons_JMC_Melee_Blunt"
 		};
 	};
 };

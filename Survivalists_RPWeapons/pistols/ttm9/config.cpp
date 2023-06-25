@@ -8,9 +8,9 @@ class CfgPatches
 		requiredAddons[]=
     {
       "DZ_Pistols",
-      "ttm9",
-      "ttm9gold"
-      // "Survivalists_Weapons_JMC_Pistols_ttm9"
+      // "ttm9",
+      // "ttm9gold"
+      "Survivalists_Weapons_JMC_Pistols_ttm9"
     };
 		magazines[]={"Mag_Glock_15Rnd"};
 		ammo[]={};

@@ -8,8 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",	
-      "flintlock"
-			// "Survivalists_Weapons_JMC_Pistols_Flintlock"
+      // "flintlock"
+			"Survivalists_Weapons_JMC_Pistols_Flintlock"
 		};
 	};
 };

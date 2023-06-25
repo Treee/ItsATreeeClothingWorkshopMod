@@ -8,8 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",	
-      "tt870"
-			// "Survivalists_Weapons_JMC_Shotguns_tt870"
+      // "tt870"
+			"Survivalists_Weapons_JMC_Shotguns_tt870"
 		};
 	};
 };

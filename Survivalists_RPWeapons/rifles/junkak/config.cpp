@@ -11,8 +11,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-      "junkak"
-			// "Survivalists_Weapons_JMC_Rifles_Junkak"
+      // "junkak"
+			"Survivalists_Weapons_JMC_Rifles_Junkak"
 		};
 	};
 };

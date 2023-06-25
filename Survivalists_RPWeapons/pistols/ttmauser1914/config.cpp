@@ -12,7 +12,7 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Weapons_Firearms",
-      // "Survivalists_Weapons_JMC_Pistols_ttmauser1914"
+      "Survivalists_Weapons_JMC_Pistols_ttmauser1914"
 		};
 		magazines[]={"Mag_CZ75_15Rnd"};
 		ammo[]={};

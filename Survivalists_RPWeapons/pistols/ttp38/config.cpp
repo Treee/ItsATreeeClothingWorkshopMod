@@ -7,8 +7,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]={
       "DZ_Pistols",
-      "ttp38",
-      // "Survivalists_Weapons_JMC_Pistols_ttp38"
+      // "ttp38",
+      "Survivalists_Weapons_JMC_Pistols_ttp38"
     };
 		magazines[]={"Mag_IJ70_8Rnd"};
 		ammo[]={};

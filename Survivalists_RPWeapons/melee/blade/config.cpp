@@ -10,12 +10,12 @@ class CfgPatches
 			"DZ_Weapons_Melee",
       "DZ_Weapons_Melee_Blade",
       "DZ_Weapons_Melee_Blunt",
-      "homemadeaxe",
-      "tantosword",
-      "tbladed",
-      "tnails",
-      "ttcelticaxe"
-      // "Survivalists_Weapons_JMC_Melee_Blade"
+      // "homemadeaxe",
+      // "tantosword",
+      // "tbladed",
+      // "tnails",
+      // "ttcelticaxe"
+      "Survivalists_Weapons_JMC_Melee_Blade"
 		};
 	};
 };

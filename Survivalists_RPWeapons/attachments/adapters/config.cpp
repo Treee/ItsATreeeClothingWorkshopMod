@@ -12,7 +12,7 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Scripts",
-      // "Survivalists_Weapons_JMC_Adapters"
+      "Survivalists_Weapons_JMC_Adapters"
 		};
 	};
 };

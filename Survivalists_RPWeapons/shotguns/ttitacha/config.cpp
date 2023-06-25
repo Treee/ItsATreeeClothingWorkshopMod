@@ -8,8 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",		
-      "ttitacha"
-			// "Survivalists_Weapons_JMC_Shotguns_ttitacha"
+      // "ttitacha"
+			"Survivalists_Weapons_JMC_Shotguns_ttitacha"
 		};
 	};
 };
