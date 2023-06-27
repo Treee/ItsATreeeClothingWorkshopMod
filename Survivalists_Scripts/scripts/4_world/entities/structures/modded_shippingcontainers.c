@@ -57,7 +57,7 @@ class SRP_ShippingContainerBase extends House
       
       for (int i = 0; i < max; i++)
       {
-        GetGame().CreateObjectEx(MiscGameplayFunctions.GetRandomZombieType(),selection_pos, ECE_PLACE_ON_SURFACE|ECE_INITAI);	
+        GetGame().CreateObjectEx(MiscGameplayFunctions.GetRandomEnhancedZombieType(),selection_pos, ECE_PLACE_ON_SURFACE|ECE_INITAI);	
       }
 		}		
   }

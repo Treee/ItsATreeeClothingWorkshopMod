@@ -44,6 +44,20 @@ modded class MiscGameplayFunctions
   {
     return GetZombieTypes().GetRandomElement();
   }
+  static string GetRandomEnhancedZombieType()
+  {
+    return GetEnhancedZombieTypes().GetRandomElement();
+  }
+  static TStringArray GetEnhancedZombieTypes()
+  {
+    return {
+      "DUB_ZmbVariants_1",
+      "DUB_ZmbVariants_2",
+      "DUB_ZmbVariants_3",
+      "DUB_ZmbVariants_4",
+      "DUB_ZmbVariants_5",
+    };
+  }
 
   static TStringArray GetZombieTypes()
   {
