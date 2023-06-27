@@ -10,13 +10,17 @@ class SRP_ShippingContainerBase extends House
     {
       int chanceRoll = Math.RandomIntInclusive(1,100);
       // 1-94 is nothing
-      if (chanceRoll > 0 && chanceRoll <= 94) //1-94
+      if (chanceRoll > 0 && chanceRoll <= 90) //1-90
       {
         // do nothing
-      }
-      else if (chanceRoll > 94 && chanceRoll < 99) //94,99
+      }      
+      else if (chanceRoll > 91 && chanceRoll <= 94) //91,94
       {
-        SpawnZombies(2);
+        SpawnRareLoot(Math.RandomIntInclusive(1,4));
+      }
+      else if (chanceRoll > 94 && chanceRoll < 99) //95,99
+      {
+        SpawnZombies(Math.RandomIntInclusive(1,5));
         SetHasRandomEventPerformed(true);
       }
       else if (chanceRoll == 99) //99
@@ -73,6 +77,20 @@ class SRP_ShippingContainerBase extends House
 			vector selection_pos2 = ModelToWorld( GetMemoryPointPos( "doorstwin2_action" ) );
       GetGame().CreateObjectEx("SRP_DrugExplosion",selection_pos2, ECE_PLACE_ON_SURFACE);	
 		}	
+  }
+  void SpawnRareLoot(int max=1)
+  {
+    if ( MemoryPointExists( "sound_rainobjectinner1metal2_1" ) )
+		{
+			vector selection_pos = ModelToWorld( GetMemoryPointPos( "sound_rainobjectinner1metal2_1" ) );
+      
+      for (int i = 0; i < max; i++)
+      {
+        ItemBase newItem;
+        if (Class.CastTo(newItem, GetGame().CreateObjectEx(MiscGameplayFunctions.GetRandomRareLootType(),selection_pos, ECE_PLACE_ON_SURFACE|ECE_INITAI)))
+          newItem.SetQuantity(1, newItem.GetQuantityMax());
+      }
+		}
   }
 }
 

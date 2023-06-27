@@ -48,6 +48,21 @@ modded class MiscGameplayFunctions
   {
     return GetEnhancedZombieTypes().GetRandomElement();
   }
+  static string GetRandomRareLootType()
+  {
+    return GetRareLootTypes().GetRandomElement();
+  }
+  static TStringArray GetRareLootTypes()
+  {
+    return {
+      "SRP_Mining_RawOre_Zinc",
+      "SRP_Mining_RawOre_Coal",
+      "SRP_Mining_RawOre_Silver",
+      "SRP_ForgeIngot_Silver",
+      "SRP_ForgeIngot_Zinc",
+      "SRP_ForgeIngot_Brass",
+    };
+  }
   static TStringArray GetEnhancedZombieTypes()
   {
     return {
