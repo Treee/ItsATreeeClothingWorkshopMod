@@ -344,6 +344,18 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_walldouble.p3d";
 	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Spiked Palisade Wall Kit - Log Fence";
+		descriptionShort="A kit for building a log fence.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_FenceLogSpike";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_wooden_house_wall.p3d";
+	};
 //======================================= STATIC LAND (Scope 1)
   class SRP_Fortifications_BambooWall_StaticObject: SRP_PrefabFortification_Base
 	{

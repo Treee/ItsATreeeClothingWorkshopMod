@@ -386,6 +386,55 @@ class CfgVehicles
 		// };
 	};
 
+  class Land_srp_wooden_2house_bridge_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Gate House and Bridge Kit";
+		descriptionShort="A kit with two houses that are connected by an overhead bridge.";
+    projectionTypename="Land_srp_wooden_2house_bridge";
+	};
+  class Land_srp_wooden_2house_bridge: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_wooden_2house_bridge.p3d";
+	};
+  class Land_srp_wooden_house_bridge_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Tall Bridge Kit";
+		descriptionShort="A kit with a large overhead bridge.";
+    projectionTypename="Land_srp_wooden_house_bridge";
+	};
+  class Land_srp_wooden_house_bridge: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_wooden_house_bridge.p3d";
+	};
+  class Land_srp_wooden_house_bridgeend_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Gate House End House";
+		descriptionShort="A kit with a large overhang to connect an overhead bridge.";
+    projectionTypename="Land_srp_wooden_house_bridgeend";
+	};
+  class Land_srp_wooden_house_bridgeend: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_wooden_house_bridgeend.p3d";
+	};
+  class Land_srp_wooden_house_gatehouse_Kit: SRP_Building_KitBase
+	{
+		scope=2;
+		displayName="Gate House";
+		descriptionShort="A kit with a large gate house.";
+    projectionTypename="Land_srp_wooden_house_gatehouse";
+	};
+  class Land_srp_wooden_house_gatehouse: SRP_PrefabHouse_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\residential\srp_wooden_house_gatehouse.p3d";
+	};
+
 
   class Land_srp_treehouse_circular_Kit: SRP_Building_KitBase
 	{

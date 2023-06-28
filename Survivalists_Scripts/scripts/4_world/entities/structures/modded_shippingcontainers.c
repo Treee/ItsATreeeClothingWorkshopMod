@@ -21,7 +21,7 @@ class SRP_ShippingContainerBase extends House
       }
       else if (chanceRoll > 94 && chanceRoll < 99) //95,98
       {
-        SpawnZombies(Math.RandomIntInclusive(1,5));
+        SpawnZombies(Math.RandomIntInclusive(1,3));
         SetHasRandomEventPerformed(true);
       }
       else if (chanceRoll == 99) //99

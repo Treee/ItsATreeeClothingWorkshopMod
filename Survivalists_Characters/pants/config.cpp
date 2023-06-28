@@ -420,8 +420,10 @@ class CfgVehicles
     colorVariants[]=
     {
       "Black",
+      "Blue",
       "Green",
       "Tan",
+      "Urban",
       "Brown",
       "Cadpat",
       "ChocoChip",
