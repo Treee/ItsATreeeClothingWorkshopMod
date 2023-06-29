@@ -332,6 +332,7 @@ class CfgVehicles
       "BlueCheck",
       "BlueCheckBright",
       "GreenCheck",
+      "PlainGreen",
       "RedCheck",
       "WhiteCheck",
       "PlaneBlack",

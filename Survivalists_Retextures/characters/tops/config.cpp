@@ -213,6 +213,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\shirt_plain_pussy_co.paa"
 		};
 	};
+  class Shirt_PlainGreen: Shirt_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\Shirt_PlaneGreen_co.paa",
+			"Survivalists_Retextures\characters\tops\data\Shirt_PlaneGreen_co.paa",
+			"Survivalists_Retextures\characters\tops\data\Shirt_PlaneGreen_co.paa"
+		};
+	};
   class TShirt_PocketPals: TShirt_ColorBase
 	{
 		scope=2;
