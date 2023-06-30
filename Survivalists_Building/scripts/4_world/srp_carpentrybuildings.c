@@ -159,7 +159,6 @@ class SRP_Structures_WoodenShed extends SRP_DefaultHouse{};
 class Land_srp_wooden_2floor_tavern extends SRP_DefaultHouse{};
 class Land_srp_wooden_house_thatch extends SRP_DefaultHouse{};
 
-class Land_srp_wooden_2house_bridge extends SRP_DefaultHouse{};
 class Land_srp_wooden_house_bridge extends SRP_DefaultHouse{};
 class Land_srp_wooden_house_bridgeend extends SRP_DefaultHouse{};
 class Land_srp_wooden_house_gatehouse extends SRP_DefaultHouse{};

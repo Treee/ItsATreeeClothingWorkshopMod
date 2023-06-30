@@ -386,18 +386,6 @@ class CfgVehicles
 		// };
 	};
 
-  class Land_srp_wooden_2house_bridge_Kit: SRP_Building_KitBase
-	{
-		scope=2;
-		displayName="Gate House and Bridge Kit";
-		descriptionShort="A kit with two houses that are connected by an overhead bridge.";
-    projectionTypename="Land_srp_wooden_2house_bridge";
-	};
-  class Land_srp_wooden_2house_bridge: SRP_PrefabHouse_Base
-	{
-		scope=2;
-		model="Survivalists_Building\structures\residential\srp_wooden_2house_bridge.p3d";
-	};
   class Land_srp_wooden_house_bridge_Kit: SRP_Building_KitBase
 	{
 		scope=2;

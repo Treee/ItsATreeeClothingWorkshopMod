@@ -30,6 +30,9 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItems.Insert(Register_WoodenTavern3Floor_Recipe());
     craftableItems.Insert(Register_WoodenThatch1Floor_Recipe());
 
+    craftableItems.Insert(Register_WoodenHouseBridge_Recipe());
+    craftableItems.Insert(Register_WoodenHouseBridgeEnd_Recipe());
+    craftableItems.Insert(Register_WoodenGateHouse_Recipe());
     // Palisade Kits
     craftableItems.Insert(Register_PalisadeRamp_Recipe());
     craftableItems.Insert(Register_PalisadeTentSmall_Recipe());
@@ -48,6 +51,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItems.Insert(Register_PalisadeWallLogDouble_Recipe());
     craftableItems.Insert(Register_PalisadeTowerLargeStairs_Recipe());
     craftableItems.Insert(Register_PalisadeTowerLargeLadder_Recipe());
+    craftableItems.Insert(Register_PalisadeWallLogSpikes_Recipe());
   }
 //===========================TEMPLATE
   // SRP_CraftableItem Register_X_Recipe()
@@ -823,7 +827,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_WoodenThatch1Floor_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_thatch", "Thatch House - Unfinished");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_thatch_kit", "Thatch House - Unfinished");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -856,6 +860,132 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 45));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Fabric", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem Register_WoodenHouseBridge_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_bridge_Kit", "Tall Bridge Kit");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_WoodenLogs", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenLogs", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenLogs", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_WoodenLogs", SRP_COLOR.NONE, 4));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenPlanks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_WoodenPlanks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_WoodenPlanks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_WoodenPlanks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenPlanks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_WoodenPlanks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_WoodenPlanks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_WoodenPlanks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Truck_01_WoodenPlanks", SRP_COLOR.NONE, 5));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalSheets", SRP_COLOR.NONE, 2));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Nails", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_Nails", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_Nails", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_Nails", SRP_COLOR.NONE, 20));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 5));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem Register_WoodenHouseBridgeEnd_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_bridgeend_Kit", "Tall Bridge End House Kit");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_WoodenLogs", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenLogs", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenLogs", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_WoodenLogs", SRP_COLOR.NONE, 4));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Truck_01_WoodenPlanks", SRP_COLOR.NONE, 10));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalSheets", SRP_COLOR.NONE, 5));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 40));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem Register_WoodenGateHouse_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_gatehouse_Kit", "Wooden Gatehouse");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_WoodenLogs", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenLogs", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenLogs", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_WoodenLogs", SRP_COLOR.NONE, 4));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenPlanks", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_WoodenPlanks", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_WoodenPlanks", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_WoodenPlanks", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenPlanks", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_WoodenPlanks", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_WoodenPlanks", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_WoodenPlanks", SRP_COLOR.NONE, 15));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Truck_01_WoodenPlanks", SRP_COLOR.NONE, 15));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalSheets", SRP_COLOR.NONE, 5));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_Nails", SRP_COLOR.NONE, 40));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 40));
+
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_Rope", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Rope", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Rope", SRP_COLOR.NONE, 1));
@@ -1546,6 +1676,48 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 50));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Fabric", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem Register_PalisadeWallLogSpikes_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_SRP_Fortifications_PalisadeWall_FenceLogSpike_Kit", "Palisade Wall Kit - Spiked Logs");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_WoodenLogs", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenLogs", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenLogs", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_WoodenLogs", SRP_COLOR.NONE, 4));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_WoodenPlanks", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Truck_01_WoodenPlanks", SRP_COLOR.NONE, 10));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalSheets", SRP_COLOR.NONE, 2));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Nails", SRP_COLOR.NONE, 35));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1_Nails", SRP_COLOR.NONE, 30));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W1_Nails", SRP_COLOR.NONE, 25));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W2_Nails", SRP_COLOR.NONE, 25));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L1W3_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2_Nails", SRP_COLOR.NONE, 35));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W1_Nails", SRP_COLOR.NONE, 10));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W2_Nails", SRP_COLOR.NONE, 25));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L2W3_Nails", SRP_COLOR.NONE, 30));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_L3_Nails", SRP_COLOR.NONE, 35));
+
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_FPole_Rope", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Rope", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Rope", SRP_COLOR.NONE, 1));
