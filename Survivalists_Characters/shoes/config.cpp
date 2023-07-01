@@ -253,7 +253,7 @@ class CfgVehicles
   class NBCBootsBase: Clothing
 	{
     soundAttType="none";
-    rootClassName="NBCBoots";
+    rootClassName="NBCBootsBase";
     colorVariants[]=
     {
       "Gray",
