@@ -83,7 +83,19 @@
   class SRP_Mining_Crystal_H_Rainbow extends SRP_Mining_Crystal_ColorBase{};
 
 //=============================================== CUT GEMS
-  class SRP_Mining_CutGem_ColorBase extends ItemBase{};
+  class SRP_Mining_CutGem_ColorBase extends ItemBase
+  {
+    protected bool m_Energized;
+
+    void SetIsEnergized(bool state)
+    {
+      m_Energized = state;
+    }
+    bool IsEnergized()
+    {
+      return m_Energized;
+    }
+  };
 
   class SRP_Mining_CutGem_Aqua extends SRP_Mining_CutGem_ColorBase{};
   class SRP_Mining_CutGem_Amethyst extends SRP_Mining_CutGem_ColorBase{};
