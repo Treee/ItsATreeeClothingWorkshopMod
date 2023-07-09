@@ -93,5 +93,7 @@
   class SRP_Mining_CutGem_Ruby extends SRP_Mining_CutGem_ColorBase{};
   class SRP_Mining_CutGem_Topaz extends SRP_Mining_CutGem_ColorBase{};
   class SRP_Mining_CutGem_Diamond extends SRP_Mining_CutGem_ColorBase{};
-
+  class SRP_Mining_CutGem_Sapphire extends SRP_Mining_CutGem_ColorBase{};
+  class SRP_Mining_CutGem_Opal extends SRP_Mining_CutGem_ColorBase{};
+  class SRP_Mining_CutGem_AltarShard extends SRP_Mining_CutGem_ColorBase{};
 //=============================================== ND

@@ -1760,6 +1760,7 @@ class CfgVehicles
     physLayer="item_small";
 		weight=500;
 		itemSize[]={1,1};
+    canBeSplit=1;    
 		varQuantityDestroyOnMin=1;
 		varQuantityInit=1;
 		varQuantityMin=0;
@@ -2112,6 +2113,41 @@ class CfgVehicles
 		displayName="Exquisite Cut Gem - Opal";
 		descriptionShort="An exquisite gem refined from rough rock.";
     color="opal";
+    physLayer="item_small";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_MasonryMetallurgy\gear\consumables\data\srp_miningcrystalcut_rainbow_ca.paa"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_miningcrystalcut.rvmat"}},
+            {0.69999999,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_miningcrystalcut.rvmat"}},
+            {0.5,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_miningcrystalcut.rvmat"}},
+            {0.30000001,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_miningcrystalcut.rvmat"}},
+            {0.0,	{"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_miningcrystalcut.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+  class SRP_Mining_CutGem_AltarShard: SRP_Mining_CutGem_ColorBase
+	{
+		scope=2;
+		displayName="Shard of the Artifact";
+		descriptionShort="A sliver of 'The Artifact' it resonates with a strange energy. Holding this gives you a headache.";
+    model="Survivalists_MasonryMetallurgy\gear\consumables\srp_mining_gem_e.p3d";
+    color="AltarShard";
     physLayer="item_small";
     hiddenSelections[]=
 		{
