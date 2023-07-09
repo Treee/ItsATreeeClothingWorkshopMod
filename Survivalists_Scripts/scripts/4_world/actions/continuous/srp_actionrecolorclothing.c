@@ -35,7 +35,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
 		{
       if (target_clothing.GetNumberOfItems() > 0)
         return false;
-      if (target_clothing.IsContainer())
+      if (target_clothing.IsContainer() && !target_clothing.IsInherited(PlateCarrierPouches))
         return false;
       if (target_clothing.HasDyableOptions())
 			  return true;	
