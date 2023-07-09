@@ -21,10 +21,49 @@ class CfgVehicles
 
 	class Clothing;  
   class Inventory_Base;
-  class Flag_Base; 
   class Armband_ColorBase;
-
-  //------------------------------ FLAG PATCHES
+//------------------------------ VANILLA OVERRIDE
+  class Flag_Base: Inventory_Base
+	{
+    rootClassName="Flag";
+    colorVariants[]=
+    {
+      "Chernarus",
+      "Chedaki",
+      "NAPA",
+      "CDF",
+      "Livonia",
+      "Altis",
+      "SSahrani",
+      "NSahrani",
+      "DayZ",
+      "LivoniaArmy",
+      "White",
+      "Bohemia",
+      "APA",
+      "UEC",
+      "Pirates",
+      "Cannibals",
+      "Bear",
+      "Wolf",
+      "BabyDeer",
+      "Rooster",
+      "LivoniaPolice",
+      "CMC",
+      "TEC",
+      "CHEL",
+      "Zenit",
+      "HunterZ",
+      "BrainZ",
+      "Refuge",
+      "RSTA",
+      "Snake",
+      "Crook",
+      "Rex",
+      "Zagorky",
+    };
+	};
+//------------------------------ FLAG PATCHES
 	class SRP_PatchFlag_ColorBase: Clothing
 	{
 		scope=0;
@@ -305,7 +344,7 @@ class CfgVehicles
 			};
 		};
 	};  
-  //---------------------------- LOGO PATCHES
+//---------------------------- LOGO PATCHES
 	class SRP_PatchLogo_ColorBase: Clothing
 	{
 		scope=0;
@@ -381,7 +420,7 @@ class CfgVehicles
 		};
 	};
 
-  //------------------------------------- EVENT THINGS
+//------------------------------------- EVENT THINGS
   // -------------------------- CUSTOM STUFF
   class SRP_DoubleArmband_Event_Generic: SRP_DoubleArmband_ColorBase
 	{
