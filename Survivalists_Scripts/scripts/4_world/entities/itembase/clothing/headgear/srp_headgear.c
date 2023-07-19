@@ -46,9 +46,16 @@ class SRP_MilitaryPatrolCapBackwards_ColorBase extends BaseballCap_ColorBase
 };
 
 
-class SRP_SlimHelmetFull: Mich2001Helmet{};
+class SRP_SlimHelmetFull extends HelmetBase{};
 class SRP_SlimHelmetFull_Kain extends SRP_SlimHelmetFull{};
 
 
 class SRP_Comtacs_ColorBase extends BalaclavaMask_ColorBase{};
 class SRP_EarProtection_ColorBase extends SRP_Comtacs_ColorBase {};
+
+
+class SRP_CombatHelmet_ColorBase extends HelmetBase{};
+class SRP_CombatHelmetV2_ColorBase extends HelmetBase{};
+class SRP_CombatHelmet6B47_ColorBase extends HelmetBase{};
+class SRP_CombatHelmetHighCut_ColorBase extends HelmetBase{};
+class SRP_CombatHelmetAltyn_ColorBase extends HelmetBase{};
