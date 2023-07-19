@@ -61,6 +61,18 @@ class CfgVehicles
       "Crook",
       "Rex",
       "Zagorky",
+      "Australia",
+      "Canada",
+      "KentuckyCommonWealth",
+      "France",
+      "Germany",
+      "Italy",
+      "Mexico",
+      "Portugal",
+      "Russia",
+      "Spain",
+      "UK",
+      "USADamaged",
     };
 	};
 //------------------------------ FLAG PATCHES

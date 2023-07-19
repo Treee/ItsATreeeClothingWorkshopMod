@@ -33,6 +33,7 @@ class CfgVehicles
   class LegsCover_Improvised;
   class SlacksPants_ColorBase;
   class BDUPants;
+  class Breeches_ColorBase;
 
   class SRP_ESPG3_TacPants_Colorbase;
   class ALV_MV_ScoutingPants_Colorbase;
@@ -1197,6 +1198,39 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\bdu_pants_CCE_co.paa"
 		};  
   };
+
+  class Breeches_Black1: Breeches_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"			
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\BreechesF_Blackjeans_co.paa",
+			"Survivalists_Retextures\characters\pants\data\BreechesF_Blackjeans_co.paa",
+			"Survivalists_Retextures\characters\pants\data\BreechesF_Blackjeans_co.paa"
+		};
+	};
+  class Breeches_Blue1: Breeches_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale",			
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\BreechesF_Bluejeans_co.paa",
+			"Survivalists_Retextures\characters\pants\data\BreechesF_Bluejeans_co.paa",
+			"Survivalists_Retextures\characters\pants\data\BreechesF_Bluejeans_co.paa",
+		};
+	};
 
   class SRP_ESPG3_TacPants_Black: SRP_ESPG3_TacPants_Colorbase
   {

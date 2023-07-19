@@ -87,6 +87,8 @@ class CfgVehicles
       "SURPAT",
       "MARPATWinter",
       "EMP6",
+      "Marshals",
+      "OregonPolice"
     };    
   };
   class ZSh3PilotHelmet: Clothing

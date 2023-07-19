@@ -15,6 +15,7 @@ class CfgPatches
 class CfgVehicles
 {
   class LargeTent;
+  class Flag_Base;
 
   class SRP_Guitar_Alpocalypse;
   class SRP_Carpet_ColorBase;
@@ -33,6 +34,115 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\camping\data\large_tent_STAG_co.paa"
 		};
   };
+
+  class Flag_Australia: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_australia_co.paa"
+		};
+		color="Australia";
+	};
+  class Flag_Canada: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_Canada_co.paa"
+		};
+		color="Canada";
+	};
+  class Flag_KentuckyCommonWealth: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_CommonWealth_co.paa"
+		};
+		color="KentuckyCommonWealth";
+	};
+  class Flag_France: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_France_co.paa"
+		};
+		color="France";
+	};
+  class Flag_Germany: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_Germany_co.paa"
+		};
+		color="Germany";
+	};
+  class Flag_Italy: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_Italy_co.paa"
+		};
+		color="Italy";
+	};
+  class Flag_Mexico: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_Mexico_co.paa"
+		};
+		color="Mexico";
+	};
+  class Flag_Portugal: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_Portugal_co.paa"
+		};
+		color="Portugal";
+	};
+  class Flag_Russia: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_Russia_co.paa"
+		};
+		color="Russia";
+	};
+  class Flag_Spain: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_Spain_co.paa"
+		};
+		color="Spain";
+	};
+  class Flag_UK: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_UK_co.paa"
+		};
+		color="UK";
+	};
+  class Flag_USADamaged: Flag_Base
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\flag_USA_damaged_co.paa"
+		};
+		color="USADamaged";
+	};
   
 //================================================ MODDED  
   class SRP_Guitar_Alpocalypse_Blue: SRP_Guitar_Alpocalypse

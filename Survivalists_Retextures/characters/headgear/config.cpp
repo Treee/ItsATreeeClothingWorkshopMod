@@ -315,6 +315,26 @@ class CfgVehicles
 			};
 		};
 	};
+  class BaseballCap_Marshals: BaseballCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_black_marshals_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_black_marshals_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_black_marshals_co.paa"
+		};
+	};
+  class BaseballCap_OregonPolice: BaseballCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_navy_oregonpolice_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_navy_oregonpolice_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_navy_oregonpolice_co.paa"
+		};
+	};
 
 	class BeanieHat_MTP: BeanieHat_ColorBase
 	{
