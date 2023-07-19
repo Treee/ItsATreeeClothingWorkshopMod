@@ -84,10 +84,26 @@ modded class SecurityConfig
     return {
      "StarlightOptic",
      "ACOGOptic_6x",
-     "JMC_Keycard",
      "NailBox",
      "DUB_Mutantsyringe_Admin2",
      "DUB_Mutantsyringe_Admin4",
+     "SRP_ReadableBook_AlchemyHints",
+     "SRP_Mining_RawOre_Zinc",
+     "SRP_Mining_RawOre_Coal",
+     "SRP_Mining_RawOre_Silver",
+     "SRP_ForgeIngot_Silver",
+     "SRP_ForgeIngot_Zinc",
+     "SRP_ForgeIngot_Brass",
+     "DUB_Larpsword",
+     "Winebottle_two",
+     "SRP_PistolSuppressor_Golden",
+		 "ferguson",
+		 "tantosword",
+		 "ttl35",
+		 "DUB_Rapier",
+		 "DUB_Compressor",
+		 "SRP_BrownBottle",
+		 "DUB_BlunderPistol"
     };
   }
 

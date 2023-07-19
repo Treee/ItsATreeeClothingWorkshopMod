@@ -515,6 +515,19 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_homomutagenis_co.paa"
     };
   };
+  class SRP_ReadableBook_AlchemyHints: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Alchemist's Compendium";
+    author="Iris Miller";
+		file="Survivalists_Books\gear\books\data\book_alchemyhints.html";		
+    displayName="The Alchemist's Compendium";
+    descriptionShort="A comprehensive guide on alchemy and herbology.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_alchemyhints_co.paa"
+    };
+  };
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
