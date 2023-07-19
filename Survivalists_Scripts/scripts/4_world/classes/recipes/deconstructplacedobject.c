@@ -171,13 +171,17 @@ class Deconstruct_PlacedObjectKit_Advanced extends RecipeBase
    
     TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(ingredients[0], ingredients[0].GetKitName(), player, player.GetPosition());
     lambda.SetTransferParams(false, false);
-    MiscGameplayFunctions.TurnItemIntoItemEx(player, lambda);
-
-    PowerTool_ElectricHandDrill tool = PowerTool_ElectricHandDrill.Cast(ingredients[1]);
-    if (tool)
+    PowerTool_ElectricHandDrill tool;
+    if (Class.CastTo(tool, ingredients[1]))
     {
-      tool.ConsumeBattery(Math.RandomIntInclusive(200,400));
+      int powerRequirement = Math.RandomIntInclusive(200,400);
+      if (tool.HasBatteryAttached() && tool.HasRequiredEnergy(powerRequirement))
+      {
+        tool.ConsumeBattery(powerRequirement);
+        lambda.SetAdvancedDismantle(true);
+      }
     }
+    MiscGameplayFunctions.TurnItemIntoItemEx(player, lambda);
 
     PluginAdminLog m_AdminLog = PluginAdminLog.Cast( GetPlugin(PluginAdminLog) );
     if (m_AdminLog)

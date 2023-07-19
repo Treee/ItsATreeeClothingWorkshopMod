@@ -1235,7 +1235,7 @@ class CfgSlots
   class Slot_StonesFlagTax
 	{
 		name="StonesFlagTax";
-		displayName="#STR_CfgStones0";
+		displayName="Stones required to raise a flag. 1 stone per level";
 		selection="Stones";
 		ghostIcon="set:dayz_inventory image:stones";
 		stackMax=5;

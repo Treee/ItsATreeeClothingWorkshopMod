@@ -2,17 +2,29 @@ class TurnItemIntoItemLambda_KitDeployment extends TurnItemIntoItemLambda
 {
 	vector m_DeployPosition;
   vector m_DeployOrientation;
+  bool m_IsAdvancedCraft;
 
 	void TurnItemIntoItemLambda_KitDeployment (EntityAI old_item, string new_item_type, PlayerBase player, vector deployPosition="0 0 0", vector deployOrientation="0 0 0") 
   {
     m_DeployPosition = deployPosition;
     m_DeployOrientation = deployOrientation;
+    m_IsAdvancedCraft = false;
+  }
+
+  void SetAdvancedDismantle(bool state)
+  {
+    m_IsAdvancedCraft = state;
   }
 
 	override void CopyOldPropertiesToNew (notnull EntityAI old_item, EntityAI new_item)
-	{
-    float deploymentCost = old_item.GetMaxHealth() * 0.05;
-    old_item.AddHealth(-deploymentCost);
+	{    
+    if (!m_IsAdvancedCraft)
+    {
+      float deploymentCost = old_item.GetMaxHealth() * 0.05;
+      // float deploymentCost = old_item.GetMaxHealth(); // debug
+      old_item.AddHealth(-deploymentCost);
+    }
+
     
     if (new_item.IsBuilding())
       m_TransferHealth = false;

@@ -62,6 +62,7 @@ class SRP_ActionDismantlePlacedObject: ActionContinuousBase
     {
       TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(house, house.GetKitName(), action_data.m_Player, action_data.m_Player.GetPosition());
       lambda.SetTransferParams(false, false, false);
+      lambda.SetAdvancedDismantle(true);
       MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, lambda);
       PowerTool_ElectricHandDrill tool;
       if (Class.CastTo(tool, action_data.m_MainItem))

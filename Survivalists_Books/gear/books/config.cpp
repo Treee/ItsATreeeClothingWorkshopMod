@@ -509,7 +509,7 @@ class CfgVehicles
     author="Unknown";
 		file="Survivalists_Books\gear\books\data\book_homomutagenis.html";		
     displayName="Homo Mutagenis";
-    descriptionShort="Notes written about a curious new species.";
+    descriptionShort="A book about mutant kind & it's feral counterparts from the perspective of a 'humane' mutant scientist.";
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Books\gear\books\data\book_homomutagenis_co.paa"
