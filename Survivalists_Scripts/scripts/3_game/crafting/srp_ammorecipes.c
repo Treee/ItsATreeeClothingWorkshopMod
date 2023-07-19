@@ -115,7 +115,7 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
   } 
   SRP_CraftableItem Register_AmmoCrafting_40mm_Smoke_Red_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("40mm_Smoke_Red", "40mm Smoke - Red");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Ammo_40mm_Smoke_Red", "40mm Smoke - Red");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_CasePrep", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_AmmoPress", SRP_COLOR.NONE, 1));
   
@@ -126,7 +126,7 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
   } 
   SRP_CraftableItem Register_AmmoCrafting_40mm_Smoke_Green_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("40mm_Smoke_Green", "40mm Smoke - Green");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Ammo_40mm_Smoke_Green", "40mm Smoke - Green");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_CasePrep", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_AmmoPress", SRP_COLOR.NONE, 1));
   
@@ -137,7 +137,7 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
   } 
   SRP_CraftableItem Register_AmmoCrafting_40mm_Smoke_White_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("40mm_Smoke_White", "40mm Smoke - White");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Ammo_40mm_Smoke_White", "40mm Smoke - White");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_CasePrep", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_AmmoPress", SRP_COLOR.NONE, 1));
   
@@ -148,7 +148,7 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
   } 
   SRP_CraftableItem Register_AmmoCrafting_40mm_Smoke_Black_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("40mm_Smoke_Black", "40mm Smoke - Black");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Ammo_40mm_Smoke_Black", "40mm Smoke - Black");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_CasePrep", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_AmmoPress", SRP_COLOR.NONE, 1));
   
