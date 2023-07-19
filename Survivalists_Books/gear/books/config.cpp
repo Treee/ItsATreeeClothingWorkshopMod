@@ -502,6 +502,19 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_ridersofportland_co.paa"
     };
   };
+  class SRP_ReadableBook_HomoMutagenis: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Homo Mutagenis";
+    author="Unknown";
+		file="Survivalists_Books\gear\books\data\book_homomutagenis.html";		
+    displayName="Homo Mutagenis";
+    descriptionShort="Notes written about a curious new species.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_homomutagenis_co.paa"
+    };
+  };
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
