@@ -38,11 +38,31 @@ class SRP_SmallProtectorCase_FlagArmbandBox extends SmallProtectorCase
 {
   override bool CanReceiveItemIntoCargo (EntityAI item)
 	{
-    return item.IsKindOf("Armband_ColorBase") || item.IsKindOf("Flag_Base");
+    if (item.IsInherited(Armband_ColorBase))
+      return true;
+    if (item.IsInherited(SRP_Armband_Base))
+      return true;
+    if (item.IsInherited(SRP_PatchFlag_ColorBase))
+      return true;
+    if (item.IsInherited(SRP_PatchLogo_ColorBase))
+      return true;
+    if (item.IsInherited(Flag_Base))
+      return true;    
+    return false;
 	}
 
   override bool CanLoadItemIntoCargo( EntityAI item )
   {
-    return item.IsKindOf("Armband_ColorBase") || item.IsKindOf("Flag_Base");
+    if (item.IsInherited(Armband_ColorBase))
+      return true;
+    if (item.IsInherited(SRP_Armband_Base))
+      return true;
+    if (item.IsInherited(SRP_PatchFlag_ColorBase))
+      return true;
+    if (item.IsInherited(SRP_PatchLogo_ColorBase))
+      return true;
+    if (item.IsInherited(Flag_Base))
+      return true;    
+    return false;
   }
 };
