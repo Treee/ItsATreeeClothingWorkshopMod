@@ -39,7 +39,7 @@ modded class MiscGameplayFunctions
     parent.AddChild(child, -1);
     parent.Update();
   }
-
+//========================= LOOT HELPERS
   static string GetRandomZombieType()
   {
     return GetZombieTypes().GetRandomElement();
@@ -52,6 +52,32 @@ modded class MiscGameplayFunctions
   {
     return GetRareLootTypes().GetRandomElement();
   }
+  static string GetRandomGrenadeType()
+  {
+    return GetSpawnableGrenades().GetRandomElement();
+  }
+  static string GetRandomWeaponsType()
+  {
+    return GetSpawnableWeapons().GetRandomElement();
+  }
+  static string GetRandomAmmoType()
+  {
+    return GetSpawnableAmmo().GetRandomElement();
+  }
+  static string GetRandomOpticType()
+  {
+    return GetSpawnableOptics().GetRandomElement();
+  }
+  static string GetRandomMagazineType()
+  {
+    return GetSpawnableMags().GetRandomElement();
+  }
+  static string GetRandomMiscHightTierType()
+  {
+    return GetMiscHighTier().GetRandomElement();
+  }
+
+//========================= LOOT LISTS
   static TStringArray GetRareLootTypes()
   {
     return {
@@ -73,7 +99,6 @@ modded class MiscGameplayFunctions
       "DUB_ZmbVariants_5",
     };
   }
-
   static TStringArray GetZombieTypes()
   {
     return {
@@ -245,4 +270,101 @@ modded class MiscGameplayFunctions
       "ZmbM_Mummy",
     };
   }
+  // aircraft carrier loot
+  static TStringArray GetSpawnableGrenades()
+  {
+    return {
+      "M67Grenade", 
+      "RGD5Grenade", 
+      "FlashGrenade",
+      "M18SmokeGrenade_Red",
+      "M18SmokeGrenade_Green",
+      "M18SmokeGrenade_Yellow",
+      "M18SmokeGrenade_Purple",
+      "M18SmokeGrenade_White",
+      "RDG2SmokeGrenade_Black",
+      "RDG2SmokeGrenade_White",
+      "ClaymoreMine"
+    };
+  }
+  static TStringArray GetSpawnableWeapons()
+  {
+    return {
+     "ttscarl",
+     "ttrpd",
+     "FAL",
+     "DUB_LAW",
+     "DUB_RPG26",
+     "DUB_Bazooka",
+     "DUB_MG3",
+     "DUB_PKM",
+     "DUB_BoysAT",
+     "DUB_PPSH"
+    };
+  }
+  static TStringArray GetSpawnableOptics()
+  {
+    return {
+      "StarlightOptic",
+      "ACOGOptic_6x",
+      "NailBox",
+      "ESP_Tac_Craftsmen",
+      "ESP_Long_Range",
+      "ESP_Hunter",
+      "ESP_Short_Range",
+      "ESP_Spectre",
+      "ESP_RedDot",
+      "ESP_Holographic",
+      "ESP_Holographic_Tan",
+      "ESP_Scope3X",
+      "ESP_Scope4X",
+      "ESP_Aimpoint",
+      "ESP_XPS3",
+      "STG_OKP7",
+    };
+  }
+  static TStringArray GetSpawnableMags()
+  {
+    return {
+     "ttrpdmag",
+     "Mag_STANAG_60Rnd",
+     "Mag_STANAG_30Rnd",
+    };
+  }
+  static TStringArray GetSpawnableAmmo()
+  {
+    return {
+      "AmmoBox_556x45_20Rnd",
+      "AmmoBox_556x45Tracer_20Rnd",
+      "AmmoBox_357_20Rnd",
+      "AmmoBox_545x39_20Rnd",
+      "AmmoBox_545x39Tracer_20Rnd",
+      "AmmoBox_12gaFlash_10Rnd"
+    };
+  }
+  static TStringArray GetMiscHighTier()
+  {
+    return {
+     "DUB_Mutantsyringe_Admin2",
+     "DUB_Mutantsyringe_Admin4",
+     "SRP_ReadableBook_AlchemyHints",
+     "SRP_Mining_RawOre_Zinc",
+     "SRP_Mining_RawOre_Coal",
+     "SRP_Mining_RawOre_Silver",
+     "SRP_ForgeIngot_Silver",
+     "SRP_ForgeIngot_Zinc",
+     "SRP_ForgeIngot_Brass",
+     "DUB_Larpsword",
+     "Winebottle_two",
+     "SRP_PistolSuppressor_Golden",
+		 "ferguson",
+		 "tantosword",
+		 "ttl35",
+		 "DUB_Rapier",
+		 "DUB_Compressor",
+		 "SRP_BrownBottle",
+		 "DUB_BlunderPistol"
+    };
+  }
+
 };
