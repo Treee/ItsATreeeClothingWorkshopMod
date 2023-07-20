@@ -299,7 +299,8 @@ modded class MiscGameplayFunctions
      "DUB_MG3",
      "DUB_PKM",
      "DUB_BoysAT",
-     "DUB_PPSH"
+     "DUB_PPSH",
+     "srp_aa12_default"
     };
   }
   static TStringArray GetSpawnableOptics()
@@ -329,6 +330,13 @@ modded class MiscGameplayFunctions
      "ttrpdmag",
      "Mag_STANAG_60Rnd",
      "Mag_STANAG_30Rnd",
+     "Mag_FAMAS_25Rnd",
+     "Mag_SVD_10Rnd",
+     "Mag_VSS_10Rnd",
+     "Mag_Saiga_5Rnd",
+     "Mag_Saiga_8Rnd",
+     "Mag_Saiga_Drum20Rnd",
+     "srp_aa12_mag"
     };
   }
   static TStringArray GetSpawnableAmmo()
