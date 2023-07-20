@@ -54,6 +54,8 @@ class CfgVehicles
   class SRP_Alchemist_Hat;
   class ALV_MV_TacCap_Forward_Colorbase;
   class ALV_MV_TacCap_Backward_Colorbase;
+  class SRP_ModernHelmet_ColorBase;
+
 //=============================================== Vanilla Override
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
 	{
@@ -2110,4 +2112,21 @@ class CfgVehicles
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\vests\data\Modular_Vest_TS_CO.paa"};
 	};
+//================================================= SRP Modern Helmet
+  class SRP_ModernHelmet_Default: SRP_ModernHelmet_ColorBase
+  {
+    scope=2;
+  };
+  class SRP_ModernHelmet_ScrimUzi: SRP_ModernHelmet_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_modernhelmet_uzi_co.paa"
+		};
+  };
 };
