@@ -5426,6 +5426,249 @@ class CfgVehicles
     };
   };
 
+  class SRP_LargeDresser_ColorBase: Container_Base
+	{
+		scope=0;
+		displayName="Large Dresser";
+		descriptionShort="A decorated large dresser";
+		model="Survivalists_Mods\gear\containers\srp_LargeDresser.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_LargeDresser_CO.paa"
+		};
+    projectionTypename="SRP_LargeDresser_Default";
+		slopeTolerance = 0.4;
+		yawPitchRollLimit[] = {45,45,45};
+		alignHologramToTerain = 1;
+		physLayer = "item_large";
+		heavyItem = 1;
+		weight=10000;
+		itemSize[]={10,20};
+		itemBehaviour=0;
+		carveNavmesh=1;
+		canBeDigged=1;
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=400;
+					transferToAttachmentsCoef=0.059999999;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\containers\data\srp_LargeDresser.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\containers\data\srp_LargeDresser.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\containers\data\srp_LargeDresser.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\containers\data\srp_LargeDresser.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\containers\data\srp_LargeDresser.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=8;
+					};
+					class Blood
+					{
+						damage=8;
+					};
+					class Shock
+					{
+						damage=8;
+					};
+				};
+			};
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={10,10};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class AnimationSources
+		{
+			class draw
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.4;
+			};
+		};
+		soundImpactType="wood";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="seachest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+  class SRP_LargeDresser_Default_Kit: SRP_KitBase
+  {
+    scope=2;
+		displayName="Large Dresser Kit";
+		descriptionShort="A decorated large dresser kit";
+    projectionTypename="SRP_LargeDresser_Default";
+  };
+  class SRP_LargeDresser_Default: SRP_LargeDresser_ColorBase
+  {
+    scope=2;
+  };
+  
+	class SRP_Wardrobe_ColorBase: Container_Base
+	{
+		scope=0;
+		displayName="Wardrobe";
+		descriptionShort="A very simple wardrobe";
+		model="Survivalists_Mods\gear\containers\srp_Wardrobe.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_Wardrobe_CO.paa"
+		};
+    projectionTypename="SRP_Wardrobe_Default";
+		slopeTolerance = 0.4;
+		yawPitchRollLimit[] = {45,45,45};
+		alignHologramToTerain = 1;
+		physLayer = "item_large";
+		heavyItem = 1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		carveNavmesh=1;
+		canBeDigged=1;
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=400;
+					transferToAttachmentsCoef=0.059999999;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=8;
+					};
+					class Blood
+					{
+						damage=8;
+					};
+					class Shock
+					{
+						damage=8;
+					};
+				};
+			};
+		};
+		class Cargo
+		{
+			itemsCargoSize[]={10,10};
+			openable=0;
+			allowOwnedCargoManipulation=1;
+		};
+		class AnimationSources
+		{
+			class door
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.4;
+			};
+			class door2
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.4;
+			};
+		};
+		soundImpactType="wood";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="seachest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_Wardrobe_Default_Kit: SRP_KitBase
+  {
+    scope=2;
+		displayName="Large Wardrobe Kit";
+		descriptionShort="A simple large wardrobe kit";
+    projectionTypename="SRP_Wardrobe_Default";
+  };
+  class SRP_Wardrobe_Default: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+  };
+
 
 //=================================================================== POTS
   class SRP_PotteryPot_ColorBase: Inventory_Base
