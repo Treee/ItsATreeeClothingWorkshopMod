@@ -97,16 +97,17 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_Building_KitBase: SRP_KitBase
-  {
-		displayName="Building Kit";
-		descriptionShort="A wooden box used to transport small items. Find a suitable place to construct. Can be disassembled.";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Mods\gear\crafting\data\srp_kitbase_building_co.paa"
-		};
-  };
+  // class SRP_Building_KitBase: SRP_KitBase
+  // {
+  //   scope=0;
+	// 	displayName="Building Kit";
+	// 	descriptionShort="A wooden box used to transport small items. Find a suitable place to construct. Can be disassembled.";
+	// 	hiddenSelections[]={"zbytek"};
+	// 	hiddenSelectionsTextures[]=
+	// 	{
+	// 		"Survivalists_Mods\gear\crafting\data\srp_kitbase_building_co.paa"
+	// 	};
+  // };
   class SRP_AccessoryRing_Kit: SRP_KitBase
 	{
 		scope=2;

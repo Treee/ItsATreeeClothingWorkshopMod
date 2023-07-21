@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Structures_Specific"
+      "DZ_Structures_Specific",
+      "Survivalists_Mods_Gear_Crafting"
 		};
 	};
 };
@@ -16,7 +17,7 @@ class CfgVehicles
 {
   class HouseNoDestruct;
 
-  class SRP_Building_KitBase;
+  class SRP_KitBase;
 // ---------------------PRE FABS
   class SRP_PrefabFortification_Base: HouseNoDestruct
 	{
@@ -36,7 +37,7 @@ class CfgVehicles
 	};
 
 //======================================= BAMBOO
-  class SRP_Fortifications_BambooWall_Kit: SRP_Building_KitBase
+  class SRP_Fortifications_BambooWall_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Bamboo Wall Kit";
@@ -48,7 +49,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_bamboos_wall.p3d";
 	};
-  class SRP_Fortifications_BambooWall_Yellow_Kit: SRP_Building_KitBase
+  class SRP_Fortifications_BambooWall_Yellow_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Bamboo Wall Kit - Yellow";
@@ -63,7 +64,7 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Building\structures\fortification\data\srp_barricade_bamboo_yellow_co.paa"};
 	};  
 
-  class SRP_Fortifications_BambooWallCrossSmall_Kit: SRP_Building_KitBase
+  class SRP_Fortifications_BambooWallCrossSmall_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Bamboo Wall Kit - Small X Pattern";
@@ -75,7 +76,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_bamboos_cross_small.p3d";
 	};
-  class SRP_Fortifications_BambooWallCrossSmall_Yellow_Kit: SRP_Building_KitBase
+  class SRP_Fortifications_BambooWallCrossSmall_Yellow_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Bamboo Wall Kit - Small X Pattern Yellow";
@@ -90,7 +91,7 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Building\structures\fortification\data\srp_barricade_bamboo_yellow_co.paa"};
 	}; 
 
-  class SRP_Fortifications_BambooWallCross_Kit: SRP_Building_KitBase
+  class SRP_Fortifications_BambooWallCross_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Bamboo Wall Kit -  X Pattern";
@@ -102,7 +103,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_bamboos_cross.p3d";
 	};
-  class SRP_Fortifications_BambooWallCross_Yellow_Kit: SRP_Building_KitBase
+  class SRP_Fortifications_BambooWallCross_Yellow_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Bamboo Wall Kit -  X Pattern Yellow";
@@ -117,7 +118,7 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Building\structures\fortification\data\srp_barricade_bamboo_yellow_co.paa"};
 	};
 //======================================= PALISADE TOWER
-  class Land_SRP_Fortifications_PalisadeTower_Small_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeTower_Small_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Tower Kit - Small";
@@ -129,7 +130,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_tower_small.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeTower_LargeStairs_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeTower_LargeStairs_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Tower Kit - Large (With Stairs)";
@@ -141,7 +142,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_tower_large.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeTower_LargeLadder_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeTower_LargeLadder_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Tower Kit - Large (With Ladder)";
@@ -153,7 +154,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_tower_largeladder.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeTower_Ramp_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeTower_Ramp_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Kit - Ramp";
@@ -165,7 +166,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_ramp.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeTower_Stairs_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeTower_Stairs_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Kit - Stairs";
@@ -177,7 +178,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_tower_stairs.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeTower_Platform_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeTower_Platform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Platform Kit - Single";
@@ -189,7 +190,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_platform.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeTower_PlatformDouble_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeTower_PlatformDouble_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Platform Kit - Double";
@@ -201,7 +202,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_platformdouble.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeTower_PlatformTriple_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeTower_PlatformTriple_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Platform Kit - Triple";
@@ -215,7 +216,7 @@ class CfgVehicles
 	};
 
 //======================================= PALISADE WALLS
-  class Land_SRP_Fortifications_PalisadeWall_TentSmall_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_TentSmall_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Tent Kit - Small";
@@ -227,7 +228,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_walltent_small.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeWall_TentLarge_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_TentLarge_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Tent Kit - Large";
@@ -239,7 +240,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_walltent_large.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeWall_Planks_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_Planks_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Wall Kit - Single Plank";
@@ -251,7 +252,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_wallplank.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeWall_PlanksDouble_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_PlanksDouble_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Wall Kit - Double Plank";
@@ -263,7 +264,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_wallplankdouble.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeWall_Gate_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_Gate_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Wall Kit - Gate";
@@ -296,7 +297,7 @@ class CfgVehicles
       };
     };
 	};
-  class Land_SRP_Fortifications_PalisadeWall_Fence_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_Fence_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Wall Kit - Fence";
@@ -308,7 +309,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_wallfence.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeWall_FenceDouble_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_FenceDouble_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Wall Kit - Double Fence";
@@ -320,7 +321,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_wallfencedouble.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeWall_FenceLog_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_FenceLog_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Wall Kit - Log Fence";
@@ -332,7 +333,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_wall.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeWall_FenceLogDouble_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_FenceLogDouble_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Palisade Wall Kit - Double Log Fence";
@@ -344,7 +345,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\fortification\srp_palisade_walldouble.p3d";
 	};
-  class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike_Kit: SRP_Building_KitBase
+  class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Spiked Palisade Wall Kit - Log Fence";

@@ -16,7 +16,7 @@ class CfgVehicles
 {
   class HouseNoDestruct;
 
-  class SRP_Building_KitBase;
+  class SRP_KitBase;
 // ---------------------PRE FABS
   class SRP_PrefabHouse_Base: HouseNoDestruct
 	{
@@ -36,7 +36,7 @@ class CfgVehicles
     alignHologramToTerain=1;
 	};
 
-  class SRP_Structures_WoodenHouseOuthouse_Kit: SRP_Building_KitBase
+  class SRP_Structures_WoodenHouseOuthouse_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Outhouse kit";
@@ -48,7 +48,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenouthouse_full.p3d";
 	};
-  class SRP_Structures_RussianHouse_Kit: SRP_Building_KitBase
+  class SRP_Structures_RussianHouse_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Russian House Kit";
@@ -60,7 +60,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_russianhouse.p3d";
 	};
-  class SRP_Structures_RussianHouse1_Kit: SRP_Building_KitBase
+  class SRP_Structures_RussianHouse1_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Russian House Kit - Variant 1";
@@ -72,7 +72,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_russianhouse1.p3d";
 	};
-  class SRP_Structures_WoodenHouseSingleRoom_Kit: SRP_Building_KitBase
+  class SRP_Structures_WoodenHouseSingleRoom_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden House Kit - Single Room";
@@ -84,7 +84,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenhousesingleroom.p3d";
 	};
-  class SRP_Structures_WoodenBarn_Kit: SRP_Building_KitBase
+  class SRP_Structures_WoodenBarn_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Barn Kit";
@@ -96,7 +96,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenbarn.p3d";
 	};
-  class SRP_Structures_WoodenShanty_Kit: SRP_Building_KitBase
+  class SRP_Structures_WoodenShanty_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Shanty Kit";
@@ -108,7 +108,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenshanty.p3d";
 	};
-  class SRP_Structures_WoodenShed_Kit: SRP_Building_KitBase
+  class SRP_Structures_WoodenShed_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Shed Kit";
@@ -120,7 +120,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_woodenshed.p3d";
 	};
-  class Land_srp_wooden_2floor_tavern_Kit: SRP_Building_KitBase
+  class Land_srp_wooden_2floor_tavern_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Tavern 2 Floor Kit";
@@ -279,7 +279,7 @@ class CfgVehicles
 		};
 	};
 
-  class Land_srp_wooden_house_thatch_Kit: SRP_Building_KitBase
+  class Land_srp_wooden_house_thatch_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden House With Thatch Roof Kit";
@@ -386,7 +386,7 @@ class CfgVehicles
 		// };
 	};
 
-  class Land_srp_wooden_house_bridge_Kit: SRP_Building_KitBase
+  class Land_srp_wooden_house_bridge_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Tall Bridge Kit";
@@ -398,7 +398,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_wooden_house_bridge.p3d";
 	};
-  class Land_srp_wooden_house_bridgeend_Kit: SRP_Building_KitBase
+  class Land_srp_wooden_house_bridgeend_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Gate House End House";
@@ -410,7 +410,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_wooden_house_bridgeend.p3d";
 	};
-  class Land_srp_wooden_house_gatehouse_Kit: SRP_Building_KitBase
+  class Land_srp_wooden_house_gatehouse_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Gate House";
@@ -424,7 +424,7 @@ class CfgVehicles
 	};
 
 
-  class Land_srp_treehouse_circular_Kit: SRP_Building_KitBase
+  class Land_srp_treehouse_circular_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Circular Wooden Tree House Kit - 1 Door";
@@ -436,7 +436,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_treehouse_circular.p3d";
 	};
-  class Land_srp_treehouse_box_Kit: SRP_Building_KitBase
+  class Land_srp_treehouse_box_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Cubed Wooden Tree House Kit - 1 Door";
@@ -450,7 +450,7 @@ class CfgVehicles
 		model="Survivalists_Building\structures\residential\srp_treehouse_boxv2.p3d";
     minPlacingDist=20;
 	};
-  class Land_srp_treehouse_doubleplatform_Kit: SRP_Building_KitBase
+  class Land_srp_treehouse_doubleplatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Tree House Kit - 2 Platform";
@@ -462,7 +462,7 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_Building\structures\residential\srp_treehouse_doubleplatform.p3d";
 	};
-  class Land_srp_treehouse_tripleplatform_Kit: SRP_Building_KitBase
+  class Land_srp_treehouse_tripleplatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Tree House Kit - 3 Platform";
@@ -475,7 +475,7 @@ class CfgVehicles
 		model="Survivalists_Building\structures\residential\srp_treehouse_tripleplatform.p3d";
 	};
 
-  class Land_srp_constructionmaterials_Kit: SRP_Building_KitBase
+  class Land_srp_constructionmaterials_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Construction Materials Kit";
@@ -759,7 +759,7 @@ class CfgVehicles
 	// 		};
 	// 	};
 	// };
-  class SRP_Structures_RussianHouseDoor_Kit: SRP_Building_KitBase
+  class SRP_Structures_RussianHouseDoor_Kit: SRP_KitBase
 	{
 		scope=0;
 		displayName="Russian House Door Kit";
@@ -771,7 +771,7 @@ class CfgVehicles
 		scope=0;
 		model="Survivalists_Building\structures\residential\srp_russianhousedoor.p3d";
 	};
-  class SRP_Structures_RussianHouse1Door_Kit: SRP_Building_KitBase
+  class SRP_Structures_RussianHouse1Door_Kit: SRP_KitBase
 	{
 		scope=0;
 		displayName="Russian House Door Kit - Variant 1";
@@ -783,7 +783,7 @@ class CfgVehicles
 		scope=0;
 		model="Survivalists_Building\structures\residential\srp_russianhouse1door.p3d";
 	};
-  class SRP_Structures_WoodenShedDoor_Kit: SRP_Building_KitBase
+  class SRP_Structures_WoodenShedDoor_Kit: SRP_KitBase
 	{
 		scope=0;
 		displayName="Wooden Shed Door Kit";

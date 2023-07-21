@@ -186,18 +186,20 @@ class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
     float new_cook_time;
     for (int i = 0; i < inItemCount; i++)
     {
-      inItem = GetInventory().GetCargo().GetItem(i);
-      if (inItem.GetFoodStageType() != FoodStageType.RAW)
-        continue;
-
-      new_cook_time = inItem.GetCookingTime() + HERB_DRYING_AMOUNT;
-      inItem.SetCookingTime(new_cook_time);
-      if (inItem.GetCookingTime() >= HERB_DRYING_TIME)
+      if (Class.CastTo(inItem, GetInventory().GetCargo().GetItem(i)))
       {
-        inItem.ChangeFoodStage(FoodStageType.DRIED);
-        inItem.RemoveAllAgents();
-        inItem.SetCookingTime(0);
-      }  
+        if (inItem.GetFoodStageType() != FoodStageType.RAW)
+          continue;
+
+        new_cook_time = inItem.GetCookingTime() + HERB_DRYING_AMOUNT;
+        inItem.SetCookingTime(new_cook_time);
+        if (inItem.GetCookingTime() >= HERB_DRYING_TIME)
+        {
+          inItem.ChangeFoodStage(FoodStageType.DRIED);
+          inItem.RemoveAllAgents();
+          inItem.SetCookingTime(0);
+        }  
+      }
     }
   }
 };
