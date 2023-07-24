@@ -535,7 +535,268 @@ class CfgVehicles
 			};
 		};
 	};
-
+// ---------------------SCOPE 1
+  class SRP_Structures_WoodenHouseOuthouse_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+    model="Survivalists_Building\structures\residential\srp_woodenouthouse_full.p3d";
+  };
+  class SRP_Structures_RussianHouse_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_russianhouse.p3d";
+	};
+  class SRP_Structures_RussianHouse1_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_russianhouse1.p3d";
+	};
+  class SRP_Structures_WoodenHouseSingleRoom_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_woodenhousesingleroom.p3d";
+	};
+  class SRP_Structures_WoodenBarn_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_woodenbarn.p3d";
+	};
+  class SRP_Structures_WoodenShanty_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_woodenshanty.p3d";
+	};
+  class SRP_Structures_WoodenShed_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_woodenshed.p3d";
+	};
+  class Land_srp_wooden_2floor_tavern_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_wooden_2floor_tavern.p3d";
+    class Doors
+		{
+			class window1f_1
+			{
+				displayName="Window 1 Floor 1";
+				component="window1f_1";
+				soundPos="window1f_1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window1f_2
+			{
+				displayName="Window 1 Floor 1";
+				component="window1f_2";
+				soundPos="window1f_2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window1f_3
+			{
+				displayName="Window 1 Floor 1";
+				component="window1f_3";
+				soundPos="window1f_3_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window1f_4
+			{
+				displayName="Window 1 Floor 1";
+				component="window1f_4";
+				soundPos="window1f_4_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_1
+			{
+				displayName="Window 1 Floor 2";
+				component="window2f_1";
+				soundPos="window2f_1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_2
+			{
+				displayName="Window 1 Floor 1";
+				component="window2f_2";
+				soundPos="window2f_2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_3
+			{
+				displayName="Window 1 Floor 1";
+				component="window2f_3";
+				soundPos="window2f_3_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_4
+			{
+				displayName="Window 1 Floor 1";
+				component="window2f_4";
+				soundPos="window2f_4_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window2f_5
+			{
+				displayName="Window 1 Floor 1";
+				component="window2f_5";
+				soundPos="window2f_5_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window3f_1
+			{
+				displayName="Window 1 Floor 1";
+				component="window3f_1";
+				soundPos="window3f_1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+      class window3f_2
+			{
+				displayName="Window 1 Floor 1";
+				component="window3f_2";
+				soundPos="window3f_2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorWoodNolatchOpen";
+				soundClose="doorWoodNolatchClose";
+				soundLocked="doorWoodNolatchRattle";
+				soundOpenABit="doorWoodNolatchOpenABit";
+			};
+		};
+	};
+  class Land_srp_wooden_house_thatch_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_wooden_house_thatch.p3d";
+	};
+  class Land_srp_wooden_house_bridge_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_wooden_house_bridge.p3d";
+	};
+  class Land_srp_wooden_house_bridgeend_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_wooden_house_bridgeend.p3d";
+	};
+  class Land_srp_wooden_house_gatehouse_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_wooden_house_gatehouse.p3d";
+	};
+  class Land_srp_treehouse_circular_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_treehouse_circular.p3d";
+	};
+  class Land_srp_treehouse_box_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		// model="Survivalists_Building\structures\residential\srp_treehouse_box.p3d";
+		model="Survivalists_Building\structures\residential\srp_treehouse_boxv2.p3d";
+	};
+  class Land_srp_treehouse_doubleplatform_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_treehouse_doubleplatform.p3d";
+	};
+  class Land_srp_treehouse_tripleplatform_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_treehouse_tripleplatform.p3d";
+	};
+  class Land_srp_constructionmaterials_StaticObject: SRP_PrefabHouse_Base
+	{
+		scope=1;
+    model="Survivalists_Building\structures\industrial\srp_shippingcontainer_20ft.p3d";
+    class Doors
+		{
+			class DoorsTwin1
+			{
+				displayName="door Twin1";
+				component="doorstwin1";
+				soundPos="doorstwin1_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorMetalContainerOpen";
+				soundClose="doorMetalContainerClose";
+				soundLocked="doorMetalContainerRattle";
+				soundOpenABit="doorMetalContainerOpenABit";
+			};
+      class DoorsTwin2
+			{
+				displayName="door Twin2";
+				component="doorstwin2";
+				soundPos="doorstwin2_action";
+				animPeriod=1;
+				initPhase=0;
+				initOpened=0.30000001;
+				soundOpen="doorMetalContainerOpen";
+				soundClose="doorMetalContainerClose";
+				soundLocked="doorMetalContainerRattle";
+				soundOpenABit="doorMetalContainerOpenABit";
+			};
+		};
+	};
 // ---------------------DOORS (Scope 0 for now)
   class SRP_PrefabDoor_Base: HouseNoDestruct
 	{

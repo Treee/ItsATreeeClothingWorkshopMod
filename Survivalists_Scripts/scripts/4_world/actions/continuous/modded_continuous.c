@@ -53,6 +53,11 @@ modded class ActionSkinning
       }
 
       CreateSkeletalBone(body.GetPosition());
+
+      // if (body.IsPlayerCyborg())
+      // {
+      //   CreateMetalWires(body.GetPosition());
+      // }
     }
     super.OnFinishProgressServer(action_data);
   }
@@ -162,6 +167,42 @@ modded class ActionSkinning
       Class.CastTo(added_item, GetGame().CreateObjectEx(bodypart, pos_rnd, false));
       added_item.PlaceOnSurface();
     }
+  }
+
+  void CreateMetalWires(vector bodyPosition)
+  {
+    ItemBase added_item;
+    int numWires = Math.RandomIntInclusive(3,10);
+    vector pos_rnd;
+    for(int i = 0; i < numWires; i++)
+    {
+      pos_rnd = bodyPosition + Vector(Math.RandomFloat01() - 0.5, 0, Math.RandomFloat01() - 0.5);
+      if (Class.CastTo(added_item, GetGame().CreateObjectEx(GetRandomMetalWire(), pos_rnd, ECE_SETUP | ECE_NOLIFETIME | ECE_DYNAMIC_PERSISTENCY)))
+      {
+        added_item.PlaceOnSurface();
+      }
+    }
+  }
+
+  string GetRandomMetalWire()
+  {
+    return GetMetalWireTypes().GetRandomElement();
+  }
+
+  TStringArray GetMetalWireTypes()
+  {
+    return {
+      "MetalWire_Black",
+      "MetalWire_Brown",
+      "MetalWire_Red",
+      "MetalWire_Orange",
+      "MetalWire_Yellow",
+      "MetalWire_Green",
+      "MetalWire_Blue",
+      "MetalWire_Purple",
+      "MetalWire_Grey",
+      "MetalWire_White",
+    };
   }
 };
 
