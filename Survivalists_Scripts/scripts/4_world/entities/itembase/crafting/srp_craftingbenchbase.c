@@ -1,8 +1,10 @@
 class SRP_CraftingBench_Base extends ItemBase
-{  
+{ 
+  const int RPC_SRP_UPDATE_RECIPE_INFO = 863679;
   ref array<SRP_CraftableItem> potentialCraftableItems = new array<SRP_CraftableItem>;
   protected bool m_HasCraftableMatches = false;  
 
+//================================================== EVENTS
   override bool CanPutInCargo( EntityAI parent )
 	{
     return false;
@@ -15,31 +17,65 @@ class SRP_CraftingBench_Base extends ItemBase
   override void EEItemAttached(EntityAI item, string slot_name)
   {
     super.EEItemAttached(item, slot_name);
-    potentialCraftableItems = new array<SRP_CraftableItem>;
-    if (CheckPotentialRecipeMatches(potentialCraftableItems))
-    {
-      // Print("Has matches");
-      SetHasCraftableMatches(true);
-    }
-    else
-    {
-      // Print("Has no matches");
-      SetHasCraftableMatches(false);
-    }
+    CheckRecipes();
   }
   // when an item is attached, go through the recipes once and see if anything can be crafted
   override void EEItemDetached(EntityAI item, string slot_name)
   {
     super.EEItemDetached(item, slot_name);
-    potentialCraftableItems = new array<SRP_CraftableItem>;
+    CheckRecipes();
+  }
+  //! Called on server side when some attachment's quantity is changed.
+  override void OnAttachmentQuantityChanged(ItemBase item)
+	{
+		super.OnAttachmentQuantityChanged(item);
+    CheckRecipes();
+    // this is server side only event, trigger rpc to tell client to update
+    SendServerRecipeRPC();
+	}
+
+//================================================== RPC'S
+  override void OnRPC( PlayerIdentity sender, int rpc_type,ParamsReadContext ctx ) 
+	{
+    switch (rpc_type)
+    {
+      case RPC_SRP_UPDATE_RECIPE_INFO:
+        HandleOnClientRPCRead(ctx);
+      break;
+    }
+    super.OnRPC(sender, rpc_type, ctx);    
+	}
+  void SendServerRecipeRPC()
+  {
+    if (GetGame().IsDedicatedServer())
+    {
+      ScriptRPC rpc = new ScriptRPC();
+      rpc.Send(this, RPC_SRP_UPDATE_RECIPE_INFO, true, NULL);
+    }
+  }
+  void HandleOnClientRPCRead(ParamsReadContext ctx)
+  {
+    if (!GetGame().IsDedicatedServer())
+    {
+      GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(CheckRecipes, 500, false);
+    }
+  }
+//=================================================== CUSTOM
+  void CheckRecipes()
+  {
+    if (!potentialCraftableItems)          
+      potentialCraftableItems = new array<SRP_CraftableItem>;
+    
+    potentialCraftableItems.Clear();
+
     if (CheckPotentialRecipeMatches(potentialCraftableItems))
     {
-      // Print("Has matches");
+      // print("Has matches");
       SetHasCraftableMatches(true);
     }
     else
     {
-      // Print("Has no matches");
+      // print("Has no matches");
       SetHasCraftableMatches(false);
     }
   }
@@ -73,7 +109,6 @@ class SRP_CraftingBench_Base extends ItemBase
     // craftableItem.PrintIngredients();    
     return GetRecipeManager().IsRecipeMatch(craftableItem, craftableItems);
   }
-  
   SRP_RecipeManager GetRecipeManager()
   {
     return NULL;
@@ -90,17 +125,13 @@ class SRP_CraftingBench_Base extends ItemBase
   SRP_CraftableItem GetCraftableItemByIndex(int index)
   {
     if (potentialCraftableItems && potentialCraftableItems.IsValidIndex(index));
-    {
       return potentialCraftableItems.Get(index);    
-    }
     return NULL;
   }
   string GetCraftableItemDisplayNameByIndex(int index)
   {
     if (potentialCraftableItems && potentialCraftableItems.IsValidIndex(index));
-    {
       return potentialCraftableItems.Get(index).GetDisplayName();    
-    }
     return "No Item Found";      
   }
   int GetPotentialCraftableItemCount()

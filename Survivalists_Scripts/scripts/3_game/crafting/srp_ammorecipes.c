@@ -8,16 +8,24 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
     craftableItems.Insert(Register_AmmoCrafting_22_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_9x19_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_45ACP_Recipe());
-
     craftableItems.Insert(Register_AmmoCrafting_12gaSlug_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_12gaPellets_Recipe());
+
     craftableItems.Insert(Register_AmmoCrafting_40mm_Smoke_Red_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_40mm_Smoke_Green_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_40mm_Smoke_White_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_40mm_Smoke_Black_Recipe());
+    craftableItems.Insert(Register_AmmoCrafting_M18SmokeGrenade_Red_Recipe());
+    craftableItems.Insert(Register_AmmoCrafting_M18SmokeGrenade_Green_Recipe());
+    craftableItems.Insert(Register_AmmoCrafting_M18SmokeGrenade_Yellow_Recipe());
+    craftableItems.Insert(Register_AmmoCrafting_M18SmokeGrenade_Purple_Recipe());
+    craftableItems.Insert(Register_AmmoCrafting_M18SmokeGrenade_White_Recipe());
+    craftableItems.Insert(Register_AmmoCrafting_RDG2SmokeGrenade_Black_Recipe());
+    craftableItems.Insert(Register_AmmoCrafting_RDG2SmokeGrenade_White_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_545x39_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_9x39_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_556x45_Recipe());
+    craftableItems.Insert(Register_AmmoCrafting_357_Recipe());
 
     craftableItems.Insert(Register_AmmoCrafting_762x39_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_308Win_Recipe());
@@ -25,11 +33,11 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
     craftableItems.Insert(Register_AmmoCrafting_9x39AP_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_FlashGrenade_Recipe());
 
-    craftableItems.Insert(Register_AmmoCrafting_700Nitro_Recipe());
-
     craftableItems.Insert(Register_AmmoCrafting_40mm_Explosive_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_RGD5Grenade_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_M67Grenade_Recipe());
+    
+    craftableItems.Insert(Register_AmmoCrafting_700Nitro_Recipe());
     craftableItems.Insert(Register_AmmoCrafting_50BMG_Recipe());
   }
 //===========================TEMPLATE
