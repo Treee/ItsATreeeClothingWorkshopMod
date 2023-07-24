@@ -879,4 +879,11 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_PrefabCrafting_alchemydrybox: SRP_PrefabCrafting_Base
+	{
+    scope=1;
+		displayName="Herb Drybox";
+		descriptionShort="A box used to dry plants prior to crushing.";
+    model="Survivalists_Building\structures\crafting\srp_alchemy_drybox.p3d";
+	};
 };
