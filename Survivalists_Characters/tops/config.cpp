@@ -11,6 +11,7 @@ class CfgPatches
       "DZ_Characters_Tops",
       "Survivalists_Armbands_Flag",
       "Winter_Parka",
+      "Leather_cloak",
       "jmc_deerisle_misc",
       "Dressupbox",
       "Alv_Tac_Gear_Tops"
