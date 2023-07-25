@@ -116,7 +116,9 @@ class CfgVehicles
       "SURPAT",
       "MARPATWinter",
       "EMP6",
-      "TigerCamo"
+      "TigerCamo",
+      "OldCamo",
+      "SpringRanger",
     };
   };      
   class CanvasPants_ColorBase: Clothing

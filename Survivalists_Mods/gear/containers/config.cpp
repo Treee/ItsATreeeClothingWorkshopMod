@@ -5560,6 +5560,26 @@ class CfgVehicles
 			"Survivalists_Mods\gear\containers\data\srp_Wardrobe_CO.paa"
 		};
     projectionTypename="SRP_Wardrobe_Default";
+    rootClassName="SRP_Wardrobe";
+    colorVariants[]=
+    {
+      "BlueDoor",
+      "CyanDoor",
+      "DarkWood",
+      "GreenDoor",
+      "PaleWood",
+      "PinkDoor",
+      "PurpleDoor",
+      "RedDoor",
+      "YellowDoor",
+      "Ammo",
+      "Apparel",
+      "Food",
+      "Guns",
+      "Medical",
+      "Tools",
+      "Valuables",
+    };
 		slopeTolerance = 0.4;
 		yawPitchRollLimit[] = {45,45,45};
 		alignHologramToTerain = 1;

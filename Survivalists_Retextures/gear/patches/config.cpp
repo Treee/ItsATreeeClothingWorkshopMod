@@ -302,6 +302,16 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
+  class SRP_PatchFlag_GreenMountain: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Identifier - GreenMountain";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\srp_patchflag_GreenMountain_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
 
 	class SRP_BGSDID_Patch: SRP_PatchFlag_ColorBase
 	{

@@ -88,7 +88,8 @@ class CfgVehicles
       "MARPATWinter",
       "EMP6",
       "Marshals",
-      "OregonPolice"
+      "OregonPolice",
+      "BlackRanger",
     };    
   };
   class ZSh3PilotHelmet: Clothing

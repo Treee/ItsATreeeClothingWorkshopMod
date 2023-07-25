@@ -585,6 +585,27 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\hunterpants_tigercamo_co.paa"
 		};
 	};
+
+  class HunterPants_OldCamo: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\srp_HunterPants_old_camo_co.paa",
+			"Survivalists_Retextures\characters\pants\data\srp_HunterPants_old_camo_co.paa",
+			"Survivalists_Retextures\characters\pants\data\srp_HunterPants_old_camo_co.paa"
+		};
+	};
+  class HunterPants_SpringRanger: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\srp_HunterPants_spring_ranger_co.paa",
+			"Survivalists_Retextures\characters\pants\data\srp_HunterPants_spring_ranger_co.paa",
+			"Survivalists_Retextures\characters\pants\data\srp_HunterPants_spring_ranger_co.paa"
+		};
+	};
   class CanvasPants_Leather: CanvasPants_ColorBase
 	{
 		scope=2;

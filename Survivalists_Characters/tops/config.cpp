@@ -744,6 +744,7 @@ class CfgVehicles
       "Summer",      
       "Winter",      
       "Black",      
+      "Black1",      
       "RainJacket",      
       "MTP",      
       "ATAC",      
@@ -768,6 +769,7 @@ class CfgVehicles
       "PurpleSkull",
       "BlueSkull",
       "BlackSkull",
+      "SpringRanger",
     };
   };
   class LeatherShirt_ColorBase: Clothing
@@ -927,6 +929,15 @@ class CfgVehicles
     colorVariants[]=
     {
       "CCE",
+    };
+  };
+  class LabCoat: Clothing
+	{
+    rootClassName="LabCoat";
+    colorVariants[]=
+    {
+      "BlackSpace",
+      "Bloody",
     };
   };
 

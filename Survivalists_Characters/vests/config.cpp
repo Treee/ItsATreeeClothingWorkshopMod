@@ -162,6 +162,7 @@ class CfgVehicles
       "ATF",      
       "CIA",      
       "FBI",      
+      "NoLetters",
     };
 	};
   class ChestHolster: Clothing

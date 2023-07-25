@@ -2367,6 +2367,26 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\hunting_jacket_spring_skull6_co.paa"
 		};
 	};
+  class HuntingJacket_SpringRanger: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_Hunting_jacket_Spring_Ranger_CO.paa",
+			"Survivalists_Retextures\characters\tops\data\srp_Hunting_jacket_Spring_Ranger_CO.paa",
+			"Survivalists_Retextures\characters\tops\data\srp_Hunting_jacket_Spring_Ranger_CO.paa"
+		};
+	};
+  class HuntingJacket_Black1: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\srp_hunting_vest_black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\srp_hunting_vest_black_co.paa",
+			"Survivalists_Retextures\characters\tops\data\srp_hunting_vest_black_co.paa"
+		};
+	};
   class LabCoat_BGSD: LabCoat
 	{
 		scope=2;
@@ -2406,6 +2426,26 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\labcoat_bgsd_hansen_co.paa",
 			"Survivalists_Retextures\characters\tops\data\labcoat_bgsd_hansen_co.paa",
 			"Survivalists_Retextures\characters\tops\data\labcoat_bgsd_hansen_co.paa"
+		};
+	};
+  class LabCoat_BlackSpace: LabCoat
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\labcoat_blackspace_co.paa",
+			"Survivalists_Retextures\characters\tops\data\labcoat_blackspace_co.paa",
+			"Survivalists_Retextures\characters\tops\data\labcoat_blackspace_co.paa"
+		};
+	};
+  class LabCoat_Bloody: LabCoat
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\labcoat_bloody_co.paa",
+			"Survivalists_Retextures\characters\tops\data\labcoat_bloody_co.paa",
+			"Survivalists_Retextures\characters\tops\data\labcoat_bloody_co.paa"
 		};
 	};
   class NurseDress_BlackGrape: NurseDress_ColorBase

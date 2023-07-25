@@ -338,10 +338,10 @@ class CfgVehicles
 		};
 		attachments[]=
 		{
-			"carman1",
-			"BPAxe",
-			"Belt_Back",
-			"carman2"
+      "Shoulder"
+			"Chemlight",
+			"WalkieTalkie",
+      "Knife",
 		};
     hiddenSelections[]=
 		{
@@ -401,6 +401,13 @@ class CfgVehicles
 		repairableWithKits[]={5,2};
 		repairCosts[]={30,25};
 		itemSize[]={5,6};
+    attachments[]=
+		{
+      "Shoulder"
+			"Chemlight",
+			"WalkieTalkie",
+      "Knife",
+		};
     inventorySlot[]=
 		{
 			"Back"

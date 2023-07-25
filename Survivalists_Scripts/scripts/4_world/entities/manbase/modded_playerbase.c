@@ -14,6 +14,7 @@ modded class PlayerBase
   protected bool m_HeavyItemInHandsSprintDisable = false;
   protected bool m_HeavyItemEquippedSprintDisable = false;
   protected bool m_IsPlayerMutant = false;
+  protected bool m_IsPlayerCyborg = false;
   protected bool m_CanYieldSkinnedProducts = true;
   bool m_IsSoftSurrendered = false;
 
@@ -244,6 +245,14 @@ modded class PlayerBase
       return true;
     }
     return false;
+  }
+  void SetIsPlayerCyborg(bool isCyborg)
+  {
+    m_IsPlayerCyborg = isCyborg;
+  }
+  bool IsPlayerCyborg()
+  {
+    return m_IsPlayerCyborg;
   }
   void ModifyContaminationProtection(float amount)
   {

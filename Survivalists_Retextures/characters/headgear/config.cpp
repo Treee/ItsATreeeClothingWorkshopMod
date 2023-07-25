@@ -337,6 +337,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\baseballcapii_navy_oregonpolice_co.paa"
 		};
 	};
+  class BaseballCap_BlackRanger: BaseballCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_baseballcapii_black_ranger_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_baseballcapii_black_ranger_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_baseballcapii_black_ranger_co.paa"
+		};
+	};
 
 	class BeanieHat_MTP: BeanieHat_ColorBase
 	{

@@ -1100,6 +1100,22 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\PressVest58_co.paa"
 		};
 	};
+  class PressVest_NoLetters: PressVest_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest_blue_noletters_co.paa",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest_blue_noletters_co.paa",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest_blue_noletters_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\srp_pressvest.rvmat"
+		};
+	};
   class UKAssVest_White: UKAssVest_ColorBase
 	{
 		scope=2;
@@ -1175,6 +1191,22 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\vests\data\fbi_policevest_co.paa",
 			"Survivalists_Retextures\characters\vests\data\fbi_policevest_co.paa",
 			"Survivalists_Retextures\characters\vests\data\fbi_policevest_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\policevest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\policevest.rvmat",
+			"Survivalists_Retextures\characters\vests\data\policevest.rvmat"
+		};
+	};
+  class PoliceVest_NoLetters: PoliceVest
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\vests\data\srp_policevest_noletters_co.paa",
+			"Survivalists_Retextures\characters\vests\data\srp_policevest_noletters_co.paa",
+			"Survivalists_Retextures\characters\vests\data\srp_policevest_noletters_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{

@@ -54,10 +54,10 @@ modded class ActionSkinning
 
       CreateSkeletalBone(body.GetPosition());
 
-      // if (body.IsPlayerCyborg())
-      // {
-      //   CreateMetalWires(body.GetPosition());
-      // }
+      if (body.IsPlayerCyborg())
+      {
+        CreateMetalWires(body.GetPosition());
+      }
     }
     super.OnFinishProgressServer(action_data);
   }

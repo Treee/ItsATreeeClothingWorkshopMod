@@ -25,6 +25,8 @@ class CfgVehicles
   class DUB_Flagframe;
   class DUB_Gunframe;
   class DUB_Meleeframe;
+
+  class SRP_Wardrobe_ColorBase;
   
   class Bear_Blue: Bear_ColorBase
 	{
@@ -816,6 +818,121 @@ class CfgVehicles
     {
       "Survivalists_Retextures\gear\containers\data\srp_locker_military_tan_co.paa"
     };
+  };
+
+  class SRP_Wardrobe_Ammo: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_Ammunition_CO.paa"};
+  };
+  class SRP_Wardrobe_Apparel: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_Apparel_CO.paa"};
+  };
+  class SRP_Wardrobe_BlueDoor: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_BlueDoor_CO.paa"};
+  };
+  class SRP_Wardrobe_CyanDoor: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_CyanDoor_CO.paa"};
+  };
+  class SRP_Wardrobe_DarkWood: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_DarkWood_CO.paa"};
+  };
+  class SRP_Wardrobe_Espen: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_ESPEN_CO.paa"};
+  };
+  class SRP_Wardrobe_Food: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_Food_CO.paa"};
+  };
+  class SRP_Wardrobe_GreenDoor: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_GreenDoor_CO.paa"};
+  };
+  class SRP_Wardrobe_Guns: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_Guns_CO.paa"};
+  };
+  class SRP_Wardrobe_LockNSons: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_L&S_CO.paa"};
+  };
+  class SRP_Wardrobe_Medical: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_Medical_CO.paa"};
+  };
+  class SRP_Wardrobe_PaleWood: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_PaleWood_CO.paa"};
+  };
+  class SRP_Wardrobe_PinkDoor: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_PinkDoor_CO.paa"};
+  };
+  class SRP_Wardrobe_PurpleDoor: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_PurpleDoor_CO.paa"};
+  };
+  class SRP_Wardrobe_RedDoor: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_RedDoor_CO.paa"};
+  };
+  class SRP_Wardrobe_Stag: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_STAG_CO.paa"};
+  };
+  class SRP_Wardrobe_Tools: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_Tools_CO.paa"};
+  };
+  class SRP_Wardrobe_Valuables: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_Valuables_CO.paa"};
+  };
+  class SRP_Wardrobe_YellowDoor: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_Wardrobe_YellowDoor_CO.paa"};
   };
 
   // ========================================== PORTRAIT ORIENTATION

@@ -5,6 +5,7 @@ modded class ItemBase
   protected ref array<string> m_DyableColorVariants;
   protected bool m_ItemHasBioImmunity;
   protected bool m_IsMutantIdentifierItem;
+  protected bool m_IsCyborgIdentifierItem;
 
   override void InitItemVariables()
 	{
@@ -30,6 +31,10 @@ modded class ItemBase
       {
         player.SetIsPlayerMutant(true);
       }
+      if (IsCyborgIdentifier()) 
+      {
+        player.SetIsPlayerCyborg(true);
+      }
     }
 	}
 	override void OnWasDetached( EntityAI parent, int slot_id )
@@ -50,6 +55,10 @@ modded class ItemBase
       if (IsMutantIdentifier()) 
       {
         player.SetIsPlayerMutant(false);
+      }
+      if (IsCyborgIdentifier()) 
+      {
+        player.SetIsPlayerCyborg(false);
       }
     }
 	}
@@ -176,6 +185,7 @@ modded class ItemBase
     InitializeColorVariants();
     InitializeBioImmunityVariables();
     InitializeMutantVariables();
+    InitializeCyborgVariables();
   }
 //===================================== HELPERS
   bool IsPistolMagazine() // for pistol mag pouches
@@ -424,6 +434,14 @@ modded class ItemBase
   bool IsMutantIdentifier()
   {
     return m_IsMutantIdentifierItem;
+  }
+  void InitializeCyborgVariables()
+  {
+		m_IsCyborgIdentifierItem = ConfigGetBool("IsCyborg");
+  }
+  bool IsCyborgIdentifier()
+  {
+    return m_IsCyborgIdentifierItem;
   }
   bool HasAlcoholEffect()
   {
