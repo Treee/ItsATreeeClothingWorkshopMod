@@ -137,42 +137,28 @@ class SRP_FridgeMinsk_Medical extends SRP_FridgeMinsk{};
 
 class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
 {
-  protected float m_CollectionLifespan;
+  protected const int HERB_DRYING_INTERVAL = 10000; // 10seconds
   // protected const int HERB_DRYING_TIME = 1;
   protected const int HERB_DRYING_TIME = 45;
   protected const float HERB_DRYING_AMOUNT = 10.6; // controls for 10ish minutes of drying
 
   void SRP_FridgeRetro_HerbRack()
   {
-    SetEventMask(EntityEvent.POSTSIMULATE);
+    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(DryHerbs, HERB_DRYING_INTERVAL, false);
   }
-  override void EOnPostSimulate(IEntity other, float timeSlice)
-	{
-    if (!GetGame().IsDedicatedServer())
-      return;
-    if (m_CollectionLifespan > 10) // wait 10 seconds before doing things 
-    {
-      DryHerbs();
-      m_CollectionLifespan = 0;
-    }
-    m_CollectionLifespan += timeSlice;
-	}
+
   override bool CanReceiveItemIntoCargo (EntityAI item)
 	{
     SRP_PlantHerbEdible_Colorbase herb;
     if (Class.CastTo(herb, item))
-    {
       return true;
-    }
 		return false;
 	}
   override bool CanLoadItemIntoCargo( EntityAI item )
   {
 		SRP_PlantHerbEdible_Colorbase herb;
     if (Class.CastTo(herb, item))
-    {
       return true;
-    }
 		return false;
   }
 
@@ -201,5 +187,7 @@ class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
         }  
       }
     }
+    // continue the loop
+    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(DryHerbs, HERB_DRYING_INTERVAL, false);
   }
 };
