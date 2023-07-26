@@ -13,7 +13,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItems.Insert(Register_WoodenShelf_IntermediateKit_Recipe());
     craftableItems.Insert(Register_WoodenDisplay_IntermediateKit_Recipe());
     craftableItems.Insert(Register_WoodenDresserKit_Recipe());
-    craftableItems.Insert(Register_WoodenDresserKit_Recipe());
+    craftableItems.Insert(Register_WoodenWardrobeKit_Recipe());
     craftableItems.Insert(Register_WoodenBarricade_IntermediateKit_Recipe());
     craftableItems.Insert(Register_WoodenScaffolding_IntermediateKit_Recipe());
     craftableItems.Insert(Register_WoodenFurniture_IntermediateKit_Recipe());
@@ -321,7 +321,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
-  SRP_CraftableItem Register_WoodenDresserKit_Recipe()
+  SRP_CraftableItem Register_WoodenWardrobeKit_Recipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Wardrobe_Default_Kit", "Wardrobe Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
