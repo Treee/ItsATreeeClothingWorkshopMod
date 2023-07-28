@@ -705,6 +705,16 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
+  class SRP_PatchFlag_CanadaFrench: SRP_PatchFlag_ColorBase
+	{
+		scope=2;
+		displayName="Country Flag - French Canada";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\flag\srp_canadafrench_co.paa",
+			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+		};
+	};
 	class SRP_PatchFlag_CapeVerde: SRP_PatchFlag_ColorBase
 	{
 		scope=2;

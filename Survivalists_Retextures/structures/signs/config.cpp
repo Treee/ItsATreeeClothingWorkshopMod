@@ -303,4 +303,12 @@ class CfgVehicles
       "Survivalists_Retextures\structures\signs\data\srp_pictureframe_co.paa"
     };
   };
+  class SRP_PictureFrame_ChasseGalerie: SRP_PictureFrame
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\structures\signs\data\srp_rankmath_pictureframe_co.paa"
+    };
+  };
 };

@@ -371,7 +371,8 @@ modded class MiscGameplayFunctions
 		 "DUB_Rapier",
 		 "DUB_Compressor",
 		 "SRP_BrownBottle",
-		 "DUB_BlunderPistol"
+		 "DUB_BlunderPistol",
+     "SRP_PictureFrame_ChasseGalerie"
     };
   }
 

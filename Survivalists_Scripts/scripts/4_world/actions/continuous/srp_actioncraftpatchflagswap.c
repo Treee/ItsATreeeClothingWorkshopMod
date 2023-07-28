@@ -117,6 +117,7 @@ class ActionSwitchPatchFlagOption extends ActionSRPVariantIdOption
       "Cambodia",
       "Cameroon",
       "Canada",
+      "CanadaFrench",
       "CapeVerde",
       "CaymanIslands",
       "Chad",
