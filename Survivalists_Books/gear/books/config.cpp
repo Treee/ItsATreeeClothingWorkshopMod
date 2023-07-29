@@ -529,6 +529,34 @@ class CfgVehicles
     };
   };
 
+
+  class SRP_ReadableBook_FoolsGuideToMedicine: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Fools Guide To Medicine";
+    author="Jackson Veliks";
+		file="Survivalists_Books\gear\books\data\book_idiotsguidetomedicine.html";		
+    displayName="The Fools Guide To Medicine";
+    descriptionShort="A guide meant for any and all levels of understanding.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_idiotsguidetomedicine_co.paa"
+    };
+  };
+  class SRP_ReadableBook_CompendiumOfArtefacts: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Compendium Of Artefacts";
+    author="Gaius Rusticus";
+		file="Survivalists_Books\gear\books\data\book_CompendiumOfArtefacts.html";		
+    displayName="Compendium of the Artefacts";
+    descriptionShort="A compendium on the mysterious artefacts.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_CompendiumOfArtefacts_co.paa"
+    };
+  };
+
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
 	{
