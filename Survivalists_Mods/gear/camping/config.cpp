@@ -1441,7 +1441,7 @@ class CfgVehicles
 		displayName="Wooden Plate";
 		descriptionShort="It may seem strange, but eating from a plate is much more convenient and more hygienic than from the floor.";
 		model="Survivalists_Mods\gear\camping\plate.p3d";
-		inventorySlot[]={"BPCookingEquip"};
+		inventorySlot[]={"SmokingA"};
 		weight=250;
 		itemSize[]={3,1};
 		absorbency=0.30000001;
@@ -1449,9 +1449,9 @@ class CfgVehicles
 		allowOwnedCargoManipulation=1;
 		attachments[]=
 		{
-			"Ingredient",
-			"Ingredient1",
 			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
 		};
 		class GUIInventoryAttachmentsProps
 		{

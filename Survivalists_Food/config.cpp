@@ -301,69 +301,550 @@ class CfgVehicles
   class NotCookable;
 	class Edible_Base;
 
-	class Honey;
 	class Chips;
-  class TunaCan;
-  class TunaCan_Opened;
-  class PowderedMilk;
-  class Snack_ColorBase;
-	class Zagorky_ColorBase;
 
 //================================== BASE GAME OVERRIDES
   class BoxCerealCrunchin: Edible_Base
   {
     canBeSplit=1;
     itemSize[]={2,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class PowderedMilk: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class SmallGuts: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class Guts: Edible_Base
   {
     canBeSplit=1;
     itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class Rice: Edible_Base
   {
     canBeSplit=1;
     itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Marmalade: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Honey: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Zagorky_ColorBase: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Snack_ColorBase: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class BakedBeansCan: Edible_Base
   {
     itemSize[]={1,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class BakedBeansCan_Opened: Edible_Base
   {
     itemSize[]={1,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class PeachesCan: Edible_Base
   {
     itemSize[]={1,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class PeachesCan_Opened: Edible_Base
   {
     itemSize[]={1,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class TacticalBaconCan: Edible_Base
   {
     itemSize[]={1,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class TacticalBaconCan_Opened: Edible_Base
   {
     itemSize[]={1,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class SpaghettiCan: Edible_Base
   {
     itemSize[]={1,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class SpaghettiCan_Opened: Edible_Base
   {
     itemSize[]={1,2};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class SardinesCan: Edible_Base
   {
     itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class SardinesCan_Opened: Edible_Base
   {
     itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class TunaCan: Edible_Base
+  {
+    itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class TunaCan_Opened: Edible_Base
+  {
+    itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class FoodCan_250g_ColorBase: Edible_Base
+  {
+    itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class FoodCan_250g_Opened_ColorBase: Edible_Base
+  {
+    itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class UnknownFoodCan: Edible_Base
+  {
+    itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class UnknownFoodCan_Opened: Edible_Base
+  {
+    itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class FoodCan_100g_ColorBase: Edible_Base
+  {
+    itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class FoodCan_100g_Opened_ColorBase: Edible_Base
+  {
+    itemSize[]={2,1};
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Apple: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Plum: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Pear: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Banana: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Orange: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class SlicedPumpkin: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Potato: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Kiwi: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class SambucusBerry: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class CaninaBerry: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class Lard: Edible_Base
 	{
@@ -1200,18 +1681,62 @@ class CfgVehicles
   class Tomato: Edible_Base
   {
 		containsSeedsQuantity="0";
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
 	class GreenBellPepper: Edible_Base
 	{
 		containsSeedsQuantity="0";
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class Zucchini: Edible_Base
 	{
 		containsSeedsQuantity="0";
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class Pumpkin: Edible_Base
 	{
 		containsSeedsQuantity="0";
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
   };
   class Worm: Edible_Base
 	{
@@ -1221,6 +1746,17 @@ class CfgVehicles
 		varQuantityMax=99;
 		varQuantityDestroyOnMin=1;
 		varStackMax=1;
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
 		class AnimationSources: FoodAnimationSources
 		{
 		};
@@ -1240,6 +1776,104 @@ class CfgVehicles
 			};
 		};
 	};
+  class Bitterlings: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Carp: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Sardines: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class Mackerel: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class DeadChicken_ColorBase: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class DeadRabbit: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
+  class MushroomBase: Edible_Base
+  {
+    inventorySlot[]+=
+    {
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+    };
+  };
 
 //================================== CUSTOM STUFF
   class SRP_CandyCane: Worm
@@ -1309,7 +1943,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=110;
 		itemSize[]={2,1};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD", "Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};      
 		isMeleeWeapon=1;
 		class MeleeModes
 		{
@@ -1426,6 +2060,7 @@ class CfgVehicles
 		descriptionShort="It's a donut. How is this thing not stale yet? Oh well.";
 		model="Survivalists_Food\food\donut.p3d";
 		itemSize[]={2,2};
+    inventorySlot[]+={"Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		varQuantityInit=100;
 		varQuantityMin=0;
 		varQuantityMax=100;
@@ -1487,7 +2122,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=200;
 		itemSize[]={2,3};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC"};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		hiddenSelections[]={"cs_raw"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\flatbread_raw_co.paa","Survivalists_Food\food\data\flatbread_baked_co.paa","Survivalists_Food\food\data\flatbread_burnt_co.paa"};
 		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\flatbread.rvmat"};
@@ -1591,7 +2226,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=200;
 		itemSize[]={2,3};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC"};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		hiddenSelections[]={"cs_raw"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\loafbread_raw_co.paa","Survivalists_Food\food\data\loafbread_baked_co.paa","Survivalists_Food\food\data\loafbread_burnt_co.paa"};
 		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\loafbread.rvmat"};
@@ -1695,7 +2330,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=200;
 		itemSize[]={2,3};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC"};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		hiddenSelections[]={"cs_raw"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\rounddough_raw_co.paa","Survivalists_Food\food\data\rounddough_baked_co.paa","Survivalists_Food\food\data\rounddough_burnt_co.paa","Survivalists_Food\food\data\rounddough_rotten_co.paa"};
 		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\rounddough.rvmat"};
@@ -1798,7 +2433,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=200;
 		itemSize[]={2,1};
-		inventorySlot[]={};
+		inventorySlot[]+={"Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		isMeleeWeapon=1;
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\SRPHotdog_co.paa"};
@@ -1904,7 +2539,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=110;
 		itemSize[]={2,1};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD","Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		hiddenSelections[]={"cs_raw"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\sausage_raw_co.paa","Survivalists_Food\food\data\sausage_baked_co.paa","Survivalists_Food\food\data\sausage_boiled_co.paa","Survivalists_Food\food\data\sausage_dried_co.paa","Survivalists_Food\food\data\sausage_burnt_co.paa","Survivalists_Food\food\data\sausage_rotten_co.paa"};
 		hiddenSelectionsMaterials[]={"Survivalists_Food\food\data\sausage.rvmat"};
@@ -2009,7 +2644,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=110;
 		itemSize[]={2,1};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD","Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		isMeleeWeapon=1;
 		class MeleeModes
 		{
@@ -2158,7 +2793,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=300;
 		itemSize[]={2,3};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD","Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		hiddenSelections[]={"bowl","zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_Food\food\data\stewbowloutside_co.paa","Survivalists_Food\food\data\srpStewMeat_co.paa"};
 		class AnimationSources: FoodAnimationSources{};
@@ -2266,7 +2901,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=75;
 		itemSize[]={2,1};
-		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
+		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD","Ingredient1","Ingredient2","Ingredient3","Ingredient4","Ingredient5","Ingredient6","Ingredient7","Ingredient8"};
 		isMeleeWeapon=1;
 		hiddenSelections[]={"cs_raw"};
 		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\sushi_raw_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_raw_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa","Survivalists_Food\food\data\sushi_burnt_co.paa"};

@@ -3551,6 +3551,25 @@ class CfgNonAIVehicles
 		inventorySlot[]={"firstaidkit"};
 		model="\DZ\gear\containers\FirstAidKit.p3d";
 	};
+  class Proxysrp_ingredient2_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"Ingredient2"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_ingredient2_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_ingredient3_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"Ingredient3"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_ingredient3_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_ingredient4_proxy: ProxyAttachment //same as p3d name
+  {
+    scope=2;
+    inventorySlot[]={"Ingredient4"}; // same as slot name 
+    model="Survivalists_Mods\proxy\srp_ingredient4_proxy.p3d"; //proxy path 
+  };
+
 //===================== dye/alchemy
   class Proxysrp_dyebottle1_proxy: ProxyAttachment //same as p3d name
   {
