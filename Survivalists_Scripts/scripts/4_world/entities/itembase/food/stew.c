@@ -24,4 +24,12 @@ class srpStew_Base extends Edible_Base
 		AddAction(ActionForceFeed);
 		AddAction(ActionEatMeat);
 	}
-}
+};
+
+class srpStew_Meat extends srpStew_Base{};
+class srpStew_Mix extends srpStew_Base{};
+class srpStew_Veggie extends srpStew_Base{};
+class srpStew_ApplePie extends srpStew_Base{};
+class srpStew_MacNCheese extends srpStew_Base{};
+class srpStew_Popcorn extends srpStew_Base{};
+class srpStew_RiceSalad extends srpStew_Base{};

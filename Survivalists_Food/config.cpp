@@ -2150,6 +2150,7 @@ class CfgVehicles
     scope=0;
 		model="Survivalists_Food\food\SrpStewBowl.p3d";
 		weight=0;
+    weightPerQuantityUnit="2.5";
 		canBeSplit=1;
 		interactionWeight=1;
 		quantityBar=0;
@@ -2158,8 +2159,8 @@ class CfgVehicles
 		varQuantityMax=300;
 		itemSize[]={2,3};
 		inventorySlot[]={"Ingredient","DirectCookingA","DirectCookingB","DirectCookingC","SmokingA","SmokingB","SmokingC","SmokingD"};
-		hiddenSelections[]={"zbytek"};
-    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMeat_co.paa"};
+		hiddenSelections[]={"bowl","zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\stewbowloutside_co.paa","Survivalists_Food\food\data\srpStewMeat_co.paa"};
 		class AnimationSources: FoodAnimationSources{};
 		class Food
 		{
@@ -2251,30 +2252,6 @@ class CfgVehicles
 				};
 			};
 		};
-	};
-	class srpStew_Meat: srpStew_Base
-	{
-		scope=2;
-		displayName="Meat Stew";
-		descriptionShort="A hearty stew made of various meats.";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMeat_co.paa"};
-	};
-	class srpStew_Mix: srpStew_Base
-	{
-		scope=2;
-		displayName="Mixed Stew";
-		descriptionShort="A hearty stew made of various veggies and meats.";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewMix_co.paa"};
-	};
-	class srpStew_Veggie: srpStew_Base
-	{
-		scope=2;
-		displayName="Vegetable Stew";
-		descriptionShort="A hearty stew made of various veggies.";
-		hiddenSelections[]={"zbytek"};
-		hiddenSelectionsTextures[]={"Survivalists_Food\food\data\srpStewVeg_co.paa"};
 	};  
   class SRPsushi: Edible_Base
 	{
