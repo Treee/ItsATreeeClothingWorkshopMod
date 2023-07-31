@@ -77,6 +77,7 @@ class Craft_SRP_CraftVirusFromIchor_Pelts extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"DUB_Biowolfpelt");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquid");//add results here
 	}
@@ -96,6 +97,7 @@ class Craft_SRP_CraftVirusFromIchor_Flesh extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"DUB_FleshStrip");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquid");//add results here
 	}
@@ -115,6 +117,7 @@ class Craft_SRP_CraftVirusFromIchor_Meats extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"DUB_Mutantmeat");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquid");//add results here
 	}
@@ -229,6 +232,7 @@ class Craft_SRP_CraftVirusFromIchor_Clam extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"SRP_ClamFilletMeat");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquidClamIchor");//add results here
 	}
@@ -250,6 +254,7 @@ class Craft_SRP_CraftVirusFromIchor_Fish extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"MackerelFilletMeat");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquidFishIchor");//add results here
 	}
@@ -269,6 +274,7 @@ class Craft_SRP_CraftVirusFromIchor_BatteryAcid extends Craft_SRP_MutantLiquid_B
 		InsertIngredient(0,"CarBattery");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquidBatteryAcid");//add results here
 	}
@@ -287,6 +293,7 @@ class Craft_SRP_CraftVirusFromIchor_Iron extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"SRP_Mining_RawOre_Iron");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquidIron");//add results here
 	}
@@ -305,6 +312,7 @@ class Craft_SRP_CraftVirusFromIchor_Adrenaline extends Craft_SRP_MutantLiquid_Ba
 		InsertIngredient(0,"Epinephrine");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquidPureAdrenaline");//add results here
 	}
@@ -323,6 +331,7 @@ class Craft_SRP_CraftVirusFromIchor_Fat extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"Lard");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquidFat");//add results here
 	}
@@ -341,6 +350,7 @@ class Craft_SRP_CraftVirusFromIchor_Mint extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"Mint");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquidMint");//add results here
 	}
@@ -359,6 +369,7 @@ class Craft_SRP_CraftVirusFromIchor_Amanita extends Craft_SRP_MutantLiquid_Base
 		InsertIngredient(0,"GreenAmanita");//you can insert multiple ingredients this way
 		
     InsertIngredient(1,"DUB_MonsterclawV2");//you can insert multiple ingredients this way
+    InsertIngredient(1,"DUB_BoneScythe");//you can insert multiple ingredients this way
 		m_IngredientAddHealth[1] = -2;// 0 = do nothing
 		AddResult("SRP_LabTube_MutantLiquidAmanita");//add results here
 	}
