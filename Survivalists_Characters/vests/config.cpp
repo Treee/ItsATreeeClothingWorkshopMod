@@ -19,6 +19,7 @@ class CfgVehicles
   class Clothing;
   class Container_Base;
   class Bottle_Base;
+  class Inventory_Base;
 
 // ----------------------  BASE GAME OVERRIDES
   class PlateCarrierVest: Clothing
@@ -359,6 +360,158 @@ class CfgVehicles
       "Black"     
     };
   }; 
+  // ATTACHMENTS
+  class AlV_MV_RightShoulder_Colorbase: Inventory_Base
+  {
+    rootClassName="AlV_MV_RightShoulder";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class AlV_MV_LeftShoulder_Colorbase: Inventory_Base
+  {
+    rootClassName="AlV_MV_LeftShoulder";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_SingleMagPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_SingleMagPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_SmallPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_SmallPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_SidePouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_SidePouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_AdminPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_AdminPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_MagDumpPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_MagDumpPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_RadioPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_RadioPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class AlV_MV_SmallPatch_Colorbase: Inventory_Base
+  {
+    rootClassName="AlV_MV_SmallPatch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class AlV_MV_LargePatch_Colorbase: Inventory_Base
+  {
+    rootClassName="AlV_MV_LargePatch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class AlV_MV_GroinProtector_Colorbase: Inventory_Base
+  {
+    rootClassName="AlV_MV_GroinProtector";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_BeltPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_BeltPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_PistolDoubleMagPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_PistolDoubleMagPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_PistolMagPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_PistolMagPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_BatteryPouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_BatteryPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+
 // ----------------------  CUSTOM STUFF
   class SRP_Brewstershield: PlateCarrierVest
 	{
