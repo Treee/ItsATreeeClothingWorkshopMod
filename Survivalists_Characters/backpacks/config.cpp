@@ -338,7 +338,7 @@ class CfgVehicles
 		};
 		attachments[]=
 		{
-      "Shoulder"
+      "Shoulder",
 			"Chemlight",
 			"WalkieTalkie",
       "Knife",
@@ -403,7 +403,7 @@ class CfgVehicles
 		itemSize[]={5,6};
     attachments[]=
 		{
-      "Shoulder"
+      "Shoulder",
 			"Chemlight",
 			"WalkieTalkie",
       "Knife",

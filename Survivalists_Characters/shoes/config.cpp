@@ -11,6 +11,7 @@ class CfgPatches
       "DZ_Characters_Shoes",
       "High_Knee_Sneakers",
       "SK8_Sneakers",
+      "FlipFlops"
 		};
 	};
 };
@@ -45,6 +46,11 @@ class CfgVehicles
       "Pink",
       "Purple",    
     };
+  };
+  class FlipFlops_Colorbase: Clothing
+  {
+    itemSize[]={2,2};
+    itemsCargoSize[]={1,2};
   };
 //-------------------------------------BASE GAME OVERRIDE	
   class AthleticShoes_ColorBase: Clothing

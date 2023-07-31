@@ -12,7 +12,7 @@ class CraftBreadDough extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = 115;//-1 = disable check
+		m_MinQuantityIngredient[0] = 35;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -28,7 +28,7 @@ class CraftBreadDough extends RecipeBase
 	
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = -115;// 0 = do nothing
+		m_IngredientAddQuantity[0] = -35;// 0 = do nothing
 		m_IngredientDestroy[0] = -1;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -37,7 +37,7 @@ class CraftBreadDough extends RecipeBase
 		
 		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -75;// 0 = do nothing
+		m_IngredientAddQuantity[1] = -50;// 0 = do nothing
 		m_IngredientDestroy[1] = -1;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ class CraftBreadDough_Loaf extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = 150;//-1 = disable check
+		m_MinQuantityIngredient[0] = 50;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -86,7 +86,7 @@ class CraftBreadDough_Loaf extends RecipeBase
 	
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = -150;// 0 = do nothing
+		m_IngredientAddQuantity[0] = -50;// 0 = do nothing
 		m_IngredientDestroy[0] = -1;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
@@ -128,7 +128,7 @@ class CraftBreadDough_Flatbread extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = 150;//-1 = disable check
+		m_MinQuantityIngredient[0] = 50;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -144,7 +144,7 @@ class CraftBreadDough_Flatbread extends RecipeBase
 	
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = -150;// 0 = do nothing
+		m_IngredientAddQuantity[0] = -50;// 0 = do nothing
 		m_IngredientDestroy[0] = -1;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
