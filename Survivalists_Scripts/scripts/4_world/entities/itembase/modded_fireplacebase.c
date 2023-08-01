@@ -108,6 +108,10 @@ modded class FireplaceBase
     }
     return energy;
 	}
+  bool IsHotEnough()
+  {
+    return false;
+  }
 };
 
 class SRP_FireplaceBase extends FireplaceBase
@@ -329,7 +333,7 @@ class SRP_Fireplace_Transformer extends SRP_FireplaceBase
   {
     // we are hot enough to be brewing
     // Print("Geating Event " + GetTemperature());
-    if (GetTemperature() > 999)
+    if (IsHotEnough())
     {
       if (GetHeatTimerThreshold() > -1 && GetHeatTimer() > GetHeatTimerThreshold())
       { 

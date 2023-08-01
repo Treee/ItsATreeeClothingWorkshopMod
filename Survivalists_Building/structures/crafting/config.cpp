@@ -886,4 +886,90 @@ class CfgVehicles
 		descriptionShort="A box used to dry plants prior to crushing.";
     model="Survivalists_Building\structures\crafting\srp_alchemy_drybox.p3d";
 	};
+  class SRP_PrefabCrafting_cookingcauldron: SRP_PrefabCrafting_Base
+	{
+    scope=1;
+		displayName="Cooking Cauldron";
+		descriptionShort="A large metal pot to cook stews or other foods.";
+    model="\dz\gear\cooking\cauldron.p3d";
+    varTemperatureMax=1000;
+    attachments[]=
+		{
+      "Ingredient1",
+      "Ingredient2",
+      "Ingredient3",
+      "Ingredient4",
+      "Ingredient5",
+      "Ingredient6",
+      "Ingredient7",
+      "Ingredient8",
+      "SRP_CrushedPowder1",
+      "SRP_CrushedPowder2",
+      "SRP_CrushedPowder3",
+      "SRP_FuelCoal",
+      "Firewood",
+			"WoodenStick",
+			"Rags",
+			"MedicalBandage",
+			"Paper",
+			"Bark",
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Veggies
+			{
+				name="Ingredients";
+				description="This side of the cauldron holds ingredients.";
+				attachmentSlots[]=
+				{
+          "Ingredient1",
+          "Ingredient2",
+          "Ingredient3",
+          "Ingredient4",
+				};
+				icon="set:dayz_inventory image:food";
+			};
+      class Meats
+			{
+				name="Ingredients";
+				description="This side of the cauldron holds ingredients.";
+				attachmentSlots[]=
+				{
+          "Ingredient5",
+          "Ingredient6",
+          "Ingredient7",
+          "Ingredient8",
+				};
+				icon="set:dayz_inventory image:food";
+			};
+      class Spices
+			{
+				name="Spices";
+				description="Sprinkle some herbs and spices to kick it up a notch.";
+				attachmentSlots[]=
+				{
+          "SRP_CrushedPowder1",
+          "SRP_CrushedPowder2",
+          "SRP_CrushedPowder3"
+				};
+				icon="set:dayz_inventory image:cat_bb_material";
+			};
+      class Fuel
+			{
+				name="Fuel";
+				description="Stove fuel inserted here.";
+				attachmentSlots[]=
+				{
+          "SRP_FuelCoal",
+          "Firewood",
+          "WoodenStick",
+          "Rags",
+          "MedicalBandage",
+          "Paper",
+          "Bark",
+				};
+				icon="set:dayz_inventory image:cat_fp_fuel";
+			};
+    };
+	};
 };

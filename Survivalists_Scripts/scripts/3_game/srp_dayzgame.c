@@ -7,6 +7,7 @@ modded class DayZGame
   protected ref SRP_WoodWorkbenchRecipes m_WoodWorkingRecipes;
   protected ref SRP_MetalWorkbenchRecipes m_MetalWorkingRecipes;
   protected ref SRP_AmmoRecipes m_AmmoRecipes;
+  protected ref SRP_CookingRecipes m_CookingRecipes;
   protected ref SRP_DynamicTreasureHunt m_DynamicDreasureHunt;
   protected ref SRP_AdminHelper m_AdminHelper;
   protected ref SRP_MeatFarmingBlockConfig m_MeatFarmingConfig;
@@ -23,6 +24,7 @@ modded class DayZGame
     m_WoodWorkingRecipes = new SRP_WoodWorkbenchRecipes();
     m_MetalWorkingRecipes = new SRP_MetalWorkbenchRecipes();
     m_AmmoRecipes = new SRP_AmmoRecipes();
+    m_CookingRecipes = new SRP_CookingRecipes();
     m_DynamicDreasureHunt = new SRP_DynamicTreasureHunt();
     m_MeatFarmingConfig = new SRP_MeatFarmingBlockConfig();
     m_AdminHelper = new SRP_AdminHelper();
@@ -82,6 +84,10 @@ modded class DayZGame
   SRP_AmmoRecipes GetSRPAmmoRecipesGlobal()
   {
     return m_AmmoRecipes;
+  }
+  SRP_CookingRecipes GetSRPCookingRecipesGlobal()
+  {
+    return m_CookingRecipes;
   }
   SRP_DynamicTreasureHunt GetDynamicTreasureHunt()
   {

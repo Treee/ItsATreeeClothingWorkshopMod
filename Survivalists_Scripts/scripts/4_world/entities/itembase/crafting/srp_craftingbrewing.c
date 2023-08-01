@@ -45,6 +45,10 @@ class SRP_BrewingWorkbench extends SRP_Fireplace_Transformer
   {
     return 15;
   }
+  override bool IsHotEnough()
+  {
+    return GetTemperature() > 999;
+  }
 };
 class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench
 {
