@@ -528,8 +528,6 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_alchemyhints_co.paa"
     };
   };
-
-
   class SRP_ReadableBook_FoolsGuideToMedicine: SRP_ReadableBook_Colorbase
   {
     scope=2;
@@ -554,6 +552,19 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Books\gear\books\data\book_CompendiumOfArtefacts_co.paa"
+    };
+  };
+  class SRP_ReadableBook_TheBasicGuidebook: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Basic Guidebook";
+    author="Lazarus Maximus";
+		file="Survivalists_Books\gear\books\data\book_TheBasicGuidebook.html";		
+    displayName="The Basic Guidebook";
+    descriptionShort="A basic guidebook intended to serve the average islander.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_TheBasicGuidebook_co.paa"
     };
   };
 

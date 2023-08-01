@@ -123,7 +123,10 @@ class SRP_CookingWorkbench_Base extends SRP_Fireplace_Transformer
       if (Class.CastTo(itemToYield, GetPotentialItems()))
       {
         EntityAI newItem = GetInventory().CreateInInventory(itemToYield.GetItemClassName());
-        newItem.SetQuantity(newItem.GetQuantityMax());
+        ItemBase someItem;
+        if (Class.CastTo(someItem, newItem))        
+          someItem.SetQuantityMax();
+          
         ReduceAttachments(itemToYield);
       }
     }
