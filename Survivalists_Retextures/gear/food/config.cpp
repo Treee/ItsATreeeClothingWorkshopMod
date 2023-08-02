@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Survivalists_Retextures_Gear_Patches
+	class Survivalists_Retextures_Gear_Food
 	{
 		units[]={};
 		weapons[]={};
