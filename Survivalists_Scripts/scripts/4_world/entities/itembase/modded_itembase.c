@@ -495,6 +495,10 @@ modded class ItemBase
   {
     return 0;
   }  
+  bool IsPoisoned()
+  {
+    return false;
+  }
 //====================================== CRAFTING
   bool IsAlchemyReagent()
   {

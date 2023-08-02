@@ -36,57 +36,63 @@ class srpStew_Veggie extends srpStew_Base{};
 // profession bench foods
 class srpStew_ApplePie extends srpStew_Base
 {
-  void OnConsume(float amount, PlayerBase consumer)
+  override bool HasHealthRegenEffect()
   {
-    super.OnConsume(amount, consumer);
-    if (!consumer)
-			return;
-		if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_EPINEPHRINE ) )//effectively resets the timer
-		{
-			consumer.GetModifiersManager().DeactivateModifier( eModifiers.MDF_EPINEPHRINE );
-		}
-		consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
+    return true;
   }
 };
 class srpStew_MacNCheese extends srpStew_Base
 {
-  void OnConsume(float amount, PlayerBase consumer)
+  override bool HasBloodRegenEffect()
   {
-    super.OnConsume(amount, consumer);
-    if (!consumer)
-			return;
-		if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_EPINEPHRINE ) )//effectively resets the timer
-		{
-			consumer.GetModifiersManager().DeactivateModifier( eModifiers.MDF_EPINEPHRINE );
-		}
-		consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
+    return true;
   }
+  override int GetBloodRegenEffectTotal()
+  {
+    return 2;
+  }  
 };
 class srpStew_Popcorn extends srpStew_Base
 {
-  void OnConsume(float amount, PlayerBase consumer)
+  override bool HasCharcoalEffect()
   {
-    super.OnConsume(amount, consumer);
-    if (!consumer)
-			return;
-		if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_EPINEPHRINE ) )//effectively resets the timer
-		{
-			consumer.GetModifiersManager().DeactivateModifier( eModifiers.MDF_EPINEPHRINE );
-		}
-		consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
+    return true;
   }
 };
 class srpStew_RiceSalad extends srpStew_Base
 {
-  void OnConsume(float amount, PlayerBase consumer)
+  override bool HasEpinephrineEffect()
   {
-    super.OnConsume(amount, consumer);
-    if (!consumer)
-			return;
-		if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_EPINEPHRINE ) )//effectively resets the timer
-		{
-			consumer.GetModifiersManager().DeactivateModifier( eModifiers.MDF_EPINEPHRINE );
-		}
-		consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_EPINEPHRINE );
+    return true;
+  }
+};
+
+// poisoned foods
+class srpStew_ApplePiePoisoned extends srpStew_Base
+{
+  override bool IsPoisoned()
+  {
+    return true;
+  }
+};
+class srpStew_MacNCheesePoisoned extends srpStew_Base
+{
+  override bool IsPoisoned()
+  {
+    return true;
+  }
+};
+class srpStew_PopcornPoisoned extends srpStew_Base
+{
+  override bool IsPoisoned()
+  {
+    return true;
+  }
+};
+class srpStew_RiceSaladPoisoned extends srpStew_Base
+{
+  override bool IsPoisoned()
+  {
+    return true;
   }
 };

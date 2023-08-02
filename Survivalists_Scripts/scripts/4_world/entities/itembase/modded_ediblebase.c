@@ -48,6 +48,18 @@ modded class Edible_Base
         consumer.AddHealth("","Shock", 50);
         consumer.AddHealth("","Blood", 100);
       }
-    }    
+    }
+
+    if (IsPoisoned())    
+    {
+      consumer.AddHealth("","Shock", -5);
+      consumer.AddHealth("","Blood", -10);
+      if( consumer.GetModifiersManager().IsModifierActive(eModifiers.MDF_SALMONELLA ) )//effectively resets the timer
+      {
+        consumer.GetModifiersManager().DeactivateModifier( eModifiers.MDF_SALMONELLA );
+      }
+      consumer.GetModifiersManager().ActivateModifier( eModifiers.MDF_SALMONELLA );
+    }
 	}
+
 };

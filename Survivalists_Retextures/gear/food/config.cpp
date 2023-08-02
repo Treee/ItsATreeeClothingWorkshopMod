@@ -74,4 +74,37 @@ class CfgVehicles
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\srpStewRiceSalad_co.paa"};
 	};
+
+  class srpStew_ApplePiePoisoned: srpStew_Base
+	{
+		scope=2;
+		displayName="Apple Pie";
+		descriptionShort="A delicious looking apple pie. Single serving but you know you want another one.";
+		hiddenSelections[]={"bowl","zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\stewbowlPieTin_co.paa","Survivalists_Retextures\gear\food\data\srpStewApplePie_co.paa"};
+	};
+  class srpStew_MacNCheesePoisoned: srpStew_Base
+	{
+		scope=2;
+		displayName="Mac N Cheese";
+		descriptionShort="Cheesy noodles with the right amount of goop.";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\srpStewMac_co.paa"};
+	};
+  class srpStew_PopcornPoisoned: srpStew_Base
+	{
+		scope=2;
+		displayName="Popcorn";
+		descriptionShort="A bowl of freshly made popcorn.";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\srpStewPopCorn_co.paa"};
+	};
+  class srpStew_RiceSaladPoisoned: srpStew_Base
+	{
+		scope=2;
+		displayName="Rice Salad";
+		descriptionShort="A bowl of rice salad like momma used to make.";
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\srpStewRiceSalad_co.paa"};
+	};
 };
