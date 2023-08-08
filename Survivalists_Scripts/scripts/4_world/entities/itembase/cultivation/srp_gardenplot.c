@@ -1,10 +1,13 @@
 class SRP_GardenPlotSmall_ColorBase extends GardenBase
 {
+  override void EEInit()
+	{	
+		super.EEInit();
+	}
 	override int GetGardenSlotsCount()
 	{
 		return 3;
 	}
-	
 	void RefreshSlots()
 	{
 		HideSelection("SeedBase_1");
@@ -13,16 +16,6 @@ class SRP_GardenPlotSmall_ColorBase extends GardenBase
     HideSelection("slotCovered_01");
 		HideSelection("slotCovered_02");
 		HideSelection("slotCovered_03");
-	}
-
-  override void OnPlacementStarted( Man player )
-	{
-		RefreshSlots();
-	}
-	
-	override void OnHologramBeingPlaced( Man player )
-	{
-		RefreshSlots();
 	}
   override bool CanBeDeconstructed()
   {
@@ -33,11 +26,14 @@ class SRP_GardenPlotSmall_Basic extends SRP_GardenPlotSmall_ColorBase{};
 
 class SRP_GardenPlotMedium_ColorBase extends GardenBase
 {
+  override void EEInit()
+	{	
+		super.EEInit();
+	}
   override int GetGardenSlotsCount()
 	{
 		return 6;
 	}
-	
 	void RefreshSlots()
 	{
 		HideSelection("SeedBase_1");
@@ -62,11 +58,14 @@ class SRP_GardenPlotMedium_Basic extends SRP_GardenPlotMedium_ColorBase{};
 
 class SRP_GardenPlotLarge_ColorBase extends GardenBase
 {
+  override void EEInit()
+	{	
+		super.EEInit();
+	}
   override int GetGardenSlotsCount()
 	{
 		return 12;
 	}
-	
 	void RefreshSlots()
 	{
 		HideSelection("SeedBase_1");
