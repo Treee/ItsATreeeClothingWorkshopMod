@@ -10,7 +10,7 @@ modded class BrainDiseaseMdfr
 		
 		if( m_Time >= m_ShakeTime )
 		{
-		  float brain_agents = player.GetSingleAgentCountNormalized(eAgents.BRAIN) / 8.0;
+		  float brain_agents = player.GetSingleAgentCountNormalized(eAgents.BRAIN) / 4.0;
 			DayZPlayerSyncJunctures.SendKuruRequest(player, brain_agents);
 			m_ShakeTime = m_Time + Math.RandomFloat(SHAKE_INTERVAL_MIN, SHAKE_INTERVAL_MAX);
       m_Time = 0;
