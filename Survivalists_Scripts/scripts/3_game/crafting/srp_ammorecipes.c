@@ -358,7 +358,7 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
 //===========================massive Caliber
   SRP_CraftableItem Register_AmmoCrafting_40mm_Explosive_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("40mm_Explosive", "40mm Explosive");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Ammo_40mm_Explosive", "40mm Explosive");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_CasePrep", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_AmmoPress", SRP_COLOR.NONE, 1));
   
