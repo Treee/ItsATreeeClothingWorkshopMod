@@ -86,7 +86,12 @@ modded class ItemActionsWidget
 			}
 	
 			// progressBar.Show(false);
-      float value = Math.Round((mag_quantity / mag_quantity_max) * 100);
+      float value;
+      if (mag_quantity_max == 0)
+        value = 0;
+      else
+        value = Math.Round((mag_quantity / mag_quantity_max) * 100);
+        
       progressBar.SetCurrent(value);
       progressBar.Show(true);
 			// textWidget.SetText(wpn_qty);
