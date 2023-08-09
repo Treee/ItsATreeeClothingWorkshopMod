@@ -146,9 +146,19 @@ class CfgVehicles
 		itemSize[]={1,2};
   };
   class Rag: Inventory_Base
-	{
+	{		
     itemSize[]={2,1};
-		scope=2;
+    rootClassName="Rag";
+    colorVariants[]=
+    {
+      "Black",
+      "Blue",
+      "Brown",
+      "Green",
+      "Pink",
+      "Red",
+      "Yellow",
+    };
   };
   class TannedLeather: Inventory_Base
 	{

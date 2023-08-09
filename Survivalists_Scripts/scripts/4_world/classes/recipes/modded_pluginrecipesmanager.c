@@ -315,14 +315,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_Craft_DisplayCaseHook_LeatherArmband);
       RegisterRecipe(new SRP_Craft_DisplayCaseHook_PatchArmband);
 
-      RegisterRecipe(new Craft_SRP_Rag_Bleach);	
-      RegisterRecipe(new Craft_SRP_Rag_Black);	
-      RegisterRecipe(new Craft_SRP_Rag_Blue);	
-      RegisterRecipe(new Craft_SRP_Rag_Brown);	
-      RegisterRecipe(new Craft_SRP_Rag_Green);	
-      RegisterRecipe(new Craft_SRP_Rag_Pink);	
-      RegisterRecipe(new Craft_SRP_Rag_Red);	
-      RegisterRecipe(new Craft_SRP_Rag_Yellow);
+      RegisterRecipe(new Craft_SRP_Rag_Bleach);
 
       RegisterRecipe(new SRP_RefuelGas_WithCanister);
 
