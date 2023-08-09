@@ -1,15 +1,26 @@
 class SRP_TimeBasedWorkbench_Base extends ItemBase
 {
-  protected const int HERB_DRYING_INTERVAL = 10000; // 10seconds
-  // protected const int HERB_DRYING_TIME = 1;
+  protected float m_CollectionLifespan;
+
   protected const int HERB_DRYING_TIME = 90;
   protected const float HERB_DRYING_AMOUNT = 1; // controls for 10ish minutes of drying
 
   void SRP_TimeBasedWorkbench_Base()
   {
-    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(DryHerbs, HERB_DRYING_INTERVAL, false);
+    SetEventMask(EntityEvent.POSTSIMULATE);
   }
 //================================================== EVENTS
+  override void EOnPostSimulate(IEntity other, float timeSlice)
+	{
+    if (!GetGame().IsDedicatedServer())
+      return;
+    if (m_CollectionLifespan > 10) // wait 10 seconds before doing things 
+    {
+      DryHerbs();
+      m_CollectionLifespan = 0;
+    }
+    m_CollectionLifespan += timeSlice;
+	}
   override bool CanPutInCargo( EntityAI parent )
 	{
     return false;
@@ -58,8 +69,6 @@ class SRP_TimeBasedWorkbench_Base extends ItemBase
         }  
       }
     }
-    // continue the loop
-    GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(DryHerbs, HERB_DRYING_INTERVAL, false);
   }
 };
 
