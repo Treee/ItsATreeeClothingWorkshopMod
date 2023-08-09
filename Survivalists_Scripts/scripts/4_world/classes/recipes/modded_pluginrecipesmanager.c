@@ -324,10 +324,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_Rag_Red);	
       RegisterRecipe(new Craft_SRP_Rag_Yellow);
 
-      RegisterRecipe(new SRP_RefuelGas_SmallGasCanister);
-      RegisterRecipe(new SRP_RefuelGas_MediumGasCanister);
-      RegisterRecipe(new SRP_RefuelGas_LargeGasCanister);
-      RegisterRecipe(new SRP_RefuelGas_PetrolLighter);
+      RegisterRecipe(new SRP_RefuelGas_WithCanister);
 
       RegisterRecipe(new Craft_SRP_MintedCoin_Platinum);	
       RegisterRecipe(new Craft_SRP_MintedCoin_Iron);	
