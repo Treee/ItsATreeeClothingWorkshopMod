@@ -21,7 +21,7 @@ class CfgVehicles
   class PlateCarrierPouches;
   class SRP_KitBase;
   
-  //-------------------------------------- BASE GAME OVERRIDE
+//-------------------------------------- BASE GAME OVERRIDE
   class FirstAidKit: Container_Base
 	{
     itemSize[]={4,4};

@@ -123,79 +123,6 @@ class SRP_WornWorkbench_Metal extends SRP_DeployableContainer_Base
   }
 };
 
-class SRP_Furniture_SmallLogPile extends SRP_DeployableContainer_Base
-{
-  override bool CanReceiveItemIntoCargo(EntityAI item)
-	{
-    return false;
-  }
-
-  override bool CanPutIntoHands (EntityAI parent)
-  {
-    return GetInventory().AttachmentCount() == 0;
-  }
-
-  override bool CanReceiveAttachment(EntityAI attachment, int slotId)
-	{
-		if ( !GetGame().IsMultiplayer() || GetGame().IsClient() )
-		{
-			PlayerBase player = PlayerBase.Cast( GetGame().GetPlayer() );
-			if ( player )
-			{
-				ItemBase itemInHands = player.GetItemInHands();
-        if (itemInHands.GetType() == "SRP_Furniture_SmallLogPile")
-        {
-          return false;
-        }
-			}
-		}
-		return super.CanReceiveAttachment(attachment, slotId);
-	}
-
-  override void SetActions()
-	{
-		super.SetActions();
-		AddAction(ActionTogglePlaceObject);
-		AddAction(ActionPlaceObject);
-	}
-}
-
-class SRP_Furniture_LargeLogPile extends SRP_DeployableContainer_Base
-{
-  override bool CanReceiveItemIntoCargo(EntityAI item)
-	{
-    return false;
-  }
-
-  override bool CanPutIntoHands (EntityAI parent)
-  {
-    return GetInventory().AttachmentCount() == 0;
-  }
-
-  override bool CanReceiveAttachment(EntityAI attachment, int slotId)
-	{
-		if ( !GetGame().IsMultiplayer() || GetGame().IsClient() )
-		{
-			PlayerBase player = PlayerBase.Cast( GetGame().GetPlayer() );
-			if ( player )
-			{
-				ItemBase itemInHands = player.GetItemInHands();
-        if (itemInHands.GetType() == "SRP_Furniture_LargeLogPile")
-        {
-          return false;
-        }
-			}
-		}
-		return super.CanReceiveAttachment(attachment, slotId);
-	}
-  
-  override void SetActions()
-	{
-		super.SetActions();
-		AddAction(ActionTogglePlaceObject);
-		AddAction(ActionPlaceObject);
-	}
-}
 
 class SRP_SentientCrystal_ColorBase extends SRP_DeployableContainer_Base
 {
@@ -275,52 +202,6 @@ class SRP_TetrisShelfTVertical extends SRP_TetrisShelf_ColorBase{};
 class SRP_TetrisShelfSHorizontal extends SRP_TetrisShelf_ColorBase{};
 class SRP_TetrisShelfSVertical extends SRP_TetrisShelf_ColorBase{};
 class SRP_TetrisShelfBox extends SRP_TetrisShelf_ColorBase{};
-
-class SRP_Furniture_LogStump extends SRP_DeployableContainer_Base
-{
-  override bool CanBeDeconstructed()
-  {
-    return true;
-  }
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_Furniture_LogBenchSmall extends SRP_DeployableContainer_Base
-{
-  override bool CanBeDeconstructed()
-  {
-    return true;
-  }
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_Furniture_WoodBenchSmall extends SRP_DeployableContainer_Base
-{
-  override bool CanBeDeconstructed()
-  {
-    return true;
-  }
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_Furniture_WoodBenchSlim extends SRP_DeployableContainer_Base
-{
-  override bool CanBeDeconstructed()
-  {
-    return true;
-  }
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_Furniture_PileOfPlanks extends SRP_DeployableContainer_Base{};
 
 class SRP_GarbageBin_ColorBase extends SRP_DeployableContainer_Base
 {
@@ -504,14 +385,6 @@ class SRP_MedicalBedSmall_Wood extends SRP_Container_Base
     return "SRP_WoodenFurnitureKit_Kit";
   }
 };
-class SRP_WoodenBench extends SRP_Container_Base
-{
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-
 class SRP_SleepingBag_ColorBase extends SRP_Container_Base{};
 class SRP_SleepingBag_Basic extends SRP_SleepingBag_ColorBase{};
 
@@ -598,18 +471,6 @@ class SRP_MetalShelfGroundXL extends SRP_Container_Base
 };
 
 //======================================================= Wooden Furniture Kits
-class SRP_Furniture_WoodenTable extends SRP_Container_Base
-{
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_GChair extends SRP_Container_Base{};
-class SRP_GChairHigh extends SRP_Container_Base{};
-class SRP_GOutdoorTable extends SRP_Container_Base{};
-class SRP_GOutdoorTableUmbrella extends SRP_Container_Base{};
-class SRP_Umbrella extends SRP_Container_Base{};
 class SRP_ShootingTarget extends SRP_Container_Base{};
 class SRP_ShootingTargets extends SRP_Container_Base{};
 
@@ -784,58 +645,6 @@ class SRP_SpikeBarricade_Wood extends SRP_Container_Base
     return "SRP_BarricadeKit_Kit";
   }
 };
-class SRP_BarricadeMetal extends SRP_Container_Base
-{
-  override bool DisableVicinityIcon()
-	{
-		return true;
-	}
-  override string GetCraftingKitName()
-  {
-    return "SRP_BarricadeKit_Kit";
-  }
-};
-class SRP_Furniture_WitchTable extends SRP_Container_Base
-{
-  override bool DisableVicinityIcon()
-	{
-		return true;
-	}
-};
-
-class SRP_Furniture_Barrel extends SRP_Container_Base
-{
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_Furniture_BarrelTable extends SRP_Container_Base
-{
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_Furniture_Sofa extends SRP_Container_Base{};
-class SRP_Furniture_Sofa_Modern extends SRP_Container_Base
-{
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_Furniture_Sofa_Old extends SRP_Container_Base
-{
-  override string GetCraftingKitName()
-  {
-    return "SRP_WoodenFurnitureKit_Kit";
-  }
-};
-class SRP_Furniture_BarCounter extends SRP_Container_Base{};
-class SRP_Furniture_OldWoodenChair extends SRP_Container_Base{};
-class SRP_Furniture_WoodenChair extends SRP_Container_Base{};
-class SRP_Furniture_WoodenStairs extends SRP_Container_Base{};
 
 // These need to be deleted by an admin after placement.
 class SRP_ForestSign_Original extends SRP_Container_Base{};

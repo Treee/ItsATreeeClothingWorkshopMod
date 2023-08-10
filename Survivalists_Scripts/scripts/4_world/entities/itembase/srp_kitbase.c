@@ -88,23 +88,6 @@ class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Kit extends SRP_KitBase{};
 class SRP_StreetLightSlim_Kit extends SRP_KitBase{};
 
-class SRP_Furniture_BarrelTable_Kit extends SRP_KitBase{};
-class SRP_Furniture_Barrel_Kit extends SRP_KitBase{};
-class SRP_Furniture_Sofa_Kit extends SRP_KitBase{};
-class SRP_Furniture_Sofa_Modern_Kit extends SRP_KitBase{};
-class SRP_Furniture_Sofa_Old_Kit extends SRP_KitBase{};
-class SRP_Furniture_BarCounter_Kit extends SRP_KitBase{};
-class SRP_Furniture_OldWoodenChair_Kit extends SRP_KitBase{};
-class SRP_Furniture_WoodenChair_Kit extends SRP_KitBase{};
-class SRP_Furniture_WoodenStairs_Kit extends SRP_KitBase{};
-class SRP_WoodenBench_Kit extends SRP_KitBase{};
-class SRP_Furniture_Gazebo_Kit extends SRP_KitBase{};
-
-class SRP_Furniture_LogStump_Kit extends SRP_KitBase{};
-class SRP_Furniture_LogBenchSmall_Kit extends SRP_KitBase{};
-class SRP_Furniture_WoodBenchSmall_Kit extends SRP_KitBase{};
-class SRP_Furniture_WoodBenchSlim_Kit extends SRP_KitBase{};
-
 class SRP_BuildingComponentFrame_WornRamp_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_WornLPlatform_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_WornUPlatform_Kit extends SRP_KitBase{};
@@ -123,8 +106,6 @@ class SRP_BuildingComponentFrame_FineSinglePlatform_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_FineDoublePlatform_Kit extends SRP_KitBase{};
 class SRP_BuildingComponentFrame_FineLongDoublePlatform_Kit extends SRP_KitBase{};
 
-
-class SRP_Furniture_WoodenTable_Kit extends SRP_KitBase{};
 class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
 
 class SRP_MetalBox_Kit extends SRP_KitBase{};
@@ -170,13 +151,7 @@ class SRP_MilitaryCaseLarge_Kit extends SRP_KitBase{};
 class SRP_MilitaryCaseLongBlue_Kit extends SRP_KitBase{};
 class SRP_MilitaryCaseLongTan_Kit extends SRP_KitBase{};
 
-class SRP_GChair_Kit extends SRP_KitBase{};
-class SRP_GChairHigh_Kit extends SRP_KitBase{};
-class SRP_GOutdoorTable_Kit extends SRP_KitBase{};
-class SRP_GOutdoorTableUmbrella_Kit extends SRP_KitBase{};
-class SRP_Umbrella_Kit extends SRP_KitBase{};
 class SRP_MedicalCurtains_Kit extends SRP_KitBase{};
-class SRP_BarricadeMetal_Kit extends SRP_KitBase{};
 class SRP_SewingTable_Kit extends SRP_KitBase{};
 class SRP_LatheWorkbench_Kit extends SRP_KitBase{};
 class SRP_WornWorkbench_Kit extends SRP_KitBase{};
