@@ -4,19 +4,6 @@ class SRP_Bowl_Wood extends Inventory_Base
   {
     return true;
   }
-    
-  override bool IsDeployable() 
-  {
-    return true;
-  }        
-	
-	override void SetActions()
-  {
-    super.SetActions();
-    
-    AddAction(ActionTogglePlaceObject);
-    AddAction(ActionPlaceObject);
-  }
 };
 
 class SRP_Bowl_CherryWood extends SRP_Bowl_Wood {};

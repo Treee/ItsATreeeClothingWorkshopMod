@@ -1461,9 +1461,9 @@ class CfgVehicles
 				description="";
 				attachmentSlots[]=
 				{
-					"Ingredient1",
 					"Ingredient2",
-					"Ingredient"
+					"Ingredient3",
+					"Ingredient4"
 				};
 				icon="food";
 			};

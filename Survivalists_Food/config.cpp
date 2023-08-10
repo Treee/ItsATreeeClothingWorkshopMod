@@ -962,6 +962,466 @@ class CfgVehicles
 			};
 		};
 	};
+  class HumanSteakMeat: Edible_Base
+	{
+		scope=2;
+		displayName="Steak";
+		descriptionShort="A weird smelling meat";
+		model="\dz\gear\food\meat_steak.p3d";
+		weight=0;
+		interactionWeight=1;
+		quantityBar=1;
+		absorbency=0.30000001;
+		itemSize[]={1,2};
+		varQuantityInit=150;
+		varQuantityMin=0;
+		varQuantityMax=150;
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={7,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={4,200,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={4,150,150,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={5,150,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={7,50,0,1,0,16};
+					cooking_properties[]={100,180};
+				};
+			};			
+		};
+	};
+  class GoatSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,250,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,200,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,200,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+  class MouflonSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,250,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,200,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,200,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+  class BoarSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,250,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,200,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,200,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+  class PigSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={1,300,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,250,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={2,250,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,50,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};			
+		};
+	};
+  class DeerSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,350,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={1,300,100,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,300,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
+  class WolfSteakMeat: Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"Ingredient1",
+			"Ingredient2",
+			"Ingredient3",
+			"Ingredient4",
+			"Ingredient5",
+			"Ingredient6",
+			"Ingredient7",
+			"Ingredient8"
+		};
+    class Food
+		{
+			class FoodStages
+			{
+				class Raw
+				{
+					visual_properties[]={0,0,0};
+					nutrition_properties[]={5,50,50,1,0,4};
+					cooking_properties[]={0,0};
+				};
+				class Rotten
+				{
+					visual_properties[]={-1,-1,5};
+					nutrition_properties[]=
+					{
+						10,
+						25,
+						25,
+						1,
+						0,
+						"4 + 		  16"
+					};
+					cooking_properties[]={0,0};
+				};
+				class Baked
+				{
+					visual_properties[]={0,1,1};
+					nutrition_properties[]={2,200,50,1,0};
+					cooking_properties[]={70,120};
+				};
+				class Boiled
+				{
+					visual_properties[]={0,2,2};
+					nutrition_properties[]={2,150,150,1,0};
+					cooking_properties[]={70,125};
+				};
+				class Dried
+				{
+					visual_properties[]={0,3,3};
+					nutrition_properties[]={3,150,0,1,0};
+					cooking_properties[]={70,300,80};
+				};
+				class Burned
+				{
+					visual_properties[]={0,4,4};
+					nutrition_properties[]={5,50,0,1,0,16};
+					cooking_properties[]={100,300};
+				};
+			};
+		};
+	};
 	class BearSteakMeat: Edible_Base
 	{
 		inventorySlot[]+=
@@ -1090,71 +1550,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class WolfSteakMeat: Edible_Base
-	{
-		inventorySlot[]+=
-		{
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8"
-		};
-    class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={5,50,50,1,0,4};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]=
-					{
-						10,
-						25,
-						25,
-						1,
-						0,
-						"4 + 		  16"
-					};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={2,200,50,1,0};
-					cooking_properties[]={70,120};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={2,150,150,1,0};
-					cooking_properties[]={70,125};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={3,150,0,1,0};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={5,50,0,1,0,16};
-					cooking_properties[]={100,300};
-				};
-			};
-		};
-	};
-	class GoatSteakMeat: Edible_Base
+  class SheepSteakMeat: Edible_Base
 	{
 		inventorySlot[]+=
 		{
@@ -1200,7 +1596,7 @@ class CfgVehicles
 				class Boiled
 				{
 					visual_properties[]={0,2,2};
-					nutrition_properties[]={2,200,150,1,0};
+					nutrition_properties[]={2,200,100,1,0};
 					cooking_properties[]={70,125};
 				};
 				class Dried
@@ -1218,7 +1614,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class DeerSteakMeat: Edible_Base
+  class FoxSteakMeat: Edible_Base
 	{
 		inventorySlot[]+=
 		{
@@ -1258,19 +1654,19 @@ class CfgVehicles
 				class Baked
 				{
 					visual_properties[]={0,1,1};
-					nutrition_properties[]={2,350,50,1,0};
+					nutrition_properties[]={2,250,50,1,0};
 					cooking_properties[]={70,120};
 				};
 				class Boiled
 				{
 					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,300,100,1,0};
+					nutrition_properties[]={2,200,100,1,0};
 					cooking_properties[]={70,125};
 				};
 				class Dried
 				{
 					visual_properties[]={0,3,3};
-					nutrition_properties[]={3,300,0,1,0};
+					nutrition_properties[]={3,200,0,1,0};
 					cooking_properties[]={70,300,80};
 				};
 				class Burned
@@ -1346,7 +1742,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class SheepSteakMeat: Edible_Base
+  class RabbitLegMeat: Edible_Base
 	{
 		inventorySlot[]+=
 		{
@@ -1386,20 +1782,20 @@ class CfgVehicles
 				class Baked
 				{
 					visual_properties[]={0,1,1};
-					nutrition_properties[]={2,250,50,1,0};
+					nutrition_properties[]={1,200,50,1,0};
 					cooking_properties[]={70,120};
 				};
 				class Boiled
 				{
 					visual_properties[]={0,2,2};
-					nutrition_properties[]={2,200,100,1,0};
+					nutrition_properties[]={1,150,100,1,0};
 					cooking_properties[]={70,125};
 				};
 				class Dried
 				{
 					visual_properties[]={0,3,3};
-					nutrition_properties[]={3,200,0,1,0};
-					cooking_properties[]={70,300,80};
+					nutrition_properties[]={2,150,0,1,0};
+					cooking_properties[]={70,120,80};
 				};
 				class Burned
 				{
@@ -1408,146 +1804,6 @@ class CfgVehicles
 					cooking_properties[]={100,300};
 				};
 			};
-		};
-	};
-	class PigSteakMeat: Edible_Base
-	{
-		inventorySlot[]+=
-		{
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8"
-		};
-    class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={5,50,50,1,0,4};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]=
-					{
-						10,
-						25,
-						25,
-						1,
-						0,
-						"4 + 		  16"
-					};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,300,50,1,0};
-					cooking_properties[]={70,120};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,250,150,1,0};
-					cooking_properties[]={70,125};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={2,250,0,1,0};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={5,50,50,1,0,16};
-					cooking_properties[]={100,300};
-				};
-			};			
-		};
-	};
-	class HumanSteakMeat: Edible_Base
-	{
-		scope=2;
-		displayName="Steak";
-		descriptionShort="A weird smelling meat";
-		model="\dz\gear\food\meat_steak.p3d";
-		weight=0;
-		interactionWeight=1;
-		quantityBar=1;
-		absorbency=0.30000001;
-		itemSize[]={1,2};
-		varQuantityInit=150;
-		varQuantityMin=0;
-		varQuantityMax=150;
-		inventorySlot[]+=
-		{
-			"Ingredient1",
-			"Ingredient2",
-			"Ingredient3",
-			"Ingredient4",
-			"Ingredient5",
-			"Ingredient6",
-			"Ingredient7",
-			"Ingredient8"
-		};
-    class Food
-		{
-			class FoodStages
-			{
-				class Raw
-				{
-					visual_properties[]={0,0,0};
-					nutrition_properties[]={7,50,50,1,0,4};
-					cooking_properties[]={0,0};
-				};
-				class Rotten
-				{
-					visual_properties[]={-1,-1,5};
-					nutrition_properties[]=
-					{
-						10,
-						25,
-						25,
-						1,
-						0,
-						"4 + 		  16"
-					};
-					cooking_properties[]={0,0};
-				};
-				class Baked
-				{
-					visual_properties[]={0,1,1};
-					nutrition_properties[]={4,200,50,1,0};
-					cooking_properties[]={70,120};
-				};
-				class Boiled
-				{
-					visual_properties[]={0,2,2};
-					nutrition_properties[]={4,150,150,1,0};
-					cooking_properties[]={70,120};
-				};
-				class Dried
-				{
-					visual_properties[]={0,3,3};
-					nutrition_properties[]={5,150,0,1,0};
-					cooking_properties[]={70,300,80};
-				};
-				class Burned
-				{
-					visual_properties[]={0,4,4};
-					nutrition_properties[]={7,50,0,1,0,16};
-					cooking_properties[]={100,180};
-				};
-			};			
 		};
 	};
 	class CarpFilletMeat: Edible_Base
