@@ -15,7 +15,6 @@ class CfgPatches
 			"Layered_Shirt",
 			"Kneepads_Jeans",
 			"Windstrideclothing",
-			"Munghardsponcho",
       "Dressupbox",
       "Survivalists_MasonryMetallurgy",
 			"Survivalists_Mods"
