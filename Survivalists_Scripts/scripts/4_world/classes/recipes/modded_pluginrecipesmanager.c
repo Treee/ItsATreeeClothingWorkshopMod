@@ -396,7 +396,6 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_WindowBarricade_Wood_Kit);
       RegisterRecipe(new Craft_SRP_WindowBarricadeTall_Wood_Kit);
       RegisterRecipe(new Craft_SRP_SpikeBarricade_Wood_Kit);
-      RegisterRecipe(new Craft_SRP_BarricadeMetal_Kit);
       RegisterRecipe(new Craft_SRP_Fortifications_BambooWall_Kit);
       RegisterRecipe(new Craft_SRP_Fortifications_BambooWall_Yellow_Kit);
       RegisterRecipe(new Craft_SRP_Fortifications_BambooWallCrossSmall_Kit);
@@ -420,7 +419,6 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_CraftBuildingComponentFrameFineWornDoublePlatformKit);
       RegisterRecipe(new SRP_CraftBuildingComponentFrameFineFlatDoublePlatformKit);
 
-      RegisterRecipe(new Craft_SRP_Furniture_WoodenStairs_Kit);
       RegisterRecipe(new Craft_SRP_CopyBook);
       RegisterRecipe(new Craft_SRP_CopyBook_Press);
 
@@ -497,23 +495,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_DUB_Alphawalltrophy);
 
       RegisterRecipe(new Craft_SRP_BedsideTable_Kit);
-      RegisterRecipe(new Craft_SRP_Furniture_WoodenTable_Kit);
-      RegisterRecipe(new Craft_SRP_Furniture_Barrel_Kit);
-      RegisterRecipe(new Craft_SRP_Furniture_BarrelTable_Kit);
       RegisterRecipe(new Craft_SRP_MedicalBedSmall_Wood_Kit);
-      RegisterRecipe(new Craft_SRP_Furniture_Sofa_Modern_Kit);
-      RegisterRecipe(new Craft_SRP_Furniture_Sofa_Old_Kit);
-      RegisterRecipe(new Craft_SRP_WoodenBench_Kit);
-      RegisterRecipe(new Craft_SRP_Furniture_LogStump);
-      RegisterRecipe(new Craft_SRP_Furniture_LogBenchSmall);
-      RegisterRecipe(new Craft_SRP_Furniture_WoodBenchSmall);
-      RegisterRecipe(new Craft_SRP_Furniture_WoodBenchSlim);
-      RegisterRecipe(new Craft_SRP_Furniture_PileOfPlanks);
-      RegisterRecipe(new Craft_SRP_Furniture_SmallLogPile);
-      RegisterRecipe(new Craft_SRP_Furniture_LargeLogPile);
       RegisterRecipe(new Craft_SRP_ToolRack_Hammers_Kit);
-      RegisterRecipe(new Craft_SRP_Gazebo_Kit);
-
 
     //==========================================================Drugs
       RegisterRecipe(new SRP_Drugs_CreateCocaineStarterBag);	

@@ -104,15 +104,7 @@ class Craft_SRP_SpikeBarricade_Wood_Kit extends Craft_SRP_Barricade_OptionsBase
 		AddResult("SRP_SpikeBarricade_Wood_Kit");//add results here
 	}
 };
-class Craft_SRP_BarricadeMetal_Kit extends Craft_SRP_Barricade_OptionsBase
-{
-	override void Init()
-	{
-    super.Init();
-		m_Name = "Create Barricade - Metal";
-		AddResult("SRP_BarricadeMetal_Kit");//add results here
-	}
-};
+
 class Craft_SRP_Fortifications_BambooWall_Kit extends Craft_SRP_Barricade_OptionsBase
 {
 	override void Init()

@@ -188,13 +188,3 @@ class Craft_SRP_BuildingComponentFrame_OptionsBase extends RecipeBase
       AddResult("SRP_BuildingComponentFrame_FineFlatDoublePlatform_Kit");//add results here
     }
   };
-// STAIRS
-  class Craft_SRP_Furniture_WoodenStairs_Kit extends Craft_SRP_BuildingComponentFrame_OptionsBase
-  {	
-    override void Init()
-    {
-      super.Init();
-      m_Name = "Create Building Component Stairs Kit - 2 Story";
-      AddResult("SRP_Furniture_WoodenStairs_Kit");//add results here
-    }
-  };
