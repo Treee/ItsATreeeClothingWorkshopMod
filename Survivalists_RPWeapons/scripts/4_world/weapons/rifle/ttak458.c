@@ -10,79 +10,65 @@ class ttak458 extends RifleBoltLock_Base
 		inventory.CreateInInventory( "KobraOptic" );
 		inventory.CreateInInventory( "Battery9V" );
 		inventory.CreateInInventory( "Battery9V" );
-	}	
+	}
+  override bool CanDisplayAttachmentSlot(int slot_id)
+  {
+    if (super.CanDisplayAttachmentSlot(slot_id))
+    {
+      // restrict only one optic showing at a time when others are attached
+      string slotName = InventorySlots.GetSlotName(slot_id);
 
-	override bool CanReceiveAttachment( EntityAI attachment, int slotId )
+      ItemBase weaponOptic;
+      if (slotName == "weaponOpticsAK" || slotName == "weaponOptics")
+      {
+        // if the adapter is not attached do not show scope slots
+        if (!FindAttachmentBySlotName("AKRISAdapter"))
+          return false;
+        else
+        {
+          if (slotName == "weaponOpticsAK")
+          {
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOptics")))
+              return false;
+          }        
+          if (slotName == "weaponOptics")
+          {
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOpticsAK")))
+              return false;
+          }
+        }
+      }
+      if (slotName == "weaponButtstockM4")
+      {
+        if (!FindAttachmentBySlotName("weaponButtstockAK"))
+          return false;        
+      }
+      return true;
+    }
+    return false;
+  }
+  override bool CanReceiveAttachment( EntityAI attachment, int slotId )
 	{
-		if ( slotId == InventorySlots.GetSlotIdFromString("weaponOptics") )
-		{
-			if ( this.FindAttachmentBySlotName("AKRISAdapter") == NULL )
-			{
-				return false;
-			}
-			return true;
-		}
-		if ( slotId == InventorySlots.GetSlotIdFromString("AKRISAdapter") )
-		{
-			if ( this.FindAttachmentBySlotName("weaponOpticsAK") == NULL )
-			{
-				return true;
-			}
-			return false;
-		}
-		if ( slotId == InventorySlots.GetSlotIdFromString("weaponOpticsAK") )
-		{
-			if ( this.FindAttachmentBySlotName("AKRISAdapter") == NULL )
-			{
-				return true;
-			}
-			return false;
-		}
-		if ( slotId == InventorySlots.GetSlotIdFromString("weaponOpticsAK") )
-		{
-			if ( this.FindAttachmentBySlotName("weaponOptics") == NULL )
-			{
-				return true;
-			}
-			return false;
-		}
-		if ( slotId == InventorySlots.GetSlotIdFromString("weaponOptics") )
-		{
-			if ( this.FindAttachmentBySlotName("weaponOpticsAK") == NULL )
-			{
-				return true;
-			}
-			return false;
-		}
+    if (super.CanReceiveAttachment(attachment, slotId))
+    {
+      string slotName = InventorySlots.GetSlotName(slotId);
+      if (slotName == "weaponButtstockM4")
+      {
+        if (FindAttachmentBySlotName("weaponButtstockAK"))
+          return true;
+        return false;
+      }
+      return true;
+    }
+		return false;
+	}
+
+  override bool NeedsRailAdapter()
+  {
     return true;
-	}
-	override bool CanDisplayAttachmentSlot( string slot_name)
-	{
-		if ( slot_name == "weaponOpticsAK" )
-		{
-      return ( this.FindAttachmentBySlotName("AKRISAdapter") == NULL );
-		}
-		if ( slot_name == "AKRISAdapter" )
-		{
-      return ( this.FindAttachmentBySlotName("weaponOpticsAK") == NULL );
-		}
-		if ( slot_name == "weaponOptics" )
-		{
-      return ( this.FindAttachmentBySlotName("AKRISAdapter") && this.FindAttachmentBySlotName("weaponOpticsAK") == NULL );
-		}
-		if ( slot_name == "RISLeft" )
-		{
-      return	( this.FindAttachmentBySlotName("weaponHandguardAK") != NULL && this.FindAttachmentBySlotName("weaponHandguardAK").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		if ( slot_name == "RISRight" )
-		{
-      return	( this.FindAttachmentBySlotName("weaponHandguardAK") != NULL && this.FindAttachmentBySlotName("weaponHandguardAK").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		if ( slot_name == "RISBottom" )
-		{
-      return	( this.FindAttachmentBySlotName("weaponHandguardAK") != NULL && this.FindAttachmentBySlotName("weaponHandguardAK").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		return true;
-		
-	}
+  }
+  override string GetRailAdapterName()
+  {
+    return "weaponHandguardAK";
+  }
 };

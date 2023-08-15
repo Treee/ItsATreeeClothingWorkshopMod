@@ -13,48 +13,35 @@ class ttp90 extends RifleBoltLock_Base
 		SpawnAttachedMagazine("ttp90mag");
 	}
 
-	override bool CanReceiveAttachment( EntityAI attachment, int slotId )
+	override bool CanDisplayAttachmentSlot(int slot_id)
 	{
-		if(!IsInitialized() && !attachment.IsInitialized())
-		{
-		  return true;
-		}
-		if ( attachment.IsKindOf("Switchable_Base"))
+    if (super.CanDisplayAttachmentSlot(slot_id))
     {
-      if ( this.FindAttachmentBySlotName("P90UpgradeKit") )
+      // restrict only one optic showing at a time when others are attached
+      string slotName = InventorySlots.GetSlotName(slot_id);
+
+      ItemBase weaponOptic;
+      if (slotName == "pistolFlashlight" || slotName == "weaponFlashlight")
       {
-        if ( slotId == InventorySlots.GetSlotIdFromString("weaponFlashlight") )
-        {
-          if ( this.FindAttachmentBySlotName("pistolFlashlight") == NULL )
-          {
-            return true;
-          }
+        // if the adapter is not attached do not show scope slots
+        if (!FindAttachmentBySlotName("P90UpgradeKit"))
           return false;
-        }
-        if ( slotId == InventorySlots.GetSlotIdFromString("pistolFlashlight") )
+        else
         {
-          if ( this.FindAttachmentBySlotName("weaponFlashlight") == NULL )
+          if (slotName == "pistolFlashlight")
           {
-            return true;
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponFlashlight")))
+              return false;
+          }        
+          if (slotName == "weaponFlashlight")
+          {
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("pistolFlashlight")))
+              return false;
           }
-          return false;
         }
-				return false;
-			}
-			return false;
-		}
-		return true;
-	}
-	override bool CanDisplayAttachmentSlot( string slot_name)
-	{
-		if ( slot_name == "pistolFlashlight" )
-		{
-      return ( this.FindAttachmentBySlotName("P90UpgradeKit") && this.FindAttachmentBySlotName("weaponFlashlight") == NULL );
-		}
-		if ( slot_name == "weaponFlashlight" )
-		{
-      return ( this.FindAttachmentBySlotName("P90UpgradeKit") && this.FindAttachmentBySlotName("weaponFlashlight") != NULL );
-		}
-		return true;
+      }
+      return true;
+    }
+		return false;
 	}
 };

@@ -37,6 +37,7 @@ class ESP_RIS_Cover_Colorbase : ItemBase
 			AttSlots.Insert(InventorySlots.GetSlotIdFromString("weaponHandguardM4"));
 			AttSlots.Insert(InventorySlots.GetSlotIdFromString("weaponHandguardAK"));
 			AttSlots.Insert(InventorySlots.GetSlotIdFromString("weaponHandguardMP5"));   
+			AttSlots.Insert(InventorySlots.GetSlotIdFromString("SA80HndGrd"));   
 		}
 	}
 };

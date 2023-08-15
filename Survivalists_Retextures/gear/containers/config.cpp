@@ -1056,6 +1056,72 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\espen_branding.paa"};
   };
 
+
+  class Roman_Poster1: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting1_Vertical_CO.paa"};
+  };
+  class Roman_Poster2: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting2_Vertical_CO.paa"};
+  };
+
+  class Train_Poster: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="Train Poster";
+    descriptionShort="Framed artwork of a train.";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_poster_train_co.paa"};
+  };
+  class Train_Poster1: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="Train Poster";
+    descriptionShort="Framed artwork of a train.";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_poster_train1_co.paa"};
+  };
+  class Train_Poster2: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="Train Poster";
+    descriptionShort="Framed artwork of a train.";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_poster_train2_co.paa"};
+  };
+  class Train_Poster3: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="Train Poster";
+    descriptionShort="Framed artwork of a train.";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_poster_train3_co.paa"};
+  };
+  class Train_Poster4: DUB_Meleeframe
+  {
+    scope=2;
+    displayName="Train Poster";
+    descriptionShort="Framed artwork of a train.";
+    attachments[]={};
+    hiddenSelections[]={"center"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\srp_poster_train4_co.paa"};
+  };
+
   // ========================================== LANDSCAPE ORIENTATION
   class DUB_Gunframe_Alcoholism: DUB_Gunframe 
 	{
@@ -1092,6 +1158,79 @@ class CfgVehicles
 		attachments[]={};
 		hiddenSelections[]={"center"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\picture_makeyoudie_co.paa"};
+	};
+
+  class DUB_Gunframe_RomanPoster1: DUB_Gunframe 
+	{
+		scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting1_CO.paa"};
+	};
+  class DUB_Gunframe_RomanPoster2: DUB_Gunframe 
+	{
+		scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting2_CO.paa"};
+	};
+  class DUB_Gunframe_RomanPoster3: DUB_Gunframe 
+	{
+		scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting3_CO.paa"};
+	};
+  class DUB_Gunframe_RomanPoster4: DUB_Gunframe 
+	{
+		scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting4_CO.paa"};
+	};
+  class DUB_Gunframe_RomanPoster5: DUB_Gunframe 
+	{
+		scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting5_CO.paa"};
+	};
+  class DUB_Gunframe_RomanPoster6: DUB_Gunframe 
+	{
+		scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting6_CO.paa"};
+	};
+  class DUB_Gunframe_RomanPoster7: DUB_Gunframe 
+	{
+		scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting7_CO.paa"};
+	};
+  class DUB_Gunframe_RomanPoster8: DUB_Gunframe 
+	{
+		scope=2;
+    displayName="Roman Poster";
+    descriptionShort="Framed artwork of Roman inspiration.";
+		attachments[]={};
+		hiddenSelections[]={"center"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\containers\data\RomanPainting8_CO.paa"};
 	};
 
 };

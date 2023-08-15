@@ -11,48 +11,46 @@ class ttbar extends RifleBoltLock_Base
     SpawnAttachedMagazine("Mag_FAL_20Rnd");
 	}
 
-	override bool CanReceiveAttachment( EntityAI attachment, int slotId )
-	{
-		if(!IsInitialized() && !attachment.IsInitialized())
-		{
-		  return true;
-		};
-		if ( attachment.IsKindOf("ItemOptics"))
+  override bool CanDisplayAttachmentSlot(int slot_id)
+  {
+    if (super.CanDisplayAttachmentSlot(slot_id))
     {
-      if ( this.FindAttachmentBySlotName("RISAdapter") )
+      // restrict only one optic showing at a time when others are attached
+      string slotName = InventorySlots.GetSlotName(slot_id);
+      ItemBase weaponOptic;
+      if (slotName == "weaponOpticsHunting")
       {
-				if ( slotId == InventorySlots.GetSlotIdFromString("weaponOpticsHunting") )
-				{
-					if ( this.FindAttachmentBySlotName("weaponOptics") == NULL )
-					{
-						return true;
-					}
-					return false;
-				}
-				if ( slotId == InventorySlots.GetSlotIdFromString("weaponOptics") )
-				{
-					if ( this.FindAttachmentBySlotName("weaponOpticsHunting") == NULL )
-					{
-						return true;
-					}
-					return false;
-				}
-				return false;
-			}
-			return false;
-		}
-		return true;
-	}
-	override bool CanDisplayAttachmentSlot( string slot_name)
-	{
-		if ( slot_name == "weaponOptics" )
-		{
-      return this.FindAttachmentBySlotName("RISAdapter") && this.FindAttachmentBySlotName("weaponOpticsHunting") == NULL;
-		}
-		if ( slot_name == "weaponOpticsHunting" )
-		{
-      return this.FindAttachmentBySlotName("RISAdapter") && this.FindAttachmentBySlotName("weaponOpticsHunting") != NULL;
-		}
-		return true;
-	}
+        if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOptics")))
+          return false;
+      }        
+      if (slotName == "weaponOptics")
+      {
+        if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOpticsHunting")))
+          return false;
+      }
+      return true;
+    }
+    return false;
+  }
+
+  override bool IsHideableSlot(int slot_id)
+  {
+    string slotName = InventorySlots.GetSlotName(slot_id);
+    
+    if (slotName == "weaponOpticsHunting")
+      return true;
+    if (slotName == "weaponOptics")
+      return true;
+
+    return super.IsHideableSlot(slot_id);
+  }
+
+  override bool NeedsRailAdapter()
+  {
+    return true;
+  }
+  override string GetRailAdapterName()
+  {
+    return "RISAdapter";
+  }
 };

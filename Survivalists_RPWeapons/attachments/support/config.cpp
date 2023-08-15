@@ -1123,6 +1123,7 @@ class CfgVehicles
 		{
 			"ScarHndGrd"
 		};
+    hasRailFunctionality=1;
 		dispersionModifier=-0.00012500001;
 		dispersionCondition="true";
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
@@ -1215,6 +1216,7 @@ class CfgVehicles
 		{
 			"weaponHandguardAK"
 		};
+    hasRailFunctionality=1;
 		dispersionModifier=-0.00012500001;
 		dispersionCondition="true";
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
@@ -1260,6 +1262,7 @@ class CfgVehicles
 		{
 			"weaponHandguardAK"
 		};
+    hasRailFunctionality=1;
 		dispersionModifier=-0.00012500001;
 		dispersionCondition="true";
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
@@ -1305,6 +1308,7 @@ class CfgVehicles
 		{
 			"weaponHandguardAK"
 		};
+    hasRailFunctionality=1;
 		dispersionModifier=-0.00012500001;
 		dispersionCondition="true";
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
@@ -1350,6 +1354,7 @@ class CfgVehicles
 		{
 			"weaponHandguardAK"
 		};
+    hasRailFunctionality=1;
 		dispersionModifier=-0.00012500001;
 		dispersionCondition="true";
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
@@ -1458,6 +1463,7 @@ class CfgVehicles
 		{
 			"weaponHandguardAK"
 		};
+    hasRailFunctionality=1;
 		dispersionModifier=-0.00012500001;
 		dispersionCondition="true";
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};

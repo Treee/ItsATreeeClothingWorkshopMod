@@ -1,4 +1,23 @@
-class SRP_Handguard_Base extends M4_PlasticHndgrd{};
+class SRP_Handguard_Base extends M4_PlasticHndgrd
+{
+  override bool CanDetachAttachment(EntityAI parent)
+	{
+    if (super.CanDetachAttachment(parent))
+    {
+      if (parent.IsInherited(Weapon_Base))
+      {
+        if (parent.FindAttachmentBySlotName("RISLeft"))
+          return false;
+        if (parent.FindAttachmentBySlotName("RISRight"))
+          return false;
+        if (parent.FindAttachmentBySlotName("RISBottom"))
+        return false;
+      }
+      return true;
+    }
+		return false;
+	}
+};
 
 class ESP_LW_HndGrd_ColorBase extends SRP_Handguard_Base{};
 class ESP_Lightweight_HndGrd_Green extends ESP_LW_HndGrd_ColorBase{};

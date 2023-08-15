@@ -1,6 +1,6 @@
 class SRP_SealedLetter_ColorBase extends SRP_OwnedItem_Base
 { 
-  override bool CanDisplayAttachmentSlot( string slot_name )
+  override bool CanDisplayAttachmentSlot(int slot_id)
 	{
 		return IsRuined();
 	}

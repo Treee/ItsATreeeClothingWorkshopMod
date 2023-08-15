@@ -968,6 +968,36 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Fallout 76 - Enclave Tactical Pack" (https://skfb.ly/ozrp7) by Jamie McFarlane is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Japanese Shrine" (https://skfb.ly/o9Vrx) by Mateja Veljkovic is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Japanese Torii gate Game Asset" (https://skfb.ly/6ROGW) by Bazylonator is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Japanese Tori Gate" (https://skfb.ly/6VvTK) by Jasmine is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+- "Japan shrine / temple" (https://skfb.ly/6AxWp) by Paulina is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Roman Marble Column" (https://skfb.ly/oHVoV) by Ergin ERYILDIR is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Marble bench" (https://skfb.ly/oJGDO) by diapant95 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Angel (old marble version)" (https://skfb.ly/oqzSw) by SebastianSosnowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Statue" (https://skfb.ly/opuMP) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Gaurdian statue" (https://skfb.ly/6AnLT) by DJMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Pirate of Malta Low poly" (https://skfb.ly/6UYEu) by blocula is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Standing Woman - Low Poly" (https://skfb.ly/6sRDv) by Owlish Media is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+- "Classic Ganesh Low Poly" (https://skfb.ly/VqJB) by Francesco Coldesina is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Statue of St.Jacob" (https://skfb.ly/6yBUR) by SebastianSosnowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Statue of St.Jacob" (https://skfb.ly/6yBUR) by SebastianSosnowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Thucydides-and-Herodotus Low Poly" (https://skfb.ly/TsL6) by Francesco Coldesina is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki

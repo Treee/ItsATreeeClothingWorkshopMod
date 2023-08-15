@@ -45,50 +45,52 @@ class SRP_ModularVest_Base extends Clothing
 		return canAttach;
 	}
 
-  override bool CanDisplayAttachmentSlot( string slot_name )
+  override bool CanDisplayAttachmentSlot(int slot_id)
 	{
-    bool canDisplay = super.CanDisplayAttachmentSlot(slot_name);
-		// return InventorySlots.GetShowForSlotId(InventorySlots.GetSlotIdFromString(slot_name));
+    string slotName = InventorySlots.GetSlotName(slot_id);
+
+    bool canDisplay = super.CanDisplayAttachmentSlot(slotName);
+		// return InventorySlots.GetShowForSlotId(InventorySlots.GetSlotIdFromString(slotName));
     EntityAI attachment;
     // small pouch display
-    if (slot_name == "SmallPouch1")
+    if (slotName == "SmallPouch1")
     {
       attachment = FindAttachmentBySlotName("LargePouch1");
     }
-    else if (slot_name == "SmallPouch3")
+    else if (slotName == "SmallPouch3")
     {
       attachment = FindAttachmentBySlotName("LargePouch2");
     }
-    else if (slot_name == "SmallPouch4")
+    else if (slotName == "SmallPouch4")
     {
       attachment = FindAttachmentBySlotName("LargePouch3");
     }
-    else if (slot_name == "SmallPouch5")
+    else if (slotName == "SmallPouch5")
     {
       attachment = FindAttachmentBySlotName("LargePouch4");
     }
-    else if (slot_name == "SmallPouch6")
+    else if (slotName == "SmallPouch6")
     {
       attachment = FindAttachmentBySlotName("LargePouch5");
     }
     // Large Pouch display
-    else if (slot_name == "LargePouch1")
+    else if (slotName == "LargePouch1")
     {
       attachment = FindAttachmentBySlotName("SmallPouch1");
     }
-    else if (slot_name == "LargePouch2")
+    else if (slotName == "LargePouch2")
     {
       attachment = FindAttachmentBySlotName("SmallPouch3");
     }
-    else if (slot_name == "LargePouch3")
+    else if (slotName == "LargePouch3")
     {
       attachment = FindAttachmentBySlotName("SmallPouch4");
     }
-    else if (slot_name == "LargePouch4")
+    else if (slotName == "LargePouch4")
     {
       attachment = FindAttachmentBySlotName("SmallPouch5");
     }
-    else if (slot_name == "LargePouch5")
+    else if (slotName == "LargePouch5")
     {
       attachment = FindAttachmentBySlotName("SmallPouch6");
     }

@@ -33,6 +33,7 @@ class CfgVehicles
 		{
 			"RISAdapter"
 		};
+    hasRailFunctionality=1;
 		dispersionModifier=-0.00012500001;
 		dispersionCondition="true";
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
@@ -74,6 +75,7 @@ class CfgVehicles
 		{
 			"AKRISAdapter"
 		};
+    hasRailFunctionality=1;
 		dispersionModifier=-0.00012500001;
 		dispersionCondition="true";
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
@@ -115,6 +117,7 @@ class CfgVehicles
 		reversed=0;
 		weight=300;
 		IsStockAdapter=1;
+    hasRailFunctionality=1;
 		itemSize[]={2,1};
 		inventorySlot[]=
 		{

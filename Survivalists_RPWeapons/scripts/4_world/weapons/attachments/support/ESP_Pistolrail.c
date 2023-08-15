@@ -1,11 +1,18 @@
 class ESP_PistolRail extends ItemBase
 {
-	override bool CanDetachAttachment (EntityAI parent)
+  override bool CanDetachAttachment(EntityAI parent)
 	{
-		if ( Weapon_Base.Cast(parent) && (parent.FindAttachmentBySlotName("pistolOptics")))
-		{
-			return false;
-		}
-		return super.CanDetachAttachment(parent);
+    if (super.CanDetachAttachment(parent))
+    {
+      if (parent.IsInherited(Weapon_Base))
+      {
+        if (parent.FindAttachmentBySlotName("pistolOptics"))
+          return false;
+        if (parent.FindAttachmentBySlotName("pistolFlashlight"))
+          return false;
+      }
+      return true;
+    }
+		return false;
 	}
 };

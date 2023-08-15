@@ -1,11 +1,20 @@
 class ESP_SCAR_RIS_HNDGRD extends Inventory_Base
 {
-	override bool CanDetachAttachment (EntityAI parent)
+  override bool CanDetachAttachment(EntityAI parent)
 	{
-		if ( Weapon_Base.Cast(parent) && parent.FindAttachmentBySlotName("weaponFlashlight") )
-		{
-			return false;
-		}
-		return true;
+    if (super.CanDetachAttachment(parent))
+    {
+      if (parent.IsInherited(Weapon_Base))
+      {
+        if (parent.FindAttachmentBySlotName("RISLeft"))
+          return false;
+        if (parent.FindAttachmentBySlotName("RISRight"))
+          return false;
+        if (parent.FindAttachmentBySlotName("RISBottom"))
+        return false;
+      }
+      return true;
+    }
+		return false;
 	}
-}
+};

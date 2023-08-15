@@ -1,11 +1,18 @@
 class ESP_RIS_Adapter extends ItemBase
 {
-	override bool CanDetachAttachment (EntityAI parent)
+  override bool CanDetachAttachment(EntityAI parent)
 	{
-		if ( Weapon_Base.Cast(parent) && (parent.FindAttachmentBySlotName("weaponOpticsHunting") || parent.FindAttachmentBySlotName("weaponOptics")))
-		{
-			return false;
-		}
-		return super.CanDetachAttachment(parent);
+    if (super.CanDetachAttachment(parent))
+    {
+      if (parent.IsInherited(Weapon_Base))
+      {
+        if (parent.FindAttachmentBySlotName("weaponOpticsHunting"))
+          return false;
+        if (parent.FindAttachmentBySlotName("weaponOptics"))
+          return false;
+      }
+      return true;
+    }
+		return false;
 	}
 };

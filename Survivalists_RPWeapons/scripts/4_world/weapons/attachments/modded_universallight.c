@@ -6,7 +6,7 @@ modded class UniversalLight
     super.InitAttachmentsSlotsToCheck(AttSlots);
     if (AttSlots)
     {
-      AttSlots.Insert(InventorySlots.GetSlotIdFromString("ScarHndGrd"));  
+      AttSlots.Insert(InventorySlots.GetSlotIdFromString("ScarHndGrd"));
     }
   }
 }

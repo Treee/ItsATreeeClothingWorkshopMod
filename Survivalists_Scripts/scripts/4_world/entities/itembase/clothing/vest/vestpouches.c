@@ -228,10 +228,12 @@ class SRP_UtilityPouch_ColorBase extends SRP_PouchBase_Large
     return GetInventory().AttachmentCount() < 1;
   }
 
-  override bool CanDisplayAttachmentSlot( string slot_name )
+  override bool CanDisplayAttachmentSlot(int slot_id)
 	{
+    string slotName = InventorySlots.GetSlotName(slot_id);
+
     bool canDisplay = GetInventory().AttachmentCount() == 0;
-    EntityAI slotItem = FindAttachmentBySlotName(slot_name);      
+    EntityAI slotItem = FindAttachmentBySlotName(slotName);      
     if (slotItem)
     {
       canDisplay = true; 

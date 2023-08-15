@@ -16,7 +16,6 @@ class ttscarl extends RifleBoltLock_Base
 		HideUnhideSelection("Grip", 1);
     HideUnhideSelection("Ironsight_Down", 0);
 	}
-
 	override void EEItemAttached(EntityAI item, string slot_name)
 	{
 		super.EEItemAttached(item,slot_name);	
@@ -27,7 +26,6 @@ class ttscarl extends RifleBoltLock_Base
 			HideUnhideSelection("Ironsight_Up", 0);
 		}
 	}
-
 	override void EEItemDetached(EntityAI item, string slot_name)
 	{	
 		super.EEItemDetached(item,slot_name);
@@ -38,23 +36,14 @@ class ttscarl extends RifleBoltLock_Base
 			HideUnhideSelection("Ironsight_Down", 0);
 		}
 	}
-	override bool CanDisplayAttachmentSlot( string slot_name)
+  override bool NeedsRailAdapter()
   {
-    if ( slot_name == "RISLeft" )
-		{
-      return	( this.FindAttachmentBySlotName("ScarHndGrd") != NULL && this.FindAttachmentBySlotName("ScarHndGrd").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		if ( slot_name == "RISRight" )
-		{
-      return	( this.FindAttachmentBySlotName("ScarHndGrd") != NULL && this.FindAttachmentBySlotName("ScarHndGrd").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		if ( slot_name == "RISBottom" )
-		{
-      return	( this.FindAttachmentBySlotName("ScarHndGrd") != NULL && this.FindAttachmentBySlotName("ScarHndGrd").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		return true;
+    return true;
   }
-    
+  override string GetRailAdapterName()
+  {
+    return "ScarHndGrd";
+  }
 	override void OnDebugSpawn()
 	{
 		GameInventory inventory = GetInventory();

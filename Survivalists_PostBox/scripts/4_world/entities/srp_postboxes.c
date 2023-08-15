@@ -77,7 +77,7 @@ class SRP_PostBox_Base extends SRP_OwnedItem_Base
     RemoveAction(ActionSwapItemToHands);
 		RemoveAction(ActionTakeItemToHands);
 	}
-  override bool CanDisplayAttachmentSlot( string slot_name )
+  override bool CanDisplayAttachmentSlot(int slot_id)
 	{
     return CanViewBoxContents();
 	}

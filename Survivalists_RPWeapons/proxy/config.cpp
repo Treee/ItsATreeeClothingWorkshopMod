@@ -495,13 +495,13 @@ class CfgNonAIVehicles
   class ProxySA80_HandGrd_Proxy: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="SA80HndGrd";
+		inventorySlot[]={"SA80HndGrd"};
 		model="Survivalists_RPWeapons\proxy\SA80_HandGrd_Proxy.p3d";
 	};
 	class ProxyESP_PistolRail_Proxy: ProxyAttachment
 	{
 		scope=2;
-		inventorySlot="PistolRail";
+		inventorySlot[]={"PistolRail"};
 		model="Survivalists_RPWeapons\proxy\ESP_PistolRail_Proxy.p3d";
 	};
 //=================== Melee Proxies

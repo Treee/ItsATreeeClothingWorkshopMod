@@ -568,6 +568,20 @@ class CfgVehicles
     };
   };
 
+  class SRP_ReadableBook_AdeptusMechanicusPrayerBook: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Prayer Book of the Adeptus Mechanicus";
+    author="Autosavant Chem-109 Enron";
+		file="Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbook.html";		
+    displayName="Prayer Book of the Adeptus Mechanicus";
+    descriptionShort="A worn and oil stained crimson book.  It smells of motor oil and incense.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbook_co.paa"
+    };
+  };
+
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
 	{

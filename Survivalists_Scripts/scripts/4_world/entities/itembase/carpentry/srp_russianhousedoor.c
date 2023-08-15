@@ -50,7 +50,7 @@ class SRP_Carpentry_HouseDoor extends Fence {
 	}
 
   // this is for att_combinationlock. Always show because it is only one item to "build"
-  override bool CanDisplayAttachmentSlot( string slot_name )
+  override bool CanDisplayAttachmentSlot(int slot_id)
 	{
 		return true;
 	}

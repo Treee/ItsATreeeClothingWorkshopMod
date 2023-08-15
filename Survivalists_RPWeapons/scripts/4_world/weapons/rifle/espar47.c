@@ -62,22 +62,14 @@ class ESPAR47 extends RifleBoltLock_Base
 			HideUnhideSelection("GasBlock_Low", 0);
 		}
 	}
-	override bool CanDisplayAttachmentSlot( string slot_name)
+	override bool NeedsRailAdapter()
   {
-    if ( slot_name == "RISLeft" )
-		{
-      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		if ( slot_name == "RISRight" )
-		{
-      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		if ( slot_name == "RISBottom" )
-		{
-      return	( this.FindAttachmentBySlotName("WeaponHandguardM4") != NULL && this.FindAttachmentBySlotName("WeaponHandguardM4").ConfigGetBool("hasRailFunctionality") == true );
-		}
-		return true;
-  }	
+    return true;
+  }
+  override string GetRailAdapterName()
+  {
+    return "WeaponHandguardM4";
+  }
   override void OnDebugSpawn()
 	{
 		GameInventory inventory = GetInventory();

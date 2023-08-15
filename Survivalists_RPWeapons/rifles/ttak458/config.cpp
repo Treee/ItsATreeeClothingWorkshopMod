@@ -38,8 +38,8 @@ class cfgWeapons
 		attachments[]=
 		{
 			"weaponHandguardAK",
-			"weaponOpticsAK",
 			"AKRISAdapter",
+			"weaponOpticsAK",
 			"weaponOptics",
 			"weaponFlashlight",
 			"weaponMuzzleAK",
@@ -216,8 +216,8 @@ class cfgWeapons
 			"weaponButtstockAK",
 			"weaponButtstockM4",
 			"weaponHandguardAK",
-			"weaponOpticsAK",
 			"AKRISAdapter",
+			"weaponOpticsAK",
 			"weaponOptics",
 			"weaponMuzzleAK",
 			"weaponBayonetAK",
