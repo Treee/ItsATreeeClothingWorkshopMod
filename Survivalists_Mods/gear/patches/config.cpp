@@ -240,14 +240,6 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\gear\patches\data\SRParmband_CO.paa"
 		};
-    class InventorySlotsOffsets
-		{
-			class SRP_DisplayHook_LeatherArmband
-			{
-				position[]={0,0,0};
-				orientation[]={0,0,0};
-			};
-		};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\gear\patches\SRParmband_m.p3d";
@@ -338,14 +330,6 @@ class CfgVehicles
 			"\DZ\characters\tops\data\armbend_big_white_co.paa",
 			"\DZ\characters\tops\data\armbend_big_white_co.paa",
 		};	
-    class InventorySlotsOffsets
-		{
-			class SRP_DisplayHook_DoubleArmband
-			{
-				position[]={0,0,0};
-				orientation[]={0,0,0};
-			};
-		};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\gear\patches\srp_doublearmband_m.p3d";
@@ -422,14 +406,6 @@ class CfgVehicles
       "Survivalists_Mods\gear\patches\data\srp_patchlogo.rvmat",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"
     };
-    class InventorySlotsOffsets
-		{
-      class SRP_DisplayHook_PatchArmband
-			{
-				position[]={0,0,0};
-				orientation[]={0,0,0};
-			};
-		};
 		class DamageSystem
 		{
 			class GlobalHealth

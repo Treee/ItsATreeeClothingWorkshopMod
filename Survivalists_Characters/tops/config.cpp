@@ -301,14 +301,6 @@ class CfgVehicles
       "Armband",
       "SRP_DisplayHook_SingleArmband",
     };
-    class InventorySlotsOffsets
-		{
-			class SRP_DisplayHook_SingleArmband
-			{
-				position[]={0,0,0};
-				orientation[]={0,0,0};
-			};
-		};
   };
   class NBCJacketBase: Clothing
 	{
