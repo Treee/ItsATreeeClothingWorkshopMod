@@ -40,7 +40,7 @@ class CfgVehicles
   class SRP_Furniture_JapaneseShrine_Default_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Japanese Shrine Kit";
+		displayName="Japanese Shrine Kit - Worn";
 		descriptionShort="A placeable japanese shrine kit";
     projectionTypename="SRP_Furniture_JapaneseShrine_Default";
 	};
@@ -62,7 +62,7 @@ class CfgVehicles
   class SRP_Furniture_JapaneseTemple_Default_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Japanese Temple Kit";
+		displayName="Japanese Temple Kit - Worn";
 		descriptionShort="A placeable japanese temple kit";
     projectionTypename="SRP_Furniture_JapaneseTemple_Default";
 	};
@@ -84,7 +84,7 @@ class CfgVehicles
   class SRP_Furniture_JapaneseToriGate_Default_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Japanese Tori Gate Kit";
+		displayName="Japanese Tori Gate Kit - Worn";
 		descriptionShort="A placeable japanese tori gate kit";
     projectionTypename="SRP_Furniture_JapaneseToriGate_Default";
 	};
@@ -106,7 +106,7 @@ class CfgVehicles
   class SRP_Furniture_JapaneseToriGate2_Default_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Japanese Tori Gate 2 Kit";
+		displayName="Japanese Tori Gate Kit - Worn Decorated";
 		descriptionShort="A placeable japanese tori gate kit";
     projectionTypename="SRP_Furniture_JapaneseToriGate2_Default";
 	};

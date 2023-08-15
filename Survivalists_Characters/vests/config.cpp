@@ -118,6 +118,23 @@ class CfgVehicles
       "EMP6",
     };
   };
+  class SmershVest: Clothing
+	{
+    rootClassName="SmershVest";
+    colorVariants[]=
+    {
+      "White",
+      "Black",
+      "Green",
+      "Tan",
+      "Red",
+      "Purple",
+      "Blue",
+      "Pink",
+      "Olive",
+      "Storm",
+    };
+  };
   class PressVest_ColorBase: Clothing
 	{
 		repairableWithKits[]={5,3,7};

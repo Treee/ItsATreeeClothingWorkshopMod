@@ -427,7 +427,6 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\mountain_57_co.paa"
 		};
 	};
-
   class SmershBag_White: SmershBag
 	{
 		scope=2;
@@ -508,7 +507,102 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\Smersh_NBC_CO.paa"
 		};
 	};
-
+  class SmershBag_Red: SmershBag
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Red_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Red_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Red_CO.paa"
+		};
+	};
+  class SmershBag_Purple: SmershBag
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Purple_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Purple_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Purple_CO.paa"
+		};
+	};
+  class SmershBag_Blue: SmershBag
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Blue_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Blue_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Blue_CO.paa"
+		};
+	};
+  class SmershBag_Pink: SmershBag
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Pink_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Pink_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Pink_CO.paa"
+		};
+	};
+  class SmershBag_Olive: SmershBag
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Olive_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Olive_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Olive_CO.paa"
+		};
+	};
+  class SmershBag_Storm: SmershBag
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Storm_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Storm_CO.paa",
+			"Survivalists_Retextures\characters\backpacks\data\Smersh_Storm_CO.paa"
+		};
+	};
   class TaloonBag_Black1: TaloonBag_ColorBase
 	{
 		scope=2;

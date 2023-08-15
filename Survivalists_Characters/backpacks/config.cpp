@@ -136,6 +136,12 @@ class CfgVehicles
       "Green",
       "Tan",
       "NBC",
+      "Red",
+      "Purple",
+      "Blue",
+      "Pink",
+      "Olive",
+      "Storm",
     };
   }; 
   class ChildBag_ColorBase: Clothing

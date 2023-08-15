@@ -500,6 +500,11 @@ class CfgVehicles
 		scope=1;
 		model="Survivalists_Building\structures\fortification\srp_palisade_walldouble.p3d";
 	};
+  class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike_StaticObject: SRP_PrefabFortification_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\fortification\srp_wooden_house_wall.p3d";
+	};
 //======================================= END
 
 
