@@ -5579,6 +5579,7 @@ class CfgVehicles
       "Medical",
       "Tools",
       "Valuables",
+      "Books"
     };
 		slopeTolerance = 0.4;
 		yawPitchRollLimit[] = {45,45,45};

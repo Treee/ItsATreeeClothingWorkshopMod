@@ -32,3 +32,4 @@ class SRP_Wardrobe_Stag extends SRP_Wardrobe_ColorBase{};
 class SRP_Wardrobe_Tools extends SRP_Wardrobe_ColorBase{};
 class SRP_Wardrobe_Valuables extends SRP_Wardrobe_ColorBase{};
 class SRP_Wardrobe_YellowDoor extends SRP_Wardrobe_ColorBase{};
+class SRP_Wardrobe_Books extends SRP_Wardrobe_ColorBase{};
