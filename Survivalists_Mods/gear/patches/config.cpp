@@ -92,7 +92,8 @@ class CfgVehicles
       "patch_03",
       "patch_04",
       "SRP_Patch",
-      "SRP_PatchMirror"
+      "SRP_PatchMirror",      
+      "SRP_DisplayHook_PatchArmband",
     };
 		hiddenSelections[]=
     {
@@ -109,6 +110,14 @@ class CfgVehicles
       "Survivalists_Mods\gear\patches\data\srp_patchflag.rvmat",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"
     };
+    class InventorySlotsOffsets
+		{
+      class SRP_DisplayHook_PatchArmband
+			{
+				position[]={0,0,0};
+				orientation[]={0,0,0};
+			};
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -211,7 +220,11 @@ class CfgVehicles
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
 		// rotationFlags=16;
-		inventorySlot="Armband";
+		inventorySlot[]=
+    {    
+      "Armband",
+      "SRP_DisplayHook_LeatherArmband",
+    };
 		simulation="clothing";
 		vehicleClass="Clothing";
 		weight=1000;
@@ -226,7 +239,15 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\SRParmband_CO.paa"
-		};	
+		};
+    class InventorySlotsOffsets
+		{
+			class SRP_DisplayHook_LeatherArmband
+			{
+				position[]={0,0,0};
+				orientation[]={0,0,0};
+			};
+		};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\gear\patches\SRParmband_m.p3d";
@@ -276,8 +297,9 @@ class CfgVehicles
 		model="\DZ\characters\tops\armbend_g.p3d";
 		inventorySlot[]=
 		{
-			"Armband"
-		};
+      "Armband",
+      "SRP_DisplayHook_DoubleArmband",
+    };
 		itemInfo[]=
 		{
 			"Clothing",
@@ -316,6 +338,14 @@ class CfgVehicles
 			"\DZ\characters\tops\data\armbend_big_white_co.paa",
 			"\DZ\characters\tops\data\armbend_big_white_co.paa",
 		};	
+    class InventorySlotsOffsets
+		{
+			class SRP_DisplayHook_DoubleArmband
+			{
+				position[]={0,0,0};
+				orientation[]={0,0,0};
+			};
+		};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\gear\patches\srp_doublearmband_m.p3d";
@@ -374,7 +404,8 @@ class CfgVehicles
       "patch_03",
       "patch_04",
       "SRP_Patch",
-      "SRP_PatchMirror"
+      "SRP_PatchMirror",      
+      "SRP_DisplayHook_PatchArmband",
     };
 		hiddenSelections[]=
     {
@@ -391,6 +422,14 @@ class CfgVehicles
       "Survivalists_Mods\gear\patches\data\srp_patchlogo.rvmat",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"
     };
+    class InventorySlotsOffsets
+		{
+      class SRP_DisplayHook_PatchArmband
+			{
+				position[]={0,0,0};
+				orientation[]={0,0,0};
+			};
+		};
 		class DamageSystem
 		{
 			class GlobalHealth

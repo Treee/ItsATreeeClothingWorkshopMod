@@ -691,6 +691,30 @@ class CfgSlots
 	};
 
 //==========================Armband Hook
+  class Slot_SRP_DisplayHook_SingleArmband
+	{
+		name="SRP_DisplayHook_SingleArmband";
+		displayName="Single Armband Hook";
+		ghostIcon="set:dayz_inventory image:armband";
+	};
+  class Slot_SRP_DisplayHook_DoubleArmband
+	{
+		name="SRP_DisplayHook_DoubleArmband";
+		displayName="Double Armband Hook";
+		ghostIcon="set:dayz_inventory image:armband";
+	};
+  class Slot_SRP_DisplayHook_LeatherArmband
+	{
+		name="SRP_DisplayHook_LeatherArmband";
+		displayName="Leather Armband Hook";
+		ghostIcon="set:dayz_inventory image:armband";
+	};
+  class Slot_SRP_DisplayHook_PatchArmband
+	{
+		name="SRP_DisplayHook_PatchArmband";
+		displayName="Patch Armband Hook";
+		ghostIcon="set:dayz_inventory image:armband";
+	};
   class Slot_SRP_DisplayHook1
 	{
 		name="SRP_DisplayHook1";
@@ -3275,7 +3299,32 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_Book20"};
 		model="Survivalists_Mods\proxy\srp_book20_proxy.p3d";
 	};
-//===================== display hooks
+//===================== display hooks  
+  class Proxysrp_displayhook_singlearmbandproxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook_SingleArmband"};
+		model="Survivalists_Mods\proxy\srp_displayhook_singlearmbandproxy.p3d";
+	};
+  class Proxysrp_displayhook_doublearmbandproxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook_DoubleArmband"};
+		model="Survivalists_Mods\proxy\srp_displayhook_doublearmbandproxy.p3d";
+	};
+  class Proxysrp_displayhook_leatherarmbandproxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook_LeatherArmband"};
+		model="Survivalists_Mods\proxy\srp_displayhook_leatherarmbandproxy.p3d";
+	};
+  class Proxysrp_displayhook_patchflagarmbandproxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_DisplayHook_PatchArmband"};
+		model="Survivalists_Mods\proxy\srp_displayhook_patchflagarmbandproxy.p3d";
+	};
+
   class Proxysrp_displayhook_proxy1: ProxyAttachment
 	{
 		scope=2;

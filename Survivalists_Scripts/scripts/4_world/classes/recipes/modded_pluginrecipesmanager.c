@@ -310,10 +310,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_Craft_MakeMetalScraps_Cut);
       RegisterRecipe(new SRP_Craft_MakeMetalScraps_Cut_Advanced);
 
-      RegisterRecipe(new SRP_Craft_DisplayCaseHook_SingleArmband);
-      RegisterRecipe(new SRP_Craft_DisplayCaseHook_DoubleArmband);
-      RegisterRecipe(new SRP_Craft_DisplayCaseHook_LeatherArmband);
-      RegisterRecipe(new SRP_Craft_DisplayCaseHook_PatchArmband);
+      RegisterRecipe(new SRP_Craft_DisplayCaseHook);
+      RegisterRecipe(new SRP_Convert_DisplayCaseHook);
 
       RegisterRecipe(new Craft_SRP_Rag_Bleach);
 

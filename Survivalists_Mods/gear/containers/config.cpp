@@ -3419,8 +3419,8 @@ class CfgVehicles
 	};
   class SRP_GlassDisplayCase_Hook: Inventory_Base
 	{
-		scope=0;
-		displayName="Glass Display Hook - Base";
+		scope=2;
+		displayName="Glass Display Hook";
 		descriptionShort="A hook meant for a display case. Outside of a display case, this hook can only be stored when nothing is attached.";
 		model="Survivalists_Mods\gear\containers\srp_displaycase_hook.p3d";
 		weight=10000;
@@ -3453,7 +3453,10 @@ class CfgVehicles
     };
     attachments[]=
     {
-      "Armband"
+      "SRP_DisplayHook_SingleArmband",
+      "SRP_DisplayHook_DoubleArmband",
+      "SRP_DisplayHook_LeatherArmband",
+      "SRP_DisplayHook_PatchArmband",
     };
     class DamageSystem
 		{
@@ -3469,29 +3472,29 @@ class CfgVehicles
   class SRP_GlassDisplayCase_Hook_Armband: SRP_GlassDisplayCase_Hook
 	{
     scope=2;
-		displayName="Glass Display Hook - Armband";
-		descriptionShort="A hook that holds a single armband. Meant for a display case.";
+		displayName="--Deprecated-- Convert into SRP_GlassDisplayCase_Hook";
+		descriptionShort="--Deprecated-- Convert into SRP_GlassDisplayCase_Hook";
     model="Survivalists_Mods\gear\containers\srp_displaycase_hook_armband.p3d";
   };
   class SRP_GlassDisplayCase_Hook_ArmbandDouble: SRP_GlassDisplayCase_Hook
 	{
     scope=2;
-		displayName="Glass Display Hook - Double Armband";
-		descriptionShort="A hook that holds a single armband. Meant for a display case.";
+		displayName="--Deprecated-- Convert into SRP_GlassDisplayCase_Hook";
+		descriptionShort="--Deprecated-- Convert into SRP_GlassDisplayCase_Hook";
     model="Survivalists_Mods\gear\containers\srp_displaycase_hook_doublearmband.p3d";
   };
   class SRP_GlassDisplayCase_Hook_ArmbandLeather: SRP_GlassDisplayCase_Hook
 	{
     scope=2;
-		displayName="Glass Display Hook - Leather Armband";
-		descriptionShort="A hook that holds a leather armband. Meant for a display case.";
+		displayName="--Deprecated-- Convert into SRP_GlassDisplayCase_Hook";
+		descriptionShort="--Deprecated-- Convert into SRP_GlassDisplayCase_Hook";
     model="Survivalists_Mods\gear\containers\srp_displaycase_hook_leatherarmband.p3d";
   };
   class SRP_GlassDisplayCase_Hook_ArmbandPatch: SRP_GlassDisplayCase_Hook
 	{
     scope=2;
-		displayName="Glass Display Hook - Patch Armband";
-		descriptionShort="A hook that holds a patch armband. Meant for a display case.";
+		displayName="--Deprecated-- Convert into SRP_GlassDisplayCase_Hook";
+		descriptionShort="--Deprecated-- Convert into SRP_GlassDisplayCase_Hook";
     model="Survivalists_Mods\gear\containers\srp_displaycase_hook_patcharmband.p3d";
   };
 

@@ -185,6 +185,49 @@ class SRP_MuseumTable extends SRP_DisplayCase_Base{};
 
 class SRP_GlassDisplayCase_Hook extends Inventory_Base
 {
+  override void EEItemAttached(EntityAI item, string slot_name)
+	{
+		super.EEItemAttached(item, slot_name);
+    SRP_DoubleArmband_ColorBase armband;
+    if (Class.CastTo(armband, item))
+      armband.HideSelectionsForDisplayCase();
+	}
+  override void EEItemDetached(EntityAI item, string slot_name)
+	{
+		super.EEItemDetached(item, slot_name);
+    SRP_DoubleArmband_ColorBase armband;
+    if (Class.CastTo(armband, item))
+      armband.ResetSelectionsForWearing();
+	}
+	override bool CanDisplayAttachmentSlot(int slot_id)
+	{
+    if (super.CanDisplayAttachmentSlot(slot_id))
+    {
+      // if nothing is attached, show all slots
+      if (GetInventory().AttachmentCount() == 0)
+        return true;
+      else
+      {
+        // dont show any slots when attached to a case
+        SRP_DisplayCase_Base parent;
+        if (Class.CastTo(parent, GetHierarchyParent()))
+          return false;
+
+        // only show the slot of the attached armband when in hands
+        EntityAI attachment;
+        if (Class.CastTo(attachment, GetInventory().FindAttachment(slot_id)))
+          return true;
+          
+        return false;
+      }
+      return true;
+    }
+    return false;
+	}
+  override bool CanReceiveAttachment (EntityAI attachment, int slotId)
+	{
+		return GetInventory().AttachmentCount() == 0;
+	}
   override bool CanPutInCargo( EntityAI parent )
 	{
     return GetInventory().AttachmentCount() == 0;
