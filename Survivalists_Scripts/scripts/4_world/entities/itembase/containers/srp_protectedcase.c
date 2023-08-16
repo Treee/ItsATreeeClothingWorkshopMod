@@ -14,12 +14,40 @@ class SRP_SmallProtectorCase_Syringe extends SmallProtectorCase
 {
   override bool CanReceiveItemIntoCargo (EntityAI item)
 	{
-    return item.GetType().Contains("DUB_Mutant") && item.IsInherited(AntiChemInjector);
+    if (item.GetType().Contains("DUB_Mutant"))
+      return true;
+    if (item.IsInherited(AntiChemInjector))
+      return true;
+    if (item.IsInherited(SRP_FullSyringe_Base))
+      return true;
+    if (item.IsInherited(SRP_InjectionVial_Base))
+      return true;
+    if (item.IsInherited(BloodSyringe))
+      return true;
+    if (item.IsInherited(Syringe))
+      return true;
+    if (item.IsInherited(ClearSyringe))
+      return true;
+    return false;    
 	}
 
   override bool CanLoadItemIntoCargo( EntityAI item )
   {
-    return item.GetType().Contains("DUB_Mutant") && item.IsInherited(AntiChemInjector);
+    if (item.GetType().Contains("DUB_Mutant"))
+      return true;
+    if (item.IsInherited(AntiChemInjector))
+      return true;
+    if (item.IsInherited(SRP_FullSyringe_Base))
+      return true;
+    if (item.IsInherited(SRP_InjectionVial_Base))
+      return true;
+    if (item.IsInherited(BloodSyringe))
+      return true;
+    if (item.IsInherited(Syringe))
+      return true;
+    if (item.IsInherited(ClearSyringe))
+      return true;
+    return false;     
   }
 };
 class SRP_SmallProtectorCase_FlareBox extends SmallProtectorCase
