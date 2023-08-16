@@ -1280,10 +1280,7 @@ class CfgVehicles
 		weight=20;
 		absorbency=1;
 		itemSize[]={2,2};
-		inventorySlot[]=
-		{
-			"Rags"
-		};
+		inventorySlot[]={};
 		ChangeInventorySlot[]=
 		{
 			"Mask"

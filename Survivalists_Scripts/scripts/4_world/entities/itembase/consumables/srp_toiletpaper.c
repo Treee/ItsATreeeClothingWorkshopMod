@@ -1,0 +1,1 @@
+class SRP_ToiletPaper extends Bark_ColorBase{};
