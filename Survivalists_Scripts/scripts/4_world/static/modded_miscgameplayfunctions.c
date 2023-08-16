@@ -295,10 +295,7 @@ modded class MiscGameplayFunctions
      "FAL",
      "DUB_LAW",
      "DUB_RPG26",
-     "DUB_Bazooka",
-     "DUB_MG3",
      "DUB_PKM",
-     "DUB_BoysAT",
      "DUB_PPSH",
      "srp_aa12_default"
     };
