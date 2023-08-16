@@ -5562,7 +5562,6 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\gear\containers\data\srp_Wardrobe_CO.paa"
 		};
-    projectionTypename="SRP_Wardrobe_Default";
     rootClassName="SRP_Wardrobe";
     colorVariants[]=
     {
@@ -5581,8 +5580,7 @@ class CfgVehicles
       "Guns",
       "Medical",
       "Tools",
-      "Valuables",
-      "Books"
+      "Valuables"
     };
 		slopeTolerance = 0.4;
 		yawPitchRollLimit[] = {45,45,45};
@@ -5689,6 +5687,226 @@ class CfgVehicles
     projectionTypename="SRP_Wardrobe_Default";
   };
   class SRP_Wardrobe_Default: SRP_Wardrobe_ColorBase
+  {
+    scope=2;
+  };
+
+  class SRP_BookCase_ColorBase: Container_Base
+	{
+		scope=0;
+		displayName="Book Case";
+		descriptionShort="A very simple bookcase";
+		model="Survivalists_Mods\gear\containers\srp_bookcase.p3d";
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\containers\data\srp_Wardrobe_CO.paa"
+		};
+    attachments[]=
+    {
+      "SRP_Book1",
+			"SRP_Book2",
+			"SRP_Book3",
+			"SRP_Book4",
+			"SRP_Book5",
+			"SRP_Book6",
+			"SRP_Book7",
+			"SRP_Book8",
+			"SRP_Book9",
+			"SRP_Book10",
+			"SRP_Book11",
+			"SRP_Book12",
+			"SRP_Book13",
+			"SRP_Book14",
+			"SRP_Book15",
+			"SRP_Book16",
+			"SRP_Book17",
+			"SRP_Book18",
+			"SRP_Book19",
+			"SRP_Book20",
+      "SRP_Teddy1",
+      "SRP_Teddy2",
+      "SRP_Teddy3",
+      "SRP_Teddy4",
+      "SRP_Teddy5",
+      "SRP_Teddy6",
+      "SRP_Teddy7",
+    };
+    rootClassName="SRP_BookCase";
+    colorVariants[]=
+    {
+      "BlueDoor",
+      "CyanDoor",
+      "DarkWood",
+      "GreenDoor",
+      "PaleWood",
+      "PinkDoor",
+      "PurpleDoor",
+      "RedDoor",
+      "YellowDoor",
+    };
+		slopeTolerance = 0.4;
+		yawPitchRollLimit[] = {45,45,45};
+		alignHologramToTerain = 1;
+		physLayer = "item_large";
+		heavyItem = 1;
+		weight=10000;
+		itemSize[]={10,15};
+		itemBehaviour=0;
+		carveNavmesh=1;
+		canBeDigged=1;
+		rotationFlags=2;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=400;
+					transferToAttachmentsCoef=0.059999999;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\containers\data\srp_Wardrobe.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=8;
+					};
+					class Blood
+					{
+						damage=8;
+					};
+					class Shock
+					{
+						damage=8;
+					};
+				};
+			};
+		};
+		soundImpactType="wood";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class movement
+				{
+					soundSet="seachest_movement_SoundSet";
+					id=1;
+				};
+				class pickUpItem_Light
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=796;
+				};
+				class pickUpItem
+				{
+					soundSet="pickUpSeaChest_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="seachest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+    class GUIInventoryAttachmentsProps
+		{
+			class Shelf1
+			{
+				name="Shelf 1";
+				description="Rows of books.";
+				attachmentSlots[]=
+				{
+					"SRP_Book1",
+          "SRP_Book2",
+          "SRP_Book3",
+          "SRP_Book4",
+          "SRP_Book5",
+				};
+				icon="set:dayz_inventory image:book";
+			};
+      class Shelf2
+			{
+				name="Shelf 2";
+				description="Rows of books.";
+				attachmentSlots[]=
+				{
+					"SRP_Book6",
+          "SRP_Book7",
+          "SRP_Book8",
+          "SRP_Book9",
+          "SRP_Book10",
+				};
+				icon="set:dayz_inventory image:book";
+			};
+      class Shelf3
+			{
+				name="Shelf 3";
+				description="Rows of books.";
+				attachmentSlots[]=
+				{
+					"SRP_Book11",
+          "SRP_Book12",
+          "SRP_Book13",
+          "SRP_Book14",
+          "SRP_Book15",
+				};
+				icon="set:dayz_inventory image:book";
+			};
+      class Shelf4
+			{
+				name="Shelf 4";
+				description="Rows of books.";
+				attachmentSlots[]=
+				{
+					"SRP_Book16",
+          "SRP_Book17",
+          "SRP_Book18",
+          "SRP_Book19",
+          "SRP_Book20",
+				};
+				icon="set:dayz_inventory image:book";
+			};
+      class Teddy
+			{
+				name="Teddy";
+				description="Rows of teddies.";
+				attachmentSlots[]=
+				{
+          "SRP_Teddy1",
+          "SRP_Teddy2",
+          "SRP_Teddy3",
+          "SRP_Teddy4",
+          "SRP_Teddy5",
+          "SRP_Teddy6",
+          "SRP_Teddy7",
+				};
+				icon="set:dayz_inventory image:cat_common_cargo";
+			};
+		};
+	};
+  class SRP_BookCase_Default_Kit: SRP_KitBase
+  {
+    scope=2;
+		displayName="Book Case Kit";
+		descriptionShort="A simple book case kit";
+    projectionTypename="SRP_BookCase_Default";
+  };
+  class SRP_BookCase_Default: SRP_BookCase_ColorBase
   {
     scope=2;
   };
