@@ -311,7 +311,8 @@ class CfgVehicles
     {
       "Gray",
       "Yellow",
-      "Orange"
+      "Orange",
+      "White",
     };
 		class Protection 
     {

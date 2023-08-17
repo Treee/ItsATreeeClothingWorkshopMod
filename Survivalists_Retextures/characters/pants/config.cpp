@@ -79,6 +79,26 @@ class CfgVehicles
 			"\dz\characters\pants\data\NBC_Pants_yellow_co.paa"
 		};
 	};
+  class NBCPantsBase_White: NBCPantsBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\nbc_pants_white_co.paa",
+			"Survivalists_Retextures\characters\pants\data\nbc_pants_white_co.paa",
+			"Survivalists_Retextures\characters\pants\data\nbc_pants_white_co.paa"
+		};
+	};
+  class NBCPantsBase_WhiteStag: NBCPantsBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\nbc_pants_whitestag_co.paa",
+			"Survivalists_Retextures\characters\pants\data\nbc_pants_whitestag_co.paa",
+			"Survivalists_Retextures\characters\pants\data\nbc_pants_whitestag_co.paa"
+		};
+	};
   class Jeans_Orange: Jeans_ColorBase
 	{
 		scope=2;

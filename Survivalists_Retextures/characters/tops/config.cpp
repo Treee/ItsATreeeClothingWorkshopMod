@@ -93,6 +93,26 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\nbc_jacket_co.paa",
 		};
 	};
+  class NBCJacketBase_White: NBCJacketBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nbc_jacket_white_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nbc_jacket_white_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nbc_jacket_white_co.paa",
+		};
+	};
+  class NBCJacketBase_WhiteStag: NBCJacketBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\nbc_jacket_whitestag_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nbc_jacket_whitestag_co.paa",
+			"Survivalists_Retextures\characters\tops\data\nbc_jacket_whitestag_co.paa",
+		};
+	};
 	class Sweater_SantaRL: Sweater_ColorBase
 	{
 		scope=2;

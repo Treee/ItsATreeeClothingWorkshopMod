@@ -73,6 +73,22 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\gloves\data\nbc_gloves_yellow_co.paa"
 		};
 	};
+  class NBCGloves_White: NBCGloves_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\gloves\data\nbc_gloves_white_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\nbc_gloves_white_co.paa",
+			"Survivalists_Retextures\characters\gloves\data\nbc_gloves_white_co.paa"
+		};
+	};
 
   class OMNOGloves_Green: OMNOGloves_ColorBase
 	{

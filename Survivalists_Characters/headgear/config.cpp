@@ -461,7 +461,8 @@ class CfgVehicles
     {
       "Gray",
       "Yellow",
-      "Orange" 
+      "Orange",
+      "White",
     };
   };
   class HockeyHelmet_ColorBase: Clothing

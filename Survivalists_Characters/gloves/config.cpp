@@ -78,7 +78,8 @@ class CfgVehicles
     {
       "Blue",
       "Gray",
-      "Yellow",      
+      "Yellow",
+      "White",
     };
 	};    
   class SurgicalGloves_ColorBase: Clothing

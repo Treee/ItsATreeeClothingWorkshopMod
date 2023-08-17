@@ -978,6 +978,16 @@ class CfgVehicles
 			"\dz\characters\headgear\data\NBC_Hood_yellow_co.paa"
 		};
 	};
+  class NBCHood_White: NBCHoodBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\nbc_hood_white_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\nbc_hood_white_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\nbc_hood_white_co.paa",
+		};
+	};
   class Mich2001Helmet_EMP6: Mich2001Helmet
 	{
 		scope=2;

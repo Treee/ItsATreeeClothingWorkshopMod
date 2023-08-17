@@ -52,6 +52,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\shoes\data\nbc_boots_orange_co.paa"
 		};
 	};
+  class NBCBootsBase_White: NBCBootsBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_white_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_white_co.paa",
+			"Survivalists_Retextures\characters\shoes\data\nbc_boots_white_co.paa"
+		};
+	};
 	class AthleticShoes_White: AthleticShoes_ColorBase
 	{
 		scope=2;
