@@ -9,10 +9,13 @@ modded class SecurityConfig
   {
     EntityAI entity;
     TVectorArray positions = GetLootSpawnPositions();
-    int positionCount = positions.Count() - 1;    
+    int positionCount = positions.Count() - 1;
+    float chance; 
     for(int i = 0; i < positionCount; i++)
     {
-      Class.CastTo(entity, GetGame().CreateObjectEx(GetRandomLootType(), positions.Get(i), ECE_CREATEPHYSICS|ECE_KEEPHEIGHT|ECE_SETUP|0x800));
+      chance = Math.RandomFloatInclusive(0,1);
+      if (chance > 0.5)
+        Class.CastTo(entity, GetGame().CreateObjectEx(GetRandomLootType(), positions.Get(i), ECE_CREATEPHYSICS|ECE_KEEPHEIGHT|ECE_SETUP|0x800|ECE_NOLIFETIME|ECE_NOLIFETIME));
     }
   }
 

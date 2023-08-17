@@ -284,7 +284,18 @@ modded class MiscGameplayFunctions
       "M18SmokeGrenade_White",
       "RDG2SmokeGrenade_Black",
       "RDG2SmokeGrenade_White",
-      "ClaymoreMine"
+      "ClaymoreMine",
+      "SRP_Furniture_StoneBust_Default_Kit",
+      "SRP_Furniture_StoneBench_Default_Kit",
+      "SRP_Furniture_StoneColumn_Default_Kit",
+      "SRP_Furniture_StoneStatue_Angel_Default_Kit",
+      "SRP_Furniture_StoneStatue_Death_Default_Kit",
+      "SRP_Furniture_StoneStatue_Ganesh_Default_Kit",
+      "SRP_Furniture_StoneStatue_Gargoyle_Default_Kit",
+      "SRP_Furniture_StoneStatue_Guardian_Default_Kit",
+      "SRP_Furniture_StoneStatue_Pirate_Default_Kit",
+      "SRP_Furniture_StoneStatue_Woman_Default_Kit",
+      "SRP_Furniture_StoneStatue_StJacob_Default_Kit",
     };
   }
   static TStringArray GetSpawnableWeapons()
@@ -297,7 +308,7 @@ modded class MiscGameplayFunctions
      "DUB_RPG26",
      "DUB_PKM",
      "DUB_PPSH",
-     "srp_aa12_default"
+     "srp_aa12_basic"
     };
   }
   static TStringArray GetSpawnableOptics()
@@ -333,7 +344,7 @@ modded class MiscGameplayFunctions
      "Mag_Saiga_5Rnd",
      "Mag_Saiga_8Rnd",
      "Mag_Saiga_Drum20Rnd",
-     "srp_aa12_mag"
+     "srp_aa12_basic_mag"
     };
   }
   static TStringArray GetSpawnableAmmo()

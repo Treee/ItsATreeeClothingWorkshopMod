@@ -158,7 +158,7 @@ class cfgWeapons
 		};
 		weaponStateAnim="dz\anims\anm\player\reloads\Saiga\w_Saiga_states.anm";
 	};
-	class srp_aa12_default: srp_aa12_base
+	class srp_aa12_basic: srp_aa12_base
 	{
 		scope=2;
 		displayName="ESP AS-12";
@@ -200,7 +200,7 @@ class cfgWeapons
 class CfgMagazines
 {
 	class Mag_Saiga_Drum20Rnd;
-	class srp_aa12_mag: Mag_Saiga_Drum20Rnd
+	class srp_aa12_basic_mag: Mag_Saiga_Drum20Rnd
 	{
 		scope=2;
 		displayName="ESP AS-12 30 round Drum Mag";
