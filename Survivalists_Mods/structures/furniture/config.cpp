@@ -171,7 +171,7 @@ class CfgVehicles
 		model="Survivalists_Mods\structures\furniture\metalspikewall.p3d";
   };
 
-//========================================== "HOUSE" FURNITURE (NO CARGO)
+//========================================== "HOUSE" FURNITURE (NO CARGO)  
   class SRP_Furniture_Gazebo_Kit: SRP_KitBase
 	{
 		scope=2;
