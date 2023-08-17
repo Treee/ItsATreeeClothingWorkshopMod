@@ -998,6 +998,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Thucydides-and-Herodotus Low Poly" (https://skfb.ly/TsL6) by Francesco Coldesina is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Geisha Costume" (https://skfb.ly/o9FPv) by 3dia is licensed under Standard License (https://sketchfab.com/licenses)
+
+- "Dragon Plush" (https://skfb.ly/6xBKu) by Madison Riley is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki

@@ -62,6 +62,7 @@ class CfgVehicles
   class ALV_MV_CryeG3_Top_Colorbase;
   class ALV_MV_CryeG3LongSleeve_Top_Colorbase;
   class ALV_MV_ScoutingHoodie_Colorbase;
+  class SRP_KimonoSleeveless_Colorbase;
   
   class NBCJacketBase_Gray: NBCJacketBase
 	{
@@ -3544,4 +3545,21 @@ class CfgVehicles
 		hiddenSelections[]={"zbytek","Elbowpads"};
 		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\tops\data\MV_Scout_Hoodie_TS_CO.paa","Alv_Tac_Gear\Characters\Tops\Data\MV_Pads_Black_CO.paa"};
 	};
+
+  class SRP_KimonoSleeveless_Blue: SRP_KimonoSleeveless_Colorbase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\srp_kimono_co.paa"
+    };
+  };
+  class SRP_KimonoSleeveless_Red: SRP_KimonoSleeveless_Colorbase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\srp_kimono_red_co.paa"
+    };
+  };
 };

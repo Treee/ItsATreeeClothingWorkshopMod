@@ -1485,5 +1485,113 @@ class CfgVehicles
       };
     };
   };
+  class SRP_KimonoSleeveless_Colorbase: Clothing
+  {
+    scope=0;
+    displayName="Kimono";
+    descriptionShort="A delicate kimono made from silk.";
+    model="Survivalists_characters\tops\srp_kimono_sleeveless_g.p3d";
+    inventorySlot[]=
+    {
+      "Body"
+    };
+    rotationFlags=64;
+    weight=2000;
+    itemSize[]={3,3};
+    itemsCargoSize[]={6,5};
+    quickBarBonus=4;
+    varWetMax=0.38999999;
+    heatIsolation=0.75;
+		repairableWithKits[]={2,3,5};
+		repairCosts[]={20,20,25};
+    soundAttType="LeatherJacket";
+    hiddenSelections[]=
+    {
+      "zbytek",
+      "personality"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Characters\tops\data\srp_kimono_co.paa"
+    };
+    rootClassName="SRP_KimonoSleeveless";
+    colorVariants[]=
+    {
+      // "Blue",
+      "Red"
+    };
+    class DamageSystem
+    {
+      class GlobalHealth
+      {
+        class Health
+        {
+          hitpoints=130;
+          healthLevels[]=
+          {
+            {1,{"Survivalists_characters\tops\data\srp_kimono.rvmat"}},
+            {0.69999999,{"Survivalists_characters\tops\data\srp_kimono.rvmat"}},
+            {0.5,{"Survivalists_characters\tops\data\srp_kimono_damage.rvmat"}},
+            {0.30000001,{"Survivalists_characters\tops\data\srp_kimono_damage.rvmat"}},
+            {0,{"Survivalists_characters\tops\data\srp_kimono_destruct.rvmat"}}
+          };
+        };
+      };
+      class GlobalArmor
+      {
+        class Melee
+        {
+          class Health
+          {
+            damage=0.69;
+          };
+          class Blood
+          {
+            damage=0.69;
+          };
+          class Shock
+          {
+            damage=0.85000002;
+          };
+        };
+        class Infected
+        {
+          class Health
+          {
+            damage=0.70999998;
+          };
+          class Blood
+          {
+            damage=0.70999998;
+          };
+          class Shock
+          {
+            damage=0.85000002;
+          };
+        };
+      };
+    };
+    class ClothingTypes
+    {
+      male="Survivalists_characters\tops\srp_kimono_sleeveless_f.p3d";
+      female="Survivalists_characters\tops\srp_kimono_sleeveless_f.p3d";
+    };
+    class AnimEvents
+    {
+      class SoundWeapon
+      {
+        class pickUpItem
+        {
+          soundSet="Shirt_pickup_SoundSet";
+          id=797;
+        };
+        class drop
+        {
+          soundset="Shirt_drop_SoundSet";
+          id=898;
+        };
+      };
+    };
+  };
 //===================== END
 };
