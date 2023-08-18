@@ -12,7 +12,8 @@ class SRP_InjectionVial_InfluenzaCure extends SRP_InjectionVial_Base{};
 class SRP_InjectionVial_Cholera extends SRP_InjectionVial_Base{};
 class SRP_InjectionVial_CholeraCure extends SRP_InjectionVial_Base{};
 
-class SRP_InjectionVial_Ceftazidim extends SRP_InjectionVial_Base{};
+class SRP_InjectionVial_Ceftazidim extends SRP_InjectionVial_Base{}; //stomach virus cure
 class SRP_InjectionVial_StomachVirus extends SRP_InjectionVial_Base{};
-class SRP_InjectionVial_Ampicillin extends SRP_InjectionVial_Base{};
+
+class SRP_InjectionVial_Ampicillin extends SRP_InjectionVial_Base{}; //bacterial infection cure
 class SRP_InjectionVial_BacterialInfection extends SRP_InjectionVial_Base{};

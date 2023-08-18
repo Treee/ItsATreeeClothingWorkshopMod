@@ -573,14 +573,13 @@ class Craft_SRP_FullSyringe_StomachVirusCure extends Craft_SRP_FillSyringeBase
 		Debug.Log("Craft_SRP_FullSyringe_StomachVirusCure Recipe Do method called","recipes");
 	}
 };
-
+// bacterial infection... bad naming
 class Craft_SRP_FullSyringe_Ampicillin extends Craft_SRP_FillSyringeBase
 {
 	override void Init()
 	{
     super.Init();
 
-		InsertIngredient(0,"SRP_InjectionVial_Ampicillin");//you can insert multiple ingredients this way
 		InsertIngredient(0,"SRP_InjectionVial_BacterialInfection");//you can insert multiple ingredients this way
 
 		AddResult("SRP_FullSyringe_Ampicillin");//add results here
@@ -597,7 +596,7 @@ class Craft_SRP_FullSyringe_AmpicillinCure extends Craft_SRP_FillSyringeBase
 	{
     super.Init();
 
-		InsertIngredient(0,"SRP_InjectionVial_AmpicillinCure");//you can insert multiple ingredients this way
+		InsertIngredient(0,"SRP_InjectionVial_Ampicillin");//you can insert multiple ingredients this way
 
 		AddResult("SRP_FullSyringe_AmpicillinCure");//add results here
 	}
