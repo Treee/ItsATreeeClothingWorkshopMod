@@ -477,7 +477,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_WoodenScaffolding_IntermediateKit_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BuildingComponentFrame_Kit", "Wooden Scaffolding");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BuildingComponentFrame_Kit", "Wooden Scaffolding Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 

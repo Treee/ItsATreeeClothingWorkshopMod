@@ -88,24 +88,6 @@ class SRP_StreetLightMedium_Wood_Kit extends SRP_KitBase{};
 class SRP_StreetLightMedium_Kit extends SRP_KitBase{};
 class SRP_StreetLightSlim_Kit extends SRP_KitBase{};
 
-class SRP_BuildingComponentFrame_WornRamp_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_WornLPlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_WornUPlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_WornFlatPlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_WornFlatDoublePlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_WornSinglePlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_WornDoublePlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_WornLongDoublePlatform_Kit extends SRP_KitBase{};
-
-class SRP_BuildingComponentFrame_FineRamp_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_FineLPlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_FineUPlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_FineFlatPlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_FineFlatDoublePlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_FineSinglePlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_FineDoublePlatform_Kit extends SRP_KitBase{};
-class SRP_BuildingComponentFrame_FineLongDoublePlatform_Kit extends SRP_KitBase{};
-
 class SRP_ArmorStandBasic_Kit extends SRP_KitBase{};
 
 class SRP_MetalBox_Kit extends SRP_KitBase{};
@@ -129,12 +111,6 @@ class SRP_Carpentry_RussianHouseDoor_Kit extends SRP_KitBase{};
 class SRP_Carpentry_RussianHouseDoor1_Kit extends SRP_KitBase{};
 
 class SRP_Carpentry_WoodenHouseSingleRoom_Kit extends SRP_KitBase{};
-
-class SRP_Barricade_Wood_Kit extends SRP_KitBase{};
-class SRP_BarricadeWithWindow_Wood_Kit extends SRP_KitBase{};
-class SRP_WindowBarricade_Wood_Kit extends SRP_KitBase{};
-class SRP_WindowBarricadeTall_Wood_Kit extends SRP_KitBase{};
-class SRP_SpikeBarricade_Wood_Kit extends SRP_KitBase{};
 
 class SRP_Fridge_Kit extends SRP_KitBase{};
 class SRP_FridgeLarge_Kit extends SRP_KitBase{};
@@ -404,11 +380,9 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
 
 class SRP_MasonryMetallurgy_Intermediate_KitBase extends SRP_IntermediateCraftingKitBase{};
 class SRP_TetrisShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_BuildingComponentFrame_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WoodenShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WoodenDisplayKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_MetalShelfKit_Kit extends SRP_IntermediateCraftingKitBase{};
-class SRP_BarricadeKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_StreetLightKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_WoodenFurnitureKit_Kit extends SRP_IntermediateCraftingKitBase{};
 class SRP_StoneForgeWorkbenchStarter_Kit extends SRP_IntermediateCraftingKitBase

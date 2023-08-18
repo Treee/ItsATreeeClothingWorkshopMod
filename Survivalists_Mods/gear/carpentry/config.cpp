@@ -17,1091 +17,1269 @@ class CfgPatches
 class CfgVehicles
 {
   class HouseNoDestruct;
-  class Fence;
   class Inventory_Base;
 
   class SRP_KitBase;
+//========================================== SCOPE 1
+  class Land_SRP_BuildingComponentFrame_WornRamp: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";    
+    color="wornramp";
+  };
+  class Land_SRP_BuildingComponentFrame_WornLPlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornlplatform.p3d";    
+    color="wornlplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_WornUPlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornuplatform.p3d";    
+    color="wornuplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_WornFlatPlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatplatform.p3d";    
+    color="wornflatplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_WornFlatDoublePlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatdoubleplatform.p3d";    
+    color="wornflatdoubleplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_WornSinglePlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornsingleplatform.p3d";    
+    color="wornsingleplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_WornDoublePlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_worndoubleplatform.p3d";    
+    color="worndoubleplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_WornLongDoublePlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornlongdoubleplatform.p3d";    
+    color="wornlongdoubleplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_FineRamp: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineramp.p3d";    
+    color="fineramp";
+  };
+  class Land_SRP_BuildingComponentFrame_FineLPlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finelplatform.p3d";    
+    color="finelplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_FineUPlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineuplatform.p3d";    
+    color="fineuplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_FineFlatPlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineflatplatform.p3d";    
+    color="fineflatplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_FineFlatDoublePlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineflatdoubleplatform.p3d";    
+    color="fineflatplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_FineSinglePlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finesingleplatform.p3d";    
+    color="finesingleplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_FineDoublePlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finedoubleplatform.p3d";    
+    color="finedoubleplatform";
+  };
+  class Land_SRP_BuildingComponentFrame_FineLongDoublePlatform: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finelongdoubleplatform.p3d";    
+    color="finedoubleplatform";
+  };
+  class Land_SRP_Barricade_Wood: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade.p3d";
+	};
+  class Land_SRP_BarricadeWithWindow_Wood: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade_windowed.p3d";
+	};
+  class Land_SRP_WindowBarricade_Wood: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricade.p3d";
+	};
+  class Land_SRP_WindowBarricadeTall_Wood: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricadetall.p3d";
+	};
+  class Land_SRP_SpikeBarricade_Wood: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\gear\carpentry\srp_woodenspikebarricade.p3d";
+	};
+  class Land_SRP_Letter_A: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_a.p3d";
+    color="a";
+  };
+  class Land_SRP_Letter_B: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_b.p3d";
+    color="b";
+  };
+  class Land_SRP_Letter_C: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_c.p3d";
+    color="c";
+  };
+  class Land_SRP_Letter_D: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_d.p3d";
+    color="d";
+  };
+  class Land_SRP_Letter_E: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_e.p3d";
+    color="e";
+  };
+  class Land_SRP_Letter_F: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_f.p3d";
+    color="f";
+  };
+  class Land_SRP_Letter_G: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_g.p3d";
+    color="g";
+  };
+  class Land_SRP_Letter_H: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_h.p3d";
+    color="h";
+  };
+  class Land_SRP_Letter_I: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_i.p3d";
+    color="i";
+  };
+  class Land_SRP_Letter_J: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_j.p3d";
+    color="j";
+  };
+  class Land_SRP_Letter_K: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_k.p3d";
+    color="k";
+  };
+  class Land_SRP_Letter_L: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_l.p3d";
+    color="l";
+  };
+  class Land_SRP_Letter_M: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_m.p3d";
+    color="m";
+  };
+  class Land_SRP_Letter_N: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_n.p3d";
+    color="n";
+  };
+  class Land_SRP_Letter_O: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_o.p3d";
+    color="o";
+  };
+  class Land_SRP_Letter_P: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_p.p3d";
+    color="p";
+  };
+  class Land_SRP_Letter_Q: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_q.p3d";
+    color="q";
+  };
+  class Land_SRP_Letter_R: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_r.p3d";
+    color="r";
+  };
+  class Land_SRP_Letter_S: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_s.p3d";
+    color="s";
+  };
+  class Land_SRP_Letter_T: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_t.p3d";
+    color="t";
+  };
+  class Land_SRP_Letter_U: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_u.p3d";
+    color="u";
+  };
+  class Land_SRP_Letter_V: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_v.p3d";
+    color="v";
+  };
+  class Land_SRP_Letter_W: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_w.p3d";
+    color="w";
+  };
+  class Land_SRP_Letter_X: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_x.p3d";
+    color="x";
+  };
+  class Land_SRP_Letter_Y: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_y.p3d";
+    color="y";
+  };
+  class Land_SRP_Letter_Z: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_z.p3d";
+    color="z";
+  };
+  class Land_SRP_Letter_0: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_0.p3d";
+    color="0";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_1: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_1.p3d";
+    color="1";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_2: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_2.p3d";
+    color="2";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_3: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_3.p3d";
+    color="3";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_4: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_4.p3d";
+    color="4";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_5: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_5.p3d";
+    color="5";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_6: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_6.p3d";
+    color="6";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_7: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_7.p3d";
+    color="7";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_8: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_8.p3d";
+    color="8";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_9: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_numbers_9.p3d";
+    color="9";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Ampersand: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_ampersand.p3d";
+    color="ampersand";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Asterisk: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_asterisk.p3d";
+    color="asterisk";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Dollars: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_dollars.p3d";
+    color="dollars";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Equals: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_equals.p3d";
+    color="equals";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Exclamation: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_exclamation.p3d";
+    color="exclamation";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Hash: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_hash.p3d";
+    color="hash";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Parenthesis: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_parenthesis.p3d";
+    color="parenthesis";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Percent: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_percent.p3d";
+    color="percent";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Plus: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_plus.p3d";
+    color="plus";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Question: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_question.p3d";
+    color="question";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Slash: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_slash.p3d";
+    color="slash";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_Times: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_times.p3d";
+    color="times";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_ArrowUp: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowup.p3d";
+    color="arrowup";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_ArrowDown: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowdown.p3d";
+    color="arrowdown";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_ArrowLeft: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowleft.p3d";
+    color="arrowleft";
+    inventorySlot[]={};
+  };
+  class Land_SRP_Letter_ArrowRight: HouseNoDestruct
+  {
+		scope=1;
+    model="Survivalists_Mods\gear\carpentry\srp_letters_signs_arrowright.p3d";
+    color="arrowright";
+    inventorySlot[]={};
+  };
 
+//========================================== "HOUSE" BUILDING COMPONENTS (NO CARGO)  
 //------------------------------- BUILDING FRAMES
-  class SRP_BuildingComponentFrame_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Building Component Kit";
-		descriptionShort="A Building Component Kit. Use epoxy putty to finish.";
+		displayName="Intermediate Building Component Kit";
+		descriptionShort="A Building Component Kit used to make a wide variety of ramps, walkways and platforms. Use epoxy putty to finish.";
 	};
-
-  class SRP_BuildingComponentFrame_ColorBase: Inventory_Base // new
-	{
-		scope=0;
-		displayName="Wooden Building Component";
-		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";
-		slopeTolerance=0.30000001;
-		weight=1000;
-		itemBehaviour=0;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		itemSize[]={15,15};
-    itemsCargoSize[]={0,0};
-    color="base";
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-		hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-			"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"
-		};		
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=100000000;
-					healthLevels[]=
-					{
-						{1.0,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
-            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
-            {0.5,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
-            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Projectile
-				{
-					class Health {damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class Melee
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class FragGrenade
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-			};
-		};
-	};
-
-  class SRP_BuildingComponentFrame_WornRamp_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_WornRamp_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Worn Ramp";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_WornRamp";
 	};
-  class SRP_BuildingComponentFrame_WornRamp: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_WornRamp: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Worn Ramp";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";    
     color="wornramp";
   };
 
-  class SRP_BuildingComponentFrame_WornLPlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_WornLPlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Worn L Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_WornLPlatform";
 	};
-  class SRP_BuildingComponentFrame_WornLPlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_WornLPlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Worn L Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornlplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornlplatform.p3d";    
     color="wornlplatform";
   };
   
-  class SRP_BuildingComponentFrame_WornUPlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_WornUPlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Worn U Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_WornUPlatform";
 	};
-  class SRP_BuildingComponentFrame_WornUPlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_WornUPlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Worn U Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornuplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornuplatform.p3d";    
     color="wornuplatform";
   };
 
-  class SRP_BuildingComponentFrame_WornFlatPlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_WornFlatPlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Worn Flat Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_WornFlatPlatform";
 	};
-  class SRP_BuildingComponentFrame_WornFlatPlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_WornFlatPlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Worn Flat Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatplatform.p3d";    
     color="wornflatplatform";
   };
 
-  class SRP_BuildingComponentFrame_WornFlatDoublePlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_WornFlatDoublePlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Worn Long Flat Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_WornFlatDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_WornFlatDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_WornFlatDoublePlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Worn Long Flat Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatdoubleplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornflatdoubleplatform.p3d";    
     color="wornflatdoubleplatform";
   };
 
-  class SRP_BuildingComponentFrame_WornSinglePlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_WornSinglePlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Worn Single Rail Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_WornSinglePlatform";
 	};
-  class SRP_BuildingComponentFrame_WornSinglePlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_WornSinglePlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Worn Single Rail Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornsingleplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornsingleplatform.p3d";    
     color="wornsingleplatform";
   };
 
-  class SRP_BuildingComponentFrame_WornDoublePlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_WornDoublePlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Worn Double Rail Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_WornDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_WornDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_WornDoublePlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Worn Double Rail Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_worndoubleplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_worndoubleplatform.p3d";    
     color="worndoubleplatform";
   };
 
-  class SRP_BuildingComponentFrame_WornLongDoublePlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_WornLongDoublePlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Worn Long Double Rail Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_WornLongDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_WornLongDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_WornLongDoublePlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Worn Long Double Rail Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornlongdoubleplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornlongdoubleplatform.p3d";    
     color="wornlongdoubleplatform";
   };
 
-
-
-  class SRP_BuildingComponentFrame_FineRamp_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_FineRamp_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Fine Ramp";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_FineRamp";
 	};
-  class SRP_BuildingComponentFrame_FineRamp: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_FineRamp: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Fine Ramp";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineramp.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineramp.p3d";    
     color="fineramp";
   };
 
-  class SRP_BuildingComponentFrame_FineLPlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_FineLPlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Fine L Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_FineLPlatform";
 	};
-  class SRP_BuildingComponentFrame_FineLPlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_FineLPlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Fine L Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finelplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finelplatform.p3d";    
     color="finelplatform";
   };
   
-  class SRP_BuildingComponentFrame_FineUPlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_FineUPlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Fine U Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_FineUPlatform";
 	};
-  class SRP_BuildingComponentFrame_FineUPlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_FineUPlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Fine U Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineuplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineuplatform.p3d";    
     color="fineuplatform";
   };
 
-  class SRP_BuildingComponentFrame_FineFlatPlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_FineFlatPlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Fine Flat Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_FineFlatPlatform";
 	};
-  class SRP_BuildingComponentFrame_FineFlatPlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_FineFlatPlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Fine Flat Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineflatplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineflatplatform.p3d";    
     color="fineflatplatform";
   };
 
-  class SRP_BuildingComponentFrame_FineFlatDoublePlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_FineFlatDoublePlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Fine Long Flat Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_FineFlatDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_FineFlatDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_FineFlatDoublePlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Fine Long Flat Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineflatdoubleplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_fineflatdoubleplatform.p3d";    
     color="fineflatplatform";
   };
 
-  class SRP_BuildingComponentFrame_FineSinglePlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_FineSinglePlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Fine Single Rail Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_FineSinglePlatform";
 	};
-  class SRP_BuildingComponentFrame_FineSinglePlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_FineSinglePlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Fine Single Rail Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finesingleplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finesingleplatform.p3d";    
     color="finesingleplatform";
   };
 
-  class SRP_BuildingComponentFrame_FineDoublePlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_FineDoublePlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Fine Double Rail Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_FineDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_FineDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_FineDoublePlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Fine Double Rail Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finedoubleplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finedoubleplatform.p3d";    
     color="finedoubleplatform";
   };
 
-  class SRP_BuildingComponentFrame_FineLongDoublePlatform_Kit: SRP_KitBase //new
+  class SRP_BuildingComponentFrame_FineLongDoublePlatform_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Building Component Kit - Fine Long Double Rail Platform";
 		descriptionShort="A Building Component Kit";
+    projectionTypename="SRP_BuildingComponentFrame_FineLongDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_FineLongDoublePlatform: SRP_BuildingComponentFrame_ColorBase // new
+  class SRP_BuildingComponentFrame_FineLongDoublePlatform: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Building Component - Fine Long Double Rail Platform";
 		descriptionShort="This component can be used to build up a large compound.";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finelongdoubleplatform.p3d";
-    itemsCargoSize[]={0,0};
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_finelongdoubleplatform.p3d";    
     color="finedoubleplatform";
   };
 
-//-------------------------------- Barricades
-  class SRP_BarricadeKit_Kit: SRP_KitBase //new
+//-------------------------------- BARRICADES
+  class SRP_BarricadeKit_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Barricade Kit";
-		descriptionShort="A Barricade Kit - Still needs a bit of work.  Use epoxy putty to finish.";
+		displayName="Intermediate Barricade Kit";
+		descriptionShort="A Barricade Kit capable of building barricades for windows, streets, buildings and more. - Still needs a bit of work.  Use epoxy putty to finish.";
 	};
-
-  class SRP_Barricade_Wood_Kit: SRP_KitBase //new
+  class SRP_Barricade_Wood_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Barricade Kit";
 		descriptionShort="A Wooden Barricade Kit";
+    projectionTypename="SRP_Barricade_Wood";
 	};
-
-  class SRP_Barricade_Wood: Inventory_Base // new
+  class SRP_Barricade_Wood: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Barricade";
 		descriptionShort="This wood might one way sit between you and a bullet.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade.p3d";
-		slopeTolerance=0.30000001;
-		weight=1000;
-		itemBehaviour=0;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		itemSize[]={15,15};
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-		hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
-		};		
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=1000000;
-					healthLevels[]=
-					{
-						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Projectile
-				{
-					class Health {damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class Melee
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class FragGrenade
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-			};
-		};
 	};
 
-  class SRP_BarricadeWithWindow_Wood_Kit: SRP_KitBase //new
+  class SRP_BarricadeWithWindow_Wood_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Wooden Barricade Kit";
-		descriptionShort="A Wooden Barricade Kit";
+		displayName="Wooden Barricade Kit - With Window";
+		descriptionShort="A Wooden Barricade Kit with a window to peak out to the other side.";
+    projectionTypename="SRP_BarricadeWithWindow_Wood";
 	};
-
-  class SRP_BarricadeWithWindow_Wood: Inventory_Base // new
+  class SRP_BarricadeWithWindow_Wood: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Barricade";
 		descriptionShort="This wood might one way sit between you and a bullet.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade_windowed.p3d";
-		slopeTolerance=0.30000001;
-		weight=1000;
-		itemBehaviour=0;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		itemSize[]={15,15};
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-		hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
-		};		
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=1000000;
-					healthLevels[]=
-					{
-						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Projectile
-				{
-					class Health {damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class Melee
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class FragGrenade
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-			};
-		};
 	};
 
-  class SRP_WindowBarricade_Wood_Kit: SRP_KitBase //new
+  class SRP_WindowBarricade_Wood_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Window Barricade Kit";
 		descriptionShort="A Wooden Window Barricade Kit";
+    projectionTypename="SRP_WindowBarricade_Wood";
 	};
-
-  class SRP_WindowBarricade_Wood: Inventory_Base // new
+  class SRP_WindowBarricade_Wood: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Window Barricade";
 		descriptionShort="This wood might one way sit between you and a bullet.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricade.p3d";
-		slopeTolerance=0.30000001;
-		weight=1000;
-		itemBehaviour=0;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		itemSize[]={15,15};
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-		hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
-		};		
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=1000000;
-					healthLevels[]=
-					{
-						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Projectile
-				{
-					class Health {damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class Melee
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class FragGrenade
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-			};
-		};
 	};
 
-  class SRP_WindowBarricadeTall_Wood_Kit: SRP_KitBase //new
+  class SRP_WindowBarricadeTall_Wood_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Tall Wooden Window Barricade Kit";
 		descriptionShort="A Tall Wooden Window Barricade Kit";
+    projectionTypename="SRP_WindowBarricadeTall_Wood";
 	};
-
-  class SRP_WindowBarricadeTall_Wood: Inventory_Base // new
+  class SRP_WindowBarricadeTall_Wood: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Tall Wooden Window Barricade";
 		descriptionShort="This wood might one way sit between you and a bullet.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricadetall.p3d";
-		slopeTolerance=0.30000001;
-		weight=1000;
-		itemBehaviour=0;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		itemSize[]={15,15};
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-		hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
-		};		
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=1000000;
-					healthLevels[]=
-					{
-						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Projectile
-				{
-					class Health {damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class Melee
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class FragGrenade
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-			};
-		};
 	};
 
-  class SRP_SpikeBarricade_Wood_Kit: SRP_KitBase //new
+  class SRP_SpikeBarricade_Wood_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Spike Barricade Kit";
 		descriptionShort="A Wooden Spike Barricade Kit";
+    projectionTypename="SRP_SpikeBarricade_Wood";
 	};
-
-  class SRP_SpikeBarricade_Wood: Inventory_Base // new
+  class SRP_SpikeBarricade_Wood: HouseNoDestruct
 	{
 		scope=2;
+    storageCategory=1;
 		displayName="Wooden Spike Barricade";
 		descriptionShort="This puts some distance between you and them.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenspikebarricade.p3d";
-		slopeTolerance=0.30000001;
-		weight=1000;
-		itemBehaviour=0;
-		physLayer="item_large";
-		allowOwnedCargoManipulation=1;
-		itemSize[]={15,15};
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-		hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-    {
-			"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"
-		};		
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=1000000;
-					healthLevels[]=
-					{
-						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
-            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
-            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
-            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
-            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Projectile
-				{
-					class Health {damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class Melee
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-				class FragGrenade
-				{
-          class Health{damage=0;};
-          class Blood{damage=0;};
-          class Shock{damage=0;};
-				};
-			};
-		};
 	};
 
-//============================ LETTERS
+//============================ LETTER KITS
   // intermediate kit, chooses an option
-  class SRP_LetterKit_Kit: SRP_KitBase //new
+  class SRP_LetterKit_Kit: SRP_KitBase
 	{
 		scope=2;
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
 	};
   // deploy kit. one per symbol
-  class SRP_Letter_A_Kit: SRP_KitBase //new
+  class SRP_Letter_A_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_A";
 	};
-  class SRP_Letter_B_Kit: SRP_KitBase //new
+  class SRP_Letter_B_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_B";
 	};
-  class SRP_Letter_C_Kit: SRP_KitBase //new
+  class SRP_Letter_C_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_C";
 	};
-  class SRP_Letter_D_Kit: SRP_KitBase //new
+  class SRP_Letter_D_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_D";
 	};
-  class SRP_Letter_E_Kit: SRP_KitBase //new
+  class SRP_Letter_E_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_E";
 	};
-  class SRP_Letter_F_Kit: SRP_KitBase //new
+  class SRP_Letter_F_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_F";
 	};
-  class SRP_Letter_G_Kit: SRP_KitBase //new
+  class SRP_Letter_G_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_G";
 	};
-  class SRP_Letter_H_Kit: SRP_KitBase //new
+  class SRP_Letter_H_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_H";
 	};
-  class SRP_Letter_I_Kit: SRP_KitBase //new
+  class SRP_Letter_I_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_I";
 	};
-  class SRP_Letter_J_Kit: SRP_KitBase //new
+  class SRP_Letter_J_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_J";
 	};
-  class SRP_Letter_K_Kit: SRP_KitBase //new
+  class SRP_Letter_K_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_K";
 	};
-  class SRP_Letter_L_Kit: SRP_KitBase //new
+  class SRP_Letter_L_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_L";
 	};
-  class SRP_Letter_M_Kit: SRP_KitBase //new
+  class SRP_Letter_M_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_M";
 	};
-  class SRP_Letter_N_Kit: SRP_KitBase //new
+  class SRP_Letter_N_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_N";
 	};
-  class SRP_Letter_O_Kit: SRP_KitBase //new
+  class SRP_Letter_O_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_O";
 	};
-  class SRP_Letter_P_Kit: SRP_KitBase //new
+  class SRP_Letter_P_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_P";
 	};
-  class SRP_Letter_Q_Kit: SRP_KitBase //new
+  class SRP_Letter_Q_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Q";
 	};
-  class SRP_Letter_R_Kit: SRP_KitBase //new
+  class SRP_Letter_R_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_F";
 	};
-  class SRP_Letter_S_Kit: SRP_KitBase //new
+  class SRP_Letter_S_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_S";
 	};
-  class SRP_Letter_T_Kit: SRP_KitBase //new
+  class SRP_Letter_T_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_T";
 	};
-  class SRP_Letter_U_Kit: SRP_KitBase //new
+  class SRP_Letter_U_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_U";
 	};
-  class SRP_Letter_V_Kit: SRP_KitBase //new
+  class SRP_Letter_V_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_V";
 	};
-  class SRP_Letter_W_Kit: SRP_KitBase //new
+  class SRP_Letter_W_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_W";
 	};
-  class SRP_Letter_X_Kit: SRP_KitBase //new
+  class SRP_Letter_X_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_X";
 	};
-  class SRP_Letter_Y_Kit: SRP_KitBase //new
+  class SRP_Letter_Y_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Y";
 	};
-  class SRP_Letter_Z_Kit: SRP_KitBase //new
+  class SRP_Letter_Z_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Letter Kit";
 		descriptionShort="A Wooden Letter Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Z";
 	};
-  class SRP_Letter_0_Kit: SRP_KitBase //new
+  class SRP_Letter_0_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_0";
 	};
-  class SRP_Letter_1_Kit: SRP_KitBase //new
+  class SRP_Letter_1_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_1";
 	};
-  class SRP_Letter_2_Kit: SRP_KitBase //new
+  class SRP_Letter_2_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_2";
 	};
-  class SRP_Letter_3_Kit: SRP_KitBase //new
+  class SRP_Letter_3_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_3";
 	};
-  class SRP_Letter_4_Kit: SRP_KitBase //new
+  class SRP_Letter_4_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_4";
 	};
-  class SRP_Letter_5_Kit: SRP_KitBase //new
+  class SRP_Letter_5_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_5";
 	};
-  class SRP_Letter_6_Kit: SRP_KitBase //new
+  class SRP_Letter_6_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_6";
 	};
-  class SRP_Letter_7_Kit: SRP_KitBase //new
+  class SRP_Letter_7_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_7";
 	};
-  class SRP_Letter_8_Kit: SRP_KitBase //new
+  class SRP_Letter_8_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_8";
 	};
-  class SRP_Letter_9_Kit: SRP_KitBase //new
+  class SRP_Letter_9_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Number Kit";
 		descriptionShort="A Wooden Number Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_9";
 	};
-  class SRP_Letter_Ampersand_Kit: SRP_KitBase //new
+  class SRP_Letter_Ampersand_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Ampersand";
 	};
-  class SRP_Letter_Asterisk_Kit: SRP_KitBase //new
+  class SRP_Letter_Asterisk_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Asterisk";
 	};
-  class SRP_Letter_Dollars_Kit: SRP_KitBase //new
+  class SRP_Letter_Dollars_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Dollars";
 	};
-  class SRP_Letter_Equals_Kit: SRP_KitBase //new
+  class SRP_Letter_Equals_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Equals";
 	};
-  class SRP_Letter_Exclamation_Kit: SRP_KitBase //new
+  class SRP_Letter_Exclamation_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Exclamation";
 	};
-  class SRP_Letter_Hash_Kit: SRP_KitBase //new
+  class SRP_Letter_Hash_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Hash";
 	};
-  class SRP_Letter_Parenthesis_Kit: SRP_KitBase //new
+  class SRP_Letter_Parenthesis_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Parenthesis";
 	};
-  class SRP_Letter_Percent_Kit: SRP_KitBase //new
+  class SRP_Letter_Percent_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Percent";
 	};
-  class SRP_Letter_Plus_Kit: SRP_KitBase //new
+  class SRP_Letter_Plus_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Plus";
 	};
-  class SRP_Letter_Question_Kit: SRP_KitBase //new
+  class SRP_Letter_Question_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Question";
 	};
-  class SRP_Letter_Slash_Kit: SRP_KitBase //new
+  class SRP_Letter_Slash_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Slash";
 	};
-  class SRP_Letter_Times_Kit: SRP_KitBase //new
+  class SRP_Letter_Times_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_Times";
 	};
-  class SRP_Letter_ArrowUp_Kit: SRP_KitBase //new
+  class SRP_Letter_ArrowUp_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_ArrowUp";
 	};
-  class SRP_Letter_ArrowDown_Kit: SRP_KitBase //new
+  class SRP_Letter_ArrowDown_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_ArrowDown";
 	};
-  class SRP_Letter_ArrowLeft_Kit: SRP_KitBase //new
+  class SRP_Letter_ArrowLeft_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_ArrowLeft";
 	};
-  class SRP_Letter_ArrowRight_Kit: SRP_KitBase //new
+  class SRP_Letter_ArrowRight_Kit: SRP_KitBase
 	{
 		scope=2;    
 		displayName="Wooden Symbol Kit";
 		descriptionShort="A Wooden Symbol Kit";
     itemBehaviour=1;
+    projectionTypeName="SRP_Letter_ArrowRight";
 	};
   
-// DEPLOYED LETTER - DEFAULT
-  class SRP_Letter_Colorbase: Inventory_Base // new
+//============================ DEPLOYED LETTERS
+  class SRP_Letter_Colorbase: HouseNoDestruct
 	{
 		scope=0;
-		displayName="Letter";
+    storageCategory=1;
+		displayName="Carved Letter";
 		descriptionShort="This letter was fashioned out of some sort of material.";
 		model="Survivalists_Mods\gear\carpentry\srp_letters_a.p3d";
 		slopeTolerance=0.30000001;
@@ -7666,7 +7844,7 @@ class CfgVehicles
   };
 
 //======================================= POOL BALLS
-  class SRP_PoolBall_ColorBase: Inventory_Base // new
+  class SRP_PoolBall_ColorBase: Inventory_Base
 	{
 		scope=0;
 		displayName="Pool Ball";
@@ -7708,7 +7886,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_PoolBall_8: SRP_PoolBall_ColorBase // new
+  class SRP_PoolBall_8: SRP_PoolBall_ColorBase
   {
     scope=2;
 		displayName="Pool Ball - 8";

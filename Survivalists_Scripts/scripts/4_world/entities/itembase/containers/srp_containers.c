@@ -349,35 +349,6 @@ class SRP_Cardboardbox extends SRP_Container_Base{};
 class SRP_StonePile_Small extends SRP_Container_Base{};
 class SRP_StonePile_Large extends SRP_Container_Base{};
 
-class SRP_BuildingComponentFrame_ColorBase extends SRP_Container_Base
-{
-  override string GetCraftingKitName()
-  {
-    return "SRP_BuildingComponentFrame_Kit";
-  }
-  override bool IsHealthVisible()
-	{
-		return false;
-	}
-};
-class SRP_BuildingComponentFrame_WornRamp extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_WornLPlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_WornUPlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_WornFlatPlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_WornFlatDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_WornSinglePlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_WornDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_WornLongDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
-
-class SRP_BuildingComponentFrame_FineRamp extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_FineLPlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_FineUPlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_FineFlatPlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_FineFlatDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_FineSinglePlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_FineDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
-class SRP_BuildingComponentFrame_FineLongDoublePlatform extends SRP_BuildingComponentFrame_ColorBase{};
-
 class SRP_MedicalBedSmall_Wood extends SRP_Container_Base
 {
   override string GetCraftingKitName()
@@ -589,62 +560,6 @@ class SRP_HangingWoodenSign extends SRP_StreetSign_Base{};
 class SRP_SignBoard_Basic extends SRP_StreetSign_Base{};
 class SRP_SignBoard_Medieval extends SRP_StreetSign_Base{};
 class SRP_SignBoard_Medieval_2 extends SRP_StreetSign_Base{};
-
-class SRP_Barricade_Wood extends SRP_Container_Base
-{
-  override bool DisableVicinityIcon()
-	{
-		return true;
-	}
-  override string GetCraftingKitName()
-  {
-    return "SRP_BarricadeKit_Kit";
-  }
-};
-class SRP_BarricadeWithWindow_Wood extends SRP_Container_Base
-{
-  override bool DisableVicinityIcon()
-	{
-		return true;
-	}
-  override string GetCraftingKitName()
-  {
-    return "SRP_BarricadeKit_Kit";
-  }
-};
-class SRP_WindowBarricade_Wood extends SRP_Container_Base
-{
-  override bool DisableVicinityIcon()
-	{
-		return true;
-	}
-  override string GetCraftingKitName()
-  {
-    return "SRP_BarricadeKit_Kit";
-  }
-};
-class SRP_WindowBarricadeTall_Wood extends SRP_Container_Base
-{
-  override bool DisableVicinityIcon()
-	{
-		return true;
-	}
-  override string GetCraftingKitName()
-  {
-    return "SRP_BarricadeKit_Kit";
-  }
-};
-class SRP_SpikeBarricade_Wood extends SRP_Container_Base
-{
-  override bool DisableVicinityIcon()
-	{
-		return true;
-	}
-  override string GetCraftingKitName()
-  {
-    return "SRP_BarricadeKit_Kit";
-  }
-};
 
 // These need to be deleted by an admin after placement.
 class SRP_ForestSign_Original extends SRP_Container_Base{};
