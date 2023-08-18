@@ -63,6 +63,7 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_KitBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/paper.anm");
     //Clothing
     
+    pType.AddItemInHandsProfileIK("SRP_DragonPlushie_ColorBase","dz/anims/workspaces/player/player_main/player_main_1h.asi",pBehavior,"dz/anims/anm/player/ik/gear/TeddyBear.anm");
     // Vest Pouches
     pType.AddItemInHandsProfileIK("SRP_PouchBase_Small", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/canteen.anm");	
     pType.AddItemInHandsProfileIK("SRP_PouchBase_Large", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/canteen.anm");	

@@ -20,6 +20,7 @@ class CfgVehicles
   class SRP_Guitar_Alpocalypse;
   class SRP_Carpet_ColorBase;
   class SRP_CarpetRug_ColorBase;
+  class SRP_DragonPlushie_ColorBase;
 
 //================================================ VANILLA
   class LargeTent_Stag: LargeTent
@@ -503,5 +504,30 @@ class CfgVehicles
 		scope=2;
     hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\doormatrug_Planets_co.paa"};
+	};
+
+  class SRP_DragonPlushie_Green: SRP_DragonPlushie_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_green_co.paa"
+		};
+	};
+  class SRP_DragonPlushie_Grape: SRP_DragonPlushie_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_Grape_co.paa"
+		};
 	};
 };

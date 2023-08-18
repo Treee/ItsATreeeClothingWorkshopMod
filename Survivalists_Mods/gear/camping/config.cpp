@@ -31,80 +31,7 @@ class CfgVehicles
 
   class Clothing;
 
-  //----------------------- MOD OVERRIDES
-  class Msp_Planter_Base;
-  class Msp_Storage_Base;
-  class Msp_Greenhouse_Base;
-  class Msp_Kit;
-
-  class Msp_PlanterBox: Msp_Planter_Base
-  {
-    scope=0;
-  };
-  class Msp_SquarePlanterBox: Msp_Planter_Base
-  {
-    scope=0;
-  };
-  class Msp_EmptySquarePlanterBox: Msp_Storage_Base
-  {
-    scope=0;
-  };
-  class Msp_EmptyPlanterBox: Msp_Storage_Base
-  {
-    scope=0;
-  };
-  class Msp_Greenhouse: Msp_Greenhouse_Base
-  {
-    scope=0;
-  };
-  class Msp_Greenhouse_Kit: Msp_Kit
-  {
-    scope=0;
-  };
-  class Msp_GreenhouseWood_Kit: Msp_Kit
-  {
-    scope=0;
-  };
-  class Msp_GreenhouseWood: Msp_Greenhouse_Base
-  {
-    scope=0;
-  };
-  class Msp_EmptyPlanterPot: Msp_Storage_Base
-  {
-    scope=0;
-  };
-  class Msp_PlanterPot: Msp_Planter_Base
-  {
-    scope=0;
-  };
-
-  class riflesling_colorbase_mung: Clothing
-  {
-    scope=0;
-  };
-  class riflesling_2_colorbase_mung: riflesling_colorbase_mung
-  {
-    scope=0;
-  };
-  class riflesling_2_black_mung: riflesling_colorbase_mung
-  {
-    scope=0;
-  };
-  class riflesling_black_mung: riflesling_colorbase_mung
-  {
-    scope=0;
-  };
-  class meleesling_colorbase_mung: Clothing
-  {
-    scope=0;
-  };
-  class meleesling_black_mung: meleesling_colorbase_mung
-  {
-    scope=0;
-  };
-
-
-  // ----------------------  BASE GAME OVERRIDES
+// ----------------------  BASE GAME OVERRIDES
   // the only change here is setting the build base action to use shovels
   class TerritoryFlag: BaseBuildingBase
 	{
@@ -1906,6 +1833,74 @@ class CfgVehicles
 				{
 					soundSet="pickUpSeaChest_SoundSet";
 					id=797;
+				};
+			};
+		};
+	};
+
+  class SRP_DragonPlushie_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Dragon Plushie";
+		descriptionShort="A soft dragon plushie. Surprisingly has survived this whole time.";
+		model="Survivalists_Mods\gear\camping\srp_dragonplushie.p3d";
+		weight=130;
+		itemSize[]={2,3};
+    rootClassName="SRP_DragonPlushie";
+    colorVariants[]=
+    {
+      "Green",
+      "Grape",
+    };
+    inventorySlot[]=
+		{
+			"SRP_Teddy1",
+			"SRP_Teddy2",
+			"SRP_Teddy3",
+			"SRP_Teddy4",
+			"SRP_Teddy5",
+			"SRP_Teddy6",
+			"SRP_Teddy7",
+		};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_dragonplushie_green_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\camping\data\srp_dragonplushie.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\camping\data\srp_dragonplushie.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\camping\data\srp_dragonplushie_damage.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\camping\data\srp_dragonplushie_damage.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\camping\data\srp_dragonplushie_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="woodenlog_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodenlog_drop_SoundSet";
+					id=898;
 				};
 			};
 		};
