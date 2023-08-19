@@ -530,4 +530,53 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_Grape_co.paa"
 		};
 	};
+
+  class SRP_DragonPlushie_Blueberry: SRP_DragonPlushie_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_Blueberry_co.paa"
+		};
+	};
+  class SRP_DragonPlushie_Pickle: SRP_DragonPlushie_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_Pickles_co.paa"
+		};
+	};
+  class SRP_DragonPlushie_Potatoe: SRP_DragonPlushie_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_Potatoes_co.paa"
+		};
+	};
+  class SRP_DragonPlushie_Tomato: SRP_DragonPlushie_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_Tomatoes_co.paa"
+		};
+	};
 };

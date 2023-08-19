@@ -1851,6 +1851,10 @@ class CfgVehicles
     {
       "Green",
       "Grape",
+      "Blueberry",
+      "Pickle",
+      "Potatoe",
+      "Tomato",
     };
     inventorySlot[]=
 		{
