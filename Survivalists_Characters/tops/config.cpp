@@ -1517,8 +1517,10 @@ class CfgVehicles
     rootClassName="SRP_KimonoSleeveless";
     colorVariants[]=
     {
-      // "Blue",
-      "Red"
+      "Blue",
+      "Red",
+      "Red_WhiteBelt",
+      "White", // investor only atm
     };
     class DamageSystem
     {

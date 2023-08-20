@@ -3562,4 +3562,20 @@ class CfgVehicles
       "Survivalists_Retextures\characters\tops\data\srp_kimono_red_co.paa"
     };
   };
+  class SRP_KimonoSleeveless_White: SRP_KimonoSleeveless_Colorbase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\srp_kimono_white_co.paa"
+    };
+  };
+  class SRP_KimonoSleeveless_Red_WhiteBelt: SRP_KimonoSleeveless_Colorbase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\srp_kimono_red_whitebelt_co.paa"
+    };
+  };
 };
