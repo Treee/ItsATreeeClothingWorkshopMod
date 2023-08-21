@@ -1520,7 +1520,7 @@ class CfgVehicles
       "Blue",
       "Red",
       "Red_WhiteBelt",
-      "White", // investor only atm
+      // "White", // investor only atm
     };
     class DamageSystem
     {
