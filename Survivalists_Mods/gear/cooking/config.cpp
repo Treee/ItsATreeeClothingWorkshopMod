@@ -529,6 +529,15 @@ class CfgVehicles
 			"DirectCookingB",
 			"DirectCookingC"
 		};
+    rootClassName="SRP_TeaKettle";
+    colorVariants[]=
+    {
+      "Teal",
+      "Red",
+      "Green",
+      "Purple",
+      "Black",
+    };
 		stackedRandom=0;
 		canBeDigged=1;
 		allowOwnedCargoManipulation=1;
