@@ -761,6 +761,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_HackingKit_Blue);
       RegisterRecipe(new Craft_SRP_HackingKit_Purple);
 
+      RegisterRecipe(new Craft_SRP_FireWorksLauncher);
+
     //==========================================================Weapons
       RegisterRecipe(new Craft_SRP_WeaponPipeAxe_Kit);
       RegisterRecipe(new Craft_SRP_WeaponPipeAxe);    
