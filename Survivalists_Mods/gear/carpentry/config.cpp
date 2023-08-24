@@ -489,6 +489,21 @@ class CfgVehicles
 		displayName="Intermediate Building Component Kit";
 		descriptionShort="A Building Component Kit used to make a wide variety of ramps, walkways and platforms. Use epoxy putty to finish.";
 	};
+  class SRP_BuildingComponentFrame_ColorBase: HouseNoDestruct
+  {
+		scope=0;
+    storageCategory=1;
+		displayName="Scope 0";
+		descriptionShort="Scope 0";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";    
+    color="base";
+    slopeTolerance=0.30000001;
+		alignHologramToTerain=1;
+		yawPitchRollLimit[]={10,10,10};
+    carveNavmesh=1;
+		physLayer="item_large";
+    minPlacingDist=5;
+  };
   class SRP_BuildingComponentFrame_WornRamp_Kit: SRP_KitBase
 	{
 		scope=2;
@@ -496,7 +511,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_WornRamp";
 	};
-  class SRP_BuildingComponentFrame_WornRamp: HouseNoDestruct
+  class SRP_BuildingComponentFrame_WornRamp: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -513,7 +528,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_WornLPlatform";
 	};
-  class SRP_BuildingComponentFrame_WornLPlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_WornLPlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -530,7 +545,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_WornUPlatform";
 	};
-  class SRP_BuildingComponentFrame_WornUPlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_WornUPlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -547,7 +562,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_WornFlatPlatform";
 	};
-  class SRP_BuildingComponentFrame_WornFlatPlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_WornFlatPlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -564,7 +579,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_WornFlatDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_WornFlatDoublePlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_WornFlatDoublePlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -581,7 +596,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_WornSinglePlatform";
 	};
-  class SRP_BuildingComponentFrame_WornSinglePlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_WornSinglePlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -598,7 +613,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_WornDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_WornDoublePlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_WornDoublePlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -615,7 +630,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_WornLongDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_WornLongDoublePlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_WornLongDoublePlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -632,7 +647,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_FineRamp";
 	};
-  class SRP_BuildingComponentFrame_FineRamp: HouseNoDestruct
+  class SRP_BuildingComponentFrame_FineRamp: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -649,7 +664,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_FineLPlatform";
 	};
-  class SRP_BuildingComponentFrame_FineLPlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_FineLPlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -666,7 +681,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_FineUPlatform";
 	};
-  class SRP_BuildingComponentFrame_FineUPlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_FineUPlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -683,7 +698,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_FineFlatPlatform";
 	};
-  class SRP_BuildingComponentFrame_FineFlatPlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_FineFlatPlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -700,7 +715,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_FineFlatDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_FineFlatDoublePlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_FineFlatDoublePlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -717,7 +732,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_FineSinglePlatform";
 	};
-  class SRP_BuildingComponentFrame_FineSinglePlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_FineSinglePlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -734,7 +749,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_FineDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_FineDoublePlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_FineDoublePlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
@@ -751,7 +766,7 @@ class CfgVehicles
 		descriptionShort="A Building Component Kit";
     projectionTypename="SRP_BuildingComponentFrame_FineLongDoublePlatform";
 	};
-  class SRP_BuildingComponentFrame_FineLongDoublePlatform: HouseNoDestruct
+  class SRP_BuildingComponentFrame_FineLongDoublePlatform: SRP_BuildingComponentFrame_ColorBase
 	{
 		scope=2;
     storageCategory=1;
