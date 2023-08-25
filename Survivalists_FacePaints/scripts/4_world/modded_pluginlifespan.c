@@ -30,7 +30,6 @@ modded class PluginLifespan
       "Bosnia",
       "Bulgaria1",
       "Bulgaria2",
-      "Clown1",
       "Croatia",
       "Czech1",
       "Czech2",
@@ -100,7 +99,8 @@ modded class PluginLifespan
   {
     return {      
       "SkullFace",
-      "TearDrop"
+      "Clown1",
+      "TearDrop",
     };
   }
   TStringArray GetFacePaintScarOptions()
