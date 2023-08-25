@@ -98,9 +98,14 @@ modded class PluginLifespan
   TStringArray GetFacePaintMaskOptions()
   {
     return {      
+      "TearDrop",
       "SkullFace",
       "Clown1",
-      "TearDrop",
+      "Geisha1",
+      "KissCatman",
+      "KissDemon",
+      "KissSpaceman",
+      "KissStarchild",
     };
   }
   TStringArray GetFacePaintScarOptions()
