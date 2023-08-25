@@ -564,6 +564,36 @@ class CfgVehicles
       "Survivalists_Retextures\characters\tops\data\tshirt_white_stag_co.paa"
     };
   };
+  class TShirt_BFFs: TShirt_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\tshirt_bffs_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_bffs_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_bffs_co.paa"
+    };
+  };
+  class TShirt_Hipster: TShirt_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\tshirt_hipster_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_hipster_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_hipster_co.paa"
+    };
+  };
+  class TShirt_Maori: TShirt_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\tshirt_maori_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_maori_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_maori_co.paa"
+    };
+  };
 	class Hoodie_Orange: Hoodie_ColorBase
 	{
 		scope=2;

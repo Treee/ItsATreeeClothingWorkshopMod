@@ -80,6 +80,7 @@ class ActionSwitchPatchFlagOption extends ActionSRPVariantIdOption
       "Seaman1",
       "Sergeant",
       "GreenMountain",
+      "Chernus",
       "Afghanistan",
       "Albania",
       "Algeria",

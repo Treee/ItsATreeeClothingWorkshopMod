@@ -269,6 +269,56 @@ class CfgVehicles
       "Survivalists_Retextures\characters\backpacks\data\drybag_Espen_co.paa"
     };
   };
+  class DryBag_Camo: DryBag_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\backpacks\data\drybag_camo_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_camo_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_camo_co.paa"
+    };
+  };
+  class DryBag_ChernaRussian: DryBag_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\backpacks\data\drybag_chernarussian_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_chernarussian_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_chernarussian_co.paa"
+    };
+  };
+  class DryBag_NordicStripe: DryBag_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\backpacks\data\drybag_nordic_stripe_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_nordic_stripe_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_nordic_stripe_co.paa"
+    };
+  };
+  class DryBag_Soviet: DryBag_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\backpacks\data\drybag_soviet_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_soviet_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_soviet_co.paa"
+    };
+  };
+  class DryBag_UnionJack: DryBag_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\backpacks\data\drybag_unionjack_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_unionjack_co.paa",
+      "Survivalists_Retextures\characters\backpacks\data\drybag_unionjack_co.paa"
+    };
+  };
 
   class GhillieBushrag_White: GhillieBushrag_ColorBase
 	{
@@ -899,6 +949,51 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\huntingB57_co.paa",
 			"Survivalists_Retextures\characters\backpacks\data\huntingB57_co.paa",
 			"Survivalists_Retextures\characters\backpacks\data\huntingB57_co.paa"
+		};
+	};
+
+  class HuntingBag_Blue: HuntingBag
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_blu_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_blu_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_blu_co.paa"
+		};
+	};
+  class HuntingBag_Red: HuntingBag
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_red_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_red_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_red_co.paa"
+		};
+	};
+  class HuntingBag_Yellow: HuntingBag
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_yellow_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_yellow_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_fjallraven_yellow_co.paa"
+		};
+	};
+  class HuntingBag_Travel: HuntingBag
+	{
+		scope=2;
+		visibilityModifier=0.94999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_travel_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_travel_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_travel_co.paa"
 		};
 	};
 

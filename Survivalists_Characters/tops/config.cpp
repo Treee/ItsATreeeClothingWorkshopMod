@@ -396,6 +396,9 @@ class CfgVehicles
       "Piggy",
       "Catdog",
       "BlackCatdog",
+      "BFFs",
+      "Hipster",
+      "Maori",
     };
   };
   class Hoodie_ColorBase: Clothing

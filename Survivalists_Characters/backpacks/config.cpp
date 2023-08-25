@@ -79,7 +79,12 @@ class CfgVehicles
       "Black",
       "Red",
       "Pink",
-      "MintBlue"
+      "MintBlue",
+      "Camo",
+      "ChernaRussian",
+      "NordicStripe",
+      "Soviet",
+      "UnionJack",
     };
   }; 
   class HuntingBag: Clothing
@@ -101,6 +106,10 @@ class CfgVehicles
       "SURPAT",
       "MARPATWinter",
       "EMP6",
+      "Blue",
+      "Red",
+      "Yellow",
+      "Travel",
     };
   };
   class MountainBag_ColorBase: Clothing
