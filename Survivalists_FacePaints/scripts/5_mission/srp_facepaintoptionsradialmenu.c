@@ -248,7 +248,7 @@ class SRP_FP_RadialMenuDisplay extends UIScriptedMenu
 		{
 			gesture_items.Insert( new SRP_FP_RadialMenuItem( SRP_FP_RadialMenuCategories.CATEGORY_1, 		"Camo", 	category ) );
 			gesture_items.Insert( new SRP_FP_RadialMenuItem( SRP_FP_RadialMenuCategories.CATEGORY_2, 		"Flags", 	category ) );
-			gesture_items.Insert( new SRP_FP_RadialMenuItem( SRP_FP_RadialMenuCategories.CATEGORY_3, 		"Tattoo", 	category ) );
+			gesture_items.Insert( new SRP_FP_RadialMenuItem( SRP_FP_RadialMenuCategories.CATEGORY_3, 		"Tattoo/Mask", 	category ) );
 			gesture_items.Insert( new SRP_FP_RadialMenuItem( SRP_FP_RadialMenuCategories.CATEGORY_4, 		"Scars", 	category ) );
 		}
 		//Category 1 - commands
