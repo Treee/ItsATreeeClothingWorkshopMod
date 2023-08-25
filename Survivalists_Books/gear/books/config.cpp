@@ -567,7 +567,6 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_TheBasicGuidebook_co.paa"
     };
   };
-
   class SRP_ReadableBook_AdeptusMechanicusPrayerBook: SRP_ReadableBook_Colorbase
   {
     scope=2;
@@ -579,6 +578,84 @@ class CfgVehicles
     hiddenSelectionsTextures[]=
     {
       "Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbook_co.paa"
+    };
+  };
+  class SRP_ReadableBook_HarryPotterSorcerersStone: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Harry Potter - The Sorcerers Stone";
+    author="J.K. Rowling";
+		file="Survivalists_Books\gear\books\data\book_Harry_Potter_Sorcerers_Stone.html";		
+    displayName="Harry Potter - The Sorcerers Stone";
+    descriptionShort="A childhood treasure.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_Harry_Potter_Sorcerers_Stone_co.paa"
+    };
+  };
+  class SRP_ReadableBook_HortonHearsAWho: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Horton Hears A Who";
+    author="Dr. Seuss";
+		file="Survivalists_Books\gear\books\data\book_Horton_Hears_a_Who.html";		
+    displayName="Horton Hears A Who";
+    descriptionShort="A childhood treasure.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_Horton_Hears_a_Who_co.paa"
+    };
+  };
+  class SRP_ReadableBook_RedOctober: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Hunt For Red October";
+    author="Tom Clancy";
+		file="Survivalists_Books\gear\books\data\book_Hunt_for_Red_October.html";		
+    displayName="The Hunt For Red October";
+    descriptionShort="A classic tale.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_Hunt_for_Red_October_co.paa"
+    };
+  };
+  class SRP_ReadableBook_Dune: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Dune";
+    author="Frank Herbert";
+		file="Survivalists_Books\gear\books\data\book_DUNE.html";		
+    displayName="Dune";
+    descriptionShort="A classic tale.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_DUNE_co.paa"
+    };
+  };
+  class SRP_ReadableBook_DnDHandbook: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="DnD Handbook";
+    author="Gary Gygax";
+		file="Survivalists_Books\gear\books\data\book_DND_3rd_edition_Handbook.html";		
+    displayName="DnD Handbook";
+    descriptionShort="A handy handbook.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_DND_3rd_edition_Handbook_co.paa"
+    };
+  };
+  class SRP_ReadableBook_OldManAndTheSea: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Old Man And The Sea";
+    author="Ernest Hemingway";
+		file="Survivalists_Books\gear\books\data\book_Old_Man_and_the_Sea.html";		
+    displayName="Old Man And The Sea";
+    descriptionShort="A classic tale.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_Old_Man_and_the_Sea_co.paa"
     };
   };
 
