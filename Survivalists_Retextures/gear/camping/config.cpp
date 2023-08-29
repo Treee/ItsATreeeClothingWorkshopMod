@@ -21,6 +21,7 @@ class CfgVehicles
   class SRP_Carpet_ColorBase;
   class SRP_CarpetRug_ColorBase;
   class SRP_DragonPlushie_ColorBase;
+  class SRP_JapaneseUmbrella_ColorBase;
 
 //================================================ VANILLA
   class LargeTent_Stag: LargeTent
@@ -578,5 +579,18 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_Tomatoes_co.paa"
 		};
+	};
+
+  class SRP_JapaneseUmbrella_Default: SRP_JapaneseUmbrella_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\srp_umbrella_co.paa"};
+	};
+  class SRP_JapaneseUmbrella_Essesentiendum: SRP_JapaneseUmbrella_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\srp_umbrella_essesentiendum_co.paa"};
 	};
 };

@@ -659,6 +659,33 @@ class CfgVehicles
     };
   };
 
+  class SRP_ReadableBook_ZombieSurvivalGuide: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Zombie Survival Guide";
+    author="Unknown";
+		file="Survivalists_Books\gear\books\data\book_Zombie_Guide.html";		
+    displayName="Zombie Survival Guide";
+    descriptionShort="A classic tale.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_Zombie_Guide_co.paa"
+    };
+  };
+  class SRP_ReadableBook_AltarTechnologies: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Altar Technologies";
+    author="Unknown";
+		file="Survivalists_Books\gear\books\data\book_ALTAR.html";		
+    displayName="Altar Technologies";
+    descriptionShort="What secrets are inside?";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_ALTAR_co.paa"
+    };
+  };
+
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
 	{

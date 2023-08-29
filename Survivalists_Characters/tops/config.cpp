@@ -293,6 +293,16 @@ class CfgVehicles
       "Black",
     };
 	};  
+  class ALV_MV_DemiJacket_Colorbase: Clothing
+	{
+    rootClassName="ALV_MV_DemiJacket";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green",
+    };
+	};
 //----------------------------------- BASE GAME OVERRIDE
 	class Armband_ColorBase: Clothing
 	{

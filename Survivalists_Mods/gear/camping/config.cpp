@@ -1909,6 +1909,54 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_JapaneseUmbrella_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Japanese Umbrella";
+		descriptionShort="A well crafted umbrella.";
+		model="Survivalists_Mods\gear\camping\srp_umbrella.p3d";
+    // rootClassName="SRP_JapaneseUmbrella";
+    // colorVariants[]={};
+		inventorySlot[]=
+    {
+      "Shoulder",
+      "Melee"
+    };
+		weight=250;
+		itemSize[]={1,5};
+		absorbency=0.30000001;
+		hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_umbrella_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_umbrella.rvmat"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Mods\gear\camping\data\srp_umbrella.rvmat"}},						
+						{0.69999999,{"Survivalists_Mods\gear\camping\data\srp_umbrella.rvmat"}},						
+						{0.5,{"Survivalists_Mods\gear\camping\data\srp_umbrella_damage.rvmat"}},						
+						{0.30000001,{"Survivalists_Mods\gear\camping\data\srp_umbrella_damage.rvmat"}},						
+						{0,{"Survivalists_Mods\gear\camping\data\srp_umbrella_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 	
 //=========================================== CARPET & RUGS
   class SRP_Carpet_Kit: SRP_KitBase  // 

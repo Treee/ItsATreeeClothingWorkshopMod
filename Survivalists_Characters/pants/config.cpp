@@ -439,6 +439,16 @@ class CfgVehicles
       "TigerStripe",      
     };
   };
+  class ALV_MV_DemiPants_Colorbase: Clothing
+  {
+    rootClassName="ALV_MV_DemiPants";
+    colorVariants[]=
+    {
+      "Black",
+      "Tan",
+      "Green",     
+    };
+  };
   
 //-------------------------------------MODDED OVERRIDE
   class Skinny_Jeans_ColorBase: Clothing
