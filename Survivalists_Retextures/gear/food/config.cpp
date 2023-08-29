@@ -42,11 +42,11 @@ class CfgVehicles
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\srpStewVeg_co.paa"};
 	};
-  class srpStew_ApplePie: srpStew_Base
+  class srpStew_Pancakes: srpStew_Base
 	{
 		scope=2;
-		displayName="Apple Pie";
-		descriptionShort="A delicious looking apple pie. Single serving but you know you want another one.";
+		displayName="Pancakes";
+		descriptionShort="A delicious looking stack of pancakes. Single serving but you know you want another one.";
 		hiddenSelections[]={"bowl","zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\stewbowlPieTin_co.paa","Survivalists_Retextures\gear\food\data\srpStewApplePie_co.paa"};
 	};
@@ -75,11 +75,11 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\srpStewRiceSalad_co.paa"};
 	};
 
-  class srpStew_ApplePiePoisoned: srpStew_Base
+  class srpStew_PancakesPoisoned: srpStew_Base
 	{
 		scope=2;
-		displayName="Apple Pie";
-		descriptionShort="A delicious looking apple pie. Single serving but you know you want another one.";
+		displayName="Pancakes";
+		descriptionShort="A delicious looking stack of pancakes. Single serving but you know you want another one.";
 		hiddenSelections[]={"bowl","zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\food\data\stewbowlPieTin_co.paa","Survivalists_Retextures\gear\food\data\srpStewApplePie_co.paa"};
 	};

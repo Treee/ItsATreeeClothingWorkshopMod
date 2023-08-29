@@ -114,7 +114,7 @@ modded class ActionSkinning
       }
     }
     
-    DropArrows(body);
+    // DropArrows(body);
     int deadBodyLifetime;
     if ( GetCEApi() )
     {

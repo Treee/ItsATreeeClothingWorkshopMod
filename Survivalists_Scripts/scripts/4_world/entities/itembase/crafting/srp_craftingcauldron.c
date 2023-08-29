@@ -112,7 +112,7 @@ class SRP_CookingWorkbench_Base extends SRP_Fireplace_Transformer
   }
   override int GetHeatTimerThreshold()
   {
-    return 300;//5mins
+    return 180;//5mins
     // return 10;//5mins
   }
   override void HandleHeatTransformation()

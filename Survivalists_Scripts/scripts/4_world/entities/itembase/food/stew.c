@@ -34,7 +34,7 @@ class srpStew_Mix extends srpStew_Base{};
 class srpStew_Veggie extends srpStew_Base{};
 
 // profession bench foods
-class srpStew_ApplePie extends srpStew_Base
+class srpStew_Pancakes extends srpStew_Base
 {
   override bool HasHealthRegenEffect()
   {
@@ -68,7 +68,7 @@ class srpStew_RiceSalad extends srpStew_Base
 };
 
 // poisoned foods
-class srpStew_ApplePiePoisoned extends srpStew_Base
+class srpStew_PancakesPoisoned extends srpStew_Base
 {
   override bool IsPoisoned()
   {

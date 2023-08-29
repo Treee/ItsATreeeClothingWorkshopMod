@@ -38,7 +38,7 @@ class SRP_CookingRecipes extends SRP_RecipeManager
 //===========================STEWS
   SRP_CraftableItem Register_ApplePie_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("srpStew_ApplePie", "Apple Pie");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("srpStew_Pancakes", "Pancakes");
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Ingredient1", SRP_COLOR.FRUIT, 50));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Ingredient2", SRP_COLOR.FRUIT, 50));
@@ -103,7 +103,7 @@ class SRP_CookingRecipes extends SRP_RecipeManager
 //===========================POISONED
   SRP_CraftableItem Register_ApplePiePoisoned_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("srpStew_ApplePiePoisoned", "Apple Pie - Poisoned");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("srpStew_PancakesPoisoned", "Pancakes - Poisoned");
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Ingredient1", SRP_COLOR.FRUIT, 50));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Ingredient2", SRP_COLOR.FRUIT, 50));
