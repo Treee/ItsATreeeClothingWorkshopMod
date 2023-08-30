@@ -11,7 +11,6 @@ class CfgPatches
 			"DZ_Gear_Tools",
       "DZ_Weapons_Melee_Blade", // hatchet
       "DZ_Gear_Navigation",
-      "Mass_Textures", // removing admin compass
       "Survivalists_Mods"
 		};
 	};
@@ -221,13 +220,6 @@ class CfgVehicles
 	{
 		itemSize[]={2,2};
   };
-
-// -------------------------- MODDED MODS
-  class MassAdminStash: Compass
-	{
-    scope=0; // do not let it even be spawned in
-		itemsCargoSize[]={0,0}; // if it somehow got in, no storage
-	};
 
 // ---------------------------- Custom Stuff
   class SRP_Hacksaw_Espen: Hacksaw

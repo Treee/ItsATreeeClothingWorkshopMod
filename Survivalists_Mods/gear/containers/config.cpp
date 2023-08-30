@@ -8,7 +8,6 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "Mass_Textures",
       "Survivalists_Mods"
 		};
 	};

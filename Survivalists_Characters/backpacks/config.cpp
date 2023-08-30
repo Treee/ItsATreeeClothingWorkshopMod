@@ -9,7 +9,6 @@ class CfgPatches
 		{
 			"DZ_Characters",
       "DZ_Characters_Backpacks",
-      "Mass_Textures",
       "Dressupbox",
       "Alv_Tac_Gear_Backpacks"
 		};
@@ -22,11 +21,6 @@ class CfgVehicles
   // class Backpack_Base;
 
 //--------------------------------- MOD/VANILLA OVERRIDE
-	class MassNBC_Bag: Container_Base
-	{
-		scope=2;
-		itemsCargoSize[]={9,6}; // increase to account for gas mask
-	};
 
   class TaloonBag_ColorBase: Clothing
   {
