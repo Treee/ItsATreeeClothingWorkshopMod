@@ -1,19 +1,38 @@
-class SRP_Letter_Colorbase extends House
+// class SRP_Letter_Colorbase extends House
+// {
+//   override bool CanBeDeconstructed()
+//   {
+//     return true;
+//   }
+//   override string GetKitName()
+//   {
+//     return "SRP_LetterKit_Kit";
+//   }
+//   string GetLetterSymbol()
+//   {
+//     return ConfigGetString("color");
+//   }
+// };
+
+class SRP_Letter_Colorbase extends SRP_Container_Base
 {
-  override bool CanBeDeconstructed()
-  {
-    return true;
-  }
-  override string GetKitName()
-  {
-    return "SRP_LetterKit_Kit";
-  }
+  override bool IsInventoryVisible()
+	{
+		return false;
+	}
+  override bool DisableVicinityIcon()
+	{
+		return true;
+	}
   string GetLetterSymbol()
   {
     return ConfigGetString("color");
   }
+  override string GetCraftingKitName()
+  {
+    return "SRP_LetterKit_Kit";
+  }
 };
-
 //======================= FURNITURE WITH NO CARGO
 
 class SRP_LetterKit_Kit extends SRP_IntermediateCraftingKitBase

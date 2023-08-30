@@ -1,13 +1,24 @@
-class SRP_BuildingComponentFrame_ColorBase extends House
+// class SRP_BuildingComponentFrame_ColorBase extends House
+// {
+//   override bool CanBeDeconstructed()
+//   {
+//     return true;
+//   }
+//    override string GetKitName()
+//   {
+//     return "SRP_BuildingComponentFrame_Kit";
+//   }
+// };
+class SRP_BuildingComponentFrame_ColorBase extends SRP_Container_Base
 {
-  override bool CanBeDeconstructed()
-  {
-    return true;
-  }
-   override string GetKitName()
+  override string GetCraftingKitName()
   {
     return "SRP_BuildingComponentFrame_Kit";
   }
+  override bool IsHealthVisible()
+	{
+		return false;
+	}
 };
 //======================= FURNITURE WITH NO CARGO
 class SRP_BuildingComponentFrame_Kit extends SRP_IntermediateCraftingKitBase{};

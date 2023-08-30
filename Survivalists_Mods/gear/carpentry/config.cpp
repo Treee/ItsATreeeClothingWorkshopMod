@@ -489,21 +489,87 @@ class CfgVehicles
 		displayName="Intermediate Building Component Kit";
 		descriptionShort="A Building Component Kit used to make a wide variety of ramps, walkways and platforms. Use epoxy putty to finish.";
 	};
-  class SRP_BuildingComponentFrame_ColorBase: HouseNoDestruct
-  {
+  // class SRP_BuildingComponentFrame_ColorBase: HouseNoDestruct
+  // {
+	// 	scope=0;
+  //   storageCategory=1;
+	// 	displayName="Scope 0";
+	// 	descriptionShort="Scope 0";
+	// 	model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";    
+  //   color="base";
+  //   slopeTolerance=0.30000001;
+	// 	alignHologramToTerain=1;
+	// 	yawPitchRollLimit[]={10,10,10};
+  //   carveNavmesh=1;
+	// 	physLayer="item_large";
+  //   minPlacingDist=5;
+  // };
+  class SRP_BuildingComponentFrame_ColorBase: Inventory_Base // new
+	{
 		scope=0;
-    storageCategory=1;
-		displayName="Scope 0";
-		descriptionShort="Scope 0";
-		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";    
-    color="base";
-    slopeTolerance=0.30000001;
-		alignHologramToTerain=1;
-		yawPitchRollLimit[]={10,10,10};
-    carveNavmesh=1;
+		displayName="Wooden Building Component";
+		descriptionShort="This component can be used to build up a large compound.";
+		model="Survivalists_Mods\gear\carpentry\srp_buildingcomponent_wornramp.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
 		physLayer="item_large";
-    minPlacingDist=5;
-  };
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    itemsCargoSize[]={0,0};
+    color="base";
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\srp_woodbuildingcomponents.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
+	};
   class SRP_BuildingComponentFrame_WornRamp_Kit: SRP_KitBase
 	{
 		scope=2;
@@ -790,13 +856,77 @@ class CfgVehicles
 		descriptionShort="A Wooden Barricade Kit";
     projectionTypename="SRP_Barricade_Wood";
 	};
-  class SRP_Barricade_Wood: HouseNoDestruct
+  // class SRP_Barricade_Wood: HouseNoDestruct
+	// {
+	// 	scope=2;
+  //   storageCategory=1;
+	// 	displayName="Wooden Barricade";
+	// 	descriptionShort="This wood might one way sit between you and a bullet.";
+	// 	model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade.p3d";
+	// };
+  class SRP_Barricade_Wood: Inventory_Base // new
 	{
 		scope=2;
-    storageCategory=1;
 		displayName="Wooden Barricade";
 		descriptionShort="This wood might one way sit between you and a bullet.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
 	};
 
   class SRP_BarricadeWithWindow_Wood_Kit: SRP_KitBase
@@ -806,13 +936,77 @@ class CfgVehicles
 		descriptionShort="A Wooden Barricade Kit with a window to peak out to the other side.";
     projectionTypename="SRP_BarricadeWithWindow_Wood";
 	};
-  class SRP_BarricadeWithWindow_Wood: HouseNoDestruct
+  // class SRP_BarricadeWithWindow_Wood: HouseNoDestruct
+	// {
+	// 	scope=2;
+  //   storageCategory=1;
+	// 	displayName="Wooden Barricade";
+	// 	descriptionShort="This wood might one way sit between you and a bullet.";
+	// 	model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade_windowed.p3d";
+	// };
+  class SRP_BarricadeWithWindow_Wood: Inventory_Base // new
 	{
 		scope=2;
-    storageCategory=1;
 		displayName="Wooden Barricade";
 		descriptionShort="This wood might one way sit between you and a bullet.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenbarricade_windowed.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
 	};
 
   class SRP_WindowBarricade_Wood_Kit: SRP_KitBase
@@ -822,13 +1016,77 @@ class CfgVehicles
 		descriptionShort="A Wooden Window Barricade Kit";
     projectionTypename="SRP_WindowBarricade_Wood";
 	};
-  class SRP_WindowBarricade_Wood: HouseNoDestruct
+  // class SRP_WindowBarricade_Wood: HouseNoDestruct
+	// {
+	// 	scope=2;
+  //   storageCategory=1;
+	// 	displayName="Wooden Window Barricade";
+	// 	descriptionShort="This wood might one way sit between you and a bullet.";
+	// 	model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricade.p3d";
+	// };
+  class SRP_WindowBarricade_Wood: Inventory_Base // new
 	{
 		scope=2;
-    storageCategory=1;
 		displayName="Wooden Window Barricade";
 		descriptionShort="This wood might one way sit between you and a bullet.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricade.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
 	};
 
   class SRP_WindowBarricadeTall_Wood_Kit: SRP_KitBase
@@ -838,13 +1096,77 @@ class CfgVehicles
 		descriptionShort="A Tall Wooden Window Barricade Kit";
     projectionTypename="SRP_WindowBarricadeTall_Wood";
 	};
-  class SRP_WindowBarricadeTall_Wood: HouseNoDestruct
+  // class SRP_WindowBarricadeTall_Wood: HouseNoDestruct
+	// {
+	// 	scope=2;
+  //   storageCategory=1;
+	// 	displayName="Tall Wooden Window Barricade";
+	// 	descriptionShort="This wood might one way sit between you and a bullet.";
+	// 	model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricadetall.p3d";
+	// };
+  class SRP_WindowBarricadeTall_Wood: Inventory_Base // new
 	{
 		scope=2;
-    storageCategory=1;
 		displayName="Tall Wooden Window Barricade";
 		descriptionShort="This wood might one way sit between you and a bullet.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenwindowbarricadetall.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenbarricade.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
 	};
 
   class SRP_SpikeBarricade_Wood_Kit: SRP_KitBase
@@ -854,13 +1176,77 @@ class CfgVehicles
 		descriptionShort="A Wooden Spike Barricade Kit";
     projectionTypename="SRP_SpikeBarricade_Wood";
 	};
-  class SRP_SpikeBarricade_Wood: HouseNoDestruct
+  // class SRP_SpikeBarricade_Wood: HouseNoDestruct
+	// {
+	// 	scope=2;
+  //   storageCategory=1;
+	// 	displayName="Wooden Spike Barricade";
+	// 	descriptionShort="This puts some distance between you and them.";
+	// 	model="Survivalists_Mods\gear\carpentry\srp_woodenspikebarricade.p3d";
+	// };
+  class SRP_SpikeBarricade_Wood: Inventory_Base // new
 	{
 		scope=2;
-    storageCategory=1;
 		displayName="Wooden Spike Barricade";
 		descriptionShort="This puts some distance between you and them.";
 		model="Survivalists_Mods\gear\carpentry\srp_woodenspikebarricade.p3d";
+		slopeTolerance=0.30000001;
+		weight=1000;
+		itemBehaviour=0;
+		physLayer="item_large";
+		allowOwnedCargoManipulation=1;
+		itemSize[]={15,15};
+    hiddenSelections[]=
+    {
+      "zbytek"
+    };
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+    {
+			"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"
+		};		
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000000;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
+            {0.69999999,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
+            {0.5,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
+            {0.30000001,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}},
+            {0.0,{"Survivalists_Mods\gear\carpentry\data\woodenspikesbarricade.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health {damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class Melee
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+				class FragGrenade
+				{
+          class Health{damage=0;};
+          class Blood{damage=0;};
+          class Shock{damage=0;};
+				};
+			};
+		};
 	};
 
 //============================ LETTER KITS
@@ -1290,7 +1676,59 @@ class CfgVehicles
 	};
   
 //============================ DEPLOYED LETTERS
-  class SRP_Letter_Colorbase: HouseNoDestruct
+  // class SRP_Letter_Colorbase: HouseNoDestruct
+	// {
+	// 	scope=0;
+  //   storageCategory=1;
+	// 	displayName="Carved Letter";
+	// 	descriptionShort="This letter was fashioned out of some sort of material.";
+	// 	model="Survivalists_Mods\gear\carpentry\srp_letters_a.p3d";
+	// 	slopeTolerance=0.30000001;
+	// 	weight=1000;
+	// 	itemBehaviour=1;
+	// 	physLayer="item_large";
+  //   inherit_rotation=1;
+  //   color="base";
+	// 	itemSize[]={2,2};
+  //   rotationFlags=16;
+  //   isTakeable=0;
+  //   itemsCargoSize[]={0,0};
+  //   inventorySlot[]=
+  //   {
+  //     "SRP_MagnetLetter"
+  //   };
+  //   hiddenSelections[]=
+  //   {
+  //     "zbytek"
+  //   };
+	// 	hiddenSelectionsTextures[]=
+  //   {
+  //     "dz\gear\consumables\data\oak_bark_co.paa"
+	// 	};
+	// 	hiddenSelectionsMaterials[]=
+  //   {
+	// 		"dz\gear\consumables\data\oak_bark.rvmat"
+	// 	};		
+	// 	class DamageSystem
+	// 	{
+	// 		class GlobalHealth
+	// 		{
+	// 			class Health
+	// 			{
+	// 				hitpoints=10000000;
+	// 				healthLevels[]=
+	// 				{
+	// 					{1.0,{"dz\gear\consumables\data\oak_bark.rvmat"}},
+  //           {0.69999999,{"dz\gear\consumables\data\oak_bark.rvmat"}},
+  //           {0.5,{"dz\gear\consumables\data\oak_bark_damage.rvmat"}},
+  //           {0.30000001,{"dz\gear\consumables\data\oak_bark_damage.rvmat"}},
+  //           {0.0,{"dz\gear\consumables\data\oak_bark_destruct.rvmat"}}
+	// 				};
+	// 			};
+	// 		};
+	// 	};
+	// };
+  class SRP_Letter_Colorbase: Inventory_Base
 	{
 		scope=0;
     storageCategory=1;

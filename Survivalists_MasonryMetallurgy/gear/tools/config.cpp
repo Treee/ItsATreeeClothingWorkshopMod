@@ -31,14 +31,14 @@ class CfgVehicles
 
   class SRP_ToolRack_Hammers_Kit: SRP_MasonryMetallurgy_KitBase
 	{
-		scope=2;
+		scope=0;
 		displayName="Hammer Tool Rack Kit";
 		descriptionShort="A Hammer Tool Rack Kit";
 	};
 
   class SRP_ToolRack_Hammers: Container_Base
 	{
-		scope=2;
+		scope=0;
 		displayName="Tool Rack - Hammers";
 		descriptionShort="A wooden tool rack for storing hammers or other tools.";
 		model="Survivalists_MasonryMetallurgy\gear\tools\srp_toolrack_hammer.p3d";
