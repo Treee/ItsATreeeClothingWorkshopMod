@@ -8,6 +8,7 @@ modded class ActionTogglePlaceObject
         return !player.IsSoundInsideBuilding();
       if (item.IsInherited(SRP_KitBase))
         return !item.IsRuined();
+      return true;
     }
 		return false;
 	}
