@@ -685,6 +685,19 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_ALTAR_co.paa"
     };
   };
+  class SRP_ReadableBook_UnderstandingArbitration: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Understanding the Arbitration";
+    author="Unknown";
+		file="Survivalists_Books\gear\books\data\book_Understanding_the_Arbitration.html";		
+    displayName="Understanding the Arbitration";
+    descriptionShort="What secrets are inside?";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_Understanding_the_Arbitration_co.paa"
+    };
+  };
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
