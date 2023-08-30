@@ -32,6 +32,20 @@ class SRP_ActionDismantlePlacedObject: ActionContinuousBase
 	{
 		return false;
 	}
+  override void OnActionInfoUpdate( PlayerBase player, ActionTarget target, ItemBase item )
+	{
+    // Print("on action info update");
+
+    m_Text = "Dismantle (Crude - Low Power)";
+    PowerTool_ElectricHandDrill powerTool;
+    if (Class.CastTo(powerTool, item))
+    {
+      if (powerTool.HasBatteryAttached() && powerTool.HasRequiredEnergy(400))
+      {
+        m_Text = "#dismantle";
+      }
+    }    
+	}
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
 		if ( player.IsPlacingLocal() )
@@ -60,14 +74,22 @@ class SRP_ActionDismantlePlacedObject: ActionContinuousBase
     House house;
     if (Class.CastTo(house, action_data.m_Target.GetObject()))
     {
-      TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(house, house.GetKitName(), action_data.m_Player, action_data.m_Player.GetPosition());
-      lambda.SetTransferParams(false, false, false);
-      lambda.SetAdvancedDismantle(true);
-      MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, lambda);
       PowerTool_ElectricHandDrill tool;
       if (Class.CastTo(tool, action_data.m_MainItem))
       {
-        tool.ConsumeBattery(Math.RandomIntInclusive(200,400));
+        if (tool.HasBatteryAttached() && tool.HasRequiredEnergy(400))
+        {
+          TurnItemIntoItemLambda_KitDeployment lambda = new TurnItemIntoItemLambda_KitDeployment(house, house.GetKitName(), action_data.m_Player, action_data.m_Player.GetPosition());
+          lambda.SetTransferParams(false, false, false);
+          MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, lambda);
+          tool.ConsumeBattery(Math.RandomIntInclusive(200,400));
+        }
+        else
+        {
+          TurnItemIntoItemLambda_KitDeployment_DamageKit lambda1 = new TurnItemIntoItemLambda_KitDeployment_DamageKit(house, house.GetKitName(), action_data.m_Player, action_data.m_Player.GetPosition());
+          lambda1.SetTransferParams(false, false, false);
+          MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, lambda1);
+        }
       }      
     }
 	}

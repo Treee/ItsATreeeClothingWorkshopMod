@@ -2,10 +2,13 @@ modded class ActionTogglePlaceObject
 {	
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{	
-    if (item.GetType() == "ShelterKit")
+    if (super.ActionCondition(player, target, item))
     {
-      return !player.IsSoundInsideBuilding();
+      if (item.GetType() == "ShelterKit")
+        return !player.IsSoundInsideBuilding();
+      if (item.IsInherited(SRP_KitBase))
+        return !item.IsRuined();
     }
-		return super.ActionCondition(player, target, item);
+		return false;
 	}
 };
