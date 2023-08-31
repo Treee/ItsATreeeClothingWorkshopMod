@@ -698,6 +698,19 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_Understanding_the_Arbitration_co.paa"
     };
   };
+  class SRP_ReadableBook_TheImperialEmpire: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Story of the Empire";
+    author="An Imperial Scribe";
+		file="Survivalists_Books\gear\books\data\book_skysentinel.html";		
+    displayName="The Story of the Empire";
+    descriptionShort="What secrets are inside?";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_skysentinel_co.paa"
+    };
+  };
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
