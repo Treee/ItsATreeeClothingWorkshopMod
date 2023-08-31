@@ -127,7 +127,24 @@ class SRP_Convert_DisplayCaseHook extends RecipeBase
     return true;
 	}
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
-	{    
+	{
+    ItemBase hook;
+    if (Class.CastTo(hook, ingredients[0]))
+    {
+      if (hook.GetInventory())
+      {
+        int totalSlots = hook.GetInventory().AttachmentCount();
+        for (int i = 0; i < totalSlots; i++)
+        {
+          ItemBase attachment;
+          // Print("Sending: index " + i + " with max " + totalSlots);
+          if (Class.CastTo(attachment, hook.GetInventory().GetAttachmentFromIndex(i)))
+          {        
+            GetGame().CreateObjectEx(attachment.GetType(), player.GetPosition(), ECE_SETUP|ECE_NOSURFACEALIGN|ECE_KEEPHEIGHT|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY);            
+          }
+        }
+      }
+    }
 		Debug.Log("SRP_Convert_DisplayCaseHook: Recipe Do method called","recipes");
 	}
 };
