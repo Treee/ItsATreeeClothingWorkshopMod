@@ -130,6 +130,9 @@ modded class WoodBase
       "AuriculariaMushroom",
       "BoletusMushroom",
       "PleurotusMushroom",
+      "Apple",
+      "Plum",
+      "Pear",
     };
   }
   TStringArray GetTreeFruitList()
