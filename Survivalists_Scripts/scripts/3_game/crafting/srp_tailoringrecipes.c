@@ -96,7 +96,8 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterTopsTracksuitRecipe());
     craftableItems.Insert(RegisterTopsFirefighterJacketRecipe());
     craftableItems.Insert(RegisterTopsMiniDressRecipe());
-
+    // MISC    
+    craftableItems.Insert(Register_DragonPlushie_Recipe());
   }
 //===========================TEMPLATE
   // SRP_CraftableItem Register_X_Recipe()
@@ -1917,6 +1918,26 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+//===========================MISC
+  SRP_CraftableItem Register_DragonPlushie_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_DragonPlushie_Green", "Dragon Plushie");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingMachine", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread1", SRP_COLOR.NONE, 100));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread2", SRP_COLOR.NONE, 75));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread3", SRP_COLOR.NONE, 50));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread4", SRP_COLOR.NONE, 75));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread5", SRP_COLOR.NONE, 100));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt1", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Sticks", SRP_COLOR.NONE, 2));    
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));    
     return craftableItem;
   }
 //===========================END
