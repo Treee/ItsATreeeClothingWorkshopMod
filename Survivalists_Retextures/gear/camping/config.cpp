@@ -593,6 +593,12 @@ class CfgVehicles
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\srp_umbrella_japan_co.paa"};
 	};
+  class SRP_JapaneseUmbrella_Flowers: SRP_JapaneseUmbrella_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\srp_umbrella_flowers_co.paa"};
+	};
   class SRP_JapaneseUmbrella_Essesentiendum: SRP_JapaneseUmbrella_ColorBase
 	{
 		scope=2;
