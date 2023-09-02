@@ -37,30 +37,38 @@ modded class CAContinuousMineWood
 
   void RandomizeForagedFood(int index)
   {
-    float chance = Math.RandomFloatInclusive(0,1);
-    // if (chance > 0.75)
-    if (chance > 0)
+    Edible_Base food;
+    if (Class.CastTo(food, m_MinedItem[index]))
     {
-      Edible_Base food = Edible_Base.Cast(m_MinedItem[index]);
-
-      chance = Math.RandomFloatInclusive(0,1);
-      if ( chance > 0.50 )
+      int chance = Math.RandomIntInclusive(0,20);
+      float newQuantity = Math.RandomFloatInclusive(0.1, 1);
+      // Print("second chance: " + chance);
+      if (chance > 15 && chance < 21) // 16-20 25%chance raw pristine
+      {
+        food.ChangeFoodStage( FoodStageType.RAW );
+        food.SetHealth( "", "", food.GetMaxHealth());
+        newQuantity = Math.RandomFloatInclusive(0.5, 1);
+      }
+      else if (chance > 10 && chance < 16) // 11-15 dried worn
+      {
+        food.ChangeFoodStage( FoodStageType.DRIED );
+        food.SetHealth( "", "", food.GetMaxHealth()*0.6 );
+        newQuantity = Math.RandomFloatInclusive(0.4, 0.7);
+      }
+      else if (chance > 5 && chance < 11) // 6-10 rotten worn
+      {
+        food.ChangeFoodStage( FoodStageType.ROTTEN );
+        food.SetHealth( "", "", food.GetMaxHealth()*0.6 );
+        newQuantity = Math.RandomFloatInclusive(0.3, 0.5);
+      }
+      else // 1-5 rotten ruined
       {
         food.ChangeFoodStage( FoodStageType.ROTTEN );
         food.SetHealth( "", "", food.GetMaxHealth()*0.1 );
+        newQuantity = Math.RandomFloatInclusive(0.1, 0.3);
       }
-      else if ( chance > 0.25 )
-      {
-        food.ChangeFoodStage( FoodStageType.DRIED );
-        food.SetHealth( "", "", food.GetMaxHealth()*0.4 );
-      }
-      else
-      {
-        food.ChangeFoodStage( FoodStageType.DRIED );
-        food.SetHealth( "", "", food.GetMaxHealth()*0.2 );
-      }
-      chance = Math.RandomFloatInclusive(0.1, 0.3);
-      food.SetQuantity(food.GetQuantityMax()*chance );
+      food.SetQuantity(food.GetQuantityMax()*newQuantity );
+      // Print("quantity chance: " + newQuantity);
     }
   }
 

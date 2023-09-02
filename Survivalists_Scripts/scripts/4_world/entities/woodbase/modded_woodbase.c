@@ -107,9 +107,9 @@ modded class WoodBase
 
   override void OnTreeCutDown( EntityAI cutting_entity )
   {
-    Print("WoodBase testing yo");
+    // Print("WoodBase testing yo");
     super.OnTreeCutDown(cutting_entity);
-    Print("WoodBase testing yo yo");
+    // Print("WoodBase testing yo yo");
   }
 
   TStringArray GetBushFruitList()
@@ -122,6 +122,14 @@ modded class WoodBase
       "Potato",
       "SambucusBerry",
       "CaninaBerry",
+      "AgaricusMushroom",
+      "AmanitaMushroom",
+      "MacrolepiotaMushroom",
+      "LactariusMushroom",
+      "PsilocybeMushroom",
+      "AuriculariaMushroom",
+      "BoletusMushroom",
+      "PleurotusMushroom",
     };
   }
   TStringArray GetTreeFruitList()
