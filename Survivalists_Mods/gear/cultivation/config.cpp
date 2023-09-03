@@ -1283,7 +1283,7 @@ class CfgVehicles
   };
   class SRP_GardenPlotSmall_Basic: SRP_GardenPlotSmall_ColorBase
 	{
-		scope=2;
+		scope=0;
 	};
 
   class SRP_GardenPlotMedium_ColorBase: Inventory_Base
