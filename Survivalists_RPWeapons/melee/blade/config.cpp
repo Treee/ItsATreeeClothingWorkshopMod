@@ -603,9 +603,157 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_KatanaSlim: Inventory_Base
+  class SRP_KatanaSlim: Inventory_Base // deprecated
 	{
 		scope=2;
+		displayName="Katana - Deprecated";
+		descriptionShort="A katana. Forged from steel. DEPRECATED. APPLY HAMMER TO UPGRADE";
+		model="Survivalists_RPWeapons\melee\blade\srp_katanaslim.p3d";
+		rotationFlags=12;
+		weight=130;
+		itemSize[]={1,7};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
+		itemBehaviour=2;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Katana",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim.rvmat"
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={-90,35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={180,20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=600;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim.rvmat"}},
+            {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim.rvmat"}},
+            {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim_damage.rvmat"}},
+            {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim_damage.rvmat"}},
+            {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="fireaxe";
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_KatanaSlim_ColorBase: Inventory_Base
+	{
+		scope=0;
 		displayName="Katana";
 		descriptionShort="A katana. Forged from steel.";
 		model="Survivalists_RPWeapons\melee\blade\srp_katanaslim.p3d";
@@ -750,6 +898,13 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+  class SRP_KatanaSlim_Default: SRP_KatanaSlim_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim_co.paa"};
+    hiddenSelectionsMaterials[]={"Survivalists_RPWeapons\melee\blade\data\srp_katanaslim.rvmat"};
 	};
 
   class SRP_KatanaSlim_Sheath_ColorBase: Inventory_Base
@@ -950,7 +1105,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_KatanaSlim_Luci: SRP_KatanaSlim
+  class SRP_Investor_KatanaSlim_Luci: SRP_KatanaSlim_ColorBase
   {
     scope=2;
 		hiddenSelectionsTextures[]=
@@ -980,8 +1135,7 @@ class CfgVehicles
 			};
 		};
   };
-
-  class SRP_KatanaSlim_Sheath_Luci: SRP_KatanaSlim_Sheath_ColorBase
+  class SRP_Investor_KatanaSlim_Sheath_Luci: SRP_KatanaSlim_Sheath_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -1012,7 +1166,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_KatanaSlim_Sheath_Fred: SRP_KatanaSlim_Sheath_ColorBase
+  class SRP_Investor_KatanaSlim_Sheath_Fred: SRP_KatanaSlim_Sheath_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=
@@ -1025,7 +1179,7 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_KatanaSlim_Ding: SRP_KatanaSlim
+  class SRP_Investor_KatanaSlim_Ding: SRP_KatanaSlim_ColorBase
   {
     scope=2;
     hiddenSelectionsTextures[]=
@@ -1056,7 +1210,7 @@ class CfgVehicles
     };
   };
 
-  class SRP_KatanaSlim_Railen: SRP_KatanaSlim
+  class SRP_Investor_KatanaSlim_Railen: SRP_KatanaSlim_ColorBase
   {
     scope=2;
 		hiddenSelectionsTextures[]=
@@ -1086,8 +1240,7 @@ class CfgVehicles
 			};
 		};
   };
-
-  class SRP_KatanaSlim_Sheath_Railen: SRP_KatanaSlim_Sheath_ColorBase
+  class SRP_Investor_KatanaSlim_Sheath_Railen: SRP_KatanaSlim_Sheath_ColorBase
 	{
 		scope=2;
 		hiddenSelectionsTextures[]=

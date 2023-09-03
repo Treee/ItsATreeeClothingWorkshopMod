@@ -374,14 +374,14 @@ class CfgVehicles
   
 
 //----------------------------------------------- MODDED STUFF
-  class Jmc_Keycard: Inventory_Base
-	{
-		scope=0;
-	};
-	class Jmc_Keycard2: Inventory_Base
-	{
-		scope=0;
-	};
+  // class Jmc_Keycard: Inventory_Base
+	// {
+	// 	scope=0;
+	// };
+	// class Jmc_Keycard2: Inventory_Base
+	// {
+	// 	scope=0;
+	// };
 
 //----------------------------------------------- CUSTOM STUFF
   class Firewood_Irradiated: Firewood

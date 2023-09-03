@@ -46,5 +46,7 @@ modded class PluginRecipesManager
     RegisterRecipe(new Craft_SRP_Ammo_FlareGreen);
     RegisterRecipe(new Craft_SRP_Ammo_FlareBlue);
 
+    RegisterRecipe(new Craft_SRP_UpgradeKatana);
+
 	}
 };

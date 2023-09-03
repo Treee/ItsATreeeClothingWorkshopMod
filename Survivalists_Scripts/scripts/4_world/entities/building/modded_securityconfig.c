@@ -15,7 +15,7 @@ modded class SecurityConfig
     {
       chance = Math.RandomFloatInclusive(0,1);
       if (chance > 0.5)
-        Class.CastTo(entity, GetGame().CreateObjectEx(GetRandomLootType(), positions.Get(i), ECE_CREATEPHYSICS|ECE_KEEPHEIGHT|ECE_SETUP|0x800|ECE_NOLIFETIME|ECE_NOLIFETIME));
+        Class.CastTo(entity, GetGame().CreateObjectEx(GetRandomLootType(), positions.Get(i), ECE_CREATEPHYSICS|ECE_KEEPHEIGHT|ECE_SETUP|0x800|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY));
     }
   }
 
