@@ -31,10 +31,30 @@ class CfgVehicles
 		scope=1;
 		model="Survivalists_Building\structures\furniture\srp_furniture_japanestorigate.p3d";
 	};
+  class land_srp_furniture_japanesetorigate_medium: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Building\structures\furniture\srp_furniture_japanestorigate_medium.p3d";
+	};
+  class land_srp_furniture_japanesetorigate_large: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Building\structures\furniture\srp_furniture_japanestorigate_large.p3d";
+	};
   class land_srp_furniture_japanesetorigate2: HouseNoDestruct
 	{
 		scope=1;
 		model="Survivalists_Building\structures\furniture\srp_furniture_japanesetorigate2.p3d";
+	};
+  class land_srp_furniture_japanesetorigate2_medium: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Building\structures\furniture\srp_furniture_japanesetorigate2_medium.p3d";
+	};
+  class land_srp_furniture_japanesetorigate2_large: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Building\structures\furniture\srp_furniture_japanesetorigate2_large.p3d";
 	};
   class land_SRP_Furniture_StoneBust_Default: HouseNoDestruct
 	{
@@ -139,7 +159,7 @@ class CfgVehicles
   class SRP_Furniture_JapaneseToriGate_Default_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Japanese Tori Gate Kit - Worn";
+		displayName="Japanese Tori Gate Kit - Worn (Small)";
 		descriptionShort="A placeable japanese tori gate kit";
     projectionTypename="SRP_Furniture_JapaneseToriGate_Default";
 	};
@@ -157,11 +177,53 @@ class CfgVehicles
 			"Survivalists_Building\structures\furniture\data\srp_furniture_torigate_co.paa"
 		};
 	};
+  class SRP_Furniture_JapaneseToriGate_Medium_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Japanese Tori Gate Kit - Worn (Medium)";
+		descriptionShort="A placeable japanese tori gate kit";
+    projectionTypename="SRP_Furniture_JapaneseToriGate_Medium";
+	};
+  class SRP_Furniture_JapaneseToriGate_Medium: HouseNoDestruct
+	{
+		scope=2;
+    storageCategory=1;
+		model="Survivalists_Building\structures\furniture\srp_furniture_japanestorigate_medium.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Building\structures\furniture\data\srp_furniture_torigate_co.paa"
+		};
+	};
+  class SRP_Furniture_JapaneseToriGate_Large_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Japanese Tori Gate Kit - Worn (Large)";
+		descriptionShort="A placeable japanese tori gate kit";
+    projectionTypename="SRP_Furniture_JapaneseToriGate_Large";
+	};
+  class SRP_Furniture_JapaneseToriGate_Large: HouseNoDestruct
+	{
+		scope=2;
+    storageCategory=1;
+		model="Survivalists_Building\structures\furniture\srp_furniture_japanestorigate_large.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Building\structures\furniture\data\srp_furniture_torigate_co.paa"
+		};
+	};
 
   class SRP_Furniture_JapaneseToriGate2_Default_Kit: SRP_KitBase
 	{
 		scope=2;
-		displayName="Japanese Tori Gate Kit - Worn Decorated";
+		displayName="Japanese Tori Gate Kit - Worn Decorated (Small)";
 		descriptionShort="A placeable japanese tori gate kit";
     projectionTypename="SRP_Furniture_JapaneseToriGate2_Default";
 	};
@@ -170,6 +232,48 @@ class CfgVehicles
 		scope=2;
     storageCategory=1;
 		model="Survivalists_Building\structures\furniture\srp_furniture_japanesetorigate2.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Building\structures\furniture\data\srp_furniture_torigate2_co.paa"
+		};
+	};
+  class SRP_Furniture_JapaneseToriGate2_Medium_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Japanese Tori Gate Kit - Worn Decorated (Medium)";
+		descriptionShort="A placeable japanese tori gate kit";
+    projectionTypename="SRP_Furniture_JapaneseToriGate2_Medium";
+	};
+  class SRP_Furniture_JapaneseToriGate2_Medium: HouseNoDestruct
+	{
+		scope=2;
+    storageCategory=1;
+		model="Survivalists_Building\structures\furniture\srp_furniture_japanesetorigate2_medium.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Building\structures\furniture\data\srp_furniture_torigate2_co.paa"
+		};
+	};
+  class SRP_Furniture_JapaneseToriGate2_Large_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Japanese Tori Gate Kit - Worn Decorated";
+		descriptionShort="A placeable japanese tori gate kit";
+    projectionTypename="SRP_Furniture_JapaneseToriGate2_Large";
+	};
+  class SRP_Furniture_JapaneseToriGate2_Large: HouseNoDestruct
+	{
+		scope=2;
+    storageCategory=1;
+		model="Survivalists_Building\structures\furniture\srp_furniture_japanesetorigate2_large.p3d";
     hiddenSelections[]=
 		{
 			"zbytek"

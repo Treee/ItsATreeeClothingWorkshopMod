@@ -11,8 +11,8 @@ class CfgPatches
       "jmc_SnowOwl",
       "jmc_Prototype",
       "Survivalists_Weapons_JMC_Rifles",
-      "MassBuildings", // rifle core overrides
-      "Mass_Textures", 
+      // "MassBuildings", // rifle core overrides
+      // "Mass_Textures", 
 		};
 	};
 };

@@ -183,15 +183,15 @@ class CfgVehicles
 
   class ImprovisedFishingRod: FishingRod_Base_New
   {
-    inventorySlot[]+={"fishingRod"};
+    inventorySlot[]+={"Shoulder","melee","fishingRod"};
   };
 	class ObsoleteFishingRod: FishingRod_Base_New
 	{
-    inventorySlot[]+={"fishingRod"};
+    inventorySlot[]+={"Shoulder","melee","fishingRod"};
   };
   class FishingRod: FishingRod_Base_New
 	{
-    inventorySlot[]+={"fishingRod"};
+    inventorySlot[]+={"Shoulder","melee","fishingRod"};
   };
   class Blowtorch: Inventory_Base
 	{
