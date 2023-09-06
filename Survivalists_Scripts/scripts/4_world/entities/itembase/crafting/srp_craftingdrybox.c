@@ -34,12 +34,16 @@ class SRP_TimeBasedWorkbench_Base extends ItemBase
     SRP_PlantHerbEdible_Colorbase herb;
     if (Class.CastTo(herb, item))
       return true;
+    if (item.GetType() == "Cannabis" || item.GetType() == "Cannabis_Irradiated")
+      return true;
 		return false;
 	}
   override bool CanLoadItemIntoCargo( EntityAI item )
   {
 		SRP_PlantHerbEdible_Colorbase herb;
     if (Class.CastTo(herb, item))
+      return true;
+    if (item.GetType() == "Cannabis" || item.GetType() == "Cannabis_Irradiated")
       return true;
 		return false;
   }

@@ -162,12 +162,16 @@ class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
     SRP_PlantHerbEdible_Colorbase herb;
     if (Class.CastTo(herb, item))
       return true;
+    if (item.GetType() == "Cannabis" || item.GetType() == "Cannabis_Irradiated")
+      return true;
 		return false;
 	}
   override bool CanLoadItemIntoCargo( EntityAI item )
   {
 		SRP_PlantHerbEdible_Colorbase herb;
     if (Class.CastTo(herb, item))
+      return true;
+    if (item.GetType() == "Cannabis" || item.GetType() == "Cannabis_Irradiated")
       return true;
 		return false;
   }
