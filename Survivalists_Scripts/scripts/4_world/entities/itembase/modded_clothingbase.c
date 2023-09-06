@@ -31,4 +31,19 @@ modded class Clothing
   {
     return false;
   }
+
+//================================== OLD MSP STUFF THAT CAUSES STUFF TO DROP WHEN REMOVED
+	override bool CanReceiveItemIntoCargoClothingConditions(EntityAI item)
+	{
+		if (GetInventory().IsInCargo())
+			return false;
+		return true;
+	}
+	override bool CanLoadItemIntoCargoClothingConditions(EntityAI item)
+	{
+		if (GetInventory().IsInCargo())
+			return false;
+		return true;
+	}
+//======================================= END
 };
