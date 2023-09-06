@@ -1327,64 +1327,185 @@ class CfgSlots
 	{
 		name="shoulder1";
 		displayName="shoulder1";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder1";
 	};
 	class Slot_Gun2
 	{
 		name="shoulder2";
 		displayName="shoulder2";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder2";
 	};
 	class Slot_Gun3
 	{
 		name="shoulder3";
 		displayName="shoulder3";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder3";
 	};
 	class Slot_Gun4
 	{
 		name="shoulder4";
 		displayName="shoulder4";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder4";
 	};
 	class Slot_Gun5
 	{
 		name="shoulder5";
 		displayName="shoulder5";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder5";
 	};
 	class Slot_Gun6
 	{
 		name="shoulder6";
 		displayName="shoulder6";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder6";
 	};
 	class Slot_Gun7
 	{
 		name="shoulder7";
 		displayName="shoulder7";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder7";
 	};
 	class Slot_Gun8
 	{
 		name="shoulder8";
 		displayName="shoulder8";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder8";
 	};
 	class Slot_Gun9
 	{
 		name="shoulder9";
 		displayName="shoulder9";
-		ghostIcon="shoulderright";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 		selection="shoulder9";
+	};
+
+  class Slot_Shoulder1
+	{
+		name="Shoulder1";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder2
+	{
+		name="Shoulder2";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder3
+	{
+		name="Shoulder3";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder4
+	{
+		name="Shoulder4";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder5
+	{
+		name="Shoulder5";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder6
+	{
+		name="Shoulder6";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder7
+	{
+		name="Shoulder7";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder8
+	{
+		name="Shoulder8";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder9
+	{
+		name="Shoulder9";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder10
+	{
+		name="Shoulder10";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder11
+	{
+		name="Shoulder11";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder12
+	{
+		name="Shoulder12";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder13
+	{
+		name="Shoulder13";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder14
+	{
+		name="Shoulder14";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder15
+	{
+		name="Shoulder15";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder16
+	{
+		name="Shoulder16";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder17
+	{
+		name="Shoulder17";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder18
+	{
+		name="Shoulder18";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder19
+	{
+		name="Shoulder19";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
+	};
+	class Slot_Shoulder20
+	{
+		name="Shoulder20";
+		displayName="$STR_CfgShoulder0";
+		ghostIcon="set:dayz_inventory image:shoulderleft";
 	};
 	class Food1
 	{
@@ -3091,6 +3212,127 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_Pin5"};
 		model="Survivalists_Mods\proxy\srp_pin5_proxy.p3d";
 	};
+//===================== guns
+//  class Proxyshoulder1: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder1"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder2: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder2"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder3: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder3"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder4: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder4"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder5: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder5"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder6: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder6"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder7: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder7"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder8: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder8"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder9: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder9"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder10: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder10"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder11: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder11"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder12: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder12"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder13: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder13"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder14: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder14"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder15: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder15"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder16: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder16"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder17: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder17"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder18: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder18"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder19: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder19"};
+// 		model="";
+// 	};
+// 	class Proxyshoulder20: ProxyAttachment
+// 	{
+// 		scope=2;
+// 		inventorySlot[]={"Shoulder20"};
+// 		model="";
+// 	};
 //===================== propane tanks
   class Proxysrp_propanetank1_proxy: ProxyAttachment
 	{
