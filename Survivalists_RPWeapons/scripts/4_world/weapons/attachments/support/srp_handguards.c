@@ -1,4 +1,4 @@
-class SRP_Handguard_Base extends M4_PlasticHndgrd
+class SRP_Handguard_Base extends Inventory_Base
 {
   override bool CanDetachAttachment(EntityAI parent)
 	{
@@ -18,6 +18,19 @@ class SRP_Handguard_Base extends M4_PlasticHndgrd
 		return false;
 	}
 };
+
+class ESP_R700_HndGrd_Colorbase extends SRP_Handguard_Base{};
+class ESP_Erg_XlHndgrd_Colorbase extends SRP_Handguard_Base{};
+class ESP_RIS_XlHndgrd_Colorbase extends SRP_Handguard_Base{};
+class ESP_SCAR_URGI_HNDGRD_Colorbase extends SRP_Handguard_Base{};
+class ESP_SCAR_RIS_HNDGRD_Colorbase extends SRP_Handguard_Base{};
+class STG_AK_Poli_HNDGRD_Colorbase extends SRP_Handguard_Base{};
+class STG_AK_Wood_HNDGRD_Colorbase extends SRP_Handguard_Base{};
+class STG_AK_Junk_HNDGRD_Colorbase extends SRP_Handguard_Base{};
+class ESP_SA80_RIS_HndGrd_Colorbase extends SRP_Handguard_Base{};
+class ESP_SA80_Plastic_HndGrd_Colorbase extends SRP_Handguard_Base{};
+class STG_AK_Geksagon extends SRP_Handguard_Base{};
+class STG_AK_CMRD_HNDGRD extends SRP_Handguard_Base{};
 
 class ESP_LW_HndGrd_ColorBase extends SRP_Handguard_Base{};
 class ESP_Lightweight_HndGrd_Green extends ESP_LW_HndGrd_ColorBase{};

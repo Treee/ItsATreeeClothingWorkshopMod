@@ -61,3 +61,4 @@ class ttscarl extends RifleBoltLock_Base
 };
 
 class ttscarl_Tan extends ttscarl{};
+class ttscarl_Rare extends ttscarl{};

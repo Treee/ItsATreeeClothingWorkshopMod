@@ -567,17 +567,30 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_TheBasicGuidebook_co.paa"
     };
   };
-  class SRP_ReadableBook_AdeptusMechanicusPrayerBook: SRP_ReadableBook_Colorbase
+  class SRP_ReadableBook_AdeptusMechanicusPrayerBookV1: SRP_ReadableBook_Colorbase
   {
     scope=2;
-    title="Prayer Book of the Adeptus Mechanicus";
+    title="Prayer Book of the Adeptus Mechanicus - Volume 1";
     author="Autosavant Chem-109 Enron";
-		file="Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbook.html";		
+		file="Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbookv1.html";		
     displayName="Prayer Book of the Adeptus Mechanicus";
     descriptionShort="A worn and oil stained crimson book.  It smells of motor oil and incense.";
     hiddenSelectionsTextures[]=
     {
-      "Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbook_co.paa"
+      "Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbookv1_co.paa"
+    };
+  };
+  class SRP_ReadableBook_AdeptusMechanicusPrayerBookV2: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Prayer Book of the Adeptus Mechanicus - Volume 2";
+    author="Autosavant Chem-109 Enron";
+		file="Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbookv2.html";		
+    displayName="Prayer Book of the Adeptus Mechanicus";
+    descriptionShort="A worn and oil stained crimson book.  It smells of motor oil and incense.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_theadeptusmechanicusprayerbookv2_co.paa"
     };
   };
   class SRP_ReadableBook_HarryPotterSorcerersStone: SRP_ReadableBook_Colorbase

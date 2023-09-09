@@ -114,6 +114,7 @@ class CfgSlots
 	{
 		name="R700HndGrd";
 		displayName="R700 Handguard";
+    ghostIcon="set:dayz_inventory image:handguard";
 	};
   class Slot_R700Chassis
 	{
@@ -124,6 +125,7 @@ class CfgSlots
 	{
 		name="VectorHndGrd";
 		displayName="Vector Handguard";
+    ghostIcon="set:dayz_inventory image:handguard";
 	};
   class Slot_SRP_StockPouch
 	{
@@ -132,9 +134,9 @@ class CfgSlots
 	};
 	class Slot_SRP_GunDerringer
   {
-      name="SRP_GunDerringer";
-      displayName="Derringer";
-      ghostIcon="set:dayz_inventory image:pistol";
+    name="SRP_GunDerringer";
+    displayName="Derringer";
+    ghostIcon="set:dayz_inventory image:pistol";
   };
   class Slot_RIS_Adapter
   {
@@ -152,13 +154,13 @@ class CfgSlots
   {
     name="ScarHndGrd"; // this is the name you use in "attachments[]={};" in your items config
     displayName="Hand Guard"; // this is what shows when the player hovers over the icon
-    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+    ghostIcon="set:dayz_inventory image:handguard";  // this is the icon the GUI attachment shows
   };
   class Slot_Scar_BttStck
   {
     name="ScarBttStck"; // this is the name you use in "attachments[]={};" in your items config
     displayName="Butt Stock"; // this is what shows when the player hovers over the icon
-    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+    ghostIcon="set:dayz_inventory image:buttstock";  // this is the icon the GUI attachment shows
   };
   class Slot_P90_UpgradeKit
   {
@@ -188,7 +190,7 @@ class CfgSlots
   {
     name="SA80HndGrd"; // this is the name you use in "attachments[]={};" in your items config
     displayName="Hand Guard"; // this is what shows when the player hovers over the icon
-    ghostIcon="set:dayz_inventory image:paper";  // this is the icon the GUI attachment shows
+    ghostIcon="set:dayz_inventory image:handguard";  // this is the icon the GUI attachment shows
   };
   class Slot_PistolRail
   {
