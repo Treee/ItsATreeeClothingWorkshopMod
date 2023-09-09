@@ -2,10 +2,7 @@ class CfgPatches
 {
 	class Survivalists_RPWeapons_Smgs_ESP_Vector
 	{
-		units[]=
-		{
-			"ESP_Vector"
-		};
+		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
