@@ -8,8 +8,6 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-      // "ttak458",
-      // "ttak458poli"
 			"Survivalists_Weapons_JMC_Rifles_ttak458"
 		};
 	};
@@ -31,7 +29,7 @@ class cfgWeapons
 			"zbytek",
 			"Stock"
 		};
-			hiddenSelectionsTextures[]=
+    hiddenSelectionsTextures[]=
 		{
 			"Survivalists_RPWeapons\rifles\ttak458\data\ttak458_co.paa","Survivalists_RPWeapons\rifles\ttak458\data\ttak458_Stock_co.paa"
 		};
@@ -41,7 +39,6 @@ class cfgWeapons
 			"AKRISAdapter",
 			"weaponOpticsAK",
 			"weaponOptics",
-			"weaponFlashlight",
 			"weaponMuzzleAK",
 			"weaponBayonetAK",
 			"weaponWrap",
@@ -170,11 +167,11 @@ class cfgWeapons
 			"zbytek",
 			"Stock"
 		};
-			hiddenSelectionsTextures[]=
+    hiddenSelectionsTextures[]=
 		{
 			"Survivalists_RPWeapons\rifles\ttak458\data\ttak458_Gold_CO.paa","Survivalists_RPWeapons\rifles\ttak458\data\ttak458_Stock_co.paa"
 		};
-			hiddenSelectionsMaterials[]=
+    hiddenSelectionsMaterials[]=
 		{
 			"Survivalists_RPWeapons\rifles\ttak458\data\base_Gold.rvmat","Survivalists_RPWeapons\rifles\ttak458\data\base_Stock.rvmat"
 		};

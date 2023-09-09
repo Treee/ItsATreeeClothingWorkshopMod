@@ -15,11 +15,27 @@ class CfgPatches
 
 class CfgVehicles
 {
+  class Inventory_Base;
   class M4_PlasticHndgrd;
 	class M4_OEBttstck;
-  class Inventory_Base;
-  class AK74_Hndgrd;
 	class AK_WoodBttstck;
+
+  class AK_WoodHndgrd: Inventory_Base
+  {
+    hasRailFunctionality=1;
+  };
+  class AK74_Hndgrd: Inventory_Base
+	{
+    hasRailFunctionality=1;
+  };
+  class AK_RailHndgrd: Inventory_Base
+	{
+    hasRailFunctionality=1;
+  };
+  class AK_PlasticHndgrd: Inventory_Base
+	{
+    hasRailFunctionality=1;
+  };
 //===================================================== CONTAINERS
 	class SRP_ButtstockPouch_ColorBase: Inventory_Base
 	{

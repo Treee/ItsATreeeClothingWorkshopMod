@@ -1,17 +1,17 @@
 modded class Rifle_Base
 {
-  protected int m_RISLeftSlotId;
-  protected int m_RISRightSlotId;
-  protected int m_RISBottomSlotId;
+  // protected int m_RISLeftSlotId;
+  // protected int m_RISRightSlotId;
+  // protected int m_RISBottomSlotId;
 
-  override void InitItemVariables()
-  {
-    super.InitItemVariables();
+  // override void InitItemVariables()
+  // {
+  //   super.InitItemVariables();
 
-    m_RISLeftSlotId = InventorySlots.GetSlotIdFromString("RISLeft");
-    m_RISRightSlotId = InventorySlots.GetSlotIdFromString("RISRight");
-    m_RISBottomSlotId = InventorySlots.GetSlotIdFromString("RISBottom");
-  }
+  //   m_RISLeftSlotId = InventorySlots.GetSlotIdFromString("RISLeft");
+  //   m_RISRightSlotId = InventorySlots.GetSlotIdFromString("RISRight");
+  //   m_RISBottomSlotId = InventorySlots.GetSlotIdFromString("RISBottom");
+  // }
 
   // rail stuff for ar15, sa80a etc
   override bool CanDisplayAttachmentSlot(int slot_id)
@@ -25,7 +25,11 @@ modded class Rifle_Base
         if (rifleRailAdapterName == "")
           return true;
         if (Class.CastTo(rifleRail, FindAttachmentBySlotName(rifleRailAdapterName)))
-          return rifleRail.ConfigGetBool("hasRailFunctionality");
+        {
+          if (rifleRail.ConfigGetBool("hasRailFunctionality"))
+            return true;
+          return false;
+        }
         return false;
       }
       return true;
@@ -45,7 +49,11 @@ modded class Rifle_Base
           if (rifleRailAdapterName == "")
             return true;
           if (Class.CastTo(rifleRail, FindAttachmentBySlotName(rifleRailAdapterName)))
-            return rifleRail.ConfigGetBool("hasRailFunctionality");
+          {
+            if (rifleRail.ConfigGetBool("hasRailFunctionality"))
+              return true;
+            return false;
+          }
           return false;
         }
         return true;
