@@ -23,7 +23,7 @@ class CfgVehicles
 		descriptionShort="A wrap for your firearm.";
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\backpacks\data\ghillie_black_co.paa"
+			"Survivalists_Retextures\characters\backpacks\data\ghillie_winter_co.paa"
 		};
 	};
 	class GhillieAtt_Black: GhillieAtt_ColorBase
