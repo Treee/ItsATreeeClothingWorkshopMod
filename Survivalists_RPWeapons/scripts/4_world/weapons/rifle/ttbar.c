@@ -1,5 +1,9 @@
-class ttbar extends RifleBoltLock_Base
+class ttbar extends RifleBoltFree_Base
 {
+  	override RecoilBase SpawnRecoilObject()
+	{
+		return new Ruger1022Recoil(this); //TODO
+	}
   override void OnDebugSpawn()
 	{
 		GameInventory inventory = GetInventory();
