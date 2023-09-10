@@ -20,9 +20,9 @@ modded class ActionCloseDoors
 		if( Class.CastTo(srpShippingContainer, target.GetObject()))
     {
       if (srpShippingContainer.HasRandomEventPerformed())
-      {
         return false;
-      }      
+      else
+        srpShippingContainer.SetHasBeenChecked(true);
     }
     return super.ActionCondition(player, target, item);
 	}

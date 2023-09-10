@@ -9,12 +9,13 @@ class SRP_ShippingContainerBase extends House
     if (!HasBeenChecked())
     {
       int chanceRoll = Math.RandomIntInclusive(1,100);
+      // int chanceRoll = 94;
       // 1-94 is nothing
       if (chanceRoll > 0 && chanceRoll <= 90) //1-90
       {
         // do nothing
       }      
-      else if (chanceRoll > 91 && chanceRoll <= 94) //91,94
+      else if (chanceRoll == 94) //94
       {
         SpawnRareLoot(Math.RandomIntInclusive(1,4));
         SetHasRandomEventPerformed(true);
@@ -84,8 +85,11 @@ class SRP_ShippingContainerBase extends House
     ItemBase newItem;
     for (int i = 0; i < max; i++)
     {        
-      if (Class.CastTo(newItem, GetGame().CreateObjectEx(MiscGameplayFunctions.GetRandomRareLootType(), GetPosition(), ECE_PLACE_ON_SURFACE)))
-        newItem.SetQuantity(Math.RandomIntInclusive(1, newItem.GetQuantityMax()));
+      if (Class.CastTo(newItem, GetGame().CreateObjectEx(MiscGameplayFunctions.GetRandomRareLootType(), GetPosition(), ECE_SETUP|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY)))
+      {
+        int rndMax = newItem.GetQuantityMax() / 4;
+        newItem.SetQuantity(Math.RandomIntInclusive(1, rndMax));
+      }
     }
   }
 }
