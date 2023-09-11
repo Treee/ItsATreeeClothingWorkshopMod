@@ -1,5 +1,9 @@
-class ttsok94 extends RifleBoltLock_Base
+class ttsok94 extends RifleBoltFree_Base
 {
+  override RecoilBase SpawnRecoilObject()
+	{
+		return new AkmRecoil(this);
+	}
 	override void OnDebugSpawn()
 	{
 		GameInventory inventory = GetInventory();
@@ -13,49 +17,112 @@ class ttsok94 extends RifleBoltLock_Base
 
     SpawnAttachedMagazine("Mag_AKM_Drum75Rnd_Green");
 	}	
-	override bool CanReceiveAttachment( EntityAI attachment, int slotId )
-	{
-		if ( slotId == InventorySlots.GetSlotIdFromString("weaponOpticsHunting") )
-		{
-			if ( this.FindAttachmentBySlotName("AKRISAdapter") == NULL )
-			{
-				return false;
-			}
-			return true;
-		}
-		if ( slotId == InventorySlots.GetSlotIdFromString("AKRISAdapter") )
-		{
-			if ( this.FindAttachmentBySlotName("weaponOpticsAK") == NULL )
-			{
-				return true;
-			}
-			return false;
-		}
-		if ( slotId == InventorySlots.GetSlotIdFromString("weaponOpticsAK") )
-		{
-			if ( this.FindAttachmentBySlotName("AKRISAdapter") == NULL )
-			{
-				return true;
-			}
-			return false;
-		}
-		if ( slotId == InventorySlots.GetSlotIdFromString("weaponOpticsAK") )
-		{
-			if ( this.FindAttachmentBySlotName("weaponOpticsHunting") == NULL )
-			{
-				return true;
-			}
-			return false;
-		}
-		if ( slotId == InventorySlots.GetSlotIdFromString("weaponOpticsHunting") )
-		{
-			if ( this.FindAttachmentBySlotName("weaponOpticsAK") == NULL )
-			{
-				return true;
-			}
-			return false;
-		}
+  override bool CanDisplayAttachmentSlot(int slot_id)
+  {
+    if (super.CanDisplayAttachmentSlot(slot_id))
+    {
+      // restrict only one optic showing at a time when others are attached
+      string slotName = InventorySlots.GetSlotName(slot_id);
+
+      ItemBase weaponOptic;
+      if (slotName == "weaponOpticsAK" || slotName == "weaponOpticsHunting")
+      {
+        // if the adapter is not attached do not show scope slots
+        if (!FindAttachmentBySlotName("AKRISAdapter"))
+          return false;
+        else
+        {
+          if (slotName == "weaponOpticsAK")
+          {
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOpticsHunting")))
+              return false;
+          }        
+          if (slotName == "weaponOpticsHunting")
+          {
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOpticsAK")))
+              return false;
+          }
+        }
+      }
+      if (slotName == "weaponFlashlight")
+      {
+        if (FindAttachmentBySlotName("weaponHandguardAK"))
+          return true; // show slot when handguard is attached
+        return false;
+      }
+      if (slotName == "weaponBayonetAK")
+      {
+        if (FindAttachmentBySlotName("weaponMuzzleAK"))
+          return false; // do not show bayonet slot if suppressor is attached
         return true;
+      }
+      if (slotName == "weaponMuzzleAK")
+      {
+        if (FindAttachmentBySlotName("weaponBayonetAK"))
+          return false; // do not show suppressor slot if suppressor is attached
+        return true;
+      }
+      return true;
+    }
+    return false;
+  }
+  override bool CanReceiveAttachment( EntityAI attachment, int slotId )
+	{
+    if (super.CanReceiveAttachment(attachment, slotId))
+    {
+      // restrict only one optic showing at a time when others are attached
+      string slotName = InventorySlots.GetSlotName(slotId);
+
+      ItemBase weaponOptic;
+      if (slotName == "weaponOpticsAK" || slotName == "weaponOptics")
+      {
+        // if the adapter is not attached do not show scope slots
+        if (!FindAttachmentBySlotName("AKRISAdapter"))
+          return false;
+        else
+        {
+          if (slotName == "weaponOpticsAK")
+          {
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOptics")))
+              return false;
+          }        
+          if (slotName == "weaponOptics")
+          {
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOpticsAK")))
+              return false;
+          }
+        }
+      }
+      if (slotName == "weaponFlashlight")
+      {
+        if (FindAttachmentBySlotName("weaponHandguardAK"))
+          return true; // show slot when handguard is attached
+        return false;
+      }
+      if (slotName == "weaponBayonetAK")
+      {
+        if (FindAttachmentBySlotName("weaponMuzzleAK"))
+          return false; // do not show bayonet slot if suppressor is attached
+        return true;
+      }
+      if (slotName == "weaponMuzzleAK")
+      {
+        if (FindAttachmentBySlotName("weaponBayonetAK"))
+          return false; // do not show suppressor slot if suppressor is attached
+        return true;
+      }
+      return true;
+    }
+		return false;
 	}
+
+  override bool NeedsRailAdapter()
+  {
+    return true;
+  }
+  override string GetRailAdapterName()
+  {
+    return "AKRISAdapter";
+  }
 
 };

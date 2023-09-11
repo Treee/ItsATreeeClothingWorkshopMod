@@ -11,7 +11,6 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-      // "ttsok94"
 			"Survivalists_Weapons_JMC_Rifles_ttsok94"
 		};
 	};
@@ -39,10 +38,10 @@ class cfgWeapons
 		};
 		attachments[]=
 		{
-			"weaponHandguardAK",
-			"weaponOpticsAK",
 			"AKRISAdapter",
+			"weaponOpticsAK",
 			"weaponOpticsHunting",
+			"weaponHandguardAK",
 			"weaponFlashlight",
 			"weaponMuzzleAK",
 			"weaponBayonetAK",

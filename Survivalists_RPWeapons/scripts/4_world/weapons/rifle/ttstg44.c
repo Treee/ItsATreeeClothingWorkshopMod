@@ -1,5 +1,9 @@
-class ttstg44 extends AKM_Base
+class ttstg44 extends RifleBoltFree_Base
 {
+  override RecoilBase SpawnRecoilObject()
+	{
+		return new AkmRecoil(this);
+	}
   // override bool CanEnterIronsights()
 	// {
 	// 	ItemOptics optic = GetAttachedOptics();
