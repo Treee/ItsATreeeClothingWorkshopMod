@@ -11,7 +11,6 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Weapons_Firearms",
-      // "ttmp5"
 			"Survivalists_Weapons_JMC_Smgs_ttmp5"
 		};
 	};
@@ -38,7 +37,6 @@ class cfgWeapons
 		recoilModifier[]={1,1,1};
 		swayModifier[]={1.2,1.2,1};
 		itemSize[]={5,3};
-
 		class Particles
 		{
 			class OnFire

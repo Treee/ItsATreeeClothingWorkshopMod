@@ -41,7 +41,7 @@ class cfgWeapons
 		{
       // "Mag_Saiga_5Rnd",
 			// "Mag_Saiga_8Rnd",
-			"srp_aa12_mag",
+			"srp_aa12_basic_mag",
 		};
 		magazineSwitchTime=0.2;
 		PPDOFProperties[]={1,0.5,10,140,4,10};
