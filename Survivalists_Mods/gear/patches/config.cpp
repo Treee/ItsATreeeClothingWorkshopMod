@@ -110,14 +110,6 @@ class CfgVehicles
       "Survivalists_Mods\gear\patches\data\srp_patchflag.rvmat",
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"
     };
-    class InventorySlotsOffsets
-		{
-      class SRP_DisplayHook_PatchArmband
-			{
-				position[]={0,0,0};
-				orientation[]={0,0,0};
-			};
-		};
 		class DamageSystem
 		{
 			class GlobalHealth
