@@ -961,6 +961,57 @@ class CfgVehicles
       "BlackSpace",
       "Bloody",
     };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=150;
+          healthLevels[]=
+					{						
+						{1,{"DZ\characters\tops\data\labcoat.rvmat"}},
+						{0.69999999,{"DZ\characters\tops\data\labcoat.rvmat"}},
+						{0.5,{"DZ\characters\tops\data\labcoat_damage.rvmat"}},
+						{0.30000001,{"DZ\characters\tops\data\labcoat_damage.rvmat"}},
+						{0,{"DZ\characters\tops\data\labcoat_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Melee
+				{
+					class Health
+					{
+						damage=0.94999999;
+					};
+					class Blood
+					{
+						damage=1;
+					};
+					class Shock
+					{
+						damage=1;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.94999999;
+					};
+					class Blood
+					{
+						damage=1;
+					};
+					class Shock
+					{
+						damage=1;
+					};
+				};
+			};
+		};
   };
 
 
