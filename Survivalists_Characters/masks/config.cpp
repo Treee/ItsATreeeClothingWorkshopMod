@@ -12,7 +12,8 @@ class CfgPatches
       "DZ_Characters_Masks",
       "Scarf",
       "Dressupbox",
-      "Alv_Tac_Gear_Masks"
+      "Alv_Tac_Gear_Masks",
+      "Survivalists_Narcotics_Gear_Clothing"
 		};
 	};
 };
@@ -761,6 +762,10 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };
+  class SRP_SmokableWearable_ColorBase: Clothing
+	{
+		headSelectionsToHide[]={};
+	};
 
 // ----------------------------------------- Custom Stuff
   class SRP_HannyaMask: Clothing
@@ -2278,6 +2283,72 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_SmokableWearable_Bamboo: Clothing
+  {
+    scope=2;
+    displayName="Bamboo Shoot";
+		descriptionShort="A small piece of bamboo.";
+    model="Survivalists_Characters\masks\srp_cigarette_g.p3d";
+    color="Bamboo";
+    hiddenSelections[]= {"zbytek"};
+		inventorySlot[]=
+		{
+			"Mask"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Mask"
+		};
+		rotationFlags=16;
+		weight=100;
+		itemSize[]={1,2};
+		varWetMax=1;
+		heatIsolation=0.6;
+    noHelmet=0;
+		noEyewear=0;
+		headSelectionsToHide[]={};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\masks\data\joint_bamboo_co.paa",
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\masks\srp_cigarette_m.p3d";
+			female="Survivalists_Characters\masks\srp_cigarette_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=15;
+					healthLevels[]=
+					{
+            {1,{"Survivalists_Characters\masks\data\joint_bamboo.rvmat"}},
+            {0.69999999,{"Survivalists_Characters\masks\data\joint_bamboo.rvmat"}},
+            {0.5,{"Survivalists_Characters\masks\data\joint_bamboo.rvmat"}},
+            {0.30000001,{"Survivalists_Characters\masks\data\joint_bamboo.rvmat"}},
+            {0,{"Survivalists_Characters\masks\data\joint_bamboo.rvmat"}}
+			    };
+				};
+			};
+    };
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPaper_SoundSet";
+					id=797;
+				};
+			};
+		};
+		soundVoiceType="none";
+  };
 
 // ------------------------------------------ MVS Redux
 	class SRP_S10Respirator_Colorbase: GP5GasMask

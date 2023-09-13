@@ -1486,6 +1486,19 @@ class CfgVehicles
 		{
 			"Survivalists_Mods\gear\camping\data\alpocalypseguitar_co.paa"
 		};
+    class InventorySlotsOffsets
+		{
+			class Shoulder
+			{
+				position[] = {0.15,0.15,-0.1};
+				orientation[] = {90,0,-70};
+			};
+			class Melee
+			{
+				position[] = {0.06,0.15,0.05};
+				orientation[] = {90,0,-150};
+			};
+		};
 		class AnimEvents
 		{
 			class SoundWeapon
@@ -1957,6 +1970,154 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_Biwa_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Japanese Biwa";
+		descriptionShort="A meticulously crafted instrument with a beautiful sound.";
+		model="Survivalists_Mods\gear\camping\srp_biwa.p3d";
+		weight=1500;
+		itemSize[]={3,6};
+    rotationFlags=16;
+    // rootClassName="SRP_Biwa";
+    // colorVariants[]={};
+    inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_biwa_default_co.paa"
+		};
+    class InventorySlotsOffsets
+		{
+			class Shoulder
+			{
+				position[] = {0.08,0.25,-0.15};
+				orientation[] = {90,0,-65};
+			};
+			class Melee
+			{
+				position[] = {0.04,0.25,0.15};
+				orientation[] = {90,0,-150};
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_biwa.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_biwa.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_biwa_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_biwa_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_biwa_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="woodenlog_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodenlog_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_Biwa_Basic: SRP_Biwa_ColorBase{scope=2;};
+  class SRP_ChinesesHandFan_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Chinese Hand Fan";
+		descriptionShort="A hand fan in Chinese style. Very delicate.";
+		model="Survivalists_Mods\gear\camping\srp_chinesefan.p3d";
+		weight=100;
+		itemSize[]={2,2};
+    rotationFlags=16;
+    // rootClassName="SRP_ChinesesHandFan";
+    // colorVariants[]={};
+    inventorySlot[]={};
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_chinesehandfan_default_co.paa"
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_chinesehandfan.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_chinesehandfan.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_chinesehandfan_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_chinesehandfan_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_chinesehandfan_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeWoodBlunt";
+				range=1.6;
+			};
+			class Heavy
+			{
+				ammo="MeleeWoodBlunt_Heavy";
+				range=1.6;
+			};
+			class Sprint
+			{
+				ammo="MeleeWoodBlunt_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="woodenlog_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodenlog_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_ChinesesHandFan_Basic: SRP_ChinesesHandFan_ColorBase{scope=2;};
 	
 //=========================================== CARPET & RUGS
   class SRP_Carpet_Kit: SRP_KitBase  // 

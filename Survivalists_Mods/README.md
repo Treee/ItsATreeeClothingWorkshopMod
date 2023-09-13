@@ -1006,6 +1006,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Japanese Style Umbrella Updated" (https://skfb.ly/oq67J) by DailynSastro is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "biwa" (https://skfb.ly/oIEoV) by how low is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Chinese Hand Fan" (https://skfb.ly/o7MuY) by Alex Sanches is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
