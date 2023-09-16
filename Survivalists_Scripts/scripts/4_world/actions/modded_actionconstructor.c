@@ -14,7 +14,7 @@ modded class ActionConstructor
     actions.Insert(ActionSwitchWoodFishingLureOption);
     actions.Insert(ActionSwitchMetalFishingLureOption);
     
-    actions.Insert(ActionPlayGuitarOption);
+    actions.Insert(ActionPlayMusicalInstrumentOption);
 
     actions.Insert(SRP_ActionPoisonBioFlower);
     actions.Insert(SRP_ActionFeedBioFlower);

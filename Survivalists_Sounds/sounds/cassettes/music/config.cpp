@@ -446,6 +446,15 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\acoustic-guitar-loop.ogg",1}};
 	};
+
+  class SRPRadio_Biwa_DemonSlayer_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-DemonSlayer.ogg",1}};
+	};
+  class SRPRadio_Biwa_LittleSoldierBoy_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-LittleSoldierBoy.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -978,4 +987,20 @@ class CfgSoundSets
 			"SRPRadio_AcousticGuitar_TheJourney_Shader1"
 		};
 	};
+
+  class SRPRadio_Biwa_DemonSlayer_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Biwa_DemonSlayer_Shader1"
+		};
+	};
+  class SRPRadio_Biwa_LittleSoldierBoy_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Biwa_LittleSoldierBoy_Shader1"
+		};
+	};
+
 };

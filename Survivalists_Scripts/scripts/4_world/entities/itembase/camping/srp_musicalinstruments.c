@@ -1,11 +1,11 @@
-class SRP_Guitar_Alpocalypse extends ItemBase
+class SRP_MusicalInstrument_Base extends ItemBase
 {
   EffectSound m_ActiveSound;
   bool m_Playing;
   bool m_SyncPlaying;
   int m_SoundIndex;
 
-  void SRP_Guitar_Alpocalypse()
+  void SRP_MusicalInstrument_Base()
   {
     RegisterNetSyncVariableBool( "m_SyncPlaying" );
     RegisterNetSyncVariableInt( "m_SoundIndex", 0, GetSoundsCount() );    
@@ -32,7 +32,7 @@ class SRP_Guitar_Alpocalypse extends ItemBase
   override void SetActions()
   {
     super.SetActions();    
-    AddAction(ActionPlayGuitarOption);
+    AddAction(ActionPlayMusicalInstrumentOption);
   }
   bool CanPlaySound()
   {
@@ -44,7 +44,7 @@ class SRP_Guitar_Alpocalypse extends ItemBase
     {
       if ( m_ActiveSound )
         StopSound();
-      PlaySoundSetLoop(m_ActiveSound, GetSoundSetName(m_SoundIndex), 0, 0);
+      PlaySoundSetLoop(m_ActiveSound, BuildSoundSetString(m_SoundIndex), 0, 0);
       m_Playing = true;
     }
     else
@@ -76,11 +76,33 @@ class SRP_Guitar_Alpocalypse extends ItemBase
   {
     return GetVariantIdOptions().Get(index);
   }
-  string GetSoundSetName(int index)
+  string GetSoundSetName()
   {
-    return string.Format("SRPRadio_AcousticGuitar_%1_SoundSet1", GetVariantIdOptions().Get(index));
+    return "%1";
+  }
+  string BuildSoundSetString(int index)
+  {
+    return string.Format(GetSoundSetName(), GetSoundName(index));
   }
   TStringArray GetVariantIdOptions()
+  {
+    return {
+      "TheStranger",
+      "ImprovLoop",
+      "Avante",
+      "LostWords",
+      "TheJourney",
+    };
+  }
+};
+
+class SRP_Guitar_Alpocalypse extends SRP_MusicalInstrument_Base
+{
+  override string GetSoundSetName()
+  {
+    return "SRPRadio_AcousticGuitar_%1_SoundSet1";
+  }
+  override TStringArray GetVariantIdOptions()
   {
     return {
       "TheStranger",
@@ -100,3 +122,21 @@ class SRP_Guitar_Alpocalypse_Sunset extends SRP_Guitar_Alpocalypse{};
 class SRP_Guitar_Alpocalypse_Teal extends SRP_Guitar_Alpocalypse{};
 class SRP_Guitar_Alpocalypse_TieDye extends SRP_Guitar_Alpocalypse{};
 class SRP_Guitar_Alpocalypse_Yellow extends SRP_Guitar_Alpocalypse{};
+
+
+class SRP_Biwa_ColorBase extends SRP_MusicalInstrument_Base
+{
+  override string GetSoundSetName()
+  {
+    return "SRPRadio_Biwa_%1_SoundSet1";
+  }
+  override TStringArray GetVariantIdOptions()
+  {
+    return {
+      "DemonSlayer",
+      "LittleSoldierBoy",
+    };
+  }
+};
+
+class SRP_Biwa_Basic extends SRP_Biwa_ColorBase{};
