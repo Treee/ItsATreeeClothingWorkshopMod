@@ -20,8 +20,8 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     craftableItems.Insert(Register_WoodenBarricade_IntermediateKit_Recipe());
     craftableItems.Insert(Register_WoodenScaffolding_IntermediateKit_Recipe());
     craftableItems.Insert(Register_WoodenFurniture_IntermediateKit_Recipe());
-    craftableItems.Insert(Register_WoodenFurniture_GardenPlanter_Small_Recipe());
-    craftableItems.Insert(Register_WoodenFurniture_GardenPlanter_Medium_Recipe());
+    // craftableItems.Insert(Register_WoodenFurniture_GardenPlanter_Small_Recipe());
+    // craftableItems.Insert(Register_WoodenFurniture_GardenPlanter_Medium_Recipe());
     craftableItems.Insert(Register_WoodenFurniture_GardenPlanter_Large_Recipe());
 
     craftableItems.Insert(Register_WoodenFurniture_GazeboKit_Recipe());
