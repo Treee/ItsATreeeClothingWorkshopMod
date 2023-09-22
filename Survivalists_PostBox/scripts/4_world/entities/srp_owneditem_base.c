@@ -5,24 +5,29 @@ class SRP_OwnedItem_Base extends ItemBase
 
   protected string m_SRPOwnerSteamIDHash;
   protected string m_SRPOwnerName;
-  // override void OnStoreSave(ParamsWriteContext ctx)
-  // {
-  //   // Print(string.Format("OnStoreSave %1 %2 %3", GetType(), m_SRPOwnerName, m_SRPOwnerSteamIDHash));
-  //   super.OnStoreSave(ctx);
-  //   ctx.Write(m_SRPOwnerName);
-  //   ctx.Write(m_SRPOwnerSteamIDHash);
-  // }
-  // override bool OnStoreLoad(ParamsReadContext ctx, int version)
-  // {
-  //   if (!super.OnStoreLoad(ctx, version))
-  //     return false;
-  //   if (!ctx.Read(m_SRPOwnerName))
-  //     return false;
-  //   if (!ctx.Read(m_SRPOwnerSteamIDHash))
-  //     return false;
-  //   // Print(string.Format("OnStoreLoad %1 %2 %3", GetType(), m_SRPOwnerName, m_SRPOwnerSteamIDHash));
-  //   return true;
-  // }
+  override void OnStoreSave(ParamsWriteContext ctx)
+  {
+    // Print(string.Format("OnStoreSave %1 %2 %3", GetType(), m_SRPOwnerName, m_SRPOwnerSteamIDHash));
+    super.OnStoreSave(ctx);
+    ctx.Write(m_SRPOwnerName);
+    ctx.Write(m_SRPOwnerSteamIDHash);
+  }
+  override bool OnStoreLoad(ParamsReadContext ctx, int version)
+  {
+    if (!super.OnStoreLoad(ctx, version))
+      return false;
+
+    string localOwner = "";
+    if (ctx.Read(localOwner))
+      m_SRPOwnerName = localOwner;
+    
+    string localOwnerId = "";
+    if (ctx.Read(localOwnerId))
+      m_SRPOwnerSteamIDHash = m_SRPOwnerSteamIDHash;
+  
+    // Print(string.Format("OnStoreLoad %1 %2 %3", GetType(), m_SRPOwnerName, m_SRPOwnerSteamIDHash));
+    return true;
+  }
   override void OnRPC( PlayerIdentity sender, int rpc_type,ParamsReadContext ctx ) 
 	{
     switch (rpc_type)
