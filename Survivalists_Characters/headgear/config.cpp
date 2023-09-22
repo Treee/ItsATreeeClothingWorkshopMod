@@ -13,7 +13,6 @@ class CfgPatches
       "DZ_Characters_Masks",
       "DZ_Gear_Optics",
       "DZ_Characters_Glasses",
-      // "MSP_Clothing_Data",//bunny ears, slouchie
       "Alv_Tac_Gear_Headgear"
 		};
 	};
@@ -524,37 +523,7 @@ class CfgVehicles
       "MARPATWinter",      
     };
   };  
-  
-//-------------------------------------- MODDED OVERRIDE
-	// class Msp_BunnyEarsHeadband: Clothing
-	// {
-  //   inventorySlot[]+={"Wig"};
-  // };
-  // class Msp_Slouchie_ColorBase: Clothing
-	// {
-  //   rootClassName="Msp_Slouchie";
-  //   colorVariants[]=
-  //   {
-  //     "Beige",
-  //     "Black",
-  //     "Blue",
-  //     "Red",
-  //     "Red1",      
-  //     "Green",      
-  //     "GreenWeed",      
-  //     "GreyKitty",      
-  //     "Pink",      
-  //     "PinkKitty",      
-  //     "PinkWeed",      
-  //     "PinkPurple",      
-  //     "Teal",      
-  //     "TealWeed",      
-  //   };
-	// };  
-  class MassCatEars: Clothing
-  {
-    inventorySlot[]+={"Wig"};
-  };
+
 //-------------------------------------- ALEVARIC OVERRIDE
   class ALV_MV_TacCap_Forward_Colorbase: Clothing
 	{
@@ -1343,7 +1312,7 @@ class CfgVehicles
 		heatIsolation=0.2;
 		repairableWithKits[]={3,8};
 		repairCosts[]={50,25};
-		inventorySlot[] = {"Headgear"};
+		inventorySlot[] = {"Headgear", "Wig"};
 		simulation = "clothing";
 		vehicleClass = "Clothing";
 		itemInfo[] = {"Clothing","Headgear"};
