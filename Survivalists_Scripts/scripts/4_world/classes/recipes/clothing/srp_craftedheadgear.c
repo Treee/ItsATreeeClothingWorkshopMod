@@ -119,7 +119,7 @@ class Craft_SRP_Crown extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    Debug.Log("Craft_SRP_Crown: Recipe Do method called","recipes");
+    Debug.Log("Craft_SRP_Crown: Recipe Do method called: " + m_Name,"recipes");
 	}
 };
 class Craft_SRP_Crown_Emerald extends Craft_SRP_Crown  
