@@ -1304,7 +1304,6 @@ class CfgVehicles
 		displayName="Crown";
 		descriptionShort="A forged crown, embedded with a flawless ruby. Heavy is the head that wears the crown.";
 		model="Survivalists_characters\headgear\ArthurCrown_g.p3d";
-		rotationFlags=16;
 		weight=110;
 		itemSize[]={3,2};        
 		itemsCargoSize[]={1,1};		

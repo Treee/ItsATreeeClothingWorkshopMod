@@ -602,6 +602,10 @@ modded class PluginRecipesManager
 
       RegisterRecipe(new Craft_SRP_SalvageForZinc);
 
+      RegisterRecipe(new Craft_SRP_Crown_Emerald);
+      RegisterRecipe(new Craft_SRP_Crown_Amethyst);
+      RegisterRecipe(new Craft_SRP_Crown_Sapphire);
+
     //==========================================================Gunsmithing           
       RegisterRecipe(new SRP_BreakDownPistolCore_Expert);
       RegisterRecipe(new SRP_BreakDownRifleCoreLarge_Expert);

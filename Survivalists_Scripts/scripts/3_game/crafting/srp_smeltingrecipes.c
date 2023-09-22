@@ -95,6 +95,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterToolPropaneWhiteRecipe());
     // MASKS
     craftableItems.Insert(RegisterMaskShatteredRecipe());
+    craftableItems.Insert(RegisterBasicCrownRecipe());    
     // BULLETS
     craftableItems.Insert(RegisterBulletsCopperRecipe());
     craftableItems.Insert(RegisterBulletsIronRecipe());
@@ -1486,6 +1487,22 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate5", SRP_COLOR.IRON, 2));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalRod1", SRP_COLOR.IRON, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Leather", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Fabric", SRP_COLOR.NONE, 2));
+    return craftableItem;
+  } 
+  SRP_CraftableItem RegisterBasicCrownRecipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("MetalCrown_Basic", "Golden Crown");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.GOLD, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.GOLD, 3));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.ZINC, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate4", SRP_COLOR.GOLD, 3));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate5", SRP_COLOR.GOLD, 2));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalRod1", SRP_COLOR.BRASS, 1));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Leather", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
