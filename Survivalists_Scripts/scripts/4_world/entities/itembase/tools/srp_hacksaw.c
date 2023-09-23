@@ -6,6 +6,10 @@ class SRP_Hacksaw_Espen extends Hacksaw
 		AddAction(ActionDestroyCodeLockOnFence);
 		AddAction(ActionDestroyCodeLockOnTent);
   }
+  override bool CanBypassRaidConditions()
+  {
+    return true;
+  }
 };
 class SRP_Hacksaw_Stag extends Hacksaw
 {
@@ -15,6 +19,10 @@ class SRP_Hacksaw_Stag extends Hacksaw
 		AddAction(ActionDestroyCodeLockOnFence);
 		AddAction(ActionDestroyCodeLockOnTent);
   }
+  override bool CanBypassRaidConditions()
+  {
+    return true;
+  }
 };
 class SRP_Hacksaw_LocknSons extends Hacksaw
 {
@@ -23,5 +31,9 @@ class SRP_Hacksaw_LocknSons extends Hacksaw
     super.SetActions();
 		AddAction(ActionDestroyCodeLockOnFence);
 		AddAction(ActionDestroyCodeLockOnTent);
+  }
+  override bool CanBypassRaidConditions()
+  {
+    return true;
   }
 };

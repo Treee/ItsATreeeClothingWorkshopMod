@@ -272,6 +272,11 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_TerritoryFlag_Crafting: TerritoryFlag
+  {
+    scope=2;
+  };
+
   // increase the length of the cablereel
   class CableReel: Inventory_Base
 	{

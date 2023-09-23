@@ -204,6 +204,10 @@ modded class ItemBase
   {
     return false;
   }
+  bool CanBypassRaidConditions()
+  {
+    return false;
+  }
   // for items that attach to workbenches as a type of "tier modifier" (SRP_AdvancedStoneForgeWorkbench_Bellows for example)
   bool IsAugmentAttachment()
   {
