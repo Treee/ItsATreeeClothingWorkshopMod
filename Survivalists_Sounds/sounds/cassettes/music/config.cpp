@@ -455,6 +455,31 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-LittleSoldierBoy.ogg",1}};
 	};
+
+  class SRPRadio_Biwa_Jongarasetsu_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-Jongarasetsu.ogg",1}};
+	};
+  class SRPRadio_Biwa_TakahashiIntroduction_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-Takahashi_Introduction.ogg",1}};
+	};
+  class SRPRadio_Biwa_TakahashiJonkara_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-Takahashi_Jonkara.ogg",1}};
+	};
+  class SRPRadio_Biwa_TakahashiYasaburo_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-Takahashi_Yasaburo.ogg",1}};
+	};
+  class SRPRadio_Biwa_TakahashiTsugaruYosare_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-Takahashi_TsugaruYosare.ogg",1}};
+	};
+  class SRPRadio_Biwa_TakahashiAyugaSawaJinko_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-Takahashi_AyugaSawaJinko.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -1000,6 +1025,48 @@ class CfgSoundSets
 		soundShaders[] =
 		{
 			"SRPRadio_Biwa_LittleSoldierBoy_Shader1"
+		};
+	};
+  class SRPRadio_Biwa_Jongarasetsu_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Biwa_Jongarasetsu_Shader1"
+		};
+	};
+  class SRPRadio_Biwa_TakahashiIntroduction_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Biwa_TakahashiIntroduction_Shader1"
+		};
+	};
+  class SRPRadio_Biwa_TakahashiJonkara_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Biwa_TakahashiJonkara_Shader1"
+		};
+	};
+  class SRPRadio_Biwa_TakahashiYasaburo_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Biwa_TakahashiYasaburo_Shader1"
+		};
+	};
+  class SRPRadio_Biwa_TakahashiTsugaruYosare_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Biwa_TakahashiTsugaruYosare_Shader1"
+		};
+	};
+  class SRPRadio_Biwa_TakahashiAyugaSawaJinko_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Biwa_TakahashiAyugaSawaJinko_Shader1"
 		};
 	};
 

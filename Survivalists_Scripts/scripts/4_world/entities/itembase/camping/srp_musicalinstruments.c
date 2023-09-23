@@ -135,6 +135,12 @@ class SRP_Biwa_ColorBase extends SRP_MusicalInstrument_Base
     return {
       "DemonSlayer",
       "LittleSoldierBoy",
+      "Jongarasetsu",
+      "TakahashiIntroduction",
+      "TakahashiJonkara",
+      "TakahashiYasaburo",
+      "TakahashiTsugaruYosare",
+      "TakahashiAyugaSawaJinko",
     };
   }
 };
