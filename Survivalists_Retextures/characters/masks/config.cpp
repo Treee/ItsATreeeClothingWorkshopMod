@@ -322,6 +322,61 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\masks\data\srp_facialhairgoatee_White_co.paa",
 		};
 	};
+  class SRP_FacialHairGoatee_Grey: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - Grey";
+    color="grey";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairgoatee_Grey_co.paa",
+		};
+	};
+  class SRP_FacialHairGoatee_SaltPepper: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - SaltPepper";
+    color="saltpepper";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairgoatee_salty_co.paa",
+		};
+	};
+  class SRP_FacialHairGoatee_Orange: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - Orange";
+    color="orange";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairgoatee_Orange_co.paa",
+		};
+	};
+  class SRP_FacialHairGoatee_Red: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - Red";
+    color="red";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairgoatee_Red_co.paa",
+		};
+	};
+  class SRP_FacialHairGoatee_Green: SRP_FacialHairGoatee_Colorbase
+	{
+		scope=2;
+		displayName="Goatee - Green";
+    color="green";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairgoatee_Green_co.paa",
+		};
+	};
 
 	class SRP_FacialHairBeard_Brown: SRP_FacialHairBeard_Colorbase
 	{
@@ -378,6 +433,61 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_White_co.paa",
 		};
   };
+  class SRP_FacialHairBeard_Grey: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - Grey";
+    color="grey";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_Grey_co.paa",
+		};
+  };
+  class SRP_FacialHairBeard_SaltPepper: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - SaltPepper";
+    color="saltpepper";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_salty_co.paa",
+		};
+  };
+  class SRP_FacialHairBeard_Orange: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - Orange";
+    color="orange";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_Orange_co.paa",
+		};
+  };
+  class SRP_FacialHairBeard_Red: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - Red";
+    color="red";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_Red_co.paa",
+		};
+  };
+  class SRP_FacialHairBeard_Green: SRP_FacialHairBeard_Colorbase
+	{
+		scope=2;
+		displayName="Full Beard - Green";
+    color="green";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_Green_co.paa",
+		};
+  };
 
 	class SRP_FacialHairChops_Brown: SRP_FacialHairChops_Colorbase
 	{
@@ -432,6 +542,62 @@ class CfgVehicles
 		{
 			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
 			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_White_co.paa",
+		};
+	};
+
+  class SRP_FacialHairChops_Grey: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - Grey";
+    color="grey";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_Grey_co.paa",
+		};
+	};
+  class SRP_FacialHairChops_SaltPepper: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - SaltPepper";
+    color="saltpepper";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_salty_co.paa",
+		};
+	};
+  class SRP_FacialHairChops_Orange: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - Orange";
+    color="orange";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_Orange_co.paa",
+		};
+	};
+  class SRP_FacialHairChops_Red: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - Red";
+    color="red";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_Red_co.paa",
+		};
+	};
+  class SRP_FacialHairChops_Green: SRP_FacialHairChops_Colorbase
+	{
+		scope=2;
+		displayName="Beard Chops - Green";
+    color="green";
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_facialhair_kit_co.paa",
+			"Survivalists_Retextures\characters\masks\data\srp_facialhairbeard_Green_co.paa",
 		};
 	};
 

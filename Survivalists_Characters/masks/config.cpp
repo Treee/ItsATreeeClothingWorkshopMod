@@ -2538,7 +2538,12 @@ class CfgVehicles
       "LightBrown",
       "Black",
       "Blonde",
-      "White",      
+      "White",     
+      "Grey",     
+      "SaltPepper",     
+      "Orange",     
+      "Red",     
+      "Green",     
     };
 		inventorySlot[]=
     {
