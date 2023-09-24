@@ -50,7 +50,24 @@ modded class MiscGameplayFunctions
   }
   static string GetRandomRareLootType()
   {
-    return GetRareLootTypes().GetRandomElement();
+    float randomChance = Math.RandomFloatInclusive(0,1);
+    if (randomChance >= 0 && randomChance < 0.05)
+      return GetRandomBookType();    
+    if (randomChance >= 0.05 && randomChance < 0.10)
+      return GetRandomScrollType();    
+    if (randomChance >= 0.10 && randomChance < 0.45)
+      return GetRandomGrenadeType();
+    if (randomChance >= 0.45 && randomChance < 0.60)
+      return GetRandomWeaponsType();
+    if (randomChance >= 0.60 && randomChance < 0.70)
+      return GetRandomOpticType();
+    if (randomChance >= 0.70 && randomChance < 0.80)
+      return GetRandomMagazineType();
+    if (randomChance >= 0.80 && randomChance < 0.90)
+      return GetRandomAmmoType();
+    if (randomChance >= 0.90 && randomChance < 1.01)
+      return GetRareLootTypes().GetRandomElement();
+    return "NailBox";
   }
   static string GetRandomGrenadeType()
   {
@@ -75,6 +92,14 @@ modded class MiscGameplayFunctions
   static string GetRandomMiscHightTierType()
   {
     return GetMiscHighTier().GetRandomElement();
+  }
+  static string GetRandomBookType()
+  {
+    return GetBookList().GetRandomElement();
+  }
+  static string GetRandomScrollType()
+  {
+    return GetScrollList().GetRandomElement();
   }
 
 //========================= LOOT LISTS
@@ -361,9 +386,8 @@ modded class MiscGameplayFunctions
   static TStringArray GetMiscHighTier()
   {
     return {
-     "DUB_Mutantsyringe_Admin2",
-     "DUB_Mutantsyringe_Admin4",
-     "SRP_ReadableBook_AlchemyHints",
+    //  "DUB_Mutantsyringe_Admin2",
+    //  "DUB_Mutantsyringe_Admin4",
      "SRP_Mining_RawOre_Zinc",
      "SRP_Mining_RawOre_Coal",
      "SRP_Mining_RawOre_Silver",
@@ -383,5 +407,212 @@ modded class MiscGameplayFunctions
      "SRP_PictureFrame_ChasseGalerie"
     };
   }
-
+  static TStringArray GetBookList()
+  {
+    return {
+      "SRP_ReadableBook_ArchivistWolfPack",
+      "SRP_ReadableBook_IllusiveBunkerGuide",
+      "SRP_ReadableBook_ArthursManifesto",
+      "SRP_ReadableBook_TheBunkerShortStory",
+      "SRP_ReadableBook_TheBooksOfVigo",
+      "SRP_ReadableBook_HerbologyAndAlchemy",
+      "SRP_ReadableBook_AlchemySociety_TaskList",
+      "SRP_ReadableBook_TheCoalition",
+      "SRP_ReadableBook_ThingsToKnowOnDeerIsle",
+      "SRP_ReadableBook_HistoryOfCannibalism",
+      "SRP_ReadableBook_HuntingOnDeerIsle",
+      "SRP_ReadableBook_DrugDangers",
+      "SRP_ReadableBook_JamestownHistory",
+      "SRP_ReadableBook_SkullHordeHistory",
+      "SRP_ReadableBook_Sanctuary",
+      "SRP_ReadableBook_CodeBreakers",
+      "SRP_ReadableBook_CollectiveHistory",
+      "SRP_ReadableBook_RadioEtiquette",
+      "SRP_ReadableBook_Premonition",
+      "SRP_ReadableBook_SaltyCougar",
+      "SRP_ReadableBook_MutantHistory",
+      "SRP_ReadableBook_BanditryGuide",
+      "SRP_ReadableBook_NavigationProtocols",
+      "SRP_ReadableBook_CaptainHarlockSpacePirate",
+      "SRP_ReadableBook_BiomassResearch",
+      "SRP_ReadableBook_FoodInTheForests",
+      "SRP_ReadableBook_STAGStarvation",
+      "SRP_ReadableBook_EspenParenting",
+      "SRP_ReadableBook_GiftFromLordLight",
+      "SRP_ReadableBook_RidersOfPortland",
+      "SRP_ReadableBook_HomoMutagenis",
+      "SRP_ReadableBook_AlchemyHints",
+      "SRP_ReadableBook_FoolsGuideToMedicine",
+      "SRP_ReadableBook_CompendiumOfArtefacts",
+      "SRP_ReadableBook_TheBasicGuidebook",
+      "SRP_ReadableBook_AdeptusMechanicusPrayerBookV1",
+      "SRP_ReadableBook_AdeptusMechanicusPrayerBookV2",
+      "SRP_ReadableBook_HarryPotterSorcerersStone",
+      "SRP_ReadableBook_HortonHearsAWho",
+      "SRP_ReadableBook_RedOctober",
+      "SRP_ReadableBook_Dune",
+      "SRP_ReadableBook_DnDHandbook",
+      "SRP_ReadableBook_OldManAndTheSea",
+      "SRP_ReadableBook_ZombieSurvivalGuide",
+      "SRP_ReadableBook_AltarTechnologies",
+      "SRP_ReadableBook_UnderstandingArbitration",
+      "SRP_ReadableBook_TheImperialEmpire",
+      "BookBible",
+      "BookTheWarOfTheWorlds",
+      "BookAroundTheWorldIn80Days",
+      "BookCrimeAndPunishment",
+      "BookTheMetamorphosis",
+      "BookTheRaven",
+      "BookTheArtOfWar",
+      "BookRobinsonCrusoe",
+      "BookRussian",
+      "BookRussianCheatSheet",
+      "BookThePictureOfDorianGray",
+      "BookThePitAndThePendulum",
+      "BookTheTimeMachine",
+      "BookTheCountryOfTheBlind",
+      "BookBilaNemoc",
+      "BookYouth",
+      "BookVerwandlung",
+      "BookTheJungleBook",
+      "BookTheBrothersKaramazov",
+      "BookTheCallOfCthulhu",
+      "BookTheShunnedHouse",
+      "BookTheHoundOfTheBaskervilles",
+      "BookTonyAndTheBeetles",
+      "BookTheCosmicComputer",
+      "BookATravelerInTime",
+      "BookTheVariableMan",
+      "BookTheOutlet",
+      "BookTheBarrier",
+      "BookTheDesertOfWheat",
+      "BookFlyingURanch",
+      "BookCassidysRustlerRoundUp",
+      "BookLonesomeLand",
+      "BookTrailin",
+      "BookRonickyDoone",
+      "BookBettyZane",
+      "BookATexasMatchmaker",
+      "BookTheThunderBird",
+      "BookBlackJack",
+      "BookTheLastTrail",
+      "BookSelectedStories",
+      "BookTheHeritageOfTheSioux",
+      "BookDesertGold",
+      "BookTheHiddenChildren",
+      "BookTheLastOfThePlainsmen",
+      "BookGunmansReckoning",
+      "BookSkyrider",
+      "BookSpinifexAndSand",
+      "BookSunsetPass",
+      "BookTheCaveOfGold",
+      "BookTheDayOfTheBeast",
+      "BookTheQuirt",
+      "BookAVoyageToArcturus",
+      "BookWealthOfNations",
+      "BookAndersensFairyTales",
+      "BookBlackBeauty",
+      "BookBuddenbrooks",
+      "BookDeadSouls",
+      "BookErewhon",
+      "BookFatherGoriot",
+      "BookGreatExpectations",
+      "BookGulliversTravels",
+      "BookHeartOfDarkness",
+      "BookHerland",
+      "BookIvanhoe",
+      "BookKidnapped",
+      "BookLaChartreuseDeParme",
+      "BookLordJim",
+      "BookMadameBovary",
+      "BookNostromo",
+      "BookNaturalSelection",
+      "BookTheMetamorphosesOfOvid",
+      "BookMobyDick",
+      "BookKingLear",
+      "BookLaDbcle",
+      "BookTheCanterburyTales",
+      "BookTheRightsOfWoman",
+      "BookToTheInteriorOfTheEarth",
+      "BookNjalsSaga",
+      "BookTheTrial",
+      "BookDonQuixote",
+      "BookPhilosophiaeNaturalis",
+      "BookPrideAndPrejudice",
+      "BookRasselas",
+      "BookScaramouche",
+      "BookSonsAndLovers",
+      "BookTheCallOfTheWild",
+      "BookTheComingRace",
+      "BookTheIslandOfDoctorMoreau",
+      "BookTheMahabharataOfKrishna",
+      "BookTheManWhoWasThursday",
+      "BookThePossessed",
+      "BookThePrisonerOfZenda",
+      "BookAPrincessOfMars",
+      "BookKingSolomonsMines",
+      "BookMiddlemarch",
+      "BookTheHouseOfTheSevenGables",
+      "BookTheMonkARomance",
+      "BookTheJustifiedSinner",
+      "BookTheRedBadgeOfCourage",
+      "BookADollsHouse",
+      "BookGilgameshEpic",
+      "BookAnnaKarenina",
+      "BookCandide",
+      "BookFaust",
+      "BookHinduLiterature",
+      "BookHunger",
+      "BookJapaneseLiterature",
+      "BookLeRougeEtLeNoir",
+      "BookTheDecameron",
+      "BookTheGiacomoLeopardi",
+      "BookAliceInWonderland",
+      "BookTheScarletPimpernel",
+      "BookTheThreeMusketeers",
+      "BookTheTurnOfTheScrew",
+      "BookTranslationsOfShakuntala",
+      "BookTreasureIsland",
+      "BookUlysses",
+      "BookUncleSilas",
+      "BookTheAeneid",
+      "BookWarAndPeace",
+      "BookWielandOrTheTransformation",
+      "BookWutheringHeights",
+      "BookCinqSemainesEnBallon",
+      "BookDracula",
+      "BookDasNibelungenlied",
+      "BookTheLastMan",
+      "BookRomeoUndJulia",
+      "BookFrankenstein",
+      "BookDeLaTerreLaLune",
+      "BookLleMystrieuse",
+      "BookLaComdieHumaine",
+      "BookLesCorneilles",
+      "Book20000LieuesSousLesMers",
+      "BookThreeMenInABoat",
+    };
+  }
+  static TStringArray GetScrollList()
+  {
+    return {
+      "SRP_ReadableScroll_CarePoem",
+      "SRP_ReadableScroll_DarknessPoem",
+      "SRP_ReadableScroll_DollfaceHistory",
+      "SRP_ReadableScroll_Crafting_Carpentry",
+      "SRP_ReadableScroll_Crafting_Farming",
+      "SRP_ReadableScroll_Crafting_Generic",
+      "SRP_ReadableScroll_Crafting_Tailoring",
+      "SRP_ReadableScroll_Crafting_AlchemyHelp",
+      "SRP_ReadableScroll_Crafting_Alchemy0",
+      "SRP_ReadableScroll_Crafting_Alchemy1",
+      "SRP_ReadableScroll_Crafting_Alchemy2",
+      "SRP_ReadableScroll_Crafting_Alchemy3",
+      "SRP_ReadableScroll_Crafting_Alchemy4",
+      "SRP_ReadableScroll_Crafting_Alchemy5",
+      "SRP_ReadableScroll_Crafting_Alchemy6",
+      "SRP_ReadableScroll_Crafting_Weapon",
+      "SRP_ReadableScroll_History_Collective",
+    };
+  }
 };

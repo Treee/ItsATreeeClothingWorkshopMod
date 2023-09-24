@@ -22,7 +22,11 @@ modded class SecurityConfig
   string GetRandomLootType()
   {
     float randomChance = Math.RandomFloatInclusive(0,1);
-    if (randomChance >= 0 && randomChance < 0.45)
+    if (randomChance >= 0 && randomChance < 0.05)
+      return MiscGameplayFunctions.GetRandomBookType();    
+    if (randomChance >= 0.05 && randomChance < 0.10)
+      return MiscGameplayFunctions.GetRandomScrollType();    
+    if (randomChance >= 0.10 && randomChance < 0.45)
       return MiscGameplayFunctions.GetRandomGrenadeType();
     if (randomChance >= 0.45 && randomChance < 0.60)
       return MiscGameplayFunctions.GetRandomWeaponsType();

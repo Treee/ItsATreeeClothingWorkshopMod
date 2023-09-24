@@ -107,6 +107,79 @@ class CfgVehicles
 		displayName="Tailoring For The Aspiring Tailor";
 		descriptionShort="A rolled up piece of paper tied by some elegant ribbon";
 	};
+  
+  class SRP_ReadableScroll_Crafting_AlchemyHelp: SRP_ReadableScroll_Colorbase
+  {
+    scope = 2;
+    title = "Alchemy Basics";
+    author = "Iris Miller";
+    file = "Survivalists_Books\gear\scrolls\data\SRP_ReadableScroll_AlchemyHelp.html";
+    displayName = "Alchemy Basic knowledge";
+    descriptionShort = "A rolled up piece of paper tied by some twine.";
+  };
+  class SRP_ReadableScroll_Crafting_Alchemy0: SRP_ReadableScroll_Colorbase
+	{
+		scope = 2;
+		title = "Alchemy Recipes";
+		author = "Iris Miller";
+		file = "Survivalists_Books\gear\scrolls\data\SRP_ReadableScroll_AlchemyNotes-0.html";
+		displayName = "Detailed Alchemy Notes";
+		descriptionShort = "A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+	class SRP_ReadableScroll_Crafting_Alchemy1: SRP_ReadableScroll_Colorbase
+	{
+		scope = 2;
+		title = "Alchemy Recipes";
+		author = "Iris Miller";
+		file = "Survivalists_Books\gear\scrolls\data\SRP_ReadableScroll_AlchemyNotes-1.html";
+		displayName = "Detailed Alchemy Notes";
+		descriptionShort = "A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+	class SRP_ReadableScroll_Crafting_Alchemy2: SRP_ReadableScroll_Colorbase
+	{
+		scope = 2;
+		title = "Alchemy Recipes";
+		author = "Iris Miller";
+		file = "Survivalists_Books\gear\scrolls\data\SRP_ReadableScroll_AlchemyNotes-2.html";
+		displayName = "Detailed Alchemy Notes";
+		descriptionShort = "A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+	class SRP_ReadableScroll_Crafting_Alchemy3: SRP_ReadableScroll_Colorbase
+	{
+		scope = 2;
+		title = "Alchemy Recipes";
+		author = "Iris Miller";
+		file = "Survivalists_Books\gear\scrolls\data\SRP_ReadableScroll_AlchemyNotes-3.html";
+		displayName = "Detailed Alchemy Notes";
+		descriptionShort = "A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+	class SRP_ReadableScroll_Crafting_Alchemy4: SRP_ReadableScroll_Colorbase
+	{
+		scope = 2;
+		title = "Alchemy Recipes";
+		author = "Iris Miller";
+		file = "Survivalists_Books\gear\scrolls\data\SRP_ReadableScroll_AlchemyNotes-4.html";
+		displayName = "Detailed Alchemy Notes";
+		descriptionShort = "A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+	class SRP_ReadableScroll_Crafting_Alchemy5: SRP_ReadableScroll_Colorbase
+	{
+		scope = 2;
+		title = "Alchemy Recipes";
+		author = "Iris Miller";
+		file = "Survivalists_Books\gear\scrolls\data\SRP_ReadableScroll_AlchemyNotes-5.html";
+		displayName = "Detailed Alchemy Notes";
+		descriptionShort = "A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+	class SRP_ReadableScroll_Crafting_Alchemy6: SRP_ReadableScroll_Colorbase
+	{
+		scope = 2;
+		title = "Alchemy Recipes";
+		author = "Iris Miller";
+		file = "Survivalists_Books\gear\scrolls\data\SRP_ReadableScroll_AlchemyNotes-6.html";
+		displayName = "Detailed Alchemy Notes";
+		descriptionShort = "A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
 	
 	class SRP_ReadableScroll_Crafting_Weapon: SRP_ReadableScroll_Colorbase
 	{
