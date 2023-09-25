@@ -63,7 +63,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
           newItemName = newItemName + "_" + target_clothing.GetDyeOption(variantId);
         }
         // Print("newItemName: " + newItemName);
-        ReplaceItemWithNewLambdaBase lambda = new ReplaceItemWithNewLambdaBase(target_clothing, newItemName);
+        ReplaceItemWithNewLambda_Dye lambda = new ReplaceItemWithNewLambda_Dye(target_clothing, newItemName);
         MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, lambda);        
         // dye.AddQuantity(-Math.RandomIntInclusive(50,100));
         dye.ReduceQuantityBySlotType(target_clothing.GetWearableSlotType());

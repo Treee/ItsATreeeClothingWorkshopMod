@@ -18,7 +18,7 @@ class TurnItemIntoItemLambda_KitDeployment extends TurnItemIntoItemLambda
 		if (new_item) 
 		{							
       new_item.SetPosition(m_DeployPosition);
-      new_item.SetOrientation(m_DeployOrientation);
+      new_item.SetOrientation(m_DeployOrientation);      
 		}
 		else
 		{
@@ -81,5 +81,14 @@ class ReplaceItemWithNewLambda_SawWoodenLogs extends ReplaceItemWithNewLambdaBas
 		MiscGameplayFunctions.TransferItemProperties(woodenlog, planks);
 		
 		planks.SetQuantity(m_ItemCount);
+	}
+};
+class ReplaceItemWithNewLambda_Dye extends ReplaceItemWithNewLambdaBase
+{
+	override void CopyOldPropertiesToNew(notnull EntityAI old_item, EntityAI new_item)
+	{
+		super.CopyOldPropertiesToNew(old_item, new_item);
+
+		new_item.SetHealth(old_item.GetHealth());
 	}
 };
