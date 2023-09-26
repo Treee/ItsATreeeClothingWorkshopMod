@@ -55,6 +55,7 @@ class CfgVehicles
   class ALV_MV_TacCap_Forward_Colorbase;
   class ALV_MV_TacCap_Backward_Colorbase;
   class SRP_ModernHelmet_ColorBase;
+  class SRP_HornetHelmet_ColorBase;
 
 //=============================================== Vanilla Override
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
@@ -2147,6 +2148,72 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Retextures\characters\headgear\data\srp_modernhelmet_uzi_co.paa"
+		};
+  };
+
+
+  class SRP_HornetHelmet_Default: SRP_HornetHelmet_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "helmetparts",
+      "visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmet_default_co.paa",
+			"Survivalists_Characters\headgear\data\srp_hornethelmetparts_co.paa",
+			"Survivalists_Characters\headgear\data\srp_hornethelmetvisor_ca.paa",
+		};
+  };
+  class SRP_HornetHelmet_Stag: SRP_HornetHelmet_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "helmetparts",
+      "visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmet_stag_co.paa",
+			"Survivalists_Characters\headgear\data\srp_hornethelmetparts_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmetvisor_stag_ca.paa",
+		};
+  };
+  class SRP_HornetHelmet_StagGold: SRP_HornetHelmet_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "helmetparts",
+      "visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmet_stag_co.paa",
+			"Survivalists_Characters\headgear\data\srp_hornethelmetparts_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmetvisor_yellow_ca.paa",
+		};
+  };
+  class SRP_HornetHelmet_pandagodmystic: SRP_HornetHelmet_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "helmetparts",
+      "visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmet_default_co.paa",
+			"Survivalists_Characters\headgear\data\srp_hornethelmetparts_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmetvisor_yellow_ca.paa",
 		};
   };
 };
