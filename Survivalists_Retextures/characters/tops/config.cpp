@@ -3429,6 +3429,15 @@ class CfgVehicles
       "Survivalists_Retextures\characters\tops\data\STAG_GreatCoat_co.paa"
     };
   };
+  class ESPEN_Director_Coat: Wool_GreatCoat_ColorBase
+  {
+    scope=2;
+    visibilityModifier=0.89999998;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\ESPEN_Director_Coat_co.paa"
+    };
+  };
   class DUB_WoolCoat_Red: DUB_WoolCoat
   {
     scope=2;

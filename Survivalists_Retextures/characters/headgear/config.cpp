@@ -56,6 +56,7 @@ class CfgVehicles
   class ALV_MV_TacCap_Backward_Colorbase;
   class SRP_ModernHelmet_ColorBase;
   class SRP_HornetHelmet_ColorBase;
+  class SRP_OfficersHat_ColorBase;
 
 //=============================================== Vanilla Override
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
@@ -2216,4 +2217,11 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmetvisor_yellow_ca.paa",
 		};
   };
+
+  class SRP_OfficersHat_ESPEN: SRP_OfficersHat_ColorBase
+	{
+		scope=2;
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\ESPEN_Director_Hat_co.paa"};
+	};
 };
