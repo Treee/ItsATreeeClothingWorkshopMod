@@ -316,6 +316,8 @@ modded class PluginRecipesManager
 
       RegisterRecipe(new Craft_SRP_Rag_Bleach);
 
+      RegisterRecipe(new SRP_CraftFishingHook);
+
       RegisterRecipe(new SRP_RefuelGas_WithCanister_Small);
       RegisterRecipe(new SRP_RefuelGas_WithCanister_Medium);
       RegisterRecipe(new SRP_RefuelGas_WithCanister_Large);
