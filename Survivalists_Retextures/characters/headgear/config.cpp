@@ -2212,7 +2212,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmet_default_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmet_pandagodmystic_co.paa",
 			"Survivalists_Characters\headgear\data\srp_hornethelmetparts_co.paa",
 			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmetvisor_yellow_ca.paa",
 		};
