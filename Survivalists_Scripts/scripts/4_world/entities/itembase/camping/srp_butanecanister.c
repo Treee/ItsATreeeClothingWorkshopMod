@@ -1,0 +1,1 @@
+class SRP_ButaneCanister extends ItemBase{};

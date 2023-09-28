@@ -316,7 +316,11 @@ modded class PluginRecipesManager
 
       RegisterRecipe(new Craft_SRP_Rag_Bleach);
 
-      RegisterRecipe(new SRP_RefuelGas_WithCanister);
+      RegisterRecipe(new SRP_RefuelGas_WithCanister_Small);
+      RegisterRecipe(new SRP_RefuelGas_WithCanister_Medium);
+      RegisterRecipe(new SRP_RefuelGas_WithCanister_Large);
+      RegisterRecipe(new SRP_RefuelGas_WithCanister_PetrolLighter);
+      RegisterRecipe(new SRP_RefuelGas_WithCanister_Zippo);
 
       RegisterRecipe(new Craft_SRP_MintedCoin_Platinum);	
       RegisterRecipe(new Craft_SRP_MintedCoin_Iron);	

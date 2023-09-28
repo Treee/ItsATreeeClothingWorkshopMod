@@ -97,6 +97,7 @@ class CfgVehicles
   class LargeGasCanister: Inventory_Base
   {
     itemSize[]={1,3};
+    varQuantityInit=0;
     hiddenSelections[]=
 		{
 			"zbytek"
@@ -1275,11 +1276,10 @@ class CfgVehicles
 		scope=2;
 		displayName="Refillable Butane Canister";
 		descriptionShort="A canister used for re-fueling gas containers";
-		varQuantityInit=20;
+		varQuantityInit=25;
 		varQuantityMin=0;
-		varQuantityMax=20;
+		varQuantityMax=25;
 		stackedUnit="w";
-		varQuantityDestroyOnMin=1;
 	};
 
   class SRP_ToiletPaper: Inventory_Base

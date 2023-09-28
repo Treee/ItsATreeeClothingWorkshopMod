@@ -1,4 +1,4 @@
-class SRP_RefuelGas_WithCanister extends RecipeBase
+class SRP_RefuelGas_WithCanister_Base extends RecipeBase
 {	
 	override void Init()
 	{
@@ -6,34 +6,33 @@ class SRP_RefuelGas_WithCanister extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1.5;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+				
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
-		m_MaxQuantityIngredient[0] = 12;//-1 = disable check
+		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[1] = -1;//-1 = disable check
+		m_MinQuantityIngredient[1] = 20;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"SmallGasCanister");
-    InsertIngredient(0,"MediumGasCanister");
-		InsertIngredient(0,"LargeGasCanister");
-		InsertIngredient(0,"PetrolLighter");
-		InsertIngredient(0,"SRP_Zippo_ColorBase");
+		// InsertIngredient(0,"SmallGasCanister");
+    // InsertIngredient(0,"MediumGasCanister");
+		// InsertIngredient(0,"LargeGasCanister");
+		// InsertIngredient(0,"PetrolLighter");
+		// InsertIngredient(0,"SRP_Zippo_ColorBase");
 
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[0] = 25;// 0 = do nothing
-		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
+		m_IngredientAddQuantity[0] = -25;// 0 = do nothing
+		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		
 		//ingredient 2
@@ -49,7 +48,7 @@ class SRP_RefuelGas_WithCanister extends RecipeBase
 		//result1
 		// AddResult("");//add results here
 
-		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
+		m_ResultSetFullQuantity[0] = true;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
 		m_ResultInheritsHealth[0] = -1;// (value) == -1 means do nothing; a (value) >= 0 means this result will inherit health from ingredient number (value);(value) == -2 means this result will inherit health from all ingredients averaged(result_health = combined_health_of_ingredients / number_of_ingredients)
@@ -64,9 +63,75 @@ class SRP_RefuelGas_WithCanister extends RecipeBase
 	{
 		return true;
 	}
-
-	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
+  override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-		Debug.Log("SRP_RefuelGas_WithCanister: Recipe Do method called","recipes");
+		Debug.Log("SRP_RefuelGas_WithCanister_Base Recipe Do method called: " + m_Name,"recipes");
+	}
+};
+
+class SRP_RefuelGas_WithCanister_Small extends SRP_RefuelGas_WithCanister_Base
+{	
+	override void Init()
+	{
+    super.Init();
+		m_Name = "Refill Gas - Small Canister";
+		//ingredient 1
+		InsertIngredient(0,"SmallGasCanister");
+		
+		//result1
+		AddResult("SmallGasCanister");//add results here
+	}
+};
+class SRP_RefuelGas_WithCanister_Medium extends SRP_RefuelGas_WithCanister_Base
+{	
+	override void Init()
+	{
+    super.Init();
+		m_Name = "Refill Gas - Medium Canister";
+		//ingredient 1
+		InsertIngredient(0,"MediumGasCanister");
+		
+		//result1
+		AddResult("MediumGasCanister");//add results here
+	}
+};
+class SRP_RefuelGas_WithCanister_Large extends SRP_RefuelGas_WithCanister_Base
+{	
+	override void Init()
+	{
+    super.Init();
+		m_Name = "Refill Gas - Large Canister";
+		//ingredient 1
+		InsertIngredient(0,"LargeGasCanister");
+		
+		//result1
+		AddResult("LargeGasCanister");//add results here
+	}
+};
+class SRP_RefuelGas_WithCanister_PetrolLighter extends SRP_RefuelGas_WithCanister_Base
+{	
+	override void Init()
+	{
+    super.Init();
+		m_Name = "Refill Gas - Petrol Lighter";
+		//ingredient 1
+		InsertIngredient(0,"PetrolLighter");
+		
+		//result1
+		AddResult("PetrolLighter");//add results here
+	}
+};
+class SRP_RefuelGas_WithCanister_Zippo extends SRP_RefuelGas_WithCanister_Base
+{	
+	override void Init()
+	{
+    super.Init();
+		m_Name = "Refill Gas - Zippo";
+		//ingredient 1
+		InsertIngredient(0,"SRP_Zippo_ColorBase");
+		
+		//result1
+		AddResult("SRP_Zippo_");//add results here
+		m_ResultInheritsColor[0] = 1;
 	}
 };
