@@ -11,18 +11,18 @@ class CfgMods
 		{
 			class gameScriptModule
 			{
-				value = "";
-        files[] = {"Survivalists_PostBox/scripts/3_game"};			
+				value="";
+        files[]={"Survivalists_PostBox/scripts/3_game"};			
       };
 			class worldScriptModule
 			{
-				value = "";
-        files[] = {"Survivalists_PostBox/scripts/4_world"};			
+				value="";
+        files[]={"Survivalists_PostBox/scripts/4_world"};			
       };
       class missionScriptModule
 			{
 				value="";
-				files[]= {"Survivalists_PostBox/scripts/5_mission"};
+				files[]={"Survivalists_PostBox/scripts/5_mission"};
 			};
 		};
 	};
