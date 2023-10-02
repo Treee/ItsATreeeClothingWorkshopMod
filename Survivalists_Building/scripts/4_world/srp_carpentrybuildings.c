@@ -145,28 +145,122 @@ class SRP_DefaultHouse extends BuildingSuper
 
 		return false;
 	}
-	
 };
 
+class SRP_Structures_WoodenHouseOuthouse extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class SRP_Structures_RussianHouse extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class SRP_Structures_RussianHouse1 extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class SRP_Structures_WoodenHouseSingleRoom extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class SRP_Structures_WoodenBarn extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class SRP_Structures_WoodenShanty extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class SRP_Structures_WoodenShed extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class Land_srp_wooden_2floor_tavern extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class Land_srp_wooden_house_thatch extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
 
-class SRP_Structures_WoodenHouseOuthouse extends SRP_DefaultHouse{};
-class SRP_Structures_RussianHouse extends SRP_DefaultHouse{};
-class SRP_Structures_RussianHouse1 extends SRP_DefaultHouse{};
-class SRP_Structures_WoodenHouseSingleRoom extends SRP_DefaultHouse{};
-class SRP_Structures_WoodenBarn extends SRP_DefaultHouse{};
-class SRP_Structures_WoodenShanty extends SRP_DefaultHouse{};
-class SRP_Structures_WoodenShed extends SRP_DefaultHouse{};
-class Land_srp_wooden_2floor_tavern extends SRP_DefaultHouse{};
-class Land_srp_wooden_house_thatch extends SRP_DefaultHouse{};
+class Land_srp_wooden_house_bridge extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class Land_srp_wooden_house_bridgeend extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class Land_srp_wooden_house_gatehouse extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
 
-class Land_srp_wooden_house_bridge extends SRP_DefaultHouse{};
-class Land_srp_wooden_house_bridgeend extends SRP_DefaultHouse{};
-class Land_srp_wooden_house_gatehouse extends SRP_DefaultHouse{};
-
-class Land_srp_treehouse_circular extends SRP_DefaultHouse{};
-class Land_srp_treehouse_box extends SRP_DefaultHouse{};
-class Land_srp_treehouse_doubleplatform extends SRP_DefaultHouse{};
-class Land_srp_treehouse_tripleplatform extends SRP_DefaultHouse{};
+class Land_srp_treehouse_circular extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class Land_srp_treehouse_box extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class Land_srp_treehouse_doubleplatform extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
+class Land_srp_treehouse_tripleplatform extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }
+};
 
 // Shipping Containers
 class Land_SRP_ShippingContainer_20ft extends SRP_DefaultHouse{};
@@ -183,30 +277,174 @@ class Land_SRP_ShippingContainer_20ft_Locknsons extends SRP_DefaultHouse{};
 class Land_SRP_ShippingContainer_20ft_Espen extends SRP_DefaultHouse{};
 
 // palisade gates
-class SRP_Fortifications_BambooWall extends SRP_DefaultHouse{};
-class SRP_Fortifications_BambooWall_Yellow extends SRP_DefaultHouse{};
-class SRP_Fortifications_BambooWallCrossSmall extends SRP_DefaultHouse{};
-class SRP_Fortifications_BambooWallCrossSmall_Yellow extends SRP_DefaultHouse{};
-class SRP_Fortifications_BambooWallCross extends SRP_DefaultHouse{};
-class SRP_Fortifications_BambooWallCross_Yellow extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeTower_Small extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeTower_LargeStairs extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeTower_LargeLadder extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeTower_Ramp extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeTower_Stairs extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeTower_Platform extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeTower_PlatformDouble extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeTower_PlatformTriple extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_TentSmall extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_TentLarge extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_Planks extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_PlanksDouble extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_Gate extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_Fence extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_FenceDouble extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_FenceLog extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_FenceLogDouble extends SRP_DefaultHouse{};
-class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike extends SRP_DefaultHouse{};
+class SRP_Fortifications_BambooWall extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Fortifications_BambooWall_Yellow extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Fortifications_BambooWallCrossSmall extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Fortifications_BambooWallCrossSmall_Yellow extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Fortifications_BambooWallCross extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Fortifications_BambooWallCross_Yellow extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeTower_Small extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeTower_LargeStairs extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeTower_LargeLadder extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeTower_Ramp extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeTower_Stairs extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeTower_Platform extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeTower_PlatformDouble extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeTower_PlatformTriple extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_TentSmall extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_TentLarge extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_Planks extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_PlanksDouble extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_Gate extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_Fence extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_FenceDouble extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_FenceLog extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_FenceLogDouble extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
 
 class Land_srp_constructionmaterials extends SRP_DefaultHouse
 {
