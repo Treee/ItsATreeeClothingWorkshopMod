@@ -43,7 +43,7 @@ modded class Pistol_Base
           ItemBase pistolRail;
           if (Class.CastTo(pistolRail, GetItemOnSlot("PistolRail")))
           {
-            return pistolRail.ConfigGetBool("hasRailFunctionality")            
+            return pistolRail.ConfigGetBool("hasRailFunctionality");    
           }
           return false;
         }

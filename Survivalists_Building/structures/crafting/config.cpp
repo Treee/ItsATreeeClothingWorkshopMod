@@ -621,7 +621,7 @@ class CfgVehicles
 		{
 			class Fuel
 			{
-				name="Coal";
+				name="Fuel";
 				description="";
 				attachmentSlots[]=
 				{

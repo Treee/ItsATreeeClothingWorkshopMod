@@ -166,7 +166,7 @@ class SRP_PrefabCrafting_alchemybrewing extends SRP_BrewingWorkbench
 {
   override int GetHeatTimerThreshold()
   {
-    return 1200;//20mins
+    return 100;//20mins
   }
   override void HandleHeatTransformation()
   {    
@@ -239,7 +239,7 @@ class SRP_PrefabCrafting_copperbrewing extends SRP_BrewingWorkbench
 {
   override int GetHeatTimerThreshold()
   {
-    return 1200;//20mins
+    return 30;//20mins
   }
   override void HandleHeatTransformation()
   {    
@@ -389,7 +389,7 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
 	}
   override int GetHeatTimerThreshold()
   {
-    return 800;//5mins
+    return 15;//5mins
     // return 10;//5mins
   }
   override int GetWaterJugConsumptionTotal()
