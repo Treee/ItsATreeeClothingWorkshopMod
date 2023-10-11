@@ -117,7 +117,6 @@ modded class PlayerBase
 			return false;
 		return super.CanReleaseAttachment(attachment);
 	}
-	
 	override bool CanReleaseCargo (EntityAI cargo)
 	{
 		if(IsSoftSurrendered())
