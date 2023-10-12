@@ -283,6 +283,97 @@ class CfgVehicles
 			"Survivalists_Building\structures\furniture\data\srp_furniture_torigate2_co.paa"
 		};
 	};
+
+
+  class SRP_Furniture_TerritoryFlag_Cosmetic_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Worn Flag Pole";
+		descriptionShort="A placeable flag pole kit. Cosmetic only. Does not provide area refresh.";
+    projectionTypename="SRP_Furniture_TerritoryFlag_Cosmetic";
+	};
+  class SRP_Furniture_TerritoryFlag_Cosmetic: HouseNoDestruct
+	{
+		scope=2;
+    storageCategory=1;
+    displayName="$STR_CfgVehicles_TerritoryFlag0";
+		descriptionShort="$STR_CfgVehicles_TerritoryFlag1";
+		model="Survivalists_Building\structures\furniture\srp_furniture_territoryflag_cosmetic.p3d";
+    handheld="false";
+		lootCategory="Crafted";
+		carveNavmesh=1;
+		weight=60000;
+		itemSize[]={6,6};
+		physLayer="item_large";
+		rotationFlags=2;
+    attachments[]=
+		{
+			"Material_FPole_Flag",
+			"SRP_FlagPole1",
+			"SRP_FlagPole2",
+			"SRP_FlagPole3",
+			"SRP_FlagPole4",
+			"SRP_FlagPole5",
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=10000000;
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+			};
+		};
+	};
 //========================================== STONE FURNITURE
   class SRP_Furniture_StoneBust_Default_Kit: SRP_KitBase
 	{

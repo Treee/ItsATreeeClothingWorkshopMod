@@ -11,6 +11,38 @@ class CfgPatches
 
 class CfgSlots
 {
+//================== Flag Pole
+  class Slot_SRP_FlagPole1
+	{
+		name="SRP_FlagPole1";
+		displayName="Flag";
+		ghostIcon="set:dayz_inventory image:tf_flag";
+	};
+  class Slot_SRP_FlagPole2
+	{
+		name="SRP_FlagPole2";
+		displayName="Flag";
+		ghostIcon="set:dayz_inventory image:tf_flag";
+	};
+  class Slot_SRP_FlagPole3
+	{
+		name="SRP_FlagPole3";
+		displayName="Flag";
+		ghostIcon="set:dayz_inventory image:tf_flag";
+	};
+  class Slot_SRP_FlagPole4
+	{
+		name="SRP_FlagPole4";
+		displayName="Flag";
+		ghostIcon="set:dayz_inventory image:tf_flag";
+	};
+  class Slot_SRP_FlagPole5
+	{
+		name="SRP_FlagPole5";
+		displayName="Flag";
+		ghostIcon="set:dayz_inventory image:tf_flag";
+	};
+
 //================== Mask Wall
   class Slot_SRP_Mask1
 	{
@@ -3117,6 +3149,39 @@ class CfgNonAIVehicles
 		inventorySlot[]={"Fishingrod"};
 		model="Survivalists_Mods\proxy\srp_fishingrod_proxy.p3d";
 	};
+
+  //===================== pins
+  class Proxysrp_flagpole1_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_FlagPole1"};
+		model="Survivalists_Mods\proxy\srp_flagpole1_proxy.p3d";
+	};
+  class Proxysrp_flagpole2_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_FlagPole2"};
+		model="Survivalists_Mods\proxy\srp_flagpole2_proxy.p3d";
+	};
+  class Proxysrp_flagpole3_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_FlagPole3"};
+		model="Survivalists_Mods\proxy\srp_flagpole3_proxy.p3d";
+	};
+  class Proxysrp_flagpole4_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_FlagPole4"};
+		model="Survivalists_Mods\proxy\srp_flagpole4_proxy.p3d";
+	};
+  class Proxysrp_flagpole5_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_FlagPole5"};
+		model="Survivalists_Mods\proxy\srp_flagpole5_proxy.p3d";
+	};
+
 //===================== pins
   class Proxysrp_pin1_proxy: ProxyAttachment
 	{
@@ -3148,127 +3213,7 @@ class CfgNonAIVehicles
 		inventorySlot[]={"SRP_Pin5"};
 		model="Survivalists_Mods\proxy\srp_pin5_proxy.p3d";
 	};
-//===================== guns
-//  class Proxyshoulder1: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder1"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder2: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder2"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder3: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder3"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder4: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder4"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder5: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder5"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder6: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder6"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder7: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder7"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder8: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder8"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder9: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder9"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder10: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder10"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder11: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder11"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder12: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder12"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder13: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder13"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder14: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder14"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder15: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder15"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder16: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder16"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder17: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder17"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder18: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder18"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder19: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder19"};
-// 		model="";
-// 	};
-// 	class Proxyshoulder20: ProxyAttachment
-// 	{
-// 		scope=2;
-// 		inventorySlot[]={"Shoulder20"};
-// 		model="";
-// 	};
+
 //===================== propane tanks
   class Proxysrp_propanetank1_proxy: ProxyAttachment
 	{

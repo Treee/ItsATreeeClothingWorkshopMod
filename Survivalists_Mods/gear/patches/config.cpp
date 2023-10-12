@@ -26,6 +26,14 @@ class CfgVehicles
   class Flag_Base: Inventory_Base
 	{
     rootClassName="Flag";
+    inventorySlot[]+=
+    {
+      "SRP_FlagPole1",
+			"SRP_FlagPole2",
+			"SRP_FlagPole3",
+			"SRP_FlagPole4",
+			"SRP_FlagPole5",
+    };
     colorVariants[]=
     {
       "Chernarus",

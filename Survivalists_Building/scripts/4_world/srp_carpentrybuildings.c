@@ -147,6 +147,7 @@ class SRP_DefaultHouse extends BuildingSuper
 	}
 };
 
+//================= INVENTORY NOT VISIBLE CANNOT BE DISMANTLED
 class SRP_Structures_WoodenHouseOuthouse extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
@@ -445,7 +446,76 @@ class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike extends SRP_DefaultHous
     return true;
   }  
 };
+class SRP_Furniture_JapaneseShrine_Default extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Furniture_JapaneseTemple_Default extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Furniture_JapaneseToriGate_Default extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Furniture_JapaneseToriGate_Medium extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Furniture_JapaneseToriGate_Large extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Furniture_JapaneseToriGate2_Default extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Furniture_JapaneseToriGate2_Medium extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Furniture_JapaneseToriGate2_Large extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+//================= INVENTORY VISIBLE CAN BE DISMANTLED
+class SRP_Furniture_TerritoryFlag_Cosmetic extends SRP_DefaultHouse
+{
+  override bool IsInventoryVisible()
+	{
+		return true;
+	}
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
 
+//================= INVENTORY VISIBLE CANNOT BE DISMANTLED
 class Land_srp_constructionmaterials extends SRP_DefaultHouse
 {
   override bool IsInventoryVisible()
@@ -456,5 +526,4 @@ class Land_srp_constructionmaterials extends SRP_DefaultHouse
 	{
 		return false;
 	}
-
 };
