@@ -227,6 +227,14 @@ class SRP_GarbageBin_ColorBase extends SRP_DeployableContainer_Base
     // call every 10 minutes
     GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(EmptyContents, 600000, false);
   }
+  override bool CanPutInCargo( EntityAI parent )
+	{
+		return false;
+	}
+  override bool CanPutIntoHands(EntityAI parent)
+  {
+    return false;
+  }
 };
 
 class SRP_GarbageBin_Waste extends SRP_GarbageBin_ColorBase{};
