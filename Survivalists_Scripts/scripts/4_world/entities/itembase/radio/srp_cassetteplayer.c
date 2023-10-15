@@ -154,4 +154,13 @@ class SRP_CassettePlayer extends ItemBase
     m_CassetteVolume = Math.Max(m_CassetteVolume, 0);
     SetSynchDirty();
   }
+
+  bool IsVolumeInRange()
+  {
+    return m_CassetteVolume > 0 && m_CassetteVolume < 16;
+  }
+  bool GetCassetteVolume()
+  {
+    return m_CassetteVolume;
+  }
 };
