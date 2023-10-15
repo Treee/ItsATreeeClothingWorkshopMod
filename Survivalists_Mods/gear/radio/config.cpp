@@ -108,7 +108,112 @@ class CfgVehicles
 		attachments[]=
 		{
 			"BatteryD",
-      "SRP_Cassette"
+      "SRP_Cassette",
+		};
+		class EnergyManager
+		{
+			hasIcon=1;
+			autoSwitchOff=1;
+			energyUsagePerSecond=0.05;
+			attachmentAction=1;
+			wetnessExposure=0.1;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{						
+						{1.0,{"DZ\gear\radio\data\unitra_wilga.rvmat"}},						
+						{0.69999999,{"DZ\gear\radio\data\unitra_wilga.rvmat"}},						
+						{0.5,{"DZ\gear\radio\data\unitra_wilga_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\radio\data\unitra_wilga_damage.rvmat"}},						
+						{0.0,{"DZ\gear\radio\data\unitra_wilga_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeLightBlunt";
+				range=1;
+			};
+			class Heavy
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=1;
+			};
+			class Sprint
+			{
+				ammo="MeleeLightBlunt_Heavy";
+				range=2.8;
+			};
+		};
+  };
+  class SRP_CassettePlayer_8Track: Inventory_Base
+	{
+		scope=2;
+    displayName="8 Track Cassette Player";
+		descriptionShort="A surprisingly reliable working piece of electronics.";
+		model="\dz\gear\radio\unitra_wilga.p3d";
+    repairableWithKits[]={5,7};
+		itemSize[]={2,3};
+		fragility=0.0099999998;
+		absorbency=0.5;
+		repairCosts[]={30,25};
+    oldpower=0;
+    inventorySlot[]=
+		{
+			"GGRadio_Radio",
+			"MassRadio",
+			"walkietalkie"
+		};
+		attachments[]=
+		{
+      "Cassette10",
+      "Cassette11",
+      "Cassette12",
+      "Cassette13",
+      "Cassette14",
+      "Cassette15",
+      "Cassette16",
+      "Cassette17",
+			"BatteryD",
+		};
+    class GUIInventoryAttachmentsProps
+		{
+      class Battery
+			{
+				name="Battery";
+				description="Space for a small battery.";
+				attachmentSlots[]=
+				{
+					"BatteryD",
+				};
+				icon="set:dayz_inventory image:batteryd";
+			};
+      class EightTrack
+			{
+				name="8 Track";
+				description="Put several cassettes here to play one after the other.";
+				attachmentSlots[]=
+				{
+					"Cassette10",
+          "Cassette11",
+          "Cassette12",
+          "Cassette13",
+          "Cassette14",
+          "Cassette15",
+          "Cassette16",
+          "Cassette17",
+				};
+				icon="set:dayz_inventory image:book";
+			};
 		};
 		class EnergyManager
 		{
@@ -532,6 +637,7 @@ class CfgVehicles
 //-------------------------------- Music Tapes
 	class SRPRadio_CassetteTape_Base: Cassette
 	{
+    scope=0;
 		displayName="Cassette Tape";
 		descriptionShort="Cassette tape that has a recording.";
 		weight=100;
@@ -595,8 +701,91 @@ class CfgVehicles
 		};
 		class CfgCassette
 		{
+      soundSet="";
 		};
 	};
+
+  class SRPRadio_CassetteTape_Track1: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Track 1";
+		descriptionShort="Music Tape";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Track1_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Track2: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Track 2";
+		descriptionShort="Music Tape";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Track2_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Track3: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Track 3";
+		descriptionShort="Music Tape";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Track3_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Track4: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Track 4";
+		descriptionShort="Music Tape";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Track4_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Track5: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Track 5";
+		descriptionShort="Music Tape";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Track5_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Track6: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Track 6";
+		descriptionShort="Music Tape";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Track6_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Track7: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Track 7";
+		descriptionShort="Music Tape";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Track7_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_Track8: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Track 8";
+		descriptionShort="Music Tape";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_Track8_SoundSet1";
+		};
+	};
+  
 
 	class SRPRadio_CassetteTape_Snowblood: SRPRadio_CassetteTape_Base
 	{

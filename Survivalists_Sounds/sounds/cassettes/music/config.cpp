@@ -480,6 +480,40 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\biwa-Takahashi_AyugaSawaJinko.ogg",1}};
 	};
+
+
+  class SRPRadio_Track1_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\track1.ogg",1}};
+	};
+  class SRPRadio_Track2_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\track2.ogg",1}};
+	};
+  class SRPRadio_Track3_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\track3.ogg",1}};
+	};
+  class SRPRadio_Track4_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\track4.ogg",1}};
+	};
+  class SRPRadio_Track5_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\track5.ogg",1}};
+	};
+  class SRPRadio_Track6_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\track6.ogg",1}};
+	};
+  class SRPRadio_Track7_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\track7.ogg",1}};
+	};
+  class SRPRadio_Track8_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\track8.ogg",1}};
+	};
 };
 
 class CfgSoundSets
@@ -1070,4 +1104,60 @@ class CfgSoundSets
 		};
 	};
 
+  class SRPRadio_Track1_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Track1_Shader1"
+		};
+	};
+  class SRPRadio_Track2_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Track2_Shader1"
+		};
+	};
+  class SRPRadio_Track3_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Track3_Shader1"
+		};
+	};
+  class SRPRadio_Track4_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Track4_Shader1"
+		};
+	};
+  class SRPRadio_Track5_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Track5_Shader1"
+		};
+	};
+  class SRPRadio_Track6_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Track6_Shader1"
+		};
+	};
+  class SRPRadio_Track7_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Track7_Shader1"
+		};
+	};
+  class SRPRadio_Track8_SoundSet1
+	{
+		soundShaders[] =
+		{
+			"SRPRadio_Track8_Shader1"
+		};
+	};
 };

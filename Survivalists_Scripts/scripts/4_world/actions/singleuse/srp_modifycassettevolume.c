@@ -24,7 +24,7 @@ class ActionIncreaseVolume: ActionSingleUseBase
 		{
       if (radio.HasEnergyManager() && radio.GetCompEM().IsWorking())
       {
-        return radio.m_CassetteVolume < 16;
+        return radio.IsVolumeInRange();
       }			
 		}
 		return false;	
@@ -65,7 +65,7 @@ class ActionDecreaseVolume: ActionSingleUseBase
 		{
       if (radio.HasEnergyManager() && radio.GetCompEM().IsWorking())
       {
-        return radio.m_CassetteVolume > 0;
+        return radio.IsVolumeInRange();
       }			
 		}
 		return false;	
