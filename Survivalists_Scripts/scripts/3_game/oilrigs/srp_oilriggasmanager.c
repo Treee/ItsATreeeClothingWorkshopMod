@@ -104,7 +104,7 @@ class SRP_OilRigGasManager
     }
     else
     {
-      m_RogueWave.ModifyOilRigEnergy(-Math.RandomIntInclusive(25,100));
+      m_RogueWave.ModifyOilRigEnergy(-Math.RandomIntInclusive(5,20));
       m_RogueWave.ModifyChanceToBreak(Math.RandomFloatInclusive(0,0.2));
     }
 
@@ -115,7 +115,7 @@ class SRP_OilRigGasManager
     }
     else
     {
-      m_Horizon.ModifyOilRigEnergy(-Math.RandomIntInclusive(25,100));
+      m_Horizon.ModifyOilRigEnergy(-Math.RandomIntInclusive(5,20));
       m_Horizon.ModifyChanceToBreak(Math.RandomFloatInclusive(0,0.2));
     }
 
@@ -126,7 +126,7 @@ class SRP_OilRigGasManager
     }
     else
     {
-      m_Deepwater.ModifyOilRigEnergy(-Math.RandomIntInclusive(25,100));
+      m_Deepwater.ModifyOilRigEnergy(-Math.RandomIntInclusive(5,20));
       m_Deepwater.ModifyChanceToBreak(Math.RandomFloatInclusive(0,0.2));
     }
   }
