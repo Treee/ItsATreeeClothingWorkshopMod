@@ -28,6 +28,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterBackpackRolltopRecipe());
     craftableItems.Insert(RegisterBackpackMessengerRecipe());
     craftableItems.Insert(RegisterBackpackDUBLeathBagRecipe());
+    craftableItems.Insert(Register_BackpackLetterHolder_Recipe());    
     // BELTS
     craftableItems.Insert(RegisterBeltLegHolsterRecipe());
     craftableItems.Insert(RegisterBeltTacticalLegHolsterRecipe());
@@ -621,6 +622,24 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
+  SRP_CraftableItem Register_BackpackLetterHolder_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_LetterHolder_Maroon", "Letter Carrier");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingMachine", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread1", SRP_COLOR.RED, 25));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread2", SRP_COLOR.NONE, 35));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread3", SRP_COLOR.NONE, 25));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread4", SRP_COLOR.NONE, 35));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread5", SRP_COLOR.RED, 25));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt1", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 8));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }  
 //===========================BELTS
   SRP_CraftableItem RegisterBeltLegHolsterRecipe()
   {
