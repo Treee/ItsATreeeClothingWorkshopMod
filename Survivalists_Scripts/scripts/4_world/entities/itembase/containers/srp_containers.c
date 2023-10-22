@@ -73,7 +73,10 @@ class SRP_LatheWorkbench extends SRP_DeployableContainer_Base
   {
     return true;
   }
-
+  override bool CanPutIntoHands(EntityAI parent)
+  {
+    return false;
+  }
   bool HasAllAttachments()
   {
     if (GetItemOnSlot("SRP_LatheBelt") == NULL)
@@ -101,7 +104,6 @@ class SRP_WornWorkbench extends SRP_DeployableContainer_Base
   {
     return true;
   }
-
   bool HasAllAttachments()
   {
     if (GetItemOnSlot("SRP_WoodDrill") == NULL)
