@@ -457,6 +457,7 @@ modded class MiscGameplayFunctions
       "SRP_ReadableBook_AltarTechnologies",
       "SRP_ReadableBook_UnderstandingArbitration",
       "SRP_ReadableBook_TheImperialEmpire",
+      "SRP_ReadableBook_BlacksmithingSociety",
       "BookBible",
       "BookTheWarOfTheWorlds",
       "BookAroundTheWorldIn80Days",

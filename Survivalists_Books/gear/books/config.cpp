@@ -724,6 +724,19 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_skysentinel_co.paa"
     };
   };
+  class SRP_ReadableBook_BlacksmithingSociety: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="A Guide To Blacksmithing";
+    author="William Smith";
+		file="Survivalists_Books\gear\books\data\book_blacksmithingguide.html";		
+    displayName="A Guide To Blacksmithing";
+    descriptionShort="Learn the basics to forging your own destiny.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_blacksmithingguide_co.paa"
+    };
+  };
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
