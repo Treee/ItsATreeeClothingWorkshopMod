@@ -501,7 +501,7 @@ modded class PluginRecipesManager
 
       RegisterRecipe(new Craft_SRP_BedsideTable_Kit);
       RegisterRecipe(new Craft_SRP_MedicalBedSmall_Wood_Kit);
-      RegisterRecipe(new Craft_SRP_ToolRack_Hammers_Kit);
+      // RegisterRecipe(new Craft_SRP_ToolRack_Hammers_Kit);
 
     //==========================================================Drugs
       RegisterRecipe(new SRP_Drugs_CreateCocaineStarterBag);	
@@ -558,7 +558,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_CreateMeatCanned_Raw);		
       RegisterRecipe(new SRP_CreateHumanMeatCanned_Raw);		
       RegisterRecipe(new SRP_CreateVeggiesHumanMeatComboCanned_Raw);		
-      RegisterRecipe(new SRP_CanRawGoods);		
+      // RegisterRecipe(new SRP_CanRawGoods);		
       RegisterRecipe(new SRP_CanRawGoodsPliers);		
       
       RegisterRecipe(new CutOutPumpkinSeeds_Irradiated);
