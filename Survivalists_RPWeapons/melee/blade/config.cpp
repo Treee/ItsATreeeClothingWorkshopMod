@@ -82,6 +82,38 @@ class CfgVehicles
       "SRP_ToolKit_Hatchet"
     };
   };
+  class Sword: Inventory_Base
+	{
+		inventorySlot[]+=
+		{
+			"SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+  };
+  class Mace: Inventory_Base
+	{
+		inventorySlot[]+=
+		{
+			"SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+  };
   //============================== CUSTOM STUFF
   class SRP_Trenchknife: HuntingKnife
   {
