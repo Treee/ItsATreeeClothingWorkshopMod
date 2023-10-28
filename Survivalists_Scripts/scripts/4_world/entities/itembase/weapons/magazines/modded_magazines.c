@@ -70,6 +70,58 @@
     }
   };
 
+  class tt57mag extends Mag_Glock_15Rnd{};
+  class tttt33mag extends Mag_Glock_15Rnd{};
+  class ttr700x5mag extends Mag_FAL_20Rnd{};
+  class ttr700x8mag extends Mag_FAL_20Rnd{};
+  class ttrpdmag extends Mag_AKM_Drum75Rnd{};
+  class srp_aa12_basic_mag extends Mag_Saiga_Drum20Rnd{};
+  class ESPVectormag extends Mag_FNX45_15Rnd{};
+  class ttp90mag extends Mag_PP19_64Rnd{};
+  
+  modded class Mag_CLIP9x19_10Rnd
+  {
+    override bool IsPistolMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_CLIP9x19_10Rnd
+  {
+    override bool IsPistolMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_CLIP9x19_10Rnd
+  {
+    override bool IsPistolMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_CLIP9x19_10Rnd
+  {
+    override bool IsPistolMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_CLIP9x19_10Rnd
+  {
+    override bool IsPistolMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_CLIP9x19_10Rnd
+  {
+    override bool IsPistolMagazine()
+    {
+      return true;
+    }
+  };
+
 //================================================ FLAT RIFLE MAGAZINES
   modded class Mag_AK74_30Rnd
   {
