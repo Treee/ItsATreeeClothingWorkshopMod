@@ -151,6 +151,7 @@ class SRP_PostBox_Base extends SRP_OwnedItem_Base
   }
   bool IsPlayerOwner(string steamIdHash)
   {
+    // Print(string.Format("Items owner: %1 checking Id: %2", GetSRPOwnerSteamIDHash(), steamIdHash));
     return GetSRPOwnerSteamIDHash() == steamIdHash;
   }
   bool CanViewBoxContents()

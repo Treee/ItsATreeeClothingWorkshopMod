@@ -10,5 +10,6 @@ modded class ActionConstructor
     actions.Insert(ActionUnlockPostBox);
     actions.Insert(ActionLockPostBox);
     actions.Insert(ActionMachinePostBoxKey);
+    actions.Insert(SRP_ActionDismantleOwnedPlacedObject);
 	}
 };

@@ -23,7 +23,7 @@ class SRP_OwnedItem_Base extends ItemBase
     
     string localOwnerId = "";
     if (ctx.Read(localOwnerId))
-      m_SRPOwnerSteamIDHash = m_SRPOwnerSteamIDHash;
+      m_SRPOwnerSteamIDHash = localOwnerId;
   
     // Print(string.Format("OnStoreLoad %1 %2 %3", GetType(), m_SRPOwnerName, m_SRPOwnerSteamIDHash));
     return true;
@@ -75,7 +75,7 @@ class SRP_OwnedItem_Base extends ItemBase
     }
   }
   void SetSRPOwnerID(string id)
-  {
+  {    
     m_SRPOwnerSteamIDHash = id;
   }
   string GetSRPOwnerName()

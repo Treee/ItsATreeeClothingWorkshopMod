@@ -23,7 +23,7 @@ class SRP_PostBoxKeys_ColorBase extends SRP_OwnedItem_Base
   bool CanSecurePostBox(string boxId)
   {
     return GetSRPOwnerSteamIDHash() == boxId;
-  }    
+  }
 };
 
 class SRP_PostBoxKeys_User extends SRP_PostBoxKeys_ColorBase{};

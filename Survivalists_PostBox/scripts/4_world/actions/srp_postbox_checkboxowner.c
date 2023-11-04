@@ -46,4 +46,16 @@ class ActionCheckPostBoxOwner extends ActionInteractBase
       }
     }
 	}
+  override void OnExecuteServer(ActionData action_data)
+	{
+		super.OnExecuteServer(action_data);
+		if (action_data.m_Target && action_data.m_Target.GetObject())
+    {
+      SRP_PostBox_Base postBox = SRP_PostBox_Base.Cast(action_data.m_Target.GetObject());
+      if (postBox)
+      {
+        postBox.SetHasBeenChecked(true);
+      }
+    }
+	}
 };

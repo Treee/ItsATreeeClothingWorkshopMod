@@ -48,6 +48,8 @@ class ActionMachinePostBoxKey extends ActionContinuousBase
         SRP_PostBoxKeys_User keys = SRP_PostBoxKeys_User.Cast( GetGame().CreateObjectEx("SRP_PostBoxKeys_User", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE ) );
         keys.SetSRPOwnerID(action_data.m_Player.GetIdentity().GetId());
         keys.SetSRPOwnerName(action_data.m_Player.GetIdentity().GetName());
+        // push ownership changes to client
+        keys.TryFetchKeyOwnerInfo();
         action_data.m_MainItem.AddQuantity(-5);
       }
     }
