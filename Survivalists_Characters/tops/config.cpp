@@ -49,6 +49,23 @@ class CfgVehicles
       "BlueBlack"
     };
   }; 
+  class WindstridePoncho: Clothing
+  {
+    rootClassName="Poncho";
+    colorVariants[]=
+    {
+      "Red_Checkered",
+      "Blue_Checkered",
+      "Yellow_Checkered",
+      "White",
+      "Brown",
+      "Green",
+      "Red",
+      "Black",
+      "BlackAndWhite",
+      "BlackAndWhite2",
+    };
+  };
   class DUB_WoolCoat: Clothing
 	{
     rootClassName="DUB_WoolCoat";
