@@ -169,7 +169,7 @@ class SRP_PrefabCrafting_alchemybrewing extends SRP_BrewingWorkbench
     return 100;//20mins
   }
   override void HandleHeatTransformation()
-  {    
+  {        
     ItemBase waterJug = GetItemOnSlot("BrewingBarrel1");
     if (!waterJug)
       return;
@@ -239,10 +239,11 @@ class SRP_PrefabCrafting_copperbrewing extends SRP_BrewingWorkbench
 {
   override int GetHeatTimerThreshold()
   {
-    return 30;//20mins
+    return 20;//20mins
   }
   override void HandleHeatTransformation()
   {    
+    // Print(string.Format("%1 brewed now: ", GetType()));
     ItemBase waterJug = GetItemOnSlot("BrewingBarrel1");
     if (!waterJug)
       return;
@@ -389,7 +390,7 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
 	}
   override int GetHeatTimerThreshold()
   {
-    return 15;//5mins
+    return 10;//5mins
     // return 10;//5mins
   }
   override int GetWaterJugConsumptionTotal()
