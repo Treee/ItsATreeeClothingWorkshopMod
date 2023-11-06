@@ -1004,12 +1004,9 @@ class CfgVehicles
 		descriptionShort="Bag for the search and rescue personnel";
 		hiddenSelectionsTextures[]=
 		{
-      "\dz\characters\backpacks\data\CanvasBag_olive_CO.paa",
-      "\dz\characters\backpacks\data\CanvasBag_olive_CO.paa",
-      "\dz\characters\backpacks\data\CanvasBag_olive_CO.paa",
-			// "Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa",
-			// "Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa",
-			// "Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa"
+			"Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
