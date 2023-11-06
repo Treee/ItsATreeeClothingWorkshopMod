@@ -8,17 +8,13 @@ modded class PrepareChicken
     if (randomNumberOfLegs > 0)
     {
       float chance = Math.RandomFloatInclusive(0,1);
-      if (chance > 0.65)
+      if (chance > 0.35)
       {
         GetGame().CreateObjectEx("srpChickenleg", player.GetPosition(), false);
       }
       if (randomNumberOfLegs > 1)
       {
-        chance = Math.RandomFloatInclusive(0,1);
-        if (chance > 0.8)
-        {
-          GetGame().CreateObjectEx("srpChickenleg", player.GetPosition(), false);
-        }
+        GetGame().CreateObjectEx("srpChickenleg", player.GetPosition(), false);
       }
     }
 	}
