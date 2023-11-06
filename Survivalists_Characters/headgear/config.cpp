@@ -89,6 +89,8 @@ class CfgVehicles
       "Marshals",
       "OregonPolice",
       "BlackRanger",
+      "WaldoRescueGreen",
+      "WaldoRescueOrange",
     };    
   };
   class ZSh3PilotHelmet: Clothing

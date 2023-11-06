@@ -349,6 +349,26 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_baseballcapii_black_ranger_co.paa"
 		};
 	};
+  class BaseballCap_WaldoRescueGreen: BaseballCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_RescueGreen_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_RescueGreen_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_RescueGreen_co.paa"
+		};
+	};
+  class BaseballCap_WaldoRescueOrange: BaseballCap_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_RescueOrange_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_RescueOrange_co.paa",
+			"Survivalists_Retextures\characters\headgear\data\baseballcapii_RescueOrange_co.paa"
+		};
+	};
 
 	class BeanieHat_MTP: BeanieHat_ColorBase
 	{

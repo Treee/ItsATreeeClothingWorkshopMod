@@ -252,6 +252,16 @@ class CfgVehicles
       "EMP6",
     };
   };
+  class CanvasBag_ColorBase: Clothing
+	{
+    rootClassName="CanvasBag";
+    colorVariants[]=
+    {
+      "Olive",
+      "Medical",
+      "WaldoRescue",
+    };
+  };
 
 //--------------------------------- ALEVARIC STUFF
   class ALV_MV_DuffleBag_Colorbase: Clothing

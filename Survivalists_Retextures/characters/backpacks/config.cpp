@@ -29,6 +29,7 @@ class CfgVehicles
 	class AssaultBag_Ttsko;
 	class TortillaBag;
 	class AliceBag_ColorBase;
+  class CanvasBag_ColorBase;
 
   class SRP_SlingBackpack_Default;
   class SRP_Small_Military_Pack_Tan;
@@ -994,6 +995,45 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_travel_co.paa",
 			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_travel_co.paa",
 			"Survivalists_Retextures\characters\backpacks\data\hunting_bag_travel_co.paa"
+		};
+	};
+
+  class CanvasBag_WaldoRescue: CanvasBag_ColorBase
+	{
+		scope=2;
+		descriptionShort="Bag for the search and rescue personnel";
+		hiddenSelectionsTextures[]=
+		{
+      "\dz\characters\backpacks\data\CanvasBag_olive_CO.paa",
+      "\dz\characters\backpacks\data\CanvasBag_olive_CO.paa",
+      "\dz\characters\backpacks\data\CanvasBag_olive_CO.paa",
+			// "Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa",
+			// "Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa",
+			// "Survivalists_Retextures\characters\backpacks\data\CanvasBag_Rescue_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"dz\characters\backpacks\data\CanvasBag_medical.rvmat",
+			"dz\characters\backpacks\data\CanvasBag_medical.rvmat",
+			"dz\characters\backpacks\data\CanvasBag_medical.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=120;
+					healthLevels[]=
+					{						
+						{1,{"DZ\Characters\backpacks\data\CanvasBag.rvmat"}},						
+						{0.69999999,{"DZ\Characters\backpacks\data\CanvasBag_medical.rvmat"}},						
+						{0.5,{"DZ\Characters\backpacks\data\CanvasBag_medical_damage.rvmat"}},						
+						{0.30000001,{"DZ\Characters\backpacks\data\CanvasBag_medical_damage.rvmat"}},						
+						{0,{"DZ\Characters\backpacks\data\CanvasBag_medical_destruct.rvmat"}}
+					};
+				};
+			};
 		};
 	};
 

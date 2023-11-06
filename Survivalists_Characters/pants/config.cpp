@@ -119,6 +119,7 @@ class CfgVehicles
       "TigerCamo",
       "OldCamo",
       "SpringRanger",
+      "WaldoRescue"
     };
   };      
   class CanvasPants_ColorBase: Clothing

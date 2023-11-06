@@ -226,6 +226,14 @@ class CfgVehicles
       "Red",      
     };
   };
+  class NioshFaceMask: Clothing
+	{
+    rootClassName="NioshFaceMask";
+    colorVariants[]=
+    {
+      "WaldoRescue",    
+    };
+  };
 //------------------------------------- ALEVARIC OVERRIDE
   class ALV_MV_MouthCover_Colorbase: Clothing
 	{

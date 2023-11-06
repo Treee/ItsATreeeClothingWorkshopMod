@@ -473,6 +473,7 @@ class CfgVehicles
       "MulticamTropic",
       "MulticamBlack",
       "Flecktarn",
+      "WaldoRescue"
     };
   };
   class HikingJacket_ColorBase: Clothing
@@ -669,7 +670,8 @@ class CfgVehicles
       "Blue",
       "Crimson",
       "Green",
-      "BlackMedic"
+      "BlackMedic",
+      "WaldoRescue"
     };
   };
   class FirefighterJacket_ColorBase: Clothing

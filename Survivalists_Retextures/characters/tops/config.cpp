@@ -864,6 +864,16 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\pcu5jacket_olive_co.paa"
 		};
 	};
+  class TacticalShirt_WaldoRescue: TacticalShirt_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = 
+		{
+			"Survivalists_Retextures\characters\tops\data\TacticalShirt_Rescue_ground_co.paa",
+			"Survivalists_Retextures\characters\tops\data\TacticalShirt_Rescue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\TacticalShirt_Rescue_co.paa"
+		};
+	};
   class Raincoat_Leather: Raincoat_ColorBase
 	{
 		scope=2;
@@ -1794,6 +1804,17 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\Paramedic_co.paa"
 		};
 	};
+  class ParamedicJacket_WaldoRescue: ParamedicJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\ParamedicShirt_Rescue_ground_co.paa",
+			"Survivalists_Retextures\characters\tops\data\ParamedicShirt_Rescue_co.paa",
+			"Survivalists_Retextures\characters\tops\data\ParamedicShirt_Rescue_co.paa"
+		};
+	};
+
 	class PrisonUniformJacket_HawaiianMultiLeaf: PrisonUniformJacket
 	{
 		scope=2;

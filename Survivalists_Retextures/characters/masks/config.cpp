@@ -20,6 +20,7 @@ class CfgVehicles
 	class Balaclava3Holes_ColorBase;
 	class BalaclavaMask_ColorBase;
   class FaceCover_Improvised;
+  class NioshFaceMask;
 
   class SRP_S10Respirator_Colorbase;
   class SRP_PMK2Respirator_Colorbase;
@@ -266,6 +267,17 @@ class CfgVehicles
       "Survivalists_Retextures\characters\masks\data\FaceCover_Improvised_red_co.paa"
     };
   };
+
+  class NioshFaceMask_WaldoRescue: NioshFaceMask
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\NioshFaceMask_Rescue_co.paa",
+			"Survivalists_Retextures\characters\masks\data\NioshFaceMask_Rescue_co.paa",
+			"Survivalists_Retextures\characters\masks\data\NioshFaceMask_Rescue_co.paa"
+		};
+	};
 
 	class SRP_FacialHairGoatee_Brown: SRP_FacialHairGoatee_Colorbase
 	{
