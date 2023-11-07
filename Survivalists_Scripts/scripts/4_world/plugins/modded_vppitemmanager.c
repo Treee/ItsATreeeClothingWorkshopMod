@@ -76,7 +76,7 @@ modded class VPPItemManager
           quantity = itemQuantity[1].ToInt();
         }
         // Print(string.Format("ItemType: %1 Quantity: %2 Raw: %3", itemType, quantity, s));
-        CreateEntity(itemType, targetPlayer.GetPosition(), -1, quantity);        
+        CreateEntity(itemType, targetPlayer.GetPosition(), ConditionTypes.PRISTINE, quantity, true);        
       }      
       string dataString = string.Format("%1 (%2)", data.param1, data.param2);
       GetWebHooksManager().PostData(AdminActivityMessage, new AdminActivityMessage(sender.GetPlainId(), sender.GetName(), string.Format("[ItemManager] spawn object on self. item: %1", dataString)));
