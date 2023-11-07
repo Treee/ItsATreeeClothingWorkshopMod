@@ -194,7 +194,7 @@ class CfgVehicles
       "SRP_Mask10",
     };
   };	
-  class MimeMask_Female: Clothing
+  class MimeMask_Female: MimeMask_Male
   {
     rootClassName="MimeMask_Female";
     colorVariants[]=
