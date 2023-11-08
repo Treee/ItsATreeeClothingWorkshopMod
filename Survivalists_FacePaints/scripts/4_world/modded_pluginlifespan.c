@@ -106,6 +106,7 @@ modded class PluginLifespan
       "KissDemon",
       "KissSpaceman",
       "KissStarchild",
+      "Zedmag"
     };
   }
   TStringArray GetFacePaintScarOptions()
