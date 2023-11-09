@@ -46,11 +46,11 @@ class CfgVehicles
 					hitpoints=200;
 					healthLevels[]=
 					{
-						{1.0,	{"DZ\gear\consumables\data\stone.rvmat"}},
-            {0.69999999,	{"DZ\gear\consumables\data\stone.rvmat"}},
-            {0.5,	{"DZ\gear\consumables\data\stone_damage.rvmat"}},
-            {0.30000001,	{"DZ\gear\consumables\data\stone_damage.rvmat"}},
-            {0.0,	{"DZ\gear\consumables\data\stone_destruct.rvmat"}}
+						{1.0,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone.rvmat"}},
+            {0.69999999,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone.rvmat"}},
+            {0.5,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone_damage.rvmat"}},
+            {0.30000001,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone_damage.rvmat"}},
+            {0.0,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone_destruct.rvmat"}}
 					};
 				};
 			};
@@ -257,11 +257,11 @@ class CfgVehicles
 					hitpoints=100;
 					healthLevels[]=
 					{
-						{1.0,	{"DZ\gear\consumables\data\stone.rvmat"}},
-            {0.69999999,	{"DZ\gear\consumables\data\stone.rvmat"}},
-            {0.5,	{"DZ\gear\consumables\data\stone_damage.rvmat"}},
-            {0.30000001,	{"DZ\gear\consumables\data\stone_damage.rvmat"}},
-            {0.0,	{"DZ\gear\consumables\data\stone_destruct.rvmat"}}
+						{1.0,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone.rvmat"}},
+            {0.69999999,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone.rvmat"}},
+            {0.5,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone_damage.rvmat"}},
+            {0.30000001,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone_damage.rvmat"}},
+            {0.0,	{"SRP\Core\SRP_Mining\gear\consumables\data\stone_destruct.rvmat"}}
 					};
 				};
 			};
@@ -445,7 +445,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_ruby_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -483,7 +483,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_jade_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -502,7 +502,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_amethyst_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -521,7 +521,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_aqua_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -540,7 +540,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_citrine_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -559,7 +559,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_diamond_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -578,7 +578,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_topaz_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -597,7 +597,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_quartz_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
@@ -616,7 +616,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_sapphire_ca.paa"
+			"SRP\Core\SRP_Mining\gear\consumables\data\srp_rawgem_opal_ca.paa"
 		};
     hiddenSelectionsMaterials[]=
 		{
