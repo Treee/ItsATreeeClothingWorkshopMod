@@ -1,5 +1,5 @@
 //================================================ METAL BUCKETS
-class SRP_MetalBucket extends ItemBase
+class SRP_MetalBucket_ColorBase extends ItemBase
 {
   override protected bool CanHaveTemperature()
 	{
@@ -43,8 +43,9 @@ class SRP_MetalBucket extends ItemBase
     return true;
   }  
 };
-class SRP_MetalBucket_Lime extends SRP_MetalBucket{};
-class SRP_MetalBucket_Mortar extends SRP_MetalBucket
+class SRP_MetalBucket_Default extends SRP_MetalBucket_ColorBase{};
+class SRP_MetalBucket_Lime extends SRP_MetalBucket_ColorBase{};
+class SRP_MetalBucket_Mortar extends SRP_MetalBucket_ColorBase
 {
   override void HandleHeatTransformation()
   {

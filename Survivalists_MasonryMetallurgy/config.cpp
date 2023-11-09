@@ -6,25 +6,6 @@ class CfgMods
 		author = "ItsATreee";
 		name = "Survivalists_MasonryMetallurgy";
 		dir = "Survivalists_MasonryMetallurgy";
-    dependencies[]={"Game","World","Mission"};
-		class defs
-		{
-			class gameScriptModule
-			{
-				value="";
-        files[]={"Survivalists_MasonryMetallurgy/scripts/3_game"};			
-      };
-			class worldScriptModule
-			{
-				value="";
-        files[]={"Survivalists_MasonryMetallurgy/scripts/4_world"};			
-      };
-      class missionScriptModule
-			{
-				value="";
-				files[]={"Survivalists_MasonryMetallurgy/scripts/5_mission"};
-			};
-		};
 	};
 };
 class CfgPatches
@@ -64,7 +45,7 @@ class CfgVehicles
 		hiddenSelections[]={"camoground"};
 		hiddenSelectionsTextures[]=
 		{
-			"Survivalists_MasonryMetallurgy\gear\containers\data\wooden_case_masonrymetallurgy_co.paa"
+			"Survivalists_MasonryMetallurgy\gear\consumables\data\srp_mining_gem_a_red_ca.paa"
 		};
 		class DamageSystem
 		{
@@ -110,5 +91,49 @@ class CfgVehicles
 			};
 		};
 	};
+
+  class SRP_StoneForgeWorkbenchStarter_Kit: SRP_MasonryMetallurgy_KitBase
+  {
+		scope=0;
+		displayName="Forge Starter Kit - Materials";
+		descriptionShort="Holds materials waiting for work to be done.";
+    attachments[]=
+		{	
+      "Stones",
+			"Material_FPole_Stones",
+      "Material_Mortar"
+		};
+  };
+
+  class SRP_StoneForgeWorkbenchIntermediate_Kit: SRP_MasonryMetallurgy_KitBase
+  {
+		scope=0;
+		displayName="Forge Starter Kit";
+		descriptionShort="A good amount of work done towards the stone forge.";
+    inventorySlot[]=
+		{
+			"SRP_ForgeStarterKit"
+		};
+    itemBehaviour=0;
+		canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varStackMax=1;
+  };
+
+  class SRP_StoneForgeWorkbenchFinisher_Kit: SRP_MasonryMetallurgy_KitBase
+  {
+		scope=0;
+		displayName="A Stone Forge Foundation Kit";
+		descriptionShort="Everything connects to this. Only one foundation is needed per forge. Combine with an oven to finish the forge.";
+    attachments[]=
+		{	
+			"SRP_ForgeStarterKit",
+      "Stones",
+			"Material_FPole_Stones",
+      "Material_Mortar"
+		};
+  };
 
 };
