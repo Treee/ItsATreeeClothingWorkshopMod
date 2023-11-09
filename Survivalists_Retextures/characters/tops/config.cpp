@@ -594,6 +594,16 @@ class CfgVehicles
       "Survivalists_Retextures\characters\tops\data\tshirt_maori_co.paa"
     };
   };
+  class TShirt_GolfChampionship2023: TShirt_ColorBase
+  {
+    scope=2;
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\tops\data\tshirt_goldchampionship2023_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_goldchampionship2023_co.paa",
+      "Survivalists_Retextures\characters\tops\data\tshirt_goldchampionship2023_co.paa"
+    };
+  };
 	class Hoodie_Orange: Hoodie_ColorBase
 	{
 		scope=2;
