@@ -17,7 +17,113 @@ class CfgVehicles
   class FireplaceBase;
   class Inventory_Base;
 
-  class SRP_MasonryMetallurgy_KitBase;
+  class SRP_MasonryMetallurgy_KitBase: Inventory_Base
+	{
+		scope=0; //0 means cannot be directly spawned
+		displayName="Masonry & Metallurgy Kit";
+		descriptionShort="A wooden box that holds various items.";
+		model="\DZ\gear\camping\wooden_case.p3d";
+		itemsCargoSize[]={0,0};
+		itemSize[]={7,5};
+		carveNavmesh=1;
+		canBeDigged=0;
+		simulation="inventoryItem";
+		physLayer="item_small";
+		rotationFlags=2;
+		heavyItem=1;
+		weight=3000;
+		itemBehaviour=2;
+		hiddenSelections[]={"camoground"};
+		hiddenSelectionsTextures[]=
+		{
+			"SRP\Core\SRP_Metallurgy\gear\containers\data\srp_woodencase_kit_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0;
+					};
+				};
+			};
+		};
+	};
+  class SRP_StoneForgeWorkbenchStarter_Kit: SRP_MasonryMetallurgy_KitBase
+  {
+		scope=0;
+		displayName="Forge Starter Kit - Materials";
+		descriptionShort="Holds materials waiting for work to be done.";
+    attachments[]=
+		{	
+      "Stones",
+			"Material_FPole_Stones",
+      "Material_Mortar"
+		};
+  };
+  class SRP_StoneForgeWorkbenchIntermediate_Kit: SRP_MasonryMetallurgy_KitBase
+  {
+		scope=0;
+		displayName="Forge Starter Kit";
+		descriptionShort="A good amount of work done towards the stone forge.";
+    inventorySlot[]=
+		{
+			"SRP_ForgeStarterKit"
+		};
+    itemBehaviour=0;
+		canBeSplit=1;
+		varQuantityInit=1;
+		varQuantityMin=0;
+		varQuantityMax=10;
+		varStackMax=1;
+  };
+  class SRP_StoneForgeWorkbenchFinisher_Kit: SRP_MasonryMetallurgy_KitBase
+  {
+		scope=0;
+		displayName="A Stone Forge Foundation Kit";
+		descriptionShort="Everything connects to this. Only one foundation is needed per forge. Combine with an oven to finish the forge.";
+    attachments[]=
+		{	
+			"SRP_ForgeStarterKit",
+      "Stones",
+			"Material_FPole_Stones",
+      "Material_Mortar"
+		};
+  };
+
 
 //===================================== WORKBENCH  
 
@@ -27,7 +133,6 @@ class CfgVehicles
 		displayName="A Stone Forge Kit";
 		descriptionShort="A kit for a stone forge.";
 	};
-
   class SRP_StoneForgeWorkbench: FireplaceBase 
 	{
 		scope=2;
@@ -130,14 +235,12 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_AdvancedStoneForgeWorkbench_Kit: SRP_MasonryMetallurgy_KitBase
 	{
 		scope=2;
 		displayName="An Advanced Stone Forge Kit";
 		descriptionShort="A kit for an advanced stone forge.";
 	};
-
   class SRP_AdvancedStoneForgeWorkbench: FireplaceBase 
 	{
 		scope=2;
@@ -251,7 +354,6 @@ class CfgVehicles
 			};
 		};
 	};
-
   class SRP_AdvancedStoneForgeWorkbench_Bellows: Inventory_Base
 	{
 		scope=2;
