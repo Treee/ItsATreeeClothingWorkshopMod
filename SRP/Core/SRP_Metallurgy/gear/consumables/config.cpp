@@ -1092,7 +1092,7 @@ class CfgVehicles
   class SRP_Coinage_Blank1_ColorBase: Inventory_Base
   {
 		scope=0;
-		displayName="Metal Coin";
+		displayName="Phoenix Coin";
 		descriptionShort="A metal coin minted from forged metal.";
 		model="SRP\Core\SRP_Metallurgy\gear\consumables\srp_coinage_blank1.p3d";
 		animClass="NoFireClass";
@@ -1132,7 +1132,7 @@ class CfgVehicles
   class SRP_Coinage_Blank2_ColorBase: Inventory_Base
   {
 		scope=0;
-		displayName="Metal Coin";
+		displayName="Worn Dragoon Coin";
 		descriptionShort="A metal coin minted from forged metal.";
 		model="SRP\Core\SRP_Metallurgy\gear\consumables\srp_coinage_blank2.p3d";
 		animClass="NoFireClass";
@@ -1172,7 +1172,7 @@ class CfgVehicles
   class SRP_Coinage_Blank3_ColorBase: Inventory_Base
   {
 		scope=0;
-		displayName="Metal Coin";
+		displayName="Celtic Coin";
 		descriptionShort="A metal coin minted from forged metal.";
 		model="SRP\Core\SRP_Metallurgy\gear\consumables\srp_coinage_blank3.p3d";
 		animClass="NoFireClass";
@@ -1212,7 +1212,7 @@ class CfgVehicles
   class SRP_Coinage_Celtic_ColorBase: Inventory_Base
   {
 		scope=0;
-		displayName="Metal Coin";
+		displayName="Worn Celtic Coin";
 		descriptionShort="A metal coin minted from forged metal.";
 		model="SRP\Core\SRP_Metallurgy\gear\consumables\srp_coinage_celtic.p3d";
 		animClass="NoFireClass";
@@ -1252,7 +1252,7 @@ class CfgVehicles
   class SRP_Coinage_Dragoon_ColorBase: Inventory_Base
   {
 		scope=0;
-		displayName="Metal Coin";
+		displayName="Dragoon Coin";
 		descriptionShort="A metal coin minted from forged metal.";
 		model="SRP\Core\SRP_Metallurgy\gear\consumables\srp_coinage_dragoon.p3d";
 		animClass="NoFireClass";
@@ -1292,7 +1292,7 @@ class CfgVehicles
   class SRP_Coinage_Phoenix_ColorBase: Inventory_Base
   {
 		scope=0;
-		displayName="Metal Coin";
+		displayName="Worn Phoenix Coin";
 		descriptionShort="A metal coin minted from forged metal.";
 		model="SRP\Core\SRP_Metallurgy\gear\consumables\srp_coinage_phoenix.p3d";
 		animClass="NoFireClass";
