@@ -109,7 +109,7 @@ class CfgVehicles
     inventorySlot[]=
     {
       "SRP_Crucible"
-    };
+    };    
 		itemsCargoSize[]={0,0};
 		attachments[]={};
 		canBeDigged=0;
@@ -574,6 +574,7 @@ class CfgVehicles
     physLayer="item_small";
     color="base";
 		weight=500;
+    rotationFlags=16;
 		itemSize[]={3,1};
     canBeSplit=1;
 		varQuantityDestroyOnMin=1;
