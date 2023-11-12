@@ -512,6 +512,24 @@ class CfgVehicles
 		};
 	};
 
+  class land_srp_forestsign_dallas: HouseNoDestruct  // new
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\signs\SRP_ForestSign.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\signs\data\nationalforestsign_dallas_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_Mods\structures\signs\data\nationalforestsign.rvmat"
+		};
+	};
+
 	class land_srp_forestsign_base: HouseNoDestruct  // new
 	{
 		scope=1;

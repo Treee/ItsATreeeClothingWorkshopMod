@@ -21,7 +21,6 @@ class CfgVehicles
   // class Backpack_Base;
 
 //--------------------------------- MOD/VANILLA OVERRIDE
-
   class TaloonBag_ColorBase: Clothing
   {
     rootClassName="TaloonBag";
@@ -34,6 +33,19 @@ class CfgVehicles
       "Black1",
       "Black2"
     };
+  };
+  class Canvas_Backpack_Base: TaloonBag_ColorBase
+  {
+    rootClassName="Canvas_Backpack";
+    colorVariants[]=
+    {
+      "Black",
+      "White",
+      "Blue",
+      "Red",
+      "Purple",      
+    };
+    attachments[]={"Pin1","Pin2","Pin3","Chemlight","WalkieTalkie","WaterBottle"};
   };
   class TortillaBag: Clothing
 	{
