@@ -15,7 +15,7 @@ class CfgSlots
   class Slot_SRP_ForgeStarterKit
   {
 		name="SRP_ForgeStarterKit";
-		displayName="Forge Starter Kit";
+		displayName="Forge Starter Kit.";
 		ghostIcon="set:dayz_inventory image:missing";
     stackMax=10;
   };

@@ -1,35 +1,35 @@
 class CfgMods
 {
-	class SRP_Core_Scripts
+	class SRP_RP_Scripts
 	{
 		type = "mod";
 		author = "ItsATreee";
-		name = "SRP_Core_Scripts";
-		dir = "SRP_Core_Scripts";
+		name = "SRP_RP_Scripts";
+		dir = "SRP_RP_Scripts";
     dependencies[]={"Game","World","Mission"};
 		class defs
 		{
 			class gameScriptModule
 			{
 				value="";
-        files[]={"SRP/Core/SRP_Scripts/3_game"};			
+        files[]={"SRP/RP/SRP_RP_Scripts/3_game"};			
       };
 			class worldScriptModule
 			{
 				value="";
-        files[]={"SRP/Core/SRP_Scripts/4_world"};			
+        files[]={"SRP/RP/SRP_RP_Scripts/4_world"};			
       };
       class missionScriptModule
 			{
 				value="";
-				files[]={"SRP/Core/SRP_Scripts/5_mission"};
+				files[]={"SRP/RP/SRP_RP_Scripts/5_mission"};
 			};
 		};
 	};
 };
 class CfgPatches
 {
-  class SRP_Core_Scripts
+  class SRP_RP_Scripts
   {
     units[]={};
     weapons[]={};
@@ -41,4 +41,3 @@ class CfgPatches
     };
   };
 };
-// comment for workshop publish

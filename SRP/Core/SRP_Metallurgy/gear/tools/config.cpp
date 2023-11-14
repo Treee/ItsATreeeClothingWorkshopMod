@@ -20,7 +20,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Coal Rake";
-		descriptionShort="A rake to shuffle coal.";
+		descriptionShort="A rake to shuffle coal";
 		model="SRP\Core\SRP_Metallurgy\gear\tools\srp_coalrake.p3d";
     debug_ItemCategory=2;
 		rotationFlags=12;
