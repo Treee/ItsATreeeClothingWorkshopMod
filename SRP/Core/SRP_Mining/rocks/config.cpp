@@ -7,7 +7,9 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data"
+			"DZ_Data",
+      "DZ_Rocks",
+      "DZ_Rocks_Bliss"
 		};
 	};
 };
@@ -47,6 +49,86 @@ class CfgNonAIVehicles
     oreYieldMax[]={2,2,2,2,2,2,2,2};
 	};
 	class Static_stone5: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone6: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone7: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone8: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone9: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone10: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone6_moss: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone7_moss: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone8_moss: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone9_moss: StaticObject
+	{
+    isMineable=1;
+    requiresQuarry=0;
+    requiredChance=0; //value 0-1 ---- 0 always yields 1 never yields (think d20 dice rolls)
+    oreTypes[]={"Copper","Iron","Tin","Gold","Platinum","Silver","Zinc","Gemstone"};
+    oreYieldMax[]={2,2,2,2,2,2,2,2};
+	};
+  class Static_stone10_moss: StaticObject
 	{
     isMineable=1;
     requiresQuarry=0;
