@@ -738,6 +738,21 @@ class CfgVehicles
     };
   };
 
+
+  class SRP_ReadableBook_LnSAffiliateManual: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Company Manual for Affiliates and Reps";
+    author="Unknown";
+		file="Survivalists_Books\gear\books\data\book_lnsaffiliateguide.html";		
+    displayName="Company Manual for Affiliates and Reps";
+    descriptionShort="Rules and guidelines for a company affiliate.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_lnsaffiliateguide_co.paa"
+    };
+  };
+
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
 	{
