@@ -1,5 +1,8 @@
 class SRP_BrewingWorkbench extends SRP_Fireplace_Transformer
 {
+  protected EffectSound 	m_HeatingTransformSound;
+  protected float m_ChanceToExplode = -0.1;
+
   void SRP_BrewingWorkbench()
   {
 		//Particles - default for FireplaceBase
@@ -10,7 +13,11 @@ class SRP_BrewingWorkbench extends SRP_Fireplace_Transformer
 		PARTICLE_NORMAL_SMOKE	= ParticleList.BARREL_NORMAL_SMOKE;
 		PARTICLE_FIRE_END 		= ParticleList.BARREL_FIRE_END;
 		PARTICLE_STEAM_END		= ParticleList.BARREL_FIRE_STEAM_2END;
-  }    
+  }
+  void ~SRP_BrewingWorkbench()
+  {
+    SEffectManager.DestroyEffect(m_HeatingTransformSound);
+  }
   int GetWaterJugConsumptionTotal()
   {
     return 0;
@@ -48,6 +55,49 @@ class SRP_BrewingWorkbench extends SRP_Fireplace_Transformer
   override bool IsHotEnough()
   {
     return GetTemperature() > 999;
+  }
+	override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx) 
+	{
+    if (rpc_type == SRP_RPC.SRPC_SOUND_BREWING_YIELD)
+    {
+      bool playSound;
+      vector pos;
+      string sound_set;
+      
+      //Helicrash is a world event, we want anyone to be able to hear it
+      Param3<bool, vector, int> playCrashSound = new Param3<bool, vector, int>(false, "0 0 0",0);
+      if (ctx.Read(playCrashSound))
+      {
+        playSound = playCrashSound.param1;
+        pos = playCrashSound.param2;
+        sound_set = "ExtinguishByWaterEnd_SoundSet";
+      }
+      
+      if (playSound)
+      {
+        m_HeatingTransformSound = SEffectManager.PlaySound(sound_set, pos, 0.1, 0.1);
+        m_HeatingTransformSound.SetAutodestroy(true);
+      }
+    }
+    super.OnRPC(sender, rpc_type, ctx);
+  };
+  override void RequestSoundEvent()
+  {
+    Param3<bool, vector, int> playSound = new Param3<bool, vector, int>(true, GetPosition(), 0);
+		RPCSingleParam(SRP_RPC.SRPC_SOUND_BREWING_YIELD, playSound, true);
+
+    float chance = Math.RandomFloat01();
+    if (chance < m_ChanceToExplode)
+    {
+      // explode
+	 	  Explode(DT_EXPLOSION, "DrugExplosion_Ammo");
+      m_ChanceToExplode = -0.1;
+    }
+    else
+    {
+      m_ChanceToExplode += Math.RandomFloatInclusive(0, 0.01);
+      // m_ChanceToExplode += 1;
+    }
   }
 };
 class SRP_BrewingWorkbench_Alchemy extends SRP_BrewingWorkbench

@@ -328,7 +328,7 @@ class SRP_Fireplace_Transformer extends SRP_FireplaceBase
   {
 		ProcessInvulnerabilityCheck(GetInvulnerabilityTypeString());
     m_LightDistance = 10;
-  }
+  }  
   override protected void Heating()
   {
     // we are hot enough to be brewing
@@ -337,6 +337,7 @@ class SRP_Fireplace_Transformer extends SRP_FireplaceBase
     {
       if (GetHeatTimerThreshold() > -1 && GetHeatTimer() > GetHeatTimerThreshold())
       { 
+        RequestSoundEvent();
         HandleHeatTransformation();
         ResetHeatTimer();
         if (DamagePerTransformEvent() > 0)
@@ -385,8 +386,9 @@ class SRP_Fireplace_Transformer extends SRP_FireplaceBase
     }
     super.AddDamageToItemByFireEx(item, can_be_ruined, pAttachment);
   }
+  void RequestSoundEvent(){}
   int DamagePerTransformEvent()
   {
     return 0;
-  }
+  }  
 };
