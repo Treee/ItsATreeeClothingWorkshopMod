@@ -1873,6 +1873,7 @@ class CfgVehicles
       "Pickle",
       "Potatoe",
       "Tomato",
+      "Xmas"
     };
     inventorySlot[]=
 		{

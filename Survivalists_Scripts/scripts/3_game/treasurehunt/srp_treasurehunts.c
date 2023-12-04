@@ -357,6 +357,7 @@ class SRP_DynamicTreasureHunt
       "Bear_Arcadia",
       "Bear_Dawnbreak",
       "Bear_Hazey",
+      "Bear_Xmas",
     };
   }
   string GetRandomBuriableContainer()

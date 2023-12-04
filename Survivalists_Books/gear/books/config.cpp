@@ -752,6 +752,32 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_lnsaffiliateguide_co.paa"
     };
   };
+  class SRP_ReadableBook_SkylarMemories1: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Memories Before";
+    author="Skylar Wolfe";
+		file="Survivalists_Books\gear\books\data\book_Memories_Before_By_Skylar_Wolfe.html";		
+    displayName="Memories Before";
+    descriptionShort="A memoir written by Skylar Wolfe.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_Memories_Before_By_Skylar_Wolfe_co.paa"
+    };
+  };
+  class SRP_ReadableBook_SkylarMemories2: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Memories Before - 2";
+    author="Skylar Wolfe";
+		file="Survivalists_Books\gear\books\data\book_Memories_Before_2_By_Skylar_Wolfe.html";		
+    displayName="Memories Before - 2";
+    descriptionShort="A memoir written by Skylar Wolfe.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_Memories_Before_2_By_Skylar_Wolfe_co.paa"
+    };
+  };
 
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase

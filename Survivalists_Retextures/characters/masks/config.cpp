@@ -33,6 +33,7 @@ class CfgVehicles
   class SRP_DeerMask_ColorBase;
   class SRP_BirdMask_ColorBase;
   class SRP_InariFoxMask_ColorBase;
+  class SRP_BoneMonsterMask;
 
 	class SurgicalMask_Black: SurgicalMask
 	{
@@ -974,4 +975,33 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\masks\data\srp_inarifoxmask_toxic_co.paa"
 		};
   };
+
+  class SRP_BoneMonsterMask_Ash: SRP_BoneMonsterMask
+	{
+		scope = 2;
+		displayName = "Antique Bone Monster Mask - Ash";
+		descriptionShort = "An antique mask. In fairly good shape considering.";
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_jaw_ash_co.paa","Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_skull_Ash_co.paa"};
+	};
+  class SRP_BoneMonsterMask_Bio: SRP_BoneMonsterMask
+	{
+		scope = 2;
+		displayName = "Antique Bone Monster Mask - bio";
+		descriptionShort = "An antique mask. In fairly good shape considering.";
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_jaw_bio_co.paa","Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_skull_bio_co.paa"};
+	};
+  class SRP_BoneMonsterMask_Blood: SRP_BoneMonsterMask
+	{
+		scope = 2;
+		displayName = "Antique Bone Monster Mask - blood";
+		descriptionShort = "An antique mask. In fairly good shape considering.";
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_jaw_blood_co.paa","Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_skull_blood_co.paa"};
+	};
+  class SRP_BoneMonsterMask_Indigo: SRP_BoneMonsterMask
+	{
+		scope = 2;
+		displayName = "Antique Bone Monster Mask - indigo";
+		descriptionShort = "An antique mask. In fairly good shape considering.";
+		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_jaw_indigo_co.paa","Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_skull_indigo_co.paa"};
+	};
 };

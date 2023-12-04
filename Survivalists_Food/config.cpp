@@ -3956,6 +3956,23 @@ class CfgVehicles
 			agents=0;
 		};
 	};
+  class SRP_Guts_PigletCookiesNailedIt: Guts
+	{
+		scope=2;
+		displayName="PiG's Nailed It Sprinkle Cookie";
+		descriptionShort="Nails, Sprinkles, Worms, Glowstick Fluid and some Battery acid whipped up with a bit of stale corn flakes.";
+		hiddenSelections[]={"camoground"};
+    hiddenSelectionsTextures[]={"Survivalists_Food\food\data\animal_guts_PigletsCookiev5_co.paa"};
+    class Nutrition
+		{
+			fullnessIndex=1;
+			energy=5000;
+			water=5000;
+			nutritionalIndex=1;
+			toxicity=0;
+			agents=0;
+		};
+	};
 //================================== PURE RETEXUTRES
 	class Zagorky_Snickers: Zagorky_ColorBase
 	{

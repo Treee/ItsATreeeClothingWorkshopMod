@@ -580,6 +580,18 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\camping\data\srp_dragonpushie_Tomatoes_co.paa"
 		};
 	};
+  class SRP_DragonPlushie_Xmas: SRP_DragonPlushie_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+      "zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\camping\data\HolidayDragon1_co.paa"
+		};
+	};
 
   class SRP_JapaneseUmbrella_Default: SRP_JapaneseUmbrella_ColorBase
 	{

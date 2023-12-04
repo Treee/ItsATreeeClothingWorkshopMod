@@ -131,7 +131,7 @@ class CfgSoundShaders
 	{
 		samples[]=
 		{
-			{"Survivalists_Sounds\sounds\cassettes\music\data\Fix_You_Sung_By_Skylar_Wolfe_.ogg",1}
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Fix_You_Sung_By_Skylar_Wolfe.ogg",1}
 		};
 	};
   class SRPRadio_SkylarWolfe_RingOfFire_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
@@ -224,6 +224,84 @@ class CfgSoundShaders
 		samples[]=
 		{
 			{"Survivalists_Sounds\sounds\cassettes\music\data\Dancing_In_The_Moonlight_Skylar_Wolfe.ogg",1}
+		};
+	};
+
+  class SRPRadio_SkylarWolfe_DownByTheBay_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Down_by_the_Bay_PiG_and_Skylar_Wolfe_Clips.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_WalkingInMemphis_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Walking_in_Memphis_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_SweetBabyJames_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Sweet_Baby_James_Sung_By_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_Radioactive_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Radioactive_Sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_PlayThatSong_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Play_That_Song_By_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_OnlyTime_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Only_Time_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_HereWithoutYou_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Here_Without_You_Sung_By_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_FollowMe_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Follow_Me_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_DontDreamItsOver_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Dont_Dream_Its_Over_Sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_Blackbird_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\Blackbird_Sung_by_Skylar_Wolfe.ogg",1}
+		};
+	};
+  class SRPRadio_SkylarWolfe_AThousandYears_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\cassettes\music\data\A_Thousand_Years_aka_Warlocks_Lullabye_Sang_By_Skylar_Wolfe.ogg",1}
 		};
 	};
 
@@ -720,6 +798,83 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"SRPRadio_SkylarWolfe_DancingInTheMoonlight_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_DownByTheBay_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_DownByTheBay_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_WalkingInMemphis_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_WalkingInMemphis_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_SweetBabyJames_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_SweetBabyJames_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_Radioactive_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_Radioactive_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_PlayThatSong_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_PlayThatSong_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_OnlyTime_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_OnlyTime_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_HereWithoutYou_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_HereWithoutYou_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_FollowMe_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_FollowMe_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_DontDreamItsOver_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_DontDreamItsOver_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_Blackbird_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_Blackbird_Shader1"
+		};
+	};
+  class SRPRadio_SkylarWolfe_AThousandYears_SoundSet1
+	{
+		soundShaders[]=
+		{
+			"SRPRadio_SkylarWolfe_AThousandYears_Shader1"
 		};
 	};
 

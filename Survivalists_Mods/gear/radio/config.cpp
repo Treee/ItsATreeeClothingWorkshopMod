@@ -1078,6 +1078,118 @@ class CfgVehicles
 			soundSet="SRPRadio_SkylarWolfe_DancingInTheMoonlight_SoundSet1";
 		};
 	}; 
+
+  class SRPRadio_CassetteTape_SkylarWolfe_DownByTheBay: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Down By The Bay";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_DownByTheBay_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_WalkingInMemphis: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Walking In Memphis";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_WalkingInMemphis_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_SweetBabyJames: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Sweet Baby James";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_SweetBabyJames_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_Radioactive: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Radioactive";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_Radioactive_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_PlayThatSong: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Play That Song";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_PlayThatSong_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_OnlyTime: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Only Time";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_OnlyTime_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_HereWithoutYou: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Here Without You";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_HereWithoutYou_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_FollowMe: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Follow Me";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_FollowMe_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_DontDreamItsOver: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Don't Dream It's Over";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_DontDreamItsOver_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_Blackbird: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - Blackbird";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_Blackbird_SoundSet1";
+		};
+	}; 
+  class SRPRadio_CassetteTape_SkylarWolfe_AThousandYears: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Skylar Wolfe - A Thousand Years";
+		descriptionShort="Music Tape - Credit Skylar Wolfe";		
+		class CfgCassette
+		{
+			soundSet="SRPRadio_SkylarWolfe_AThousandYears_SoundSet1";
+		};
+	}; 
+
 // -------------------------------- Misc
   class SRPRadio_CassetteTape_Pinkerton_TheShadow: SRPRadio_CassetteTape_Base
 	{
