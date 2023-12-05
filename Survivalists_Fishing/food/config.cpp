@@ -16,6 +16,7 @@ class CfgVehicles
 {
   class Edible_Base;
   class FoodAnimationSources;
+  class MeatStageTransitions;
 
   class SRP_ClamFilletMeat: Edible_Base
 	{
@@ -121,7 +122,7 @@ class CfgVehicles
 				class Raw
 				{
 					visual_properties[]={0,0,0};
-					nutrition_properties[]={5,50,100,1,0,4};
+					nutrition_properties[]={5,20,40,1,0,4};
 					cooking_properties[]={0,0};
 				};
 				class Rotten
@@ -130,8 +131,8 @@ class CfgVehicles
 					nutrition_properties[]=
 					{
 						10,
-						25,
-						50,
+						10,
+						20,
 						1,
 						0,
 						"4 + 		  16"
@@ -141,28 +142,31 @@ class CfgVehicles
 				class Baked
 				{
 					visual_properties[]={0,1,1};
-					nutrition_properties[]={1,600,100,1,0};
-					cooking_properties[]={70,120};
+					nutrition_properties[]={1,30,20,1,0};
+					cooking_properties[]={70,45};
 				};
 				class Boiled
 				{
 					visual_properties[]={0,2,2};
-					nutrition_properties[]={1,400,400,1,0};
-					cooking_properties[]={70,125};
+					nutrition_properties[]={1,30,20,1,0};
+					cooking_properties[]={70,55};
 				};
 				class Dried
 				{
 					visual_properties[]={0,3,3};
-					nutrition_properties[]={2,400,130,1,0};
-					cooking_properties[]={70,300,80};
+					nutrition_properties[]={2,30,0,1,0};
+					cooking_properties[]={70,120,80};
 				};
 				class Burned
 				{
 					visual_properties[]={0,4,4};
-					nutrition_properties[]={5,50,0,1,0,16};
-					cooking_properties[]={100,300};
+					nutrition_properties[]={5,30,0,1,0,16};
+					cooking_properties[]={100,30};
 				};
-			};			
+			};
+			class FoodStageTransitions: MeatStageTransitions
+			{
+			};		
 		};
 		class NoiseImpact
 		{
