@@ -30,6 +30,7 @@ class CfgVehicles
 	class TortillaBag;
 	class AliceBag_ColorBase;
   class CanvasBag_ColorBase;
+  class ArmyPouch_ColorBase;
 
   class SRP_SlingBackpack_Default;
   class SRP_Small_Military_Pack_Tan;
@@ -1031,6 +1032,57 @@ class CfgVehicles
 					};
 				};
 			};
+		};
+	};
+
+  class ArmyPouch_Drugs: ArmyPouch_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_drugs_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_drugs_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_drugs_co.paa"
+		};
+	};
+  class ArmyPouch_Grenade: ArmyPouch_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_granade_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_granade_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_granade_co.paa"
+		};
+	};
+  class ArmyPouch_Kitty: ArmyPouch_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_Kitty_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_Kitty_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_Kitty_co.paa"
+		};
+	};
+  class ArmyPouch_Meat: ArmyPouch_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_meat_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_meat_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_meat_co.paa"
+		};
+	};
+  class ArmyPouch_Tomato: ArmyPouch_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_tomato_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_tomato_co.paa",
+			"Survivalists_Retextures\characters\backpacks\data\armypouch_tomato_co.paa"
 		};
 	};
 

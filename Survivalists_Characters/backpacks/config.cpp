@@ -21,6 +21,22 @@ class CfgVehicles
   // class Backpack_Base;
 
 //--------------------------------- MOD/VANILLA OVERRIDE
+  class ArmyPouch_ColorBase: Clothing
+  {
+    rootClassName="ArmyPouch";
+    colorVariants[]=
+    {
+      "Beige",
+      "Black",
+      "Camo",
+      "Green",
+      "Drugs",
+      "Grenade",
+      "Kitty",
+      "Meat",
+      "Tomato",
+    };
+  };
   class TaloonBag_ColorBase: Clothing
   {
     rootClassName="TaloonBag";
