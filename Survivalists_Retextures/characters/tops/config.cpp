@@ -2469,6 +2469,68 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\tops\data\srp_hunting_vest_black_co.paa"
 		};
 	};
+
+  class HuntingJacket_NinjaPurple: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninja_purple_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninja_purple_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninja_purple_co.paa"
+		};
+	};
+  class HuntingJacket_NinjaRed: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninja_red_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninja_red_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninja_red_co.paa"
+		};
+	};
+  class HuntingJacket_NinjaLemon: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjalemon_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjalemon_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjalemon_co.paa"
+		};
+	};
+  class HuntingJacket_NinjaLime: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjalime_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjalime_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjalime_co.paa"
+		};
+	};
+  class HuntingJacket_NinjaPink: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjapink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjapink_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjapink_co.paa"
+		};
+	};
+  class HuntingJacket_NinjaSky: HuntingJacket_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjasky_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjasky_co.paa",
+			"Survivalists_Retextures\characters\tops\data\hunting_jacket_ninjasky_co.paa"
+		};
+	};
+
   class LabCoat_BGSD: LabCoat
 	{
 		scope=2;

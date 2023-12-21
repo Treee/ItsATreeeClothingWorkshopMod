@@ -119,7 +119,16 @@ class CfgVehicles
       "TigerCamo",
       "OldCamo",
       "SpringRanger",
-      "WaldoRescue"
+      "WaldoRescue",
+      "NinjaBrown",
+      "NinjaLemon",
+      "NinjaPink",
+      "NinjaPurple",
+      "NinjaSky",
+      "OdinBlue",
+      "OdinGreen",
+      "OdinWine",
+      "OdinYellow",
     };
   };      
   class CanvasPants_ColorBase: Clothing
@@ -132,7 +141,11 @@ class CfgVehicles
       "Grey",
       "Red",
       "Violet",
-      "Leather"
+      "Leather",
+      "BlueJeans",
+      "DarkBlueJeans",
+      "Forest",
+      "Pink",
     };
   };
   class CanvasPantsMidi_ColorBase: Clothing
@@ -145,7 +158,11 @@ class CfgVehicles
       "Grey",
       "Red",
       "Violet",
-      "Leather"
+      "Leather",
+      "BlueJeans",
+      "DarkBlueJeans",
+      "Forest",
+      "Pink",
     };
   };
   class TrackSuitPants_ColorBase: Clothing

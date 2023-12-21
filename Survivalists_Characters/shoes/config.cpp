@@ -52,6 +52,17 @@ class CfgVehicles
     itemSize[]={2,2};
     itemsCargoSize[]={1,2};
   };
+  class DUB_Indianboots: Clothing
+  {
+    rootClassName="DUB_Indianboots";
+    colorVariants[]=
+    {
+      "Blue",
+      "Lime",
+      "Peanut",
+      "Pink",      
+    };
+  };
 //-------------------------------------BASE GAME OVERRIDE	
   class AthleticShoes_ColorBase: Clothing
   {
@@ -196,6 +207,14 @@ class CfgVehicles
       "Brown",
       "Green",
       "Grey",
+      "GrenadeGreen",
+      "NinjaBlue",
+      "NinjaPink",
+      "NinjaYellow",
+      "OdinLemon",
+      "OdinPetal",
+      "OdinPurple",
+      "OdinRed",
     };
   };
   class JoggingShoes_ColorBase: Clothing

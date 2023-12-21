@@ -635,6 +635,100 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\HunterPants_RescueOrange_co.paa"
 		};
 	};
+
+
+  class HunterPants_NinjaBrown: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_brown_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_brown_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_brown_co.paa"
+		};
+	};
+  class HunterPants_NinjaLemon: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_lemon_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_lemon_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_lemon_co.paa"
+		};
+	};
+  class HunterPants_NinjaPink: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_pink_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_pink_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_pink_co.paa"
+		};
+	};
+  class HunterPants_NinjaPurple: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_purple_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_purple_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_purple_co.paa"
+		};
+	};
+  class HunterPants_NinjaSky: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_sky_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_sky_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_ninja_sky_co.paa"
+		};
+	};
+  class HunterPants_OdinBlue: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_blue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_blue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_blue_co.paa"
+		};
+	};
+  class HunterPants_OdinGreen: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_green_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_green_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_green_co.paa"
+		};
+	};
+  class HunterPants_OdinWine: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_wine_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_wine_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_wine_co.paa"
+		};
+	};
+  class HunterPants_OdinYellow: HunterPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_yellow_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_yellow_co.paa",
+			"Survivalists_Retextures\characters\pants\data\hunterpants_Odin_yellow_co.paa"
+		};
+	};
+
+
   class CanvasPants_Leather: CanvasPants_ColorBase
 	{
 		scope=2;
@@ -645,6 +739,46 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa"
 		};
 	};
+  class CanvasPants_BlueJeans: CanvasPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_blue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_blue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_blue_co.paa"
+		};
+	};
+  class CanvasPants_DarkBlueJeans: CanvasPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_darkblue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_darkblue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_darkblue_co.paa"
+		};
+	};
+  class CanvasPants_Forest: CanvasPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_forest_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_forest_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_forest_co.paa"
+		};
+	};
+  class CanvasPants_Pink: CanvasPants_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_pink_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_pink_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_pink_co.paa"
+		};
+	};
   class CanvasPantsMidi_Leather: CanvasPantsMidi_ColorBase
 	{
 		scope=2;
@@ -653,6 +787,46 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa",
 			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa",
 			"Survivalists_Retextures\characters\pants\data\canvaspants_leather_co.paa"
+		};
+	};
+  class CanvasPantsMidi_BlueJeans: CanvasPantsMidi_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_blue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_blue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_blue_co.paa"
+		};
+	};
+  class CanvasPantsMidi_DarkBlueJeans: CanvasPantsMidi_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_darkblue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_darkblue_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_darkblue_co.paa"
+		};
+	};
+  class CanvasPantsMidi_Forest: CanvasPantsMidi_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_forest_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_forest_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_forest_co.paa"
+		};
+	};
+  class CanvasPantsMidi_Pink: CanvasPantsMidi_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\pants\data\canvaspants_pink_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_pink_co.paa",
+			"Survivalists_Retextures\characters\pants\data\canvaspants_pink_co.paa"
 		};
 	};
 	class TrackSuitPants_Montana: TrackSuitPants_ColorBase

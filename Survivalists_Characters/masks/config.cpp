@@ -272,7 +272,10 @@ class CfgVehicles
     {
       "Green",
       "White",      
-      "Tan"
+      "Tan",
+      "Blue",
+      "OrangePink",
+      "RedGreen",
     };
   };
   class ALV_MV_Poncho_Colorbase: Clothing

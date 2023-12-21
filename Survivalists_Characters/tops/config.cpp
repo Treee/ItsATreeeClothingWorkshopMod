@@ -811,6 +811,12 @@ class CfgVehicles
       "BlueSkull",
       "BlackSkull",
       "SpringRanger",
+      "NinjaPurple",
+      "NinjaRed",
+      "NinjaLemon",
+      "NinjaLime",
+      "NinjaPink",
+      "NinjaSky",
     };
   };
   class LeatherShirt_ColorBase: Clothing

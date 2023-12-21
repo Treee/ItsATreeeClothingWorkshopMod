@@ -35,6 +35,8 @@ class CfgVehicles
   class SRP_InariFoxMask_ColorBase;
   class SRP_BoneMonsterMask;
 
+  class ALV_MV_Shemagh_Colorbase;
+
 	class SurgicalMask_Black: SurgicalMask
 	{
 		scope=2;
@@ -1004,4 +1006,41 @@ class CfgVehicles
 		descriptionShort = "An antique mask. In fairly good shape considering.";
 		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_jaw_indigo_co.paa","Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_skull_indigo_co.paa"};
 	};
+
+  class ALV_MV_Shemagh_Blue: ALV_MV_Shemagh_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\shemagh_bluepurple_co.paa"
+		};
+  };
+  class ALV_MV_Shemagh_OrangePink: ALV_MV_Shemagh_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\shemagh_orangepink_co.paa"
+		};
+  };
+  class ALV_MV_Shemagh_RedGreen: ALV_MV_Shemagh_Colorbase
+	{
+		scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\shemagh_redgreen_co.paa"
+		};
+  };
 };

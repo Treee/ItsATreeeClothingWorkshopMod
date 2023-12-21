@@ -21,7 +21,11 @@ class CfgVehicles
   class Sneakers_ColorBase;
   class LeatherShoes_ColorBase;
   class FeetCover_Improvised;
+  class CombatBoots_ColorBase;
 
+  class DUB_Indianboots;
+
+//====================================================== VANILLA
   class NBCBootsBase_Gray: NBCBootsBase
 	{
 		scope=2;
@@ -474,4 +478,131 @@ class CfgVehicles
       "Survivalists_Retextures\characters\shoes\data\feetCover_improvised_red_co.paa"
     };
   };
+
+  class CombatBoots_GrenadeGreen: CombatBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\shoes\data\combatboots_grenadegreen_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_grenadegreen_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_grenadegreen_co.paa",
+		};
+	};
+  class CombatBoots_NinjaBlue: CombatBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjablue_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjablue_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjablue_co.paa",
+		};
+	};
+  class CombatBoots_NinjaPink: CombatBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjapink_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjapink_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjapink_co.paa",
+		};
+	};
+  class CombatBoots_NinjaYellow: CombatBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjayellow_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjayellow_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_ninjayellow_co.paa",
+		};
+	};
+  class CombatBoots_OdinLemon: CombatBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinlemon_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinlemon_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinlemon_co.paa",
+		};
+	};
+  class CombatBoots_OdinPetal: CombatBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinpetal_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinpetal_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinpetal_co.paa",
+		};
+	};
+  class CombatBoots_OdinPurple: CombatBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinpurple_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinpurple_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinpurple_co.paa",
+		};
+	};
+  class CombatBoots_OdinRed: CombatBoots_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.80000001;
+		hiddenSelectionsTextures[]=
+		{
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinred_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinred_co.paa",
+      "Survivalists_Retextures\characters\shoes\data\combatboots_Odinred_co.paa",
+		};
+	};
+
+//====================================================== MODDED
+  class DUB_Indianboots_Blue: DUB_Indianboots
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+    {
+      "Survivalists_Retextures\characters\shoes\data\indianboots_blue_co.paa",
+    };
+	};
+  class DUB_Indianboots_Lime: DUB_Indianboots
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+    {
+      "Survivalists_Retextures\characters\shoes\data\indianboots_lime_co.paa",
+    };
+	};
+  class DUB_Indianboots_Peanut: DUB_Indianboots
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+    {
+      "Survivalists_Retextures\characters\shoes\data\indianboots_peanut_co.paa",
+    };
+	};
+  class DUB_Indianboots_Pink: DUB_Indianboots
+	{
+		scope = 2;
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = 
+    {
+      "Survivalists_Retextures\characters\shoes\data\indianboots_pink_co.paa",
+    };
+	};
 };
