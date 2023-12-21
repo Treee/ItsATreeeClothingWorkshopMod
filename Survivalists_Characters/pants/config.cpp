@@ -67,7 +67,7 @@ class CfgVehicles
       "Denim",
       "MTP",
       "ATAC",
-      "ATACCSFG",
+      "ATACSFG",
       "USNAOR1",
       "USNAOR2",
       "Sumrak",
