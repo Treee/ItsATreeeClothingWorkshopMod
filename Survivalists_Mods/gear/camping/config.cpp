@@ -2125,6 +2125,90 @@ class CfgVehicles
 	};
   class SRP_ChinesesHandFan_Basic: SRP_ChinesesHandFan_ColorBase{scope=2;};
 	
+  class SRP_TaikoDrum_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Takio Drum";
+		descriptionShort="A meticulously crafted instrument to keep the beat.";
+		model="Survivalists_Mods\gear\camping\srp_taikodrum.p3d";
+		weight=1500;
+		itemSize[]={3,3};
+    rotationFlags=16;
+    itemBehaviour=0;
+    // rootClassName="SRP_TaikoDrum";
+    // colorVariants[]={};
+    inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+    hiddenSelections[]=
+		{
+      "zbytek",
+      "body",
+      "decoration",
+      "bands",
+      "nails",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\gear\camping\data\srp_taiko_skin_co.paa",
+			"Survivalists_Mods\gear\camping\data\srp_taiko_body_co.paa",
+			"Survivalists_Mods\gear\camping\data\srp_taiko_decoration_co.paa",
+			"Survivalists_Mods\gear\camping\data\srp_taiko_nails_co.paa",
+			"Survivalists_Mods\gear\camping\data\srp_taiko_bands_co.paa",
+		};
+    class InventorySlotsOffsets
+		{
+			class Shoulder
+			{
+				position[] = {0.15,0.05,-0.23};//FB,UD,LR
+				// orientation[] = {90,0,-65};//x,y,z
+			};
+			class Melee
+			{
+				position[] = {0.12,0.05,0.23};
+				// orientation[] = {90,0,-150};
+			};
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Mods\gear\camping\data\srp_taiko_body.rvmat"}},
+            {0.69999999,	{	"Survivalists_Mods\gear\camping\data\srp_taiko_body.rvmat"}},
+            {0.5,	{	"Survivalists_Mods\gear\camping\data\srp_biwa_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_Mods\gear\camping\data\srp_biwa_damage.rvmat"}},
+            {0.0,	{	"Survivalists_Mods\gear\camping\data\srp_biwa_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup
+				{
+					soundSet="woodenlog_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodenlog_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_TaikoDrum_Basic: SRP_TaikoDrum_ColorBase{scope=2;};
+
+
 //=========================================== CARPET & RUGS
   class SRP_Carpet_Kit: SRP_KitBase  // 
 	{

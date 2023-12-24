@@ -826,6 +826,7 @@ class CfgVehicles
 		{
 			"weaponHandguardM4"
 		};
+    hasRailFunctionality=1;
 		recoilModifier[]={0.80000001,0.80000001,0.80000001};
 		swayModifier[]={0.69999999,0.69999999,0.69999999};
 		hiddenSelections[]=
@@ -949,6 +950,7 @@ class CfgVehicles
 		reversed=0;
 		weight=250;
 		itemSize[]={2,1};
+    hasRailFunctionality=1;
 		inventorySlot[]=
 		{
 			"weaponHandguardM4"
@@ -1011,6 +1013,7 @@ class CfgVehicles
 		reversed=0;
 		weight=250;
 		itemSize[]={2,1};
+    hasRailFunctionality=1;
 		inventorySlot[]=
 		{
 			"weaponHandguardM4"
