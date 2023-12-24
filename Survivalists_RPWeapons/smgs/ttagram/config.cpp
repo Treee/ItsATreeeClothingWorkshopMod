@@ -30,8 +30,10 @@ class cfgWeapons
 		attachments[]={"weaponFlashlight","pistolMuzzle"};
 		chamberableFrom[]={"Ammo_9x19"};
 		magazines[]={"Mag_MP5_15Rnd","Mag_MP5_30Rnd"};
-    inventorySlot[]+=
+    inventorySlot[]=
     {
+      "Shoulder",
+      "Melee",
       "SRP_Pistol1",
       "SRP_Pistol2",
       "SRP_Pistol3",
@@ -43,7 +45,6 @@ class cfgWeapons
 		recoilModifier[]={0.2,0.2,0.2};
 		swayModifier[]={0.2,0.2,0.2};
 		itemSize[]={4,3};
-
 		class Particles
 		{
 			class OnFire

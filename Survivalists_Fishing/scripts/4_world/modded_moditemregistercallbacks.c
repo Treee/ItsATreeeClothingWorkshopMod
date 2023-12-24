@@ -5,7 +5,7 @@ modded class ModItemRegisterCallbacks
     super.RegisterOneHanded( pType, pBehavior );        
     pType.AddItemInHandsProfileIK("SRP_Clam", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/tuna.anm");
     pType.AddItemInHandsProfileIK("SRP_Clam_Opened", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/tuna.anm");
-    pType.AddItemInHandsProfileIK("SRP_Pearl", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/carp_live.anm");	
+    // pType.AddItemInHandsProfileIK("SRP_Pearl", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/carp_live.anm");	
     
     pType.AddItemInHandsProfileIK("SRP_SaltWaterFish_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/carp_live.anm");	
     pType.AddItemInHandsProfileIK("SRP_SaltWaterFishFilletMeat_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior,	"dz/anims/anm/player/ik/gear/mackerel_fillet.anm"); 

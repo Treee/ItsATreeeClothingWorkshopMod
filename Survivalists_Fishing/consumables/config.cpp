@@ -16,11 +16,11 @@ class CfgVehicles
 {
   class Inventory_Base;
 
-  class SRP_Pearl: Inventory_Base
+  class SRP_Pearl: Inventory_Base // old, remove eventually
 	{
 		scope=2;
-		displayName="Pearl";
-		descriptionShort="A pearl cultivated in the mouth of a clam for several generations";
+		displayName="Pearl - Deprecated";
+		descriptionShort="This item is deprecated. Speak to an admin to replace for a newer pearl SRP_Pearl_Default";
 		model="Survivalists_Fishing\consumables\pearl.p3d";
 		isMeleeWeapon=1;
 		weight=2;

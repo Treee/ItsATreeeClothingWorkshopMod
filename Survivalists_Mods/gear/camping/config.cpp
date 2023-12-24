@@ -2162,7 +2162,7 @@ class CfgVehicles
 		{
 			class Shoulder
 			{
-				position[] = {0.15,0.05,-0.23};//FB,UD,LR
+				position[] = {0.17,0.05,-0.21};//FB,UD,LR
 				// orientation[] = {90,0,-65};//x,y,z
 			};
 			class Melee
