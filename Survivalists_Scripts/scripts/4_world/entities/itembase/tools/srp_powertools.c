@@ -16,12 +16,12 @@ class PowerTool_ElectricHandDrill extends ItemBase
     battery = GetItemOnSlot("CarBattery");
     if (battery)
     {
-      return battery.GetQuantity() >= amount;
+      return battery.GetCompEM().GetEnergy() >= amount;
     }
     battery = GetItemOnSlot("TruckBattery");
     if (battery)
     {
-      return battery.GetQuantity() >= amount;      
+      return battery.GetCompEM().GetEnergy() >= amount;      
     }
     return false;
   }
@@ -32,13 +32,13 @@ class PowerTool_ElectricHandDrill extends ItemBase
     battery = GetItemOnSlot("CarBattery");
     if (battery)
     {
-      battery.AddQuantity(-amount);
+      battery.GetCompEM().AddEnergy(-amount);
       return;
     }
     battery = GetItemOnSlot("TruckBattery");
     if (battery)
     {
-      battery.AddQuantity(-amount);
+      battery.GetCompEM().AddEnergy(-amount);
       return;
     }
   }
