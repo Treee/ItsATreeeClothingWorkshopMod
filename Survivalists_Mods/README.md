@@ -1012,6 +1012,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "The Hornet (Military Helmet)" (https://skfb.ly/6BHMS) by nip88nip is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Taiko drum" (https://sketchfab.com/3d-models/taiko-drum-3a5c3fed6dbd494fba95291fe0ed87d2) by Stev_3D is licensed under Standard License (https://sketchfab.com/licenses).
+
+- "Old pocket watch" (https://skfb.ly/6SWYS) by Maxim Lukyanov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Omega Speedmaster Moon Watch" (https://skfb.ly/6WR8A) by Mateusz Woliński is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki

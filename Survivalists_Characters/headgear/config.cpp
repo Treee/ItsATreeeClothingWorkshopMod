@@ -1629,6 +1629,92 @@ class CfgVehicles
 			};
 		};
   };
+  class SRP_PirateHat_ColorBase: Clothing
+	{
+    scope=0;
+		displayName="Pirate Hat";
+		descriptionShort="A hand crafted leather tricorn.";
+		model="Survivalists_Characters\headgear\srp_piratehat_g.p3d";
+		weight=110;
+		itemSize[]={3,2};        
+		itemsCargoSize[]={1,1};		
+		varWetMax=1;
+		heatIsolation=0.5;
+		repairableWithKits[]={3,8};
+		repairCosts[]={50,25};
+		inventorySlot[] = {"Headgear", "Wig"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
+    rootClassName="SRP_PirateHat";
+    colorVariants[]=
+    {
+      "Leather",    
+    };
+		headSelectionsToHide[]=
+		{
+			"Clipping_baseballcap"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Characters\headgear\data\srp_piratehat_ca.paa"
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Characters\headgear\data\srp_piratehat.rvmat"}},						
+						{0.69999999,{"Survivalists_Characters\headgear\data\srp_piratehat.rvmat"}},						
+						{0.5,{"Survivalists_Characters\headgear\data\srp_piratehat_damage.rvmat"}},						
+						{0.30000001,{"Survivalists_Characters\headgear\data\srp_piratehat_damage.rvmat"}},						
+						{0,{"Survivalists_Characters\headgear\data\srp_piratehat_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\srp_piratehat_m.p3d";
+			female="Survivalists_Characters\headgear\srp_piratehat_m.p3d";
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_PirateHat_Leather: SRP_PirateHat_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Characters\headgear\data\srp_piratehat_ca.paa"
+    };
+	};
 
 // -=============================== OLD MVS STUFF  
   class SRP_MilitaryPatrolCap_ColorBase: Clothing
