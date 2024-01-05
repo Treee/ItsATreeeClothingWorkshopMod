@@ -20,7 +20,7 @@ class CfgVehicles
 		scope=0;
 		displayName="Pearl";
 		descriptionShort="A pearl cultivated in the mouth of a clam over its lifetime.";
-		model="SRP\Core\SRP_Fishing\consumables\pearl.p3d";
+		model="SRP\Core\SRP_Fishing\consumables\srp_pearl.p3d";
 		isMeleeWeapon=1;
 		weight=2;
 		absorbency=0;
@@ -43,9 +43,9 @@ class CfgVehicles
 					{
 						{1.0,	{	"SRP\Core\SRP_Fishing\consumables\data\pearl.rvmat"}},
             {0.69999999,	{	"SRP\Core\SRP_Fishing\consumables\data\pearl.rvmat"}},
-            {0.5,	{	"SRP\Core\SRP_Fishing\consumables\data\pearl.rvmat"}},
-            {0.30000001,	{	"SRP\Core\SRP_Fishing\consumables\data\pearl.rvmat"}},
-            {0.0,	{	"SRP\Core\SRP_Fishing\consumables\data\pearl.rvmat"}}
+            {0.5,	{	"SRP\Core\SRP_Fishing\consumables\data\pearl_damage.rvmat"}},
+            {0.30000001,	{	"SRP\Core\SRP_Fishing\consumables\data\pearl_damage.rvmat"}},
+            {0.0,	{	"SRP\Core\SRP_Fishing\consumables\data\pearl_destruct.rvmat"}}
 					};
 				};
 			};

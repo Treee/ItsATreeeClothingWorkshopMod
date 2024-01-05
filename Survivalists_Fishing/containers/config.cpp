@@ -22,7 +22,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tacklebox";
-		descriptionShort="A tacklebox for various fishing accessories.";
+		descriptionShort="A tacklebox for various fishing accessories. DEPRECATED. Replace with SRP_Tacklebox_Basic";
 		model="Survivalists_Fishing\containers\tacklebox.p3d";    
 		itemBehaviour=1;
     useEntityHierarchy="true";
@@ -132,8 +132,8 @@ class CfgVehicles
   class SRP_Aquarium: Container_Base
 	{
 		scope=2;
-		displayName="Aquarium";
-		descriptionShort="An old world aquarium.";
+		displayName="DEPRECATED Aquarium";
+		descriptionShort="DEPRECATED replace with SRP_Aquarium_Basic. An old world aquarium.";
 		model="Survivalists_Fishing\containers\aquarium.p3d";    
 		itemBehaviour=0;
     carveNavmesh=1;
@@ -191,8 +191,8 @@ class CfgVehicles
   class SRP_WoodenFishHanger: Container_Base
 	{
 		scope=2;
-		displayName="Wooden Fish Post";
-		descriptionShort="A wooden post to hang a prize fish.";
+		displayName="DEPRECATED Wooden Fish Post";
+		descriptionShort="DEPRECATED, replace with SRP_WoodenFishHanger_Basic. A wooden post to hang a prize fish.";
 		model="Survivalists_Fishing\containers\woodenfishhanger.p3d";    
 		itemBehaviour=0;
     useEntityHierarchy="true";
@@ -267,8 +267,8 @@ class CfgVehicles
   class SRP_WoodenFishRack: Container_Base
 	{
 		scope=2;
-		displayName="Wooden Fish Rack";
-		descriptionShort="A wooden rack to hang a several fish.";
+		displayName="DEPRECATED Wooden Fish Rack";
+		descriptionShort="DEPRECATED: Replace with SRP_WoodenFishRack_Basic. A wooden rack to hang a several fish.";
 		model="Survivalists_Fishing\containers\woodenfishrack.p3d";    
 		itemBehaviour=0;
     useEntityHierarchy="true";
@@ -322,8 +322,8 @@ class CfgVehicles
   class SRP_CanOfWorms: Inventory_Base
 	{
 		scope=2;
-		displayName="Can of Worms";
-		descriptionShort="A whole can of worms. Wriggly.";
+		displayName="DEPRECATED Can of Worms";
+		descriptionShort="DEPRECATED, replace with SRP_CanOfWorms_Basic. A whole can of worms. Wriggly.";
 		model="\dz\gear\food\food_can.p3d";
 		weight=20;
 		absorbency=1;
