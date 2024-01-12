@@ -22,7 +22,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Tacklebox";
-		descriptionShort="A tacklebox for various fishing accessories. DEPRECATED. Replace with SRP_Tacklebox_Basic";
+		descriptionShort="A tacklebox for various fishing accessories. DEPRECATED. Replace with IAT_Fishing_Tacklebox_Basic";
 		model="Survivalists_Fishing\containers\tacklebox.p3d";    
 		itemBehaviour=1;
     useEntityHierarchy="true";
@@ -74,7 +74,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Aquarium Starter Kit";
-		descriptionShort="This kit is missing a few pieces, namely wood fashioned into a base and top then glass to encase the water.";
+		descriptionShort="DEPRECATED. Finish to complete the kit.";
     attachments[]=
     {
       "SRP_Aquarium_Top",
@@ -89,7 +89,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Aquarium Top";
-		descriptionShort="The top of an aquarium.";
+		descriptionShort="DEPRECATED. Finish to complete the kit.";
     model="Survivalists_Fishing\containers\aquarium_top.p3d";
     inventorySlot[]=
     {
@@ -100,7 +100,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Aquarium Bottom";
-		descriptionShort="The foundation of an aquarium";
+		descriptionShort="DEPRECATED. Finish to complete the kit.";
     model="Survivalists_Fishing\containers\aquarium_bot.p3d";
     inventorySlot[]=
     {
@@ -111,7 +111,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Aquarium Glass";
-		descriptionShort="A small sheet of glass";
+		descriptionShort="DEPRECATED. Finish to complete the kit.";
     model="Survivalists_Fishing\containers\aquarium_glass.p3d";
     inventorySlot[]=
     {
@@ -126,14 +126,14 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Aquarium Kit";
-		descriptionShort="This kit contains the required materials to build a large fish display.";
+		descriptionShort="DEPRECATED: Replace with IAT_Fishing_Aquarium_Kit";
 	};
 
   class SRP_Aquarium: Container_Base
 	{
 		scope=2;
 		displayName="DEPRECATED Aquarium";
-		descriptionShort="DEPRECATED replace with SRP_Aquarium_Basic. An old world aquarium.";
+		descriptionShort="DEPRECATED replace with IAT_Fishing_Aquarium_Basic. An old world aquarium.";
 		model="Survivalists_Fishing\containers\aquarium.p3d";    
 		itemBehaviour=0;
     carveNavmesh=1;
@@ -168,7 +168,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Fish Hanger Starter Kit";
-		descriptionShort="The beginnings of a large display for fish. Gather appropriate materials and apply force.";
+		descriptionShort="DEPRECATED. Finish to complete the kit.";
     attachments[]=
     {
 			"Material_FPole_WoodenLog2",
@@ -185,14 +185,14 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Fish Display Kit";
-		descriptionShort="This kit contains the required materials to build a large fish display.";
+		descriptionShort="DEPRECATED: Replace with IAT_Fishing_WoodenFishHanger_Kit";
 	};
 
   class SRP_WoodenFishHanger: Container_Base
 	{
 		scope=2;
 		displayName="DEPRECATED Wooden Fish Post";
-		descriptionShort="DEPRECATED, replace with SRP_WoodenFishHanger_Basic. A wooden post to hang a prize fish.";
+		descriptionShort="DEPRECATED, replace with IAT_Fishing_WoodenFishHanger_Basic. A wooden post to hang a prize fish.";
 		model="Survivalists_Fishing\containers\woodenfishhanger.p3d";    
 		itemBehaviour=0;
     useEntityHierarchy="true";
@@ -244,7 +244,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Fish Rack Starter Kit";
-		descriptionShort="The beginnings of a rack display for fish. Gather appropriate materials and apply force.";
+		descriptionShort="DEPRECATED. Finish to complete the kit.";
     attachments[]=
     {
 			"Material_L2_WoodenLogs",
@@ -261,14 +261,14 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Fish Rack Kit";
-		descriptionShort="This kit contains the required materials to build a large fish rack.";
+		descriptionShort="DEPRECATED: Replace with IAT_Fishing_WoodenFishRack_Kit";
 	};
 
   class SRP_WoodenFishRack: Container_Base
 	{
 		scope=2;
 		displayName="DEPRECATED Wooden Fish Rack";
-		descriptionShort="DEPRECATED: Replace with SRP_WoodenFishRack_Basic. A wooden rack to hang a several fish.";
+		descriptionShort="DEPRECATED: Replace with IAT_Fishing_WoodenFishRack_Basic. A wooden rack to hang a several fish.";
 		model="Survivalists_Fishing\containers\woodenfishrack.p3d";    
 		itemBehaviour=0;
     useEntityHierarchy="true";
@@ -323,7 +323,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="DEPRECATED Can of Worms";
-		descriptionShort="DEPRECATED, replace with SRP_CanOfWorms_Basic. A whole can of worms. Wriggly.";
+		descriptionShort="DEPRECATED, replace with IAT_Fishing_CanOfWorms_Basic. A whole can of worms. Wriggly.";
 		model="\dz\gear\food\food_can.p3d";
 		weight=20;
 		absorbency=1;

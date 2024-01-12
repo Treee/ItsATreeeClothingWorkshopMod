@@ -100,7 +100,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Wooden Fishing Rod Kit";
-		descriptionShort="This kit contains the things needed to make a wooden fishing rod.";
+		descriptionShort="Deprecated. Replace with IAT_Fishing_WoodenRod_Kit";
     attachments[]=
     {
       "Material_Shelter_FrameSticks",
@@ -116,7 +116,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Hand Made Fishing Rod";
-		descriptionShort="A fishing rod made by hand from various materials.";
+		descriptionShort="Deprecated. Replace with IAT_Fishing_WoodenRod_";
 		model="Survivalists_Fishing\tools\handmadefishingrod.p3d";
 		debug_ItemCategory=2;
 		rotationFlags=17;

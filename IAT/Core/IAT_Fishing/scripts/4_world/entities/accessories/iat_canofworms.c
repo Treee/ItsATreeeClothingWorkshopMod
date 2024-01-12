@@ -1,0 +1,3 @@
+class IAT_Fishing_CanOfWorms_ColorBase extends ItemBase{};
+class IAT_Fishing_CanOfWorms_Basic extends IAT_Fishing_CanOfWorms_ColorBase{};
+class IAT_Fishing_CanOfWorms_Dicks extends IAT_Fishing_CanOfWorms_ColorBase{};

@@ -1,0 +1,37 @@
+class IAT_Fishing_Lure_ColorBase extends ItemBase{};
+
+class IAT_Fishing_Lure_Metal1_ColorBase extends IAT_Fishing_Lure_ColorBase{};
+class IAT_Fishing_Lure_Metal1_1 extends IAT_Fishing_Lure_Metal1_ColorBase{};
+class IAT_Fishing_Lure_Metal1_2 extends IAT_Fishing_Lure_Metal1_ColorBase{};
+class IAT_Fishing_Lure_Metal1_3 extends IAT_Fishing_Lure_Metal1_ColorBase{};
+class IAT_Fishing_Lure_Metal1_4 extends IAT_Fishing_Lure_Metal1_ColorBase{};
+
+class IAT_Fishing_Lure_Metal2_ColorBase extends IAT_Fishing_Lure_ColorBase{};
+class IAT_Fishing_Lure_Metal2_1 extends IAT_Fishing_Lure_Metal2_ColorBase{};
+class IAT_Fishing_Lure_Metal2_2 extends IAT_Fishing_Lure_Metal2_ColorBase{};
+class IAT_Fishing_Lure_Metal2_3 extends IAT_Fishing_Lure_Metal2_ColorBase{};
+class IAT_Fishing_Lure_Metal2_4 extends IAT_Fishing_Lure_Metal2_ColorBase{};
+
+class IAT_Fishing_Lure_Metal3_ColorBase extends IAT_Fishing_Lure_ColorBase{};
+class IAT_Fishing_Lure_Metal3_1 extends IAT_Fishing_Lure_Metal3_ColorBase{};
+class IAT_Fishing_Lure_Metal3_2 extends IAT_Fishing_Lure_Metal3_ColorBase{};
+class IAT_Fishing_Lure_Metal3_3 extends IAT_Fishing_Lure_Metal3_ColorBase{};
+class IAT_Fishing_Lure_Metal3_4 extends IAT_Fishing_Lure_Metal3_ColorBase{};
+
+class IAT_Fishing_Lure_WoodenFish1_ColorBase extends IAT_Fishing_Lure_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish1_1 extends IAT_Fishing_Lure_WoodenFish1_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish1_2 extends IAT_Fishing_Lure_WoodenFish1_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish1_3 extends IAT_Fishing_Lure_WoodenFish1_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish1_4 extends IAT_Fishing_Lure_WoodenFish1_ColorBase{};
+
+class IAT_Fishing_Lure_WoodenFish2_ColorBase extends IAT_Fishing_Lure_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish2_1 extends IAT_Fishing_Lure_WoodenFish2_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish2_2 extends IAT_Fishing_Lure_WoodenFish2_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish2_3 extends IAT_Fishing_Lure_WoodenFish2_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish2_4 extends IAT_Fishing_Lure_WoodenFish2_ColorBase{};
+
+class IAT_Fishing_Lure_WoodenFish3_ColorBase extends IAT_Fishing_Lure_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish3_1 extends IAT_Fishing_Lure_WoodenFish3_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish3_2 extends IAT_Fishing_Lure_WoodenFish3_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish3_3 extends IAT_Fishing_Lure_WoodenFish3_ColorBase{};
+class IAT_Fishing_Lure_WoodenFish3_4 extends IAT_Fishing_Lure_WoodenFish3_ColorBase{};

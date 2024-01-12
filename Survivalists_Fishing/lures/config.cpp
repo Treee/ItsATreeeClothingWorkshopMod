@@ -21,13 +21,13 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Metal Fishing Lure Kit";
-		descriptionShort="This kit contains the things needed to make a metal fishing lure.";
+		descriptionShort="Deprecated. Replace with IAT_Fishing_MetalLure_Kit";
 	};
   class SRP_FishingLureWood_Kit: SRP_Fishing_KitBase
 	{
 		scope=2;
 		displayName="Wooden Fishing Lure Kit";
-		descriptionShort="This kit contains the things needed to make a wooden fishing lure.";
+		descriptionShort="Deprecated. Replace with IAT_Fishing_WoodenLure_Kit";
 	};
 
 
@@ -36,7 +36,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Fishing Lure";
-		descriptionShort="A fishing lure. Used to entice fish to your bait.";
+		descriptionShort="Deprecated. Replace with IAT_Fishing_Lure_";
 		model="Survivalists_Fishing\lures\fishinglure1.p3d";
 		rotationFlags=64;
 		weight=1;

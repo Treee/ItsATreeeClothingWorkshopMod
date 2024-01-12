@@ -20,7 +20,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Pearl - Deprecated";
-		descriptionShort="This item is deprecated. Speak to an admin to replace for a newer pearl SRP_Pearl_Default";
+		descriptionShort="This item is deprecated. Speak to an admin to replace for a newer pearl IAT_Fishing_Pearl_Default";
 		model="Survivalists_Fishing\consumables\pearl.p3d";
 		isMeleeWeapon=1;
 		weight=2;
