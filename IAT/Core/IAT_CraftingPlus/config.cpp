@@ -4,7 +4,7 @@ class CfgMods
 	{
 		type="mod";
 		author="ItsATreee";
-		name="ItsATreee Fishing";
+		name="ItsATreee Crafting Plus";
 		dir="IAT_CraftingPlus";    
     dependencies[] = {"Game","World"};
 		class defs
@@ -33,6 +33,7 @@ class CfgPatches
     {
       "DZ_Data",
       "DZ_Scripts",
+      "IAT_CraftingPlusEnums"
     };
   };
 };
