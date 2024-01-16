@@ -6,9 +6,14 @@ class CfgMods
 		author="ItsATreee";
 		name="ItsATreee Fishing";
 		dir="IAT_CraftingPlus";    
-    dependencies[] = {"World"};
+    dependencies[] = {"Game","World"};
 		class defs
 		{
+      class gameScriptModule
+			{
+				value = "";
+        files[] = {"IAT\Core\IAT_CraftingPlus\scripts\3_game"};			
+      };
 			class worldScriptModule
 			{
 				value = "";
