@@ -528,6 +528,51 @@ class CfgVehicles
       "Tan"
     };
   };
+  class AlV_MV_GroinPouch_Colorbase: Inventory_Base
+  {
+    rootClassName="AlV_MV_GroinPouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class AlV_MV_ShotgunLoops_Colorbase: Inventory_Base
+  {
+    rootClassName="AlV_MV_ShotgunLoops";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_GrenadePouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_GrenadePouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class ALV_MV_DoubleGrenadePouch_Colorbase: Container_Base
+  {
+    rootClassName="ALV_MV_DoubleGrenadePouch";
+    colorVariants[]=
+    {
+      "Black",
+      "Green",
+      "Tan"
+    };
+  };
+  class AlV_MV_Carabiner_Colorbase: Inventory_Base
+  {
+    rootClassName="AlV_MV_Carabiner";
+    colorVariants[]={};
+  };
 
 // ----------------------  CUSTOM STUFF
   class SRP_Brewstershield: PlateCarrierVest
