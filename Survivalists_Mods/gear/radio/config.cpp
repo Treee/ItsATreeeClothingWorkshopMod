@@ -1514,6 +1514,36 @@ class CfgVehicles
 			soundSet="SRPRadio_IslandGeorge_Automatic_SoundSet1";
 		};
 	};
+  class SRPRadio_CassetteTape_IslandGeorge_Groozy: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Groozy";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_Groozy_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_IslandGeorge_DojoOfTheFalls: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="Dojo Of The Falls";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_DojoOfTheFalls_SoundSet1";
+		};
+	};
+  class SRPRadio_CassetteTape_IslandGeorge_SoInLoveWithYou: SRPRadio_CassetteTape_Base
+	{
+		scope=2;
+		displayName="So In Love With You";
+		descriptionShort="Music Tape - Credit | Island George | https://www.youtube.com/user/allhandsraised | https://www.youtube.com/channel/UCIlyuHANzotW8sJ8DGIVpEA";
+		class CfgCassette
+		{
+			soundSet="SRPRadio_IslandGeorge_SoInLoveWithYou_SoundSet1";
+		};
+	};
 // -------------------------------- ThruItAll
   class SRPRadio_CassetteTape_ThruItAll_LA: SRPRadio_CassetteTape_Base
 	{

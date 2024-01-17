@@ -452,6 +452,18 @@ class CfgSoundShaders
 	{
 		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\IslandGeorge_Automatic.ogg",1}};
 	};
+  class SRPRadio_IslandGeorgeGroozy_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\IslandGeorgeGroozy.ogg",1}};
+	};
+  class SRPRadio_IslandGeorge_DojoOfTheFalls_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\IslandGeorgeDojo_of_the_Falls.ogg",1}};
+	};
+  class SRPRadio_IslandGeorge_SoInLoveWithYou_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
+	{
+		samples[]={{"Survivalists_Sounds\sounds\cassettes\music\data\IslandGeorgeSo_In_Love_With_You.ogg",1}};
+	};
 
   class SRPRadio_ProbabLeigh_Labyrinth_Shader1: SRPRadio_Cassette_Music_SoundShader_Base
 	{
@@ -1066,7 +1078,30 @@ class CfgSoundSets
 			"SRPRadio_IslandGeorge_Automatic_Shader1"
 		};
 	};
-
+  class SRPRadio_IslandGeorge_Groozy_SoundSet1
+	{
+    SoundPlayTime=170;
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorgeGroozy_Shader1"
+		};
+	};
+  class SRPRadio_IslandGeorge_DojoOfTheFalls_SoundSet1
+	{
+    SoundPlayTime=170;
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_DojoOfTheFalls_Shader1"
+		};
+	};
+  class SRPRadio_IslandGeorge_SoInLoveWithYou_SoundSet1
+	{
+    SoundPlayTime=170;
+		soundShaders[] =
+		{
+			"SRPRadio_IslandGeorge_SoInLoveWithYou_Shader1"
+		};
+	};
   class SRPRadio_ThruItAll_LA_SoundSet1
 	{
     SoundPlayTime=149;
