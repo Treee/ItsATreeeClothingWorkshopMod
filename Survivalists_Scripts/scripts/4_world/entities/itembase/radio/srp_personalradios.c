@@ -120,6 +120,10 @@ class SRP_PersonalRadio_Terminal extends StaticTransmitter
 	{
 		PlaySoundSet( m_Sound, SOUND_PAS_TURN_OFF, 0, 0 );
 	}
+  string GetKitName()
+  {
+    return string.Format("%1_Kit", GetType());
+  }
 };
 class SRP_PersonalRadio_TerminalBasic extends SRP_PersonalRadio_Terminal{};
 class SRP_PersonalRadio_TerminalEspen extends SRP_PersonalRadio_Terminal{};

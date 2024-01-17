@@ -24,6 +24,7 @@ modded class ActionConstructor
     actions.Insert(ActionDecreaseVolume);
 
     actions.Insert(SRP_ActionDismantlePlacedObject);
+    actions.Insert(SRP_ActionDismantlePlacedObject_RadioTerminal);
 
     actions.Insert(SRP_ActionCraftOnWorkbench);
     

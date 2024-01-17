@@ -47,6 +47,7 @@ class PowerTool_ElectricHandDrill extends ItemBase
 	{
 		super.SetActions();
     AddAction(SRP_ActionDismantlePlacedObject);
+    AddAction(SRP_ActionDismantlePlacedObject_RadioTerminal);
 	}
 };
 
