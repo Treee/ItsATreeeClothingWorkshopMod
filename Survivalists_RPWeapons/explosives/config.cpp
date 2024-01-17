@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
     {      
       "DZ_Weapons_Explosives",
-      "Survivalists_Weapons_JMC_Explosives"
+      "jmc_objects",
+      "Survivalists_Weapons_JMC_Explosives",
     };
 	};
 };
@@ -69,9 +70,19 @@ class CfgVehicles
     };
   };
 
+  // remove jmc grenades
+  class jmc_grenade_smokey: Grenade_Base
+  {
+    scope=0;
+  };
+  class jmc_grenade_z: Grenade_Base
+  {
+    scope=0;
+  };
+
   class SRP_KitBase;
 
-  class SRP_Dynamite_Stick : Grenade_Base
+  class SRP_Dynamite_Stick: Grenade_Base
   {
 		scope=2;
 		displayName="Dynamite";
@@ -115,7 +126,6 @@ class CfgVehicles
 			};
 		};		
   };
-
   class SRP_Dynamite_Stick_Kit: SRP_KitBase
 	{
     scope=2;
@@ -138,7 +148,6 @@ class CfgVehicles
 			"Survivalists_RPWeapons\explosives\data\dynamite_stick.rvmat"
 		};
 	};
-
   class SRP_Dynamite_Stack: Grenade_Base
   {
 		scope=2;
@@ -179,7 +188,6 @@ class CfgVehicles
 			};
 		};
   };
-
   class SRP_DrugExplosion: Grenade_Base
 	{
 		scope=2;
