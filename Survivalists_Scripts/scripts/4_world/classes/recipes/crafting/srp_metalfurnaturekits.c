@@ -157,7 +157,7 @@ class SRP_Craft_SRP_MetalBarrelKit_OptionsBase extends RecipeBase
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[1] = 100;//-1 = disable check
+		m_MinQuantityIngredient[1] = 20;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -176,7 +176,7 @@ class SRP_Craft_SRP_MetalBarrelKit_OptionsBase extends RecipeBase
 		
 		m_IngredientAddHealth[1] = 0;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -100;// 0 = do nothing
+		m_IngredientAddQuantity[1] = -20;// 0 = do nothing
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------

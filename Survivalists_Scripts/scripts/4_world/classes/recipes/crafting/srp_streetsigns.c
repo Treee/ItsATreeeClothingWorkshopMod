@@ -80,7 +80,7 @@ class SRP_CraftStreetSignKitCaution extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -105,8 +105,8 @@ class SRP_CraftStreetSignKitCaution extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -148,7 +148,7 @@ class SRP_CraftStreetSignKitNoSmoking extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -173,8 +173,8 @@ class SRP_CraftStreetSignKitNoSmoking extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -216,7 +216,7 @@ class SRP_CraftStreetSignKitYield extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -241,8 +241,8 @@ class SRP_CraftStreetSignKitYield extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -284,7 +284,7 @@ class SRP_CraftStreetSignKitPedestrians extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -309,8 +309,8 @@ class SRP_CraftStreetSignKitPedestrians extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -352,7 +352,7 @@ class SRP_CraftStreetSignKitNoBikes extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -377,8 +377,8 @@ class SRP_CraftStreetSignKitNoBikes extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -420,7 +420,7 @@ class SRP_CraftStreetSignKitNoLeftTurn extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -445,8 +445,8 @@ class SRP_CraftStreetSignKitNoLeftTurn extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -489,7 +489,7 @@ class SRP_CraftStreetSignKitSpeedLimit extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -514,8 +514,8 @@ class SRP_CraftStreetSignKitSpeedLimit extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -557,7 +557,7 @@ class SRP_CraftStreetSignKitBikePath extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -582,8 +582,8 @@ class SRP_CraftStreetSignKitBikePath extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -625,7 +625,7 @@ class SRP_CraftStreetSignKitOneWay extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -650,8 +650,8 @@ class SRP_CraftStreetSignKitOneWay extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -693,7 +693,7 @@ class SRP_CraftStreetSignKitHandicapSmall extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -718,8 +718,8 @@ class SRP_CraftStreetSignKitHandicapSmall extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -761,7 +761,7 @@ class SRP_CraftStreetSignKitHandicap extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -786,8 +786,8 @@ class SRP_CraftStreetSignKitHandicap extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -829,7 +829,7 @@ class SRP_CraftStreetSignKitNoParking extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -854,8 +854,8 @@ class SRP_CraftStreetSignKitNoParking extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -897,7 +897,7 @@ class SRP_CraftStreetSignKitHighway extends RecipeBase
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = 10;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
@@ -922,8 +922,8 @@ class SRP_CraftStreetSignKitHighway extends RecipeBase
 		
 		m_IngredientAddHealth[1] = -1;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
-		m_IngredientAddQuantity[1] = -1;// 0 = do nothing
-		m_IngredientDestroy[1] = true;// false = do nothing
+		m_IngredientAddQuantity[1] = -10;// 0 = do nothing
+		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
 		
