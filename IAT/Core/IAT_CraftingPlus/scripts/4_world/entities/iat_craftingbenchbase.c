@@ -165,7 +165,11 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
           {
             // players that brute force recipes will find things to be most expensive.
             int quantityToRemove = Math.Max(requirement.GetRequiredQuantity(), attachment.GetQuantity());
-            attachment.AddQuantity(-quantityToRemove);
+            if (attachment.HasEnergyManager())
+              attachment.GetCompEM().AddEnergy(-quantityToRemove);
+            else
+              attachment.AddQuantity(-quantityToRemove);
+              
             if (attachment.GetQuantityMax() == 1 && quantityToRemove == 1)
               attachment.Delete();
           } 
