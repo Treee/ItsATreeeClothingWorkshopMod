@@ -54,6 +54,7 @@ class CfgPatches
       "DeerIsle_Weapons",      
       "JMC_Mjolnir",
       "CodeLock",
+      "VanillaPlusPlus", // hiding map when restrained
       "Survivalists_Mods",
       "Survivalists_Narcotics",
       "Survivalists_Drink",
