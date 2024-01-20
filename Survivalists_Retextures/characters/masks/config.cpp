@@ -34,6 +34,9 @@ class CfgVehicles
   class SRP_BirdMask_ColorBase;
   class SRP_InariFoxMask_ColorBase;
   class SRP_BoneMonsterMask;
+  class SRP_JadeMask_ColorBase;
+  class SRP_MetalSkullMask_ColorBase;
+  class SRP_CyberMask_ColorBase;
 
   class ALV_MV_Shemagh_Colorbase;
 
@@ -1006,6 +1009,51 @@ class CfgVehicles
 		descriptionShort = "An antique mask. In fairly good shape considering.";
 		hiddenSelectionsTextures[] = {"Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_jaw_indigo_co.paa","Survivalists_Retextures\characters\masks\data\srp_bonemonstermask_skull_indigo_co.paa"};
 	};
+
+  class SRP_JadeMask_Basic: SRP_JadeMask_ColorBase
+  {
+    scope=2;
+  };
+  class SRP_JadeMask_Black: SRP_JadeMask_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\masks\data\srp_jademask_black_co.paa"};
+  };
+  class SRP_JadeMask_Blue: SRP_JadeMask_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\masks\data\srp_jademask_blue_co.paa"};
+  };
+  class SRP_JadeMask_Gold: SRP_JadeMask_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\masks\data\srp_jademask_gold_co.paa"};
+  };
+  class SRP_JadeMask_Purple: SRP_JadeMask_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\masks\data\srp_jademask_purple_co.paa"};
+  };
+  class SRP_JadeMask_Red: SRP_JadeMask_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\masks\data\srp_jademask_red_co.paa"};
+  };
+
+  class SRP_MetalSkullMask_Basic: SRP_MetalSkullMask_ColorBase
+  {
+    scope=2;
+  };
+
+  class SRP_CyberMask_Basic: SRP_CyberMask_ColorBase
+  {
+    scope=2;
+  };
 
   class ALV_MV_Shemagh_Blue: ALV_MV_Shemagh_Colorbase
 	{

@@ -1018,6 +1018,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Omega Speedmaster Moon Watch" (https://skfb.ly/6WR8A) by Mateusz Woliński is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
+- "Cyberpunk Stylized Mask" (https://skfb.ly/oswvJ) by Matthew_Games is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "TAKTICAL MASK" (https://skfb.ly/oMOxN) by Idmenthal is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Jade Mask low poly" (https://skfb.ly/oOz6o) by uv15o6 is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki

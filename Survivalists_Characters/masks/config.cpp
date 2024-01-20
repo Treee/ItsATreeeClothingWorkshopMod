@@ -2294,6 +2294,222 @@ class CfgVehicles
 			};
 		};
 	};
+  class SRP_JadeMask_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Jade Mask";
+		descriptionShort="A polished mask of jade. Hand crafted by an expert.";
+		model="Survivalists_Characters\masks\srp_jademask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
+		};
+    headSelectionsToHide[]=
+		{
+			"Clipping_baseballcap"
+		};
+		weight=500;
+		itemSize[]={2,2};
+		ragQuantity=0;
+		varWetMax=0;
+		heatIsolation=0.25;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Characters\masks\data\srp_jademask_co.paa"};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\masks\srp_jademask_m.p3d";
+			female="Survivalists_Characters\masks\srp_jademask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\masks\data\srp_jademask.rvmat"}},
+						{0.7,	{	"Survivalists_Characters\masks\data\srp_jademask.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\masks\data\srp_jademask_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Characters\masks\data\srp_jademask_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Characters\masks\data\srp_jademask_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_MetalSkullMask_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Metal Skull Mask";
+		descriptionShort="A pig iron forged mask in the form of a skull face.";
+		model="Survivalists_Characters\masks\srp_metalskullmask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
+		};
+		weight=500;
+		itemSize[]={2,2};
+		ragQuantity=0;
+		varWetMax=0;
+		heatIsolation=0.25;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Characters\masks\data\srp_metalskullmask_co.paa"};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\masks\srp_metalskullmask_m.p3d";
+			female="Survivalists_Characters\masks\srp_metalskullmask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\masks\data\srp_metalskullmask.rvmat"}},
+						{0.7,	{	"Survivalists_Characters\masks\data\srp_metalskullmask.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\masks\data\srp_metalskullmask_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Characters\masks\data\srp_metalskullmask_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Characters\masks\data\srp_metalskullmask_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
+
+  class SRP_CyberMask_ColorBase: Clothing
+	{
+		scope=0;
+		displayName="Cyber Punk Mask";
+		descriptionShort="A mask that used to have working electronics inside..";
+		model="Survivalists_Characters\masks\srp_cybermask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
+		};
+		weight=500;
+		itemSize[]={2,2};
+		ragQuantity=0;
+		varWetMax=0;
+		heatIsolation=0.25;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+		hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Characters\masks\data\srp_cybermask_co.paa"};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\masks\srp_cybermask_m.p3d";
+			female="Survivalists_Characters\masks\srp_cybermask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\masks\data\srp_cybermask.rvmat"}},
+						{0.7,	{	"Survivalists_Characters\masks\data\srp_cybermask.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\masks\data\srp_cybermask_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Characters\masks\data\srp_cybermask_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Characters\masks\data\srp_cybermask_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
 
   class SRP_SmokableWearable_Bamboo: Clothing
   {
