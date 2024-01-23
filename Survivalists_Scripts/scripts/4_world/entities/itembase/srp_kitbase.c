@@ -33,8 +33,6 @@ class SRP_Ladder_Opened_Kit extends SRP_KitBase
     return false;
   }  
 };
-class SRP_TireRack_Kit extends SRP_KitBase{};
-
 class SRP_MasonryMetallurgy_KitBase extends SRP_KitBase{};
 
 class SRP_HoneyCombStand_Kit extends SRP_KitBase{};
