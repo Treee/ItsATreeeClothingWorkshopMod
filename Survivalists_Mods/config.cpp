@@ -30,6 +30,7 @@ class CfgPatches
       "Survivalists_Drink",
       "Survivalists_Food",
       "Survivalists_RadioElectronics",
+      "Survivalists_Vehicles"
 		};
 	};
 };

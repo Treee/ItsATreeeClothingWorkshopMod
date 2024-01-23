@@ -1054,6 +1054,18 @@ class CfgVehicles
   {
     scope=2;
   };
+  class SRP_CyberMask_Yokai: SRP_CyberMask_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_cybermask_yokai_co.paa"
+		};
+  };
 
   class ALV_MV_Shemagh_Blue: ALV_MV_Shemagh_Colorbase
 	{

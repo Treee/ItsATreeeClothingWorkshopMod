@@ -55,7 +55,7 @@ class CfgPatches
       "JMC_Mjolnir",
       "CodeLock",
       "VanillaPlusPlus", // hiding map when restrained
-      "Survivalists_Mods",
+      // "Survivalists_Mods",
       "Survivalists_Narcotics",
       "Survivalists_Drink",
       "Survivalists_Food",
