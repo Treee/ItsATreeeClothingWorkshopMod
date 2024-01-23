@@ -295,7 +295,7 @@ class SRP_MetalWorkbenchRecipes extends SRP_RecipeManager
   } 
   SRP_CraftableItem Register_TireRack_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_TireRack", "Tire Storage Rack");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_TireRack_Kit", "Tire Storage Rack");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 

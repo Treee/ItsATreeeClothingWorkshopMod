@@ -600,6 +600,14 @@ class CfgVehicles
 
 
 // ----------------------- CUSTOM STUFF
+  class SRP_TireRack_Kit: SRP_KitBase  
+	{
+		scope=2;
+		displayName="Tire Rack Kit";
+		descriptionShort="A kit for a tire rack that stores wheels.";
+    projectionTypename="SRP_TireRack";
+	};
+  
   class SRP_Collectible_Pin_ColorBase: Inventory_Base
 	{
 		scope=0;

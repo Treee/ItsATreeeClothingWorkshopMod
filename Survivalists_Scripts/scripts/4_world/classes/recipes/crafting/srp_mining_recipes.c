@@ -725,7 +725,8 @@ class Craft_SRP_MetalBucket extends RecipeBase
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//result1
-		AddResult("SRP_MetalBucket_Default");//add results here
+		// AddResult("SRP_MetalBucket_Default");//add results here
+		AddResult("SRP_MetalBucket");//add results here
 
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
