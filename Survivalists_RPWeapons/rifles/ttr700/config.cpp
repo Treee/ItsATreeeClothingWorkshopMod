@@ -54,6 +54,24 @@ class cfgWeapons
 		weight=12000;
 		chamberSize=1;
 		itemSize[]={9,3};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=250;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\rifles\ttr700\data\R700_Chassis.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\rifles\ttr700\data\R700_Chassis.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\rifles\ttr700\data\R700_Chassis_damage.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\rifles\ttr700\data\R700_Chassis_damage.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\rifles\ttr700\data\R700_Chassis_destruct.rvmat"}}
+					};
+				};
+			};
+		};
 	};
   class ttr700_Rare: ttr700
 	{
