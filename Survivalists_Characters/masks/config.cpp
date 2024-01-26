@@ -2319,6 +2319,16 @@ class CfgVehicles
 		{
 			"Clipping_baseballcap"
 		};
+    rootClassName="SRP_JadeMask";
+    colorVariants[]=
+    {
+      "Basic",
+      "Black",
+      "Blue",
+      "Gold",
+      "Purple",
+      "Red",
+    };
 		weight=500;
 		itemSize[]={2,2};
 		ragQuantity=0;

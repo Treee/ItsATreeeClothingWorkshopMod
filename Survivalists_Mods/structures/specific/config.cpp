@@ -8,8 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Structures_Specific",
-      "Survivalists_Mods"
+      "DZ_Structures_Specific"
 		};
 	};
 };

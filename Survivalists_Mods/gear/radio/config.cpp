@@ -8,8 +8,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Radio",      
-      "Survivalists_Mods_Gear_Crafting"
+      "DZ_Radio",
 		};
 	};
 };

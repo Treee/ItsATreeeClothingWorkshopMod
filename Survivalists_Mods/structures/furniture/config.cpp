@@ -9,8 +9,7 @@ class CfgPatches
 		{
       "DZ_Data",
 			"DZ_Structures",
-      "DZ_Structures_Furniture",
-      "Survivalists_Mods"
+      "DZ_Structures_Furniture"
 		};
 	};
 };

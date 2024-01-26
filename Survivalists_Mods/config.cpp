@@ -20,7 +20,6 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Scripts",
-      "DZM_VPPAdminToolsScripts", // VPP logging enhancement
       "Notes_Gear", // WrittenNote from notes
       "deerisle", // for the map (security door)      
       "Deerisle_Security_System", // overriding air craft carrier loot
@@ -29,8 +28,7 @@ class CfgPatches
       "Survivalists_Narcotics",
       "Survivalists_Drink",
       "Survivalists_Food",
-      "Survivalists_RadioElectronics",
-      "Survivalists_Vehicles"
+      "Survivalists_RadioElectronics"
 		};
 	};
 };
