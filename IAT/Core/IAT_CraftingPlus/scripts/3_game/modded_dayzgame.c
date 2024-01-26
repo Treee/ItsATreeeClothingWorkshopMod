@@ -1,13 +1,13 @@
 modded class DayZGame
 {
-  protected ref IAT_TestWorkbenchRecipes m_TestWorckbenchRecipes;
+  protected ref IAT_TestWorkbenchRecipes m_TestWorkbenchRecipes;
 
   void DayZGame()
   {
-    m_TestWorckbenchRecipes = new IAT_TestWorkbenchRecipes();
+    m_TestWorkbenchRecipes = new IAT_TestWorkbenchRecipes();
   }
   IAT_TestWorkbenchRecipes GetIATTestWorkbenchRecipes()
   {
-    return m_TestWorckbenchRecipes;
+    return m_TestWorkbenchRecipes;
   }
 };
