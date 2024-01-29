@@ -1905,6 +1905,19 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Material_Shelter_Sticks", SRP_COLOR.NONE, 10));
     return craftableItem;
   }
+  SRP_CraftableItem Register_JadeMask_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_JadeMask_Basic", "Jade Mask");
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_PreciousStone1", SRP_COLOR.JADE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_PreciousStone2", SRP_COLOR.JADE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_PreciousStone3", SRP_COLOR.JADE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_PreciousStone4", SRP_COLOR.JADE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_PreciousStone5", SRP_COLOR.JADE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Leather", SRP_COLOR.NONE, 4));
+    return craftableItem;
+  }
 //===========================END
 
 };
