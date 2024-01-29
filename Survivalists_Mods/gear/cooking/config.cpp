@@ -17,7 +17,7 @@ class CfgVehicles
   class Inventory_Base;
   class Bottle_Base;
 
-  // ----------------------  BASE GAME OVERRIDES
+// ----------------------  BASE GAME OVERRIDES
   class Pot: Bottle_Base
   {
     itemSize[]={3,2};
@@ -37,7 +37,7 @@ class CfgVehicles
     };
 	};
 
-  // ----------------------  CUSTOM STUFF OVERRIDES
+// ----------------------  CUSTOM STUFF OVERRIDES
 	class SRP_Zippo_ColorBase: Inventory_Base
 	{
 		scope=0;

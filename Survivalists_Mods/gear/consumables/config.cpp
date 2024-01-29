@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-			"DZ_Gear_Consumables"
+			"DZ_Gear_Consumables",
+      "Survivalists_Mods",
 		};
 	};
 };
@@ -168,30 +169,6 @@ class CfgVehicles
       "Tailoring_Leather"
 		};
   };
-  // windstride override
-  class HumanSkull: Inventory_Base
-  {
-    inventorySlot[]+=
-    {
-      "AnimalPelt1",
-      "AnimalPelt2",
-      "AnimalPelt3",
-      "AnimalPelt4",
-      "AnimalPelt5",
-      "AnimalPelt6",
-      "AnimalPelt7",
-      "AnimalPelt8",
-      "AnimalPelt9",
-      "AnimalPelt10"
-    };
-  };
-
-  // wardog note override
-  class WrittenNote: Inventory_Base
-	{
-		inventorySlot[] = {"Paper"};
-	};
-
   // --- taxidermy
   class Pelt_Base: Inventory_Base
   {
@@ -264,23 +241,6 @@ class CfgVehicles
   {
     color="fox";
   };
-  class DUB_Biowolfpelt: Pelt_Base
-  {
-    color="biowolf";
-  };
-  class DUB_Moosepelt: Pelt_Base
-  {
-    color="moose";
-  };
-  class DUB_Humanpelt: Pelt_Base
-  {
-    color="human";
-  };
-  class DUB_AlphaPelt: Pelt_Base
-  {
-    color="alpha";
-  };
-
   // drug workbench
   class HeadlightH7: Inventory_Base
 	{
@@ -323,7 +283,6 @@ class CfgVehicles
 		descriptionShort="This stone is not suitable for building; or anything...a quarry probably has better rocks.";
     inventorySlot[]={};
 	};
-
   class Bark_ColorBase: Inventory_Base
 	{
     itemSize[]={1,2};
@@ -360,7 +319,6 @@ class CfgVehicles
     canBeSplit=1;
     itemSize[]={1,2};
   };
-
   class Roadflare: Inventory_Base
 	{
 		inventorySlot[]+=
@@ -371,8 +329,6 @@ class CfgVehicles
 			"VestGrenadeD",
 		};    
   };
-  
-
 //----------------------------------------------- MODDED STUFF
   // class Jmc_Keycard: Inventory_Base
 	// {
@@ -382,6 +338,44 @@ class CfgVehicles
 	// {
 	// 	scope=0;
 	// };
+  class DUB_Biowolfpelt: Pelt_Base
+  {
+    color="biowolf";
+  };
+  class DUB_Moosepelt: Pelt_Base
+  {
+    color="moose";
+  };
+  class DUB_Humanpelt: Pelt_Base
+  {
+    color="human";
+  };
+  class DUB_AlphaPelt: Pelt_Base
+  {
+    color="alpha";
+  };
+  // windstride override
+  class HumanSkull: Inventory_Base
+  {
+    inventorySlot[]+=
+    {
+      "AnimalPelt1",
+      "AnimalPelt2",
+      "AnimalPelt3",
+      "AnimalPelt4",
+      "AnimalPelt5",
+      "AnimalPelt6",
+      "AnimalPelt7",
+      "AnimalPelt8",
+      "AnimalPelt9",
+      "AnimalPelt10"
+    };
+  };
+  // wardog note override
+  class WrittenNote: Inventory_Base
+	{
+		inventorySlot[] = {"Paper"};
+	};
 
 //----------------------------------------------- CUSTOM STUFF
   class Firewood_Irradiated: Firewood

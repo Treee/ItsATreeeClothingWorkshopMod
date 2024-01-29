@@ -9,7 +9,8 @@ class CfgPatches
 		{
       "DZ_Data",
 			"DZ_Structures",
-      "DZ_Structures_Furniture"
+      "DZ_Structures_Furniture",
+      "Survivalists_Mods_Gear_Crafting"
 		};
 	};
 };

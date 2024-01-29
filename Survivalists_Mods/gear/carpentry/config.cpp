@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Gear_Camping"     
+      "DZ_Gear_Camping",
+      "Survivalists_Mods_Gear_Crafting"   
 		};
 	};
 };

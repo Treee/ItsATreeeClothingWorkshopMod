@@ -11,6 +11,7 @@ class CfgPatches
 			"DZ_Gear_Tools",
       "DZ_Weapons_Melee_Blade", // hatchet
       "DZ_Gear_Navigation",
+      "Survivalists_Mods_Gear_Crafting"
 		};
 	};
 };

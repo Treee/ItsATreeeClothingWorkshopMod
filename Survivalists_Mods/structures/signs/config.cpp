@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"DZ_Data",
-      "DZ_Structures_Signs"
+      "DZ_Structures_Signs",
+      "Survivalists_Mods_Gear_Crafting"
 		};
 	};
 };
