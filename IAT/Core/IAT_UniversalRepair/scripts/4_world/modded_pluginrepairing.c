@@ -2,14 +2,13 @@ modded class PluginRepairing
 {
 	override bool CanRepair( ItemBase repair_kit, Object item, string damage_zone = "" )
 	{    
-    // short circuit things that dont require our extra logic
+    // short circuit vanilla behavior
     if (super.CanRepair(repair_kit, item, damage_zone))
       return true;
     
 		int state = item.GetHealthLevel(damage_zone);
 		if ( state != GameConstants.STATE_RUINED && (item.CanBeRepairedToPristine() && state >= GameConstants.STATE_WORN) || (!item.CanBeRepairedToPristine() && state >= GameConstants.STATE_DAMAGED ) )
 		{
-			// int repair_kit_type = repair_kit.ConfigGetInt( "repairKitType" );
       // pull the list of ints from config 
       array<int> repair_kit_types = new array<int>;
 			repair_kit.ConfigGetIntArray( "repairKitType", repair_kit_types );	
@@ -31,9 +30,8 @@ modded class PluginRepairing
             return true;
           }
         }
-				
 			}
 		}
 		return false;		
 	}
-}
+};

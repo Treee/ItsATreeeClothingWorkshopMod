@@ -1,13 +1,12 @@
-class Repairo extends RecipeBase
+class IAT_UniversalRepair_RepairItem extends RecipeBase
 {	
 	override void Init()
 	{
-		m_Name = "Repairo";
+		m_Name = "Repair";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 0.5;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+    
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
@@ -24,7 +23,7 @@ class Repairo extends RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1
-		InsertIngredient(0,"WoodenStick");//you can insert multiple ingredients this way
+		InsertIngredient(0,"IAT_UniversalRepair_Epoxy");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
