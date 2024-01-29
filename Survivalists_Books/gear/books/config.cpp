@@ -671,7 +671,6 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_Old_Man_and_the_Sea_co.paa"
     };
   };
-
   class SRP_ReadableBook_ZombieSurvivalGuide: SRP_ReadableBook_Colorbase
   {
     scope=2;
@@ -737,8 +736,6 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_blacksmithingguide_co.paa"
     };
   };
-
-
   class SRP_ReadableBook_LnSAffiliateManual: SRP_ReadableBook_Colorbase
   {
     scope=2;
@@ -779,6 +776,19 @@ class CfgVehicles
     };
   };
 
+  class SRP_ReadableBook_NewRomeFirstAid: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="First Aid for New Romans";
+    author="Hannah Miller RN";
+		file="Survivalists_Books\gear\books\data\book_newromans_firstaid.html";		
+    displayName="First Aid for New Romans";
+    descriptionShort="A small book containing useful medical information.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_newromans_firstaid_co.paa"
+    };
+  };
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
 	{
