@@ -1266,8 +1266,8 @@ class CfgVehicles
   class SRP_DeerMask: Clothing // deprecated
 	{
 		scope=2;
-		displayName="Deer Skull Mask";
-		descriptionShort="A hollowed out deer skull";
+		displayName="Deer Skull Mask - Deprecated";
+		descriptionShort="A hollowed out deer skull. Deprecated. Replace with SRP_DeerMask_Basic";
 		model="Survivalists_Characters\masks\SRP_DeerMask_g.p3d";
 		repairableWithKits[]={5,8};
 		repairCosts[]={30,25};
@@ -1429,8 +1429,8 @@ class CfgVehicles
   class SRP_BirdMask: Clothing // deprecated
 	{
 		scope=2;
-		displayName="Bird Mask";
-		descriptionShort="Espen Industries. A tribal bird mask";
+		displayName="Bird Mask - Deprecated";
+		descriptionShort="Espen Industries. A tribal bird mask. Deprecated - Replace with SRP_BirdMask_Basic";
 		model="Survivalists_Characters\masks\srp_birdmask_g.p3d";
 		inventorySlot[]=
 		{
@@ -1692,8 +1692,8 @@ class CfgVehicles
   class SRP_InariFoxMask: Clothing // deprecated
 	{
 		scope=2;
-		displayName="Inari Fox Mask";
-		descriptionShort="Espen Industries. A replica of an Inari Fox mask";
+		displayName="Inari Fox Mask. Deprecated";
+		descriptionShort="Espen Industries. A replica of an Inari Fox mask. Deprecated - Replace with SRP_InariFoxMask_Basic";
 		model="Survivalists_Characters\masks\srp_inarifoxmask_g.p3d";
 		inventorySlot[]=
 		{
@@ -1778,11 +1778,11 @@ class CfgVehicles
 			};
 		};
 	};
-  class SRP_GeishaMask: Clothing
+  class SRP_GeishaMask: Clothing // deprecated
 	{
 		scope=2;
-		displayName="Geisha Mask";
-		descriptionShort="Espen Industries. A replica of an Ghost in the Shell Geisha mask";
+		displayName="Geisha Mask. Deprecated";
+		descriptionShort="Espen Industries. A replica of an Ghost in the Shell Geisha mask. Deprecated. Replace with SRP_GeishaMask_Basic";
 		model="Survivalists_Characters\masks\srp_geishamask_g.p3d";
 		inventorySlot[]=
 		{
@@ -2448,8 +2448,6 @@ class CfgVehicles
 			};
 		};
 	};
-
-
   class SRP_CyberMask_ColorBase: Clothing
 	{
 		scope=0;
@@ -2502,6 +2500,104 @@ class CfgVehicles
 					};
 				};
 			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="Shirt_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="Shirt_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_GeishaMask_ColorBase: Clothing
+	{
+		scope=2;
+		displayName="Geisha Mask";
+		descriptionShort="Espen Industries. A replica of an Ghost in the Shell Geisha mask";
+		model="Survivalists_Characters\masks\srp_geishamask_g.p3d";
+		inventorySlot[]=
+		{
+			"Eyes",
+      "Mask",
+      "SRP_Mask1",
+      "SRP_Mask2",
+      "SRP_Mask3",
+      "SRP_Mask4",
+      "SRP_Mask5",
+      "SRP_Mask6",
+      "SRP_Mask7",
+      "SRP_Mask8",
+      "SRP_Mask9",
+      "SRP_Mask10"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Eyes"
+		};
+    headSelectionsToHide[]=
+		{
+			"Clipping_Welding_Mask"
+		};
+		weight=500;
+		itemSize[]={2,2};
+		ragQuantity=0;
+		varWetMax=0.75;
+		heatIsolation=0.50;
+		repairableWithKits[]={5,2};
+		repairCosts[]={30,25};
+    rootClassName="SRP_GeishaMask";
+    colorVariants[]=
+    {
+      "Basic",
+      "Black",
+      "Gold",
+    };
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "maskeyes"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\masks\data\srp_geishamask_co.paa",
+			"Survivalists_Characters\masks\data\srp_geishamaskeyes_co.paa",
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\masks\srp_geishamask_m.p3d";
+			female="Survivalists_Characters\masks\srp_geishamask_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\masks\data\srp_geishamask.rvmat", "Survivalists_Characters\masks\data\srp_geishamaskeyes.rvmat"}},
+						{0.7,	{	"Survivalists_Characters\masks\data\srp_geishamask.rvmat", "Survivalists_Characters\masks\data\srp_geishamaskeyes.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\masks\data\srp_geishamask.rvmat", "Survivalists_Characters\masks\data\srp_geishamaskeyes.rvmat"}},
+						{0.3,	{	"Survivalists_Characters\masks\data\srp_geishamask.rvmat", "Survivalists_Characters\masks\data\srp_geishamaskeyes.rvmat"}},
+						{0.0,	{	"Survivalists_Characters\masks\data\srp_geishamask.rvmat", "Survivalists_Characters\masks\data\srp_geishamaskeyes.rvmat"}}
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.50;
 		};
 		class AnimEvents
 		{

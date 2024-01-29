@@ -37,6 +37,7 @@ class CfgVehicles
   class SRP_JadeMask_ColorBase;
   class SRP_MetalSkullMask_ColorBase;
   class SRP_CyberMask_ColorBase;
+  class SRP_GeishaMask_ColorBase;
 
   class ALV_MV_Shemagh_Colorbase;
 
@@ -1055,6 +1056,35 @@ class CfgVehicles
     scope=2;
   };
   class SRP_CyberMask_Yokai: SRP_CyberMask_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_cybermask_yokai_co.paa"
+		};
+  };
+
+  class SRP_GeishaMask_Basic: SRP_GeishaMask_ColorBase
+  {
+    scope=2;
+  };
+  class SRP_GeishaMask_Black: SRP_GeishaMask_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\characters\masks\data\srp_geishamask_black_co.paa"
+		};
+  };
+  class SRP_GeishaMask_Gold: SRP_GeishaMask_ColorBase
   {
     scope=2;
     hiddenSelections[]=
