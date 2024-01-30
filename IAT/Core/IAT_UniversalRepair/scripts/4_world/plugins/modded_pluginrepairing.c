@@ -9,7 +9,7 @@ modded class PluginRepairing
 		int state = item.GetHealthLevel(damage_zone);
 		if ( state != GameConstants.STATE_RUINED && (item.CanBeRepairedToPristine() && state >= GameConstants.STATE_WORN) || (!item.CanBeRepairedToPristine() && state >= GameConstants.STATE_DAMAGED ) )
 		{
-      // pull the list of ints from config 
+      // pull the list of ints from config       
       array<int> repair_kit_types = new array<int>;
 			repair_kit.ConfigGetIntArray( "repairKitType", repair_kit_types );	
 			
@@ -33,5 +33,35 @@ modded class PluginRepairing
 			}
 		}
 		return false;		
+	}
+
+  override private float GetKitRepairCost(ItemBase repair_kit, Object item)
+	{
+    // store vanilla checked repair cost
+    float originalRepairCost = super.GetKitRepairCost(repair_kit, item);
+    if (originalRepairCost < 1)
+    {
+      // check our special repair kits for viability
+      array<int> repair_kit_types = new array<int>;
+			repair_kit.ConfigGetIntArray( "repairKitType", repair_kit_types );	
+
+			array<int> allowedRepairKitTypes = new array<int>;
+			item.ConfigGetIntArray( "repairableWithKits", allowedRepairKitTypes );	
+
+      array<float> repairKitCosts = new array<float>;
+		  item.ConfigGetFloatArray("repairCosts", repairKitCosts);
+      
+      foreach (int i, int allowedKitType : allowedRepairKitTypes)
+      {
+        // try to find this repair kit type from the list
+        int repair_kit_types_index = repair_kit_types.Find(allowedKitType);
+        if (repair_kit_types_index > -1)
+        {
+          return repairKitCosts.Get(i);
+        }
+      }
+    }
+    // return whatever vanilla or otherm ods would have.
+    return originalRepairCost;
 	}
 };

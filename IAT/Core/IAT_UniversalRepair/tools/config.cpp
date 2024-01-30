@@ -26,9 +26,9 @@ class CfgVehicles
 		rotationFlags=17;
 		stackedUnit="percentage";
 		quantityBar=1;
-		varQuantityInit=100;
+		varQuantityInit=100000;
 		varQuantityMin=0;
-		varQuantityMax=100;
+		varQuantityMax=100000;
 		weight=20;
 		weightPerQuantityUnit=2;
 		itemSize[]={1,2};
