@@ -1526,7 +1526,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_MetalShanty_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Structures_WoodenShanty_Kit", "Shanty Shack");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Structures_WoodenShanty_Kit", "Metal Shanty Shack Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1569,7 +1569,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_WoodenSingleRoomHouse_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Structures_WoodenShed_Kit", "Single Room House");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Structures_WoodenShed_Kit", "Single Room Shed Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1612,7 +1612,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_WoodenTavern3Floor_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_2floor_tavern_Kit", "Three Floor Tavern");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_2floor_tavern_Kit", "Three Floor Tavern Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1655,7 +1655,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_WoodenThatch1Floor_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_thatch_kit", "Thatch House - Unfinished");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_thatch_kit", "Thatch House Kit - Unfinished");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1740,7 +1740,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_WoodenHouseBridgeEnd_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_bridgeend_Kit", "Tall Bridge End House Kit");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_bridgeend_Kit", "Tall Bridge, End House Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1782,7 +1782,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_WoodenGateHouse_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_gatehouse_Kit", "Wooden Gatehouse");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("Land_srp_wooden_house_gatehouse_Kit", "Wooden Gatehouse Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1824,7 +1824,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }
   SRP_CraftableItem Register_WoodenToriGate_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate_Default_Kit", "Worn Tori Gate");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate_Default_Kit", "Worn Tori Gate Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1854,7 +1854,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }  
   SRP_CraftableItem Register_WoodenToriGateMedium_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate_Medium_Kit", "Worn Tori Gate (Medium)");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate_Medium_Kit", "Worn Tori Gate Kit (Medium)");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1884,7 +1884,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }  
   SRP_CraftableItem Register_WoodenToriGateLarge_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate_Large_Kit", "Worn Tori Gate (Large)");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate_Large_Kit", "Worn Tori Gate Kit (Large)");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1914,7 +1914,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }  
   SRP_CraftableItem Register_WoodenToriGate2_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate2_Default_Kit", "Worn Decorative Tori Gate");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate2_Default_Kit", "Worn Decorative Tori Gate Kit");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1944,7 +1944,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }    
   SRP_CraftableItem Register_WoodenToriGate2Medium_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate2_Medium_Kit", "Worn Decorative Tori Gate (Medium)");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate2_Medium_Kit", "Worn Decorative Tori Gate Kit (Medium)");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1974,7 +1974,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
   }  
   SRP_CraftableItem Register_WoodenToriGate2Large_Recipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate2_Large_Kit", "Worn Decorative Tori Gate (Large)");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_JapaneseToriGate2_Large_Kit", "Worn Decorative Tori Gate Kit (Large)");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
