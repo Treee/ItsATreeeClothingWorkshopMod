@@ -1,25 +1,25 @@
 class CfgMods
 {
-	class IAT_StashExtended
+	class IAT_MusicPlus
 	{
 		type="mod";
 		author="ItsATreee";
-		name="ItsATreee Extended Stash";
-		dir="IAT_StashExtended";    
-    dependencies[] = {"Game"};
+		name="ItsATreee Crafting Plus Enums";
+		dir="IAT_MusicPlus";    
+    dependencies[] = {"World"};
 		class defs
 		{
-      class gameScriptModule
+      class worldScriptModule
 			{
 				value = "";
-        files[] = {"IAT\Core\IAT_StashExtended\scripts\3_game"};			
+        files[] = {"IAT\Core\IAT_MusicPlus\scripts\4_world"};			
       };
 		};
 	};
 };
 class CfgPatches
 {
-  class IAT_StashExtended
+  class IAT_MusicPlus
   {
     units[]={};
     weapons[]={};
