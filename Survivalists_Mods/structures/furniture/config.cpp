@@ -194,6 +194,28 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_Furniture_BattleStandard_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Battle Standard Kit - Pirate Skull";
+		descriptionShort="A placeable Battle Standard kit!";
+    projectionTypename="SRP_Furniture_BattleStandard";
+	};
+  class SRP_Furniture_BattleStandard: HouseNoDestruct
+	{
+		scope=2;
+    storageCategory=1;
+		model="Survivalists_Mods\structures\furniture\srp_battlestandard.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\furniture\data\srp_battlestandard_ca.paa"
+		};
+	};
+
   class SRP_Furniture_WitchTable_Kit: SRP_KitBase
 	{
 		scope=2;

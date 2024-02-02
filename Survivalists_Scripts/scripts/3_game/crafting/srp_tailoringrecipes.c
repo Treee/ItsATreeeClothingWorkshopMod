@@ -39,6 +39,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterBeltMilitaryRecipe());
     craftableItems.Insert(RegisterBeltHipPouchRecipe());
     craftableItems.Insert(RegisterBeltHipHolsterRecipe());
+    craftableItems.Insert(Register_LeatherFlagBelt_Recipe());
     // GLOVES
     craftableItems.Insert(RegisterGlovesWorkingRecipe());
     craftableItems.Insert(RegisterGlovesTacticalRecipe());
@@ -831,6 +832,26 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
   } 
+  SRP_CraftableItem Register_LeatherFlagBelt_Recipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_FlagBelt_Basic", "Leather Flag Belt");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingMachine", SRP_COLOR.NONE, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread1", SRP_COLOR.NONE, 98));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread2", SRP_COLOR.NONE, 23));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread3", SRP_COLOR.NONE, 51));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread4", SRP_COLOR.NONE, 27));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread5", SRP_COLOR.NONE, 75));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt1", SRP_COLOR.COW, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt2", SRP_COLOR.BEAR, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 8));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Sticks", SRP_COLOR.NONE, 5));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }  
 //===========================GLOVES
   SRP_CraftableItem RegisterGlovesWorkingRecipe()
   {

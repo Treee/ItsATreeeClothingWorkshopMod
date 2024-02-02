@@ -9,6 +9,9 @@ class SRP_WoodenFurniture_HouseBase extends House
 class SRP_Furniture_Gazebo_Kit extends SRP_KitBase{};
 class SRP_Furniture_Gazebo extends SRP_WoodenFurniture_HouseBase{};
 
+class SRP_Furniture_BattleStandard_Kit extends SRP_KitBase{};
+class SRP_Furniture_BattleStandard extends SRP_WoodenFurniture_HouseBase{};
+
 class SRP_Furniture_WitchTable_Kit extends SRP_KitBase{};
 // class SRP_Furniture_WitchTable extends SRP_WoodenFurniture_HouseBase{};
 class SRP_Furniture_WitchTable extends SRP_Container_Base
