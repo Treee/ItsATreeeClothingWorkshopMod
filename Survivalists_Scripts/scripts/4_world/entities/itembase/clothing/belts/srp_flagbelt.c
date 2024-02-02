@@ -1,0 +1,1 @@
+class SRP_FlagBelt_ColorBase extends Clothing{};

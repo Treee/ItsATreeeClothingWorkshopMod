@@ -18,6 +18,7 @@ class CfgVehicles
 	class SRP_PatchFlag_ColorBase;
 	class SRP_PatchLogo_ColorBase;
   class SRP_Armband_Base;
+  class SRP_BeltFlag_ColorBase;
 
   class SRP_Armband_Duskar: SRP_Armband_Base
 	{	
@@ -2765,4 +2766,45 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
+
+  class SRP_BeltFlag_Basic: SRP_BeltFlag_ColorBase
+  {
+    scope=2;
+  };
+  class SRP_BeltFlag_Espen: SRP_BeltFlag_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_espen_co.paa"
+		};
+  };
+  class SRP_BeltFlag_Stag: SRP_BeltFlag_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_stag_co.paa"
+		};
+  };
+  class SRP_BeltFlag_LnS: SRP_BeltFlag_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_lns_co.paa"
+		};
+  };
 };

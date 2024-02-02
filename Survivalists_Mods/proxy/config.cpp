@@ -16,7 +16,12 @@ class CfgSlots
 	{
 		name="SRP_FlagBelt";
 		displayName="Belt Flag";
-		selection="SRP_FlagBelt";
+		ghostIcon="set:dayz_inventory image:tf_flag";
+	};
+  class Slot_SRP_VanillaFlag
+	{
+		name="SRP_VanillaFlag";
+		displayName="Flag";
 		ghostIcon="set:dayz_inventory image:tf_flag";
 	};
 //================== Flag Pole
@@ -3157,7 +3162,19 @@ class CfgNonAIVehicles
 		inventorySlot[]={"Fishingrod"};
 		model="Survivalists_Mods\proxy\srp_fishingrod_proxy.p3d";
 	};
-
+  //===================== belt flag
+  class Proxysrp_beltflag_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_FlagBelt"};
+		model="Survivalists_Mods\proxy\srp_beltflag_proxy.p3d";
+	};
+  class Proxysrp_vanillaflag_proxy: ProxyAttachment
+	{
+		scope=2;
+		inventorySlot[]={"SRP_VanillaFlag"};
+		model="Survivalists_Mods\proxy\srp_vanillaflag_proxy.p3d";
+	};
   //===================== pins
   class Proxysrp_flagpole1_proxy: ProxyAttachment
 	{

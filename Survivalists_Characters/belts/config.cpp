@@ -948,7 +948,7 @@ class CfgVehicles
 		displayName="Battle Standard Belt";
     descriptionShort="A leather belt with an attachment for a flag.";
 		model="Survivalists_Characters\belts\srp_flagbelt_g.p3d";
-    attachments[]={"Material_FPole_Flag", "SRP_FlagBelt"};		
+    attachments[]={"SRP_VanillaFlag", "SRP_FlagBelt"};		
 		inventorySlot[]+=
 		{
 			"Extra",
