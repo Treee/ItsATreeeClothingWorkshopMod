@@ -2,7 +2,7 @@ class SRP_ActionDigTarSandsCB extends ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime(10);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(2);
 	}
 };
 
@@ -84,8 +84,9 @@ class SRP_ActionDigTarSands: ActionContinuousBase
     if (rnd > 0.5)
     {
       Class.CastTo(rawTar, GetGame().CreateObjectEx("SRP_Mining_StoneChunk_Tar", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE) );
-      rawTar.SetQuantity(Math.RandomIntInclusive(1,3));
-      MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_MainItem, 5);
+      rawTar.SetQuantity(Math.RandomIntInclusive(1,5));
+      int damageApplied = Math.RandomFloatInclusive(1,5);
+      MiscGameplayFunctions.DealAbsoluteDmg(action_data.m_MainItem, damageApplied);
       action_data.m_Player.GetSoftSkillsManager().AddSpecialty( m_SpecialtyWeight );
     }
 	}

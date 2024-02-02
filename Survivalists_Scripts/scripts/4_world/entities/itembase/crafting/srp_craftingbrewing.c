@@ -440,7 +440,7 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
 	}
   override int GetHeatTimerThreshold()
   {
-    return 10;//5mins
+    return 5;//5mins
     // return 10;//5mins
   }
   override int GetWaterJugConsumptionTotal()
@@ -449,7 +449,7 @@ class SRP_PrefabCrafting_alcoholbrewing extends SRP_BrewingWorkbench
   }
   override int GetAlcoholJugConsumptionTotal()
   {  
-    return Math.RandomIntInclusive(200,550);
+    return Math.RandomIntInclusive(250,1000);
   }
   override int GetPotMashConsumptionTotal()
   {
