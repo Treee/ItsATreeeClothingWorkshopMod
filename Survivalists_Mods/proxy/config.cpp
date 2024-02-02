@@ -11,6 +11,14 @@ class CfgPatches
 
 class CfgSlots
 {
+//================== Flag Belt
+  class Slot_SRP_FlagBelt
+	{
+		name="SRP_FlagBelt";
+		displayName="Belt Flag";
+		selection="SRP_FlagBelt";
+		ghostIcon="set:dayz_inventory image:tf_flag";
+	};
 //================== Flag Pole
   class Slot_SRP_FlagPole1
 	{

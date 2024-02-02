@@ -1024,6 +1024,12 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Jade Mask low poly" (https://skfb.ly/oOz6o) by uv15o6 is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
+- "Someone's flag, maybe the Empire" (https://skfb.ly/o9AUW) by VALIDOL is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Flag Freefire" (https://skfb.ly/oryt8) by Phoenix... is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "European and American game scence~Magic portal" (https://skfb.ly/6TJNF) by chengzijieczj is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki

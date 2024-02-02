@@ -942,5 +942,81 @@ class CfgVehicles
       };
     };
   };
+  class SRP_FlagBelt_ColorBase: Clothing
+	{	
+		scope=0;
+		displayName="Battle Standard Belt";
+    descriptionShort="A leather belt with an attachment for a flag.";
+		model="Survivalists_Characters\belts\srp_flagbelt_g.p3d";
+    attachments[]={"Material_FPole_Flag", "SRP_FlagBelt"};		
+		inventorySlot[]+=
+		{
+			"Extra",
+      "Hips"
+		};
+		itemInfo[]=
+		{
+			"Clothing",
+			"Hips"
+		};
+		weight=12000;
+		itemSize[]={2,4};
+		itemsCargoSize[]={1,2};
+		absorbency=0;
+		heatIsolation=0.40;
+		repairableWithKits[]={3};
+		repairCosts[]={25};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "personality"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\belts\data\srp_flagbelt_co.paa"
+		};	
+		class ClothingTypes
+		{
+			male="Survivalists_Characters\belts\srp_flagbelt_m.p3d";
+			female="Survivalists_Characters\belts\srp_flagbelt_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_Characters\belts\data\srp_flagbelt.rvmat"}},
+						{0.7,	{	"Survivalists_Characters\belts\data\srp_flagbelt.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\belts\data\srp_flagbelt_damage.rvmat"}},
+						{0.3,	{	"Survivalists_Characters\belts\data\srp_flagbelt_damage.rvmat"}},
+						{0.0,	{	"Survivalists_Characters\belts\data\srp_flagbelt_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="SmershVest_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="SmershVest_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+
 //============================== END
 };

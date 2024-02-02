@@ -23,6 +23,7 @@ class CfgVehicles
   class SRP_TacticalHolster_ColorBase;
   class SRP_DualTacticalHolster_ColorBase;
   class SRP_Car_WoodenDerby;
+  class SRP_FlagBelt_ColorBase;
 
   //======================== MAIN MOD RETEXTURES
   class SRP_Elbow_Knee_Pads_Green: SRP_Elbow_Knee_Pads_ColorBase
@@ -165,4 +166,9 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\belts\data\SRP_Tactical_Holster_Belt_CO.paa"
 		};
 	};
+
+  class SRP_FlagBelt_Basic: SRP_FlagBelt_ColorBase
+  {
+    scope=2;
+  };
 };

@@ -83,6 +83,95 @@ class CfgVehicles
       "USADamaged",
     };
 	};
+//------------------------------ FLAG BELT
+class Flag_Base: Inventory_Base
+	{
+		scope=0;
+		displayName="$STR_CfgVehicles_Flag_Base0";
+		descriptionShort="$STR_CfgVehicles_Flag_Base1";
+		model="\dz\gear\camping\DZ_Flag.p3d";
+		itemSize[]={2,2};
+		absorbency=0.89999998;
+		ragQuantity=6;
+		inventorySlot[]=
+		{
+			"Material_FPole_Flag"
+		};
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"dz\gear\camping\data\flag_chern_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=100;
+					healthLevels[]=
+					{						
+						{1,{""}},						
+						{0.69999999,{""}},						
+						{0.5,{""}},						
+						{0.30000001,{""}},						
+						{0,{""}}
+					};
+				};
+				class GlobalArmor
+				{
+					class Projectile
+					{
+						class Health
+						{
+							damage=0;
+						};
+						class Blood
+						{
+							damage=0;
+						};
+						class Shock
+						{
+							damage=0;
+						};
+					};
+					class FragGrenade
+					{
+						class Health
+						{
+							damage=0;
+						};
+						class Blood
+						{
+							damage=0;
+						};
+						class Shock
+						{
+							damage=0;
+						};
+					};
+				};
+			};
+		};
+		class AnimationSources
+		{
+			class folded
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=0;
+			};
+			class unfolded
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+		};
+	};
 //------------------------------ FLAG PATCHES
 	class SRP_PatchFlag_ColorBase: Clothing
 	{
