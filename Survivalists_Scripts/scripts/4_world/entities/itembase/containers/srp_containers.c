@@ -754,7 +754,7 @@ class SRP_WoodenBox_Locked extends SRP_Openable_Container
 {
   override bool CanPutIntoHands(EntityAI parent)
   {
-    return true;
+    return GetInventory().AttachmentCount() == 0 && GetNumberOfItems() == 0;
   }
 };
 
@@ -762,7 +762,7 @@ class SRP_WoodenBox_Long extends SRP_Openable_Container
 {
   override bool CanPutIntoHands(EntityAI parent)
   {
-    return true;
+    return GetInventory().AttachmentCount() == 0 && GetNumberOfItems() == 0;
   }
 };
 
@@ -770,7 +770,7 @@ class SRP_WoodenBox_Square extends SRP_Openable_Container
 {
   override bool CanPutIntoHands(EntityAI parent)
   {
-    return true;
+    return GetInventory().AttachmentCount() == 0 && GetNumberOfItems() == 0;
   }
 };
 class SRP_MedicalCurtains extends SRP_Openable_Container{};
