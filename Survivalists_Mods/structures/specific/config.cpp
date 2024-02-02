@@ -645,4 +645,20 @@ class CfgVehicles
       "Survivalists_Mods\structures\specific\labequipment\data\srp_retroterminal_screen_co.paa"
     };
 	};
+
+  class Land_srp_stoneportal: HouseNoDestruct
+	{
+		scope=1;
+		model="Survivalists_Mods\structures\specific\artifacts\srp_stoneportal.p3d";
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "stones"
+		};
+    hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Mods\structures\specific\artifacts\data\srp_stoneportal_ruins_co.paa",
+      "Survivalists_Mods\structures\specific\artifacts\data\srp_stoneportal_base_co.paa"
+		};
+	};
 };
