@@ -20,7 +20,7 @@ class CfgSoundShaders
 		samples[]={};
 		frequency=1;
 		range=20;
-		volume=2;
+		volume=3;
 	};
 	class SRP_Cassette_KuruResearch_Log_Shader1: SRP_Cassette_KuruResearch_SoundShader_Base
 	{
