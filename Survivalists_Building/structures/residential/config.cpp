@@ -423,6 +423,19 @@ class CfgVehicles
 		model="Survivalists_Building\structures\residential\srp_wooden_house_gatehouse.p3d";
 	};
 
+  class Land_srp_romantemple_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Roman Temple";
+		descriptionShort="The kit for a roman temple.";
+    projectionTypename="Land_srp_romantemple";
+	};
+  class Land_srp_romantemple: SRP_PrefabHouse_Base
+	{
+		scope=1;
+		model="Survivalists_Building\structures\residential\srp_romantemple.p3d";
+	};
+
 
   class Land_srp_treehouse_circular_Kit: SRP_KitBase
 	{
