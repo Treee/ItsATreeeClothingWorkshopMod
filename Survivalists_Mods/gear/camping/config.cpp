@@ -2868,7 +2868,12 @@ class CfgVehicles
 		descriptionShort="An old carpet to decorate your home";
 	};
 //=========================================== end
-
+  class SRP_WoodenBox_Long_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Long Wooden Box Kit";
+		descriptionShort="A kit for placing a long wooden box.";
+	};
   class SRP_WoodenBox_Long: WoodenCrate  // 
 	{
 		scope=2;
@@ -2921,6 +2926,12 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_WoodenBox_Locked_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Locked Wooden Box Kit";
+		descriptionShort="A kit for placing a locked wooden box.";
+	};
   class SRP_WoodenBox_Locked: WoodenCrate  
 	{
 		scope=2;
@@ -2950,6 +2961,12 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_WoodenBox_Square_Kit: SRP_KitBase //new
+	{
+		scope=2;
+		displayName="Square Wooden Box Kit";
+		descriptionShort="A kit for placing a square wooden box.";
+	};
   class SRP_WoodenBox_Square: WoodenCrate  
 	{
 		scope=2;

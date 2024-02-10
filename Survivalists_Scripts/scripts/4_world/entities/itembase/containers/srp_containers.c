@@ -764,6 +764,7 @@ class SRP_WoodenBox_Long extends SRP_Openable_Container
   {
     return GetInventory().AttachmentCount() == 0 && GetNumberOfItems() == 0;
   }
+
 };
 
 class SRP_WoodenBox_Square extends SRP_Openable_Container

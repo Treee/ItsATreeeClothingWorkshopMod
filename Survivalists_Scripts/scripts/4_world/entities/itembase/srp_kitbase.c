@@ -246,6 +246,9 @@ class SRP_LockerMilitary_Gray_Kit extends SRP_KitBase{};
 class SRP_LockerMilitary_Tan_Kit extends SRP_KitBase{};
 
 class SRP_GuitarCase_Blue_Kit extends SRP_KitBase{};
+class SRP_WoodenBox_Locked_Kit extends SRP_KitBase{};
+class SRP_WoodenBox_Long_Kit extends SRP_KitBase{};
+class SRP_WoodenBox_Square_Kit extends SRP_KitBase{};
 
 class SRP_SleepingBag_Basic_Kit extends SRP_KitBase{};
 
