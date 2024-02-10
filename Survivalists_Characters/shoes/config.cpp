@@ -63,6 +63,16 @@ class CfgVehicles
       "Pink",      
     };
   };
+  class DUB_Sketchysshoes: Clothing
+  {
+    rootClassName="DUB_Sketchysshoes";
+    colorVariants[]=
+    {
+      "Red",
+      "Blue_tri",
+      "Green_Tri",         
+    };
+  };
 //-------------------------------------BASE GAME OVERRIDE	
   class AthleticShoes_ColorBase: Clothing
   {
