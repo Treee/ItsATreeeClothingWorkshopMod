@@ -789,6 +789,47 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_newromans_firstaid_co.paa"
     };
   };
+
+  class SRP_ReadableBook_KnightsOath: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Knights Oath";
+    author="Sir Thomas Knight";
+		file="Survivalists_Books\gear\books\data\book_aknightsoath.html";		
+    displayName="The Knights Oath";
+    descriptionShort="A small book containing an oath of knighthood.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_aknightsoath_co.paa"
+    };
+  };
+  class SRP_ReadableBook_KnightsQuest1: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Knights Quest - Part 1";
+    author="Sir Thomas Knight";
+		file="Survivalists_Books\gear\books\data\book_aknightsquest1.html";		
+    displayName="The Knights Quest - Part 1";
+    descriptionShort="A small book detailing tasks.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_aknightsquest1_co.paa"
+    };
+  };
+  class SRP_ReadableBook_KnightsQuest2: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Knights Quest - Part 2";
+    author="Sir Thomas Knight";
+		file="Survivalists_Books\gear\books\data\book_aknightsquest2.html";		
+    displayName="The Knights Quest - Part 2";
+    descriptionShort="A small book detailing tasks.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_aknightsquest2_co.paa"
+    };
+  };
+
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
 	{
