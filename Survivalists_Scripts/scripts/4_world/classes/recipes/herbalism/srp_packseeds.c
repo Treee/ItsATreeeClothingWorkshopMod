@@ -4,7 +4,7 @@ class SRP_PackSeedsIntoPaperBase extends RecipeBase
 	{
 		m_Name = "Pack Seeds";	// action name in game
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
-		m_AnimationLength = 1.5;		// animation length in relative time units
+		m_AnimationLength = 1;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
 		
 		//conditions
@@ -40,7 +40,7 @@ class SRP_PackSeedsIntoPaperBase extends RecipeBase
 		// AddResult("SRP_ConsumableDrug_CocaineTainted");	// recipe result
 		
 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
-		m_ResultSetQuantity[0] = 20;			// result quantity
+		m_ResultSetQuantity[0] = -1;			// result quantity
 		m_ResultSetHealth[0] = -1;			// -1 = do nothing
 		m_ResultInheritsHealth[0] = -1;		// -1 = do nothing
 		m_ResultInheritsColor[0] = -1;		// -1 = do nothing
@@ -56,8 +56,15 @@ class SRP_PackSeedsIntoPaperBase extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    ItemBase seedpack = ItemBase.Cast(GetGame().CreateObjectEx(ingredients[0].GetType() + "Pack", player.GetPosition(), false));
-    results.Insert(seedpack);
-    Debug.Log("SRP_PackSeedsIntoPaperBase " + ingredients[0].GetType() + " Do method called","recipes");
+    if (ingredients[0])
+    {
+      string seedPackName = string.Format("%1Pack", ingredients[0].GetType());
+      ItemBase seedPack;
+      if (Class.CastTo(seedPack, GetGame().CreateObjectEx(seedPackName, player.GetPosition(), ECE_SETUP|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY)))
+      {
+        results.Insert(seedPack);
+        Debug.Log("SRP_PackSeedsIntoPaperBase " + ingredients[0].GetType() + " Do method called","recipes");
+      }
+    }
 	}
 };

@@ -142,7 +142,7 @@ class CfgVehicles
     class Horticulture
 		{
 			ContainsSeedsType="TomatoSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
   };
   class PepperSeedsPack: Inventory_Base
@@ -152,7 +152,7 @@ class CfgVehicles
     class Horticulture
 		{
 			ContainsSeedsType="PepperSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
   };
   class PumpkinSeedsPack: Inventory_Base
@@ -162,7 +162,7 @@ class CfgVehicles
     class Horticulture
 		{
 			ContainsSeedsType="PumpkinSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
   };
   class ZucchiniSeedsPack: Inventory_Base
@@ -172,7 +172,7 @@ class CfgVehicles
     class Horticulture
 		{
 			ContainsSeedsType="ZucchiniSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
   };
   class CannabisSeedsPack: Inventory_Base
@@ -184,7 +184,7 @@ class CfgVehicles
     class Horticulture
 		{
 			ContainsSeedsType="CannabisSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
   };
 // --------------------------- CUSTOM STUFF
@@ -244,7 +244,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="TobaccoSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class UserActions
 		{
@@ -346,7 +346,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="CocaineSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class UserActions
 		{
@@ -451,7 +451,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="BrookmintSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class AnimEvents
 		{
@@ -542,7 +542,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="DockSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class AnimEvents
 		{
@@ -633,7 +633,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="ValerianSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class AnimEvents
 		{
@@ -724,7 +724,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="RibwortSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class AnimEvents
 		{
@@ -815,7 +815,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="RosemarySeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class AnimEvents
 		{
@@ -906,7 +906,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="GreenAmanitaSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class AnimEvents
 		{
@@ -997,7 +997,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="YarrowSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class AnimEvents
 		{
@@ -1088,7 +1088,7 @@ class CfgVehicles
 		class Horticulture
 		{
 			ContainsSeedsType="MintSeeds";
-			ContainsSeedsQuantity=4;
+			ContainsSeedsQuantity=12;
 		};
 		class AnimEvents
 		{
