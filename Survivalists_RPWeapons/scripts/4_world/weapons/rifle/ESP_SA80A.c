@@ -1,5 +1,9 @@
-class ESP_SA80a : RifleBoltLock_Base
+class ESP_SA80a extends RifleBoltFree_Base
 {
+  override RecoilBase SpawnRecoilObject()
+	{
+		return new FamasRecoil(this);
+	}	
   override bool NeedsRailAdapter()
   {
     return true;
