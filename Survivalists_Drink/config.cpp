@@ -140,7 +140,7 @@ class CfgVehicles
     class Nutrition
 		{
 			totalVolume=1;
-			energy=50;
+			energy=0;
 			water=150;
 			nutritionalIndex=1;
 			toxicity=0;
@@ -335,7 +335,7 @@ class CfgVehicles
     class Nutrition
 		{
 			totalVolume=1;
-			energy=50;
+			energy=0;
 			water=150;
 			nutritionalIndex=1;
 			toxicity=0;
@@ -416,7 +416,7 @@ class CfgVehicles
     class Nutrition
 		{
 			totalVolume=1;
-			energy=50;
+			energy=0;
 			water=150;
 			nutritionalIndex=1;
 			toxicity=0;
