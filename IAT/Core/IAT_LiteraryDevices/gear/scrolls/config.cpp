@@ -51,7 +51,6 @@ class CfgVehicles
 		author="Unknown";
 		file="Survivalists_Books\gear\scrolls\data\scroll_Care_Poem.html";
 		displayName="Care";
-		descriptionShort="A rolled up piece of paper tied by some old rags";
 	};
 	class IAT_LiteraryDevices_Scroll_DarknessPoem: IAT_LiteraryDevices_Scroll_Colorbase
 	{
@@ -60,6 +59,5 @@ class CfgVehicles
 		author="Unknown";
 		file="Survivalists_Books\gear\scrolls\data\scroll_Darkness_Among_Us_Poem.html";
 		displayName="The Darkness Among Us";
-		descriptionShort="A rolled up piece of paper tied by some old rags";
 	};
 };
