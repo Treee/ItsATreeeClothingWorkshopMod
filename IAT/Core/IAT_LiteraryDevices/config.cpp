@@ -6,15 +6,15 @@ class CfgMods
 		author="ItsATreee";
 		name="ItsATreee Literary Devices";
 		dir="IAT_LiteraryDevices";    
-    // dependencies[] = {"Game"};
-		// class defs
-		// {
-    //   class gameScriptModule
-		// 	{
-		// 		value = "";
-    //     files[] = {"IAT\Core\IAT_LiteraryDevices\scripts\3_game"};			
-    //   };
-		// };
+    dependencies[] = {"World"};
+		class defs
+		{
+			class worldScriptModule
+			{
+				value = "";
+        files[] = {"IAT/Core/IAT_LiteraryDevices/scripts/4_world"};			
+      };
+		};
 	};
 };
 class CfgPatches
@@ -31,3 +31,4 @@ class CfgPatches
     };
   };
 };
+
