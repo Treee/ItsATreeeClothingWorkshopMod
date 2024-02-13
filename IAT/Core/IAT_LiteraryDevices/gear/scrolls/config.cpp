@@ -43,7 +43,7 @@ class CfgVehicles
 		};
   };
 
-  // ============================================= SCROLLS
+// ============================================= SCROLLS
   class IAT_LiteraryDevices_Scroll_CarePoem: IAT_LiteraryDevices_Scroll_Colorbase
 	{
 		scope=2;
