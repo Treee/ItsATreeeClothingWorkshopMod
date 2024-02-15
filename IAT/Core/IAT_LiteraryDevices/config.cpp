@@ -6,7 +6,7 @@ class CfgMods
 		author="ItsATreee";
 		name="ItsATreee Literary Devices";
 		dir="IAT_LiteraryDevices";    
-    dependencies[] = {"World"};
+    dependencies[] = {"World","Mission"};
 		class defs
 		{
 			class worldScriptModule
@@ -14,6 +14,11 @@ class CfgMods
 				value = "";
         files[] = {"IAT/Core/IAT_LiteraryDevices/scripts/4_world"};			
       };
+      class missionScriptModule
+			{
+				value="";
+				files[]= {"IAT/Core/IAT_LiteraryDevices/scripts/5_mission"};
+			};
 		};
 	};
 };
