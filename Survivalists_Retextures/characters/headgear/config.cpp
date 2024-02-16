@@ -2273,4 +2273,18 @@ class CfgVehicles
       "Survivalists_Retextures\characters\headgear\data\srp_chemicalhelmet_co.paa"
     };
 	};
+  class SRP_ChemicalHelmet_NBC: SRP_ChemicalHelmet_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek",
+      "visor"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\headgear\data\srp_chemicalhelmet_nbc_co.paa",
+      "Survivalists_Retextures\characters\headgear\data\srp_chemicalhelmetvisor_nbc_ca.paa",
+    };
+	};
 };
