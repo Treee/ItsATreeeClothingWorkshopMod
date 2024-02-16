@@ -57,6 +57,8 @@ class CfgVehicles
   class SRP_ModernHelmet_ColorBase;
   class SRP_HornetHelmet_ColorBase;
   class SRP_OfficersHat_ColorBase;
+  class SRP_PirateHat_ColorBase;
+  class SRP_ChemicalHelmet_ColorBase;
 
 //=============================================== Vanilla Override
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
@@ -2172,7 +2174,7 @@ class CfgVehicles
 		};
   };
 
-
+//================================================= SRP Hornet Helmet
   class SRP_HornetHelmet_Default: SRP_HornetHelmet_ColorBase
   {
     scope=2;
@@ -2237,11 +2239,38 @@ class CfgVehicles
 			"Survivalists_Retextures\characters\headgear\data\srp_hornethelmetvisor_yellow_ca.paa",
 		};
   };
-
+//================================================= SRP Officer Hat
   class SRP_OfficersHat_ESPEN: SRP_OfficersHat_ColorBase
 	{
 		scope=2;
 		hiddenSelections[]={"zbytek"};
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\characters\headgear\data\ESPEN_Director_Hat_co.paa"};
+	};
+//================================================= SRP Pirate Hat
+  class SRP_PirateHat_Leather: SRP_PirateHat_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\headgear\data\srp_piratehat_ca.paa"
+    };
+	};
+
+//================================================= SRP Chemical Helmet
+  class SRP_ChemicalHelmet_Basic: SRP_ChemicalHelmet_ColorBase
+	{
+    scope=2;
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Retextures\characters\headgear\data\srp_chemicalhelmet_co.paa"
+    };
 	};
 };
