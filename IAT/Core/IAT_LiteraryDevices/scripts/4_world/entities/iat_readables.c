@@ -22,6 +22,10 @@ class IAT_LiteraryDevices_Scroll_Colorbase extends ItemBook
 class IAT_LiteraryDevices_MultiSelectBook_Colorbase extends ItemBook
 {
   protected ref array<string> m_BooksInArchive;
+  // attempted optimizations
+  // protected int m_LastIndex = -1;
+  // protected string m_LastBookTitle;
+  protected string m_LastBookClassName;
 //========================================= EVENTS
   override void SetActions()
 	{
@@ -72,22 +76,54 @@ class IAT_LiteraryDevices_MultiSelectBook_Colorbase extends ItemBook
   }
   string GetBookTitleByIndex(int index)
   {
+    // short circuit not working for some reason. probly move to book name array that is lazy loaded
+    // short circuit the last book checked so we are not scraping the config each frame
+    // if (m_LastIndex == index)
+    //   return m_LastBookTitle;
+    // if this thing has books, check for valid index
+    if (HasSelectableBooks() && m_BooksInArchive.IsValidIndex(index))
+    {
+      string bookName = m_BooksInArchive.Get(index);
+      // scrape the config
+      string title = "";
+      GetGame().ConfigGetText(string.Format("CfgVehicles %1 %2", bookName, "title"), title);
+      // m_LastIndex = index;
+      // m_LastBookTitle = title;
+      // Print("Scraping the config for book title: " + m_LastBookTitle + " index: " + index);
+      return title;
+    }
+    return "";
+  }
+  string GetBookClassByIndex(int index)
+  {
+    // if this thing has books, check for valid index
     if (HasSelectableBooks() && m_BooksInArchive.IsValidIndex(index))
     {
       return m_BooksInArchive.Get(index);
     }
     return "";
   }
-  ItemBook GetBookByIndex(int index)
+  void SetBookByIndex(int index)
   {
-    string bookName = GetBookTitleByIndex(index);
-    return NULL;
+    string bookName = GetBookClassByIndex(index);
+
+    string title = "";
+    GetGame().ConfigGetText(string.Format("CfgVehicles %1 title", bookName), title);
+    SetBookTitle(title);
+
+    string author = "";
+    GetGame().ConfigGetText(string.Format("CfgVehicles %1 author", bookName), author);
+    SetBookAuthor(author);
+
+    string file = "";
+    GetGame().ConfigGetText(string.Format("CfgVehicles %1 file", bookName), file);
+    SetBookFilePath(file);
+    // Print(string.Format("Title: %1 Author: %2 File: %3 Book: %4", title, author, file, bookName))
   }
   int GetReadableBooksCount()
   {
     return m_BooksInArchive.Count();
   }
-
 };
 
 class IAT_LiteraryDevices_HandHeldTablet_Colorbase extends IAT_LiteraryDevices_MultiSelectBook_Colorbase{};

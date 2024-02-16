@@ -48,11 +48,7 @@ class IAT_ActionSelectReadBook extends ActionSingleUseBase
     {
       if (GetGame().GetMission())
       {
-        ItemBook selectedBook = book.GetBookByIndex(m_VariantID);
-
-        		// m_content.LoadFile( book.ConfigGetString("file") );
-		// m_author.SetText( book.ConfigGetString("author") );
-		// m_title.SetText( book.ConfigGetString("title") );
+        book.SetBookByIndex(m_VariantID);
 
         // disable input and do vanilla dance
         GetGame().GetMission().AddActiveInputExcludes({"menu"});
