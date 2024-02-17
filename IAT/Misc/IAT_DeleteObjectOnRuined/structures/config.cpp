@@ -15,53 +15,40 @@ class CfgPatches
 class CfgVehicles
 {
 	class Inventory_Base;
-	class IAT_DeleteObjectOnRuined_test_wall_board: Inventory_Base
+	class IAT_DeleteObjectOnRuined_FrontDoor_Wall: Inventory_Base
 	{
 		scope=2;
     displayName="test 1";
 		descriptionShort="test 1";
-		model="DZ\structures\Furniture\Decoration\WallBoards\wall_board\wall_board.p3d";
+    carveNavmesh=1;
+    physLayer="item_large";
+		model="IAT\Misc\IAT_DeleteObjectOnRuined\structures\FrontDoor_wall.p3d";
     class DamageSystem
 		{
 			class GlobalHealth
 			{
 				class Health
 				{
-					hitpoints=100;
+					hitpoints=10;
 				};
 			};
 		};
 	};
-	class IAT_DeleteObjectOnRuined_test_wall_board_02: Inventory_Base
+	class IAT_DeleteObjectOnRuined_FrontDoor_Wall_Destroyed: Inventory_Base
 	{
 		scope=2;
     displayName="test 2";
 		descriptionShort="test 2";
-		model="DZ\structures\Furniture\Decoration\WallBoards\wall_board_02\wall_board_02.p3d";
+		model="IAT\Misc\IAT_DeleteObjectOnRuined\structures\FrontDoor_wall_dest.p3d";
+    carveNavmesh=1;
+    physLayer="item_large";
     class DamageSystem
 		{
 			class GlobalHealth
 			{
 				class Health
 				{
-					hitpoints=100;
-				};
-			};
-		};
-	};
-	class IAT_DeleteObjectOnRuined_test_wall_board_03: Inventory_Base
-	{
-		scope=2;
-    displayName="test 3";
-		descriptionShort="test 3";
-		model="DZ\structures\Furniture\Decoration\WallBoards\wall_board_03\wall_board_03.p3d";
-    class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=100;
+					hitpoints=100000;
 				};
 			};
 		};
