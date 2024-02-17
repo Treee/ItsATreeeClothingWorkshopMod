@@ -401,6 +401,28 @@ class CfgSoundShaders
 		};
 	};
   
+  class Survivalists_Mods_Settlement_SoundShader_Base
+	{
+		samples[]={};
+		frequency=1;
+		range=150;
+		rangeCurve[]=
+		{
+			{5,0.998},
+			{10,0.75},
+			{25,0.50},
+			{60,0.45},
+			{200,0.3332}
+		};
+		volume=1.2;
+	};
+  class Survivalists_Mods_Settlement_BellTower_ShoundShader: Survivalists_Mods_Settlement_SoundShader_Base
+	{
+		samples[]=
+		{
+			{"Survivalists_Sounds\sounds\ambience\data\belltower.ogg",1}
+		};
+	};
 };
 class CfgSoundSets
 {
@@ -772,6 +794,14 @@ class CfgSoundSets
 		soundShaders[]=
 		{
 			"Survivalists_Mods_Ambience_ElectricalSounds4_SoundShader"
+		};
+	};
+
+  class Survivalists_Mods_Settlement_BellTower_ShoundSet
+	{
+		soundShaders[]=
+		{
+			"Survivalists_Mods_Settlement_BellTower_ShoundShader"
 		};
 	};
 };

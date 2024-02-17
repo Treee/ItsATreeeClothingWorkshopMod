@@ -7,7 +7,6 @@ class SRP_BellTower_Base extends BuildingSuper
 		super.SetActions();
 		AddAction(SRP_ActionRingBell);
 	}
-
   override bool IsBuilding()
 	{
 		return false;
@@ -15,7 +14,7 @@ class SRP_BellTower_Base extends BuildingSuper
 
   override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx) 
 	{
-    if (rpc_type == SRP_RPC.SRPC_SOUND_BREWING_YIELD)
+    if (rpc_type == SRP_RPC.SRPC_SOUND_BELL_TOLL)
     {
       bool playSound;
       vector pos;
@@ -27,7 +26,7 @@ class SRP_BellTower_Base extends BuildingSuper
       {
         playSound = playCrashSound.param1;
         pos = playCrashSound.param2;
-        sound_set = "ExtinguishByWaterEnd_SoundSet";
+        sound_set = "Survivalists_Mods_Settlement_BellTower_ShoundSet";
       }
       
       if (playSound)
@@ -42,7 +41,7 @@ class SRP_BellTower_Base extends BuildingSuper
   void RequestSoundEvent()
   {
     Param3<bool, vector, int> playSound = new Param3<bool, vector, int>(true, GetPosition(), 0);
-		RPCSingleParam(SRP_RPC.SRPC_SOUND_BREWING_YIELD, playSound, true);
+		RPCSingleParam(SRP_RPC.SRPC_SOUND_BELL_TOLL, playSound, true);
   }
 };
 class Land_Building_srp_belltower_copper extends SRP_BellTower_Base{};

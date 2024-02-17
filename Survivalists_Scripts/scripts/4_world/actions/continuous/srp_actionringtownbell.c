@@ -2,7 +2,7 @@ class SRP_ActionRingBellCB extends ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime(1);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(1.5);
 	}
 }
 
@@ -17,20 +17,21 @@ class SRP_ActionRingBell: ActionContinuousBase
 		m_SpecialtyWeight	= UASoftSkillsWeight.ROUGH_LOW;
 		m_Text = "Ring Bell";
 	}
-	
-	override void CreateConditionComponents()  
-	{	
-		m_ConditionTarget = new CCTCursor(UAMaxDistances.DEFAULT);
-		m_ConditionItem		= new CCINonRuined();
+  override typename GetInputType()
+	{
+		return ContinuousInteractActionInput;
 	}
-	
+	override void CreateConditionComponents()  
+	{
+		m_ConditionItem = new CCINonRuined;
+		m_ConditionTarget	= new CCTCursor(UAMaxDistances.DEFAULT);
+	}
+
 	override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
 	{
-    // Print("trying to riung bell: " + target.GetObject().GetType());
     SRP_BellTower_Base bellTower;
     if (Class.CastTo(bellTower, target.GetObject()))
-    {      
-      Print("looking at bell");
+    {
       return true;
       // return item.CanRingBell();
     }
@@ -42,7 +43,6 @@ class SRP_ActionRingBell: ActionContinuousBase
 		SRP_BellTower_Base bellTower;
     if (Class.CastTo(bellTower, action_data.m_Target.GetObject()))
     {      
-      Print("bell rung");
       bellTower.RequestSoundEvent();
     }
 	}
