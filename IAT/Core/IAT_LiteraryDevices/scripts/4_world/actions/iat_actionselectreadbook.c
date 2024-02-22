@@ -17,7 +17,7 @@ class IAT_ActionSelectReadBook extends ActionSingleUseBase
 	}
   override void OnActionInfoUpdate( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-    IAT_LiteraryDevices_MultiSelectBook_Colorbase multiSelectBook;    
+    IAT_LiteraryDevices_MultiBook_Colorbase multiSelectBook;    
     if (Class.CastTo(multiSelectBook, item))
     {
       if (multiSelectBook.HasSelectableBooks())
@@ -30,7 +30,7 @@ class IAT_ActionSelectReadBook extends ActionSingleUseBase
 	}
   void OnUpdateActions( Object item, Object target, int component_index )
 	{
-    IAT_LiteraryDevices_MultiSelectBook_Colorbase multiSelectBook;    
+    IAT_LiteraryDevices_MultiBook_Colorbase multiSelectBook;    
     if (Class.CastTo(multiSelectBook, item))
 		{
       if (multiSelectBook.HasSelectableBooks())
@@ -42,7 +42,7 @@ class IAT_ActionSelectReadBook extends ActionSingleUseBase
   override void OnExecuteClient( ActionData action_data )
 	{
     PlayerBase player;
-    IAT_LiteraryDevices_MultiSelectBook_Colorbase book;
+    IAT_LiteraryDevices_MultiBook_Colorbase book;
     // sanity check
     if (Class.CastTo(player, action_data.m_Player) && Class.CastTo(book, action_data.m_MainItem))
     {

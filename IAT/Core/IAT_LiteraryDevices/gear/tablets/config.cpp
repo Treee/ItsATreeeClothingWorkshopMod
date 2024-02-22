@@ -63,12 +63,32 @@ class CfgVehicles
   class IAT_LiteraryDevices_HandHeldTablet_Archive1: IAT_LiteraryDevices_HandHeldTablet_Colorbase
   {
     scope=2;
-    booksInArchive[]={
+    displayName="Tablet - Archive 1";
+    booksInArchive[]=
+    {
       "IAT_LiteraryDevices_Book_CodeBreakers",
       "IAT_LiteraryDevices_Book_RadioEtiquette",
       "IAT_LiteraryDevices_Book_BanditryGuide",
       "IAT_LiteraryDevices_Book_NavigationProtocols",
       "IAT_LiteraryDevices_Book_ZombieSurvivalGuide",
+    };
+  };
+  class IAT_LiteraryDevices_HandHeldTablet_Archive2: IAT_LiteraryDevices_HandHeldTablet_Colorbase
+  {
+    scope=2;
+    displayName="Tablet - Archive 2";
+    booksInArchive[]=
+    {
+      "BookBible",
+      "BookTheWarOfTheWorlds",
+      "BookAroundTheWorldIn80Days",
+      "BookCrimeAndPunishment",
+      "BookTheMetamorphosis",
+      "BookTheRaven",
+      "BookTheArtOfWar",
+      "BookRobinsonCrusoe",
+      "BookRussian",
+      "BookRussianCheatSheet",
     };
   };
 

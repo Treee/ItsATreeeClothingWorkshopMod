@@ -4,8 +4,9 @@ modded class BookMenu
   {
     MissionGameplay mission;
     if(Class.CastTo(mission, GetGame().GetMission()))
-    {
+    {      
       mission.RemoveActiveInputExcludes({"menu"}, true);    
+      mission.GetHud().ShowQuickbarUI(false);
     }
   }
 
@@ -20,6 +21,7 @@ modded class BookMenu
       m_content_total_height = m_content.GetContentHeight();
       m_content_pos = 0;
       NextPrevPage(false);
+      GetGame().GetMission().GetHud().ShowQuickbarUI(false);
     }
 	}
 };
