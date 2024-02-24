@@ -10,7 +10,8 @@ modded class NoteMenu
     MissionGameplay mission;
     if(Class.CastTo(mission, GetGame().GetMission()))
     {      
-      mission.RemoveActiveInputExcludes({"menu"}, true);    
+      mission.RemoveActiveInputExcludes({"inventory"}, true);  
+      mission.RemoveActiveInputRestriction(EInputRestrictors.INVENTORY);  
       mission.GetHud().ShowQuickbarUI(true);
     }
   }  
