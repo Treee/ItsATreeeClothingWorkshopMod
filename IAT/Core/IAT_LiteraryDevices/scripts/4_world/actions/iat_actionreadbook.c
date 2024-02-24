@@ -28,8 +28,8 @@ class IAT_ActionReadBook extends ActionSingleUseBase
     {
       if (GetGame().GetMission())
       {
-        // disable input and do vanilla dance
-        GetGame().GetMission().AddActiveInputExcludes({"menu"});
+        // GetGame().GetMission().AddActiveInputExcludes({"menu"});
+        // do vanilla dance
         GetGame().GetMission().OnItemUsed(book, player);
       }
     }
