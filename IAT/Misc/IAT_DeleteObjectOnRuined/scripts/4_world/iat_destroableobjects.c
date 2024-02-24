@@ -1,20 +1,18 @@
 class IAT_DestroyableObject_Base extends ItemBase
 {
-  // override void EEKilled(Object killer)
-  // {
-  //   super.EEKilled(killer);
-  //   GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( ReplaceThenDelete, 200, false);
-  // }
+  override void EEKilled(Object killer)
+  {
+    super.EEKilled(killer);
+    GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( ReplaceThenDelete, 200, false);
+  }
   void ReplaceThenDelete()
   {
-    EntityAI dead_entity = EntityAI.Cast( GetGame().CreateObjectEx( GetDeadItemName(), GetPosition(), ECE_OBJECT_SWAP, RF_ORIGINAL ) );
-		dead_entity.SetOrientation(GetOrientation());
-		this.Delete();
+    EntityAI dead_entity = EntityAI.Cast( GetGame().CreateObjectEx( GetDeadItemName(), GetPosition(), ECE_OBJECT_SWAP ) );
+    dead_entity.SetOrientation(GetOrientation());
+    if ( KeepHealthOnReplace() )
+      dead_entity.SetHealth(GetHealth());
+    this.Delete();
   }
-  override bool ReplaceOnDeath()
-	{
-		return true;
-	}
 	override string GetDeadItemName()
 	{
 		return string.Format("%1_Destroyed", GetType());
@@ -58,7 +56,4 @@ class IAT_DestroyedObject_Base extends ItemBase
 };
 
 class IAT_DeleteObjectOnRuined_FrontDoor_Wall extends IAT_DestroyableObject_Base{};
-class IAT_DeleteObjectOnRuined_FrontDoor_Wall_Destroyed extends IAT_DestroyedObject_Base{}
-
-class IAT_DeleteObjectOnRuined_test_wall_board_02 extends IAT_DestroyableObject_Base{};
-class IAT_DeleteObjectOnRuined_test_wall_board_03 extends IAT_DestroyableObject_Base{};
+class IAT_DeleteObjectOnRuined_FrontDoor_Wall_Destroyed extends IAT_DestroyedObject_Base{};
