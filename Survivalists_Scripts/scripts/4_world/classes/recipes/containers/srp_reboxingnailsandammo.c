@@ -58,6 +58,8 @@ class Craft_SRP_SmallProtectorCase_Syringe extends RecipeBase
     {
       return false;
     }
+    if (ingredients[0] && !ingredients[0].IsEmpty())
+      return false;      
     return true;
 	}
 
@@ -124,6 +126,8 @@ class Craft_SRP_SmallProtectorCase_Nails extends RecipeBase
     {
       return false;
     }
+    if (ingredients[0] && !ingredients[0].IsEmpty())
+      return false;      
     return true;
 	}
 
@@ -190,6 +194,8 @@ class Craft_SRP_SmallProtectorCase_Flare extends RecipeBase
     {
       return false;
     }
+    if (ingredients[0] && !ingredients[0].IsEmpty())
+      return false;      
     return true;
 	}
 
@@ -256,6 +262,8 @@ class Craft_SRP_SmallProtectorCase_Armband extends RecipeBase
     {
       return false;
     }
+    if (ingredients[0] && !ingredients[0].IsEmpty())
+      return false;      
     return true;
 	}
 
