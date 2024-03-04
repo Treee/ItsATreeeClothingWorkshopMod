@@ -4819,7 +4819,7 @@ class CfgVehicles
 		descriptionShort="$STR_UnknownFoodCan1";
     model="\dz\gear\food\food_can.p3d";
 		weight=440;
-    itemSize[]={1,2};
+    itemSize[]={2,1};
     allowOwnedCargoManipulation=1;
     hiddenSelections[]=
 		{
@@ -4831,7 +4831,7 @@ class CfgVehicles
 		};
 		class Cargo
 		{
-			itemsCargoSize[]={1,2};
+			itemsCargoSize[]={2,1};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
@@ -4843,11 +4843,11 @@ class CfgVehicles
 		descriptionShort="$STR_CfgVehicles_Guts1";
 		model="\dz\gear\food\animal_guts.p3d";
 		weight=440;
-		itemSize[]={3,2};
+    itemSize[]={2,1};
     allowOwnedCargoManipulation=1;
 		class Cargo
 		{
-			itemsCargoSize[]={3,2};
+			itemsCargoSize[]={2,1};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
