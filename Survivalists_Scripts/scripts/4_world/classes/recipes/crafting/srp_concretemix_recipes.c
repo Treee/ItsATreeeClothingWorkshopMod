@@ -24,6 +24,7 @@ class Craft_SRP_CraftingMaterial_Mortar_Crude extends RecipeBase
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"Shovel");//you can insert multiple ingredients this way
+		InsertIngredient(0,"FarmingHoe");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -50;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
@@ -101,6 +102,7 @@ class Craft_SRP_CraftingMaterial_Cement_Crude extends RecipeBase
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"Shovel");//you can insert multiple ingredients this way
+		InsertIngredient(0,"FarmingHoe");//you can insert multiple ingredients this way
 		
 		m_IngredientAddHealth[0] = -50;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
