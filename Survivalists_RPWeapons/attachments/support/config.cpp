@@ -116,6 +116,7 @@ class CfgVehicles
 		itemsCargoSize[]={0,0};
 		itemSize[]={3,2};		
     fragility=0.0099999998;
+    canBeSplit=1;
     hiddenSelections[]=
 		{
 			"zbytek"
