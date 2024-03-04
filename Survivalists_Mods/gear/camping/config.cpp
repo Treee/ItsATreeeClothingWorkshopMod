@@ -9,7 +9,8 @@ class CfgPatches
 		{
 			"DZ_Data",
       "DZ_Gear_Camping",
-      "Survivalists_Mods_Gear_Crafting"
+      "BaseBuildingPlus",
+      "Survivalists_Mods_Gear_Crafting",
 		};
 	};
 };
@@ -305,6 +306,15 @@ class CfgVehicles
       "Tailoring_Fabric"
 		};
   };
+// ----------------------  MODDED OVERRIDES
+  class BBP_KIT_BASE;
+	class BBP_Step_Ladder_Kit: BBP_KIT_BASE
+  {
+    scope=0;
+  };
+
+
+
 
 // ------------------------- EVENT STUFF
   class SRP_PortalBone_Kit: SRP_KitBase  
