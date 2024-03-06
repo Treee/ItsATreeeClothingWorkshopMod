@@ -6,6 +6,7 @@ modded class ItemBase
   protected bool m_ItemHasBioImmunity;
   protected bool m_IsMutantIdentifierItem;
   protected bool m_IsCyborgIdentifierItem;
+  protected bool m_IsEventItem = false;
 
   override void InitItemVariables()
 	{
@@ -60,6 +61,11 @@ modded class ItemBase
       {
         player.SetIsPlayerCyborg(false);
       }
+    }
+
+    if (IsEventItem())
+    {
+      Delete();
     }
 	}
   override void OnItemLocationChanged(EntityAI old_owner, EntityAI new_owner)
@@ -254,7 +260,14 @@ modded class ItemBase
   {
     return false;
   }
-	
+  void SetIsEventItem(bool state)
+  {
+    m_IsEventItem = state;
+  }
+	bool IsEventItem()
+  {
+    return m_IsEventItem;
+  }
 	override void OnRightClick()
 	{		
     if (CanBeSplit() && !GetDayZGame().IsLeftCtrlDown() && GetDayZGame().IsLeftShiftDown() && !GetGame().GetPlayer().GetInventory().HasInventoryReservation(this,null))

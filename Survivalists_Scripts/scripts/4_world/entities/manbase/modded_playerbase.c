@@ -200,7 +200,10 @@ modded class PlayerBase
           itemString = string.Format("%1,%2", itemString, item.GetType());
         }
         if (ruinItems)
+        {
           item.AddHealth(-9999999);
+          item.SetIsEventItem(true);
+        }
       }
 		}
     return itemString;
