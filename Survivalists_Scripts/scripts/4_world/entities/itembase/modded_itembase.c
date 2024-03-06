@@ -62,6 +62,34 @@ modded class ItemBase
       }
     }
 	}
+  override void OnItemLocationChanged(EntityAI old_owner, EntityAI new_owner)
+  {
+    super.OnItemLocationChanged(old_owner, new_owner);
+
+    if (IsEmpty())
+      return;
+    if (GetSlotsCountCorrect() == -1)
+      return;
+
+    // handle bags with slots for weapons
+    EntityAI attachedItem;
+    PlayerBase rootPlayer;
+    TStringArray slotNames = GetWeaponAttachmentSlots();
+    foreach (string slotName : slotNames)
+    {
+      // short circuit
+      if (!Class.CastTo(attachedItem, FindAttachmentBySlotName(slotName)))
+        continue;
+      else
+      {
+        if (new_owner && !attachedItem.CanAssignToQuickbar())
+        {
+          if (Class.CastTo(rootPlayer, new_owner.GetHierarchyRootPlayer()))
+            rootPlayer.RemoveQuickBarEntityShortcut(attachedItem);	
+        }
+      }
+    }
+  }
   override void OnInventoryEnter(Man player)
 	{
     super.OnInventoryEnter(player);
@@ -186,6 +214,15 @@ modded class ItemBase
     InitializeBioImmunityVariables();
     InitializeMutantVariables();
     InitializeCyborgVariables();
+  }
+  TStringArray GetWeaponAttachmentSlots()
+  {
+    return {
+      "Melee",
+      "Shoulder",
+      "SRP_GunDerringer",
+      "Pistol",
+    };
   }
 //===================================== HELPERS
   bool IsPistolMagazine() // for pistol mag pouches

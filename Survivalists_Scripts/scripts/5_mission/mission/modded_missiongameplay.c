@@ -5,17 +5,16 @@ modded class MissionGameplay
     super.OnUpdate(timeslice);
 
     Input input = GetGame().GetInput();
-    Man player = GetGame().GetPlayer();
-    PlayerBase pb_player;
+    PlayerBase missionPlayer;
     if ( input.LocalPress("UAOpenVPPMap", false) ) 
     {
       if (instance != null) 
       {
         if (instance.IsMenuOpen()) 
         {
-          if (Class.CastTo(pb_player, player))
+          if (Class.CastTo(missionPlayer, GetGame().GetPlayer()))
           {
-            if (pb_player.IsRestrained())
+            if (missionPlayer.IsRestrained())
             {
               //Hide Menu
               g_Game.HideAll3dMarkers();
@@ -27,13 +26,13 @@ modded class MissionGameplay
         }
       }
     }
-    if ( input.LocalPress("UAToggleVPPMap3DMarkers", false) ) 
+    else if ( input.LocalPress("UAToggleVPPMap3DMarkers", false) ) 
     {
       if (!g_Game.IsKeyboardBusy())
       {
-        if (Class.CastTo(pb_player, player))
+        if (Class.CastTo(missionPlayer, GetGame().GetPlayer()))
         {
-          if (pb_player.IsRestrained())
+          if (missionPlayer.IsRestrained())
           {
             g_Game.TempToggleAll3dMarkers();
           }
