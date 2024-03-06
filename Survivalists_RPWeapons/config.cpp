@@ -6,14 +6,9 @@ class CfgMods
 		author="Turko | Alevaric | ItsATreee";
 		name="Survivalists_RPWeapons";
 		dir="Survivalists_RPWeapons";
-		dependencies[]={"Game","World","Mission"};
+		dependencies[]={"World","Mission"};
 		class defs
 		{
-			class gameScriptModule
-			{
-				value = "";
-        files[] = {"Survivalists_RPWeapons/scripts/3_game"};			
-      };
 			class worldScriptModule
 			{
 				value = "";
@@ -34,6 +29,6 @@ class CfgPatches
     units[] = {};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]=	{ "DZ_Data", "Survivalists_Weapons_JMC"};
+		requiredAddons[]=	{ "DZ_Data", "Survivalists_Weapons_JMC", "Dressupbox_Weapons"};
 	};
 };
