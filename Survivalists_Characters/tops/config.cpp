@@ -12,6 +12,7 @@ class CfgPatches
       "Survivalists_Armbands_Flag",
       "Winter_Parka",
       "Leather_cloak",
+      "Military_Sweater",
       "jmc_deerisle_misc",
       "Dressupbox",
       "Alv_Tac_Gear_Tops"
@@ -64,6 +65,18 @@ class CfgVehicles
       "Black",
       "BlackAndWhite",
       "BlackAndWhite2",
+    };
+  };
+  class Military_Sweater: Clothing
+  {
+    rootClassName="Military_Sweater";
+    colorVariants[]=
+    {
+      "Red",
+      "Blue",
+      "Green",
+      "White",
+      "Black",      
     };
   };
   class DUB_WoolCoat: Clothing
