@@ -74,7 +74,7 @@ class ttsok94 extends RifleBoltFree_Base
       string slotName = InventorySlots.GetSlotName(slotId);
 
       ItemBase weaponOptic;
-      if (slotName == "weaponOpticsAK" || slotName == "weaponOptics")
+      if (slotName == "weaponOpticsAK" || slotName == "weaponOpticsHunting")
       {
         // if the adapter is not attached do not show scope slots
         if (!FindAttachmentBySlotName("AKRISAdapter"))
@@ -83,10 +83,10 @@ class ttsok94 extends RifleBoltFree_Base
         {
           if (slotName == "weaponOpticsAK")
           {
-            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOptics")))
+            if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOpticsHunting")))
               return false;
           }        
-          if (slotName == "weaponOptics")
+          if (slotName == "weaponOpticsHunting")
           {
             if (Class.CastTo(weaponOptic, FindAttachmentBySlotName("weaponOpticsAK")))
               return false;
