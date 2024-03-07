@@ -2466,7 +2466,22 @@ class CfgVehicles
     descriptionShort="A leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouch.p3d";
 		rotationFlags=16;
-    inventorySlot[]={};
+    inventorySlot[]+=
+		{
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "MV_FrontTop1",
+			"MV_FrontBottom1",
+			"MV_FrontBottom2",
+			"MV_FrontBottom3",
+			"MV_FrontBottom4",
+			"MV_RightSide",
+			"MV_LeftSide"
+		};
     attachments[]=
     {
       "SRP_CoinPlatinum",
@@ -2500,7 +2515,22 @@ class CfgVehicles
     descriptionShort="A medieval leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouchmedieval.p3d";
     rotationFlags=16;
-    inventorySlot[]={};
+    inventorySlot[]+=
+		{
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "MV_FrontTop1",
+			"MV_FrontBottom1",
+			"MV_FrontBottom2",
+			"MV_FrontBottom3",
+			"MV_FrontBottom4",
+			"MV_RightSide",
+			"MV_LeftSide"
+		};
     attachments[]=
     {
       "SRP_CoinPlatinum",
@@ -2536,7 +2566,22 @@ class CfgVehicles
     displayName="Small Leather Pouch";
     descriptionShort="A small leather pouch that holds items.";
 		model="Survivalists_Mods\gear\containers\leatherpouchsmall.p3d";
-    inventorySlot[]={};
+    inventorySlot[]+=
+		{
+      "SmallPouch1",
+      "SmallPouch2",
+      "SmallPouch3",
+      "SmallPouch4",
+      "SmallPouch5",
+      "SmallPouch6",
+      "MV_FrontTop1",
+			"MV_FrontBottom1",
+			"MV_FrontBottom2",
+			"MV_FrontBottom3",
+			"MV_FrontBottom4",
+			"MV_RightSide",
+			"MV_LeftSide"
+		};
     attachments[]=
     {
       "SRP_CoinPlatinum",
