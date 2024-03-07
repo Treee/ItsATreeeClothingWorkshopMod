@@ -193,4 +193,94 @@ class CfgVehicles
 		scope=2;
 		model="Survivalists_RPWeapons\explosives\explosion_drugbench.p3d";
 	};
+
+  class SRP_PipeBomb_ColorBase: Grenade_Base
+	{
+		scope=0;
+		displayName="Pipe Bomb";
+		descriptionShort="A crude explosive in the form of a pipe.";
+		model="\dz\gear\tools\metal_pipe.p3d";
+		rotationFlags=12;
+		isMeleeWeapon=1;
+		weight=3200;
+		itemSize[]={1,6};
+		fragility=0.001;
+		itemBehaviour=1;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee"
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"DZ\gear\tools\data\metal_pipe_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"DZ\gear\tools\data\metal_pipe.rvmat"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=50;
+					healthLevels[]=
+					{						
+						{1,{"DZ\gear\tools\data\metal_pipe.rvmat"}},						
+						{0.69999999,{"DZ\gear\tools\data\metal_pipe.rvmat"}},						
+						{0.5,{"DZ\gear\tools\data\metal_pipe_damage.rvmat"}},						
+						{0.30000001,{"DZ\gear\tools\data\metal_pipe_damage.rvmat"}},						
+						{0,{"DZ\gear\tools\data\metal_pipe_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+    class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeBluntLight_2";
+				range=1.7;
+			};
+			class Heavy
+			{
+				ammo="MeleeBluntHeavy_2";
+				range=1.3;
+			};
+			class Sprint
+			{
+				ammo="MeleeBluntHeavy_2";
+				range=4.0999999;
+			};
+		};
+    soundImpactType="metal";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class Grenade_unpin
+				{
+					soundSet="Grenade_unpin_SoundSet";
+					id=201;
+				};
+				class turnOnRadio_Pin
+				{
+					soundSet="Grenade_pin_SoundSet";
+					id=1006;
+				};
+			};
+		};
+	};
+
+  class SRP_PipeBomb_Basic: SRP_PipeBomb_ColorBase
+  {
+    scope=2;
+  };
+
 };
