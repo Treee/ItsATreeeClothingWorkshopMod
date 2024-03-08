@@ -1038,6 +1038,14 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Sci fi military helmet" (https://skfb.ly/6s7HE) by demigodssw is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Helmet" (https://skfb.ly/6Y7Jy) by katsiaryna_kruhlenia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Knight's helmet" (https://skfb.ly/oPOKD) by Viktor\_ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Helmet" (https://skfb.ly/6Y7Jy) by katsiaryna_kruhlenia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Casque viking - Viking helmet" (https://skfb.ly/oo77K) by Anydhark is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki

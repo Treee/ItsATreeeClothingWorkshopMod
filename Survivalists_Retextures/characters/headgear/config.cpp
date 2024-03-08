@@ -59,6 +59,9 @@ class CfgVehicles
   class SRP_OfficersHat_ColorBase;
   class SRP_PirateHat_ColorBase;
   class SRP_ChemicalHelmet_ColorBase;
+  class SRP_KnightsHelmet_ColorBase;
+  class SRP_VikingHornedHelmet_ColorBase;
+  class SRP_BullHelmet_ColorBase;
 
 //=============================================== Vanilla Override
   class BallisticHelmet_MTP: BallisticHelmet_ColorBase
@@ -2286,5 +2289,23 @@ class CfgVehicles
       "Survivalists_Retextures\characters\headgear\data\srp_chemicalhelmet_nbc_co.paa",
       "Survivalists_Retextures\characters\headgear\data\srp_chemicalhelmetvisor_nbc_ca.paa",
     };
+	};
+
+//================================================= SRP KNIGHTS HELMET
+  class SRP_KnightsHelmet_Basic: SRP_KnightsHelmet_ColorBase
+	{
+    scope=2;
+	};
+
+//================================================= SRP VIKING HORNED HELMET
+  class SRP_VikingHornedHelmet_Basic: SRP_VikingHornedHelmet_ColorBase
+	{
+    scope=2;
+	};
+
+//================================================= SRP METAL HELMET
+  class SRP_BullHelmet_Basic: SRP_BullHelmet_ColorBase
+	{
+    scope=2;
 	};
 };

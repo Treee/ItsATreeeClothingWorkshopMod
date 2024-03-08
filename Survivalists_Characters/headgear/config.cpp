@@ -1848,6 +1848,414 @@ class CfgVehicles
 			};
 		};
   };
+  class SRP_KnightsHelmet_ColorBase: Clothing
+  {
+    scope=0;
+    displayName="Knights Helmet";
+    descriptionShort="A forged helmet meant for an honerable knight.";
+    model="Survivalists_Characters\headgear\srp_knightshelmet_g.p3d";
+    repairableWithKits[]={8};
+		repairCosts[]={25};
+		inventorySlot[]={"Headgear"};
+		simulation="clothing";
+		vehicleClass="Clothing";
+		itemInfo[]={"Clothing","Headgear"};
+		weight=1200;
+		itemSize[]={3,3};
+		varWetMax=0.249;
+		heatIsolation=0.75;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Mich2001"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "fabric"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\headgear\data\srp_knightshelmet_co.paa",
+      "Survivalists_Characters\headgear\data\srp_knightshelmet_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\srp_knightshelmet_m.p3d";
+			female="Survivalists_Characters\headgear\srp_knightshelmet_m.p3d";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=125;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_Characters\headgear\data\srp_knightshelmet.rvmat"}},						
+						{0.69999999,{"Survivalists_Characters\headgear\data\srp_knightshelmet.rvmat"}},						
+						{0.5,{"Survivalists_Characters\headgear\data\srp_knightshelmet_damage.rvmat"}},						
+						{0.30000001,{"Survivalists_Characters\headgear\data\srp_knightshelmet_damage.rvmat"}},						
+						{0,{"Survivalists_Characters\headgear\data\srp_knightshelmet_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=1;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.34999999;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.34999999;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.34999999;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.34999999;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+			};
+		};
+		class Protection
+		{
+			biological=0.25;
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="GreatHelm_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+  };
+  class SRP_VikingHornedHelmet_ColorBase: Clothing
+  {
+    scope=0;
+    displayName="Horned Viking Helmet";
+    descriptionShort="A forged helmet with bones affixed as horns.";
+    model="Survivalists_Characters\headgear\srp_vikinghornedhelmet_g.p3d";
+    repairableWithKits[]={8};
+		repairCosts[]={25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
+		rotationFlags=2;
+		weight=1200;
+		itemSize[]={3,3};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.75;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Mich2001"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "bone"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\headgear\data\srp_vikinghornedhelmet_co.paa",
+      "Survivalists_Characters\headgear\data\srp_vikinghornedhelmet_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\srp_vikinghornedhelmet_m.p3d";
+			female="Survivalists_Characters\headgear\srp_vikinghornedhelmet_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=120;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Characters\headgear\data\srp_vikinghornedhelmet.rvmat"}},
+						{0.69999999,	{	"Survivalists_Characters\headgear\data\srp_vikinghornedhelmet.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\headgear\data\srp_vikinghornedhelmet_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Characters\headgear\data\srp_vikinghornedhelmet_damage.rvmat"}},
+						{0,	{	"Survivalists_Characters\headgear\data\srp_vikinghornedhelmet_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+  };
+  class SRP_BullHelmet_ColorBase: Clothing
+  {
+    scope=0;
+    displayName="Bull Helmet";
+    descriptionShort="A forged helmet with bull horns.";
+    model="Survivalists_Characters\headgear\srp_bullhelmet_g.p3d";
+    repairableWithKits[]={8};
+		repairCosts[]={25};
+		inventorySlot[] = {"Headgear"};
+		simulation = "clothing";
+		vehicleClass = "Clothing";
+		itemInfo[] = {"Clothing","Headgear"};
+		rotationFlags=2;
+		weight=1200;
+		itemSize[]={3,3};
+		noNVStrap=1;
+		varWetMax=0.249;
+		heatIsolation=0.75;
+		visibilityModifier=0.94999999;
+		headSelectionsToHide[]=
+		{
+			"Clipping_Mich2001"
+		};
+    hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_Characters\headgear\data\srp_bullhelmet_co.paa"
+		};
+    class ClothingTypes
+		{
+			male="Survivalists_Characters\headgear\srp_bullhelmet_m.p3d";
+			female="Survivalists_Characters\headgear\srp_bullhelmet_m.p3d";
+		};
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=120;
+					healthLevels[]=
+					{
+						{1,	{	"Survivalists_Characters\headgear\data\srp_bullhelmet.rvmat"}},
+						{0.69999999,	{	"Survivalists_Characters\headgear\data\srp_bullhelmet.rvmat"}},
+						{0.5,	{	"Survivalists_Characters\headgear\data\srp_bullhelmet_damage.rvmat"}},
+						{0.30000001,	{	"Survivalists_Characters\headgear\data\srp_bullhelmet_damage.rvmat"}},
+						{0,	{	"Survivalists_Characters\headgear\data\srp_bullhelmet_destruct.rvmat"}}
+					};
+				};
+			};
+			class GlobalArmor
+			{
+				class Projectile
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.5;
+					};
+				};
+				class Melee
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class Infected
+				{
+					class Health
+					{
+						damage=0.25;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25;
+					};
+				};
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=0.5;
+					};
+					class Blood
+					{
+						damage=0;
+					};
+					class Shock
+					{
+						damage=0.25999999;
+					};
+				};
+			};
+		};
+    class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickUpItem
+				{
+					soundSet="pickUpPot_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="BallisticHelmet_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+  };
 
 // -=============================== OLD MVS STUFF  
   class SRP_MilitaryPatrolCap_ColorBase: Clothing
