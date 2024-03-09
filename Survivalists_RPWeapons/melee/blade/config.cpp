@@ -3897,6 +3897,167 @@ class CfgVehicles
     hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_gladius_tyler_co.paa"};
   };
 
+  class SRP_NVWNightsSword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Replica Aribeth's Sword";
+		descriptionShort="'So as you shiver in the cold and the dark, Look into the fire and see in its spark— My eye, Watching over you.' (Excerpt from a traditional trail ballad of the Savage Frontier - composer unknown)";
+		model="Survivalists_RPWeapons\melee\blade\srp_nvwnightssword.p3d";
+		debug_ItemCategory=2;
+		rotationFlags=12;
+		weight=4400;
+		itemSize[]={1,7};
+		fragility=0.001;
+		itemBehaviour=1;
+		openItemSpillRange[]={20,50};
+    repairableWithKits[]={5};
+		repairCosts[]={50};
+		suicideAnim="woodaxe";
+		isMeleeWeapon=1;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_MasterSword",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_nvwnightssword_co.paa",  
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+						{
+							1.0,
+								{
+								"Survivalists_RPWeapons\melee\blade\data\srp_nvwnightssword.rvmat"
+							}
+						},
+						{
+							0.69999999,
+								{
+								"Survivalists_RPWeapons\melee\blade\data\srp_nvwnightssword.rvmat"
+							}
+						},
+						{
+							0.5,
+								{
+								"Survivalists_RPWeapons\melee\blade\data\srp_nvwnightssword_damage.rvmat"
+							}
+						},
+						{
+							0.30000001,
+								{
+								"Survivalists_RPWeapons\melee\blade\data\srp_nvwnightssword_damage.rvmat"
+							}
+						},
+						{
+							0.0,
+								{
+								"Survivalists_RPWeapons\melee\blade\data\srp_nvwnightssword_destruct.rvmat"
+							}
+						}
+					};
+				};
+			};
+		};
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="crowbar_drop_SoundSet";
+					id=898;
+				};
+				class Crowbar_loop
+				{
+					soundSet="Crowbar_loop_SoundSet";
+					id=1119;
+				};
+				class Crowbar_end
+				{
+					soundSet="Crowbar_end_SoundSet";
+					id=1120;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_NVWNightsSword_Basic: SRP_NVWNightsSword_ColorBase
+	{
+    scope=2;
+  };
+  class SRP_NVWNightsSword_the0nlyluci: SRP_NVWNightsSword_ColorBase
+	{
+    scope=2;
+  };
+
 //================================================================== SPEARS
   class SRP_Spear_Pike_ColorBase: Inventory_Base
 	{

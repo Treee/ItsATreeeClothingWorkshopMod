@@ -20,7 +20,7 @@
 /.vscode/
 /bin/
 /Core/
-/DZ/
+/DZ*/
 /graphics/
 /gui/
 /Keys/
@@ -28,6 +28,7 @@
 /Mods/
 /scripts/
 /system/
+/dta/
 
 @*
 Survivalists_Recipes/

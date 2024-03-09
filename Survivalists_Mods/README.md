@@ -1046,6 +1046,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Casque viking - Viking helmet" (https://skfb.ly/oo77K) by Anydhark is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Neverwinter Nights Sword" (https://skfb.ly/OrHC) by Yogensia is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
