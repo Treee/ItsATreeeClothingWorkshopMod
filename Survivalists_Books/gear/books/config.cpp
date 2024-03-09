@@ -775,7 +775,6 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_Memories_Before_2_By_Skylar_Wolfe_co.paa"
     };
   };
-
   class SRP_ReadableBook_NewRomeFirstAid: SRP_ReadableBook_Colorbase
   {
     scope=2;
@@ -789,7 +788,6 @@ class CfgVehicles
       "Survivalists_Books\gear\books\data\book_newromans_firstaid_co.paa"
     };
   };
-
   class SRP_ReadableBook_KnightsOath: SRP_ReadableBook_Colorbase
   {
     scope=2;
@@ -828,6 +826,35 @@ class CfgVehicles
     {
       "Survivalists_Books\gear\books\data\book_aknightsquest2_co.paa"
     };
+  };
+  
+  class SRP_ReadableBook_Necronomnomnom : SRP_ReadableBook_Colorbase
+  {
+      scope=2;
+      title="Necronomnomnom";
+      author="Fisher";
+      file="Survivalists_Books\gear\books\data\book_necronomnomnom.html";		
+      displayName="Necronomnomnom";
+      descriptionShort="A book of The Necronomnomnom.";
+      hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_necronomnomnom_co.paa"};
+  };
+  class SRP_ReadableBook_HistoryOfRome: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="History of the Decline and Fall of the Roman Empire";
+    author="Edward Gibbon";
+    displayName="Decline and Fall of the Roman Empire";
+    descriptionShort="A detailed text on the history of the Roman Empire.";
+    hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_RiseAndFallOfTheRomanEmpire_co.paa"};
+  };
+  class SRP_ReadableBook_PoemsOfNature: SRP_ReadableBook_Colorbase
+  {
+      scope=2;
+      title="PoemsOfNature";
+      author="Sirius";
+      displayName="Poems of Nature";
+      descriptionShort="A book of naturistic poems.";
+      hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_PoemsOfNature_co.paa"};
   };
 
   //===================== Vanilla Override
