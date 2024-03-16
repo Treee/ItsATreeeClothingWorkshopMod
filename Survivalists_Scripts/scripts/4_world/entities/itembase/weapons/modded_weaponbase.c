@@ -35,8 +35,10 @@ modded class Weapon_Base
         // item attached to player
         if (Class.CastTo(playerParent, itemParent.GetHierarchyParent()))
           return true;
-        return false;
-      }           
+        // item in cargo
+        if (itemParent.GetInventory() && itemParent.GetInventory().IsInCargo())                  
+          return false;        
+      }
       return true;
     }
     return false;
