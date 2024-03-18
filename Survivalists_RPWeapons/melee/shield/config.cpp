@@ -150,4 +150,96 @@ class CfgVehicles
   {
     scope=2;
   };
+
+
+  class SRP_WoodenShieldRound_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Round Wooden Shield";
+		descriptionShort="A sturdy wooden shield.";
+		model="Survivalists_RPWeapons\melee\shield\srp_woodenshieldround.p3d";
+    rootClassName="SRP_WoodenShieldRound";
+    colorVariants[]=
+    {
+      "Basic",
+    };
+		hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldround_co.paa"};
+		rotationFlags=12;
+		weight=1500;
+		itemSize[]={3,4};
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		suicideAnim="sword";
+		itemBehaviour=2;
+		openItemSpillRange[]={30,60};
+    repairableWithKits[]={5,8};
+		repairCosts[]={100,100};
+    // class InventorySlotsOffsets
+    // {
+    //   class Shoulder
+    //   {
+    //     position[]={0.05,0.65,-0.25};//FB,UD,LR
+    //     orientation[]={0,200,0};//x,y,z
+    //   };
+    //   class Melee
+    //   {
+    //     position[]={0.01,0.65,0.25};//FB,UD,LR
+    //     orientation[]={0,-200,0};//x,y,z
+    //   };
+    // };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000;
+					healthLevels[]=
+					{
+						{1.0,	{	"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood.rvmat"}},
+            {0.69999999,	{	"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood.rvmat"}},
+            {0.5,	{	"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood_damage.rvmat"}},
+            {0.30000001,	{	"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood_damage.rvmat"}},
+            {0.0,	{	"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="SRP_MeleeBlunt_1H";
+				range=2.2;
+			};
+			class Heavy
+			{
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=2.7;
+			};
+			class Sprint
+			{
+				ammo="SRP_MeleeBlunt_1HHeavy";
+				range=3.7;
+			};
+		};
+	};
+  class SRP_WoodenShieldRound_Basic: SRP_WoodenShieldRound_ColorBase
+  {
+    scope=2;
+  };
 };
