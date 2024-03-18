@@ -843,6 +843,7 @@ class CfgVehicles
     scope=2;
     title="History of the Decline and Fall of the Roman Empire";
     author="Edward Gibbon";
+    file="";
     displayName="Decline and Fall of the Roman Empire";
     descriptionShort="A detailed text on the history of the Roman Empire.";
     hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_RiseAndFallOfTheRomanEmpire_co.paa"};
@@ -850,8 +851,9 @@ class CfgVehicles
   class SRP_ReadableBook_PoemsOfNature: SRP_ReadableBook_Colorbase
   {
       scope=2;
-      title="PoemsOfNature";
+      title="Poems Of Nature";
       author="Sirius";
+      file="";
       displayName="Poems of Nature";
       descriptionShort="A book of naturistic poems.";
       hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_PoemsOfNature_co.paa"};
