@@ -73,13 +73,14 @@ class CfgVehicles
     };
 		hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\shield\data\srp_bloodrootshield_co.paa"};
-		rotationFlags=12;
+		rotationFlags=16;
 		weight=1500;
-		itemSize[]={3,4};
+		itemSize[]={4,5};
 		inventorySlot[]=
 		{
 			"Shoulder",
 			"Melee",
+      "LeftHand1",
       "SRP_Melee1",
       "SRP_Melee2",
       "SRP_Melee3",
@@ -96,19 +97,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={5,8};
 		repairCosts[]={100,100};
-    // class InventorySlotsOffsets
-    // {
-    //   class Shoulder
-    //   {
-    //     position[]={0.05,0.65,-0.25};//FB,UD,LR
-    //     orientation[]={0,200,0};//x,y,z
-    //   };
-    //   class Melee
-    //   {
-    //     position[]={0.01,0.65,0.25};//FB,UD,LR
-    //     orientation[]={0,-200,0};//x,y,z
-    //   };
-    // };
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.06,0.35,-0.04};//FB,UD,LR
+        orientation[]={-90,0,180};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.03,0.35,0.3};//FB,UD,LR
+        orientation[]={-90,0,180};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -165,13 +166,14 @@ class CfgVehicles
     };
 		hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldround_co.paa"};
-		rotationFlags=12;
+		rotationFlags=16;
 		weight=1500;
-		itemSize[]={3,4};
+		itemSize[]={4,4};
 		inventorySlot[]=
 		{
 			"Shoulder",
 			"Melee",
+      "LeftHand1",
       "SRP_Melee1",
       "SRP_Melee2",
       "SRP_Melee3",
@@ -188,19 +190,19 @@ class CfgVehicles
 		openItemSpillRange[]={30,60};
     repairableWithKits[]={5,8};
 		repairCosts[]={100,100};
-    // class InventorySlotsOffsets
-    // {
-    //   class Shoulder
-    //   {
-    //     position[]={0.05,0.65,-0.25};//FB,UD,LR
-    //     orientation[]={0,200,0};//x,y,z
-    //   };
-    //   class Melee
-    //   {
-    //     position[]={0.01,0.65,0.25};//FB,UD,LR
-    //     orientation[]={0,-200,0};//x,y,z
-    //   };
-    // };
+    class InventorySlotsOffsets
+    {
+      class Shoulder
+      {
+        position[]={0.07,0.4,-0.2};//FB,UD,LR
+        orientation[]={-90,0,0};//x,y,z
+      };
+      class Melee
+      {
+        position[]={0.02,0.4,0.15};//FB,UD,LR
+        orientation[]={-90,0,0};//x,y,z
+      };
+    };
 		class DamageSystem
 		{
 			class GlobalHealth

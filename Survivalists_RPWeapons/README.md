@@ -65,3 +65,5 @@
 - "Bloodroot Shield" (https://skfb.ly/oP8pN) by sergeilihandristov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Viking Axe & Shield" (https://skfb.ly/oPLVL) by Hius is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "SHIELD" (https://skfb.ly/oQLSs) by Rijo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

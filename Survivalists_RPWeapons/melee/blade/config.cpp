@@ -4058,6 +4058,138 @@ class CfgVehicles
     scope=2;
   };
 
+
+  class SRP_VikingHandAxe_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Viking Hand Axe";
+		descriptionShort="A forced hand axe in the Norse style.";
+		model="Survivalists_RPWeapons\melee\blade\srp_vikinghandaxe.p3d";
+		debug_ItemCategory=2;
+		build_action_type=10;
+		dismantle_action_type=74;
+		repairableWithKits[]={4};
+		repairCosts[]={18.0};
+		rotationFlags=17;
+		weight=1000;
+		itemSize[]={2,4};
+		fragility=0.01;
+		inventorySlot[]+=
+    {      
+			"Hatchet",
+      "SRP_ToolKit_Hatchet"
+    };
+		lootCategory="Tools";
+		lootTag[]={"Work","Forester","Camping"};
+		itemInfo[]={"Axe"};
+		openItemSpillRange[]={20,40};
+    hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldround_co.paa",  
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=150;
+					healthLevels[]={{1.0,{"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood.rvmat"}},{0.7,{"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood.rvmat"}},{0.5,{"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood_damage.rvmat"}},{0.3,{"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood_damage.rvmat"}},{0.0,{"Survivalists_RPWeapons\melee\shield\data\srp_woodenshieldroundwood_destruct.rvmat"}}};
+				};
+			};
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeSharpLight_2";
+				range=1.4;
+			};
+			class Heavy
+			{
+				ammo="MeleeSharpHeavy_2";
+				range=1.4;
+			};
+			class Sprint
+			{
+				ammo="MeleeSharpHeavy_2";
+				range=3.3;
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="woodaxe";
+		soundImpactType="metal";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class WoodHammer_SoundSet
+				{
+					soundSet="WoodHammer_SoundSet";
+					id=11161;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_VikingHandAxe_Basic: SRP_VikingHandAxe_ColorBase
+  {
+    scope=2;
+  };
+
 //================================================================== SPEARS
   class SRP_Spear_Pike_ColorBase: Inventory_Base
 	{
