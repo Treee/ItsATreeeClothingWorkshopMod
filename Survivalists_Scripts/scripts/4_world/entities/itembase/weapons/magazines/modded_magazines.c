@@ -1,3 +1,11 @@
+//=================================== MODDED MAGAZINES
+  modded class Mag_Kimber_6Rnd
+  {
+    override bool IsPistolMagazine()
+    {
+      return true;
+    }
+  };
 //=================================== PISTOL MAGAZINES
   modded class Mag_FNX45_15Rnd
   {
@@ -298,7 +306,77 @@
       return true;
     }
   };
+  modded class Mag_VSS_10Rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_Saiga_5Rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_Saiga_8Rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
   modded class Mag_VAL_20Rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_PP19_64Rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_CZ550_4rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_CZ550_10rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_SSG82_5rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_M14_10Rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_M14_20Rnd
+  {
+    override bool IsFlatRifleMagazine()
+    {
+      return true;
+    }
+  };
+  modded class Mag_Vikhr_30Rnd
   {
     override bool IsFlatRifleMagazine()
     {

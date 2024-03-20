@@ -55,6 +55,7 @@ class CfgPatches
       "JMC_Mjolnir",
       "CodeLock",
       "VanillaPlusPlus", // hiding map when restrained
+      "DressupBox_Weapons", // for magazine slots
       "Survivalists_Narcotics",
       "Survivalists_Drink",
       "Survivalists_Food",
