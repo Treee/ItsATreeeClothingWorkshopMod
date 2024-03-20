@@ -4063,7 +4063,7 @@ class CfgVehicles
 	{
 		scope=0;
 		displayName="Viking Hand Axe";
-		descriptionShort="A forced hand axe in the Norse style.";
+		descriptionShort="A forged hand axe in the Norse style.";
 		model="Survivalists_RPWeapons\melee\blade\srp_vikinghandaxe.p3d";
 		debug_ItemCategory=2;
 		build_action_type=10;
