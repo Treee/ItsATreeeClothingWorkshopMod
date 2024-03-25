@@ -2,9 +2,12 @@ class BrewingJug_Plastic_ColorBase extends Bottle_Base
 {
 	void BrewingJug_Plastic_ColorBase()
 	{
-		m_LiquidEmptyRate = 250;
+		m_LiquidEmptyRate = 500;
 	}
-	
+  override float GetLiquidThroughputCoef()
+	{
+		return LIQUID_THROUGHPUT_GASOLINECANISTER;
+	}
 	override bool IsContainer()
 	{
 		return true;
