@@ -272,6 +272,37 @@ class CfgVehicles
 			};
 		};
 	};
+  class Fence: BaseBuildingBase
+	{
+    attachments[]+={"LargeBattery"};
+    class GUIInventoryAttachmentsProps
+		{
+			class Base
+			{
+				name = "$STR_CfgVehicles_Fence_Att_Category_Base";
+				description = "";
+				attachmentSlots[] = {"Material_WoodenLogs"};
+				icon = "set:dayz_inventory image:cat_bb_base";
+				selection = "wall";
+			};
+			class Attachments
+			{
+				name = "$STR_CfgVehicles_Fence_Att_Category_Attachments";
+				description = "";
+				attachmentSlots[] = {"Wall_Camonet","Wall_Barbedwire_1","Wall_Barbedwire_2","Att_CombinationLock", "LargeBattery"};
+				icon = "set:dayz_inventory image:cat_bb_attachments";
+				selection = "wall";
+			};
+			class Material
+			{
+				name = "$STR_CfgVehicles_Fence_Att_Category_Materials";
+				description = "";
+				attachmentSlots[] = {"Material_Nails","Material_WoodenPlanks","Material_MetalSheets","Material_MetalWire"};
+				icon = "set:dayz_inventory image:cat_bb_material";
+				selection = "wall";
+			};
+		};
+  };
 
   class SRP_TerritoryFlag_Crafting: TerritoryFlag
   {
