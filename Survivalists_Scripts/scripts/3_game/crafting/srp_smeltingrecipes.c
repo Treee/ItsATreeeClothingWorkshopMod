@@ -1512,7 +1512,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
 //===========================BULLETS
   SRP_CraftableItem RegisterBulletsCopperRecipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BulletCrafting_Copper", "Bullet Tips - Copper");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BulletCrafting_Copper", "Bullet Tips - Copper", 40);
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.COPPER, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.COPPER, 1));        
 
@@ -1520,7 +1520,7 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
   }  
   SRP_CraftableItem RegisterBulletsIronRecipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BulletCrafting_Copper", "Bullet Tips - Iron");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BulletCrafting_Copper", "Bullet Tips - Iron", 40);
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.IRON, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.IRON, 1));        
 

@@ -47,15 +47,58 @@ class SRP_ActionCraftOnWorkbench extends ActionSRPVariantIdOption
       // because players are fucking huge ass babies
 			// craftingWorkbench.DecreaseHealth( craftingWorkbench.GetCraftingDamage(), false );
       // Print(string.Format("Creating %1 from inded %2",newItem.GetDisplayName(), variantId));
+
+      int numObjects = 1;
+      int itemQuantityMax = 1;
+      // always craft the first item
       Object newObject = GetGame().CreateObjectEx(newItem.GetItemClassName(), craftingWorkbench.GetMemoryPointPosition("item_spawn_position"), ECE_SETUP|ECE_NOSURFACEALIGN|ECE_KEEPHEIGHT|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY);
+      
+      // handle first item quantity
+      Magazine ammo;
+      ItemBase newItemBase;
       if (newItem.GetItemQuantity() > 1)
       {
-        Magazine ammo;
-        ItemBase newItemBase;
         if (Class.CastTo(ammo, newObject))
-          ammo.ServerSetAmmoCount(newItem.GetItemQuantity());
+        {
+          itemQuantityMax = ammo.GetAmmoMax();
+          ammo.ServerSetAmmoCount(Math.Min(newItem.GetItemQuantity(), itemQuantityMax));
+        }
         else if (Class.CastTo(newItemBase, newObject))
-          newItemBase.SetQuantity(newItem.GetItemQuantity());
+        {
+          itemQuantityMax = newItemBase.GetQuantityMax();
+          newItemBase.SetQuantity(Math.Min(newItem.GetItemQuantity(), itemQuantityMax));
+        }
+
+        if (itemQuantityMax < newItem.GetItemQuantity())
+        {
+          numObjects = newItem.GetItemQuantity() / itemQuantityMax;
+          int remaineder = newItem.GetItemQuantity() % itemQuantityMax;
+          if (remaineder > 0)
+            numObjects++;
+        }
+
+        // PrintFormat("numobj: %1 quantmax: %2 recipequant: %3", numObjects, itemQuantityMax, newItem.GetItemQuantity());
+        // when we have more than 1 object to spawn
+        if (numObjects > 1)
+        {
+          // get the total quantity
+          int remainingQuantity = newItem.GetItemQuantity();
+          // in the case of last item not max size, get the remaining quantity
+          int itemCount = 0;
+          // Print("need to make another item");
+          for(int i = 1; i < numObjects; i++)
+          {
+            // Print("making new item");
+            newObject = GetGame().CreateObjectEx(newItem.GetItemClassName(), craftingWorkbench.GetMemoryPointPosition("item_spawn_position"), ECE_SETUP|ECE_NOSURFACEALIGN|ECE_KEEPHEIGHT|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY);
+            // subtract existing
+            remainingQuantity = remainingQuantity - itemQuantityMax;
+            itemCount = Math.Min(remainingQuantity, itemQuantityMax);
+            if (Class.CastTo(ammo, newObject))
+              ammo.ServerSetAmmoCount(itemCount);
+            else if (Class.CastTo(newItemBase, newObject))
+              newItemBase.SetQuantity(itemCount);
+          }
+        }
       }
     }		
 	}
