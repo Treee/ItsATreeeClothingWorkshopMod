@@ -283,7 +283,7 @@ class Craft_SRP_SalvageClothing extends Craft_SRP_ClothingThreadBase   // Our ex
 		//ingredient 2	
 		InsertIngredient(1,"LeatherSewingKit");	// primary ingredient
 		InsertIngredient(1,"SewingKit");	// primary ingredient
-		m_MinQuantityIngredient[1] = -35;
+		m_MinQuantityIngredient[1] = 35;
 		m_IngredientAddQuantity[1] = -35;// 0 = do nothing
 	}
 };
