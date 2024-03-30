@@ -1,4 +1,3 @@
-
 modded class PluginRecipesManager
 {	
 	override void RegisterRecipies()
@@ -328,6 +327,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_Craft_MetalGunWallFence);
       RegisterRecipe(new SRP_Craft_MetalMeleeWallFence);
       // RegisterRecipe(new SRP_Craft_Anvil);
+      RegisterRecipe(new Craft_SRP_TailorFabric);      
       
       RegisterRecipe(new Craft_SRP_StreetLightKit);		
       RegisterRecipe(new Craft_SRP_StreetLightSlim_Kit);		
