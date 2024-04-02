@@ -145,6 +145,96 @@ class CfgVehicles
 		};
 		color="USADamaged";
 	};
+  class Flag_Bisexual: Flag_Base
+	{
+		scope=2;
+		color="Bisexual";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_bi_co.paa"};
+	};
+  class Flag_Japan: Flag_Base
+	{
+		scope=2;
+		color="Japan";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_Japan_co.paa"};
+	};
+  class Flag_Japan1: Flag_Base
+	{
+		scope=2;
+		color="Japan1";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_Japan1_co.paa"};
+	};
+  class Flag_Pride1: Flag_Base
+	{
+		scope=2;
+		color="Pride1";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_Pride1_co.paa"};
+	};
+  class Flag_Hetero: Flag_Base
+	{
+		scope=2;
+		color="Hetero";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_hetero_co.paa"};
+	};
+  class Flag_Ireland: Flag_Base
+	{
+		scope=2;
+		color="Ireland";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_ireland_co.paa"};
+	};
+  class Flag_Pride2: Flag_Base
+	{
+		scope=2;
+		color="Pride2";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_Pride2_co.paa"};
+	};
+  class Flag_JeMeSouviens: Flag_Base
+	{
+		scope=2;
+		color="JeMeSouviens";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_JeMeSouviens_co.paa"};
+	};
+  class Flag_Jurrasic: Flag_Base
+	{
+		scope=2;
+		color="Jurrasic";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_Jurassic_co.paa"};
+	};
+  class Flag_MaineState: Flag_Base
+	{
+		scope=2;
+		color="MaineState";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_MaineState_co.paa"};
+	};
+  class Flag_Pride3: Flag_Base
+	{
+		scope=2;
+		color="Pride3";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_Pride3_co.paa"};
+	};
+  class Flag_Pride4: Flag_Base
+	{
+		scope=2;
+		color="Pride4";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_pride4_co.paa"};
+	};
+  class Flag_Turkey: Flag_Base
+	{
+		scope=2;
+		color="Turkey";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_Turkey_co.paa"};
+	};
+  class Flag_Ukraine: Flag_Base
+	{
+		scope=2;
+		color="Ukraine";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_Ukraine_co.paa"};
+	};
+  class Flag_QuebecWeed: Flag_Base
+	{
+		scope=2;
+		color="QuebecWeed";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_ViveLeQuebecWeed_co.paa"};
+	};
   
 //================================================ MODDED  
   class SRP_Guitar_Alpocalypse_Blue: SRP_Guitar_Alpocalypse
