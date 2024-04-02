@@ -121,6 +121,19 @@ class SRP_Dynamite_Stack extends Grenade_Base
 		{
       DestroyParticle(m_ParticleSmoke);
     }
+    
+    if (GetGame().IsDedicatedServer())
+    {
+      float chance = Math.RandomFloatInclusive(0,1);
+      if (chance > 0.65)
+      {
+        array<string> chunks = GetMiningStoneChunks();
+        foreach(string chunk : chunks)
+        {
+          Object newObject = GetGame().CreateObjectEx(chunk, GetPosition(), ECE_SETUP|ECE_NOSURFACEALIGN|ECE_KEEPHEIGHT|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY);
+        }
+      }
+    }
     super.OnExplode();
   }
 
@@ -152,4 +165,47 @@ class SRP_Dynamite_Stack extends Grenade_Base
 
   void ~SRP_Dynamite_Stack() {};
 	
+  //values between 0-1
+  array<string> GetMiningStoneChunks()
+  {
+    SRPMMConfig config;
+    MiningOreConfig miningConfig;
+    array<string> stoneChunks = new array<string>;
+    if ( Class.CastTo(config, GetDayZGame().GetSRPMMConfig()) && Class.CastTo(miningConfig, config.IsInMiningQuarry(GetPosition())) )
+    {
+      float chance = Math.RandomFloatInclusive(0,1);
+      // Print("chance: " + chance);
+      if (chance >= Math.RandomFloatInclusive(0.5,0.75))
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Platinum");
+        chance = Math.RandomFloatInclusive(0,1);
+        // Print("plat chance: " + chance);
+      }
+      if (chance >= Math.RandomFloatInclusive(0.5,0.75))
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Gold");      
+        chance = Math.RandomFloatInclusive(0,1);
+        // Print("gold chance: " + chance);
+      }
+      if (chance >= Math.RandomFloatInclusive(0.5,0.75))
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Iron");
+        chance = Math.RandomFloatInclusive(0,1);
+        // Print("iron chance: " + chance);
+      }
+      if (chance >= Math.RandomFloatInclusive(0.5,0.75))
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Copper");
+        chance = Math.RandomFloatInclusive(0,1);
+        // Print("copper chance: " + chance);
+      }
+      if (chance >= Math.RandomFloatInclusive(0.5,0.75))
+      {
+        stoneChunks.Insert("SRP_Mining_StoneChunk_Tin");      
+        chance = Math.RandomFloatInclusive(0,1);
+        // Print("tin chance: " + chance);    
+      }
+    }
+    return stoneChunks;
+  }
 }
