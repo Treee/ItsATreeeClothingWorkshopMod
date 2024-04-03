@@ -411,6 +411,20 @@ class Land_SRP_Fortifications_PalisadeWall_Gate extends SRP_DefaultHouse
     return true;
   }  
 };
+class Land_SRP_Fortifications_PalisadeWall_GateFarm extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class Land_SRP_Fortifications_PalisadeWall_GateWarehouse extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
 class Land_SRP_Fortifications_PalisadeWall_Fence extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
