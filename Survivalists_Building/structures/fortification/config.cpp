@@ -297,6 +297,72 @@ class CfgVehicles
       };
     };
 	};
+  class Land_SRP_Fortifications_PalisadeWall_GateFarm_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Farm Gate";
+		descriptionShort="A kit for building a farm gate.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_GateFarm";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_GateFarm: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallgatefarm.p3d";
+    class Doors
+		{
+      class Doors1
+      {
+        displayName="Door 1";
+        component="doors1";
+        soundPos="doors1_action";
+        animPeriod=1;
+        initPhase=0;
+        initOpened=0.69999999;
+      };
+      class Doors2
+      {
+        displayName="Door 2";
+        component="doors2";
+        soundPos="doors2_action";
+        animPeriod=1;
+        initPhase=0;
+        initOpened=0.69999999;
+      };
+    };
+	};
+  class Land_SRP_Fortifications_PalisadeWall_GateWarehouse_Kit: SRP_KitBase
+	{
+		scope=2;
+		displayName="Palisade Wall Kit - Warehouse Gate";
+		descriptionShort="A kit for building a warehouse gate.";
+    projectionTypename="Land_SRP_Fortifications_PalisadeWall_GateWarehouse";
+	};
+  class Land_SRP_Fortifications_PalisadeWall_GateWarehouse: SRP_PrefabFortification_Base
+	{
+		scope=2;
+		model="Survivalists_Building\structures\fortification\srp_palisade_wallgatewarehouse.p3d";
+    class Doors
+		{
+      class Doors1
+      {
+        displayName="Door 1";
+        component="doors1";
+        soundPos="doors1_action";
+        animPeriod=1;
+        initPhase=0;
+        initOpened=0.69999999;
+      };
+      class Doors2
+      {
+        displayName="Door 2";
+        component="doors2";
+        soundPos="doors2_action";
+        animPeriod=1;
+        initPhase=0;
+        initOpened=0.69999999;
+      };
+    };
+	};
   class Land_SRP_Fortifications_PalisadeWall_Fence_Kit: SRP_KitBase
 	{
 		scope=2;
