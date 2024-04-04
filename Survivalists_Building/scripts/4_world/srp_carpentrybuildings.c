@@ -593,6 +593,28 @@ class SRP_Furniture_StoneStatue_StJacob_Default extends SRP_DefaultHouse
     return true;
   }  
 };
+
+class SRP_Military_Turret_Bmg extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Military_Turret_Machine extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
+class SRP_Military_Turret_DoubleRailGun extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return true;
+  }  
+};
 //================= INVENTORY VISIBLE CAN BE DISMANTLED
 class SRP_Furniture_TerritoryFlag_Cosmetic extends SRP_DefaultHouse
 {
