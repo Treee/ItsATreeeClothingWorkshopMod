@@ -63,7 +63,7 @@ modded class ItemActionsWidget
 						else if (wpn.GetInternalMagazineMaxCartridgeCount(i) > 0)
 						{
 							mag_quantity = wpn.GetInternalMagazineCartridgeCount(i);
-              mag_quantity_max = mag_quantity;
+              mag_quantity_max = wpn.GetInternalMagazineMaxCartridgeCount(i);
 						}
 					
 					}
@@ -91,7 +91,8 @@ modded class ItemActionsWidget
         value = 0;
       else
         value = Math.Round((mag_quantity / mag_quantity_max) * 100);
-        
+      
+      // PrintFormat("mag: %1 magMax: %2", mag_quantity, mag_quantity_max);
       progressBar.SetCurrent(value);
       progressBar.Show(true);
 			// textWidget.SetText(wpn_qty);
