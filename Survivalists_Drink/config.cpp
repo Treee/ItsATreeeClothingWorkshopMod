@@ -839,6 +839,8 @@ class CfgVehicles
 		scope=2;
 		displayName="Zhiguli";
 		descriptionShort="A bottle of Zhiguli beer";
+    varLiquidTypeInit=4096; // only allow beer!!
+		liquidContainerType="4096";
     hiddenSelections[]=
 		{
 			"zbytek"
