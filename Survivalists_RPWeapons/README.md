@@ -65,3 +65,19 @@
 - "Bloodroot Shield" (https://skfb.ly/oP8pN) by sergeilihandristov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Viking Axe & Shield" (https://skfb.ly/oPLVL) by Hius is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Holy Greatsword of the Ancient Kingdom" (https://skfb.ly/oPHyV) by Bl4ckGh0st is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Vampire Slayer Greatsword" (https://skfb.ly/oPAwP) by Perunir is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Leaf Sword" (https://sketchfab.com/3d-models/leaf-sword-9227dde471d849f79046e3b58e6e6c6b) by plazma019 is licensed under Free Standard Attribution (https://sketchfab.com/licenses)
+
+- "Tidalripple Blade" (https://sketchfab.com/3d-models/leaf-sword-9227dde471d849f79046e3b58e6e6c6b) by plazma019 is licensed under Free Standard Attribution (https://sketchfab.com/licenses)
+
+- "Song of Broken Pines - Genshin Impact" (https://skfb.ly/ovrnF) by Kai Xiang is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Fantasy Sword" (https://skfb.ly/oAVJZ) by sergeilihandristov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "(FREE) Turkish fantasy sword" (https://skfb.ly/6ZxWB) by Joan LP is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Cog Bat" (https://skfb.ly/oLZxz) by maxdebil632 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
