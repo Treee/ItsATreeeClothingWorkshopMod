@@ -873,7 +873,7 @@ class CfgVehicles
     };
   };
 
-  class SRP_ReadableBook_TheNavyHandbook : SRP_ReadableBook_Colorbase
+  class SRP_ReadableBook_TheNavyHandbook: SRP_ReadableBook_Colorbase
   {
     scope=2;
     title="The Navy Handbook";
@@ -882,6 +882,47 @@ class CfgVehicles
     displayName="The Navy Handbook";
     descriptionShort="The 'official' handbook of the United States Navy - a necessity for all noble seamen.";
     hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_TheNavyHandbook_co.paa"};
+  };
+
+  class SRP_ReadableBook_TheRiseOfSanctumV1: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Rise Of Sanctum: Volume I";
+    author="Sirius";
+    file="Survivalists_Books\gear\books\data\book_RiseOfSanctumV1.html";		
+    displayName="Rise Of Sanctum: Volume I";
+    descriptionShort="A thick tome.";
+    hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_RiseOfSanctumV1_co.paa"};
+  };
+  class SRP_ReadableBook_TheRiseOfSanctumV2: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Rise Of Sanctum: Volume II";
+    author="Sirius";
+    file="Survivalists_Books\gear\books\data\book_RiseOfSanctumV2.html";		
+    displayName="Rise Of Sanctum: Volume II";
+    descriptionShort="A thick tome.";
+    hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_RiseOfSanctumV2_co.paa"};
+  };
+  class SRP_ReadableBook_TheRiseOfSanctumV3: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Rise Of Sanctum: Volume III";
+    author="Sirius";
+    file="Survivalists_Books\gear\books\data\book_RiseOfSanctumV3.html";		
+    displayName="Rise Of Sanctum: Volume III";
+    descriptionShort="A thick tome.";
+    hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_RiseOfSanctumV3_co.paa"};
+  };
+  class SRP_ReadableBook_TheRiseOfSanctumV4: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Rise Of Sanctum: Volume IV";
+    author="Sirius";
+    file="Survivalists_Books\gear\books\data\book_RiseOfSanctumV4.html";		
+    displayName="Rise Of Sanctum: Volume IV";
+    descriptionShort="A thick tome.";
+    hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_RiseOfSanctumV4_co.paa"};
   };
 
   //===================== Vanilla Override
