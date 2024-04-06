@@ -93,6 +93,8 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterToolPropaneRedRecipe());
     craftableItems.Insert(RegisterToolPropaneYellowRecipe());
     craftableItems.Insert(RegisterToolPropaneWhiteRecipe());
+    craftableItems.Insert(RegisterToolChiselRecipe());
+    craftableItems.Insert(RegisterToolStoneCutterCrudeRecipe());
     // MASKS
     craftableItems.Insert(RegisterMaskShatteredRecipe());
     craftableItems.Insert(RegisterBasicCrownRecipe());    
@@ -1474,6 +1476,35 @@ class SRP_SmithingRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate5", SRP_COLOR.COPPER, 1));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem RegisterToolChiselRecipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("srpChisel", "Chisel");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.IRON, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.IRON, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.IRON, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate4", SRP_COLOR.IRON, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalRod1", SRP_COLOR.IRON, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
+    return craftableItem;
+  }
+  SRP_CraftableItem RegisterToolStoneCutterCrudeRecipe()
+  {
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("srpStoneCutterCrude", "Stone Cutter Crude");
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate1", SRP_COLOR.IRON, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate2", SRP_COLOR.PLATINUM, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalPlate3", SRP_COLOR.IRON, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MetalRod1", SRP_COLOR.IRON, 1));
+
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Leather", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_MetalWire", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Fabric", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_Rope", SRP_COLOR.NONE, 1));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Smithing_WoodenLogs", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
 //===========================MASKS
