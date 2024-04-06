@@ -180,7 +180,44 @@ class CfgVehicles
 		displayName = "Detailed Alchemy Notes";
 		descriptionShort = "A rolled up piece of paper tied by some twine. Needs to be deciphered.";
 	};
-	
+
+  class SRP_ReadableScroll_Crafting_Cooking1: SRP_ReadableScroll_Colorbase
+	{
+		scope=2;
+		title="Catalano Recipes - 1";
+		author="Giulia Cettina Catalano Lucchese";
+		file="Survivalists_Books\gear\scrolls\data\scroll_CatalanoRecipes-1.html";
+		displayName="Detailed Alchemy Notes";
+		descriptionShort="A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+  class SRP_ReadableScroll_Crafting_Cooking2: SRP_ReadableScroll_Colorbase
+	{
+		scope=2;
+		title="Catalano Recipes - 2";
+		author="Giulia Cettina Catalano Lucchese";
+		file="Survivalists_Books\gear\scrolls\data\scroll_CatalanoRecipes-2.html";
+		displayName="Detailed Alchemy Notes";
+		descriptionShort="A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+  class SRP_ReadableScroll_Crafting_Cooking3: SRP_ReadableScroll_Colorbase
+	{
+		scope=2;
+		title="Catalano Recipes - 3";
+		author="Giulia Cettina Catalano Lucchese";
+		file="Survivalists_Books\gear\scrolls\data\scroll_CatalanoRecipes-3.html";
+		displayName="Detailed Alchemy Notes";
+		descriptionShort="A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+  class SRP_ReadableScroll_Crafting_Cooking4: SRP_ReadableScroll_Colorbase
+	{
+		scope=2;
+		title="Catalano Recipes - 4";
+		author="Giulia Cettina Catalano Lucchese";
+		file="Survivalists_Books\gear\scrolls\data\scroll_CatalanoRecipes-4.html";
+		displayName="Detailed Alchemy Notes";
+		descriptionShort="A rolled up piece of paper tied by some twine. Needs to be deciphered.";
+	};
+  	
 	class SRP_ReadableScroll_Crafting_Weapon: SRP_ReadableScroll_Colorbase
 	{
 		scope=2;

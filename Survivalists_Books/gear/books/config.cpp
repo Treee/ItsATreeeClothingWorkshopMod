@@ -859,6 +859,20 @@ class CfgVehicles
       hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_PoemsOfNature_co.paa"};
   };
 
+  class SRP_ReadableBook_MaCookbook: SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="Ma's Cookbook";
+    author="Ma";
+		file="Survivalists_Books\gear\books\data\book_MaCookbook.html";		
+    displayName="Ma's Cookbook";
+    descriptionShort="A delightful cookbook.";
+    hiddenSelectionsTextures[]=
+    {
+      "Survivalists_Books\gear\books\data\book_MaCookbook_co.paa"
+    };
+  };
+
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
 	{
