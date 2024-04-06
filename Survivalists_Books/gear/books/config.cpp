@@ -873,6 +873,17 @@ class CfgVehicles
     };
   };
 
+  class SRP_ReadableBook_TheNavyHandbook : SRP_ReadableBook_Colorbase
+  {
+    scope=2;
+    title="The Navy Handbook";
+    author="Sirius & Mar";
+    file="Survivalists_Books\gear\books\data\book_TheNavyHandbook.html";		
+    displayName="The Navy Handbook";
+    descriptionShort="The 'official' handbook of the United States Navy - a necessity for all noble seamen.";
+    hiddenSelectionsTextures[]={"Survivalists_Books\gear\books\data\book_TheNavyHandbook_co.paa"};
+  };
+
   //===================== Vanilla Override
   class BookBible: SRP_ReadableBook_Colorbase
 	{
