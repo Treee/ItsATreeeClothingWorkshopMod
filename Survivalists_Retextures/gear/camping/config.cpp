@@ -235,7 +235,18 @@ class CfgVehicles
 		color="QuebecWeed";
 		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_ViveLeQuebecWeed_co.paa"};
 	};
-  
+  class Flag_Mermaid: Flag_Base
+	{
+		scope=2;
+		color="Mermaid";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\srp_mermaid_co.paa"};
+	};
+  class Flag_WildTurkey: Flag_Base
+	{
+		scope=2;
+		color="WildTurkey";
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\camping\data\flag_WildTurkey_co.paa"};
+	};  
 //================================================ MODDED  
   class SRP_Guitar_Alpocalypse_Blue: SRP_Guitar_Alpocalypse
 	{

@@ -72,6 +72,8 @@ class CfgVehicles
       "Crook",
       "Rex",
       "Zagorky",
+      "Mermaid",
+      "WildTurkey",
       "Australia",
       "Canada",
       "KentuckyCommonWealth",
