@@ -36,7 +36,7 @@ class CfgVehicles
 			"Survivalists_Retextures\gear\camping\data\large_tent_STAG_co.paa"
 		};
   };
-
+//================================================ FLAGS
   class Flag_Australia: Flag_Base
 	{
 		scope=2;
