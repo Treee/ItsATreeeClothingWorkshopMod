@@ -1221,6 +1221,141 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_CogBat_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Geared Baseball Bat";
+		descriptionShort="Espen Industries. Reinforced baseball bat used for bashing heads.";
+		model="Survivalists_RPWeapons\melee\blade\srp_cogbat.p3d";
+		debug_ItemCategory=2;
+		animClass="Knife";
+		RestrainUnlockType=1;
+		repairableWithKits[]={4};
+		repairCosts[]={12};
+		inventorySlot[]=
+		{
+      "Melee",
+      "Shoulder",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		rotationFlags=12;
+		weight=500;
+		itemSize[]={1,5};
+		lootTag[]=
+		{
+			"Work",
+			"Forester",
+			"Hunting",
+			"Farm"
+		};
+		lootCategory="Tools";
+		itemInfo[]=
+		{
+			"Knife"
+		};
+		openItemSpillRange[]={20,50};
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]=
+    {
+      "Survivalists_RPWeapons\melee\blade\data\srp_cogbat_co.paa"
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=200;
+					healthLevels[]=
+					{						
+						{1,{"Survivalists_RPWeapons\melee\blade\data\srp_cogbat.rvmat"}},						
+						{0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_cogbat.rvmat"}},						
+						{0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_cogbat_damage.rvmat"}},						
+						{0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_cogbat_damage.rvmat"}},						
+						{0,{"Survivalists_RPWeapons\melee\blade\data\srp_cogbat_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="onehanded";
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		soundImpactType="metal";
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+				class CutTies_end
+				{
+					soundSet="CutTies_end_SoundSet";
+					id=519;
+				};
+				class CutTies_loop
+				{
+					soundSet="CutTies_loop_SoundSet";
+					id=520;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+			};
+		};
+	};
+  class SRP_CogBat_Basic: SRP_CogBat_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]= {"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_cogbat_co.paa"};
+	};
+
 //================================================================== AXES
   class ttcelticaxe_ColorBase: Inventory_Base
   {
@@ -2014,154 +2149,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
     {
       "Survivalists_RPWeapons\melee\blade\data\tantosword_co.paa"
-		};
-	};
-  class SRP_GladiusSword_ColorBase: Inventory_Base
-	{
-		scope=0;
-		displayName="Gladius";
-		descriptionShort="A forged short sword used by ancient gladiators.";
-		model="Survivalists_RPWeapons\melee\blade\srp_gladius.p3d";
-		rotationFlags=12;
-		weight=130;
-		itemSize[]={1,5};
-    repairableWithKits[]={4};
-		repairCosts[]={50};
-		itemBehaviour=2;
-		inventorySlot[]=
-		{
-			"Shoulder",
-			"Melee",
-      "SRP_GladiusSword",
-      "SRP_Melee1",
-      "SRP_Melee2",
-      "SRP_Melee3",
-      "SRP_Melee4",
-      "SRP_Melee5",
-      "SRP_Melee6",
-      "SRP_Melee7",
-      "SRP_Melee8",
-      "SRP_Melee9",
-      "SRP_Melee10",
-		};
-		hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_RPWeapons\melee\blade\data\srp_gladius_co.paa"
-		};
-    hiddenSelectionsMaterials[]=
-		{
-			"Survivalists_RPWeapons\melee\blade\data\srp_gladius.rvmat"
-		};
-    class InventorySlotsOffsets
-    {
-      class Melee
-      {
-        position[]={-0.3,0.35,-0.027};
-        orientation[]={90,-35,0};
-      };  
-      class Shoulder
-			{
-				position[]={0.06,0,-0.33};//FB,UD,LR
-        orientation[]={0,-20,0};//x,y,z
-			};
-    };
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=600;
-					healthLevels[]=
-					{
-            {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius.rvmat"}},
-            {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius.rvmat"}},
-            {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius_damage.rvmat"}},
-            {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius_damage.rvmat"}},
-            {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius_destruct.rvmat"}}
-					};
-				};
-			};
-		};
-		isMeleeWeapon=1;
-		suicideAnim="fireaxe";
-		class MeleeModes
-    {
-      class Default
-      {
-        ammo="SRP_MeleeSlash_1HSword";
-        range=1.1;
-      };
-      class Heavy
-      {
-        ammo="SRP_MeleeSlash_1HSwordHeavy";
-        range=1.1;
-      };
-      class Sprint
-      {
-        ammo="SRP_MeleeSlash_1HSwordHeavy";
-        range=3.3;
-      };
-    };
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickup_light
-				{
-					soundSet="hatchet_pickup_light_SoundSet";
-					id=796;
-				};
-				class pickup
-				{
-					soundSet="hatchet_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="woodaxe_drop_SoundSet";
-					id=898;
-				};
-				class FirefighterAxe_loop_SoundSet
-				{
-					soundSet="FirefighterAxe_loop_SoundSet";
-					id=1121;
-				};
-				class FirefighterAxe_end_SoundSet
-				{
-					soundSet="FirefighterAxe_end_SoundSet";
-					id=1122;
-				};
-				class ShoulderR_Hide
-				{
-					soundset="ShoulderR_Hide_SoundSet";
-					id=1210;
-				};
-				class ShoulderR_Show
-				{
-					soundset="ShoulderR_Show_SoundSet";
-					id=1211;
-				};
-				class animalSkinning_in
-				{
-					soundSet="animalSkinning_in_SoundSet";
-					id=516;
-				};
-				class animalSkinning
-				{
-					soundSet="animalSkinning_SoundSet";
-					id=517;
-				};
-				class animalSkinning_out
-				{
-					soundSet="animalSkinning_out_SoundSet";
-					id=518;
-				};
-			};
 		};
 	};
 
@@ -3366,6 +3353,154 @@ class CfgVehicles
 		};
 	};
 
+  class SRP_GladiusSword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Gladius";
+		descriptionShort="A forged short sword used by ancient gladiators.";
+		model="Survivalists_RPWeapons\melee\blade\srp_gladius.p3d";
+		rotationFlags=12;
+		weight=130;
+		itemSize[]={1,5};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
+		itemBehaviour=2;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_GladiusSword",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_gladius_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_gladius.rvmat"
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=600;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius.rvmat"}},
+            {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius.rvmat"}},
+            {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius_damage.rvmat"}},
+            {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius_damage.rvmat"}},
+            {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_gladius_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="fireaxe";
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
   class SRP_GladiusSwordSheath_ColorBase: Inventory_Base
 	{
 		scope=0;
@@ -3550,6 +3685,780 @@ class CfgVehicles
     scope=2;
     hiddenSelections[]={"zbytek"};
     hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_gladius_tyler_co.paa"};
+  };
+
+  class SRP_LeafSword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Leaf Sword";
+		descriptionShort="A forged short sword used by ancient gardeners.";
+		model="Survivalists_RPWeapons\melee\blade\srp_leafsword.p3d";
+		rotationFlags=12;
+		weight=130;
+		itemSize[]={1,5};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
+		itemBehaviour=2;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_leafsword_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_leafsword.rvmat"
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=600;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_leafsword.rvmat"}},
+            {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_leafsword.rvmat"}},
+            {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_leafsword_damage.rvmat"}},
+            {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_leafsword_damage.rvmat"}},
+            {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_leafsword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="fireaxe";
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_LeafSword_Basic: SRP_LeafSword_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_leafsword_co.paa"};
+  };
+
+  class SRP_RunicSword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Runic Sword";
+		descriptionShort="A forged short sword etched with runes.";
+		model="Survivalists_RPWeapons\melee\blade\srp_runicsword.p3d";
+		rotationFlags=12;
+		weight=130;
+		itemSize[]={1,5};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
+		itemBehaviour=2;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_RunicSword",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_runicsword.rvmat"
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=600;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword.rvmat"}},
+            {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword.rvmat"}},
+            {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_damage.rvmat"}},
+            {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_damage.rvmat"}},
+            {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="fireaxe";
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_RunicSword_Basic: SRP_RunicSword_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_co.paa"};
+  };
+  class SRP_RunicSwordSheath_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Runic Sheath";
+		descriptionShort="A short sword sheath. Holds a runic sword.";
+		model="Survivalists_RPWeapons\melee\blade\srp_runicsword_sheath.p3d";
+		rotationFlags=12;
+		weight=130;
+		itemSize[]={1,5};
+		itemBehaviour=2;
+    repairableWithKits[]={5,8};
+		repairCosts[]={50,25};
+    attachments[]=
+    {
+      "SRP_RunicSword",
+    };
+		inventorySlot[]=
+		{
+      "SRP_RunicSwordSheath",
+      "Shoulder",
+      "Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_runicsword.rvmat"
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.2,0.55,-0.027};
+        orientation[]={90,145,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0.2,-0.2};//FB,UD,LR
+        orientation[]={0,155,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=600;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword.rvmat"}},
+            {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword.rvmat"}},
+            {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_damage.rvmat"}},
+            {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_damage.rvmat"}},
+            {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo="MeleeBat";
+				range=1.8;
+			};
+			class Heavy
+			{
+				ammo="MeleeBat_Heavy";
+				range=1.8;
+			};
+			class Sprint
+			{
+				ammo="MeleeBat_Heavy";
+				range=3.7;
+			};
+		};
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_RunicSwordSheath_Basic: SRP_RunicSwordSheath_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_runicsword_co.paa"};
+  };
+
+  class SRP_TidalSword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Tidal Sword";
+		descriptionShort="A delicate and finely crafted sword.";
+		model="Survivalists_RPWeapons\melee\blade\srp_tidalsword.p3d";
+		rotationFlags=12;
+		weight=130;
+		itemSize[]={1,5};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
+		itemBehaviour=2;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_tidalsword_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_tidalsword.rvmat"
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=600;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_tidalsword.rvmat"}},
+            {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_tidalsword.rvmat"}},
+            {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_tidalsword_damage.rvmat"}},
+            {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_tidalsword_damage.rvmat"}},
+            {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_tidalsword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="fireaxe";
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_TidalSword_Basic: SRP_TidalSword_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_tidalsword_co.paa"};
+  };
+
+  class SRP_TurkishSword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Turkish Sword";
+		descriptionShort="A delicate and finely crafted sword.";
+		model="Survivalists_RPWeapons\melee\blade\srp_turkishsword.p3d";
+		rotationFlags=12;
+		weight=130;
+		itemSize[]={1,5};
+    repairableWithKits[]={4};
+		repairCosts[]={50};
+		itemBehaviour=2;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+		hiddenSelections[]=
+		{
+			"zbytek"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_turkishsword_co.paa"
+		};
+    hiddenSelectionsMaterials[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_turkishsword.rvmat"
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,0,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=600;
+					healthLevels[]=
+					{
+            {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_turkishsword.rvmat"}},
+            {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_turkishsword.rvmat"}},
+            {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_turkishsword_damage.rvmat"}},
+            {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_turkishsword_damage.rvmat"}},
+            {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_turkishsword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		isMeleeWeapon=1;
+		suicideAnim="fireaxe";
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class pickup_light
+				{
+					soundSet="hatchet_pickup_light_SoundSet";
+					id=796;
+				};
+				class pickup
+				{
+					soundSet="hatchet_pickup_SoundSet";
+					id=797;
+				};
+				class drop
+				{
+					soundset="woodaxe_drop_SoundSet";
+					id=898;
+				};
+				class FirefighterAxe_loop_SoundSet
+				{
+					soundSet="FirefighterAxe_loop_SoundSet";
+					id=1121;
+				};
+				class FirefighterAxe_end_SoundSet
+				{
+					soundSet="FirefighterAxe_end_SoundSet";
+					id=1122;
+				};
+				class ShoulderR_Hide
+				{
+					soundset="ShoulderR_Hide_SoundSet";
+					id=1210;
+				};
+				class ShoulderR_Show
+				{
+					soundset="ShoulderR_Show_SoundSet";
+					id=1211;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_TurkishSword_Basic: SRP_TurkishSword_ColorBase
+  {
+    scope=2;
+    hiddenSelections[]={"zbytek"};
+    hiddenSelectionsTextures[]={"Survivalists_RPWeapons\melee\blade\data\srp_turkishsword_co.paa"};
   };
 //================================================================== 2H SWORDS
   class SRP_BerserkSword: Inventory_Base
@@ -4045,7 +4954,6 @@ class CfgVehicles
 		{
 			"Shoulder",
 			"Melee",
-      "SRP_MasterSword",
       "SRP_Melee1",
       "SRP_Melee2",
       "SRP_Melee3",
@@ -4067,16 +4975,16 @@ class CfgVehicles
 		};
     class InventorySlotsOffsets
     {
+      class Shoulder
+      {
+        position[]={0.05,-0.2,0};//FB,UD,LR
+        orientation[]={0,20,0};//x,y,z
+      };
       class Melee
       {
-        position[]={-0.3,0.35,-0.027};
-        orientation[]={90,-35,0};
-      };  
-      class Shoulder
-			{
-				position[]={0.06,-0.1,-0.33};//FB,UD,LR
-        orientation[]={0,-20,0};//x,y,z
-			};
+        position[]={0.01,-0.2,0};//FB,UD,LR
+        orientation[]={-0,-20,0};//x,y,z
+      };
     };
 		class DamageSystem
 		{
@@ -4184,6 +5092,431 @@ class CfgVehicles
 	{
     scope=2;
   };
+
+  class SRP_BrokenPinesClaymore_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Broken Pines Claymore";
+		descriptionShort="A replica of a large claymore.";
+		model="Survivalists_RPWeapons\melee\blade\srp_brokenpinesclaymore.p3d";
+		debug_ItemCategory=2;
+		rotationFlags=12;
+		weight=4400;
+		itemSize[]={1,7};
+		fragility=0.001;
+		itemBehaviour=2;
+		openItemSpillRange[]={20,50};
+    repairableWithKits[]={5};
+		repairCosts[]={50};
+		suicideAnim="sword";
+		isMeleeWeapon=1;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_brokenpinesclaymore_co.paa",  
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_brokenpinesclaymore.rvmat"}},
+						{0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_brokenpinesclaymore.rvmat"}},
+						{0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_brokenpinesclaymore_damage.rvmat"}},
+						{0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_brokenpinesclaymore_damage.rvmat"}},
+						{0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_brokenpinesclaymore_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="crowbar_drop_SoundSet";
+					id=898;
+				};
+				class Crowbar_loop
+				{
+					soundSet="Crowbar_loop_SoundSet";
+					id=1119;
+				};
+				class Crowbar_end
+				{
+					soundSet="Crowbar_end_SoundSet";
+					id=1120;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_BrokenPinesClaymore_Basic: SRP_BrokenPinesClaymore_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_brokenpinesclaymore_co.paa",  
+		};
+	};
+
+  class SRP_CrossGreatsword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Cross Greatsword";
+		descriptionShort="A forged sword in the form of a cross. Encrusted with a gem.";
+		model="Survivalists_RPWeapons\melee\blade\srp_crossgreatsword.p3d";
+		debug_ItemCategory=2;
+		rotationFlags=12;
+		weight=4400;
+		itemSize[]={1,7};
+		fragility=0.001;
+		itemBehaviour=2;
+		openItemSpillRange[]={20,50};
+    repairableWithKits[]={5};
+		repairCosts[]={50};
+		suicideAnim="sword";
+		isMeleeWeapon=1;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+    hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword_ca.paa",  
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword.rvmat"}},
+						{0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword.rvmat"}},
+						{0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword_damage.rvmat"}},
+						{0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword_damage.rvmat"}},
+						{0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="crowbar_drop_SoundSet";
+					id=898;
+				};
+				class Crowbar_loop
+				{
+					soundSet="Crowbar_loop_SoundSet";
+					id=1119;
+				};
+				class Crowbar_end
+				{
+					soundSet="Crowbar_end_SoundSet";
+					id=1120;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_CrossGreatsword_Basic: SRP_CrossGreatsword_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword_ca.paa",  
+		};
+	};
+
+  class SRP_HolyGreatsword_ColorBase: Inventory_Base
+	{
+		scope=0;
+		displayName="Holy Greatsword";
+		descriptionShort="A forged geometric sword.";
+		model="Survivalists_RPWeapons\melee\blade\srp_holygreatsword.p3d";
+		debug_ItemCategory=2;
+		rotationFlags=12;
+		weight=4400;
+		itemSize[]={1,7};
+		fragility=0.001;
+		itemBehaviour=2;
+		openItemSpillRange[]={20,50};
+    repairableWithKits[]={5};
+		repairCosts[]={50};
+		suicideAnim="sword";
+		isMeleeWeapon=1;
+		inventorySlot[]=
+		{
+			"Shoulder",
+			"Melee",
+      "SRP_Melee1",
+      "SRP_Melee2",
+      "SRP_Melee3",
+      "SRP_Melee4",
+      "SRP_Melee5",
+      "SRP_Melee6",
+      "SRP_Melee7",
+      "SRP_Melee8",
+      "SRP_Melee9",
+      "SRP_Melee10",
+		};
+    hiddenSelections[]=
+		{
+      "zbytek",
+			"blade",
+      "handle"
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_holygreatswordbody_co.paa",  
+			"Survivalists_RPWeapons\melee\blade\data\srp_holygreatswordblade_co.paa",  
+			"Survivalists_RPWeapons\melee\blade\data\srp_holygreatswordhandle_co.paa",  
+		};
+    class InventorySlotsOffsets
+    {
+      class Melee
+      {
+        position[]={-0.3,0.35,-0.027};
+        orientation[]={90,-35,0};
+      };  
+      class Shoulder
+			{
+				position[]={0.06,-0.1,-0.33};//FB,UD,LR
+        orientation[]={0,-20,0};//x,y,z
+			};
+    };
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=500;
+					healthLevels[]=
+					{
+						{1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword.rvmat"}},
+						{0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword.rvmat"}},
+						{0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword_damage.rvmat"}},
+						{0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword_damage.rvmat"}},
+						{0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_crossgreatsword_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class MeleeModes
+    {
+      class Default
+      {
+        ammo="SRP_MeleeSlash_1HSword";
+        range=1.1;
+      };
+      class Heavy
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=1.1;
+      };
+      class Sprint
+      {
+        ammo="SRP_MeleeSlash_1HSwordHeavy";
+        range=3.3;
+      };
+    };
+		class AnimEvents
+		{
+			class SoundWeapon
+			{
+				class drop
+				{
+					soundset="crowbar_drop_SoundSet";
+					id=898;
+				};
+				class Crowbar_loop
+				{
+					soundSet="Crowbar_loop_SoundSet";
+					id=1119;
+				};
+				class Crowbar_end
+				{
+					soundSet="Crowbar_end_SoundSet";
+					id=1120;
+				};
+				class animalSkinning_in
+				{
+					soundSet="animalSkinning_in_SoundSet";
+					id=516;
+				};
+				class animalSkinning
+				{
+					soundSet="animalSkinning_SoundSet";
+					id=517;
+				};
+				class animalSkinning_out
+				{
+					soundSet="animalSkinning_out_SoundSet";
+					id=518;
+				};
+			};
+		};
+	};
+  class SRP_HolyGreatsword_Basic: SRP_HolyGreatsword_ColorBase
+	{
+		scope=2;
+    hiddenSelections[]=
+		{
+			"zbytek",
+      "blade",
+      "handle"
+		};
+		hiddenselectionsTextures[]=
+		{
+			"Survivalists_RPWeapons\melee\blade\data\srp_holygreatswordbody_co.paa",  
+			"Survivalists_RPWeapons\melee\blade\data\srp_holygreatswordblade_co.paa",  
+			"Survivalists_RPWeapons\melee\blade\data\srp_holygreatswordhandle_co.paa",  
+		};
+	};
 //================================================================== SPEARS
   class SRP_Spear_Pike_ColorBase: Inventory_Base
 	{

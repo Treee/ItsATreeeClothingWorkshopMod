@@ -48,6 +48,18 @@ class CfgSlots
 		displayName="Gladius Sword Sheath";
 		ghostIcon="set:dayz_inventory image:missing";
   };
+  class Slot_SRP_RunicSword
+  {
+		name="SRP_RunicSword";
+		displayName="Runic Sword";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
+  class Slot_SRP_RunicSwordSheath
+  {
+		name="SRP_RunicSwordSheath";
+		displayName="Runic Sword Sheath";
+		ghostIcon="set:dayz_inventory image:missing";
+  };
   class Slot_SRP_Melee1
 	{
 		name="SRP_Melee1";
@@ -475,6 +487,18 @@ class CfgNonAIVehicles
     scope = 2;
     inventorySlot[] = {"SRP_GladiusSwordSheath"}; // same as slot name 
     model = "Survivalists_RPWeapons\proxy\srp_gladiussheath_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_runic_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_RunicSword"}; // same as slot name 
+    model = "Survivalists_RPWeapons\proxy\srp_runic_proxy.p3d"; //proxy path 
+  };
+  class Proxysrp_runicsheath_proxy: ProxyAttachment //same as p3d name
+  {
+    scope = 2;
+    inventorySlot[] = {"SRP_RunicSwordSheath"}; // same as slot name 
+    model = "Survivalists_RPWeapons\proxy\srp_runicsheath_proxy.p3d"; //proxy path 
   };
   class ProxyScar_HandGrd_Proxy: ProxyAttachment
 	{

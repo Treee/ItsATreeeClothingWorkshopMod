@@ -33,6 +33,11 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("tantosword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/crowbar.anm"); 
 		pType.AddItemInHandsProfileIK("PipeAxe_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/Hatchet.anm"); 
 		pType.AddItemInHandsProfileIK("SRP_VikingHandAxe_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,"dz/anims/anm/player/ik/gear/Hatchet.anm"); 
+    pType.AddItemInHandsProfileIK("SRP_LeafSword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,	"dz/anims/anm/player/ik/gear/crowbar.anm");
+    pType.AddItemInHandsProfileIK("SRP_RunicSword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,	"dz/anims/anm/player/ik/gear/crowbar.anm");
+    pType.AddItemInHandsProfileIK("SRP_RunicSwordSheath_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,	"dz/anims/anm/player/ik/gear/crowbar.anm");
+    pType.AddItemInHandsProfileIK("SRP_TidalSword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,	"dz/anims/anm/player/ik/gear/crowbar.anm");
+    pType.AddItemInHandsProfileIK("SRP_TurkishSword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_1h_pipe.asi", pBehavior,	"dz/anims/anm/player/ik/gear/crowbar.anm");
   };
 
   override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
@@ -51,6 +56,11 @@ modded class ModItemRegisterCallbacks
     pType.AddItemInHandsProfileIK("SRP_FireyGreatsword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");
     pType.AddItemInHandsProfileIK("ttcelticaxe_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_fireaxe.asi", pBehavior,"dz/anims/anm/player/ik/two_handed/FirefighterAxe.anm");
     pType.AddItemInHandsProfileIK("SRP_Spear_Pike_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_spear.asi", pBehavior, "dz/anims/anm/player/ik/two_handed/advanced_spear.anm");     
+    pType.AddItemInHandsProfileIK("SRP_BrokenPinesClaymore_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");    
+    pType.AddItemInHandsProfileIK("SRP_CrossGreatsword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");    
+    pType.AddItemInHandsProfileIK("SRP_HolyGreatsword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");    
+    pType.AddItemInHandsProfileIK("SRP_CogBat_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");    
+
     //==================================================== BLUNT WEAPONS    
     pType.AddItemInHandsProfileIK("ttbaseballbat_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_bat.asi", pBehavior,"dz/anims/anm/player/ik/two_handed/baseballbat.anm");	
     pType.AddItemInHandsProfileIK("SRP_WarHammer_Basic_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sledgehammer.asi", pBehavior,"dz/anims/anm/player/ik/two_handed/sledge_hammer.anm");
