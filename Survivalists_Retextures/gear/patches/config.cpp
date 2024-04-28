@@ -17,23 +17,17 @@ class CfgVehicles
 {
 	class SRP_PatchFlag_ColorBase;
 	class SRP_PatchLogo_ColorBase;
-  class SRP_Armband_Base;
-  class SRP_BeltFlag_ColorBase;
+    class SRP_Armband_Base;
+    class SRP_BeltFlag_ColorBase;
 
-  class SRP_Armband_Duskar: SRP_Armband_Base
-	{	
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\gear\patches\data\armband\srp_armband_duskar_co.paa"
-		};	
-  };
+    class SRP_Armband_Duskar: SRP_Armband_Base
+	{
+        scope=2;
+        hiddenSelections[]={"zbytek"};
+		hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\patches\data\armband\srp_armband_duskar_co.paa"};
+    };
 
-  class SRP_PatchFlag_DarkQueen: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_DarkQueen: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Dark Queen";
@@ -43,7 +37,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Mayor: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Mayor: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Mayor";
@@ -53,7 +47,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Blacksmith: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Blacksmith: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Blacksmith";
@@ -63,7 +57,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Carpenter: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Carpenter: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Carpenter";
@@ -73,7 +67,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Herbologist: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Herbologist: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Herbologist";
@@ -83,7 +77,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Medic: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Medic: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Medic";
@@ -93,7 +87,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Mutant: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Mutant: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Mutant";
@@ -103,7 +97,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Pirate: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Pirate: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Pirate";
@@ -113,7 +107,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Resident: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Resident: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Resident";
@@ -123,7 +117,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Security: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Security: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Security";
@@ -133,7 +127,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Tailor: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Tailor: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Tailor";
@@ -143,7 +137,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Trader: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Trader: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Trader";
@@ -153,7 +147,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Barber: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Barber: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Barber";
@@ -163,7 +157,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Biologist: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Biologist: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Biologist";
@@ -173,7 +167,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Brewer: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Brewer: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Brewer";
@@ -183,7 +177,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Builder: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Builder: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Builder";
@@ -193,7 +187,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Corporal: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Corporal: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Corporal";
@@ -203,7 +197,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Drug: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Drug: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Drug";
@@ -213,7 +207,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Junker: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Junker: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Junker";
@@ -223,7 +217,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Miner: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Miner: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Miner";
@@ -233,7 +227,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Neurologist: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Neurologist: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Neurologist";
@@ -243,7 +237,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Physicist: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Physicist: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Physicist";
@@ -253,7 +247,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Private: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Private: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Private";
@@ -263,7 +257,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Scrapper: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Scrapper: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Scrapper";
@@ -273,7 +267,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Seaman: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Seaman: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Seaman";
@@ -283,7 +277,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Seaman1: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Seaman1: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Seaman1";
@@ -293,7 +287,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Sergeant: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Sergeant: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Sergeant";
@@ -303,7 +297,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_GreenMountain: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_GreenMountain: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - GreenMountain";
@@ -313,7 +307,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_Chernus: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_Chernus: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Identifier - Chernus";
@@ -716,7 +710,7 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
-  class SRP_PatchFlag_CanadaFrench: SRP_PatchFlag_ColorBase
+    class SRP_PatchFlag_CanadaFrench: SRP_PatchFlag_ColorBase
 	{
 		scope=2;
 		displayName="Country Flag - French Canada";
@@ -2406,6 +2400,1972 @@ class CfgVehicles
 			"Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
 		};
 	};
+
+    class SRP_PatchFlag_BisexualFlag: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="BisexualFlag";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_BisexualFlag_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_PrideFlag: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="PrideFlag";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_PrideFlag_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_GBPrideFlag: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="GBPrideFlag";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_GBPrideFlag_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_TransFlag: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="TransFlag";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_TransFlag_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HeterosexualFlag: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HeterosexualFlag";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HeterosexualFlag_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Turkey2: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Turkey";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Turkey_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Ireland2: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Ireland";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Ireland_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Ukraine2: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Ukraine";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Ukraine_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_JeMeSouviens: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="JeMeSouviens";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_JeMeSouviens_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_ViveLeQuebecWeed: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="ViveLeQuebecWeed";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_ViveLeQuebecWeed_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Jurassic: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Jurassic";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Jurassic_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MaineState: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MaineState";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MaineState_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+
+    class SRP_PatchFlag_4thOfJuly: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="4thOfJuly";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_4thOfJuly_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_LandoftheFree: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="LandoftheFree";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_LandoftheFree_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_AlchemyBlack: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="AlchemyBlack";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_AlchemyBlack_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Lawyer: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Lawyer";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Lawyer_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_AlchemyWood: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="AlchemyWood";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_AlchemyWood_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Leatherwork: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Leatherwork";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Leatherwork_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_AlienDJ: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="AlienDJ";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_AlienDJ_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Library: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Library";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Library_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Alien: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Alien";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Alien_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Lilith: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Lilith";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Lilith_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_AmericanIndian: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="AmericanIndian";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_AmericanIndian_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_LiveMusic: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="LiveMusic";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_LiveMusic_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Animalskullandroses: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Animalskullandroses";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Animalskullandroses_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MadKuntz: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MadKuntz";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MadKuntz_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_AnimeGirlGuitar: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="AnimeGirlGuitar";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_AnimeGirlGuitar_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MedicalMarijuana: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MedicalMarijuana";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MedicalMarijuana_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_AnimeGirlSinger: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="AnimeGirlSinger";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_AnimeGirlSinger_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Medical: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Medical";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Medical_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_AssemblyRequired: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="AssemblyRequired";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_AssemblyRequired_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MedievalCreature: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MedievalCreature";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MedievalCreature_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Atom: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Atom";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Atom_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MedievalDog: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MedievalDog";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MedievalDog_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Bam: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Bam";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Bam_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MedievalGriffin: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MedievalGriffin";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MedievalGriffin_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Bandit: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Bandit";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Bandit_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MedievalHippogri: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MedievalHippogri";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MedievalHippogriff_.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_BaphometDevil: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="BaphometDevil";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_BaphometDevil_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MedievalSalamander: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MedievalSalamander";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MedievalSalamander_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Barber1: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Barber1";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Barber_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MedievalSeaMonster: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MedievalSeaMonster";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MedievalSeaMonster_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_BeachSunset: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="BeachSunset";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_BeachSunset_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MedievalUnicornDragon: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MedievalUnicornDragon";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MedievalUnicornDragon_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Biker: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Biker";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Biker_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Medusa: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Medusa";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Medusa_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_BitchImFabulous: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="BitchImFabulous";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_BitchImFabulous_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MermaidVibes: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MermaidVibes";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MermaidVibes_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_BlackCat: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="BlackCat";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_BlackCat_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Mermaid: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Mermaid";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Mermaid_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Blacksmith1: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Blacksmith1";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Blacksmith_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MerryXmas: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MerryXmas";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MerryXmas_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_BoxingChamp: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="BoxingChamp";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_BoxingChamp_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Military: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Military";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Military_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_BrainPlate: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="BrainPlate";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_BrainPlate_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MotherOfAll: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MotherOfAll";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MotherOfAll_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Brewery: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Brewery";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Brewery_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_MushroomDrawing: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="MushroomDrawing";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_MushroomDrawing_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Builder1: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Builder1";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Builder_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Mushroom: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Mushroom";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Mushroom_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Butcher: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Butcher";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Butcher_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_News: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="News";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_News_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_CLub: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="CLub";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_CLub_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_NoFear: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="NoFear";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_NoFear_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Campfire: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Campfire";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Campfire_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Norse: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Norse";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Norse_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_CampingGrey: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="CampingGrey";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_CampingGrey_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Octopus: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Octopus";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Octopus_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Camping: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Camping";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Camping_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_OnAir: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="OnAir";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_OnAir_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Carpentry: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Carpentry";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Carpentry_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_OnePercenter: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="OnePercenter";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_OnePercenter_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Cassette: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Cassette";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Cassette_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Persian: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Persian";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Persian_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Circus: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Circus";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Circus_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_PiratesGetMoreBooty: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="PiratesGetMoreBooty";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_PiratesGetMoreBooty_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_ComedyClub: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="ComedyClub";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_ComedyClub_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Pizza: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Pizza";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Pizza_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_CottageCoreFrog: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="CottageCoreFrog";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_CottageCoreFrog_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_PlagueDr: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="PlagueDr";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_PlagueDr_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Courier: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Courier";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Courier_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Pow: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Pow";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Pow_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Cowboy: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Cowboy";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Cowboy_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_PrawnGodYellowOutline: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="PrawnGodYellowOutline";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_PrawnGodYellowOutline_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_CrueltyFree: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="CrueltyFree";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_CrueltyFree_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_PrawnGod: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="PrawnGod";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_PrawnGod_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_CuteKiller: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="CuteKiller";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_CuteKiller_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Quarantine: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Quarantine";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Quarantine_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_DayOfTheDead: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="DayOfTheDead";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_DayOfTheDead_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Radioactive: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Radioactive";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Radioactive_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Deli: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Deli";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Deli_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Ramadan: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Ramadan";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Ramadan_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Easter: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Easter";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Easter_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Reaper: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Reaper";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Reaper_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_EgyptianScarab: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="EgyptianScarab";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_EgyptianScarab_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_RecordStore: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="RecordStore";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_RecordStore_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Esoteric: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Esoteric";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Esoteric_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Reggae: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Reggae";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Reggae_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_EvilCat: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="EvilCat";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_EvilCat_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_SadPug: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="SadPug";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_SadPug_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_EwPeople: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="EwPeople";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_EwPeople_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_SaintIllusive: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="SaintIllusive";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_SaintIllusive_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_EyeOfHorusYellow: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="EyeOfHorusYellow";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_EyeOfHorusYellow_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Samurai: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Samurai";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Samurai_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_EyeofHorusGold: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="EyeofHorusGold";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_EyeofHorusGold_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_SantaMuerteCostume: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="SantaMuerteCostume";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_SantaMuerteCostume_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_FaceDry: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="FaceDry";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_FaceDry_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_SantaMuerte: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="SantaMuerte";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_SantaMuerte_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_FaithHopeLove: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="FaithHopeLove";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_FaithHopeLove_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Science: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Science";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Science_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_FarmersMarket: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="FarmersMarket";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_FarmersMarket_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Scottish: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Scottish";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Scottish_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_FeelinCute: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="FeelinCute";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_FeelinCute_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_ScubaClub: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="ScubaClub";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_ScubaClub_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Fisherman: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Fisherman";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Fisherman_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Seafood: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Seafood";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Seafood_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_FlowerSkull: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="FlowerSkull";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_FlowerSkull_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_ShrimplytheBest: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="ShrimplytheBest";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_ShrimplytheBest_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_ForestStag: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="ForestStag";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_ForestStag_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Shroom: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Shroom";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Shroom_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_FortuneTeller: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="FortuneTeller";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_FortuneTeller_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_SkullandMoon: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="SkullandMoon";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_SkullandMoon_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_FuckOff: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="FuckOff";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_FuckOff_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_SkullandRoses: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="SkullandRoses";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_SkullandRoses_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Gambling: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Gambling";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Gambling_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_StPatricksDay: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="StPatricksDay";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_StPatricksDay_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Ganesh: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Ganesh";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Ganesh_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_StayBrutal: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="StayBrutal";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_StayBrutal_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_GangsterSkull: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="GangsterSkull";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_GangsterSkull_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_StayWeird: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="StayWeird";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_StayWeird_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Genius: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Genius";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Genius_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Stonemason: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Stonemason";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Stonemason_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_GirlGangGreen: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="GirlGangGreen";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_GirlGangGreen_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Stoner: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Stoner";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Stoner_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_GirlGangRed: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="GirlGangRed";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_GirlGangRed_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Taco: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Taco";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Taco_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_GothRose: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="GothRose";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_GothRose_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Tailor1: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Tailor1";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Tailor_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Graffiti: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Graffiti";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Graffiti_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Taxidermy: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Taxidermy";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Taxidermy_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_GunsandAmmo: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="GunsandAmmo";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_GunsandAmmo_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Thanksgiving: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Thanksgiving";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Thanksgiving_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Halloween: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Halloween";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Halloween_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_TheEndisNigh: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="TheEndisNigh";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_TheEndisNigh_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HandInHand: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HandInHand";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HandInHand_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_ThreeBears: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="ThreeBears";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_ThreeBears_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HappyDiwali: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HappyDiwali";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HappyDiwali_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Tiger: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Tiger";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Tiger_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HappyPassover: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HappyPassover";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HappyPassover_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Tinny: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Tinny";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Tinny_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HardToKidnap: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HardToKidnap";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HardToKidnap_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_TownHall: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="TownHall";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_TownHall_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HellYeah: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HellYeah";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HellYeah_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Trader1: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Trader1";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Trader_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HippyPeace: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HippyPeace";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HippyPeace_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_TrickorTreat: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="TrickorTreat";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_TrickorTreat_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HowlingWolf: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HowlingWolf";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HowlingWolf_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Trustno1: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Trustno1";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Trustno1_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_HummingBird: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="HummingBird";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_HummingBird_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_UnderestimateMe: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="UnderestimateMe";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_UnderestimateMe_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_IGetShitDone: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="IGetShitDone";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_IGetShitDone_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_UnicornVomit: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="UnicornVomit";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_UnicornVomit_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_ILoveBooks: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="ILoveBooks";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_ILoveBooks_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_University: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="University";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_University_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_IPutASpellOnYou: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="IPutASpellOnYou";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_IPutASpellOnYou_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_VIP: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="VIP";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_VIP_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_IceCreamTruck: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="IceCreamTruck";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_IceCreamTruck_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_ValentineDay: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="ValentineDay";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_ValentineDay_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_IceCream: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="IceCream";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_IceCream_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_VampyricCastle: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="VampyricCastle";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_VampyricCastle_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Illuminati: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Illuminati";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Illuminati_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Vet: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Vet";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Vet_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_InMyDefense: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="InMyDefense";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_InMyDefense_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Veteran: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Veteran";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Veteran_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Jail: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Jail";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Jail_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Weed: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Weed";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Weed_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_JapanRisingSun: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="JapanRisingSun";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_JapanRisingSun_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Wicca: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Wicca";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Wicca_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_JapaneseteaHouse: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="JapaneseteaHouse";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_JapaneseteaHouse_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_WildTurkey: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="WildTurkey";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_WildTurkey_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Jesus: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Jesus";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Jesus_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Winner: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Winner";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Winner_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_JustMarried: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="JustMarried";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_JustMarried_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_WitchyEye: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="WitchyEye";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_WitchyEye_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Karaoke: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Karaoke";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Karaoke_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_WithinRange: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="WithinRange";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_WithinRange_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Katanas: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Katanas";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Katanas_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Wizard: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Wizard";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Wizard_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_KeepOut: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="KeepOut";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_KeepOut_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_YeeHaw: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="YeeHaw";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_YeeHaw_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_KillerCat: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="KillerCat";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_KillerCat_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Yeti: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Yeti";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Yeti_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_KillerClown: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="KillerClown";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_KillerClown_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_YippyKiYay: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="YippyKiYay";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_YippyKiYay_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Kitsune: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Kitsune";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Kitsune_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+    class SRP_PatchFlag_Kraken: SRP_PatchFlag_ColorBase
+    {
+        scope=2;
+        color="Kraken";
+        hiddenSelectionsTextures[]=
+        {
+            "Survivalists_Retextures\gear\patches\data\flag\FlagPatch_Kraken_co.paa",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag_co.paa"
+        };
+    };
+
+
+
+
 	class SRP_PatchLogo_SquadLeader: SRP_PatchLogo_ColorBase
 	{
 		scope=2;
@@ -2767,44 +4727,26 @@ class CfgVehicles
 		};
 	};
 
-  class SRP_BeltFlag_Basic: SRP_BeltFlag_ColorBase
-  {
-    scope=2;
-  };
-  class SRP_BeltFlag_Espen: SRP_BeltFlag_ColorBase
-  {
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_espen_co.paa"
-		};
-  };
-  class SRP_BeltFlag_Stag: SRP_BeltFlag_ColorBase
-  {
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_stag_co.paa"
-		};
-  };
-  class SRP_BeltFlag_LnS: SRP_BeltFlag_ColorBase
-  {
-    scope=2;
-    hiddenSelections[]=
-		{
-			"zbytek"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_lns_co.paa"
-		};
-  };
+    class SRP_BeltFlag_Basic: SRP_BeltFlag_ColorBase
+    {
+        scope=2;
+    };
+    class SRP_BeltFlag_Espen: SRP_BeltFlag_ColorBase
+    {
+        scope=2;
+        hiddenSelections[]={"zbytek"};
+        hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_espen_co.paa"};
+    };
+    class SRP_BeltFlag_Stag: SRP_BeltFlag_ColorBase
+    {
+        scope=2;
+        hiddenSelections[]={"zbytek"};
+        hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_stag_co.paa"};
+    };
+    class SRP_BeltFlag_LnS: SRP_BeltFlag_ColorBase
+    {
+        scope=2;
+        hiddenSelections[]={"zbytek"};
+        hiddenSelectionsTextures[]={"Survivalists_Retextures\gear\patches\data\beltflag\srp_beltflag_lns_co.paa"};
+    };
 };

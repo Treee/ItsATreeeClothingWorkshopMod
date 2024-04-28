@@ -17,7 +17,7 @@ class ActionSwitchSingleArmbandOptionCB extends ActionContinuousBaseCB
 };
 
 class ActionSwitchSingleArmbandOption extends ActionContinuousBase
-{	
+{
   int m_SubstringStartIndex = 0;
   void ActionSwitchSingleArmbandOption()
 	{
@@ -34,9 +34,9 @@ class ActionSwitchSingleArmbandOption extends ActionContinuousBase
 			GetVariantManager().GetOnUpdateInvoker().Insert(OnUpdateActions);
 		}
 	}
-	
-	override void CreateConditionComponents()  
-	{	
+
+	override void CreateConditionComponents()
+	{
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTSelf;
 	}
@@ -53,7 +53,7 @@ class ActionSwitchSingleArmbandOption extends ActionContinuousBase
 	}
 
   override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
-	{	
+	{
     SRP_IntermediateCraftingKitBase intermediateKit;
     // Print("Item: " + item);
     if (Class.CastTo(intermediateKit, item))
@@ -65,7 +65,7 @@ class ActionSwitchSingleArmbandOption extends ActionContinuousBase
 	}
 
   override void OnFinishProgressServer( ActionData action_data )
-	{	
+	{
     SRP_IntermediateCraftingKitBase intermediateKit;
 		if (action_data.m_MainItem && Class.CastTo(intermediateKit, action_data.m_MainItem))
 		{
@@ -84,15 +84,15 @@ class ActionSwitchSingleArmbandOption extends ActionContinuousBase
 	}
 
   override bool SetupAction( PlayerBase player, ActionTarget target, ItemBase item, out ActionData action_data, Param extra_data = NULL )
-	{	
+	{
 		if ( super.SetupAction( player, target, item, action_data, extra_data ) )
-		{			
+		{
 			if ( !GetGame().IsDedicatedServer() )
 			{
 				ArmbandSwitchData.Cast(action_data).m_ArmbandId = m_VariantID;
 			}
 			return true;
-		}		
+		}
 		return false;
 	}
 
@@ -106,7 +106,7 @@ class ActionSwitchSingleArmbandOption extends ActionContinuousBase
 	{
 		action_recive_data = new ArmbandSwitchReciveData;
 		super.ReadFromContext(ctx, action_recive_data);
-		
+
 		int variantId;
 		if ( ctx.Read(variantId) )
 		{
@@ -122,7 +122,7 @@ class ActionSwitchSingleArmbandOption extends ActionContinuousBase
 
   override void HandleReciveData(ActionReciveData action_recive_data, ActionData action_data)
 	{
-		super.HandleReciveData(action_recive_data, action_data);    
+		super.HandleReciveData(action_recive_data, action_data);
 		ArmbandSwitchData.Cast(action_data).m_ArmbandId = ArmbandSwitchReciveData.Cast( action_recive_data ).m_ArmbandId;
 	}
 
@@ -143,43 +143,66 @@ class ActionSwitchSingleArmbandOption extends ActionContinuousBase
   TStringArray GetArmbandOptions()
   {
     return {
-      "Armband_White",
-      "Armband_Yellow",
-      "Armband_Orange",
-      "Armband_Red",
-      "Armband_Green",
-      "Armband_Pink",
-      "Armband_Blue",
-      "Armband_Black",
-      "Armband_Chernarus",
-      "Armband_Chedaki",
-      "Armband_NAPA",
-      "Armband_CDF",
-      "Armband_Livonia",
-      "Armband_Altis",
-      "Armband_SSahrani",
-      "Armband_NSahrani",
-      "Armband_DayZ",
-      "Armband_LivoniaArmy",
-      "Armband_Bohemia",
-      "Armband_APA",
-      "Armband_UEC",
-      "Armband_Pirates",
-      "Armband_Cannibals",
-      "Armband_Bear",
-      "Armband_Wolf",
-      "Armband_BabyDeer",
-      "Armband_Rooster",
-      "Armband_LivoniaPolice",
-      "Armband_CMC",
-      "Armband_TEC",
-      "Armband_CHEL",
-      "Armband_Zenit",
-      "Armband_HunterZ",
-      "Armband_BrainZ",
-      "Armband_Refuge",
-      "Armband_RSTA",
-      "Armband_Snake",
+        "Armband_White",
+        "Armband_Yellow",
+        "Armband_Orange",
+        "Armband_Red",
+        "Armband_Green",
+        "Armband_Pink",
+        "Armband_Blue",
+        "Armband_Black",
+        "Armband_Chernarus",
+        "Armband_Chedaki",
+        "Armband_NAPA",
+        "Armband_CDF",
+        "Armband_Livonia",
+        "Armband_Altis",
+        "Armband_SSahrani",
+        "Armband_NSahrani",
+        "Armband_DayZ",
+        "Armband_LivoniaArmy",
+        "Armband_Bohemia",
+        "Armband_APA",
+        "Armband_UEC",
+        "Armband_Pirates",
+        "Armband_Cannibals",
+        "Armband_Bear",
+        "Armband_Wolf",
+        "Armband_BabyDeer",
+        "Armband_Rooster",
+        "Armband_LivoniaPolice",
+        "Armband_CMC",
+        "Armband_TEC",
+        "Armband_CHEL",
+        "Armband_Zenit",
+        "Armband_HunterZ",
+        "Armband_BrainZ",
+        "Armband_Refuge",
+        "Armband_RSTA",
+        "Armband_Snake",
+        "Armband_BisexualFlag",
+        "Armband_MotherOfAll",
+        "Armband_BrainPlate",
+        "Armband_MushroomDrawing",
+        "Armband_FaceDry",
+        "Armband_Mushroom",
+        "Armband_GBPrideFlag",
+        "Armband_Octopus",
+        "Armband_HeterosexualFlag",
+        "Armband_PrideFlag",
+        "Armband_HummingBird",
+        "Armband_Reaper",
+        "Armband_Ireland",
+        "Armband_SantaMuerte",
+        "Armband_JeMeSouviens",
+        "Armband_TransFlag",
+        "Armband_Jurassic",
+        "Armband_Turkey",
+        "Armband_Kraken",
+        "Armband_Ukraine",
+        "Armband_Lilith",
+        "Armband_ViveLeQuebecWeed",
+        "Armband_MaineState",
     };
   }
 };
@@ -216,63 +239,86 @@ class ActionSwitchDoubleArmbandOption extends ActionSwitchSingleArmbandOption
   override TStringArray GetArmbandOptions()
   {
     return {
-      "Armband_Bandit",
-      "Armband_Blacker",
-      "Armband_DarkerBluer",
-      "Armband_DarkerPurpler",
-      "Armband_Greener",
-      "Armband_DarkerGreyer",
-      "Armband_Bluer",
-      "Armband_Greyer",
-      "Armband_Lime",
-      "Armband_Medic",
-      "Armband_Medic1",
-      "Armband_Medic2",
-      "Armband_Medic3",
-      "Armband_Medic4",
-      "Armband_Oranger",
-      "Armband_Pinker",
-      "Armband_Purpler",
-      "Armband_Redder",
-      "Armband_Teal",
-      "Armband_Yellower",
-      "Armband_White",
-      "Armband_Yellow",
-      "Armband_Orange",
-      "Armband_Red",
-      "Armband_Green",
-      "Armband_Pink",
-      "Armband_Blue",
-      "Armband_Black",
-      "Armband_Chernarus",
-      "Armband_Chedaki",
-      "Armband_NAPA",
-      "Armband_CDF",
-      "Armband_Livonia",
-      "Armband_Altis",
-      "Armband_SSahrani",
-      "Armband_NSahrani",
-      "Armband_DayZ",
-      "Armband_LivoniaArmy",
-      "Armband_Bohemia",
-      "Armband_APA",
-      "Armband_UEC",
-      "Armband_Pirates",
-      "Armband_Cannibals",
-      "Armband_Bear",
-      "Armband_Wolf",
-      "Armband_BabyDeer",
-      "Armband_Rooster",
-      "Armband_LivoniaPolice",
-      "Armband_CMC",
-      "Armband_TEC",
-      "Armband_CHEL",
-      "Armband_Zenit",
-      "Armband_HunterZ",
-      "Armband_BrainZ",
-      "Armband_Refuge",
-      "Armband_RSTA",
-      "Armband_Snake",
+        "Armband_Bandit",
+        "Armband_Blacker",
+        "Armband_DarkerBluer",
+        "Armband_DarkerPurpler",
+        "Armband_Greener",
+        "Armband_DarkerGreyer",
+        "Armband_Bluer",
+        "Armband_Greyer",
+        "Armband_Lime",
+        "Armband_Medic",
+        "Armband_Medic1",
+        "Armband_Medic2",
+        "Armband_Medic3",
+        "Armband_Medic4",
+        "Armband_Oranger",
+        "Armband_Pinker",
+        "Armband_Purpler",
+        "Armband_Redder",
+        "Armband_Teal",
+        "Armband_Yellower",
+        "Armband_White",
+        "Armband_Yellow",
+        "Armband_Orange",
+        "Armband_Red",
+        "Armband_Green",
+        "Armband_Pink",
+        "Armband_Blue",
+        "Armband_Black",
+        "Armband_Chernarus",
+        "Armband_Chedaki",
+        "Armband_NAPA",
+        "Armband_CDF",
+        "Armband_Livonia",
+        "Armband_Altis",
+        "Armband_SSahrani",
+        "Armband_NSahrani",
+        "Armband_DayZ",
+        "Armband_LivoniaArmy",
+        "Armband_Bohemia",
+        "Armband_APA",
+        "Armband_UEC",
+        "Armband_Pirates",
+        "Armband_Cannibals",
+        "Armband_Bear",
+        "Armband_Wolf",
+        "Armband_BabyDeer",
+        "Armband_Rooster",
+        "Armband_LivoniaPolice",
+        "Armband_CMC",
+        "Armband_TEC",
+        "Armband_CHEL",
+        "Armband_Zenit",
+        "Armband_HunterZ",
+        "Armband_BrainZ",
+        "Armband_Refuge",
+        "Armband_RSTA",
+        "Armband_Snake",
+        "Armband_BisexualFlag",
+        "Armband_MotherOfAll",
+        "Armband_BrainPlate",
+        "Armband_MushroomDrawing",
+        "Armband_FaceDry",
+        "Armband_Mushroom",
+        "Armband_GBPrideFlag",
+        "Armband_Octopus",
+        "Armband_HeterosexualFlag",
+        "Armband_PrideFlag",
+        "Armband_HummingBird",
+        "Armband_Reaper",
+        "Armband_Ireland",
+        "Armband_SantaMuerte",
+        "Armband_JeMeSouviens",
+        "Armband_TransFlag",
+        "Armband_Jurassic",
+        "Armband_Turkey",
+        "Armband_Kraken",
+        "Armband_Ukraine",
+        "Armband_Lilith",
+        "Armband_ViveLeQuebecWeed",
+        "Armband_MaineState",
     };
   }
 };

@@ -19,194 +19,205 @@ class CfgVehicles
 {
   class SRP_KitBase;
 
-	class Clothing;  
+	class Clothing;
   class Inventory_Base;
   class Armband_ColorBase;
 //------------------------------ VANILLA OVERRIDE
-  class Flag_Base: Inventory_Base
+    class Flag_Base: Inventory_Base
 	{
-    color="white";
-    rootClassName="Flag";
-    inventorySlot[]+=
-    {
-      "SRP_FlagPole1",
-			"SRP_FlagPole2",
-			"SRP_FlagPole3",
-			"SRP_FlagPole4",
-			"SRP_FlagPole5",
-      "SRP_VanillaFlag",
-      "SRP_FlagBelt",
-    };
-    colorVariants[]=
-    {
-      "Chernarus",
-      "Chedaki",
-      "NAPA",
-      "CDF",
-      "Livonia",
-      "Altis",
-      "SSahrani",
-      "NSahrani",
-      "DayZ",
-      "LivoniaArmy",
-      "White",
-      "Bohemia",
-      "APA",
-      "UEC",
-      "Pirates",
-      "Cannibals",
-      "Bear",
-      "Bisexual",
-      "Wolf",
-      "BabyDeer",
-      "Rooster",
-      "LivoniaPolice",
-      "CMC",
-      "TEC",
-      "CHEL",
-      "Zenit",
-      "HunterZ",
-      "BrainZ",
-      "Refuge",
-      "RSTA",
-      "Snake",
-      "Crook",
-      "Rex",
-      "Zagorky",
-      "Mermaid",
-      "WildTurkey",
-      "Australia",
-      "Canada",
-      "KentuckyCommonWealth",
-      "France",
-      "Germany",
-      "Italy",
-      "Ireland",
-      "Japan",
-      "Japan1",
-      "JeMeSouviens",
-      "Jurrasic",
-      "MaineState",
-      "Mexico",
-      "Portugal",
-      "QuebecWeed",
-      "Russia",
-      "Spain",
-      "Turkey",
-      "UK",
-      "Ukraine",
-      "USADamaged",    
-      "Pride1",
-      "Pride2",
-      "Pride3",
-      "Pride4",
-      "Hetero",
-      "4thOfJuly",
-      "AlchemyWood",
-      "AlchemyBlack",
-      "Alien",
-      "AmericanIndian",
-      "Bandit",
-      "BaphometDevil",
-      "Barber",
-      "BeachSunset",
-      "Biker",
-      "Blacksmith",
-      "Brewery",
-      "Builder",
-      "Butcher",
-      "Campfire",
-      "Camping",
-      "Carpentry",
-      "Circus",
-      "Club",
-      "ComedyClub",
-      "CottageCoreFrog",
-      "Courier",
-      "Cowboy",
-      "CrueltyFree",
-      "Deli",
-      "Easter",
-      "Esoteric",
-      "EvilCat",
-      "EyeofHorusEgyptian",
-      "FaithHopeLove",
-      "FarmersMarket",
-      "Fisherman",
-      "FlowerSkull",
-      "ForestStag",
-      "FortuneTeller",
-      "FuckOff",
-      "Gambling",
-      "Ganesh",
-      "GothRose",
-      "Graffiti",
-      "GunsandAmmo",
-      "Halloween",
-      "HappyDiwali",
-      "HappyPassover",
-      "HippyPeace",
-      "IceCream",
-      "Jail",
-      "JapaneseteaHouse",
-      "JapanRisingSun",
-      "Jesus",
-      "Karaoke",
-      "KeepOut",
-      "KillerClown",
-      "Knight",
-      "LandoftheFree",
-      "Lawyer",
-      "Leatherwork",
-      "Library",
-      "LiveMusic",
-      "MedicalMarijuana",
-      "Medical",
-      "Medusa",
-      "MerryXmas",
-      "News",
-      "NoFear",
-      "Norse",
-      "OnAir",
-      "Persian",
-      "Pizza",
-      "PrawnGod",
-      "Quarantine",
-      "Radioactive",
-      "Ramadan",
-      "Raven",
-      "RecordStore",
-      "SadPug",
-      "Science",
-      "Scottish",
-      "ScubaClub",
-      "Seafood",
-      "SkullandMoon",
-      "Snowman",
-      "Stonemason",
-      "Stoner",
-      "StPatricksDay",
-      "Taco",
-      "Tailor",
-      "Taxidermy",
-      "Thanksgiving",
-      "TheEndisNigh",
-      "ThreeBears",
-      "Tiger",
-      "Tinny",
-      "TownHall",
-      "Trader",
-      "TrickorTreat",
-      "Trustno1",
-      "UnicornVomit",
-      "University",
-      "ValentineDay",
-      "VampyricCastle",
-      "Vet",
-      "Wicca",
-      "Wizard",
-      "Yeti",
-    };
+        color="white";
+        rootClassName="Flag";
+        inventorySlot[]+=
+        {
+        "SRP_FlagPole1",
+                "SRP_FlagPole2",
+                "SRP_FlagPole3",
+                "SRP_FlagPole4",
+                "SRP_FlagPole5",
+        "SRP_VanillaFlag",
+        "SRP_FlagBelt",
+        };
+        colorVariants[]=
+        {
+            "Chernarus",
+            "Chedaki",
+            "NAPA",
+            "CDF",
+            "Livonia",
+            "Altis",
+            "SSahrani",
+            "NSahrani",
+            "DayZ",
+            "LivoniaArmy",
+            "White",
+            "Bohemia",
+            "APA",
+            "UEC",
+            "Pirates",
+            "Cannibals",
+            "Bear",
+            "Bisexual",
+            "Wolf",
+            "BabyDeer",
+            "Rooster",
+            "LivoniaPolice",
+            "CMC",
+            "TEC",
+            "CHEL",
+            "Zenit",
+            "HunterZ",
+            "BrainZ",
+            "Refuge",
+            "RSTA",
+            "Snake",
+            "Crook",
+            "Rex",
+            "Zagorky",
+            "Mermaid",
+            "WildTurkey",
+            "Australia",
+            "Canada",
+            "KentuckyCommonWealth",
+            "France",
+            "Germany",
+            "Italy",
+            "Ireland",
+            "Japan",
+            "Japan1",
+            "JeMeSouviens",
+            "Jurrasic",
+            "MaineState",
+            "Mexico",
+            "Portugal",
+            "QuebecWeed",
+            "Russia",
+            "Spain",
+            "Turkey",
+            "UK",
+            "Ukraine",
+            "USADamaged",
+            "Pride1",
+            "Pride2",
+            "Pride3",
+            "Pride4",
+            "Hetero",
+            "4thOfJuly",
+            "AlchemyWood",
+            "AlchemyBlack",
+            "Alien",
+            "AmericanIndian",
+            "Bandit",
+            "BaphometDevil",
+            "Barber",
+            "BeachSunset",
+            "Biker",
+            "Blacksmith",
+            "Brewery",
+            "Builder",
+            "Butcher",
+            "Campfire",
+            "Camping",
+            "Carpentry",
+            "Circus",
+            "Club",
+            "ComedyClub",
+            "CottageCoreFrog",
+            "Courier",
+            "Cowboy",
+            "CrueltyFree",
+            "Deli",
+            "Easter",
+            "Esoteric",
+            "EvilCat",
+            "EyeofHorusEgyptian",
+            "FaithHopeLove",
+            "FarmersMarket",
+            "Fisherman",
+            "FlowerSkull",
+            "ForestStag",
+            "FortuneTeller",
+            "FuckOff",
+            "Gambling",
+            "Ganesh",
+            "GothRose",
+            "Graffiti",
+            "GunsandAmmo",
+            "Halloween",
+            "HappyDiwali",
+            "HappyPassover",
+            "HippyPeace",
+            "IceCream",
+            "Jail",
+            "JapaneseteaHouse",
+            "JapanRisingSun",
+            "Jesus",
+            "Karaoke",
+            "KeepOut",
+            "KillerClown",
+            "Knight",
+            "LandoftheFree",
+            "Lawyer",
+            "Leatherwork",
+            "Library",
+            "LiveMusic",
+            "MedicalMarijuana",
+            "Medical",
+            "Medusa",
+            "MerryXmas",
+            "News",
+            "NoFear",
+            "Norse",
+            "OnAir",
+            "Persian",
+            "Pizza",
+            "PrawnGod",
+            "Quarantine",
+            "Radioactive",
+            "Ramadan",
+            "Raven",
+            "RecordStore",
+            "SadPug",
+            "Science",
+            "Scottish",
+            "ScubaClub",
+            "Seafood",
+            "SkullandMoon",
+            "Snowman",
+            "Stonemason",
+            "Stoner",
+            "StPatricksDay",
+            "Taco",
+            "Tailor",
+            "Taxidermy",
+            "Thanksgiving",
+            "TheEndisNigh",
+            "ThreeBears",
+            "Tiger",
+            "Tinny",
+            "TownHall",
+            "Trader",
+            "TrickorTreat",
+            "Trustno1",
+            "UnicornVomit",
+            "University",
+            "ValentineDay",
+            "VampyricCastle",
+            "Vet",
+            "Wicca",
+            "Wizard",
+            "Yeti",
+            "BrainPlate",
+            "Lilith",
+            "Octopus",
+            "FaceDry",
+            "MotherOfAll",
+            "Reaper",
+            "HummingBird",
+            "MushroomDrawing",
+            "SantaMuerte",
+            "Kraken",
+            "Mushroom",
+        };
 	};
 //------------------------------ FLAG BELT
   class SRP_BeltFlag_ColorBase: Inventory_Base
@@ -239,11 +250,11 @@ class CfgVehicles
 				{
 					hitpoints=100;
 					healthLevels[]=
-					{						
-						{1,{""}},						
-						{0.69999999,{""}},						
-						{0.5,{""}},						
-						{0.30000001,{""}},						
+					{
+						{1,{""}},
+						{0.69999999,{""}},
+						{0.5,{""}},
+						{0.30000001,{""}},
 						{0,{""}}
 					};
 				};
@@ -315,7 +326,7 @@ class CfgVehicles
       "patch_03",
       "patch_04",
       "SRP_Patch",
-      "SRP_PatchMirror",      
+      "SRP_PatchMirror",
       "SRP_DisplayHook_PatchArmband",
     };
 		hiddenSelections[]=
@@ -350,7 +361,7 @@ class CfgVehicles
           };
 				};
 			};
-		};		
+		};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\gear\patches\srp_patcharmbandflag.p3d";
@@ -381,7 +392,7 @@ class CfgVehicles
     descriptionShort="An empty cloth patch. Add some thread and elbow grease to sew the finished patch.";
     inventorySlot="";
     attachments[]=
-		{	
+		{
 			"SRP_SewingThread1",
       "SRP_SewingThread2"
 		};
@@ -394,7 +405,7 @@ class CfgVehicles
     descriptionShort="An empty cloth patch. Add some thread and elbow grease to sew the finished patch.";
     inventorySlot="";
     attachments[]=
-		{	
+		{
 			"SRP_SewingThread1",
       "SRP_SewingThread2"
 		};
@@ -404,10 +415,10 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Single Armband Kit - Empty Canvas";
-    descriptionShort="An empty cloth armband. Add some thread and elbow grease to sew the finished patch.";
+    descriptionShort="An empty cloth armband. Add some thread and elbow grease to sew the finished armband.";
     inventorySlot="";
     attachments[]=
-		{	
+		{
 			"SRP_SewingThread1",
       "SRP_SewingThread2"
 		};
@@ -417,17 +428,17 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Double Armband Kit - Empty Canvas";
-    descriptionShort="An empty cloth armband. Add some thread and elbow grease to sew the finished patch.";
+    descriptionShort="An empty cloth armband. Add some thread and elbow grease to sew the finished armband.";
     inventorySlot="";
     attachments[]=
-		{	
+		{
 			"SRP_SewingThread1",
       "SRP_SewingThread2"
 		};
 	};
 
   class SRP_Armband_Base: Clothing
-	{	
+	{
 		scope=2;
 		displayName="Leather Armband";
 		descriptionShort="A piece of leather fashioned into an armband";
@@ -436,7 +447,7 @@ class CfgVehicles
 		repairCosts[]={30,25};
 		// rotationFlags=16;
 		inventorySlot[]=
-    {    
+    {
       "Armband",
       "SRP_DisplayHook_LeatherArmband",
     };
@@ -494,10 +505,10 @@ class CfgVehicles
 				};
 			};
 		};
-	};  
+	};
 
   class SRP_DoubleArmband_ColorBase: Clothing
-	{	
+	{
 		scope=0;
 		displayName="$STR_CfgVehicles_Armband_ColorBase0";
 		descriptionShort="$STR_CfgVehicles_Armband_ColorBase1";
@@ -544,7 +555,7 @@ class CfgVehicles
 			"\DZ\characters\tops\data\armbend_big_white_co.paa",
 			"\DZ\characters\tops\data\armbend_big_white_co.paa",
 			"\DZ\characters\tops\data\armbend_big_white_co.paa",
-		};	
+		};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\gear\patches\srp_doublearmband_m.p3d";
@@ -584,7 +595,7 @@ class CfgVehicles
 				};
 			};
 		};
-	};  
+	};
 //---------------------------- LOGO PATCHES
 	class SRP_PatchLogo_ColorBase: Clothing
 	{
@@ -603,14 +614,14 @@ class CfgVehicles
       "patch_03",
       "patch_04",
       "SRP_Patch",
-      "SRP_PatchMirror",      
+      "SRP_PatchMirror",
       "SRP_DisplayHook_PatchArmband",
     };
 		hiddenSelections[]=
     {
       "zbytek",
       "armband"
-    };    
+    };
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\patch_a10.paa",
@@ -638,7 +649,7 @@ class CfgVehicles
           };
 				};
 			};
-		};		
+		};
 		class ClothingTypes
 		{
 			male="Survivalists_Mods\gear\patches\srp_patcharmbandlogo.p3d";
@@ -704,7 +715,7 @@ class CfgVehicles
 		};
 	};
   class SRP_Armband_Event_Generic: SRP_Armband_Base
-	{	
+	{
     scope=2;
     hiddenSelections[]=
 		{
@@ -713,7 +724,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\SRParmband_event_co.paa"
-		};	
+		};
   };
 
   class SRP_DoubleArmband_Event_Espen: SRP_DoubleArmband_ColorBase
@@ -756,7 +767,7 @@ class CfgVehicles
 		};
 	};
   class SRP_Armband_Event_Espen: SRP_Armband_Base
-	{	
+	{
     scope=2;
     hiddenSelections[]=
 		{
@@ -765,7 +776,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\SRParmband_event_espen_co.paa"
-		};	
+		};
   };
 
   class SRP_DoubleArmband_Event_Stag: SRP_DoubleArmband_ColorBase
@@ -808,7 +819,7 @@ class CfgVehicles
 		};
 	};
   class SRP_Armband_Event_Stag: SRP_Armband_Base
-	{	
+	{
     scope=2;
     hiddenSelections[]=
 		{
@@ -817,7 +828,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"Survivalists_Mods\gear\patches\data\SRParmband_event_stag_co.paa"
-		};	
+		};
   };
 
 };
