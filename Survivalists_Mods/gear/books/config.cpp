@@ -6,8 +6,9 @@ class CfgPatches
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
-		{			
+		{
 			"DZ_Data",
+            "Dressupbox_Items"
 		};
 	};
 };
@@ -16,7 +17,7 @@ class CfgVehicles
   class Inventory_Base;
 
   //----------------------------------------- MODDED OVERRIDE
-  class DUB_Newspaper_1: Inventory_Base
+  class DUB_Newspaper_Base: Inventory_Base
 	{
     inventorySlot[]+=
 		{

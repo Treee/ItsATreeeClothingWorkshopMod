@@ -19,7 +19,7 @@ modded class SRP_ConsumableDrug_Colorbase
     return true;
   }
 };
-modded class DUB_Newspaper_1
+modded class DUB_Newspaper_Base
 {
   override bool CanBeStoredInNotebook()
   {
