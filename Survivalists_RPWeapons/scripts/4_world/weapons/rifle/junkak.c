@@ -12,74 +12,76 @@ class junkak extends RifleBoltLock_Base
 		inventory.CreateInInventory( "Battery9V" );
 	}
 
-  override bool CanDisplayAttachmentSlot(int slot_id)
-  {
-    if (super.CanDisplayAttachmentSlot(slot_id))
+    override bool CanDisplayAttachmentSlot(int slot_id)
     {
-      // restrict only one optic showing at a time when others are attached
-      string slotName = InventorySlots.GetSlotName(slot_id);
-      if (slotName == "weaponFlashlight" || slotName == "weaponBayonetAK")
-      {
-        if (FindAttachmentBySlotName("weaponHandguardAK"))
-          return true; // show slots when handguard is attached
-        return false;
-      }
-      if (slotName == "weaponOpticsAK")
-      { // ak slot
-        if (FindAttachmentBySlotName("AKRISAdapter"))
-        { // ris attached
-          if (FindAttachmentBySlotName("weaponOptics")) // m4 optic attached
-            return false;
-          return true;
+        if (super.CanDisplayAttachmentSlot(slot_id))
+        {
+            // restrict only one optic showing at a time when others are attached
+            string slotName = InventorySlots.GetSlotName(slot_id);
+            if (slotName == "weaponFlashlight" || slotName == "weaponBayonetAK")
+            {
+                if (FindAttachmentBySlotName("weaponHandguardAK"))
+                    return true; // show slots when handguard is attached
+                return false;
+            }
+            else if (slotName == "weaponOpticsAK")
+            { // ak slot
+                if (FindAttachmentBySlotName("AKRISAdapter"))
+                { // ris attached
+                    if (FindAttachmentBySlotName("weaponOptics")) // m4 optic attached
+                        return false;
+                    return true;
+                }
+                return false;
+            }
+            else if (slotName == "weaponOptics")
+            { // m4 slot
+                if (FindAttachmentBySlotName("AKRISAdapter"))
+                { // ris attached
+                    if (FindAttachmentBySlotName("weaponOpticsAK")) // ak optic attached
+                        return false;
+                    return true;
+                }
+                return false;
+            }
+            return true;
         }
         return false;
-      }
-      if (slotName == "weaponOptics")
-      { // m4 slot
-        if (FindAttachmentBySlotName("AKRISAdapter"))
-        { // ris attached
-          if (FindAttachmentBySlotName("weaponOpticsAK")) // ak optic attached
-            return false;
-          return true;
-        }
-        return false;
-      }
-      return true;
     }
-    return false;
-  }
-  override bool CanReceiveAttachment( EntityAI attachment, int slotId )
-	{
-    if (super.CanReceiveAttachment(attachment, slotId))
+    override bool CanReceiveAttachment( EntityAI attachment, int slotId )
     {
-      // restrict only one optic showing at a time when others are attached
-      string slotName = InventorySlots.GetSlotName(slotId);
-      if (slotName == "weaponFlashlight" || slotName == "weaponBayonetAK")
-      {
-        if (FindAttachmentBySlotName("weaponHandguardAK"))
-          return true; // show slots when handguard is attached
+        if (super.CanReceiveAttachment(attachment, slotId))
+        {
+            // restrict only one optic showing at a time when others are attached
+            string slotName = InventorySlots.GetSlotName(slotId);
+            if (slotName == "weaponFlashlight" || slotName == "weaponBayonetAK")
+            {
+                if (FindAttachmentBySlotName("weaponHandguardAK"))
+                    return true; // show slots when handguard is attached
+                return false;
+            }
+            else if (slotName == "weaponOpticsAK")
+            { // ak slot
+                if (FindAttachmentBySlotName("AKRISAdapter"))
+                { // ris attached
+                    if (FindAttachmentBySlotName("weaponOptics")) // m4 optic attached
+                        return false;
+                    return true;
+                }
+                return false;
+            }
+            else if (slotName == "weaponOptics")
+            { // m4 slot
+                if (FindAttachmentBySlotName("AKRISAdapter"))
+                { // ris attached
+                    if (FindAttachmentBySlotName("weaponOpticsAK")) // ak optic attached
+                        return false;
+                    return true;
+                }
+                return false;
+            }
+            return true;
+        }
         return false;
-      }
-      if (slotName == "weaponOpticsAK")
-      { // ak slot
-        if (FindAttachmentBySlotName("AKRISAdapter"))
-        { // ris attached
-          if (FindAttachmentBySlotName("weaponOptics")) // m4 optic attached
-            return false;
-          return true;
-        }
-      }
-      if (slotName == "weaponOptics")
-      { // m4 slot
-        if (FindAttachmentBySlotName("AKRISAdapter"))
-        { // ris attached
-          if (FindAttachmentBySlotName("weaponOpticsAK")) // ak optic attached
-            return false;
-          return true;
-        }
-      }
-      return true;
     }
-		return false;
-	}
 };

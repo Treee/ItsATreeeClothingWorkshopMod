@@ -20,7 +20,7 @@ class SRP_SwapBrewingJug extends ActionSingleUseBase
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
 	{
-		if (item && item.GetQuantity() == 0)
+		if (item && item.GetQuantity() <= 1000)
 			return true;
 		return false;
 	}
@@ -29,9 +29,9 @@ class SRP_SwapBrewingJug extends ActionSingleUseBase
 
 	override void OnExecuteServer( ActionData action_data )
 	{
-    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, GetNextItemName(action_data.m_MainItem.GetType()), action_data.m_Player);
-    lambda.SetTransferParams(false, false, true, false, 0);
-    action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);		
+        TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(action_data.m_MainItem, GetNextItemName(action_data.m_MainItem.GetType()), action_data.m_Player);
+        lambda.SetTransferParams(false, false, true, false, 0);
+        action_data.m_Player.ServerReplaceItemInHandsWithNew(lambda);
 	}
 
   string GetNextItemName(string itemName)
