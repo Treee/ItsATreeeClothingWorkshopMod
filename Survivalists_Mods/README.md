@@ -141,7 +141,7 @@ Here are a few custom belts pulled from various sources. See the attributions be
 
 ### Lab Tubes
 
-5 colors of lab tubes that can be added to a Lab Tube Rack. Combine colors and try to discover the recipe's that exist for science!  
+5 colors of lab tubes that can be added to a Lab Tube Rack. Combine colors and try to discover the recipe's that exist for science!
 ![Clear Lab Tube](../doc/dayz_tools/tree_mod_images/lab-tube-clear.png)
 ![Blue Lab Tube](../doc/dayz_tools/tree_mod_images/lab-tube-blue.png)
 ![Green Lab Tube](../doc/dayz_tools/tree_mod_images/lab-tube-green.png)
@@ -1047,6 +1047,10 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 - "Casque viking - Viking helmet" (https://skfb.ly/oo77K) by Anydhark is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Neverwinter Nights Sword" (https://skfb.ly/OrHC) by Yogensia is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+- "Wooden Pipe" (https://skfb.ly/6SVC7) by Ruben Van der Merwe is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Stone altar with cloth + blood" (https://skfb.ly/6YuyT) by Dawid is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 ### Sounds
 
