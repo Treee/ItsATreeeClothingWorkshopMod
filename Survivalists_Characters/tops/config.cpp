@@ -1,13 +1,13 @@
 class CfgPatches
 {
-	class Survivalists_Characters_Tops
-	{
-		units[]={	};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"DZ_Characters",
+    class Survivalists_Characters_Tops
+    {
+        units[] = {	};
+        weapons[] = {};
+        requiredVersion = 0.1;
+        requiredAddons[] =
+        {
+            "DZ_Characters",
       "DZ_Characters_Tops",
       "Survivalists_Armbands_Flag",
       "Winter_Parka",
@@ -16,1686 +16,1787 @@ class CfgPatches
       "jmc_deerisle_misc",
       "Dressupbox",
       "Alv_Tac_Gear_Tops"
-		};
-	};
+        };
+    };
 };
 class CfgVehicles
 {
-  // class Top_Base;
-  class Clothing;
-  // Remove eventually once Lore dictates
-  class SaltyCougar_Armband;
-  class Skylar_BioZone_Protection: SaltyCougar_Armband
-	{
-		scope=2;
-		displayName="The Queen's Shawl";
-		descriptionShort="Ignore biohzard effects";
-    class Protection
+    // class Top_Base;
+    class Clothing;
+    // Remove eventually once Lore dictates
+    class SaltyCougar_Armband;
+    class Skylar_BioZone_Protection : SaltyCougar_Armband
     {
-      biological=6;
+        scope = 2;
+        displayName = "The Queen's Shawl";
+        descriptionShort = "Ignore biohzard effects";
+        class Protection
+        {
+            biological = 6;
+        };
     };
-	};
-//-------------------------------------MOD OVERRIDE
-	class Winter_Parka_Base: Clothing
-  {
-    rootClassName="Winter_Parka";
-    colorVariants[]=
+    //-------------------------------------MOD OVERRIDE
+    class Winter_Parka_Base : Clothing
     {
-      "White",
-      "Green",
-      "Black",
-      "PinkWhite",
-      "PinkBlack",
-      "BlueWhite",
-      "BlueBlack"
+        rootClassName = "Winter_Parka";
+        colorVariants[] =
+        {
+          "White",
+          "Green",
+          "Black",
+          "PinkWhite",
+          "PinkBlack",
+          "BlueWhite",
+          "BlueBlack"
+        };
     };
-  }; 
-  class WindstridePoncho: Clothing
-  {
-    rootClassName="Poncho";
-    colorVariants[]=
+    class WindstridePoncho : Clothing
     {
-      "Red_Checkered",
-      "Blue_Checkered",
-      "Yellow_Checkered",
-      "White",
-      "Brown",
-      "Green",
-      "Red",
-      "Black",
-      "BlackAndWhite",
-      "BlackAndWhite2",
+        rootClassName = "Poncho";
+        colorVariants[] =
+        {
+          "Red_Checkered",
+          "Blue_Checkered",
+          "Yellow_Checkered",
+          "White",
+          "Brown",
+          "Green",
+          "Red",
+          "Black",
+          "BlackAndWhite",
+          "BlackAndWhite2",
+        };
     };
-  };
-  class Military_Sweater: Clothing
-  {
-    rootClassName="Military_Sweater";
-    colorVariants[]=
+    class Military_Sweater : Clothing
     {
-      "Red",
-      "Blue",
-      "Green",
-      "White",
-      "Black",      
+        rootClassName = "Military_Sweater";
+        colorVariants[] =
+        {
+          "Red",
+          "Blue",
+          "Green",
+          "White",
+          "Black",
+        };
     };
-  };
-  class DUB_WoolCoat: Clothing
-	{
-    rootClassName="DUB_WoolCoat";
-    colorVariants[]=
+    class DUB_WoolCoat : Clothing
     {
-      "Red",
-      "Green",
-      "Brown",
-      "Purple",    
+        rootClassName = "DUB_WoolCoat";
+        colorVariants[] =
+        {
+          "Red",
+          "Green",
+          "Brown",
+          "Purple",
+        };
     };
-	};  
-  class DUB_FurCoat: Clothing
-  {
-		inventorySlot[] += {"Back"};
-    heatIsolation=27;
-  };
-  class DUB_Poncho: Clothing
-	{
-    rootClassName="DUB_Poncho";
-    colorVariants[]=
+    class DUB_FurCoat : Clothing
     {
-      "Blue",
-      "Flake",
-      "Pink",
-      "Flowers",
-      "PinkFlowers",
-      "PurpleFlowers",
-      "PinkPurple",
-      "PurpleBlue",
-      "Rose",
-      "YellowRed",      
+        inventorySlot[] += {"Back"};
+        heatIsolation = 27;
     };
-  };
-  class DUB_Monkrobe: Clothing
-  {
-    rootClassName="DUB_Monkrobe";
-    colorVariants[]=
-    {      
-      "Blue",
-      "Burg",
-      "Coal",
-      "Forest",
-      "Lav",
-      "Olive",
-      "Pink",
-      "Purp",
-      "Red",
-      "Salmon",
-      "Snow",
-      "Teal",
-      "Toast",
-      "Purp",
-    };
-  };
-  class DUB_Duster: Clothing
-  {
-    rootClassName="DUB_Duster";
-    colorVariants[]=
-    {      
-      "Black",
-      "Cow",
-      "Python",
-      "OD",
-      "Pink",
-      "Pink1",
-      "Chocolate",
-      "Forest",
-      "Lavender",
-      "Navy",
-      "Red",
-    };
-  };
-  class Leather_Cloak_ColorBase: Clothing
-	{
-    rootClassName="Leather_Cloak_down";
-    colorVariants[]=
-    {      
-      "Blue",
-      "Coffee",
-      "Green",
-      "Grey",
-      "HeartsBlue",
-      "HeartsPink",
-      "Orange",
-      "Pink",
-      "Purple",
-      "Red",
-      "Snow",
-      "Teal",
-      "Yellow",
-    };
-	};
-  class jmc_BearPeltGhillieWhite: Clothing
-  {
-    displayName="White Bear Ghillie";
-		descriptionShort="Cosmetic Only, does not protect against extreme cold.";
-  };   
-//------------------------------------ ALEVARIC OVERRIDE
-  class ALV_MV_CryeG3_Top_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_CryeG3_Top";
-    colorVariants[]=
+    class DUB_Poncho : Clothing
     {
-      "Black",
-      "Green",
-      "Tan",
-      "Brown",    
-      "Cadpat",    
-      "ChocoChip",    
-      "ERDL",    
-      "M05",    
-      "MArpat",    
-      "MC_Black",    
-      "TigerStripe",      
+        rootClassName = "DUB_Poncho";
+        colorVariants[] =
+        {
+          "Blue",
+          "Flake",
+          "Pink",
+          "Flowers",
+          "PinkFlowers",
+          "PurpleFlowers",
+          "PinkPurple",
+          "PurpleBlue",
+          "Rose",
+          "YellowRed",
+        };
     };
-	}; 
-  class ALV_MV_CryeG3LongSleeve_Top_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_CryeG3LongSleeve_Top";
-    colorVariants[]=
+    class DUB_Monkrobe : Clothing
     {
-      "Black",
-      "Green",
-      "Tan",
-      "Brown",    
-      "Cadpat",    
-      "ChocoChip",    
-      "ERDL",    
-      "M05",    
-      "MArpat",    
-      "MC_Black",    
-      "TigerStripe",      
+        rootClassName = "DUB_Monkrobe";
+        colorVariants[] =
+        {
+          "Blue",
+          "Burg",
+          "Coal",
+          "Forest",
+          "Lav",
+          "Olive",
+          "Pink",
+          "Purp",
+          "Red",
+          "Salmon",
+          "Snow",
+          "Teal",
+          "Toast",
+          "Purp",
+        };
     };
-	}; 
-  class ALV_MV_Hoodie_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_Hoodie";
-    colorVariants[]=
+    class DUB_Duster : Clothing
     {
-      "Grey",
-      "Tan",
-      "Red",
-      "Pink",
-      "Green",
-      "Black",
+        rootClassName = "DUB_Duster";
+        colorVariants[] =
+        {
+          "Black",
+          "Cow",
+          "Python",
+          "OD",
+          "Pink",
+          "Pink1",
+          "Chocolate",
+          "Forest",
+          "Lavender",
+          "Navy",
+          "Red",
+        };
     };
-	}; 
-  class ALV_MV_HoodieRolled_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_HoodieRolled";
-    colorVariants[]=
+    class Leather_Cloak_ColorBase : Clothing
     {
-      "Grey",
-      "Tan",
-      "Red",
-      "Pink",
-      "Green",
-      "Black",
+        rootClassName = "Leather_Cloak_down";
+        colorVariants[] =
+        {
+          "Blue",
+          "Coffee",
+          "Green",
+          "Grey",
+          "HeartsBlue",
+          "HeartsPink",
+          "Orange",
+          "Pink",
+          "Purple",
+          "Red",
+          "Snow",
+          "Teal",
+          "Yellow",
+        };
     };
-	};
-  class ALV_MV_FlannelShirt_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_FlannelShirt";
-    colorVariants[]=
+    class jmc_BearPeltGhillieWhite : Clothing
     {
-      "Red",
-      "Black",
-      "White",
+        displayName = "White Bear Ghillie";
+        descriptionShort = "Cosmetic Only, does not protect against extreme cold.";
     };
-	};
-  class ALV_MV_TacticalCoat_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_TacticalCoat";
-    colorVariants[]=
-    {      
-      "Black",
-      "Patterned",
-    };
-	};
-  class ALV_MV_ScoutingHoodie_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_ScoutingHoodie";
-    colorVariants[]=
+    //------------------------------------ ALEVARIC OVERRIDE
+    class ALV_MV_CryeG3_Top_Colorbase : Clothing
     {
-      "Tan",
-      "Black",
-      "Green",
-      "Urban",
-      "Cadpat",    
-      "ChocoChip",    
-      "ERDL",    
-      "M05",    
-      "MArpat",    
-      "MC_Black",    
-      "TigerStripe",
+        rootClassName = "ALV_MV_CryeG3_Top";
+        actionVariant = "ALV_MV_CryeG3LongSleeve_Top";
+        colorVariants[] =
+        {
+          "Black",
+          "Green",
+          "Tan",
+          "Brown",
+          "Cadpat",
+          "ChocoChip",
+          "ERDL",
+          "M05",
+          "Marpat",
+          "MC_Black",
+          "TigerStripe",
+        };
     };
-	};
-  class ALV_MV_PullOver_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_PullOver";
-    colorVariants[]=
+    class ALV_MV_CryeG3LongSleeve_Top_Colorbase : Clothing
     {
-      "Black",
+        rootClassName = "ALV_MV_CryeG3LongSleeve_Top";
+        actionVariant = "ALV_MV_CryeG3_Top";
+        colorVariants[] =
+        {
+          "Black",
+          "Green",
+          "Tan",
+          "Brown",
+          "Cadpat",
+          "ChocoChip",
+          "ERDL",
+          "M05",
+          "Marpat",
+          "MC_Black",
+          "TigerStripe",
+        };
     };
-	};
-  class ALV_MV_Robe_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_Robe";
-    colorVariants[]={};
-	};
-  class ALV_MV_VestShirt_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_VestShirt";
-    colorVariants[]=
+
+    class ALV_MV_CryeG3_Top_Black : ALV_MV_CryeG3_Top_Colorbase
     {
-      "Blue",
-      "White",
-      "Brown",
-      "Governer",
-      "Grey",
-      "Burdundy",
-      "RoyalPurple",
-      "Beige"
+        color = "Black";
     };
-	};
-  class ALV_MV_SmartShirt_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_SmartShirt";
-    colorVariants[]=
+    class ALV_MV_CryeG3LongSleeve_Top_Black : ALV_MV_CryeG3LongSleeve_Top_Colorbase
     {
-      "Blue",
-      "White",
-      "Brown",
-      "Governer"
+        color = "Black";
     };
-	};
-  class ALV_MV_Parka_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_Parka";
-    colorVariants[]=
+    class ALV_MV_CryeG3_Top_Green : ALV_MV_CryeG3_Top_Colorbase
     {
-      "Black",
+        color = "Green";
     };
-	};  
-  class ALV_MV_DemiJacket_Colorbase: Clothing
-	{
-    rootClassName="ALV_MV_DemiJacket";
-    colorVariants[]=
+    class ALV_MV_CryeG3LongSleeve_Top_Green : ALV_MV_CryeG3LongSleeve_Top_Colorbase
     {
-      "Black",
-      "Tan",
-      "Green",
+        color = "Green";
     };
-	};
-//----------------------------------- BASE GAME OVERRIDE
-	class Armband_ColorBase: Clothing
-	{
-    inventorySlot[]+=
+    class ALV_MV_CryeG3_Top_Tan : ALV_MV_CryeG3_Top_Colorbase
     {
-      "Armband",
-      "SRP_DisplayHook_SingleArmband",
+        color = "Tan";
     };
-  };
-  class NBCJacketBase: Clothing
-	{
-		heatIsolation=0.80000001;
-		absorbency=0;
-    rootClassName="NBCJacketBase";
-    colorVariants[]=
+    class ALV_MV_CryeG3LongSleeve_Top_Tan : ALV_MV_CryeG3LongSleeve_Top_Colorbase
     {
-      "Gray",
-      "Yellow",
-      "Orange",
-      "White",
+        color = "Tan";
     };
-		class Protection 
+    class ALV_MV_CryeG3_Top_Brown : ALV_MV_CryeG3_Top_Colorbase
     {
-      biological=1;
+        color = "Brown";
     };
-	};
-  class Sweater_ColorBase: Clothing
-  {
-    rootClassName="Sweater";
-    colorVariants[]=
+    class ALV_MV_CryeG3LongSleeve_Top_Brown : ALV_MV_CryeG3LongSleeve_Top_Colorbase
     {
-      "Gray",
-      "Blue",
-      "Green",
-      "Red",
-      "SantaRL",
-      "SantaBlueRL",
-      "SantaRedGreenRL",
-      "SantaRedBlueRL",
+        color = "Brown";
     };
-  };
-  class Shirt_ColorBase: Clothing
-  {
-    rootClassName="Shirt";
-    colorVariants[]=
+
+    class ALV_MV_Hoodie_Colorbase : Clothing
     {
-      "BlueCheck",
-      "BlueCheckBright",
-      "GreenCheck",
-      "PlainGreen",
-      "RedCheck",
-      "WhiteCheck",
-      "PlaneBlack",
-      "PlainDenim",
-      "PlainGrey",
-      "PlainBurgandy",
-      "CatBlue",
-      "CatLime",
-      "CatPink",
-      "PlainGrape",      
-      "PlainCat", 
+        rootClassName = "ALV_MV_Hoodie";
+        actionVariant = "ALV_MV_HoodieRolled";
+        colorVariants[] =
+        {
+          "Grey",
+          "Tan",
+          "Red",
+          "Pink",
+          "Green",
+          "Black",
+          "ColorBlock",
+          "BrownStripe",
+          "RedStripe",
+          "Maine",
+          "Flowers",
+          "Portland",
+          "Stonington"
+        };
     };
-  };
-  class TShirt_ColorBase: Clothing
-  {
-    rootClassName="TShirt";
-    colorVariants[]=
+    class ALV_MV_HoodieRolled_Colorbase : Clothing
     {
-      "Beige",
-      "Black",
-      "Blue",
-      "Green",
-      "OrangeWhiteStripes",
-      "Red",
-      "RedBlackStripes",
-      "White",
-      "Grey",
-      "PocketPals",
-      "Mendel",
-      "WhiteRabbit",
-      "WhiteNY",
-      "WhiteUnicorn",
-      "WhiteDreams",
-      "WhitePunk",
-      "GotMilk",
-      "RedSun",
-      "Nirvana",
-      "IronMaiden",
-      "BlackRabbit",
-      "BlackNY",
-      "BlackUnicorn",
-      "BlackDreams",
-      "BlackCars",
-      "BlackPunk",
-      "Music",
-      "Scream",
-      "Rock",
-      "Misfits",
-      "Smiley",
-      "Kids",
-      "Piggy",
-      "Catdog",
-      "BlackCatdog",
-      "BFFs",
-      "Hipster",
-      "Maori",
+        rootClassName = "ALV_MV_HoodieRolled";
+        actionVariant = "ALV_MV_Hoodie";
+        colorVariants[] =
+        {
+          "Grey",
+          "Tan",
+          "Red",
+          "Pink",
+          "Green",
+          "Black",
+          "ColorBlock",
+          "BrownStripe",
+          "RedStripe",
+          "Maine",
+          "Flowers",
+          "Portland",
+          "Stonington"
+        };
     };
-  };
-  class Hoodie_ColorBase: Clothing
-  {
-    rootClassName="Hoodie";
-    colorVariants[]=
+    class ALV_MV_Hoodie_Grey : ALV_MV_Hoodie_Colorbase
     {
-      "Blue",
-      "Blue1",
-      "Black",
-      "Brown",
-      "Brown1",
-      "Green",
-      "Grey",      
-      "Grey1",      
-      "Red",      
-      "Red1",      
-      "Purple",      
-      "Pink",      
+        color = "Grey";
     };
-  };
-  class TacticalShirt_ColorBase: Clothing
-	{
-    itemsCargoSize[]={7,5};
-    rootClassName="TacticalShirt";
-    colorVariants[]=
+    class ALV_MV_HoodieRolled_Grey : ALV_MV_HoodieRolled_Colorbase
     {
-      "Grey",
-      "Black",
-      "Olive",
-      "Tan",
-      "Lime",
-      "Green",
-      "MTP",
-      "ATAC",
-      "ATACSFG",
-      "USNAOR1",
-      "USNAOR2",
-      "SURPAT",
-      "MARPATWinter",
-      "EMP6",
-      "ERDL",
-      "Snow",
-      "Multicam",
-      "MulticamTropic",
-      "MulticamBlack",
-      "Flecktarn",
-      "WaldoRescue"
+        color = "Grey";
     };
-  };
-  class HikingJacket_ColorBase: Clothing
-	{
-    rootClassName="HikingJacket";
-    colorVariants[]=
+    class ALV_MV_Hoodie_Tan : ALV_MV_Hoodie_Colorbase
     {
-      "Black",
-      "Blue",
-      "Red",
-      "Green",
-      "ChocChip",
-      "CAD",
-      "ERDL",
-      "M05",
-      "MARPAT",
-      "MulticamBlack",
-      "TigerStripe",
+        color = "Tan";
     };
-  };
-  class Raincoat_ColorBase: Clothing
-	{
-    rootClassName="Raincoat";
-    colorVariants[]=
+    class ALV_MV_HoodieRolled_Tan : ALV_MV_HoodieRolled_Colorbase
     {
-      "Orange",
-      "Green",
-      "Yellow",
-      "Pink",
-      "Red",
-      "Blue",
-      "Black",
-      "Leather",
+        color = "Tan";
     };
-  };
-  class M65Jacket_ColorBase: Clothing
-	{
-		itemsCargoSize[]={8,6};
-    rootClassName="M65Jacket";
-    colorVariants[]=
+    class ALV_MV_Hoodie_Red : ALV_MV_Hoodie_Colorbase
     {
-      "Black",
-      "Khaki",
-      "Tan",
-      "Olive",
-      "ATFBlack",
-      "CIABlack",
-      "FBIBlack",
-      "MedicalBlack",
-      "MedicalDpmDesert",
-      "MedicalKhaki",
-      "MedicalOlive",
-      "MedicalTan",
-      "Brown",
-      "Grey",
-      "RedPatches",
-      "RedFaded",
-      "Leather",
-      "Leather1",
-      "MTP",
-      "ATAC",
-      "ATACSFG",
-      "USNAOR1",
-      "USNAOR2",
-      "SURPAT",
-      "MARPATWinter",
-      "EMP6",
+        color = "Red";
     };
-  };
-  class GorkaEJacket_ColorBase: Clothing
-	{
-    itemsCargoSize[]={8,5};
-		heatIsolation=0.80000001;
-    rootClassName="GorkaEJacket";
-    colorVariants[]=
+    class ALV_MV_HoodieRolled_Red : ALV_MV_HoodieRolled_Colorbase
     {
-      "Summer",
-      "Flat",
-      "Autumn",
-      "PautRev",
-      "Blue",
-      "Tan",
-      "Brown",
-      "Olive",
-      "MTP",
-      "ATAC",
-      "ATACSFG",
-      "USNAOR1",
-      "USNAOR2",
-      "SURPAT",
-      "MARPATWinter",
-      "EMP6",
-      "ERDL",
-      "ERDL2",
-      "Snow",
-      "Multicam",
-      "MulticamTropic",
-      "MulticamBlack",
-      "MulticamBlack2",
-      "CAD",
-      "ChocChip",
-      "M05",
-      "MARPAT",
-      "TigerStripe",
+        color = "Red";
     };
-  };
-  class RidersJacket_ColorBase: Clothing
-	{
-    rootClassName="RidersJacket";
-    colorVariants[]=
+    class ALV_MV_Hoodie_Pink : ALV_MV_Hoodie_Colorbase
     {
-      "Black",
-      "Brown",
-      "White",
-      "Skull",
-      "Heart",
-      "Yoda",
-      "RedSun",
-      "Rabbit",
-      "NY",
-      "Nirvana",
-      "IronMaiden",
-      "Unicorn",
-      "Dreams",
-      "Punk",
-      "UpInSmoke",
-      "CheechNChong",
-      "Exploited",
-      "FlashGordon",
-      "FuckYou",
-      "Smiley1",
-      "Heart1",
-      "Schrodinger",
-      "Rainbow",
-      "SmileBeatles",
+        color = "Pink";
     };
-  };
-  class WoolCoat_ColorBase: Clothing
-	{
-    rootClassName="WoolCoat";
-    colorVariants[]=
+    class ALV_MV_HoodieRolled_Pink : ALV_MV_HoodieRolled_Colorbase
     {
-      "Black",
-      "Red",
-      "Blue",
-      "Green",
-      "Beige",
-      "RedCheck",
-      "BlackCheck",
-      "BlueCheck",
-      "GreyCheck",
-      "BrownCheck",      
-      "Leather",      
+        color = "Pink";
     };
-  };
-  class TrackSuitJacket_ColorBase: Clothing
-	{
-    rootClassName="TrackSuitJacket";
-    colorVariants[]=
+    class ALV_MV_Hoodie_Green : ALV_MV_Hoodie_Colorbase
     {
-      "Black",
-      "Blue",
-      "Green",
-      "LightBlue",
-      "Red",
-      "Montana",
-      "MTP",
-      "ATAC",
+        color = "Green";
     };
-  };
-  class PoliceJacket: Clothing
-	{
-    rootClassName="PoliceJacket";
-    colorVariants[]=
+    class ALV_MV_HoodieRolled_Green : ALV_MV_HoodieRolled_Colorbase
     {
-      "Sheriff",
-      "Sheriff1",
+        color = "Green";
     };
-  };
-  class PoliceJacketOrel: Clothing
-	{
-    rootClassName="PoliceJacketOrel";
-    colorVariants[]=
+    class ALV_MV_Hoodie_Black : ALV_MV_Hoodie_Colorbase
     {
-      "WinterCamo",
-      "Swat",    
+        color = "Black";
     };
-  };
-  class ParamedicJacket_ColorBase: Clothing
-	{
-    rootClassName="ParamedicJacket";
-    colorVariants[]=
+    class ALV_MV_HoodieRolled_Black : ALV_MV_HoodieRolled_Colorbase
     {
-      "Blue",
-      "Crimson",
-      "Green",
-      "BlackMedic",
-      "WaldoRescue"
+        color = "Black";
     };
-  };
-  class FirefighterJacket_ColorBase: Clothing
-	{
-    rootClassName="FirefighterJacket";
-    colorVariants[]=
+
+    class ALV_MV_FlannelShirt_Colorbase : Clothing
     {
-      "Beige",
-      "Black",
+        rootClassName = "ALV_MV_FlannelShirt";
+        colorVariants[] =
+        {
+          "Red",
+          "Black",
+          "White",
+        };
     };
-  };
-  class PrisonUniformJacket: Clothing
-	{
-    rootClassName="PrisonUniformJacket";
-    colorVariants[]=
+    class ALV_MV_TacticalCoat_Colorbase : Clothing
     {
-      "Beige",
-      "Black",
-      "HawaiianMultiLeaf",
-      "HawaiianPalmLeaf",
-      "HawaiianFlowers",
-      "Leather"
+        rootClassName = "ALV_MV_TacticalCoat";
+        colorVariants[] =
+        {
+          "Black",
+          "Patterned",
+        };
     };
-  };
-  class MiniDress_ColorBase: Clothing
-	{
-    rootClassName="MiniDress";
-    colorVariants[]=
+    class ALV_MV_ScoutingHoodie_Colorbase : Clothing
     {
-      "Pink",
-      "PinkChecker",
-      "RedChecker",
-      "WhiteChecker",
-      "GreenChecker",
-      "BrownChecker",
-      "BlueChecker",
-      "BlueWithDots",
-      "Leather",
+        rootClassName = "ALV_MV_ScoutingHoodie";
+        colorVariants[] =
+        {
+          "Tan",
+          "Black",
+          "Green",
+          "Urban",
+          "Cadpat",
+          "ChocoChip",
+          "ERDL",
+          "M05",
+          "MArpat",
+          "MC_Black",
+          "TigerStripe",
+        };
     };
-  };
-  class QuiltedJacket_ColorBase: Clothing
-	{
-    rootClassName="QuiltedJacket";
-    colorVariants[]=
+    class ALV_MV_PullOver_Colorbase : Clothing
     {
-      "Black",
-      "Green",
-      "Blue",
-      "Red",
-      "Grey",
-      "Orange",
-      "Yellow",
-      "Violet",
-      "Puffy",
-      "Brown",
-      "Denim",
-      "White",
-      "Blarg",
-      "BlueStripe",
-      "PinkPaw",
-      "SnowFancy",
-      "HeartBlue",
-      "HeartPink",
-      "HeartPurple",
-      "DarkBlueStripe",
-      "DarkPurpleStripe",
-      "GreyStripe",
-      "PinkPinkStripe",
-      "Rose",
-      "SnowPink",
-      "SnowWhite",
-      "TealYellowStripe",      
+        rootClassName = "ALV_MV_PullOver";
+        colorVariants[] =
+        {
+          "Black",
+        };
     };
-  };
-  class BomberJacket_ColorBase: Clothing
-	{
-    rootClassName="BomberJacket";
-    colorVariants[]=
+    class ALV_MV_Robe_Colorbase : Clothing
     {
-      "Black",
-      "Black2",
-      "Black3",
-      "Brown",
-      "Grey",
-      "Maroon",
-      "Olive",
-      "SkyBlue",
-      "Devil",
-      "Leather",      
+        rootClassName = "ALV_MV_Robe";
+        colorVariants[] = {};
     };
-  };
-  class LeatherJacket_ColorBase: Clothing
-	{
-    rootClassName="LeatherJacket";
-    colorVariants[]=
+    class ALV_MV_VestShirt_Colorbase : Clothing
     {
-      "Natural",
-      "Beige",
-      "Brown",
-      "Black",      
+        rootClassName = "ALV_MV_VestShirt";
+        colorVariants[] =
+        {
+          "Blue",
+          "White",
+          "Brown",
+          "Governer",
+          "Grey",
+          "Burdundy",
+          "RoyalPurple",
+          "Beige"
+        };
     };
-  };
-  class HuntingJacket_ColorBase: Clothing
-	{
-    rootClassName="HuntingJacket";
-    colorVariants[]=
+    class ALV_MV_SmartShirt_Colorbase : Clothing
     {
-      "Autumn",
-      "Brown",
-      "Spring",
-      "Summer",      
-      "Winter",      
-      "Black",      
-      "Black1",      
-      "RainJacket",      
-      "MTP",      
-      "ATAC",      
-      "ATACSFG",      
-      "USNAOR1",      
-      "USNAOR2",      
-      "SURPAT",      
-      "MARPATWinter",      
-      "EMP6",      
-      "Gold",      
-      "Grape",      
-      "Navy",      
-      "Red",      
-      "Leather",
-      "GreenCamo",
-      "BrownCamo",
-      "PurpleCamo",
-      "DarkGreenCamo",
-      "RedCamo",
-      "WhiteSkull",
-      "TanSkull",
-      "PurpleSkull",
-      "BlueSkull",
-      "BlackSkull",
-      "SpringRanger",
-      "NinjaPurple",
-      "NinjaRed",
-      "NinjaLemon",
-      "NinjaLime",
-      "NinjaPink",
-      "NinjaSky",
+        rootClassName = "ALV_MV_SmartShirt";
+        colorVariants[] =
+        {
+          "Blue",
+          "White",
+          "Brown",
+          "Governer"
+        };
     };
-  };
-  class LeatherShirt_ColorBase: Clothing
-  {
-    rootClassName="LeatherShirt";
-    colorVariants[]=
+    class ALV_MV_Parka_Colorbase : Clothing
     {
-      "Natural",
-      "Choco",
-      "Lime",
-      "Orange",
-      "Pink",
-      "Purple",
-      "Storm",
-      "Yellow",
+        rootClassName = "ALV_MV_Parka";
+        colorVariants[] =
+        {
+          "Black",
+        };
     };
-  };
-  class TTsKOJacket_ColorBase: Clothing
-  {
-    rootClassName="TTsKOJacket";
-    colorVariants[]=
+    class ALV_MV_DemiJacket_Colorbase : Clothing
     {
-      "Camo",
-      "Tan",      
+        rootClassName = "ALV_MV_DemiJacket";
+        colorVariants[] =
+        {
+          "Black",
+          "Tan",
+          "Green",
+        };
     };
-  };
-  class MedicalScrubsShirt_ColorBase: Clothing
-	{
-    rootClassName="MedicalScrubsShirt";
-    colorVariants[]=
+    //----------------------------------- BASE GAME OVERRIDE
+    class Armband_ColorBase : Clothing
     {
-      "Blue",
-      "Green",
-      "White",
+        inventorySlot[] +=
+        {
+            "Armband",
+                "SRP_DisplayHook_SingleArmband",
+        };
     };
-  };
-  class NurseDress_ColorBase: Clothing
-  {
-    heatIsolation=0.80000001;
-    rootClassName="NurseDress";
-    colorVariants[]=
+    class NBCJacketBase : Clothing
     {
-      "White",
-      "Blue",      
-      "BlackGrape",      
-      "BlackGreen",      
-      "BlackMint",      
-      "BlackOcean",      
-      "BlackPink",      
-      "BlackRed",      
-      "BlackSnow",      
-      "BlackStorm",      
-      "BlackSunny",      
-      "BlackWhite",      
-      "BlueYellow",      
-      "GreenBlack",      
-      "GreenBlackBow",      
-      "PinkWhite",      
-      "WhiteBowBlue",      
-      "WhiteBowGreen",      
-      "WhiteBowPink",
+        heatIsolation = 0.80000001;
+        absorbency = 0;
+        rootClassName = "NBCJacketBase";
+        colorVariants[] =
+        {
+          "Gray",
+          "Yellow",
+          "Orange",
+          "White",
+        };
+        class Protection
+        {
+            biological = 1;
+        };
     };
-  };
-  class USMCJacket_ColorBase: Clothing
-  {
-    rootClassName="USMCJacket";
-    colorVariants[]=
+    class Sweater_ColorBase : Clothing
     {
-      "Desert",
-      "Woodland",
+        rootClassName = "Sweater";
+        colorVariants[] =
+        {
+          "Gray",
+          "Blue",
+          "Green",
+          "Red",
+          "SantaRL",
+          "SantaBlueRL",
+          "SantaRedGreenRL",
+          "SantaRedBlueRL",
+        };
     };
-  };
-  class Blouse_ColorBase: Clothing
-  {
-    rootClassName="Blouse";
-    colorVariants[]=
+    class Shirt_ColorBase : Clothing
     {
-      "Blue",
-      "White",
-      "Green",
-      "Violet",
-      "Leather",
+        rootClassName = "Shirt";
+        colorVariants[] =
+        {
+          "BlueCheck",
+          "BlueCheckBright",
+          "GreenCheck",
+          "PlainGreen",
+          "RedCheck",
+          "WhiteCheck",
+          "PlaneBlack",
+          "PlainDenim",
+          "PlainGrey",
+          "PlainBurgandy",
+          "CatBlue",
+          "CatLime",
+          "CatPink",
+          "PlainGrape",
+          "PlainCat",
+        };
     };
-  };
-  class DenimJacket: Clothing
-  {
-    rootClassName="DenimJacket";
-    colorVariants[]=
-    {      
-      "Black",
-      "Leather",
-    };
-  };
-  class JumpsuitJacket_ColorBase: Clothing
-  {
-    rootClassName="JumpsuitJacket";
-    colorVariants[]=
-    {      
-      "Blue",
-      "Gray",
-      "Green",
-      "Red",
-      "ATFBlue",
-      "CIABlue",
-      "FBIBlue",
-    };
-  };
-  class ManSuit_ColorBase: Clothing
-  {
-    rootClassName="ManSuit";
-    colorVariants[]=
-    {      
-      "Beige",
-      "Black",
-      "Blue",
-      "Brown",
-      "DarkGrey",
-      "Khaki",
-      "LightGrey",
-      "White",
-      "TweedBlack",
-      "TweedGrey",
-      "TweedNavy",
-      "TweedSalmon",
-    };
-  };
-  class WomanSuit_ColorBase: Clothing
-  {
-    rootClassName="WomanSuit";
-    colorVariants[]=
-    {      
-      "Beige",
-      "Black",
-      "Blue",
-      "Brown",
-      "DarkGrey",
-      "Khaki",
-      "LightGrey",
-      "White",
-    };
-  };
-  class TorsoCover_Improvised: Clothing
-  {
-    rootClassName="TorsoCover_Improvised";
-    colorVariants[]=
+    class TShirt_ColorBase : Clothing
     {
-      "Green",
-      "Black",      
-      "Orange",      
-      "Blue",      
-      "Red",      
+        rootClassName = "TShirt";
+        colorVariants[] =
+        {
+          "Beige",
+          "Black",
+          "Blue",
+          "Green",
+          "OrangeWhiteStripes",
+          "Red",
+          "RedBlackStripes",
+          "White",
+          "Grey",
+          "PocketPals",
+          "Mendel",
+          "WhiteRabbit",
+          "WhiteNY",
+          "WhiteUnicorn",
+          "WhiteDreams",
+          "WhitePunk",
+          "GotMilk",
+          "RedSun",
+          "Nirvana",
+          "IronMaiden",
+          "BlackRabbit",
+          "BlackNY",
+          "BlackUnicorn",
+          "BlackDreams",
+          "BlackCars",
+          "BlackPunk",
+          "Music",
+          "Scream",
+          "Rock",
+          "Misfits",
+          "Smiley",
+          "Kids",
+          "Piggy",
+          "Catdog",
+          "BlackCatdog",
+          "BFFs",
+          "Hipster",
+          "Maori",
+        };
     };
-  };
-  class BDUJacket: Clothing
-	{
-    rootClassName="BDUPants";
-    colorVariants[]=
+    class Hoodie_ColorBase : Clothing
     {
-      "CCE",
+        rootClassName = "Hoodie";
+        colorVariants[] =
+        {
+          "Blue",
+          "Blue1",
+          "Black",
+          "Brown",
+          "Brown1",
+          "Green",
+          "Grey",
+          "Grey1",
+          "Red",
+          "Red1",
+          "Purple",
+          "Pink",
+        };
     };
-  };
-  class LabCoat: Clothing
-	{
-    rootClassName="LabCoat";
-    colorVariants[]=
+    class TacticalShirt_ColorBase : Clothing
     {
-      "BlackSpace",
-      "Bloody",
+        itemsCargoSize[] = { 7,5 };
+        rootClassName = "TacticalShirt";
+        colorVariants[] =
+        {
+          "Grey",
+          "Black",
+          "Olive",
+          "Tan",
+          "Lime",
+          "Green",
+          "MTP",
+          "ATAC",
+          "ATACSFG",
+          "USNAOR1",
+          "USNAOR2",
+          "SURPAT",
+          "MARPATWinter",
+          "EMP6",
+          "ERDL",
+          "Snow",
+          "Multicam",
+          "MulticamTropic",
+          "MulticamBlack",
+          "Flecktarn",
+          "WaldoRescue"
+        };
     };
-    class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=150;
-          healthLevels[]=
-					{						
-						{1,{"DZ\characters\tops\data\labcoat.rvmat"}},
-						{0.69999999,{"DZ\characters\tops\data\labcoat.rvmat"}},
-						{0.5,{"DZ\characters\tops\data\labcoat_damage.rvmat"}},
-						{0.30000001,{"DZ\characters\tops\data\labcoat_damage.rvmat"}},
-						{0,{"DZ\characters\tops\data\labcoat_destruct.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Melee
-				{
-					class Health
-					{
-						damage=0.94999999;
-					};
-					class Blood
-					{
-						damage=1;
-					};
-					class Shock
-					{
-						damage=1;
-					};
-				};
-				class Infected
-				{
-					class Health
-					{
-						damage=0.94999999;
-					};
-					class Blood
-					{
-						damage=1;
-					};
-					class Shock
-					{
-						damage=1;
-					};
-				};
-			};
-		};
-  };
+    class HikingJacket_ColorBase : Clothing
+    {
+        rootClassName = "HikingJacket";
+        colorVariants[] =
+        {
+          "Black",
+          "Blue",
+          "Red",
+          "Green",
+          "ChocChip",
+          "CAD",
+          "ERDL",
+          "M05",
+          "MARPAT",
+          "MulticamBlack",
+          "TigerStripe",
+        };
+    };
+    class Raincoat_ColorBase : Clothing
+    {
+        rootClassName = "Raincoat";
+        colorVariants[] =
+        {
+          "Orange",
+          "Green",
+          "Yellow",
+          "Pink",
+          "Red",
+          "Blue",
+          "Black",
+          "Leather",
+        };
+    };
+    class M65Jacket_ColorBase : Clothing
+    {
+        itemsCargoSize[] = { 8,6 };
+        rootClassName = "M65Jacket";
+        colorVariants[] =
+        {
+          "Black",
+          "Khaki",
+          "Tan",
+          "Olive",
+          "ATFBlack",
+          "CIABlack",
+          "FBIBlack",
+          "MedicalBlack",
+          "MedicalDpmDesert",
+          "MedicalKhaki",
+          "MedicalOlive",
+          "MedicalTan",
+          "Brown",
+          "Grey",
+          "RedPatches",
+          "RedFaded",
+          "Leather",
+          "Leather1",
+          "MTP",
+          "ATAC",
+          "ATACSFG",
+          "USNAOR1",
+          "USNAOR2",
+          "SURPAT",
+          "MARPATWinter",
+          "EMP6",
+        };
+    };
+    class GorkaEJacket_ColorBase : Clothing
+    {
+        itemsCargoSize[] = { 8,5 };
+        heatIsolation = 0.80000001;
+        rootClassName = "GorkaEJacket";
+        colorVariants[] =
+        {
+          "Summer",
+          "Flat",
+          "Autumn",
+          "PautRev",
+          "Blue",
+          "Tan",
+          "Brown",
+          "Olive",
+          "MTP",
+          "ATAC",
+          "ATACSFG",
+          "USNAOR1",
+          "USNAOR2",
+          "SURPAT",
+          "MARPATWinter",
+          "EMP6",
+          "ERDL",
+          "ERDL2",
+          "Snow",
+          "Multicam",
+          "MulticamTropic",
+          "MulticamBlack",
+          "MulticamBlack2",
+          "CAD",
+          "ChocChip",
+          "M05",
+          "MARPAT",
+          "TigerStripe",
+        };
+    };
+    class RidersJacket_ColorBase : Clothing
+    {
+        rootClassName = "RidersJacket";
+        colorVariants[] =
+        {
+          "Black",
+          "Brown",
+          "White",
+          "Skull",
+          "Heart",
+          "Yoda",
+          "RedSun",
+          "Rabbit",
+          "NY",
+          "Nirvana",
+          "IronMaiden",
+          "Unicorn",
+          "Dreams",
+          "Punk",
+          "UpInSmoke",
+          "CheechNChong",
+          "Exploited",
+          "FlashGordon",
+          "FuckYou",
+          "Smiley1",
+          "Heart1",
+          "Schrodinger",
+          "Rainbow",
+          "SmileBeatles",
+        };
+    };
+    class WoolCoat_ColorBase : Clothing
+    {
+        rootClassName = "WoolCoat";
+        colorVariants[] =
+        {
+          "Black",
+          "Red",
+          "Blue",
+          "Green",
+          "Beige",
+          "RedCheck",
+          "BlackCheck",
+          "BlueCheck",
+          "GreyCheck",
+          "BrownCheck",
+          "Leather",
+        };
+    };
+    class TrackSuitJacket_ColorBase : Clothing
+    {
+        rootClassName = "TrackSuitJacket";
+        colorVariants[] =
+        {
+          "Black",
+          "Blue",
+          "Green",
+          "LightBlue",
+          "Red",
+          "Montana",
+          "MTP",
+          "ATAC",
+        };
+    };
+    class PoliceJacket : Clothing
+    {
+        rootClassName = "PoliceJacket";
+        colorVariants[] =
+        {
+          "Sheriff",
+          "Sheriff1",
+        };
+    };
+    class PoliceJacketOrel : Clothing
+    {
+        rootClassName = "PoliceJacketOrel";
+        colorVariants[] =
+        {
+          "WinterCamo",
+          "Swat",
+        };
+    };
+    class ParamedicJacket_ColorBase : Clothing
+    {
+        rootClassName = "ParamedicJacket";
+        colorVariants[] =
+        {
+          "Blue",
+          "Crimson",
+          "Green",
+          "BlackMedic",
+          "WaldoRescue"
+        };
+    };
+    class FirefighterJacket_ColorBase : Clothing
+    {
+        rootClassName = "FirefighterJacket";
+        colorVariants[] =
+        {
+          "Beige",
+          "Black",
+        };
+    };
+    class PrisonUniformJacket : Clothing
+    {
+        rootClassName = "PrisonUniformJacket";
+        colorVariants[] =
+        {
+          "Beige",
+          "Black",
+          "HawaiianMultiLeaf",
+          "HawaiianPalmLeaf",
+          "HawaiianFlowers",
+          "Leather"
+        };
+    };
+    class MiniDress_ColorBase : Clothing
+    {
+        rootClassName = "MiniDress";
+        colorVariants[] =
+        {
+          "Pink",
+          "PinkChecker",
+          "RedChecker",
+          "WhiteChecker",
+          "GreenChecker",
+          "BrownChecker",
+          "BlueChecker",
+          "BlueWithDots",
+          "Leather",
+        };
+    };
+    class QuiltedJacket_ColorBase : Clothing
+    {
+        rootClassName = "QuiltedJacket";
+        colorVariants[] =
+        {
+          "Black",
+          "Green",
+          "Blue",
+          "Red",
+          "Grey",
+          "Orange",
+          "Yellow",
+          "Violet",
+          "Puffy",
+          "Brown",
+          "Denim",
+          "White",
+          "Blarg",
+          "BlueStripe",
+          "PinkPaw",
+          "SnowFancy",
+          "HeartBlue",
+          "HeartPink",
+          "HeartPurple",
+          "DarkBlueStripe",
+          "DarkPurpleStripe",
+          "GreyStripe",
+          "PinkPinkStripe",
+          "Rose",
+          "SnowPink",
+          "SnowWhite",
+          "TealYellowStripe",
+        };
+    };
+    class BomberJacket_ColorBase : Clothing
+    {
+        rootClassName = "BomberJacket";
+        colorVariants[] =
+        {
+          "Black",
+          "Black2",
+          "Black3",
+          "Brown",
+          "Grey",
+          "Maroon",
+          "Olive",
+          "SkyBlue",
+          "Devil",
+          "Leather",
+        };
+    };
+    class LeatherJacket_ColorBase : Clothing
+    {
+        rootClassName = "LeatherJacket";
+        colorVariants[] =
+        {
+          "Natural",
+          "Beige",
+          "Brown",
+          "Black",
+        };
+    };
+    class HuntingJacket_ColorBase : Clothing
+    {
+        rootClassName = "HuntingJacket";
+        colorVariants[] =
+        {
+          "Autumn",
+          "Brown",
+          "Spring",
+          "Summer",
+          "Winter",
+          "Black",
+          "Black1",
+          "RainJacket",
+          "MTP",
+          "ATAC",
+          "ATACSFG",
+          "USNAOR1",
+          "USNAOR2",
+          "SURPAT",
+          "MARPATWinter",
+          "EMP6",
+          "Gold",
+          "Grape",
+          "Navy",
+          "Red",
+          "Leather",
+          "GreenCamo",
+          "BrownCamo",
+          "PurpleCamo",
+          "DarkGreenCamo",
+          "RedCamo",
+          "WhiteSkull",
+          "TanSkull",
+          "PurpleSkull",
+          "BlueSkull",
+          "BlackSkull",
+          "SpringRanger",
+          "NinjaPurple",
+          "NinjaRed",
+          "NinjaLemon",
+          "NinjaLime",
+          "NinjaPink",
+          "NinjaSky",
+        };
+    };
+    class LeatherShirt_ColorBase : Clothing
+    {
+        rootClassName = "LeatherShirt";
+        colorVariants[] =
+        {
+          "Natural",
+          "Choco",
+          "Lime",
+          "Orange",
+          "Pink",
+          "Purple",
+          "Storm",
+          "Yellow",
+        };
+    };
+    class TTsKOJacket_ColorBase : Clothing
+    {
+        rootClassName = "TTsKOJacket";
+        colorVariants[] =
+        {
+          "Camo",
+          "Tan",
+        };
+    };
+    class MedicalScrubsShirt_ColorBase : Clothing
+    {
+        rootClassName = "MedicalScrubsShirt";
+        colorVariants[] =
+        {
+          "Blue",
+          "Green",
+          "White",
+        };
+    };
+    class NurseDress_ColorBase : Clothing
+    {
+        heatIsolation = 0.80000001;
+        rootClassName = "NurseDress";
+        colorVariants[] =
+        {
+          "White",
+          "Blue",
+          "BlackGrape",
+          "BlackGreen",
+          "BlackMint",
+          "BlackOcean",
+          "BlackPink",
+          "BlackRed",
+          "BlackSnow",
+          "BlackStorm",
+          "BlackSunny",
+          "BlackWhite",
+          "BlueYellow",
+          "GreenBlack",
+          "GreenBlackBow",
+          "PinkWhite",
+          "WhiteBowBlue",
+          "WhiteBowGreen",
+          "WhiteBowPink",
+        };
+    };
+    class USMCJacket_ColorBase : Clothing
+    {
+        rootClassName = "USMCJacket";
+        colorVariants[] =
+        {
+          "Desert",
+          "Woodland",
+        };
+    };
+    class Blouse_ColorBase : Clothing
+    {
+        rootClassName = "Blouse";
+        colorVariants[] =
+        {
+          "Blue",
+          "White",
+          "Green",
+          "Violet",
+          "Leather",
+        };
+    };
+    class DenimJacket : Clothing
+    {
+        rootClassName = "DenimJacket";
+        colorVariants[] =
+        {
+          "Black",
+          "Leather",
+        };
+    };
+    class JumpsuitJacket_ColorBase : Clothing
+    {
+        rootClassName = "JumpsuitJacket";
+        colorVariants[] =
+        {
+          "Blue",
+          "Gray",
+          "Green",
+          "Red",
+          "ATFBlue",
+          "CIABlue",
+          "FBIBlue",
+        };
+    };
+    class ManSuit_ColorBase : Clothing
+    {
+        rootClassName = "ManSuit";
+        colorVariants[] =
+        {
+          "Beige",
+          "Black",
+          "Blue",
+          "Brown",
+          "DarkGrey",
+          "Khaki",
+          "LightGrey",
+          "White",
+          "TweedBlack",
+          "TweedGrey",
+          "TweedNavy",
+          "TweedSalmon",
+        };
+    };
+    class WomanSuit_ColorBase : Clothing
+    {
+        rootClassName = "WomanSuit";
+        colorVariants[] =
+        {
+          "Beige",
+          "Black",
+          "Blue",
+          "Brown",
+          "DarkGrey",
+          "Khaki",
+          "LightGrey",
+          "White",
+        };
+    };
+    class TorsoCover_Improvised : Clothing
+    {
+        rootClassName = "TorsoCover_Improvised";
+        colorVariants[] =
+        {
+          "Green",
+          "Black",
+          "Orange",
+          "Blue",
+          "Red",
+        };
+    };
+    class BDUJacket : Clothing
+    {
+        rootClassName = "BDUPants";
+        colorVariants[] =
+        {
+          "CCE",
+        };
+    };
+    class LabCoat : Clothing
+    {
+        rootClassName = "LabCoat";
+        colorVariants[] =
+        {
+          "BlackSpace",
+          "Bloody",
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 150;
+                    healthLevels[] =
+                    {
+                        {1,{"DZ\characters\tops\data\labcoat.rvmat"}},
+                        {0.69999999,{"DZ\characters\tops\data\labcoat.rvmat"}},
+                        {0.5,{"DZ\characters\tops\data\labcoat_damage.rvmat"}},
+                        {0.30000001,{"DZ\characters\tops\data\labcoat_damage.rvmat"}},
+                        {0,{"DZ\characters\tops\data\labcoat_destruct.rvmat"}}
+                    };
+                };
+            };
+            class GlobalArmor
+            {
+                class Melee
+                {
+                    class Health
+                    {
+                        damage = 0.94999999;
+                    };
+                    class Blood
+                    {
+                        damage = 1;
+                    };
+                    class Shock
+                    {
+                        damage = 1;
+                    };
+                };
+                class Infected
+                {
+                    class Health
+                    {
+                        damage = 0.94999999;
+                    };
+                    class Blood
+                    {
+                        damage = 1;
+                    };
+                    class Shock
+                    {
+                        damage = 1;
+                    };
+                };
+            };
+        };
+    };
 
 
-//===================== CUSTOM SHIRTS
-  class SRP_Bowtie_ColorBase: Clothing
-	{
-    scope=0;
-		displayName="Bow Tie";
-		descriptionShort="A tie for any formal occasion.";
-		model="Survivalists_Characters\tops\srp_bowtie_g.p3d";
-		inventorySlot[]=
-		{
-			"Armband",
+    //===================== CUSTOM SHIRTS
+    class SRP_Bowtie_ColorBase : Clothing
+    {
+        scope = 0;
+        displayName = "Bow Tie";
+        descriptionShort = "A tie for any formal occasion.";
+        model = "Survivalists_Characters\tops\srp_bowtie_g.p3d";
+        inventorySlot[] =
+        {
+            "Armband",
       "Extra",
       "Wig"
-		};
-    rootClassName="SRP_Bowtie";
-    colorVariants[]=
-    {      
-      "BlackWhiteDot",
-      "Black",
-      "Blue",
-      "Gold",
-      "Purple",
-      "Red",
-      "Yellow",
+        };
+        rootClassName = "SRP_Bowtie";
+        colorVariants[] =
+        {
+          "BlackWhiteDot",
+          "Black",
+          "Blue",
+          "Gold",
+          "Purple",
+          "Red",
+          "Yellow",
+        };
+        rotationFlags = 34;
+        weight = 80;
+        itemSize[] = { 2,1 };
+        ragQuantity = 1;
+        varWetMax = 1;
+        absorbency = 0.80000001;
+        repairableWithKits[] = { 2,3,5 };
+        repairCosts[] = { 20,20,25 };
+        hiddenSelections[] =
+        {
+            "zbytek"
+        };
+        hiddenSelectionsTextures[] = { "Survivalists_Characters\tops\data\srp_bowtie_co.paa" };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 100;
+                    healthLevels[] =
+                    {
+                        {1,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},
+                        {0.69999999,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},
+                        {0.5,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},
+                        {0.30000001,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},
+                        {0,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}}
+                    };
+                };
+            };
+        };
+        class ClothingTypes
+        {
+            male = "Survivalists_Characters\tops\srp_bowtie_m.p3d";
+            female = "Survivalists_Characters\tops\srp_bowtie_f.p3d";
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickUpItem
+                {
+                    soundSet = "Shirt_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "Shirt_drop_SoundSet";
+                    id = 898;
+                };
+            };
+        };
     };
-		rotationFlags=34;
-		weight=80;
-		itemSize[]={2,1};
-		ragQuantity=1;
-		varWetMax=1;
-		absorbency=0.80000001;
-		repairableWithKits[]={2,3,5};
-		repairCosts[]={20,20,25};
-		hiddenSelections[]=
-		{
-			"zbytek"
-		};
-    hiddenSelectionsTextures[]={"Survivalists_Characters\tops\data\srp_bowtie_co.paa"};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=100;
-					healthLevels[]=
-					{						
-						{1,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},						
-						{0.69999999,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},						
-						{0.5,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},						
-						{0.30000001,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}},						
-						{0,{"Survivalists_Characters\tops\data\srp_bowtie.rvmat"}}
-					};
-				};
-			};
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Characters\tops\srp_bowtie_m.p3d";
-			female="Survivalists_Characters\tops\srp_bowtie_f.p3d";
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="Shirt_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="Shirt_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
-  class SRP_PlatHoodie: Clothing
-	{
-    scope=2;
-		displayName="Hoodie";
-		descriptionShort="Espen Industries. A nicely sewed hoody with plenty of room inside.";
-		model="Survivalists_Characters\tops\srp_plathoodie_g.p3d";
-		inventorySlot[]=
-		{
-			"Body"
-		};
-		weight=850;
-		itemSize[]={3,3};
-		itemsCargoSize[]={5,4};
-		quickBarBonus=1;
-		varWetMax=1;
-		heatIsolation=0.8;
-		ragQuantity=4;
-		repairableWithKits[]={2,3,5};
-		repairCosts[]={20,20,25};
-		soundAttType="WoolShirt";
-    headSelectionsToHide[]=
-		{
-			"Clipping_BandanaHead",
-			"Clipping_BandanaFace"
-		};
-		hiddenSelections[]=
-		{
-			"zbytek"
-		};
-    hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Characters\tops\data\srp_plathoodie_co.paa"
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=100;
-					healthLevels[]=
-					{
-						{1.0, {"Survivalists_Characters\tops\data\srp_plathoodie.rvmat"}},
+    class SRP_PlatHoodie : Clothing
+    {
+        scope = 2;
+        displayName = "Hoodie";
+        descriptionShort = "Espen Industries. A nicely sewed hoody with plenty of room inside.";
+        model = "Survivalists_Characters\tops\srp_plathoodie_g.p3d";
+        inventorySlot[] =
+        {
+            "Body"
+        };
+        weight = 850;
+        itemSize[] = { 3,3 };
+        itemsCargoSize[] = { 5,4 };
+        quickBarBonus = 1;
+        varWetMax = 1;
+        heatIsolation = 0.8;
+        ragQuantity = 4;
+        repairableWithKits[] = { 2,3,5 };
+        repairCosts[] = { 20,20,25 };
+        soundAttType = "WoolShirt";
+        headSelectionsToHide[] =
+        {
+            "Clipping_BandanaHead",
+            "Clipping_BandanaFace"
+        };
+        hiddenSelections[] =
+        {
+            "zbytek"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_Characters\tops\data\srp_plathoodie_co.paa"
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 100;
+                    healthLevels[] =
+                    {
+                        {1.0, {"Survivalists_Characters\tops\data\srp_plathoodie.rvmat"}},
             {0.69999999, {"Survivalists_Characters\tops\data\srp_plathoodie.rvmat"}},
             {0.5, {"Survivalists_Characters\tops\data\srp_plathoodie_damage.rvmat"}},
             {0.30000001, {"Survivalists_Characters\tops\data\srp_plathoodie_damage.rvmat"}},
             {0.0, {"Survivalists_Characters\tops\data\srp_plathoodie_destruct.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Melee
-				{
-					class Health
-					{
-						damage=0.89999998;
-					};
-					class Blood
-					{
-						damage=0.89999998;
-					};
-					class Shock
-					{
-						damage=0.89999998;
-					};
-				};
-				class Infected
-				{
-					class Health
-					{
-						damage=0.89999998;
-					};
-					class Blood
-					{
-						damage=0.89999998;
-					};
-					class Shock
-					{
-						damage=0.89999998;
-					};
-				};
-			};
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Characters\tops\srp_plathoodie_m.p3d";
-			female="Survivalists_Characters\tops\srp_plathoodie_f.p3d";
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="Shirt_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="Shirt_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
-  class SRP_PlatHoodie_Wolfbeard: SRP_PlatHoodie
-  {
-    scope=2;
-  };
-  class SRP_Sweater_ColorBase: Clothing
-	{
-    scope=0;
-		displayName="Turtleneck Sweater";
-		descriptionShort="A loose fitting turtleneck sweater";
-		model="Survivalists_Characters\tops\SRP_Sweater_g.p3d";
-		inventorySlot[]=
-		{
-			"Body"
-		};
-		rotationFlags=64;
-		weight=2000;
-		itemSize[]={4,4};
-		itemsCargoSize[]={6,5};
-		quickBarBonus=2;
-		varWetMax=0.39;
-		heatIsolation=0.90;
-		repairableWithKits[]={2,3,5};
-		repairCosts[]={20,20,25};
-		soundAttType="LeatherJacket";
-		hiddenSelections[]=
-		{
-			"zbytek",
-			"personality"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Characters\tops\data\srp_Sweater_CO.paa"
-		};
-    rootClassName="SRP_Sweater";
-    colorVariants[]=
-    {      
-      "Orange",
-      "Mustard",
-      "Blue",
-      "Grey",
-      "Green",
-      "Cream",
-      "Burgundy"
-    };
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=130;
-					healthLevels[]=
-					{
-						{1.0,{"Survivalists_Characters\tops\data\srp_sweater.rvmat"}},
-						{0.7,{"Survivalists_Characters\tops\data\srp_sweater.rvmat"}},
-						{0.5,{"Survivalists_Characters\tops\data\srp_sweater_damage.rvmat"}},
-						{0.3,{"Survivalists_Characters\tops\data\srp_sweater_damage.rvmat"}},
-						{0.0,{"Survivalists_Characters\tops\data\srp_sweater_destruct.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Melee
-				{
-					class Health
-					{
-						damage=0.69;
-					};
-					class Blood
-					{
-						damage=0.69;
-					};
-					class Shock
-					{
-						damage=0.85;
-					};
-				};
-				class Infected
-				{
-					class Health
-					{
-						damage=0.71;
-					};
-					class Blood
-					{
-						damage=0.71;
-					};
-					class Shock
-					{
-						damage=0.85;
-					};
-				};
-			};
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Characters\tops\SRP_Sweater_m.p3d";
-			female="Survivalists_Characters\tops\SRP_Sweater_f.p3d";
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="Shirt_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="Shirt_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
-  class SRP_Rolled_Shirt_ColorBase: Clothing
-	{
-		scope=0;
-		displayName="Rolled up shirt";
-		descriptionShort="An unbuttoned shirt with rolled up sleeves.";
-		model="Survivalists_Characters\tops\SRP_Rolled_Shirt_g.p3d";
-		inventorySlot[]=
-		{
-			"Body"
-		};
-		rotationFlags=64;
-		weight=2000;
-		itemSize[]={3,3};
-		itemsCargoSize[]={6,5};
-		quickBarBonus=2;
-		varWetMax=0.38999999;
-		heatIsolation=0.75;
-		repairableWithKits[]={2,3,5};
-		repairCosts[]={20,20,25};
-		soundAttType="LeatherJacket";
-		hiddenSelections[]=
-		{
-			"zbytek",
-			"personality"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"Survivalists_Characters\tops\data\SRP_Rolled_Shirt_co.paa"
-		};
-    rootClassName="SRP_Rolled_Shirt";
-    colorVariants[]=
-    {      
-      "Gray_Plaid",
-      "Green_Plaid",
-      "Red_Plaid",
-      "Pink_Plaid",
-      "Tan",
-      "Pink",
-      "Green",
-      "Blue"
-    };
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=130;
-					healthLevels[]=
-					{
-						{1.0,{"Survivalists_Characters\tops\data\srp_rolled_shirt.rvmat"}},
-						{0.69999999,{"Survivalists_Characters\tops\data\srp_rolled_shirt.rvmat"}},
-						{0.5,{"Survivalists_Characters\tops\data\srp_rolled_shirt_damage.rvmat"}},
-						{0.30000001,{"Survivalists_Characters\tops\data\srp_rolled_shirt_damage.rvmat"}},
-						{0.0,{"Survivalists_Characters\tops\data\srp_rolled_shirt_destruct.rvmat"}}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class Melee
-				{
-					class Health
-					{
-						damage=0.69;
-					};
-					class Blood
-					{
-						damage=0.69;
-					};
-					class Shock
-					{
-						damage=0.85000002;
-					};
-				};
-				class Infected
-				{
-					class Health
-					{
-						damage=0.70999998;
-					};
-					class Blood
-					{
-						damage=0.70999998;
-					};
-					class Shock
-					{
-						damage=0.85000002;
-					};
-				};
-			};
-		};
-		class ClothingTypes
-		{
-			male="Survivalists_Characters\tops\SRP_Rolled_Shirt_m.p3d";
-			female="Survivalists_Characters\tops\SRP_Rolled_Shirt_f.p3d";
-		};
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="Shirt_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="Shirt_drop_SoundSet";
-					id=898;
-				};
-			};
-		};
-	};
-  class SRP_ESPG3_TacShirt_Colorbase: Clothing
-  {
-    scope=0;
-    displayName="ESP-G3 Combat Shirt";
-    descriptionShort="The ESP-G3 Combat Shirt weas designed and manufactured in mass quantities in the 2001. Whilst not commonly used by the US military, due to it's extortionate cost, it did become favourable amongst military enthusiasts and private military companies";
-    model="Survivalists_characters\tops\SRP_ESP_G3_TacShirt_g.p3d";
-    inventorySlot[]=
-    {
-      "Body"
-    };
-    rotationFlags=64;
-    weight=2000;
-    itemSize[]={3,3};
-    itemsCargoSize[]={6,5};
-    attachments[]=
-    {
-      "SRP_Patch"
-    };
-    quickBarBonus=2;
-    varWetMax=0.38999999;
-    heatIsolation=0.75;
-		repairableWithKits[]={2,3,5};
-		repairCosts[]={20,20,25};
-    soundAttType="LeatherJacket";
-    hiddenSelections[]=
-    {
-      "zbytek"
-    };
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_characters\tops\data\ESP_G3_TacShirt_CO.paa"
-    };
-    rootClassName="SRP_ESPG3_TacShirt";
-    colorVariants[]=
-    {
-      "Black",
-      "Tan",
-      "Green",
-      "MC_Black",
-      "CAD",
-      "M05",
-      "ChocChip",
-      "ERDL",
-      "MARPAT_Wood",
-      "GreyHex",
-      "HelloKitty"
-    };
-    class DamageSystem
-    {
-      class GlobalHealth
-      {
-        class Health
-        {
-          hitpoints=130;
-          healthLevels[]=
-          {
-            {1,{"Survivalists_characters\tops\data\ESP_G3_TacShirt.rvmat"}},
-            {0.69999999,{"Survivalists_characters\tops\data\ESP_G3_TacShirt.rvmat"}},
-            {0.5,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_damage.rvmat"}},
-            {0.30000001,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_damage.rvmat"}},
-            {0,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_destruct.rvmat"}}
-          };
+                    };
+                };
+            };
+            class GlobalArmor
+            {
+                class Melee
+                {
+                    class Health
+                    {
+                        damage = 0.89999998;
+                    };
+                    class Blood
+                    {
+                        damage = 0.89999998;
+                    };
+                    class Shock
+                    {
+                        damage = 0.89999998;
+                    };
+                };
+                class Infected
+                {
+                    class Health
+                    {
+                        damage = 0.89999998;
+                    };
+                    class Blood
+                    {
+                        damage = 0.89999998;
+                    };
+                    class Shock
+                    {
+                        damage = 0.89999998;
+                    };
+                };
+            };
         };
-      };
-      class GlobalArmor
-      {
-          class Melee
-          {
-              class Health
-              {
-                  damage=0.69;
-              };
-              class Blood
-              {
-                  damage=0.69;
-              };
-              class Shock
-              {
-                  damage=0.85000002;
-              };
-          };
-          class Infected
-          {
-              class Health
-              {
-                  damage=0.70999998;
-              };
-              class Blood
-              {
-                  damage=0.70999998;
-              };
-              class Shock
-              {
-                  damage=0.85000002;
-              };
-          };
-      };
-    };
-    class ClothingTypes
-    {
-      male="Survivalists_characters\tops\SRP_ESP_G3_TacShirt_m.p3d";
-      female="Survivalists_characters\tops\SRP_ESP_G3_TacShirt_f.p3d";
-    };
-    class AnimEvents
-    {
-      class SoundWeapon
-      {
-        class pickUpItem
+        class ClothingTypes
         {
-          soundSet="Shirt_pickup_SoundSet";
-          id=797;
+            male = "Survivalists_Characters\tops\srp_plathoodie_m.p3d";
+            female = "Survivalists_Characters\tops\srp_plathoodie_f.p3d";
         };
-        class drop
+        class AnimEvents
         {
-          soundset="Shirt_drop_SoundSet";
-          id=898;
+            class SoundWeapon
+            {
+                class pickUpItem
+                {
+                    soundSet = "Shirt_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "Shirt_drop_SoundSet";
+                    id = 898;
+                };
+            };
         };
-      };
     };
-  };
-  class SRP_KimonoSleeveless_Colorbase: Clothing
-  {
-    scope=0;
-    displayName="Kimono";
-    descriptionShort="A delicate kimono made from silk.";
-    model="Survivalists_characters\tops\srp_kimono_sleeveless_g.p3d";
-    inventorySlot[]=
+    class SRP_PlatHoodie_Wolfbeard : SRP_PlatHoodie
     {
-      "Body"
+        scope = 2;
     };
-    rotationFlags=64;
-    weight=2000;
-    itemSize[]={3,3};
-    itemsCargoSize[]={6,5};
-    quickBarBonus=4;
-    varWetMax=0.38999999;
-    heatIsolation=0.75;
-		repairableWithKits[]={2,3,5};
-		repairCosts[]={20,20,25};
-    soundAttType="LeatherJacket";
-    hiddenSelections[]=
+    class SRP_Sweater_ColorBase : Clothing
     {
-      "zbytek",
-      "personality"
-    };
-    hiddenSelectionsTextures[]=
-    {
-      "Survivalists_Characters\tops\data\srp_kimono_co.paa"
-    };
-    rootClassName="SRP_KimonoSleeveless";
-    colorVariants[]=
-    {
-      "Blue",
-      "Red",
-      "Red_WhiteBelt",
-      // "White", // investor only atm
-    };
-    class DamageSystem
-    {
-      class GlobalHealth
-      {
-        class Health
+        scope = 0;
+        displayName = "Turtleneck Sweater";
+        descriptionShort = "A loose fitting turtleneck sweater";
+        model = "Survivalists_Characters\tops\SRP_Sweater_g.p3d";
+        inventorySlot[] =
         {
-          hitpoints=130;
-          healthLevels[]=
-          {
-            {1,{"Survivalists_characters\tops\data\srp_kimono.rvmat"}},
-            {0.69999999,{"Survivalists_characters\tops\data\srp_kimono.rvmat"}},
-            {0.5,{"Survivalists_characters\tops\data\srp_kimono_damage.rvmat"}},
-            {0.30000001,{"Survivalists_characters\tops\data\srp_kimono_damage.rvmat"}},
-            {0,{"Survivalists_characters\tops\data\srp_kimono_destruct.rvmat"}}
-          };
+            "Body"
         };
-      };
-      class GlobalArmor
-      {
-        class Melee
+        rotationFlags = 64;
+        weight = 2000;
+        itemSize[] = { 4,4 };
+        itemsCargoSize[] = { 6,5 };
+        quickBarBonus = 2;
+        varWetMax = 0.39;
+        heatIsolation = 0.90;
+        repairableWithKits[] = { 2,3,5 };
+        repairCosts[] = { 20,20,25 };
+        soundAttType = "LeatherJacket";
+        hiddenSelections[] =
         {
-          class Health
-          {
-            damage=0.69;
-          };
-          class Blood
-          {
-            damage=0.69;
-          };
-          class Shock
-          {
-            damage=0.85000002;
-          };
+            "zbytek",
+            "personality"
         };
-        class Infected
+        hiddenSelectionsTextures[] =
         {
-          class Health
-          {
-            damage=0.70999998;
-          };
-          class Blood
-          {
-            damage=0.70999998;
-          };
-          class Shock
-          {
-            damage=0.85000002;
-          };
+            "Survivalists_Characters\tops\data\srp_Sweater_CO.paa"
         };
-      };
+        rootClassName = "SRP_Sweater";
+        colorVariants[] =
+        {
+          "Orange",
+          "Mustard",
+          "Blue",
+          "Grey",
+          "Green",
+          "Cream",
+          "Burgundy"
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 130;
+                    healthLevels[] =
+                    {
+                        {1.0,{"Survivalists_Characters\tops\data\srp_sweater.rvmat"}},
+                        {0.7,{"Survivalists_Characters\tops\data\srp_sweater.rvmat"}},
+                        {0.5,{"Survivalists_Characters\tops\data\srp_sweater_damage.rvmat"}},
+                        {0.3,{"Survivalists_Characters\tops\data\srp_sweater_damage.rvmat"}},
+                        {0.0,{"Survivalists_Characters\tops\data\srp_sweater_destruct.rvmat"}}
+                    };
+                };
+            };
+            class GlobalArmor
+            {
+                class Melee
+                {
+                    class Health
+                    {
+                        damage = 0.69;
+                    };
+                    class Blood
+                    {
+                        damage = 0.69;
+                    };
+                    class Shock
+                    {
+                        damage = 0.85;
+                    };
+                };
+                class Infected
+                {
+                    class Health
+                    {
+                        damage = 0.71;
+                    };
+                    class Blood
+                    {
+                        damage = 0.71;
+                    };
+                    class Shock
+                    {
+                        damage = 0.85;
+                    };
+                };
+            };
+        };
+        class ClothingTypes
+        {
+            male = "Survivalists_Characters\tops\SRP_Sweater_m.p3d";
+            female = "Survivalists_Characters\tops\SRP_Sweater_f.p3d";
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickUpItem
+                {
+                    soundSet = "Shirt_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "Shirt_drop_SoundSet";
+                    id = 898;
+                };
+            };
+        };
     };
-    class ClothingTypes
+    class SRP_Rolled_Shirt_ColorBase : Clothing
     {
-      male="Survivalists_characters\tops\srp_kimono_sleeveless_f.p3d";
-      female="Survivalists_characters\tops\srp_kimono_sleeveless_f.p3d";
+        scope = 0;
+        displayName = "Rolled up shirt";
+        descriptionShort = "An unbuttoned shirt with rolled up sleeves.";
+        model = "Survivalists_Characters\tops\SRP_Rolled_Shirt_g.p3d";
+        inventorySlot[] =
+        {
+            "Body"
+        };
+        rotationFlags = 64;
+        weight = 2000;
+        itemSize[] = { 3,3 };
+        itemsCargoSize[] = { 6,5 };
+        quickBarBonus = 2;
+        varWetMax = 0.38999999;
+        heatIsolation = 0.75;
+        repairableWithKits[] = { 2,3,5 };
+        repairCosts[] = { 20,20,25 };
+        soundAttType = "LeatherJacket";
+        hiddenSelections[] =
+        {
+            "zbytek",
+            "personality"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_Characters\tops\data\SRP_Rolled_Shirt_co.paa"
+        };
+        rootClassName = "SRP_Rolled_Shirt";
+        colorVariants[] =
+        {
+          "Gray_Plaid",
+          "Green_Plaid",
+          "Red_Plaid",
+          "Pink_Plaid",
+          "Tan",
+          "Pink",
+          "Green",
+          "Blue"
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 130;
+                    healthLevels[] =
+                    {
+                        {1.0,{"Survivalists_Characters\tops\data\srp_rolled_shirt.rvmat"}},
+                        {0.69999999,{"Survivalists_Characters\tops\data\srp_rolled_shirt.rvmat"}},
+                        {0.5,{"Survivalists_Characters\tops\data\srp_rolled_shirt_damage.rvmat"}},
+                        {0.30000001,{"Survivalists_Characters\tops\data\srp_rolled_shirt_damage.rvmat"}},
+                        {0.0,{"Survivalists_Characters\tops\data\srp_rolled_shirt_destruct.rvmat"}}
+                    };
+                };
+            };
+            class GlobalArmor
+            {
+                class Melee
+                {
+                    class Health
+                    {
+                        damage = 0.69;
+                    };
+                    class Blood
+                    {
+                        damage = 0.69;
+                    };
+                    class Shock
+                    {
+                        damage = 0.85000002;
+                    };
+                };
+                class Infected
+                {
+                    class Health
+                    {
+                        damage = 0.70999998;
+                    };
+                    class Blood
+                    {
+                        damage = 0.70999998;
+                    };
+                    class Shock
+                    {
+                        damage = 0.85000002;
+                    };
+                };
+            };
+        };
+        class ClothingTypes
+        {
+            male = "Survivalists_Characters\tops\SRP_Rolled_Shirt_m.p3d";
+            female = "Survivalists_Characters\tops\SRP_Rolled_Shirt_f.p3d";
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickUpItem
+                {
+                    soundSet = "Shirt_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "Shirt_drop_SoundSet";
+                    id = 898;
+                };
+            };
+        };
     };
-    class AnimEvents
+    class SRP_ESPG3_TacShirt_Colorbase : Clothing
     {
-      class SoundWeapon
-      {
-        class pickUpItem
+        scope = 0;
+        displayName = "ESP-G3 Combat Shirt";
+        descriptionShort = "The ESP-G3 Combat Shirt weas designed and manufactured in mass quantities in the 2001. Whilst not commonly used by the US military, due to it's extortionate cost, it did become favourable amongst military enthusiasts and private military companies";
+        model = "Survivalists_characters\tops\SRP_ESP_G3_TacShirt_g.p3d";
+        inventorySlot[] =
         {
-          soundSet="Shirt_pickup_SoundSet";
-          id=797;
+          "Body"
         };
-        class drop
+        rotationFlags = 64;
+        weight = 2000;
+        itemSize[] = { 3,3 };
+        itemsCargoSize[] = { 6,5 };
+        attachments[] =
         {
-          soundset="Shirt_drop_SoundSet";
-          id=898;
+          "SRP_Patch"
         };
-      };
+        quickBarBonus = 2;
+        varWetMax = 0.38999999;
+        heatIsolation = 0.75;
+        repairableWithKits[] = { 2,3,5 };
+        repairCosts[] = { 20,20,25 };
+        soundAttType = "LeatherJacket";
+        hiddenSelections[] =
+        {
+          "zbytek"
+        };
+        hiddenSelectionsTextures[] =
+        {
+          "Survivalists_characters\tops\data\ESP_G3_TacShirt_CO.paa"
+        };
+        rootClassName = "SRP_ESPG3_TacShirt";
+        colorVariants[] =
+        {
+          "Black",
+          "Tan",
+          "Green",
+          "MC_Black",
+          "CAD",
+          "M05",
+          "ChocChip",
+          "ERDL",
+          "MARPAT_Wood",
+          "GreyHex",
+          "HelloKitty"
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 130;
+                    healthLevels[] =
+                    {
+                      {1,{"Survivalists_characters\tops\data\ESP_G3_TacShirt.rvmat"}},
+                      {0.69999999,{"Survivalists_characters\tops\data\ESP_G3_TacShirt.rvmat"}},
+                      {0.5,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_damage.rvmat"}},
+                      {0.30000001,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_damage.rvmat"}},
+                      {0,{"Survivalists_characters\tops\data\ESP_G3_TacShirt_destruct.rvmat"}}
+                    };
+                };
+            };
+            class GlobalArmor
+            {
+                class Melee
+                {
+                    class Health
+                    {
+                        damage = 0.69;
+                    };
+                    class Blood
+                    {
+                        damage = 0.69;
+                    };
+                    class Shock
+                    {
+                        damage = 0.85000002;
+                    };
+                };
+                class Infected
+                {
+                    class Health
+                    {
+                        damage = 0.70999998;
+                    };
+                    class Blood
+                    {
+                        damage = 0.70999998;
+                    };
+                    class Shock
+                    {
+                        damage = 0.85000002;
+                    };
+                };
+            };
+        };
+        class ClothingTypes
+        {
+            male = "Survivalists_characters\tops\SRP_ESP_G3_TacShirt_m.p3d";
+            female = "Survivalists_characters\tops\SRP_ESP_G3_TacShirt_f.p3d";
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickUpItem
+                {
+                    soundSet = "Shirt_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "Shirt_drop_SoundSet";
+                    id = 898;
+                };
+            };
+        };
     };
-  };
-//===================== END
+    class SRP_KimonoSleeveless_Colorbase : Clothing
+    {
+        scope = 0;
+        displayName = "Kimono";
+        descriptionShort = "A delicate kimono made from silk.";
+        model = "Survivalists_characters\tops\srp_kimono_sleeveless_g.p3d";
+        inventorySlot[] =
+        {
+          "Body"
+        };
+        rotationFlags = 64;
+        weight = 2000;
+        itemSize[] = { 3,3 };
+        itemsCargoSize[] = { 6,5 };
+        quickBarBonus = 4;
+        varWetMax = 0.38999999;
+        heatIsolation = 0.75;
+        repairableWithKits[] = { 2,3,5 };
+        repairCosts[] = { 20,20,25 };
+        soundAttType = "LeatherJacket";
+        hiddenSelections[] =
+        {
+          "zbytek",
+          "personality"
+        };
+        hiddenSelectionsTextures[] =
+        {
+          "Survivalists_Characters\tops\data\srp_kimono_co.paa"
+        };
+        rootClassName = "SRP_KimonoSleeveless";
+        colorVariants[] =
+        {
+          "Blue",
+          "Red",
+          "Red_WhiteBelt",
+          // "White", // investor only atm
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 130;
+                    healthLevels[] =
+                    {
+                      {1,{"Survivalists_characters\tops\data\srp_kimono.rvmat"}},
+                      {0.69999999,{"Survivalists_characters\tops\data\srp_kimono.rvmat"}},
+                      {0.5,{"Survivalists_characters\tops\data\srp_kimono_damage.rvmat"}},
+                      {0.30000001,{"Survivalists_characters\tops\data\srp_kimono_damage.rvmat"}},
+                      {0,{"Survivalists_characters\tops\data\srp_kimono_destruct.rvmat"}}
+                    };
+                };
+            };
+            class GlobalArmor
+            {
+                class Melee
+                {
+                    class Health
+                    {
+                        damage = 0.69;
+                    };
+                    class Blood
+                    {
+                        damage = 0.69;
+                    };
+                    class Shock
+                    {
+                        damage = 0.85000002;
+                    };
+                };
+                class Infected
+                {
+                    class Health
+                    {
+                        damage = 0.70999998;
+                    };
+                    class Blood
+                    {
+                        damage = 0.70999998;
+                    };
+                    class Shock
+                    {
+                        damage = 0.85000002;
+                    };
+                };
+            };
+        };
+        class ClothingTypes
+        {
+            male = "Survivalists_characters\tops\srp_kimono_sleeveless_f.p3d";
+            female = "Survivalists_characters\tops\srp_kimono_sleeveless_f.p3d";
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickUpItem
+                {
+                    soundSet = "Shirt_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "Shirt_drop_SoundSet";
+                    id = 898;
+                };
+            };
+        };
+    };
+    //===================== END
 };
