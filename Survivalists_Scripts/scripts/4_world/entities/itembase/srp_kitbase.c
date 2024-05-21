@@ -1,6 +1,6 @@
-class SRP_KitBase extends ItemBase 
+class SRP_KitBase extends ItemBase
 {
-	override bool IsDeployable() 
+	override bool IsDeployable()
   {
     return true;
   }
@@ -31,7 +31,7 @@ class SRP_Ladder_Opened_Kit extends SRP_KitBase
   override bool CanPutInCargo( EntityAI parent )
   {
     return false;
-  }  
+  }
 };
 class SRP_MasonryMetallurgy_KitBase extends SRP_KitBase{};
 
@@ -44,7 +44,14 @@ class SRP_CoatRack_Basic_Kit extends SRP_KitBase{};
 class SRP_CoatRack_Fancy_Kit extends SRP_KitBase{};
 class SRP_CoatRack_Simple_Kit extends SRP_KitBase{};
 
-class SRP_Cardboardbox_Kit extends SRP_KitBase{};
+class SRP_Cardboardbox_Kit extends SRP_KitBase
+{
+    override void SetActions()
+	{
+		AddAction(ActionPackGift);
+		super.SetActions();
+	}
+};
 class SRP_BedsideTable_Kit extends SRP_KitBase{};
 class SRP_BedsideTableMetal_Kit extends SRP_KitBase{};
 class SRP_MedicalBedSmall_Wood_Kit extends SRP_KitBase{};
@@ -357,7 +364,7 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
     for(int slotIndex=0; slotIndex<slots.Count(); slotIndex++)
     {
       isValid &= HasAttachmentFilledWithItem(slots.Get(slotIndex), types.Get(slotIndex));
-      // if any slot is invalid, break the look 
+      // if any slot is invalid, break the look
       if (!isValid)
       {
         break;
@@ -365,7 +372,7 @@ class SRP_IntermediateCraftingKitBase extends ItemBase
     }
     return isValid;
   }
-  
+
   void DamageAttachments()
   {
   }
@@ -433,7 +440,7 @@ class SRP_Taxidermy_Kit extends SRP_IntermediateCraftingKitBase
     // Print("fabric: " + isSolved);
     ItemBase rags = GetItemInSlot("Rags");
     isSolved &= (rags && rags.GetQuantity() == 6);
-    // Print("rags: " + isSolved);    
+    // Print("rags: " + isSolved);
     ItemBase rope = GetItemInSlot("Rope");
     isSolved &= (rope != null);
     // Print("rope: " + isSolved);
@@ -520,7 +527,7 @@ class SRP_Deconstruction_Kit extends SRP_IntermediateCraftingKitBase
     DamageItemSlot("SRP_ToolKit_Handdrill", Math.RandomIntInclusive(10,20));
     DamageItemSlot("SRP_ToolKit_Crowbar", Math.RandomIntInclusive(10,20));
     DamageItemSlot("SRP_ToolKit_Wrench", Math.RandomIntInclusive(10,20));
-    
+
     AddHealth( Math.RandomIntInclusive(2, 10));
   }
 };
