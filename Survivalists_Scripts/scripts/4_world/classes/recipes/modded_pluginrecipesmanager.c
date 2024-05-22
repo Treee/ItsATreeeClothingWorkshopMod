@@ -1,5 +1,5 @@
 modded class PluginRecipesManager
-{	
+{
 	override void RegisterRecipies()
 	{
 		super.RegisterRecipies();
@@ -8,7 +8,7 @@ modded class PluginRecipesManager
     RegisterRecipe(new SRP_DecraftBBPKits);
     RegisterRecipe(new SRP_DecraftBBPBlueprints);
     RegisterRecipe(new SRP_CraftBBPBlueprints);
-    
+
     //==========================================================UNREGISTER RECIPES
       // Vanilla
       UnregisterRecipe("CraftArrow");
@@ -119,7 +119,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_WoodenBowlDark);
       RegisterRecipe(new Craft_SRP_WoodenBowlCherry);
       RegisterRecipe(new Craft_SRP_WoodenBowlSquare);
-      
+
       RegisterRecipe(new Craft_SRP_WhiteFlag);
 
     //==========================================================Clothing
@@ -128,7 +128,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_DUB_ShieldBackpack);
       RegisterRecipe(new Craft_DUB_BagFlag);
       // HEADS
-      RegisterRecipe(new Craft_SRP_TinfoilHat);      
+      RegisterRecipe(new Craft_SRP_TinfoilHat);
       RegisterRecipe(new Craft_SRP_GhillieWrapTan);
       RegisterRecipe(new Craft_DUB_GhillieHoodTan);
       RegisterRecipe(new Craft_DUB_GhillieHoodWoodland);
@@ -209,20 +209,20 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_RefuelGas_WithCanister_PetrolLighter);
       RegisterRecipe(new SRP_RefuelGas_WithCanister_Zippo);
 
-      RegisterRecipe(new Craft_SRP_MintedCoin_Platinum);	
-      RegisterRecipe(new Craft_SRP_MintedCoin_Iron);	
-      RegisterRecipe(new Craft_SRP_MintedCoin_Gold);	
-      RegisterRecipe(new Craft_SRP_MintedCoin_Bronze);	
-      RegisterRecipe(new Craft_SRP_MintedCoin_Copper);	
+      RegisterRecipe(new Craft_SRP_MintedCoin_Platinum);
+      RegisterRecipe(new Craft_SRP_MintedCoin_Iron);
+      RegisterRecipe(new Craft_SRP_MintedCoin_Gold);
+      RegisterRecipe(new Craft_SRP_MintedCoin_Bronze);
+      RegisterRecipe(new Craft_SRP_MintedCoin_Copper);
 
-      RegisterRecipe(new Craft_SRP_SalvageSewingThread);	
-      RegisterRecipe(new Craft_SRP_SalvageSewingThreadWithTool);	
+      RegisterRecipe(new Craft_SRP_SalvageSewingThread);
+      RegisterRecipe(new Craft_SRP_SalvageSewingThreadWithTool);
 
-      RegisterRecipe(new Craft_SRP_SalvageClothing);	
-      RegisterRecipe(new Craft_SRP_SalvageClothingWithTool);	
-      RegisterRecipe(new Craft_SRP_SalvageClothingWithMachine);	
+      RegisterRecipe(new Craft_SRP_SalvageClothing);
+      RegisterRecipe(new Craft_SRP_SalvageClothingWithTool);
+      RegisterRecipe(new Craft_SRP_SalvageClothingWithMachine);
 
-      RegisterRecipe(new SRP_Craft_Netting);	
+      RegisterRecipe(new SRP_Craft_Netting);
 
     //==========================================================Containers
       RegisterRecipe(new Craft_SRP_LeatherPouch_Default);
@@ -244,7 +244,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_SmallProtectorCase_Syringe);
       RegisterRecipe(new Craft_SRP_SmallProtectorCase_Nails);
       RegisterRecipe(new Craft_SRP_SmallProtectorCase_Flare);
-      RegisterRecipe(new Craft_SRP_SmallProtectorCase_Armband);      
+      RegisterRecipe(new Craft_SRP_SmallProtectorCase_Armband);
       RegisterRecipe(new Craft_SRP_Rebox_Nails);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_556x45);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_556x45Tracer);
@@ -259,7 +259,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_45ACP);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_9x19);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_380);
-      RegisterRecipe(new Craft_SRP_Rebox_Ammo_12gaPellets);  
+      RegisterRecipe(new Craft_SRP_Rebox_Ammo_12gaPellets);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_12gaSlug);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_545x39);
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_545x39Tracer);
@@ -267,7 +267,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_Rebox_Ammo_9x39AP);
 
     //==========================================================Crafting
-      RegisterRecipe(new Craft_SRP_DecorativeClayPot_KitBase);	
+      RegisterRecipe(new Craft_SRP_DecorativeClayPot_KitBase);
       RegisterRecipe(new Craft_SRP_DecorativeClayPotKit_Bottle);
       RegisterRecipe(new Craft_SRP_DecorativeClayPotKit_Decanter);
       RegisterRecipe(new Craft_SRP_DecorativeClayPotKit_BulbShort);
@@ -277,8 +277,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_DecorativeClayPotKit_TeardropTall);
       RegisterRecipe(new Craft_SRP_DecorativeClayPotKit_TeardropWide);
 
-      RegisterRecipe(new Craft_SRP_Potbelly_Stove_Kit);		
-      RegisterRecipe(new Craft_SRP_ShootingTargets_Kit);		
+      RegisterRecipe(new Craft_SRP_Potbelly_Stove_Kit);
+      RegisterRecipe(new Craft_SRP_ShootingTargets_Kit);
       RegisterRecipe(new Craft_SRP_PortableGasLamp);
 
       RegisterRecipe(new Craft_SRP_Barricade_Wood_Kit);
@@ -317,7 +317,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_WoodenSignKit_Base);
 
       RegisterRecipe(new SRP_Craft_BedMetal);
-    
+
       RegisterRecipe(new SRP_Craft_SRP_MetalBarrelKit_Kit);
       RegisterRecipe(new SRP_Craft_MetalBarrelOld);
       RegisterRecipe(new SRP_Craft_MetalBarrelBlue);
@@ -327,10 +327,10 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_Craft_MetalGunWallFence);
       RegisterRecipe(new SRP_Craft_MetalMeleeWallFence);
       // RegisterRecipe(new SRP_Craft_Anvil);
-      RegisterRecipe(new Craft_SRP_TailorFabric);      
-      
-      RegisterRecipe(new Craft_SRP_StreetLightKit);		
-      RegisterRecipe(new Craft_SRP_StreetLightSlim_Kit);		
+      RegisterRecipe(new Craft_SRP_TailorFabric);
+
+      RegisterRecipe(new Craft_SRP_StreetLightKit);
+      RegisterRecipe(new Craft_SRP_StreetLightSlim_Kit);
       RegisterRecipe(new Craft_SRP_StreetLightLarge_Kit);
       RegisterRecipe(new Craft_SRP_StreetLightLarge_Metal_Kit);
       RegisterRecipe(new Craft_SRP_StreetLightMedium_Kit);
@@ -390,24 +390,24 @@ modded class PluginRecipesManager
       // RegisterRecipe(new Craft_SRP_ToolRack_Hammers_Kit);
 
     //==========================================================Drugs
-      RegisterRecipe(new SRP_Drugs_CreateCocaineStarterBag);	
-      RegisterRecipe(new SRP_Drugs_ManufactureCocaineFromRaw);	
-      RegisterRecipe(new SRP_Drugs_ManufactureCocaineFromPasteWithTubes);	
-      RegisterRecipe(new SRP_Drugs_CutDrugsFromCocaine);	
+      RegisterRecipe(new SRP_Drugs_CreateCocaineStarterBag);
+      RegisterRecipe(new SRP_Drugs_ManufactureCocaineFromRaw);
+      RegisterRecipe(new SRP_Drugs_ManufactureCocaineFromPasteWithTubes);
+      RegisterRecipe(new SRP_Drugs_CutDrugsFromCocaine);
       RegisterRecipe(new SRP_Drugs_CutDrugsFromCocaineTainted);
 
       RegisterRecipe(new SRP_Drugs_SplitMediumMethJar);
   		RegisterRecipe(new SRP_Drugs_SplitLargeMethJar);
-  
+
       RegisterRecipe(new SRP_Drugs_DetermineQuality);
 
-      RegisterRecipe(new SRP_Drugs_CraftRollingPapers);		
+      RegisterRecipe(new SRP_Drugs_CraftRollingPapers);
       RegisterRecipe(new SRP_Craft_DrugPack);
-      RegisterRecipe(new SRP_Craft_DrugCarton);	
+      RegisterRecipe(new SRP_Craft_DrugCarton);
 
-      RegisterRecipe(new SRP_Drugs_RollZWeedJoint);	
-      RegisterRecipe(new SRP_Drugs_RollZWeedJointIrradiated);	
-      RegisterRecipe(new SRP_Drugs_RollCigarette);	
+      RegisterRecipe(new SRP_Drugs_RollZWeedJoint);
+      RegisterRecipe(new SRP_Drugs_RollZWeedJointIrradiated);
+      RegisterRecipe(new SRP_Drugs_RollCigarette);
       RegisterRecipe(new SRP_Drugs_RollCigar);
 
     //==========================================================Events
@@ -426,27 +426,27 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_Halloween_TradeCoinsGrimoire_Pestilence);
 
     //==========================================================Drinks
-      RegisterRecipe(new SRP_Craft_AlcoholMash_Kit);	
+      RegisterRecipe(new SRP_Craft_AlcoholMash_Kit);
 
-      RegisterRecipe(new SRP_Craft_AddToMashPot_Fruit);		
-      RegisterRecipe(new SRP_Craft_AddToMashPot_Sugars);		
-      
-      RegisterRecipe(new SRP_Craft_BrandAlcoholDrink_Wine);		
-      RegisterRecipe(new SRP_Craft_BrandAlcoholDrink_Beer);		
+      RegisterRecipe(new SRP_Craft_AddToMashPot_Fruit);
+      RegisterRecipe(new SRP_Craft_AddToMashPot_Sugars);
 
-      RegisterRecipe(new Craft_SRP_WaterBottle_Blood);		
+      RegisterRecipe(new SRP_Craft_BrandAlcoholDrink_Wine);
+      RegisterRecipe(new SRP_Craft_BrandAlcoholDrink_Beer);
+
+      RegisterRecipe(new Craft_SRP_WaterBottle_Blood);
 
     //==========================================================Food
-      RegisterRecipe(new SRP_Craft_RiceCrispy);		
+      RegisterRecipe(new SRP_Craft_RiceCrispy);
 
-      RegisterRecipe(new SRP_CreateVeggiesMeatComboCanned_Raw);		
-      RegisterRecipe(new SRP_CreateVeggiesCanned_Raw);		
-      RegisterRecipe(new SRP_CreateMeatCanned_Raw);		
-      RegisterRecipe(new SRP_CreateHumanMeatCanned_Raw);		
-      RegisterRecipe(new SRP_CreateVeggiesHumanMeatComboCanned_Raw);		
-      // RegisterRecipe(new SRP_CanRawGoods);		
-      RegisterRecipe(new SRP_CanRawGoodsPliers);		
-      
+      RegisterRecipe(new SRP_CreateVeggiesMeatComboCanned_Raw);
+      RegisterRecipe(new SRP_CreateVeggiesCanned_Raw);
+      RegisterRecipe(new SRP_CreateMeatCanned_Raw);
+      RegisterRecipe(new SRP_CreateHumanMeatCanned_Raw);
+      RegisterRecipe(new SRP_CreateVeggiesHumanMeatComboCanned_Raw);
+      // RegisterRecipe(new SRP_CanRawGoods);
+      RegisterRecipe(new SRP_CanRawGoodsPliers);
+
       RegisterRecipe(new CutOutPumpkinSeeds_Irradiated);
 
       RegisterRecipe(new CraftBreadDough);
@@ -465,7 +465,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new CraftHotdog);
 
 
-    //==========================================================SMELTING       
+    //==========================================================SMELTING
       RegisterRecipe(new Craft_SRP_Container_StonePileSmall);
       RegisterRecipe(new Craft_SRP_Container_StonePileLarge);
 
@@ -498,7 +498,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_Crown_Amethyst);
       RegisterRecipe(new Craft_SRP_Crown_Sapphire);
 
-    //==========================================================Gunsmithing           
+    //==========================================================Gunsmithing
       RegisterRecipe(new SRP_BreakDownPistolCore_Expert);
       RegisterRecipe(new SRP_BreakDownRifleCoreLarge_Expert);
       RegisterRecipe(new SRP_BreakDownRifleCoreMedium_Expert);
@@ -566,20 +566,20 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_CraftingMisc_FacePaint);
 
     //==========================================================Medical
-      RegisterRecipe(new Craft_SRP_BandageDressing); 
+      RegisterRecipe(new Craft_SRP_BandageDressing);
 
-      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Kuru); 
-      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Salmonella); 
-      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Influenza); 
-      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Cholera); 
-      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_StomachVirus); 
+      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Kuru);
+      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Salmonella);
+      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Influenza);
+      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Cholera);
+      RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_StomachVirus);
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Bacteria);
-      
-      RegisterRecipe(new Craft_SRP_CraftVirusCure_Kuru); 
-      RegisterRecipe(new Craft_SRP_CraftVirusCure_Salmonella); 
-      RegisterRecipe(new Craft_SRP_CraftVirusCure_Influenza); 
-      RegisterRecipe(new Craft_SRP_CraftVirusCure_Cholera); 
-      RegisterRecipe(new Craft_SRP_CraftVirusCure_StomachVirus); 
+
+      RegisterRecipe(new Craft_SRP_CraftVirusCure_Kuru);
+      RegisterRecipe(new Craft_SRP_CraftVirusCure_Salmonella);
+      RegisterRecipe(new Craft_SRP_CraftVirusCure_Influenza);
+      RegisterRecipe(new Craft_SRP_CraftVirusCure_Cholera);
+      RegisterRecipe(new Craft_SRP_CraftVirusCure_StomachVirus);
       RegisterRecipe(new Craft_SRP_CraftVirusCure_Bacteria);
 
       RegisterRecipe(new Craft_SRP_FullSyringe_Kuru);
@@ -610,10 +610,10 @@ modded class PluginRecipesManager
 
       RegisterRecipe(new Craft_SRP_RefillGasMaskFilter);
 
-      RegisterRecipe(new Craft_SRP_MedicalKit_Kit_Rags); 
-      RegisterRecipe(new Craft_SRP_MedicalKit_LegCast); 
+      RegisterRecipe(new Craft_SRP_MedicalKit_Kit_Rags);
+      RegisterRecipe(new Craft_SRP_MedicalKit_LegCast);
 
-      RegisterRecipe(new Craft_SRP_Sterilize_Bloodcontainer); 
+      RegisterRecipe(new Craft_SRP_Sterilize_Bloodcontainer);
 
     //==========================================================Optics
       RegisterRecipe(new Craft_SRP_CanScopeBacon);
@@ -629,7 +629,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_PersonalRadio_SneakyBear);
       RegisterRecipe(new Craft_SRP_PersonalRadio_NumberStations);
       RegisterRecipe(new Craft_SRP_PersonalRadio_AnimalCaller);
-      
+
       RegisterRecipe(new SRP_DismantleElectronicJammers_Enhanced);
       RegisterRecipe(new SRP_DismantleElectronicJammers_RemoveHackingKit);
 
@@ -662,8 +662,8 @@ modded class PluginRecipesManager
 
     //==========================================================Weapons
       RegisterRecipe(new Craft_SRP_WeaponPipeAxe_Kit);
-      RegisterRecipe(new Craft_SRP_WeaponPipeAxe);    
-      RegisterRecipe(new SRP_CraftPoisonBolt);    
+      RegisterRecipe(new Craft_SRP_WeaponPipeAxe);
+      RegisterRecipe(new SRP_CraftPoisonBolt);
     //==========================================================Liquids
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Pelts);
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Flesh);

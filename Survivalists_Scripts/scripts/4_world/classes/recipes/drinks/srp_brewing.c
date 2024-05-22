@@ -10,28 +10,28 @@ class SRP_Craft_AlcoholMash_Kit extends RecipeBase
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 2;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"Pot");//you can insert multiple ingredients this way
-		
-	
+
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"Edible_Base");//you can insert multiple ingredients this way
 
@@ -41,7 +41,7 @@ class SRP_Craft_AlcoholMash_Kit extends RecipeBase
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("BrewingPot_Mash_Fruit");//add results here
 
@@ -54,22 +54,22 @@ class SRP_Craft_AlcoholMash_Kit extends RecipeBase
 		m_ResultUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this result
 		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
 	}
-  override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+    override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
 		if ( ingredients[1])
-    {
-      Edible_Base edible = Edible_Base.Cast(ingredients[1]);
-      if (edible && edible.IsFruit())
-      {        
-        return (edible.IsFoodDried() || edible.IsFoodRotten());
-      }
-    }
-    return false;			
+        {
+            Edible_Base edible = Edible_Base.Cast(ingredients[1]);
+            if (edible && edible.IsFruit())
+            {
+                return (edible.IsFoodDried() || edible.IsFoodRotten());
+            }
+        }
+        return false;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player, array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
-	{		
-    Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called","recipes");
+	{
+        Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called","recipes");
 	}
 };
 
@@ -85,28 +85,28 @@ class SRP_Craft_AddToMashPot_Base extends RecipeBase
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 2;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		// InsertIngredient(0,"Pot");//you can insert multiple ingredients this way
-		
-	
+
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 1;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		// InsertIngredient(1,"Edible_Base");//you can insert multiple ingredients this way
 
@@ -116,7 +116,7 @@ class SRP_Craft_AddToMashPot_Base extends RecipeBase
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		// AddResult("BrewingPot_Mash_Fruit");//add results here
 
@@ -129,14 +129,14 @@ class SRP_Craft_AddToMashPot_Base extends RecipeBase
 		m_ResultUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this result
 		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
 	}
-  override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+    override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
-    return true;	
+        return true;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player, array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
-	{		
-    Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called: " + m_Name,"recipes");
+	{
+        Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called: " + m_Name,"recipes");
 	}
 };
 
@@ -144,54 +144,54 @@ class SRP_Craft_AddToMashPot_Fruit extends SRP_Craft_AddToMashPot_Base
 {
 	override void Init()
 	{
-    super.Init();
+        super.Init();
 		m_Name = "Add To Mash Pot - Fruit";
 		InsertIngredient(0,"BrewingPot_Mash_Fruit");//you can insert multiple ingredients this way
-    InsertIngredient(1,"Edible_Base");//you can insert multiple ingredients this way
+        InsertIngredient(1,"Edible_Base");//you can insert multiple ingredients this way
 	}
-  override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+    override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
 		if (ingredients[1])
-    {
-      Edible_Base edible = Edible_Base.Cast(ingredients[1]);
-      if (edible && edible.IsFruit())
-      {
-        return (edible.IsFoodDried() || edible.IsFoodRotten());
-      }
-    }
-    return false;
+        {
+            Edible_Base edible = Edible_Base.Cast(ingredients[1]);
+            if (edible && edible.IsFruit())
+            {
+                return (edible.IsFoodDried() || edible.IsFoodRotten());
+            }
+        }
+        return false;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player, array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
-	{		
-    Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called: " + m_Name,"recipes");
+	{
+        Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called: " + m_Name,"recipes");
 	}
 };
 class SRP_Craft_AddToMashPot_Sugars extends SRP_Craft_AddToMashPot_Base
 {
 	override void Init()
 	{
-    super.Init();
+        super.Init();
 		m_Name = "Add To Mash Pot - Sugars";
 
-    m_IngredientAddQuantity[0] = 10;// 0 = do nothing
+        m_IngredientAddQuantity[0] = 10;// 0 = do nothing
 		InsertIngredient(0,"BrewingPot_Mash_Fruit");//you can insert multiple ingredients this way
 
-    m_MinQuantityIngredient[1] = 100;//-1 = disable check
+        m_MinQuantityIngredient[1] = 100;//-1 = disable check
 		m_IngredientAddQuantity[1] = -100;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 
-    InsertIngredient(1,"BoxCerealCrunchin_FlakedCorn");//you can insert multiple ingredients this way
-    InsertIngredient(1,"BoxCerealCrunchin_Hops");//you can insert multiple ingredients this way
-    InsertIngredient(1,"BoxCerealCrunchin_Barley");//you can insert multiple ingredients this way
+        InsertIngredient(1,"BoxCerealCrunchin_FlakedCorn");//you can insert multiple ingredients this way
+        InsertIngredient(1,"BoxCerealCrunchin_Hops");//you can insert multiple ingredients this way
+        InsertIngredient(1,"BoxCerealCrunchin_Barley");//you can insert multiple ingredients this way
 	}
-  override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
+    override bool CanDo(ItemBase ingredients[], PlayerBase player)//final check for recipe's validity
 	{
 		return true;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player, array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
-	{		
-    Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called: " + m_Name,"recipes");
+	{
+        Debug.Log("SRP_Craft_AlcoholMash_Kit: Recipe Do method called: " + m_Name,"recipes");
 	}
 };
