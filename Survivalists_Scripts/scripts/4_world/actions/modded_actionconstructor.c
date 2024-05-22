@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
+        actions.Insert(SRP_ActionKnockOnDoor);
+
         actions.Insert(SRP_ActionRollClothing);
         actions.Insert(SRP_ActionUnRollClothing);
 
