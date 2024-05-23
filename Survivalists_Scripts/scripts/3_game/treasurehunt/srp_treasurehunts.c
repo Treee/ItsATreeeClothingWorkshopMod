@@ -268,7 +268,7 @@ class SRP_DynamicTreasureHunt
       m_PotentialTreasureLocations.Insert(new PotentialTreasureLocation("12728.00 0.0 2080.00", "12692.00 0.0 3550.00", "13550.00 0.0 3078.00", "Crater Island"));
       m_PotentialTreasureLocations.Insert(new PotentialTreasureLocation("12636.00 0.0 1444.00", "11892.00 0.0 1976.00", "12654.00 0.0 3222.00", "Crater Island"));
     }
-  }  
+  }
   PotentialTreasureLocation GetRandomTreasureLocation()
   {
     if (m_PotentialTreasureLocations.Count() > 0)
@@ -286,7 +286,8 @@ class SRP_DynamicTreasureHunt
   }
   string GetRandomTreasureHuntRewardText()
   {
-    return GetRandomTreasureHuntRewardTexts().GetRandomElement();
+    return ConstructRecipeNote();
+    // return GetRandomTreasureHuntRewardTexts().GetRandomElement();
   }
   TStringArray GetRandomTreasureHuntRewardTexts()
   {
@@ -294,6 +295,38 @@ class SRP_DynamicTreasureHunt
       "Hands off my stuff!\n I know where you live."
       "We used to run this\n island but a zombie ate\na chunk of our knees\nhope these serve\nyou better than us.\n\nRegards,\nLen & Spud."
     };
+  }
+  string ConstructRecipeNote()
+  {
+    SRP_RecipeManager randomRecipeManager = GetRandomRecipeManager();
+    SRP_CraftableItem randomCraftableRecipe = randomRecipeManager.GetRandomCraftableItem();
+    string recipe = randomCraftableRecipe.PrettyPrintIngredients();
+    recipe.ToLower();
+    return string.Format("I did it!! Now to hide the recipe.\n%1\nPS. %2", recipe, randomCraftableRecipe.GetDisplayName());
+  }
+
+  SRP_RecipeManager GetRandomRecipeManager(int chance = -1)
+  {
+    // generate a random recipe manager if one isnt forced
+    if (chance == -1)
+        chance = Math.RandomIntInclusive(0,6);
+
+    if (chance == 0)
+        return GetDayZGame().GetSRPSmithingRecipesGlobal();
+    else if (chance == 1)
+        return GetDayZGame().GetSRPTailoringRecipesGlobal();
+    else if (chance == 2)
+        return GetDayZGame().GetSRPDrugRecipesGlobal();
+    else if (chance == 3)
+        return GetDayZGame().GetSRPWoodWorkbenchRecipesGlobal();
+    else if (chance == 4)
+        return GetDayZGame().GetSRPMetalWorkbenchRecipesGlobal();
+    else if (chance == 5)
+        return GetDayZGame().GetSRPAmmoRecipesGlobal();
+    else if (chance == 6)
+        return GetDayZGame().GetSRPCookingRecipesGlobal();
+
+    return GetDayZGame().GetSRPSmithingRecipesGlobal();
   }
   string GetRandomTreasureItem()
   {
@@ -316,7 +349,7 @@ class SRP_DynamicTreasureHunt
       "AmmoBox_357_20Rnd",
       "AmmoBox_556x45_20Rnd",
       "AmmoBox_762x39_20Rnd",
-      "AmmoBox_762x54_20Rnd",      
+      "AmmoBox_762x54_20Rnd",
 			"SRP_Mining_RawOre_Zinc",
       "SRP_Mining_RawOre_Silver",
 			"SRP_StimPackInjector_Espen",
