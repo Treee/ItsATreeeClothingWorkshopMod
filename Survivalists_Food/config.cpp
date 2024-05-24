@@ -3785,6 +3785,107 @@ class CfgVehicles
             };
         };
     };
+    class SRP_PlantPulp : SRP_PlantHerbEdible_Colorbase
+    {
+        scope = 2;
+        displayName = "Plant Pulp";
+        descriptionShort = "Raw pulp from plant material with most impurities boiled away.";
+        model = "\dz\gear\cultivation\plant_material.p3d";
+        inventorySlot[] =
+        {
+            "SmokingA",
+            "SmokingB",
+            "SmokingC",
+            "SmokingD",
+            "SRP_Flower1",
+        };
+        color = "SRP_PlantPulp";
+        itemSize[] = { 2,1 };
+        rotationFlags = 34;
+        weight = 0;
+        weightPerQuantityUnit = 9.5;
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Food\food\data\srp_plant_material_pulp_co.paa" };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 1000;
+                    healthLevels[] =
+                    {
+                        {1,{"DZ\gear\cultivation\data\plant_material.rvmat"}},
+                        {0.69999999,{"DZ\gear\cultivation\data\plant_material.rvmat"}},
+                        {0.5,{"DZ\gear\cultivation\data\plant_material_damage.rvmat"}},
+                        {0.30000001,{"DZ\gear\cultivation\data\plant_material_damage.rvmat"}},
+                        {0,{"DZ\gear\cultivation\data\plant_material_destruct.rvmat"}}
+                    };
+                };
+            };
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickUpItem_Light
+                {
+                    soundSet = "pickUpPlantMaterialLight_SoundSet";
+                    id = 796;
+                };
+                class pickUpItem
+                {
+                    soundSet = "pickUpPlantMaterial_SoundSet";
+                    id = 797;
+                };
+            };
+        };
+        class Food
+        {
+            class FoodStages
+            {
+                class Raw
+                {
+                    visual_properties[] = { 0,0,0 };
+                    nutrition_properties[] = { 1,1,50,30,1 };
+                    cooking_properties[] = { 0,0 };
+                };
+                class Rotten
+                {
+                    visual_properties[] = { -1,-1,5 };
+                    nutrition_properties[] = { 1,1,0,50,50,16 };
+                    cooking_properties[] = { 0,0 };
+                };
+                class Baked
+                {
+                    visual_properties[] = { 0,1,1 };
+                    nutrition_properties[] = { 1,1,1,5,1 };
+                    cooking_properties[] = { 70,35 };
+                };
+                class Boiled
+                {
+                    visual_properties[] = { 0,2,2 };
+                    nutrition_properties[] = { 1,5,1,70,1 };
+                    cooking_properties[] = { 70,45 };
+                };
+                class Dried
+                {
+                    visual_properties[] = { 0,3,3 };
+                    nutrition_properties[] = { 1,1,1,70,1 };
+                    cooking_properties[] = { 70,190,80 };
+                };
+                class Burned
+                {
+                    visual_properties[] = { 0,4,4 };
+                    nutrition_properties[] = { 1,1,1,50,1 };
+                    cooking_properties[] = { 100,20 };
+                };
+            };
+            class FoodStageTransitions : BaseFoodStageTransitions
+            {
+            };
+        };
+    };
     //================================== FUNCTIONAL RETEXTURES
     class BoxCerealCrunchin_FlakedCorn : BoxCerealCrunchin
     {

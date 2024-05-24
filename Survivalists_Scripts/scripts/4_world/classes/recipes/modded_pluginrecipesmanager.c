@@ -235,6 +235,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_Notebook);
       RegisterRecipe(new Craft_SRP_ExtraPaper);
       RegisterRecipe(new Craft_SRP_CardboardBox_Kit);
+      RegisterRecipe(new Craft_SRP_CutLargePaper);
 
       RegisterRecipe(new Craft_SRP_Container_HiddenStash_Can);
       RegisterRecipe(new Craft_SRP_Container_HiddenStash_Guts);

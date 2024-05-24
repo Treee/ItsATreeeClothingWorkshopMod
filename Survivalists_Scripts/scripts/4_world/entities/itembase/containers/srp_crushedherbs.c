@@ -1,7 +1,7 @@
 class SRP_CrushedHerb_Colorbase extends Edible_Base
 {
   bool AreCorrectTypesAndQuantities(TStringArray types, TIntArray quantities, bool reduceQuantity = false)
-  {    
+  {
     for(int i=0; i<types.Count(); i++)
     {
       if (IsCorrectTypeAndQuantity(types.Get(i), quantities.Get(i)))
@@ -16,7 +16,7 @@ class SRP_CrushedHerb_Colorbase extends Edible_Base
     }
     return false;
   }
-  
+
   bool IsCorrectTypeAndQuantity(string type, int quantity)
   {
     // Print("Type: " + type + " this color: " + ConfigGetString("color") + " Quantity: " + quantity + " expected: " + GetQuantity());
@@ -36,4 +36,5 @@ class SRP_CrushedHerb_Rosemary extends SRP_CrushedHerb_Colorbase{};
 class SRP_CrushedHerb_GreenAmanita extends SRP_CrushedHerb_Colorbase{};
 class SRP_CrushedHerb_Yarrow extends SRP_CrushedHerb_Colorbase{};
 class SRP_CrushedHerb_Mint extends SRP_CrushedHerb_Colorbase{};
+class SRP_CrushedHerb_SRP_PlantPulp extends SRP_CrushedHerb_Colorbase{};
 

@@ -16,3 +16,4 @@ class Rosemary extends SRP_PlantHerbEdible_Colorbase{};
 class GreenAmanita extends SRP_PlantHerbEdible_Colorbase{};
 class Yarrow extends SRP_PlantHerbEdible_Colorbase{};
 class Mint extends SRP_PlantHerbEdible_Colorbase{};
+class SRP_PlantPulp extends SRP_PlantHerbEdible_Colorbase{};

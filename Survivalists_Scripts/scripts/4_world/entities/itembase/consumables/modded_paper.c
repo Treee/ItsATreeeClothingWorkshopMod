@@ -40,3 +40,13 @@ modded class SRP_SealedLetter_ColorBase
     return true;
   }
 };
+
+class SRP_Paper_LargeSheetRaw extends ItemBase
+{
+    override void SetActions()
+	{
+		super.SetActions();
+
+		AddAction(SRP_PressWaterFromPaper);
+	}
+};
