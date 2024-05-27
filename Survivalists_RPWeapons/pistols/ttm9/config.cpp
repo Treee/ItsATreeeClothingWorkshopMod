@@ -68,27 +68,9 @@ class cfgWeapons
     {
         scope = 2;
         displayName = "Golden Beretta M9";
-        hiddenSelections[] = { "zbytek","plastic" };
-        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Gold_CO.paa", "Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Gold_CO.paa" };
-        hiddenSelectionsMaterials[] = { "Survivalists_RPWeapons\pistols\ttm9\data\basegold.rvmat","Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic.rvmat" };
-        class DamageSystem
-        {
-            class GlobalHealth
-            {
-                class Health
-                {
-                    hitpoints = 150;
-                    healthLevels[] =
-                    {
-                        {1,{"Survivalists_RPWeapons\pistols\ttm9\data\basegold.rvmat","Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic.rvmat"}},
-                        {0.69999999,{"Survivalists_RPWeapons\pistols\ttm9\data\basegold.rvmat","Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic.rvmat"}},
-                        {0.5,{"Survivalists_RPWeapons\pistols\ttm9\data\basegold_damage.rvmat", "Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic_damage.rvmat"}},
-                        {0.30000001,{"Survivalists_RPWeapons\pistols\ttm9\data\basegold_damage.rvmat", "Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic_damage.rvmat"}},
-                        {0,{"Survivalists_RPWeapons\pistols\ttm9\data\basegold_destruct.rvmat", "Survivalists_RPWeapons\pistols\ttm9\data\base_Plastic_destruct.rvmat"}}
-                    };
-                };
-            };
-        };
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\pistols\ttm9\data\ttm9_Gold_CO.paa" };
+        hiddenSelectionsMaterials[] = { "Survivalists_RPWeapons\pistols\ttm9\data\basegold.rvmat" };
     };
     class ttm9_Tan : ttm9
     {
