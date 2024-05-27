@@ -1,5 +1,10 @@
 class Ammo_40mm_Flashbang: Ammo_40mm_Base
 {
+    override bool ShootsExplosiveAmmo()
+	{
+		return true;
+	}
+
 	override void EEKilled(Object killer)
 	{
 		super.EEKilled(killer);

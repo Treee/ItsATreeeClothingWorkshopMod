@@ -108,7 +108,7 @@ class CfgMagazines
         displayName = "40mm Flash Bang Shell";
         descriptionShort = "A shell specifically made to distribute a flash bang at a distance.";
         model = "\dz\weapons\ammunition\40mm_grenade.p3d";
-        ammo = "Bullet_12GA_Flash";
+        ammo = "Bullet_40mm_Flash";
     };
 };
 
@@ -121,6 +121,10 @@ class CfgAmmoTypes
     class AType_Bullet_12Stone
     {
         name = "Bullet_12Stone";
+    };
+    class AType_Bullet_40mm_Flash
+    {
+        name = "Bullet_40mm_Flash";
     };
 };
 
@@ -152,6 +156,29 @@ class CfgAmmo
             class Shock
             {
                 damage = 0;
+            };
+        };
+    };
+
+    class Bullet_40mm_Flash : Bullet_40mm_Base
+    {
+        spawnPileType = "Ammo_40mm_Flashbang";
+        class DamageApplied
+        {
+            type = "Projectile";
+            dispersion = 0.0;
+            bleedThreshold = 1.0;
+            class Health
+            {
+                damage = 1;
+            };
+            class Blood
+            {
+                damage = 0;
+            };
+            class Shock
+            {
+                damage = 10;
             };
         };
     };

@@ -143,4 +143,22 @@ modded class DayZGame
         }
         super.OnKeyRelease(key);
     }
+    override void FirearmEffects(Object source, Object directHit, int componentIndex, string surface, vector pos, vector surfNormal,vector exitPos, vector inSpeed, vector outSpeed, bool isWater, bool deflected, string ammoType)
+	{
+		super.FirearmEffects(source,directHit,componentIndex,surface,pos,surfNormal,exitPos,inSpeed,outSpeed,isWater,deflected,ammoType);
+        if (IsServer())
+		{
+            if (source && source.ShootsExplosiveAmmo() && !deflected && outSpeed == vector.Zero)
+            {
+                vector adjust = surfNormal.VectorToAngles();
+                if(ammoType == "Bullet_40mm_Flash")
+                {
+                    if(GetGame().IsDedicatedServer())
+                    {
+                        GetGame().CreateObject("DUB_Flash", pos);
+                    }
+                }
+            }
+        }
+    }
 };
