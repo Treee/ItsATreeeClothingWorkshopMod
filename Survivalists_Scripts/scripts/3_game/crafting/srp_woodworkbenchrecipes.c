@@ -45,7 +45,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
         craftableItems.Insert(Register_WoodenFurniture_OutdoorChairKit_Recipe());
         craftableItems.Insert(Register_WoodenFurniture_TallOutdoorChairKit_Recipe());
         craftableItems.Insert(Register_WoodenFurniture_OutdoorTableKit_Recipe());
-        craftableItems.Insert(Register_BattleStandardSkullKit_Recipe());\
+        craftableItems.Insert(Register_BattleStandardSkullKit_Recipe());
 
         craftableItems.Insert(Register_WoodenFurniture_DeskKit_Recipe());
         craftableItems.Insert(Register_WoodenFurniture_AntiqueDeskKit_Recipe());
