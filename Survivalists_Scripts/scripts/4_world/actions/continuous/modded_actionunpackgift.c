@@ -1,9 +1,9 @@
 modded class ActionUnpackGift
-{	
+{
   override void OnFinishProgressServer( ActionData action_data )
 	{
     super.OnFinishProgressServer(action_data);
-    
+
     // only gift boxes ending in _1 are treasure hunts (CE spawned, not crafted)
     if (action_data.m_MainItem && action_data.m_MainItem.GetType().Contains("_1"))
     {
@@ -12,7 +12,7 @@ modded class ActionUnpackGift
       {
         PotentialTreasureLocation treasureSpot = GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureLocation();
         vector treasureLocation = treasureSpot.GetRandomPointInside();
-        paper.GetWrittenNoteData().InitNoteInfo(null, paper);    
+        paper.GetWrittenNoteData().InitNoteInfo(null, paper);
         paper.GetWrittenNoteData().SetNoteText(GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureHuntText(treasureSpot));
 
         Param1<string> text = new Param1<string>(paper.GetWrittenNoteData().GetNoteText());
@@ -31,12 +31,11 @@ modded class ActionUnpackGift
     if (Class.CastTo(containerToBury, GetGame().CreateObjectEx(GetDayZGame().GetDynamicTreasureHunt().GetRandomBuriableContainer(), treasureLocation, ECE_PLACE_ON_SURFACE)))
     {
       int maxItems = Math.RandomIntInclusive(3,5);
-      int totalCount = GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureItems().Count();
       EntityAI entity;
       ItemBase treasureItem;
       for (int i = 0; i < maxItems; i ++)
       {
-        entity = containerToBury.GetInventory().CreateInInventory(GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureItem());
+        entity = containerToBury.GetInventory().CreateInInventory(MiscGameplayFunctions.GetRandomTreasureItem());
         if (Class.CastTo(treasureItem, entity))
         {
           if (treasureItem.HasQuantity())
@@ -44,22 +43,23 @@ modded class ActionUnpackGift
             int half = treasureItem.GetQuantityMax() / 2;
             treasureItem.SetQuantity(Math.RandomIntInclusive(half, treasureItem.GetQuantityMax()));
           }
-        }        
+        }
       }
-      containerToBury.GetInventory().CreateInInventory(GetDayZGame().GetDynamicTreasureHunt().GetRandomBearTreasureItem().GetRandomElement());
+      containerToBury.GetInventory().CreateInInventory(MiscGameplayFunctions.GetRandomTeddyType());
+      containerToBury.GetInventory().CreateInInventory(MiscGameplayFunctions.GetRandomCard());
 
       ItemBase rewardNote = ItemBase.Cast(containerToBury.GetInventory().CreateInInventory("WrittenNote"));
-      rewardNote.GetWrittenNoteData().InitNoteInfo(null, rewardNote);    
+      rewardNote.GetWrittenNoteData().InitNoteInfo(null, rewardNote);
       rewardNote.GetWrittenNoteData().SetNoteText(GetDayZGame().GetDynamicTreasureHunt().GetRandomTreasureHuntRewardText());
       rewardNote.AddHealth(-70);
-      
+
       InventoryLocation targetIL = new InventoryLocation();
       if (!containerToBury.GetInventory().GetCurrentInventoryLocation(targetIL))
       {
         ErrorEx("Cannot get inventory location of entity=" + containerToBury);
         return;
       }
-      UndergroundStash stash = UndergroundStash.Cast(GetGame().CreateObjectEx("UndergroundStash", treasureLocation, ECE_PLACE_ON_SURFACE));  
+      UndergroundStash stash = UndergroundStash.Cast(GetGame().CreateObjectEx("UndergroundStash", treasureLocation, ECE_PLACE_ON_SURFACE));
       if (stash)
       {
         stash.PlaceOnGround();
