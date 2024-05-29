@@ -666,6 +666,7 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_WeaponPipeAxe);
       RegisterRecipe(new SRP_CraftPoisonBolt);
       RegisterRecipe(new Craft_SRP_WeaponDUB_BoneScythe);
+      RegisterRecipe(new Craft_SRP_Fix_WarCleaver);
     //==========================================================Liquids
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Pelts);
       RegisterRecipe(new Craft_SRP_CraftVirusFromIchor_Flesh);
