@@ -146,8 +146,8 @@ class SRP_ItemRequirement
     }
     string PrintPretty(float chance = 0)
     {
-        if (chance > 0 && chance < 0.4)
-            return "~illegible~";
+        if (chance >= 0 && chance < 0.4)
+            return "~ILLEGIBLE~";
 
         string text = "";
         if (GetRequiredColor() == -1)
@@ -158,7 +158,6 @@ class SRP_ItemRequirement
             enumColor.ToLower();
             text = string.Format("%1 %2 %3", GetRequiredQuantity(), enumColor, SanitizeIngredientText(GetAttachmentSlotName()));
         }
-        text = ScrambleString(text);
         return text;
     }
     string SanitizeIngredientText(string input)
@@ -179,56 +178,6 @@ class SRP_ItemRequirement
             input.Replace("Truck_01_", "");
         }
         input.ToLower();
-        return input;
-    }
-    string ScrambleString(string input)
-    {
-        // always shift at least by one or length-1... remove identity index (0)
-        int shiftAmountLetters = Math.RandomIntInclusive(1,24);
-        string normalAlphabet = "abcdefghijklmnopqrstuvwxyz";
-        int shiftPlus1 = (shiftAmountLetters + 1);
-        int runLength = ((normalAlphabet.Length() - 1) - shiftAmountLetters);
-        string shiftedAlphabet = string.Format("%1%2", normalAlphabet.Substring(shiftPlus1, runLength), normalAlphabet.Substring(0, shiftAmountLetters));
-
-        // always shift at least by one or length-1... remove identity index (0)
-        int shiftAmountNumbers = Math.RandomIntInclusive(1,8)
-        string normalNumbers = "0123456789";
-        string symbolNumbers = ")!@#$%^&*(";
-        shiftPlus1 = (shiftAmountNumbers + 1);
-        runLength = ((normalNumbers.Length() - 1) - shiftAmountNumbers);
-        string shiftedNumbers = string.Format("%1%2", symbolNumbers.Substring(shiftPlus1, runLength), symbolNumbers.Substring(0, shiftAmountNumbers));
-        // Print(normalAlphabet);
-        // Print(shiftAmountLetters);
-        // Print(shiftPlus1);
-        // Print(shiftedAlphabet);
-        // int wierdInt = "".ToInt();
-        // Print(wierdInt);
-        int numChars = input.Length();
-        string cipheredText = "";
-        string inputChar = "";
-        int charIndex = -1;
-        string newChar = "";
-        for (int i = 0; i < numChars; i++)
-        {
-            inputChar = input.Get(i);
-            if (inputChar == " ")
-                continue;
-            else if (inputChar.ToInt() == 0)
-            {
-                charIndex = normalAlphabet.IndexOf(inputChar);
-                newChar = shiftedAlphabet.Get(charIndex);
-                // shift with leters
-            }
-            else
-            {
-                charIndex = normalNumbers.IndexOf(inputChar);
-                newChar = shiftedNumbers.Get(charIndex);
-                // shift with numbers
-            }
-            // PrintFormat("inputChar: %1 newChar: %2", inputChar, newChar);
-            input.Set(i, newChar);
-            // cipheredText = string.Format("%1%2", cipheredText, inputChar);
-        }
         return input;
     }
 };
@@ -314,7 +263,7 @@ class SRP_CraftableItem
     {
         foreach(SRP_ItemRequirement requirement : m_RequiredIngredients)
         {
-        Print(requirement.PrintDebug());
+            Print(requirement.PrintDebug());
         }
     }
     string PrettyPrintIngredients()

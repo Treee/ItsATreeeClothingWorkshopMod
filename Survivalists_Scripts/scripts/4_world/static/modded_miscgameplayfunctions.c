@@ -1,5 +1,9 @@
 modded class MiscGameplayFunctions
 {
+    static const string ALPHABET_NORMAL = "abcdefghijklmnopqrstuvwxyz";
+    static const string NUMBERS_NORMAL = "0123456789";
+    static const string NUMBERS_SYMBOLS = ")!@#$%^&*(";
+
     static float GetTirednessMetabolicSpeed(int movement_speed)
     {
         float speed;
@@ -38,7 +42,56 @@ modded class MiscGameplayFunctions
         parent.AddChild(child, -1);
         parent.Update();
     }
-//========================= LOOT HELPERS
+
+    static string ScrambleString(string input)
+    {
+        PrintFormat("Original Text: %1", input);
+        // always shift at least by one or length-1... remove identity index (0)
+        int shiftAmountAlphabet = Math.RandomIntInclusive(1,24);
+        int shiftPlus1 = (shiftAmountAlphabet + 1);
+        int runLength = ((ALPHABET_NORMAL.Length() - 1) - shiftAmountAlphabet);
+        string shiftedAlphabet = string.Format("%1%2", ALPHABET_NORMAL.Substring(shiftPlus1, runLength), ALPHABET_NORMAL.Substring(0, shiftAmountAlphabet));
+
+        // always shift at least by one or length-1... remove identity index (0)
+        int shiftAmountNumbers = Math.RandomIntInclusive(1,8)
+        shiftPlus1 = (shiftAmountNumbers + 1);
+        runLength = ((NUMBERS_NORMAL.Length() - 1) - shiftAmountNumbers);
+        string shiftedNumbers = string.Format("%1%2", NUMBERS_SYMBOLS.Substring(shiftPlus1, runLength), NUMBERS_SYMBOLS.Substring(0, shiftAmountNumbers));
+
+        int numChars = input.Length();
+        string inputChar = "";
+        int charIndex = -1;
+        string newChar = "";
+        for (int i = 0; i < numChars; i++)
+        {
+            inputChar = input.Get(i);
+            if (inputChar == " ")
+                continue;
+            else if (inputChar == "\n")
+                continue;
+            else if (NUMBERS_NORMAL.Contains(inputChar))
+            {
+                charIndex = NUMBERS_NORMAL.IndexOf(inputChar);
+                if (charIndex > -1)
+                    newChar = shiftedNumbers.Get(charIndex);
+                // shift with numbers
+            }
+            else if (ALPHABET_NORMAL.Contains(inputChar))
+            {
+                charIndex = ALPHABET_NORMAL.IndexOf(inputChar);
+                if (charIndex > -1)
+                    newChar = shiftedAlphabet.Get(charIndex);
+                // shift with leters
+            }
+            else
+                newChar = inputChar;
+
+            input.Set(i, newChar);
+        }
+        PrintFormat("Ciphered Text: %1", input);
+        return input;
+    }
+    //========================= LOOT HELPERS
     static string GetRandomZombieType()
     {
         return GetZombieTypes().GetRandomElement();
@@ -71,21 +124,23 @@ modded class MiscGameplayFunctions
     static string GetRandomTreasureItem()
     {
         float randomChance = Math.RandomFloatInclusive(0,1);
-        if (randomChance >= 0 && randomChance < 0.15)
+        if (randomChance >= 0 && randomChance < 0.05)
             return MiscGameplayFunctions.GetRandomBookType();
-        if (randomChance >= 0.15 && randomChance < 0.20)
+        if (randomChance >= 0.05 && randomChance < 0.10)
             return MiscGameplayFunctions.GetRandomScrollType();
-        if (randomChance >= 0.20 && randomChance < 0.45)
+        if (randomChance >= 0.10 && randomChance < 0.20)
             return MiscGameplayFunctions.GetRandomGrenadeType();
-        if (randomChance >= 0.45 && randomChance < 0.50)
+        if (randomChance >= 0.20 && randomChance < 0.25)
             return MiscGameplayFunctions.GetRandomWeaponsType();
-        if (randomChance >= 0.50 && randomChance < 0.60)
+        if (randomChance >= 0.25 && randomChance < 0.30)
             return MiscGameplayFunctions.GetRandomOpticType();
-        if (randomChance >= 0.60 && randomChance < 0.75)
+        if (randomChance >= 0.30 && randomChance < 0.50)
             return MiscGameplayFunctions.GetRandomMagazineType();
-        if (randomChance >= 0.75 && randomChance < 0.90)
+        if (randomChance >= 0.50 && randomChance < 0.65)
             return MiscGameplayFunctions.GetRandomAmmoType();
-        if (randomChance >= 0.90 && randomChance < 1.01)
+        if (randomChance >= 0.65 && randomChance < 0.75)
+            return MiscGameplayFunctions.GetRandomKitType();
+        if (randomChance >= 0.75 && randomChance < 0.90)
             return MiscGameplayFunctions.GetRandomMiscHightTierType();
         return "NailBox";
     }
@@ -125,6 +180,10 @@ modded class MiscGameplayFunctions
     {
         return GetTeddyBearList().GetRandomElement();
     }
+    static string GetRandomKitType()
+    {
+        return GetKitList().GetRandomElement();
+    }
     static string GetRandomCard()
     {
         int chance = Math.RandomIntInclusive(0,1);
@@ -151,6 +210,17 @@ modded class MiscGameplayFunctions
         if (wildCardChance < 0.0129)
             return string.Format("SRP_PlayingCard_tarot_%1", wildCards.GetRandomElement());
         return string.Format("SRP_PlayingCard_tarot_%1%2", tarotSuits.GetRandomElement(), tarotNumbers.GetRandomElement());
+    }
+    static string GetRandomSimpleRecipe()
+    {
+        string recipeText = "N/A";
+        PluginRecipesManager plugin_recipes_manager;
+        if (Class.CastTo(plugin_recipes_manager, GetPlugin(PluginRecipesManager)))
+        {
+            RecipeBase randomRecipe = plugin_recipes_manager.m_RecipeList.GetRandomElement();
+            recipeText = randomRecipe.PrintPrettyScramble();
+        }
+        return string.Format("I did it!! Now to hide the recipe.\n%1", recipeText);
     }
     //========================= LOOT LISTS
     static TStringArray GetRareLootTypes()
@@ -361,17 +431,6 @@ modded class MiscGameplayFunctions
             "RDG2SmokeGrenade_White",
             "ClaymoreMine",
             "LandMineTrap",
-            "SRP_Furniture_StoneBust_Default_Kit",
-            "SRP_Furniture_StoneBench_Default_Kit",
-            "SRP_Furniture_StoneColumn_Default_Kit",
-            "SRP_Furniture_StoneStatue_Angel_Default_Kit",
-            "SRP_Furniture_StoneStatue_Death_Default_Kit",
-            "SRP_Furniture_StoneStatue_Ganesh_Default_Kit",
-            "SRP_Furniture_StoneStatue_Gargoyle_Default_Kit",
-            "SRP_Furniture_StoneStatue_Guardian_Default_Kit",
-            "SRP_Furniture_StoneStatue_Pirate_Default_Kit",
-            "SRP_Furniture_StoneStatue_Woman_Default_Kit",
-            "SRP_Furniture_StoneStatue_StJacob_Default_Kit",
         };
     }
     static TStringArray GetSpawnableWeapons()
@@ -448,6 +507,13 @@ modded class MiscGameplayFunctions
             "SRP_ForgeIngot_Zinc",
             "SRP_ForgeIngot_Brass",
             "DUB_Larpsword",
+            "DUB_Throwingknife",
+            "DUB_Lockswordns",
+			"DUB_Lockshieldns",
+            "DUB_SkeletalEmeraldRing",
+			"DUB_Bronzemask",
+			"DUB_Tribalmask",
+			"DUB_RuneRing",
             "Winebottle_two",
             "SRP_PistolSuppressor_Golden",
             "ferguson",
@@ -463,10 +529,21 @@ modded class MiscGameplayFunctions
             "SRP_StimPackInjector_Espen",
             "SRP_StimPackInjector_Stag",
             "SRP_StimPackInjector_LocknSons",
-            "jmc_mjolnir",
+            // "jmc_mjolnir",
             "Battery9V",
             "Whetstone",
             "Flaregun",
+            "DUB_Fuse_1",
+			"DUB_Fuse_2",
+			"DUB_Fuse_3",
+			"DUB_Fuse_4",
+            "DUB_Fuse_5",
+			"DUB_Fuse_6",
+			"DUB_Fuse_7",
+			"DUB_Fuse_8",
+			"DUB_Fuse_9",
+            "SRP_MortarBowl",
+			"SRP_MortarPestle",
         };
     }
     static TStringArray GetBookList()
@@ -712,6 +789,46 @@ modded class MiscGameplayFunctions
             "Bear_Dawnbreak",
             "Bear_Hazey",
             "Bear_Xmas",
+        };
+    }
+    static TStringArray GetKitList()
+    {
+        return {
+            "SRP_Furniture_StoneBust_Default_Kit",
+            "SRP_Furniture_StoneBench_Default_Kit",
+            "SRP_Furniture_StoneColumn_Default_Kit",
+            "SRP_Furniture_StoneStatue_Angel_Default_Kit",
+            "SRP_Furniture_StoneStatue_Death_Default_Kit",
+            "SRP_Furniture_StoneStatue_Ganesh_Default_Kit",
+            "SRP_Furniture_StoneStatue_Gargoyle_Default_Kit",
+            "SRP_Furniture_StoneStatue_Guardian_Default_Kit",
+            "SRP_Furniture_StoneStatue_Pirate_Default_Kit",
+            "SRP_Furniture_StoneStatue_Woman_Default_Kit",
+            "SRP_Furniture_StoneStatue_StJacob_Default_Kit",
+            "SRP_ComputerTerminalWide_kit",
+			"SRP_DrugWorkbench_Kit",
+			"SRP_LatheWorkbench_Kit",
+			"DUB_Surgerykit",
+			"SRP_ComputerTerminalslim_kit",
+            "SRP_ChessBoard_Kit",
+            "Land_SRP_Fortifications_PalisadeTower_Ramp_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_TentSmall_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_Fence_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_FenceDouble_Kit",
+            "Land_SRP_Fortifications_PalisadeTower_Platform_Kit",
+            "Land_SRP_Fortifications_PalisadeTower_PlatformDouble_Kit",
+            "Land_SRP_Fortifications_PalisadeTower_PlatformTriple_Kit",
+            "Land_SRP_Fortifications_PalisadeTower_Stairs_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_TentLarge_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_Planks_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_PlanksDouble_Kit",
+            "Land_SRP_Fortifications_PalisadeTower_Small_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_Gate_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_FenceLog_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_FenceLogDouble_Kit",
+            "Land_SRP_Fortifications_PalisadeTower_LargeStairs_Kit",
+            "Land_SRP_Fortifications_PalisadeTower_LargeLadder_Kit",
+            "Land_SRP_Fortifications_PalisadeWall_FenceLogSpike_Kit",
         };
     }
 };

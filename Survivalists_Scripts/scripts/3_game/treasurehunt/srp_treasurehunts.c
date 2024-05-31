@@ -286,17 +286,10 @@ class SRP_DynamicTreasureHunt
   }
   string GetRandomTreasureHuntRewardText()
   {
-    return ConstructRecipeNote();
-    // return GetRandomTreasureHuntRewardTexts().GetRandomElement();
+    return ConstructWorkbenchRecipeNote();
   }
-  TStringArray GetRandomTreasureHuntRewardTexts()
-  {
-    return {
-      "Hands off my stuff!\n I know where you live."
-      "We used to run this\n island but a zombie ate\na chunk of our knees\nhope these serve\nyou better than us.\n\nRegards,\nLen & Spud."
-    };
-  }
-  string ConstructRecipeNote()
+
+  string ConstructWorkbenchRecipeNote()
   {
     SRP_RecipeManager randomRecipeManager = GetRandomRecipeManager();
     SRP_CraftableItem randomCraftableRecipe = randomRecipeManager.GetRandomCraftableItem();
