@@ -1,3 +1,5 @@
+class SRP_Haggis extends Guts{};
+
 class SRP_Guts_PigletCookiesAcid extends Guts
 {
   override bool HasCharcoalEffect()

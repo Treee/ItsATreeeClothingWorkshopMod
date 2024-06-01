@@ -4074,6 +4074,20 @@ class CfgVehicles
             agents = 0;
         };
     };
+    class SRP_Haggis : Guts
+    {
+        scope = 2;
+        displayName = "Haggis";
+        descriptionShort = "Sheep;s stomach, stuffed with meat and barley.";
+        class Nutrition
+        {
+            fullnessIndex = 2;
+            energy = 50;
+            water = 50;
+            nutritionalIndex = 1;
+            toxicity = 0;
+        };
+    };
     //================================== PURE RETEXUTRES
     class Zagorky_Snickers : Zagorky_ColorBase
     {

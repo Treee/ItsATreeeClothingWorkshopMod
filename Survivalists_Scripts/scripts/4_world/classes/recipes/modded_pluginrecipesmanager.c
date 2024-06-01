@@ -465,6 +465,9 @@ modded class PluginRecipesManager
 
       RegisterRecipe(new CraftHotdog);
 
+      RegisterRecipe(new SRP_Craft_Haggis);
+      RegisterRecipe(new SRP_Craft_HaggisMeme);
+
 
     //==========================================================SMELTING
       RegisterRecipe(new Craft_SRP_Container_StonePileSmall);
