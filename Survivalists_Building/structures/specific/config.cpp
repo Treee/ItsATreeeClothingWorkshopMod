@@ -95,4 +95,27 @@ class CfgVehicles
         hiddenSelections[] = { "zbytek", "fabric" };
         hiddenSelectionsTextures[] = { "Survivalists_Building\structures\specific\data\srp_stonealtar_co.paa" };
     };
+
+    class SRP_SteamGenerator_UniqueItem_Pandagodmystic : Inventory_Base
+    {
+        scope = 1;
+        displayName = "Steam Generator";
+        descriptionShort = "A crude stone altar worn from use.";
+        model = "Survivalists_Building\structures\specific\srp_steamgenerator.p3d";
+        carveNavmesh = 1;
+        weight = 500;
+        itemSize[] = { 10,10 };
+        itemsCargoSize[] = { 0,0 };
+        physLayer = "item_large";
+        minPlacingDist = 5;
+        slopeTolerance = 0.2;
+        alignHologramToTerain = 1;
+        hiddenSelections[] = { "cement", "metal", "leather" };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_Building\structures\specific\data\srp_steamgenerator_co.paa",
+            "Survivalists_Building\structures\specific\data\srp_steamgenerator_co.paa",
+            "Survivalists_Building\structures\specific\data\srp_steamgenerator_co.paa"
+        };
+    };
 };
