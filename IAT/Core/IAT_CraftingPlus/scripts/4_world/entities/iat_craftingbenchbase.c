@@ -1,8 +1,8 @@
 class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
-{ 
+{
   const int RPC_IAT_UPDATE_RECIPE_INFO = 2863649;
   ref array<IAT_CraftableItem> potentialCraftableItems = new array<IAT_CraftableItem>;
-  protected bool m_HasCraftableMatches = false;  
+  protected bool m_HasCraftableMatches = false;
 
 //================================================== EVENTS
   override bool CanPutInCargo( EntityAI parent )
@@ -34,7 +34,7 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
     SendServerRecipeRPC();
 	}
 //================================================== RPC'S
-  override void OnRPC( PlayerIdentity sender, int rpc_type,ParamsReadContext ctx ) 
+  override void OnRPC( PlayerIdentity sender, int rpc_type,ParamsReadContext ctx )
 	{
     switch (rpc_type)
     {
@@ -42,7 +42,7 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
         HandleOnClientRPCRead(ctx);
       break;
     }
-    super.OnRPC(sender, rpc_type, ctx);    
+    super.OnRPC(sender, rpc_type, ctx);
 	}
   void SendServerRecipeRPC()
   {
@@ -62,9 +62,9 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
 //=================================================== CUSTOM
   void CheckRecipes()
   {
-    if (!potentialCraftableItems)          
+    if (!potentialCraftableItems)
       potentialCraftableItems = new array<IAT_CraftableItem>;
-    
+
     potentialCraftableItems.Clear();
 
     if (CheckPotentialRecipeMatches(potentialCraftableItems))
@@ -88,16 +88,16 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
     string slotName;
     string colorName;
     int enumId = -1;
-    
+
     for (int i = 0; i < totalSlots; i++)
     {
       // Print("Sending: index " + i + " with max " + totalSlots);
       if (Class.CastTo(attachment, GetInventory().GetAttachmentFromIndex(i)))
-      {        
+      {
         attachment.GetInventory().GetCurrentAttachmentSlotInfo(slotId, slotName);
         colorName = attachment.ConfigGetString("color");
         colorName.ToUpper();
-        
+
         enumId = EnumTools.StringToEnum(IAT_COLOR, colorName);
         // non null items with 0 quantity should be seen as 1
         quantity = Math.Max(1, attachment.GetQuantity());
@@ -105,7 +105,7 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
         craftableItem.RegisterIngredient(new IAT_ItemRequirement(slotName, enumId, quantity));
       }
     }
-    // craftableItem.PrintIngredients();    
+    // craftableItem.PrintIngredients();
     return GetRecipeManager().IsRecipeMatch(craftableItem, craftableItems);
   }
   IAT_RecipeManager GetRecipeManager()
@@ -124,20 +124,20 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
   IAT_CraftableItem GetCraftableItemByIndex(int index)
   {
     if (potentialCraftableItems && potentialCraftableItems.IsValidIndex(index));
-      return potentialCraftableItems.Get(index);    
+      return potentialCraftableItems.Get(index);
     return NULL;
   }
   string GetCraftableItemDisplayNameByIndex(int index)
   {
     if (potentialCraftableItems && potentialCraftableItems.IsValidIndex(index));
-      return potentialCraftableItems.Get(index).GetDisplayName();    
-    return "No Item Found";      
+      return potentialCraftableItems.Get(index).GetDisplayName();
+    return "No Item Found";
   }
   int GetPotentialCraftableItemCount()
   {
     if (!potentialCraftableItems)
       return 0;
-    return potentialCraftableItems.Count();    
+    return potentialCraftableItems.Count();
   }
   void GetPotentialRecipeMatchesDisplayName(out TStringArray recipeDisplayNames)
   {
@@ -169,11 +169,12 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
               attachment.GetCompEM().AddEnergy(-quantityToRemove);
             else
               attachment.AddQuantity(-quantityToRemove);
-              
-            if (attachment.GetQuantityMax() == 1 && quantityToRemove == 1)
+            // PrintFormat("attachquantity: %1 toRemove %2", attachment.GetQuantityMax(), quantityToRemove);
+            bool isSingularItem = attachment.GetQuantityMax() == 0 || attachment.GetQuantityMax() == 1;
+            if (isSingularItem && quantityToRemove == 1)
               attachment.Delete();
-          } 
-        }        
+          }
+        }
       }
     }
     return craftable.GetItemClassName();
@@ -184,7 +185,7 @@ class IAT_CraftingPlus_CraftingBench_Base extends ItemBase
 		{
 			vector selection_pos = ModelToWorld( GetMemoryPointPos( selection ) );
       return selection_pos;
-		}		
+		}
 		return GetPosition();
   }
   int GetCraftingDamage()

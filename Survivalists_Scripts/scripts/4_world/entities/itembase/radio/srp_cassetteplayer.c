@@ -1,26 +1,26 @@
 class SRP_CassettePlayer extends ItemBase
-{      
+{
   EffectSound m_ActiveSound;
 
   bool m_Playing;
   bool m_SyncPlaying;
   string m_CassetteSoundSet;
   int m_CassetteVolume = 5; // 0-10 == 0-1
-    
+
   void SRP_CassettePlayer()
   {
-    RegisterNetSyncVariableBool( "m_SyncPlaying" );    
-    RegisterNetSyncVariableInt( "m_CassetteVolume", 0, 15 );    
+    RegisterNetSyncVariableBool( "m_SyncPlaying" );
+    RegisterNetSyncVariableInt( "m_CassetteVolume", 0, 15 );
   }
-    
+
   override void OnVariablesSynchronized()
 	{
 		super.OnVariablesSynchronized();
-        
+
     if( m_SyncPlaying && !m_Playing )
     {
       TurnOn();
-    } 
+    }
     else if( !m_SyncPlaying && m_Playing )
     {
       TurnOff();
@@ -37,8 +37,8 @@ class SRP_CassettePlayer extends ItemBase
         m_ActiveSound.SetSoundVolume(expectedVol);
       }
     }
-	}	
-   
+	}
+
   override void SetActions()
 	{
     super.SetActions();
@@ -53,27 +53,27 @@ class SRP_CassettePlayer extends ItemBase
   override void EEItemAttached( EntityAI item, string slot_name )
 	{
     super.EEItemAttached( item, slot_name );
-    
+
     if( item && slot_name == "SRP_Cassette" )
     {
       m_CassetteSoundSet = item.GetType();
     }
 	}
-    
+
 	override void EEItemDetached( EntityAI item, string slot_name )
 	{
-    super.EEItemDetached( item, slot_name );  
+    super.EEItemDetached( item, slot_name );
     if( slot_name == "SRP_Cassette" )
     {
-      TurnOff();        
+      TurnOff();
       m_CassetteSoundSet = "";
     }
     else if ( slot_name == "BatteryD" )
     {
-      TurnOff();            
+      TurnOff();
     }
   }
-    
+
   override void OnMovedInsideCargo( EntityAI container )
 	{
     TurnOff();
@@ -90,8 +90,8 @@ class SRP_CassettePlayer extends ItemBase
     {
       GetCompEM().SwitchOn();
     }
-  } 
-  
+  }
+
   override void OnWorkStart()
   {
     // short circuit to play / stop in one line
@@ -103,11 +103,11 @@ class SRP_CassettePlayer extends ItemBase
 
   override void OnWorkStop()
   {
-    Stop();    
+    Stop();
   }
 
   bool Play()
-  { 
+  {
     if (m_CassetteSoundSet && m_CassetteSoundSet == "")
     {
       return false;
@@ -115,7 +115,7 @@ class SRP_CassettePlayer extends ItemBase
 
     if (!GetGame().IsDedicatedServer())
     {
-      if ( m_ActiveSound ) 
+      if ( m_ActiveSound )
       {
         StopSoundSet( m_ActiveSound );
       }
@@ -123,16 +123,16 @@ class SRP_CassettePlayer extends ItemBase
       if( !GetGame().ConfigIsExisting( cfgPath ) )
       {
         return false;
-      }        
+      }
       string soundSetName = GetGame().ConfigGetTextOut( cfgPath + " soundSet" );
       PlaySoundSetLoop(m_ActiveSound, soundSetName, 0, 0);
-    }    
+    }
     m_Playing = true;
     m_SyncPlaying = true;
     SetSynchDirty();
     return true;
   }
-  
+
   void Stop()
   {
     m_Playing = false;
