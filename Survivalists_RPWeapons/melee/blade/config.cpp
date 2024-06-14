@@ -1250,18 +1250,18 @@ class CfgVehicles
         repairCosts[] = { 12 };
         inventorySlot[] =
         {
-      "Melee",
-      "Shoulder",
-      "SRP_Melee1",
-      "SRP_Melee2",
-      "SRP_Melee3",
-      "SRP_Melee4",
-      "SRP_Melee5",
-      "SRP_Melee6",
-      "SRP_Melee7",
-      "SRP_Melee8",
-      "SRP_Melee9",
-      "SRP_Melee10",
+            "Melee",
+            "Shoulder",
+            "SRP_Melee1",
+            "SRP_Melee2",
+            "SRP_Melee3",
+            "SRP_Melee4",
+            "SRP_Melee5",
+            "SRP_Melee6",
+            "SRP_Melee7",
+            "SRP_Melee8",
+            "SRP_Melee9",
+            "SRP_Melee10",
         };
         rotationFlags = 12;
         weight = 500;
@@ -4475,6 +4475,165 @@ class CfgVehicles
         scope = 2;
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_turkishsword_co.paa" };
+    };
+
+    class SRP_DeerSword_ColorBase : Inventory_Base
+    {
+        scope = 0;
+        displayName = "Deer Sword";
+        descriptionShort = "A delicate and finely crafted sword. Ornate bones cover the hilt.";
+        model = "Survivalists_RPWeapons\melee\blade\srp_deersword.p3d";
+        rotationFlags = 12;
+        weight = 130;
+        itemSize[] = { 1,5 };
+        repairableWithKits[] = { 4 };
+        repairCosts[] = { 50 };
+        itemBehaviour = 2;
+        inventorySlot[] =
+        {
+            "Shoulder",
+            "Melee",
+            "SRP_Melee1",
+            "SRP_Melee2",
+            "SRP_Melee3",
+            "SRP_Melee4",
+            "SRP_Melee5",
+            "SRP_Melee6",
+            "SRP_Melee7",
+            "SRP_Melee8",
+            "SRP_Melee9",
+            "SRP_Melee10",
+        };
+        hiddenSelections[] = { "metal","bone","leather","crystal" };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_RPWeapons\melee\blade\data\srp_deersword_co.paa",
+            "Survivalists_RPWeapons\melee\blade\data\srp_deersword_co.paa",
+            "Survivalists_RPWeapons\melee\blade\data\srp_deersword_co.paa",
+            "Survivalists_RPWeapons\melee\blade\data\srp_deersword_co.paa",
+        };
+        class InventorySlotsOffsets
+        {
+            class Melee
+            {
+                position[] = { -0.3,0.35,-0.027 };
+                orientation[] = { 90,-35,0 };
+            };
+            class Shoulder
+            {
+                position[] = { 0.06,0,-0.33 };//FB,UD,LR
+                orientation[] = { 0,-20,0 };//x,y,z
+            };
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 600;
+                    healthLevels[] =
+                    {
+                        {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_deersword_metal.rvmat"}},
+                        {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_deersword_metal.rvmat"}},
+                        {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_deersword_metal_damage.rvmat"}},
+                        {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_deersword_metal_damage.rvmat"}},
+                        {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_deersword_metal_destruct.rvmat"}}
+                    };
+                };
+            };
+        };
+        isMeleeWeapon = 1;
+        suicideAnim = "fireaxe";
+        class MeleeModes
+        {
+            class Default
+            {
+                ammo = "SRP_MeleeSlash_1HSword";
+                range = 1.1;
+            };
+            class Heavy
+            {
+                ammo = "SRP_MeleeSlash_1HSwordHeavy";
+                range = 1.1;
+            };
+            class Sprint
+            {
+                ammo = "SRP_MeleeSlash_1HSwordHeavy";
+                range = 3.3;
+            };
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickup_light
+                {
+                    soundSet = "hatchet_pickup_light_SoundSet";
+                    id = 796;
+                };
+                class pickup
+                {
+                    soundSet = "hatchet_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "woodaxe_drop_SoundSet";
+                    id = 898;
+                };
+                class FirefighterAxe_loop_SoundSet
+                {
+                    soundSet = "FirefighterAxe_loop_SoundSet";
+                    id = 1121;
+                };
+                class FirefighterAxe_end_SoundSet
+                {
+                    soundSet = "FirefighterAxe_end_SoundSet";
+                    id = 1122;
+                };
+                class ShoulderR_Hide
+                {
+                    soundset = "ShoulderR_Hide_SoundSet";
+                    id = 1210;
+                };
+                class ShoulderR_Show
+                {
+                    soundset = "ShoulderR_Show_SoundSet";
+                    id = 1211;
+                };
+                class animalSkinning_in
+                {
+                    soundSet = "animalSkinning_in_SoundSet";
+                    id = 516;
+                };
+                class animalSkinning
+                {
+                    soundSet = "animalSkinning_SoundSet";
+                    id = 517;
+                };
+                class animalSkinning_out
+                {
+                    soundSet = "animalSkinning_out_SoundSet";
+                    id = 518;
+                };
+            };
+        };
+    };
+    class SRP_DeerSword_Basic : SRP_DeerSword_ColorBase
+    {
+        scope = 2;
+    };
+    class SRP_DeerSword_AlexCow : SRP_DeerSword_ColorBase
+    {
+        scope = 2;
+        hiddenSelections[] = { "metal","bone","leather","crystal" };
+        hiddenSelectionsTextures[] = {
+            "Survivalists_RPWeapons\melee\blade\data\srp_deersword_alexcow_co.paa",
+            "Survivalists_RPWeapons\melee\blade\data\srp_deersword_alexcow_co.paa",
+            "Survivalists_RPWeapons\melee\blade\data\srp_deersword_alexcow_co.paa",
+            "Survivalists_RPWeapons\melee\blade\data\srp_deersword_alexcow_co.paa",
+        };
     };
     //================================================================== 2H SWORDS
     class SRP_BerserkSword : Inventory_Base

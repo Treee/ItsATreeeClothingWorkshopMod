@@ -1054,6 +1054,8 @@ You wanted to run forever so now you can. Don't stop your you will drop!
 
 - "Stylized Power Generator" (https://skfb.ly/o9ML7) by Edmund 3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+- "Deer antlers sword" (https://skfb.ly/6ZwOC) by trivial.cat is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 ### Sounds
 
 - https://soundcloud.com/benjamin-w-musi/lepa-brena-hej-seki-seki
