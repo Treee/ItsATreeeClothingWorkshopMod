@@ -603,16 +603,16 @@ class CfgVehicles
         varTemperatureMax = 1000;
         attachments[] =
         {
-      "SRP_FuelCoal",
-      "Firewood",
+            "SRP_FuelCoal",
+            "Firewood",
             "WoodenStick",
             "Rags",
             "MedicalBandage",
             "Paper",
             "Bark",
-      "BrewingBarrel",
-      "BrewingBarrel1",
-      "TestTube1"
+            "BrewingBarrel",
+            "BrewingBarrel1",
+            "TestTube1"
         };
         hiddenSelections[] = { "ashes","zbytek" };
         hiddenSelectionsTextures[] = { "\dz\gear\cooking\data\stoneground_co.paa", "Survivalists_Building\structures\crafting\data\srp_brewingstill_alchemy_ca.paa" };
@@ -625,13 +625,13 @@ class CfgVehicles
                 description = "";
                 attachmentSlots[] =
                 {
-          "SRP_FuelCoal",
-          "Firewood",
-          "WoodenStick",
-          "Rags",
-          "MedicalBandage",
-          "Paper",
-          "Bark",
+                    "SRP_FuelCoal",
+                    "Firewood",
+                    "WoodenStick",
+                    "Rags",
+                    "MedicalBandage",
+                    "Paper",
+                    "Bark",
                 };
                 icon = "set:dayz_inventory image:cat_fp_fuel";
             };
@@ -641,9 +641,9 @@ class CfgVehicles
                 description = "";
                 attachmentSlots[] =
                 {
-          "TestTube1",
-          "BrewingBarrel1",
-          "BrewingBarrel",
+                    "TestTube1",
+                    "BrewingBarrel1",
+                    // "BrewingBarrel",
                 };
                 icon = "set:dayz_inventory image:barrel";
             };
@@ -658,16 +658,16 @@ class CfgVehicles
         varTemperatureMax = 1000;
         attachments[] =
         {
-      "SRP_FuelCoal",
-      "Firewood",
+            "SRP_FuelCoal",
+            "Firewood",
             "WoodenStick",
             "Rags",
             "MedicalBandage",
             "Paper",
             "Bark",
-      "BrewingBarrel",
-      "BrewingBarrel1",
-      "SRP_DyeBottle1",
+            "BrewingBarrel",
+            "BrewingBarrel1",
+            "SRP_DyeBottle1",
         };
         hiddenSelections[] = { "ashes","zbytek" };
         hiddenSelectionsTextures[] = { "\dz\gear\cooking\data\stoneground_co.paa", "Survivalists_Building\structures\crafting\data\srp_brewingstill_copper_co.paa" };
@@ -680,13 +680,13 @@ class CfgVehicles
                 description = "";
                 attachmentSlots[] =
                 {
-          "SRP_FuelCoal",
-          "Firewood",
-          "WoodenStick",
-          "Rags",
-          "MedicalBandage",
-          "Paper",
-          "Bark",
+                    "SRP_FuelCoal",
+                    "Firewood",
+                    "WoodenStick",
+                    "Rags",
+                    "MedicalBandage",
+                    "Paper",
+                    "Bark",
                 };
                 icon = "set:dayz_inventory image:cat_fp_fuel";
             };
@@ -696,9 +696,9 @@ class CfgVehicles
                 description = "";
                 attachmentSlots[] =
                 {
-          "SRP_DyeBottle1",
-          "BrewingBarrel1",
-          "BrewingBarrel",
+                    "SRP_DyeBottle1",
+                    "BrewingBarrel1",
+                    // "BrewingBarrel",
                 };
                 icon = "set:dayz_inventory image:barrel";
             };
