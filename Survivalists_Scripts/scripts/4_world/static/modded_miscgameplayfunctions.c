@@ -53,7 +53,7 @@ modded class MiscGameplayFunctions
         string shiftedAlphabet = string.Format("%1%2", ALPHABET_NORMAL.Substring(shiftPlus1, runLength), ALPHABET_NORMAL.Substring(0, shiftAmountAlphabet));
 
         // always shift at least by one or length-1... remove identity index (0)
-        int shiftAmountNumbers = Math.RandomIntInclusive(1,8)
+        int shiftAmountNumbers = Math.RandomIntInclusive(1,8);
         shiftPlus1 = (shiftAmountNumbers + 1);
         runLength = ((NUMBERS_NORMAL.Length() - 1) - shiftAmountNumbers);
         string shiftedNumbers = string.Format("%1%2", NUMBERS_SYMBOLS.Substring(shiftPlus1, runLength), NUMBERS_SYMBOLS.Substring(0, shiftAmountNumbers));

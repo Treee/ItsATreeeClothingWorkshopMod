@@ -29,11 +29,11 @@ modded class RecipeBase
     {
         string quantityString = "";
         if (m_MinQuantityIngredient[index] > -1 && m_MaxQuantityIngredient[index] > -1)
-            quantityString = string.Format("at least %1\nand no more than %2", m_MinQuantityIngredient[index], m_MaxQuantityIngredient[index])
+            quantityString = string.Format("at least %1\nand no more than %2", m_MinQuantityIngredient[index], m_MaxQuantityIngredient[index]);
         else if (m_MinQuantityIngredient[index] > -1 && m_MaxQuantityIngredient[index] == -1)
-            quantityString = string.Format("no less than %1", m_MinQuantityIngredient[index])
+            quantityString = string.Format("no less than %1", m_MinQuantityIngredient[index]);
         else if (m_MinQuantityIngredient[index] == -1 && m_MaxQuantityIngredient[index] > -1)
-            quantityString = string.Format("no more than %1", m_MaxQuantityIngredient[index])
+            quantityString = string.Format("no more than %1", m_MaxQuantityIngredient[index]);
         else
             quantityString = "any number of";
 
@@ -43,11 +43,11 @@ modded class RecipeBase
     {
         string quantityString = "";
         if (m_MinDamageIngredient[index] > -1 && m_MaxDamageIngredient[index] > -1)
-            quantityString = string.Format("at least %1 durability\nand no more than %2 state", TranslateDamageStates(m_MinDamageIngredient[index]), TranslateDamageStates(m_MaxDamageIngredient[index]))
+            quantityString = string.Format("at least %1 durability\nand no more than %2 state", TranslateDamageStates(m_MinDamageIngredient[index]), TranslateDamageStates(m_MaxDamageIngredient[index]));
         else if (m_MinDamageIngredient[index] > -1 && m_MaxDamageIngredient[index] == -1)
-            quantityString = string.Format("at least %1 durability", TranslateDamageStates(m_MinDamageIngredient[index]))
+            quantityString = string.Format("at least %1 durability", TranslateDamageStates(m_MinDamageIngredient[index]));
         else if (m_MinDamageIngredient[index] == -1 && m_MaxDamageIngredient[index] > -1)
-            quantityString = string.Format("no more than %1 state", TranslateDamageStates(m_MaxDamageIngredient[index]))
+            quantityString = string.Format("no more than %1 state", TranslateDamageStates(m_MaxDamageIngredient[index]));
         else
             quantityString = "any durability";
         return quantityString;
