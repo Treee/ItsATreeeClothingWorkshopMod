@@ -1532,7 +1532,7 @@ class CfgVehicles
         isMeleeWeapon = 1;
         weight = 2;
         absorbency = 1;
-        itemSize[] = { 4,4 };
+        itemSize[] = { 2,5 };
         rotationFlags = 16;
         inventorySlot[] = {};
         varWetMax = 1;
