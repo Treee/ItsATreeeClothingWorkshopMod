@@ -38,7 +38,7 @@ class SRP_DoubleArmband_ColorBase extends Armband_ColorBase
 	{
     int idx1;
 		TStringArray item_texture_array = new TStringArray;
-    GetGame().ConfigGetTextArray("cfgVehicles " + GetType() + " hiddenSelectionsTextures", item_texture_array);	
+    GetGame().ConfigGetTextArray("cfgVehicles " + GetType() + " hiddenSelectionsTextures", item_texture_array);
     m_DisplayTexture = item_texture_array.Get(0);
 	}
 
@@ -46,8 +46,8 @@ class SRP_DoubleArmband_ColorBase extends Armband_ColorBase
   {
     int idx1;
     TStringArray item_selection_array = new TStringArray;
-    GetGame().ConfigGetTextArray("cfgVehicles SRP_DoubleArmband_ColorBase hiddenSelections", item_selection_array);	
-    
+    GetGame().ConfigGetTextArray("cfgVehicles SRP_DoubleArmband_ColorBase hiddenSelections", item_selection_array);
+
     // hide everything
     for(int i = 0; i < item_selection_array.Count(); i++)
     {
@@ -69,7 +69,7 @@ class SRP_DoubleArmband_ColorBase extends Armband_ColorBase
   {
     int idx1;
     TStringArray item_selection_array = new TStringArray;
-    GetGame().ConfigGetTextArray("cfgVehicles SRP_DoubleArmband_ColorBase hiddenSelections", item_selection_array);	
+    GetGame().ConfigGetTextArray("cfgVehicles SRP_DoubleArmband_ColorBase hiddenSelections", item_selection_array);
 
     // show all
     for(int i = 0; i < item_selection_array.Count(); i++)
@@ -77,7 +77,7 @@ class SRP_DoubleArmband_ColorBase extends Armband_ColorBase
       idx1 = GetHiddenSelectionIndex(item_selection_array.Get(i));
       SetObjectTexture(idx1,m_DisplayTexture);
       // Print("show: selection: " + item_selection_array.Get(i));
-    } 
+    }
   }
 };
 
@@ -108,14 +108,14 @@ class Skylar_BioZone_Protection extends Armband_ColorBase
 				break;
 			case DEF_CHEMICAL:
 				entryName = "chemical";
-				break;	
+				break;
 			default:
 				entryName = "biological";
 				break;
 		}
-		
+
 		subclass_path = "CfgVehicles " + this.GetType() + " Protection ";
-		
+
 		return GetGame().ConfigGetFloat(subclass_path + entryName);
 	}
 
@@ -130,7 +130,7 @@ class Sneakers_Skylar_Biozone extends Sneakers_ColorBase
   {
     this.Delete();
   }
-  
+
   override float GetProtectionLevel(int type, bool consider_filter = false, int system = 0)
 	{
 		if (IsDamageDestroyed() || (HasQuantity() && GetQuantity() <= 0) )
@@ -147,14 +147,14 @@ class Sneakers_Skylar_Biozone extends Sneakers_ColorBase
 				break;
 			case DEF_CHEMICAL:
 				entryName = "chemical";
-				break;	
+				break;
 			default:
 				entryName = "biological";
 				break;
 		}
-		
+
 		subclass_path = "CfgVehicles " + this.GetType() + " Protection ";
-		
+
 		return GetGame().ConfigGetFloat(subclass_path + entryName);
 	}
 
@@ -183,78 +183,17 @@ class Sneakers_Sneaky extends Sneakers_ColorBase
 				break;
 			case DEF_CHEMICAL:
 				entryName = "chemical";
-				break;	
+				break;
 			default:
 				entryName = "biological";
 				break;
 		}
-		
+
 		subclass_path = "CfgVehicles " + this.GetType() + " Protection ";
-		
+
 		return GetGame().ConfigGetFloat(subclass_path + entryName);
 	}
 
 };
 
-
-class SRP_EventArmband extends Armband_ColorBase
-{
-  override void OnWasDetached( EntityAI parent, int slot_id )
-  {
-    Delete();
-  }
-  override bool IsEventArmband()
-  {
-    return true;
-  }
-};
-class Armband_Event_Generic extends SRP_EventArmband{};
-class Armband_Event_Espen extends SRP_EventArmband{};
-class Armband_Event_Stag extends SRP_EventArmband{};
-
-class Flag_Event_Generic extends Flag_Base
-{
-  override void OnWasDetached( EntityAI parent, int slot_id )
-  {
-    Delete();
-  }
-};
-class Flag_Event_Espen extends Flag_Base
-{
-  override void OnWasDetached( EntityAI parent, int slot_id )
-  {
-    Delete();
-  }
-};
-
-class SRP_PatchFlag_Event_Generic extends SRP_PatchFlag_ColorBase
-{
-  override void OnWasDetached( EntityAI parent, int slot_id )
-  {
-    Delete();
-  }
-};
-class SRP_PatchFlag_Event_Espen extends SRP_PatchFlag_ColorBase
-{
-  override void OnWasDetached( EntityAI parent, int slot_id )
-  {
-    Delete();
-  }
-};
-
 class SRP_Armband_Base extends Clothing{};
-
-class SRP_ArmbandLeatherEvent_Base extends Clothing
-{
-  override void OnWasDetached( EntityAI parent, int slot_id )
-  {
-    Delete();
-  }
-  override bool IsEventArmband()
-  {
-    return true;
-  }
-};
-class SRP_Armband_Event_Generic extends SRP_ArmbandLeatherEvent_Base{};
-class SRP_Armband_Event_Espen extends SRP_ArmbandLeatherEvent_Base{};
-class SRP_Armband_Event_Stag extends SRP_ArmbandLeatherEvent_Base{};
