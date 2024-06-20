@@ -459,451 +459,556 @@ class CfgSoundSets
 {
     class SRPRadio_Snowblood_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Snowblood_Shader1" };
     };
     class SRPRadio_Divisionary_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Divisionary_Shader1" };
     };
     class SRPRadio_HouseofGlass_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_HouseofGlass_Shader1" };
     };
     class SRPRadio_Trumpet_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Trumpet_Shader1" };
     };
     class SRPRadio_NothingPersonal_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_NothingPersonal_Shader1" };
     };
     class SRPRadio_ClassicRock_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_ClassicRock_Shader1" };
     };
     class SRPRadio_WayoutWest_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_WayoutWest_Shader1" };
     };
     class SRPRadio_RockandRoll_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_RockandRoll_Shader1" };
     };
     class SRPRadio_Broken_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Broken_Shader1" };
     };
     class SRPRadio_Bread_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Bread_Shader1" };
     };
     class SRPRadio_SkylarWolfe_ThreeLittleBirds_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_ThreeLittleBirds_Shader1" };
     };
     class SRPRadio_SkylarWolfe_BoulevardofBrokenDreams_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_BoulevardofBrokenDreams_Shader1" };
     };
     class SRPRadio_SkylarWolfe_ClashofTheworld_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_ClashofTheworld_Shader1" };
     };
     class SRPRadio_SkylarWolfe_Creep_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_Creep_Shader1" };
     };
     class SRPRadio_SkylarWolfe_FixYou_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_FixYou_Shader1" };
     };
     class SRPRadio_SkylarWolfe_Hallelujah_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_Hallelujah_Shader1" };
     };
     class SRPRadio_SkylarWolfe_RingOfFire_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_RingOfFire_Shader1" };
     };
     class SRPRadio_SkylarWolfe_WonderWall_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_Wonderwall_Shader1" };
     };
     class SRPRadio_SkylarWolfe_SaySomething_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_SaySomething_Shader1" };
     };
     class SRPRadio_SkylarWolfe_Yesterday_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_Yesterday_Shader1" };
     };
     class SRPRadio_SkylarWolfe_EarthAngel_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_EarthAngel_Shader1" };
     };
     class SRPRadio_SkylarWolfe_ComeAndGetYourLove_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_ComeAndGetYourLove_Shader1" };
     };
     class SRPRadio_SkylarWolfe_JustTheTwoOfUs_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_JustTheTwoOfUs_Shader1" };
     };
     class SRPRadio_SkylarWolfe_FirstDayOfMyLife_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_FirstDayOfMyLife_Shader1" };
     };
 
     class SRPRadio_SkylarWolfe_JustLikeAPill_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_JustLikeAPill_Shader1" };
     };
     class SRPRadio_SkylarWolfe_WickedGame_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_WickedGame_Shader1" };
     };
     class SRPRadio_SkylarWolfe_TenneseeWhiskey_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_TenneseeWhiskey_Shader1" };
     };
     class SRPRadio_SkylarWolfe_HeroSung_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_HeroSung_Shader1" };
     };
     class SRPRadio_SkylarWolfe_DancingInTheMoonlight_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_DancingInTheMoonlight_Shader1" };
     };
     class SRPRadio_SkylarWolfe_DownByTheBay_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_DownByTheBay_Shader1" };
     };
     class SRPRadio_SkylarWolfe_WalkingInMemphis_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_WalkingInMemphis_Shader1" };
     };
     class SRPRadio_SkylarWolfe_SweetBabyJames_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_SweetBabyJames_Shader1" };
     };
     class SRPRadio_SkylarWolfe_Radioactive_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_Radioactive_Shader1" };
     };
     class SRPRadio_SkylarWolfe_PlayThatSong_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_PlayThatSong_Shader1" };
     };
     class SRPRadio_SkylarWolfe_OnlyTime_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_OnlyTime_Shader1" };
     };
     class SRPRadio_SkylarWolfe_HereWithoutYou_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_HereWithoutYou_Shader1" };
     };
     class SRPRadio_SkylarWolfe_FollowMe_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_FollowMe_Shader1" };
     };
     class SRPRadio_SkylarWolfe_DontDreamItsOver_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_DontDreamItsOver_Shader1" };
     };
     class SRPRadio_SkylarWolfe_Blackbird_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_Blackbird_Shader1" };
     };
     class SRPRadio_SkylarWolfe_AThousandYears_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_SkylarWolfe_AThousandYears_Shader1" };
     };
 
     class SRPRadio_Pinkerton_TheShadow_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Pinkerton_TheShadow_Shader1" };
     };
     class SRPRadio_Gague_Forever_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Gague_Forever_Shader1" };
     };
     class SRPRadio_Gague_DontLeaveMe_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Gague_DontLeaveMe_Shader1" };
     };
     class SRPRadio_Gague_MySide_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Gague_MySide_Shader1" };
     };
     class SRPRadio_Gague_Anger_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Gague_Anger_Shader1" };
     };
     class SRPRadio_Kalasnjikov_SoundSet1
     {
+        IsRadioSong = 4;
         soundShaders[] = { "SRPRadio_Kalasnjikov_Shader1" };
     };
     class SRPRadio_HejSekiSeki_SoundSet1
     {
+        IsRadioSong = 4;
         soundShaders[] = { "SRPRadio_HejSekiSeki_Shader1" };
     };
     class SRPRadio_Narkotik_SoundSet1
     {
+        IsRadioSong = 4;
         soundShaders[] = { "SRPRadio_Narkotik_Shader1" };
     };
     class SRPRadio_ItsMyLifeRussian_SoundSet1
     {
+        IsRadioSong = 4;
         soundShaders[] = { "SRPRadio_ItsMyLifeRussian_Shader1" };
     };
     class SRPRadio_Kalinka_SoundSet1
     {
+        IsRadioSong = 4;
         soundShaders[] = { "SRPRadio_Kalinka_Shader1" };
     };
     class SRPRadio_TheFightingSide_BadMan_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_TheFightingSide_BadMan_Shader1" };
     };
     class SRPRadio_TheFightingSide_Hymns_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_TheFightingSide_Hymns_Shader1" };
     };
     class SRPRadio_TheFightingSide_SomethingFamiliar_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_TheFightingSide_SomethingFamiliar_Shader1" };
     };
 
     class SRPRadio_LocalViolence_Drowning_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_LocalViolence_Drowning_Shader1" };
     };
     class SRPRadio_LocalViolence_GoodEnough_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_LocalViolence_GoodEnough_Shader1" };
     };
     class SRPRadio_LocalViolence_Probs_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_LocalViolence_Probs_Shader1" };
     };
     class SRPRadio_Vinnie_MasterNoSpeech_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Vinnie_MasterNoSpeech_Shader1" };
     };
 
     class SRPRadio_IslandGeorge_LostInTheSnow_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_LostInTheSnow_Shader1" };
     };
     class SRPRadio_IslandGeorge_TheBlast_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_TheBlast_Shader1" };
     };
     class SRPRadio_IslandGeorge_GTH_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_GTH_Shader1" };
     };
     class SRPRadio_IslandGeorge_SlenderMalice_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_SlenderMalice_Shader1" };
     };
     class SRPRadio_IslandGeorge_CloppingCoconuts_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_CloppingCoconuts_Shader1" };
     };
     class SRPRadio_IslandGeorge_SelfEsteem_SoundSet1
     {
         SoundPlayTime = 167;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_SelfEsteem_Shader1" };
     };
     class SRPRadio_IslandGeorge_RidersRepair_SoundSet1
     {
         SoundPlayTime = 66;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_RidersRepair_Shader1" };
     };
     class SRPRadio_IslandGeorge_OceanBlue_SoundSet1
     {
         SoundPlayTime = 232;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_OceanBlue_Shader1" };
     };
     class SRPRadio_IslandGeorge_Automatic_SoundSet1
     {
         SoundPlayTime = 170;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_Automatic_Shader1" };
     };
     class SRPRadio_IslandGeorge_Groozy_SoundSet1
     {
         SoundPlayTime = 170;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorgeGroozy_Shader1" };
     };
     class SRPRadio_IslandGeorge_DojoOfTheFalls_SoundSet1
     {
         SoundPlayTime = 170;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_DojoOfTheFalls_Shader1" };
     };
     class SRPRadio_IslandGeorge_SoInLoveWithYou_SoundSet1
     {
         SoundPlayTime = 170;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_IslandGeorge_SoInLoveWithYou_Shader1" };
     };
     class SRPRadio_ThruItAll_LA_SoundSet1
     {
         SoundPlayTime = 149;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_ThruItAll_LA_Shader1" };
     };
     class SRPRadio_ThruItAll_SameTShirt_SoundSet1
     {
         SoundPlayTime = 161;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_ThruItAll_SameTShirt_Shader1" };
     };
     class SRPRadio_ThruItAll_Irrelevant_SoundSet1
     {
         SoundPlayTime = 173;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_ThruItAll_Irrelevant_Shader1" };
     };
     class SRPRadio_ThruItAll_Simulation_SoundSet1
     {
         SoundPlayTime = 146;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_ThruItAll_Simulation_Shader1" };
     };
     class SRPRadio_ThruItAll_Tangled_SoundSet1
     {
         SoundPlayTime = 157;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_ThruItAll_Tangled_Shader1" };
     };
 
     class SRPRadio_HunterMyers_Pray_SoundSet1
     {
         SoundPlayTime = 185;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_HunterMyers_Pray_Shader1" };
     };
     class SRPRadio_HunterMyers_Half_SoundSet1
     {
         SoundPlayTime = 172;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_HunterMyers_Half_Shader1" };
     };
     class SRPRadio_HunterMyers_EveryDay_SoundSet1
     {
         SoundPlayTime = 177;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_HunterMyers_EveryDay_Shader1" };
     };
     class SRPRadio_HunterMyers_Damn_SoundSet1
     {
         SoundPlayTime = 194;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_HunterMyers_Damn_Shader1" };
     };
     class SRPRadio_HunterMyers_Charcoal_SoundSet1
     {
         SoundPlayTime = 210;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_HunterMyers_Charcoal_Shader1" };
     };
 
     class SRPRadio_ProbabLeigh_Labyrinth_SoundSet1
     {
         SoundPlayTime = 115;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_ProbabLeigh_Labyrinth_Shader1" };
     };
     class SRPRadio_ProbabLeigh_DancesWithAliens_SoundSet1
     {
         SoundPlayTime = 158;
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_ProbabLeigh_DancesWithAliens_Shader1" };
     };
 
     class SRPRadio_AcousticGuitar_TheStranger_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_AcousticGuitar_TheStranger_Shader1" };
     };
     class SRPRadio_AcousticGuitar_ImprovLoop_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_AcousticGuitar_ImprovLoop_Shader1" };
     };
     class SRPRadio_AcousticGuitar_Avante_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_AcousticGuitar_Avante_Shader1" };
     };
     class SRPRadio_AcousticGuitar_LostWords_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_AcousticGuitar_LostWords_Shader1" };
     };
     class SRPRadio_AcousticGuitar_TheJourney_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_AcousticGuitar_TheJourney_Shader1" };
     };
 
     class SRPRadio_Biwa_DemonSlayer_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Biwa_DemonSlayer_Shader1" };
     };
     class SRPRadio_Biwa_LittleSoldierBoy_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Biwa_LittleSoldierBoy_Shader1" };
     };
     class SRPRadio_Biwa_Jongarasetsu_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Biwa_Jongarasetsu_Shader1" };
     };
     class SRPRadio_Biwa_TakahashiIntroduction_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Biwa_TakahashiIntroduction_Shader1" };
     };
     class SRPRadio_Biwa_TakahashiJonkara_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Biwa_TakahashiJonkara_Shader1" };
     };
     class SRPRadio_Biwa_TakahashiYasaburo_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Biwa_TakahashiYasaburo_Shader1" };
     };
     class SRPRadio_Biwa_TakahashiTsugaruYosare_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Biwa_TakahashiTsugaruYosare_Shader1" };
     };
     class SRPRadio_Biwa_TakahashiAyugaSawaJinko_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Biwa_TakahashiAyugaSawaJinko_Shader1" };
     };
 
     class SRPRadio_Track1_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Track1_Shader1" };
     };
     class SRPRadio_Track2_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Track2_Shader1" };
     };
     class SRPRadio_Track3_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Track3_Shader1" };
     };
     class SRPRadio_Track4_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Track4_Shader1" };
     };
     class SRPRadio_Track5_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Track5_Shader1" };
     };
     class SRPRadio_Track6_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Track6_Shader1" };
     };
     class SRPRadio_Track7_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Track7_Shader1" };
     };
     class SRPRadio_Track8_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_Track8_Shader1" };
     };
 
     class SRPRadio_DarthRose_Constellation_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_DarthRose_Constellation_Shader1" };
     };
     class SRPRadio_DarthRose_HalfALight_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_DarthRose_HalfALight_Shader1" };
     };
     class SRPRadio_DarthRose_TiredEyes_SoundSet1
     {
+        IsRadioSong = 1;
         soundShaders[] = { "SRPRadio_DarthRose_TiredEyes_Shader1" };
     };
 };
