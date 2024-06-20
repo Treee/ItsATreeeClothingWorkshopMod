@@ -94,6 +94,9 @@ modded class ModItemRegisterCallbacks
         pType.AddItemInHandsProfileIK("SRP_ShoulderSling", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/nioshface_mask.anm");
 
         pType.AddItemInHandsProfileIK("SRP_PoolBall_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/apple.anm");
+
+        pType.AddItemInHandsProfileIK("SRP_WeaponRepairKit", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/cleaning_kit_wood.anm");
+
     };
 
     override void RegisterTwoHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)

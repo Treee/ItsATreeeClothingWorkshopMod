@@ -1,6 +1,6 @@
 //pistol,shotgun,sniper,rifle,smg
 //===================================CRUDE Breakdown
-class SRP_BreakDownPistolCore extends RecipeBase  
+class SRP_BreakDownPistolCore extends RecipeBase
 {
 	override void Init()
 	{
@@ -8,41 +8,41 @@ class SRP_BreakDownPistolCore extends RecipeBase
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 6;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		m_MinQuantityIngredient[0] = 1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-				
-		//ingredient 1  
+
+		//ingredient 1
 		InsertIngredient(0,"PistolCore");	// primary ingredient
-		
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2					
+
+		//ingredient 2
 		InsertIngredient(1,"Hammer");
-    InsertIngredient(1,"Screwdriver");
-    InsertIngredient(1,"Pliers");
-		
+        InsertIngredient(1,"Screwdriver");
+        InsertIngredient(1,"Pliers");
+
 		m_IngredientAddHealth[1] = -30;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;	// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//result 1
 		// AddResult("BW_Scar_Magazine");	// recipe result
-		
+
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
@@ -62,12 +62,12 @@ class SRP_BreakDownPistolCore extends RecipeBase
 	{
     float chance = Math.RandomFloatInclusive(0,1);
 
-    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetSmallParts().GetRandomElement(), player.GetPosition(), false));        
+    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetSmallParts().GetRandomElement(), player.GetPosition(), false));
     if (newItem)
     {
       if (chance >= 0.5)
       { // 50% chance to outright ruin the result
-        newItem.AddHealth(-100);        
+        newItem.AddHealth(-100);
       }
       else
       {
@@ -91,7 +91,7 @@ class SRP_BreakDownPistolCore extends RecipeBase
   }
 };
 
-class SRP_BreakDownRifleCoreLarge extends RecipeBase  
+class SRP_BreakDownRifleCoreLarge extends RecipeBase
 {
 	override void Init()
 	{
@@ -99,41 +99,41 @@ class SRP_BreakDownRifleCoreLarge extends RecipeBase
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 6;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		m_MinQuantityIngredient[0] = 1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-				
-		//ingredient 1  
+
+		//ingredient 1
 		InsertIngredient(0,"RifleCore");	// primary ingredient
-		
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2					
+
+		//ingredient 2
 		InsertIngredient(1,"Hammer");
-    InsertIngredient(1,"Screwdriver");
-    InsertIngredient(1,"Pliers");
-		
+        InsertIngredient(1,"Screwdriver");
+        InsertIngredient(1,"Pliers");
+
 		m_IngredientAddHealth[1] = -30;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;	// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//result 1
 		// AddResult("BW_Scar_Magazine");	// recipe result
-		
+
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
@@ -152,12 +152,12 @@ class SRP_BreakDownRifleCoreLarge extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
     float chance = Math.RandomFloatInclusive(0,1);
-    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetLargeParts().GetRandomElement(), player.GetPosition(), false));        
+    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetLargeParts().GetRandomElement(), player.GetPosition(), false));
     if (newItem)
     {
       if (chance >= 0.5)
       { // 50% chance to outright ruin the result
-        newItem.AddHealth(-100);        
+        newItem.AddHealth(-100);
       }
       else
       {
@@ -181,7 +181,7 @@ class SRP_BreakDownRifleCoreLarge extends RecipeBase
   }
 };
 
-class SRP_BreakDownRifleCoreMedium extends RecipeBase  
+class SRP_BreakDownRifleCoreMedium extends RecipeBase
 {
 	override void Init()
 	{
@@ -189,41 +189,41 @@ class SRP_BreakDownRifleCoreMedium extends RecipeBase
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 6;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		m_MinQuantityIngredient[0] = 1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-				
-		//ingredient 1  
+
+		//ingredient 1
 		InsertIngredient(0,"RifleCore");	// primary ingredient
-		
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2					
+
+		//ingredient 2
 		InsertIngredient(1,"Hammer");
-    InsertIngredient(1,"Screwdriver");
-    InsertIngredient(1,"Pliers");
-		
+        InsertIngredient(1,"Screwdriver");
+        InsertIngredient(1,"Pliers");
+
 		m_IngredientAddHealth[1] = -30;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;	// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//result 1
 		// AddResult("BW_Scar_Magazine");	// recipe result
-		
+
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = 1;			// result quantity
 		m_ResultSetHealth[0] = -1;			// -1 = do nothing
@@ -242,12 +242,12 @@ class SRP_BreakDownRifleCoreMedium extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
     float chance = Math.RandomFloatInclusive(0,1);
-    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetMediumParts().GetRandomElement(), player.GetPosition(), false));        
+    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetMediumParts().GetRandomElement(), player.GetPosition(), false));
     if (newItem)
     {
       if (chance >= 0.5)
       { // 50% chance to outright ruin the result
-        newItem.AddHealth(-100);        
+        newItem.AddHealth(-100);
       }
       else
       {
@@ -272,7 +272,7 @@ class SRP_BreakDownRifleCoreMedium extends RecipeBase
 };
 
 //===================================== ADVANCED BREAKDOWN
-class SRP_BreakDownPistolCore_Advanced extends RecipeBase  
+class SRP_BreakDownPistolCore_Advanced extends RecipeBase
 {
 	override void Init()
 	{
@@ -280,39 +280,39 @@ class SRP_BreakDownPistolCore_Advanced extends RecipeBase
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 6;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		m_MinQuantityIngredient[0] = 1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		m_MinQuantityIngredient[1] = 30;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-				
-		//ingredient 1  
+
+		//ingredient 1
 		InsertIngredient(0,"PistolCore");	// primary ingredient
-		
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2					
-		InsertIngredient(1,"TT_GunKit_Salvage");
-		
+
+		//ingredient 2
+		InsertIngredient(1,"SRP_WeaponRepairKit");
+
 		m_IngredientAddHealth[1] = 0;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[1] = -30;// 0 = do nothing
 		m_IngredientDestroy[1] = false;	// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//result 1
 		// AddResult("BW_Scar_Magazine");	// recipe result
-		
+
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
@@ -332,12 +332,12 @@ class SRP_BreakDownPistolCore_Advanced extends RecipeBase
 	{
     float chance = Math.RandomFloatInclusive(0,1);
 
-    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetSmallParts().GetRandomElement(), player.GetPosition(), false));        
+    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetSmallParts().GetRandomElement(), player.GetPosition(), false));
     if (newItem)
     {
       if (chance >= 0.6)
       { // 40% chance to outright ruin the result
-        newItem.AddHealth(-100);        
+        newItem.AddHealth(-100);
       }
       else
       {
@@ -361,7 +361,7 @@ class SRP_BreakDownPistolCore_Advanced extends RecipeBase
   }
 };
 
-class SRP_BreakDownRifleCoreLarge_Advanced extends RecipeBase  
+class SRP_BreakDownRifleCoreLarge_Advanced extends RecipeBase
 {
 	override void Init()
 	{
@@ -369,39 +369,39 @@ class SRP_BreakDownRifleCoreLarge_Advanced extends RecipeBase
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 6;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		m_MinQuantityIngredient[0] = 1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		m_MinQuantityIngredient[1] = 30;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-				
-		//ingredient 1  
+
+		//ingredient 1
 		InsertIngredient(0,"RifleCore");	// primary ingredient
-		
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2					
-		InsertIngredient(1,"TT_GunKit_Salvage");
-		
+
+		//ingredient 2
+		InsertIngredient(1,"SRP_WeaponRepairKit");
+
 		m_IngredientAddHealth[1] = 0;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[1] = -30;// 0 = do nothing
 		m_IngredientDestroy[1] = false;	// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//result 1
 		// AddResult("BW_Scar_Magazine");	// recipe result
-		
+
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
@@ -420,12 +420,12 @@ class SRP_BreakDownRifleCoreLarge_Advanced extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
     float chance = Math.RandomFloatInclusive(0,1);
-    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetLargeParts().GetRandomElement(), player.GetPosition(), false));        
+    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetLargeParts().GetRandomElement(), player.GetPosition(), false));
     if (newItem)
     {
       if (chance >= 0.6)
       { // 40% chance to outright ruin the result
-        newItem.AddHealth(-100);        
+        newItem.AddHealth(-100);
       }
       else
       {
@@ -449,7 +449,7 @@ class SRP_BreakDownRifleCoreLarge_Advanced extends RecipeBase
   }
 };
 
-class SRP_BreakDownRifleCoreMedium_Advanced extends RecipeBase  
+class SRP_BreakDownRifleCoreMedium_Advanced extends RecipeBase
 {
 	override void Init()
 	{
@@ -457,39 +457,39 @@ class SRP_BreakDownRifleCoreMedium_Advanced extends RecipeBase
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 6;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//-1 = disable check
 		m_MinQuantityIngredient[0] = 1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		m_MinQuantityIngredient[1] = 30;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-				
-		//ingredient 1  
+
+		//ingredient 1
 		InsertIngredient(0,"RifleCore");	// primary ingredient
-		
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2					
-		InsertIngredient(1,"TT_GunKit_Salvage");
-		
-		m_IngredientAddHealth[1] = 0;	// -1 = do nothing
+
+		//ingredient 2
+		InsertIngredient(1,"SRP_WeaponRepairKit");
+
+		m_IngredientAddHealth[1] = -5;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[1] = -30;// 0 = do nothing
+		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;	// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//result 1
 		// AddResult("BW_Scar_Magazine");	// recipe result
-		
+
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
@@ -508,12 +508,12 @@ class SRP_BreakDownRifleCoreMedium_Advanced extends RecipeBase
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
     float chance = Math.RandomFloatInclusive(0,1);
-    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetMediumParts().GetRandomElement(), player.GetPosition(), false));        
+    ItemBase newItem = ItemBase.Cast(GetGame().CreateObjectEx(GetMediumParts().GetRandomElement(), player.GetPosition(), false));
     if (newItem)
     {
       if (chance >= 0.6)
       { // 50% chance to outright ruin the result
-        newItem.AddHealth(-100);        
+        newItem.AddHealth(-100);
       }
       else
       {
@@ -538,7 +538,7 @@ class SRP_BreakDownRifleCoreMedium_Advanced extends RecipeBase
 };
 
 //====================================== SALVAGE REPAIR
-class Craft_SRP_RepairSalvagedPart extends RecipeBase  
+class Craft_SRP_RepairSalvagedPart extends RecipeBase
 {
 	override void Init()
 	{
@@ -546,43 +546,43 @@ class Craft_SRP_RepairSalvagedPart extends RecipeBase
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 6;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 2;//-1 = disable check
 		m_MinQuantityIngredient[0] = 50;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = 2;//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;//-1 = disable check
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-				
-		//ingredient 1  
-		InsertIngredient(0,"TT_GunKit_Tools");	// primary ingredient
-		
+
+		//ingredient 1
+		InsertIngredient(0,"SRP_WeaponRepairKit");	// primary ingredient
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = -50;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2					
+
+		//ingredient 2
 		InsertIngredient(1,"TT_MainReceiver_Base");
-    InsertIngredient(1,"TT_GunBarrel_Base");
-    InsertIngredient(1,"TT_RifledBarrel_Base");
-    InsertIngredient(1,"TT_Trigger_ColorBase");
-    InsertIngredient(1,"TT_Hammer_ColorBase");
-		
+        InsertIngredient(1,"TT_GunBarrel_Base");
+        InsertIngredient(1,"TT_RifledBarrel_Base");
+        InsertIngredient(1,"TT_Trigger_ColorBase");
+        InsertIngredient(1,"TT_Hammer_ColorBase");
+
 		m_IngredientAddHealth[1] = 50;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;	// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//result 1
 		// AddResult("BW_Scar_Magazine");	// recipe result
-		
+
 		m_ResultSetFullQuantity[0] = false;//true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = -1;//-1 = do nothing
 		m_ResultSetHealth[0] = -1;//-1 = do nothing
@@ -593,13 +593,13 @@ class Craft_SRP_RepairSalvagedPart extends RecipeBase
 		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
 	}
 
-  override bool CanDo(ItemBase ingredients[], PlayerBase player)
+    override bool CanDo(ItemBase ingredients[], PlayerBase player)
 	{
-    return true;
+        return true;
 	}
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
-    Debug.Log("Craft_SRP_RepairSalvagedPart: Recipe Do method called","recipes");
+        Debug.Log("Craft_SRP_RepairSalvagedPart: Recipe Do method called","recipes");
 	}
 };

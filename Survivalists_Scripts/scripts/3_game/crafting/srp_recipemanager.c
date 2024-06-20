@@ -81,7 +81,21 @@ enum SRP_COLOR
     RIBWORT,
     ROSEMARY,
     VALERIAN,
-    YARROW
+    YARROW,
+    SMALL,                      // weapons
+    MEDIUM,
+    LONG,
+    RIFLEDSMALL,
+    RIFLEDMEDIUM,
+    RIFLEDLONG,
+    SEMISMALL,
+    SEMIMEDIUM,
+    SEMILARGE,
+    AUTOSMALL,
+    AUTOMEDIUM,
+    AUTOLARGE,
+    SIMPLE,
+    WOOD,
 }
 
 class SRP_ItemRequirement
@@ -187,22 +201,24 @@ class SRP_CraftableItem
     protected string m_DisplayName;
     protected string m_ItemName;
     protected int m_Quantity;
+    protected float m_MaxHP;
     ref array<ref SRP_ItemRequirement> m_RequiredIngredients;
 
-    void SRP_CraftableItem(string itemName, string displayName, int quantity = 1)
+    void SRP_CraftableItem(string itemName, string displayName, int quantity = 1, float maxHP = 1)
     {
         m_ItemName = itemName;
         m_DisplayName = displayName;
         m_Quantity = quantity;
+        m_MaxHP = maxHP;
         if (!m_RequiredIngredients)
         {
-        m_RequiredIngredients = new array<ref SRP_ItemRequirement>;
+            m_RequiredIngredients = new array<ref SRP_ItemRequirement>;
         }
     }
     void RegisterIngredient(SRP_ItemRequirement craftingIngredient)
     {
         if (m_RequiredIngredients.Find(craftingIngredient) == -1)
-        m_RequiredIngredients.Insert(craftingIngredient);
+            m_RequiredIngredients.Insert(craftingIngredient);
     }
     void RemoveIngredient(SRP_ItemRequirement craftingIngredient)
     {
@@ -220,6 +236,10 @@ class SRP_CraftableItem
     {
         return m_Quantity;
     }
+    float GetMaxHP()
+    {
+        return m_MaxHP;
+    }
     bool CompareToOtherIngredients(SRP_CraftableItem otherCraftable)
     {
         bool isCompleteMatch = true;
@@ -227,35 +247,35 @@ class SRP_CraftableItem
         // start with my ingredients
         foreach(SRP_ItemRequirement ingredient : m_RequiredIngredients)
         {
-        // Print(string.Format("Comparring Recipe %1 || Ingredients %2", GetItemClassName(), ingredient.PrintDebug()));
-        // look at all the other ingredients
-        foreach(SRP_ItemRequirement otherIngredient : otherCraftable.m_RequiredIngredients)
-        {
-            // if there is a match
-            // Print(string.Format("Against Matching Ingredients %1", otherIngredient.PrintDebug()));
-            if (ingredient.IsRequirementMatch(otherIngredient))
+            // Print(string.Format("Comparring Recipe %1 || Ingredients %2", GetItemClassName(), ingredient.PrintDebug()));
+            // look at all the other ingredients
+            foreach(SRP_ItemRequirement otherIngredient : otherCraftable.m_RequiredIngredients)
             {
-            // set we matched to true; break out of the inner for loop
-            isIngredientMatch = true;
-            break;
+                // if there is a match
+                // Print(string.Format("Against Matching Ingredients %1", otherIngredient.PrintDebug()));
+                if (ingredient.IsRequirementMatch(otherIngredient))
+                {
+                // set we matched to true; break out of the inner for loop
+                isIngredientMatch = true;
+                break;
+                }
             }
-        }
-        // if the other ingredients have a match
-        if (isIngredientMatch)
-        {
-            // reset the boolean flag for ingredients
-            isIngredientMatch = false;
-            isCompleteMatch &= true;
-            // Print("Ingredient MATCH!!");
-            continue;
-        }
-        else
-        {
-            // the other craftable has no ingredients that match this; break loop
-            isCompleteMatch &= false;
-            // Print("NO MATCHING INGREDIENTS QUICK FAIL");
-            break;
-        }
+            // if the other ingredients have a match
+            if (isIngredientMatch)
+            {
+                // reset the boolean flag for ingredients
+                isIngredientMatch = false;
+                isCompleteMatch &= true;
+                // Print("Ingredient MATCH!!");
+                continue;
+            }
+            else
+            {
+                // the other craftable has no ingredients that match this; break loop
+                isCompleteMatch &= false;
+                // Print("NO MATCHING INGREDIENTS QUICK FAIL");
+                break;
+            }
         }
         return isCompleteMatch;
     }

@@ -161,8 +161,10 @@ class CfgVehicles
 
     class WeaponCleaningKit : Inventory_Base
     {
+        descriptionShort = "Useful tools for cleaning a weapon for peak performance. Well oiled mechanisms are proven to reduce the chance of jamming.";
         canBeSplit = 1;
         itemSize[] = { 2,2 };
+        repairKitType = -1;
     };
     class LeatherSewingKit : Inventory_Base
     {
@@ -1131,6 +1133,64 @@ class CfgVehicles
         };
     };
 
+    class SRP_WeaponRepairKit : Inventory_Base
+    {
+        scope = 2;
+        displayName = "Weapon Repair Kit";
+        descriptionShort = "A set of materials that can be used to repair a weapon when damaged. Lacks the proper tools to fully restore a weapon.";
+        model = "\dz\gear\tools\cleaning_kit_wood.p3d";
+        debug_ItemCategory = 2;
+        animClass = "Knife";
+        rotationFlags = 17;
+        canBeSplit = 1;
+        stackedUnit = "percentage";
+        quantityBar = 1;
+        varQuantityInit = 100;
+        varQuantityMin = 0;
+        varQuantityMax = 100;
+        weight = 780;
+        weightPerQuantityUnit = 0;
+        itemSize[] = { 2,2 };
+        fragility = 0.0099999998;
+        repairKitType = 1;
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 100;
+                    healthLevels[] =
+                    {
+                        {1,{"DZ\gear\tools\data\cleaning_kit_wood.rvmat"}},
+                        {0.69999999,{"DZ\gear\tools\data\cleaning_kit_wood.rvmat"}},
+                        {0.5,{"DZ\gear\tools\data\cleaning_kit_wood_damage.rvmat"}},
+                        {0.30000001,{"DZ\gear\tools\data\cleaning_kit_wood_damage.rvmat"}},
+                        {0,{"DZ\gear\tools\data\cleaning_kit_wood_destruct.rvmat"}}
+                    };
+                };
+            };
+        };
+        class MeleeModes
+        {
+            class Default
+            {
+                ammo = "MeleeFistLight";
+                range = 1;
+            };
+            class Heavy
+            {
+                ammo = "MeleeFistHeavy";
+                range = 1;
+            };
+            class Sprint
+            {
+                ammo = "MeleeFistHeavy";
+                range = 2.8;
+            };
+        };
+        soundImpactType = "wood";
+    };
     //============================================= ELECTRONIC Hardeners
     class TireRepairKit_ElectronicsKit_ColorBase : Inventory_Base
     {
