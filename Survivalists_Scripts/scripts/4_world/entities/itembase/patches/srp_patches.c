@@ -44,7 +44,7 @@ class SRP_SingleArmband_StarterKit extends SRP_IntermediateCraftingKitBase
   override void SetActions()
 	{
 		super.SetActions();
-		AddAction(ActionSwitchSingleArmbandOption);
+		AddAction(ActionSwitchArmbandOption_Single);
 	}
 };
 class SRP_DoubleArmband_StarterKit extends SRP_IntermediateCraftingKitBase
@@ -59,6 +59,6 @@ class SRP_DoubleArmband_StarterKit extends SRP_IntermediateCraftingKitBase
   override void SetActions()
 	{
 		super.SetActions();
-		AddAction(ActionSwitchDoubleArmbandOption);
+		AddAction(ActionSwitchArmbandOption_Double);
 	}
 };

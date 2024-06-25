@@ -116,7 +116,7 @@ modded class ActionConstructor
         actions.Insert(ActionSwitchLetterOption);
         actions.Insert(ActionSwitchPatchFlagOption);
         actions.Insert(ActionSwitchPatchLogoOption);
-        actions.Insert(ActionSwitchSingleArmbandOption);
-        actions.Insert(ActionSwitchDoubleArmbandOption);
+        actions.Insert(ActionSwitchArmbandOption_Single);
+        actions.Insert(ActionSwitchArmbandOption_Double);
 	}
 };
