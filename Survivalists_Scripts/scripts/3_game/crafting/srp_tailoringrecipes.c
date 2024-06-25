@@ -3,7 +3,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
   override void Init()
   {
     super.Init();
-    // VESTS    
+    // VESTS
     craftableItems.Insert(RegisterArmorStickRecipe());
     craftableItems.Insert(RegisterArmorBoneRecipe());
     craftableItems.Insert(RegisterArmorFrakenVestRecipe());
@@ -17,7 +17,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterVestUKAssaultRecipe());
     craftableItems.Insert(RegisterVestHighCapacityRecipe());
     craftableItems.Insert(RegisterVestHuntingRecipe());
-    craftableItems.Insert(RegisterVestReflexRecipe());    
+    craftableItems.Insert(RegisterVestReflexRecipe());
     // BACKPACKS
     craftableItems.Insert(RegisterBackpackLeatherRecipe());
     craftableItems.Insert(RegisterBackpackSurvivalRecipe());
@@ -28,8 +28,8 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterBackpackRolltopRecipe());
     craftableItems.Insert(RegisterBackpackMessengerRecipe());
     craftableItems.Insert(RegisterBackpackDUBLeathBagRecipe());
-    craftableItems.Insert(Register_BackpackLetterHolder_Recipe());  
-    craftableItems.Insert(Register_ArmyPouch_Recipe());    
+    craftableItems.Insert(Register_BackpackLetterHolder_Recipe());
+    craftableItems.Insert(Register_ArmyPouch_Recipe());
     // BELTS
     craftableItems.Insert(RegisterBeltLegHolsterRecipe());
     craftableItems.Insert(RegisterBeltTacticalLegHolsterRecipe());
@@ -56,7 +56,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterHeadCowboyHatRecipe());
     craftableItems.Insert(RegisterHeadBurlapMaskRecipe());
     craftableItems.Insert(RegisterHeadLeatherCowlRecipe());
-    craftableItems.Insert(RegisterHeadLeatherTricornRecipe());    
+    craftableItems.Insert(RegisterHeadLeatherTricornRecipe());
     // MASKS
     craftableItems.Insert(RegisterMaskSimpleBoneMetalRecipe());
     craftableItems.Insert(RegisterMaskSimpleBoneMetalBlueRecipe());
@@ -100,7 +100,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItems.Insert(RegisterTopsTracksuitRecipe());
     craftableItems.Insert(RegisterTopsFirefighterJacketRecipe());
     craftableItems.Insert(RegisterTopsMiniDressRecipe());
-    // MISC    
+    // MISC
     craftableItems.Insert(Register_DragonPlushie_Recipe());
     craftableItems.Insert(Register_BasicCarpetKit_Recipe());
     craftableItems.Insert(Register_BasicRugKit_Recipe());
@@ -130,7 +130,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
   //   craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
   //   craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 10));
   //   return craftableItem;
-  // }  
+  // }
 //===========================VESTS
   SRP_CraftableItem RegisterArmorStickRecipe()
   {
@@ -255,7 +255,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterVestShoulderSlingRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_ShoulderSling", "Shoulder Sling");
@@ -274,7 +274,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterVestPlateCarrierRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("PlateCarrierVest", "Plate Carrier Vest");
@@ -295,7 +295,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 5));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterVestSmershRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SmershVest", "Smersh Vest");
@@ -316,7 +316,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 3));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterVestPressRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("PressVest_LightBlue", "Press Vest");
@@ -337,7 +337,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 2));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterVestUKAssaultRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("UKAssVest_Camo", "UK Assault Vest");
@@ -358,7 +358,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 4));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterVestHighCapacityRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("HighCapacityVest_Olive", "High Capacity Vest");
@@ -379,7 +379,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 2));
     return craftableItem;
-  }  
+  }
   SRP_CraftableItem RegisterVestHuntingRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("HuntingVest", "HuntingVest");
@@ -400,7 +400,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 2));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterVestReflexRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("ReflexVest", "Reflex Vest");
@@ -642,7 +642,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  }  
+  }
   SRP_CraftableItem Register_ArmyPouch_Recipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("ArmyPouch_Beige", "Army Pouch");
@@ -660,7 +660,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  }  
+  }
 //===========================BELTS
   SRP_CraftableItem RegisterBeltLegHolsterRecipe()
   {
@@ -694,7 +694,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread5", SRP_COLOR.BLACK, 50));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt1", SRP_COLOR.NONE, 1));
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt2", SRP_COLOR.NONE, 1));    
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt2", SRP_COLOR.NONE, 1));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 1));
@@ -722,10 +722,10 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterBeltTacticalRecipe()
   {
-    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_TacticalBelt", "Tactical Belt");
+    SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_TacticalBelt_Green", "Tactical Belt");
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingMachine", SRP_COLOR.NONE, 1));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_SewingThread1", SRP_COLOR.NONE, 67));
@@ -745,7 +745,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterBeltElbowKneePadsRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Elbow_Knee_Pads_Green", "Elbow and Knee Pads");
@@ -768,7 +768,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 4));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterBeltMilitaryRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Military_Belt_Tan", "Military Belt");
@@ -791,7 +791,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 2));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterBeltHipPouchRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Pouch_Belt", "Hip Pouch Belt");
@@ -811,7 +811,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterBeltHipHolsterRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Holster_Belt", "Hip Holster");
@@ -831,7 +831,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem Register_LeatherFlagBelt_Recipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_FlagBelt_Basic", "Leather Flag Belt");
@@ -851,7 +851,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  }  
+  }
 //===========================GLOVES
   SRP_CraftableItem RegisterGlovesWorkingRecipe()
   {
@@ -872,7 +872,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  }  
+  }
   SRP_CraftableItem RegisterGlovesTacticalRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("TacticalGloves_Beige", "Tactical Gloves");
@@ -894,7 +894,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterGlovesCombatRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("OMNOGloves_Brown", "(OMNO) Combat Gloves");
@@ -914,7 +914,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterGlovesBoxingRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BoxingGloves_Red", "Boxing Gloves");
@@ -933,7 +933,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
 //===========================HEADGEAR
   SRP_CraftableItem RegisterHeadTurkeyBeanieRecipe()
   {
@@ -954,7 +954,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  }  
+  }
   SRP_CraftableItem RegisterHeadBaseballCapMilitaryRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_MilitaryPatrolCap_Tan", "Military Patrol Cap");
@@ -1136,7 +1136,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterHeadLeatherTricornRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_PirateHat_Leather", "Leather Tricorn");
@@ -1158,7 +1158,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 1));
 
     return craftableItem;
-  }  
+  }
 //===========================MASKS
   SRP_CraftableItem RegisterMaskSimpleBoneMetalRecipe()
   {
@@ -1177,7 +1177,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 5));
     return craftableItem;
-  }    
+  }
   SRP_CraftableItem RegisterMaskSimpleBoneMetalBlueRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("DUB_Scrapmask_Blue", "Makeshift Bone Metal Mask - Blue");
@@ -1195,7 +1195,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 5));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterMaskSimpleBoneMetalOrangeRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("DUB_Scrapmask_Orange", "Makeshift Bone Metal Mask - Orange");
@@ -1213,7 +1213,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 5));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterMaskSimpleBoneMetalRustRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("DUB_Scrapmask_Orange", "Makeshift Bone Metal Mask - Rust");
@@ -1231,7 +1231,7 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalPlate", SRP_COLOR.NONE, 5));
     return craftableItem;
-  } 
+  }
   SRP_CraftableItem RegisterMaskArmoredBoneMetalRecipe()
   {
     SRP_CraftableItem craftableItem = new SRP_CraftableItem("DUB_ScrapmaskV2", "Armored Bone Metal Mask");
@@ -2019,9 +2019,9 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt1", SRP_COLOR.NONE, 1));
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 4));
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Sticks", SRP_COLOR.NONE, 2));    
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Sticks", SRP_COLOR.NONE, 2));
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));    
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_MetalWire", SRP_COLOR.NONE, 1));
     return craftableItem;
   }
   SRP_CraftableItem Register_BasicCarpetKit_Recipe()
@@ -2037,8 +2037,8 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt1", SRP_COLOR.NONE, 1));
 
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 2));   
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));   
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     return craftableItem;
   }
   SRP_CraftableItem Register_BasicRugKit_Recipe()
@@ -2054,8 +2054,8 @@ class SRP_TailoringRecipes extends SRP_RecipeManager
 
     craftableItem.RegisterIngredient(new SRP_ItemRequirement("TailoringPelt1", SRP_COLOR.NONE, 1));
 
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 2));   
-    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));   
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Leather", SRP_COLOR.NONE, 2));
+    craftableItem.RegisterIngredient(new SRP_ItemRequirement("Tailoring_Fabric", SRP_COLOR.NONE, 4));
     return craftableItem;
   }
 //===========================END
