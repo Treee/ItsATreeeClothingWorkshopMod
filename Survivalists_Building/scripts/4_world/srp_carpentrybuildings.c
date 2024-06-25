@@ -53,7 +53,7 @@ class SRP_DefaultHouse extends BuildingSuper
 			{
 				return false;
 			}
-		}		
+		}
 		return true;
 	}
   // Check if the treehouse has a tree inside the little hole
@@ -68,8 +68,8 @@ class SRP_DefaultHouse extends BuildingSuper
 			{
 				return true;
 			}
-		}	
-    return false;	 
+		}
+    return false;
   }
   bool HasProperDistance( string selection, PlayerBase player )
 	{
@@ -82,7 +82,7 @@ class SRP_DefaultHouse extends BuildingSuper
 				return false;
 			}
 		}
-		
+
 		return true;
 	}
 
@@ -93,7 +93,7 @@ class SRP_DefaultHouse extends BuildingSuper
 		vector ref_dir = GetDirection();
 		ref_dir[1] = 0;
 		ref_dir.Normalize();
-		 
+
 		vector x[2];
 		vector b1,b2;
 		GetCollisionBox(x);
@@ -105,13 +105,13 @@ class SRP_DefaultHouse extends BuildingSuper
 		float len = dir_to_fence.Length();
 
 		dir_to_fence.Normalize();
-		
+
 		vector ref_dir_angle = ref_dir.VectorToAngles();
 		vector dir_to_fence_angle = dir_to_fence.VectorToAngles();
 		vector test_angles = dir_to_fence_angle - ref_dir_angle;
-		
+
 		vector test_position = test_angles.AnglesToVector() * len;
-		
+
 		if(test_position[0] < b1[0] || test_position[0] > b2[0] || test_position[2] < 0.2 || test_position[2] > 2.2 )
 		{
 			return false;
@@ -125,18 +125,18 @@ class SRP_DefaultHouse extends BuildingSuper
 	{
 		vector ref_dir = GetDirection();
 		vector cam_dir = GetGame().GetCurrentCameraDirection();
-		
+
 		//ref_dir = GetGame().GetCurrentCameraPosition() - GetPosition();
 		ref_dir.Normalize();
 		ref_dir[1] = 0;		//ignore height
-		
+
 		cam_dir.Normalize();
 		cam_dir[1] = 0;		//ignore height
-		
+
 		if ( ref_dir.Length() != 0 )
 		{
 			float angle = Math.Acos( cam_dir * ref_dir );
-			
+
 			if ( angle >= MAX_ACTION_DETECTION_ANGLE_RAD )
 			{
 				return true;
@@ -283,315 +283,315 @@ class SRP_Fortifications_BambooWall extends SRP_DefaultHouse
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Fortifications_BambooWall_Yellow extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Fortifications_BambooWallCrossSmall extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Fortifications_BambooWallCrossSmall_Yellow extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Fortifications_BambooWallCross extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Fortifications_BambooWallCross_Yellow extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeTower_Small extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeTower_LargeStairs extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeTower_LargeLadder extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeTower_Ramp extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeTower_Stairs extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeTower_Platform extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeTower_PlatformDouble extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeTower_PlatformTriple extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_TentSmall extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_TentLarge extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_Planks extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_PlanksDouble extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_Gate extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_GateFarm extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_GateWarehouse extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_Fence extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_FenceDouble extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_FenceLog extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_FenceLogDouble extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class Land_SRP_Fortifications_PalisadeWall_FenceLogSpike extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_JapaneseShrine_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_JapaneseTemple_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_JapaneseToriGate_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_JapaneseToriGate_Medium extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_JapaneseToriGate_Large extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_JapaneseToriGate2_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_JapaneseToriGate2_Medium extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_JapaneseToriGate2_Large extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneBust_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneBench_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneColumn_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneStatue_Angel_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneStatue_Death_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneStatue_Ganesh_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneStatue_Gargoyle_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneStatue_Guardian_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneStatue_Pirate_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneStatue_Woman_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Furniture_StoneStatue_StJacob_Default extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 
 class SRP_Military_Turret_Bmg extends SRP_DefaultHouse
@@ -599,21 +599,28 @@ class SRP_Military_Turret_Bmg extends SRP_DefaultHouse
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Military_Turret_Machine extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 class SRP_Military_Turret_DoubleRailGun extends SRP_DefaultHouse
 {
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
+};
+class SRP_GypsyWagon_UniqueItem_essesentiendum extends SRP_DefaultHouse
+{
+  override bool CanBeDeconstructed()
+  {
+    return false;
+  }
 };
 //================= INVENTORY VISIBLE CAN BE DISMANTLED
 class SRP_Furniture_TerritoryFlag_Cosmetic extends SRP_DefaultHouse
@@ -625,7 +632,7 @@ class SRP_Furniture_TerritoryFlag_Cosmetic extends SRP_DefaultHouse
   override bool CanBeDeconstructed()
   {
     return true;
-  }  
+  }
 };
 
 //================= INVENTORY VISIBLE CANNOT BE DISMANTLED
