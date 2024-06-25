@@ -144,7 +144,8 @@ modded class PluginRecipesManager
       RegisterRecipe(new SRP_Craft_SRP_BoneMonsterMask);
 
       // Jackets / TOPS
-		  RegisterRecipe(new Craft_SRP_LeatherArmband);
+        RegisterRecipe(new Craft_SRP_LeatherArmband);
+        RegisterRecipe(new Craft_SRP_LeatherArmband_Cannibal);
       RegisterRecipe(new Craft_SRPClothing_TopKit_InsulatedGhillie_Brown);
       RegisterRecipe(new Craft_SRPClothing_TopKit_InsulatedGhillie_White);
       RegisterRecipe(new Craft_SRPClothing_TopKit_InsulatedGhillie_Bear);

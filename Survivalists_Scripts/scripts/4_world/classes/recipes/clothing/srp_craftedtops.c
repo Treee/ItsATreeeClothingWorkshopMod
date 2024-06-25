@@ -1,4 +1,4 @@
-class Craft_SRP_LeatherArmband extends RecipeBase   // Our example recipe which uses primary ingredient - our custom item MagicHammer to turn any other secondary ingredient ( all ItemBase items ) into stones. 
+class Craft_SRP_LeatherArmband extends RecipeBase   // Our example recipe which uses primary ingredient - our custom item MagicHammer to turn any other secondary ingredient ( all ItemBase items ) into stones.
 {
 	override void Init()
 	{
@@ -6,39 +6,39 @@ class Craft_SRP_LeatherArmband extends RecipeBase   // Our example recipe which 
 		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
 		m_AnimationLength = 2;		// animation length in relative time units
 		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;	//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;	//-1 = disable check
-		m_MinQuantityIngredient[0] = 8;	//quantity 1 required for primary ingredient
+		m_MinQuantityIngredient[0] = 4;	//quantity 1 required for primary ingredient
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;	//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;	//-1 = disable check
 		m_MinQuantityIngredient[1] = 50;	//quantity 1 required for secondary ingredient
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
-		
-		//ingredient 1  
+
+		//ingredient 1
 		InsertIngredient(0,"TannedLeather");	// primary ingredient
-		
+
 		m_IngredientAddHealth[0] = 0;	// -1 = do nothing
 		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
-		m_IngredientAddQuantity[0] = -8;// -1 = do nothing
+		m_IngredientAddQuantity[0] = -4;// -1 = do nothing
 		m_IngredientDestroy[0] = false;	// -1 = do nothing
 		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
-		//ingredient 2	
+
+		//ingredient 2
 		InsertIngredient(1,"LeatherSewingKit"); //  secondary ingredient
-		
+
 		m_IngredientAddHealth[1] = 0;	// -1 = do nothing
 		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
 		m_IngredientAddQuantity[1] = -50;// -1 = do nothing
 		m_IngredientDestroy[1] = false;		// destroy secondary ingredient
 		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//result
 		AddResult("SRP_Armband_Base");	// recipe result
-		
+
 		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
 		m_ResultSetQuantity[0] = 1;			// result quantity
 		m_ResultSetHealth[0] = -1;			// -1 = do nothing
@@ -59,51 +59,112 @@ class Craft_SRP_LeatherArmband extends RecipeBase   // Our example recipe which 
 		Debug.Log("Craft_SRP_LeatherArmband Recipe Do method called","recipes");
 	}
 };
+class Craft_SRP_LeatherArmband_Cannibal extends RecipeBase   // Our example recipe which uses primary ingredient - our custom item MagicHammer to turn any other secondary ingredient ( all ItemBase items ) into stones.
+{
+	override void Init()
+	{
+		m_Name = "Craft Armband - Cannibal Leather";	// action name in game
+		m_IsInstaRecipe = false;	// should this recipe be performed instantly without animation
+		m_AnimationLength = 2;		// animation length in relative time units
+		m_Specialty = 0;			// softskills modifier. value > 0 for roughness, value < 0 for precision
+
+		//conditions
+		m_MinDamageIngredient[0] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[0] = 3;	//-1 = disable check
+		m_MinQuantityIngredient[0] = -1;	//quantity 1 required for primary ingredient
+		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
+
+		m_MinDamageIngredient[1] = -1;	//-1 = disable check
+		m_MaxDamageIngredient[1] = 3;	//-1 = disable check
+		m_MinQuantityIngredient[1] = 50;	//quantity 1 required for secondary ingredient
+		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+
+		//ingredient 1
+		InsertIngredient(0,"DUB_Humanpelt");	// primary ingredient
+
+		m_IngredientAddHealth[0] = 0;	// -1 = do nothing
+		m_IngredientSetHealth[0] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[0] = 0;// -1 = do nothing
+		m_IngredientDestroy[0] = true;	// -1 = do nothing
+		m_IngredientUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+
+		//ingredient 2
+		InsertIngredient(1,"LeatherSewingKit"); //  secondary ingredient
+
+		m_IngredientAddHealth[1] = 0;	// -1 = do nothing
+		m_IngredientSetHealth[1] = -1; 	// -1 = do nothing
+		m_IngredientAddQuantity[1] = -50;// -1 = do nothing
+		m_IngredientDestroy[1] = false;		// destroy secondary ingredient
+		m_IngredientUseSoftSkills[1] = false;	// set 'true' to allow modification of the values by softskills on this ingredient
+
+		//result
+		AddResult("SRP_Armband_Cannibal");	// recipe result
+
+		m_ResultSetFullQuantity[0] = -1;	// -1 = do nothing
+		m_ResultSetQuantity[0] = 1;			// result quantity
+		m_ResultSetHealth[0] = -1;			// -1 = do nothing
+		m_ResultInheritsHealth[0] = -1;		// -1 = do nothing
+		m_ResultInheritsColor[0] = -1;		// -1 = do nothing
+		m_ResultToInventory[0] = -2;		// -1 = do nothing
+		m_ResultUseSoftSkills[0] = false;	// set 'true' to allow modification of the values by soft skillson this result
+		m_ResultReplacesIngredient[0] = -1;	// -1 = do nothing
+	}
+
+    override bool CanDo(ItemBase ingredients[], PlayerBase player)
+	{
+		return true;
+	}
+
+	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
+	{
+		Debug.Log("Craft_SRP_LeatherArmband_Cannibal Recipe Do method called","recipes");
+	}
+};
 
 //========================================================================= DEER ISLE GHILLIE REDO
 class Craft_SRPClothing_TopKit_InsulatedGhillie extends RecipeBase
-{	
+{
 	override void Init()
 	{
 		m_Name = "Sew Top - Insulated Bear Ghillie";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 2;//animation length in relative time units
 		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"BearPelt");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[0] = 0;// 0 = do nothing
 		m_IngredientSetHealth[0] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[0] = 0;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"GhillieSuit_ColorBase");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -3;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = false;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		// AddResult("SRP_AssaultBag_Denim");//add results here
 
@@ -128,7 +189,7 @@ class Craft_SRPClothing_TopKit_InsulatedGhillie extends RecipeBase
 	}
 };
 class Craft_SRPClothing_TopKit_InsulatedGhillie_Brown extends Craft_SRPClothing_TopKit_InsulatedGhillie
-{	
+{
 	override void Init()
 	{
     super.Init();
@@ -137,7 +198,7 @@ class Craft_SRPClothing_TopKit_InsulatedGhillie_Brown extends Craft_SRPClothing_
 	}
 };
 class Craft_SRPClothing_TopKit_InsulatedGhillie_White extends Craft_SRPClothing_TopKit_InsulatedGhillie
-{	
+{
 	override void Init()
 	{
     super.Init();
@@ -146,7 +207,7 @@ class Craft_SRPClothing_TopKit_InsulatedGhillie_White extends Craft_SRPClothing_
 	}
 };
 class Craft_SRPClothing_TopKit_InsulatedGhillie_Bear extends Craft_SRPClothing_TopKit_InsulatedGhillie
-{	
+{
 	override void Init()
 	{
     super.Init();
