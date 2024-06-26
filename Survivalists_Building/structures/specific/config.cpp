@@ -119,7 +119,7 @@ class CfgVehicles
         };
     };
 
-    class SRP_GypsyWagon_UniqueItem_essesentiendum : HouseNoDestruct
+    class SRP_GypsyWagon_UniqueItem_Default : HouseNoDestruct
     {
         scope = 1;
         displayName = "Gypsy Wagon";
@@ -139,6 +139,139 @@ class CfgVehicles
             "Survivalists_Building\structures\specific\data\srp_gypsywagon_seat_co.paa",
             "Survivalists_Building\structures\specific\data\srp_gypsywagon_seat_co.paa",
             "Survivalists_Building\structures\specific\data\srp_gypsywagon_planks_co.paa",
+            "Survivalists_Building\structures\specific\data\srp_gypsywagon_roof_co.paa",
+            "Survivalists_Building\structures\specific\data\srp_gypsywagon_seat_co.paa",
+            "Survivalists_Building\structures\specific\data\srp_gypsywagon_wheel_co.paa",
+            "Survivalists_Building\structures\specific\data\srp_gypsywagon_windows_co.paa"
+        };
+        class Doors
+        {
+            class Door1
+            {
+                displayName = "door 1";
+                component = "door1";
+                soundPos = "door1_action";
+                animPeriod = 1;
+                initPhase = 0;
+                initOpened = 0.5;
+                soundOpen = "doorWoodSmallOpen";
+                soundClose = "doorWoodSmallClose";
+                soundLocked = "doorWoodSmallRattle";
+                soundOpenABit = "doorWoodSmallOpenABit";
+            };
+            class Door2
+            {
+                displayName = "door 2";
+                component = "door2";
+                soundPos = "door2_action";
+                animPeriod = 1;
+                initPhase = 0;
+                initOpened = 0.5;
+                soundOpen = "doorWoodSmallOpen";
+                soundClose = "doorWoodSmallClose";
+                soundLocked = "doorWoodSmallRattle";
+                soundOpenABit = "doorWoodSmallOpenABit";
+            };
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 1000;
+                };
+            };
+            class GlobalArmor
+            {
+                class Projectile
+                {
+                    class Health { damage = 0; };
+                    class Blood { damage = 0; };
+                    class Shock { damage = 0; };
+                };
+                class Melee
+                {
+                    class Health { damage = 0; };
+                    class Blood { damage = 0; };
+                    class Shock { damage = 0; };
+                };
+            };
+            class DamageZones
+            {
+                class Door1
+                {
+                    class Health
+                    {
+                        hitpoints = 1000;
+                        transferToGlobalCoef = 0;
+                    };
+                    componentNames[] = { "door1" };
+                    fatalInjuryCoef = -1;
+                    class ArmorType
+                    {
+                        class Projectile
+                        {
+                            class Health { damage = 2; };
+                            class Blood { damage = 0; };
+                            class Shock { damage = 0; };
+                        };
+                        class Melee
+                        {
+                            class Health { damage = 2.5; };
+                            class Blood { damage = 0; };
+                            class Shock { damage = 0; };
+                        };
+                    };
+                };
+                class Door2
+                {
+                    class Health
+                    {
+                        hitpoints = 1000;
+                        transferToGlobalCoef = 0;
+                    };
+                    componentNames[] = { "door2" };
+                    fatalInjuryCoef = -1;
+                    class ArmorType
+                    {
+                        class Projectile
+                        {
+                            class Health { damage = 2; };
+                            class Blood { damage = 0; };
+                            class Shock { damage = 0; };
+                        };
+                        class Melee
+                        {
+                            class Health { damage = 2.5; };
+                            class Blood { damage = 0; };
+                            class Shock { damage = 0; };
+                        };
+                    };
+                };
+            };
+        };
+    };
+    class SRP_GypsyWagon_UniqueItem_essesentiendum : HouseNoDestruct
+    {
+        scope = 1;
+        displayName = "Gypsy Wagon";
+        descriptionShort = "A large wagon with room at the front to sit.";
+        model = "Survivalists_Building\structures\specific\srp_gypsywagon.p3d";
+        carveNavmesh = 1;
+        weight = 500;
+        itemSize[] = { 10,10 };
+        itemsCargoSize[] = { 0,0 };
+        physLayer = "item_large";
+        minPlacingDist = 5;
+        slopeTolerance = 0.2;
+        alignHologramToTerain = 1;
+        hiddenSelections[] = { "door", "door1", "planks", "roof", "seat", "wheel", "windows" };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_Building\structures\specific\data\srp_gypsywagon_seat_co.paa",
+            "Survivalists_Building\structures\specific\data\srp_gypsywagon_seat_co.paa",
+            "Survivalists_Building\structures\specific\data\srp_gypsywagon_planks_gypsy_co.paa",
             "Survivalists_Building\structures\specific\data\srp_gypsywagon_roof_co.paa",
             "Survivalists_Building\structures\specific\data\srp_gypsywagon_seat_co.paa",
             "Survivalists_Building\structures\specific\data\srp_gypsywagon_wheel_co.paa",
