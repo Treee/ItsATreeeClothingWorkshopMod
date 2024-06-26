@@ -40,9 +40,9 @@ modded class DeerIsleBase
             {
                 if (opalGem.IsEnergized())
                 {
-                TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(opalGem, "SRP_Mining_CutGem_AltarShard", player);
-                lambda.SetTransferParams(true, true, true, true, 1);
-                player.ServerReplaceItemInHandsWithNew(lambda);
+                    TurnItemIntoItemLambda lambda = new TurnItemIntoItemLambda(opalGem, "SRP_Mining_CutGem_AltarShard", player);
+                    lambda.SetTransferParams(true, true, true, true, 1);
+                    player.ServerReplaceItemInHandsWithNew(lambda);
                 }
             }
         }
