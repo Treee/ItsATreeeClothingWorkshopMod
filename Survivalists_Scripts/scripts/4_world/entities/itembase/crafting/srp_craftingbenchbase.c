@@ -158,10 +158,14 @@ class SRP_CraftingBench_Base extends ItemBase
                 {
                     // attached augments do not get damaged
                     if (attachment.IsAugmentAttachment())
+                    {
                         continue;
+                    }
                     // if the item is hp reduced and is not an augment attchment
                     if (requirement.ShouldReduceHP())
+                    {
                         attachment.AddHealth(requirement.GetRequiredQuantity());
+                    }
                     else
                     {
                         // players that brute force recipes will find things to be most expensive.
