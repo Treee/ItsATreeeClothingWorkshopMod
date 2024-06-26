@@ -1,6 +1,7 @@
 modded class Weapon_Base
 {
     protected const float MIN_GUN_JAM_CHANCE = 0.1;
+    protected const float CLEAN_OVERSHIELD_VALUE = 20;
     protected float m_MaintenanceBuff_GunJam = 1; // 50% reduced chance to jam natively
     protected bool m_HasMaintainedGun = false;
 
@@ -72,12 +73,18 @@ modded class Weapon_Base
     {
         if (!m_HasMaintainedGun)
             m_MaintenanceBuff_GunJam = Math.Max(MIN_GUN_JAM_CHANCE, newValue);
-
-        m_HasMaintainedGun = true;
     }
     float GetMaintenanceBuff_GunJam()
     {
         return m_MaintenanceBuff_GunJam;
+    }
+    void SetIsGunClean(bool isClean)
+    {
+        m_HasMaintainedGun = isClean;
+    }
+    bool IsGunClean()
+    {
+        return m_HasMaintainedGun;
     }
     //===================================== WEAPON SALVAGE
     void InitializeWeaponSalvageParts()

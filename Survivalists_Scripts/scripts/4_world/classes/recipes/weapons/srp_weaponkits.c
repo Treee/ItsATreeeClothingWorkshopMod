@@ -82,6 +82,7 @@ class SRP_Craft_CleanWeapon extends RecipeBase
             float currentBuff = weapon.GetMaintenanceBuff_GunJam();
             currentBuff -= Math.RandomFloatInclusive(0.1, 0.4);
             weapon.SetMaintenanceBuff_GunJam(currentBuff);
+            weapon.SetIsGunClean(true);
         }
 	}
 };
