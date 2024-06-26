@@ -16,8 +16,19 @@ class CfgPatches
 class cfgWeapons
 {
     class Rifle_Base;
+    class LauncherCore;
+
+    class Launcher_Base : LauncherCore
+    {
+        salvageParts[] +=
+        {
+            "TT_Grip_Wood",
+                "TT_Trigger_Simple",
+        };
+    };
     class M79_Base : Rifle_Base
     {
         chamberableFrom[] += {"Ammo_40mm_Flashbang"};
     };
+
 };

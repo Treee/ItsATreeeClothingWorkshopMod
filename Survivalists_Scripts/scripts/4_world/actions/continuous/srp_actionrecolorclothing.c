@@ -1,5 +1,5 @@
 class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
-{	
+{
   override void OnActionInfoUpdate( PlayerBase player, ActionTarget target, ItemBase item )
 	{
     // Print("on action info update");
@@ -38,13 +38,13 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
       if (target_clothing.IsContainer() && !target_clothing.IsInherited(PlateCarrierPouches))
         return false;
       if (target_clothing.HasDyableOptions())
-			  return true;	
+			  return true;
 		}
     return false;
 	}
 
   override void OnFinishProgressServer( ActionData action_data )
-	{	
+	{
     SRP_CraftingMaterial_Dye_Base dye;
 		if (action_data.m_MainItem && Class.CastTo(dye, action_data.m_MainItem))
 		{
@@ -64,7 +64,7 @@ class ActionSRPRecolorClothingOption extends ActionSRPVariantIdOption
         }
         // Print("newItemName: " + newItemName);
         ReplaceItemWithNewLambda_Dye lambda = new ReplaceItemWithNewLambda_Dye(target_clothing, newItemName);
-        MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, lambda);        
+        MiscGameplayFunctions.TurnItemIntoItemEx(action_data.m_Player, lambda);
         // dye.AddQuantity(-Math.RandomIntInclusive(50,100));
         dye.ReduceQuantityBySlotType(target_clothing.GetWearableSlotType());
       }

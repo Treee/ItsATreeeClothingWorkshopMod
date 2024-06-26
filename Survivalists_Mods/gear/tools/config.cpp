@@ -9,9 +9,9 @@ class CfgPatches
         {
             "DZ_Data",
             "DZ_Gear_Tools",
-      "DZ_Weapons_Melee_Blade", // hatchet
-      "DZ_Gear_Navigation",
-      "Survivalists_Mods_Gear_Crafting"
+            "DZ_Weapons_Melee_Blade", // hatchet
+            "DZ_Gear_Navigation",
+            "Survivalists_Mods_Gear_Crafting"
         };
     };
 };
@@ -161,10 +161,9 @@ class CfgVehicles
 
     class WeaponCleaningKit : Inventory_Base
     {
-        descriptionShort = "Useful tools for cleaning a weapon for peak performance. Well oiled mechanisms are proven to reduce the chance of jamming.";
+        descriptionShort = "Useful tools for cleaning a weapon or salvaged part. Well oiled mechanisms are proven to reduce the chance of jamming.";
         canBeSplit = 1;
         itemSize[] = { 2,2 };
-        repairKitType = -1;
     };
     class LeatherSewingKit : Inventory_Base
     {

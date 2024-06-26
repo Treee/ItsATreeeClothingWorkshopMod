@@ -3,7 +3,14 @@ modded class Weapon_Base
     protected const float MIN_GUN_JAM_CHANCE = 0.1;
     protected float m_MaintenanceBuff_GunJam = 1; // 50% reduced chance to jam natively
     protected bool m_HasMaintainedGun = false;
+
+    protected ref array<string> m_SalvageableParts;
     //========================================================== OVERRIDE
+    override void InitItemVariables()
+    {
+        super.InitItemVariables();
+        InitializeWeaponSalvageParts();
+    };
     override float GetChanceToJam()
     {
         return super.GetChanceToJam() * GetMaintenanceBuff_GunJam();
@@ -71,5 +78,45 @@ modded class Weapon_Base
     float GetMaintenanceBuff_GunJam()
     {
         return m_MaintenanceBuff_GunJam;
+    }
+    //===================================== WEAPON SALVAGE
+    void InitializeWeaponSalvageParts()
+    {
+        m_SalvageableParts = new array<string>;
+        if (ConfigIsExisting("salvageParts"))
+        {
+            ConfigGetTextArray("salvageParts", m_SalvageableParts);
+        }
+    }
+    TStringArray GetWeaponSalvageParts()
+    {
+        return m_SalvageableParts;
+    }
+    bool HasSalvageParts()
+    {
+        return m_SalvageableParts.Count() > 0;
+    }
+    string GetSalvageOption(int index)
+    {
+        if (HasSalvageParts() && m_SalvageableParts.IsValidIndex(index))
+        {
+            return m_SalvageableParts.Get(index);
+        }
+        return "";
+    }
+    int GetTotalSalvageParts()
+    {
+        return m_SalvageableParts.Count();
+    }
+    string GetSalvageDisplayNameFromIndex(int variandId)
+    {
+        string rawText = GetSalvageOption(variandId);
+        TStringArray parts = {};
+        rawText.Split("_", parts);
+        if (parts.Count() == 3)
+        {
+            return string.Format("%1 - %2", parts.Get(1), parts.Get(2));
+        }
+        return "";
     }
 };

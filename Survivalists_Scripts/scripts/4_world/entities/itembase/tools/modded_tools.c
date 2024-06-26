@@ -1,9 +1,9 @@
 modded class ToolBase
-{	
-  override bool IsKnifeTool()
-  {
-    return true;
-  }
+{
+    override bool IsKnifeTool()
+    {
+        return true;
+    }
 }
 modded class Hammer
 {
@@ -13,19 +13,20 @@ modded class Hammer
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
 		AddAction(SRP_ActionCraftOnWorkbench);
+		AddAction(SRP_ActionSalvageGun);
 	}
-  override bool IsMetalWorkbenchTool()
-  {
-    return true;
-  }
-  override bool IsAnvilWorkbenchTool()
-  {
-    return true;
-  }
-  override bool IsCarpentryWorkbenchTool()
-  {
-    return true;
-  }
+    override bool IsMetalWorkbenchTool()
+    {
+        return true;
+    }
+    override bool IsAnvilWorkbenchTool()
+    {
+        return true;
+    }
+    override bool IsCarpentryWorkbenchTool()
+    {
+        return true;
+    }
 }
 modded class WoodAxe
 {
@@ -34,18 +35,18 @@ modded class WoodAxe
 		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
-    AddAction(ActionSalvageCarWreck);
+        AddAction(ActionSalvageCarWreck);
 	}
 }
 modded class Shovel
 {
 	override void SetActions()
 	{
-		super.SetActions();		
+		super.SetActions();
 		AddAction(ActionBuildPart);
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
-    AddAction(SRP_ActionDigTarSands);
+        AddAction(SRP_ActionDigTarSands);
 	}
 }
 modded class SledgeHammer
@@ -54,15 +55,15 @@ modded class SledgeHammer
 	{
 		return true;
 	}
-	
+
 	override void SetActions()
 	{
-		super.SetActions();	
+		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
-    AddAction(ActionSalvageCarWreck);
-    // remove dat raiding ability
-    RemoveAction(ActionDismantlePart);
+        AddAction(ActionSalvageCarWreck);
+        // remove dat raiding ability
+        RemoveAction(ActionDismantlePart);
 	}
 }
 modded class Hatchet
@@ -101,7 +102,7 @@ modded class FirefighterAxe
 		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
-    AddAction(ActionSalvageCarWreck);
+        AddAction(ActionSalvageCarWreck);
 	}
 }
 modded class Crowbar
@@ -111,96 +112,99 @@ modded class Crowbar
 		super.SetActions();
 		AddAction(ActionAttach);
 		AddAction(ActionDetach);
-    AddAction(ActionSawPlanks);
+        AddAction(ActionSawPlanks);
 	}
 };
 modded class Lockpick
-{	
+{
 	override void SetActions()
 	{
 		super.SetActions();
-		
+
 		AddAction(ActionLockDisplayCase);
 		AddAction(ActionUnLockDisplayCase);
+        AddAction(SRP_ActionSalvageGun);
 	}
 };
 modded class Hacksaw
 {
 	override void SetActions()
 	{
-    super.SetActions();
-		
+        super.SetActions();
+
 		AddAction(ActionSalvageCarWreck);
-  }
+        AddAction(SRP_ActionSalvageGun);
+    }
 };
 modded class HandSaw
 {
-  override void SetActions()
+    override void SetActions()
 	{
-    super.SetActions();
-		
+        super.SetActions();
+
 		AddAction(ActionSalvageCarWreck);
-  }
+    }
 };
 modded class Pipe
 {
-  override bool IsSmeltable()
-  {
-    return true;
-  }
-  override TStringArray GetSmeltableOptions()
-  {
-    return {"SRP_Mining_RawOre_Iron"};
-  }
-  override int GetSmeltableYield()
-  {
-    return Math.RandomIntInclusive(0, 2);
-  }
+    override bool IsSmeltable()
+    {
+        return true;
+    }
+    override TStringArray GetSmeltableOptions()
+    {
+        return {"SRP_Mining_RawOre_Iron"};
+    }
+    override int GetSmeltableYield()
+    {
+        return Math.RandomIntInclusive(0, 2);
+    }
 };
 modded class PipeWrench
 {
-  override bool IsSmeltable()
-  {
-    return true;
-  }
-  override TStringArray GetSmeltableOptions()
-  {
-    return {"SRP_Mining_RawOre_Iron"};
-  }
-  override int GetSmeltableYield()
-  {
-    return Math.RandomIntInclusive(0, 2);
-  }
-  override int GetTrasformerRepairValue()
-  {
-    return Math.RandomIntInclusive(15,50);
-  }
-  override void SetActions()
-  {
-    super.SetActions();
-    AddAction(SRP_ActionRepairOilRigPump);    
-  }
+    override bool IsSmeltable()
+    {
+        return true;
+    }
+    override TStringArray GetSmeltableOptions()
+    {
+        return {"SRP_Mining_RawOre_Iron"};
+    }
+    override int GetSmeltableYield()
+    {
+        return Math.RandomIntInclusive(0, 2);
+    }
+    override int GetTrasformerRepairValue()
+    {
+        return Math.RandomIntInclusive(15,50);
+    }
+    override void SetActions()
+    {
+        super.SetActions();
+        AddAction(SRP_ActionRepairOilRigPump);
+        AddAction(SRP_ActionSalvageGun);
+    }
 };
 modded class MetalPlate
 {
-  override bool IsSmeltable()
-  {
-    return true;
-  }
-  override TStringArray GetSmeltableOptions()
-  {
-    return {"SRP_Mining_RawOre_Iron"};
-  }
-  override int GetSmeltableYield()
-  {
-    return Math.RandomIntInclusive(0, 3);
-  }
+    override bool IsSmeltable()
+    {
+        return true;
+    }
+    override TStringArray GetSmeltableOptions()
+    {
+        return {"SRP_Mining_RawOre_Iron"};
+    }
+    override int GetSmeltableYield()
+    {
+        return Math.RandomIntInclusive(0, 3);
+    }
 };
 modded class Sickle
 {
 	override void SetActions()
 	{
-		super.SetActions();		
+		super.SetActions();
 		AddAction(SRP_ActionHarvestCrops_All);
 	}
 };
@@ -209,38 +213,39 @@ modded class FarmingHoe
 	override void SetActions()
 	{
 		super.SetActions();
-		
+
 		AddAction(ActionSRPRakeFireplaceAshes);
 	}
 };
 modded class Pliers
-{	
-  override int GetTrasformerRepairValue()
-  {
-    return Math.RandomIntInclusive(10,40);
-  }
+{
+    override int GetTrasformerRepairValue()
+    {
+        return Math.RandomIntInclusive(10,40);
+    }
 	override void SetActions()
 	{
 		super.SetActions();
-		
+
 		AddAction(SRP_ActionCraftOnWorkbench);
-    AddAction(SRP_ActionRepairOilRigPump);
+        AddAction(SRP_ActionRepairOilRigPump);
+        AddAction(SRP_ActionSalvageGun);
 	}
-  override bool IsAmmoCraftingWorkbenchTool()
-  {
-    return true;
-  }
+    override bool IsAmmoCraftingWorkbenchTool()
+    {
+        return true;
+    }
 };
 modded class CanOpener
-{	
-  override bool IsKnifeTool()
-  {
-    return true;
-  }
+{
+    override bool IsKnifeTool()
+    {
+        return true;
+    }
 };
 modded class Rope
 {
-  override void SetActions()
+    override void SetActions()
 	{
 		super.SetActions();
 		RemoveAction(ActionRestrainSelf);
@@ -248,7 +253,7 @@ modded class Rope
 };
 modded class DuctTape
 {
-  override void SetActions()
+    override void SetActions()
 	{
 		super.SetActions();
 		RemoveAction(ActionRestrainSelf);
@@ -256,7 +261,7 @@ modded class DuctTape
 };
 modded class MetalWire
 {
-  override void SetActions()
+    override void SetActions()
 	{
 		super.SetActions();
 		RemoveAction(ActionRestrainSelf);
@@ -264,7 +269,7 @@ modded class MetalWire
 };
 modded class BarbedWire
 {
-  override void SetActions()
+    override void SetActions()
 	{
 		super.SetActions();
 		RemoveAction(ActionRestrainSelf);

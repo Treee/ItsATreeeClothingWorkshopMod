@@ -4,6 +4,8 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 
+        actions.Insert(SRP_ActionSalvageGun);
+
         actions.Insert(SRP_PressWaterFromPaper);
         actions.Insert(SRP_ActionEmptyPlantPulpIntoFrame);
         actions.Insert(SRP_ActionKnockOnDoor);

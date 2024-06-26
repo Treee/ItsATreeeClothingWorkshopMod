@@ -13,13 +13,6 @@ modded class PluginRecipesManager
         RegisterRecipe(new SRP_Recipe_CraftGunpowder_Simple);
         RegisterRecipe(new SRP_Recipe_CraftGunpowder_Explosives);
 
-        RegisterRecipe(new SRP_BreakDownPistolCore);
-        RegisterRecipe(new SRP_BreakDownRifleCoreLarge);
-        RegisterRecipe(new SRP_BreakDownRifleCoreMedium);
-
-        RegisterRecipe(new SRP_BreakDownPistolCore_Advanced);
-        RegisterRecipe(new SRP_BreakDownRifleCoreLarge_Advanced);
-        RegisterRecipe(new SRP_BreakDownRifleCoreMedium_Advanced);
         RegisterRecipe(new Craft_SRP_RepairSalvagedPart);
         RegisterRecipe(new Craft_SRPBeanBasher);
 
