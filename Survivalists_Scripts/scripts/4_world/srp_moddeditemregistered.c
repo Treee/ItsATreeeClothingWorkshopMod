@@ -96,6 +96,7 @@ modded class ModItemRegisterCallbacks
         pType.AddItemInHandsProfileIK("SRP_PoolBall_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/apple.anm");
 
         pType.AddItemInHandsProfileIK("SRP_WeaponRepairKit", "dz/anims/workspaces/player/player_main/player_main_1h.asi", pBehavior, "dz/anims/anm/player/ik/gear/cleaning_kit_wood.anm");
+		pType.AddItemInHandsProfileIK("SRP_Stethoscope_ColorBase", "dz/anims/workspaces/player/player_main/props/player_main_1h_rope.asi", pBehavior, "dz/anims/anm/player/ik/gear/Rope.anm");
 
     };
 

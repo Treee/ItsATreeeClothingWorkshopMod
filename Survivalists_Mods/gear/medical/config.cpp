@@ -488,6 +488,87 @@ class CfgVehicles
         };
     };
 
+
+
+    class SRP_Stethoscope_ColorBase : Inventory_Base
+    {
+        scope = 0;
+        displayName = "Stethoscope";
+        descriptionShort = "A useful tool for listening to a humans pulse.";
+        model = "Survivalists_Mods\gear\medical\srp_stethoscope.p3d";
+        rotationFlags = 17;
+        itemSize[] = { 1,3 };
+        weight = 280;
+        soundImpactType = "textile";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Mods\gear\medical\data\srp_stethoscope_co.paa" };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 200;
+                    healthLevels[] =
+                    {
+                        {1,{"Survivalists_Mods\gear\medical\data\srp_stethoscope_plastic.rvmat"}},
+                        {0.69999999,{"Survivalists_Mods\gear\medical\data\srp_stethoscope_plastic.rvmat"}},
+                        {0.5,{"Survivalists_Mods\gear\medical\data\srp_stethoscope_plastic_damage.rvmat"}},
+                        {0.30000001,{"Survivalists_Mods\gear\medical\data\srp_stethoscope_plastic_damage.rvmat"}},
+                        {0,{"Survivalists_Mods\gear\medical\data\srp_stethoscope_plastic_destruct.rvmat"}}
+                    };
+                };
+            };
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class rope_untie
+                {
+                    soundSet = "rope_untie_SoundSet";
+                    id = 202;
+                };
+                class rope_struggle
+                {
+                    soundSet = "rope_struggle_SoundSet";
+                    id = 203;
+                };
+                class pickUpItem_Light
+                {
+                    soundSet = "pickUpCourierBag_Light_SoundSet";
+                    id = 796;
+                };
+                class pickUpItem
+                {
+                    soundSet = "pickUpCourierBag_SoundSet";
+                    id = 797;
+                };
+                class rope_tieup
+                {
+                    soundSet = "rope_tieup_SoundSet";
+                    id = 13338;
+                };
+                class rope_tieup_end
+                {
+                    soundSet = "rope_tieup_end_SoundSet";
+                    id = 13339;
+                };
+                class rope_tieup_back
+                {
+                    soundSet = "rope_tieup_back_SoundSet";
+                    id = 13340;
+                };
+            };
+        };
+    };
+    class SRP_Stethoscope_Basic : SRP_Stethoscope_ColorBase
+    {
+        scope = 2;
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Mods\gear\medical\data\srp_stethoscope_co.paa" };
+    };
+
     // ---------------------------- CUSTOM MEDICINE
     class SRP_Dexamphetamine : PainkillerTablets  // BP_dexamphetamine
     {
