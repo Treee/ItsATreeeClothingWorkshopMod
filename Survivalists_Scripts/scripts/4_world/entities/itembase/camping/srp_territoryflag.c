@@ -6,7 +6,7 @@ class SRP_TerritoryFlag_Crafting extends TerritoryFlag
   {
     m_IsRaidable = IsAllowedToRaidArea();
   }
-  bool IsRaidable()
+  override bool IsRaidable()
   {
     return m_IsRaidable;
   }
@@ -15,15 +15,15 @@ class SRP_TerritoryFlag_Crafting extends TerritoryFlag
     int zellers = CalculateZellersRule();
     string day = MapIntToDay(zellers);
 
-    if (day == "Saturday" ||  day == "Sunday")    
-      return true;    
+    if (day == "Saturday" ||  day == "Sunday")
+      return true;
     return false;
   }
   protected int CalculateZellersRule()
   {
 		int year, month, day;
 		GetYearMonthDayUTC(year,month,day);
-    // F=k+ [(13*m-1)/5] +D+ [D/4] +[C/4]-2*C where    
+    // F=k+ [(13*m-1)/5] +D+ [D/4] +[C/4]-2*C where
     // k is  the day of the month.
     // m is the month number. (starts March = 1 Apr = 2 ... Jan = 11, Feb = 12)
     // D is the last two digits of the year.
@@ -53,7 +53,7 @@ class SRP_TerritoryFlag_Crafting extends TerritoryFlag
     int F = day + mPrime + dPrime + cPrime;
     // mod 7 days a week
     int modF = F % 7;
-    return modF;    
+    return modF;
   }
 
   protected string MapIntToDay(int day)

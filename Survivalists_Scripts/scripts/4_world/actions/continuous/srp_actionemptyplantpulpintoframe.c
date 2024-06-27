@@ -85,8 +85,10 @@ class SRP_ActionEmptyPlantPulpIntoFrame: ActionContinuousBase
             EntityAI newPaper;
             for(int i = 0; i < numLargeSheets; i++)
             {
-                newPaper = GetGame().CreateObjectEx("SRP_Paper_LargeSheetRaw", action_data.m_Target.GetObject().GetPosition(), ECE_PLACE_ON_SURFACE|ECE_SETUP|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY);
-                newPaper.SetWet(2);
+                if (Class.CastTo(newPaper, GetGame().CreateObjectEx("SRP_Paper_LargeSheetRaw", action_data.m_Target.GetObject().GetPosition(), ECE_PLACE_ON_SURFACE|ECE_SETUP|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY)))
+                {
+                    newPaper.SetWet(2);
+                }
             }
         }
 	}

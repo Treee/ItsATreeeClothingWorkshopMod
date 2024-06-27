@@ -79,7 +79,7 @@ modded class Weapon_Base
 
                 if (m_OvershieldToApply == max_overshield)
                 {
-                    AddHealth(max_overshield)
+                    AddHealth(max_overshield);
                     m_HasCleanGunAppliedOvershield = true;
                     m_OvershieldToApply = 0;
                 }
