@@ -1,9 +1,14 @@
 modded class Weapon_Base
 {
     protected const float MIN_GUN_JAM_CHANCE = 0.1;
-    protected const float CLEAN_OVERSHIELD_VALUE = 20;
+    protected const float MIN_OVERSHIELD = 0;
+    protected const float MAX_OVERSHIELD_VALUE = 1.3;
     protected float m_MaintenanceBuff_GunJam = 1; // 50% reduced chance to jam natively
     protected bool m_HasMaintainedGun = false;
+    protected bool m_HasCleanGunAppliedOvershield = false;
+    protected float m_LastBarrelHp = 0;
+    protected float m_OvershieldToApply = 0;
+    protected float MAX_OVERSHIELD_TOTAL = 0;
 
     protected ref array<string> m_SalvageableParts;
     //========================================================== OVERRIDE
@@ -55,6 +60,35 @@ modded class Weapon_Base
         }
         return false;
     }
+    override void EEFired(int muzzleType, int mode, string ammoType)
+	{
+        super.EEFired(muzzleType, mode, ammoType);
+		if ( GetGame().IsDedicatedServer() )
+		{
+            if (m_HasMaintainedGun && !m_HasCleanGunAppliedOvershield)
+            {
+                if (m_LastBarrelHp == 0)
+                    m_LastBarrelHp = GetHealth();
+
+                float overshield = m_LastBarrelHp - GetHealth();
+                float overshield_clamp = Math.Clamp(overshield, MIN_OVERSHIELD, MAX_OVERSHIELD_VALUE) * 0.75;
+                // only shield a percentage of the damage
+                float nextOvershield = m_OvershieldToApply + overshield_clamp;
+                float max_overshield = GetMaxHealth() * 0.05;
+                m_OvershieldToApply = Math.Clamp(nextOvershield, 0, max_overshield);
+
+                if (m_OvershieldToApply == max_overshield)
+                {
+                    AddHealth(max_overshield)
+                    m_HasCleanGunAppliedOvershield = true;
+                    m_OvershieldToApply = 0;
+                }
+
+                m_LastBarrelHp = GetHealth();
+            }
+		}
+	}
+
     //========================================================== CUSTOM OVERRIDE
     override bool IsSmeltable()
     {
@@ -66,7 +100,11 @@ modded class Weapon_Base
     }
     override int GetSmeltableYield()
     {
-        return Math.RandomIntInclusive(0, 3);
+        return Math.RandomIntInclusive(0, 4);
+    }
+    override bool IsGunClean()
+    {
+        return m_HasMaintainedGun;
     }
     //========================================================== CUSTOM
     void SetMaintenanceBuff_GunJam(float newValue)
@@ -81,10 +119,6 @@ modded class Weapon_Base
     void SetIsGunClean(bool isClean)
     {
         m_HasMaintainedGun = isClean;
-    }
-    bool IsGunClean()
-    {
-        return m_HasMaintainedGun;
     }
     //===================================== WEAPON SALVAGE
     void InitializeWeaponSalvageParts()
