@@ -1,0 +1,340 @@
+FrameWidgetClass FrameWidget {
+ ignorepointer 0
+ position 0 0.00081
+ size 1 1
+ halign center_ref
+ valign center_ref
+ priority 995
+ {
+  WrapSpacerWidgetClass play_panel_root {
+   visible 1
+   ignorepointer 1
+   position 88.046 102.677
+   size 193.437 451.332
+   halign left_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 3
+   Padding 0
+   Margin 0
+   content_halign center
+   content_valign bottom
+   {
+    WrapSpacerWidgetClass bottom {
+     ignorepointer 1
+     color 0 0 0 0
+     position -29.5025 0
+     size 0.80088 90
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style Empty
+     "no focus" 0
+     "next left" "news_main"
+     "next right" "news_main"
+     "next up" ""
+     "next down" "exit_button"
+     Padding 0
+     Margin 0
+     "Size To Content H" 1
+     "Size To Content V" 1
+     {
+      ButtonWidgetClass optionsbtn {
+       ignorepointer 0
+       color 0 0 0 0
+       position 0 0
+       size 0.91688 90
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        PanelWidgetClass optionsbtn_panel {
+         ignorepointer 1
+         color 0 0 0 0
+         position 0 0
+         size 1.00546 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+        }
+        TextWidgetClass optionsbtn_label {
+         clipchildren 0
+         ignorepointer 1
+         position 0 0
+         size 1.00058 0.65
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "SETTINGS"
+         font "gui/fonts/etelkatextpro"
+         "text halign" left
+         "text valign" center
+        }
+       }
+      }
+      ButtonWidgetClass exitbtn {
+       ignorepointer 0
+       color 0 0 0 0
+       position 0 0
+       size 0.40518 90
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        PanelWidgetClass exitbtn_panel {
+         ignorepointer 1
+         color 0 0 0 0
+         position 0 0
+         size 0.99634 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+        }
+        TextWidgetClass exitbtn_label {
+         clipchildren 0
+         ignorepointer 1
+         position 0 0
+         size 0.99642 0.65
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "#main_menu_exit"
+         font "gui/fonts/etelkatextpro"
+         "text halign" left
+         "text valign" center
+        }
+       }
+      }
+      ButtonWidgetClass restartbtn {
+       ignorepointer 0
+       color 0 0 0 0
+       position 0 0
+       size 0.8604 90
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        PanelWidgetClass restartbtn_panel {
+         ignorepointer 1
+         color 0 0 0 0
+         position -0.00284 0
+         size 1.00883 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+        }
+        TextWidgetClass restartbtn_label {
+         clipchildren 0
+         ignorepointer 1
+         position 0 0
+         size 1.00265 0.65
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "#main_menu_restart"
+         font "gui/fonts/etelkatextpro"
+         "text halign" left
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    WrapSpacerWidgetClass top {
+     ignorepointer 1
+     color 0 0 0 0
+     position 0 0
+     size 1 90
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style Empty
+     "no focus" 1
+     Padding 0
+     Margin 0
+     "Size To Content V" 1
+     {
+      ButtonWidgetClass continuebtn {
+       ignorepointer 0
+       color 0 0 0 0
+       position 0 0
+       size 1 90
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        PanelWidgetClass continuebtn_panel {
+         ignorepointer 1
+         color 0 0 0 0
+         position 0 0
+         size 0.99147 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+        }
+        TextWidgetClass continuebtn_label {
+         clipchildren 0
+         ignorepointer 1
+         size 0.99788 0.65
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "CONTINUE"
+         font "gui/fonts/etelkatextpro"
+         "text halign" left
+         "text valign" center
+        }
+       }
+      }
+      ButtonWidgetClass restartdeadbtn {
+       visible 1
+       ignorepointer 0
+       color 0 0 0 0
+       position 0 0
+       size 0.92843 90
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        PanelWidgetClass restartdeadbtn_panel {
+         visible 1
+         ignorepointer 1
+         color 0 0 0 0
+         position 0 0
+         size 0.99894 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+        }
+        TextWidgetClass restartdeadbtn_label {
+         clipchildren 0
+         ignorepointer 1
+         position 0 0.29131
+         size 1.00451 0.65647
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "#main_menu_respawn"
+         font "gui/fonts/etelkatextpro"
+         "text halign" left
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ImageWidgetClass dayz_logo {
+   visible 1
+   ignorepointer 1
+   position 100 78
+   size 380 380
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 2
+   image0 "Survivalists_MainMenu/gui/imagesets/logo.edds"
+   mode blend
+   "src alpha" 1
+   "stretch mode" stretch_w_h
+  }
+  WrapSpacerWidgetClass Licensing {
+   clipchildren 0
+   ignorepointer 1
+   position 0.05 0.062
+   size 0.45 30
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 1
+   priority 5
+   Padding 8
+   Margin 0
+   "Size To Content H" 1
+   "Size To Content V" 1
+   content_valign center
+   {
+    TextWidgetClass version {
+     visible 1
+     clipchildren 0
+     ignorepointer 1
+     position 80 60
+     size 1 0.5
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     priority 2
+     text "#main_menu_version"
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 0
+     "text valign" center
+    }
+    TextWidgetClass copyright {
+     visible 1
+     clipchildren 0
+     ignorepointer 1
+     position 80 40
+     size 1 0.5
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     priority 2
+     text "#copyright_disclamer"
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 0
+     "text valign" center
+    }
+   }
+  }
+  FrameWidgetClass hint_frame {
+   clipchildren 0
+   ignorepointer 1
+   position 100 173.75
+   size 400 460
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+ }
+}

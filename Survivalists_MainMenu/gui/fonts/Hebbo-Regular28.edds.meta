@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{FC3816066E5B4A50}Survivalists_MainMenu/gui/fonts/Hebbo-Regular28.edds"
+ Author "desktop-0p5pmv4"
+ ChangeDate -334745381
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "Hebbo-Regular28.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

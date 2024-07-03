@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{2DA91661F32BCF86}Survivalists_MainMenu/gui/fonts/Hebbo-Bold22.edds"
+ Author "desktop-0p5pmv4"
+ ChangeDate -601607973
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "Hebbo-Bold22.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

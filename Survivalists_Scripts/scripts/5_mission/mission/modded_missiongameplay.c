@@ -1,16 +1,16 @@
 modded class MissionGameplay
-{  	
-  override void OnUpdate(float timeslice) 
+{
+  override void OnUpdate(float timeslice)
   {
     super.OnUpdate(timeslice);
 
     Input input = GetGame().GetInput();
     PlayerBase missionPlayer;
-    if ( input.LocalPress("UAOpenVPPMap", false) ) 
+    if ( input.LocalPress("UAOpenVPPMap", false) )
     {
-      if (instance != null) 
+      if (instance != null)
       {
-        if (instance.IsMenuOpen()) 
+        if (instance.IsMenuOpen())
         {
           if (Class.CastTo(missionPlayer, GetGame().GetPlayer()))
           {
@@ -26,7 +26,7 @@ modded class MissionGameplay
         }
       }
     }
-    else if ( input.LocalPress("UAToggleVPPMap3DMarkers", false) ) 
+    else if ( input.LocalPress("UAToggleVPPMap3DMarkers", false) )
     {
       if (!g_Game.IsKeyboardBusy())
       {

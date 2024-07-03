@@ -1,6 +1,6 @@
 modded class IngameHud
 {
-  protected Widget m_sleepPanelWidget;  
+  protected Widget m_sleepPanelWidget;
 
   private Widget m_CompassHeadingRootWidget;
   private TextWidget m_CompassHeadingText;
@@ -8,7 +8,7 @@ modded class IngameHud
   private ImageWidget m_CompassImageWidget;
   private int m_CompassUIState = 0; //0,1,2: hidden,sundial,heading
   protected float debouncer = 0.0;
-  void ~IngameHud() 
+  void ~IngameHud()
   {
     if(m_sleepPanelWidget)
 		{
@@ -83,7 +83,7 @@ modded class IngameHud
     if (g_Game.GetSRPProfileVal(SRP_EDayZProfilesOptions.SHOW_UISTAT_COLOR))
       super.DisplayTendencyNormal(key, tendency, status);
     else
-      DisplaySRPTendencyColors(key, tendency, status);   
+      DisplaySRPTendencyColors(key, tendency, status);
   }
   override void RefreshHudVisibility()
   {
@@ -95,7 +95,7 @@ modded class IngameHud
   }
   override void Update( float timeslice )
 	{
-		super.Update( timeslice );		
+		super.Update( timeslice );
 		if( debouncer > 0.15 && GetGame() && GetGame().GetInput() && GetGame().GetInput().LocalPress("UACompassToggle", false) )
 		{
 			CompassToggleHeading();
@@ -118,14 +118,14 @@ modded class IngameHud
     tendency = Math.AbsInt( tendency );
 
     for ( int x = 1; x < 4; x++ )
-    { 
+    {
       Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("%1ArrowUp%2",m_StatesWidgetNames.Get( key ), x) ) );
       if( w )
         w.Show( false );
       Class.CastTo(w,  m_sleepPanelWidget.FindAnyWidget( string.Format("%1ArrowDown%2",m_StatesWidgetNames.Get( key ), x) ) );
       if( w )
         w.Show( false );
-    }      
+    }
     if( tendency > 0 )
     {
       string widget_name = m_StatesWidgetNames.Get( key ) + arrow_name + Math.Clamp( tendency, 1, 3 );
@@ -151,12 +151,12 @@ modded class IngameHud
         DisplayTendencyThirst(key, tendency, status);
       break;
       case SRP_NTFKEY_TIREDNESS:
-        DisplayTendencySleep(key, tendency, status); 
+        DisplayTendencySleep(key, tendency, status);
       break;
       default:
         DisplayTendencyDefault(key, tendency, status);
       break;
-    }    
+    }
   }
 
 	void DisplayTendencySleep( int key, int tendency, int status )
@@ -167,7 +167,7 @@ modded class IngameHud
     {
       w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
       float alpha = w.GetAlpha();
-      
+
       switch( status )
       {
         case 3:
@@ -189,18 +189,18 @@ modded class IngameHud
           m_TendencyStatusCritical.Remove( w );				//remove from blinking group
           break;
       }
-    }	
+    }
 	}
   void DisplayTendencyHealth( int key, int tendency, int status )
 	{
 		ImageWidget w;
 		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
-		
+
 		if( w )
 		{
 			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
 			float alpha = w.GetAlpha();
-			
+
 			switch( status )
 			{
 				case 3:
@@ -222,18 +222,18 @@ modded class IngameHud
 					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
 					break;
 			}
-		}	
+		}
 	}
   void DisplayTendencyBlood( int key, int tendency, int status )
 	{
 		ImageWidget w;
 		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
-		
+
 		if( w )
 		{
 			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
 			float alpha = w.GetAlpha();
-			
+
 			switch( status )
 			{
 				case 3:
@@ -255,18 +255,18 @@ modded class IngameHud
 					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
 					break;
 			}
-		}	
+		}
 	}
   void DisplayTendencyHunger( int key, int tendency, int status )
 	{
 		ImageWidget w;
 		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
-		
+
 		if( w )
 		{
 			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
 			float alpha = w.GetAlpha();
-			
+
 			switch( status )
 			{
 				case 3:
@@ -288,18 +288,18 @@ modded class IngameHud
 					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
 					break;
 			}
-		}	
+		}
 	}
   void DisplayTendencyThirst( int key, int tendency, int status )
 	{
 		ImageWidget w;
 		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
-		
+
 		if( w )
 		{
 			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
 			float alpha = w.GetAlpha();
-			
+
 			switch( status )
 			{
 				case 3:
@@ -321,18 +321,18 @@ modded class IngameHud
 					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
 					break;
 			}
-		}	
+		}
 	}
   void DisplayTendencyDefault( int key, int tendency, int status )
 	{
 		ImageWidget w;
 		Class.CastTo(w,  m_Notifiers.FindAnyWidget( String( "Icon" + m_StatesWidgetNames.Get( key ) ) ) );
-		
+
 		if( w )
 		{
 			w.SetImage( Math.Clamp( status - 1, 0, 4 ) );
 			float alpha = w.GetAlpha();
-			
+
 			switch( status )
 			{
 				case 3:
@@ -354,13 +354,13 @@ modded class IngameHud
 					m_TendencyStatusCritical.Remove( w );				//remove from blinking group
 					break;
 			}
-		}	
+		}
 	}
 
 //========================== COMPASS
-  void CompassUpdate() 
+  void CompassUpdate()
 	{
-		if(HasCompass()) 
+		if(HasCompass())
 		{
       float angle = CompassGetAngle();
       SetCompassPos(angle);
@@ -371,31 +371,31 @@ modded class IngameHud
         break;
         case 1: // sun dial UI
           m_CompassFrameWidget.Show(true);
-          m_CompassHeadingText.Show(false);      
+          m_CompassHeadingText.Show(false);
           m_CompassHeadingText.SetText(CompassGetHeading(angle));
           m_CompassHeadingRootWidget.Update();
           m_CompassHeadingRootWidget.Show(true);
         break;
         case 2: // heading only
           m_CompassFrameWidget.Show(false);
-          m_CompassHeadingText.Show(true);      
+          m_CompassHeadingText.Show(true);
           m_CompassHeadingText.SetText(CompassGetHeading(angle));
           m_CompassHeadingRootWidget.Update();
           m_CompassHeadingRootWidget.Show(true);
-        break;        
+        break;
       }
-    } 
-    else 
+    }
+    else
     {
       m_CompassHeadingRootWidget.Show(false);
 		}
   }
-  string CompassGetHeading(float angle) 
+  string CompassGetHeading(float angle)
 	{
     float rounded = Math.Round(5 * Math.Round(angle / 5.0));
     return rounded.ToString();
   }
-  void SetCompassPos(float angle) 
+  void SetCompassPos(float angle)
 	{
     float width, height, x, y;
     m_CompassImageWidget.GetPos(x, y);
@@ -403,7 +403,7 @@ modded class IngameHud
 
     float center_offset = width / -2.0 + 0.5;
 
-    if(angle > 180) 
+    if(angle > 180)
 		{
       angle = angle - 360;
     }
@@ -411,13 +411,13 @@ modded class IngameHud
 
     m_CompassImageWidget.SetPos(offset, y);
   }
-  float CompassGetAngle() 
+  float CompassGetAngle()
 	{
     vector direction = GetGame().GetCurrentCameraDirection();
     float angle = direction.VectorToAngles()[0];
     return angle;
   }
-  void CompassToggleHeading() 
+  void CompassToggleHeading()
 	{
 		if(HasCompass())
 		{
@@ -425,7 +425,7 @@ modded class IngameHud
 		}
 	}
   void IncrementCompassUIState()
-  {    
+  {
     m_CompassUIState = (m_CompassUIState + 1) % 3;
   }
   bool HasCompass()

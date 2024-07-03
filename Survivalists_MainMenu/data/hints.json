@@ -1,0 +1,212 @@
+[
+  {
+    "m_Headline": "28 Days Later...",
+    "m_ImagePath": "",
+    "m_Description": "A flag provides 7 full days of lifetime refreshers. Items placed in the world last 20 days without a flag. 28 days total for a base to fully decay."
+  },
+  {
+    "m_Headline": "Immsersive Oopsie!",
+    "m_ImagePath": "",
+    "m_Description": "Most items placed using Immersive Placing do not last between restarts; be careful."
+  },
+  {
+    "m_Headline": "The Rules",
+    "m_ImagePath": "",
+    "m_Description": "The rules are updated frequently. It is a good practice to re-read them occasionaly."
+  },
+  {
+    "m_Headline": "Golden Rule",
+    "m_ImagePath": "",
+    "m_Description": "Treat others how you would like to be treated."
+  },
+  {
+    "m_Headline": "It's A Trap!",
+    "m_ImagePath": "",
+    "m_Description": "Some shipping containers may be booby trapped. Take care when opening."
+  },
+  {
+    "m_Headline": "Treasure Hunt",
+    "m_ImagePath": "",
+    "m_Description": "No they are not bugged. Yes the coordinates are correct. Yes treasure can be under a tree or rock...where else would you hide it?"
+  },
+  {
+    "m_Headline": "Company Reps",
+    "m_ImagePath": "",
+    "m_Description": "The companies have chosen their representatives on the island with care. Speak with your local company rep to learn more."
+  },
+  {
+    "m_Headline": "Factions",
+    "m_ImagePath": "",
+    "m_Description": "Any group of five survivors can form a faction and request branded armbands. Will you survive long enough to use them?"
+  },
+  {
+    "m_Headline": "Value Your Character Life",
+    "m_ImagePath": "",
+    "m_Description": "Value your characters life in game. Show fear when it makes sense. Stand your ground when you feel your principles are worth more than your life. Take action against evil."
+  },
+  {
+    "m_Headline": "The Professional",
+    "m_ImagePath": "",
+    "m_Description": "Crafting complex items requires the aid of a professional. Seek one out in character or test your skill on a public workbench."
+  },
+  {
+    "m_Headline": "Overhaul",
+    "m_ImagePath": "",
+    "m_Description": "The Survivalists has been in existence over 4 years. As such, many parts of the game are customized to suit our unique theme. Immerse yourself into the world!"
+  },
+  {
+    "m_Headline": "Monetary Support",
+    "m_ImagePath": "",
+    "m_Description": "Want to support the server? We have many levels of monetary support! Regardless, just playing on the server is enough for us! Thank you."
+  },
+  {
+    "m_Headline": "Staff Are Your Friends",
+    "m_ImagePath": "",
+    "m_Description": "Feel a rule has been broken? Have a random question about the game but don't know who to ask? Raise a ticket and a staff member will help to the best of their ability."
+  },
+  {
+    "m_Headline": "Community Representatives",
+    "m_ImagePath": "",
+    "m_Description": "Community Representatives exist to hear your feedback and complaints with no judgement. They have direct lines of communication to people that can hear your message and make changes if necessary. Reach out to them if you do not feel comfortable raising a ticket to staff."
+  },
+  {
+    "m_Headline": "#str_hint_patchyourselfup0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_patchyourselfup1"
+  },
+  {
+    "m_Headline": "#str_hint_freshfood0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_freshfood1"
+  },
+  {
+    "m_Headline": "#str_hint_gunjam0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_gunjam1"
+  },
+  {
+    "m_Headline": "#str_hint_badblood0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_badblood1"
+  },
+  {
+    "m_Headline": "#str_hint_infectedslayer0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_infectedslayer1"
+  },
+  {
+    "m_Headline": "#str_hint_hope0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_hope1"
+  },
+  {
+    "m_Headline": "#str_hint_handyman0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_handyman1"
+  },
+  {
+    "m_Headline": "#str_hint_navigator0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_navigator1"
+  },
+  {
+    "m_Headline": "#str_hint_beans0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_beans1"
+  },
+  {
+    "m_Headline": "#str_hint_weather0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_weather1"
+  },
+  {
+    "m_Headline": "#str_hint_nutrition0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_nutrition1"
+  },
+  {
+    "m_Headline": "#str_hint_nighttime0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_nighttime1"
+  },
+  {
+    "m_Headline": "#str_hint_watchyourfeet0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_watchyourfeet1"
+  },
+  {
+    "m_Headline": "#str_hint_ragsoflife0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_ragsoflife1"
+  },
+  {
+    "m_Headline": "#str_hint_maskon0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_maskon1"
+  },
+  {
+    "m_Headline": "#str_hint_taintedsource0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_taintedsource1"
+  },
+  {
+    "m_Headline": "#str_hint_keepitclean0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_keepitclean1"
+  },
+  {
+    "m_Headline": "#str_hint_warmandcozy0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_warmandcozy1"
+  },
+  {
+    "m_Headline": "#str_hint_earlybird0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_earlybird1"
+  },
+  {
+    "m_Headline": "#str_hint_deadlymist0",
+    "m_ImagePath": "",
+    "m_Description": "While the contaminated areas may hide curious features, going in insufficiently prepared will result in a quick death."
+  },
+  {
+    "m_Headline": "#str_hint_sharpshooter0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_sharpshooter1"
+  },
+  {
+    "m_Headline": "#str_hint_thoroughcheckup0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_thoroughcheckup1"
+  },
+  {
+    "m_Headline": "#str_hint_stabbedintheback0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_stabbedintheback1"
+  },
+  {
+    "m_Headline": "#str_hint_loadingfirearms0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_loadingfirearms1"
+  },
+  {
+    "m_Headline": "#str_hint_planningahead0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_planningahead1"
+  },
+  {
+    "m_Headline": "#str_hint_wordsasaweapon0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_wordsasaweapon1"
+  },
+  {
+    "m_Headline": "#str_hint_quickpockets0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_quickpockets1"
+  },
+  {
+    "m_Headline": "#str_hint_bequietorloud0",
+    "m_ImagePath": "",
+    "m_Description": "#str_hint_bequietorloud1"
+  }
+]

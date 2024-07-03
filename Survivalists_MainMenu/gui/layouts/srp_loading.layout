@@ -1,0 +1,163 @@
+FrameWidgetClass LoadingFrame {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 1000
+ {
+  PanelWidgetClass PanelWidget1 {
+   clipchildren 0
+   color 0 0 0 1
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style rover_sim_colorable
+   {
+    TextWidgetClass TextWidget {
+     visible 0
+     position 0 0.05
+     size 0.7438 0.06
+     halign center_ref
+     valign bottom_ref
+     text "#layout_loading_loadingtext"
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    ImageWidgetClass ImageBackground {
+     visible 1
+     position 0 0
+     size 0.16 0.09
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     fixaspect outside
+     image0 ""
+     imageTexture "{B057A604B32C5D2D}Survivalists_MainMenu/gui/imagesets/loadingscreen/srp_loadingscreen0.edds"
+     mode opaque
+     "src alpha" 0
+     "stretch mode" stretch_w_h
+     Mask "{D24B0230E0E111DA}Survivalists_MainMenu/gui/imagesets/srp_loadingscreen_mask.paa"
+     "Transition width" 1
+     Progress 0
+    }
+    TextWidgetClass StatusText {
+     position 0 0.024
+     size 0.7438 0.03
+     halign center_ref
+     valign bottom_ref
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass ProgressText {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 0 200
+     size 100 30
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "100%"
+     font "gui/fonts/etelkatextpro"
+     "text halign" center
+    }
+    PanelWidgetClass BottomPanel {
+     ignorepointer 1
+     color 0 0 0 0.549
+     position 0 0.00196
+     size 1 0.198
+     halign center_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     {
+      ProgressBarWidgetClass LoadingBar {
+       ignorepointer 1
+       position -0.0004 0
+       size 0.99731 3.4215
+       halign center_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 1
+       style Loading
+       current 45
+      }
+      TextWidgetClass HintTestLongText {
+       visible 0
+       ignorepointer 1
+       position 0 0.47285
+       size 0.8 0.4
+       halign center_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       text "Bad blood: When giving your friend a blood transfusion, be sure to provide him with a compatible blood type, else he will risk a hemolytic reaction."
+       font "gui/fonts/Metron"
+       "exact text" 0
+       text_proportion 0.3
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass HintTestShortText {
+       visible 0
+       ignorepointer 1
+       position 0 0.33574
+       size 0.8 0.4
+       halign center_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       text "Go inland: The inland holds better loot than the coastal villages."
+       font "gui/fonts/Metron"
+       "exact text" 0
+       text_proportion 0.3
+       "text halign" center
+       "text valign" center
+      }
+      FrameWidgetClass hint_frame {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 0 0.18194
+       size 0.8 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+      }
+     }
+    }
+   }
+  }
+ }
+}
