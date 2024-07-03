@@ -9,7 +9,7 @@ modded class Cooking
             {
                 plantMaterial.DeleteSafe();
                 // cookingEquip.GetInventory().CreateInInventory("SRP_PlantPulp");
-                GetGame().CreateObjectEx("SRP_PlantPulp", cookingEquip.GetPosition(), ECE_PLACE_ON_SURFACE|ECE_SETUP|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY);
+                GetGame().CreateObjectEx("SRP_PlantPulp", cookingEquip.GetPosition(), ECE_PLACE_ON_SURFACE|ECE_SETUP|ECE_KEEPHEIGHT|ECE_NOLIFETIME|ECE_DYNAMIC_PERSISTENCY);
             }
         }
 
