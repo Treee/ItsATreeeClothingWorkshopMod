@@ -1,4 +1,4 @@
-class DynamicMusicPlayerRegistrySurvivalists : DynamicMusicPlayerRegistry
+class DynamicMusicPlayerRegistrySurvivalists extends DynamicMusicPlayerRegistry
 {
 	void DynamicMusicPlayerRegistrySurvivalists()
 	{
@@ -9,10 +9,13 @@ class DynamicMusicPlayerRegistrySurvivalists : DynamicMusicPlayerRegistry
 	{
 		m_TracksMenu = new array<ref DynamicMusicTrackData>();
 
-		RegisterTrackMenu("Survivalists_MainMenu_1_SoundSet", true);
-		RegisterTrackMenu("Music_Menu_SoundSet");
-		RegisterTrackMenu("Music_Menu_2_SoundSet");
-		RegisterTrackMenu("Music_Menu_3_SoundSet");
+		RegisterTrackMenu("Survivalists_MainMenu_1_SoundSet");
+		RegisterTrackMenu("Survivalists_MainMenu_2_SoundSet");
+		RegisterTrackMenu("Survivalists_MainMenu_3_SoundSet");
+		RegisterTrackMenu("Survivalists_MainMenu_4_SoundSet");
+		RegisterTrackMenu("Survivalists_MainMenu_5_SoundSet");
+		RegisterTrackMenu("Survivalists_MainMenu_6_SoundSet");
+		RegisterTrackMenu("Survivalists_MainMenu_7_SoundSet");
 	}
 
 	override protected void RegisterTracksLocationStatic()
@@ -20,5 +23,4 @@ class DynamicMusicPlayerRegistrySurvivalists : DynamicMusicPlayerRegistry
 		super.RegisterTracksLocationStatic();
         // eventually add points of interest to this
 	}
-
 }

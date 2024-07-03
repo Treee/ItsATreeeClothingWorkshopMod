@@ -173,6 +173,48 @@ class CfgSoundSets
         frequencyFactor = 1;
         spatial = 0;
     };
+    class Survivalists_MainMenu_2_SoundSet
+    {
+        soundShaders[] = { "Survivalists_MainMenu_2_SoundShader" };
+        volumeFactor = 1;
+        frequencyFactor = 1;
+        spatial = 0;
+    };
+    class Survivalists_MainMenu_3_SoundSet
+    {
+        soundShaders[] = { "Survivalists_MainMenu_3_SoundShader" };
+        volumeFactor = 1;
+        frequencyFactor = 1;
+        spatial = 0;
+    };
+    class Survivalists_MainMenu_4_SoundSet
+    {
+        soundShaders[] = { "Survivalists_MainMenu_4_SoundShader" };
+        volumeFactor = 1;
+        frequencyFactor = 1;
+        spatial = 0;
+    };
+    class Survivalists_MainMenu_5_SoundSet
+    {
+        soundShaders[] = { "Survivalists_MainMenu_5_SoundShader" };
+        volumeFactor = 1;
+        frequencyFactor = 1;
+        spatial = 0;
+    };
+    class Survivalists_MainMenu_6_SoundSet
+    {
+        soundShaders[] = { "Survivalists_MainMenu_6_SoundShader" };
+        volumeFactor = 1;
+        frequencyFactor = 1;
+        spatial = 0;
+    };
+    class Survivalists_MainMenu_7_SoundSet
+    {
+        soundShaders[] = { "Survivalists_MainMenu_7_SoundShader" };
+        volumeFactor = 1;
+        frequencyFactor = 1;
+        spatial = 0;
+    };
 };
 class CfgSoundShaders
 {
@@ -180,5 +222,35 @@ class CfgSoundShaders
     {
         samples[] = { {"Survivalists_MainMenu\sounds\mainmenu_1.ogg",1} };
         volume = 0.5;
+    };
+    class Survivalists_MainMenu_2_SoundShader
+    {
+        samples[] = { {"Survivalists_MainMenu\sounds\mainmenu_2.ogg",1} };
+        volume = 1;
+    };
+    class Survivalists_MainMenu_3_SoundShader
+    {
+        samples[] = { {"Survivalists_MainMenu\sounds\mainmenu_3.ogg",1} };
+        volume = 1;
+    };
+    class Survivalists_MainMenu_4_SoundShader
+    {
+        samples[] = { {"Survivalists_MainMenu\sounds\mainmenu_4.ogg",1} };
+        volume = 1;
+    };
+    class Survivalists_MainMenu_5_SoundShader
+    {
+        samples[] = { {"Survivalists_MainMenu\sounds\mainmenu_5.ogg",1} };
+        volume = 1;
+    };
+    class Survivalists_MainMenu_6_SoundShader
+    {
+        samples[] = { {"Survivalists_MainMenu\sounds\mainmenu_6.ogg",1} };
+        volume = 1;
+    };
+    class Survivalists_MainMenu_7_SoundShader
+    {
+        samples[] = { {"Survivalists_MainMenu\sounds\mainmenu_7.ogg",1} };
+        volume = 1;
     };
 };
