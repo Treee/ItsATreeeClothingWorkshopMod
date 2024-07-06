@@ -121,6 +121,7 @@ class CfgVehicles
 
     class Pickaxe : Inventory_Base
     {
+        descriptionShort = "Useful for construction along with breaking larger rocks into smaller rocks. You remember from grade school that not all rocks are the same and you need 'building grade' stone from a nearby quarry.";
         inventorySlot[] +=
         {
             "SRP_LargeTool1",
