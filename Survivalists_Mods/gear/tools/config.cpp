@@ -129,6 +129,15 @@ class CfgVehicles
                 "SRP_LargeTool3",
         };
     };
+    class WoodAxe : Inventory_Base
+    {
+        inventorySlot[] +=
+        {
+            "SRP_LargeTool1",
+                "SRP_LargeTool2",
+                "SRP_LargeTool3",
+        };
+    };
 
     class Crowbar : Inventory_Base
     {
