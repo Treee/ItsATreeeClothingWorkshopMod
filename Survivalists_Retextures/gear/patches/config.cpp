@@ -23,14 +23,240 @@ class CfgVehicles
     class SRP_Armband_Duskar : SRP_Armband_Base
     {
         scope = 2;
+        color = "Duskar";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_duskar_co.paa" };
     };
     class SRP_Armband_Cannibal : SRP_Armband_Base
     {
         scope = 2;
+        color = "Cannibal";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_cannibalface_co.paa" };
+    };
+    class SRP_Armband_Cannibal1 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Cannibal1";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_humanskin1_co.paa" };
+    };
+    class SRP_Armband_StagWorker : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "StagWorker";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_stagworker_co.paa" };
+    };
+    class SRP_Armband_Rank1 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Rank1";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_rank1_co.paa" };
+    };
+    class SRP_Armband_Rank2 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Rank2";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_rank2_co.paa" };
+    };
+    class SRP_Armband_Rank3 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Rank3";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_rank3_co.paa" };
+    };
+    class SRP_Armband_Rank4 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Rank4";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_rank4_co.paa" };
+    };
+    class SRP_Armband_Rank5 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Rank5";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_rank5_co.paa" };
+    };
+    class SRP_Armband_Rank6 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Rank6";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_rank6_co.paa" };
+    };
+    class SRP_Armband_Rank7 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Rank7";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_rank7_co.paa" };
+    };
+    class SRP_Armband_Ensignia1 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Ensignia1";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_ensignia1_co.paa" };
+    };
+    class SRP_Armband_Ensignia2 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Ensignia2";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_ensignia2_co.paa" };
+    };
+    class SRP_Armband_Ensignia3 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Ensignia3";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_ensignia3_co.paa" };
+    };
+    class SRP_Armband_Ensignia4 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Ensignia4";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_ensignia4_co.paa" };
+    };
+    class SRP_Armband_Ensignia5 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Ensignia5";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_ensignia5_co.paa" };
+    };
+    class SRP_Armband_Ensignia6 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Ensignia6";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_ensignia6_co.paa" };
+    };
+    class SRP_Armband_Hippy1 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Hippy1";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_hippy1_co.paa" };
+    };
+    class SRP_Armband_Hippy2 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Hippy2";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_hippy2_co.paa" };
+    };
+    class SRP_Armband_Hippy3 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Hippy3";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_hippy3_co.paa" };
+    };
+    class SRP_Armband_Hippy4 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Hippy4";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_hippy4_co.paa" };
+    };
+    class SRP_Armband_Hippy5 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Hippy5";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_hippy5_co.paa" };
+    };
+    class SRP_Armband_Hippy6 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Hippy6";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_hippy6_co.paa" };
+    };
+    class SRP_Armband_Professional1 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Professional1";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_profession1_co.paa" };
+    };
+    class SRP_Armband_Professional2 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Professional2";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_profession2_co.paa" };
+    };
+    class SRP_Armband_NoCyborgs : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "NoCyborgs";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_nocyborgs_co.paa" };
+    };
+    class SRP_Armband_NoGreens : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "NoGreens";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_nogreens_co.paa" };
+    };
+    class SRP_Armband_NoGreens1 : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "NoGreens1";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_nogreens1_co.paa" };
+    };
+    class SRP_Armband_NoGreensDark : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "NoGreensDark";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_nogreensdark_co.paa" };
+    };
+    class SRP_Armband_Skull : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "Skull";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_nolife_co.paa" };
+    };
+    class SRP_Armband_SkullDark : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "SkullDark";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_nolifedark_co.paa" };
+    };
+    class SRP_Armband_NoRome : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "NoRome";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_norome_co.paa" };
+    };
+    class SRP_Armband_NoStag : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "NoStag";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_nostag_co.paa" };
+    };
+    class SRP_Armband_NoTa : SRP_Armband_Base
+    {
+        scope = 2;
+        color = "NoTa";
+        hiddenSelections[] = { "zbytek" };
+        hiddenSelectionsTextures[] = { "Survivalists_Retextures\gear\patches\data\armband\srp_armband_nota_co.paa" };
     };
 
     class SRP_PatchFlag_DarkQueen : SRP_PatchFlag_ColorBase

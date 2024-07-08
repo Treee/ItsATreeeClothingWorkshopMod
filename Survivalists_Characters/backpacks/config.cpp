@@ -155,6 +155,10 @@ class CfgVehicles
           "SURPAT",
           "MARPATWinter",
           "EMP6",
+          "Survivor1",
+          "Survivor2",
+          "Survivor3",
+          "Survivor4"
         };
     };
     class SmershBag : Clothing

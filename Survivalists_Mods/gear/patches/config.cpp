@@ -320,19 +320,19 @@ class CfgVehicles
         weight = 10;
         inventorySlot[] =
         {
-          "Armband",
-          "patch_01",
-          "patch_02",
-          "patch_03",
-          "patch_04",
-          "SRP_Patch",
-          "SRP_PatchMirror",
-          "SRP_DisplayHook_PatchArmband",
+            "Armband",
+            "patch_01",
+            "patch_02",
+            "patch_03",
+            "patch_04",
+            "SRP_Patch",
+            "SRP_PatchMirror",
+            "SRP_DisplayHook_PatchArmband",
         };
         hiddenSelections[] =
         {
-          "zbytek",
-          "armband"
+            "zbytek",
+            "armband"
         };
         hiddenSelectionsTextures[] =
         {
@@ -341,8 +341,8 @@ class CfgVehicles
         };
         hiddenSelectionsMaterials[] =
         {
-          "Survivalists_Mods\gear\patches\data\srp_patchflag.rvmat",
-                "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"
+            "Survivalists_Mods\gear\patches\data\srp_patchflag.rvmat",
+            "Survivalists_Mods\gear\patches\data\srp_patcharmbandflag.rvmat"
         };
         class DamageSystem
         {
@@ -394,7 +394,7 @@ class CfgVehicles
         attachments[] =
         {
             "SRP_SewingThread1",
-      "SRP_SewingThread2"
+            "SRP_SewingThread2"
         };
     };
 
@@ -407,7 +407,7 @@ class CfgVehicles
         attachments[] =
         {
             "SRP_SewingThread1",
-      "SRP_SewingThread2"
+            "SRP_SewingThread2"
         };
     };
 
@@ -420,7 +420,7 @@ class CfgVehicles
         attachments[] =
         {
             "SRP_SewingThread1",
-      "SRP_SewingThread2"
+            "SRP_SewingThread2"
         };
     };
 
@@ -433,7 +433,7 @@ class CfgVehicles
         attachments[] =
         {
             "SRP_SewingThread1",
-      "SRP_SewingThread2"
+            "SRP_SewingThread2"
         };
     };
 
@@ -448,8 +448,8 @@ class CfgVehicles
         // rotationFlags=16;
         inventorySlot[] =
         {
-          "Armband",
-          "SRP_DisplayHook_LeatherArmband",
+            "Armband",
+            "SRP_DisplayHook_LeatherArmband",
         };
         simulation = "clothing";
         vehicleClass = "Clothing";
@@ -458,6 +458,43 @@ class CfgVehicles
         itemsCargoSize[] = { 3,2 };
         absorbency = 0;
         heatIsolation = 0.80;
+        rootClassName = "SRP_Armband";
+        colorVariants[] = {
+            "Duskar",
+            "Cannibal",
+            "Cannibal1",
+            "StagWorker",
+            "Hippy1",
+            "Hippy2",
+            "Hippy3",
+            "Hippy4",
+            "Hippy5",
+            "Hippy6",
+            "Rank1",
+            "Rank2",
+            "Rank3",
+            "Rank4",
+            "Rank5",
+            "Rank6",
+            "Rank7",
+            "Ensignia1",
+            "Ensignia2",
+            "Ensignia3",
+            "Ensignia4",
+            "Ensignia5",
+            "Ensignia6",
+            "Professional1",
+            "Professional2",
+            "NoCyborgs",
+            "NoGreens",
+            "NoGreens1",
+            "NoGreensDark",
+            "Skull",
+            "SkullDark",
+            "NoRome",
+            "NoStag",
+            "NoTa",
+        };
         hiddenSelections[] =
         {
             "zbytek"
