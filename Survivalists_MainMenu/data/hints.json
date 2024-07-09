@@ -70,6 +70,16 @@
     "m_Description": "Community Representatives exist to hear your feedback and complaints with no judgement. They have direct lines of communication to people that can hear your message and make changes if necessary. Reach out to them if you do not feel comfortable raising a ticket to staff."
   },
   {
+    "m_Headline": "NO PRIVATE FREQUENCIES",
+    "m_ImagePath": "",
+    "m_Description": "There are no 'Private Frequencies' on our server. Discord IC Radio Channel, Bulletin Channel, and In Game are the only in character means of communications. You are NOT allowed to converse 'in character' within private DMs or faction discords. Do not cheat your fellow role players from an interaction by speaking outside of the allowed methods of communication."
+  },
+  {
+    "m_Headline": "Big Energy",
+    "m_ImagePath": "",
+    "m_Description": "There are several large power sources on the island. Activating them may open new areas or enable special things. #FindOutInCharacter."
+  },
+  {
     "m_Headline": "#str_hint_patchyourselfup0",
     "m_ImagePath": "",
     "m_Description": "#str_hint_patchyourselfup1"

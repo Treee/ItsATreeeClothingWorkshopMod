@@ -239,7 +239,7 @@ class CfgVehicles
     };
 
     //===================== VANILLA OVERRIDE
-    class BookBible : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Bible : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Bible";
@@ -256,7 +256,7 @@ class CfgVehicles
             "dz\gear\books\data\book_bible_CO.paa"
         };
     };
-    class BookTheWarOfTheWorlds : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheWarOfTheWorlds : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The War of the Worlds";
@@ -270,7 +270,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheWarOfTheWorlds_co.paa"
         };
     };
-    class BookAroundTheWorldIn80Days : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_AroundTheWorldIn80Days : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Around the World in 80 Days";
@@ -284,7 +284,7 @@ class CfgVehicles
             "dz\gear\books\data\book_AroundTheWorldIn80Days_co.paa"
         };
     };
-    class BookCrimeAndPunishment : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_CrimeAndPunishment : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Crime and Punishment";
@@ -298,7 +298,7 @@ class CfgVehicles
             "dz\gear\books\data\book_CrimeAndPunishment_co.paa"
         };
     };
-    class BookTheMetamorphosis : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheMetamorphosis : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Metamorphosis";
@@ -312,7 +312,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheMetamorphosis_co.paa"
         };
     };
-    class BookTheRaven : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheRaven : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Raven";
@@ -326,7 +326,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheRaven_co.paa"
         };
     };
-    class BookTheArtOfWar : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheArtOfWar : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Art Of War";
@@ -340,7 +340,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheArtOfWar_co.paa"
         };
     };
-    class BookRobinsonCrusoe : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_RobinsonCrusoe : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Robinson Crusoe";
@@ -354,7 +354,7 @@ class CfgVehicles
             "dz\gear\books\data\book_RobinsonCrusoe_co.paa"
         };
     };
-    class BookRussian : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Russian : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Russian learning book";
@@ -368,7 +368,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Russian_co.paa"
         };
     };
-    class BookRussianCheatSheet : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_RussianCheatSheet : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Russian cheat sheet";
@@ -382,7 +382,7 @@ class CfgVehicles
             "dz\gear\books\data\book_RussianCheatSheet_co.paa"
         };
     };
-    class BookThePictureOfDorianGray : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ThePictureOfDorianGray : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Picture Of Dorian Gray";
@@ -396,7 +396,7 @@ class CfgVehicles
             "dz\gear\books\data\book_ThePictureOfDorianGray_co.paa"
         };
     };
-    class BookThePitAndThePendulum : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ThePitAndThePendulum : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Pit and the Pendulum";
@@ -410,7 +410,7 @@ class CfgVehicles
             "dz\gear\books\data\book_ThePitAndThePendulum_co.paa"
         };
     };
-    class BookTheTimeMachine : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheTimeMachine : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Time Machine";
@@ -424,7 +424,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheTimeMachine_co.paa"
         };
     };
-    class BookTheCountryOfTheBlind : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheCountryOfTheBlind : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Country of the Blind";
@@ -438,7 +438,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheCountryOfTheBlind_co.paa"
         };
     };
-    class BookBilaNemoc : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_BilaNemoc : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Bila nemoc";
@@ -452,7 +452,7 @@ class CfgVehicles
             "dz\gear\books\data\book_BilaNemoc_co.paa"
         };
     };
-    class BookYouth : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Youth : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Youth";
@@ -466,7 +466,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Youth_co.paa"
         };
     };
-    class BookVerwandlung : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Verwandlung : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Die Verwandlung";
@@ -480,7 +480,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Verwandlung_co.paa"
         };
     };
-    class BookTheJungleBook : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheJungleBook : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Jungle Book";
@@ -494,7 +494,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheJungleBook_co.paa"
         };
     };
-    class BookTheBrothersKaramazov : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheBrothersKaramazov : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Brothers Karamazov";
@@ -508,7 +508,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheBrothersKaramazov_co.paa"
         };
     };
-    class BookTheCallOfCthulhu : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheCallOfCthulhu : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Call of Cthulhu";
@@ -522,7 +522,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheCallOfCthulhu_co.paa"
         };
     };
-    class BookTheShunnedHouse : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheShunnedHouse : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Shunned House";
@@ -536,7 +536,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheShunnedHouse_co.paa"
         };
     };
-    class BookTheHoundOfTheBaskervilles : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheHoundOfTheBaskervilles : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Hound of the Baskervilles";
@@ -550,7 +550,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheHoundOfTheBaskervilles_co.paa"
         };
     };
-    class BookTonyAndTheBeetles : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TonyAndTheBeetles : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Tony and the Beetles";
@@ -564,7 +564,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TonyAndTheBeetles_co.paa"
         };
     };
-    class BookTheCosmicComputer : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheCosmicComputer : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Cosmic Computer";
@@ -578,7 +578,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheCosmicComputer_co.paa"
         };
     };
-    class BookATravelerInTime : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ATravelerInTime : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "A Traveler In Time";
@@ -592,7 +592,7 @@ class CfgVehicles
             "dz\gear\books\data\book_ATravelerInTime_co.paa"
         };
     };
-    class BookTheVariableMan : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheVariableMan : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Variable Man";
@@ -606,7 +606,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheVariableMan_co.paa"
         };
     };
-    class BookTheOutlet : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheOutlet : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Outlet";
@@ -620,7 +620,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheOutlet_co.paa"
         };
     };
-    class BookTheBarrier : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheBarrier : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Barrier";
@@ -634,7 +634,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheBarrier_co.paa"
         };
     };
-    class BookTheDesertOfWheat : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheDesertOfWheat : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Desert of Wheat";
@@ -648,7 +648,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheDesertOfWheat_co.paa"
         };
     };
-    class BookFlyingURanch : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_FlyingURanch : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Flying U Ranch";
@@ -662,7 +662,7 @@ class CfgVehicles
             "dz\gear\books\data\book_FlyingURanch_co.paa"
         };
     };
-    class BookCassidysRustlerRoundUp : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_CassidysRustlerRoundUp : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Hopalong Cassidy's Rustler Round-Up";
@@ -676,7 +676,7 @@ class CfgVehicles
             "dz\gear\books\data\book_CassidysRustlerRoundUp_co.paa"
         };
     };
-    class BookLonesomeLand : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_LonesomeLand : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Lonesome Land";
@@ -690,7 +690,7 @@ class CfgVehicles
             "dz\gear\books\data\book_LonesomeLand_co.paa"
         };
     };
-    class BookTrailin : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Trailin : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Trailin'!";
@@ -704,7 +704,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Trailin_co.paa"
         };
     };
-    class BookRonickyDoone : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_RonickyDoone : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Ronicky Doone";
@@ -718,7 +718,7 @@ class CfgVehicles
             "dz\gear\books\data\book_RonickyDoone_co.paa"
         };
     };
-    class BookBettyZane : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_BettyZane : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Betty Zane";
@@ -732,7 +732,7 @@ class CfgVehicles
             "dz\gear\books\data\book_BettyZane_co.paa"
         };
     };
-    class BookATexasMatchmaker : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ATexasMatchmaker : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "A Texas Matchmaker";
@@ -746,7 +746,7 @@ class CfgVehicles
             "dz\gear\books\data\book_ATexasMatchmaker_co.paa"
         };
     };
-    class BookTheThunderBird : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheThunderBird : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Thunder Bird";
@@ -760,7 +760,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheThunderBird_co.paa"
         };
     };
-    class BookBlackJack : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_BlackJack : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Black Jack";
@@ -774,7 +774,7 @@ class CfgVehicles
             "dz\gear\books\data\book_BlackJack_co.paa"
         };
     };
-    class BookTheLastTrail : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheLastTrail : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Last Trail";
@@ -788,7 +788,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheLastTrail_co.paa"
         };
     };
-    class BookSelectedStories : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_SelectedStories : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Selected Stories";
@@ -802,7 +802,7 @@ class CfgVehicles
             "dz\gear\books\data\book_SelectedStories_co.paa"
         };
     };
-    class BookTheHeritageOfTheSioux : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheHeritageOfTheSioux : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Heritage of the Sioux";
@@ -816,7 +816,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheHeritageOfTheSioux_co.paa"
         };
     };
-    class BookDesertGold : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_DesertGold : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Desert Gold";
@@ -830,7 +830,7 @@ class CfgVehicles
             "dz\gear\books\data\book_DesertGold_co.paa"
         };
     };
-    class BookTheHiddenChildren : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheHiddenChildren : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Hidden Children";
@@ -844,7 +844,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheHiddenChildren_co.paa"
         };
     };
-    class BookTheLastOfThePlainsmen : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheLastOfThePlainsmen : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Last of the Plainsmen";
@@ -858,7 +858,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheLastOfThePlainsmen_co.paa"
         };
     };
-    class BookGunmansReckoning : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_GunmansReckoning : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Gunman's Reckoning";
@@ -872,7 +872,7 @@ class CfgVehicles
             "dz\gear\books\data\book_GunmansReckoning_co.paa"
         };
     };
-    class BookSkyrider : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Skyrider : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Skyrider";
@@ -886,7 +886,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Skyrider_co.paa"
         };
     };
-    class BookSpinifexAndSand : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_SpinifexAndSand : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Spinifex and Sand";
@@ -900,7 +900,7 @@ class CfgVehicles
             "dz\gear\books\data\book_SpinifexAndSand_co.paa"
         };
     };
-    class BookSunsetPass : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_SunsetPass : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Sunset Pass";
@@ -914,7 +914,7 @@ class CfgVehicles
             "dz\gear\books\data\book_SunsetPass_co.paa"
         };
     };
-    class BookTheCaveOfGold : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheCaveOfGold : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Cave of Gold";
@@ -928,7 +928,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheCaveOfGold_co.paa"
         };
     };
-    class BookTheDayOfTheBeast : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheDayOfTheBeast : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Day of the Beast";
@@ -942,7 +942,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheDayOfTheBeast_co.paa"
         };
     };
-    class BookTheQuirt : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheQuirt : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Quirt";
@@ -956,7 +956,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheQuirt_co.paa"
         };
     };
-    class BookAVoyageToArcturus : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_AVoyageToArcturus : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "A Voyage to Arcturus";
@@ -970,7 +970,7 @@ class CfgVehicles
             "dz\gear\books\data\book_AVoyageToArcturus_co.paa"
         };
     };
-    class BookWealthOfNations : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_WealthOfNations : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "An Inquiry into the Nature and Causes of the Wealth of Nations";
@@ -984,7 +984,7 @@ class CfgVehicles
             "dz\gear\books\data\book_WealthOfNations_co.paa"
         };
     };
-    class BookAndersensFairyTales : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_AndersensFairyTales : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Andersen's Fairy Tales";
@@ -998,7 +998,7 @@ class CfgVehicles
             "dz\gear\books\data\book_AndersensFairyTales_co.paa"
         };
     };
-    class BookBlackBeauty : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_BlackBeauty : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Black Beauty";
@@ -1012,7 +1012,7 @@ class CfgVehicles
             "dz\gear\books\data\book_BlackBeauty_co.paa"
         };
     };
-    class BookBuddenbrooks : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Buddenbrooks : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Buddenbrooks";
@@ -1026,7 +1026,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Buddenbrooks_co.paa"
         };
     };
-    class BookDeadSouls : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_DeadSouls : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Dead Souls";
@@ -1040,7 +1040,7 @@ class CfgVehicles
             "dz\gear\books\data\book_DeadSouls_co.paa"
         };
     };
-    class BookErewhon : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Erewhon : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Erewhon";
@@ -1054,7 +1054,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Erewhon_co.paa"
         };
     };
-    class BookFatherGoriot : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_FatherGoriot : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Father Goriot";
@@ -1068,7 +1068,7 @@ class CfgVehicles
             "dz\gear\books\data\book_FatherGoriot_co.paa"
         };
     };
-    class BookGreatExpectations : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_GreatExpectations : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Great Expectations";
@@ -1082,7 +1082,7 @@ class CfgVehicles
             "dz\gear\books\data\book_GreatExpectations_co.paa"
         };
     };
-    class BookGulliversTravels : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_GulliversTravels : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Gulliver's Travels";
@@ -1096,7 +1096,7 @@ class CfgVehicles
             "dz\gear\books\data\book_GulliversTravels_co.paa"
         };
     };
-    class BookHeartOfDarkness : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_HeartOfDarkness : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Heart of Darkness";
@@ -1110,7 +1110,7 @@ class CfgVehicles
             "dz\gear\books\data\book_HeartOfDarkness_co.paa"
         };
     };
-    class BookHerland : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Herland : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Herland";
@@ -1124,7 +1124,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Herland_co.paa"
         };
     };
-    class BookIvanhoe : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Ivanhoe : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Ivanhoe";
@@ -1138,7 +1138,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Ivanhoe_co.paa"
         };
     };
-    class BookKidnapped : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Kidnapped : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Kidnapped";
@@ -1152,7 +1152,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Kidnapped_co.paa"
         };
     };
-    class BookLaChartreuseDeParme : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_LaChartreuseDeParme : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "La Chartreuse de Parme";
@@ -1166,7 +1166,7 @@ class CfgVehicles
             "dz\gear\books\data\book_LaChartreuseDeParme_co.paa"
         };
     };
-    class BookLordJim : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_LordJim : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Lord Jim";
@@ -1180,7 +1180,7 @@ class CfgVehicles
             "dz\gear\books\data\book_LordJim_co.paa"
         };
     };
-    class BookMadameBovary : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_MadameBovary : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Madame Bovary";
@@ -1194,7 +1194,7 @@ class CfgVehicles
             "dz\gear\books\data\book_MadameBovary_co.paa"
         };
     };
-    class BookNostromo : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Nostromo : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Nostromo: A Tale of the Seaboard";
@@ -1208,7 +1208,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Nostromo_co.paa"
         };
     };
-    class BookNaturalSelection : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_NaturalSelection : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "On the Origin of Species by Means of Natural Selection";
@@ -1222,7 +1222,7 @@ class CfgVehicles
             "dz\gear\books\data\book_NaturalSelection_co.paa"
         };
     };
-    class BookTheMetamorphosesOfOvid : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheMetamorphosesOfOvid : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Metamorphoses of Ovid";
@@ -1236,7 +1236,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheMetamorphosesOfOvid_co.paa"
         };
     };
-    class BookMobyDick : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_MobyDick : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Moby Dick";
@@ -1250,7 +1250,7 @@ class CfgVehicles
             "dz\gear\books\data\book_MobyDick_co.paa"
         };
     };
-    class BookKingLear : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_KingLear : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "King Lear";
@@ -1264,7 +1264,7 @@ class CfgVehicles
             "dz\gear\books\data\book_KingLear_co.paa"
         };
     };
-    class BookLaDbcle : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_LaDbcle : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "La Débâcle";
@@ -1278,7 +1278,7 @@ class CfgVehicles
             "dz\gear\books\data\book_LaDbcle_co.paa"
         };
     };
-    class BookTheCanterburyTales : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheCanterburyTales : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Canterbury Tales and Other Poems";
@@ -1292,7 +1292,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheCanterburyTales_co.paa"
         };
     };
-    class BookTheRightsOfWoman : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheRightsOfWoman : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "A Vindication of the Rights of Women";
@@ -1306,7 +1306,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheRightsOfWoman_co.paa"
         };
     };
-    class BookToTheInteriorOfTheEarth : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ToTheInteriorOfTheEarth : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "A Journey to the Interior of the Earth";
@@ -1320,7 +1320,7 @@ class CfgVehicles
             "dz\gear\books\data\book_ToTheInteriorOfTheEarth_co.paa"
         };
     };
-    class BookNjalsSaga : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_NjalsSaga : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Njal's Saga";
@@ -1334,7 +1334,7 @@ class CfgVehicles
             "dz\gear\books\data\book_NjalsSaga_co.paa"
         };
     };
-    class BookTheTrial : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheTrial : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Trial";
@@ -1348,7 +1348,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheTrial_co.paa"
         };
     };
-    class BookDonQuixote : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_DonQuixote : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Don Quixote";
@@ -1362,7 +1362,7 @@ class CfgVehicles
             "dz\gear\books\data\book_DonQuixote_co.paa"
         };
     };
-    class BookPhilosophiaeNaturalis : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_PhilosophiaeNaturalis : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Philosophiae Naturalis Principia Mathematica";
@@ -1376,7 +1376,7 @@ class CfgVehicles
             "dz\gear\books\data\book_PhilosophiaeNaturalis_co.paa"
         };
     };
-    class BookPrideAndPrejudice : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_PrideAndPrejudice : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Pride and Prejudice";
@@ -1390,7 +1390,7 @@ class CfgVehicles
             "dz\gear\books\data\book_PrideAndPrejudice_co.paa"
         };
     };
-    class BookRasselas : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Rasselas : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Rasselas";
@@ -1404,7 +1404,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Rasselas_co.paa"
         };
     };
-    class BookScaramouche : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Scaramouche : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Scaramouche";
@@ -1418,7 +1418,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Scaramouche_co.paa"
         };
     };
-    class BookSonsAndLovers : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_SonsAndLovers : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Sons and Lovers";
@@ -1432,7 +1432,7 @@ class CfgVehicles
             "dz\gear\books\data\book_SonsAndLovers_co.paa"
         };
     };
-    class BookTheCallOfTheWild : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheCallOfTheWild : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Call of the Wild";
@@ -1446,7 +1446,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheCallOfTheWild_co.paa"
         };
     };
-    class BookTheComingRace : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheComingRace : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Coming Race";
@@ -1460,7 +1460,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheComingRace_co.paa"
         };
     };
-    class BookTheIslandOfDoctorMoreau : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheIslandOfDoctorMoreau : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Island of Doctor Moreau";
@@ -1474,7 +1474,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheIslandOfDoctorMoreau_co.paa"
         };
     };
-    class BookTheMahabharataOfKrishna : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheMahabharataOfKrishna : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Mahabharata of Krishna-Dwaipayana Vyasa Bk. 4";
@@ -1488,7 +1488,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheMahabharataOfKrishna_co.paa"
         };
     };
-    class BookTheManWhoWasThursday : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheManWhoWasThursday : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Man Who Was Thursday";
@@ -1502,7 +1502,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheManWhoWasThursday_co.paa"
         };
     };
-    class BookThePossessed : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ThePossessed : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Possessed";
@@ -1516,7 +1516,7 @@ class CfgVehicles
             "dz\gear\books\data\book_ThePossessed_co.paa"
         };
     };
-    class BookThePrisonerOfZenda : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ThePrisonerOfZenda : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Prisoner of Zenda";
@@ -1530,7 +1530,7 @@ class CfgVehicles
             "dz\gear\books\data\book_ThePrisonerOfZenda_co.paa"
         };
     };
-    class BookAPrincessOfMars : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_APrincessOfMars : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "A Princess of Mars";
@@ -1544,7 +1544,7 @@ class CfgVehicles
             "dz\gear\books\data\book_APrincessOfMars_co.paa"
         };
     };
-    class BookKingSolomonsMines : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_KingSolomonsMines : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "King Solomon's Mines";
@@ -1558,7 +1558,7 @@ class CfgVehicles
             "dz\gear\books\data\book_KingSolomonsMines_co.paa"
         };
     };
-    class BookMiddlemarch : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Middlemarch : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Middlemarch";
@@ -1572,7 +1572,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Middlemarch_co.paa"
         };
     };
-    class BookTheHouseOfTheSevenGables : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheHouseOfTheSevenGables : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The House of the Seven Gables";
@@ -1586,7 +1586,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheHouseOfTheSevenGables_co.paa"
         };
     };
-    class BookTheMonkARomance : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheMonkARomance : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Monk - A romance";
@@ -1600,7 +1600,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheMonkARomance_co.paa"
         };
     };
-    class BookTheJustifiedSinner : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheJustifiedSinner : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Private Memoirs and Confessions of a Justified Sinner";
@@ -1614,7 +1614,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheJustifiedSinner_co.paa"
         };
     };
-    class BookTheRedBadgeOfCourage : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheRedBadgeOfCourage : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Red Badge of Courage";
@@ -1628,7 +1628,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheRedBadgeOfCourage_co.paa"
         };
     };
-    class BookADollsHouse : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ADollsHouse : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "A Doll's House";
@@ -1642,7 +1642,7 @@ class CfgVehicles
             "dz\gear\books\data\book_ADollsHouse_co.paa"
         };
     };
-    class BookGilgameshEpic : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_GilgameshEpic : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "An Old Babylonian Version of the Gilgamesh Epic";
@@ -1656,7 +1656,7 @@ class CfgVehicles
             "dz\gear\books\data\book_GilgameshEpic_co.paa"
         };
     };
-    class BookAnnaKarenina : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_AnnaKarenina : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Anna Karenina";
@@ -1670,7 +1670,7 @@ class CfgVehicles
             "dz\gear\books\data\book_AnnaKarenina_co.paa"
         };
     };
-    class BookCandide : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Candide : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Candide";
@@ -1684,7 +1684,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Candide_co.paa"
         };
     };
-    class BookFaust : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Faust : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Faust";
@@ -1698,7 +1698,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Faust_co.paa"
         };
     };
-    class BookHinduLiterature : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_HinduLiterature : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Hindu Literature";
@@ -1712,7 +1712,7 @@ class CfgVehicles
             "dz\gear\books\data\book_HinduLiterature_co.paa"
         };
     };
-    class BookHunger : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Hunger : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Hunger";
@@ -1726,7 +1726,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Hunger_co.paa"
         };
     };
-    class BookJapaneseLiterature : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_JapaneseLiterature : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Japanese Literature";
@@ -1740,7 +1740,7 @@ class CfgVehicles
             "dz\gear\books\data\book_JapaneseLiterature_co.paa"
         };
     };
-    class BookLeRougeEtLeNoir : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_LeRougeEtLeNoir : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Le Rouge et le noir";
@@ -1754,7 +1754,7 @@ class CfgVehicles
             "dz\gear\books\data\book_LeRougeEtLeNoir_co.paa"
         };
     };
-    class BookTheDecameron : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheDecameron : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Decameron of Giovanni Boccaccio";
@@ -1768,7 +1768,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheDecameron_co.paa"
         };
     };
-    class BookTheGiacomoLeopardi : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheGiacomoLeopardi : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Poems of Giacomo Leopardi";
@@ -1782,7 +1782,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheGiacomoLeopardi_co.paa"
         };
     };
-    class BookAliceInWonderland : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_AliceInWonderland : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Alice's Adventures in Wonderland";
@@ -1796,7 +1796,7 @@ class CfgVehicles
             "dz\gear\books\data\book_AliceInWonderland_co.paa"
         };
     };
-    class BookTheScarletPimpernel : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheScarletPimpernel : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Scarlet Pimpernel";
@@ -1810,7 +1810,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheScarletPimpernel_co.paa"
         };
     };
-    class BookTheThreeMusketeers : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheThreeMusketeers : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Three Musketeers";
@@ -1824,7 +1824,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheThreeMusketeers_co.paa"
         };
     };
-    class BookTheTurnOfTheScrew : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheTurnOfTheScrew : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Turn of the Screw";
@@ -1838,7 +1838,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheTurnOfTheScrew_co.paa"
         };
     };
-    class BookTranslationsOfShakuntala : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TranslationsOfShakuntala : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Translations of Shakuntala and Other Works";
@@ -1852,7 +1852,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TranslationsOfShakuntala_co.paa"
         };
     };
-    class BookTreasureIsland : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TreasureIsland : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Treasure Island";
@@ -1866,7 +1866,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TreasureIsland_co.paa"
         };
     };
-    class BookUlysses : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Ulysses : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Ulysses";
@@ -1880,7 +1880,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Ulysses_co.paa"
         };
     };
-    class BookUncleSilas : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_UncleSilas : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Uncle Silas";
@@ -1894,7 +1894,7 @@ class CfgVehicles
             "dz\gear\books\data\book_UncleSilas_co.paa"
         };
     };
-    class BookTheAeneid : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheAeneid : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Aeneid";
@@ -1908,7 +1908,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheAeneid_co.paa"
         };
     };
-    class BookWarAndPeace : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_WarAndPeace : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "War and Peace";
@@ -1922,7 +1922,7 @@ class CfgVehicles
             "dz\gear\books\data\book_WarAndPeace_co.paa"
         };
     };
-    class BookWielandOrTheTransformation : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_WielandOrTheTransformation : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Wieland or The Transformation";
@@ -1936,7 +1936,7 @@ class CfgVehicles
             "dz\gear\books\data\book_WielandOrTheTransformation_co.paa"
         };
     };
-    class BookWutheringHeights : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_WutheringHeights : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Wuthering Heights";
@@ -1950,7 +1950,7 @@ class CfgVehicles
             "dz\gear\books\data\book_WutheringHeights_co.paa"
         };
     };
-    class BookCinqSemainesEnBallon : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_CinqSemainesEnBallon : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Cinq Semaines En Ballon";
@@ -1964,7 +1964,7 @@ class CfgVehicles
             "dz\gear\books\data\book_CinqSemainesEnBallon_co.paa"
         };
     };
-    class BookDracula : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Dracula : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Dracula";
@@ -1978,7 +1978,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Dracula_co.paa"
         };
     };
-    class BookDasNibelungenlied : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_DasNibelungenlied : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Das Nibelungenlied";
@@ -1992,7 +1992,7 @@ class CfgVehicles
             "dz\gear\books\data\book_DasNibelungenlied_co.paa"
         };
     };
-    class BookTheLastMan : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_TheLastMan : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "The Last Man";
@@ -2006,7 +2006,7 @@ class CfgVehicles
             "dz\gear\books\data\book_TheLastMan_co.paa"
         };
     };
-    class BookRomeoUndJulia : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_RomeoUndJulia : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Romeo und Julia";
@@ -2020,7 +2020,7 @@ class CfgVehicles
             "dz\gear\books\data\book_RomeoUndJulia_co.paa"
         };
     };
-    class BookFrankenstein : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_Frankenstein : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Frankenstein";
@@ -2034,7 +2034,7 @@ class CfgVehicles
             "dz\gear\books\data\book_Frankenstein_co.paa"
         };
     };
-    class BookDeLaTerreLaLune : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_DeLaTerreLaLune : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "De la terre a la lune";
@@ -2048,7 +2048,7 @@ class CfgVehicles
             "dz\gear\books\data\book_DeLaTerreLaLune_co.paa"
         };
     };
-    class BookLleMystrieuse : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_LleMystrieuse : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "L'Île mystérieuse";
@@ -2062,7 +2062,7 @@ class CfgVehicles
             "dz\gear\books\data\book_LleMystrieuse_co.paa"
         };
     };
-    class BookLaComdieHumaine : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_LaComdieHumaine : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "La Comédie humaine volume I";
@@ -2076,7 +2076,7 @@ class CfgVehicles
             "dz\gear\books\data\book_LaComdieHumaine_co.paa"
         };
     };
-    class BookLesCorneilles : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_LesCorneilles : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Les Corneilles";
@@ -2090,7 +2090,7 @@ class CfgVehicles
             "dz\gear\books\data\book_LesCorneilles_co.paa"
         };
     };
-    class Book20000LieuesSousLesMers : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_20000LieuesSousLesMers : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "20000 Lieues sous les mers";
@@ -2104,7 +2104,7 @@ class CfgVehicles
             "dz\gear\books\data\book_20000LieuesSousLesMers_co.paa"
         };
     };
-    class BookThreeMenInABoat : IAT_LiteraryDevices_Book_Colorbase
+    class IAT_LiteraryDevices_Book_ThreeMenInABoat : IAT_LiteraryDevices_Book_Colorbase
     {
         scope = 2;
         title = "Three Men in a Boat";
