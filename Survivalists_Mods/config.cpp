@@ -20,7 +20,7 @@ class CfgPatches
         {
             "DZ_Data",
             "DZ_Scripts",
-            //   "Notes_Gear", // WrittenNote from notes
+              "Notes_Gear", // WrittenNote from notes
               "deerisle", // for the map (security door)
               "Deerisle_Security_System", // overriding air craft carrier loot
               "DeerIsle_Weapons",

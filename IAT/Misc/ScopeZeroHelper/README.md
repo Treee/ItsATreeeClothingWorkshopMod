@@ -1,3 +1,3 @@
-# Delete Object On Ruined
+# Scope Zero Helper
 
-# How do I make this mod useful?
+# This mod contains the collection of scoped 0 things to remove from live servers.

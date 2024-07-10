@@ -371,11 +371,11 @@ class CfgVehicles
                 "AnimalPelt10"
         };
     };
-    // // wardog note override
-    // class WrittenNote : Inventory_Base
-    // {
-    //     inventorySlot[] = { "Paper" };
-    // };
+    // wardog note override
+    class WrittenNote : Inventory_Base
+    {
+        inventorySlot[] = { "Paper" };
+    };
 
     //----------------------------------------------- CUSTOM STUFF
     class Firewood_Irradiated : Firewood
