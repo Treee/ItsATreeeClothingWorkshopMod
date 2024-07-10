@@ -13,7 +13,6 @@ FrameWidgetClass ContainerWidget {
  {
   WindowWidgetClass WindowWidget {
    color 1 1 1 0
-   position 0 0
    size 1 1
    halign center_ref
    valign center_ref
@@ -28,8 +27,8 @@ FrameWidgetClass ContainerWidget {
      color 0.4471 0.4471 0.4471 0.1804
      position 0 0
      size 1 1
-     hexactpos 1
-     vexactpos 1
+     hexactpos 0
+     vexactpos 0
      hexactsize 0
      vexactsize 0
      draggable 0
@@ -39,7 +38,7 @@ FrameWidgetClass ContainerWidget {
      visible 1
      color 1 1 1 0
      position 0 0
-     size 0.9 0.9
+     size 0.5 0.9
      halign center_ref
      valign center_ref
      hexactpos 0
@@ -134,41 +133,41 @@ FrameWidgetClass ContainerWidget {
         }
        }
       }
-     }
-    }
-    ButtonWidgetClass BackBtn1 {
-     visible 1
-     position 0.05 0.05
-     size 0.04 0.04
-     halign right_ref
-     hexactpos 0
-     vexactpos 0
-     hexactsize 0
-     vexactsize 0
-     fixaspect fixwidth
-     userID 2
-     style Default
-     text_offset 1 1
-     text_halign center
-     "text color" 1 1 1 1
-     "disabled text color" 0.3373 0.3373 0.3373 1
-     {
-      ImageWidgetClass IconClose {
-       ignorepointer 1
-       color 0 0 0 1
-       size 1 1
+      ButtonWidgetClass BackBtn1 {
+       visible 1
+       position 0.03072 0.00644
+       size 0.04 0.04
        halign right_ref
        hexactpos 0
        vexactpos 0
        hexactsize 0
        vexactsize 0
        fixaspect fixwidth
-       image0 "set:dayz_gui image:Close"
-       mode blend
-       "src alpha" 1
-       "clamp mode" clamp
-       filter 1
-       nocache 0
+       userID 2
+       style Default
+       text_offset 1 1
+       text_halign center
+       "text color" 1 1 1 1
+       "disabled text color" 0.3373 0.3373 0.3373 1
+       {
+        ImageWidgetClass IconClose {
+         ignorepointer 1
+         color 0 0 0 1
+         size 1 1
+         halign right_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         fixaspect fixwidth
+         image0 "set:dayz_gui image:Close"
+         mode blend
+         "src alpha" 1
+         "clamp mode" clamp
+         filter 1
+         nocache 0
+        }
+       }
       }
      }
     }

@@ -30,4 +30,17 @@ modded class BookMenu
             }
         }
 	}
+
+    override Widget Init()
+	{
+		layoutRoot = GetGame().GetWorkspace().CreateWidgets("IAT/Core/LiteraryDevices/gui/iat_bookmenu.layout");
+		Class.CastTo(m_content, layoutRoot.FindAnyWidget("HtmlWidget"));
+		Class.CastTo(m_author, layoutRoot.FindAnyWidget("Author"));
+		Class.CastTo(m_title, layoutRoot.FindAnyWidget("Title"));
+		Class.CastTo(m_page, layoutRoot.FindAnyWidget("Page"));
+
+		float width;
+		m_content.GetScreenSize(width, m_page_height);
+		return layoutRoot;
+	}
 };
