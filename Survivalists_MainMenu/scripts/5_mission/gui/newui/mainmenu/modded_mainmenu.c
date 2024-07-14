@@ -99,7 +99,7 @@ modded class MainMenu
             if (m_ScenePC)
             {
                 int charID = m_ScenePC.GetIntroCharacter().GetCharacterID();
-                name = m_ScenePC.GetIntroCharacter().GetCharacterNameById(charID)
+                name = m_ScenePC.GetIntroCharacter().GetCharacterNameById(charID);
             }
         }
         // otherwise just default to survivor
