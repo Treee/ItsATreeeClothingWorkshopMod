@@ -119,6 +119,7 @@ modded class MainMenu
             // g_Game.ConnectFromServerBrowser( "127.0.0.1", 2302, "" );
             // else
             g_Game.ConnectFromServerBrowser( "92.118.18.74", 2302, "" );
+            // g_Game.ConnectFromServerBrowser( "https://dayz.the-survivalists.net/", 2302, "" );
 
             // one day switch to domain
             // g_Game.ConnectFromServerBrowser( "the-survivalists.net/dayz", 2302, "" );
