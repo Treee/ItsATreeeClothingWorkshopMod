@@ -18,7 +18,7 @@ class SRP_ModularVest_Base extends Clothing
         // pouches cannot go into the vest holster slot. make a new proxy for them
         if (attachment && (InventorySlots.GetSlotName(slotId) == "VestHolster" || InventorySlots.GetSlotName(slotId) == "Belt_Back"))
             if (attachment.GetType() == "PlateCarrierPouches" || attachment.IsInherited(PlateCarrierPouches))
-                return false
+                return false;
 
         return super.CanReceiveAttachment(attachment, slotId);
 	}

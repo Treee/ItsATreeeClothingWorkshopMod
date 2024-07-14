@@ -52,7 +52,7 @@ class SRP_MortarBowl extends Inventory_Base
                 result = herb.GetQuantity() * Math.RandomIntInclusive(1, 3);
 
             // replace it with powder
-            string newItemName = string.Format("SRP_CrushedHerb_%1", herb.ConfigGetString("color"))
+            string newItemName = string.Format("SRP_CrushedHerb_%1", herb.ConfigGetString("color"));
             ItemBase newItemBase;
             if (Class.CastTo(newItemBase, GetInventory().CreateAttachment(newItemName)))
             {
