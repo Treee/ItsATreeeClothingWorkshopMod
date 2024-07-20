@@ -9,7 +9,8 @@ class CfgPatches
         {
             "DZ_Pistols_Derringer",
             "DZ_Pistols_Flaregun",
-            "Survivalists_Weapons_JMC_Pistols"
+            "Survivalists_Weapons_JMC_Pistols",
+            "Dressupbox_Weapons"
         };
     };
 };
@@ -31,11 +32,11 @@ class CfgWeapons
         salvageParts[] +=
         {
             "TT_GunBarrel_Small",
-            "TT_RifledBarrel_Small",
-            "TT_MainReceiver_SemiSmall",
-            "TT_MainReceiver_AutoSmall",
-            "TT_Trigger_Simple",
-            "TT_Hammer_Simple",
+                "TT_RifledBarrel_Small",
+                "TT_MainReceiver_SemiSmall",
+                "TT_MainReceiver_AutoSmall",
+                "TT_Trigger_Simple",
+                "TT_Hammer_Simple",
         };
     };
     class Derringer_Base : Pistol_Base

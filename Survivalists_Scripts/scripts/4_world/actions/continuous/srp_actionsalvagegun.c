@@ -37,7 +37,7 @@ class SRP_ActionSalvageGun extends ActionSRPVariantIdOption
 	}
     override void OnFinishProgressServer( ActionData action_data )
     {
-        ToolBase toolInHand;
+        ItemBase toolInHand;
         if (action_data.m_MainItem && Class.CastTo(toolInHand, action_data.m_MainItem))
         {
             Weapon_Base target_weapon;
