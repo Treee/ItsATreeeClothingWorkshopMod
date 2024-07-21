@@ -57,6 +57,7 @@ modded class GameConstants
     const int UI_SRP_CUSTOM_MENU_GUICrafting  = 8764336;
 
 	const float STAMINA_SYNC_RATE = 1; //in secs
+    const float STAMINA_WEIGHT_LIMIT_THRESHOLD = 60000; //! in grams (weight where the player is not penalized by stamina)
     const int	STAMINA_DRAIN_STANDING_SPRINT_PER_SEC = 1; //4 is default in units (how much sprint depletes stamina)
 
 	const int REFRESHER_MAX_DURATION_DEFAULT		= 3600 * 24 * 6; 	//max duration of refresher in seconds - 6 days (+ 2 days final refresh )
