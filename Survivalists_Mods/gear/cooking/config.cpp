@@ -236,7 +236,7 @@ class CfgVehicles
         descriptionShort = "A pot of mash ready for brewing.";
         model = "\dz\gear\cooking\CookingPot.p3d";
         rotationFlags = 2;
-        weight = 750;
+        weight = 1500;
         itemSize[] = { 4,4 };
         itemsCargoSize[] = { 0,0 };
         fragility = 0.0099999998;

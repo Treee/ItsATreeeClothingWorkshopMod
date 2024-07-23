@@ -846,7 +846,7 @@ class CfgVehicles
         displayName = "Sewing Thread - White";
         descriptionShort = "A thread... Used for you... YOU GUESSED IT. Sewing";
         model = "\Survivalists_Mods\gear\crafting\SRP_SewingThread.p3d";
-        weight = 500;
+        weight = 0.1;
         itemSize[] = { 1,1 };
         stackedUnit = "g";
         absorbency = 0.2;

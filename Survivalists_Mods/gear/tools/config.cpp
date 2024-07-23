@@ -169,21 +169,12 @@ class CfgVehicles
         };
     };
 
-    class WeaponCleaningKit : Inventory_Base
-    {
-        descriptionShort = "Useful tools for cleaning a weapon or salvaged part. Well oiled mechanisms are proven to reduce the chance of jamming.";
-        canBeSplit = 1;
-        itemSize[] = { 2,2 };
-    };
-    class LeatherSewingKit : Inventory_Base
-    {
-        canBeSplit = 1;
-        itemSize[] = { 2,2 };
-    };
-    class SewingKit : Inventory_Base
-    {
-        canBeSplit = 1;
-    };
+    // class WeaponCleaningKit : Inventory_Base
+    // {
+    //     descriptionShort = "Useful tools for cleaning a weapon or salvaged part. Well oiled mechanisms are proven to reduce the chance of jamming.";
+    //     canBeSplit = 1;
+    //     itemSize[] = { 2,2 };
+    // };
     class Pen_ColorBase : Inventory_Base
     {
         inventorySlot[] +=
@@ -209,13 +200,13 @@ class CfgVehicles
         itemSize[] = { 2,2 };
     };
 
-    class EpoxyPutty : Inventory_Base
-    {
-        canBeSplit = 1;
-        varStackMax = 100;
-        varQuantityMax = 5000;
-        inventorySlot[] += {"SRP_Construction_Epoxy"};
-    };
+    // class EpoxyPutty : Inventory_Base
+    // {
+    //     canBeSplit = 1;
+    //     varStackMax = 100;
+    //     varQuantityMax = 5000;
+    //     inventorySlot[] += {"SRP_Construction_Epoxy"};
+    // };
     class Pipe : Inventory_Base
     {
         canBeSplit = 1;
@@ -361,7 +352,8 @@ class CfgVehicles
         varQuantityInit = 100;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        weight = 780;
+        weight = 12;
+        canBeSplit = 1;
         itemSize[] = { 2,2 };
         fragility = 0.0099999998;
         hiddenSelections[] = { "zbytek" };
@@ -417,7 +409,8 @@ class CfgVehicles
         varQuantityInit = 100;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        weight = 1200;
+        weight = 12;
+        canBeSplit = 1;
         itemSize[] = { 2,2 };
         fragility = 0.0099999998;
         hiddenSelections[] = { "zbytek" };
@@ -1157,7 +1150,7 @@ class CfgVehicles
         varQuantityInit = 100;
         varQuantityMin = 0;
         varQuantityMax = 100;
-        weight = 780;
+        weight = 8;
         weightPerQuantityUnit = 0;
         itemSize[] = { 2,2 };
         fragility = 0.0099999998;

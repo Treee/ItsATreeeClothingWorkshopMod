@@ -16,6 +16,7 @@ class CfgPatches
 class CfgVehicles
 {
     class Inventory_Base;
+    class VitaminBottle;
     class Edible_Base;
     class PainkillerTablets;
     class TetracyclineAntibiotics;
@@ -23,11 +24,6 @@ class CfgVehicles
     class SRP_KitBase;
 
     // ------------------------------------------ VANILLA OVERRIDE
-    class VitaminBottle : Edible_Base
-    {
-        canBeSplit = 1;
-    };
-
     class BandageDressing : Inventory_Base
     {
         canBeSplit = 1;

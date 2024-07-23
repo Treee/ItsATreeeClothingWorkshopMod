@@ -21,6 +21,7 @@ class CfgVehicles
     class Firewood;
     class Bark_Oak;
     class Bark_Birch;
+    class Stone;
 
     //--------------------------------------------- BASE GAME OVERRIDES
     class Spraycan_ColorBase : Inventory_Base
@@ -62,19 +63,6 @@ class CfgVehicles
         inventorySlot[] +=
         {
             "SRP_Construction_WoodenPlanks"
-        };
-    };
-    class GardenLime : Inventory_Base
-    {
-        canBeSplit = 1;
-        itemSize[] = { 2,3 };
-        hiddenSelections[] =
-        {
-            "zbytek"
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "Survivalists_Mods\gear\consumables\data\garden_lime_espen_co.paa"
         };
     };
     class BurlapStrip : Inventory_Base
@@ -271,11 +259,11 @@ class CfgVehicles
         varQuantityMax = 30;
     };
 
-    class Stone : Inventory_Base
-    {
-        varQuantityMax = 400;
-        inventorySlot[] += {"SRP_Construction_Stone", "StonesFlagTax"};
-    };
+    // class Stone : Inventory_Base
+    // {
+    //     varQuantityMax = 400;
+    //     inventorySlot[] += {"SRP_Construction_Stone", "StonesFlagTax"};
+    // };
     class Stone_Ruined : Stone
     {
         scope = 2;
@@ -305,20 +293,20 @@ class CfgVehicles
                 "Tailoring_MetalPlate"
         };
     };
-    class Nail : Inventory_Base
-    {
-        varStackMax = 99;
-        varQuantityMax = 990;
-        inventorySlot[] +=
-        {
-            "SRP_Construction_Nails"
-        };
-    };
-    class DuctTape : Inventory_Base
-    {
-        canBeSplit = 1;
-        itemSize[] = { 1,2 };
-    };
+    // class Nail : Inventory_Base
+    // {
+    //     varStackMax = 99;
+    //     varQuantityMax = 990;
+    //     inventorySlot[] +=
+    //     {
+    //         "SRP_Construction_Nails"
+    //     };
+    // };
+    // class DuctTape : Inventory_Base
+    // {
+    //     canBeSplit = 1;
+    //     itemSize[] = { 1,2 };
+    // };
     class Roadflare : Inventory_Base
     {
         inventorySlot[] +=
@@ -371,11 +359,11 @@ class CfgVehicles
                 "AnimalPelt10"
         };
     };
-    // wardog note override
-    class WrittenNote : Inventory_Base
-    {
-        inventorySlot[] = { "Paper" };
-    };
+    // // wardog note override
+    // class WrittenNote : Inventory_Base
+    // {
+    //     inventorySlot[] = { "Paper" };
+    // };
 
     //----------------------------------------------- CUSTOM STUFF
     class Firewood_Irradiated : Firewood
@@ -1749,7 +1737,7 @@ class CfgVehicles
         descriptionShort = "A rudimentary dye. Useful for staining this color on cloth or other various things.";
         model = "Survivalists_Mods\gear\consumables\srp_dyebottle.p3d";
         color = "base";
-        weight = 120;
+        weight = 2;
         itemSize[] = { 1,1 };
         itemBehaviour = 1;
         canBeSplit = 1;
