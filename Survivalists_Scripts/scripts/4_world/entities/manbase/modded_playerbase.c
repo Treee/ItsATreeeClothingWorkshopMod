@@ -26,78 +26,78 @@ modded class PlayerBase
 
         switch(rpc_type)
         {
-        case SRP_RPC.CHECK_SRP_CONFIG: // this case is for grabbing SRP's config from the server
-        {
-            Param1<SRPConfig> configParams;
-            if(!ctx.Read(configParams)) return;
-            GetDayZGame().SetSRPConfigGlobal(configParams.param1);
-            break;
-        }
+            case SRP_RPC.CHECK_SRP_CONFIG: // this case is for grabbing SRP's config from the server
+            {
+                Param1<SRPConfig> configParams;
+                if(!ctx.Read(configParams)) return;
+                GetDayZGame().SetSRPConfigGlobal(configParams.param1);
+                break;
+            }
         }
     }
 
     override void EEItemIntoHands(EntityAI item)
-        {
-            super.EEItemIntoHands( item );
+    {
+        super.EEItemIntoHands( item );
         // Print("Item going into hands: " + item.GetType());
         if (item)
         {
-        ItemBase ibCast = ItemBase.Cast(item);
-        if (ibCast.IsSprintRemoved())
-        {
-            SetIsSprintDisabledByHeavyItemInHands(true);
-        }
-        if (ibCast.IsContainerFilledToRemoveSprint(80))
-        {
-            SetIsSprintDisabledByHeavyItemInHands(true);
-        }
-        }
-        }
-        override void EEItemOutOfHands(EntityAI item)
-        {
-            super.EEItemOutOfHands( item );
+            ItemBase ibCast = ItemBase.Cast(item);
+            if (ibCast.IsSprintRemoved())
+            {
+                SetIsSprintDisabledByHeavyItemInHands(true);
+            }
+            if (ibCast.IsContainerFilledToRemoveSprint(80))
+            {
+                SetIsSprintDisabledByHeavyItemInHands(true);
+            }
+            }
+    }
+    override void EEItemOutOfHands(EntityAI item)
+    {
+        super.EEItemOutOfHands( item );
         // Print("Item going out of hands: " + item.GetType());
-            if (item)
+        if (item)
         {
-        // always clear this bool when things get out of hand. haha
-        SetIsSprintDisabledByHeavyItemInHands(false);
+            // always clear this bool when things get out of hand. haha
+            SetIsSprintDisabledByHeavyItemInHands(false);
         }
-        }
+    }
     override void EEKilled( Object killer )
-        {
+    {
         if ( m_AdminLog )
-        m_AdminLog.DirectAdminLogPrint(string.Format("ADMIN HELPER::||%1", GetEquippedItems()));
+            m_AdminLog.DirectAdminLogPrint(string.Format("ADMIN HELPER::||%1", GetEquippedItems()));
 
         if (GetGame().IsDedicatedServer())
         {
-        CF_Date time = CF_Date.Now(true);
-        // Print("timestamp?: " + time.DateToString());
-        GetDayZGame().GetAdminHelper().InsertBulkCompItem(time.DateToString(), GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), GetEquippedItems());
-        if (GetDayZGame().GetSRPMeatFarmingConfigGlobal().IsBlockedFromGivingMeat(GetIdentity().GetId()))
-            SetCanYieldSkinnedProducts(false);
+            CF_Date time = CF_Date.Now(true);
+            // Print("timestamp?: " + time.DateToString());
+            GetDayZGame().GetAdminHelper().InsertBulkCompItem(time.DateToString(), GetIdentity().GetId(), GetIdentity().GetPlainId(), GetIdentity().GetName(), GetEquippedItems());
+            if (GetDayZGame().GetSRPMeatFarmingConfigGlobal().IsBlockedFromGivingMeat(GetIdentity().GetId()))
+                SetCanYieldSkinnedProducts(false);
 
-        GetDayZGame().GetSRPMeatFarmingConfigGlobal().AddIDToBlockedMeatFarmers(GetIdentity().GetId());
+            GetDayZGame().GetSRPMeatFarmingConfigGlobal().AddIDToBlockedMeatFarmers(GetIdentity().GetId());
         }
 
-            super.EEKilled( killer );
-        };
-        override bool HandleRemoteItemManipulation(int userDataType, ParamsReadContext ctx)
-        {
+        super.EEKilled( killer );
+    };
+    override bool HandleRemoteItemManipulation(int userDataType, ParamsReadContext ctx)
+    {
         if( userDataType == SRP_INPUT_UDT_ITEM_MANIPULATION )
         {
-        ItemBase itemToSplit = NULL;
-        InventoryLocation destination = new InventoryLocation;
-        if (!ctx.Read(itemToSplit))
+            ItemBase itemToSplit = NULL;
+            InventoryLocation destination = new InventoryLocation;
+            if (!ctx.Read(itemToSplit))
+                return false;
+            if (destination.ReadFromContext(ctx))
+            {
+                itemToSplit.SplitSingleItemToInventoryLocation(destination);
+                return true;
+            }
             return false;
-        if (destination.ReadFromContext(ctx))
-        {
-            itemToSplit.SplitSingleItemToInventoryLocation(destination);
-            return true;
-        }
-        return false;
         }
         else
-        return super.HandleRemoteItemManipulation(userDataType, ctx);
+            return super.HandleRemoteItemManipulation(userDataType, ctx);
     }
     override void Init()
     {
@@ -109,23 +109,23 @@ modded class PlayerBase
         CrashSoundSets.RegisterSoundSet("SRP_Door_DoorKnock3_SoundSet1");
     }
     override bool CanManipulateInventory()
-        {
+    {
         if (IsSoftSurrendered())
             return true;
         return super.CanManipulateInventory();
-        }
+    }
     override bool CanReleaseAttachment (EntityAI attachment)
-        {
-            if(IsSoftSurrendered())
-                return false;
-            return super.CanReleaseAttachment(attachment);
-        }
-        override bool CanReleaseCargo (EntityAI cargo)
-        {
-            if(IsSoftSurrendered())
-                return false;
-            return super.CanReleaseCargo(cargo);
-        }
+    {
+        if(IsSoftSurrendered())
+            return false;
+        return super.CanReleaseAttachment(attachment);
+    }
+    override bool CanReleaseCargo (EntityAI cargo)
+    {
+        if(IsSoftSurrendered())
+            return false;
+        return super.CanReleaseCargo(cargo);
+    }
 
     void SetIsSoftSurrendered(bool state)
     {
@@ -133,9 +133,9 @@ modded class PlayerBase
         SetSynchDirty();
     }
     override bool IsRestrained()
-        {
-            return m_IsRestrained || IsSoftSurrendered();
-        }
+    {
+        return m_IsRestrained || IsSoftSurrendered();
+    }
     bool IsSoftSurrendered()
     {
         return m_IsSoftSurrendered;
@@ -155,70 +155,73 @@ modded class PlayerBase
     override bool CanSprint()
     {
         if (IsSprintDisabledByHeavyItemInHands())
-        return false;
+            return false;
 
         if (IsSprintDisabledByHeavyItemEquipped())
-        return false;
+            return false;
 
         return super.CanSprint();
     }
     override bool IsSprinting()
-        {
+    {
         return ( super.IsSprinting() || m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_SPRINT );
-        }
+    }
     bool HasNavigationItem()
     {
         if (GetMapNavigationBehaviour())
         {
-        return GetMapNavigationBehaviour().PlayerHasNavigationItem();
+            return GetMapNavigationBehaviour().PlayerHasNavigationItem();
         }
         return false;
     }
     string GetEquippedItems()
     {
         array<EntityAI> itemsArray = new array<EntityAI>;
-            ItemBase item;
-            GetInventory().EnumerateInventory(InventoryTraversalType.PREORDER, itemsArray);
+        ItemBase item;
+        GetInventory().EnumerateInventory(InventoryTraversalType.PREORDER, itemsArray);
 
         bool ruinItems = false;
         Clothing eventArmbands;
         if (Class.CastTo(eventArmbands, FindAttachmentBySlotName("Armband")))
         {
-        ruinItems = eventArmbands.IsEventArmband();
+            ruinItems = eventArmbands.IsEventArmband();
         }
 
         string itemString = "";
-            for (int i = 0; i < itemsArray.Count(); i++)
-            {
-                Class.CastTo(item, itemsArray.Get(i));
-
-                if (item && !item.IsInherited(SurvivorBase))
+        for (int i = 0; i < itemsArray.Count(); i++)
         {
-            if (item.HasQuantity())
+            Class.CastTo(item, itemsArray.Get(i));
+
+            if (item && !item.IsInherited(SurvivorBase))
             {
-            itemString = string.Format("%1,%2:%3", itemString, item.GetType(),item.GetQuantity());
-            }
-            else
-            {
-            itemString = string.Format("%1,%2", itemString, item.GetType());
-            }
-            if (ruinItems)
-            {
-            item.AddHealth(-9999999);
-            item.SetIsEventItem(true);
+                if (item.HasQuantity())
+                {
+                    itemString = string.Format("%1,%2:%3", itemString, item.GetType(),item.GetQuantity());
+                }
+                else
+                {
+                    itemString = string.Format("%1,%2", itemString, item.GetType());
+                }
+                if (ruinItems)
+                {
+                    if (Math.RandomFloatInclusive(0,1) < 0.9)
+                    {
+                        item.AddHealth(-9999999);
+                        item.SetIsEventItem(true);
+                    }
+                }
             }
         }
-            }
         return itemString;
     }
     bool IsRunning()
-        {
+    {
         return ( m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_RUN );
-        }
+    }
     bool IsWalking()
-        {
+    {
         return ( m_MovementState.m_iMovement == DayZPlayerConstants.MOVEMENTIDX_WALK );
-        }
+    }
     void SetBioZoneStatus(bool isInZone)
     {
         m_IsInBioZone = isInZone;
@@ -231,7 +234,7 @@ modded class PlayerBase
     {
         if (GetPlayerRadiationProtection() > 5)
         {
-        return true;
+            return true;
         }
         return false;
     }
@@ -247,7 +250,7 @@ modded class PlayerBase
     {
         if (IsAlive() && m_FliesEff)
         {
-        return true;
+            return true;
         }
         return false;
     }
@@ -293,19 +296,19 @@ modded class PlayerBase
         return m_IsNearComfortHeatSource;
     }
     override void ProcessFeetDamageServer(int pUserInt)
-        {
+    {
         if (SRP_IgnoreShoeDamage())
         {
-        return;
+            return;
         }
         super.ProcessFeetDamageServer(pUserInt);
     };
 
     // overrides weight limit checks for stamina
     override float GetPlayerLoad()
-        {
-            return 0;
-        }
+    {
+        return 0;
+    }
 
     float GetAimingLR()
     {
@@ -332,7 +335,7 @@ modded class PlayerBase
         EntityAI shoes = FindAttachmentBySlotName("Feet");
         if (shoes && shoes.GetType() == "Sneakers_Skylar_Biozone")
         {
-        return true;
+            return true;
         }
         return false;
     }
@@ -352,9 +355,9 @@ modded class PlayerBase
     {
         // Print("SRP Modded Playerbase:: TryYawn chance to yawn: " + chance);
         if (IsMale()) {
-        PlaySoundSet(m_SleepSounds, GetMaleYawns().GetRandomElement(), 0, 0);
+            PlaySoundSet(m_SleepSounds, GetMaleYawns().GetRandomElement(), 0, 0);
         } else {
-        PlaySoundSet(m_SleepSounds, GetFemaleYawns().GetRandomElement(), 0, 0);
+            PlaySoundSet(m_SleepSounds, GetFemaleYawns().GetRandomElement(), 0, 0);
         }
     }
 
@@ -399,57 +402,56 @@ modded class PlayerBase
     }
     //=========================================================== PLAYER STATS
     PlayerStat<float> GetStatTiredness()
+    {
+        if( !m_StatTiredness && GetPlayerStats() )
         {
-            if( !m_StatTiredness && GetPlayerStats() )
-            {
-                m_StatTiredness = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.TIREDNESS));
-            }
-            return m_StatTiredness;
+            m_StatTiredness = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.TIREDNESS));
         }
+        return m_StatTiredness;
+    }
     PlayerStat<float> GetStatAlcoholism()
+    {
+        if( !m_StatAlcoholism && GetPlayerStats() )
         {
-            if( !m_StatAlcoholism && GetPlayerStats() )
-            {
-                m_StatAlcoholism = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.ALCOHOLISM));
-            }
-            return m_StatAlcoholism;
+            m_StatAlcoholism = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.ALCOHOLISM));
         }
+        return m_StatAlcoholism;
+    }
     PlayerStat<float> GetStatSanity()
+    {
+        if( !m_StatSanity && GetPlayerStats() )
         {
-            if( !m_StatSanity && GetPlayerStats() )
-            {
-                m_StatSanity = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.SANITY));
-            }
-            return m_StatSanity;
+            m_StatSanity = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.SANITY));
         }
+        return m_StatSanity;
+    }
     PlayerStat<float> GetStatDrugDependency()
+    {
+        if( !m_StatDrugDependency && GetPlayerStats() )
         {
-            if( !m_StatDrugDependency && GetPlayerStats() )
-            {
-                m_StatDrugDependency = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.DRUGDEPENDENCY));
-            }
-            return m_StatDrugDependency;
+            m_StatDrugDependency = PlayerStat<float>.Cast(GetPlayerStats().GetStatObject(SRP_EPlayerStats_current.DRUGDEPENDENCY));
         }
-
+        return m_StatDrugDependency;
+    }
     EStatLevels GetStatLevelTiredness()
-        {
-            float tiredness = GetStatTiredness().Get();
-            return GetStatLevel(tiredness, PlayerConstants.SL_TIREDNESS_CRITICAL, PlayerConstants.SL_TIREDNESS_LOW, PlayerConstants.SL_TIREDNESS_NORMAL, PlayerConstants.SL_TIREDNESS_HIGH);
-        }
+    {
+        float tiredness = GetStatTiredness().Get();
+        return GetStatLevel(tiredness, PlayerConstants.SL_TIREDNESS_CRITICAL, PlayerConstants.SL_TIREDNESS_LOW, PlayerConstants.SL_TIREDNESS_NORMAL, PlayerConstants.SL_TIREDNESS_HIGH);
+    }
     EStatLevels GetStatLevelAlcoholism()
-        {
-            float alcoholism = GetStatAlcoholism().Get();
-            return GetStatLevel(alcoholism, PlayerConstants.SL_ALCOHOLISM_CRITICAL, PlayerConstants.SL_ALCOHOLISM_LOW, PlayerConstants.SL_ALCOHOLISM_NORMAL, PlayerConstants.SL_ALCOHOLISM_HIGH);
-        }
+    {
+        float alcoholism = GetStatAlcoholism().Get();
+        return GetStatLevel(alcoholism, PlayerConstants.SL_ALCOHOLISM_CRITICAL, PlayerConstants.SL_ALCOHOLISM_LOW, PlayerConstants.SL_ALCOHOLISM_NORMAL, PlayerConstants.SL_ALCOHOLISM_HIGH);
+    }
     EStatLevels GetStatLevelSanity()
-        {
-            float sanity = GetStatSanity().Get();
-            return GetStatLevel(sanity, PlayerConstants.SL_SANITY_CRITICAL, PlayerConstants.SL_SANITY_LOW, PlayerConstants.SL_SANITY_NORMAL, PlayerConstants.SL_SANITY_HIGH);
-        }
+    {
+        float sanity = GetStatSanity().Get();
+        return GetStatLevel(sanity, PlayerConstants.SL_SANITY_CRITICAL, PlayerConstants.SL_SANITY_LOW, PlayerConstants.SL_SANITY_NORMAL, PlayerConstants.SL_SANITY_HIGH);
+    }
     EStatLevels GetStatLevelDrugDependency()
-        {
-            float drugDependency = GetStatDrugDependency().Get();
-            return GetStatLevel(drugDependency, PlayerConstants.SL_DRUGDEPENDENCY_CRITICAL, PlayerConstants.SL_DRUGDEPENDENCY_LOW, PlayerConstants.SL_DRUGDEPENDENCY_NORMAL, PlayerConstants.SL_DRUGDEPENDENCY_HIGH);
-        }
+    {
+        float drugDependency = GetStatDrugDependency().Get();
+        return GetStatLevel(drugDependency, PlayerConstants.SL_DRUGDEPENDENCY_CRITICAL, PlayerConstants.SL_DRUGDEPENDENCY_LOW, PlayerConstants.SL_DRUGDEPENDENCY_NORMAL, PlayerConstants.SL_DRUGDEPENDENCY_HIGH);
+    }
     //=========================================================== END
 };

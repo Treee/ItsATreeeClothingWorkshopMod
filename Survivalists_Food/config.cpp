@@ -2459,7 +2459,7 @@ class CfgVehicles
         model = "\dz\gear\food\food_can_open.p3d";
         rotationFlags = 63;
         itemSize[] = { 1,2 };
-        weight = 40;
+        weight = 4;
         varQuantityInit = 100;
         varQuantityMin = 0;
         varQuantityMax = 400;
@@ -2761,7 +2761,7 @@ class CfgVehicles
         model = "\dz\gear\food\food_can.p3d";
         rotationFlags = 63;
         itemSize[] = { 1,2 };
-        weight = 40;
+        weight = 4;
         varQuantityInit = 0;
         varQuantityMin = 0;
         varQuantityMax = 400;
@@ -2888,7 +2888,7 @@ class CfgVehicles
         descriptionShort = "An opened can of preserved food. Who knows how long it has been in there.";
         model = "\dz\gear\food\food_can_open.p3d";
         itemSize[] = { 1,2 };
-        weight = 40;
+        weight = 4;
         varQuantityInit = 0;
         varQuantityMin = 0;
         varQuantityMax = 400;

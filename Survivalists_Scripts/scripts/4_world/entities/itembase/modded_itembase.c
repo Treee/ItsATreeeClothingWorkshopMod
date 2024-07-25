@@ -178,6 +178,9 @@ modded class ItemBase
         if (!super.CanRemoveFromCargo(parent))
             return false; // short circuit items we already cannot take out
 
+        if (IsEventItem())
+            return false; // event items are off limits
+
         PlayerBase itemParent;
         if (Class.CastTo(itemParent, GetHierarchyRootPlayer()))
         {
@@ -190,6 +193,9 @@ modded class ItemBase
     {
         if (!super.CanDetachAttachment(parent))
             return false; // short circuit items we already cannot take out
+
+        if (IsEventItem())
+            return false; // event items are off limits
 
         PlayerBase itemParent;
         if (Class.CastTo(itemParent, GetHierarchyRootPlayer()))
