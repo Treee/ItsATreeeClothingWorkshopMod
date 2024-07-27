@@ -448,7 +448,7 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
     }
     SRP_CraftableItem Register_Weapon_Boomstick_Recipe()
     {
-        SRP_CraftableItem craftableItem = new SRP_CraftableItem("Boomstick", "Boom Stick", 1, 0.5);
+        SRP_CraftableItem craftableItem = new SRP_CraftableItem("Boomstick", "Mossberg 500", 1, 0.5);
 
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_GunBarrel", SRP_COLOR.MEDIUM, 1));
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MainReceiver", SRP_COLOR.SEMISMALL, 1));
@@ -503,7 +503,7 @@ class SRP_AmmoRecipes extends SRP_RecipeManager
     }
     SRP_CraftableItem Register_Weapon_Magnum_Recipe()
     {
-        SRP_CraftableItem craftableItem = new SRP_CraftableItem("Magnum", ".357 Magnum", 1, 0.5);
+        SRP_CraftableItem craftableItem = new SRP_CraftableItem("Magnum", "L&S .357 Revolver", 1, 0.5);
 
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_GunBarrel", SRP_COLOR.RIFLEDMEDIUM, 1));
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_MainReceiver", SRP_COLOR.SEMISMALL, 1));

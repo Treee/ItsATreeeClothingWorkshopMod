@@ -45,7 +45,7 @@ modded class Environment
 
         if (m_Player && m_HasRadioactiveFuel)
         {
-            if (!m_Player.IsPlayerMutant() || isBoosted)
+            if (!m_Player.IsPlayerMutant())
             {
                 m_Player.GetStatWater().Add(-0.5 * pDelta);
                 m_Player.GetStatEnergy().Add(-0.5 * pDelta);
