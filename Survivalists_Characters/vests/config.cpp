@@ -87,13 +87,6 @@ class CfgVehicles
         itemSize[] = { 6,4 };
         itemsCargoSize[] = { 6,4 };
         repairCosts[] = { 30,25,25 };
-        inventorySlot[] +=
-        {
-            "VestHolster",
-                "Belt_Right",
-                "Belt_Back",
-                "VestPouch"
-        };
         rootClassName = "PlateCarrierPouches";
         colorVariants[] =
         {

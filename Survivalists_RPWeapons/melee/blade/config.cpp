@@ -4696,7 +4696,7 @@ class CfgVehicles
             "SRP_Melee10",
         };
         hiddenSelections[] = { "zbytek", "leather" };
-        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_co.paa" };
+        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_co.paa", "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_co.paa" };
         // hiddenSelectionsMaterials[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword.rvmat" };
         class InventorySlotsOffsets
         {
@@ -4839,7 +4839,7 @@ class CfgVehicles
             "SRP_Melee10",
         };
         hiddenSelections[] = { "zbytek", "leather" };
-        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_co.paa" };
+        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_co.paa", "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_co.paa" };
         // hiddenSelectionsMaterials[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword.rvmat" };
         class InventorySlotsOffsets
         {
@@ -4960,13 +4960,13 @@ class CfgVehicles
     class SRP_Norguldar_Investor : SRP_Norguldar_ColorBase
     {
         scope = 2;
-        hiddenSelections[] = { "zbytek", "leather" };
+        hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_investor_co.paa" };
     };
     class SRP_NorguldarSwordSheath_Investor : SRP_NorguldarSwordSheath_ColorBase
     {
         scope = 2;
-        hiddenSelections[] = { "zbytek", "leather" };
+        hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_investor_co.paa" };
     };
 
