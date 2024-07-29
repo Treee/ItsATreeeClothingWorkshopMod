@@ -4666,6 +4666,310 @@ class CfgVehicles
             "Survivalists_RPWeapons\melee\blade\data\srp_deersword_alexcow_co.paa",
         };
     };
+
+    class SRP_Norguldar_ColorBase : Inventory_Base
+    {
+        scope = 0;
+        displayName = "Replica Norguldar";
+        descriptionShort = "A forged replica sword; Norguldar.";
+        model = "Survivalists_RPWeapons\melee\blade\srp_norguldar.p3d";
+        rotationFlags = 12;
+        weight = 130;
+        itemSize[] = { 1,5 };
+        repairableWithKits[] = { 4 };
+        repairCosts[] = { 50 };
+        itemBehaviour = 2;
+        inventorySlot[] =
+        {
+            "Shoulder",
+            "Melee",
+            "SRP_NorguldarSword",
+            "SRP_Melee1",
+            "SRP_Melee2",
+            "SRP_Melee3",
+            "SRP_Melee4",
+            "SRP_Melee5",
+            "SRP_Melee6",
+            "SRP_Melee7",
+            "SRP_Melee8",
+            "SRP_Melee9",
+            "SRP_Melee10",
+        };
+        hiddenSelections[] = { "zbytek", "leather" };
+        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_co.paa" };
+        // hiddenSelectionsMaterials[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword.rvmat" };
+        class InventorySlotsOffsets
+        {
+            class Melee
+            {
+                position[] = { -0.3,0.35,-0.027 };
+                orientation[] = { 90,-35,0 };
+            };
+            class Shoulder
+            {
+                position[] = { 0.06,0,-0.33 };//FB,UD,LR
+                orientation[] = { 0,-20,0 };//x,y,z
+            };
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 600;
+                    healthLevels[] =
+                    {
+                        {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword.rvmat"}},
+                        {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword.rvmat"}},
+                        {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword_damage.rvmat"}},
+                        {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword_damage.rvmat"}},
+                        {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword_destruct.rvmat"}}
+                    };
+                };
+            };
+        };
+        isMeleeWeapon = 1;
+        suicideAnim = "fireaxe";
+        class MeleeModes
+        {
+            class Default
+            {
+                ammo = "SRP_MeleeSlash_1HSword";
+                range = 1.1;
+            };
+            class Heavy
+            {
+                ammo = "SRP_MeleeSlash_1HSwordHeavy";
+                range = 1.1;
+            };
+            class Sprint
+            {
+                ammo = "SRP_MeleeSlash_1HSwordHeavy";
+                range = 3.3;
+            };
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickup_light
+                {
+                    soundSet = "hatchet_pickup_light_SoundSet";
+                    id = 796;
+                };
+                class pickup
+                {
+                    soundSet = "hatchet_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "woodaxe_drop_SoundSet";
+                    id = 898;
+                };
+                class FirefighterAxe_loop_SoundSet
+                {
+                    soundSet = "FirefighterAxe_loop_SoundSet";
+                    id = 1121;
+                };
+                class FirefighterAxe_end_SoundSet
+                {
+                    soundSet = "FirefighterAxe_end_SoundSet";
+                    id = 1122;
+                };
+                class ShoulderR_Hide
+                {
+                    soundset = "ShoulderR_Hide_SoundSet";
+                    id = 1210;
+                };
+                class ShoulderR_Show
+                {
+                    soundset = "ShoulderR_Show_SoundSet";
+                    id = 1211;
+                };
+                class animalSkinning_in
+                {
+                    soundSet = "animalSkinning_in_SoundSet";
+                    id = 516;
+                };
+                class animalSkinning
+                {
+                    soundSet = "animalSkinning_SoundSet";
+                    id = 517;
+                };
+                class animalSkinning_out
+                {
+                    soundSet = "animalSkinning_out_SoundSet";
+                    id = 518;
+                };
+            };
+        };
+    };
+    class SRP_NorguldarSwordSheath_ColorBase : Inventory_Base
+    {
+        scope = 0;
+        displayName = "Norguldar Sheath";
+        descriptionShort = "A sword sheath. Holds a Norguldar.";
+        model = "Survivalists_RPWeapons\melee\blade\srp_norguldar_sheath.p3d";
+        rotationFlags = 12;
+        weight = 130;
+        itemSize[] = { 1,5 };
+        itemBehaviour = 2;
+        repairableWithKits[] = { 5,8 };
+        repairCosts[] = { 50,25 };
+        attachments[] =
+        {
+          "SRP_NorguldarSword",
+        };
+        inventorySlot[] =
+        {
+            "SRP_NorguldarSheath",
+            "Shoulder",
+            "Melee",
+            "SRP_Melee1",
+            "SRP_Melee2",
+            "SRP_Melee3",
+            "SRP_Melee4",
+            "SRP_Melee5",
+            "SRP_Melee6",
+            "SRP_Melee7",
+            "SRP_Melee8",
+            "SRP_Melee9",
+            "SRP_Melee10",
+        };
+        hiddenSelections[] = { "zbytek", "leather" };
+        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_co.paa" };
+        // hiddenSelectionsMaterials[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword.rvmat" };
+        class InventorySlotsOffsets
+        {
+            class Melee
+            {
+                position[] = { -0.2,0.55,-0.027 };
+                orientation[] = { 90,145,0 };
+            };
+            class Shoulder
+            {
+                position[] = { 0.06,0.2,-0.2 };//FB,UD,LR
+                orientation[] = { 0,155,0 };//x,y,z
+            };
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 600;
+                    healthLevels[] =
+                    {
+                        {1.0,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword.rvmat"}},
+                        {0.69999999,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword.rvmat"}},
+                        {0.5,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword_damage.rvmat"}},
+                        {0.30000001,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword_damage.rvmat"}},
+                        {0.0,{"Survivalists_RPWeapons\melee\blade\data\srp_steelsword_destruct.rvmat"}}
+                    };
+                };
+            };
+        };
+        isMeleeWeapon = 1;
+        class MeleeModes
+        {
+            class Default
+            {
+                ammo = "MeleeBat";
+                range = 1.8;
+            };
+            class Heavy
+            {
+                ammo = "MeleeBat_Heavy";
+                range = 1.8;
+            };
+            class Sprint
+            {
+                ammo = "MeleeBat_Heavy";
+                range = 3.7;
+            };
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickup_light
+                {
+                    soundSet = "hatchet_pickup_light_SoundSet";
+                    id = 796;
+                };
+                class pickup
+                {
+                    soundSet = "hatchet_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "woodaxe_drop_SoundSet";
+                    id = 898;
+                };
+                class FirefighterAxe_loop_SoundSet
+                {
+                    soundSet = "FirefighterAxe_loop_SoundSet";
+                    id = 1121;
+                };
+                class FirefighterAxe_end_SoundSet
+                {
+                    soundSet = "FirefighterAxe_end_SoundSet";
+                    id = 1122;
+                };
+                class ShoulderR_Hide
+                {
+                    soundset = "ShoulderR_Hide_SoundSet";
+                    id = 1210;
+                };
+                class ShoulderR_Show
+                {
+                    soundset = "ShoulderR_Show_SoundSet";
+                    id = 1211;
+                };
+                class animalSkinning_in
+                {
+                    soundSet = "animalSkinning_in_SoundSet";
+                    id = 516;
+                };
+                class animalSkinning
+                {
+                    soundSet = "animalSkinning_SoundSet";
+                    id = 517;
+                };
+                class animalSkinning_out
+                {
+                    soundSet = "animalSkinning_out_SoundSet";
+                    id = 518;
+                };
+            };
+        };
+    };
+
+    class SRP_Norguldar_Basic : SRP_Norguldar_ColorBase
+    {
+        scope = 2;
+    };
+    class SRP_NorguldarSwordSheath_Basic : SRP_NorguldarSwordSheath_ColorBase
+    {
+        scope = 2;
+    };
+    class SRP_Norguldar_Investor : SRP_Norguldar_ColorBase
+    {
+        scope = 2;
+        hiddenSelections[] = { "zbytek", "leather" };
+        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_investor_co.paa" };
+    };
+    class SRP_NorguldarSwordSheath_Investor : SRP_NorguldarSwordSheath_ColorBase
+    {
+        scope = 2;
+        hiddenSelections[] = { "zbytek", "leather" };
+        hiddenSelectionsTextures[] = { "Survivalists_RPWeapons\melee\blade\data\srp_steelsword_investor_co.paa" };
+    };
+
     //================================================================== 2H SWORDS
     class SRP_BerserkSword : Inventory_Base
     {
