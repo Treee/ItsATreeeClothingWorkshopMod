@@ -3266,6 +3266,8 @@ class CfgVehicles
         weight = 1200;
         itemSize[] = { 3,2 };
         itemsCargoSize[] = { 1,1 };
+        repairableWithKits[] = { 5,2 };
+        repairCosts[] = { 30,25 };
         noNVStrap = 0;
         varWetMax = 0.249;
         heatIsolation = 0.25;
@@ -3349,6 +3351,8 @@ class CfgVehicles
         weight = 1200;
         itemSize[] = { 3,2 };
         itemsCargoSize[] = { 1,1 };
+        repairableWithKits[] = { 5,2 };
+        repairCosts[] = { 30,25 };
         noNVStrap = 0;
         varWetMax = 0.249;
         heatIsolation = 0.25;
