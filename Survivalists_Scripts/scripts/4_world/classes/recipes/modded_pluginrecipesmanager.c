@@ -478,10 +478,6 @@ modded class PluginRecipesManager
       RegisterRecipe(new Craft_SRP_CraftingMaterial_Mortar_Crude);
       RegisterRecipe(new Craft_SRP_CraftingMaterial_Cement_Crude);
 
-      // RegisterRecipe(new Craft_SRP_StoneForgeWorkbenchStarter_Kit);
-      RegisterRecipe(new Craft_SRP_StoneForgeWorkbenchFinisher_Kit);
-      RegisterRecipe(new Craft_SRP_StoneForgeWorkbench_Kit);
-
       RegisterRecipe(new Craft_SRP_MetalCoins);
       RegisterRecipe(new Craft_SRP_ForgeIngotPlate_ColorBase);
       RegisterRecipe(new Craft_SRP_ForgeIngotRod_ColorBase);
