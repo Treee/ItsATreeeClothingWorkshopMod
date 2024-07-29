@@ -46,7 +46,8 @@ modded class ActionUnpackGift
                 }
             }
             containerToBury.GetInventory().CreateInInventory(MiscGameplayFunctions.GetRandomTeddyType());
-            containerToBury.GetInventory().CreateInInventory(MiscGameplayFunctions.GetRandomCard());
+            containerToBury.GetInventory().CreateInInventory(MiscGameplayFunctions.GetRandomPlayingCardType());
+            containerToBury.GetInventory().CreateInInventory(MiscGameplayFunctions.GetRandomTarotCardType());
 
             ItemBase rewardNote = ItemBase.Cast(containerToBury.GetInventory().CreateInInventory("WrittenNote"));
             rewardNote.GetWrittenNoteData().InitNoteInfo(null, rewardNote);
