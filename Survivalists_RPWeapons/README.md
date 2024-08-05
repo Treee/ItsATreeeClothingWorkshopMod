@@ -81,3 +81,5 @@
 - "(FREE) Turkish fantasy sword" (https://skfb.ly/6ZxWB) by Joan LP is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 - "Cog Bat" (https://skfb.ly/oLZxz) by maxdebil632 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+- "Jawblade - Greatsword" (https://skfb.ly/oWzzs) by Fatih Yavuz is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

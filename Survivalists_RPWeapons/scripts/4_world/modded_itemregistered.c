@@ -73,6 +73,7 @@ modded class ModItemRegisterCallbacks
         pType.AddItemInHandsProfileIK("SRP_BrokenPinesClaymore_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");
         pType.AddItemInHandsProfileIK("SRP_CrossGreatsword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");
         pType.AddItemInHandsProfileIK("SRP_HolyGreatsword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");
+        pType.AddItemInHandsProfileIK("SRP_JawGreatsword_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");
         pType.AddItemInHandsProfileIK("SRP_CogBat_ColorBase", "dz/anims/workspaces/player/player_main/weapons/player_main_2h_sword.asi", pBehavior,	"dz/anims/anm/player/ik/two_handed/medieval_sword.anm");
 
         //==================================================== BLUNT WEAPONS

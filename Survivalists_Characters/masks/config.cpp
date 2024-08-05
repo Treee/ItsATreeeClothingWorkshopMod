@@ -2522,7 +2522,7 @@ class CfgVehicles
     {
         scope = 2;
         displayName = "Geisha Mask";
-        descriptionShort = "Espen Industries. A replica of an Ghost in the Shell Geisha mask";
+        descriptionShort = "Espen Industries. A replica of a Ghost in the Shell Geisha mask";
         model = "Survivalists_Characters\masks\srp_geishamask_g.p3d";
         inventorySlot[] =
         {
