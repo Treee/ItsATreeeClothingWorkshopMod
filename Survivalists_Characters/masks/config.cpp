@@ -2617,6 +2617,120 @@ class CfgVehicles
         };
     };
 
+
+    class SRP_Moustache_ColorBase : Clothing
+    {
+        scope = 0;
+        displayName = "Moustache";
+        descriptionShort = "Espen Industries. Potentially ethically sourced hair for a wearable moustache";
+        model = "Survivalists_Characters\masks\srp_moustache_g.p3d";
+        inventorySlot[] =
+        {
+            "Mask",
+            "SRP_Mask1",
+            "SRP_Mask2",
+            "SRP_Mask3",
+            "SRP_Mask4",
+            "SRP_Mask5",
+            "SRP_Mask6",
+            "SRP_Mask7",
+            "SRP_Mask8",
+            "SRP_Mask9",
+            "SRP_Mask10"
+        };
+        itemInfo[] =
+        {
+            "Clothing",
+        };
+        weight = 50;
+        itemSize[] = { 2,1 };
+        ragQuantity = 0;
+        varWetMax = 0.75;
+        heatIsolation = 0.50;
+        repairableWithKits[] = { 5,2 };
+        repairCosts[] = { 30,25 };
+        rootClassName = "SRP_Moustache";
+        colorVariants[] =
+        {
+            "Basic",
+        };
+        hiddenSelections[] =
+        {
+            "zbytek"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_Characters\masks\data\srp_mustache_co.paa"
+        };
+        class ClothingTypes
+        {
+            male = "Survivalists_Characters\masks\srp_moustache_m.p3d";
+            female = "Survivalists_Characters\masks\srp_moustache_m.p3d";
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 100;
+                    healthLevels[] =
+                    {
+                        {1.0,	{	"Survivalists_Characters\masks\data\srp_mustache.rvmat"}},
+                        {0.7,	{	"Survivalists_Characters\masks\data\srp_mustache.rvmat"}},
+                        {0.5,	{	"Survivalists_Characters\masks\data\srp_mustache.rvmat"}},
+                        {0.3,	{	"Survivalists_Characters\masks\data\srp_mustache.rvmat"}},
+                        {0.0,	{	"Survivalists_Characters\masks\data\srp_mustache.rvmat"}}
+                    };
+                };
+            };
+        };
+        class Protection
+        {
+            biological = 0.1;
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickUpItem
+                {
+                    soundSet = "Shirt_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "Shirt_drop_SoundSet";
+                    id = 898;
+                };
+            };
+        };
+    };
+    class SRP_Moustache_Basic : SRP_Moustache_ColorBase
+    {
+        scope = 2;
+        hiddenSelections[] =
+        {
+            "zbytek"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_Characters\masks\data\srp_mustache_co.paa"
+        };
+    };
+    class SRP_Moustache_baaklavah : SRP_Moustache_ColorBase
+    {
+        scope = 2;
+        hiddenSelections[] =
+        {
+            "zbytek"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_Characters\masks\data\srp_mustache_co.paa"
+        };
+    };
+
     class SRP_SmokableWearable_Bamboo : Clothing
     {
         scope = 2;
