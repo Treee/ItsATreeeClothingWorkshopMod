@@ -1340,7 +1340,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
 
     SRP_CraftableItem Register_WoodenFurniture_DeskKit_Recipe()
     {
-        SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_desk", "Furniture Kit - Desk");
+        SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_desk_Kit", "Furniture Kit - Desk");
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1356,7 +1356,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     }
     SRP_CraftableItem Register_WoodenFurniture_AntiqueDeskKit_Recipe()
     {
-        SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_antiquedesk", "Furniture Kit - Antique Desk");
+        SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_antiquedesk_Kit", "Furniture Kit - Antique Desk");
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1373,7 +1373,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     }
     SRP_CraftableItem Register_WoodenFurniture_BedWithSheets_Recipe()
     {
-        SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BedSheets", "Furniture Kit - Bed With Sheets");
+        SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_BedSheets_Kit", "Furniture Kit - Bed With Sheets");
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
@@ -1391,7 +1391,7 @@ class SRP_WoodWorkbenchRecipes extends SRP_RecipeManager
     }
     SRP_CraftableItem Register_WoodenFurniture_TeaTable_Recipe()
     {
-        SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_TeaTable", "Furniture Kit - Tea Table");
+        SRP_CraftableItem craftableItem = new SRP_CraftableItem("SRP_Furniture_TeaTable_Kit", "Furniture Kit - Tea Table");
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodDrill", SRP_COLOR.NONE, 1));
         craftableItem.RegisterIngredient(new SRP_ItemRequirement("SRP_WoodClamp", SRP_COLOR.NONE, 1));
 
