@@ -6096,7 +6096,7 @@ class CfgVehicles
         descriptionShort = "A small card. Combine two to make a hand of cards for secrecy.";
         model = "Survivalists_Mods\gear\camping\srp_playingcard.p3d";
         color = "base";
-        weight = 250;
+        weight = 10;
         itemSize[] = { 1,1 };
         rotationFlags = 16;
         absorbency = 0.30000001;
