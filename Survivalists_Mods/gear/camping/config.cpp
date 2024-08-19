@@ -3471,9 +3471,10 @@ class CfgVehicles
         model = "Survivalists_Mods\gear\camping\srp_ladder_closed.p3d";
         itemBehaviour = 1;
         rotationFlags = 64;
+        weight = 17000;
         hiddenSelections[] =
         {
-      "zbytek"
+            "zbytek"
         };
         hiddenSelectionsTextures[] =
         {
@@ -3506,7 +3507,7 @@ class CfgVehicles
         descriptionShort = "A ladder that can be stood up.";
         model = "Survivalists_Mods\gear\camping\srp_ladder_opened.p3d";
         carveNavmesh = 1;
-        weight = 500;
+        weight = 17000;
         itemSize[] = { 15,10 };
         itemsCargoSize[] = { 0,0 };
         physLayer = "item_large";
@@ -3514,7 +3515,7 @@ class CfgVehicles
         itemBehaviour = 2;
         hiddenSelections[] =
         {
-      "zbytek"
+            "zbytek"
         };
         hiddenSelectionsTextures[] =
         {
