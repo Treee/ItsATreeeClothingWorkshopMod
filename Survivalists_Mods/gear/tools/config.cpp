@@ -1204,7 +1204,7 @@ class CfgVehicles
         itemSize[] = { 2,3 };
         absorbency = 0;
         rotationFlags = 16;
-        stackedUnit = "percentage";
+        stackedUnit = "g";
         quantityBar = 1;
         varQuantityInit = 100;
         varQuantityMin = 0;
