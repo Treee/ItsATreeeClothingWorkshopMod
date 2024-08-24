@@ -981,17 +981,17 @@ class CfgVehicles
         inventorySlot[] =
         {
             "Eyewear",
-      "Mask",
-      "SRP_Mask1",
-      "SRP_Mask2",
-      "SRP_Mask3",
-      "SRP_Mask4",
-      "SRP_Mask5",
-      "SRP_Mask6",
-      "SRP_Mask7",
-      "SRP_Mask8",
-      "SRP_Mask9",
-      "SRP_Mask10"
+            "Mask",
+            "SRP_Mask1",
+            "SRP_Mask2",
+            "SRP_Mask3",
+            "SRP_Mask4",
+            "SRP_Mask5",
+            "SRP_Mask6",
+            "SRP_Mask7",
+            "SRP_Mask8",
+            "SRP_Mask9",
+            "SRP_Mask10"
         };
         rotationFlags = 1;
         weight = 130;
@@ -999,7 +999,7 @@ class CfgVehicles
         ragQuantity = 1;
         varWetMax = 1;
         heatIsolation = 1;
-        repairableWithKits[] = { 5,2 };
+        repairableWithKits[] = { 5,8 };
         repairCosts[] = { 30,25 };
         hiddenSelections[] =
         {
