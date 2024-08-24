@@ -3398,7 +3398,7 @@ class CfgVehicles
         displayName = "Glass Display Hook";
         descriptionShort = "A hook meant for a display case. Outside of a display case, this hook can only be stored when nothing is attached.";
         model = "Survivalists_Mods\gear\containers\srp_displaycase_hook.p3d";
-        weight = 10000;
+        weight = 10;
         itemSize[] = { 1,2 };
         itemsCargoSize[] = { 0,0 };
         clothingType = "male";

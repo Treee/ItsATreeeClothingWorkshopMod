@@ -20,7 +20,8 @@ class CfgPatches
         {
           "DZ_Data",
           "DZ_Scripts",
-          "DZ_Gear_Food"
+          "DZ_Gear_Food",
+          "DadaFoods_Configs_Food_Raw"
         };
     };
 };
@@ -307,6 +308,7 @@ class CfgVehicles
     //================================== BASE GAME OVERRIDES
     class PowderedMilk : Edible_Base
     {
+        weight = 0.15;
         inventorySlot[] +=
         {
             "Ingredient1",
@@ -322,6 +324,7 @@ class CfgVehicles
     class Rice : Edible_Base
     {
         canBeSplit = 1;
+        weight = 0.12;
         itemSize[] = { 2,1 };
         inventorySlot[] +=
         {
@@ -337,6 +340,7 @@ class CfgVehicles
     };
     class Marmalade : Edible_Base
     {
+        weight = 0.625;
         inventorySlot[] +=
         {
             "Ingredient1",
@@ -351,6 +355,7 @@ class CfgVehicles
     };
     class Honey : Edible_Base
     {
+        weight = 0.625;
         inventorySlot[] +=
         {
             "Ingredient1",
