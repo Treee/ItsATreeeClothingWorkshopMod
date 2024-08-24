@@ -7,7 +7,7 @@ class IAT_ActionSelectReadBook extends ActionSingleUseBase
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_CROUCH | DayZPlayerConstants.STANCEMASK_ERECT | DayZPlayerConstants.STANCEMASK_PRONE;
         if (!GetGame().IsDedicatedServer())
         {
-        GetVariantManager().GetOnUpdateInvoker().Insert(OnUpdateActions);
+            GetVariantManager().GetOnUpdateInvoker().Insert(OnUpdateActions);
         }
 	}
 	override void CreateConditionComponents()

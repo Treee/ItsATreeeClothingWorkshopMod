@@ -15,7 +15,7 @@ class CfgVehicles
 {
     class ItemBook;
 
-    class : ItemBook
+    class IAT_LiteraryDevices_Book_Colorbase : ItemBook
     {
         scope = 0;
         author = "Base";

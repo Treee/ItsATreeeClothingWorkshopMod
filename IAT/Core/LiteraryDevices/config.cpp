@@ -31,8 +31,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-          "DZ_Data",
-          "DZ_Scripts",
+            "DZ_Data",
+            "DZ_Scripts",
         };
     };
 };
