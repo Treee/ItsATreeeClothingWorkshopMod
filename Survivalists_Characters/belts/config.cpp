@@ -1017,6 +1017,80 @@ class CfgVehicles
             };
         };
     };
+    class SRP_HuskyTailBelt_ColorBase : Clothing
+    {
+        scope = 0;
+        displayName = "Husky Tail Belt";
+        descriptionShort = "A leather belt a tail on the back.";
+        model = "Survivalists_Characters\belts\srp_huskytail_g.p3d";
+        inventorySlot[] +=
+        {
+            "Extra",
+                "Hips"
+        };
+        itemInfo[] =
+        {
+            "Clothing",
+            "Hips"
+        };
+        weight = 1000;
+        itemSize[] = { 1,4 };
+        itemsCargoSize[] = { 0,0 };
+        absorbency = 0;
+        heatIsolation = 0.3;
+        repairableWithKits[] = { 3 };
+        repairCosts[] = { 25 };
+        simulation = "clothing";
+        vehicleClass = "Clothing";
+        hiddenSelections[] =
+        {
+            "zbytek",
+            "personality"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Survivalists_Characters\belts\data\srp_huskytail_co.paa"
+        };
+        class ClothingTypes
+        {
+            male = "Survivalists_Characters\belts\srp_huskytail_m.p3d";
+            female = "Survivalists_Characters\belts\srp_huskytail_m.p3d";
+        };
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 100;
+                    healthLevels[] =
+                    {
+                        {1.0,	{	"Survivalists_Characters\belts\data\srp_huskytail.rvmat"}},
+                        {0.7,	{	"Survivalists_Characters\belts\data\srp_huskytail.rvmat"}},
+                        {0.5,	{	"Survivalists_Characters\belts\data\srp_huskytail_damage.rvmat"}},
+                        {0.3,	{	"Survivalists_Characters\belts\data\srp_huskytail_damage.rvmat"}},
+                        {0.0,	{	"Survivalists_Characters\belts\data\srp_huskytail_destruct.rvmat"}}
+                    };
+                };
+            };
+        };
+        class AnimEvents
+        {
+            class SoundWeapon
+            {
+                class pickUpItem
+                {
+                    soundSet = "SmershVest_pickup_SoundSet";
+                    id = 797;
+                };
+                class drop
+                {
+                    soundset = "SmershVest_drop_SoundSet";
+                    id = 898;
+                };
+            };
+        };
+    };
 
     //============================== END
 };
