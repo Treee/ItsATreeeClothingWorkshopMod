@@ -470,16 +470,17 @@ modded class MiscGameplayFunctions
     static TStringArray GetSpawnableMags()
     {
         return {
-        "ttrpdmag",
-        "Mag_STANAG_60Rnd",
-        "Mag_STANAG_30Rnd",
-        "Mag_FAMAS_25Rnd",
-        "Mag_SVD_10Rnd",
-        "Mag_VSS_10Rnd",
-        "Mag_Saiga_5Rnd",
-        "Mag_Saiga_8Rnd",
-        "Mag_Saiga_Drum20Rnd",
-        "srp_aa12_basic_mag"
+            "ttrpdmag",
+            "Mag_STANAG_60Rnd",
+            "Mag_STANAG_30Rnd",
+            "Mag_FAMAS_25Rnd",
+            "Mag_SVD_10Rnd",
+            "Mag_VSS_10Rnd",
+            "Mag_Saiga_5Rnd",
+            "Mag_Saiga_8Rnd",
+            "Mag_Saiga_Drum20Rnd",
+            "srp_aa12_basic_mag",
+            "Mag_Vikhr_30Rnd"
         };
     }
     static TStringArray GetSpawnableAmmo()
