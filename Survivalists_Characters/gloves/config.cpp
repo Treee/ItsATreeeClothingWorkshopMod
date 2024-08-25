@@ -8,7 +8,8 @@ class CfgPatches
         requiredAddons[] =
         {
             "DZ_Characters",
-            "DZ_Characters_Gloves"
+            "DZ_Characters_Gloves",
+            "Fingerless_Gloves"
         };
     };
 };
@@ -166,6 +167,24 @@ class CfgVehicles
           "Brown",
           "Beige",
           "Threat"
+        };
+    };
+    //-------------------------------------MODDED OVERRIDE
+    class Fingerless_Gloves : WorkingGloves_ColorBase
+    {
+        rootClassName = "Fingerless_Gloves";
+        colorVariants[] =
+        {
+          "Brown"
+        };
+    };
+    class Fingerless_Gloves_Wool : Fingerless_Gloves
+    {
+        rootClassName = "Fingerless_Gloves_Wool";
+        colorVariants[] =
+        {
+          "Grey",
+          "Black"
         };
     };
     //====================================== CUSTOM STUFF
