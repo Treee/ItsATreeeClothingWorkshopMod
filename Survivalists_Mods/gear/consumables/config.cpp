@@ -169,7 +169,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 10;
-        varQuantityDestroyOnMin = 1;
+        // varQuantityDestroyOnMin = 1;
         varStackMax = 1;
         inventorySlot[] +=
         {
