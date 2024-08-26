@@ -9,6 +9,11 @@ class CfgPatches
         {
             "DZ_Data",
             "DZ_Gear_Consumables",
+            "Dressupbox_Retextures_Humanpelt",
+            "Dressupbox_Retextures_Cowboyboots",
+            "Dressupbox_Retextures_AlphaPelt",
+            "Dressupbox_Items",
+            "Dressupbox",
             "Survivalists_Mods",
         };
     };
@@ -164,7 +169,7 @@ class CfgVehicles
         varQuantityInit = 1;
         varQuantityMin = 0;
         varQuantityMax = 10;
-        varQuantityDestroyOnMin = 1;
+        // varQuantityDestroyOnMin = 1;
         varStackMax = 1;
         inventorySlot[] +=
         {
