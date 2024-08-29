@@ -1,95 +1,128 @@
-class SRP_FreshWaterFish_Base extends Edible_Base
+enum SRP_FISH_SIZE
 {
-  string GetFilletType()
-  {
-    TStringArray parts = {};
-    GetType().Split("_", parts);
-    if (parts.Count() > 1)
+    SMALL = 1,
+    MEDIUM,
+    LARGE,
+    EPIC
+}
+class SRP_Fish_Base extends Edible_Base
+{
+    protected int m_FishSize = 1;
+    protected string m_FilletType = "MackerelFilletMeat";
+
+    void SRP_FreshWaterFish_Base()
     {
-      Print("fillet: " + string.Format("SRP_FreshWaterFishFilletMeat_%1", parts.Get(1)));
-      return string.Format("SRP_FreshWaterFishFilletMeat_%1", parts.Get(1));
+        Print("New object " + GetType());
+
+        string fishType = GetType();
+        fishType.ToLower();
+        if (fishType.Contains("_medium"))
+        {
+            SetScale(1.25);
+            m_FishSize = 2;
+        }
+        else if (fishType.Contains("_large"))
+        {
+            SetScale(1.65);
+            m_FishSize = 3;
+        }
+        else if (fishType.Contains("_epic"))
+        {
+            SetScale(2.2);
+            m_FishSize = 4;
+        }
+        else
+        {
+            SetScale(0.75);
+            m_FishSize = 1;
+        }
+
+        m_FilletType = "MackerelFilletMeat";
+        TStringArray parts = {};
+        fishType.Split("_", parts);
+        if (GetFilletPrefix() != "")
+        {
+            m_FilletType = string.Format("%1_%2", GetFilletPrefix(), parts.Get(1));
+        }
     }
-    return "";
-  }
-  override bool CanBeCookedOnStick()
+    string GetFilletPrefix()
+    {
+        return "";
+    }
+    string GetFilletType()
+    {
+        return m_FilletType;
+    }
+    int GetFishSize()
+    {
+        return m_FishSize;
+    }
+    bool IsFreshWater()
+    {
+        return false;
+    }
+    bool IsSaltWater()
+    {
+        return false;
+    }
+    override bool CanBeCookedOnStick()
 	{
 		return false;
 	}
 	override bool CanBeCooked()
 	{
 		return false;
-	}	
+	}
 	override bool IsCorpse()
 	{
 		return true;
-	}	
+	}
 	override bool CanDecay()
 	{
 		return true;
 	}
-  override bool CanProcessDecay()
+    override bool CanProcessDecay()
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
 	}
 	override void SetActions()
 	{
 		super.SetActions();
-		
+
 		AddAction(ActionForceFeed);
 		AddAction(ActionEatMeat);
-		
+
 		AddAction(ActionCreateIndoorFireplace);
 		AddAction(ActionCreateIndoorOven);
 	}
 };
 
-class SRP_SaltWaterFish_Base extends Edible_Base
+class SRP_FreshWaterFish_Base extends SRP_Fish_Base
 {
-  string GetFilletType()
-  {
-    TStringArray parts = {};
-    GetType().Split("_", parts);
-    if (parts.Count() > 1)
+    override string GetFilletPrefix()
     {
-      return string.Format("SRP_SaltWaterFishFilletMeat_%1", parts.Get(1));
+        return "SRP_FreshWaterFishFilletMeat";
     }
-    return "";
-  }
-  override bool CanBeCookedOnStick()
-	{
-		return false;
-	}
-	override bool CanBeCooked()
-	{
-		return false;
-	}	
-	override bool IsCorpse()
-	{
-		return true;
-	}		
-	override bool CanDecay()
-	{
-		return true;
-	}
-  override bool CanProcessDecay()
-	{
-		return !( GetAgents() & eAgents.FOOD_POISON );
-	}
-	override void SetActions()
-	{
-		super.SetActions();
-		
-		AddAction(ActionForceFeed);
-		AddAction(ActionEatMeat);
-		
-		AddAction(ActionCreateIndoorFireplace);
-		AddAction(ActionCreateIndoorOven);
-	}
+    override bool IsFreshWater()
+    {
+        return true;
+    }
+};
+class SRP_SaltWaterFish_Base extends SRP_Fish_Base
+{
+    override string GetFilletPrefix()
+    {
+        return "SRP_SaltWaterFishFilletMeat";
+    }
+    override bool IsSaltWater()
+    {
+        return true;
+    }
 };
 
 class SRP_FreshWaterFishFilletMeat_Base extends CarpFilletMeat
 {
-  override bool CanProcessDecay()
+    override bool CanProcessDecay()
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
 	}
@@ -103,7 +136,7 @@ class SRP_FreshWaterFishFilletMeat_Tilapia extends SRP_FreshWaterFishFilletMeat_
 
 class SRP_SaltWaterFishFilletMeat_Base extends MackerelFilletMeat
 {
-  override bool CanProcessDecay()
+    override bool CanProcessDecay()
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
 	}
