@@ -1,70 +1,26 @@
-enum SRP_FISH_SIZE
-{
-    SMALL = 1,
-    MEDIUM,
-    LARGE,
-    EPIC
-}
 class SRP_Fish_Base extends Edible_Base
 {
-    protected int m_FishSize = 1;
-    protected string m_FilletType = "MackerelFilletMeat";
+    protected int m_FishSize = -1;
+    protected float m_FishScale = 0;
+    protected string m_FilletType = "";
 
-    void SRP_FreshWaterFish_Base()
+    void SRP_Fish_Base()
     {
-        Print("New object " + GetType());
+        SetFishSize();
+        SetFilletType();
+    }
+    override void EEInit()
+	{
+		super.EEInit();
+        ScaleFish();
+	}
+    override void OnInventoryExit(Man player)
+	{
+		super.OnInventoryExit(player);
+        ScaleFish();
+	}
 
-        string fishType = GetType();
-        fishType.ToLower();
-        if (fishType.Contains("_medium"))
-        {
-            SetScale(1.25);
-            m_FishSize = 2;
-        }
-        else if (fishType.Contains("_large"))
-        {
-            SetScale(1.65);
-            m_FishSize = 3;
-        }
-        else if (fishType.Contains("_epic"))
-        {
-            SetScale(2.2);
-            m_FishSize = 4;
-        }
-        else
-        {
-            SetScale(0.75);
-            m_FishSize = 1;
-        }
-
-        m_FilletType = "MackerelFilletMeat";
-        TStringArray parts = {};
-        fishType.Split("_", parts);
-        if (GetFilletPrefix() != "")
-        {
-            m_FilletType = string.Format("%1_%2", GetFilletPrefix(), parts.Get(1));
-        }
-    }
-    string GetFilletPrefix()
-    {
-        return "";
-    }
-    string GetFilletType()
-    {
-        return m_FilletType;
-    }
-    int GetFishSize()
-    {
-        return m_FishSize;
-    }
-    bool IsFreshWater()
-    {
-        return false;
-    }
-    bool IsSaltWater()
-    {
-        return false;
-    }
+    //============================================== VANILLA OVERRIDE
     override bool CanBeCookedOnStick()
 	{
 		return false;
@@ -95,6 +51,85 @@ class SRP_Fish_Base extends Edible_Base
 		AddAction(ActionCreateIndoorFireplace);
 		AddAction(ActionCreateIndoorOven);
 	}
+    //============================================== CUSTOM
+    string GetFilletPrefix()
+    {
+        return "";
+    }
+    string GetFilletType()
+    {
+        return m_FilletType;
+    }
+    void SetFilletType()
+    {
+        m_FilletType = "MackerelFilletMeat";
+        TStringArray parts = {};
+        GetType().Split("_", parts);
+        if (GetFilletPrefix() != "")
+            m_FilletType = string.Format("%1_%2", GetFilletPrefix(), parts.Get(1));
+    }
+    void ScaleFish()
+    {
+        SetScale(m_FishScale);
+    }
+    // geometric function technicaly but this is probly faster than doing actual math
+    int GetNumberOfFillets()
+    {
+        switch(GetFishSize())
+        {
+            case 0:
+                return 1;
+            break;
+            case 1:
+                return 2;
+            break;
+            case 2:
+                return 4;
+            break;
+            case 3:
+                return 8;
+            break;
+        }
+        return 1;
+    }
+    int GetFishSize()
+    {
+        return m_FishSize;
+    }
+    void SetFishSize()
+    {
+        m_FishSize = 1;
+        float tempScale = 1.0;
+        string fishType = GetType();
+        fishType.ToLower();
+        if (fishType.Contains("_medium"))
+        {
+            m_FishSize = 2;
+            tempScale = 1.5;
+        }
+        else if (fishType.Contains("_large"))
+        {
+            m_FishSize = 3;
+            tempScale = 2.5;
+        }
+        else if (fishType.Contains("_epic"))
+        {
+            m_FishSize = 4;
+            tempScale = 4.5;
+        }
+        float normalizedQuantity = GetQuantity() / GetQuantityMax();
+        m_FishScale = normalizedQuantity * tempScale;
+        string debugText = string.Format("%1 scale: %2 norm: %3", GetType(), m_FishScale, normalizedQuantity);
+        Print(debugText);
+    }
+    bool IsFreshWater()
+    {
+        return false;
+    }
+    bool IsSaltWater()
+    {
+        return false;
+    }
 };
 
 class SRP_FreshWaterFish_Base extends SRP_Fish_Base
