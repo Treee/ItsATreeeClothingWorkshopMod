@@ -30,7 +30,7 @@ class CfgVehicles
         weight = 125;
         varQuantityInit = 250;
         varQuantityMax = 250;
-        stackedUnit = "percentage";
+        weightPerQuantityUnit = 0.5;
     };
     class Bitterlings_Medium : Bitterlings
     {
@@ -39,7 +39,7 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "percentage";
+        weightPerQuantityUnit = 0.5;
     };
     class Bitterlings_Large : Bitterlings
     {
@@ -48,7 +48,7 @@ class CfgVehicles
         weight = 375;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "percentage";
+        weightPerQuantityUnit = 0.5;
     };
     class Bitterlings_Epic : Bitterlings
     {
@@ -57,7 +57,7 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
-        stackedUnit = "percentage";
+        weightPerQuantityUnit = 0.5;
     };
 
     class Carp_Small : Carp
@@ -67,7 +67,7 @@ class CfgVehicles
         weight = 1000;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "percentage";
+        weightPerQuantityUnit = 0.5;
     };
     class Carp_Medium : Carp
     {
@@ -76,7 +76,7 @@ class CfgVehicles
         weight = 2000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
-        stackedUnit = "percentage";
+        weightPerQuantityUnit = 0.5;
     };
     class Carp_Large : Carp
     {
@@ -85,7 +85,7 @@ class CfgVehicles
         weight = 2500;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
-        stackedUnit = "percentage";
+        weightPerQuantityUnit = 0.5;
     };
     class Carp_Epic : Carp
     {
@@ -94,7 +94,7 @@ class CfgVehicles
         weight = 3000;
         varQuantityInit = 2000;
         varQuantityMax = 2000;
-        stackedUnit = "percentage";
+        weightPerQuantityUnit = 0.5;
     };
 
     //======================================================== CUSTOM FISH
@@ -114,6 +114,7 @@ class CfgVehicles
         varQuantityInit = 1000;
         varQuantityMin = 0;
         varQuantityMax = 1000;
+        weightPerQuantityUnit = 0.5;
         isMeleeWeapon = 1;
         class DamageSystem
         {
@@ -261,6 +262,8 @@ class CfgVehicles
         debug_ItemCategory = 6;
         rotationFlags = 34;
         weight = 0;
+        weightPerQuantityUnit = 0.75;
+        canBeSplit = 1;
         interactionWeight = 1;
         quantityBar = 1;
         itemSize[] = { 3,1 };
@@ -485,10 +488,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 7000;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -500,10 +502,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 12000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -515,7 +516,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 18000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -529,7 +530,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 3,3 };
-        weight = 1500;
+        weight = 22000;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
         hiddenSelections[] = { "zbytek" };
@@ -544,10 +545,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 7000;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -559,10 +559,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 12000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -574,7 +573,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 18000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -588,7 +587,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 3,3 };
-        weight = 1500;
+        weight = 22000;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
         hiddenSelections[] = { "zbytek" };
@@ -603,10 +602,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 7000;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -618,10 +616,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 12000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -633,7 +630,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 18000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -647,7 +644,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 3,3 };
-        weight = 1500;
+        weight = 22000;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
         hiddenSelections[] = { "zbytek" };
@@ -662,10 +659,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 7000;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -677,10 +673,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 12000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -692,7 +687,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 18000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -706,7 +701,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\trout.p3d";
         itemSize[] = { 3,3 };
-        weight = 1500;
+        weight = 22000;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
         hiddenSelections[] = { "zbytek" };
@@ -766,7 +761,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -781,7 +775,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -825,7 +818,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -840,7 +832,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -884,7 +875,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -899,7 +889,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -943,7 +932,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -958,7 +946,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1040,10 +1027,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 2500;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1055,10 +1041,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 3000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1070,7 +1055,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 4000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -1084,7 +1069,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 3,3 };
-        weight = 1500;
+        weight = 5500;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
         hiddenSelections[] = { "zbytek" };
@@ -1099,10 +1084,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 2500;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1114,10 +1098,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 3000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1129,7 +1112,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 4000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -1143,7 +1126,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 3,3 };
-        weight = 1500;
+        weight = 5500;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
         hiddenSelections[] = { "zbytek" };
@@ -1158,10 +1141,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 2500;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1173,10 +1155,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 3000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1188,7 +1169,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 4000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -1202,7 +1183,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 3,3 };
-        weight = 1500;
+        weight = 5500;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
         hiddenSelections[] = { "zbytek" };
@@ -1217,10 +1198,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 2500;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1232,10 +1212,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 3000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1247,7 +1226,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 4000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -1261,7 +1240,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 3,3 };
-        weight = 1500;
+        weight = 5500;
         varQuantityInit = 1500;
         varQuantityMax = 1500;
         hiddenSelections[] = { "zbytek" };
@@ -1276,10 +1255,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 1,2 };
-        weight = 250;
+        weight = 2500;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1291,10 +1269,9 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,2 };
-        weight = 500;
+        weight = 3000;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1306,7 +1283,7 @@ class CfgVehicles
         scope = 2;
         model = "Survivalists_Fishing\fish\freshwater\splake.p3d";
         itemSize[] = { 2,3 };
-        weight = 750;
+        weight = 4000;
         varQuantityInit = 1000;
         varQuantityMax = 1000;
         hiddenSelections[] = { "zbytek" };
@@ -1379,7 +1356,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1394,7 +1370,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1438,7 +1413,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1453,7 +1427,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1497,7 +1470,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1512,7 +1484,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1556,7 +1527,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1571,7 +1541,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1615,7 +1584,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1630,7 +1598,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1715,7 +1682,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1730,7 +1696,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1774,7 +1739,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1789,7 +1753,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1834,7 +1797,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1849,7 +1811,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1893,7 +1854,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1908,7 +1868,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1952,7 +1911,6 @@ class CfgVehicles
         weight = 250;
         varQuantityInit = 500;
         varQuantityMax = 500;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {
@@ -1967,7 +1925,6 @@ class CfgVehicles
         weight = 500;
         varQuantityInit = 750;
         varQuantityMax = 750;
-        stackedUnit = "g";
         hiddenSelections[] = { "zbytek" };
         hiddenSelectionsTextures[] =
         {

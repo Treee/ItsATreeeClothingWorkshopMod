@@ -1,26 +1,56 @@
 class SRP_Fish_Base extends Edible_Base
 {
+    protected bool m_IsAttached = false;
     protected int m_FishSize = -1;
     protected float m_FishScale = 0;
+    protected float m_DefaultFishScale = 1;
+
     protected string m_FilletType = "";
 
     void SRP_Fish_Base()
     {
         SetFishSize();
         SetFilletType();
+        RegisterNetSyncVariableBool("m_IsAttached");
     }
+    //============================================== VANILLA OVERRIDE
     override void EEInit()
 	{
 		super.EEInit();
-        ScaleFish();
+        GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( ScaleFish, 100, false);
 	}
     override void OnInventoryExit(Man player)
 	{
 		super.OnInventoryExit(player);
         ScaleFish();
 	}
+    override void OnWasDetached(EntityAI parent, int slot_id)
+	{
+		super.OnWasDetached(parent, slot_id);
+        ScaleFish();
+	}
+    override void OnQuantityChanged(float delta)
+	{
+        super.OnQuantityChanged(delta);
+        SetFishSize();
+        ScaleFish();
+	}
+    override void OnVariablesSynchronized()
+	{
+		super.OnVariablesSynchronized();
+        if (m_IsAttached)
+        {
+            ScaleFish();
+        }
+  	};
+    override string GetDisplayName()
+    {
+        string name = super.GetDisplayName();
+        if (m_FishSize == -1)
+            return name;
 
-    //============================================== VANILLA OVERRIDE
+        return string.Format("%1 %2", GetFishSizeDisplayName(), name);
+    }
     override bool CanBeCookedOnStick()
 	{
 		return false;
@@ -41,6 +71,10 @@ class SRP_Fish_Base extends Edible_Base
 	{
 		return !( GetAgents() & eAgents.FOOD_POISON );
 	}
+    override bool DisableVicinityIcon()
+	{
+		return m_IsAttached;
+	}
 	override void SetActions()
 	{
 		super.SetActions();
@@ -52,6 +86,10 @@ class SRP_Fish_Base extends Edible_Base
 		AddAction(ActionCreateIndoorOven);
 	}
     //============================================== CUSTOM
+    void SetIsAttached(bool state)
+    {
+        m_IsAttached = state;
+    }
     string GetFilletPrefix()
     {
         return "";
@@ -70,7 +108,11 @@ class SRP_Fish_Base extends Edible_Base
     }
     void ScaleFish()
     {
-        SetScale(m_FishScale);
+        if (GetGame().IsClient())
+        {
+            m_FishScale = CalculateFishScale();
+            SetScale(m_FishScale);
+        }
     }
     // geometric function technicaly but this is probly faster than doing actual math
     int GetNumberOfFillets()
@@ -96,31 +138,46 @@ class SRP_Fish_Base extends Edible_Base
     {
         return m_FishSize;
     }
+    float CalculateFishScale()
+    {
+        float normalizedQuantity = (GetQuantity() / GetQuantityMax()) - 0.5;
+        float tempScale = normalizedQuantity + m_DefaultFishScale;
+        // PrintFormat("%1 scale: %2 norm: %3 Max: %4 current: %5 :: %6 :: takeable? %7", GetType(), tempScale, normalizedQuantity, GetQuantityMax(), GetQuantity(), this, IsTakeable());
+        return tempScale;
+    }
     void SetFishSize()
     {
         m_FishSize = 1;
-        float tempScale = 1.0;
+        m_DefaultFishScale = 0.6;
         string fishType = GetType();
         fishType.ToLower();
         if (fishType.Contains("_medium"))
         {
             m_FishSize = 2;
-            tempScale = 1.5;
+            m_DefaultFishScale = 1.0;
         }
         else if (fishType.Contains("_large"))
         {
             m_FishSize = 3;
-            tempScale = 2.5;
+            m_DefaultFishScale = 1.6;
         }
         else if (fishType.Contains("_epic"))
         {
             m_FishSize = 4;
-            tempScale = 4.5;
+            m_DefaultFishScale = 2.5;
         }
-        float normalizedQuantity = GetQuantity() / GetQuantityMax();
-        m_FishScale = normalizedQuantity * tempScale;
-        string debugText = string.Format("%1 scale: %2 norm: %3", GetType(), m_FishScale, normalizedQuantity);
-        Print(debugText);
+    }
+    string GetFishSizeDisplayName()
+    {
+        if (m_FishSize == 1)
+            return "Small";
+        else if (m_FishSize == 2)
+            return "Medium";
+        else if (m_FishSize == 3)
+            return "Large";
+        else if (m_FishSize == 4)
+            return "Epic";
+        return "";
     }
     bool IsFreshWater()
     {

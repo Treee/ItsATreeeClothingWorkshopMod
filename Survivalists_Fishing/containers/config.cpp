@@ -8,7 +8,7 @@ class CfgPatches
         requiredAddons[] =
         {
             "DZ_Gear_Containers",
-      "Survivalists_Fishing"
+            "Survivalists_Fishing"
         };
     };
 };
@@ -31,19 +31,19 @@ class CfgVehicles
         itemSize[] = { 6,5 };
         attachments[] =
         {
-          "SRP_FishingLure1",
-          "SRP_FishingLure2",
-          "SRP_FishingLure3",
-          "SRP_FishingLure4",
-          "SRP_FishingLure5",
-          "SRP_FishingLure6",
-          "SRP_FishingLure7",
-          "SRP_FishingLure8",
-          "SRP_FishingLure9",
-          "SRP_FishingLure10",
-          "SRP_FishingLure11",
-          "SRP_FishingLure12",
-          "SRP_FishingLure13",
+            "SRP_FishingLure1",
+            "SRP_FishingLure2",
+            "SRP_FishingLure3",
+            "SRP_FishingLure4",
+            "SRP_FishingLure5",
+            "SRP_FishingLure6",
+            "SRP_FishingLure7",
+            "SRP_FishingLure8",
+            "SRP_FishingLure9",
+            "SRP_FishingLure10",
+            "SRP_FishingLure11",
+            "SRP_FishingLure12",
+            "SRP_FishingLure13",
         };
         hiddenSelections[] =
         {
@@ -77,12 +77,12 @@ class CfgVehicles
         descriptionShort = "DEPRECATED. Finish to complete the kit.";
         attachments[] =
         {
-          "SRP_Aquarium_Top",
-          "SRP_Aquarium_Bot",
-          "SRP_Aquarium_Glass1",
-          "SRP_Aquarium_Glass2",
-          "SRP_Aquarium_Glass3",
-          "SRP_Aquarium_Glass4"
+            "SRP_Aquarium_Top",
+            "SRP_Aquarium_Bot",
+            "SRP_Aquarium_Glass1",
+            "SRP_Aquarium_Glass2",
+            "SRP_Aquarium_Glass3",
+            "SRP_Aquarium_Glass4"
         };
     };
     class SRP_AquariumIntermediate_Top : SRP_Fishing_KitBase
@@ -93,7 +93,7 @@ class CfgVehicles
         model = "Survivalists_Fishing\containers\aquarium_top.p3d";
         inventorySlot[] =
         {
-          "SRP_Aquarium_Top"
+            "SRP_Aquarium_Top"
         };
     };
     class SRP_AquariumIntermediate_Bot : SRP_Fishing_KitBase
@@ -104,7 +104,7 @@ class CfgVehicles
         model = "Survivalists_Fishing\containers\aquarium_bot.p3d";
         inventorySlot[] =
         {
-          "SRP_Aquarium_Bot"
+            "SRP_Aquarium_Bot"
         };
     };
     class SRP_AquariumIntermediate_Glass : SRP_Fishing_KitBase
@@ -115,10 +115,10 @@ class CfgVehicles
         model = "Survivalists_Fishing\containers\aquarium_glass.p3d";
         inventorySlot[] =
         {
-          "SRP_Aquarium_Glass1",
-          "SRP_Aquarium_Glass2",
-          "SRP_Aquarium_Glass3",
-          "SRP_Aquarium_Glass4",
+            "SRP_Aquarium_Glass1",
+            "SRP_Aquarium_Glass2",
+            "SRP_Aquarium_Glass3",
+            "SRP_Aquarium_Glass4",
         };
     };
 
@@ -127,6 +127,7 @@ class CfgVehicles
         scope = 2;
         displayName = "Aquarium Kit";
         descriptionShort = "DEPRECATED: Replace with IAT_Fishing_Aquarium_Kit";
+        projectionTypename = "SRP_Aquarium";
     };
 
     class SRP_Aquarium : Container_Base
@@ -144,11 +145,11 @@ class CfgVehicles
         itemsCargoSize[] = { 0,0 };
         attachments[] =
         {
-          "SRP_Fish_Small1",
-          "SRP_Fish_Small2",
-          "SRP_Fish_Small3",
-          "SRP_Fish_Small4",
-          "SRP_Fish_Small5",
+            "SRP_Fish_Small1",
+            "SRP_Fish_Small2",
+            "SRP_Fish_Small3",
+            "SRP_Fish_Small4",
+            "SRP_Fish_Small5",
         };
         hiddenSelections[] =
         {
@@ -171,13 +172,13 @@ class CfgVehicles
         descriptionShort = "DEPRECATED. Finish to complete the kit.";
         attachments[] =
         {
-                "Material_FPole_WoodenLog2",
-                "MetalWire",
-                "Material_MetalWire",
-                "Rope",
-                "Material_FPole_Rope",
-                "Material_Shelter_Rope",
-          "Material_FPole_Nails"
+            "Material_FPole_WoodenLog2",
+            "MetalWire",
+            "Material_MetalWire",
+            "Rope",
+            "Material_FPole_Rope",
+            "Material_Shelter_Rope",
+            "Material_FPole_Nails"
         };
     };
 
@@ -186,6 +187,7 @@ class CfgVehicles
         scope = 2;
         displayName = "Wooden Fish Display Kit";
         descriptionShort = "DEPRECATED: Replace with IAT_Fishing_WoodenFishHanger_Kit";
+        projectionTypename = "SRP_WoodenFishHanger";
     };
 
     class SRP_WoodenFishHanger : Container_Base
@@ -202,11 +204,11 @@ class CfgVehicles
         itemsCargoSize[] = { 0,0 };
         attachments[] =
         {
-          "SRP_Fish_Small1",
-          "SRP_Fish_Small2",
-          "SRP_Fish_Small3",
-          "SRP_Fish_Small4",
-          "SRP_Fish_Large1"
+            "SRP_Fish_Small1",
+            "SRP_Fish_Small2",
+            "SRP_Fish_Small3",
+            "SRP_Fish_Small4",
+            "SRP_Fish_Large1"
         };
         hiddenSelections[] =
         {
@@ -247,13 +249,13 @@ class CfgVehicles
         descriptionShort = "DEPRECATED. Finish to complete the kit.";
         attachments[] =
         {
-                "Material_L2_WoodenLogs",
-                "MetalWire",
-                "Material_MetalWire",
-                "Rope",
-                "Material_FPole_Rope",
-                "Material_Shelter_Rope",
-          "Material_FPole_Nails"
+            "Material_L2_WoodenLogs",
+            "MetalWire",
+            "Material_MetalWire",
+            "Rope",
+            "Material_FPole_Rope",
+            "Material_Shelter_Rope",
+            "Material_FPole_Nails"
         };
     };
 
@@ -262,6 +264,7 @@ class CfgVehicles
         scope = 2;
         displayName = "Wooden Fish Rack Kit";
         descriptionShort = "DEPRECATED: Replace with IAT_Fishing_WoodenFishRack_Kit";
+        projectionTypename = "SRP_WoodenFishRack";
     };
 
     class SRP_WoodenFishRack : Container_Base
@@ -278,14 +281,14 @@ class CfgVehicles
         itemsCargoSize[] = { 0,0 };
         attachments[] =
         {
-          "SRP_Fish_Small1",
-          "SRP_Fish_Small2",
-          "SRP_Fish_Small3",
-          "SRP_Fish_Small4",
-          "SRP_Fish_Small5",
-          "SRP_Fish_Small6",
-          "SRP_Fish_Small7",
-          "SRP_Fish_Small8",
+            "SRP_Fish_Small1",
+            "SRP_Fish_Small2",
+            "SRP_Fish_Small3",
+            "SRP_Fish_Small4",
+            "SRP_Fish_Small5",
+            "SRP_Fish_Small6",
+            "SRP_Fish_Small7",
+            "SRP_Fish_Small8",
         };
         hiddenSelections[] =
         {
