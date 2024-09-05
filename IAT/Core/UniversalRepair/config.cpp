@@ -1,25 +1,25 @@
 class CfgMods
 {
-    class IAT_MusicPlus
+    class IAT_Core_UniversalRepair
     {
         type = "mod";
         author = "ItsATreee";
-        name = "ItsATreee Crafting Plus Enums";
-        dir = "IAT_MusicPlus";
+        name = "ItsATreee Universal Repair";
+        dir = "UniversalRepair";
         dependencies[] = { "World" };
         class defs
         {
             class worldScriptModule
             {
                 value = "";
-                files[] = { "IAT\Core\IAT_MusicPlus\scripts\4_world" };
+                files[] = { "IAT\Core\UniversalRepair\scripts\4_world" };
             };
         };
     };
 };
 class CfgPatches
 {
-    class IAT_MusicPlus
+    class IAT_Core_UniversalRepair
     {
         units[] = {};
         weapons[] = {};

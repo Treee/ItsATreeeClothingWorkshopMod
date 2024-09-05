@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class IAT_MusicPlus_Scripts
+    class IAT_Core_MusicPlus_Proxy
     {
         units[] = {};
         weapons[] = {};

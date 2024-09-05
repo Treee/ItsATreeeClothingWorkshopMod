@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class IAT_MusicPlus_Sounds
+    class IAT_Core_MusicPlus_Sounds
     {
         units[] = {};
         weapons[] = {};
@@ -25,107 +25,107 @@ class CfgSoundShaders
     //================================================================================= KURU
     class IAT_MusicPlus_SoundShader_Kuru_Tape1 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-1.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-1.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape2 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-2.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-2.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape3 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-3.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-3.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape4 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-4.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-4.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape5 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-5.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-5.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape6 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-6.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-6.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape7 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-7.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-7.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape8 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-8.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-8.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape9 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-9.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-9.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape10 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-10.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-10.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape11 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-11.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-11.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape12 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-12.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-12.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape13 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-13.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-13.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape14 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-14.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-14.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape15 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-15.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-15.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape16 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-16.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-16.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape17 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-17.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-17.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape18 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-18.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-18.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape19 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-19.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-19.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape20 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-20.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-20.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape21 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-21.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-21.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape22 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-22.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-22.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape23 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-23.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-23.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape24 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-24.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-24.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape25 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-25.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-25.ogg",1} };
     };
     class IAT_MusicPlus_SoundShader_Kuru_Tape26 : IAT_MusicPlus_SoundShader_Base
     {
-        samples[] = { {"IAT\Core\IAT_MusicPlus\sounds\kuru\data\kuru-26.ogg",1} };
+        samples[] = { {"IAT\Core\MusicPlus\sounds\kuru\data\kuru-26.ogg",1} };
     };
 };
 
