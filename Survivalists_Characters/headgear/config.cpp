@@ -4687,7 +4687,7 @@ class CfgVehicles
     class SRP_AdvancedBioHelmet_ColorBase : Clothing
     {
         scope = 0;
-        displayName = "ADvanced Biohazard Helmet";
+        displayName = "Advanced Biohazard Helmet";
         descriptionShort = "STAG Industries. An advanced helmet capable of protected against inhaled biochemical agents when a filter is attached and contains clips to attach NVG.";
         model = "Survivalists_Characters\headgear\srp_biohelmet_g.p3d";
         repairableWithKits[] = { 8 };
@@ -4718,6 +4718,11 @@ class CfgVehicles
         {
             male = "Survivalists_Characters\headgear\srp_biohelmet_m.p3d";
             female = "Survivalists_Characters\headgear\srp_biohelmet_m.p3d";
+        };
+        class Protection
+        {
+            biological = 1;
+            chemical = 1;
         };
         class DamageSystem
         {
@@ -4839,7 +4844,7 @@ class CfgVehicles
         };
         hiddenSelectionsTextures[] =
         {
-            "Survivalists_Characters\headgear\data\srp_haloodsthelmet_shifty0423_co.paa"
+            "Survivalists_Characters\headgear\data\srp_advancedbiohelmet_ddog659_co.paa"
         };
     };
 };
