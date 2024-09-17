@@ -9,7 +9,8 @@ class CfgPatches
         {
             "DZ_Data",
             "DZ_Gear_Medical",
-            "Survivalists_Mods_Gear_Crafting"
+            "Survivalists_Mods_Gear_Crafting",
+            "Dressupbox_Mutants"
         };
     };
 };
