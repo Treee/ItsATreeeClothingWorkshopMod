@@ -139,8 +139,8 @@ class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
 {
   protected float m_CollectionLifespan;
 
-  protected const int HERB_DRYING_TIME = 30;
-  protected const float HERB_DRYING_AMOUNT = 5.6; // controls for 10ish minutes of drying
+  protected const int HERB_DRYING_TIME = 45;
+  protected const float HERB_DRYING_AMOUNT = 2.8; // controls for 10ish minutes of drying
 
   void SRP_FridgeRetro_HerbRack()
   {
@@ -150,7 +150,7 @@ class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
 	{
     if (!GetGame().IsDedicatedServer())
       return;
-    if (m_CollectionLifespan > 10) // wait 10 seconds before doing things 
+    if (m_CollectionLifespan > 10) // wait 10 seconds before doing things
     {
       DryHerbs();
       m_CollectionLifespan = 0;
@@ -198,7 +198,7 @@ class SRP_FridgeRetro_HerbRack extends SRP_Container_Base
           inItem.ChangeFoodStage(FoodStageType.DRIED);
           inItem.RemoveAllAgents();
           inItem.SetCookingTime(0);
-        }  
+        }
       }
     }
   }
