@@ -1158,9 +1158,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Pure Mutant Embryo";
         descriptionShort = "Pure mutant genetic material. Apply work to evolve into more specific mutagens.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
@@ -1177,9 +1177,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mutated Long Fall Embryo";
         descriptionShort = "A mutated embryo evolved to create enhanced fibrous tissues in the legs.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
@@ -1191,9 +1191,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mutated Brawler Embryo";
         descriptionShort = "A mutated embryo evolved to enhance upper body strength.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
@@ -1205,9 +1205,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mutated Body Heat Embryo";
         descriptionShort = "A mutated embryo evolved to insulate the host from extreme temperatures.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
@@ -1219,9 +1219,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mutated Chameleon Embryo";
         descriptionShort = "A mutated embryo evolved to mask the host from the undead.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
@@ -1233,9 +1233,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mutated Nocturnal Embryo";
         descriptionShort = "A mutated embryo evolved to increase light sensitivity during night time.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
@@ -1247,9 +1247,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mutated Aquatic Embryo";
         descriptionShort = "A mutated embryo evolved to give the host pseudo gills and webbed feet.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
@@ -1261,9 +1261,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mutated Juggernaut Embryo";
         descriptionShort = "A mutated embryo evolved to give the host stronger resolve.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
@@ -1275,9 +1275,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mutated Iron Gut Embryo";
         descriptionShort = "A mutated embryo evolved to digest any material.";
-        model = "Dressupbox\mutation\mutations\egg\egg.p3d";
+        model = "Dressupbox_mutants\mutation\mutations\egg\egg.p3d";
         hiddenSelections[] = { "zbytek" };
-        hiddenSelectionTextures[] = { "Dressupbox\Mutation\Mutations\Egg\data\egg_co.paa" };
+        hiddenSelectionTextures[] = { "Dressupbox_mutants\mutation\mutations\egg\data\egg_co.paa" };
         attachments[] =
         {
           "TestTube1",
