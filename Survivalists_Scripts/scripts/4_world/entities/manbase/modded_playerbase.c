@@ -19,6 +19,7 @@ modded class PlayerBase
     bool m_IsSoftSurrendered = false;
 
     protected float m_TotalContaminationProtection = 0;
+    protected int m_TotalHeavyItemsEquipped = 0;
 
     override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
     {
@@ -40,27 +41,34 @@ modded class PlayerBase
     {
         super.EEItemIntoHands( item );
         // Print("Item going into hands: " + item.GetType());
-        if (item)
+        ItemBase itemIB;
+        if (Class.CastTo(itemIB, item))
         {
-            ItemBase ibCast = ItemBase.Cast(item);
-            if (ibCast.IsSprintRemoved())
+            if (itemIB.IsSprintRemoved())
             {
                 SetIsSprintDisabledByHeavyItemInHands(true);
             }
-            if (ibCast.IsContainerFilledToRemoveSprint(80))
+            if (itemIB.IsContainerFilledToRemoveSprint(80))
             {
                 SetIsSprintDisabledByHeavyItemInHands(true);
             }
-            }
+        }
     }
     override void EEItemOutOfHands(EntityAI item)
     {
         super.EEItemOutOfHands( item );
         // Print("Item going out of hands: " + item.GetType());
-        if (item)
+        ItemBase itemIB;
+        if (Class.CastTo(itemIB, item))
         {
-            // always clear this bool when things get out of hand. haha
-            SetIsSprintDisabledByHeavyItemInHands(false);
+            if (itemIB.IsSprintRemoved())
+            {
+                SetIsSprintDisabledByHeavyItemInHands(false);
+            }
+            if (itemIB.IsContainerFilledToRemoveSprint(80))
+            {
+                SetIsSprintDisabledByHeavyItemInHands(false);
+            }
         }
     }
     override void EEKilled( Object killer )
@@ -278,14 +286,13 @@ modded class PlayerBase
     {
         m_HeavyItemInHandsSprintDisable = isDisabled;
     }
-
+    void ModifyTotalEquippedHeavyItems(int counter)
+    {
+        m_TotalContaminationProtection += counter;
+    }
     bool IsSprintDisabledByHeavyItemEquipped()
     {
-        return m_HeavyItemEquippedSprintDisable;
-    }
-    void SetIsSprintDisabledByHeavyItemEquipped(bool isDisabled)
-    {
-        m_HeavyItemEquippedSprintDisable = isDisabled;
+        return m_TotalHeavyItemsEquipped > 0;
     }
     void SetIsNearComfortHeatSource(bool isNearComfort)
     {
