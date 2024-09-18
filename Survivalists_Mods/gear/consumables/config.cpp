@@ -293,20 +293,6 @@ class CfgVehicles
                 "Tailoring_MetalPlate"
         };
     };
-    // class Nail : Inventory_Base
-    // {
-    //     varStackMax = 99;
-    //     varQuantityMax = 990;
-    //     inventorySlot[] +=
-    //     {
-    //         "SRP_Construction_Nails"
-    //     };
-    // };
-    // class DuctTape : Inventory_Base
-    // {
-    //     canBeSplit = 1;
-    //     itemSize[] = { 1,2 };
-    // };
     class Roadflare : Inventory_Base
     {
         inventorySlot[] +=
@@ -318,14 +304,6 @@ class CfgVehicles
         };
     };
     //----------------------------------------------- MODDED STUFF
-      // class Jmc_Keycard: Inventory_Base
-        // {
-        // 	scope=0;
-        // };
-        // class Jmc_Keycard2: Inventory_Base
-        // {
-        // 	scope=0;
-        // };
     class DUB_Biowolfpelt : Pelt_Base
     {
         color = "biowolf";
@@ -359,12 +337,6 @@ class CfgVehicles
                 "AnimalPelt10"
         };
     };
-    // // wardog note override
-    // class WrittenNote : Inventory_Base
-    // {
-    //     inventorySlot[] = { "Paper" };
-    // };
-
     //----------------------------------------------- CUSTOM STUFF
     class Firewood_Irradiated : Firewood
     {
