@@ -5,13 +5,6 @@ modded class Paper
     return true;
   }
 };
-modded class WrittenNote
-{
-  override bool CanBeStoredInNotebook()
-  {
-    return true;
-  }
-};
 modded class SRP_ConsumableDrug_Colorbase
 {
   override bool CanBeStoredInNotebook()
