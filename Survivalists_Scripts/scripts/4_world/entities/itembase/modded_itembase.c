@@ -22,7 +22,7 @@ modded class ItemBase
         {
             if (IsSprintRemoved())
             {
-                player.SetIsSprintDisabledByHeavyItemEquipped(true);
+                player.ModifyTotalEquippedHeavyItems(1);
             }
             if (HasBioImmunity())
             {
@@ -47,7 +47,7 @@ modded class ItemBase
         {
             if (IsSprintRemoved())
             {
-                player.SetIsSprintDisabledByHeavyItemEquipped(false);
+                player.ModifyTotalEquippedHeavyItems(-1);
             }
             if (HasBioImmunity())
             {
@@ -99,28 +99,10 @@ modded class ItemBase
     override void OnInventoryEnter(Man player)
     {
         super.OnInventoryEnter(player);
-        PlayerBase playerPB;
-        ItemBase itemInHands;
-        if (Class.CastTo(itemInHands, player.GetHumanInventory().GetEntityInHands()))
+        if (GetGame().IsDedicatedServer() && HasRadioactiveEffect())
         {
-            // Print("OnInventoryEnter item cast: " + item);
-            if (itemInHands.IsContainerFilledToRemoveSprint(80))
-            {
-                playerPB = PlayerBase.Cast(player);
-                // Print("OnInventoryEnter container is filled above max and player cast: " + playerPB);
-                if (playerPB)
-                {
-                    if (!playerPB.IsSprintDisabledByHeavyItemInHands())
-                    {
-                        // Print("OnInventoryEnter: sprint is not disabled so disable it");
-                        playerPB.SetIsSprintDisabledByHeavyItemInHands(true);
-                    }
-                }
-            }
-        }
-        if (HasRadioactiveEffect())
-        {
-            if (GetGame().IsDedicatedServer() && playerPB && !playerPB.SRPIgnoreContaminatedArea())
+            PlayerBase playerPB;
+            if (Class.CastTo(playerPB, player) && !playerPB.SRPIgnoreContaminatedArea())
             {
                 if (playerPB.GetSingleAgentCount(eAgents.CHEMICAL_POISON) < 300)
                 {
@@ -129,30 +111,7 @@ modded class ItemBase
             }
         }
     }
-    override void OnInventoryExit(Man player)
-    {
-        PlayerBase playerPB;
-        ItemBase itemInHands;
-        EntityAI owner = GetHierarchyParent();
-        if (Class.CastTo(itemInHands, player.GetHumanInventory().GetEntityInHands()) && !owner)
-        {
-            // Print("OnInventoryExit item cast: " + item);
-            if (!itemInHands.IsContainerFilledToRemoveSprint(80))
-            {
-                playerPB = PlayerBase.Cast(player);
-                // Print("OnInventoryExit container is not filled above max and player cast: " + playerPB);
-                if (playerPB)
-                {
-                    if (playerPB.IsSprintDisabledByHeavyItemInHands())
-                    {
-                        // Print("OnInventoryExit: sprint is disabled so disable it");
-                        playerPB.SetIsSprintDisabledByHeavyItemInHands(false);
-                    }
-                }
-            }
-        }
-        super.OnInventoryExit(player);
-    }
+
     override void OnPlacementComplete(Man player, vector position = "0 0 0", vector orientation = "0 0 0")
     {
         super.OnPlacementComplete(player, position, orientation);
