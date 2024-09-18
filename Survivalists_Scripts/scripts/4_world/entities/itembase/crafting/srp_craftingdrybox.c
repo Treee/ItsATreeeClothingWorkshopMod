@@ -2,8 +2,8 @@ class SRP_TimeBasedWorkbench_Base extends ItemBase
 {
   protected float m_CollectionLifespan;
 
-  protected const int HERB_DRYING_TIME = 90;
-  protected const float HERB_DRYING_AMOUNT = 1; // controls for 10ish minutes of drying
+  protected const int HERB_DRYING_TIME = 45;
+  protected const float HERB_DRYING_AMOUNT = 2.8; // controls for 10ish minutes of drying
 
   void SRP_TimeBasedWorkbench_Base()
   {
@@ -14,7 +14,7 @@ class SRP_TimeBasedWorkbench_Base extends ItemBase
 	{
     if (!GetGame().IsDedicatedServer())
       return;
-    if (m_CollectionLifespan > 10) // wait 10 seconds before doing things 
+    if (m_CollectionLifespan > 10) // wait 10 seconds before doing things
     {
       DryHerbs();
       m_CollectionLifespan = 0;
@@ -70,7 +70,7 @@ class SRP_TimeBasedWorkbench_Base extends ItemBase
           inItem.ChangeFoodStage(FoodStageType.DRIED);
           inItem.RemoveAllAgents();
           inItem.SetCookingTime(0);
-        }  
+        }
       }
     }
   }
