@@ -60,6 +60,27 @@ class CfgAmmo
         };
     };
     class SRP_MeleeSlash_2HSwordHeavy : SRP_MeleeSlash_2HSword {};
+
+    class SRP_MeleeSlash_2HSword_OneHitKill : MeleeSlash
+    {
+        class DamageApplied
+        {
+            type = "Melee";
+            class Health
+            {
+                damage = 100;
+            };
+            class Blood
+            {
+                damage = 500;
+            };
+            class Shock
+            {
+                damage = 50;
+            };
+        };
+    };
+    class SRP_MeleeSlash_2HSword_OneHitKillHeavy : SRP_MeleeSlash_2HSword_OneHitKill {};
 };
 
 class CfgVehicles
@@ -4982,16 +5003,16 @@ class CfgVehicles
         {
             "Shoulder",
             "Melee",
-      "SRP_Melee1",
-      "SRP_Melee2",
-      "SRP_Melee3",
-      "SRP_Melee4",
-      "SRP_Melee5",
-      "SRP_Melee6",
-      "SRP_Melee7",
-      "SRP_Melee8",
-      "SRP_Melee9",
-      "SRP_Melee10",
+            "SRP_Melee1",
+            "SRP_Melee2",
+            "SRP_Melee3",
+            "SRP_Melee4",
+            "SRP_Melee5",
+            "SRP_Melee6",
+            "SRP_Melee7",
+            "SRP_Melee8",
+            "SRP_Melee9",
+            "SRP_Melee10",
         };
         weight = 600;
         itemSize[] = { 1,7 };
